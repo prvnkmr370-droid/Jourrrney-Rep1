@@ -6,10 +6,16 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "journeyapp",
+    "experiments": {
+      "typedRoutes": true
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.journeyapp.mobile"
     },
     "android": {
+      "package": "com.journeyapp.mobile",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -18,8 +24,15 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "platforms": ["ios", "android"],
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Journey uses your location to suggest a starting city for trip planning and nearby destinations."
+        }
+      ]
+    ]
   }
 }
