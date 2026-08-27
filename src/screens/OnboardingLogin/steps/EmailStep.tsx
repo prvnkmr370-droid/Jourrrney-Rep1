@@ -1,4 +1,4 @@
-import { View, Text, Pressable, TextInput } from "react-native";
+import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
 import { X } from "lucide-react-native";
 import { CompassMark } from "@/components/JourrrneyLogo";
 import { GoogleIcon, FacebookIcon, AppleIcon } from "@/components/icons/BrandIcons";
@@ -16,11 +16,17 @@ interface Props {
   onContinueWithEmail: () => void;
   onSocial: (provider: Exclude<AuthProvider, null>) => void;
   onSkip: () => void;
+  /** True while requestCode() is in flight against journey-backend. */
+  loading?: boolean;
+  /** Set when requestCode() fails — e.g. the backend isn't reachable. */
+  error?: string | null;
   topInset: number;
   bottomInset: number;
 }
 
-export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, topInset, bottomInset }: Props) {
+export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, loading, error, topInset, bottomInset }: Props) {
+  const canContinue = email.trim().length > 0 && !loading;
+
   return (
     <View style={{ flex: 1 }}>
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 20, paddingTop: topInset + 12 }}>
@@ -46,21 +52,30 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
           placeholderTextColor="rgba(255,255,255,0.4)"
           keyboardType="email-address"
           autoCapitalize="none"
+          editable={!loading}
           style={{
             height: 52, borderWidth: 1, borderColor: "rgba(255,255,255,0.25)", borderRadius: 999, paddingHorizontal: 20,
-            fontFamily: "Poppins_400Regular", fontSize: 14, color: "#FFFFFF", marginBottom: 16,
+            fontFamily: "Poppins_400Regular", fontSize: 14, color: "#FFFFFF", marginBottom: error ? 8 : 16,
           }}
         />
 
+        {error && (
+          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "#F87171", marginBottom: 16, lineHeight: 17 }}>
+            {error}
+          </Text>
+        )}
+
         <Pressable
           onPress={onContinueWithEmail}
-          disabled={!email.trim()}
+          disabled={!canContinue}
           style={{
-            backgroundColor: email.trim() ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, paddingVertical: 16, alignItems: "center", marginBottom: 24,
+            flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8,
+            backgroundColor: canContinue ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, paddingVertical: 16, marginBottom: 24,
           }}
         >
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: email.trim() ? "#333C81" : "rgba(255,255,255,0.5)" }}>
-            Continue
+          {loading && <ActivityIndicator color="#333C81" size="small" />}
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: canContinue ? "#333C81" : "rgba(255,255,255,0.5)" }}>
+            {loading ? "Sending code…" : "Continue"}
           </Text>
         </Pressable>
 

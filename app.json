@@ -24,7 +24,10 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "plugins": [
       "expo-router",
       [
@@ -32,7 +35,8 @@
         {
           "locationWhenInUsePermission": "Journey uses your location to suggest a starting city for trip planning and nearby destinations."
         }
-      ]
+      ],
+      "expo-secure-store"
     ]
   }
 }

@@ -45,8 +45,16 @@ const TABS: { id: Section; label: string; icon: typeof Search }[] = [
 export default function MyAccount() {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
-  const { isSignedIn } = useProfileStore();
+  const { isSignedIn, authProvider, name, email } = useProfileStore();
   const [section, setSection] = useState<Section>("searches");
+  // "email" means a real account from journey-backend — show the actual
+  // name/email that was signed in with, not the static demo persona
+  // (still used for Google/Apple/Facebook, which aren't real auth yet).
+  const isRealAccount = authProvider === "email";
+  const displayName = isRealAccount ? (name || email || USER.name) : USER.name;
+  const initials = isRealAccount
+    ? displayName.slice(0, 2).toUpperCase()
+    : USER.avatar;
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -72,7 +80,7 @@ export default function MyAccount() {
               }}
             >
               {isSignedIn ? (
-                <Text style={{ fontFamily: "Poppins_800ExtraBold", fontSize: 22, color: "#FFFFFF" }}>{USER.avatar}</Text>
+                <Text style={{ fontFamily: "Poppins_800ExtraBold", fontSize: 22, color: "#FFFFFF" }}>{initials}</Text>
               ) : (
                 // Fixed dark icon color, not c.textSecondary — the circle
                 // behind it is a fixed light gray regardless of theme, so
@@ -95,11 +103,14 @@ export default function MyAccount() {
             )}
           </View>
           <View style={{ flex: 1 }}>
-            <Text style={{ fontFamily: "Poppins_800ExtraBold", fontSize: 18, color: c.textPrimary }}>{isSignedIn ? USER.name : "Guest"}</Text>
+            <Text style={{ fontFamily: "Poppins_800ExtraBold", fontSize: 18, color: c.textPrimary }}>{isSignedIn ? displayName : "Guest"}</Text>
             {isSignedIn ? (
               <>
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 5, marginTop: 4 }}>
                   <MapPin color={c.textSecondary} size={12} />
+                  {/* Location and member-since are still the demo persona's —
+                      real profile fields weren't in this pass's scope
+                      (auth only); the name/avatar above are the real ones. */}
                   <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>{USER.location}</Text>
                 </View>
                 <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 2 }}>

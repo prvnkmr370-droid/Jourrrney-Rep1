@@ -8,14 +8,13 @@
  * explicitly non-mandatory throughout — Skip (step 1) and every button on
  * both steps lead into the app the same way.
  *
- * IMPORTANT: none of this performs real auth. Email would need a
- * magic-link/OTP backend (e.g. Firebase Auth) to actually send and verify
- * a code; Google, Apple, and Facebook sign-in each need credentials from
- * that provider's own developer console (a Google OAuth client ID, an
- * Apple Developer Program enrollment + Sign in with Apple capability, a
- * Facebook App ID) that we don't have yet. Every path here just marks the
- * user "signed in" in useProfileStore — swap in real provider/backend
- * calls at the same call sites once credentials exist.
+ * The email path is now real: requestCode()/verifyCode() call
+ * journey-backend (see its README for what's real vs. not — the code is
+ * genuinely generated/verified server-side, but no email is actually sent
+ * yet). Google, Apple, and Facebook sign-in still just mark the user
+ * "signed in" locally — those need credentials from each provider's own
+ * developer console (a Google OAuth client ID, an Apple Developer Program
+ * enrollment, a Facebook App ID) that we don't have yet.
  */
 import { useState } from "react";
 import { View } from "react-native";
@@ -33,11 +32,15 @@ type Step = "email" | "confirm";
 
 export default function OnboardingLogin({ onDone }: Props) {
   const insets = useSafeAreaInsets();
-  const signIn = useProfileStore((s) => s.signIn);
-  const skip = useProfileStore((s) => s.skip);
+  const { signIn, skip, requestCode, verifyCode } = useProfileStore();
 
   const [step, setStep] = useState<Step>("email");
   const [email, setEmail] = useState("");
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
+  const [devCode, setDevCode] = useState<string | null>(null);
+  const [verifying, setVerifying] = useState(false);
+  const [verifyError, setVerifyError] = useState<string | null>(null);
 
   const handleSkip = () => {
     skip();
@@ -49,14 +52,38 @@ export default function OnboardingLogin({ onDone }: Props) {
     onDone();
   };
 
-  const handleContinueWithEmail = () => {
-    if (!email.trim()) return;
+  const handleContinueWithEmail = async () => {
+    if (!email.trim() || sending) return;
+    setSending(true);
+    setSendError(null);
+    const result = await requestCode(email.trim());
+    setSending(false);
+    if (!result.ok) {
+      setSendError(result.error ?? "Couldn't send a code — try again.");
+      return;
+    }
+    setDevCode(result.devCode ?? null);
+    setVerifyError(null);
     setStep("confirm");
   };
 
-  const handleConfirmCode = () => {
-    signIn("email");
+  const handleConfirmCode = async (code: string) => {
+    if (verifying) return;
+    setVerifying(true);
+    setVerifyError(null);
+    const result = await verifyCode(email.trim(), code);
+    setVerifying(false);
+    if (!result.ok) {
+      setVerifyError(result.error ?? "That code didn't work — try again.");
+      return;
+    }
     onDone();
+  };
+
+  const handleResend = async () => {
+    const result = await requestCode(email.trim());
+    if (result.ok) setDevCode(result.devCode ?? null);
+    return result.ok;
   };
 
   return (
@@ -76,11 +103,22 @@ export default function OnboardingLogin({ onDone }: Props) {
           onContinueWithEmail={handleContinueWithEmail}
           onSocial={handleSocial}
           onSkip={handleSkip}
+          loading={sending}
+          error={sendError}
           topInset={insets.top}
           bottomInset={insets.bottom}
         />
       ) : (
-        <ConfirmCodeStep email={email} onBack={() => setStep("email")} onConfirm={handleConfirmCode} topInset={insets.top} />
+        <ConfirmCodeStep
+          email={email}
+          onBack={() => setStep("email")}
+          onConfirm={handleConfirmCode}
+          onResend={handleResend}
+          loading={verifying}
+          error={verifyError}
+          devCode={devCode}
+          topInset={insets.top}
+        />
       )}
     </View>
   );

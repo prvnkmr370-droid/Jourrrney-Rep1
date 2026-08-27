@@ -37,8 +37,10 @@ export default function SettingsTab() {
   const { mode, setMode } = useThemeStore();
   const [notifications, setNotifications] = useState(true);
 
-  const handleLogout = () => {
-    signOut();
+  const handleLogout = async () => {
+    // signOut() now also clears the real session token from SecureStore,
+    // so it's worth waiting for before navigating away.
+    await signOut();
     router.replace("/(tabs)");
   };
 

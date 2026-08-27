@@ -14,6 +14,7 @@ import {
   Poppins_800ExtraBold,
 } from "@expo-google-fonts/poppins";
 import { useResolvedScheme } from "@/theme/useThemeColors";
+import { bootstrapProfileSession } from "@/store/useProfileStore";
 
 // Keep the native splash screen up until fonts are ready — our own
 // animated <SplashScreen /> route (app/index.tsx) takes over from there.
@@ -38,6 +39,13 @@ export default function RootLayout() {
   useEffect(() => {
     onLayoutRootView();
   }, [onLayoutRootView]);
+
+  // Check once, on launch, whether a session token is already saved from
+  // a previous sign-in — separate from the fonts/splash-screen gate above
+  // so a slow/unreachable backend never blocks the app from opening.
+  useEffect(() => {
+    bootstrapProfileSession();
+  }, []);
 
   if (!fontsLoaded && !fontError) {
     return null;
