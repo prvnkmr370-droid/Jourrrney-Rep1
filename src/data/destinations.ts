@@ -105,6 +105,13 @@ export interface Destination {
   id: string;
   name: string;
   state: string;
+  // Common alternate names people actually search by — a city's old name,
+  // its main town, or a well-known nickname — that don't appear as a word
+  // in `name` itself, so search wouldn't otherwise find them. E.g.
+  // "Andaman Islands" -> ["Port Blair", "Sri Vijaya Puram"]. Only
+  // populated where a real, well-known alias exists; most destinations
+  // don't need one since their own name already covers how people search.
+  aliases?: string[];
   tagline: string;
   description: string;
   // True for destinations kept in the database for direct search/lookup
@@ -271,6 +278,7 @@ export const DESTINATIONS: Destination[] = [
   {
     id: "kerala",
     name: "Kerala Backwaters",
+    aliases: ["Alappuzha", "Alleppey"],
     state: "Kerala",
     tagline: "God's Own Country",
     description: "Kerala's backwaters are a network of interconnected canals, lakes, and lagoons running parallel to the Arabian Sea coast. Drift through emerald-green landscapes on a houseboat, watching village life glide past in slow motion — one of India's most soul-restoring experiences.",
@@ -399,6 +407,7 @@ export const DESTINATIONS: Destination[] = [
   {
     id: "ladakh",
     name: "Ladakh",
+    aliases: ["Leh"],
     state: "Ladakh (UT)",
     tagline: "The Land of High Passes",
     description: "Ladakh is India's roof — a high-altitude desert of surreal landscapes, ancient Buddhist monasteries perched on cliff faces, glassy lakes reflecting snow peaks, and a sparse tranquility that resets the soul. One of the last great wilderness frontiers on earth.",
@@ -462,6 +471,7 @@ export const DESTINATIONS: Destination[] = [
   {
     id: "varanasi",
     name: "Varanasi",
+    aliases: ["Benares", "Banaras", "Kashi"],
     state: "Uttar Pradesh",
     tagline: "The Eternal City on the Ganges",
     description: "Varanasi is one of the world's oldest living cities — a place where life and death meet openly on the ghats of the Ganges. Every evening, the Ganga Aarti transforms the river into a river of light. Ancient, intense, and unlike anywhere else on earth.",
@@ -524,6 +534,7 @@ export const DESTINATIONS: Destination[] = [
   {
     id: "andaman",
     name: "Andaman Islands",
+    aliases: ["Port Blair", "Sri Vijaya Puram"],
     state: "Andaman & Nicobar",
     tagline: "India's Secret Tropical Paradise",
     description: "The Andaman Islands are India's best-kept secret — 572 islands with crystalline turquoise waters, untouched coral reefs, and dense tropical rainforests. Barely touched by mass tourism, these islands offer world-class diving, pristine beaches, and a frontier tranquility that feels nothing like mainland India.",
@@ -1670,6 +1681,7 @@ export const DESTINATIONS: Destination[] = [
     id: "prayagraj",
     hidden: true,
     name: "Prayagraj",
+    aliases: ["Allahabad"],
     state: "Uttar Pradesh",
     tagline: "Teerthraj — King of Pilgrimage Sites",
     description: "Prayagraj sits at the Sangam — the confluence of the Ganges, Yamuna, and the mythical Saraswati — making it, per UP Tourism, 'the holiest of pilgrimage centres of India.' It hosts the Kumbh Mela once every 12 years and the annual Magh Mela, among the largest gatherings of pilgrims on earth, alongside a real role in India's independence movement.",
