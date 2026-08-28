@@ -40,4 +40,7 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   dibrugarh: { lat: 27.4728, lon: 94.912 },
   silchar: { lat: 24.8333, lon: 92.7789 },
   pobitora: { lat: 26.2167, lon: 92.0333 },
+  tinsukia: { lat: 27.4922, lon: 95.3592 },
+  bongaigaon: { lat: 26.4831, lon: 90.5544 },
+  nagaon: { lat: 26.3467, lon: 92.6825 },
 };
