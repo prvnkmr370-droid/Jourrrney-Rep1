@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
 import { Image } from "expo-image";
-import * as Location from "expo-location";
 import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors } from "@/theme/useThemeColors";
+import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
 
 interface Props {
@@ -20,7 +20,7 @@ export default function ArriveSection({ destination: d, guide }: Props) {
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
   const [sourceCity, setSourceCity] = useState(originCity);
   const [selectedTransport, setSelectedTransport] = useState(0);
-  const [locating, setLocating] = useState(false);
+  const { locating, detect } = useDetectLocation();
 
   // Waypoints between the origin and this destination — kept local to the
   // screen for now (not a shared store) since it's scoped to planning
@@ -37,22 +37,10 @@ export default function ArriveSection({ destination: d, guide }: Props) {
   const availableStops = DESTINATIONS.filter((dest) => dest.id !== d.id && !stops.find((s) => s.id === dest.id));
 
   const detectLocation = async () => {
-    setLocating(true);
-    try {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status === "granted") {
-        const pos = await Location.getCurrentPositionAsync({});
-        const [place] = await Location.reverseGeocodeAsync({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
-        const city = place?.city ?? place?.subregion ?? place?.region;
-        if (city) {
-          setSourceCity(city);
-          setOriginCity(city);
-        }
-      }
-    } catch {
-      // keep whatever the user already typed
-    } finally {
-      setLocating(false);
+    const city = await detect();
+    if (city) {
+      setSourceCity(city);
+      setOriginCity(city);
     }
   };
 

@@ -2,13 +2,13 @@
 import { useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, ActivityIndicator, type NativeSyntheticEvent, type NativeScrollEvent, type LayoutChangeEvent } from "react-native";
 import { Image } from "expo-image";
-import * as Location from "expo-location";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Sparkles, Navigation, MapPin, Calendar } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useOriginStore } from "@/store/useOriginStore";
+import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { STYLE_CONFIGS, PREFERENCES, type TravelStyle } from "../data";
 import { styleAccent } from "../styleAccent";
 
@@ -80,24 +80,12 @@ export default function FormStep({
 
   const originCity = useOriginStore((s) => s.originCity);
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
-  const [locating, setLocating] = useState(false);
+  const { locating, detect } = useDetectLocation();
   const dateChips = useMemo(() => nextDays(14), []);
 
   const detectLocation = async () => {
-    setLocating(true);
-    try {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status === "granted") {
-        const pos = await Location.getCurrentPositionAsync({});
-        const [place] = await Location.reverseGeocodeAsync({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
-        const city = place?.city ?? place?.subregion ?? place?.region;
-        if (city) setOriginCity(city);
-      }
-    } catch {
-      // keep whatever the user already typed
-    } finally {
-      setLocating(false);
-    }
+    const city = await detect();
+    if (city) setOriginCity(city);
   };
 
   const [activeSection, setActiveSection] = useState(0);
