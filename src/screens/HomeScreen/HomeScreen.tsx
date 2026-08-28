@@ -195,7 +195,15 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
               return (
                 <Pressable
                   key={s.id}
-                  onPress={() => router.push({ pathname: "/search/results", params: { q: s.query } })}
+                  // A recent search that resolved to a specific destination
+                  // (the normal case — see addSearch's call sites) should
+                  // jump straight back to that page, same as tapping it
+                  // fresh from search would. Only a query that never
+                  // matched one destination (no destinationId recorded)
+                  // falls back to re-running the search.
+                  onPress={() =>
+                    dest ? goToDestination(dest) : router.push({ pathname: "/search/results", params: { q: s.query } })
+                  }
                   style={{ width: 150, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10 }}
                 >
                   {dest ? (
