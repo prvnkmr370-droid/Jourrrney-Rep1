@@ -54,4 +54,9 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   garampani: { lat: 25.9833, lon: 93.6167 },
   "dibru-saikhowa": { lat: 27.6167, lon: 95.3333 },
   charaideo: { lat: 26.85, lon: 94.8167 },
+  havelock: { lat: 12.0181, lon: 92.9803 },
+  "neil-island": { lat: 11.8309, lon: 93.0489 },
+  diglipur: { lat: 13.2667, lon: 92.9667 },
+  baratang: { lat: 12.1167, lon: 92.75 },
+  "little-andaman": { lat: 10.6833, lon: 92.55 },
 };
