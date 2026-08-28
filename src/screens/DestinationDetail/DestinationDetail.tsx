@@ -185,8 +185,17 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           }}
         >
           <Sparkles color="#FFFFFF" size={16} />
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>
-            Plan My Trip to {d.name}
+          <Text
+            style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF", flexShrink: 1 }}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+          >
+            {/* Some destination names carry a parenthetical alt-name
+                (e.g. "Havelock Island (Swaraj Dweep)") that made this
+                button overflow — stripped here for just the short name.
+                numberOfLines+adjustsFontSizeToFit stay as a safety net
+                for any name that's still long. */}
+            Plan My Trip to {d.name.replace(/\s*\([^)]*\)/, "")}
           </Text>
         </Pressable>
       </View>
