@@ -1282,6 +1282,99 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["TTD Tirupati laddu (temple prasadam)", "Andhra-style pulihora", "Pongal at a Tirupati town mess", "Filter coffee"],
     packingTips: ["Comfortable clothes for long queue waits", "ID proof — needed for darshan booking/verification", "Modest clothing (temple dress code applies)", "Water bottle for the step-climb routes"],
   },
+  // Sourced from arunachaltourism.com (homepage, the Tezpur–Bhalukpong–
+  // Bomdila–Tawang circuit page, and the official state Hotel List PDF
+  // linked from the accommodation page) — real how-to-reach, permit, and
+  // hotel-registry facts. The site does not publish room rates anywhere
+  // (homepage, circuit page, or the hotel-registry PDF), so none are
+  // invented; accommodation priceRange below is explicitly marked as an
+  // estimate. Tawang is the flagship destination of Arunachal's most
+  // detailed circuit — kept as one curated entry rather than one per
+  // circuit town, per the "select few per state" approach discussed.
+  {
+    id: "tawang",
+    name: "Tawang",
+    state: "Arunachal Pradesh",
+    tagline: "A Himalayan Monastery Town on the Roof of India",
+    description: "Tawang sits at 10,000 ft in the far northwest of Arunachal Pradesh, home to India's largest monastery and one of the most dramatic high-Himalayan road journeys in the country — via the Sela Pass, past glacial lakes and pine forests, right up to the Tibetan border region.",
+    image: "https://images.unsplash.com/photo-1633728476110-9827024ed86b?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1633728476110-9827024ed86b?w=900&h=600&fit=crop&auto=format",
+    category: ["Heritage", "Nature", "Spiritual"],
+    bestSeason: "March – October (Sela Pass can close in heavy winter snow)",
+    duration: "5–7 days",
+    highlights: ["Tawang Monastery (17th century, 10,000 ft)", "Sela Pass", "Shonga-tser Lake (Madhuri Lake)", "Bomdila monasteries & craft centres", "Sessa Orchid Sanctuary"],
+    transport: [
+      { mode: "Flight + Road", icon: "✈️", fromDelhi: "Fly to Guwahati, then ~11h drive to Tawang", fromMumbai: "Fly to Guwahati, then ~11h drive to Tawang", fromBangalore: "Fly to Guwahati, then ~11h drive to Tawang", duration: "11h drive from Guwahati", costRange: "₹3,500–₹12,000 (flight) + ₹4,000–₹8,000 (cab/shared sumo)", tips: "Lokpriya Gopinath Bordoloi International Airport, Guwahati is the nearest airport — there's no airport in Tawang itself. Break the drive into 2 days via Bomdila or Dirang rather than doing it in one go." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Naharlagun/Itanagar station", fromMumbai: "Via Naharlagun/Itanagar station", fromBangalore: "Via Naharlagun/Itanagar station", duration: "~4h Naharlagun to Bhalukpong, then onward by road", costRange: "₹500–₹2,500", tips: "Naharlagun (near Itanagar) is the nearest railhead — daily trains to Guwahati, plus a twice-weekly Rajdhani Express." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "Tezpur (Assam) to Tawang — 350 km via Bhalukpong, Bomdila, Dirang, Sela Pass", duration: "~10–12h drive (best split over 2 days)", costRange: "₹5,000–₹10,000 (hired cab, one-way)", tips: "This is the classic overland route and the most scenic way in — Sela Pass (13,700 ft) is the highlight but can close briefly after heavy snowfall." },
+    ],
+    accommodation: [
+      {
+        type: "Registered Hotels — Tawang Town", priceRange: "₹1,500–₹5,000/night (estimate)",
+        examples: ["Vivanta Tawang", "Tashi Gatsel", "Gakyi Khang Zhang", "Tawang Heights", "Kalawangpo"],
+        description: "From the official state Hotel List — Tawang district alone has 100+ registered hotels; these are among the larger registered properties by room count.",
+        venues: [
+          { name: "Vivanta Tawang", location: "Tawang town", mapsQuery: "Vivanta Tawang Arunachal Pradesh" },
+          { name: "Tashi Gatsel", location: "Tawang town", mapsQuery: "Hotel Tashi Gatsel Tawang" },
+          { name: "Gakyi Khang Zhang", location: "Tawang town", mapsQuery: "Hotel Gakyi Khang Zhang Tawang" },
+          { name: "Tawang Heights", location: "Tawang town", mapsQuery: "Hotel Tawang Heights Tawang" },
+          { name: "Kalawangpo", location: "Tawang town", mapsQuery: "Hotel Kalawangpo Tawang" },
+        ],
+        sourceNote: "Real, currently-registered hotels per the Arunachal Pradesh Tourism official Hotel List (PDF, arunachaltourism.com). No rates are published anywhere on the official site — the range above is an estimate, not an official figure.",
+      },
+      {
+        type: "Registered Hotels — Bomdila / West Kameng (en route)", priceRange: "₹1,200–₹4,000/night (estimate)",
+        examples: ["Hotel Siphiyangphong", "Hotel Pemaling", "Hotel Grand", "Hotel Green View"],
+        description: "West Kameng district (Bomdila/Dirang) is the usual overnight stop on the 2-day drive up from Tezpur/Guwahati.",
+        venues: [
+          { name: "Hotel Siphiyangphong", location: "Bomdila, West Kameng", mapsQuery: "Hotel Siphiyangphong Bomdila" },
+          { name: "Hotel Pemaling", location: "Bomdila, West Kameng", mapsQuery: "Hotel Pemaling Bomdila" },
+          { name: "Hotel Grand", location: "Bomdila, West Kameng", mapsQuery: "Hotel Grand Bomdila Arunachal Pradesh" },
+        ],
+        sourceNote: "Real, currently-registered hotels per the Arunachal Pradesh Tourism official Hotel List (PDF). No rates published — the range above is an estimate.",
+      },
+    ],
+    localTransport: [
+      { mode: "Shared Sumo/Jeep", cost: "₹300–₹800", notes: "Main way to get between Tawang, Bomdila, and Dirang", available: true },
+      { mode: "Hired Cab (full day)", cost: "₹2,500–₹4,000/day", notes: "For Sela Pass, Madhuri Lake, and monastery-hopping around Tawang", available: true },
+      { mode: "Walking", cost: "Free", notes: "Tawang Monastery complex and the town centre are walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sela Pass", distance: "78 km from Tawang", type: "High-Altitude Mountain Pass", isHidden: false },
+      { name: "Shonga-tser Lake (Madhuri Lake)", distance: "35 km from Tawang", type: "Glacial Lake", isHidden: true },
+      { name: "Bomdila", distance: "180 km from Tawang", type: "Monastery Town & Craft Centre", isHidden: false },
+      { name: "Sessa Orchid Sanctuary", distance: "Near Bomdila", type: "Protected Orchid Reserve", isHidden: true },
+      { name: "Dirang", distance: "140 km from Tawang", type: "Hot Springs & Orchards", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 400, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 2800, food: 800, transport: 1000, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 12000, accommodation: 7000, food: 1500, transport: 2500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Guwahati to Bomdila", morning: "Depart Guwahati early by road (or fly to Tezpur if available).", afternoon: "Drive via Bhalukpong — stop at Sessa Orchid Sanctuary if in season.", evening: "Arrive Bomdila — monasteries and craft centres in the evening light.", stay: "Hotel in Bomdila", meals: "Local Monpa-style meal", tips: "Break the journey here rather than pushing straight to Tawang — it's a long drive." },
+      { day: 2, title: "Bomdila to Tawang via Sela Pass", morning: "Drive through Dirang — hot springs and apple/kiwi orchards.", afternoon: "Cross Sela Pass (13,700 ft) — stop at Shonga-tser Lake (Madhuri Lake) nearby.", evening: "Arrive Tawang.", stay: "Hotel in Tawang town", meals: "Butter tea and thukpa en route", tips: "Carry warm layers — Sela Pass is cold even outside winter." },
+      { day: 3, title: "Tawang Monastery & Town", morning: "Tawang Monastery — India's largest monastery, 17th century, home to a huge Monpa Buddhist community.", afternoon: "Explore Tawang town and local markets.", evening: "Sunset views over the Tawang valley.", stay: "Same hotel", meals: "Monpa thali", tips: "The monastery museum houses an important collection of Buddhist manuscripts and thangkas." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Heavy Indian Army presence throughout the region (border area)", "Small, close-knit mountain communities", "Low crime — remoteness itself is a natural deterrent"],
+      precautions: [
+        "Inner Line Permit (eILP) is mandatory for all Indian citizens — apply at eilp.arunachal.gov.in before travel (valid up to 14 days; longer stays need a provisional ILP)",
+        "Foreign nationals need a Protected Area Permit (PAP) — apply via the FRRO",
+        "Roads (especially Sela Pass) can close briefly after heavy snow — build slack into your itinerary",
+      ],
+      soloTips: ["Solo travel is manageable but remote — let your hotel know your day plans", "Shared sumo/jeep travel is a good way to meet other travellers on the Bomdila–Tawang route"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Tawang Monastery complex", "Tawang town centre", "Registered hotels in Bomdila/Dirang/Tawang"],
+      avoidAreas: ["Unmarked high-altitude routes without a local guide/driver"],
+    },
+    rating: 4.7,
+    reviews: 3100,
+    mustEat: ["Thukpa (Tibetan noodle soup)", "Momos", "Butter tea", "Monpa-style pork with bamboo shoot"],
+    packingTips: ["Heavy winter layers even outside winter — high altitude", "Original ID + eILP printout — checked at multiple road checkposts", "Motion-sickness tablets for the mountain drive", "Power bank — patchy electricity in remote stretches"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

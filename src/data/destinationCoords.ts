@@ -26,4 +26,5 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   kabini: { lat: 11.928, lon: 76.3341 },
   vizag: { lat: 17.6868, lon: 83.2185 },
   tirupati: { lat: 13.6288, lon: 79.4192 },
+  tawang: { lat: 27.5859, lon: 91.8594 },
 };
