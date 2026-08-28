@@ -63,8 +63,6 @@ export default function RootLayout() {
           <Stack.Screen name="onboarding" />
           <Stack.Screen name="location-permission" />
           <Stack.Screen name="(tabs)" />
-          <Stack.Screen name="search/index" options={{ presentation: "modal" }} />
-          <Stack.Screen name="search/dates" options={{ presentation: "card" }} />
           <Stack.Screen name="search/results" options={{ presentation: "card" }} />
           <Stack.Screen name="profile/index" options={{ presentation: "modal" }} />
           <Stack.Screen name="profile/sign-in" options={{ presentation: "modal" }} />

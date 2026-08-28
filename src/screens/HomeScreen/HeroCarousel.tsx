@@ -163,9 +163,15 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
         </View>
       </Pressable>
 
-      {/* Search pill */}
+      {/* Search pill — goes straight to the searchable destination list.
+          Previously routed through /search (origin city) then /search/dates
+          (travel date) before landing here, but neither of those steps'
+          answers were ever actually used by anything downstream — it was a
+          tedious dead end that never even filtered results to what you'd
+          typed. Removed; see the deleted OriginPrompt/TravelDates search
+          flow files. */}
       <Pressable
-        onPress={() => router.push("/search")}
+        onPress={() => router.push("/search/results")}
         style={{
           position: "absolute", left: 16, right: 16, bottom: 20,
           height: 52, borderRadius: 18, paddingHorizontal: 16,
