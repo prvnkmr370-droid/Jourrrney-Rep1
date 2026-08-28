@@ -11,6 +11,7 @@ import { Image } from "expo-image";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Search, X, Settings2, Star } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { findLiveMatches, resolveUnambiguousMatch } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 
@@ -41,11 +42,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     onSelectDestination(d);
   };
 
-  const liveMatches = useMemo(() => {
-    if (!query.trim()) return [];
-    const q = query.toLowerCase();
-    return DESTINATIONS.filter((d) => d.name.toLowerCase().includes(q) || d.state.toLowerCase().includes(q)).slice(0, 4);
-  }, [query]);
+  const liveMatches = useMemo(() => findLiveMatches(query), [query]);
 
   // Hitting search/enter on a query that clearly means one destination
   // (an exact name/state match, like "Arunachal Pradesh", or a query with
@@ -54,10 +51,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
   // they've already effectively narrowed to one result. An ambiguous
   // multi-match query is left as a list rather than guessing.
   const handleSubmit = () => {
-    const q = query.trim().toLowerCase();
-    if (!q) return;
-    const exact = DESTINATIONS.find((d) => d.name.toLowerCase() === q || d.state.toLowerCase() === q);
-    const target = exact ?? (liveMatches.length === 1 ? liveMatches[0] : null);
+    const target = resolveUnambiguousMatch(query);
     if (target) handleSearchSelect(target);
   };
 

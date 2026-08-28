@@ -1,11 +1,12 @@
 /** Source of truth: Figma "1.1 Home Feed". */
 import { useMemo, useState } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { View, Text, Pressable, ScrollView, TextInput } from "react-native";
 import { router } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
-import { ChevronRight } from "lucide-react-native";
+import { ChevronRight, Search } from "lucide-react-native";
 import { Image } from "expo-image";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { resolveUnambiguousMatch } from "@/data/matchDestination";
 import HeroCarousel from "./HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
 import SafeCard from "@/components/SafeCard";
@@ -40,7 +41,9 @@ interface Props {
 export default function HomeScreen({ tabBarHeight = 0 }: Props) {
   const c = useThemeColors();
   const [activeCategory, setActiveCategory] = useState("All");
+  const [homeQuery, setHomeQuery] = useState("");
   const recentSearches = useRecentSearchesStore((s) => s.searches);
+  const addSearch = useRecentSearchesStore((s) => s.addSearch);
   const recentlyViewedIds = useRecentlyViewedStore((s) => s.destinationIds);
   const recentlyViewed = useMemo(
     () => recentlyViewedIds.map((id) => DESTINATIONS.find((d) => d.id === id)).filter((d): d is Destination => !!d),
@@ -59,9 +62,52 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
     [],
   );
 
+  // Typing a place name here and hitting search goes straight to its page
+  // when the query unambiguously means one destination (same rule as the
+  // Search tab) — no intermediate step (no date picker, no extra tap).
+  // An ambiguous or unmatched query falls through to the full Search tab,
+  // prefilled, rather than doing nothing.
+  const handleHomeSearchSubmit = () => {
+    const q = homeQuery.trim();
+    if (!q) return;
+    const target = resolveUnambiguousMatch(q);
+    if (target) {
+      addSearch(q, target.id);
+      goToDestination(target);
+    } else {
+      router.push({ pathname: "/search/results", params: { q } });
+    }
+  };
+
   return (
     <ScrollView style={{ flex: 1, backgroundColor: c.bg }} showsVerticalScrollIndicator={false}>
       <HeroCarousel onDestinationSelect={goToDestination} />
+
+      {/* Sits right below the hero, above the category chips — not above
+          HeroCarousel, which already reserves its own top-safe-area space
+          for the branded header overlaid on the hero image. */}
+      <View style={{ paddingHorizontal: 16, marginTop: 16 }}>
+        <View
+          style={{
+            flexDirection: "row", alignItems: "center", gap: 10, height: 46, borderRadius: 16, paddingHorizontal: 16,
+            backgroundColor: c.surface, borderWidth: 1.5, borderColor: c.border,
+          }}
+        >
+          <Search color={c.textSecondary} size={16} />
+          <TextInput
+            value={homeQuery}
+            onChangeText={setHomeQuery}
+            onSubmitEditing={handleHomeSearchSubmit}
+            returnKeyType="search"
+            placeholder="Search any destination..."
+            placeholderTextColor={c.textMuted}
+            style={{
+              flex: 1, fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textPrimary,
+              paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+            }}
+          />
+        </View>
+      </View>
 
       {/* Category chips — fixed 24px margin above and below, matching the
           spacing used between every other section on this page (Quick
