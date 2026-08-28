@@ -50,6 +50,12 @@ export interface NearbyPlace {
   // with a generic/mismatched stand-in photo; the image-card grid in
   // OverviewTab.tsx falls back to a plain icon card when this is absent.
   image?: string;
+  // Optional — set only when this place has its own full Destination
+  // entry (matching a DESTINATIONS id). When present, the nearby-place
+  // card in OverviewTab.tsx is tappable and opens that destination's own
+  // full page. Left undefined for places that are day-trip stops without
+  // enough sourced material for a full page of their own.
+  id?: string;
 }
 
 export interface BudgetBreakdown {
@@ -141,8 +147,8 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Tonga (Horse Cart)", cost: "₹100–₹300", notes: "Unique heritage experience", available: true },
     ],
     nearbyPlaces: [
-      { name: "Fatehpur Sikri", distance: "40 km", type: "UNESCO Heritage", isHidden: false, image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=400&h=400&fit=crop&auto=format" },
-      { name: "Mathura & Vrindavan", distance: "58 km", type: "Spiritual", isHidden: false, image: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=400&h=400&fit=crop&auto=format" },
+      { name: "Fatehpur Sikri", distance: "40 km", type: "UNESCO Heritage", isHidden: false, image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=400&h=400&fit=crop&auto=format", id: "fatehpur-sikri" },
+      { name: "Mathura & Vrindavan", distance: "58 km", type: "Spiritual", isHidden: false, image: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=400&h=400&fit=crop&auto=format", id: "mathura-vrindavan" },
       { name: "Bharatpur Bird Sanctuary", distance: "56 km", type: "Wildlife", isHidden: false },
       { name: "Bateshwar Temple Complex", distance: "70 km", type: "Hidden Gem", isHidden: true },
       { name: "Keetham Lake (Sur Sarovar)", distance: "20 km", type: "Nature", isHidden: true },
@@ -1380,6 +1386,119 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3100,
     mustEat: ["Thukpa (Tibetan noodle soup)", "Momos", "Butter tea", "Monpa-style pork with bamboo shoot"],
     packingTips: ["Heavy winter layers even outside winter — high altitude", "Original ID + eILP printout — checked at multiple road checkposts", "Motion-sickness tablets for the mountain drive", "Power bank — patchy electricity in remote stretches"],
+  },
+  // The two destinations below give a "Places Near Agra" nearby-place card
+  // a real full page to open into (see NearbyPlace.id in Agra's
+  // nearbyPlaces). Built from general public travel sources — day-trip
+  // sites reached mainly via Agra, so their `transport` entries describe
+  // that access rather than direct flights/trains from Delhi/Mumbai/
+  // Bangalore the way the app's other, standalone destinations do.
+  {
+    id: "fatehpur-sikri",
+    name: "Fatehpur Sikri",
+    state: "Uttar Pradesh",
+    tagline: "The Abandoned Mughal Capital",
+    description: "Emperor Akbar built Fatehpur Sikri as his new Mughal capital in 1571, then abandoned it within 15 years — most likely due to water shortage. What's left is a remarkably intact red-sandstone city: palaces, courtyards, and India's tallest gateway, the Buland Darwaza, all frozen since the 16th century. A UNESCO World Heritage Site, usually visited as a half-day trip from Agra.",
+    image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=900&h=600&fit=crop&auto=format",
+    category: ["Heritage", "UNESCO", "History"],
+    bestSeason: "October – March",
+    duration: "Half-day to 1 day",
+    highlights: ["Buland Darwaza — India's tallest gateway", "Jama Masjid (built 1571, still active)", "Tomb of Salim Chishti", "Diwan-i-Khas", "Panch Mahal"],
+    transport: [
+      { mode: "Road (from Agra)", icon: "🚗", fromDelhi: "Via Agra — 37 km from Agra", fromMumbai: "Via Agra", fromBangalore: "Via Agra", duration: "45–60 min from Agra", costRange: "₹1,500–₹2,000 round-trip taxi", tips: "Almost everyone visits as a day trip from Agra, not as a standalone base. Also 18 km from Bharatpur if arriving from that side." },
+    ],
+    accommodation: [
+      { type: "Day-trip — most stay in Agra", priceRange: "See Agra's accommodation", examples: ["Stay in Agra, visit as a half-day trip"], description: "Accommodation options in Fatehpur Sikri itself are limited — nearly all visitors base themselves in Agra (37 km away) and visit for a few hours." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round-trip from Agra)", cost: "₹1,500–₹2,000", notes: "Includes waiting time and parking — most practical option", available: true },
+      { mode: "On-site walking", cost: "Free", notes: "The complex itself is walkable once you're there; some stretches are uneven stone", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Agra (Taj Mahal, Agra Fort)", distance: "37 km", type: "Main Base", isHidden: false },
+      { name: "Bharatpur Bird Sanctuary", distance: "18 km", type: "Wildlife", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2200, accommodation: 0, food: 400, transport: 1500, activities: 300 },
+      { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 4500, accommodation: 0, food: 800, transport: 3000, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Fatehpur Sikri Half-Day Trip", morning: "Drive from Agra (45–60 min). Enter via Buland Darwaza — India's tallest gateway, built 1602 to mark Akbar's Deccan victory.", afternoon: "Jama Masjid and the Tomb of Salim Chishti inside it. Diwan-i-Khas and Panch Mahal — Akbar's private council hall and five-tiered pavilion.", evening: "Return to Agra by evening.", stay: "Agra hotel (day trip, no overnight stay needed)", meals: "Light lunch at a roadside dhaba en route", tips: "Entry ₹35 (Indians) / ₹550 (foreigners); an extra ₹20/₹200 fee applies for Buland Darwaza and Jama Masjid specifically. Hire an official guide at the entrance — the site has no signage explaining what you're looking at." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Well-patrolled UNESCO site with steady tourist footfall", "Official guides and ASI staff throughout the complex", "Visited almost exclusively during daylight hours as a day trip"],
+      precautions: ["Persistent unofficial guides/vendors at the entrance — use only ASI-approved guides", "Wear comfortable, flat shoes — extensive stone flooring, some uneven"],
+      soloTips: ["Very manageable solo as a half-day trip from Agra", "Join a shared taxi/tour group from Agra to split transport costs"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Emergency", number: "112" }],
+      safeZones: ["The main monument complex", "ASI-ticketed areas"],
+      avoidAreas: ["Unofficial parking touts pushing unlicensed guides outside the entrance"],
+    },
+    rating: 4.6,
+    reviews: 3400,
+    mustEat: ["Roadside dhaba thali en route", "Petha (Agra's signature sweet, sold nearby)"],
+    packingTips: ["Comfortable flat shoes — lots of stone walking", "Sun hat/cap — the complex is mostly open-air", "Water bottle", "Cash for the separate Buland Darwaza/Jama Masjid fee"],
+  },
+  {
+    id: "mathura-vrindavan",
+    name: "Mathura & Vrindavan",
+    state: "Uttar Pradesh",
+    tagline: "The Birthplace and Playground of Krishna",
+    description: "Mathura is revered as Krishna's birthplace; neighbouring Vrindavan is where he's believed to have spent his childhood. Together they form one of Hinduism's most important pilgrimage circuits — dozens of temples ranging from centuries-old (Banke Bihari) to strikingly modern (Prem Mandir, ISKCON), all within a short auto-rickshaw ride of each other.",
+    image: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=900&h=600&fit=crop&auto=format",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 days",
+    highlights: ["Banke Bihari Temple, Vrindavan", "Prem Mandir (illuminated at night)", "ISKCON Temple, Vrindavan", "Krishna Janmabhoomi Temple, Mathura", "Vishram Ghat, Mathura"],
+    transport: [
+      { mode: "Flight + Road", icon: "✈️", fromDelhi: "Fly to Delhi IGI, then ~150 km by road", fromMumbai: "Fly to Delhi or Agra, then by road", fromBangalore: "Fly to Delhi or Agra, then by road", duration: "~2.5–3h from Delhi by road", costRange: "₹2,000–₹6,000 (cab from Delhi/Agra)", tips: "Nearest airports are Agra (Kheria, ~70 km) and Delhi (IGI, ~150 km) — no airport in Mathura/Vrindavan itself." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Mathura Junction", fromMumbai: "Via Mathura Junction", fromBangalore: "Via Mathura Junction", duration: "~2–3h from Delhi", costRange: "₹200–₹1,200", tips: "Mathura Junction is the main railhead — Vrindavan's own station isn't well connected to major cities, so arrive via Mathura and take an auto onward (~12 km, 30–40 min)." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH-44 or Yamuna Expressway — ~150 km", fromMumbai: "—", fromBangalore: "—", duration: "~2.5–3h from Delhi, ~1h from Agra", costRange: "₹2,000–₹4,000 (cab from Delhi)", tips: "Also well connected from Agra (NH-44), making it an easy add-on to an Agra trip." },
+    ],
+    accommodation: [
+      { type: "Ashrams & Guesthouses", priceRange: "₹500–₹2,000/night (estimate)", examples: ["ISKCON guesthouse, Vrindavan", "Local dharamshalas"], description: "Simple pilgrim accommodation, often run by the temples themselves." },
+      { type: "Private Hotels", priceRange: "₹1,500–₹5,000/night (estimate)", examples: ["Hotels near Mathura Junction and central Vrindavan"], description: "Standard private hotels, more comfortable than ashram stays." },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹100–₹400", notes: "Main way to move between Mathura and Vrindavan and their temples", available: true },
+      { mode: "Cycle-Rickshaw", cost: "₹30–₹100", notes: "The core temple area (around Banke Bihari) has restricted vehicle access — park outside and walk or take a cycle-rickshaw in", available: true },
+      { mode: "Walking", cost: "Free", notes: "Central Vrindavan's temple lanes are walkable once you're inside", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Agra (Taj Mahal, Agra Fort)", distance: "58 km", type: "Major Heritage City", isHidden: false },
+      { name: "Fatehpur Sikri", distance: "~65 km", type: "UNESCO Heritage", isHidden: false, id: "fatehpur-sikri" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim", perDayPerPerson: 1000, accommodation: 400, food: 250, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Private Car + Hotel", perDayPerPerson: 7000, accommodation: 4500, food: 1000, transport: 1200, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vrindavan Temple Circuit", morning: "Banke Bihari Temple — one of Vrindavan's oldest and most revered Krishna temples, in the walkable, vehicle-restricted old town.", afternoon: "ISKCON Temple (Krishna-Balaram Mandir) and Radha Raman Temple nearby.", evening: "Prem Mandir, lit up in the evening — one of the most photographed modern temples in India.", stay: "Vrindavan guesthouse/ashram", meals: "Sattvic (pure vegetarian) thali, common across Vrindavan's eateries", tips: "The Banke Bihari area restricts vehicles — park outside and walk or take a cycle-rickshaw in." },
+      { day: 2, title: "Mathura — Krishna's Birthplace", morning: "Krishna Janmabhoomi Temple — built at the site believed to be Krishna's actual birthplace.", afternoon: "Vishram Ghat on the Yamuna — where Krishna is said to have rested after slaying Kansa.", evening: "Evening aarti at Vishram Ghat.", stay: "Same", meals: "Try Mathura's famous peda (milk sweet) — sold all over town", tips: "Security at Krishna Janmabhoomi is tight (a disputed/sensitive site) — expect bag checks and no phones/cameras inside." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Major pilgrimage circuit with heavy daily footfall and temple security", "Well-established tourist infrastructure"],
+      precautions: [
+        "Crowded temple queues, especially Banke Bihari and Janmabhoomi — keep valuables secure",
+        "Dress modestly — this is an active pilgrimage site, not just a tourist attraction",
+        "Some temple areas (Janmabhoomi) have strict security checks and no photography",
+      ],
+      soloTips: ["Manageable solo given the constant crowds and temple staff presence", "Stick to the well-trafficked temple areas rather than side lanes after dark"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Main temple complexes and their immediate surroundings", "Vishram Ghat during daylight/evening aarti hours"],
+      avoidAreas: ["Quiet side lanes away from the main temple circuit after dark"],
+    },
+    rating: 4.5,
+    reviews: 5100,
+    mustEat: ["Mathura Peda (the town's signature milk sweet)", "Kachori-sabzi breakfast", "Sattvic thali (no onion/garlic, common near temples)"],
+    packingTips: ["Modest clothing — shoulders/knees covered for temple entry", "No leather items at some temples (check locally)", "Small bag — some temples restrict phones/cameras inside", "Comfortable shoes for walking between temples"],
   },
 ];
 

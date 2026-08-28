@@ -4,7 +4,7 @@
  * a "quick skim" tab into a long scroll. Overview now just teases it and
  * links to the same content on the standalone Trip Prep screen (also
  * reachable from the Safety tab), passing this destination explicitly. */
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import { router } from "expo-router";
 import { Image } from "expo-image";
 import { Sparkles, Backpack, ChevronRight, MapPin } from "lucide-react-native";
@@ -71,44 +71,55 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
         <ChevronRight color={c.gold} size={16} />
       </Pressable>
 
-      {/* Photo-card strip of places near this destination — visual style
+      {/* Vertical stack of places near this destination — the page's own
+          scroll carries this, no nested horizontal scroller. Visual style
           loosely inspired by TripAdvisor's "Things to Do" attraction
           cards (photo + name + a short tag), rebuilt from scratch for
           this app's own look, not copied. Sourced from the same
           d.nearbyPlaces data as the Nearby tab, so this is a visual
           preview of it rather than a separate dataset. A place without a
           verified real photo falls back to a plain icon card instead of
-          a fabricated/mismatched image. */}
+          a fabricated/mismatched image. Only places with a real full
+          Destination page of their own (place.id) are tappable — see
+          NearbyPlace.id in destinations.ts. */}
       {d.nearbyPlaces.length > 0 && (
         <>
           <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 24, marginBottom: 12 }}>
             <MapPin color={c.primary} size={14} />
             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>Places Near {d.name}</Text>
           </View>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 12, paddingRight: 4 }}>
-            {d.nearbyPlaces.map((place) => (
-              <View
-                key={place.name}
-                style={{ width: 150, borderRadius: 16, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}
-              >
-                {place.image ? (
-                  <Image source={{ uri: place.image }} style={{ width: "100%", height: 110 }} contentFit="cover" />
-                ) : (
-                  <View style={{ width: "100%", height: 110, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
-                    <MapPin color={c.textMuted} size={22} />
+          <View style={{ gap: 12 }}>
+            {d.nearbyPlaces.map((place) => {
+              const CardWrapper = place.id ? Pressable : View;
+              return (
+                <CardWrapper
+                  key={place.name}
+                  {...(place.id ? { onPress: () => router.push(`/destination/${place.id}`) } : {})}
+                  style={{
+                    flexDirection: "row", alignItems: "center", gap: 12,
+                    backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10,
+                  }}
+                >
+                  {place.image ? (
+                    <Image source={{ uri: place.image }} style={{ width: 72, height: 72, borderRadius: 12 }} contentFit="cover" />
+                  ) : (
+                    <View style={{ width: 72, height: 72, borderRadius: 12, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
+                      <MapPin color={c.textMuted} size={22} />
+                    </View>
+                  )}
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }} numberOfLines={2}>
+                      {place.name}
+                    </Text>
+                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 2 }} numberOfLines={1}>
+                      {place.type} · {place.distance}
+                    </Text>
                   </View>
-                )}
-                <View style={{ padding: 10 }}>
-                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }} numberOfLines={2}>
-                    {place.name}
-                  </Text>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textSecondary, marginTop: 2 }} numberOfLines={1}>
-                    {place.type} · {place.distance}
-                  </Text>
-                </View>
-              </View>
-            ))}
-          </ScrollView>
+                  {place.id && <ChevronRight color={c.textMuted} size={16} />}
+                </CardWrapper>
+              );
+            })}
+          </View>
         </>
       )}
     </View>
