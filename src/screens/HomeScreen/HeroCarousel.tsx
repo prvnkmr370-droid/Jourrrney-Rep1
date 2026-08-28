@@ -12,7 +12,7 @@
  * than the mismatched Udaipur photo that was in the Figma reference.
  */
 import { useEffect, useRef, useState } from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, TextInput } from "react-native";
 import { router } from "expo-router";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
@@ -21,6 +21,8 @@ import { MapPin, Shield, Search } from "lucide-react-native";
 import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { resolveUnambiguousMatch } from "@/data/matchDestination";
+import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { CompassMark } from "@/components/JourrrneyLogo";
 
 /** Experiment: a frosted-glass panel behind the greeting text, as an
@@ -51,8 +53,27 @@ interface Props {
 export default function HeroCarousel({ onDestinationSelect }: Props) {
   const insets = useSafeAreaInsets();
   const [index, setIndex] = useState(0);
+  const [query, setQuery] = useState("");
+  const addSearch = useRecentSearchesStore((s) => s.addSearch);
   const opacity = useSharedValue(1);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Typing a place name here and hitting search goes straight to that
+  // destination's page when the query unambiguously means one place (same
+  // rule used everywhere else in the app: an exact name/state match, or a
+  // query with only one live match) — no intermediate step. An ambiguous
+  // or unmatched query falls through to the full Search tab, prefilled.
+  const handleSearchSubmit = () => {
+    const q = query.trim();
+    if (!q) return;
+    const target = resolveUnambiguousMatch(q);
+    if (target) {
+      addSearch(q, target.id);
+      onDestinationSelect(target);
+    } else {
+      router.push({ pathname: "/search/results", params: { q } });
+    }
+  };
 
   useEffect(() => {
     timerRef.current = setInterval(() => {
@@ -163,15 +184,15 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
         </View>
       </Pressable>
 
-      {/* Search pill — goes straight to the searchable destination list.
-          Previously routed through /search (origin city) then /search/dates
-          (travel date) before landing here, but neither of those steps'
-          answers were ever actually used by anything downstream — it was a
-          tedious dead end that never even filtered results to what you'd
-          typed. Removed; see the deleted OriginPrompt/TravelDates search
-          flow files. */}
-      <Pressable
-        onPress={() => router.push("/search/results")}
+      {/* Search bar — the app's one and only search entry point on Home.
+          Typing a place name and hitting search goes straight to that
+          destination's page (handleSearchSubmit above). Previously routed
+          through /search (origin city) then /search/dates (travel date)
+          before landing on an unfiltered list — neither answer was ever
+          actually used by anything downstream, so that whole detour was
+          removed (see the deleted OriginPrompt/TravelDates files) in
+          favour of this bar doing the real search directly. */}
+      <View
         style={{
           position: "absolute", left: 16, right: 16, bottom: 20,
           height: 52, borderRadius: 18, paddingHorizontal: 16,
@@ -182,8 +203,19 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
         }}
       >
         <Search color="#333C81" size={16} />
-        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 14, color: "#78716C" }}>Where do you want to go?</Text>
-      </Pressable>
+        <TextInput
+          value={query}
+          onChangeText={setQuery}
+          onSubmitEditing={handleSearchSubmit}
+          returnKeyType="search"
+          placeholder="Where do you want to go?"
+          placeholderTextColor="#78716C"
+          style={{
+            flex: 1, fontFamily: "Poppins_400Regular", fontSize: 14, color: "#1C1917",
+            paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+          }}
+        />
+      </View>
     </View>
   );
 }
