@@ -14,6 +14,8 @@ export interface CitySuggestion {
   name: string;
   admin1?: string; // state/region
   country?: string;
+  latitude: number;
+  longitude: number;
 }
 
 const DEBOUNCE_MS = 300;
@@ -43,12 +45,16 @@ export function useCitySearch(query: string) {
         );
         const data = await res.json();
         if (requestId !== requestIdRef.current) return; // a newer query started — drop this stale response
-        const results: CitySuggestion[] = (data.results ?? []).map((r: { id: number; name: string; admin1?: string; country?: string }) => ({
-          id: r.id,
-          name: r.name,
-          admin1: r.admin1,
-          country: r.country,
-        }));
+        const results: CitySuggestion[] = (data.results ?? []).map(
+          (r: { id: number; name: string; admin1?: string; country?: string; latitude: number; longitude: number }) => ({
+            id: r.id,
+            name: r.name,
+            admin1: r.admin1,
+            country: r.country,
+            latitude: r.latitude,
+            longitude: r.longitude,
+          }),
+        );
         setSuggestions(results);
       } catch {
         if (requestId === requestIdRef.current) setSuggestions([]);

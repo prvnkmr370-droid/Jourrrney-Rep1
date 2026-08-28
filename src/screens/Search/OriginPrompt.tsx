@@ -2,12 +2,13 @@
 import { useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Navigation, MapPin } from "lucide-react-native";
+import { Navigation, MapPin, Map as MapIcon } from "lucide-react-native";
 import { useOriginStore } from "@/store/useOriginStore";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
+import LocationPickerModal from "@/components/LocationPickerModal";
 
 const RECENT = ["Bengaluru, Karnataka", "Chennai, Tamil Nadu"];
 
@@ -24,6 +25,7 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
   const [value, setValue] = useState(originCity);
   const { locating, detect } = useDetectLocation();
   const [searchFocused, setSearchFocused] = useState(false);
+  const [showMapPicker, setShowMapPicker] = useState(false);
   const { suggestions } = useCitySearch(value);
   const showSuggestions = searchFocused && suggestions.length > 0;
 
@@ -73,6 +75,12 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
         >
           {locating ? <ActivityIndicator size="small" color={c.primary} /> : <Navigation color={c.primary} size={14} />}
         </Pressable>
+        <Pressable
+          onPress={() => setShowMapPicker(true)}
+          style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}
+        >
+          <MapIcon color={c.primary} size={14} />
+        </Pressable>
       </View>
 
       {showSuggestions && (
@@ -119,6 +127,12 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
       <Pressable onPress={handleContinue} style={{ backgroundColor: "#333C81", borderRadius: 16, paddingVertical: 16, alignItems: "center" }}>
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>Continue</Text>
       </Pressable>
+
+      <LocationPickerModal
+        visible={showMapPicker}
+        onClose={() => setShowMapPicker(false)}
+        onConfirm={(label) => { setValue(label); setShowMapPicker(false); }}
+      />
     </View>
   );
 }

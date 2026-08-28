@@ -3,13 +3,14 @@ import { useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, ActivityIndicator, type NativeSyntheticEvent, type NativeScrollEvent, type LayoutChangeEvent } from "react-native";
 import { Image } from "expo-image";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Sparkles, Navigation, MapPin, Calendar } from "lucide-react-native";
+import { ArrowLeft, Sparkles, Navigation, MapPin, Calendar, Map as MapIcon } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
+import LocationPickerModal from "@/components/LocationPickerModal";
 import { STYLE_CONFIGS, PREFERENCES, type TravelStyle } from "../data";
 import { styleAccent } from "../styleAccent";
 
@@ -83,6 +84,7 @@ export default function FormStep({
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
   const { locating, detect } = useDetectLocation();
   const [originSearchFocused, setOriginSearchFocused] = useState(false);
+  const [showMapPicker, setShowMapPicker] = useState(false);
   const { suggestions: originSuggestions } = useCitySearch(originCity);
   const showOriginSuggestions = originSearchFocused && originSuggestions.length > 0;
   const dateChips = useMemo(() => nextDays(14), []);
@@ -213,6 +215,12 @@ export default function FormStep({
               style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}
             >
               {locating ? <ActivityIndicator size="small" color={c.primary} /> : <Navigation color={c.primary} size={14} />}
+            </Pressable>
+            <Pressable
+              onPress={() => setShowMapPicker(true)}
+              style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}
+            >
+              <MapIcon color={c.primary} size={14} />
             </Pressable>
           </View>
 
@@ -370,6 +378,12 @@ export default function FormStep({
           </Text>
         </Pressable>
       </ScrollView>
+
+      <LocationPickerModal
+        visible={showMapPicker}
+        onClose={() => setShowMapPicker(false)}
+        onConfirm={(label) => { setOriginCity(label); setShowMapPicker(false); }}
+      />
     </View>
   );
 }
