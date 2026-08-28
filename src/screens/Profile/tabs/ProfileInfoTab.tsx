@@ -1,10 +1,14 @@
 /**
- * Ported from the Make prototype's ProfileTab. Bio, Work, Education,
- * Languages, and Lives in are now real — persisted to journey-backend's
- * /profile endpoint for real (email) accounts, via useProfileStore's
- * profile/updateProfile. Google/Apple/Facebook sign-in is still local-only
- * fake auth, so those accounts keep showing the static demo persona
- * (Priya Sharma) rather than empty real fields that don't exist for them.
+ * Ported from the Make prototype's ProfileTab. Bio, Languages, and Lives
+ * in are now real — persisted to journey-backend's /profile endpoint for
+ * real (email) accounts, via useProfileStore's profile/updateProfile.
+ * Google/Apple/Facebook sign-in is still local-only fake auth, so those
+ * accounts keep showing the static demo persona (Priya Sharma) rather
+ * than empty real fields that don't exist for them.
+ *
+ * Work and Education were dropped from Personal Info — not relevant
+ * context for a travel app (removed from the backend's profile schema
+ * too, not just hidden here).
  *
  * "Travel style" now reads from useTravelPreferencesStore — a genuine
  * local feature (not demo data), shared with the Travel Preferences
@@ -17,7 +21,7 @@
 import { useEffect, useState } from "react";
 import { View, Text, Pressable, TextInput, ScrollView, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
-import { Edit3, Briefcase, GraduationCap, Languages, Heart, MapPin, Phone, Mail, FileText, Check, ChevronRight, UserRound, type LucideIcon } from "lucide-react-native";
+import { Edit3, Languages, Heart, MapPin, Phone, Mail, FileText, Check, ChevronRight, UserRound, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
 import { useTravelPreferencesStore, type TravelStyle } from "@/store/useTravelPreferencesStore";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -55,15 +59,11 @@ export default function ProfileInfoTab() {
 
   const personalInfo: { icon: LucideIcon; label: string; value: string; onPress?: () => void }[] = isRealAccount
     ? [
-        { icon: Briefcase, label: "Work", value: profile.work ?? NOT_SET },
-        { icon: GraduationCap, label: "Education", value: profile.education ?? NOT_SET },
         { icon: Languages, label: "Languages", value: profile.languages ?? NOT_SET },
         { icon: Heart, label: "Travel style", value: TRAVEL_STYLE_LABEL[travelStyle], onPress: () => router.push("/profile/travel-preferences") },
         { icon: MapPin, label: "Lives in", value: profile.location ?? NOT_SET },
       ]
     : [
-        { icon: Briefcase, label: "Work", value: USER.work },
-        { icon: GraduationCap, label: "Education", value: USER.school },
         { icon: Languages, label: "Languages", value: USER.languages.join(", ") },
         { icon: Heart, label: "Travel style", value: TRAVEL_STYLE_LABEL[travelStyle], onPress: () => router.push("/profile/travel-preferences") },
         { icon: MapPin, label: "Lives in", value: USER.location },

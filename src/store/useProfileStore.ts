@@ -9,14 +9,12 @@ export type AuthProvider = "google" | "apple" | "facebook" | "email" | "phone" |
  * placeholder demo content). */
 export interface RealProfile {
   bio: string | null;
-  work: string | null;
-  education: string | null;
   languages: string | null;
   location: string | null;
 }
 
 const TOKEN_KEY = "journey_auth_token";
-const EMPTY_PROFILE: RealProfile = { bio: null, work: null, education: null, languages: null, location: null };
+const EMPTY_PROFILE: RealProfile = { bio: null, languages: null, location: null };
 
 interface ProfileState {
   isSignedIn: boolean;
@@ -153,7 +151,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       });
       if (!res.ok) return;
       const { profile } = await res.json();
-      set({ profile: { bio: profile.bio, work: profile.work, education: profile.education, languages: profile.languages, location: profile.location } });
+      set({ profile: { bio: profile.bio, languages: profile.languages, location: profile.location } });
     } catch {
       // Leave whatever profile state we already have — a failed refresh
       // shouldn't blank out fields the user can already see.

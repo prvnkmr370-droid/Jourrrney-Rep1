@@ -13,8 +13,6 @@ export const USER = {
   location: "Bengaluru, Karnataka",
   memberSince: "2024",
   bio: "Solo traveller exploring India one state at a time. I love heritage sites, local food, and off-the-beaten-path experiences.",
-  work: "UX Designer",
-  school: "NID Ahmedabad",
   languages: ["English", "Hindi", "Kannada"],
   travelStyle: "Backpacker",
   verified: { phone: true, email: true, govId: false },
