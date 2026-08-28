@@ -45,6 +45,11 @@ export interface NearbyPlace {
   distance: string;
   type: string;
   isHidden: boolean;
+  // Optional — only set where a real, verified photo of that specific
+  // place was sourced. Left undefined elsewhere rather than backfilled
+  // with a generic/mismatched stand-in photo; the image-card grid in
+  // OverviewTab.tsx falls back to a plain icon card when this is absent.
+  image?: string;
 }
 
 export interface BudgetBreakdown {
@@ -136,8 +141,8 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Tonga (Horse Cart)", cost: "₹100–₹300", notes: "Unique heritage experience", available: true },
     ],
     nearbyPlaces: [
-      { name: "Fatehpur Sikri", distance: "40 km", type: "UNESCO Heritage", isHidden: false },
-      { name: "Mathura & Vrindavan", distance: "58 km", type: "Spiritual", isHidden: false },
+      { name: "Fatehpur Sikri", distance: "40 km", type: "UNESCO Heritage", isHidden: false, image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=400&h=400&fit=crop&auto=format" },
+      { name: "Mathura & Vrindavan", distance: "58 km", type: "Spiritual", isHidden: false, image: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=400&h=400&fit=crop&auto=format" },
       { name: "Bharatpur Bird Sanctuary", distance: "56 km", type: "Wildlife", isHidden: false },
       { name: "Bateshwar Temple Complex", distance: "70 km", type: "Hidden Gem", isHidden: true },
       { name: "Keetham Lake (Sur Sarovar)", distance: "20 km", type: "Nature", isHidden: true },
@@ -851,6 +856,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Moped/Scooter", cost: "₹300–₄00/day", notes: "Best for independent exploration; available at Hospet and some Hampi shops", available: true },
     ],
     nearbyPlaces: [
+      { name: "Vittala Temple Stone Chariot", distance: "2 km from Hampi Bazaar", type: "Iconic Monument", isHidden: false, image: "https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=400&h=400&fit=crop&auto=format" },
       { name: "Hospet Town", distance: "13 km", type: "Gateway Town", isHidden: false },
       { name: "Daroji Bear Sanctuary", distance: "15 km", type: "Wildlife", isHidden: false },
       { name: "Tungabhadra Dam", distance: "5 km from Hospet", type: "Nature/Dam", isHidden: false },
