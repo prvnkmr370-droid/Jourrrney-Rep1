@@ -12,11 +12,25 @@ export interface Transport {
   tips: string;
 }
 
+export interface AccommodationVenue {
+  name: string;
+  location?: string; // where it is, if known (e.g. "Aberdeen Bazaar, Sri Vijaya Puram")
+  mapsQuery: string; // used to build a "get directions" Google Maps link
+}
+
 export interface Accommodation {
   type: string;
   priceRange: string;
   examples: string[];
   description: string;
+  // Optional richer per-venue data (real names + a maps link) sourced from
+  // an official tourism site. Left undefined for destinations that don't
+  // have this yet — `examples` above still renders on its own in that
+  // case. See StayTab.tsx.
+  venues?: AccommodationVenue[];
+  // Where `venues` came from, and any caveat about it (e.g. no official
+  // rates published) — shown under the venue list in the UI.
+  sourceNote?: string;
 }
 
 export interface LocalTransport {
@@ -485,13 +499,39 @@ export const DESTINATIONS: Destination[] = [
     duration: "6–10 days",
     highlights: ["Radhanagar Beach (Havelock)", "Scuba Diving Neil Island", "Cellular Jail", "Baratang Limestone Caves", "Bioluminescent plankton beaches"],
     transport: [
-      { mode: "Flight", icon: "✈️", fromDelhi: "3.5h direct to Port Blair (Veer Savarkar Airport)", fromMumbai: "3h direct", fromBangalore: "2.5h direct", duration: "2.5–3.5h", costRange: "₹5,000–₹18,000", tips: "Book flights 3–6 months ahead — limited seats and prices spike. Port Blair is the only gateway." },
-      { mode: "Ferry", icon: "⛵", fromDelhi: "—", fromMumbai: "Ship from Kolkata – 56h", fromBangalore: "Ship from Chennai – 60h", duration: "56–60h by ship", costRange: "₹2,500–₹12,000 (ship)", tips: "Ships are an adventure but slow. Most tourists fly and take ferries between islands." },
+      // Airport name, connected cities, and airlines verified against
+      // tourism.andamannicobar.gov.in/how-to-reach.php.
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Veer Savarkar International Airport, Sri Vijaya Puram (Port Blair)", fromMumbai: "Via Chennai/Bangalore — no direct flight listed", fromBangalore: "Direct to Veer Savarkar International Airport", duration: "2.5–3.5h", costRange: "₹5,000–₹18,000", tips: "Also connected from Chennai, Kolkata, Hyderabad, and Visakhapatnam. Flown by Air India, Indigo, Vistara, Go First, and SpiceJet. Book flights 3–6 months ahead — limited seats and prices spike." },
+      { mode: "Ferry", icon: "⛵", fromDelhi: "—", fromMumbai: "Ship from Kolkata – 56h", fromBangalore: "Ship from Chennai – 60h", duration: "56–60h by ship", costRange: "₹2,500–₹12,000 (ship)", tips: "Ships are an adventure but slow. Once on the islands, government ferries leave from Phoenix Bay Jetty (Sri Vijaya Puram) for inter-island travel; private boats leave from Aberdeen Jetty. Daily helicopter service also connects Sri Vijaya Puram to Neil, Havelock, Diglipur, and Hutbay." },
     ],
     accommodation: [
-      { type: "Beach Huts / Budget", priceRange: "₹800–₹2,500/night", examples: ["Symphony Palms", "Blue Bird", "Blue Wave"], description: "Beachfront huts on Havelock — basic but atmospheric." },
-      { type: "Mid-Range Resorts", priceRange: "₹4,000–₹10,000/night", examples: ["Munjoh Ocean Resort", "Havelock Island Beach Resort", "Peerless Resort"], description: "Air-conditioned sea-facing rooms with pool." },
-      { type: "Luxury Eco-Resorts", priceRange: "₹15,000–₹60,000/night", examples: ["Barefoot at Havelock", "SeaShell Resort", "Jalakara"], description: "Exclusive eco-luxury — private beach, scuba, kayak included." },
+      {
+        type: "Government Tourist Lodges", priceRange: "₹800–₹2,500/night (estimate)",
+        examples: ["Hawabill Nest", "Turtle Resort", "Municipal Lodging House (Dugong)", "Megapode Resort"],
+        description: "A.N. Islands Tourism-run guesthouses across the main islands — basic but reliably clean and well-located.",
+        venues: [
+          { name: "Hawabill Nest", location: "Shaheed Dweep (Neil Island)", mapsQuery: "Hawabill Nest Neil Island Andaman" },
+          { name: "Turtle Resort", location: "Kalipur, Diglipur, North Andaman", mapsQuery: "Turtle Resort Kalipur Diglipur Andaman" },
+          { name: "Municipal Lodging House (Dugong)", location: "Aberdeen Bazaar, Sri Vijaya Puram", mapsQuery: "Municipal Lodging House Dugong Aberdeen Bazaar Port Blair" },
+          { name: "Megapode Resort", location: "Sri Vijaya Puram (Port Blair)", mapsQuery: "Megapode Resort Port Blair Andaman" },
+          { name: "Dolphin Resort (New Block)", location: "Swaraj Dweep (Havelock Island)", mapsQuery: "Dolphin Resort Havelock Island Andaman" },
+          { name: "Hornbill Nest Resort", location: "Near Corbyn's Cove, Sri Vijaya Puram", mapsQuery: "Hornbill Nest Resort Corbyn's Cove Port Blair" },
+          { name: "Hawksbill Nest", location: "Cutbert Bay, Rangat, Middle Andaman", mapsQuery: "Hawksbill Nest Cutbert Bay Rangat Andaman" },
+        ],
+        sourceNote: "Real government-run properties listed on tourism.andamannicobar.gov.in — the site does not publish nightly rates; the range above is an estimate, not an official figure.",
+      },
+      {
+        type: "Mid-Range Resorts (A/B Grade)", priceRange: "₹4,000–₹10,000/night (estimate)",
+        examples: ["Holiday Inn Beach Resort", "N K Havelock Eco Resorts"],
+        description: "The official directory lists 100+ graded A/B private resorts across Sri Vijaya Puram, Swaraj Dweep, and Shaheed Dweep — these two are named as examples on the site.",
+        sourceNote: "Rates not published on tourism.andamannicobar.gov.in.",
+      },
+      {
+        type: "Premium Private Hotels (A+ Grade)", priceRange: "₹15,000–₹60,000/night (estimate)",
+        examples: ["Taj Exotica Resort & SPA", "Hotel TSG Blue", "Summer Sands", "Sea Shell (Neil Island) Hotel & Resorts", "T.S.G Hotels & Resorts"],
+        description: "The island's top-graded private hotels, concentrated on Swaraj Dweep and Shaheed Dweep.",
+        sourceNote: "Rates and exact addresses not published on tourism.andamannicobar.gov.in — use each hotel's own site/booking platform for current pricing.",
+      },
     ],
     localTransport: [
       { mode: "Ferry (Govt / Private)", cost: "₹200–₹600", notes: "Port Blair – Havelock (Neil Island). Book 2 days ahead", available: true },
@@ -521,7 +561,7 @@ export const DESTINATIONS: Destination[] = [
       score: 9,
       level: "Very Safe",
       highlights: ["One of India's safest destinations overall", "Small island community", "Heavy naval and security presence", "International tourist culture"],
-      precautions: ["Restricted tribal areas — respect Protected Area Permit rules", "Don't swim at night or in areas without lifeguards", "Book ferry tickets in advance — don't accept last-minute boat offers"],
+      precautions: ["Restricted tribal areas — respect Protected Area Permit rules", "Don't swim at night or in areas without lifeguards", "Book ferry tickets in advance — don't accept last-minute boat offers", "G.B. Pant Hospital and AYUSH Hospital (Sri Vijaya Puram) handle emergencies; smaller primary health centres are on Swaraj Dweep, Shaheed Dweep, Rangat, and Diglipur — per tourism.andamannicobar.gov.in"],
       soloTips: ["Andaman is exceptional for solo women travellers", "Resort/hotel staff are very helpful and trustworthy", "Join group snorkelling and diving trips — social and safe", "Beach areas are well-lit and regularly patrolled"],
       emergencyContacts: [{ label: "Port Blair Police", number: "03192-232100" }, { label: "Coast Guard Andaman", number: "03192-230420" }, { label: "Emergency", number: "112" }],
       safeZones: ["All major beaches on Havelock and Neil", "Port Blair town", "Certified resort areas"],
