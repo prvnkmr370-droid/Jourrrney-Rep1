@@ -37,4 +37,7 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   guwahati: { lat: 26.1445, lon: 91.7362 },
   tezpur: { lat: 26.6528, lon: 92.7926 },
   haflong: { lat: 25.1667, lon: 93.0167 },
+  dibrugarh: { lat: 27.4728, lon: 94.912 },
+  silchar: { lat: 24.8333, lon: 92.7789 },
+  pobitora: { lat: 26.2167, lon: 92.0333 },
 };
