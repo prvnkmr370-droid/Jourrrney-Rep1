@@ -8,10 +8,26 @@
  * indication of why, which is exactly what "not working" looks like from
  * the outside. Every failure path here now tells the user what actually
  * went wrong instead.
+ *
+ * Accuracy: requests Location.Accuracy.Highest, which asks Android/iOS to
+ * use GPS rather than settle for network/cell-tower-based positioning —
+ * the previous "Balanced" setting let the OS return a coarse, sometimes
+ * wildly-off city-level fix instead of your actual GPS position. Highest
+ * accuracy can take longer (a few seconds, more indoors/underground), so
+ * this races it against a 15s timeout rather than hanging forever.
+ *
+ * One thing app code can't control: if you tapped "Approximate" instead
+ * of "Precise" on Android's location permission prompt, every fix you get
+ * back is coarse regardless of the accuracy requested here — the OS
+ * enforces that ceiling. If results still look wrong after this fix,
+ * check Settings → Apps → Jourrrney → Permissions → Location, and make
+ * sure "Use precise location" is turned on.
  */
 import { useState } from "react";
 import { Alert } from "react-native";
 import * as Location from "expo-location";
+
+const FIX_TIMEOUT_MS = 15000;
 
 export function useDetectLocation() {
   const [locating, setLocating] = useState(false);
@@ -39,8 +55,16 @@ export function useDetectLocation() {
         return null;
       }
 
-      const pos = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced });
-      const [place] = await Location.reverseGeocodeAsync({ latitude: pos.coords.latitude, longitude: pos.coords.longitude });
+      const fix = await Promise.race([
+        Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Highest }),
+        new Promise<null>((resolve) => setTimeout(() => resolve(null), FIX_TIMEOUT_MS)),
+      ]);
+      if (!fix) {
+        Alert.alert("Couldn't get a GPS fix", "This can take longer with a weak signal (e.g. indoors) — move somewhere with clearer sky view and try again.");
+        return null;
+      }
+
+      const [place] = await Location.reverseGeocodeAsync({ latitude: fix.coords.latitude, longitude: fix.coords.longitude });
       const city = place?.city ?? place?.subregion ?? place?.region;
       if (!city) {
         Alert.alert("Couldn't determine your city", "Found your location, but couldn't match it to a city name — try entering it manually.");
