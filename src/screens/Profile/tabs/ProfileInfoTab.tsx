@@ -1,50 +1,107 @@
 /**
- * Ported from the Make prototype's ProfileTab. Bio editing is session-
- * only (no backend to persist to). "Travel style" navigates to the real
- * Travel Preferences screen — the Make code left every personal-info row
- * as an inert no-op (`onTap={() => {}}`), but since a real screen for that
- * one exists from an earlier phase, wiring it up is a genuine improvement
- * over the reference rather than a deviation from it. The other rows
- * (Work, Education, Languages, Lives in) stay display-only, same as the
- * Make code — there's nothing real for them to open yet. Rows that don't
- * navigate are rendered as plain (non-Pressable) Views with no chevron, so
- * their appearance matches what tapping them actually does — previously
- * every row looked identically tappable regardless of whether anything
- * happened.
+ * Ported from the Make prototype's ProfileTab. Bio, Work, Education,
+ * Languages, and Lives in are now real — persisted to journey-backend's
+ * /profile endpoint for real (email) accounts, via useProfileStore's
+ * profile/updateProfile. Google/Apple/Facebook sign-in is still local-only
+ * fake auth, so those accounts keep showing the static demo persona
+ * (Priya Sharma) rather than empty real fields that don't exist for them.
  *
- * This whole tab is gated on isSignedIn: it's Priya Sharma's static demo
- * data, and showing it to a guest (who the header elsewhere correctly
+ * "Travel style" now reads from useTravelPreferencesStore — a genuine
+ * local feature (not demo data), shared with the Travel Preferences
+ * screen — instead of the mock persona's static "Backpacker" text.
+ *
+ * This whole tab is gated on isSignedIn: showing either the real profile
+ * or the demo persona to a guest (who the header elsewhere correctly
  * labels "Guest") looked like the app was displaying a stranger's account.
  */
-import { useState } from "react";
-import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
+import { useEffect, useState } from "react";
+import { View, Text, Pressable, TextInput, ScrollView, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import { Edit3, Briefcase, GraduationCap, Languages, Heart, MapPin, Phone, Mail, FileText, Check, ChevronRight, UserRound, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
+import { useTravelPreferencesStore, type TravelStyle } from "@/store/useTravelPreferencesStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { USER } from "../mockUser";
 
+const TRAVEL_STYLE_LABEL: Record<TravelStyle, string> = {
+  slow: "Slow travel",
+  packed: "Packed itinerary",
+  mixed: "Mix of both",
+};
+
+const NOT_SET = "Not set yet";
+
 export default function ProfileInfoTab() {
   const c = useThemeColors();
-  const isSignedIn = useProfileStore((s) => s.isSignedIn);
+  const { isSignedIn, authProvider, email, profile, updateProfile, fetchProfile } = useProfileStore();
+  const travelStyle = useTravelPreferencesStore((s) => s.travelStyle);
+  // "email" means a real journey-backend account — everything else
+  // (Google/Apple/Facebook) is still local-only fake auth with no real
+  // profile behind it, so those keep the demo persona.
+  const isRealAccount = authProvider === "email";
+
   const [editBio, setEditBio] = useState(false);
-  const [bio, setBio] = useState(USER.bio);
-  const [draft, setDraft] = useState(USER.bio);
+  const [draft, setDraft] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
-  const personalInfo: { icon: LucideIcon; label: string; value: string; onPress?: () => void }[] = [
-    { icon: Briefcase, label: "Work", value: USER.work },
-    { icon: GraduationCap, label: "Education", value: USER.school },
-    { icon: Languages, label: "Languages", value: USER.languages.join(", ") },
-    { icon: Heart, label: "Travel style", value: USER.travelStyle, onPress: () => router.push("/profile/travel-preferences") },
-    { icon: MapPin, label: "Lives in", value: USER.location },
-  ];
+  useEffect(() => {
+    if (isSignedIn && isRealAccount) fetchProfile();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isSignedIn, isRealAccount]);
 
-  const verifiedInfo = [
-    { icon: Phone, label: USER.phone, verified: USER.verified.phone },
-    { icon: Mail, label: USER.email, verified: USER.verified.email },
-    { icon: FileText, label: "Government ID", verified: USER.verified.govId },
-  ];
+  const bio = isRealAccount ? profile.bio : USER.bio;
+
+  const personalInfo: { icon: LucideIcon; label: string; value: string; onPress?: () => void }[] = isRealAccount
+    ? [
+        { icon: Briefcase, label: "Work", value: profile.work ?? NOT_SET },
+        { icon: GraduationCap, label: "Education", value: profile.education ?? NOT_SET },
+        { icon: Languages, label: "Languages", value: profile.languages ?? NOT_SET },
+        { icon: Heart, label: "Travel style", value: TRAVEL_STYLE_LABEL[travelStyle], onPress: () => router.push("/profile/travel-preferences") },
+        { icon: MapPin, label: "Lives in", value: profile.location ?? NOT_SET },
+      ]
+    : [
+        { icon: Briefcase, label: "Work", value: USER.work },
+        { icon: GraduationCap, label: "Education", value: USER.school },
+        { icon: Languages, label: "Languages", value: USER.languages.join(", ") },
+        { icon: Heart, label: "Travel style", value: TRAVEL_STYLE_LABEL[travelStyle], onPress: () => router.push("/profile/travel-preferences") },
+        { icon: MapPin, label: "Lives in", value: USER.location },
+      ];
+
+  // Real accounts show their actual email — genuinely "verified" in the
+  // sense that matters here, since signing in required entering a code
+  // sent to that exact address. No phone number is collected anywhere in
+  // the app, so that row is dropped rather than showing a fabricated one;
+  // Government ID has no real verification flow for anyone yet.
+  const verifiedInfo = isRealAccount
+    ? [
+        { icon: Mail, label: email ?? "", verified: true },
+        { icon: FileText, label: "Government ID", verified: false },
+      ]
+    : [
+        { icon: Phone, label: USER.phone, verified: USER.verified.phone },
+        { icon: Mail, label: USER.email, verified: USER.verified.email },
+        { icon: FileText, label: "Government ID", verified: USER.verified.govId },
+      ];
+
+  const handleSaveBio = async () => {
+    if (!isRealAccount) {
+      // No backend behind the fake social-login personas — same
+      // session-only behavior as before.
+      setEditBio(false);
+      return;
+    }
+    setSaving(true);
+    setSaveError(null);
+    const result = await updateProfile({ bio: draft });
+    setSaving(false);
+    if (!result.ok) {
+      setSaveError(result.error ?? "Couldn't save — try again.");
+      return;
+    }
+    setEditBio(false);
+  };
 
   if (!isSignedIn) {
     return (
@@ -75,7 +132,7 @@ export default function ProfileInfoTab() {
         <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, letterSpacing: 1, color: c.textSecondary }}>ABOUT</Text>
           {!editBio && (
-            <Pressable onPress={() => { setDraft(bio); setEditBio(true); }} style={{ backgroundColor: c.surfaceAlt, borderRadius: 8, padding: 6 }}>
+            <Pressable onPress={() => { setDraft(bio ?? ""); setSaveError(null); setEditBio(true); }} style={{ backgroundColor: c.surfaceAlt, borderRadius: 8, padding: 6 }}>
               <Edit3 color={c.textSecondary} size={13} />
             </Pressable>
           )}
@@ -88,19 +145,28 @@ export default function ProfileInfoTab() {
               onChangeText={setDraft}
               multiline
               numberOfLines={4}
+              editable={!saving}
+              placeholder="Tell other travellers a bit about yourself"
+              placeholderTextColor={c.textMuted}
               style={{ backgroundColor: c.surfaceAlt, borderRadius: 12, padding: 12, fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary, lineHeight: 19, borderWidth: 1.5, borderColor: "#333C81", minHeight: 90, textAlignVertical: "top" }}
             />
+            {saveError && (
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.danger, marginTop: 8 }}>{saveError}</Text>
+            )}
             <View style={{ flexDirection: "row", gap: 8, marginTop: 10 }}>
-              <Pressable onPress={() => { setBio(draft); setEditBio(false); }} style={{ flex: 1, alignItems: "center", paddingVertical: 10, borderRadius: 12, backgroundColor: "#333C81" }}>
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>Save</Text>
+              <Pressable onPress={handleSaveBio} disabled={saving} style={{ flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingVertical: 10, borderRadius: 12, backgroundColor: "#333C81" }}>
+                {saving && <ActivityIndicator color="#FFFFFF" size="small" />}
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>{saving ? "Saving…" : "Save"}</Text>
               </Pressable>
-              <Pressable onPress={() => setEditBio(false)} style={{ flex: 1, alignItems: "center", paddingVertical: 10, borderRadius: 12, backgroundColor: c.surfaceAlt }}>
+              <Pressable onPress={() => setEditBio(false)} disabled={saving} style={{ flex: 1, alignItems: "center", paddingVertical: 10, borderRadius: 12, backgroundColor: c.surfaceAlt }}>
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textSecondary }}>Cancel</Text>
               </Pressable>
             </View>
           </View>
         ) : (
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, lineHeight: 20, color: c.textPrimary }}>{bio}</Text>
+          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, lineHeight: 20, color: bio ? c.textPrimary : c.textMuted }}>
+            {bio ?? "Add a bio so other travellers know a bit about you."}
+          </Text>
         )}
       </View>
 
@@ -114,7 +180,7 @@ export default function ProfileInfoTab() {
               <row.icon color={c.textSecondary} size={16} />
               <View style={{ flex: 1 }}>
                 <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{row.label}</Text>
-                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, marginTop: 1 }}>{row.value}</Text>
+                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: row.value === NOT_SET ? c.textMuted : c.textPrimary, marginTop: 1 }}>{row.value}</Text>
               </View>
               {row.onPress && <ChevronRight color={c.textMuted} size={16} />}
             </>
