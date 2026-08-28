@@ -47,6 +47,20 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     return DESTINATIONS.filter((d) => d.name.toLowerCase().includes(q) || d.state.toLowerCase().includes(q)).slice(0, 4);
   }, [query]);
 
+  // Hitting search/enter on a query that clearly means one destination
+  // (an exact name/state match, like "Arunachal Pradesh", or a query with
+  // only one live match, like "Arunachal") should go straight to that
+  // destination's page — not leave the user to tap it again from a list
+  // they've already effectively narrowed to one result. An ambiguous
+  // multi-match query is left as a list rather than guessing.
+  const handleSubmit = () => {
+    const q = query.trim().toLowerCase();
+    if (!q) return;
+    const exact = DESTINATIONS.find((d) => d.name.toLowerCase() === q || d.state.toLowerCase() === q);
+    const target = exact ?? (liveMatches.length === 1 ? liveMatches[0] : null);
+    if (target) handleSearchSelect(target);
+  };
+
   const filtered = useMemo(() => {
     if (category === "All") return DESTINATIONS;
     if (category === "Hills") return DESTINATIONS.filter((d) => HILL_STATION_IDS.includes(d.id));
@@ -68,6 +82,8 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
             onChangeText={setQuery}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
+            onSubmitEditing={handleSubmit}
+            returnKeyType="search"
             placeholder="Search destinations..."
             placeholderTextColor={c.textMuted}
             style={{
