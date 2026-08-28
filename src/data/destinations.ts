@@ -3510,6 +3510,13 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Boat (to Long Island)", cost: "₹300–₹800", notes: "From Rangat jetty, 7:00am & 2:00pm daily", available: true },
     ],
     nearbyPlaces: [
+      // Cuthbert Bay and Amkunj Beach are single-site attractions within
+      // Rangat itself (already named in highlights above), not separate
+      // destinations — added here with real photos sourced from
+      // tourism.andamannicobar.gov.in's own dedicated pages, same
+      // "single-site attraction" pattern used for Port Blair.
+      { name: "Cuthbert Bay Wildlife Sanctuary", distance: "~12 km toward Mayabunder", type: "Turtle Nesting Beach", isHidden: false, image: "https://tourism.andamannicobar.gov.in/userpages/admin/uploads/nature/1775028430_cuthbert_bay_beach.jpg" },
+      { name: "Amkunj Beach", distance: "Rangat area", type: "Beach", isHidden: false, image: "https://tourism.andamannicobar.gov.in/userpages/admin/uploads/beaches/1756185377_Screenshot_2025_08_26_104117.png" },
       { name: "Long Island", distance: "~1.5h by boat", type: "Boat-Only Beach", isHidden: false, id: "long-island" },
       { name: "Baratang Island", distance: "~100 km", type: "Mud Volcano & Limestone Caves", isHidden: false, id: "baratang" },
       { name: "Port Blair (Andaman Islands)", distance: "~170 km", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -3567,6 +3574,14 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Hired Car / Taxi", cost: "₹1,500–₹3,000/day (estimate)", notes: "For the national park and biosphere reserve viewpoints", available: true },
     ],
     nearbyPlaces: [
+      // Indira Point and Baludera Beach are single-site attractions within
+      // Great Nicobar itself, not separate destinations. Indira Point's
+      // photo is from Wikimedia Commons (CC BY-SA 4.0); Baludera Beach's
+      // is from tourism.andamannicobar.gov.in's own gallery, explicitly
+      // captioned "Campbell Bay" there — location-confirmed by the
+      // official source itself.
+      { name: "Indira Point", distance: "~35 km", type: "India's Southernmost Point", isHidden: false, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Indira_Point%2C_India_-_100_0835fhh.jpg/1280px-Indira_Point%2C_India_-_100_0835fhh.jpg" },
+      { name: "Baludera Beach", distance: "Campbell Bay area", type: "Beach", isHidden: false, image: "https://tourism.andamannicobar.gov.in/userpages/admin/uploads/beaches/1775562425_bulendra.png" },
       { name: "Port Blair (Andaman Islands)", distance: "31–36h by ferry", type: "Main Gateway", isHidden: false, id: "andaman" },
     ],
     budgetBreakdown: [
