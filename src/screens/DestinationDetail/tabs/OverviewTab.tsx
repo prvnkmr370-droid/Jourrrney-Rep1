@@ -28,27 +28,37 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
       </View>
 
       <View style={{ gap: 10 }}>
-        {d.highlights.map((highlight, i) => (
-          <View
-            key={highlight}
-            style={{
-              flexDirection: "row", alignItems: "center", gap: 12,
-              backgroundColor: c.surfaceAlt, borderRadius: 14, paddingVertical: 10, paddingHorizontal: 14,
-            }}
-          >
-            <View
+        {/* Numbered items are tappable, opening their own full destination
+            page, only where highlight.id points at a real one (e.g. Agra's
+            "Fatehpur Sikri") — same pattern as the nearby-place cards
+            below. A highlight that's part of this destination itself
+            (most of them) has no id and stays a plain row. */}
+        {d.highlights.map((highlight, i) => {
+          const CardWrapper = highlight.id ? Pressable : View;
+          return (
+            <CardWrapper
+              key={highlight.name}
+              {...(highlight.id ? { onPress: () => router.push(`/destination/${highlight.id}`) } : {})}
               style={{
-                width: 24, height: 24, borderRadius: 12,
-                backgroundColor: "#333C81", alignItems: "center", justifyContent: "center",
+                flexDirection: "row", alignItems: "center", gap: 12,
+                backgroundColor: c.surfaceAlt, borderRadius: 14, paddingVertical: 10, paddingHorizontal: 14,
               }}
             >
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>{i + 1}</Text>
-            </View>
-            <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary, flex: 1 }}>
-              {highlight}
-            </Text>
-          </View>
-        ))}
+              <View
+                style={{
+                  width: 24, height: 24, borderRadius: 12,
+                  backgroundColor: "#333C81", alignItems: "center", justifyContent: "center",
+                }}
+              >
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>{i + 1}</Text>
+              </View>
+              <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary, flex: 1 }}>
+                {highlight.name}
+              </Text>
+              {highlight.id && <ChevronRight color={c.textMuted} size={16} />}
+            </CardWrapper>
+          );
+        })}
       </View>
 
       <Pressable

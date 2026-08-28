@@ -90,6 +90,17 @@ export interface WomenSafety {
   avoidAreas: string[];
 }
 
+export interface Highlight {
+  name: string;
+  // Optional — set only when this named landmark/place has its own real,
+  // full Destination page (matching a DESTINATIONS id). When present, the
+  // numbered item in OverviewTab.tsx's Top Highlights list is tappable
+  // and opens that destination's own page, same pattern as
+  // NearbyPlace.id. Left undefined for highlights that are part of the
+  // parent destination itself rather than a separate place.
+  id?: string;
+}
+
 export interface Destination {
   id: string;
   name: string;
@@ -109,7 +120,7 @@ export interface Destination {
   category: string[];
   bestSeason: string;
   duration: string;
-  highlights: string[];
+  highlights: Highlight[];
   transport: Transport[];
   accommodation: Accommodation[];
   localTransport: LocalTransport[];
@@ -135,7 +146,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: ["Taj Mahal at sunrise", "Agra Fort", "Fatehpur Sikri", "Mehtab Bagh moonrise view", "Kinari Bazaar"],
+    highlights: [{ name: "Taj Mahal at sunrise" }, { name: "Agra Fort" }, { name: "Fatehpur Sikri", id: "fatehpur-sikri" }, { name: "Mehtab Bagh moonrise view" }, { name: "Kinari Bazaar" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Gatimaan Express – 1h 40m", fromMumbai: "Mumbai–Agra Express – 22h", fromBangalore: "Via Delhi – 30h+", duration: "1.5–3h from Delhi", costRange: "₹200–₹1,500", tips: "Gatimaan Express is fastest; book 60+ days in advance on IRCTC." },
       { mode: "Road", icon: "🚗", fromDelhi: "Yamuna Expressway – 3–4h", fromMumbai: "NH-48 – 22h", fromBangalore: "—", duration: "3–4h from Delhi", costRange: "₹800–₹2,500 cab / ₹200 bus", tips: "Yamuna Expressway toll is ₹315 one-way. Avoid weekends — heavy traffic." },
@@ -199,7 +210,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Shopping"],
     bestSeason: "October – February",
     duration: "3–4 days",
-    highlights: ["Amber Fort", "Hawa Mahal", "City Palace", "Jantar Mantar", "Johari Bazaar"],
+    highlights: [{ name: "Amber Fort" }, { name: "Hawa Mahal" }, { name: "City Palace" }, { name: "Jantar Mantar" }, { name: "Johari Bazaar" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Shatabdi / Double Decker – 4.5h", fromMumbai: "Mumbai–Jaipur Express – 18h", fromBangalore: "Via Delhi – 28h", duration: "4.5–6h from Delhi", costRange: "₹300–₹1,800", tips: "Jaipur Junction is well-connected. Book Shatabdi for comfort." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH-48 / NH-248 – 5–6h", fromMumbai: "NH-48 – 20h", fromBangalore: "—", duration: "5–6h from Delhi", costRange: "₹1,000–₹3,500 cab / ₹400 RSRTC bus", tips: "RSRTC Volvo buses are comfortable and affordable (₹400–₹600)." },
@@ -263,7 +274,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wellness", "Culture"],
     bestSeason: "September – March",
     duration: "5–7 days",
-    highlights: ["Houseboat in Alleppey", "Vembanad Lake", "Kumarakom Bird Sanctuary", "Kochi Fort area", "Ayurvedic treatments"],
+    highlights: [{ name: "Houseboat in Alleppey" }, { name: "Vembanad Lake" }, { name: "Kumarakom Bird Sanctuary" }, { name: "Kochi Fort area" }, { name: "Ayurvedic treatments" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "3h direct to Kochi", fromMumbai: "2h direct to Kochi", fromBangalore: "1.5h to Kochi", duration: "1.5–3h to Kochi", costRange: "₹3,000–₹12,000", tips: "Kochi (COK) is the main hub. Trivandrum and Calicut are alternatives." },
       { mode: "Train", icon: "🚂", fromDelhi: "Kerala Express – 44h", fromMumbai: "Netravati Express – 26h", fromBangalore: "Island Express – 12h", duration: "12–44h", costRange: "₹400–₹2,500", tips: "Book sleeper or 3AC for long routes. Alleppey (Alappuzha) station for backwaters." },
@@ -327,7 +338,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Beach", "Nightlife", "Heritage"],
     bestSeason: "November – March",
     duration: "4–7 days",
-    highlights: ["Baga & Anjuna Beach (North)", "Palolem Beach (South)", "Old Goa Basilica", "Dudhsagar Falls", "Saturday Night Market"],
+    highlights: [{ name: "Baga & Anjuna Beach (North)" }, { name: "Palolem Beach (South)" }, { name: "Old Goa Basilica" }, { name: "Dudhsagar Falls" }, { name: "Saturday Night Market" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "2.5h direct to Dabolim/Mopa", fromMumbai: "1h direct", fromBangalore: "1h direct", duration: "1–2.5h", costRange: "₹2,500–₹10,000", tips: "Goa has two airports: Dabolim (South Goa) and Mopa (North Goa). Choose based on where you stay." },
       { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani / Goa Express – 24–27h", fromMumbai: "Konkan Railway – 10–12h", fromBangalore: "Vasco Express – 15h", duration: "10–27h", costRange: "₹400–₹2,000", tips: "Konkan Railway from Mumbai is scenic — book well in advance (60 days)." },
@@ -391,7 +402,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Adventure", "Nature", "Spiritual"],
     bestSeason: "June – September",
     duration: "7–10 days",
-    highlights: ["Pangong Tso Lake", "Nubra Valley & Bactrian Camels", "Khardung La Pass", "Thiksey Monastery", "Magnetic Hill"],
+    highlights: [{ name: "Pangong Tso Lake" }, { name: "Nubra Valley & Bactrian Camels" }, { name: "Khardung La Pass" }, { name: "Thiksey Monastery" }, { name: "Magnetic Hill" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "1.5h direct to Leh (Kushok Bakula Airport)", fromMumbai: "Via Delhi – 3.5h total", fromBangalore: "Via Delhi – 4h", duration: "1.5h from Delhi", costRange: "₹4,000–₹18,000", tips: "Always acclimatize 24–48h before any activity after flying to Leh (11,500 ft). Take it easy the first day." },
       { mode: "Road (Manali–Leh)", icon: "🚗", fromDelhi: "Via Manali – 2 days (480 km from Manali)", fromMumbai: "—", fromBangalore: "—", duration: "2 days via Manali Highway (seasonal – June–Oct)", costRange: "₹2,500 shared jeep / ₹8,000–₹15,000 private", tips: "Manali–Leh Highway closes Oct–May due to snow. Most scenic road trip in India." },
@@ -454,7 +465,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: ["Dashashwamedh Ghat Aarti", "Sunrise boat ride", "Kashi Vishwanath Temple", "Sarnath Buddhist site", "Silk weaving workshops"],
+    highlights: [{ name: "Dashashwamedh Ghat Aarti" }, { name: "Sunrise boat ride" }, { name: "Kashi Vishwanath Temple" }, { name: "Sarnath Buddhist site" }, { name: "Silk weaving workshops" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Shivganga / Vande Bharat – 8–9h", fromMumbai: "Mahanagari Express – 26h", fromBangalore: "Via Delhi – 34h", duration: "8–9h from Delhi", costRange: "₹300–₹2,000", tips: "Varanasi Junction (BSB) is the main station. Vande Bharat from Delhi is fastest." },
       { mode: "Flight", icon: "✈️", fromDelhi: "1.5h to Lal Bahadur Shastri Airport", fromMumbai: "2.5h direct", fromBangalore: "2h direct", duration: "1.5–2.5h", costRange: "₹3,000–₹10,000", tips: "Airport is 25 km from city; cab ₹600–₹1,000. Traffic can be dense." },
@@ -516,7 +527,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Beach", "Diving", "Nature"],
     bestSeason: "November – May",
     duration: "6–10 days",
-    highlights: ["Radhanagar Beach (Havelock)", "Scuba Diving Neil Island", "Cellular Jail", "Baratang Limestone Caves", "Bioluminescent plankton beaches"],
+    highlights: [{ name: "Radhanagar Beach (Havelock)" }, { name: "Scuba Diving Neil Island" }, { name: "Cellular Jail" }, { name: "Baratang Limestone Caves" }, { name: "Bioluminescent plankton beaches" }],
     transport: [
       // Airport name, connected cities, and airlines verified against
       // tourism.andamannicobar.gov.in/how-to-reach.php.
@@ -602,7 +613,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Romantic"],
     bestSeason: "October – March",
     duration: "3–4 days",
-    highlights: ["Lake Palace (Taj Hotel)", "City Palace Museum", "Lake Pichola sunset boat", "Jagdish Temple", "Monsoon Palace (Sajjangarh)"],
+    highlights: [{ name: "Lake Palace (Taj Hotel)" }, { name: "City Palace Museum" }, { name: "Lake Pichola sunset boat" }, { name: "Jagdish Temple" }, { name: "Monsoon Palace (Sajjangarh)" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Mewar Express – 12h overnight", fromMumbai: "Bandra Terminus Express – 11h", fromBangalore: "Via Jaipur – 22h+", duration: "11–12h from Delhi/Mumbai", costRange: "₹400–₹2,000", tips: "Udaipur City railway station is 3 km from the old city. Book overnight trains to save a day." },
       { mode: "Flight", icon: "✈️", fromDelhi: "1.5h to Maharana Pratap Airport", fromMumbai: "1.5h direct", fromBangalore: "2h direct", duration: "1.5–2h", costRange: "₹2,500–₹9,000", tips: "Airport is 22 km from city. Cab ₹500–₹700. Fly in morning for best daylight exploration." },
@@ -666,7 +677,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Adventure", "Spiritual", "Wellness"],
     bestSeason: "September – November, February – May",
     duration: "3–5 days",
-    highlights: ["Ganga Aarti at Triveni Ghat", "Laxman Jhula & Ram Jhula", "White-water rafting Grade 3–4", "Bungee jumping (83m — India's highest)", "Beatles Ashram (Maharishi Ashram)"],
+    highlights: [{ name: "Ganga Aarti at Triveni Ghat" }, { name: "Laxman Jhula & Ram Jhula" }, { name: "White-water rafting Grade 3–4" }, { name: "Bungee jumping (83m — India's highest)" }, { name: "Beatles Ashram (Maharishi Ashram)" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Shatabdi to Haridwar (4.5h) + 25km cab to Rishikesh", fromMumbai: "Mumbai–Haridwar Express – 24h + 25km", fromBangalore: "Via Delhi – 28h+", duration: "5–6h from Delhi via Haridwar", costRange: "₹300–₹1,500 + ₹400 cab", tips: "Rishikesh has its own station (Rishikesh Railway Station) but limited trains. Haridwar Junction is better connected — 25 km away." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH-334 – 6–7h", fromMumbai: "—", fromBangalore: "—", duration: "6–7h from Delhi", costRange: "₹1,500–₹3,500 cab / ₹300 Volvo bus", tips: "Delhi ISBT Kashmere Gate has frequent Volvo AC buses to Rishikesh (₹300–₹450, 6h)." },
@@ -729,7 +740,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage", "Culture"],
     bestSeason: "March – May, October – November",
     duration: "3–4 days",
-    highlights: ["Tiger Hill sunrise over Kangchenjunga", "Darjeeling Himalayan Railway (Toy Train)", "Happy Valley Tea Estate tour", "Batasia Loop", "Peace Pagoda"],
+    highlights: [{ name: "Tiger Hill sunrise over Kangchenjunga" }, { name: "Darjeeling Himalayan Railway (Toy Train)" }, { name: "Happy Valley Tea Estate tour" }, { name: "Batasia Loop" }, { name: "Peace Pagoda" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "To New Jalpaiguri (NJP) – 12–16h, then cab/shared jeep 4h", fromMumbai: "To NJP – 28h + 4h cab", fromBangalore: "Via Kolkata – 30h+ to NJP", duration: "4h from NJP (90 km, mountain roads)", costRange: "₹400–₹2,000 train + ₹200–₹500 jeep", tips: "New Jalpaiguri (NJP) is the gateway. Take a shared jeep from NJP to Darjeeling (₹200, 4h) — scenic mountain road." },
       { mode: "Flight", icon: "✈️", fromDelhi: "To Bagdogra Airport (2.5h) + 2h cab to Darjeeling", fromMumbai: "2h to Bagdogra + 2h cab", fromBangalore: "2.5h to Bagdogra + 2h cab", duration: "2.5h flight + 2h mountain drive", costRange: "₹3,500–₹12,000 flight + ₹1,500 cab", tips: "Bagdogra airport is 90 km away. The mountain drive takes 2–3h but the views are spectacular." },
@@ -791,7 +802,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: ["Western Temple Group (UNESCO)", "Kandariya Mahadeva Temple", "Khajuraho Dance Festival (Feb)", "Raneh Falls", "Panna Tiger Reserve"],
+    highlights: [{ name: "Western Temple Group (UNESCO)" }, { name: "Kandariya Mahadeva Temple" }, { name: "Khajuraho Dance Festival (Feb)" }, { name: "Raneh Falls" }, { name: "Panna Tiger Reserve" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "1.5h direct to Khajuraho Airport", fromMumbai: "Via Delhi – 3.5h total", fromBangalore: "Via Delhi – 4h", duration: "1.5h from Delhi direct", costRange: "₹3,500–₹12,000", tips: "Khajuraho has its own small airport — direct flights from Delhi. Easiest way to reach. Cab to town: ₹150." },
       { mode: "Train", icon: "🚂", fromDelhi: "Uttar Pradesh Sampark Kranti – 10h to Jhansi + 3h cab", fromMumbai: "Via Jhansi – 18h + 3h cab", fromBangalore: "Via Jhansi – 28h+", duration: "12–15h via Jhansi (175 km)", costRange: "₹400–₹1,500 train + ₹1,500 cab", tips: "Nearest major station is Jhansi (175 km). Khajuraho station exists but few trains. Fly or go via Jhansi." },
@@ -852,7 +863,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Adventure", "Photography"],
     bestSeason: "October – February",
     duration: "3–4 days",
-    highlights: ["Vittala Temple Stone Chariot", "Virupaksha Temple (still active)", "Matanga Hill sunrise", "Hippie Island (Virupapur Gaddi)", "Hampi Bazaar ruins"],
+    highlights: [{ name: "Vittala Temple Stone Chariot" }, { name: "Virupaksha Temple (still active)" }, { name: "Matanga Hill sunrise" }, { name: "Hippie Island (Virupapur Gaddi)" }, { name: "Hampi Bazaar ruins" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bengaluru/Hospet — 30h+", fromMumbai: "To Hospet Jn (HPT) — 18–20h via Pune", fromBangalore: "To Hospet Jn — 9h overnight (Hampi Express, Train #16592)", duration: "Hospet is 13 km from Hampi", costRange: "₹300–₹1,800", tips: "Hampi Express (Bangalore–Hospet, 16592) departs KSR Bengaluru at 10pm, arrives Hospet 6:55am. Perfect overnight — wake up in Hampi. Book sleeper or 3AC." },
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bengaluru — 600+ km from Bengaluru", fromMumbai: "Via Pune/Solapur — 600 km", fromBangalore: "370 km, NH-48 + NH-67 — 7–8h drive or KSRTC bus", duration: "7–8h from Bengaluru", costRange: "₹400 KSRTC bus / ₹4,000–₆,000 cab", tips: "KSRTC Airavata (AC Volvo) from Bengaluru Majestic to Hospet departs 8pm, arrives 5am — cheaper than a guesthouse night! Book at ksrtc.in." },
@@ -914,7 +925,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Wellness", "History"],
     bestSeason: "October – February",
     duration: "2–3 days",
-    highlights: ["Mysore Palace (Sunday illumination)", "Chamundi Hills & Nandi Bull", "Devaraja Flower Market", "Mysore Yoga tradition", "Dasara Festival (October)"],
+    highlights: [{ name: "Mysore Palace (Sunday illumination)" }, { name: "Chamundi Hills & Nandi Bull" }, { name: "Devaraja Flower Market" }, { name: "Mysore Yoga tradition" }, { name: "Dasara Festival (October)" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bengaluru — 25h+ (Rajdhani to Bengaluru + 2h train)", fromMumbai: "Udyan Express to Bengaluru (24h) + Shatabdi to Mysuru (2h)", fromBangalore: "Shatabdi/Express — 2.5–3h (multiple daily trains)", duration: "2.5–3h from Bengaluru", costRange: "₹100–₆00 from Bengaluru", tips: "Shatabdi Express from Bengaluru (KSR to MYS) departs 11am. Kaveri Express at 7am is the budget option (Sleeper, ₹100)." },
       { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "NH-48 + NH-275 — 12h from Bengaluru region", fromBangalore: "KSRTC AC bus from Majestic every 30 min, 3h — ₹200", duration: "3h from Bengaluru (140 km)", costRange: "₹200 KSRTC / ₹2,000–₃,000 cab", tips: "KSRTC Airavata (AC Volvo) from Bengaluru Majestic is the most comfortable and frequent option (every 20 min during peak hours)." },
@@ -974,7 +985,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wellness", "Adventure", "Culture"],
     bestSeason: "October – May (avoid June–August monsoon)",
     duration: "3–4 days",
-    highlights: ["Abbey Falls", "Raja's Seat viewpoint", "Coffee Estate walks", "Dubare Elephant Camp", "Namdroling Monastery (Golden Temple)"],
+    highlights: [{ name: "Abbey Falls" }, { name: "Raja's Seat viewpoint" }, { name: "Coffee Estate walks" }, { name: "Dubare Elephant Camp" }, { name: "Namdroling Monastery (Golden Temple)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bengaluru + road to Madikeri (5–6h)", fromMumbai: "Fly to Bengaluru + road to Madikeri (5–6h)", fromBangalore: "NH-275 + MD Rd to Madikeri — 265 km, 5.5–6h. KSRTC bus ₹350, daily.", duration: "5.5–6h from Bengaluru", costRange: "₹350 bus / ₹3,500–₄,500 cab from Bengaluru", tips: "No trains reach Coorg (Madikeri). Nearest station is Mysuru (120 km). Road is the only option — the drive through the Ghats is beautiful." },
       { mode: "Train", icon: "🚂", fromDelhi: "Train to Mysuru then 3h cab to Madikeri", fromMumbai: "Train to Mysuru then 3h cab (₹2,000)", fromBangalore: "KSRTC Night Bus from Bengaluru Majestic to Madikeri (9pm–4am)", duration: "8h (night bus from Bengaluru)", costRange: "₹350 KSRTC bus / ₹500–₁,800 train to Mysuru + cab", tips: "KSRTC night bus from Bengaluru (9pm) reaches Madikeri by 4am — economical and saves a night's accommodation." },
@@ -1034,7 +1045,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Beach", "Spiritual", "Adventure", "Nature"],
     bestSeason: "October – May",
     duration: "3–4 days",
-    highlights: ["Om Beach (Om-shaped bay)", "Kudle Beach sunset", "Half Moon & Paradise Beaches (trekking)", "Mahabaleshwara Temple darshan", "Cliff jumping at Om Beach"],
+    highlights: [{ name: "Om Beach (Om-shaped bay)" }, { name: "Kudle Beach sunset" }, { name: "Half Moon & Paradise Beaches (trekking)" }, { name: "Mahabaleshwara Temple darshan" }, { name: "Cliff jumping at Om Beach" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Mumbai/Mangaluru — Konkan Railway Cruise Exp to Gokarna Rd (GOK) — 2 days", fromMumbai: "Konkan Railway (Madgaon Exp or Matsyagandha Exp) to Gokarna Rd — 10–12h", fromBangalore: "Karwar Express or Matsyagandha Express — 8–9h overnight", duration: "8–10h from Bengaluru / 10–12h from Mumbai", costRange: "₹400–₁,800", tips: "Gokarna Road station is 9 km from town. Auto (₹200) or bus available. Konkan Railway is one of India's most scenic routes — coastal tunnel-and-bridge journey through the Western Ghats." },
       { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "Via NH-66 coastal highway — 12–13h (scenic drive)", fromBangalore: "NH-75 via Mangaluru / NH-66 — 490 km, 9–10h", duration: "9–10h from Bengaluru", costRange: "₹600 KSRTC bus / ₹5,000 cab from Bengaluru", tips: "KSRTC night bus from Bengaluru (8:30pm–6am) to Gokarna is the budget option. Alternatively, bus to Goa and back-track to Gokarna (60 km north of Goa)." },
@@ -1094,7 +1105,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure", "Photography"],
     bestSeason: "October – May (best wildlife: February – May)",
     duration: "2–3 days",
-    highlights: ["Black Panther (melanistic leopard) sightings", "Large elephant herd crossings at reservoir", "Kabini boat safari", "Tiger sightings in Nagarhole", "Night wildlife sounds from riverside camp"],
+    highlights: [{ name: "Black Panther (melanistic leopard) sightings" }, { name: "Large elephant herd crossings at reservoir" }, { name: "Kabini boat safari" }, { name: "Tiger sightings in Nagarhole" }, { name: "Night wildlife sounds from riverside camp" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bengaluru + 230 km drive (5h)", fromMumbai: "Fly to Bengaluru + road", fromBangalore: "NH-212 → Kabini (Kakkabe/Karapura) — 230 km, 5h drive or cab", duration: "5h from Bengaluru", costRange: "₹3,500–₅,000 cab from Bengaluru", tips: "There is NO public transport to Kabini resort zone. A cab from Bengaluru is the only option unless you have your own vehicle. Most resorts offer pickup: ₹4,000–₆,000 from Bengaluru." },
       { mode: "Train", icon: "🚂", fromDelhi: "Train to Mysuru (or Bengaluru) + 90 km cab", fromMumbai: "Train to Mysuru + 90 km cab", fromBangalore: "Train to Mysuru (2.5h), then cab to Kabini (90 km, 2.5h)", duration: "5–6h total (train + cab)", costRange: "₹200 train + ₹2,000 cab from Mysuru", tips: "Train to Mysuru (₹100–₆00) + cab from Mysuru to Kabini (₹1,800–₂,500) is the budget-friendliest approach without a full Bengaluru cab." },
@@ -1159,7 +1170,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Beach", "Nature", "Coastal"],
     bestSeason: "November – February",
     duration: "3–4 days",
-    highlights: ["RK Beach (Ramakrishna Beach) promenade", "Kailasagiri hilltop park & cable car", "INS Kursura Submarine Museum", "Rushikonda Beach", "Bheemili (Bheemunipatnam) Beach"],
+    highlights: [{ name: "RK Beach (Ramakrishna Beach) promenade" }, { name: "Kailasagiri hilltop park & cable car" }, { name: "INS Kursura Submarine Museum" }, { name: "Rushikonda Beach" }, { name: "Bheemili (Bheemunipatnam) Beach" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Visakhapatnam Airport (VTZ)", fromMumbai: "Direct to VTZ", fromBangalore: "Direct to VTZ", duration: "2–2.5h", costRange: "₹3,500–₹12,000", tips: "Airport is ~12 km from the city centre; cabs available outside arrivals." },
       { mode: "Train", icon: "🚂", fromDelhi: "Via Visakhapatnam Junction — well connected", fromMumbai: "Via Visakhapatnam Junction", fromBangalore: "Via Visakhapatnam Junction", duration: "Varies by route", costRange: "₹500–₹3,000", tips: "Visakhapatnam Junction is the main rail hub, connected to Hyderabad, Chennai, Kolkata, and Delhi." },
@@ -1242,7 +1253,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "September – February",
     duration: "1–2 days",
-    highlights: ["Sri Venkateswara Temple, Tirumala", "Alipiri Mettu / Srivari Mettu step-climb", "Sri Venkateswara Zoological Park", "Talakona Waterfall", "TTD museums on the hill"],
+    highlights: [{ name: "Sri Venkateswara Temple, Tirumala" }, { name: "Alipiri Mettu / Srivari Mettu step-climb" }, { name: "Sri Venkateswara Zoological Park" }, { name: "Talakona Waterfall" }, { name: "TTD museums on the hill" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Tirupati Airport (TIR)", fromMumbai: "Direct to TIR", fromBangalore: "Direct to TIR", duration: "1.5–2.5h", costRange: "₹3,000–₹10,000", tips: "Tirupati Airport (Renigunta) is ~15 km from Tirupati city, ~30 km from Tirumala. Direct flights from Delhi, Mumbai, Hyderabad, Kolkata, and Vizag on IndiGo/Air India." },
       { mode: "Train", icon: "🚂", fromDelhi: "Via Tirupati Main / Renigunta station", fromMumbai: "Via Tirupati Main / Renigunta station", fromBangalore: "Via Tirupati Main / Renigunta station", duration: "Varies by route", costRange: "₹300–₹2,000", tips: "Three stations serve the area — Renigunta, Tirupati Main, and Anantarajupet. Popular trains: Tirumala Express and Sapthagiri Express, both from Chennai (~3h)." },
@@ -1322,7 +1333,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Spiritual"],
     bestSeason: "March – October (Sela Pass can close in heavy winter snow)",
     duration: "5–7 days",
-    highlights: ["Tawang Monastery (17th century, 10,000 ft)", "Sela Pass", "Shonga-tser Lake (Madhuri Lake)", "Bomdila monasteries & craft centres", "Sessa Orchid Sanctuary"],
+    highlights: [{ name: "Tawang Monastery (17th century, 10,000 ft)" }, { name: "Sela Pass" }, { name: "Shonga-tser Lake (Madhuri Lake)" }, { name: "Bomdila monasteries & craft centres" }, { name: "Sessa Orchid Sanctuary" }],
     transport: [
       { mode: "Flight + Road", icon: "✈️", fromDelhi: "Fly to Guwahati, then ~11h drive to Tawang", fromMumbai: "Fly to Guwahati, then ~11h drive to Tawang", fromBangalore: "Fly to Guwahati, then ~11h drive to Tawang", duration: "11h drive from Guwahati", costRange: "₹3,500–₹12,000 (flight) + ₹4,000–₹8,000 (cab/shared sumo)", tips: "Lokpriya Gopinath Bordoloi International Airport, Guwahati is the nearest airport — there's no airport in Tawang itself. Break the drive into 2 days via Bomdila or Dirang rather than doing it in one go." },
       { mode: "Train", icon: "🚂", fromDelhi: "Via Naharlagun/Itanagar station", fromMumbai: "Via Naharlagun/Itanagar station", fromBangalore: "Via Naharlagun/Itanagar station", duration: "~4h Naharlagun to Bhalukpong, then onward by road", costRange: "₹500–₹2,500", tips: "Naharlagun (near Itanagar) is the nearest railhead — daily trains to Guwahati, plus a twice-weekly Rajdhani Express." },
@@ -1416,7 +1427,7 @@ export const DESTINATIONS: Destination[] = [
     // Buland Darwaza, Jama Masjid, Tomb of Salim Chishti, Diwan-i-Khas,
     // Panch Mahal, Pachisi Court, and Jodha Bai's Palace are all verified
     // against uptourism.gov.in's own Fatehpur Sikri listing.
-    highlights: ["Buland Darwaza — India's tallest gateway", "Dargah-e-Sheikh Salim Chishti", "Jodha Bai's Palace", "Diwan-i-Khas & Pachisi Court", "Panch Mahal"],
+    highlights: [{ name: "Buland Darwaza — India's tallest gateway" }, { name: "Dargah-e-Sheikh Salim Chishti" }, { name: "Jodha Bai's Palace" }, { name: "Diwan-i-Khas & Pachisi Court" }, { name: "Panch Mahal" }],
     transport: [
       { mode: "Road (from Agra)", icon: "🚗", fromDelhi: "Via Agra — 37 km from Agra", fromMumbai: "Via Agra", fromBangalore: "Via Agra", duration: "45–60 min from Agra", costRange: "₹1,500–₹2,000 round-trip taxi", tips: "UPSRTC and other state buses run regularly between Fatehpur Sikri and Agra. Also 21 km from Bharatpur, 210 km from Delhi (per UP Tourism)." },
       { mode: "Flight + Road", icon: "✈️", fromDelhi: "Via Kheria Airport, Agra — 40 km", fromMumbai: "Via Kheria Airport, Agra", fromBangalore: "Via Kheria Airport, Agra", duration: "40 km from the airport", costRange: "Add to an Agra flight itinerary", tips: "No airport of its own — Agra's Kheria Airport and Agra Cantt railway station (both ~40 km away, per UP Tourism) are the real gateways." },
@@ -1469,7 +1480,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: ["Banke Bihari Temple, Vrindavan", "Prem Mandir (illuminated at night)", "ISKCON Temple, Vrindavan", "Krishna Janmabhoomi Temple, Mathura", "Vishram Ghat, Mathura"],
+    highlights: [{ name: "Banke Bihari Temple, Vrindavan" }, { name: "Prem Mandir (illuminated at night)" }, { name: "ISKCON Temple, Vrindavan" }, { name: "Krishna Janmabhoomi Temple, Mathura" }, { name: "Vishram Ghat, Mathura" }],
     transport: [
       { mode: "Flight + Road", icon: "✈️", fromDelhi: "Fly to Delhi IGI, then ~150 km by road", fromMumbai: "Fly to Delhi or Agra, then by road", fromBangalore: "Fly to Delhi or Agra, then by road", duration: "~2.5–3h from Delhi by road", costRange: "₹2,000–₹6,000 (cab from Delhi/Agra)", tips: "Nearest airports are Agra (Kheria, ~70 km) and Delhi (IGI, ~150 km) — no airport in Mathura/Vrindavan itself." },
       { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Mathura Junction", fromMumbai: "Via Mathura Junction", fromBangalore: "Via Mathura Junction", duration: "~2–3h from Delhi", costRange: "₹200–₹1,200", tips: "Mathura Junction is the main railhead — Vrindavan's own station isn't well connected to major cities, so arrive via Mathura and take an auto onward (~12 km, 30–40 min)." },
@@ -1535,7 +1546,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "History"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: ["Bara Imambara", "Rumi Darwaza", "The Residency (1857 ruins)", "Chota Imambara", "Kaiserbagh Heritage Zone"],
+    highlights: [{ name: "Bara Imambara" }, { name: "Rumi Darwaza" }, { name: "The Residency (1857 ruins)" }, { name: "Chota Imambara" }, { name: "Kaiserbagh Heritage Zone" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "1h direct to Chaudhary Charan Singh Airport", fromMumbai: "2h direct", fromBangalore: "2.5h direct", duration: "1–2.5h", costRange: "₹2,500–₹9,000", tips: "Airport is 15 km from the city; also connects to Kolkata, Varanasi, and Gulf cities (per UP Tourism)." },
       { mode: "Train", icon: "🚂", fromDelhi: "5–6h to Charbagh/Lucknow Junction", fromMumbai: "16–18h", fromBangalore: "28h+", duration: "5–6h from Delhi", costRange: "₹300–₹2,000", tips: "Charbagh Railway Station is a major junction and a landmark in its own right — its architecture is modelled on a chessboard." },
@@ -1591,7 +1602,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: ["Lord Ram Temple", "Hanuman Garhi", "Kanak Bhawan", "Saryu River ghats", "Ram Katha Museum"],
+    highlights: [{ name: "Lord Ram Temple" }, { name: "Hanuman Garhi" }, { name: "Kanak Bhawan" }, { name: "Saryu River ghats" }, { name: "Ram Katha Museum" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Via Lucknow (Chaudhary Charan Singh Airport), 134 km", fromMumbai: "Via Lucknow or Prayagraj", fromBangalore: "Via Lucknow or Prayagraj", duration: "134 km from Lucknow's airport", costRange: "Add road transfer to a Lucknow flight", tips: "Nearest airports are Lucknow (134 km) or Prayagraj's Bamrauli Airport (166 km) — per UP Tourism." },
       { mode: "Train", icon: "🚂", fromDelhi: "On the Mughal Sarai–Lucknow main line", fromMumbai: "Via Lucknow", fromBangalore: "Via Lucknow", duration: "Varies by route", costRange: "₹200–₹1,500", tips: "Well connected by Northern Railway — Ayodhya has its own station on the main Lucknow line." },
@@ -1646,7 +1657,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "History"],
     bestSeason: "October – March (Magh Mela: January–February)",
     duration: "1–2 days",
-    highlights: ["Sangam (Triveni confluence)", "Allahabad Fort (built by Akbar)", "Anand Bhawan & Swaraj Bhawan", "Khusro Bagh", "All Saints Cathedral"],
+    highlights: [{ name: "Sangam (Triveni confluence)" }, { name: "Allahabad Fort (built by Akbar)" }, { name: "Anand Bhawan & Swaraj Bhawan" }, { name: "Khusro Bagh" }, { name: "All Saints Cathedral" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Bamrauli Airport", fromMumbai: "Direct to Bamrauli Airport", fromBangalore: "Via Delhi", duration: "~1.5–2h from Delhi", costRange: "₹3,000–₹9,000", tips: "Bamrauli Airport is 14 km from the city, with direct Delhi flights (per UP Tourism)." },
       { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — major junction", fromMumbai: "Direct trains", fromBangalore: "Via Delhi/Mumbai routes", duration: "Varies by route", costRange: "₹300–₹2,000", tips: "Well connected to Kolkata, Delhi, and Mumbai — one of North India's major rail junctions." },
