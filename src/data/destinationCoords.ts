@@ -60,4 +60,5 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   baratang: { lat: 12.1167, lon: 92.75 },
   "little-andaman": { lat: 10.6833, lon: 92.55 },
   orang: { lat: 26.5667, lon: 92.35 },
+  burachapori: { lat: 26.7833, lon: 93.3 },
 };

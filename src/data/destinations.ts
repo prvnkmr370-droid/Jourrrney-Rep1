@@ -3354,6 +3354,69 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Assamese thali in Tezpur or Mangaldoi"],
     packingTips: ["Neutral/earth-tone clothing", "Binoculars", "Camera permit cash if bringing professional equipment", "Mosquito repellent"],
   },
+  // Sourced from naparks.com's own Bura Chapori page — real facts and
+  // real photos (their sanctuary-gate and riverbank shots). Not
+  // Creative Commons licensed like the Wikimedia entries, so imageCredit
+  // just names the source honestly, same treatment as Orang.
+  {
+    id: "burachapori",
+    hidden: true,
+    name: "Bura Chapori Wildlife Sanctuary",
+    state: "Assam",
+    tagline: "Kaziranga's Quiet Buffer Zone on the Brahmaputra",
+    description: "Bura Chapori, on the Brahmaputra's south bank in Sonitpur district, was a Reserved Forest from 1974 before becoming a Wildlife Sanctuary in 1995 — and in 2007, a designated buffer zone for Kaziranga Tiger Reserve. Part of the transboundary Laokhowa-Burachapori ecosystem, its signature species is the critically endangered Bengal florican, alongside tigers, rhinos, and wild water buffalo that move between it and Kaziranga.",
+    image: "https://naparks.com/wp-content/uploads/2023/08/Bura-Chapori-WIlldife-Sanctuary-Gate-1024x538.webp",
+    heroImage: "https://naparks.com/wp-content/uploads/2023/08/Bura-Chapori-WIlldife-Sanctuary-Gate-1024x538.webp",
+    imageCredit: "Photo: naparks.com",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – March (dry season; Bengal florican courtship: late winter–early spring)",
+    duration: "1 day",
+    highlights: [
+      { name: "Bengal florican (critically endangered, signature species)" },
+      { name: "Laokhowa-Burachapori transboundary ecosystem" },
+      { name: "Kaziranga buffer-zone wildlife corridor" },
+    ],
+    transport: [
+      { mode: "Road (from Tezpur)", icon: "🚗", fromDelhi: "Via Tezpur — ~40 km, via NH27/NH715/SH3", fromMumbai: "Via Tezpur", fromBangalore: "Via Tezpur", duration: "~53 min from Tezpur Airport (35 km)", costRange: "₹800–₹1,500 cab", tips: "Tezpur is the primary gateway, per the sanctuary's own site." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Tezpur Airport (35 km) or Guwahati (175 km)", fromMumbai: "Via Guwahati", fromBangalore: "Via Guwahati", duration: "~53 min from Tezpur / ~4h from Guwahati", costRange: "Add road transfer", tips: "Tezpur Airport is much closer if flights connect — otherwise Guwahati is the reliable option." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Rangapara North Junction (60 km)", fromMumbai: "Via Rangapara North Junction", fromBangalore: "Via Guwahati Station (153 km)", duration: "~1h45m from Rangapara North", costRange: "₹300–₹1,500", tips: "Rangapara North is the closer railhead; Guwahati Station is the better-connected long-distance option." },
+    ],
+    accommodation: [
+      { type: "Forest Inspection Bungalows & Guest Houses", priceRange: "₹800–₹2,000/night (estimate)", examples: ["On-site Forest Department bungalows (limited availability)"], description: "Available on a limited basis right at the sanctuary, per its own site." },
+      { type: "Tezpur Hotels", priceRange: "₹1,200–₹3,500/night (estimate)", examples: ["Hotels in Tezpur, 35 km away"], description: "The more reliable option if the on-site bungalows are full." },
+    ],
+    localTransport: [
+      { mode: "Guided Jeep/Walking Safari", cost: "Contact sanctuary office for current rates", notes: "For Bengal florican and wildlife spotting", available: true },
+      { mode: "Hired Car", cost: "₹1,500–₹2,500/day", notes: "From Tezpur to the sanctuary and back", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tezpur", distance: "35–40 km", type: "Heritage Town", isHidden: false, id: "tezpur" },
+      { name: "Nameri National Park", distance: "Regional connection via Tezpur", type: "Rafting & Birding", isHidden: false, id: "nameri" },
+      { name: "Kaziranga National Park", distance: "Adjacent buffer zone", type: "Flagship Wildlife Reserve", isHidden: false, id: "kaziranga" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 500, activities: 400 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 0, food: 500, transport: 1200, activities: 1100 },
+      { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 5500, accommodation: 0, food: 800, transport: 2200, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bengal Florican & Wildlife", morning: "Guided safari through the sanctuary's grasslands — the best chance at spotting the critically endangered Bengal florican.", afternoon: "Continue watching for tigers, rhinos, and wild water buffalo moving through the Kaziranga buffer corridor.", evening: "Return to Tezpur.", stay: "Tezpur hotel or on-site Forest Bungalow if available", meals: "Assamese thali in Tezpur", tips: "Late winter to early spring is when the Bengal florican's courtship display happens — worth timing your visit around if that's the draw for you." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Forest department presence as a designated wildlife sanctuary", "Low tourist density keeps it genuinely quiet"],
+      precautions: ["Stay with the guide/vehicle at all times — active tiger and rhino corridor", "Confirm on-site bungalow availability in advance — very limited"],
+      soloTips: ["Manageable solo — safaris are naturally guided", "Base in Tezpur for more solo-traveller infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Guided safari routes", "Sanctuary entrance/gate area"],
+      avoidAreas: ["Unguided walking — genuine tiger/rhino territory"],
+    },
+    rating: 4.3,
+    reviews: 250,
+    mustEat: ["Assamese thali in Tezpur"],
+    packingTips: ["Neutral/earth-tone clothing", "Binoculars — essential for the Bengal florican", "Mosquito repellent", "Light layers — 17–33°C range in dry season"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
