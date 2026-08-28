@@ -32,4 +32,7 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   lucknow: { lat: 26.8467, lon: 80.9462 },
   ayodhya: { lat: 26.7922, lon: 82.1998 },
   prayagraj: { lat: 25.4358, lon: 81.8463 },
+  kaziranga: { lat: 26.5775, lon: 93.1714 },
+  majuli: { lat: 26.9526, lon: 94.1656 },
+  guwahati: { lat: 26.1445, lon: 91.7362 },
 };
