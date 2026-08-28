@@ -35,4 +35,6 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   kaziranga: { lat: 26.5775, lon: 93.1714 },
   majuli: { lat: 26.9526, lon: 94.1656 },
   guwahati: { lat: 26.1445, lon: 91.7362 },
+  tezpur: { lat: 26.6528, lon: 92.7926 },
+  haflong: { lat: 25.1667, lon: 93.0167 },
 };
