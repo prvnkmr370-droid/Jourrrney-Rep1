@@ -133,11 +133,37 @@ function scoreDestinations(query: string): Scored[] {
   return results;
 }
 
-export function findLiveMatches(query: string, limit = 4): Destination[] {
+// Autocomplete-dropdown ranking, in the spirit of how a search engine's
+// suggestion box orders completions — adapted to what this app actually
+// has, not a copy of anyone's real system (there's no live query-volume
+// data or ML ranker here, and scraping a third party's suggestion API for
+// our own destination database wouldn't make sense even if we wanted to):
+//   - Completion intent: match quality (prefix/fuzzy score) still comes
+//     first — this is answered by scoreDestinations already.
+//   - "Search popularity": approximated with each destination's own
+//     `reviews` count as a popularity proxy, used as a tiebreaker between
+//     otherwise equally-good matches.
+//   - "User context": recentIds (this device's own recent-search history,
+//     from useRecentSearchesStore) bumps a destination you've searched for
+//     before ahead of an equally-good but unfamiliar one — the one piece
+//     of real personalization this app can honestly offer, since there's
+//     no server-side account/location profile behind it.
+export function findLiveMatches(query: string, limit = 4, recentIds: string[] = []): Destination[] {
   if (!query.trim()) return [];
-  return scoreDestinations(query)
-    .slice(0, limit)
-    .map((r) => r.dest);
+  const recentSet = new Set(recentIds);
+  // Only re-rank within a slightly larger pool than `limit` so a much
+  // weaker fuzzy match never outranks a strong one just for being recent
+  // or popular — those only break ties among comparably good matches.
+  const pool = scoreDestinations(query).slice(0, Math.max(limit * 3, 12));
+  pool.sort((a, b) => {
+    const aRecent = recentSet.has(a.dest.id) ? 0 : 1;
+    const bRecent = recentSet.has(b.dest.id) ? 0 : 1;
+    if (aRecent !== bRecent) return aRecent - bRecent;
+    if (a.isNameMatch !== b.isNameMatch) return a.isNameMatch ? -1 : 1;
+    if (a.score !== b.score) return a.score - b.score;
+    return b.dest.reviews - a.dest.reviews;
+  });
+  return pool.slice(0, limit).map((r) => r.dest);
 }
 
 export function resolveUnambiguousMatch(query: string): Destination | null {

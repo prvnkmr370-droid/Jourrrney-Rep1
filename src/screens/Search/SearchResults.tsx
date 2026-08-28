@@ -31,7 +31,12 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
   const [query, setQuery] = useState(initialQuery ?? "");
   const [focused, setFocused] = useState(false);
   const [category, setCategory] = useState("All");
+  const recentSearches = useRecentSearchesStore((s) => s.searches);
   const addSearch = useRecentSearchesStore((s) => s.addSearch);
+  const recentIds = useMemo(
+    () => recentSearches.map((s) => s.destinationId).filter((id): id is string => !!id),
+    [recentSearches],
+  );
 
   const suggestionMode = focused || query.trim().length > 0;
 
@@ -42,7 +47,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     onSelectDestination(d);
   };
 
-  const liveMatches = useMemo(() => findLiveMatches(query), [query]);
+  const liveMatches = useMemo(() => findLiveMatches(query, 4, recentIds), [query, recentIds]);
 
   // Hitting search/enter on a query that clearly means one destination
   // (an exact name/state match, like "Arunachal Pradesh", or a query with

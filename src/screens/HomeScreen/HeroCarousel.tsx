@@ -11,7 +11,7 @@
  * "Jaipur" slide now uses the actual Jaipur destination's own photo rather
  * than the mismatched Udaipur photo that was in the Figma reference.
  */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, TextInput } from "react-native";
 import { router } from "expo-router";
 import { Image } from "expo-image";
@@ -21,9 +21,10 @@ import { MapPin, Shield, Search } from "lucide-react-native";
 import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
-import { resolveUnambiguousMatch } from "@/data/matchDestination";
+import { findLiveMatches, resolveUnambiguousMatch } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { CompassMark } from "@/components/JourrrneyLogo";
+import { useThemeColors } from "@/theme/useThemeColors";
 
 /** Experiment: a frosted-glass panel behind the greeting text, as an
  * alternative to the white text-glow, for legibility against the photo.
@@ -52,11 +53,39 @@ interface Props {
 
 export default function HeroCarousel({ onDestinationSelect }: Props) {
   const insets = useSafeAreaInsets();
+  const c = useThemeColors();
   const [index, setIndex] = useState(0);
   const [query, setQuery] = useState("");
+  const [inputFocused, setInputFocused] = useState(false);
+  const recentSearches = useRecentSearchesStore((s) => s.searches);
   const addSearch = useRecentSearchesStore((s) => s.addSearch);
   const opacity = useSharedValue(1);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const recentIds = useMemo(
+    () => recentSearches.map((s) => s.destinationId).filter((id): id is string => !!id),
+    [recentSearches],
+  );
+
+  // Autocomplete dropdown — updates on every keystroke like a search
+  // engine's suggestion box: ranked by completion quality first (prefix,
+  // then typo-tolerant fuzzy — see matchDestination.ts), with this
+  // device's own recent searches and each destination's review count
+  // (a popularity proxy) breaking ties between otherwise-similar matches.
+  // Only shown while the field is actually focused, so it doesn't linger
+  // after a selection collapses the keyboard.
+  const suggestions = useMemo(
+    () => (inputFocused ? findLiveMatches(query, 5, recentIds) : []),
+    [query, inputFocused, recentIds],
+  );
+  const showSuggestions = inputFocused && query.trim().length > 0;
+
+  const selectSuggestion = (d: Destination) => {
+    addSearch(query, d.id);
+    setQuery("");
+    setInputFocused(false);
+    onDestinationSelect(d);
+  };
 
   // Typing a place name here and hitting search goes straight to that
   // destination's page when the query unambiguously means one place (same
@@ -66,11 +95,19 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
   const handleSearchSubmit = () => {
     const q = query.trim();
     if (!q) return;
+    // Deliberately *not* falling back to the top dropdown suggestion here:
+    // an ambiguous query (several plausible destinations showing) should
+    // still land on the browse list rather than guess which one the user
+    // meant just because it happened to rank first — the dropdown is for
+    // tapping a specific suggestion, this is for the literal typed query.
     const target = resolveUnambiguousMatch(q);
     if (target) {
       addSearch(q, target.id);
+      setQuery("");
+      setInputFocused(false);
       onDestinationSelect(target);
     } else {
+      setInputFocused(false);
       router.push({ pathname: "/search/results", params: { q } });
     }
   };
@@ -99,7 +136,12 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
   if (!hero) return null;
 
   return (
-    <View style={{ height: HERO_HEIGHT }}>
+    // zIndex only bumped while the suggestion dropdown is open — it needs
+    // to draw over the "Popular Destinations" section that follows this
+    // component in HomeScreen's ScrollView, since the dropdown overflows
+    // below this box's own fixed HERO_HEIGHT. Left alone the rest of the
+    // time so it doesn't swallow touches meant for that later content.
+    <View style={{ height: HERO_HEIGHT, zIndex: showSuggestions ? 20 : 0 }}>
       <Animated.View style={[{ position: "absolute", inset: 0 }, fadeStyle]}>
         <Image source={{ uri: hero.heroImage }} style={{ width: "100%", height: HERO_HEIGHT }} contentFit="cover" />
       </Animated.View>
@@ -207,6 +249,12 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
           value={query}
           onChangeText={setQuery}
           onSubmitEditing={handleSearchSubmit}
+          onFocus={() => setInputFocused(true)}
+          // Delayed so a tap on a suggestion row below registers its
+          // onPress before the row unmounts — blurring immediately would
+          // otherwise dismiss the dropdown out from under the tap (a
+          // well-known RN timing race between blur and press).
+          onBlur={() => setTimeout(() => setInputFocused(false), 150)}
           returnKeyType="search"
           placeholder="Where do you want to go?"
           placeholderTextColor="#78716C"
@@ -216,6 +264,54 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
           }}
         />
       </View>
+
+      {/* Autocomplete dropdown — see findLiveMatches in matchDestination.ts
+          for the ranking (prefix/fuzzy match quality first, then this
+          device's recent searches and each destination's popularity as
+          tiebreakers). Positioned to overflow below the hero's own box;
+          the zIndex bump above is what keeps it drawn on top of the
+          content underneath rather than getting covered by it. */}
+      {showSuggestions && (
+        <View
+          style={{
+            position: "absolute", left: 16, right: 16, top: HERO_HEIGHT - 20 + 8,
+            maxHeight: 280, borderRadius: 16, overflow: "hidden",
+            backgroundColor: c.surface,
+            shadowColor: "#000", shadowOpacity: 0.2, shadowRadius: 16, shadowOffset: { width: 0, height: 6 },
+            elevation: 8,
+          }}
+        >
+          {suggestions.length > 0 ? (
+            suggestions.map((d, i) => (
+              <Pressable
+                key={d.id}
+                onPress={() => selectSuggestion(d)}
+                style={{
+                  flexDirection: "row", alignItems: "center", gap: 12, padding: 10,
+                  borderTopWidth: i === 0 ? 0 : 1, borderTopColor: c.borderSoft,
+                }}
+              >
+                <Image source={{ uri: d.image }} style={{ width: 40, height: 40, borderRadius: 10 }} contentFit="cover" />
+                <View style={{ flex: 1 }}>
+                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }} numberOfLines={1}>
+                    {d.name}
+                  </Text>
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }} numberOfLines={1}>
+                    {d.state}
+                  </Text>
+                </View>
+                <Search color={c.textMuted} size={13} />
+              </Pressable>
+            ))
+          ) : (
+            <View style={{ padding: 14 }}>
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>
+                No matches yet — keep typing, or hit search to browse all destinations.
+              </Text>
+            </View>
+          )}
+        </View>
+      )}
     </View>
   );
 }
