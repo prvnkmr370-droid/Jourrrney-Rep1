@@ -47,15 +47,17 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
     [recentlyViewedIds],
   );
 
+  // `hidden` destinations (real, full pages — findable by search, linkable
+  // from a nearby-place card — but not part of the curated set shown by
+  // default) are excluded from both of these lists, same reasoning as
+  // Search's browse view below.
   const featured = useMemo(
     () =>
-      activeCategory === "All"
-        ? DESTINATIONS
-        : DESTINATIONS.filter((d) => d.category.includes(activeCategory)),
+      DESTINATIONS.filter((d) => !d.hidden && (activeCategory === "All" || d.category.includes(activeCategory))),
     [activeCategory],
   );
   const safest = useMemo(
-    () => [...DESTINATIONS].sort((a, b) => b.womenSafety.score - a.womenSafety.score).slice(0, 5),
+    () => DESTINATIONS.filter((d) => !d.hidden).sort((a, b) => b.womenSafety.score - a.womenSafety.score).slice(0, 5),
     [],
   );
 

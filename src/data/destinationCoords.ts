@@ -29,4 +29,7 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   tawang: { lat: 27.5859, lon: 91.8594 },
   "fatehpur-sikri": { lat: 27.0945, lon: 77.6679 },
   "mathura-vrindavan": { lat: 27.4924, lon: 77.6737 }, // Mathura
+  lucknow: { lat: 26.8467, lon: 80.9462 },
+  ayodhya: { lat: 26.7922, lon: 82.1998 },
+  prayagraj: { lat: 25.4358, lon: 81.8463 },
 };

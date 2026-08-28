@@ -96,6 +96,14 @@ export interface Destination {
   state: string;
   tagline: string;
   description: string;
+  // True for destinations kept in the database for direct search/lookup
+  // (findable by name, reachable via /destination/<id>, linkable from a
+  // nearby-place card) but deliberately left out of the "curated few"
+  // shown by default — Home's Popular Destinations/Safest lists and
+  // Search's unfiltered browse list. Keeps those surfaces from growing
+  // unbounded as more real day-trip/satellite destinations get added.
+  // See HomeScreen.tsx and SearchResults.tsx.
+  hidden?: boolean;
   image: string;
   heroImage: string;
   category: string[];
@@ -1395,29 +1403,36 @@ export const DESTINATIONS: Destination[] = [
   // Bangalore the way the app's other, standalone destinations do.
   {
     id: "fatehpur-sikri",
+    hidden: true,
     name: "Fatehpur Sikri",
     state: "Uttar Pradesh",
     tagline: "The Abandoned Mughal Capital",
-    description: "Emperor Akbar built Fatehpur Sikri as his new Mughal capital in 1571, then abandoned it within 15 years — most likely due to water shortage. What's left is a remarkably intact red-sandstone city: palaces, courtyards, and India's tallest gateway, the Buland Darwaza, all frozen since the 16th century. A UNESCO World Heritage Site, usually visited as a half-day trip from Agra.",
+    description: "Emperor Akbar built Fatehpur Sikri as his new Mughal capital in 1571 — 'the first planned city in Indo-Islamic style,' per UP Tourism — then abandoned it within 15 years, most likely due to water shortage. What's left is a remarkably intact red-sandstone city: palaces, courtyards, and India's tallest gateway, the Buland Darwaza, all frozen since the 16th century. A UNESCO World Heritage Site, usually visited as a half-day trip from Agra.",
     image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=900&h=600&fit=crop&auto=format",
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "Half-day to 1 day",
-    highlights: ["Buland Darwaza — India's tallest gateway", "Jama Masjid (built 1571, still active)", "Tomb of Salim Chishti", "Diwan-i-Khas", "Panch Mahal"],
+    // Buland Darwaza, Jama Masjid, Tomb of Salim Chishti, Diwan-i-Khas,
+    // Panch Mahal, Pachisi Court, and Jodha Bai's Palace are all verified
+    // against uptourism.gov.in's own Fatehpur Sikri listing.
+    highlights: ["Buland Darwaza — India's tallest gateway", "Dargah-e-Sheikh Salim Chishti", "Jodha Bai's Palace", "Diwan-i-Khas & Pachisi Court", "Panch Mahal"],
     transport: [
-      { mode: "Road (from Agra)", icon: "🚗", fromDelhi: "Via Agra — 37 km from Agra", fromMumbai: "Via Agra", fromBangalore: "Via Agra", duration: "45–60 min from Agra", costRange: "₹1,500–₹2,000 round-trip taxi", tips: "Almost everyone visits as a day trip from Agra, not as a standalone base. Also 18 km from Bharatpur if arriving from that side." },
+      { mode: "Road (from Agra)", icon: "🚗", fromDelhi: "Via Agra — 37 km from Agra", fromMumbai: "Via Agra", fromBangalore: "Via Agra", duration: "45–60 min from Agra", costRange: "₹1,500–₹2,000 round-trip taxi", tips: "UPSRTC and other state buses run regularly between Fatehpur Sikri and Agra. Also 21 km from Bharatpur, 210 km from Delhi (per UP Tourism)." },
+      { mode: "Flight + Road", icon: "✈️", fromDelhi: "Via Kheria Airport, Agra — 40 km", fromMumbai: "Via Kheria Airport, Agra", fromBangalore: "Via Kheria Airport, Agra", duration: "40 km from the airport", costRange: "Add to an Agra flight itinerary", tips: "No airport of its own — Agra's Kheria Airport and Agra Cantt railway station (both ~40 km away, per UP Tourism) are the real gateways." },
     ],
     accommodation: [
       { type: "Day-trip — most stay in Agra", priceRange: "See Agra's accommodation", examples: ["Stay in Agra, visit as a half-day trip"], description: "Accommodation options in Fatehpur Sikri itself are limited — nearly all visitors base themselves in Agra (37 km away) and visit for a few hours." },
     ],
     localTransport: [
       { mode: "Taxi (round-trip from Agra)", cost: "₹1,500–₹2,000", notes: "Includes waiting time and parking — most practical option", available: true },
+      { mode: "UPSRTC Bus", cost: "₹30–₹80", notes: "Regular bus services connect Fatehpur Sikri to Agra and neighbouring towns", available: true },
+      { mode: "Cycle-Rickshaw / Tonga", cost: "₹50–₹150", notes: "For getting around within Fatehpur Sikri town itself", available: true },
       { mode: "On-site walking", cost: "Free", notes: "The complex itself is walkable once you're there; some stretches are uneven stone", available: true },
     ],
     nearbyPlaces: [
       { name: "Agra (Taj Mahal, Agra Fort)", distance: "37 km", type: "Main Base", isHidden: false },
-      { name: "Bharatpur Bird Sanctuary", distance: "18 km", type: "Wildlife", isHidden: false },
+      { name: "Bharatpur Bird Sanctuary", distance: "21 km", type: "Wildlife", isHidden: false },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 500, activities: 100 },
@@ -1425,7 +1440,7 @@ export const DESTINATIONS: Destination[] = [
       { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 4500, accommodation: 0, food: 800, transport: 3000, activities: 700 },
     ],
     defaultItinerary: [
-      { day: 1, title: "Fatehpur Sikri Half-Day Trip", morning: "Drive from Agra (45–60 min). Enter via Buland Darwaza — India's tallest gateway, built 1602 to mark Akbar's Deccan victory.", afternoon: "Jama Masjid and the Tomb of Salim Chishti inside it. Diwan-i-Khas and Panch Mahal — Akbar's private council hall and five-tiered pavilion.", evening: "Return to Agra by evening.", stay: "Agra hotel (day trip, no overnight stay needed)", meals: "Light lunch at a roadside dhaba en route", tips: "Entry ₹35 (Indians) / ₹550 (foreigners); an extra ₹20/₹200 fee applies for Buland Darwaza and Jama Masjid specifically. Hire an official guide at the entrance — the site has no signage explaining what you're looking at." },
+      { day: 1, title: "Fatehpur Sikri Half-Day Trip", morning: "Drive from Agra (45–60 min). Enter via Buland Darwaza — India's tallest gateway, built 1602 to mark Akbar's Deccan victory.", afternoon: "Jama Masjid and the Dargah-e-Sheikh Salim Chishti inside it. Diwan-i-Khas, Pachisi Court, and Jodha Bai's Palace — Akbar's private council hall, giant ludo-like courtyard game, and the largest palace in the complex.", evening: "Return to Agra by evening.", stay: "Agra hotel (day trip, no overnight stay needed)", meals: "Light lunch at a roadside dhaba en route", tips: "Entry ₹35 (Indians) / ₹550 (foreigners); an extra ₹20/₹200 fee applies for Buland Darwaza and Jama Masjid specifically. If visiting during Ramzan, the Urs festival at Sheikh Salim Chishti's Dargah is worth timing for (per UP Tourism). Hire an official guide at the entrance — the site has no signage explaining what you're looking at." },
     ],
     womenSafety: {
       score: 8,
@@ -1444,6 +1459,7 @@ export const DESTINATIONS: Destination[] = [
   },
   {
     id: "mathura-vrindavan",
+    hidden: true,
     name: "Mathura & Vrindavan",
     state: "Uttar Pradesh",
     tagline: "The Birthplace and Playground of Krishna",
@@ -1499,6 +1515,180 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5100,
     mustEat: ["Mathura Peda (the town's signature milk sweet)", "Kachori-sabzi breakfast", "Sattvic thali (no onion/garlic, common near temples)"],
     packingTips: ["Modest clothing — shoulders/knees covered for temple entry", "No leather items at some temples (check locally)", "Small bag — some temples restrict phones/cameras inside", "Comfortable shoes for walking between temples"],
+  },
+  // The three destinations below are sourced from uptourism.gov.in (Uttar
+  // Pradesh's official tourism site) and kept `hidden: true` — real, full
+  // pages, findable by searching their name, but not surfaced in Home's
+  // Popular Destinations or Search's default browse list. Matches the
+  // "database has it, but only curated picks show up front" approach
+  // discussed for scaling destination coverage without cluttering the
+  // main browsing surfaces.
+  {
+    id: "lucknow",
+    hidden: true,
+    name: "Lucknow",
+    state: "Uttar Pradesh",
+    tagline: "The City of Nawabs",
+    description: "Uttar Pradesh's capital blends Mughal, colonial, and nawabi architecture with a reputation for refined manners, poetry, and food. Lucknow was the epicentre of the 1857 War of Independence, and its Imambaras and gateways still carry that layered, cosmopolitan history — per UP Tourism, a city recognised for its literature, cuisine, and performing arts as much as its monuments.",
+    image: "https://images.unsplash.com/photo-1655747313118-431d52eb4f92?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1655747313118-431d52eb4f92?w=900&h=600&fit=crop&auto=format",
+    category: ["Heritage", "Culture", "History"],
+    bestSeason: "October – March",
+    duration: "2–3 days",
+    highlights: ["Bara Imambara", "Rumi Darwaza", "The Residency (1857 ruins)", "Chota Imambara", "Kaiserbagh Heritage Zone"],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "1h direct to Chaudhary Charan Singh Airport", fromMumbai: "2h direct", fromBangalore: "2.5h direct", duration: "1–2.5h", costRange: "₹2,500–₹9,000", tips: "Airport is 15 km from the city; also connects to Kolkata, Varanasi, and Gulf cities (per UP Tourism)." },
+      { mode: "Train", icon: "🚂", fromDelhi: "5–6h to Charbagh/Lucknow Junction", fromMumbai: "16–18h", fromBangalore: "28h+", duration: "5–6h from Delhi", costRange: "₹300–₹2,000", tips: "Charbagh Railway Station is a major junction and a landmark in its own right — its architecture is modelled on a chessboard." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH-27 — ~6–7h", fromMumbai: "—", fromBangalore: "—", duration: "6–7h from Delhi", costRange: "₹2,500–₹5,000 cab", tips: "Well connected within UP — 79 km from Kanpur, 135 km from Ayodhya, 210 km from Prayagraj (per UP Tourism)." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels", priceRange: "₹1,200–₹2,800/night (estimate)", examples: ["Hotels near Hazratganj and Charbagh"], description: "Simple hotels near the main shopping and rail hub areas." },
+      { type: "Mid-Range Hotels", priceRange: "₹3,500–₹8,000/night (estimate)", examples: ["Chain hotels near Gomti Nagar and Hazratganj"], description: "Comfortable business/tourist hotels across the city's newer commercial districts." },
+    ],
+    localTransport: [
+      { mode: "Lucknow Metro", cost: "₹10–₹60", notes: "Operates across the city — the most reliable way to beat traffic", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available", available: true },
+      { mode: "Cycle-Rickshaw", cost: "₹30–₹100", notes: "Good for the old-city lanes around Chowk and the Imambaras", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ayodhya", distance: "135 km", type: "Pilgrimage Town", isHidden: false, id: "ayodhya" },
+      { name: "Prayagraj", distance: "210 km", type: "Pilgrimage City", isHidden: false, id: "prayagraj" },
+      { name: "Kanpur", distance: "79 km", type: "Industrial City", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 3000, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nawabi Lucknow", morning: "Bara Imambara — the largest of its kind, with the famous Bhulbhulaiya (labyrinth) inside.", afternoon: "Rumi Darwaza, right next to it — a 60-ft gateway modelled on Istanbul's Sublime Porte.", evening: "Chota Imambara, illuminated at night — chandeliers and mirror work inside.", stay: "Hotel near Hazratganj", meals: "Tunday Kababi's galouti kebabs — a Lucknow institution", tips: "The Bhulbhulaiya inside Bara Imambara is a genuine maze — go with the included guide, not alone." },
+      { day: 2, title: "Colonial & 1857 History", morning: "The Residency — evocative ruins from the 1857 Siege of Lucknow, left largely as they were.", afternoon: "Kaiserbagh Heritage Zone and La Martinière (view from outside; it's a working school).", evening: "Hazratganj for shopping and evening street food.", stay: "Same hotel", meals: "Kakori kebab, sheermal, and shahi tukda for dessert", tips: "The Residency's small museum has a good short film on the 1857 siege — worth the extra 20 minutes." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["State capital with significant police presence", "Well-developed tourist infrastructure and metro system", "Very used to domestic and international tourists"],
+      precautions: ["Standard city precautions — avoid quiet lanes late at night", "Use app-cabs or pre-paid autos rather than flagging down unmarked ones"],
+      soloTips: ["Comfortable for solo travel with the metro and app-cabs available", "Hazratganj and Gomti Nagar are well-lit, busy areas into the evening"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1090" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Hazratganj", "Gomti Nagar", "The main Imambara/Chowk heritage area during the day"],
+      avoidAreas: ["Isolated stretches near the old city after dark"],
+    },
+    rating: 4.5,
+    reviews: 8900,
+    mustEat: ["Tunday Kabab (galouti kebab)", "Lucknowi biryani", "Kakori kebab", "Sheermal", "Shahi tukda"],
+    packingTips: ["Comfortable walking shoes for the old city", "Light layers — winters can get cool", "Cash for Chowk's old-city shops and street food"],
+  },
+  {
+    id: "ayodhya",
+    hidden: true,
+    name: "Ayodhya",
+    state: "Uttar Pradesh",
+    tagline: "Birthplace of Lord Ram",
+    description: "Ayodhya, on the banks of the Saryu River, is revered as one of Hinduism's seven holiest towns ('Saptpuris') and as the birthplace of Lord Ram. The newly built Ram Temple has made it one of India's most-visited pilgrimage sites; the town is dotted with older temples and ghats that have drawn pilgrims for centuries.",
+    image: "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?w=900&h=600&fit=crop&auto=format",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 days",
+    highlights: ["Lord Ram Temple", "Hanuman Garhi", "Kanak Bhawan", "Saryu River ghats", "Ram Katha Museum"],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Lucknow (Chaudhary Charan Singh Airport), 134 km", fromMumbai: "Via Lucknow or Prayagraj", fromBangalore: "Via Lucknow or Prayagraj", duration: "134 km from Lucknow's airport", costRange: "Add road transfer to a Lucknow flight", tips: "Nearest airports are Lucknow (134 km) or Prayagraj's Bamrauli Airport (166 km) — per UP Tourism." },
+      { mode: "Train", icon: "🚂", fromDelhi: "On the Mughal Sarai–Lucknow main line", fromMumbai: "Via Lucknow", fromBangalore: "Via Lucknow", duration: "Varies by route", costRange: "₹200–₹1,500", tips: "Well connected by Northern Railway — Ayodhya has its own station on the main Lucknow line." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Lucknow — ~135 km from Lucknow", fromMumbai: "—", fromBangalore: "—", duration: "~3h from Lucknow", costRange: "₹2,000–₹4,000 cab from Lucknow", tips: "Also 147 km from Gorakhpur, 166 km from Prayagraj, 209 km from Varanasi (per UP Tourism)." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas & Guesthouses", priceRange: "₹500–₹1,500/night (estimate)", examples: ["Temple-run dharamshalas near the main temple complex"], description: "Simple pilgrim accommodation, the most common choice." },
+      { type: "Private Hotels", priceRange: "₹1,500–₹5,000/night (estimate)", examples: ["Hotels along the main pilgrim routes"], description: "A fast-growing hotel scene since the Ram Temple opened, ranging from budget to upscale." },
+    ],
+    localTransport: [
+      { mode: "E-Rickshaw", cost: "₹30–₹100", notes: "Main way to move between temples — the temple area sees heavy pilgrim foot traffic", available: true },
+      { mode: "Taxi", cost: "₹100–₹500", notes: "For longer hops or day trips", available: true },
+      { mode: "Cycle-Rickshaw", cost: "₹30–₹80", notes: "Available throughout town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lucknow", distance: "134 km", type: "State Capital", isHidden: false, id: "lucknow" },
+      { name: "Prayagraj", distance: "166 km", type: "Pilgrimage City", isHidden: false, id: "prayagraj" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim", perDayPerPerson: 900, accommodation: 300, food: 250, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1500, food: 500, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6500, accommodation: 4000, food: 1000, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ram Temple & Central Ayodhya", morning: "Lord Ram Temple — expect security checks and long darshan queues, especially on weekends.", afternoon: "Hanuman Garhi — a fortress-temple on a hilltop, one of Ayodhya's most-visited shrines.", evening: "Saryu River ghats for the evening aarti.", stay: "Guesthouse near the temple complex", meals: "Simple vegetarian thali, widely available near the temple area", tips: "Phones and bags are typically not allowed inside the main temple — plan for a locker stop beforehand." },
+      { day: 2, title: "Kanak Bhawan & Museums", morning: "Kanak Bhawan — an ornate temple believed gifted to Sita by Kaikeyi.", afternoon: "Ram Katha Museum and Tulsi Smarak Bhawan for context on the Ramayana and Ayodhya's history.", evening: "Mani Parvat for sunset views over the town.", stay: "Same", meals: "Local sweets — Ayodhya is known for its pedas", tips: "Deepotsav (the Diwali-eve lamp festival on the Saryu ghats) is spectacular if your dates line up, but expect very heavy crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Extremely heavy security presence around the temple complex", "Constant pilgrim crowds mean you're rarely alone", "Fast-improving tourist infrastructure since the temple's opening"],
+      precautions: ["Long security queues — arrive early to avoid peak crowding", "Keep valuables minimal for temple visits — strict bag/phone restrictions"],
+      soloTips: ["Very manageable solo — heavy foot traffic and security throughout", "E-rickshaw drivers are used to solo pilgrims and tourists"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1090" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Temple complex and surrounding pilgrim routes", "Saryu ghats during aarti hours"],
+      avoidAreas: ["Unofficial parking/guide touts outside the main entrance"],
+    },
+    rating: 4.7,
+    reviews: 6200,
+    mustEat: ["Ayodhya ke Peda (local milk sweet)", "Simple satvik vegetarian thalis"],
+    packingTips: ["Modest clothing for temple visits", "Minimal bag — strict security restrictions at the main temple", "Comfortable shoes for queues and walking between temples"],
+  },
+  {
+    id: "prayagraj",
+    hidden: true,
+    name: "Prayagraj",
+    state: "Uttar Pradesh",
+    tagline: "Teerthraj — King of Pilgrimage Sites",
+    description: "Prayagraj sits at the Sangam — the confluence of the Ganges, Yamuna, and the mythical Saraswati — making it, per UP Tourism, 'the holiest of pilgrimage centres of India.' It hosts the Kumbh Mela once every 12 years and the annual Magh Mela, among the largest gatherings of pilgrims on earth, alongside a real role in India's independence movement.",
+    image: "https://images.unsplash.com/photo-1743332509532-f4c6a854f3c9?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1743332509532-f4c6a854f3c9?w=900&h=600&fit=crop&auto=format",
+    category: ["Spiritual", "Heritage", "History"],
+    bestSeason: "October – March (Magh Mela: January–February)",
+    duration: "1–2 days",
+    highlights: ["Sangam (Triveni confluence)", "Allahabad Fort (built by Akbar)", "Anand Bhawan & Swaraj Bhawan", "Khusro Bagh", "All Saints Cathedral"],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Bamrauli Airport", fromMumbai: "Direct to Bamrauli Airport", fromBangalore: "Via Delhi", duration: "~1.5–2h from Delhi", costRange: "₹3,000–₹9,000", tips: "Bamrauli Airport is 14 km from the city, with direct Delhi flights (per UP Tourism)." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — major junction", fromMumbai: "Direct trains", fromBangalore: "Via Delhi/Mumbai routes", duration: "Varies by route", costRange: "₹300–₹2,000", tips: "Well connected to Kolkata, Delhi, and Mumbai — one of North India's major rail junctions." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH-2 — ~643 km", fromMumbai: "—", fromBangalore: "—", duration: "~10–12h from Delhi", costRange: "₹5,000–₹9,000 cab", tips: "Closer from within UP — 125 km from Varanasi, 204 km from Lucknow, 433 km from Agra (per UP Tourism)." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels & Dharamshalas", priceRange: "₹800–₹2,000/night (estimate)", examples: ["Hotels near Civil Lines and the Sangam area"], description: "Simple hotels and pilgrim lodges, in heavy demand during Magh Mela/Kumbh." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,500–₹6,000/night (estimate)", examples: ["Hotels in Civil Lines"], description: "Standard business/tourist hotels in the more modern Civil Lines area." },
+    ],
+    localTransport: [
+      { mode: "App Cab / Taxi", cost: "₹100–₹500", notes: "Available across the city", available: true },
+      { mode: "Boat (Sangam)", cost: "₹100–₹300/person", notes: "To reach the exact confluence point on the river", available: true },
+      { mode: "Cycle-Rickshaw", cost: "₹30–₹100", notes: "Good for the older parts of the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Varanasi", distance: "125 km", type: "Major Pilgrimage City", isHidden: false, id: "varanasi" },
+      { name: "Ayodhya", distance: "166 km", type: "Pilgrimage Town", isHidden: false, id: "ayodhya" },
+      { name: "Chitrakoot", distance: "~130 km", type: "Pilgrimage & Nature", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim", perDayPerPerson: 900, accommodation: 350, food: 250, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1500, food: 500, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6000, accommodation: 3500, food: 1000, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sangam & Old Prayagraj", morning: "Boat out to the Sangam — the actual confluence point of the Ganges and Yamuna.", afternoon: "Allahabad Fort (Akbar's fort on the Ganga riverbank — parts are still under Army use, so access to the interior is limited).", evening: "All Saints Cathedral and a walk through Civil Lines.", stay: "Hotel in Civil Lines", meals: "Simple UP thali; try the local kachori-sabzi breakfast", tips: "Book the Sangam boat ride through an official counter — prices are fixed but touts will try to overcharge tourists." },
+      { day: 2, title: "Independence History", morning: "Anand Bhawan and Swaraj Bhawan — the Nehru family home, central to India's independence movement.", afternoon: "Khusro Bagh — a quiet Mughal-era garden with the tombs of Jahangir's son and family.", evening: "Prayagraj Museum for local history and art.", stay: "Same", meals: "Local sweets from Civil Lines", tips: "Anand Bhawan's museum is genuinely worth the couple of hours — well curated, not just a house tour." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Major pilgrimage city with consistent police presence, especially around the Sangam", "Well-established tourist infrastructure in Civil Lines"],
+      precautions: ["Crowds swell enormously during Magh Mela/Kumbh — plan accordingly if visiting then", "Use official Sangam boat counters, not unlicensed touts", "Keep valuables secure in crowded ghat areas"],
+      soloTips: ["Manageable solo outside of mela season", "Civil Lines is a comfortable, well-lit base"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1090" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Civil Lines", "The Sangam area during daylight hours"],
+      avoidAreas: ["Extremely crowded ghat areas during major mela days without a local guide"],
+    },
+    rating: 4.4,
+    reviews: 4700,
+    mustEat: ["Kachori-sabzi breakfast", "Local UP thali", "Sweets from Civil Lines' old shops"],
+    packingTips: ["Comfortable shoes for riverside walking", "Modest clothing for temple/ghat visits", "Extra caution with belongings if visiting during Magh Mela/Kumbh"],
   },
 ];
 

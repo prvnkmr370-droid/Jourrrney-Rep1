@@ -251,7 +251,10 @@ export default function FormStep({
 
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, marginBottom: 12 }}>Where to?</Text>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-            {DESTINATIONS.map((d) => {
+            {/* `hidden` destinations (real day-trip/satellite pages, not
+                part of the curated picker) are left out of this grid, same
+                as Home's Popular Destinations and Search's browse list. */}
+            {DESTINATIONS.filter((d) => !d.hidden).map((d) => {
               const active = destination.id === d.id;
               return (
                 <Pressable

@@ -55,10 +55,15 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     if (target) handleSearchSelect(target);
   };
 
+  // `hidden` destinations are real, full pages — findable via the live
+  // suggestions above, and linkable from a nearby-place card — but left
+  // out of this default/unfiltered browse list, same reasoning as Home's
+  // Popular Destinations. Search for one by name to reach it directly.
   const filtered = useMemo(() => {
-    if (category === "All") return DESTINATIONS;
-    if (category === "Hills") return DESTINATIONS.filter((d) => HILL_STATION_IDS.includes(d.id));
-    return DESTINATIONS.filter((d) => d.category.includes(category));
+    const visible = DESTINATIONS.filter((d) => !d.hidden);
+    if (category === "All") return visible;
+    if (category === "Hills") return visible.filter((d) => HILL_STATION_IDS.includes(d.id));
+    return visible.filter((d) => d.category.includes(category));
   }, [category]);
 
   return (
