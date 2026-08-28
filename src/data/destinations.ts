@@ -1121,6 +1121,167 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Coorg Pandi Curry (served at most lodges)", "Ragi Mudde with Saaru (local staple)", "Kerala-style fish curry (Wayanad influence)", "Fresh forest honey (buy from local tribes)"],
     packingTips: ["Neutral / muted colours only (no bright/white — disturbs wildlife)", "Binoculars — essential", "Telephoto camera lens", "Mosquito repellent DEET 30%+", "Closed shoes (never sandals in forest)"],
   },
+  // Andhra Pradesh's official tourism site (tourism.ap.gov.in) has a
+  // broken SSL certificate (misconfigured to a different domain's cert),
+  // so it could not be fetched directly. Visakhapatnam and Tirupati below
+  // are built from general public sources (Incredible India, TTD's own
+  // published info, established travel guides) instead — same
+  // sourcing standard as this file's other pre-existing destinations, not
+  // the stricter single-source-only standard used for the Andaman entry.
+  {
+    id: "vizag",
+    name: "Visakhapatnam",
+    state: "Andhra Pradesh",
+    tagline: "The Jewel of the East Coast",
+    description: "Visakhapatnam (Vizag) is a port city where the Eastern Ghats meet the Bay of Bengal — a working city with a beach-town soul. Long promenades, a hilltop park with a cable car, a decommissioned submarine you can walk through, and some of the east coast's cleanest beaches make it an easy, uncrowded coastal break.",
+    image: "https://images.unsplash.com/photo-1753187815676-f97de6508d91?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1753187815676-f97de6508d91?w=900&h=600&fit=crop&auto=format",
+    category: ["Beach", "Nature", "Coastal"],
+    bestSeason: "November – February",
+    duration: "3–4 days",
+    highlights: ["RK Beach (Ramakrishna Beach) promenade", "Kailasagiri hilltop park & cable car", "INS Kursura Submarine Museum", "Rushikonda Beach", "Bheemili (Bheemunipatnam) Beach"],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Visakhapatnam Airport (VTZ)", fromMumbai: "Direct to VTZ", fromBangalore: "Direct to VTZ", duration: "2–2.5h", costRange: "₹3,500–₹12,000", tips: "Airport is ~12 km from the city centre; cabs available outside arrivals." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Visakhapatnam Junction — well connected", fromMumbai: "Via Visakhapatnam Junction", fromBangalore: "Via Visakhapatnam Junction", duration: "Varies by route", costRange: "₹500–₹3,000", tips: "Visakhapatnam Junction is the main rail hub, connected to Hyderabad, Chennai, Kolkata, and Delhi." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "APSRTC & private buses from nearby AP/Telangana cities", duration: "Varies", costRange: "₹400–₹1,500", tips: "Good APSRTC network within Andhra Pradesh; less practical from farther states." },
+    ],
+    accommodation: [
+      {
+        type: "Budget Hotels", priceRange: "₹1,200–₹2,800/night (estimate)",
+        examples: ["The Beacon Hotel Visakhapatnam", "Hotel Ocean Vista Bay", "Treebo Lalitha, RK Beach"],
+        description: "Simple hotels within walking distance of RK Beach.",
+        venues: [
+          { name: "The Beacon Hotel Visakhapatnam", location: "Near RK Beach", mapsQuery: "The Beacon Hotel Visakhapatnam RK Beach" },
+          { name: "Hotel Ocean Vista Bay", location: "Near RK Beach", mapsQuery: "Hotel Ocean Vista Bay Visakhapatnam" },
+          { name: "Treebo Lalitha, RK Beach", location: "RK Beach Road", mapsQuery: "Treebo Lalitha RK Beach Visakhapatnam" },
+        ],
+        sourceNote: "Real, currently-operating hotels per public travel-booking listings — not sourced from tourism.ap.gov.in (unreachable, broken SSL certificate). Rates are an estimate, not an official figure.",
+      },
+      {
+        type: "Mid-Range Hotels", priceRange: "₹4,500–₹9,000/night (estimate)",
+        examples: ["Radisson Blu Resort Visakhapatnam", "Fairfield by Marriott Visakhapatnam", "Hotel Rio Beach"],
+        description: "3–4 star beach-adjacent chain hotels with pools and sea views.",
+        venues: [
+          { name: "Radisson Blu Resort, Visakhapatnam", mapsQuery: "Radisson Blu Resort Visakhapatnam" },
+          { name: "Fairfield by Marriott Visakhapatnam", mapsQuery: "Fairfield by Marriott Visakhapatnam" },
+        ],
+        sourceNote: "Rates are an estimate, not an official figure.",
+      },
+      {
+        type: "Luxury Hotels", priceRange: "₹10,000–₹25,000/night (estimate)",
+        examples: ["Novotel Visakhapatnam Varun Beach", "Four Points by Sheraton Visakhapatnam"],
+        description: "5-star beachfront properties.",
+        venues: [{ name: "Novotel Visakhapatnam Varun Beach", mapsQuery: "Novotel Visakhapatnam Varun Beach" }],
+        sourceNote: "Rates are an estimate, not an official figure.",
+      },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available across the city", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Negotiate fare or ask for meter", available: true },
+      { mode: "APSRTC City Bus", cost: "₹10–₹40", notes: "Covers the main beach road and city routes", available: true },
+      { mode: "Cable Car (Kailasagiri)", cost: "₹75 one-way (approx.)", notes: "Up to the Kailasagiri hilltop park", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Araku Valley", distance: "115 km", type: "Hill Station & Coffee Country", isHidden: false },
+      { name: "Borra Caves", distance: "90 km", type: "Limestone Caves", isHidden: true },
+      { name: "Simhachalam Temple", distance: "16 km", type: "Hilltop Temple", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 900, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 3800, food: 900, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Beachfront", perDayPerPerson: 14000, accommodation: 10500, food: 1800, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "RK Beach & Submarine Museum", morning: "Walk the RK Beach promenade. INS Kursura Submarine Museum — walk through a real decommissioned Indian Navy submarine (₹40 entry).", afternoon: "Visakha Museum and the beach-road aquarium nearby.", evening: "Sunset at RK Beach; street food along the promenade.", stay: "City hotel near RK Beach", meals: "Andhra thali (₹200), beach-road street food (₹150)", tips: "The submarine museum interior is narrow and low — not ideal if you're claustrophobic." },
+      { day: 2, title: "Kailasagiri & Rushikonda", morning: "Kailasagiri hilltop park via cable car — panoramic views over the city and coast.", afternoon: "Rushikonda Beach — calmer and cleaner than RK Beach, good for a swim.", evening: "Bheemili (Bheemunipatnam) Beach for a quieter sunset.", stay: "Same hotel", meals: "Seafood lunch near Rushikonda (₹350)", tips: "Cable car queues build up on weekends — go early." },
+      { day: 3, title: "Araku Valley Day Trip", morning: "Early train or drive to Araku Valley (the Araku toy-train route via the Eastern Ghats is a scenic option).", afternoon: "Borra Caves en route — dramatic limestone caverns.", evening: "Return to Visakhapatnam by evening.", stay: "Same hotel", meals: "Local Araku coffee, tribal-style lunch (₹300)", tips: "The Vizag–Araku train ride itself is a big part of the appeal — book in advance." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Established coastal city with steady tourist footfall", "RK Beach promenade is lit and populated into the evening", "Good hotel and hospital infrastructure"],
+      precautions: ["Avoid swimming at unmanned/unmarked beach stretches", "Use app-cabs after dark rather than unmarked autos"],
+      soloTips: ["Comfortable for solo travel — well-established as a domestic tourist city", "Beach promenade and Kailasagiri are both easy solo daytime outings"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Emergency", number: "112" }],
+      safeZones: ["RK Beach promenade", "Kailasagiri park", "MVP Colony / main city area"],
+      avoidAreas: ["Isolated beach stretches after dark"],
+    },
+    rating: 4.6,
+    reviews: 4200,
+    mustEat: ["Andhra-style fish pulusu", "Bongulo chicken (bamboo-smoked)", "Royyala iguru (prawn curry)", "Filter coffee at an Araku-coffee cafe"],
+    packingTips: ["Light cottons — humid coastal climate", "Sunscreen", "Comfortable walking shoes for the promenade and Kailasagiri", "Light jacket if heading up to Araku Valley"],
+  },
+  {
+    id: "tirupati",
+    name: "Tirupati",
+    state: "Andhra Pradesh",
+    tagline: "India's Most-Visited Pilgrimage Town",
+    description: "Tirupati sits at the base of the Tirumala hills, home to the Sri Venkateswara Temple — one of the most-visited religious sites in the world. The pilgrimage is highly organised: TTD (Tirumala Tirupati Devasthanams) runs the temple, accommodation, and free meals for pilgrims at genuinely massive scale.",
+    image: "https://images.unsplash.com/photo-1741003415192-ea5c163aadd4?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1741003415192-ea5c163aadd4?w=900&h=600&fit=crop&auto=format",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "September – February",
+    duration: "1–2 days",
+    highlights: ["Sri Venkateswara Temple, Tirumala", "Alipiri Mettu / Srivari Mettu step-climb", "Sri Venkateswara Zoological Park", "Talakona Waterfall", "TTD museums on the hill"],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct to Tirupati Airport (TIR)", fromMumbai: "Direct to TIR", fromBangalore: "Direct to TIR", duration: "1.5–2.5h", costRange: "₹3,000–₹10,000", tips: "Tirupati Airport (Renigunta) is ~15 km from Tirupati city, ~30 km from Tirumala. Direct flights from Delhi, Mumbai, Hyderabad, Kolkata, and Vizag on IndiGo/Air India." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Tirupati Main / Renigunta station", fromMumbai: "Via Tirupati Main / Renigunta station", fromBangalore: "Via Tirupati Main / Renigunta station", duration: "Varies by route", costRange: "₹300–₹2,000", tips: "Three stations serve the area — Renigunta, Tirupati Main, and Anantarajupet. Popular trains: Tirumala Express and Sapthagiri Express, both from Chennai (~3h)." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "APSRTC buses from Chennai/Bangalore/Hyderabad", duration: "Tirupati–Tirumala: ~1h by ghat road", costRange: "₹50 (APSRTC bus, Tirupati to Tirumala)", tips: "From Tirupati town, APSRTC buses run every ~5 minutes up the ghat road to Tirumala. Pilgrims on foot climb via Alipiri Mettu (7 km) or the shorter Srivari Mettu (2 km) and get a free Divya Darshanam token at the top." },
+    ],
+    accommodation: [
+      {
+        type: "TTD Guest Houses (Official)", priceRange: "Free – ₹1,000/night (per TTD's own published rates)",
+        examples: ["Srinivasam", "Vishnu Nivasam", "Madhavam"],
+        description: "TTD's own accommodation complexes near Tirupati railway station — official, secure, walkable, and the standard choice for most pilgrims. On the hill at Tirumala itself, TTD rooms are far harder to get.",
+        venues: [
+          { name: "Srinivasam", location: "Near Tirupati Railway Station", mapsQuery: "Srinivasam TTD Tirupati" },
+          { name: "Vishnu Nivasam", location: "Near Tirupati Railway Station", mapsQuery: "Vishnu Nivasam TTD Tirupati" },
+          { name: "Madhavam", location: "Near Tirupati Railway Station", mapsQuery: "Madhavam TTD Tirupati" },
+        ],
+        sourceNote: "Real TTD-run complexes, per TTD's own public information — not sourced from tourism.ap.gov.in (unreachable, broken SSL certificate). Book via the official TTD website/app; rates and availability change with demand.",
+      },
+      {
+        type: "Private Hotels (Tirupati town)", priceRange: "₹1,500–₹6,000/night (estimate)",
+        examples: ["Multiple private hotels around the railway station and bus stand"],
+        description: "A realistic fallback when TTD accommodation is full, especially in peak pilgrimage season.",
+        sourceNote: "No specific venue names verified for this entry — rates are an estimate, not an official figure.",
+      },
+    ],
+    localTransport: [
+      { mode: "APSRTC Bus (Tirupati–Tirumala)", cost: "₹50", notes: "Runs every ~5 minutes from the Central Bus Stand; ~1h via ghat road", available: true },
+      { mode: "Step climb (Alipiri Mettu)", cost: "Free", notes: "7 km on foot; free Divya Darshanam token on arrival", available: true },
+      { mode: "Step climb (Srivari Mettu)", cost: "Free", notes: "Shorter, steeper 2 km route", available: true },
+      { mode: "App Cab / Auto (Tirupati town)", cost: "₹80–₹300", notes: "For getting around Tirupati town itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sri Venkateswara Zoological Park", distance: "In Tirupati town", type: "Zoo & Nature Park", isHidden: false },
+      { name: "Talakona Waterfall", distance: "~50 km", type: "Andhra Pradesh's tallest waterfall", isHidden: true },
+      { name: "Chandragiri Fort", distance: "~15 km", type: "Historic Fort", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim (TTD)", perDayPerPerson: 800, accommodation: 200, food: 200, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Private Hotel + Special Darshan", perDayPerPerson: 8000, accommodation: 5000, food: 800, transport: 700, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival & Tirumala Darshan", morning: "Arrive Tirupati. Check into TTD accommodation (Srinivasam/Vishnu Nivasam) if pre-booked, or head straight up via APSRTC bus (₹50, ~1h).", afternoon: "Free Sarva Darshan queue (can run several hours) or pre-booked Special Darshan (₹300–₹500) at Sri Venkateswara Temple.", evening: "Explore Tirumala's temple complex and TTD museums.", stay: "TTD guest house or Tirupati town hotel", meals: "Free TTD prasadam/annadanam, or local Andhra meals in town (₹150)", tips: "Book darshan tickets via the official TTD app/website ahead of time — it saves hours of queueing." },
+      { day: 2, title: "Talakona & Chandragiri", morning: "Day trip to Talakona Waterfall (~50 km) — Andhra Pradesh's tallest waterfall, in a reserve forest.", afternoon: "Chandragiri Fort — Vijayanagara-era fort and palace museum.", evening: "Return to Tirupati town for departure.", stay: "Same", meals: "Local Andhra thali (₹200)", tips: "Hire a car for the Talakona/Chandragiri loop — limited public transport to either." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Extremely high security presence — one of India's most heavily managed pilgrimage sites", "TTD accommodation is gated and monitored", "Constant crowds mean you're rarely alone"],
+      precautions: ["Keep track of belongings in queue crowds", "Use official TTD counters/app for bookings — avoid unofficial ticket touts"],
+      soloTips: ["Very manageable solo — queue systems and TTD infrastructure are built for large volumes of individual pilgrims", "TTD guest houses are a safe, straightforward base"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Emergency", number: "112" }],
+      safeZones: ["TTD accommodation complexes", "Temple complex on the hill", "Main Tirupati town"],
+      avoidAreas: ["Unofficial ticket/darshan touts outside official TTD counters"],
+    },
+    rating: 4.8,
+    reviews: 12400,
+    mustEat: ["TTD Tirupati laddu (temple prasadam)", "Andhra-style pulihora", "Pongal at a Tirupati town mess", "Filter coffee"],
+    packingTips: ["Comfortable clothes for long queue waits", "ID proof — needed for darshan booking/verification", "Modest clothing (temple dress code applies)", "Water bottle for the step-climb routes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

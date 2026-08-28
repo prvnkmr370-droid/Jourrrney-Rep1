@@ -24,4 +24,6 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   coorg: { lat: 12.4244, lon: 75.7382 }, // Madikeri
   gokarna: { lat: 14.5479, lon: 74.3188 },
   kabini: { lat: 11.928, lon: 76.3341 },
+  vizag: { lat: 17.6868, lon: 83.2185 },
+  tirupati: { lat: 13.6288, lon: 79.4192 },
 };
