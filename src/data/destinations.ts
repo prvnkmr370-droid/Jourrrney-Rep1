@@ -2752,7 +2752,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~70 km", type: "Gateway City", isHidden: false, id: "guwahati" },
-      { name: "Orang National Park", distance: "Partly within Darrang district", type: "Mini Kaziranga", isHidden: true },
+      { name: "Orang National Park", distance: "Partly within Darrang district", type: "Mini Kaziranga", isHidden: true, id: "orang" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3287,6 +3287,72 @@ export const DESTINATIONS: Destination[] = [
     reviews: 600,
     mustEat: ["Fresh local seafood", "Coconut water"],
     packingTips: ["Surfboard rental gear or bring your own", "Reef-safe sunscreen", "Cash — very limited card acceptance", "Basic first-aid — facilities are remote"],
+  },
+  // Sourced directly from orangnptr.in — the park's own official site —
+  // including its own photography (tiger/rhino/deer camera shots from
+  // the site's homepage slider). Not a Creative Commons license like the
+  // Wikimedia-sourced entries; imageCredit here just names the real
+  // source honestly rather than claiming a license that doesn't apply.
+  {
+    id: "orang",
+    hidden: true,
+    name: "Orang National Park",
+    state: "Assam",
+    tagline: "Assam's 'Mini Kaziranga' — Now a Tiger Reserve",
+    description: "Orang sits on the Brahmaputra's north bank in Darrang and Sonitpur districts — 279.60 sq km declared a sanctuary in 1998, a national park in 1999, and India's 49th Tiger Reserve on 24 February 2016, per the park's own site. It's often called 'Mini Kaziranga' for its one-horned rhino population (101 counted in 2022), but its official Tiger Reserve status is now the bigger distinction — 24 tigers recorded, alongside pygmy hogs and elephants.",
+    image: "https://orangnptr.in/assets/images/slider/slider1.jpg",
+    heroImage: "https://orangnptr.in/assets/images/slider/slider1.jpg",
+    imageCredit: "Photo: Orang National Park & Tiger Reserve (official site, orangnptr.in)",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – April",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Royal Bengal Tiger sightings (49th Tiger Reserve)" },
+      { name: "One-horned rhinoceros (101 counted in 2022)" },
+      { name: "Pygmy hog and elephant habitat" },
+      { name: "River rafting/cruise on the Brahmaputra" },
+    ],
+    transport: [
+      { mode: "Road (from Guwahati)", icon: "🚗", fromDelhi: "Via Guwahati → Baihata Chariali → Mangaldai → Dalgaon → Koupati → Silbori (NH15)", fromMumbai: "Via Guwahati, same route", fromBangalore: "Via Guwahati, same route", duration: "~2.5–3h from Guwahati", costRange: "₹2,000–₹3,500 cab", tips: "Two road routes exist, per the park's own site — via Mangaldai (NH15) is the more direct one from Guwahati." },
+      { mode: "Road (from Tezpur)", icon: "🚗", fromDelhi: "Via Guwahati → Nagaon → Kaliabor → Tezpur → Orang → Silbori (AH1)", fromMumbai: "Via Tezpur, same route", fromBangalore: "Via Tezpur, same route", duration: "Regional connection via Tezpur", costRange: "₹1,500–₹3,000 cab from Tezpur", tips: "The AH1 route via Tezpur works well if you're combining Orang with Nameri or Kaziranga." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Guwahati or Tezpur (Salonibari) airports", fromMumbai: "Via Guwahati", fromBangalore: "Via Guwahati", duration: "Regional connection", costRange: "Add road transfer", tips: "Tezpur's Salonibari airport has limited flights, per the park's own site — Guwahati is the more reliable air gateway." },
+    ],
+    accommodation: [
+      { type: "Limited on-site — most stay in Tezpur or Mangaldoi", priceRange: "See Tezpur's accommodation", examples: ["Base in Tezpur or Mangaldoi, visit as a day/overnight trip"], description: "The park's own site doesn't list dedicated on-site lodging — most visitors base themselves in nearby Tezpur or Mangaldoi." },
+    ],
+    localTransport: [
+      { mode: "Elephant Safari", cost: "₹450 (Indian) / ₹1,000 (foreigner) per seat", notes: "Max 3 seats per elephant, per the park's official fee list", available: true },
+      { mode: "Jeep Safari", cost: "Vehicle + ₹300 daily road toll + ₹100 security guard fee", notes: "Max 5 seats per jeep", available: true },
+      { mode: "River Cruise/Rafting", cost: "₹100 (Indian) / ₹500 (foreigner) + ₹1,000 toll", notes: "On the Brahmaputra, per the park's official fee list", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Guwahati", distance: "~110 km", type: "Gateway City", isHidden: false, id: "guwahati" },
+      { name: "Tezpur", distance: "Regional connection", type: "Heritage Town", isHidden: false, id: "tezpur" },
+      { name: "Nameri National Park", distance: "Regional connection", type: "Rafting & Birding", isHidden: false, id: "nameri" },
+      { name: "Darrang (Mangaldoi)", distance: "Within the district", type: "Ancient Kamrup Heritage", isHidden: false, id: "darrang" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 500, activities: 400 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 0, food: 500, transport: 1200, activities: 1300 },
+      { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 6000, accommodation: 0, food: 800, transport: 2500, activities: 2700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Safari Day", morning: "Elephant safari (₹450/seat) — the best way to get close to the park's rhinos.", afternoon: "Jeep safari across the grasslands for tiger and elephant sign.", evening: "River cruise on the Brahmaputra (₹100/person).", stay: "Base in Tezpur or Mangaldoi", meals: "Local Assamese meal in Tezpur/Mangaldoi", tips: "Book safaris online through the park's own booking portal — up to 3 bookings per person per date, per their official rules. Bring a professional camera permit (₹500–₹2,000) if you're shooting more than a phone/basic camera." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Forest department and tiger reserve security presence", "Structured, fee-regulated safari system", "Growing but still modest tourist footfall keeps it low-key"],
+      precautions: ["Stay in the vehicle/on the elephant at all times — genuine tiger and rhino territory", "Book only through the official park booking system"],
+      soloTips: ["Manageable solo — safaris are naturally guided", "Base in Tezpur for more solo-traveller infrastructure than staying at the park itself"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Official safari routes", "Park entry/booking areas"],
+      avoidAreas: ["Walking outside designated areas — active tiger reserve"],
+    },
+    rating: 4.5,
+    reviews: 700,
+    mustEat: ["Assamese thali in Tezpur or Mangaldoi"],
+    packingTips: ["Neutral/earth-tone clothing", "Binoculars", "Camera permit cash if bringing professional equipment", "Mosquito repellent"],
   },
 ];
 
