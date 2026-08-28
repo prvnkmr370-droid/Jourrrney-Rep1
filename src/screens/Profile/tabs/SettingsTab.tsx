@@ -11,10 +11,14 @@
  * "Notifications" stays a simple local toggle — there's no notification
  * backend, so it's intentionally inert beyond its own screen.
  *
- * "Dark mode" is now a real 3-way System/Light/Dark control backed by
+ * "Dark mode" is a real 3-way System/Light/Dark control backed by
  * useThemeStore — a plain on/off Switch can't represent "follow system"
- * (the default), so this replaced the old boolean ToggleRow with a
- * segmented control, same visual pattern as Budget tab's tier selector.
+ * (the default), so this is a segmented control, same visual pattern as
+ * Budget tab's tier selector. For a real (email) account, picking a mode
+ * also persists to journey-backend via useProfileStore.setThemeMode, so
+ * the choice follows the account across reinstalls/devices — for guests
+ * and the fake Google/Apple/Facebook accounts it still applies instantly,
+ * just without that cross-device sync (no backend account to save it to).
  */
 import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
@@ -33,8 +37,8 @@ const MODE_OPTIONS: { id: ThemeMode; label: string }[] = [
 
 export default function SettingsTab() {
   const c = useThemeColors();
-  const { isSignedIn, signOut } = useProfileStore();
-  const { mode, setMode } = useThemeStore();
+  const { isSignedIn, signOut, setThemeMode } = useProfileStore();
+  const mode = useThemeStore((s) => s.mode);
   const [notifications, setNotifications] = useState(true);
 
   const handleLogout = async () => {
@@ -66,7 +70,7 @@ export default function SettingsTab() {
               return (
                 <Pressable
                   key={opt.id}
-                  onPress={() => setMode(opt.id)}
+                  onPress={() => setThemeMode(opt.id)}
                   style={{ flex: 1, alignItems: "center", paddingVertical: 8, borderRadius: 9, backgroundColor: active ? c.primary : "transparent" }}
                 >
                   <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>

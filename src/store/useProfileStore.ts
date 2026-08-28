@@ -1,20 +1,23 @@
 import { create } from "zustand";
 import * as SecureStore from "expo-secure-store";
 import { API_BASE_URL } from "@/config/api";
+import { useThemeStore, type ThemeMode } from "./useThemeStore";
 
 export type AuthProvider = "google" | "apple" | "facebook" | "email" | "phone" | null;
 
 /** The persisted-on-backend profile fields — all null until the user
  * actually sets them (a brand-new real account starts empty, not with
- * placeholder demo content). */
+ * placeholder demo content). themeMode mirrors useThemeStore's own value
+ * once a real account has one saved — see fetchProfile/updateProfile. */
 export interface RealProfile {
   bio: string | null;
   languages: string | null;
   location: string | null;
+  themeMode: ThemeMode | null;
 }
 
 const TOKEN_KEY = "journey_auth_token";
-const EMPTY_PROFILE: RealProfile = { bio: null, languages: null, location: null };
+const EMPTY_PROFILE: RealProfile = { bio: null, languages: null, location: null, themeMode: null };
 
 interface ProfileState {
   isSignedIn: boolean;
@@ -43,12 +46,22 @@ interface ProfileState {
    * to SecureStore. */
   verifyCode: (email: string, code: string, name?: string) => Promise<{ ok: boolean; error?: string }>;
 
-  /** Loads the signed-in user's real profile fields from the backend. */
+  /** Loads the signed-in user's real profile fields from the backend —
+   * also applies a saved themeMode to useThemeStore, so a saved
+   * preference follows the account across reinstalls/devices, not just
+   * this one's local storage. */
   fetchProfile: () => Promise<void>;
 
   /** Saves a partial update to the backend and updates local state from
-   * its response — call with just the fields that changed. */
+   * its response — call with just the fields that changed. For
+   * themeMode specifically, prefer setThemeMode below, which also
+   * updates useThemeStore so the UI reflects it immediately. */
   updateProfile: (partial: Partial<RealProfile>) => Promise<{ ok: boolean; error?: string }>;
+
+  /** Updates the theme locally (immediate, works for guests too) and, for
+   * a real signed-in account, also persists it to the backend so it's
+   * restored on other devices/reinstalls via fetchProfile. */
+  setThemeMode: (mode: ThemeMode) => void;
 
   /** UI-only for Google/Apple/Facebook — no real OAuth is wired up (that
    * needs client credentials from each provider's developer console,
@@ -151,7 +164,12 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       });
       if (!res.ok) return;
       const { profile } = await res.json();
-      set({ profile: { bio: profile.bio, languages: profile.languages, location: profile.location } });
+      set({ profile: { bio: profile.bio, languages: profile.languages, location: profile.location, themeMode: profile.themeMode } });
+      // A saved server-side preference wins over whatever the device was
+      // already showing (e.g. after a fresh install with no local theme
+      // choice yet) — null means the account has never set one, so the
+      // local default (system) is left alone.
+      if (profile.themeMode) useThemeStore.getState().setMode(profile.themeMode);
     } catch {
       // Leave whatever profile state we already have — a failed refresh
       // shouldn't blank out fields the user can already see.
@@ -173,6 +191,19 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       return { ok: true };
     } catch {
       return { ok: false, error: "Can't reach the server — check your connection." };
+    }
+  },
+
+  setThemeMode: (mode) => {
+    useThemeStore.getState().setMode(mode);
+    const { token, authProvider } = get();
+    // Only real (email) accounts have a backend profile to save this to —
+    // Google/Apple/Facebook are still local-only fake auth (see signIn
+    // below), and a guest has no account at all. The theme still applies
+    // immediately either way via the setMode call above; this just adds
+    // cross-device persistence on top for real accounts.
+    if (token && authProvider === "email") {
+      get().updateProfile({ themeMode: mode });
     }
   },
 
