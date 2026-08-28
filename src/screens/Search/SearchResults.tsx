@@ -70,7 +70,10 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
             onBlur={() => setFocused(false)}
             placeholder="Search destinations..."
             placeholderTextColor={c.textMuted}
-            style={{ flex: 1, fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textPrimary }}
+            style={{
+              flex: 1, fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textPrimary,
+              paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+            }}
           />
           {query.length > 0 && (
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
