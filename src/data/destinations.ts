@@ -2356,6 +2356,111 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Assamese thali", "Local sweets"],
     packingTips: ["Light layers", "Comfortable shoes"],
   },
+  {
+    id: "barpeta",
+    hidden: true,
+    name: "Barpeta",
+    state: "Assam",
+    tagline: "Centre of Vaishnavite Sattriya Culture",
+    description: "Barpeta is a major centre of Assam's Vaishnavite Sattriya culture, tied to two of its most important religious figures: 16th-century saint-reformer Srimanta Sankardeva and his principal disciple Madhabdev, who founded the Barpeta Satra (Kirtan Ghar) here in 1583. Doul (the Assamese form of Holi) is, per Assam Tourism, the town's biggest festival.",
+    image: "https://images.unsplash.com/photo-1646476110859-f1d73d8436b6?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1646476110859-f1d73d8436b6?w=900&h=600&fit=crop&auto=format",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March (Doul/Fakuwa festival is the biggest draw)",
+    duration: "1 day",
+    highlights: [
+      { name: "Barpeta Satra (Kirtan Ghar), founded 1583" },
+      { name: "Ganak-Kuchi Satra" },
+      { name: "Sundaridiya Satra" },
+    ],
+    transport: [
+      { mode: "Road (from Guwahati)", icon: "🚗", fromDelhi: "Via Guwahati — regional connection", fromMumbai: "Via Guwahati", fromBangalore: "Via Guwahati", duration: "~2–3h from Guwahati", costRange: "₹1,500–₹3,000 cab", tips: "A straightforward day trip from Guwahati, or a stop on the way to Manas National Park." },
+    ],
+    accommodation: [
+      { type: "Town Hotels", priceRange: "₹800–₹2,000/night (estimate)", examples: ["Simple hotels near the main town"], description: "Most visitors treat Barpeta as a day trip rather than an overnight stay." },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹30–₹150", notes: "Main way around the compact Satra area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Guwahati", distance: "~100 km", type: "Gateway City", isHidden: false, id: "guwahati" },
+      { name: "Manas National Park", distance: "~40 km", type: "Wildlife Reserve", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1200, food: 500, transport: 300, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 5000, accommodation: 3000, food: 800, transport: 500, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Satra Circuit", morning: "Barpeta Satra (Kirtan Ghar) — the main monastery, with three guru-asanas named after Sankardeva and Badula Ata.", afternoon: "Ganak-Kuchi Satra and Sundaridiya Satra, both founded by Madhabdev and a short distance away.", evening: "Explore the town's mustard fields and rural surroundings.", stay: "Day trip — most base in Guwahati or continue to Manas", meals: "Simple Assamese vegetarian meal near the Satra", tips: "If your dates land on Doul (Assamese Holi), this is one of the best places in Assam to experience it." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A genuinely quiet, religious-heritage town", "Satra complexes are respectful, well-visited daytime spaces"],
+      precautions: ["Modest clothing expected at Satra complexes", "Standard rural-town precautions after dark"],
+      soloTips: ["Very manageable solo as a day trip", "Satra caretakers are used to visitors and happy to explain the history"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Satra complexes and the main town centre"],
+      avoidAreas: ["Isolated rural roads after dark"],
+    },
+    rating: 4.3,
+    reviews: 550,
+    mustEat: ["Assamese vegetarian thali", "Local sweets"],
+    packingTips: ["Modest clothing for Satra visits", "Comfortable shoes"],
+  },
+  {
+    id: "hailakandi",
+    hidden: true,
+    name: "Hailakandi",
+    state: "Assam",
+    tagline: "Barak Valley's Quiet Tea Country",
+    description: "Hailakandi, per Assam Tourism, is 'a picturesque city adorned with meandering rivers and greenery' in the Barak Valley — sprawling tea gardens and a slower pace than Assam's bigger tourist stops. It's a genuine off-the-beaten-path pick rather than a headline destination, best suited to travellers who've already covered Silchar and want somewhere quieter.",
+    image: "https://images.unsplash.com/photo-1724062092148-011cb95bfbc7?w=600&h=400&fit=crop&auto=format",
+    heroImage: "https://images.unsplash.com/photo-1724062092148-011cb95bfbc7?w=900&h=600&fit=crop&auto=format",
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March",
+    duration: "1 day",
+    highlights: [
+      { name: "Serispore Tea Estate" },
+      { name: "Siddyashar Bari Sibmandir" },
+      { name: "Pach Pir Muka" },
+    ],
+    transport: [
+      { mode: "Road (from Silchar)", icon: "🚗", fromDelhi: "Via Silchar — regional connection", fromMumbai: "Via Silchar", fromBangalore: "Via Silchar", duration: "~1–1.5h from Silchar", costRange: "₹800–₹2,000 cab", tips: "Hailakandi is a straightforward add-on to a Silchar/Barak Valley trip, not a standalone gateway." },
+    ],
+    accommodation: [
+      { type: "Town Hotels", priceRange: "₹800–₹2,000/night (estimate)", examples: ["Simple hotels in town"], description: "A modest range — most visitors day-trip from Silchar rather than stay over." },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹30–₹150", notes: "Main way around town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Silchar", distance: "~50 km", type: "Barak Valley City", isHidden: false, id: "silchar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2200, accommodation: 1000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4500, accommodation: 2500, food: 800, transport: 500, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tea Gardens & Temples", morning: "Serispore Tea Estate — a quiet, working tea garden walk.", afternoon: "Siddyashar Bari Sibmandir temple.", evening: "Pach Pir Muka before heading back to Silchar.", stay: "Day trip from Silchar", meals: "Barak Valley-style Bengali-influenced Assamese food", tips: "A day is genuinely enough here, per Assam Tourism — don't over-plan Hailakandi as a multi-day base." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Small, quiet town with low crime", "Tea-estate areas are calm daytime spaces"],
+      precautions: ["Limited infrastructure outside the main town — plan day trips with a local driver", "Standard small-town precautions after dark"],
+      soloTips: ["Manageable as a day trip from Silchar", "Not really set up for a solo overnight stay — pair it with Silchar"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Main town centre", "Tea estate grounds"],
+      avoidAreas: ["Remote rural roads after dark"],
+    },
+    rating: 4.0,
+    reviews: 300,
+    mustEat: ["Barak Valley-style fish curry", "Local tea"],
+    packingTips: ["Light layers", "Comfortable walking shoes for tea-garden walks"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

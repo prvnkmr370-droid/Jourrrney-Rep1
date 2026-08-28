@@ -43,4 +43,6 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   tinsukia: { lat: 27.4922, lon: 95.3592 },
   bongaigaon: { lat: 26.4831, lon: 90.5544 },
   nagaon: { lat: 26.3467, lon: 92.6825 },
+  barpeta: { lat: 26.3231, lon: 91.0058 },
+  hailakandi: { lat: 24.6833, lon: 92.5667 },
 };
