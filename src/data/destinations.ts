@@ -583,6 +583,18 @@ export const DESTINATIONS: Destination[] = [
       { name: "Diglipur – Saddle Peak", distance: "290 km", type: "Turtle Beaches & Highest Peak", isHidden: true, id: "diglipur" },
       { name: "Little Andaman", distance: "120 km ferry", type: "Andaman's Only Surf Break", isHidden: true, id: "little-andaman" },
       { name: "Cinque Island", distance: "25 km", type: "Restricted Uninhabited Island", isHidden: true },
+      // Real single-site attractions from tourism.andamannicobar.gov.in
+      // that sit within/near Port Blair itself — not separate multi-day
+      // destinations, so kept here as text entries rather than given
+      // their own full pages, matching how Assam's minor sites were
+      // handled.
+      { name: "Chatham Island", distance: "Within Sri Vijaya Puram", type: "Heritage Site", isHidden: true },
+      { name: "Corbyn's Cove Beach", distance: "8 km", type: "Beach", isHidden: false },
+      { name: "North Bay Beach", distance: "Ferry from Port Blair", type: "Coral Reef Snorkelling", isHidden: false },
+      { name: "Chidiya Tapu", distance: "~25 km", type: "Sunset Point", isHidden: true },
+      { name: "Wandoor Beach", distance: "~30 km", type: "Beach", isHidden: true },
+      { name: "Samudrika Marine Museum", distance: "Within Sri Vijaya Puram", type: "Marine Life Museum", isHidden: true },
+      { name: "Anthropological Museum", distance: "Within Sri Vijaya Puram", type: "Tribal Culture Museum", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 1000, food: 600, transport: 400, activities: 200 },
