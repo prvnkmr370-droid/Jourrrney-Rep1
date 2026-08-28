@@ -45,4 +45,13 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   nagaon: { lat: 26.3467, lon: 92.6825 },
   barpeta: { lat: 26.3231, lon: 91.0058 },
   hailakandi: { lat: 24.6833, lon: 92.5667 },
+  manas: { lat: 26.6273, lon: 91.0169 },
+  sivasagar: { lat: 26.9855, lon: 94.6386 },
+  nameri: { lat: 26.9987, lon: 92.9376 },
+  digboi: { lat: 27.3844, lon: 95.6178 },
+  darrang: { lat: 26.4333, lon: 92.0333 },
+  umrangso: { lat: 25.4667, lon: 92.6167 },
+  garampani: { lat: 25.9833, lon: 93.6167 },
+  "dibru-saikhowa": { lat: 27.6167, lon: 95.3333 },
+  charaideo: { lat: 26.85, lon: 94.8167 },
 };
