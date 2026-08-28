@@ -62,7 +62,18 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
   );
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: c.bg }} showsVerticalScrollIndicator={false}>
+    // keyboardShouldPersistTaps="handled" is the actual fix for the
+    // autocomplete dropdown's suggestions not opening a page: this
+    // ScrollView's default ("never") dismisses the keyboard on a tap
+    // anywhere in its content *instead of* forwarding that tap to the
+    // touchable underneath — so the very first tap on a suggestion row in
+    // HeroCarousel's dropdown (rendered while the search TextInput still
+    // has focus) was only blurring the input, never reaching the
+    // Pressable's onPress. "handled" lets a touchable that handles the
+    // tap fire normally instead. Same prop already used by the Search
+    // tab's own suggestion list in SearchResults.tsx, which is why that
+    // one worked and this one didn't.
+    <ScrollView style={{ flex: 1, backgroundColor: c.bg }} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
       {/* The hero's own search bar (HeroCarousel) is the one and only
           search entry point on Home — deliberately not duplicated here. */}
       <HeroCarousel onDestinationSelect={goToDestination} />
