@@ -61,4 +61,7 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   "little-andaman": { lat: 10.6833, lon: 92.55 },
   orang: { lat: 26.5667, lon: 92.35 },
   burachapori: { lat: 26.7833, lon: 93.3 },
+  "long-island": { lat: 12.3695, lon: 92.9182 },
+  rangat: { lat: 12.4667, lon: 92.9333 },
+  "campbell-bay": { lat: 7.0, lon: 93.75 },
 };

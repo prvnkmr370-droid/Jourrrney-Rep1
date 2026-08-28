@@ -582,6 +582,8 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ross Island (Netaji Subhas Chandra Bose Island)", distance: "2 km ferry", type: "Heritage Ruins", isHidden: false },
       { name: "Diglipur – Saddle Peak", distance: "290 km", type: "Turtle Beaches & Highest Peak", isHidden: true, id: "diglipur" },
       { name: "Little Andaman", distance: "120 km ferry", type: "Andaman's Only Surf Break", isHidden: true, id: "little-andaman" },
+      { name: "Rangat", distance: "~170 km", type: "Turtle Nesting Gateway", isHidden: true, id: "rangat" },
+      { name: "Long Island", distance: "~170 km + boat", type: "Boat-Only Beach", isHidden: true, id: "long-island" },
       { name: "Cinque Island", distance: "25 km", type: "Restricted Uninhabited Island", isHidden: true },
       // Real single-site attractions from tourism.andamannicobar.gov.in
       // that sit within/near Port Blair itself — not separate multi-day
@@ -3416,6 +3418,182 @@ export const DESTINATIONS: Destination[] = [
     reviews: 250,
     mustEat: ["Assamese thali in Tezpur"],
     packingTips: ["Neutral/earth-tone clothing", "Binoculars — essential for the Bengal florican", "Mosquito repellent", "Light layers — 17–33°C range in dry season"],
+  },
+  // Long Island, Rangat, and Campbell Bay (Great Nicobar) below were the
+  // three Andaman & Nicobar destinations still without a verified real
+  // photo. Sourced via the official tourism.andamannicobar.gov.in site
+  // (its own islands page links out to Wikimedia for Long Island, though
+  // that specific hardcoded URL 404'd) plus direct Wikimedia Commons API
+  // searches — all three images below are real, GPS/caption-verified,
+  // CC BY-SA 4.0 photos of the actual place, not stand-ins.
+  {
+    id: "long-island",
+    hidden: true,
+    name: "Long Island",
+    state: "Andaman & Nicobar",
+    tagline: "The Boat-Only Beach Nobody Ferries Past",
+    description: "Long Island, off Middle Andaman, has no road access — the only way in is a scenic mangrove-creek boat ride from Rangat jetty. That single fact keeps it far quieter than Havelock or Neil: its reward is Lalaji Bay Beach, a soft white-sand bay reachable only by boat or a jungle trek from the island's one settlement.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Long_Island_%28Andamans%29_banner_jetty_sunrise.jpg/960px-Long_Island_%28Andamans%29_banner_jetty_sunrise.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Long_Island_%28Andamans%29_banner_jetty_sunrise.jpg/960px-Long_Island_%28Andamans%29_banner_jetty_sunrise.jpg",
+    imageCredit: "Photo: Emmanuel Campos / Wikimedia Commons, CC BY-SA 4.0",
+    category: ["Nature", "Beach"],
+    bestSeason: "November – April",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Lalaji Bay Beach" },
+      { name: "Mangrove-creek boat ride from Rangat" },
+      { name: "Long Island Beach" },
+    ],
+    transport: [
+      { mode: "Boat (from Rangat)", icon: "⛴️", fromDelhi: "Fly to Port Blair, road/ferry to Rangat, then boat", fromMumbai: "Fly to Port Blair, road/ferry to Rangat, then boat", fromBangalore: "Fly to Port Blair, road/ferry to Rangat, then boat", duration: "~1.5h boat from Rangat jetty, through mangrove creeks", costRange: "₹300–₹800 (shared boat)", tips: "Daily boats from Rangat jetty run at 7:00am and 2:00pm — there's no road, so this boat is the only way in. Book ahead on the DSS ferry portal." },
+    ],
+    accommodation: [
+      { type: "Guesthouses (Long Island settlement)", priceRange: "₹800–₹2,500/night (estimate)", examples: ["A handful of small guesthouses in the settlement"], description: "Very limited — most visitors come as a day trip from Rangat rather than staying overnight." },
+    ],
+    localTransport: [
+      { mode: "Boat (to Lalaji Bay)", cost: "₹500–₹1,500/boat", notes: "Or trek from the settlement when conditions allow", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rangat", distance: "~1.5h by boat", type: "Gateway Town", isHidden: false, id: "rangat" },
+      { name: "Port Blair (Andaman Islands)", distance: "~170 km via Rangat", type: "Main Gateway", isHidden: false, id: "andaman" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 1000, accommodation: 0, food: 250, transport: 500, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1000, food: 500, transport: 800, activities: 200 },
+      { tier: "luxury", label: "Private Boat + Guide", perDayPerPerson: 5000, accommodation: 2000, food: 800, transport: 1500, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rangat to Long Island", morning: "Early boat from Rangat jetty (7:00am departure) through mangrove creeks.", afternoon: "Reach Long Island settlement, then boat or trek to Lalaji Bay Beach.", evening: "Relax on Lalaji Bay's quiet, near-empty sand.", stay: "Guesthouse in Long Island settlement, or day-trip back to Rangat", meals: "Simple local seafood in the settlement", tips: "Confirm the return boat time before you go — there's no road out, and missing it means an unplanned overnight." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Tiny, close-knit settlement with very low crime", "No road access keeps foot traffic naturally low"],
+      precautions: ["Very limited medical facilities — nearest hospital is in Rangat, over an hour away by boat", "Confirm boat timings both ways before setting out"],
+      soloTips: ["Manageable solo — the settlement is small and everyone notices new arrivals", "Let your guesthouse or boat operator know your day plan"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Coast Guard", number: "1554" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Long Island settlement", "Lalaji Bay Beach"],
+      avoidAreas: ["Unplanned trekking after dark — no road/vehicle backup"],
+    },
+    rating: 4.5,
+    reviews: 180,
+    mustEat: ["Fresh local seafood in the settlement"],
+    packingTips: ["Cash — no ATMs on the island", "Reef-safe sunscreen", "Water and snacks — very limited shops", "Sturdy sandals for the boat-to-beach walk/trek"],
+  },
+  {
+    id: "rangat",
+    hidden: true,
+    name: "Rangat",
+    state: "Andaman & Nicobar",
+    tagline: "Middle Andaman's Turtle-Nesting Gateway",
+    description: "Rangat, roughly 170 km north of Port Blair on Middle Andaman, is best known as the jetty town for boats to Long Island — but it has its own draw in Cuthbert Bay Wildlife Sanctuary, a protected nesting beach where Olive Ridley, Green, and Hawksbill turtles come ashore between December and March.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_at_Rangat_Bay_Andaman.jpg/1280px-Sunset_at_Rangat_Bay_Andaman.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_at_Rangat_Bay_Andaman.jpg/1280px-Sunset_at_Rangat_Bay_Andaman.jpg",
+    imageCredit: "Photo: Pralav2016 / Wikimedia Commons, CC BY-SA 4.0",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "December – March (turtle nesting season)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Cuthbert Bay Wildlife Sanctuary (turtle nesting)" },
+      { name: "Rangat jetty — gateway to Long Island" },
+      { name: "Amkunj Beach" },
+    ],
+    transport: [
+      { mode: "Road (from Port Blair)", icon: "🚗", fromDelhi: "Fly to Port Blair, then road — ~170 km", fromMumbai: "Fly to Port Blair, then road", fromBangalore: "Fly to Port Blair, then road", duration: "7–8h via the Andaman Trunk Road", costRange: "₹2,500–₹5,000 (shared/private car)", tips: "Crosses Baratang along the way — a natural stop if you're combining the two." },
+      { mode: "Ferry (from Port Blair)", icon: "⛴️", fromDelhi: "Fly to Port Blair, then ferry", fromMumbai: "Fly to Port Blair, then ferry", fromBangalore: "Fly to Port Blair, then ferry", duration: "6–8h", costRange: "₹500–₹1,500", tips: "A calmer alternative to the long road trip." },
+    ],
+    accommodation: [
+      { type: "Guesthouses & Budget Hotels", priceRange: "₹800–₹2,500/night (estimate)", examples: ["Small hotels and guesthouses in Rangat town"], description: "Modest, functional options — most visitors use Rangat as a short stopover for Long Island or Cuthbert Bay." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw / Taxi", cost: "₹300–₹800/trip", notes: "For Cuthbert Bay, ~12 km from Rangat town toward Mayabunder", available: true },
+      { mode: "Boat (to Long Island)", cost: "₹300–₹800", notes: "From Rangat jetty, 7:00am & 2:00pm daily", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Long Island", distance: "~1.5h by boat", type: "Boat-Only Beach", isHidden: false, id: "long-island" },
+      { name: "Baratang Island", distance: "~100 km", type: "Mud Volcano & Limestone Caves", isHidden: false, id: "baratang" },
+      { name: "Port Blair (Andaman Islands)", distance: "~170 km", type: "Main Gateway", isHidden: false, id: "andaman" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 350, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 6000, accommodation: 3000, food: 1000, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Cuthbert Bay Turtle Nesting", morning: "Arrive Rangat, settle in.", afternoon: "Auto/taxi to Cuthbert Bay Wildlife Sanctuary, ~12 km toward Mayabunder.", evening: "Guided night walk with Forest Department rangers during nesting season (Dec–Mar) to watch turtles come ashore.", stay: "Rangat guesthouse/hotel", meals: "Local Andamanese seafood in Rangat town", tips: "The night walk is Forest-Department-regulated — arrange it through them rather than informally, and don't use flash photography near nesting turtles." },
+      { day: 2, title: "Onward to Long Island", morning: "Early boat from Rangat jetty (7:00am) to Long Island.", afternoon: "Day trip to Lalaji Bay Beach.", evening: "Return boat to Rangat, or continue north/south.", stay: "Depart or Long Island guesthouse", meals: "Packed lunch on the boat trip", tips: "Book the Long Island boat in advance via the DSS ferry portal — seats are limited." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Small, quiet town with low crime", "Forest Department presence around Cuthbert Bay"],
+      precautions: ["Limited medical facilities — larger hospitals are in Port Blair", "Stick to guided night walks at Cuthbert Bay rather than going alone"],
+      soloTips: ["Manageable solo — Rangat is a functional, low-hassle stopover town", "Arrange the turtle night walk through the Forest Department for a built-in group"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Coast Guard", number: "1554" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Rangat town", "Cuthbert Bay guided walk area"],
+      avoidAreas: ["Unguided beach walks at night during nesting season"],
+    },
+    rating: 4.2,
+    reviews: 220,
+    mustEat: ["Local Andamanese seafood in Rangat town"],
+    packingTips: ["Torch (red-filtered, if possible, for turtle-watching)", "Cash — limited card acceptance", "Mosquito repellent", "Comfortable walking shoes for Cuthbert Bay"],
+  },
+  {
+    id: "campbell-bay",
+    hidden: true,
+    name: "Campbell Bay (Great Nicobar)",
+    state: "Andaman & Nicobar",
+    tagline: "India's Southernmost Frontier, Permit-Only",
+    description: "Campbell Bay, on Great Nicobar Island, is about as remote as Indian tourism gets — a 31–36 hour ferry south of Port Blair, and the one Nicobar settlement foreign nationals may visit at all (with prior Ministry of Home Affairs clearance; Indian nationals need a Restricted Area Permit). The reward is Campbell Bay National Park and Great Nicobar Biosphere Reserve, rainforest running down to the sea with wildlife found nowhere else — the Nicobar treeshrew, the Great Nicobar serpent eagle.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Rain_over_Great_Nicobar_Biosphere_Reserve.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/66/Rain_over_Great_Nicobar_Biosphere_Reserve.jpg",
+    imageCredit: "Photo: Pro dna / Wikimedia Commons, CC BY-SA 4.0",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "December – March (calmest seas; access can be restricted June–September)",
+    duration: "4–5 days (given the ferry time alone)",
+    highlights: [
+      { name: "Campbell Bay National Park & Great Nicobar Biosphere Reserve" },
+      { name: "Endemic wildlife — Nicobar treeshrew, Great Nicobar serpent eagle" },
+      { name: "India's southernmost point (Indira Point)" },
+    ],
+    transport: [
+      { mode: "Ferry (from Port Blair)", icon: "⛴️", fromDelhi: "Fly to Port Blair, then ferry — 31–36h", fromMumbai: "Fly to Port Blair, then ferry", fromBangalore: "Fly to Port Blair, then ferry", duration: "31–36h", costRange: "₹2,500–₹6,000", tips: "Book well ahead — schedules are infrequent and seats fill fast. A Restricted Area Permit (Indian nationals) or Ministry of Home Affairs clearance (foreign nationals) is required before travel." },
+      { mode: "Helicopter (Pawan Hans, seasonal)", icon: "🚁", fromDelhi: "Fly to Port Blair, then helicopter where available", fromMumbai: "Fly to Port Blair, then helicopter", fromBangalore: "Fly to Port Blair, then helicopter", duration: "A few hours, weather permitting", costRange: "Higher than ferry; check current Pawan Hans schedules", tips: "Not always running — treat as a possible option rather than a guarantee." },
+    ],
+    accommodation: [
+      { type: "Govt. Guesthouses & Lodges", priceRange: "₹800–₹2,500/night (estimate)", examples: ["Limited government-run guesthouses in Campbell Bay town"], description: "Infrastructure is genuinely minimal — this is not a resort destination." },
+    ],
+    localTransport: [
+      { mode: "Hired Car / Taxi", cost: "₹1,500–₹3,000/day (estimate)", notes: "For the national park and biosphere reserve viewpoints", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Port Blair (Andaman Islands)", distance: "31–36h by ferry", type: "Main Gateway", isHidden: false, id: "andaman" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1800, food: 700, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Private Guide + Car", perDayPerPerson: 7000, accommodation: 3500, food: 1200, transport: 1000, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ferry to Campbell Bay", morning: "Depart Port Blair on the long-haul ferry.", afternoon: "At sea.", evening: "At sea — bring your own entertainment and supplies.", stay: "Ferry cabin/deck", meals: "Bring supplies; onboard options are basic", tips: "Confirm your Restricted Area Permit is in order well before departure — this is checked at boarding." },
+      { day: 2, title: "Arrival & Settling In", morning: "Arrive Campbell Bay, check in.", afternoon: "Orient yourself in the small town.", evening: "Rest after the long crossing.", stay: "Govt. guesthouse in Campbell Bay", meals: "Local meal in town", tips: "Infrastructure is minimal — arrange your park visit and any guide in advance through the Forest Department." },
+      { day: 3, title: "Campbell Bay National Park & Biosphere Reserve", morning: "Guided visit into the national park/biosphere reserve — rainforest running to the sea, with a real chance of the endemic Nicobar treeshrew or Great Nicobar serpent eagle.", afternoon: "Continue exploring with your guide.", evening: "Return to Campbell Bay town.", stay: "Same", meals: "Local meal", tips: "Access requires a Forest Department permit — arrange this through your guesthouse or local contact ahead of time, not on arrival." },
+      { day: 4, title: "Return Ferry", morning: "Depart Campbell Bay on the return ferry.", afternoon: "At sea.", evening: "At sea.", stay: "Ferry cabin/deck", meals: "Bring supplies", tips: "Double-check the return schedule as soon as you arrive — sailings are infrequent." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Small, tightly-knit settlement with a naval/coast guard presence", "Permit system naturally limits who's on the island"],
+      precautions: ["Extremely limited medical facilities — evacuation to Port Blair takes over a day by ferry", "Do not attempt the national park or biosphere reserve without a permit and guide"],
+      soloTips: ["Solo travel here should be treated as expedition-level planning, not a casual trip", "Coordinate closely with your guesthouse for local guidance and permits"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Coast Guard", number: "1554" }, { label: "Emergency", number: "112" }],
+      safeZones: ["Campbell Bay town", "Guided national park routes"],
+      avoidAreas: ["Any Nicobari tribal reserve area without a Tribal Pass — not available to general tourists", "Unguided forest areas"],
+    },
+    rating: 4.4,
+    reviews: 60,
+    mustEat: ["Local Nicobarese/Andamanese meals in Campbell Bay town"],
+    packingTips: ["All required permits, printed and digital copies", "Cash — no reliable card infrastructure", "Basic first-aid and any personal medication — facilities are minimal", "Entertainment/supplies for the 31–36h ferry crossing"],
   },
 ];
 
