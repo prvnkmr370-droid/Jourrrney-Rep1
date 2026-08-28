@@ -64,4 +64,9 @@ export const DESTINATION_COORDS: Record<string, { lat: number; lon: number }> = 
   "long-island": { lat: 12.3695, lon: 92.9182 },
   rangat: { lat: 12.4667, lon: 92.9333 },
   "campbell-bay": { lat: 7.0, lon: 93.75 },
+  araku: { lat: 18.3273, lon: 82.8785 },
+  vijayawada: { lat: 16.5062, lon: 80.648 },
+  srisailam: { lat: 16.0739, lon: 78.8677 },
+  lambasingi: { lat: 17.9971, lon: 82.5111 },
+  konaseema: { lat: 16.5788, lon: 82.0067 }, // Amalapuram (delta's main town)
 };
