@@ -7,6 +7,7 @@ import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
+import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
 import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
 
 interface Props {
@@ -21,6 +22,15 @@ export default function ArriveSection({ destination: d, guide }: Props) {
   const [sourceCity, setSourceCity] = useState(originCity);
   const [selectedTransport, setSelectedTransport] = useState(0);
   const { locating, detect } = useDetectLocation();
+  const [searchFocused, setSearchFocused] = useState(false);
+  const { suggestions } = useCitySearch(sourceCity);
+  const showSuggestions = searchFocused && suggestions.length > 0;
+
+  const pickSuggestion = (label: string) => {
+    setSourceCity(label);
+    setOriginCity(label);
+    setSearchFocused(false);
+  };
 
   // Waypoints between the origin and this destination — kept local to the
   // screen for now (not a shared store) since it's scoped to planning
@@ -53,11 +63,13 @@ export default function ArriveSection({ destination: d, guide }: Props) {
         <View style={{ padding: 16, backgroundColor: rgba(c.primary, 0.06) }}>
           <SectionLabel color={c.primary}>Plan Your Route</SectionLabel>
 
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 10 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: showSuggestions ? 0 : 10 }}>
             <TextInput
               value={sourceCity}
               onChangeText={setSourceCity}
-              placeholder="Enter your city or starting point"
+              onFocus={() => setSearchFocused(true)}
+              onBlur={() => setSearchFocused(false)}
+              placeholder="Search any city — e.g. Hyderabad"
               placeholderTextColor={c.textMuted}
               style={{
                 flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
@@ -72,6 +84,34 @@ export default function ArriveSection({ destination: d, guide }: Props) {
               {locating ? <ActivityIndicator color={c.primary} size="small" /> : <Navigation color={c.primary} size={16} />}
             </Pressable>
           </View>
+
+          {/* Live search results — tapping one sets both the visible field
+              and the shared origin city, same as detecting location does. */}
+          {showSuggestions && (
+            <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, marginBottom: 10, overflow: "hidden" }}>
+              {suggestions.map((s, i) => {
+                const label = formatCitySuggestion(s);
+                return (
+                  <Pressable
+                    key={s.id}
+                    // onPressIn fires before the TextInput's onBlur closes
+                    // this list — onPress alone would never get a chance to
+                    // fire, since the field loses focus (and hides this
+                    // list) first.
+                    onPressIn={() => pickSuggestion(label)}
+                    style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+                  >
+                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{s.name}</Text>
+                    {(s.admin1 || s.country) && (
+                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
+                        {[s.admin1, s.country].filter(Boolean).join(", ")}
+                      </Text>
+                    )}
+                  </Pressable>
+                );
+              })}
+            </View>
+          )}
 
           {/* Waypoints — additional places to visit along the way */}
           {stops.length > 0 && (

@@ -7,6 +7,7 @@ import { useOriginStore } from "@/store/useOriginStore";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
+import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
 
 const RECENT = ["Bengaluru, Karnataka", "Chennai, Tamil Nadu"];
 
@@ -22,6 +23,9 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
   const [value, setValue] = useState(originCity);
   const { locating, detect } = useDetectLocation();
+  const [searchFocused, setSearchFocused] = useState(false);
+  const { suggestions } = useCitySearch(value);
+  const showSuggestions = searchFocused && suggestions.length > 0;
 
   const detectLocation = async () => {
     const city = await detect();
@@ -49,14 +53,16 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
       <View
         style={{
           flexDirection: "row", alignItems: "center", gap: 10, height: 52, borderRadius: 16, paddingHorizontal: 16,
-          borderWidth: 1.5, borderColor: c.primary, backgroundColor: c.surface, marginBottom: 24,
+          borderWidth: 1.5, borderColor: c.primary, backgroundColor: c.surface, marginBottom: showSuggestions ? 0 : 24,
         }}
       >
         <MapPin color={c.primary} size={16} />
         <TextInput
           value={value}
           onChangeText={setValue}
-          placeholder="Enter your city"
+          onFocus={() => setSearchFocused(true)}
+          onBlur={() => setSearchFocused(false)}
+          placeholder="Search any city — e.g. Hyderabad"
           placeholderTextColor={c.textMuted}
           style={{ flex: 1, fontFamily: "Poppins_500Medium", fontSize: 14, color: c.textPrimary }}
         />
@@ -68,6 +74,33 @@ export default function OriginPrompt({ destinationName, onContinue }: Props) {
           {locating ? <ActivityIndicator size="small" color={c.primary} /> : <Navigation color={c.primary} size={14} />}
         </Pressable>
       </View>
+
+      {showSuggestions && (
+        <View style={{ backgroundColor: c.surface, borderRadius: 14, borderWidth: 1, borderColor: c.border, marginBottom: 24, overflow: "hidden" }}>
+          {suggestions.map((s, i) => {
+            const label = formatCitySuggestion(s);
+            return (
+              <Pressable
+                key={s.id}
+                // onPressIn, not onPress — the TextInput's onBlur hides this
+                // list before a plain onPress would ever get to fire.
+                onPressIn={() => {
+                  setValue(label);
+                  setSearchFocused(false);
+                }}
+                style={{ paddingHorizontal: 14, paddingVertical: 12, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+              >
+                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{s.name}</Text>
+                {(s.admin1 || s.country) && (
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
+                    {[s.admin1, s.country].filter(Boolean).join(", ")}
+                  </Text>
+                )}
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
 
       <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, letterSpacing: 1, color: c.textSecondary, marginBottom: 12 }}>RECENT</Text>
       <View style={{ gap: 10, marginBottom: 32 }}>
