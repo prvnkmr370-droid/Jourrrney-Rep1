@@ -35,29 +35,40 @@ function wordsOf(text: string): string[] {
     .filter(Boolean);
 }
 
+// Damerau-Levenshtein (optimal string alignment variant): edit distance
+// counting insert/delete/substitute as 1 each, *and* an adjacent-letter
+// transposition ("Agra" -> "Agar", "Goa" -> "Gao") as 1 rather than the
+// 2 a plain Levenshtein charges for it — fat-finger swaps like that are
+// one of the single most common typo patterns, and they're common on
+// exactly the short place names (3-5 letters) where a 2-edit budget
+// would otherwise be too loose to allow safely.
 function levenshtein(a: string, b: string): number {
   const m = a.length;
   const n = b.length;
   if (m === 0) return n;
   if (n === 0) return m;
-  const dp: number[] = Array.from({ length: n + 1 }, (_, j) => j);
+  const dp: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
   for (let i = 1; i <= m; i++) {
-    let prevDiag = dp[0];
-    dp[0] = i;
     for (let j = 1; j <= n; j++) {
-      const temp = dp[j];
-      dp[j] = a[i - 1] === b[j - 1] ? prevDiag : 1 + Math.min(prevDiag, dp[j], dp[j - 1]);
-      prevDiag = temp;
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        dp[i][j] = Math.min(dp[i][j], dp[i - 2][j - 2] + 1);
+      }
     }
   }
-  return dp[n];
+  return dp[m][n];
 }
 
-// How many typo'd characters to tolerate, scaled to word length. Short
-// words stay exact-prefix-only (0) so single/double letters don't fuzzy-
-// match half the dataset.
+// How many typo'd characters to tolerate, scaled to word length. Very
+// short words (<=2 letters) stay exact-prefix-only so single/double
+// letters don't fuzzy-match half the dataset; from 3 letters up, a
+// single edit (including a transposition) is allowed, growing with
+// length.
 function fuzzyThreshold(len: number): number {
-  if (len <= 3) return 0;
+  if (len <= 2) return 0;
   if (len <= 4) return 1;
   if (len <= 6) return 2;
   if (len <= 9) return 3;
