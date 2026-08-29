@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["baratang"] = {
+  police: {
+    summary: "Baratang Police Station: 03192-279503",
+    details: [
+      "Baratang Police Station — Baratang Island, North & Middle Andaman: 03192-279503, confirmed directly on spnma.and.nic.in, North & Middle Andaman Police's own official site.",
+      "The Andaman Trunk Road route to/via Baratang passes through Jarawa tribal reserve territory — the same official conduct rules apply here as noted for Diglipur (no giving food/items, no allowing them into vehicles).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from spnma.and.nic.in's own official police-station page for Baratang.",
+  },
+  medical: {
+    summary: "Primary Health Centre, Baratang Island — the island's own facility",
+    details: [
+      "Primary Health Centre, Baratang Island — C/O Primary Health Centre, Port Blair 744210: 03192 279533, confirmed via a mapped listing.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
+
 SAFETY_OVERRIDES["diglipur"] = {
   police: {
     summary: "Police Station Diglipur (24hr): 03192 272 223 — one of 3 stations in the Diglipur Sub-Division",
