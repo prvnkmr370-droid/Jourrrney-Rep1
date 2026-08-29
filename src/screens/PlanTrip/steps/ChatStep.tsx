@@ -25,7 +25,7 @@
  *     one of this app's real destinations, never invent one.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
+import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, Alert, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, Easing } from "react-native-reanimated";
@@ -381,45 +381,39 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
   };
 
-  // "Show Tia a photo" — only offered during the destination question
-  // (see the camera button's conditional render below), same Gemini
-  // vision call as the fuzzy-text fallback, just fed an image instead of
-  // (or alongside) a caption. Compressed client-side (quality: 0.5) to
-  // stay comfortably under the backend's body-size limit.
-  const pickImage = async () => {
-    if (sending) return;
-
-    let ImagePicker: typeof ImagePickerType;
+  // Loads expo-image-picker lazily (see the top-of-file comment on the
+  // type-only import) and normalizes the module shape it comes back as.
+  // Metro's dynamic import() of a CJS module is inconsistent about
+  // whether the real exports land on the namespace object directly or
+  // under `.default` — this was the actual cause of "the camera icon
+  // does nothing": the import succeeded, but
+  // `ImagePicker.requestMediaLibraryPermissionsAsync` was undefined
+  // because the functions were actually one level deeper, and calling
+  // undefined as a function threw an unhandled promise rejection with no
+  // visible feedback at all.
+  async function loadImagePicker(): Promise<typeof ImagePickerType | null> {
     try {
-      ImagePicker = await import("expo-image-picker");
+      const mod = await import("expo-image-picker");
+      const resolved = (mod as unknown as { default?: typeof ImagePickerType }).default ?? mod;
+      return typeof resolved.launchCameraAsync === "function" ? resolved : null;
     } catch {
-      // Native module genuinely unavailable in this client (e.g. plain
-      // Expo Go without it bundled) — degrade to just this one feature
-      // rather than ever letting it take the screen down.
-      pushAi("Photo suggestions aren't available in this app build right now — just tell me a place instead!");
-      scrollToEnd();
-      return;
+      return null;
     }
+  }
 
-    const perm = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!perm.granted) {
-      pushAi("I'd need permission to access your photos to try that — you can enable it in your device settings, or just tell me a place instead.");
-      scrollToEnd();
-      return;
-    }
-
-    const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], base64: true, quality: 0.5 });
-    const asset = result.assets?.[0];
-    const base64 = asset?.base64;
-    if (result.canceled || !asset || !base64) return;
-
+  // Shared by both "Take Photo" and "Choose from Library" below — once an
+  // asset is picked, the rest (thinking indicator, Gemini vision call,
+  // destination-found/not-found handling) is identical regardless of
+  // where the photo came from.
+  const processPickedAsset = async (asset: { uri: string; base64?: string | null; mimeType?: string }) => {
+    if (!asset.base64) return;
     pushUser("📷 Photo", asset.uri);
     setSending(true);
     setMessages((prev) => [...prev, { id: THINKING_ID, sender: "ai", text: "Let me take a look… 🧭" }]);
     scrollToEnd();
 
-    const mimeType: string = asset.mimeType && asset.mimeType.startsWith("image/") ? asset.mimeType : "image/jpeg";
-    const intent = await tryParseTripIntent("", { base64, mimeType });
+    const mimeType = asset.mimeType && asset.mimeType.startsWith("image/") ? asset.mimeType : "image/jpeg";
+    const intent = await tryParseTripIntent("", { base64: asset.base64, mimeType });
     removeMessage(THINKING_ID);
     setSending(false);
 
@@ -440,6 +434,65 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
     );
     scrollToEnd();
+  };
+
+  const takePhoto = async () => {
+    const ImagePicker = await loadImagePicker();
+    if (!ImagePicker) {
+      pushAi("Photo suggestions aren't available in this app build right now — just tell me a place instead!");
+      scrollToEnd();
+      return;
+    }
+    try {
+      const perm = await ImagePicker.requestCameraPermissionsAsync();
+      if (!perm.granted) {
+        pushAi("I'd need camera permission to try that — you can enable it in your device settings, or just tell me a place instead.");
+        scrollToEnd();
+        return;
+      }
+      const result = await ImagePicker.launchCameraAsync({ base64: true, quality: 0.5 });
+      if (!result.canceled && result.assets?.[0]) await processPickedAsset(result.assets[0]);
+    } catch {
+      pushAi("Couldn't open the camera just now — try again, or just tell me a place instead.");
+      scrollToEnd();
+    }
+  };
+
+  const chooseFromLibrary = async () => {
+    const ImagePicker = await loadImagePicker();
+    if (!ImagePicker) {
+      pushAi("Photo suggestions aren't available in this app build right now — just tell me a place instead!");
+      scrollToEnd();
+      return;
+    }
+    try {
+      const perm = await ImagePicker.requestMediaLibraryPermissionsAsync();
+      if (!perm.granted) {
+        pushAi("I'd need permission to access your photos to try that — you can enable it in your device settings, or just tell me a place instead.");
+        scrollToEnd();
+        return;
+      }
+      const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], base64: true, quality: 0.5 });
+      if (!result.canceled && result.assets?.[0]) await processPickedAsset(result.assets[0]);
+    } catch {
+      pushAi("Couldn't open your photos just now — try again, or just tell me a place instead.");
+      scrollToEnd();
+    }
+  };
+
+  // "Show Tia a photo" — only offered during the destination question
+  // (see the camera button's conditional render below). Offers both a
+  // live camera shot and picking an existing photo — the button's own
+  // Camera icon previously only ever opened the library, which is why
+  // tapping it looked like "the camera doesn't open" even when photo
+  // picking itself was working.
+  const pickImage = () => {
+    if (sending) return;
+    Alert.alert("Add a Photo", "Where would you like the photo from?", [
+      { text: "Take Photo", onPress: takePhoto },
+      { text: "Choose from Library", onPress: chooseFromLibrary },
+      { text: "Cancel", style: "cancel" },
+    ]);
   };
 
   const showChips = useMemo(() => messages[messages.length - 1]?.sender === "ai" && !!messages[messages.length - 1]?.chips, [messages]);
