@@ -1659,3 +1659,23 @@ SAFETY_OVERRIDES["sivasagar"] = {
     sourceNote: "Sivasagar Civil Hospital confirmed via a mapped listing; SSMH confirmed via its own official site.",
   },
 };
+
+SAFETY_OVERRIDES["charaideo"] = {
+  police: {
+    summary: "Charaideo District Police Control: 6026900292",
+    details: [
+      "Police Control, Charaideo district: 6026900292, confirmed directly on charaideo.assam.gov.in's own official Helpline Numbers page.",
+      "SDRF, Sivasagar (nearby, covers the wider region): 8486280037.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from charaideo.assam.gov.in's own official Helpline Numbers page — Charaideo is a genuinely separate district (split from Sivasagar) with its own official government site.",
+  },
+  medical: {
+    summary: "Sonari Civil Hospital (government, district headquarters town, 24hr)",
+    details: [
+      "Sonari Civil Hospital — SH1, Sonari, Charaideo district, open 24 hours — the district's main government hospital, confirmed via a mapped listing.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
