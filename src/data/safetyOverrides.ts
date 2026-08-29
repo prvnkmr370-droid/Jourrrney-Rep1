@@ -1618,6 +1618,25 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["garampani"] = {
+  police: {
+    summary: "Bokakhat Police Station, Assam Trunk Road — the nearest real station, genuinely close to Silonijan/Garampani",
+    details: [
+      "Bokakhat Police Station — Assam Trunk Road, Bokakhat, Golaghat 785612, open 24 hours: +91 3776 268 017, confirmed via a mapped listing — genuinely the nearest station to the sanctuary at Silonijan.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Swahid Kamala Miri Sub Divisional Civil Hospital, Bokakhat — same nearest hospital as Kaziranga",
+    details: [
+      "Swahid Kamala Miri Sub Divisional Civil Hospital — NH715, Bokakhat, open 24 hours — the nearest real hospital, cross-referenced from the already-verified Kaziranga entry, since Garampani sits in the same Bokakhat/Golaghat area.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Kaziranga entry — both destinations share the Bokakhat area as their nearest real town.",
+  },
+};
+
 SAFETY_OVERRIDES["umrangso"] = {
   police: {
     summary: "Daiyangmukh Police Station, NH627, Umrangso — same Dima Hasao district as Haflong",
