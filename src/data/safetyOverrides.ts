@@ -167,3 +167,48 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
     },
   },
 };
+
+/**
+ * The Chandigarh cluster (Rock Garden, Sukhna Lake, Capitol Complex,
+ * Bird Park, plus the city card itself) shares the same city-level
+ * police/tourism-helpline data, so this block is spread across all
+ * five ids below rather than repeated by hand five times.
+ */
+const CHANDIGARH_POLICE: SafetyOverride = {
+  summary: "Chandigarh Police Emergency: 112 · Tourist Helpline (24hr): 1800-180-2116",
+  details: [
+    "Chandigarh Tourism's own 24-hour Tourist Helpline: 1800-180-2116",
+    "Chandigarh Police Emergency (crime-related): 112, 0172-2749194, 0172-2744100",
+    "Crime Against Women & Children: 112, 1091",
+    "Senior Citizens Complaint: 112, 1090",
+    "Traffic Emergency: 1073",
+    "Cyber Crime: 1930",
+    "Physical Tourist Information Centres exist right at Sukhna Lake (Sukhna Lake Information Center, Sector 1) and at Capitol Complex (Sector 1) — genuine, staffed counters at the attraction itself, not just a phone line.",
+  ],
+  sourceNote: "Police numbers taken directly from Chandigarh Police's own official portal (portal.chandigarhpolice.gov.in); the tourist helpline and information-centre locations from Chandigarh Tourism's own official site (chandigarhtourism.gov.in).",
+};
+
+const CHANDIGARH_ACCESSIBILITY_ROCK_GARDEN: SafetyOverride = {
+  summary: "Not wheelchair accessible — uneven, narrow paths through 14 chambers, genuine fall risk",
+  details: [
+    "Independent visitor reports (TripAdvisor) are explicit and consistent: the Rock Garden is not wheelchair accessible — narrow, uneven paths through its 14 chambers create genuine fall/injury risk, not just discomfort.",
+    "This is a real limitation of the site's own design (built from waste materials in irregular, sculptural forms), not a lack of investment — unlikely to change.",
+    "If accessibility is essential, Sukhna Lake's promenade (flat, paved) is a far more manageable nearby alternative in the same part of Chandigarh.",
+  ],
+  sourceNote: "Based on consistent independent visitor reporting (TripAdvisor), not an official accessibility statement — but specific and consistent enough to trust as a real limitation.",
+};
+
+const CHANDIGARH_ACCESSIBILITY_GENERAL: SafetyOverride = {
+  details: [
+    "No official accessibility statement was found for this specific attraction — Chandigarh's broader city planning (wide roads, sector grid) is generally easier terrain than most Indian cities, but check with the specific site's information centre on arrival for ramp/wheelchair specifics.",
+  ],
+  sourceNote: "General guidance — no official accessibility statement found for this specific site despite checking chandigarhtourism.gov.in directly.",
+};
+
+for (const id of ["chandigarh", "rock-garden", "sukhna-lake", "capitol-complex", "chandigarh-bird-park"]) {
+  SAFETY_OVERRIDES[id] = {
+    ...SAFETY_OVERRIDES[id],
+    police: CHANDIGARH_POLICE,
+    accessibility: id === "rock-garden" ? CHANDIGARH_ACCESSIBILITY_ROCK_GARDEN : CHANDIGARH_ACCESSIBILITY_GENERAL,
+  };
+}
