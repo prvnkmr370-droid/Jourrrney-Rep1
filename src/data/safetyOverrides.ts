@@ -1556,3 +1556,23 @@ SAFETY_OVERRIDES["bongaigaon"] = {
     sourceNote: "Confirmed via a mapped business listing describing its real bed count and equipment.",
   },
 };
+
+SAFETY_OVERRIDES["nagaon"] = {
+  police: {
+    summary: "SP Office, Nagaon: 03672-235624",
+    details: [
+      "Superintendent of Police, Nagaon: 03672-235624 / 03672-237939, confirmed directly on nagaon.assam.gov.in's own official Contact Us page.",
+      "District Commissioner's Office (Residence Fax): 03672-233222.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from nagaon.assam.gov.in's own official District Contact Us page.",
+  },
+  medical: {
+    summary: "Nagaon Medical College & Hospital (NAMC, government, est. 2023) — the district's newest major hospital",
+    details: [
+      "Nagaon Medical College & Hospital — Laukhowa Road, Diphalu, Mohkhuli, Nagaon — established 2023, confirmed via its own official government site (nagaonmch.assam.gov.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly via NAMC's own official government site.",
+  },
+};
