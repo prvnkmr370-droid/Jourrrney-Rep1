@@ -750,3 +750,26 @@ SAFETY_OVERRIDES["ayodhya"] = {
     sourceNote: "All three hospitals taken directly from ayodhya.nic.in's own official Hospitals directory page; District Hospital's exact address/number cross-confirmed via a mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["prayagraj"] = {
+  police: {
+    summary: "Sangam Police Chowki, Daraganj (right at the confluence) · Commissioner of Police: 9454400248",
+    details: [
+      "Sangam Police Chowki, Daraganj — Bade Hanuman, Janpad, Daraganj, Prayagraj 211006 — a named police post right at the Sangam (the river confluence itself, this destination's main attraction), confirmed via a mapped business listing.",
+      "Commissioner of Police, Prayagraj: 9454400248, 0532-2641902",
+      "Deputy Commissioner of Police (City): 9454401014",
+      "Additional DCP (Traffic and UP112): 9454401201 — genuinely relevant given Prayagraj's huge Kumbh Mela crowd-management history.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Sangam Police Chowki confirmed via a mapped business listing; the Commissionerate's own numbers taken directly from prayagraj.nic.in's official District Administration Police directory.",
+  },
+  medical: {
+    summary: "SRN Hospital (MLN Medical College, government) · Moti Lal Nehru Divisional Hospital \"Colvin\" (government) — two real options",
+    details: [
+      "S.R.N. Hospital, Moti Lal Nehru Medical College — Shaheed Roushan Shing Marg, Allahabad: 0532 225 6507, also known as Swaroop Rani Nehru Hospital (Mahatma Gandhi Marg, Civil Lines).",
+      "Moti Lal Nehru Divisional Hospital \"Colvin\" — 14, K.N. Katju Road, Nakhas Kohna, Prayagraj 211003: 0532-2240845.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals confirmed via mapped listings and, for SRN, its own medical-college domain (mlnmc.edu.in); Colvin Hospital via its own official site (mlndh.com).",
+  },
+};
