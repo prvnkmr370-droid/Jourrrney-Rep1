@@ -921,3 +921,25 @@ SAFETY_OVERRIDES["lambasingi"] = {
     sourceNote: "CHC Chintapalli confirmed directly on allurisitharamaraju.ap.gov.in's own official Health department page (the same source used for the Araku entry).",
   },
 };
+
+SAFETY_OVERRIDES["konaseema"] = {
+  police: {
+    summary: "Amalapuram Police Station, Billa Vari Street · CI Amalapuram Rural: 08856231802 · District SP Office",
+    details: [
+      "Amalapuram Police Station — Billa Vari Street, Amalapuram — the town-centre station for the district headquarters town.",
+      "CI Amalapuram Rural: 08856231802.",
+      "Dr. B. R. Ambedkar Konaseema District SP Office — Old Montessori Educational Society Building, S.S. Road, Amalapuram: 9154965855, named directly on konaseema.ap.gov.in's own official site.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "SP Office confirmed directly on konaseema.ap.gov.in (the district's own official government site); station details cross-confirmed via search results referencing the same district and a mapped listing.",
+  },
+  medical: {
+    summary: "Konaseema Care Hospital, Amalapuram (private, 24hr) · a wide government CHC network across the district",
+    details: [
+      "Konaseema Care Hospital — Black Bridge Main Road, Amalapuram 533201, open 24 hours: 088562 35300.",
+      "The district also runs a genuinely extensive government Community Health Center network — Amalapuram, Allavaram, Mummidivaram, Razole, and others — named directly on konaseema.ap.gov.in's own official Hospitals directory, useful if travelling further into the backwater villages rather than staying in Amalapuram itself.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Konaseema Care Hospital confirmed via a mapped listing; the government CHC network taken directly from konaseema.ap.gov.in's own official Hospitals directory page.",
+  },
+};
