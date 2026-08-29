@@ -111,7 +111,20 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
 
         {/* Day by day */}
         <View>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 17, color: c.textPrimary, marginBottom: 12 }}>Day-by-Day Plan</Text>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 12 }}>
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 17, color: c.textPrimary }}>Day-by-Day Plan</Text>
+            {/* Only shown when the itinerary genuinely came from Gemini
+                (see planSource in data.ts) — never claimed when it's
+                actually the local rule-based fallback, so "AI-generated"
+                stays an honest label rather than permanent marketing
+                copy regardless of what actually produced the plan. */}
+            {plan.planSource === "ai" && (
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 4, backgroundColor: withOpacity(c.gold, 0.15), borderRadius: 999, paddingHorizontal: 8, paddingVertical: 3 }}>
+                <Text style={{ fontSize: 10 }}>✨</Text>
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 10, color: c.gold }}>AI-generated</Text>
+              </View>
+            )}
+          </View>
           <View style={{ gap: 10 }}>
             {plan.itinerary.map((day, i) => {
               const expanded = expandedDay === i;

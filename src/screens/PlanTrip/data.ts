@@ -100,6 +100,15 @@ export const STYLE_CONFIGS: StyleConfig[] = [
 ];
 
 export interface TripPlan {
+  /** "ai" when the day-by-day itinerary and tips below came from the
+   * Gemini-backed backend (see aiPlan.ts / journey-backend's
+   * POST /plan-trip/ai); "template" when it's this file's own
+   * generateItinerary() — either because AI planning isn't configured, or
+   * the call failed/timed out. Every other field (cost breakdown,
+   * transport/stay recommendations, booking checklist) always comes from
+   * here regardless — only the itinerary days and tips are ever
+   * AI-sourced. */
+  planSource: "ai" | "template";
   destination: Destination;
   /** Origin city entered on the form — carried through purely for display
    * on the result screen (e.g. "Bengaluru → Agra"); not used in any cost
@@ -256,6 +265,7 @@ export function generateItinerary(
   ];
 
   return {
+    planSource: "template",
     destination: dest,
     origin,
     startDate,
