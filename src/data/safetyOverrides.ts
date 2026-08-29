@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["campbell-bay"] = {
+  police: {
+    summary: "Campbell Bay Police Station (24hr): 03193 264 210",
+    details: [
+      "Campbell Bay Police Station — Great Nicobar 744302, open 24 hours: 03193 264 210, confirmed via a mapped listing and cross-checked directly on spcn.and.nic.in, Campbell Bay's own official police site.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing, cross-checked against spcn.and.nic.in, the official Campbell Bay Police site.",
+  },
+  medical: {
+    summary: "PHC Campbell Bay (G/N) — the island's own government health facility",
+    details: [
+      "PHC Campbell Bay (G/N) — Campbell Bay Tehsil, Great Nicobar — named directly on nicobars.andaman.nic.in's own official Public Utility page.",
+      "Great Nicobar is genuinely remote, reached only by a long ferry/ship journey from Port Blair (31–36 hours per the destination's own transport data) — anything serious means a real evacuation, not a short trip.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "PHC Campbell Bay confirmed directly on nicobars.andaman.nic.in, the district's own official government site.",
+  },
+};
+
 SAFETY_OVERRIDES["long-island"] = {
   police: {
     summary: "Long Island Police Station, Market Road, Kalighat (administratively under Rangat)",
