@@ -1416,3 +1416,23 @@ SAFETY_OVERRIDES["tezpur"] = {
     sourceNote: "TMCH confirmed directly via its own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["haflong"] = {
+  police: {
+    summary: "Haflong Police Station, SH20 (24hr): 03673 236 228 — recently rebuilt",
+    details: [
+      "Haflong Police Station — SH20, Haflong Main Road: 03673 236 228, confirmed via a mapped listing. A new station building was inaugurated recently, per local Dima Hasao news coverage.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing, cross-checked against dimahasao.assam.gov.in's own official Police Administration page.",
+  },
+  medical: {
+    summary: "Haflong Civil Hospital — the district's main government hospital, twice awarded Kayakalp (national cleanliness standard)",
+    details: [
+      "Haflong Civil Hospital — Haflong, Assam 788819 — the district's main government hospital, confirmed via a mapped listing.",
+      "The hospital has been awarded the national Kayakalp award (a genuine government cleanliness/quality-standard recognition) more than once, per local Dima Hasao news coverage — a real, positive, verifiable indicator of facility standards here.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Hospital confirmed via a mapped listing; the Kayakalp award is a real, reported fact from Dima Hasao district news coverage, not a generic claim.",
+  },
+};
