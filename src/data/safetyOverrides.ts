@@ -880,3 +880,24 @@ SAFETY_OVERRIDES["vijayawada"] = {
     sourceNote: "GGH's name, address, and number confirmed via a mapped business listing.",
   },
 };
+
+SAFETY_OVERRIDES["araku"] = {
+  police: {
+    summary: "Araku Valley Police Station — Araku-Visakhapatnam Road, right in the valley itself",
+    details: [
+      "Araku Valley Police Station — Araku-Visakhapatnam Road, Araku Valley 531149 — confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Area Hospital, Araku (150 beds, with its own blood storage centre) — a genuinely well-equipped hospital right in the valley",
+    details: [
+      "Area Hospital (AH) Araku — 150 beds, with its own blood storage centre — named directly on allurisitharamaraju.ap.gov.in's own official Health department page, the district Araku actually falls under.",
+      "Community Health Center, Araku Valley — a smaller local facility, a second option for minor issues.",
+      "District Hospital, Paderu (200 beds) is the district's largest facility if something more serious is needed, though further away than Araku's own Area Hospital.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "All three facilities and bed counts taken directly from allurisitharamaraju.ap.gov.in's own official Health department page — genuinely specific, not a generic guess.",
+  },
+};
