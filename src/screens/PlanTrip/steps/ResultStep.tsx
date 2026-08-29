@@ -1,12 +1,13 @@
 /** Source of truth: Figma "2.2 Generated Itinerary — Timeline". */
 import { useState } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { View, Text, Pressable, ScrollView, Alert, ActivityIndicator } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp } from "lucide-react-native";
+import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp, Download } from "lucide-react-native";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import type { TripPlan } from "../data";
+import { exportItineraryPdf } from "../exportPdf";
 
 interface Props {
   plan: TripPlan;
@@ -29,8 +30,17 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const [expandedDay, setExpandedDay] = useState<number | null>(0);
+  const [exporting, setExporting] = useState(false);
   const perPersonPerDay = Math.round(plan.totalCost / plan.days / plan.people);
   const foodPerPersonPerDay = Math.round(plan.foodBudget / plan.days / plan.people);
+
+  const handleDownload = async () => {
+    if (exporting) return;
+    setExporting(true);
+    const result = await exportItineraryPdf(plan);
+    setExporting(false);
+    if (!result.ok && result.error) Alert.alert("Couldn't share itinerary", result.error);
+  };
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -44,6 +54,13 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
           <ArrowLeft color={c.textPrimary} size={18} />
         </Pressable>
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 18, color: c.textPrimary, flex: 1 }}>Your Travel Plan</Text>
+        <Pressable
+          onPress={handleDownload}
+          disabled={exporting}
+          style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center", opacity: exporting ? 0.6 : 1 }}
+        >
+          {exporting ? <ActivityIndicator size="small" color={c.textPrimary} /> : <Download color={c.textPrimary} size={16} />}
+        </Pressable>
         <Pressable onPress={onRebuild} style={{ backgroundColor: c.surfaceAlt, borderRadius: 999, paddingHorizontal: 14, paddingVertical: 8 }}>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.textPrimary }}>Rebuild</Text>
         </Pressable>
