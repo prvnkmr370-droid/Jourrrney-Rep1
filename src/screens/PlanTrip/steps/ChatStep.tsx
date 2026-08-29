@@ -444,12 +444,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // KeyboardAvoidingView is what actually fixes "the input field is
     // hidden when the keyboard opens" — nothing in this screen previously
     // accounted for the keyboard at all, so the input bar just sat behind
-    // it once the OS keyboard came up. "padding" on iOS and "height" on
-    // Android are the standard cross-platform pairing for a screen shaped
-    // like this one (scrollable content + a fixed input bar at the
-    // bottom) — no native header sits above this screen (it draws its
-    // own), so no extra keyboardVerticalOffset is needed.
-    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+    // it once the OS keyboard came up.
+    //
+    // behavior is iOS-only ("padding") deliberately — this app's Android
+    // build already uses the default windowSoftInputMode ("adjustResize"),
+    // meaning Android itself already shrinks the screen for the keyboard.
+    // Also applying KeyboardAvoidingView's "height" behavior on top of
+    // that double-compensated: the screen shrank once for the OS resize,
+    // then shrank *again* for KeyboardAvoidingView, leaving a gap of
+    // unfilled space at the bottom that exposed the default white scene
+    // background underneath — the exact "white patch that appears the
+    // moment I tap the input" bug. `behavior={undefined}` on Android
+    // means KeyboardAvoidingView still renders as a plain flex:1 View
+    // (so the styling here is unaffected) but doesn't add its own
+    // adjustment on top of what Android is already doing correctly.
+    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 20, paddingTop: insets.top + 8, paddingBottom: 12, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}>
         {onBack && (
           <Pressable onPress={onBack} style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
