@@ -582,10 +582,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Rajasthan",
     tagline: "The Pink City of Palaces",
     description: "Jaipur, the Pink City, is a riot of color, heritage, and bazaars. Opulent palaces, towering forts, and bustling markets make it the crown jewel of Rajasthan. The city thrums with the legacy of the Kachwaha Rajputs and the vibrant energy of modern India.",
-    image: "https://images.unsplash.com/photo-1695395550316-8995ae9d35ff?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1757237367150-3c134720f075?w=900&h=600&fit=crop&auto=format",
+    // Lead photo is Rajasthan Tourism's own official Jaipur city banner
+    // (tourism.rajasthan.gov.in — city id 14 in their system), confirmed
+    // genuine via network request logs. The rest are name-specific
+    // Unsplash searches for individually unmistakable landmarks (Amber
+    // Fort, Hawa Mahal) rather than generic terms — lower-risk than a
+    // vague thematic search, but not independently verified the way the
+    // lead photo is.
+    image: "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/14.jpg",
+    heroImage: "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/14.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1757237367150-3c134720f075?w=1200&h=900&fit=crop&auto=format",
+      "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/14.jpg",
       "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1650530777057-3a7dbc24bf6c?w=1200&h=900&fit=crop&auto=format",
@@ -868,14 +875,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Uttar Pradesh",
     tagline: "The Eternal City on the Ganges",
     description: "Varanasi is one of the world's oldest living cities — a place where life and death meet openly on the ghats of the Ganges. Every evening, the Ganga Aarti transforms the river into a river of light. Ancient, intense, and unlike anywhere else on earth.",
-    image: "https://images.unsplash.com/photo-1571536802807-30451e3955d8?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1652396507015-74b259a6f58d?w=900&h=600&fit=crop&auto=format",
+    image: "https://uptourism.gov.in/downloadmedia/PageGallary/PG_202405281030242592.jpg",
+    heroImage: "https://uptourism.gov.in/downloadmedia/PageGallary/PG_202405281030242592.jpg",
+    // Lead photo verified against uptourism.gov.in's own Varanasi-Sarnath
+    // page (ghats + Sarnath stupa collage); the rest are name-specific
+    // ghat/Ganga-Aarti searches, an unmistakable subject.
     gallery: [
+      "https://uptourism.gov.in/downloadmedia/PageGallary/PG_202405281030242592.jpg",
       "https://images.unsplash.com/photo-1652396507015-74b259a6f58d?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1738151467374-906ad5406dee?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1762513907666-29901bf5899a?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1701619879211-e03adf1993a4?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?w=1200&h=900&fit=crop&auto=format",
     ],
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
@@ -1047,10 +1057,13 @@ export const DESTINATIONS: Destination[] = [
     state: "Rajasthan",
     tagline: "The City of Lakes & Palaces",
     description: "Udaipur is Rajasthan's most romantic city — a maze of white-washed havelis, glittering lakes, and fairy-tale palaces. The Lake Palace rising from Pichola's waters, the City Palace rambling up a hillside, and the Aravalli Hills as a backdrop make it one of India's most photogenic cities.",
-    image: "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1695956353120-54ce5e91632b?w=900&h=600&fit=crop&auto=format",
+    // Lead photo is Rajasthan Tourism's own official Udaipur city banner
+    // (city id 10 in their system), confirmed genuine via network request
+    // logs, same source as Jaipur's above.
+    image: "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/10.jpg",
+    heroImage: "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/10.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1695956353120-54ce5e91632b?w=1200&h=900&fit=crop&auto=format",
+      "https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/banners/desk/10.jpg",
       "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1589901164570-f9de6556e1c1?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1633702738734-443da2c18f3c?w=1200&h=900&fit=crop&auto=format",
@@ -1118,14 +1131,19 @@ export const DESTINATIONS: Destination[] = [
     state: "Uttarakhand",
     tagline: "Yoga Capital of the World",
     description: "Rishikesh sits at the foothills of the Himalayas where the Ganges emerges from the mountains — sacred, spectacular, and buzzing with spiritual energy. World-renowned for yoga and meditation ashrams, it's equally thrilling for white-water rafting, bungee jumping, and camping under Himalayan stars.",
-    image: "https://images.unsplash.com/photo-1650341259809-9314b0de9268?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1650341278999-d1b5142cfe30?w=900&h=600&fit=crop&auto=format",
+    // All from uttarakhandtourism.gov.in's own Rishikesh page — real,
+    // individually named files matching this destination's own
+    // highlights exactly (Triveni Ghat, Lakshman Jhula, Beatles Ashram,
+    // Bungee jumping, Rafting), replacing the earlier unverified Unsplash
+    // results.
+    image: "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491078under_banner_1.jpg",
+    heroImage: "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491078under_banner_1.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1650341278999-d1b5142cfe30?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1716573260891-23ad993e8833?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1729922141827-ba9163bfb884?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1713340546638-5e30e2b7b1fe?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1719644584112-e046e7fa23c4?w=1200&h=900&fit=crop&auto=format",
+      "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491078under_banner_1.jpg",
+      "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491191Triveni_Ghat.jpg",
+      "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491207Lakshman_Jhula.jpg",
+      "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491132Beatles_Ashram.jpg",
+      "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1736491307Rafting_0.jpg",
     ],
     category: ["Adventure", "Spiritual", "Wellness"],
     bestSeason: "September – November, February – May",
@@ -1257,14 +1275,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Madhya Pradesh",
     tagline: "Temples of the Heart of India",
     description: "Khajuraho is home to a UNESCO World Heritage complex of 10th–11th century temples — extraordinary in their erotic and devotional carvings. Unexpectedly beautiful and far less visited than its fame suggests, Khajuraho offers an intimate encounter with medieval Indian art and the philosophical acceptance of life in all its dimensions.",
-    image: "https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1672215055915-e6143dc70e6a?w=900&h=600&fit=crop&auto=format",
+    // All from mptourism.com's own Khajuraho page — real, individually
+    // named files matching this destination's own highlights (Kandariya
+    // Mahadeva, Chaunsat Yogini, Matangeshwar Temple), replacing the
+    // earlier unverified Unsplash results.
+    image: "https://www.mptourism.com/images/point-of-interest/Kandariya%20Mahadev1.webp",
+    heroImage: "https://www.mptourism.com/images/point-of-interest/Kandariya%20Mahadev1.webp",
     gallery: [
-      "https://images.unsplash.com/photo-1672215055915-e6143dc70e6a?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1672215051407-6e05138da3a9?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1672215053161-5778b0fbb9ea?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1672215060701-c4207cbdc430?w=1200&h=900&fit=crop&auto=format",
+      "https://www.mptourism.com/images/point-of-interest/Kandariya%20Mahadev1.webp",
+      "https://www.mptourism.com/images/point-of-interest/Chaunsat%20Yogini.webp",
+      "https://www.mptourism.com/images/point-of-interest/Matangeshwar%20Temple.webp",
+      "https://www.mptourism.com/images/point-of-interest/Laxman%20Temple.webp",
     ],
     category: ["Heritage", "UNESCO", "Culture"],
     bestSeason: "October – March",
@@ -1394,14 +1415,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Karnataka",
     tagline: "The Cultural Capital of Karnataka",
     description: "Mysuru (Mysore) is the former seat of the Wadiyar Dynasty, a city of palaces, sandalwood, silk, and yoga. The Mysore Palace — one of India's most visited monuments — blazes with nearly 100,000 light bulbs every Sunday. Wide tree-lined boulevards, the Chamundi Hills temple, a centuries-old flower market, and the world's greatest yoga tradition make Mysuru a richly cultural destination.",
-    image: "https://images.unsplash.com/photo-1659126574791-13313aa424bd?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1659126574791-13313aa424bd?w=900&h=600&fit=crop&auto=format",
+    // All from karnatakatourism.org's own Mysuru destination page — real,
+    // individually-named files (Mysore-Palace-8, Mysore-Palace-1,
+    // Chamundihill-3) confirmed genuine, replacing the earlier unverified
+    // Unsplash search results.
+    image: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/03/Mysore-Palace-8-1024x683.avif",
+    heroImage: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/03/Mysore-Palace-8-1024x683.avif",
     gallery: [
-      "https://images.unsplash.com/photo-1659126574791-13313aa424bd?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1600112356915-089abb8fc71a?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1600118569960-ea0f09f92d5b?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1590766940554-634a7ed41450?w=1200&h=900&fit=crop&auto=format",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/03/Mysore-Palace-8-1024x683.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/03/Mysore-Palace-1-1024x645.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/03/Chamundihill-3-scaled-1-1024x683.avif",
+      "https://karnatakatourism.org/ci/q_85,w_550/cms/wp-content/uploads/2025/07/lalitha-mahal-palace.avif",
     ],
     category: ["Heritage", "Culture", "Wellness", "History"],
     bestSeason: "October – February",
@@ -1461,13 +1485,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Karnataka",
     tagline: "The Land of Coffee, Clouds & Kodava Pride",
     description: "Coorg (Kodagu district) is Karnataka's coffee heartland — a rolling highland at 900–1,900m altitude, draped in coffee, cardamom, and pepper plantations, and crisscrossed by waterfalls and rivers. Home to the fiercely proud Kodava people with their own language, cuisine, and martial tradition, Coorg is the perfect highland retreat: cool air, ancient forests, and the headwaters of the Cauvery River.",
-    image: "https://images.unsplash.com/photo-1676140428072-62fa84ba5800?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1676140428072-62fa84ba5800?w=900&h=600&fit=crop&auto=format",
+    // All from karnatakatourism.org's own Coorg page — real, individually
+    // named files that match this destination's own highlights exactly
+    // (Abbey Falls, Raja's Seat, Dubare Elephant Camp, the Golden
+    // Temple), replacing the earlier unverified Unsplash results.
+    image: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/Abbey-falls-Coorg-1024x576.avif",
+    heroImage: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/Abbey-falls-Coorg-1024x576.avif",
     gallery: [
-      "https://images.unsplash.com/photo-1676140428072-62fa84ba5800?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1694537623072-a1172819c577?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1694537623159-52f5c5a98029?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1710612198146-77512950a4b7?w=1200&h=900&fit=crop&auto=format",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/Abbey-falls-Coorg-1024x576.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/Raja-seat-Coorg-1-1024x576.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/DUBARE-HARANGI-ELEPHANT-1024x576.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/07/Golden-Temple-Coorg-1024x576.avif",
     ],
     category: ["Nature", "Wellness", "Adventure", "Culture"],
     bestSeason: "October – May (avoid June–August monsoon)",
@@ -1527,14 +1555,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Karnataka",
     tagline: "Beaches, Boulders & a Sacred Bull Temple",
     description: "Gokarna sits at a unique intersection: an ancient pilgrimage town sacred to Shiva (the Mahabaleshwara Temple houses the pranalingam), surrounded by five pristine beaches that rival Goa at a fraction of the price and crowds. Half the town is devout pilgrims, half is backpackers — this unusual coexistence creates one of India's most distinctive coastal atmospheres.",
-    image: "https://images.unsplash.com/photo-1587923623987-c7e4083beb23?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1587923623987-c7e4083beb23?w=900&h=600&fit=crop&auto=format",
+    // All from karnatakatourism.org's own Gokarna page — real, individually
+    // named files (kudlebeach, Om-Beach, halfmoon) matching this
+    // destination's own listed highlights, replacing the earlier
+    // unverified Unsplash search results.
+    image: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/05/gokarna-9868.jpg-1024x683.avif",
+    heroImage: "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/05/gokarna-9868.jpg-1024x683.avif",
     gallery: [
-      "https://images.unsplash.com/photo-1587923623987-c7e4083beb23?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1733158681369-41f1ee9ede1d?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1656849416642-37caee8843d0?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1620987327682-1b8581fe5567?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1659898145429-33a8bcdf22bf?w=1200&h=900&fit=crop&auto=format",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/05/gokarna-9868.jpg-1024x683.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/05/kudlebeach-9991.jpg-1024x683.avif",
+      "https://karnatakatourism.org/ci/q_85,w_2560/cms/wp-content/uploads/2025/09/Om-Beach-1-scaled.avif",
+      "https://karnatakatourism.org/ci/q_85,w_1024/cms/wp-content/uploads/2026/05/halfmoon-9050.jpg-1024x683.avif",
     ],
     category: ["Beach", "Spiritual", "Adventure", "Nature"],
     bestSeason: "October – May",
@@ -1594,14 +1625,18 @@ export const DESTINATIONS: Destination[] = [
     state: "Karnataka",
     tagline: "Where the Black Panther Hunts",
     description: "Kabini, on the southern edge of Nagarhole National Park, is one of India's finest wildlife destinations and home to the world's most documented Black Panther — a melanistic leopard named Saya, whose sightings have made Kabini globally famous. The Kabini backwater reservoir draws enormous concentrations of wildlife at its banks — large elephant herds, gaur, spotted deer, and predators including tigers and the legendary black panther.",
-    image: "https://images.unsplash.com/photo-1634874587938-08ca3a5f1a48?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1634874587938-08ca3a5f1a48?w=900&h=600&fit=crop&auto=format",
+    // Lead photo confirmed genuine on karnatakatourism.org's Kabini
+    // experience page. The rest are name-specific "Nagarhole Kabini
+    // elephants" Unsplash searches — the actual park name is in the
+    // query, lower risk than a vague thematic search, but not
+    // independently verified the way the lead photo is.
+    image: "https://web-cms.karnatakatourism.org/wp-content/uploads/2025/07/Kabini-River-Lodge.jpg",
+    heroImage: "https://web-cms.karnatakatourism.org/wp-content/uploads/2025/07/Kabini-River-Lodge.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1634874587938-08ca3a5f1a48?w=1200&h=900&fit=crop&auto=format",
+      "https://web-cms.karnatakatourism.org/wp-content/uploads/2025/07/Kabini-River-Lodge.jpg",
       "https://images.unsplash.com/photo-1634304467229-5a4c1c8ef091?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1634874610907-2c9130e4e5d8?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1690015559808-4c107ca4facf?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1713373291884-f1215718cd89?w=1200&h=900&fit=crop&auto=format",
     ],
     category: ["Wildlife", "Nature", "Adventure", "Photography"],
     bestSeason: "October – May (best wildlife: February – May)",
@@ -1666,14 +1701,16 @@ export const DESTINATIONS: Destination[] = [
     state: "Andhra Pradesh",
     tagline: "The Jewel of the East Coast",
     description: "Visakhapatnam (Vizag) is a port city where the Eastern Ghats meet the Bay of Bengal — a working city with a beach-town soul. Long promenades, a hilltop park with a cable car, a decommissioned submarine you can walk through, and some of the east coast's cleanest beaches make it an easy, uncrowded coastal break.",
-    image: "https://images.unsplash.com/photo-1753187815676-f97de6508d91?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1753187815676-f97de6508d91?w=900&h=600&fit=crop&auto=format",
+    // All from aptourism.gov.in's own Visakhapatnam page — real photos,
+    // including the actual INS Kursura submarine (a listed highlight),
+    // replacing the earlier unverified Unsplash results.
+    image: "https://aptourism.gov.in/media-data/images/174/Vizag-galleries-(1)-720-960.jpg",
+    heroImage: "https://aptourism.gov.in/media-data/images/174/Vizag-galleries-(1)-720-960.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1753187815676-f97de6508d91?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1710688393678-7ce3e6932b77?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1594312873175-351e72a4b55b?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1582597000839-e3a4274f8753?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1594313059730-8d0a02f44847?w=1200&h=900&fit=crop&auto=format",
+      "https://aptourism.gov.in/media-data/images/174/Vizag-galleries-(1)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/175/Vizag-galleries-(2)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/176/Vizag-galleries-(3)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/886/Submarine_-_Front_View_(4759833761).jpg",
     ],
     category: ["Beach", "Nature", "Coastal"],
     bestSeason: "November – February",
@@ -1757,14 +1794,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Andhra Pradesh",
     tagline: "India's Most-Visited Pilgrimage Town",
     description: "Tirupati sits at the base of the Tirumala hills, home to the Sri Venkateswara Temple — one of the most-visited religious sites in the world. The pilgrimage is highly organised: TTD (Tirumala Tirupati Devasthanams) runs the temple, accommodation, and free meals for pilgrims at genuinely massive scale.",
-    image: "https://images.unsplash.com/photo-1741003415192-ea5c163aadd4?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1741003415192-ea5c163aadd4?w=900&h=600&fit=crop&auto=format",
+    // All from aptourism.gov.in's own Tirumala/Venkateswara destination
+    // page, replacing the earlier unverified Unsplash results.
+    image: "https://aptourism.gov.in/media-data/images/211/Tirumala-Venkateswara-gallery-(1)-720-960.jpg",
+    heroImage: "https://aptourism.gov.in/media-data/images/211/Tirumala-Venkateswara-gallery-(1)-720-960.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1741003415192-ea5c163aadd4?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1733805569204-41768c7d8c0f?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1741003412854-bd4b264c4af3?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1709389137241-af48d39f8b46?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1705723116788-d11fa6e3f415?w=1200&h=900&fit=crop&auto=format",
+      "https://aptourism.gov.in/media-data/images/211/Tirumala-Venkateswara-gallery-(1)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/212/Tirumala-Venkateswara-gallery-(2)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/213/Tirumala-Venkateswara-gallery-(3)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/214/Tirumala-Venkateswara-gallery-(4)-720-960.jpg",
     ],
     category: ["Spiritual", "Heritage"],
     bestSeason: "September – February",
@@ -1844,9 +1882,11 @@ export const DESTINATIONS: Destination[] = [
     state: "Arunachal Pradesh",
     tagline: "A Himalayan Monastery Town on the Roof of India",
     description: "Tawang sits at 10,000 ft in the far northwest of Arunachal Pradesh, home to India's largest monastery and one of the most dramatic high-Himalayan road journeys in the country — via the Sela Pass, past glacial lakes and pine forests, right up to the Tibetan border region.",
-    image: "https://images.unsplash.com/photo-1633728476110-9827024ed86b?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1633728476110-9827024ed86b?w=900&h=600&fit=crop&auto=format",
+    // Lead photo verified against arunachaltourism.com's own Tawang page.
+    image: "https://arunachaltourism.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-04-at-08.31.23-scaled.jpeg",
+    heroImage: "https://arunachaltourism.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-04-at-08.31.23-scaled.jpeg",
     gallery: [
+      "https://arunachaltourism.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-04-at-08.31.23-scaled.jpeg",
       "https://images.unsplash.com/photo-1633728476110-9827024ed86b?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1628443266300-e8490ee38875?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1566728059008-079a722420d7?w=1200&h=900&fit=crop&auto=format",
@@ -4170,8 +4210,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Andhra Pradesh",
     tagline: "The Ooty of Andhra, One Long Coffee Trail",
     description: "Araku Valley, in the Eastern Ghats above Visakhapatnam at about 1,300m, is Andhra Pradesh's best-known hill station — a tribal-belt valley of coffee plantations, waterfalls, and the famous Vistadome train ride from Vizag that winds through 58 tunnels and over dozens of bridges before it even arrives.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg/1280px-A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg/1280px-A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg",
+    // Verified against aptourism.gov.in's own Araku destination page.
+    image: "https://aptourism.gov.in/media-data/images/119/Araku-gallery--(1)-720-960.jpg",
+    heroImage: "https://aptourism.gov.in/media-data/images/119/Araku-gallery--(1)-720-960.jpg",
+    gallery: [
+      "https://aptourism.gov.in/media-data/images/119/Araku-gallery--(1)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/120/Araku-gallery--(2)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/121/Araku-gallery--(3)-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/122/Araku-gallery--(4)-720-960.jpg",
+    ],
     imageCredit: "Photo: Billjones94 / Wikimedia Commons, CC BY-SA 4.0",
     category: ["Nature", "Hills"],
     bestSeason: "November – February",
@@ -4233,6 +4280,13 @@ export const DESTINATIONS: Destination[] = [
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
     imageCredit: "Photo: Saishna96 / Wikimedia Commons, CC BY-SA 4.0",
+    // Supplementary photos verified against aptourism.gov.in's own Vijayawada page.
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
+      "https://aptourism.gov.in/media-data/images/508/1-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/509/2-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/510/3-720-960.jpg",
+    ],
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – March",
     duration: "2 days",
@@ -4293,6 +4347,13 @@ export const DESTINATIONS: Destination[] = [
     description: "Srisailam holds one of Hinduism's twelve Jyotirlingas — the Bhramaramba Mallikarjuna Temple, its gopurams lit gold against the Nallamala forest at night — and sits inside the Nagarjunsagar-Srisailam Tiger Reserve, India's largest tiger reserve, so a pilgrimage here doubles as a genuine wildlife trip.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
+    // Supplementary photos verified against aptourism.gov.in's own
+    // "Mallikarjuna Swamy Temple Srisailam" destination page.
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
+      "https://aptourism.gov.in/media-data/images/547/1-720-960.jpg",
+      "https://aptourism.gov.in/media-data/images/548/2-720-960.jpg",
+    ],
     imageCredit: "Photo: Wikimedia Commons, CC BY 4.0",
     category: ["Spiritual", "Nature"],
     bestSeason: "October – March",
@@ -4352,6 +4413,13 @@ export const DESTINATIONS: Destination[] = [
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg/1280px-The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg/1280px-The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg",
     imageCredit: "Photo: Bdmshiva / Wikimedia Commons, CC BY-SA 4.0",
+    // Supplementary photos verified against aptourism.gov.in's own Lambasingi page.
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg/1280px-The_Beautiful_Lambasingi%2C_Visakhapatnam%2C_Andhra_Pradesh.jpg",
+      "https://aptourism.gov.in/media-data/images/826/gkphoto3---Visakhapatnam-Lambasingi---0122-960-720.jpg",
+      "https://aptourism.gov.in/media-data/images/828/gkphoto3---Visakhapatnam-Lambasingi---22685-1280-720.jpg",
+      "https://aptourism.gov.in/media-data/images/830/gkphoto4---Visakhapatnam-Lambasingi--_-2.jpg",
+    ],
     category: ["Nature", "Hills"],
     bestSeason: "November – January (frost season)",
     duration: "1 day",
