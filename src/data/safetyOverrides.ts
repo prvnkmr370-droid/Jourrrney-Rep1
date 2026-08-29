@@ -1576,3 +1576,24 @@ SAFETY_OVERRIDES["nagaon"] = {
     sourceNote: "Confirmed directly via NAMC's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["barpeta"] = {
+  police: {
+    summary: "SP Office, Barpeta: 03665-236254",
+    details: [
+      "SP Office, Barpeta: 03665-236254, confirmed directly on barpeta.assam.gov.in's own official Helpline Numbers page.",
+      "Fire Station: 03665-252132 · Disaster Management: 03665-236085",
+      "Barpeta Town Police Station also exists, covering the town centre near the historic Satras.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "SP Office and helplines taken directly from barpeta.assam.gov.in's own official site; Barpeta Town Police Station confirmed via a mapped listing.",
+  },
+  medical: {
+    summary: "Barpeta Medical College & Hospital (government, formerly Fakhruddin Ali Ahmed Medical College)",
+    details: [
+      "Barpeta Medical College & Hospital — SH2, Barpeta-Hospital-Jania Road, Joti Gaon, Barpeta 781301: 9435012435 — renamed in 2026 from its earlier name (Fakhruddin Ali Ahmed Medical College), confirmed via its own official government site (bmch.assam.gov.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly via the hospital's own official government site, including its own stated recent renaming.",
+  },
+};
