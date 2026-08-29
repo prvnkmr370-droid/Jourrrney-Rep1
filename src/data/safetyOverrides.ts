@@ -663,3 +663,23 @@ SAFETY_OVERRIDES["tawang"] = {
     sourceNote: "Hospital name and status confirmed directly on tawang.nic.in's own official Hospitals page — the single-hospital reality is stated honestly rather than padded with an unrelated facility.",
   },
 };
+
+SAFETY_OVERRIDES["khajuraho"] = {
+  police: {
+    summary: "Khajuraho Police Station, Sevagram (24hr) — the local station",
+    details: [
+      "Khajuraho Police Station — Sevagram, Bhanumati Road, Khajuraho, Madhya Pradesh 471606, open 24 hours — confirmed via a mapped business listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Khajuraho Police Station's address confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Community Health Center, Sevagram (local) — nearest option; District Hospital, Chhatarpur (~45km) for anything serious",
+    details: [
+      "Community Health Center — Sevagram, Khajuraho — is the local government health facility right in town, confirmed via a mapped listing.",
+      "District Hospital Chhatarpur — in the Civil Surgeon Office campus, Chhatarpur 471001, the district headquarters ~45km away — is the nearest well-equipped hospital for anything more serious: 07682-248312, named directly on chhatarpur.nic.in's own official site.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Community Health Center confirmed via a mapped listing; District Hospital Chhatarpur's name, address, and number taken directly from chhatarpur.nic.in's own official government site.",
+  },
+};
