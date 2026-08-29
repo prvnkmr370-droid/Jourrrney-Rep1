@@ -1243,3 +1243,22 @@ const ROHTAS_HILLS_MEDICAL: SafetyOverride = {
 
 SAFETY_OVERRIDES["rohtasgarh-fort"] = { police: ROHTAS_HILLS_POLICE, medical: ROHTAS_HILLS_MEDICAL };
 SAFETY_OVERRIDES["shergarh-fort"] = { police: ROHTAS_HILLS_POLICE, medical: ROHTAS_HILLS_MEDICAL };
+
+SAFETY_OVERRIDES["lauria-nandangarh"] = {
+  police: {
+    summary: "Lauriya Police Station — genuinely named for this destination, Bagaha-Dhala Road",
+    details: [
+      "Lauriya Police Station — Lauria Nandangarh, Bagaha-Dhala Road, West Champaran — a station genuinely named for this exact destination, confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "MJK Hospital, Bettiah (district headquarters) — the nearest well-equipped hospital, same district as Valmiki Tiger Reserve",
+    details: [
+      "MJK Hospital — Hospital Road, Bettiah 845438 — the West Champaran district headquarters hospital, confirmed directly on westchamparan.nic.in's own official Public Utility page (same source verified for the Valmiki Tiger Reserve entry — Lauria Nandangarh is in the same district).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the Valmiki Tiger Reserve entry's own verified westchamparan.nic.in source — both destinations share West Champaran district.",
+  },
+};
