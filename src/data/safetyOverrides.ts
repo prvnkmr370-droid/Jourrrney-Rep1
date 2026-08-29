@@ -239,3 +239,25 @@ SAFETY_OVERRIDES["fatehpur-sikri"] = {
     sourceNote: "Same official tajmahal.gov.in Emergency Services numbers used for Agra — Fatehpur Sikri is in the same district and tourism circuit.",
   },
 };
+
+SAFETY_OVERRIDES["kerala"] = {
+  toilets: {
+    summary: "Kerala mandates bio-toilets on all licensed Alappuzha houseboats — verified onboard, not shore-based",
+    details: [
+      "Kerala's government mandates that all houseboats operating on the Alappuzha (Vembanad Lake) backwaters be fitted with bio-toilets, which treat sewage onboard via anaerobic digestion rather than discharging into the backwaters — confirmed via mainstream Kerala news coverage (Mathrubhumi English) of the state's enforcement crackdown on non-compliant boats.",
+      "Houseboats without a valid pollution-control certificate/bio-toilet are being actively barred from the lake as of the state's most recent enforcement drive — a real, current regulatory fact, not just a nominal rule.",
+      "This is specific to registered houseboats — it says nothing about shore-side public toilets at Alappuzha's jetties/beaches, which weren't covered by any official source found.",
+    ],
+    sourceNote: "Bio-toilet mandate confirmed via mainstream Kerala news coverage (Mathrubhumi English) of a real, current state enforcement action — genuine regulatory fact, not general guidance.",
+  },
+  police: {
+    summary: "Alappuzha Tourism Police Station (Jetty Road, 24hr): 0477 223 9161",
+    details: [
+      "Alappuzha has a dedicated Tourism Police Station on Jetty Road, Alleppey, open 24 hours — 0477 223 9161.",
+      "Alappuzha District Emergency Operation Centre: 1077, 0477 2238630",
+      "Police: 100 · National Emergency: 112 · Ambulance: 102 / 108 · Fire: 101",
+      "Women Helpline: 1091 · Women's Cell, Alappuzha (DTPC-listed): +91 477 223 7474",
+    ],
+    sourceNote: "Tourism Police Station and its address/hours confirmed via mapped business listing; district emergency numbers taken directly from alappuzha.nic.in (official District Administration site) and dtpcalappuzha.com (District Tourism Promotion Council's own site).",
+  },
+};
