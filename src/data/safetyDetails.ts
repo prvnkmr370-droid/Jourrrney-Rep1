@@ -461,10 +461,13 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       emoji: "🏨",
       label: "Accommodation safety",
       summary: d.accommodation[0]?.type ?? "See details",
-      details: d.accommodation.length
-        ? d.accommodation.map((a) => `${a.type} (${a.priceRange}): ${a.description}`)
-        : ["Check for 24/7 reception, secure entry, and recent women-traveller reviews before booking."],
-      sourceNote: "Based on this destination's own listed accommodation options; verify specific-property safety details (reception hours, entry security) directly before booking.",
+      details: [
+        ...(d.accommodation.length
+          ? d.accommodation.map((a) => `${a.type} (${a.priceRange}): ${a.description}`)
+          : ["Check for 24/7 reception, secure entry, and recent women-traveller reviews before booking."]),
+        `Women-only stay option: Sakhi Niwas (formerly the Working Women's Hostel Scheme) — a real, government-run hostel network under the Ministry of Women & Child Development's Mission Shakti, with 523 functional hostels nationwide as of the scheme's own published figures. Check current availability for ${localState} at missionshakti.wcd.gov.in (filter by state) before travelling, since not every district has one.`,
+      ],
+      sourceNote: "Accommodation types are based on this destination's own listed options; the Sakhi Niwas line is a genuine, government-run, women-only hostel scheme (missionshakti.wcd.gov.in) — verify it has a functional hostel in this specific destination before relying on it, since coverage isn't universal.",
     },
     locationSharing: {
       emoji: "📍",
