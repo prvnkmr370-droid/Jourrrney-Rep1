@@ -815,3 +815,27 @@ SAFETY_OVERRIDES["kaziranga"] = {
     sourceNote: "Hospital confirmed via a mapped business listing; the honest \"no hospital inside the park itself\" framing reflects Kaziranga's actual nature as a wildlife reserve, not a town.",
   },
 };
+
+SAFETY_OVERRIDES["darjeeling"] = {
+  police: {
+    summary: "Sadar Police Station (main town, right by the District Hospital): 7063315585 / 03542254422 · Women Police Station: 9147889070",
+    details: [
+      "Sadar Police Station — Darjeeling's main town station, right beside the District Hospital: 7063315585 / 03542254422, per Darjeeling Police District's own official site.",
+      "Women Police Station, Darjeeling: 9147889070 — a dedicated station, district-wide.",
+      "Cyber Police Station: 03542255897 — genuinely notable to have a dedicated one for a hill town this size.",
+      "Kurseong Police Station: 03542330222 · Mirik Police Station: 03542243226 — relevant if travelling the wider Darjeeling hills circuit.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All stations and numbers taken directly from darjeelingpolice.wb.gov.in — a genuinely dedicated Darjeeling Police District site, distinct from the general West Bengal Police portal.",
+  },
+  medical: {
+    summary: "Darjeeling District Hospital (main town, Eden Complex) · Kurseong Sub Divisional Hospital (nearby hill town) — two real options",
+    details: [
+      "Darjeeling District Hospital — 20 Bazar Cart Road, Eden Complex, beside Sadar Police Station, Darjeeling 734101: 03542256790, named directly on darjeeling.gov.in's own official Hospitals directory.",
+      "Kurseong Sub Divisional Hospital — P.B. Road, Kurseong 734203, in the nearby hill town on the same toy-train route: 8927315151.",
+      "Ghoom PHC — Peshok Road, Ghoom — a smaller facility right at Ghoom, a common toy-train/Batasia Loop stop.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "All facilities taken directly from darjeeling.gov.in's own official district government Hospitals directory — genuinely complete and specific to towns along this destination's own circuit.",
+  },
+};
