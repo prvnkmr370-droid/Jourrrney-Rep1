@@ -14,5 +14,11 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "nativewind-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    // Draft destination cards from scripts/scaffold-destination.mjs —
+    // full of TODO placeholders until researched, not meant to type-check.
+    "src/data/drafts/**"
   ]
 }
