@@ -1618,6 +1618,27 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["umrangso"] = {
+  police: {
+    summary: "Daiyangmukh Police Station, NH627, Umrangso — same Dima Hasao district as Haflong",
+    details: [
+      "Daiyangmukh Police Station — NH627, Umrangso, Dima Hasao district — confirmed via a mapped listing.",
+      "Umrangso shares Dima Hasao district with Haflong — dimahasao.assam.gov.in's own official Police page covers the same district administration.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Daiyangmukh Police Station confirmed via a mapped listing; district context from dimahasao.assam.gov.in's own official site.",
+  },
+  medical: {
+    summary: "NEEPCO Hospital, Umrangso Main Road — a real hospital run by the hydro-power company operating here",
+    details: [
+      "NEEPCO Hospital — Umrangso Main Road, Umrangso, Dima Hasao 788931 — a hospital run by NEEPCO (North Eastern Electric Power Corporation), which operates the hydro-power project here, confirmed via a mapped listing.",
+      "For anything more serious, Haflong Civil Hospital (see the Haflong entry — same district, twice awarded the national Kayakalp standard) is the nearest larger option.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "NEEPCO Hospital confirmed via a mapped listing; Haflong Civil Hospital cross-referenced from the already-verified Haflong entry.",
+  },
+};
+
 SAFETY_OVERRIDES["darrang"] = {
   police: {
     summary: "Mangaldoi Sadar Police Station, NH15 (24hr): 03713 222 136 · SP Office Darrang",
