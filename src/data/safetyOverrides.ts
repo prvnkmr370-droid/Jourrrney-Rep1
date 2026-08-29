@@ -309,3 +309,46 @@ SAFETY_OVERRIDES["ladakh"] = {
     sourceNote: "The \"Himalaya on Wheels\" circuit is a real, named, documented initiative (SATH.org) — genuine and destination-specific, not generic guidance. It covers a specific circuit, not the whole of Ladakh.",
   },
 };
+
+SAFETY_OVERRIDES["andaman"] = {
+  toilets: {
+    summary: "Accessible restrooms most likely at the airport, larger museums and modern restaurants; limited at beaches",
+    details: [
+      "Per a dedicated Port Blair accessible-travel guide: accessible restrooms are more likely at the airport, larger museums, and modern restaurants — limited availability at beaches and smaller venues.",
+      "Corbyn's Cove Beach specifically has a paved promenade and cafés, but sand access itself is difficult without assistance and there are no public beach wheelchairs.",
+      "Cellular Jail's courtyards and ground-floor galleries are generally level; upper floors/towers are stair-only.",
+    ],
+    sourceNote: "From a dedicated Port Blair accessible-travel guide (eandamantourism.com) with specific, attraction-by-attraction accessibility detail — one of the more thorough sources found in this pass, though not an official government accessibility statement.",
+  },
+  accessibility: {
+    summary: "Mostly hilly, uneven sidewalks; ferries board via steps/gangways — confirm accessibility before booking any inter-island transfer",
+    details: [
+      "Terrain in Port Blair is mostly hilly with uneven sidewalks; many attractions have ground-level access but upper floors are typically stair-only.",
+      "Inter-island and excursion ferries (the way you reach Havelock, Neil Island, etc.) often board via steps and narrow gangways — staff may assist, but full wheelchair accessibility is limited. Always confirm with the operator before booking if this matters for your trip.",
+      "Public beach wheelchairs are generally not available at Andaman beaches — a personal beach mat or assistance is the realistic option for sand access.",
+      "Best accessibility window given the terrain and climate: October to May (drier, fewer downpours).",
+    ],
+    sourceNote: "From the same dedicated Port Blair accessible-travel guide (eandamantourism.com) — specific and practical, though a private travel-guide site rather than an official government accessibility statement.",
+  },
+  police: {
+    summary: "Police Control Room: 100 · Coast Guard: 1554 (toll-free) / 155211 · Ambulance: 232102",
+    details: [
+      "Police Control Room: 100",
+      "Fire Service: 101",
+      "Ambulance: 232102 / 233473",
+      "Coast Guard: 155211 — genuinely relevant for an island chain with heavy ferry/boat travel between islands.",
+      "Women's Helpline: 1091 · Children's Helpline: 1098",
+      "Disaster Management Control: 1070 / 238881",
+      "Shipping Helpline: 245555 (relevant for inter-island ferry schedules/issues)",
+    ],
+    sourceNote: "All numbers taken directly from southandaman.nic.in's own official District Administration Helpline page — genuine, and notably includes Coast Guard/Shipping lines relevant to this specific island destination.",
+  },
+  medical: {
+    details: [
+      "G.B. Pant Hospital, Port Blair is the main hospital facility for the islands.",
+      "Pharmacies are concentrated around Aberdeen Bazaar — carry prescriptions and a basic first-aid kit, especially before heading to more remote islands.",
+      "Ambulance: 232102 / 233473",
+    ],
+    sourceNote: "Hospital name and pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
+  },
+};
