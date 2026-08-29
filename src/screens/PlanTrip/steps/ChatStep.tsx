@@ -25,7 +25,7 @@
  *     one of this app's real destinations, never invent one.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, Alert, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
+import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Keyboard, Platform, Alert, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, Easing } from "react-native-reanimated";
@@ -112,9 +112,33 @@ const styleKeywordMatch = (lower: string) =>
 export default function ChatStep({ onBack, originCity, preselectedDestination, onReady, tabBarHeight = 0 }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
+
+  // The "height" behavior added above already shrinks this whole screen to
+  // clear the keyboard — but ctaBottomInset (below) was still separately
+  // adding the tab-bar/home-indicator safe-area padding on top of that,
+  // regardless of whether the keyboard was open. With the keyboard up,
+  // there's no tab bar and no home-indicator to clear (the keyboard sits
+  // right where they'd be), so that extra padding just became empty space
+  // between the input bar and the keyboard — the "white patch" bug's
+  // reappearance. Tracking keyboard visibility lets that padding drop to a
+  // small fixed value only while the keyboard is actually showing.
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
+  useEffect(() => {
+    const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
+    const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
+    const showSub = Keyboard.addListener(showEvt, () => setKeyboardVisible(true));
+    const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardVisible(false));
+    return () => {
+      showSub.remove();
+      hideSub.remove();
+    };
+  }, []);
+
   // +20 beyond the tab bar's own height/inset — per feedback, the input
-  // bar sat too close to the floating tab bar underneath it.
-  const ctaBottomInset = (tabBarHeight > 0 ? tabBarHeight + 12 : Math.max(insets.bottom, 16)) + 20;
+  // bar sat too close to the floating tab bar underneath it. Skipped while
+  // the keyboard is open (see comment above) — 20 alone is enough padding
+  // above the keyboard itself.
+  const ctaBottomInset = keyboardVisible ? 20 : (tabBarHeight > 0 ? tabBarHeight + 12 : Math.max(insets.bottom, 16)) + 20;
 
   const [messages, setMessages] = useState<ChatMessage[]>(() =>
     preselectedDestination
