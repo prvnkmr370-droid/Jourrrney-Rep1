@@ -25,6 +25,7 @@
  * specific place.
  */
 import type { Destination } from "./destinations";
+import { SAFETY_OVERRIDES } from "./safetyOverrides";
 
 export type SafetyCategoryKey =
   | "safetyLevel"
@@ -381,7 +382,7 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
   const g = CLASS_GUIDANCE[classify(d)];
   const localState = d.state.replace(/\s*\(UT\)\s*/, "");
 
-  return {
+  const base: Record<SafetyCategoryKey, SafetyCategoryContent> = {
     safetyLevel: {
       emoji: "🛡️",
       label: "Safety level",
@@ -536,4 +537,24 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "General guidance for this type of destination.",
     },
   };
+
+  // Layer real, sourced per-destination facts (from directly scraping
+  // official sites — see safetyOverrides.ts) on top of the class-based
+  // defaults above, where they exist. A destination with no override
+  // entry is untouched — it keeps the honest class-level guidance.
+  const overrides = SAFETY_OVERRIDES[d.id];
+  if (!overrides) return base;
+
+  const merged = { ...base };
+  for (const key of Object.keys(overrides) as SafetyCategoryKey[]) {
+    const o = overrides[key];
+    if (!o) continue;
+    merged[key] = {
+      ...merged[key],
+      summary: o.summary ?? merged[key].summary,
+      details: o.details ?? merged[key].details,
+      sourceNote: o.sourceNote,
+    };
+  }
+  return merged;
 }
