@@ -531,3 +531,25 @@ SAFETY_OVERRIDES["hampi"] = {
     sourceNote: "Hospital name and location confirmed directly via vijayanagara.nic.in, the official district government site for Hampi's own district.",
   },
 };
+
+SAFETY_OVERRIDES["coorg"] = {
+  police: {
+    summary: "Town Police Station, Madikeri: 08272-229300 · Forest Cell (relevant for wildlife areas): 08272-228662",
+    details: [
+      "Town Police Station, Madikeri (Dar Office, Town Wireless Control Room): 08272-229300 — the main station for Coorg's district headquarters town.",
+      "Office of the Superintendent of Police, Madikeri — 47/1, College Road, Madikeri, open 24 hours: 082722 29000.",
+      "A police check-post exists specifically at Abbey Falls itself, confirmed via a mapped listing — genuinely on-site at one of Coorg's most-visited waterfalls.",
+      "Also useful for Coorg specifically: CID Forest Cell, Madikeri (08272-228662) and the Range Forest Officer, Nagarahole Game Sanctuary, Kutta (08272-244221) — relevant given Coorg's wildlife/plantation-area attractions.",
+      "Additional town-level stations: Kushalnagar (08272-273420), Siddapur (08272-258100), Chettalli (08272-266733), Kutta/Virajpet taluk (08272-244100).",
+    ],
+    sourceNote: "All numbers taken directly from coorg.com's own published Emergency Service Contacts page and kodagu.nic.in (the official Kodagu District Government site); the Abbey Falls check-post confirmed via a separate mapped listing.",
+  },
+  medical: {
+    summary: "District Hospital, Near Toll Gate, Madikeri — named directly on the district's own official site",
+    details: [
+      "District Hospital — Near Toll Gate, Madikeri, Kodagu — is Coorg's main government hospital, named and addressed directly on kodagu.nic.in's own official Public Utility page: 94498 43175.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Hospital name, address, and number taken directly from kodagu.nic.in's own official district government site.",
+  },
+};
