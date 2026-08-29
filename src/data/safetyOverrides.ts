@@ -579,3 +579,23 @@ SAFETY_OVERRIDES["gokarna"] = {
     sourceNote: "Both hospitals' names and addresses confirmed via mapped listings — genuinely two separate, real facilities at two tiers of care, not a single generic pointer.",
   },
 };
+
+SAFETY_OVERRIDES["kabini"] = {
+  police: {
+    summary: "H.D. Kote Police Station (Kabini's own taluk town): 094808 05063",
+    details: [
+      "H.D. Kote (Heggadadevankote) Police Station — the taluk town Kabini itself belongs to — is the local police station: 094808 05063, confirmed on Mysuru District Police's own official site (mysurupolice.karnataka.gov.in).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "H.D. Kote Police Station's number confirmed via Mysuru District Police's own official portal and a mapped business listing.",
+  },
+  medical: {
+    summary: "Kabini Care Hospital, H.D. Kote (local) — nearest option; Mysuru's hospitals (K.R./Cheluvamba, ~80km) for anything serious",
+    details: [
+      "Kabini Care Hospital — Heggadadevana Kote (H.D. Kote), Mysore — is the nearest hospital, right in Kabini's own taluk town, confirmed via a mapped business listing.",
+      "For anything more serious, Mysuru's hospitals (K.R. Hospital and Cheluvamba Hospital — see the Mysuru entry) are the nearest well-equipped options, roughly 80km away.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Kabini Care Hospital confirmed via a mapped business listing; Mysuru fallback cross-referenced from the Mysuru entry's own verified sources.",
+  },
+};
