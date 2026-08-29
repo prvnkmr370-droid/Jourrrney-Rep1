@@ -6,6 +6,7 @@ import { ArrowLeft, CheckCircle, AlertTriangle, Phone } from "lucide-react-nativ
 import type { Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
+import SafetyDetailCards from "@/screens/DestinationDetail/SafetyDetailCards";
 
 interface Props {
   destination: Destination;
@@ -56,6 +57,8 @@ export default function DestinationSafetyPage({ destination: d, onBack }: Props)
         <SubScore label="Solo Friendly" value={solo} c={c} />
         <SubScore label="Scam Risk" value={scam} c={c} />
       </View>
+
+      <SafetyDetailCards destination={d} />
 
       <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, marginBottom: 12 }}>Safety Highlights</Text>
       <View style={{ gap: 8, marginBottom: 24 }}>
