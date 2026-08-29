@@ -511,3 +511,23 @@ SAFETY_OVERRIDES["mysuru"] = {
     sourceNote: "K.R. Hospital is named directly by Mysore Palace's own official site as its designated nearby hospital — genuine, specific, and addressed, not a generic city-level guess.",
   },
 };
+
+SAFETY_OVERRIDES["hampi"] = {
+  police: {
+    summary: "Hampi Police Station, Hampi Bazaar Street: 083942 91530",
+    details: [
+      "Hampi Police Station — Hampi Bazaar Street, Nimbapura, Karnataka 583239 — is the local station right in the main bazaar area: 083942 91530.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Hampi Police Station's name/address/number confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Govt General THC Hospital, Hospete (nearest town, ~13km) — named directly on the district's own official site",
+    details: [
+      "Govt General THC Hospital, Hospete — M.J. Nagar Dam Road, Hosapete — is the nearest government hospital, named directly on vijayanagara.nic.in (Hampi's own district government site).",
+      "Hospete (Hospet) is the nearest town with proper medical facilities, a short distance from the Hampi ruins themselves.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Hospital name and location confirmed directly via vijayanagara.nic.in, the official district government site for Hampi's own district.",
+  },
+};
