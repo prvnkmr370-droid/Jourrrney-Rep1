@@ -706,3 +706,23 @@ SAFETY_OVERRIDES["mathura-vrindavan"] = {
     sourceNote: "Both hospitals taken directly from mathura.nic.in's own official Hospitals directory page and a mapped listing for the district hospital's exact address.",
   },
 };
+
+SAFETY_OVERRIDES["lucknow"] = {
+  police: {
+    summary: "Hazratganj Kotwali Police Station (main shopping/tourist district): 094544 03853",
+    details: [
+      "Hazratganj Kotwali (Police Station) — A-23, Balmiki Marg, Hazratganj, Lucknow — the named station for Lucknow's main shopping and tourist district: 094544 03853, confirmed directly on uppolice.gov.in.",
+      "Police: 100 · UP Police Helpline: 112",
+    ],
+    sourceNote: "Confirmed directly on uppolice.gov.in (Uttar Pradesh Police's own official site) and a mapped business listing.",
+  },
+  medical: {
+    summary: "KGMU (King George's Medical University, Chowk) · SGPGIMS (Sanjay Gandhi PGI) — two major government hospitals",
+    details: [
+      "King George's Medical University (KGMU) — Chowk, Lucknow, one of India's oldest medical institutions (est. 1905), NAAC A++ accredited — New OPD Building: Shah Mina Road, 0522 225 8880.",
+      "SGPGIMS (Sanjay Gandhi Postgraduate Institute of Medical Sciences) — a major super-specialty government referral hospital, also in Lucknow.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "KGMU confirmed via its own official site (kgmu.org) and a mapped listing; SGPGIMS confirmed via a mapped listing as a genuine, distinct major hospital.",
+  },
+};
