@@ -91,7 +91,15 @@ interface Props {
   tabBarHeight?: number;
 }
 
-let idCounter = 0;
+// Seeded from the clock, NOT 0. A plain `let idCounter = 0` collides in
+// dev: every Fast Refresh re-evaluates this module and resets the counter
+// to 0, but React keeps the existing `messages` state across the reload —
+// so the next id handed out is `m1` again, duplicating a message already
+// on screen (the "two children with the same key" warning). Date.now()
+// always advances faster than messages are created, so after any reload
+// the sequence resumes above every id issued before it. Monotonic, so
+// it also stays unique under StrictMode's double-invoked state updaters.
+let idCounter = Date.now();
 const nextId = () => `m${++idCounter}`;
 
 const TRAVELER_OPTIONS = [1, 2, 3, 4];
