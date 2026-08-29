@@ -49,9 +49,9 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Battery-cart shuttle and general layout confirmed across multiple independent Agra tour-guide sources; not an ASI-published accessibility statement, so treat specifics (e.g. exact wheelchair count) as indicative, not guaranteed on any given day.",
     },
     police: {
-      summary: "Dedicated Agra Tourist Police Station: 9454402764 · Police 100 · UP Police Helpline 112",
+      summary: "Tourist Police Station, Fatehabad Rd, Tajganj (24hr): 9454402764 · Police 100 · UP Police Helpline 112",
       details: [
-        "Agra has a dedicated Tourist Police Station with its own number — 9454402764 — specifically for tourist assistance, separate from the general police line, per tajmahal.gov.in's own Emergency Services page.",
+        "Tourist Police Station — Fatehabad Road, Tajganj, Agra 282001 — right in the Taj Mahal's own neighbourhood, open 24 hours: 9454402764 (per tajmahal.gov.in's own Emergency Services page; address confirmed via a mapped business listing with visitor reviews describing real assistance given — lost passports, hotel check-in issues).",
         "General Police: 100",
         "UP Police Helpline: 112",
         "Agra Women Helpline (local): 1090",
@@ -59,29 +59,38 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
         "Foreigners Registration Office, Agra: 9454401717",
         "SSP Agra office: 0562-2227256 / 0562-2227255",
       ],
-      sourceNote: "All numbers taken directly from tajmahal.gov.in's own official Emergency Services page — genuine, destination-specific.",
+      sourceNote: "Numbers taken directly from tajmahal.gov.in's own official Emergency Services page; the Tourist Police Station's specific address confirmed via a mapped, reviewed business listing — genuine, destination-specific.",
     },
     medical: {
+      summary: "S.N. Medical College & Hospital (24hr), Mahatma Gandhi Road, Agra: 0562 226 0353",
       details: [
+        "S.N. Medical College & Hospital — Mahatma Gandhi Road, Agra 282001, open 24 hours — is Agra's main government hospital, a genuinely named, addressed facility rather than a generic \"ask your hotel\" pointer: 0562 226 0353.",
         "Ambulance: 108 (confirmed on tajmahal.gov.in's official Emergency Services page for Agra specifically).",
-        "The ASI/UP Tourism office (22 The Mall, Agra) and the ticket counters at both gates can direct you to the nearest hospital if needed — Agra is a major city with multiple government and private hospitals a short drive from the monument.",
       ],
-      sourceNote: "Ambulance number confirmed on tajmahal.gov.in; hospital availability is general city-level knowledge, not a specific verified facility list.",
+      sourceNote: "S.N. Medical College & Hospital's name, address, and phone number confirmed via a mapped business listing and the hospital's own domain (snmcagra.ac.in); ambulance number from tajmahal.gov.in's official page.",
     },
   },
   jaipur: {
     police: {
-      summary: "PinkGuard (Jaipur Police tourist safety): +91 8764866144 · Tourist Police: 0141-2744999",
+      summary: "Kotwali Police Station, Tripolia Bazar (covers Hawa Mahal/City Palace): 0141 232 2444 · PinkGuard: +91 8764866144",
       details: [
+        "Kotwali Police Station — Kishanpole Bazar Road, Chandpol, Pink City, Jaipur — is the named police station covering the walled Old City area where Hawa Mahal and City Palace sit: 0141 232 2444.",
         "PinkGuard — an official tourist-safety platform run by Jaipur Police specifically for Pink City visitors — Tourist Safety Helpline: +91 8764866144 (also handles complaint filing/tracking).",
         "Jaipur Tourist Police Helpline: 0141-2744999",
         "Tourist Safety Helpline (national): 1364, 24 hours",
-        "General Police: 100",
-        "UP/Rajasthan Police National Emergency: 112",
-        "Ambulance: 108",
+        "General Police: 100 · National Emergency: 112",
         "Jaipur Tourist Reception Centre (Directorate of Tourism), Paryatan Bhawan, Khasa Kothi Hotel Campus, M.I. Road: 0141-5110598",
       ],
-      sourceNote: "Numbers verified from pinkguardjaipur.com (an official Jaipur Police tourist-safety platform) and the Rajasthan Tourism Department's own published Contact Us page.",
+      sourceNote: "Kotwali Police Station's name/address/number confirmed via a mapped business listing; PinkGuard and Tourist Reception Centre details from their own official sites.",
+    },
+    medical: {
+      summary: "SMS Hospital (Sawai Man Singh Hospital) — 1 Ajmer Road, Jaipur — Rajasthan's largest government hospital",
+      details: [
+        "SMS Hospital — 1, Ajmer Road, Jaipur 302004 — attached to Sawai Man Singh Medical College, is the largest government-run hospital in the state, a genuinely named and addressed facility: 0141 251 8222.",
+        "There is also a dedicated \"SMS Hospital Police Station\" on the hospital premises itself: 0141 251 8444.",
+        "Ambulance: 108",
+      ],
+      sourceNote: "SMS Hospital's name, address, and number confirmed via its own official Rajasthan Medical Education Department page (medicaleducation.rajasthan.gov.in) and a mapped business listing.",
     },
     accessibility: {
       details: [
@@ -119,15 +128,22 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Facilities list is directly from citypalacemuseum.org's own published page — real, destination-specific, and unusually detailed for this category. The upper-gallery caveat is from independent visitor reports, not the museum's own statement.",
     },
     police: {
-      summary: "Udaipur Police AI WhatsApp tourist helpline: 7300059984 (launched July 2026)",
+      summary: "Surajpole Police Station (right by City Palace): 0294 241 1797 · Udaipur Police WhatsApp helpline: 7300059984",
       details: [
+        "Surajpole Police Station — Dhan Mandi Road, Girwa, Udaipur (near Kalaji Goraji, right by the City Palace area) — is the named, local police station: 0294 241 1797.",
         "Udaipur Police launched a dedicated AI chatbot WhatsApp helpline for tourists in July 2026 — number 7300059984, per IG Shrivastava's announcement, reported consistently across multiple Indian outlets (Times of India, ET TravelWorld, Dainik Bhaskar) around the same date.",
-        "General Police: 100",
-        "National Emergency: 112",
-        "Ambulance: 108",
+        "General Police: 100 · National Emergency: 112",
         "Tourist Safety Helpline (national): 1364, 24 hours",
       ],
-      sourceNote: "WhatsApp helpline number corroborated across multiple independent news outlets reporting the same July 2026 launch and figure; the primary outlet pages themselves were not directly browsable due to a site-access restriction, so this rests on consistent secondary reporting rather than a first-party government page.",
+      sourceNote: "Surajpole Police Station's name/address/number confirmed via a mapped business listing with visitor reviews; WhatsApp helpline corroborated across multiple independent news outlets (primary pages themselves were blocked from direct browsing).",
+    },
+    medical: {
+      summary: "RNT Medical College Hospital, Court Chowk/Panchsheel Marg, Udaipur — the main government hospital",
+      details: [
+        "R.N.T. (Ravindra Nath Tagore) Medical College Hospital — Panchsheel Marg, Court Chowk, Udaipur 313001 — is Udaipur's main government multi-speciality hospital, a genuinely named, addressed facility.",
+        "Ambulance: 108",
+      ],
+      sourceNote: "RNT Medical College Hospital's name and address confirmed via its own official Rajasthan Medical Education Department page (medicaleducation.rajasthan.gov.in) and a mapped listing.",
     },
   },
   varanasi: {
@@ -150,20 +166,23 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Corroborated across multiple independent Varanasi accessibility/travel-guide sources describing the same Smart City redevelopment of this specific ghat; not a direct government accessibility statement, but consistent and specific across sources.",
     },
     police: {
-      summary: "Varanasi District Police Helpline: 112 · Crime Stopper: 1090 · Women Power-line: 1091",
+      summary: "Dashashwamedh Police Station (right by the main ghat, 24hr): +91 542 241 2650 · Police Helpline: 112",
       details: [
-        "Police Helpline: 112",
-        "Crime Stopper: 1090",
-        "Women Power-line: 1091",
+        "Dashashwamedh Police Station — Harha, Varanasi 221001, open 24 hours — is the named police station right by Dashashwamedh Ghat, the city's most-visited ghat: +91 542 241 2650.",
+        "Police Helpline: 112 · Crime Stopper: 1090 · Women Power-line: 1091",
         "Child Helpline: 1098",
         "Disaster/Aapda Emergency Helpline: 9140037137",
         "CM Helpline: 1076",
       ],
-      sourceNote: "All numbers taken directly from varanasi.nic.in's own official District Administration Helpline page — genuine, district-specific.",
+      sourceNote: "Dashashwamedh Police Station's name/address/number confirmed via a mapped business listing; the rest taken directly from varanasi.nic.in's own official District Administration Helpline page.",
     },
     medical: {
-      details: ["Ambulance: 102", "UP State Ambulance Service: 108", "Both confirmed on varanasi.nic.in's own official Helpline page."],
-      sourceNote: "Directly from varanasi.nic.in's official Helpline page.",
+      summary: "Sir Sunderlal Hospital (BHU), Lanka, Varanasi — the main hospital, named directly on the district's own site",
+      details: [
+        "Sir Sunderlal Hospital, BHU — Lanka, Varanasi — is named directly on varanasi.nic.in's own official Public Utility listing as the district's hospital: 0542-2368547.",
+        "Ambulance: 102 · UP State Ambulance Service: 108",
+      ],
+      sourceNote: "Hospital name, location, and phone number taken directly from varanasi.nic.in's own official Public Utility page — genuine, district-government-confirmed.",
     },
   },
 };
@@ -175,17 +194,16 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
  * five ids below rather than repeated by hand five times.
  */
 const CHANDIGARH_POLICE: SafetyOverride = {
-  summary: "Chandigarh Police Emergency: 112 · Tourist Helpline (24hr): 1800-180-2116",
+  summary: "Police Station Sector 19C (Sukhna Path, near Sukhna Lake, 24hr): 0172 277 5173 · Emergency: 112",
   details: [
+    "Police Station Sector 19C — Sukhna Path, Chandigarh, open 24 hours — is the named police station on the road right by Sukhna Lake, closest to the whole Rock Garden/Sukhna Lake/Capitol Complex cluster: 0172 277 5173.",
+    "Chandigarh Police Headquarters — Sector 9D, Chandigarh 160009: 0172 274 9194.",
     "Chandigarh Tourism's own 24-hour Tourist Helpline: 1800-180-2116",
-    "Chandigarh Police Emergency (crime-related): 112, 0172-2749194, 0172-2744100",
-    "Crime Against Women & Children: 112, 1091",
-    "Senior Citizens Complaint: 112, 1090",
-    "Traffic Emergency: 1073",
-    "Cyber Crime: 1930",
+    "Crime Against Women & Children: 112, 1091 · Senior Citizens Complaint: 112, 1090",
+    "Traffic Emergency: 1073 · Cyber Crime: 1930",
     "Physical Tourist Information Centres exist right at Sukhna Lake (Sukhna Lake Information Center, Sector 1) and at Capitol Complex (Sector 1) — genuine, staffed counters at the attraction itself, not just a phone line.",
   ],
-  sourceNote: "Police numbers taken directly from Chandigarh Police's own official portal (portal.chandigarhpolice.gov.in); the tourist helpline and information-centre locations from Chandigarh Tourism's own official site (chandigarhtourism.gov.in).",
+  sourceNote: "Police Station Sector 19C's name/address/number confirmed via a mapped listing; HQ and other numbers taken directly from Chandigarh Police's own official portal (portal.chandigarhpolice.gov.in) and Chandigarh Tourism's own site.",
 };
 
 const CHANDIGARH_ACCESSIBILITY_ROCK_GARDEN: SafetyOverride = {
@@ -205,11 +223,21 @@ const CHANDIGARH_ACCESSIBILITY_GENERAL: SafetyOverride = {
   sourceNote: "General guidance — no official accessibility statement found for this specific site despite checking chandigarhtourism.gov.in directly.",
 };
 
+const CHANDIGARH_MEDICAL: SafetyOverride = {
+  summary: "PGIMER (Nehru Hospital) — Sector 12, Chandigarh — the region's major government hospital",
+  details: [
+    "PGIMER (Post Graduate Institute of Medical Education & Research), also known as Nehru Hospital — Sector 12, Chandigarh 160012 — is North India's major government referral hospital, a genuinely named, addressed facility.",
+    "Ambulance: 108",
+  ],
+  sourceNote: "PGIMER's name and address confirmed via its own official site (pgimer.edu.in) and a mapped business listing.",
+};
+
 for (const id of ["chandigarh", "rock-garden", "sukhna-lake", "capitol-complex", "chandigarh-bird-park"]) {
   SAFETY_OVERRIDES[id] = {
     ...SAFETY_OVERRIDES[id],
     police: CHANDIGARH_POLICE,
     accessibility: id === "rock-garden" ? CHANDIGARH_ACCESSIBILITY_ROCK_GARDEN : CHANDIGARH_ACCESSIBILITY_GENERAL,
+    medical: CHANDIGARH_MEDICAL,
   };
 }
 
@@ -232,11 +260,22 @@ SAFETY_OVERRIDES["fatehpur-sikri"] = {
     sourceNote: "Buland Darwaza's monumental staircase is a well-documented architectural feature (confirmed via multiple independent sources); no official accessibility statement exists for the site.",
   },
   police: {
+    summary: "Fatehpur Sikri Police Station (local, right in town): 094544 02734 · Agra Tourist Police (~40km): 9454402764",
     details: [
-      "Fatehpur Sikri falls within Agra district — the same official emergency numbers apply: Police 100, Ambulance 108, UP Police Helpline 112.",
-      "Agra's dedicated Tourist Police Station number (9454402764, per tajmahal.gov.in) covers the wider Agra tourism circuit including Fatehpur Sikri, though it's based in Agra city, ~40km away.",
+      "Fatehpur Sikri Police Station — Santosh Nagar, Dadupura, Fatehpur Sikri, UP 283110 — is the local station right in the town itself: 094544 02734.",
+      "Agra's dedicated Tourist Police Station (9454402764, per tajmahal.gov.in) also covers the wider Agra tourism circuit including Fatehpur Sikri, but is based in Agra city, ~40km away.",
+      "Police 100 · UP Police Helpline 112",
     ],
-    sourceNote: "Same official tajmahal.gov.in Emergency Services numbers used for Agra — Fatehpur Sikri is in the same district and tourism circuit.",
+    sourceNote: "Fatehpur Sikri Police Station's name/address/number confirmed via a mapped business listing; Agra's Tourist Police Station number from tajmahal.gov.in's official page.",
+  },
+  medical: {
+    summary: "Fatehpur Sikri Community Health Centre (local); S.N. Medical College Hospital, Agra (~40km) for anything serious",
+    details: [
+      "Fatehpur Sikri Community Health Centre (CHC) — Block Compound, Fatehpur Sikri — is the local government health facility right in town, for anything minor.",
+      "For anything more serious, S.N. Medical College & Hospital, Mahatma Gandhi Road, Agra (the city's main 24-hour government hospital, ~40km away) is the nearest well-equipped option — see the Agra entry.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Fatehpur Sikri CHC's name and location confirmed via a hospital-directory listing; S.N. Medical College cross-referenced from the Agra entry's own verified source.",
   },
 };
 
@@ -260,6 +299,14 @@ SAFETY_OVERRIDES["kerala"] = {
     ],
     sourceNote: "Tourism Police Station and its address/hours confirmed via mapped business listing; district emergency numbers taken directly from alappuzha.nic.in (official District Administration site) and dtpcalappuzha.com (District Tourism Promotion Council's own site).",
   },
+  medical: {
+    summary: "General Hospital Alappuzha, Palace Road, Alleppey — named directly on the district's own official site",
+    details: [
+      "General Hospital Alappuzha — Palace Road / General Hospital Road, Anantha Narayanapuram, Alappuzha 688011, open 24 hours — is named directly on alappuzha.nic.in's own official Public Utility listing: 0477-2253324.",
+      "Ambulance: 102 / 108",
+    ],
+    sourceNote: "Hospital name, address, and phone number taken directly from alappuzha.nic.in's own official Public Utility page — genuine, district-government-confirmed.",
+  },
 };
 
 SAFETY_OVERRIDES["goa"] = {
@@ -282,6 +329,15 @@ SAFETY_OVERRIDES["goa"] = {
     ],
     sourceNote: "Tourist Police unit history and Calangute Police Station's direct contact number taken from Goa Police's own official portal (citizen.goapolice.gov.in) — genuine, verifiable.",
   },
+  medical: {
+    summary: "Mathew Braganza Hospital, Calangute Beach Road (24hr, right on the beach belt); Goa Medical College Hospital (Bambolim) for anything serious",
+    details: [
+      "Mathew Braganza Hospital — Calangute Beach Road, Bardez, open 24 hours — is a named hospital directly on the main North Goa beach road: 0832 671 6666.",
+      "For anything more serious, Goa Medical College Hospital (GMC) — Bambolim Road, Panaji 403202, open 24 hours — is Goa's main government referral hospital, also listed directly on northgoa.gov.in's own official site.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals' names and addresses confirmed via mapped listings and, for GMC, its own official site (gmcgoa.edu.in) and the North Goa District government's own public-utility page.",
+  },
 };
 
 SAFETY_OVERRIDES["ladakh"] = {
@@ -293,10 +349,18 @@ SAFETY_OVERRIDES["ladakh"] = {
       "Women Police Station, Leh: 9541900289",
       "Police Post Tangtse (covers the Pangong Tso route): 9541900297",
       "Police Post Panamik (covers Nubra Valley): 9541900298",
-      "SNM Hospital, Leh (the district's main hospital): 01982-252014 · CMO Office Leh: 01982-252012",
       "Tourist Information Centre, Leh: 01982-257788",
     ],
     sourceNote: "All numbers taken directly from leh.nic.in's own official District Administration \"Important Contact Details\" page — genuine, and notably specific to this destination's own highlighted stops (Pangong, Nubra), not just the main town.",
+  },
+  medical: {
+    summary: "Sonam Norboo Memorial (SNM) Hospital, Old Leh Road, Leh — the district's main hospital",
+    details: [
+      "Sonam Norboo Memorial (SNM) Hospital — Old Leh Road, Leh, Ladakh 194101 — is the district's main government hospital, named and addressed directly on both its own site and leh.nic.in's official listing: 01982-252012 / 01982-252014.",
+      "CMO Office Leh: 01982-252012",
+      "For anywhere along the Nubra or Pangong routes, the nearest well-equipped facility is this hospital back in Leh — the local police posts at Tangtse and Panamik are the first point of contact for any emergency out there, not a hospital.",
+    ],
+    sourceNote: "SNM Hospital's full name and address confirmed via its own official site (snmhospitalleh.com) and leh.nic.in's official Public Utility listing.",
   },
   accessibility: {
     summary: "\"Himalaya on Wheels\" — a real wheelchair-accessible circuit covering Leh monasteries, Alchi/Likir gompas, and Pangong Lake",
@@ -340,30 +404,40 @@ SAFETY_OVERRIDES["andaman"] = {
       "Women's Helpline: 1091 · Children's Helpline: 1098",
       "Disaster Management Control: 1070 / 238881",
       "Shipping Helpline: 245555 (relevant for inter-island ferry schedules/issues)",
+      "Aberdeen Police Station — RGT Road, Aberdeen Bazar, Port Blair — is the named station for the main town/market area: 03192 232 400 / 03192-232405.",
     ],
-    sourceNote: "All numbers taken directly from southandaman.nic.in's own official District Administration Helpline page — genuine, and notably includes Coast Guard/Shipping lines relevant to this specific island destination.",
+    sourceNote: "District helpline numbers taken directly from southandaman.nic.in's own official page; Aberdeen Police Station's name/address confirmed via the South Andaman administration's own police-station site (spsa.and.nic.in) and a mapped listing.",
   },
   medical: {
+    summary: "G.B. Pant Hospital, GB Pant Road, City Centre, Port Blair — the main hospital for the islands",
     details: [
-      "G.B. Pant Hospital, Port Blair is the main hospital facility for the islands.",
+      "G.B. Pant Hospital — GB Pant Road, City Centre, Port Blair 744103 — is the main government hospital for the islands, with several direct lines: 03192 233665 / 246058 / 233455 / 230858.",
       "Pharmacies are concentrated around Aberdeen Bazaar — carry prescriptions and a basic first-aid kit, especially before heading to more remote islands.",
       "Ambulance: 232102 / 233473",
     ],
-    sourceNote: "Hospital name and pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
+    sourceNote: "G.B. Pant Hospital's full address and phone numbers confirmed via a mapped listing; pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
   },
 };
 
 SAFETY_OVERRIDES["rishikesh"] = {
   police: {
-    summary: "Rishikesh Police: 0135-2430099 · Mountain Rescue (ITBP): 1800-11-5656 · Tourist Helpline: 1363",
+    summary: "Kotwali Rishikesh Police Station: 0135-2430100 · Mountain Rescue (ITBP): 1800-11-5656 · Tourist Helpline: 1363",
     details: [
-      "Rishikesh Police: 0135-2430099",
+      "Kotwali Rishikesh Police Station — the named local station for Rishikesh town, Uttarakhand 249201: 0135-2430100 (also listed elsewhere as 0135-2430099, likely a related extension).",
       "National Emergency: 112 · Tourist Helpline: 1363 · Women Helpline: 181",
       "Uttarakhand SDRF (State Disaster Response Force): 1070 — genuinely relevant given Rishikesh's rafting/trekking/mountain activity base.",
       "NDRF (National Disaster Response Force): 011-24363260",
       "Mountain Rescue (ITBP): 1800-11-5656",
     ],
-    sourceNote: "From a dedicated Rishikesh travel-guide site's own published Safety & Emergency page (visitrishikesh.com — part of the DD Explorer travel network) — not a government page itself, but specific, well-organised, and includes genuinely activity-relevant lines (SDRF, mountain rescue) that generic safety guidance wouldn't include.",
+    sourceNote: "Kotwali Rishikesh Police Station's name/address confirmed via a mapped business listing; the rest from a dedicated Rishikesh travel-guide site's own published Safety & Emergency page (visitrishikesh.com) — not a government page itself, but specific and well-organised.",
+  },
+  medical: {
+    summary: "AIIMS Rishikesh, Veerbhadra Marg — a major government hospital right in town",
+    details: [
+      "All India Institute of Medical Sciences (AIIMS), Rishikesh — Veerbhadra Marg, Rishikesh, open 24 hours — is a major government hospital directly in town, a significant medical resource for a pilgrimage/adventure-sports destination.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "AIIMS Rishikesh's name and address confirmed via its own official site (aiimsrishikesh.edu.in) and a mapped listing.",
   },
   areaConditions: {
     summary: "Monkeys near Lakshman Jhula can be aggressive — keep food hidden and avoid direct eye contact",
