@@ -27,7 +27,17 @@
 import { useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
 import { Image } from "expo-image";
-import * as ImagePicker from "expo-image-picker";
+// Deliberately NOT a static top-level import. expo-image-picker's native
+// module isn't present in every client this app might run in (a plain
+// Expo Go install in particular) — a static import throws
+// "Cannot find native module 'ExponentImagePicker'" the instant this
+// file is evaluated, which crashed the *entire* Plan Trip route (and
+// silently dropped its tab from the bottom nav bar, since expo-router
+// can't register a route whose module threw before exporting anything).
+// Loading it lazily, only when the camera button is actually pressed,
+// means a missing native module degrades just that one feature instead
+// of taking the whole screen down with it — see pickImage() below.
+import type * as ImagePickerType from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Send, Camera } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
@@ -374,6 +384,19 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // stay comfortably under the backend's body-size limit.
   const pickImage = async () => {
     if (sending) return;
+
+    let ImagePicker: typeof ImagePickerType;
+    try {
+      ImagePicker = await import("expo-image-picker");
+    } catch {
+      // Native module genuinely unavailable in this client (e.g. plain
+      // Expo Go without it bundled) — degrade to just this one feature
+      // rather than ever letting it take the screen down.
+      pushAi("Photo suggestions aren't available in this app build right now — just tell me a place instead!");
+      scrollToEnd();
+      return;
+    }
+
     const perm = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!perm.granted) {
       pushAi("I'd need permission to access your photos to try that — you can enable it in your device settings, or just tell me a place instead.");
