@@ -683,3 +683,26 @@ SAFETY_OVERRIDES["khajuraho"] = {
     sourceNote: "Community Health Center confirmed via a mapped listing; District Hospital Chhatarpur's name, address, and number taken directly from chhatarpur.nic.in's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["mathura-vrindavan"] = {
+  police: {
+    summary: "Vrindavan Police Station (right by Banke Bihari Temple): 9454403953 · Mahila (Women's) Police Station also exists district-wide",
+    details: [
+      "Vrindavan Police Station — 9454403953 — is the named station covering Vrindavan and its temples (Banke Bihari, ISKCON), with a station literally ~0.1km from Banke Bihari Temple per a mapped listing.",
+      "Kotwali Police Station (covers Mathura town/Krishna Janmabhoomi area): 9454403943.",
+      "Mahila (Women's) Police Station, Mathura district: 9454404759 — a dedicated station, notable district-wide.",
+      "Sadar Bazar Police Station: 9454403949 · Highway Police Station: 9454403946.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All station names/numbers taken directly from mathura.nic.in's own official District Administration Police Station directory — a genuinely complete, real list covering all of Mathura district including Vrindavan specifically.",
+  },
+  medical: {
+    summary: "District Hospital Mathura (government, Holi Gate Road) · CIMS Hospital (private multi-super-speciality, NH-19)",
+    details: [
+      "District Hospital Mathura — 1987, Holi Gate Road, Mathura 281001 — the government hospital for the district.",
+      "CIMS Hospital (City Institute of Medical Sciences) — National Highway 19, Masani Road, Mathura 281004, a 200-bed multi-super-speciality private hospital: 09258113570.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals taken directly from mathura.nic.in's own official Hospitals directory page and a mapped listing for the district hospital's exact address.",
+  },
+};
