@@ -430,10 +430,14 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           disabled={!input.trim() || sending}
           style={{
             width: 48, height: 48, borderRadius: 24, alignItems: "center", justifyContent: "center",
-            backgroundColor: input.trim() && !sending ? "#333C81" : c.surfaceAlt,
+            // Always the app's blue accent now, rather than fading to a
+            // dull grey with nothing typed — still communicates "can't
+            // send yet" via reduced opacity instead of a color swap.
+            backgroundColor: "#333C81",
+            opacity: input.trim() && !sending ? 1 : 0.4,
           }}
         >
-          <Send color={input.trim() && !sending ? "#FFFFFF" : c.textMuted} size={18} />
+          <Send color="#FFFFFF" size={18} />
         </Pressable>
       </View>
     </KeyboardAvoidingView>
