@@ -69,4 +69,34 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Ambulance number confirmed on tajmahal.gov.in; hospital availability is general city-level knowledge, not a specific verified facility list.",
     },
   },
+  jaipur: {
+    police: {
+      summary: "PinkGuard (Jaipur Police tourist safety): +91 8764866144 · Tourist Police: 0141-2744999",
+      details: [
+        "PinkGuard — an official tourist-safety platform run by Jaipur Police specifically for Pink City visitors — Tourist Safety Helpline: +91 8764866144 (also handles complaint filing/tracking).",
+        "Jaipur Tourist Police Helpline: 0141-2744999",
+        "Tourist Safety Helpline (national): 1364, 24 hours",
+        "General Police: 100",
+        "UP/Rajasthan Police National Emergency: 112",
+        "Ambulance: 108",
+        "Jaipur Tourist Reception Centre (Directorate of Tourism), Paryatan Bhawan, Khasa Kothi Hotel Campus, M.I. Road: 0141-5110598",
+      ],
+      sourceNote: "Numbers verified from pinkguardjaipur.com (an official Jaipur Police tourist-safety platform) and the Rajasthan Tourism Department's own published Contact Us page.",
+    },
+    accessibility: {
+      details: [
+        "Amber Fort (Amer Fort) is a hilltop fort — genuinely steep terrain. Ramps exist in certain areas, but visitor reports consistently describe full wheelchair access as difficult given the hill-fort layout; an elephant/jeep ride or golf-cart option is available up to the fort from the base for those who can't manage the walk/steps.",
+        "City Palace and Hawa Mahal are within Jaipur's flatter walled Old City and are generally easier ground-level access than Amber Fort, though both are heritage buildings with steps and uneven historic flooring in parts.",
+        "No official accessibility statement was found for any of the three monuments — this is based on consistent visitor reporting (e.g. TripAdvisor), not an ASI/Rajasthan-government accessibility statement.",
+      ],
+      sourceNote: "Based on consistent third-party visitor reports, not an official government accessibility statement — treat as indicative.",
+    },
+    toilets: {
+      details: [
+        "No official source (Rajasthan Tourism's own site, or the state's official OBMS monument-booking portal) publishes toilet locations or distances for Amber Fort, City Palace, or Hawa Mahal specifically — despite checking both directly.",
+        "As with any major ticketed monument, expect facilities near the ticket counter/entrance rather than deep inside the complex; carry your own tissues/sanitiser as backup.",
+      ],
+      sourceNote: "Official sources checked (tourism.rajasthan.gov.in, obms-tourist.rajasthan.gov.in) had no facility-location data — this is general guidance, not a verified fact for these specific monuments.",
+    },
+  },
 };
