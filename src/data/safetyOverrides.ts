@@ -1311,3 +1311,24 @@ SAFETY_OVERRIDES["baidyanath-temple-kaimur"] = {
     sourceNote: "Both hospitals taken directly from kaimur.nic.in's own official district government Hospitals directory.",
   },
 };
+
+SAFETY_OVERRIDES["aranya-devi-temple"] = {
+  police: {
+    summary: "ASP cum SDPO (Ara-Sadar) — the town-level police authority for Arrah, where the temple sits",
+    details: [
+      "ASP cum SDPO, Ara-Sadar — 9031826622, 06182-221370 — the sub-divisional police authority for Arrah town itself, confirmed directly on bhojpur.nic.in's own official Police Administration page.",
+      "Superintendent of Police, Bhojpur district: 9031826621.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from bhojpur.nic.in's own official District Administration Police page.",
+  },
+  medical: {
+    summary: "Ara District Hospital (government) · Highway Hospital, Bus Stand Road (private) — two real options",
+    details: [
+      "Ara, District Hospital — Bhojpur, named directly on bhojpur.nic.in's own official Hospitals directory: 9470003156.",
+      "Highway Hospital — Bus Stand Road, Arrah 802301 — a private hospital, confirmed via a mapped listing.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Ara District Hospital confirmed directly on bhojpur.nic.in, the district's own official government site; Highway Hospital confirmed via a mapped listing.",
+  },
+};
