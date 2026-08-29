@@ -1173,3 +1173,23 @@ SAFETY_OVERRIDES["ashoka-stupa-rajgir"] = {
     sourceNote: "Sub-Divisional Hospital, Rajgir confirmed directly on nalanda.nic.in; K.K. Medical College confirmed via its own official site (kkmch.edu.in).",
   },
 };
+
+SAFETY_OVERRIDES["ashokan-pillar-vaishali"] = {
+  police: {
+    summary: "Vaishali Police Station, Basarh (right in the village with the pillar site)",
+    details: [
+      "Vaishali Police Station — Basarh, Vaishali 844128 — genuinely named for the destination and located in Basarh, the village where the Ashokan Pillar/Kolhua site actually is, confirmed via a mapped listing.",
+      "Bihar Police Control Room (state-wide): 100 / 0612-2201977.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing referencing Bihar Police's own official structure.",
+  },
+  medical: {
+    summary: "Sadar Hospital, Hajipur (district headquarters) — the nearest well-equipped hospital",
+    details: [
+      "Sadar Hospital, Hajipur — Hospital Road, Hajipur: 06224-260197, named directly on vaishali.nic.in's own official Hospitals directory.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on vaishali.nic.in, the district's own official government site.",
+  },
+};
