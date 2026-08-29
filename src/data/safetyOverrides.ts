@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["little-andaman"] = {
+  police: {
+    summary: "Hutbay Police Station, ~66 nautical miles from Port Blair: 03192-284208",
+    details: [
+      "Hutbay Police Station — Little Andaman, about 66 nautical miles from Port Blair: 03192-284208, confirmed directly on spsa.and.nic.in, the South Andaman Police's own official site.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from spsa.and.nic.in's own official police-station page for Hutbay.",
+  },
+  medical: {
+    summary: "Primary Health Centre, Hutbay — the island's own facility, genuinely remote from Port Blair",
+    details: [
+      "Primary Health Centre, Hutbay — Little Andaman — named directly on southandaman.nic.in's own official Public Utility page.",
+      "Little Andaman is genuinely remote — ~66 nautical miles by ferry from Port Blair — so anything serious means a real evacuation, not a short trip; plan accordingly before travelling here.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "PHC Hutbay confirmed directly on southandaman.nic.in; the distance is from the same official police-station page, describing the island's genuine remoteness.",
+  },
+};
+
 SAFETY_OVERRIDES["neil-island"] = {
   police: {
     summary: "Shaheed Dweep Island Police Station (Neil Island's official name), functioning since 2011: 03192-282602",
