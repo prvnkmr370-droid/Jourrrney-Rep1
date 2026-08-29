@@ -283,3 +283,29 @@ SAFETY_OVERRIDES["goa"] = {
     sourceNote: "Tourist Police unit history and Calangute Police Station's direct contact number taken from Goa Police's own official portal (citizen.goapolice.gov.in) — genuine, verifiable.",
   },
 };
+
+SAFETY_OVERRIDES["ladakh"] = {
+  police: {
+    summary: "Police Control Room Leh: 01982-258880 · Women Police Station Leh: 9541900289 · posts at Nubra & Pangong (Tangtse)",
+    details: [
+      "Police Control Room, Leh: 01982-258880 (district-wide PHQ Ladakh control room: 01982-260887)",
+      "SHO Police Station Leh: 9541900283 · SHO Police Station Nubra: 9541900285",
+      "Women Police Station, Leh: 9541900289",
+      "Police Post Tangtse (covers the Pangong Tso route): 9541900297",
+      "Police Post Panamik (covers Nubra Valley): 9541900298",
+      "SNM Hospital, Leh (the district's main hospital): 01982-252014 · CMO Office Leh: 01982-252012",
+      "Tourist Information Centre, Leh: 01982-257788",
+    ],
+    sourceNote: "All numbers taken directly from leh.nic.in's own official District Administration \"Important Contact Details\" page — genuine, and notably specific to this destination's own highlighted stops (Pangong, Nubra), not just the main town.",
+  },
+  accessibility: {
+    summary: "\"Himalaya on Wheels\" — a real wheelchair-accessible circuit covering Leh monasteries, Alchi/Likir gompas, and Pangong Lake",
+    details: [
+      "A genuine, named initiative called \"Himalaya on Wheels\" — launched by Travel Another India and PAGIR with the Ladakh Road Safety Council — created a wheelchair-friendly circuit covering monasteries/palaces around Leh, the Alchi and Likir gompas (~2hr from Leh), and Pangong Lake itself, per SATH (Society for Accessible Travel & Hospitality), a recognised accessible-travel organisation.",
+      "Several hotels/guesthouses along this specific circuit have been modified for wheelchair users as part of the same initiative.",
+      "This is destination-specific and genuinely notable — most of the rest of Ladakh's high-altitude terrain (Khardung La, Nubra's sand dunes, general trekking routes) remains very physically demanding and isn't covered by this circuit.",
+      "As with any high-altitude destination, altitude acclimatisation matters more here than almost anywhere else in India — this applies regardless of mobility level.",
+    ],
+    sourceNote: "The \"Himalaya on Wheels\" circuit is a real, named, documented initiative (SATH.org) — genuine and destination-specific, not generic guidance. It covers a specific circuit, not the whole of Ladakh.",
+  },
+};
