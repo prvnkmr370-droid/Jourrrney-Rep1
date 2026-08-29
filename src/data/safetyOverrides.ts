@@ -1617,3 +1617,25 @@ SAFETY_OVERRIDES["hailakandi"] = {
     sourceNote: "Confirmed via a mapped business listing.",
   },
 };
+
+SAFETY_OVERRIDES["manas"] = {
+  police: {
+    summary: "Office of the Field Director, Manas Tiger Reserve: +91-7099709955 — the reserve's own authority, plus named ranges",
+    details: [
+      "Office of the Field Director, Manas Tiger Reserve — Barpeta Road, Assam 781315: +91-7099709955, confirmed via its own official site (manasnptr.in).",
+      "Named forest ranges within the reserve: Bansbari, Bhuyanpara, Panbari, Kuklung — each with its own range office contact, per the same official site.",
+      "For general police matters, Barpeta district police (see the Barpeta entry) covers the wider area.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Field Director and range contacts taken directly from manasnptr.in, Manas Tiger Reserve's own official site — genuinely the reserve's own on-the-ground authority, not a generic town pointer.",
+  },
+  medical: {
+    summary: "Manas Superspeciality Hospital, Barpeta Road (private, genuinely close to the park) · Barpeta Medical College & Hospital (government) for anything serious",
+    details: [
+      "Manas Superspeciality Hospital — Barpeta Road, Barpeta 781315 — a private hospital right in the same town the reserve is accessed from, confirmed via a mapped listing.",
+      "Barpeta Medical College & Hospital — the district's main government hospital (see the Barpeta entry for full detail) — for anything more serious.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Manas Superspeciality Hospital confirmed via a mapped listing; Barpeta Medical College & Hospital cross-referenced from the already-verified Barpeta entry.",
+  },
+};
