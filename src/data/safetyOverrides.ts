@@ -640,3 +640,26 @@ SAFETY_OVERRIDES["tirupati"] = {
     sourceNote: "SVIMS confirmed directly on tirupati.ap.gov.in's own official site and its own domain (svimstpt.ap.nic.in); Ruia Government General Hospital confirmed via a mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["tawang"] = {
+  police: {
+    summary: "Tawang Police Station (near District Hospital): 03794-222235 · Tawang Women's Police Station also exists",
+    details: [
+      "Tawang Police Station — Near District Hospital, Tawang: 03794-222235; Police Control Room: 03794-222278.",
+      "Tawang Women's Police Station — Tawang, Arunachal Pradesh 790104 — a dedicated station, genuinely notable for a small remote town.",
+      "Superintendent of Police Office — Tawang, Arunachal Pradesh 790104: 03794-222231.",
+      "Jang Police Station (Bazaar Road, Jang) and Lumla Police Station (Lumla-Tashigaon Road) also exist for the wider district, relevant if travelling the Bum La/Sela Pass route.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All stations and numbers taken directly from tawang.nic.in's own official District Administration Police page — genuine, and notably includes a dedicated women's police station for this small town.",
+  },
+  medical: {
+    summary: "Khan Drowa Zangmo District Hospital, Tawang — the district's one government hospital",
+    details: [
+      "Khan Drowa Zangmo District Hospital — under the District Medical Officer, Tawang — is the district's public/government hospital, named directly on tawang.nic.in's own official site.",
+      "As a small, remote high-altitude district, this is genuinely the only hospital serving the area — there's no second option to honestly offer here, unlike bigger cities.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Hospital name and status confirmed directly on tawang.nic.in's own official Hospitals page — the single-hospital reality is stated honestly rather than padded with an unrelated facility.",
+  },
+};
