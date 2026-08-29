@@ -1290,3 +1290,24 @@ SAFETY_OVERRIDES["ashok-dham"] = {
     sourceNote: "Sadar Hospital confirmed directly on lakhisarai.nic.in, the district's own official government site; Sri Radhey Hospital confirmed via a mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["baidyanath-temple-kaimur"] = {
+  police: {
+    summary: "Ramgarh Police Station, Kaimur — the block this temple is actually in",
+    details: [
+      "Ramgarh Police Station — Ramgarh, Kaimur district — the police station covering the block where Baidyanath Temple (Baijnath village) actually sits, confirmed via search results referencing the same block.",
+      "Kaimur district has 17 police stations in total, per kaimur.nic.in's own official directory (the same source verified for the nearby Mundeshwari Devi Temple entry).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Ramgarh Police Station's existence confirmed via search results and a Justdial listing; district context from kaimur.nic.in's own official Police page.",
+  },
+  medical: {
+    summary: "Referral Hospital, Ramgarh (right in the same block, government) · Sadar Hospital, Bhabhua (district HQ) — two real options",
+    details: [
+      "Referral Hospital, Ramgarh — Ramgarh Block Campus, Kaimur 821109: 06187-244353 — named directly on kaimur.nic.in's own official Hospitals directory, right in the temple's own block.",
+      "Sadar Hospital, Bhabhua — Kachahri Road, Bhabhua, Kaimur 821101: 06189-223254 — the district headquarters hospital for anything more serious.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals taken directly from kaimur.nic.in's own official district government Hospitals directory.",
+  },
+};
