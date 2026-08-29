@@ -12,7 +12,7 @@ import { useState } from "react";
 import type { Destination } from "@/data/destinations";
 import { DESTINATIONS } from "@/data/destinations";
 import { useOriginStore } from "@/store/useOriginStore";
-import { STYLE_CONFIGS, generateItinerary, type TravelStyle, type TripPlan } from "./data";
+import { STYLE_CONFIGS, generateItinerary, generateMultiLegItinerary, type GeneratedDay, type TravelStyle, type TripPlan } from "./data";
 import { tryGenerateAiItinerary } from "./aiPlan";
 import ChatStep from "./steps/ChatStep";
 import GeneratingStep from "./steps/GeneratingStep";
@@ -47,19 +47,10 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
   const originCity = useOriginStore((s) => s.originCity);
   const preselectedDestination = preselectedId ? (DESTINATIONS.find((d) => d.id === preselectedId) ?? null) : null;
 
-  const handleReady = async (destination: Destination, days: number, people: number, style: TravelStyle, interests: string[]) => {
+  const handleReady = async (legs: { destination: Destination; days: number }[], people: number, style: TravelStyle, interests: string[]) => {
     setTravelStyle(style);
     setStep("generating");
 
-    // The template plan always runs — it's the source for every field
-    // besides the day-by-day itinerary and tips (cost breakdown,
-    // transport/stay recommendations, booking checklist all come from
-    // here regardless of whether AI planning succeeds). The AI attempt
-    // and the minimum-visible-loading delay run concurrently, not
-    // sequentially, so a fast Gemini response doesn't get held up waiting
-    // for an unrelated UI-timing floor on top of its own latency.
-    const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
-    const budget = destination.budgetBreakdown.find((b) => b.tier === sc.budgetTier) ?? destination.budgetBreakdown[1];
     // Interests fall back to the same defaults the old form pre-checked
     // when the chat's own opportunistic keyword-scan (see
     // parseTripMessage.ts) didn't catch anything from what was typed.
@@ -68,30 +59,95 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
     // conversation to stay short, matching the target design) — always
     // "flexible dates", same as never picking one on the old form.
     const startDate: string | null = null;
-    const templatePlan = generateItinerary(destination, days, people, style, prefs, originCity, startDate);
+    const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
 
-    const [aiResult] = await Promise.all([
-      tryGenerateAiItinerary(destination, sc, days, people, prefs, originCity, startDate, budget.perDayPerPerson),
+    if (legs.length === 1) {
+      // Single destination — unchanged from before this trip supported
+      // multiple legs at all.
+      const { destination, days } = legs[0];
+      const budget = destination.budgetBreakdown.find((b) => b.tier === sc.budgetTier) ?? destination.budgetBreakdown[1];
+      const templatePlan = generateItinerary(destination, days, people, style, prefs, originCity, startDate);
+
+      const [aiResult] = await Promise.all([
+        tryGenerateAiItinerary(destination, sc, days, people, prefs, originCity, startDate, budget.perDayPerPerson),
+        new Promise((resolve) => setTimeout(resolve, MIN_GENERATE_DELAY_MS)),
+      ]);
+
+      const finalPlan: TripPlan = aiResult
+        ? {
+            ...templatePlan,
+            planSource: "ai",
+            itinerary: aiResult.itinerary.map((day, i) => ({
+              ...day,
+              // stay/stayType/transport aren't AI-generated (ResultStep
+              // doesn't render them per-day anyway — see its Day-by-Day
+              // section) — carried over from the matching template day so
+              // the type stays fully populated regardless.
+              stay: templatePlan.itinerary[i]?.stay ?? templatePlan.itinerary[0].stay,
+              stayType: templatePlan.itinerary[i]?.stayType ?? templatePlan.itinerary[0].stayType,
+              transport: templatePlan.itinerary[i]?.transport ?? templatePlan.itinerary[0].transport,
+            })),
+            tips: aiResult.tips.length > 0 ? aiResult.tips : templatePlan.tips,
+          }
+        : templatePlan;
+
+      setPlan(finalPlan);
+      setStep("result");
+      return;
+    }
+
+    // Multi-destination ("Mysore then Coorg") — the template plan merges
+    // one generateItinerary() call per leg (see generateMultiLegItinerary
+    // in data.ts). The AI attempt mirrors that: one tryGenerateAiItinerary
+    // call per leg, in parallel, each producing just that leg's days.
+    // All-or-nothing on the AI side deliberately — mixing an AI-written
+    // leg with a template-written leg in the same trip would read as an
+    // inconsistent quality jump between stops, so any single leg's AI
+    // call failing falls the *whole* plan back to the template version
+    // rather than a partial blend.
+    const templatePlan = generateMultiLegItinerary(legs, people, style, prefs, originCity, startDate);
+
+    const [aiResults] = await Promise.all([
+      Promise.all(
+        legs.map((leg) => {
+          const budget = leg.destination.budgetBreakdown.find((b) => b.tier === sc.budgetTier) ?? leg.destination.budgetBreakdown[1];
+          return tryGenerateAiItinerary(leg.destination, sc, leg.days, people, prefs, originCity, startDate, budget.perDayPerPerson);
+        }),
+      ),
       new Promise((resolve) => setTimeout(resolve, MIN_GENERATE_DELAY_MS)),
     ]);
 
-    const finalPlan: TripPlan = aiResult
-      ? {
-          ...templatePlan,
-          planSource: "ai",
-          itinerary: aiResult.itinerary.map((day, i) => ({
+    const allAiSucceeded = aiResults.every((r) => r !== null);
+    let finalPlan: TripPlan;
+    if (allAiSucceeded) {
+      let dayOffset = 0;
+      const mergedItinerary: GeneratedDay[] = [];
+      const combinedTips: string[] = [];
+      legs.forEach((leg, i) => {
+        const result = aiResults[i]!;
+        const legTemplateDays = templatePlan.itinerary.slice(dayOffset, dayOffset + leg.days);
+        result.itinerary.forEach((day, di) => {
+          mergedItinerary.push({
             ...day,
-            // stay/stayType/transport aren't AI-generated (ResultStep
-            // doesn't render them per-day anyway — see its Day-by-Day
-            // section) — carried over from the matching template day so
-            // the type stays fully populated regardless.
-            stay: templatePlan.itinerary[i]?.stay ?? templatePlan.itinerary[0].stay,
-            stayType: templatePlan.itinerary[i]?.stayType ?? templatePlan.itinerary[0].stayType,
-            transport: templatePlan.itinerary[i]?.transport ?? templatePlan.itinerary[0].transport,
-          })),
-          tips: aiResult.tips.length > 0 ? aiResult.tips : templatePlan.tips,
-        }
-      : templatePlan;
+            day: dayOffset + di + 1,
+            legDestinationName: leg.destination.name,
+            stay: legTemplateDays[di]?.stay ?? legTemplateDays[0]?.stay ?? "",
+            stayType: legTemplateDays[di]?.stayType ?? legTemplateDays[0]?.stayType ?? "",
+            transport: legTemplateDays[di]?.transport ?? legTemplateDays[0]?.transport ?? "",
+          });
+        });
+        dayOffset += leg.days;
+        if (result.tips.length > 0) combinedTips.push(...result.tips.slice(0, 2));
+      });
+      finalPlan = {
+        ...templatePlan,
+        planSource: "ai",
+        itinerary: mergedItinerary,
+        tips: combinedTips.length > 0 ? combinedTips : templatePlan.tips,
+      };
+    } else {
+      finalPlan = templatePlan;
+    }
 
     setPlan(finalPlan);
     setStep("result");

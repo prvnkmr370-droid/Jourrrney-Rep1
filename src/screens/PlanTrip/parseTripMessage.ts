@@ -42,9 +42,18 @@ function stripLeadIn(text: string): string {
 
 // Also strip a trailing day-count clause ("... for 5 days", "... 5 days")
 // before destination-matching, so "mysore for 5 days" matches on "mysore"
-// alone rather than the whole uncut phrase.
+// alone rather than the whole uncut phrase. A day count can also lead
+// ("3 days in Mysore" — the natural phrasing for a multi-leg message
+// like "3 days in Mysore, then 2 days in Coorg") — stripping that leaves
+// a dangling "in", which the second replace here also cleans up so
+// "in mysore" still resolves to "mysore".
 function stripDayClause(text: string): string {
-  return text.replace(/\bfor\s+\d+\s*-?\s*days?\b/i, "").replace(/\b\d+\s*-?\s*days?\b/i, "").trim();
+  return text
+    .replace(/\bfor\s+\d+\s*-?\s*days?\b/i, "")
+    .replace(/\b\d+\s*-?\s*days?\b/i, "")
+    .trim()
+    .replace(/^(?:in|at|to)\s+/i, "")
+    .trim();
 }
 
 export interface ParsedTripMessage {
@@ -137,3 +146,58 @@ export const SUGGESTED_DESTINATIONS: Destination[] = [...DESTINATIONS]
   .filter((d) => !d.hidden)
   .sort((a, b) => b.reviews - a.reviews)
   .slice(0, 4);
+
+export interface TripSegment {
+  destination: Destination;
+  days: number | null;
+}
+
+// Only these explicit sequencing words split a message into multiple
+// legs — deliberately NOT splitting on bare "and" or commas, since
+// those show up constantly inside a genuinely single-destination
+// message ("Mysore, Karnataka", "temples and palaces") without meaning
+// "then go somewhere else". "then"/"followed by"/"after that" are
+// unambiguous sequencing signals in normal English.
+const MULTI_DESTINATION_SPLIT = /\s*(?:,?\s*and\s+then\s+|,?\s*then\s+|\s+followed\s+by\s+|\s+after\s+that\s+)\s*/i;
+
+// One segment must resolve *unambiguously* to count for multi-
+// destination parsing — an ambiguous segment (multiple candidates)
+// would need its own disambiguation UI per leg, which multi-destination
+// parsing deliberately doesn't attempt; the caller just falls back to
+// treating the whole message as a single (likely failing) destination
+// parse in that case, same as any other unmatched message.
+function matchSegment(raw: string): TripSegment | null {
+  const days = extractDays(raw);
+  const cleaned = stripDayClause(stripLeadIn(raw));
+  if (!cleaned) return null;
+
+  const exact = resolveUnambiguousMatch(cleaned);
+  if (exact) return { destination: exact, days };
+
+  const live = findLiveMatches(cleaned, 4);
+  if (live.length === 1) return { destination: live[0], days };
+  return null;
+}
+
+/**
+ * "Mysore then Coorg", "3 days in Mysore, then 2 days in Coorg" — returns
+ * null (not an empty array) whenever the message isn't genuinely multi-
+ * destination, so callers can use `parsed !== null` as the trigger for
+ * multi-leg chat flow without a separate length check everywhere.
+ */
+export function parseMultiDestinationMessage(raw: string): TripSegment[] | null {
+  const segments = raw.split(MULTI_DESTINATION_SPLIT).map((s) => s.trim()).filter(Boolean);
+  if (segments.length < 2) return null;
+
+  const matches = segments.map(matchSegment);
+  if (matches.some((m) => m === null)) return null;
+  const resolved = matches as TripSegment[];
+
+  // "Mysore then Mysore" isn't a real multi-leg trip — likely a mis-split
+  // of a single-destination message that happened to contain "then" for
+  // an unrelated reason.
+  const uniqueIds = new Set(resolved.map((m) => m.destination.id));
+  if (uniqueIds.size !== resolved.length) return null;
+
+  return resolved;
+}

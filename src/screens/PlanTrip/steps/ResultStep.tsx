@@ -33,6 +33,8 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
   const [exporting, setExporting] = useState(false);
   const perPersonPerDay = Math.round(plan.totalCost / plan.days / plan.people);
   const foodPerPersonPerDay = Math.round(plan.foodBudget / plan.days / plan.people);
+  const isMultiLeg = !!plan.legs && plan.legs.length > 1;
+  const routeLabel = isMultiLeg ? plan.legs!.map((l) => l.destination.name).join(" → ") : plan.destination.name;
 
   const handleDownload = async () => {
     if (exporting) return;
@@ -72,7 +74,7 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
             gradient card below), not these two closely-related lines. */}
         <View style={{ gap: 2 }}>
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>
-            {plan.origin} → {plan.destination.name} · {plan.days} days · {plan.styleConfig.label}
+            {plan.origin} → {routeLabel} · {plan.days} days · {plan.styleConfig.label}
           </Text>
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>
             📅 {plan.startDate ? formatDateLabel(plan.startDate) : "Flexible dates"}
@@ -87,9 +89,24 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
           style={{ borderRadius: 20, padding: 20 }}
         >
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>{plan.styleConfig.label}</Text>
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.75)", marginTop: 4 }}>
-            {plan.days} days · {plan.people} people · {plan.destination.name}
-          </Text>
+          {/* Multi-leg trips show each stop's own day count on its own
+              line ("3 days in Mysore", "2 days in Coorg") rather than one
+              flat "5 days · N people · Mysore" line that would silently
+              drop every stop after the first. */}
+          {isMultiLeg ? (
+            <View style={{ marginTop: 4, gap: 2 }}>
+              {plan.legs!.map((leg) => (
+                <Text key={leg.destination.id} style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.75)" }}>
+                  {leg.days} day{leg.days === 1 ? "" : "s"} in {leg.destination.name}
+                </Text>
+              ))}
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.75)" }}>{plan.people} people</Text>
+            </View>
+          ) : (
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.75)", marginTop: 4 }}>
+              {plan.days} days · {plan.people} people · {plan.destination.name}
+            </Text>
+          )}
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 28, color: "#FFFFFF", marginTop: 12 }}>
             ₹{plan.totalCost.toLocaleString("en-IN")} total
           </Text>
@@ -145,9 +162,28 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
           <View style={{ gap: 10 }}>
             {plan.itinerary.map((day, i) => {
               const expanded = expandedDay === i;
+              // Multi-leg trips insert a small divider header right before
+              // the first day of each new leg ("📍 Coorg — Days 4-6") so the
+              // list visually reads as stops in sequence rather than one
+              // undifferentiated block of days. Detected by comparing to
+              // the previous day's leg name rather than precomputing leg
+              // boundaries up front, since itinerary is already a flat
+              // day array by the time it reaches this component.
+              const prevLeg = i > 0 ? plan.itinerary[i - 1].legDestinationName : undefined;
+              const isNewLeg = isMultiLeg && day.legDestinationName && day.legDestinationName !== prevLeg;
+              const legDays = isNewLeg ? plan.legs!.find((l) => l.destination.name === day.legDestinationName) : undefined;
               return (
+                <View key={day.day}>
+                  {isNewLeg && (
+                    <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 10, marginTop: i > 0 ? 4 : 0 }}>
+                      <Text style={{ fontSize: 13 }}>📍</Text>
+                      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>
+                        {day.legDestinationName}
+                        {legDays ? ` — Day${legDays.endDay - legDays.startDay === 0 ? "" : "s"} ${legDays.startDay}-${legDays.endDay}` : ""}
+                      </Text>
+                    </View>
+                  )}
                 <Pressable
-                  key={day.day}
                   onPress={() => setExpandedDay(expanded ? null : i)}
                   style={{ backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 14 }}
                 >
@@ -172,6 +208,7 @@ export default function ResultStep({ plan, onBack, onRebuild, tabBarHeight = 0 }
                     </View>
                   )}
                 </Pressable>
+                </View>
               );
             })}
           </View>

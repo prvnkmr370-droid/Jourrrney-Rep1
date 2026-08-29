@@ -46,7 +46,7 @@ import type { Destination } from "@/data/destinations";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
-import { parseTripMessage, extractDays, SUGGESTED_DESTINATIONS } from "../parseTripMessage";
+import { parseTripMessage, parseMultiDestinationMessage, extractDays, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
 
 interface Chip {
@@ -67,6 +67,17 @@ interface ChatMessage {
 
 type Phase = "destination" | "days" | "travelers" | "style" | "confirm";
 
+/** One stop on the trip — days is null until asked/answered. A single-
+ * destination trip (still the vast majority) is just a one-element
+ * `legs` array; multi-destination ("Mysore then Coorg") is 2+. Keeping
+ * ONE model for both instead of a separate single-destination code path
+ * is what let every phase-transition/correction function below stay a
+ * single implementation rather than two parallel ones. */
+interface Leg {
+  destination: Destination;
+  days: number | null;
+}
+
 interface Props {
   onBack?: () => void;
   originCity: string;
@@ -75,7 +86,7 @@ interface Props {
    * dreaming of going" question entirely and opens straight on the days
    * question, since the destination is already known. */
   preselectedDestination?: Destination | null;
-  onReady: (destination: Destination, days: number, people: number, style: TravelStyle, interests: string[]) => void;
+  onReady: (legs: { destination: Destination; days: number }[], people: number, style: TravelStyle, interests: string[]) => void;
   tabBarHeight?: number;
 }
 
@@ -119,8 +130,8 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             id: nextId(),
             sender: "ai",
             text: originCity
-              ? `Hey! I'm Tia, your AI travel companion. 🧭\nI'll plan your perfect trip from ${originCity}. Where are you dreaming of going?`
-              : `Hey! I'm Tia, your AI travel companion. 🧭\nWhere are you dreaming of going? (Anywhere in India for now — tell me your starting city too if you like.)`,
+              ? `Hey! I'm Tia, your AI travel companion. 🧭\nI'll plan your perfect trip from ${originCity}. Where are you dreaming of going? (You can also say something like "Mysore then Coorg" for a multi-stop trip.)`
+              : `Hey! I'm Tia, your AI travel companion. 🧭\nWhere are you dreaming of going? (Anywhere in India for now — tell me your starting city too if you like. You can also say "Mysore then Coorg" for a multi-stop trip.)`,
           },
         ],
   );
@@ -128,9 +139,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const [phase, setPhase] = useState<Phase>(preselectedDestination ? "days" : "destination");
   const [inputHeight, setInputHeight] = useState(20);
   const [sending, setSending] = useState(false);
-  const collected = useRef<{ destination: Destination | null; days: number | null; people: number | null; style: TravelStyle | null; interests: string[] }>({
-    destination: preselectedDestination ?? null,
-    days: null,
+  const collected = useRef<{ legs: Leg[]; activeLegIndex: number; people: number | null; style: TravelStyle | null; interests: string[] }>({
+    legs: preselectedDestination ? [{ destination: preselectedDestination, days: null }] : [],
+    activeLegIndex: 0,
     people: null,
     style: null,
     interests: [],
@@ -168,12 +179,16 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
   };
 
-  const askConfirm = (dest: Destination, days: number, people: number, style: TravelStyle) => {
+  const askConfirm = () => {
+    const { legs, people, style } = collected.current;
+    if (!people || !style) return; // proceedFromCollected only calls this once both are set
     setPhase("confirm");
     const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
+    const totalDays = legs.reduce((sum, l) => sum + (l.days ?? 0), 0);
+    const routeLabel = legs.map((l) => `${l.days} day${l.days === 1 ? "" : "s"} in ${l.destination.name}`).join(", then ");
     const fromClause = originCity ? ` from ${originCity}` : "";
     pushAi(
-      `Here's the plan: a ${days}-day ${sc.label.toLowerCase()} trip to ${dest.name}${fromClause} for ${people} traveller${people === 1 ? "" : "s"}. Ready?`,
+      `Here's the plan: ${routeLabel} (${totalDays} day${totalDays === 1 ? "" : "s"} total)${fromClause}, ${sc.label.toLowerCase()} for ${people} traveller${people === 1 ? "" : "s"}. Ready?`,
       [{ label: "✨ Plan My Trip", onPress: confirmAndGenerate }],
     );
     scrollToEnd();
@@ -184,15 +199,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // correction) calls this afterward rather than deciding the next step
   // itself, so corrections can jump straight back to confirmation once
   // every field is filled, from wherever in the conversation they happen.
+  // For a multi-leg trip this asks for each leg's day count in turn
+  // (tracked via activeLegIndex) before moving on to travelers/style,
+  // same as it would for a single destination.
   const proceedFromCollected = () => {
-    const { destination, days, people, style } = collected.current;
-    if (!destination) {
+    const { legs, people, style } = collected.current;
+    if (legs.length === 0) {
       setPhase("destination");
       return;
     }
-    if (!days) {
+    const nextLegIdx = legs.findIndex((l) => l.days === null);
+    if (nextLegIdx !== -1) {
+      collected.current.activeLegIndex = nextLegIdx;
       setPhase("days");
-      pushAi(`How many days are you planning for ${destination.name}?`);
+      const leg = legs[nextLegIdx];
+      pushAi(legs.length > 1 ? `How many days in ${leg.destination.name}?` : `How many days are you planning for ${leg.destination.name}?`);
       scrollToEnd();
       return;
     }
@@ -204,26 +225,41 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       askStyle();
       return;
     }
-    askConfirm(destination, days, people, style);
+    askConfirm();
   };
 
-  const selectDestination = (dest: Destination, daysAlreadyKnown: number | null) => {
-    collected.current.destination = dest;
-    pushUser(dest.name);
-    if (daysAlreadyKnown) collected.current.days = daysAlreadyKnown;
-    pushAi(
-      daysAlreadyKnown
-        ? `Love it — ${daysAlreadyKnown} days in ${dest.name}! 🎒`
-        : `Great choice — ${dest.name}, ${dest.state}! ✨`,
-    );
+  // Replaces the old destination as the one place `legs` gets set —
+  // handles both a single match and a multi-stop match (2+ segments from
+  // parseMultiDestinationMessage) through the same path, so every caller
+  // (typed text, a disambiguation chip, a suggested-destination chip, the
+  // photo flow) shares one implementation regardless of which one it is.
+  const setLegs = (matches: TripSegment[]) => {
+    collected.current.legs = matches.map((m) => ({ destination: m.destination, days: m.days }));
+    collected.current.activeLegIndex = 0;
+    const routeLabel = matches.map((m) => m.destination.name).join(" → ");
+    pushUser(routeLabel);
+    if (matches.length > 1) {
+      pushAi(`Nice, a multi-stop trip: ${routeLabel}! 🧳`);
+    } else if (matches[0].days) {
+      pushAi(`Love it — ${matches[0].days} days in ${matches[0].destination.name}! 🎒`);
+    } else {
+      pushAi(`Great choice — ${matches[0].destination.name}, ${matches[0].destination.state}! ✨`);
+    }
     proceedFromCollected();
     scrollToEnd();
   };
 
+  // Thin single-destination wrapper — kept so every existing chip
+  // onPress (disambiguation candidates, suggested destinations, the
+  // photo flow) that only ever deals with one place doesn't need to
+  // build a TripSegment array itself.
+  const selectDestination = (dest: Destination, daysAlreadyKnown: number | null) => setLegs([{ destination: dest, days: daysAlreadyKnown }]);
+
   const selectDays = (n: number) => {
-    collected.current.days = n;
+    const leg = collected.current.legs[collected.current.activeLegIndex];
+    leg.days = n;
     pushUser(`${n} day${n === 1 ? "" : "s"}`);
-    pushAi(`Got it, ${n} day${n === 1 ? "" : "s"}.`);
+    pushAi(`Got it, ${n} day${n === 1 ? "" : "s"}${collected.current.legs.length > 1 ? ` in ${leg.destination.name}` : ""}.`);
     proceedFromCollected();
   };
 
@@ -241,8 +277,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   };
 
   const confirmAndGenerate = () => {
-    const { destination, days, people, style, interests } = collected.current;
-    if (destination && days && people && style) onReady(destination, days, people, style, interests);
+    const { legs, people, style, interests } = collected.current;
+    if (legs.length > 0 && legs.every((l): l is { destination: Destination; days: number } => l.days !== null) && people && style) {
+      onReady(legs, people, style, interests);
+    }
   };
 
   // Mid-chat corrections — only checked once a destination is already
@@ -253,18 +291,27 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // Recognizes a new destination name, a day count, a traveler count
   // ("4 people", "3 travellers"), or a style keyword anywhere in a
   // message, regardless of which question is currently being asked.
+  //
+  // Destination/day corrections are single-destination-trip only —
+  // which leg "actually make it 7 days" refers to is genuinely ambiguous
+  // once there's more than one, so a multi-leg trip only allows the
+  // trip-wide traveler-count/style corrections below (still useful, just
+  // narrower) rather than guessing which stop a correction meant.
   const applyCorrections = (text: string): string[] => {
-    if (!collected.current.destination || phase === "destination") return [];
+    const { legs } = collected.current;
+    if (legs.length === 0 || phase === "destination") return [];
     const changes: string[] = [];
 
-    const reparsed = parseTripMessage(text);
-    if (reparsed.destination && reparsed.destination.id !== collected.current.destination.id) {
-      collected.current.destination = reparsed.destination;
-      changes.push(`destination to ${reparsed.destination.name}`);
-    }
-    if (reparsed.days && reparsed.days !== collected.current.days) {
-      collected.current.days = reparsed.days;
-      changes.push(`${reparsed.days} day${reparsed.days === 1 ? "" : "s"}`);
+    if (legs.length === 1) {
+      const reparsed = parseTripMessage(text);
+      if (reparsed.destination && reparsed.destination.id !== legs[0].destination.id) {
+        legs[0].destination = reparsed.destination;
+        changes.push(`destination to ${reparsed.destination.name}`);
+      }
+      if (reparsed.days && reparsed.days !== legs[0].days) {
+        legs[0].days = reparsed.days;
+        changes.push(`${reparsed.days} day${reparsed.days === 1 ? "" : "s"}`);
+      }
     }
 
     const travelerMatch = text.match(/\b(\d{1,2})\s*(people|travell?ers?|of us|pax)\b/i);
@@ -301,6 +348,16 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     }
 
     if (phase === "destination") {
+      // Multi-destination ("Mysore then Coorg") checked first — it only
+      // ever returns non-null when it found 2+ genuinely distinct,
+      // unambiguously-matched legs, so this never intercepts an ordinary
+      // single-destination message.
+      const multi = parseMultiDestinationMessage(text);
+      if (multi) {
+        setLegs(multi);
+        return;
+      }
+
       const parsed = parseTripMessage(text);
       collected.current.interests = [...new Set([...collected.current.interests, ...parsed.interests])];
       if (parsed.destination) {
@@ -333,11 +390,11 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         setSending(false);
 
         if (intent?.destination) {
-          if (intent.days) collected.current.days = intent.days;
           if (intent.people) collected.current.people = intent.people;
           if (intent.style) collected.current.style = intent.style;
           if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
-          collected.current.destination = intent.destination;
+          collected.current.legs = [{ destination: intent.destination, days: intent.days }];
+          collected.current.activeLegIndex = 0;
           pushUser(intent.destination.name);
           pushAi(intent.reasoning || `Great choice — ${intent.destination.name}, ${intent.destination.state}! ✨`);
           proceedFromCollected();
@@ -418,11 +475,11 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     setSending(false);
 
     if (intent?.destination) {
-      if (intent.days) collected.current.days = intent.days;
       if (intent.people) collected.current.people = intent.people;
       if (intent.style) collected.current.style = intent.style;
       if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
-      collected.current.destination = intent.destination;
+      collected.current.legs = [{ destination: intent.destination, days: intent.days }];
+      collected.current.activeLegIndex = 0;
       pushAi(intent.reasoning || `Great choice — ${intent.destination.name}, ${intent.destination.state}! ✨`);
       proceedFromCollected();
       scrollToEnd();

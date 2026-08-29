@@ -130,6 +130,24 @@ export interface TripPlan {
   foodBudget: number;
   tips: string[];
   bookingChecklist: string[];
+  /** Set only for a multi-destination trip ("Mysore then Coorg") — see
+   * generateMultiLegItinerary() below. Undefined for the ordinary single-
+   * destination case, which is still the vast majority of plans and is
+   * completely unaffected by this field's existence: `destination` stays
+   * the first (or only) leg, `days`/`totalCost`/etc. stay trip-wide
+   * totals, and `itinerary` stays one flat, sequentially-numbered list —
+   * `legs` is purely additive metadata ResultStep.tsx uses to group that
+   * same list visually and show a multi-stop route summary, not a
+   * parallel/alternate data structure callers need to branch on. */
+  legs?: TripLeg[];
+}
+
+export interface TripLeg {
+  destination: Destination;
+  days: number;
+  /** 1-indexed, inclusive — this leg's days are itinerary[startDay-1..endDay-1]. */
+  startDay: number;
+  endDay: number;
 }
 
 export interface GeneratedDay {
@@ -142,6 +160,10 @@ export interface GeneratedDay {
   stay: string;
   stayType: string;
   transport: string;
+  /** Set only on multi-leg plans (see TripPlan.legs) — which leg's
+   * destination this day belongs to, so ResultStep.tsx can render a
+   * "📍 {name}" divider before the first day of each leg. */
+  legDestinationName?: string;
 }
 
 export const PREFERENCES = [
@@ -282,5 +304,70 @@ export function generateItinerary(
     foodBudget: budgetBreak.food * days * people,
     tips,
     bookingChecklist: sc.bookingTips,
+  };
+}
+
+/**
+ * Multi-destination trip ("Mysore then Coorg") — deliberately built by
+ * calling generateItinerary() once per leg and merging the results,
+ * rather than a parallel implementation, so every per-destination detail
+ * (budget tier lookup, accommodation/transport recommendations, the
+ * day-by-day content itself) stays exactly as accurate per leg as a
+ * single-destination trip to that same place would be. The only new work
+ * here is renumbering days sequentially across legs and combining the
+ * summary fields (cost, tips, checklist) into one trip-wide plan.
+ */
+export function generateMultiLegItinerary(
+  legs: { destination: Destination; days: number }[],
+  people: number,
+  style: TravelStyle,
+  prefs: string[],
+  origin: string,
+  startDate: string | null,
+): TripPlan {
+  const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
+  const legPlans = legs.map((leg) => generateItinerary(leg.destination, leg.days, people, style, prefs, origin, startDate));
+
+  let dayOffset = 0;
+  const mergedItinerary: GeneratedDay[] = [];
+  const tripLegs: TripLeg[] = [];
+  legPlans.forEach((legPlan, i) => {
+    const leg = legs[i];
+    const startDay = dayOffset + 1;
+    legPlan.itinerary.forEach((day, di) => {
+      mergedItinerary.push({ ...day, day: dayOffset + di + 1, legDestinationName: leg.destination.name });
+    });
+    dayOffset += leg.days;
+    tripLegs.push({ destination: leg.destination, days: leg.days, startDay, endDay: dayOffset });
+  });
+
+  return {
+    planSource: "template",
+    // First leg stands in for any code path that still reads
+    // plan.destination directly (e.g. a screen title fallback) — the
+    // real multi-stop route lives in `legs` below.
+    destination: legs[0].destination,
+    origin,
+    startDate,
+    days: dayOffset,
+    people,
+    style,
+    preferences: prefs,
+    totalCost: legPlans.reduce((sum, lp) => sum + lp.totalCost, 0),
+    itinerary: mergedItinerary,
+    styleConfig: sc,
+    transportReco: legPlans.map((lp, i) => `${legs[i].destination.name}: ${lp.transportReco}`).join(" · Then: "),
+    stayReco: legPlans.map((lp, i) => `${legs[i].destination.name}: ${lp.stayReco}`).join(" · Then: "),
+    localTransportReco: legPlans[0].localTransportReco,
+    foodBudget: legPlans.reduce((sum, lp) => sum + lp.foodBudget, 0),
+    // A couple of tips per leg rather than every tip from every leg —
+    // stays readable on a Smart Tips card meant for a skim, not a wall
+    // of text once there are 2-3 legs each contributing 5 tips.
+    tips: legPlans.flatMap((lp) => lp.tips.slice(0, 2)),
+    // Booking checklists overlap heavily across legs at the same travel
+    // style (e.g. "book IRCTC tickets 60 days ahead" applies trip-wide,
+    // not per-leg) — de-duplicated rather than repeated.
+    bookingChecklist: [...new Set(legPlans.flatMap((lp) => lp.bookingChecklist))].slice(0, 6),
+    legs: tripLegs,
   };
 }
