@@ -124,6 +124,15 @@ export interface Destination {
   hidden?: boolean;
   image: string;
   heroImage: string;
+  // Multiple real photos — the destination's own landmark plus genuine
+  // points of interest within it (e.g. Agra: Taj Mahal from a couple of
+  // angles, Agra Fort, Fatehpur Sikri, Mehtab Bagh) — shown as a
+  // scrollable carousel in DestinationDetail's hero, with a "View all"
+  // link into a dedicated full gallery screen. Optional and left
+  // undefined for destinations that don't have this populated yet;
+  // DestinationDetail falls back to `[heroImage]` (a single-photo
+  // "carousel") in that case, so nothing breaks for those.
+  gallery?: string[];
   // Required attribution for images sourced from Wikimedia Commons under
   // a CC BY-SA license (unlike this app's Unsplash images, which need
   // none). Shown as a small credit line on the hero in DestinationDetail.
@@ -452,6 +461,14 @@ export const DESTINATIONS: Destination[] = [
     description: "Agra is home to one of the Seven Wonders of the World — the magnificent Taj Mahal. Beyond the ivory marble mausoleum, explore Mughal-era forts, bazaars full of marble inlay work, and the rich culinary legacy of Awadhi cuisine.",
     image: "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1592635196078-9fdc757f27f4?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1591018653367-9c01498b3320?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1717761558642-32cbeccbee7e?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1524491887412-14c265900364?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "2–3 days",

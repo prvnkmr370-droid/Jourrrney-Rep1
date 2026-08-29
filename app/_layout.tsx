@@ -80,6 +80,7 @@ export default function RootLayout() {
           <Stack.Screen name="profile/settings" options={{ presentation: "card" }} />
           <Stack.Screen name="profile/legal/[doc]" options={{ presentation: "card" }} />
           <Stack.Screen name="destination/[id]" options={{ presentation: "card" }} />
+          <Stack.Screen name="destination/[id]/gallery" options={{ presentation: "card" }} />
           <Stack.Screen name="recently-viewed" options={{ presentation: "card" }} />
           <Stack.Screen name="plan/[destId]" options={{ presentation: "modal" }} />
           <Stack.Screen name="safety/[id]" options={{ presentation: "card" }} />

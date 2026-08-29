@@ -7,12 +7,13 @@
  * GPS/distance and journey-guide sub-flow on "How to Reach" isn't ported;
  * that tab instead renders the destination's own `transport` data).
  */
-import { useEffect, useState } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { useEffect, useMemo, useState } from "react";
+import { View, Text, Pressable, ScrollView, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles } from "lucide-react-native";
+import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -49,7 +50,9 @@ interface Props {
 export default function DestinationDetail({ destination: d, onBack, onPlanTrip }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
+  const { width } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<Tab>("Overview");
+  const [heroIndex, setHeroIndex] = useState(0);
 
   const markViewed = useRecentlyViewedStore((s) => s.markViewed);
   useEffect(() => {
@@ -59,11 +62,37 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const safetyColor = getSafetyColor(d.womenSafety.score);
   const safetyBg = getSafetyBg(d.womenSafety.score);
 
+  // Falls back to the single heroImage (as a one-slide "carousel") for
+  // the many destinations that don't have `gallery` populated yet — see
+  // the field's own doc comment in destinations.ts. Recomputed only when
+  // the destination itself changes, not on every render, since this
+  // array identity feeds the ScrollView below.
+  const heroPhotos = useMemo(() => (d.gallery && d.gallery.length > 0 ? d.gallery : [d.heroImage]), [d]);
+
+  const onHeroScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const next = Math.round(e.nativeEvent.contentOffset.x / width);
+    if (next !== heroIndex) setHeroIndex(next);
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
-      {/* Hero */}
+      {/* Hero — a horizontal, paged photo carousel (falls back to a
+          single-slide "carousel" of just heroImage when a destination
+          has no `gallery`) rather than one static image, so a page like
+          Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
+          and Mehtab Bagh, not just the one landmark photo. */}
       <View style={{ height: 300 }}>
-        <Image source={{ uri: d.heroImage }} style={{ width: "100%", height: 300 }} contentFit="cover" />
+        <ScrollView
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          onScroll={onHeroScroll}
+          scrollEventThrottle={16}
+        >
+          {heroPhotos.map((uri, i) => (
+            <Image key={`${uri}-${i}`} source={{ uri }} style={{ width, height: 300 }} contentFit="cover" />
+          ))}
+        </ScrollView>
         <LinearGradient
           colors={["rgba(0,0,0,0.4)", "transparent", "#1C1917"]}
           locations={[0, 0.4, 1]}
@@ -96,6 +125,48 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             Safety {d.womenSafety.score}/10
           </Text>
         </View>
+
+        {/* "View all" — stacked below the safety badge rather than
+            anywhere near the bottom info block, since that block's height
+            shifts with how many lines the rating/duration/season row
+            wraps to on a given screen. Opens the dedicated gallery grid
+            (app/destination/[id]/gallery.tsx), which itself has its own
+            back button returning here. */}
+        <Pressable
+          onPress={() => router.push(`/destination/${d.id}/gallery`)}
+          style={{
+            position: "absolute", top: insets.top + 48, right: 16,
+            flexDirection: "row", alignItems: "center", gap: 6,
+            backgroundColor: "rgba(0,0,0,0.55)",
+            borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
+          }}
+        >
+          <Images color="#FFFFFF" size={14} />
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>
+            {heroPhotos.length > 1 ? `View all ${heroPhotos.length}` : "View photo"}
+          </Text>
+        </Pressable>
+
+        {/* Dot indicators for the hero carousel — only meaningful (and
+            only rendered) once a destination actually has more than one
+            photo to page through. Vertically centred on the "Agra" name
+            text's own line, not sitting at either edge of it: bottom:84
+            was the line's top edge, bottom:48 its baseline/bottom edge —
+            the midpoint of that span, 66, is where a hyphen-in-the-middle-
+            of-the-text reading actually lands. */}
+        {heroPhotos.length > 1 && (
+          <View style={{ position: "absolute", bottom: 66, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}>
+            {heroPhotos.map((uri, i) => (
+              <View
+                key={`${uri}-${i}`}
+                style={{
+                  width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
+                  backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
+                }}
+              />
+            ))}
+          </View>
+        )}
 
         {/* Wikimedia Commons images are CC BY-SA — attribution is a
             license requirement, not a style choice. Unsplash images (the
