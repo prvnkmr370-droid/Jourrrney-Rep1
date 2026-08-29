@@ -99,4 +99,35 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Official sources checked (tourism.rajasthan.gov.in, obms-tourist.rajasthan.gov.in) had no facility-location data — this is general guidance, not a verified fact for these specific monuments.",
     },
   },
+  udaipur: {
+    toilets: {
+      summary: "City Palace Museum: dedicated accessible toilet + regular washrooms, per the museum's own facilities list",
+      details: [
+        "The City Palace Museum's own official website (citypalacemuseum.org) publishes a specific facilities list that includes both regular \"Washrooms\" and a separate \"Accessible Toilet\" — genuinely confirmed, not inferred.",
+        "No exact in-complex distance/location is published for these — the museum's site lists them as available facilities without further detail.",
+      ],
+      sourceNote: "Directly confirmed on citypalacemuseum.org's own published visitor-facilities list — this is real, destination-specific data, not general guidance.",
+    },
+    accessibility: {
+      summary: "City Palace Museum publishes a real facilities list: accessible lift, wheelchair, ramp, accessible toilet",
+      details: [
+        "The City Palace Museum, Udaipur explicitly states it \"provide[s] universal accessibility\" and lists these facilities on its own site: Information Desk, Accessible lift, Wheelchair, Ramp, Drinking water, Washrooms, Accessible Toilet, Childcare Room, Car parking.",
+        "The museum also publishes a Sensory Guide and Social Narrative specifically for visitors on the autism spectrum — a genuinely unusual level of accessibility documentation for an Indian heritage site.",
+        "Caveat from independent visitor reports: gallery sections are connected by stairs, and wheelchair users can generally reach the ground-floor ceremonial hall but may not reach every upper gallery where some artifacts are displayed — so the ground floor is confirmed accessible, upper floors are more limited.",
+        "Lake Pichola boat rides and other Udaipur attractions outside the City Palace complex don't have the same published accessibility detail — treat those separately.",
+      ],
+      sourceNote: "Facilities list is directly from citypalacemuseum.org's own published page — real, destination-specific, and unusually detailed for this category. The upper-gallery caveat is from independent visitor reports, not the museum's own statement.",
+    },
+    police: {
+      summary: "Udaipur Police AI WhatsApp tourist helpline: 7300059984 (launched July 2026)",
+      details: [
+        "Udaipur Police launched a dedicated AI chatbot WhatsApp helpline for tourists in July 2026 — number 7300059984, per IG Shrivastava's announcement, reported consistently across multiple Indian outlets (Times of India, ET TravelWorld, Dainik Bhaskar) around the same date.",
+        "General Police: 100",
+        "National Emergency: 112",
+        "Ambulance: 108",
+        "Tourist Safety Helpline (national): 1364, 24 hours",
+      ],
+      sourceNote: "WhatsApp helpline number corroborated across multiple independent news outlets reporting the same July 2026 launch and figure; the primary outlet pages themselves were not directly browsable due to a site-access restriction, so this rests on consistent secondary reporting rather than a first-party government page.",
+    },
+  },
 };
