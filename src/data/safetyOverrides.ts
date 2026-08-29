@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["darrang"] = {
+  police: {
+    summary: "Mangaldoi Sadar Police Station, NH15 (24hr): 03713 222 136 · SP Office Darrang",
+    details: [
+      "Mangaldoi Sadar Police Station — NH15, Mangaldai, open 24 hours: 03713 222 136, confirmed via a mapped listing.",
+      "SP Office, Darrang — B.R. Ambedkar Road, Mangaldoi — the district police headquarters.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via mapped business listings.",
+  },
+  medical: {
+    summary: "Mangaldai Civil Hospital — the district's main government hospital",
+    details: [
+      "Mangaldai Civil Hospital — Darrang district — the government hospital for the district headquarters town, confirmed via a National Health Systems Resource Centre listing.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via an NHSRC (a real public-health data resource) listing.",
+  },
+};
+
 SAFETY_OVERRIDES["nameri"] = {
   police: {
     summary: "Field Director, Nameri Tiger Reserve: +91-7099045650 — the reserve's own authority; Sonitpur district police covers the wider area",
