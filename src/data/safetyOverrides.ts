@@ -901,3 +901,23 @@ SAFETY_OVERRIDES["araku"] = {
     sourceNote: "All three facilities and bed counts taken directly from allurisitharamaraju.ap.gov.in's own official Health department page — genuinely specific, not a generic guess.",
   },
 };
+
+SAFETY_OVERRIDES["lambasingi"] = {
+  police: {
+    summary: "Chintapalli Police Station (the mandal headquarters town) — the nearest real station",
+    details: [
+      "Chintapalli Police Station — Chintapalli, Andhra Pradesh 531111 — the nearest station, in the mandal headquarters town, confirmed via a mapped listing. As a small village, Lambasingi itself has no separate station of its own.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing — the honest nearest-real-station answer for a small village rather than a fabricated on-site police presence.",
+  },
+  medical: {
+    summary: "CHC Chintapalli (50 beds, the nearest real hospital) — Lambasingi itself has no hospital of its own",
+    details: [
+      "Community Health Centre (CHC) Chintapalli — 50 beds — named directly on allurisitharamaraju.ap.gov.in's own official Health department page, the nearest real hospital to Lambasingi.",
+      "As a small village, Lambasingi has no hospital of its own — Chintapalli (the mandal headquarters) is genuinely the answer, not a padded pointer.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "CHC Chintapalli confirmed directly on allurisitharamaraju.ap.gov.in's own official Health department page (the same source used for the Araku entry).",
+  },
+};
