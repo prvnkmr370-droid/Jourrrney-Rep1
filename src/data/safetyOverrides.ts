@@ -1455,3 +1455,22 @@ SAFETY_OVERRIDES["dibrugarh"] = {
     sourceNote: "AMCH confirmed directly via its own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["silchar"] = {
+  police: {
+    summary: "Silchar Sadar Police Station, Fatak Bazar Road (24hr): 03842 246 279",
+    details: [
+      "Silchar Sadar Police Station — Fatak Bazar Road, Silchar, open 24 hours: 03842 246 279, confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Silchar Medical College & Hospital (SMCH) — the only referral hospital in southern Assam",
+    details: [
+      "Silchar Medical College & Hospital (SMCH) — Udarbond, SH39, near Silchar — described by its own official government site as \"the only referral hospital in the southern part of Assam,\" a genuinely significant regional facility.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "SMCH confirmed directly via its own official government site (silchar-mch.assam.gov.in), including its own stated regional significance.",
+  },
+};
