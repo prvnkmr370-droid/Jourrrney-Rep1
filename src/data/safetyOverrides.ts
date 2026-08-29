@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["dibru-saikhowa"] = {
+  police: {
+    summary: "Divisional Forest Officer, Tinsukia Wildlife Division — the park's own authority; Tinsukia district police for general matters",
+    details: [
+      "Divisional Forest Officer, Tinsukia Wildlife Division — Tinsukia, Pin 786126 — the official contact for visiting Dibru-Saikhowa, per the Assam State Portal's own National Parks page.",
+      "Dibru-Saikhowa is in Tinsukia district — the same police network covers it (see the Tinsukia entry: Tinsukia PS, SP Office, all named local stations), all from tinsukia.assam.gov.in's own official page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "DFO contact confirmed via the Assam State Portal's own official National Parks page; district police cross-referenced from the already-verified Tinsukia entry.",
+  },
+  medical: {
+    summary: "Tinsukia Medical College & Hospital (TMCH) — same district hospital as Tinsukia",
+    details: [
+      "Tinsukia Medical College & Hospital (TMCH) — the nearest well-equipped hospital, since Dibru-Saikhowa itself is a national park with no hospital inside it (see the Tinsukia entry for full detail).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Tinsukia entry (tinsukiamch.assam.gov.in) — both destinations share Tinsukia district.",
+  },
+};
+
 SAFETY_OVERRIDES["garampani"] = {
   police: {
     summary: "Bokakhat Police Station, Assam Trunk Road — the nearest real station, genuinely close to Silonijan/Garampani",
