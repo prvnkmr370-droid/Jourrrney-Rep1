@@ -1262,3 +1262,23 @@ SAFETY_OVERRIDES["lauria-nandangarh"] = {
     sourceNote: "Cross-referenced from the Valmiki Tiger Reserve entry's own verified westchamparan.nic.in source — both destinations share West Champaran district.",
   },
 };
+
+SAFETY_OVERRIDES["ashok-dham"] = {
+  police: {
+    summary: "Ramgarh Chowk Police Station — the block genuinely nearest the temple: 9031828159",
+    details: [
+      "Ramgarh Chowk Police Station — 9031828159 — the block where Ashok Dham Temple actually sits (near Beldariya/Aure), confirmed directly on lakhisarai.nic.in's official Police directory.",
+      "Lakhisarai (town/HQ) Police Station: 9031828139.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from lakhisarai.nic.in's own official District Administration Police directory.",
+  },
+  medical: {
+    summary: "Sadar Hospital, Lakhisarai — Near Jamui More — the district headquarters hospital",
+    details: [
+      "Sadar Hospital, Lakhisarai — Near Jamui More, Lakhisarai 811311: 9006625556, named directly on lakhisarai.nic.in's own official Hospitals directory.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on lakhisarai.nic.in, the district's own official government site.",
+  },
+};
