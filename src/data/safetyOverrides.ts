@@ -983,3 +983,25 @@ SAFETY_OVERRIDES["vishnupad-temple"] = {
     sourceNote: "Cross-referenced from the Mahabodhi Temple entry's own verified source (anmmch.bihar.gov.in) — the same hospital genuinely serves both temples, both being in Gaya district.",
   },
 };
+
+SAFETY_OVERRIDES["kesariya-stupa"] = {
+  police: {
+    summary: "Kesariya Police Station — genuinely named for this destination's own town: 9431822885",
+    details: [
+      "Kesariya Police Station — Kesaria block, Chakia sub-division, East Champaran district: 9431822885, named directly on eastchamparan.nic.in's own official Police directory.",
+      "Dumariya Ghat Police Station (same Kesaria block): 9431822886.",
+      "Police Control Room, Motihari (district HQ): 06252-242024.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All stations taken directly from eastchamparan.nic.in's own official District Administration Police directory — a genuinely complete list including a station named for Kesariya itself.",
+  },
+  medical: {
+    summary: "Primary Health Centre Kesaria — the local government facility, genuinely named for this destination's own town",
+    details: [
+      "Primary Health Centre Kesaria — Kesaria block, East Champaran: 7485801252, named directly on eastchamparan.nic.in's own official Hospitals directory.",
+      "For anything more serious, Motihari (the district headquarters) has the larger district-level hospital.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "PHC Kesaria confirmed directly on eastchamparan.nic.in's own official district government site.",
+  },
+};
