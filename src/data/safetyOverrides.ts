@@ -1033,3 +1033,26 @@ const PATNA_CENTRAL_MEDICAL: SafetyOverride = {
 
 SAFETY_OVERRIDES["prakash-punj"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
 SAFETY_OVERRIDES["buddha-smriti-park"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
+
+SAFETY_OVERRIDES["valmiki-tiger-reserve"] = {
+  police: {
+    summary: "Field Director, VTR (forest/reserve authority): +91 6254 245331 · Chief Wildlife Warden: 0612-2545366",
+    details: [
+      "Field Director, Valmiki Tiger Project — Belbag, Bettiah 845438: +91 6254 245331, the reserve's own on-the-ground authority for any incident inside the park.",
+      "Divisional Forest Officer (Division I): +91 6254-232017 · Divisional Forest Officer (Division II): +91 6254-240367 — both West Champaran, Belbag, Bettiah.",
+      "Chief Wildlife Warden (Patna HQ): 0612-2545366.",
+      "For general police matters, contact Bettiah Police (district HQ) or westchamparan.nic.in's own police directory.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All contacts taken directly from valmikitigerreserve.com's own official Contact Us page — genuinely the reserve's own authority structure, not a generic town police pointer.",
+  },
+  medical: {
+    summary: "MJK Hospital, Bettiah (~70km, district headquarters) — the nearest well-equipped hospital",
+    details: [
+      "MJK Hospital — Hospital Road, Bettiah 845438 — the district headquarters hospital, named directly on westchamparan.nic.in's own official Public Utility page, roughly 70km from the reserve itself per the reserve's own \"How to Reach\" page.",
+      "As a wildlife reserve, VTR has no hospital inside it — Bettiah is the genuine nearest option, stated honestly rather than padded.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "MJK Hospital confirmed directly on westchamparan.nic.in; the ~70km distance is from valmikitigerreserve.com's own official How to Reach page.",
+  },
+};
