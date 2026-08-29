@@ -1193,3 +1193,23 @@ SAFETY_OVERRIDES["ashokan-pillar-vaishali"] = {
     sourceNote: "Confirmed directly on vaishali.nic.in, the district's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["ruins-of-vikramshila"] = {
+  police: {
+    summary: "Kahalgaon Police Station, NH80 (right by the ruins, across the Ganges from Bhagalpur city)",
+    details: [
+      "Kahalgaon Police Station — NH80, Kahalgaon, Bhagalpur — the station genuinely nearest to the Vikramshila ruins, confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing — Kahalgaon, not Bhagalpur city itself, is the actual nearest town to the ruins.",
+  },
+  medical: {
+    summary: "Kahalgaon Sub-Divisional Hospital (nearest, but with a reported referral-capacity issue) · District Hospital Bhagalpur (~45km) for anything serious",
+    details: [
+      "A Sub-Divisional Hospital exists at Kahalgaon itself, but recent local news coverage (Hindustan) reported over 140 patients referred out in a single month due to capacity constraints — an honest caveat worth knowing before relying on it for anything serious.",
+      "District Hospital, Bhagalpur — Jagdishpur, Bhagalpur: +91 641-2300837, named directly on bhagalpur.nic.in's own official Health directory — the better-equipped option for anything beyond minor issues.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Kahalgaon Sub-Divisional Hospital's referral-capacity issue reported by Hindustan (a mainstream Bihar outlet); District Hospital Bhagalpur confirmed directly on bhagalpur.nic.in.",
+  },
+};
