@@ -6,6 +6,7 @@ import type { Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDestinationWeather, type WeatherSeverity } from "@/hooks/useDestinationWeather";
+import SafetyDetailCards from "../SafetyDetailCards";
 
 export default function SafetyTab({ destination: d }: { destination: Destination }) {
   const c = useThemeColors();
@@ -46,6 +47,8 @@ export default function SafetyTab({ destination: d }: { destination: Destination
       </LinearGradient>
 
       <WeatherAlertCard destinationId={d.id} c={c} />
+
+      <SafetyDetailCards destination={d} />
 
       <SafetySection title="✅ Safety Highlights" c={c}>
         {ws.highlights.map((h) => (
