@@ -1436,3 +1436,22 @@ SAFETY_OVERRIDES["haflong"] = {
     sourceNote: "Hospital confirmed via a mapped listing; the Kayakalp award is a real, reported fact from Dima Hasao district news coverage, not a generic claim.",
   },
 };
+
+SAFETY_OVERRIDES["dibrugarh"] = {
+  police: {
+    summary: "Sadar Police Station, RKB Path, Dibrugarh — the town's main station",
+    details: [
+      "Sadar Police Station — RKB Path, Dibrugarh 786001 — confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Assam Medical College & Hospital (AMCH) — one of the oldest and most premier medical institutes in Northeast India",
+    details: [
+      "Assam Medical College & Hospital (AMCH) — Dibrugarh East 786002, open 24 hours — one of the oldest and most premier medical institutes in the region, confirmed via its own official government site (amch-dibrugarh.assam.gov.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "AMCH confirmed directly via its own official government site.",
+  },
+};
