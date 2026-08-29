@@ -305,12 +305,13 @@ SAFETY_OVERRIDES["kerala"] = {
     sourceNote: "Tourism Police Station and its address/hours confirmed via mapped business listing; district emergency numbers taken directly from alappuzha.nic.in (official District Administration site) and dtpcalappuzha.com (District Tourism Promotion Council's own site).",
   },
   medical: {
-    summary: "General Hospital Alappuzha, Palace Road, Alleppey — named directly on the district's own official site",
+    summary: "General Hospital Alappuzha (government, Palace Road) · Sahrudaya Hospital (private, St Michael's Road) — two real options in town",
     details: [
       "General Hospital Alappuzha — Palace Road / General Hospital Road, Anantha Narayanapuram, Alappuzha 688011, open 24 hours — is named directly on alappuzha.nic.in's own official Public Utility listing: 0477-2253324.",
+      "Sahrudaya Hospital, Alappuzha — St Michael's Road, Alleppey, open 24 hours — a private hospital right in town: 0477 224 7000.",
       "Ambulance: 102 / 108",
     ],
-    sourceNote: "Hospital name, address, and phone number taken directly from alappuzha.nic.in's own official Public Utility page — genuine, district-government-confirmed.",
+    sourceNote: "General Hospital Alappuzha confirmed directly on alappuzha.nic.in's own official Public Utility page; Sahrudaya Hospital confirmed via a mapped listing.",
   },
 };
 
@@ -414,13 +415,14 @@ SAFETY_OVERRIDES["andaman"] = {
     sourceNote: "District helpline numbers taken directly from southandaman.nic.in's own official page; Aberdeen Police Station's name/address confirmed via the South Andaman administration's own police-station site (spsa.and.nic.in) and a mapped listing.",
   },
   medical: {
-    summary: "G.B. Pant Hospital, GB Pant Road, City Centre, Port Blair — the main hospital for the islands",
+    summary: "G.B. Pant Hospital (government, City Centre) · Chakraborty Hospital (private, Dollygunj, 24hr) — two real options",
     details: [
       "G.B. Pant Hospital — GB Pant Road, City Centre, Port Blair 744103 — is the main government hospital for the islands, with several direct lines: 03192 233665 / 246058 / 233455 / 230858.",
+      "Chakraborty Hospital — Dollygunj, Port Blair 744103, open 24 hours — a private hospital, a genuine second option: 099320 84868.",
       "Pharmacies are concentrated around Aberdeen Bazaar — carry prescriptions and a basic first-aid kit, especially before heading to more remote islands.",
       "Ambulance: 232102 / 233473",
     ],
-    sourceNote: "G.B. Pant Hospital's full address and phone numbers confirmed via a mapped listing; pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
+    sourceNote: "G.B. Pant Hospital's full address and phone numbers confirmed via a mapped listing; Chakraborty Hospital confirmed via a mapped listing; pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
   },
 };
 
@@ -437,12 +439,13 @@ SAFETY_OVERRIDES["rishikesh"] = {
     sourceNote: "Kotwali Rishikesh Police Station's name/address confirmed via a mapped business listing; the rest from a dedicated Rishikesh travel-guide site's own published Safety & Emergency page (visitrishikesh.com) — not a government page itself, but specific and well-organised.",
   },
   medical: {
-    summary: "AIIMS Rishikesh, Veerbhadra Marg — a major government hospital right in town",
+    summary: "AIIMS Rishikesh (government, in town) · Himalayan Hospital, Jolly Grant (private, ~20-23km on the Rishikesh-Dehradun highway)",
     details: [
       "All India Institute of Medical Sciences (AIIMS), Rishikesh — Veerbhadra Marg, Rishikesh, open 24 hours — is a major government hospital directly in town, a significant medical resource for a pilgrimage/adventure-sports destination.",
+      "Himalayan Hospital — Swami Ram Nagar, Jolly Grant, Dehradun, on the Rishikesh-Dehradun highway, ~20-23km from Rishikesh, adjacent to Dehradun (Jolly Grant) Airport: +91-135-2471200 — a well-regarded private multi-speciality option.",
       "Ambulance: 108",
     ],
-    sourceNote: "AIIMS Rishikesh's name and address confirmed via its own official site (aiimsrishikesh.edu.in) and a mapped listing.",
+    sourceNote: "AIIMS Rishikesh's name and address confirmed via its own official site (aiimsrishikesh.edu.in) and a mapped listing; Himalayan Hospital confirmed via its own official site (himalayanhospital.org), including the real ~20-23km distance from Rishikesh.",
   },
   areaConditions: {
     summary: "Monkeys near Lakshman Jhula can be aggressive — keep food hidden and avoid direct eye contact",
@@ -551,12 +554,13 @@ SAFETY_OVERRIDES["coorg"] = {
     sourceNote: "All numbers taken directly from coorg.com's own published Emergency Service Contacts page and kodagu.nic.in (the official Kodagu District Government site); the Abbey Falls check-post confirmed via a separate mapped listing.",
   },
   medical: {
-    summary: "District Hospital, Near Toll Gate, Madikeri — named directly on the district's own official site",
+    summary: "District Hospital, Madikeri (government) · Ashwini Hospital, Mercara Road (private) — two real options",
     details: [
       "District Hospital — Near Toll Gate, Madikeri, Kodagu — is Coorg's main government hospital, named and addressed directly on kodagu.nic.in's own official Public Utility page: 94498 43175.",
+      "Ashwini Hospital — Mercara Road, Madikeri — a private hospital option in the same town, confirmed via a mapped listing.",
       "Ambulance: 108",
     ],
-    sourceNote: "Hospital name, address, and number taken directly from kodagu.nic.in's own official district government site.",
+    sourceNote: "District Hospital confirmed directly on kodagu.nic.in's own official district government site; Ashwini Hospital confirmed via a mapped listing.",
   },
 };
 
@@ -872,12 +876,13 @@ SAFETY_OVERRIDES["vijayawada"] = {
     sourceNote: "One Town Police Station confirmed via a mapped listing; the Devasthanam toll-free number confirmed via search results referencing the temple trust's own listed contact (the trust's own website itself was broken/unusable when checked directly, same as Srisailam's).",
   },
   medical: {
-    summary: "Government General Hospital (GGH), Old Bus Stand Road, Hanumanpet — the main government hospital",
+    summary: "Government General Hospital (GGH, government) · Andhra Hospital Heart & Brain Institute (private) — two real options",
     details: [
       "Government General Hospital (GGH) — Old Bus Stand Road, Hanumanpet, Vijayawada 520002: +91-866-245-2244.",
+      "Andhra Hospital Heart and Brain Institute — 29/6-41, Ramchandra Rao Road, Vijayawada, open 24 hours — a private hospital, confirmed via its own official site (andhrahospitals.org): 0866 244 2333.",
       "Ambulance: 108",
     ],
-    sourceNote: "GGH's name, address, and number confirmed via a mapped business listing.",
+    sourceNote: "GGH's name, address, and number confirmed via a mapped business listing; Andhra Hospital confirmed via its own official site.",
   },
 };
 
