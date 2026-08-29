@@ -713,6 +713,15 @@ SAFETY_OVERRIDES["mathura-vrindavan"] = {
 };
 
 SAFETY_OVERRIDES["lucknow"] = {
+  safetyLevel: {
+    summary: "One of only 8 cities nationwide with dedicated Central Govt \"Safe City\" safety infrastructure funding",
+    details: [
+      "Lucknow is one of just 8 cities in the entire country sanctioned under the Ministry of Home Affairs' \"Safe City\" project (Nirbhaya Fund) — alongside Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, and Ahmedabad — funding dedicated women's-safety infrastructure such as expanded CCTV surveillance, better-lit streets, and rapid-response policing in public spaces.",
+      "This is real, dedicated central funding for women's safety infrastructure, not a general city ranking — it reflects investment in the systems, not a guarantee of zero incidents.",
+      "Police: 100 · UP Police Helpline: 112 · Women's Helpline: 1090",
+    ],
+    sourceNote: "Confirmed directly on safecity.mha.gov.in and the Ministry of Home Affairs' own Women Safety Division page (mha.gov.in) — the list of 8 sanctioned cities is stated explicitly on the official site.",
+  },
   police: {
     summary: "Hazratganj Kotwali Police Station (main shopping/tourist district): 094544 03853",
     details: [
