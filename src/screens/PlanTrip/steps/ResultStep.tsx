@@ -12,7 +12,7 @@ interface Props {
   plan: TripPlan;
   onBack?: () => void;
   onRebuild: () => void;
-  /** See FormStep's doc comment — height of the floating tab bar, 0 if none. */
+  /** See ChatStep's doc comment — height of the floating tab bar, 0 if none. */
   tabBarHeight?: number;
 }
 

@@ -284,7 +284,3 @@ export function generateItinerary(
     bookingChecklist: sc.bookingTips,
   };
 }
-
-export function getDefaultDestination(preselectedId?: string): Destination {
-  return DESTINATIONS.find((d) => d.id === preselectedId) ?? DESTINATIONS.find((d) => d.id === "agra") ?? DESTINATIONS[0];
-}
