@@ -599,3 +599,23 @@ SAFETY_OVERRIDES["kabini"] = {
     sourceNote: "Kabini Care Hospital confirmed via a mapped business listing; Mysuru fallback cross-referenced from the Mysuru entry's own verified sources.",
   },
 };
+
+SAFETY_OVERRIDES["vizag"] = {
+  police: {
+    summary: "Visakhapatnam City Police Commissioner's Office, Suryabagh: 0891-2562709",
+    details: [
+      "Visakhapatnam City Police — Office of the Commissioner of Police, Police Barracks, Suryabagh, Visakhapatnam 530001: 0891-2562709.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from visakhapatnam.ap.gov.in's own official Police Stations directory page.",
+  },
+  medical: {
+    summary: "King George Hospital (government, Maharani Peta) · Apollo Hospitals (private, Waltair Main Rd, near RK Beach)",
+    details: [
+      "King George Hospital (KGH) — 14-31-5, KGH Down Road, Maharani Peta, Visakhapatnam, open 24 hours — the major government hospital, also named directly on visakhapatnam.ap.gov.in's own official site.",
+      "Apollo Hospitals — 10-50-2 Waltair Main Road, Ram Nagar, Visakhapatnam, open 24 hours — a well-known private hospital genuinely close to the RK Beach/Waltair tourist area: 0891 692 6803.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "KGH confirmed via visakhapatnam.ap.gov.in's own official Public Utility page and a mapped listing; Apollo Hospitals confirmed via its own official site (apollohospitals.com).",
+  },
+};
