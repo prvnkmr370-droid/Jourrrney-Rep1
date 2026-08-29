@@ -1352,3 +1352,24 @@ SAFETY_OVERRIDES["amjhar-sharif"] = {
     sourceNote: "Confirmed directly on aurangabad.bih.nic.in, the district's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["anand-bagh-palace"] = {
+  police: {
+    summary: "Sadar Police Station, Darbhanga (right by the palace area)",
+    details: [
+      "Sadar Police Station — Darbhanga Sadar, right in the same area as Anand Bagh/Rambagh Palace — confirmed via a mapped listing, one of the 37 police stations listed on darbhanga.nic.in's own official Police page.",
+      "Darbhanga district also has a dedicated Mahila (Women's) Thana, per the same official list.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Sadar Police Station confirmed via a mapped listing; the full 37-station district list confirmed directly on darbhanga.nic.in's own official government site.",
+  },
+  medical: {
+    summary: "DMCH (Darbhanga Medical College Hospital, government, Laheriasarai) · Paras Hospital (private, Allalpatti) — two real options",
+    details: [
+      "DMCH (Darbhanga Medical College Hospital) — Laheriasarai, Darbhanga: 0272-233081, emergency line 256203, named directly on darbhanga.nic.in's own official Hospitals directory.",
+      "Paras Hospital — Allalpatti, Darbhanga: 667700 — a private hospital, also named directly on the same official directory.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals taken directly from darbhanga.nic.in's own official district government Hospitals directory.",
+  },
+};
