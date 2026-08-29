@@ -20,7 +20,7 @@
  *     applyCorrections()/proceedFromCollected() below.
  */
 import { useMemo, useRef, useState } from "react";
-import { View, Text, Pressable, ScrollView, TextInput, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
+import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Send } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
@@ -359,7 +359,15 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const showChips = useMemo(() => messages[messages.length - 1]?.sender === "ai" && !!messages[messages.length - 1]?.chips, [messages]);
 
   return (
-    <View style={{ flex: 1, backgroundColor: c.bg }}>
+    // KeyboardAvoidingView is what actually fixes "the input field is
+    // hidden when the keyboard opens" — nothing in this screen previously
+    // accounted for the keyboard at all, so the input bar just sat behind
+    // it once the OS keyboard came up. "padding" on iOS and "height" on
+    // Android are the standard cross-platform pairing for a screen shaped
+    // like this one (scrollable content + a fixed input bar at the
+    // bottom) — no native header sits above this screen (it draws its
+    // own), so no extra keyboardVerticalOffset is needed.
+    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : "height"}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 20, paddingTop: insets.top + 8, paddingBottom: 12, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}>
         {onBack && (
           <Pressable onPress={onBack} style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
@@ -379,6 +387,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         contentContainerStyle={{ padding: 16, paddingBottom: 20, gap: 12 }}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
+        onContentSizeChange={scrollToEnd}
       >
         {messages.map((m) => (
           <MessageBubble key={m.id} message={m} c={c} isLastChips={showChips && m.id === messages[messages.length - 1].id} />
@@ -402,6 +411,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             value={input}
             onChangeText={setInput}
             onSubmitEditing={handleSend}
+            onFocus={scrollToEnd}
             multiline
             editable={!sending}
             onContentSizeChange={(e: NativeSyntheticEvent<TextInputContentSizeChangeEventData>) =>
@@ -426,7 +436,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           <Send color={input.trim() && !sending ? "#FFFFFF" : c.textMuted} size={18} />
         </Pressable>
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
@@ -436,7 +446,7 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
     <View style={{ flexDirection: "row", justifyContent: isAi ? "flex-start" : "flex-end", gap: 8 }}>
       {isAi && (
         <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#333C81", alignItems: "center", justifyContent: "center", marginTop: 2 }}>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>T</Text>
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>t</Text>
         </View>
       )}
       <View style={{ maxWidth: "78%", gap: 8 }}>
