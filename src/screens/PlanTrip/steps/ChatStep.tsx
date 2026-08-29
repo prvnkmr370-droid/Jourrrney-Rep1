@@ -2,11 +2,22 @@
  * Source of truth: user-provided screenshot of the target "Plan My Trip"
  * chat screen (a conversational blank-screen AI input, replacing the old
  * multi-section form entirely — see FormStep's removal in this same
- * change). Jourr, the app's AI travel companion, asks a short sequence of
+ * change). Tia, the app's AI travel companion, asks a short sequence of
  * questions — destination, days, travelers, trip style — parsing free-text
  * replies where it can (parseTripMessage.ts) and falling back to quick-
  * reply chips for anything enumerable, before handing off to the existing
  * generating/result flow.
+ *
+ * Two things inspired by researching how Layla.ai's chat behaves:
+ *  1. Fuzzy requests ("somewhere warm and cheap in February") that the
+ *     fast local matcher can't resolve fall back to a Gemini-backed
+ *     interpretation (aiIntent.ts) grounded in this app's own destination
+ *     list, rather than dead-ending on "I don't understand."
+ *  2. The conversation isn't a rigid one-way wizard — a mid-chat
+ *     correction ("actually make it 7 days", "make it premium instead")
+ *     is recognized at any point past the initial destination answer, not
+ *     just when the current question happens to be about that field. See
+ *     applyCorrections()/proceedFromCollected() below.
  */
 import { useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
@@ -17,6 +28,7 @@ import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, extractDays, SUGGESTED_DESTINATIONS } from "../parseTripMessage";
+import { tryParseTripIntent } from "../aiIntent";
 
 interface Chip {
   label: string;
@@ -48,6 +60,20 @@ let idCounter = 0;
 const nextId = () => `m${++idCounter}`;
 
 const TRAVELER_OPTIONS = [1, 2, 3, 4];
+const THINKING_ID = "thinking";
+
+// Full label match ("Budget Explorer") first, then the plainer single
+// words people actually say in a sentence ("make it premium instead") —
+// checked as whole words so "comfortable" doesn't also fire on something
+// like "uncomfortable".
+const STYLE_KEYWORDS: Record<TravelStyle, RegExp> = {
+  backpacker: /\b(budget|backpacker|backpacking)\b/,
+  comfortable: /\bcomfortable\b/,
+  premium: /\b(premium|luxury|luxurious)\b/,
+};
+
+const styleKeywordMatch = (lower: string) =>
+  STYLE_CONFIGS.find((sc) => lower.includes(sc.label.toLowerCase()) || STYLE_KEYWORDS[sc.id].test(lower));
 
 export default function ChatStep({ onBack, originCity, preselectedDestination, onReady, tabBarHeight = 0 }: Props) {
   const insets = useSafeAreaInsets();
@@ -60,7 +86,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           {
             id: nextId(),
             sender: "ai",
-            text: `Hey! I'm Jourr, your AI travel companion. 🧭\nLet's plan your trip to ${preselectedDestination.name}, ${preselectedDestination.state}! How many days are you planning for?`,
+            text: `Hey! I'm Tia, your AI travel companion. 🧭\nLet's plan your trip to ${preselectedDestination.name}, ${preselectedDestination.state}! How many days are you planning for?`,
           },
         ]
       : [
@@ -68,14 +94,15 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             id: nextId(),
             sender: "ai",
             text: originCity
-              ? `Hey! I'm Jourr, your AI travel companion. 🧭\nI'll plan your perfect trip from ${originCity}. Where are you dreaming of going?`
-              : `Hey! I'm Jourr, your AI travel companion. 🧭\nWhere are you dreaming of going? (Anywhere in India for now — tell me your starting city too if you like.)`,
+              ? `Hey! I'm Tia, your AI travel companion. 🧭\nI'll plan your perfect trip from ${originCity}. Where are you dreaming of going?`
+              : `Hey! I'm Tia, your AI travel companion. 🧭\nWhere are you dreaming of going? (Anywhere in India for now — tell me your starting city too if you like.)`,
           },
         ],
   );
   const [input, setInput] = useState("");
   const [phase, setPhase] = useState<Phase>(preselectedDestination ? "days" : "destination");
   const [inputHeight, setInputHeight] = useState(20);
+  const [sending, setSending] = useState(false);
   const collected = useRef<{ destination: Destination | null; days: number | null; people: number | null; style: TravelStyle | null; interests: string[] }>({
     destination: preselectedDestination ?? null,
     days: null,
@@ -88,6 +115,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const pushAi = (text: string, chips?: Chip[]) =>
     setMessages((prev) => [...prev, { id: nextId(), sender: "ai", text, chips }]);
   const pushUser = (text: string) => setMessages((prev) => [...prev, { id: nextId(), sender: "user", text }]);
+  const removeMessage = (id: string) => setMessages((prev) => prev.filter((m) => m.id !== id));
 
   const scrollToEnd = () => requestAnimationFrame(() => scrollRef.current?.scrollToEnd({ animated: true }));
 
@@ -126,17 +154,44 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
   };
 
+  // Single source of truth for "what do we still need to ask" — every
+  // path that updates collected.current (a fresh answer OR a mid-chat
+  // correction) calls this afterward rather than deciding the next step
+  // itself, so corrections can jump straight back to confirmation once
+  // every field is filled, from wherever in the conversation they happen.
+  const proceedFromCollected = () => {
+    const { destination, days, people, style } = collected.current;
+    if (!destination) {
+      setPhase("destination");
+      return;
+    }
+    if (!days) {
+      setPhase("days");
+      pushAi(`How many days are you planning for ${destination.name}?`);
+      scrollToEnd();
+      return;
+    }
+    if (!people) {
+      askTravelers();
+      return;
+    }
+    if (!style) {
+      askStyle();
+      return;
+    }
+    askConfirm(destination, days, people, style);
+  };
+
   const selectDestination = (dest: Destination, daysAlreadyKnown: number | null) => {
     collected.current.destination = dest;
     pushUser(dest.name);
-    if (daysAlreadyKnown) {
-      collected.current.days = daysAlreadyKnown;
-      pushAi(`Love it — ${daysAlreadyKnown} days in ${dest.name}! 🎒`);
-      askTravelers();
-    } else {
-      setPhase("days");
-      pushAi(`Great choice — ${dest.name}, ${dest.state}! ✨ How many days are you planning for?`);
-    }
+    if (daysAlreadyKnown) collected.current.days = daysAlreadyKnown;
+    pushAi(
+      daysAlreadyKnown
+        ? `Love it — ${daysAlreadyKnown} days in ${dest.name}! 🎒`
+        : `Great choice — ${dest.name}, ${dest.state}! ✨`,
+    );
+    proceedFromCollected();
     scrollToEnd();
   };
 
@@ -144,21 +199,20 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     collected.current.days = n;
     pushUser(`${n} day${n === 1 ? "" : "s"}`);
     pushAi(`Got it, ${n} day${n === 1 ? "" : "s"}.`);
-    askTravelers();
+    proceedFromCollected();
   };
 
   const selectTravelers = (n: number) => {
     collected.current.people = n;
     pushUser(n === 4 ? "4+" : String(n));
-    askStyle();
+    proceedFromCollected();
   };
 
   const selectStyle = (style: TravelStyle) => {
     collected.current.style = style;
     const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
     pushUser(sc.label);
-    const { destination, days, people } = collected.current;
-    if (destination && days && people) askConfirm(destination, days, people, style);
+    proceedFromCollected();
   };
 
   const confirmAndGenerate = () => {
@@ -166,12 +220,60 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     if (destination && days && people && style) onReady(destination, days, people, style, interests);
   };
 
-  const handleSend = () => {
+  // Mid-chat corrections — only checked once a destination is already
+  // locked in (so it never fires on the very first message, which the
+  // normal destination-parsing branch below already owns) and only past
+  // the destination-asking phase (so a normal reply to "where are you
+  // dreaming of going?" isn't misread as a "correction" to itself).
+  // Recognizes a new destination name, a day count, a traveler count
+  // ("4 people", "3 travellers"), or a style keyword anywhere in a
+  // message, regardless of which question is currently being asked.
+  const applyCorrections = (text: string): string[] => {
+    if (!collected.current.destination || phase === "destination") return [];
+    const changes: string[] = [];
+
+    const reparsed = parseTripMessage(text);
+    if (reparsed.destination && reparsed.destination.id !== collected.current.destination.id) {
+      collected.current.destination = reparsed.destination;
+      changes.push(`destination to ${reparsed.destination.name}`);
+    }
+    if (reparsed.days && reparsed.days !== collected.current.days) {
+      collected.current.days = reparsed.days;
+      changes.push(`${reparsed.days} day${reparsed.days === 1 ? "" : "s"}`);
+    }
+
+    const travelerMatch = text.match(/\b(\d{1,2})\s*(people|travell?ers?|of us|pax)\b/i);
+    if (travelerMatch) {
+      const n = Number(travelerMatch[1]);
+      if (n >= 1 && n <= 20 && n !== collected.current.people) {
+        collected.current.people = n;
+        changes.push(`${n} traveller${n === 1 ? "" : "s"}`);
+      }
+    }
+
+    const styleHit = styleKeywordMatch(text.toLowerCase());
+    if (styleHit && styleHit.id !== collected.current.style) {
+      collected.current.style = styleHit.id;
+      changes.push(styleHit.label);
+    }
+
+    return changes;
+  };
+
+  const handleSend = async () => {
     const text = input.trim();
-    if (!text) return;
+    if (!text || sending) return;
     setInput("");
     pushUser(text);
     scrollToEnd();
+
+    const changes = applyCorrections(text);
+    if (changes.length > 0) {
+      pushAi(`Got it — updated to ${changes.join(", ")}.`);
+      proceedFromCollected();
+      scrollToEnd();
+      return;
+    }
 
     if (phase === "destination") {
       const parsed = parseTripMessage(text);
@@ -188,7 +290,41 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         scrollToEnd();
         return;
       }
-      if (parsed.unmatchedPlaceAttempt) {
+
+      // Local matching found nothing at all — before deciding it's an
+      // unsupported (non-Indian) place, ask Gemini to interpret the
+      // request against the app's real destination list. Handles vague
+      // "vibe" requests ("somewhere warm and cheap in February") the
+      // local regex/fuzzy matcher was never meant to understand, same
+      // spirit as Layla.ai's fuzzy-request handling. Only worth the extra
+      // network round-trip when the message looks like a genuine attempt
+      // at describing a trip, not filler like "hi" or "ok".
+      if (parsed.unmatchedPlaceAttempt || text.split(/\s+/).length >= 4) {
+        setSending(true);
+        setMessages((prev) => [...prev, { id: THINKING_ID, sender: "ai", text: "Let me think about that… 🧭" }]);
+        scrollToEnd();
+        const intent = await tryParseTripIntent(text);
+        removeMessage(THINKING_ID);
+        setSending(false);
+
+        if (intent?.destination) {
+          if (intent.days) collected.current.days = intent.days;
+          if (intent.people) collected.current.people = intent.people;
+          if (intent.style) collected.current.style = intent.style;
+          if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
+          collected.current.destination = intent.destination;
+          pushUser(intent.destination.name);
+          pushAi(intent.reasoning || `Great choice — ${intent.destination.name}, ${intent.destination.state}! ✨`);
+          proceedFromCollected();
+          scrollToEnd();
+          return;
+        }
+
+        // Gemini either explicitly declined to match anything (a real
+        // international place, or nothing fits) or the call itself
+        // failed — either way, same graceful redirect as a plain
+        // unmatched local attempt, so a fuzzy-parsing outage never
+        // blocks the conversation.
         pushAi(
           "We're currently focused on India 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me another place:",
           SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
@@ -196,6 +332,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         scrollToEnd();
         return;
       }
+
       pushAi("Tell me a city or place in India you'd like to visit — e.g. \"Mysore\" or \"Kerala backwaters.\"");
       scrollToEnd();
       return;
@@ -212,9 +349,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       return;
     }
 
-    // Travelers/style/confirm are chip-driven; a stray typed message there
-    // just gets a gentle nudge back to the chips above rather than being
-    // silently ignored.
+    // Travelers/style/confirm are chip-driven; a stray typed message that
+    // wasn't recognized as a correction above just gets a gentle nudge
+    // back to the chips rather than being silently ignored.
     pushAi("Tap one of the options above to continue — or the button once you're ready.");
     scrollToEnd();
   };
@@ -266,6 +403,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             onChangeText={setInput}
             onSubmitEditing={handleSend}
             multiline
+            editable={!sending}
             onContentSizeChange={(e: NativeSyntheticEvent<TextInputContentSizeChangeEventData>) =>
               setInputHeight(Math.min(86, Math.max(20, e.nativeEvent.contentSize.height)))
             }
@@ -279,13 +417,13 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         </View>
         <Pressable
           onPress={handleSend}
-          disabled={!input.trim()}
+          disabled={!input.trim() || sending}
           style={{
             width: 48, height: 48, borderRadius: 24, alignItems: "center", justifyContent: "center",
-            backgroundColor: input.trim() ? "#333C81" : c.surfaceAlt,
+            backgroundColor: input.trim() && !sending ? "#333C81" : c.surfaceAlt,
           }}
         >
-          <Send color={input.trim() ? "#FFFFFF" : c.textMuted} size={18} />
+          <Send color={input.trim() && !sending ? "#FFFFFF" : c.textMuted} size={18} />
         </Pressable>
       </View>
     </View>
@@ -298,7 +436,7 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
     <View style={{ flexDirection: "row", justifyContent: isAi ? "flex-start" : "flex-end", gap: 8 }}>
       {isAi && (
         <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#333C81", alignItems: "center", justifyContent: "center", marginTop: 2 }}>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>J</Text>
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>T</Text>
         </View>
       )}
       <View style={{ maxWidth: "78%", gap: 8 }}>
