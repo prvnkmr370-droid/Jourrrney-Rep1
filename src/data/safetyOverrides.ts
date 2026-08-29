@@ -1213,3 +1213,33 @@ SAFETY_OVERRIDES["ruins-of-vikramshila"] = {
     sourceNote: "Kahalgaon Sub-Divisional Hospital's referral-capacity issue reported by Hindustan (a mainstream Bihar outlet); District Hospital Bhagalpur confirmed directly on bhagalpur.nic.in.",
   },
 };
+
+/**
+ * Rohtasgarh Fort and Shergarh Fort sit in the same remote Kaimur-hills
+ * block of Rohtas district, ~32km apart per the destinations.ts data
+ * itself — genuinely no separate town-level facilities for each, so
+ * they share the same district-level police/hospital data.
+ */
+const ROHTAS_HILLS_POLICE: SafetyOverride = {
+  summary: "Rohtas P.S. (genuinely named for this fort/block): 06188-233519 · Chenari P.S. (nearby): 06184-271200",
+  details: [
+    "Rohtas Police Station — 06188-233519, 9031826505 — a station genuinely named for this destination's own block, confirmed directly on rohtas.nic.in's official Police directory.",
+    "Chenari Police Station (the adjacent block, common access route to both forts): 06184-271200.",
+    "Given the remote, hilly terrain, mobile signal near the forts themselves can be weak — plan to reach a police station or town before relying on a call.",
+    "Police: 100 · National Emergency: 112",
+  ],
+  sourceNote: "Both stations taken directly from rohtas.nic.in's own official District Administration Police directory — genuinely including one named for this exact block.",
+};
+
+const ROHTAS_HILLS_MEDICAL: SafetyOverride = {
+  summary: "Sadar Hospital, Sasaram (district headquarters, some distance from these remote hill forts) — the real nearest well-equipped hospital",
+  details: [
+    "Sadar Hospital, Sasaram — Karan Sarai Road, Sasaram, open 24 hours: 06184 222 376, named directly on rohtas.nic.in's own official Public Utility page.",
+    "These are remote hilltop forts with genuinely difficult access (Rohtasgarh requires a real climb) — there is no hospital anywhere near either fort itself; Sasaram, the district headquarters, is the honest answer.",
+    "Ambulance: 108",
+  ],
+  sourceNote: "Sadar Hospital Sasaram confirmed directly on rohtas.nic.in, the district's own official government site — no closer facility exists given the terrain.",
+};
+
+SAFETY_OVERRIDES["rohtasgarh-fort"] = { police: ROHTAS_HILLS_POLICE, medical: ROHTAS_HILLS_MEDICAL };
+SAFETY_OVERRIDES["shergarh-fort"] = { police: ROHTAS_HILLS_POLICE, medical: ROHTAS_HILLS_MEDICAL };
