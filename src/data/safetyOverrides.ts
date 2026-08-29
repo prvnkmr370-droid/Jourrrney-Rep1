@@ -1618,6 +1618,25 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["burachapori"] = {
+  police: {
+    summary: "Sonitpur district police network (same as Tezpur/Nameri) — Bura Chapori sits in the same district",
+    details: [
+      "Bura Chapori Wildlife Sanctuary is in Sonitpur District — the same police network already verified for Tezpur (Tezpur PS, 7 named local outposts, Police Control Room) and Nameri covers it too, all from sonitpur.assam.gov.in's own official page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Tezpur entry (sonitpur.assam.gov.in) — Bura Chapori shares the same district.",
+  },
+  medical: {
+    summary: "Tezpur Medical College & Hospital (TMCH) — same district hospital as Tezpur and Nameri",
+    details: [
+      "Tezpur Medical College & Hospital (TMCH) — the nearest well-equipped hospital, since Bura Chapori itself is a wildlife sanctuary with no hospital inside it (see the Tezpur entry for full detail).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Tezpur entry (tezpur-mch.assam.gov.in) — both share Sonitpur district.",
+  },
+};
+
 SAFETY_OVERRIDES["orang"] = {
   police: {
     summary: "Orang National Park's own office, Silbori, Darrang: +91-9365239560 — the reserve's own authority",
