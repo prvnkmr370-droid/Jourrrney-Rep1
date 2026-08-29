@@ -560,19 +560,19 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // accounted for the keyboard at all, so the input bar just sat behind
     // it once the OS keyboard came up.
     //
-    // behavior is iOS-only ("padding") deliberately — this app's Android
-    // build already uses the default windowSoftInputMode ("adjustResize"),
-    // meaning Android itself already shrinks the screen for the keyboard.
-    // Also applying KeyboardAvoidingView's "height" behavior on top of
-    // that double-compensated: the screen shrank once for the OS resize,
-    // then shrank *again* for KeyboardAvoidingView, leaving a gap of
-    // unfilled space at the bottom that exposed the default white scene
-    // background underneath — the exact "white patch that appears the
-    // moment I tap the input" bug. `behavior={undefined}` on Android
-    // means KeyboardAvoidingView still renders as a plain flex:1 View
-    // (so the styling here is unaffected) but doesn't add its own
-    // adjustment on top of what Android is already doing correctly.
-    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
+    // Previously `behavior` was iOS-only ("padding"), on the assumption
+    // that Android's default windowSoftInputMode ("adjustResize") already
+    // shrinks the screen for the keyboard, so KeyboardAvoidingView doing
+    // it too would double-compensate. That held before this app's Android
+    // build moved to edge-to-edge display (mandatory as of Expo SDK 54 /
+    // targeting Android 15) — under edge-to-edge, `adjustResize` no longer
+    // reliably resizes the window on its own, so with `behavior={undefined}`
+    // the input bar went right back to sitting behind the keyboard (the
+    // exact bug this comment used to describe as already fixed). "height"
+    // now does the actual work on Android too, same as "padding" does on
+    // iOS — just resizing instead of padding, since Android's keyboard
+    // typically comes up over opaque chrome rather than a translucent one.
+    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : "height"}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 20, paddingTop: insets.top + 8, paddingBottom: 12, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}>
         {onBack && (
           <Pressable onPress={onBack} style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
