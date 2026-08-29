@@ -1515,3 +1515,23 @@ SAFETY_OVERRIDES["tinsukia"] = {
     sourceNote: "Confirmed directly via TMCH's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["digboi"] = {
+  police: {
+    summary: "Digboi Police Station: 60269-01088 — from Tinsukia district's own official directory",
+    details: [
+      "Digboi PS: 60269-01088, per tinsukia.assam.gov.in's own official District Police Administration page (Digboi falls under Tinsukia district, Margherita sub-division).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Cross-referenced from tinsukia.assam.gov.in's own official Police Administration page — the same verified source used for the Tinsukia entry.",
+  },
+  medical: {
+    summary: "Digboi Civil Hospital (CHC) — the town's government hospital",
+    details: [
+      "Digboi Civil Hospital (also listed as Digboi CHC) — Digboi, Tinsukia district — the town's government hospital, confirmed via a mapped listing.",
+      "Digboi is home to Asia's oldest oil refinery — the Assam Oil Company also historically ran its own hospital facilities in the area for refinery workers.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Digboi Civil Hospital confirmed via a mapped listing.",
+  },
+};
