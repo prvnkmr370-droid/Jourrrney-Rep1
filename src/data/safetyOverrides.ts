@@ -1005,3 +1005,31 @@ SAFETY_OVERRIDES["kesariya-stupa"] = {
     sourceNote: "PHC Kesaria confirmed directly on eastchamparan.nic.in's own official district government site.",
   },
 };
+
+/**
+ * Prakash Punj, Buddha Smriti Park, and Golghar are all clustered
+ * within a few km of each other in central Patna (Gandhi Maidan /
+ * riverfront area) and share the same nearest police station and
+ * hospital, so this block is reused across all three rather than
+ * re-researched from scratch each time.
+ */
+const PATNA_CENTRAL_POLICE: SafetyOverride = {
+  summary: "Gandhi Maidan Police Station (central Patna, right by this area): 0612 267 3519",
+  details: [
+    "Gandhi Maidan Police Station — Sir Shiv Sagar Ram Gulam Marg, Patna Sadar, near Udyog Bhawan — the named station covering the Gandhi Maidan area where this destination sits: 0612 267 3519 / 09431822165.",
+    "Police: 100 · National Emergency: 112",
+  ],
+  sourceNote: "Confirmed via a mapped business listing.",
+};
+
+const PATNA_CENTRAL_MEDICAL: SafetyOverride = {
+  summary: "PMCH (Patna Medical College & Hospital, government, est. 1925, 24hr) — the region's major hospital",
+  details: [
+    "PMCH (Patna Medical College & Hospital) — JP Ganga Path, Patna Sadar, open 24 hours — established 1925, one of Bihar's oldest and largest government hospitals, per its own official site (pmchpatna.in), also named directly on patna.nic.in's official Public Utility page.",
+    "Ambulance: 108",
+  ],
+  sourceNote: "Confirmed directly via PMCH's own official site and patna.nic.in, the district's own official government site.",
+};
+
+SAFETY_OVERRIDES["prakash-punj"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
+SAFETY_OVERRIDES["buddha-smriti-park"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
