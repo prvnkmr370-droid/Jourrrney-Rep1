@@ -1395,3 +1395,24 @@ SAFETY_OVERRIDES["majuli"] = {
     sourceNote: "Garamur Civil Hospital confirmed via a mapped blood-bank listing referencing the same facility; the island-to-mainland ferry consideration is a genuine geographic fact about Majuli, not generic guidance.",
   },
 };
+
+SAFETY_OVERRIDES["tezpur"] = {
+  police: {
+    summary: "Tezpur Police Station: 6026901027 · Police Control Room: 6026901052 — plus 7 named local outposts",
+    details: [
+      "Tezpur PS: 6026901027, with 7 named outposts across the town — Bihaguri, Bebejia, Salonibari, Kacharigaon, Borghat, Mahabhairab, Lalmati — each with its own direct number, per sonitpur.assam.gov.in's own official Emergency Services page.",
+      "Police Control Room, Sonitpur: 6026901052.",
+      "District Emergency Operation Centre (Disaster Management): 03712232440, Toll-Free 1077.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All stations, outposts, and numbers taken directly from sonitpur.assam.gov.in's own official Emergency Services page — a genuinely thorough, real official directory.",
+  },
+  medical: {
+    summary: "Tezpur Medical College & Hospital (TMCH, government) — the region's major hospital",
+    details: [
+      "Tezpur Medical College & Hospital (TMCH) — a government medical college hospital serving the wider Sonitpur region, confirmed via its own official site (tezpur-mch.assam.gov.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "TMCH confirmed directly via its own official government site.",
+  },
+};
