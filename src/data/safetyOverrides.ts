@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["diglipur"] = {
+  police: {
+    summary: "Police Station Diglipur (24hr): 03192 272 223 — one of 3 stations in the Diglipur Sub-Division",
+    details: [
+      "Police Station Diglipur — Diglipur, North & Middle Andaman 744202: 03192 272 223, confirmed via a mapped listing and cross-checked against spnma.and.nic.in's own official page, which also lists PS Kalighat and PS Mayabunder as the sub-division's other two stations.",
+      "Important real local rule from the same official police site: do not allow the Jarawas (an indigenous tribal community) to enter vehicles, and do not give them food or other items — a genuine, official conduct rule for this specific route.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing and cross-checked against spnma.and.nic.in, North & Middle Andaman Police's own official site.",
+  },
+  medical: {
+    summary: "Community Health Centre, Diglipur (NH223, government)",
+    details: [
+      "Community Health Centre, Diglipur — NH223, Diglipur 744202: 03192 272 236, confirmed via a mapped listing.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
+
 SAFETY_OVERRIDES["little-andaman"] = {
   police: {
     summary: "Hutbay Police Station, ~66 nautical miles from Port Blair: 03192-284208",
