@@ -212,3 +212,30 @@ for (const id of ["chandigarh", "rock-garden", "sukhna-lake", "capitol-complex",
     accessibility: id === "rock-garden" ? CHANDIGARH_ACCESSIBILITY_ROCK_GARDEN : CHANDIGARH_ACCESSIBILITY_GENERAL,
   };
 }
+
+SAFETY_OVERRIDES["fatehpur-sikri"] = {
+  toilets: {
+    summary: "ASI-provisioned toilet block with pathway/cafeteria near the Diwan-i-Am courtyard",
+    details: [
+      "ASI Agra Circle's own published tender/maintenance records confirm a purpose-built toilet block, pathway, and cafeteria near the Diwan-i-Am (Hall of Public Audience) at Fatehpur Sikri — the same source class used for the Agra/Taj Mahal entry.",
+      "As with Taj Mahal, no exact metre distance from any specific monument (e.g. Buland Darwaza or Jama Masjid) to this block is published anywhere — \"near Diwan-i-Am\" is the real, sourced location.",
+    ],
+    sourceNote: "Sourced from ASI Agra Circle's own published tender documents (asiagracircle.in) — real, but no exact distance is published.",
+  },
+  accessibility: {
+    summary: "Genuinely difficult — Buland Darwaza is reached by a large monumental flight of stone steps",
+    details: [
+      "Buland Darwaza, Fatehpur Sikri's most iconic structure, is reached via a large, steep flight of stone steps — a well-documented, architecturally intrinsic feature of the monument, not something that can be ramped around.",
+      "The wider complex (courtyards, Jama Masjid, palace buildings) involves further uneven stone flooring and steps typical of a 16th-century Mughal city — expect this to be one of the more physically demanding UNESCO sites on an Agra itinerary for anyone with mobility limitations.",
+      "No official wheelchair-access statement was found for this site.",
+    ],
+    sourceNote: "Buland Darwaza's monumental staircase is a well-documented architectural feature (confirmed via multiple independent sources); no official accessibility statement exists for the site.",
+  },
+  police: {
+    details: [
+      "Fatehpur Sikri falls within Agra district — the same official emergency numbers apply: Police 100, Ambulance 108, UP Police Helpline 112.",
+      "Agra's dedicated Tourist Police Station number (9454402764, per tajmahal.gov.in) covers the wider Agra tourism circuit including Fatehpur Sikri, though it's based in Agra city, ~40km away.",
+    ],
+    sourceNote: "Same official tajmahal.gov.in Emergency Services numbers used for Agra — Fatehpur Sikri is in the same district and tourism circuit.",
+  },
+};
