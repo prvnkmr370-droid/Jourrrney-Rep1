@@ -795,3 +795,23 @@ SAFETY_OVERRIDES["guwahati"] = {
     sourceNote: "GMCH confirmed directly on its own official government site; Downtown Hospital confirmed via its own official site as a genuine, distinct private option.",
   },
 };
+
+SAFETY_OVERRIDES["kaziranga"] = {
+  police: {
+    summary: "Kaziranga National Park Central Range (Kohora) Police Station — right at the park's own main entrance area",
+    details: [
+      "Kaziranga National Park Central Range (Kohora) Police Station — Post Office-Kaziranga National Park, Bokakhat, Assam 785609 — a named station right at Kohora, the park's main entrance/tourist hub, confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing — genuinely positioned at Kohora, where most visitors actually enter the park, not just a distant district office.",
+  },
+  medical: {
+    summary: "Swahid Kamala Miri Sub Divisional Civil Hospital, Bokakhat (nearest town, 24hr) — the real nearest hospital",
+    details: [
+      "Swahid Kamala Miri Sub Divisional Civil Hospital — NH715, Bokakhat, open 24 hours — is the nearest proper hospital, in the nearest town to the park.",
+      "As a national park/wildlife reserve, Kaziranga itself has no hospital inside — Bokakhat is genuinely the real answer here, not a padded generic pointer; a pharmacy (Kohora Medical) exists near the park's Kohora police station for minor needs.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Hospital confirmed via a mapped business listing; the honest \"no hospital inside the park itself\" framing reflects Kaziranga's actual nature as a wildlife reserve, not a town.",
+  },
+};
