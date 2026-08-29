@@ -1033,6 +1033,39 @@ const PATNA_CENTRAL_MEDICAL: SafetyOverride = {
 
 SAFETY_OVERRIDES["prakash-punj"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
 SAFETY_OVERRIDES["buddha-smriti-park"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
+SAFETY_OVERRIDES["golghar"] = { police: PATNA_CENTRAL_POLICE, medical: PATNA_CENTRAL_MEDICAL };
+
+SAFETY_OVERRIDES["patna-sahib-gurudwara"] = {
+  police: {
+    summary: "Alamganj Police Station, Ashok Raj Path (old Patna City, same neighbourhood as the gurudwara): 0612 263 1829",
+    details: [
+      "Alamganj Police Station — 82/27, Ashok Raj Path, Patna Sadar, open 24 hours — the station covering the old Patna City area where Takht Sri Harmandir Ji sits, confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing — genuinely in the old Patna City neighbourhood, distinct from the Gandhi Maidan area used for the other central-Patna entries.",
+  },
+  medical: PATNA_CENTRAL_MEDICAL,
+};
+
+SAFETY_OVERRIDES["great-buddha-statue"] = {
+  police: {
+    summary: "Bodhgaya Police Station (same town as Mahabodhi Temple) — Gaya-Sherghati Road",
+    details: [
+      "Bodhgaya Police Station — Gaya-Sherghati Road, Bodh Gaya — confirmed via a mapped listing, the same station covering this destination too, since the Great Buddha Statue is in Bodh Gaya itself.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Cross-referenced from the Mahabodhi Temple entry's own verified source — both are in Bodh Gaya.",
+  },
+  medical: {
+    summary: "PHC Bodhgaya (local) · ANMMCH, Gaya (24/7 emergency, ~13km) — same as Mahabodhi Temple",
+    details: [
+      "Primary Health Centre (PHC) Bodhgaya — Domuhan-Bodhgaya Road, Bodh Gaya 824231 — the local government facility.",
+      "ANMMCH (Anugrah Narayan Magadh Medical College Hospital) — Neema Tola, Gaya: +91 947 000 3301, 24/7 emergency care per its own official government site.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the Mahabodhi Temple entry's own verified sources — both destinations are in Bodh Gaya.",
+  },
+};
 
 SAFETY_OVERRIDES["valmiki-tiger-reserve"] = {
   police: {
