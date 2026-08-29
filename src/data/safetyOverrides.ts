@@ -839,3 +839,24 @@ SAFETY_OVERRIDES["darjeeling"] = {
     sourceNote: "All facilities taken directly from darjeeling.gov.in's own official district government Hospitals directory — genuinely complete and specific to towns along this destination's own circuit.",
   },
 };
+
+SAFETY_OVERRIDES["srisailam"] = {
+  police: {
+    summary: "Srisailam II Town Police Station: 9121101194 · Devasthanam Information Center: +91-98490 05495",
+    details: [
+      "Srisailam II Town Police Station — Srisailam Mandal, Andhra Pradesh 518101: 9121101194, named directly on nandyal.ap.gov.in's own official Police Stations directory.",
+      "Srisaila Devasthanam (temple trust) Information Center — for temple/pilgrimage-specific queries: +91-98490 05495.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Police station confirmed directly on nandyal.ap.gov.in, the official district government site; Devasthanam contact number from the temple trust's own listed contact info (the trust's own website itself was broken/unusable when checked directly).",
+  },
+  medical: {
+    summary: "General Hospital, Srisailam Ring Road — the local government hospital in the temple town itself",
+    details: [
+      "General Hospital — Srisailam Ring Road, Srisailam 518101 — the government hospital right in the temple town, confirmed via a mapped listing.",
+      "Project Hospital, Sundipenta — Srisailam area, ~5km — a second local option.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals confirmed via mapped listings.",
+  },
+};
