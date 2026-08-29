@@ -1618,6 +1618,25 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["rangat"] = {
+  police: {
+    summary: "Rangat Police Station, Great Andaman Trunk Road: 03192-274239",
+    details: [
+      "Rangat Police Station — Great Andaman Trunk Road, Rangat, North & Middle Andaman: 03192-274239, confirmed directly on spnma.and.nic.in, North & Middle Andaman Police's own official site.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from spnma.and.nic.in's own official police-station page for Rangat.",
+  },
+  medical: {
+    summary: "Community Health Centre (CHC), Rangat — the town's own facility",
+    details: [
+      "Community Health Centre (CHC), Rangat — a laid-back town midway on the Andaman Trunk Road between Port Blair and Diglipur, confirmed via a mapped listing.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
+
 SAFETY_OVERRIDES["baratang"] = {
   police: {
     summary: "Baratang Police Station: 03192-279503",
