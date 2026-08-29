@@ -261,3 +261,25 @@ SAFETY_OVERRIDES["kerala"] = {
     sourceNote: "Tourism Police Station and its address/hours confirmed via mapped business listing; district emergency numbers taken directly from alappuzha.nic.in (official District Administration site) and dtpcalappuzha.com (District Tourism Promotion Council's own site).",
   },
 };
+
+SAFETY_OVERRIDES["goa"] = {
+  toilets: {
+    summary: "GTDC has built toilet/changing-room blocks at major beaches (e.g. Baga), but its own 2024 inspection flagged poor upkeep",
+    details: [
+      "The Goa Tourism Development Corporation (GTDC) has constructed toilet blocks and changing-room facilities at major beaches — e.g. at the end of Tito's Lane in Baga, alongside a tourist information centre — confirmed via Goa news coverage (The Goan Everyday) of the specific construction project.",
+      "Important honest caveat: GTDC's own 2024 surprise inspection of toilets and changing rooms along Goa's beaches found several in poor condition, per Times of India's coverage of that inspection — so \"a toilet block exists\" doesn't guarantee it's well-maintained on any given day.",
+      "Bigger, more developed beaches (Baga, Calangute, Candolim) are more likely to have a maintained block than smaller/quieter beaches — beach shacks are a reliable fallback if you're a paying customer.",
+    ],
+    sourceNote: "Construction of specific facilities confirmed via Goa news coverage (The Goan Everyday); the maintenance caveat is from GTDC's own inspection, reported by Times of India — both real, dated findings rather than general guidance.",
+  },
+  police: {
+    summary: "Calangute Police Station (main beach belt): 0832-2278284 · Goa Tourist Police (est. 1990)",
+    details: [
+      "Goa Police has had a dedicated Tourist Police unit since 1990, confirmed on the force's own official site — its role includes both general tourist protection and enforcement of the Goa Registration of Tourist Trade Act.",
+      "Calangute Police Station (covering the main North Goa beach belt — Calangute/Baga area): 0832-2278284, mobile 7875756031, per Goa Police's own station directory.",
+      "Individual police stations also exist for Anjuna, Colva, and other beach areas — check Goa Police's own station directory (citizen.goapolice.gov.in) for the station nearest your specific beach.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Tourist Police unit history and Calangute Police Station's direct contact number taken from Goa Police's own official portal (citizen.goapolice.gov.in) — genuine, verifiable.",
+  },
+};
