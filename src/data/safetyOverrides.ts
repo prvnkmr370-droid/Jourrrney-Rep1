@@ -1110,3 +1110,66 @@ SAFETY_OVERRIDES["mundeshwari-devi-temple"] = {
     sourceNote: "Sadar Hospital confirmed directly on kaimur.nic.in, the district's own official government site.",
   },
 };
+
+SAFETY_OVERRIDES["nalanda"] = {
+  police: {
+    summary: "Nalanda Police Station (genuinely named for this destination): 9031826079",
+    details: [
+      "Nalanda Police Station (थानाध्यक्ष नालन्दा थाना) — 9031826079 — a police station genuinely named for this destination itself, confirmed directly on nalanda.nic.in's own official Police Directory.",
+      "SP, Nalanda district: 9031826038.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from nalanda.nic.in's own official District Administration Police Directory page — a genuinely complete list, including a station literally named for this destination.",
+  },
+  medical: {
+    summary: "District Hospital, Bihar Sharif — the district headquarters hospital; smaller CHCs across the district for minor issues",
+    details: [
+      "District Hospital, Bihar Sharif — district-headquarters hospital: 9470003506, named directly on nalanda.nic.in's own official Hospitals directory.",
+      "Bhagwan Mahavir Institute of Medical Sciences (VIMS), Pawapuri — a government medical college and hospital elsewhere in the district: 06112-262794.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals taken directly from nalanda.nic.in's own official district government Hospitals directory.",
+  },
+};
+
+SAFETY_OVERRIDES["barabar-caves"] = {
+  police: {
+    summary: "Tehta Police Station, NH22, Makhdumpur (right by the caves, 24hr) — Barabar Caves is in Jehanabad district, not Nalanda",
+    details: [
+      "Tehta Police Station — NH22, Makhdumpur, Jehanabad, open 24 hours — the local station nearest to Barabar Caves, confirmed via a mapped listing.",
+      "Jehanabad district has 13 police stations total, per jehanabad.nic.in's own official directory — Barabar Caves itself falls in Jehanabad district, not Nalanda, despite being commonly reached via the Gaya/Nalanda circuit.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Tehta Police Station confirmed via a mapped listing; district context from jehanabad.nic.in's own official Police page, which even has its own dedicated \"Barabar Caves\" tourist-place entry.",
+  },
+  medical: {
+    summary: "Primary Health Center, Makhdumpur (right by the caves) · Sadar Hospital Jehanabad (district HQ) — two real options",
+    details: [
+      "Primary Health Center, Makhdumpur — Block Office Premises, Makhdumpur: 9470003331 — the nearest facility to the caves themselves.",
+      "Sadar Hospital Jehanabad — Near Arwal More, P.G. Road, Jehanabad 804408: 9470003332 — the district headquarters hospital for anything more serious.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both facilities taken directly from jehanabad.nic.in's own official district government Hospitals directory.",
+  },
+};
+
+SAFETY_OVERRIDES["ashoka-stupa-rajgir"] = {
+  police: {
+    summary: "Rajgir Thana (Rajgir Police Station), right in town: 9031826071",
+    details: [
+      "Rajgir Police Station (राजगीर थाना) — 9031826071 — genuinely named for this destination's own town, confirmed directly on nalanda.nic.in's official Police Directory.",
+      "Sub-Divisional Police Officer, Rajgir: 9031826046.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from nalanda.nic.in's own official District Administration Police Directory page.",
+  },
+  medical: {
+    summary: "Sub-Divisional Hospital, Rajgir (government, right in town) — named directly on the district's own site",
+    details: [
+      "Sub-Divisional Hospital, Rajgir — named directly on nalanda.nic.in's own official Hospitals directory, the government hospital right in Rajgir town.",
+      "K.K. Medical College & Hospital — Lodipur, Chhabilapur, Rajgir, Nalanda 803116 — a nearby private option.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Sub-Divisional Hospital, Rajgir confirmed directly on nalanda.nic.in; K.K. Medical College confirmed via its own official site (kkmch.edu.in).",
+  },
+};
