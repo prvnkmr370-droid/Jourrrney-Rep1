@@ -963,3 +963,23 @@ SAFETY_OVERRIDES["mahabodhi-temple"] = {
     sourceNote: "PHC Bodhgaya confirmed via a mapped listing; ANMMCH confirmed directly on its own official Bihar government site.",
   },
 };
+
+SAFETY_OVERRIDES["vishnupad-temple"] = {
+  police: {
+    summary: "Vishnupad Police Station — genuinely named for the temple itself, Bhanumati Road, Chand Chaura",
+    details: [
+      "Vishnupad Police Station — Bhanumati Road, Chand Chaura, Gaya 823001 — a dedicated station named directly for this temple, confirmed via a mapped listing.",
+      "Kotwali Police Station, Gaya — GB Road, Kotwali Chowk: +91 94318 22198 — the wider town station.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Both stations confirmed via mapped listings.",
+  },
+  medical: {
+    summary: "ANMMCH, Gaya (24/7 emergency) — the main hospital serving Gaya city, including Vishnupad Temple",
+    details: [
+      "ANMMCH (Anugrah Narayan Magadh Medical College Hospital) — Neema Tola, Gaya 823001, 24/7 emergency care, per its own official government site (anmmch.bihar.gov.in): +91 947 000 3301 — the same main hospital serving all of Gaya city, including the Vishnupad Temple area.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the Mahabodhi Temple entry's own verified source (anmmch.bihar.gov.in) — the same hospital genuinely serves both temples, both being in Gaya district.",
+  },
+};
