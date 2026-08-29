@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["neil-island"] = {
+  police: {
+    summary: "Shaheed Dweep Island Police Station (Neil Island's official name), functioning since 2011: 03192-282602",
+    details: [
+      "Shaheed Dweep Island Police Station — Neil Island, 36km from Port Blair: 03192-282602, confirmed directly on spsa.and.nic.in, the South Andaman Police's own official site — functioning as its own station since 11 February 2011.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from spsa.and.nic.in's own official police-station page for Shaheed Dweep.",
+  },
+  medical: {
+    summary: "Primary Health Centre, Neil Island — staffed by three doctors; Port Blair's hospitals for anything more serious",
+    details: [
+      "Primary Health Centre, Neil Island — named directly on southandaman.nic.in's own official Public Utility page; a genuine, specific detail confirmed by an independent travel brochure: the PHC and a sub-centre are staffed by three doctors.",
+      "As an island reached only by ferry, anything serious means evacuation to Port Blair — G.B. Pant Hospital or Chakraborty Hospital (see the Andaman entry) are the real well-equipped options.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "PHC Neil confirmed directly on southandaman.nic.in; the three-doctor detail from an independent travel brochure; Port Blair fallback cross-referenced from the already-verified Andaman entry.",
+  },
+};
+
 SAFETY_OVERRIDES["havelock"] = {
   police: {
     summary: "Swaraj Dweep Police Station (Havelock's official name), 41km from Port Blair: 03192-282405 — with an outpost at Radha Nagar beach itself",
