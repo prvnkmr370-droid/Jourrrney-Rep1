@@ -619,3 +619,24 @@ SAFETY_OVERRIDES["vizag"] = {
     sourceNote: "KGH confirmed via visakhapatnam.ap.gov.in's own official Public Utility page and a mapped listing; Apollo Hospitals confirmed via its own official site (apollohospitals.com).",
   },
 };
+
+SAFETY_OVERRIDES["tirupati"] = {
+  police: {
+    summary: "Tirumala Police Station (right at the hilltop temple): confirmed named station · Tirupati City Police",
+    details: [
+      "Tirumala Police Station — Tirumala-Tirupati Road, Balaji Nagar, Tirumala — is a named, dedicated police station right at the hilltop temple town itself, confirmed via a mapped business listing.",
+      "For the Tirupati town area at the base of the hill, contact AP Police's district/city commissionerate — see citizen.appolice.gov.in for the current district contact.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Tirumala Police Station's name/address confirmed via a mapped business listing — genuinely on-site at the temple town, distinct from the base-town police.",
+  },
+  medical: {
+    summary: "SVIMS (super-specialty, Alipiri Rd) · Sri Venkateswara Ramnarayan Ruia Government General Hospital (Tirumala Rd) — two real government hospitals",
+    details: [
+      "SVIMS (Sri Venkateswara Institute of Medical Sciences) — Alipiri Road, Tirupati 517507 — a premier super-specialty tertiary referral hospital, named directly on tirupati.ap.gov.in's own official Public Utility page.",
+      "Sri Venkateswara Ramnarayan Ruia Government General Hospital — Tirumala Road, Alipiri Gate, Tirupati, open 24 hours, founded 1962 — a second, older general government hospital.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "SVIMS confirmed directly on tirupati.ap.gov.in's own official site and its own domain (svimstpt.ap.nic.in); Ruia Government General Hospital confirmed via a mapped listing.",
+  },
+};
