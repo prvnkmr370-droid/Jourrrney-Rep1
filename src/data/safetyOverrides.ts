@@ -352,3 +352,50 @@ SAFETY_OVERRIDES["andaman"] = {
     sourceNote: "Hospital name and pharmacy-area detail from the Port Blair accessible-travel guide (eandamantourism.com); ambulance number from southandaman.nic.in's official helpline page.",
   },
 };
+
+SAFETY_OVERRIDES["rishikesh"] = {
+  police: {
+    summary: "Rishikesh Police: 0135-2430099 · Mountain Rescue (ITBP): 1800-11-5656 · Tourist Helpline: 1363",
+    details: [
+      "Rishikesh Police: 0135-2430099",
+      "National Emergency: 112 · Tourist Helpline: 1363 · Women Helpline: 181",
+      "Uttarakhand SDRF (State Disaster Response Force): 1070 — genuinely relevant given Rishikesh's rafting/trekking/mountain activity base.",
+      "NDRF (National Disaster Response Force): 011-24363260",
+      "Mountain Rescue (ITBP): 1800-11-5656",
+    ],
+    sourceNote: "From a dedicated Rishikesh travel-guide site's own published Safety & Emergency page (visitrishikesh.com — part of the DD Explorer travel network) — not a government page itself, but specific, well-organised, and includes genuinely activity-relevant lines (SDRF, mountain rescue) that generic safety guidance wouldn't include.",
+  },
+  areaConditions: {
+    summary: "Monkeys near Lakshman Jhula can be aggressive — keep food hidden and avoid direct eye contact",
+    details: [
+      "Monkeys near Lakshman Jhula are known to be aggressive — keep food hidden and avoid direct eye contact, per local safety guidance.",
+      "The riverside path between Ram Jhula and Lakshman Jhula is scenic but genuinely uneven underfoot — proper footwear matters here specifically.",
+      "For sunrise viewpoints (Kunjapuri) and popular temples (Neelkanth), an early start (well before dawn/7am) is standard local advice to beat both crowds and heat.",
+    ],
+    sourceNote: "From a dedicated Rishikesh travel-guide site's Safety page — specific, practical, location-named advice rather than generic guidance.",
+  },
+  scamAwareness: {
+    summary: "Fake yoga schools offering suspiciously cheap TTC programs are a known local issue — verify Yoga Alliance registration",
+    details: [
+      "A specific, named scam pattern for this destination: fake yoga schools offering suspiciously cheap Teacher Training Course (TTC) programs — verify Yoga Alliance registration before paying for any yoga course here.",
+      "Book rafting and adventure activities only through licensed operators, and check safety equipment yourself before starting.",
+    ],
+    sourceNote: "From a dedicated Rishikesh travel-guide site's Safety page — a specific, named local scam pattern rather than generic 'be careful' advice.",
+  },
+  localCustoms: {
+    details: [
+      "Rishikesh town itself is strictly vegetarian — no meat, eggs, or alcohol in the main areas, a genuinely enforced local norm, not just a suggestion.",
+      "Dress modestly at ashrams and temples — cover shoulders and knees.",
+      "Carry cash — many cafés, shops, and auto-rickshaws don't accept cards; UPI is more widely accepted than cards specifically.",
+      "Plastic bags are banned in Uttarakhand state-wide — carry a reusable bag.",
+    ],
+    sourceNote: "From a dedicated Rishikesh travel-guide site's Safety page — specific local norms rather than generic guidance.",
+  },
+  walkingConditions: {
+    details: [
+      "The riverside path between Ram Jhula and Lakshman Jhula is scenic but uneven — proper footwear matters.",
+      "The Ganges current is deceptively strong — never swim unsupervised or outside designated areas, a real, specific water-safety warning for this location.",
+    ],
+    sourceNote: "From a dedicated Rishikesh travel-guide site's Safety page.",
+  },
+};
