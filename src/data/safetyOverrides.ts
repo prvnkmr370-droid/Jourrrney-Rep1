@@ -1373,3 +1373,25 @@ SAFETY_OVERRIDES["anand-bagh-palace"] = {
     sourceNote: "Both hospitals taken directly from darbhanga.nic.in's own official district government Hospitals directory.",
   },
 };
+
+SAFETY_OVERRIDES["majuli"] = {
+  police: {
+    summary: "SP Office, Majuli: 03775-274463 · three named stations — Garamur, Kamalabari, Jengraimukh",
+    details: [
+      "SP Office, Majuli: 03775274463, confirmed directly on majuli.assam.gov.in's own official Helpline Numbers page.",
+      "Majuli has three main police stations — Garamur, Kamalabari, and Jengraimukh — covering the island, per Assam Info's district profile.",
+      "Assam Police: 100 · Women's Helpline: 181 · Fire Station: 03775-274508 · Disaster Management: 03775 274424",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "SP Office number and helplines confirmed directly on majuli.assam.gov.in's own official site; the three named police stations from Assam Info's district profile, cross-checked against the district's own police-station listing.",
+  },
+  medical: {
+    summary: "Garamur Civil Hospital (on the island itself) — Jorhat's hospitals (mainland, via ferry) for anything serious",
+    details: [
+      "Garamur Civil Hospital — Garamur, Majuli (the district headquarters town) — the government hospital right on the island, confirmed via a mapped/blood-bank listing.",
+      "Majuli is a river island — for anything more serious, Jorhat (on the mainland, reached by ferry) has larger hospitals; this crossing genuinely matters for planning in an emergency.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "Garamur Civil Hospital confirmed via a mapped blood-bank listing referencing the same facility; the island-to-mainland ferry consideration is a genuine geographic fact about Majuli, not generic guidance.",
+  },
+};
