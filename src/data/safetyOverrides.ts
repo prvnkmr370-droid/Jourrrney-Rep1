@@ -1639,3 +1639,23 @@ SAFETY_OVERRIDES["manas"] = {
     sourceNote: "Manas Superspeciality Hospital confirmed via a mapped listing; Barpeta Medical College & Hospital cross-referenced from the already-verified Barpeta entry.",
   },
 };
+
+SAFETY_OVERRIDES["sivasagar"] = {
+  police: {
+    summary: "SP Office, Sivasagar: 03772-222124",
+    details: [
+      "Superintendent of Police, Sivasagar: 03772-222124 (O) / 222139, confirmed directly on sivasagar.assam.gov.in's own official Police Administration page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from sivasagar.assam.gov.in's own official District Police Administration page.",
+  },
+  medical: {
+    summary: "Sivasagar Civil Hospital (government) · Siu-Ka-Pha Multispeciality Hospital (private) — two real options",
+    details: [
+      "Sivasagar Civil Hospital — Joysagar/Rupahi Pathar, Sivasagar, open 24 hours — the government hospital, confirmed via a mapped listing.",
+      "Siu-Ka-Pha Multispeciality Hospital (SSMH) — a private hospital named after the founder of the Ahom kingdom (Sivasagar's own historical significance), confirmed via its own official site (ssmhassam.org).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Sivasagar Civil Hospital confirmed via a mapped listing; SSMH confirmed via its own official site.",
+  },
+};
