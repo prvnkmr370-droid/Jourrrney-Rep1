@@ -773,3 +773,25 @@ SAFETY_OVERRIDES["prayagraj"] = {
     sourceNote: "Both hospitals confirmed via mapped listings and, for SRN, its own medical-college domain (mlnmc.edu.in); Colvin Hospital via its own official site (mlndh.com).",
   },
 };
+
+SAFETY_OVERRIDES["guwahati"] = {
+  police: {
+    summary: "Kamakhaya Police Outpost (right at the temple, 24hr) · City Police, Fancy Bazaar",
+    details: [
+      "Kamakhaya Police Outpost — right at Kamakhya, Guwahati 781010, open 24 hours — confirmed via a mapped business listing.",
+      "City Police — Block H, City Police Reserve, Fancy Bazaar, Guwahati 781001, open 24 hours.",
+      "Office of the Deputy Commissioner of Police, West Guwahati Police District — Sadilapur, Jalukbari, Guwahati 781014.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "All stations confirmed via mapped business listings — genuinely including a station right at Kamakhya temple itself, this destination's own main attraction.",
+  },
+  medical: {
+    summary: "GMCH (Gauhati Medical College & Hospital, government, Bhangagarh) · Downtown Hospital (private) — two real options",
+    details: [
+      "Gauhati Medical College & Hospital (GMCH) — Bhangagarh, Guwahati 781032, established 1960, the second-oldest medical college in the region — named directly on its own official government site (gmch.assam.gov.in): 0361 252 9457.",
+      "Downtown Hospital — a well-known private multi-speciality hospital in Guwahati, confirmed via its own official site (downtownhospitals.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "GMCH confirmed directly on its own official government site; Downtown Hospital confirmed via its own official site as a genuine, distinct private option.",
+  },
+};
