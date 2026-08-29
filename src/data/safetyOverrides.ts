@@ -1618,6 +1618,27 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["havelock"] = {
+  police: {
+    summary: "Swaraj Dweep Police Station (Havelock's official name), 41km from Port Blair: 03192-282405 — with an outpost at Radha Nagar beach itself",
+    details: [
+      "Swaraj Dweep Police Station — Havelock Island (Swaraj Dweep), about 41km east of Port Blair: 03192-282405, confirmed directly on spsa.and.nic.in, the South Andaman Police's own official site.",
+      "A dedicated outpost exists at Radha Nagar itself — the island's world-famous beach — plus another covering Strait Island, per the same official page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from spsa.and.nic.in's own official police-station page for Swaraj Dweep — genuinely detailed, including the beach-side outpost.",
+  },
+  medical: {
+    summary: "Primary Health Centre, Havelock — the island's own facility; Port Blair's hospitals for anything more serious",
+    details: [
+      "Primary Health Centre, Havelock — named directly on southandaman.nic.in's own official Public Utility page.",
+      "As an island reached only by ferry, anything serious means evacuation to Port Blair — G.B. Pant Hospital or Chakraborty Hospital (see the Andaman entry) are the real well-equipped options.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "PHC Havelock confirmed directly on southandaman.nic.in; the Port Blair fallback cross-referenced from the already-verified Andaman entry.",
+  },
+};
+
 SAFETY_OVERRIDES["burachapori"] = {
   police: {
     summary: "Sonitpur district police network (same as Tezpur/Nameri) — Bura Chapori sits in the same district",
