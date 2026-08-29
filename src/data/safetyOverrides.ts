@@ -1056,3 +1056,24 @@ SAFETY_OVERRIDES["valmiki-tiger-reserve"] = {
     sourceNote: "MJK Hospital confirmed directly on westchamparan.nic.in; the ~70km distance is from valmikitigerreserve.com's own official How to Reach page.",
   },
 };
+
+SAFETY_OVERRIDES["mundeshwari-devi-temple"] = {
+  police: {
+    summary: "Bhagwanpur Police Station, NH22 — right in the temple's own block, 24hr",
+    details: [
+      "Bhagwanpur Police Station — NH22, Bhagwanpur, open 24 hours — the local station in the same block as the temple, confirmed via a mapped listing.",
+      "Kaimur district has 17 police stations in total, per kaimur.nic.in's own official directory.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Bhagwanpur Police Station confirmed via a mapped listing; district context from kaimur.nic.in's own official Police directory.",
+  },
+  medical: {
+    summary: "Sadar Hospital, Bhabhua (district headquarters, ~25km) — the nearest well-equipped hospital",
+    details: [
+      "Sadar Hospital — Kachahri Road, Bhabhua, Kaimur 821101 — the district headquarters hospital, named directly on kaimur.nic.in's own official Public Utility page.",
+      "As a hilltop temple site, Mundeshwari Devi Temple itself has no hospital — Bhabhua is the genuine nearest well-equipped option.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Sadar Hospital confirmed directly on kaimur.nic.in, the district's own official government site.",
+  },
+};
