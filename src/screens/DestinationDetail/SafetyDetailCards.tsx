@@ -29,11 +29,7 @@ export default function SafetyDetailCards({ destination: d }: { destination: Des
         Safety at a Glance
       </Text>
 
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-        {PRIME_SAFETY_KEYS.map((key) => (
-          <Card key={key} content={all[key]} c={c} onPress={() => setActiveKey(key)} />
-        ))}
-      </View>
+      <CardGrid keys={PRIME_SAFETY_KEYS} all={all} c={c} onPress={setActiveKey} />
 
       <Pressable
         onPress={() => setShowMore((v) => !v)}
@@ -49,10 +45,8 @@ export default function SafetyDetailCards({ destination: d }: { destination: Des
       </Pressable>
 
       {showMore && (
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10, marginTop: 12 }}>
-          {MORE_SAFETY_KEYS.map((key) => (
-            <Card key={key} content={all[key]} c={c} onPress={() => setActiveKey(key)} />
-          ))}
+        <View style={{ marginTop: 12 }}>
+          <CardGrid keys={MORE_SAFETY_KEYS} all={all} c={c} onPress={setActiveKey} />
         </View>
       )}
 
@@ -92,12 +86,51 @@ export default function SafetyDetailCards({ destination: d }: { destination: Des
   );
 }
 
+/**
+ * Two-per-row grid, chunked into explicit row pairs rather than a
+ * flexWrap + percentage-width layout — percentage widths (e.g. "47%")
+ * leave a rounding-error sliver of unused space on the right edge
+ * that a wrap-based row can't correct, so the grid never quite lines
+ * up flush with the container's left/right padding the way the rest
+ * of the app's cards do. Pairing cards into their own row and giving
+ * each `flex: 1` divides the available width exactly, with no slack —
+ * the same technique this app already uses for the three-column
+ * sub-score row in DestinationSafetyPage.tsx.
+ */
+function CardGrid({
+  keys, all, c, onPress,
+}: {
+  keys: SafetyCategoryKey[];
+  all: Record<SafetyCategoryKey, SafetyCategoryContent>;
+  c: ReturnType<typeof useThemeColors>;
+  onPress: (key: SafetyCategoryKey) => void;
+}) {
+  const rows: SafetyCategoryKey[][] = [];
+  for (let i = 0; i < keys.length; i += 2) rows.push(keys.slice(i, i + 2));
+
+  return (
+    <View style={{ gap: 10 }}>
+      {rows.map((row, i) => (
+        <View key={i} style={{ flexDirection: "row", gap: 10 }}>
+          {row.map((key) => (
+            <Card key={key} content={all[key]} c={c} onPress={() => onPress(key)} />
+          ))}
+          {/* Balance an odd final row so the lone card stays half-width
+              (matching every row above it) instead of stretching to fill
+              the row on its own. */}
+          {row.length === 1 && <View style={{ flex: 1 }} />}
+        </View>
+      ))}
+    </View>
+  );
+}
+
 function Card({ content, c, onPress }: { content: SafetyCategoryContent; c: ReturnType<typeof useThemeColors>; onPress: () => void }) {
   return (
     <Pressable
       onPress={onPress}
       style={{
-        width: "47%", backgroundColor: c.surface, borderWidth: 1, borderColor: c.border,
+        flex: 1, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border,
         borderRadius: 16, padding: 12, gap: 6,
       }}
     >
