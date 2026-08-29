@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["orang"] = {
+  police: {
+    summary: "Orang National Park's own office, Silbori, Darrang: +91-9365239560 — the reserve's own authority",
+    details: [
+      "Orang National Park office — Silbori, Darrang, Assam: +91-9365239560, confirmed via its own official site (orangnptr.in).",
+      "The park is overseen by the Divisional Forest Officer, Mangaldoi Wildlife Division — the same Darrang district network already verified for the Darrang entry (Mangaldoi Sadar Police Station, SP Office Darrang).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Park office contact confirmed directly via orangnptr.in, the reserve's own official site; district police cross-referenced from the already-verified Darrang entry.",
+  },
+  medical: {
+    summary: "Mangaldai Civil Hospital — same district hospital as Darrang",
+    details: [
+      "Mangaldai Civil Hospital — the nearest well-equipped hospital, since Orang itself is a national park with no hospital inside it (see the Darrang entry for full detail).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Darrang entry — Orang sits in the same Darrang district.",
+  },
+};
+
 SAFETY_OVERRIDES["dibru-saikhowa"] = {
   police: {
     summary: "Divisional Forest Officer, Tinsukia Wildlife Division — the park's own authority; Tinsukia district police for general matters",
