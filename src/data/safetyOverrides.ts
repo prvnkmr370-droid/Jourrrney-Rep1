@@ -1474,3 +1474,24 @@ SAFETY_OVERRIDES["silchar"] = {
     sourceNote: "SMCH confirmed directly via its own official government site (silchar-mch.assam.gov.in), including its own stated regional significance.",
   },
 };
+
+SAFETY_OVERRIDES["pobitora"] = {
+  police: {
+    summary: "Morigaon Police Station, Morigaon Road (24hr) — the district headquarters station, ~15km from the sanctuary",
+    details: [
+      "Morigaon Police Station — Morigaon Road, Morigaon, open 24 hours — confirmed via a mapped listing.",
+      "The Divisional Forest Officer (Wildlife), Guwahati — dfoguwahatiwl@gmail.com — oversees Pobitora Wildlife Sanctuary directly, per the sanctuary's own official-style site (pobitorasafari.in).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Morigaon Police Station confirmed via a mapped listing; the DFO Wildlife contact from pobitorasafari.in's own published contact page.",
+  },
+  medical: {
+    summary: "Morigaon Civil Hospital — the district's main government hospital, ~15km from the sanctuary",
+    details: [
+      "Morigaon Civil Hospital — Rajagaon, Morigaon, Assam 782105, open 24 hours — the district's main government hospital, confirmed via a mapped listing.",
+      "As a wildlife sanctuary, Pobitora itself has no hospital inside it — Morigaon town is the genuine nearest option.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
