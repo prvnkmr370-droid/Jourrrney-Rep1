@@ -1597,3 +1597,23 @@ SAFETY_OVERRIDES["barpeta"] = {
     sourceNote: "Confirmed directly via the hospital's own official government site, including its own stated recent renaming.",
   },
 };
+
+SAFETY_OVERRIDES["hailakandi"] = {
+  police: {
+    summary: "Hailakandi Sadar Police Station, Bashdahar/Thana Road — the district's main station",
+    details: [
+      "Hailakandi Sadar Police Station — Bashdahar, Hailakandi 788151 — confirmed via a mapped listing.",
+      "District helplines (Fire, Medical, Women's Helpline) confirmed directly on hailakandi.assam.gov.in's own official Helpline Numbers page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Sadar Police Station confirmed via a mapped listing; district helplines from hailakandi.assam.gov.in's own official site.",
+  },
+  medical: {
+    summary: "Hailakandi Civil Hospital (government, NH6/Lala, 24hr): 094354 20130",
+    details: [
+      "Hailakandi Civil Hospital — NH6, Lala, Hailakandi, open 24 hours: 094354 20130, confirmed via a mapped listing.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+};
