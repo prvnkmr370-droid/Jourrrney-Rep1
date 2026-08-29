@@ -8,7 +8,7 @@
  * reply chips for anything enumerable, before handing off to the existing
  * generating/result flow.
  *
- * Two things inspired by researching how Layla.ai's chat behaves:
+ * Three things inspired by researching how Layla.ai's chat behaves:
  *  1. Fuzzy requests ("somewhere warm and cheap in February") that the
  *     fast local matcher can't resolve fall back to a Gemini-backed
  *     interpretation (aiIntent.ts) grounded in this app's own destination
@@ -18,11 +18,18 @@
  *     is recognized at any point past the initial destination answer, not
  *     just when the current question happens to be about that field. See
  *     applyCorrections()/proceedFromCollected() below.
+ *  3. A photo can stand in for a destination name — "show Tia a picture
+ *     you're inspired by" — using the same Gemini vision call as fuzzy
+ *     text parsing (see pickImage() and tryParseTripIntent's optional
+ *     `image` argument), grounded the same way: it can only ever land on
+ *     one of this app's real destinations, never invent one.
  */
 import { useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
+import { Image } from "expo-image";
+import * as ImagePicker from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Send } from "lucide-react-native";
+import { ArrowLeft, Send, Camera } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
@@ -40,6 +47,10 @@ interface ChatMessage {
   sender: "ai" | "user";
   text: string;
   chips?: Chip[];
+  /** Local file URI of a picked photo, shown as a thumbnail in the
+   * user's own message bubble — display-only, separate from the base64
+   * payload actually sent to the backend (see pickImage()). */
+  imageUri?: string;
 }
 
 type Phase = "destination" | "days" | "travelers" | "style" | "confirm";
@@ -114,7 +125,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
 
   const pushAi = (text: string, chips?: Chip[]) =>
     setMessages((prev) => [...prev, { id: nextId(), sender: "ai", text, chips }]);
-  const pushUser = (text: string) => setMessages((prev) => [...prev, { id: nextId(), sender: "user", text }]);
+  const pushUser = (text: string, imageUri?: string) => setMessages((prev) => [...prev, { id: nextId(), sender: "user", text, imageUri }]);
   const removeMessage = (id: string) => setMessages((prev) => prev.filter((m) => m.id !== id));
 
   const scrollToEnd = () => requestAnimationFrame(() => scrollRef.current?.scrollToEnd({ animated: true }));
@@ -356,6 +367,54 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
   };
 
+  // "Show Tia a photo" — only offered during the destination question
+  // (see the camera button's conditional render below), same Gemini
+  // vision call as the fuzzy-text fallback, just fed an image instead of
+  // (or alongside) a caption. Compressed client-side (quality: 0.5) to
+  // stay comfortably under the backend's body-size limit.
+  const pickImage = async () => {
+    if (sending) return;
+    const perm = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    if (!perm.granted) {
+      pushAi("I'd need permission to access your photos to try that — you can enable it in your device settings, or just tell me a place instead.");
+      scrollToEnd();
+      return;
+    }
+
+    const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], base64: true, quality: 0.5 });
+    const asset = result.assets?.[0];
+    const base64 = asset?.base64;
+    if (result.canceled || !asset || !base64) return;
+
+    pushUser("📷 Photo", asset.uri);
+    setSending(true);
+    setMessages((prev) => [...prev, { id: THINKING_ID, sender: "ai", text: "Let me take a look… 🧭" }]);
+    scrollToEnd();
+
+    const mimeType: string = asset.mimeType && asset.mimeType.startsWith("image/") ? asset.mimeType : "image/jpeg";
+    const intent = await tryParseTripIntent("", { base64, mimeType });
+    removeMessage(THINKING_ID);
+    setSending(false);
+
+    if (intent?.destination) {
+      if (intent.days) collected.current.days = intent.days;
+      if (intent.people) collected.current.people = intent.people;
+      if (intent.style) collected.current.style = intent.style;
+      if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
+      collected.current.destination = intent.destination;
+      pushAi(intent.reasoning || `Great choice — ${intent.destination.name}, ${intent.destination.state}! ✨`);
+      proceedFromCollected();
+      scrollToEnd();
+      return;
+    }
+
+    pushAi(
+      "That doesn't look like it matches one of India's destinations we support yet 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular ones to start with, or tell me a place:",
+      SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+    );
+    scrollToEnd();
+  };
+
   const showChips = useMemo(() => messages[messages.length - 1]?.sender === "ai" && !!messages[messages.length - 1]?.chips, [messages]);
 
   return (
@@ -408,6 +467,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           backgroundColor: c.surface, borderTopWidth: 1, borderTopColor: c.borderSoft,
         }}
       >
+        {/* Only offered while Tia is still asking "where are you dreaming
+            of going?" — a photo answers that same question, so it
+            wouldn't make sense once a destination is already locked in. */}
+        {phase === "destination" && (
+          <Pressable
+            onPress={pickImage}
+            disabled={sending}
+            style={{
+              width: 48, height: 48, borderRadius: 24, alignItems: "center", justifyContent: "center",
+              backgroundColor: c.surfaceAlt, opacity: sending ? 0.5 : 1,
+            }}
+          >
+            <Camera color={c.primary} size={20} />
+          </Pressable>
+        )}
         <View
           style={{
             flex: 1, minHeight: 48, maxHeight: 110, borderRadius: 24, paddingHorizontal: 18, paddingVertical: 12,
@@ -479,6 +553,9 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
         </View>
       )}
       <View style={{ maxWidth: "78%", gap: 8 }}>
+        {message.imageUri && (
+          <Image source={{ uri: message.imageUri }} style={{ width: 160, height: 160, borderRadius: 16 }} contentFit="cover" />
+        )}
         <View
           style={{
             backgroundColor: isAi ? c.surface : "#333C81",

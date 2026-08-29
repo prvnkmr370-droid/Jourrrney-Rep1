@@ -16,7 +16,10 @@ import { API_BASE_URL } from "@/config/api";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { TravelStyle } from "./data";
 
+// A photo needs more round-trip time than a text message (larger upload +
+// Gemini's own vision processing) — text fuzzy-parsing keeps 15s.
 const REQUEST_TIMEOUT_MS = 15000;
+const IMAGE_REQUEST_TIMEOUT_MS = 30000;
 
 export interface AiIntentResult {
   destination: Destination | null;
@@ -25,6 +28,11 @@ export interface AiIntentResult {
   style: TravelStyle | null;
   interests: string[];
   reasoning: string;
+}
+
+export interface AiIntentImage {
+  base64: string;
+  mimeType: string;
 }
 
 // Sent once per call, not the full Destination objects — Gemini only
@@ -37,16 +45,16 @@ function destinationSummaries() {
   return DESTINATIONS.map((d) => ({ id: d.id, name: d.name, state: d.state, tagline: d.tagline, category: d.category }));
 }
 
-export async function tryParseTripIntent(message: string): Promise<AiIntentResult | null> {
+export async function tryParseTripIntent(message: string, image?: AiIntentImage): Promise<AiIntentResult | null> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const timeout = setTimeout(() => controller.abort(), image ? IMAGE_REQUEST_TIMEOUT_MS : REQUEST_TIMEOUT_MS);
 
   try {
     const res = await fetch(`${API_BASE_URL}/plan-trip/parse-intent`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       signal: controller.signal,
-      body: JSON.stringify({ message, destinations: destinationSummaries() }),
+      body: JSON.stringify({ message, image, destinations: destinationSummaries() }),
     });
     clearTimeout(timeout);
     if (!res.ok) return null;

@@ -45,6 +45,13 @@
           "locationWhenInUsePermission": "Journey uses your location to suggest a starting city for trip planning and nearby destinations."
         }
       ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Jourrrney uses your photos so Tia can suggest a destination inspired by a picture you share.",
+          "cameraPermission": "Jourrrney uses your camera so Tia can suggest a destination inspired by a photo you take."
+        }
+      ],
       "expo-secure-store"
     ],
     "extra": {
