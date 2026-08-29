@@ -45,6 +45,7 @@ import { ArrowLeft, Send, Camera, Sparkle } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
+import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, parseMultiDestinationMessage, extractDays, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
@@ -113,32 +114,55 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
 
-  // The "height" behavior added above already shrinks this whole screen to
-  // clear the keyboard — but ctaBottomInset (below) was still separately
-  // adding the tab-bar/home-indicator safe-area padding on top of that,
-  // regardless of whether the keyboard was open. With the keyboard up,
-  // there's no tab bar and no home-indicator to clear (the keyboard sits
-  // right where they'd be), so that extra padding just became empty space
-  // between the input bar and the keyboard — the "white patch" bug's
-  // reappearance. Tracking keyboard visibility lets that padding drop to a
-  // small fixed value only while the keyboard is actually showing.
-  const [keyboardVisible, setKeyboardVisible] = useState(false);
+  // KeyboardAvoidingView's own Android "height" behavior turned out to be
+  // the actual source of the persistent gap — its internal animated
+  // height offset doesn't reliably reset to 0 once the keyboard closes
+  // (a known RN/Android issue, more likely to surface after a focus →
+  // type → dismiss cycle than on first render), leaving the screen
+  // permanently shrunk by roughly a keyboard's worth of height even
+  // though every value *this* component computes (keyboardVisible,
+  // ctaBottomInset) correctly says the keyboard is gone. Tracking the
+  // keyboard's real height ourselves and driving the screen's bottom
+  // padding directly — instead of leaning on KeyboardAvoidingView's own
+  // Android animation — means there's exactly one source of truth, and
+  // it resets to a hard 0 on hide rather than an animation that can get
+  // stuck mid-flight.
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+  const keyboardVisible = keyboardHeight > 0;
   useEffect(() => {
     const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
     const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
-    const showSub = Keyboard.addListener(showEvt, () => setKeyboardVisible(true));
-    const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardVisible(false));
+    const showSub = Keyboard.addListener(showEvt, (e) => setKeyboardHeight(e.endCoordinates?.height ?? 0));
+    const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardHeight(0));
     return () => {
       showSub.remove();
       hideSub.remove();
     };
   }, []);
 
-  // +20 beyond the tab bar's own height/inset — per feedback, the input
-  // bar sat too close to the floating tab bar underneath it. Skipped while
-  // the keyboard is open (see comment above) — 20 alone is enough padding
-  // above the keyboard itself.
-  const ctaBottomInset = keyboardVisible ? 20 : (tabBarHeight > 0 ? tabBarHeight + 12 : Math.max(insets.bottom, 16)) + 20;
+  // BottomTabBar (our custom floating pill) is position:"absolute" at its
+  // own root, which pulls it out of react-navigation's normal flex layout
+  // entirely — this screen genuinely renders full-height *behind* it (an
+  // overlay, not a reserved-space sibling), so the input bar needs real
+  // clearance equal to the tab bar's actual height, not just a flat 20.
+  // The tabBarHeight *prop* (react-navigation's useBottomTabBarHeight())
+  // is only used here as a cheap "is there a tab bar at all" signal
+  // (>0 on the tab route, 0 on the no-tab-bar plan/[destId].tsx modal) —
+  // its magnitude is NOT used for the actual clearance math anymore.
+  // Round-tripping a live-measured height through react-navigation's own
+  // height-reporting context (BottomTabBarHeightCallbackContext) proved
+  // unreliable in practice — the input ended up either behind the tab bar
+  // or floating well above it depending on what got measured/reported
+  // when. getTabBarFootprint() instead computes the pill's height from
+  // BottomTabBar.tsx's own fixed layout constants, which can't drift out
+  // of sync with a live measurement the way that did. The no-tab-bar
+  // modal presentation instead needs the home-indicator/gesture-bar
+  // inset cleared manually. Skipped while the keyboard is open (see
+  // comment above) — 20 alone is enough padding above the keyboard
+  // itself, no tab bar to clear at the same time.
+  const ctaBottomInset = keyboardVisible
+    ? 20
+    : (tabBarHeight > 0 ? getTabBarFootprint(insets.bottom) : Math.max(insets.bottom, 16)) + 20;
 
   const [messages, setMessages] = useState<ChatMessage[]>(() =>
     preselectedDestination
@@ -584,19 +608,25 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // accounted for the keyboard at all, so the input bar just sat behind
     // it once the OS keyboard came up.
     //
-    // Previously `behavior` was iOS-only ("padding"), on the assumption
-    // that Android's default windowSoftInputMode ("adjustResize") already
-    // shrinks the screen for the keyboard, so KeyboardAvoidingView doing
-    // it too would double-compensate. That held before this app's Android
-    // build moved to edge-to-edge display (mandatory as of Expo SDK 54 /
-    // targeting Android 15) — under edge-to-edge, `adjustResize` no longer
-    // reliably resizes the window on its own, so with `behavior={undefined}`
-    // the input bar went right back to sitting behind the keyboard (the
-    // exact bug this comment used to describe as already fixed). "height"
-    // now does the actual work on Android too, same as "padding" does on
-    // iOS — just resizing instead of padding, since Android's keyboard
-    // typically comes up over opaque chrome rather than a translucent one.
-    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: c.bg }} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+    // iOS keeps the standard "padding" behavior — no issues reported
+    // there. Android deliberately does NOT use KeyboardAvoidingView's own
+    // "height" behavior: relying on the OS's default windowSoftInputMode
+    // ("adjustResize") stopped working once this app's Android build
+    // moved to edge-to-edge display (mandatory as of Expo SDK 54 /
+    // targeting Android 15), which is what "height" was introduced to
+    // replace — but KeyboardAvoidingView's own Android height-tracking
+    // animation turned out to be unreliable in practice too, occasionally
+    // not resetting fully after a focus → type → dismiss cycle and
+    // leaving a permanent gap the size of a keyboard. paddingBottom here
+    // instead applies the keyboard height *this component already tracks
+    // itself* (see keyboardHeight above, driven directly off
+    // Keyboard.addListener) — one source of truth that hard-resets to 0
+    // on hide, rather than a second, separate animated value that can
+    // get stuck mid-transition.
+    <KeyboardAvoidingView
+      style={{ flex: 1, backgroundColor: c.bg, paddingBottom: Platform.OS === "android" ? keyboardHeight : 0 }}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+    >
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 20, paddingTop: insets.top + 8, paddingBottom: 12, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}>
         {onBack && (
           <Pressable onPress={onBack} style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>

@@ -22,6 +22,31 @@ const LABELS: Record<string, string> = {
   safety: "Safety",
 };
 
+// The pill's own height, fixed and independent of any measurement: each
+// TabButton is a hard-coded height: 44 row item (see below), plus the
+// pill's paddingTop(10) + paddingBottom(8) + borderWidth(1 top + 1
+// bottom). Kept as a plain constant — rather than measured live via
+// onLayout — because relying on a measured value round-tripped through
+// react-navigation's BottomTabBarHeightCallbackContext repeatedly proved
+// unreliable in practice for screens that read it back out through
+// useBottomTabBarHeight() (the chat input ended up either behind the tab
+// bar or floating well above it depending on what got measured/reported
+// when). A static number tied to this file's own fixed layout constants
+// can't drift out of sync with a live measurement the way that did.
+export const TAB_BAR_PILL_HEIGHT = 44 + 10 + 8 + 2;
+
+/** Total vertical footprint of the floating tab bar, from the true
+ * bottom of the screen to its own top edge — the pill's fixed height
+ * plus whatever bottom safe-area/gesture-bar inset it's sitting above.
+ * Any screen that needs to keep its own content clear of this tab bar
+ * (see ChatStep.tsx) should use this instead of useBottomTabBarHeight(),
+ * which reflects react-navigation's own (unreliable, for a fully custom
+ * tab bar like this one) layout bookkeeping rather than this component's
+ * actual rendered size. */
+export function getTabBarFootprint(insetsBottom: number): number {
+  return TAB_BAR_PILL_HEIGHT + Math.max(insetsBottom, 12);
+}
+
 export default function BottomTabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();

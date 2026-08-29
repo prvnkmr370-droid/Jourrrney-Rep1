@@ -13,7 +13,7 @@ import {
   Poppins_700Bold,
   Poppins_800ExtraBold,
 } from "@expo-google-fonts/poppins";
-import { useResolvedScheme } from "@/theme/useThemeColors";
+import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 import { bootstrapProfileSession } from "@/store/useProfileStore";
 
 // Keep the native splash screen up until fonts are ready — our own
@@ -22,6 +22,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const scheme = useResolvedScheme();
+  const c = useThemeColors();
   const [fontsLoaded, fontError] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
@@ -58,7 +59,14 @@ export default function RootLayout() {
             here when the app itself is in dark mode) — expo-status-bar's
             naming is the inverse of what it sounds like. */}
         <StatusBar style={scheme === "dark" ? "light" : "dark"} />
-        <Stack screenOptions={{ headerShown: false }}>
+        {/* contentStyle sets react-native-screens' own native container
+            background — its default is plain white, which showed through
+            as a white patch anywhere the app's own themed View didn't
+            fully cover the screen (e.g. behind the floating bottom tab
+            bar's transparent inset-padding area, in edge-to-edge mode on
+            Android). Without this, that gap is always white regardless of
+            theme; with it, it now matches the app's own background. */}
+        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: c.bg } }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="onboarding" />
           <Stack.Screen name="location-permission" />

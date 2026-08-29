@@ -14,7 +14,12 @@ export default function TabsLayout() {
     <View style={{ flex: 1 }}>
       <Tabs
         tabBar={(props) => <BottomTabBar {...props} />}
-        screenOptions={{ headerShown: false }}
+        // Same fix as the root Stack's contentStyle (see app/_layout.tsx) —
+        // without it, each tab screen's own native container defaults to
+        // white, which shows as a patch behind BottomTabBar's floating
+        // pill wherever its transparent inset-padding leaves the true
+        // window edge exposed.
+        screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: c.bg } }}
       >
         <Tabs.Screen name="index" options={{ title: "Discover" }} />
         <Tabs.Screen name="plan" options={{ title: "Plan Trip" }} />
