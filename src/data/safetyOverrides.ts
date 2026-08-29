@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["long-island"] = {
+  police: {
+    summary: "Long Island Police Station, Market Road, Kalighat (administratively under Rangat)",
+    details: [
+      "Long Island Police Station — Market Road, Kalighat, Rangat, North & Middle Andaman 744203 — confirmed via a mapped listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "PHC Long Island — the island's own small facility; Rangat's CHC for anything more serious",
+    details: [
+      "PHC Long Island — a small government health facility on the island itself, confirmed via a mapped listing.",
+      "For anything more serious, Community Health Centre (CHC), Rangat (see the Rangat entry — reached by boat) is the nearest larger option.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "PHC Long Island confirmed via a mapped listing; CHC Rangat cross-referenced from the already-verified Rangat entry.",
+  },
+};
+
 SAFETY_OVERRIDES["rangat"] = {
   police: {
     summary: "Rangat Police Station, Great Andaman Trunk Road: 03192-274239",
