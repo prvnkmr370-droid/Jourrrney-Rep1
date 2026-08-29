@@ -129,6 +129,17 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // stuck mid-flight.
   const [keyboardHeight, setKeyboardHeight] = useState(0);
   const keyboardVisible = keyboardHeight > 0;
+  // Android's reported keyboard height (endCoordinates.height above)
+  // measures the IME window itself, but doesn't reliably include Gboard's
+  // (and other keyboards') word-suggestion strip riding above the actual
+  // key rows — that strip's extra height was exactly what was still
+  // eating into the padding meant to clear the keyboard, leaving the
+  // input row's send button/textbox slightly behind it despite the
+  // padding math otherwise checking out. A fixed buffer on top of the
+  // measured height, rather than trying to measure the suggestion strip
+  // itself (it's native chrome outside this app's view tree), reliably
+  // gives the requested clear 16px of breathing room above the keyboard.
+  const KEYBOARD_GAP_BUFFER = 16;
   useEffect(() => {
     const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
     const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
@@ -159,7 +170,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // modal presentation instead needs the home-indicator/gesture-bar
   // inset cleared manually. Skipped while the keyboard is open (see
   // comment above) — 20 alone is enough padding above the keyboard
-  // itself, no tab bar to clear at the same time.
+  // itself, no tab bar to clear at the same time. (The extra clearance
+  // requested on top of the keyboard itself — see KEYBOARD_GAP_BUFFER
+  // below — lives on the *outer* container's paddingBottom instead of
+  // here, since that's what was actually falling short.)
   const ctaBottomInset = keyboardVisible
     ? 20
     : (tabBarHeight > 0 ? getTabBarFootprint(insets.bottom) : Math.max(insets.bottom, 16)) + 20;
@@ -624,7 +638,11 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // on hide, rather than a second, separate animated value that can
     // get stuck mid-transition.
     <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: c.bg, paddingBottom: Platform.OS === "android" ? keyboardHeight : 0 }}
+      style={{
+        flex: 1,
+        backgroundColor: c.bg,
+        paddingBottom: Platform.OS === "android" && keyboardVisible ? keyboardHeight + KEYBOARD_GAP_BUFFER : 0,
+      }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 20, paddingTop: insets.top + 8, paddingBottom: 12, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}>
