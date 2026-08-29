@@ -1618,6 +1618,26 @@ SAFETY_OVERRIDES["hailakandi"] = {
   },
 };
 
+SAFETY_OVERRIDES["nameri"] = {
+  police: {
+    summary: "Field Director, Nameri Tiger Reserve: +91-7099045650 — the reserve's own authority; Sonitpur district police covers the wider area",
+    details: [
+      "Office of the Divisional Forest Officer, Western Assam Wildlife Division cum Field Director, Nameri Tiger Reserve — Dolabari, Tezpur, Sonitpur 784027: +91-7099045650, confirmed via its own official site (namerinptr.in).",
+      "Nameri is in Sonitpur district — the same police network covers it as Tezpur (see the Tezpur entry: Tezpur PS, 7 named local outposts, Police Control Room), all from sonitpur.assam.gov.in's own official page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Field Director's contact taken directly from namerinptr.in, the reserve's own official site; district police cross-referenced from the already-verified Tezpur entry.",
+  },
+  medical: {
+    summary: "Tezpur Medical College & Hospital (TMCH) — same district hospital as Tezpur, ~35km from the reserve",
+    details: [
+      "Tezpur Medical College & Hospital (TMCH) — the nearest well-equipped hospital, since Nameri itself is a wildlife reserve with no hospital inside it (see the Tezpur entry for full detail).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Cross-referenced from the already-verified Tezpur entry (tezpur-mch.assam.gov.in) — Nameri and Tezpur share Sonitpur district.",
+  },
+};
+
 SAFETY_OVERRIDES["manas"] = {
   police: {
     summary: "Office of the Field Director, Manas Tiger Reserve: +91-7099709955 — the reserve's own authority, plus named ranges",
