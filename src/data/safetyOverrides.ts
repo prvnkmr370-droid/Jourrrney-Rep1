@@ -726,3 +726,27 @@ SAFETY_OVERRIDES["lucknow"] = {
     sourceNote: "KGMU confirmed via its own official site (kgmu.org) and a mapped listing; SGPGIMS confirmed via a mapped listing as a genuine, distinct major hospital.",
   },
 };
+
+SAFETY_OVERRIDES["ayodhya"] = {
+  police: {
+    summary: "Shri Ram Janmabhoomi Police Station (dedicated, right at the temple) · Ayodhya Police District Control Room: 9454417465",
+    details: [
+      "Shri Ram Janmabhoomi Police Station — a dedicated station specifically for the temple area, confirmed as real and current via independent news coverage (ANI and others reporting a flag-hoisting ceremony there) — use ayodhyapolice.in's own \"Find Police Station\" tool for the current officer-in-charge/direct line.",
+      "Ayodhya Police District Control Room: 9454417465 · City Control Room: 9454402648",
+      "SSP Office, Police Lines, Ayodhya: 05278-224215",
+      "Women Power Helpline: 1090 · Cyber Crime: 1930",
+      "Police Toll-Free: 112 · CM Helpline: 1076",
+    ],
+    sourceNote: "All numbers taken directly from ayodhyapolice.in's own official Contact page — a genuinely dedicated Ayodhya Police site, distinct from the general UP Police portal, confirming a real Ram Janmabhoomi-specific police station exists.",
+  },
+  medical: {
+    summary: "District Hospital Ayodhya (general, Rikabganj) · District Women Hospital (Janana Hospital Road) — both government, both named on the district's own site",
+    details: [
+      "District Hospital Ayodhya — Rikabganj, Ayodhya (Civil Line Rikabganj Road, Lajpat Nagar, Faizabad) 224001: 05278-224202.",
+      "District Women Hospital — Janana Hospital Road, Ayodhya — a dedicated government women's hospital, a genuinely relevant second option.",
+      "Sri Ram Hospital, Ayodhya — near the railway station — convenient for arriving pilgrims specifically.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "All three hospitals taken directly from ayodhya.nic.in's own official Hospitals directory page; District Hospital's exact address/number cross-confirmed via a mapped listing.",
+  },
+};
