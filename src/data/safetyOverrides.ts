@@ -943,3 +943,23 @@ SAFETY_OVERRIDES["konaseema"] = {
     sourceNote: "Konaseema Care Hospital confirmed via a mapped listing; the government CHC network taken directly from konaseema.ap.gov.in's own official Hospitals directory page.",
   },
 };
+
+SAFETY_OVERRIDES["mahabodhi-temple"] = {
+  police: {
+    summary: "Bodhgaya Police Station, Gaya-Sherghati Road — the named local station",
+    details: [
+      "Bodhgaya Police Station — Gaya-Sherghati Road, Bodh Gaya — confirmed via a mapped business listing.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "PHC Bodhgaya (local, in-town) · ANMMCH — Anugrah Narayan Magadh Medical College Hospital, Gaya (24/7 emergency, ~13km)",
+    details: [
+      "Primary Health Centre (PHC) Bodhgaya — Domuhan-Bodhgaya Road, Bodh Gaya 824231 — the local government facility right in town.",
+      "ANMMCH (Anugrah Narayan Magadh Medical College Hospital) — Neema Tola, Gaya 823001, provides 24/7 emergency care per its own official government site (anmmch.bihar.gov.in): +91 947 000 3301.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "PHC Bodhgaya confirmed via a mapped listing; ANMMCH confirmed directly on its own official Bihar government site.",
+  },
+};
