@@ -130,4 +130,40 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "WhatsApp helpline number corroborated across multiple independent news outlets reporting the same July 2026 launch and figure; the primary outlet pages themselves were not directly browsable due to a site-access restriction, so this rests on consistent secondary reporting rather than a first-party government page.",
     },
   },
+  varanasi: {
+    toilets: {
+      summary: "Namo Ghat has clean modern restrooms and is the most facility-rich ghat; older ghats (Dashashwamedh, Assi) are far more limited",
+      details: [
+        "Namo Ghat (the newest, Smart-City-built ghat at the northern end of the riverfront) has modern restrooms, food courts, and parks — consistently confirmed across independent sources covering the ghat.",
+        "The 83 older, traditional stone-stepped ghats (Dashashwamedh, Assi, Manikarnika, etc.) are narrow, historic, and don't have the same purpose-built facilities — expect to rely on nearby hotels/cafés in the Godowlia old-city area for cleaner toilets rather than the ghats themselves.",
+        "No official source publishes exact toilet locations/distances along the ghats specifically — the honest guidance is \"Namo Ghat is the reliable option; elsewhere, use a nearby hotel/café.\"",
+      ],
+      sourceNote: "Namo Ghat's modern-restroom facility is corroborated across multiple independent Varanasi travel-guide sources describing the same Smart City redevelopment; not an official government facility list, but consistent across sources.",
+    },
+    accessibility: {
+      summary: "Namo Ghat is the only fully wheelchair/ramp-accessible ghat in Varanasi; the older stone ghats are not",
+      details: [
+        "Namo Ghat (formerly Khidkiya Ghat), redeveloped under the Smart City mission, is described consistently as \"100% accessible\" — ramps across its entire expanse, explicitly built for wheelchairs, elderly visitors, and strollers.",
+        "This makes it the ONLY major ghat in Varanasi with full ramp access, per multiple independent sources — the other 83-odd traditional ghats (including the famous Dashashwamedh and Assi Ghats) are narrow stone steps, genuinely difficult for wheelchairs or limited mobility.",
+        "If accessibility is a priority, plan your Ganga/boat experience to start from Namo Ghat rather than the older, more famous but much less accessible ghats.",
+      ],
+      sourceNote: "Corroborated across multiple independent Varanasi accessibility/travel-guide sources describing the same Smart City redevelopment of this specific ghat; not a direct government accessibility statement, but consistent and specific across sources.",
+    },
+    police: {
+      summary: "Varanasi District Police Helpline: 112 · Crime Stopper: 1090 · Women Power-line: 1091",
+      details: [
+        "Police Helpline: 112",
+        "Crime Stopper: 1090",
+        "Women Power-line: 1091",
+        "Child Helpline: 1098",
+        "Disaster/Aapda Emergency Helpline: 9140037137",
+        "CM Helpline: 1076",
+      ],
+      sourceNote: "All numbers taken directly from varanasi.nic.in's own official District Administration Helpline page — genuine, district-specific.",
+    },
+    medical: {
+      details: ["Ambulance: 102", "UP State Ambulance Service: 108", "Both confirmed on varanasi.nic.in's own official Helpline page."],
+      sourceNote: "Directly from varanasi.nic.in's official Helpline page.",
+    },
+  },
 };
