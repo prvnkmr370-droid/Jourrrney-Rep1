@@ -1332,3 +1332,23 @@ SAFETY_OVERRIDES["aranya-devi-temple"] = {
     sourceNote: "Ara District Hospital confirmed directly on bhojpur.nic.in, the district's own official government site; Highway Hospital confirmed via a mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["amjhar-sharif"] = {
+  police: {
+    summary: "Police Station Haspura — the block Amjhar Sharif actually sits in",
+    details: [
+      "Police Station Haspura — Haspura, Aurangabad district — the local station for the block where Amjhar village/Amjhar Sharif actually is, confirmed via a mapped listing.",
+      "Jamhor Police Station (nearby block): 9031826323, per infobihar.in's listing of Aurangabad's official police numbers.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Police Station Haspura confirmed via a mapped listing; Jamhor Police Station's number cross-referenced from Aurangabad district's own official numbers.",
+  },
+  medical: {
+    summary: "Sadar Hospital, Aurangabad (district headquarters) — the nearest well-equipped hospital",
+    details: [
+      "Sadar Hospital, Aurangabad — Maharana Pratap Path, near Vegetable Market, Aurangabad: 094700 03054, named directly on aurangabad.bih.nic.in's own official Hospitals directory.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on aurangabad.bih.nic.in, the district's own official government site.",
+  },
+};
