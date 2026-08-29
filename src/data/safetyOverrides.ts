@@ -1495,3 +1495,23 @@ SAFETY_OVERRIDES["pobitora"] = {
     sourceNote: "Confirmed via a mapped business listing.",
   },
 };
+
+SAFETY_OVERRIDES["tinsukia"] = {
+  police: {
+    summary: "Tinsukia PS: 60269-01080 · SP Office: 0374-2331468 — genuinely complete official district directory",
+    details: [
+      "Tinsukia PS: 60269-01080; Superintendent of Police Office: 0374-2331468, per tinsukia.assam.gov.in's own official District Police Administration page.",
+      "The same official list also names every other station in the district — Bordubi, Makum, Doomdooma, Digboi, Margherita, and more — each with its own direct number, useful if travelling beyond Tinsukia town itself.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Taken directly from tinsukia.assam.gov.in's own official District Police Administration page — a genuinely complete, real directory covering every station in the district.",
+  },
+  medical: {
+    summary: "Tinsukia Medical College & Hospital (TMCH, government, Makum)",
+    details: [
+      "Tinsukia Medical College & Hospital — Makum, Tinsukia district — a government medical college hospital, confirmed via its own official site (tinsukiamch.assam.gov.in).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly via TMCH's own official government site.",
+  },
+};
