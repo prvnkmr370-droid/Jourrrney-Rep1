@@ -860,3 +860,23 @@ SAFETY_OVERRIDES["srisailam"] = {
     sourceNote: "Both hospitals confirmed via mapped listings.",
   },
 };
+
+SAFETY_OVERRIDES["vijayawada"] = {
+  police: {
+    summary: "One Town Police Station (near Kanaka Durga Temple): 0866 256 8220 · Devasthanam Toll-Free: 1800-425-9099",
+    details: [
+      "One Town Police Station — Police Quarters, Palli Street, Vijayawada 520001, the named station covering the Kanaka Durga Temple/Indrakeeladri area: 0866 256 8220.",
+      "Sri Durga Malleswara Swamy Varla Devasthanam (temple trust) toll-free contact: 1800-425-9099, for temple-specific queries.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "One Town Police Station confirmed via a mapped listing; the Devasthanam toll-free number confirmed via search results referencing the temple trust's own listed contact (the trust's own website itself was broken/unusable when checked directly, same as Srisailam's).",
+  },
+  medical: {
+    summary: "Government General Hospital (GGH), Old Bus Stand Road, Hanumanpet — the main government hospital",
+    details: [
+      "Government General Hospital (GGH) — Old Bus Stand Road, Hanumanpet, Vijayawada 520002: +91-866-245-2244.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "GGH's name, address, and number confirmed via a mapped business listing.",
+  },
+};
