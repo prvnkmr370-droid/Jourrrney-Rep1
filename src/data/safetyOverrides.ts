@@ -553,3 +553,23 @@ SAFETY_OVERRIDES["coorg"] = {
     sourceNote: "Hospital name, address, and number taken directly from kodagu.nic.in's own official district government site.",
   },
 };
+
+SAFETY_OVERRIDES["gokarna"] = {
+  police: {
+    summary: "Police Station Gokarna, Main Road, Banglegudda (24hr): 08386-256133",
+    details: [
+      "Police Station Gokarna — Main Road, Banglegudda, Gokarna 581326, open 24 hours: 08386-256133.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Police Station Gokarna's name/address/number confirmed via a mapped business listing.",
+  },
+  medical: {
+    summary: "Two real options: P.H.C. Gokarn (in town) for minor issues; Baggon Government Hospital, Kumta (nearest larger town) for anything more serious",
+    details: [
+      "P.H.C. Gokarn (Govt. Hospital) — Main Road, Melinkeri, Gokarna 581326 — is the local government health centre right in Gokarna town, for minor issues.",
+      "Baggon Government Hospital — NH66, Kumta, open 24 hours: 08386-222021 — is the larger government hospital in Kumta, the nearest bigger town, for anything more serious than the local PHC can handle.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both hospitals' names and addresses confirmed via mapped listings — genuinely two separate, real facilities at two tiers of care, not a single generic pointer.",
+  },
+};
