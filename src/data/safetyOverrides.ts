@@ -62,12 +62,14 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Numbers taken directly from tajmahal.gov.in's own official Emergency Services page; the Tourist Police Station's specific address confirmed via a mapped, reviewed business listing — genuine, destination-specific.",
     },
     medical: {
-      summary: "S.N. Medical College & Hospital (24hr), Mahatma Gandhi Road, Agra: 0562 226 0353",
+      summary: "S.N. Medical College & Hospital, M.G. Road (24hr): 0562 226 0353 · District Hospital, M.G. Road (also nearby)",
       details: [
-        "S.N. Medical College & Hospital — Mahatma Gandhi Road, Agra 282001, open 24 hours — is Agra's main government hospital, a genuinely named, addressed facility rather than a generic \"ask your hotel\" pointer: 0562 226 0353.",
+        "S.N. Medical College & Hospital — Mahatma Gandhi Road, Agra 282001, open 24 hours — Agra's main government hospital: 0562 226 0353.",
+        "District Hospital — M.G. Road, Agra — a second government hospital option, listed directly on agra.nic.in's own official district hospital directory alongside S.N. Medical College.",
+        "Rainbow Hospital — NH-2, near Guru Ka Tal Gurudwara, Agra 282007 — a private multi-speciality option: 0562-2600531, also from the same official directory.",
         "Ambulance: 108 (confirmed on tajmahal.gov.in's official Emergency Services page for Agra specifically).",
       ],
-      sourceNote: "S.N. Medical College & Hospital's name, address, and phone number confirmed via a mapped business listing and the hospital's own domain (snmcagra.ac.in); ambulance number from tajmahal.gov.in's official page.",
+      sourceNote: "All three hospitals taken directly from agra.nic.in's own official district Hospitals directory, plus the mapped business listing and hospital's own domain (snmcagra.ac.in) for S.N. Medical College specifically.",
     },
   },
   jaipur: {
@@ -84,13 +86,14 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Kotwali Police Station's name/address/number confirmed via a mapped business listing; PinkGuard and Tourist Reception Centre details from their own official sites.",
     },
     medical: {
-      summary: "SMS Hospital (Sawai Man Singh Hospital) — 1 Ajmer Road, Jaipur — Rajasthan's largest government hospital",
+      summary: "SMS Hospital (1, Ajmer Road) — largest government hospital in the state; Zanana Hospital (Station Road) — dedicated women's hospital",
       details: [
-        "SMS Hospital — 1, Ajmer Road, Jaipur 302004 — attached to Sawai Man Singh Medical College, is the largest government-run hospital in the state, a genuinely named and addressed facility: 0141 251 8222.",
-        "There is also a dedicated \"SMS Hospital Police Station\" on the hospital premises itself: 0141 251 8444.",
+        "SMS Hospital — 1, Ajmer Road, Jaipur 302004 — attached to Sawai Man Singh Medical College, is the largest government-run hospital in the state: 0141 251 8222.",
+        "Zanana Hospital — Station Road, Jaipur — a dedicated government women's hospital, established 1929, a genuinely relevant second option for women travellers specifically.",
+        "There is also a dedicated \"SMS Hospital Police Station\" on the SMS Hospital premises itself: 0141 251 8444.",
         "Ambulance: 108",
       ],
-      sourceNote: "SMS Hospital's name, address, and number confirmed via its own official Rajasthan Medical Education Department page (medicaleducation.rajasthan.gov.in) and a mapped business listing.",
+      sourceNote: "SMS Hospital's name, address, and number confirmed via its own official Rajasthan Medical Education Department page (medicaleducation.rajasthan.gov.in) and a mapped business listing; Zanana Hospital confirmed via a government-hospital directory listing.",
     },
     accessibility: {
       details: [
@@ -138,12 +141,13 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Surajpole Police Station's name/address/number confirmed via a mapped business listing with visitor reviews; WhatsApp helpline corroborated across multiple independent news outlets (primary pages themselves were blocked from direct browsing).",
     },
     medical: {
-      summary: "RNT Medical College Hospital, Court Chowk/Panchsheel Marg, Udaipur — the main government hospital",
+      summary: "RNT Medical College Hospital (government, Court Chowk) · GBH American Hospital (private, 24hr) — two real options",
       details: [
-        "R.N.T. (Ravindra Nath Tagore) Medical College Hospital — Panchsheel Marg, Court Chowk, Udaipur 313001 — is Udaipur's main government multi-speciality hospital, a genuinely named, addressed facility.",
+        "R.N.T. (Ravindra Nath Tagore) Medical College Hospital — Panchsheel Marg, Court Chowk, Udaipur 313001 — is Udaipur's main government multi-speciality hospital.",
+        "GBH American Hospital — 101 Kothi Bagh, Bhatt Ji Ki Bari, Udaipur, open 24 hours — a well-regarded private multi-speciality hospital: 0294-3535000.",
         "Ambulance: 108",
       ],
-      sourceNote: "RNT Medical College Hospital's name and address confirmed via its own official Rajasthan Medical Education Department page (medicaleducation.rajasthan.gov.in) and a mapped listing.",
+      sourceNote: "RNT Medical College Hospital's name and address confirmed via its own official Rajasthan Medical Education Department page; GBH American Hospital confirmed via its own official site (gbhamericanhospital.com).",
     },
   },
   varanasi: {
@@ -177,12 +181,13 @@ export const SAFETY_OVERRIDES: Partial<Record<string, Partial<Record<SafetyCateg
       sourceNote: "Dashashwamedh Police Station's name/address/number confirmed via a mapped business listing; the rest taken directly from varanasi.nic.in's own official District Administration Helpline page.",
     },
     medical: {
-      summary: "Sir Sunderlal Hospital (BHU), Lanka, Varanasi — the main hospital, named directly on the district's own site",
+      summary: "SSPG District Hospital, Kabir Chaura (closest to the ghats) · Sir Sunderlal Hospital, BHU (larger, further south at Lanka)",
       details: [
-        "Sir Sunderlal Hospital, BHU — Lanka, Varanasi — is named directly on varanasi.nic.in's own official Public Utility listing as the district's hospital: 0542-2368547.",
+        "Shri Shiv Prasad Gupt (SSPG) Divisional District Hospital — Kabir Chaura, Varanasi 221001, open 24 hours — is genuinely the closer option to the old-city ghats, named directly on varanasi.nic.in's own official site.",
+        "Sir Sunderlal Hospital, BHU — Lanka, Varanasi — the larger university hospital, further south of the ghats: 0542-2368547, also named directly on varanasi.nic.in.",
         "Ambulance: 102 · UP State Ambulance Service: 108",
       ],
-      sourceNote: "Hospital name, location, and phone number taken directly from varanasi.nic.in's own official Public Utility page — genuine, district-government-confirmed.",
+      sourceNote: "Both hospitals' names, locations, and (for Sir Sunderlal) phone number taken directly from varanasi.nic.in's own official Public Utility pages — genuine, district-government-confirmed, and correctly distinguished by which is actually closer to the ghats.",
     },
   },
 };
@@ -503,12 +508,13 @@ SAFETY_OVERRIDES["mysuru"] = {
     sourceNote: "Devaraja Police Station and the palace's own emergency contacts are taken directly from mysorepalace.karnataka.gov.in's own Contact Us page; the City Police Control Room number/address from mysore.nic.in's official district site — both genuine, named, addressed sources.",
   },
   medical: {
-    summary: "K.R. Hospital (Krishna Rajendra Hospital), Irwin Road — the named government hospital, listed by the palace itself",
+    summary: "K.R. Hospital, Irwin Road (general, listed by the palace itself) · Cheluvamba Hospital (women & children, opposite the palace area)",
     details: [
       "K.R. Hospital (Krishna Rajendra Hospital) — Irwin Road, Devaraja Mohalla, Mysuru 570001 — is a 24-hour government hospital named directly on Mysore Palace's own official emergency-contact list: 0821 242 3300 (palace's listed number) / 0821 252 6200 (hospital's own general line).",
+      "Cheluvamba Hospital for Women and Children — Mysuru, near the palace area — is a dedicated government women's & children's hospital, a genuinely relevant second option.",
       "The palace premises also has a Health Kiosk on-site, per its own Facilities page.",
     ],
-    sourceNote: "K.R. Hospital is named directly by Mysore Palace's own official site as its designated nearby hospital — genuine, specific, and addressed, not a generic city-level guess.",
+    sourceNote: "K.R. Hospital is named directly by Mysore Palace's own official site; Cheluvamba Hospital confirmed via Wikipedia and a mapped listing as a genuine, distinct government facility.",
   },
 };
 
