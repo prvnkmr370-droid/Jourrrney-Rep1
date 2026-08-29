@@ -384,6 +384,13 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
 
       <ScrollView
         ref={scrollRef}
+        // The missing style={{flex:1}} here was the actual cause of "a
+        // white patch below the chat window" — without it, the ScrollView
+        // only sized itself to however tall its messages happened to be
+        // (short conversations especially), leaving a gap between it and
+        // the input bar that exposed the screen's default white scene
+        // background instead of this app's own themed bg.
+        style={{ flex: 1, backgroundColor: c.bg }}
         contentContainerStyle={{ padding: 16, paddingBottom: 20, gap: 12 }}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
@@ -449,8 +456,26 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
   return (
     <View style={{ flexDirection: "row", justifyContent: isAi ? "flex-start" : "flex-end", gap: 8 }}>
       {isAi && (
-        <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#333C81", alignItems: "center", justifyContent: "center", marginTop: 2 }}>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>t</Text>
+        // Styled to echo the "Plan Trip" tab's own active-state bubble
+        // (BottomTabBar.tsx: solid navy circle, a theme-colored ring, and
+        // a matching glow) so Tia's avatar visually belongs to the same
+        // "Plan Trip" identity — while keeping the "t" letter itself
+        // rather than swapping in the tab's Sparkles icon.
+        <View style={{ alignItems: "center", marginTop: 2 }}>
+          <View
+            style={{
+              width: 32, height: 32, borderRadius: 16, backgroundColor: "#333C81",
+              alignItems: "center", justifyContent: "center",
+              borderWidth: 2, borderColor: c.surface,
+              shadowColor: "#333C81", shadowOpacity: 0.4, shadowRadius: 6, shadowOffset: { width: 0, height: 3 },
+              elevation: 4,
+            }}
+          >
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>t</Text>
+          </View>
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 8, color: c.textSecondary, marginTop: 2, letterSpacing: 0.2 }}>
+            Tia
+          </Text>
         </View>
       )}
       <View style={{ maxWidth: "78%", gap: 8 }}>
