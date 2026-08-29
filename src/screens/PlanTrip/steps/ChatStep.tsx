@@ -24,9 +24,11 @@
  *     `image` argument), grounded the same way: it can only ever land on
  *     one of this app's real destinations, never invent one.
  */
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, TextInput, KeyboardAvoidingView, Platform, type NativeSyntheticEvent, type TextInputContentSizeChangeEventData } from "react-native";
 import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
+import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, Easing } from "react-native-reanimated";
 // Deliberately NOT a static top-level import. expo-image-picker's native
 // module isn't present in every client this app might run in (a plain
 // Expo Go install in particular) — a static import throws
@@ -39,9 +41,9 @@ import { Image } from "expo-image";
 // of taking the whole screen down with it — see pickImage() below.
 import type * as ImagePickerType from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Send, Camera } from "lucide-react-native";
+import { ArrowLeft, Send, Camera, Sparkle } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
-import { useThemeColors } from "@/theme/useThemeColors";
+import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, extractDays, SUGGESTED_DESTINATIONS } from "../parseTripMessage";
@@ -99,7 +101,9 @@ const styleKeywordMatch = (lower: string) =>
 export default function ChatStep({ onBack, originCity, preselectedDestination, onReady, tabBarHeight = 0 }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
-  const ctaBottomInset = tabBarHeight > 0 ? tabBarHeight + 12 : Math.max(insets.bottom, 16);
+  // +20 beyond the tab bar's own height/inset — per feedback, the input
+  // bar sat too close to the floating tab bar underneath it.
+  const ctaBottomInset = (tabBarHeight > 0 ? tabBarHeight + 12 : Math.max(insets.bottom, 16)) + 20;
 
   const [messages, setMessages] = useState<ChatMessage[]>(() =>
     preselectedDestination
@@ -561,29 +565,7 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
   const isAi = message.sender === "ai";
   return (
     <View style={{ flexDirection: "row", justifyContent: isAi ? "flex-start" : "flex-end", gap: 8 }}>
-      {isAi && (
-        // Styled to echo the "Plan Trip" tab's own active-state bubble
-        // (BottomTabBar.tsx: solid navy circle, a theme-colored ring, and
-        // a matching glow) so Tia's avatar visually belongs to the same
-        // "Plan Trip" identity — while keeping the "t" letter itself
-        // rather than swapping in the tab's Sparkles icon.
-        <View style={{ alignItems: "center", marginTop: 2 }}>
-          <View
-            style={{
-              width: 32, height: 32, borderRadius: 16, backgroundColor: "#333C81",
-              alignItems: "center", justifyContent: "center",
-              borderWidth: 2, borderColor: c.surface,
-              shadowColor: "#333C81", shadowOpacity: 0.4, shadowRadius: 6, shadowOffset: { width: 0, height: 3 },
-              elevation: 4,
-            }}
-          >
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>t</Text>
-          </View>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 8, color: c.textSecondary, marginTop: 2, letterSpacing: 0.2 }}>
-            Tia
-          </Text>
-        </View>
-      )}
+      {isAi && <TiaAvatar c={c} />}
       <View style={{ maxWidth: "78%", gap: 8 }}>
         {message.imageUri && (
           <Image source={{ uri: message.imageUri }} style={{ width: 160, height: 160, borderRadius: 16 }} contentFit="cover" />
@@ -621,6 +603,58 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
           </View>
         )}
       </View>
+    </View>
+  );
+}
+
+// Tia's avatar: a Sparkle (Gemini-style single 4-point star, not the
+// tab bar's multi-point Sparkles) instead of the old "t" letter. Dark
+// mode keeps a flat solid fill — the ring border + glow already echo
+// the Plan Trip tab's own active-state bubble (BottomTabBar.tsx). Light
+// mode gets a Gemini-esque multi-color gradient with a slow pulsing
+// white highlight layered on top for a shimmer, per request — kept
+// light-mode-only since a shimmer reads as a genuine effect against a
+// bright background but just looks like flicker on a dark one.
+function TiaAvatar({ c }: { c: ReturnType<typeof useThemeColors> }) {
+  const scheme = useResolvedScheme();
+  const shimmer = useSharedValue(0.15);
+
+  useEffect(() => {
+    if (scheme !== "light") return;
+    shimmer.value = withRepeat(withTiming(0.55, { duration: 1100, easing: Easing.inOut(Easing.sin) }), -1, true);
+  }, [scheme, shimmer]);
+
+  const shimmerStyle = useAnimatedStyle(() => ({ opacity: shimmer.value }));
+
+  return (
+    <View style={{ alignItems: "center", marginTop: 2 }}>
+      <View
+        style={{
+          width: 32, height: 32, borderRadius: 16, overflow: "hidden",
+          borderWidth: 2, borderColor: c.surface,
+          shadowColor: "#333C81", shadowOpacity: 0.4, shadowRadius: 6, shadowOffset: { width: 0, height: 3 },
+          elevation: 4,
+        }}
+      >
+        {scheme === "light" ? (
+          <LinearGradient
+            colors={["#4285F4", "#9B72CB", "#D96570"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+          >
+            <Animated.View style={[{ position: "absolute", inset: 0, backgroundColor: "#FFFFFF" }, shimmerStyle]} />
+            <Sparkle color="#FFFFFF" fill="#FFFFFF" size={16} />
+          </LinearGradient>
+        ) : (
+          <View style={{ flex: 1, backgroundColor: "#333C81", alignItems: "center", justifyContent: "center" }}>
+            <Sparkle color="#FFFFFF" size={16} />
+          </View>
+        )}
+      </View>
+      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 8, color: c.textSecondary, marginTop: 2, letterSpacing: 0.2 }}>
+        Tia
+      </Text>
     </View>
   );
 }
