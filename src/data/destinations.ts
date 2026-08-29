@@ -171,14 +171,23 @@ export const DESTINATIONS: Destination[] = [
     aliases: ["Nek Chand Rock Garden"],
     tagline: "A Fantasy Kingdom Built Entirely From Waste",
     description: "The Rock Garden is a 35-acre eco-friendly garden built solely from home and industrial waste — sculptures made of bangles, ceramic pots, tiles, bottles, and electric waste, arranged as a mix of landscape, architecture, sculpture, and mythology. Its founder, Nek Chand, started building it secretly in his spare time in 1957; the garden's layout is based on the fantasy of a 'Lost Kingdom,' spread across 14 distinct chambers. During the Teej festival, the garden takes on a genuinely festive look that draws crowds on top of its usual steady footfall.",
-    image: "https://images.unsplash.com/photo-1588669494151-f4c6df6f715b?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1588669494151-f4c6df6f715b?w=900&h=600&fit=crop&auto=format",
+    // Photos below are the tourism department's own uploads for this exact
+    // page (chandigarhtourism.gov.in/rock-garden), not stock-site keyword
+    // matches — swapped in after the earlier Unsplash "nek chand rock
+    // garden" search results turned out to be unverifiable as genuinely
+    // this specific garden rather than lookalikes.
+    image: "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1588669494151-f4c6df6f715b?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1651910031564-a84d94ee250f?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1716131985076-07350de31afd?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1664272057312-ebed5151189f?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1610893106571-c1714a971390?w=1200&h=900&fit=crop&auto=format",
+      "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553592899.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553592997.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553593221.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553593229.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553593234.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1580105278.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1580105329.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1580105339.jpg",
     ],
     category: ["Heritage", "Culture", "Art"],
     bestSeason: "September – April",
@@ -233,13 +242,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Chandigarh (UT)",
     tagline: "A Rainfed Lake at the Foot of the Shivaliks",
     description: "Sukhna Lake is a 3 sq km rainfed lake created in 1958 by damming the Sukhna Choe, a seasonal stream flowing down from the Shivalik hills. Declared a National Wetland by the Government of India, it's a genuine sanctuary for migratory birds — Siberian ducks, storks, and cranes arrive each winter — and hosts festive events like the monsoon Mango Festival. It also holds Asia's longest channel for rowing and yachting events, a detail that says something about how seriously the city takes this lake.",
-    image: "https://images.unsplash.com/photo-1687850020094-65edaf8c33fb?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1687850020094-65edaf8c33fb?w=900&h=600&fit=crop&auto=format",
+    // Only 2 photos on the tourism department's own Sukhna Lake page —
+    // left at 2 rather than padded out with unverified stock photos of
+    // "a lake in Chandigarh" that can't actually be confirmed as this
+    // specific lake.
+    image: "https://chandigarhtourism.gov.in/uploads/_1767763520.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1767763520.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1687850020094-65edaf8c33fb?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1687850020842-757643283cbd?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1614687345141-7c9e45e3b223?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1610390632324-e5e38152b822?w=1200&h=900&fit=crop&auto=format",
+      "https://chandigarhtourism.gov.in/uploads/_1767763520.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763533.jpg",
     ],
     category: ["Nature", "Wildlife"],
     bestSeason: "September – April (winter for migratory birds)",
@@ -294,13 +305,17 @@ export const DESTINATIONS: Destination[] = [
     state: "Chandigarh (UT)",
     tagline: "Le Corbusier's UNESCO-Listed Seat of Government",
     description: "The Capitol Complex is one of modern architecture's most monumental compositions — designed by Le Corbusier out of a unique geo-political and cultural moment, and recognised as a UNESCO World Heritage Site. Strategically positioned at the geographic and topographic 'head' of the city against the backdrop of the Shivalik Hills, it houses three concrete buildings — the Assembly, the Secretariat, and the High Court — that Corbusier called the 'pillars of Democracy,' alongside four monuments: the Open Hand, the Tower of Shadows, the Geometric Hill, and the Martyr's Memorial.",
-    image: "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=900&h=600&fit=crop&auto=format",
+    // The earlier "brutalist government building" Unsplash search was the
+    // clearest case of the problem this comment is now warning against —
+    // that query has no reason to return Chandigarh's Capitol Complex
+    // specifically over any other brutalist building anywhere. Replaced
+    // with the tourism department's own photos of this exact page.
+    image: "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1611010638643-051de75362ff?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1581097543550-b3cbe2e6ea6e?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1570941144223-7e4f5d0624ee?w=1200&h=900&fit=crop&auto=format",
+      "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763345.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763408.jpg",
     ],
     category: ["Heritage", "UNESCO"],
     bestSeason: "September – April",
@@ -354,13 +369,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Chandigarh (UT)",
     tagline: "An Aviary of Exotic Birds Beside Sukhna Lake",
     description: "Chandigarh Bird Park is one of the city's more serene, thoughtfully designed nature attractions — a beautifully landscaped habitat near Sukhna Lake that replicates natural environments for a genuine range of bird species, from macaws and cockatoos to pheasants, swans, and parrots. Elevated walkways, aviaries, and shaded seating make for an immersive viewing experience that blends conservation, education, and leisure, and it's a popular stop for families, school groups, and bird photographers alike.",
-    image: "https://images.unsplash.com/photo-1674883042269-17097655cfca?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1674883042269-17097655cfca?w=900&h=600&fit=crop&auto=format",
+    // "aviary exotic birds" (the earlier search) has the same problem as
+    // Capitol Complex's — no reason to actually be this specific park.
+    // Only 2 photos exist on the tourism department's own page; left at 2
+    // rather than padded with unverifiable stock.
+    image: "https://chandigarhtourism.gov.in/uploads/_1767763700.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1767763700.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1674883042269-17097655cfca?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1560813487-803cbe32d18b?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1493236296276-d17357e28888?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1594911588637-c9e891bd7858?w=1200&h=900&fit=crop&auto=format",
+      "https://chandigarhtourism.gov.in/uploads/_1767763700.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763718.jpg",
     ],
     category: ["Nature", "Wildlife"],
     bestSeason: "September – April",
@@ -420,14 +437,16 @@ export const DESTINATIONS: Destination[] = [
     state: "Chandigarh (UT)",
     tagline: "The City Beautiful",
     description: "Designed by the legendary architect Le Corbusier, Chandigarh — India's first planned city — stands as a symbol of modernity, culture, and nature in harmony. Known globally as The City Beautiful, it blends architectural elegance (including a genuine UNESCO World Heritage Site, the Capitol Complex) with lush greenery, a famously eccentric outsider-art garden, and a laid-back, walkable pace rare in an Indian city this size.",
-    image: "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=900&h=600&fit=crop&auto=format",
+    // One official photo from each of the four attraction pages below,
+    // via chandigarhtourism.gov.in's own uploads — matches the earlier
+    // fix on those four entries themselves.
+    image: "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1690983321470-2ad8ab0e9455?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1588669494151-f4c6df6f715b?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1687850020094-65edaf8c33fb?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1674883042269-17097655cfca?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1611010638643-051de75362ff?w=1200&h=900&fit=crop&auto=format",
+      "https://chandigarhtourism.gov.in/uploads/_1767762679.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763520.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1767763700.jpg",
     ],
     category: ["Heritage", "UNESCO", "Culture"],
     bestSeason: "September – April",
@@ -1449,7 +1468,6 @@ export const DESTINATIONS: Destination[] = [
       "https://images.unsplash.com/photo-1694537623072-a1172819c577?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1694537623159-52f5c5a98029?w=1200&h=900&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1710612198146-77512950a4b7?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1609775015123-e7573e73a7a7?w=1200&h=900&fit=crop&auto=format",
     ],
     category: ["Nature", "Wellness", "Adventure", "Culture"],
     bestSeason: "October – May (avoid June–August monsoon)",
@@ -1926,6 +1944,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Emperor Akbar built Fatehpur Sikri as his new Mughal capital in 1571 — 'the first planned city in Indo-Islamic style,' per UP Tourism — then abandoned it within 15 years, most likely due to water shortage. What's left is a remarkably intact red-sandstone city: palaces, courtyards, and India's tallest gateway, the Buland Darwaza, all frozen since the 16th century. A UNESCO World Heritage Site, usually visited as a half-day trip from Agra.",
     image: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1736959453077-c6bfb10a60cd?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1742303315300-3f0db335c06f?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1698824834427-2202cca41d27?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1786596550305-4d6ed09a4b8b?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "Half-day to 1 day",
@@ -1982,6 +2006,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Mathura is revered as Krishna's birthplace; neighbouring Vrindavan is where he's believed to have spent his childhood. Together they form one of Hinduism's most important pilgrimage circuits — dozens of temples ranging from centuries-old (Banke Bihari) to strikingly modern (Prem Mandir, ISKCON), all within a short auto-rickshaw ride of each other.",
     image: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1652448642708-ddefcedbc1ff?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1660280037297-a3b5e79a3d20?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1641913625440-158406784a9f?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1667162862361-e2dbce58db05?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 days",
@@ -2048,6 +2078,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Uttar Pradesh's capital blends Mughal, colonial, and nawabi architecture with a reputation for refined manners, poetry, and food. Lucknow was the epicentre of the 1857 War of Independence, and its Imambaras and gateways still carry that layered, cosmopolitan history — per UP Tourism, a city recognised for its literature, cuisine, and performing arts as much as its monuments.",
     image: "https://images.unsplash.com/photo-1655747313118-431d52eb4f92?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1655747313118-431d52eb4f92?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1655747313118-431d52eb4f92?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1583504490792-3ceadbc5147c?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1583504491400-a6270df17ebc?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1583504491444-bc8d6f439779?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Heritage", "Culture", "History"],
     bestSeason: "October – March",
     duration: "2–3 days",
@@ -2104,6 +2140,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Ayodhya, on the banks of the Saryu River, is revered as one of Hinduism's seven holiest towns ('Saptpuris') and as the birthplace of Lord Ram. The newly built Ram Temple has made it one of India's most-visited pilgrimage sites; the town is dotted with older temples and ghats that have drawn pilgrims for centuries.",
     image: "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1710429068963-1f6c853134a4?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1710429814573-7f07a792cba2?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 days",
@@ -2160,6 +2202,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Prayagraj sits at the Sangam — the confluence of the Ganges, Yamuna, and the mythical Saraswati — making it, per UP Tourism, 'the holiest of pilgrimage centres of India.' It hosts the Kumbh Mela once every 12 years and the annual Magh Mela, among the largest gatherings of pilgrims on earth, alongside a real role in India's independence movement.",
     image: "https://images.unsplash.com/photo-1743332509532-f4c6a854f3c9?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1743332509532-f4c6a854f3c9?w=900&h=600&fit=crop&auto=format",
+    gallery: [
+      "https://images.unsplash.com/photo-1743332509532-f4c6a854f3c9?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1674358596018-5b768ca9cfd1?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1733816967037-4047d3566929?w=1200&h=900&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1708191890559-eb240de4ecb7?w=1200&h=900&fit=crop&auto=format",
+    ],
     category: ["Spiritual", "Heritage", "History"],
     bestSeason: "October – March (Magh Mela: January–February)",
     duration: "1–2 days",
@@ -2223,8 +2271,22 @@ export const DESTINATIONS: Destination[] = [
     state: "Assam",
     tagline: "Land of the One-Horned Rhinoceros",
     description: "Kaziranga is a UNESCO World Heritage Site along the Brahmaputra, spanning 858.98 sq km across Golaghat, Nagaon, and Biswanath districts. It holds two-thirds of the world's population of the endangered Indian one-horned rhinoceros and, per Assam Tourism, the highest density of Royal Bengal Tigers anywhere — alongside wild buffalo, swamp deer, and elephants, together known locally as the 'Big Five.'",
-    image: "https://images.unsplash.com/photo-1670099355126-2561c8a08d7c?w=600&h=400&fit=crop&auto=format",
-    heroImage: "https://images.unsplash.com/photo-1670099355126-2561c8a08d7c?w=900&h=600&fit=crop&auto=format",
+    // assamtourism.gov.in genuinely has dedicated photos for Kaziranga
+    // specifically (kaziranga01-03.jpg) — checked directly, unlike most of
+    // the site's other destination pages, which all reuse a broken
+    // Kaziranga-banner placeholder regardless of which place the page is
+    // actually for (confirmed on Majuli's and even Kamakhya Temple's own
+    // pages). That's why Kaziranga is the only Assam entry with a
+    // `gallery` — the other 23 don't have a genuine source to draw one
+    // from, so they're deliberately left without one rather than padded
+    // with unverified stock photos.
+    image: "https://assamtourism.gov.in/images/kaziranga01.jpg",
+    heroImage: "https://assamtourism.gov.in/images/kaziranga01.jpg",
+    gallery: [
+      "https://assamtourism.gov.in/images/kaziranga01.jpg",
+      "https://assamtourism.gov.in/images/kaziranga02.jpg",
+      "https://assamtourism.gov.in/images/kaziranga03.jpg",
+    ],
     category: ["Nature", "Wildlife"],
     bestSeason: "November – April (best sightings late February – early April)",
     duration: "2–3 days",
@@ -4110,13 +4172,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Araku Valley, in the Eastern Ghats above Visakhapatnam at about 1,300m, is Andhra Pradesh's best-known hill station — a tribal-belt valley of coffee plantations, waterfalls, and the famous Vistadome train ride from Vizag that winds through 58 tunnels and over dozens of bridges before it even arrives.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg/1280px-A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg/1280px-A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg",
-    gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg/1280px-A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg",
-      "https://images.unsplash.com/photo-1723745390402-04eeda8b6444?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1616388969587-8196f32388b4?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1663597675816-9b5d68952f42?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1704627105594-d3c320e970e4?w=1200&h=900&fit=crop&auto=format",
-    ],
     imageCredit: "Photo: Billjones94 / Wikimedia Commons, CC BY-SA 4.0",
     category: ["Nature", "Hills"],
     bestSeason: "November – February",
@@ -4177,13 +4232,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Vijayawada, on the banks of the Krishna River, is Andhra Pradesh's commercial heart and one of its most visited pilgrimage stops — the hilltop Kanaka Durga Temple on Indrakeeladri overlooks the river and the Prakasam Barrage, with the 3rd-century BC rock-cut Undavalli Caves and the picnic getaway of Bhavani Island both a short trip away.",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
-    gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kanaka_Durga_Gopuram%2C_Vijayawada.jpg",
-      "https://images.unsplash.com/photo-1706439807959-dbba5716e12f?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1703993995874-2646172d4201?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1706440269893-486afea7c325?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1680533101906-561695cf52fe?w=1200&h=900&fit=crop&auto=format",
-    ],
     imageCredit: "Photo: Saishna96 / Wikimedia Commons, CC BY-SA 4.0",
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – March",
@@ -4245,12 +4293,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Srisailam holds one of Hinduism's twelve Jyotirlingas — the Bhramaramba Mallikarjuna Temple, its gopurams lit gold against the Nallamala forest at night — and sits inside the Nagarjunsagar-Srisailam Tiger Reserve, India's largest tiger reserve, so a pilgrimage here doubles as a genuine wildlife trip.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
-    gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Night_view_of_Srisailam_Temple_South_Gopuram.jpg/1280px-Night_view_of_Srisailam_Temple_South_Gopuram.jpg",
-      "https://images.pexels.com/photos/38122489/pexels-photo-38122489.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "https://images.pexels.com/photos/31969428/pexels-photo-31969428.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "https://images.pexels.com/photos/8840836/pexels-photo-8840836.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    ],
     imageCredit: "Photo: Wikimedia Commons, CC BY 4.0",
     category: ["Spiritual", "Nature"],
     bestSeason: "October – March",
@@ -4562,13 +4604,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Kesariya Stupa, in East Champaran district, is the tallest and largest Buddhist stupa in the world — 104 ft high with a 400-ft circumference. Originally built in the 3rd century BCE under Ashoka and later expanded during the Gupta period (200–750 AD), it's linked to Lord Buddha's final journey: he's said to have donated his alms bowl to the Licchavis here before continuing on to Kushinagar. Chinese travellers Faxian and Xuanzang both documented the site, and ASI excavations (from 1998, though explored since the 19th century) revealed a six-tiered polygonal structure along with gold coins of Emperor Kanishka.",
     image: "https://images.unsplash.com/photo-1521681108133-d4f9d827a0c0?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1521681108133-d4f9d827a0c0?w=900&h=600&fit=crop&auto=format",
-    gallery: [
-      "https://images.unsplash.com/photo-1521681108133-d4f9d827a0c0?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1679429610125-c3e3278cd85f?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1730606603200-e7d75695df17?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1763389682681-a8bf2c5440dd?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1730606603956-8771cb6cf6e3?w=1200&h=900&fit=crop&auto=format",
-    ],
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
@@ -4621,12 +4656,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Prakash Punj is a purpose-built park near Guru Ka Bagh in Patna, its four gates named for the sons of Guru Gobind Singh — Ajit Singh, Fateh Singh, Jujhar Singh, and Zorawar Singh — and its five circular walls named after Hemkund Sahib, Paonta Sahib, Nanded Sahib, Keshgarh Sahib, and Patna Sahib. A museum inside the complex uses audio-video displays, paintings, and artefacts — weapons, costumes, and personal items said to have been used by Guru Gobind Singh — to tell the story of all ten Sikh Gurus, alongside a circular auditorium and two exhibition halls.",
     image: "https://images.unsplash.com/photo-1587899765642-3f8e3ea67852?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1587899765642-3f8e3ea67852?w=900&h=600&fit=crop&auto=format",
-    gallery: [
-      "https://images.unsplash.com/photo-1587899765642-3f8e3ea67852?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1723118579966-337195f18feb?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1705924270480-fa3a82508bc5?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1557256264-073ac529e92e?w=1200&h=900&fit=crop&auto=format",
-    ],
     category: ["Spiritual", "Culture"],
     bestSeason: "All year round",
     duration: "Half day",
@@ -4683,13 +4712,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Valmiki Tiger Reserve forms the easternmost limit of the Himalayan Terai forests in India and is Bihar's only tiger reserve, lying in the Gangetic Plains bio-geographic zone in West Champaran — a district whose name comes from 'Champa' and 'Aranya' (forest of Champa trees). The reserve's mix of bhabar and terai tracts shelters an estimated 250 bird species, 53 mammals, 26 reptiles, and 13 amphibians, alongside its resident Bengal tigers.",
     image: "https://images.unsplash.com/photo-1586617356423-52763004deac?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1586617356423-52763004deac?w=900&h=600&fit=crop&auto=format",
-    gallery: [
-      "https://images.unsplash.com/photo-1586617356423-52763004deac?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1615474286632-e31ac3633d58?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1670421291781-4d54641ded9e?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1730014392621-10de7b9bc20f?w=1200&h=900&fit=crop&auto=format",
-    ],
     category: ["Wildlife", "Nature"],
     bestSeason: "November – March (park typically closed mid-June to mid-October for monsoon)",
     duration: "2 days",
@@ -4745,12 +4767,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Developed by the Government of Bihar to mark the 2554th birth anniversary of Lord Buddha, Buddha Smriti Park is a 22-acre urban oasis on Fraser Road near Patna Junction, opposite the Mahavir Mandir. Its centrepiece, the 200-ft Pataliputra Karuna Stupa, houses a relic of the Buddha — one of eight original relics excavated at Vaishali — alongside other relics brought by the Dalai Lama and monks from Thailand, Myanmar, Japan, South Korea, and Sri Lanka. The park also has a 60-cell meditation centre modelled on Nalanda's monastery plans, a library, a museum, and two Bodhi trees planted by the Dalai Lama himself.",
     image: "https://images.unsplash.com/photo-1686650695325-915d46cbd0f7?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1686650695325-915d46cbd0f7?w=900&h=600&fit=crop&auto=format",
-    gallery: [
-      "https://images.unsplash.com/photo-1686650695325-915d46cbd0f7?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1758787412957-aee7a6fd0775?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1786503316563-0d49dc767f1a?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1765725625463-3d7d6fee612c?w=1200&h=900&fit=crop&auto=format",
-    ],
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
@@ -4807,13 +4823,6 @@ export const DESTINATIONS: Destination[] = [
     description: "Perched on the Mundeshwari Hills in Kaimur district, this temple is considered the 'oldest functional' temple in the world — rituals here have reportedly been performed without a break since the Archaeological Survey of India dated it to 108 AD, making it the oldest surviving example of Nagara-style temple architecture. Dedicated jointly to Lord Shiva and Shakti, with deities of Ganesha, Surya, and Vishnu also present, the temple's central Chatur Mukhalingam — a four-faced lingam — has held its position through centuries of shifting religious emphasis, from Shaivism to the Chero tribe's Shakti worship and back.",
     image: "https://images.unsplash.com/photo-1601815264039-67c8ba1a7f98?w=600&h=400&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1601815264039-67c8ba1a7f98?w=900&h=600&fit=crop&auto=format",
-    gallery: [
-      "https://images.unsplash.com/photo-1601815264039-67c8ba1a7f98?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1754666525499-5bd1b2bee97c?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1787664630914-b22faf2493dd?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1704870872733-3de6c9cb02c9?w=1200&h=900&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1692170453545-218ae3662f7d?w=1200&h=900&fit=crop&auto=format",
-    ],
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
