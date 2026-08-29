@@ -1535,3 +1535,24 @@ SAFETY_OVERRIDES["digboi"] = {
     sourceNote: "Digboi Civil Hospital confirmed via a mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["bongaigaon"] = {
+  police: {
+    summary: "Bongaigaon Police Station (Sadar Thana, 24hr): 075779 31749 · District Control Room: 7086793507",
+    details: [
+      "Bongaigaon Police Station — the district's head/Sadar station — 075779 31749, confirmed via a mapped listing.",
+      "District Control Room: 7086793507, confirmed directly on bongaigaon.assam.gov.in's own official Helpline Numbers page.",
+      "Fire Station: 235605 · Disaster Management: 1077 / 1070",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Bongaigaon Police Station confirmed via a mapped listing; district control room and other helplines taken directly from bongaigaon.assam.gov.in's own official site.",
+  },
+  medical: {
+    summary: "Bongaigaon Government Civil Hospital — 200 beds, with MRI, CT scan, and dialysis facilities",
+    details: [
+      "Bongaigaon Government Civil Hospital — Highway SH2, Maj Gaon, Bongaigaon 783380 — a genuinely well-equipped 200-bed government hospital with MRI, CT scan, and dialysis facilities, confirmed via a mapped listing.",
+      "Ambulance/Medical Helpline: 108",
+    ],
+    sourceNote: "Confirmed via a mapped business listing describing its real bed count and equipment.",
+  },
+};
