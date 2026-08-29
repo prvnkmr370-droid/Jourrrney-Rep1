@@ -531,13 +531,14 @@ SAFETY_OVERRIDES["hampi"] = {
     sourceNote: "Hampi Police Station's name/address/number confirmed via a mapped business listing.",
   },
   medical: {
-    summary: "Govt General THC Hospital, Hospete (nearest town, ~13km) — named directly on the district's own official site",
+    summary: "Govt General THC Hospital, Hospete (government, ~13km) · Sripathi Hospital, Hospete (private, 24/7 emergency)",
     details: [
       "Govt General THC Hospital, Hospete — M.J. Nagar Dam Road, Hosapete — is the nearest government hospital, named directly on vijayanagara.nic.in (Hampi's own district government site).",
+      "Sripathi Hospital, Hospete — a private 24/7 multi-speciality hospital, confirmed via its own official site (sripathihospital.in) — a second option in the same nearest town.",
       "Hospete (Hospet) is the nearest town with proper medical facilities, a short distance from the Hampi ruins themselves.",
       "Ambulance: 108",
     ],
-    sourceNote: "Hospital name and location confirmed directly via vijayanagara.nic.in, the official district government site for Hampi's own district.",
+    sourceNote: "Govt General THC Hospital confirmed directly via vijayanagara.nic.in, the official district government site for Hampi's own district; Sripathi Hospital confirmed via its own official site.",
   },
 };
 
@@ -1001,13 +1002,13 @@ SAFETY_OVERRIDES["kesariya-stupa"] = {
     sourceNote: "All stations taken directly from eastchamparan.nic.in's own official District Administration Police directory — a genuinely complete list including a station named for Kesariya itself.",
   },
   medical: {
-    summary: "Primary Health Centre Kesaria — the local government facility, genuinely named for this destination's own town",
+    summary: "PHC Kesaria (local) · Sadar Hospital Motihari (district headquarters) — two real options",
     details: [
       "Primary Health Centre Kesaria — Kesaria block, East Champaran: 7485801252, named directly on eastchamparan.nic.in's own official Hospitals directory.",
-      "For anything more serious, Motihari (the district headquarters) has the larger district-level hospital.",
+      "Sadar Hospital Motihari — Hospital Chauk, Motihari, East Champaran, open 24 hours — the district headquarters hospital for anything more serious, also named directly on eastchamparan.nic.in.",
       "Ambulance: 108",
     ],
-    sourceNote: "PHC Kesaria confirmed directly on eastchamparan.nic.in's own official district government site.",
+    sourceNote: "Both facilities confirmed directly on eastchamparan.nic.in's own official district government site.",
   },
 };
 
@@ -1190,12 +1191,13 @@ SAFETY_OVERRIDES["ashokan-pillar-vaishali"] = {
     sourceNote: "Confirmed via a mapped business listing referencing Bihar Police's own official structure.",
   },
   medical: {
-    summary: "Sadar Hospital, Hajipur (district headquarters) — the nearest well-equipped hospital",
+    summary: "Sadar Hospital, Hajipur (government) · Vaishali A & R Hospital (private) — two real options",
     details: [
       "Sadar Hospital, Hajipur — Hospital Road, Hajipur: 06224-260197, named directly on vaishali.nic.in's own official Hospitals directory.",
+      "Vaishali A & R Hospital — Anjaanpeer Chowk, Hajipur — a private hospital, confirmed via a mapped listing, a second option in the same town.",
       "Ambulance: 108",
     ],
-    sourceNote: "Confirmed directly on vaishali.nic.in, the district's own official government site.",
+    sourceNote: "Sadar Hospital confirmed directly on vaishali.nic.in, the district's own official government site; Vaishali A & R Hospital confirmed via a mapped listing.",
   },
 };
 
@@ -1279,11 +1281,12 @@ SAFETY_OVERRIDES["ashok-dham"] = {
     sourceNote: "Taken directly from lakhisarai.nic.in's own official District Administration Police directory.",
   },
   medical: {
-    summary: "Sadar Hospital, Lakhisarai — Near Jamui More — the district headquarters hospital",
+    summary: "Sadar Hospital, Lakhisarai (government) · Sri Radhey Hospital, Gobind Bigha (private) — two real options",
     details: [
       "Sadar Hospital, Lakhisarai — Near Jamui More, Lakhisarai 811311: 9006625556, named directly on lakhisarai.nic.in's own official Hospitals directory.",
+      "Sri Radhey Hospital — Gobind Bigha, Lakhisarai — a private hospital, confirmed via a mapped listing, a second option in the same town.",
       "Ambulance: 108",
     ],
-    sourceNote: "Confirmed directly on lakhisarai.nic.in, the district's own official government site.",
+    sourceNote: "Sadar Hospital confirmed directly on lakhisarai.nic.in, the district's own official government site; Sri Radhey Hospital confirmed via a mapped listing.",
   },
 };
