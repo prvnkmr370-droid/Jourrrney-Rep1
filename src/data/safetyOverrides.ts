@@ -2836,3 +2836,23 @@ SAFETY_OVERRIDES["munnar"] = {
     sourceNote: "Government Hospital confirmed via an independent mapped listing; Tata General Hospital confirmed via its listing on keralabloodnet.in, a genuine Kerala government-linked blood-bank directory.",
   },
 };
+
+SAFETY_OVERRIDES["kochi"] = {
+  police: {
+    summary: "Fort Kochi Police Station: 0484-2215055",
+    details: [
+      "Fort Kochi Police Station — Fortkochi PO, Kochi 682001: 0484-2215055 / 9497987107, confirmed directly on ps.keralapolice.gov.in and ernakulam.nic.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on ps.keralapolice.gov.in — Kerala Police's own dedicated per-station official site — and corroborated on ernakulam.nic.in, the district's own government portal.",
+  },
+  medical: {
+    summary: "General Hospital Ernakulam — the region's first NABH-accredited government hospital",
+    details: [
+      "General Hospital Ernakulam — Hospital Road, Marine Drive, Ernakulam 682011 — the first NABH-accredited general hospital in Kerala: 0484-2386000.",
+      "Government Medical College, Ernakulam (Cochin) is also a genuine government teaching hospital in the district.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on generalhospitalernakulam.in (the hospital's own official site) and cross-confirmed via its Wikipedia entry and ernakulam.nic.in, the district's official government portal.",
+  },
+};
