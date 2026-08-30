@@ -2292,3 +2292,24 @@ SAFETY_OVERRIDES["bhangarh"] = {
     sourceNote: "Same source basis as the Alwar entry — cross-confirmed via multiple independent listings (Medindia, Lybrate).",
   },
 };
+
+SAFETY_OVERRIDES["neemrana"] = {
+  police: {
+    summary: "Neemrana Police Station (local, exists but no verified direct number) · Alwar District Police Control Room: 0144-2338200",
+    details: [
+      "Neemrana Police Station — Neemrana, 301705 — confirmed to exist via an independent directory listing as a 24-hour station, but no direct phone number could be independently verified, so it is not stated here.",
+      "Alwar District Police Control Room: 0144-2338200 — the higher-confidence contact for this area.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Neemrana Police Station's existence is confirmed (Justdial listing) but its direct number was not independently verifiable, so only the confirmed Alwar district control room number is given — never fabricate a specific number without a real source.",
+  },
+  medical: {
+    summary: "Government Hospital, Neemrana — the local government facility",
+    details: [
+      "Government Hospital, Neemrana — Neemrana, Rajasthan 301705 — confirmed listed among Rajasthan's official government hospitals (rghs.rajasthan.gov.in).",
+      "CHC Neemrana — opposite the SDM Office, Neemrana — the local Community Health Centre.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via listing on rghs.rajasthan.gov.in, the Rajasthan Government Health Scheme's own official government hospital directory, and cross-confirmed via an independent mapped listing.",
+  },
+};
