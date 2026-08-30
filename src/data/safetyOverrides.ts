@@ -2754,6 +2754,27 @@ SAFETY_OVERRIDES["haridwar"] = {
   },
 };
 
+SAFETY_OVERRIDES["auli"] = {
+  police: {
+    summary: "Joshimath Police Station (gateway town, 16 km from Auli): 01389-222103",
+    details: [
+      "Joshimath Police Station: 01389-222103 — the nearest police station, in Joshimath, the town Auli's cable car departs from.",
+      "Chamoli District Police Control Room, Gopeshwar: dial 112 for routing.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Joshimath Police Station's existence is confirmed directly on the official Chamoli district government portal (chamoli.gov.in), which lists it as one of the district's police stations. Its phone number, however, could not be retrieved from that official source directly (the site's police-listing page did not load) and is sourced instead from an independent mapped business listing — treat the number with correspondingly lower confidence than the station's confirmed existence.",
+  },
+  medical: {
+    summary: "Joshimath Community Health Centre — nearest hospital, in the gateway town",
+    details: [
+      "Joshimath Community Health Centre — near Narsingh Mandir, Block Joshimath, Chamoli, Uttarakhand 246443.",
+      "No verified phone number could be found for this facility — call 108 for ambulance dispatch instead.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address corroborated by references to chamoli.gov.in and independent facility listings. No phone number could be independently verified despite multiple searches — deliberately left out rather than guessed; use the 108 ambulance line for any emergency instead.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",
