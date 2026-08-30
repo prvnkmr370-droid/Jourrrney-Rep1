@@ -2693,3 +2693,23 @@ SAFETY_OVERRIDES["badami"] = {
     sourceNote: "Confirmed via its listing on bagalkot.nic.in (Bagalkot district's own official government portal) and cross-confirmed via an independent directory (Practo).",
   },
 };
+
+SAFETY_OVERRIDES["jog-falls"] = {
+  police: {
+    summary: "Shivamogga District SP Office: 08182-261400 (Jog Falls falls under the Sagar sub-division)",
+    details: [
+      "Shivamogga District Superintendent of Police Office: 08182-261400.",
+      "The nearest sub-division is Sagar (Sagar Town Police Station); no independently-verified direct number was found for it specifically, so the confirmed district SP office is given.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Shivamogga's own official site (shivamogga.nic.in) confirms the district has 32 police stations including a Sagar sub-division, but doesn't publish individual station numbers; the SP office number is corroborated by search results citing shivamoggapolice.karnataka.gov.in as its source.",
+  },
+  medical: {
+    summary: "Sub-Divisional Hospital, Sagara — the nearest government hospital, ~29 km away",
+    details: [
+      "Sub-Divisional Hospital, Sagara — J C Road, Chamaraj Pete, Sagar, Shivamogga district 577401: 07235-227625 / 227563.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via an independent directory listing (Inspiring Pathways) with a real address and phone number for this genuine government sub-divisional hospital.",
+  },
+};
