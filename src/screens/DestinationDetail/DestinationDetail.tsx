@@ -168,20 +168,6 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           </View>
         )}
 
-        {/* Wikimedia Commons images are CC BY-SA — attribution is a
-            license requirement, not a style choice. Unsplash images (the
-            majority) carry no imageCredit and this renders nothing. */}
-        {d.imageCredit && (
-          <Text
-            style={{
-              position: "absolute", bottom: 8, right: 12,
-              fontFamily: "Poppins_400Regular", fontSize: 9, color: "rgba(255,255,255,0.7)",
-            }}
-          >
-            {d.imageCredit}
-          </Text>
-        )}
-
         <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
             {d.state}
@@ -208,6 +194,28 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           </View>
         </View>
       </View>
+
+      {/* Wikimedia Commons images are CC BY-SA — attribution is a license
+          requirement, not a style choice. Unsplash images (the majority)
+          carry no imageCredit and this renders nothing. Deliberately laid
+          out in normal flow, in its own dedicated strip below the hero,
+          rather than absolutely positioned over it: an overlay sharing the
+          same bottom-right corner as the name/rating block wrapped onto
+          multiple lines for longer multi-photographer credits (e.g. six
+          names) and grew upward into that block. Fixed to a single line
+          with a trailing ellipsis so its height — and therefore this
+          strip's — never varies. */}
+      {d.imageCredit && (
+        <View style={{ paddingHorizontal: 20, paddingVertical: 4, backgroundColor: c.bg }}>
+          <Text
+            numberOfLines={1}
+            ellipsizeMode="tail"
+            style={{ fontFamily: "Poppins_400Regular", fontSize: 9, color: c.textMuted }}
+          >
+            {d.imageCredit}
+          </Text>
+        </View>
+      )}
 
       {/* Tab bar */}
       <View style={{ borderBottomWidth: 1, borderBottomColor: c.border, backgroundColor: c.surface }}>
