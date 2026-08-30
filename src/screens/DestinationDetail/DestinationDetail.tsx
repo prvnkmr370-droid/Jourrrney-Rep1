@@ -147,31 +147,35 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           </Text>
         </Pressable>
 
-        {/* Dot indicators for the hero carousel — only meaningful (and
-            only rendered) once a destination actually has more than one
-            photo to page through. Vertically centred on the "Agra" name
-            text's own line, not sitting at either edge of it: bottom:84
-            was the line's top edge, bottom:48 its baseline/bottom edge —
-            the midpoint of that span, 66, is where a hyphen-in-the-middle-
-            of-the-text reading actually lands. */}
-        {heroPhotos.length > 1 && (
-          <View style={{ position: "absolute", bottom: 66, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}>
-            {heroPhotos.map((uri, i) => (
-              <View
-                key={`${uri}-${i}`}
-                style={{
-                  width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
-                  backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
-                }}
-              />
-            ))}
-          </View>
-        )}
-
         <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
-            {d.state}
-          </Text>
+          {/* State name and the hero-carousel dot indicators share this
+              row rather than the dots floating as their own absolutely-
+              positioned layer at a fixed offset — that fixed offset was
+              tuned to sit within the destination-name text's own line
+              height, but with a two-line state+dots pairing instead the
+              dots are guaranteed to never collide with the name or the
+              rating/duration/season row below, since they're now part of
+              the same normal-flow row as the state text itself. Only
+              rendered once a destination actually has more than one
+              photo to page through. */}
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>
+              {d.state}
+            </Text>
+            {heroPhotos.length > 1 && (
+              <View style={{ flexDirection: "row", gap: 6 }}>
+                {heroPhotos.map((uri, i) => (
+                  <View
+                    key={`${uri}-${i}`}
+                    style={{
+                      width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
+                      backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
+                    }}
+                  />
+                ))}
+              </View>
+            )}
+          </View>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}>
             {d.name}
           </Text>
