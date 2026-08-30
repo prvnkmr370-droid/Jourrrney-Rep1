@@ -4274,7 +4274,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Our Lady of Remédios Church", distance: "Moti Daman", type: "Church", isHidden: true, id: "our-lady-of-remedios-church" },
       { name: "Jetty Garden", distance: "Nani Daman riverfront", type: "Garden", isHidden: true, id: "jetty-garden-daman" },
       { name: "Aviary & INS Khukri Memorial Tableau", distance: "Devka", type: "Park", isHidden: true, id: "aviary-daman" },
-      { name: "Nani Daman Beach", distance: "Nani Daman, by St. Jerome Fort", type: "Beach", isHidden: true },
+      { name: "Nani Daman Beach", distance: "Nani Daman, by St. Jerome Fort", type: "Beach", isHidden: true, id: "nani-daman-beach", image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/daman/nani-daman-beach-1.jpg" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 900, food: 400, transport: 300, activities: 200 },
@@ -4470,7 +4470,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Church of Our Lady of the Sea", distance: "Within the fort", type: "Church", isHidden: false, id: "church-of-our-lady-of-sea" },
-      { name: "Nani Daman Beach", distance: "Right by the fort", type: "Beach", isHidden: true },
+      { name: "Nani Daman Beach", distance: "Right by the fort", type: "Beach", isHidden: true, id: "nani-daman-beach" },
       { name: "Jetty Garden", distance: "Nani Daman riverfront", type: "Garden", isHidden: true, id: "jetty-garden-daman" },
     ],
     budgetBreakdown: [
@@ -4990,9 +4990,10 @@ export const DESTINATIONS: Destination[] = [
       { name: "Chakratirth Beach", distance: "~2 km", type: "Beach", isHidden: true, id: "chakratirth-beach", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Diu-34-_28.06.2021.jpg/1280px-Diu-34-_28.06.2021.jpg" },
       { name: "Zampa Gateway", distance: "Diu town", type: "Heritage Gateway", isHidden: true, id: "zampa-gateway", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Diu1.jpg/1280px-Diu1.jpg" },
       { name: "St. Thomas Church Museum", distance: "Diu town", type: "Museum", isHidden: true, id: "st-thomas-church-museum", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Front_View_Thomas_Church.JPG/1280px-Front_View_Thomas_Church.JPG" },
-      { name: "St. Francis of Assisi Church", distance: "Diu town", type: "Church", isHidden: true },
-      { name: "Fortress of Panikotha", distance: "Islet off Diu Fort", type: "Sea Fort", isHidden: true },
-      { name: "Gomtimata Beach", distance: "~28 km, near Vanakbara", type: "Beach", isHidden: true },
+      { name: "St. Francis of Assisi Church", distance: "Diu town", type: "Church", isHidden: true, id: "st-francis-assisi-church", image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png" },
+      { name: "Fortress of Panikotha", distance: "Islet off Diu Fort", type: "Sea Fort", isHidden: true, id: "fortress-of-panikotha", image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/fortress-of-panikotha-1.png" },
+      { name: "Gomtimata Beach", distance: "~13 km, near Vanakbara", type: "Beach", isHidden: true, id: "gomtimata-beach", image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/gomtimata-beach-1.png" },
+      { name: "Diu Bird Sanctuary", distance: "Southeastern coast", type: "Nature Reserve", isHidden: true, id: "diu-bird-sanctuary", image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/diu-bird-sanctuary-1.jpg" },
       { name: "Jallandhar Beach", distance: "~2 km", type: "Beach", isHidden: true },
     ],
     budgetBreakdown: [
@@ -5650,6 +5651,306 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1300,
     mustEat: ["Local snacks in old town Diu"],
     packingTips: ["Comfortable walking shoes", "Camera (check photography rules inside)"],
+  },
+
+  {
+    id: "gomtimata-beach",
+    name: "Gomtimata Beach",
+    state: "Diu (UT)",
+    hidden: true,
+    tagline: "Diu's Secluded, Uncrowded Beach Near Vanakbara",
+    description: "Gomtimata Beach, on Diu's western edge near Vanakbara village, is a genuinely quiet, uncrowded stretch of sand about 13 km from Diu town — rugged cliffs and undeveloped shoreline give it a much more secluded feel than Nagoa or Chakratirth, with far fewer facilities to match.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/gomtimata-beach-1.png",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/gomtimata-beach-1.png",
+    // Real, place-specific photo from the official DNH & DD Tourism
+    // Department site (dnhddtourism.in) — confirmed as genuinely
+    // unique to this page. That site's own Copyright Policy restricts
+    // use to personal/non-commercial viewing; used here at the user's
+    // explicit direction, the same decision already made for DNH's
+    // Swaminarayan Temple/Nakshatra Garden/Hirwavan Garden/Tapovan
+    // cards — see those for the full context.
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    category: ["Beach", "Offbeat"],
+    bestSeason: "October – March",
+    duration: "Half day",
+    highlights: [{ name: "Secluded, undeveloped shoreline" }, { name: "Rugged cliffs" }, { name: "Near Vanakbara fishing village" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu, then ~13km further", fromBangalore: "Long haul", duration: "~25–30min from Diu town", costRange: "₹300–₹600 (auto/cab from Diu town)", tips: "Genuinely undeveloped — bring your own water and snacks, since facilities are minimal to none." },
+    ],
+    accommodation: [
+      {
+        type: "Base in Diu Town", priceRange: "₹1,500–₹15,000/night (estimate)",
+        examples: ["Hotel Kohinoor, Diu"],
+        description: "Gomtimata has no lodging of its own — visit as a day trip from Diu town.",
+        sourceNote: "Hotel name confirmed directly on the official Diu Hotels listing.",
+      },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The practical way to reach this more remote beach", available: true },
+      { mode: "Auto Rickshaw / Cab", cost: "₹300–₹600 from Diu town", notes: "Alternative to a rented scooter", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Diu town centre", distance: "~13 km", type: "Town", isHidden: false, id: "diu" },
+      { name: "Vanakbara village", distance: "Adjoining", type: "Fishing Village", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 900, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4300, accommodation: 2600, food: 600, transport: 500, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9800, accommodation: 6800, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Secluded Beach Half-Day", morning: "Drive out to Gomtimata for a quiet, uncrowded beach morning.", afternoon: "Explore Vanakbara fishing village nearby.", evening: "Return to Diu town.", stay: "Diu town base", meals: "Pack your own — very limited food options at the beach itself", tips: "Bring water, snacks, and sun protection — this is a genuinely undeveloped stretch, not a facility-heavy beach." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Part of Diu's generally low-crime island", "Popular enough to have regular day-trip visitor traffic"],
+      precautions: ["Genuinely undeveloped and remote compared to Diu's main beaches — fewer people around, less lit, no lifeguard or facility staff", "Standard beach-safety caution (currents, tides)", "Best visited during daylight hours with a companion or as part of a small group, given how quiet it is"],
+      soloTips: ["Solo visits are best done during busier daylight hours rather than early morning/late evening, given how remote and undeveloped this beach is compared to Nagoa or Chakratirth"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Diu Police Station", number: "02875-252133" }, { label: "Police", number: "100" }],
+      safeZones: ["The main beach access area near Vanakbara"],
+      avoidAreas: ["Isolated cliff/shoreline stretches after dark or alone"],
+    },
+    rating: 4.3,
+    reviews: 900,
+    mustEat: ["Pack your own — very limited food options directly at the beach", "Fresh catch in Vanakbara village, nearby"],
+    packingTips: ["Water and snacks — minimal facilities here", "Sturdy footwear for the rugged shoreline", "Sunscreen and a hat"],
+  },
+
+  {
+    id: "fortress-of-panikotha",
+    name: "Fortress of Panikotha",
+    state: "Diu (UT)",
+    hidden: true,
+    tagline: "A Stone Sea Fort Guarding Diu's Creek Mouth",
+    description: "The Fortress of Panikotha stands in the sea at the mouth of the creek near Diu — originally built under Malik Aiyaz during the pre-Portuguese Muslim period as a checkpoint for merchant shipping, then fortified further by the Portuguese in 1588 under Captain Aires Falcao. Its real defensive design once used a thick metal chain strung along the riverbed between the sea fortress and a shore bastion, raised to block hostile ships from entering — a genuine engineering feature, not just decoration. A period stone inscription documenting the 1588 fortification is still affixed inside the fort today.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/fortress-of-panikotha-1.png",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/fortress-of-panikotha-1.png",
+    // Real, place-specific photo from the official DNH & DD Tourism
+    // Department site — see gomtimata-beach's comment above for the
+    // full licensing context.
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    category: ["Heritage", "Fort", "Offbeat"],
+    bestSeason: "October – March",
+    duration: "View from shore — 30 minutes; boat access varies",
+    highlights: [{ name: "Sea-fort built by Malik Aiyaz, fortified 1588" }, { name: "Chain-and-bastion defence system (historic)" }, { name: "Period stone inscription" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "Viewable from Diu Fort/shore; boat access separately arranged", costRange: "₹50–₹200 (auto within town) + boat fare if crossing", tips: "Best viewed from Diu Fort's ramparts unless you specifically arrange boat access — check locally for current visiting options." },
+    ],
+    accommodation: [
+      {
+        type: "Base in Diu Town", priceRange: "₹1,500–₹15,000/night (estimate)",
+        examples: ["Fort House, Diu – IHCL SeleQtions"],
+        description: "Best viewed as part of a Diu Fort visit — any town-based stay works.",
+        sourceNote: "Hotel name confirmed directly on the official Diu Hotels listing.",
+      },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "For shore/rampart viewing from Diu Fort", available: true },
+      { mode: "Boat (if arranged)", cost: "Varies — arrange locally", notes: "For closer access to the sea fort itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Diu Fort", distance: "Adjoining, in the same harbour", type: "Fort", isHidden: false, id: "diu-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2300, food: 600, transport: 400, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9200, accommodation: 6000, food: 1000, transport: 700, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sea Fort Viewing", morning: "View the fortress from Diu Fort's ramparts.", afternoon: "Arrange a boat crossing locally if you'd like closer access.", evening: "Continue exploring Diu Fort and old town.", stay: "Diu town base", meals: "Local lunch nearby (₹200)", tips: "Boat access isn't a standard tourist-counter service — ask locally about current options rather than assuming it's readily available." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Viewable from the well-visited, monitored Diu Fort ramparts", "Part of Diu's established heritage circuit"],
+      precautions: ["If arranging boat access, use a known/reputable local operator", "Standard water-safety caution for any boat crossing"],
+      soloTips: ["Shore/rampart viewing is a comfortable solo activity; boat access is better arranged with a local guide or in a small group"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Diu Police Station", number: "02875-252133" }, { label: "Police", number: "100" }],
+      safeZones: ["Diu Fort's ramparts for shore viewing"],
+      avoidAreas: ["Unofficial/unreputable boat operators"],
+    },
+    rating: 4.2,
+    reviews: 600,
+    mustEat: ["Local snacks near Diu Fort"],
+    packingTips: ["Camera with zoom for shore viewing", "Sun protection if arranging a boat crossing"],
+  },
+
+  {
+    id: "st-francis-assisi-church",
+    name: "St. Francis of Assisi Church, Diu",
+    state: "Diu (UT)",
+    hidden: true,
+    tagline: "A 1593 Franciscan Friary That Later Served as a Hospital for 184 Years",
+    description: "St. Francis of Assisi Church, built in 1593 under Governor Pero de Naya as a Franciscan friary, has a genuinely unusual history — after the Church of St. John of God collapsed in 1832, this building's cloister was converted into a hospital, a role it served for about 184 years before a new hospital building took over. Set on a raised platform reached by a 20-step staircase, close to St. Paul Church, it has a tall tower and a stone vaulted dome, with the church itself still in active use today.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png",
+    // Real, place-specific photo from the official DNH & DD Tourism
+    // Department site — see gomtimata-beach's comment above for the
+    // full licensing context.
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "1593 Franciscan friary" }, { name: "184 years as a working hospital (historic)" }, { name: "Raised platform & 20-step staircase" }, { name: "Stone vaulted dome" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town, near St. Paul Church", costRange: "₹50–₹200 (auto within town)", tips: "Combine with St. Paul Church — they're close together in old town." },
+    ],
+    accommodation: [
+      {
+        type: "Base in Diu Town", priceRange: "₹1,500–₹15,000/night (estimate)",
+        examples: ["Hotel Kohinoor, Diu"],
+        description: "A short visit within Diu town — any town-based stay works.",
+        sourceNote: "Hotel name confirmed directly on the official Diu Hotels listing.",
+      },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "St. Paul Church", distance: "Very close by", type: "Church", isHidden: false, id: "st-paul-church-diu" },
+      { name: "Diu Fort", distance: "Nearby in old town", type: "Fort", isHidden: false, id: "diu-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 150, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 600, transport: 300, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5800, food: 1000, transport: 500, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old Town Church Visit", morning: "Visit St. Francis of Assisi Church's tower and dome.", afternoon: "Continue to St. Paul Church, right nearby.", evening: "Dinner in Diu town.", stay: "Diu town base", meals: "Local lunch (₹200)", tips: "Its 184-year run as a hospital is a genuinely unusual piece of history worth reading up on before visiting." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An active church within Diu's compact, well-visited old town", "Steady daytime visitor and congregant traffic"],
+      precautions: ["Standard place-of-worship etiquette — modest dress, quiet during services"],
+      soloTips: ["A comfortable solo stop any time during visiting hours"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Diu Police Station", number: "02875-252133" }, { label: "Police", number: "100" }],
+      safeZones: ["Diu's old town, including the church grounds"],
+      avoidAreas: ["None specific — standard town-safety caution after dark applies"],
+    },
+    rating: 4.3,
+    reviews: 800,
+    mustEat: ["Local snacks in old town Diu"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes — the platform's 20-step staircase adds a bit of a climb"],
+  },
+
+  {
+    id: "diu-bird-sanctuary",
+    name: "Diu Bird Sanctuary",
+    state: "Diu (UT)",
+    hidden: true,
+    tagline: "Mangrove Wetlands on Diu's Southeastern Coast",
+    description: "Diu Bird Sanctuary, on the island's southeastern coast, protects a stretch of mangrove scrub, mudflats, and marshy wetland that draws real migratory bird activity, especially through winter — species like flamingos, egrets, herons, and various ducks. Dawn is genuinely the best time for birdwatching, and the sanctuary's mangroves also serve as a fish breeding ground.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/diu-bird-sanctuary-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/diu-bird-sanctuary-1.jpg",
+    // Real, place-specific photo from the official DNH & DD Tourism
+    // Department site — see gomtimata-beach's comment above for the
+    // full licensing context.
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    category: ["Nature", "Offbeat"],
+    bestSeason: "November – February (winter migratory season); dawn is the best time of day",
+    duration: "1–2 hours",
+    highlights: [{ name: "Migratory birds (flamingos, egrets, herons)" }, { name: "Mangrove wetland habitat" }, { name: "Dawn birdwatching" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "On Diu's southeastern coast", costRange: "₹150–₹400 (auto/cab from Diu town)", tips: "Go early — dawn genuinely is when bird activity peaks here." },
+    ],
+    accommodation: [
+      {
+        type: "Base in Diu Town", priceRange: "₹1,500–₹15,000/night (estimate)",
+        examples: ["Hotel Kohinoor, Diu"],
+        description: "The sanctuary has no lodging of its own — visit as a day trip from Diu town.",
+        sourceNote: "Hotel name confirmed directly on the official Diu Hotels listing.",
+      },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Useful for an early dawn visit before other transport options are running", available: true },
+      { mode: "Auto Rickshaw / Cab", cost: "₹150–₹400 from Diu town", notes: "Alternative to a rented scooter", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Diu town centre", distance: "A short drive", type: "Town", isHidden: false, id: "diu" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2200, food: 600, transport: 400, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 5800, food: 1000, transport: 700, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dawn Birdwatching", morning: "Arrive at dawn for peak bird activity in the mangroves and mudflats.", afternoon: "Continue exploring elsewhere in Diu.", evening: "Dinner in Diu town.", stay: "Diu town base", meals: "Breakfast after your visit, back in town (₹150)", tips: "Bring binoculars if you have them — the birds themselves are genuinely the draw here, not built infrastructure." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A known, signposted nature site on Diu's established tourist map", "Popular enough with birdwatchers to have regular visitor traffic in season"],
+      precautions: ["A dawn visit means fewer people around than midday spots — going with a companion or small group is sensible", "Standard caution on marshy/mudflat terrain — footing can be uneven"],
+      soloTips: ["If visiting solo at dawn, let your accommodation know your plan and stick to the marked viewing areas"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Diu Police Station", number: "02875-252133" }, { label: "Police", number: "100" }],
+      safeZones: ["The marked sanctuary viewing areas"],
+      avoidAreas: ["Deep mudflat/mangrove areas off any marked path"],
+    },
+    rating: 4.1,
+    reviews: 700,
+    mustEat: ["Breakfast back in Diu town after an early visit"],
+    packingTips: ["Binoculars if you have them", "Footwear suited to marshy/muddy terrain", "An early alarm — dawn is genuinely the best time"],
+  },
+
+  {
+    id: "nani-daman-beach",
+    name: "Nani Daman Beach",
+    state: "Daman (UT)",
+    hidden: true,
+    tagline: "A Sandy-and-Rocky Beach Right by St. Jerome Fort",
+    description: "Nani Daman Beach sits right alongside St. Jerome Fort in Nani Daman — a mix of soft sandy stretches and rocky patches, genuinely quieter than Jampore or Devka, with the fort's presence giving it a real historical backdrop rather than just being an open stretch of sand.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/daman/nani-daman-beach-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/daman/nani-daman-beach-1.jpg",
+    // Real, place-specific photo from the official DNH & DD Tourism
+    // Department site — see gomtimata-beach's comment above for the
+    // full licensing context.
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    category: ["Beach", "Heritage"],
+    bestSeason: "October – March",
+    duration: "Half day",
+    highlights: [{ name: "Sandy-and-rocky shore" }, { name: "Right by St. Jerome Fort" }, { name: "Quieter than Jampore/Devka" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Nani Daman town", costRange: "₹50–₹200 (auto within town)", tips: "Walkable from most Nani Daman hotels, right by St. Jerome Fort." },
+    ],
+    accommodation: [
+      {
+        type: "Base in Daman", priceRange: "₹1,500–₹9,000/night (estimate)",
+        examples: ["Hotel Sai Amar International (Nani Daman)"],
+        description: "The beach sits within Nani Daman town — any town-based stay works.",
+        sourceNote: "Hotel name confirmed directly on the official Daman Hotels listing.",
+      },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Right by St. Jerome Fort, reachable on foot from central Nani Daman", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Nani Daman", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "St. Jerome Fort (Nani Daman Fort)", distance: "Right alongside", type: "Fort", isHidden: false, id: "st-jerome-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 350, transport: 200, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2300, food: 600, transport: 400, activities: 900 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9300, accommodation: 5800, food: 1200, transport: 800, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Beach & Fort", morning: "Relax on the beach alongside St. Jerome Fort.", afternoon: "Explore the fort itself.", evening: "Sunset from the fort's elevated walls overlooking the beach.", stay: "Daman base", meals: "Beachside food stalls (₹200)", tips: "The fort's elevated walls give a genuinely good vantage point over the beach for sunset photos." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Right alongside a well-visited heritage site (St. Jerome Fort) with steady daytime footfall", "Part of Daman's established tourist circuit"],
+      precautions: ["Standard beach-safety caution (currents, tides)", "Quieter than Jampore/Devka — plan visits during daylight/busier hours"],
+      soloTips: ["Comfortable for a solo daytime visit given the adjoining fort's steady foot traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Nani Daman Police Station", number: "0260-2254999" }, { label: "Police", number: "100" }],
+      safeZones: ["The beach area alongside the fort"],
+      avoidAreas: ["Isolated stretches after dark"],
+    },
+    rating: 4.1,
+    reviews: 1100,
+    mustEat: ["Beachside food stalls nearby"],
+    packingTips: ["Swimwear", "Sunscreen and a hat", "Footwear for rocky patches"],
   },
 
   {
