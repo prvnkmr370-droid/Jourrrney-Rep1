@@ -2895,3 +2895,23 @@ SAFETY_OVERRIDES["old-goa"] = {
     sourceNote: "Confirmed directly on gmcgoa.edu.in — the hospital's own official site — and cross-confirmed on northgoa.gov.in, the district's government portal.",
   },
 };
+
+SAFETY_OVERRIDES["palolem"] = {
+  police: {
+    summary: "Canacona Police Station: 0832-2633357 · Goa Tourist Police Helpline: 155260",
+    details: [
+      "Canacona Police Station — covers Palolem: 0832-2633357 / 7875756047, email picanacona@goapolice.gov.in, confirmed directly on citizen.goapolice.gov.in.",
+      "Goa Tourist Police Helpline: 155260, confirmed directly on citizen.goapolice.gov.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Both numbers confirmed directly on citizen.goapolice.gov.in — Goa Police's own official site — via its dedicated Canacona Police Station page and Tourist Police page.",
+  },
+  medical: {
+    summary: "CHC Canacona (Chaudi) — the local government hospital",
+    details: [
+      "Community Health Centre (CHC) Canacona — Village Chaudi / NH66, Mastimol, Canacona 403702: 0832-2643422 / 2643339, confirmed on dhs.goa.gov.in.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on dhs.goa.gov.in, the Directorate of Health Services, Goa's own official government portal.",
+  },
+};
