@@ -2732,6 +2732,73 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Light cotton for day", "Scarf for temple visits", "Walking shoes (cobblestone paths)", "Insect repellent (near forest)", "Small daypack for safari"],
   },
 
+  {
+    id: "bhopal",
+    name: "Bhopal",
+    state: "Madhya Pradesh",
+    tagline: "The City of Lakes",
+    description: "Bhopal, Madhya Pradesh's capital, is built around two lakes — the Upper and Lower Lakes, together part of the Bhoj Wetland, a Ramsar site of international importance — and is home to the Taj-ul-Masjid, one of the largest mosques in India, its vast courtyard and pink domes drawing worshippers and visitors alike. The city carries real, complex modern history too as the site of the 1984 gas tragedy, alongside its older heritage as a former princely state ruled by a remarkable line of women rulers, the Begums of Bhopal.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Taj-ul-Masjid%2C_Bhopal%2C_India.jpg/1280px-Taj-ul-Masjid%2C_Bhopal%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Taj-ul-Masjid%2C_Bhopal%2C_India.jpg/1280px-Taj-ul-Masjid%2C_Bhopal%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Taj-ul-Masjid%2C_Bhopal%2C_India.jpg/1280px-Taj-ul-Masjid%2C_Bhopal%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Taj_ul_masjid_bhopal_Front_View.jpg/1280px-Taj_ul_masjid_bhopal_Front_View.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Taj-Ul-Masjid%2C_Bhopal.jpg/1280px-Taj-Ul-Masjid%2C_Bhopal.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Upper_Lake%2C_Bhopal.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Upper_Lake%2C_Bhopal%2C_M.P.jpg/1280px-Upper_Lake%2C_Bhopal%2C_M.P.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Aerial_view_of_Upper_Lake%2C_Bhopal.jpg/1280px-Aerial_view_of_Upper_Lake%2C_Bhopal.jpg",
+    ],
+    imageCredit: "Photos: Yann, Ashfaq Sheikh1, Aman Gupta, Sgbot321, Bilal Nibraas — Wikimedia Commons, CC BY-SA.",
+    category: ["Heritage", "Culture", "Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 days",
+    highlights: [{ name: "Taj-ul-Masjid" }, { name: "Upper Lake (Bhoj Wetland, Ramsar site)" }, { name: "Bhimbetka rock shelters (UNESCO, day trip)" }, { name: "Bharat Bhavan arts centre" }, { name: "Old city bazaars around Chowk" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Bhopal Shatabdi — ~7.5–8h", fromMumbai: "~14–15h", fromBangalore: "Via Nagpur — 20h+", duration: "~7.5–8h from Delhi", costRange: "₹400–₹1,800", tips: "Bhopal Junction is a major railway hub on the Delhi–Chennai/Mumbai lines." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH46/NH44 — 10–11h", fromMumbai: "NH52 — 13–14h", fromBangalore: "—", duration: "~10–11h from Delhi", costRange: "₹4,000–₹7,000 cab / ₹700–₹1,200 bus", tips: "Long-distance driving; most travellers fly or take the train instead." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "1h20m direct — Raja Bhoj Airport", fromMumbai: "1h30m direct", fromBangalore: "2h direct", duration: "1–2h", costRange: "₹3,000–₹9,000", tips: "Well-connected as the state capital, with direct flights from most major Indian cities." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels", priceRange: "₹800–₹2,000/night", examples: ["Hotel Ranjit's Panorama", "Hotel Amer Palace", "Hotel Sonali"], description: "Simple, functional rooms across the city." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,500–₹6,000/night", examples: ["Jehan Numa Retreat", "Hotel Palash", "Courtyard by Marriott Bhopal"], description: "Comfortable business/leisure hotels, several with lake views." },
+      { type: "Heritage/Luxury Stays", priceRange: "₹6,000–₹18,000/night", examples: ["Jehan Numa Palace (former royal guesthouse)", "Noor-Us-Sabah Palace"], description: "Genuine former royal properties with real Bhopal-Begum-era heritage." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200", notes: "Widely available across the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Reliable given Bhopal's size as a state capital", available: true },
+      { mode: "City Bus (BCLL)", cost: "₹10–₹40", notes: "Covers the wider city", available: true },
+      { mode: "Boat Ride (Upper Lake)", cost: "₹100–₹400", notes: "A genuine popular local activity", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhimbetka Rock Shelters (UNESCO)", distance: "45 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Sanchi Stupa (UNESCO)", distance: "50 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Bhojpur (Shiva temple, unfinished 11th-century masterpiece)", distance: "28 km", type: "Heritage", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Heritage Premium", perDayPerPerson: 14000, accommodation: 10000, food: 2000, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Taj-ul-Masjid & the Lakes", morning: "Taj-ul-Masjid — one of India's largest mosques; dress modestly and be respectful, as it remains an active place of worship.", afternoon: "Upper Lake for a boat ride and a walk along the promenade.", evening: "Old city Chowk bazaar for shopping and street food.", stay: "City hotel", meals: "Bhopal-style poha (₹40), old-city kebabs (₹200–₹400)", tips: "Bhopal has a genuinely well-regarded non-vegetarian food scene, distinct from most Rajasthan/MP tourist-circuit cities." },
+      { day: 2, title: "Bhimbetka & Sanchi Day Trip", morning: "Bhimbetka rock shelters — UNESCO-listed prehistoric cave paintings, some among the oldest known evidence of human life in India.", afternoon: "Continue to Sanchi Stupa, one of the oldest stone structures in India and a major Buddhist pilgrimage site.", evening: "Return to Bhopal.", stay: "Check out", meals: "Local dhaba lunch (₹150)", tips: "Bhimbetka and Sanchi are both genuinely significant UNESCO sites — worth the full day rather than rushing either." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A state capital with well-established infrastructure and steady daytime/evening activity", "Lake promenade and main attractions see consistent foot traffic", "Good app-cab coverage across the city"],
+      precautions: ["As with any major city, stick to well-lit main roads at night", "Agree auto/cab fares upfront", "Dress modestly at the Taj-ul-Masjid and other active religious sites"],
+      soloTips: ["Bhopal's size and capital-city infrastructure make it manageable for solo travellers", "The lake promenade and old city are safe and easy to explore independently by day", "App cabs are a reliable, trackable option after dark"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1090" }, { label: "Bhopal Police Control Room", number: "0755-2555922" }, { label: "Police", number: "100" }],
+      safeZones: ["Upper Lake promenade", "Old city Chowk area by day", "New Market"],
+      avoidAreas: ["Isolated lakeside stretches late at night", "Unlit outer-city roads after dark"],
+    },
+    rating: 4.4,
+    reviews: 9800,
+    mustEat: ["Bhopal-style Poha", "Non-vegetarian specialties (a genuine local strength — kebabs, biryani)", "Bhutte ka Kees (corn curry)", "Malpua", "Sev Bhaji"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing for the Taj-ul-Masjid and other religious sites", "Sun hat and sunscreen", "Light layers for lakeside evenings", "Camera for the lake and mosque"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",

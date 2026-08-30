@@ -2414,3 +2414,23 @@ SAFETY_OVERRIDES["ajmer"] = {
     sourceNote: "Same source basis as the Pushkar entry — confirmed as a genuine government medical college hospital via multiple independent directory listings.",
   },
 };
+
+SAFETY_OVERRIDES["bhopal"] = {
+  police: {
+    summary: "Bhopal Police Control Room: 0755-2555922",
+    details: [
+      "Bhopal Police Control Room: 0755-2555922, 9479990451 — confirmed directly on bhopal.mppolice.gov.in, the Commissionerate of Police Bhopal's own official site.",
+      "Women Helpline: 1090 · Cyber Crime Helpline: 1930",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on bhopal.mppolice.gov.in — the Commissionerate of Police Bhopal's own official .gov.in helpline page, which lists this alongside dedicated women's, cyber, and child helplines.",
+  },
+  medical: {
+    summary: "Hamidia Hospital — one of Madhya Pradesh's largest government multispecialty hospitals, attached to Gandhi Medical College",
+    details: [
+      "Hamidia Hospital — Sultania Road, Royal Market, Bhopal 462001 — a major government tertiary-care teaching hospital affiliated with Gandhi Medical College, Bhopal: 0755-4050450.",
+      "Ambulance: 102 / 108",
+    ],
+    sourceNote: "Confirmed via bhopaldivisionmp.nic.in (a genuine .nic.in government portal), Gandhi Medical College's own official site (gmcbhopal.net), and Wikipedia — strong multi-source confirmation.",
+  },
+};
