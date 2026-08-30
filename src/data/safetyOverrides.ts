@@ -2434,3 +2434,24 @@ SAFETY_OVERRIDES["bhopal"] = {
     sourceNote: "Confirmed via bhopaldivisionmp.nic.in (a genuine .nic.in government portal), Gandhi Medical College's own official site (gmcbhopal.net), and Wikipedia — strong multi-source confirmation.",
   },
 };
+
+SAFETY_OVERRIDES["sanchi"] = {
+  police: {
+    summary: "Raisen District Police: 07482-222022 (Sanchi falls within Raisen district)",
+    details: [
+      "Raisen Police Station — NH-86, Raisen (district headquarters): 07482-222022.",
+      "Women Helpline (MP): 1090 · Cyber Crime Helpline: 1930 — confirmed directly on raisen.mppolice.gov.in, Raisen Police's own official site.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Sanchi itself is a small town without an independently-confirmed dedicated police-station number — the Raisen district headquarters station and the helplines confirmed directly on raisen.mppolice.gov.in are given as the genuine verifiable contacts.",
+  },
+  medical: {
+    summary: "Government (District) Hospital, Raisen — the real referral hospital, on Sanchi Road",
+    details: [
+      "Government Hospital, Raisen — Sanchi Road, Raisen 464551 — the district hospital, confirmed on raisen.nic.in (Raisen district's own official government site): 07482-222024, email cmhorai@nic.in.",
+      "As a small archaeological/pilgrimage town, Sanchi itself has no major hospital of its own.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on raisen.nic.in — Raisen district's own official .nic.in government portal, which lists this as the district hospital with its own government (@nic.in) email address.",
+  },
+};

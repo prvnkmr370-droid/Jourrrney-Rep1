@@ -2799,6 +2799,69 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Modest clothing for the Taj-ul-Masjid and other religious sites", "Sun hat and sunscreen", "Light layers for lakeside evenings", "Camera for the lake and mosque"],
   },
 
+  {
+    id: "sanchi",
+    name: "Sanchi",
+    state: "Madhya Pradesh",
+    tagline: "Home of the Great Stupa",
+    description: "Sanchi's Great Stupa is one of the oldest stone structures in India, commissioned by Emperor Ashoka in the 3rd century BCE and expanded over the following centuries — a UNESCO World Heritage Site and one of the most important Buddhist pilgrimage and archaeological sites in the country. Its four intricately carved gateways (toranas), depicting scenes from the Buddha's life and Jataka tales, are considered masterpieces of early Buddhist art, and the site's genuinely quiet, uncrowded setting makes it easy to spend real time with them.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Great_Sanchi_Stupa_%283%29.jpg/1280px-Great_Sanchi_Stupa_%283%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Great_Sanchi_Stupa_%283%29.jpg/1280px-Great_Sanchi_Stupa_%283%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Great_Sanchi_Stupa_%283%29.jpg/1280px-Great_Sanchi_Stupa_%283%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Stupa_1%2C_Sanchi_01.jpg/1280px-Stupa_1%2C_Sanchi_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Eastern_Gateway_of_The_Great_stupa%2C_Sanchi_02.jpg/1280px-Eastern_Gateway_of_The_Great_stupa%2C_Sanchi_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Sanchi_Stupa_-_East_Toran.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Sanchi_Stupa_-_South_Toran.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/Details_of_the_Toran_%28gateway%29_of_the_Stupa_1_at_Sanchi%2C_Raisen%2C_Madhya_Pradesh._Some_of_the_famous_motifs_include_the_Gajabhishekh_of_Mayadevi%2C_the_adoration_of_the_Dhammachakra_and_Shalavhanjika_figures.jpg",
+    ],
+    imageCredit: "Photos: Suyash Dwivedi, Bernard Gagnon, Rohit Sharma, Prad6768, SpeakingArch — Wikimedia Commons, CC BY-SA.",
+    category: ["Heritage", "UNESCO", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "The Great Stupa (Stupa 1)" }, { name: "Four carved gateways (toranas)" }, { name: "Sanchi Archaeological Museum" }, { name: "Stupas 2 and 3, elsewhere on the hill" }, { name: "Ashoka Pillar remains" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Bhopal, then ~45 min road — ~7.5–8.5h total", fromMumbai: "Via Bhopal — ~14–15h", fromBangalore: "Via Bhopal — 20h+", duration: "~45 min from Bhopal", costRange: "₹400–₹1,800 (train to Bhopal) + ₹300–₹600 (local transfer)", tips: "Sanchi has its own small railway station, but Bhopal is the practical hub for long-distance travel." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhopal — 10–11h total", fromMumbai: "Via Bhopal — 13–14h", fromBangalore: "—", duration: "~45 min from Bhopal (46 km)", costRange: "₹800–₹1,500 cab from Bhopal", tips: "Almost always visited as a half/full-day trip from Bhopal." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Bhopal (1h20m) then ~45 min road", fromMumbai: "Fly to Bhopal, then road", fromBangalore: "Fly to Bhopal, then road", duration: "1h20m flight + ~45 min road", costRange: "₹3,000–₹9,000 (flight) + road transfer", tips: "Bhopal's Raja Bhoj Airport is the practical option." },
+    ],
+    accommodation: [
+      { type: "Note on staying overnight", priceRange: "—", examples: [], description: "Sanchi is mostly visited as a day trip from Bhopal — accommodation options in the town itself are limited." },
+      { type: "MP Tourism Stay", priceRange: "₹2,500–₹5,000/night", examples: ["Gateway Retreat (MP Tourism)"], description: "A state-tourism-run property near the site for travellers who do want to stay overnight." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The stupa hill and its structures are explored entirely on foot", available: true },
+      { mode: "Taxi (from Bhopal)", cost: "₹800–₹1,500 round trip", notes: "The standard way to visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhopal", distance: "46 km", type: "Heritage", isHidden: false, id: "bhopal" },
+      { name: "Udayagiri Caves (Gupta-era rock-cut shrines)", distance: "12 km", type: "Heritage", isHidden: true },
+      { name: "Vidisha", distance: "10 km", type: "Heritage", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 800, accommodation: 0, food: 250, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable (day trip)", perDayPerPerson: 2000, accommodation: 0, food: 500, transport: 1200, activities: 200 },
+      { tier: "luxury", label: "Private Day Trip", perDayPerPerson: 4500, accommodation: 0, food: 900, transport: 2800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "The Great Stupa & Museum", morning: "The Great Stupa (Stupa 1) and its four gateways — take real time with the gateway carvings, genuinely among the finest early Buddhist sculpture in India.", afternoon: "Sanchi Archaeological Museum, then Stupas 2 and 3 elsewhere on the hill, both quieter and less visited.", evening: "Return to Bhopal, or continue on to Udayagiri Caves nearby.", stay: "Day trip from Bhopal", meals: "Simple local meal near the site (₹150–₹250)", tips: "Sanchi is genuinely uncrowded compared to most major Indian heritage sites — a good pick if you want real time and quiet with the monuments." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calm, well-managed UNESCO/ASI site with steady but unhurried visitor flow", "Genuinely quiet compared to more crowded heritage circuits", "Almost always visited as a supervised day trip from Bhopal"],
+      precautions: ["The hilltop site involves some walking on uneven ancient stonework — comfortable shoes matter", "Carry water and sun protection; there's limited shade across the open hilltop", "Photography is generally allowed, but follow any posted restrictions"],
+      soloTips: ["Very easy and calm to visit solo, given the site's quiet, well-managed nature", "A local guide is genuinely worthwhile for understanding the gateway carvings' stories", "The short visit length and day-trip nature limit any real isolated exposure"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1090" }, { label: "Raisen District Police", number: "07482-222022" }, { label: "Police", number: "100" }],
+      safeZones: ["The stupa hill complex during visiting hours"],
+      avoidAreas: ["Unlit surrounding roads after the site closes for the evening"],
+    },
+    rating: 4.7,
+    reviews: 5200,
+    mustEat: ["Simple local meals near the site", "Save proper meals for Bhopal"],
+    packingTips: ["Sturdy walking shoes for the hilltop site", "Sun hat and sunscreen — limited shade", "Water bottle", "Camera for the gateway carvings", "A guidebook or guide — the carvings reward context"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",
