@@ -2169,3 +2169,23 @@ SAFETY_OVERRIDES["kumbhalgarh"] = {
     sourceNote: "R.K. Government District Hospital confirmed via nhsrcindia.org, a genuine Government of India health-systems body; the honest caveat about Kumbhalgarh's own lack of medical facilities reflects it being a fort/heritage site, not a residential town.",
   },
 };
+
+SAFETY_OVERRIDES["ranakpur"] = {
+  police: {
+    summary: "Pali District SP Office: 02932-251545",
+    details: [
+      "Pali District SP Office: 02932-251545 (also +91 87648 75056), confirmed on palipolice.rajasthan.gov.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via palipolice.rajasthan.gov.in — Pali District Police's own official .gov.in domain. Ranakpur itself, a rural temple site in Desuri tehsil, has no independently-confirmed dedicated police station listing, so the district SP office is given as the genuine verifiable contact.",
+  },
+  medical: {
+    summary: "Government Bangar District Hospital, Pali — the real referral hospital for this rural temple site",
+    details: [
+      "Government Bangar District Hospital — Near Surajpol Circle, Pali 306401 — the district's main government hospital, attached to Government Medical College, Pali: 02932-222230, CMHO: 02932-221278.",
+      "As a temple complex rather than a town, Ranakpur itself has no hospital of its own — Pali city (the real referral point) is roughly 40 km away.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via its own government (@nic.in) CMHO email address and its affiliation with Government Medical College, Pali (independently Wikipedia-confirmed) — a genuine government facility.",
+  },
+};
