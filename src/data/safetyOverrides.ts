@@ -2110,3 +2110,22 @@ SAFETY_OVERRIDES["chittorgarh"] = {
     sourceNote: "Shri Sanwaliya Ji Hospital confirmed via its listing on nhsrcindia.org, a genuine Government of India health-systems body; Government Medical College confirmed via Wikipedia. No direct phone number was independently verified for either, so only address/existence is claimed with confidence here.",
   },
 };
+
+SAFETY_OVERRIDES["bikaner"] = {
+  police: {
+    summary: "Kotwali Bikaner Police Station — Old Bikaner: 0151-2261972",
+    details: [
+      "Kotwali Bikaner Police Station — Thantheron Ka Mohalla, Joshiwara, Old Bikaner 334001: 0151-2261972.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Address and phone confirmed via a mapped listing (Mappls); a district police-organisation chart PDF was also found on the official police.rajasthan.gov.in domain, corroborating that Kotwali is genuinely the city's main station.",
+  },
+  medical: {
+    summary: "PBM Hospital — one of Bikaner's largest government hospitals, attached to Sardar Patel Medical College",
+    details: [
+      "PBM (Prince Bijai Mool Chand) Hospital — SP Medical College Road, Bikaner 334001 — a major government teaching/referral hospital established in 1930, with cardiology, oncology, orthopaedics, neurology, and trauma & emergency care: 0151-2226300.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address and phone cross-confirmed across multiple independent listings (Medindia, hospitals-info.in); confirmed as a genuine major government hospital via its affiliation with Sardar Patel Medical College's own Wikipedia entry.",
+  },
+};
