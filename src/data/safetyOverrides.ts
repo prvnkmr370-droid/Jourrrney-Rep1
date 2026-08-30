@@ -2374,3 +2374,23 @@ SAFETY_OVERRIDES["nagaur"] = {
     sourceNote: "Confirmed via a mapped listing and cross-referenced against neetadmission.in's medical-college directory, which lists it as a genuine government district hospital.",
   },
 };
+
+SAFETY_OVERRIDES["kota"] = {
+  police: {
+    summary: "Kota City Police Control Room: 0744-2450066 · Women Police Station: 0744-2450077",
+    details: [
+      "Kota City Police Control Room: 0744-2450066 (also 0744-2350778), confirmed via kotacitypolice.rajasthan.gov.in.",
+      "Women Police Station, Kota — a dedicated station in central Kota: 0744-2450077.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Confirmed via kotacitypolice.rajasthan.gov.in — Kota City Police's own official .gov.in domain — which explicitly lists both the general control room and the dedicated Women Police Station.",
+  },
+  medical: {
+    summary: "MBS (Maharao Bhimsingh) Hospital — Kota's main government hospital, attached to Government Medical College",
+    details: [
+      "MBS Hospital — Nayapura, Kota 324001, ~2.3 km from Kota railway station — a major government hospital attached to Government Medical College, Kota (independently confirmed via Wikipedia): +91 11 2618 8485.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address and government status cross-confirmed across multiple independent listings (Yappe, Medindia, ESI directory) and its affiliation with Government Medical College, Kota's own Wikipedia entry.",
+  },
+};
