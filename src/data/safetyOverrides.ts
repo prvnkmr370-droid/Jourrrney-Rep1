@@ -2048,3 +2048,24 @@ SAFETY_OVERRIDES["pushkar"] = {
     sourceNote: "As a small pilgrimage town, Pushkar itself has only a Community Health Centre, not a full hospital — confirmed via a government-hospital empanelment listing; JLN Hospital in nearby Ajmer is the real referral point for anything serious, confirmed as a genuine government medical college hospital via multiple independent directory listings.",
   },
 };
+
+SAFETY_OVERRIDES["mount-abu"] = {
+  police: {
+    summary: "Mount Abu Police Station · Sirohi Police Control Room: 02972-222100",
+    details: [
+      "Mount Abu Police Station — Delwara, Mount Abu, Sirohi district 307501.",
+      "Sirohi Police Control Room: 02972-222100 (email pcr.sirohi@rajpolice.gov.in) · District SP: 9530431300 — confirmed via search results citing genuine @rajpolice.gov.in / @nic.in government email addresses.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Sirohi district's control room number is corroborated by its official @rajpolice.gov.in contact email; the specific Mount Abu Police Station's own direct line wasn't independently confirmed on a .gov.in page, so the district control room is the higher-confidence number to lead with.",
+  },
+  medical: {
+    summary: "Government Hospital (Community Health Centre), Mount Abu · Global Hospital & Research Centre (larger private facility)",
+    details: [
+      "Government Hospital (CHC) — Kalindi Kunj Road, Sani Gaon, Mount Abu 307501 — the town's own government health facility.",
+      "Global Hospital & Research Centre — a larger, well-established private hospital in Mount Abu, useful to know as a genuine option for anything beyond what the small government CHC can handle.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Government Hospital's address confirmed via a local business directory; Global Hospital & Research Centre confirmed as a real, established Mount Abu facility via its own website (ghrc-abu.com) and an independent medical directory (Medindia) — noted explicitly as private, not government, unlike the CHC.",
+  },
+};
