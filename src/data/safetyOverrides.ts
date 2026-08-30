@@ -2674,3 +2674,22 @@ SAFETY_OVERRIDES["bengaluru"] = {
     sourceNote: "Confirmed directly on victoriahospital.karnataka.gov.in (the hospital's own official .gov.in site) and bengaluruurban.nic.in (the district's official government portal).",
   },
 };
+
+SAFETY_OVERRIDES["badami"] = {
+  police: {
+    summary: "Badami Police Station: 08357-220133",
+    details: [
+      "Badami Police Station — Station Road, opposite Government Hospital, Badami 587201: 08357-220133, confirmed directly on bagalkotpolice.karnataka.gov.in.",
+      "Karnataka Police general helpline/complaints: 1902 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on bagalkotpolice.karnataka.gov.in — Bagalkot District Police's own official .gov.in site, which has a dedicated page for Badami Police Station.",
+  },
+  medical: {
+    summary: "General Hospital, Badami — the local government hospital",
+    details: [
+      "General Hospital, Badami — Jakanur, Badami, Bagalkot district — confirmed listed among Bagalkot district's government hospitals.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via its listing on bagalkot.nic.in (Bagalkot district's own official government portal) and cross-confirmed via an independent directory (Practo).",
+  },
+};
