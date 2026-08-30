@@ -2006,3 +2006,24 @@ SAFETY_OVERRIDES["jaisalmer"] = {
     sourceNote: "Address and phone cross-confirmed across multiple independent mapped listings (Mappls, Justdial) and a hospital-network directory (cashlesshospitalindia.com) — consistent across all of them.",
   },
 };
+
+SAFETY_OVERRIDES["jodhpur"] = {
+  police: {
+    summary: "Jodhpur Police Commissionerate Control Room: 0291-2650777/78/79/80",
+    details: [
+      "Jodhpur Police Commissionerate — Control Room: 0291-2650777, 78, 79, 80 — confirmed directly on jodhpurpolice.rajasthan.gov.in's own official Contact Us page.",
+      "Commissioner of Police office: 0291-2650900 (also confirmed on the same official page).",
+      "Police: 100 · National Emergency: 112 · WhatsApp Helpline: 9530440800",
+    ],
+    sourceNote: "Confirmed directly on jodhpurpolice.rajasthan.gov.in (Jodhpur Police's own official .gov.in site), which names the sitting Commissioner of Police.",
+  },
+  medical: {
+    summary: "Mahatma Gandhi Hospital · Mathura Das Mathur (MDM) Hospital — two major government hospitals",
+    details: [
+      "Mahatma Gandhi (MG) Hospital — Olympic Road, Gate Circle, Jodhpur 342001, a 24-hour government general hospital: 0291-2432144, CMHO: 0291-2434379.",
+      "Mathura Das Mathur (MDM) Hospital — a large Government of Rajasthan public hospital (opened 1979) with cardiology, neurosurgery, trauma, and other specialty departments, attached to Dr. Sampurnanand Medical College.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "MG Hospital's address and phone cross-confirmed across independent mapped listings (Yappe, Bharatibiz); MDM Hospital confirmed as a genuine Government of Rajasthan hospital via its own Wikipedia entry.",
+  },
+};
