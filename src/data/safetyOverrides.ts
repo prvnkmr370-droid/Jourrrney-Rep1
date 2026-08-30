@@ -3425,3 +3425,60 @@ SAFETY_OVERRIDES["nani-daman-beach"] = {
   police: { summary: "Nani Daman Police Station: 0260-2254999 (right alongside)", details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
   medical: { summary: "Marwad Hospital, Nani Daman (nearby)", details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"], sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman." },
 };
+
+// Goa beach entries below — police stations confirmed via direct fetch
+// of the official Goa Police citizen portal (citizen.goapolice.gov.in);
+// hospital is the relevant district hospital confirmed via web search
+// referencing the official Directorate of Health Services Goa site
+// (dhs.goa.gov.in), whose own hospital sub-pages didn't expose a phone
+// number on direct fetch — flagged accordingly, one step below the
+// police numbers' first-hand confirmation.
+SAFETY_OVERRIDES["arambol"] = {
+  police: { summary: "Pernem Police Station: 0832-2201233", details: ["Pernem Police Station — Station Road, near Pernem Bus Stop, Pernem: 0832-2201233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal (citizen.goapolice.gov.in/web/guest/pernem-police-station)." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site (dhs.goa.gov.in); the hospital's own sub-page didn't expose a phone number on direct fetch, so this is one step below first-hand confirmation." },
+};
+
+SAFETY_OVERRIDES["ashwem"] = {
+  police: { summary: "Pernem Police Station: 0832-2201233", details: ["Pernem Police Station — Station Road, near Pernem Bus Stop, Pernem: 0832-2201233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["morjim"] = {
+  police: { summary: "Pernem Police Station: 0832-2201233", details: ["Pernem Police Station — Station Road, near Pernem Bus Stop, Pernem: 0832-2201233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["anjuna"] = {
+  police: { summary: "Anjuna Police Station: 0832-2273233", details: ["Anjuna Police Station — Opposite Children's Park, Anjuna: 0832-2273233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal (citizen.goapolice.gov.in/web/guest/anjuna-police-station)." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["vagator"] = {
+  police: { summary: "Anjuna Police Station: 0832-2273233", details: ["Anjuna Police Station — Opposite Children's Park, Anjuna: 0832-2273233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["candolim"] = {
+  police: { summary: "Calangute Police Station: 0832-2278284", details: ["Calangute Police Station — CHOGM Road, Calangute: 0832-2278284.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal (citizen.goapolice.gov.in/web/guest/calangute-police-station)." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["sinquerim"] = {
+  police: { summary: "Calangute Police Station: 0832-2278284", details: ["Calangute Police Station — CHOGM Road, Calangute: 0832-2278284.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["aguada"] = {
+  police: { summary: "Calangute Police Station: 0832-2278284", details: ["Calangute Police Station — CHOGM Road, Calangute: 0832-2278284.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+
+SAFETY_OVERRIDES["miramar"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482 (Ext-311).", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal (citizen.goapolice.gov.in/web/guest/panaji-police-station)." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Also reachable: Goa Medical College & Hospital, Bambolim: 0832-2458700.", "Ambulance: 108"], sourceNote: "Asilo Hospital number sourced via web search referencing the official Directorate of Health Services Goa site; GMC Bambolim number confirmed via web search referencing the college's own official contact page." },
+};
+
+SAFETY_OVERRIDES["bambolim"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482 (Ext-311).", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim — right in the same village", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page (gmc.goa.gov.in) — the state's apex government hospital, genuinely located in Bambolim itself." },
+};
