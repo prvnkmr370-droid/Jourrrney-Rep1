@@ -3961,9 +3961,17 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "Carved Architecture, Dedicated to Bhagwan Swaminarayan",
     description: "The Swaminarayan Temple in Silvassa, in the Swaminarayan Sampraday tradition, is known for intricately carved pillars, domes, and sculpted facades depicting Hindu deities and mythological scenes. It's an active temple hosting festivals such as Janmashtami and Diwali with particular vibrancy.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of this Swaminarayan Temple itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/swaminarayan-temple-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/swaminarayan-temple-1.jpg",
+    // Real, place-specific photo from the official DNH Tourism
+    // Department site (dnhddtourism.in) — confirmed as genuinely unique
+    // to this page, not a shared template, but that site's own
+    // Copyright Policy restricts use to personal/non-commercial viewing
+    // ("any other use... strictly prohibited without prior written
+    // permission"). Used here at the user's explicit instruction after
+    // being told about the restriction — credited honestly rather than
+    // claimed as freely licensed.
+    imageCredit: "Photo: Official DNH Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Janmashtami and Diwali are the most vibrant times to visit",
     duration: "1 hour",
@@ -4017,10 +4025,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Dadra and Nagar Haveli (UT)",
     hidden: true,
     tagline: "A Garden Landscaped Around the 27 Nakshatras",
-    description: "Nakshatra Garden in Silvassa is a themed botanical garden landscaped to represent the 27 nakshatras (lunar mansions) of Vedic astrology, each section planted with flora traditionally associated with that constellation, alongside educational signage explaining the concept.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Nakshatra Garden itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    description: "Nakshatra Garden in Silvassa is a themed botanical garden landscaped to represent the 27 nakshatras (lunar mansions) of Vedic astrology — an aerial view shows the layout genuinely divided into distinct geometric plots, each planted with flora traditionally associated with its constellation, alongside educational signage explaining the concept.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/nakshatra-garden-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/nakshatra-garden-1.jpg",
+    // Real, place-specific photo from the official DNH Tourism
+    // Department site — see swaminarayan-temple-dnh's comment above for
+    // the full licensing context. The photo itself (an aerial/drone
+    // shot) is what confirmed the garden's layout is genuinely divided
+    // into distinct geometric plots, now reflected in the description.
+    imageCredit: "Photo: Official DNH Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
     category: ["Nature", "Garden"],
     bestSeason: "October – March",
     duration: "1–2 hours",
@@ -4075,9 +4088,12 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "\"Green Forest\" — Lawns, Ponds & Picnic Spots",
     description: "Hirwavan Garden (\"hirwavan\" translates to \"green forest\") is a landscaped garden in Silvassa with tall shade trees, manicured lawns, ponds, bridges, and gazebos. It has playgrounds, jogging tracks, and designated barbecue/picnic areas, and hosts flower shows and cultural events through the year.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Hirwavan Garden itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/hirwavan-garden-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/hirwavan-garden-1.jpg",
+    // Real, place-specific photo from the official DNH Tourism
+    // Department site — see swaminarayan-temple-dnh's comment above for
+    // the full licensing context.
+    imageCredit: "Photo: Official DNH Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
     category: ["Nature", "Garden"],
     bestSeason: "October – March",
     duration: "1–2 hours",
@@ -4131,10 +4147,15 @@ export const DESTINATIONS: Destination[] = [
     state: "Dadra and Nagar Haveli (UT)",
     hidden: true,
     tagline: "A Government Garden-and-Guesthouse Complex",
-    description: "Tapovan Tourist Complex is a government-run tourist complex in Dadra and Nagar Haveli combining landscaped gardens with guesthouse, cottage, and suite accommodation, nature trails, and recreational facilities (volleyball, badminton, cricket). It also functions as a venue for corporate events and conferences.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Tapovan Tourist Complex itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    description: "Tapovan Tourist Complex is a government-run tourist complex in Dadra and Nagar Haveli combining landscaped gardens with guesthouse, cottage, and suite accommodation, nature trails, and recreational facilities (volleyball, badminton, cricket). Its grounds include a National Emblem/Ashoka Pillar-style monument and animal statuary among the gardens, and it also functions as a venue for corporate events and conferences.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tapovan-tourist-complex-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tapovan-tourist-complex-1.jpg",
+    // Real, place-specific photo from the official DNH Tourism
+    // Department site — see swaminarayan-temple-dnh's comment above for
+    // the full licensing context. The photo itself showed a National
+    // Emblem/Ashoka Pillar-style monument with a tiger statue among the
+    // gardens, now reflected in the description.
+    imageCredit: "Photo: Official DNH Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
     category: ["Nature", "Weekend Getaway"],
     bestSeason: "October – March",
     duration: "Half day, or overnight if staying at the complex itself",
