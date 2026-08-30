@@ -2090,3 +2090,23 @@ SAFETY_OVERRIDES["ranthambore"] = {
     sourceNote: "Address and phone cross-confirmed across multiple independent mapped listings (Mappls, Yappe, Medindia) and corroborated by its listing on edantseva.gov.in, a genuine .gov.in government health portal.",
   },
 };
+
+SAFETY_OVERRIDES["chittorgarh"] = {
+  police: {
+    summary: "Chittorgarh Police Control Room: 01472-240088",
+    details: [
+      "Chittorgarh Police Control Room: 01472-240088.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Control room number confirmed via multiple independent directory sources citing it as the district's official police contact.",
+  },
+  medical: {
+    summary: "Shri Sanwaliya Ji Govt. District Hospital · Government Medical College, Chittorgarh",
+    details: [
+      "Shri Sanwaliya Ji Government District Hospital — Main Road Sethi, near M.P.P.G. College, Chittorgarh 312001 — the district's main government hospital, confirmed listed on nhsrcindia.org (India's National Health Systems Resource Centre).",
+      "Government Medical College, Chittorgarh — a genuine government medical college with an attached teaching hospital, confirmed via its own Wikipedia entry.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Shri Sanwaliya Ji Hospital confirmed via its listing on nhsrcindia.org, a genuine Government of India health-systems body; Government Medical College confirmed via Wikipedia. No direct phone number was independently verified for either, so only address/existence is claimed with confidence here.",
+  },
+};
