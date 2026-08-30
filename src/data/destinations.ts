@@ -3824,9 +3824,20 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "Artifacts and Culture of DNH's Indigenous Communities",
     description: "The Tribal Museum in Silvassa displays artifacts, tools, and cultural exhibits documenting the traditions of Dadra and Nagar Haveli's indigenous tribal communities (Warli, Kokna, Dhodia, and others) — a genuine, if compact, way to understand the region beyond its lakes and gardens.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of the Tribal Museum itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-2.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-2.jpg",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-2.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-1.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-3.jpeg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/tribal-museum-4.jpeg",
+    ],
+    // Supplied directly by the user (source/license unconfirmed — see
+    // Dudhani Lake's entry for the full context). Lead photo is the
+    // exterior/entrance so the hero reads as a place, not a close-up
+    // artifact shot; the artifact-room, Ravan-mask, and tools photos
+    // follow in the gallery.
+    imageCredit: "Photos provided by the user; original source and copyright status unconfirmed.",
     category: ["Culture", "Museum"],
     bestSeason: "Year-round (indoor)",
     duration: "1–2 hours",
