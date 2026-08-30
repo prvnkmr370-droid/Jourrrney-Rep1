@@ -2841,6 +2841,46 @@ SAFETY_OVERRIDES["alleppey"] = {
   },
 };
 
+SAFETY_OVERRIDES["silvassa"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033",
+    details: [
+      "Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.",
+      "Police Control Room, Dadra and Nagar Haveli: 0260-2642130.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal (police.ddd.gov.in/division/silvassa-police-station/) — a direct first-hand fetch, not a search-indexed reference.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital (NAMO Hospital), Silvassa — the UT's main government hospital",
+    details: [
+      "Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.",
+      "Also known as NAMO Medical Education & Research Institute — the largest specialty hospital in the UT.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's own Hospitals facility listing (dnhddtourism.in/dnh/facilities/hospitals) — a direct first-hand fetch of the government site itself.",
+  },
+};
+
+SAFETY_OVERRIDES["vanganga-lake-garden"] = {
+  police: {
+    summary: "Nearest station: Silvassa Police Station, 0260-2652033 (garden is ~9 km away in Dadra)",
+    details: [
+      "Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Same Silvassa Police Station as covers the whole UT capital area, confirmed directly on the official DNH & DD Police Department portal — Vanganga Lake Garden itself (in Dadra village) has no separate station of its own.",
+  },
+  medical: {
+    summary: "Nearest hospital: Shri Vinoba Bhave Civil Hospital, Silvassa (~9 km)",
+    details: [
+      "Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the same UT-wide main hospital referenced from Silvassa, since Dadra village has no hospital of its own.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",

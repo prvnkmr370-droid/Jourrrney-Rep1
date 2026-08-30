@@ -1,0 +1,145 @@
+{
+  "_meta": {
+    "source": "https://dnhddtourism.in/ (official Dadra & Nagar Haveli and Daman & Diu Tourism Department site)",
+    "scrapedOn": "2026-08-30",
+    "scope": "Dadra and Nagar Haveli (DNH) district only — the site also covers Daman and Diu, not scraped here",
+    "method": "Live browser navigation + get_page_text extraction (WebFetch was blocked/denied for this domain in-session), page by page",
+    "note": "Descriptive text is largely marketing copy from the department's own site (generic activity descriptions repeated across pages) rather than structured facts like timings/entry fees — the site does not publish those for DNH's attractions. Facility pages (hotels/hospitals/bicycle rental/e-bus) DO have real structured listings and were captured in full. Parking/Bars/Tent facility categories only link out to a generic Google Maps search with no curated listing of their own."
+  },
+  "places": [
+    {
+      "name": "Dudhani Lake",
+      "sourceUrl": "https://dnhddtourism.in/dnh/content/dudhani-lake/post",
+      "category": "Other Attractions",
+      "description": "An idyllic man-made reservoir formed by the Madhuban Dam on the Daman Ganga River, amid the Sahyadri foothills. Offers boating, kayaking, jet skiing, picnicking, and birdwatching (migratory season). Surrounded by small islands and dense forest.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Daman Ganga River Front",
+      "sourceUrl": "https://dnhddtourism.in/dnh/content/daman-ganga-river-front/post",
+      "category": "Other Attractions",
+      "description": "A maintained riverside promenade along the Daman Ganga River in Silvassa town — paved walking paths, benches, jogging tracks, cycling lanes, and a venue for community/cultural events and festivals.",
+      "hasVerifiedPhoto": true,
+      "verifiedPhotoNote": "1 genuine Commons photo found: 'Daman Ganga River Silvassa Dadar Nagar Haveli Gujarat India.jpg' by Sharada Prasad CS, CC BY 2.0"
+    },
+    {
+      "name": "Tapovan Tourist Complex",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Other/tapovan-tourist-complex",
+      "category": "Other Attractions",
+      "description": "A government tourist complex with gardens, guesthouse/cottage/suite accommodation, nature trails, and recreational facilities (volleyball, badminton, cricket); also used as a venue for corporate events and conferences.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Swaminarayan Temple",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Other/swaminarayan-temple",
+      "category": "Other Attractions",
+      "description": "A Hindu temple dedicated to Bhagwan Swaminarayan, in the Swaminarayan Sampraday tradition — carved pillars, domes, and sculpted facades; hosts festivals such as Janmashtami and Diwali.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Nakshatra Garden",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Garden/nakshatra-garden",
+      "category": "Garden",
+      "description": "A celestial/astrology-themed botanical garden landscaped around the 27 nakshatras (lunar mansions) of Vedic astrology, each section planted with flora traditionally associated with that nakshatra. Educational signage on the concept.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Hirwavan Garden",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Garden/hirwavan-garden",
+      "category": "Garden",
+      "description": "\"Hirwavan\" translates to \"green forest\" — a landscaped garden with lawns, ponds, bridges, gazebos, playgrounds, jogging tracks, and picnic/barbecue areas; hosts flower shows and cultural events.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Vanganga Lake Garden",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Garden/vanganga-lake-garden",
+      "category": "Garden",
+      "description": "A botanical garden centred on Vanganga Lake, with landscaped lawns, bridges, pavilions, boating, a children's play area, and jogging tracks; hosts flower shows and cultural events.",
+      "hasVerifiedPhoto": true,
+      "verifiedPhotoNote": "8 genuine Commons photos found (panoramio import), all by Raman Patel, CC BY 3.0"
+    },
+    {
+      "name": "Vasona Lion Safari",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Park/vasona-lion-safari",
+      "category": "Park",
+      "description": "A safari park designed to replicate Gir Forest conditions, with guided safari-vehicle tours to view Asiatic lions plus deer, wild boar, and birds; participates in conservation/breeding programs.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Satmaliya Deer Park",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Park/satmaliya-deer-park",
+      "category": "Park",
+      "description": "A deer sanctuary with spotted deer (chital), sambar deer, and barking deer, plus resident and migratory birds; walking trails and interpretive signage, with programs for school groups.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "The Church Of Our Lady Of Piety",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Churches/the-church-of-our-lady-of-piety",
+      "category": "Churches",
+      "description": "A Portuguese colonial-era church — whitewashed facade, arched windows, bell tower, carved wooden furnishings, and stained glass. Active parish church still hosting services, weddings, and festivals.",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Tribal Museum",
+      "sourceUrl": "https://dnhddtourism.in/dnh/content/trible-museum/post",
+      "category": "Other Attractions",
+      "description": "Displays artifacts, tools, and cultural exhibits of DNH's indigenous tribal communities (site's own spelling is \"Trible Museum\" — a typo we don't repeat).",
+      "hasVerifiedPhoto": false
+    },
+    {
+      "name": "Souvenir Shop – The Silva Store",
+      "sourceUrl": "https://dnhddtourism.in/dnh/place-to-visit/Other/souvenir-shop-the-silva-store",
+      "category": "Other Attractions",
+      "description": "Listed on the site's Places to Visit menu as a souvenir shop; its own detail page 404s, so no further description available.",
+      "hasVerifiedPhoto": false
+    }
+  ],
+  "facilities": {
+    "hotels": {
+      "sourceUrl": "https://dnhddtourism.in/dnh/facilities/hotels",
+      "count": 5,
+      "listings": [
+        { "name": "Daman Ganga Valley Resort", "note": "Portuguese Colonial-style resort on the Daman Ganga River, 1.9 km from the Tribal Cultural Museum and 9 km from Vanganga Garden" },
+        { "name": "Pluz Resort", "note": "Green surroundings, well-located" },
+        { "name": "Treat Resort", "note": "86 rooms (Ras Resorts property)" },
+        { "name": "Ras Resorts & Apart Hotels", "note": "Green, pleasant grounds" },
+        { "name": "Khanvel Resort (A Unit of Vandhara Resorts Pvt. Ltd.)", "note": "Amidst greenery and hills" }
+      ]
+    },
+    "hospitals": {
+      "sourceUrl": "https://dnhddtourism.in/dnh/facilities/hospitals",
+      "count": 1,
+      "listings": [
+        {
+          "name": "Shri Vinoba Bhave Civil Hospital",
+          "address": "7294+MQM, Sayli Rd, near Collectorate, Solanki Sadan, Samarvarni, Silvassa, Dadra and Nagar Haveli and Daman and Diu 396230",
+          "phone": "0260 263 0102"
+        }
+      ]
+    },
+    "rentABicycle": {
+      "sourceUrl": "https://dnhddtourism.in/dnh/facilities/rent-a-bicycle",
+      "count": 2,
+      "listings": [
+        { "name": "Shree Ram Cycle", "address": "Shop no-5, BG Tower, Kilvani naka, Silvassa, 396230", "phone": "0260 264 3376" },
+        { "name": "Bombay Cycle Store", "address": "72G4+849, Zanda Chowk St, Zanda Chowk, Near Bombay Cycle, Bavisa Faliya, Silvassa, DNH & DD 396230", "phone": "098251 42883" }
+      ]
+    },
+    "eBusSchedule": {
+      "sourceUrl": "https://dnhddtourism.in/dnh/facilities/e-bus-schedule",
+      "count": 1,
+      "listings": [
+        { "name": "Silvassa Smart City E-Bus Schedule", "location": "Silvassa, DNH & DD", "phone": "0260 2633192" }
+      ]
+    },
+    "notCurated": {
+      "note": "Bars and Liquor Shops, Parking Places, and Tent facility categories on the site only link out to a generic Google Maps search — no curated listing of specific venues exists on the site itself. Petrol Pumps, Public Toilets, and Sports Facilities are labelled in the facilities menu but their detail pages 404 (not yet populated by the department)."
+    }
+  },
+  "departmentContact": {
+    "name": "Department of Tourism, DNH",
+    "address": "Kala Kendra, Silvassa, DNH - 396230",
+    "phone": "(0260) 2250002",
+    "email": "tourism_dmn_dd@ddd.gov.in"
+  }
+}
