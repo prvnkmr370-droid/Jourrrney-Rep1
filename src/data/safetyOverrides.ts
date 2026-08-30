@@ -2881,6 +2881,129 @@ SAFETY_OVERRIDES["vanganga-lake-garden"] = {
   },
 };
 
+// The following 9 DNH attractions all sit within or a short drive from
+// Silvassa town, and all share the same single UT-wide police station
+// and government hospital — there is no separate local station/hospital
+// for each individual attraction, so each entry below honestly points
+// back to the same Silvassa-wide contacts rather than fabricating a
+// closer one.
+SAFETY_OVERRIDES["dudhani-lake"] = {
+  police: {
+    summary: "Nearest station: Silvassa Police Station, 0260-2652033 (~7 km away)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Same UT-wide Silvassa Police Station, confirmed directly on the official DNH & DD Police Department portal — Dudhani Lake has no station of its own.",
+  },
+  medical: {
+    summary: "Nearest hospital: Shri Vinoba Bhave Civil Hospital, Silvassa (~7 km)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the same UT-wide main hospital, since Dudhani Lake has none of its own.",
+  },
+};
+
+SAFETY_OVERRIDES["vasona-lion-safari"] = {
+  police: {
+    summary: "Nearest station: Silvassa Police Station, 0260-2652033 (~24 km away)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Same UT-wide Silvassa Police Station, confirmed directly on the official DNH & DD Police Department portal — the safari park has no station of its own.",
+  },
+  medical: {
+    summary: "Nearest hospital: Shri Vinoba Bhave Civil Hospital, Silvassa (~24 km)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the same UT-wide main hospital, since the safari park has none of its own.",
+  },
+};
+
+SAFETY_OVERRIDES["satmaliya-deer-park"] = {
+  police: {
+    summary: "Nearest station: Silvassa Police Station, 0260-2652033 (~22 km away)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Same UT-wide Silvassa Police Station, confirmed directly on the official DNH & DD Police Department portal — the deer park has no station of its own.",
+  },
+  medical: {
+    summary: "Nearest hospital: Shri Vinoba Bhave Civil Hospital, Silvassa (~22 km)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the same UT-wide main hospital, since the deer park has none of its own.",
+  },
+};
+
+SAFETY_OVERRIDES["tribal-museum-dnh"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033 (~2 km away, within town)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the museum sits within Silvassa town itself, covered by this same station.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital, Silvassa (~2 km away, within town)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the UT's main hospital, within Silvassa town.",
+  },
+};
+
+SAFETY_OVERRIDES["church-of-our-lady-of-piety"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033 (within town)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the church sits within Silvassa town itself, covered by this same station.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital, Silvassa (within town)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the UT's main hospital, within Silvassa town.",
+  },
+};
+
+SAFETY_OVERRIDES["swaminarayan-temple-dnh"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033 (within town)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the temple sits within Silvassa town itself, covered by this same station.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital, Silvassa (within town)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the UT's main hospital, within Silvassa town.",
+  },
+};
+
+SAFETY_OVERRIDES["nakshatra-garden"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033 (within town)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the garden sits within Silvassa town itself, covered by this same station.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital, Silvassa (within town)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the UT's main hospital, within Silvassa town.",
+  },
+};
+
+SAFETY_OVERRIDES["hirwavan-garden"] = {
+  police: {
+    summary: "Silvassa Police Station: 0260-2652033 (within town)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the garden sits within Silvassa town itself, covered by this same station.",
+  },
+  medical: {
+    summary: "Shri Vinoba Bhave Civil Hospital, Silvassa (within town)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the UT's main hospital, within Silvassa town.",
+  },
+};
+
+SAFETY_OVERRIDES["tapovan-tourist-complex"] = {
+  police: {
+    summary: "Nearest station: Silvassa Police Station, 0260-2652033 (~5 km away)",
+    details: ["Silvassa Police Station — Vapi-Silvassa Main Road, Zanda Chowk, Silvassa, DNH 396230: 0260-2652033.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Same UT-wide Silvassa Police Station, confirmed directly on the official DNH & DD Police Department portal — the complex has no station of its own.",
+  },
+  medical: {
+    summary: "Nearest hospital: Shri Vinoba Bhave Civil Hospital, Silvassa (~5 km)",
+    details: ["Shri Vinoba Bhave Civil Hospital — near Collectorate, Solanki Sadan, Samarvarni, Silvassa, DNH & DD 396230: 0260 263 0102.", "Ambulance: 108"],
+    sourceNote: "Confirmed directly on the official DNH Tourism Department's Hospitals facility listing — the same UT-wide main hospital, since the complex has none of its own.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",
