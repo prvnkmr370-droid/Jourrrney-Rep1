@@ -147,35 +147,47 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           </Text>
         </Pressable>
 
+        {/* Hero-carousel dot indicators — deliberately their own
+            absolutely-positioned layer at a FIXED offset from the top of
+            the (fixed-height, 300px) hero, entirely independent of the
+            state/name/rating block below. That block is bottom-anchored
+            and its own height varies card-to-card (a 2-line name, a
+            wrapped rating row), which is exactly why an earlier version —
+            with the dots living inside that block, right above the name —
+            drifted to a different vertical position on every card: shorter
+            content pushed the whole block (and the dots inside it) down
+            toward mid-image, longer content pushed it up near the top.
+            Anchoring the dots to the top of the hero instead, below the
+            back/safety/"view all" icon row, makes their position identical
+            on every card regardless of how long that destination's name or
+            season text is. Only rendered once there's more than one photo
+            to page through. */}
+        {heroPhotos.length > 1 && (
+          <View
+            pointerEvents="none"
+            style={{ position: "absolute", top: insets.top + 86, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}
+          >
+            {heroPhotos.map((uri, i) => (
+              <View
+                key={`${uri}-${i}`}
+                style={{
+                  width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
+                  backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
+                }}
+              />
+            ))}
+          </View>
+        )}
+
         <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
             {d.state}
           </Text>
-
-          {/* Hero-carousel dot indicators — their own centred row in
-              normal document flow, not a separately absolutely-positioned
-              layer at a fixed offset. That fixed offset was tuned to sit
-              within the destination-name text's own line height, which is
-              exactly what let it collide with that text when the layout
-              shifted. Placed here (state text above, name below) and
-              centred rather than pinned to a side, the dots take up their
-              own real space and can never overlap either neighbour. Only
-              rendered once a destination actually has more than one photo
-              to page through. */}
-          {heroPhotos.length > 1 && (
-            <View style={{ flexDirection: "row", justifyContent: "center", gap: 6, marginBottom: 8 }}>
-              {heroPhotos.map((uri, i) => (
-                <View
-                  key={`${uri}-${i}`}
-                  style={{
-                    width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
-                    backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
-                  }}
-                />
-              ))}
-            </View>
-          )}
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}>
+          <Text
+            numberOfLines={2}
+            ellipsizeMode="tail"
+            style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}
+          >
             {d.name}
           </Text>
           <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
