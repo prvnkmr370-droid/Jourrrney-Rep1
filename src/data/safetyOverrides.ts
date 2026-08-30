@@ -2313,3 +2313,24 @@ SAFETY_OVERRIDES["neemrana"] = {
     sourceNote: "Confirmed via listing on rghs.rajasthan.gov.in, the Rajasthan Government Health Scheme's own official government hospital directory, and cross-confirmed via an independent mapped listing.",
   },
 };
+
+SAFETY_OVERRIDES["osian"] = {
+  police: {
+    summary: "Osian Police Station (local, exists but no verified direct number) · Jodhpur Police Commissionerate Control Room: 0291-2650777",
+    details: [
+      "Osian Police Station — Bapini, Jodhpur district 342303 — confirmed to exist via a mapped listing, but no direct phone number was independently verified.",
+      "Jodhpur Police Commissionerate Control Room (see the Jodhpur card): 0291-2650777/78/79/80.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Same honesty standard applied as Neemrana — Osian Police Station's existence is confirmed but its own number is not, so the verified Jodhpur Commissionerate number (confirmed directly on jodhpurpolice.rajasthan.gov.in) is given instead.",
+  },
+  medical: {
+    summary: "CHC Osian — the local Community Health Centre",
+    details: [
+      "Community Health Centre (CHC) Osian — Osian, Jodhpur district 342303: +91 94143 73872.",
+      "For anything beyond what the local CHC can handle, Jodhpur's MG Hospital and MDM Hospital (see the Jodhpur card) are the real referral point, roughly 65 km away.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via a mapped listing showing CHC Osian's own government contact email and phone number.",
+  },
+};
