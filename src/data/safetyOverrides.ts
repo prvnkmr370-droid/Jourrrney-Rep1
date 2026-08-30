@@ -2455,3 +2455,23 @@ SAFETY_OVERRIDES["sanchi"] = {
     sourceNote: "Confirmed directly on raisen.nic.in — Raisen district's own official .nic.in government portal, which lists this as the district hospital with its own government (@nic.in) email address.",
   },
 };
+
+SAFETY_OVERRIDES["gwalior"] = {
+  police: {
+    summary: "Gwalior Kotwali Police Station: 0751-2445225 · Control Room: 0751-2445222",
+    details: [
+      "Gwalior Kotwali Police Station: 0751-2445225.",
+      "Gwalior Police Control Room: 0751-2445222, 0751-2445333 — confirmed directly on gwalior.mppolice.gov.in.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on gwalior.mppolice.gov.in — Gwalior Police's own official .gov.in site, which also lists dedicated Senior Citizen, Traffic, and Women helplines.",
+  },
+  medical: {
+    summary: "Jayarogya (JAH) Hospital — a major government hospital attached to G.R. Medical College",
+    details: [
+      "Jayarogya Hospital (JAH) — J.A. Hospital Campus, Kampoo, Gwalior 474001 — a major government hospital attached to Gajra Raja Medical College, open 24 hours: 0751-2403200 / 2403333.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address, phone, and government/medical-college affiliation cross-confirmed across multiple independent listings (Ayushman Bharat's own PM-JAY empanelment record, drlogy.com) — consistent across all of them.",
+  },
+};

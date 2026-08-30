@@ -2862,6 +2862,72 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy walking shoes for the hilltop site", "Sun hat and sunscreen — limited shade", "Water bottle", "Camera for the gateway carvings", "A guidebook or guide — the carvings reward context"],
   },
 
+  {
+    id: "gwalior",
+    name: "Gwalior",
+    state: "Madhya Pradesh",
+    tagline: "The City of Music and Forts",
+    description: "Gwalior Fort — a hilltop citadel the Mughal emperor Babur himself reportedly called 'the pearl among fortresses of Hind' — dominates the city, its Man Singh Palace facade covered in vivid blue tilework. Below it sits Jai Vilas Palace, the still-partly-occupied former Scindia royal residence, whose Durbar Hall houses two of the world's largest chandeliers and a genuinely eccentric silver toy train that once carried after-dinner cigars and brandy around the dining table. Gwalior is also the birthplace of Tansen, one of Hindustani classical music's most legendary figures.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg/1280px-0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg/1280px-0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg/1280px-0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_03.jpg/1280px-0121521_Man_Singh_Palace%2C_Gwalior_Fort_Madhya_Pradesh_03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Jai_Vilas_Palace_%28Gwalior%29.jpg/1280px-Jai_Vilas_Palace_%28Gwalior%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Jai_Vilas_Palace%2C_Gwalior_003.jpg/1280px-Jai_Vilas_Palace%2C_Gwalior_003.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Jai_Vilas_Palace%2C_Gwalior_001.jpg/1280px-Jai_Vilas_Palace%2C_Gwalior_001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_Jai_Vilas_Palace_%28Gwalior%29.jpg/1280px-The_Jai_Vilas_Palace_%28Gwalior%29.jpg",
+    ],
+    imageCredit: "Photos: Ms Sarah Welch, Kshitiz Sikka, Suyash Dwivedi — Wikimedia Commons, CC0 / CC BY-SA.",
+    category: ["Heritage", "History", "Culture"],
+    bestSeason: "October – March",
+    duration: "1–2 days",
+    highlights: [{ name: "Gwalior Fort & Man Singh Palace" }, { name: "Jai Vilas Palace (Scindia Museum)" }, { name: "Tansen's Tomb & the annual Tansen Music Festival" }, { name: "Saas-Bahu Temples, inside the fort" }, { name: "Gujari Mahal Archaeological Museum" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Gatimaan/Shatabdi Express — ~3–3.5h", fromMumbai: "~16–17h", fromBangalore: "Via Delhi — 24h+", duration: "~3–3.5h from Delhi", costRange: "₹400–₹1,800", tips: "Gwalior Junction is a major stop on the Delhi–Mumbai/Chennai lines, genuinely fast from Delhi via the Gatimaan Express." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH44 — 5–6h", fromMumbai: "Via Bhopal — 15–16h", fromBangalore: "—", duration: "~5–6h from Delhi", costRange: "₹3,500–₹6,000 cab / ₹500–₹900 bus", tips: "Well-connected by highway, especially from Delhi and Agra." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "50 min direct", fromMumbai: "1h50m direct", fromBangalore: "2h20m direct", duration: "1–2.5h", costRange: "₹3,000–₹9,000", tips: "Gwalior Airport has decent connectivity to major cities." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels", priceRange: "₹800–₹2,000/night", examples: ["Hotel Gwalior Regency (budget wing)", "Hotel Landmark", "Hotel DM Suites"], description: "Simple, functional rooms across the city." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,500–₹6,000/night", examples: ["Hotel Gwalior Regency", "Ramada by Wyndham Gwalior", "Hotel Central Park"], description: "Comfortable business/leisure hotels." },
+      { type: "Heritage/Luxury Stays", priceRange: "₹8,000–₹25,000/night", examples: ["Usha Kiran Palace (Taj) — a genuine former Scindia guesthouse"], description: "Stay in real royal-family heritage, right next to Jai Vilas Palace." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200", notes: "Widely available across the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Reliable given Gwalior's size", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Good for the old-city lanes near the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Orchha", distance: "120 km", type: "Heritage", isHidden: true },
+      { name: "Shivpuri National Park", distance: "115 km", type: "Wildlife", isHidden: true },
+      { name: "Agra (Taj Mahal)", distance: "120 km", type: "Heritage", isHidden: false, id: "agra" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 550, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Royal Heritage Premium", perDayPerPerson: 16000, accommodation: 12000, food: 2000, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gwalior Fort", morning: "Man Singh Palace and its striking blue-tiled facade, one of the finest surviving examples of Rajput palace architecture.", afternoon: "Continue through the fort complex to the Saas-Bahu Temples and Gujari Mahal Archaeological Museum.", evening: "Tansen's Tomb, especially meaningful if visiting during the annual Tansen Music Festival (typically held in December).", stay: "City hotel", meals: "Local thali (₹180), Gwalior-style street food (₹150–₹300)", tips: "The fort's blue-tile facade is best photographed in late afternoon light." },
+      { day: 2, title: "Jai Vilas Palace", morning: "Jai Vilas Palace (Scindia Museum) — the Durbar Hall's chandeliers and the eccentric silver toy train are genuine highlights.", afternoon: "Explore the old city bazaars and Sarafa (jewellery) market.", evening: "Depart or continue toward Orchha/Agra.", stay: "Check out", meals: "Local dhaba lunch (₹150)", tips: "Jai Vilas Palace is still partly a private Scindia family residence — only the museum wing is open to visitors." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established heritage-tourism city with steady visitor traffic", "Fort and palace areas are ASI/museum-managed with visible staff presence", "Good app-cab coverage across the city"],
+      precautions: ["As with any sizeable city, stick to well-lit main roads at night", "The fort complex involves significant walking on uneven historic stonework", "Agree auto/cab fares upfront"],
+      soloTips: ["Gwalior's size and steady tourist flow make it manageable for solo travellers", "Fort and palace visits are safe and easy to do independently by day", "App cabs are a reliable option after dark"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1091" }, { label: "Gwalior Police Control Room", number: "0751-2445222" }, { label: "Police", number: "100" }],
+      safeZones: ["Gwalior Fort complex by day", "Jai Vilas Palace area", "Main city market"],
+      avoidAreas: ["Unlit outer-city roads after dark", "Isolated fort sections near closing time"],
+    },
+    rating: 4.6,
+    reviews: 8100,
+    mustEat: ["Gwalior-style Poha", "Bedai with Aloo Sabzi", "Kachori", "Rabri", "Gajak (winter sesame-jaggery sweet)"],
+    packingTips: ["Comfortable walking shoes — significant fort walking", "Sun hat and sunscreen", "Modest clothing for temples", "Camera for the fort's blue tilework and the palace", "Light layers if visiting during the winter music festival"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",
