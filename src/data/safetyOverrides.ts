@@ -2655,3 +2655,22 @@ SAFETY_OVERRIDES["kalimpong"] = {
     sourceNote: "Confirmed directly on kalimpong.gov.in, Kalimpong district's own official government portal; no direct phone number was independently found, so none is stated here rather than guessed.",
   },
 };
+
+SAFETY_OVERRIDES["bengaluru"] = {
+  police: {
+    summary: "Bengaluru City Police Control Room: 080-22942222",
+    details: [
+      "Bengaluru City Police Control Room — 080-22942222, 080-22943400, 080-22250999, confirmed directly on bcp.karnataka.gov.in.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on bcp.karnataka.gov.in — Bengaluru City Police's own official .gov.in site.",
+  },
+  medical: {
+    summary: "Victoria Hospital — one of Bengaluru's largest government hospitals, founded 1901",
+    details: [
+      "Victoria Hospital — City Market, Bengaluru 560002 — a major government hospital affiliated with Bangalore Medical College and Research Institute, founded by the Maharaja of Mysore in 1901: 080-2670-3320.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on victoriahospital.karnataka.gov.in (the hospital's own official .gov.in site) and bengaluruurban.nic.in (the district's official government portal).",
+  },
+};
