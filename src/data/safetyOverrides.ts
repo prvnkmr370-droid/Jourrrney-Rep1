@@ -2230,3 +2230,24 @@ SAFETY_OVERRIDES["deshnoke"] = {
     sourceNote: "CHC Deshnoke confirmed as a genuine government facility via its listing among Rajasthan's official government hospitals and its own government email address; PBM Hospital cross-confirmed the same way as in the Bikaner entry.",
   },
 };
+
+SAFETY_OVERRIDES["alwar"] = {
+  police: {
+    summary: "Alwar Police Control Room: 0144-2338200",
+    details: [
+      "Alwar Police Control Room: 0144-2338200.",
+      "Alwar District SP: 8764502201, email spalwarcomplaint@gmail.com.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Control room number confirmed via multiple independent sources; Alwar Police also has an official contact page on home.rajasthan.gov.in (the state government's own portal), corroborating the district's official police-contact structure.",
+  },
+  medical: {
+    summary: "Rajiv Gandhi Government General Hospital, Alwar · ESIC Medical College, Alwar",
+    details: [
+      "Rajiv Gandhi Government General Hospital — Lalitpur, Bijli Ghar Ka Choraha, Mangal Marg, Indira Colony, Alwar 301001 — the city's main government hospital: +91 77930 07366.",
+      "ESIC Medical College, Alwar — a genuine government medical college with an attached teaching hospital, confirmed via its own Wikipedia entry.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Rajiv Gandhi Government General Hospital's address and phone cross-confirmed via multiple independent listings (Medindia, Lybrate); ESIC Medical College confirmed via Wikipedia as a genuine government institution.",
+  },
+};
