@@ -2928,6 +2928,72 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes — significant fort walking", "Sun hat and sunscreen", "Modest clothing for temples", "Camera for the fort's blue tilework and the palace", "Light layers if visiting during the winter music festival"],
   },
 
+  {
+    id: "ujjain",
+    name: "Ujjain",
+    state: "Madhya Pradesh",
+    tagline: "The City of the Mahakaleshwar Jyotirlinga",
+    description: "Ujjain, on the banks of the Kshipra River, is one of Hinduism's seven most sacred cities (Sapta Puri) and home to the Mahakaleshwar Temple, one of only twelve Jyotirlingas in India — shrines believed to be self-manifested forms of Shiva. It's also one of the four rotating host cities for the Kumbh Mela (locally the Simhastha), held here roughly every twelve years and drawing millions of pilgrims to bathe in the Kshipra at Ram Ghat. Ancient Ujjain (as Avantika) was also a major centre of astronomy, and the city still keeps its own observatory, the Vedh Shala.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/1280px-Mahakaleshwar_Temple%2C_Ujjain.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/1280px-Mahakaleshwar_Temple%2C_Ujjain.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/1280px-Mahakaleshwar_Temple%2C_Ujjain.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Shri_mahakaleshwar_jyotirlinga_temple_Ujjain_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mahakaleshwar_Temple_in_Ujjain.jpg/1280px-Mahakaleshwar_Temple_in_Ujjain.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ujjain%2C_Ram_Ghat_%289840921865%29.jpg/1280px-Ujjain%2C_Ram_Ghat_%289840921865%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Ram_Ghat_and_Kshipra_river_%2C_Ujjain_-_panoramio.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Ram_Ghat_near_Kshipra_river_%2CUjjain_-_panoramio.jpg",
+    ],
+    imageCredit: "Photos: Ashverse, Anchal lilhare, Imakanksha, Arian Zwegers, Gyanendra Singh Chauhan — Wikimedia Commons, CC BY / CC BY-SA.",
+    category: ["Spiritual", "Heritage", "Culture"],
+    bestSeason: "October – March (Simhastha Kumbh Mela occurs roughly every 12 years — a genuinely massive, crowded event if it coincides with your visit)",
+    duration: "1–2 days",
+    highlights: [{ name: "Mahakaleshwar Jyotirlinga Temple" }, { name: "Ram Ghat, Kshipra River" }, { name: "Kal Bhairav Temple" }, { name: "Vedh Shala (Jantar Mantar observatory)" }, { name: "Kaliadeh Palace" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Bhopal or direct — ~11–13h", fromMumbai: "~11–12h direct", fromBangalore: "Via Bhopal — 20h+", duration: "~11–13h from Delhi; ~11–12h from Mumbai", costRange: "₹400–₹1,800", tips: "Ujjain Junction is well-connected; combining with Indore (55 km) is common since Indore has better air connectivity." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhopal — 12–13h total", fromMumbai: "NH52 — 11–12h", fromBangalore: "—", duration: "~1h from Indore; ~2h from Bhopal", costRange: "₹1,500–₹3,000 cab from Indore", tips: "Most travellers fly into Indore and drive the remaining ~55 km." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Indore (1h40m) then ~1h road", fromMumbai: "Fly to Indore, then road", fromBangalore: "Fly to Indore, then road", duration: "1h40m flight + ~1h road", costRange: "₹3,000–₹9,000 (flight) + road transfer", tips: "Indore's airport is by far the most practical option — Ujjain has no airport of its own." },
+    ],
+    accommodation: [
+      { type: "Budget Pilgrim Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Dharamshalas near the temple", "Hotel Shipra Residency (budget wing)"], description: "Simple rooms, many run specifically for pilgrims visiting the temple." },
+      { type: "Mid-Range Hotels", priceRange: "₹1,800–₹4,000/night", examples: ["Hotel Shipra Residency", "MP Tourism Hotel Ujjaini", "Hotel Amaltas"], description: "Comfortable rooms, several within easy walking distance of the temple." },
+      { type: "Higher-End Stays", priceRange: "₹4,000–₹8,000/night", examples: ["Radisson Indore (if basing in Indore)", "Hotel Ranjeet"], description: "More polished options, often better found by basing in nearby Indore." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple and old-city core are compact and walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard for getting around", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available, more reliable if based from Indore", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Indore", distance: "55 km", type: "Culture", isHidden: true },
+      { name: "Mandu (hilltop ruined city)", distance: "100 km", type: "Heritage", isHidden: true },
+      { name: "Omkareshwar (another Jyotirlinga)", distance: "140 km", type: "Spiritual", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1500, food: 550, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7000, accommodation: 5000, food: 1200, transport: 500, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mahakaleshwar & Ram Ghat", morning: "Mahakaleshwar Temple — the Bhasma Aarti (pre-dawn ash ceremony) is a genuinely significant ritual if you can arrange early access, though regular darshan is available throughout the day.", afternoon: "Kal Bhairav Temple, and a walk through the old city.", evening: "Ram Ghat at sunset for the evening aarti along the Kshipra River.", stay: "City hotel or dharamshala", meals: "Prasad and simple vegetarian thali (₹150), local sweets", tips: "Dress modestly and expect genuine crowds, especially on Mondays (Shiva's day) and during festivals — this is one of India's most-visited temples." },
+      { day: 2, title: "Vedh Shala & Kaliadeh Palace", morning: "Vedh Shala, the historic observatory built by Maharaja Jai Singh II, part of the same Jantar Mantar network as Jaipur's and Delhi's.", afternoon: "Kaliadeh Palace on an island in the Kshipra, a genuinely atmospheric riverside ruin.", evening: "Depart or continue to Indore/Mandu.", stay: "Check out", meals: "Local dhaba lunch (₹150)", tips: "Kaliadeh Palace is quieter and less crowded than the main temple circuit — a good change of pace." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A major, well-managed pilgrimage city with a strong security presence around the main temple", "Steady daytime and evening crowds around the temple and ghats", "Well-established pilgrim infrastructure"],
+      precautions: ["Crowds at the main temple can be genuinely intense, especially on Mondays and during festivals — keep valuables secure and stay aware in dense crowds", "Dress conservatively — this is an active, deeply revered religious site", "Agree auto fares upfront, especially near the temple where demand spikes"],
+      soloTips: ["Manageable solo, but stick to well-trodden pilgrim routes given how crowded the temple area gets", "Joining the flow of other pilgrims rather than navigating alone in peak crowds is often easier", "If the Simhastha Kumbh Mela coincides with your visit, expect exceptional crowd density and plan accordingly"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1091" }, { label: "Ujjain Kotwali Police Station", number: "9302293066" }, { label: "Police", number: "100" }],
+      safeZones: ["Main temple complex (heavily secured)", "Ram Ghat during regular hours"],
+      avoidAreas: ["Extremely dense crowd crushes near the temple entrance during major festivals — move with the crowd flow, don't fight against it"],
+    },
+    rating: 4.7,
+    reviews: 16400,
+    mustEat: ["Prasad from Mahakaleshwar Temple", "Poha Jalebi (a genuine MP breakfast staple)", "Dal Bafla", "Rabri", "Local sweets near the temple"],
+    packingTips: ["Modest clothing (essential near the temple)", "Comfortable shoes for crowds and walking", "A small bag you can keep close in dense crowds", "Patience — this is one of India's busiest temples", "Cash for offerings and prasad"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",
