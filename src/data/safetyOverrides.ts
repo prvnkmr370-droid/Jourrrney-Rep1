@@ -1987,3 +1987,22 @@ SAFETY_OVERRIDES["charaideo"] = {
     sourceNote: "Confirmed via a mapped business listing.",
   },
 };
+
+SAFETY_OVERRIDES["jaisalmer"] = {
+  police: {
+    summary: "Superintendent of Police Office, Jaisalmer / Police Control Room: 02992-252100",
+    details: [
+      "Superintendent of Police Office, Jaisalmer — Office: 02992-252233, PCR (Police Control Room): 02992-252100, confirmed on the district police's own site (jaisalmerpolice.blogspot.com), which names the current Superintendent directly.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed on jaisalmerpolice.blogspot.com — the Jaisalmer district police's own official contact page (a blog-hosted site rather than a .gov.in domain, but it names the sitting Superintendent of Police directly, which is a strong signal of genuine currency).",
+  },
+  medical: {
+    summary: "Shree Jawahir Hospital — the district's main 150-bed government hospital",
+    details: [
+      "Shree Jawahir Hospital — CVS Colony, Kishan Ghat, Collectorate, Jaisalmer 345001 — the district's main government hospital (150 beds), with Pediatrics, Gynaecology, Ophthalmology, ENT, Orthopaedics and Radiology departments and its own blood bank: 02992-251335 / 02992-252343.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address and phone cross-confirmed across multiple independent mapped listings (Mappls, Justdial) and a hospital-network directory (cashlesshospitalindia.com) — consistent across all of them.",
+  },
+};
