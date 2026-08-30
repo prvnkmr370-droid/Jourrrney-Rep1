@@ -2251,3 +2251,23 @@ SAFETY_OVERRIDES["alwar"] = {
     sourceNote: "Rajiv Gandhi Government General Hospital's address and phone cross-confirmed via multiple independent listings (Medindia, Lybrate); ESIC Medical College confirmed via Wikipedia as a genuine government institution.",
   },
 };
+
+SAFETY_OVERRIDES["bundi"] = {
+  police: {
+    summary: "Bundi Police Control Room: 07472-443901",
+    details: [
+      "Bundi Police Control Room: 07472-443901.",
+      "Bundi District SP — Office: 0747-2442111, Residence: 0747-2442999.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Control room and SP office numbers cross-confirmed via multiple independent directory sources citing them as Bundi district's official police contacts.",
+  },
+  medical: {
+    summary: "Pandit Braj Sundar Sharma General Government Hospital, Bundi",
+    details: [
+      "Pandit Braj Sundar Sharma General Government Hospital — Garg Palace Road, Bundi 323001 — the district's main government hospital: 99504-30545.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via its own genuine government (@nic.in) email address (cmho-bun-rj@nic.in) and cross-confirmed across independent directory listings (Inspiring Pathways, Cashless Hospital India).",
+  },
+};
