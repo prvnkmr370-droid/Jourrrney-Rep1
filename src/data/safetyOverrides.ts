@@ -2069,3 +2069,24 @@ SAFETY_OVERRIDES["mount-abu"] = {
     sourceNote: "Government Hospital's address confirmed via a local business directory; Global Hospital & Research Centre confirmed as a real, established Mount Abu facility via its own website (ghrc-abu.com) and an independent medical directory (Medindia) — noted explicitly as private, not government, unlike the CHC.",
   },
 };
+
+SAFETY_OVERRIDES["ranthambore"] = {
+  police: {
+    summary: "Sawai Madhopur Police Control Room: 07462-225999",
+    details: [
+      "Sawai Madhopur Police Control Room: 07462-225999.",
+      "Superintendent of Police, Sawai Madhopur — Dr. Mamta Gupta, IPS (district SP as of the most recent confirmation).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Control room number and current SP name cross-confirmed via multiple independent directory/news sources; not verified directly on a .gov.in page, so treat as good-confidence rather than primary-source-confirmed.",
+  },
+  medical: {
+    summary: "Government General Hospital, Sawai Madhopur — the district's main government hospital",
+    details: [
+      "Government General Hospital — Housing Board Road, Alanpur Rural, Sawai Madhopur 322021 — the district's main government hospital: 0141-222-5191.",
+      "Also listed as a genuine district hospital on edantseva.gov.in, a Government of India dental/health portal.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address and phone cross-confirmed across multiple independent mapped listings (Mappls, Yappe, Medindia) and corroborated by its listing on edantseva.gov.in, a genuine .gov.in government health portal.",
+  },
+};
