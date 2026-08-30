@@ -3758,11 +3758,21 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "Walking Trails Among Spotted, Sambar & Barking Deer",
     description: "Satmaliya Deer Park is a wildlife sanctuary in Dadra and Nagar Haveli home to spotted deer (chital), sambar deer, and the shy barking deer, alongside resident and migratory bird species. Walking trails and interpretive signage make it an easy nature/photography outing, and the park runs educational programmes for school groups.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Satmaliya Deer Park itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/satmaliya-deer-park-1.webp",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/satmaliya-deer-park-1.webp",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/satmaliya-deer-park-1.webp",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/satmaliya-deer-park-2.webp",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/satmaliya-deer-park-3.webp",
+    ],
+    // Supplied directly by the user (source/license unconfirmed — see
+    // Dudhani Lake's entry for the full context). One of the photos shows
+    // the park's own gate signage noting it closes during heavy rain —
+    // folded into bestSeason/packingTips below as genuinely useful
+    // practical info rather than left unused.
+    imageCredit: "Photos provided by the user; original source and copyright status unconfirmed.",
     category: ["Wildlife", "Nature"],
-    bestSeason: "October – March",
+    bestSeason: "October – March; the park has been known to close temporarily during heavy monsoon rain, per its own on-site signage — call ahead in July–August",
     duration: "Half day",
     highlights: [{ name: "Chital, sambar & barking deer" }, { name: "Nature walking trails" }, { name: "Birdwatching (resident & migratory)" }, { name: "Interpretive/educational signage" }],
     transport: [
