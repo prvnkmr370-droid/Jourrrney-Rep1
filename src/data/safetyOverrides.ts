@@ -2819,6 +2819,28 @@ SAFETY_OVERRIDES["bomdila"] = {
   },
 };
 
+SAFETY_OVERRIDES["alleppey"] = {
+  police: {
+    summary: "Alappuzha South Police Station: 0477-2239343",
+    details: [
+      "Alappuzha South Police Station — Civil Station Ward, near Head Post Office, Alappuzha 688001: Landline 0477-2239343, Mobile 9497980300.",
+      "Alappuzha North Police Station: 0477-2245541.",
+      "Alappuzha Traffic Police Station: 0477-2251111.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on the official Kerala Police portal (ps.keralapolice.gov.in/alappuzhasouth-ps/contacts), which also lists the current Station House Officer by name — as first-hand-verified as this dataset gets.",
+  },
+  medical: {
+    summary: "General Hospital Alappuzha — the district's main government hospital",
+    details: [
+      "General Hospital Alappuzha — Alappuzha district headquarters town, Kerala.",
+      "Phone: 0477-2253324, Email: ghalappuzha@gmail.com.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Sourced from Alappuzha district's official government portal (alappuzha.nic.in) via search-indexed results; a direct fetch of the page itself failed on a connection error during research, so this is one step below a first-hand-confirmed fetch, though still an official-source citation.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",
