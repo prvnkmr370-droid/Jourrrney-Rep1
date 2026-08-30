@@ -2334,3 +2334,23 @@ SAFETY_OVERRIDES["osian"] = {
     sourceNote: "Confirmed via a mapped listing showing CHC Osian's own government contact email and phone number.",
   },
 };
+
+SAFETY_OVERRIDES["sambhar-lake"] = {
+  police: {
+    summary: "Sambhar (Lake) Police Station: 01425-228229",
+    details: [
+      "Sambhar Police Station — Nawa Road, Sambhar, Jaipur district 303604: 01425-228229.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via a dedicated police-station directory listing citing this as Sambhar's official station number.",
+  },
+  medical: {
+    summary: "CHC Sambhar — confirmed to exist, no independently-verified direct phone number",
+    details: [
+      "Community Health Centre (CHC) Sambhar — Sambhar, Jaipur district — confirmed listed on nhsrcindia.org (India's National Health Systems Resource Centre), though no direct phone number was independently verified.",
+      "For anything serious, Jaipur's major hospitals (~65 km) are the real referral point.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "CHC Sambhar's existence is confirmed via nhsrcindia.org, a genuine Government of India health-systems body — its own direct phone number was not independently found, so none is stated here rather than guessed.",
+  },
+};

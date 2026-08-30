@@ -1789,6 +1789,68 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "sambhar-lake",
+    name: "Sambhar Lake",
+    state: "Rajasthan",
+    aliases: ["Sambhar Salt Lake"],
+    tagline: "India's Largest Inland Salt Lake",
+    description: "Sambhar Salt Lake is India's largest inland saltwater lake, a Ramsar-designated wetland of international importance that has been commercially worked for salt since at least Mughal times and still produces a significant share of India's salt today. Beyond the industrial salt pans, the lake's vast, stark landscape and its role as a wintering ground for migratory waterbirds make it a genuinely striking day trip from Jaipur — the Shakambhari Mata Temple on a hillside overlooking the lake adds a real pilgrimage dimension as well.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sambhar_lake_a_salted_bed.jpg/1280px-Sambhar_lake_a_salted_bed.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sambhar_lake_a_salted_bed.jpg/1280px-Sambhar_lake_a_salted_bed.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sambhar_lake_a_salted_bed.jpg/1280px-Sambhar_lake_a_salted_bed.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ride_to_sunset_at_Sambhar_Salt_Lake.jpg/1280px-Ride_to_sunset_at_Sambhar_Salt_Lake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Salting_Soil.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shakambri_Mata_temple_%2Csambhar_lake.jpg/1280px-Shakambri_Mata_temple_%2Csambhar_lake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Peregrine_Falcon_at_Sambhar_Salt_Lake.jpg/1280px-Peregrine_Falcon_at_Sambhar_Salt_Lake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/24/Sambhar_Salt_Lake_when_there_was_still_water.jpg",
+    ],
+    imageCredit: "Photos: Kalidas Singh, Abhishek.cty, Arun Mazumdar, Devendrasinghjadav, Vedang Narain — Wikimedia Commons, CC BY-SA.",
+    category: ["Nature", "Wildlife", "Unique Experience"],
+    bestSeason: "November – February (migratory bird season; the lake's water/salt extent varies seasonally)",
+    duration: "1 day",
+    highlights: [{ name: "Salt pans and vast lake landscape" }, { name: "Migratory waterbirds (seasonal)" }, { name: "Shakambhari Mata Temple, hillside overlook" }, { name: "Sambhar Lake Town's colonial-era salt works" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Jaipur, then ~1h road — ~6–7h total", fromMumbai: "Via Jaipur — ~17–18h", fromBangalore: "Via Jaipur — 26h+", duration: "~1h road from Jaipur", costRange: "₹200–₹1,200 (train to Jaipur) + ₹500–₹1,000 (local transfer)", tips: "Sambhar Lake Town has its own small railway station, but Jaipur is the practical hub." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — 6–7h total", fromMumbai: "Via Jaipur — 17–18h", fromBangalore: "—", duration: "~1h from Jaipur (65 km)", costRange: "₹1,500–₹3,000 cab from Jaipur", tips: "Almost always visited as a day trip from Jaipur." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Jaipur (1h) then ~1h road", fromMumbai: "Fly to Jaipur, then road", fromBangalore: "Fly to Jaipur, then road", duration: "1h flight + ~1h road", costRange: "₹2,500–₹8,000 (flight) + road transfer", tips: "Jaipur is the only practical air option." },
+    ],
+    accommodation: [
+      { type: "Note on staying overnight", priceRange: "—", examples: [], description: "Sambhar Lake is almost exclusively visited as a day trip from Jaipur — there's minimal dedicated tourist accommodation in the town itself." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The lakeside viewpoints and temple approach are explored on foot", available: true },
+      { mode: "Taxi (from Jaipur)", cost: "₹1,500–₹3,000 round trip", notes: "The standard way to visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "65 km", type: "Heritage", isHidden: false, id: "jaipur" },
+      { name: "Ajmer", distance: "60 km", type: "Spiritual", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 900, accommodation: 0, food: 250, transport: 500, activities: 50 },
+      { tier: "mid", label: "Comfortable (day trip)", perDayPerPerson: 2500, accommodation: 0, food: 500, transport: 1800, activities: 100 },
+      { tier: "luxury", label: "Private Day Trip", perDayPerPerson: 5000, accommodation: 0, food: 900, transport: 3800, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Salt Lake & Shakambhari Mata Temple", morning: "Drive from Jaipur; visit the lakeside viewpoints and, if the season and water levels allow, spot migratory waterbirds.", afternoon: "Shakambhari Mata Temple on the hillside overlooking the lake, for both the pilgrimage significance and the view.", evening: "Return to Jaipur.", stay: "Day trip from Jaipur", meals: "Simple local meal near the lake or back in Jaipur (₹150–₹250)", tips: "The lake's appearance varies hugely by season — check recent conditions before going if a specific look (full water vs. dry salt pan) matters to you." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known day-trip destination from Jaipur with established taxi/tour infrastructure", "The temple and main viewpoints see steady daytime visitor traffic", "Compact, easily-navigated town"],
+      precautions: ["The lake bed and salt pans can be genuinely hazardous underfoot in places — stick to established viewpoints and paths", "Agree taxi fares from Jaipur clearly upfront", "Carry sun protection — there's essentially no shade across the open lake landscape"],
+      soloTips: ["Manageable solo as a guided or self-arranged day trip from Jaipur", "Joining a birdwatching or photography tour group is a common, social way to visit", "The visit is typically a few hours, limiting any real isolated exposure"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Sambhar Police Station", number: "01425-228229" }, { label: "Police", number: "100" }],
+      safeZones: ["Established viewpoints and the temple approach"],
+      avoidAreas: ["Unmarked stretches of the salt pan itself — genuinely unstable/hazardous ground in places, not just a safety formality"],
+    },
+    rating: 4.3,
+    reviews: 3100,
+    mustEat: ["Simple local meals near the lake", "Save proper meals for Jaipur"],
+    packingTips: ["Sun hat and sunscreen — essentially no shade", "Sturdy shoes (avoid stepping onto unmarked salt-pan areas)", "Binoculars for birdwatching in season", "Water bottle", "Camera — the stark landscape is genuinely photogenic"],
+  },
+
+  {
     id: "kerala",
     name: "Kerala Backwaters",
     aliases: ["Alappuzha", "Alleppey"],
