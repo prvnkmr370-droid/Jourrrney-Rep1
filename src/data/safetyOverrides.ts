@@ -2794,3 +2794,23 @@ SAFETY_OVERRIDES["haridwar"] = {
     sourceNote: "Government Mela Hospital confirmed directly on haridwar.nic.in, the district's own official government portal; H.M.G. District Hospital cross-confirmed via independent directory listings.",
   },
 };
+
+SAFETY_OVERRIDES["nagaur"] = {
+  police: {
+    summary: "Kotwali Nagaur Police Station: 95304-13601",
+    details: [
+      "Police Station Kotwali, Nagaur — near Krishi Mandi, Nagaur: 95304-13601, email pskotwalingr@gmail.com.",
+      "Nagaur District SP Office — Office: 01582-242464, Residence: 01582-242454.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Kotwali Nagaur's number confirmed via its own listed contact channels (phone and email); the SP office number is corroborated via multiple independent directory sources citing it as Nagaur's official district contact.",
+  },
+  medical: {
+    summary: "Pt. Jawahar Lal Nehru Rajkiya District Hospital, Nagaur",
+    details: [
+      "Pt. Jawahar Lal Nehru (JLN) Rajkiya District Hospital — Nagaur 341001, open 24 hours, with General Medicine, Obstetrics & Gynaecology, Ophthalmology, Orthopaedics, ENT, and Paediatric departments: +91 94142 17562.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Address, phone, and department list confirmed via an independent mapped business listing (Mappls) showing this as the district's main government hospital.",
+  },
+};
