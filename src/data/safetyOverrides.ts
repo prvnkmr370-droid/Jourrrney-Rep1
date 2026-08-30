@@ -2935,3 +2935,24 @@ SAFETY_OVERRIDES["baga-calangute"] = {
     sourceNote: "Existence and address confirmed directly on dhs.goa.gov.in; a general phone number is corroborated by independent listings (Medindia) but was not itself confirmed on the official page, so it's noted as good-confidence rather than primary-source-fetched.",
   },
 };
+
+SAFETY_OVERRIDES["ujjain"] = {
+  police: {
+    summary: "Ujjain Kotwali Police Station: 0734-2551173",
+    details: [
+      "Kotwali Police Station, Ujjain: 0734-2551173, CUG 7587637023, confirmed directly on ujjain.mppolice.gov.in.",
+      "Ujjain District Police Control Room: 89628-10225.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on ujjain.mppolice.gov.in — Ujjain Police's own official site — which names the current station in-charge by name.",
+  },
+  medical: {
+    summary: "District Hospital, Ujjain — the district's main government hospital",
+    details: [
+      "District Hospital, Ujjain — Agar Road, Ujjain 456001: 07342-554783, confirmed directly on ujjain.nic.in.",
+      "Government Hospital, Madhavnagar — another genuine government facility in the city, also listed on ujjain.nic.in.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on ujjain.nic.in, Ujjain district's own official government portal.",
+  },
+};
