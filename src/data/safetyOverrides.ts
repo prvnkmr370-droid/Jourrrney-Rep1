@@ -2797,6 +2797,28 @@ SAFETY_OVERRIDES["ziro-valley"] = {
   },
 };
 
+SAFETY_OVERRIDES["bomdila"] = {
+  police: {
+    summary: "Bomdila Police Station: 03782-222036",
+    details: [
+      "Bomdila Police Station: 03782-222036 (also listed as extension 100 within the local exchange).",
+      "SP Office, West Kameng District: 03782-222199 (office), email spbdl@arunpol.nic.in.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "West Kameng district's official government portal (westkameng.nic.in) lists a dedicated Police Department page, but the site itself timed out on direct verification during research — this number is drawn from search-indexed results referencing that official page and the Arunachal Pradesh Police directory (arunpol.nic.in), not a direct fetch, so treat it as a step below full first-hand confirmation.",
+  },
+  medical: {
+    summary: "District Hospital / Zonal General Hospital, Bomdila (Medical Colony)",
+    details: [
+      "District Hospital, Bomdila — Medical Colony, West Kameng District, Arunachal Pradesh 790001.",
+      "Also referred to as Zonal General Hospital, Bomdila; empanelled under Ayushman Bharat PM-JAY.",
+      "A phone number (03782-223667) appears in independent directory listings but could not be confirmed on the official district site directly — call 108 for the reliable emergency line.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Existence and address referenced via West Kameng district's official portal (westkameng.nic.in/public-utility/district-hospital/) and the Directorate of Medical Education Arunachal Pradesh, though the district site itself timed out on direct verification. The phone number is independently listed only, not officially confirmed — use 108 for anything urgent.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",
