@@ -2856,3 +2856,22 @@ SAFETY_OVERRIDES["kochi"] = {
     sourceNote: "Confirmed directly on generalhospitalernakulam.in (the hospital's own official site) and cross-confirmed via its Wikipedia entry and ernakulam.nic.in, the district's official government portal.",
   },
 };
+
+SAFETY_OVERRIDES["wayanad"] = {
+  police: {
+    summary: "Kalpetta Police Station: 04936-202400",
+    details: [
+      "Kalpetta Police Station — Kalpetta P.O, Wayanad 673122: 04936-202400 / 9497980811, confirmed directly on ps.keralapolice.gov.in and wayanad.gov.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on ps.keralapolice.gov.in — Kerala Police's own dedicated per-station official site — and corroborated on wayanad.gov.in, the district's own government portal.",
+  },
+  medical: {
+    summary: "Government Hospital, Kainatty, Kalpetta — the district's main government hospital",
+    details: [
+      "Government Hospital — Kainatty, Kalpetta, Wayanad 673122: 04936-206768, confirmed directly on wayanad.gov.in.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on wayanad.gov.in, Wayanad district's own official government portal.",
+  },
+};
