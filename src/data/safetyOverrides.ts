@@ -2753,3 +2753,23 @@ SAFETY_OVERRIDES["nainital"] = {
     sourceNote: "Confirmed directly on nainital.nic.in, which lists both the B.D. Pandey Male Hospital and B.D. Pandey Female Hospital as genuine government facilities.",
   },
 };
+
+SAFETY_OVERRIDES["mussoorie"] = {
+  police: {
+    summary: "Kotwali Mussoorie Police Station: 0135-2716227",
+    details: [
+      "Kotwali Mussoorie Police Station — The Mall Road, Mussoorie 248179, open 24 hours: 0135-2716227.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Address and phone cross-confirmed via a mapped listing (Mappls) citing this as the town's main police station on The Mall.",
+  },
+  medical: {
+    summary: "Civil Hospital, Mussoorie — the local government hospital",
+    details: [
+      "Civil Hospital, Mussoorie — near the Tehri bus stand, The Mall Road, Mussoorie 248179.",
+      "Community Health Centre (Landour) — Civil Hospital Road, Landour, Mussoorie 248179: 0135-2632053.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both confirmed to exist via independent directory listings (Yappe, Wikimapia); no independently-verified direct phone number was found for the Civil Hospital itself, so none is stated for it here.",
+  },
+};
