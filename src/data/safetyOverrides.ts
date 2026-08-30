@@ -2875,3 +2875,23 @@ SAFETY_OVERRIDES["wayanad"] = {
     sourceNote: "Confirmed directly on wayanad.gov.in, Wayanad district's own official government portal.",
   },
 };
+
+SAFETY_OVERRIDES["old-goa"] = {
+  police: {
+    summary: "Old Goa Police Station: 0832-2285301",
+    details: [
+      "Old Goa Police Station — a North District station under Goa Police: 0832-2285301 / 9822153280.",
+      "North Goa Superintendent of Police Office: 0832-2416100 / 0832-2416243.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Numbers cross-confirmed via search results citing goapolice.gov.in's own officer/contact listings; the police station's own dedicated page could not be directly fetched during this research, so treat as good-confidence rather than primary-source-fetched.",
+  },
+  medical: {
+    summary: "Goa Medical College & Hospital (GMC), Bambolim — the state's main tertiary government hospital, ~6 km away",
+    details: [
+      "Goa Medical College & Hospital — Bambolim, Tiswadi, Goa (same taluka as Old Goa) — Goa's largest and most prestigious government hospital, established 1963: 0832-2495010 (Medical Superintendent).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on gmcgoa.edu.in — the hospital's own official site — and cross-confirmed on northgoa.gov.in, the district's government portal.",
+  },
+};
