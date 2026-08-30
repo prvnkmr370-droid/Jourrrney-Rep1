@@ -2814,3 +2814,25 @@ SAFETY_OVERRIDES["nagaur"] = {
     sourceNote: "Address, phone, and department list confirmed via an independent mapped business listing (Mappls) showing this as the district's main government hospital.",
   },
 };
+
+SAFETY_OVERRIDES["munnar"] = {
+  police: {
+    summary: "Munnar Police Station: 04865-230321 · Sub Divisional Office: 0486-5230382",
+    details: [
+      "Munnar Police Station — Munnar P.O, Idukki 685612: 04865-230321 / 9497987091, email shomnrpsidk.pol@kerala.gov.in, confirmed directly on ps.keralapolice.gov.in and idukki.nic.in.",
+      "Munnar Sub Divisional Office: 0486-5230382.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on ps.keralapolice.gov.in — Kerala Police's own dedicated per-station official site — and corroborated on idukki.nic.in, the district's own government portal.",
+  },
+  medical: {
+    summary: "Government Hospital, Munnar-Kumily Highway · Tata General Hospital, Munnar",
+    details: [
+      "Government Hospital — Munnar-Kumily Highway, Puttady, Udumbanchola, Idukki district 685551.",
+      "Tata General Hospital, Munnar — a genuine estate-run hospital tied to the region's tea-plantation history, listed on Kerala's official blood-bank network (keralabloodnet.in): 04868-255888.",
+      "High Range Hospital, Munnar (private): 04865-230270.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Government Hospital confirmed via an independent mapped listing; Tata General Hospital confirmed via its listing on keralabloodnet.in, a genuine Kerala government-linked blood-bank directory.",
+  },
+};
