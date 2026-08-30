@@ -3891,10 +3891,22 @@ export const DESTINATIONS: Destination[] = [
     state: "Dadra and Nagar Haveli (UT)",
     hidden: true,
     tagline: "A Portuguese Colonial-Era Church in Silvassa",
-    description: "The Church of Our Lady of Piety is a Portuguese colonial-era church in Silvassa — whitewashed facade, arched windows, a bell tower, carved wooden furnishings, and stained glass depicting biblical scenes. It's an active parish church still hosting regular services, weddings, and festivals, reflecting DNH's history as a Portuguese enclave until 1954.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of the Church of Our Lady of Piety itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    description: "The Church of Our Lady of Piety is a Portuguese colonial-era church in Silvassa, dated 1897 on its own facade — a light-blue tiled exterior with a bell tower and arched wooden doorway, and a carved wooden altar inside centred on a Pietà. It's an active parish church (Nossa Senhora... Parish) still hosting regular services, weddings, and festivals, reflecting DNH's history as a Portuguese enclave until 1954.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/church-piety-1.jpeg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/church-piety-1.jpeg",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/church-piety-1.jpeg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/church-piety-2.jpeg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/church-piety-3.jpeg",
+    ],
+    // Supplied directly by the user (source/license unconfirmed — see
+    // Dudhani Lake's entry for the full context). The photos themselves
+    // corrected two details the site's generic copy had gotten vague/
+    // wrong on: the facade is light blue, not "whitewashed", and it
+    // carries a real visible "1897" date and a carved Pietà altarpiece
+    // — both now reflected in the description above instead of the
+    // site's boilerplate phrasing.
+    imageCredit: "Photos provided by the user; original source and copyright status unconfirmed.",
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Christmas and Easter services draw the largest crowds",
     duration: "1 hour",
