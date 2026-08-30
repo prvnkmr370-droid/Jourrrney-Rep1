@@ -3621,9 +3621,22 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "Boating on a Reservoir in the Sahyadri Foothills",
     description: "Dudhani Lake is a man-made reservoir formed by the Madhuban Dam on the Daman Ganga River, in the Sahyadri foothills of Dadra and Nagar Haveli. It's the UT's main spot for boating, seasonal water sports (kayaking, jet skiing), picnicking, and birdwatching during migratory season, ringed by forest and dotted with small islands.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dadra_and_Nagar_Haveli_Silvassa_3.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa_3.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Dudhani Lake itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/dudhani-lake-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/dudhani-lake-1.jpg",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/dudhani-lake-1.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/dudhani-lake-2.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/dudhani-lake-3.jpg",
+    ],
+    // Supplied directly by the user, who did not have a source link and
+    // asked to proceed anyway after being told a reverse search couldn't
+    // confirm a freely-licensed origin (visually similar Dudhni Lake
+    // content exists on TripAdvisor and incredibleindia.gov.in, both
+    // copyright-restricted — neither confirmed as the actual source of
+    // these specific files). Deliberately NOT captioned with a Wikimedia/
+    // CC license claim, since none is confirmed — this note states the
+    // real provenance instead of a fabricated one.
+    imageCredit: "Photos provided by the user; original source and copyright status unconfirmed.",
     category: ["Nature", "Offbeat"],
     bestSeason: "October – March; water sports typically run seasonally — confirm availability before planning around them",
     duration: "Half day",
