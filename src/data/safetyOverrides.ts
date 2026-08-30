@@ -2355,26 +2355,6 @@ SAFETY_OVERRIDES["sambhar-lake"] = {
   },
 };
 
-SAFETY_OVERRIDES["nagaur"] = {
-  police: {
-    summary: "Police Station Kotwali, Nagaur: 95304-13601",
-    details: [
-      "Police Station Kotwali, Nagaur — near Krishi Mandi, Nagaur: 95304-13601, email pskotwalingr@gmail.com.",
-      "Nagaur District SP — Office: 01582-242464, Residence: 01582-242454.",
-      "Police: 100 · National Emergency: 112",
-    ],
-    sourceNote: "Kotwali Nagaur's number cross-confirmed via its own Facebook page and independent directory sources; the SP office numbers were independently corroborated as the district's official contacts.",
-  },
-  medical: {
-    summary: "Pt. Jawahar Lal Nehru Rajkiya District Hospital, Nagaur",
-    details: [
-      "Pt. Jawahar Lal Nehru (JLN) Rajkiya District Hospital — Nagaur 341001 — the district's main government hospital, open 24 hours, with General Medicine, Obstetrics & Gynaecology, Ophthalmology, Orthopaedics, ENT, and Paediatric departments: +91 94142 17562.",
-      "Ambulance: 108",
-    ],
-    sourceNote: "Confirmed via a mapped listing and cross-referenced against neetadmission.in's medical-college directory, which lists it as a genuine government district hospital.",
-  },
-};
-
 SAFETY_OVERRIDES["kota"] = {
   police: {
     summary: "Kota City Police Control Room: 0744-2450066 · Women Police Station: 0744-2450077",
@@ -2473,27 +2453,6 @@ SAFETY_OVERRIDES["gwalior"] = {
       "Ambulance: 108",
     ],
     sourceNote: "Address, phone, and government/medical-college affiliation cross-confirmed across multiple independent listings (Ayushman Bharat's own PM-JAY empanelment record, drlogy.com) — consistent across all of them.",
-  },
-};
-
-SAFETY_OVERRIDES["ujjain"] = {
-  police: {
-    summary: "Ujjain Kotwali Police Station: 9302293066 · Control Room: 89628-10225",
-    details: [
-      "Kotwali (CSP), Ujjain: 9302293066; Kotwali Thana PI/TI: 9893686309.",
-      "Ujjain Police Control Room (Madhav Nagar, Freeganj): 89628-10225, confirmed directly on ujjain.mppolice.gov.in.",
-      "Police: 100 · National Emergency: 112",
-    ],
-    sourceNote: "Confirmed directly on ujjain.mppolice.gov.in — Ujjain Police's own official .gov.in contact page — and corroborated by a genuine @mppolice.gov.in official email (ig_ujjain@mppolice.gov.in).",
-  },
-  medical: {
-    summary: "District Hospital, Ujjain — the city's main government hospital",
-    details: [
-      "District Hospital, Ujjain — Agar Road, Ujjain 456001: 07342-554783.",
-      "R.D. Gardi Medical College and associated C.R. Gardi Hospital — Neel Ganga Road, Sindhi Colony, Ujjain — a genuine medical-college hospital, confirmed via Wikipedia.",
-      "Ambulance: 108",
-    ],
-    sourceNote: "District Hospital confirmed directly on ujjain.nic.in, Ujjain district's own official government portal; R.D. Gardi Medical College confirmed via its own Wikipedia entry.",
   },
 };
 
