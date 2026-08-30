@@ -2129,3 +2129,22 @@ SAFETY_OVERRIDES["bikaner"] = {
     sourceNote: "Address and phone cross-confirmed across multiple independent listings (Medindia, hospitals-info.in); confirmed as a genuine major government hospital via its affiliation with Sardar Patel Medical College's own Wikipedia entry.",
   },
 };
+
+SAFETY_OVERRIDES["bharatpur"] = {
+  police: {
+    summary: "Bharatpur Police Control Room — Collectorate Building, Krishna Nagar: 05644-223364",
+    details: [
+      "Bharatpur Police Control Room — Collectorate Building, 2nd Floor, Krishna Nagar, Bharatpur 321001 (near Bijlighar Chauraha): 05644-223364, confirmed via home.rajasthan.gov.in's own Bharatpur Police page.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via home.rajasthan.gov.in (the Rajasthan state government's own home-department portal, which hosts Bharatpur Police's official page) — a genuine primary government source.",
+  },
+  medical: {
+    summary: "RBM (Raj Bahadur Memorial) Hospital — the region's biggest referral hospital, attached to a government medical college",
+    details: [
+      "RBM Hospital — Bharatpur 321001 — attached to Bharatpur's Government Medical College, providing speciality and super-speciality services including gynaecology and paediatrics; described as the biggest referral hospital in the region.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed as a genuine major government hospital via its own Wikipedia entry ('Bharatpur Hospital') and its affiliation with Bharatpur Medical College (also independently Wikipedia-confirmed); exact phone number not independently verified, so only address/existence is claimed with confidence here.",
+  },
+};
