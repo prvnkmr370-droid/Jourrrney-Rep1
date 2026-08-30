@@ -234,9 +234,9 @@ export default function ArriveSection({ destination: d, guide }: Props) {
           {selected && (
             <Card>
               <View style={{ padding: 16, backgroundColor: rgba(c.teal, 0.06), borderBottomWidth: 1, borderBottomColor: c.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>{selected.mode}</Text>
-                  <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 10 }}>
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, flexShrink: 1 }}>{selected.mode}</Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 0 }}>
                     <Clock color={c.textSecondary} size={12} />
                     <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.textSecondary }}>{selected.duration}</Text>
                   </View>
@@ -341,9 +341,13 @@ export default function ArriveSection({ destination: d, guide }: Props) {
           </Text>
           <View style={{ gap: 8 }}>
             {d.localTransport.map((lt) => (
-              <View key={lt.mode} style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 12, color: c.textPrimary }}>{lt.mode}</Text>
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>{lt.cost}</Text>
+              // justifyContent: "space-between" with neither side
+              // constrained let a long mode name push cost past the
+              // card's edge instead of wrapping — same root cause as the
+              // hero's rating/duration/season row.
+              <View key={lt.mode} style={{ flexDirection: "row", justifyContent: "space-between", gap: 8 }}>
+                <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 12, color: c.textPrimary, flexShrink: 1 }}>{lt.mode}</Text>
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary, flexShrink: 0 }}>{lt.cost}</Text>
               </View>
             ))}
           </View>

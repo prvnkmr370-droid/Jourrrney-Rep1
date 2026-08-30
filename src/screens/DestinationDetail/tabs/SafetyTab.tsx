@@ -73,16 +73,23 @@ export default function SafetyTab({ destination: d }: { destination: Destination
           <View
             key={contact.label}
             style={{
-              flexDirection: "row", alignItems: "center", justifyContent: "space-between",
+              flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8,
               backgroundColor: withOpacity(c.danger, 0.08), borderWidth: 1, borderColor: withOpacity(c.danger, 0.2),
               borderRadius: 12, padding: 12,
             }}
           >
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            {/* justifyContent: "space-between" with neither side
+                constrained let a long station name (e.g. "Moti Daman
+                Coastal Police Station") push the number past the card's
+                edge instead of wrapping — same root cause as the hero's
+                rating/duration/season row. flexShrink: 1 on the label
+                lets it wrap; the number stays flexShrink: 0 since it's
+                always a short fixed string. */}
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 8, flexShrink: 1 }}>
               <Phone color={c.danger} size={16} />
-              <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary }}>{contact.label}</Text>
+              <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary, flexShrink: 1 }}>{contact.label}</Text>
             </View>
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.danger }}>{contact.number}</Text>
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.danger, flexShrink: 0 }}>{contact.number}</Text>
           </View>
         ))}
       </SafetySection>

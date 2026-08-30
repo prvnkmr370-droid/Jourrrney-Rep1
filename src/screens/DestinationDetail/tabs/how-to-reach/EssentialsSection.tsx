@@ -50,15 +50,19 @@ export default function EssentialsSection({ destination: d, guide }: { destinati
           <View
             key={lt.mode}
             style={{
-              flexDirection: "row", alignItems: "center", justifyContent: "space-between",
+              flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", gap: 8,
               backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 14,
             }}
           >
-            <View>
+            {/* justifyContent: "space-between" with neither side
+                constrained let a long mode name push cost past the
+                card's edge instead of wrapping — same root cause as the
+                hero's rating/duration/season row. */}
+            <View style={{ flex: 1 }}>
               <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{lt.mode}</Text>
               <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{lt.notes}</Text>
             </View>
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.primary }}>{lt.cost}</Text>
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.primary, flexShrink: 0 }}>{lt.cost}</Text>
           </View>
         ))
       )}

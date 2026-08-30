@@ -56,9 +56,13 @@ export default function ExploreSection({ destination: d, guide }: { destination:
         d.nearbyPlaces.map((place) => (
           <Card key={place.name}>
             <View style={{ padding: 14 }}>
-              <View style={{ flexDirection: "row", justifyContent: "space-between", marginBottom: 4 }}>
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{place.name}</Text>
-                <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{place.distance}</Text>
+              {/* justifyContent: "space-between" with neither side
+                  constrained let a long place name push distance past
+                  the card's edge instead of wrapping — same root cause
+                  as the hero's rating/duration/season row. */}
+              <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 8, marginBottom: 4 }}>
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary, flexShrink: 1 }}>{place.name}</Text>
+                <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, flexShrink: 0 }}>{place.distance}</Text>
               </View>
               <View style={{ flexDirection: "row", gap: 6 }}>
                 <View style={{ backgroundColor: c.surfaceAlt, borderRadius: 999, paddingHorizontal: 8, paddingVertical: 2 }}>

@@ -23,12 +23,18 @@ export default function StayTab({ destination: d }: { destination: Destination }
             key={acc.type}
             style={{ backgroundColor: c.surface, borderRadius: 16, borderWidth: 1, borderColor: c.border, padding: 16 }}
           >
-            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
-              <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            {/* justifyContent: "space-between" with neither side
+                constrained let a long accommodation type (e.g. "Beach
+                Resorts (Nagoa/Chakratirth)") push priceRange past the
+                card's edge instead of wrapping — same root cause as the
+                hero's rating/duration/season row. flexShrink: 1 on both
+                sides lets either wrap within the row instead. */}
+            <View style={{ flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", gap: 8, marginBottom: 8 }}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, flexShrink: 1 }}>
                 <Home color={c.teal} size={16} />
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{acc.type}</Text>
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary, flexShrink: 1 }}>{acc.type}</Text>
               </View>
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.primary }}>{acc.priceRange}</Text>
+              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.primary, flexShrink: 1, textAlign: "right" }}>{acc.priceRange}</Text>
             </View>
             <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textSecondary, marginBottom: 12 }}>
               {acc.description}
