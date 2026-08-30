@@ -2915,3 +2915,23 @@ SAFETY_OVERRIDES["palolem"] = {
     sourceNote: "Confirmed directly on dhs.goa.gov.in, the Directorate of Health Services, Goa's own official government portal.",
   },
 };
+
+SAFETY_OVERRIDES["baga-calangute"] = {
+  police: {
+    summary: "Calangute Police Station: 0832-2278284 · Goa Tourist Police Helpline: 155260",
+    details: [
+      "Calangute Police Station — Chogm Road, Bardez, Calangute 403511: 0832-2278284 / 7875756031, email picalangute@goapolice.gov.in, confirmed directly on citizen.goapolice.gov.in.",
+      "Goa Tourist Police Helpline: 155260.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on citizen.goapolice.gov.in — Goa Police's own official site — via its dedicated Calangute Police Station page.",
+  },
+  medical: {
+    summary: "North Goa District Hospital, Mapusa — the district's main government hospital",
+    details: [
+      "North Goa District Hospital — Mapusa Jamatkhana Road, Peddem, Mapusa 403507 — confirmed listed on dhs.goa.gov.in (Directorate of Health Services, Goa's own official site); its emergency line (108) is confirmed directly on that page, though a general enquiry number was not independently verified there.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Existence and address confirmed directly on dhs.goa.gov.in; a general phone number is corroborated by independent listings (Medindia) but was not itself confirmed on the official page, so it's noted as good-confidence rather than primary-source-fetched.",
+  },
+};
