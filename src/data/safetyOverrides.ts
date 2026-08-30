@@ -2773,3 +2773,24 @@ SAFETY_OVERRIDES["mussoorie"] = {
     sourceNote: "Both confirmed to exist via independent directory listings (Yappe, Wikimapia); no independently-verified direct phone number was found for the Civil Hospital itself, so none is stated for it here.",
   },
 };
+
+SAFETY_OVERRIDES["haridwar"] = {
+  police: {
+    summary: "Haridwar Police Control Room: 01334-239100",
+    details: [
+      "Haridwar Police Control Room: 01334-239100 / 01334-265876.",
+      "District Police Office, Roshnabad: 01334-239109, email ssp-har-ua@nic.in.",
+      "Women Helpline: 1090 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on haridwar.nic.in — Haridwar district's own official government portal — and corroborated by a genuine @nic.in official email address.",
+  },
+  medical: {
+    summary: "Government Mela Hospital · H.M.G. District Hospital — two real government hospitals",
+    details: [
+      "Government Mela Hospital — Bilkeshwar Road, Haridwar 249401 — confirmed directly on haridwar.nic.in, with Medicine, Surgery, Orthopaedics OPD and dedicated Kumbh/Mela-period emergency care: 9410990670.",
+      "H.M.G. District Hospital — near Lalita Rao Pull, Haridwar 249407 — 24×7 emergency and trauma care: 9412365949.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Government Mela Hospital confirmed directly on haridwar.nic.in, the district's own official government portal; H.M.G. District Hospital cross-confirmed via independent directory listings.",
+  },
+};
