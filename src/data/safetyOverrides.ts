@@ -3325,3 +3325,78 @@ SAFETY_OVERRIDES["aviary-daman"] = {
     sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
   },
 };
+
+// Diu entries below all share the same single island-wide police
+// station and hospital — Diu is small and compact enough that there is
+// genuinely only one of each for the whole island, both with real,
+// directly-confirmed contact details (unlike Daman's hospitals, Diu's
+// hospital number is actually published and working).
+SAFETY_OVERRIDES["diu"] = {
+  police: {
+    summary: "Diu Police Station: 02875-252133",
+    details: [
+      "Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.",
+      "Diu Police Control Room: 02875-254441.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal (police.ddd.gov.in/division/diu-police-station/) — first-hand fetch, not search-indexed.",
+  },
+  medical: {
+    summary: "Government Hospital Diu: 02875-252480",
+    details: [
+      "Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's own Hospitals facility listing for Diu (dnhddtourism.in/diu/facilities/hospitals) — unlike Daman's listing, this one has a real, published working phone number.",
+  },
+};
+
+SAFETY_OVERRIDES["diu-fort"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (within Diu town)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["nagoa-beach"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (~8 km away)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — Diu's single island-wide station." },
+  medical: { summary: "Government Hospital Diu: 02875-252480 (~8 km)", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["ghoghla-beach"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (~15 km away)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — Diu's single island-wide station." },
+  medical: { summary: "Government Hospital Diu: 02875-252480 (~15 km)", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["chakratirth-beach"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (~2 km away)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480 (~2 km)", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["ins-khukri-memorial"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (~2 km away)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480 (~2 km)", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["st-paul-church-diu"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (within Diu town)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["zampa-gateway"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (within Diu town)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["naida-caves"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (within Diu town)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["gangeshwar-temple"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (~3 km away)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480 (~3 km)", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
+
+SAFETY_OVERRIDES["st-thomas-church-museum"] = {
+  police: { summary: "Diu Police Station: 02875-252133 (within Diu town)", details: ["Diu Police Station — 1st floor, Fort Road, near Collector office, Diu: 02875-252133.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official DNH & DD Police Department portal." },
+  medical: { summary: "Government Hospital Diu: 02875-252480", details: ["Government Hospital Diu — PX8H+579, Diu 362520: 02875-252480.", "Ambulance: 108"], sourceNote: "Confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Diu." },
+};
