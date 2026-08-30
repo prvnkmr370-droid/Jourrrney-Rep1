@@ -3165,3 +3165,163 @@ SAFETY_OVERRIDES["ujjain"] = {
     sourceNote: "Confirmed directly on ujjain.nic.in, Ujjain district's own official government portal.",
   },
 };
+
+// Daman entries below all share the same two real police stations
+// (Nani Daman and Moti Daman Coastal) and the same limited hospital
+// picture — the official tourism site's own Hospitals listing gives no
+// working phone number for either Daman hospital, so a third-party
+// number is used with a clearly lower-confidence sourceNote rather than
+// inventing one.
+SAFETY_OVERRIDES["daman"] = {
+  police: {
+    summary: "Nani Daman PS: 0260-2254999 · Moti Daman Coastal PS: 0260-2230677",
+    details: [
+      "Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.",
+      "Moti Daman Coastal Police Station — Bhathaiya Main Road, near Fire Station, Moti Daman: 0260-2230677.",
+      "Police Control Room, Daman: 0260-2220444.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Both station numbers and addresses confirmed directly on the official DNH & DD Police Department portal (police.ddd.gov.in) — first-hand fetch, not search-indexed.",
+  },
+  medical: {
+    summary: "Government Hospital, Moti Daman · Marwad Hospital, Nani Daman",
+    details: [
+      "Government Hospital, Moti Daman — Rua Martim Afonso, Fort Area, Moti Daman 396220.",
+      "Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.",
+      "Neither hospital has a working phone number published on the official DNH & DD Tourism Department's own Hospitals listing (the Government Hospital's entry literally shows '0000000000', and Marwad Hospital's shows 'No contact details available').",
+      "A third-party listing gives a CHC Moti Daman number of 0260-2230470 — not independently confirmed, use with caution.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Addresses confirmed directly on the official DNH & DD Tourism Department's Hospitals facility listing for Daman (dnhddtourism.in/daman/facilities/hospitals), which itself has no working phone number for either hospital — stated honestly here rather than filled in with an unverified number as fact. Call 108 for anything urgent.",
+  },
+};
+
+SAFETY_OVERRIDES["moti-daman-fort"] = {
+  police: {
+    summary: "Moti Daman Coastal Police Station: 0260-2230677 (within the fort area)",
+    details: ["Moti Daman Coastal Police Station — Bhathaiya Main Road, near Fire Station, Moti Daman: 0260-2230677.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal.",
+  },
+  medical: {
+    summary: "Government Hospital, Moti Daman (nearby)",
+    details: ["Government Hospital, Moti Daman — Rua Martim Afonso, Fort Area, Moti Daman 396220.", "No working phone number is published by the official tourism site for this hospital — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman; no verified phone number exists for it.",
+  },
+};
+
+SAFETY_OVERRIDES["cathedral-of-bom-jesus"] = {
+  police: {
+    summary: "Moti Daman Coastal Police Station: 0260-2230677 (within the fort area)",
+    details: ["Moti Daman Coastal Police Station — Bhathaiya Main Road, near Fire Station, Moti Daman: 0260-2230677.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — same station covering all of Moti Daman.",
+  },
+  medical: {
+    summary: "Government Hospital, Moti Daman (nearby)",
+    details: ["Government Hospital, Moti Daman — Rua Martim Afonso, Fort Area, Moti Daman 396220.", "No working phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["st-jerome-fort"] = {
+  police: {
+    summary: "Nani Daman Police Station: 0260-2254999",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the station covering all of Nani Daman, including this fort.",
+  },
+  medical: {
+    summary: "Marwad Hospital, Nani Daman (nearby)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman; no verified phone number exists for it.",
+  },
+};
+
+SAFETY_OVERRIDES["church-of-our-lady-of-sea"] = {
+  police: {
+    summary: "Nani Daman Police Station: 0260-2254999",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the church sits within St. Jerome Fort, covered by this station.",
+  },
+  medical: {
+    summary: "Marwad Hospital, Nani Daman (nearby)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["our-lady-of-remedios-church"] = {
+  police: {
+    summary: "Moti Daman Coastal Police Station: 0260-2230677",
+    details: ["Moti Daman Coastal Police Station — Bhathaiya Main Road, near Fire Station, Moti Daman: 0260-2230677.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the church sits within central Moti Daman, covered by this station.",
+  },
+  medical: {
+    summary: "Government Hospital, Moti Daman (nearby)",
+    details: ["Government Hospital, Moti Daman — Rua Martim Afonso, Fort Area, Moti Daman 396220.", "No working phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["dominican-monastery-daman"] = {
+  police: {
+    summary: "Moti Daman Coastal Police Station: 0260-2230677",
+    details: ["Moti Daman Coastal Police Station — Bhathaiya Main Road, near Fire Station, Moti Daman: 0260-2230677.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the monastery sits within central Moti Daman, covered by this station.",
+  },
+  medical: {
+    summary: "Government Hospital, Moti Daman (nearby)",
+    details: ["Government Hospital, Moti Daman — Rua Martim Afonso, Fort Area, Moti Daman 396220.", "No working phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["jampore-beach"] = {
+  police: {
+    summary: "Nearest station: Nani Daman Police Station, 0260-2254999 (~5 km away)",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal — the closest of Daman's two stations to Jampore.",
+  },
+  medical: {
+    summary: "Nearest hospital: Marwad Hospital, Nani Daman (~5 km)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["devka-seafront"] = {
+  police: {
+    summary: "Nani Daman Police Station: 0260-2254999 (~2 km away)",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal.",
+  },
+  medical: {
+    summary: "Marwad Hospital, Nani Daman (~2 km)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210 — this hospital is genuinely on the same road as the seafront.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["jetty-garden-daman"] = {
+  police: {
+    summary: "Nani Daman Police Station: 0260-2254999",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal.",
+  },
+  medical: {
+    summary: "Marwad Hospital, Nani Daman (nearby)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
+
+SAFETY_OVERRIDES["aviary-daman"] = {
+  police: {
+    summary: "Nani Daman Police Station: 0260-2254999",
+    details: ["Nani Daman Police Station — Nani Daman Char Rasta, Nani Daman: 0260-2254999.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"],
+    sourceNote: "Confirmed directly on the official DNH & DD Police Department portal.",
+  },
+  medical: {
+    summary: "Marwad Hospital, Nani Daman (nearby)",
+    details: ["Marwad Hospital — Devka Beach Road, Opp. Daji ni Wadi, Nani Daman 396210.", "No phone number is published by the official tourism site — call 108 for anything urgent.", "Ambulance: 108"],
+    sourceNote: "Address confirmed directly on the official DNH & DD Tourism Department's Hospitals listing for Daman.",
+  },
+};
