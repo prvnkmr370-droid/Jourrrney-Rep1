@@ -3256,6 +3256,73 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Neutral/earth-tone clothing for safaris (no bright colours)", "Binoculars", "Telephoto lens if you have one", "Warm layers for early-morning winter safaris — genuinely cold at dawn", "Sunscreen and a hat for the midday sun"],
   },
 
+  {
+    id: "mandu",
+    name: "Mandu",
+    state: "Madhya Pradesh",
+    aliases: ["Mandav"],
+    tagline: "The Ruined City of Joy",
+    description: "Mandu (historically Mandav) is a hilltop ruined city spread across a genuinely vast plateau, its palaces, mosques, and tombs scattered over some 45 monuments — the ship-shaped Jahaz Mahal, built between two lakes, is the standout, along with Hoshang Shah's Tomb (India's first marble structure) and the Rani Roopmati Pavilion, tied to a real, still-told local legend of the Malwa sultan's love for the singer-queen Roopmati. Mandu was historically dubbed the 'City of Joy' by its rulers, and its genuinely spread-out, uncrowded ruins reward a full day of unhurried exploring.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jahaz_Mahal_02.jpg/1280px-Jahaz_Mahal_02.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jahaz_Mahal_02.jpg/1280px-Jahaz_Mahal_02.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jahaz_Mahal_02.jpg/1280px-Jahaz_Mahal_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jahaz_Mahal_06.jpg/1280px-Jahaz_Mahal_06.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Jahaz_Mahal_10.jpg/1280px-Jahaz_Mahal_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Rani_Roopmati_Mahal%2CMANDU.JPG/1280px-Rani_Roopmati_Mahal%2CMANDU.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rani_Roopmati_Mahal_Terrace%2C_Mandu_India.jpg/1280px-Rani_Roopmati_Mahal_Terrace%2C_Mandu_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rani_Roopmati_Pavillion_in_monsoon_season%2C_Mandu%2C_Madhya_pradesh.jpg/1280px-Rani_Roopmati_Pavillion_in_monsoon_season%2C_Mandu%2C_Madhya_pradesh.jpg",
+    ],
+    imageCredit: "Photos: Bernard Gagnon, Chetansoni, Prof Ranga Sai, Yayawar monk — Wikimedia Commons, CC BY-SA.",
+    category: ["Heritage", "History", "Culture"],
+    bestSeason: "October – March (also popular in monsoon for lush greenery, though some roads can be slippery)",
+    duration: "1–2 days",
+    highlights: [{ name: "Jahaz Mahal (Ship Palace)" }, { name: "Hoshang Shah's Tomb — India's first marble structure" }, { name: "Rani Roopmati Pavilion" }, { name: "Jami Masjid" }, { name: "Baz Bahadur's Palace" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Indore, then ~1.5–2h road — ~14–15h total", fromMumbai: "Via Indore — ~11–12h", fromBangalore: "Via Indore — 20h+", duration: "~1.5–2h road from Indore", costRange: "₹400–₹1,800 (train to Indore) + ₹1,500–₹2,500 (local transfer)", tips: "Indore is the practical rail and air hub for Mandu." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Indore — 14–15h total", fromMumbai: "Via Indore — 11–12h", fromBangalore: "—", duration: "~1.5–2h from Indore (100 km); ~1h from Dhar", costRange: "₹2,000–₹3,500 cab from Indore", tips: "Most travellers visit Mandu as a day trip or overnight stop from Indore." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Indore (1h40m) then ~2h road", fromMumbai: "Fly to Indore, then road", fromBangalore: "Fly to Indore, then road", duration: "1h40m flight + ~2h road", costRange: "₹3,000–₹9,000 (flight) + road transfer", tips: "Indore's airport is the only practical air option." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels", priceRange: "₹800–₹2,000/night", examples: ["MPT Malwa Resort (budget wing)", "Hotel Rupmati", "Hotel Maharaja"], description: "Simple rooms in Mandu village, close to the main monument cluster." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,500–₹5,500/night", examples: ["MPT Malwa Resort", "Jahaz Mahal Resort", "Ambai Resort"], description: "Comfortable stays, several with genuine lake or monument views." },
+      { type: "Higher-End Stays", priceRange: "₹6,000–₹12,000/night", examples: ["Malwa Resort (premium rooms)"], description: "The more polished end of Mandu's still-limited accommodation options — this is a smaller, less commercialised heritage town." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The core monument cluster is walkable, though the ruins are spread over a wide plateau", available: true },
+      { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A popular, relaxed way to cover the wider spread-out site", available: true },
+      { mode: "Auto Rickshaw/Shared Taxi", cost: "₹300–₹800 (half-day tour)", notes: "For covering the full spread of monuments in one visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Indore", distance: "100 km", type: "Culture", isHidden: true },
+      { name: "Ujjain", distance: "100 km", type: "Spiritual", isHidden: false, id: "ujjain" },
+      { name: "Omkareshwar", distance: "125 km", type: "Spiritual", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 450, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1500, food: 550, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6500, accommodation: 4500, food: 1200, transport: 500, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Royal Enclave", morning: "Jahaz Mahal and the adjoining Hindola Mahal, then Hoshang Shah's Tomb — India's first marble structure and a genuine architectural precursor to the Taj Mahal.", afternoon: "Jami Masjid and the Ashrafi Mahal ruins nearby.", evening: "Sunset at Rani Roopmati Pavilion, with genuinely sweeping views over the Nimar plains below.", stay: "Mandu village hotel", meals: "Local Malwa-region thali (₹180), dinner near the resort (₹350)", tips: "Mandu's monuments are genuinely spread out — a cycle or shared taxi is far more practical than trying to walk the whole plateau." },
+      { day: 2, title: "Baz Bahadur's Palace & Village Ruins", morning: "Baz Bahadur's Palace, tied to the real local legend of the Malwa sultan and singer-queen Roopmati.", afternoon: "Explore the quieter village-area ruins and stepwells scattered around Mandu, most genuinely uncrowded.", evening: "Depart toward Indore or Ujjain.", stay: "Check out", meals: "Local dhaba lunch (₹150)", tips: "Mandu rewards slow, unhurried exploring — resist the urge to rush the full monument list in one day if you have the time for two." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A small, calm heritage town with a genuinely low-key, uncrowded tourist circuit", "The main monument cluster sees steady daytime visitor traffic", "Guesthouses are well set up for independent travellers"],
+      precautions: ["The plateau's ruins are spread out — a guide or shared transport is safer than walking alone to the more remote sites", "Being a small town, evenings are genuinely quiet — plan return timing around that", "Dress modestly at active religious sites"],
+      soloTips: ["Mandu's calm, small-town character makes it genuinely manageable for solo travellers", "Cycling or a shared taxi tour is a social, practical way to cover the spread-out site", "Guesthouses here are known for being welcoming to independent travellers"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1090" }, { label: "Dhar District Police", number: "100 / 112" }, { label: "Police", number: "100" }],
+      safeZones: ["Main monument cluster by day", "Mandu village centre"],
+      avoidAreas: ["Remote plateau-edge ruins alone near dusk", "Unlit village roads after dark"],
+    },
+    rating: 4.7,
+    reviews: 4300,
+    mustEat: ["Malwa-region thali", "Dal Bafla", "Bhutte ki Kees (corn curry)", "Local sev-based snacks", "Rabri"],
+    packingTips: ["Comfortable walking/cycling shoes — the site is genuinely spread out", "Sun hat and sunscreen", "Modest clothing for temples/mosques", "Camera — Mandu is one of MP's most photogenic ruined sites", "Water bottle for the plateau heat"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",

@@ -2574,3 +2574,23 @@ SAFETY_OVERRIDES["bandhavgarh-national-park"] = {
     sourceNote: "Confirmed directly on umaria.nic.in, Umaria district's own official government portal, which lists its own government (@nic.in) email address for the facility.",
   },
 };
+
+SAFETY_OVERRIDES["mandu"] = {
+  police: {
+    summary: "Dhar District Police — Emergency Helpline 100/112 (no separate district control-room number published)",
+    details: [
+      "Mandu falls under Dhar district police — dhar.nic.in's own official helpline page lists Police Helpline 100, Women Helpline 1090, Child Helpline 1098, but no separate district control-room number.",
+      "Police: 100 · National Emergency: 112 · Women Helpline: 1090",
+    ],
+    sourceNote: "Confirmed directly on dhar.nic.in — Dhar district's own official government portal — which explicitly lists the standard helplines without a separate control-room or Mandu-specific station number, so none is invented here.",
+  },
+  medical: {
+    summary: "District Bhoj Hospital, Dhar — the district's main government hospital, on Mandu Road",
+    details: [
+      "District Bhoj Hospital — Mandu Road, Dhar 454001 — confirmed listed on dhar.nic.in, Dhar district's own official government portal.",
+      "As a small heritage town, Mandu itself has no major hospital of its own — Dhar (the district headquarters) is the real referral point.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on dhar.nic.in; no direct phone number was independently found for the hospital, so none is stated here rather than guessed.",
+  },
+};
