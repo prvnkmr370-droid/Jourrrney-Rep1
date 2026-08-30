@@ -2594,3 +2594,44 @@ SAFETY_OVERRIDES["mandu"] = {
     sourceNote: "Confirmed directly on dhar.nic.in; no direct phone number was independently found for the hospital, so none is stated here rather than guessed.",
   },
 };
+
+SAFETY_OVERRIDES["kolkata"] = {
+  police: {
+    summary: "Kolkata Police Lalbazar Control Room: 033-2214-3024",
+    details: [
+      "Lalbazar Control Room (Kolkata Police HQ, 18 Lalbazar Street): (91 33) 2214-3024 / 2214-3230 / 2214-1310, confirmed directly on kolkatapolice.gov.in.",
+      "Amherst Street Women Police Station: 033-2360-2222 · Taltala Women Police Station: 033-2283-7575 · Women Police HQ: 033-2235-0013.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on kolkatapolice.gov.in — Kolkata Police's own official .gov.in site — which also lists dedicated Women Police Stations by name and number.",
+  },
+  medical: {
+    summary: "IPGMER & SSKM Hospital — one of Kolkata's largest government multispecialty hospitals",
+    details: [
+      "SSKM Hospital (Institute of Post Graduate Medical Education & Research) — 50 Harish Mukherjee Road, Bhowanipore, Kolkata 700025: 033-2223-6026.",
+      "Ambulance: 102 / 108",
+    ],
+    sourceNote: "Confirmed directly on ipgmer.gov.in, the hospital's own official .gov.in site, and cross-confirmed via multiple independent directories (Medindia, myUpchar).",
+  },
+};
+
+SAFETY_OVERRIDES["sundarbans"] = {
+  police: {
+    summary: "Sundarban Police District: 03210-255701 — a dedicated police district specifically for this area",
+    details: [
+      "Sundarban Police District — a genuinely dedicated police district (not just a station) covering the Sundarbans area, under South 24 Parganas: 03210-255701, confirmed on sundarbanpolice.wb.gov.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on sundarbanpolice.wb.gov.in — the Sundarban Police District's own official .gov.in site, which names the current officer in charge.",
+  },
+  medical: {
+    summary: "Canning Sub-Divisional Hospital — the real referral hospital for the gateway area",
+    details: [
+      "Canning Sub-Divisional Hospital — District Headquarters, Canning, South 24 Parganas 743329 — the main hospital serving the Sundarbans gateway towns.",
+      "A smaller hospital also operates in Gosaba, further into the delta, open 24 hours.",
+      "Given the remoteness of the delta itself, medical evacuation for anything serious realistically means returning toward Canning or Kolkata — tour operators are expected to have an emergency plan for this.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Both facilities confirmed to exist via independent directory/mapped listings (Practo, Mappls, healthFROG); no direct phone number was independently found for either, so none is stated here rather than guessed.",
+  },
+};
