@@ -2536,3 +2536,41 @@ SAFETY_OVERRIDES["pachmarhi"] = {
     sourceNote: "District Hospital confirmed directly on narmadapuram.nic.in, the district's own official government portal; the Cantonment Board dispensary's existence is confirmed but not its direct contact number, so only its existence is stated.",
   },
 };
+
+SAFETY_OVERRIDES["kanha-national-park"] = {
+  police: {
+    summary: "Mandla District SP Office: 07642-250800",
+    details: [
+      "Superintendent of Police, Mandla — Civil Line, Mandla 481661: 07642-250800, confirmed directly on mandla.nic.in.",
+      "Police: 100 · National Emergency: 112 · Women Helpline: 1091",
+    ],
+    sourceNote: "Confirmed directly on mandla.nic.in — Mandla district's own official government portal — and corroborated by a genuine @mppolice.gov.in official email (sp_mandla@mppolice.gov.in).",
+  },
+  medical: {
+    summary: "District Hospital, Mandla — the district's main government hospital",
+    details: [
+      "District Hospital, Mandla — 35, Kacheri Mohalla Road, District Hospital Sitapur Street, Mandla 481661: 07642-251501.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on mandla.nic.in, Mandla district's own official government portal, which lists its own government (@nic.in) email address for the facility.",
+  },
+};
+
+SAFETY_OVERRIDES["bandhavgarh-national-park"] = {
+  police: {
+    summary: "Umaria District Police — Emergency Helpline 100/112 (no separate district control-room number published)",
+    details: [
+      "Umaria district police's own official site (umaria.mppolice.gov.in) confirms the emergency helplines 100/112, Women Helpline 1090, Cyber Crime 1930, and Child Helpline 1098, but does not publish a separate district control-room number.",
+      "Police: 100 · National Emergency: 112 · Women Helpline: 1090",
+    ],
+    sourceNote: "Confirmed directly on umaria.mppolice.gov.in — the district's own official site — which explicitly does not list a dedicated control-room or Tala/Bandhavgarh station number, so none is invented here.",
+  },
+  medical: {
+    summary: "District Hospital, Umaria — the district's main government hospital",
+    details: [
+      "District Hospital, Umaria — Umaria 484661: 07653-222314 / 07653-222045.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on umaria.nic.in, Umaria district's own official government portal, which lists its own government (@nic.in) email address for the facility.",
+  },
+};
