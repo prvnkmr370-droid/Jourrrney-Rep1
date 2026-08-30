@@ -2713,3 +2713,23 @@ SAFETY_OVERRIDES["jog-falls"] = {
     sourceNote: "Confirmed via an independent directory listing (Inspiring Pathways) with a real address and phone number for this genuine government sub-divisional hospital.",
   },
 };
+
+SAFETY_OVERRIDES["chikmagalur"] = {
+  police: {
+    summary: "Chikmagalur Police Control Room: 08262-237100",
+    details: [
+      "Chikmagalur Police Control Room — Chikmagalur Main Road, Hosamane Road, Chikmagalur 577101: 08262-237100 (24 hours).",
+      "District Police Office (SP): SH 57, Vijaya Nagar, Chikmagalur: 08262-230403, email spckm@ksp.gov.in.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed via the district police's own official site (chikkamagalurupolice.karnataka.gov.in) and a genuine @ksp.gov.in (Karnataka State Police) official email address.",
+  },
+  medical: {
+    summary: "Aralaguppe Mallegowda District Government Hospital — the district's main government hospital",
+    details: [
+      "Aralaguppe Mallegowda District Government Hospital — Vijaya Nagar, Chikmagalur 577101, open 24 hours: 08262-231163 / 235213.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on chikkamagaluru.nic.in, Chikkamagaluru district's own official government portal.",
+  },
+};
