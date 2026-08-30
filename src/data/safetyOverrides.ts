@@ -2354,3 +2354,23 @@ SAFETY_OVERRIDES["sambhar-lake"] = {
     sourceNote: "CHC Sambhar's existence is confirmed via nhsrcindia.org, a genuine Government of India health-systems body — its own direct phone number was not independently found, so none is stated here rather than guessed.",
   },
 };
+
+SAFETY_OVERRIDES["nagaur"] = {
+  police: {
+    summary: "Police Station Kotwali, Nagaur: 95304-13601",
+    details: [
+      "Police Station Kotwali, Nagaur — near Krishi Mandi, Nagaur: 95304-13601, email pskotwalingr@gmail.com.",
+      "Nagaur District SP — Office: 01582-242464, Residence: 01582-242454.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Kotwali Nagaur's number cross-confirmed via its own Facebook page and independent directory sources; the SP office numbers were independently corroborated as the district's official contacts.",
+  },
+  medical: {
+    summary: "Pt. Jawahar Lal Nehru Rajkiya District Hospital, Nagaur",
+    details: [
+      "Pt. Jawahar Lal Nehru (JLN) Rajkiya District Hospital — Nagaur 341001 — the district's main government hospital, open 24 hours, with General Medicine, Obstetrics & Gynaecology, Ophthalmology, Orthopaedics, ENT, and Paediatric departments: +91 94142 17562.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via a mapped listing and cross-referenced against neetadmission.in's medical-college directory, which lists it as a genuine government district hospital.",
+  },
+};
