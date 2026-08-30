@@ -2394,3 +2394,23 @@ SAFETY_OVERRIDES["kota"] = {
     sourceNote: "Address and government status cross-confirmed across multiple independent listings (Yappe, Medindia, ESI directory) and its affiliation with Government Medical College, Kota's own Wikipedia entry.",
   },
 };
+
+SAFETY_OVERRIDES["ajmer"] = {
+  police: {
+    summary: "Dargah Police Station: 0145-2632705 · Ajmer Police Control Room: 0145-2629166",
+    details: [
+      "Dargah Police Station — 116, Dargah Bazar Road, Dargah Bazar, Ajmer 305001 — the dedicated station covering the Dargah area itself: 0145-2632705.",
+      "Ajmer Police Control Room: 0145-2629166 (email pcr.ajmer@rajpolice.gov.in) — the district's official control room.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Dargah Police Station's number confirmed via a dedicated police-station directory listing the current SHO by name; the Ajmer Police Control Room number is corroborated by its genuine @rajpolice.gov.in official email address (same source as used for the Pushkar card).",
+  },
+  medical: {
+    summary: "JLN (Jawaharlal Nehru) Hospital — Ajmer's major government hospital and medical college",
+    details: [
+      "JLN Hospital — JLN Medical College Circle, Kala Bagh, Ajmer — a major government hospital and medical college (see the Pushkar card for the same source).",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Same source basis as the Pushkar entry — confirmed as a genuine government medical college hospital via multiple independent directory listings.",
+  },
+};
