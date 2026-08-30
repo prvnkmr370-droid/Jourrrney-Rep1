@@ -2271,3 +2271,24 @@ SAFETY_OVERRIDES["bundi"] = {
     sourceNote: "Confirmed via its own genuine government (@nic.in) email address (cmho-bun-rj@nic.in) and cross-confirmed across independent directory listings (Inspiring Pathways, Cashless Hospital India).",
   },
 };
+
+SAFETY_OVERRIDES["bhangarh"] = {
+  police: {
+    summary: "Alwar District Police Control Room: 0144-2338200 (Bhangarh falls within Alwar district)",
+    details: [
+      "Alwar District SP: 8764502201, email spalwarcomplaint@gmail.com.",
+      "Alwar Police Control Room: 0144-2338200 · PCR WhatsApp: 9829934822.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Bhangarh is a small village within Alwar district with no independently-confirmed dedicated police station of its own — the Alwar district contacts (same as the Alwar card) are the genuine, verifiable numbers for this area.",
+  },
+  medical: {
+    summary: "Rajiv Gandhi Government General Hospital, Alwar (the real referral hospital, ~55 km away)",
+    details: [
+      "Rajiv Gandhi Government General Hospital — Alwar 301001 (see the Alwar card for full details): +91 77930 07366.",
+      "As a small ruined-fort site rather than a town, Bhangarh has no hospital of its own — Alwar is the real referral point.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Same source basis as the Alwar entry — cross-confirmed via multiple independent listings (Medindia, Lybrate).",
+  },
+};
