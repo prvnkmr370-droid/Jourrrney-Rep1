@@ -2635,3 +2635,23 @@ SAFETY_OVERRIDES["sundarbans"] = {
     sourceNote: "Both facilities confirmed to exist via independent directory/mapped listings (Practo, Mappls, healthFROG); no direct phone number was independently found for either, so none is stated here rather than guessed.",
   },
 };
+
+SAFETY_OVERRIDES["kalimpong"] = {
+  police: {
+    summary: "Kalimpong Police Station: 03552-255268 · Control Room: 03552-255273",
+    details: [
+      "Kalimpong Police Station — Thana Dara, Kalimpong 734301: 03552-255268 / 9147889083, confirmed directly on kalimpongpolice.wb.gov.in.",
+      "Kalimpong Police Control Room: 03552-255273 / 9147889088 · Women Help Desk: 03552-255084.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Confirmed directly on kalimpongpolice.wb.gov.in — Kalimpong Police District's own official .gov.in site, which lists a dedicated Women Help Desk number.",
+  },
+  medical: {
+    summary: "Kalimpong District Hospital — the district's main government hospital",
+    details: [
+      "Kalimpong District Hospital — KD Pradhan Road, Chotta Bhalukhop, Kalimpong 734301 — the primary 24×7 government hospital for the district, confirmed directly on kalimpong.gov.in.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on kalimpong.gov.in, Kalimpong district's own official government portal; no direct phone number was independently found, so none is stated here rather than guessed.",
+  },
+};
