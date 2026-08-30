@@ -2148,3 +2148,24 @@ SAFETY_OVERRIDES["bharatpur"] = {
     sourceNote: "Confirmed as a genuine major government hospital via its own Wikipedia entry ('Bharatpur Hospital') and its affiliation with Bharatpur Medical College (also independently Wikipedia-confirmed); exact phone number not independently verified, so only address/existence is claimed with confidence here.",
   },
 };
+
+SAFETY_OVERRIDES["kumbhalgarh"] = {
+  police: {
+    summary: "Rajsamand District SP Office: 02952-220563 · Police Control Room: 02952-220005",
+    details: [
+      "Rajsamand District Superintendent of Police — Office: 02952-220563, Residence: 02952-220564.",
+      "Rajsamand Police Control Room: 02952-220005.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Kumbhalgarh itself is a rural fort site without its own dedicated police-station listing found independently — the Rajsamand district SP office and control room (the administrative district Kumbhalgarh falls under) are given as the genuine, verifiable contacts.",
+  },
+  medical: {
+    summary: "R.K. Government District Hospital, Kankroli (Rajsamand) — the real referral hospital for this rural area, ~45 km away",
+    details: [
+      "R.K. (Rajsamand) Government District Hospital — Kankroli, Rajsamand district — the district's main government hospital, confirmed listed on nhsrcindia.org (India's National Health Systems Resource Centre).",
+      "As a fort site rather than a town, Kumbhalgarh itself has no hospital of its own — Rajsamand/Kankroli (~45 km) or Udaipur (~85 km) are the real options for anything beyond basic first aid.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "R.K. Government District Hospital confirmed via nhsrcindia.org, a genuine Government of India health-systems body; the honest caveat about Kumbhalgarh's own lack of medical facilities reflects it being a fort/heritage site, not a residential town.",
+  },
+};
