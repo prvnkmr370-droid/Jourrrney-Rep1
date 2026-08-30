@@ -148,34 +148,33 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         </Pressable>
 
         <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
-          {/* State name and the hero-carousel dot indicators share this
-              row rather than the dots floating as their own absolutely-
-              positioned layer at a fixed offset — that fixed offset was
-              tuned to sit within the destination-name text's own line
-              height, but with a two-line state+dots pairing instead the
-              dots are guaranteed to never collide with the name or the
-              rating/duration/season row below, since they're now part of
-              the same normal-flow row as the state text itself. Only
-              rendered once a destination actually has more than one
-              photo to page through. */}
-          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
-            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>
-              {d.state}
-            </Text>
-            {heroPhotos.length > 1 && (
-              <View style={{ flexDirection: "row", gap: 6 }}>
-                {heroPhotos.map((uri, i) => (
-                  <View
-                    key={`${uri}-${i}`}
-                    style={{
-                      width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
-                      backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
-                    }}
-                  />
-                ))}
-              </View>
-            )}
-          </View>
+          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
+            {d.state}
+          </Text>
+
+          {/* Hero-carousel dot indicators — their own centred row in
+              normal document flow, not a separately absolutely-positioned
+              layer at a fixed offset. That fixed offset was tuned to sit
+              within the destination-name text's own line height, which is
+              exactly what let it collide with that text when the layout
+              shifted. Placed here (state text above, name below) and
+              centred rather than pinned to a side, the dots take up their
+              own real space and can never overlap either neighbour. Only
+              rendered once a destination actually has more than one photo
+              to page through. */}
+          {heroPhotos.length > 1 && (
+            <View style={{ flexDirection: "row", justifyContent: "center", gap: 6, marginBottom: 8 }}>
+              {heroPhotos.map((uri, i) => (
+                <View
+                  key={`${uri}-${i}`}
+                  style={{
+                    width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
+                    backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
+                  }}
+                />
+              ))}
+            </View>
+          )}
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}>
             {d.name}
           </Text>
