@@ -2733,3 +2733,23 @@ SAFETY_OVERRIDES["chikmagalur"] = {
     sourceNote: "Confirmed directly on chikkamagaluru.nic.in, Chikkamagaluru district's own official government portal.",
   },
 };
+
+SAFETY_OVERRIDES["nainital"] = {
+  police: {
+    summary: "Kotwali Mallital Police Station: 05942-235424 · Women Help Desk: 9258199273",
+    details: [
+      "Kotwali Mallital Police Station — Mallital, Nainital: 05942-235424 / 9411112870, Women Help Desk: 9258199273, confirmed directly on nainital.nic.in.",
+      "SSP/Additional SP Nainital office: 05942-235730.",
+      "Police: 100 · National Emergency: 112 · Cyber Crime Helpline: 1930",
+    ],
+    sourceNote: "Confirmed directly on nainital.nic.in — Nainital district's own official government portal, which lists individual Kotwali station numbers and a dedicated Women Help Desk.",
+  },
+  medical: {
+    summary: "B.D. Pandey District Hospital (separate Male and Female wings) — the district's main government hospital",
+    details: [
+      "B.D. Pandey District Hospital — Mall Road, Bara Bazar, Mallital, Nainital 263001 — the district's main government hospital, with separate Male and Female wings, open 24 hours: 05942-235986 / 235012.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on nainital.nic.in, which lists both the B.D. Pandey Male Hospital and B.D. Pandey Female Hospital as genuine government facilities.",
+  },
+};
