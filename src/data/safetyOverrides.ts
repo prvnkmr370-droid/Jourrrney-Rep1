@@ -2189,3 +2189,23 @@ SAFETY_OVERRIDES["ranakpur"] = {
     sourceNote: "Confirmed via its own government (@nic.in) CMHO email address and its affiliation with Government Medical College, Pali (independently Wikipedia-confirmed) — a genuine government facility.",
   },
 };
+
+SAFETY_OVERRIDES["mandawa"] = {
+  police: {
+    summary: "Mandawa Police Station: 01592-223131",
+    details: [
+      "Mandawa Police Station — Mandawa, Jhunjhunu district 333704: 01592-223131, confirmed via its official @rajpolice.gov.in email address.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Phone and location cross-confirmed across multiple independent listings, corroborated by a genuine @rajpolice.gov.in official email address (ps.mandawa.jhunjhunu@rajpolice.gov.in).",
+  },
+  medical: {
+    summary: "BDK (Bhagwan Das Khaitan) Hospital, Jhunjhunu — the district's main government hospital",
+    details: [
+      "Government BDK Hospital — Man Nagar, Opposite Bus Depot, Road No. 1, Jhunjhunu 333001 (roughly 29 km from Mandawa): 01592-234789, 01592-232199.",
+      "As a small heritage town, Mandawa itself has no major hospital of its own — Jhunjhunu is the real referral point for anything beyond basic care.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed via its listing on nhsrcindia.org (India's National Health Systems Resource Centre) and multiple independent mapped listings.",
+  },
+};
