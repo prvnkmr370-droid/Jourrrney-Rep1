@@ -3691,9 +3691,20 @@ export const DESTINATIONS: Destination[] = [
     hidden: true,
     tagline: "Guided Safari Tours to See Asiatic Lions",
     description: "Vasona Lion Safari is a safari park in Dadra and Nagar Haveli designed to replicate Gir Forest conditions — dense vegetation, rocky outcrops, and open grassland — so its Asiatic lions can exhibit natural behaviour. Visits are guided safari-vehicle tours with commentary on lion behaviour, ecology, and conservation; deer, wild boar, and birds are also present in the park.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dadra_and_Nagar_Haveli_Silvassa.jpg/1280px-Dadra_and_Nagar_Haveli_Silvassa.jpg",
-    imageCredit: "Representative photo of the Silvassa/DNH region — no verified photo of Vasona Lion Safari itself was found on Wikimedia Commons despite extensive searching. Photo: Sharada Prasad CS — Wikimedia Commons, CC BY 2.0.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/vasona-lion-safari-1.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/vasona-lion-safari-1.jpg",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/vasona-lion-safari-1.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/vasona-lion-safari-2.webp",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/dnh/vasona-lion-safari-3.webp",
+    ],
+    // Supplied directly by the user (source/license unconfirmed, same as
+    // Dudhani Lake — see that entry's comment for the full context). A
+    // 4th photo showing 3 identifiable people at the entrance was
+    // deliberately excluded: the user confirmed they're strangers, not
+    // their own family/group, so publishing it would be a privacy issue
+    // on top of the copyright one.
+    imageCredit: "Photos provided by the user; original source and copyright status unconfirmed.",
     category: ["Wildlife", "Nature"],
     bestSeason: "October – March (cooler for safari-vehicle touring)",
     duration: "Half day",
