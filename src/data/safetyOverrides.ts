@@ -2516,3 +2516,23 @@ SAFETY_OVERRIDES["orchha"] = {
     sourceNote: "CHC Niwari's existence confirmed directly on niwari.nic.in — Niwari district's own official government portal — though no direct phone number was independently found, so none is stated here rather than guessed.",
   },
 };
+
+SAFETY_OVERRIDES["pachmarhi"] = {
+  police: {
+    summary: "Narmadapuram (Hoshangabad) District Police — Emergency Helpline 100/112",
+    details: [
+      "Pachmarhi falls under Narmadapuram district police — the district's own official site (narmadapuram.mppolice.gov.in) confirms the emergency helplines 100/112, plus Women Helpline 1090, Cyber Crime 1930, and Child Helpline 1098, but does not list a dedicated Pachmarhi station number or a separate control-room line.",
+      "Police: 100 · National Emergency: 112 · Women Helpline: 1090",
+    ],
+    sourceNote: "Confirmed directly on narmadapuram.mppolice.gov.in — the district's own official site — which explicitly does not publish a dedicated Pachmarhi station number, so none is invented here.",
+  },
+  medical: {
+    summary: "District Hospital, Narmadapuram (Hoshangabad) — the real referral hospital, ~52 km away · a small Cantonment Board dispensary exists in Pachmarhi itself",
+    details: [
+      "District Hospital, Narmadapuram — Saket Colony, Narmadapuram 461001: 07574-252464.",
+      "Pachmarhi Cantonment Board runs its own small dispensary in the town for basic care — Pachmarhi is largely administered as a military cantonment.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "District Hospital confirmed directly on narmadapuram.nic.in, the district's own official government portal; the Cantonment Board dispensary's existence is confirmed but not its direct contact number, so only its existence is stated.",
+  },
+};

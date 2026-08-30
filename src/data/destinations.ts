@@ -3060,6 +3060,71 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking/cycling shoes", "Sun hat and sunscreen", "Modest clothing for temples", "Camera — genuinely one of MP's most photogenic towns", "Insect repellent near the riverbank"],
   },
 
+  {
+    id: "pachmarhi",
+    name: "Pachmarhi",
+    state: "Madhya Pradesh",
+    tagline: "The Queen of Satpura",
+    description: "Pachmarhi is Madhya Pradesh's only hill station, tucked into the Satpura Range at just over 1,000m — cool, forested, and dotted with waterfalls, caves, and viewpoints, most of it protected within the Satpura Tiger Reserve and Pachmarhi Biosphere Reserve. Much of the town sits under a British-era Cantonment Board (it was founded as a colonial hill retreat in the 1860s), giving it a genuinely calmer, greener character than most Indian hill stations, with real limits on unchecked development.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pachmarhi_Dhoopgarh_Senset.jpg/1280px-Pachmarhi_Dhoopgarh_Senset.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pachmarhi_Dhoopgarh_Senset.jpg/1280px-Pachmarhi_Dhoopgarh_Senset.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pachmarhi_Dhoopgarh_Senset.jpg/1280px-Pachmarhi_Dhoopgarh_Senset.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pachmarhi_Dhoopgarh.jpg/1280px-Pachmarhi_Dhoopgarh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Way_to_dhoopgarh.jpg/1280px-Way_to_dhoopgarh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bee_fall%2C_Pachmarhi.jpg/1280px-Bee_fall%2C_Pachmarhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bee_Falls%2C_Pachmarhi_01.jpg/1280px-Bee_Falls%2C_Pachmarhi_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bee_Falls%2C_Pachmarhi_02.jpg/1280px-Bee_Falls%2C_Pachmarhi_02.jpg",
+    ],
+    imageCredit: "Photos: GHOSTED GOD, Hmayriya, Deepargh Chatterjee, The open draft — Wikimedia Commons, CC BY-SA.",
+    category: ["Hill Station", "Nature", "Adventure"],
+    bestSeason: "October – June (avoid heavy monsoon — waterfalls swell but trails/roads can be hazardous)",
+    duration: "2–3 days",
+    highlights: [{ name: "Dhoopgarh — highest point in the Satpura Range, famous for sunset" }, { name: "Bee Falls (Bee Fall)" }, { name: "Pandav Caves" }, { name: "Satpura Tiger Reserve" }, { name: "Jata Shankar Cave Temple" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Pipariya, then ~1h road — ~13–14h total", fromMumbai: "Via Pipariya — ~13–14h", fromBangalore: "Via Bhopal/Pipariya — 22h+", duration: "~1h road from Pipariya", costRange: "₹400–₹1,800 (train) + ₹300–₹600 (local transfer)", tips: "Pipariya is the nearest railhead; there's no train directly into Pachmarhi." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhopal/Pipariya — 12–13h total", fromMumbai: "Via Pipariya — 13–14h", fromBangalore: "—", duration: "~1h from Pipariya (52 km); ~3.5h from Bhopal", costRange: "₹800–₹1,500 cab from Pipariya", tips: "The road up from Pipariya climbs through genuinely scenic forest." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Bhopal (1h20m) then ~3.5h road", fromMumbai: "Fly to Bhopal, then road", fromBangalore: "Fly to Bhopal, then road", duration: "1h20m flight + ~3.5h road", costRange: "₹3,000–₹9,000 (flight) + road transfer", tips: "Bhopal is the practical air option." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels", priceRange: "₹800–₹2,000/night", examples: ["Hotel Highland", "MPT Amaltas", "Hotel Anand"], description: "Simple hill-station rooms, several with forest views." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,500–₹5,500/night", examples: ["MPT Nilamber Skyline", "Hotel Sonarika", "Golf View Nature Resort"], description: "Comfortable stays, some genuinely close to the Cantonment's golf course and forest edges." },
+      { type: "Higher-End Stays", priceRange: "₹6,000–₹14,000/night", examples: ["Reni Pani Jungle Lodge (near the tiger reserve)", "Glen View Resort"], description: "More polished nature-lodge options, particularly for Satpura Tiger Reserve visitors." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Jeep", cost: "₹200–₹1,500", notes: "The standard way to reach spread-out viewpoints and falls — many attractions require a permit-holding local vehicle", available: true },
+      { mode: "Walking/Trekking", cost: "Free (guide fee ₹300–₹800)", notes: "Several sites, including some caves, are only reachable on foot with a local guide", available: true },
+      { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "Workable for the flatter Cantonment-area roads", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Satpura Tiger Reserve", distance: "Adjacent", type: "Wildlife", isHidden: true },
+      { name: "Bhopal", distance: "195 km", type: "Heritage", isHidden: false, id: "bhopal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Nature Lodge Premium", perDayPerPerson: 14000, accommodation: 10000, food: 1800, transport: 800, activities: 1400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Waterfalls & Caves", morning: "Bee Falls and Rajat Prapat (Big Fall) — genuinely refreshing hikes through forest to reach both.", afternoon: "Pandav Caves, a set of rock-cut shelters with real (if debated) links to the Mahabharata's Pandava brothers.", evening: "Jata Shankar Cave Temple.", stay: "Cantonment-area hotel", meals: "Local thali (₹200), forest-view dinner (₹400)", tips: "Many sites here require a permit and a local guide/jeep — arrange this through your hotel rather than trying to freelance it." },
+      { day: 2, title: "Dhoopgarh & Satpura", morning: "Sunrise or sunset at Dhoopgarh, the highest point in the Satpura Range, with genuinely sweeping views.", afternoon: "A short walk or safari-style drive into the edges of Satpura Tiger Reserve.", evening: "Relax at your hotel or take a quiet Cantonment-area walk.", stay: "Same hotel", meals: "Resort dinner (₹500)", tips: "Dhoopgarh is famous for sunset specifically — most visitors go up in the late afternoon, not just at sunrise." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A genuinely calm, low-density hill station with real limits on development thanks to its Cantonment status", "Most attractions are visited via organised jeep/guide arrangements, not solo wandering", "Cool, forested character keeps a relaxed, family-oriented tourist base"],
+      precautions: ["Several waterfalls and viewpoints have real fall/slip hazards — stick to marked paths and railings", "Don't attempt forest trails without a local guide, both for safety and because some areas require permits", "Evenings cool down fast and get genuinely dark in forested areas — plan return timing"],
+      soloTips: ["The guide/jeep system for most attractions means solo travellers are rarely truly isolated", "Cantonment-area hotels and the main market are calm and easy to navigate independently", "Joining others for the more remote viewpoints (like Dhoopgarh at sunset) is common and easy"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1091" }, { label: "Narmadapuram District Police", number: "100 / 112" }, { label: "Police", number: "100" }],
+      safeZones: ["Cantonment area and main market", "Established viewpoints with railings/guides"],
+      avoidAreas: ["Unmarked forest trails without a guide", "Waterfall edges/rocks after rain (genuinely slippery, not just a formality)"],
+    },
+    rating: 4.6,
+    reviews: 6700,
+    mustEat: ["Local MP thali", "Poha Jalebi", "Forest-honey products (a real Satpura specialty)", "Corn-based snacks (Bhutte ka Kees)", "Hot chai at viewpoint stalls"],
+    packingTips: ["Layers — genuinely cooler than the plains below, especially mornings/evenings", "Sturdy trekking shoes", "Rain gear if visiting near monsoon shoulder season", "Insect repellent for forest areas", "A reusable water bottle for the hikes"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",
