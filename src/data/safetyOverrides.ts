@@ -2209,3 +2209,24 @@ SAFETY_OVERRIDES["mandawa"] = {
     sourceNote: "Confirmed via its listing on nhsrcindia.org (India's National Health Systems Resource Centre) and multiple independent mapped listings.",
   },
 };
+
+SAFETY_OVERRIDES["deshnoke"] = {
+  police: {
+    summary: "Deshnok Police Station (local) · Bikaner District SP Office: 0151-2226111",
+    details: [
+      "Deshnok Police Station — Deshnoke, Bikaner district 334801 — confirmed as one of Bikaner district's 26 official Law & Order police stations, though its direct phone number wasn't independently verified.",
+      "Bikaner District SP Office — Gajner Road, Pratap Basti, Bikaner: 0151-2226111 / 0151-2226112.",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Deshnok Police Station's existence is confirmed via a mapped listing and Bikaner's official police-station list; the Bikaner District SP Office number is the higher-confidence contact, given directly by search results citing it as the district's official contact.",
+  },
+  medical: {
+    summary: "CHC Deshnoke (local) · PBM Hospital, Bikaner (major referral hospital, 30 km)",
+    details: [
+      "Community Health Centre (CHC) Deshnoke — Pabu Khejre area, Deshnoke — the town's own government health facility.",
+      "PBM Hospital, Bikaner (~30 km) — the region's major government referral hospital (see the Bikaner card for full details) for anything beyond what the local CHC can handle.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "CHC Deshnoke confirmed as a genuine government facility via its listing among Rajasthan's official government hospitals and its own government email address; PBM Hospital cross-confirmed the same way as in the Bikaner entry.",
+  },
+};

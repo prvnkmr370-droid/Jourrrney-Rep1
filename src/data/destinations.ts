@@ -1403,6 +1403,68 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "deshnoke",
+    name: "Deshnoke",
+    state: "Rajasthan",
+    aliases: ["Karni Mata Temple", "Rat Temple"],
+    tagline: "Home of the Sacred Rat Temple",
+    description: "Deshnoke's Karni Mata Temple is one of India's most unusual pilgrimage sites — home to an estimated 25,000 black rats, considered sacred incarnations of Karni Mata's descendants and protected within the temple grounds. Devotees eat and drink from dishes the rats have touched as a mark of blessing, and spotting one of the temple's rare white rats is considered especially auspicious. Genuinely striking rather than just a curiosity, the temple itself is a real, actively-run 20th-century marble shrine with carved silver doors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg/1280px-Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg/1280px-Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg/1280px-Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Courtyard_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg/1280px-Courtyard_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg/1280px-Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Rats_in_the_Temple_of_Karni_Mata_in_Deshnoke.png/1280px-Rats_in_the_Temple_of_Karni_Mata_in_Deshnoke.png",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Rats_in_the_Temple_of_Karni_Mata_in_Deshnoke-2.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/20191212_Szczury_w_%C5%9Awi%C4%85tyni_Karni_Maty_w_De%C5%9Bnok_1052_8152_DxO.jpg/1280px-20191212_Szczury_w_%C5%9Awi%C4%85tyni_Karni_Maty_w_De%C5%9Bnok_1052_8152_DxO.jpg",
+    ],
+    imageCredit: "Photos: Pablo Nicolás Taibi Cicare, Rakesh bhat29, Günther Jontes, Jakub Hałun — Wikimedia Commons, CC BY / CC BY-SA.",
+    category: ["Spiritual", "Culture", "Unique Experience"],
+    bestSeason: "October – March",
+    duration: "Half day",
+    highlights: [{ name: "Karni Mata Temple — ~25,000 sacred rats" }, { name: "Carved silver temple doors" }, { name: "Spotting a rare white rat (considered especially auspicious)" }, { name: "Marble temple architecture" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Bikaner Junction, then ~30 min road — ~7–8h total", fromMumbai: "Via Bikaner — 18h+", fromBangalore: "Via Delhi/Bikaner — 26h+", duration: "~7–8h from Delhi to Bikaner, +30 min road", costRange: "₹300–₹1,600 (train) + ₹100–₹300 (local transfer)", tips: "Deshnoke has its own small railway station, but Bikaner Junction has far better long-distance connections." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — 7–8h total", fromMumbai: "Via Bikaner — 17–18h", fromBangalore: "—", duration: "~30 min from Bikaner (30 km)", costRange: "₹500–₹1,000 cab from Bikaner", tips: "Almost everyone visits as a half-day trip from Bikaner, not as a standalone base." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Jaipur or Bikaner (Nal), then road", fromMumbai: "Via Delhi/Jaipur, then road", fromBangalore: "Via Delhi/Jaipur, then road", duration: "1–1.5h flight + road transfer", costRange: "₹3,500–₹9,000 (flight) + road transfer", tips: "Route via Bikaner, same as the Bikaner card — there's no separate air option for Deshnoke." },
+    ],
+    accommodation: [
+      { type: "Note on staying overnight", priceRange: "—", examples: [], description: "Deshnoke is almost exclusively visited as a half-day trip from Bikaner — there is essentially no dedicated tourist accommodation in the town itself." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free (bare feet required inside the temple, per custom)", notes: "The temple complex itself is compact and explored on foot", available: true },
+      { mode: "Taxi (from Bikaner)", cost: "₹500–₹1,000 round trip", notes: "The standard way to visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner (Junagarh Fort)", distance: "30 km", type: "Heritage", isHidden: false, id: "bikaner" },
+      { name: "National Research Centre on Camel", distance: "22 km", type: "Unique Experience", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 400, activities: 50 },
+      { tier: "mid", label: "Comfortable (day trip)", perDayPerPerson: 1800, accommodation: 0, food: 400, transport: 1200, activities: 100 },
+      { tier: "luxury", label: "Private Day Trip", perDayPerPerson: 4000, accommodation: 0, food: 800, transport: 3000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Karni Mata Temple", morning: "Drive from Bikaner (~30 min); remove shoes and socks before entering, as per temple custom.", afternoon: "Explore the temple's marble courtyards and silver doors, and — if you're inclined — try to spot one of the rare white rats among the thousands of black ones.", evening: "Return to Bikaner.", stay: "Day trip from Bikaner", meals: "Prasad (temple offering) if offered; otherwise a meal back in Bikaner", tips: "Socks are genuinely a good idea for the walk to/from the temple even though bare feet are required inside — the approach can be hot underfoot." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, actively-managed pilgrimage site with steady visitor flow", "Compact temple grounds, easy to navigate", "Almost always visited as a short, supervised day trip from Bikaner"],
+      precautions: ["This is an active religious site — dress modestly and follow temple customs (bare feet, no leather inside)", "Some visitors are uncomfortable with the rats themselves — go in with realistic expectations", "Agree taxi fares from Bikaner clearly before setting off"],
+      soloTips: ["Very manageable solo, given the short visit and steady flow of other pilgrims/tourists", "Joining a shared taxi or tour from Bikaner is simple and common", "The whole visit is typically under two hours, limiting any real exposure"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bikaner District SP Office", number: "0151-2226111" }, { label: "Police", number: "100" }],
+      safeZones: ["Temple complex and courtyard", "Main approach road"],
+      avoidAreas: ["Unlit stretches outside the temple after dark (unlikely given the day-trip nature of most visits)"],
+    },
+    rating: 4.4,
+    reviews: 6100,
+    mustEat: ["Prasad offered at the temple", "Bikaneri Bhujia (best bought back in Bikaner)", "Rajasthani thali in Bikaner"],
+    packingTips: ["Socks for the walk to/from the temple (bare feet required inside)", "An open mind — this is a genuinely unusual site by any standard", "Camera (photography is generally allowed, but be respectful)", "Modest clothing", "Hand sanitiser, if you'd like it for after touching temple surfaces"],
+  },
+
+  {
     id: "kerala",
     name: "Kerala Backwaters",
     aliases: ["Alappuzha", "Alleppey"],
