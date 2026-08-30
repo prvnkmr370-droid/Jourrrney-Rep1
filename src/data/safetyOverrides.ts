@@ -2775,6 +2775,28 @@ SAFETY_OVERRIDES["auli"] = {
   },
 };
 
+SAFETY_OVERRIDES["ziro-valley"] = {
+  police: {
+    summary: "Superintendent of Police, Lower Subansiri (Ziro): +91-9436636041",
+    details: [
+      "Office of the Superintendent of Police, Lower Subansiri District, Ziro, Arunachal Pradesh 791120: +91-9436636041.",
+      "Ziro Police Station STD code: 03788 (direct station line not published online — route via SP office or dial 100/112).",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "SP office phone number and address confirmed directly on lowersubansiri.nic.in, the district's own official government portal. Note this is the SP office line (tied to the officer currently posted, per the site) rather than a general station switchboard, so it may change with personnel postings — dial 100/112 as the reliable fallback.",
+  },
+  medical: {
+    summary: "Gyati Takka General Hospital, Hapoli — the district hospital",
+    details: [
+      "Gyati Takka General Hospital (Gyati Takka District Hospital) — Hospital Road, Hapoli, Ziro, Lower Subansiri District, Arunachal Pradesh 791120.",
+      "Offers General Medicine, Obstetrics & Gynaecology, Ophthalmology, Orthopaedics, ENT, and Paediatric care, with emergency services.",
+      "No verified phone number could be found for this facility — dial 108 for ambulance dispatch.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "Confirmed directly on lowersubansiri.nic.in, the district's own official government portal, which lists it under district public utilities. No phone number is published there or found independently, so none is guessed here.",
+  },
+};
+
 SAFETY_OVERRIDES["nagaur"] = {
   police: {
     summary: "Kotwali Nagaur Police Station: 95304-13601",
