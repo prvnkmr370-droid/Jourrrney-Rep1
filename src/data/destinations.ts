@@ -2994,6 +2994,72 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing (essential near the temple)", "Comfortable shoes for crowds and walking", "A small bag you can keep close in dense crowds", "Patience — this is one of India's busiest temples", "Cash for offerings and prasad"],
   },
 
+  {
+    id: "orchha",
+    name: "Orchha",
+    state: "Madhya Pradesh",
+    tagline: "The Forgotten City on the Betwa",
+    description: "Orchha, a former Bundela Rajput capital on the banks of the Betwa River, is a genuinely striking, uncrowded medieval town — its skyline dominated by the honey-coloured Jahangir Mahal palace and, along the riverbank, a row of towering royal cenotaphs (chhatris) that are among the most photogenic sights in Madhya Pradesh. Unlike most well-known Indian heritage towns, Orchha has largely escaped mass tourism, keeping a real, lived-in small-town character alongside its major monuments.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg/1280px-Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg/1280px-Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg/1280px-Jahangir_Mahal%2C_Orchha%2C_Madhya_Pradesh%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jahangir_Mahal_and_Raja_Mahal%2C_Orchha%2C_from_Chaturbhuj_Temple.jpg/1280px-Jahangir_Mahal_and_Raja_Mahal%2C_Orchha%2C_from_Chaturbhuj_Temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jahangir_Mahal_Orchha_01.jpg/1280px-Jahangir_Mahal_Orchha_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Orchha_Betwa_River_Cenotaphs_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chhatris%28Cenotaphs%29%2C_Orchha_01.jpg/1280px-Chhatris%28Cenotaphs%29%2C_Orchha_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Chhatris_cenotaphs._Orchha%2C_India_%2823582299235%29.jpg/1280px-Chhatris_cenotaphs._Orchha%2C_India_%2823582299235%29.jpg",
+    ],
+    imageCredit: "Photos: Yann, Suyash Dwivedi, Dennis G. Jarvis, Deepa Chandran2014, Juan Antonio Segal — Wikimedia Commons, CC BY / CC BY-SA.",
+    category: ["Heritage", "History", "Culture"],
+    bestSeason: "October – March",
+    duration: "1–2 days",
+    highlights: [{ name: "Jahangir Mahal" }, { name: "Royal Chhatris (cenotaphs) along the Betwa" }, { name: "Raja Mahal" }, { name: "Chaturbhuj Temple" }, { name: "Orchha Wildlife Sanctuary" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Jhansi Junction, then ~20 min road — ~7–8h total", fromMumbai: "Via Jhansi — ~12–13h", fromBangalore: "Via Jhansi — 22h+", duration: "~7–8h from Delhi to Jhansi, +20 min road", costRange: "₹350–₹1,600 (train) + ₹200–₹400 (local transfer)", tips: "Jhansi Junction, a major railway hub, is the practical gateway — Orchha itself has no significant station of its own." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jhansi — 7–8h total", fromMumbai: "Via Jhansi — 12–13h", fromBangalore: "—", duration: "~20 min from Jhansi (16 km)", costRange: "₹300–₹600 cab from Jhansi", tips: "Orchha is a very short, easy hop from Jhansi." },
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Gwalior (50 min) then ~2.5h road", fromMumbai: "Fly to Gwalior, then road", fromBangalore: "Fly to Gwalior, then road", duration: "50 min flight + ~2.5h road", costRange: "₹3,000–₹9,000 (flight) + road transfer", tips: "Gwalior is the nearest airport with reasonable connectivity; Khajuraho's airport is another option depending on your route." },
+    ],
+    accommodation: [
+      { type: "Budget Guesthouses", priceRange: "₹600–₹1,800/night", examples: ["Hotel Sheesh Mahal (heritage, budget rooms)", "Betwa Retreat", "Hotel Palki Mahal"], description: "Simple rooms, several with genuine views of the palace and river." },
+      { type: "Mid-Range Hotels", priceRange: "₹2,000–₹4,500/night", examples: ["Hotel Amar Mahal", "Orchha Resort", "Bundelkhand Riverside"], description: "Comfortable stays, some right along the Betwa." },
+      { type: "Heritage Stay", priceRange: "₹4,500–₹10,000/night", examples: ["Sheesh Mahal (MP Tourism, inside the fort complex itself)"], description: "A genuinely rare experience — staying inside part of the historic Orchha fort complex." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The whole heritage core is compact and walkable", available: true },
+      { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A relaxed, popular way to cover the wider town and riverbank", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100", notes: "For the short hop from Jhansi or getting around the wider area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jhansi Fort (a short trip across the state border)", distance: "16 km", type: "Heritage", isHidden: true },
+      { name: "Khajuraho", distance: "175 km", type: "UNESCO Heritage", isHidden: false, id: "khajuraho" },
+      { name: "Gwalior", distance: "120 km", type: "Heritage", isHidden: false, id: "gwalior" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1600, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Heritage Fort Premium", perDayPerPerson: 9000, accommodation: 6500, food: 1200, transport: 500, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jahangir Mahal & the Chhatris", morning: "Jahangir Mahal — built for a single planned visit by Emperor Jahangir, genuinely well-preserved and easy to explore.", afternoon: "Raja Mahal and Chaturbhuj Temple, both a short walk away.", evening: "The riverside Chhatris at sunset — a genuinely striking, uncrowded photo spot.", stay: "Riverside guesthouse", meals: "Local thali (₹150), riverside dinner (₹300)", tips: "Orchha is refreshingly uncrowded compared to Khajuraho or Gwalior — a good pick if you want more unhurried time with the monuments." },
+      { day: 2, title: "Wildlife Sanctuary & Betwa", morning: "Orchha Wildlife Sanctuary — a real, if modest, riverside nature reserve.", afternoon: "A relaxed walk or cycle along the Betwa riverbank.", evening: "Depart toward Khajuraho or Jhansi.", stay: "Check out", meals: "Local dhaba lunch (₹150)", tips: "Orchha is a genuinely easy add-on between Jhansi and Khajuraho if you're doing a wider Madhya Pradesh/Bundelkhand circuit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A small, calm heritage town with a genuinely low-key, uncrowded tourist circuit", "The compact heritage core is easily navigated and well-trodden by day", "Guesthouses are well set up for independent travellers"],
+      precautions: ["Being a small town, evenings are genuinely quiet — plan return timing around that", "Dress modestly at active temples", "The wildlife sanctuary area should be visited with a guide, not alone"],
+      soloTips: ["Orchha's small scale and calm character make it genuinely easy and enjoyable for solo travellers", "Cycling the town and riverbank is a popular, social way to explore", "Guesthouses here are known for being welcoming to independent travellers"],
+      emergencyContacts: [{ label: "Women Helpline (Madhya Pradesh)", number: "1091" }, { label: "Niwari Police Station", number: "7680232322" }, { label: "Police", number: "100" }],
+      safeZones: ["Jahangir Mahal and main heritage core", "Riverside Chhatris area by day"],
+      avoidAreas: ["Unlit riverside stretches late at night", "Wildlife sanctuary areas without a guide"],
+    },
+    rating: 4.7,
+    reviews: 4900,
+    mustEat: ["Bundelkhand-style thali", "Dal Bafla", "Poha", "Local river-fish dishes (a genuine Betwa-side specialty)", "Rabri"],
+    packingTips: ["Comfortable walking/cycling shoes", "Sun hat and sunscreen", "Modest clothing for temples", "Camera — genuinely one of MP's most photogenic towns", "Insect repellent near the riverbank"],
+  },
+
   // ── KARNATAKA ─────────────────────────────────────────────────────────────
   {
     id: "hampi",

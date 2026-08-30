@@ -2496,3 +2496,23 @@ SAFETY_OVERRIDES["ujjain"] = {
     sourceNote: "District Hospital confirmed directly on ujjain.nic.in, Ujjain district's own official government portal; R.D. Gardi Medical College confirmed via its own Wikipedia entry.",
   },
 };
+
+SAFETY_OVERRIDES["orchha"] = {
+  police: {
+    summary: "Niwari Police Station: 7680232322 (Orchha falls within Niwari district)",
+    details: [
+      "Niwari Police Station — Niwari Main Road, Niwari 472442: 7680232322.",
+      "Women Helpline: 1091 · Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Orchha is one of three tehsils in the relatively new Niwari district (carved out in 2018) — no independently-confirmed dedicated Orchha station number was found, so the district's main Niwari Police Station (confirmed via niwari.mppolice.gov.in, the district police's own official site) is given.",
+  },
+  medical: {
+    summary: "Community Health Centre (CHC) Niwari — the local government facility",
+    details: [
+      "Community Health Centre, Niwari — confirmed listed on niwari.nic.in, Niwari district's own official government portal.",
+      "As a small heritage town, Orchha itself has no major hospital of its own — Jhansi (16 km, in neighbouring Uttar Pradesh) has larger hospitals for anything serious.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "CHC Niwari's existence confirmed directly on niwari.nic.in — Niwari district's own official government portal — though no direct phone number was independently found, so none is stated here rather than guessed.",
+  },
+};
