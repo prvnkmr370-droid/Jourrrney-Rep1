@@ -2027,3 +2027,24 @@ SAFETY_OVERRIDES["jodhpur"] = {
     sourceNote: "MG Hospital's address and phone cross-confirmed across independent mapped listings (Yappe, Bharatibiz); MDM Hospital confirmed as a genuine Government of Rajasthan hospital via its own Wikipedia entry.",
   },
 };
+
+SAFETY_OVERRIDES["pushkar"] = {
+  police: {
+    summary: "Pushkar Police Station (Badi Basti) · Ajmer Police Control Room: 0145-2629166",
+    details: [
+      "Pushkar Police Station — Ganaheda, Badi Basti, Pushkar, Ajmer district 305022 — the local station under Ajmer district police's Dargah Circle: 0145-2772046.",
+      "Ajmer Police Control Room (covers the wider district including Pushkar): 0145-2629166 — confirmed via search results citing the Ajmer Police's own official site (ajmerpolice.rajasthan.gov.in).",
+      "Police: 100 · National Emergency: 112",
+    ],
+    sourceNote: "Pushkar Police Station's number is from a police-directory listing site (policestationinfo.in), not a .gov.in domain directly — flagged as slightly lower-confidence than a direct government source. The Ajmer Control Room number is corroborated as coming from ajmerpolice.rajasthan.gov.in.",
+  },
+  medical: {
+    summary: "Pushkar Community Health Centre (local) · JLN Hospital, Ajmer (major government hospital, 14 km)",
+    details: [
+      "Pushkar Community Health Centre — Badi Basti, Pushkar, near the Marwad bus stand — the town's own government health facility: 9413181141.",
+      "JLN (Jawaharlal Nehru) Hospital — JLN Medical College Circle, Kala Bagh, Ajmer (roughly 14 km away) — a major government hospital and medical college for anything beyond what the small local centre can handle.",
+      "Ambulance: 108",
+    ],
+    sourceNote: "As a small pilgrimage town, Pushkar itself has only a Community Health Centre, not a full hospital — confirmed via a government-hospital empanelment listing; JLN Hospital in nearby Ajmer is the real referral point for anything serious, confirmed as a genuine government medical college hospital via multiple independent directory listings.",
+  },
+};
