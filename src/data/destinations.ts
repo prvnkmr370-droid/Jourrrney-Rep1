@@ -16317,6 +16317,77 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple towns", "Layered clothing — Kutch nights get cold, especially Nov–Feb", "Comfortable walking shoes for heritage walks", "Note: Gujarat is a dry state — no alcohol without a permit"],
   },
 
+  // ===== Gujarat — Stage 2: Ahmedabad city hub. Scraped from
+  // gujarattourism.com/central-zone/ahmedabad.html plus corroborating
+  // web search for the UNESCO designation and city history.
+  {
+    id: "ahmedabad",
+    name: "Ahmedabad",
+    state: "Gujarat",
+    tagline: "India's First UNESCO World Heritage City",
+    description: "Ahmedabad, founded in 1411 by Sultan Ahmad Shah I on the Sabarmati river's east bank, was genuinely designated India's first UNESCO World Heritage City in July 2017 — its 600-year-old walled old city a real blend of Sultanate-era mosques and tombs with later Hindu and Jain temples, threaded through distinctive residential \"pols\" (gated street clusters) with carved wooden havelis. It's also, genuinely, the city Mahatma Gandhi chose for his Sabarmati Ashram, from where he launched the 1930 Salt March, and today pairs that history with a modern riverfront and a buzzing night food market at Manek Chowk.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Jama_Masjid%2C_Ahmedabad_01.jpg/1280px-Jama_Masjid%2C_Ahmedabad_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sabarmati_Riverfront_in_evening.jpg/1280px-Sabarmati_Riverfront_in_evening.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Toy_train_at_Kankaria_Lake%2C_Ahmedabad%2C_Gujarat%2C_India_3.jpg/1280px-Toy_train_at_Kankaria_Lake%2C_Ahmedabad%2C_Gujarat%2C_India_3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Statue_of_Gandhi_at_Sabarmati_Ashram.jpg/1280px-Statue_of_Gandhi_at_Sabarmati_Ashram.jpg",
+    ],
+    imageCredit: "Photos: Bernard Gagnon, Harshil169, Gannu03, Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0/4.0.",
+    category: ["Heritage", "UNESCO", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "2–3 days",
+    highlights: [{ name: "Sabarmati Ashram" }, { name: "Sidi Saiyyed Mosque's carved stone jali" }, { name: "Jama Masjid (built 1424)" }, { name: "Kankaria Lake" }, { name: "Manek Chowk night market" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~1h20m direct", fromMumbai: "~1h05m direct", fromBangalore: "~2h direct", duration: "1–2h", costRange: "₹2,500–₹9,000", tips: "Sardar Vallabhbhai Patel International Airport (AMD) is Gujarat's main gateway, well-connected domestically and to several international routes." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani/Duronto — ~12–14h", fromMumbai: "~7–8h", fromBangalore: "~24h+ (limited direct options)", duration: "7–24h", costRange: "₹400–₹2,500", tips: "Ahmedabad Junction is a major stop on the Delhi–Mumbai western line." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH48 — ~950km, ~14–16h", fromMumbai: "NH48 — ~530km, ~8–9h", fromBangalore: "~1,500km, ~22h+", duration: "8–16h from Delhi/Mumbai", costRange: "₹3,000–₹7,000", tips: "NH48 from Mumbai is the most practical self-drive route." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels near Ellis Bridge and Lal Darwaja"], description: "Simple, well-located budget hotels near the old city." },
+      { type: "Mid-Range", priceRange: "₹2,500–₹6,000/night", examples: ["Lemon Tree Ahmedabad", "Novotel Ahmedabad"], description: "Comfortable business-hotel chains near SG Highway and the riverfront." },
+      { type: "Luxury/Heritage", priceRange: "₹6,000–₹18,000/night", examples: ["The House of MG (restored haveli)", "Hyatt Ahmedabad"], description: "The House of MG is a genuinely restored heritage haveli in the old city itself — a distinctive way to stay inside the UNESCO zone." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Widely available and reliable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Best for navigating the old city's narrow pol lanes", available: true },
+      { mode: "AMTS/BRTS Buses", cost: "₹10–₹30", notes: "Ahmedabad's real BRTS (Janmarg) is one of India's earliest bus rapid transit systems", available: true },
+      { mode: "Ahmedabad Metro", cost: "₹10–₹50", notes: "Genuinely operational since 2019, covering key city corridors", available: true },
+      { mode: "Dekho Amdavad Hop-On Hop-Off Bus", cost: "₹100–₹200", notes: "The city's own official heritage-circuit tour bus", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: false },
+      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: false },
+      { name: "Lothal (Indus Valley site)", distance: "~85 km", type: "Archaeological", isHidden: true },
+      { name: "Nalsarovar Bird Sanctuary", distance: "~65 km", type: "Wildlife", isHidden: true },
+      { name: "Rani ki Vav, Patan", distance: "~130 km", type: "UNESCO Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 600, food: 400, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1300, transport: 900, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandhi Heritage & Old City", morning: "Sabarmati Ashram — Gandhi's residence, museum, and the riverside where he launched the 1930 Salt March.", afternoon: "Old city heritage walk — Jama Masjid, Sidi Saiyyed Mosque's carved jali windows, the pols.", evening: "Manek Chowk night food market.", stay: "The House of MG or a hotel near the old city", meals: "Gujarati thali (₹300), Manek Chowk street food (₹200)", tips: "The official heritage walk starts early morning from near Swaminarayan Temple, Kalupur — book ahead through the municipal heritage office." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-developed tourist city with an active heritage-tourism infrastructure", "Metro and BRTS provide safe, monitored transit options"],
+      precautions: ["The old city's narrow pol lanes can be confusing after dark — stick to the main heritage-walk route", "Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["The official heritage walk and Dekho Amdavad bus tour are both comfortable, guided ways to see the old city solo"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["The riverfront", "Old city heritage-walk route", "Kankaria Lake area"],
+      avoidAreas: ["Unfamiliar pol lanes alone after dark"],
+    },
+    rating: 4.5,
+    reviews: 6800,
+    mustEat: ["Gujarati Thali", "Manek Chowk street food (pav bhaji, kulfi)", "Khaman Dhokla", "Fafda-Jalebi (Sunday morning tradition)"],
+    packingTips: ["Comfortable walking shoes for the old city", "Modest clothing for temples/mosques", "Sun protection — summers are very hot"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
