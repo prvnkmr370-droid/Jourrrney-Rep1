@@ -3622,3 +3622,61 @@ SAFETY_OVERRIDES["the-lairai-mandir"] = {
   police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
   medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
 };
+
+// Goa churches — police stations confirmed via direct fetch of the
+// official Goa Police citizen portal (added Old Goa and Margao Town
+// stations to the set already confirmed); hospitals are the relevant
+// district hospital sourced via search referencing the official
+// Directorate of Health Services Goa site.
+SAFETY_OVERRIDES["basilica-of-bom-jesus"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Also reachable: Goa Medical College & Hospital, Bambolim: 0832-2458700.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site and GMC's own contact page." },
+};
+SAFETY_OVERRIDES["se-cathedral-goa"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page — genuinely close to Old Goa." },
+};
+SAFETY_OVERRIDES["church-of-st-francis-of-assisi"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["church-of-our-lady-of-rosary"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["chapel-of-our-lady-of-the-mount"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["nunnery-of-santa-monica"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["ruins-of-the-church-of-st-augustine"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["church-of-st-ana"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["st-cajetans-church"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["our-lady-of-immaculate-conception"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482 (Ext-311).", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["church-of-mae-de-deus-saligao"] = {
+  police: { summary: "Calangute Police Station: 0832-2278284", details: ["Calangute Police Station — CHOGM Road, Calangute: 0832-2278284.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["reis-magos-church-in-verem"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482 (Ext-311).", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["rachol-seminary"] = {
+  police: { summary: "Margao Town Police Station: 0832-2705095", details: ["Margao Town Police Station — Margao: 0832-2705095.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
