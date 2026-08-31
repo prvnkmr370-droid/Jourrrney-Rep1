@@ -15406,6 +15406,112 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
+  // ===== Goa mosques — Stage 6 of the goa-tourism.com build (Beaches,
+  // Temples, Churches, Water Bodies, Museums complete). Scraped from
+  // goa-tourism.com/mosque/, which lists both of Goa's featured
+  // mosques.
+  {
+    id: "jama-masjid-sanguem",
+    name: "Jama Masjid, Sanguem",
+    state: "Goa",
+    hidden: true,
+    tagline: "One of Goa's Oldest Mosques, Rebuilt With Four Minarets",
+    description: "The Jama Masjid in Sanguem, about 26 km from Margao, is genuinely one of Goa's oldest mosques and a well-known place of worship — originally built in the last century and completely rebuilt in 1959, its current structure notable for harmonious, understated proportions and four minarets.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/Jama-masjid-sanguem.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/Jama-masjid-sanguem.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round; especially around Id-ul-Fitr and Id-ul-Zuha",
+    duration: "30–45 minutes",
+    highlights: [{ name: "One of Goa's oldest mosques" }, { name: "Rebuilt in 1959, four minarets" }, { name: "Active place of worship near Sanguem" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Margao/Sanguem — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~26km / ~45min from Margao", costRange: "₹400–₹900 (cab from Margao)", tips: "Dress modestly and check prayer timings before visiting, as it remains an active mosque." },
+    ],
+    accommodation: [
+      { type: "Base in Margao/Sanguem", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in Margao town", "Guesthouses near Sanguem"], description: "A short visit — Margao is the natural South Goa base, or combine with Netravali/Dudhsagar." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹400–₹900 from Margao", notes: "The practical way to reach Sanguem", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Netravali Lake (Bubble Lake)", distance: "~15 km", type: "Nature", isHidden: true, id: "netravali-lake" },
+      { name: "Dudhsagar Waterfalls", distance: "~20 km", type: "Waterfall", isHidden: false, id: "dudhsagar-waterfalls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 600, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5200, food: 1000, transport: 700, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Heritage Mosque Visit", morning: "Visit the Jama Masjid.", afternoon: "Continue to Netravali Lake or Dudhsagar Waterfalls nearby.", evening: "Return to Margao.", stay: "Margao/Sanguem base", meals: "Local lunch in Sanguem (₹200)", tips: "Genuinely worth pairing with a Sanguem-area nature stop, given the shared route." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An active, community-visited place of worship"],
+      precautions: ["Dress modestly", "Check prayer timings before visiting"],
+      soloTips: ["Visit during daylight hours; a respectful, quiet solo visit is comfortable"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Sanguem Police Station", number: "0832-2604233" }, { label: "Police", number: "100" }],
+      safeZones: ["The mosque grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 300,
+    mustEat: ["Local lunch in Sanguem"],
+    packingTips: ["Modest clothing", "Comfortable footwear"],
+  },
+
+  {
+    id: "safa-masjid",
+    name: "Safa Masjid (Shahouri Masjid), Ponda",
+    state: "Goa",
+    hidden: true,
+    tagline: "Goa's Biggest and Most Famous Mosque, Built in 1560",
+    description: "Safa Masjid, also known as Shahouri Masjid, in Ponda, was genuinely built in 1560 by Ibrahim Adilshah of Bijapur — the biggest and most famous mosque in Goa, its complex including a real stone-masonry tank with small mehrab-patterned chambers beside the main structure. Id-ul-Fitr and Id-ul-Zuha are celebrated here with real community festivity.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/Safa-Masjid.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/Safa-Masjid.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round; especially around Id-ul-Fitr and Id-ul-Zuha",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Goa's biggest and most famous mosque" }, { name: "Built in 1560 by Ibrahim Adilshah of Bijapur" }, { name: "Masonry tank with mehrab-design chambers" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "In Ponda town", costRange: "₹200–₹500 (auto/cab from Panaji or Margao)", tips: "Dress modestly and check prayer timings before visiting, as it remains an active mosque." },
+    ],
+    accommodation: [
+      { type: "Base in Ponda/Panaji", priceRange: "₹1,200–₹6,000/night (estimate)", examples: ["Hotels in Ponda town", "Panaji hotels for a day trip"], description: "Easily combined with Ponda's Hindu temple circuit, given the shared taluka." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Panaji or Margao", notes: "The practical way to reach Ponda", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shanta Durga Temple", distance: "~5 km", type: "Temple", isHidden: false, id: "shanta-durga-temple" },
+      { name: "Mahalsa Temple, Mardol", distance: "~6 km", type: "Temple", isHidden: false, id: "mahalsa-temple-mardol" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5200, food: 1000, transport: 600, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ponda Heritage Circuit", morning: "Visit Safa Masjid.", afternoon: "Continue to Shanta Durga and Mahalsa temples nearby.", evening: "Return to Panaji or Margao.", stay: "Ponda/Panaji base", meals: "Local lunch in Ponda (₹200)", tips: "A genuinely rich half-day circuit spanning both of Ponda's major religious heritage sites." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An active, community-visited place of worship, part of the well-touristed Ponda circuit"],
+      precautions: ["Dress modestly", "Check prayer timings before visiting"],
+      soloTips: ["Visit during daylight hours; a respectful, quiet solo visit is comfortable"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Ponda Police Station", number: "0832-2313101" }, { label: "Police", number: "100" }],
+      safeZones: ["The mosque grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 500,
+    mustEat: ["Local lunch in Ponda"],
+    packingTips: ["Modest clothing", "Comfortable footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
