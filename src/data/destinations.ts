@@ -15099,6 +15099,313 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable footwear for the granite steps", "Modest clothing given the site's religious significance"],
   },
 
+  // ===== Goa museums — Stage 5 of the goa-tourism.com build (Beaches,
+  // Temples, Churches, Water Bodies complete). Scraped from
+  // goa-tourism.com/museum/, all 6 listed. Same image-sourcing
+  // approach: each museum's own real photo, hosted on goa-tourism.com,
+  // used under that site's Copyright Policy (reproduction permitted
+  // with attribution).
+  {
+    id: "ancestral-goa",
+    name: "Ancestral Goa, Loutolim",
+    state: "Goa",
+    hidden: true,
+    tagline: "A Miniature Village Recreating Goa a Century Ago",
+    description: "Ancestral Goa, in Loutolim (about 8 km from Margao), is a genuine miniature-village theme park recreating what a Goan village looked like roughly a hundred years ago — real dioramas of traditional salt pans, coastal fishing and coconut-husking trades, and a statue of Lord Parashurama marking the legend of Goa's own creation. It's paired with the adjoining Bigfoot Museum, and open daily 9am–6pm.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-ancestral-goa.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-ancestral-goa.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Heritage", "Museum"],
+    bestSeason: "Year-round; open daily 9am–6pm",
+    duration: "1–2 hours",
+    highlights: [{ name: "Miniature recreated Goan village" }, { name: "Traditional salt-pan & coastal-trade dioramas" }, { name: "Adjoining Bigfoot Museum" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Margao — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~8 km / ~15min from Margao", costRange: "₹200–₹500 (cab from Margao)", tips: "An easy, genuinely family-friendly half-day out from Margao." },
+    ],
+    accommodation: [
+      { type: "Base in Margao", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels in Margao town"], description: "A short visit — Margao is the natural South Goa base." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Margao", notes: "The practical way to reach Loutolim", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Margao town", distance: "~8 km", type: "Town", isHidden: true },
+      { name: "Rachol Seminary", distance: "~5 km", type: "Church", isHidden: false, id: "rachol-seminary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2100, food: 600, transport: 500, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5300, food: 1100, transport: 700, activities: 1400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Village Museum Visit", morning: "Walk through the miniature recreated village.", afternoon: "Visit the adjoining Bigfoot Museum.", evening: "Return to Margao.", stay: "Margao base", meals: "Local lunch nearby (₹200)", tips: "Genuinely worth combining with Rachol Seminary, a short drive away." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A family-oriented, well-visited theme park with regular daytime visitor traffic"],
+      precautions: ["Standard museum/theme-park visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Margao Town Police Station", number: "0832-2705095" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1800,
+    mustEat: ["Local lunch in Margao"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "archaeological-museum-of-goa",
+    name: "Archaeological Museum of Goa",
+    state: "Goa",
+    hidden: true,
+    tagline: "Eight Galleries of Portuguese-Era Artefacts Behind the St. Francis of Assisi Church",
+    description: "The Archaeological Museum of Goa, in Old Goa behind the Church of St. Francis of Assisi, was established by the Archaeological Survey of India in 1964 and expanded in 1982 — eight real galleries spanning prehistoric artefacts through the Portuguese colonial era, including sculptures, viceroy portraits, and religious objects. It's open Saturday–Thursday, 10am–5pm, closed Fridays.",
+    image: "https://goa-tourism.com/wp-content/uploads/2022/08/banner-museum-archaeological.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2022/08/banner-museum-archaeological.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Heritage", "Museum"],
+    bestSeason: "Year-round; open Saturday–Thursday 10am–5pm, closed Fridays",
+    duration: "1 hour",
+    highlights: [{ name: "8 galleries, established 1964" }, { name: "Portuguese-era viceroy portraits" }, { name: "Behind Church of St. Francis of Assisi" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Check the Friday closure before planning your Old Goa itinerary around it." },
+    ],
+    accommodation: [
+      { type: "Base in Panaji", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Hotels across Panaji city"], description: "Part of the Old Goa half-day circuit — stay in Panaji." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Church of St. Francis of Assisi", distance: "Adjoining", type: "Church", isHidden: false, id: "church-of-st-francis-of-assisi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2100, food: 600, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5500, food: 1000, transport: 600, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Museum Visit", morning: "Explore the museum's 8 galleries.", afternoon: "Continue to the Basilica of Bom Jesus and other Old Goa churches.", evening: "Return to Panaji.", stay: "Panaji base", meals: "Local lunch nearby (₹200)", tips: "A genuinely worthwhile add-on to the adjoining church, not a separate trip." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Part of the well-visited Old Goa heritage complex"],
+      precautions: ["Standard museum-visiting etiquette", "Closed on Fridays — check before visiting"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Old Goa Police Station", number: "0832-2285301" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and Old Goa complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1100,
+    mustEat: ["Local snacks near Old Goa"],
+    packingTips: ["Comfortable walking shoes", "Camera (check photography rules inside)"],
+  },
+
+  {
+    id: "museum-of-christian-art",
+    name: "Museum of Christian Art, Old Goa",
+    state: "Goa",
+    hidden: true,
+    tagline: "Asia's First Museum of Its Kind, Inside the Old Nunnery of Santa Monica",
+    description: "The Museum of Christian Art, housed within the Convent of Santa Monica in Old Goa, was founded in 1994 as genuinely Asia's first museum of its kind — real embroidered vestments, precious-metal chalices and sacred vessels, ivory carvings, and paintings, largely the work of Hindu artisans commissioned during Portuguese colonial rule, a real and distinctive cross-cultural thread in Goa's religious art. Open daily 9:30am–5pm; photography isn't permitted inside.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-museum-christian-art.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-museum-christian-art.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Heritage", "Museum"],
+    bestSeason: "Year-round; open daily 9:30am–5pm",
+    duration: "1 hour",
+    highlights: [{ name: "Asia's first museum of its kind (1994)" }, { name: "Indo-Portuguese Christian art, largely Hindu-artisan-made" }, { name: "Inside the historic Santa Monica convent" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "No photography permitted inside — plan to simply take it in rather than shoot it." },
+    ],
+    accommodation: [
+      { type: "Base in Panaji", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Hotels across Panaji city"], description: "Part of the Old Goa half-day circuit — stay in Panaji." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nunnery of Santa Monica", distance: "Same building", type: "Church", isHidden: false, id: "nunnery-of-santa-monica" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2100, food: 600, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5500, food: 1000, transport: 600, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Museum Visit", morning: "Explore the museum's Indo-Portuguese Christian art collection.", afternoon: "Continue to other Old Goa heritage stops.", evening: "Return to Panaji.", stay: "Panaji base", meals: "Local lunch nearby (₹200)", tips: "The genuine cross-cultural story — Hindu artisans making Christian religious art — is worth reading up on before visiting." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Part of the well-visited Old Goa heritage complex"],
+      precautions: ["Standard museum-visiting etiquette; photography restrictions apply"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Old Goa Police Station", number: "0832-2285301" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and Old Goa complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1300,
+    mustEat: ["Local snacks near Old Goa"],
+    packingTips: ["Comfortable walking shoes", "Leave the camera in your bag — no photography inside"],
+  },
+
+  {
+    id: "naval-aviation-museum",
+    name: "Naval Aviation Museum, Bogmalo",
+    state: "Goa",
+    hidden: true,
+    tagline: "The Only Naval Aviation Museum in Asia",
+    description: "The Naval Aviation Museum, on the Vasco-Bogmalo road about 6 km from Vasco da Gama, is genuinely the only naval aviation museum in all of Asia — inaugurated in 1998, with 13 real retired aircraft in its outdoor gallery and interior galleries deliberately designed to resemble the aircraft carrier INS Viraat. Open Tuesday–Sunday, 9:30am–5:30pm, closed on national holidays.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-naval-aviation-museum.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-naval-aviation-museum.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Museum", "Heritage"],
+    bestSeason: "Year-round; open Tue–Sun 9:30am–5:30pm, closed national holidays",
+    duration: "1–2 hours",
+    highlights: [{ name: "Only naval aviation museum in Asia" }, { name: "13 real retired aircraft on outdoor display" }, { name: "Interior galleries modelled on INS Viraat" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vasco — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~6km / ~15min from Vasco da Gama", costRange: "₹200–₹500 (cab from Vasco)", tips: "Easy to combine with Bogmalo Beach on the same trip." },
+    ],
+    accommodation: [
+      { type: "Base in Vasco/Bogmalo", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels in Vasco town or Bogmalo resorts"], description: "A short visit — either nearby base works." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Vasco", notes: "The practical way to reach the museum", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bogmalo Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "bogmalo" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2100, food: 600, transport: 500, activities: 800 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8600, accommodation: 5500, food: 1100, transport: 800, activities: 1600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Museum & Beach", morning: "Explore the aircraft gallery and INS Viraat-style interior.", afternoon: "Continue to Bogmalo Beach nearby.", evening: "Sunset at Bogmalo.", stay: "Vasco/Bogmalo base", meals: "Local lunch nearby (₹200)", tips: "A genuinely distinctive stop for anyone interested in military/naval history — there's nothing else quite like it in the country." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, actively managed museum with steady visitor traffic", "Close to the established Bogmalo beach area"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the steady tourist presence"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Vasco Police Station", number: "0832-2512304" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2200,
+    mustEat: ["Local lunch in Vasco or beachside at Bogmalo"],
+    packingTips: ["Comfortable walking shoes", "Camera for the outdoor aircraft gallery"],
+  },
+
+  {
+    id: "museum-of-goa",
+    name: "Museum of Goa (MOG), Pilerne",
+    state: "Goa",
+    hidden: true,
+    tagline: "Goa's Largest Contemporary Art Space",
+    description: "The Museum of Goa (MOG), in the Pilerne Industrial Estate near Calangute, opened on 6 November 2015 as genuinely the largest contemporary art space in Goa — real galleries, a sculpture garden, a café, a museum store, and an auditorium, in a building designed by architect Dean D'Cruz. It hosts real exhibitions on Goa's history alongside music concerts, art classes, and workshops.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-museum-of-goa.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-museum-of-goa.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Museum", "Heritage"],
+    bestSeason: "Year-round; check current hours and any workshop/concert schedule",
+    duration: "1–2 hours",
+    highlights: [{ name: "Goa's largest contemporary art space" }, { name: "Sculpture garden & auditorium" }, { name: "Real workshops, concerts & art classes" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Calangute — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Calangute", costRange: "₹150–₹400 (auto/cab)", tips: "Check the current event/workshop calendar before visiting — it's a genuinely active cultural venue, not just a static gallery." },
+    ],
+    accommodation: [
+      { type: "Base in North Goa", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Resorts/hotels around Calangute or Candolim"], description: "A short visit — combine with a North Goa beach stay." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400 (taxi)", notes: "Standard way to get around this part of North Goa", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baga & Calangute", distance: "~5 km", type: "Beach", isHidden: false, id: "baga-calangute" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2300, food: 600, transport: 500, activities: 900 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5600, food: 1100, transport: 700, activities: 1700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Contemporary Art Visit", morning: "Explore the galleries and sculpture garden.", afternoon: "Coffee at the museum café, then continue to Baga & Calangute.", evening: "Sunset at the beach.", stay: "North Goa beach base", meals: "Museum café, local Goan fare (₹300–₹600)", tips: "A genuinely different pace and subject matter from Goa's more common heritage-church stops." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-run, actively managed contemporary art venue with steady daytime visitor traffic"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Calangute Police Station", number: "0832-2278284" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1400,
+    mustEat: ["Museum café", "Local Goan fare nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera for the sculpture garden"],
+  },
+
+  {
+    id: "dharohar-national-museum-of-customs-gst",
+    name: "Dharohar: National Museum of Customs & GST, Panaji",
+    state: "Goa",
+    hidden: true,
+    tagline: "India's First Customs Museum, in a 400-Year-Old Riverside Building",
+    description: "Dharohar, opposite the Captain of Ports building on Panaji's Mandovi riverfront, is genuinely India's first museum dedicated to customs and excise history — housed in a real 400-year-old two-storey building once known as the Alfandega (customs house) under Portuguese rule. It traces the evolution of Indian Customs from ancient times through to GST, covering the department's roles in revenue, heritage protection, and combating illicit trade.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/2_contentimg_Dandi_March_Banner.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/2_contentimg_Dandi_March_Banner.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Museum", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "1 hour",
+    highlights: [{ name: "India's first customs/excise museum" }, { name: "400-year-old former Alfandega (customs house) building" }, { name: "Mandovi riverfront setting" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji — long haul", fromMumbai: "~10–12h to Panaji", fromBangalore: "Long haul", duration: "In central Panaji", costRange: "₹50–₹200 (auto within town)", tips: "Genuinely walkable from most central Panaji hotels, right on the riverfront." },
+    ],
+    accommodation: [
+      { type: "Base in Panaji", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Hotels across Panaji city"], description: "A short visit within Panaji itself." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within walkable central Panaji, on the riverfront", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Our Lady of Immaculate Conception Church", distance: "~1 km", type: "Church", isHidden: false, id: "our-lady-of-immaculate-conception" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2100, food: 600, transport: 350, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5500, food: 1000, transport: 500, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Riverfront Museum Visit", morning: "Explore the museum's customs-history exhibits.", afternoon: "Walk the Mandovi riverfront to the Immaculate Conception Church nearby.", evening: "Sunset along the river.", stay: "Panaji base", meals: "Local Goan-Portuguese fare in Panaji (₹300–₹500)", tips: "The building's own 400-year history as the Portuguese-era Alfandega is genuinely as interesting as the exhibits inside." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A central Panaji riverfront museum with steady daytime visitor traffic"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given its central Panaji location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Panaji Police Station", number: "0832-2428482" }, { label: "Police", number: "100" }],
+      safeZones: ["Central Panaji, including the museum grounds"],
+      avoidAreas: ["None specific — standard town-safety caution after dark applies"],
+    },
+    rating: 4.4,
+    reviews: 600,
+    mustEat: ["Local Goan-Portuguese fare in Panaji"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

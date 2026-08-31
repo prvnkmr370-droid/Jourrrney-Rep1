@@ -3709,3 +3709,27 @@ SAFETY_OVERRIDES["netravali-lake"] = {
   police: { summary: "Sanguem Police Station: 0832-2604233", details: ["Sanguem Police Station — Sanguem: 0832-2604233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
   medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
 };
+SAFETY_OVERRIDES["ancestral-goa"] = {
+  police: { summary: "Margao Town Police Station: 0832-2705095", details: ["Margao Town Police Station — Margao: 0832-2705095.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["archaeological-museum-of-goa"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["museum-of-christian-art"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["naval-aviation-museum"] = {
+  police: { summary: "Vasco Police Station: 0832-2512304", details: ["Vasco Police Station — Vasco da Gama: 0832-2512304.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["museum-of-goa"] = {
+  police: { summary: "Calangute Police Station: 0832-2278284", details: ["Calangute Police Station — Calangute: 0832-2278284.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["dharohar-national-museum-of-customs-gst"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482, Ext-311.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
