@@ -15512,6 +15512,265 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable footwear"],
   },
 
+  // ===== Goa wildlife sanctuaries — Stage 7 of the goa-tourism.com
+  // build (Beaches, Temples, Churches, Water Bodies, Museums,
+  // Mosques complete). Scraped from goa-tourism.com's wildlife-safari
+  // overview page plus each sanctuary's own individual page for
+  // facts and images. All 5 of Goa's real wildlife sanctuaries.
+  {
+    id: "dr-salim-ali-bird-sanctuary",
+    name: "Dr Salim Ali Bird Sanctuary, Chorao Island",
+    state: "Goa",
+    hidden: true,
+    tagline: "Mangrove Canals Named for India's Pre-eminent Ornithologist",
+    description: "The Dr Salim Ali Bird Sanctuary, on Chorao Island in the Mandovi river, is named for India's pre-eminent ornithologist and is genuinely one of Goa's smallest protected areas at just 1.8 sq km — reached via a real ferry from the Ribandar wharf, about 15 minutes from Panaji. Visitors are paddled through narrow mangrove canals in a dugout canoe, with real sightings of egrets, purple herons, kingfishers, eagles, kites and, from the watch tower, occasionally marsh crocodiles, jackals and otters. Movement is restricted to boats at high tide, when the canal system floods.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-salim-ali-sanctury-min.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-salim-ali-sanctury-min.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "October – March (open year-round)",
+    duration: "2–3 hours",
+    highlights: [{ name: "Dugout-canoe mangrove canal tour" }, { name: "Named for ornithologist Dr Salim Ali" }, { name: "Watch tower birdwatching" }],
+    transport: [
+      { mode: "Road + Ferry", icon: "🚗⛴️", fromDelhi: "Via Panaji — long haul", fromMumbai: "~10–12h to Panaji", fromBangalore: "Long haul", duration: "~15min drive to Ribandar, then ferry", costRange: "₹300–₹800 (guided canoe tour)", tips: "Movement is boat-only at high tide — check tide timing before planning your visit." },
+    ],
+    accommodation: [
+      { type: "Base in Panaji", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Hotels across Panaji city"], description: "A short trip — Panaji is the natural base, just a ferry ride away." },
+    ],
+    localTransport: [
+      { mode: "Ferry + Canoe", cost: "₹300–₹800 for a guided tour", notes: "Ribandar ferry wharf to Chorao Island, then a local canoe guide", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Old Goa churches", distance: "~8 km", type: "Church", isHidden: false, id: "old-goa" },
+      { name: "Panaji city", distance: "~10 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 300, transport: 300, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2100, food: 600, transport: 500, activities: 800 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1100, transport: 700, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mangrove Canoe Tour", morning: "Ferry to Chorao Island and canoe through the mangrove canals.", afternoon: "Climb the watch tower for birdwatching.", evening: "Return to Panaji.", stay: "Panaji base", meals: "Local lunch in Panaji (₹250)", tips: "Genuinely worth combining with a wider Old Goa or Panaji day, since the visit itself only takes a couple of hours." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A guided, ferry-and-canoe visit with a local boatman — not a solo wilderness trek"],
+      precautions: ["Wear a life jacket if offered", "Stick with the guide; don't wander the canal banks alone"],
+      soloTips: ["Comfortable for solo visitors as part of a guided canoe group"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Panaji Police Station", number: "0832-2428482" }, { label: "Police", number: "100" }],
+      safeZones: ["The designated boat/canoe route"],
+      avoidAreas: ["Unguided wandering off the marked canal routes"],
+    },
+    rating: 4.3,
+    reviews: 900,
+    mustEat: ["Local Panaji fare after the tour"],
+    packingTips: ["Mosquito repellent", "Binoculars", "A hat and sun protection"],
+  },
+
+  {
+    id: "bhagwan-mahavir-wildlife-sanctuary",
+    name: "Bhagwan Mahavir Wildlife Sanctuary & Mollem National Park",
+    state: "Goa",
+    hidden: true,
+    tagline: "Goa's Largest Protected Area, Home to Dudhsagar Falls",
+    description: "The Bhagwan Mahavir Wildlife Sanctuary, on Goa's eastern border near Mollem (about 54 km from Panaji and 53 km from Margao), is genuinely the state's largest protected area at 240 sq km, set on the Western Ghats foothills. Originally the Mollem Game Sanctuary, it was declared a wildlife sanctuary in 1969, and its core 107 sq km was further designated Mollem National Park in 1978. It's real habitat for gaur, sambar, leopards, spotted deer, slender lorises, jungle cats, Malayan giant squirrels, pythons and cobras, and contains Dudhsagar Waterfalls, Devil's Canyon, and the Tambdi Surla Shiva temple within its bounds. Wildlife sightings aren't guaranteed on a single visit.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/mahavir-sanctuary-banner-min.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/mahavir-sanctuary-banner-min.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Wildlife", "Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "Half day – full day",
+    highlights: [{ name: "Goa's largest sanctuary at 240 sq km" }, { name: "Contains Dudhsagar Waterfalls & Tambdi Surla temple" }, { name: "Real gaur, leopard & python habitat" }],
+    transport: [
+      { mode: "Road + Rail", icon: "🚗🚆", fromDelhi: "Via Margao/Kulem — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~54km / ~1.5h from Panaji", costRange: "₹800–₹2,000 (cab for the day)", tips: "Access by both road and rail (Castle Rock/Kulem stations); hiking trails run through the sanctuary." },
+    ],
+    accommodation: [
+      { type: "Base in Mollem/Kulem", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Forest rest houses", "Guesthouses near Mollem"], description: "A full-day or overnight trip given the sanctuary's size — Mollem itself is the natural base." },
+    ],
+    localTransport: [
+      { mode: "Jeep Safari / Taxi", cost: "₹800–₹2,000", notes: "For internal sanctuary trails and Dudhsagar access", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dudhsagar Waterfalls", distance: "Within sanctuary", type: "Waterfall", isHidden: false, id: "dudhsagar-waterfalls" },
+      { name: "Shri Mahadev Temple, Tambdi Surla", distance: "Within sanctuary", type: "Temple", isHidden: false, id: "mahadev-temple-tambdi-surla" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 700, food: 350, transport: 500, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4300, accommodation: 2200, food: 700, transport: 800, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 5800, food: 1200, transport: 1200, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sanctuary & Waterfall", morning: "Jeep safari through the sanctuary trails.", afternoon: "Visit Dudhsagar Waterfalls and Tambdi Surla temple within the sanctuary.", evening: "Return to Mollem/Kulem.", stay: "Mollem base", meals: "Local lunch near Mollem (₹250)", tips: "Genuinely worth a full day given the sanctuary's size and the Dudhsagar detour alone." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-established, forest-department-managed sanctuary with regular tourist jeep traffic"],
+      precautions: ["Stay with the guide/jeep group on marked trails", "Carry sufficient water and inform someone of your plan given the sanctuary's remote size"],
+      soloTips: ["Join a guided jeep safari rather than trekking alone through this large a protected area"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Sanguem Police Station", number: "0832-2604233" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and the Dudhsagar/Tambdi Surla visitor areas"],
+      avoidAreas: ["Unmarked deep-forest areas without a guide"],
+    },
+    rating: 4.4,
+    reviews: 1600,
+    mustEat: ["Packed lunch or local food near Mollem"],
+    packingTips: ["Trekking shoes", "Insect repellent", "Sufficient water", "A light rain jacket in monsoon"],
+  },
+
+  {
+    id: "bondla-wildlife-sanctuary",
+    name: "Bondla Wildlife Sanctuary",
+    state: "Goa",
+    hidden: true,
+    tagline: "Goa's Smallest but Most Family-Friendly Sanctuary",
+    description: "Bondla Wildlife Sanctuary, in Ponda taluka (about 50 km from Panaji and 38 km from Margao), is genuinely the smallest of Goa's sanctuaries at just 8 sq km — and the most popular with families, school groups and eco-tourists, thanks to its manageable size and its mini zoo, deer safari park, botanical gardens, rose garden and Nature Interpretation Centre. Real resident wildlife includes gaur, sambar, panther, jungle cat, leopard, toddy cat and the flying lizard (Draco), alongside Goa's state bird — the Ruby Throated Yellow Bulbul — plus common grey hornbills and golden-backed woodpeckers. Open daily except Monday, 9am–5pm; admission ₹5 for adults, ₹2 for children.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-bondla-wildlife-min.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-bondla-wildlife-min.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Wildlife", "Nature", "Family"],
+    bestSeason: "October – March (open daily except Monday, 9am–5pm)",
+    duration: "2–4 hours",
+    highlights: [{ name: "Mini zoo, deer park & botanical gardens" }, { name: "Goa's state bird: Ruby Throated Yellow Bulbul" }, { name: "Most family-friendly of Goa's sanctuaries" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~38km / ~1h from Margao", costRange: "₹500–₹1,200 (cab for a half day)", tips: "Closed Mondays — plan around that. Admission is just ₹5 for adults." },
+    ],
+    accommodation: [
+      { type: "Base in Ponda/Margao", priceRange: "₹1,200–₹6,000/night (estimate)", examples: ["Hotels in Ponda town", "Margao hotels for a day trip"], description: "A short visit — easily combined with Ponda's temple circuit." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 for a half-day trip", notes: "Standard way to reach Bondla from Margao or Panaji", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shanta Durga Temple", distance: "~12 km", type: "Temple", isHidden: false, id: "shanta-durga-temple" },
+      { name: "Safa Masjid", distance: "~15 km", type: "Mosque", isHidden: false, id: "safa-masjid" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 600, transport: 550, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5300, food: 1000, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Family Sanctuary Visit", morning: "Explore the mini zoo and deer safari park.", afternoon: "Walk the botanical and rose gardens; visit the Nature Interpretation Centre.", evening: "Return to Ponda or Margao.", stay: "Ponda base", meals: "Picnic lunch on-site or local food in Ponda (₹200)", tips: "A genuinely easy, low-effort day out — popular with school picnic groups for good reason." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed, family-oriented park with steady daytime visitor traffic — Goa's most accessible sanctuary"],
+      precautions: ["Standard park-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the steady footfall"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Ponda Police Station", number: "0832-2313101" }, { label: "Police", number: "100" }],
+      safeZones: ["The sanctuary grounds and marked trails"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 2100,
+    mustEat: ["Picnic lunch on-site", "Local food in Ponda"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera"],
+  },
+
+  {
+    id: "cotigao-wildlife-sanctuary",
+    name: "Cotigao Wildlife Sanctuary",
+    state: "Goa",
+    hidden: true,
+    tagline: "Deciduous Forest on the Goa-Karnataka Border, Near Palolem",
+    description: "Cotigao Wildlife Sanctuary, in Canacona taluka along the Goa-Karnataka border, was genuinely set up in 1968 to protect a stretch of woodland with rare old trees — 86 sq km of deciduous forest with perennial streams and undulating terrain, real habitat for wild boar and occasional gaur. It makes a pleasant day trip from Palolem beach. Open 7am–5:30pm daily; admission ₹5, plus ₹25 for cameras. Overnight stays need permission from the Deputy Conservator of Forests in Margao, with cots, mosquito nets, canvas tents and snake-proof campsites available for those who arrange it.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/cotigao-wildlife-sanctuary-banner-min.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/cotigao-wildlife-sanctuary-banner-min.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "October – March (open daily 7am–5:30pm)",
+    duration: "2–4 hours",
+    highlights: [{ name: "Deciduous forest with rare old trees" }, { name: "Set up in 1968 on the Goa-Karnataka border" }, { name: "Easy day trip from Palolem" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Canacona/Palolem — long haul", fromMumbai: "~11–13h to South Goa", fromBangalore: "~7–8h", duration: "~2 km from Poinguinim, ~10km from Palolem", costRange: "₹200–₹600 (auto/cab from Palolem)", tips: "Camera fee is separate (₹25) from entry (₹5). Arrange overnight stays in advance via the Deputy Conservator of Forests, Margao." },
+    ],
+    accommodation: [
+      { type: "Base in Palolem/Canacona", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Palolem beach huts and guesthouses"], description: "Easily combined with a Palolem beach stay, being just a short drive away." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹600 from Palolem", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Palolem Beach", distance: "~10 km", type: "Beach", isHidden: false, id: "palolem" },
+      { name: "Galgibaga Beach", distance: "~8 km", type: "Beach", isHidden: false, id: "galgibaga" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2100, food: 600, transport: 450, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5400, food: 1000, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Forest Walk & Beach", morning: "Walk the sanctuary's forest trails.", afternoon: "Return to Palolem beach.", evening: "Sunset at Palolem.", stay: "Palolem base", meals: "Beach-shack lunch at Palolem (₹300)", tips: "A genuinely easy add-on for anyone already based at Palolem — no separate trip needed." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed forest-department sanctuary close to the well-touristed Palolem area"],
+      precautions: ["Stick to marked trails", "Visit during daylight hours"],
+      soloTips: ["A comfortable solo daytime visit, especially as a short trip from Palolem"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Canacona Police Station", number: "0832-2633357" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked forest trails"],
+      avoidAreas: ["Unmarked forest areas, especially after dark"],
+    },
+    rating: 4.2,
+    reviews: 800,
+    mustEat: ["Beach-shack food back at Palolem"],
+    packingTips: ["Trekking shoes", "Insect repellent", "Water bottle"],
+  },
+
+  {
+    id: "mhadei-wildlife-sanctuary",
+    name: "Mhadei Wildlife Sanctuary, Valpoi",
+    state: "Goa",
+    hidden: true,
+    tagline: "A Newer 208 sq km Sanctuary With Recent Tiger Sightings",
+    description: "Mhadei Wildlife Sanctuary, near Valpoi in northern Goa, was genuinely declared a protected area in 1999 and spans 208 sq km — its formation made Goa the only Indian state to have fully protected the entire stretch of Western Ghats within its own borders. Recent Bengal tiger sightings have been recorded here, and it's a proposed Project Tiger reserve. Guided treks, hikes and overnight stays can be arranged, with rest houses and private resorts nearby; the Mhadei white-water rafting trip runs along the sanctuary's edge from June to October.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-mhadei-wildlife-sanctuary-min.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/banner-mhadei-wildlife-sanctuary-min.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Wildlife", "Nature", "Adventure"],
+    bestSeason: "October – March (rafting season June – October)",
+    duration: "Half day – overnight",
+    highlights: [{ name: "208 sq km, declared 1999" }, { name: "Recent Bengal tiger sightings" }, { name: "Mhadei white-water rafting nearby" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Valpoi — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "Near Valpoi village", costRange: "₹600–₹1,500 (cab for a half day)", tips: "Wildlife sightings, especially tigers, are rare and not guaranteed — visit for the Western Ghats scenery and biodiversity, not a tiger safari." },
+    ],
+    accommodation: [
+      { type: "Base in Valpoi", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Rest houses and private resorts near Valpoi"], description: "An overnight base for treks and the Mhadei rafting trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi / Guided Trek", cost: "₹600–₹1,500", notes: "Arranged locally via rest houses or tour operators", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Valpoi town", distance: "Adjacent", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 800, food: 300, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4100, accommodation: 2200, food: 600, transport: 700, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9200, accommodation: 5700, food: 1100, transport: 1000, activities: 1400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Western Ghats Trek", morning: "Guided trek along the sanctuary's trails.", afternoon: "Mhadei white-water rafting (June–October) or a riverside walk otherwise.", evening: "Return to Valpoi or stay overnight.", stay: "Valpoi rest house or resort", meals: "Local food near Valpoi (₹250)", tips: "A genuinely offbeat, less-touristed sanctuary — arrange guides in advance rather than showing up unplanned." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A real, if less-touristed, Western Ghats sanctuary — best visited with a local guide"],
+      precautions: ["Always trek with a guide given the remote, less-developed terrain", "Inform your accommodation of your planned route and return time"],
+      soloTips: ["Not recommended to trek solo here — arrange a guided group instead"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Valpoi Police Station", number: "0832-2374255" }, { label: "Police", number: "100" }],
+      safeZones: ["Guided trek routes"],
+      avoidAreas: ["Unguided deep-forest trekking, especially given recent tiger presence"],
+    },
+    rating: 4.2,
+    reviews: 400,
+    mustEat: ["Local food near Valpoi"],
+    packingTips: ["Trekking shoes", "Insect repellent", "Layered clothing for cooler Ghats weather"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

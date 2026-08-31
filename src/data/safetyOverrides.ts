@@ -3741,3 +3741,23 @@ SAFETY_OVERRIDES["safa-masjid"] = {
   police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
   medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
 };
+SAFETY_OVERRIDES["dr-salim-ali-bird-sanctuary"] = {
+  police: { summary: "Panaji Police Station: 0832-2428482", details: ["Panaji Police Station — Panaji: 0832-2428482, Ext-311.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["bhagwan-mahavir-wildlife-sanctuary"] = {
+  police: { summary: "Sanguem Police Station: 0832-2604233", details: ["Sanguem Police Station — Sanguem: 0832-2604233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["bondla-wildlife-sanctuary"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["cotigao-wildlife-sanctuary"] = {
+  police: { summary: "Canacona Police Station: 0832-2633357", details: ["Canacona Police Station — Canacona: 0832-2633357.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["mhadei-wildlife-sanctuary"] = {
+  police: { summary: "Valpoi Police Station: 0832-2374255", details: ["Valpoi Police Station — Valpoi: 0832-2374255.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
