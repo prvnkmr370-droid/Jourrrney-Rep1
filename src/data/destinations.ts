@@ -16388,6 +16388,71 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the old city", "Modest clothing for temples/mosques", "Sun protection — summers are very hot"],
   },
 
+  // ===== Gujarat — Stage 3: Vadodara city hub. Scraped from
+  // gujarattourism.com/central-zone/vadodara.html plus corroborating
+  // web search for Laxmi Vilas Palace's real history and scale.
+  {
+    id: "vadodara",
+    name: "Vadodara",
+    state: "Gujarat",
+    tagline: "Home to India's Largest Private Residence, Laxmi Vilas Palace",
+    description: "Vadodara (formerly Baroda) was the capital of the princely Gaekwad dynasty, and its centrepiece, Laxmi Vilas Palace, is genuinely one of the largest private residences in the world — built in 1890 by Maharaja Sayajirao Gaekwad III over 12 years, spanning more than 500 acres (nearly four times Buckingham Palace) with 170 rooms in an Indo-Saracenic style, and still partly home to the Gaekwad family's descendants today. The city rounds out its royal legacy with the sprawling Sayaji Baug gardens (housing a zoo, planetarium, and museum) and the Maharaja Fatehsingh Museum's genuine collection of the family's royal art.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lakshmi_Vilas_Palace-Vadodara.jpg/1280px-Lakshmi_Vilas_Palace-Vadodara.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lakshmi_Vilas_Palace-Vadodara.jpg/1280px-Lakshmi_Vilas_Palace-Vadodara.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lakshmi_Vilas_Palace-Vadodara.jpg/1280px-Lakshmi_Vilas_Palace-Vadodara.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Laxmi_vilas_palace%2C_Vadodara_01.jpg/1280px-Laxmi_vilas_palace%2C_Vadodara_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/SAYAJI_BAUG_FLORA-_FAUNA_VADODARA_06.jpg/1280px-SAYAJI_BAUG_FLORA-_FAUNA_VADODARA_06.jpg",
+    ],
+    imageCredit: "Photos: Snehrashmi, Uncommonactivist85, APIC Photography — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Museum"],
+    bestSeason: "November – February",
+    duration: "1–2 days",
+    highlights: [{ name: "Laxmi Vilas Palace (170 rooms, 500+ acres)" }, { name: "Sayaji Baug gardens, zoo & planetarium" }, { name: "Maharaja Fatehsingh Museum" }, { name: "Kirti Mandir" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~1h40m direct", fromMumbai: "~1h direct", fromBangalore: "~1h50m direct", duration: "1–2h", costRange: "₹2,800–₹9,000", tips: "Vadodara Airport has decent domestic connectivity; it's also the practical gateway for the Statue of Unity, ~90 km away." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani/Duronto — ~14–16h", fromMumbai: "~6–7h", fromBangalore: "~22h+", duration: "6–22h", costRange: "₹400–₹2,500", tips: "Vadodara Junction is a major stop on the Delhi–Mumbai western line, often faster to reach than Ahmedabad from Mumbai." },
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,050km, ~15–17h", fromMumbai: "NH48 — ~420km, ~7h", fromBangalore: "~1,400km, ~20h+", duration: "7–17h", costRange: "₹3,000–₹6,500", tips: "Ahmedabad–Vadodara is a quick ~1.5–2h drive on the expressway, making the two easy to combine." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels near Sayajigunj"], description: "Simple, centrally-located budget options." },
+      { type: "Mid-Range", priceRange: "₹2,500–₹6,000/night", examples: ["Ginger Vadodara", "Welcomhotel Vadodara"], description: "Comfortable business-hotel chains." },
+      { type: "Luxury", priceRange: "₹6,000–₹15,000/night", examples: ["Taj Gateway Vadodara"], description: "Premium hotels near the palace and business districts." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Widely available", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "City Bus (VMSS)", cost: "₹10–₹30", notes: "Connects major city points", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Statue of Unity, Kevadia", distance: "~90 km", type: "Monument", isHidden: false },
+      { name: "Champaner-Pavagadh (UNESCO)", distance: "~47 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Ahmedabad", distance: "~110 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 250, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 650, transport: 450, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 5800, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Royal Vadodara", morning: "Laxmi Vilas Palace — the palace museum's preserved royal-era rooms and Durbar Hall.", afternoon: "Sayaji Baug gardens, zoo, and the Vadodara Museum & Picture Gallery within it.", evening: "Maharaja Fatehsingh Museum's royal art collection.", stay: "Vadodara hotel", meals: "Gujarati thali (₹300)", tips: "Genuinely worth the entry fee — very few Indian royal palaces let you see this much preserved original interior." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calmer, less crowded city than Ahmedabad with a genuine heritage-tourism focus"],
+      precautions: ["Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["A comfortable solo day-trip city given the concentrated, well-signed palace/garden circuit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Sayajigunj area", "Palace and Sayaji Baug precincts"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 3100,
+    mustEat: ["Gujarati Thali", "Vadodara-style Sev Usal", "Local street chaat near Sayajigunj"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing for the palace/temple visits"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
