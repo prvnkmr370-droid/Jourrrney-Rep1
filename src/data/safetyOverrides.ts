@@ -3532,3 +3532,93 @@ SAFETY_OVERRIDES["galgibaga"] = {
   police: { summary: "Canacona Police Station: 0832-2633357", details: ["Canacona Police Station — NH 17, Mastilol, Canacona: 0832-2633357.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
   medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
 };
+
+// Goa temples — police stations confirmed via direct fetch of the
+// official Goa Police citizen portal; hospitals are the relevant
+// district hospital (Asilo, Mapusa for North Goa taluka temples;
+// Hospicio, Margao for South Goa taluka temples), sourced via search
+// referencing the official Directorate of Health Services Goa site.
+SAFETY_OVERRIDES["bhagwati-devi-temple-pernem"] = {
+  police: { summary: "Pernem Police Station: 0832-2201233", details: ["Pernem Police Station — Station Road, near Pernem Bus Stop, Pernem: 0832-2201233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["radha-krishna-temple-vasco"] = {
+  police: { summary: "Vasco Police Station: 0832-2512304", details: ["Vasco Police Station — Vasco da Gama: 0832-2512304.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["brahma-temple"] = {
+  police: { summary: "Valpoi Police Station: 0832-2374255", details: ["Valpoi Police Station — 210 Nagargaon Road, Valpoi: 0832-2374255.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["kamakshi-saunsthan-temple"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["madanant-mandir"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["mahadev-temple-tambdi-surla"] = {
+  police: { summary: "Sanguem Police Station: 0832-2604233", details: ["Sanguem Police Station — Sanguem: 0832-2604233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["maha-ganapati-temple"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["mahalaxmi-temple"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["mahalsa-temple-mardol"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["manguesh-temple"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shanta-durga-temple"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-chandranath-temple"] = {
+  police: { summary: "Quepem Police Station: 0832-2662253", details: ["Quepem Police Station — Quepem: 0832-2662253.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-datta-mandir"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-gopal-ganapati-temple-farmagudi"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-navdurga-saunsthan"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-ramnath-temple-ramnathi"] = {
+  police: { summary: "Ponda Police Station: 0832-2313101", details: ["Ponda Police Station — Sadar, Khadpabandh, Ponda: 0832-2313101.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-saptakoteshwar-temple"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-sapteshwar-bhagavati-temple"] = {
+  police: { summary: "Pernem Police Station: 0832-2201233", details: ["Pernem Police Station — Station Road, near Pernem Bus Stop, Pernem: 0832-2201233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-rudreshwar-temple"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["shri-vitthal-mandir"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["the-lairai-mandir"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
