@@ -14787,6 +14787,318 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable footwear"],
   },
 
+  // ===== Goa water bodies (Falls & Lakes) — Stage 4 of the
+  // goa-tourism.com build (Beaches, Temples, Churches complete).
+  // Scraped from goa-tourism.com/water-bodies/falls/ and /lakes/, all
+  // 6 listed. Same image-sourcing approach: each place's own real
+  // photo, hosted on goa-tourism.com, used under that site's
+  // Copyright Policy (reproduction permitted with attribution).
+  {
+    id: "dudhsagar-waterfalls",
+    name: "Dudhsagar Waterfalls",
+    state: "Goa",
+    hidden: true,
+    tagline: "A 1,017-Foot 'Sea of Milk' Cascade",
+    description: "Dudhsagar Waterfalls, whose name genuinely translates to \"sea of milk,\" is a real four-tiered cascade dropping about 1,017 feet down a near-vertical mountain face in Sanguem, within the jurisdiction of the Bhagwan Mahavir Wildlife Sanctuary. Reaching it is part of the experience: by road and rail to Kulem station, then either a trek or a hired 4x4 jeep along a genuinely bumpy track — even by jeep, the last stretch to the base is on foot.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/Dudhsagar-1170x614-1.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/Dudhsagar-1170x614-1.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "June – September (monsoon, for full flow) and shoulder months; check current sanctuary access rules before visiting",
+    duration: "Half day to full day, including transport/trek",
+    highlights: [{ name: "1,017-foot, four-tiered cascade" }, { name: "Within Bhagwan Mahavir Wildlife Sanctuary" }, { name: "Genuine 4x4 jeep + trek approach" }],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "To Kulem/Castle Rock, then jeep/trek", fromMumbai: "To Kulem — ~10–12h", fromBangalore: "To Kulem — long haul", duration: "Trek or jeep + trek from Kulem", costRange: "₹500–₹2,500 (train) + ₹500–₹1,500 (jeep)", tips: "Kulem railway station is the standard starting point for most visitors." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda/Mollem — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~1.5h from Ponda to Kulem, then jeep/trek", costRange: "₹1,500–₹2,500 (cab to Kulem) + ₹500–₹1,500 (jeep)", tips: "The final approach genuinely requires a 4x4 jeep or a real trek — a standard car won't get you all the way." },
+    ],
+    accommodation: [
+      { type: "Base in Mollem/Ponda", priceRange: "₹1,200–₹6,000/night (estimate)", examples: ["Eco-stays near Mollem", "Guesthouses in Ponda town"], description: "The waterfall is a day trip — stay at either nearby base." },
+    ],
+    localTransport: [
+      { mode: "4x4 Jeep Safari", cost: "₹500–₹1,500 per jeep (shared)", notes: "Hired at Kulem, the standard way to get closer before the final trek", available: true },
+      { mode: "Trekking", cost: "Free (guide optional)", notes: "A genuine trek option for the more adventurous, all the way from Kulem", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mahadev Temple, Tambdi Surla", distance: "Within the same wildlife sanctuary area", type: "Temple", isHidden: false, id: "mahadev-temple-tambdi-surla" },
+      { name: "Bhagwan Mahavir Wildlife Sanctuary / Mollem National Park", distance: "Same location", type: "Wildlife Sanctuary", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 900, food: 400, transport: 400, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 2400, food: 700, transport: 700, activities: 900 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 6000, food: 1300, transport: 1200, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Waterfall Trip", morning: "Travel to Kulem and arrange a jeep or begin the trek.", afternoon: "Reach the falls' base — swimming may be possible depending on season/conditions.", evening: "Return to Ponda or Mollem.", stay: "Ponda/Mollem base", meals: "Pack your own — limited facilities en route", tips: "Flow is genuinely at its most dramatic during and just after monsoon; check current safety advisories before swimming at the base." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known, popular destination with regular jeep-tour and trekking traffic", "Forest Department/sanctuary presence in the area"],
+      precautions: ["A remote forest location with real physical demands (trek/jeep track) — go with a group or an organised jeep tour rather than alone", "Water conditions at the base can be genuinely hazardous in heavy monsoon flow — heed local guidance on swimming", "Standard wildlife-area caution"],
+      soloTips: ["Best visited via an organised jeep tour or with a group rather than alone, given the remoteness and physical nature of the access route"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Sanguem Police Station", number: "0832-2604233" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked jeep-tour routes and the main viewing/base area"],
+      avoidAreas: ["Swimming in high-flow conditions without local guidance", "Off-trail forest areas"],
+    },
+    rating: 4.7,
+    reviews: 6800,
+    mustEat: ["Pack your own — no dining at the falls itself"],
+    packingTips: ["Sturdy trekking footwear", "Swimwear (conditions permitting)", "Water and snacks — nothing available at the falls", "A dry bag for electronics"],
+  },
+
+  {
+    id: "aravalem-falls",
+    name: "Aravalem Falls",
+    state: "Goa",
+    hidden: true,
+    tagline: "A 50-Metre Monsoon Cascade Near the Aravalem Caves",
+    description: "Aravalem Falls (also spelled Arvalem), in Sanquelim, is a genuinely lesser-known 50-metre waterfall that comes fully alive during monsoon — the water gushes into a real lake whose banks make for a popular picnic spot. It sits a 10-minute drive from the Aravalem Caves, and the nearby Rudreshwar Temple looks directly out over the falls.",
+    image: "https://goa-tourism.com/wp-content/uploads/2020/04/Arvalem-waterfall.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2020/04/Arvalem-waterfall.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature"],
+    bestSeason: "June – September (monsoon, for full flow)",
+    duration: "1–2 hours",
+    highlights: [{ name: "50-metre monsoon waterfall" }, { name: "Lakeside picnic spot" }, { name: "Near the Aravalem Caves & Rudreshwar Temple" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~15min from Bicholim town", costRange: "₹300–₹700 (cab from Bicholim)", tips: "Genuinely best combined with the nearby caves and Rudreshwar Temple in one Bicholim-area outing." },
+    ],
+    accommodation: [
+      { type: "Base in Bicholim", priceRange: "₹1,200–₹4,000/night (estimate)", examples: ["Guesthouses/hotels in Bicholim town"], description: "A short visit — Bicholim is the natural base." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the falls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shri Rudreshwar Temple", distance: "Right next door", type: "Temple", isHidden: false, id: "shri-rudreshwar-temple" },
+      { name: "Shri Datta Mandir", distance: "~1 km", type: "Temple", isHidden: false, id: "shri-datta-mandir" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 600, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5300, food: 1000, transport: 700, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Falls, Caves & Temple", morning: "Visit Aravalem Falls at its lakeside base.", afternoon: "Explore the nearby caves and Rudreshwar Temple.", evening: "Return to Bicholim.", stay: "Bicholim base", meals: "Picnic by the lake or local lunch nearby (₹200)", tips: "Genuinely at its best during and just after monsoon — outside that window, flow can be modest." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A popular local picnic spot with steady daytime visitor traffic, especially in monsoon"],
+      precautions: ["Standard waterfall-area caution (slippery rocks)", "Water levels/currents can be strong in peak monsoon — heed local guidance"],
+      soloTips: ["Comfortable for a solo daytime visit given the steady local family/picnic crowd"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Bicholim Police Station", number: "0832-2362233" }, { label: "Police", number: "100" }],
+      safeZones: ["The main viewing and picnic area"],
+      avoidAreas: ["Swimming in high-flow monsoon conditions without local guidance"],
+    },
+    rating: 4.3,
+    reviews: 1900,
+    mustEat: ["Pack a picnic — the lakeside is genuinely set up for it", "Local snacks in Bicholim town"],
+    packingTips: ["Footwear suited to wet/rocky ground", "Swimwear if conditions allow", "Picnic supplies"],
+  },
+
+  {
+    id: "kesarval-falls",
+    name: "Kesarval Falls",
+    state: "Goa",
+    hidden: true,
+    tagline: "Mineral Springs Long Reputed for Their Healing Properties",
+    description: "Kesarval Falls, also known as Kesarval Springs, are genuinely valued for more than scenery — the water is mineral-rich from the hard rock it flows through, and is locally reputed to have healing and rejuvenating properties, earning the springs a reputation as a real natural spa rather than just a waterfall stop.",
+    image: "https://goa-tourism.com/wp-content/uploads/2022/05/kesarval-waterfalls-hd-photo-featured.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2022/05/kesarval-waterfalls-hd-photo-featured.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature", "Offbeat"],
+    bestSeason: "October – March; monsoon for fuller flow",
+    duration: "1 hour",
+    highlights: [{ name: "Mineral-rich spring water" }, { name: "Local reputation as a natural spa" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vasco/Cortalim — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~20min from Vasco or Cortalim", costRange: "₹300–₹700 (cab)", tips: "A genuinely offbeat, low-key stop compared to Goa's bigger waterfalls." },
+    ],
+    accommodation: [
+      { type: "Base in Vasco", priceRange: "₹1,500–₹5,000/night (estimate)", examples: ["Hotels in Vasco da Gama town"], description: "A short visit — Vasco is the natural nearby base." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the springs", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vasco da Gama town", distance: "~10 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 600, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5200, food: 1000, transport: 700, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Springs Visit", morning: "Visit the springs and its mineral pools.", afternoon: "Continue toward Vasco or other South Goa sights.", evening: "Return to your base.", stay: "Vasco base", meals: "Local lunch nearby (₹200)", tips: "A quiet, easy add-on rather than a full day out — pair it with something else nearby." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A known local spot with a steady, if modest, visitor presence"],
+      precautions: ["Standard waterfall/spring-area caution (slippery rocks)"],
+      soloTips: ["Comfortable for a solo daytime visit; being a quieter, smaller site, daylight-hours visits are sensible"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Vasco Police Station", number: "0832-2512304" }, { label: "Police", number: "100" }],
+      safeZones: ["The main spring/pool area"],
+      avoidAreas: ["Isolated stretches after dark"],
+    },
+    rating: 4.1,
+    reviews: 800,
+    mustEat: ["Local snacks in Vasco town"],
+    packingTips: ["Footwear suited to wet rocks", "Swimwear if planning to bathe"],
+  },
+
+  {
+    id: "mayem-lake",
+    name: "Mayem Lake",
+    state: "Goa",
+    hidden: true,
+    tagline: "A Picnic Lake Reached Through Cashew and Areca Plantations",
+    description: "Mayem Lake, set in a quiet North Goa village, is a genuinely popular local picnic spot — the drive itself is part of the appeal, winding through real cashew, areca nut, and pineapple plantations. The surrounding hills are covered in forest and wild cashew, and lakeside vendors sell coconuts and coconut water to visitors.",
+    image: "https://goa-tourism.com/wp-content/uploads/2022/07/banner-mayem-lake.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2022/07/banner-mayem-lake.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [{ name: "Scenic plantation-lined approach road" }, { name: "Hilly, forested surroundings" }, { name: "Popular local picnic spot" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Bicholim town", costRange: "₹200–₹500 (cab from Bicholim)", tips: "The drive out here is genuinely part of the experience — take it slow." },
+    ],
+    accommodation: [
+      { type: "Base in Bicholim", priceRange: "₹1,200–₹4,000/night (estimate)", examples: ["Guesthouses/hotels in Bicholim town"], description: "A short visit — Bicholim is the natural base." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500 (taxi)", notes: "Standard way to reach the lake", available: true },
+      { mode: "Boating", cost: "₹100–₹300", notes: "Boat rides are typically available on the lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bicholim town", distance: "~10 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2100, food: 600, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5300, food: 1000, transport: 600, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lake Picnic", morning: "Drive out through the plantation-lined road to the lake.", afternoon: "Boating and a picnic by the water.", evening: "Return to Bicholim.", stay: "Bicholim base", meals: "Pack a picnic, or coconut water from lakeside vendors", tips: "A genuinely relaxed, low-key half-day out rather than a headline attraction." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A popular local picnic spot with steady daytime family traffic"],
+      precautions: ["Standard lake-safety caution if boating", "Visit during daylight hours — a quiet rural setting after dark"],
+      soloTips: ["Comfortable for a solo daytime visit given the steady local picnic crowd"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Bicholim Police Station", number: "0832-2362233" }, { label: "Police", number: "100" }],
+      safeZones: ["The main lakeside picnic area"],
+      avoidAreas: ["Isolated forest stretches after dark"],
+    },
+    rating: 4.2,
+    reviews: 1200,
+    mustEat: ["Coconuts and coconut water from lakeside vendors", "Pack a picnic"],
+    packingTips: ["Picnic supplies", "Comfortable footwear", "Sun protection"],
+  },
+
+  {
+    id: "carambolim-lake",
+    name: "Carambolim Lake",
+    state: "Goa",
+    hidden: true,
+    tagline: "A Manmade Lake That's a Real National-Level Birdwatching Site",
+    description: "Carambolim Lake, one of Goa's most picturesque lakes, is a genuine manmade waterbody supporting a real, notable bird population — both resident and migratory species, aquatic and terrestrial, herbivorous and the occasional avian fisher. The surrounding forested area has been declared the Carambolim Bird Sanctuary, and the site is genuinely regarded as one of the best birdwatching spots not just in Goa, but in India.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-carambolim-lake-1.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/banner-carambolim-lake-1.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – February (winter migratory season) for the best birdwatching",
+    duration: "1–2 hours",
+    highlights: [{ name: "Carambolim Bird Sanctuary" }, { name: "Real resident & migratory bird populations" }, { name: "One of India's notable birdwatching sites" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Old Goa/Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~5km / ~15min from Old Goa", costRange: "₹200–₹500 (cab from Old Goa/Panaji)", tips: "Combine with Old Goa's churches given how close they sit together." },
+    ],
+    accommodation: [
+      { type: "Base in Panaji", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Hotels across Panaji city"], description: "A short visit — Panaji is the natural base." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500 (taxi)", notes: "Standard way to reach the lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Old Goa", distance: "~5 km", type: "Heritage Site", isHidden: false, id: "old-goa" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2100, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1000, transport: 600, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birdwatching Morning", morning: "Arrive early for peak bird activity on the lake.", afternoon: "Continue to Old Goa's churches nearby.", evening: "Return to Panaji.", stay: "Panaji base", meals: "Local lunch nearby (₹200)", tips: "Genuinely worth an early start if birdwatching is your main goal — activity peaks at dawn." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A known, well-regarded birdwatching site close to Old Goa and Panaji, with regular visitor traffic"],
+      precautions: ["Standard lakeside caution", "Bring binoculars rather than approaching birds closely"],
+      soloTips: ["A comfortable solo visit, especially for birdwatchers, given its proximity to Panaji"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Old Goa Police Station", number: "0832-2285301" }, { label: "Police", number: "100" }],
+      safeZones: ["The main lake viewing areas"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1500,
+    mustEat: ["Local lunch back in Panaji or Old Goa"],
+    packingTips: ["Binoculars", "Comfortable footwear", "An early alarm for peak bird activity"],
+  },
+
+  {
+    id: "netravali-lake",
+    name: "Netravali Lake (Budbudyanche Taley / Bubble Lake)",
+    state: "Goa",
+    hidden: true,
+    tagline: "A Genuinely Bubbling Pond of Real Religious Significance",
+    description: "Netravali Lake, known locally as Budbudyanche Taley or \"Bubble Lake,\" is a real, distinctive small waterbody where bubbles continuously rise to the surface at various points — a genuine natural phenomenon locals say responds to sound, rising faster if you clap. More pond than lake, it has granite steps and a central granite pedestal, and holds real religious significance for the local community, tied to the nearby Gopinath Temple.",
+    image: "https://goa-tourism.com/wp-content/uploads/2021/09/Bubble-lake-Netravali.jpg",
+    heroImage: "https://goa-tourism.com/wp-content/uploads/2021/09/Bubble-lake-Netravali.jpg",
+    imageCredit: "Photo: Official Goa Tourism (GTDC) site, goa-tourism.com — used under the site's own Copyright Policy, which permits reproduction with attribution.",
+    category: ["Nature", "Spiritual", "Offbeat"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [{ name: "Naturally rising bubbles — a genuine, distinctive phenomenon" }, { name: "Granite steps & central pedestal" }, { name: "Religious significance, near Gopinath Temple" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Sanguem — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~30min from Sanguem town", costRange: "₹400–₹900 (cab from Sanguem)", tips: "A genuinely offbeat, rural stop — combine with the Netravali Wildlife Sanctuary or Dudhsagar if you're already in the area." },
+    ],
+    accommodation: [
+      { type: "Base in Sanguem/Mollem", priceRange: "₹1,200–₹6,000/night (estimate)", examples: ["Guesthouses in Sanguem or eco-stays near Mollem"], description: "A short visit — either nearby base works." },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹900 (taxi)", notes: "The practical way to reach this rural village site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Netravali Wildlife Sanctuary", distance: "Same area", type: "Wildlife Sanctuary", isHidden: true },
+      { name: "Dudhsagar Waterfalls", distance: "~25 km", type: "Waterfall", isHidden: false, id: "dudhsagar-waterfalls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 350, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 600, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5300, food: 1000, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bubble Lake Visit", morning: "Visit the pond and observe the bubbling phenomenon.", afternoon: "Continue to the nearby Gopinath Temple or Netravali Wildlife Sanctuary.", evening: "Return to Sanguem.", stay: "Sanguem/Mollem base", meals: "Local lunch nearby (₹200)", tips: "A genuinely curious, low-key natural phenomenon worth the detour if you're already in inland South Goa." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A real local pilgrimage/curiosity site with steady daytime visitor traffic"],
+      precautions: ["A remote, rural forest-village location — visit during daylight hours", "Standard water/temple-area etiquette"],
+      soloTips: ["Best visited during the day as part of a wider inland South Goa trip rather than alone at quiet times, given how remote it is"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Sanguem Police Station", number: "0832-2604233" }, { label: "Police", number: "100" }],
+      safeZones: ["The main pond and temple area"],
+      avoidAreas: ["Isolated forest stretches after dark"],
+    },
+    rating: 4.3,
+    reviews: 700,
+    mustEat: ["Local lunch in Sanguem"],
+    packingTips: ["Comfortable footwear for the granite steps", "Modest clothing given the site's religious significance"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

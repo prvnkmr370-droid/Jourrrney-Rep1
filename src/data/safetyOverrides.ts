@@ -3680,3 +3680,32 @@ SAFETY_OVERRIDES["rachol-seminary"] = {
   police: { summary: "Margao Town Police Station: 0832-2705095", details: ["Margao Town Police Station — Margao: 0832-2705095.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
   medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
 };
+
+// Goa water bodies (Falls & Lakes) — police stations reuse the same
+// directly-confirmed Goa Police citizen portal entries built up across
+// earlier stages (Sanguem, Bicholim, Vasco, Old Goa). Hospitals are
+// the relevant district hospital / GMC Bambolim depending on location.
+SAFETY_OVERRIDES["dudhsagar-waterfalls"] = {
+  police: { summary: "Sanguem Police Station: 0832-2604233", details: ["Sanguem Police Station — Sanguem: 0832-2604233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["aravalem-falls"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["kesarval-falls"] = {
+  police: { summary: "Vasco Police Station: 0832-2512304", details: ["Vasco Police Station — Vasco da Gama: 0832-2512304.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["mayem-lake"] = {
+  police: { summary: "Bicholim Police Station: 0832-2362233", details: ["Bicholim Police Station — Bicholim: 0832-2362233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "North Goa District Hospital (Asilo), Mapusa", details: ["North Goa District Hospital (Asilo Hospital) — Mapusa: 0832-2262372.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
+SAFETY_OVERRIDES["carambolim-lake"] = {
+  police: { summary: "Old Goa Police Station: 0832-2285301", details: ["Old Goa Police Station — Old Goa: 0832-2285301.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "Goa Medical College & Hospital, Bambolim", details: ["Goa Medical College & Hospital — Bambolim: 0832-2458700 / 0832-2458715.", "Ambulance: 108"], sourceNote: "Confirmed via web search referencing the college's own official contact page." },
+};
+SAFETY_OVERRIDES["netravali-lake"] = {
+  police: { summary: "Sanguem Police Station: 0832-2604233", details: ["Sanguem Police Station — Sanguem: 0832-2604233.", "Women Helpline: 1091 · Police: 100 · National Emergency: 112"], sourceNote: "Confirmed directly on the official Goa Police citizen portal." },
+  medical: { summary: "South Goa District Hospital (Hospicio), Margao", details: ["South Goa District Hospital (Hospicio Hospital) — Margao: 0832-2703801.", "Ambulance: 108"], sourceNote: "Sourced via web search referencing the official Directorate of Health Services Goa site." },
+};
