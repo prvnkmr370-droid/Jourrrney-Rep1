@@ -16231,6 +16231,92 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera for the cape viewpoint"],
   },
 
+  // ===== Gujarat — new state build, scraped from gujarattourism.com.
+  // Note: gujarattourism.com's own Disclaimer explicitly restricts
+  // reproduction of its content/photos without prior permission
+  // ("No part of it may be reproduced in any form or by any means
+  // without prior permission from the appropriate party"), unlike
+  // goa-tourism.com's permissive policy — so, unlike the Goa build,
+  // this build does NOT use the site's own photos. Images are
+  // sourced from Wikimedia Commons instead (per the app's existing
+  // approved-sources list), each individually verified reachable
+  // (HTTP 200) and credited to its real photographer/license.
+  // Facts are drawn from the site's own listing pages plus
+  // corroborating web search, paraphrased into original prose.
+  {
+    id: "gujarat",
+    name: "Gujarat",
+    state: "Gujarat",
+    tagline: "Land of Legends — Stepwells, the Salt Desert & the Last Wild Lions of Asia",
+    description: "Gujarat pairs India's longest coastline (1,600 km) with its most concentrated stretch of genuinely world-class heritage — the intricately carved Rani ki Vav stepwell, the ancient Somnath temple rebuilt after repeated historic destruction, Mahatma Gandhi's own Sabarmati Ashram, and Gir National Park, real and only home left in the wild to the Asiatic lion. Add the otherworldly white salt expanse of the Rann of Kutch, the world's tallest statue at Kevadia, and a UNESCO-listed walled old city in Ahmedabad, and Gujarat is genuinely one of India's most underrated multi-destination states.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/1280px-Statue_of_Unity.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg/1280px-Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Statue_of_Gandhi_at_Sabarmati_Ashram.jpg/1280px-Statue_of_Gandhi_at_Sabarmati_Ashram.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ancient_Somnath_temple%2C_Veraval_Gujarat.jpg/1280px-Ancient_Somnath_temple%2C_Veraval_Gujarat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/White_salt_desert_at_Rann_of_Kutch.jpg/1280px-White_salt_desert_at_Rann_of_Kutch.jpg",
+    ],
+    imageCredit: "Photos: Snehrashmi, Rohit Sharma, Bernard Gagnon, Ms Sarah Welch, Prof Ranga Sai — Wikimedia Commons, CC BY-SA 3.0/4.0 & CC0.",
+    category: ["Heritage", "Wildlife", "Spiritual", "UNESCO"],
+    bestSeason: "November – February (Rann Utsav runs roughly Nov–Feb in the White Rann)",
+    duration: "7–10 days for a full circuit",
+    highlights: [{ name: "Rani ki Vav, Patan (UNESCO)" }, { name: "Statue of Unity, Kevadia" }, { name: "Gir National Park — Asiatic lions" }, { name: "Rann of Kutch — White Desert" }, { name: "Sabarmati Ashram, Ahmedabad" }, { name: "Somnath Temple, Veraval" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~1h20m direct to Ahmedabad (AMD)", fromMumbai: "~1h05m direct", fromBangalore: "~2h direct", duration: "1–2h", costRange: "₹2,500–₹9,000", tips: "Ahmedabad's Sardar Vallabhbhai Patel Airport is Gujarat's main gateway, with the best domestic connectivity; Vadodara, Rajkot and Surat also have smaller airports." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani/Duronto — ~12–14h", fromMumbai: "~7–8h", fromBangalore: "~24h+ (limited direct options)", duration: "7–24h", costRange: "₹400–₹2,500", tips: "Ahmedabad and Vadodara are both major junctions on the Delhi–Mumbai western line, so onward connections within Gujarat are frequent." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH48 — ~950km, ~14–16h", fromMumbai: "NH48 — ~530km, ~8–9h", fromBangalore: "~1,500km, ~22h+ — not practical to self-drive", duration: "8–16h from Delhi/Mumbai", costRange: "₹3,000–₹7,000", tips: "Mumbai–Ahmedabad via NH48 is a well-maintained expressway-grade route and the most practical self-drive option." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,500/night", examples: ["Ahmedabad/Vadodara budget hotels", "Rann of Kutch tented camps (shared)"], description: "Simple hotels in the major cities; basic tented camps during Rann Utsav season." },
+      { type: "Mid-Range", priceRange: "₹3,000–₹7,000/night", examples: ["Lemon Tree hotels (Ahmedabad, Vadodara)", "Gir jungle lodges", "Rann Utsav Tent City"], description: "Comfortable hotel rooms in cities; wildlife lodges near Gir; the official Rann Utsav tent city near Dhordo." },
+      { type: "Luxury", priceRange: "₹9,000–₹35,000/night", examples: ["The House of MG, Ahmedabad", "Taj Gateway, Vadodara", "The Fern Gir Forest Resort"], description: "Heritage hotels in restored havelis, and premium wildlife lodges near Gir National Park." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹800", notes: "Reliable in Ahmedabad, Vadodara, Surat, Rajkot", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹200", notes: "Widely available in all cities and towns", available: true },
+      { mode: "Self-Drive Rental Car", cost: "₹1,500–₹3,500/day", notes: "Practical for the Kutch/Gir/Saurashtra circuit given the distances between towns", available: true },
+      { mode: "GSRTC State Buses", cost: "₹50–₹500", notes: "Extensive network connecting even smaller towns", available: true },
+      { mode: "Intercity Taxi (Full Day)", cost: "₹2,500–₹5,000/day", notes: "Common for multi-city circuits like Ahmedabad–Kutch–Gir–Somnath", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rani ki Vav, Patan", distance: "~130 km from Ahmedabad", type: "UNESCO Heritage", isHidden: false },
+      { name: "Rann of Kutch (White Desert)", distance: "~85 km from Bhuj", type: "Salt Desert", isHidden: false },
+      { name: "Gir National Park", distance: "~65 km from Junagadh", type: "Wildlife", isHidden: false },
+      { name: "Statue of Unity, Kevadia", distance: "~90 km from Vadodara", type: "Monument", isHidden: false },
+      { name: "Somnath Temple, Veraval", distance: "~85 km from Junagadh", type: "Temple", isHidden: false },
+      { name: "Dwarka", distance: "~230 km from Rajkot", type: "Temple Town", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 400, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2500, food: 800, transport: 700, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ahmedabad Heritage", morning: "Sabarmati Ashram — Gandhi's own residence and museum.", afternoon: "Old Ahmedabad heritage walk — Jama Masjid, Sidi Saiyyed Mosque's stone jali windows.", evening: "Sabarmati Riverfront and Manek Chowk night food market.", stay: "Ahmedabad hotel", meals: "Gujarati thali (₹300), Manek Chowk street food (₹200)", tips: "Ahmedabad's old city is a genuine UNESCO World Heritage City — its first in India." },
+      { day: 2, title: "Statue of Unity, Kevadia", morning: "Drive to Kevadia (~3–3.5h from Ahmedabad).", afternoon: "Statue of Unity — viewing gallery, Valley of Flowers, Sardar Sarovar Dam.", evening: "Return toward Vadodara or stay near Kevadia.", stay: "Kevadia/Vadodara", meals: "Local Gujarati food (₹300–₹500)", tips: "Book Statue of Unity tickets online in advance — it gets genuinely crowded on weekends." },
+      { day: 3, title: "Gir National Park", morning: "Fly/drive to Junagadh area; check into a Gir-area lodge.", afternoon: "Afternoon jeep safari in Gir National Park — real chance of spotting wild Asiatic lions.", evening: "Sunset near the sanctuary buffer zone.", stay: "Gir forest lodge", meals: "Lodge-provided meals (₹400–₹800)", tips: "Book safari permits in advance — Gir has a real daily visitor cap." },
+      { day: 4, title: "Somnath & Diu Day Trip", morning: "Somnath Temple — the ancient Jyotirlinga shrine, rebuilt after historic destruction.", afternoon: "Optional extension to Diu (a short drive further).", evening: "Sound and light show at Somnath.", stay: "Somnath/Veraval", meals: "Coastal Gujarati/seafood thali (₹300–₹500)", tips: "The Somnath sound and light show genuinely retells the temple's own layered history — worth the evening." },
+      { day: 5, title: "Rann of Kutch", morning: "Travel to Bhuj (long transfer — consider a flight).", afternoon: "Explore Bhuj's own heritage — Aina Mahal, Prag Mahal.", evening: "Drive out to the White Desert for sunset over the salt flats.", stay: "Rann Utsav Tent City (seasonal) or Bhuj hotel", meals: "Kutchi thali (₹350)", tips: "The White Desert is at its genuine best around the full moon and during the Nov–Feb Rann Utsav festival season." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Gujarat is a dry state with generally low reported crime against tourists", "Well-developed tourist infrastructure around major circuits (Ahmedabad, Kutch, Gir, Somnath)", "Active state tourism department support via toll-free helpline"],
+      precautions: ["Gujarat is legally a dry state — carrying or consuming alcohol without a permit is a real legal risk, not just a cultural note", "Desert/Rann areas can have poor mobile signal — plan accordingly", "Dress modestly at religious sites (Somnath, Dwarka, Ambaji)"],
+      soloTips: ["Ahmedabad, Vadodara and the main Rann Utsav tent city are all comfortable for solo women travelers", "Book Rann Utsav tent city stays through the official gujarattourism.com portal for verified, managed accommodation", "Join organized safari/tour groups for Gir and the White Desert rather than arranging informal local transport"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }, { label: "National Emergency", number: "112" }],
+      safeZones: ["Ahmedabad's main tourist circuit (old city, riverfront)", "Official Rann Utsav Tent City", "Gir lodge areas"],
+      avoidAreas: ["Isolated stretches of the Rann after dark, outside the organized tent-city zone"],
+    },
+    rating: 4.5,
+    reviews: 9200,
+    mustEat: ["Gujarati Thali (dal-dhokli, kadhi, shaak)", "Dhokla & Khandvi", "Fafda-Jalebi", "Undhiyu (winter vegetable mix)", "Khaman"],
+    packingTips: ["Modest clothing for temple towns", "Layered clothing — Kutch nights get cold, especially Nov–Feb", "Comfortable walking shoes for heritage walks", "Note: Gujarat is a dry state — no alcohol without a permit"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
