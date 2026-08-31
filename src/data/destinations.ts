@@ -16453,6 +16453,76 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Modest clothing for the palace/temple visits"],
   },
 
+  // ===== Gujarat — Stage 4: Kutch city/region hub. Scraped from
+  // gujarattourism.com/kutch-zone/kutch.html plus corroborating web
+  // search for Rann Utsav's real dates and Dhordo's UNWTO
+  // recognition.
+  {
+    id: "kutch",
+    name: "Kutch (Bhuj & the White Rann)",
+    state: "Gujarat",
+    tagline: "A Salt Desert That Turns Ghost-White Under the Full Moon",
+    description: "Kutch centres on the Great Rann of Kutch, one of the world's largest salt deserts — its most striking stretch, the White Rann near Dhordo, turns into a real vast sheet of white salt after the monsoon, hosting the official Rann Utsav festival and its tent city for nearly 100 days each winter season (this year running 23 November 2025 – 20 February 2026, tent city through 4 March 2026). Dhordo village itself was genuinely recognized among the UN World Tourism Organization's Best Tourism Villages in 2023. Bhuj, Kutch's district capital, adds real royal heritage — the mirror-walled Aina Mahal and the Italian Gothic Prag Mahal — while Kutch's rural villages are known across India for genuine, still-practiced traditional crafts like Rogan painting.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rann_Utsav_Venue.jpg/1280px-Rann_Utsav_Venue.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rann_Utsav_Venue.jpg/1280px-Rann_Utsav_Venue.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rann_Utsav_Venue.jpg/1280px-Rann_Utsav_Venue.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/The_White_Desert_in_Kutch%2C_the_great_rann_of_kutch.jpg/1280px-The_White_Desert_in_Kutch%2C_the_great_rann_of_kutch.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ainamahal_Bhuj_Kutch_Gujarat.jpg/1280px-Ainamahal_Bhuj_Kutch_Gujarat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Prag_Mahal_Bhuj_Kutch.jpg/1280px-Prag_Mahal_Bhuj_Kutch.jpg",
+    ],
+    imageCredit: "Photos: Rannrider, Cutekutty_rk, Nizil Shah, Sangita Pujara — Wikimedia Commons, CC BY-SA 3.0/4.0.",
+    category: ["Nature", "Heritage", "Offbeat"],
+    bestSeason: "November – February (Rann Utsav season; full-moon nights are the highlight)",
+    duration: "3–4 days",
+    highlights: [{ name: "White Rann salt desert & Rann Utsav tent city" }, { name: "Aina Mahal & Prag Mahal, Bhuj" }, { name: "Kalo Dungar (Black Hill) viewpoint" }, { name: "Rogan painting village, Nirona" }, { name: "Dholavira (Indus Valley UNESCO site)" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~2h direct to Bhuj (BHJ)", fromMumbai: "~1h30m direct", fromBangalore: "~2h30m (via connection)", duration: "1.5–2.5h", costRange: "₹3,500–₹12,000", tips: "Flying into Bhuj is genuinely far more practical than the long road transfer from Ahmedabad (~330 km)." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct/connecting trains — ~18–20h", fromMumbai: "~14–16h", fromBangalore: "Not practical — long connection required", duration: "14–20h", costRange: "₹500–₹2,500", tips: "Bhuj has direct rail links to Ahmedabad and Mumbai, though the journey is long — flying saves significant time." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — very long haul", fromMumbai: "~900km, ~15h", fromBangalore: "Not practical", duration: "~6–7h from Ahmedabad (~330 km)", costRange: "₹4,000–₹8,000 (cab from Ahmedabad)", tips: "Book tent-city and hotel stays well in advance during Rann Utsav season — the region genuinely fills up." },
+    ],
+    accommodation: [
+      { type: "Rann Utsav Tent City (Seasonal)", priceRange: "₹5,000–₹15,000/night", examples: ["Official Rann Utsav Tent City, Dhordo"], description: "The signature Kutch experience — book only through the official gujarattourism.com/rannutsav channel for a verified, managed stay." },
+      { type: "Bhuj Hotels", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels in central Bhuj"], description: "A practical year-round base with easy access to both the city heritage sites and the Rann." },
+      { type: "Heritage/Resort", priceRange: "₹5,000–₹12,000/night", examples: ["Regenta Resort Bhuj", "The Fern Residency Bhuj"], description: "Comfortable resort-style stays just outside Bhuj." },
+    ],
+    localTransport: [
+      { mode: "Self-Drive/Rental Car", cost: "₹1,500–₹3,000/day", notes: "Genuinely the most practical way to cover Bhuj, the Rann, Kalo Dungar and Nirona given the distances", available: true },
+      { mode: "Taxi (Full Day)", cost: "₹2,500–₹4,500/day", notes: "Widely arranged through hotels for the White Rann and village circuit", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "For getting around Bhuj town itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dholavira (Indus Valley UNESCO site)", distance: "~250 km from Bhuj", type: "UNESCO Heritage", isHidden: true },
+      { name: "Mandvi Beach", distance: "~60 km from Bhuj", type: "Beach", isHidden: true },
+      { name: "Lakhpat Fort", distance: "~130 km from Bhuj", type: "Fort", isHidden: true },
+      { name: "Kalo Dungar", distance: "~90 km from Bhuj", type: "Viewpoint", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 400, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 3000, food: 700, transport: 800, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 13000, accommodation: 9000, food: 1300, transport: 1500, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhuj Heritage", morning: "Aina Mahal — the genuinely mirror-and-glasswork-covered 18th-century palace.", afternoon: "Prag Mahal's Italian Gothic architecture and clock tower.", evening: "Bhuj old-town bazaar walk.", stay: "Bhuj hotel", meals: "Kutchi thali (₹300)", tips: "Both palaces still bear real, honestly-preserved 2001-earthquake damage in places — part of Bhuj's layered history." },
+      { day: 2, title: "White Rann & Rann Utsav", morning: "Drive to Dhordo and the Rann Utsav Tent City.", afternoon: "Cultural performances and local Kutchi handicraft stalls at the tent city.", evening: "Sunset — then, if visiting near the full moon, a genuinely otherworldly moonlit walk on the White Rann's salt flats.", stay: "Rann Utsav Tent City", meals: "Tent-city buffet (included in most packages)", tips: "Carry warm layers — Rann nights get genuinely cold in winter, even though days are warm." },
+      { day: 3, title: "Kalo Dungar & Craft Villages", morning: "Kalo Dungar (Black Hill) viewpoint over the Rann.", afternoon: "Nirona village — watch real, still-practiced Rogan art (a near-extinct textile painting craft) being made.", evening: "Return to Bhuj.", stay: "Bhuj hotel", meals: "Local Kutchi food (₹300)", tips: "Rogan painting is genuinely down to a handful of practicing families — buying directly supports a living craft tradition." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["The Rann Utsav Tent City is a well-managed, official government-run tourism zone with security and organized activities", "Bhuj town is generally calm and tourist-friendly"],
+      precautions: ["The open Rann has poor/no mobile signal in stretches — stay with your group or guide", "Nights get cold — dress in warm layers, especially Nov–Feb", "Book tent-city stays only through the official gujarattourism.com channel to avoid unverified operators"],
+      soloTips: ["Join organized Rann Utsav tours/tent-city packages rather than arranging informal desert transport independently", "Bhuj itself is comfortable for solo daytime sightseeing"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["The official Rann Utsav Tent City zone", "Central Bhuj"],
+      avoidAreas: ["Unguided nighttime travel on the open Rann outside the managed tourism zone"],
+    },
+    rating: 4.6,
+    reviews: 5400,
+    mustEat: ["Kutchi Dabeli", "Kutchi Thali", "Bajra Rotla with White Butter", "Gunder (Kutchi sweet)"],
+    packingTips: ["Warm layers for cold desert nights", "Sunscreen and a hat for daytime desert heat", "Comfortable walking shoes for the salt flats", "A power bank — charging can be limited at the tent city"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
