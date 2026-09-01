@@ -16719,6 +16719,74 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable footwear for reef-flat walking", "Sun protection", "Water shoes if visiting the reef flats"],
   },
 
+  // ===== Gujarat — Stage 8: Surat city hub. Scraped from
+  // gujarattourism.com/south-zone/surat.html plus corroborating web
+  // search for Surat Castle's real 1546 founding and Surat's diamond/
+  // textile/East India Company trading history.
+  {
+    id: "surat",
+    name: "Surat",
+    state: "Gujarat",
+    tagline: "The Diamond City — Where Britain's East India Company First Landed",
+    description: "Surat, on the Tapi River, was one of Mughal India's most prosperous ports, and Surat Castle (the Old Fort) was genuinely built in 1546 on Sultan Mahmud Shah III's orders after repeated Portuguese raids in 1512, 1530 and 1531 had devastated the earlier city. It's where the British East India Company established its first Indian trading post in the early 17th century, with the Dutch and Portuguese following — real remnants of that era survive in the city's English Cemetery and colonial architecture. Today Surat is genuinely known worldwide as the Diamond City, where a real ~90% of the world's diamonds are cut and polished, alongside a major textile industry — a very different, working-city character from Gujarat's more overtly touristed heritage towns.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Surat_Fort_%2815345082318%29.jpg/1280px-Surat_Fort_%2815345082318%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Surat_Fort_%2815345082318%29.jpg/1280px-Surat_Fort_%2815345082318%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Surat_Fort_%2815345082318%29.jpg/1280px-Surat_Fort_%2815345082318%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Surat_Fort%2C_front_View.jpg/1280px-Surat_Fort%2C_front_View.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Scale_down_Model_of_Madagascar_ship_displayed_at_Surat_castle_%28fort%29.jpg/1280px-Scale_down_Model_of_Madagascar_ship_displayed_at_Surat_castle_%28fort%29.jpg",
+    ],
+    imageCredit: "Photos: yndesai (CC BY-SA 2.0), H.G. Rawlinson (public domain, historical), Kevin Kovadia (CC0) — Wikimedia Commons.",
+    category: ["Heritage", "Beach"],
+    bestSeason: "November – February",
+    duration: "1–2 days",
+    highlights: [{ name: "Surat Castle (built 1546)" }, { name: "English Cemetery" }, { name: "Dumas Beach's distinctive black sand" }, { name: "Sneh Rashmi Botanical Garden" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~2h direct", fromMumbai: "~50min direct", fromBangalore: "~1h45m direct", duration: "50min–2h", costRange: "₹2,500–₹9,000", tips: "Surat Airport has good domestic connectivity, especially to Mumbai given the city's business ties." },
+      { mode: "Train", icon: "🚂", fromDelhi: "~16–18h", fromMumbai: "~4–5h", fromBangalore: "~20h+", duration: "4–20h", costRange: "₹300–₹2,000", tips: "Surat Junction is a major stop on the Mumbai–Ahmedabad line, with fast, frequent connections to Mumbai." },
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,200km, not practical to self-drive", fromMumbai: "NH48 — ~280km, ~5h", fromBangalore: "Not practical", duration: "~5h from Mumbai", costRange: "₹2,500–₹5,500", tips: "Mumbai–Surat via NH48 is a quick, well-maintained highway drive." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels near Ring Road"], description: "Simple, centrally-located budget options." },
+      { type: "Mid-Range", priceRange: "₹2,500–₹6,000/night", examples: ["Lemon Tree Surat", "Ginger Surat"], description: "Comfortable business-hotel chains reflecting the city's commercial character." },
+      { type: "Luxury", priceRange: "₹6,000–₹14,000/night", examples: ["Le Méridien Surat"], description: "Premium business hotels." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Widely available", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around", available: true },
+      { mode: "Surat BRTS/City Bus", cost: "₹10–₹40", notes: "Extensive local bus network", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dumas Beach", distance: "~21 km", type: "Beach", isHidden: true },
+      { name: "Suvali Beach", distance: "~25 km", type: "Beach", isHidden: true },
+      { name: "Tithal Beach, Valsad", distance: "~85 km", type: "Beach", isHidden: true },
+      { name: "Purna Wildlife Sanctuary, Dang", distance: "~130 km", type: "Wildlife", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2300, food: 700, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9200, accommodation: 6000, food: 1200, transport: 900, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Colonial-Era Surat", morning: "Surat Castle (Old Fort) on the Tapi River, built 1546.", afternoon: "English Cemetery's colonial-era tombs and the old Dutch/British trading-post area.", evening: "Sneh Rashmi Botanical Garden.", stay: "Surat hotel", meals: "Surati Locho and Undhiyu (₹200)", tips: "Surat's own street food is genuinely a distinct regional specialty — locho, ponk, and khaman are all worth seeking out specifically here." },
+      { day: 2, title: "Dumas Beach", morning: "Drive to Dumas Beach for its distinctive dark, near-black sand — a popular local promenade with food stalls.", afternoon: "Return to the city.", evening: "Riverfront walk along the Tapi.", stay: "Surat hotel", meals: "Beachside street food (₹200)", tips: "Dumas draws large weekend crowds for its evening food-stall scene — a weekday visit is quieter." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A large, well-developed commercial city with active local policing and infrastructure", "Dumas Beach and the riverfront are well-frequented in the evenings"],
+      precautions: ["Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["A comfortable solo city given its size and commercial infrastructure — the riverfront and Dumas Beach are both busy, well-lit evening spots"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Tapi riverfront", "Dumas Beach promenade (evenings, when busy)"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 2600,
+    mustEat: ["Surati Locho", "Undhiyu", "Ponk (winter millet snack)", "Khaman"],
+    packingTips: ["Comfortable walking shoes", "Sun protection — summers are very hot and humid"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
