@@ -16654,6 +16654,71 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy trekking shoes for Girnar", "Plenty of water", "A hat and sun protection", "Comfortable walking shoes for Uparkot Fort"],
   },
 
+  // ===== Gujarat — Stage 7: Jamnagar city hub. Scraped from
+  // gujarattourism.com/saurashtra/jamnagar.html plus corroborating
+  // web search for the Marine National Park's real establishment
+  // history and Pirotan Island's coral reef data.
+  {
+    id: "jamnagar",
+    name: "Jamnagar",
+    state: "Gujarat",
+    tagline: "The Jewel of Kathiawar, Gateway to India's First Marine National Park",
+    description: "Jamnagar, styled \"the Jewel of Kathiawar\" on the Gulf of Kutch coast, is the real gateway to India's first Marine National Park — a 270 sq km marine sanctuary declared in 1980, with a 110 sq km core national park added in 1982, spanning 42 islands including Pirotan, home to genuine coral reef formations (52 recorded species) alongside mangroves and mudflats. In the city itself, Lakhota Fort sits on an island in Ranmal Lake, its royal-era halls now a real archaeological museum, while Willingdon Crescent's colonial-era architecture and Khijadiya Bird Sanctuary round out a genuinely underrated Saurashtra stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lakhota_fort_museum.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lakhota_fort_museum.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lakhota_fort_museum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Guj21_Jamnagar_view_of_Lakhota_Lake_and_Fort_museum.jpg/1280px-Guj21_Jamnagar_view_of_Lakhota_Lake_and_Fort_museum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Gulf_of_Kutch%2C_India_ESA22167026.jpeg/1280px-Gulf_of_Kutch%2C_India_ESA22167026.jpeg",
+    ],
+    imageCredit: "Photos: Jay Bhanderi, VasuVR — Wikimedia Commons, CC BY-SA 3.0/4.0; Gulf of Kutch satellite view — European Space Agency, CC BY-SA 3.0 IGO.",
+    category: ["Heritage", "Wildlife", "Beach"],
+    bestSeason: "November – February (low tide is best for Marine National Park visits)",
+    duration: "1–2 days",
+    highlights: [{ name: "Marine National Park & Pirotan Island coral reefs" }, { name: "Lakhota Fort Museum, Ranmal Lake" }, { name: "Willingdon Crescent" }, { name: "Khijadiya Bird Sanctuary" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~2h (via connection)", fromMumbai: "~1h20m direct", fromBangalore: "Not practical — long connection", duration: "1.5–2.5h", costRange: "₹3,500–₹11,000", tips: "Jamnagar Airport has reasonable domestic connectivity, mainly via Mumbai." },
+      { mode: "Train", icon: "🚂", fromDelhi: "~18–20h", fromMumbai: "~12–14h", fromBangalore: "Not practical", duration: "12–20h", costRange: "₹400–₹2,200", tips: "Jamnagar Junction connects to Rajkot and Ahmedabad." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical to self-drive", fromMumbai: "~850km, ~13h", fromBangalore: "Not practical", duration: "~1.5h from Rajkot (~90 km)", costRange: "₹2,000–₹4,500", tips: "A permit and a licensed local boat operator are needed to actually visit Pirotan Island inside the Marine National Park — arrange this in advance through the forest department." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹700–₹1,800/night", examples: ["Hotels near the city center"], description: "Simple, centrally-located budget options." },
+      { type: "Mid-Range", priceRange: "₹2,000–₹4,500/night", examples: ["Fortune Suhag Jamnagar", "President Hotel Jamnagar"], description: "Comfortable business-hotel chains." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For Marine National Park boat-launch points and Khijadiya", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Khijadiya Bird Sanctuary", distance: "~10 km", type: "Wildlife", isHidden: true },
+      { name: "Dwarka", distance: "~130 km", type: "Temple Town", isHidden: true },
+      { name: "Shivrajpur Beach", distance: "~150 km", type: "Beach", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 600, transport: 500, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4500, food: 1100, transport: 800, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lakhota Fort & City Heritage", morning: "Lakhota Fort Museum on Ranmal Lake — armoury, sculpture, and pottery collections.", afternoon: "Willingdon Crescent and the old city's colonial-era architecture.", evening: "Bala Hanuman Temple by the lake, known for continuous chanting since 1964.", stay: "Jamnagar hotel", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely check the Marine National Park boat/permit availability a day ahead — trips depend on tide timings." },
+      { day: 2, title: "Marine National Park", morning: "Boat trip to Pirotan Island or a Narara reef-flat walk at low tide — genuine coral, starfish, and marine life visible on the exposed reef.", afternoon: "Return to Jamnagar; visit Khijadiya Bird Sanctuary.", evening: "Rest and local dinner.", stay: "Jamnagar hotel", meals: "Local Gujarati thali (₹300)", tips: "Low tide is essential for seeing the reef flats — plan the visit around the tide table, not just convenience." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A calm coastal Saurashtra city with an established, forest-department-regulated Marine National Park tourism setup"],
+      precautions: ["Marine National Park visits require a permit and a licensed boat operator — arrange only through official/forest-department channels", "Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["Join an organized Marine National Park boat tour rather than arranging informal local boat transport"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Lakhota Fort and Ranmal Lake area", "Official Marine National Park boat-launch points"],
+      avoidAreas: ["Unlicensed/informal boat operators for Marine National Park trips"],
+    },
+    rating: 4.2,
+    reviews: 1800,
+    mustEat: ["Kathiyawadi Thali", "Jamnagar-style Khaman"],
+    packingTips: ["Comfortable footwear for reef-flat walking", "Sun protection", "Water shoes if visiting the reef flats"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
