@@ -16855,6 +16855,73 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Binoculars for the Velavadar safari", "Sun protection"],
   },
 
+  // ===== Gujarat — Stage 10: Gandhinagar city hub, completing the
+  // 9-city hub set from gujarattourism.com's navigation (Ahmedabad,
+  // Gandhinagar, Vadodara, Rajkot, Kutch, Junagadh, Jamnagar, Surat,
+  // Bhavnagar all now built). Scraped from
+  // gujarattourism.com/central-zone/gandhinagar.html plus
+  // corroborating web search for Gandhinagar's real planned-capital
+  // history (its city planner trained under Le Corbusier on
+  // Chandigarh) and the Adalaj Stepwell's documented 1498 origin.
+  {
+    id: "gandhinagar",
+    name: "Gandhinagar",
+    state: "Gujarat",
+    tagline: "A Planned Capital City Beside a 15th-Century Stepwell Legend",
+    description: "Gandhinagar, Gujarat's capital since 1970, was genuinely designed as a planned city — its 1966 master plan led by H.K. Mewada, who had trained as an assistant under Le Corbusier on the Chandigarh project in the 1950s, giving Gandhinagar's wide sectors and green spaces a real design lineage back to that landmark. Just outside the city, Adalaj Stepwell is a genuine Indo-Islamic architectural landmark begun in 1498 by Rana Veer Singh, completed after his death by Sultan Mahmud Begada — with a well-known local legend attached to its completion involving the Rana's widow, Rudabai. The city's Akshardham Temple, meanwhile, is a real, contemporary Hindu temple complex with an evening water-and-light show in its gardens.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg/1280px-Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg/1280px-Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg/1280px-Adalaj_Stepwell%2C_Gandhinagar%2C_Gujarat_%282018%29_4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg/1280px-Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/77/Akshardham_Gandhinagar_Gujarat.jpg",
+    ],
+    imageCredit: "Photos: Amitraj Deshmukh, Shivajidesai29, Harsh4101991 — Wikimedia Commons, CC BY-SA 3.0/4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "1 day",
+    highlights: [{ name: "Adalaj Stepwell (begun 1498)" }, { name: "Akshardham Temple & water show" }, { name: "Indroda Nature Park & Dinosaur Fossil Park" }, { name: "Dandi Kutir Museum" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~1h20m to Ahmedabad (AMD), ~25 km away", fromMumbai: "~1h05m to Ahmedabad", fromBangalore: "~2h to Ahmedabad", duration: "1–2h + short road transfer", costRange: "₹2,500–₹9,000", tips: "Gandhinagar shares Ahmedabad's airport, roughly a 30–40 minute drive away." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Ahmedabad — ~12–14h", fromMumbai: "Via Ahmedabad — ~7–8h", fromBangalore: "Via Ahmedabad — ~24h+", duration: "7–24h + short transfer", costRange: "₹400–₹2,500", tips: "Gandhinagar has its own railway station, though many visitors route via Ahmedabad Junction." },
+      { mode: "Road", icon: "🚗", fromDelhi: "~930km, ~14–16h", fromMumbai: "~510km, ~8–9h", fromBangalore: "Not practical", duration: "~30–40 min from Ahmedabad", costRange: "₹500–₹1,200 (cab from Ahmedabad)", tips: "Genuinely an easy day trip from Ahmedabad rather than requiring a separate overnight stay." },
+    ],
+    accommodation: [
+      { type: "Note on staying overnight", priceRange: "—", examples: [], description: "Most visitors day-trip from Ahmedabad, which has far more hotel options and is only 30–40 minutes away." },
+      { type: "Gandhinagar Hotels", priceRange: "₹1,500–₹5,000/night", examples: ["Hotels near Sector 11/12"], description: "A practical option if staying near GIFT City or for a government/business visit." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Widely available", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the sector-planned city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~25 km", type: "City", isHidden: false, id: "ahmedabad" },
+      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 350, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1600, food: 600, transport: 450, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4300, food: 1000, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Stepwell & Temple Day Trip", morning: "Adalaj Stepwell — the five-storey carved Indo-Islamic stepwell and its well-known local legend.", afternoon: "Akshardham Temple's carved architecture and gardens.", evening: "Akshardham's evening water-and-light show (seasonal/timing varies — check ahead).", stay: "Day trip from Ahmedabad", meals: "Gujarati thali (₹300)", tips: "Genuinely doable as a single day trip from Ahmedabad rather than requiring an overnight stay." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A planned, orderly capital city with wide, well-lit sectors and active local policing"],
+      precautions: ["Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["A comfortable solo day trip given the well-organized sector layout and steady tourist footfall at Adalaj and Akshardham"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Adalaj Stepwell and Akshardham Temple complex", "Main sector roads"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2200,
+    mustEat: ["Gujarati Thali", "Akshardham premises food court"],
+    packingTips: ["Comfortable walking shoes for the stepwell's steps", "Modest clothing for the temple", "No photography inside Akshardham's main shrine — check current rules"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
