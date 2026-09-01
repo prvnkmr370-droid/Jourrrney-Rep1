@@ -16922,6 +16922,473 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the stepwell's steps", "Modest clothing for the temple", "No photography inside Akshardham's main shrine — check current rules"],
   },
 
+  // ===== Gujarat — Stage 11: Beaches category, scraped from
+  // gujarattourism.com/beaches.html (11 beaches listed). Ahmedpur
+  // Mandavi and Okha Madhi Beach are documented real gaps this
+  // stage: both are genuinely on the site's list, but no verified
+  // Wikimedia Commons photo could be found for either after repeated
+  // searches, so — per the "only verified images" standard —
+  // standalone cards for them were not built. The other 9 are built
+  // below.
+  {
+    id: "shivrajpur-beach",
+    name: "Shivrajpur Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gujarat's First Blue Flag Beach",
+    description: "Shivrajpur Beach, about 12 km from Dwarka along the Dwarka-Okha Highway, genuinely became Gujarat's first Blue Flag beach in October 2020, certified by the Denmark-based Foundation for Environment Education against 33 strict criteria covering water quality, safety, and waste management. Developed by the Tourism Corporation of Gujarat with a real ₹130 crore investment, its white sand and clear, azure water are a genuine standout on a coastline not usually associated with this kind of clarity.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shivrajpur_beach_Devbhoomi_Dwarka_district.jpg/1280px-Shivrajpur_beach_Devbhoomi_Dwarka_district.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shivrajpur_beach_Devbhoomi_Dwarka_district.jpg/1280px-Shivrajpur_beach_Devbhoomi_Dwarka_district.jpg",
+    imageCredit: "Photo: VasuVR — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Gujarat's first Blue Flag beach (2020)" }, { name: "Clear water & white sand" }, { name: "Boating and water sports" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Dwarka — long haul", fromMumbai: "Via Dwarka — long haul", fromBangalore: "Not practical", duration: "~12 km / ~20 min from Dwarka", costRange: "₹150–₹400 (auto/cab from Dwarka)", tips: "Easily combined with a Dwarka temple visit on the same day." },
+    ],
+    accommodation: [
+      { type: "Base in Dwarka", priceRange: "₹1,000–₹5,000/night (estimate)", examples: ["Hotels in Dwarka town"], description: "The natural base — a short drive from the beach." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Dwarka", notes: "Standard way to reach the beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dwarka temples", distance: "~12 km", type: "Temple Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1800, food: 600, transport: 350, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4700, food: 1000, transport: 600, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Blue Flag Beach", morning: "Relax at Shivrajpur's clear water and white sand.", afternoon: "Boating or water sports (seasonal availability).", evening: "Return to Dwarka.", stay: "Dwarka base", meals: "Local Gujarati food in Dwarka (₹250)", tips: "Genuinely one of the cleanest, best-maintained beaches on Gujarat's coast — worth the short detour from Dwarka." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An officially certified, well-managed and actively maintained beach with safety infrastructure as part of its Blue Flag standard"],
+      precautions: ["Standard beach-safety caution around water sports"],
+      soloTips: ["A comfortable solo daytime visit given the maintained facilities"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Dwarka Police Station", number: "02892-234523" }, { label: "Police", number: "100" }],
+      safeZones: ["The certified beach area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 1400,
+    mustEat: ["Local Gujarati food in Dwarka"],
+    packingTips: ["Swimwear", "Sun protection", "Reusable water bottle — this beach takes its Blue Flag environmental standard seriously"],
+  },
+
+  {
+    id: "madhavpur-beach",
+    name: "Madhavpur Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Where Krishna Is Said to Have Married Rukmini",
+    description: "Madhavpur Beach sits by Madhavpur Ghed village near Porbandar, a real seaside village central to a well-known Hindu legend — that Lord Krishna married Rukmini here. The genuine Madhavpur Fair, held annually in Chaitra (around Ram Navami), re-enacts the wedding with a chariot procession, a ceremonial wedding canopy, and an evening procession, drawing real cultural interest including a documented connection to the Idu-Mishmi community of Arunachal Pradesh, who trace their lineage to Rukmini's father.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0a/CAM06754.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0a/CAM06754.jpg",
+    imageCredit: "Photo: Saawariyasairam — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach", "Spiritual"],
+    bestSeason: "November – February; the Madhavpur Fair runs around Ram Navami (Chaitra month, roughly March–April)",
+    duration: "Half day",
+    highlights: [{ name: "Krishna-Rukmini wedding legend" }, { name: "Madhavpur Fair (Chaitra)" }, { name: "Quiet, uncrowded beach" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Porbandar — long haul", fromMumbai: "Via Porbandar — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Porbandar", costRange: "₹800–₹1,800 (cab from Porbandar)", tips: "The fair (if your dates align) is genuinely worth timing a visit around, given the real cultural procession." },
+    ],
+    accommodation: [
+      { type: "Base in Porbandar", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in Porbandar town"], description: "The practical base for a day trip out to Madhavpur." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 from Porbandar", notes: "Standard way to reach the village and beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Porbandar (Kirti Mandir)", distance: "~65 km", type: "Heritage", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1900, food: 600, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4800, food: 1000, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Legend & Beach", morning: "Explore Madhavpur village and its temple tied to the Krishna-Rukmini legend.", afternoon: "Relax at the quiet, uncrowded beach.", evening: "Return to Porbandar.", stay: "Porbandar base", meals: "Local Kathiyawadi food (₹250)", tips: "Outside fair days, this is a genuinely peaceful, low-footfall beach — a good contrast to busier coastal stops." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quiet, low-crowd rural beach village"],
+      precautions: ["Limited facilities outside fair days — carry water and essentials"],
+      soloTips: ["A comfortable solo daytime visit; the fair period is busier and more crowded"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Porbandar SP Office", number: "0286-2211222" }, { label: "Police", number: "100" }],
+      safeZones: ["The main village and beach area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 600,
+    mustEat: ["Local Kathiyawadi food in Porbandar"],
+    packingTips: ["Water and snacks — limited facilities outside fair days", "Sun protection"],
+  },
+
+  {
+    id: "tithal-beach",
+    name: "Tithal Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Black-Brown Sands Beside a Modern Swaminarayan Temple",
+    description: "Tithal Beach, 4 km west of Valsad town, is genuinely known for its distinctive black-and-brownish sand — unusual on the Gujarat coast. The Shri Swaminarayan Temple sits directly on the beach's north end, its construction begun in 1991 and administered by BAPS, while the Shri Sai Baba temple lies a short walk south, giving the beach a real dual role as both a recreational and pilgrimage stop. Jet skis and speed boats have genuinely been added in recent years for water-sports enthusiasts.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tithal_Beach%2C_Valsad.jpg/1280px-Tithal_Beach%2C_Valsad.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tithal_Beach%2C_Valsad.jpg/1280px-Tithal_Beach%2C_Valsad.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tithal_Beach%2C_Valsad.jpg/1280px-Tithal_Beach%2C_Valsad.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sunset_time_Tithal_beach.jpg/1280px-Sunset_time_Tithal_beach.jpg",
+    ],
+    imageCredit: "Photos: Abhi13188 (CC BY-SA 3.0), Rish0728 (CC BY-SA 4.0) — Wikimedia Commons.",
+    category: ["Beach", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Distinctive black-brown sand" }, { name: "Shri Swaminarayan Temple on the beach" }, { name: "Jet ski & speed boat rides" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Valsad — long haul", fromMumbai: "~180 km, ~4h", fromBangalore: "Not practical", duration: "~4 km / ~10 min from Valsad town", costRange: "₹100–₹300 (auto from Valsad)", tips: "One of the closer Gujarat beaches to Mumbai — a feasible weekend trip." },
+    ],
+    accommodation: [
+      { type: "Base in Valsad", priceRange: "₹1,000–₹4,000/night (estimate)", examples: ["Hotels in Valsad town"], description: "A short drive from the beach." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300 from Valsad", notes: "Standard way to reach the beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Valsad town", distance: "~4 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 600, transport: 350, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7600, accommodation: 4600, food: 1000, transport: 600, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Beach & Temple", morning: "Walk the black-sand beach.", afternoon: "Visit the Swaminarayan and Sai Baba temples.", evening: "Jet ski or speed boat ride, then sunset.", stay: "Valsad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely a quick, easy day trip from South Gujarat or even a weekend run from Mumbai." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A popular, regularly-visited local beach with temple foot traffic"],
+      precautions: ["Standard water-sports safety precautions"],
+      soloTips: ["A comfortable solo daytime visit given the steady local and pilgrim footfall"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Valsad City Police Station", number: "02632-244233" }, { label: "Police", number: "100" }],
+      safeZones: ["The main beach and temple area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 1900,
+    mustEat: ["Local Gujarati food in Valsad"],
+    packingTips: ["Swimwear", "Modest clothing for temple visits", "Sun protection"],
+  },
+
+  {
+    id: "mandvi-beach",
+    name: "Mandvi Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Private Royal Beach Beside a 1929 Summer Palace",
+    description: "Mandvi Beach, in Kutch, sits beside Vijay Vilas Palace — genuinely built 1920–1929 by Maharao Khengarji III as a summer residence for his heir, Yuvraj Vijayaraji, on a real 450-acre estate in Indo-European style, with artisans brought in from Rajasthan, Bengal and Saurashtra. The palace's own 2 km private beach section is maintained as an eco-friendly sanctuary; the royal family genuinely still uses the palace as a summer home, having moved here permanently after the 2001 earthquake damaged their other Bhuj residence.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mandvi_beach_kutch.jpg/1280px-Mandvi_beach_kutch.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mandvi_beach_kutch.jpg/1280px-Mandvi_beach_kutch.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mandvi_beach_kutch.jpg/1280px-Mandvi_beach_kutch.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Mandvi_Beach_in_Kutch.jpg",
+    ],
+    imageCredit: "Photos: Nd gadhvi, Arkadeep Meta — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach", "Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "Vijay Vilas Palace (built 1920–1929)" }, { name: "450-acre royal estate" }, { name: "Windmills along the coastline" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~60 km / ~1.25h from Bhuj", costRange: "₹1,000–₹2,000 (cab from Bhuj)", tips: "Genuinely combinable with the White Rann on the same Kutch circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Mandvi/Bhuj", priceRange: "₹1,200–₹6,000/night (estimate)", examples: ["Hotels in Mandvi town", "Bhuj hotels"], description: "Mandvi itself has a growing set of beach-facing options; Bhuj remains the wider regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,000 from Bhuj", notes: "Standard way to reach Mandvi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj (Aina Mahal, Prag Mahal)", distance: "~60 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2100, food: 650, transport: 600, activities: 550 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1100, transport: 900, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Palace & Beach", morning: "Vijay Vilas Palace's royal interiors and grounds.", afternoon: "Relax on the palace's private beach section.", evening: "Return to Bhuj.", stay: "Bhuj or Mandvi base", meals: "Kutchi thali (₹300)", tips: "The palace is genuinely still an active royal summer residence, not just a museum — check current visiting-hours access." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed, eco-maintained private beach with palace-grounds security"],
+      precautions: ["Standard beach-safety caution"],
+      soloTips: ["A comfortable solo daytime visit given the managed, ticketed access"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds and beach section"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1700,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Swimwear", "Comfortable walking shoes for the palace grounds", "Sun protection"],
+  },
+
+  {
+    id: "pingleshwar-beach",
+    name: "Pingleshwar Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Turbulent, Uncrowded Beach Beside a 900-Year-Old Shiva Shrine",
+    description: "Pingleshwar Beach, about 100 km from Bhuj, is named for the nearby Pingleshwar Mahadev temple — genuinely thought to be more than 900 years old, and the site of real local fairs on Shravan Mondays. The beach itself is honestly rougher than Gujarat's calmer stretches, with strong currents and rugged high tides that make swimming inadvisable, but its low commercial footprint and near-total absence of hawkers make it a genuinely peaceful, uncrowded stop for travelers seeking Kutch's quieter coast.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Life%27s_a_Beach.jpg/1280px-Life%27s_a_Beach.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Life%27s_a_Beach.jpg/1280px-Life%27s_a_Beach.jpg",
+    imageCredit: "Photo: Nisarg Vaghela — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach", "Offbeat", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "900-year-old Pingleshwar Mahadev temple" }, { name: "Uncrowded, low-commercial beach" }, { name: "Shravan Monday fairs" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~100 km / ~2.3h from Bhuj", costRange: "₹1,500–₹2,800 (cab from Bhuj)", tips: "Swimming is genuinely not recommended here given the strong currents — this is a walking-and-viewing beach, not a swimming one." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base for this offbeat detour." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹2,800 from Bhuj", notes: "The practical way to reach this remote beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandvi Beach", distance: "~40 km", type: "Beach", isHidden: false, id: "mandvi-beach" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 350, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2100, food: 650, transport: 650, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1100, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Offbeat Shrine & Beach", morning: "Visit the Pingleshwar Mahadev temple.", afternoon: "Walk the quiet beach — swimming not advised given the strong currents.", evening: "Return to Bhuj.", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "Genuinely one of Kutch's least commercial beaches — bring your own snacks and water since there are few stalls." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A genuinely quiet, low-footfall beach with a small local pilgrim presence around the temple"],
+      precautions: ["Strong currents — swimming is not advised", "Limited facilities and mobile signal — plan accordingly", "Visit during daylight hours given the remoteness"],
+      soloTips: ["Better visited with a companion or as part of an organized Kutch beach circuit than entirely alone, given the remote, low-footfall setting"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds and main beach walking area"],
+      avoidAreas: ["Swimming in the water given the strong currents"],
+    },
+    rating: 4.0,
+    reviews: 400,
+    mustEat: ["Carry your own snacks — limited stalls at the beach"],
+    packingTips: ["Water and snacks", "Sun protection", "Comfortable footwear for the sand and temple steps"],
+  },
+
+  {
+    id: "dumas-beach",
+    name: "Dumas Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Surat's Distinctive Dark-Sand Evening Promenade",
+    description: "Dumas Beach, about 21 km from Surat, is genuinely known for its dark, almost-black sand — a distinctive local feature — and draws real weekend crowds for its lively evening food-stall scene and promenade atmosphere. It's the closest, most accessible beach outing from Surat city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dumas_Beach_Surat.jpg/1280px-Dumas_Beach_Surat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dumas_Beach_Surat.jpg/1280px-Dumas_Beach_Surat.jpg",
+    imageCredit: "Photo: Imanushkasingh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach"],
+    bestSeason: "November – February; weekday visits are quieter",
+    duration: "Half day",
+    highlights: [{ name: "Distinctive dark, near-black sand" }, { name: "Evening food-stall promenade" }, { name: "Easy day trip from Surat" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "~280 km, ~5h", fromBangalore: "Not practical", duration: "~21 km / ~35 min from Surat", costRange: "₹250–₹600 (auto/cab from Surat)", tips: "Weekends draw large crowds for the food-stall scene — a weekday evening is quieter and more relaxed." },
+    ],
+    accommodation: [
+      { type: "Base in Surat", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Surat city"], description: "A short evening trip from the city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹250–₹600 from Surat", notes: "Standard way to reach the beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Surat city", distance: "~21 km", type: "City", isHidden: false, id: "surat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1000, transport: 600, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Evening at Dumas", morning: "Surat city sightseeing.", afternoon: "Rest.", evening: "Dumas Beach's food-stall promenade at sunset.", stay: "Surat base", meals: "Beach food-stall dinner (₹250)", tips: "Genuinely most enjoyable in the evening rather than midday, when the promenade and food stalls come alive." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy, well-frequented promenade in the evenings with steady crowds and vendor presence"],
+      precautions: ["Weekend evenings get very crowded — keep valuables secure", "Swimming is not advised due to the terrain and currents"],
+      soloTips: ["Comfortable during the busy evening hours when the promenade is active; quieter and less advisable to linger alone late at night"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Surat City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main promenade and food-stall area during evening hours"],
+      avoidAreas: ["Isolated stretches after the crowds thin out late at night"],
+    },
+    rating: 4.1,
+    reviews: 2500,
+    mustEat: ["Beach food-stall snacks (bhelpuri, pav bhaji)"],
+    packingTips: ["Cash for food stalls", "Comfortable footwear"],
+  },
+
+  {
+    id: "suvali-beach",
+    name: "Suvali Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Quieter Alternative to Dumas, Near Hazira Port",
+    description: "Suvali Beach, near Surat's Hazira industrial and port area, is a genuinely calmer, less crowded alternative to the more popular Dumas Beach — a straightforward stretch of grey sand favored by locals for a quiet evening out rather than the livelier promenade scene found closer to the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Suvali_Beach.JPG/1280px-Suvali_Beach.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Suvali_Beach.JPG/1280px-Suvali_Beach.JPG",
+    imageCredit: "Photo: Tarunyadav1989 — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Beach"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Quieter than Dumas Beach" }, { name: "Near Hazira port" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "~300 km, ~5.5h", fromBangalore: "Not practical", duration: "~25 km / ~40 min from Surat", costRange: "₹300–₹700 (auto/cab from Surat)", tips: "A good option if Dumas feels too crowded on a given day." },
+    ],
+    accommodation: [
+      { type: "Base in Surat", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Surat city"], description: "A short trip from the city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Surat", notes: "Standard way to reach the beach", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Surat city", distance: "~25 km", type: "City", isHidden: false, id: "surat" },
+      { name: "Dumas Beach", distance: "~15 km", type: "Beach", isHidden: false, id: "dumas-beach" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 450, activities: 350 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1000, transport: 650, activities: 900 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Quiet Beach Evening", morning: "Surat city sightseeing.", afternoon: "Rest.", evening: "Suvali Beach at sunset.", stay: "Surat base", meals: "Local dinner in Surat (₹300)", tips: "A genuinely quieter alternative when Dumas is too crowded." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A genuinely quieter beach with lower footfall than Dumas — less vendor and crowd presence to rely on"],
+      precautions: ["Lower footfall means less activity/oversight than busier beaches — visit during daylight or early evening", "Being near an industrial port area, stick to the main beach access points"],
+      soloTips: ["Better visited with a companion or in the busier early-evening hours rather than very late or very early"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Surat City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main beach access area during daylight/early evening"],
+      avoidAreas: ["Isolated stretches after dark"],
+    },
+    rating: 3.9,
+    reviews: 700,
+    mustEat: ["Local dinner in Surat"],
+    packingTips: ["Comfortable footwear", "Sun protection"],
+  },
+
+  {
+    id: "dandi-beach",
+    name: "Dandi Beach",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Real Endpoint of Gandhi's 1930 Salt March",
+    description: "Dandi Beach, in Navsari district, is genuinely where Mahatma Gandhi's Salt March ended — a 24-day, 387 km march from Sabarmati Ashram that began 12 March 1930 with 78 volunteers, growing as it went, until Gandhi broke the British salt tax laws here on 6 April 1930 at 8:30am, sparking real large-scale civil disobedience across India. The National Salt Satyagraha Memorial at Dandi commemorates the march with sculptural depictions of Gandhi and his fellow marchers, making this a genuinely significant, if quiet, site in India's independence history rather than a conventional beach destination.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Salt_march_%5E17_.._-_Flickr_-_nevil_zaveri_%28thank_you_for_20-M_views-%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Salt_march_%5E17_.._-_Flickr_-_nevil_zaveri_%28thank_you_for_20-M_views-%29.jpg",
+    imageCredit: "Photo: nevil zaveri from Navsari — Wikimedia Commons, CC BY 2.0.",
+    category: ["Beach", "Heritage", "Gandhi Circuit"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "National Salt Satyagraha Memorial" }, { name: "Real endpoint of the 1930 Salt March" }, { name: "Sculptural depictions of the marchers" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Navsari — long haul", fromMumbai: "~260 km, ~5h", fromBangalore: "Not practical", duration: "~13 km / ~25 min from Navsari town", costRange: "₹200–₹500 (auto/cab from Navsari)", tips: "Genuinely a place to visit for its history rather than as a swimming beach — plan time for the memorial." },
+    ],
+    accommodation: [
+      { type: "Base in Navsari/Surat", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Hotels in Navsari town", "Surat hotels for a day trip"], description: "Either works — Navsari is closer, Surat has more options." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Navsari", notes: "Standard way to reach Dandi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Navsari town", distance: "~13 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 550, food: 300, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1700, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7300, accommodation: 4400, food: 1000, transport: 600, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Salt March Memorial", morning: "National Salt Satyagraha Memorial — sculptures depicting the march and its supporters.", afternoon: "Walk the actual beach where Gandhi broke the salt law.", evening: "Return to Navsari.", stay: "Navsari base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth reading up on the Salt March's history before visiting — it substantially deepens the site's impact." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A quiet, respectful heritage/memorial site with regular visitor traffic"],
+      precautions: ["Standard memorial-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Navsari Town Police Station", number: "02637-247505" }, { label: "Police", number: "100" }],
+      safeZones: ["The memorial and beach area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1100,
+    mustEat: ["Local Gujarati food in Navsari"],
+    packingTips: ["Comfortable walking shoes", "Sun protection"],
+  },
+
+  {
+    id: "mahuva-beach",
+    name: "Mahuva Beach (Bhavani Beach)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The 'Kashmir of Saurashtra,' Framed by an Ancient Temple",
+    description: "Mahuva, about 96 km from Bhavnagar, is genuinely nicknamed the \"Kashmir of Saurashtra\" for its unusually mild weather and lush, palm- and coconut-dotted countryside compared to the rest of the region. Its beach is also called Bhavani Beach, after the historic Bhavani Mata Temple perched on a dune right at its sandy edge — a real, still-active pilgrimage site that gives the calm, scenic shoreline its local name.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Bhavani_Mata_Sea_shore%2C_Mahuva.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Bhavani_Mata_Sea_shore%2C_Mahuva.jpg",
+    imageCredit: "Photo: MEHUL B VYAS — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Bhavani Mata Temple on the dunes" }, { name: "Mild climate — the 'Kashmir of Saurashtra'" }, { name: "Lush, palm-dotted countryside" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~96 km / ~2h from Bhavnagar", costRange: "₹1,500–₹3,000 (cab from Bhavnagar)", tips: "Genuinely worth the drive for the countryside scenery alone, not just the beach itself." },
+    ],
+    accommodation: [
+      { type: "Base in Mahuva/Bhavnagar", priceRange: "₹1,000–₹4,000/night (estimate)", examples: ["Hotels in Mahuva town", "Bhavnagar hotels"], description: "Mahuva itself has basic options; Bhavnagar is the wider regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhavnagar", notes: "Standard way to reach Mahuva", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhavnagar", distance: "~96 km", type: "City", isHidden: false, id: "bhavnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 350, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1000, transport: 900, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Temple & Coastal Countryside", morning: "Bhavani Mata Temple on the dunes.", afternoon: "Relax on the calm beach and explore Mahuva's palm-lined countryside.", evening: "Return to Bhavnagar.", stay: "Bhavnagar base", meals: "Local Kathiyawadi food (₹250)", tips: "Genuinely one of Saurashtra's more scenic, greener coastal stops — a nice contrast to the region's drier stretches." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A calm, quiet coastal town with a real local pilgrimage site drawing regular visitor traffic"],
+      precautions: ["Standard beach-safety caution"],
+      soloTips: ["A comfortable solo daytime visit given the temple's steady local footfall"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Mahuva Police Station", number: "02844-223099" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and beach area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 800,
+    mustEat: ["Local Kathiyawadi food"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing for the temple", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
