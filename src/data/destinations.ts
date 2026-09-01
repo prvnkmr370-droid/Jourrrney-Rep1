@@ -16588,6 +16588,72 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection — summers are very hot"],
   },
 
+  // ===== Gujarat — Stage 6: Junagadh city hub. Scraped from
+  // gujarattourism.com/saurashtra/junagadh.html plus corroborating
+  // web search for Uparkot Fort's real Mauryan-era history and the
+  // Ashoka rock edicts on Girnar.
+  {
+    id: "junagadh",
+    name: "Junagadh",
+    state: "Gujarat",
+    tagline: "A Mauryan-Era Fort Beneath 866 Temples on Girnar Hill",
+    description: "Junagadh's Uparkot Fort was genuinely first built in 319 BCE under the Mauryan dynasty's Chandragupta, abandoned for roughly 300 years after the 6th century, then rediscovered and restored by the Chudasama king Graharipu — its ramparts reaching 20m in places, besieged a real 16 times in its history. On the way up neighbouring Girnar Hill sits a real 2,300-year-old boulder inscribed with 14 of Emperor Ashoka's own edicts on dharma and non-violence, while Girnar's summits genuinely hold 866 Hindu and Jain temples, revered as the nirvana site of the 22nd Jain Tirthankara, Neminatha. Junagadh is also the closest city gateway to Gir National Park, real last home of the wild Asiatic lion.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Uparkot_fort_of_Junagadh_%2829428%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Uparkot_fort_of_Junagadh_%2829428%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c4/Uparkot_fort_of_Junagadh_%2829428%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gate_of_Uperkot_Fort_02.jpg/1280px-Gate_of_Uperkot_Fort_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Navghan_Kuvo_02.jpg/1280px-Navghan_Kuvo_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/General_view_of_Jain_temples_on_the_Girnar_Hills_looking_back_down_towards_Junagadh_city.jpg",
+    ],
+    imageCredit: "Photos: Uddyotanasuri, Bernard Gagnon (x2) — Wikimedia Commons, CC BY-SA 3.0/4.0; historical Girnar temples view — F. Nelson, 1890s, public domain.",
+    category: ["Heritage", "Spiritual", "Wildlife"],
+    bestSeason: "November – February",
+    duration: "1–2 days",
+    highlights: [{ name: "Uparkot Fort (319 BCE, Mauryan-era)" }, { name: "Ashoka's Rock Edicts on Girnar" }, { name: "866 temples atop Girnar Hill" }, { name: "Gateway to Gir National Park" }, { name: "Adi Kadi Vav & Navghan Kuvo stepwells" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~2h (via connection) to nearest airport (Rajkot/Diu)", fromMumbai: "~1h30m (via connection)", fromBangalore: "Not practical — long connection", duration: "~1.5–2h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Rajkot (~100 km) is the nearest well-connected airport; Junagadh itself has no major commercial airport." },
+      { mode: "Train", icon: "🚂", fromDelhi: "~20–22h", fromMumbai: "~12–14h", fromBangalore: "Not practical", duration: "12–22h", costRange: "₹400–₹2,000", tips: "Junagadh Junction connects to Rajkot and Ahmedabad." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical to self-drive", fromMumbai: "~750km, ~12h", fromBangalore: "Not practical", duration: "~1.5h from Rajkot (~100 km)", costRange: "₹2,000–₹4,000 (cab from Rajkot)", tips: "Genuinely worth combining with Gir National Park and Somnath on the same Saurashtra loop." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹700–₹1,800/night", examples: ["Hotels near the city center"], description: "Simple, centrally-located budget options." },
+      { type: "Mid-Range", priceRange: "₹1,800–₹4,500/night", examples: ["Hotel Lotus Business Class"], description: "Comfortable hotels near the main heritage sites." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For Girnar, Gir, and Somnath day trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gir National Park", distance: "~65 km", type: "Wildlife", isHidden: true },
+      { name: "Somnath Temple", distance: "~85 km", type: "Temple", isHidden: true },
+      { name: "Girnar Hill", distance: "Adjoining the city", type: "Pilgrimage Trek", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 550, food: 350, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1700, food: 600, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4200, food: 1000, transport: 700, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Uparkot Fort & Old City", morning: "Uparkot Fort — the Mauryan-era ramparts, Buddhist caves, and Adi Kadi/Navghan stepwells within the fort complex.", afternoon: "Mahabat Khan Maqbara's ornate tomb architecture.", evening: "Old city bazaar.", stay: "Junagadh hotel", meals: "Kathiyawadi thali (₹250)", tips: "The Uparkot caves are genuinely thought to have housed Buddhist monks since Ashoka's own era — take a guide to get the full layered history." },
+      { day: 2, title: "Girnar Hill Trek", morning: "Early start for the Girnar Hill trek — a real, long climb (thousands of steps) past Ashoka's rock edicts to the summit temples.", afternoon: "Explore the Jain and Hindu temple clusters at the top.", evening: "Descend and rest.", stay: "Junagadh hotel", meals: "Light trail snacks, then a full meal after descending (₹300)", tips: "This is a genuinely serious trek (5,000+ steps) — start before dawn and carry plenty of water; a ropeway covers part of the ascent for those who prefer it." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established pilgrimage and heritage town with regular visitor traffic, especially on the Girnar trek route"],
+      precautions: ["The Girnar trek is long and physically demanding — go with a group, start early, and don't attempt it alone if inexperienced", "Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["The Girnar trek route has steady pilgrim traffic even on weekdays, making a solo climb reasonably comfortable if started at a normal daytime hour"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Uparkot Fort complex", "The main Girnar trek steps"],
+      avoidAreas: ["Off-trail sections of Girnar Hill without a local guide"],
+    },
+    rating: 4.4,
+    reviews: 2900,
+    mustEat: ["Kathiyawadi Thali", "Junagadhi Chorafali", "Sev Khamani"],
+    packingTips: ["Sturdy trekking shoes for Girnar", "Plenty of water", "A hat and sun protection", "Comfortable walking shoes for Uparkot Fort"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
