@@ -16787,6 +16787,74 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection — summers are very hot and humid"],
   },
 
+  // ===== Gujarat — Stage 9: Bhavnagar city hub. Scraped from
+  // gujarattourism.com/saurashtra/bhavnagar.html plus corroborating
+  // web search (cross-checked against Wikipedia for Nilambag
+  // Palace's disputed founding date — sources gave 1859 and 1879;
+  // Wikipedia's own article states 1894 by William Emerson, used
+  // here as the more citable single source) and Velavadar's real
+  // 1976 founding and grassland-hunting history.
+  {
+    id: "bhavnagar",
+    name: "Bhavnagar",
+    state: "Gujarat",
+    tagline: "Gateway to India's Only Tropical-Grassland National Park",
+    description: "Bhavnagar's Nilambag Palace, built in 1894 by British architect William Emerson as a royal residence for the ruling Gohil dynasty, is today a genuine heritage hotel set on a 10-acre estate. The city's real standout, though, is Velavadar Blackbuck National Park, about 42 km away — a former Maharaja's hunting grassland (he once hunted blackbuck here with trained cheetahs) that became a protected sanctuary in 1976 and was expanded to 34 sq km by 1980, now genuinely India's only national park protecting tropical grassland habitat, home to blackbuck antelope, striped hyena, and wolves. Bhavnagar is also the practical base for reaching Palitana's Shatrunjaya Hill, one of Jainism's holiest pilgrimage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nilambagh_Palace%2C_Bhavnagar.jpg/1280px-Nilambagh_Palace%2C_Bhavnagar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nilambagh_Palace%2C_Bhavnagar.jpg/1280px-Nilambagh_Palace%2C_Bhavnagar.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nilambagh_Palace%2C_Bhavnagar.jpg/1280px-Nilambagh_Palace%2C_Bhavnagar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg/1280px-Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/A_Blackbuck_at_the_Velavadar_Blackbuck_National_Park.jpg/1280px-A_Blackbuck_at_the_Velavadar_Blackbuck_National_Park.jpg",
+    ],
+    imageCredit: "Photos: myriad ways (CC BY 2.0), Arun76tn, Uday Damodaran — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Wildlife", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "1–2 days",
+    highlights: [{ name: "Velavadar Blackbuck National Park" }, { name: "Nilambag Palace (built 1894)" }, { name: "Gateway to Palitana's Shatrunjaya Hill" }, { name: "Khodiyar Mandir" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~2h (via connection)", fromMumbai: "~1h direct", fromBangalore: "Not practical — long connection", duration: "1–2h", costRange: "₹3,000–₹9,500", tips: "Bhavnagar Airport has modest but usable domestic connectivity, mainly via Mumbai." },
+      { mode: "Train", icon: "🚂", fromDelhi: "~18–20h", fromMumbai: "~10–12h", fromBangalore: "Not practical", duration: "10–20h", costRange: "₹400–₹2,000", tips: "Bhavnagar Terminus connects to Ahmedabad." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical to self-drive", fromMumbai: "~600km, ~11h", fromBangalore: "Not practical", duration: "~3h from Ahmedabad (~200 km)", costRange: "₹3,000–₹5,500", tips: "Easily combined with Palitana (~50 km) on the same Saurashtra trip." },
+    ],
+    accommodation: [
+      { type: "Heritage", priceRange: "₹4,000–₹9,000/night", examples: ["Nilambag Palace Hotel"], description: "Genuinely sleep inside the 1894 royal palace itself — Bhavnagar's signature stay." },
+      { type: "Mid-Range", priceRange: "₹1,800–₹4,000/night", examples: ["Hotels near Ghogha Circle"], description: "Comfortable, centrally-located options." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "Taxi (Full Day)", cost: "₹2,000–₹4,000/day", notes: "For Velavadar National Park and Palitana day trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Velavadar Blackbuck National Park", distance: "~42 km", type: "Wildlife", isHidden: true },
+      { name: "Palitana (Shatrunjaya Hill)", distance: "~50 km", type: "Pilgrimage", isHidden: true },
+      { name: "Nishkalank Mahadev Temple", distance: "~25 km", type: "Temple", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 550, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5200, food: 1100, transport: 900, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Palace & City Heritage", morning: "Nilambag Palace's colonial-royal architecture (stay here if possible for the full experience).", afternoon: "Gandhi Smriti and Khodiyar Mandir.", evening: "Bhavnagar old-town bazaar.", stay: "Nilambag Palace Hotel or a city hotel", meals: "Kathiyawadi thali (₹250)", tips: "Even non-guests can usually visit the palace's public areas — check ahead." },
+      { day: 2, title: "Velavadar Blackbuck Safari", morning: "Early jeep safari into Velavadar's open grassland — genuinely excellent blackbuck sightings, and a real chance of spotting striped hyena.", afternoon: "Return to Bhavnagar.", evening: "Rest.", stay: "Bhavnagar hotel", meals: "Packed breakfast for the safari, local lunch after (₹300)", tips: "The open grassland habitat here is genuinely unlike any other Indian national park — go for sunrise for the best light and animal activity." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calm, established Saurashtra city with a genuine heritage-and-wildlife tourism circuit"],
+      precautions: ["Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["A comfortable solo trip — book the Velavadar safari through an official operator/lodge rather than informal transport"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["City center", "Velavadar National Park's managed safari routes"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1900,
+    mustEat: ["Kathiyawadi Thali", "Ganthiya (Bhavnagar-style)", "Local sweets from the old town"],
+    packingTips: ["Comfortable walking shoes", "Binoculars for the Velavadar safari", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
