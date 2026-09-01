@@ -16523,6 +16523,71 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Warm layers for cold desert nights", "Sunscreen and a hat for daytime desert heat", "Comfortable walking shoes for the salt flats", "A power bank — charging can be limited at the tent city"],
   },
 
+  // ===== Gujarat — Stage 5: Rajkot city hub. Scraped from
+  // gujarattourism.com/saurashtra/rajkot.html plus corroborating web
+  // search for Kaba Gandhi No Delo and Rajkumar College's real
+  // history.
+  {
+    id: "rajkot",
+    name: "Rajkot",
+    state: "Gujarat",
+    tagline: "Where a Young Mohandas Gandhi Grew Up",
+    description: "Rajkot's real claim to fame is Kaba Gandhi No Delo — the traditional Saurashtrian-style family home Mahatma Gandhi's father built in 1881, where a 12-year-old Mohandas Gandhi lived until 1915, now a real pictorial exhibition called Gandhi Smriti. The city pairs that with genuine Saurashtra-region royal heritage: the Watson Museum's British-colonial-era artifacts inside Jubilee Garden, three former royal palaces (Orchard, Naulakha, Riverside), and Rajkumar College, a real 1868 British-era institution built to educate Kathiawar's young princes across an 11-acre colonial campus.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg/1280px-Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg/1280px-Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg/1280px-Kaba_Gandhi_No_Delo_-_The_house_were_Gandhiji_lived_during_his_school_days.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Watson_Museum.jpg/1280px-Watson_Museum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Watson_Museum_Queen_Victoria_Statue.jpg/1280px-Watson_Museum_Queen_Victoria_Statue.jpg",
+    ],
+    imageCredit: "Photos: Nischal9999, Sneha N Shetty, Jadia gaurang — Wikimedia Commons, CC BY-SA 3.0/4.0.",
+    category: ["Heritage", "Gandhi Circuit", "Museum"],
+    bestSeason: "November – February",
+    duration: "1 day",
+    highlights: [{ name: "Kaba Gandhi No Delo (Gandhi Smriti)" }, { name: "Watson Museum, Jubilee Garden" }, { name: "Rajkumar College (1868)" }, { name: "Rotary Dolls Museum" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "~1h50m direct", fromMumbai: "~1h15m direct", fromBangalore: "~2h (via connection)", duration: "1.25–2.5h", costRange: "₹3,000–₹10,000", tips: "Rajkot Airport has decent domestic connectivity and is a practical gateway to the wider Saurashtra region (Gir, Junagadh, Jamnagar)." },
+      { mode: "Train", icon: "🚂", fromDelhi: "~18–20h", fromMumbai: "~10–12h", fromBangalore: "Not practical — long connection", duration: "10–20h", costRange: "₹400–₹2,200", tips: "Rajkot Junction connects well to Ahmedabad and the rest of Saurashtra." },
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,100km, not practical to self-drive", fromMumbai: "~650km, ~10–11h", fromBangalore: "Not practical", duration: "~3.5h from Ahmedabad (~215 km)", costRange: "₹3,500–₹6,000", tips: "Ahmedabad–Rajkot is a well-maintained highway drive, easily combined into a broader Saurashtra circuit." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹700–₹1,800/night", examples: ["Hotels near Kalawad Road"], description: "Simple, centrally-located options." },
+      { type: "Mid-Range", priceRange: "₹2,000–₹5,000/night", examples: ["Fortune Ahad Rajkot", "Regenta Central Rajkot"], description: "Comfortable business-hotel chains." },
+      { type: "Luxury", priceRange: "₹5,000–₹12,000/night", examples: ["The Imperial Palace, Rajkot"], description: "Premium hotels in the city center." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹400", notes: "Available and reliable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gondal (Royal Vintage Car Collection)", distance: "~35 km", type: "Museum", isHidden: true },
+      { name: "Hingolgadh Nature Education Sanctuary", distance: "~55 km", type: "Wildlife", isHidden: true },
+      { name: "Junagadh", distance: "~100 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 550, food: 350, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1900, food: 600, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4800, food: 1100, transport: 700, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandhi Heritage & Museums", morning: "Kaba Gandhi No Delo — the Gandhi family's real Rajkot home, now the Gandhi Smriti exhibition.", afternoon: "Watson Museum and Lang Library in Jubilee Garden.", evening: "Rajkumar College's colonial campus (exterior/grounds) and local bazaar.", stay: "Rajkot hotel", meals: "Kathiyawadi thali (₹250)", tips: "Rajkot's kathiyawadi thali is genuinely a distinct, spicier regional style worth trying here specifically." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calm, well-organized Saurashtra city with an active heritage-tourism circuit"],
+      precautions: ["Gujarat is a dry state — no alcohol without a permit"],
+      soloTips: ["A comfortable solo day-trip city given the compact, walkable heritage sites"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "181" }, { label: "Gujarat Tourism Toll-Free", number: "1800-203-1111" }],
+      safeZones: ["Jubilee Garden area", "Kalawad Road"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 2400,
+    mustEat: ["Kathiyawadi Thali", "Rajkot-style Chevdo", "Penda (local sweet)"],
+    packingTips: ["Comfortable walking shoes", "Sun protection — summers are very hot"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
