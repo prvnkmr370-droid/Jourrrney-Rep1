@@ -17389,6 +17389,238 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Modest clothing for the temple", "Sun protection"],
   },
 
+  // ===== Gujarat — Stage 12: Wildlife Sanctuaries, first batch (4 of
+  // 22 listed on gujarattourism.com/flora-fauna.html) — the
+  // highest-profile ones. The remaining 18 (Shoolpaneshwar, Devalia,
+  // Ratanmahal, Mitiyala, Pania, Jessore, Jambughoda, Purna, Gaga,
+  // Kutch Desert Sanctuary, Rampara, Balaram Ambaji, Hingolgadh, The
+  // Great Indian Bustard Sanctuary, Porbandar Bird Sanctuary, Thol
+  // Lake, Khijadiya, Chhari Dhand) are a documented follow-up stage.
+  // Marine National Park (Gulf of Kutch) was deliberately not
+  // duplicated as its own card here — it's already thoroughly
+  // covered as the core feature of the existing Jamnagar hub card.
+  {
+    id: "gir-national-park",
+    name: "Gir National Park",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Only Place on Earth With Wild Asiatic Lions",
+    description: "Gir National Park is genuinely the world's only home to wild Asiatic lions — a subspecies that once ranged from Greece to China but was hunted to under 20 individuals by the late 19th century. The Gir Forest Reserve was created in 1913 specifically to protect the last surviving group, given sanctuary status in 1965, with a 259 sq km core declared a national park in 1975. Real, sustained conservation since has grown the population back from the brink, making Gir one of the world's genuine wildlife-conservation success stories — though sightings on any single safari still aren't guaranteed.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg/1280px-Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg/1280px-Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg/1280px-Portrait_of_an_Asiatic_lion_at_Gir_National_Park_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Asiatic_Lion_Royal_Walk_at_Gir_National_Park%2C_Gujrat%2C_India.jpg/1280px-Asiatic_Lion_Royal_Walk_at_Gir_National_Park%2C_Gujrat%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Asiatic_Lion_at_Gir_National_Park%2C_Gujrat%2C_India_01.jpg/1280px-Asiatic_Lion_at_Gir_National_Park%2C_Gujrat%2C_India_01.jpg",
+    ],
+    imageCredit: "Photos: Rohit Sharma — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "December – March; the park is closed mid-June to mid-October (monsoon)",
+    duration: "1–2 days",
+    highlights: [{ name: "The world's only wild Asiatic lions" }, { name: "1913 reserve, 1965 sanctuary, 1975 national park" }, { name: "Real conservation success story" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Rajkot/Diu — long haul", fromMumbai: "Via Diu (~1h) + road", fromBangalore: "Not practical", duration: "1–2h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Diu Airport (~90 km) or Rajkot (~160 km) are the nearest options — plan the road transfer time in." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical to self-drive", fromMumbai: "~800km, ~13h", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Junagadh", costRange: "₹1,500–₹3,000 (cab from Junagadh)", tips: "Book safari permits well in advance through the official Gir forest department portal — they're genuinely limited and fill up fast in peak season." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹1,000–₹2,500/night (estimate)", examples: ["Guesthouses in Sasan Gir"], description: "Simple options in the gateway town of Sasan Gir." },
+      { type: "Mid-Range/Lodge", priceRange: "₹3,000–₹8,000/night (estimate)", examples: ["Gir jungle lodges around Sasan"], description: "Wildlife-focused lodges close to the park gate." },
+      { type: "Luxury", priceRange: "₹10,000–₹25,000/night (estimate)", examples: ["The Fern Gir Forest Resort", "Gateway Hotel Gir Forest"], description: "Premium lodges with guided safari packages included." },
+    ],
+    localTransport: [
+      { mode: "Official Jeep Safari", cost: "₹1,500–₹4,000 per jeep (permit + guide)", notes: "The only way into the core park — book through the official forest department system", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagadh", distance: "~65 km", type: "City", isHidden: false, id: "junagadh" },
+      { name: "Somnath Temple", distance: "~45 km", type: "Temple", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 1000, food: 400, transport: 400, activities: 400 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 3000, food: 700, transport: 700, activities: 1100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 13000, accommodation: 8500, food: 1300, transport: 1000, activities: 2200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gir Safari Day 1", morning: "Early jeep safari (best sighting window is sunrise).", afternoon: "Rest; visit the Devalia Safari Park (Gir Interpretation Zone) for near-guaranteed sightings if the core park permit isn't available.", evening: "Local Sasan Gir bazaar.", stay: "Sasan Gir lodge", meals: "Lodge meals (₹500–₹1,000)", tips: "Sightings genuinely aren't guaranteed on the core-park safari — Devalia's fenced interpretation zone is the reliable backup for a confirmed lion viewing." },
+      { day: 2, title: "Gir Safari Day 2", morning: "Second jeep safari attempt for lions/leopards/deer.", afternoon: "Depart toward Junagadh or Somnath.", evening: "—", stay: "Onward destination", meals: "Local food en route (₹300)", tips: "Two safari attempts genuinely improve your odds meaningfully over just one." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-regulated, forest-department-managed park with guided, permit-only access — never unsupervised"],
+      precautions: ["Stay inside the jeep at all times during safaris — this is standard wildlife-park safety, not specific risk", "Book only through official/lodge-arranged safari channels"],
+      soloTips: ["A comfortable solo visit — safaris are always guided and shared/booked in groups, never truly solo in the forest"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Sasan Gir town and lodge areas", "Official safari jeep routes"],
+      avoidAreas: ["Unauthorized/unguided entry into the forest"],
+    },
+    rating: 4.7,
+    reviews: 8900,
+    mustEat: ["Kathiyawadi Thali at Sasan Gir lodges"],
+    packingTips: ["Neutral-colored clothing for safaris", "Binoculars", "A hat and sun protection", "Warm layers for early-morning winter safaris"],
+  },
+
+  {
+    id: "velavadar-blackbuck-national-park",
+    name: "Velavadar Blackbuck National Park",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "India's Only Tropical-Grassland National Park",
+    description: "Velavadar Blackbuck National Park, about 42 km from Bhavnagar, was genuinely a Maharaja's hunting grassland — he once hunted blackbuck here with trained cheetahs — before becoming a protected sanctuary in 1976 and expanding to 34 sq km by 1980. It's real, and rare: the only national park in India protecting tropical grassland habitat specifically, home to blackbuck antelope, striped hyena, and wolves across its open plains.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg/1280px-Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg/1280px-Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg/1280px-Blackbuck_national_park%2C_Velavadar%2C_Gujarat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/A_Blackbuck_at_the_Velavadar_Blackbuck_National_Park.jpg/1280px-A_Blackbuck_at_the_Velavadar_Blackbuck_National_Park.jpg",
+    ],
+    imageCredit: "Photos: Arun76tn, Uday Damodaran — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – March; closed during peak monsoon breeding season (check current dates)",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "India's only tropical-grassland national park" }, { name: "Blackbuck antelope herds" }, { name: "Striped hyena & wolf sightings" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~42 km / ~1h from Bhavnagar", costRange: "₹1,200–₹2,500 (cab from Bhavnagar)", tips: "Go for sunrise — the open grassland light and animal activity are both genuinely best early." },
+    ],
+    accommodation: [
+      { type: "Base in Bhavnagar", priceRange: "₹1,800–₹5,000/night (estimate)", examples: ["Hotels in Bhavnagar city", "Nilambag Palace Hotel"], description: "The natural regional base." },
+    ],
+    localTransport: [
+      { mode: "Official Jeep Safari", cost: "₹1,000–₹2,500 per jeep (permit)", notes: "Book through the forest department or a Bhavnagar-based operator", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhavnagar", distance: "~42 km", type: "City", isHidden: false, id: "bhavnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 350, transport: 400, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2100, food: 650, transport: 650, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 5500, food: 1100, transport: 900, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Grassland Safari", morning: "Sunrise jeep safari — open-plains blackbuck herds and a real shot at striped hyena.", afternoon: "Return to Bhavnagar.", evening: "Rest.", stay: "Bhavnagar", meals: "Packed breakfast, local lunch after (₹300)", tips: "The unbroken open-grassland habitat here is genuinely unlike anywhere else in India — allow time to just take in the landscape, not only the wildlife." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-regulated, forest-department-managed park with permit-only, guided jeep access"],
+      precautions: ["Stay inside the jeep during safaris", "Book only through official/operator-arranged channels"],
+      soloTips: ["A comfortable solo visit — safaris are always guided and typically shared"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhavnagar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Official safari jeep routes"],
+      avoidAreas: ["Unauthorized/unguided entry into the park"],
+    },
+    rating: 4.5,
+    reviews: 1600,
+    mustEat: ["Kathiyawadi Thali in Bhavnagar"],
+    packingTips: ["Neutral-colored clothing", "Binoculars", "Warm layers for early-morning safaris", "Sun protection"],
+  },
+
+  {
+    id: "wild-ass-sanctuary",
+    name: "Wild Ass Sanctuary (Little Rann of Kutch)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Last Refuge of the Indian Wild Ass, on a Salt-Desert Wetland",
+    description: "The Wild Ass Sanctuary, spanning a real 4,953 sq km across the Little Rann of Kutch and its edges in Surendranagar, Rajkot, Mehsana, Banaskantha and Kutch districts, is genuinely the last home of the Indian wild ass (khur) — about 2,500 of them survive here, one of just six wild-ass subspecies left on Earth, living on flat grassy \"bets\" (islands) rising from the salt-crusted mudflats. The sanctuary is also a real, significant wetland habitat — home to Greater Flamingos and, per BirdLife data, nearly 9% of South Asia's Lesser Flamingo population, alongside bluebull and blackbuck. Open 15 October – 15 June, 6am–6pm.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg/1280px-Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg/1280px-Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg/1280px-Indian_Wild_Ass_Sanctuary_%28Little_Rann_of_Kutch%29_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Indian_Wild_Ass_at_the_Little_Rann_of_Kutch.jpg/1280px-Indian_Wild_Ass_at_the_Little_Rann_of_Kutch.jpg",
+    ],
+    imageCredit: "Photos: Gannu03, Bindu Gopal Rao — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February; open 15 Oct – 15 Jun, 6am–6pm",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "The last wild Indian wild ass (khur) population" }, { name: "Real salt-desert-wetland habitat" }, { name: "Greater & Lesser Flamingos" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~110 km / ~2h from Ahmedabad (via Dasada)", costRange: "₹2,000–₹4,000 (cab from Ahmedabad)", tips: "Dasada village is the main gateway — most resorts and safari operators are based there." },
+    ],
+    accommodation: [
+      { type: "Resort/Lodge", priceRange: "₹4,000–₹12,000/night (estimate)", examples: ["Rann Riders", "Desert Coursers, Dasada"], description: "Dedicated wildlife resorts in Dasada village, typically including safari packages." },
+    ],
+    localTransport: [
+      { mode: "Official Jeep Safari", cost: "₹1,500–₹3,500 per jeep (permit)", notes: "Arranged through Dasada-based resorts/operators", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~110 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 900, food: 400, transport: 400, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4800, accommodation: 2800, food: 650, transport: 650, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10500, accommodation: 6500, food: 1200, transport: 1000, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Salt-Desert Safari", morning: "Jeep safari across the salt flats and bets — wild ass herds and flamingo flocks.", afternoon: "Return to Dasada or continue toward Ahmedabad.", evening: "Rest.", stay: "Dasada resort", meals: "Resort-provided meals (₹500–₹900)", tips: "Genuinely a very different landscape from Gujarat's other parks — flat, stark, and quietly striking rather than forested." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-regulated sanctuary with permit-only, resort-arranged guided access"],
+      precautions: ["Stay with the guide/jeep at all times — the salt flats can be disorienting", "Book only through official/resort channels"],
+      soloTips: ["A comfortable solo visit given the resort-arranged, guided safari model"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Surendranagar Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Official safari routes and resort premises"],
+      avoidAreas: ["Unauthorized/unguided entry onto the salt flats"],
+    },
+    rating: 4.4,
+    reviews: 1200,
+    mustEat: ["Resort-provided Gujarati thali"],
+    packingTips: ["Sun protection — the open salt flats reflect intense glare", "Neutral-colored clothing", "Binoculars"],
+  },
+
+  {
+    id: "nalsarovar-bird-sanctuary",
+    name: "Nalsarovar Bird Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 15th-Century Check Dam That Became a Flamingo Wetland",
+    description: "Nalsarovar Bird Sanctuary, about an hour from Ahmedabad and spanning 120.82 sq km, genuinely began as a 15th-century check dam across the Sabarmati, built for irrigation and drinking water. Over time the resulting lake became real, significant bird habitat, recognized by British colonial administrators in the early 20th century and formally declared a bird sanctuary by the Gujarat government in 1969. Today it draws over 210 recorded bird species in winter, with flamingos genuinely best seen at daybreak and dusk, gliding across shallow boat-accessible waters.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg/1280px-Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg/1280px-Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg/1280px-Flight_of_the_Seagull_at_Nal_Sarovar_Lake_Gujarat_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/Sky_over_the_Ramsar_Site_Nal_Sarovar_at_Gujarat%2C_India.jpg",
+    ],
+    imageCredit: "Photos: Debanutosh, Ramesh Gadhvi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – February (winter migratory season)",
+    duration: "Half day",
+    highlights: [{ name: "210+ recorded bird species in winter" }, { name: "15th-century check-dam origin" }, { name: "Flamingo sightings at dawn/dusk" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1h from Ahmedabad", costRange: "₹800–₹1,800 (cab from Ahmedabad)", tips: "Genuinely an easy half-day trip from Ahmedabad, ideal for an early-morning start to catch peak bird activity." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "A day-trip destination — no need to stay overnight at the sanctuary." },
+    ],
+    localTransport: [
+      { mode: "Local Boat (Country Boat)", cost: "₹200–₹500 per boat", notes: "The way to actually get out onto the lake for close bird viewing", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~65 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1900, food: 600, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4800, food: 1000, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Wetland Birding", morning: "Early boat ride across Nalsarovar for peak bird activity, including flamingos.", afternoon: "Return to Ahmedabad.", evening: "—", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth the early start — bird activity (and flamingo sightings specifically) drop off noticeably by mid-morning." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed sanctuary with official boat operators and steady visitor traffic in season"],
+      precautions: ["Wear a life jacket if offered on the boat", "Standard wetland-safety caution"],
+      soloTips: ["A comfortable solo half-day trip given the short distance from Ahmedabad and managed boat access"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Official boat-launch points"],
+      avoidAreas: ["Unofficial/unlicensed boat operators"],
+    },
+    rating: 4.3,
+    reviews: 1500,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Binoculars", "A hat and sun protection", "Layered clothing for early-morning boat rides"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
