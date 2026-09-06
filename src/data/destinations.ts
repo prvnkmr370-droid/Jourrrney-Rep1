@@ -19247,6 +19247,419 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
+  // ===== Gujarat — Stage 19: Religious Sites, first batch (8 of 42
+  // listed on gujarattourism.com/religious-site.html — the highest-
+  // profile temples/shrines). Several other sites on that list were
+  // already built in earlier stages (Hutheesing Jain Temple, Siddi
+  // Saiyyed Mosque, Bhadreshwar Jain Tirth, Jama Masjid, Sarkhej
+  // Roza) or exist as hub-card mentions not yet standalone (Girnar
+  // Hill, Damodar Kund, Kalo Dungar, Akshardham Gandhinagar).
+  {
+    id: "somnath-temple",
+    name: "Shree Somnath Jyotirlinga Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The First of 12 Jyotirlingas — Destroyed and Rebuilt Across a Millennium",
+    description: "Somnath, on Gujarat's coast where it meets the Arabian Sea, is genuinely revered as the first of Shiva's 12 Jyotirlingas — and its real history is one of repeated destruction and rebuilding across a millennium, most famously when Mahmud of Ghazni's forces sacked the temple in 1025-26 CE after a fierce two-day battle. The present structure, built in the Kailash Mahameru Prasad style, had its foundation laid on 12 November 1947 by Sardar Vallabhbhai Patel and was consecrated on 11 May 1951 in President Rajendra Prasad's presence — a genuine post-Independence act of national restoration, comprising the sanctum, assembly hall and dance hall rising beside the sea.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/%22Aerial_view_of_Somnath_temple_01%2C_Prabhas_Patan_Gujarat.jpg/1280px-%22Aerial_view_of_Somnath_temple_01%2C_Prabhas_Patan_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/%22Aerial_view_of_Somnath_temple_01%2C_Prabhas_Patan_Gujarat.jpg/1280px-%22Aerial_view_of_Somnath_temple_01%2C_Prabhas_Patan_Gujarat.jpg",
+    imageCredit: "Photo: Ms Sarah Welch — Wikimedia Commons, CC0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "First of 12 Jyotirlingas" }, { name: "Rebuilt 1947–1951 under Sardar Patel" }, { name: "Evening sound-and-light show" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Diu/Rajkot — long haul", fromMumbai: "Via Diu (~1h flight) + road", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Junagadh", costRange: "₹1,800–₹3,500 (cab from Junagadh)", tips: "Genuinely combinable with Diu on the same South Saurashtra circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Somnath/Veraval", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels in Somnath and neighbouring Veraval"], description: "Both towns have a good range of pilgrim-oriented hotels." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹300", notes: "Standard way to get around Somnath/Veraval", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagadh (Gir National Park)", distance: "~85 km", type: "City", isHidden: false, id: "junagadh" },
+      { name: "Gir National Park", distance: "~45 km", type: "Wildlife", isHidden: false, id: "gir-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 650, transport: 500, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1100, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jyotirlinga Darshan", morning: "Somnath Temple darshan and the on-site museum showing the temple's layered history.", afternoon: "Triveni Sangam and Bhalka Tirth nearby.", evening: "The temple's own evening sound-and-light show.", stay: "Somnath/Veraval base", meals: "Local Gujarati/Kathiyawadi thali (₹250)", tips: "The sound-and-light show genuinely retells the temple's full destruction-and-rebuilding history — worth timing your visit for it." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, extremely well-managed pilgrimage site with heavy security and organized crowd management"],
+      precautions: ["Modest dress expected", "Very crowded on major festival days — plan accordingly"],
+      soloTips: ["A comfortable solo visit given the site's scale and formal security presence"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gir Somnath District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and surrounding pilgrim area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 9500,
+    mustEat: ["Kathiyawadi Thali", "Local seafood in Veraval"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Phones/cameras restricted in some inner areas — check current rules"],
+  },
+
+  {
+    id: "dwarkadhish-temple",
+    name: "Dwarkadhish Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "One of Hinduism's Char Dham, on the Site of Krishna's Legendary Capital",
+    description: "Dwarkadhish Temple, also called Jagat Mandir, is genuinely one of the four sites in Hinduism's Char Dham pilgrimage circuit, established by Adi Shankaracharya in the 8th century alongside Puri, Badrinath and Rameshwaram. Tradition holds it was founded by Krishna's great-grandson Vajranabh, with archaeological evidence suggesting the earliest structure dates to around 200 BCE, later rebuilt and enlarged in the 15th-16th centuries. The five-storey main shrine, resting on 72 pillars, blends Nagara and Dravidian elements in a distinctive Chalukyan style, on the banks of the Gomti river at the site the Mahabharata itself describes as Krishna's capital city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dwarkadheesh_temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dwarkadheesh_temple.jpg",
+    imageCredit: "Photo: Scalebelow — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "One of Hinduism's Char Dham" }, { name: "72-pillar, five-storey Jagat Mandir" }, { name: "On the Gomti riverbank" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Jamnagar/Porbandar + road — long haul", fromMumbai: "Via Porbandar (~1h) + road", fromBangalore: "Not practical", duration: "1–1.5h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Jamnagar and Porbandar are the nearest airports, both requiring a further road transfer." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — very long haul", fromMumbai: "Not practical", fromBangalore: "Not practical", duration: "~130 km / ~2.5h from Jamnagar", costRange: "₹2,500–₹5,000 (cab from Jamnagar)", tips: "Genuinely combinable with Nageshwar Jyotirlinga and Shivrajpur Beach on the same Dwarka circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Dwarka", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels and dharamshalas across Dwarka town"], description: "A genuinely extensive range of pilgrim accommodation in the town itself." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹300", notes: "Standard way to get around Dwarka town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nageshwar Jyotirlinga", distance: "~17 km", type: "Temple", isHidden: false, id: "nageshwar-jyotirlinga" },
+      { name: "Shivrajpur Beach", distance: "~12 km", type: "Beach", isHidden: false, id: "shivrajpur-beach" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 500, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4900, food: 1100, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Char Dham Darshan", morning: "Dwarkadhish Temple darshan (multiple aartis through the day — check timings).", afternoon: "Rukmini Devi Temple nearby.", evening: "Nageshwar Jyotirlinga.", stay: "Dwarka base", meals: "Local Gujarati thali (₹250)", tips: "Genuinely check the day's aarti schedule in advance — the temple has several through the day, each with its own atmosphere." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, extremely well-managed Char Dham pilgrimage site with heavy security and organized crowd flow"],
+      precautions: ["Modest dress expected", "Very crowded on major festival days"],
+      soloTips: ["A comfortable solo visit given the site's scale, formal security, and steady pilgrim flow"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Dwarka Police Station", number: "02892-234523" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and surrounding pilgrim town"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 7200,
+    mustEat: ["Local Gujarati thali in Dwarka"],
+    packingTips: ["Modest clothing (dhoti/traditional dress sometimes required for men in inner sanctum — check current rules)", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "nageshwar-jyotirlinga",
+    name: "Nageshwar Jyotirlinga",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An Underground Shivling Beneath an 80-Foot Shiva Statue",
+    description: "Nageshwar Jyotirlinga, on the Saurashtra coast near Dwarka, is genuinely one of Shiva's 12 Jyotirlingas, with archaeological evidence of five earlier settlements at the site — the present temple built in 1750 by Naval Rai, minister to Safdar Jung. Real and unusual among the Jyotirlingas, its sacred lingam sits in an underground sanctum, carved from Dwarka Shila stone with small chakra markings. A genuine 80-foot seated Shiva statue towers over the temple grounds, and per the Shiva Purana, worship here is traditionally believed to offer protection from poison and harm — tied to the temple's own Daruka-demon legend.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Shiva_Statue_at_Nageshwar_Mahadev_Temple%2C_Gujrat.jpg/1280px-Shiva_Statue_at_Nageshwar_Mahadev_Temple%2C_Gujrat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Shiva_Statue_at_Nageshwar_Mahadev_Temple%2C_Gujrat.jpg/1280px-Shiva_Statue_at_Nageshwar_Mahadev_Temple%2C_Gujrat.jpg",
+    imageCredit: "Photo: Prof Ranga Sai — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "One of 12 Jyotirlingas" }, { name: "Underground sanctum, built 1750" }, { name: "80-foot seated Shiva statue" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Dwarka — long haul", fromMumbai: "Via Dwarka — long haul", fromBangalore: "Not practical", duration: "~17 km / ~25 min from Dwarka", costRange: "₹200–₹500 (auto/cab from Dwarka)", tips: "Genuinely an easy half-day add-on to a Dwarka visit." },
+    ],
+    accommodation: [
+      { type: "Base in Dwarka", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels and dharamshalas across Dwarka town"], description: "The natural base — a short drive away." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Dwarka", notes: "Standard way to reach Nageshwar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dwarkadhish Temple", distance: "~17 km", type: "Temple", isHidden: false, id: "dwarkadhish-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4900, food: 1100, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jyotirlinga Visit", morning: "Nageshwar Jyotirlinga darshan at the underground sanctum.", afternoon: "View the 80-foot Shiva statue and grounds.", evening: "Return to Dwarka.", stay: "Dwarka base", meals: "Local Gujarati thali (₹250)", tips: "Genuinely pair this with Dwarkadhish Temple — most visitors do both in a single day." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major pilgrimage site with steady visitor traffic and organized crowd management"],
+      precautions: ["Modest dress expected"],
+      soloTips: ["A comfortable solo visit given the site's steady pilgrim flow"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Dwarka Police Station", number: "02892-234523" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 3400,
+    mustEat: ["Local Gujarati thali in Dwarka"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "ambaji-temple",
+    name: "Ambaji Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "One of 51 Shakti Peethas, With No Idol — Just a Sacred Yantra",
+    description: "Ambaji Temple, in the Arasur hills of Banaskantha near the Aravalli range's south-west end, is genuinely one of the 51 Shakti Peethas, where legend holds Goddess Sati's heart fell after Vishnu's Sudarshan Chakra divided her body. A real pre-Vedic worship site, the current shrine's establishment is traditionally dated to the 4th century CE under king Arun Sen. Genuinely unusual among major Hindu temples, Ambaji houses no conventional idol — instead, the Shree Visa Yantra, a sacred geometric symbol, is worshipped in its white-marble, gold-coned sanctum.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/0081323_Arasuri_Ambaji_mandir%2C_Shakti_Peeth%2C_north_Gujarat_003.jpg/1280px-0081323_Arasuri_Ambaji_mandir%2C_Shakti_Peeth%2C_north_Gujarat_003.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/0081323_Arasuri_Ambaji_mandir%2C_Shakti_Peeth%2C_north_Gujarat_003.jpg/1280px-0081323_Arasuri_Ambaji_mandir%2C_Shakti_Peeth%2C_north_Gujarat_003.jpg",
+    imageCredit: "Photo: Ms Sarah Welch — Wikimedia Commons, CC0.",
+    category: ["Spiritual"],
+    bestSeason: "November – February; Bhadarvi Poornam fair (Aug/Sep) draws huge crowds",
+    duration: "Half day",
+    highlights: [{ name: "One of 51 Shakti Peethas" }, { name: "No idol — worships the Shree Visa Yantra" }, { name: "White marble, gold-coned shikhara" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Palanpur — long haul", fromMumbai: "Via Palanpur — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Palanpur", costRange: "₹1,200–₹2,500 (cab from Palanpur)", tips: "Genuinely avoid the Bhadarvi Poornam fair period unless you specifically want the huge festival crowds — it draws lakhs of pilgrims." },
+    ],
+    accommodation: [
+      { type: "Base in Ambaji town", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Pilgrim guesthouses and hotels in Ambaji"], description: "Extensive pilgrim accommodation given the temple's major status." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Standard way to get around Ambaji town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Balaram Ambaji Wildlife Sanctuary", distance: "Within the sanctuary", type: "Wildlife", isHidden: false, id: "balaram-ambaji-wildlife-sanctuary" },
+      { name: "Jessore Sloth Bear Sanctuary", distance: "~40 km", type: "Wildlife", isHidden: false, id: "jessore-sloth-bear-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 500, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4900, food: 1100, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shakti Peeth Darshan", morning: "Ambaji Temple darshan.", afternoon: "Nature walk in the surrounding Balaram Ambaji sanctuary.", evening: "Gabbar Hill viewpoint nearby (if time allows).", stay: "Ambaji town", meals: "Local Gujarati thali (₹250)", tips: "Genuinely worth combining with the wildlife sanctuary that shares the temple's name and location." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-managed pilgrimage site with heavy footfall and organized crowd control"],
+      precautions: ["Modest dress expected", "Extremely crowded during Bhadarvi Poornam — plan accordingly if visiting then"],
+      soloTips: ["A comfortable solo visit given the temple's steady pilgrim flow and formal management"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Banaskantha District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and pilgrim town"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 5100,
+    mustEat: ["Local Gujarati thali", "Ambaji's own prasad sweets"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "palitana-shatrunjaya-hill",
+    name: "Palitana & Shatrunjaya Hill",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "863 Jain Temples on a Single Sacred Hill",
+    description: "Shatrunjaya Hill, above Palitana, is genuinely the world's largest single temple complex — some 863 Jain temples across two summits, built in two real phases (11th-12th and 16th-17th centuries) by devotees over roughly 900 years. According to the Shatrunjaya Mahatmya, the first Tirthankara Rishabhanatha delivered his first sermon here, and his grandson Pundarika attained nirvana on the hill, originally known as Pundarikgiri. Jains genuinely believe a pilgrimage here once in a lifetime is essential to moksha — pilgrims climb some 3,800-plus marble steps, past nine real temple clusters, to reach the summit shrines.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Shatrunjaya_05.jpg/1280px-Shatrunjaya_05.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Shatrunjaya_05.jpg/1280px-Shatrunjaya_05.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February; climb early morning before the heat",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "863 Jain temples, world's largest temple complex" }, { name: "Built over ~900 years (11th–17th centuries)" }, { name: "3,800+ step pilgrimage climb" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~50 km / ~1h from Bhavnagar", costRange: "₹1,200–₹2,500 (cab from Bhavnagar)", tips: "Start the climb genuinely early (by 6-7am) to avoid the midday heat on the open marble steps." },
+    ],
+    accommodation: [
+      { type: "Base in Palitana/Bhavnagar", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Dharamshalas and hotels in Palitana town", "Bhavnagar hotels"], description: "Palitana has extensive pilgrim dharamshala accommodation." },
+    ],
+    localTransport: [
+      { mode: "Doli (Palanquin) / Walking", cost: "₹1,500–₹3,000 for a doli, free to walk", notes: "Dolis (carried palanquins) are available for those unable to make the full climb", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhavnagar", distance: "~50 km", type: "City", isHidden: false, id: "bhavnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 500, activities: 550 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 4900, food: 1100, transport: 800, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "The Great Climb", morning: "Early climb up Shatrunjaya's 3,800+ steps through the nine temple clusters (2.5–3.5 hours up).", afternoon: "Explore the summit shrines and marble carvings.", evening: "Descend and rest — the hill closes to visitors by early afternoon, so plan the full round trip within that window.", stay: "Palitana base", meals: "Jain-style vegetarian food only (widely available in Palitana town)", tips: "Genuinely a serious physical undertaking — start very early, wear proper footwear, and carry water; the climb is real exercise, not a casual stroll." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, well-organized pilgrimage route with steady foot traffic and doli-bearer support available"],
+      precautions: ["A long, physically demanding climb — start early and pace yourself", "The hill has a strict closing time — confirm the schedule before you begin", "Palitana town itself observes strict vegetarianism — no meat, eggs, or alcohol are sold anywhere in town"],
+      soloTips: ["The climb has steady pilgrim traffic throughout the morning, making a solo ascent reasonably comfortable if started at a normal hour"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Palitana Police Station", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main pilgrim stairway and summit temple areas"],
+      avoidAreas: ["Attempting the climb very late in the day, given the hill's fixed closing time"],
+    },
+    rating: 4.7,
+    reviews: 4200,
+    mustEat: ["Jain-style vegetarian thali in Palitana town"],
+    packingTips: ["Sturdy, comfortable walking shoes", "Plenty of water", "A hat and sun protection", "Modest clothing"],
+  },
+
+  {
+    id: "udvada-atash-behram",
+    name: "Udvada Atash Behram (Iranshah)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Sacred Fire Burning Continuously Since 721 CE",
+    description: "Udvada Atash Behram, known to Zoroastrians as the Iranshah (\"King of Iran\"), houses a genuinely remarkable sacred fire first consecrated at Sanjan in 721 CE by Zoroastrians fleeing persecution in Persia — a fire that's been kept continuously burning for over 1,250 years, moved several times across the centuries before settling in Udvada in 1742. The current temple structure, also built in 1742 by Motlibai Wadia, houses this real, unbroken flame, making it one of just eight Atash Behrams (the highest grade of fire temple) in India and genuinely the most sacred site in the Zoroastrian faith worldwide. Non-Zoroastrians cannot enter the inner sanctum, but the temple town and its museum welcome respectful visitors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Iranshah_Atash_Behram_front_fa%C3%A7ade.jpg/1280px-Iranshah_Atash_Behram_front_fa%C3%A7ade.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Iranshah_Atash_Behram_front_fa%C3%A7ade.jpg/1280px-Iranshah_Atash_Behram_front_fa%C3%A7ade.jpg",
+    imageCredit: "Photo: Divya Cowasji (author Zarin Amrolia, published by Shapoorji Pallonji & Co.) — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Sacred fire burning continuously since 721 CE" }, { name: "One of only 8 Atash Behrams in India" }, { name: "The most sacred Zoroastrian site worldwide" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Valsad — long haul", fromMumbai: "~190 km, ~4h", fromBangalore: "Not practical", duration: "~18 km / ~30 min from Valsad", costRange: "₹300–₹700 (auto/cab from Valsad)", tips: "Non-Zoroastrians genuinely cannot enter the inner sanctum housing the fire itself — the temple's own museum and the quiet, atmospheric Parsi town are still very much worth the visit." },
+    ],
+    accommodation: [
+      { type: "Base in Valsad", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels in Valsad town"], description: "The practical regional base — Udvada itself has very limited accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Valsad", notes: "Standard way to reach Udvada", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tithal Beach", distance: "~20 km", type: "Beach", isHidden: false, id: "tithal-beach" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4800, food: 1100, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Parsi Heritage Town", morning: "Walk Udvada's quiet lanes and Parsi-style bungalow architecture.", afternoon: "Visit the Atash Behram's exterior and the temple museum.", evening: "Return to Valsad.", stay: "Valsad base", meals: "Genuine Parsi cuisine, if a local eatery is open (₹300–₹600)", tips: "Genuinely one of India's most atmospheric, quietly preserved small towns — take time to just walk around, not only visit the temple." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A very quiet, safe, close-knit small town with a respectful visitor culture around its sacred site"],
+      precautions: ["Respect the inner-sanctum entry restriction for non-Zoroastrians"],
+      soloTips: ["A comfortable solo daytime visit given the town's quiet, safe character"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Valsad City Police Station", number: "02632-244233" }, { label: "Police", number: "100" }],
+      safeZones: ["The entire town"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 900,
+    mustEat: ["Genuine Parsi cuisine, if available locally"],
+    packingTips: ["Modest, respectful clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "ranchhodrai-temple-dakor",
+    name: "Ranchhodrai Temple, Dakor",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Krishna Idol a Devotee's Widow Paid for With a Nose-Ring",
+    description: "Ranchhodrai Temple, in Dakor, was genuinely built in 1772 and later expanded through the devotion of Gopalrao Jagannath Tambwekar, who secured land and funds from the Peshwas and Gaekwads. The temple's founding legend centers on Bodana, a devoted Rajput who walked to Dwarka every six months until age 72 — Krishna, moved by his devotion, told him to bring the idol to Dakor by bullock cart at midnight. After Bodana's death at the hands of Dakor's Brahmins, his widow Gangabai was told by Krishna to pay compensation equal to the idol's weight in gold; by a real, still-told miracle, the idol's actual weight came to just a tiny fraction of a gram — all Gangabai had was her own gold nose-ring, and it was enough.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ranachhodrai_Temple%2C_Dakor%2C_Gujarat.jpg/1280px-Ranachhodrai_Temple%2C_Dakor%2C_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ranachhodrai_Temple%2C_Dakor%2C_Gujarat.jpg/1280px-Ranachhodrai_Temple%2C_Dakor%2C_Gujarat.jpg",
+    imageCredit: "Photo: Aditya Mahar — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual"],
+    bestSeason: "November – February; Purnima (full moon) days draw the largest crowds",
+    duration: "Half day",
+    highlights: [{ name: "Built 1772" }, { name: "The Bodana-Gangabai devotional legend" }, { name: "Major Krishna pilgrimage site" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~90 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Purnima (full moon) days are genuinely the busiest — visit on other days for a calmer experience." },
+    ],
+    accommodation: [
+      { type: "Base in Dakor/Ahmedabad", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Dharamshalas in Dakor town", "Ahmedabad hotels for a day trip"], description: "Dakor has pilgrim-oriented dharamshalas; Ahmedabad works for a day trip." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Standard way to get around Dakor town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~90 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 650, transport: 550, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4700, food: 1100, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Krishna Pilgrimage Visit", morning: "Ranchhodrai Temple darshan.", afternoon: "Explore the town's pilgrim bazaar.", evening: "Return to Ahmedabad.", stay: "Ahmedabad base or Dakor dharamshala", meals: "Local Gujarati thali (₹250)", tips: "Genuinely worth asking a local priest or guide to tell you the full Bodana legend on-site — it makes the temple's significance click." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-managed pilgrimage town with steady daily visitor traffic"],
+      precautions: ["Modest dress expected", "Very crowded on Purnima days"],
+      soloTips: ["A comfortable solo visit given the temple's steady daily pilgrim flow"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Kheda District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and pilgrim bazaar"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2100,
+    mustEat: ["Local Gujarati thali", "Dakor's own gota (fried snack)"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "pavagadh-kalika-mata-temple",
+    name: "Pavagadh Hill & Kalika Mata Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 1,000-Year-Old Shakti Peeth on a UNESCO Hilltop",
+    description: "Kalika Mata Temple, atop Pavagadh Hill at 762m elevation, is genuinely over 1,000 years old, its Mahakali idol installed in the 12th century under Solanki-dynasty patronage — and it's real, one of the 51 Shakti Peethas, its sanctum holding Mahakali flanked by Kali and Bahuchara Mata. When Sultan Mahmud Begada conquered Champaner in the 15th century and made it his capital, he destroyed the temple's shikhara — though local tradition holds Sadanshah Peer, a Hindu-born Sufi convert, helped save the temple from further destruction. The hill and temple sit within the genuine Champaner-Pavagadh Archaeological Park, a UNESCO World Heritage Site since 2004, reachable via a forest path or a ropeway that's been running since 1986.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kalika-mata-temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kalika-mata-temple.jpg",
+    imageCredit: "Photo: Abhishek199892 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage", "UNESCO"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "One of 51 Shakti Peethas" }, { name: "Within the Champaner-Pavagadh UNESCO site" }, { name: "Ropeway to the summit since 1986" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~47 km / ~1.25h from Vadodara", costRange: "₹1,500–₹3,000 (cab from Vadodara)", tips: "Genuinely worth combining with the broader Champaner archaeological ruins at the hill's base." },
+    ],
+    accommodation: [
+      { type: "Base in Vadodara", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels across Vadodara city"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Ropeway", cost: "₹200–₹400 round trip", notes: "The easier way to the summit, running since 1986", available: true },
+      { mode: "Walking (Forest Path)", cost: "Free", notes: "A real, physically demanding ~5km forest climb for those who prefer to walk", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Champaner Archaeological Park", distance: "At the hill's base", type: "UNESCO Heritage", isHidden: true },
+      { name: "Vadodara", distance: "~47 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 350, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 650, transport: 550, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5300, food: 1100, transport: 850, activities: 1400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shakti Peeth & UNESCO Ruins", morning: "Ropeway up to Kalika Mata Temple for darshan.", afternoon: "Explore the Champaner Archaeological Park's mosques and ruins at the hill's base.", evening: "Return to Vadodara.", stay: "Vadodara base", meals: "Local Gujarati food (₹300)", tips: "Genuinely a rare combination — an active major Shakti Peeth sitting directly within a UNESCO World Heritage archaeological park." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-managed pilgrimage and heritage site with a functioning ropeway and steady visitor traffic"],
+      precautions: ["The forest-path climb is a real, physically demanding option — the ropeway is the easier route", "Modest dress expected at the temple"],
+      soloTips: ["A comfortable solo visit given the ropeway option and steady daily pilgrim/tourist flow"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Panchmahal District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The ropeway route and temple complex"],
+      avoidAreas: ["Unguided off-path forest sections"],
+    },
+    rating: 4.6,
+    reviews: 3000,
+    mustEat: ["Local Gujarati food near Champaner"],
+    packingTips: ["Comfortable walking shoes if taking the forest path", "Modest clothing", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
