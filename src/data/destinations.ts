@@ -18616,6 +18616,321 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Valid ID", "Sufficient water and snacks", "Comfortable walking shoes for the ruins", "Sun protection"],
   },
 
+  // ===== Gujarat — Stage 16: Heritage Sites, second batch (6 more
+  // of ~50 listed — Ahmedabad's founding-era monuments plus Junagadh
+  // and Sabarkantha forts). Facts corroborated against Wikipedia and
+  // independent web search.
+  {
+    id: "bhadra-fort",
+    name: "Bhadra Fort",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Citadel Ahmed Shah Built the Moment He Founded Ahmedabad",
+    description: "Bhadra Fort was genuinely built in 1411 CE by Ahmad Shah I immediately after he founded Ahmedabad on the Sabarmati's east bank, taking about four years to complete and forming the eastern gate of the original city citadel. Named for the adjoining Bhadrakali Temple, it real served over the centuries as royal palace, court of justice, and — during British rule — a jail, before settling into its current role housing government offices and the temple itself, a genuine living thread through six centuries of the city's history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bhadra_Fort_-_Ahmedabad_-_Gujarat.jpg/1280px-Bhadra_Fort_-_Ahmedabad_-_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bhadra_Fort_-_Ahmedabad_-_Gujarat.jpg/1280px-Bhadra_Fort_-_Ahmedabad_-_Gujarat.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 1411 CE, right after Ahmedabad's founding" }, { name: "Once royal palace, court, and British-era jail" }, { name: "Adjoins the Bhadrakali Temple" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Teen Darwaza", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely the natural starting point for an old-city Ahmedabad heritage walk." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city", "The House of MG (in the old city)"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central location, easily combined with Teen Darwaza and Manek Chowk", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+      { name: "Jama Masjid, Ahmedabad", distance: "~500 m", type: "Mosque", isHidden: false, id: "jama-masjid-ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City Starting Point", morning: "Bhadra Fort and Teen Darwaza.", afternoon: "Continue into the old city's pols and Jama Masjid.", evening: "Manek Chowk night market.", stay: "Ahmedabad base", meals: "Manek Chowk street food (₹200)", tips: "Genuinely the logical starting point for the official Ahmedabad heritage walk." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A central, well-visited old-city monument with steady daytime footfall"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the central location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort and surrounding old-city area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 800,
+    mustEat: ["Manek Chowk street food nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "mahabat-khan-maqbara",
+    name: "Mahabat Khan Maqbara",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Euro-Indo-Islamic Mausoleum With Silver Doors and Gothic Columns",
+    description: "Mahabat Khan Maqbara, in Junagadh, was genuinely begun in 1878 under Nawab Mahabat Khan II and completed in 1892 under his successor Bahadur Khan III, housing Mahabat Khan II's grave. It's real, striking Euro-Indo-Islamic architecture — French windows, Gothic columns, onion domes, marble jali screens and genuine silver-plated doors — makes it one of Gujarat's most distinctive tomb complexes, paired with the adjoining Bahauddin Maqbara built by Mahabat Khan's own vizier between 1891 and 1896.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mahabat_Maqbara_-_Junagadh_-_Gujarat_-_001.jpg/1280px-Mahabat_Maqbara_-_Junagadh_-_Gujarat_-_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mahabat_Maqbara_-_Junagadh_-_Gujarat_-_001.jpg/1280px-Mahabat_Maqbara_-_Junagadh_-_Gujarat_-_001.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 1878–1892" }, { name: "Silver-plated doors & marble jali work" }, { name: "Adjoining Bahauddin (Vazir's) Maqbara" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Junagadh — long haul", fromMumbai: "Via Junagadh — long haul", fromBangalore: "Not practical", duration: "Central Junagadh", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with an Uparkot Fort visit on the same Junagadh heritage day." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh", priceRange: "₹700–₹5,000/night (estimate)", examples: ["Hotels across Junagadh city"], description: "Part of the Junagadh city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking / Auto Rickshaw", cost: "Free–₹100", notes: "Centrally located within Junagadh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagadh (Uparkot Fort)", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 550, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 1700, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7100, accommodation: 4400, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagadh Mausoleum Visit", morning: "Mahabat Khan Maqbara's ornate exterior and interior.", afternoon: "Continue to Uparkot Fort and its stepwells.", evening: "Junagadh bazaar.", stay: "Junagadh base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely one of Gujarat's most photogenic single buildings — the silver doors are the highlight most visitors miss on a rushed visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-visited, centrally-located Junagadh monument"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The complex and surrounding city area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1000,
+    mustEat: ["Kathiyawadi Thali in Junagadh"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "hutheesing-jain-temple",
+    name: "Hutheesing Jain Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Marble Temple Built as Famine Relief, Finished by a Widow's Will",
+    description: "Hutheesing Jain Temple, Ahmedabad's largest and best-known Jain temple, was genuinely commissioned by prominent Jain businessman Hathisinh Kesarisinh — in part to give artisans work during a severe famine — and dedicated to the 15th Tirthankara, Shri Dharmanatha. Hathisinh died before its 1848 completion, and his widow Shethani Harkunvar genuinely saw the ₹10-lakh project through. Designed by master craftsman Premchand Salat in white marble, its eclectic Solanki-and-Sultanate style features 52 secondary shrines around a courtyard and a real six-storey Manastambha tower inspired by Chittorgarh's own famous column.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hutheesing_Jain_Temple_facade.jpg/1280px-Hutheesing_Jain_Temple_facade.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hutheesing_Jain_Temple_facade.jpg/1280px-Hutheesing_Jain_Temple_facade.jpg",
+    imageCredit: "Photo: Prof Ranga Sai — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Completed 1848, built partly as famine relief" }, { name: "52 secondary shrines (devakulikas)" }, { name: "Six-storey Manastambha tower" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Near Delhi Gate, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely worth combining with the old city's other Jain and Hindu temples on the same heritage walk." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the old city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jain Heritage Visit", morning: "Explore Hutheesing Temple's marble carving and Manastambha tower.", afternoon: "Continue to the old city's other heritage sites.", evening: "Return to your Ahmedabad base.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely one of the most delicately carved marble temples in the city — take time on the devakulika shrines around the courtyard." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An actively used, well-visited Jain temple with regular worshipper traffic"],
+      precautions: ["Modest dress and standard temple etiquette expected"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1300,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "siddi-saiyyed-mosque",
+    name: "Siddi Saiyyed Mosque",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Solid-Stone Jali Carved to Look Like Lace",
+    description: "Siddi Saiyyed Mosque, built in 1572-73 by Siddi Saiyyed — an Abyssinian noble of African descent who served in the Gujarat Sultanate's army — is genuinely one of the final architectural flowerings of the Sultanate style, and its famous jali windows, carved from solid stone into an intricate intertwining-tree lattice, have become a real, worldwide symbol of Ahmedabad itself. Reportedly the work of 45 craftsmen working to finish it on schedule, the jali's delicacy is so fine it's often mistaken for actual latticework rather than carved stone.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sidi_Saiyyed_Mosque%2C_Ahmedabad.jpg/1280px-Sidi_Saiyyed_Mosque%2C_Ahmedabad.jpg",
+    ],
+    imageCredit: "Photos: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "Year-round",
+    duration: "20–30 minutes",
+    highlights: [{ name: "Built 1572–73" }, { name: "The famous stone jali, carved by 45 craftsmen" }, { name: "A worldwide symbol of Ahmedabad" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Lal Darwaja", costRange: "₹50–₹150 (auto within the city)", tips: "A quick but genuinely essential stop — even a brief visit is worth it for the jali alone." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking / Auto Rickshaw", cost: "Free–₹100", notes: "Centrally located near Lal Darwaja", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+      { name: "Bhadra Fort", distance: "~1 km", type: "Fort", isHidden: false, id: "bhadra-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "The Jali Stop", morning: "A short but essential visit to see the mosque's famous stone jali windows up close.", afternoon: "Continue to Bhadra Fort and the rest of the old city.", evening: "Manek Chowk night market.", stay: "Ahmedabad base", meals: "Manek Chowk street food (₹200)", tips: "Even a 15-minute stop here is genuinely worthwhile — the jali is one of the most recognizable single architectural details in India." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A very central, well-visited landmark with constant daytime footfall"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the central, busy location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The mosque and surrounding old-city area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 1900,
+    mustEat: ["Manek Chowk street food nearby"],
+    packingTips: ["Camera — the jali is genuinely one of the most photographed details in Gujarat", "Modest clothing"],
+  },
+
+  {
+    id: "jama-masjid-ahmedabad",
+    name: "Jama Masjid, Ahmedabad",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 1424 Mosque Built From the Stones of Demolished Temples",
+    description: "Jama Masjid, in Ahmedabad's old city, was genuinely completed on 4 January 1424 under Sultan Ahmad Shah I — likely the largest mosque on the Indian subcontinent at the time, its foundation laid in 1411 and construction spanning some 13 years. Real, honestly-documented history shows it was built from stones and rubble taken from demolished Hindu and Jain temples, resulting in a genuine fusion of Islamic, Jain and Hindu architectural detail. It houses the tombs of Ahmad Shah I, his son, grandson, and their queens, and its portal's two remaining columns are what's left of \"shaking minarets\" whose upper shafts were destroyed by real earthquakes in 1819 and 1957.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Jama_Masjid%2C_Ahmedabad_01.jpg/1280px-Jama_Masjid%2C_Ahmedabad_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Jama_Masjid%2C_Ahmedabad_01.jpg/1280px-Jama_Masjid%2C_Ahmedabad_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Jama_Masjid%2C_Ahmedabad_01.jpg/1280px-Jama_Masjid%2C_Ahmedabad_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Jama_Masjid%2C_Ahmedabad_06.jpg/1280px-Jama_Masjid%2C_Ahmedabad_06.jpg",
+    ],
+    imageCredit: "Photos: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Completed 4 January 1424" }, { name: "Tombs of Ahmad Shah I and his family" }, { name: "Built from repurposed temple stone" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Bhadra Fort", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely one of the core stops on the official Ahmedabad heritage walk." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from Bhadra Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhadra Fort", distance: "~500 m", type: "Fort", isHidden: false, id: "bhadra-fort" },
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sultanate Heritage Walk", morning: "Bhadra Fort and Jama Masjid, including the royal tombs.", afternoon: "Continue into the pols and Sidi Saiyyed Mosque.", evening: "Manek Chowk night market.", stay: "Ahmedabad base", meals: "Manek Chowk street food (₹200)", tips: "Genuinely worth having a guide point out the Hindu/Jain-temple-stone reuse in the pillars — it's easy to miss unassisted." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An active, well-visited mosque with steady daily worship and tourist footfall"],
+      precautions: ["Modest dress and standard mosque etiquette expected"],
+      soloTips: ["A comfortable solo daytime visit given the central, busy location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The mosque and old-city area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1500,
+    mustEat: ["Manek Chowk street food nearby"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "idar-fort",
+    name: "Idar Fort (Idar Gadh)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An Aravalli Hill Fort the Mahabharata Itself Mentions",
+    description: "Idar Fort, on a hill at the Aravalli Range's southern edge in Sabarkantha district, is genuinely referenced in ancient texts including the Mahabharata under the name \"Ilva Durga.\" Rao Sonagji Rathore conquered the town in 1257 and founded the Idariya Rathore line that ruled for generations; the Rathod dynasty of Marwar succeeded them in 1728, governing Idar State until it joined independent India in 1947. Surrounded on three sides by the Aravallis, the fort's real defensive strength made it genuinely difficult to capture throughout its long history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Idar_Gadh.jpg/1280px-Idar_Gadh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Idar_Gadh.jpg/1280px-Idar_Gadh.jpg",
+    imageCredit: "Photo: Parag Vijaykumar Bhagat — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Referenced in the Mahabharata as \"Ilva Durga\"" }, { name: "Idariya Rathore rule from 1257" }, { name: "Real Aravalli-hill defensive position" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "~25 km / ~40 min from Himmatnagar", costRange: "₹500–₹1,200 (cab from Himmatnagar)", tips: "Genuinely an offbeat stop — combine with a wider North Gujarat heritage circuit rather than a dedicated trip." },
+    ],
+    accommodation: [
+      { type: "Base in Himmatnagar", priceRange: "₹800–₹3,500/night (estimate)", examples: ["Hotels in Himmatnagar town"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Himmatnagar", notes: "Standard way to reach Idar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Himmatnagar", distance: "~25 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 650, transport: 500, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4800, food: 1100, transport: 700, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hilltop Fort Visit", morning: "Climb to Idar Fort's hilltop ramparts and viewpoints.", afternoon: "Explore the old town of Idar below.", evening: "Return to Himmatnagar.", stay: "Himmatnagar base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth it for the Aravalli hill views alone, quite apart from the fort's long history." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quiet, less-touristed hill fort with local visitor traffic"],
+      precautions: ["Uneven hill terrain — wear sturdy footwear", "Visit during daylight hours given the limited facilities"],
+      soloTips: ["A comfortable solo daytime visit; the climb is manageable but best not attempted very late in the day"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Sabarkantha District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort grounds and main approach path"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 400,
+    mustEat: ["Local Gujarati food in Himmatnagar"],
+    packingTips: ["Sturdy walking shoes for the hill climb", "Water bottle", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
