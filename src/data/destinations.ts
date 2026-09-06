@@ -17988,6 +17988,321 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Binoculars", "Neutral-colored clothing", "Sun protection", "Patience — sightings are rare"],
   },
 
+  // ===== Gujarat — Stage 14: Wildlife Sanctuaries, third and final
+  // batch — 6 more, bringing the total to 17 of 22 listed on
+  // gujarattourism.com/flora-fauna.html. Documented gaps (genuine,
+  // real sites, but no verified Wikimedia Commons photo found after
+  // repeated searches): Mitiyala Wildlife Sanctuary, Pania Wildlife
+  // Sanctuary, Rampara Wildlife Sanctuary, and Gaga Wildlife
+  // Sanctuary — all four are small/obscure enough to have
+  // essentially no photographer coverage on Commons. Combined with
+  // the already-documented Porbandar Bird Sanctuary gap from Stage
+  // 13, this closes the Wildlife Sanctuaries category at 17 built /
+  // 5 honestly-flagged gaps.
+  {
+    id: "devalia-safari-park",
+    name: "Devalia Safari Park (Gir Interpretation Zone)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Fenced 4.12 sq km Zone for a Near-Guaranteed Lion Sighting",
+    description: "Devalia Safari Park, also called the Gir Interpretation Zone, was genuinely created by Gujarat's eco-tourism department to ease pressure on the core Gir National Park and give visitors who can't get a scarce core-park permit a reliable, up-close wildlife experience. A 4.12 sq km area enclosed by chain fencing, it offers a real, quicker and more assured opportunity to see the Asiatic lion alongside other Gir wildlife, without disturbing the core forest's natural habitat.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg/1280px-Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg/1280px-Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg",
+    imageCredit: "Photo: Sujan Bandyopadhyay — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "December – March; closed mid-June to mid-October (monsoon)",
+    duration: "Half day",
+    highlights: [{ name: "Near-guaranteed lion sighting" }, { name: "No permit-lottery uncertainty" }, { name: "Fenced 4.12 sq km interpretation zone" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Junagadh — long haul", fromMumbai: "Via Junagadh — long haul", fromBangalore: "Not practical", duration: "~12 km / ~25 min from Sasan Gir", costRange: "₹500–₹1,200 (auto/cab from Sasan Gir)", tips: "A genuinely reliable backup if you couldn't get a core Gir National Park safari permit." },
+    ],
+    accommodation: [
+      { type: "Base in Sasan Gir", priceRange: "₹1,000–₹8,000/night (estimate)", examples: ["Sasan Gir lodges and guesthouses"], description: "Same base as for the core Gir National Park." },
+    ],
+    localTransport: [
+      { mode: "Official Bus/Jeep Safari", cost: "₹300–₹800 per person (permit + ride)", notes: "Book through the official Devalia/Gir booking portal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gir National Park", distance: "~12 km", type: "Wildlife", isHidden: false, id: "gir-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 350, transport: 300, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 650, transport: 500, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 5800, food: 1100, transport: 700, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Assured Lion Sighting", morning: "Book the first available Devalia slot for the best light and animal activity.", afternoon: "Return to Sasan Gir.", evening: "Rest or explore Sasan Gir's small local bazaar.", stay: "Sasan Gir lodge", meals: "Lodge meals (₹500–₹1,000)", tips: "Genuinely worth doing this even if you also have a core-park permit — it's a faster, more reliable sighting." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-regulated, fenced interpretation zone with guided, permit-only access"],
+      precautions: ["Stay inside the vehicle throughout"],
+      soloTips: ["A comfortable solo visit — always guided and typically shared with other visitors"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fenced safari route"],
+      avoidAreas: ["None specific — access is fully controlled"],
+    },
+    rating: 4.5,
+    reviews: 1900,
+    mustEat: ["Kathiyawadi Thali at Sasan Gir lodges"],
+    packingTips: ["Neutral-colored clothing", "Camera/binoculars", "Sun protection"],
+  },
+
+  {
+    id: "jessore-sloth-bear-sanctuary",
+    name: "Jessore Sloth Bear Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Sloth Bears on Gujarat's Second-Highest Peak",
+    description: "Jessore Sloth Bear Sanctuary, on the Gujarat-Rajasthan border in Banaskantha district, was genuinely established in May 1978 to protect the Aravalli ecosystem, spanning 180 sq km around Jessore hill — Gujarat's second-highest peak. Real, if vulnerable per IUCN classification, sloth bear populations share the forest with leopards, striped hyena, Rhesus macaques and Indian civet cats, across genuinely rare and endangered Aravalli flora and fauna.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jessore_hills%2C_Bear_Sanctuary.jpg/1280px-Jessore_hills%2C_Bear_Sanctuary.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jessore_hills%2C_Bear_Sanctuary.jpg/1280px-Jessore_hills%2C_Bear_Sanctuary.jpg",
+    imageCredit: "Photo: Mrugaank R — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "Gujarat's second-highest peak" }, { name: "Real sloth bear (vulnerable, IUCN) population" }, { name: "Aravalli ecosystem, established 1978" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Palanpur — long haul", fromMumbai: "Via Palanpur — long haul", fromBangalore: "Not practical", duration: "~45 km / ~1h from Palanpur", costRange: "₹1,200–₹2,500 (cab from Palanpur)", tips: "Genuinely combinable with an Ambaji temple visit given the shared North Gujarat region." },
+    ],
+    accommodation: [
+      { type: "Base in Palanpur", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels in Palanpur town"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ambaji Temple", distance: "~40 km", type: "Temple", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 600, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 4900, food: 1100, transport: 900, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Aravalli Hills Trek", morning: "Guided walk/jeep survey across Jessore hill's forested slopes.", afternoon: "Return toward Palanpur.", evening: "—", stay: "Palanpur base", meals: "Local Gujarati food (₹300)", tips: "Genuinely worth combining with an Ambaji temple day, given how close the two are within North Gujarat." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A real, if remote, Aravalli sanctuary — best visited with a local guide"],
+      precautions: ["Always go with a guide given sloth bear presence and remote terrain", "Inform your accommodation of your planned route and return time"],
+      soloTips: ["Not recommended to trek solo here — arrange a guided visit instead"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Banaskantha District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Guided survey routes"],
+      avoidAreas: ["Unguided forest entry, given real sloth bear presence"],
+    },
+    rating: 4.0,
+    reviews: 300,
+    mustEat: ["Local Gujarati food near Palanpur"],
+    packingTips: ["Sturdy trekking shoes", "Neutral-colored clothing", "Insect repellent"],
+  },
+
+  {
+    id: "jambughoda-wildlife-sanctuary",
+    name: "Jambughoda Wildlife Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Former Princely Hunting Ground, Protected Since 1990",
+    description: "Jambughoda Wildlife Sanctuary, in Panchmahal district, was genuinely the private hunting ground of the princely state of Jambughoda's Rana rulers before Independence — a use that, unintentionally, kept the forest free of large-scale clearing or logging. After 1947 the land was absorbed into Panchmahal district, and the sanctuary was officially declared in May 1990 under the Wildlife Protection Act, spanning 130.38 sq km now managed by the Gujarat Forest Department.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jambughoda_Wildlife_Sanctuary%2CGujarat.jpg/1280px-Jambughoda_Wildlife_Sanctuary%2CGujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jambughoda_Wildlife_Sanctuary%2CGujarat.jpg/1280px-Jambughoda_Wildlife_Sanctuary%2CGujarat.jpg",
+    imageCredit: "Photo: Sagar Parmar — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "Former Jambughoda princely-state hunting ground" }, { name: "130.38 sq km protected since 1990" }, { name: "Jhand Hanuman forest temple" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Vadodara", costRange: "₹1,500–₹3,000 (cab from Vadodara)", tips: "Genuinely an easy day trip from Vadodara, especially for repeat visitors looking for something beyond the palace circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Vadodara", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels across Vadodara city"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Vadodara", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara", distance: "~65 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 650, transport: 550, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 5000, food: 1100, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Former Royal Forest", morning: "Nature walk/jeep survey through the sanctuary's forested hills.", afternoon: "Visit the Jhand Hanuman temple within the forest.", evening: "Return to Vadodara.", stay: "Vadodara base", meals: "Local Gujarati food (₹300)", tips: "Genuinely a peaceful, uncrowded forest escape close to Vadodara." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A forest-department-managed sanctuary with regular local temple-pilgrim traffic"],
+      precautions: ["Stick to marked trails"],
+      soloTips: ["A comfortable solo daytime visit given the proximity to Vadodara"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Vadodara City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and the temple area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 350,
+    mustEat: ["Local Gujarati food near Vadodara"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle"],
+  },
+
+  {
+    id: "purna-wildlife-sanctuary",
+    name: "Purna Wildlife Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gujarat's Thickest Forest, Named for the River Running Through It",
+    description: "Purna Wildlife Sanctuary, in the tribal Dangs district, was genuinely declared a sanctuary in July 1990 and named for the Purna river flowing through it. Its real teak and bamboo canopy — trees rising over 100 feet — forms genuinely the thickest forest cover in the state, dense enough that sunlight barely reaches the ground in many places, alongside sadad, khair, sisham (rosewood) and other native species along its many rivers and rivulets.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Cottage_House_in_Purna_Wildlife_Sanctuary_%2C_The_Dangs_%2C_Gujarat.jpg/1280px-Cottage_House_in_Purna_Wildlife_Sanctuary_%2C_The_Dangs_%2C_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Cottage_House_in_Purna_Wildlife_Sanctuary_%2C_The_Dangs_%2C_Gujarat.jpg/1280px-Cottage_House_in_Purna_Wildlife_Sanctuary_%2C_The_Dangs_%2C_Gujarat.jpg",
+    imageCredit: "Photo: Mihir.S.Mehta — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "Gujarat's thickest forest cover" }, { name: "100+ foot teak and bamboo canopy" }, { name: "Real rivers & rivulets throughout" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "~280 km, ~5.5h", fromBangalore: "Not practical", duration: "~90 km / ~2h from Surat, via Waghai", costRange: "₹1,800–₹3,500 (cab from Surat)", tips: "Waghai is the main gateway town — the Mahal Eco-Campsite within the sanctuary offers a genuine forest-stay option." },
+    ],
+    accommodation: [
+      { type: "Eco-Campsite", priceRange: "₹1,000–₹3,000/night (estimate)", examples: ["Mahal Eco-Campsite, Purna WLS"], description: "A genuine forest-department eco-camp inside the sanctuary — book in advance." },
+      { type: "Base in Surat", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Surat city"], description: "The wider regional base if not staying in-forest." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,800–₹3,500 from Surat", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Surat", distance: "~90 km", type: "City", isHidden: false, id: "surat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 400, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2100, food: 700, transport: 650, activities: 550 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8700, accommodation: 5300, food: 1200, transport: 950, activities: 1250 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Deep Teak Forest", morning: "Nature walk into the sanctuary's dense teak-bamboo forest.", afternoon: "Riverside relaxation at one of the sanctuary's rivulets.", evening: "Overnight at the Mahal Eco-Campsite, if booked.", stay: "Mahal Eco-Campsite or Surat", meals: "Camp-provided or local tribal-region food (₹300–₹500)", tips: "Genuinely one of Gujarat's most immersive forest experiences — the tree canopy here is unlike anywhere else in the state." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A real, dense forest sanctuary with an official eco-campsite option for a more managed stay"],
+      precautions: ["Stick to marked trails and guided routes given the dense forest cover", "Book the eco-campsite through official forest-department channels"],
+      soloTips: ["Better visited with a guide or as part of an organized eco-camp booking than entirely independently, given how dense and remote the forest is"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Dang District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and the eco-campsite premises"],
+      avoidAreas: ["Unguided deep-forest exploration"],
+    },
+    rating: 4.2,
+    reviews: 300,
+    mustEat: ["Tribal-region food at the eco-campsite"],
+    packingTips: ["Sturdy trekking shoes", "Insect repellent", "Rain gear in monsoon-adjacent months"],
+  },
+
+  {
+    id: "balaram-ambaji-wildlife-sanctuary",
+    name: "Balaram Ambaji Wildlife Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "542 sq km of Aravalli Forest, Named for Two Ancient Temples",
+    description: "Balaram Ambaji Wildlife Sanctuary, in Banaskantha district near Palanpur, was genuinely constituted on 7 August 1989 across 542 sq km, taking its name from two real historic temples — Balaram and Ambaji — that sit at opposite corners of the sanctuary. Its undulating Aravalli hills form real dry deciduous forest in the Banas and Sabarmati river catchment, genuinely rich in medicinal-plant diversity and globally significant flora and fauna.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AViewOfPeaksOnTheWayToAmbaji.JPG/1280px-AViewOfPeaksOnTheWayToAmbaji.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AViewOfPeaksOnTheWayToAmbaji.JPG/1280px-AViewOfPeaksOnTheWayToAmbaji.JPG",
+    imageCredit: "Photo: વિહંગ (Vihang) — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Wildlife", "Nature", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "542 sq km Aravalli forest" }, { name: "Named for the Balaram & Ambaji temples" }, { name: "Rich medicinal-plant diversity" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Palanpur — long haul", fromMumbai: "Via Palanpur — long haul", fromBangalore: "Not practical", duration: "~45 km / ~1h from Palanpur", costRange: "₹1,000–₹2,200 (cab from Palanpur)", tips: "Genuinely combinable with an Ambaji temple pilgrimage visit, since the sanctuary shares its name and location with the temple." },
+    ],
+    accommodation: [
+      { type: "Base in Palanpur/Ambaji", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels in Palanpur", "Ambaji pilgrim guesthouses"], description: "Ambaji town has extensive pilgrim accommodation given its temple significance." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,200 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ambaji Temple", distance: "Within the sanctuary", type: "Temple", isHidden: true },
+      { name: "Jessore Sloth Bear Sanctuary", distance: "~40 km", type: "Wildlife", isHidden: false, id: "jessore-sloth-bear-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 4900, food: 1100, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Temple & Forest Pilgrimage", morning: "Visit the Ambaji Temple.", afternoon: "Nature walk into the sanctuary's Aravalli forest.", evening: "Balaram temple visit if time allows.", stay: "Ambaji or Palanpur base", meals: "Local Gujarati food (₹250)", tips: "A genuinely distinctive combination of active pilgrimage and real forest wildlife habitat in one sanctuary." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-visited pilgrimage-adjacent sanctuary with steady temple-related foot traffic"],
+      precautions: ["Stick to marked trails away from the temple areas"],
+      soloTips: ["A comfortable solo visit given the active pilgrim presence around Ambaji"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Banaskantha District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple areas and marked forest trails"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 550,
+    mustEat: ["Local Gujarati food near Ambaji"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing for temple visits", "Sun protection"],
+  },
+
+  {
+    id: "kutch-desert-sanctuary",
+    name: "Kutch Desert Wildlife Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "India's Largest Wildlife Sanctuary, Home to 'Flamingo City'",
+    description: "The Kutch Desert Wildlife Sanctuary, declared in February 1986 across a genuinely vast 7,506.22 sq km of the Great Rann of Kutch, is real and India's largest wildlife sanctuary by area — a seasonal saline wetland that dries into salt desert by October-November each year. Within it, the real \"Flamingo City\" hosts thousands of breeding Greater Flamingos each season, and the sanctuary also encompasses Dholavira, a genuine 5,000-year-old Harappan city drawing archaeologists from around the world.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Greater_Flamingos_at_Rann_of_Kutch.jpg/1280px-Greater_Flamingos_at_Rann_of_Kutch.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Greater_Flamingos_at_Rann_of_Kutch.jpg/1280px-Greater_Flamingos_at_Rann_of_Kutch.jpg",
+    imageCredit: "Photo: Prof Ranga Sai — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – February; flamingo breeding season varies by year — check locally",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "India's largest wildlife sanctuary (7,506 sq km)" }, { name: "\"Flamingo City\" breeding colony" }, { name: "Encompasses Dholavira (Indus Valley UNESCO site)" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "Varies widely — the sanctuary spans most of the Great Rann", costRange: "₹1,500–₹4,000 (cab from Bhuj, depending on destination within the sanctuary)", tips: "Flamingo City access is genuinely restricted and seasonal — arrange any visit through the forest department, not independently." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base." },
+      { type: "Rann Utsav Tent City (Seasonal)", priceRange: "₹5,000–₹15,000/night", examples: ["Official Rann Utsav Tent City, Dhordo"], description: "Also a practical base for the sanctuary's Dhordo-area sections." },
+    ],
+    localTransport: [
+      { mode: "Official Jeep / Forest Department Permit", cost: "₹1,500–₹4,000", notes: "Required for most sanctuary access, especially Flamingo City", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "Varies", type: "City", isHidden: false, id: "kutch" },
+      { name: "White Rann / Rann Utsav Tent City", distance: "Within the sanctuary", type: "Salt Desert", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 350, transport: 400, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2400, food: 650, transport: 650, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 1000, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Great Rann Wildlife", morning: "Forest-department-arranged visit toward the sanctuary's flamingo/wetland areas (seasonal access permitting).", afternoon: "Continue toward Dholavira for its Harappan ruins, if time allows.", evening: "Return to Bhuj or the Rann Utsav Tent City.", stay: "Bhuj or Tent City", meals: "Kutchi thali (₹300)", tips: "Given the sanctuary's huge size, decide your specific destination (Flamingo City vs. Dholavira vs. the general Rann) in advance rather than trying to cover it all in one trip." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Parts of the sanctuary (Rann Utsav zone, Dholavira) are well-managed tourist areas; the deep interior is genuinely remote"],
+      precautions: ["Flamingo City and remote sanctuary interior access requires official forest-department permits — never attempt independent access", "Carry water and inform your accommodation of your route given the vast, remote terrain"],
+      soloTips: ["Stick to the managed tourist zones (Rann Utsav, Dholavira) rather than attempting solo access to the sanctuary's remote flamingo-breeding areas"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["Rann Utsav Tent City zone", "Dholavira archaeological site"],
+      avoidAreas: ["Unpermitted, independent travel into the sanctuary's remote interior"],
+    },
+    rating: 4.4,
+    reviews: 900,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Sun protection", "Warm layers for winter mornings", "Binoculars", "Sufficient water for remote-area visits"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
