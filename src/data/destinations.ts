@@ -768,7 +768,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Mehrangarh Fort", distance: "Same city", type: "Heritage", isHidden: true, id: "mehrangarh-fort" },
       { name: "Mandore Gardens", distance: "9 km", type: "Heritage Gardens", isHidden: false },
       { name: "Osian (temple town & desert)", distance: "65 km", type: "Heritage", isHidden: true, id: "osian" },
-      { name: "Bishnoi Village Safari", distance: "25 km", type: "Cultural", isHidden: true },
+      { name: "Bishnoi Village Safari", distance: "25 km", type: "Cultural", isHidden: true, id: "khejarli-bishnoi-village" },
       { name: "Kaylana Lake", distance: "8 km", type: "Nature", isHidden: true },
       { name: "Rohet Garh", distance: "40 km", type: "Heritage Stay", isHidden: true },
       { name: "Jaisalmer", distance: "285 km", type: "Desert", isHidden: false, id: "jaisalmer" },
@@ -1111,7 +1111,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "National Research Centre on Camel", distance: "8 km", type: "Unique Experience", isHidden: true },
-      { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: false },
+      { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: true, id: "deshnoke" },
       { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
       { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true },
     ],
@@ -1179,7 +1179,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Boat (seasonal, water levels permitting)", cost: "₹200–₹500", notes: "When wetland levels allow, boat rides offer closer bird access", available: true },
     ],
     nearbyPlaces: [
-      { name: "Deeg Palace & Water Gardens", distance: "32 km", type: "Heritage", isHidden: true },
+      { name: "Deeg Palace & Water Gardens", distance: "32 km", type: "Heritage", isHidden: true, id: "deeg-palace" },
       { name: "Agra (Taj Mahal)", distance: "55 km", type: "Heritage", isHidden: false, id: "agra" },
       { name: "Fatehpur Sikri", distance: "23 km", type: "UNESCO Heritage", isHidden: false, id: "fatehpur-sikri" },
     ],
@@ -1504,7 +1504,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Bhangarh Fort (India's most famous 'haunted' fort)", distance: "55 km", type: "Mysterious Ruins", isHidden: true },
-      { name: "Siliserh Lake Palace", distance: "13 km", type: "Nature", isHidden: true },
+      { name: "Siliserh Lake Palace", distance: "13 km", type: "Nature", isHidden: true, id: "siliserh-lake-palace" },
       { name: "Jaipur", distance: "150 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
@@ -23308,6 +23308,172 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5400,
     mustEat: ["Rajasthani thali in Jaisalmer"],
     packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "deeg-palace",
+    name: "Deeg Palace & Water Gardens",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "900 Fountains Run Without Pumps, Using Rainwater and Gravity Alone",
+    description: "Deeg Palace was built through the mid-18th century by the Jat rulers of Bharatpur — Badan Singh, who chose Deeg as his stronghold and first capital, followed by Jawahar Singh and Suraj Mal — and served as their summer retreat, strategically placed near Agra as a refuge during invasions. Its real showpiece is a water-garden system of some 900 fountains, fed by two large tanks, Rup Sagar and Gopal Sagar, and traditionally operated without any modern pumps — bullocks drawing water up through a pulley-and-leather-bucket system to power jets that once ran for royal celebrations. Several of its treasures are genuine war trophies: a marble swing originally belonging to Emperor Jahangir was brought from Agra by Raja Suraj Mal, and Raja Jawahar Singh's forces dug up numerous marble fountains and tanks from Agra Fort itself to install here — an unusually literal piece of Mughal-Jat rivalry preserved in stone and marble.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Deeg_Palace%2C_Bharatpur.jpg/1280px-Deeg_Palace%2C_Bharatpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Deeg_Palace%2C_Bharatpur.jpg/1280px-Deeg_Palace%2C_Bharatpur.jpg",
+    imageCredit: "Photo: Vu2sga — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Built mid-18th century by Jat rulers Badan Singh, Jawahar Singh, and Suraj Mal" },
+      { name: "~900 fountains fed by the Rup Sagar and Gopal Sagar tanks, traditionally run without pumps" },
+      { name: "A marble swing taken as a war trophy from Emperor Jahangir's own collection" },
+      { name: "Marble fountains and tanks removed from Agra Fort and reinstalled here" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~180 km via NH19/SH, ~4h", fromMumbai: "Via Bharatpur — long haul", fromBangalore: "Via Bharatpur — long haul", duration: "~32 km / ~45 min from Bharatpur", costRange: "₹800–₹1,800 by cab from Bharatpur", tips: "The fountains typically run only on select festival days — check current schedules if seeing them active matters to your visit." },
+    ],
+    accommodation: [
+      { type: "Base in Bharatpur", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Bharatpur budget hotels", "Bharatpur heritage/resort hotels"], description: "Bharatpur is the practical base, also convenient for the Keoladeo bird sanctuary." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 from Bharatpur", notes: "Standard way to reach Deeg", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bharatpur", distance: "~32 km", type: "City", isHidden: false, id: "bharatpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 15000, accommodation: 10000, food: 1800, transport: 1200, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bharatpur & Deeg Heritage Day", morning: "Keoladeo National Park bird-watching.", afternoon: "Deeg Palace and its water gardens.", evening: "Return to Bharatpur.", stay: "Bharatpur", meals: "Rajasthani thali (₹300–₹500)", tips: "Combine easily with Bharatpur's bird sanctuary and, further afield, Fatehpur Sikri, all within a similar radius." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A regularly-visited heritage site with a ticket counter and daytime staff presence"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its status as a known, regularly-visited monument"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bharatpur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace and garden grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2900,
+    mustEat: ["Rajasthani thali in Bharatpur"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "siliserh-lake-palace",
+    name: "Siliserh Lake Palace",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "An 1845 Royal Retreat Built for Love, Beside a Lake That Once Supplied a City",
+    description: "Siliserh Lake Palace was built in 1845 by Maharaja Vinay Singh of Alwar on the banks of Siliserh Lake, according to local tradition as a devoted gesture for his wife, Shila, and doubled as a hunting lodge for the royal family and their guests. The lake itself, spanning roughly 7 sq km amid the Aravalli hills, was created the same year when an earthen dam was built between two hills to store water from a tributary of the Ruparel river — and for a long period genuinely served as Alwar city's main water source, well beyond its scenic role. Now run as a heritage hotel by the Rajasthan Tourism Development Corporation (RTDC), the palace remains a working, stay-able piece of 19th-century royal architecture rather than a roped-off museum, with the lake and surrounding hills making it a popular half-day trip even for those not staying overnight.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Silisereh_Lake_Palace.jpg/1280px-Silisereh_Lake_Palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Silisereh_Lake_Palace.jpg/1280px-Silisereh_Lake_Palace.jpg",
+    imageCredit: "Photo: Tpsn98290 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Built 1845 by Maharaja Vinay Singh of Alwar as a royal retreat and hunting lodge" },
+      { name: "Siliserh Lake, created the same year, once supplied water to Alwar city" },
+      { name: "Now run as an RTDC heritage hotel — a working, stay-able palace" },
+      { name: "Scenic Aravalli-hills setting popular for half-day visits" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~165 km via NH48, ~3.5h", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "~16 km / ~25-30 min from Alwar", costRange: "₹400–₹900 by cab from Alwar", tips: "A lakeside lunch or tea at the RTDC hotel restaurant is a pleasant way to extend a short visit." },
+    ],
+    accommodation: [
+      { type: "Siliserh Lake Palace (RTDC heritage hotel)", priceRange: "₹4,000–₹9,000/night (estimate)", examples: ["Siliserh Lake Palace itself"], description: "Staying overnight in the actual palace is a genuine option here, not just a day-visit site." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹400–₹900 from Alwar", notes: "Standard way to reach the lake and palace", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "~16 km", type: "City", isHidden: false, id: "alwar" },
+      { name: "Sariska Tiger Reserve", distance: "~30 km", type: "Wildlife", isHidden: true, id: "sariska-tiger-reserve" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 800, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 9000, accommodation: 6000, food: 1500, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar Heritage & Lakeside", morning: "Alwar City Palace and Bala Quila fort.", afternoon: "Siliserh Lake Palace — lakeside walk and lunch.", evening: "Return to Alwar or continue on to Sariska.", stay: "Alwar or Siliserh Lake Palace itself", meals: "Rajasthani thali (₹300–₹500), lakeside lunch (₹400–₹700)", tips: "A relaxed half-day add-on to an Alwar/Sariska itinerary rather than a full destination on its own." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A staffed heritage hotel and regularly-visited lakeside site"],
+      precautions: ["Standard lakeside/heritage-site caution", "Visit in daylight hours if not staying overnight"],
+      soloTips: ["Comfortable for solo daytime visits given the on-site hotel staff and steady visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace/hotel grounds and lakeside during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 1800,
+    mustEat: ["Rajasthani thali in Alwar", "Lakeside lunch at the palace restaurant"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "khejarli-bishnoi-village",
+    name: "Khejarli & Bishnoi Villages",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Where 363 People Gave Their Lives to Save a Grove of Trees, in 1730",
+    description: "Khejarli, a village near Jodhpur, is where one of India's earliest documented acts of environmental sacrifice took place: in September 1730, when officials of Maharaja Abhai Singh of Marwar came to fell a grove of sacred khejri trees for palace-construction lime kilns, a Bishnoi woman named Amrita Devi embraced a tree in protest rather than let it be cut. The Bishnoi community — founded in the 15th century by Guru Jambheshwar around 29 principles centred on compassion for all living beings and protection of trees and wildlife — resolved that for every tree the woodcutters felled, one Bishnoi volunteer would give their life; in total, 363 people from 49 villages did so before the Maharaja, informed of the sacrifice, revoked his order and decreed the village would never again be asked to supply wood to the state. The event is now widely recognised as a genuine forerunner to the 20th-century Chipko movement, and a memorial temple at Khejarli honours the sacrifice today. Visits to the wider Bishnoi villages around Jodhpur also show the community's living tradition of religious environmentalism, including its real, still-practised protection of blackbuck and chinkara that roam freely and undisturbed on Bishnoi land.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Khejarli_Massacre_Temple.JPG/1280px-Khejarli_Massacre_Temple.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Khejarli_Massacre_Temple.JPG/1280px-Khejarli_Massacre_Temple.JPG",
+    imageCredit: "Photo: Zenit — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Culture", "Nature"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Site of the 1730 sacrifice of 363 Bishnois to save a grove of khejri trees" },
+      { name: "A memorial temple at Khejarli honouring Amrita Devi and the other martyrs" },
+      { name: "Widely regarded as a genuine forerunner to the 20th-century Chipko movement" },
+      { name: "Nearby Bishnoi villages show a living tradition of religious environmentalism, with free-roaming protected blackbuck and chinkara" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "~25-30 km / ~40-50 min from Jodhpur", costRange: "₹800–₹1,800 by cab from Jodhpur (round trip)", tips: "Many Jodhpur operators run a combined 'Bishnoi village safari' visiting Khejarli, a weaving/pottery village, and a blackbuck-viewing stop in one half-day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹800–₹20,000/night (estimate)", examples: ["Jodhpur old-city havelis", "Jodhpur heritage hotels"], description: "Most visitors do this as a half-day trip from Jodhpur rather than staying in the villages themselves." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Jeep (round trip from Jodhpur)", cost: "₹800–₹1,800", notes: "Standard way to visit; often bundled as a multi-stop 'village safari'", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jodhpur", distance: "~25 km", type: "City", isHidden: false, id: "jodhpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 18000, accommodation: 14000, food: 1800, transport: 1200, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bishnoi Village Half-Day", morning: "Drive out from Jodhpur to Khejarli.", afternoon: "Khejarli memorial temple, a Bishnoi village visit, and a blackbuck/chinkara viewing stop.", evening: "Return to Jodhpur.", stay: "Jodhpur", meals: "Simple Bishnoi/Rajasthani home-style food if offered on a village visit; otherwise Jodhpur thali (₹300–₹500)", tips: "Approach the village visits respectfully as a living community, not a performance — most operators arrange this thoughtfully, but it's worth being mindful of regardless." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-established day-trip circuit run by reputable Jodhpur tour operators, with a genuinely welcoming local community"],
+      precautions: ["Book through a reputable operator rather than an informal arrangement", "Dress modestly when visiting village homes or the memorial temple"],
+      soloTips: ["Comfortable for solo visitors joining an organized village-safari tour, which is how most visitors experience this anyway"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The memorial temple and organized village-visit stops"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 1400,
+    mustEat: ["Rajasthani thali in Jodhpur"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera", "Small denomination cash for any village-craft purchases"],
   },
 
 ];

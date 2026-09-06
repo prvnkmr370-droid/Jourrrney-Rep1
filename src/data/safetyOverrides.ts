@@ -4335,3 +4335,17 @@ SAFETY_OVERRIDES["kuldhara-village"] = {
   police: { summary: "Jaisalmer District Police: 100", details: ["Jaisalmer District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Jawahar Hospital, Jaisalmer — dial 108 for ambulance", details: ["Jawahar Hospital in Jaisalmer town is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["deeg-palace"] = {
+  police: { summary: "Bharatpur District Police: 100", details: ["Bharatpur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Bharatpur District Hospital — dial 108 for ambulance", details: ["Bharatpur District Hospital serves the wider Deeg area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["siliserh-lake-palace"] = {
+  police: { summary: "Alwar District Police: 100", details: ["Alwar District Police control room: 100.", "The RTDC hotel on-site has its own staff and security.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alwar District Hospital — dial 108 for ambulance", details: ["Alwar District Hospital is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["khejarli-bishnoi-village"] = {
+  police: { summary: "Jodhpur District Police: 100", details: ["Jodhpur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital in Jodhpur is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response times to these rural villages may be longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
