@@ -908,7 +908,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Guru Shikhar Peak", distance: "15 km", type: "Viewpoint", isHidden: true, id: "guru-shikhar" },
       { name: "Mount Abu Wildlife Sanctuary", distance: "3 km", type: "Wildlife", isHidden: true },
-      { name: "Achalgarh Fort", distance: "11 km", type: "Heritage", isHidden: true },
+      { name: "Achalgarh Fort", distance: "11 km", type: "Heritage", isHidden: true, id: "achalgarh-fort" },
       { name: "Trevor's Tank (crocodile spotting)", distance: "5 km", type: "Nature", isHidden: true },
       { name: "Udaipur", distance: "165 km", type: "Heritage", isHidden: false, id: "udaipur" },
     ],
@@ -1373,7 +1373,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Guide", cost: "₹500–₹1,000 (half day)", notes: "Genuinely valuable here — guides can get you access into havelis still privately owned and closed to casual visitors", available: true },
     ],
     nearbyPlaces: [
-      { name: "Nawalgarh (more Shekhawati havelis)", distance: "30 km", type: "Heritage", isHidden: true },
+      { name: "Nawalgarh (more Shekhawati havelis)", distance: "30 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
       { name: "Fatehpur (Shekhawati)", distance: "30 km", type: "Heritage", isHidden: true },
       { name: "Jhunjhunu town", distance: "29 km", type: "Heritage", isHidden: true },
       { name: "Bikaner", distance: "190 km", type: "Heritage", isHidden: false, id: "bikaner" },
@@ -1953,7 +1953,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Bundi", distance: "35 km", type: "Heritage", isHidden: false, id: "bundi" },
-      { name: "Baroli Temple Complex", distance: "50 km", type: "Heritage", isHidden: true },
+      { name: "Baroli Temple Complex", distance: "50 km", type: "Heritage", isHidden: true, id: "baroli-temples" },
       { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true },
     ],
     budgetBreakdown: [
@@ -23641,6 +23641,173 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4200,
     mustEat: ["Rajasthani/Gujarati thali in Mount Abu town"],
     packingTips: ["Comfortable walking shoes", "Light jacket for the breezy summit", "Camera"],
+  },
+
+  {
+    id: "podar-haveli-nawalgarh",
+    name: "Podar Haveli, Nawalgarh",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "750 Frescoes Turned Into a Living Museum of Shekhawati's Merchant Era",
+    description: "Nawalgarh was founded in 1737 by Thakur Nawal Singh Ji Bahadur of the Shekhawat dynasty, planned with wider streets than most Shekhawati towns and once considered the region's most modern settlement. Its Podar Haveli, built in 1902 by the Mumbai-based cotton-mill magnate Sheth Anandilal Podar, is over 100 feet long and genuinely carries some 750 frescoes across its outer walls, passages, two courtyards, and ground-floor rooms — depicting Hindu mythology alongside period fascinations like steam trains and early automobiles, painted by artists working from written descriptions rather than photographs. Podar's grandson founded the Podar Group of Schools Trust in 1927, and the haveli itself served as an actual school from 1955 before being carefully restored and reopened in 2007 as a museum dedicated to preserving Shekhawati's painted-mansion heritage — widely regarded as one of the best-preserved examples of the region's frescoed havelis.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Podar_Haveli_Museum_in_Nawalgarh.jpg/1280px-Podar_Haveli_Museum_in_Nawalgarh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Podar_Haveli_Museum_in_Nawalgarh.jpg/1280px-Podar_Haveli_Museum_in_Nawalgarh.jpg",
+    imageCredit: "Photo: FLASHPACKER TRAVELGUIDE — Wikimedia Commons, CC BY-SA 2.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Nawalgarh founded 1737 by Thakur Nawal Singh Ji Bahadur, Shekhawati's most 'modern' planned town" },
+      { name: "Podar Haveli, built 1902, carries roughly 750 frescoes across its rooms and courtyards" },
+      { name: "Frescoes mix Hindu mythology with early depictions of trains and automobiles" },
+      { name: "Restored and reopened as a heritage museum in 2007" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~250 km via NH48/SH, ~5h", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~30 km / ~45 min from Mandawa", costRange: "₹500–₹1,200 by cab from Mandawa", tips: "Easily combined with a wider Shekhawati haveli circuit taking in Mandawa and Fatehpur on the same trip." },
+    ],
+    accommodation: [
+      { type: "Base in Nawalgarh or Mandawa", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Nawalgarh heritage guesthouses", "Mandawa heritage hotels"], description: "Either town works as a base for exploring the wider Shekhawati haveli circuit." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Mandawa", notes: "Standard way to reach Nawalgarh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandawa", distance: "~30 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shekhawati Fresco Circuit", morning: "Podar Haveli Museum, Nawalgarh.", afternoon: "Other Nawalgarh havelis and the old market.", evening: "Continue to Mandawa or return to base.", stay: "Nawalgarh or Mandawa", meals: "Rajasthani thali (₹300–₹500)", tips: "Bring binoculars or a zoom lens — many of the finest frescoes sit high up on exterior walls, well above eye level." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, regularly-visited heritage museum with steady daytime visitor traffic"],
+      precautions: ["Standard museum-visit etiquette"],
+      soloTips: ["Comfortable for solo daytime visits given its status as an established, staffed heritage museum"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jhunjhunu District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The haveli museum and surrounding old-town lanes during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2100,
+    mustEat: ["Rajasthani thali in Nawalgarh/Mandawa"],
+    packingTips: ["Comfortable walking shoes", "Camera or zoom lens for fresco details"],
+  },
+
+  {
+    id: "achalgarh-fort",
+    name: "Achalgarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 15th-Century Fort Beside a Shiva Temple With a 4-Ton, Five-Metal Nandi",
+    description: "Achalgarh, about 8 km from Mount Abu town, was originally built by the Paramara dynasty before being substantially renovated and beautified in 1452 CE by Rana Kumbha of Mewar — the same ruler behind Kumbhalgarh's great wall. Just outside the fort stands the Achaleshwar Mahadev Temple, believed to date to the 9th century CE, also of Paramara origin, where devotees worship a carved toe of Shiva rather than a conventional lingam. The temple's real showpiece is a brass Nandi bull said to be cast from five metals — gold, silver, copper, brass, and zinc — and weighing more than four tons, alongside three stone buffaloes standing around a nearby pond. Jain temples were later added within the fort itself in 1513, and in 1979 the crown prince of Sirohi rediscovered the site and had his artisans carry out a genuine restoration of the temple complex.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Achalgarh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/57/Achalgarh.jpg",
+    imageCredit: "Photo: melpats_2000 — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Originally Paramara-built, renovated in 1452 CE by Rana Kumbha of Mewar" },
+      { name: "Achaleshwar Mahadev Temple (c. 9th century) with a four-ton, five-metal brass Nandi" },
+      { name: "Three stone buffaloes standing around a nearby temple pond" },
+      { name: "Jain temples added within the fort in 1513" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Mount Abu — long haul", fromMumbai: "Via Mount Abu — long haul", fromBangalore: "Via Mount Abu — long haul", duration: "~8 km / ~15-20 min from Mount Abu town", costRange: "₹300–₹700 by cab from Mount Abu", tips: "Combine with Guru Shikhar on the same day, since both sit along a similar route out of Mount Abu town." },
+    ],
+    accommodation: [
+      { type: "Base in Mount Abu", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Mount Abu budget hotels", "Mount Abu resort hotels"], description: "Mount Abu town is the practical base for this half-day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹300–₹700 from Mount Abu", notes: "Standard way to reach Achalgarh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mount Abu", distance: "~8 km", type: "Hill Station", isHidden: false, id: "mount-abu" },
+      { name: "Guru Shikhar", distance: "~10 km", type: "Viewpoint", isHidden: true, id: "guru-shikhar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 300, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 800, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mount Abu Heritage Circuit", morning: "Achalgarh Fort and Achaleshwar Mahadev Temple.", afternoon: "Guru Shikhar climb.", evening: "Return to Mount Abu town, Sunset Point.", stay: "Mount Abu", meals: "Rajasthani/Gujarati thali (₹250–₹400)", tips: "Look closely at the Nandi statue and the stone buffaloes — both are distinctive, unusual features worth slowing down for." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, regularly-visited heritage and temple site with steady daytime footfall"],
+      precautions: ["Dress modestly at the temple", "Standard heritage-site caution"],
+      soloTips: ["Comfortable for solo daytime visits given steady visitor traffic and proximity to Mount Abu town"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Sirohi District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort and temple grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1900,
+    mustEat: ["Rajasthani/Gujarati thali in Mount Abu town"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "baroli-temples",
+    name: "Baroli Temple Complex",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Nine 10th-Century Temples on the Chambal, Among Rajasthan's Oldest",
+    description: "The Baroli Temple Complex sits on the banks of the Chambal River near Rawatbhata in Chittorgarh district — eight temples within a single walled enclosure, plus a ninth about a kilometre away, built during the Gurjara-Pratihara Empire in the 10th-11th centuries, making this genuinely one of the earliest surviving temple complexes in all of Rajasthan. Its Nagara-style architecture is richly carved with Hindu deities, mythological scenes, and dancing apsaras, and the site served as a major centre of Shaivism in the 9th and 10th centuries. The best-known structure, the Ghateshwar Mahadev Temple, remains dedicated to Shiva. A notable historical footnote: a carved Nataraja image was stolen from the complex in 1998 and later traced to a private collector in London — a real reminder of the ongoing challenge of protecting India's dispersed ancient heritage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Baroli_Temples_Complex_1.jpg/1280px-Baroli_Temples_Complex_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Baroli_Temples_Complex_1.jpg/1280px-Baroli_Temples_Complex_1.jpg",
+    imageCredit: "Photo: Bright-210 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – February",
+    duration: "1.5–2 hours",
+    highlights: [
+      { name: "Nine temples total, built 10th-11th century under the Gurjara-Pratihara Empire" },
+      { name: "Among the earliest surviving temple complexes in Rajasthan" },
+      { name: "Rich Nagara-style carvings of deities, mythological scenes, and dancing apsaras" },
+      { name: "The Ghateshwar Mahadev Temple, the complex's best-known Shiva shrine" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota/Chittorgarh — long haul", fromMumbai: "Via Kota/Chittorgarh — long haul", fromBangalore: "Via Kota/Chittorgarh — long haul", duration: "~45 km / ~1h from Kota, or ~90 km from Chittorgarh", costRange: "₹1,200–₹2,500 by cab from Kota", tips: "Genuinely a quiet, under-visited site — go for the architecture and setting on the Chambal riverbank without expecting crowds or extensive tourist infrastructure." },
+    ],
+    accommodation: [
+      { type: "Base in Kota or Chittorgarh", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Kota city hotels", "Chittorgarh city hotels"], description: "Most visitors do this as a day trip from Kota rather than staying near Rawatbhata itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip from Kota)", cost: "₹1,200–₹2,500", notes: "Standard way to visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "~45 km", type: "City", isHidden: false, id: "kota" },
+      { name: "Chittorgarh Fort", distance: "~90 km", type: "Heritage", isHidden: false, id: "chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 500, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 900, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1500, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chambal Heritage Day Trip", morning: "Drive from Kota to Rawatbhata.", afternoon: "Baroli Temple Complex.", evening: "Return to Kota.", stay: "Kota", meals: "Rajasthani thali (₹300–₹500)", tips: "Combine with Kota's own riverfront/Kota Barrage sights on the same day, given the shared route." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A quiet, less-visited heritage site with limited on-site facilities"],
+      precautions: ["Arrange a driver/guide for the day trip given the site's remote, rural location", "Visit in daylight hours only", "Limited mobile signal and facilities on-site"],
+      soloTips: ["Arrange transport and timing with a reputable local driver rather than relying on public transport, given how remote and quiet the site is"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple enclosure during daylight hours"],
+      avoidAreas: ["The surrounding riverbank area alone after dark"],
+    },
+    rating: 4.3,
+    reviews: 480,
+    mustEat: ["Rajasthani thali in Kota"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera", "Water bottle"],
   },
 
 ];
