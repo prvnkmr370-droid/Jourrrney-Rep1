@@ -4113,3 +4113,35 @@ SAFETY_OVERRIDES["ahmad-shah-mosque"] = {
   police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
   medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["calico-museum-of-textiles"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["balasinor-dinosaur-museum"] = {
+  police: { summary: "Mahisagar District Police: 100", details: ["Mahisagar District Police control room: 100 (Lunawada is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Balasinor/Lunawada Government Hospital — dial 108 for ambulance", details: ["Government hospitals in Balasinor or Lunawada serve this area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["kite-museum-sanskar-kendra"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["kutch-museum"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050.", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Bhuj City Police Station number sourced via general web search aggregator listings, not an official portal — call 100 for emergencies to be safe." },
+  medical: { summary: "G.K. General Hospital, Bhuj — dial 108 for ambulance", details: ["G.K. General Hospital, Bhuj — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["shyamji-krishna-varma-memorial"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (district-level; Mandvi has its own local police presence).", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Bhuj City Police Station number sourced via general web search aggregator listings, not an official portal — call 100 for emergencies to be safe." },
+  medical: { summary: "G.K. General Hospital, Bhuj — dial 108 for ambulance", details: ["G.K. General Hospital, Bhuj (~60 km) — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["baroda-museum-picture-gallery"] = {
+  police: { summary: "Vadodara City Police: 100", details: ["Vadodara City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Vadodara Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "SSG Hospital, Vadodara — dial 108 for ambulance", details: ["Sir Sayajirao General (SSG) Hospital, Vadodara.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["sardar-patel-national-memorial"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad (adjacent to the memorial itself).", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["patan-patola-heritage-museum"] = {
+  police: { summary: "Patan District Police: 100", details: ["Patan District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Patan Civil Hospital — dial 108 for ambulance", details: ["Patan Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
