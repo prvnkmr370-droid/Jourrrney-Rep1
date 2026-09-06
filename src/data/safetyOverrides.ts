@@ -4349,3 +4349,17 @@ SAFETY_OVERRIDES["khejarli-bishnoi-village"] = {
   police: { summary: "Jodhpur District Police: 100", details: ["Jodhpur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital in Jodhpur is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response times to these rural villages may be longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["kumbhalgarh-wildlife-sanctuary"] = {
+  police: { summary: "Rajsamand District Police: 100", details: ["Rajsamand District Police control room: 100.", "Forest department staff oversee all safari access.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Rajsamand District Hospital — dial 108 for ambulance", details: ["Rajsamand District Hospital is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response to the reserve itself may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["mandore-gardens"] = {
+  police: { summary: "Jodhpur District Police: 100", details: ["Jodhpur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital serves Jodhpur city and the nearby Mandore area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["guru-shikhar"] = {
+  police: { summary: "Sirohi District Police: 100", details: ["Sirohi District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mount Abu Government Hospital — dial 108 for ambulance", details: ["Mount Abu's government hospital serves the town and nearby Guru Shikhar.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

@@ -766,7 +766,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Mehrangarh Fort", distance: "Same city", type: "Heritage", isHidden: true, id: "mehrangarh-fort" },
-      { name: "Mandore Gardens", distance: "9 km", type: "Heritage Gardens", isHidden: false },
+      { name: "Mandore Gardens", distance: "9 km", type: "Heritage Gardens", isHidden: true, id: "mandore-gardens" },
       { name: "Osian (temple town & desert)", distance: "65 km", type: "Heritage", isHidden: true, id: "osian" },
       { name: "Bishnoi Village Safari", distance: "25 km", type: "Cultural", isHidden: true, id: "khejarli-bishnoi-village" },
       { name: "Kaylana Lake", distance: "8 km", type: "Nature", isHidden: true },
@@ -906,7 +906,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Paddle Boat (Nakki Lake)", cost: "₹100–₹300", notes: "A genuine local activity on the lake itself, not just transport", available: true },
     ],
     nearbyPlaces: [
-      { name: "Guru Shikhar Peak", distance: "15 km", type: "Viewpoint", isHidden: false },
+      { name: "Guru Shikhar Peak", distance: "15 km", type: "Viewpoint", isHidden: true, id: "guru-shikhar" },
       { name: "Mount Abu Wildlife Sanctuary", distance: "3 km", type: "Wildlife", isHidden: true },
       { name: "Achalgarh Fort", distance: "11 km", type: "Heritage", isHidden: true },
       { name: "Trevor's Tank (crocodile spotting)", distance: "5 km", type: "Nature", isHidden: true },
@@ -1246,7 +1246,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Ranakpur Jain Temple", distance: "50 km", type: "Spiritual", isHidden: false, id: "ranakpur" },
       { name: "Udaipur", distance: "85 km", type: "Heritage", isHidden: false, id: "udaipur" },
-      { name: "Kumbhalgarh Wildlife Sanctuary", distance: "Adjacent to the fort", type: "Wildlife", isHidden: true },
+      { name: "Kumbhalgarh Wildlife Sanctuary", distance: "Adjacent to the fort", type: "Wildlife", isHidden: true, id: "kumbhalgarh-wildlife-sanctuary" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 800, activities: 100 },
@@ -23474,6 +23474,173 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1400,
     mustEat: ["Rajasthani thali in Jodhpur"],
     packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera", "Small denomination cash for any village-craft purchases"],
+  },
+
+  {
+    id: "kumbhalgarh-wildlife-sanctuary",
+    name: "Kumbhalgarh Wildlife Sanctuary",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 610 sq km Wolf Stronghold Ringing the Great Wall of Kumbhalgarh",
+    description: "Kumbhalgarh Wildlife Sanctuary spreads across more than 610 sq km of the Aravalli Range around Kumbhalgarh Fort, once the private hunting grounds of Mewar's royal family before being declared a sanctuary (sources place this at either 1971 or 1988). It's a genuine ecological corridor linking Rajasthan's Aravalli forests to Gujarat's Gir-Ambaji landscape, allowing wide-ranging species like leopards, wolves, and antelope to move between the two regions. The sanctuary holds one of India's largest wolf populations and is the only reserve where wolf breeding has been successfully documented, with more than forty wolves concentrated in its Joba area alone — sightings, especially in packs during early morning hours, are a real highlight distinct from the more commonly-marketed tiger safaris elsewhere in Rajasthan. Leopards are the apex predator here, alongside sloth bears, chinkara, and a rich birdlife, all set against the dramatic backdrop of Kumbhalgarh's 36 km fort wall visible from many points in the reserve.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kumbhalgarh_Fort_from_Forest.jpg/1280px-Kumbhalgarh_Fort_from_Forest.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kumbhalgarh_Fort_from_Forest.jpg/1280px-Kumbhalgarh_Fort_from_Forest.jpg",
+    imageCredit: "Photo: Dev1467 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "1 day",
+    highlights: [
+      { name: "610+ sq km sanctuary encircling Kumbhalgarh Fort in the Aravalli Range" },
+      { name: "One of India's largest wolf populations, with successful documented wolf breeding" },
+      { name: "A genuine wildlife corridor linking Rajasthan's Aravallis to Gujarat's Gir-Ambaji landscape" },
+      { name: "Leopards, sloth bears, chinkara, and rich birdlife alongside the wolves" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~65 km / ~1.5-2h from Udaipur", costRange: "₹1,800–₹3,500 by cab from Udaipur", tips: "Combine easily with a Kumbhalgarh Fort visit — the sanctuary safari and the fort tour work well as a single day trip." },
+    ],
+    accommodation: [
+      { type: "Base near Kumbhalgarh/Udaipur", priceRange: "₹1,500–₹12,000/night (estimate)", examples: ["Kumbhalgarh forest/heritage resorts", "Udaipur city hotels"], description: "A range from simple lodges near the sanctuary gate to resort stays; Udaipur works as a day-trip base too." },
+    ],
+    localTransport: [
+      { mode: "Forest Department Jeep Safari", cost: "₹1,500–₹3,000 per jeep (approx.)", notes: "The standard way to explore the sanctuary; book in advance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kumbhalgarh Fort", distance: "Adjoining", type: "Heritage", isHidden: false, id: "kumbhalgarh" },
+      { name: "Udaipur", distance: "~65 km", type: "City", isHidden: false, id: "udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 1500, food: 400, transport: 500, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 3500, food: 800, transport: 800, activities: 900 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 15000, accommodation: 10000, food: 1500, transport: 1500, activities: 2000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kumbhalgarh Fort & Wildlife Safari", morning: "Kumbhalgarh Fort — the second-longest wall in the world.", afternoon: "Jeep safari through the wildlife sanctuary, watching for wolves and leopards.", evening: "Return to Udaipur or stay at a nearby resort.", stay: "Kumbhalgarh area or Udaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "Early morning safaris give the best odds of spotting wolf packs; go in with realistic expectations, since sightings are never guaranteed." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An organized, forest-department-regulated safari operation with fixed routes and trained guides"],
+      precautions: ["Stay inside the jeep at all times during safaris", "Only book through official forest-department channels or reputable lodges"],
+      soloTips: ["Join a shared jeep safari rather than arranging informal transport; lodges near Kumbhalgarh can typically help pair solo travelers into group safaris"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Rajsamand District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Forest-department safari vehicles and designated lodge areas"],
+      avoidAreas: ["Walking outside vehicles within the sanctuary"],
+    },
+    rating: 4.4,
+    reviews: 1600,
+    mustEat: ["Rajasthani thali near Kumbhalgarh"],
+    packingTips: ["Neutral-colored clothing", "Binoculars", "Warm layers for early-morning safaris in winter", "Sun protection"],
+  },
+
+  {
+    id: "mandore-gardens",
+    name: "Mandore Gardens",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Where Jodhpur's Kings Rest, in Red-Sandstone Cenotaphs Shaped Like Temples",
+    description: "Mandore, about 15 km from central Jodhpur, was the capital of the Rathore clan dating back to the 6th century, and remained the seat of the family's rule until Rao Jodha shifted his capital to the newly-founded city of Jodhpur — and its new fort, Mehrangarh — in 1459 CE. The old capital's real legacy today is a landscaped garden dotted with royal cenotaphs (dewals) commemorating generations of Jodhpur's rulers, including Rao Jodha himself. Built in red sandstone and unusually shaped like multi-storey Hindu temples rather than the simple domed chhatris found elsewhere in Rajasthan, each cenotaph carries its own distinct spires and elaborately carved columns, reflecting real evolving Marwar-dynasty craftsmanship across the centuries the site was in continuous royal use.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Cenotaphs_in_Mandore_Gardens_at_Mandore%2C_Rajasthan_03.jpg/1280px-Cenotaphs_in_Mandore_Gardens_at_Mandore%2C_Rajasthan_03.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Cenotaphs_in_Mandore_Gardens_at_Mandore%2C_Rajasthan_03.jpg/1280px-Cenotaphs_in_Mandore_Gardens_at_Mandore%2C_Rajasthan_03.jpg",
+    imageCredit: "Photo: Pinakpani — Wikimedia Commons, CC BY 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "1.5–2 hours",
+    highlights: [
+      { name: "Capital of the Rathore clan from the 6th century until Rao Jodha's move to Jodhpur in 1459" },
+      { name: "Red-sandstone royal cenotaphs shaped like multi-storey Hindu temples, unusual for Rajasthan" },
+      { name: "Includes the cenotaph of Rao Jodha, founder of Jodhpur, himself" },
+      { name: "A landscaped garden setting, distinct from a typical monument visit" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "~9 km / ~20 min from central Jodhpur", costRange: "₹150–₹400 by auto/cab from Jodhpur", tips: "Easily combined with Osian or a Bishnoi village visit on the same day, given the shared route out of Jodhpur." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹800–₹20,000/night (estimate)", examples: ["Jodhpur old-city havelis", "Jodhpur heritage hotels"], description: "Any Jodhpur city hotel works — Mandore is a short ride from the centre." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Jodhpur", notes: "Standard way to reach Mandore Gardens", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jodhpur", distance: "~9 km", type: "City", isHidden: false, id: "jodhpur" },
+      { name: "Mehrangarh Fort", distance: "~9 km", type: "Heritage", isHidden: true, id: "mehrangarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 200, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 18000, accommodation: 15000, food: 1800, transport: 500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old Marwar Capital", morning: "Mandore Gardens — the royal cenotaphs and old fort ruins.", afternoon: "Return to Jodhpur or continue to Osian.", evening: "Mehrangarh Fort or the Blue City lanes.", stay: "Jodhpur", meals: "Rajasthani thali (₹300–₹500)", tips: "A quiet, less-crowded alternative or complement to Jodhpur's bigger monuments, worth an unhurried garden walk." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known heritage garden with regular local and tourist visitors, close to Jodhpur city"],
+      precautions: ["Standard heritage-garden caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its proximity to Jodhpur and steady visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The garden and cenotaph grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 3400,
+    mustEat: ["Rajasthani thali in Jodhpur"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "guru-shikhar",
+    name: "Guru Shikhar",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "The Aravalli Range's Highest Point, Where a Sage Once Meditated",
+    description: "Guru Shikhar, about 15 km from Mount Abu, rises to 1,722 metres (5,650 feet), making it the highest peak in the entire Aravalli Range — one of the world's oldest mountain systems. The name translates to \"peak of the guru,\" after a real tradition holding that Guru Dattatreya, worshipped as a combined incarnation of Brahma, Vishnu, and Shiva, meditated here during his time as a monk; a small temple built into a cave now marks the spot. A climb of roughly 300 steps from the parking area leads to the summit, which also hosts the Mount Abu Observatory, and rewards the effort with genuinely sweeping panoramic views over Mount Abu — Rajasthan's only hill station — and the wider Aravalli landscape below.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Guru_Shikhar_Mount_Abu.jpg/1280px-Guru_Shikhar_Mount_Abu.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Guru_Shikhar_Mount_Abu.jpg/1280px-Guru_Shikhar_Mount_Abu.jpg",
+    imageCredit: "Photo: Mschhipa — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "1,722m — the highest point in the entire Aravalli Range" },
+      { name: "A cave temple to Guru Dattatreya, who is said to have meditated here" },
+      { name: "~300-step climb to the summit, home to the Mount Abu Observatory" },
+      { name: "Panoramic views over Mount Abu and the wider Aravalli landscape" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Mount Abu — long haul", fromMumbai: "Via Mount Abu — long haul", fromBangalore: "Via Mount Abu — long haul", duration: "~15 km / ~30-40 min from Mount Abu town", costRange: "₹500–₹1,000 by cab from Mount Abu", tips: "Late afternoon offers the clearest long-distance views before the light softens toward sunset." },
+    ],
+    accommodation: [
+      { type: "Base in Mount Abu", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Mount Abu budget hotels", "Mount Abu resort hotels"], description: "Mount Abu town is the practical base for this half-day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,000 from Mount Abu", notes: "Standard way to reach the base of the climb", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mount Abu", distance: "~15 km", type: "Hill Station", isHidden: false, id: "mount-abu" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 800, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1000, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mount Abu Highlands", morning: "Nakki Lake and central Mount Abu town.", afternoon: "Guru Shikhar — the climb and summit temple.", evening: "Sunset Point back in Mount Abu.", stay: "Mount Abu", meals: "Rajasthani/Gujarati thali (₹250–₹400)", tips: "Carry a light jacket — it's noticeably cooler and windier at the summit than in Mount Abu town below." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A popular, regularly-visited viewpoint with steady daytime foot traffic and stalls along the steps"],
+      precautions: ["Wear comfortable footwear for the ~300-step climb", "Carry a light jacket for the breezy summit"],
+      soloTips: ["Very comfortable for solo daytime visits given the constant flow of visitors up and down the steps"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Sirohi District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepped path and summit area during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 4200,
+    mustEat: ["Rajasthani/Gujarati thali in Mount Abu town"],
+    packingTips: ["Comfortable walking shoes", "Light jacket for the breezy summit", "Camera"],
   },
 
 ];
