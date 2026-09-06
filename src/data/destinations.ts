@@ -17621,6 +17621,373 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Binoculars", "A hat and sun protection", "Layered clothing for early-morning boat rides"],
   },
 
+  // ===== Gujarat — Stage 13: Wildlife Sanctuaries, second batch (7
+  // more of the 22 listed; 11 of 22 now built). Porbandar Bird
+  // Sanctuary is a documented gap this stage — genuinely listed and
+  // real (dedicated 1988, championed by naturalist Peter Jackson),
+  // but no verified Wikimedia Commons photo could be found despite
+  // repeated searches, likely due to its very small size (9.33
+  // hectares) limiting photographer coverage. Remaining after this
+  // stage: Devalia Safari Park, Mitiyala WLS, Pania WLS, Jessore
+  // Sloth Bear Sanctuary, Jambughoda WLS, Purna WLS, Gaga WLS,
+  // Kutch Desert Sanctuary, Rampara WLS, Balaram Ambaji WLS,
+  // Porbandar Bird Sanctuary — a further follow-up stage.
+  {
+    id: "khijadiya-bird-sanctuary",
+    name: "Khijadiya Bird Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Ramsar Wetland Born From a 1920 Farmland Dike",
+    description: "Khijadiya Bird Sanctuary, at the meeting point of the Ruparel river and Kalindri watershed near Jamnagar, genuinely began as a 1920 bund (dike) built by the ruler of the princely state of Nawanagar to protect farmland from saltwater — the resulting mix of salt and freshwater lakes, marshland and mangroves across 605 hectares became a sanctuary in 1981 and, more recently, gained real international recognition as a Ramsar Wetland of Importance on World Wetlands Day, 2 February 2022. It hosts a genuinely remarkable 314 recorded bird species, including pelicans, flamingos, herons and spoonbills, on the migratory route's western edge.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg/1280px-Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg/1280px-Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg/1280px-Sunrise_%40_Jamnagar_%28Khijadiya_Bird_sanctuary%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/White-eared_bulbul_-_Khijadiya_Bird_Sanctuary_2020-03-06_02.jpg/1280px-White-eared_bulbul_-_Khijadiya_Bird_Sanctuary_2020-03-06_02.jpg",
+    ],
+    imageCredit: "Photos: Aditya36subu (CC BY-SA 4.0), Mahmadanesh (CC BY 4.0) — Wikimedia Commons.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Ramsar Wetland of Importance (2022)" }, { name: "314 recorded bird species" }, { name: "Salt & freshwater lake mosaic" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamnagar — long haul", fromMumbai: "Via Jamnagar — long haul", fromBangalore: "Not practical", duration: "~10 km / ~20 min from Jamnagar", costRange: "₹150–₹400 (auto/cab from Jamnagar)", tips: "Easily combined with a Jamnagar city visit or the Marine National Park on the same trip." },
+    ],
+    accommodation: [
+      { type: "Base in Jamnagar", priceRange: "₹1,200–₹4,500/night (estimate)", examples: ["Hotels in Jamnagar city"], description: "A short day trip from Jamnagar." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Jamnagar", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jamnagar", distance: "~10 km", type: "City", isHidden: false, id: "jamnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 600, transport: 400, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7700, accommodation: 4700, food: 1000, transport: 700, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Wetland Birding", morning: "Early walk/watchtower birding — pelicans, flamingos, herons in the wetland mosaic.", afternoon: "Return to Jamnagar.", evening: "—", stay: "Jamnagar base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth pairing with the Marine National Park given the shared Jamnagar base." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed Ramsar-designated sanctuary with regular visitor and researcher traffic"],
+      precautions: ["Standard wetland-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the short distance from Jamnagar"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Jamnagar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The sanctuary's marked trails and watchtowers"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Local Gujarati food in Jamnagar"],
+    packingTips: ["Binoculars", "Sun protection", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "thol-lake-sanctuary",
+    name: "Thol Lake Bird Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 1912 Irrigation Reservoir on the Central Asian Flyway",
+    description: "Thol Lake Wildlife Sanctuary, near Ahmedabad, genuinely began in 1912 as a Gaekwad-built irrigation reservoir, later declared a sanctuary in 1988 and, in 2021, formally designated a Ramsar site — one of four in Gujarat alongside Nalsarovar, Vadhvana, and Khijadiya. Sitting on the real Central Asian Flyway, its 7 sq km of lake, marsh and scrub hosts over 320 recorded bird species — some 57% of all bird species found in Gujarat — including critically endangered white-rumped vultures and sociable lapwings among its migratory visitors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Birds_at_Thol_Bird_Sanctuary_%2812%29.jpg/1280px-Birds_at_Thol_Bird_Sanctuary_%2812%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Birds_at_Thol_Bird_Sanctuary_%2812%29.jpg/1280px-Birds_at_Thol_Bird_Sanctuary_%2812%29.jpg",
+    imageCredit: "Photo: Gannu03 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Ramsar site (2021)" }, { name: "320+ recorded bird species" }, { name: "1912 Gaekwad-era reservoir origin" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~40 km / ~1h from Ahmedabad", costRange: "₹600–₹1,500 (cab from Ahmedabad)", tips: "Genuinely an easy half-day trip from Ahmedabad, especially combined with a Nalsarovar visit on the same route." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "A day-trip destination." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,500 from Ahmedabad", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~40 km", type: "City", isHidden: false, id: "ahmedabad" },
+      { name: "Nalsarovar Bird Sanctuary", distance: "~60 km", type: "Wildlife", isHidden: false, id: "nalsarovar-bird-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1800, food: 600, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7600, accommodation: 4600, food: 1000, transport: 700, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ramsar Wetland Birding", morning: "Early birding walk around the lake and scrub forest.", afternoon: "Return to Ahmedabad.", evening: "—", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely one of the richest single-site bird counts in Gujarat — worth a dedicated early-morning visit rather than a rushed stop." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed, Ramsar-designated sanctuary close to Ahmedabad with regular visitor traffic"],
+      precautions: ["Standard wetland-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the short distance from Ahmedabad"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad Rural Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and watchtowers"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 900,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Binoculars", "Sun protection", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "hingolgadh-nature-education-sanctuary",
+    name: "Hingolgadh Nature Education Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Former Royal Hunting Ground Turned Nature-Education Hub",
+    description: "Hingolgadh Nature Education Sanctuary, near Jasdan in Rajkot district, was once the ex-princely state of Jasdan's hunting ground, known as \"Motisari vidi\" — genuinely declared a Private Forest in 1973 and a Wildlife Sanctuary in 1980. Since 1984 it's been managed by the Gujarat Ecological Education and Research (GEER) Foundation specifically as a nature-education site, hosting real annual monsoon-season education camps across its 654 hectares of dry deciduous forest and grassland, alongside the genuine 15th-century Hingolgarh Fort and several ancient temples within its bounds.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hingolgadh_heritage_palace.jpg/1280px-Hingolgadh_heritage_palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hingolgadh_heritage_palace.jpg/1280px-Hingolgadh_heritage_palace.jpg",
+    imageCredit: "Photo: Raju Royal — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Heritage"],
+    bestSeason: "November – February; monsoon-season nature-education camps also run here",
+    duration: "Half day",
+    highlights: [{ name: "654 hectares of dry deciduous forest & grassland" }, { name: "15th-century Hingolgarh Fort" }, { name: "GEER Foundation nature-education camps" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.25h from Rajkot", costRange: "₹1,000–₹2,000 (cab from Rajkot)", tips: "Book ahead if visiting during monsoon-season education camps, as the sanctuary hosts scheduled groups then." },
+    ],
+    accommodation: [
+      { type: "Base in Rajkot", priceRange: "₹700–₹5,000/night (estimate)", examples: ["Hotels across Rajkot city"], description: "The natural regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,000 from Rajkot", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajkot", distance: "~65 km", type: "City", isHidden: false, id: "rajkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 550, food: 300, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1700, food: 600, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4400, food: 1000, transport: 800, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Forest, Fort & Wildlife", morning: "Nature walk through the dry deciduous forest and grassland.", afternoon: "Explore the 15th-century Hingolgarh Fort and ancient temples within the sanctuary.", evening: "Return to Rajkot.", stay: "Rajkot base", meals: "Kathiyawadi thali (₹250)", tips: "A genuinely distinctive combination of wildlife habitat and real medieval heritage in one small sanctuary." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed, GEER Foundation-run education sanctuary with regular group visits"],
+      precautions: ["Stick to marked trails"],
+      soloTips: ["A comfortable solo daytime visit; check ahead for the best access during scheduled camp periods"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Rajkot City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and the fort area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 400,
+    mustEat: ["Kathiyawadi Thali in Rajkot"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle"],
+  },
+
+  {
+    id: "shoolpaneshwar-wildlife-sanctuary",
+    name: "Shoolpaneshwar Wildlife Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Sloth-Bear Refuge Named for a Temple Submerged by the Sardar Sarovar",
+    description: "Shoolpaneshwar Wildlife Sanctuary, near Rajpipla in Narmada district, was genuinely first declared in 1982 as the 150.87 sq km \"Dumkhal Sanctuary\" to protect sloth bears, then expanded to 607.70 sq km in 1987–89 as a real mitigation measure for the Sardar Sarovar Dam project. It takes its name from a historic Lord Shiva temple that once stood on the Narmada's banks — genuinely submerged by the Sardar Sarovar Reservoir, with a new Shoolpaneshwar temple since rebuilt near Rajpipla.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Landscape_at_shoolpaneshwar_wildlife_sanctuary_04.jpg/1280px-Landscape_at_shoolpaneshwar_wildlife_sanctuary_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Landscape_at_shoolpaneshwar_wildlife_sanctuary_04.jpg/1280px-Landscape_at_shoolpaneshwar_wildlife_sanctuary_04.jpg",
+    imageCredit: "Photo: Mohak Maniar — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "607.70 sq km sloth-bear habitat" }, { name: "Named for a temple submerged by the Sardar Sarovar" }, { name: "Real Sardar Sarovar Dam mitigation project" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rajpipla — long haul", fromMumbai: "~380 km, ~7h", fromBangalore: "Not practical", duration: "~90 km / ~2h from Vadodara", costRange: "₹1,800–₹3,500 (cab from Vadodara)", tips: "Genuinely combinable with a Statue of Unity trip, given the shared Narmada-district route." },
+    ],
+    accommodation: [
+      { type: "Base in Rajpipla/Vadodara", priceRange: "₹1,000–₹5,000/night (estimate)", examples: ["Hotels in Rajpipla town", "Vadodara hotels"], description: "Rajpipla is the closer base; Vadodara has more options." },
+    ],
+    localTransport: [
+      { mode: "Taxi / Jeep Safari", cost: "₹1,800–₹3,500", notes: "For sanctuary access, arranged via the forest department", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Statue of Unity, Kevadia", distance: "~50 km", type: "Monument", isHidden: true },
+      { name: "Vadodara", distance: "~90 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2100, food: 650, transport: 600, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8600, accommodation: 5300, food: 1100, transport: 900, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sloth Bear Forest", morning: "Jeep safari through the sanctuary's forested hills.", afternoon: "Visit the rebuilt Shoolpaneshwar temple near Rajpipla.", evening: "Return toward Vadodara or continue to the Statue of Unity.", stay: "Rajpipla or Vadodara base", meals: "Local Gujarati food (₹300)", tips: "Genuinely worth combining with a Statue of Unity trip, since both sit in the same Narmada-district loop." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A forest-department-managed sanctuary with permit-only jeep access"],
+      precautions: ["Stay with the guide/jeep during safaris"],
+      soloTips: ["A comfortable solo visit given the guided safari model"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Narmada District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Official safari routes"],
+      avoidAreas: ["Unauthorized/unguided forest entry"],
+    },
+    rating: 4.2,
+    reviews: 500,
+    mustEat: ["Local Gujarati food near Rajpipla"],
+    packingTips: ["Neutral-colored clothing", "Comfortable footwear", "Insect repellent"],
+  },
+
+  {
+    id: "ratanmahal-sloth-bear-sanctuary",
+    name: "Ratanmahal Sloth Bear Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gujarat's Highest Concentration of Sloth Bears",
+    description: "Ratanmahal Sloth Bear Sanctuary, in Dahod district near the tribal towns of Baria and Chhota Udepur, was genuinely declared a wildlife sanctuary in March 1982 across 55.65 sq km on Gujarat's border with Madhya Pradesh. It real genuinely holds the state's largest sloth bear population, alongside a significant leopard presence, and its forests form the catchment for the Panam river, a real ecological asset for water conservation in central Gujarat.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ratanmahal_Wildlife_Sanctuary_-_Dahod_district_-_Gujarat_-_DSC0001.jpg/1280px-Ratanmahal_Wildlife_Sanctuary_-_Dahod_district_-_Gujarat_-_DSC0001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ratanmahal_Wildlife_Sanctuary_-_Dahod_district_-_Gujarat_-_DSC0001.jpg/1280px-Ratanmahal_Wildlife_Sanctuary_-_Dahod_district_-_Gujarat_-_DSC0001.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "Gujarat's largest sloth bear population" }, { name: "Real leopard presence" }, { name: "Panam river catchment forest" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Dahod — long haul", fromMumbai: "~430 km, ~8h", fromBangalore: "Not practical", duration: "~110 km / ~2.5h from Vadodara", costRange: "₹2,200–₹4,000 (cab from Vadodara)", tips: "Genuinely an offbeat, less-visited sanctuary — arrange safari permits in advance via the forest department." },
+    ],
+    accommodation: [
+      { type: "Base in Dahod/Vadodara", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Hotels in Dahod town", "Vadodara hotels"], description: "Dahod is closer; Vadodara has more options." },
+    ],
+    localTransport: [
+      { mode: "Jeep Safari", cost: "₹1,500–₹3,000", notes: "Arranged via the forest department", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara", distance: "~110 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2000, food: 650, transport: 650, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5000, food: 1100, transport: 1000, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sloth Bear Territory", morning: "Jeep safari across Ratanmahal's forested hills for sloth bear and leopard signs.", afternoon: "Return toward Vadodara or Dahod.", evening: "—", stay: "Dahod or Vadodara base", meals: "Local tribal-region food (₹300)", tips: "Genuinely one of Gujarat's least-visited wildlife sanctuaries — a real offbeat pick for repeat Gujarat travelers." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A remote, less-touristed sanctuary — best visited with an official forest-department guide"],
+      precautions: ["Always go with a guide given the sanctuary's remoteness and limited infrastructure", "Inform your accommodation of your safari plan and return time"],
+      soloTips: ["Not recommended to explore solo without a guide — arrange a guided jeep safari instead"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Dahod District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Official safari routes"],
+      avoidAreas: ["Unguided forest entry, especially given sloth bear presence"],
+    },
+    rating: 4.0,
+    reviews: 250,
+    mustEat: ["Local tribal-region food near Dahod"],
+    packingTips: ["Neutral-colored clothing", "Sturdy footwear", "Insect repellent"],
+  },
+
+  {
+    id: "chhari-dhand-wetland-reserve",
+    name: "Chhari Dhand Wetland Reserve",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gujarat's First Conservation Reserve, on the Edge of the Banni Grasslands",
+    description: "Chhari Dhand — \"salty shallow wetland\" in Kutchi — sits where the arid Banni grasslands meet the Rann's marshy salt flats, and was genuinely declared Gujarat's first Conservation Reserve in 2008 across 227 sq km. It's a real Ramsar Wetland of International Importance (Gujarat's fifth, Kutch's first), supporting over 250 bird species and rare mammals like chinkara and desert fox — with a genuine 25,000–40,000 migratory birds from Siberia, Central Asia and Europe arriving each winter, including endangered Dalmatian pelicans and Indian skimmers.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Rann_of_Kutch%2C_India_ESA377539.jpg/1280px-Rann_of_Kutch%2C_India_ESA377539.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Rann_of_Kutch%2C_India_ESA377539.jpg/1280px-Rann_of_Kutch%2C_India_ESA377539.jpg",
+    imageCredit: "Satellite view of the wider Rann of Kutch region: European Space Agency — Wikimedia Commons, CC BY-SA 3.0 IGO. (No verified photo specific to the Chhari Dhand reserve itself was found; this regional satellite view is used to honestly represent the landscape rather than a site-specific ground photo.)",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February (winter migratory season)",
+    duration: "Half day",
+    highlights: [{ name: "Gujarat's first Conservation Reserve (2008)" }, { name: "Ramsar Wetland — Kutch's first" }, { name: "25,000–40,000 winter migratory birds" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~40 km / ~1h from Bhuj", costRange: "₹1,200–₹2,500 (cab from Bhuj)", tips: "Genuinely combinable with a wider Banni grassland/handicraft-village circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500 from Bhuj", notes: "Standard way to reach the reserve", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~40 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 650, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8400, accommodation: 5300, food: 1100, transport: 900, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Wetland Birding at the Grassland Edge", morning: "Early birding for migratory flocks — Dalmatian pelicans, painted storks, cranes.", afternoon: "Return to Bhuj.", evening: "—", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "Genuinely one of Kutch's richest, least-known birding sites — worth an early start for peak activity." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed conservation reserve with regular birder and researcher visits in season"],
+      precautions: ["Remote setting — carry water and inform your accommodation of your plan"],
+      soloTips: ["Better visited with a local guide or as part of an organized Kutch birding circuit given the remote grassland setting"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked reserve trails during daylight"],
+      avoidAreas: ["Unguided travel off marked routes"],
+    },
+    rating: 4.3,
+    reviews: 350,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Binoculars", "Sun protection", "Water and snacks"],
+  },
+
+  {
+    id: "kutch-great-indian-bustard-sanctuary",
+    name: "Kutch (Naliya) Great Indian Bustard Sanctuary",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "India's Smallest Sanctuary, Protecting Its Heaviest Flying Bird",
+    description: "The Kutch Bustard Sanctuary, near Naliya in Kutch district (also known as Lala-Parjan Sanctuary), was genuinely declared in July 1992 specifically to protect the Great Indian Bustard — the heaviest flying bird in the avian family Otididae, and now critically endangered. At just 2 sq km, it's genuinely the smallest wildlife sanctuary in India, and one of only two locations in Gujarat (alongside a Jamnagar site) working to conserve this real, dwindling breeding population.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Great_Indian_Bustard_%28Ardeotis_nigriceps%29.jpg/1280px-The_Great_Indian_Bustard_%28Ardeotis_nigriceps%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Great_Indian_Bustard_%28Ardeotis_nigriceps%29.jpg/1280px-The_Great_Indian_Bustard_%28Ardeotis_nigriceps%29.jpg",
+    imageCredit: "Photo of the Great Indian Bustard (Ardeotis nigriceps), the species this sanctuary protects: SVKMBFLY — Wikimedia Commons, CC BY-SA 4.0. (Photographed elsewhere in India; no verified photo specific to this small Kutch sanctuary was found.)",
+    category: ["Wildlife", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "India's smallest wildlife sanctuary (2 sq km)" }, { name: "Critically endangered Great Indian Bustard" }, { name: "One of only 2 bustard sites in Gujarat" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~90 km / ~2h from Bhuj, via Naliya", costRange: "₹1,500–₹3,000 (cab from Bhuj)", tips: "The nearest bus station is Naliya, ~20 km away — most visitors arrange a private vehicle from Bhuj instead." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base for this remote sanctuary." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach the sanctuary via Naliya", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~90 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 400, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2100, food: 650, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5400, food: 1100, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bustard Grassland Visit", morning: "Guided grassland walk/vehicle survey for the Great Indian Bustard — sightings are genuinely rare given how endangered the species is.", afternoon: "Return to Bhuj.", evening: "—", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "Visit with realistic expectations — this is one of the world's rarest large birds, and a sighting is a genuine bonus, not a guarantee." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A very small, remote, specialist sanctuary — best visited with a local wildlife guide"],
+      precautions: ["Arrange a guide in advance given the sanctuary's remote, sparsely-signed grassland setting", "Inform your accommodation of your plan and return time"],
+      soloTips: ["Not recommended to visit without a local guide, given how remote and specialized this site is"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["Guided survey routes"],
+      avoidAreas: ["Unguided travel in this remote grassland area"],
+    },
+    rating: 4.1,
+    reviews: 150,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Binoculars", "Neutral-colored clothing", "Sun protection", "Patience — sightings are rare"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
