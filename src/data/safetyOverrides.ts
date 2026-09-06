@@ -4157,3 +4157,15 @@ SAFETY_OVERRIDES["prabhas-patan-museum"] = {
   police: { summary: "Gir Somnath District Police: 100", details: ["Gir Somnath District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Veraval General Hospital — dial 108 for ambulance", details: ["Veraval General Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["dholavira"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (district-level; Dholavira itself has no dedicated tourist-facing station).", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Bhuj City Police Station number sourced via general web search aggregator listings, not an official portal — call 100 for emergencies to be safe, especially given this site's remote setting." },
+  medical: { summary: "G.K. General Hospital, Bhuj — dial 108 for ambulance", details: ["G.K. General Hospital, Bhuj (~250 km) — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service — critical given how remote Dholavira is.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["lothal"] = {
+  police: { summary: "Ahmedabad Rural Police: 100", details: ["Ahmedabad Rural Police control room: 100 (Lothal falls under Ahmedabad district's rural/Dholka jurisdiction).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Dholka/Ahmedabad Civil Hospital — dial 108 for ambulance", details: ["Government hospital in Dholka serves this area; Civil Hospital Ahmedabad (~85 km) for anything serious.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["champaner-pavagadh-archaeological-park"] = {
+  police: { summary: "Panchmahal District Police: 100", details: ["Panchmahal District Police control room: 100 (Godhra is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Godhra/Halol Civil Hospital — dial 108 for ambulance", details: ["Government hospitals in Halol or Godhra serve this area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

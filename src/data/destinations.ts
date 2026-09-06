@@ -21093,6 +21093,175 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera (check photography rules)"],
   },
 
+  // ===== Gujarat — Stage 24: UNESCO & Indus Valley Civilization
+  // Sites. Of the 4 UNESCO sites listed (Rani ki Vav, Champaner-
+  // Pavagadh, Ahmedabad World Heritage City, and Dholavira) and 3
+  // Indus Valley sites (Dholavira, Lothal, Surkotada) on
+  // gujarattourism.com, Rani ki Vav and Ahmedabad were already built
+  // as standalone/hub cards in earlier stages. This stage adds
+  // Dholavira, Lothal, and Champaner-Pavagadh Archaeological Park.
+  // Surkotada is a documented gap — a real, genuinely significant
+  // Harappan site (notable for its debated early horse-bone finds),
+  // but no verified Wikimedia Commons photo of the site itself was
+  // found, only regional maps.
+  {
+    id: "dholavira",
+    name: "Dholavira",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 5,000-Year-Old Harappan Metropolis With the World's Earliest Signboard",
+    description: "Dholavira, on Khadir Bet island in the Great Rann of Kutch, was genuinely discovered in 1968 by archaeologist Jagat Pati Joshi and is one of the five largest Indus Valley Civilization sites — occupied from roughly 3500 BCE through 1800 BCE across seven distinct phases. UNESCO inscribed it as a World Heritage Site on 27 July 2021, India's 40th such site and the country's first Indus Valley Civilization site to receive the designation. Real, remarkable features include one of the world's earliest and most sophisticated water-conservation systems, and the genuine \"Dholavira Signboard\" — ten large Indus-script characters inlaid in gypsum on a wooden board at the northern gateway, honestly one of the strongest candidates anywhere for the world's oldest signboard.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/53/Dholavira-1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/53/Dholavira-1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/53/Dholavira-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Well_at_ancient_Harappan_city_of_Dholavira.jpg/1280px-Well_at_ancient_Harappan_city_of_Dholavira.jpg",
+    ],
+    imageCredit: "Photos: Rahul Zota, Prof Ranga Sai — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "UNESCO"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "UNESCO World Heritage Site since 2021" }, { name: "One of the 5 largest Harappan cities" }, { name: "The Dholavira Signboard — the world's earliest?" }, { name: "Sophisticated ancient water-conservation system" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~250 km / ~5h from Bhuj", costRange: "₹4,000–₹7,000 (cab from Bhuj, full day)", tips: "Genuinely a full-day round trip from Bhuj given the distance — an overnight stay near Dholavira itself is worth considering." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The most common base, despite the distance." },
+      { type: "Dholavira/Khadir Bet Guesthouses", priceRange: "₹1,000–₹3,000/night (estimate)", examples: ["Local tented camps and guesthouses near the site"], description: "A genuinely more relaxed option if you want to avoid the long same-day round trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi / Self-Drive", cost: "₹4,000–₹7,000 for a full day from Bhuj", notes: "The practical way to reach this remote site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~250 km", type: "City", isHidden: false, id: "kutch" },
+      { name: "Kutch Desert Wildlife Sanctuary", distance: "Within the same Rann region", type: "Wildlife", isHidden: false, id: "kutch-desert-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 900, food: 400, transport: 500, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 2600, food: 700, transport: 850, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10200, accommodation: 6500, food: 1200, transport: 1200, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ancient Metropolis", morning: "Long drive from Bhuj to Dholavira.", afternoon: "Explore the citadel, middle town, lower town, and the genuine signboard replica at the site museum.", evening: "Return to Bhuj (long drive) or stay overnight near the site.", stay: "Bhuj or Dholavira-area guesthouse", meals: "Kutchi thali (₹300)", tips: "Genuinely worth budgeting real time here — this is a full ancient city, not a quick photo stop, and deserves several unhurried hours." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A genuinely significant, ASI-protected UNESCO site with organized visitor facilities despite its remoteness"],
+      precautions: ["Very remote — carry water, snacks, and inform your accommodation of your travel plan", "Limited mobile signal in stretches of the route", "Sun exposure is real and significant — the site has little shade"],
+      soloTips: ["Better visited as part of an organized Kutch tour or with a driver familiar with the route, given the genuine remoteness"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The site museum and marked excavation walkways"],
+      avoidAreas: ["None specific — just plan carefully for the remoteness and heat"],
+    },
+    rating: 4.7,
+    reviews: 1900,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Sun protection — hat, sunscreen, sunglasses", "Plenty of water", "Comfortable walking shoes for the excavation site", "Camera"],
+  },
+
+  {
+    id: "lothal",
+    name: "Lothal",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Indus Valley's Only Real Port City, With the World's Earliest Dockyard",
+    description: "Lothal, discovered in 1954 by archaeologist S.R. Rao and excavated by the ASI from 1955-62, dates to around 2400 BCE and was genuinely the Indus Valley Civilization's key maritime trade hub — unlike inland Harappa and Mohenjo-daro, Lothal connected to an ancient course of the Sabarmati river and traded semi-precious stones, beads, ivory and cotton with real Mesopotamian and Persian Gulf civilizations. Its dockyard is genuinely the world's earliest known, protected from tidal flooding by a substantial brick wall. Real remains still visible on-site include a warehouse, bead-manufacturing workshops, and residential neighbourhoods, all maintained today by the Archaeological Survey of India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Lothal_Dockyard.jpg/1280px-Lothal_Dockyard.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Lothal_Dockyard.jpg/1280px-Lothal_Dockyard.jpg",
+    imageCredit: "Photo: Raveesh Vyas — Wikimedia Commons, CC BY-SA 2.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "World's earliest known dockyard" }, { name: "The Indus Valley's key maritime trade hub" }, { name: "Real bead-manufacturing workshops on-site" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Genuinely combinable with Hazur Palace (Utelia) on the same day trip, given the shared route." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Most visitors day-trip from Ahmedabad." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Ahmedabad", notes: "Standard way to reach Lothal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hazur Palace (Utelia Palace)", distance: "~15 km", type: "Heritage", isHidden: false, id: "hazur-palace-utelia" },
+      { name: "Ahmedabad", distance: "~85 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 650, transport: 600, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5200, food: 1100, transport: 900, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ancient Port City", morning: "Explore the dockyard, warehouse and residential ruins.", afternoon: "The on-site Archaeological Museum's Harappan artefacts.", evening: "Return to Ahmedabad, optionally via Hazur Palace.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹300)", tips: "Genuinely a rare, tangible link to Indus Valley maritime trade — the dockyard's engineering is worth studying closely, not just photographing." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed, ASI-protected archaeological site with regular visitor traffic and an on-site museum"],
+      precautions: ["Standard heritage-site visiting etiquette", "Limited shade — sun protection recommended"],
+      soloTips: ["A comfortable solo daytime visit given the established visitor infrastructure"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad Rural Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The site and museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2400,
+    mustEat: ["Local Gujarati food near Lothal"],
+    packingTips: ["Sun protection", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "champaner-pavagadh-archaeological-park",
+    name: "Champaner-Pavagadh Archaeological Park",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Sultan's 15th-Century Capital, Frozen in Ruin Since 1535",
+    description: "Champaner-Pavagadh Archaeological Park, a genuine UNESCO World Heritage Site since 2004, spans over 1,329 hectares in Panchmahal district — a real fusion of Hindu, Jain and Muslim religious structures alongside forts, fortifications and palaces. The Khichi Chauhan Rajputs ruled the region until Gujarat Sultan Mahmud Begada defeated them after a genuine 20-month siege in 1484, then spent over 20 years building Champaner, at Pavagadh hill's base, into a splendid new Gujarat Sultanate capital — real mosques, palaces and tombs rose within its massive walls, including the genuinely important Jama Masjid. When Mughal emperor Humayun captured the city in 1535, the capital reverted to Ahmedabad and Champaner was, honestly, abandoned and left largely untouched — a genuinely rare case of an entire pre-Mughal Islamic capital surviving intact rather than being built over.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jami_Masjid_-_Champaner-Pavagadh_Archaeological_Park_-_Gujarat_-_DSC027.jpg/1280px-Jami_Masjid_-_Champaner-Pavagadh_Archaeological_Park_-_Gujarat_-_DSC027.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jami_Masjid_-_Champaner-Pavagadh_Archaeological_Park_-_Gujarat_-_DSC027.jpg/1280px-Jami_Masjid_-_Champaner-Pavagadh_Archaeological_Park_-_Gujarat_-_DSC027.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "UNESCO"],
+    bestSeason: "November – February",
+    duration: "Half day – 1 day",
+    highlights: [{ name: "UNESCO World Heritage Site since 2004" }, { name: "An intact 15th-century Sultanate capital" }, { name: "The real Jama Masjid, one of Gujarat's finest mosques" }, { name: "Abandoned since 1535, largely untouched since" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~45 km / ~1h from Vadodara", costRange: "₹1,200–₹2,500 (cab from Vadodara)", tips: "Genuinely combine this with Kalika Mata Temple atop Pavagadh Hill — both fall within the same UNESCO park." },
+    ],
+    accommodation: [
+      { type: "Base in Vadodara", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels across Vadodara city"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500 from Vadodara", notes: "Standard way to reach and explore the park", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pavagadh Hill & Kalika Mata Temple", distance: "At the hill above", type: "Temple", isHidden: false, id: "pavagadh-kalika-mata-temple" },
+      { name: "Vadodara", distance: "~45 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2100, food: 650, transport: 650, activities: 550 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8700, accommodation: 5300, food: 1100, transport: 950, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sultanate City & Sacred Hill", morning: "Champaner's Jama Masjid and the ruined city's mosques and gateways.", afternoon: "Ropeway or forest-path climb up Pavagadh Hill to Kalika Mata Temple.", evening: "Return to Vadodara.", stay: "Vadodara base", meals: "Local Gujarati food (₹300)", tips: "Genuinely worth allowing a full day — the archaeological park at the hill's base and the temple at its summit are two very different experiences that together make the site's UNESCO status make sense." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-managed UNESCO archaeological park with regular visitor traffic"],
+      precautions: ["Spread-out ruins across a large area — plan your route and carry water"],
+      soloTips: ["A comfortable solo daytime visit given the site's established visitor infrastructure"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Panchmahal District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main monument areas and marked paths"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2200,
+    mustEat: ["Local Gujarati food near Champaner"],
+    packingTips: ["Comfortable walking shoes — the ruins are spread out", "Sun protection", "Water"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
