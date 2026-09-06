@@ -4321,3 +4321,17 @@ SAFETY_OVERRIDES["mehrangarh-fort"] = {
   police: { summary: "Jodhpur City Police: 100", details: ["Jodhpur City Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital is one of Jodhpur's largest government hospitals.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["bhangarh-fort"] = {
+  police: { summary: "Alwar District Police: 100", details: ["Alwar District Police control room: 100.", "ASI staff enforce the sunset-to-sunrise entry closure at the ticket gate.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alwar District Hospital — dial 108 for ambulance", details: ["Alwar District Hospital is the nearest major facility for this rural site.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response times to this remote location may be longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
+};
+
+SAFETY_OVERRIDES["sam-sand-dunes"] = {
+  police: { summary: "Jaisalmer District Police: 100", details: ["Jaisalmer District Police control room: 100.", "Established desert camps typically have their own on-site staff and security.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Jawahar Hospital, Jaisalmer — dial 108 for ambulance", details: ["Jawahar Hospital in Jaisalmer town is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response times to this remote desert location may be longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
+};
+
+SAFETY_OVERRIDES["kuldhara-village"] = {
+  police: { summary: "Jaisalmer District Police: 100", details: ["Jaisalmer District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Jawahar Hospital, Jaisalmer — dial 108 for ambulance", details: ["Jawahar Hospital in Jaisalmer town is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
