@@ -3989,3 +3989,15 @@ SAFETY_OVERRIDES["idar-fort"] = {
   police: { summary: "Sabarkantha District Police: 100", details: ["Sabarkantha District Police control room: 100 (Himmatnagar is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["ranjit-vilas-palace-wankaner"] = {
+  police: { summary: "Morbi District Police: 100", details: ["Morbi District Police control room: 100 (Wankaner falls within Morbi district).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Morbi Civil Hospital — dial 108 for ambulance", details: ["Morbi Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["hazur-palace-utelia"] = {
+  police: { summary: "Ahmedabad Rural Police: 100", details: ["Ahmedabad Rural Police control room: 100 (Utelia/Dholka taluka falls under Ahmedabad district's rural jurisdiction).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Dholka/Ahmedabad Civil Hospital — dial 108 for ambulance", details: ["Government hospital in Dholka serves this area; Civil Hospital Ahmedabad (~85 km) for anything serious.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["dowlat-vilas-palace"] = {
+  police: { summary: "Sabarkantha District Police: 100", details: ["Sabarkantha District Police control room: 100 (Himmatnagar is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

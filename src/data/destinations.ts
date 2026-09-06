@@ -18931,6 +18931,167 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy walking shoes for the hill climb", "Water bottle", "Sun protection"],
   },
 
+  // ===== Gujarat — Stage 17: Heritage Sites, third batch — the
+  // Palaces subcategory. Of ~11 palaces listed on
+  // gujarattourism.com/heritage-sites.html (Laxmi Vilas, Vijay
+  // Vilas, and Nilambag already built as their own hub/beach cards
+  // in earlier stages), 3 more are built here with verified images;
+  // Sharad Bagh Palace (Kutch), Orchard Palace (Rajkot/Gondal), and
+  // Kusum Vilas Palace (Chhotaudepur) are documented gaps — all
+  // genuine, real palaces, but no verified Wikimedia Commons photo
+  // was found for any of the three after repeated searches.
+  {
+    id: "ranjit-vilas-palace-wankaner",
+    name: "Ranjit Vilas Palace, Wankaner",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Self-Designed Royal Palace Blending Four Architectural Styles",
+    description: "Ranjit Vilas Palace, in Wankaner, was genuinely designed by the last ruler of Wankaner State himself, Amarsinhji, with construction running 1907-1914 and named for his close friend Jam Ranjitsinhji, the Maharaja of Jamnagar. Spanning a real 225-acre estate, its three-storey Venetian-Gothic facade blends Victorian, Mughal, Gothic and Dutch influences — carved Rajput jharokha balconies alongside Doric columns and Franco-Italian windows, with a clock tower offering a genuine 360-degree view over Wankaner town. It served as the royal family's residence until 2012, sustaining real damage in the 2001 Gujarat earthquake.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Wankaner-palace.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/83/Wankaner-palace.png",
+    imageCredit: "Photo: Dmp mech — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Self-designed by Wankaner's last ruler, 1907–1914" }, { name: "Victorian-Mughal-Gothic-Dutch fusion" }, { name: "225-acre estate, 360° clock-tower view" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~35 km / ~50 min from Rajkot", costRange: "₹800–₹1,800 (cab from Rajkot)", tips: "Genuinely worth checking ahead, since parts remain a private royal residence with limited public access windows." },
+    ],
+    accommodation: [
+      { type: "Base in Rajkot", priceRange: "₹700–₹5,000/night (estimate)", examples: ["Hotels across Rajkot city"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 from Rajkot", notes: "Standard way to reach Wankaner", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajkot", distance: "~35 km", type: "City", isHidden: false, id: "rajkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4900, food: 1100, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Royal Palace Visit", morning: "Explore Ranjit Vilas Palace's public areas and grounds.", afternoon: "Climb the clock tower for the 360° town view.", evening: "Return to Rajkot.", stay: "Rajkot base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely worth confirming current visiting access in advance, as parts remain a private family residence." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A private-but-partially-accessible royal estate with managed visitor access"],
+      precautions: ["Confirm visiting hours/access in advance given its part-private status"],
+      soloTips: ["A comfortable solo visit given the estate's managed access model"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Morbi District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace's public-access areas and grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 500,
+    mustEat: ["Kathiyawadi Thali in Rajkot"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "hazur-palace-utelia",
+    name: "Hazur Palace (Utelia Palace)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An Indo-Saracenic Palace Near the Lothal Ruins",
+    description: "Hazur Palace, also known as Utelia Palace, was genuinely built around the turn of the 20th century by Thakore Saheb Sur Sinhji, replacing an older wooden mansion of the area's Vaghela Rajput rulers. Its real pillared galleries and balconies sit beneath five domes, blending Indo-Saracenic form with European touches — and its restored woodwork, plasterwork and patterned floors now make it a genuine 14-room heritage hotel, notably positioned close to the historic Lothal Indus Valley archaeological site.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Utelia_Palace_01.jpg/1280px-Utelia_Palace_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Utelia_Palace_01.jpg/1280px-Utelia_Palace_01.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Indo-Saracenic architecture, 5 domes" }, { name: "Restored as a 14-room heritage hotel" }, { name: "Near the Lothal Indus Valley site" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Genuinely combinable with a Lothal visit on the same day trip." },
+    ],
+    accommodation: [
+      { type: "Heritage Hotel", priceRange: "₹4,000–₹9,000/night (estimate)", examples: ["Hazur Palace (Utelia Palace) itself"], description: "Genuinely sleep inside the restored palace — the signature way to experience it." },
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Alternative if not staying at the palace itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Ahmedabad", notes: "Standard way to reach Utelia", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lothal (Indus Valley site)", distance: "~15 km", type: "Archaeological", isHidden: true },
+      { name: "Ahmedabad", distance: "~85 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 650, transport: 600, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5200, food: 1100, transport: 900, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Palace & Lothal Day Trip", morning: "Explore Hazur Palace's restored interiors.", afternoon: "Visit the Lothal Indus Valley ruins nearby.", evening: "Return to Ahmedabad or stay overnight at the palace.", stay: "Hazur Palace or Ahmedabad", meals: "Local Gujarati food or palace dining (₹300–₹600)", tips: "Genuinely a nice pairing — few visitors realize how close a genuine Harappan site and a restored royal palace sit to each other." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed heritage hotel property with steady guest presence"],
+      precautions: ["Standard heritage-property etiquette"],
+      soloTips: ["A comfortable solo visit given the property's active hotel management"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad Rural Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 350,
+    mustEat: ["Palace dining", "Local Gujarati food"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "dowlat-vilas-palace",
+    name: "Dowlat Vilas Palace, Himmatnagar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Scorpion-Shaped Palace, Still the Royal Family's Actual Home",
+    description: "Dowlat Vilas Palace, in Himmatnagar, was genuinely built in the late 1920s and 1930s by Maharaj Man Singhji of the Idar royal family — a real descendant line of the Jodha Rathod clan of Marwar-Jodhpur, established in 1731. Its 36 rooms, banquet halls and sprawling lawns blend British colonial and Rajput architecture, and the building is genuinely, distinctively laid out in the shape of a scorpion. Remarkably, it remains both a working heritage hotel and the actual private residence of the Idar royal family across five generations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Dowlat_Vilas_Palace.jpg/1280px-Dowlat_Vilas_Palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Dowlat_Vilas_Palace.jpg/1280px-Dowlat_Vilas_Palace.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Built late 1920s–30s, scorpion-shaped layout" }, { name: "Still the Idar royal family's actual home" }, { name: "36 rooms, British-colonial & Rajput style" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "Within Himmatnagar town", costRange: "₹50–₹150 (auto within town)", tips: "Genuinely combinable with an Idar Fort day trip given the shared district." },
+    ],
+    accommodation: [
+      { type: "Heritage Hotel", priceRange: "₹4,000–₹8,000/night (estimate)", examples: ["Dowlat Vilas Palace itself"], description: "A genuine chance to stay in a still-lived-in royal residence." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Himmatnagar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Idar Fort", distance: "~25 km", type: "Fort", isHidden: false, id: "idar-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1900, food: 650, transport: 450, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4900, food: 1100, transport: 700, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Royal Heritage Day", morning: "Explore Dowlat Vilas Palace's grounds and public areas.", afternoon: "Continue to Idar Fort nearby.", evening: "Return to Himmatnagar.", stay: "Dowlat Vilas Palace or a Himmatnagar hotel", meals: "Local Gujarati food or palace dining (₹300–₹600)", tips: "Genuinely rare to visit a palace that's still an actual lived-in royal home rather than purely a museum." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed heritage hotel and family residence with steady guest and staff presence"],
+      precautions: ["Standard heritage-property etiquette given it remains a private family home"],
+      soloTips: ["A comfortable solo visit given the property's active hotel management"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Sabarkantha District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 300,
+    mustEat: ["Palace dining", "Local Gujarati food in Himmatnagar"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
