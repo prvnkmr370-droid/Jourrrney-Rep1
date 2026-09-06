@@ -16829,7 +16829,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Velavadar Blackbuck National Park", distance: "~42 km", type: "Wildlife", isHidden: true },
-      { name: "Palitana (Shatrunjaya Hill)", distance: "~50 km", type: "Pilgrimage", isHidden: true },
+      { name: "Palitana (Shatrunjaya Hill)", distance: "~50 km", type: "Pilgrimage", isHidden: true, id: "palitana-shatrunjaya-hill" },
       { name: "Nishkalank Mahadev Temple", distance: "~25 km", type: "Temple", isHidden: true },
     ],
     budgetBreakdown: [
@@ -16956,7 +16956,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Dwarka", notes: "Standard way to reach the beach", available: true },
     ],
     nearbyPlaces: [
-      { name: "Dwarka temples", distance: "~12 km", type: "Temple Town", isHidden: true },
+      { name: "Dwarka temples", distance: "~12 km", type: "Temple Town", isHidden: true, id: "dwarkadhish-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
