@@ -16263,7 +16263,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Wildlife", "Spiritual", "UNESCO"],
     bestSeason: "November – February (Rann Utsav runs roughly Nov–Feb in the White Rann)",
     duration: "7–10 days for a full circuit",
-    highlights: [{ name: "Rani ki Vav, Patan (UNESCO)" }, { name: "Statue of Unity, Kevadia" }, { name: "Gir National Park — Asiatic lions" }, { name: "Rann of Kutch — White Desert" }, { name: "Sabarmati Ashram, Ahmedabad" }, { name: "Somnath Temple, Veraval" }],
+    highlights: [{ name: "Rani ki Vav, Patan (UNESCO)", id: "rani-ki-vav" }, { name: "Statue of Unity, Kevadia", id: "statue-of-unity" }, { name: "Gir National Park — Asiatic lions", id: "gir-national-park" }, { name: "Rann of Kutch — White Desert", id: "rann-of-kutch-white-desert" }, { name: "Sabarmati Ashram, Ahmedabad", id: "sabarmati-ashram" }, { name: "Somnath Temple, Veraval", id: "somnath-temple" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "~1h20m direct to Ahmedabad (AMD)", fromMumbai: "~1h05m direct", fromBangalore: "~2h direct", duration: "1–2h", costRange: "₹2,500–₹9,000", tips: "Ahmedabad's Sardar Vallabhbhai Patel Airport is Gujarat's main gateway, with the best domestic connectivity; Vadodara, Rajkot and Surat also have smaller airports." },
       { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani/Duronto — ~12–14h", fromMumbai: "~7–8h", fromBangalore: "~24h+ (limited direct options)", duration: "7–24h", costRange: "₹400–₹2,500", tips: "Ahmedabad and Vadodara are both major junctions on the Delhi–Mumbai western line, so onward connections within Gujarat are frequent." },
@@ -16282,12 +16282,12 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Intercity Taxi (Full Day)", cost: "₹2,500–₹5,000/day", notes: "Common for multi-city circuits like Ahmedabad–Kutch–Gir–Somnath", available: true },
     ],
     nearbyPlaces: [
-      { name: "Rani ki Vav, Patan", distance: "~130 km from Ahmedabad", type: "UNESCO Heritage", isHidden: false },
-      { name: "Rann of Kutch (White Desert)", distance: "~85 km from Bhuj", type: "Salt Desert", isHidden: false },
-      { name: "Gir National Park", distance: "~65 km from Junagadh", type: "Wildlife", isHidden: false },
-      { name: "Statue of Unity, Kevadia", distance: "~90 km from Vadodara", type: "Monument", isHidden: false },
-      { name: "Somnath Temple, Veraval", distance: "~85 km from Junagadh", type: "Temple", isHidden: false },
-      { name: "Dwarka", distance: "~230 km from Rajkot", type: "Temple Town", isHidden: false },
+      { name: "Rani ki Vav, Patan", distance: "~130 km from Ahmedabad", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
+      { name: "Rann of Kutch (White Desert)", distance: "~85 km from Bhuj", type: "Salt Desert", isHidden: true, id: "rann-of-kutch-white-desert" },
+      { name: "Gir National Park", distance: "~65 km from Junagadh", type: "Wildlife", isHidden: false, id: "gir-national-park" },
+      { name: "Statue of Unity, Kevadia", distance: "~90 km from Vadodara", type: "Monument", isHidden: true, id: "statue-of-unity" },
+      { name: "Somnath Temple, Veraval", distance: "~85 km from Junagadh", type: "Temple", isHidden: false, id: "somnath-temple" },
+      { name: "Dwarka", distance: "~230 km from Rajkot", type: "Temple Town", isHidden: false, id: "dwarkadhish-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 400, transport: 350, activities: 150 },
@@ -16339,7 +16339,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Spiritual"],
     bestSeason: "November – February",
     duration: "2–3 days",
-    highlights: [{ name: "Sabarmati Ashram" }, { name: "Sidi Saiyyed Mosque's carved stone jali" }, { name: "Jama Masjid (built 1424)" }, { name: "Kankaria Lake" }, { name: "Manek Chowk night market" }],
+    highlights: [{ name: "Sabarmati Ashram", id: "sabarmati-ashram" }, { name: "Sidi Saiyyed Mosque's carved stone jali" }, { name: "Jama Masjid (built 1424)" }, { name: "Kankaria Lake", id: "kankaria-lake" }, { name: "Manek Chowk night market" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "~1h20m direct", fromMumbai: "~1h05m direct", fromBangalore: "~2h direct", duration: "1–2h", costRange: "₹2,500–₹9,000", tips: "Sardar Vallabhbhai Patel International Airport (AMD) is Gujarat's main gateway, well-connected domestically and to several international routes." },
       { mode: "Train", icon: "🚂", fromDelhi: "Rajdhani/Duronto — ~12–14h", fromMumbai: "~7–8h", fromBangalore: "~24h+ (limited direct options)", duration: "7–24h", costRange: "₹400–₹2,500", tips: "Ahmedabad Junction is a major stop on the Delhi–Mumbai western line." },
@@ -16358,11 +16358,11 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Dekho Amdavad Hop-On Hop-Off Bus", cost: "₹100–₹200", notes: "The city's own official heritage-circuit tour bus", available: true },
     ],
     nearbyPlaces: [
-      { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: false },
-      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: false },
+      { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: true, id: "sabarmati-ashram" },
+      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: true, id: "adalaj-stepwell" },
       { name: "Lothal (Indus Valley site)", distance: "~85 km", type: "Archaeological", isHidden: true },
       { name: "Nalsarovar Bird Sanctuary", distance: "~65 km", type: "Wildlife", isHidden: true },
-      { name: "Rani ki Vav, Patan", distance: "~130 km", type: "UNESCO Heritage", isHidden: false },
+      { name: "Rani ki Vav, Patan", distance: "~130 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 600, food: 400, transport: 250, activities: 150 },
@@ -16610,7 +16610,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual", "Wildlife"],
     bestSeason: "November – February",
     duration: "1–2 days",
-    highlights: [{ name: "Uparkot Fort (319 BCE, Mauryan-era)" }, { name: "Ashoka's Rock Edicts on Girnar" }, { name: "866 temples atop Girnar Hill" }, { name: "Gateway to Gir National Park" }, { name: "Adi Kadi Vav & Navghan Kuvo stepwells" }],
+    highlights: [{ name: "Uparkot Fort (319 BCE, Mauryan-era)", id: "uparkot-fort" }, { name: "Ashoka's Rock Edicts on Girnar" }, { name: "866 temples atop Girnar Hill" }, { name: "Gateway to Gir National Park" }, { name: "Adi Kadi Vav & Navghan Kuvo stepwells" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "~2h (via connection) to nearest airport (Rajkot/Diu)", fromMumbai: "~1h30m (via connection)", fromBangalore: "Not practical — long connection", duration: "~1.5–2h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Rajkot (~100 km) is the nearest well-connected airport; Junagadh itself has no major commercial airport." },
       { mode: "Train", icon: "🚂", fromDelhi: "~20–22h", fromMumbai: "~12–14h", fromBangalore: "Not practical", duration: "12–22h", costRange: "₹400–₹2,000", tips: "Junagadh Junction connects to Rajkot and Ahmedabad." },
@@ -16691,7 +16691,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Khijadiya Bird Sanctuary", distance: "~10 km", type: "Wildlife", isHidden: true },
-      { name: "Dwarka", distance: "~130 km", type: "Temple Town", isHidden: true },
+      { name: "Dwarka", distance: "~130 km", type: "Temple Town", isHidden: true, id: "dwarkadhish-temple" },
       { name: "Shivrajpur Beach", distance: "~150 km", type: "Beach", isHidden: true },
     ],
     budgetBreakdown: [
@@ -16896,7 +16896,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~25 km", type: "City", isHidden: false, id: "ahmedabad" },
-      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: false },
+      { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: true, id: "adalaj-stepwell" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 350, transport: 250, activities: 150 },
@@ -20853,7 +20853,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Shahibaug", available: true },
     ],
     nearbyPlaces: [
-      { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: false },
+      { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: true, id: "sabarmati-ashram" },
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
     ],
     budgetBreakdown: [
@@ -21394,7 +21394,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500", notes: "Standard way to reach Adalaj", available: true },
     ],
     nearbyPlaces: [
-      { name: "Adalaj Stepwell", distance: "~3 km", type: "Stepwell", isHidden: false },
+      { name: "Adalaj Stepwell", distance: "~3 km", type: "Stepwell", isHidden: true, id: "adalaj-stepwell" },
       { name: "Gandhinagar", distance: "~10 km", type: "City", isHidden: false, id: "gandhinagar" },
     ],
     budgetBreakdown: [
@@ -21661,7 +21661,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves; walkable from Uparkot Fort", available: true },
     ],
     nearbyPlaces: [
-      { name: "Uparkot Fort", distance: "~0.5 km", type: "Heritage", isHidden: false },
+      { name: "Uparkot Fort", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
       { name: "Baba Pyare Caves", distance: "~1 km", type: "Heritage", isHidden: true, id: "baba-pyare-caves" },
       { name: "Junagadh", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
     ],
@@ -21718,7 +21718,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves via Mullawada locality; walkable from Uparkot Fort", available: true },
     ],
     nearbyPlaces: [
-      { name: "Uparkot Fort", distance: "~1 km", type: "Heritage", isHidden: false },
+      { name: "Uparkot Fort", distance: "~1 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
       { name: "Khapra Kodiya Caves", distance: "~1 km", type: "Heritage", isHidden: true, id: "khapra-kodiya-caves" },
       { name: "Junagadh", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
     ],
