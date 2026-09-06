@@ -16427,7 +16427,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Laxmi Vilas Palace", distance: "Same city", type: "Heritage", isHidden: true, id: "laxmi-vilas-palace" },
       { name: "Statue of Unity, Kevadia", distance: "~90 km", type: "Monument", isHidden: true, id: "statue-of-unity" },
-      { name: "Champaner-Pavagadh (UNESCO)", distance: "~47 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Champaner-Pavagadh (UNESCO)", distance: "~47 km", type: "UNESCO Heritage", isHidden: true, id: "champaner-pavagadh-archaeological-park" },
       { name: "Ahmedabad", distance: "~110 km", type: "City", isHidden: false, id: "ahmedabad" },
     ],
     budgetBreakdown: [
@@ -16496,7 +16496,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Dholavira (Indus Valley UNESCO site)", distance: "~250 km from Bhuj", type: "UNESCO Heritage", isHidden: true },
       { name: "Mandvi Beach", distance: "~60 km from Bhuj", type: "Beach", isHidden: true },
       { name: "Lakhpat Fort", distance: "~130 km from Bhuj", type: "Fort", isHidden: true },
-      { name: "Kalo Dungar", distance: "~90 km from Bhuj", type: "Viewpoint", isHidden: true },
+      { name: "Kalo Dungar", distance: "~90 km from Bhuj", type: "Viewpoint", isHidden: true, id: "kalo-dungar" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 400, transport: 400, activities: 200 },
@@ -16561,7 +16561,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around", available: true },
     ],
     nearbyPlaces: [
-      { name: "Gondal (Royal Vintage Car Collection)", distance: "~35 km", type: "Museum", isHidden: true },
+      { name: "Gondal (Royal Vintage Car Collection)", distance: "~35 km", type: "Museum", isHidden: true, id: "naulakha-palace-gondal" },
       { name: "Hingolgadh Nature Education Sanctuary", distance: "~55 km", type: "Wildlife", isHidden: true },
       { name: "Junagadh", distance: "~100 km", type: "City", isHidden: false, id: "junagadh" },
     ],
@@ -17006,7 +17006,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi", cost: "₹800–₹1,800 from Porbandar", notes: "Standard way to reach the village and beach", available: true },
     ],
     nearbyPlaces: [
-      { name: "Porbandar (Kirti Mandir)", distance: "~65 km", type: "Heritage", isHidden: true },
+      { name: "Porbandar (Kirti Mandir)", distance: "~65 km", type: "Heritage", isHidden: true, id: "kirti-mandir-porbandar" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
@@ -17434,7 +17434,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Junagadh", distance: "~65 km", type: "City", isHidden: false, id: "junagadh" },
-      { name: "Somnath Temple", distance: "~45 km", type: "Temple", isHidden: true },
+      { name: "Somnath Temple", distance: "~45 km", type: "Temple", isHidden: true, id: "somnath-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 1000, food: 400, transport: 400, activities: 400 },
@@ -18279,7 +18279,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "Varies", type: "City", isHidden: false, id: "kutch" },
-      { name: "White Rann / Rann Utsav Tent City", distance: "Within the sanctuary", type: "Salt Desert", isHidden: true },
+      { name: "White Rann / Rann Utsav Tent City", distance: "Within the sanctuary", type: "Salt Desert", isHidden: true, id: "rann-of-kutch-white-desert" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 350, transport: 400, activities: 250 },
@@ -19635,7 +19635,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking (Forest Path)", cost: "Free", notes: "A real, physically demanding ~5km forest climb for those who prefer to walk", available: true },
     ],
     nearbyPlaces: [
-      { name: "Champaner Archaeological Park", distance: "At the hill's base", type: "UNESCO Heritage", isHidden: true },
+      { name: "Champaner Archaeological Park", distance: "At the hill's base", type: "UNESCO Heritage", isHidden: true, id: "champaner-pavagadh-archaeological-park" },
       { name: "Vadodara", distance: "~47 km", type: "City", isHidden: false, id: "vadodara" },
     ],
     budgetBreakdown: [
@@ -22579,6 +22579,172 @@ export const DESTINATIONS: Destination[] = [
     reviews: 620,
     mustEat: ["Kathiyawadi thali in Jamnagar"],
     packingTips: ["Sun protection", "Sturdy water shoes", "Water bottle", "Reef-safe sunscreen"],
+  },
+
+  {
+    id: "kirti-mandir-porbandar",
+    name: "Kirti Mandir, Porbandar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The House Where Mahatma Gandhi Was Born, on 2 October 1869",
+    description: "Kirti Mandir, in Porbandar, is built right beside the Gandhi family's actual ancestral home, where Mohandas Karamchand Gandhi was born on 2 October 1869. The old house was bought by Gandhi's great-grandfather Harjivan Gandhi in 1777, and later expanded to three storeys by his grandfather Uttamchand (\"Ota\") Gandhi. The modern memorial complex was begun in 1947, during Gandhi's own lifetime, with support from Gandhian and freedom-movement figure Darbar Gopaldas Desai and industrialist Nanjibhai Kalidas Mehta, and completed in 1950, after Gandhi's death — built to reflect the genuine reverence he inspired across India. A courtyard photo exhibition traces Gandhi's life, leading to the actual birth room at the far end, while the memorial's collection includes items he used, portraits of Gandhi and Kasturba, period photographs, and a library of his writings and works about his philosophy.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kirti_Mandir-Porbandar-Gujarat-DSC_0264.jpg/1280px-Kirti_Mandir-Porbandar-Gujarat-DSC_0264.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kirti_Mandir-Porbandar-Gujarat-DSC_0264.jpg/1280px-Kirti_Mandir-Porbandar-Gujarat-DSC_0264.jpg",
+    imageCredit: "Photo: Sivaprasadsujatha — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "1–1.5 hours",
+    highlights: [
+      { name: "Gandhi's actual birth room, in the family home his great-grandfather bought in 1777" },
+      { name: "Modern memorial complex begun in 1947 during Gandhi's lifetime, completed 1950" },
+      { name: "A courtyard photo exhibition tracing Gandhi's life journey" },
+      { name: "A library of Gandhi's own writings and works about his philosophy" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,100 km via NH48/NH27", fromMumbai: "~600 km via NH48/NH27", fromBangalore: "~1,300 km via NH48", duration: "Fly/train to Porbandar, then a short local ride", costRange: "₹100–300 by auto within Porbandar town", tips: "Combine with Sudama Mandir, also in Porbandar's market area, for a fuller half-day of the town's heritage." },
+    ],
+    accommodation: [
+      { type: "Base in Porbandar", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Porbandar budget hotels", "Porbandar mid-range hotels"], description: "Any Porbandar town hotel works for this short, significant visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Porbandar town", notes: "Standard way to reach Kirti Mandir from anywhere in Porbandar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sudama Mandir, Porbandar", distance: "~1 km", type: "Temple", isHidden: true, id: "sudama-mandir" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1500, transport: 800, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Porbandar Heritage Morning", morning: "Kirti Mandir — birth room, photo exhibition, and library.", afternoon: "Sudama Mandir nearby.", evening: "Porbandar's seafront.", stay: "Porbandar town", meals: "Local Gujarati/Kathiyawadi thali (₹200–350)", tips: "Take real time in the courtyard exhibition — the photographs trace Gandhi's whole life, not just his Porbandar years." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A significant, well-visited national memorial in the middle of Porbandar's market area, with steady daytime footfall"],
+      precautions: ["Standard heritage-site etiquette", "Dress modestly"],
+      soloTips: ["Comfortable for solo daytime visits given its status as a major national memorial in a busy town-centre location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Porbandar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The memorial complex during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 1400,
+    mustEat: ["Kathiyawadi thali in Porbandar"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "kalo-dungar",
+    name: "Kalo Dungar (Black Hill)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Kutch's Highest Point, Where Priests Still Feed Wild Jackals by Hand",
+    description: "Kalo Dungar, or Black Hill, is Kutch district's highest point at 462 metres, rising north of Khavda village and offering a genuinely sweeping view over the Great Rann salt flat below. On its summit sits a roughly 400-year-old temple dedicated to Lord Dattatreya, known for a real, still-practised local tradition of priests calling and feeding wild jackals each evening — the animals reportedly responding to the sound of a beaten metal plate. Because the hill sits close to the India-Pakistan border, the summit falls under army jurisdiction, with public access restricted beyond a certain point and photography not permitted near the post — a standard border-security arrangement rather than a sign of any danger to visitors. A short stretch of road nearby is also known locally as a \"magnetic hill,\" where a stationary vehicle appears to visibly roll uphill, a genuine (if purely optical) illusion of the terrain's gradient.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kalo_Dungar.jpg/1280px-Kalo_Dungar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kalo_Dungar.jpg/1280px-Kalo_Dungar.jpg",
+    imageCredit: "Photo: Slothfull — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Spiritual", "Adventure"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Kutch district's highest point at 462 metres, with sweeping Great Rann views" },
+      { name: "A roughly 400-year-old Dattatreya temple known for its evening jackal-feeding tradition" },
+      { name: "A nearby \"magnetic hill\" optical illusion where vehicles appear to roll uphill" },
+      { name: "Sits within an army-jurisdiction border zone, with standard access and photography restrictions near the post" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,000 km via NH48", fromMumbai: "~750 km via NH48/NH27", fromBangalore: "~1,450 km via NH48", duration: "Fly/train to Bhuj, then ~97 km via Khavda", costRange: "₹1,800–₹3,500 by cab from Bhuj", tips: "Often combined with a White Rann/Dhordo visit on the same route, since Khavda sits between the two." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Bhuj budget hotels", "Bhuj mid-range hotels"], description: "Bhuj is the practical gateway town for this trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,800–₹3,500 from Bhuj", notes: "Standard way to reach Kalo Dungar via Khavda", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rann of Kutch (White Desert)", distance: "~15 km via Khavda", type: "Salt Desert", isHidden: true, id: "rann-of-kutch-white-desert" },
+      { name: "Bhuj / Kutch", distance: "~97 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 300, transport: 600, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 600, transport: 1000, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 4500, food: 1500, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kutch Border-Country Day Trip", morning: "Drive from Bhuj via Khavda.", afternoon: "Kalo Dungar summit — Dattatreya temple and Great Rann viewpoint.", evening: "Continue to the White Rann or return to Bhuj.", stay: "Bhuj or Dhordo tent city", meals: "Kutchi Thali (₹300–₹500)", tips: "Time your visit for the evening jackal-feeding if you want to see it, but be respectful and keep a sensible distance from the animals." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An established, regularly-visited tourist viewpoint with an army presence near the summit"],
+      precautions: ["Follow all posted army/border-security instructions near the summit, including photography restrictions", "Carry water and sun protection"],
+      soloTips: ["Comfortable as part of an organized tour or with a local driver; the site is regularly visited and well-signposted"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The main viewpoint and temple area"],
+      avoidAreas: ["Areas beyond the marked army checkpoint"],
+    },
+    rating: 4.5,
+    reviews: 1100,
+    mustEat: ["Kutchi Thali in Bhuj"],
+    packingTips: ["Sun protection", "Water bottle", "Warm layer for evening wind at altitude", "Valid ID (may be checked near the border zone)"],
+  },
+
+  {
+    id: "naulakha-palace-gondal",
+    name: "Naulakha Palace, Gondal",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 1748 Royal Palace Hiding Asia's Greatest Vintage Car Collection",
+    description: "Naulakha Palace, in the walled Darbargadh palace complex of Gondal's former ruling family, was originally built around 1748 CE and extended by successive rulers, its facade a genuine showcase of stone carving — sculpted reliefs, carved columns, and ornate jharokha balconies. The former royal living quarters now house a private museum of textiles, brassware, royal wardrobes, a library, silver caskets, and motorsport trophies won by Gondal's princes. Its real standout, though, is the Royal Garage: a collection of 32 vintage vehicles ranging from a 1907 New Engine Company car to a 1935 Mercedes seven-seat saloon, plus Delage and Daimler models, most still genuinely in working condition — widely regarded as one of the finest vintage car collections in all of Asia.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Naulakha_Palace_07.jpg/1280px-Naulakha_Palace_07.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Naulakha_Palace_07.jpg/1280px-Naulakha_Palace_07.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Palace built c. 1748 CE, with facade stone-carving from successive royal generations" },
+      { name: "32-vehicle Royal Garage vintage car collection, widely regarded as among Asia's finest" },
+      { name: "Former royal quarters now a museum of textiles, brassware, and motorsport trophies" },
+      { name: "Most vehicles, from a 1907 model to a 1935 Mercedes, still in working condition" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48 to Rajkot then local road", fromMumbai: "~490 km via NH48/NH27", fromBangalore: "~1,180 km via NH48", duration: "Fly/train to Rajkot, then ~35 km by road to Gondal", costRange: "₹700–₹1,500 by cab from Rajkot", tips: "Genuinely worth checking opening hours in advance, since the Royal Garage and palace museum keep specific visiting times." },
+    ],
+    accommodation: [
+      { type: "Base in Rajkot or Gondal", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Rajkot budget/mid-range hotels", "Heritage stays within Gondal's own palace properties"], description: "Gondal itself offers heritage-palace stays; Rajkot works as a nearby alternative base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,500 from Rajkot", notes: "Standard way to reach Gondal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajkot", distance: "~35 km", type: "City", isHidden: false, id: "rajkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 700, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 600, transport: 1000, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 5500, food: 1500, transport: 1500, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Royal Gondal Day Trip", morning: "Drive from Rajkot to Gondal.", afternoon: "Naulakha Palace museum and the Royal Garage vintage car collection.", evening: "Return to Rajkot.", stay: "Rajkot", meals: "Kathiyawadi thali (₹250–400)", tips: "Car enthusiasts should budget real extra time for the Royal Garage — it's a genuinely deep, well-preserved collection, not a quick glance-and-go stop." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-organized, ticketed heritage and museum site with regular visitor traffic and on-site staff"],
+      precautions: ["Standard museum-visit etiquette", "Check photography rules for the vintage car collection in advance"],
+      soloTips: ["Comfortable for solo daytime visits given its status as an organized, staffed heritage attraction"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gondal Town Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace and museum grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 950,
+    mustEat: ["Kathiyawadi thali in Gondal/Rajkot"],
+    packingTips: ["Comfortable walking shoes", "Camera (check restrictions for the car collection)"],
   },
 
 ];

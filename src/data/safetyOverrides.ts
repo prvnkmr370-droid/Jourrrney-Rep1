@@ -4275,3 +4275,17 @@ SAFETY_OVERRIDES["marine-national-park-gulf-of-kutch"] = {
   police: { summary: "Jamnagar City Police: 100", details: ["Jamnagar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112", "Forest department staff oversee all permitted boat access to the park."], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Guru Gobindsinh Hospital, Jamnagar — dial 108 for ambulance", details: ["Guru Gobindsinh Hospital (G.G. Hospital) serves Jamnagar city, the gateway town for the park.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["kirti-mandir-porbandar"] = {
+  police: { summary: "Porbandar City Police: 100", details: ["Porbandar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Porbandar General Hospital — dial 108 for ambulance", details: ["Porbandar's general hospital serves the town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kalo-dungar"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050 + army border post", details: ["Bhuj City Police Station: 02832-253050 (from a general web-search aggregator, not an official portal).", "An Indian Army post sits at the summit given the site's proximity to the India-Pakistan border — a routine border-security presence, not an indicator of danger to visitors.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "This number comes from a general web-search aggregator rather than an official Kutch/Gujarat Police portal — call 100 as the safest fallback." },
+  medical: { summary: "GK General Hospital, Bhuj — dial 108 for ambulance", details: ["GK General Hospital in Bhuj is the nearest major hospital for this remote border-area site.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service, though response times to this remote location may be longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
+};
+
+SAFETY_OVERRIDES["naulakha-palace-gondal"] = {
+  police: { summary: "Gondal Town Police: 100", details: ["Gondal Town Police control room: 100.", "The palace/museum complex has its own on-site staff during visiting hours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Gondal General Hospital — dial 108 for ambulance", details: ["Gondal's general hospital serves the town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
