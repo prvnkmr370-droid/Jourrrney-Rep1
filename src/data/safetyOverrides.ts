@@ -4261,3 +4261,17 @@ SAFETY_OVERRIDES["kankaria-lake"] = {
   police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "The lake premises has municipal (AMC) security staff present during opening hours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Municipal security presence at a major public park of this scale is well-documented; call 100 for any police emergency." },
   medical: { summary: "Civil Hospital, Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad is one of the city's largest hospitals.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["girnar-hill"] = {
+  police: { summary: "Junagadh City Police: 100", details: ["Junagadh City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112", "Forest/pilgrimage-route staff are present along the main stepped route during peak hours."], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Junagadh Civil Hospital + first-aid posts en route — dial 108 for ambulance", details: ["Junagadh Civil Hospital serves the base town.", "First-aid posts are typically stationed along the main pilgrim route during peak season.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["laxmi-vilas-palace"] = {
+  police: { summary: "Vadodara City Police: 100", details: ["Vadodara City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "SSG Hospital, Vadodara — dial 108 for ambulance", details: ["Sir Sayajirao General (SSG) Hospital serves Vadodara city.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["marine-national-park-gulf-of-kutch"] = {
+  police: { summary: "Jamnagar City Police: 100", details: ["Jamnagar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112", "Forest department staff oversee all permitted boat access to the park."], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Guru Gobindsinh Hospital, Jamnagar — dial 108 for ambulance", details: ["Guru Gobindsinh Hospital (G.G. Hospital) serves Jamnagar city, the gateway town for the park.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
