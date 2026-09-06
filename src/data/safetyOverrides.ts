@@ -4234,3 +4234,7 @@ SAFETY_OVERRIDES["hastagiri-jain-tirth"] = {
   police: { summary: "Palitana Police: 100", details: ["Palitana Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Palitana General Hospital — dial 108 for ambulance", details: ["Palitana's general hospital serves the town and nearby pilgrimage sites.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["adalaj-stepwell"] = {
+  police: { summary: "Gandhinagar District Police: 100", details: ["Gandhinagar District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Civil Hospital, Gandhinagar — dial 108 for ambulance", details: ["Civil Hospital Gandhinagar serves this area near Adalaj.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

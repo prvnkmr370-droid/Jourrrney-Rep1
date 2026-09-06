@@ -22074,6 +22074,62 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable walking shoes", "Water bottle"],
   },
 
+  {
+    id: "adalaj-stepwell",
+    name: "Adalaj Stepwell",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Five-Storey, 1498 Stepwell Blending Hindu, Jain, and Islamic Stonework",
+    description: "Adalaj Stepwell (Adalaj ni Vav or Rudabai Vav) was begun by Rana Veer Singh of the Vaghela dynasty to supply water to his subjects in this arid region, but construction stalled when he was killed in battle against Mahmud Begada, the Sultan of Gujarat. The well was completed in 1498 under Begada's patronage as a memorial connected to Veer Singh's widow, Queen Rudabai — a real, documented act of public utility built in grief. Its Solanki-style architecture genuinely blends Hindu, Jain and Islamic motifs, unusual for its era: three entrances lead down an octagonal, five-storey shaft on a north-south axis, its walls carved with elephants, dancing figures, and women at daily chores like churning buttermilk. The deeper you descend, the cooler the air gets — a deliberate design that once made this a genuine respite from Gujarat's summer heat as much as a water source.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Adalaj_Vav_01.jpg/1280px-Adalaj_Vav_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Adalaj_Vav_01.jpg/1280px-Adalaj_Vav_01.jpg",
+    imageCredit: "Photo: Tejal Acharya — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "1–1.5 hours",
+    highlights: [
+      { name: "Completed in 1498 under Sultan Mahmud Begada, as a memorial linked to Queen Rudabai" },
+      { name: "Five-storey octagonal shaft with three entrances, built on a north-south axis" },
+      { name: "Rare blend of Hindu, Jain, and Islamic carving styles in one structure" },
+      { name: "Genuinely cooler at its lower levels — an intentional feature of its design" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~19 km / ~30–40 min from Ahmedabad", costRange: "₹400–₹900 (cab from Ahmedabad)", tips: "Easily combined with a Gandhinagar/Adalaj day trip from Ahmedabad, often alongside Akshardham Temple." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad or Gandhinagar", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Ahmedabad budget/mid-range hotels", "Gandhinagar hotels"], description: "Either works well as a day-trip base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹400–₹900 from Ahmedabad", notes: "Standard way to reach Adalaj", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~19 km", type: "City", isHidden: false, id: "ahmedabad" },
+      { name: "Adalaj Trimandir", distance: "~1 km", type: "Temple", isHidden: true, id: "adalaj-trimandir" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 400, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1500, transport: 900, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandhinagar Day Trip", morning: "Adalaj Stepwell — descend all five levels for the full carving detail.", afternoon: "Adalaj Trimandir or Akshardham Temple.", evening: "Return to Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250–350)", tips: "Go with time to actually study the carvings — the detail rewards a slow walk, not a quick photo stop." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-maintained, heavily-visited ASI/tourism-department heritage site with steady daytime footfall"],
+      precautions: ["Watch your footing on the stone steps, which can be uneven and worn"],
+      soloTips: ["Comfortable for solo daytime visits given its popularity and steady visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gandhinagar District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell complex and surrounding grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 3200,
+    mustEat: ["Local Gujarati food in Ahmedabad/Gandhinagar"],
+    packingTips: ["Comfortable walking shoes with good grip", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
