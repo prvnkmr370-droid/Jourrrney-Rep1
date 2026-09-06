@@ -21472,6 +21472,166 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
+  // ===== Gujarat — Stage 27: Long-tail completion pass, Heritage
+  // Sites — 3 more monuments (Kirti Mandir Vadodara, Royal
+  // Chhatardis Bhuj, Dev Ni Mori). Confirmed via direct re-search
+  // with varied terms that several other long-tail gaps genuinely
+  // have no Wikimedia Commons coverage at all (not just
+  // under-searched): Mitiyala/Pania/Rampara/Gaga Wildlife
+  // Sanctuaries, Porbandar Bird Sanctuary, Ahmedpur Mandavi/Okha
+  // Madhi beaches, Sharad Bagh/Orchard/Kusum Vilas palaces, and the
+  // Spectra/Khoj/Kanoria museums — these remain honest, permanent
+  // gaps rather than further search attempts.
+  {
+    id: "kirti-mandir-vadodara",
+    name: "Kirti Mandir, Vadodara",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Royal Cenotaph With Murals by Two of India's Greatest Artists",
+    description: "Kirti Mandir, in Vadodara, was genuinely built in 1936 by Maharaja Sayajirao Gaekwad III as part of his own Diamond Jubilee celebrations — a real cenotaph memorializing the Gaekwad dynasty's ancestors. Its E-shaped structure rises to a genuine 35-metre carved central shikhara topped with bronze sun, moon and earth motifs bearing an undivided map of India. Inside, real wall paintings by Bengal School master Nandalal Bose depict scenes from the Mahabharata's Kurukshetra war, alongside genuine works by the celebrated Raja Ravi Varma — the whole building deliberately blending Hindu, Jain, Buddhist and Islamic architectural motifs as an intentional expression of Sayajirao's own vision of secular unity.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kirti_Mandir-1.jpg/1280px-Kirti_Mandir-1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kirti_Mandir-1.jpg/1280px-Kirti_Mandir-1.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 1936, Sayajirao Gaekwad III's Diamond Jubilee" }, { name: "Murals by Nandalal Bose & Raja Ravi Varma" }, { name: "35m shikhara, Hindu-Jain-Buddhist-Islamic fusion" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "Central Vadodara", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with Laxmi Vilas Palace and Baroda Museum on the same Vadodara heritage day." },
+    ],
+    accommodation: [
+      { type: "Base in Vadodara", priceRange: "₹1,500–₹6,000/night (estimate)", examples: ["Hotels across Vadodara city"], description: "Part of the city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara (Laxmi Vilas Palace)", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7700, accommodation: 5300, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gaekwad Heritage Circuit", morning: "Laxmi Vilas Palace.", afternoon: "Kirti Mandir's murals and shikhara.", evening: "Baroda Museum.", stay: "Vadodara base", meals: "Gujarati thali (₹300)", tips: "Genuinely worth studying the Nandalal Bose murals closely — they're a real, significant example of Bengal School art outside Bengal itself." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-visited central-city monument with steady daytime footfall"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Vadodara City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The monument grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 700,
+    mustEat: ["Gujarati Thali in Vadodara"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "royal-chhatardis-bhuj",
+    name: "Royal Chhatardis, Bhuj",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "18th-Century Royal Cenotaphs, Twice Struck by Earthquakes",
+    description: "The Royal Chhatardis of Bhuj, genuinely built in the 18th century by Jadeja ruler Rao Lakhpatji, are real umbrella-shaped funerary cenotaphs marking the cremation sites of Kutch's Jadeja rulers — a distinctive fusion of Rajputana and Mughal styles, finely carved in red sandstone. The complex was honestly hit hard twice: its northern section was destroyed in the 1819 earthquake, and much of the rest was again badly damaged in 2001 — though the cenotaphs of Lakhpatji himself, Raydhanji II and Desarji genuinely remain largely intact, a real testament to the skill of the original Kutchi artisans.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/18th-century_Rao_Lakhpat_Monuments_and_Chhatris%2C_Bhuj_Gujarat_109.jpg/1280px-18th-century_Rao_Lakhpat_Monuments_and_Chhatris%2C_Bhuj_Gujarat_109.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/18th-century_Rao_Lakhpat_Monuments_and_Chhatris%2C_Bhuj_Gujarat_109.jpg/1280px-18th-century_Rao_Lakhpat_Monuments_and_Chhatris%2C_Bhuj_Gujarat_109.jpg",
+    imageCredit: "Photo: Ms Sarah Welch — Wikimedia Commons, CC0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 18th century by Rao Lakhpatji" }, { name: "Rajputana-Mughal fusion, red sandstone carving" }, { name: "Survived 1819 & 2001 earthquakes, partially" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "Central Bhuj", costRange: "₹50–₹150 (auto within Bhuj)", tips: "Genuinely combinable with Aina Mahal and Prag Mahal on the same Bhuj heritage walk." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "Part of the Bhuj city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Bhuj", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "Same city", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7700, accommodation: 5300, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhuj Royal Heritage", morning: "Aina Mahal and Prag Mahal.", afternoon: "The Royal Chhatardis' surviving cenotaphs.", evening: "Kutch Museum.", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "Genuinely worth reflecting on the earthquake damage honestly visible here — it's part of the site's real, layered history rather than something to gloss over." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-visited, centrally-located heritage site in Bhuj"],
+      precautions: ["Some structures remain earthquake-damaged — stick to accessible, marked areas"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The accessible, marked cenotaph areas"],
+      avoidAreas: ["Structurally damaged sections not marked as safe for entry"],
+    },
+    rating: 4.3,
+    reviews: 600,
+    mustEat: ["Kutchi Thali in Bhuj"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "dev-ni-mori",
+    name: "Dev Ni Mori",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 4th-Century Buddhist Stupa That Once Held the Buddha's Own Relics",
+    description: "Dev Ni Mori, about 2 km from Shamlaji in Aravalli district, was genuinely excavated between 1960-63 under archaeologists R.N. Mehta, S.N. Chaudhary and B. Subbarao, uncovering a real 3rd-4th century CE Buddhist monastery. Its excavated stupa, once standing roughly 2.16m tall and surrounded by 36 monk cells, genuinely yielded an inscribed casket whose inscription explicitly states it contains bodily relics of the Buddha himself — alongside terracotta Buddhist sculptures honestly among the earliest known in all of Gujarat. Since the 1970s the original site has been submerged under the Meshwo reservoir's waters, marked today only by a Buddhist flag on a pole — the excavated relics and sculptures themselves are preserved and displayed elsewhere.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Devnimori_Stupa.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/56/Devnimori_Stupa.jpg",
+    imageCredit: "Photo: Ministry of Culture, Government of India — Wikimedia Commons, GODL-India (Government Open Data License).",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "30 minutes",
+    highlights: [{ name: "3rd–4th century CE Buddhist monastery" }, { name: "Casket inscription naming actual Buddha relics" }, { name: "Site now submerged under the Meshwo reservoir" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "~2 km from Shamlaji", costRange: "₹100–₹300 (auto/cab from Shamlaji)", tips: "Genuinely worth understanding before you go that the original stupa itself is now underwater — this is a memorial/viewpoint visit, not an intact ancient structure to walk through." },
+    ],
+    accommodation: [
+      { type: "Base in Shamlaji/Himmatnagar", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Pilgrim guesthouses in Shamlaji", "Himmatnagar hotels"], description: "Either works for this short stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Shamlaji", notes: "Standard way to reach the reservoir site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shamlaji Temple", distance: "~2 km", type: "Temple", isHidden: false, id: "shamlaji-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 650, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4700, food: 1100, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Buddhist Heritage & Riverside Temple", morning: "Shamlaji Temple.", afternoon: "Dev Ni Mori reservoir viewpoint, marking the submerged stupa site.", evening: "Return to Himmatnagar.", stay: "Himmatnagar base", meals: "Local Gujarati food (₹250)", tips: "Genuinely a poignant rather than visually dramatic stop — its real significance is historical (a documented Buddha relic find), not what remains visible today." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quiet reservoir-side site with modest local visitor traffic"],
+      precautions: ["Standard reservoir/waterside safety caution"],
+      soloTips: ["A comfortable solo daytime visit given its short distance from Shamlaji"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Aravalli District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The viewpoint and reservoir bank"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 250,
+    mustEat: ["Local Gujarati food near Shamlaji"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

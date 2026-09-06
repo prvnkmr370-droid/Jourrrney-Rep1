@@ -4185,3 +4185,15 @@ SAFETY_OVERRIDES["triveni-sangam-somnath"] = {
   police: { summary: "Gir Somnath District Police: 100", details: ["Gir Somnath District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Veraval General Hospital — dial 108 for ambulance", details: ["Veraval General Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["kirti-mandir-vadodara"] = {
+  police: { summary: "Vadodara City Police: 100", details: ["Vadodara City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Vadodara Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "SSG Hospital, Vadodara — dial 108 for ambulance", details: ["Sir Sayajirao General (SSG) Hospital, Vadodara.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["royal-chhatardis-bhuj"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050.", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Bhuj City Police Station number sourced via general web search aggregator listings, not an official portal — call 100 for emergencies to be safe." },
+  medical: { summary: "G.K. General Hospital, Bhuj — dial 108 for ambulance", details: ["G.K. General Hospital, Bhuj — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["dev-ni-mori"] = {
+  police: { summary: "Aravalli District Police: 100", details: ["Aravalli District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital serves this North Gujarat area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
