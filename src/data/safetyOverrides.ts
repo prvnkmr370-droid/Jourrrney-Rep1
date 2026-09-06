@@ -4177,3 +4177,11 @@ SAFETY_OVERRIDES["lalbhai-dalpatbhai-museum"] = {
   police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
   medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["adalaj-trimandir"] = {
+  police: { summary: "Gandhinagar City Police: 100", details: ["Gandhinagar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Civil Hospital, Gandhinagar — dial 108 for ambulance", details: ["Civil Hospital, Gandhinagar (Sector 12) — the city's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["triveni-sangam-somnath"] = {
+  police: { summary: "Gir Somnath District Police: 100", details: ["Gir Somnath District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Veraval General Hospital — dial 108 for ambulance", details: ["Veraval General Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

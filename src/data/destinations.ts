@@ -21367,6 +21367,111 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera (check photography rules)"],
   },
 
+  // ===== Gujarat — Stage 26: Long-tail completion pass across
+  // Religious Sites, per explicit user request to keep working
+  // through remaining gaps even at lower per-search yield.
+  {
+    id: "adalaj-trimandir",
+    name: "Adalaj Trimandir",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "One Temple, Three Faiths, Built to Dissolve Sectarian Lines",
+    description: "Adalaj Trimandir, about 10 km from Gandhinagar on the Ahmedabad-Kalol highway, was genuinely conceived by Gnani Purush Dada Bhagwan (born Ambalal Muljibhai Patel, 1908-1988) as a real, deliberately non-sectarian temple uniting Jainism, Shaivism and Vaishnavism — with shrines to Mahavir, Shiva and Krishna all under one white-marble roof. Built in 2002 across a genuine 40,175 sq ft campus surrounded by landscaped grounds, it stands as an actual architectural expression of the Akram Vignan spiritual movement's core idea: that impartial reverence across faiths matters more than sectarian division.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Adalaj_Trimandir_Temple.jpg/1280px-Adalaj_Trimandir_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Adalaj_Trimandir_Temple.jpg/1280px-Adalaj_Trimandir_Temple.jpg",
+    imageCredit: "Photo: Gazal world — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "1 hour",
+    highlights: [{ name: "One temple, three faiths (Jain, Shaivite, Vaishnavite)" }, { name: "Built 2002, 40,175 sq ft white-marble campus" }, { name: "Founded by Dada Bhagwan (Ambalal Muljibhai Patel)" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Gandhinagar — long haul", fromMumbai: "Via Gandhinagar — long haul", fromBangalore: "Not practical", duration: "~10 km / ~20 min from Gandhinagar", costRange: "₹200–₹500 (auto/cab)", tips: "Genuinely combinable with Adalaj Stepwell, given the shared name and area — but these are two entirely distinct sites, so don't confuse one for the other when planning." },
+    ],
+    accommodation: [
+      { type: "Base in Gandhinagar/Ahmedabad", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels in Gandhinagar or Ahmedabad"], description: "Either regional base works." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500", notes: "Standard way to reach Adalaj", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Adalaj Stepwell", distance: "~3 km", type: "Stepwell", isHidden: false },
+      { name: "Gandhinagar", distance: "~10 km", type: "City", isHidden: false, id: "gandhinagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 250, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1700, food: 600, transport: 450, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4400, food: 1000, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Stepwell & Trimandir", morning: "Adalaj Stepwell.", afternoon: "Adalaj Trimandir's three-faith shrine.", evening: "Return to Gandhinagar or Ahmedabad.", stay: "Gandhinagar/Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely an easy pairing given the short distance between the two Adalaj sites, despite their otherwise unrelated histories." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed, actively visited temple with steady daily traffic"],
+      precautions: ["Modest dress expected"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gandhinagar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1200,
+    mustEat: ["Local Gujarati food in Gandhinagar"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "triveni-sangam-somnath",
+    name: "Triveni Sangam, Somnath",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Where Three Rivers — One of Them Invisible — Meet the Sea",
+    description: "Triveni Sangam, a short walk from Somnath Temple, marks the genuine confluence of the Hiran and Kapila rivers with the Arabian Sea — joined, in tradition, by a third, invisible river, the mythical Saraswati, believed to flow underground into the same meeting point. Real Hindu belief holds that a ritual dip here cleanses sins, and it's traditionally held to be where Krishna, after being struck by the hunter Jara's arrow at nearby Bhalka Tirth, finally departed his earthly body. The genuine Gita Mandir temple stands directly on the ghat, and pilgrims still gather here to perform tarpan, ritual offerings to their ancestors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Gita_Mandir_on_Triveni_Ghat_near_Somnath_Temple_Gujrat.jpg/1280px-Gita_Mandir_on_Triveni_Ghat_near_Somnath_Temple_Gujrat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Gita_Mandir_on_Triveni_Ghat_near_Somnath_Temple_Gujrat.jpg/1280px-Gita_Mandir_on_Triveni_Ghat_near_Somnath_Temple_Gujrat.jpg",
+    imageCredit: "Photo: Sangita Pujara — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual"],
+    bestSeason: "November – February",
+    duration: "30 minutes",
+    highlights: [{ name: "Confluence of Hiran, Kapila & the mythical Saraswati" }, { name: "The Gita Mandir on the ghat" }, { name: "Traditional site of Krishna's earthly departure" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Somnath — long haul", fromMumbai: "Via Somnath — long haul", fromBangalore: "Not practical", duration: "~2 km / ~5 min from Somnath Temple", costRange: "₹50–₹150 (auto from Somnath)", tips: "Genuinely an easy, quick add-on to any Somnath Temple visit." },
+    ],
+    accommodation: [
+      { type: "Base in Somnath/Veraval", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels in Somnath and Veraval"], description: "Same base as Somnath Temple." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach the ghat from Somnath", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Somnath Temple", distance: "~2 km", type: "Temple", isHidden: false, id: "somnath-temple" },
+      { name: "Bhalka Tirth", distance: "~5 km", type: "Temple", isHidden: false, id: "bhalka-tirth" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 600, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Somnath's Sacred Circuit", morning: "Somnath Temple darshan.", afternoon: "Triveni Sangam and Bhalka Tirth nearby.", evening: "Return to Somnath/Veraval.", stay: "Somnath/Veraval base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely one of the easiest three-site pilgrimage combinations in Gujarat, given how close together Somnath, Bhalka Tirth and Triveni Sangam sit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A small, well-visited ghat close to the major Somnath pilgrimage circuit"],
+      precautions: ["Standard riverbank/ghat safety caution near the water"],
+      soloTips: ["A comfortable solo daytime visit given its proximity to Somnath"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gir Somnath District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The ghat and temple area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 900,
+    mustEat: ["Kathiyawadi Thali near Somnath"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
