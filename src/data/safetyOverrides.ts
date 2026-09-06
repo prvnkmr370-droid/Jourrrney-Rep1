@@ -4298,3 +4298,17 @@ SAFETY_OVERRIDES["amul-dairy-anand"] = {
   police: { summary: "Anand Town Police: 100", details: ["Anand Town Police control room: 100.", "The plant has its own security and visitor-management staff for guided tours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Anand Civil Hospital — dial 108 for ambulance", details: ["Anand Civil Hospital serves the town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["amber-fort"] = {
+  police: { summary: "Tourist Police Jaipur: 0141-2744988", details: ["Tourist Police Jaipur: 0141-2744988 — the same tourist-facing police desk that covers Jaipur's major monuments.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "The Tourist Police Jaipur number is the same one already used for the Jaipur hub card; a fort-specific desk was not separately verified." },
+  medical: { summary: "SMS Hospital, Jaipur — dial 108 for ambulance", details: ["Sawai Man Singh (SMS) Hospital is Jaipur's largest government hospital.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["nahargarh-fort"] = {
+  police: { summary: "Tourist Police Jaipur: 0141-2744988", details: ["Tourist Police Jaipur: 0141-2744988.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "The Tourist Police Jaipur number is the same one already used for the Jaipur hub card; a fort-specific desk was not separately verified." },
+  medical: { summary: "SMS Hospital, Jaipur — dial 108 for ambulance", details: ["Sawai Man Singh (SMS) Hospital is Jaipur's largest government hospital.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["chand-baori-abhaneri"] = {
+  police: { summary: "Dausa District Police: 100", details: ["Dausa District Police control room: 100 (Abhaneri falls within Dausa district).", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Dausa District Hospital — dial 108 for ambulance", details: ["Dausa District Hospital serves the wider Abhaneri area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
