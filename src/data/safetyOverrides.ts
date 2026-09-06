@@ -4225,3 +4225,12 @@ SAFETY_OVERRIDES["bhujia-fort-bhuj"] = {
   police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (from a general web-search aggregator, not an official portal).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "This number comes from a general web-search aggregator rather than an official Kutch/Gujarat Police portal — call 100 as the safest fallback." },
   medical: { summary: "GK General Hospital, Bhuj — dial 108 for ambulance", details: ["GK General Hospital serves Bhuj town and the wider Kutch district.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["ramakrishna-ashram-rajkot"] = {
+  police: { summary: "Rajkot City Police: 100", details: ["Rajkot City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Civil Hospital, Rajkot — dial 108 for ambulance", details: ["Civil Hospital Rajkot serves the city.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["hastagiri-jain-tirth"] = {
+  police: { summary: "Palitana Police: 100", details: ["Palitana Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Palitana General Hospital — dial 108 for ambulance", details: ["Palitana's general hospital serves the town and nearby pilgrimage sites.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

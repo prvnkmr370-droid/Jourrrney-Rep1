@@ -21965,6 +21965,115 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Water bottle", "Sun protection"],
   },
 
+  {
+    id: "ramakrishna-ashram-rajkot",
+    name: "Shri Ramakrishna Ashrama, Rajkot",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Century-Old Vedantic Mission Blending Service, Education, and Ayurveda",
+    description: "Shri Ramakrishna Ashrama, Rajkot has genuinely been running service activities since its founding in 1927, part of the worldwide, non-political Ramakrishna Math and Mission inspired by Ramakrishna Paramhans's 19th-century revival of Vedantic philosophy. Swami Madhavanandaji arrived in the Saurashtra (Kathiawar) region in 1925 and, after surveying towns including Morbi, Bhavnagar, Porbandar and Limbdi, chose Rajkot as the most central and suitable base. The Maharaja of Morbi, Shri Lukhdhirji Jadeja, funded repairs to his own old rest house in Rajkot's Civil Station and offered it for the Ashrama's temporary use. Today it genuinely runs value-based education, a public library, an Ayurvedic centre, a guest house, and a permanent exhibition on the life of Shri Ramakrishna Paramhans.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ramakrishna_Ashram.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ramakrishna_Ashram.jpg",
+    imageCredit: "Photo: Ramakrishna Mission — Wikimedia Commons, attribution-only license.",
+    category: ["Spiritual", "Culture"],
+    bestSeason: "November – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Founded in 1927 following Swami Madhavanandaji's 1925 survey of Saurashtra towns" },
+      { name: "Housed initially in a rest house donated for use by the Maharaja of Morbi" },
+      { name: "Runs a public library, an Ayurvedic centre, and a permanent Ramakrishna exhibition" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,050 km via NH48", fromMumbai: "~600 km via NH48/NH27", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Rajkot, then a short local ride", costRange: "₹100–300 by auto within Rajkot city", tips: "A calm, contemplative stop — check visiting hours before arriving, as it's a working institution, not a tourist monument." },
+    ],
+    accommodation: [
+      { type: "Base in Rajkot", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Rajkot budget hotels", "Rajkot mid-range hotels"], description: "Any Rajkot city hotel works for this short stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Rajkot city", notes: "Standard way to reach the Ashrama from anywhere in Rajkot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajkot", distance: "Same city", type: "City", isHidden: false, id: "rajkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2200, food: 600, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1500, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajkot Spiritual & Cultural Circuit", morning: "Shri Ramakrishna Ashrama.", afternoon: "Rajkot's other heritage sites.", evening: "Return to city base.", stay: "Rajkot", meals: "Local Gujarati/Kathiyawadi thali (₹200–350)", tips: "Respect the working-institution setting — dress modestly and keep noise low." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calm, well-regarded institutional campus within Rajkot city"],
+      precautions: ["Standard institutional-visit etiquette", "Check visiting hours in advance"],
+      soloTips: ["Comfortable for solo daytime visits given its quiet, respectful campus setting"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Rajkot City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The Ashrama campus"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 410,
+    mustEat: ["Kathiyawadi thali in Rajkot"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "hastagiri-jain-tirth",
+    name: "Hastagiri Jain Tirth",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Hilltop Where Bharat Chakravartin, Rishabhdev's Eldest Son, Attained Moksha",
+    description: "Hastagiri Jain Tirth sits about 25 km from Palitana on a hill also known as Hastisengiri, dedicated to Bhagwan Rishabhdev (Adishwar Bhagwan), the first Jain Tirthankara. Jain tradition holds that Bharat Chakravartin, Rishabhdev's eldest son, attained moksha (liberation) here after observing a fast unto death — and that the king's own elephant followed him in devotion, giving the tirth its name (Hastagiri, roughly \"elephant hill\"). Footprints of Rishabhdev, said to have been preserved here, are still enshrined in a small temple on the hill. The large octagonal temple that now crowns the site was built and consecrated in 1979, spread across roughly 9 acres, with its main sanctum housing four idols of Rishabhdev facing the four cardinal directions.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hastgiri_mountain_hill_in_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hastgiri_mountain_hill_in_Temple.jpg",
+    imageCredit: "Photo: Dabhi viram — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The hill where Bharat Chakravartin, Rishabhdev's eldest son, is believed to have attained moksha" },
+      { name: "Preserved footprints of Bhagwan Rishabhdev enshrined in a small hilltop temple" },
+      { name: "A large 9-acre octagonal temple, built and consecrated in 1979" },
+      { name: "Main sanctum with four idols of Rishabhdev facing the four cardinal directions" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,000 km via NH48/NH27 to Palitana", fromMumbai: "~450 km via NH48/NH27", fromBangalore: "~1,200 km via NH48", duration: "Fly/train to Bhavnagar or Palitana, then ~25 km by road", costRange: "₹500–₹1,200 by taxi from Palitana", tips: "Genuinely a quieter, less crowded pilgrimage than Shatrunjaya Hill itself, though it shares similar devotional significance." },
+    ],
+    accommodation: [
+      { type: "Base in Palitana", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Palitana dharamshalas", "Palitana budget/mid-range hotels"], description: "The practical regional base for this and Shatrunjaya Hill." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Palitana", notes: "Standard way to reach the hill, ~25 km away", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Palitana & Shatrunjaya Hill", distance: "~25 km", type: "Pilgrimage", isHidden: false, id: "palitana-shatrunjaya-hill" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 500, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 800, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4000, food: 1500, transport: 1200, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Palitana Jain Pilgrimage Circuit", morning: "Shatrunjaya Hill temples.", afternoon: "Hastagiri Jain Tirth.", evening: "Return to Palitana.", stay: "Palitana", meals: "Simple Jain/Gujarati thali (₹150–300)", tips: "Dress modestly and expect a devotional atmosphere; many pilgrims combine this with the main Shatrunjaya climb." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-established Jain pilgrimage site with regular devotee footfall"],
+      precautions: ["Modest dress expected at all Jain temple sites", "Carry water given limited shade on approach paths"],
+      soloTips: ["Comfortable for solo daytime visits given its steady devotee traffic and pilgrimage-town setting"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Palitana Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and approach paths during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 280,
+    mustEat: ["Simple Jain thali in Palitana"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Water bottle"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
