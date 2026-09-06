@@ -22130,6 +22130,117 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes with good grip", "Camera"],
   },
 
+  {
+    id: "sabarmati-ashram",
+    name: "Sabarmati Ashram",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gandhi's Riverside Home for 13 Years, and Where the Salt March Began",
+    description: "Sabarmati Ashram, on the Sabarmati river's west bank in Ahmedabad, was Mahatma Gandhi's home from 17 June 1917 — after his very first Indian ashram in the city's Kochrab area, founded 25 May 1915, outgrew its site — until 1930, and one of the real, central hubs of India's freedom struggle. Its heart is Hriday Kunj (\"abode of the heart\"), named by Kakasaheb Kalelkar, the modest cottage where Gandhi and his wife Kasturba genuinely lived; it still holds artefacts used in daily life — a writing desk, a khadi kurta, hand-spun yarn, and personal letters. On 12 March 1930, Gandhi set out from here on the 386 km Salt March to Dandi to defy Britain's salt tax, vowing beforehand that he would not return to Sabarmati until India was independent — a vow genuinely kept, since Gandhi never lived at the ashram again after that day.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hriday_Kunj_at_Sabarmati_Ashram.jpg/1280px-Hriday_Kunj_at_Sabarmati_Ashram.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hriday_Kunj_at_Sabarmati_Ashram.jpg/1280px-Hriday_Kunj_at_Sabarmati_Ashram.jpg",
+    imageCredit: "Photo: Nizil Shah — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "1.5–2 hours",
+    highlights: [
+      { name: "Gandhi's home from 1917 to 1930, one of the central hubs of India's freedom struggle" },
+      { name: "Hriday Kunj — the actual cottage where Gandhi and Kasturba lived, with original artefacts on display" },
+      { name: "Starting point of the 1930 Salt March to Dandi, a 386 km walk against the British salt tax" },
+      { name: "A museum and archive holding Gandhi's letters, photographs, and personal items" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~5 km from Ahmedabad city centre", costRange: "₹50–₹150 by auto within Ahmedabad", tips: "Entry is free; go early morning or late afternoon to avoid the midday heat while walking the open riverside grounds." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Ahmedabad budget hotels", "Ahmedabad mid-range and heritage hotels"], description: "Any Ahmedabad city hotel works; the ashram is a short ride from most central areas." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ahmedabad city", notes: "Standard way to reach the ashram from anywhere in Ahmedabad", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 200, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 6000, food: 1500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandhi Heritage Morning", morning: "Sabarmati Ashram — Hriday Kunj, the museum, and the riverside grounds.", afternoon: "Old Ahmedabad heritage walk.", evening: "Sabarmati Riverfront and Manek Chowk night market.", stay: "Ahmedabad base", meals: "Gujarati thali (₹300), Manek Chowk street food (₹200)", tips: "Set aside real time in the museum's archive — the letters and photographs are the most affecting part of the visit." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A calm, heavily-visited national memorial with steady daytime footfall and on-site staff"],
+      precautions: ["Standard heritage-site etiquette; photography restrictions apply inside Hriday Kunj itself"],
+      soloTips: ["Very comfortable for solo daytime visits given its status as a major, well-staffed national memorial"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The entire ashram grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 8500,
+    mustEat: ["Gujarati thali in Ahmedabad", "Manek Chowk street food"],
+    packingTips: ["Comfortable walking shoes", "Sun hat for the open riverside grounds", "Camera"],
+  },
+
+  {
+    id: "statue-of-unity",
+    name: "Statue of Unity",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The World's Tallest Statue, Honoring the Man Who United 562 Princely States",
+    description: "The Statue of Unity, inaugurated on 31 October 2018, stands 182 metres tall on Sadhu-Bet Island in the Narmada River near Kevadia, about 3.5 km downstream of the Sardar Sarovar Dam — making it, genuinely, the tallest statue in the world. It's dedicated to Sardar Vallabhbhai Patel, India's first Deputy Prime Minister and Home Minister, who is real, widely credited as the architect of a united India for peacefully integrating 562 princely states into the new republic after independence. The height of 182 metres was deliberately chosen to match the number of seats in the Gujarat Legislative Assembly. Built through a public-private partnership with the Gujarat government's ₹500 crore allocation as its base funding, the statue took round-the-clock work from roughly 3,400 labourers and 250 engineers, and today includes a viewing gallery near the statue's chest offering views over the dam, the Narmada valley, and the Satpura and Vindhya hill ranges.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Statue_of_Unity_1.jpg/1280px-Statue_of_Unity_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Statue_of_Unity_1.jpg/1280px-Statue_of_Unity_1.jpg",
+    imageCredit: "Photo: Basavaraj M — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [
+      { name: "182 metres tall — the world's tallest statue, inaugurated 31 October 2018" },
+      { name: "Dedicated to Sardar Vallabhbhai Patel, who unified 562 princely states into independent India" },
+      { name: "Viewing gallery near the statue's chest, with views over the Sardar Sarovar Dam and Narmada valley" },
+      { name: "Built by roughly 3,400 labourers and 250 engineers on Sadhu-Bet Island" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "~380 km via NH48/NE1", fromBangalore: "Not practical", duration: "~90 km / ~2h from Vadodara", costRange: "₹1,800–₹3,500 by cab from Vadodara", tips: "Book Statue of Unity tickets online in advance — it gets genuinely crowded on weekends and holidays." },
+    ],
+    accommodation: [
+      { type: "Base in Kevadia or Vadodara", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Kevadia resort-area hotels and tent city", "Vadodara city hotels"], description: "Kevadia has on-site stay options; Vadodara works as a day-trip base." },
+    ],
+    localTransport: [
+      { mode: "Shuttle Bus", cost: "Included in some ticket packages", notes: "Runs between parking areas and the statue complex", available: true },
+      { mode: "Taxi", cost: "₹1,800–₹3,500 from Vadodara", notes: "Standard way to reach Kevadia from Vadodara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara", distance: "~90 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 1000, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 700, transport: 600, activities: 700 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1500, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Statue of Unity Day Trip", morning: "Drive from Vadodara to Kevadia.", afternoon: "Statue of Unity viewing gallery, Valley of Flowers, Sardar Sarovar Dam viewpoint.", evening: "Return toward Vadodara or stay near Kevadia.", stay: "Kevadia or Vadodara", meals: "Local Gujarati food (₹300–₹500)", tips: "Arrive early to beat both the crowds and the day's heat, especially for the viewing-gallery elevator queue." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-policed national tourist site with organized ticketing, security screening, and steady staff presence"],
+      precautions: ["Standard large-attraction crowd caution during peak season/weekends", "Carry water and sun protection for the open complex"],
+      soloTips: ["Comfortable for solo visits given the site's organized, heavily-staffed tourist infrastructure"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Narmada District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The entire ticketed statue complex and viewing gallery"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 12000,
+    mustEat: ["Local Gujarati food at Kevadia's food court/riverfront market"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle", "ID for security screening"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
