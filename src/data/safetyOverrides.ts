@@ -4211,3 +4211,17 @@ SAFETY_OVERRIDES["kirti-toran-vadnagar"] = {
   police: { summary: "Mehsana District Police: 100", details: ["Mehsana District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Mehsana Civil Hospital — dial 108 for ambulance", details: ["Mehsana Civil Hospital serves this North Gujarat area, including Vadnagar.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["hazira-maqbara-vadodara"] = {
+  police: { summary: "Vadodara City Police: 100", details: ["Vadodara City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "SSG Hospital, Vadodara — dial 108 for ambulance", details: ["Sir Sayajirao General (SSG) Hospital serves Vadodara city.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["khambhaliya-gate-jamnagar"] = {
+  police: { summary: "Jamnagar City Police: 100", details: ["Jamnagar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Guru Gobindsinh Hospital, Jamnagar — dial 108 for ambulance", details: ["Guru Gobindsinh Hospital (G.G. Hospital) serves Jamnagar city.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["bhujia-fort-bhuj"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (from a general web-search aggregator, not an official portal).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "This number comes from a general web-search aggregator rather than an official Kutch/Gujarat Police portal — call 100 as the safest fallback." },
+  medical: { summary: "GK General Hospital, Bhuj — dial 108 for ambulance", details: ["GK General Hospital serves Bhuj town and the wider Kutch district.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

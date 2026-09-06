@@ -21801,6 +21801,170 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
+  {
+    id: "hazira-maqbara-vadodara",
+    name: "Hazira Maqbara (Qutubuddin Hajiro)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 1586 Octagonal Mausoleum Built for Prince Salim's Own Tutor",
+    description: "Hazira Maqbara, also called Qutubuddin Hajiro, was built in 1586 in Vadodara to commemorate Qutubuddin Muhammad Khan, who served as tutor to Prince Salim, the son and eventual successor of Emperor Akbar. The tomb also holds Qutubuddin's son, Naurang Khan, who himself later held important imperial offices. The mausoleum stands on a raised octagonal platform, with each of its eight sides carrying a row of five arches, giving the structure a distinctive rhythmic, symmetrical silhouette rarely seen elsewhere in Gujarat's Mughal-era tombs.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hazira_Maqbara_-_Vadodara_-_Gujarat_-_001.jpg/1280px-Hazira_Maqbara_-_Vadodara_-_Gujarat_-_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hazira_Maqbara_-_Vadodara_-_Gujarat_-_001.jpg/1280px-Hazira_Maqbara_-_Vadodara_-_Gujarat_-_001.jpg",
+    imageCredit: "Photo: Akshita raina — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "Built in 1586 for Qutubuddin Muhammad Khan, tutor to Prince Salim (later Emperor Jahangir)" },
+      { name: "Octagonal platform with five arches on each of its eight sides" },
+      { name: "Also holds the tomb of his son, Naurang Khan" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~900 km via NH48", fromMumbai: "~420 km via NH48", fromBangalore: "~1,050 km via NH48", duration: "Fly/train to Vadodara, then a short local ride", costRange: "₹100–300 by auto within Vadodara city", tips: "Easily combined with Vadodara's other heritage sites in a single city day." },
+    ],
+    accommodation: [
+      { type: "Base in Vadodara", priceRange: "₹900–₹4,500/night (estimate)", examples: ["Vadodara budget hotels", "Vadodara mid-range hotels"], description: "Any Vadodara city hotel works for this short stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Vadodara city", notes: "Standard way to reach the site from anywhere in Vadodara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 900, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4500, food: 1500, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vadodara Heritage Circuit", morning: "Hazira Maqbara.", afternoon: "Other Vadodara heritage sites and Laxmi Vilas Palace.", evening: "Return to city base.", stay: "Vadodara", meals: "Local Gujarati thali (₹200–350)", tips: "A quiet, quick stop best paired with Vadodara's bigger heritage attractions." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A daytime heritage site within Vadodara city with regular local footfall"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its central city location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Vadodara City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The mausoleum grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 180,
+    mustEat: ["Local Gujarati thali in Vadodara"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "khambhaliya-gate-jamnagar",
+    name: "Khambhaliya Gate",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 17th-Century City Gate That Still Guards Old Jamnagar",
+    description: "Khambhaliya Gate was built in the 17th century under Wazir Meraman Khawa and is one of only two surviving gates of the five that once ringed the old walled city of Jamnagar (historically Nawanagar), which was fortified roughly 350 years ago with bastions at regular intervals. Closed to the public for years, the gate reopened to visitors in 2016, and its first floor now holds a small gallery of artefacts and memorabilia from the city's past. After dark, the gate is lit up in colourful lights, making it a genuine, still-living piece of Jamnagar's old-town skyline rather than a roped-off ruin.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Khambhaliya_Gate.jpg/1280px-Khambhaliya_Gate.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Khambhaliya_Gate.jpg/1280px-Khambhaliya_Gate.jpg",
+    imageCredit: "Photo: Parth.297 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "One of only two surviving gates of old walled Jamnagar's original five" },
+      { name: "Built in the 17th century under Wazir Meraman Khawa" },
+      { name: "First-floor gallery of local artefacts, reopened to visitors in 2016" },
+      { name: "Lit up in colourful lights after dark" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~1,050 km via NH48", fromMumbai: "~600 km via NH48/NH27", fromBangalore: "~1,250 km via NH48", duration: "Fly/train to Jamnagar, then a short local ride", costRange: "₹100–300 by auto within Jamnagar city", tips: "Best visited in the evening to see the gate lit up." },
+    ],
+    accommodation: [
+      { type: "Base in Jamnagar", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Jamnagar budget hotels", "Jamnagar mid-range hotels"], description: "Any Jamnagar city hotel works for this short stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Jamnagar city", notes: "Standard way to reach the gate from anywhere in Jamnagar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jamnagar", distance: "Same city", type: "City", isHidden: false, id: "jamnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4000, food: 1500, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old Jamnagar Walk", morning: "Jamnagar's old-town lanes.", afternoon: "Khambhaliya Gate and its artefact gallery.", evening: "Return after dark to see the gate lit up.", stay: "Jamnagar", meals: "Local Kathiyawadi food (₹200–350)", tips: "Combine with a walk through the old town's other heritage lanes and bazaars." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-lit, regularly visited city landmark with steady evening foot traffic"],
+      precautions: ["Standard city-street caution after dark", "Keep to the main lit areas around the gate"],
+      soloTips: ["Comfortable for solo visits, including in the evening given the gate's lighting and foot traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Jamnagar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The gate plaza and surrounding lit old-town lanes"],
+      avoidAreas: ["Poorly lit backstreets late at night"],
+    },
+    rating: 4.1,
+    reviews: 240,
+    mustEat: ["Kathiyawadi food in Jamnagar's old town"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "bhujia-fort-bhuj",
+    name: "Bhujia Fort",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An 18th-Century Hilltop Fort That Survived Six Wars and Gave Bhuj Its Name",
+    description: "Bhujia Fort was built between 1715 and 1718 CE by the Jadeja chief Rao Godaji and completed by his son, Deshalji I, to defend Bhuj against invasion. Perched atop Bhujia Hill, it withstood six major battles fought between 1700 and 1800 CE among Kutch's Rajput rulers, Sindh's Muslim raiders, and Mughal Gujarat's forces — the first coming when the Mughal Viceroy of Gujarat, Sher Buland Khan, invaded Kutch early in Deshalji I's reign. The hill and fort take their name from a shrine to Bhujang Naga, the snake god, that still stands within the fort and is genuinely worshipped by locals, especially during Nag Panchami. British colonel William Coir took control of the fort in 1819, and the Indian Army occupied it after independence until finally vacating in 2001, after which it opened more fully to visitors — today the climb also rewards visitors with a wide skyline view over Bhuj town.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Mount_de_bhuj_-_fort-_entrance.jpg/1280px-Mount_de_bhuj_-_fort-_entrance.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Mount_de_bhuj_-_fort-_entrance.jpg/1280px-Mount_de_bhuj_-_fort-_entrance.jpg",
+    imageCredit: "Photo: Bhargavinf — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Built 1715–1718 CE by Jadeja chief Rao Godaji, completed by his son Deshalji I" },
+      { name: "Withstood six major battles between 1700–1800 CE" },
+      { name: "The Bhujang Naga snake-god shrine that gives the hill and Bhuj city their name" },
+      { name: "Occupied by the Indian Army until 2001; wide skyline views over Bhuj town" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48", fromMumbai: "~700 km via NH48/NH27", fromBangalore: "~1,400 km via NH48", duration: "Fly/train to Bhuj, then a short local ride", costRange: "₹150–400 by auto from Bhuj town", tips: "Go for the hilltop views as much as the fort itself; a short but genuine uphill walk from the base." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Bhuj budget hotels", "Bhuj mid-range hotels"], description: "Any Bhuj city hotel works for this short stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Bhuj town", notes: "Standard way to reach the base of Bhujia Hill; short uphill walk to the fort itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "Same city", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1500, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhuj Heritage & Hilltop Views", morning: "Kutch Museum or Aina Mahal in Bhuj town.", afternoon: "Bhujia Fort climb and skyline viewpoint.", evening: "Return to Bhuj town.", stay: "Bhuj", meals: "Kutchi Thali in Bhuj (₹250–400)", tips: "Wear proper footwear for the hillside path and carry water — there's little shade on the climb." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A popular daytime viewpoint and heritage site with regular local and tourist visitors"],
+      precautions: ["Carry water for the hillside climb", "Visit in daylight hours; avoid the hill path after dark"],
+      soloTips: ["Comfortable for solo daytime visits; go earlier in the day when foot traffic on the hill path is higher"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort grounds and viewpoint during daylight hours"],
+      avoidAreas: ["The hillside path after dark"],
+    },
+    rating: 4.3,
+    reviews: 520,
+    mustEat: ["Kutchi Thali in Bhuj"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
