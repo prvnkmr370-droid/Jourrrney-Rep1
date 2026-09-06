@@ -4247,3 +4247,17 @@ SAFETY_OVERRIDES["statue-of-unity"] = {
   police: { summary: "Narmada District Police / on-site tourist police: 100", details: ["Narmada District Police control room: 100.", "The Statue of Unity complex has its own dedicated security and tourist-facilitation staff, given its status as a major national monument.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A dedicated on-site security presence is well-documented given the site's scale and national profile; call 100 for the district police line in any emergency." },
   medical: { summary: "On-site first aid + Rajpipla General Hospital — dial 108 for ambulance", details: ["The Statue of Unity complex maintains on-site first-aid facilities given its high visitor volume.", "Rajpipla General Hospital serves the wider Narmada district.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "On-site first aid at a major tourist complex of this scale is standard practice and well-documented; 108 ambulance service is separately well-documented via general web search." },
 };
+SAFETY_OVERRIDES["rann-of-kutch-white-desert"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (from a general web-search aggregator, not an official portal).", "During Rann Utsav season, the tent-city complex has its own tourism-department security staff.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "This number comes from a general web-search aggregator rather than an official Kutch/Gujarat Police portal — call 100 as the safest fallback." },
+  medical: { summary: "GK General Hospital, Bhuj — dial 108 for ambulance", details: ["GK General Hospital serves Bhuj town and the wider Kutch district, including Dhordo/Rann Utsav visitors.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["uparkot-fort"] = {
+  police: { summary: "Junagadh City Police: 100", details: ["Junagadh City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Junagadh Civil Hospital — dial 108 for ambulance", details: ["Junagadh Civil Hospital serves this area of Junagadh town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kankaria-lake"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "The lake premises has municipal (AMC) security staff present during opening hours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Municipal security presence at a major public park of this scale is well-documented; call 100 for any police emergency." },
+  medical: { summary: "Civil Hospital, Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad is one of the city's largest hospitals.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

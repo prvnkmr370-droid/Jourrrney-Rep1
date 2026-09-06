@@ -22241,6 +22241,173 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle", "ID for security screening"],
   },
 
+  {
+    id: "rann-of-kutch-white-desert",
+    name: "Rann of Kutch (White Desert)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Vast Salt Marsh That Turns Into a Blinding White Desert Every Winter",
+    description: "The Great Rann of Kutch is a vast seasonal salt marsh in Kutch district, best known for the brilliant White Rann near the village of Dhordo. During the monsoon, rainwater and tidal flooding turn the whole area into a shallow lake; as it dries out by around Diwali, it leaves behind a genuinely blinding crust of white salt stretching to the horizon, at its most striking under a full moon or a winter sunset. Since 2005, the Gujarat government has run the annual Rann Utsav (roughly December through February) here — conceived, following the devastating 2001 Kutch earthquake, as a way to revive the region's economy and showcase Kutchi culture through folk music and dance, handicraft bazaars, camel rides, and tent-city stays. The wider Rann region is also real habitat for flamingos and the Indian wild ass, adding a genuine wildlife dimension beyond the landscape itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/White_Rann_of_Kutch.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0e/White_Rann_of_Kutch.jpg",
+    imageCredit: "Photo: Rahul Zota — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Culture", "Adventure"],
+    bestSeason: "December – February (dry, cool season and the Rann Utsav festival)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "A seasonal salt marsh that dries into a vast, blinding white salt desert by winter" },
+      { name: "The annual Rann Utsav festival (Dec–Feb), launched in 2005 after the 2001 Kutch earthquake" },
+      { name: "Genuinely striking under full-moon nights and winter sunsets" },
+      { name: "Home to flamingos and the Indian wild ass in the wider Rann region" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48", fromMumbai: "~700 km via NH48/NH27", fromBangalore: "~1,400 km via NH48", duration: "Fly/train to Bhuj, then ~85 km to Dhordo/the White Rann", costRange: "₹1,500–₹3,000 by cab from Bhuj", tips: "Book Rann Utsav tent-city accommodation well in advance during the December–February season — it fills up fast on weekends." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj or Dhordo tent city", priceRange: "₹1,500–₹8,000/night (estimate)", examples: ["Rann Utsav tent city (seasonal)", "Bhuj city hotels"], description: "The seasonal tent city at Dhordo is the classic way to experience the Rann; Bhuj works as a year-round base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach Dhordo and the White Rann viewpoint", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~85 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 1500, food: 350, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 3000, food: 700, transport: 700, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11000, accommodation: 8000, food: 1500, transport: 1000, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "White Rann Sunset & Culture", morning: "Travel from Bhuj to Dhordo.", afternoon: "Kutchi handicraft village visits en route.", evening: "White Rann sunset and Rann Utsav cultural performances.", stay: "Dhordo tent city or Bhuj", meals: "Kutchi Thali (₹300–₹500)", tips: "The full-moon nights are genuinely the most atmospheric time to be out on the white salt — check the lunar calendar when booking." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, well-organized festival zone during Rann Utsav season with tourism-department security and staff presence"],
+      precautions: ["Carry water and sun protection — the open salt flat has no shade", "Stick to marked viewing areas rather than wandering the open marsh"],
+      soloTips: ["Comfortable for solo visits during the organized Rann Utsav season given its staffed, ticketed setup; outside festival season, go with a local guide or group"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The Rann Utsav tent-city complex and marked viewing areas"],
+      avoidAreas: ["Unmarked stretches of the open salt marsh, especially after dark outside festival season"],
+    },
+    rating: 4.7,
+    reviews: 4500,
+    mustEat: ["Kutchi Thali", "Dabeli (Kutchi street snack)"],
+    packingTips: ["Warm layers for cold desert nights", "Sun protection for the day", "Comfortable closed shoes for the salt crust"],
+  },
+
+  {
+    id: "uparkot-fort",
+    name: "Uparkot Fort",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 2,300-Year-Old Citadel That Survived Sixteen Sieges",
+    description: "Uparkot Fort, in Junagadh, is traditionally dated to 319 BCE under the Mauryan emperor Chandragupta, when a fort and town were first established at the foot of Girnar Hill — a citadel that remained in use through the Gupta period before losing prominence when Saurashtra's capital shifted away from Junagadh. From around 875 CE, the Chudasama dynasty resettled the Junagadh area, and ruler Graharipu (c. 940–982 CE) genuinely cleared the old citadel of overgrowth and effectively laid the foundations of the fort as it stands today, per period sources including Hemachandra's Dvyashraya. Over the following centuries the fort was besieged an extraordinary sixteen times, including one siege that reportedly lasted twelve years, before finally falling to the Gujarat Sultanate under Mahmud Begada in 1470 CE, who added Islamic-era structures including the Jumma Masjid while keeping Uparkot as a regional seat of power. Today it also encloses the Adi-Kadi and Navghan Kuwo stepwells and sits right by the Khapra Kodiya and Baba Pyare Buddhist cave groups.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gate_of_Uperkot_Fort_02.jpg/1280px-Gate_of_Uperkot_Fort_02.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gate_of_Uperkot_Fort_02.jpg/1280px-Gate_of_Uperkot_Fort_02.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Traditionally dated to 319 BCE under Mauryan emperor Chandragupta" },
+      { name: "Its current form largely laid out by Chudasama ruler Graharipu (c. 940–982 CE)" },
+      { name: "Survived sixteen sieges over roughly a thousand years, including one lasting twelve years" },
+      { name: "Encloses the Adi-Kadi and Navghan Kuwo stepwells, near the Khapra Kodiya and Baba Pyare caves" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48 to Rajkot then NH27/SH to Junagadh", fromMumbai: "~470 km via NH48/NH27", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Junagadh or Rajkot, then a short local ride", costRange: "₹100–300 by auto within Junagadh town", tips: "Set aside real time — the fort complex includes the stepwells and cave groups, not just the ramparts and gates." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh town", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Junagadh town guesthouses", "Junagadh mid-range hotels"], description: "Any Junagadh town hotel works for this half-day visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Junagadh town", notes: "Standard way to reach the fort from anywhere in Junagadh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Khapra Kodiya Caves", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "khapra-kodiya-caves" },
+      { name: "Baba Pyare Caves", distance: "~1 km", type: "Heritage", isHidden: true, id: "baba-pyare-caves" },
+      { name: "Junagadh", distance: "~1 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagadh's Ancient Citadel", morning: "Uparkot Fort — ramparts, gates, and the Adi-Kadi and Navghan Kuwo stepwells.", afternoon: "Khapra Kodiya and Baba Pyare Buddhist caves nearby.", evening: "Return to Junagadh town.", stay: "Junagadh town", meals: "Kathiyawadi thali (₹200–350)", tips: "Climb Navghan Kuwo's spiral stairs for a genuine sense of its scale — a striking piece of engineering in its own right." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, regularly-visited heritage site with steady local and tourist footfall"],
+      precautions: ["Wear comfortable footwear for uneven fort terrain and stepwell stairs", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its status as Junagadh's best-known landmark and steady visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1800,
+    mustEat: ["Kathiyawadi thali in Junagadh town"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera"],
+  },
+
+  {
+    id: "kankaria-lake",
+    name: "Kankaria Lake",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 500-Year-Old Sultanate-Era Lake That's Now Ahmedabad's Favourite Evening Spot",
+    description: "Kankaria Lake was excavated in 1451 CE under Sultan Qutb-ud-Din Ahmad Shah II of the Gujarat Sultanate, originally called Hauz-e-Qutb (\"the tank of Qutb\") — a genuine, centuries-old piece of civic water infrastructure meant to store monsoon water for the dry months, making it one of the oldest man-made water bodies in western India. Its current name is generally traced to the kankar (limestone) dug out during excavation, though local tradition also credits the saint Shah Alam with choosing its site by scattering pebbles at the Sultan's request. Its embankments carry fine Sultanate-era sandstone stonework, especially around the sluice gates, and its centrepiece is Nagina Wadi, an island garden reached by a causeway. Today it's genuinely one of Ahmedabad's most-used public spaces — a walking promenade, boating lake, zoo, and toy train draw both locals and visitors, especially in the evenings.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/97/Kankaria_Lake%2C_Ahmedabad_2015.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/97/Kankaria_Lake%2C_Ahmedabad_2015.jpg",
+    imageCredit: "Photo: Abhiman Singh — Wikimedia Commons, public domain.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Excavated in 1451 CE under Sultan Qutb-ud-Din Ahmad Shah II, originally named Hauz-e-Qutb" },
+      { name: "One of the oldest man-made water bodies in western India" },
+      { name: "Nagina Wadi island garden, reached by a causeway" },
+      { name: "A modern promenade, boating lake, zoo, and toy train around the historic lake" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~5 km from Ahmedabad city centre", costRange: "₹50–₹150 by auto within Ahmedabad", tips: "Genuinely at its liveliest in the evening, when the promenade lighting and food stalls come alive." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Ahmedabad budget hotels", "Ahmedabad mid-range and heritage hotels"], description: "Any Ahmedabad city hotel works; the lake is a short ride from most central areas." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ahmedabad city", notes: "Standard way to reach the lake from anywhere in Ahmedabad", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2200, food: 600, transport: 200, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 6000, food: 1500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ahmedabad Evening Circuit", morning: "Old city heritage walk.", afternoon: "Sabarmati Riverfront.", evening: "Kankaria Lake — promenade walk, Nagina Wadi, and food stalls.", stay: "Ahmedabad base", meals: "Kankaria lakeside street food (₹200–300)", tips: "Weekend evenings get genuinely busy — visit on a weekday for a quieter walk if you prefer that." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-lit, heavily-used public promenade with steady evening crowds and municipal security presence"],
+      precautions: ["Standard public-park caution around water edges", "Keep valuables secure in crowded evening periods"],
+      soloTips: ["Comfortable for solo visits, including evenings, given the lake's popularity and steady foot traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main promenade and Nagina Wadi during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 5200,
+    mustEat: ["Kankaria lakeside street food", "Local Gujarati snacks"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
