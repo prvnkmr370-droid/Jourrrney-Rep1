@@ -20935,6 +20935,164 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera (check photography rules)"],
   },
 
+  // ===== Gujarat — Stage 23: Museums, second batch — 3 more (11 of
+  // 31 total). Facts for 5 more real, genuinely listed museums were
+  // gathered this stage (Dandi Kutir, Maharaja Fatehsingh Museum,
+  // Samrat Samprati Museum, Tribal Museum at Gujarat Vidyapith, and
+  // Rotary Doll Museum) but no verified Wikimedia Commons photo was
+  // found for any of them, so no standalone cards were built —
+  // Samrat Samprati Museum in particular only opened in March 2026,
+  // likely too recent for photographer coverage yet.
+  {
+    id: "auto-world-vintage-car-museum",
+    name: "Auto World Vintage Car Museum",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Guinness World Record Private Garage, Opened to the Public",
+    description: "Auto World Vintage Car Museum, on the Dastan estate in Kathwada near Ahmedabad, began as collector Pranlal Bhogilal's private garage in 1927 — by 1987 it had genuinely earned a Guinness World Records listing as the world's largest private car collection. Bhogilal amassed over 204 vehicles in total, with 105 of them housed here since the museum opened to the public in 2000. The real collection spans Rolls-Royces, Mercedes, Bentleys, Chryslers and Lincolns, now organized and maintained by the Vintage and Classic Car Club of India — genuinely India's largest collection of vintage automobiles under one roof.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Auto_World_Vintage_Car_Museum%2C_Ahmedabad%2C_Gujarat%2C_India.jpg/1280px-Auto_World_Vintage_Car_Museum%2C_Ahmedabad%2C_Gujarat%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Auto_World_Vintage_Car_Museum%2C_Ahmedabad%2C_Gujarat%2C_India.jpg/1280px-Auto_World_Vintage_Car_Museum%2C_Ahmedabad%2C_Gujarat%2C_India.jpg",
+    imageCredit: "Photo: Shaunakmodi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Museum"],
+    bestSeason: "November – February",
+    duration: "1–2 hours",
+    highlights: [{ name: "Guinness World Record private collection (1987)" }, { name: "105 vintage cars on display" }, { name: "India's largest vintage-car collection" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~15 km / ~30 min from central Ahmedabad", costRange: "₹300–₹700 (auto/cab)", tips: "Genuinely worth checking current opening days/hours in advance, as the museum's schedule has varied over the years." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the city visit." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹300–₹700 from central Ahmedabad", notes: "Standard way to reach Kathwada", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~15 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 300, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 500, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 5200, food: 1000, transport: 700, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vintage Car Collection", morning: "Explore the museum's Rolls-Royces, Bentleys and vintage Lincolns.", afternoon: "Return to central Ahmedabad.", evening: "—", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely a must for classic-car enthusiasts — few private collections anywhere in the world match this scale." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed private museum with organized visitor access"],
+      precautions: ["Confirm opening hours before visiting"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Camera", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "vikram-sarabhai-space-exhibition-centre",
+    name: "Vikram Sarabhai Space Exhibition Centre",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Free, Kid-Friendly Window Into India's Real Space Programme",
+    description: "Vikram Sarabhai Space Exhibition Centre, in Ahmedabad, traces its roots to 1966, when Dr. Vikram Sarabhai — regarded as the father of India's space programme — established the Experimental Satellite Communication Earth Station here, three years before he founded ISRO itself in 1969. The genuinely free-entry exhibition centre, run by ISRO's own Space Applications Centre, spans 15 themed sections tracing India's real satellite and space achievements, with a 3D auditorium, an augmented-reality and holographic display, an actual astronaut flight suit, and a light-and-sound show on the solar system — a real, hands-on introduction to India's space history for visitors of any age.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Vikram_Sarabhai_Space_Exhibition.JPG/1280px-Vikram_Sarabhai_Space_Exhibition.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Vikram_Sarabhai_Space_Exhibition.JPG/1280px-Vikram_Sarabhai_Space_Exhibition.JPG",
+    imageCredit: "Photo: Drishti Shah — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Museum"],
+    bestSeason: "Year-round; free entry",
+    duration: "1–2 hours",
+    highlights: [{ name: "Free entry" }, { name: "Traces India's real space programme from 1966" }, { name: "3D auditorium, AR/holographic displays" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Satellite Road, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely great for families and kids — the free entry makes it an easy add-on to any Ahmedabad day." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Satellite Road", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 700, food: 300, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 2000, food: 600, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7300, accommodation: 5200, food: 1000, transport: 500, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Space Programme Deep Dive", morning: "The exhibition centre's 15 themed galleries and 3D auditorium show.", afternoon: "Continue with other Ahmedabad sightseeing.", evening: "—", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth an hour even for non-science-minded visitors — the storytelling is accessible and the entry is free." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A government-run, free, family-oriented exhibition centre with steady visitor traffic"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The exhibition centre grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1500,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "prabhas-patan-museum",
+    name: "Prabhas Patan Museum",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Real Remnants of Somnath's Repeatedly Destroyed Temple",
+    description: "Prabhas Patan Museum, near Somnath Temple, was genuinely established in 1951 to preserve the real archaeological remains of Somnath's own layered, repeatedly-destroyed-and-rebuilt history. Its roughly 3,500 objects include genuine 12th-century toranas, 11th-century statues of Agni, Uma Maheshwara, Vishnu and Parvati, and stone inscriptions and copper plates recovered from earlier temple structures — including one 1169 CE inscription that itself records the site's medieval history, referencing the temple Bhimdev Solanki built and the fifth reconstruction under Kumarapala the same year. A real, carefully reconstructed 12th-century shrine ceiling with its original carving sits within the museum, alongside pottery shards and water samples from India's major rivers.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Somnath_temple_ruins_%281869%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Somnath_temple_ruins_%281869%29.jpg",
+    imageCredit: "Historical 1869 photograph of the Somnath temple ruins by D.H. Sykes — Wikimedia Commons, public domain. (Shown here for its direct historical relevance to the museum's own collection of temple remnants; not a photo of the museum building itself.)",
+    category: ["Museum", "Heritage"],
+    bestSeason: "November – February",
+    duration: "1 hour",
+    highlights: [{ name: "Established 1951" }, { name: "1169 CE inscription recording the temple's own history" }, { name: "Reconstructed 12th-century shrine ceiling" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Somnath — long haul", fromMumbai: "Via Somnath — long haul", fromBangalore: "Not practical", duration: "Central Prabhas Patan, near Somnath Temple", costRange: "₹50–₹150 (auto within the area)", tips: "Genuinely a great complement to a Somnath Temple visit — it explains the temple's own layered destruction-and-rebuilding history through real physical remnants." },
+    ],
+    accommodation: [
+      { type: "Base in Somnath/Veraval", priceRange: "₹1,000–₹6,000/night (estimate)", examples: ["Hotels in Somnath and Veraval"], description: "Same base as Somnath Temple." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Prabhas Patan", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Somnath Temple", distance: "~1 km", type: "Temple", isHidden: false, id: "somnath-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 600, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Somnath's Layered History", morning: "Somnath Temple darshan.", afternoon: "Prabhas Patan Museum's archaeological remnants.", evening: "Return to Veraval/Somnath.", stay: "Somnath/Veraval base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely worth visiting after the temple, not before — the museum's remnants make far more sense once you've seen the present-day structure they were recovered from." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed archaeological museum close to the major Somnath pilgrimage circuit"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given its proximity to Somnath"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gir Somnath District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 500,
+    mustEat: ["Kathiyawadi Thali near Somnath"],
+    packingTips: ["Comfortable walking shoes", "Camera (check photography rules)"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

@@ -4145,3 +4145,15 @@ SAFETY_OVERRIDES["patan-patola-heritage-museum"] = {
   police: { summary: "Patan District Police: 100", details: ["Patan District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Patan Civil Hospital — dial 108 for ambulance", details: ["Patan Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["auto-world-vintage-car-museum"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["vikram-sarabhai-space-exhibition-centre"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["prabhas-patan-museum"] = {
+  police: { summary: "Gir Somnath District Police: 100", details: ["Gir Somnath District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Veraval General Hospital — dial 108 for ambulance", details: ["Veraval General Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
