@@ -4045,3 +4045,35 @@ SAFETY_OVERRIDES["pavagadh-kalika-mata-temple"] = {
   police: { summary: "Panchmahal District Police: 100", details: ["Panchmahal District Police control room: 100 (Godhra is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Godhra/Halol Civil Hospital — dial 108 for ambulance", details: ["Government hospitals in Halol or Godhra serve this area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service — important given the hill climb involved.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["rukmini-devi-temple"] = {
+  police: { summary: "Dwarka Police Station: 02892-234523", details: ["Dwarka Police Station: 02892-234523.", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Sourced via web search referencing the official Devbhoomi Dwarka district website and government directories." },
+  medical: { summary: "Dwarka General Hospital — dial 108 for ambulance", details: ["General Hospital, Dwarka — the town's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["nishkalank-mahadev-temple"] = {
+  police: { summary: "Bhavnagar City Police: 100", details: ["Bhavnagar City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Bhavnagar Police uses the statewide 100 emergency number; a Koliyak-specific local station number was not individually verified." },
+  medical: { summary: "Sir Takhtsinhji General Hospital, Bhavnagar — dial 108 for ambulance", details: ["Sir Takhtsinhji General Hospital, Bhavnagar (~25 km) — the region's main public referral hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["swaminarayan-mandir-kalupur"] = {
+  police: { summary: "Ahmedabad City Police: 100", details: ["Ahmedabad City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Ahmedabad Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "Civil Hospital Ahmedabad — dial 108 for ambulance", details: ["Civil Hospital Ahmedabad — one of the largest public hospitals in the state.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and Civil Hospital Ahmedabad's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["shamlaji-temple"] = {
+  police: { summary: "Aravalli District Police: 100", details: ["Aravalli District Police control room: 100 (Modasa is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital serves this North Gujarat area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["taranga-hill-jain-temple"] = {
+  police: { summary: "Mehsana District Police: 100", details: ["Mehsana District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mehsana Civil Hospital — dial 108 for ambulance", details: ["Mehsana Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["bahuchar-mata-temple"] = {
+  police: { summary: "Mehsana District Police: 100", details: ["Mehsana District Police control room: 100 (Becharaji has its own local police presence given the temple's major pilgrim traffic).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A temple-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mehsana Civil Hospital — dial 108 for ambulance", details: ["Mehsana Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["sudama-mandir"] = {
+  police: { summary: "Porbandar SP Office: 0286-2211222", details: ["Porbandar Superintendent of Police office: 0286-2211222; Kirtimandir Police Station (central Porbandar): 0286-2240944.", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Sourced via web search referencing Porbandar district police contact listings." },
+  medical: { summary: "Porbandar Government Hospital — dial 108 for ambulance", details: ["Porbandar Government Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["bhalka-tirth"] = {
+  police: { summary: "Gir Somnath District Police: 100", details: ["Gir Somnath District Police control room: 100 (Veraval is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Veraval General Hospital — dial 108 for ambulance", details: ["Veraval General Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
