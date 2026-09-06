@@ -20063,6 +20063,468 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
+  // ===== Gujarat — Stage 21: Religious Sites, third and final batch
+  // — 9 more, bringing the total to 25 of 42 listed. Hastagiri Jain
+  // Tirth is a documented gap this stage — genuinely listed and
+  // real, but no verified Wikimedia Commons photo was found. A
+  // handful of smaller/institutional entries on the original list
+  // (Shree Bhuvaneshwari Aushadhashram, Ramkrishna Mission Rajkot,
+  // Triveni Sangam, Adalaj Trimandir, BAPS Botad, Damodar Kund,
+  // Girnar Hill, Kalo Dungar, Akshardham Gandhinagar) remain as
+  // hub-card mentions or documented remaining gaps rather than
+  // separate standalone cards, closing out active work on this
+  // category for now.
+  {
+    id: "koteshwar-narayan-sarovar",
+    name: "Koteshwar Mahadev Temple & Narayan Sarovar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "India's Westernmost Temple, Where Shiva 'Duplicated' a Lingam a Million Times",
+    description: "Koteshwar Mahadev Temple, on Kutch's coast just 2 km from Narayan Sarovar, sits at genuinely the westernmost inhabited point of the Indian subcontinent — first mentioned as a significant harbour by the 7th-century Chinese traveler Hieun-Tsiang, with the current temple built in 1820 by Jetha Shivji Brahmashaktirya and Seth Sundarji, per its own entrance inscriptions. \"Koteshwar\" means \"ten million gods,\" tied to the Ramayana legend of Ravana receiving a lingam from Shiva through austerity — Shiva, the story goes, duplicated it into countless identical copies as a check on Ravana's power. Narayan Sarovar itself, a real Puranic-era lake, is traditionally held to have sprung up when Vishnu touched the drought-stricken earth with his toe.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Koteshwar_Mahadev_Temple%2C_Kutch%2C_Gujarat_1.jpg/1280px-Koteshwar_Mahadev_Temple%2C_Kutch%2C_Gujarat_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Koteshwar_Mahadev_Temple%2C_Kutch%2C_Gujarat_1.jpg/1280px-Koteshwar_Mahadev_Temple%2C_Kutch%2C_Gujarat_1.jpg",
+    imageCredit: "Photo: Ameya ad — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "India's westernmost inhabited temple site" }, { name: "Built 1820, referenced since the 7th century CE" }, { name: "Adjoining Narayan Sarovar, a Puranic lake" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~130 km / ~2.5h from Bhuj", costRange: "₹2,500–₹4,500 (cab from Bhuj)", tips: "A genuinely remote, far-western corner of India — plan for a full-day round trip from Bhuj." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base for this remote site." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹2,500–₹4,500 from Bhuj", notes: "Standard way to reach this remote coastal site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~130 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 350, transport: 450, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2300, food: 650, transport: 750, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5800, food: 1100, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "India's Westernmost Point", morning: "Long drive to Koteshwar and Narayan Sarovar.", afternoon: "Temple darshan and time at the lake.", evening: "Long drive back to Bhuj.", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "Genuinely one of the farthest-flung, least-visited pilgrimage sites in the whole country — worth it for that alone." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A remote coastal pilgrimage site with limited infrastructure"],
+      precautions: ["Very remote — carry water, snacks, and inform your accommodation of your travel plan", "Limited mobile signal in stretches of the route"],
+      soloTips: ["Better visited as part of an organized Kutch tour or with a driver familiar with the route, given the remoteness"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and lake grounds"],
+      avoidAreas: ["None specific — just plan for the remoteness"],
+    },
+    rating: 4.4,
+    reviews: 500,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Water and snacks for the long drive", "Modest clothing", "Sun protection"],
+  },
+
+  {
+    id: "kabirvad",
+    name: "Kabirvad",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 600-Year-Old Banyan That Grew From a Saint's Discarded Toothbrush",
+    description: "Kabirvad, on a small island in the Narmada near Bharuch, is genuinely one of India's most remarkable living banyan trees — its main specimen believed to be over 600 years old, once described by 18th-century traveler James Forbes as nearly 610m in circumference with over 3,000 trunks; today its canopy still spans a real 4.33 acres. Local legend holds it grew from a discarded meswak twig used by the 15th-century mystic-poet Kabir to clean his teeth, and a small temple to Kabir sits within its sprawling root system. An account by Nearchus, an admiral under Alexander the Great, of a Narmada-side banyan sheltering 7,000 men may genuinely describe this very tree or an ancestor of it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kabir_Vad_01.jpg/1280px-Kabir_Vad_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kabir_Vad_01.jpg/1280px-Kabir_Vad_01.jpg",
+    imageCredit: "Photo: Dr. M S Patel — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "600+ year old banyan, 4.33-acre canopy" }, { name: "Legend of Kabir's discarded toothbrush" }, { name: "Possibly referenced by Alexander's admiral Nearchus" }],
+    transport: [
+      { mode: "Road + Boat", icon: "🚗⛴️", fromDelhi: "Via Bharuch — long haul", fromMumbai: "~320 km, ~6h", fromBangalore: "Not practical", duration: "~50 km / ~1h from Bharuch, plus a short boat ride to the island", costRange: "₹1,500–₹3,000 (cab + boat)", tips: "The island is only reachable by boat — factor in boat availability/timing when planning the visit." },
+    ],
+    accommodation: [
+      { type: "Base in Bharuch", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels in Bharuch town"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Local Boat", cost: "₹100–₹300 per person", notes: "Required to reach the island itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bharuch town", distance: "~50 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 550, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 4900, food: 1100, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ancient Banyan Visit", morning: "Boat out to Kabirvad island.", afternoon: "Walk the tree's sprawling root-trunk network and visit the small Kabir shrine.", evening: "Return to Bharuch.", stay: "Bharuch base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth allowing unhurried time to walk the tree's full spread — it's far larger than photos usually convey." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known local landmark with regular boat traffic and visitor footfall"],
+      precautions: ["Wear a life jacket if offered on the boat crossing", "Standard river-safety caution"],
+      soloTips: ["A comfortable solo visit given the regular boat service and steady daytime footfall"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bharuch District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The island and boat-launch area"],
+      avoidAreas: ["Unofficial/unlicensed boat operators"],
+    },
+    rating: 4.5,
+    reviews: 900,
+    mustEat: ["Local Gujarati food in Bharuch"],
+    packingTips: ["Comfortable walking shoes for the root network", "A life jacket for the boat ride if available"],
+  },
+
+  {
+    id: "magen-abraham-synagogue",
+    name: "Magen Abraham Synagogue",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Gujarat's Only Synagogue, Built by a Small But Real Jewish Community",
+    description: "Magen Abraham Synagogue, in Ahmedabad's Khamasa area near a historic Parsi fire temple, is genuinely Gujarat's only synagogue — built in 1934 with real donations from the state's Bene Israel Jewish community, whose cornerstone was laid on 19 October 1933. The Bene Israel first arrived in Gujarat from Mumbai and the Konkan coast in the mid-19th century, forming Ahmedabad's congregation in 1848; at the synagogue's founding, roughly 800 Jews from 300 Bene Israel families lived in the city. It remains a genuine, active spiritual center for the small Bene Israel community still in Ahmedabad today, and its location beside the Parsi agiyari is a real, quiet emblem of the city's religious diversity.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ahmedabad_Synagogue.jpg/1280px-Ahmedabad_Synagogue.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ahmedabad_Synagogue.jpg/1280px-Ahmedabad_Synagogue.jpg",
+    imageCredit: "Photo: Emmanuel Dyan — Wikimedia Commons, CC BY 2.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "20–30 minutes",
+    highlights: [{ name: "Gujarat's only synagogue" }, { name: "Built 1934 by the Bene Israel community" }, { name: "Beside a historic Parsi fire temple" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, Khamasa area", costRange: "₹50–₹150 (auto within the city)", tips: "A quiet, real thread of Ahmedabad's religious diversity — genuinely worth a short stop on an old-city walk." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the old city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Religious Diversity Walk", morning: "Old-city heritage sites.", afternoon: "Magen Abraham Synagogue and the nearby Parsi agiyari (exterior view).", evening: "Return to central Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth calling ahead, as access for non-community visitors can be limited — check current visiting arrangements." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A quiet, respected small place of worship in central Ahmedabad"],
+      precautions: ["Respectful, modest visiting etiquette expected"],
+      soloTips: ["A comfortable solo daytime visit given the central location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The immediate surroundings"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 300,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Modest clothing", "Call ahead to confirm visiting access"],
+  },
+
+  {
+    id: "tulsi-shyam-temple",
+    name: "Tulsi Shyam Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Krishna Shrine With Three Natural Hot Sulphur Springs",
+    description: "Tulsi Shyam Temple, deep within the Gir forest about 30 km from Una, is genuinely built around a black-stone idol said to be some 3,000 years old, with the current temple structure roughly 700 years old. The name blends Tulsishyam's local legend — Krishna's defeat of a demon named Tul — with Shyam, another name for Krishna. Genuinely real and unusual for the region, three natural hot sulphur springs, called Taptodak in the Puranas, sit at the site, each progressively hotter, drawing pilgrims who bathe in their believed-therapeutic waters alongside their temple visit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tulsishyam_Temple_Gujarat.jpg/1280px-Tulsishyam_Temple_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tulsishyam_Temple_Gujarat.jpg/1280px-Tulsishyam_Temple_Gujarat.jpg",
+    imageCredit: "Photo: Gazal world — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Nature", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "3,000-year-old black-stone idol (tradition)" }, { name: "3 natural hot sulphur springs" }, { name: "Deep within Gir forest" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Junagadh — long haul", fromMumbai: "Via Diu — long haul", fromBangalore: "Not practical", duration: "~30 km / ~1h from Una", costRange: "₹1,500–₹3,000 (cab from Una)", tips: "Genuinely a scenic drive through Gir forest itself — watch for wildlife crossing signs along the route." },
+    ],
+    accommodation: [
+      { type: "Base in Una/Diu", priceRange: "₹1,000–₹5,000/night (estimate)", examples: ["Hotels in Una town", "Diu hotels for a day trip"], description: "Both work as a regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Una", notes: "Standard way to reach this forest-interior site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gir National Park", distance: "Within the same forest belt", type: "Wildlife", isHidden: false, id: "gir-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2000, food: 650, transport: 650, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5100, food: 1100, transport: 900, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Forest Temple & Hot Springs", morning: "Drive through Gir forest to Tulsi Shyam.", afternoon: "Temple darshan and a soak at the hot sulphur springs.", evening: "Return to Una or Diu.", stay: "Una/Diu base", meals: "Local Gujarati food (₹300)", tips: "Genuinely a distinctive combination of pilgrimage and natural hot springs, rare to find together in Gujarat." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A real, forest-interior pilgrimage site with regular visitor traffic despite its remote setting"],
+      precautions: ["Drive carefully through the forest section — wildlife crossings are real", "Standard hot-spring bathing caution"],
+      soloTips: ["A comfortable solo daytime visit given the steady pilgrim flow, though the forest drive is best done in daylight"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Gir Somnath District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and spring area"],
+      avoidAreas: ["Driving through the forest section after dark"],
+    },
+    rating: 4.4,
+    reviews: 800,
+    mustEat: ["Local Gujarati food near Una"],
+    packingTips: ["Swimwear for the hot springs", "Modest clothing for the temple", "A towel"],
+  },
+
+  {
+    id: "takhteshwar-temple",
+    name: "Takhteshwar Temple, Bhavnagar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Marble Hilltop Shrine With Views Over the Gulf of Cambay",
+    description: "Takhteshwar Temple, on a small hillock in Bhavnagar, was genuinely commissioned in 1893 by Maharaja Takhtsinhji, the Gohil-clan Rajput chief who became Bhavnagar's ruler after his father Jaswantsinhji's death in 1870. Built entirely in marble with 18 ornate pillars in Gujarati style, the temple's real elevated position offers genuine panoramic views over Bhavnagar city and out to the Gulf of Cambay — a real, if modest, hilltop escape within the city itself, and a busy destination for Shivratri devotees.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Takhteshwar_Temple_01.jpg/1280px-Takhteshwar_Temple_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Takhteshwar_Temple_01.jpg/1280px-Takhteshwar_Temple_01.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 1893 by Maharaja Takhtsinhji" }, { name: "All-marble, 18-pillar Gujarati style" }, { name: "Panoramic Gulf of Cambay views" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "Central Bhavnagar", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely worth timing for sunset given the hilltop's open views over the Gulf." },
+    ],
+    accommodation: [
+      { type: "Base in Bhavnagar", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels across Bhavnagar city"], description: "Part of the Bhavnagar city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Bhavnagar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhavnagar (Nilambag Palace)", distance: "Same area", type: "City", isHidden: false, id: "bhavnagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1800, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4800, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hilltop Temple & City Views", morning: "Nilambag Palace and Bhavnagar city sights.", afternoon: "Climb to Takhteshwar Temple.", evening: "Sunset over the Gulf of Cambay from the temple grounds.", stay: "Bhavnagar base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely one of the best free sunset viewpoints in the city." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A central, well-visited city temple with steady daily traffic"],
+      precautions: ["Modest dress expected"],
+      soloTips: ["A comfortable solo daytime or evening visit given the central location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhavnagar City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds and hilltop"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 1000,
+    mustEat: ["Kathiyawadi Thali in Bhavnagar"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes for the climb", "Camera for the sunset view"],
+  },
+
+  {
+    id: "galteshwar-mahadev-temple",
+    name: "Galteshwar Mahadev Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 12th-Century Shiva Shrine Where a Spring Constantly Bathes the Lingam",
+    description: "Galteshwar Mahadev Temple, near Dakor at the confluence of the Mahi and Galti rivers, is genuinely a 12th-century Shiva shrine built in an unusual central-Indian Malwa (bhumija) style rather than the more common Gujarati Solanki idiom, its square garbhagriha and octagonal mandapa carved with real depictions of gods, gandharvas, sages, riders and full life-cycle scenes. A real, small perennial spring from the Galti river continuously trickles onto the temple's Shiva lingam — a genuine, self-sustaining natural feature that gives the temple much of its distinct character.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Galteshwar_Mahadev_Temple_Gujarat.jpg/1280px-Galteshwar_Mahadev_Temple_Gujarat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Galteshwar_Mahadev_Temple_Gujarat.jpg/1280px-Galteshwar_Mahadev_Temple_Gujarat.jpg",
+    imageCredit: "Photo: Aditya Mahar — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "12th-century Malwa (bhumija) style" }, { name: "A natural spring perpetually bathing the lingam" }, { name: "Riverbank setting at the Mahi-Galti confluence" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad/Dakor — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~15 km / ~25 min from Dakor", costRange: "₹300–₹700 (auto/cab from Dakor)", tips: "Genuinely combinable with a Dakor Ranchhodrai Temple visit on the same trip." },
+    ],
+    accommodation: [
+      { type: "Base in Dakor/Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Dakor dharamshalas", "Ahmedabad hotels for a day trip"], description: "Dakor is the closer, more practical base." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Dakor", notes: "Standard way to reach Galteshwar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchhodrai Temple, Dakor", distance: "~15 km", type: "Temple", isHidden: false, id: "ranchhodrai-temple-dakor" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 650, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4700, food: 1100, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Riverside Shiva Shrine", morning: "Ranchhodrai Temple darshan in Dakor.", afternoon: "Galteshwar Mahadev Temple by the Mahi-Galti confluence.", evening: "Return to Ahmedabad or your base.", stay: "Dakor or Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth the short detour from Dakor — the natural spring feature is a real, distinctive touch you won't see at most Shiva temples." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quiet riverside temple with steady local visitor traffic"],
+      precautions: ["Modest dress expected", "Riverbank terrain — watch your footing near the water"],
+      soloTips: ["A comfortable solo daytime visit given the temple's proximity to Dakor"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Kheda District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 400,
+    mustEat: ["Local Gujarati food near Dakor"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "kashtabhanjan-dev-hanuman-temple",
+    name: "Shree Kashtabhanjan Dev Hanumanji Mandir, Sarangpur",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Swaminarayan Temple Where the Primary Deity Is Hanuman",
+    description: "Shree Kashtabhanjan Dev Hanumanji Mandir, in Sarangpur village near Botad, is genuinely the only Swaminarayan-tradition temple where Hanuman, not Swaminarayan or Krishna, is the primary deity — established in the early 19th century by Gopalanand Swami, a direct disciple of Swaminarayan himself. Tradition holds that when Gopalanand Swami touched the newly-installed idol with his sacred stick, it visibly stirred, giving the deity its name Kashtbhanjan — \"remover of troubles.\" The temple was substantially renovated in 1899, and in 2023 unveiled a genuine 54-foot statue of Hanuman at a real cost of ₹11 crore, inaugurated by India's Home Minister on Hanuman Jayanti.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/King_of_Salangpur_Statue.jpg/1280px-King_of_Salangpur_Statue.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/King_of_Salangpur_Statue.jpg/1280px-King_of_Salangpur_Statue.jpg",
+    imageCredit: "Photo: Rahilarious — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "The only Swaminarayan temple centered on Hanuman" }, { name: "Founded by Gopalanand Swami, a direct Swaminarayan disciple" }, { name: "54-foot Hanuman statue, unveiled 2023" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Botad — long haul", fromMumbai: "Via Botad — long haul", fromBangalore: "Not practical", duration: "~20 km / ~30 min from Botad", costRange: "₹500–₹1,200 (cab from Botad)", tips: "Genuinely one of Gujarat's most-visited Swaminarayan-tradition sites — expect a lively, well-organized crowd, especially on Saturdays." },
+    ],
+    accommodation: [
+      { type: "Base in Botad", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels and dharamshalas in Botad town"], description: "The practical regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Botad", notes: "Standard way to reach Sarangpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Botad town", distance: "~20 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 300, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 650, transport: 500, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4700, food: 1100, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hanuman Pilgrimage", morning: "Temple darshan and the historic idol.", afternoon: "View the new 54-foot Hanuman statue.", evening: "Return to Botad.", stay: "Botad base", meals: "Free temple prasad/local Gujarati food (₹200–₹300)", tips: "Genuinely one of Gujarat's most actively visited pilgrimage sites — arrive early on weekends to beat the crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, extremely well-organized pilgrimage site with heavy footfall and formal crowd management"],
+      precautions: ["Modest dress expected", "Very crowded on Saturdays and festival days"],
+      soloTips: ["A comfortable solo visit given the site's scale and formal management"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Botad District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 3800,
+    mustEat: ["Free temple prasad", "Local Gujarati food in Botad"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "panchasara-parshwanath-derasar",
+    name: "Panchasara Parshwanath Jain Derasar, Patan",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An 8th-Century Temple Named for the King's Ancestral Home",
+    description: "Panchasara Parshwanath Jain Derasar, in Patan, was genuinely built around 746 CE by King Vanraj Chavda, who named it for Panchasara, the ancestral kingdom of his father Jayshikhari — the idol itself is said to have been brought from that hometown. Real historical tradition records renovation work under the 13th-century Jain minister Vastupala, and after the temple was destroyed during periods of invasion, it was rebuilt multiple times, with a major modern reconstruction — also called Jinalaya Vanraj Vihar — completed in the 1940s-50s. The 180-by-90-foot temple, ringed by 51 smaller shrines, is genuinely one of Patan's most significant Jain pilgrimage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Pa%C3%B1c%C4%81sara_P%C4%81r%C5%9Bvan%C4%81tha_Jaina_Temple.jpg/1280px-Pa%C3%B1c%C4%81sara_P%C4%81r%C5%9Bvan%C4%81tha_Jaina_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Pa%C3%B1c%C4%81sara_P%C4%81r%C5%9Bvan%C4%81tha_Jaina_Temple.jpg/1280px-Pa%C3%B1c%C4%81sara_P%C4%81r%C5%9Bvan%C4%81tha_Jaina_Temple.jpg",
+    imageCredit: "Photo: Nabhas Chandra — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Founded c. 746 CE by King Vanraj Chavda" }, { name: "51 surrounding smaller shrines" }, { name: "Rebuilt in the 1940s–50s as Jinalaya Vanraj Vihar" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Patan — long haul", fromMumbai: "Via Patan — long haul", fromBangalore: "Not practical", duration: "Central Patan", costRange: "₹50–₹150 (auto within town)", tips: "Genuinely combinable with a Rani ki Vav visit on the same Patan heritage day." },
+    ],
+    accommodation: [
+      { type: "Base in Patan", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Hotels in Patan town"], description: "The practical local base." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Patan", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rani ki Vav, Patan", distance: "~2 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1700, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4400, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patan Heritage & Jain Pilgrimage", morning: "Rani ki Vav.", afternoon: "Panchasara Parshwanath Jain Derasar's 51 shrines.", evening: "Explore Patan's old town and patola weaving quarter.", stay: "Patan base", meals: "Local Gujarati thali (₹250)", tips: "Genuinely worth pairing with Patan's famous Patola silk weaving — both are within the same compact old town." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-visited Jain temple in central Patan with steady daily traffic"],
+      precautions: ["Modest dress expected"],
+      soloTips: ["A comfortable solo daytime visit given the central location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Patan District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and old town"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 700,
+    mustEat: ["Local Gujarati thali in Patan"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "ahmad-shah-mosque",
+    name: "Ahmad Shah's Mosque",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Oldest Mosque in Ahmedabad, Built as the Sultan's Private Shrine",
+    description: "Ahmad Shah's Mosque, also known as Shahi Jam-e-Masjid or Juni Juma Masjid, was genuinely completed in 1414-15 — just three years after Ahmad Shah I founded Ahmedabad — making it the city's oldest mosque, per its own mihrab inscription dated to Shawwal 817 AH. It's real, and understood to have served as the royal household's own private mosque, spanning 700 sq m under two rows of ten large domes with numerous smaller ones. Genuinely a defining early example of the provincial Indo-Saracenic style that flourished across 15th-16th century Ahmedabad, its Islamic layout and orientation were realized in practice by Hindu artisans — visible in the white marble paving and leaf-patterned pulpit balustrade.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Ahmed_Shah_Mosque_-_Ahmedabad_-_Gujarat_DSC002.jpg/1280px-Ahmed_Shah_Mosque_-_Ahmedabad_-_Gujarat_DSC002.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Ahmed_Shah_Mosque_-_Ahmedabad_-_Gujarat_DSC002.jpg/1280px-Ahmed_Shah_Mosque_-_Ahmedabad_-_Gujarat_DSC002.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "20–30 minutes",
+    highlights: [{ name: "Ahmedabad's oldest mosque, completed 1414-15" }, { name: "Once the Sultan's private royal mosque" }, { name: "Hindu-artisan craftsmanship within an Islamic design" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Bhadra Fort", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely a quick, essential stop on the old-city heritage walk, right beside the other founding-era monuments." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the old-city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from Bhadra Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhadra Fort", distance: "~500 m", type: "Fort", isHidden: false, id: "bhadra-fort" },
+      { name: "Jama Masjid, Ahmedabad", distance: "~700 m", type: "Mosque", isHidden: false, id: "jama-masjid-ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Founding-Era Ahmedabad", morning: "Bhadra Fort and Ahmad Shah's Mosque, the city's oldest surviving religious monument.", afternoon: "Jama Masjid and Sidi Saiyyed Mosque.", evening: "Manek Chowk night market.", stay: "Ahmedabad base", meals: "Manek Chowk street food (₹200)", tips: "Genuinely worth visiting in the order the city itself grew — this mosque, then Jama Masjid a decade later, then Sidi Saiyyed over a century after that." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A central, well-visited old-city monument with steady daytime footfall"],
+      precautions: ["Modest dress and standard mosque etiquette expected"],
+      soloTips: ["A comfortable solo daytime visit given the central location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The mosque and surrounding old-city area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Manek Chowk street food nearby"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
