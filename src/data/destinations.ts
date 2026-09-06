@@ -746,7 +746,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: [{ name: "Mehrangarh Fort" }, { name: "The Blue City (old town) — best seen from the fort ramparts" }, { name: "Jaswant Thada (marble cenotaph)" }, { name: "Umaid Bhawan Palace" }, { name: "Sadar Market & Clock Tower" }],
+    highlights: [{ name: "Mehrangarh Fort", id: "mehrangarh-fort" }, { name: "The Blue City (old town) — best seen from the fort ramparts" }, { name: "Jaswant Thada (marble cenotaph)" }, { name: "Umaid Bhawan Palace" }, { name: "Sadar Market & Clock Tower" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Mandore Express / Ranthambore Express — ~11–12h", fromMumbai: "Suryanagari Express — ~16–17h", fromBangalore: "Via Delhi/Ahmedabad — 24h+", duration: "11–12h from Delhi", costRange: "₹350–₹1,800", tips: "Jodhpur Junction is a major hub, well-connected across Rajasthan and to Delhi/Mumbai directly." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 10–11h", fromMumbai: "NH48 — 16–18h", fromBangalore: "—", duration: "10–11h from Delhi; 5–6h from Jaipur", costRange: "₹3,000–₹6,000 cab / ₹500–₹900 bus", tips: "RSRTC Volvo buses run frequently from Jaipur and are a comfortable, budget-friendly option." },
@@ -765,8 +765,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rental Scooter", cost: "₹300–₹600/day", notes: "Popular for day trips to Mandore or Osian", available: true },
     ],
     nearbyPlaces: [
+      { name: "Mehrangarh Fort", distance: "Same city", type: "Heritage", isHidden: true, id: "mehrangarh-fort" },
       { name: "Mandore Gardens", distance: "9 km", type: "Heritage Gardens", isHidden: false },
-      { name: "Osian (temple town & desert)", distance: "65 km", type: "Heritage", isHidden: true },
+      { name: "Osian (temple town & desert)", distance: "65 km", type: "Heritage", isHidden: true, id: "osian" },
       { name: "Bishnoi Village Safari", distance: "25 km", type: "Cultural", isHidden: true },
       { name: "Kaylana Lake", distance: "8 km", type: "Nature", isHidden: true },
       { name: "Rohet Garh", distance: "40 km", type: "Heritage Stay", isHidden: true },
@@ -1697,7 +1698,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Alwar (Bala Quila, Sariska)", distance: "70 km", type: "Heritage", isHidden: false, id: "alwar" },
-      { name: "Sariska Tiger Reserve", distance: "75 km", type: "Wildlife", isHidden: true },
+      { name: "Sariska Tiger Reserve", distance: "75 km", type: "Wildlife", isHidden: true, id: "sariska-tiger-reserve" },
       { name: "Jaipur", distance: "120 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
@@ -23027,6 +23028,116 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8700,
     mustEat: ["Roadside dhaba food en route", "Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes with good grip", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "sariska-tiger-reserve",
+    name: "Sariska Tiger Reserve",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "India's First Successful Tiger Reintroduction, After Losing Every Tiger to Poaching",
+    description: "Sariska, in Alwar district, was once the private hunting ground of the princely state of Alwar before being declared a wildlife sanctuary in 1955 and a tiger reserve in 1978, spanning 800 sq km with a 500 sq km core zone. By 2004, Sariska had genuinely lost every one of its roughly 28 tigers to poaching, most notoriously at the hands of the poacher Sansar Chand — a real conservation failure that made national headlines. In 2008, the National Tiger Conservation Authority and Wildlife Institute of India launched independent India's first tiger relocation program, tranquilizing and airlifting tigers from nearby Ranthambore into Sariska between mid-2008 and early 2009. Further reintroductions and successful natural breeding among the relocated tigers have since rebuilt the population to over 50 — a genuine conservation turnaround now studied as one of the world's most successful tiger reintroduction models.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Sariska_Tiger_Reserve%2C_Alwar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Sariska_Tiger_Reserve%2C_Alwar.jpg",
+    imageCredit: "Photo: Shivalir — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "November – March (park closed roughly July–September for monsoon)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Former royal hunting ground of Alwar, sanctuary since 1955, tiger reserve since 1978" },
+      { name: "Lost all ~28 tigers to poaching by 2004 — a widely-documented conservation failure" },
+      { name: "India's first tiger relocation program, launched 2008 with tigers airlifted from Ranthambore" },
+      { name: "Population rebuilt to 50+ tigers through reintroduction and natural breeding" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~200 km via NH48/NH248A, ~4h", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~110 km / ~2h from Jaipur", costRange: "₹2,500–₹5,000 by cab from Jaipur or Delhi", tips: "Book jeep safaris in advance through the forest department — permits and vehicle numbers are limited per zone." },
+    ],
+    accommodation: [
+      { type: "Base in Sariska/Alwar", priceRange: "₹1,500–₹15,000/night (estimate)", examples: ["Sariska forest resorts", "Alwar town hotels"], description: "A range from simple lodges near the park gate to jungle-resort stays." },
+    ],
+    localTransport: [
+      { mode: "Forest Department Jeep Safari", cost: "₹2,000–₹4,000 per jeep (approx.)", notes: "The only way to enter the core zone; book slots in advance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "~35 km", type: "City", isHidden: false, id: "alwar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2500, accommodation: 1500, food: 400, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 6500, accommodation: 4000, food: 900, transport: 700, activities: 900 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 20000, accommodation: 15000, food: 2000, transport: 1000, activities: 2000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sariska Safari Day", morning: "Early jeep safari through the core zone.", afternoon: "Rest at the lodge; visit the ruined Kankwari Fort inside the reserve if time allows.", evening: "Second safari or a visit to nearby Alwar's City Palace.", stay: "Sariska/Alwar", meals: "Rajasthani thali (₹300–₹500)", tips: "Sightings are genuinely less certain here than at Ranthambore, given the smaller, still-recovering tiger population — go in with realistic expectations and enjoy the wider wildlife and landscape regardless." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An organized, forest-department-regulated safari operation with fixed routes and guides"],
+      precautions: ["Stay inside the jeep at all times during safaris", "Only book through official forest-department channels or reputable lodges"],
+      soloTips: ["Join a shared jeep safari rather than arranging informal transport; lodges can typically help pair solo travelers into group safaris"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Forest-department safari vehicles and designated lodge areas"],
+      avoidAreas: ["Walking outside vehicles within the core zone"],
+    },
+    rating: 4.3,
+    reviews: 3100,
+    mustEat: ["Rajasthani thali near Alwar/Sariska"],
+    packingTips: ["Neutral-colored clothing", "Binoculars", "Sun protection", "Warm layers for early-morning safaris in winter"],
+  },
+
+  {
+    id: "mehrangarh-fort",
+    name: "Mehrangarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Rao Jodha's 1459 'Fort of the Sun', Towering Over the Blue City",
+    description: "Mehrangarh Fort was founded in 1459 by Rao Jodha, who chose an isolated, elevated rock six miles south of the older capital Mandore for its superior natural defences — the town of Jodhpur grew up at its base and took his name. \"Mehrangarh\" translates roughly to \"fort of the sun,\" referencing the ruling Rathore clan's mythical descent from the sun god Surya. Its walls rise up to 120 feet high and 70 feet thick along a 500-yard span, among the most imposing of any Rajput fort. Inside, the Sheesh Mahal (Glass Palace), a private apartment built 1707–1724, carries intricate wall paintings of gods and goddesses, while the 18th-century Phool Mahal (Palace of Flowers), added by Maharaja Abhay Singh, is widely regarded as the grandest single room in the fort. Maharaja Gaj Singh II, the current head of the Rathore clan, has developed the interior into the genuinely well-curated Mehrangarh Museum, displaying palanquins, royal cradles, and centuries of weaponry.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/20191210_Mehrangarh_Fort%2C_Jodhpur_1016_7834.jpg/1280px-20191210_Mehrangarh_Fort%2C_Jodhpur_1016_7834.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/20191210_Mehrangarh_Fort%2C_Jodhpur_1016_7834.jpg/1280px-20191210_Mehrangarh_Fort%2C_Jodhpur_1016_7834.jpg",
+    imageCredit: "Photo: Jakub Hałun — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Founded 1459 by Rao Jodha, whose new fort gave Jodhpur its name" },
+      { name: "Walls up to 120 feet high and 70 feet thick along a 500-yard span" },
+      { name: "The Sheesh Mahal (1707-24) and Phool Mahal — two of Rajasthan's finest palace interiors" },
+      { name: "The Mehrangarh Museum's collection of palanquins, royal cradles, and weaponry" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "~5 km from central Jodhpur", costRange: "₹100–₹300 by auto/cab within Jodhpur", tips: "The audio guide is genuinely excellent and worth the extra fee — it covers the palace museum in real depth." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹800–₹20,000/night (estimate)", examples: ["Jodhpur old-city havelis", "Jodhpur heritage hotels"], description: "Any Jodhpur city hotel works — the fort is a short ride from the Blue City centre." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Jodhpur city", notes: "Standard way to reach the fort from anywhere in Jodhpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jodhpur", distance: "~5 km", type: "City", isHidden: false, id: "jodhpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2500, food: 900, transport: 400, activities: 700 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 20000, accommodation: 15000, food: 2000, transport: 800, activities: 2200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mehrangarh & the Blue City", morning: "Mehrangarh Fort — Sheesh Mahal, Phool Mahal, and the museum's audio-guided tour.", afternoon: "Walk down through the Blue City lanes below the fort.", evening: "Jaswant Thada marble cenotaph, a short walk from the fort.", stay: "Jodhpur old city", meals: "Mirchi bada street snack (₹30), rooftop dinner overlooking the fort (₹500–₹800)", tips: "Go up early morning for the best light and thinner crowds, especially at the Sheesh Mahal." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["One of India's best-preserved and most heavily-visited forts, with tourist police and steady daytime crowds"],
+      precautions: ["Dress modestly", "Watch footing on the fort's uneven stone ramparts"],
+      soloTips: ["Very comfortable for solo daytime visits given the constant flow of guided tours and visitors"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex and museum during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 21000,
+    mustEat: ["Mirchi bada and makhaniya lassi in Jodhpur's old city", "Rooftop dinner overlooking the fort"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera", "Modest clothing"],
   },
 
 ];

@@ -4312,3 +4312,12 @@ SAFETY_OVERRIDES["chand-baori-abhaneri"] = {
   police: { summary: "Dausa District Police: 100", details: ["Dausa District Police control room: 100 (Abhaneri falls within Dausa district).", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Dausa District Hospital — dial 108 for ambulance", details: ["Dausa District Hospital serves the wider Abhaneri area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["sariska-tiger-reserve"] = {
+  police: { summary: "Alwar District Police: 100", details: ["Alwar District Police control room: 100.", "Forest department staff and safari guides oversee all core-zone access.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alwar District Hospital — dial 108 for ambulance", details: ["Alwar District Hospital serves the wider Sariska area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response to the reserve itself may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["mehrangarh-fort"] = {
+  police: { summary: "Jodhpur City Police: 100", details: ["Jodhpur City Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital is one of Jodhpur's largest government hospitals.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
