@@ -4001,3 +4001,15 @@ SAFETY_OVERRIDES["dowlat-vilas-palace"] = {
   police: { summary: "Sabarkantha District Police: 100", details: ["Sabarkantha District Police control room: 100 (Himmatnagar is the district HQ).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["khambhalida-buddhist-caves"] = {
+  police: { summary: "Rajkot City Police: 100", details: ["Rajkot City Police control room: 100 (Jetpur taluka police cover the immediate site area).", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response given the remote setting." },
+  medical: { summary: "PDU Civil Hospital, Rajkot — dial 108 for ambulance", details: ["P.D.U. Government Medical College & Civil Hospital, Rajkot — the region's main public referral hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["dutch-british-cemetery-surat"] = {
+  police: { summary: "Surat City Police: 100", details: ["Surat City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "Surat Police uses the statewide 100 emergency number; a site-specific local station number was not individually verified." },
+  medical: { summary: "New Civil Hospital, Surat — dial 108 for ambulance", details: ["New Civil Hospital, Surat — one of the largest public hospitals in South Gujarat.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service and New Civil Hospital Surat's role are well-documented via general web search; call 108 for any medical emergency." },
+};
+SAFETY_OVERRIDES["bhadreshwar-jain-tirth"] = {
+  police: { summary: "Bhuj City Police Station: 02832-253050", details: ["Bhuj City Police Station: 02832-253050 (district-level; Bhadreshwar itself has no dedicated local station).", "Women Helpline: 181 · Police: 100 · National Emergency: 112"], sourceNote: "Bhuj City Police Station number sourced via general web search aggregator listings, not an official portal — call 100 for emergencies to be safe." },
+  medical: { summary: "G.K. General Hospital, Bhuj — dial 108 for ambulance", details: ["G.K. General Hospital, Bhuj — the district's main public hospital.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

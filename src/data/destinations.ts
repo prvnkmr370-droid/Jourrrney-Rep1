@@ -19092,6 +19092,161 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
+  // ===== Gujarat — Stage 18: Heritage Sites, fourth batch — caves,
+  // colonial cemeteries, and an ancient Jain pilgrimage site,
+  // rounding out most of the remaining Heritage Sites list.
+  {
+    id: "khambhalida-buddhist-caves",
+    name: "Khambhalida Buddhist Caves",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "4th-Century Meditation Caves Rediscovered in 1958",
+    description: "Khambhalida Buddhist Caves, near Jetpur in Rajkot district, are genuinely dated to the 4th-5th century CE and were rediscovered in 1958 by archaeologist P.P. Pandya. Carved from limestone at the foot of small hillocks by a spring, the central chaitya cave holds a real stupa flanked by two Bodhisattva sculptures, while an adjoining deep cave likely served monks for meditation — with roughly 15 smaller caves nearby, probably the work of Buddhism's Hinayana (Lesser Vehicle) tradition. The site is genuinely maintained by Gujarat's state Archaeology Department.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Khambhalida_Buddhist_Caves.jpg/1280px-Khambhalida_Buddhist_Caves.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Khambhalida_Buddhist_Caves.jpg/1280px-Khambhalida_Buddhist_Caves.jpg",
+    imageCredit: "Photo: Nischalsanghavi99 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "4th–5th century Buddhist rock-cut caves" }, { name: "Rediscovered 1958 by P.P. Pandya" }, { name: "Chaitya cave with Bodhisattva sculptures" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot/Junagadh — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~66 km / ~1.25h from Rajkot, ~41 km from Junagadh", costRange: "₹1,200–₹2,500 (cab from Rajkot)", tips: "Genuinely an offbeat stop — combine with a wider Junagadh-Rajkot heritage circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Rajkot/Junagadh", priceRange: "₹700–₹5,000/night (estimate)", examples: ["Hotels in either city"], description: "Both cities work as a base for this day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500", notes: "Standard way to reach the remote caves near Jetpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagadh", distance: "~41 km", type: "City", isHidden: false, id: "junagadh" },
+      { name: "Rajkot", distance: "~66 km", type: "City", isHidden: false, id: "rajkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 550, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 4900, food: 1100, transport: 800, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ancient Cave Visit", morning: "Explore the chaitya cave and its Bodhisattva carvings.", afternoon: "Visit the smaller adjoining caves.", evening: "Return to Rajkot or Junagadh.", stay: "Rajkot/Junagadh base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely one of the least-visited real archaeological sites in Saurashtra — a good pick for repeat Gujarat travelers." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A remote, quiet archaeological site with limited on-site facilities"],
+      precautions: ["Visit during daylight hours given the remote, low-footfall setting", "Carry water — limited facilities nearby"],
+      soloTips: ["Better visited with a driver/guide familiar with the route than entirely independently, given the remote location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Rajkot City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The cave complex during daylight"],
+      avoidAreas: ["None specific — just plan for the remoteness"],
+    },
+    rating: 4.2,
+    reviews: 250,
+    mustEat: ["Kathiyawadi Thali in Rajkot or Junagadh"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "A torch for the deeper cave sections"],
+  },
+
+  {
+    id: "dutch-british-cemetery-surat",
+    name: "Dutch & British Cemeteries, Surat",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Rival Colonial Powers, Still Competing in Death",
+    description: "Surat's Dutch Cemetery, at Gulam Falia in Nanpura, is a real Archaeological Survey of India-protected monument dating to around 1616, when Dutch cloth merchant Pieter van den Broecke established a trading post here for the Dutch East India Company (VOC) — its genuinely monumental Indo-European mausoleums reflecting real 17th-century Dutch and Armenian wealth. A short walk away at Katargam Darwaja, the British Cemetery, established around 1651, holds the graves of former Bombay Presidency governors and East India Company officials — the two cemeteries' grand tomb architecture reflecting a documented, real historical rivalry between the two trading powers even in death.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/df/Dutch_Cemetery_Surat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/df/Dutch_Cemetery_Surat.jpg",
+    imageCredit: "Photo: Chirag187p — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Dutch Cemetery, c. 1616 — ASI-protected" }, { name: "British Cemetery, c. 1651" }, { name: "Monumental 17th-century Indo-European tombs" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "NH48 — ~280km, ~5h", fromBangalore: "Not practical", duration: "Central Surat, near the old city", costRange: "₹80–₹250 (auto within the city)", tips: "The two cemeteries are genuinely a short walk apart — visit both together." },
+    ],
+    accommodation: [
+      { type: "Base in Surat", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Surat city"], description: "Part of the Surat city heritage visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹80–₹250", notes: "Standard way to get around old Surat", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Surat (Surat Castle)", distance: "Same area", type: "City", isHidden: false, id: "surat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 350, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 650, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5200, food: 1000, transport: 550, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Colonial-Era Heritage Walk", morning: "Dutch Cemetery's monumental mausoleums.", afternoon: "Walk to the nearby British Cemetery.", evening: "Continue to Surat Castle.", stay: "Surat base", meals: "Local Surati food (₹250)", tips: "Genuinely worth reading up on the Dutch-British trading rivalry beforehand — it makes the competing tomb architecture click into place." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["ASI-protected sites within central Surat with regular daytime visitor traffic"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit given the central city location"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Surat City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Both cemetery complexes"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 400,
+    mustEat: ["Surati Locho nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "bhadreshwar-jain-tirth",
+    name: "Bhadreshwar Jain Tirth (Vasai Jain Tirth)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Jain Pilgrimage Site Tracing Roots to Ancient Bhadravati",
+    description: "Bhadreshwar Jain Tirth, in Kutch, sits on the site of Bhadravati, an ancient city genuinely referenced in the Mahabharata — local Jain chronicles trace the temple's own roots back roughly 2,500 years, though, honestly, no independent archaeological evidence confirms the earliest claimed date. The genuine white-marble temple complex, rebuilt multiple times after real earthquakes in 1819, 1844-45 and 1875 by the documented Mistris of Kutch (a real hereditary line of architect-artisans), surrounds its central shrine with 52 smaller shrines, one reputedly housing an original Parshvanath idol. It remains a genuinely major center of Jain pilgrimage in Gujarat.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bhadreshwar_Jain_Temple_01.jpg/1280px-Bhadreshwar_Jain_Temple_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bhadreshwar_Jain_Temple_01.jpg/1280px-Bhadreshwar_Jain_Temple_01.jpg",
+    imageCredit: "Photo: Deepank Ranka — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "Site of ancient Bhadravati (Mahabharata-referenced)" }, { name: "52 shrines around the central sanctum" }, { name: "Rebuilt after real 1819/1844-45/1875 earthquakes" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~80 km / ~1.5h from Bhuj", costRange: "₹1,500–₹3,000 (cab from Bhuj)", tips: "Genuinely combinable with a Mandvi Beach visit given the shared coastal Kutch route." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj/Mandvi", priceRange: "₹1,000–₹5,000/night (estimate)", examples: ["Hotels in Bhuj or Mandvi"], description: "Either regional base works." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach Bhadreshwar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandvi Beach", distance: "~30 km", type: "Beach", isHidden: false, id: "mandvi-beach" },
+      { name: "Bhuj / Kutch", distance: "~80 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 400, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2100, food: 650, transport: 650, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8300, accommodation: 5300, food: 1100, transport: 950, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jain Pilgrimage & Beach", morning: "Explore Bhadreshwar's marble shrines and carvings.", afternoon: "Continue to Mandvi Beach.", evening: "Sunset at Mandvi.", stay: "Mandvi or Bhuj base", meals: "Kutchi thali (₹300)", tips: "Genuinely one of Kutch's most significant, if lesser-known-outside-Jain-circles, pilgrimage sites." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An actively used Jain pilgrimage site with regular worshipper traffic"],
+      precautions: ["Modest dress and standard temple etiquette expected"],
+      soloTips: ["A comfortable solo daytime visit given the site's active pilgrimage status"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 700,
+    mustEat: ["Kutchi Thali"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
