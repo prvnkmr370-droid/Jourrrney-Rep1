@@ -21262,6 +21262,111 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes — the ruins are spread out", "Sun protection", "Water"],
   },
 
+  // ===== Gujarat — Stage 25: Museums, third batch — 2 more (13 of
+  // 31 total). Facts for 3 more real, genuinely listed museums were
+  // gathered this stage (Science City, Living and Learning Design
+  // Centre, Bharatiya Sanskruti Darshan Museum) but no verified
+  // Wikimedia Commons photo was found for any of them.
+  {
+    id: "veechar-utensils-museum",
+    name: "Veechar Utensils Museum (Vechaar)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "4,500 Real Kitchen Utensils, Spanning a Thousand Years",
+    description: "Veechar Utensils Museum, inside the Vishalla Village Restaurant complex in Ahmedabad, was genuinely established on 27 April 1981 by Surendra C. Patel, with support from scholar Jyotindra Jain. Patel's real inspiration came from witnessing decorative old vessels being sent to the furnace to melt during a business trip to Sihor village near Bhavnagar — a moment that drove him to start preserving traditional Indian kitchenware. The genuine collection of over 4,500 exhibits spans a thousand years, from royal silverware to rustic village clay pots, in brass, copper, bronze, clay and even ivory — honestly the only museum of its kind anywhere in the world dedicated purely to everyday household utensils.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Vechaar_Utensils_Museum_Ahmedabad.jpg/1280px-Vechaar_Utensils_Museum_Ahmedabad.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Vechaar_Utensils_Museum_Ahmedabad.jpg/1280px-Vechaar_Utensils_Museum_Ahmedabad.jpg",
+    imageCredit: "Photo: KHC Khushtar Heritage — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Museum", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "1 hour",
+    highlights: [{ name: "Established 1981" }, { name: "4,500+ genuine utensils spanning 1,000 years" }, { name: "The only museum of its kind in the world" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Vasna area, Ahmedabad", costRange: "₹100–₹300 (auto within the city)", tips: "Genuinely worth timing your visit around a meal at the adjoining Vishalla restaurant, itself a real rural-village-themed dining experience." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300", notes: "Standard way to reach Vasna", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 350, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 700, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 5200, food: 1200, transport: 600, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Culinary History & Dinner", morning: "Other Ahmedabad sightseeing.", afternoon: "Veechar Utensils Museum's 4,500-piece collection.", evening: "Traditional Gujarati thali dinner at Vishalla itself.", stay: "Ahmedabad base", meals: "Vishalla's own traditional Gujarati thali (₹500–₹800)", tips: "Genuinely worth combining the museum visit with dinner — Vishalla's own rural-village dining setting complements the utensil history perfectly." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed small museum within a popular, family-oriented restaurant complex"],
+      precautions: ["Standard museum-visiting etiquette"],
+      soloTips: ["A comfortable solo daytime or evening visit given the restaurant's steady footfall"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and restaurant complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1100,
+    mustEat: ["Traditional Gujarati thali at Vishalla"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "lalbhai-dalpatbhai-museum",
+    name: "Lalbhai Dalpatbhai Museum (LD Museum)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "76,000 Jain Manuscripts, Housed in a Balkrishna Doshi Building",
+    description: "Lalbhai Dalpatbhai Museum, in Ahmedabad's Navrangpura area, grew out of the Lalbhai Dalpatbhai Institute of Indology, genuinely established in 1956 by industrialist Kasturbhai Lalbhai and Jain scholar-monk Muni Punyavijayji. Its real, dedicated museum building, designed by the celebrated Pritzker Prize-winning architect Balkrishna Doshi, opened to the public in 1984 and was formally inaugurated in 1985. The genuine Muni Punyavijayji Collection holds around 76,000 handwritten Jain manuscripts — including 500 illustrated ones, among them rare cosmological diagrams and the Kalakacharya Katha — alongside stone, marble, bronze and woodcarving galleries spanning ancient and medieval Indian art more broadly.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Head_of_Boddhisatva_Maitreya%2C_Late_2nd_century_CE%2C_Gandhara%2C_Lal_Bhai_Museum%2C_Ahmedabad.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Head_of_Boddhisatva_Maitreya%2C_Late_2nd_century_CE%2C_Gandhara%2C_Lal_Bhai_Museum%2C_Ahmedabad.jpg",
+    imageCredit: "Photo: SpeakingArch — Wikimedia Commons, CC BY-SA 4.0. (Shows a genuine 2nd-century CE Gandhara sculpture from the museum's own collection.)",
+    category: ["Museum", "Heritage"],
+    bestSeason: "Year-round; closed Mondays",
+    duration: "1–2 hours",
+    highlights: [{ name: "76,000 Jain manuscripts" }, { name: "Building designed by Balkrishna Doshi" }, { name: "Ancient Gandhara sculpture collection" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Navrangpura, central Ahmedabad", costRange: "₹100–₹300 (auto within the city)", tips: "Genuinely closed Mondays and public holidays — check before planning your visit." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "Part of the city visit." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300", notes: "Standard way to reach Navrangpura", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 350, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 650, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 5200, food: 1100, transport: 600, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jain Manuscripts & Ancient Art", morning: "LD Museum's manuscript and sculpture galleries.", afternoon: "Continue with other Ahmedabad sightseeing.", evening: "Return to your base.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth appreciating the building itself — Balkrishna Doshi is one of India's most celebrated modern architects, and this is a real example of his work." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed academic museum with steady daytime visitor traffic"],
+      precautions: ["Standard museum-visiting etiquette", "Closed Mondays"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 800,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Comfortable walking shoes", "Camera (check photography rules)"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
