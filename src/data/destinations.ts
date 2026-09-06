@@ -18303,6 +18303,319 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sun protection", "Warm layers for winter mornings", "Binoculars", "Sufficient water for remote-area visits"],
   },
 
+  // ===== Gujarat — Stage 15: Heritage Sites, first batch (6 of ~50
+  // listed on gujarattourism.com/heritage-sites.html — stepwells and
+  // flagship monuments). Facts corroborated against Wikipedia/UNESCO
+  // and independent web search beyond the site's own brief listing.
+  {
+    id: "rani-ki-vav",
+    name: "Rani ki Vav (The Queen's Stepwell)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A UNESCO Stepwell Built as an Inverted Temple to Water",
+    description: "Rani ki Vav, in Patan, was genuinely commissioned around 1060 CE by Queen Udayamati as a memorial to her husband, the Solanki king Bhimadeva I — a real UNESCO World Heritage Site since 2014, recognized as an exceptional feat of groundwater-management engineering. Designed as an inverted temple to water, its seven levels of stairs descend past more than 500 major sculptures and over a thousand minor ones, blending religious, mythological and secular imagery. Buried under silt and largely forgotten by the 1890s, it was rediscovered in the 1940s and restored by the Archaeological Survey of India in the 1980s.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rani_ki_vav_-_Patan_-_Gujarat_-_DSC002.jpg/1280px-Rani_ki_vav_-_Patan_-_Gujarat_-_DSC002.jpg",
+    ],
+    imageCredit: "Photos: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "UNESCO"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "UNESCO World Heritage Site (2014)" }, { name: "Built c. 1060 CE as a memorial by Queen Udayamati" }, { name: "1,500+ carved sculptural panels" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~130 km / ~2.5h from Ahmedabad", costRange: "₹2,000–₹4,000 (cab from Ahmedabad)", tips: "Genuinely combinable with Modhera Sun Temple on the same North Gujarat heritage circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Patan/Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels in Patan town", "Ahmedabad hotels for a day trip"], description: "Most visitors day-trip from Ahmedabad; Patan itself has basic options." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Patan", notes: "Standard way to get around", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Modhera Sun Temple", distance: "~35 km", type: "Temple", isHidden: false, id: "modhera-sun-temple" },
+      { name: "Ahmedabad", distance: "~130 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 600, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1100, transport: 900, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patan Heritage Day", morning: "Rani ki Vav — descend all seven levels for the full sculptural detail.", afternoon: "Continue to Modhera Sun Temple.", evening: "Return to Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹300)", tips: "Genuinely one of India's most photogenic monuments — go with time to actually study the carvings, not just snap photos." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed, actively conserved UNESCO site with steady visitor and ASI staff presence"],
+      precautions: ["Steep, uneven steps — watch your footing on the descent"],
+      soloTips: ["A comfortable solo daytime visit given the site's steady tourist traffic and formal ASI management"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Patan District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell complex and ASI-managed grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 3400,
+    mustEat: ["Local Gujarati food in Patan"],
+    packingTips: ["Comfortable walking shoes for the steps", "Camera", "Sun protection"],
+  },
+
+  {
+    id: "sarkhej-roza",
+    name: "Sarkhej Roza",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 15th-Century Sufi Retreat That Fused Islamic and Hindu Design",
+    description: "Sarkhej Roza, on Ahmedabad's outskirts, genuinely began as a retreat for the Sufi saint Shaikh Ahmed Khattu Ganj Baksh, a friend and advisor to Sultan Ahmed Shah. After the saint's death in 1445, Ahmed Shah ordered a mosque and mausoleum built in his memory, completed under his successor, with Sultan Mahmud Begada later adding a central tank and pavilions in the late 15th century, turning it into a royal summer retreat. Its real 32-acre complex, designed by Persian brothers Azam and Muazzam Khan, is a genuine landmark of the Indo-Saracenic style — fusing Persian Islamic influence with Hindu and Jain architectural elements — and remains an active dargah visited by both Hindu and Muslim communities today.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sarkhej_Roza%2C_Ahmedabad_-_3.JPG/1280px-Sarkhej_Roza%2C_Ahmedabad_-_3.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sarkhej_Roza%2C_Ahmedabad_-_3.JPG/1280px-Sarkhej_Roza%2C_Ahmedabad_-_3.JPG",
+    imageCredit: "Photo: Maulik Joshi — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "15th-century Sufi retreat & dargah" }, { name: "Indo-Saracenic architecture" }, { name: "17-acre Ahmed Sar Lake" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~8 km / ~20 min from central Ahmedabad", costRange: "₹100–₹300 (auto/cab)", tips: "Genuinely an easy half-day add-on to an Ahmedabad heritage circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "A short trip from the city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from central Ahmedabad", notes: "Standard way to reach Sarkhej", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~8 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 600, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sufi Heritage Visit", morning: "Explore Sarkhej Roza's mosque, mausoleum and pavilions.", afternoon: "Walk the lakeside grounds.", evening: "Return to central Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "Genuinely worth a quiet, unhurried visit — the site's blend of Persian and Hindu design rewards close attention." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["An actively visited dargah and heritage complex with regular community foot traffic"],
+      precautions: ["Modest dress and standard etiquette expected at the active dargah"],
+      soloTips: ["A comfortable solo daytime visit given the steady local visitor presence"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The complex and lakeside grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1600,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "modhera-sun-temple",
+    name: "Modhera Sun Temple",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "An 11th-Century Temple Built to Catch the Equinox Dawn",
+    description: "Modhera Sun Temple, built in 1026-27 CE under Bhima I of the Solanki dynasty, was genuinely raised both as thanksgiving and political assertion shortly after Bhima I defended Gujarat against Mahmud Ghazni's 1025 CE raid on Somnath. Built in yellow sandstone in the intricately-carved Maru-Gurjara style, its shrine, assembly hall and stepped water tank (kunda) are real, precisely aligned so that on the equinox, the rising sun runs straight down the temple's spine to illuminate the sanctum — a genuine feat of 11th-century architectural astronomy.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sun_Temple%2C_Modhera_08.jpg/1280px-Sun_Temple%2C_Modhera_08.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sun_Temple%2C_Modhera_08.jpg/1280px-Sun_Temple%2C_Modhera_08.jpg",
+    imageCredit: "Photo: Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February; around the equinoxes (Mar/Sep) for the solar alignment",
+    duration: "Half day",
+    highlights: [{ name: "Built 1026-27 CE by Bhima I" }, { name: "Equinox sunrise alignment" }, { name: "Maru-Gurjara stone carving" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~100 km / ~2h from Ahmedabad", costRange: "₹1,800–₹3,500 (cab from Ahmedabad)", tips: "Genuinely worth pairing with Rani ki Vav on the same North Gujarat day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Mehsana/Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels in Mehsana town", "Ahmedabad hotels for a day trip"], description: "Most visitors day-trip from Ahmedabad." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,800–₹3,500 from Ahmedabad", notes: "Standard way to reach Modhera", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rani ki Vav, Patan", distance: "~35 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 350, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1900, food: 650, transport: 600, activities: 450 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8100, accommodation: 5000, food: 1100, transport: 900, activities: 1100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sun Temple & Stepwell", morning: "Modhera Sun Temple — the shrine, assembly hall and stepped kunda.", afternoon: "Continue to Rani ki Vav in Patan.", evening: "Return to Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹300)", tips: "A genuine light-and-sound show runs some evenings — check current schedule before planning your visit timing." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-managed ASI heritage site with steady visitor traffic"],
+      precautions: ["Standard heritage-site visiting etiquette"],
+      soloTips: ["A comfortable solo daytime visit"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Mehsana District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2100,
+    mustEat: ["Local Gujarati food near Mehsana"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Check the light-and-sound show schedule"],
+  },
+
+  {
+    id: "adi-kadi-vav-navghan-kuwo",
+    name: "Adi Kadi Vav & Navghan Kuwo",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Two Stepwells Carved From Single Blocks of Stone, Inside a Fort",
+    description: "Adi Kadi Vav and Navghan Kuwo, both inside Junagadh's Uparkot Fort, are genuinely unusual stepwells hewn from single stone masses — a form found almost nowhere else in Gujarat. Adi Kadi Vav's 120 rock-cut steps carry a real, still-remembered local legend of two young women, Adi and Kadi, said to have been sacrificed to find water here — locals still tie cloth and bangles on a nearby tree in their memory. Navghan Kuwo, built around 1026 CE and 52m deep, has an unusual spiral staircase winding around the well shaft itself; its water genuinely helped Uparkot Fort withstand long historical sieges.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg/1280px-Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg/1280px-Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg/1280px-Adi_Kadi_Vav_-_Junagadh_-_Gujarat_-_001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Navghan_Kuvo_02.jpg/1280px-Navghan_Kuvo_02.jpg",
+    ],
+    imageCredit: "Photos: Snehrashmi, Bernard Gagnon — Wikimedia Commons, CC BY-SA 3.0/4.0.",
+    category: ["Heritage"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Rock-cut, single-stone stepwells" }, { name: "The Adi-Kadi local legend" }, { name: "Navghan Kuwo's spiral shaft stairs (c. 1026 CE)" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Junagadh — long haul", fromMumbai: "Via Junagadh — long haul", fromBangalore: "Not practical", duration: "Within Uparkot Fort, central Junagadh", costRange: "Included with Uparkot Fort entry", tips: "Both stepwells sit inside Uparkot Fort — visit them as part of the same fort tour, not as a separate trip." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh", priceRange: "₹700–₹5,000/night (estimate)", examples: ["Hotels across Junagadh city"], description: "Part of the Uparkot Fort/Junagadh city visit." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Both stepwells are within walking distance inside Uparkot Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagadh (Uparkot Fort)", distance: "Same complex", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 550, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1700, food: 600, transport: 350, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7300, accommodation: 4400, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Uparkot Fort Stepwells", morning: "Explore Adi Kadi Vav's rock-cut steps.", afternoon: "Continue to Navghan Kuwo's spiral stairway within the same fort.", evening: "Continue exploring the rest of Uparkot Fort.", stay: "Junagadh base", meals: "Kathiyawadi thali (₹250)", tips: "Genuinely worth a guide here to get the Adi-Kadi legend and Navghan Kuwo's siege history properly explained." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Located within the well-visited Uparkot Fort complex"],
+      precautions: ["Steep, uneven, unrailed rock-cut steps — watch your footing closely"],
+      soloTips: ["A comfortable solo daytime visit given the fort's steady tourist traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex during daylight"],
+      avoidAreas: ["The unrailed step edges, especially in low light"],
+    },
+    rating: 4.3,
+    reviews: 900,
+    mustEat: ["Kathiyawadi Thali in Junagadh"],
+    packingTips: ["Sturdy, grippy footwear for the rock-cut steps", "A torch for the deeper sections"],
+  },
+
+  {
+    id: "bai-harir-ni-vav",
+    name: "Bai Harir Ni Vav (Dada Hari Stepwell)",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Stepwell Built by and Named for a Royal Harem's Female Superintendent",
+    description: "Bai Harir Ni Vav, in Ahmedabad's Asarwa area, was genuinely built in 1499-1500 for Bai Harir Sultana (also known as Anar Bai), the real superintendent of Sultan Mahmud Begada's royal harem — a woman of documented standing and respect in the Sultanate court. The five-storey-deep, octagonal-shafted stepwell is built in sandstone in the Solanki style, its lavish, sensuous carvings genuinely showing the hand of Hindu artisans working within an Islamic patron's commission — alongside an adjoining mosque and mausoleum.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Dada_Hari_ni_Vav_-_01.jpg/1280px-Dada_Hari_ni_Vav_-_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Dada_Hari_ni_Vav_-_01.jpg/1280px-Dada_Hari_ni_Vav_-_01.jpg",
+    imageCredit: "Photo: Mehulbhadani — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "Year-round",
+    duration: "30–45 minutes",
+    highlights: [{ name: "Built 1499-1500 for Bai Harir Sultana" }, { name: "Five-storey octagonal-shaft stepwell" }, { name: "Hindu-artisan carving under a Sultanate commission" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~5 km / ~15 min from central Ahmedabad", costRange: "₹80–₹200 (auto)", tips: "Genuinely combinable with a broader Ahmedabad old-city heritage walk given its short distance from the centre." },
+    ],
+    accommodation: [
+      { type: "Base in Ahmedabad", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Hotels across Ahmedabad city"], description: "A short trip within the city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹80–₹200 from central Ahmedabad", notes: "Standard way to reach Asarwa", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7700, accommodation: 5200, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Stepwell & Mosque Complex", morning: "Explore the five-storey stepwell's carved galleries.", afternoon: "Visit the adjoining mosque and mausoleum.", evening: "Return to central Ahmedabad.", stay: "Ahmedabad base", meals: "Local Gujarati food (₹250)", tips: "A genuinely underrated stop compared to Adalaj — quieter, with equally fine carving." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quieter, less-crowded heritage stepwell than some of Ahmedabad's bigger-name sites"],
+      precautions: ["Steep steps — watch your footing"],
+      soloTips: ["A comfortable solo daytime visit given its short distance from central Ahmedabad"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Ahmedabad City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell and mosque complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Local Gujarati food in Ahmedabad"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "lakhpat-fort",
+    name: "Lakhpat Fort",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Ghost-Town Fort on the India-Pakistan Border, With a UNESCO-Honoured Gurudwara",
+    description: "Lakhpat Fort, at Kutch's northwestern edge facing the Great Rann toward Pakistan, was genuinely a thriving 18th-century trade hub named for Rao Lakhpatji — until the Indus River shifted course in the 19th century and collapsed its trade routes, leaving the walled town largely abandoned, a real and atmospheric \"ghost town\" today. Within its walls sits a genuine 16th-century Sikh gurdwara marking two documented visits by Guru Nanak during his early-16th-century missionary journeys (Udasis) — its well-preserved relics, including a palanquin and manuscripts, earned the gurdwara UNESCO's Asia-Pacific Heritage Award for Culture Heritage Conservation in 2004.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/The_last_Bastion.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e8/The_last_Bastion.jpg",
+    imageCredit: "Photo: Bijal M — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual", "Offbeat"],
+    bestSeason: "November – February",
+    duration: "Half day",
+    highlights: [{ name: "18th-century trade town, now atmospheric ruins" }, { name: "16th-century Sikh gurdwara, UNESCO award 2004" }, { name: "Documented Guru Nanak visits" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~135 km / ~2.5-3h from Bhuj", costRange: "₹2,500–₹4,500 (cab from Bhuj)", tips: "This is a genuinely remote, sensitive border-area visit — carry ID and check for any current access restrictions before setting out." },
+    ],
+    accommodation: [
+      { type: "Base in Bhuj", priceRange: "₹1,200–₹5,000/night (estimate)", examples: ["Hotels in central Bhuj"], description: "The practical regional base — no real accommodation infrastructure within Lakhpat itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹2,500–₹4,500 from Bhuj", notes: "Standard way to reach this remote fort town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhuj / Kutch", distance: "~135 km", type: "City", isHidden: false, id: "kutch" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 350, transport: 450, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4100, accommodation: 2300, food: 650, transport: 750, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9200, accommodation: 5800, food: 1100, transport: 1100, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ghost Town & Gurudwara", morning: "Walk the abandoned town's walls and ruins.", afternoon: "Visit the historic gurdwara and its preserved relics.", evening: "Return to Bhuj (long drive — start early).", stay: "Bhuj base", meals: "Kutchi thali (₹300)", tips: "This is a genuinely full-day round trip from Bhuj given the distance — start early and don't underestimate the drive time." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A remote border-area site — genuinely worth the trip, but plan carefully given the distance and setting"],
+      precautions: ["Carry valid ID given the sensitive border-proximity location", "Check current access conditions before traveling, as border-area rules can change", "Very limited facilities on-site — carry water and food"],
+      soloTips: ["Better visited as part of an organized Kutch tour or with a hired driver familiar with the route, rather than independently, given the remoteness"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Bhuj City Police Station", number: "02832-253050" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort and gurdwara grounds during daylight"],
+      avoidAreas: ["Traveling after dark in this remote border area"],
+    },
+    rating: 4.3,
+    reviews: 500,
+    mustEat: ["Kutchi Thali (carry your own food/water as a backup)"],
+    packingTips: ["Valid ID", "Sufficient water and snacks", "Comfortable walking shoes for the ruins", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
