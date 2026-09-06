@@ -4289,3 +4289,12 @@ SAFETY_OVERRIDES["naulakha-palace-gondal"] = {
   police: { summary: "Gondal Town Police: 100", details: ["Gondal Town Police control room: 100.", "The palace/museum complex has its own on-site staff during visiting hours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Gondal General Hospital — dial 108 for ambulance", details: ["Gondal's general hospital serves the town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["ashoka-rock-edicts-girnar"] = {
+  police: { summary: "Junagadh City Police: 100", details: ["Junagadh City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Junagadh Civil Hospital — dial 108 for ambulance", details: ["Junagadh Civil Hospital serves this area of Junagadh town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["amul-dairy-anand"] = {
+  police: { summary: "Anand Town Police: 100", details: ["Anand Town Police control room: 100.", "The plant has its own security and visitor-management staff for guided tours.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Anand Civil Hospital — dial 108 for ambulance", details: ["Anand Civil Hospital serves the town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

@@ -16611,7 +16611,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual", "Wildlife"],
     bestSeason: "November – February",
     duration: "1–2 days",
-    highlights: [{ name: "Uparkot Fort (319 BCE, Mauryan-era)", id: "uparkot-fort" }, { name: "Ashoka's Rock Edicts on Girnar" }, { name: "866 temples atop Girnar Hill" }, { name: "Gateway to Gir National Park" }, { name: "Adi Kadi Vav & Navghan Kuvo stepwells" }],
+    highlights: [{ name: "Uparkot Fort (319 BCE, Mauryan-era)", id: "uparkot-fort" }, { name: "Ashoka's Rock Edicts on Girnar", id: "ashoka-rock-edicts-girnar" }, { name: "866 temples atop Girnar Hill" }, { name: "Gateway to Gir National Park" }, { name: "Adi Kadi Vav & Navghan Kuvo stepwells" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "~2h (via connection) to nearest airport (Rajkot/Diu)", fromMumbai: "~1h30m (via connection)", fromBangalore: "Not practical — long connection", duration: "~1.5–2h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Rajkot (~100 km) is the nearest well-connected airport; Junagadh itself has no major commercial airport." },
       { mode: "Train", icon: "🚂", fromDelhi: "~20–22h", fromMumbai: "~12–14h", fromBangalore: "Not practical", duration: "12–22h", costRange: "₹400–₹2,000", tips: "Junagadh Junction connects to Rajkot and Ahmedabad." },
@@ -16630,6 +16630,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Somnath Temple", distance: "~85 km", type: "Temple", isHidden: true, id: "somnath-temple" },
       { name: "Girnar Hill", distance: "Adjoining the city", type: "Pilgrimage Trek", isHidden: true, id: "girnar-hill" },
       { name: "Uparkot Fort", distance: "~1 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
+      { name: "Ashoka Rock Edicts", distance: "~4 km", type: "Heritage", isHidden: true, id: "ashoka-rock-edicts-girnar" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 550, food: 350, transport: 250, activities: 150 },
@@ -22745,6 +22746,117 @@ export const DESTINATIONS: Destination[] = [
     reviews: 950,
     mustEat: ["Kathiyawadi thali in Gondal/Rajkot"],
     packingTips: ["Comfortable walking shoes", "Camera (check restrictions for the car collection)"],
+  },
+
+  {
+    id: "ashoka-rock-edicts-girnar",
+    name: "Ashoka Rock Edicts, Girnar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "250 BCE Inscriptions of Emperor Ashoka, Rediscovered in 1822",
+    description: "At the foot of Girnar Hill sits a large boulder carrying 14 of Emperor Ashoka's Major Rock Edicts, inscribed around 250 BCE in Brahmi script and Prakrit language — real, dateable words from one of ancient India's most consequential rulers, addressing human and animal welfare, care for the elderly and the learned, tree planting, and public medicine. Rediscovered by James Tod in 1822, the edicts were carved to spread ideas of tolerance and non-violence to people of any faith, not just Buddhism. The same rock later attracted two further inscriptions: the Girnar Prasasti of the Saka ruler Rudradaman I (c. 150 CE), the earliest known long inscription in polished Sanskrit, praising the repair of the nearby Sudarshan Lake, and a similar dedication by the Gupta emperor Skandagupta around 457 CE — making this single boulder a genuine, layered record spanning roughly 700 years of Indian history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ashoka%27s_Major_Rock_Edict%2C_Girnar_Gujarat_001.jpg/1280px-Ashoka%27s_Major_Rock_Edict%2C_Girnar_Gujarat_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ashoka%27s_Major_Rock_Edict%2C_Girnar_Gujarat_001.jpg/1280px-Ashoka%27s_Major_Rock_Edict%2C_Girnar_Gujarat_001.jpg",
+    imageCredit: "Photo: Snehrashmi — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "14 Major Rock Edicts of Emperor Ashoka, inscribed c. 250 BCE in Brahmi script" },
+      { name: "Rediscovered by James Tod in 1822" },
+      { name: "Also carries Rudradaman I's Girnar Prasasti (c. 150 CE), an early masterwork of Sanskrit inscription" },
+      { name: "A third inscription added by Gupta emperor Skandagupta around 457 CE" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48 to Rajkot then NH27/SH to Junagadh", fromMumbai: "~470 km via NH48/NH27", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Junagadh or Rajkot, then a short local ride", costRange: "₹100–300 by auto within Junagadh town", tips: "Sits right at the base of the Girnar Hill climb — easy to combine with the start or end of that pilgrimage route." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh town", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Junagadh town guesthouses", "Junagadh mid-range hotels"], description: "Any Junagadh town hotel works for this brief but historically dense stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Junagadh town", notes: "Standard way to reach the site, near the base of Girnar Hill", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Girnar Hill", distance: "Adjoining", type: "Pilgrimage Trek", isHidden: true, id: "girnar-hill" },
+      { name: "Junagadh", distance: "~4 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1500, transport: 800, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagadh Ancient History Circuit", morning: "Ashoka Rock Edicts, at the base of Girnar Hill.", afternoon: "Uparkot Fort and the Buddhist caves.", evening: "Return to Junagadh town.", stay: "Junagadh town", meals: "Kathiyawadi thali (₹200–350)", tips: "A guide or a good info panel genuinely helps here — the Brahmi/Prakrit script isn't legible to most visitors without translation context." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, regularly-visited heritage site with steady daytime footfall, right by the Girnar pilgrimage route"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its location right by the Girnar climb's base and steady visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The edicts enclosure during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 650,
+    mustEat: ["Kathiyawadi thali in Junagadh town"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "amul-dairy-anand",
+    name: "Amul Dairy, Anand",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "The Free Factory Tour Behind India's White Revolution",
+    description: "Amul Dairy, in Anand, traces back to the Kaira District Co-operative Milk Producers' Union, registered on 1 December 1946 as a genuine response by local farmers to exploitation by the sole existing dairy trader in the area. Under Dr Verghese Kurien — remembered as the \"Father of the White Revolution\" and \"Milkman of India\" — the cooperative model pioneered here became the template for Operation Flood, which made India the world's largest milk producer. A free, guided two-hour factory tour walks visitors through the butter and milk-powder plant's cleaning, fat-separation, standardisation and packaging lines, opening with a real 20-minute history film. The complex also houses the Dr V. Kurien Museum, inaugurated 26 November 2000 to mark his 80th birthday, alongside Amul parlours — together making this one of India's few genuine industrial-tourism destinations built around agricultural cooperation rather than a monument or landscape.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Amul_factory.jpg/1280px-Amul_factory.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Amul_factory.jpg/1280px-Amul_factory.jpg",
+    imageCredit: "Photo: Balajijagadesh — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Culture"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Free, guided two-hour factory tour of the butter and milk-powder plant" },
+      { name: "Founded 1946 as the Kaira District Co-operative, the model behind Operation Flood" },
+      { name: "Dr V. Kurien Museum, honoring the 'Father of the White Revolution'" },
+      { name: "Amul parlours on-site for tasting the cooperative's own products" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~980 km via NH48", fromMumbai: "~470 km via NH48", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Vadodara or Ahmedabad, then ~65-75 km by road", costRange: "₹1,200–₹2,500 by cab from Vadodara or Ahmedabad", tips: "Book the factory tour slot in advance where possible — group sizes and timings are managed by the plant." },
+    ],
+    accommodation: [
+      { type: "Base in Anand or Vadodara", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Anand town hotels", "Vadodara city hotels"], description: "Anand has basic stays; Vadodara offers a wider range as a day-trip base." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Anand town", notes: "Standard way to reach the plant from Anand's town centre or railway station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vadodara", distance: "~65 km", type: "City", isHidden: false, id: "vadodara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2000, food: 600, transport: 600, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 4500, food: 1500, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Anand Dairy Day Trip", morning: "Drive from Vadodara or Ahmedabad to Anand.", afternoon: "Amul Dairy factory tour and Dr V. Kurien Museum.", evening: "Return to base city.", stay: "Vadodara or Ahmedabad", meals: "Amul ice cream/products on-site, local Gujarati food (₹200–350)", tips: "Genuinely interesting even for non-specialists — the tour explains the cooperative model as much as the dairy technology itself." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-organized, staffed industrial-tourism site with structured group tours"],
+      precautions: ["Follow factory safety/hygiene instructions given during the guided tour", "Photography may be restricted inside parts of the plant"],
+      soloTips: ["Comfortable for solo visits given the tour's structured, staff-guided format"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Anand Town Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The plant tour route and museum during scheduled hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1900,
+    mustEat: ["Amul ice cream and dairy products on-site"],
+    packingTips: ["Comfortable walking shoes", "Camera (check restrictions inside the plant)"],
   },
 
 ];
