@@ -21632,6 +21632,175 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
+  {
+    id: "khapra-kodiya-caves",
+    name: "Khapra Kodiya Caves",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "Ashoka-Era Rock-Cut Monk Chambers, the Oldest of Junagadh's Buddhist Caves",
+    description: "Khapra Kodiya is the oldest and plainest of the three Junagadh Buddhist Cave groups, chiselled out of solid rock around the 3rd–4th century BCE, during or soon after the era of Emperor Ashoka. Unlike a natural cave, every chamber here was cut by hand into a western wing (with water tanks for the monks) and an L-shaped wing believed to have sheltered them through the monsoon. Water seepage eventually damaged the rock, and tradition holds the resident monks relocated toward Maharashtra afterward and carved more elaborate caves there. Later quarrying at the site has damaged the lower portions, so only the top storey survives clearly visible today. It sits just outside Uparkot Fort, by the site of the old Sudarshan Lake, and is usually visited together with the fort and the nearby Baba Pyare Caves.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Khapara_Kodiya_Caves_-_Frontside.jpg/1280px-Khapara_Kodiya_Caves_-_Frontside.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Khapara_Kodiya_Caves_-_Frontside.jpg/1280px-Khapara_Kodiya_Caves_-_Frontside.jpg",
+    imageCredit: "Photo: Kuldipem — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "One of the oldest rock-cut monastic sites in Gujarat, dated to Ashoka's era (3rd–4th century BCE)" },
+      { name: "Hand-chiselled chambers rather than a natural cave — a western wing of water tanks and an L-shaped monsoon-shelter wing" },
+      { name: "Sits right beside the historic Sudarshan Lake site, just outside Uparkot Fort" },
+      { name: "Part of the three-site Junagadh Buddhist Cave Group along with Baba Pyare and Uparkot Caves" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48 to Rajkot then NH27/SH to Junagadh", fromMumbai: "~470 km via NH48/NH27", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Junagadh or Rajkot, then a short local ride", costRange: "₹100–300 by auto from Junagadh town", tips: "Combine with Uparkot Fort and Baba Pyare Caves — all within walking distance of each other." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh town", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Junagadh town guesthouses", "Junagadh mid-range hotels"], description: "Either works for this short heritage stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves; walkable from Uparkot Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Uparkot Fort", distance: "~0.5 km", type: "Heritage", isHidden: false },
+      { name: "Baba Pyare Caves", distance: "~1 km", type: "Heritage", isHidden: true, id: "baba-pyare-caves" },
+      { name: "Junagadh", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 300, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 5000, food: 1500, transport: 800, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagadh's Ancient Buddhist Heritage", morning: "Uparkot Fort.", afternoon: "Khapra Kodiya and Baba Pyare Caves.", evening: "Return to Junagadh town.", stay: "Junagadh town", meals: "Local Kathiyawadi thali (₹200–350)", tips: "A plain but genuinely ancient site — go for the historical weight, not visual grandeur." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A daytime heritage site with regular local and tourist footfall, right by Uparkot Fort"],
+      precautions: ["Wear comfortable footwear for uneven rock-cut steps", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given proximity to the fort and town"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort and caves complex during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 300,
+    mustEat: ["Kathiyawadi thali in Junagadh town"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera"],
+  },
+
+  {
+    id: "baba-pyare-caves",
+    name: "Baba Pyare Caves",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A 2,000-Year-Old Cliffside Monastery Shared by Buddhist Monks and Jain Ascetics",
+    description: "The Baba Pyare (Bava Pyara) Caves were cut into a 45-metre-high rock face during the Satavahana period, around the 1st–2nd century AD, with a distinctive Graeco-Scythian architectural influence. The 7th-century Chinese pilgrim Xuanzang is believed to have referenced the region's Buddhist establishments during his travels here. Archaeologist James Burgess documented that the caves, originally built for Buddhist bhikkhus, were later occupied by Jain ascetics — leaving behind both Buddhist and Jain carvings side by side, an unusual shared religious history. The complex has 13 rooms across three storeys: a northern group of four caves and a southeastern group with a chaitya (prayer hall) and a meditation court. It lies about a kilometre from Uparkot Fort in Junagadh's Mullawada locality, forming part of the same Buddhist Cave Group as Khapra Kodiya and the Uparkot Caves.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bava_Pyara_caves_001.jpg/1280px-Bava_Pyara_caves_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bava_Pyara_caves_001.jpg/1280px-Bava_Pyara_caves_001.jpg",
+    imageCredit: "Photo: Ashok modhvadia — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "November – February",
+    duration: "45 minutes",
+    highlights: [
+      { name: "Rock-cut across three storeys, 45 metres up a cliff face, dating to the Satavahana era (1st–2nd century AD)" },
+      { name: "A rare site shared by both Buddhist and Jain religious history — Buddhist in origin, later home to Jain ascetics" },
+      { name: "13 rooms including a chaitya (prayer hall) and a dedicated meditation court" },
+      { name: "Documented by 19th-century archaeologist James Burgess and linked to Chinese pilgrim Xuanzang's 7th-century travels" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~950 km via NH48 to Rajkot then NH27/SH to Junagadh", fromMumbai: "~470 km via NH48/NH27", fromBangalore: "~1,150 km via NH48", duration: "Fly/train to Junagadh or Rajkot, then a short local ride", costRange: "₹100–300 by auto from Junagadh town", tips: "Visit alongside Uparkot Fort and Khapra Kodiya Caves, both a short walk away." },
+    ],
+    accommodation: [
+      { type: "Base in Junagadh town", priceRange: "₹800–₹4,000/night (estimate)", examples: ["Junagadh town guesthouses", "Junagadh mid-range hotels"], description: "Either works for this short heritage stop." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves via Mullawada locality; walkable from Uparkot Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Uparkot Fort", distance: "~1 km", type: "Heritage", isHidden: false },
+      { name: "Khapra Kodiya Caves", distance: "~1 km", type: "Heritage", isHidden: true, id: "khapra-kodiya-caves" },
+      { name: "Junagadh", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 300, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 5000, food: 1500, transport: 800, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagadh's Ancient Buddhist Heritage", morning: "Uparkot Fort.", afternoon: "Baba Pyare and Khapra Kodiya Caves.", evening: "Return to Junagadh town.", stay: "Junagadh town", meals: "Local Kathiyawadi thali (₹200–350)", tips: "Look closely for the mix of Buddhist and Jain carvings — the site's most distinctive feature." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A daytime heritage site with regular local and tourist footfall, close to Uparkot Fort"],
+      precautions: ["Wear comfortable footwear for cliffside rock-cut steps", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given proximity to the fort and town"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Junagadh City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The caves complex during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 310,
+    mustEat: ["Kathiyawadi thali in Junagadh town"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera"],
+  },
+
+  {
+    id: "kirti-toran-vadnagar",
+    name: "Kirti Toran, Vadnagar",
+    state: "Gujarat",
+    hidden: true,
+    tagline: "A Rare Surviving Pair of 12th-Century Solanki-Era Victory Gateways",
+    description: "Kirti Toran is a pair of ornamental gateways in Vadnagar, Mehsana district, built around the 12th century in the Maru-Gurjara (Solanki-period) architectural style — one of the very few such torana pairs to survive intact in Gujarat. Roughly 40 feet tall, its red-and-yellow sandstone columns support a carved arch facing east, decorated with figures of dancing girls, elephants, and hunting or battle scenes. It is generally believed to commemorate a war victory, though the exact event is debated among historians. The gateway is maintained by the Archaeological Survey of India, and its better-preserved eastern arch has in recent years been used as a visual symbol representing Gujarat's heritage.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vadnagar%27s_Kirti_Toran_full_shot_with_beautiful_clouds.JPG/1280px-Vadnagar%27s_Kirti_Toran_full_shot_with_beautiful_clouds.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vadnagar%27s_Kirti_Toran_full_shot_with_beautiful_clouds.JPG/1280px-Vadnagar%27s_Kirti_Toran_full_shot_with_beautiful_clouds.JPG",
+    imageCredit: "Photo: Purvang.d — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "One of the rare surviving Solanki-period (12th-century) toran gateway pairs in Gujarat" },
+      { name: "~40-foot sandstone columns carved with dancing girls, elephants, and battle scenes" },
+      { name: "ASI-protected monument, believed to commemorate a historic war victory" },
+      { name: "The eastern arch, in better condition, has become a recognisable symbol of Gujarat's heritage" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~750 km via NH48 to Mehsana then local road to Vadnagar", fromMumbai: "~600 km via NH48", fromBangalore: "~1,300 km via NH48", duration: "Fly/train to Mehsana, then ~35 km by road to Vadnagar", costRange: "₹300–700 by taxi/auto from Mehsana", tips: "Combine with the rest of Vadnagar's heritage sites, including the town's historic lake and gates." },
+    ],
+    accommodation: [
+      { type: "Base in Mehsana", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Mehsana town guesthouses", "Mehsana mid-range hotels"], description: "Either works for this short heritage stop." },
+    ],
+    localTransport: [
+      { mode: "Taxi / Auto Rickshaw", cost: "₹300–₹700 from Mehsana railway station", notes: "Standard way to reach Vadnagar (~35 km); walkable within the town itself", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mehsana", distance: "~35 km", type: "City", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 600, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7900, accommodation: 4500, food: 1500, transport: 1200, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vadnagar Heritage Walk", morning: "Kirti Toran gateways.", afternoon: "Rest of Vadnagar's historic town — lake, gates, and old quarters.", evening: "Return to Mehsana.", stay: "Mehsana", meals: "Local Gujarati thali (₹200–350)", tips: "Visit in soft morning or late-afternoon light for the best view of the carved arch." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quiet, ASI-maintained heritage site with regular local and tourist visitors"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given the site's small-town, low-traffic setting"],
+      emergencyContacts: [{ label: "Women Helpline", number: "181" }, { label: "Mehsana District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The monument grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 220,
+    mustEat: ["Local Gujarati thali in Mehsana/Vadnagar"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

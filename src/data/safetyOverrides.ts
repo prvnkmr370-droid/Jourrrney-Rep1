@@ -4197,3 +4197,17 @@ SAFETY_OVERRIDES["dev-ni-mori"] = {
   police: { summary: "Aravalli District Police: 100", details: ["Aravalli District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Himmatnagar Civil Hospital — dial 108 for ambulance", details: ["Himmatnagar Civil Hospital serves this North Gujarat area.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["khapra-kodiya-caves"] = {
+  police: { summary: "Junagadh City Police: 100", details: ["Junagadh City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Junagadh Civil Hospital — dial 108 for ambulance", details: ["Junagadh Civil Hospital serves this area of Junagadh town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["baba-pyare-caves"] = {
+  police: { summary: "Junagadh City Police: 100", details: ["Junagadh City Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Junagadh Civil Hospital — dial 108 for ambulance", details: ["Junagadh Civil Hospital serves this area of Junagadh town.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kirti-toran-vadnagar"] = {
+  police: { summary: "Mehsana District Police: 100", details: ["Mehsana District Police control room: 100.", "Women Helpline: 181 · National Emergency: 112"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mehsana Civil Hospital — dial 108 for ambulance", details: ["Mehsana Civil Hospital serves this North Gujarat area, including Vadnagar.", "GVK EMRI 108 is Gujarat's real, well-established free ambulance service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
