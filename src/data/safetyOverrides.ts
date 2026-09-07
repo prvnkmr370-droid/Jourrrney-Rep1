@@ -4575,3 +4575,22 @@ SAFETY_OVERRIDES["shivanasamudra-falls"] = {
   police: { summary: "Mandya District Police: 100", details: ["Mandya District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Mandya District Hospital — dial 108 for ambulance", details: ["Mandya District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service, though response to this remote riverside site may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
 };
+SAFETY_OVERRIDES["kudle-beach"] = {
+  police: { summary: "Uttara Kannada District Police: 100", details: ["Uttara Kannada District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Gokarna Government Hospital — dial 108 for ambulance", details: ["Gokarna's government hospital serves the town and nearby beaches.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["half-moon-paradise-beach"] = {
+  police: { summary: "Uttara Kannada District Police: 100", details: ["Uttara Kannada District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Gokarna Government Hospital — dial 108 for ambulance", details: ["Gokarna's government hospital is the nearest major facility, though response to these remote beaches may take longer than in town.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting these beaches' remote, trek-only location." },
+};
+
+SAFETY_OVERRIDES["tungabhadra-dam"] = {
+  police: { summary: "Ballari District Police: 100", details: ["Ballari District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Hospet General Hospital — dial 108 for ambulance", details: ["Hospet's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["linganamakki-dam"] = {
+  police: { summary: "Shivamogga District Police: 100", details: ["Shivamogga District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Sagara General Hospital — dial 108 for ambulance", details: ["Sagara's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
