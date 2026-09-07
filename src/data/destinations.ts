@@ -840,7 +840,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ajmer Sharif Dargah", distance: "15 km", type: "Spiritual", isHidden: false },
       { name: "Ana Sagar Lake, Ajmer", distance: "16 km", type: "Nature", isHidden: true },
       { name: "Savitri Temple hilltop", distance: "2 km (uphill walk/ropeway)", type: "Viewpoint", isHidden: true },
-      { name: "Merta City (Meera Bai's birthplace)", distance: "50 km", type: "Heritage", isHidden: true },
+      { name: "Merta City (Meera Bai's birthplace)", distance: "50 km", type: "Heritage", isHidden: true, id: "merta-city" },
       { name: "Jaipur", distance: "145 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
@@ -1763,7 +1763,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Jodhpur (Mehrangarh Fort)", distance: "65 km", type: "Heritage", isHidden: false, id: "jodhpur" },
-      { name: "Khichan (demoiselle crane wintering site)", distance: "115 km", type: "Wildlife", isHidden: true },
+      { name: "Khichan (demoiselle crane wintering site)", distance: "115 km", type: "Wildlife", isHidden: true, id: "khichan-crane-village" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 1000, accommodation: 0, food: 250, transport: 500, activities: 300 },
@@ -2020,7 +2020,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Pushkar", distance: "15 km", type: "Spiritual", isHidden: false, id: "pushkar" },
-      { name: "Kishangarh (Phad painting & marble trade town)", distance: "27 km", type: "Culture", isHidden: true },
+      { name: "Kishangarh (Phad painting & marble trade town)", distance: "27 km", type: "Culture", isHidden: true, id: "kishangarh" },
       { name: "Jaipur", distance: "130 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
@@ -23808,6 +23808,174 @@ export const DESTINATIONS: Destination[] = [
     reviews: 480,
     mustEat: ["Rajasthani thali in Kota"],
     packingTips: ["Comfortable walking shoes", "Sun protection", "Camera", "Water bottle"],
+  },
+
+  {
+    id: "merta-city",
+    name: "Merta City",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["City of Meera"],
+    tagline: "The Birthplace of Poet-Saint Meera Bai, Devotee of Krishna",
+    description: "Merta City, near Nagaur, was known in antiquity as Medantaka and by around 1488 CE had come under Rao Duda, fourth son of Rao Jodha of Jodhpur — whose family line produced Meera Bai, the celebrated poet-saint and devotee of Krishna, genuinely born here and still honoured across India today through her devotional songs. The town's centrepiece is the Charbhuja Nath Temple (also called the Meera Bai Temple), built in 1575 CE by Rao Dudhoji and dedicated to Charbhujanath, a four-armed form of Vishnu worshipped here as Krishna; its interior walls and floors carry real, extensive tilework set with mirrors and gems. The Meera Mahal Museum, housed within Meera Bai's own family fort, displays sculpture, paintings, and other material tracing her spiritual life — together making Merta a genuinely significant pilgrimage stop for devotees of the Bhakti movement rather than a conventional heritage-monument visit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Meera_at_merta.jpg/1280px-Meera_at_merta.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Meera_at_merta.jpg/1280px-Meera_at_merta.jpg",
+    imageCredit: "Photo: Shemaroo — Wikimedia Commons, CC BY 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Birthplace of poet-saint Meera Bai, of the Rathore line descended from Rao Jodha" },
+      { name: "Charbhuja Nath (Meera Bai) Temple, built 1575 CE, with mirror-and-gem tilework interiors" },
+      { name: "Meera Mahal Museum, housed in Meera Bai's own family fort" },
+      { name: "A genuine Bhakti-movement pilgrimage site, not a conventional monument stop" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Nagaur/Ajmer — long haul", fromMumbai: "Via Nagaur/Ajmer — long haul", fromBangalore: "Via Nagaur/Ajmer — long haul", duration: "~65 km / ~1.5h from Nagaur, or ~90 km from Ajmer", costRange: "₹1,000–₹2,200 by cab from Nagaur or Ajmer", tips: "Combine with Nagaur town on the same day, given their proximity along a shared route." },
+    ],
+    accommodation: [
+      { type: "Base in Nagaur or Ajmer", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Nagaur town hotels", "Ajmer city hotels"], description: "Most visitors see Merta as a day trip rather than staying overnight there." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,200 from Nagaur or Ajmer", notes: "Standard way to reach Merta City", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nagaur", distance: "~65 km", type: "City", isHidden: false, id: "nagaur" },
+      { name: "Ajmer", distance: "~90 km", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 600, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 1000, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Merta Pilgrimage Stop", morning: "Charbhuja Nath (Meera Bai) Temple.", afternoon: "Meera Mahal Museum in the family fort.", evening: "Return to Nagaur or Ajmer.", stay: "Nagaur or Ajmer", meals: "Rajasthani thali (₹300–₹500)", tips: "A relatively quiet, contemplative visit — go with time to read the museum's material on Meera Bai's own life and poetry." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known regional pilgrimage temple with steady devotee footfall and museum staff on-site"],
+      precautions: ["Dress modestly at the temple"],
+      soloTips: ["Comfortable for solo daytime visits given the temple and museum's steady, respectful visitor traffic"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Nagaur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and museum grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1100,
+    mustEat: ["Rajasthani thali in Nagaur/Ajmer"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "khichan-crane-village",
+    name: "Khichan",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "30,000 Demoiselle Cranes Winter Here, Fed Daily by a Jain Village",
+    description: "Khichan, a village in Jodhpur district's Phalodi tehsil about 150 km northwest of Jodhpur, hosts one of the world's great wildlife spectacles each winter: tens of thousands of demoiselle cranes migrating from the steppes of Central Asia and Mongolia, drawn by a genuinely local, community-driven tradition. It began in the early 1970s when Ratanlal Maloo, a devout Jain returning to the village, took on his uncle's habit of feeding pigeons — the daily grain feeding soon attracted a handful of migrating cranes, and as word spread among the birds' own flocks, the numbers grew year after year, reaching over 30,000 cranes annually by the 2010s. Villagers, largely practising Jains for whom compassion toward animals is a core value, still fund and maintain the feeding grounds (chugga ghars) today as an act of genuine, sustained devotion rather than a staged tourist attraction. In April 2023, the Rajasthan Forest Department formally notified the Kurja Conservation Reserve at Khichan — India's first conservation reserve dedicated specifically to the demoiselle crane.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Demoiselle_Cranes_at_Khichan_%285%29.jpg/1280px-Demoiselle_Cranes_at_Khichan_%285%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Demoiselle_Cranes_at_Khichan_%285%29.jpg/1280px-Demoiselle_Cranes_at_Khichan_%285%29.jpg",
+    imageCredit: "Photo: राजू जांगिड़ — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Nature", "Culture"],
+    bestSeason: "September – March (peak crane season)",
+    duration: "2–4 hours",
+    highlights: [
+      { name: "Up to 30,000+ demoiselle cranes wintering here each year from Central Asia/Mongolia" },
+      { name: "A community feeding tradition begun in the early 1970s by Ratanlal Maloo" },
+      { name: "Sustained today by the village's largely Jain population as an act of compassion" },
+      { name: "India's first crane-dedicated conservation reserve, notified April 2023" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "~150 km / ~2.5-3h from Jodhpur", costRange: "₹3,000–₹5,500 by cab from Jodhpur (round trip)", tips: "Go for the early-morning feeding, when the largest number of cranes gather — arrive before sunrise for the best light and activity." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur or Phalodi", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Jodhpur city hotels", "Phalodi town guesthouses"], description: "Most visitors do this as a long day trip from Jodhpur; Phalodi town offers a closer, simpler base." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip from Jodhpur)", cost: "₹3,000–₹5,500", notes: "Standard way to visit given the distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jodhpur", distance: "~150 km", type: "City", isHidden: false, id: "jodhpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 800, food: 400, transport: 900, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 2500, food: 800, transport: 1800, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 15000, accommodation: 8000, food: 1500, transport: 3000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Khichan Crane Morning", morning: "Pre-dawn drive from Jodhpur to Khichan for the crane feeding.", afternoon: "Explore the village and its chugga ghars.", evening: "Return to Jodhpur.", stay: "Jodhpur", meals: "Rajasthani thali on return to Jodhpur (₹300–₹500)", tips: "Keep a respectful distance and quiet demeanor near the feeding grounds — this is a genuine local ritual, not a performance staged for visitors." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A welcoming, community-run site with a strong local tradition of care and hospitality toward visitors"],
+      precautions: ["Arrange a driver given the distance and early-morning timing involved", "Dress warmly for the cold pre-dawn hours in winter"],
+      soloTips: ["Comfortable for solo visitors, ideally arranged with a driver/guide given the early hour and distance from Jodhpur"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The village and feeding grounds during the organized morning feeding"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 2300,
+    mustEat: ["Rajasthani thali in Jodhpur"],
+    packingTips: ["Warm layers for the cold pre-dawn hours", "Binoculars", "Camera with zoom lens", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "kishangarh",
+    name: "Kishangarh",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Birthplace of the Kishangarh School of Painting and 'India's Mona Lisa'",
+    description: "Kishangarh, a former princely state near Ajmer, is genuinely the home of one of Indian miniature painting's most distinctive schools, flourishing under Maharaja Sawant Singh (r. 1748-1757) and his court artist Nihal Chand (1710-1782). Their most celebrated subject, Bani Thani — Sawant Singh's talented consort — was rendered in dozens of miniatures across paper, cloth, ivory, and marble, characterised by exaggeratedly arched eyebrows, elongated lotus eyes, and a graceful, elongated form; the image, deeply spiritual as much as aesthetic in intent, has since become widely known as \"India's Mona Lisa.\" Beyond its painting legacy, Kishangarh is real, active marble country, its quarries supplying much of India's marble trade, and the town's Kishangarh Fort, built by Maharaja Roop Singh of the Rathore dynasty, still overlooks the artificial Gundalao Lake where Sawant Singh and Bani Thani were themselves depicted boating in period court paintings.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/be/Kishangarh_Fort_Front.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/be/Kishangarh_Fort_Front.jpg",
+    imageCredit: "Photo: Ramesh Lalwani — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – February",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Birthplace of the Kishangarh school of miniature painting, flourishing under Sawant Singh (1748-57)" },
+      { name: "Bani Thani, painted by court artist Nihal Chand, widely called 'India's Mona Lisa'" },
+      { name: "Kishangarh Fort overlooking Gundalao Lake" },
+      { name: "A real, active centre of India's marble trade" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~380 km via NH48, ~7h", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "~27 km / ~35-45 min from Ajmer", costRange: "₹600–₹1,400 by cab from Ajmer", tips: "Look for local artists still working in the Kishangarh miniature style — several small studios and galleries in town sell genuine hand-painted work." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Ajmer city hotels"], description: "Most visitors see Kishangarh as a day trip from Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 from Ajmer", notes: "Standard way to reach Kishangarh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "~27 km", type: "City", isHidden: false, id: "ajmer" },
+      { name: "Pushkar", distance: "~40 km", type: "Spiritual", isHidden: false, id: "pushkar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 800, transport: 700, activities: 500 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 13000, accommodation: 8000, food: 1500, transport: 1000, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kishangarh Art & Heritage", morning: "Kishangarh Fort and Gundalao Lake.", afternoon: "Local miniature-painting studios and galleries.", evening: "Return to Ajmer.", stay: "Ajmer", meals: "Rajasthani thali (₹300–₹500)", tips: "If buying artwork, ask about the artist and technique — genuine hand-painted miniatures take real skill and time, unlike mass-produced prints sold as 'originals' in some tourist shops." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A regionally-known heritage and art town with regular visitor traffic"],
+      precautions: ["Standard town/heritage-site caution", "Visit galleries and studios in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given the town's regular flow of art buyers and heritage-site visitors"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort grounds and main market/gallery area during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 720,
+    mustEat: ["Rajasthani thali in Ajmer"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
 ];
