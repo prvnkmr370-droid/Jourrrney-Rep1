@@ -4519,3 +4519,17 @@ SAFETY_OVERRIDES["kollur-mookambika-temple"] = {
   police: { summary: "Udupi District Police: 100", details: ["Udupi District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Udupi District Hospital — dial 108 for ambulance", details: ["Udupi District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["bandipur-tiger-reserve"] = {
+  police: { summary: "Chamarajanagar District Police: 100", details: ["Chamarajanagar District Police control room: 100.", "Forest department staff oversee all safari access.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Gundlupet General Hospital — dial 108 for ambulance", details: ["Gundlupet's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["talakadu"] = {
+  police: { summary: "Mysuru District Police: 100", details: ["Mysuru District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mysuru Medical College Hospital — dial 108 for ambulance", details: ["Mysuru Medical College Hospital is one of the region's major government hospitals.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["namdroling-monastery"] = {
+  police: { summary: "Kodagu District Police: 100", details: ["Kodagu District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kushalnagar Government Hospital — dial 108 for ambulance", details: ["Kushalnagar's government hospital serves the Bylakuppe area.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
