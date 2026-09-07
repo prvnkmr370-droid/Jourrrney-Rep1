@@ -28097,7 +28097,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Holy Redeemer Church", distance: "Within Ambala district", type: "Heritage Site", isHidden: false, id: "holy-redeemer-church" }, { name: "Muslim shrines of Lakhi Shah and Taqwal Shah", distance: "Within Ambala district", type: "Heritage Monument", isHidden: false, id: "muslim-shrines-of-lakhi-shah-and-taqwal-shah" }, { name: "Old Dak Bungalow", distance: "Within Ambala district", type: "Historic Fort/Palace", isHidden: false, id: "old-dak-bungalow" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28149,7 +28149,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Hanuman Temple", distance: "51.9 km", type: "Temple", isHidden: false, id: "hanuman-temple" }, { name: "Badshahi Bagh Gurudwara", distance: "Within Ambala district", type: "Gurudwara", isHidden: false, id: "badshahi-bagh-gurudwara" }, { name: "Holy Redeemer Church", distance: "Within Ambala district", type: "Heritage Site", isHidden: false, id: "holy-redeemer-church" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28201,7 +28201,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Jain Samaj", distance: "1.0 km", type: "Heritage Site", isHidden: false, id: "jain-samaj" }, { name: "St Pauls Church", distance: "1.6 km", type: "Heritage Site", isHidden: false, id: "st-pauls-church" }, { name: "Gurudawara Lakhnaur Sahib", distance: "8.2 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -28253,7 +28253,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gurudawara Manji Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-manji-sahib" }, { name: "Gurudawara Panjokhara Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-panjokhara-sahib" }, { name: "Gurudawara Sis Ganj", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-sis-ganj" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28305,7 +28305,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gurudawara Lakhnaur Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }, { name: "Gurudawara Panjokhara Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-panjokhara-sahib" }, { name: "Gurudawara Sis Ganj", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-sis-ganj" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28357,7 +28357,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gurudawara Lakhnaur Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }, { name: "Gurudawara Manji Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-manji-sahib" }, { name: "Gurudawara Sis Ganj", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-sis-ganj" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28409,7 +28409,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gurudawara Lakhnaur Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }, { name: "Gurudawara Manji Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-manji-sahib" }, { name: "Gurudawara Panjokhara Sahib", distance: "0.0 km", type: "Gurudwara", isHidden: false, id: "gurudawara-panjokhara-sahib" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28461,7 +28461,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Badshahi Bagh Gurudwara", distance: "Within Ambala district", type: "Gurudwara", isHidden: false, id: "badshahi-bagh-gurudwara" }, { name: "Holy Redeemer Church", distance: "Within Ambala district", type: "Heritage Site", isHidden: false, id: "holy-redeemer-church" }, { name: "Muslim shrines of Lakhi Shah and Taqwal Shah", distance: "Within Ambala district", type: "Heritage Monument", isHidden: false, id: "muslim-shrines-of-lakhi-shah-and-taqwal-shah" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28513,7 +28513,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Badshahi Bagh Gurudwara", distance: "Within Ambala district", type: "Gurudwara", isHidden: false, id: "badshahi-bagh-gurudwara" }, { name: "Muslim shrines of Lakhi Shah and Taqwal Shah", distance: "Within Ambala district", type: "Heritage Monument", isHidden: false, id: "muslim-shrines-of-lakhi-shah-and-taqwal-shah" }, { name: "Old Dak Bungalow", distance: "Within Ambala district", type: "Historic Fort/Palace", isHidden: false, id: "old-dak-bungalow" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -28565,7 +28565,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "European Cemetery", distance: "1.0 km", type: "Heritage Site", isHidden: false, id: "european-cemetery" }, { name: "St Pauls Church", distance: "1.9 km", type: "Heritage Site", isHidden: false, id: "st-pauls-church" }, { name: "Gurudawara Lakhnaur Sahib", distance: "8.5 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -28617,7 +28617,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Shiv Mandir", distance: "37.5 km", type: "Temple", isHidden: false, id: "shiv-mandir" }, { name: "Jain Samaj", distance: "41.6 km", type: "Heritage Site", isHidden: false, id: "jain-samaj" }, { name: "European Cemetery", distance: "42.5 km", type: "Heritage Site", isHidden: false, id: "european-cemetery" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28669,7 +28669,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Badshahi Bagh Gurudwara", distance: "Within Ambala district", type: "Gurudwara", isHidden: false, id: "badshahi-bagh-gurudwara" }, { name: "Holy Redeemer Church", distance: "Within Ambala district", type: "Heritage Site", isHidden: false, id: "holy-redeemer-church" }, { name: "Old Dak Bungalow", distance: "Within Ambala district", type: "Historic Fort/Palace", isHidden: false, id: "old-dak-bungalow" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -28721,7 +28721,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Badshahi Bagh Gurudwara", distance: "Within Ambala district", type: "Gurudwara", isHidden: false, id: "badshahi-bagh-gurudwara" }, { name: "Holy Redeemer Church", distance: "Within Ambala district", type: "Heritage Site", isHidden: false, id: "holy-redeemer-church" }, { name: "Muslim shrines of Lakhi Shah and Taqwal Shah", distance: "Within Ambala district", type: "Heritage Monument", isHidden: false, id: "muslim-shrines-of-lakhi-shah-and-taqwal-shah" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -28773,7 +28773,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Jain Samaj", distance: "22.2 km", type: "Heritage Site", isHidden: false, id: "jain-samaj" }, { name: "European Cemetery", distance: "22.2 km", type: "Heritage Site", isHidden: false, id: "european-cemetery" }, { name: "St Pauls Church", distance: "23.7 km", type: "Heritage Site", isHidden: false, id: "st-pauls-church" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -28825,7 +28825,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "European Cemetery", distance: "1.6 km", type: "Heritage Site", isHidden: false, id: "european-cemetery" }, { name: "Jain Samaj", distance: "1.9 km", type: "Heritage Site", isHidden: false, id: "jain-samaj" }, { name: "Gurudawara Lakhnaur Sahib", distance: "6.7 km", type: "Gurudwara", isHidden: false, id: "gurudawara-lakhnaur-sahib" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -28877,7 +28877,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fort of Loharu", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-loharu" }, { name: "Palace of Dadri", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "palace-of-dadri" }, { name: "Prithviraj Ki Kutcheri", distance: "Within Bhiwani district", type: "Heritage Site", isHidden: false, id: "prithviraj-ki-kutcheri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -28929,7 +28929,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Naurangabad", distance: "Within Bhiwani district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-naurangabad" }, { name: "Palace of Dadri", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "palace-of-dadri" }, { name: "Prithviraj Ki Kutcheri", distance: "Within Bhiwani district", type: "Heritage Site", isHidden: false, id: "prithviraj-ki-kutcheri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -28981,7 +28981,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Naurangabad", distance: "Within Bhiwani district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-naurangabad" }, { name: "Fort of Loharu", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-loharu" }, { name: "Prithviraj Ki Kutcheri", distance: "Within Bhiwani district", type: "Heritage Site", isHidden: false, id: "prithviraj-ki-kutcheri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -29033,7 +29033,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Naurangabad", distance: "Within Bhiwani district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-naurangabad" }, { name: "Fort of Loharu", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-loharu" }, { name: "Palace of Dadri", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "palace-of-dadri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -29085,7 +29085,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Naurangabad", distance: "Within Bhiwani district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-naurangabad" }, { name: "Fort of Loharu", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-loharu" }, { name: "Palace of Dadri", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "palace-of-dadri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -29137,7 +29137,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Naurangabad", distance: "Within Bhiwani district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-naurangabad" }, { name: "Fort of Loharu", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-loharu" }, { name: "Palace of Dadri", distance: "Within Bhiwani district", type: "Historic Fort/Palace", isHidden: false, id: "palace-of-dadri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -29189,7 +29189,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Surajkund (a masonry tank)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "surajkund-a-masonry-tank" }, { name: "Gymkhana Club", distance: "Within Faridabad district", type: "Museum/Culture", isHidden: false, id: "gymkhana-club" }, { name: "Rose Garden", distance: "Within Faridabad district", type: "Nature/Park", isHidden: false, id: "rose-garden" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -29241,7 +29241,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Nahar Singh Cricket Stadium", distance: "0.4 km", type: "Museum/Culture", isHidden: false, id: "nahar-singh-cricket-stadium" }, { name: "Nahar Singh Palace", distance: "0.4 km", type: "Temple", isHidden: false, id: "nahar-singh-palace" }, { name: "Rose Garden", distance: "0.5 km", type: "Nature/Park", isHidden: false, id: "rose-garden" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 700, transport: 300, activities: 600 },
@@ -29293,7 +29293,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Surajkund", distance: "16.3 km", type: "Heritage Site", isHidden: false, id: "surajkund" }, { name: "Aravalli Golf Course", distance: "18.9 km", type: "Recreational", isHidden: false, id: "aravalli-golf-course" }, { name: "Nahar Singh Cricket Stadium", distance: "19.2 km", type: "Museum/Culture", isHidden: false, id: "nahar-singh-cricket-stadium" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -29345,7 +29345,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Anandpur Bandh (Dam)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "anandpur-bandh-dam" }, { name: "Surajkund (a masonry tank)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "surajkund-a-masonry-tank" }, { name: "Mughal Bridge", distance: "1.9 km", type: "Historic Fort/Palace", isHidden: false, id: "mughal-bridge" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -29397,7 +29397,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gymkhana Club", distance: "1.9 km", type: "Museum/Culture", isHidden: false, id: "gymkhana-club" }, { name: "Anandpur Bandh (Dam)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "anandpur-bandh-dam" }, { name: "Surajkund (a masonry tank)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "surajkund-a-masonry-tank" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -29449,7 +29449,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Nahar Singh Palace", distance: "0.0 km", type: "Temple", isHidden: false, id: "nahar-singh-palace" }, { name: "Rose Garden", distance: "0.2 km", type: "Nature/Park", isHidden: false, id: "rose-garden" }, { name: "Aravalli Golf Course", distance: "0.4 km", type: "Recreational", isHidden: false, id: "aravalli-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -29501,7 +29501,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Nahar Singh Cricket Stadium", distance: "0.0 km", type: "Museum/Culture", isHidden: false, id: "nahar-singh-cricket-stadium" }, { name: "Rose Garden", distance: "0.2 km", type: "Nature/Park", isHidden: false, id: "rose-garden" }, { name: "Aravalli Golf Course", distance: "0.4 km", type: "Recreational", isHidden: false, id: "aravalli-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -29553,7 +29553,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gymkhana Club", distance: "1.9 km", type: "Museum/Culture", isHidden: false, id: "gymkhana-club" }, { name: "Rose Garden", distance: "2.1 km", type: "Nature/Park", isHidden: false, id: "rose-garden" }, { name: "Nahar Singh Cricket Stadium", distance: "2.2 km", type: "Museum/Culture", isHidden: false, id: "nahar-singh-cricket-stadium" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -29605,7 +29605,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Nahar Singh Cricket Stadium", distance: "0.2 km", type: "Museum/Culture", isHidden: false, id: "nahar-singh-cricket-stadium" }, { name: "Nahar Singh Palace", distance: "0.2 km", type: "Temple", isHidden: false, id: "nahar-singh-palace" }, { name: "Aravalli Golf Course", distance: "0.5 km", type: "Recreational", isHidden: false, id: "aravalli-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -29657,7 +29657,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Anandpur Bandh (Dam)", distance: "Within Faridabad district", type: "Lake/Tank", isHidden: false, id: "anandpur-bandh-dam" }, { name: "Gymkhana Club", distance: "Within Faridabad district", type: "Museum/Culture", isHidden: false, id: "gymkhana-club" }, { name: "Rose Garden", distance: "Within Faridabad district", type: "Nature/Park", isHidden: false, id: "rose-garden" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -29709,7 +29709,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Bhirrana", distance: "0.0 km", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-bhirrana" }, { name: "Ashok Pillar", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "ashok-pillar" }, { name: "Humayun Mosque", distance: "Within Fatehabad district", type: "Heritage Monument", isHidden: false, id: "humayun-mosque" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -29761,7 +29761,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site Of Banawali", distance: "0.0 km", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-banawali" }, { name: "Ashok Pillar", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "ashok-pillar" }, { name: "Humayun Mosque", distance: "Within Fatehabad district", type: "Heritage Monument", isHidden: false, id: "humayun-mosque" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -29813,7 +29813,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ashok Pillar", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "ashok-pillar" }, { name: "Humayun Mosque", distance: "Within Fatehabad district", type: "Heritage Monument", isHidden: false, id: "humayun-mosque" }, { name: "Lat of Feroz Shah", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "lat-of-feroz-shah" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -29865,7 +29865,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Humayun Mosque", distance: "Within Fatehabad district", type: "Heritage Monument", isHidden: false, id: "humayun-mosque" }, { name: "Lat of Feroz Shah", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "lat-of-feroz-shah" }, { name: "Ancient Site Of Banawali", distance: "Within Fatehabad district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-banawali" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -29917,7 +29917,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ashok Pillar", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "ashok-pillar" }, { name: "Lat of Feroz Shah", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "lat-of-feroz-shah" }, { name: "Ancient Site Of Banawali", distance: "Within Fatehabad district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-banawali" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -29969,7 +29969,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ashok Pillar", distance: "Within Fatehabad district", type: "Heritage Site", isHidden: false, id: "ashok-pillar" }, { name: "Humayun Mosque", distance: "Within Fatehabad district", type: "Heritage Monument", isHidden: false, id: "humayun-mosque" }, { name: "Ancient Site Of Banawali", distance: "Within Fatehabad district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-banawali" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30021,7 +30021,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }, { name: "CawnSarai", distance: "Within Gurugram district", type: "Heritage Site", isHidden: false, id: "cawnsarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -30073,7 +30073,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Botanix Farm", distance: "0.0 km", type: "Lake/Tank", isHidden: false, id: "botanix-farm" }, { name: "Yaduvanshi Farm", distance: "0.0 km", type: "Temple", isHidden: false, id: "yaduvanshi-farm" }, { name: "Manesar Golf Course", distance: "18.8 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -30125,7 +30125,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }, { name: "CawnSarai", distance: "Within Gurugram district", type: "Heritage Site", isHidden: false, id: "cawnsarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30177,7 +30177,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sultanpur Bird Sanctuary", distance: "6.3 km", type: "Bird Sanctuary", isHidden: false, id: "sultanpur-bird-sanctuary" }, { name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30229,7 +30229,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "CawnSarai", distance: "Within Gurugram district", type: "Heritage Site", isHidden: false, id: "cawnsarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30281,7 +30281,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ariisse Farm", distance: "0.0 km", type: "Nature/Park", isHidden: false, id: "ariisse-farm" }, { name: "Yaduvanshi Farm", distance: "0.0 km", type: "Temple", isHidden: false, id: "yaduvanshi-farm" }, { name: "Manesar Golf Course", distance: "18.8 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -30333,7 +30333,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30385,7 +30385,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kingdom of Dreams", distance: "3.9 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }, { name: "Sheetala Devi Temple", distance: "7.8 km", type: "Temple", isHidden: false, id: "sheetala-devi-temple" }, { name: "Manesar Golf Course", distance: "8.9 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -30437,7 +30437,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 700, transport: 300, activities: 600 },
@@ -30489,7 +30489,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -30541,7 +30541,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -30593,7 +30593,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -30645,7 +30645,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -30697,7 +30697,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -30749,7 +30749,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Tarudhan Golf Course", distance: "0.0 km", type: "Historic Fort/Palace", isHidden: false, id: "tarudhan-golf-course" }, { name: "TERI Golf Course", distance: "0.0 km", type: "Recreational", isHidden: false, id: "teri-golf-course" }, { name: "Kingdom of Dreams", distance: "7.9 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 700, transport: 300, activities: 600 },
@@ -30801,7 +30801,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -30853,7 +30853,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -30905,7 +30905,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -30957,7 +30957,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -31009,7 +31009,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kingdom of Dreams", distance: "3.9 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }, { name: "DLF Golf and Country Club", distance: "7.8 km", type: "Temple", isHidden: false, id: "dlf-golf-and-country-club" }, { name: "Manesar Golf Course", distance: "8.5 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -31061,7 +31061,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sheetala Devi Temple", distance: "164.4 km", type: "Temple", isHidden: false, id: "sheetala-devi-temple" }, { name: "Sultanpur Bird Sanctuary", distance: "165.4 km", type: "Bird Sanctuary", isHidden: false, id: "sultanpur-bird-sanctuary" }, { name: "Kingdom of Dreams", distance: "166.0 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31113,7 +31113,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Manesar Golf Course", distance: "0.0 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }, { name: "TERI Golf Course", distance: "0.0 km", type: "Recreational", isHidden: false, id: "teri-golf-course" }, { name: "Kingdom of Dreams", distance: "7.9 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31165,7 +31165,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Manesar Golf Course", distance: "0.0 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }, { name: "Tarudhan Golf Course", distance: "0.0 km", type: "Historic Fort/Palace", isHidden: false, id: "tarudhan-golf-course" }, { name: "Kingdom of Dreams", distance: "7.9 km", type: "Entertainment", isHidden: false, id: "kingdom-of-dreams" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 700, transport: 300, activities: 600 },
@@ -31217,7 +31217,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Aranya Greens Farm", distance: "Within Gurugram district", type: "Nature/Park", isHidden: false, id: "aranya-greens-farm" }, { name: "Badshahpur Fort and Baoli", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "badshahpur-fort-and-baoli" }, { name: "Begum Samru Palace", distance: "Within Gurugram district", type: "Historic Fort/Palace", isHidden: false, id: "begum-samru-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -31269,7 +31269,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Dense coverage, same as Delhi", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available, agree on fare or insist on the meter", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ariisse Farm", distance: "0.0 km", type: "Nature/Park", isHidden: false, id: "ariisse-farm" }, { name: "Botanix Farm", distance: "0.0 km", type: "Lake/Tank", isHidden: false, id: "botanix-farm" }, { name: "Manesar Golf Course", distance: "18.8 km", type: "Recreational", isHidden: false, id: "manesar-golf-course" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -31321,7 +31321,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }, { name: "Durgah Char Qutab", distance: "Within Hisar district", type: "Temple", isHidden: false, id: "durgah-char-qutab" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -31373,7 +31373,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "22.3 km", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -31425,7 +31425,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }, { name: "Durgah Char Qutab", distance: "Within Hisar district", type: "Temple", isHidden: false, id: "durgah-char-qutab" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31477,7 +31477,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Gujari Mahal", distance: "3.2 km", type: "Historic Fort/Palace", isHidden: false, id: "gujari-mahal" }, { name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "4.6 km", type: "Heritage Site", isHidden: false, id: "baradari" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31529,7 +31529,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "Durgah Char Qutab", distance: "Within Hisar district", type: "Temple", isHidden: false, id: "durgah-char-qutab" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31581,7 +31581,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -31633,7 +31633,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31685,7 +31685,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31737,7 +31737,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "1.4 km", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31789,7 +31789,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31841,7 +31841,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -31893,7 +31893,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present but with thinner coverage than Delhi-NCR", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Rakhigarhi is ~20 km from Hisar city — a car or pre-booked cab is the practical way there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Gumbad", distance: "Within Hisar district", type: "Heritage Monument", isHidden: false, id: "ancient-gumbad" }, { name: "Baradari", distance: "Within Hisar district", type: "Heritage Site", isHidden: false, id: "baradari" }, { name: "British Palace", distance: "Within Hisar district", type: "Historic Fort/Palace", isHidden: false, id: "british-palace" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -31945,7 +31945,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Group of Tombs and Mosques", distance: "Within Jhajjar district", type: "Heritage Monument", isHidden: false, id: "group-of-tombs-and-mosques" }, { name: "Gurukul, Jhajjar Museum", distance: "Within Jhajjar district", type: "Historic Fort/Palace", isHidden: false, id: "gurukul-jhajjar-museum" }, { name: "Rattan Garh Farm", distance: "Within Jhajjar district", type: "Nature/Park", isHidden: false, id: "rattan-garh-farm" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -31997,7 +31997,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bua Wala Talab", distance: "Within Jhajjar district", type: "Lake/Tank", isHidden: false, id: "bua-wala-talab" }, { name: "Gurukul, Jhajjar Museum", distance: "Within Jhajjar district", type: "Historic Fort/Palace", isHidden: false, id: "gurukul-jhajjar-museum" }, { name: "Rattan Garh Farm", distance: "Within Jhajjar district", type: "Nature/Park", isHidden: false, id: "rattan-garh-farm" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -32049,7 +32049,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bua Wala Talab", distance: "Within Jhajjar district", type: "Lake/Tank", isHidden: false, id: "bua-wala-talab" }, { name: "Group of Tombs and Mosques", distance: "Within Jhajjar district", type: "Heritage Monument", isHidden: false, id: "group-of-tombs-and-mosques" }, { name: "Rattan Garh Farm", distance: "Within Jhajjar district", type: "Nature/Park", isHidden: false, id: "rattan-garh-farm" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32101,7 +32101,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bua Wala Talab", distance: "Within Jhajjar district", type: "Lake/Tank", isHidden: false, id: "bua-wala-talab" }, { name: "Group of Tombs and Mosques", distance: "Within Jhajjar district", type: "Heritage Monument", isHidden: false, id: "group-of-tombs-and-mosques" }, { name: "Gurukul, Jhajjar Museum", distance: "Within Jhajjar district", type: "Historic Fort/Palace", isHidden: false, id: "gurukul-jhajjar-museum" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -32153,7 +32153,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bua Wala Talab", distance: "Within Jhajjar district", type: "Lake/Tank", isHidden: false, id: "bua-wala-talab" }, { name: "Group of Tombs and Mosques", distance: "Within Jhajjar district", type: "Heritage Monument", isHidden: false, id: "group-of-tombs-and-mosques" }, { name: "Gurukul, Jhajjar Museum", distance: "Within Jhajjar district", type: "Historic Fort/Palace", isHidden: false, id: "gurukul-jhajjar-museum" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -32205,7 +32205,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }, { name: "Hansdehar", distance: "Within Jind district", type: "Heritage Site", isHidden: false, id: "hansdehar" }, { name: "Fort of Jind", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32257,7 +32257,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Hansdehar", distance: "Within Jind district", type: "Heritage Site", isHidden: false, id: "hansdehar" }, { name: "Fort of Jind", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -32309,7 +32309,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Narwana", distance: "13.8 km", type: "Heritage Monument", isHidden: false, id: "narwana" }, { name: "Fort of Jind", distance: "48.5 km", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }, { name: "Ramrai", distance: "50.9 km", type: "Temple", isHidden: false, id: "ramrai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -32361,7 +32361,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }, { name: "Hansdehar", distance: "2.9 km", type: "Heritage Site", isHidden: false, id: "hansdehar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32413,7 +32413,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }, { name: "Fort of Jind", distance: "2.9 km", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32465,7 +32465,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Dhamtan Sahib", distance: "13.8 km", type: "Temple", isHidden: false, id: "dhamtan-sahib" }, { name: "Fort of Jind", distance: "35.0 km", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }, { name: "Ramrai", distance: "37.1 km", type: "Temple", isHidden: false, id: "ramrai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -32517,7 +32517,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }, { name: "Hansdehar", distance: "4.7 km", type: "Heritage Site", isHidden: false, id: "hansdehar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32569,7 +32569,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Pindara", distance: "24.6 km", type: "Heritage Site", isHidden: false, id: "pindara" }, { name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32621,7 +32621,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fort of Jind", distance: "7.8 km", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-jind" }, { name: "Ancient Fort at Safidon", distance: "Within Jind district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-fort-at-safidon" }, { name: "Bodh Stupa", distance: "Within Jind district", type: "Archaeological Site", isHidden: false, id: "bodh-stupa" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -32673,7 +32673,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }, { name: "Forts and Palaces of Bhais", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "forts-and-palaces-of-bhais" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32725,7 +32725,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }, { name: "Forts and Palaces of Bhais", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "forts-and-palaces-of-bhais" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -32777,7 +32777,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Forts and Palaces of Bhais", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "forts-and-palaces-of-bhais" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -32829,7 +32829,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -32881,7 +32881,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -32933,7 +32933,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -32985,7 +32985,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33037,7 +33037,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -33089,7 +33089,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33141,7 +33141,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -33193,7 +33193,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Baoli", distance: "Within Kaithal district", type: "Historic Fort/Palace", isHidden: false, id: "ancient-baoli" }, { name: "Ancient Bricks Temple", distance: "Within Kaithal district", type: "Temple", isHidden: false, id: "ancient-bricks-temple" }, { name: "Ancient Site of Thehpolar", distance: "Within Kaithal district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-thehpolar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33245,7 +33245,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }, { name: "Gateway of Old Mughal Sarai", distance: "Within Karnal district", type: "Historic Fort/Palace", isHidden: false, id: "gateway-of-old-mughal-sarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33297,7 +33297,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }, { name: "Gateway of Old Mughal Sarai", distance: "Within Karnal district", type: "Historic Fort/Palace", isHidden: false, id: "gateway-of-old-mughal-sarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33349,7 +33349,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "Gateway of Old Mughal Sarai", distance: "Within Karnal district", type: "Historic Fort/Palace", isHidden: false, id: "gateway-of-old-mughal-sarai" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33401,7 +33401,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33453,7 +33453,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33505,7 +33505,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -33557,7 +33557,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -33609,7 +33609,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33661,7 +33661,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -33713,7 +33713,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }, { name: "European Soldiers Grave", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "european-soldiers-grave" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33765,7 +33765,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sita Mai Temple", distance: "1.8 km", type: "Temple", isHidden: false, id: "sita-mai-temple" }, { name: "Karna Tank", distance: "7.1 km", type: "Lake/Tank", isHidden: false, id: "karna-tank" }, { name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33817,7 +33817,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Old Fort", distance: "1.8 km", type: "Historic Fort/Palace", isHidden: false, id: "old-fort" }, { name: "Karna Tank", distance: "6.8 km", type: "Lake/Tank", isHidden: false, id: "karna-tank" }, { name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -33869,7 +33869,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Karna Tank", distance: "7.9 km", type: "Lake/Tank", isHidden: false, id: "karna-tank" }, { name: "Cantonment Church Tower", distance: "Within Karnal district", type: "Heritage Site", isHidden: false, id: "cantonment-church-tower" }, { name: "Dargah Nuri", distance: "Within Karnal district", type: "Heritage Monument", isHidden: false, id: "dargah-nuri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -33921,7 +33921,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Pathar Masjid", distance: "Within Kurukshetra district", type: "Heritage Monument", isHidden: false, id: "pathar-masjid" }, { name: "Raja Harsha ka Tila", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "raja-harsha-ka-tila" }, { name: "Thanesar Archaeological Site Museum", distance: "Within Kurukshetra district", type: "Museum/Culture", isHidden: false, id: "thanesar-archaeological-site-museum" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -33973,7 +33973,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sthaneshwara Mahadev Temple", distance: "0.5 km", type: "Temple", isHidden: false, id: "sthaneshwara-mahadev-temple" }, { name: "Sheikh Chilli's Tomb", distance: "0.5 km", type: "Heritage Monument", isHidden: false, id: "sheikh-chillis-tomb" }, { name: "Vishvamitra Ka Tila", distance: "0.6 km", type: "Archaeological Site", isHidden: false, id: "vishvamitra-ka-tila" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34025,7 +34025,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kalpana Chawla Memorial Planetarium", distance: "1.0 km", type: "Science Centre", isHidden: false, id: "kalpana-chawla-planetarium" }, { name: "Dharohar Museum", distance: "1.9 km", type: "Museum/Culture", isHidden: false, id: "dharohar-museum" }, { name: "Raja Karna ka Qila", distance: "2.0 km", type: "Historic Fort/Palace", isHidden: false, id: "raja-karna-ka-qila" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34077,7 +34077,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Brahma Sarovar", distance: "0.8 km", type: "Sacred Tank", isHidden: false, id: "brahma-sarovar" }, { name: "Gurudawara Mastgarh", distance: "0.8 km", type: "Gurudwara", isHidden: false, id: "gurudawara-mastgarh" }, { name: "Kurukshetra Panorama and Science Centre", distance: "1.5 km", type: "Museum", isHidden: false, id: "kurukshetra-panorama-science-centre" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -34129,7 +34129,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Brahma Sarovar", distance: "0.6 km", type: "Sacred Tank", isHidden: false, id: "brahma-sarovar" }, { name: "Dharohar Museum", distance: "0.8 km", type: "Museum/Culture", isHidden: false, id: "dharohar-museum" }, { name: "Kurukshetra Panorama and Science Centre", distance: "1.4 km", type: "Museum", isHidden: false, id: "kurukshetra-panorama-science-centre" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34181,7 +34181,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Pashupatinatha Temple", distance: "0.0 km", type: "Temple", isHidden: false, id: "pashupatinatha-temple" }, { name: "Light and Sound Show at Jyotisar", distance: "0.1 km", type: "Heritage Site", isHidden: false, id: "light-and-sound-show-at-jyotisar" }, { name: "Jyotisar", distance: "0.4 km", type: "Pilgrimage Site", isHidden: false, id: "jyotisar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34233,7 +34233,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kartikeya Temple", distance: "0.1 km", type: "Temple", isHidden: false, id: "kartikeya-temple" }, { name: "Pashupatinatha Temple", distance: "0.1 km", type: "Temple", isHidden: false, id: "pashupatinatha-temple" }, { name: "Jyotisar", distance: "0.2 km", type: "Pilgrimage Site", isHidden: false, id: "jyotisar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -34285,7 +34285,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sheikh Chilli's Tomb", distance: "0.5 km", type: "Heritage Monument", isHidden: false, id: "sheikh-chillis-tomb" }, { name: "Vishvamitra Ka Tila", distance: "0.6 km", type: "Archaeological Site", isHidden: false, id: "vishvamitra-ka-tila" }, { name: "Prachin Shiva Temple", distance: "0.8 km", type: "Temple", isHidden: false, id: "prachin-shiva-temple" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -34337,7 +34337,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kartikeya Temple", distance: "0.0 km", type: "Temple", isHidden: false, id: "kartikeya-temple" }, { name: "Light and Sound Show at Jyotisar", distance: "0.1 km", type: "Heritage Site", isHidden: false, id: "light-and-sound-show-at-jyotisar" }, { name: "Jyotisar", distance: "0.4 km", type: "Pilgrimage Site", isHidden: false, id: "jyotisar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34389,7 +34389,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Mound Amin", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "ancient-mound-amin" }, { name: "Raja Harsha ka Tila", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "raja-harsha-ka-tila" }, { name: "Thanesar Archaeological Site Museum", distance: "Within Kurukshetra district", type: "Museum/Culture", isHidden: false, id: "thanesar-archaeological-site-museum" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -34441,7 +34441,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Vishvamitra Ka Tila", distance: "0.6 km", type: "Archaeological Site", isHidden: false, id: "vishvamitra-ka-tila" }, { name: "Sheikh Chilli's Tomb", distance: "0.6 km", type: "Heritage Monument", isHidden: false, id: "sheikh-chillis-tomb" }, { name: "Nabha House", distance: "0.8 km", type: "Heritage Site", isHidden: false, id: "nabha-house" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34493,7 +34493,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Mound Amin", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "ancient-mound-amin" }, { name: "Pathar Masjid", distance: "Within Kurukshetra district", type: "Heritage Monument", isHidden: false, id: "pathar-masjid" }, { name: "Thanesar Archaeological Site Museum", distance: "Within Kurukshetra district", type: "Museum/Culture", isHidden: false, id: "thanesar-archaeological-site-museum" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -34545,7 +34545,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Dharohar Museum", distance: "2.0 km", type: "Museum/Culture", isHidden: false, id: "dharohar-museum" }, { name: "Bhishma Kund, Narkatari", distance: "2.0 km", type: "Temple", isHidden: false, id: "bhishma-kund-narkatari" }, { name: "Gurudawara Mastgarh", distance: "2.1 km", type: "Gurudwara", isHidden: false, id: "gurudawara-mastgarh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -34597,7 +34597,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Shri Krishna Museum", distance: "0.2 km", type: "Temple", isHidden: false, id: "shri-krishna-museum" }, { name: "Kurukshetra Panorama and Science Centre", distance: "0.2 km", type: "Museum", isHidden: false, id: "kurukshetra-panorama-science-centre" }, { name: "Nabha House", distance: "0.9 km", type: "Heritage Site", isHidden: false, id: "nabha-house" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -34649,7 +34649,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kurukshetra Panorama and Science Centre", distance: "0.1 km", type: "Museum", isHidden: false, id: "kurukshetra-panorama-science-centre" }, { name: "Sannihit Sarovar", distance: "0.2 km", type: "Lake/Tank", isHidden: false, id: "sannihit-sarovar" }, { name: "Brahma Sarovar", distance: "0.8 km", type: "Sacred Tank", isHidden: false, id: "brahma-sarovar" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34701,7 +34701,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Vishvamitra Ka Tila", distance: "0.4 km", type: "Archaeological Site", isHidden: false, id: "vishvamitra-ka-tila" }, { name: "Bhadrakali Temple", distance: "0.5 km", type: "Temple", isHidden: false, id: "bhadrakali-temple" }, { name: "Sheikh Chilli's Tomb", distance: "0.5 km", type: "Heritage Monument", isHidden: false, id: "sheikh-chillis-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -34753,7 +34753,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Mound Amin", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "ancient-mound-amin" }, { name: "Pathar Masjid", distance: "Within Kurukshetra district", type: "Heritage Monument", isHidden: false, id: "pathar-masjid" }, { name: "Raja Harsha ka Tila", distance: "Within Kurukshetra district", type: "Archaeological Site", isHidden: false, id: "raja-harsha-ka-tila" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -34805,7 +34805,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹80–₹300", notes: "Available but thinner coverage than a metro city", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Sites are spread out — a car or rented two-wheeler covers the circuit fastest", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Sheikh Chilli's Tomb", distance: "0.1 km", type: "Heritage Monument", isHidden: false, id: "sheikh-chillis-tomb" }, { name: "Sthaneshwara Mahadev Temple", distance: "0.4 km", type: "Temple", isHidden: false, id: "sthaneshwara-mahadev-temple" }, { name: "Bhadrakali Temple", distance: "0.6 km", type: "Temple", isHidden: false, id: "bhadrakali-temple" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -34857,7 +34857,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "SHOBHA SAROWAR", distance: "0.5 km", type: "Lake/Tank", isHidden: false, id: "shobha-sarowar" }, { name: "Chor Gumbad", distance: "1.4 km", type: "Nature/Park", isHidden: false, id: "chor-gumbad" }, { name: "Jal mahal", distance: "2.0 km", type: "Historic Fort/Palace", isHidden: false, id: "jal-mahal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -34909,7 +34909,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "SHOBHA SAROWAR", distance: "1.1 km", type: "Lake/Tank", isHidden: false, id: "shobha-sarowar" }, { name: "Birbal Ka Chhatta", distance: "1.4 km", type: "Heritage Site", isHidden: false, id: "birbal-ka-chhatta" }, { name: "Jal mahal", distance: "3.3 km", type: "Historic Fort/Palace", isHidden: false, id: "jal-mahal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -34961,7 +34961,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }, { name: "Shah Quli Khan’s Tomb", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "shah-quli-khan-s-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -35013,7 +35013,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Birbal Ka Chhatta", distance: "2.0 km", type: "Heritage Site", isHidden: false, id: "birbal-ka-chhatta" }, { name: "SHOBHA SAROWAR", distance: "2.2 km", type: "Lake/Tank", isHidden: false, id: "shobha-sarowar" }, { name: "Chor Gumbad", distance: "3.3 km", type: "Nature/Park", isHidden: false, id: "chor-gumbad" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -35065,7 +35065,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }, { name: "Shah Quli Khan’s Tomb", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "shah-quli-khan-s-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -35117,7 +35117,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Shah Quli Khan’s Tomb", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "shah-quli-khan-s-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35169,7 +35169,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35221,7 +35221,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Birbal Ka Chhatta", distance: "0.5 km", type: "Heritage Site", isHidden: false, id: "birbal-ka-chhatta" }, { name: "Chor Gumbad", distance: "1.1 km", type: "Nature/Park", isHidden: false, id: "chor-gumbad" }, { name: "Jal mahal", distance: "2.2 km", type: "Historic Fort/Palace", isHidden: false, id: "jal-mahal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 150 },
@@ -35273,7 +35273,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35325,7 +35325,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35377,7 +35377,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Fortress of islampur", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "fortress-of-islampur" }, { name: "Mirza Alijan’s Takhat and Baoli", distance: "Within Mahendragarh district", type: "Historic Fort/Palace", isHidden: false, id: "mirza-alijan-s-takhat-and-baoli" }, { name: "Pir Turkman Tomb Complex", distance: "Within Mahendragarh district", type: "Heritage Monument", isHidden: false, id: "pir-turkman-tomb-complex" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -35429,7 +35429,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }, { name: "Raja Nahar SinghFort, Ballabgarh", distance: "Within Palwal district", type: "Historic Fort/Palace", isHidden: false, id: "raja-nahar-singhfort-ballabgarh" }, { name: "Roshan Chirag Tomb", distance: "Within Palwal district", type: "Heritage Monument", isHidden: false, id: "roshan-chirag-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35481,7 +35481,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Panchvati Temple", distance: "1.6 km", type: "Temple", isHidden: false, id: "panchvati-temple" }, { name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35533,7 +35533,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Dauji Mandir", distance: "1.6 km", type: "Temple", isHidden: false, id: "dauji-mandir" }, { name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35585,7 +35585,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Raja Nahar SinghFort, Ballabgarh", distance: "Within Palwal district", type: "Historic Fort/Palace", isHidden: false, id: "raja-nahar-singhfort-ballabgarh" }, { name: "Roshan Chirag Tomb", distance: "Within Palwal district", type: "Heritage Monument", isHidden: false, id: "roshan-chirag-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35637,7 +35637,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }, { name: "Roshan Chirag Tomb", distance: "Within Palwal district", type: "Heritage Monument", isHidden: false, id: "roshan-chirag-tomb" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -35689,7 +35689,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }, { name: "Raja Nahar SinghFort, Ballabgarh", distance: "Within Palwal district", type: "Historic Fort/Palace", isHidden: false, id: "raja-nahar-singhfort-ballabgarh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35741,7 +35741,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }, { name: "Raja Nahar SinghFort, Ballabgarh", distance: "Within Palwal district", type: "Historic Fort/Palace", isHidden: false, id: "raja-nahar-singhfort-ballabgarh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35793,7 +35793,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Udasnath Mandir Mandir", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "baba-udasnath-mandir-mandir" }, { name: "Pandav Van", distance: "Within Palwal district", type: "Temple", isHidden: false, id: "pandav-van" }, { name: "Raja Nahar SinghFort, Ballabgarh", distance: "Within Palwal district", type: "Historic Fort/Palace", isHidden: false, id: "raja-nahar-singhfort-ballabgarh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -35845,7 +35845,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }, { name: "Mera Gaon Mera Desh Farm House", distance: "Within Panchkula district", type: "Nature/Park", isHidden: false, id: "mera-gaon-mera-desh-farm-house" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35897,7 +35897,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "School of Sports, Rai", distance: "94.9 km", type: "Archaeological Site", isHidden: false, id: "school-of-sports-rai" }, { name: "Cactus Garden", distance: "251.5 km", type: "Nature/Park", isHidden: false, id: "cactus-garden" }, { name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -35949,7 +35949,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Mata Mansa Devi Temple", distance: "0.0 km", type: "Temple", isHidden: false, id: "mata-mansa-devi-temple" }, { name: "Naad Wellness", distance: "1.0 km", type: "Heritage Site", isHidden: false, id: "naad-wellness" }, { name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36001,7 +36001,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }, { name: "Mera Gaon Mera Desh Farm House", distance: "Within Panchkula district", type: "Nature/Park", isHidden: false, id: "mera-gaon-mera-desh-farm-house" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -36053,7 +36053,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -36105,7 +36105,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Mera Gaon Mera Desh Farm House", distance: "Within Panchkula district", type: "Nature/Park", isHidden: false, id: "mera-gaon-mera-desh-farm-house" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36157,7 +36157,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -36209,7 +36209,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Mata Mansa Devi Temple", distance: "1.0 km", type: "Temple", isHidden: false, id: "mata-mansa-devi-temple" }, { name: "Bhima Devi Temple", distance: "1.0 km", type: "Temple", isHidden: false, id: "bhima-devi-temple" }, { name: "Cactus Garden", distance: "3.0 km", type: "Nature/Park", isHidden: false, id: "cactus-garden" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -36261,7 +36261,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Nada Sahib", distance: "3.7 km", type: "Gurudwara", isHidden: false, id: "nada-sahib" }, { name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -36313,7 +36313,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 700, transport: 300, activities: 600 },
@@ -36365,7 +36365,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Dham", distance: "94.9 km", type: "Temple", isHidden: false, id: "baba-dham" }, { name: "Morni Hills & Tikkar Tal", distance: "193.8 km", type: "Attraction", isHidden: false, id: "morni-hills" }, { name: "Nahan Kothi", distance: "196.6 km", type: "Historic Fort/Palace", isHidden: false, id: "nahan-kothi" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -36417,7 +36417,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36469,7 +36469,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -36521,7 +36521,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36573,7 +36573,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available across Panchkula's sectors", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "Reliable, same coverage as greater Chandigarh", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient temple of Guru Gorakhnath", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "ancient-temple-of-guru-gorakhnath" }, { name: "Buddhist site of worship", distance: "Within Panchkula district", type: "Archaeological Site", isHidden: false, id: "buddhist-site-of-worship" }, { name: "Dada Shambhunath, village Nahri", distance: "Within Panchkula district", type: "Temple", isHidden: false, id: "dada-shambhunath-village-nahri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -36625,7 +36625,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }, { name: "Obelisk Commemorated to the Third Battle of Panipat", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "obelisk-commemorated-to-the-third-battle-of-panipat" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -36677,7 +36677,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ibrahim Lodhi's Tomb", distance: "0.1 km", type: "Historic Tomb", isHidden: false, id: "ibrahim-lodhis-tomb" }, { name: "Tomb of Bu-Ali-Shah Qalandar", distance: "1.1 km", type: "Heritage Monument", isHidden: false, id: "tomb-of-bu-ali-shah-qalandar" }, { name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36729,7 +36729,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Obelisk Commemorated to the Third Battle of Panipat", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "obelisk-commemorated-to-the-third-battle-of-panipat" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36781,7 +36781,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Tomb of Bu-Ali-Shah Qalandar", distance: "1.1 km", type: "Heritage Monument", isHidden: false, id: "tomb-of-bu-ali-shah-qalandar" }, { name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -36833,7 +36833,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -36885,7 +36885,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -36937,7 +36937,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -36989,7 +36989,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -37041,7 +37041,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹350", notes: "Available, moderate coverage", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Kala Amb Park (8 km out) and other memorials are easiest reached by car", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "The Kala Amb Park", distance: "Within Panipat district", type: "Battlefield Memorial", isHidden: false, id: "kala-amb-park" }, { name: "Bab-i-Faiz Gate", distance: "Within Panipat district", type: "Historic Fort/Palace", isHidden: false, id: "bab-i-faiz-gate" }, { name: "Hemus Samadhi Sthal", distance: "Within Panipat district", type: "Temple", isHidden: false, id: "hemus-samadhi-sthal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -37093,7 +37093,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }, { name: "The Red Mosque", distance: "Within Rewari district", type: "Heritage Monument", isHidden: false, id: "the-red-mosque" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37145,7 +37145,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37197,7 +37197,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }, { name: "The Red Mosque", distance: "Within Rewari district", type: "Heritage Monument", isHidden: false, id: "the-red-mosque" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37249,7 +37249,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "The Red Mosque", distance: "Within Rewari district", type: "Heritage Monument", isHidden: false, id: "the-red-mosque" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -37301,7 +37301,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37353,7 +37353,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -37405,7 +37405,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baag Wala Talab", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "baag-wala-talab" }, { name: "Bhagwati Bhakti Ashram", distance: "Within Rewari district", type: "Temple", isHidden: false, id: "bhagwati-bhakti-ashram" }, { name: "Fort of Bawal", distance: "Within Rewari district", type: "Historic Fort/Palace", isHidden: false, id: "fort-of-bawal" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -37457,7 +37457,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Khokhrakot", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-khokhrakot" }, { name: "Shahjahan ki Baoli", distance: "Within Rohtak district", type: "Historic Fort/Palace", isHidden: false, id: "shahjahan-ki-baoli" }, { name: "Tilyar Convention Centre", distance: "Within Rohtak district", type: "Museum/Culture", isHidden: false, id: "tilyar-convention-centre" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -37509,7 +37509,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Farmana", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-farmana" }, { name: "Shahjahan ki Baoli", distance: "Within Rohtak district", type: "Historic Fort/Palace", isHidden: false, id: "shahjahan-ki-baoli" }, { name: "Tilyar Convention Centre", distance: "Within Rohtak district", type: "Museum/Culture", isHidden: false, id: "tilyar-convention-centre" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -37561,7 +37561,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Farmana", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-farmana" }, { name: "Ancient Site of Khokhrakot", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-khokhrakot" }, { name: "Shahjahan ki Baoli", distance: "Within Rohtak district", type: "Historic Fort/Palace", isHidden: false, id: "shahjahan-ki-baoli" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -37613,7 +37613,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Farmana", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-farmana" }, { name: "Ancient Site of Khokhrakot", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-khokhrakot" }, { name: "Tilyar Convention Centre", distance: "Within Rohtak district", type: "Museum/Culture", isHidden: false, id: "tilyar-convention-centre" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -37665,7 +37665,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Farmana", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-farmana" }, { name: "Ancient Site of Khokhrakot", distance: "Within Rohtak district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-khokhrakot" }, { name: "Shahjahan ki Baoli", distance: "Within Rohtak district", type: "Historic Fort/Palace", isHidden: false, id: "shahjahan-ki-baoli" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 200, transport: 100, activities: 80 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1800, food: 500, transport: 200, activities: 200 },
@@ -37717,7 +37717,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Dera Baba Sarsai Nath", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "dera-baba-sarsai-nath" }, { name: "Gurudwara Guru Gobind Singh", distance: "Within Sirsa district", type: "Gurudwara", isHidden: false, id: "gurudwara-guru-gobind-singh" }, { name: "Hanuman Temple (Ram Nagria)", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "hanuman-temple-ram-nagria" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -37769,7 +37769,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient site of Ther Mound", distance: "Within Sirsa district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-ther-mound" }, { name: "Gurudwara Guru Gobind Singh", distance: "Within Sirsa district", type: "Gurudwara", isHidden: false, id: "gurudwara-guru-gobind-singh" }, { name: "Hanuman Temple (Ram Nagria)", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "hanuman-temple-ram-nagria" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37821,7 +37821,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient site of Ther Mound", distance: "Within Sirsa district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-ther-mound" }, { name: "Dera Baba Sarsai Nath", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "dera-baba-sarsai-nath" }, { name: "Hanuman Temple (Ram Nagria)", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "hanuman-temple-ram-nagria" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37873,7 +37873,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient site of Ther Mound", distance: "Within Sirsa district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-ther-mound" }, { name: "Dera Baba Sarsai Nath", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "dera-baba-sarsai-nath" }, { name: "Gurudwara Guru Gobind Singh", distance: "Within Sirsa district", type: "Gurudwara", isHidden: false, id: "gurudwara-guru-gobind-singh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -37925,7 +37925,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient site of Ther Mound", distance: "Within Sirsa district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-ther-mound" }, { name: "Dera Baba Sarsai Nath", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "dera-baba-sarsai-nath" }, { name: "Gurudwara Guru Gobind Singh", distance: "Within Sirsa district", type: "Gurudwara", isHidden: false, id: "gurudwara-guru-gobind-singh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -37977,7 +37977,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient site of Ther Mound", distance: "Within Sirsa district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-ther-mound" }, { name: "Dera Baba Sarsai Nath", distance: "Within Sirsa district", type: "Temple", isHidden: false, id: "dera-baba-sarsai-nath" }, { name: "Gurudwara Guru Gobind Singh", distance: "Within Sirsa district", type: "Gurudwara", isHidden: false, id: "gurudwara-guru-gobind-singh" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2300, accommodation: 1600, food: 400, transport: 150, activities: 0 },
@@ -38029,7 +38029,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Baba Meer Mukand Sainipura", distance: "Within Sonipat district", type: "Heritage Site", isHidden: false, id: "baba-meer-mukand-sainipura" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -38081,7 +38081,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Present in the main town, thinner in outlying villages", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote sites outside the main town", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Pandav Place", distance: "Within Sonipat district", type: "Archaeological Site", isHidden: false, id: "ancient-pandav-place" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -38133,7 +38133,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }, { name: "Ch Devi Lal Herbal Nature Park", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "ch-devi-lal-herbal-nature-park" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38185,7 +38185,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }, { name: "Ch Devi Lal Herbal Nature Park", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "ch-devi-lal-herbal-nature-park" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -38237,7 +38237,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Ch Devi Lal Herbal Nature Park", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "ch-devi-lal-herbal-nature-park" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38289,7 +38289,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "4.9 km", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 500, food: 200, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1700, food: 450, transport: 300, activities: 0 },
@@ -38341,7 +38341,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38393,7 +38393,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Kalesar National Park", distance: "12.0 km", type: "National Park", isHidden: false, id: "kalesar-national-park" }, { name: "Buddhist Stupa Chaneti", distance: "18.6 km", type: "Archaeological Site", isHidden: false, id: "buddhist-stupa-chaneti" }, { name: "Adibadri", distance: "23.4 km", type: "Temple", isHidden: false, id: "adibadri" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38445,7 +38445,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -38497,7 +38497,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38549,7 +38549,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1900, food: 550, transport: 300, activities: 150 },
@@ -38601,7 +38601,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
@@ -38653,7 +38653,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Adibadri", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "adibadri" }, { name: "Ancient Site of Sugh", distance: "Within Yamuna Nagar district", type: "Archaeological Site", isHidden: false, id: "ancient-site-of-sugh" }, { name: "Bilaspur and Kapalmochan", distance: "Within Yamuna Nagar district", type: "Temple", isHidden: false, id: "bilaspur-and-kapalmochan" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 500, food: 200, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1800, food: 450, transport: 150, activities: 100 },
@@ -38705,7 +38705,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [{ name: "Chhachhrauli", distance: "26.6 km", type: "Gurudwara", isHidden: false, id: "chhachhrauli" }, { name: "Buddhist Stupa Chaneti", distance: "29.9 km", type: "Archaeological Site", isHidden: false, id: "buddhist-stupa-chaneti" }, { name: "Kalesar National Park", distance: "30.3 km", type: "National Park", isHidden: false, id: "kalesar-national-park" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 750, accommodation: 450, food: 150, transport: 50, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2400, accommodation: 1600, food: 400, transport: 200, activities: 0 },
