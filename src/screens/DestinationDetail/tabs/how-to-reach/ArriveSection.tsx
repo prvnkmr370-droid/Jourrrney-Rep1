@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
@@ -172,7 +172,7 @@ export default function ArriveSection({ destination: d, guide }: Props) {
                     onPress={() => addStop(dest)}
                     style={{ width: 90, borderRadius: 12, overflow: "hidden", borderWidth: 1, borderColor: c.border }}
                   >
-                    <Image source={{ uri: dest.image }} style={{ width: "100%", height: 60 }} contentFit="cover" />
+                    <DestImage source={{ uri: dest.image }} style={{ width: "100%", height: 60 }} contentFit="cover" />
                     <View style={{ padding: 6, backgroundColor: c.surface }}>
                       <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 10, color: c.textPrimary }} numberOfLines={1}>
                         {dest.name}

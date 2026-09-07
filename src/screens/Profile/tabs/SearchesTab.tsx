@@ -8,7 +8,7 @@
  */
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { Star } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { useRecentSearchesStore, timeAgo } from "@/store/useRecentSearchesStore";
@@ -50,7 +50,7 @@ export default function SearchesTab() {
             return (
               <View key={s.id} style={{ flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 14 }}>
                 {dest ? (
-                  <Image source={{ uri: dest.image }} style={{ width: 40, height: 40, borderRadius: 12 }} contentFit="cover" />
+                  <DestImage source={{ uri: dest.image }} style={{ width: 40, height: 40, borderRadius: 12 }} contentFit="cover" />
                 ) : (
                   <View style={{ width: 40, height: 40, borderRadius: 12, backgroundColor: c.surfaceAlt }} />
                 )}
@@ -90,7 +90,7 @@ export default function SearchesTab() {
                 onPress={() => router.push(`/destination/${d.id}`)}
                 style={{ flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 14 }}
               >
-                <Image source={{ uri: d.image }} style={{ width: 40, height: 40, borderRadius: 12 }} contentFit="cover" />
+                <DestImage source={{ uri: d.image }} style={{ width: 40, height: 40, borderRadius: 12 }} contentFit="cover" />
                 <View style={{ flex: 1 }}>
                   <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{d.name}</Text>
                   <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 2 }}>{d.state}</Text>

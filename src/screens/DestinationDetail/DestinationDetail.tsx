@@ -9,7 +9,7 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { View, Text, Pressable, ScrollView, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -90,7 +90,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           scrollEventThrottle={16}
         >
           {heroPhotos.map((uri, i) => (
-            <Image key={`${uri}-${i}`} source={{ uri }} style={{ width, height: 300 }} contentFit="cover" />
+            <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: 300 }} contentFit="cover" />
           ))}
         </ScrollView>
         <LinearGradient

@@ -4,7 +4,7 @@ import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { ChevronRight } from "lucide-react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import HeroCarousel from "./HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
@@ -218,7 +218,7 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
                   style={{ width: 150, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10 }}
                 >
                   {dest ? (
-                    <Image source={{ uri: dest.image }} style={{ width: "100%", height: 80, borderRadius: 10, marginBottom: 8 }} contentFit="cover" />
+                    <DestImage source={{ uri: dest.image }} style={{ width: "100%", height: 80, borderRadius: 10, marginBottom: 8 }} contentFit="cover" />
                   ) : (
                     <View style={{ width: "100%", height: 80, borderRadius: 10, marginBottom: 8, backgroundColor: c.surfaceAlt }} />
                   )}

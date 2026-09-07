@@ -14,7 +14,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, TextInput } from "react-native";
 import { router } from "expo-router";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { BlurView } from "expo-blur";
 import { MapPin, Shield, Search } from "lucide-react-native";
@@ -143,7 +143,7 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
     // time so it doesn't swallow touches meant for that later content.
     <View style={{ height: HERO_HEIGHT, zIndex: showSuggestions ? 20 : 0 }}>
       <Animated.View style={[{ position: "absolute", inset: 0 }, fadeStyle]}>
-        <Image source={{ uri: hero.heroImage }} style={{ width: "100%", height: HERO_HEIGHT }} contentFit="cover" />
+        <DestImage source={{ uri: hero.heroImage }} style={{ width: "100%", height: HERO_HEIGHT }} contentFit="cover" />
       </Animated.View>
 
       <LinearGradient
@@ -291,7 +291,7 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
                   borderTopWidth: i === 0 ? 0 : 1, borderTopColor: c.borderSoft,
                 }}
               >
-                <Image source={{ uri: d.image }} style={{ width: 40, height: 40, borderRadius: 10 }} contentFit="cover" />
+                <DestImage source={{ uri: d.image }} style={{ width: 40, height: 40, borderRadius: 10 }} contentFit="cover" />
                 <View style={{ flex: 1 }}>
                   <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }} numberOfLines={1}>
                     {d.name}

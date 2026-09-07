@@ -7,7 +7,7 @@
  */
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Star } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
@@ -43,7 +43,7 @@ export default function RecentlyViewedScreen() {
               onPress={() => router.push(`/destination/${d.id}`)}
               style={{ flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 12 }}
             >
-              <Image source={{ uri: d.image }} style={{ width: 64, height: 64, borderRadius: 14 }} contentFit="cover" />
+              <DestImage source={{ uri: d.image }} style={{ width: 64, height: 64, borderRadius: 14 }} contentFit="cover" />
               <View style={{ flex: 1 }}>
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>{d.name}</Text>
                 <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginBottom: 4 }}>{d.state}</Text>

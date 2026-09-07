@@ -1,5 +1,5 @@
 import { View, Text, Pressable } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { Star, MapPin } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
@@ -18,7 +18,7 @@ export default function DestinationCard({ destination, onPress, tall }: Props) {
 
   return (
     <Pressable onPress={onPress} style={{ width, height, borderRadius: 20, overflow: "hidden" }}>
-      <Image source={{ uri: destination.image }} style={{ width, height }} contentFit="cover" />
+      <DestImage source={{ uri: destination.image }} style={{ width, height }} contentFit="cover" />
       <LinearGradient
         colors={["rgba(0,0,0,0.82)", "rgba(0,0,0,0.05)", "transparent"]}
         locations={[0, 0.55, 1]}

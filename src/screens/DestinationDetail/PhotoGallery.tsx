@@ -16,7 +16,7 @@
  */
 import { useState } from "react";
 import { View, Text, Pressable, ScrollView, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, X } from "lucide-react-native";
@@ -68,7 +68,7 @@ export default function PhotoGallery({ destination: d }: Props) {
         <View style={{ flexDirection: "row", flexWrap: "wrap", paddingHorizontal: GRID_GAP, gap: GRID_GAP }}>
           {photos.map((uri, i) => (
             <Pressable key={`${uri}-${i}`} onPress={() => setViewerIndex(i)} style={{ width: tileSize, height: tileSize }}>
-              <Image source={{ uri }} style={{ width: "100%", height: "100%" }} contentFit="cover" />
+              <DestImage source={{ uri }} style={{ width: "100%", height: "100%" }} contentFit="cover" />
             </Pressable>
           ))}
         </View>
@@ -112,7 +112,7 @@ function FullScreenViewer({
         contentOffset={{ x: startIndex * width, y: 0 }}
       >
         {photos.map((uri, i) => (
-          <Image key={`${uri}-${i}`} source={{ uri }} style={{ width, height }} contentFit="contain" />
+          <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height }} contentFit="contain" />
         ))}
       </ScrollView>
 

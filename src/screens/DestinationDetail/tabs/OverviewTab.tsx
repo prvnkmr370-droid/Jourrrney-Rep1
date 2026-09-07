@@ -6,7 +6,7 @@
  * reachable from the Safety tab), passing this destination explicitly. */
 import { View, Text, Pressable } from "react-native";
 import { router } from "expo-router";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { Sparkles, Backpack, ChevronRight, MapPin } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
@@ -111,7 +111,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
                   }}
                 >
                   {place.image ? (
-                    <Image source={{ uri: place.image }} style={{ width: 72, height: 72, borderRadius: 12 }} contentFit="cover" />
+                    <DestImage source={{ uri: place.image }} style={{ width: 72, height: 72, borderRadius: 12 }} contentFit="cover" />
                   ) : (
                     <View style={{ width: 72, height: 72, borderRadius: 12, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
                       <MapPin color={c.textMuted} size={22} />

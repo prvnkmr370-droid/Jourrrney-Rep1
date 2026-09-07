@@ -7,7 +7,7 @@
  */
 import { useMemo, useState } from "react";
 import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Search, X, Settings2, Star } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
@@ -118,7 +118,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
                   onPress={() => handleSearchSelect(d)}
                   style={{ flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10 }}
                 >
-                  <Image source={{ uri: d.image }} style={{ width: 48, height: 48, borderRadius: 12 }} contentFit="cover" />
+                  <DestImage source={{ uri: d.image }} style={{ width: 48, height: 48, borderRadius: 12 }} contentFit="cover" />
                   <View>
                     <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{d.name}</Text>
                     <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{d.state} · {d.category[0]}</Text>
@@ -172,7 +172,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
                 onPress={() => onSelectDestination(d)}
                 style={{ flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 12 }}
               >
-                <Image source={{ uri: d.image }} style={{ width: 64, height: 64, borderRadius: 14 }} contentFit="cover" />
+                <DestImage source={{ uri: d.image }} style={{ width: 64, height: 64, borderRadius: 14 }} contentFit="cover" />
                 <View>
                   <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>{d.name}</Text>
                   <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginBottom: 4 }}>{d.state}</Text>

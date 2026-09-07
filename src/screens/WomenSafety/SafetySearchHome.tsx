@@ -1,7 +1,7 @@
 /** Source of truth: Figma "3.1 Safety Search Home". */
 import { useMemo } from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Shield, ChevronRight } from "lucide-react-native";
@@ -76,7 +76,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
                   onPress={() => onSelectDestination(d)}
                   style={{ flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 12 }}
                 >
-                  <Image source={{ uri: d.image }} style={{ width: 56, height: 64, borderRadius: 12 }} contentFit="cover" />
+                  <DestImage source={{ uri: d.image }} style={{ width: 56, height: 64, borderRadius: 12 }} contentFit="cover" />
                   <View style={{ flex: 1 }}>
                     <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{d.name}</Text>
                     <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginBottom: 6 }}>{d.state}</Text>

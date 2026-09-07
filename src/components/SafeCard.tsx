@@ -1,5 +1,5 @@
 import { View, Text, Pressable } from "react-native";
-import { Image } from "expo-image";
+import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { Shield } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
@@ -17,7 +17,7 @@ export default function SafeCard({ destination, onPress }: Props) {
   return (
     <Pressable onPress={onPress} style={{ width: 145, borderRadius: 20, overflow: "hidden" }}>
       <View style={{ height: 110 }}>
-        <Image source={{ uri: destination.image }} style={{ width: 145, height: 110 }} contentFit="cover" />
+        <DestImage source={{ uri: destination.image }} style={{ width: 145, height: 110 }} contentFit="cover" />
         <LinearGradient
           colors={["rgba(0,0,0,0.7)", "transparent"]}
           locations={[0, 0.6]}
