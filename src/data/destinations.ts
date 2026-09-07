@@ -2086,7 +2086,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "Best for exploring Alleppey canal town", available: true },
     ],
     nearbyPlaces: [
-      { name: "Kochi (Fort Kochi)", distance: "55 km from Alleppey", type: "Heritage Port City", isHidden: false },
+      { name: "Kochi (Fort Kochi)", distance: "55 km from Alleppey", type: "Heritage Port City", isHidden: false, id: "kochi" },
       { name: "Munnar Tea Estates", distance: "130 km", type: "Nature", isHidden: false, id: "munnar" },
       { name: "Periyar Wildlife Sanctuary", distance: "190 km", type: "Wildlife", isHidden: true, id: "periyar-tiger-reserve-thekkady" },
       { name: "Pathiramanal Island", distance: "12 km", type: "Hidden Bird Sanctuary", isHidden: true, id: "pathiramanal-island" },
@@ -2158,7 +2158,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Thekkady/Periyar Tiger Reserve", distance: "90 km", type: "Wildlife", isHidden: true, id: "periyar-tiger-reserve-thekkady" },
       { name: "Top Station (Tamil Nadu border viewpoint)", distance: "32 km", type: "Nature", isHidden: true, id: "top-station-munnar" },
-      { name: "Kochi", distance: "130 km", type: "Heritage", isHidden: true },
+      { name: "Kochi", distance: "130 km", type: "Heritage", isHidden: true, id: "kochi" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3433,7 +3433,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Kumarakom Bird Sanctuary", distance: "16 km", type: "Nature", isHidden: true, id: "kumarakom-bird-sanctuary" },
-      { name: "Kochi (Fort Kochi)", distance: "55 km", type: "Heritage Port City", isHidden: false },
+      { name: "Kochi (Fort Kochi)", distance: "55 km", type: "Heritage Port City", isHidden: false, id: "kochi" },
       { name: "Kottayam", distance: "35 km", type: "Backwaters", isHidden: false, id: "kottayam" },
     ],
     budgetBreakdown: [
