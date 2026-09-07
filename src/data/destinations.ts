@@ -1045,7 +1045,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Udaipur", distance: "115 km", type: "Heritage", isHidden: false, id: "udaipur" },
-      { name: "Bassi Wildlife Sanctuary", distance: "25 km", type: "Wildlife", isHidden: true },
+      { name: "Bassi Wildlife Sanctuary", distance: "25 km", type: "Wildlife", isHidden: true, id: "bassi-wildlife-sanctuary" },
       { name: "Menal Waterfall & Temples", distance: "90 km", type: "Nature", isHidden: true, id: "menal-waterfall-temples" },
     ],
     budgetBreakdown: [
@@ -1954,7 +1954,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Bundi", distance: "35 km", type: "Heritage", isHidden: false, id: "bundi" },
       { name: "Baroli Temple Complex", distance: "50 km", type: "Heritage", isHidden: true, id: "baroli-temples" },
-      { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true },
+      { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true, id: "darrah-mukundara-hills" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -24366,6 +24366,116 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2800,
     mustEat: ["Rajasthani thali in Jodhpur"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "bassi-wildlife-sanctuary",
+    name: "Bassi Wildlife Sanctuary",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Former Mewar Royal Hunting Grounds, Now a 15,290-Hectare Wildlife Refuge",
+    description: "Bassi Wildlife Sanctuary, about 25 km from Chittorgarh, spans 15,290 hectares of dry deciduous forest and rugged terrain along the western edge of the Vindhyachal Range, and was genuinely once the private hunting grounds of the Mewar rulers before being formally declared a sanctuary in 1988. Its landscape wraps around the Bassi and Orai dams, creating real wetland habitat alongside the forest that supports a range of Rajasthan wildlife. Just 5 km away stands Bassi Fort, a genuine 16th-century structure built by Thakur Jaimal of the Sisodia dynasty — the same Jaimal celebrated for his role defending Chittorgarh — making the sanctuary a natural pairing with a real piece of Mewar military history rather than just a standalone nature reserve.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bassi_Wildlife_Sanctuary.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bassi_Wildlife_Sanctuary.png",
+    imageCredit: "Photo: Wikiwizardinho — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "15,290 hectares of former Mewar royal hunting grounds, sanctuary since 1988" },
+      { name: "Wetland habitat around the Bassi and Orai dams" },
+      { name: "Bassi Fort, a 16th-century structure built by Thakur Jaimal, 5 km away" },
+      { name: "A quieter, less-visited alternative to Rajasthan's bigger tiger reserves" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "~25 km / ~35-40 min from Chittorgarh", costRange: "₹700–₹1,500 by cab from Chittorgarh", tips: "Combine with Bassi Fort on the same trip, given its short distance from the sanctuary." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Chittorgarh city hotels"], description: "Most visitors do this as a day trip from Chittorgarh." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,500 from Chittorgarh", notes: "Standard way to reach the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "~25 km", type: "Heritage", isHidden: false, id: "chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bassi Nature & Fort Day", morning: "Bassi Wildlife Sanctuary — nature walk or drive around the dam wetlands.", afternoon: "Bassi Fort.", evening: "Return to Chittorgarh.", stay: "Chittorgarh", meals: "Rajasthani thali (₹300–₹500)", tips: "A quieter alternative to Rajasthan's bigger reserves — go for the peaceful landscape and dam-side birdlife rather than guaranteed big-cat sightings." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A quieter, less-visited sanctuary with limited on-site tourist infrastructure"],
+      precautions: ["Arrange a driver/guide given the site's rural, less-developed setting", "Visit in daylight hours only"],
+      soloTips: ["Arrange transport with a reputable local driver rather than relying on public transport, given how quiet the site is"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked trails and dam-side viewpoints during daylight"],
+      avoidAreas: ["Unmarked forest areas alone"],
+    },
+    rating: 4.1,
+    reviews: 380,
+    mustEat: ["Rajasthani thali in Chittorgarh"],
+    packingTips: ["Comfortable walking shoes", "Binoculars", "Sun protection", "Water bottle"],
+  },
+
+  {
+    id: "darrah-mukundara-hills",
+    name: "Darrah Wildlife Sanctuary (Mukundara Hills)",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "An 18th-Century Royal Hunting Ground, Now Rajasthan's Third Tiger Reserve",
+    description: "Darrah's forests, in the hills between the Chambal River and the Mukundara range near Kota, were genuinely reserved as a private hunting ground (shikargah) for the Hada Rajput Maharaos of Kota through the 18th and 19th centuries, used exclusively for royal shikar expeditions targeting tiger, leopard, and deer. After independence, the forest was declared a wildlife sanctuary in 1955 to protect its dry deciduous habitat, and in 2004 it was merged with the neighbouring Jawahar Sagar and Chambal sanctuaries to form Mukundara Hills National Park, spanning some 227.63 sq km. In 2013 the combined area was further designated the Mukundara Hills Tiger Reserve — genuinely Rajasthan's third tiger reserve after Ranthambore and Sariska — as part of a real, ongoing effort to expand tiger habitat and range across the state.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Tiger_%F0%9F%90%85_Reserve_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/50/Tiger_%F0%9F%90%85_Reserve_04.jpg",
+    imageCredit: "Photo: Varnika Trivedi — Wikimedia Commons, CC BY 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "1 day",
+    highlights: [
+      { name: "An 18th-19th century royal shikargah (hunting ground) of Kota's Hada Rajput rulers" },
+      { name: "Sanctuary since 1955, merged into Mukundara Hills National Park in 2004" },
+      { name: "Designated Rajasthan's third tiger reserve in 2013" },
+      { name: "227.63 sq km between the Chambal River and the Mukundara hills" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "~50 km / ~1h from Kota", costRange: "₹1,200–₹2,500 by cab from Kota", tips: "Book forest-department safari permits in advance, especially since tiger numbers here are still recovering compared to Ranthambore." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Kota city hotels"], description: "Kota is the practical gateway town for this reserve." },
+    ],
+    localTransport: [
+      { mode: "Forest Department Jeep Safari", cost: "₹1,500–₹3,000 per jeep (approx.)", notes: "The standard way to explore the core zone; book in advance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "~50 km", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 800, food: 400, transport: 500, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 2500, food: 800, transport: 800, activities: 800 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 14000, accommodation: 9000, food: 1500, transport: 1500, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mukundara Hills Safari Day", morning: "Jeep safari through the core zone.", afternoon: "Return to Kota; explore Kota's riverfront and Kota Barrage.", evening: "Rest and local dinner.", stay: "Kota", meals: "Rajasthani thali (₹300–₹500)", tips: "Go in with realistic expectations on tiger sightings — this reserve's population is still smaller and less established than Ranthambore's, but the landscape and other wildlife make it a worthwhile visit regardless." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An organized, forest-department-regulated safari operation with fixed routes and trained guides"],
+      precautions: ["Stay inside the jeep at all times during safaris", "Only book through official forest-department channels"],
+      soloTips: ["Join a shared jeep safari rather than arranging informal transport"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Forest-department safari vehicles and designated entry points"],
+      avoidAreas: ["Walking outside vehicles within the core zone"],
+    },
+    rating: 4.2,
+    reviews: 720,
+    mustEat: ["Rajasthani thali in Kota"],
+    packingTips: ["Neutral-colored clothing", "Binoculars", "Sun protection", "Warm layers for early-morning safaris in winter"],
   },
 
 ];
