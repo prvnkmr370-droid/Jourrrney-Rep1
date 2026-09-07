@@ -4463,3 +4463,17 @@ SAFETY_OVERRIDES["top-station-munnar"] = {
   police: { summary: "Idukki District Police: 100", details: ["Idukki District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Munnar General Hospital — dial 108 for ambulance", details: ["Munnar's general hospital serves the town and nearby Top Station.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["pathiramanal-island"] = {
+  police: { summary: "Alappuzha District Police: 100", details: ["Alappuzha District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alappuzha Medical College — dial 108 for ambulance", details: ["Alappuzha Medical College Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service, though response to this boat-only island may take longer than on the mainland.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's boat-access-only location." },
+};
+
+SAFETY_OVERRIDES["kottayam"] = {
+  police: { summary: "Kottayam District Police: 100", details: ["Kottayam District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kottayam Medical College — dial 108 for ambulance", details: ["Kottayam Medical College Hospital is one of Kerala's major government hospitals.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kozhikode"] = {
+  police: { summary: "Kozhikode City Police: 100", details: ["Kozhikode City Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kozhikode Medical College — dial 108 for ambulance", details: ["Kozhikode Government Medical College Hospital is one of Kerala's major government hospitals.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
