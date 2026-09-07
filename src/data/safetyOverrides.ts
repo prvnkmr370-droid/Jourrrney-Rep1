@@ -4435,3 +4435,17 @@ SAFETY_OVERRIDES["ajabgarh-fort"] = {
   police: { summary: "Alwar District Police: 100", details: ["Alwar District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Alwar District Hospital — dial 108 for ambulance", details: ["Alwar District Hospital is the nearest major facility for this rural site.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response to this remote location may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
 };
+SAFETY_OVERRIDES["periyar-tiger-reserve-thekkady"] = {
+  police: { summary: "Idukki District Police: 100", details: ["Idukki District Police control room: 100.", "Forest department/KTDC staff oversee all boat safari access.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thekkady/Kumily General Hospital — dial 108 for ambulance", details: ["Kumily/Thekkady's general hospital serves the reserve area.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kuttanad"] = {
+  police: { summary: "Alappuzha District Police: 100", details: ["Alappuzha District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alappuzha Medical College — dial 108 for ambulance", details: ["Alappuzha Medical College Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["marari-beach"] = {
+  police: { summary: "Alappuzha District Police: 100", details: ["Alappuzha District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Alappuzha Medical College — dial 108 for ambulance", details: ["Alappuzha Medical College Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
