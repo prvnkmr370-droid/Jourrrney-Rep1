@@ -4636,3 +4636,12 @@ SAFETY_OVERRIDES["eravikulam-national-park"] = {
   police: { summary: "Idukki District Police: 100", details: ["Idukki District Police control room: 100.", "Forest department staff and shuttle operators are present throughout the visitor trail.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Munnar General Hospital — dial 108 for ambulance", details: ["Munnar's general hospital serves the town and nearby Eravikulam.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["vagamon"] = {
+  police: { summary: "Idukki District Police: 100", details: ["Idukki District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Vagamon/Peermade Government Hospital — dial 108 for ambulance", details: ["The nearest government hospital serves Vagamon and the surrounding Peermade area.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["ponmudi"] = {
+  police: { summary: "Thiruvananthapuram District Police: 100", details: ["Thiruvananthapuram District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thiruvananthapuram Medical College — dial 108 for ambulance", details: ["Thiruvananthapuram Medical College Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service, though response to this hill site may take longer than in the city.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

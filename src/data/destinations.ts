@@ -26928,6 +26928,116 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Warm layers — genuinely cool at altitude", "Camera", "Binoculars"],
   },
 
+  {
+    id: "vagamon",
+    name: "Vagamon",
+    state: "Kerala",
+    hidden: true,
+    tagline: "The 'Scotland of Asia', Where a Cross Hill, a Muslim Hill, and a Hindu Hill Sit Side by Side",
+    description: "Vagamon, at 1,100m on the Idukki-Kottayam district border, was first known as a home to indigenous tribal communities living alongside its forests, rivers, and hills, and later grew into a genuine multi-faith spiritual centre — a real, still-visible example of religious harmony in three adjacent hills: Kurisumala (Cross Hill), home to a Cistercian Christian monastery blending Eastern and Western spiritual traditions; Thangal Para, revered by the local Muslim community; and Murugan Hill (Mala), sacred to Hindus. The British began developing Vagamon as a hill retreat in the 1920s, establishing the tea plantations that remain among its signature landscapes today, and its cool climate, rolling meadows, and pine forests have since earned it the popular nickname \"Scotland of Asia.\" Modern Vagamon has added a real adventure-sports dimension too, hosting an International Paragliding Festival, alongside guided trekking and bird-watching that draw on the same undeveloped hill landscape that first attracted colonial planters a century ago.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Vagamon.JPG/1280px-Vagamon.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Vagamon.JPG/1280px-Vagamon.JPG",
+    imageCredit: "Photo: Honeycrisp — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Nature", "Adventure", "Spiritual"],
+    bestSeason: "September – May",
+    duration: "2–3 days",
+    highlights: [
+      { name: "Three adjacent sacred hills — Christian, Muslim, and Hindu — in genuine religious harmony" },
+      { name: "British-era tea plantations, developed from the 1920s" },
+      { name: "Nicknamed the 'Scotland of Asia' for its rolling meadows and pine forests" },
+      { name: "An annual International Paragliding Festival" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi, then road", duration: "~65 km / ~2h from Kottayam", costRange: "₹1,500–₹3,000 by cab from Kottayam", tips: "Genuinely worth combining with Munnar or Thekkady on the same regional loop, given Vagamon's central Western Ghats location." },
+    ],
+    accommodation: [
+      { type: "Base at Vagamon", priceRange: "₹1,000–₹10,000/night (estimate)", examples: ["Vagamon hill resorts", "Vagamon homestays"], description: "A range of hillside stays, many with meadow or valley views." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹200–₹600", notes: "Standard way to get between Vagamon's spread-out hills and viewpoints", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kottayam", distance: "~65 km", type: "City", isHidden: false, id: "kottayam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 1000, food: 400, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 800, transport: 600, activities: 700 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12500, accommodation: 8000, food: 1500, transport: 1000, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vagamon's Three Hills", morning: "Kurisumala (Cross Hill) monastery.", afternoon: "Tea plantation walk and Thangal Para viewpoint.", evening: "Sunset over the meadows.", stay: "Vagamon", meals: "Kerala Sadya, local highland cuisine (₹250–₹500)", tips: "Time a visit for paragliding season if that's a priority — the festival draws large crowds but also the best flying conditions." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A calm, genuinely peaceful hill destination with a strong homestay/resort culture and welcoming local community"],
+      precautions: ["Standard hillside/trekking caution", "Carry warm layers for cool evenings"],
+      soloTips: ["Comfortable for solo visitors given Vagamon's calm, low-key character and established homestay infrastructure"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Idukki District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main hill viewpoints and resort areas"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 3400,
+    mustEat: ["Kerala Sadya", "Local highland-grown produce"],
+    packingTips: ["Warm layers", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "ponmudi",
+    name: "Ponmudi",
+    state: "Kerala",
+    hidden: true,
+    tagline: "The 'Golden Peak' Above Thiruvananthapuram",
+    description: "Ponmudi — literally \"Golden Peak\" in Malayalam, after the genuine golden hues that light up the hillside at sunrise and sunset — has a real history stretching back to Neolithic-era settlement, with indigenous tribal communities inhabiting the region long before it gained wider recognition. Like many of Kerala's hill stations, it grew in prominence as a summer retreat for British colonial administrators seeking relief from the coastal plains' heat, and has since evolved into a popular hill-station destination for domestic travellers, just 61 km from Thiruvananthapuram. Its real draw remains simple and consistent: mist-covered slopes, lush Western Ghats greenery, and a cool climate that offers a genuine, easily-reached escape from the capital city below, along with hiking trails including the well-known route to Varayadumotta viewpoint.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ponmudi_hills_1.jpg/1280px-Ponmudi_hills_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ponmudi_hills_1.jpg/1280px-Ponmudi_hills_1.jpg",
+    imageCredit: "Photo: JVN5871 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "September – May",
+    duration: "1–2 days",
+    highlights: [
+      { name: "History reaching back to Neolithic-era tribal settlement" },
+      { name: "A former British colonial summer retreat" },
+      { name: "Just 61 km from Thiruvananthapuram — an easy hill-station escape" },
+      { name: "The Varayadumotta viewpoint trek" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Thiruvananthapuram then road", fromMumbai: "Fly to Thiruvananthapuram, then road", fromBangalore: "Fly to Thiruvananthapuram, then road", duration: "~61 km / ~1.5-2h from Thiruvananthapuram", costRange: "₹1,200–₹2,500 by cab from Thiruvananthapuram", tips: "The final stretch of road up to Ponmudi has genuinely sharp hairpin bends — a comfortable option if you'd rather not self-drive." },
+    ],
+    accommodation: [
+      { type: "Base at Ponmudi or Thiruvananthapuram", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Ponmudi hill resorts", "Thiruvananthapuram city hotels"], description: "A small range of hillside stays at Ponmudi itself; Thiruvananthapuram works for a day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹150–₹400", notes: "Standard way to get around locally", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Thiruvananthapuram", distance: "~61 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 800, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11000, accommodation: 6500, food: 1500, transport: 1000, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ponmudi Hill Day", morning: "Drive up from Thiruvananthapuram.", afternoon: "Varayadumotta viewpoint trek.", evening: "Sunset from the hilltop.", stay: "Ponmudi or return to Thiruvananthapuram", meals: "Kerala Sadya, local hill-station food (₹250–₹450)", tips: "Genuinely worth the early-morning drive up for mist views before they burn off by mid-morning." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, easily-accessed hill station close to the state capital with steady weekend visitor traffic"],
+      precautions: ["Watch footing on hiking trails", "Standard hillside driving caution on the hairpin road"],
+      soloTips: ["Comfortable for solo visitors given Ponmudi's proximity to Thiruvananthapuram and steady visitor traffic, especially on weekends"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Thiruvananthapuram District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main viewpoint and trail areas during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2900,
+    mustEat: ["Kerala Sadya near Ponmudi/Thiruvananthapuram"],
+    packingTips: ["Comfortable walking shoes", "Light jacket for cooler hilltop temperatures", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
