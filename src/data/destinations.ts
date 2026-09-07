@@ -6986,7 +6986,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared/Private Taxi", cost: "₹1,500–₹3,000 (half-day)", notes: "For the Aihole/Pattadakal circuit", available: true },
     ],
     nearbyPlaces: [
-      { name: "Aihole (early Chalukyan temple cluster)", distance: "35 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Aihole (early Chalukyan temple cluster)", distance: "35 km", type: "UNESCO Heritage", isHidden: true, id: "aihole" },
       { name: "Pattadakal (UNESCO World Heritage Site)", distance: "22 km", type: "UNESCO Heritage", isHidden: true, id: "pattadakal" },
       { name: "Hampi", distance: "140 km", type: "UNESCO Heritage", isHidden: false, id: "hampi" },
     ],
@@ -7052,7 +7052,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Sagara town", distance: "29 km", type: "Culture", isHidden: true },
       { name: "Linganamakki Dam", distance: "20 km", type: "Nature", isHidden: true },
-      { name: "Kollur Mookambika Temple", distance: "90 km", type: "Spiritual", isHidden: true },
+      { name: "Kollur Mookambika Temple", distance: "90 km", type: "Spiritual", isHidden: true, id: "kollur-mookambika-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 700, activities: 200 },
@@ -7183,7 +7183,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Vittala Temple Stone Chariot", distance: "2 km from Hampi Bazaar", type: "Iconic Monument", isHidden: true, id: "vittala-temple-stone-chariot", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg" },
       { name: "Hospet Town", distance: "13 km", type: "Gateway Town", isHidden: false },
-      { name: "Daroji Bear Sanctuary", distance: "15 km", type: "Wildlife", isHidden: false },
+      { name: "Daroji Bear Sanctuary", distance: "15 km", type: "Wildlife", isHidden: true, id: "daroji-bear-sanctuary" },
       { name: "Tungabhadra Dam", distance: "5 km from Hospet", type: "Nature/Dam", isHidden: false },
       { name: "Anegundi Village (across river)", distance: "6 km by road", type: "Hidden Heritage Village", isHidden: true },
       { name: "Kamalapur Archaeological Museum", distance: "4 km", type: "Museum", isHidden: false },
@@ -25366,6 +25366,174 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9800,
     mustEat: ["Filter coffee and breakfast at the summit stalls"],
     packingTips: ["Warm layers for the cold pre-dawn hilltop", "Comfortable walking shoes", "Camera", "Torch/phone light for the pre-dawn drive"],
+  },
+
+  {
+    id: "aihole",
+    name: "Aihole",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "The 'Cradle of Indian Temple Architecture', Where Chalukyan Builders Experimented for 300 Years",
+    description: "Aihole served as the first capital of the Early Chalukya dynasty, founded by Pulakeshin I in the mid-6th century CE, and functioned as a powerful mercantile guild centre whose commercial wealth genuinely underwrote three centuries of continuous temple-building experimentation, roughly the 5th through 8th centuries CE. With well over 125 temples clustered across the site — including 15 distinct prototype forms, from rock-cut cave shrines to apsidal, hut-like, and fully monumental structures — Aihole is widely regarded as the real \"cradle of Indian temple architecture,\" the place where Chalukyan builders worked out the northern Nagara style, the southern Dravida style, and the hybrid Deccan Vesara style before those forms matured elsewhere. The Durga Temple, with its distinctive curved apsidal plan and surrounding colonnaded gallery, and the simpler, older Lad Khan Temple are among the site's best-known individual structures, each representing a different stage in that centuries-long architectural experiment.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aihole_Temple_Karnataka.JPG/1280px-Aihole_Temple_Karnataka.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aihole_Temple_Karnataka.JPG/1280px-Aihole_Temple_Karnataka.JPG",
+    imageCredit: "Photo: Nithin bolar k — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "First capital of the Early Chalukya dynasty, founded mid-6th century CE" },
+      { name: "125+ temples across 15 distinct architectural prototypes" },
+      { name: "Widely called the 'cradle of Indian temple architecture'" },
+      { name: "The apsidal Durga Temple and the older Lad Khan Temple, among the site's best known" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Hubli/Belgaum then road", fromMumbai: "~600 km, long haul", fromBangalore: "~500 km, long haul", duration: "~35 km / ~45 min from Badami", costRange: "₹600–₹1,400 by cab from Badami", tips: "Genuinely worth visiting alongside Badami and Pattadakal — the three sites together trace the Chalukyas' full architectural evolution." },
+    ],
+    accommodation: [
+      { type: "Base in Badami", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Badami budget/mid-range hotels"], description: "Badami is the practical regional base for Aihole, Pattadakal, and the cave temples." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 from Badami", notes: "Standard way to reach Aihole", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Badami", distance: "~35 km", type: "Heritage", isHidden: false, id: "badami" },
+      { name: "Pattadakal", distance: "~13 km", type: "UNESCO Heritage", isHidden: true, id: "pattadakal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 900, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11000, accommodation: 7000, food: 1500, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chalukyan Architecture Trail", morning: "Badami's cave temples.", afternoon: "Pattadakal's nine-temple complex.", evening: "Aihole's 125-temple cluster, closing out the full Chalukyan story.", stay: "Badami", meals: "Karnataka thali (₹200–₹400)", tips: "Visit in this order (Badami, then Pattadakal, then Aihole, or the reverse) to genuinely trace how the architectural style developed over three centuries." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, ASI-managed heritage site with steady daytime footfall"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given the site's status as a well-organized heritage attraction"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Bagalkot District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2400,
+    mustEat: ["Karnataka thali in Badami"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "daroji-bear-sanctuary",
+    name: "Daroji Bear Sanctuary",
+    state: "Karnataka",
+    hidden: true,
+    aliases: ["Daroji Sloth Bear Sanctuary"],
+    tagline: "Asia's First Sloth Bear Sanctuary, Rebuilt From Barren Hillocks",
+    description: "Daroji Sloth Bear Sanctuary, about 15 km from Hampi in Ballari district, was declared in 1994 across more than 55.87 sq km of the former Bilikallu Reserve Forest — genuinely Asia's first sanctuary dedicated to the sloth bear. The transformation was real and substantial: the Forest Department turned what had been barren hillocks and thorny scrub into a verdant landscape by planting fruit-bearing trees, creating waterholes, and cultivating the honey and termite populations sloth bears rely on, deliberately designed to keep the bears fed within the sanctuary rather than straying into neighbouring villages. That effort brought a population that had come close to local extinction back to roughly 150 sloth bears today, alongside leopards, hyenas, wild boars, pangolins, porcupines, and star tortoises sharing the same rocky, boulder-strewn scrub terrain. The name Daroji comes from \"darwaze\" (gateway), reflecting the area's historical role as an entry point to Hampi, capital of the Vijayanagara Empire at its height.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Daroji_Bear_Sanctuary_2022_entrance_board.jpg/1280px-Daroji_Bear_Sanctuary_2022_entrance_board.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Daroji_Bear_Sanctuary_2022_entrance_board.jpg/1280px-Daroji_Bear_Sanctuary_2022_entrance_board.jpg",
+    imageCredit: "Photo: Davidindia — Wikimedia Commons, CC BY 4.0.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Declared 1994 — Asia's first sanctuary dedicated to the sloth bear" },
+      { name: "A genuine landscape restoration from barren hillocks to verdant scrub forest" },
+      { name: "Roughly 150 sloth bears today, recovered from near-local-extinction" },
+      { name: "Named for its historical role as a 'gateway' (darwaze) to Hampi" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Hubli/Bellary then road", fromMumbai: "~600 km, long haul", fromBangalore: "~340 km / ~6h from Bengaluru", duration: "~15 km / ~25-30 min from Hampi", costRange: "₹500–₹1,200 by cab from Hampi", tips: "Evening visits (roughly 5-6:30pm) are genuinely the best time to see bears emerging to feed." },
+    ],
+    accommodation: [
+      { type: "Base in Hampi Bazaar or Hospet", priceRange: "₹600–₹6,000/night (estimate)", examples: ["Hampi Bazaar guesthouses", "Hospet hotels"], description: "Hampi Bazaar or Hospet both work as a base for this short trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹500–₹1,200 from Hampi", notes: "Standard way to reach the sanctuary viewpoint", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hampi", distance: "~15 km", type: "Heritage", isHidden: false, id: "hampi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1800, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 10000, accommodation: 6500, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hampi & Daroji Evening", morning: "Hampi ruins.", afternoon: "Rest and travel to Daroji.", evening: "Sloth bear viewing at the sanctuary's designated viewpoint.", stay: "Hampi Bazaar or Hospet", meals: "South Indian thali (₹150–₹300)", tips: "Bring binoculars — viewing is from a fixed platform at a respectful distance from the bears." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An organized, forest-department-managed viewing platform with fixed hours and staff presence"],
+      precautions: ["Stay on the designated viewing platform at all times", "Only visit during official hours with forest-department staff present"],
+      soloTips: ["Comfortable for solo visits given the sanctuary's organized, staffed viewing setup"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Ballari District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The designated bear-viewing platform"],
+      avoidAreas: ["Leaving the viewing platform or approaching the bears"],
+    },
+    rating: 4.5,
+    reviews: 2900,
+    mustEat: ["South Indian thali in Hampi Bazaar"],
+    packingTips: ["Binoculars", "Neutral-colored clothing", "Water bottle"],
+  },
+
+  {
+    id: "kollur-mookambika-temple",
+    name: "Kollur Mookambika Temple",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "A 1,200-Year-Old Temple Consecrated by Adi Shankaracharya Himself",
+    description: "Kollur Mookambika Temple, in Udupi district, is genuinely believed to be around 1,200 years old and holds real significance as one of the seven Mukti Kshetras (abodes of salvation) associated with the sage Parashurama. Tradition holds that Adi Shankaracharya, on a visit here, personally consecrated the temple's central image of the goddess (a form of Parvati) using an idol cast in panchaloha, an alloy of five metals — gold, silver, copper, iron, and lead — and shaped the temple's ongoing rituals through his own prescriptions. The goddess Mookambika is worshipped specifically as the deity of knowledge, speech, and the arts, drawing devotees seeking blessings for learning and creative pursuits rather than more general worship. Over the centuries, regional rulers including the Keladi Nayaka kings Shankanna Nayaka and Shivappa Nayaka made real, documented donations and renovations to the temple, reflecting its sustained importance across successive dynasties.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg/1280px-Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg/1280px-Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg",
+    imageCredit: "Photo: A.Murali — Wikimedia Commons, CC0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Roughly 1,200 years old, one of the seven Mukti Kshetras of Parashurama tradition" },
+      { name: "Consecrated, per tradition, by Adi Shankaracharya himself" },
+      { name: "A panchaloha (five-metal) idol of the goddess Mookambika" },
+      { name: "Worshipped specifically as the deity of knowledge, speech, and the arts" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Mangaluru then road", fromMumbai: "Fly to Mangaluru, then road", fromBangalore: "~380 km / ~8h from Bengaluru", duration: "~135 km / ~3h from Mangaluru", costRange: "₹2,500–₹5,000 by cab from Mangaluru", tips: "Combine with a Gokarna or Jog Falls regional trip, given Kollur's position along the coastal-to-Western-Ghats route." },
+    ],
+    accommodation: [
+      { type: "Base in Kollur or Udupi", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Kollur pilgrim guesthouses", "Udupi hotels"], description: "Kollur has straightforward pilgrim accommodation; Udupi works as a wider regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹2,500–₹5,000 from Mangaluru", notes: "Standard way to reach Kollur from the coast", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gokarna", distance: "~140 km", type: "Beach Town", isHidden: false, id: "gokarna" },
+      { name: "Jog Falls", distance: "~95 km", type: "Waterfall", isHidden: false, id: "jog-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 350, transport: 700, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 700, transport: 1200, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 7500, food: 1500, transport: 2000, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kollur Pilgrimage Day", morning: "Mookambika Temple darshan.", afternoon: "Kodachadri Hill viewpoint nearby, if time allows.", evening: "Return toward Udupi or continue to Jog Falls.", stay: "Kollur or Udupi", meals: "Simple South Indian pilgrim food (₹150–₹300)", tips: "Genuinely worth checking festival calendars — Navaratri here draws especially large devotee crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-organized pilgrimage temple with steady devotee footfall and on-site staff"],
+      precautions: ["Dress modestly", "Expect crowds during major festivals like Navaratri"],
+      soloTips: ["Comfortable for solo daytime visits given the temple's status as a major, well-organized pilgrimage site"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Udupi District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 6100,
+    mustEat: ["Simple South Indian pilgrim food in Kollur"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
 ];

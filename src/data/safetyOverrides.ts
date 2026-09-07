@@ -4505,3 +4505,17 @@ SAFETY_OVERRIDES["nandi-hills"] = {
   police: { summary: "Chikkaballapur District Police: 100", details: ["Chikkaballapur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Chikkaballapur District Hospital — dial 108 for ambulance", details: ["Chikkaballapur District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["aihole"] = {
+  police: { summary: "Bagalkot District Police: 100", details: ["Bagalkot District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Badami General Hospital — dial 108 for ambulance", details: ["Badami's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["daroji-bear-sanctuary"] = {
+  police: { summary: "Ballari District Police: 100", details: ["Ballari District Police control room: 100.", "Forest department staff oversee the viewing platform.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Hospet General Hospital — dial 108 for ambulance", details: ["Hospet's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kollur-mookambika-temple"] = {
+  police: { summary: "Udupi District Police: 100", details: ["Udupi District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Udupi District Hospital — dial 108 for ambulance", details: ["Udupi District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
