@@ -1046,7 +1046,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Udaipur", distance: "115 km", type: "Heritage", isHidden: false, id: "udaipur" },
       { name: "Bassi Wildlife Sanctuary", distance: "25 km", type: "Wildlife", isHidden: true },
-      { name: "Menal Waterfall & Temples", distance: "90 km", type: "Nature", isHidden: true },
+      { name: "Menal Waterfall & Temples", distance: "90 km", type: "Nature", isHidden: true, id: "menal-waterfall-temples" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -24199,6 +24199,61 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1200,
     mustEat: ["Rajasthani thali in Bikaner"],
     packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "menal-waterfall-temples",
+    name: "Menal Waterfall & Temples",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "The 'Mini Khajuraho' of Rajasthan, Where Temples Flank a 150-Foot Gorge",
+    description: "Menal, a village in Chittorgarh district about 90 km from Chittorgarh town, takes its name from \"Maha\" and \"Nala\" — roughly \"great gorge\" — for the deep ravine cut by the Menali river, which drops over 150 feet here in a waterfall that swells dramatically during the monsoon before joining the Banas and Badech rivers downstream. The temple complex flanking both sides of the falls was built in the 11th century CE by Someshvara Chahamana and his queen Suhavadevi of the Shakambhari dynasty, its richly-carved Shaivite and tantric-tradition sculpture earning Menal a real, widely-used nickname: the \"Mini Khajuraho\" of Rajasthan. Centuries later, the site's setting so appealed to Prithviraj Chauhan, the celebrated Chauhan-dynasty ruler, that he built Rusirani Palace on the riverbank here — a genuine layering of 11th-century temple architecture and 12th-century royal patronage around a single natural gorge.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mahanal_Temple%2C_Menal%2C_Rajasthan.jpg/1280px-Mahanal_Temple%2C_Menal%2C_Rajasthan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mahanal_Temple%2C_Menal%2C_Rajasthan.jpg/1280px-Mahanal_Temple%2C_Menal%2C_Rajasthan.jpg",
+    imageCredit: "Photo: Lectskvc — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Nature", "Spiritual"],
+    bestSeason: "July – February (waterfall fullest during/after monsoon)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "An 11th-century Shiva temple complex built by Someshvara Chahamana and Queen Suhavadevi" },
+      { name: "A 150+ foot waterfall on the Menali river, especially dramatic during monsoon" },
+      { name: "Widely nicknamed the 'Mini Khajuraho' of Rajasthan for its richly-carved sculpture" },
+      { name: "Rusirani Palace, built on the riverbank by Prithviraj Chauhan" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh/Bhilwara — long haul", fromMumbai: "Via Chittorgarh/Bhilwara — long haul", fromBangalore: "Via Chittorgarh/Bhilwara — long haul", duration: "~90 km / ~2h from Chittorgarh", costRange: "₹1,500–₹3,000 by cab from Chittorgarh", tips: "Visit soon after monsoon (roughly July-October) for the fullest waterfall; the temples are worth seeing year-round." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh or Bhilwara", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Chittorgarh city hotels", "Bhilwara city hotels"], description: "Most visitors do this as a day trip rather than staying near Menal itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip from Chittorgarh)", cost: "₹1,500–₹3,000", notes: "Standard way to visit given the site's rural location", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "~90 km", type: "Heritage", isHidden: false, id: "chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 400, transport: 700, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2500, food: 800, transport: 1200, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 13000, accommodation: 8000, food: 1500, transport: 2000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Menal Day Trip", morning: "Drive from Chittorgarh to Menal.", afternoon: "Menal temple complex and waterfall viewpoint.", evening: "Return to Chittorgarh.", stay: "Chittorgarh", meals: "Rajasthani thali (₹300–₹500)", tips: "Watch footing near the gorge edge, especially when the falls are running high after monsoon." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known heritage/nature site, though quieter and more rural than Rajasthan's major monuments"],
+      precautions: ["Arrange a driver given the rural, somewhat remote location", "Watch footing carefully near the gorge and waterfall edges", "Visit in daylight hours only"],
+      soloTips: ["Arrange transport and timing with a reputable local driver rather than relying on public transport, given the site's remote setting"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds and marked viewpoints during daylight"],
+      avoidAreas: ["The gorge edge and waterfall rocks, especially when wet or during high monsoon flow"],
+    },
+    rating: 4.4,
+    reviews: 650,
+    mustEat: ["Rajasthani thali in Chittorgarh"],
+    packingTips: ["Comfortable walking shoes with good grip", "Sun protection", "Camera", "Water bottle"],
   },
 
 ];
