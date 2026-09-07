@@ -4622,3 +4622,17 @@ SAFETY_OVERRIDES["thrissur"] = {
   police: { summary: "Thrissur City Police: 100", details: ["Thrissur City Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Thrissur Medical College — dial 108 for ambulance", details: ["Thrissur Medical College Hospital (Jubilee Mission and Government Medical College) serves the city.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["padmanabhapuram-palace"] = {
+  police: { summary: "Kanyakumari District Police: 100", details: ["Kanyakumari District Police control room: 100 (the palace is geographically within Tamil Nadu).", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181 (Kerala-side reference)"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thuckalay Government Hospital — dial 108 for ambulance", details: ["Thuckalay's government hospital is the nearest major facility.", "Tamil Nadu's 108 ambulance service (shared emergency number with Kerala) is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["silent-valley-national-park"] = {
+  police: { summary: "Palakkad District Police: 100", details: ["Palakkad District Police control room: 100.", "Forest department staff oversee all permitted park access.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mannarkkad Taluk Hospital — dial 108 for ambulance", details: ["Mannarkkad Taluk Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service, though response to this remote reserve may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote, permit-controlled location." },
+};
+
+SAFETY_OVERRIDES["eravikulam-national-park"] = {
+  police: { summary: "Idukki District Police: 100", details: ["Idukki District Police control room: 100.", "Forest department staff and shuttle operators are present throughout the visitor trail.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Munnar General Hospital — dial 108 for ambulance", details: ["Munnar's general hospital serves the town and nearby Eravikulam.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
