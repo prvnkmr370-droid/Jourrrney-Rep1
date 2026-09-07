@@ -4645,3 +4645,17 @@ SAFETY_OVERRIDES["ponmudi"] = {
   police: { summary: "Thiruvananthapuram District Police: 100", details: ["Thiruvananthapuram District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Thiruvananthapuram Medical College — dial 108 for ambulance", details: ["Thiruvananthapuram Medical College Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service, though response to this hill site may take longer than in the city.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["edakkal-caves"] = {
+  police: { summary: "Wayanad District Police: 100", details: ["Wayanad District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Sultan Bathery Taluk Hospital — dial 108 for ambulance", details: ["Sultan Bathery Taluk Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["banasura-sagar-dam"] = {
+  police: { summary: "Wayanad District Police: 100", details: ["Wayanad District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kalpetta District Hospital — dial 108 for ambulance", details: ["Kalpetta District Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["chembra-peak"] = {
+  police: { summary: "Wayanad District Police: 100", details: ["Wayanad District Police control room: 100.", "Forest department staff oversee all permitted trek access.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Meppadi/Kalpetta Hospital — dial 108 for ambulance", details: ["Meppadi and Kalpetta hospitals serve the trek's trailhead area.", "Kerala's 108 ambulance service is a well-documented, free emergency service, though response times on the trail itself may be longer.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the trek's remote terrain." },
+};
