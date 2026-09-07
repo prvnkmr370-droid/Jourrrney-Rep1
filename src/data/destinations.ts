@@ -1634,7 +1634,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Alwar (Bala Quila, Sariska)", distance: "55 km", type: "Heritage", isHidden: false, id: "alwar" },
-      { name: "Ajabgarh (a related, less-visited ruined fort)", distance: "5 km", type: "Heritage", isHidden: true },
+      { name: "Ajabgarh (a related, less-visited ruined fort)", distance: "5 km", type: "Heritage", isHidden: true, id: "ajabgarh-fort" },
       { name: "Jaipur", distance: "85 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
@@ -24476,6 +24476,62 @@ export const DESTINATIONS: Destination[] = [
     reviews: 720,
     mustEat: ["Rajasthani thali in Kota"],
     packingTips: ["Neutral-colored clothing", "Binoculars", "Sun protection", "Warm layers for early-morning safaris in winter"],
+  },
+
+  {
+    id: "ajabgarh-fort",
+    name: "Ajabgarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 17th-Century Fort With a Secret Tunnel to Its Own Temple",
+    description: "Ajabgarh Fort, in the Aravalli hills of Alwar district between Bhangarh and Pratapgarh, was built in the 17th century by Raja Madho Singh — the same Kachwaha-dynasty ruler credited with founding neighbouring Bhangarh — as a defensive and residential outpost combining Rajput and Mughal architectural elements. Its stone walls, carved gateways, palace ruins, courtyards, and stepwells are genuine, if today largely unmaintained and partially collapsed. The fort's most distinctive real feature is an underground tunnel connecting it directly to the nearby Shri Raghunathji Temple, built in 1635 — historically used, per local tradition, by royal women to move safely and unseen between the fort and the temple. Often visited as a quieter stepping stone en route to the far more famous Bhangarh Fort nearby, Ajabgarh offers a genuinely atmospheric, largely unrestored ruin without Bhangarh's crowds or legend-driven tourism.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ajabgarh_Fort_%2830443409585%29.jpg/1280px-Ajabgarh_Fort_%2830443409585%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ajabgarh_Fort_%2830443409585%29.jpg/1280px-Ajabgarh_Fort_%2830443409585%29.jpg",
+    imageCredit: "Photo: Mike Prince from Bangalore, India — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "1–1.5 hours",
+    highlights: [
+      { name: "Built 17th century by Raja Madho Singh of the Kachwaha dynasty" },
+      { name: "An underground tunnel connecting the fort to the 1635 Shri Raghunathji Temple" },
+      { name: "Genuine Rajput-Mughal architecture, largely unrestored" },
+      { name: "A quieter alternative or stepping stone to nearby Bhangarh Fort" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur/Alwar — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~3-4 km from Bhangarh Fort", costRange: "₹2,000–₹4,000 by cab from Jaipur (round trip, combined with Bhangarh)", tips: "Genuinely worth combining with a Bhangarh Fort visit on the same day, given their close proximity." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur or Alwar", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Jaipur city hotels", "Alwar town hotels"], description: "Most visitors do this as part of a Bhangarh day trip rather than staying nearby." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip from Jaipur)", cost: "₹2,000–₹4,000", notes: "Standard way to visit, typically combined with Bhangarh Fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhangarh Fort", distance: "~3-4 km", type: "Heritage", isHidden: true, id: "bhangarh-fort" },
+      { name: "Jaipur", distance: "~85 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 700, food: 400, transport: 700, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 3000, food: 1000, transport: 1200, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 25000, accommodation: 20000, food: 2000, transport: 2000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhangarh & Ajabgarh Ruins", morning: "Bhangarh Fort.", afternoon: "Ajabgarh Fort and Shri Raghunathji Temple.", evening: "Return to Jaipur.", stay: "Jaipur", meals: "Roadside dhaba lunch (₹150–₹250), Rajasthani thali dinner (₹300–₹500)", tips: "A quieter, less-visited complement to Bhangarh — go for the genuine architectural interest without the crowds." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A quieter heritage site typically visited alongside the more heavily-trafficked Bhangarh Fort"],
+      precautions: ["Visit only during daylight hours", "Watch footing among the unrestored, partially-collapsed ruins", "Arrange a driver given the remote, rural setting"],
+      soloTips: ["Visit as part of an organized Bhangarh day trip rather than arranging separate, independent transport"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main fort ruins and temple during daylight hours"],
+      avoidAreas: ["Unstable or collapsed structures within the ruins", "The site after dark"],
+    },
+    rating: 4.0,
+    reviews: 340,
+    mustEat: ["Roadside dhaba food en route", "Rajasthani thali in Jaipur/Alwar"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle", "Camera"],
   },
 
 ];
