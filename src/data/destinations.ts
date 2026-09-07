@@ -2066,7 +2066,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wellness", "Culture"],
     bestSeason: "September – March",
     duration: "5–7 days",
-    highlights: [{ name: "Houseboat in Alleppey" }, { name: "Vembanad Lake" }, { name: "Kumarakom Bird Sanctuary" }, { name: "Kochi Fort area" }, { name: "Ayurvedic treatments" }],
+    highlights: [{ name: "Houseboat in Alleppey" }, { name: "Vembanad Lake" }, { name: "Kumarakom Bird Sanctuary", id: "kumarakom-bird-sanctuary" }, { name: "Kochi Fort area" }, { name: "Ayurvedic treatments" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "3h direct to Kochi", fromMumbai: "2h direct to Kochi", fromBangalore: "1.5h to Kochi", duration: "1.5–3h to Kochi", costRange: "₹3,000–₹12,000", tips: "Kochi (COK) is the main hub. Trivandrum and Calicut are alternatives." },
       { mode: "Train", icon: "🚂", fromDelhi: "Kerala Express – 44h", fromMumbai: "Netravati Express – 26h", fromBangalore: "Island Express – 12h", duration: "12–44h", costRange: "₹400–₹2,500", tips: "Book sleeper or 3AC for long routes. Alleppey (Alappuzha) station for backwaters." },
@@ -2139,7 +2139,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Hill Station", "Nature", "Wildlife"],
     bestSeason: "September – March",
     duration: "2–3 days",
-    highlights: [{ name: "Tea plantations & Tata Tea Museum" }, { name: "Eravikulam National Park (Nilgiri Tahr)" }, { name: "Mattupetty Dam & Lake" }, { name: "Anamudi Peak (South India's highest)" }, { name: "Top Station viewpoint" }],
+    highlights: [{ name: "Tea plantations & Tata Tea Museum" }, { name: "Eravikulam National Park (Nilgiri Tahr)" }, { name: "Mattupetty Dam & Lake" }, { name: "Anamudi Peak (South India's highest)" }, { name: "Top Station viewpoint", id: "top-station-munnar" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Aluva/Ernakulam, then ~4h road — long haul total", fromMumbai: "Via Ernakulam — ~26–28h", fromBangalore: "Via Ernakulam/Coimbatore — ~14–16h", duration: "~4h road from Aluva/Ernakulam", costRange: "₹500–₹2,500 (train) + ₹1,500–₹3,000 (local transfer)", tips: "Aluva (near Kochi) is the nearest railhead with strong long-distance connections." },
       { mode: "Road", icon: "🚗", fromDelhi: "Long haul, not practical to drive", fromMumbai: "Long haul", fromBangalore: "Via Coimbatore — 8–9h", duration: "~4h from Kochi/Ernakulam; ~4–5h from Madurai", costRange: "₹3,500–₹6,000 cab from Kochi", tips: "The ghat road from Kochi is genuinely scenic but winding — allow real time." },
@@ -2157,7 +2157,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Thekkady/Periyar Tiger Reserve", distance: "90 km", type: "Wildlife", isHidden: true, id: "periyar-tiger-reserve-thekkady" },
-      { name: "Top Station (Tamil Nadu border viewpoint)", distance: "32 km", type: "Nature", isHidden: true },
+      { name: "Top Station (Tamil Nadu border viewpoint)", distance: "32 km", type: "Nature", isHidden: true, id: "top-station-munnar" },
       { name: "Kochi", distance: "130 km", type: "Heritage", isHidden: true },
     ],
     budgetBreakdown: [
@@ -2225,7 +2225,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "130 km", type: "Hill Station", isHidden: false, id: "munnar" },
-      { name: "Cherai Beach", distance: "25 km", type: "Coastal", isHidden: true },
+      { name: "Cherai Beach", distance: "25 km", type: "Coastal", isHidden: true, id: "cherai-beach" },
       { name: "Kerala Backwaters (Alleppey)", distance: "60 km", type: "Nature", isHidden: false, id: "kerala" },
     ],
     budgetBreakdown: [
@@ -3432,7 +3432,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "Beach, pier, and town-centre areas are walkable", available: true },
     ],
     nearbyPlaces: [
-      { name: "Kumarakom Bird Sanctuary", distance: "16 km", type: "Nature", isHidden: false },
+      { name: "Kumarakom Bird Sanctuary", distance: "16 km", type: "Nature", isHidden: true, id: "kumarakom-bird-sanctuary" },
       { name: "Kochi (Fort Kochi)", distance: "55 km", type: "Heritage Port City", isHidden: false },
       { name: "Kottayam", distance: "35 km", type: "Backwaters", isHidden: true },
     ],
@@ -24702,6 +24702,173 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2100,
     mustEat: ["Fresh grilled seafood", "Kerala fish curry", "Karimeen pollichathu"],
     packingTips: ["Sun protection", "Swimwear", "Comfortable sandals", "Insect repellent"],
+  },
+
+  {
+    id: "kumarakom-bird-sanctuary",
+    name: "Kumarakom Bird Sanctuary",
+    state: "Kerala",
+    hidden: true,
+    tagline: "India's First Scientifically-Developed Bird Sanctuary, Grown From a 19th-Century Mangrove Patch",
+    description: "Kumarakom Bird Sanctuary began life as Baker's Estate in 1847, when English missionary and farmer Alfred George Baker was granted 500 acres of wetland along Vembanad Lake by the local king to develop. Baker planted mangroves across just 10 acres on the southern bank of the River Kavanar and largely left the rest of the land alone — local and migratory birds gradually adopted the mangrove patch as their own, and Baker's descendant Henry later developed the growing sanctuary further to draw visitors. Today, spanning 14 acres, it's genuinely recognised as India's first scientifically formed and preserved bird sanctuary, home to roughly 180 bird species, and was formally declared the Kumarakom (or Vembanad) Bird Sanctuary in 1991. Migratory birds including the Siberian stork, egret, darter, and heron arrive alongside resident species, with the surrounding backwaters and paddy fields adding a genuinely rich wetland ecosystem beyond the sanctuary's own boundary.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kumarakom_Bird_Sanctuary_01.jpg/1280px-Kumarakom_Bird_Sanctuary_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kumarakom_Bird_Sanctuary_01.jpg/1280px-Kumarakom_Bird_Sanctuary_01.jpg",
+    imageCredit: "Photo: Ganesh Mohan T — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature"],
+    bestSeason: "November – February (peak migratory season)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Grown from a 10-acre mangrove patch planted in 1847 by Alfred George Baker" },
+      { name: "India's first scientifically formed and preserved bird sanctuary" },
+      { name: "Roughly 180 bird species, including migratory Siberian storks" },
+      { name: "Formally declared the Kumarakom (Vembanad) Bird Sanctuary in 1991" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi, then road", duration: "~50 km / ~1.5h from Kochi", costRange: "₹1,200–₹2,500 by cab from Kochi", tips: "Early morning offers both the best birdlife activity and cooler walking conditions." },
+    ],
+    accommodation: [
+      { type: "Base in Kumarakom", priceRange: "₹1,500–₹15,000/night (estimate)", examples: ["Kumarakom lakeside resorts", "Kumarakom budget guesthouses"], description: "Kumarakom itself has a wide range of backwater-facing accommodation." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500 from Kochi", notes: "Standard way to reach Kumarakom", available: true },
+      { mode: "Boat/Houseboat", cost: "Varies by package", notes: "A scenic alternative approach via Vembanad Lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kochi", distance: "~50 km", type: "City", isHidden: false, id: "kochi" },
+      { name: "Alleppey", distance: "~35 km", type: "Backwater Town", isHidden: false, id: "alleppey" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 1500, food: 350, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 3000, food: 800, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 15000, accommodation: 10000, food: 1500, transport: 1200, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kumarakom Wetlands Day", morning: "Bird sanctuary walk at dawn.", afternoon: "Vembanad Lake boat ride.", evening: "Sunset over the backwaters.", stay: "Kumarakom", meals: "Kerala Sadya, fresh backwater fish (₹250–₹500)", tips: "Bring binoculars — many species are visible only at a distance across the wetland canopy." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-established, staffed nature reserve with marked trails and steady visitor traffic"],
+      precautions: ["Stick to marked boardwalks and trails", "Standard wetland/mosquito precautions"],
+      soloTips: ["Comfortable for solo visitors given the sanctuary's marked trails and regular daytime footfall"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Kottayam District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked boardwalks and trails within the sanctuary"],
+      avoidAreas: ["Off-trail wetland areas"],
+    },
+    rating: 4.4,
+    reviews: 2600,
+    mustEat: ["Kerala Sadya", "Fresh backwater fish curry"],
+    packingTips: ["Binoculars", "Insect repellent", "Sun protection", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "cherai-beach",
+    name: "Cherai Beach",
+    state: "Kerala",
+    hidden: true,
+    tagline: "A 10km Vypin Island Beach Born From a 14th-Century Flood",
+    description: "Cherai Beach sits on Vypin Island, just north of Fort Kochi, on land that genuinely traces back to the great flood of 1341 CE — a deluge that redirected the Periyar river's course and deposited the sand that formed Vypin's new coastal landscape. Before the Portuguese arrived in the 16th century, the island held only a small indigenous fishing community; the Portuguese introduced Catholicism, and subsequent Dutch and British colonial presence added further layers to the island's trading-hub history. Cherai itself, a roughly 10 km stretch of sandy beach along Vypin's western side, has real modern significance too: it's the birthplace of Mathai Manjooran and Sahodaran Ayyappan, two prominent figures in modern Kerala's social and political history. Today it's a genuinely popular, easy-to-reach beach from Kochi, backed by coconut groves and Vembanad Lake's backwaters on its inland side.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/White_water_kerala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/White_water_kerala.jpg",
+    imageCredit: "Photo: RIDH-1 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Beach"],
+    bestSeason: "November – February",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Formed by the great flood of 1341 CE that reshaped the Periyar river's course" },
+      { name: "A ~10 km sandy stretch on Vypin Island, backed by coconut groves and backwaters" },
+      { name: "Layered Portuguese, Dutch, and British colonial history" },
+      { name: "Birthplace of modern Kerala social reformers Mathai Manjooran and Sahodaran Ayyappan" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi, then road", duration: "~25 km / ~1h from Fort Kochi", costRange: "₹500–₹1,200 by cab from Kochi", tips: "The Vypin ferry from Fort Kochi is a scenic alternative to the road route for at least part of the trip." },
+    ],
+    accommodation: [
+      { type: "Base at Cherai or Kochi", priceRange: "₹1,200–₹10,000/night (estimate)", examples: ["Cherai beach resorts", "Fort Kochi hotels"], description: "Cherai itself has a good range of beachfront stays; Fort Kochi works as an alternative base." },
+    ],
+    localTransport: [
+      { mode: "Ferry + Taxi", cost: "₹500–₹1,200 total from Kochi", notes: "Ferry across to Vypin, then a short taxi/auto ride", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kochi", distance: "~25 km", type: "City", isHidden: false, id: "kochi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 1200, food: 350, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 13000, accommodation: 9000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vypin Island Beach Day", morning: "Ferry to Vypin Island.", afternoon: "Cherai Beach — swimming and coastal walk.", evening: "Sunset over the Arabian Sea, dinner at a beachside shack.", stay: "Cherai or Fort Kochi", meals: "Fresh seafood, Kerala fish curry (₹300–₹600)", tips: "The beach's inland side, facing the backwaters, is a genuinely different (and often quieter) experience from the sea-facing side." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A popular, well-established beach with steady daytime visitor traffic and beachfront resorts"],
+      precautions: ["Check currents before swimming", "Standard beach caution around dusk"],
+      soloTips: ["Comfortable for solo visitors given the beach's popularity and established tourist infrastructure"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Ernakulam District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main beach area during daylight and early evening"],
+      avoidAreas: ["Swimming during rough sea conditions"],
+    },
+    rating: 4.5,
+    reviews: 4100,
+    mustEat: ["Fresh seafood", "Kerala fish curry", "Coconut water from beachside vendors"],
+    packingTips: ["Sun protection", "Swimwear", "Comfortable sandals"],
+  },
+
+  {
+    id: "top-station-munnar",
+    name: "Top Station",
+    state: "Kerala",
+    hidden: true,
+    tagline: "Ruins of a Colonial-Era Tea Ropeway Terminal, 1,700m Up on the Tamil Nadu Border",
+    description: "Top Station, about 32 km from Munnar town at 1,700 metres in the Kannan Devan Hills, sits directly on the Kerala-Tamil Nadu border and offers genuinely sweeping views over both states. Built in 1902, it was once the highest railway station in the area, serving as the uppermost terminal of the Kottagudi Aerial Ropeway and the Kundala Valley Railway — a real, working piece of colonial-era tea infrastructure, transshipping tea grown on the Kannan Devan Hill plantations across the border into then-Madras for onward transport and shipment to England. The Great Flood of 99 (1924 in the Malayalam calendar) genuinely destroyed the station, and it was never rebuilt; only fragments of cement and the ruins of old ropeway lines remain visible today, a quiet historical footnote beneath what is now simply one of the region's best panoramic viewpoints.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Munnar_Top_Station.jpg/1280px-Munnar_Top_Station.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Munnar_Top_Station.jpg/1280px-Munnar_Top_Station.jpg",
+    imageCredit: "Photo: BinoBose — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "1,700m viewpoint straddling the Kerala-Tamil Nadu border" },
+      { name: "Built 1902 as the terminal of a colonial-era tea ropeway and railway" },
+      { name: "Destroyed by the Great Flood of 1924 and never rebuilt — ruins still visible" },
+      { name: "Sweeping panoramic views over both Munnar and Tamil Nadu" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi/Coimbatore, then road", duration: "~32 km / ~1h from Munnar town", costRange: "₹700–₹1,500 by cab from Munnar", tips: "Go early morning before clouds roll in — the viewpoint is genuinely often fogged over by midday." },
+    ],
+    accommodation: [
+      { type: "Base in Munnar", priceRange: "₹800–₹15,000/night (estimate)", examples: ["Munnar budget hotels", "Munnar resort hotels"], description: "Munnar town is the practical base for this half-day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,500 from Munnar", notes: "Standard way to reach Top Station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Munnar", distance: "~32 km", type: "Hill Station", isHidden: false, id: "munnar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 350, transport: 400, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1000, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Munnar Viewpoint Circuit", morning: "Drive to Top Station for the border-straddling panoramic view.", afternoon: "Eravikulam National Park.", evening: "Return to Munnar town.", stay: "Munnar", meals: "Kerala Sadya (₹250–₹400)", tips: "Combine with other Munnar viewpoints on the same drive to make the most of the round trip." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A popular, regularly-visited viewpoint with steady daytime foot traffic and local stalls"],
+      precautions: ["Carry a light jacket — genuinely cold and windy at this altitude", "Watch footing near the ropeway ruins"],
+      soloTips: ["Comfortable for solo daytime visits given the steady flow of visitors and local stalls at the viewpoint"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Idukki District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main viewpoint and marked areas"],
+      avoidAreas: ["Unstable ground near the old ropeway/railway ruins"],
+    },
+    rating: 4.4,
+    reviews: 3100,
+    mustEat: ["Kerala Sadya in Munnar town"],
+    packingTips: ["Light jacket for altitude", "Comfortable walking shoes", "Camera"],
   },
 
 ];
