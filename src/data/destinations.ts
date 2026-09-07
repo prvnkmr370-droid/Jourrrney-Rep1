@@ -6987,7 +6987,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Aihole (early Chalukyan temple cluster)", distance: "35 km", type: "UNESCO Heritage", isHidden: true },
-      { name: "Pattadakal (UNESCO World Heritage Site)", distance: "22 km", type: "UNESCO Heritage", isHidden: true },
+      { name: "Pattadakal (UNESCO World Heritage Site)", distance: "22 km", type: "UNESCO Heritage", isHidden: true, id: "pattadakal" },
       { name: "Hampi", distance: "140 km", type: "UNESCO Heritage", isHidden: false, id: "hampi" },
     ],
     budgetBreakdown: [
@@ -7118,7 +7118,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Coorg (Kodagu)", distance: "95 km", type: "Nature", isHidden: false, id: "coorg" },
       { name: "Sringeri Sharada Peetham", distance: "90 km", type: "Spiritual", isHidden: true },
-      { name: "Belur & Halebidu (Hoysala temples)", distance: "35 km", type: "Heritage", isHidden: true },
+      { name: "Belur & Halebidu (Hoysala temples)", distance: "35 km", type: "Heritage", isHidden: true, id: "belur-halebidu" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 350, transport: 200, activities: 150 },
@@ -7163,7 +7163,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Adventure", "Photography"],
     bestSeason: "October – February",
     duration: "3–4 days",
-    highlights: [{ name: "Vittala Temple Stone Chariot" }, { name: "Virupaksha Temple (still active)" }, { name: "Matanga Hill sunrise" }, { name: "Hippie Island (Virupapur Gaddi)" }, { name: "Hampi Bazaar ruins" }],
+    highlights: [{ name: "Vittala Temple Stone Chariot", id: "vittala-temple-stone-chariot" }, { name: "Virupaksha Temple (still active)" }, { name: "Matanga Hill sunrise" }, { name: "Hippie Island (Virupapur Gaddi)" }, { name: "Hampi Bazaar ruins" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bengaluru/Hospet — 30h+", fromMumbai: "To Hospet Jn (HPT) — 18–20h via Pune", fromBangalore: "To Hospet Jn — 9h overnight (Hampi Express, Train #16592)", duration: "Hospet is 13 km from Hampi", costRange: "₹300–₹1,800", tips: "Hampi Express (Bangalore–Hospet, 16592) departs KSR Bengaluru at 10pm, arrives Hospet 6:55am. Perfect overnight — wake up in Hampi. Book sleeper or 3AC." },
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bengaluru — 600+ km from Bengaluru", fromMumbai: "Via Pune/Solapur — 600 km", fromBangalore: "370 km, NH-48 + NH-67 — 7–8h drive or KSRTC bus", duration: "7–8h from Bengaluru", costRange: "₹400 KSRTC bus / ₹4,000–₆,000 cab", tips: "KSRTC Airavata (AC Volvo) from Bengaluru Majestic to Hospet departs 8pm, arrives 5am — cheaper than a guesthouse night! Book at ksrtc.in." },
@@ -7181,7 +7181,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Moped/Scooter", cost: "₹300–₄00/day", notes: "Best for independent exploration; available at Hospet and some Hampi shops", available: true },
     ],
     nearbyPlaces: [
-      { name: "Vittala Temple Stone Chariot", distance: "2 km from Hampi Bazaar", type: "Iconic Monument", isHidden: false, image: "https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=400&h=400&fit=crop&auto=format" },
+      { name: "Vittala Temple Stone Chariot", distance: "2 km from Hampi Bazaar", type: "Iconic Monument", isHidden: true, id: "vittala-temple-stone-chariot", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg" },
       { name: "Hospet Town", distance: "13 km", type: "Gateway Town", isHidden: false },
       { name: "Daroji Bear Sanctuary", distance: "15 km", type: "Wildlife", isHidden: false },
       { name: "Tungabhadra Dam", distance: "5 km from Hospet", type: "Nature/Dam", isHidden: false },
@@ -25033,6 +25033,173 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5200,
     mustEat: ["Kozhikode-style biryani", "Kerala Sadya", "Halwa from the old town's famous sweet shops"],
     packingTips: ["Sun protection", "Comfortable walking shoes", "Light cotton clothing"],
+  },
+
+  {
+    id: "belur-halebidu",
+    name: "Belur & Halebidu Temples",
+    state: "Karnataka",
+    hidden: true,
+    aliases: ["Chennakeshava Temple", "Hoysaleswara Temple"],
+    tagline: "A 103-Year, Two-Temple Hoysala Masterwork, Now UNESCO-Listed",
+    description: "The Chennakeshava Temple at Belur was commissioned in 1117 CE by King Vishnuvardhana on the banks of the Yagachi River, in what was then an early Hoysala Empire capital, to mark his victory over the Cholas at Talakad and his own conversion from Jainism to Vaishnavism. Built over three generations, it took 103 years to complete, and its intricate stone carving is widely regarded among the finest of any Hoysala temple. After construction began at Belur, Vishnuvardhana moved his capital to Halebidu and started a second, Shiva-dedicated temple there — the Hoysaleswara Temple, built over roughly 40 years across the same broad period. Together with the Keshava Temple at nearby Somanathapura, both temples were formally inscribed as a UNESCO World Heritage Site in 2023 under the name \"Sacred Ensembles of the Hoysalas\" — genuine, hard-won recognition for architecture many art historians already considered among the finest anywhere in India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chennakeshava_Temple_at_Belur.jpg/1280px-Chennakeshava_Temple_at_Belur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chennakeshava_Temple_at_Belur.jpg/1280px-Chennakeshava_Temple_at_Belur.jpg",
+    imageCredit: "Photo: Dineshkannambadi — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – February",
+    duration: "1 day",
+    highlights: [
+      { name: "Chennakeshava Temple, Belur — commissioned 1117 CE, took 103 years to complete" },
+      { name: "Hoysaleswara Temple, Halebidu — built over ~40 years after the capital moved there" },
+      { name: "UNESCO World Heritage Site since 2023 as the 'Sacred Ensembles of the Hoysalas'" },
+      { name: "Among the most intricately carved stone temples anywhere in India" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Bengaluru/Mysuru then road", fromMumbai: "Fly to Bengaluru, then road", fromBangalore: "~220 km / ~5h from Bengaluru", duration: "~220 km from Bengaluru, ~150 km from Mysuru", costRange: "₹3,000–₹6,000 by cab from Bengaluru (round trip)", tips: "Belur and Halebidu are only about 16 km apart — easily combined into a single day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Belur/Halebidu or Hassan", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Hassan town hotels", "Belur/Halebidu guesthouses"], description: "Hassan is the practical regional hub if not staying in Belur/Halebidu itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto (between the two towns)", cost: "₹300–₹600", notes: "Standard way to travel the ~16 km between Belur and Halebidu", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mysuru", distance: "~150 km", type: "City", isHidden: false, id: "mysuru" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 500, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 800, transport: 900, activities: 500 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 7500, food: 1500, transport: 1500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hoysala Temple Circuit", morning: "Chennakeshava Temple, Belur.", afternoon: "Hoysaleswara Temple, Halebidu.", evening: "Return to Hassan or Bengaluru.", stay: "Hassan", meals: "Karnataka thali (₹200–₹400)", tips: "A local guide genuinely helps here — the carvings tell specific mythological narratives that aren't obvious without explanation." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-visited UNESCO heritage site with steady daytime footfall and on-site staff"],
+      precautions: ["Dress modestly", "Watch footing on the temple platforms"],
+      soloTips: ["Comfortable for solo daytime visits given the site's status as a major, well-organized heritage attraction"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Hassan District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["Both temple complexes during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 6800,
+    mustEat: ["Karnataka thali in Hassan"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing", "Camera"],
+  },
+
+  {
+    id: "pattadakal",
+    name: "Pattadakal",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "A UNESCO Site Where North and South Indian Temple Styles Meet",
+    description: "Pattadakal, in Bagalkot district, was the royal coronation and commemoration site of the Chalukyas of Badami (Vatapi), the Early Chalukya dynasty that ruled from 543 to 753 CE — the town, called Kisuvolal in antiquity, was already noted in Ptolemy's 2nd-century Geography as a valley of red soil. Its real architectural achievement is a genuinely rare fusion: nine Hindu temples plus a Jain sanctuary that together blend northern (Nagara) and southern (Dravidian) Indian temple architectural forms into one harmonious style, reflecting the Chalukyas' position at a real cultural crossroads. The site's masterpiece, the Virupaksha Temple, was built around 740 CE by Queen Lokamahadevi to commemorate her husband Vikramaditya II's victory over southern kings, while the older Sangamesvara Temple, built by Vijayaditya Satyasraya (r. 697-733), is the earliest surviving structure in the group. UNESCO inscribed the Group of Monuments at Pattadakal as a World Heritage Site in 1987, recognising it as a genuine high point of Chalukyan architectural innovation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Pattadakal_Virupaksha_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Pattadakal_Virupaksha_Temple.jpg",
+    imageCredit: "Photo: Wikimedia Commons contributor, released into the public domain.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – February",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Royal coronation site of the Chalukyas of Badami (543-753 CE)" },
+      { name: "Nine Hindu temples plus a Jain sanctuary, blending north and south Indian styles" },
+      { name: "Virupaksha Temple (c. 740 CE), built by Queen Lokamahadevi to commemorate a military victory" },
+      { name: "UNESCO World Heritage Site since 1987" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Hubli/Belgaum then road", fromMumbai: "~600 km, long haul", fromBangalore: "~500 km, long haul", duration: "~22 km / ~30-40 min from Badami", costRange: "₹500–₹1,200 by cab from Badami", tips: "Combine with Badami's own cave temples and Aihole's early Chalukyan temple cluster on the same regional trip." },
+    ],
+    accommodation: [
+      { type: "Base in Badami", priceRange: "₹800–₹4,500/night (estimate)", examples: ["Badami budget/mid-range hotels"], description: "Badami is the practical regional base for Pattadakal, Aihole, and the cave temples." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Badami", notes: "Standard way to reach Pattadakal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Badami", distance: "~22 km", type: "Heritage", isHidden: false, id: "badami" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11000, accommodation: 7000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chalukyan Heritage Circuit", morning: "Badami's cave temples.", afternoon: "Pattadakal's nine-temple complex.", evening: "Aihole's early temple cluster, or return to Badami.", stay: "Badami", meals: "Karnataka thali (₹200–₹400)", tips: "Genuinely worth visiting all three sites (Badami, Pattadakal, Aihole) together — each represents a different stage of Chalukyan temple architecture's development." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, ASI-managed UNESCO heritage site with steady daytime footfall"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given the site's status as a well-organized UNESCO monument"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Bagalkot District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 3200,
+    mustEat: ["Karnataka thali in Badami"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "vittala-temple-stone-chariot",
+    name: "Vittala Temple & Stone Chariot, Hampi",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "The Stone Chariot on India's ₹50 Note, With Pillars That Once Played Music",
+    description: "The Vittala Temple, near the Tungabhadra River in Hampi, was built in the 15th century and expanded across successive Vijayanagara Empire reigns, most notably under Krishnadevaraya, into what's genuinely regarded as the architectural pinnacle of the empire's temple building. Its most iconic feature, the Stone Chariot, was commissioned under King Deva Raya II, reportedly drawing inspiration from Odisha's Konark Sun Temple — a shrine to Garuda (Vishnu's vahana) carved in stone to resemble a temple chariot, its once-rotatable giant wheels since cemented in place to protect them from damage. The complex's real acoustic marvel is its musical pillars, 56 stone columns tuned across the Sa-Re-Ga-Ma scale, each producing a genuine, distinct resonant note when struck — a feat of 16th-century engineering that still puzzles scientists and musicians, though tapping them is now prohibited to protect the stone from wear. The Stone Chariot's image, genuinely recognisable to most Indians, appears on the reverse of the ₹50 banknote.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg",
+    imageCredit: "Photo: Ram Nagesh Thota — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Stone Chariot, commissioned under King Deva Raya II, featured on India's ₹50 note" },
+      { name: "56 musical pillars tuned across the Sa-Re-Ga-Ma scale" },
+      { name: "Built and expanded through the 15th-16th centuries, most notably under Krishnadevaraya" },
+      { name: "Widely regarded as the architectural pinnacle of Vijayanagara temple building" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Hubli/Bellary then road", fromMumbai: "~600 km, long haul", fromBangalore: "~340 km / ~6h from Bengaluru", duration: "~5 km from Hampi Bazaar", costRange: "₹100–₹300 by auto within Hampi", tips: "Go early morning — the site gets genuinely hot and crowded by midday, especially in peak season." },
+    ],
+    accommodation: [
+      { type: "Base in Hampi Bazaar or Hospet", priceRange: "₹600–₹6,000/night (estimate)", examples: ["Hampi Bazaar guesthouses", "Hospet hotels"], description: "Hampi Bazaar is walkable to the temple; Hospet is the wider regional transport hub." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Bicycle", cost: "₹100–₹300 (auto) or ₹100-200/day (bicycle rental)", notes: "Standard ways to get around the Hampi ruins", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hampi", distance: "~5 km", type: "Heritage", isHidden: false, id: "hampi" },
+      { name: "Hospet Town", distance: "~13 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 350, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1800, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 10000, accommodation: 6500, food: 1500, transport: 700, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hampi Ruins Circuit", morning: "Vittala Temple and Stone Chariot.", afternoon: "Virupaksha Temple and the Hampi Bazaar street.", evening: "Sunset at Matanga Hill or Hemakuta Hill.", stay: "Hampi Bazaar or Hospet", meals: "South Indian thali (₹150–₹300)", tips: "The temple entrance requires a short walk or shuttle from the parking area — factor this into your visit timing." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, heavily-visited UNESCO World Heritage monument with steady daytime footfall"],
+      precautions: ["Carry water and sun protection — limited shade across the ruins", "Watch footing on uneven ancient stonework"],
+      soloTips: ["Very comfortable for solo daytime visits given the site's popularity and constant flow of visitors"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Ballari District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 12000,
+    mustEat: ["South Indian thali in Hampi Bazaar"],
+    packingTips: ["Sun protection", "Water bottle", "Comfortable walking shoes", "Camera"],
   },
 
 ];

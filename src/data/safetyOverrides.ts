@@ -4477,3 +4477,17 @@ SAFETY_OVERRIDES["kozhikode"] = {
   police: { summary: "Kozhikode City Police: 100", details: ["Kozhikode City Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Kozhikode Medical College — dial 108 for ambulance", details: ["Kozhikode Government Medical College Hospital is one of Kerala's major government hospitals.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["belur-halebidu"] = {
+  police: { summary: "Hassan District Police: 100", details: ["Hassan District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Hassan District Hospital — dial 108 for ambulance", details: ["Hassan District Hospital serves both Belur and Halebidu.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["pattadakal"] = {
+  police: { summary: "Bagalkot District Police: 100", details: ["Bagalkot District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Badami General Hospital — dial 108 for ambulance", details: ["Badami's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["vittala-temple-stone-chariot"] = {
+  police: { summary: "Ballari District Police: 100", details: ["Ballari District Police control room: 100 (Hampi falls within Ballari district).", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Hospet General Hospital — dial 108 for ambulance", details: ["Hospet's general hospital is the nearest major facility to Hampi.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
