@@ -4547,3 +4547,17 @@ SAFETY_OVERRIDES["talacauvery"] = {
   police: { summary: "Kodagu District Police: 100", details: ["Kodagu District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Madikeri District Hospital — dial 108 for ambulance", details: ["Madikeri District Hospital serves the wider Coorg area, including Talacauvery.", "Karnataka's 108 ambulance service is a well-documented, free emergency service, though response to this remote hilltop site may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote hilltop location." },
 };
+SAFETY_OVERRIDES["yana-caves"] = {
+  police: { summary: "Uttara Kannada District Police: 100", details: ["Uttara Kannada District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kumta General Hospital — dial 108 for ambulance", details: ["Kumta's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service, though response to this remote forest site may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote forest location." },
+};
+
+SAFETY_OVERRIDES["mirjan-fort"] = {
+  police: { summary: "Uttara Kannada District Police: 100", details: ["Uttara Kannada District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kumta General Hospital — dial 108 for ambulance", details: ["Kumta's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["iruppu-falls"] = {
+  police: { summary: "Kodagu District Police: 100", details: ["Kodagu District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Madikeri District Hospital — dial 108 for ambulance", details: ["Madikeri District Hospital serves the wider Coorg area, including Iruppu.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
