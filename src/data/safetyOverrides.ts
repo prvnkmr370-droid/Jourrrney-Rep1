@@ -4413,3 +4413,12 @@ SAFETY_OVERRIDES["menal-waterfall-temples"] = {
   police: { summary: "Chittorgarh District Police: 100", details: ["Chittorgarh District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Chittorgarh District Hospital — dial 108 for ambulance", details: ["Chittorgarh District Hospital is the nearest major facility for this rural site.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response to this remote location may take longer than in town.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency, noting the site's remote location." },
 };
+SAFETY_OVERRIDES["savitri-temple-pushkar"] = {
+  police: { summary: "Ajmer District Police: 100", details: ["Ajmer District Police control room: 100 (Pushkar falls within Ajmer district).", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Pushkar Government Hospital — dial 108 for ambulance", details: ["Pushkar's government hospital serves the town.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kaylana-lake"] = {
+  police: { summary: "Jodhpur District Police: 100", details: ["Jodhpur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "MDM Hospital, Jodhpur — dial 108 for ambulance", details: ["Mahatma Gandhi (MDM) Hospital serves Jodhpur city and the nearby Kaylana area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
