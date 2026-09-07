@@ -4491,3 +4491,17 @@ SAFETY_OVERRIDES["vittala-temple-stone-chariot"] = {
   police: { summary: "Ballari District Police: 100", details: ["Ballari District Police control room: 100 (Hampi falls within Ballari district).", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Hospet General Hospital — dial 108 for ambulance", details: ["Hospet's general hospital is the nearest major facility to Hampi.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["srirangapatna"] = {
+  police: { summary: "Mandya District Police: 100", details: ["Mandya District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Mandya District Hospital — dial 108 for ambulance", details: ["Mandya District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["sringeri-sharada-peetham"] = {
+  police: { summary: "Chikkamagaluru District Police: 100", details: ["Chikkamagaluru District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Sringeri Government Hospital — dial 108 for ambulance", details: ["Sringeri's government hospital serves the town.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["nandi-hills"] = {
+  police: { summary: "Chikkaballapur District Police: 100", details: ["Chikkaballapur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Chikkaballapur District Hospital — dial 108 for ambulance", details: ["Chikkaballapur District Hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};

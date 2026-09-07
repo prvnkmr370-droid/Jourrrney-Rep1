@@ -6921,7 +6921,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "145 km", type: "Heritage", isHidden: false, id: "mysuru" },
-      { name: "Nandi Hills", distance: "60 km", type: "Nature", isHidden: true },
+      { name: "Nandi Hills", distance: "60 km", type: "Nature", isHidden: true, id: "nandi-hills" },
       { name: "Coorg", distance: "260 km", type: "Nature", isHidden: false, id: "coorg" },
     ],
     budgetBreakdown: [
@@ -7117,7 +7117,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Coorg (Kodagu)", distance: "95 km", type: "Nature", isHidden: false, id: "coorg" },
-      { name: "Sringeri Sharada Peetham", distance: "90 km", type: "Spiritual", isHidden: true },
+      { name: "Sringeri Sharada Peetham", distance: "90 km", type: "Spiritual", isHidden: true, id: "sringeri-sharada-peetham" },
       { name: "Belur & Halebidu (Hoysala temples)", distance: "35 km", type: "Heritage", isHidden: true, id: "belur-halebidu" },
     ],
     budgetBreakdown: [
@@ -7253,7 +7253,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Cycle/E-Bike Rental", cost: "₹150–₂50/day", notes: "City is flat and compact — cycling is pleasant", available: true },
     ],
     nearbyPlaces: [
-      { name: "Srirangapatna", distance: "15 km", type: "Heritage Island Fort", isHidden: false },
+      { name: "Srirangapatna", distance: "15 km", type: "Heritage Island Fort", isHidden: true, id: "srirangapatna" },
       { name: "Brindavan Gardens", distance: "19 km", type: "Musical Fountain Gardens", isHidden: false },
       { name: "Nagarhole National Park", distance: "90 km", type: "Tiger Reserve / Wildlife", isHidden: false },
       { name: "Talakadu (Sand-buried temples)", distance: "45 km", type: "Hidden Archaeological Wonder", isHidden: true },
@@ -25200,6 +25200,172 @@ export const DESTINATIONS: Destination[] = [
     reviews: 12000,
     mustEat: ["South Indian thali in Hampi Bazaar"],
     packingTips: ["Sun protection", "Water bottle", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "srirangapatna",
+    name: "Srirangapatna",
+    state: "Karnataka",
+    hidden: true,
+    aliases: ["Seringapatam", "Tipu Sultan Fort"],
+    tagline: "The Island Fortress Capital Where Tipu Sultan Made His Last Stand",
+    description: "Srirangapatna, built on an island encircled by the Kaveri River, was genuinely the capital of the Kingdom of Mysore for centuries — its fort, originally built in 1454 by Timmanna Nayaka, passed from the Vijayanagara Empire to the Wodeyars in 1495, who moved their own capital here and made it the seat of their kingdom. In 1782 Tipu Sultan, son of Hyder Ali, took control and heavily fortified it with French architectural help, building it into a genuine stronghold against the British East India Company. That fortification wasn't enough: on 4 May 1799, during the Fourth Anglo-Mysore War, British forces breached the fort at the Watergate, and Tipu Sultan himself died fighting in the battle that followed — a real, decisive end to Mysorean resistance against British expansion in South India. Several structures survive today as ASI-protected monuments, including Colonel Bailey's Dungeon, the Daria Daulat Bagh summer palace, the Gumbaz housing Tipu Sultan's own tomb, the Juma Masjid, and the Sri Ranganatha Swami Temple that gave the town its name.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Srirangapatna_fort_panorama.jpg/1280px-Srirangapatna_fort_panorama.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Srirangapatna_fort_panorama.jpg/1280px-Srirangapatna_fort_panorama.jpg",
+    imageCredit: "Photo: Ssriram mt — Wikimedia Commons, CC BY 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "An island fortress capital, first built 1454, seat of the Wodeyar and later Tipu Sultan's kingdom" },
+      { name: "Fortified by Tipu Sultan with French architectural help against the British" },
+      { name: "Site of the decisive Fourth Anglo-Mysore War battle, 4 May 1799" },
+      { name: "The Gumbaz mausoleum, Daria Daulat Bagh palace, and Sri Ranganatha Swami Temple" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Bengaluru/Mysuru then road", fromMumbai: "Fly to Bengaluru, then road", fromBangalore: "~135 km / ~2.5-3h from Bengaluru", duration: "~15 km / ~25 min from Mysuru", costRange: "₹300–₹700 by cab from Mysuru", tips: "Easily combined with Mysuru sightseeing on the same day, given the short distance." },
+    ],
+    accommodation: [
+      { type: "Base in Mysuru", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Mysuru budget hotels", "Mysuru heritage hotels"], description: "Mysuru is the practical base for Srirangapatna day trips." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹300–₹700 from Mysuru", notes: "Standard way to reach Srirangapatna", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mysuru", distance: "~15 km", type: "City", isHidden: false, id: "mysuru" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 350, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tipu Sultan's Capital", morning: "Srirangapatna Fort and the Watergate breach site.", afternoon: "Gumbaz mausoleum and Daria Daulat Bagh palace.", evening: "Return to Mysuru.", stay: "Mysuru", meals: "Karnataka thali (₹200–₹400)", tips: "The Daria Daulat Bagh's preserved wall paintings depicting Tipu's own military campaigns are genuinely worth slowing down for." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known, regularly-visited ASI heritage site with steady daytime footfall"],
+      precautions: ["Standard heritage-site caution", "Visit in daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given the site's status as a well-organized heritage attraction close to Mysuru"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Mandya District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort and monument grounds during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 4100,
+    mustEat: ["Karnataka thali in Mysuru"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "sringeri-sharada-peetham",
+    name: "Sringeri Sharada Peetham",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "The First of Four Monastic Seats Founded by Adi Shankaracharya",
+    description: "Sringeri, on the banks of the Tunga River, takes its name from Rishyashringa-giri — after the sage Rishyashringa, who is said to have performed tapas here in an era predating even the Ramayana. More than twelve centuries ago, Adi Shankaracharya established the Sharada Peetham here as the first of his four Amnaya Peethams, founded to preserve and propagate Sanatana Dharma and Advaita Vedanta, the philosophy of non-dualism. Shankaracharya appointed his own principal disciple, Sureshwaracharya, as the Peetham's first Acharya, beginning a genuinely unbroken guru-disciple lineage that continues to this day — the current pontiff, Sri Bharathi Tirtha Swamin, is the 36th Jagadguru in that succession. As one of Hinduism's most significant living monastic institutions, Sringeri remains a real, active centre of Vedantic scholarship and pilgrimage rather than a purely historical site.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sringeri_Sharada_Peetham.jpg/1280px-Sringeri_Sharada_Peetham.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sringeri_Sharada_Peetham.jpg/1280px-Sringeri_Sharada_Peetham.jpg",
+    imageCredit: "Photo: Nativeplants garden — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Founded by Adi Shankaracharya over twelve centuries ago, the first of four Amnaya Peethams" },
+      { name: "An unbroken guru-disciple lineage since Sureshwaracharya, the first Acharya" },
+      { name: "The current pontiff is the 36th Jagadguru in that succession" },
+      { name: "A real, active centre of Vedantic scholarship, not just a historical monument" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Mangaluru/Bengaluru then road", fromMumbai: "Fly to Mangaluru, then road", fromBangalore: "~330 km / ~7h from Bengaluru", duration: "~90 km / ~2h from Chikmagalur", costRange: "₹1,500–₹3,000 by cab from Chikmagalur", tips: "Dress modestly and expect a genuinely devotional, unhurried atmosphere — this is a living monastery, not a tourist monument." },
+    ],
+    accommodation: [
+      { type: "Base in Sringeri or Chikmagalur", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Sringeri pilgrim guesthouses", "Chikmagalur hotels"], description: "Sringeri itself has pilgrim accommodation; Chikmagalur is a good alternative regional base." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 from Chikmagalur", notes: "Standard way to reach Sringeri", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chikmagalur", distance: "~90 km", type: "Hill Station", isHidden: false, id: "chikmagalur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 400, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 600, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 10000, accommodation: 6500, food: 1200, transport: 1000, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sringeri Pilgrimage Day", morning: "Sharada Peetham darshan.", afternoon: "Vidyashankara Temple and the Tunga River ghats.", evening: "Return to Chikmagalur.", stay: "Chikmagalur", meals: "Simple South Indian pilgrim food (₹150–₹300)", tips: "Feeding the fish in the Tunga River near the temple, a real local tradition, is a peaceful way to spend time by the ghats." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, well-organized pilgrimage site with steady devotee footfall and monastery staff"],
+      precautions: ["Dress modestly", "Follow the Peetham's own visitor etiquette"],
+      soloTips: ["Very comfortable for solo daytime visits given the site's status as a major, respectful pilgrimage destination"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Chikkamagaluru District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The Peetham grounds and riverside ghats during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 5600,
+    mustEat: ["Simple South Indian pilgrim food in Sringeri"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "nandi-hills",
+    name: "Nandi Hills",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "An 11th-Century Hill Fortress, Now Bengaluru's Favourite Sunrise Escape",
+    description: "Nandi Hills' history genuinely stretches back to the 11th century, when the hill fortress served as a strategic stronghold for a succession of dynasties — the Cholas, the Hoysalas, and later the Vijayanagara Empire — before Tipu Sultan turned it into both a summer retreat and a fortified position, its height offering real natural protection. British forces under Lord Cornwallis attacked Tipu's fort here in 1791, and its ruins, now under restoration, still stand on the hilltop today. The site carries one dark historical legend alongside its real military history: Tipu's Drop, a roughly 600-metre cliff, is traditionally said to have been used to execute condemned prisoners during Tipu's rule — a piece of local lore, not a current hazard, that visitors today encounter only as a named viewpoint rather than anything to be wary of. What draws most visitors now is simpler and genuinely spectacular: a sunrise where clouds pool in the valleys below, drawing photographers, cyclists, and early risers up from Bengaluru on a near-daily basis.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg/1280px-Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg/1280px-Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg",
+    imageCredit: "Photo: Vipul ji — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Nature", "Heritage"],
+    bestSeason: "October – February (year-round for sunrise trips)",
+    duration: "Half day",
+    highlights: [
+      { name: "An 11th-century hill fortress used by the Cholas, Hoysalas, and Vijayanagara Empire" },
+      { name: "Later a Tipu Sultan summer retreat and fortified position, attacked by Cornwallis in 1791" },
+      { name: "Bengaluru's most popular sunrise destination, with clouds pooling in the valleys below" },
+      { name: "Tipu's Drop viewpoint, named for a historical legend rather than any present danger" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Bengaluru then road", fromMumbai: "Fly to Bengaluru, then road", fromBangalore: "~60 km / ~1.5-2h from central Bengaluru", duration: "~60 km / ~1.5-2h from central Bengaluru", costRange: "₹1,200–₹2,500 by cab from Bengaluru (round trip)", tips: "Leave Bengaluru well before dawn if going for sunrise — the drive up and parking both take real time on a busy morning." },
+    ],
+    accommodation: [
+      { type: "Base in Bengaluru", priceRange: "₹800–₹10,000/night (estimate)", examples: ["Bengaluru city hotels"], description: "Most visitors do this as an early-morning day trip from Bengaluru rather than staying overnight." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip from Bengaluru)", cost: "₹1,200–₹2,500", notes: "Standard way to visit, especially for a pre-dawn sunrise trip", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bengaluru", distance: "~60 km", type: "City", isHidden: false, id: "bengaluru" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 700, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 0, food: 600, transport: 1500, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 8000, accommodation: 0, food: 1200, transport: 2500, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nandi Hills Sunrise Trip", morning: "Pre-dawn drive from Bengaluru; sunrise at the summit viewpoint.", afternoon: "Explore Tipu's Fort ruins and Tipu's Drop viewpoint.", evening: "Return to Bengaluru.", stay: "Bengaluru (day trip)", meals: "Filter coffee and breakfast at the summit food stalls, Karnataka thali later in Bengaluru (₹200–₹400)", tips: "Weekends get genuinely crowded — a weekday sunrise trip is noticeably quieter." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A hugely popular, well-organized sunrise destination with steady early-morning crowds and food stalls"],
+      precautions: ["Stick to marked viewpoints and railings, especially near cliff edges like Tipu's Drop", "Watch footing in low pre-dawn light"],
+      soloTips: ["Comfortable for solo sunrise trips given the substantial crowds typically present at that hour"],
+      emergencyContacts: [{ label: "Karnataka Women Helpline", number: "181" }, { label: "Chikkaballapur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main summit viewpoint area during the busy sunrise hours"],
+      avoidAreas: ["Unrailed cliff edges, especially in low light"],
+    },
+    rating: 4.5,
+    reviews: 9800,
+    mustEat: ["Filter coffee and breakfast at the summit stalls"],
+    packingTips: ["Warm layers for the cold pre-dawn hilltop", "Comfortable walking shoes", "Camera", "Torch/phone light for the pre-dawn drive"],
   },
 
 ];
