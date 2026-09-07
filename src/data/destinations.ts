@@ -1374,7 +1374,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Nawalgarh (more Shekhawati havelis)", distance: "30 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
-      { name: "Fatehpur (Shekhawati)", distance: "30 km", type: "Heritage", isHidden: true },
+      { name: "Fatehpur (Shekhawati)", distance: "30 km", type: "Heritage", isHidden: true, id: "fatehpur-shekhawati" },
       { name: "Jhunjhunu town", distance: "29 km", type: "Heritage", isHidden: true },
       { name: "Bikaner", distance: "190 km", type: "Heritage", isHidden: false, id: "bikaner" },
     ],
@@ -23976,6 +23976,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 720,
     mustEat: ["Rajasthani thali in Ajmer"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "fatehpur-shekhawati",
+    name: "Fatehpur",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Fatehpur Shekhawati"],
+    tagline: "Where a French Artist Rescued a 19th-Century Frescoed Mansion",
+    description: "Fatehpur, one of the core towns of the Shekhawati fresco circuit, holds one of the region's most remarkable modern restoration stories: the Devra Haveli, built in 1802 by Marwari businessman Nandlal Devra before he migrated to Mumbai, sat neglected for decades until French artist Nadine Le Prince — a descendant of the painter Jean-Baptiste Le Prince — bought it in 1998 and undertook a genuine, painstaking restoration under master restorer Cécile Charpentier, carefully preserving the original frescoes while stabilising the building's structure. Now known as the Nadine Le Prince Haveli, it operates as a boutique cultural centre and guesthouse, with real guided tours (in French or English) explaining Shekhawati fresco technique and the merchant families who commissioned it. The wider town carries dozens of other painted havelis, including the richly-frescoed Haveli Kedia, making Fatehpur a genuine highlight of the Shekhawati open-air fresco circuit alongside Mandawa and Nawalgarh.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Fatehpur_%28Shekhawati%2C_Rajasthan%29_%288440917302%29.jpg/1280px-Fatehpur_%28Shekhawati%2C_Rajasthan%29_%288440917302%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Fatehpur_%28Shekhawati%2C_Rajasthan%29_%288440917302%29.jpg/1280px-Fatehpur_%28Shekhawati%2C_Rajasthan%29_%288440917302%29.jpg",
+    imageCredit: "Photo: Jean-Pierre Dalbéra — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Nadine Le Prince Haveli — an 1802 mansion restored from 1998 by a French artist" },
+      { name: "Genuine guided tours on Shekhawati fresco technique, in French or English" },
+      { name: "The richly-frescoed Haveli Kedia and dozens of other painted mansions" },
+      { name: "A core stop on the Shekhawati open-air fresco circuit" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~250 km via NH48/SH, ~5h", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~30 km / ~45 min from Mandawa", costRange: "₹500–₹1,200 by cab from Mandawa", tips: "Combine with Mandawa and Nawalgarh on the same Shekhawati haveli circuit trip." },
+    ],
+    accommodation: [
+      { type: "Base in Fatehpur or Mandawa", priceRange: "₹800–₹6,000/night (estimate)", examples: ["Nadine Le Prince Haveli guesthouse rooms", "Mandawa heritage hotels"], description: "Staying at the restored haveli itself is a genuine option here, beyond just visiting for the day." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 from Mandawa", notes: "Standard way to reach Fatehpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandawa", distance: "~30 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
+      { name: "Podar Haveli, Nawalgarh", distance: "~40 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 800, transport: 700, activities: 500 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1000, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shekhawati Fresco Day", morning: "Nadine Le Prince Haveli guided tour.", afternoon: "Haveli Kedia and other Fatehpur havelis.", evening: "Continue to Mandawa or Nawalgarh.", stay: "Fatehpur or Mandawa", meals: "Rajasthani thali (₹300–₹500)", tips: "Book the Nadine Le Prince Haveli tour slot in advance where possible, given its guided, small-group format." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A well-known heritage town with a genuinely welcoming, tourism-friendly atmosphere around its restored havelis"],
+      precautions: ["Standard heritage-site etiquette"],
+      soloTips: ["Comfortable for solo daytime visits given the town's established haveli-tourism circuit and guided-tour infrastructure"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Sikar District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main haveli circuit and market area during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 1500,
+    mustEat: ["Rajasthani thali in Fatehpur/Mandawa"],
+    packingTips: ["Comfortable walking shoes", "Camera or zoom lens for fresco details"],
   },
 
 ];

@@ -4391,3 +4391,7 @@ SAFETY_OVERRIDES["kishangarh"] = {
   police: { summary: "Ajmer District Police: 100", details: ["Ajmer District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Ajmer District Hospital — dial 108 for ambulance", details: ["Ajmer's district hospital serves the wider Kishangarh area.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["fatehpur-shekhawati"] = {
+  police: { summary: "Sikar District Police: 100", details: ["Sikar District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Fatehpur General Hospital — dial 108 for ambulance", details: ["Fatehpur's general hospital serves the town.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
