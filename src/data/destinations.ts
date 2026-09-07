@@ -26599,6 +26599,170 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sun protection", "Swimwear", "Comfortable sandals"],
   },
 
+  {
+    id: "athirappilly-falls",
+    name: "Athirappilly Falls",
+    state: "Kerala",
+    hidden: true,
+    tagline: "The 'Niagara of India', on the Only Western Ghats Stretch With Four Hornbill Species",
+    description: "Athirappilly Falls, on the Chalukudy River as it descends from the Anamudi range of the Western Ghats, drops about 80 feet (24m) across a genuinely wide 330-foot (100m) span at peak monsoon flow — real enough scale to have earned it the popular nickname \"Niagara of India.\" It sits within the Athirappilly-Vazhachal forest range, a stretch of dense tropical forest that is genuinely the only place in the entire Western Ghats where all four of the region's endangered hornbill species can be seen together. Beyond its natural significance, Athirappilly has become a real fixture of Indian cinema, its cascades appearing in major films including Bahubali, Raavan, and Guru — a cultural visibility that has, in turn, made it one of Kerala's most recognisable single images, alongside its standing as a genuine highlight of Thrissur district's natural landscape.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Athirappilly_Water_Falls_in_Kerala.jpg/1280px-Athirappilly_Water_Falls_in_Kerala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Athirappilly_Water_Falls_in_Kerala.jpg/1280px-Athirappilly_Water_Falls_in_Kerala.jpg",
+    imageCredit: "Photo: Srikanth — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature"],
+    bestSeason: "June – January (fullest during and after monsoon)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "An 80-foot drop across a 330-foot span at peak monsoon flow — the 'Niagara of India'" },
+      { name: "The only Western Ghats stretch home to all four regional hornbill species" },
+      { name: "Part of the Athirappilly-Vazhachal forest range on the Chalukudy River" },
+      { name: "A recurring backdrop in major Indian films, including Bahubali and Raavan" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi, then road", duration: "~70 km / ~2h from Kochi", costRange: "₹1,800–₹3,500 by cab from Kochi", tips: "Visit soon after monsoon (roughly June-October) for the fullest, most dramatic flow — the falls thin out considerably by peak summer." },
+    ],
+    accommodation: [
+      { type: "Base in Kochi or Thrissur", priceRange: "₹800–₹10,000/night (estimate)", examples: ["Kochi city hotels", "Thrissur town hotels", "Athirappilly-area resorts"], description: "Most visitors do this as a day trip from Kochi, though resorts near the falls themselves also exist." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,800–₹3,500 from Kochi", notes: "Standard way to reach Athirappilly", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kochi", distance: "~70 km", type: "City", isHidden: false, id: "kochi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 800, food: 400, transport: 700, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4800, accommodation: 2500, food: 800, transport: 1200, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 14000, accommodation: 9000, food: 1500, transport: 2000, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Athirappilly Falls Day", morning: "Drive from Kochi to Athirappilly.", afternoon: "Falls viewpoints and the short Vazhachal Falls further upstream.", evening: "Return to Kochi.", stay: "Kochi", meals: "Kerala Sadya, local fish curry (₹250–₹500)", tips: "Watch footing near the viewpoints, especially when wet — the rocks around the falls genuinely get slippery." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, heavily-visited natural attraction with steady daytime footfall and forest-department oversight"],
+      precautions: ["Stay behind railings at viewpoints — do not enter the water near the falls", "Watch footing on wet rocks"],
+      soloTips: ["Comfortable for solo daytime visits given the site's popularity and steady visitor traffic"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Thrissur District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The official, railed viewpoints"],
+      avoidAreas: ["The water's edge and any unrailed areas near the falls"],
+    },
+    rating: 4.6,
+    reviews: 7400,
+    mustEat: ["Kerala Sadya", "Local fish curry near Athirappilly"],
+    packingTips: ["Comfortable walking shoes with good grip", "Rain jacket in monsoon season", "Camera"],
+  },
+
+  {
+    id: "bekal-fort",
+    name: "Bekal Fort",
+    state: "Kerala",
+    hidden: true,
+    tagline: "Kerala's Largest Fort, Fought Over by Four Different Powers",
+    description: "Bekal Fort, spread across 40 acres in Kasaragod district, is genuinely the largest fort in Kerala, built in the mid-17th century by Shivappa Nayaka of the Keladi Nayaka dynasty to defend the region's valuable spice trade against invaders. Over the following century and a half, it changed hands repeatedly — passing to the Kolathiri Rajas, the Vijayanagara Empire, and eventually Tipu Sultan, who made it a major military base during his campaign to capture the Malabar coast; the fort's Observation Tower, built during his rule, still offers panoramic views over the surrounding countryside. After Tipu Sultan's death in 1799, the fort passed to the British East India Company, and following India's 1956 state reorganisation, Bekal and the wider Kasaragod region became part of the newly-formed Kerala state. Genuinely well-preserved for its age, Bekal today combines real, walkable ramparts and bastions with a scenic coastal setting, its keyhole-shaped water tank and sea-facing walls making it a distinctive stop on Kerala's northern Malabar coast.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bekal_Fort%2C_Kerala.jpg/1280px-Bekal_Fort%2C_Kerala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bekal_Fort%2C_Kerala.jpg/1280px-Bekal_Fort%2C_Kerala.jpg",
+    imageCredit: "Photo: Shafeeq Rahman — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Kerala's largest fort, 40 acres, built mid-17th century by Shivappa Nayaka" },
+      { name: "Changed hands through the Kolathiri Rajas, Vijayanagara Empire, and Tipu Sultan" },
+      { name: "An Observation Tower built during Tipu Sultan's rule, with panoramic coastal views" },
+      { name: "A distinctive keyhole-shaped water tank and sea-facing ramparts" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Mangaluru then road", fromMumbai: "Fly to Mangaluru, then road", fromBangalore: "Fly to Mangaluru, then road", duration: "~65 km / ~1.5h from Mangaluru", costRange: "₹1,500–₹3,000 by cab from Mangaluru", tips: "Bekal has its own railway station, a genuinely convenient direct option from Mangaluru or Kozhikode." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Long-haul", fromMumbai: "Long-haul", fromBangalore: "Long-haul via Mangaluru", duration: "Varies by origin", costRange: "₹200–₹1,000", tips: "Kanhangad or Bekal Fort railway stations are the closest stops." },
+    ],
+    accommodation: [
+      { type: "Base in Bekal or Kasaragod", priceRange: "₹1,000–₹12,000/night (estimate)", examples: ["Bekal beach resorts", "Kasaragod town hotels"], description: "Bekal itself has a range of resorts, some directly overlooking the fort and coastline." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹200–₹600", notes: "Standard way to get around locally", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kozhikode", distance: "~130 km", type: "City", isHidden: false, id: "kozhikode" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 1000, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 800, transport: 600, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12500, accommodation: 8000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bekal Fort & Coast", morning: "Bekal Fort ramparts and the Observation Tower.", afternoon: "Bekal Beach and the fort's coastal water sports area.", evening: "Sunset from the fort walls.", stay: "Bekal", meals: "Kerala fish curry, local Malabar cuisine (₹250–₹500)", tips: "Genuinely worth walking the full perimeter — the sea-facing ramparts offer some of the best coastal views in northern Kerala." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-organized heritage site with a ticket counter and steady daytime footfall"],
+      precautions: ["Watch footing on the ramparts, especially near unrailed edges", "Standard heritage-site caution"],
+      soloTips: ["Comfortable for solo daytime visits given the fort's status as a well-organized, regularly-visited attraction"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Kasaragod District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main fort grounds and ramparts during daylight"],
+      avoidAreas: ["Unrailed rampart edges"],
+    },
+    rating: 4.5,
+    reviews: 5900,
+    mustEat: ["Kerala fish curry", "Malabar-style biryani near Kasaragod"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "thrissur",
+    name: "Thrissur",
+    state: "Kerala",
+    aliases: ["Trichur"],
+    tagline: "Kerala's Cultural Capital, Home to the 'Mother of All Poorams'",
+    description: "Thrissur, once briefly the capital of the princely state of Cochin, has genuinely earned its status as Kerala's cultural capital through centuries as an important religious and cultural hub, particularly through the colonial era. Its centrepiece, the Vadakkunnathan Temple, is a real UNESCO-recognised World Heritage site, its architecture regarded as a paragon of Kerala's traditional temple-building style, housing three main shrines to Shiva, Rama, and Shankara Narayana alongside a dedicated Parvati shrine. The temple grounds host Thrissur Pooram, launched in 1796 by Sakthan Thampuran, the Maharaja of Cochin, as a deliberately grand alternative festival — today genuinely India's biggest and best-known pooram, drawing over a million visitors annually and earning the well-deserved title \"Mother of All Poorams\" for its centuries-old traditions, elaborate caparisoned-elephant processions, and massed percussion performances. Alongside its temples, Thrissur's churches and its broader identity as a genuine centre of Malayalam art, music, and scholarship have kept the city making headlines well beyond Kerala's own borders.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vadakkunnathan_Temple%2C_Thrissur.jpg/1280px-Vadakkunnathan_Temple%2C_Thrissur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vadakkunnathan_Temple%2C_Thrissur.jpg/1280px-Vadakkunnathan_Temple%2C_Thrissur.jpg",
+    imageCredit: "Photo: Manukrishnan80 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture", "Spiritual"],
+    bestSeason: "November – February (Thrissur Pooram falls in April/May)",
+    duration: "2–3 days",
+    highlights: [{ name: "Vadakkunnathan Temple, a UNESCO World Heritage site and Kerala architectural landmark" }, { name: "Thrissur Pooram, launched 1796, India's biggest and best-known pooram" }, { name: "A genuine identity as Kerala's cultural capital, in art, music, and scholarship" }, { name: "Gateway to Athirappilly Falls" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Kochi then road", fromMumbai: "Fly to Kochi, then road", fromBangalore: "Fly to Kochi, then road", duration: "~75 km / ~1.5-2h from Kochi", costRange: "₹1,500–₹3,000 by cab from Kochi", tips: "Book accommodation well ahead if visiting during Thrissur Pooram (April/May) — the city genuinely fills up completely." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Long-haul", fromMumbai: "Long-haul", fromBangalore: "~12-14h", duration: "Varies by origin", costRange: "₹300–₹1,500", tips: "Thrissur railway station is centrally located and well-connected along Kerala's main coastal line." },
+    ],
+    accommodation: [
+      { type: "Base in Thrissur town", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Thrissur town hotels", "Heritage guesthouses near the temple"], description: "A range of options centred around the Vadakkunnathan Temple and Swaraj Round." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Standard way to get around the city", available: true },
+      { mode: "App Cab", cost: "₹150–₹600", notes: "Widely available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Athirappilly Falls", distance: "~65 km", type: "Waterfall", isHidden: true, id: "athirappilly-falls" },
+      { name: "Kochi", distance: "~75 km", type: "City", isHidden: false, id: "kochi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 800, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11500, accommodation: 7500, food: 1500, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Thrissur Heritage Day", morning: "Vadakkunnathan Temple.", afternoon: "Thrissur town — Swaraj Round, museums, and churches.", evening: "Local cultural performance if available.", stay: "Thrissur town", meals: "Kerala Sadya, Thrissur-style biryani (₹250–₹450)", tips: "Vadakkunnathan Temple's inner sanctum follows a Hindu-only entry policy — the outer grounds and architecture remain open to all visitors." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major cultural city with a well-organized city police presence and steady daytime/evening crowds"],
+      precautions: ["Standard city caution", "Expect very large, dense crowds during Thrissur Pooram specifically"],
+      soloTips: ["Comfortable for solo visitors given the city's status as a well-established cultural hub with good tourist infrastructure"],
+      emergencyContacts: [{ label: "Kerala Women Helpline", number: "181" }, { label: "Thrissur City Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["City centre and the temple/Swaraj Round area"],
+      avoidAreas: ["None specific outside of extreme festival-day crowding"],
+    },
+    rating: 4.6,
+    reviews: 7100,
+    mustEat: ["Kerala Sadya", "Thrissur-style biryani", "Local sweets from the town's traditional shops"],
+    packingTips: ["Modest clothing for temple visits", "Comfortable walking shoes", "Light cotton clothing"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

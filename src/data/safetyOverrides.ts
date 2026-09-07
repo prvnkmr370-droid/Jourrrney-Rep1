@@ -4608,3 +4608,17 @@ SAFETY_OVERRIDES["kovalam-beach"] = {
   police: { summary: "Thiruvananthapuram District Police: 100", details: ["Thiruvananthapuram District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Thiruvananthapuram Medical College — dial 108 for ambulance", details: ["Thiruvananthapuram Medical College Hospital is the nearest major facility, a short drive from Kovalam.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["athirappilly-falls"] = {
+  police: { summary: "Thrissur District Police: 100", details: ["Thrissur District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Chalakudy Taluk Hospital — dial 108 for ambulance", details: ["Chalakudy Taluk Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["bekal-fort"] = {
+  police: { summary: "Kasaragod District Police: 100", details: ["Kasaragod District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Kasaragod District Hospital — dial 108 for ambulance", details: ["Kasaragod District Hospital is the nearest major facility.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["thrissur"] = {
+  police: { summary: "Thrissur City Police: 100", details: ["Thrissur City Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thrissur Medical College — dial 108 for ambulance", details: ["Thrissur Medical College Hospital (Jubilee Mission and Government Medical College) serves the city.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
