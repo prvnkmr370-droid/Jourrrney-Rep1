@@ -838,7 +838,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Ajmer Sharif Dargah", distance: "15 km", type: "Spiritual", isHidden: false },
-      { name: "Ana Sagar Lake, Ajmer", distance: "16 km", type: "Nature", isHidden: true },
+      { name: "Ana Sagar Lake, Ajmer", distance: "16 km", type: "Nature", isHidden: true, id: "ana-sagar-lake" },
       { name: "Savitri Temple hilltop", distance: "2 km (uphill walk/ropeway)", type: "Viewpoint", isHidden: true },
       { name: "Merta City (Meera Bai's birthplace)", distance: "50 km", type: "Heritage", isHidden: true, id: "merta-city" },
       { name: "Jaipur", distance: "145 km", type: "Heritage", isHidden: false, id: "jaipur" },
@@ -1113,7 +1113,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "National Research Centre on Camel", distance: "8 km", type: "Unique Experience", isHidden: true },
       { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: true, id: "deshnoke" },
       { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
-      { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true },
+      { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true, id: "kolayat-lake" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
@@ -1375,7 +1375,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Nawalgarh (more Shekhawati havelis)", distance: "30 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
       { name: "Fatehpur (Shekhawati)", distance: "30 km", type: "Heritage", isHidden: true, id: "fatehpur-shekhawati" },
-      { name: "Jhunjhunu town", distance: "29 km", type: "Heritage", isHidden: true },
+      { name: "Jhunjhunu town", distance: "29 km", type: "Heritage", isHidden: true, id: "rani-sati-temple-jhunjhunu" },
       { name: "Bikaner", distance: "190 km", type: "Heritage", isHidden: false, id: "bikaner" },
     ],
     budgetBreakdown: [
@@ -24033,6 +24033,172 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1500,
     mustEat: ["Rajasthani thali in Fatehpur/Mandawa"],
     packingTips: ["Comfortable walking shoes", "Camera or zoom lens for fresco details"],
+  },
+
+  {
+    id: "rani-sati-temple-jhunjhunu",
+    name: "Rani Sati Temple, Jhunjhunu",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "India's Largest Temple Honouring a Centuries-Old Rajasthani Devotional Figure",
+    description: "Rani Sati Temple, in Jhunjhunu, is genuinely the largest temple in India dedicated to Rani Sati (also called Narayani Devi), a Rajasthani woman whose devotion is honoured here through a pilgrimage tradition established for at least 400 years. Historians place her life sometime between the 13th and 17th centuries, and her veneration follows the historical practice of sati; the practice itself has been illegal in India since the 19th century and is not observed by pilgrims today, whose visits are entirely about honouring the devotional figure at the heart of the temple's living tradition. The complex, built in white marble with intricate carvings and painted mythological scenes, holds the main shrine alongside 13 smaller temples to other deities, drawing large crowds especially during its annual Bhadra Amavasya fair. Jhunjhunu itself, a core Shekhawati town, is also home to a real concentration of merchant-family havelis, including the Modi and Tibrewal Havelis, whose foundations reportedly date to the late 16th century.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Rani_Sati_Temple%2C_Jhunjhunu_%282%29.jpg/1280px-Rani_Sati_Temple%2C_Jhunjhunu_%282%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Rani_Sati_Temple%2C_Jhunjhunu_%282%29.jpg/1280px-Rani_Sati_Temple%2C_Jhunjhunu_%282%29.jpg",
+    imageCredit: "Photo: Gartxoak — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "India's largest temple dedicated to Rani Sati, a pilgrimage tradition over 400 years old" },
+      { name: "White-marble complex with 13 smaller temples alongside the main shrine" },
+      { name: "A major annual fair on Bhadra Amavasya draws large crowds" },
+      { name: "Jhunjhunu's own Shekhawati havelis, including the Modi and Tibrewal Havelis" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "~250 km via NH48/SH, ~5h", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~45 km / ~1h from Mandawa", costRange: "₹700–₹1,500 by cab from Mandawa", tips: "Combine with a wider Shekhawati circuit taking in Mandawa, Nawalgarh, and Fatehpur." },
+    ],
+    accommodation: [
+      { type: "Base in Jhunjhunu or Mandawa", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Jhunjhunu town hotels", "Mandawa heritage hotels"], description: "Either works as a base for the wider Shekhawati circuit." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,500 from Mandawa", notes: "Standard way to reach Jhunjhunu", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandawa", distance: "~45 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
+      { name: "Podar Haveli, Nawalgarh", distance: "~30 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 800, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1200, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jhunjhunu Heritage & Devotion", morning: "Rani Sati Temple.", afternoon: "Modi and Tibrewal Havelis and Jhunjhunu's old bazaar.", evening: "Continue to Mandawa or Nawalgarh.", stay: "Jhunjhunu or Mandawa", meals: "Rajasthani thali (₹300–₹500)", tips: "Dress modestly and expect a genuinely devotional atmosphere, especially if visiting during the annual fair." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A major, well-established pilgrimage temple with steady devotee footfall and on-site staff"],
+      precautions: ["Dress modestly", "Expect crowds during the annual fair period"],
+      soloTips: ["Comfortable for solo daytime visits given the temple's status as a major, regularly-visited pilgrimage site"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jhunjhunu District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex and main bazaar during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 3800,
+    mustEat: ["Rajasthani thali in Jhunjhunu"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "ana-sagar-lake",
+    name: "Ana Sagar Lake",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 12th-Century Reservoir, Later Landscaped by Two Mughal Emperors",
+    description: "Ana Sagar Lake was commissioned between 1135 and 1150 CE by Arnoraja (Ana), a Chauhan king of the Shakambhari dynasty and grandfather of the celebrated warrior Prithviraj Chauhan, making it genuinely one of Asia's oldest artificial lakes and a real feat of medieval engineering. Tradition holds it was built on the plain of a decisive victory over invading Turkic forces, filled with the waters of the Chandra river, and originally conceived as a drought-season water source for Ajmer's citizens. Centuries later, the lake became a genuine Mughal-era pleasure retreat: Emperor Jahangir laid out the Daulat Bagh gardens along its bank, and his son Shah Jahan added the Baradari, a row of five arched marble pavilions between the garden and the water, completed in 1637 — a rare case of a Rajput-built reservoir later shaped by two Mughal emperors in succession.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ana_Sagar_Lake_Baradari%2CAjmer.jpg/1280px-Ana_Sagar_Lake_Baradari%2CAjmer.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ana_Sagar_Lake_Baradari%2CAjmer.jpg/1280px-Ana_Sagar_Lake_Baradari%2CAjmer.jpg",
+    imageCredit: "Photo: Dharma Teja Karri — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – February",
+    duration: "1.5–2 hours",
+    highlights: [
+      { name: "Commissioned 1135-1150 CE by Chauhan king Arnoraja, one of Asia's oldest artificial lakes" },
+      { name: "Daulat Bagh gardens, laid out by Emperor Jahangir" },
+      { name: "The Baradari — five marble pavilions added by Shah Jahan, completed 1637" },
+      { name: "A working lakefront promenade and boating spot today, not just a historic site" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "~2 km from central Ajmer", costRange: "₹50–₹150 by auto within Ajmer", tips: "A pleasant sunset spot — the Baradari pavilions and the lake both catch good evening light." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Ajmer city hotels"], description: "Any Ajmer city hotel works — the lake is a short ride from the centre." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ajmer city", notes: "Standard way to reach the lake from anywhere in Ajmer", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "~2 km", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 800, transport: 200, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 11000, accommodation: 7000, food: 1500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ajmer Heritage & Lakefront", morning: "Ajmer Sharif Dargah.", afternoon: "Ana Sagar Lake and Daulat Bagh gardens.", evening: "Sunset at the Baradari pavilions.", stay: "Ajmer", meals: "Rajasthani thali (₹300–₹500)", tips: "A relaxed complement to the Dargah visit — pair a spiritual morning with a scenic, unhurried lakeside evening." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, heavily-visited city lakefront with steady evening crowds"],
+      precautions: ["Standard lakeside caution around water edges", "Keep valuables secure in crowded evening periods"],
+      soloTips: ["Comfortable for solo visits given the promenade's popularity and steady foot traffic, especially in early evening"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main promenade and Daulat Bagh gardens during daylight and early evening"],
+      avoidAreas: ["Isolated stretches of the lakeside late at night"],
+    },
+    rating: 4.3,
+    reviews: 4600,
+    mustEat: ["Rajasthani thali in Ajmer", "Lakeside street snacks"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "kolayat-lake",
+    name: "Kolayat Lake",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "52 Ghats Around a Sacred Lake Where Sage Kapil Muni Meditated",
+    description: "Kolayat, a town near Bikaner also known in ancient texts as Kapilayatan, centres on a sacred artificial lake tied to the sage Kapil Muni, traditionally regarded as an incarnation of Vishnu, who is said to have paused his travels here to perform tapasya (penance) for the world's redemption. The lake today is genuinely ringed by 52 ghats along with marble temples and sandstone pavilions, with a temple to Kapil Muni himself — holding a marble statue of the sage — standing on its own dedicated ghat. Each year on Kartik Purnima, Kolayat hosts the Kapil Muni Fair, real the largest fair in Bikaner district, combining devotional bathing in the lake with cultural performances, craft displays, and a substantial cattle fair trading camels, horses, and buffaloes — a genuine living continuation of the site's centuries-old dual identity as both pilgrimage centre and regional trading hub.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Kapil_Muni_Temple_-_panoramio.jpg/1280px-Kapil_Muni_Temple_-_panoramio.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Kapil_Muni_Temple_-_panoramio.jpg/1280px-Kapil_Muni_Temple_-_panoramio.jpg",
+    imageCredit: "Photo: Vijay_Bkn — Wikimedia Commons, CC BY 3.0.",
+    category: ["Spiritual", "Culture"],
+    bestSeason: "October – February (Kapil Muni Fair on Kartik Purnima, Oct/Nov)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A sacred lake tied to sage Kapil Muni's tapasya, ringed by 52 ghats" },
+      { name: "Marble temples and sandstone pavilions around the water" },
+      { name: "The annual Kapil Muni Fair on Kartik Purnima — Bikaner district's largest fair" },
+      { name: "A genuine dual identity as pilgrimage site and traditional cattle-trading hub" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "~50 km / ~1h from Bikaner", costRange: "₹1,000–₹2,200 by cab from Bikaner", tips: "The Kartik Purnima fair period draws large crowds and can mean limited accommodation nearby — plan ahead if visiting then." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹800–₹5,000/night (estimate)", examples: ["Bikaner city hotels"], description: "Most visitors do this as a day trip from Bikaner rather than staying in Kolayat itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,200 from Bikaner", notes: "Standard way to reach Kolayat", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner", distance: "~50 km", type: "City", isHidden: false, id: "bikaner" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 800, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 12000, accommodation: 8000, food: 1500, transport: 1200, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bikaner & Kolayat Day Trip", morning: "Junagarh Fort in Bikaner.", afternoon: "Kolayat Lake — the ghats and Kapil Muni Temple.", evening: "Return to Bikaner.", stay: "Bikaner", meals: "Rajasthani thali (₹300–₹500)", tips: "A quiet, genuinely reflective site outside the Kartik Purnima fair period, when it's much less crowded." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known regional pilgrimage site with regular devotee footfall"],
+      precautions: ["Standard ghat/waterside caution", "Expect large crowds during the annual fair"],
+      soloTips: ["Comfortable for solo daytime visits given its status as an established pilgrimage site; the annual fair period is busier and better visited with a group"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bikaner District Police", number: "100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main ghats and temple area during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1200,
+    mustEat: ["Rajasthani thali in Bikaner"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
   },
 
 ];

@@ -4395,3 +4395,17 @@ SAFETY_OVERRIDES["fatehpur-shekhawati"] = {
   police: { summary: "Sikar District Police: 100", details: ["Sikar District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Fatehpur General Hospital — dial 108 for ambulance", details: ["Fatehpur's general hospital serves the town.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["rani-sati-temple-jhunjhunu"] = {
+  police: { summary: "Jhunjhunu District Police: 100", details: ["Jhunjhunu District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Jhunjhunu District Hospital — dial 108 for ambulance", details: ["Jhunjhunu District Hospital serves the town.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["ana-sagar-lake"] = {
+  police: { summary: "Ajmer District Police: 100", details: ["Ajmer District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Ajmer District Hospital — dial 108 for ambulance", details: ["Ajmer's district hospital serves the city, close to the lake.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kolayat-lake"] = {
+  police: { summary: "Bikaner District Police: 100", details: ["Bikaner District Police control room: 100.", "Police: 100 · National Emergency: 112", "Women Helpline Rajasthan: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "PBM Hospital, Bikaner — dial 108 for ambulance", details: ["PBM Hospital in Bikaner is the nearest major facility.", "Rajasthan's 108 ambulance service is a well-documented, free emergency service, though response to Kolayat itself may take longer than in Bikaner city.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
