@@ -4594,3 +4594,17 @@ SAFETY_OVERRIDES["linganamakki-dam"] = {
   police: { summary: "Shivamogga District Police: 100", details: ["Shivamogga District Police control room: 100.", "Police: 100 · National Emergency: 112", "Karnataka Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
   medical: { summary: "Sagara General Hospital — dial 108 for ambulance", details: ["Sagara's general hospital is the nearest major facility.", "Karnataka's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
 };
+SAFETY_OVERRIDES["thiruvananthapuram"] = {
+  police: { summary: "Thiruvananthapuram City Police: 100", details: ["Thiruvananthapuram City Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thiruvananthapuram Medical College — dial 108 for ambulance", details: ["Thiruvananthapuram Medical College Hospital is one of Kerala's largest government hospitals.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["varkala-beach"] = {
+  police: { summary: "Thiruvananthapuram District Police: 100", details: ["Thiruvananthapuram District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Varkala Government Hospital — dial 108 for ambulance", details: ["Varkala's government hospital serves the town.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
+
+SAFETY_OVERRIDES["kovalam-beach"] = {
+  police: { summary: "Thiruvananthapuram District Police: 100", details: ["Thiruvananthapuram District Police control room: 100.", "Police: 100 · National Emergency: 112", "Kerala Women Helpline: 181"], sourceNote: "A site-specific local station number was not individually verified — call 100 for the fastest response." },
+  medical: { summary: "Thiruvananthapuram Medical College — dial 108 for ambulance", details: ["Thiruvananthapuram Medical College Hospital is the nearest major facility, a short drive from Kovalam.", "Kerala's 108 ambulance service is a well-documented, free emergency service.", "Ambulance: 108"], sourceNote: "108 ambulance service is well-documented via general web search; call 108 for any medical emergency." },
+};
