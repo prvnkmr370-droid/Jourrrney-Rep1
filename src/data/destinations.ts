@@ -4876,7 +4876,8 @@ export const DESTINATIONS: Destination[] = [
     description: "The Aviary in Daman is a landscaped bird park housing a range of species from parrots to peacocks, near Devka — an easy, family-friendly stop that also includes an INS Khukri Memorial tableau on its grounds, per real government documentation of the site.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg/1280px-Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg/1280px-Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg",
-    imageCredit: "Photo: Government of India (PMO) — Wikimedia Commons, GODL-India. Only one verified photo of this specific park was found on Wikimedia Commons.",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg/1280px-Daman_Aviary_Bird_Park_and_Kukri_Memorial_Tableau_of_Dadra_and_Nagar_Haveli_Daman_and_Diu.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Daman_Aviary_Birds.jpg/960px-Daman_Aviary_Birds.jpg"],
+    imageCredit: "Photos: Government of India (PMO), Real96kmaratha — Wikimedia Commons, GODL-India / CC BY-SA 4.0.",
     category: ["Nature", "Family"],
     bestSeason: "October – March",
     duration: "1 hour",
@@ -5786,10 +5787,11 @@ export const DESTINATIONS: Destination[] = [
     description: "St. Francis of Assisi Church, built in 1593 under Governor Pero de Naya as a Franciscan friary, has a genuinely unusual history — after the Church of St. John of God collapsed in 1832, this building's cloister was converted into a hospital, a role it served for about 184 years before a new hospital building took over. Set on a raised platform reached by a 20-step staircase, close to St. Paul Church, it has a tall tower and a stone vaulted dome, with the church itself still in active use today.",
     image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png",
     heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png",
+    gallery: ["https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/st-francis-assisi-church-1.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Church_of_St._Francis_of_Assisi%2C_Diu_%28with_altar%29.jpg/960px-Church_of_St._Francis_of_Assisi%2C_Diu_%28with_altar%29.jpg"],
     // Real, place-specific photo from the official DNH & DD Tourism
     // Department site — see gomtimata-beach's comment above for the
     // full licensing context.
-    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction. Second photo: AliBabar1643 — Wikimedia Commons, CC BY-SA 4.0.",
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
