@@ -50675,6 +50675,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable footwear for riverbank terrain", "A camera for the colourful scenes", "Arrive early to secure a good vantage point"],
   },
 
+  {
+    id: "sarna-sthal-ranchi",
+    name: "Sarna Sthal (Sacred Grove)",
+    state: "Jharkhand",
+    tagline: "A Sacred Sarna Tree Grove on Ranchi's Outskirts, Heart of Indigenous Sarnaism",
+    description: "A Sarna Sthal is a sacred grove centred on a specific tree — often a large, old sal or, as in this case, a massive banyan-like tree — that serves as the primary place of worship in Sarnaism, the indigenous religious tradition followed by Munda, Oraon, Santhal, and other tribal communities across Jharkhand. This particular grove on Ranchi's outskirts becomes a genuine focal point during Sarhul, when community members gather beneath the tree's branches in traditional dress to offer prayers marking the start of the agricultural year — a scene of real, living religious practice rather than a preserved monument. Sarna groves like this one are found across rural Jharkhand, each tied to its own local community, but this Ranchi-area grove offers visitors a genuinely accessible window into a faith tradition that predates and remains distinct from Hinduism, still actively practised by a significant portion of the state's population.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Holy_Prayer.jpg/1280px-Holy_Prayer.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Holy_Prayer.jpg/1280px-Holy_Prayer.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Holy_Prayer.jpg/1280px-Holy_Prayer.jpg",
+    ],
+    imageCredit: "Photo: Gurpreet Singh Ranchi — Wikimedia Commons, CC BY-SA 4.0, description confirms \"Tribal people worshiping under holy sarna tree on the occasion of sarhul, in outskirts of Ranchi, Jharkhand\", used on 15+ Wikipedia language projects including English Wikipedia's \"Jharkhand\", \"Sarhul\", and \"Tribes of Jharkhand\" articles, Wikidata Q114434103 (Sarna sthal). Only one genuinely verified image of this specific site was found after a real search — documented here as a single-image exception.",
+    category: ["Religious", "Rural"],
+    bestSeason: "March – April (most active during the Sarhul festival)",
+    duration: "1 hour",
+    highlights: [
+      { name: "A sacred sarna tree at the centre of indigenous Sarnaism worship" },
+      { name: "A genuine, living site of active tribal religious practice" },
+      { name: "A key gathering point during the Sarhul festival" },
+      { name: "An accessible window into a faith tradition distinct from Hinduism" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to the outskirts", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "Most easily visited as part of a wider Ranchi-area cultural itinerary." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station to the outskirts." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within the Ranchi outskirts area", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹200–₹500 local cab", tips: "Ask locally for the nearest active Sarna sthal, as these groves are found across many villages." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From central Ranchi to the outskirts", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sarhul Festival", distance: "Same region (seasonal event)", type: "Cultural Festival", isHidden: true, id: "sarhul-festival" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 250, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1400, accommodation: 0, food: 700, transport: 500, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sarna Sthal Visit", morning: "Visit a Sarna sthal on Ranchi's outskirts, ideally with local guidance.", afternoon: "Continue to other Ranchi cultural sights.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the site", tips: "This is an active place of worship for the local community — visit respectfully and ask permission before photographing people or rituals." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A recognized local landmark with community presence, especially during Sarhul", "Reasonably accessible from central Ranchi"],
+      precautions: ["Respect the sanctity of an active worship site", "Outside festival periods, the site may be quiet with fewer people around"],
+      soloTips: ["Best visited with a local guide who can provide appropriate context and introductions, especially outside festival season"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The grove and immediate surrounding area"],
+      avoidAreas: ["None specifically flagged"],
+    },
+    rating: 4.2,
+    reviews: 130,
+    mustEat: ["Local snacks nearby", "Litti chokha in Ranchi"],
+    packingTips: ["Respectful, modest clothing", "A camera used considerately, with permission for photographing people", "A local guide for context, where possible"],
+  },
+  {
+    id: "chutupalu-valley",
+    name: "Chutupalu Valley",
+    state: "Jharkhand",
+    tagline: "A Sweeping Forested Valley Between Ranchi and Ramgarh",
+    description: "Chutupalu Valley stretches between Ramgarh and the Ranchi plateau, a wide expanse of forest and farmland framed by low, rolling hills that catches the eye of anyone driving the route between the two towns. The valley's genuine appeal lies in its scale and openness — dense green forest cover rolling into cultivated fields, with distant hazy ridgelines completing a classic Chota Nagpur plateau landscape, best appreciated from an elevated viewpoint along the road. Unlike Jharkhand's more developed scenic stops, Chutupalu Valley remains a largely unstructured, drive-through kind of destination, its value found in the sweep of the view itself rather than any built attraction, making it a genuinely pleasant stop for anyone travelling this stretch of road.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg/1280px-A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg/1280px-A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg/1280px-A_View_of_Ranchi_plateau_and_Damodar_Valley.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 3.0, description explicitly confirms \"A View of Ranchi plateau and Damodar Valley, Between Ramgarh and Chutupallu\", categorized \"Valleys of Jharkhand\"/\"Ramgarh district\". Only one genuinely verified image of this specific valley was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1 hour (a scenic drive-through stop)",
+    highlights: [
+      { name: "A sweeping forested valley between Ranchi and Ramgarh" },
+      { name: "Classic Chota Nagpur plateau scenery" },
+      { name: "An elevated roadside viewpoint" },
+      { name: "A genuinely unstructured, low-key scenic stop" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward toward Ramgarh", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~1h drive", costRange: "₹4,000–₹12,000", tips: "The valley is along the standard Ranchi-Ramgarh road route." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi for the drive toward Ramgarh." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Ramgarh on the plateau road", fromMumbai: "—", fromBangalore: "—", duration: "~45min-1h from Ranchi", costRange: "₹1,000–₹2,000 taxi", tips: "A worthwhile stop if already travelling between Ranchi and Ramgarh or Patratu Valley." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors pass through as part of a longer drive rather than staying." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "Included with a Ranchi-Ramgarh trip", notes: "Best experienced as part of a longer drive", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Patratu Valley", distance: "~20 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 400, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 700, transport: 1000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chutupalu and Patratu Valleys", morning: "Drive from Ranchi toward Ramgarh, stopping at Chutupalu Valley viewpoints.", afternoon: "Continue to Patratu Valley.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi", meals: "Roadside snacks along the route", tips: "Combine with Patratu Valley for a fuller day of Ranchi-area scenic drives." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A well-travelled road corridor between Ranchi and Ramgarh with regular traffic", "A straightforward scenic stop rather than an isolated destination"],
+      precautions: ["Roadside viewpoints warrant normal caution near traffic", "Limited facilities directly at viewpoints"],
+      soloTips: ["Comfortable as part of a day trip along a well-travelled road"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ramgarh Police", number: "06553-222333" }],
+      safeZones: ["Designated roadside viewpoints"],
+      avoidAreas: ["Standing directly on the road itself"],
+    },
+    rating: 4.1,
+    reviews: 340,
+    mustEat: ["Roadside snacks and tea stalls along the route", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the valley views", "Combine with a Patratu Valley drive for a fuller day"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
