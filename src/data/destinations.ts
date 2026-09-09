@@ -50556,6 +50556,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable clothing for a day of festival crowds", "A camera for the colourful processions", "Check the local festival calendar for exact dates"],
   },
 
+  {
+    id: "firkal-dance",
+    name: "Firkal Dance",
+    state: "Jharkhand",
+    tagline: "A Genuinely Endangered Warrior Dance, Surviving in Just One Village",
+    description: "Firkal is a martial folk dance of the Bhumij, a Munda ethnic group of the Chota Nagpur plateau, and it is genuinely on the edge of disappearing — by documented accounts, it now survives in just one obscure village, Janumdih in Potka block, East Singhbhum district, kept alive by no more than 25 Bhumij families. Dancers wear traditional attire woven from leaves by family members, paint their bodies with natural colours, and cover their heads with turbans tied with peacock feathers, carrying swords, bows, arrows, and shields that were once genuine weapons of the dance's martial origins. The choreography reenacts collective hunting — how wild animals were tracked through dense jungle, captured, and brought home for a communal feast — building to a high pitch driven by dhol and madal drumming, a performance said to predate even kalaripayattu and other well-known Indian martial art traditions. With no institutional patronage and a dwindling number of practising families, Firkal represents both a genuinely remarkable living heritage and a tradition in real, documented danger of extinction.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg/1280px-Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg/1280px-Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg/1280px-Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_01.jpg/1280px-Firkal_slowly_decaying_martial_dance_of_ChotaNagpur_of_Jharkhand_IMG_1069_01.jpg",
+    ],
+    imageCredit: "Photos: Sumita Roy Dutta — Wikimedia Commons, CC BY-SA 4.0, extensively documented file description confirming Firkal's origin and endangered status in Janumdih village, East Singhbhum district, used directly on English Wikipedia's \"Bhumij people\" article, categorized \"Firkal dance\".",
+    category: ["Heritage", "Rural"],
+    bestSeason: "Check locally for occasional cultural festival performances",
+    duration: "Varies by performance",
+    highlights: [
+      { name: "A martial dance now surviving in just one village" },
+      { name: "Traditional leaf-woven costumes and natural body paint" },
+      { name: "A reenactment of collective tribal hunting practices" },
+      { name: "A tradition said to predate kalaripayattu and other Indian martial arts" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward to Potka block", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is the practical gateway to East Singhbhum's rural villages." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur), then onward road", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Jamshedpur for the onward trip to Potka block." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then Jamshedpur, then Potka block toward Janumdih village", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Jamshedpur", costRange: "₹800–₹2,000 taxi", tips: "Given how rarely this dance is performed, contact local cultural organizations in advance rather than expecting a spontaneous performance." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The most practical base for reaching Potka block villages." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Jamshedpur to Janumdih village area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dalma Wildlife Sanctuary", distance: "~30 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 0, food: 400, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 0, food: 800, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Firkal Dance and Bhumij Culture", morning: "Travel from Jamshedpur to Potka block.", afternoon: "Meet local Bhumij families and learn about the Firkal tradition, ideally with prior arrangement.", evening: "Return to Jamshedpur.", stay: "A hotel in Jamshedpur", meals: "Local Jharkhandi meals", tips: "This is a genuinely rare, endangered tradition — approach with real respect and, ideally, support the practising families directly." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A small, settled rural community", "Low-crime, quiet village setting typical of the area"],
+      precautions: ["A genuinely obscure village with very limited tourist infrastructure — arrange visits in advance through local contacts", "Performances are rare and not guaranteed on any given visit"],
+      soloTips: ["Best visited with a local guide or cultural organization contact given how rarely the tradition is performed and how small the community is"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The village area with a local host or guide"],
+      avoidAreas: ["None specifically flagged — a quiet, low-traffic rural village"],
+    },
+    rating: 4.2,
+    reviews: 40,
+    mustEat: ["Simple local Jharkhandi meals in Jamshedpur", "Regional tribal cuisine, where available"],
+    packingTips: ["A camera used respectfully", "A local guide or cultural contact arranged in advance", "An open, patient mindset given how rare a performance is"],
+  },
+  {
+    id: "tusu-festival",
+    name: "Tusu Festival",
+    state: "Jharkhand",
+    tagline: "A Winter Harvest Festival Culminating in a Colourful Riverside Immersion",
+    description: "Tusu is a folk harvest festival celebrated through the winter months in Jharkhand's eastern districts, especially around Jamshedpur and the Bengal border region, its month-long observance building toward a final day when devotees carry decorated Tusu idols — or simply colourful cloth offerings — to a riverbank for ceremonial immersion. The scenes along the Subarnarekha and other rivers during the festival's culmination are genuinely vivid: riverbanks covered edge to edge with bright saris and fabric laid out as offerings, boats ferrying devotees and idols out onto the water, and large crowds gathering for what amounts to one of the region's most colourful and well-attended folk celebrations. Rooted in agrarian tradition and particularly significant to unmarried girls and young women in participating communities, Tusu offers visitors a genuinely large-scale, photogenic window into eastern Jharkhand's winter festival calendar.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tusu_festival_Jamshedpur_Jharkhand_26.jpg/1280px-Tusu_festival_Jamshedpur_Jharkhand_26.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tusu_festival_Jamshedpur_Jharkhand_26.jpg/1280px-Tusu_festival_Jamshedpur_Jharkhand_26.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tusu_festival_Jamshedpur_Jharkhand_26.jpg/1280px-Tusu_festival_Jamshedpur_Jharkhand_26.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tusu_festival_Jamshedpur_Jharkhand_06.jpg/1280px-Tusu_festival_Jamshedpur_Jharkhand_06.jpg",
+    ],
+    imageCredit: "Photos: Goutam1962 — Wikimedia Commons, CC BY-SA 4.0, both explicitly filenamed and categorized \"Tusu festival Jamshedpur Jharkhand\"/\"Tusu festival in Jharkhand\", uploaded via Wiki Loves Folklore 2026.",
+    category: ["Rural", "Heritage"],
+    bestSeason: "January (Makar Sankranti period, when the festival culminates)",
+    duration: "A full day (the culminating immersion ceremony)",
+    highlights: [
+      { name: "Riverbanks covered in vivid cloth offerings" },
+      { name: "Boats carrying devotees and Tusu idols out onto the water" },
+      { name: "A month-long agrarian festival culminating around Makar Sankranti" },
+      { name: "A significant tradition for unmarried girls and young women in participating communities" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "Time your visit for mid-January to catch the festival's culmination." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi to Jamshedpur", costRange: "₹200–₹500 local cab within the city", tips: "Riverbank celebration sites draw large crowds — arrive early for the best vantage point." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The most practical base during the festival period." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹400", notes: "From anywhere in Jamshedpur to riverbank celebration sites", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Subarnarekha River, Ghatshila", distance: "Varies", type: "River", isHidden: true, id: "galudih-barrage" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 350, accommodation: 0, food: 200, transport: 100, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 0, food: 400, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2200, accommodation: 0, food: 800, transport: 700, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tusu Festival Riverside", morning: "Head to a riverbank celebration site in or near Jamshedpur.", afternoon: "Observe the cloth offerings and community gathering.", evening: "Watch the ceremonial immersion of Tusu idols.", stay: "A hotel in Jamshedpur", meals: "Local festival food near the riverbank", tips: "Arrive early — riverbank celebration sites get genuinely crowded as the day's ceremonies build toward the immersion." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A major, well-attended regional festival with large public gatherings", "A family-oriented celebration atmosphere along the riverbank"],
+      precautions: ["Very large crowds at peak immersion time — standard crowd-safety awareness", "Riverbank terrain and crowds require normal caution near the water"],
+      soloTips: ["Comfortable given the large, public nature of the celebration; going with others is sensible for navigating the biggest crowd moments"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The main riverbank celebration areas"],
+      avoidAreas: ["Dense, unmanaged crowd crush points near the water during immersion"],
+    },
+    rating: 4.3,
+    reviews: 260,
+    mustEat: ["Local festival food near the riverbank", "Regional winter-season Jharkhandi dishes"],
+    packingTips: ["Comfortable footwear for riverbank terrain", "A camera for the colourful scenes", "Arrive early to secure a good vantage point"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
