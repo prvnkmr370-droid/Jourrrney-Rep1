@@ -47096,6 +47096,128 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "Comfortable footwear for the hilltop steps", "Cash for offerings"],
   },
 
+  {
+    id: "mccluskieganj",
+    name: "McCluskieganj",
+    state: "Jharkhand",
+    tagline: "A Fading Anglo-Indian Colony, Founded in 1933 as a Homeland",
+    description: "McCluskieganj, a small town in Ranchi district, has a genuinely unusual origin story: it was founded in 1933 by Ernest Timothy McCluskie as a planned settlement specifically for Anglo-Indians, offering them a homeland of their own during a period of real uncertainty about their place in a soon-to-be-independent India. Several hundred Anglo-Indian families settled here, building colonial-style bungalows and institutions across the wooded, hilly terrain, and though most descendants have since moved away — to the UK, Australia, or elsewhere in India — the town's weathered architecture and a small remaining Anglo-Indian community give it a genuinely distinctive, faded-elegance atmosphere unlike anywhere else in Jharkhand. A mosque, temple, and Gurudwara standing side by side in the town add a further, quieter layer of the multi-community history that shaped this unusual settlement.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/McCluskieganj.jpg/1280px-McCluskieganj.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/McCluskieganj.jpg/1280px-McCluskieganj.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/McCluskieganj.jpg/1280px-McCluskieganj.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/McCluskieganj_station.jpg/1280px-McCluskieganj_station.jpg",
+    ],
+    imageCredit: "Photos: Skmishraindia — Wikimedia Commons, public domain, both used directly on English Wikipedia's \"McCluskieganj\" article; the station photo is also linked from Wikidata Q63370477 and used on \"Tourism in Jharkhand\".",
+    category: ["Rural", "Heritage"],
+    bestSeason: "October – March",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Weathered colonial-era Anglo-Indian bungalows and architecture" },
+      { name: "The town's unique 1933 founding as an Anglo-Indian homeland" },
+      { name: "A mosque, temple, and Gurudwara standing side by side" },
+      { name: "The historic McCluskieganj railway station" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~65 km to McCluskieganj", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~1.5h drive", costRange: "₹4,000–₹12,000", tips: "A manageable half-day trip from Ranchi." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi, then onward via McCluskieganj railway station", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "McCluskieganj has its own small station, a nice way to arrive given the town's history." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then NH33 toward Lohardaga — ~65 km from Ranchi", fromMumbai: "—", fromBangalore: "—", duration: "~1.5h from Ranchi", costRange: "₹1,500–₹3,000 taxi", tips: "A quiet, scenic drive through wooded countryside." },
+    ],
+    accommodation: [
+      { type: "Heritage Homestays", priceRange: "₹1,500–₹4,000/night", examples: ["A few remaining Anglo-Indian family homestays"], description: "A genuinely unique way to experience the town's remaining community and history." },
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The town is small and easily explored on foot", available: true },
+      { mode: "Local Taxi", cost: "₹500–₹1,500", notes: "From Ranchi or the railway station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Patratu Valley", distance: "~70 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1600, accommodation: 800, food: 400, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3500, accommodation: 2500, food: 700, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "McCluskieganj Heritage Walk", morning: "Drive from Ranchi to McCluskieganj.", afternoon: "Walk through the town, viewing colonial-era bungalows and the historic station.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi or a heritage homestay", meals: "Simple local meals in the town", tips: "Speaking with any remaining long-time Anglo-Indian residents, where possible, adds real depth to understanding this unusual town's history." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A quiet, settled small town with a stable local community", "Low-crime, rural setting typical of the area"],
+      precautions: ["A small, quiet town with limited facilities — plan visits during daylight hours", "Fewer tourist services than major destinations, so a pre-arranged vehicle is sensible"],
+      soloTips: ["Comfortable during the day; the town's quiet character makes an early evening return to Ranchi or a homestay the more practical plan"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The main town area and railway station"],
+      avoidAreas: ["None specifically flagged — a quiet, low-traffic rural town"],
+    },
+    rating: 4.0,
+    reviews: 620,
+    mustEat: ["Simple local meals in the town", "Anglo-Indian-influenced home cooking, where available through homestays"],
+    packingTips: ["Comfortable walking shoes for exploring the town", "A camera for the colonial-era architecture", "Cash, as facilities are limited"],
+  },
+  {
+    id: "trikut-hill",
+    name: "Trikut Hill",
+    state: "Jharkhand",
+    tagline: "A Three-Peaked Hill Near Deoghar, Crossed by a Dramatic Ropeway",
+    description: "Trikut Hill rises near Deoghar, its name literally meaning \"three peaks,\" a genuinely striking rocky outcrop visible for miles across the surrounding plains. The hill's main draw for visitors is its ropeway, a cable car system that climbs steeply up the rock face and offers sweeping views over the flat agricultural land below — a dramatic, slightly vertiginous ride that's become the site's signature experience. Often combined with a Baidyanath Dham or Deoghar pilgrimage visit given the short distance between them, Trikut Hill offers a genuinely different kind of experience from the region's temple circuit — a natural landmark and adventure activity rather than a religious site, though its silhouette has long been a familiar backdrop to Deoghar's pilgrimage town.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/79/Trikut_pahar_ropeway.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/79/Trikut_pahar_ropeway.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Trikut_pahar_ropeway.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/24/Trikut_pahar.jpg",
+    ],
+    imageCredit: "Photos: Tarunsamanta — Wikimedia Commons, CC BY-SA 4.0, one used directly on English Wikipedia's \"Trikut Hill\" article, the other on English Wikivoyage's \"Deoghar\" page and linked from Wikidata Q7841969, categorized \"Trikut Hill\"/\"Trikut Hill ropeway\".",
+    category: ["Adventure", "Nature"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The dramatic ropeway climbing the rock face" },
+      { name: "Sweeping views over the plains from the hilltop" },
+      { name: "The distinctive three-peaked rock formation" },
+      { name: "An easy pairing with a Deoghar/Baidyanath Dham visit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then a short drive to Trikut Hill", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~30min drive", costRange: "₹4,000–₹13,000", tips: "Easily combined with a Baidyanath Dham visit in Deoghar." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jasidih Junction, then onward road — ~15-17h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "Jasidih Junction is the nearest major station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH19/NH2 through Bihar to Deoghar, then onward to Trikut Hill", fromMumbai: "—", fromBangalore: "—", duration: "~30-40min from Deoghar", costRange: "₹800–₹1,800 taxi", tips: "A popular half-day add-on to a Deoghar pilgrimage trip." },
+    ],
+    accommodation: [
+      { type: "Hotels (Deoghar)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Deoghar town"], description: "Most visitors day-trip from Deoghar." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹400–₹1,000", notes: "From Deoghar to the base of Trikut Hill", available: true },
+      { mode: "Ropeway", cost: "₹100–₹250", notes: "The main way up the hill", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baidyanath Dham", distance: "~15 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1400, accommodation: 0, food: 400, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3200, accommodation: 0, food: 800, transport: 1200, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Trikut Hill Ropeway", morning: "Drive from Deoghar to Trikut Hill.", afternoon: "Ropeway ride to the summit, enjoy the panoramic views.", evening: "Return to Deoghar.", stay: "A hotel in Deoghar", meals: "Local snacks at the base of the hill", tips: "A genuinely exciting ropeway ride — not recommended for those with a strong fear of heights." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A well-known regional attraction with steady visitor footfall, especially combined with Deoghar pilgrimage traffic", "Managed ropeway operation with regular staff presence"],
+      precautions: ["The ropeway itself involves genuine height exposure — standard caution applies", "Can get busy on weekends and during the Shravani Mela season nearby", "Limited facilities directly at the hill outside the ropeway station"],
+      soloTips: ["Comfortable as part of a day trip; the ropeway experience is enjoyable solo or with others alike"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Deoghar Police", number: "06432-232233" }],
+      safeZones: ["The main ropeway station and hilltop viewing areas"],
+      avoidAreas: ["Unrailed rock edges away from the main path"],
+    },
+    rating: 4.2,
+    reviews: 2100,
+    mustEat: ["Local snacks near the ropeway base", "Peda and sweets in Deoghar"],
+    packingTips: ["Comfortable footwear for the hilltop walk", "A light jacket, as it can be windy at height", "A camera for the ropeway views"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
