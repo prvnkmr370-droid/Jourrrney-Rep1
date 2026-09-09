@@ -47700,6 +47700,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "A camera for the distinctive architecture", "Comfortable footwear for the stairs"],
   },
 
+  {
+    id: "pahari-mandir-ranchi",
+    name: "Pahari Mandir (Ranchi Hill)",
+    state: "Jharkhand",
+    tagline: "A Shiva Shrine Atop Ranchi Hill, One of the City's Defining Landmarks",
+    description: "Pahari Mandir sits atop Ranchi Hill, a Shiva temple whose hilltop position makes it one of the most recognizable landmarks in the city — visible from a wide radius and, in turn, offering sweeping views back down over Ranchi's rooftops from its summit. Reached via a long, covered stairway that climbs steadily up the hillside, the temple draws both dedicated devotees and casual visitors who come primarily for the panoramic view, especially around sunset when the city below takes on a golden hue. Simple in its architecture compared to some of Jharkhand's grander temples, Pahari Mandir's real appeal lies in its role as a genuine civic landmark — a place locals return to regularly, not just a tourist stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pahari_Mandir_-_Ranchi_Hill_9242.JPG/1280px-Pahari_Mandir_-_Ranchi_Hill_9242.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pahari_Mandir_-_Ranchi_Hill_9242.JPG/1280px-Pahari_Mandir_-_Ranchi_Hill_9242.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pahari_Mandir_-_Ranchi_Hill_9242.JPG/1280px-Pahari_Mandir_-_Ranchi_Hill_9242.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pahari_Mandir_Stairway_-_Ranchi_Hill_9224.JPG/1280px-Pahari_Mandir_Stairway_-_Ranchi_Hill_9224.JPG",
+    ],
+    imageCredit: "Photos: Biswarup Ganguly — Wikimedia Commons, CC BY 3.0/GFDL, used directly on English Wikivoyage's \"Ranchi\" article, Wikidata Q85791801, categorized \"Pahari Mandir\".",
+    category: ["Religious", "Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The hilltop Shiva shrine, a defining Ranchi landmark" },
+      { name: "The long covered stairway climb" },
+      { name: "Panoramic sunset views over Ranchi" },
+      { name: "A genuine local civic gathering point, not just a tourist stop" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, an easy add-on to any city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within central Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Visit around sunset for the best views over the city." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The hill sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Walking (covered stairway)", cost: "Free", notes: "The traditional way up the hill", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tagore Hill", distance: "~6 km", type: "Heritage Hill", isHidden: false, id: "tagore-hill" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Pahari Mandir Sunset Visit", morning: "Explore other central Ranchi sights.", afternoon: "Rest before the climb.", evening: "Climb Pahari Mandir for sunset views over the city.", stay: "A hotel in Ranchi", meals: "Local snacks near the base of the hill", tips: "The covered stairway makes for a shaded, manageable climb even in warmer weather." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A major, heavily-used city landmark with constant local footfall, especially at sunset", "The covered stairway and central location keep it well-trafficked and visible"],
+      precautions: ["The climb is moderately steep — wear proper footwear", "Can get crowded during evening hours, especially weekends"],
+      soloTips: ["Very comfortable solo given the steady stream of visitors and central city location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The stairway and summit temple area"],
+      avoidAreas: ["None significant — a well-trafficked central landmark"],
+    },
+    rating: 4.3,
+    reviews: 4100,
+    mustEat: ["Local snacks near the base of the hill", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable footwear for the stairway climb", "A camera for the sunset views", "Modest clothing for temple visits"],
+  },
+  {
+    id: "surya-mandir-bundu",
+    name: "Surya Mandir, Bundu",
+    state: "Jharkhand",
+    tagline: "A Konark-Style Sun Temple, Its Stone Chariot Drawn by Sculpted Horses",
+    description: "The Surya Mandir near Bundu, about 40 km from Ranchi, is a genuinely striking piece of modern temple architecture built in the same tradition as the famous 13th-century Sun Temple at Konark — the entire structure shaped as a massive stone chariot, complete with a row of ornately carved horses appearing to pull the temple forward. A tall, tapering central spire rises above the chariot form, its silhouette distinct from any other temple in the region, while smaller domed shrines cluster around the main structure. Dedicated to Surya, the sun god, the temple's dramatic, sculptural design makes it as much an architectural landmark to photograph as a religious site to visit, drawing attention even from those simply passing through Bundu.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/53/Sun_Temple%2C_Bundu%2C_Ranchi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/53/Sun_Temple%2C_Bundu%2C_Ranchi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/53/Sun_Temple%2C_Bundu%2C_Ranchi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/68/Surya_Mandir%2C_Bundu%2C_near_Ranchi._Jharkhand.jpg",
+    ],
+    imageCredit: "Photos: SUDEEP PRAMANIK — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed at Bundu (23°10'54\"N 85°33'44\"E and 23°10'53\"N 85°33'41\"E), categorized \"Surya Temple, Bundu\"; one image used directly on English, Arabic, and Nepali Wikipedia's \"Jharkhand\" articles.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The Konark-style stone chariot temple form" },
+      { name: "Ornately carved horses appearing to draw the chariot" },
+      { name: "A tall, distinctive tapering central spire" },
+      { name: "A striking architectural landmark near Bundu" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~40 km to Bundu", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~1h drive", costRange: "₹4,000–₹12,000", tips: "Often combined with a Dassam or Jonha Falls trip along the same route." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi station for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Bundu on the Jamshedpur highway route", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Ranchi", costRange: "₹1,200–₹2,500 taxi", tips: "Easily combined with Dassam Falls, on the same general route from Ranchi." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Almost all visitors day-trip from Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹1,500–₹2,800 round trip", notes: "Often combined with a Dassam Falls visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dassam Falls", distance: "~20 km", type: "Waterfall", isHidden: false, id: "dassam-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 450, accommodation: 0, food: 200, transport: 200, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 700, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2600, accommodation: 0, food: 800, transport: 1500, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Surya Mandir and Dassam Falls", morning: "Drive from Ranchi toward Bundu, visit the Surya Mandir.", afternoon: "Continue to Dassam Falls.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi", meals: "Local snacks near the temple or falls", tips: "A short, worthwhile architectural stop to pair with a Dassam Falls day trip." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A recognized regional landmark with steady visitor and passing traffic", "Often visited alongside the well-frequented Dassam Falls route"],
+      precautions: ["A relatively quiet standalone site — visiting as part of a day trip with others is sensible", "Limited facilities directly at the temple"],
+      soloTips: ["Comfortable as a brief stop during a day trip; not typically a standalone destination to linger at alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main temple complex"],
+      avoidAreas: ["None specifically flagged — a quiet roadside temple stop"],
+    },
+    rating: 4.1,
+    reviews: 480,
+    mustEat: ["Local snacks near the temple", "Litti chokha in Ranchi"],
+    packingTips: ["Modest clothing for temple visits", "A camera for the distinctive chariot architecture", "Combine with a Dassam Falls visit for a fuller day"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
