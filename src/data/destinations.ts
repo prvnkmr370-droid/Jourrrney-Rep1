@@ -51733,6 +51733,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local snacks nearby", "Litti chokha in Ranchi"],
     packingTips: ["A camera for the statue", "A little background reading on Birsa Munda and the Ulgulan movement adds real context"],
   },
+  {
+    id: "burudih-lake",
+    name: "Burudih Lake",
+    state: "Jharkhand",
+    tagline: "A Hill-Ringed Lake Near Ghatshila, Popular for Boating and Picnics",
+    description: "Burudih Lake sits on the outskirts of Ghatshila in East Singhbhum district, its calm waters framed by a low, forested hill rising directly from the opposite shore — a genuinely tranquil scene that has made it one of the area's most popular local getaways alongside Ghatshila's better-known Subarnarekha riverside spots. The lake's still surface reflects the surrounding hills and sky especially beautifully during and after the monsoon, when the greenery is at its lushest, and a simple lakeside path offers easy access for picnics, photography, and quiet contemplation. Boating facilities operate seasonally, adding a modest recreational dimension to what is otherwise a genuinely peaceful natural setting, making Burudih Lake a worthwhile addition to any visit to the Ghatshila area.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Burudih_Lake_01.jpg/1280px-Burudih_Lake_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Burudih_Lake_01.jpg/1280px-Burudih_Lake_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Burudih_Lake_01.jpg/1280px-Burudih_Lake_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Burudih_Lake_04.jpg/1280px-Burudih_Lake_04.jpg",
+    ],
+    imageCredit: "Photos: uploaded to Wikimedia Commons — CC BY-SA 4.0, both explicitly captioned \"Burudih Lake in Ghatshila, Jharkhand\".",
+    category: ["Nature"],
+    bestSeason: "July – February (lush green during and after monsoon)",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A calm, hill-framed lake near Ghatshila" },
+      { name: "Seasonal boating facilities" },
+      { name: "Lush monsoon-season greenery and reflections" },
+      { name: "A quiet, popular local picnic spot" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi/Kolkata to Ghatshila, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Ghatshila has its own railway station, well-connected from Kolkata and Jamshedpur." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ghatshila — ~20h+", fromMumbai: "~20h+", fromBangalore: "~24h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local ride from Ghatshila station to Burudih Lake." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within the Ghatshila area", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ghatshila", costRange: "₹100–₹300 local cab", tips: "Easily combined with a visit to Ghatshila's Subarnarekha riverside spots." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ghatshila)", priceRange: "₹800–₹3,500/night", examples: ["Hotels and guesthouses in Ghatshila town"], description: "The lake sits within easy reach of most town hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ghatshila", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ratmohana Riverside", distance: "~5 km", type: "Riverside", isHidden: false, id: "ratmohana-ghatshila" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 300, transport: 150, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 600, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ghatshila and Burudih Lake", morning: "Visit Burudih Lake for a peaceful walk or boat ride.", afternoon: "Continue to the Subarnarekha riverside at Ratmohana.", evening: "Explore central Ghatshila.", stay: "A hotel in Ghatshila", meals: "Local snacks and street food in Ghatshila", tips: "Monsoon and just-after-monsoon months bring out the lake's lushest, most scenic colours." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A popular, well-known local picnic and boating spot with regular footfall", "Close to Ghatshila town with easy access"],
+      precautions: ["Standard water-body caution near the lakeside", "Limited facilities outside peak visiting hours"],
+      soloTips: ["Comfortable during daylight hours given the steady stream of local visitors"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ghatshila Police", number: "0657-3231240" }],
+      safeZones: ["The main lakeside path and boating area"],
+      avoidAreas: ["Swimming or venturing into the lake itself"],
+    },
+    rating: 4.1,
+    reviews: 260,
+    mustEat: ["Local snacks and street food in Ghatshila", "Litti chokha"],
+    packingTips: ["A camera for the hill and lake reflections", "A change of clothes if boating", "Comfortable walking shoes"],
+  },
 
 ];
 
