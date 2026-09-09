@@ -46733,6 +46733,129 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "Non-slip footwear near the riverbank", "Cash for offerings"],
   },
 
+  {
+    id: "itkhori",
+    name: "Itkhori (Bhadrakali Temple)",
+    state: "Jharkhand",
+    tagline: "Where Hinduism, Buddhism, and Jainism Genuinely Converge in One Complex",
+    description: "Itkhori, in Chatra district, is a genuinely rare site in that it brings together three religious traditions at a single location — the Bhadrakali Temple here is revered by Hindus as a Devi shrine, by Buddhists for its historical associations, and by Jains, who consider it the birthplace of Shitalnath, the tenth Tirthankar. Inside the temple complex sits the Sahastrakoot Jinalaya, a striking stone structure carved with 1,008 miniature Jain Tirthankar figures, now housed and worshipped within the Hindu temple as a Sahasrara Shivling — a genuinely unusual layering of traditions onto a single object rather than separate shrines side by side. Archaeological excavations at Itkhori have also turned up stupas and other Buddhist-era remains, adding a documented historical layer beneath the site's continuing life as an active place of worship.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/1280px-Bhadrakali_Itkhori.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/1280px-Bhadrakali_Itkhori.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/1280px-Bhadrakali_Itkhori.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/BhadraKali_Temple.jpg",
+    ],
+    imageCredit: "Photos: Bhadani (public domain, used directly on English Wikipedia's \"Chatra district\", \"History of Jharkhand\", and \"Itkhori block\" articles, categorized \"Itkhori\") and Solariseknight (CC BY-SA 4.0, its description explicitly identifying the Sahastrakoot Jinalaya within the Bhadrakali Temple at Itkhori, used directly on English Wikipedia's \"Itkhori block\" article) — Wikimedia Commons.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Bhadrakali Temple, sacred to Hindus, Buddhists, and Jains alike" },
+      { name: "The Sahastrakoot Jinalaya with its 1,008 carved Tirthankar figures" },
+      { name: "The traditional birthplace site of Shitalnath, the 10th Jain Tirthankar" },
+      { name: "Archaeological remains from Buddhist-era excavations nearby" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Chatra district", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~3-4h drive", costRange: "₹4,000–₹12,000", tips: "Chatra is a genuine day's-drive destination from Ranchi." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Hazaribagh or Gaya, then onward by road", fromMumbai: "~26h+ via Gaya", fromBangalore: "~30h+", duration: "Varies via connection", costRange: "₹500–₹2,500", tips: "Gaya, in neighbouring Bihar, is often a more convenient rail gateway for Chatra district." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Gaya (Bihar) or Hazaribagh — Itkhori sits near the Jharkhand-Bihar border", fromMumbai: "—", fromBangalore: "—", duration: "~1.5-2h from Gaya", costRange: "₹1,500–₹3,500 taxi", tips: "Many pilgrims approach from Gaya given the proximity to the Bihar border." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (near the temple)", priceRange: "₹300–₹1,000/night", examples: ["Basic pilgrim rest houses at Itkhori"], description: "Simple stays built for pilgrimage footfall." },
+      { type: "Hotels (Chatra/Hazaribagh)", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in the nearest towns"], description: "A wider range of options for those staying overnight nearby." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From nearby towns to the temple complex", available: true },
+      { mode: "Private Taxi", cost: "₹1,500–₹3,000 round trip", notes: "The most practical way to reach this relatively remote site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Betla National Park", distance: "~90 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 200, food: 200, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1400, accommodation: 800, food: 400, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3200, accommodation: 2200, food: 700, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Itkhori Temple Visit", morning: "Drive to Itkhori from Gaya or Hazaribagh.", afternoon: "Visit the Bhadrakali Temple and the Sahastrakoot Jinalaya.", evening: "Return journey.", stay: "A hotel in Hazaribagh or Chatra", meals: "Simple local meals near the temple", tips: "A relatively remote site — plan transport in advance rather than expecting to find onward transport locally." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["An actively worshipped, multi-faith pilgrimage site with regular local visitors", "A historically and archaeologically significant site with some local caretaking presence"],
+      precautions: ["A relatively remote location — travel with a pre-arranged vehicle rather than relying on local transport availability", "Limited facilities and connectivity in the immediate area", "Fewer crowds than major pilgrimage centres, so travelling with others is sensible"],
+      soloTips: ["Best visited with a pre-arranged driver or as part of a small group given the site's relative remoteness"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Chatra Police", number: "06564-222333" }],
+      safeZones: ["The main temple complex"],
+      avoidAreas: ["Isolated surrounding areas after dark"],
+    },
+    rating: 4.2,
+    reviews: 540,
+    mustEat: ["Simple local meals near the temple", "Regional Jharkhandi snacks in nearby towns"],
+    packingTips: ["Modest clothing for temple visits", "Cash, as card facilities are limited", "A pre-arranged vehicle given the site's remoteness"],
+  },
+  {
+    id: "maluti-temples",
+    name: "Maluti Temples",
+    state: "Jharkhand",
+    tagline: "A Village of 72 Terracotta Temples, an ASI-Protected Living Museum",
+    description: "Maluti, a small village in Dumka district, holds a genuinely remarkable concentration of history: at its peak it had 108 terracotta temples built by the Malla dynasty of Baj Basanta between the 17th and 19th centuries, of which around 72 survive today, an officially recognized Archaeological Survey of India monument (S-JH-1). Each temple is a compact, richly carved terracotta structure with a curved Bengal-style roofline, the brickwork covered in intricate relief panels depicting Hindu deities, mythological scenes, and everyday life — a craft tradition genuinely comparable to the better-known terracotta temples of Bishnupur in West Bengal, but far less visited. Walking through Maluti's clustered temple courtyards, many still standing wall-to-wall in the village's narrow lanes, offers a rare, tangible sense of a centuries-old temple town that has continued to function as a living settlement around its own monuments rather than being preserved as an isolated ruin.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Top_View_of_Temples_at_Maluti.jpg/1280px-Top_View_of_Temples_at_Maluti.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Top_View_of_Temples_at_Maluti.jpg/1280px-Top_View_of_Temples_at_Maluti.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Top_View_of_Temples_at_Maluti.jpg/1280px-Top_View_of_Temples_at_Maluti.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/53/Maluti_Temples._Maluti.jpg",
+    ],
+    imageCredit: "Photos: AMITABHA GUPTA and Rangan Datta Wiki — Wikimedia Commons, both CC BY/BY-SA 4.0, both explicit ASI monument S-JH-1 photographs with \"location of creation: Dumka district\" confirmed in the file metadata, categorized \"Maluti temples\".",
+    category: ["Heritage", "Religious"],
+    bestSeason: "October – March",
+    duration: "2–4 hours",
+    highlights: [
+      { name: "Around 72 surviving 17th-19th century terracotta temples" },
+      { name: "Intricate terracotta relief carvings of deities and mythological scenes" },
+      { name: "An ASI-protected monument (S-JH-1)" },
+      { name: "A living village woven directly around its own centuries-old temples" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then onward to Dumka district", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~2h drive", costRange: "₹4,000–₹13,000", tips: "Deoghar is the most convenient air gateway for Maluti." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Rampurhat (West Bengal) or Jasidih Junction, then onward by road", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "Rampurhat station, just across the border in West Bengal, is often the closer rail option." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Deoghar or Rampurhat, then to Maluti village in Dumka district", fromMumbai: "—", fromBangalore: "—", duration: "~1.5-2h from Deoghar", costRange: "₹1,500–₹3,000 taxi", tips: "A quiet village road approach — a private vehicle is the most practical way in." },
+    ],
+    accommodation: [
+      { type: "Homestays/Guesthouses", priceRange: "₹500–₹1,200/night", examples: ["Basic local stays in or near Maluti village"], description: "Simple options for those wanting to explore the temples unhurried." },
+      { type: "Hotels (Dumka/Rampurhat)", priceRange: "₹1,200–₹3,000/night", examples: ["Hotels in the nearest towns"], description: "A more comfortable base for a day-trip visit." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple clusters are best explored on foot through the village lanes", available: true },
+      { mode: "Local Taxi/Auto", cost: "₹500–₹1,500", notes: "From Dumka or Rampurhat to the village", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baidyanath Dham", distance: "~65 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 200, food: 200, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 1800, food: 700, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Maluti Temple Walk", morning: "Drive to Maluti from Dumka or Rampurhat.", afternoon: "Walk through the village's temple clusters, examining the terracotta carvings.", evening: "Return journey.", stay: "A hotel in Dumka or Rampurhat", meals: "Simple local meals in the village or nearest town", tips: "Go slowly — the real reward here is in the carved detail on each individual temple, easy to miss at a quick pace." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A quiet, ASI-protected heritage village with a settled local community", "Low-crime, rural setting typical of protected monument villages"],
+      precautions: ["A relatively remote village — limited facilities and connectivity", "Fewer visitors than major sites, so travelling with a guide or group adds convenience", "Uneven ground and old stonework in places — watch your footing"],
+      soloTips: ["Comfortable during daylight hours with a pre-arranged driver; a local guide adds real value given how many similar-looking temples there are to navigate"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dumka Police", number: "06434-222233" }],
+      safeZones: ["The main temple cluster areas within the village"],
+      avoidAreas: ["None specifically flagged — exercise standard rural-travel caution after dark"],
+    },
+    rating: 4.4,
+    reviews: 420,
+    mustEat: ["Simple Bengali-influenced Jharkhandi meals in local homes/eateries", "Local sweets from Dumka town"],
+    packingTips: ["Comfortable walking shoes for the village lanes", "A camera with a good zoom for the carved details", "A local guide's contact, arranged in advance if possible"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
