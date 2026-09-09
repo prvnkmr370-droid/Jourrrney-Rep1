@@ -47939,6 +47939,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "A notebook or camera for the historic sculpture, where permitted", "Check opening hours in advance"],
   },
 
+  {
+    id: "dharagiri-waterfalls",
+    name: "Dharagiri Waterfalls",
+    state: "Jharkhand",
+    tagline: "A Hidden Forest Cascade Near Ghatshila, on the Way to the Bengal Border",
+    description: "Dharagiri Waterfalls sits near Ghatshila in East Singhbhum district, close to Jharkhand's border with West Bengal, its water dropping through a narrow, densely forested rock cleft into a shaded pool below. Genuinely tucked away compared to the state's more publicized falls, Dharagiri rewards the effort of finding it with a quiet, intimate setting — thick tree cover overhanging the rock face, dappled light filtering through onto the cascade, and none of the crowds or infrastructure of Jharkhand's bigger-name waterfalls. Ghatshila itself has long been a favoured riverside getaway on the Subarnarekha, and Dharagiri makes a natural, off-the-beaten-path addition for visitors already exploring that area, appealing especially to those who prefer a more secluded nature spot over a developed tourist site.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dharagiri_Waterfalls_04.jpg/1280px-Dharagiri_Waterfalls_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dharagiri_Waterfalls_04.jpg/1280px-Dharagiri_Waterfalls_04.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dharagiri_Waterfalls_04.jpg/1280px-Dharagiri_Waterfalls_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Dharagiri_Waterfalls_08.jpg/1280px-Dharagiri_Waterfalls_08.jpg",
+    ],
+    imageCredit: "Photos: Tarunsamanta — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed 22°40'40.96\"N 86°29'58.17\"E at Ghatshila, categorized \"Waterfalls in Jharkhand\"/\"Ghatshila\".",
+    category: ["Nature"],
+    bestSeason: "July – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A secluded, forest-shaded waterfall cleft" },
+      { name: "A quiet, off-the-beaten-path alternative to major falls" },
+      { name: "Proximity to Ghatshila's riverside Subarnarekha setting" },
+      { name: "Dense canopy cover for a cool, shaded visit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Ghatshila area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Ghatshila is closer to Kolkata than most other Jharkhand gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ghatshila station on the Howrah-Mumbai line", fromMumbai: "~20h+", fromBangalore: "~28h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Ghatshila has its own railway station, a short drive from the falls." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamshedpur, then to Ghatshila — near the West Bengal border", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Jamshedpur", costRange: "₹1,200–₹2,500 taxi", tips: "A local guide helps in finding the less-marked trail to the falls." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ghatshila)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels and guesthouses in Ghatshila town"], description: "Most visitors day-trip from Ghatshila." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to the falls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dalma Wildlife Sanctuary", distance: "~45 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 450, accommodation: 0, food: 200, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 600, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2600, accommodation: 0, food: 800, transport: 1300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dharagiri Waterfalls Day Trip", morning: "Drive from Ghatshila to Dharagiri Waterfalls.", afternoon: "Explore the shaded pool and forest surroundings.", evening: "Return to Ghatshila, optionally visiting the Subarnarekha riverside.", stay: "A hotel in Ghatshila", meals: "Local snacks near the falls", tips: "A local guide is genuinely useful — this is a quieter, less-marked site than Jharkhand's major falls." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A quiet, lesser-known natural spot near the well-established Ghatshila riverside town", "Reasonably accessible from Ghatshila's tourist infrastructure"],
+      precautions: ["A less-developed, more secluded site — visiting with a local guide or group is sensible", "Limited facilities directly at the falls", "Standard water-safety caution near the pool"],
+      soloTips: ["Best visited with a local guide or as part of a small group, given the secluded, less-trafficked setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ghatshila Police", number: "0657-2432233" }],
+      safeZones: ["The main pool and approach trail"],
+      avoidAreas: ["Off-trail forest areas beyond the falls, especially alone"],
+    },
+    rating: 3.9,
+    reviews: 210,
+    mustEat: ["Local snacks in Ghatshila town", "Regional Jharkhandi meals"],
+    packingTips: ["Sturdy footwear for the forest approach", "A local guide's contact, arranged in advance", "Water and insect repellent"],
+  },
+  {
+    id: "sugga-bandh-falls",
+    name: "Sugga Bandh Falls",
+    state: "Jharkhand",
+    tagline: "A Wide River Cascade on the Burha River, Inside Palamau Tiger Reserve",
+    description: "Sugga Bandh Falls sits on the Burha River within the Palamau Tiger Reserve in Latehar district, its water spreading across a broad expanse of flat granite bedrock rather than dropping in a single narrow column — a wide, braided cascade that catches genuinely spectacular light at sunrise and sunset, when the low sun turns the spray and wet rock gold. A small viewing gazebo overlooks the falls, giving visitors an unobstructed vantage point over the full width of the river as it churns across the rock shelves. Its location within the tiger reserve gives Sugga Bandh a wilder, more protected character than most Jharkhand waterfalls — a genuine forest-and-water landscape rather than a purely recreational site, tied directly into the same conservation area as Betla National Park nearby.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sugga_Bandh_Fall_2305.jpg/1280px-Sugga_Bandh_Fall_2305.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sugga_Bandh_Fall_2305.jpg/1280px-Sugga_Bandh_Fall_2305.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sugga_Bandh_Fall_2305.jpg/1280px-Sugga_Bandh_Fall_2305.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Suga_bandh_fall_7203.jpg/1280px-Suga_bandh_fall_7203.jpg",
+    ],
+    imageCredit: "Photos: Dev0745 — Wikimedia Commons, CC BY 4.0, both with file descriptions explicitly confirming Latehar district, Palamau Tiger Reserve, categorized \"Sugga Bandh Falls\"/\"Burha River\"/\"Palamau Tiger Reserve\".",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A wide, braided cascade across flat granite bedrock" },
+      { name: "A viewing gazebo overlooking the full river width" },
+      { name: "Sunrise and sunset light across the wet rock" },
+      { name: "A setting inside Palamau Tiger Reserve" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Latehar/Betla area", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4h drive", costRange: "₹4,000–₹12,000", tips: "Combine with a Betla National Park visit given the shared reserve." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj — ~18-20h", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the nearest rail gateway to the reserve." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Daltonganj toward Palamau Tiger Reserve", fromMumbai: "—", fromBangalore: "—", duration: "~30-40min from Betla National Park", costRange: "₹2,000–₹4,000 private cab/reserve vehicle", tips: "Access is via the reserve, so plan the visit alongside Betla's entry procedures." },
+    ],
+    accommodation: [
+      { type: "Forest Rest Houses (Betla)", priceRange: "₹800–₹2,000/night", examples: ["Jharkhand Tourism forest lodges near Betla"], description: "The nearest and most practical stay given the falls' reserve location." },
+      { type: "Budget Hotels (Daltonganj)", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in Daltonganj town"], description: "A wider range of options in the nearest town." },
+    ],
+    localTransport: [
+      { mode: "Reserve Vehicle/Jeep", cost: "Included with reserve entry or ₹1,500-3,000", notes: "Access within the tiger reserve typically requires an authorized vehicle", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Betla National Park", distance: "~15 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 350, food: 200, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1900, accommodation: 1100, food: 400, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4200, accommodation: 2800, food: 800, transport: 500, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Betla and Sugga Bandh Falls", morning: "Jeep safari at Betla National Park.", afternoon: "Continue to Sugga Bandh Falls on the Burha River.", evening: "Sunset views from the viewing gazebo.", stay: "A forest rest house near Betla", meals: "Simple local meals at the lodge", tips: "Visit late afternoon for the best golden-hour light across the wide rock shelves." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Located within the managed Palamau Tiger Reserve with regular forest department presence", "Usually visited alongside the well-frequented Betla National Park"],
+      precautions: ["This is active tiger reserve habitat — never leave designated paths or vehicles unescorted", "Standard water-safety caution on the wide rock shelves, especially when wet", "Limited facilities beyond the viewing gazebo"],
+      soloTips: ["Visit as part of an organized reserve trip rather than independently, given the wildlife reserve setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Forest Department, Betla", number: "06562-222650" }],
+      safeZones: ["The viewing gazebo and designated approach path"],
+      avoidAreas: ["Off-path forest areas within the tiger reserve"],
+    },
+    rating: 4.3,
+    reviews: 380,
+    mustEat: ["Simple Jharkhandi thali at forest lodges near Betla", "Litti chokha, a regional staple"],
+    packingTips: ["Neutral-colored clothing given the reserve setting", "Non-slip footwear for the wet rock shelves", "A camera for sunrise/sunset light"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
