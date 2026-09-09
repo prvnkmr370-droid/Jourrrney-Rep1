@@ -48296,6 +48296,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for the mosque visit", "A pre-arranged vehicle given the site's remoteness", "Cash, as facilities are limited"],
   },
 
+  {
+    id: "bhagwan-birsa-biological-park",
+    name: "Bhagwan Birsa Biological Park",
+    state: "Jharkhand",
+    tagline: "Ranchi's Zoo and Rescue Centre, Home to Royal Bengal Tigers and Sun Bears",
+    description: "Bhagwan Birsa Biological Park, commonly known as Ranchi's zoo or the Birsa Munda Zoo, is a genuinely well-stocked wildlife park on the city's outskirts, home to Royal Bengal tigers, Himalayan black bears, spotted deer herds, and a wide range of birdlife across its enclosures. Named for the Munda tribal leader Birsa Munda, the park functions as both a public zoo and a conservation facility, its sizeable deer herds roaming semi-open enclosures in a way that gives visitors a genuinely closer look at wildlife than the reserve's fenced perimeter might suggest. For families and anyone wanting a guaranteed wildlife sighting without the uncertainty of a forest safari, the park offers a straightforward, reliable alternative to Betla National Park or Dalma Sanctuary's wild populations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg/1280px-Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg/1280px-Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg/1280px-Royal_Bengal_Tiger_Panthera_tigris_tigris_by_Dr._Raju_Kasambe_DSCN7888_%2878%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/THE_DEER_LIFE.jpg/1280px-THE_DEER_LIFE.jpg",
+    ],
+    imageCredit: "Photos: Dr. Raju Kasambe (CC BY-SA 4.0, file description explicitly confirms \"Bhagawan Birsa Biological Park, Ranchi, Jharkhand\") and Shivam thakur2840 (CC BY-SA 4.0, \"TAKEN IN RANCHI\", categorized \"Bhagwan Birsa Biological Park\") — Wikimedia Commons.",
+    category: ["Wildlife"],
+    bestSeason: "October – March",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "Royal Bengal tigers in dedicated enclosures" },
+      { name: "Himalayan black bears" },
+      { name: "Large semi-open spotted deer herds" },
+      { name: "A reliable, family-friendly wildlife viewing alternative to forest safaris" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to the park", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "An easy stop within a wider Ranchi city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city outskirts", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹200–₹500 local cab", tips: "Weekday visits are noticeably quieter than weekends." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Almost all visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Ranchi", available: true },
+      { mode: "Walking (within the park)", cost: "Included with entry", notes: "The park is explored on foot along marked paths", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~15 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1700, accommodation: 0, food: 700, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhagwan Birsa Biological Park Visit", morning: "Explore the tiger and bear enclosures.", afternoon: "Walk through the deer and bird sections.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the park", tips: "A great option for families with children, offering guaranteed wildlife sightings unlike a forest safari." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A managed public park with regular staff presence and family footfall", "Reasonably accessible from central Ranchi"],
+      precautions: ["Standard zoo-visit courtesy — follow posted safety guidelines around enclosures", "Can get crowded on weekends and holidays"],
+      soloTips: ["Comfortable solo during opening hours given the steady visitor traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The entire park along marked visitor paths"],
+      avoidAreas: ["None — a managed, fenced public facility"],
+    },
+    rating: 4.2,
+    reviews: 3800,
+    mustEat: ["Local snacks and ice cream from park vendors", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable walking shoes for the park's paths", "A camera for the tiger and deer enclosures", "Sun protection for the open walkways"],
+  },
+  {
+    id: "satsang-ashram-deoghar",
+    name: "Satsang Ashram, Deoghar",
+    state: "Jharkhand",
+    tagline: "A Serene Spiritual Campus in Deoghar, With Deep Roots in Bengali Devotional Tradition",
+    description: "Satsang Ashram in Deoghar is a well-established spiritual campus tied to the Satsang movement founded by Thakur Anukul Chandra, its landscaped grounds — arched garden walkways, whitewashed buildings, and quiet memorial plaques marking the movement's history — offering a genuinely peaceful counterpoint to Deoghar's busier pilgrimage sites like Baidyanath Dham. The ashram draws devotees from across Bengal and beyond, part of a devotional tradition with a substantial following, and its calm, well-maintained campus reflects decades of continuous institutional life rather than a single monument frozen in time. For visitors exploring Deoghar's full religious landscape beyond the Jyotirlinga circuit, Satsang Ashram offers a quieter, contemplative stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Satsang_Ashram%2C_in_Deoghar_01.jpg/1280px-Satsang_Ashram%2C_in_Deoghar_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Satsang_Ashram%2C_in_Deoghar_01.jpg/1280px-Satsang_Ashram%2C_in_Deoghar_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Satsang_Ashram%2C_in_Deoghar_01.jpg/1280px-Satsang_Ashram%2C_in_Deoghar_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Satsang_Ashram%2C_in_Deoghar_09.jpg/1280px-Satsang_Ashram%2C_in_Deoghar_09.jpg",
+    ],
+    imageCredit: "Photos: Pinakpani — Wikimedia Commons, CC BY 4.0, both categorized \"Satsang Deoghar\".",
+    category: ["Spiritual"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Landscaped ashram grounds with arched garden walkways" },
+      { name: "Ties to the Satsang movement founded by Thakur Anukul Chandra" },
+      { name: "A quiet, contemplative alternative to Deoghar's busier pilgrimage sites" },
+      { name: "Historical memorial plaques across the campus" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then a short drive", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~20min drive", costRange: "₹4,000–₹13,000", tips: "Easily combined with a Baidyanath Dham or Naulakha Temple visit." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jasidih Junction — ~15-17h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Jasidih or central Deoghar." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH19/NH2 through Bihar to Deoghar", fromMumbai: "—", fromBangalore: "—", duration: "~20min from central Deoghar", costRange: "₹150–₹400 local cab", tips: "A calm, worthwhile stop to pair with Deoghar's busier pilgrimage sites." },
+    ],
+    accommodation: [
+      { type: "Hotels (Deoghar)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Deoghar town"], description: "The ashram sits a short drive from most Deoghar hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baidyanath Dham", distance: "~5 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Satsang Ashram Visit", morning: "Visit the ashram's landscaped grounds and memorial areas.", afternoon: "Continue to Baidyanath Dham nearby.", evening: "Return to your hotel.", stay: "A hotel in Deoghar", meals: "Local snacks near the ashram", tips: "A quiet, contemplative counterpoint to Deoghar's busier pilgrimage circuit — visit respectfully." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-established, actively managed spiritual campus with a settled community", "Central Deoghar location keeps it accessible"],
+      precautions: ["Respect the ashram's quiet atmosphere and any visiting hour guidelines", "Standard courtesy for a religious/spiritual institution"],
+      soloTips: ["Comfortable solo during daylight visiting hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Deoghar Police", number: "06432-232233" }],
+      safeZones: ["The ashram grounds and surrounding area"],
+      avoidAreas: ["None significant — a well-managed institutional campus"],
+    },
+    rating: 4.3,
+    reviews: 290,
+    mustEat: ["Local snacks near the ashram", "Peda and sweets in Deoghar"],
+    packingTips: ["Modest, respectful clothing", "A quiet, contemplative mindset for the visit", "Check visiting hours in advance"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
