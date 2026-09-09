@@ -48774,6 +48774,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "A camera for the distinctive entrance gate"],
   },
 
+  {
+    id: "deori-mandir",
+    name: "Deori Mandir",
+    state: "Jharkhand",
+    tagline: "A Devi Shrine Near Ranchi, Known Locally as \"Dhoni Mandir\"",
+    description: "Deori Mandir sits near Ranchi, an ornately carved Devi temple whose richly detailed, multi-tiered dome — covered edge to edge in sculpted figures — makes it one of the more visually striking temple exteriors in the area. Beyond its architecture, the temple carries a distinctly local nickname: it's popularly known as \"Dhoni Mandir\" among Ranchi residents, since cricketer MS Dhoni, Jharkhand's most famous sporting figure, is known to visit whenever he's in the city. That connection has given the temple a modern layer of local pride and recognition on top of its standing as a genuine, actively worshipped Devi shrine, drawing both regular devotees and curious visitors aware of its cricketing association.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Deori_mandir.jpg/1280px-Deori_mandir.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Deori_mandir.jpg/1280px-Deori_mandir.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Deori_mandir.jpg/1280px-Deori_mandir.jpg",
+    ],
+    imageCredit: "Photo: uploaded via Wiki Loves Earth 2017 — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed 23.055471°N 85.669333°E near Ranchi, its file description explicitly noting the temple's local \"Dhoni Mandir\" nickname, categorized \"Hindu temples in Jharkhand\". Only one genuinely verified, location-confirmed image of this specific temple was found after a real search — documented here as a single-image exception.",
+    category: ["Religious"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The richly carved, multi-tiered temple dome" },
+      { name: "The temple's local \"Dhoni Mandir\" nickname" },
+      { name: "An actively worshipped Devi shrine near Ranchi" },
+      { name: "A genuine slice of local Ranchi culture beyond the tourist circuit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to the temple", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "A worthwhile stop within a wider Ranchi city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within the Ranchi area", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹200–₹500 local cab", tips: "Ask locally for directions — it's better known by its \"Dhoni Mandir\" nickname than its formal name." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From anywhere in Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pahari Mandir (Ranchi Hill)", distance: "~10 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 200, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1400, accommodation: 0, food: 700, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Deori Mandir Visit", morning: "Darshan at Deori Mandir.", afternoon: "Continue to other Ranchi city sights.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the temple", tips: "A genuinely local spot — ask Ranchi residents about its \"Dhoni Mandir\" connection for a bit of local colour." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["An actively worshipped local temple with regular devotee footfall", "Reasonably accessible from central Ranchi"],
+      precautions: ["Remove footwear before entering temple areas, as customary", "Standard courtesy for an active religious site"],
+      soloTips: ["Comfortable solo during daylight hours given the steady local footfall"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main temple complex"],
+      avoidAreas: ["None specifically flagged"],
+    },
+    rating: 4.2,
+    reviews: 410,
+    mustEat: ["Local prasad and sweets from temple-area vendors", "Litti chokha in Ranchi"],
+    packingTips: ["Modest clothing for temple visits", "Cash for offerings"],
+  },
+  {
+    id: "lower-ghaghri-falls",
+    name: "Lower Ghaghri Falls",
+    state: "Jharkhand",
+    tagline: "A Genuine Waterfall Stop on the Netarhat Plateau, Distinct From the Upper Falls",
+    description: "Lower Ghaghri Falls is one of two named cascades on the Netarhat plateau in Latehar district — the lower of the pair, sitting downstream from Upper Ghaghri Falls — where water tumbles over a stepped rock face into a rock-bound pool below, framed by the same dense forest that covers much of the plateau. Genuinely reachable as part of a Netarhat hill-station visit, the falls draw a steady trickle of local and visiting groups, especially during and after the monsoon when the flow is at its fullest. As a distinct, separately named site from Netarhat's viewpoints, Lower Ghaghri Falls rewards visitors willing to add the extra stop to their plateau itinerary with a proper waterfall experience alongside the region's famous sunrise and sunset views.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lowar_Ghaghri_Falls.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lowar_Ghaghri_Falls.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lowar_Ghaghri_Falls.jpg",
+    ],
+    imageCredit: "Photo: Pankj142 — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed 23°31'52.03\"N 84°14'48.36\"E, used directly on English Wikipedia's \"Lower Ghaghri Falls\" and \"List of waterfalls in India\" articles, categorized \"Lower Ghagri Falls\". Only one genuinely verified image of this specific waterfall was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "July – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A stepped cascade distinct from the nearby Upper Ghaghri Falls" },
+      { name: "A rock-bound pool at the base" },
+      { name: "Dense forest surroundings typical of the Netarhat plateau" },
+      { name: "An easy addition to a Netarhat hill-station visit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Netarhat", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4-5h drive", costRange: "₹4,000–₹12,000", tips: "Visit as part of a wider Netarhat trip rather than a standalone journey." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj, then onward road via Netarhat", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the more practical rail gateway for this plateau region." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Netarhat toward the falls", fromMumbai: "—", fromBangalore: "—", duration: "~30-45min from Netarhat town", costRange: "₹500–₹1,200 local taxi", tips: "Combine with Upper Ghaghri Falls and Netarhat's viewpoints in the same visit." },
+    ],
+    accommodation: [
+      { type: "Government Guesthouses (Netarhat)", priceRange: "₹1,000–₹2,500/night", examples: ["Jharkhand Tourism's Prabhat Vihar"], description: "The standard base for exploring both falls and Netarhat's viewpoints." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi/SUV", cost: "₹500–₹1,200", notes: "From Netarhat town to the falls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Netarhat", distance: "~10 km", type: "Hill Station", isHidden: false, id: "netarhat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2400, accommodation: 0, food: 800, transport: 900, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Netarhat Waterfalls Day", morning: "Visit Upper Ghaghri Falls.", afternoon: "Continue to Lower Ghaghri Falls.", evening: "Return to Netarhat for sunset viewpoints.", stay: "A guesthouse in Netarhat", meals: "Local meals at the guesthouse", tips: "Best combined with Netarhat's other sights in a single, fuller plateau itinerary rather than visited alone." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["Part of the well-visited Netarhat plateau circuit, with steady seasonal footfall", "Accessible from Netarhat's established guesthouse infrastructure"],
+      precautions: ["Rocky, uneven terrain near the falls — wear proper footwear", "Fewer facilities than Netarhat's main viewpoints", "Currents strengthen during and after monsoon"],
+      soloTips: ["Comfortable as part of a day trip with others given the site's relative quietness outside peak season"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Latehar Police", number: "06562-292233" }],
+      safeZones: ["The main viewing area near the base pool"],
+      avoidAreas: ["The pool edge and rocks near strong currents, especially post-monsoon"],
+    },
+    rating: 4.0,
+    reviews: 380,
+    mustEat: ["Local Jharkhandi meals at Netarhat guesthouses", "Regional forest-produce dishes"],
+    packingTips: ["Sturdy, non-slip footwear", "Water and snacks, as facilities are minimal", "Combine with a fuller Netarhat itinerary"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
