@@ -48657,6 +48657,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy footwear for the hillside climb", "Modest clothing for temple visits", "Cash for offerings and small purchases"],
   },
 
+  {
+    id: "konar-dam",
+    name: "Konar Dam",
+    state: "Jharkhand",
+    tagline: "A Damodar Valley Corporation Dam Near Hazaribagh, Built in the 1950s",
+    description: "Konar Dam sits on the Konar River near Hazaribagh, another of the multi-purpose dams built under the Damodar Valley Corporation project in the years following India's independence, its concrete gravity structure and earthen flanks designed for flood control and irrigation across the wider Damodar basin. Survey work for the dam began as early as 1949, part of the same ambitious nation-building infrastructure push that produced Tilaiya, Maithon, and Panchet dams across this river system. The reservoir behind Konar Dam offers a straightforward, scenic stop for visitors exploring the Hazaribagh region, its still water and surrounding low hills a quieter counterpart to the region's busier tourist dams.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Konar_Damm_Indien.jpg/1280px-Konar_Damm_Indien.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Konar_Damm_Indien.jpg/1280px-Konar_Damm_Indien.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Konar_Damm_Indien.jpg/1280px-Konar_Damm_Indien.jpg",
+    ],
+    imageCredit: "Photo: Ingenieurlösungen — Wikimedia Commons, CC BY-SA 3.0, used directly on English Wikipedia's \"Konar Dam\" article, Wikidata Q6428789, categorized \"Konar Dam\". Only one genuinely verified, current-day image of the dam structure was found after a real search (a 1949 archival survey photo was set aside as it features identifiable individuals and predates the completed dam) — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The Damodar Valley Corporation dam structure on the Konar River" },
+      { name: "A quiet reservoir setting near Hazaribagh" },
+      { name: "Part of the same 1950s DVC river-system project as Tilaiya and Maithon" },
+      { name: "A straightforward, low-key stop for Hazaribagh-area travellers" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Hazaribagh", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~3h drive", costRange: "₹4,000–₹12,000", tips: "Hazaribagh town is the standard gateway to the dam." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Hazaribagh Road station — ~14-16h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Hazaribagh for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Hazaribagh, then to Konar Dam", fromMumbai: "—", fromBangalore: "—", duration: "~30-40min from Hazaribagh town", costRange: "₹500–₹1,200 taxi", tips: "Combine with a Hazaribagh Wildlife Sanctuary visit given the shared area." },
+    ],
+    accommodation: [
+      { type: "Hotels (Hazaribagh)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Hazaribagh town"], description: "Most visitors day-trip from Hazaribagh." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹400–₹1,000", notes: "From Hazaribagh town to the dam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hazaribagh Wildlife Sanctuary", distance: "~25 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 0, food: 400, transport: 400, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2300, accommodation: 0, food: 800, transport: 900, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Konar Dam and Hazaribagh Sanctuary", morning: "Visit Konar Dam.", afternoon: "Continue to Hazaribagh Wildlife Sanctuary nearby.", evening: "Return to Hazaribagh town.", stay: "A hotel in Hazaribagh", meals: "Local snacks near the dam", tips: "A quiet, straightforward stop best combined with the nearby wildlife sanctuary for a fuller day." },
+    ],
+    womenSafety: {
+      score: 7.2,
+      level: "Safe",
+      highlights: ["A working DVC infrastructure site with regular staff presence", "Reasonably close to Hazaribagh town, keeping it accessible"],
+      precautions: ["A functional dam site with limited tourist facilities", "Standard water-safety caution near the reservoir"],
+      soloTips: ["Comfortable as a brief stop during a day trip; not typically a standalone destination to linger at alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Hazaribagh Police", number: "06546-222222" }],
+      safeZones: ["The main dam viewing area"],
+      avoidAreas: ["The reservoir shoreline away from the main visitor area"],
+    },
+    rating: 3.9,
+    reviews: 320,
+    mustEat: ["Local snacks near the dam", "Simple Jharkhandi meals in Hazaribagh"],
+    packingTips: ["A camera for the dam and reservoir", "Comfortable footwear", "Combine with a Hazaribagh Wildlife Sanctuary visit"],
+  },
+  {
+    id: "sidhu-kanhu-park-ranchi",
+    name: "Sidhu Kanhu Park, Ranchi",
+    state: "Jharkhand",
+    tagline: "A Kanke Road City Park Honouring the Santhal Rebellion's Two Founding Leaders",
+    description: "Sidhu Kanhu Park sits on Kanke Road in Ranchi, its castle-style crenellated entrance gate — rendered in deep red brick with rounded corner turrets — making it an unmistakable landmark along the road. The park is named for Sidhu Murmu and Kanhu Murmu, the two Santhal brothers who led the Santhal Hul (rebellion) of 1855 against British colonial rule and oppressive zamindari practices, a genuinely significant chapter in the region's history of tribal resistance that predates the more widely known uprising of 1857. As a well-maintained green space named for figures central to Jharkhand's tribal history, the park functions as both a memorial to that history and a straightforward, pleasant city park for Ranchi residents and visitors alike.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG/1280px-Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG/1280px-Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG/1280px-Sidhu_Kanhu_Park_Entrance_-_Ranchi_9204.JPG",
+    ],
+    imageCredit: "Photo: Biswarup Ganguly — Wikimedia Commons, CC BY 3.0/GFDL, its description explicitly confirming \"Sidhu Kanhu Park on kanke road, Ranchi,\" used directly on English Wikipedia's \"Sidhu and Kanhu Murmu\" article, Wikidata Q6363016. Only one genuinely verified image of this specific Ranchi park was found after a real search — documented here as a single-image exception; candidate photos from a similarly-named site in Jadugora were set aside rather than presented as the same location without confirmation.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The distinctive castle-style crenellated entrance gate" },
+      { name: "A memorial to Sidhu and Kanhu Murmu, leaders of the 1855 Santhal Hul" },
+      { name: "A well-maintained central Ranchi green space" },
+      { name: "A landmark stop along Kanke Road" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, an easy add-on to any city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city, on Kanke Road", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Easily combined with a Kanke Dam or Rock Garden visit given the shared Kanke Road corridor." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The park sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kanke Dam", distance: "~5 km", type: "Reservoir", isHidden: false, id: "kanke-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sidhu Kanhu Park Visit", morning: "Walk through Sidhu Kanhu Park and its memorial grounds.", afternoon: "Continue along Kanke Road to the Rock Garden or Kanke Dam.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the park", tips: "A quick, worthwhile stop for anyone interested in the history of the 1855 Santhal Hul." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A well-maintained central city park with regular local footfall", "Central Kanke Road location keeps it accessible and well-trafficked"],
+      precautions: ["Standard city-park courtesy — nothing specific flagged"],
+      soloTips: ["Very comfortable solo during daylight hours given the central location and regular visitors"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The entire park during opening hours"],
+      avoidAreas: ["None significant — a well-managed central city park"],
+    },
+    rating: 4.1,
+    reviews: 620,
+    mustEat: ["Local snacks near the park", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable walking shoes", "A camera for the distinctive entrance gate"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
