@@ -47458,6 +47458,127 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy footwear for the boulder-strewn base", "Water and snacks, as facilities are minimal", "Combine with Jonha Falls for a fuller day"],
   },
 
+  {
+    id: "lodh-falls",
+    name: "Lodh Falls",
+    state: "Jharkhand",
+    tagline: "India's Highest Waterfall, a 143-Metre Drop in Latehar District",
+    description: "Lodh Falls, in Latehar district, is genuinely India's highest waterfall by most measurements, dropping around 143 metres off the edge of the Chota Nagpur Plateau in a series of cascading tiers rather than a single sheer plunge. Formed by the Burha (Sadni) River, the falls sit in a remote, densely forested setting near Lodh village, reached via a proper trek through the Netarhat plateau region rather than a roadside stop — a genuine draw for visitors wanting the country's tallest falls without heavy crowds, given how comparatively few people make the journey out. The scale is best appreciated from the designated viewing platform partway down, where the full multi-tiered drop through the forest canopy comes into view, a genuinely dramatic sight that punches above its lower profile compared to more famous Indian waterfalls.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg/1280px-Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg/1280px-Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg/1280px-Lodh_Fall_with_EDC_Members_of_Lodh_Village.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Lodh_falls.jpg/1280px-Lodh_falls.jpg",
+    ],
+    imageCredit: "Photos: Mukesh6022 and Pankj142 — Wikimedia Commons, both CC BY-SA 4.0, both categorized \"Lodh Falls\" and linked from Wikidata Q37423; one is used directly on English Wikipedia's \"List of waterfalls in India\" article.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "July – February",
+    duration: "3–4 hours (including the approach trek)",
+    highlights: [
+      { name: "India's highest waterfall at roughly 143 metres" },
+      { name: "A multi-tiered cascade through dense forest" },
+      { name: "A genuine trekking approach near Netarhat" },
+      { name: "A far less crowded alternative to Jharkhand's better-known falls" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a long drive to Latehar district", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~5h drive", costRange: "₹4,000–₹12,000", tips: "Often combined with a Netarhat trip given the shared region." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj, then onward by road", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the more practical rail gateway for this remote site." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Netarhat toward Lodh village — a genuinely remote final stretch", fromMumbai: "—", fromBangalore: "—", duration: "~5h from Ranchi", costRange: "₹3,500–₹6,000 private cab", tips: "A local guide is strongly recommended for the final approach trek." },
+    ],
+    accommodation: [
+      { type: "Guesthouses (Netarhat)", priceRange: "₹1,000–₹2,500/night", examples: ["Government and private stays in Netarhat"], description: "The most practical base given the falls' remoteness." },
+      { type: "Local Homestays", priceRange: "₹600–₹1,200/night", examples: ["Basic village stays near Lodh"], description: "A closer but more basic option for early starts." },
+    ],
+    localTransport: [
+      { mode: "Trekking", cost: "Free (guide fee ₹300-600)", notes: "The final approach to the falls requires a proper trek", available: true },
+      { mode: "Private Taxi/SUV", cost: "₹3,000–₹5,000/day", notes: "For reaching the trailhead from Netarhat or Daltonganj", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Netarhat", distance: "~30 km", type: "Hill Station", isHidden: false, id: "netarhat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 300, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1800, food: 500, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6500, accommodation: 4500, food: 1000, transport: 700, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Netarhat to Lodh Falls", morning: "Drive from Netarhat toward Lodh village.", afternoon: "Trek to the Lodh Falls viewing platform and back.", evening: "Return to Netarhat.", stay: "A guesthouse in Netarhat", meals: "Simple local meals at the guesthouse", tips: "Hire a local guide — the approach trek isn't always clearly marked, and a guide adds real safety margin in this remote terrain." },
+    ],
+    womenSafety: {
+      score: 6.8,
+      level: "Exercise Caution",
+      highlights: ["A recognized, documented natural landmark that draws steady trekker interest despite its remoteness", "Local Village Eco-Development Committee (EDC) members are often present and familiar with visitors"],
+      precautions: ["A genuinely remote site with a real trekking approach — never attempt without a local guide", "Very limited mobile network and facilities in the immediate area", "Water and terrain hazards near the viewing platform edge"],
+      soloTips: ["Not recommended solo — arrange a local guide and, ideally, travel as part of a small group given the remoteness"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Latehar Police", number: "06562-292233" }],
+      safeZones: ["The designated viewing platform, reached with a guide"],
+      avoidAreas: ["Off-trail forest areas and the immediate edge near the falls"],
+    },
+    rating: 4.3,
+    reviews: 720,
+    mustEat: ["Simple local meals in Netarhat or nearby villages", "Regional Jharkhandi forest-produce dishes"],
+    packingTips: ["Sturdy trekking shoes", "Water and energy snacks for the trek", "A local guide arranged in advance", "Warm layers, as the plateau region gets cold"],
+  },
+  {
+    id: "usri-falls",
+    name: "Usri Falls",
+    state: "Jharkhand",
+    tagline: "A Rocky Cascade Near Giridih, With Genuine Seasonal Character",
+    description: "Usri Falls sits near Giridih, its water spilling over a wide, uneven rock face into a pool below — a cascade whose character shifts dramatically with the seasons, from a full, forceful flow during and after monsoon to what one photographer's own file description candidly calls \"very weak\" during the dry summer months. That seasonal honesty is worth knowing before planning a visit: this is very much a monsoon-to-early-winter destination, when the falls are at their most photogenic and the surrounding rocks carry enough water for a proper cascade rather than a trickle. The site's genuinely rugged, undeveloped rock terrain gives it a wilder character than some of Jharkhand's more manicured waterfall viewpoints, appealing to visitors who prefer a more natural, less curated setting.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ushri_falls.JPG/1280px-Ushri_falls.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ushri_falls.JPG/1280px-Ushri_falls.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ushri_falls.JPG/1280px-Ushri_falls.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Usri_falls%2Cgiridih%2Cjharkhand.jpg/1280px-Usri_falls%2Cgiridih%2Cjharkhand.jpg",
+    ],
+    imageCredit: "Photos: Alangkrita (CC BY-SA 4.0, used directly on English Wikipedia's \"Usri Falls\" and \"Tourism in Jharkhand\" articles) and কাজারি (CC BY-SA 4.0, used directly on English Wikipedia's \"Giridih\" article) — Wikimedia Commons, both categorized \"Usri Falls\".",
+    category: ["Nature"],
+    bestSeason: "July – December (weak flow in dry summer months)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A wide, rugged rock-face cascade" },
+      { name: "A genuinely undeveloped, natural setting" },
+      { name: "Strong monsoon-to-winter flow, best avoided in peak dry summer" },
+      { name: "A quieter alternative to Ranchi's more visited falls" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Giridih, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Giridih is reachable by rail and road even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Giridih or Madhupur, then onward road", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Giridih town for the short onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Giridih, then local roads to the falls", fromMumbai: "—", fromBangalore: "—", duration: "~30-45min from Giridih town", costRange: "₹500–₹1,200 taxi", tips: "Check seasonal flow before travelling far out of your way in the dry months." },
+    ],
+    accommodation: [
+      { type: "Hotels (Giridih)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels across Giridih town"], description: "Most visitors day-trip from Giridih." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From Giridih town to the falls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Parasnath Hill", distance: "~35 km", type: "Pilgrimage Hill", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 450, accommodation: 0, food: 200, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 600, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2600, accommodation: 0, food: 800, transport: 1300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Usri Falls Day Trip", morning: "Drive from Giridih to Usri Falls.", afternoon: "Explore the rock terrain and pools (monsoon-to-winter season).", evening: "Return to Giridih.", stay: "A hotel in Giridih", meals: "Local snacks near the falls", tips: "Visit between July and December for a genuine flow — the falls run very weak by summer." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A known local waterfall with regular seasonal footfall", "Reasonably accessible from Giridih town"],
+      precautions: ["Rugged, uneven rock terrain — wear proper footwear", "Fewer facilities than major tourist waterfalls", "Flow and safety conditions vary significantly by season — check before visiting"],
+      soloTips: ["Comfortable as part of a day trip with others, particularly during the fuller-flow months when more visitors are present"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Giridih Police", number: "06532-222233" }],
+      safeZones: ["The main rock terrain near the pool"],
+      avoidAreas: ["Deeper channels and currents during peak monsoon flow"],
+    },
+    rating: 3.9,
+    reviews: 540,
+    mustEat: ["Local snacks near the falls", "Giridih-style regional meals"],
+    packingTips: ["Non-slip footwear for the rugged rocks", "Check seasonal flow before travelling", "Water and sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
