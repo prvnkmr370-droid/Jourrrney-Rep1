@@ -50792,6 +50792,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the valley views", "Combine with a Patratu Valley drive for a fuller day"],
   },
 
+  {
+    id: "jsca-international-stadium",
+    name: "JSCA International Stadium Complex",
+    state: "Jharkhand",
+    tagline: "Ranchi's International Cricket Venue, Marked by a Giant Cricket Bat Sculpture",
+    description: "The JSCA International Stadium Complex in Ranchi is Jharkhand's premier cricket venue, an internationally recognized ground that has hosted international matches since opening in the early 2010s, including fixtures at the 2014 Indian Premier League. Its most recognizable feature from outside is a genuinely oversized cricket bat sculpture mounted on the building's glass facade, an unmissable landmark that leaves no doubt about the venue's purpose even before entering. Inside, the ground's distinctive concentric-circle outfield markings and tiered stands give it the unmistakable look of a modern international cricket stadium, genuinely significant as the home ground closely associated with Jharkhand's most famous cricketing figure, MS Dhoni, and a source of real local pride as the state's flagship sporting venue.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/JSCAInternational_Stadium1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d1/JSCAInternational_Stadium1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/JSCAInternational_Stadium1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSCA_Cricket_Stadium.jpg",
+    ],
+    imageCredit: "Photos: Akash Guruji (CC BY-SA 3.0/GFDL, used directly on English Wikipedia's \"JSCA International Stadium Complex\" article and 4 other language Wikipedias) and Prakash Tirkey (CC BY 3.0) — Wikimedia Commons, both categorized \"JSCA International Stadium Complex\".",
+    category: ["Heritage", "Adventure"],
+    bestSeason: "October – March",
+    duration: "1 hour (exterior/match viewing)",
+    highlights: [
+      { name: "The giant cricket bat sculpture on the stadium's glass facade" },
+      { name: "An internationally recognized cricket venue" },
+      { name: "Close association with cricketer MS Dhoni" },
+      { name: "Jharkhand's flagship modern sporting venue" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, an easy add-on to any city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Check the match calendar in advance if hoping to attend a live game." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The stadium sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Lake", distance: "~5 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 600, accommodation: 0, food: 350, transport: 150, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1500, accommodation: 0, food: 700, transport: 300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "JSCA Stadium Visit", morning: "View the stadium exterior and its cricket bat sculpture.", afternoon: "Continue to other central Ranchi sights.", evening: "Attend a match if the calendar aligns.", stay: "A hotel in Ranchi", meals: "Local snacks near the stadium", tips: "Check the domestic and international match schedule in advance for the best chance of a live game." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A well-known, actively managed city landmark with regular visitor and event traffic", "Central Ranchi location keeps it accessible"],
+      precautions: ["Very crowded during major matches — standard event-crowd awareness", "Standard sports-venue courtesy"],
+      soloTips: ["Comfortable solo given the central, well-trafficked location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The stadium exterior and surrounding area"],
+      avoidAreas: ["None significant — a central, well-trafficked city landmark"],
+    },
+    rating: 4.4,
+    reviews: 2600,
+    mustEat: ["Local snacks near the stadium", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the iconic cricket bat sculpture", "Match tickets arranged in advance, if attending a game"],
+  },
+  {
+    id: "xlri-jamshedpur",
+    name: "XLRI Jamshedpur",
+    state: "Jharkhand",
+    tagline: "One of India's Oldest and Most Prestigious Business Schools",
+    description: "XLRI – Xavier School of Management, founded in Jamshedpur in 1949, holds genuine distinction as one of India's oldest and most consistently top-ranked business schools, established under Jesuit educational tradition and shaped from its early years by close ties to the city's Tata Steel industrial base. The campus's modern, multi-storey academic and residential blocks, set behind landscaped lawns and walking paths, reflect decades of continuous institutional investment and growth, its Learning Center building in particular a recognizable landmark within the wider campus. For visitors interested in India's management education history, or simply passing through Jamshedpur, XLRI offers a genuinely notable institutional landmark tied closely to the city's broader identity as a planned industrial and educational hub.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Xlri_Campus%2C_Jamshedpur.jpg/1280px-Xlri_Campus%2C_Jamshedpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Xlri_Campus%2C_Jamshedpur.jpg/1280px-Xlri_Campus%2C_Jamshedpur.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Xlri_Campus%2C_Jamshedpur.jpg/1280px-Xlri_Campus%2C_Jamshedpur.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/XLRI_Learning_Center.jpg",
+    ],
+    imageCredit: "Photos: uploaded to Wikimedia Commons (CC BY-SA, categorized \"XLRI – Xavier School of Management\") and Shreetamz (CC BY-SA 3.0/GFDL, used directly on English Wikipedia's \"Jamshedpur\" article) — Wikimedia Commons.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "One of India's oldest business schools, founded 1949" },
+      { name: "A Jesuit educational institution with close Tata Steel ties" },
+      { name: "The landmark Learning Center building" },
+      { name: "Landscaped, modern campus grounds" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Tatanagar station to the campus." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi to Jamshedpur", costRange: "₹100–₹300 local cab within the city", tips: "Exterior viewing is the respectful way to visit an active academic campus." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The campus sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Keenan Stadium", distance: "~5 km", type: "Stadium", isHidden: false, id: "keenan-stadium" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "XLRI Campus and Jamshedpur City", morning: "View the XLRI campus exterior.", afternoon: "Continue to Keenan Stadium or Jubilee Park.", evening: "Explore central Jamshedpur.", stay: "A hotel in Jamshedpur", meals: "Local snacks near the campus", tips: "Respect that this is an active academic campus — exterior viewing is appropriate rather than an unannounced visit inside." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A well-secured, actively managed premier academic institution", "Central Jamshedpur location keeps it accessible"],
+      precautions: ["Standard courtesy for an active academic campus"],
+      soloTips: ["Very comfortable solo given the managed campus setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The exterior campus grounds"],
+      avoidAreas: ["None significant — a well-managed institutional campus"],
+    },
+    rating: 4.3,
+    reviews: 480,
+    mustEat: ["Local snacks near the campus", "Litti chokha in Jamshedpur"],
+    packingTips: ["A camera for the campus architecture", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
