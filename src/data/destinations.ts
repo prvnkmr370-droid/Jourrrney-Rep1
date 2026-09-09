@@ -49127,6 +49127,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the spillway", "Comfortable footwear", "Combine with a Maithon Dam visit"],
   },
 
+  {
+    id: "massanjore-dam",
+    name: "Massanjore Dam",
+    state: "Jharkhand",
+    tagline: "A Hill-Ringed Reservoir Near Dumka, Once Called the \"Canada Dam\"",
+    description: "Massanjore Dam sits on the Mayurakshi River near Dumka, its long concrete spillway stretching across the valley with forested hills rising on either side — a genuinely scenic setting that sets it apart from some of Jharkhand's flatter reservoir dams. Built in the 1950s with Canadian technical assistance, the dam earned the local nickname \"Canada Dam\" for that collaboration, a detail that still comes up in local accounts of its history. The reservoir behind it is calm and expansive, framed by the same low hills visible from the dam wall, making Massanjore a straightforward, genuinely pretty stop for anyone travelling through the Dumka region of Jharkhand's northeast.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/1280px-Massanjore_Dam_40.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/1280px-Massanjore_Dam_40.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/1280px-Massanjore_Dam_40.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Massanjore_Dam_15.jpg/1280px-Massanjore_Dam_15.jpg",
+    ],
+    imageCredit: "Photos: Tarunsamanta — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed 24°06'34.72\"N 87°18'41.13\"E at Dumka, categorized \"Massanjore Dam\"/\"Massanjore Dam reservoir\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The long concrete spillway framed by forested hills" },
+      { name: "A 1950s dam built with Canadian technical assistance, locally called \"Canada Dam\"" },
+      { name: "A calm, expansive hill-ringed reservoir" },
+      { name: "A scenic stop in the Dumka region" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then onward to Dumka", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~1.5h drive", costRange: "₹4,000–₹13,000", tips: "Deoghar is the most convenient air gateway." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Rampurhat (West Bengal) or Jasidih, then onward road", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "Rampurhat, just across the border, is often the closer rail option." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Deoghar or Dumka, then to Massanjore", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Dumka town", costRange: "₹1,200–₹2,500 taxi", tips: "A scenic drive through the Dumka countryside." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dumka)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels across Dumka town"], description: "Most visitors day-trip from Dumka." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Dumka town to the dam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Maluti Temples", distance: "~50 km", type: "Heritage Temples", isHidden: false, id: "maluti-temples" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 0, food: 400, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3000, accommodation: 0, food: 800, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Massanjore Dam Visit", morning: "Drive from Dumka to Massanjore Dam.", afternoon: "Views of the spillway and hill-ringed reservoir.", evening: "Return to Dumka.", stay: "A hotel in Dumka", meals: "Local snacks near the dam", tips: "Combine with a Maluti Temples visit given the shared Dumka district." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A recognized regional landmark with steady local and visitor traffic", "Reasonably established infrastructure around Dumka"],
+      precautions: ["Standard water-safety caution near the spillway", "Limited facilities beyond the main viewing area"],
+      soloTips: ["Comfortable as a brief stop during a day trip"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dumka Police", number: "06434-222233" }],
+      safeZones: ["The main dam viewing area"],
+      avoidAreas: ["The reservoir shoreline away from the main visitor area"],
+    },
+    rating: 4.1,
+    reviews: 680,
+    mustEat: ["Local snacks near the dam", "Regional meals in Dumka"],
+    packingTips: ["A camera for the hill-ringed reservoir", "Comfortable footwear", "Combine with a Maluti Temples visit"],
+  },
+  {
+    id: "ratmohana-ghatshila",
+    name: "Ratmohana, Ghatshila",
+    state: "Jharkhand",
+    tagline: "A Rocky Riverside Cascade on the Subarnarekha, Crossed by a Rustic Bamboo Bridge",
+    description: "Ratmohana sits along the Subarnarekha River in Ghatshila, East Singhbhum district, where the river drops over an exposed granite shelf in a modest but genuinely picturesque cascade, its rocky banks a popular local spot for a riverside walk. A rustic, hand-built bamboo footbridge — the kind rebuilt seasonally by local villagers rather than a permanent structure — spans a shallow stretch of the river nearby, adding a distinctly rural, unpolished character that sets Ratmohana apart from more developed riverside attractions. As one of several low-key natural spots scattered around Ghatshila, a town already known for its riverside setting, Ratmohana rewards visitors willing to explore beyond the town's main sights with a quiet, genuinely local river scene.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg/1280px-Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg/1280px-Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg/1280px-Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_10.jpg/1280px-Ratmohana_riverside%2C_Subarnarekha_in_Ghatshila_10.jpg",
+    ],
+    imageCredit: "Photos: Pinakpani — Wikimedia Commons, CC BY-SA 4.0, both categorized \"Ghatshila\"/\"Subarnarekha River in Jharkhand\"/\"Waterfalls in Jharkhand\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A rocky granite-shelf cascade on the Subarnarekha River" },
+      { name: "A rustic, hand-built seasonal bamboo footbridge" },
+      { name: "A quiet, genuinely local riverside scene" },
+      { name: "An easy add-on to a wider Ghatshila visit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Ghatshila area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Ghatshila is closer to Kolkata than most other Jharkhand gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ghatshila station on the Howrah-Mumbai line", fromMumbai: "~20h+", fromBangalore: "~28h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Ghatshila has its own railway station, a short drive from Ratmohana." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamshedpur, then to Ghatshila — near the West Bengal border", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Jamshedpur", costRange: "₹1,200–₹2,500 taxi", tips: "Combine with Rankini Mandir and Dharagiri Waterfalls given the shared Ghatshila area." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ghatshila)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels and guesthouses in Ghatshila town"], description: "Most visitors day-trip from Ghatshila." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to Ratmohana", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rankini Mandir, Ghatshila", distance: "~5 km", type: "Temple", isHidden: false, id: "rankini-mandir-ghatshila" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 500, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2400, accommodation: 0, food: 800, transport: 1100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ghatshila Riverside Circuit", morning: "Visit Rankini Mandir.", afternoon: "Continue to Ratmohana for a quiet riverside walk.", evening: "Return to Ghatshila.", stay: "A hotel in Ghatshila", meals: "Local snacks near the river", tips: "A relaxed, low-key stop best paired with Ghatshila's other nearby sights." },
+    ],
+    womenSafety: {
+      score: 7.1,
+      level: "Safe",
+      highlights: ["A known local spot with steady footfall from Ghatshila-area visitors", "Benefits from proximity to Ghatshila's established tourist infrastructure"],
+      precautions: ["The bamboo footbridge and rocks near the water require careful footing", "Limited facilities directly at the site", "Standard water-safety caution near the cascade"],
+      soloTips: ["Comfortable as part of a day trip with others given the site's quiet, informal character"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ghatshila Police", number: "0657-2432233" }],
+      safeZones: ["The main riverside walking area"],
+      avoidAreas: ["The bamboo bridge and deeper channels during high water"],
+    },
+    rating: 3.9,
+    reviews: 180,
+    mustEat: ["Local snacks in Ghatshila town", "Regional Jharkhandi meals"],
+    packingTips: ["Sturdy, non-slip footwear", "A camera for the bamboo bridge and cascade", "Water and sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
