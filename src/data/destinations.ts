@@ -50437,6 +50437,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the twilight view", "A flashlight if staying until after dark", "Comfortable footwear for the riverside approach"],
   },
 
+  {
+    id: "karma-festival",
+    name: "Karma Festival",
+    state: "Jharkhand",
+    tagline: "Jharkhand's Major Harvest Festival, Centred on a Sacred Karam Tree Branch",
+    description: "Karma, also called Karam Puja, is one of Jharkhand's most widely celebrated tribal and folk festivals, observed across Munda, Oraon, Santhal, and other indigenous communities to mark the harvest season and pray for prosperity and good fortune. The festival's central ritual involves bringing a branch of the sacred Karam tree into a village courtyard or pandal, where it's planted and worshipped amid offerings, singing, and all-night dancing — a genuinely communal celebration that spills out into village streets and courtyards rather than staying confined to a single shrine. Falling in the month of Bhadra (typically August-September) according to the lunar calendar, Karma has become significant enough to be recognized across state lines in neighbouring Chhattisgarh, Odisha, and Bihar too, but it remains a genuinely central pillar of Jharkhand's own cultural calendar and identity.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Karma_festival_celebration_in_Jharkhand.jpg/1280px-Karma_festival_celebration_in_Jharkhand.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Karma_festival_celebration_in_Jharkhand.jpg/1280px-Karma_festival_celebration_in_Jharkhand.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Karma_festival_celebration_in_Jharkhand.jpg/1280px-Karma_festival_celebration_in_Jharkhand.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/Karam_puja_in_jharkhand.jpg",
+    ],
+    imageCredit: "Photos: Hindiyans (CC BY-SA 4.0, description confirms \"karma festival pandal...celebrated in Jharkhand\", categorized \"Festivals in Jharkhand\") and Pankaj076 (CC BY-SA 4.0, used on 15+ Wikipedia language projects including English Wikipedia's \"Karam festival\", \"Tourism in Jharkhand\", and \"Culture of Jharkhand\" articles) — Wikimedia Commons.",
+    category: ["Rural", "Heritage"],
+    bestSeason: "August – September (during the Bhadra month festival period)",
+    duration: "A full day and night (festival observance)",
+    highlights: [
+      { name: "The central ritual of planting and worshipping a sacred Karam tree branch" },
+      { name: "All-night communal singing and dancing" },
+      { name: "A harvest-season celebration observed across Munda, Oraon, and Santhal communities" },
+      { name: "A genuinely central pillar of Jharkhand's tribal cultural calendar" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to villages in the region", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus local travel", costRange: "₹4,000–₹12,000", tips: "Ranchi is the standard gateway to reach villages celebrating Karma." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi for onward travel to a village celebration." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to villages across the state", fromMumbai: "—", fromBangalore: "—", duration: "Varies by village", costRange: "₹1,000–₹3,000 taxi", tips: "Check with local tourism offices or guides for accessible celebrations during the festival period." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi or nearest town)", priceRange: "₹1,000–₹4,000/night", examples: ["Hotels in Ranchi or the nearest district town"], description: "Most visitors base themselves in a city and travel out to village celebrations." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹1,000–₹2,500", notes: "For reaching village celebrations from the nearest city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Lake", distance: "Varies", type: "City Lake", isHidden: false, id: "ranchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 600, accommodation: 250, food: 200, transport: 130, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1600, accommodation: 900, food: 400, transport: 250, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3500, accommodation: 2500, food: 700, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Karma Festival Experience", morning: "Travel from Ranchi to a village celebrating Karma.", afternoon: "Observe the Karam tree branch ritual and community preparations.", evening: "Join or observe the communal singing and dancing.", stay: "A hotel in Ranchi or the nearest town", meals: "Local Jharkhandi festival food", tips: "Approach respectfully as a guest at a genuine community celebration — ask before photographing individuals closely." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A widely celebrated community festival with large, welcoming gatherings", "Family-oriented celebrations with a genuinely communal atmosphere"],
+      precautions: ["Large crowds during peak celebration hours — standard crowd-safety awareness", "A rural village setting may have more limited facilities"],
+      soloTips: ["Best experienced with a local guide or host who can provide context and appropriate introductions to a village celebration"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The main festival gathering areas"],
+      avoidAreas: ["None specifically flagged — a welcoming community celebration"],
+    },
+    rating: 4.5,
+    reviews: 420,
+    mustEat: ["Traditional festival food prepared for Karma celebrations", "Local Jharkhandi dishes at village gatherings"],
+    packingTips: ["Respectful, comfortable clothing", "A camera used considerately", "Check the festival calendar in advance, as dates follow the lunar calendar"],
+  },
+  {
+    id: "sarhul-festival",
+    name: "Sarhul Festival",
+    state: "Jharkhand",
+    tagline: "Jharkhand's Spring New Year, Celebrated With the Sacred Sal Tree",
+    description: "Sarhul marks the tribal new year across much of Jharkhand, a spring festival celebrated by Munda, Oraon, and other indigenous communities in the month of Chaitra (typically March), timed to the blossoming of the sal tree, which holds genuine sacred significance in local tribal religion. Communities gather in traditional red-and-white attire — the same colour scheme echoed across Sarhul celebrations statewide — for processions, folk dances accompanied by drumming, and rituals offering the season's first sal flowers to local deities before anyone else may use them, a practice genuinely central to the festival's meaning as a request for a good harvest and community wellbeing in the year ahead. Celebrated everywhere from village courtyards to institutional campuses like the Central University of Jharkhand, Sarhul offers visitors a vivid, colour-and-drum-filled window into the state's living tribal culture each spring.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg/1280px-Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg/1280px-Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg/1280px-Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi_%2C_sample_1.jpg/1280px-Sarhul_Festival_Celebration_In_Central_University_Of_Jharkhand_%2CBrambe_Campus%2C_Ranchi_%2C_sample_1.jpg",
+    ],
+    imageCredit: "Photos: Rohitmahali01 — Wikimedia Commons, CC0, both explicitly captioned as Sarhul festival folk dance at the Central University of Jharkhand's Brambe Campus, Ranchi; one used directly on English Wikipedia's \"Sarhul\" article.",
+    category: ["Rural", "Heritage"],
+    bestSeason: "March – April (Chaitra month, timed to the sal tree blossom)",
+    duration: "A full day (festival observance)",
+    highlights: [
+      { name: "The ritual offering of the season's first sal tree flowers" },
+      { name: "Traditional red-and-white festival attire and processions" },
+      { name: "Drumming and folk dance performances" },
+      { name: "Jharkhand's tribal new year, marking the start of the agricultural season" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to celebration venues", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus local travel", costRange: "₹4,000–₹12,000", tips: "Ranchi hosts numerous Sarhul celebrations, including at the Central University of Jharkhand." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station to celebration venues." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to villages or institutional campuses celebrating Sarhul", fromMumbai: "—", fromBangalore: "—", duration: "Varies by venue", costRange: "₹500–₹1,500 taxi", tips: "Ranchi's own Sarhul procession, drawing large crowds through the city, is a major event to witness." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The most practical base during the Sarhul festival period." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹500", notes: "From anywhere in Ranchi to celebration venues", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Karma Festival", distance: "Same region (different season)", type: "Cultural Festival", isHidden: true, id: "karma-festival" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 100, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2400, accommodation: 0, food: 800, transport: 700, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sarhul Festival in Ranchi", morning: "Explore central Ranchi as the city prepares for Sarhul.", afternoon: "Watch the main Sarhul procession, with its traditional red-and-white attire and drumming.", evening: "Continue to a local celebration or campus event.", stay: "A hotel in Ranchi", meals: "Local Jharkhandi festival food", tips: "Ranchi's own citywide Sarhul procession is genuinely one of the best ways to experience the festival's scale." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A major, well-attended citywide festival in Ranchi with organized processions", "A welcoming, family-oriented celebration atmosphere"],
+      precautions: ["Large crowds during the main procession — standard crowd-safety awareness", "Traffic disruptions in central Ranchi during festival events"],
+      soloTips: ["Comfortable given the large, public nature of Ranchi's main celebrations"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main procession routes and public celebration areas"],
+      avoidAreas: ["Dense, unmanaged crowd crush points during the peak procession"],
+    },
+    rating: 4.5,
+    reviews: 510,
+    mustEat: ["Traditional festival food during Sarhul celebrations", "Local Jharkhandi dishes"],
+    packingTips: ["Comfortable clothing for a day of festival crowds", "A camera for the colourful processions", "Check the local festival calendar for exact dates"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
