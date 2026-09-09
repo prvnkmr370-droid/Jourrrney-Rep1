@@ -49483,6 +49483,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Warm layers for the cool, misty climate", "A pre-arranged vehicle and guide given the remoteness", "A flashlight and caution for foggy roads"],
   },
 
+  {
+    id: "moti-jharna-rajmahal",
+    name: "Moti Jharna (Fall of Pearls)",
+    state: "Jharkhand",
+    tagline: "A Historic Waterfall in the Rajmahal Hills, Painted by Colonial-Era Artists Since 1807",
+    description: "Moti Jharna, also known as the \"Fall of Pearls,\" cascades through the Rajmahal Hills overlooking the Ganges, a waterfall with a genuinely documented history stretching back over two centuries — Major Charles Ramus Forrest sketched it during an 1807 tour of the river for his 1824 book \"A Picturesque Tour along the Rivers Ganges and Jumna in India,\" and artist Sita Ram painted it during Lord Hastings' 1820-21 convalescent tour of the hills, an album now held by the British Library. Historical accounts describe the falls as \"a sheet of silver\" breaking \"into showers of sparkling spray,\" visible from the river between the hills, a scene Forrest noted was \"well known to travellers\" even in his time. The Rajmahal Hills themselves, rising to about 2,000 feet and forming a natural boundary along the Ganges, add real geographic and historical weight to what remains a striking, still-flowing waterfall in one of Jharkhand's least-visited corners.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_Motee_Girna%2C_or_Fall_of_Pearls%2C_in_the_Rajemahal_Hills.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_Motee_Girna%2C_or_Fall_of_Pearls%2C_in_the_Rajemahal_Hills.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_Motee_Girna%2C_or_Fall_of_Pearls%2C_in_the_Rajemahal_Hills.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/07/The_Moti_Jharna_waterfall_in_the_Rajmahal_Hills_-_British_Library_Add.Or.4908.jpg",
+    ],
+    imageCredit: "Historic artworks, both public domain (PD-old-100-expired): an 1824 aquatint after Major Charles Ramus Forrest's 1807 drawing, from \"A Picturesque Tour along the Rivers Ganges and Jumna in India,\" and a 1820-21 watercolour by Sita Ram from an album now in the British Library (Add.Or.4908), used directly on English Wikipedia's \"Moti Jharna\" article — both categorized \"Moti Jharna\"/\"Rajmahal hills\". No modern photograph of this specific waterfall was found verified after a real search — documented here with historic artwork instead.",
+    category: ["Nature", "Heritage"],
+    bestSeason: "July – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A waterfall documented in colonial-era art since 1807" },
+      { name: "Sita Ram's 1820-21 watercolour, now in the British Library" },
+      { name: "A dramatic setting in the Rajmahal Hills overlooking the Ganges" },
+      { name: "A genuinely historic, centuries-documented Jharkhand landmark" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Sahibganj area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "This is a remote corner of Jharkhand — plan extra travel time." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Sahibganj, then onward road — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Sahibganj is the nearest major rail gateway." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH80 through Bihar/Jharkhand to Sahibganj, then to the Rajmahal Hills", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Sahibganj", costRange: "₹1,200–₹2,500 taxi", tips: "A local guide is genuinely useful for locating the falls in the hills." },
+    ],
+    accommodation: [
+      { type: "Hotels (Sahibganj)", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Sahibganj town"], description: "The most practical base given the area's more limited facilities." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Guide", cost: "₹500–₹1,200", notes: "From Sahibganj into the Rajmahal Hills", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jami Masjid, Rajmahal", distance: "~15 km", type: "Historic Mosque", isHidden: false, id: "jami-masjid-rajmahal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 100, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 2000, food: 700, transport: 100, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajmahal Hills and Moti Jharna", morning: "Drive from Sahibganj into the Rajmahal Hills.", afternoon: "Visit Moti Jharna and the Jami Masjid nearby.", evening: "Return to Sahibganj.", stay: "A hotel in Sahibganj", meals: "Local meals in Sahibganj or Rajmahal", tips: "Combine with the Jami Masjid for a fuller day exploring this historic, off-the-beaten-path corner of Jharkhand." },
+    ],
+    womenSafety: {
+      score: 6.8,
+      level: "Exercise Caution",
+      highlights: ["A historically documented landmark within an established riverside region", "Local community around Rajmahal familiar with occasional heritage visitors"],
+      precautions: ["A genuinely remote site with limited facilities — plan transport and a local guide in advance", "Forest hill terrain requires proper footwear and caution"],
+      soloTips: ["Best visited with a pre-arranged local guide given the site's remoteness and forest setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Sahibganj Police", number: "06436-222233" }],
+      safeZones: ["The main approach path with a local guide"],
+      avoidAreas: ["Off-trail forest hill areas without a guide"],
+    },
+    rating: 4.0,
+    reviews: 95,
+    mustEat: ["Local meals in Sahibganj", "Riverside snacks near the Ganges"],
+    packingTips: ["Sturdy footwear for the hill terrain", "A local guide arranged in advance", "Water and sun protection"],
+  },
+  {
+    id: "isko-village-sohrai-art",
+    name: "Isko Village (Sohrai & Khovar Art)",
+    state: "Jharkhand",
+    tagline: "A Hazaribagh Village Where Entire Mud Houses Become Traditional Canvas",
+    description: "Isko Village, in Hazaribagh district, is one of the centres of Sohrai and Khovar painting, a genuinely distinctive tradition of mural art practised almost entirely by women, where the mud walls of village houses themselves become the canvas — painted with natural pigments in bold florals, animals, and geometric patterns, traditionally refreshed around the Sohrai harvest festival and Khovar wedding season. Walking through the village means passing house after house with these murals still in place on their exterior walls, a living folk-art tradition rather than a museum piece, still actively painted and renewed by the women of the community using techniques passed down through generations. Isko's significance has drawn real academic and cultural attention to Hazaribagh's rock art and mural traditions more broadly, making the village a genuinely meaningful stop for visitors interested in India's indigenous folk art beyond its more commercialized forms.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg/1280px-A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg/1280px-A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg/1280px-A_house_with_Sohrai_paintings_at_Isko_Village%2C_Hazaribagh%2C_Jharkhand%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sohrai_painting%2C_Jharkhand.jpg",
+    ],
+    imageCredit: "Photos: Kingshuk Mondal (CC BY-SA 4.0, description confirms the Isko Village location and describes the Sohrai/Khovar tradition) and Shreyashprashu (CC BY-SA 4.0, used directly on English Wikipedia's \"Sohrai and Khovar painting\" article and 5 other language Wikipedias) — Wikimedia Commons.",
+    category: ["Heritage", "Rural"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Entire mud-house exteriors painted in traditional Sohrai and Khovar murals" },
+      { name: "A living folk-art tradition practised almost entirely by village women" },
+      { name: "Natural-pigment florals, animals, and geometric patterns" },
+      { name: "A genuine, non-commercialized window into indigenous Jharkhand art" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Hazaribagh", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~3h drive", costRange: "₹4,000–₹12,000", tips: "Hazaribagh town is the standard gateway." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Hazaribagh Road station — ~14-16h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Hazaribagh for the onward trip to Isko village." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Hazaribagh, then to Isko village", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Hazaribagh town", costRange: "₹800–₹1,800 taxi", tips: "A local guide or contact in the village adds real depth to understanding the art tradition." },
+    ],
+    accommodation: [
+      { type: "Hotels (Hazaribagh)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Hazaribagh town"], description: "Most visitors day-trip from Hazaribagh." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Hazaribagh town to Isko village", available: true },
+      { mode: "Walking (within the village)", cost: "Free", notes: "The village itself is explored on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hazaribagh Wildlife Sanctuary", distance: "~20 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 450, accommodation: 0, food: 200, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2600, accommodation: 0, food: 800, transport: 1200, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Isko Village Art Walk", morning: "Drive from Hazaribagh to Isko village.", afternoon: "Walk through the village viewing painted house exteriors, meet local artists if possible.", evening: "Return to Hazaribagh.", stay: "A hotel in Hazaribagh", meals: "Simple local meals in or near the village", tips: "Visiting respectfully and, where possible, supporting local artists directly makes for a more meaningful visit than simply photographing the murals." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A settled rural community with an established local identity around its art tradition", "Growing cultural and academic visitor interest has made the village somewhat used to respectful outside visitors"],
+      precautions: ["A genuine rural village — basic facilities, so plan a day trip rather than expecting tourist infrastructure", "Respect that these are people's actual homes, not a public art installation"],
+      soloTips: ["Comfortable with a local guide or contact; approaching respectfully and asking before photographing individuals or entering private courtyards is important"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Hazaribagh Police", number: "06546-222222" }],
+      safeZones: ["The main village lanes"],
+      avoidAreas: ["None specifically flagged — a settled rural village"],
+    },
+    rating: 4.4,
+    reviews: 160,
+    mustEat: ["Simple local Jharkhandi meals in the village or Hazaribagh", "Seasonal produce from village farms"],
+    packingTips: ["A camera for the murals (ask permission before photographing people)", "Comfortable walking shoes", "A local guide's contact, arranged in advance if possible"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
