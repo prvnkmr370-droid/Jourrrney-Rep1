@@ -48059,6 +48059,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Neutral-colored clothing given the reserve setting", "Non-slip footwear for the wet rock shelves", "A camera for sunrise/sunset light"],
   },
 
+  {
+    id: "hazaribagh-wildlife-sanctuary",
+    name: "Hazaribagh Wildlife Sanctuary",
+    state: "Jharkhand",
+    tagline: "A Forested Plateau Sanctuary Built Around a Central Lake",
+    description: "Hazaribagh Wildlife Sanctuary spreads across the wooded Hazaribagh plateau, its landscape genuinely centred on a lake sitting within the heart of the reserve — a calm, reflective body of water ringed by dense sal forest that gives the sanctuary its most distinctive scenic feature. Home to sambar, wild boar, leopards, and a variety of birdlife across its forested terrain, the sanctuary offers a quieter, less commercially developed wildlife experience than Betla National Park further west, appealing to visitors who prefer a more understated encounter with the region's forest habitat. The sanctuary sits close to Hazaribagh town itself, making it a genuinely accessible day-trip destination for anyone exploring the northern part of the state.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hazaribagh_National_Park_101.jpg/1280px-Hazaribagh_National_Park_101.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hazaribagh_National_Park_101.jpg/1280px-Hazaribagh_National_Park_101.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hazaribagh_National_Park_101.jpg/1280px-Hazaribagh_National_Park_101.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/H%27Bag_National_Park_Entrance.jpg",
+    ],
+    imageCredit: "Photos: Pic Boy 101 (CC BY-SA 4.0, used directly on English Wikipedia's \"Hazaribagh district\" article) and Bhadani (public domain, used directly on English Wikipedia's \"Hazaribagh Wildlife Sanctuary\" article) — Wikimedia Commons, both categorized \"Hazaribag Wildlife Sanctuary\".",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "October – April",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "The central forest-ringed lake" },
+      { name: "Sambar, wild boar, and leopard habitat" },
+      { name: "Dense sal forest across the Hazaribagh plateau" },
+      { name: "A quieter alternative to Betla National Park" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Hazaribagh", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~2.5h drive", costRange: "₹4,000–₹12,000", tips: "Hazaribagh town is the standard gateway to the sanctuary." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Hazaribagh Road station — ~14-16h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hazaribagh Road station is a short drive from town and the sanctuary." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Hazaribagh, then to the sanctuary entrance", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from Hazaribagh town", costRange: "₹500–₹1,200 taxi", tips: "An easy half-day trip from Hazaribagh town." },
+    ],
+    accommodation: [
+      { type: "Hotels (Hazaribagh)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Hazaribagh town"], description: "Most visitors day-trip from Hazaribagh." },
+      { type: "Forest Rest House", priceRange: "₹800–₹1,800/night", examples: ["Forest department guesthouse near the sanctuary"], description: "Basic on-site accommodation for early wildlife viewing." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Hazaribagh town to the sanctuary", available: true },
+      { mode: "Forest Department Jeep", cost: "₹1,000–₹2,500", notes: "For exploring deeper into the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Betla National Park", distance: "~110 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 350, food: 250, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1900, accommodation: 1200, food: 400, transport: 200, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4200, accommodation: 2800, food: 800, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hazaribagh Wildlife Sanctuary Visit", morning: "Early forest jeep exploration around the sanctuary.", afternoon: "Visit the central lake and surrounding sal forest.", evening: "Return to Hazaribagh town.", stay: "A hotel in Hazaribagh", meals: "Simple local meals in Hazaribagh", tips: "Early morning offers the best chance of spotting wildlife before the day heats up." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A managed forest department sanctuary with regular ranger presence", "Reasonably close to Hazaribagh town, keeping it accessible"],
+      precautions: ["Active wildlife habitat — never leave the vehicle or designated paths unescorted", "Limited mobile network within the core forest areas"],
+      soloTips: ["Comfortable as part of an organized visit with forest department guidance; avoid wandering independently given the genuine wildlife presence"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Hazaribagh Forest Office", number: "06546-222362" }],
+      safeZones: ["Designated visitor zones around the lake and entrance"],
+      avoidAreas: ["Core forest areas without a ranger or guide"],
+    },
+    rating: 4.1,
+    reviews: 620,
+    mustEat: ["Simple Jharkhandi meals in Hazaribagh town", "Litti chokha, a regional staple"],
+    packingTips: ["Neutral-colored clothing for wildlife viewing", "Binoculars for birdwatching", "Insect repellent"],
+  },
+  {
+    id: "harihar-dham",
+    name: "Harihar Dham",
+    state: "Jharkhand",
+    tagline: "A Shiva Shrine in Bagodar, Giridih, Founded by a Modern Spiritual Guru",
+    description: "Harihar Dham sits in Bagodar, Giridih district, a Shiva temple complex founded under the guidance of Baba Amarnath, whose name appears alongside the temple's own on its entrance signboard, marking it as a genuinely more recent addition to Jharkhand's religious landscape compared to the region's ancient Jyotirlinga and Shakti Peetha sites. The temple has nonetheless built a real following, drawing devotees from across the state and beyond to its shrine, with the approach lined by the kind of prasad and offering stalls typical of an actively used pilgrimage site. Its location along the Grand Trunk Road corridor near Bagodar makes it a convenient stop for travellers passing through the Giridih-Hazaribagh region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Harihar_Dham.jpg/1280px-Harihar_Dham.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Harihar_Dham.jpg/1280px-Harihar_Dham.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Harihar_Dham.jpg/1280px-Harihar_Dham.jpg",
+    ],
+    imageCredit: "Photo: Vsvinaykumar2 — Wikimedia Commons, CC BY-SA 3.0, used directly on English, Egyptian Arabic, and Kannada Wikipedia's \"Harihar Dham\" articles, Wikidata Q15223032. Only one genuinely verified, location-confirmed image was found for this site after a real search — documented here as a single-image exception rather than risk an unverified second photo.",
+    category: ["Religious"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The Shiva shrine founded under Baba Amarnath's guidance" },
+      { name: "An actively used pilgrimage site with a lively prasad market" },
+      { name: "A convenient stop on the Grand Trunk Road corridor" },
+      { name: "A genuinely more recent addition to Jharkhand's religious sites" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Giridih or Hazaribagh, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Bagodar sits on the Grand Trunk Road between Giridih and Hazaribagh." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Hazaribagh Road or Parasnath, then onward road", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from the nearest station for the onward trip to Bagodar." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road (NH19/NH2) — Bagodar sits directly on the corridor", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Giridih or Hazaribagh", costRange: "₹800–₹1,800 taxi", tips: "A convenient stop for those driving the GT Road corridor." },
+    ],
+    accommodation: [
+      { type: "Hotels (Giridih/Hazaribagh)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in the nearest towns"], description: "Most visitors day-trip or pass through as part of a longer GT Road journey." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From nearby towns to Bagodar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Parasnath Hill (Shikharji)", distance: "~40 km", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 130, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 350, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 700, transport: 900, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Harihar Dham Visit", morning: "Darshan at the Harihar Dham shrine in Bagodar.", afternoon: "Continue along the GT Road corridor toward the next stop.", evening: "Onward journey.", stay: "A hotel in Giridih or Hazaribagh", meals: "Local snacks near the temple", tips: "A convenient stop if already travelling the Grand Trunk Road between Giridih and Hazaribagh." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["An actively visited pilgrimage site with regular devotee footfall and a busy market", "Located directly on a major, well-travelled road corridor"],
+      precautions: ["Dense market lanes near the entrance can be busy — watch for pickpocketing", "Remove footwear before entering temple areas, as customary"],
+      soloTips: ["Comfortable as a brief stop during a day trip or longer GT Road journey"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Giridih Police", number: "06532-222233" }],
+      safeZones: ["The main temple complex and market area"],
+      avoidAreas: ["None specifically flagged — a well-trafficked roadside pilgrimage stop"],
+    },
+    rating: 4.0,
+    reviews: 340,
+    mustEat: ["Local sweets and prasad from temple-area stalls", "Regional snacks along the GT Road"],
+    packingTips: ["Modest clothing for temple visits", "Cash for offerings and small purchases"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
