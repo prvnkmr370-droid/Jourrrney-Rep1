@@ -1,0 +1,52 @@
+{
+  "source": "https://karnatakatourism.org/en/",
+  "scrapedOn": "2026-09-10",
+  "publisher": "Department of Tourism, Government of Karnataka",
+  "headOffice": {
+    "address": "Department of Tourism, 5th Floor, Indhana Bhavan, Race Course Road, Bengaluru-560 009, Karnataka, India",
+    "phone": "+91-80-2235-2828",
+    "email": "feedback@karnatakatourism.org"
+  },
+  "sosFeature": {
+    "label": "TOURISM HELPLINE (SOS button in site header)",
+    "verifiedFrom": "Official Karnataka Tourism website SOS modal, captured 2026-09-10",
+    "contacts": [
+      { "label": "Single Emergency Helpline Number", "number": "112" },
+      { "label": "National Tourist Helpline Number", "number": "1800-11-1363 / 1363" },
+      { "label": "Women Safety", "number": "181" },
+      { "label": "Child Helpline", "number": "1098" }
+    ],
+    "note": "These are the official emergency numbers surfaced by the Karnataka Tourism SOS feature. To be embedded into every new Karnataka destination card's womenSafety.emergencyContacts and highlighted for women's safety per user instruction."
+  },
+  "touristMitra": {
+    "name": "Tourist Mitra (Tourist Police)",
+    "description": "Dedicated tourist assistance and safety support during travel in Karnataka.",
+    "slug": "tourist-mitra"
+  },
+  "travelThemes": ["Heritage, History and Culture", "Adventure Activities", "Wildlife & Safari", "Food & Culinary", "Tranquility", "Luxury and Grandeur"],
+  "favouriteDestinationsOnHomepage": ["Mysuru", "Coorg", "Hampi", "Udupi", "Bengaluru"],
+  "galleryHighlights": ["Black Panther / Kabini (Nagarhole)", "Maravanthe Beach", "Kambala (buffalo race)", "Mysore Palace illuminated", "Yakshagana folk art", "Vidhana Soudha", "Stone Chariot Hampi"],
+  "destinationsFound": [
+    {
+      "name": "Murudeshwara",
+      "url": "https://karnatakatourism.org/en/destinations/murudeshwara",
+      "district": "Uttara Kannada",
+      "summary": "123-ft Shiva statue (among tallest in the world) on Kanduka Hill by the Arabian Sea; 20-storey Raja Gopuram (249 ft) with lift to viewpoint; Atmalinga/Ramayana-Ravana mythology; Bhukailasa Cave Museum beneath the statue; Murudeshwar Beach; Netrani Island scuba diving nearby (one of India's finest dive sites).",
+      "timings": "Temple 6:00 AM – 8:30 PM; morning darshan 6-1, evening 3-8:30; entry free; Raja Gopuram lift ~Rs 10-20.",
+      "dressCode": "Inner sanctum: men dhoti/formal trousers; women saree or chudidar with dupatta. No shorts/sleeveless/ripped jeans. Remove footwear.",
+      "notes": "Maha Shivaratri draws largest crowds. Photography free in outer complex, restricted in sanctum."
+    },
+    {
+      "name": "Vijayapura (Bijapur) / Gol Gumbaz",
+      "url": "https://karnatakatourism.org/en/destinations/vijayapura",
+      "district": "Vijayapura",
+      "summary": "Historic Adil Shahi capital (15th-17th c.) in north Karnataka, rich in Indo-Islamic architecture. Gol Gumbaz = tomb of Sultan Muhammad Adil Shah, second-largest dome in the world, with famous Whispering Gallery. Ibrahim Rauza (said to have inspired the Taj Mahal), Malik-e-Maidan (world's largest medieval cannon), Jama Masjid, Bijapur Fort, Chand Bawdi stepwell.",
+      "howToReach": "530 km from Bengaluru via NH50/NH52; Vijayapura railway station (Mumbai-Hyderabad routes); nearest airports Belagavi (100 km), Hubballi (220 km).",
+      "notes": "Monuments close ~6 PM. Modest clothing at mosques/tombs. Local Bidri handicrafts. Name means 'City of Victory'."
+    }
+  ],
+  "candidateDestinationsNotYetCarded": [
+    "Chitradurga (fort)", "Udupi Sri Krishna Temple", "Dharmasthala", "Melukote/Melkote", "Bidar (fort)", "Agumbe", "Sakleshpur", "Kemmanagundi", "Devarayanadurga", "Himavad Gopalaswamy Betta", "Male Mahadeshwara Hills (MM Hills)", "Nanjangudu", "Kittur Fort", "Gudibande", "Kasarkod Blue Flag Beach", "Kurumgad Island", "Kateel", "Kalasa", "Horanadu Annapoorneshwari", "Gomatagiri", "Barkur", "Magadi", "Keladi", "Basavakalyana", "Sanganakallu", "Nagara/Bidanur Fort", "Sonda/Sodhe", "Maravanthe Beach", "Devbagh"
+  ],
+  "note": "destinationsFound populated as each is scraped and carded. Districts (Hassan, Kolar, Dharwad, Mandya, Tumakuru, Haveri, Yadgiri, Belagavi, Shivamogga, Chamarajanagar, Davanagere, Koppal, Bagalkote, Ballari, Raichur, Kalaburagi, Gadag, Uttara Kannada, Dakshina Kannada) treated as umbrella regions, NOT carded standalone; their specific named attractions carded individually instead."
+}
