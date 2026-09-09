@@ -47218,6 +47218,127 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable footwear for the hilltop walk", "A light jacket, as it can be windy at height", "A camera for the ropeway views"],
   },
 
+  {
+    id: "getalsud-dam",
+    name: "Getalsud Dam",
+    state: "Jharkhand",
+    tagline: "A Spillway on the Subarnarekha River, a Scenic Stop Near Hundru Falls",
+    description: "Getalsud Dam sits on the Subarnarekha River in Ormanjhi block, not far from Ranchi, its multi-gated concrete spillway a genuinely striking sight when water is being released in a wide, cascading curtain across its length. The dam is a working irrigation and water-supply structure rather than a dedicated tourist attraction, but its scale and setting — framed by grassy embankments and open sky, with the river continuing on toward the well-known Hundru Falls downstream — make it a natural, worthwhile stop for anyone already travelling that route. Sunset here has a particular reputation among local photographers, the wide reservoir catching the evening light in a way that's made it a favourite quick stop on the way back from a Hundru Falls day trip.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Getalsud_Dam%2C_Jharkhand.jpg/1280px-Getalsud_Dam%2C_Jharkhand.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Getalsud_Dam%2C_Jharkhand.jpg/1280px-Getalsud_Dam%2C_Jharkhand.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Getalsud_Dam%2C_Jharkhand.jpg/1280px-Getalsud_Dam%2C_Jharkhand.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Getalsud_Dam.jpg/1280px-Getalsud_Dam.jpg",
+    ],
+    imageCredit: "Photos: Hishampgm (CC BY-SA 4.0, used directly on English Wikipedia's \"Getalsud Dam\" article, Wikidata Q15221584) and Skmishraindia (public domain, also used on English Wikipedia's \"Getalsud Dam\" and \"Subarnarekha River\" articles) — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The multi-gated concrete spillway on the Subarnarekha River" },
+      { name: "Wide reservoir views with sunset photography appeal" },
+      { name: "A natural stop on the route to/from Hundru Falls" },
+      { name: "A quieter, less-crowded alternative to Ranchi's busier sights" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a drive to Ormanjhi block", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~45min drive", costRange: "₹4,000–₹12,000", tips: "Easily combined with a Hundru Falls day trip along the same route." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi station for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Ormanjhi on the Hundru Falls route", fromMumbai: "—", fromBangalore: "—", duration: "~45min from Ranchi", costRange: "₹800–₹1,500 taxi", tips: "Best combined with a Hundru Falls trip as a scenic stop en route." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Almost all visitors day-trip from Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹1,200–₹2,500 round trip", notes: "Usually combined with a Hundru Falls trip", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hundru Falls", distance: "~15 km", type: "Waterfall", isHidden: false, id: "hundru-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 250, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 0, food: 350, transport: 550, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2200, accommodation: 0, food: 700, transport: 1300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Getalsud Dam and Hundru Falls", morning: "Drive from Ranchi toward Hundru Falls.", afternoon: "Visit Hundru Falls.", evening: "Stop at Getalsud Dam for sunset on the return.", stay: "A hotel in Ranchi", meals: "Local snacks near the dam or falls", tips: "Time your return from Hundru Falls to catch sunset at Getalsud Dam — the reservoir's evening light is the highlight here." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A working dam site with regular local and passing traffic on the Hundru Falls route", "A straightforward, well-known stop for those already travelling the area"],
+      precautions: ["A quieter site than major tourist stops — visiting as part of a day trip with others is sensible", "Limited facilities directly at the dam", "Standard water-safety caution near the reservoir edge"],
+      soloTips: ["Comfortable as a brief stop during a day trip; not typically a standalone destination to linger at alone after dark"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main dam viewing area"],
+      avoidAreas: ["The reservoir edge and spillway area, especially after dark"],
+    },
+    rating: 4.0,
+    reviews: 780,
+    mustEat: ["Local snacks from roadside stalls en route", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the sunset views", "Comfortable footwear for the embankment walk", "Combine with a Hundru Falls visit for a fuller day"],
+  },
+  {
+    id: "chandil-dam",
+    name: "Chandil Dam",
+    state: "Jharkhand",
+    tagline: "A Major Reservoir on the Subarnarekha, With Jet Boating at Its Base",
+    description: "Chandil Dam spans the Subarnarekha River in Seraikela Kharsawan district, a large, gated concrete structure whose reservoir is genuinely substantial in scale — one of the bigger dams in this part of Jharkhand, built to support irrigation and water supply across the region. Unlike some of Jharkhand's quieter dam sites, Chandil has developed a real recreational side too: jet boats operate on the reservoir, giving visitors an active way to experience the water rather than just viewing it from the bank, making this a livelier stop than most working dams in the state. The surrounding hills and open water combine for a genuinely scenic setting, and the site's location along the Subarnarekha ties it into the same river system as Getalsud Dam and Hundru Falls further upstream.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/be/Chandil_Dam.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/be/Chandil_Dam.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/be/Chandil_Dam.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Boats_at_Dam.JPG/1280px-Boats_at_Dam.JPG",
+    ],
+    imageCredit: "Photos: Anupmahato — Wikimedia Commons, CC BY-SA 3.0/GFDL, GPS-confirmed 22°58'30.31\"N 86°01'25.09\"E, used directly on English Wikipedia's \"Chandil Dam\" and \"Chandil\" articles, Wikidata Q720244.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The large multi-gated dam structure on the Subarnarekha River" },
+      { name: "Jet boating on the reservoir" },
+      { name: "Scenic hill-backed reservoir views" },
+      { name: "Part of the same river system as Hundru Falls" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward to Chandil", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Chandil is roughly midway between Ranchi and Jamshedpur." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) or Ranchi, then onward road", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Chandil has its own railway station on the Ranchi-Jamshedpur line." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then NH33 toward Jamshedpur — Chandil sits roughly midway", fromMumbai: "—", fromBangalore: "—", duration: "~1.5h from Ranchi or Jamshedpur", costRange: "₹1,500–₹3,000 taxi", tips: "Reachable from either Ranchi or Jamshedpur with similar drive times." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur/Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels in either nearby city"], description: "Most visitors day-trip from Jamshedpur or Ranchi." },
+      { type: "Local Guesthouses (Chandil)", priceRange: "₹700–₹1,500/night", examples: ["Basic stays in Chandil town"], description: "A quieter option for those wanting to stay closer to the dam." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Chandil town to the dam", available: true },
+      { mode: "Jet Boating", cost: "₹300–₹800", notes: "The signature activity on the reservoir", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dalma Wildlife Sanctuary", distance: "~35 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1500, accommodation: 0, food: 400, transport: 600, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3500, accommodation: 0, food: 800, transport: 1500, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chandil Dam Day Trip", morning: "Drive to Chandil Dam from Ranchi or Jamshedpur.", afternoon: "Jet boating on the reservoir, views of the dam structure.", evening: "Return journey.", stay: "A hotel in Ranchi or Jamshedpur", meals: "Local snacks near the dam", tips: "Jet boating operators are typically active on weekends — check availability if visiting on a weekday." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A recognized recreational site with organized jet boating operators and regular visitor footfall", "Positioned conveniently between Ranchi and Jamshedpur on a well-travelled route"],
+      precautions: ["Standard water-safety practices with jet boating operators", "Can be quieter on weekdays — visiting with others is sensible", "Limited facilities beyond the main boating and viewing area"],
+      soloTips: ["Comfortable as a day visit, particularly on weekends when boating operators and other visitors are present"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Seraikela Kharsawan Police", number: "06579-266234" }],
+      safeZones: ["The main dam viewing and boating area"],
+      avoidAreas: ["Isolated reservoir stretches away from the main visitor area"],
+    },
+    rating: 4.1,
+    reviews: 1400,
+    mustEat: ["Local snacks near the boating area", "Regional Jharkhandi meals in Chandil town"],
+    packingTips: ["A change of clothes if jet boating", "Sun protection for the open reservoir", "Cash for boating operators"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
