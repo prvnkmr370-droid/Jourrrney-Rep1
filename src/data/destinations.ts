@@ -47339,6 +47339,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A change of clothes if jet boating", "Sun protection for the open reservoir", "Cash for boating operators"],
   },
 
+  {
+    id: "bhatinda-falls",
+    name: "Bhatinda Falls",
+    state: "Jharkhand",
+    tagline: "A Wide, Terraced Cascade in Dhanbad District",
+    description: "Bhatinda Falls, in Dhanbad district, spreads across a broad, rocky riverbed rather than dropping in a single tall column — a series of terraced steps and channels where the water spills across wide flat rock shelves, creating a genuinely photogenic, walkable landscape rather than a single dramatic viewpoint. The wide, shallow stretches make it a popular spot for visitors to wade in and explore the rocks directly, a more hands-on kind of waterfall visit than the steep, view-from-a-platform falls found elsewhere in the state. Framed by dense greenery and open sky, the site draws steady local footfall, especially in the cooler months when the flow is gentler and easier to explore safely.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bhatinda_Falls_1.jpg/1280px-Bhatinda_Falls_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bhatinda_Falls_1.jpg/1280px-Bhatinda_Falls_1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bhatinda_Falls_1.jpg/1280px-Bhatinda_Falls_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Bhatinda_Falls_2.jpg/1280px-Bhatinda_Falls_2.jpg",
+    ],
+    imageCredit: "Photos: Bpagla — Wikimedia Commons, CC BY-SA 4.0, used directly on English Wikipedia's \"Bhatinda Falls\" article, categorized \"Dhanbad district\"/\"Waterfalls in Jharkhand\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Wide, terraced rock shelves across the riverbed" },
+      { name: "Wadeable shallow stretches for exploring the falls directly" },
+      { name: "A quieter, less crowded alternative to Ranchi's bigger falls" },
+      { name: "Dense green surroundings typical of Dhanbad district" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Dhanbad, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Dhanbad is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dhanbad Junction — ~14-16h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Dhanbad for the onward trip to the falls." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Dhanbad, then onward local roads", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Dhanbad", costRange: "₹800–₹1,800 taxi", tips: "A reasonably accessible waterfall day trip from Dhanbad." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dhanbad)", priceRange: "₹1,200–₹4,500/night", examples: ["Hotels across Dhanbad city"], description: "Most visitors day-trip from Dhanbad." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹400–₹1,000", notes: "From Dhanbad to the falls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Topchanchi Lake", distance: "~30 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 0, food: 400, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 0, food: 800, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhatinda Falls Day Trip", morning: "Drive from Dhanbad to Bhatinda Falls.", afternoon: "Explore the wide terraced rocks and wade in the shallow stretches.", evening: "Return to Dhanbad.", stay: "A hotel in Dhanbad", meals: "Local snacks near the falls", tips: "Winter months offer the gentlest, safest flow for exploring the rocks directly." },
+    ],
+    womenSafety: {
+      score: 7.2,
+      level: "Safe",
+      highlights: ["A known local waterfall with regular footfall, especially on weekends", "Wide, open terrain gives good visibility across the site"],
+      precautions: ["Rocks can be slippery when wet — wear proper footwear", "Water currents strengthen noticeably during and just after monsoon", "Fewer facilities than major tourist waterfalls"],
+      soloTips: ["Comfortable as part of a day trip with others; a solo visit is more manageable on busier weekend days"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dhanbad Police", number: "0326-2300100" }],
+      safeZones: ["The main wide rock shelves and shallow stretches"],
+      avoidAreas: ["Deeper channels and currents, especially during and after monsoon"],
+    },
+    rating: 4.0,
+    reviews: 950,
+    mustEat: ["Local snacks from nearby stalls", "Dhanbad-style street food"],
+    packingTips: ["Non-slip footwear for the wet rocks", "A change of clothes if wading", "Sun protection for the open terrain"],
+  },
+  {
+    id: "sita-falls",
+    name: "Sita Falls",
+    state: "Jharkhand",
+    tagline: "A Tall, Ribbon-Like Cascade 6 km from Jonha Falls",
+    description: "Sita Falls sits about 6 km from the better-known Jonha Falls in Ranchi district, its water dropping in a tall, narrow ribbon down a weathered rock face before pooling among boulders at the base. Genuinely quieter than its more famous neighbour, Sita Falls rewards visitors with a more secluded, unhurried experience of essentially the same plateau-edge waterfall landscape that defines this part of Ranchi district, its multi-tiered drop threading through greenery on both sides of the rock. Best visited in winter, when the flow settles into a manageable, photogenic stream rather than the fuller monsoon torrent, it makes a natural addition to a Jonha Falls day trip for visitors willing to make the short extra journey.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sita_falls.jpg/1280px-Sita_falls.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sita_falls.jpg/1280px-Sita_falls.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sita_falls.jpg/1280px-Sita_falls.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sita_falls%2C_Ranchi%2C_Jharkhand.jpg/1280px-Sita_falls%2C_Ranchi%2C_Jharkhand.jpg",
+    ],
+    imageCredit: "Photos: Thenerdatul (CC BY 4.0, categorized \"Waterfalls in Jharkhand\", uploaded as part of Wiki Loves Earth 2025) and Skmishraindia (CC BY-SA 4.0, description confirming its location 6 km from Jonha Falls, Ranchi district) — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "November – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A tall, narrow ribbon-like cascade" },
+      { name: "A quieter, less-visited alternative near Jonha Falls" },
+      { name: "Boulder-strewn pools at the base" },
+      { name: "An easy add-on to a Jonha Falls day trip" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~45 km to Sita Falls", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~1h drive", costRange: "₹4,000–₹12,000", tips: "Best combined with a Jonha Falls trip on the same route." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi station for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then the Jonha Falls route, ~6 km further on", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Ranchi", costRange: "₹1,200–₹2,500 taxi", tips: "Ask local drivers, as it's less signposted than Jonha Falls itself." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Almost all visitors day-trip from Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹1,500–₹2,800 round trip", notes: "Usually combined with a Jonha Falls visit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jonha Falls", distance: "~6 km", type: "Waterfall", isHidden: true, id: "jonha-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 350, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1600, accommodation: 0, food: 400, transport: 1000, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3500, accommodation: 0, food: 800, transport: 2200, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jonha and Sita Falls", morning: "Visit Jonha Falls, descend the 722 steps.", afternoon: "Continue 6 km to Sita Falls for a quieter second stop.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi", meals: "Local snacks along the route", tips: "The quieter of the two falls makes for a good winding-down stop after the busier Jonha Falls." },
+    ],
+    womenSafety: {
+      score: 7.1,
+      level: "Safe",
+      highlights: ["Benefits from proximity to the well-visited Jonha Falls and its regular traffic", "A manageable add-on stop rather than an isolated destination"],
+      precautions: ["Quieter than Jonha Falls — fewer facilities and less foot traffic", "Boulder-strewn base terrain requires careful footing", "Visiting as part of a Jonha Falls trip, with a driver waiting, is the norm"],
+      soloTips: ["Best visited as part of a Jonha Falls day trip rather than a standalone solo excursion, given how quiet it can be"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main viewing area near the base"],
+      avoidAreas: ["Isolated stretches away from the main path, especially alone"],
+    },
+    rating: 4.0,
+    reviews: 410,
+    mustEat: ["Local snacks along the Jonha Falls route", "Litti chokha in Ranchi"],
+    packingTips: ["Sturdy footwear for the boulder-strewn base", "Water and snacks, as facilities are minimal", "Combine with Jonha Falls for a fuller day"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
