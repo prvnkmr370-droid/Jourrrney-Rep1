@@ -46610,6 +46610,129 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A change of clothes if boating", "Sun protection for the open lakeside", "Picnic supplies for a relaxed visit"],
   },
 
+  {
+    id: "basukinath-dham",
+    name: "Basukinath Dham",
+    state: "Jharkhand",
+    tagline: "The Second Stop on the Shravani Mela Pilgrimage, 45 km from Baidyanath Dham",
+    description: "Basukinath Dham sits in Dumka district, about 45 km east of the Baidyanath Jyotirlinga at Deoghar, and is genuinely inseparable from that larger pilgrimage in local tradition — Kanwariyas who carry sacred Ganga water to Baba Baidyanath Dham typically continue on to Basukinath afterward, completing what devotees consider the full circuit. The temple itself, dedicated to Shiva as Basukinath, is one of Jharkhand's most visited religious sites, its approach lined with a dense market of prasad, flower, and souvenir stalls that gives the town a genuinely lived-in, bustling pilgrimage-town character rather than a quiet monument feel. As with Baidyanath Dham, the Shravani Mela month brings by far the largest crowds, while the rest of the year sees a steadier, more manageable stream of regular pilgrims.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Basukinath_Temple.jpg/1280px-Basukinath_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Basukinath_Temple.jpg/1280px-Basukinath_Temple.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Basukinath_Temple.jpg/1280px-Basukinath_Temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wall_sculpture_of_Lord_Shiva_at_Basukinath_Temple.jpg/1280px-Wall_sculpture_of_Lord_Shiva_at_Basukinath_Temple.jpg",
+    ],
+    imageCredit: "Photos: Bhanunarayan20 (CC BY 4.0, GPS-confirmed 24°23'39.67\"N 87°5'12.51\"E, categorized \"Basukinath\") and Subhmanish (CC BY-SA 4.0, GPS-confirmed at the same coordinates, used directly on Hindi Wikipedia's वासुकिनाथ article, categorized \"Baba Basukinath Temple\") — Wikimedia Commons.",
+    category: ["Religious"],
+    bestSeason: "October – March (avoid peak Shravani Mela crowds in Shravan, July–August, unless seeking the pilgrimage experience)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Basukinath Shiva shrine, the traditional second stop after Baidyanath Dham" },
+      { name: "The bustling prasad and souvenir market lining the temple approach" },
+      { name: "Ornate wall sculptures around the temple complex" },
+      { name: "The Shravani Mela pilgrimage circuit with Deoghar" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then ~45 km to Basukinath", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~1h drive", costRange: "₹4,000–₹13,000", tips: "Combine with a Baidyanath Dham visit given the short 45 km distance." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jasidih Junction, then onward road — ~15-17h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "Jasidih Junction is the nearest major station; hire a cab onward." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH19/NH2 through Bihar to Deoghar, then ~45 km to Basukinath", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Deoghar", costRange: "₹1,500–₹3,000 taxi", tips: "Most pilgrims visit as a same-day extension of a Baidyanath Dham trip." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (near the temple)", priceRange: "₹300–₹1,000/night", examples: ["Pilgrim rest houses around the complex"], description: "Basic, functional stays built for pilgrimage footfall." },
+      { type: "Budget Hotels", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Basukinath town"], description: "Simple, comfortable options a short walk from the temple." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹50–₹150", notes: "From the bus stand or nearby hotels to the temple", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Common for short hops within town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baidyanath Dham", distance: "~45 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 550, accommodation: 250, food: 200, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1600, accommodation: 1000, food: 400, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3800, accommodation: 2800, food: 700, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Basukinath Darshan", morning: "Darshan at the main Shiva shrine before crowds build.", afternoon: "Explore the market and surrounding temple complex.", evening: "Evening aarti.", stay: "A dharamshala or hotel near the complex", meals: "Simple satvik meals from complex-area eateries", tips: "Combine with a same-day or next-day Baidyanath Dham visit, following the traditional pilgrimage sequence." },
+    ],
+    womenSafety: {
+      score: 7.7,
+      level: "Safe",
+      highlights: ["An active, continuously visited pilgrimage site with a busy market and steady footfall", "Well-established local infrastructure used to pilgrim traffic, especially around Shravani Mela"],
+      precautions: ["Very crowded during Shravani Mela — keep valuables secure and stay with your group", "Dense market lanes can be chaotic; watch for pickpocketing", "Remove footwear before entering temple areas, as customary"],
+      soloTips: ["Comfortable outside Mela season; during Shravani Mela, joining a group is strongly advisable given crowd density"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dumka Police", number: "06434-222233" }],
+      safeZones: ["The main temple complex and surrounding market"],
+      avoidAreas: ["Dense, unmanaged crowd crush points during peak Shravani Mela days"],
+    },
+    rating: 4.4,
+    reviews: 2900,
+    mustEat: ["Peda and local sweets from temple-area shops", "Satvik thali at nearby eateries"],
+    packingTips: ["Simple, modest clothing for temple visits", "Comfortable footwear for the market lanes", "Cash for offerings and small purchases"],
+  },
+  {
+    id: "rajrappa-temple",
+    name: "Rajrappa (Maa Chhinnamasta Temple)",
+    state: "Jharkhand",
+    tagline: "A Powerful Shakti Peetha Where the Bhairavi and Damodar Rivers Meet",
+    description: "Rajrappa, in Ramgarh district about 80 km from Ranchi, is home to one of the more striking and lesser-known Shakti temples in eastern India: the Maa Chhinnamasta Temple, dedicated to a fierce, self-decapitated form of the goddess considered one of the ten Mahavidyas in Tantric tradition. The temple sits at the confluence of the Bhairavi and Damodar rivers, a genuinely dramatic natural setting that adds to the site's spiritual intensity, and its architecture — vividly painted shikharas in reds, blues, and yellows rising above the riverside complex — is unmistakable and distinct from Jharkhand's other major temples. Rajrappa draws serious devotees of Tantric and Shakta traditions specifically, alongside general pilgrims, and remains one of the state's most visually and spiritually distinctive religious destinations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Maa_Chhinnamasta_Temple.jpg/1280px-Maa_Chhinnamasta_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Maa_Chhinnamasta_Temple.jpg/1280px-Maa_Chhinnamasta_Temple.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Maa_Chhinnamasta_Temple.jpg/1280px-Maa_Chhinnamasta_Temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Chhinnamasta_Temple_2.jpg/1280px-Chhinnamasta_Temple_2.jpg",
+    ],
+    imageCredit: "Photos: Kuarun (CC BY-SA 3.0, used directly on English Wikipedia's \"Chhinnamasta\", \"Rajrappa\", and \"Tourism in Jharkhand\" articles, Wikidata Q1026876/Q15209592) and कृष्ण कान्त शर्मा (CC BY-SA 4.0, GPS-confirmed at Rajrappa, categorized \"Temples in Jharkhand\") — Wikimedia Commons.",
+    category: ["Religious"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Maa Chhinnamasta Temple, one of the ten Mahavidya Shakti Peethas" },
+      { name: "The confluence of the Bhairavi and Damodar rivers" },
+      { name: "Vividly painted, distinctive temple shikharas" },
+      { name: "A major centre for Tantric and Shakta worship" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~80 km to Rajrappa", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~2h drive", costRange: "₹4,000–₹12,000", tips: "A manageable half-day trip from Ranchi via Ramgarh." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi or Ramgarh — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi or Ramgarh station for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Ramgarh — ~80 km from Ranchi", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi", costRange: "₹1,500–₹3,000 shared taxi / ₹3,500+ private cab", tips: "Roads are decent via Ramgarh; a private cab offers the most flexibility." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (near the temple)", priceRange: "₹300–₹1,000/night", examples: ["Pilgrim rest houses at Rajrappa"], description: "Basic stays built for pilgrimage footfall." },
+      { type: "Hotels (Ramgarh)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Ramgarh town"], description: "A wider range of options in the nearest town." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ramgarh to the temple complex", available: true },
+      { mode: "Private Taxi", cost: "₹2,000–₹3,500 round trip", notes: "The most convenient way from Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Patratu Valley", distance: "~45 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 600, accommodation: 250, food: 200, transport: 130, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1700, accommodation: 900, food: 400, transport: 350, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4000, accommodation: 2800, food: 800, transport: 350, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajrappa Darshan", morning: "Drive from Ranchi to Rajrappa.", afternoon: "Darshan at the Maa Chhinnamasta Temple, view the river confluence.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi or a dharamshala at Rajrappa", meals: "Simple satvik meals near the temple", tips: "The riverbank areas can be slippery near the confluence — take care if walking close to the water." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["An active, well-known pilgrimage site with regular devotee footfall", "A distinctive, well-maintained temple complex with organized darshan queues"],
+      precautions: ["The riverside confluence area can have slippery rocks and currents — stay on marked paths", "Can get crowded during festivals and auspicious days", "Limited facilities beyond the immediate temple complex"],
+      soloTips: ["Comfortable as part of a day trip; stick to the main temple and viewing areas rather than wandering the riverbank alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ramgarh Police", number: "06553-222333" }],
+      safeZones: ["The main temple complex and designated riverside viewing areas"],
+      avoidAreas: ["The river confluence itself, especially near currents"],
+    },
+    rating: 4.3,
+    reviews: 1800,
+    mustEat: ["Local sweets and prasad from temple stalls", "Simple satvik meals nearby"],
+    packingTips: ["Modest clothing for temple visits", "Non-slip footwear near the riverbank", "Cash for offerings"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
