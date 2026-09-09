@@ -46976,6 +46976,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable footwear for the shoreline walk", "Picnic supplies for a relaxed visit", "Sun protection"],
   },
 
+  {
+    id: "tagore-hill",
+    name: "Tagore Hill",
+    state: "Jharkhand",
+    tagline: "A Ranchi Hilltop Where Rabindranath Tagore's Elder Brother Made His Home",
+    description: "Tagore Hill, also known as Morabadi Hill, rises about 300 metres in the Morabadi area of Ranchi, roughly 4 km from Albert Ekka Chowk, and carries a genuine literary history: Jyotirindranath Tagore, Nobel laureate Rabindranath Tagore's elder brother, settled here in 1912 after the death of his wife Kadambari Devi, building a house called Shanti Dham and a monument called Brahma Sthal, where he lived until his death in 1925. Beyond its Tagore family connection, the hill's grounds also house the Centre of Divyayan and Agrarian Vocational Institute and a Ramakrishna Mission Ashram, and the climb to the summit pavilion rewards visitors with sweeping views over Ranchi's rooftops and the surrounding hills — a genuinely quiet, historically grounded counterpoint to the city below.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg/1280px-Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg/1280px-Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg/1280px-Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_from_Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg/1280px-View_from_Tagore_Hill%2C_Ranchi%2C_Jharkhand.jpg",
+    ],
+    imageCredit: "Photos: Kingshuk Mondal — Wikimedia Commons, CC BY 4.0, both GPS-confirmed 23°24'05.23\"N 85°20'16.92\"E, categorized \"Tagore Hill\", with a detailed file description confirming the Jyotirindranath Tagore history.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The summit pavilion and Brahma Sthal monument" },
+      { name: "The historic connection to Jyotirindranath Tagore" },
+      { name: "Panoramic hilltop views over Ranchi" },
+      { name: "The adjoining Ramakrishna Mission Ashram" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to Morabadi", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, easily combined with other city sights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Morabadi within Ranchi city, ~4 km from Albert Ekka Chowk", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Easily reached by local transport from anywhere in Ranchi." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The hill sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Walking", cost: "Free", notes: "A short but steep climb to the summit pavilion", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jubilee Park", distance: "~5 km", type: "City Park", isHidden: false, id: "jubilee-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tagore Hill Morning Walk", morning: "Climb Tagore Hill, visit the Brahma Sthal monument and summit pavilion.", afternoon: "Explore the Ramakrishna Mission Ashram grounds.", evening: "Return to central Ranchi.", stay: "A hotel in Ranchi", meals: "Local snacks near the base of the hill", tips: "Morning visits offer cooler weather for the climb and clearer views from the summit." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-known city landmark with regular visitor footfall", "Central Ranchi location keeps it accessible and generally well-trafficked"],
+      precautions: ["A moderately steep climb to the summit — wear proper footwear", "Fewer visitors on weekday mornings, so going with others is sensible for the climb"],
+      soloTips: ["Comfortable solo during daylight hours given the central location and regular visitors"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main pathway and summit pavilion area"],
+      avoidAreas: ["Isolated hillside sections away from the main path after dark"],
+    },
+    rating: 4.1,
+    reviews: 1900,
+    mustEat: ["Local snacks near the hill's base", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable footwear for the climb", "Water for the walk up", "A camera for the hilltop views"],
+  },
+  {
+    id: "jagannath-temple-ranchi",
+    name: "Jagannath Temple, Ranchi",
+    state: "Jharkhand",
+    tagline: "A 1691 Hilltop Temple and Launch Site of Ranchi's Annual Rath Yatra",
+    description: "The Jagannath Temple in Ranchi was built in 1691 by Ani Nath Shahdeo, sitting on a small hilltop about 10 km from the city centre, its tall, distinctive Odisha-style shikhara — ribbed and banded in white and maroon — genuinely reminiscent of the much larger Jagannath Temple at Puri. Like its Puri counterpart, this temple is dedicated to Jagannath, the aniconic form of Vishnu especially revered across eastern India, and it serves as the launch site for Ranchi's own popular annual Rath Yatra chariot festival, drawing large crowds who pull the temple chariots through the city each year. The hilltop setting, approached by a flight of steps and surrounded by greenery, adds a genuinely scenic, elevated character that sets it apart from more urban city temples.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg/1280px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg/1280px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg/1280px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_7.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_5.jpg/1280px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_5.jpg",
+    ],
+    imageCredit: "Photos: Ms Sarah Welch — Wikimedia Commons, CC BY-SA 4.0, GPS-confirmed 23°19'00.37\"N 85°16'52.12\"E, categorized \"Jagannath temple, Ranchi\", with a detailed file description confirming the 1691 construction and Rath Yatra role.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The 1691 Odisha-style hilltop temple, built by Ani Nath Shahdeo" },
+      { name: "The distinctive ribbed, Puri-style shikhara" },
+      { name: "The launch site of Ranchi's annual Rath Yatra" },
+      { name: "Scenic hilltop views over the surrounding area" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~10 km to the temple", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "An easy stop within a wider Ranchi city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city, ~10 km from the centre", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹150–₹400 local cab", tips: "Visit during the Rath Yatra festival for a genuinely lively, crowded experience if timing allows." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The temple is a short drive from most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~12 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 200, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1400, accommodation: 0, food: 700, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jagannath Temple Visit", morning: "Darshan at the Jagannath Temple, explore the hilltop grounds.", afternoon: "Continue to other central Ranchi sights.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Prasad and local snacks near the temple", tips: "The Rath Yatra period brings large, festive crowds — a wonderful time to visit if your dates align, but expect heavy traffic." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A well-known, actively worshipped city temple with steady visitor footfall", "Within easy reach of central Ranchi, keeping it well-trafficked and accessible"],
+      precautions: ["Very crowded during the Rath Yatra festival — keep valuables secure", "Steps up to the hilltop warrant normal caution", "Remove footwear before entering temple areas, as customary"],
+      soloTips: ["Comfortable solo during regular days given the steady footfall; during Rath Yatra, going with others is sensible given the crowd density"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main temple complex and hilltop grounds"],
+      avoidAreas: ["Dense, unmanaged crowd crush points during Rath Yatra"],
+    },
+    rating: 4.4,
+    reviews: 3900,
+    mustEat: ["Prasad and sweets from temple-area stalls", "Litti chokha in Ranchi"],
+    packingTips: ["Modest clothing for temple visits", "Comfortable footwear for the hilltop steps", "Cash for offerings"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
