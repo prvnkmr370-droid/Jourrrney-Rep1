@@ -48538,6 +48538,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the boats and sunset", "Sun protection for the open water", "Cash for boating operators"],
   },
 
+  {
+    id: "tenughat-dam",
+    name: "Tenughat Dam",
+    state: "Jharkhand",
+    tagline: "A Damodar River Dam Near Bokaro, Powering the Steel City",
+    description: "Tenughat Dam sits on the Damodar River near Bermo in Bokaro district, built primarily to supply water for the Tenughat Thermal Power Station and support Bokaro Steel City's industrial water needs. Its wide, multi-gated concrete spillway is a genuinely impressive sight when releasing water, the cascade spilling evenly across the dam's full length into the river below. As one of the working dams that keeps the Bokaro-Dhanbad industrial belt running, Tenughat offers visitors a look at the practical infrastructure underpinning the region's steel and power industries, alongside a straightforward, scenic reservoir view for those passing through the area.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tenughat_Dam.jpg/1280px-Tenughat_Dam.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tenughat_Dam.jpg/1280px-Tenughat_Dam.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tenughat_Dam.jpg/1280px-Tenughat_Dam.jpg",
+    ],
+    imageCredit: "Photo: Asifiqbal92 — Wikimedia Commons, CC BY-SA 4.0, used directly on English Wikipedia's \"Bokaro Steel City\" article, categorized \"Tenughat Dam\". Only one genuinely verified, location-confirmed image of this specific dam was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The wide, multi-gated concrete spillway" },
+      { name: "A working dam supplying Bokaro Steel City and its power station" },
+      { name: "Views across the Damodar River reservoir" },
+      { name: "A glimpse into the region's industrial infrastructure" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Bokaro, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Bokaro is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Bokaro Steel City — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Bokaro for the onward trip to Bermo/Tenughat." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi or Dhanbad to Bermo, then to Tenughat Dam", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Bokaro Steel City", costRange: "₹1,000–₹2,200 taxi", tips: "A straightforward stop for those in the Bokaro-Bermo area." },
+    ],
+    accommodation: [
+      { type: "Hotels (Bokaro)", priceRange: "₹1,200–₹4,000/night", examples: ["Hotels across Bokaro Steel City"], description: "Most visitors day-trip from Bokaro." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Bokaro or Bermo to the dam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Maithon Dam", distance: "~60 km", type: "Dam", isHidden: false, id: "maithon-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 200, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 600, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2500, accommodation: 0, food: 800, transport: 1400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tenughat Dam Visit", morning: "Drive from Bokaro to Tenughat Dam.", afternoon: "View the spillway and reservoir.", evening: "Return to Bokaro.", stay: "A hotel in Bokaro", meals: "Local snacks near the dam", tips: "A straightforward, low-key stop best combined with other Bokaro-area sightseeing." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A working infrastructure site with regular staff and local traffic", "Reasonably close to Bokaro Steel City, keeping it accessible"],
+      precautions: ["A functional dam site with limited tourist facilities", "Standard water-safety caution near the spillway"],
+      soloTips: ["Comfortable as a brief stop during a day trip; not typically a standalone destination to linger at alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Bokaro Police", number: "06542-233333" }],
+      safeZones: ["The main dam viewing area"],
+      avoidAreas: ["The spillway edge and reservoir shoreline, especially when gates are open"],
+    },
+    rating: 3.9,
+    reviews: 480,
+    mustEat: ["Local snacks near the dam", "Regional meals in Bokaro"],
+    packingTips: ["A camera for the spillway", "Comfortable footwear", "Standard caution near the water"],
+  },
+  {
+    id: "rankini-mandir-ghatshila",
+    name: "Rankini Mandir, Ghatshila",
+    state: "Jharkhand",
+    tagline: "A Vividly Painted Hilltop Shakti Shrine Overlooking Ghatshila",
+    description: "Rankini Mandir sits on a rocky hillside near Ghatshila and Jadugora in East Singhbhum district, its vividly painted, multi-tiered shikharas — rendered in bright blues, yellows, and reds — visible through the trees well before the temple complex itself comes into view. Dedicated to Rankini, a local form of the goddess particularly revered across this part of Jharkhand and neighbouring West Bengal, the temple draws a steady stream of devotees along a market-lined approach typical of an actively used pilgrimage site. Climbing to the temple's hilltop position rewards visitors with a genuinely sweeping panorama over Ghatshila's forested countryside, the granite outcrops around the shrine adding a raw, natural counterpoint to the temple's colourful architecture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rankini_Mandir%2C_Ghatshila_01.jpg/1280px-Rankini_Mandir%2C_Ghatshila_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rankini_Mandir%2C_Ghatshila_01.jpg/1280px-Rankini_Mandir%2C_Ghatshila_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rankini_Mandir%2C_Ghatshila_01.jpg/1280px-Rankini_Mandir%2C_Ghatshila_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rankini_Mandir_Top_Hill_View%2C_Ghatshila_09.jpg/1280px-Rankini_Mandir_Top_Hill_View%2C_Ghatshila_09.jpg",
+    ],
+    imageCredit: "Photos: Tarunsamanta — Wikimedia Commons, CC BY-SA 4.0, both GPS-confirmed 22°38'27.79\"N 86°19'55.51\"E at Ghatshila, categorized \"Rankini Temple, Jadugora\"/\"Ghatshila\"/\"Hills of Jharkhand\".",
+    category: ["Religious"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Vividly painted, multi-tiered temple shikharas" },
+      { name: "A hilltop granite-outcrop setting" },
+      { name: "Sweeping panoramic views over Ghatshila" },
+      { name: "A bustling pilgrim market along the approach" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Ghatshila area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Ghatshila is closer to Kolkata than most other Jharkhand gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ghatshila station on the Howrah-Mumbai line", fromMumbai: "~20h+", fromBangalore: "~28h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Ghatshila has its own railway station, a short drive from the temple." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamshedpur, then to Ghatshila — near the West Bengal border", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Jamshedpur", costRange: "₹1,200–₹2,500 taxi", tips: "Combine with a Dharagiri Waterfalls visit given the shared Ghatshila area." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ghatshila)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels and guesthouses in Ghatshila town"], description: "Most visitors day-trip from Ghatshila." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to the temple", available: true },
+      { mode: "Walking (hillside climb)", cost: "Free", notes: "A short but genuine climb to the temple complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dharagiri Waterfalls", distance: "~10 km", type: "Waterfall", isHidden: false, id: "dharagiri-waterfalls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 500, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2400, accommodation: 0, food: 800, transport: 1100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rankini Mandir and Dharagiri Falls", morning: "Climb to Rankini Mandir for darshan and hilltop views.", afternoon: "Continue to Dharagiri Waterfalls nearby.", evening: "Return to Ghatshila.", stay: "A hotel in Ghatshila", meals: "Local snacks from the temple-approach market", tips: "The climb and granite terrain call for proper footwear — worth it for the panoramic views at the top." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["An actively visited pilgrimage site with regular devotee footfall and a busy market", "Well-established local infrastructure around Ghatshila's tourist activity"],
+      precautions: ["The hillside climb has uneven granite terrain — wear proper footwear", "Dense market lanes near the base can be busy — watch for pickpocketing", "Remove footwear before entering temple areas, as customary"],
+      soloTips: ["Comfortable as part of a day trip given the steady devotee footfall on the climb"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ghatshila Police", number: "0657-2432233" }],
+      safeZones: ["The main temple complex and approach market"],
+      avoidAreas: ["Steep, unrailed granite outcrops away from the main path"],
+    },
+    rating: 4.3,
+    reviews: 890,
+    mustEat: ["Local sweets and prasad from temple-approach stalls", "Regional meals in Ghatshila"],
+    packingTips: ["Sturdy footwear for the hillside climb", "Modest clothing for temple visits", "Cash for offerings and small purchases"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
