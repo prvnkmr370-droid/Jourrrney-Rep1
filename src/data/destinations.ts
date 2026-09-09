@@ -45748,6 +45748,68 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Trek-provided hot meals", "Butter tea and thukpa at high camps"],
     packingTips: ["Full high-altitude trekking gear for six passes above 5,000m", "A guided operator with proper acclimatization scheduling", "Water purification and emergency supplies given the route's remoteness"],
   },
+  {
+    id: "hunder-sand-dunes",
+    name: "Hunder (Sand Dunes)",
+    state: "Ladakh (UT)",
+    tagline: "A Genuine High-Altitude Cold Desert Where Silk Road Camels Still Graze",
+    description: "Hunder sits about 7 km from Diskit and roughly 160 km from Leh, home to the most photographed stretch of Nubra Valley's cold desert — a narrow, roughly 7 km belt of pale, rolling sand dunes running alongside the Shyok River, with seabuckthorn groves, a village oasis, and snow-capped peaks all visible from the same spot. What makes it genuinely more than just a scenic curiosity is what grazes there: wild and semi-domesticated double-humped Bactrian camels, descendants of the pack animals that once carried trade goods along this stretch of the Silk Road toward Central Asia, now offering short rides across the dunes for visitors. The dunes themselves sit at real high altitude — a cold desert rather than a hot one, with chilly nights even in summer — and the juxtaposition of sand, river, glacier-fed greenery, and Himalayan peaks in one frame is genuinely one of the more surreal single views anywhere in Ladakh.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hunder%2C_Nubra_valley.jpg/1280px-Hunder%2C_Nubra_valley.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hunder%2C_Nubra_valley.jpg/1280px-Hunder%2C_Nubra_valley.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hunder%2C_Nubra_valley.jpg/1280px-Hunder%2C_Nubra_valley.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bactrian_camels_at_Hunder_sand_dunes_Ladakh.jpg/1280px-Bactrian_camels_at_Hunder_sand_dunes_Ladakh.jpg",
+    ],
+    imageCredit: "Photos: Rupak Sarkar (CC BY-SA 4.0, used directly on English Wikipedia's Nubra article, categorized \"Hunder Village\") and Lianguanlun (CC BY 4.0, GPS-confirmed at Hunder) — Wikimedia Commons.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "May – September",
+    duration: "2–3 hours (usually combined with Diskit)",
+    highlights: [
+      { name: "Double-humped Bactrian camel rides across the dunes" },
+      { name: "The cold desert landscape beside the Shyok River" },
+      { name: "Seabuckthorn groves and the village oasis" },
+      { name: "Snow-capped peaks visible above the sand" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Leh Airport (IXL) — ~1.5h direct, then ~160 km to Hunder via Khardung La", fromMumbai: "~3.5h via Delhi", fromBangalore: "~4h via Delhi", duration: "1.5h from Delhi plus a ~5h drive", costRange: "₹4,000–₹18,000", tips: "Acclimatize in Leh for 24–48h before crossing Khardung La." },
+      { mode: "Road (via Khardung La and Diskit)", icon: "🚗", fromDelhi: "Via Leh, over Khardung La, through Diskit to Hunder", fromMumbai: "—", fromBangalore: "—", duration: "~5h from Leh", costRange: "₹3,500–₹6,500 shared taxi / ₹8,500+ private cab", tips: "An Inner Line Permit is mandatory, arranged in Leh in advance." },
+      { mode: "Road (Manali–Leh, then onward)", icon: "🚗", fromDelhi: "Via Manali — 2 days to Leh, then onward to Hunder", fromMumbai: "—", fromBangalore: "—", duration: "2 days plus a further ~5h drive", costRange: "₹2,500 shared jeep / ₹8,000–₹15,000 private", tips: "Seasonal (June–October) — the Manali–Leh highway closes in winter." },
+    ],
+    accommodation: [
+      { type: "Camping (at the dunes)", priceRange: "₹1,500–₹4,000/night", examples: ["Tented camps right by the sand dunes"], description: "A genuinely memorable place to spend a night, camels included." },
+      { type: "Guesthouses (Hunder village)", priceRange: "₹1,000–₹2,500/night", examples: ["Local family-run guesthouses"], description: "Simple, comfortable stays close to the dunes." },
+      { type: "Luxury Camps", priceRange: "₹12,000–₹35,000/night", examples: ["Premium riverside camps in Nubra"], description: "Heated luxury tents with Himalayan views." },
+    ],
+    localTransport: [
+      { mode: "Bactrian Camel Ride", cost: "₹200–₹400", notes: "The main activity at the dunes", available: true },
+      { mode: "Private Taxi/SUV", cost: "₹8,000–₹15,000 round trip from Leh", notes: "Usually combined with Diskit Monastery in the same trip", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nubra Valley", distance: "Hunder is within Nubra Valley", type: "Desert Valley", isHidden: true, id: "nubra-valley" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 900, food: 400, transport: 500, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5200, accommodation: 3000, food: 800, transport: 1000, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 13500, accommodation: 9000, food: 1700, transport: 2000, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Diskit to Hunder", morning: "Visit Diskit Monastery and its Maitreya Buddha.", afternoon: "Continue to Hunder, camel ride across the sand dunes.", evening: "Overnight at a dune-side camp.", stay: "A tented camp at Hunder", meals: "Simple Ladakhi meals at the camp", tips: "Sunset and early morning light give the dunes their best colour — worth timing a walk around those hours." },
+    ],
+    womenSafety: {
+      score: 8.5,
+      level: "Very Safe",
+      highlights: ["A major, well-organized tourist stop with regular footfall and established camel/camp operators", "Ladakh's Buddhist culture is genuinely respectful toward solo travellers"],
+      precautions: ["High-altitude cold desert — nights are cold even in summer", "No reliable mobile network beyond basic village coverage", "Carry cash — limited card facilities"],
+      soloTips: ["Comfortable solo as part of an organized Nubra Valley tour"],
+      emergencyContacts: [{ label: "Leh Police", number: "01982-252018" }, { label: "Army Medical (Leh)", number: "01982-252247" }, { label: "Emergency", number: "112" }],
+      safeZones: ["The main dune and camping areas"],
+      avoidAreas: ["Isolated dune stretches alone after dark"],
+    },
+    rating: 4.6,
+    reviews: 2900,
+    mustEat: ["Apricot-based dishes, a Nubra specialty", "Ladakhi thukpa and momos at camps"],
+    packingTips: ["Heavy warm layers — desert nights are cold", "Sunscreen — desert sun is intense", "Inner Line Permit (arranged in Leh)", "Cash for camel rides and small purchases"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
