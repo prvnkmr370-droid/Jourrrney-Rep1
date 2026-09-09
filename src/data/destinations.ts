@@ -47820,6 +47820,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "A camera for the distinctive chariot architecture", "Combine with a Dassam Falls visit for a fuller day"],
   },
 
+  {
+    id: "ranchi-science-centre",
+    name: "Ranchi Science Centre",
+    state: "Jharkhand",
+    tagline: "Jharkhand's First Science Centre, With Hands-On Galleries in Morabadi",
+    description: "The Ranchi Science Centre in Morabadi holds the distinction of being the first science centre established in Jharkhand, built to make science genuinely accessible and hands-on rather than confined to textbooks. Its galleries — including a Fun Science Gallery, a \"How Things Work\" Gallery, and a dedicated Resources of Jharkhand Gallery highlighting the state's own mineral and natural wealth — are filled with interactive exhibits designed for visitors to touch, operate, and experiment with directly, making it a genuinely popular destination for school groups and families alike. Set within landscaped grounds with its own distinctive modern building, the centre offers a different kind of Ranchi outing from the city's temples and hills — a place built specifically around curiosity and hands-on learning.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ranchi_Science_Centre_8731.JPG/1280px-Ranchi_Science_Centre_8731.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ranchi_Science_Centre_8731.JPG/1280px-Ranchi_Science_Centre_8731.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ranchi_Science_Centre_8731.JPG/1280px-Ranchi_Science_Centre_8731.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fun_Science_Gallery_-_Ranchi_Science_Centre_-_Jharkhand_2010-11-27_8137.JPG/1280px-Fun_Science_Gallery_-_Ranchi_Science_Centre_-_Jharkhand_2010-11-27_8137.JPG",
+    ],
+    imageCredit: "Photos: Biswarup Ganguly — Wikimedia Commons, CC BY-SA 3.0/GFDL, used directly on English Wikipedia's \"Ranchi Science Centre\" and \"Tourism in Jharkhand\" articles and English Wikivoyage's \"Ranchi\" page, Wikidata Q7290805, categorized \"Ranchi Science Centre\".",
+    category: ["Museums"],
+    bestSeason: "Year-round (indoor attraction)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Fun Science and \"How Things Work\" interactive galleries" },
+      { name: "The Resources of Jharkhand Gallery on the state's mineral wealth" },
+      { name: "Jharkhand's first dedicated science centre" },
+      { name: "Landscaped grounds around a distinctive modern building" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to Morabadi", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Easily combined with a Tagore Hill visit given the shared Morabadi neighbourhood." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city, Morabadi area", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "A good rainy-day or indoor alternative to outdoor sightseeing." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The centre sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tagore Hill", distance: "~2 km", type: "Heritage Hill", isHidden: false, id: "tagore-hill" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 50, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 150, activities: 150 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1400, accommodation: 0, food: 700, transport: 300, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ranchi Science Centre Visit", morning: "Explore the interactive galleries and exhibits.", afternoon: "Continue to Tagore Hill nearby.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the centre", tips: "A great option for families with children, or as a rainy-day alternative to outdoor sightseeing." },
+    ],
+    womenSafety: {
+      score: 8.1,
+      level: "Very Safe",
+      highlights: ["A managed, family-oriented public institution with regular staff presence and school-group visits", "Central Ranchi location keeps it accessible and well-monitored"],
+      precautions: ["Standard indoor-venue courtesy — nothing specific flagged", "Can be busy with school groups on weekday mornings"],
+      soloTips: ["Very comfortable solo, at any time during opening hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The entire centre and its grounds"],
+      avoidAreas: ["None — a well-managed public institution"],
+    },
+    rating: 4.3,
+    reviews: 2100,
+    mustEat: ["Local snacks near the centre", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable walking shoes for the galleries", "A camera, where permitted", "Check opening hours in advance"],
+  },
+  {
+    id: "hotwar-state-museum",
+    name: "Hotwar State Museum, Ranchi",
+    state: "Jharkhand",
+    tagline: "Centuries-Old Stone Sculpture from Across Jharkhand's Ancient Sites",
+    description: "The State Museum at Hotwar, Ranchi, houses a genuinely significant collection of stone sculpture recovered from historic sites across Jharkhand, particularly the Icha Garh and Ichagarh areas of Singhbhum district — carved images of Hindu deities dating from roughly the 11th to 18th centuries CE, including Uma Maheshwar, Nritya (dancing) Ganesha, Kartikeya, and Kirtimukha reliefs, alongside pieces recovered from Chandil in East Singhbhum. These weathered, richly carved stone panels offer a tangible, close-up look at the region's temple architecture and religious art from periods when Jharkhand's own historic kingdoms — including the Chero and other regional dynasties — commissioned and maintained elaborate stone shrines, many of which have since been lost to time, making the museum's collection a genuinely important record of an otherwise fragmentary architectural history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Uma_Maheshwar%2C_circa_12th_century_CE%2C_Icha_Garh%2C_Singhbhum%2C_Hotwar_State_Museum%2C_Ranchi%2C_Jharkhand.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Uma_Maheshwar%2C_circa_12th_century_CE%2C_Icha_Garh%2C_Singhbhum%2C_Hotwar_State_Museum%2C_Ranchi%2C_Jharkhand.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Uma_Maheshwar%2C_circa_12th_century_CE%2C_Icha_Garh%2C_Singhbhum%2C_Hotwar_State_Museum%2C_Ranchi%2C_Jharkhand.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nritya_Ganesha%2C_circa_18th_century_CE%2C_Ichagarh%2C_Singhbhum%2C_Hotwar_State_Museum%2C_Ranchi%2C_Jharkhand.jpg",
+    ],
+    imageCredit: "Photos: SpeakingArch — Wikimedia Commons, CC BY-SA 4.0, both explicitly captioned with the artifact, era, provenance site, and museum name, categorized \"Museums in Jharkhand\"/\"Museum\", \"Ranchi\".",
+    category: ["Museums", "Heritage"],
+    bestSeason: "Year-round (indoor attraction)",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "12th-century Uma Maheshwar stone sculpture from Icha Garh" },
+      { name: "18th-century Nritya Ganesha carving from Ichagarh" },
+      { name: "Kartikeya and Kirtimukha stone reliefs" },
+      { name: "Recovered sculpture from historic Singhbhum-region sites" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a drive to Hotwar", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "A good indoor stop within a wider Ranchi city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Ranchi city, Hotwar area", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹150–₹400 local cab", tips: "Check opening days in advance, as government museums sometimes close on Mondays." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~10 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hotwar State Museum Visit", morning: "Explore the sculpture galleries and historic artifact collection.", afternoon: "Continue to other Ranchi city sights.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the museum", tips: "A quiet, worthwhile stop for anyone interested in Jharkhand's historic temple art and sculpture." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A managed government museum with regular staff presence", "A calm, low-traffic indoor environment"],
+      precautions: ["Standard museum courtesy — nothing specific flagged", "Check opening days and hours in advance, as government museums can have limited schedules"],
+      soloTips: ["Very comfortable solo during opening hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The entire museum premises"],
+      avoidAreas: ["None — a managed government institution"],
+    },
+    rating: 4.1,
+    reviews: 320,
+    mustEat: ["Local snacks near the museum", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable walking shoes", "A notebook or camera for the historic sculpture, where permitted", "Check opening hours in advance"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
