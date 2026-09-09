@@ -49721,6 +49721,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest, respectful clothing", "Check service times if visiting during worship hours"],
   },
 
+  {
+    id: "tata-steel-zoological-park",
+    name: "Tata Steel Zoological Park",
+    state: "Jharkhand",
+    tagline: "Jamshedpur's Zoo, With a Distinctive Elephant-Headed Entrance Gate",
+    description: "Tata Steel Zoological Park sits in Jamshedpur, its entrance genuinely unmistakable — a pair of large elephant-head sculptures flank the gateway, tusks reaching toward each other above the \"TATA STEEL ZOOLOGICAL PARK\" signage, setting the tone for a well-maintained, corporately managed zoo distinct from many government-run facilities in the region. Inside, the park houses leopards, gharials, chital deer, and a range of other species across purpose-built enclosures, alongside a dedicated butterfly house and recently remodeled herbivore areas. As part of the same Tata Steel civic infrastructure that built Jubilee Park and much of Jamshedpur's public amenities, the zoological park reflects that same standard of upkeep, making it a genuinely reliable family destination within the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tata_Steel_Zoological_Park_Entry_Gate.jpg/1280px-Tata_Steel_Zoological_Park_Entry_Gate.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tata_Steel_Zoological_Park_Entry_Gate.jpg/1280px-Tata_Steel_Zoological_Park_Entry_Gate.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tata_Steel_Zoological_Park_Entry_Gate.jpg/1280px-Tata_Steel_Zoological_Park_Entry_Gate.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Leopard_of_Tata_Steel_Zoological_Park.jpg/1280px-Leopard_of_Tata_Steel_Zoological_Park.jpg",
+    ],
+    imageCredit: "Photos: Shashankswain99 — Wikimedia Commons, CC BY-SA 4.0, both used directly on English Wikipedia's \"Tata Steel Zoological Park\" article, categorized \"Tata Steel Zoological Park\"/\"Zoo entrances\"/\"Panthera pardus in Tata Steel Zoological Park\".",
+    category: ["Wildlife"],
+    bestSeason: "October – March",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "The distinctive elephant-headed entrance gate" },
+      { name: "Leopard, gharial, and chital deer enclosures" },
+      { name: "A dedicated butterfly house" },
+      { name: "Well-maintained grounds reflecting Tata Steel's civic upkeep" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Tatanagar station to the zoo." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi to Jamshedpur", costRange: "₹200–₹500 local cab within the city", tips: "Easily combined with a Jubilee Park visit given the shared Tata Steel civic footprint." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The zoo sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jubilee Park", distance: "~5 km", type: "City Park", isHidden: false, id: "jubilee-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 200, transport: 50, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 450, transport: 150, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1700, accommodation: 0, food: 900, transport: 300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tata Steel Zoological Park Visit", morning: "Explore the leopard and herbivore enclosures.", afternoon: "Visit the butterfly house and other exhibits.", evening: "Continue to Jubilee Park nearby.", stay: "A hotel in Jamshedpur", meals: "Local snacks near the zoo", tips: "A great family option, well-maintained and easily combined with Jubilee Park in the same day." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A well-managed, corporately maintained public facility with regular staff and family footfall", "Central Jamshedpur location keeps it accessible and well-monitored"],
+      precautions: ["Standard zoo-visit courtesy — follow posted safety guidelines around enclosures", "Can get crowded on weekends and holidays"],
+      soloTips: ["Comfortable solo during opening hours given the steady visitor traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The entire park along marked visitor paths"],
+      avoidAreas: ["None — a well-managed, fenced public facility"],
+    },
+    rating: 4.3,
+    reviews: 4200,
+    mustEat: ["Local snacks and ice cream from zoo vendors", "Litti chokha in Jamshedpur"],
+    packingTips: ["Comfortable walking shoes", "A camera for the enclosures", "Sun protection for the open walkways"],
+  },
+  {
+    id: "keenan-stadium",
+    name: "Keenan Stadium",
+    state: "Jharkhand",
+    tagline: "Jamshedpur's Historic Cricket Ground, Host to a 1978 Women's World Cup Final",
+    description: "Keenan Stadium in Jamshedpur is a genuinely significant name in Indian cricket history, having hosted matches at the Women's Cricket World Cup in 1978 — one of the tournament's early editions — alongside decades of domestic first-class and Ranji Trophy cricket. Part of the wider JRD Tata Sports Complex, the stadium's simple, functional stands and covered pavilion reflect its role as a genuine working cricket ground rather than a showcase arena, still hosting matches and drawing local cricket enthusiasts. For visitors interested in Indian sporting history beyond the country's most famous stadiums, Keenan offers a tangible link to the sport's growth in eastern India, tied into the same Tata Steel civic infrastructure that shaped so much of Jamshedpur's public life.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Keenan_Stadium%2C_Jamshedpur.jpg/1280px-Keenan_Stadium%2C_Jamshedpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Keenan_Stadium%2C_Jamshedpur.jpg/1280px-Keenan_Stadium%2C_Jamshedpur.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Keenan_Stadium%2C_Jamshedpur.jpg/1280px-Keenan_Stadium%2C_Jamshedpur.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e3/Keenan_Stadium_aerial_view.jpg",
+    ],
+    imageCredit: "Photos: Alok Prasad (CC BY 3.0, used on 10+ Wikipedia language projects including English Wikipedia's \"Keenan Stadium\" article and \"List of stadiums in India\", Wikidata Q6382882) and Ashokinder (CC BY-SA 3.0, used on English Wikipedia's \"Jharkhand\" and \"Keenan Stadium\" articles) — Wikimedia Commons.",
+    category: ["Heritage", "Adventure"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "A venue for the 1978 Women's Cricket World Cup" },
+      { name: "Decades of domestic and Ranji Trophy cricket history" },
+      { name: "Part of the JRD Tata Sports Complex" },
+      { name: "A genuine, still-active working cricket ground" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Tatanagar station to the stadium." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi to Jamshedpur", costRange: "₹100–₹300 local cab within the city", tips: "Check for a live match schedule if wanting to see the stadium in use." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The stadium sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tata Steel Zoological Park", distance: "~5 km", type: "Zoo", isHidden: false, id: "tata-steel-zoological-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Keenan Stadium and Jamshedpur City", morning: "View Keenan Stadium and its history.", afternoon: "Continue to the Tata Steel Zoological Park or Jubilee Park.", evening: "Explore central Jamshedpur.", stay: "A hotel in Jamshedpur", meals: "Local snacks near the stadium", tips: "A quick, worthwhile stop for cricket history enthusiasts, best combined with other Jamshedpur city sights." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-known city landmark with regular local footfall, especially during matches", "Central Jamshedpur location keeps it accessible"],
+      precautions: ["Can get very crowded during major matches", "Standard sports-venue courtesy"],
+      soloTips: ["Comfortable solo given the central, well-trafficked location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The stadium exterior and surrounding sports complex"],
+      avoidAreas: ["None significant — a central, well-trafficked city landmark"],
+    },
+    rating: 4.1,
+    reviews: 780,
+    mustEat: ["Local snacks near the stadium", "Litti chokha in Jamshedpur"],
+    packingTips: ["A camera for the stadium exterior", "Check match schedules if wanting to see it in use"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
