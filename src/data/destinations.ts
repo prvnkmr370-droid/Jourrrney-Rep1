@@ -48891,6 +48891,124 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy, non-slip footwear", "Water and snacks, as facilities are minimal", "Combine with a fuller Netarhat itinerary"],
   },
 
+  {
+    id: "magnolia-sunset-point-netarhat",
+    name: "Magnolia Sunset Point, Netarhat",
+    state: "Jharkhand",
+    tagline: "Netarhat's Sunset Viewpoint, Named for a Colonial-Era Love Legend",
+    description: "Magnolia Sunset Point, about 10 km from Netarhat's main town, is the plateau's dedicated sunset viewpoint, its clifftop position looking out over a sweeping forested valley that catches the evening light in the same way Netarhat's Sunrise Point does at dawn. The site carries a genuinely evocative local legend behind its name: a statue at the viewpoint commemorates Magnolia, the daughter of a British colonial official, and Batuk, a local tribal shepherd boy, whose star-crossed love story is said to be tied to this exact spot overlooking the valley. Whether visitors come primarily for the sunset itself or for the story behind the statue, the combination of romantic legend and genuinely striking valley views has made this one of Netarhat's most visited single stops.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg/1280px-Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg/1280px-Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg/1280px-Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg",
+    ],
+    imageCredit: "Photo: HER studio — Wikimedia Commons, CC BY-SA 4.0, its file description explicitly recounting the Magnolia and Batuk legend tied to this exact viewpoint, categorized \"Netarhat\"/\"Statues in Jharkhand\"/\"Sunsets of India\". Only one genuinely verified image of this specific statue and viewpoint was found after a real search — documented here as a single-image exception.",
+    category: ["Nature", "Heritage"],
+    bestSeason: "November – February (clearest sunset views)",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The Magnolia and Batuk statue and its colonial-era love legend" },
+      { name: "Sweeping sunset views over the forested valley" },
+      { name: "One of Netarhat's most-visited single viewpoints" },
+      { name: "A clifftop setting distinct from Netarhat's main Sunrise Point" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Netarhat", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4-5h drive", costRange: "₹4,000–₹12,000", tips: "Visit as part of a wider Netarhat plateau itinerary." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj, then onward road via Netarhat", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the more practical rail gateway for this plateau region." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Netarhat toward the viewpoint, ~10 km from town", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from Netarhat town", costRange: "₹500–₹1,000 local taxi", tips: "Time your arrival for at least 45 minutes before sunset to secure a good viewing spot." },
+    ],
+    accommodation: [
+      { type: "Government Guesthouses (Netarhat)", priceRange: "₹1,000–₹2,500/night", examples: ["Jharkhand Tourism's Prabhat Vihar"], description: "The standard base for exploring Netarhat's viewpoints." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi/SUV", cost: "₹500–₹1,000", notes: "From Netarhat town to the viewpoint", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Netarhat", distance: "~10 km", type: "Hill Station", isHidden: false, id: "netarhat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 0, food: 400, transport: 400, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2200, accommodation: 0, food: 800, transport: 900, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Magnolia Sunset Point Evening", morning: "Explore other Netarhat sights.", afternoon: "Rest before the evening viewpoint visit.", evening: "Sunset at Magnolia Sunset Point.", stay: "A guesthouse in Netarhat", meals: "Local meals at the guesthouse", tips: "Arrive with plenty of daylight left — the drive and short walk to the viewpoint take some time." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["One of Netarhat's most-visited viewpoints, with steady evening crowds", "Well-established as part of the standard Netarhat plateau circuit"],
+      precautions: ["Cliff-edge terrain warrants normal caution, especially in fading light", "Genuinely cold evenings on the plateau — dress warmly", "Can get crowded around peak sunset time"],
+      soloTips: ["Comfortable given the steady crowd of fellow sunset-watchers at this popular viewpoint"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Latehar Police", number: "06562-292233" }],
+      safeZones: ["The main viewing platform and statue area"],
+      avoidAreas: ["Unrailed cliff edges away from the main viewpoint"],
+    },
+    rating: 4.5,
+    reviews: 1600,
+    mustEat: ["Local Jharkhandi meals at Netarhat guesthouses", "Hot tea from viewpoint-area vendors"],
+    packingTips: ["Warm layers for the cold evening", "A camera for the sunset and statue", "A flashlight for the return drive after dark"],
+  },
+  {
+    id: "navratangarh-fort",
+    name: "Navratangarh Fort",
+    state: "Jharkhand",
+    tagline: "The Ruined Seat of the Nagvanshi Kings, in the Heart of Gumla District",
+    description: "Navratangarh Fort, in Gumla district, was once the seat of the Nagvanshi dynasty, a lineage of local kings who ruled this part of the Chota Nagpur region for centuries before the arrival of British paramountcy. What remains today is a genuinely evocative set of ruins — weathered stone temple structures with carved pillars still standing amid the rubble, and an excavated royal chamber, its walls still bearing traces of coloured plaster, identified as the actual seat of the Nagvanshi kings. Far less visited than Jharkhand's better-known heritage sites, Navratangarh offers a genuinely tangible, hands-on encounter with the state's pre-colonial royal history, appealing especially to visitors interested in archaeology and the region's indigenous ruling dynasties rather than its more commonly told Mughal or colonial narratives.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Navratangarh_Fort_temple.jpg/1280px-Navratangarh_Fort_temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Navratangarh_Fort_temple.jpg/1280px-Navratangarh_Fort_temple.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Navratangarh_Fort_temple.jpg/1280px-Navratangarh_Fort_temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seat_of_the_king_in_Navratangarh.jpg/1280px-Seat_of_the_king_in_Navratangarh.jpg",
+    ],
+    imageCredit: "Photos: Dev0745 — Wikimedia Commons, one CC BY 4.0 (file description confirms \"Navratangarh fort temple ruin in Gumla district, Jharkhand\") and one CC0 (\"Seat of the Nagvanshi kings in Navratangarh, Gumla\"), both categorized \"Navratangarh\".",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The ruined seat of the Nagvanshi dynasty's kings" },
+      { name: "Carved stone temple pillars amid the ruins" },
+      { name: "An excavated royal chamber with traces of coloured plaster" },
+      { name: "A genuinely off-the-beaten-path window into pre-colonial history" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Gumla district", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~2-3h drive", costRange: "₹4,000–₹12,000", tips: "Gumla town is the standard gateway." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi, then onward road to Gumla", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Gumla and the fort site", fromMumbai: "—", fromBangalore: "—", duration: "~2-3h from Ranchi", costRange: "₹2,000–₹4,000 taxi", tips: "A local guide helps in navigating the ruins and understanding their history." },
+    ],
+    accommodation: [
+      { type: "Hotels (Gumla)", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Gumla town"], description: "The most practical base given the fort's relative remoteness." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Gumla town to the fort ruins", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Betla National Park", distance: "~90 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 30, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 1800, food: 700, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Navratangarh Fort Visit", morning: "Drive to Navratangarh Fort from Gumla.", afternoon: "Explore the ruined temple structures and the royal chamber.", evening: "Return to Gumla.", stay: "A hotel in Gumla", meals: "Local meals in Gumla town", tips: "A relatively remote, quiet site — a local guide adds real value in understanding the ruins' Nagvanshi history." },
+    ],
+    womenSafety: {
+      score: 6.9,
+      level: "Safe",
+      highlights: ["A recognized archaeological site with some local caretaking presence", "A historically significant, documented heritage location"],
+      precautions: ["A genuinely remote site with limited facilities — plan transport in advance", "Uneven, overgrown ground among the ruins", "Fewer visitors than major sites, so travelling with a guide or group is sensible"],
+      soloTips: ["Best visited with a pre-arranged driver or local guide given the site's remoteness"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Gumla Police", number: "06524-222233" }],
+      safeZones: ["The main excavated ruin areas"],
+      avoidAreas: ["Overgrown or unstable sections of the ruins, especially alone"],
+    },
+    rating: 4.0,
+    reviews: 240,
+    mustEat: ["Simple local meals in Gumla town", "Regional Jharkhandi snacks"],
+    packingTips: ["Sturdy footwear for uneven ruin terrain", "Water, as on-site facilities are minimal", "A local guide arranged in advance"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
