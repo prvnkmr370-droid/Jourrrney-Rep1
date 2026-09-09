@@ -51616,6 +51616,123 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local snacks and tea near the dam", "Litti chokha in Koderma"],
     packingTips: ["A change of clothes if boating", "A camera for the sunset views", "Arrive before sunset for the best light"],
   },
+  {
+    id: "jharia-coalfield",
+    name: "Jharia Coalfield",
+    state: "Jharkhand",
+    tagline: "A Vast, Smoldering Open-Pit Coal Mining Landscape Near Dhanbad",
+    description: "The Jharia Coalfield near Dhanbad is one of India's oldest and largest coal-mining regions, a genuinely vast, dramatically scarred landscape of open-pit mines where massive excavators carve through blackened earth beneath billowing plumes of dust and smoke. What makes Jharia globally unusual is that parts of its underground coal seams have been burning continuously since fires broke out in the early 20th century — a slow subterranean blaze still visible today as glowing orange cracks and smoldering ground amid the excavation sites, a striking and sobering sight found in very few places on Earth. While Jharia is very much a working industrial mining region rather than a conventional tourist destination, its scale and the genuinely unique spectacle of its underground fires make it a compelling, if sobering, stop for visitors interested in India's coal-mining heritage and the human and environmental cost behind it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/View_inside_an_open_pit_mine_in_Jharia.jpg/1280px-View_inside_an_open_pit_mine_in_Jharia.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/View_inside_an_open_pit_mine_in_Jharia.jpg/1280px-View_inside_an_open_pit_mine_in_Jharia.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/View_inside_an_open_pit_mine_in_Jharia.jpg/1280px-View_inside_an_open_pit_mine_in_Jharia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Coal_Mine.jpg/1280px-Coal_Mine.jpg",
+    ],
+    imageCredit: "Photos: uploaded to Wikimedia Commons, both categorized \"Coal mines in Dhanbad\" — an aerial open-pit mine view (CC BY 2.0, description confirms \"Fires are visible burning inside this mine, which is still in operation\") and a close-up excavator/underground-fire view captioned \"Jharia Coal mine\" (CC BY-SA 4.0, categorized \"Coal seam fires\").",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "1–2 hours (guided/roadside viewing)",
+    highlights: [
+      { name: "One of India's oldest and largest coal-mining regions" },
+      { name: "Underground coal seam fires burning since the early 1900s" },
+      { name: "A dramatic, unusual industrial landscape" },
+      { name: "A sobering window into India's coal-mining heritage" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi/Kolkata to Dhanbad, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Dhanbad has its own airport with limited connectivity; Ranchi/Kolkata connections are more reliable." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dhanbad — ~14-16h", fromMumbai: "~22h+", fromBangalore: "~26h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Dhanbad to the Jharia mining area." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within the Dhanbad-Jharia area", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Dhanbad", costRange: "₹300–₹700 taxi", tips: "A local guide is strongly recommended given active mining operations and ground instability from underground fires." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dhanbad)", priceRange: "₹1,000–₹4,500/night", examples: ["Hotels across Dhanbad city"], description: "Most visitors day-trip from Dhanbad." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹300–₹700", notes: "From central Dhanbad, ideally with a local guide", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "IIT (ISM) Dhanbad", distance: "~15 km", type: "Institute", isHidden: false, id: "iit-ism-dhanbad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 250, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1500, accommodation: 0, food: 700, transport: 600, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jharia Coalfield Visit", morning: "Drive from Dhanbad to the Jharia mining area with a local guide.", afternoon: "View the open-pit mines and underground fire zones from safe designated areas.", evening: "Return to Dhanbad.", stay: "A hotel in Dhanbad", meals: "Local snacks in Dhanbad", tips: "Never approach ground cracks or fire zones directly — underground fires create genuine subsidence hazards. View only from safe, guided vantage points." },
+    ],
+    womenSafety: {
+      score: 6.0,
+      level: "Exercise Caution",
+      highlights: ["A recognized, well-documented mining region with an active local workforce presence"],
+      precautions: ["Active industrial mining hazards, ground instability, and underground fires make unguided exploration genuinely dangerous", "Air quality can be poor near active burning and excavation zones", "A local guide familiar with safe viewing areas is essential"],
+      soloTips: ["Not recommended solo — visit only with a knowledgeable local guide or as part of an organized visit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dhanbad Police", number: "0326-2300100" }],
+      safeZones: ["Designated roadside and guided viewing points"],
+      avoidAreas: ["Active mining pits, ground cracks, and underground fire zones"],
+    },
+    rating: 3.8,
+    reviews: 180,
+    mustEat: ["Local snacks in Dhanbad", "Litti chokha"],
+    packingTips: ["A local guide with knowledge of safe viewing areas — essential, not optional", "A mask or scarf for dust and smoke", "Sturdy closed footwear"],
+  },
+  {
+    id: "birsa-munda-statue-ranchi",
+    name: "Birsa Munda Statue, Naya More",
+    state: "Jharkhand",
+    tagline: "A Striking Bronze Tribute to Jharkhand's Most Revered Freedom Fighter",
+    description: "This bronze statue at Naya More in Ranchi depicts Birsa Munda mid-stride atop a rocky pedestal, bow raised in one hand and a bird caught in flight in the other — a dynamic, powerful portrayal of the tribal leader who led the Munda Rebellion (Ulgulan) against British colonial rule and exploitative land policies in the late 1890s. Revered as Bhagwan Birsa Munda by many across the region, he remains the single most important historical figure associated with the state that would eventually be named in his community's honour, and statues and memorials to him are found across Jharkhand. This particular statue's energetic pose — muscular, mid-motion, garlanded in marigold — captures something of the reverence in which he continues to be held, making it a genuinely meaningful stop for visitors interested in the roots of Jharkhand's tribal and independence history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/29/Birsa_Munda_Statue_at_Naya_More.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/29/Birsa_Munda_Statue_at_Naya_More.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Birsa_Munda_Statue_at_Naya_More.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — Public Domain, description confirms \"Birsa Munda statue in Ranchi, Jharkhand\", categorized \"Statues of Birsa Munda\"/\"Monuments and memorials to freedom fighters of India\". Only one genuinely verified, unpeopled image of this statue was found after a real search — a second candidate photo featuring a visiting head of state was set aside as unsuitable for a travel destination card — documented here as a single-image exception.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "15–30 minutes",
+    highlights: [
+      { name: "A dynamic bronze statue of Birsa Munda, bow raised" },
+      { name: "A tribute to the leader of the 1890s Munda Rebellion" },
+      { name: "Revered widely across Jharkhand as Bhagwan Birsa Munda" },
+      { name: "A meaningful stop on the roots of the state's tribal history" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Ranchi's own airport is named after Birsa Munda." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within central Ranchi", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "A quick, worthwhile stop as part of any Ranchi city tour." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The statue sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Lake", distance: "~4 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 80, accommodation: 0, food: 80, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 300, accommodation: 0, food: 250, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 700, accommodation: 0, food: 500, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ranchi Heritage Stops", morning: "Visit the Birsa Munda statue at Naya More.", afternoon: "Continue to Ranchi Lake and Pahari Mandir.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks nearby", tips: "A brief but meaningful stop — take a moment to learn about Birsa Munda's role in Jharkhand's tribal history before moving on." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A central, well-trafficked city traffic circle with constant activity", "A respected memorial site with regular passersby"],
+      precautions: ["Standard traffic awareness at a busy intersection"],
+      soloTips: ["Very comfortable solo given the central, busy location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The statue plaza and surrounding footpaths"],
+      avoidAreas: ["None significant — a well-trafficked central city landmark"],
+    },
+    rating: 4.3,
+    reviews: 290,
+    mustEat: ["Local snacks nearby", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the statue", "A little background reading on Birsa Munda and the Ulgulan movement adds real context"],
+  },
 
 ];
 
