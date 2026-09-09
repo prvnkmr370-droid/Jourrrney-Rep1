@@ -48416,6 +48416,128 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest, respectful clothing", "A quiet, contemplative mindset for the visit", "Check visiting hours in advance"],
   },
 
+  {
+    id: "maithon-dam",
+    name: "Maithon Dam",
+    state: "Jharkhand",
+    tagline: "A Damodar Valley Corporation Dam With a Bridge Linking Jharkhand and West Bengal",
+    description: "Maithon Dam, on the Barakar River in Dhanbad district, is one of the earliest and largest dams built under the Damodar Valley Corporation project — India's answer to the Tennessee Valley Authority, launched in the years after independence to control flooding and generate hydroelectric power across the Damodar basin. The dam's bridge does double duty as a literal connector between states, spanning the reservoir to link Jharkhand and West Bengal, and the vast reservoir behind it has become a genuine recreational draw in its own right, with boating operators running trips out onto the water and the site earning a reputation for spectacular sunsets over the hills on the far shore. An underground power station adds a further layer of engineering interest for visitors curious about the DVC project's scale.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Maithon_Dam_2.jpg/1280px-Maithon_Dam_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Maithon_Dam_2.jpg/1280px-Maithon_Dam_2.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Maithon_Dam_2.jpg/1280px-Maithon_Dam_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Maithon_%2C_India.jpg",
+    ],
+    imageCredit: "Photos: Aman Abrar (CC0, description confirms \"Maithon Dam Bridge connecting Bengal and Jharkand\") and PS Sahana (CC BY 2.0, Flickr-reviewed) — Wikimedia Commons, both categorized \"Maithon Dam\".",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The Damodar Valley Corporation dam and bridge linking Jharkhand and West Bengal" },
+      { name: "Boating on the vast reservoir" },
+      { name: "Spectacular sunsets over the reservoir hills" },
+      { name: "An underground hydroelectric power station" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Dhanbad, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Dhanbad is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dhanbad or Asansol, then onward road — ~14-16h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Both Dhanbad and Asansol (West Bengal) are viable rail gateways given the dam's border location." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Dhanbad, then to Maithon", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Dhanbad", costRange: "₹1,000–₹2,200 taxi", tips: "The dam bridge itself is a notable crossing point between the two states." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dhanbad)", priceRange: "₹1,200–₹4,500/night", examples: ["Hotels across Dhanbad city"], description: "Most visitors day-trip from Dhanbad." },
+      { type: "DVC Guesthouses", priceRange: "₹1,000–₹2,500/night", examples: ["Damodar Valley Corporation guesthouses near the dam"], description: "Basic institutional stays for those wanting to overnight near the reservoir." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Dhanbad to Maithon", available: true },
+      { mode: "Boating", cost: "₹100–₹400", notes: "The main recreational activity on the reservoir", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Topchanchi Lake", distance: "~40 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1400, accommodation: 0, food: 400, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3200, accommodation: 1500, food: 800, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Maithon Dam Day Trip", morning: "Drive from Dhanbad to Maithon Dam.", afternoon: "Boating on the reservoir, views of the dam bridge.", evening: "Sunset over the reservoir hills.", stay: "A hotel in Dhanbad", meals: "Local snacks near the dam", tips: "Time your visit for the famous Maithon sunset — arrive with an hour or two of daylight left." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A well-known, established recreational site with boating operators and regular visitor footfall", "DVC institutional presence adds a managed feel to the dam area"],
+      precautions: ["Standard water-safety practices with boating operators", "Can be quieter on weekdays — visiting with others is sensible", "Limited facilities beyond the main dam and boating area"],
+      soloTips: ["Comfortable as a day visit, particularly on weekends when boating operators and other visitors are present"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dhanbad Police", number: "0326-2300100" }],
+      safeZones: ["The main dam viewing and boating area"],
+      avoidAreas: ["Isolated reservoir stretches away from the main visitor area"],
+    },
+    rating: 4.3,
+    reviews: 2200,
+    mustEat: ["Local snacks near the boating area", "Dhanbad-style street food"],
+    packingTips: ["A camera for the reservoir sunset", "Sun protection for the open water", "Cash for boating operators"],
+  },
+  {
+    id: "tilaiya-dam",
+    name: "Tilaiya Dam",
+    state: "Jharkhand",
+    tagline: "The First Damodar Valley Corporation Dam, Inaugurated in 1953",
+    description: "Tilaiya Dam, on the Barakar River in Koderma district, holds the distinction of being the first dam completed under the Damodar Valley Corporation project, part of the same post-independence multi-purpose river valley scheme that later produced Maithon, Panchet, and Konar dams. Its earthen embankment and masonry spillway sit within a genuinely scenic setting, the reservoir behind it now a popular boating destination with a small fleet of colourful tourist boats moored at a stepped jetty, drawing both locals and visitors for sunset outings on the water. As one of the pioneering projects of India's post-independence infrastructure push, Tilaiya carries a real historical weight — Prime Minister Jawaharlal Nehru personally visited the dam site during its construction in 1950 — alongside its present-day life as a straightforward, pleasant recreational spot.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TILAIYA_DAM.jpg/1280px-TILAIYA_DAM.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TILAIYA_DAM.jpg/1280px-TILAIYA_DAM.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TILAIYA_DAM.jpg/1280px-TILAIYA_DAM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/TILAIYA_DAMM.jpg/1280px-TILAIYA_DAMM.jpg",
+    ],
+    imageCredit: "Photos: Amandeepkumarr/Userulyralite9876 — Wikimedia Commons, CC BY-SA 4.0, both used directly on English Wikipedia's \"Tilaiya Dam\" article, categorized \"Tilaiya Dam\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "The first dam completed under the Damodar Valley Corporation, 1953" },
+      { name: "Colourful tourist boats at the stepped jetty" },
+      { name: "Reservoir sunset boating trips" },
+      { name: "A site of real post-independence infrastructure history" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Koderma district", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~3h drive", costRange: "₹4,000–₹12,000", tips: "Koderma is also reachable via Hazaribagh." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Koderma on the Grand Chord line — ~12-14h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "12h+ from Delhi", costRange: "₹500–₹2,500", tips: "Koderma station is a short drive from the dam." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Koderma, then to Tilaiya Dam", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from Koderma town", costRange: "₹500–₹1,200 taxi", tips: "An easy stop for those travelling the GT Road corridor near Koderma." },
+    ],
+    accommodation: [
+      { type: "Hotels (Koderma/Hazaribagh)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in the nearest towns"], description: "Most visitors day-trip from Koderma or Hazaribagh." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From Koderma to the dam", available: true },
+      { mode: "Boating", cost: "₹100–₹400", notes: "Colourful tourist boats at the jetty", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hazaribagh Wildlife Sanctuary", distance: "~65 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 450, accommodation: 0, food: 200, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 1500, food: 800, transport: 500, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tilaiya Dam Visit", morning: "Drive from Koderma to Tilaiya Dam.", afternoon: "Boating on the reservoir from the stepped jetty.", evening: "Sunset views over the water.", stay: "A hotel in Koderma or Hazaribagh", meals: "Local snacks near the dam", tips: "The jetty's colourful boats make for great photos, especially around golden hour." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["An established recreational site with boating operators and regular visitor footfall", "DVC institutional presence adds a managed feel"],
+      precautions: ["Standard water-safety practices with boating operators", "Can be quieter on weekdays — visiting with others is sensible"],
+      soloTips: ["Comfortable as a day visit, particularly on weekends"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Koderma Police", number: "06534-222233" }],
+      safeZones: ["The main dam and boating jetty area"],
+      avoidAreas: ["Isolated reservoir stretches away from the main visitor area"],
+    },
+    rating: 4.2,
+    reviews: 1500,
+    mustEat: ["Local snacks near the boating jetty", "Regional meals in Koderma"],
+    packingTips: ["A camera for the boats and sunset", "Sun protection for the open water", "Cash for boating operators"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
