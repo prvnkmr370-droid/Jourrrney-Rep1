@@ -44021,6 +44021,194 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Dogra cuisine in Patnitop", "Kahwa (Kashmiri spiced tea) for the cold"],
     packingTips: ["Warm layers — this is a high-altitude meadow", "Comfortable shoes for walking/riding", "Sunscreen — UV is strong at altitude"],
   },
+  {
+    id: "poonch-fort",
+    name: "Poonch Fort",
+    state: "Jammu and Kashmir (UT)",
+    tagline: "A 7,500-Square-Metre Fort Blending Mughal, Sikh, Dogra, and European Design",
+    description: "Poonch Fort, in Poonch town near the Line of Control, was built around 1713 during the Mughal-era Kashmir Subah by Raja Abdul Razak Khan and later expanded by Raja Rustam Khan, serving for over two centuries as both fortified residence and administrative seat for the rulers of Poonch, right up until the princely state's accession to India after 1947. The complex spans roughly 7,500 square metres of interconnected buildings arranged around open courtyards, and its architecture genuinely reflects the succession of powers that shaped it — Mughal, Sikh, Dogra, and colonial European influences layered into one structure, making it one of the most significant surviving pieces of the former semi-autonomous Poonch jagir. It stands today as a real, still largely intact architectural record of a border town's unusual, multi-power history, in a district that itself remains a genuinely distinctive part of the wider J&K story.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Poonch_qila.jpg/1280px-Poonch_qila.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Poonch_qila.jpg/1280px-Poonch_qila.jpg",
+    // Only one genuine photo of Poonch Fort found on Wikimedia Commons —
+    // searches for the fort under multiple names (Poonch fort/palace/qila,
+    // Rajgarh fort Poonch) otherwise return only 19th-century travel books
+    // and unrelated results. This single photo is confirmed genuine
+    // (explicitly captioned "Front view of the Poonch fort," CC0, linked to
+    // the fort's own Wikidata entry), so used alone rather than paired with
+    // an unrelated or unverified second image — same principle applied
+    // earlier to hari-niwas-palace, padri-bhaderwah, and raghunath-temple.
+    imageCredit: "Photo: 0Vinayak — Wikimedia Commons, CC0 (public domain).",
+    category: ["Heritage", "History"],
+    bestSeason: "March – November",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The fort's mixed Mughal, Sikh, Dogra, and European architecture" },
+      { name: "Interconnected courtyards across the ~7,500 sq m complex" },
+      { name: "Its history as the Poonch jagir's administrative seat" },
+      { name: "Poonch town's distinctive border-region character" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Jammu Airport (IXJ) — ~1h10m direct, then ~235 km to Poonch", fromMumbai: "~2.5h via Delhi", fromBangalore: "~4–5h via Delhi", duration: "1–5h plus a ~6h drive", costRange: "₹2,500–₹9,000", tips: "A long final approach — factor in a full extra day of travel from Jammu." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jammu Tawi — ~8–10h, then a long road journey to Poonch", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "8h+ from Delhi plus a ~6h drive", costRange: "₹400–₹2,500", tips: "Hire a cab from Jammu Tawi station for the onward journey." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH44 to Jammu, then to Poonch via Rajouri — ~16h+ total", fromMumbai: "—", fromBangalore: "—", duration: "16h+ from Delhi", costRange: "₹2,500–₹4,500 shared taxi / ₹9,000+ cab", tips: "Check current road and security conditions before travelling, given the border-proximity of the route." },
+    ],
+    accommodation: [
+      { type: "Budget Hotels (Poonch)", priceRange: "₹800–₹2,000/night", examples: ["Hotels in Poonch town"], description: "Basic stays close to the fort." },
+      { type: "Mid-Range Hotels (Rajouri/Poonch)", priceRange: "₹1,500–₹3,500/night", examples: ["Hotels in Poonch and Rajouri towns"], description: "Comfortable options in the wider Poonch-Rajouri belt." },
+      { type: "Hotels (Jammu)", priceRange: "₹3,000–₹8,000/night", examples: ["Hotels across Jammu city"], description: "Full-service options much further away in Jammu." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Poonch town", available: true },
+      { mode: "Local Taxi", cost: "₹500–₹1,500/day", notes: "For exploring Poonch town and nearby sights", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2200, accommodation: 1400, food: 450, transport: 250, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6000, accommodation: 4500, food: 800, transport: 500, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Fort & Poonch Town", morning: "Explore Poonch Fort's courtyards and architecture.", afternoon: "Walk through Poonch town.", evening: "Free.", stay: "A hotel in Poonch", meals: "Local Pahari and Dogra cuisine in Poonch", tips: "Check current local advisories before travelling, given the town's proximity to the Line of Control." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A genuine heritage site with local administrative presence", "Poonch town has an established local community and regular visitor footfall"],
+      precautions: ["Poonch district is close to the Line of Control — check current travel advisories before visiting", "Some areas near the border may have access restrictions; stick to the town and established sights"],
+      soloTips: ["Best visited with a local guide or as part of an organized trip given the border-region context"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "J&K Tourist Police, Jammu", number: "0191-2548881" }],
+      safeZones: ["The fort and central Poonch town"],
+      avoidAreas: ["Areas near the Line of Control without proper authorization"],
+    },
+    rating: 4.1,
+    reviews: 480,
+    mustEat: ["Pahari and Dogra cuisine in Poonch town", "Local tea stalls in the bazaar"],
+    packingTips: ["Comfortable walking shoes", "Valid photo ID (recommended for this border-proximity region)", "Check current local advisories before departure"],
+  },
+  {
+    id: "doodhpathri",
+    name: "Doodhpathri",
+    state: "Jammu and Kashmir (UT)",
+    tagline: "The \"Valley of Milk,\" Named for a River That Runs Milky White",
+    description: "Doodhpathri sits at about 2,730 metres, some 42 km from Srinagar, a broad, bowl-shaped meadow in the Pir Panjal range ringed by snow-capped peaks and forests of deodar and pine. Its name — genuinely earned rather than just poetic — comes from the Shaliganga River that runs through it, whose clear, fast-moving water takes on a milky-white cast from a distance, giving the valley its \"Valley of Milk\" identity. The meadow itself is used through summer for grazing, with shepherds and their flocks a common sight across the grassy bowl, and its comparative remoteness relative to Gulmarg or Pahalgam has kept it genuinely quieter — a real draw for travellers looking for Kashmir's meadow scenery without the biggest crowds.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg/1280px-Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg/1280px-Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg/1280px-Doodhpathri_southwest_Jammu_Kashmir_India_%285%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Doude_pather_waters.jpg/1280px-Doude_pather_waters.jpg",
+    ],
+    imageCredit: "Photos: Ankur P (CC BY-SA 2.0, \"depicts Doodhpathri\") and MDG27Q (CC BY-SA 4.0, \"Stream near Doude pather (Doodhpathri)\") — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "April – October",
+    duration: "1 day",
+    highlights: [
+      { name: "The bowl-shaped meadow ringed by pine and deodar forest" },
+      { name: "The milky-white Shaliganga River" },
+      { name: "Shepherd flocks grazing across the grassland" },
+      { name: "A quieter alternative to Gulmarg or Pahalgam" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Srinagar Airport (SXR) — ~1h20m direct, then ~42 km to Doodhpathri", fromMumbai: "~2.5h via Delhi", fromBangalore: "~4–5h via Delhi", duration: "1–5h plus a ~1.5–2h drive", costRange: "₹3,000–₹10,000", tips: "A comfortable day trip from Srinagar." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jammu Tawi — ~8–10h, then road via Srinagar", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "8h+ from Delhi plus a long onward drive", costRange: "₹400–₹2,500", tips: "Flying into Srinagar directly is far more practical." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH44 to Srinagar, then onward — ~19–20h total", fromMumbai: "—", fromBangalore: "—", duration: "19h+ from Delhi", costRange: "₹2,000–₹4,000 shared taxi / ₹8,500+ cab", tips: "The final stretch is a scenic but winding mountain road — allow extra time." },
+    ],
+    accommodation: [
+      { type: "Budget Guesthouses", priceRange: "₹1,000–₹2,500/night", examples: ["Simple guesthouses near the meadow"], description: "Basic stays for those not day-tripping from Srinagar." },
+      { type: "Mid-Range Hotels (Srinagar)", priceRange: "₹2,500–₹6,000/night", examples: ["Hotels across Srinagar"], description: "Most visitors day-trip from Srinagar." },
+      { type: "Houseboats (Srinagar)", priceRange: "₹2,500–₹8,000/night", examples: ["Dal Lake houseboats"], description: "A scenic Srinagar base for exploring the wider valley." },
+    ],
+    localTransport: [
+      { mode: "Pony Ride", cost: "₹300–₹700", notes: "For exploring the wider meadow", available: true },
+      { mode: "Shared Taxi", cost: "₹150–₹350 per seat", notes: "Runs from Srinagar/Budgam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Yusmarg", distance: "~35 km", type: "Meadow", isHidden: true, id: "yusmarg" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 6000, food: 1200, transport: 800, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Meadow Day Trip", morning: "Drive from Srinagar to Doodhpathri.", afternoon: "Walk or pony ride across the meadow along the Shaliganga River.", evening: "Return to Srinagar.", stay: "A hotel or houseboat in Srinagar", meals: "Kashmiri cuisine locally", tips: "Less crowded than Gulmarg or Pahalgam — a good pick for a quieter meadow experience." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-known day-trip destination with regular seasonal tourist traffic", "Local shepherd and guide community familiar with visitors"],
+      precautions: ["Weather at this altitude can shift quickly — carry warm layers", "Limited facilities on-site — plan accordingly"],
+      soloTips: ["Comfortable as a day trip; less crowded than major meadows means fewer other travellers around, so going with a group or guide is sensible"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "J&K Tourist Police, Srinagar", number: "0194-2452690" }],
+      safeZones: ["The main meadow area during daylight hours"],
+      avoidAreas: ["Remote forest edges away from the main meadow"],
+    },
+    rating: 4.4,
+    reviews: 890,
+    mustEat: ["Kashmiri kahwa and local snacks", "Wazwan on a Srinagar stopover"],
+    packingTips: ["Warm layers even in summer", "Sturdy footwear for meadow walks", "A camera for the river and meadow views"],
+  },
+  {
+    id: "yusmarg",
+    name: "Yusmarg",
+    state: "Jammu and Kashmir (UT)",
+    tagline: "An Alpine Meadow 47km From Srinagar, With a Blue Lake Hidden in the Pines",
+    description: "Yusmarg sits at about 2,396 metres, some 47 km from Srinagar, an alpine valley of pine-and-fir meadow ringed by snow-clad peaks — genuinely close enough to Srinagar for an easy day trip, yet quiet and open enough to make longer stays worthwhile. A river locally called Doodh Ganga, its mild white foam echoing the naming logic seen elsewhere in the valley, cuts through flower-strewn meadowland good for easy walks. About 4 km downhill through dense forest sits Nilnag Lake, a genuinely striking, deep-blue lake at 2,390 metres cradled by hills, connected to Yusmarg by a forest trail and itself a starting point for a longer 13 km uphill trek to further scenic spots. Together the meadow and lake make Yusmarg one of the more complete, still comparatively uncrowded outdoor destinations within easy reach of Srinagar.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Yusmarg%2C_beautiful_valley_in_Kashmir.jpg/1280px-Yusmarg%2C_beautiful_valley_in_Kashmir.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Yusmarg%2C_beautiful_valley_in_Kashmir.jpg/1280px-Yusmarg%2C_beautiful_valley_in_Kashmir.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Yusmarg%2C_beautiful_valley_in_Kashmir.jpg/1280px-Yusmarg%2C_beautiful_valley_in_Kashmir.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Nilnag_Lake.jpg/1280px-Nilnag_Lake.jpg",
+    ],
+    imageCredit: "Photos: Debashritaiitmandi (CC BY-SA 4.0, categorized \"Yousmarg\") and Suhail Skindar Sofi (CC BY-SA 4.0, Wikimedia Commons Valued Image, GPS-confirmed 33°51'20\"N 74°41'33\"E, used directly on English Wikipedia's Nilnag Lake article) — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "April – October",
+    duration: "1 day (or overnight for the Nilnag Lake trek)",
+    highlights: [
+      { name: "Pine-and-fir alpine meadows ringed by snow-clad peaks" },
+      { name: "The Doodh Ganga stream through flower-strewn meadowland" },
+      { name: "Nilnag Lake, 4 km downhill through forest" },
+      { name: "The onward 13 km trek from Nilnag to further scenic spots" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Srinagar Airport (SXR) — ~1h20m direct, then ~47 km to Yusmarg", fromMumbai: "~2.5h via Delhi", fromBangalore: "~4–5h via Delhi", duration: "1–5h plus a ~2h drive", costRange: "₹3,000–₹10,000", tips: "A comfortable day trip from Srinagar." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jammu Tawi — ~8–10h, then road via Srinagar", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "8h+ from Delhi plus a long onward drive", costRange: "₹400–₹2,500", tips: "Flying into Srinagar directly is far more practical." },
+      { mode: "Road", icon: "🚗", fromDelhi: "NH44 to Srinagar, then onward — ~19–20h total", fromMumbai: "—", fromBangalore: "—", duration: "19h+ from Delhi", costRange: "₹2,000–₹4,000 shared taxi / ₹8,500+ cab", tips: "Regular tourist taxis run from Srinagar to Yusmarg." },
+    ],
+    accommodation: [
+      { type: "Budget Guesthouses", priceRange: "₹1,000–₹2,500/night", examples: ["Guesthouses near the meadow"], description: "Basic stays for those not day-tripping from Srinagar." },
+      { type: "Mid-Range Hotels (Srinagar)", priceRange: "₹2,500–₹6,000/night", examples: ["Hotels across Srinagar"], description: "Most visitors day-trip from Srinagar." },
+      { type: "Houseboats (Srinagar)", priceRange: "₹2,500–₹8,000/night", examples: ["Dal Lake houseboats"], description: "A scenic Srinagar base for the wider valley." },
+    ],
+    localTransport: [
+      { mode: "Pony Ride", cost: "₹400–₹900", notes: "Popular for the meadow and toward Nilnag Lake", available: true },
+      { mode: "Shared Taxi", cost: "₹150–₹350 per seat", notes: "Runs from Srinagar/Budgam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Doodhpathri", distance: "~35 km", type: "Meadow", isHidden: true, id: "doodhpathri" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 6000, food: 1200, transport: 800, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Meadow & Nilnag Lake", morning: "Drive from Srinagar to Yusmarg, explore the meadow.", afternoon: "Trek or pony ride 4 km downhill to Nilnag Lake.", evening: "Return to Srinagar.", stay: "A hotel or houseboat in Srinagar", meals: "Kashmiri cuisine locally", tips: "Combine with a stop at Doodhpathri if travelling with more time — both are quieter alternatives to Gulmarg." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-known day-trip destination with regular seasonal tourist traffic", "Local pony and guide operators familiar with visitors"],
+      precautions: ["Weather at this altitude can shift quickly — carry warm layers", "The Nilnag Lake trail passes through dense forest — best with a guide"],
+      soloTips: ["Comfortable as a day trip to the main meadow; take a guide for the Nilnag Lake forest trail"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "J&K Tourist Police, Srinagar", number: "0194-2452690" }],
+      safeZones: ["The main meadow area during daylight hours"],
+      avoidAreas: ["The Nilnag forest trail alone after daylight hours"],
+    },
+    rating: 4.5,
+    reviews: 1100,
+    mustEat: ["Kashmiri kahwa and local snacks", "Wazwan on a Srinagar stopover"],
+    packingTips: ["Warm layers even in summer", "Sturdy footwear for the walk to Nilnag Lake", "A camera for the meadow and lake views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
