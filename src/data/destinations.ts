@@ -49840,6 +49840,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the stadium exterior", "Check match schedules if wanting to see it in use"],
   },
 
+  {
+    id: "city-park-bokaro",
+    name: "City Park, Bokaro Steel City",
+    state: "Jharkhand",
+    tagline: "A Sprawling Green Space at the Heart of India's Steel-Township Planning",
+    description: "City Park sits in Sector 1 of Bokaro Steel City, one of the planned green spaces built into the layout of this steel-township city from its earliest development — a genuinely sizeable, well-forested park with palm-lined avenues, shaded walking paths, and enough open canopy to feel like a proper forest pocket within an industrial city. A pond within the park draws birdlife, including pond herons, giving it a modest wildlife-watching dimension alongside its role as a straightforward recreational green space for Bokaro residents. As one of the defining public spaces in a city built almost entirely around its steel plant, City Park offers a genuine sense of how deliberately Bokaro's planners built breathing room into the industrial township.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/City_Park_-_Bokaro_Steel_City.jpg/1280px-City_Park_-_Bokaro_Steel_City.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/City_Park_-_Bokaro_Steel_City.jpg/1280px-City_Park_-_Bokaro_Steel_City.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/City_Park_-_Bokaro_Steel_City.jpg/1280px-City_Park_-_Bokaro_Steel_City.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Way_-_City_Park%2C_Bokaro_%22Steel%22_City.jpg/1280px-Way_-_City_Park%2C_Bokaro_%22Steel%22_City.jpg",
+    ],
+    imageCredit: "Photos: Asifiqbal92 (CC BY-SA 4.0, description confirms \"City Park Sector 1, Bokaro Steel City\") and Prateek Rungta (CC BY 2.0, Flickr-reviewed, GPS-confirmed 23°39'19.73\"N 86°09'20.99\"E) — Wikimedia Commons, both categorized \"Bokaro Steel City park\".",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Palm-lined avenues and shaded forest walking paths" },
+      { name: "A pond drawing pond herons and other birdlife" },
+      { name: "One of Bokaro's defining planned green spaces" },
+      { name: "A genuine forest pocket within an industrial steel township" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Bokaro, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Bokaro is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Bokaro Steel City — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Bokaro station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Bokaro Steel City, Sector 1", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Bokaro", costRange: "₹100–₹300 local cab", tips: "An easy, walkable stop within the planned township." },
+    ],
+    accommodation: [
+      { type: "Hotels (Bokaro)", priceRange: "₹1,200–₹4,000/night", examples: ["Hotels across Bokaro Steel City"], description: "The park sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in Bokaro Steel City", available: true },
+      { mode: "Walking", cost: "Free", notes: "Easily walkable within the sector layout", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jawaharlal Nehru Biological Park", distance: "~5 km", type: "Zoo", isHidden: false, id: "jawaharlal-nehru-biological-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "City Park Walk", morning: "Walk through City Park's shaded paths and pond area.", afternoon: "Continue to Jawaharlal Nehru Biological Park nearby.", evening: "Return to your hotel.", stay: "A hotel in Bokaro", meals: "Local snacks near the park", tips: "A relaxed, easy walk — worth combining with the nearby biological park for a fuller day." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A well-maintained planned city park with regular local footfall", "Central location within the Bokaro Steel City township keeps it accessible"],
+      precautions: ["Standard city-park courtesy — nothing specific flagged"],
+      soloTips: ["Comfortable solo during daylight hours given the steady local footfall"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Bokaro Police", number: "06542-233333" }],
+      safeZones: ["The entire park during opening hours"],
+      avoidAreas: ["None significant — a well-managed planned city park"],
+    },
+    rating: 4.2,
+    reviews: 980,
+    mustEat: ["Local snacks near the park", "Regional meals in Bokaro"],
+    packingTips: ["Comfortable walking shoes", "Binoculars for birdwatching at the pond", "A camera for the palm-lined avenues"],
+  },
+  {
+    id: "jawaharlal-nehru-biological-park",
+    name: "Jawaharlal Nehru Biological Park",
+    state: "Jharkhand",
+    tagline: "Bokaro's Zoo, With a Real Leopard Population Among Its Residents",
+    description: "Jawaharlal Nehru Biological Park in Bokaro Steel City is the township's dedicated zoo, its landscaped entrance drive leading past manicured lawns and flower beds toward enclosures that include a genuinely well-kept leopard population among the park's residents. As with Bokaro's City Park nearby, the biological park reflects the same deliberate civic planning that shaped the whole steel township, offering local families and visitors a proper zoo experience within a city otherwise defined by its industrial plant. The park draws steady footfall from Bokaro residents and visiting families, and its leopard enclosures in particular have become a genuine draw for wildlife photography, given how visibly active and well-maintained the big cat areas are kept.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Leopard_in_Bokaro-002.jpg/1280px-Leopard_in_Bokaro-002.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Leopard_in_Bokaro-002.jpg/1280px-Leopard_in_Bokaro-002.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Leopard_in_Bokaro-002.jpg/1280px-Leopard_in_Bokaro-002.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Jawaharlal_Nehru_Biological_Park%2C_Bokaro_Steel_City.jpg",
+    ],
+    imageCredit: "Photos: SUBHODEEP CHANDRA (CC BY-SA 4.0, GPS-confirmed 23°40'53.4\"N 86°09'12.96\"E, description confirms \"Leopard in Jawaharlal Nehru Biological Park, Jharkhand, India\") and Neelabh2007 (public domain, used directly on English Wikipedia's \"Jawaharlal Nehru Biological Park\" article and Wikivoyage's \"Bokaro Steel City\" page) — Wikimedia Commons.",
+    category: ["Wildlife"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A well-kept leopard population, a genuine wildlife-photography draw" },
+      { name: "Landscaped entrance grounds and flower beds" },
+      { name: "A proper zoo experience within the Bokaro steel township" },
+      { name: "A popular local family destination" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Bokaro, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Bokaro is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Bokaro Steel City — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Bokaro station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Bokaro Steel City", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Bokaro", costRange: "₹150–₹400 local cab", tips: "Easily combined with City Park in the same day." },
+    ],
+    accommodation: [
+      { type: "Hotels (Bokaro)", priceRange: "₹1,200–₹4,000/night", examples: ["Hotels across Bokaro Steel City"], description: "Most visitors day-trip from central Bokaro." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Bokaro Steel City", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "City Park, Bokaro Steel City", distance: "~5 km", type: "City Park", isHidden: false, id: "city-park-bokaro" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 200, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 400, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 800, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jawaharlal Nehru Biological Park Visit", morning: "Explore the leopard and other animal enclosures.", afternoon: "Continue to City Park nearby.", evening: "Return to your hotel.", stay: "A hotel in Bokaro", meals: "Local snacks near the park", tips: "A great family option, well worth combining with a City Park visit in the same day." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A managed public zoo with regular staff and family footfall", "Central Bokaro location keeps it accessible and well-monitored"],
+      precautions: ["Standard zoo-visit courtesy — follow posted safety guidelines around enclosures", "Can get crowded on weekends and holidays"],
+      soloTips: ["Comfortable solo during opening hours given the steady visitor traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Bokaro Police", number: "06542-233333" }],
+      safeZones: ["The entire park along marked visitor paths"],
+      avoidAreas: ["None — a well-managed, fenced public facility"],
+    },
+    rating: 4.1,
+    reviews: 1600,
+    mustEat: ["Local snacks and ice cream from park vendors", "Regional meals in Bokaro"],
+    packingTips: ["Comfortable walking shoes", "A camera for the leopard enclosures", "Sun protection for the open walkways"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
