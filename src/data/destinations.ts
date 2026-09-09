@@ -47579,6 +47579,127 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Non-slip footwear for the rugged rocks", "Check seasonal flow before travelling", "Water and sun protection"],
   },
 
+  {
+    id: "parasnath-hill-shikharji",
+    name: "Parasnath Hill (Shikharji)",
+    state: "Jharkhand",
+    tagline: "Jainism's Holiest Pilgrimage — Where 20 of 24 Tirthankaras Attained Liberation",
+    description: "Parasnath Hill, known to Jains as Shikharji or Sammed Shikharji, is genuinely the most sacred pilgrimage site in Jainism — the place where 20 of the religion's 24 Tirthankaras are believed to have attained moksha (liberation), making it holier in Jain tradition than any other single site. At 1,350 metres, it's also Jharkhand's highest peak, its ridgeline dotted with dozens of small marble shrines called Tonks, each marking the specific spot associated with a particular Tirthankara's liberation, connected by a demanding trekking circuit that pilgrims traditionally complete barefoot. The full pilgrimage circuit covers roughly 27 km of hill trails starting from the base town of Madhuban, a genuinely serious undertaking that typically takes a full day, rewarding those who complete it with sweeping views across the ridge and a profound sense of having walked one of the most consequential pilgrimage routes in Jain history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shikharji_Parasnath_Giridih.jpg/1280px-Shikharji_Parasnath_Giridih.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shikharji_Parasnath_Giridih.jpg/1280px-Shikharji_Parasnath_Giridih.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shikharji_Parasnath_Giridih.jpg/1280px-Shikharji_Parasnath_Giridih.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/View_of_Shikharji_from_Adinatha_Tonk.jpg/1280px-View_of_Shikharji_from_Adinatha_Tonk.jpg",
+    ],
+    imageCredit: "Photos: CaptVijay (public domain, used on 25+ language Wikipedias including the primary English \"Shikharji\", \"Parasnath\", and \"Jainism\" articles) and Nizil Shah (CC BY-SA 4.0, part of the \"Wiki Treks Parasnath Hill\" project) — Wikimedia Commons, both categorized \"Shikharji\".",
+    category: ["Religious", "Adventure"],
+    bestSeason: "October – March",
+    duration: "Full day (the pilgrimage circuit)",
+    highlights: [
+      { name: "The Tonks marking 20 Tirthankaras' liberation sites" },
+      { name: "The ~27 km trekking pilgrimage circuit from Madhuban" },
+      { name: "Jharkhand's highest peak at 1,350 metres" },
+      { name: "Sweeping ridgeline views across the surrounding hills" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Giridih or Parasnath railway station area", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Parasnath railway station is the most direct gateway." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Parasnath railway station, on the Howrah-Delhi line — ~14-16h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Parasnath station is named specifically for this pilgrimage — a short drive from Madhuban base." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road, then to Madhuban base town", fromMumbai: "—", fromBangalore: "—", duration: "~20min from Parasnath station to Madhuban", costRange: "₹300–₹800 local cab", tips: "Start the trek very early — the full circuit genuinely takes most of a day." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (Madhuban)", priceRange: "₹300–₹1,000/night", examples: ["Numerous Jain pilgrim rest houses in Madhuban"], description: "Built specifically for pilgrimage footfall, often simple but well-run." },
+      { type: "Hotels (Madhuban/Giridih)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Madhuban and nearby Giridih"], description: "A more comfortable option for a rest day before or after the trek." },
+    ],
+    localTransport: [
+      { mode: "Trekking (main pilgrimage circuit)", cost: "Free (porters/dolis available for hire)", notes: "The traditional way to complete the Tonks circuit", available: true },
+      { mode: "Doli/Palanquin", cost: "₹1,500–₹4,000", notes: "Available for those unable to trek the full distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Usri Falls", distance: "~35 km", type: "Waterfall", isHidden: false, id: "usri-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 600, accommodation: 250, food: 250, transport: 80, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1700, accommodation: 900, food: 450, transport: 200, activities: 150 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shikharji Pilgrimage Circuit", morning: "Begin the trek from Madhuban well before dawn, visiting the Tonks along the ridge.", afternoon: "Continue the circuit, pausing at key shrines including Parasnath Tonk.", evening: "Complete the descent back to Madhuban, genuinely exhausted but rewarded.", stay: "A dharamshala in Madhuban", meals: "Simple satvik meals at Madhuban dharamshalas", tips: "This is a serious full-day trek, not a casual walk — start before sunrise, carry water, and consider a doli if needed partway through." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A major, continuously active pilgrimage site with heavy footfall of Jain pilgrims from across India", "Well-established local infrastructure and porter services used to pilgrim traffic"],
+      precautions: ["A genuinely demanding full-day trek — physical preparation matters", "Limited facilities along the trail itself beyond the Tonks", "Start early to avoid completing the descent after dark"],
+      soloTips: ["Very doable solo given the steady stream of pilgrims on the trail, but joining a group for the long trek adds both safety and camaraderie"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Giridih Police", number: "06532-222233" }],
+      safeZones: ["The main pilgrimage trail and all Tonks"],
+      avoidAreas: ["Off-trail forest areas away from the marked pilgrimage path"],
+    },
+    rating: 4.7,
+    reviews: 3200,
+    mustEat: ["Simple Jain satvik meals at Madhuban dharamshalas", "Local sweets from pilgrim-town shops"],
+    packingTips: ["Sturdy trekking shoes (many pilgrims go barefoot by tradition, but shoes are sensible for casual visitors)", "Plenty of water and energy snacks for the full-day circuit", "A headlamp for a pre-dawn start", "Warm layers, as hilltop mornings are cold"],
+  },
+  {
+    id: "naulakha-temple-deoghar",
+    name: "Naulakha Temple, Deoghar",
+    state: "Jharkhand",
+    tagline: "A Rajasthani-Style Temple Complex Named for Its Nine-Lakh-Rupee Budget",
+    description: "The Naulakha Temple sits on the outskirts of Deoghar, its name a genuine piece of local etymology — \"nau\" meaning nine and \"lakh\" meaning one hundred thousand, together referring to the roughly 0.9 million rupees it reportedly cost to build, a striking sum for its time. The temple's architecture stands apart from Deoghar's more traditional Nagara-style shrines, built instead in a distinctly Rajasthani style with domed chhatris, ornate stone balustrades, and a grand double staircase leading up to the main structure — a genuinely different visual character from the pyramidal shikharas found at nearby Baidyanath Dham. Now showing its age, with moss and weathering across the stonework, the complex retains a quiet, atmospheric charm, less crowded than Deoghar's central pilgrimage sites and worth the short trip out for its distinctive architecture alone.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg/1280px-Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg/1280px-Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg/1280px-Naulakkha_Temple_-_Deoghar_-_Jharkhand_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Naulakkha_Temple_-_Deoghar_-_Jharkhand_%284%29.jpg/1280px-Naulakkha_Temple_-_Deoghar_-_Jharkhand_%284%29.jpg",
+    ],
+    imageCredit: "Photos: Rajashree Talukdar — Wikimedia Commons, CC BY-SA 4.0, both categorized \"Naulakkha Temple\", used on Bengali, Santali, and Telugu Wikipedia's \"Deoghar\" articles, with a detailed file description confirming the temple's history and name origin.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "Distinctive Rajasthani-style domed chhatris and staircase" },
+      { name: "The temple's namesake nine-lakh-rupee construction budget" },
+      { name: "A quieter, less-crowded alternative to central Deoghar sites" },
+      { name: "Weathered, atmospheric stonework on the outskirts of town" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then a short drive", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~20min drive", costRange: "₹4,000–₹13,000", tips: "Easily combined with a Baidyanath Dham visit in the same trip." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jasidih Junction — ~15-17h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Jasidih or central Deoghar." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH19/NH2 through Bihar to Deoghar", fromMumbai: "—", fromBangalore: "—", duration: "~20min from central Deoghar", costRange: "₹150–₹400 local cab", tips: "A quick, worthwhile add-on to a Deoghar pilgrimage circuit." },
+    ],
+    accommodation: [
+      { type: "Hotels (Deoghar)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Deoghar town"], description: "The temple sits a short drive from most Deoghar hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Baidyanath Dham", distance: "~4 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Naulakha Temple Visit", morning: "Visit the Naulakha Temple's distinctive architecture.", afternoon: "Continue to Baidyanath Dham, just a few km away.", evening: "Return to your hotel.", stay: "A hotel in Deoghar", meals: "Local snacks near the temple", tips: "A quick, quiet stop — well worth combining with the bigger Baidyanath Dham pilgrimage visit." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A well-known heritage site with steady visitor footfall, especially from photography and heritage enthusiasts", "Close to central Deoghar, keeping it accessible"],
+      precautions: ["Quieter than Deoghar's main pilgrimage sites — fewer crowds mean less foot traffic overall", "Some weathered stonework and stairs warrant normal caution"],
+      soloTips: ["Comfortable solo during daylight hours given its accessible location within Deoghar"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Deoghar Police", number: "06432-232233" }],
+      safeZones: ["The main temple complex and grounds"],
+      avoidAreas: ["None specifically flagged — a quiet, accessible heritage site"],
+    },
+    rating: 4.0,
+    reviews: 380,
+    mustEat: ["Local snacks near the temple", "Peda and sweets in Deoghar"],
+    packingTips: ["Modest clothing for temple visits", "A camera for the distinctive architecture", "Comfortable footwear for the stairs"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
