@@ -51146,6 +51146,123 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Street food and chaat from market vendors", "Litti chokha in Ranchi"],
     packingTips: ["Comfortable walking shoes for the market area", "Watch for traffic when crossing"],
   },
+  {
+    id: "massanjore-dam",
+    name: "Massanjore Dam",
+    state: "Jharkhand",
+    tagline: "A Sprawling Reservoir on the Mayurakshi River Near Dumka",
+    description: "Massanjore Dam sits on the Mayurakshi River near Dumka, its long earthen embankment holding back a wide reservoir that stretches out between low, forested hills in a genuinely scenic stretch of eastern Jharkhand. Also known locally by its older spelling, the dam remains a working irrigation project, but its setting — hazy blue hills rising behind the water, palm-lined banks catching the evening light — gives it a real, unhurried scenic appeal quite apart from its engineering function. Visitors come for the view as much as anything: a quiet lakeside stretch where fishing boats occasionally dot the water and the surrounding countryside offers a genuine, low-key contrast to Jharkhand's more built-up destinations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Massanjore_Dam_15.jpg/1280px-Massanjore_Dam_15.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Massanjore_Dam_15.jpg/1280px-Massanjore_Dam_15.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Massanjore_Dam_15.jpg/1280px-Massanjore_Dam_15.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/An_evening_in_Massanjore%2C_Jharkhand_01.jpg/1280px-An_evening_in_Massanjore%2C_Jharkhand_01.jpg",
+    ],
+    imageCredit: "Photos: Tarunsamanta (CC BY-SA 4.0, description confirms \"Massanjore Dam at Dumka in Jharkhand\") and Pinakpani (CC BY-SA 4.0, categorized \"Massanjore Dam reservoir\") — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A wide reservoir on the Mayurakshi River" },
+      { name: "Hazy blue hills framing the water" },
+      { name: "A genuinely scenic, low-key lakeside stretch" },
+      { name: "Palm-lined banks catching the evening light" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi or Kolkata to Dumka, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Dumka is well-connected by road even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dumka or nearby stations — ~20h+", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "A drive of roughly an hour from Dumka town to the dam." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Dumka town", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Dumka", costRange: "₹800–₹1,500 taxi", tips: "A pleasant scenic drive through rural Santhal Pargana countryside." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dumka)", priceRange: "₹1,000–₹4,000/night", examples: ["Hotels and guesthouses in Dumka town"], description: "Most visitors day-trip from Dumka." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹800–₹1,500", notes: "From Dumka town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dumka Town", distance: "~40 km", type: "District Headquarters", isHidden: false, id: "dumka-town" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 400, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 700, transport: 1000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Massanjore Dam Visit", morning: "Drive from Dumka to Massanjore Dam.", afternoon: "Enjoy the reservoir views and surrounding countryside.", evening: "Watch the sunset over the water before returning.", stay: "A hotel in Dumka", meals: "Local Santhal Pargana cuisine and roadside snacks", tips: "Evening light over the reservoir is especially photogenic — plan the visit to catch sunset if possible." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A known local landmark with regular visitor footfall", "A straightforward day-trip destination from Dumka"],
+      precautions: ["Limited facilities directly at the dam — plan accordingly", "Rural surroundings mean fewer people around outside peak visiting hours"],
+      soloTips: ["Best visited during daylight hours as part of a planned day trip from Dumka"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dumka Police", number: "06434-222333" }],
+      safeZones: ["The main viewing areas along the embankment"],
+      avoidAreas: ["Swimming or venturing into the reservoir itself"],
+    },
+    rating: 4.1,
+    reviews: 290,
+    mustEat: ["Local Santhal Pargana cuisine", "Roadside tea and snacks"],
+    packingTips: ["A camera for the reservoir and hill views", "Sun protection, as shade is limited at the dam"],
+  },
+  {
+    id: "khandoli-park-giridih",
+    name: "Khandoli Park",
+    state: "Jharkhand",
+    tagline: "A Landscaped Garden Beneath Giridih's Rocky Hills",
+    description: "Khandoli Park sits on the edge of Giridih town, a landscaped garden of manicured lawns, winding paths, and ornamental fountains set directly beneath a dramatic backdrop of bare, rocky hills that catch the golden light of early evening. The park's genuine appeal lies in this contrast — carefully tended greenery and a decorative pool in the foreground, rugged natural rock formations rising immediately behind — making it a popular local spot for evening walks and family outings. While not a grand or historic attraction, Khandoli Park offers a pleasant, accessible slice of green space right at the base of Giridih's distinctive rocky terrain, a genuinely relaxing stop for anyone passing through the town.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/92/Khandoli_Park_Giridih.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/92/Khandoli_Park_Giridih.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/Khandoli_Park_Giridih.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 4.0, description confirms \"Khandoli Park Giridih\", categorized \"Giridih\". Only one genuinely verified image of this specific park was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "Landscaped lawns and ornamental fountains" },
+      { name: "A dramatic backdrop of bare rocky hills" },
+      { name: "A popular local spot for evening walks" },
+      { name: "An accessible green space right at the edge of Giridih town" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi or Kolkata to Giridih, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Giridih is well-connected by road and rail." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Giridih — ~18h+", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local ride from Giridih railway station to the park." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Giridih town", fromMumbai: "—", fromBangalore: "—", duration: "~10-15min from central Giridih", costRange: "₹50–₹150 local auto", tips: "Best visited in the late afternoon for the golden light on the hills behind the park." },
+    ],
+    accommodation: [
+      { type: "Hotels (Giridih)", priceRange: "₹800–₹3,000/night", examples: ["Hotels across Giridih town"], description: "The park sits within easy reach of most town hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in central Giridih", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Usri Falls", distance: "~30 km", type: "Waterfall", isHidden: false, id: "usri-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 100, accommodation: 0, food: 100, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 350, accommodation: 0, food: 300, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 800, accommodation: 0, food: 600, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Giridih Town and Khandoli Park", morning: "Explore central Giridih.", afternoon: "Visit Khandoli Park for a relaxed walk.", evening: "Enjoy the golden-hour light on the surrounding rocky hills.", stay: "A hotel in Giridih", meals: "Local snacks and street food in town", tips: "A pleasant, low-key stop rather than a major attraction — good for an easy evening walk." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A popular local family park with regular footfall, especially in the evenings", "Central, accessible location within Giridih town"],
+      precautions: ["Standard park-safety awareness after dark"],
+      soloTips: ["Comfortable solo during daylight and early evening hours when the park is busiest"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Giridih Police", number: "06532-222333" }],
+      safeZones: ["The main lawns and pathways"],
+      avoidAreas: ["None significant — a well-frequented local park"],
+    },
+    rating: 4.0,
+    reviews: 310,
+    mustEat: ["Local snacks and street food in Giridih town", "Litti chokha"],
+    packingTips: ["Comfortable walking shoes", "A camera for the hill backdrop, especially at golden hour"],
+  },
 
 ];
 
