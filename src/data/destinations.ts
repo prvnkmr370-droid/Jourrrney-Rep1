@@ -49246,6 +49246,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy, non-slip footwear", "A camera for the bamboo bridge and cascade", "Water and sun protection"],
   },
 
+  {
+    id: "ranchi-lake",
+    name: "Ranchi Lake",
+    state: "Jharkhand",
+    tagline: "A Central City Lake Watched Over by a Swami Vivekananda Statue",
+    description: "Ranchi Lake sits right in the heart of the city, its calm water visible from the slopes of nearby Pahari Mandir hill and crossed by a road bridge that keeps it woven into everyday city life rather than tucked away as a separate attraction. A statue of Swami Vivekananda stands watch over the water on a small platform near the shore, and the lake is a genuine local gathering spot at dusk, when fishermen work from small rafts and the sky over the water turns shades of orange and pink. As one of Ranchi's oldest and most central water bodies, the lake offers a straightforward, unhurried counterpoint to the city's busier temple and market circuits — a place locals simply live alongside rather than visit as tourists.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ranchi_lake.jpg/1280px-Ranchi_lake.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ranchi_lake.jpg/1280px-Ranchi_lake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ranchi_lake.jpg/1280px-Ranchi_lake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ranchi_9226.JPG/1280px-Ranchi_9226.JPG",
+    ],
+    imageCredit: "Photos: Shubjt (CC BY-SA 4.0, depicts \"lake\"/\"Swami Vivekananda\"/\"Ranchi\", categorized \"Sunsets of Jharkhand\") and Biswarup Ganguly (CC BY 3.0/GFDL, description confirms \"Ranchi from Ranchi Hill, Ranchi lake is visible\", categorized \"Lakes of Jharkhand\") — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The Swami Vivekananda statue overlooking the water" },
+      { name: "A genuine local sunset gathering spot" },
+      { name: "Views of the lake from nearby Pahari Mandir hill" },
+      { name: "A central, everyday part of Ranchi city life" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, an easy add-on to any city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within central Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~10-15min from central Ranchi", costRange: "₹100–₹250 local cab", tips: "Combine with a Pahari Mandir visit for views of the lake from above." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The lake sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹250", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Walking", cost: "Free", notes: "Easily walkable from many central Ranchi neighborhoods", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pahari Mandir (Ranchi Hill)", distance: "~2 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ranchi Lake Evening Walk", morning: "Explore central Ranchi sights.", afternoon: "Climb Pahari Mandir for lake views from above.", evening: "Sunset walk along Ranchi Lake.", stay: "A hotel in Ranchi", meals: "Local snacks near the lake", tips: "Sunset is the best time to visit, when fishermen are out and the sky colours the water." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A central, well-trafficked city landmark with constant local footfall, especially at sunset", "Central location keeps it accessible and well-lit"],
+      precautions: ["Standard city-waterfront courtesy — nothing specific flagged", "Can get crowded during evening hours"],
+      soloTips: ["Comfortable solo given the steady stream of local visitors and central location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main lakeside walking areas"],
+      avoidAreas: ["None significant — a well-trafficked central city lake"],
+    },
+    rating: 4.0,
+    reviews: 1400,
+    mustEat: ["Local snacks near the lake", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the sunset views", "Comfortable walking shoes"],
+  },
+  {
+    id: "chalet-house-netarhat",
+    name: "Chalet House, Netarhat",
+    state: "Jharkhand",
+    tagline: "A British-Era Retreat on the Netarhat Plateau, Now Marked by Tribal-Life Statues",
+    description: "Chalet House is a British colonial-era building on the Netarhat plateau, a survivor from the hill station's origins as a summer retreat for officials seeking relief from the plains' heat. The grounds around the building have since been given a more locally rooted character, with life-sized bronze-toned statues depicting tribal family life — a mother, father, and child, one figure carrying a woven basket — set on a plinth amid the lawns, a tribute to the indigenous communities of the Netarhat region rather than the colonial history the building itself represents. That juxtaposition, an empire-era retreat now fronted by monuments to local tribal life, makes Chalet House a genuinely layered stop within Netarhat's broader hill-station circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/One_of_the_statue_of_chelet_house.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ed/One_of_the_statue_of_chelet_house.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ed/One_of_the_statue_of_chelet_house.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Statue_in_chalet_house_netarhat.jpg",
+    ],
+    imageCredit: "Photos: Noukayami — Wikimedia Commons, CC BY-SA 4.0, both file descriptions explicitly confirming \"Chalet house netarhat tourist place\".",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The British colonial-era Chalet House building" },
+      { name: "Life-sized statues depicting local tribal family life" },
+      { name: "A layered site blending colonial history and indigenous tribute" },
+      { name: "Landscaped grounds within Netarhat's hill-station setting" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Netarhat", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4-5h drive", costRange: "₹4,000–₹12,000", tips: "Visit as part of a wider Netarhat plateau itinerary." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj, then onward road via Netarhat", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the more practical rail gateway for this plateau region." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Netarhat toward the town centre", fromMumbai: "—", fromBangalore: "—", duration: "Within Netarhat town", costRange: "₹100–₹300 local transport", tips: "Easily combined with Netarhat's other central sights." },
+    ],
+    accommodation: [
+      { type: "Government Guesthouses (Netarhat)", priceRange: "₹1,000–₹2,500/night", examples: ["Jharkhand Tourism's Prabhat Vihar"], description: "The standard base for exploring Netarhat's sights." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Chalet House is within Netarhat town, easily walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Magnolia Sunset Point, Netarhat", distance: "~10 km", type: "Viewpoint", isHidden: false, id: "magnolia-sunset-point-netarhat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 0, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 400, accommodation: 0, food: 350, transport: 50, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 900, accommodation: 0, food: 700, transport: 100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chalet House and Netarhat Town", morning: "Visit Chalet House and its grounds.", afternoon: "Explore central Netarhat town.", evening: "Continue to a sunset viewpoint.", stay: "A guesthouse in Netarhat", meals: "Local meals at the guesthouse", tips: "A quick, easy stop within Netarhat town, worth combining with the plateau's viewpoints in the same day." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["Located within central Netarhat town, a well-visited hill station with steady tourist footfall", "Close to guesthouses and other established infrastructure"],
+      precautions: ["Standard heritage-site courtesy — nothing specific flagged"],
+      soloTips: ["Comfortable solo given the central, well-trafficked Netarhat town location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Latehar Police", number: "06562-292233" }],
+      safeZones: ["The Chalet House grounds and central Netarhat town"],
+      avoidAreas: ["None significant — a central, well-visited town location"],
+    },
+    rating: 4.1,
+    reviews: 260,
+    mustEat: ["Local Jharkhandi meals at Netarhat guesthouses", "Regional forest-produce dishes"],
+    packingTips: ["A camera for the statues and colonial architecture", "Comfortable walking shoes", "Warm layers for the plateau's cool climate"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
