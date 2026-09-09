@@ -48179,6 +48179,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "Cash for offerings and small purchases"],
   },
 
+  {
+    id: "yogoda-satsanga-ashram-ranchi",
+    name: "Yogoda Satsanga Sakha Math, Ranchi",
+    state: "Jharkhand",
+    tagline: "The 1917 Ranchi Ashram Founded by Paramahansa Yogananda",
+    description: "The Yogoda Satsanga Sakha Math in Ranchi holds real significance in modern spiritual history — founded in 1917 by Paramahansa Yogananda, the yogi who would go on to write \"Autobiography of a Yogi\" and bring Kriya Yoga to the West, this ashram was among his earliest institutional efforts before he left for the United States in 1920. The colonial-era building itself, with its tiled roof, wide verandah, and central fountain, retains a quiet, contemplative atmosphere on its landscaped grounds, still functioning as an active branch of the Yogoda Satsanga Society (known internationally as Self-Realization Fellowship). For visitors interested in the roots of the global yoga and meditation movement, this genuinely unassuming Ranchi campus is where much of that history began.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/59/Yogoda_Satsanga_Sakha_Math%2C_Ranchi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/59/Yogoda_Satsanga_Sakha_Math%2C_Ranchi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/59/Yogoda_Satsanga_Sakha_Math%2C_Ranchi.jpg",
+    ],
+    imageCredit: "Photo: Sarwateashwin — Wikimedia Commons, CC BY-SA 3.0, used directly on English Wikipedia's \"Yogoda Satsanga Society of India\" article, categorized \"Ashrams in Jharkhand\". Only one genuinely verified, location-confirmed image of this specific Ranchi ashram building was found after a real search — documented here as a single-image exception (a second candidate showing the ashram's entrance sign was set aside as it features an identifiable individual, unsuited to a travel destination card).",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The 1917 ashram founded by Paramahansa Yogananda" },
+      { name: "Colonial-era architecture with a central fountain courtyard" },
+      { name: "A quiet, contemplative campus atmosphere" },
+      { name: "A genuine root site of the global yoga and meditation movement" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within Ranchi city, an easy add-on to any city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within central Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Check visiting hours in advance, as this remains an active ashram, not a general tourist site." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The ashram sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pahari Mandir (Ranchi Hill)", distance: "~5 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 500, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1100, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Yogoda Satsanga Ashram Visit", morning: "Visit the ashram grounds and its historic buildings.", afternoon: "Continue to other central Ranchi sights like Pahari Mandir.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the ashram", tips: "This is a functioning spiritual institution, not a tourist attraction — visit respectfully and check any posted visiting guidelines." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A well-established, actively managed spiritual institution with a settled campus", "Central Ranchi location keeps it accessible"],
+      precautions: ["Respect the ashram's quiet, contemplative atmosphere and any visiting hour restrictions", "Standard courtesy for a religious/spiritual institution"],
+      soloTips: ["Very comfortable solo, given the calm, managed campus setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The ashram grounds and central Ranchi"],
+      avoidAreas: ["None significant — a well-managed institutional campus"],
+    },
+    rating: 4.4,
+    reviews: 480,
+    mustEat: ["Local snacks near the ashram", "Litti chokha in Ranchi"],
+    packingTips: ["Modest, respectful clothing", "A quiet, contemplative mindset for the visit", "Check visiting hours in advance"],
+  },
+  {
+    id: "jami-masjid-rajmahal",
+    name: "Jami Masjid, Rajmahal",
+    state: "Jharkhand",
+    tagline: "A Mughal-Era Mosque on the Banks of the Ganges, Once Bengal's Capital",
+    description: "The Jami Masjid at Rajmahal sits about 32 km from Sahibganj, in the town that briefly served as the capital of the Mughal province of Bengal between 1592 and 1607 — a genuinely significant historical role for what is now a comparatively quiet town on Jharkhand's northeastern edge, right on the banks of the Ganges. The mosque's weathered brick-and-stone structure, with its large open courtyard visible from above, reflects that Mughal-era administrative importance, standing as one of several historic mosques and monuments scattered across Rajmahal from its brief but consequential period as a provincial seat of power. For visitors willing to make the journey to this remote corner of the state, Rajmahal offers a genuinely different slice of Jharkhand's history — Mughal imperial rather than tribal or colonial — set against the same river that shaped Bengal's history more broadly.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Jami_Masjid_Rajmahal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Jami_Masjid_Rajmahal.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b5/Jami_Masjid_Rajmahal.jpg",
+    ],
+    imageCredit: "Photo: Sekhakbar1 — Wikimedia Commons, CC BY-SA 4.0, its file description explicitly confirming the location (32 km from Sahibganj, 480 km from Ranchi), categorized \"Mosques in Jharkhand\". Only one genuinely verified image of this specific mosque was found after a real search — documented here as a single-image exception; a candidate 1820 watercolor of the separately-named \"Akbari mosque\" at Rajmahal was set aside rather than presented as the same structure without firm confirmation.",
+    category: ["Heritage", "Religious"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A Mughal-era mosque from Rajmahal's brief tenure as Bengal's capital" },
+      { name: "A large open courtyard visible in its historic layout" },
+      { name: "A riverside setting on the Ganges" },
+      { name: "A genuinely distinct Mughal-imperial chapter of Jharkhand's history" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Sahibganj area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "This is a remote corner of Jharkhand — plan extra travel time." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Sahibganj, then onward road — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Sahibganj is the nearest major rail gateway, ~32 km from Rajmahal." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH80 through Bihar/Jharkhand to Sahibganj, then to Rajmahal", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Sahibganj", costRange: "₹1,000–₹2,000 taxi", tips: "A genuinely remote destination — a pre-arranged vehicle is sensible." },
+    ],
+    accommodation: [
+      { type: "Hotels (Sahibganj)", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Sahibganj town"], description: "The most practical base given Rajmahal's more limited facilities." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Sahibganj to Rajmahal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Maluti Temples", distance: "~70 km", type: "Heritage Temples", isHidden: false, id: "maluti-temples" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 100, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 2000, food: 700, transport: 100, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajmahal Heritage Visit", morning: "Drive from Sahibganj to Rajmahal.", afternoon: "Visit the Jami Masjid and explore the town's other Mughal-era remains.", evening: "Return to Sahibganj.", stay: "A hotel in Sahibganj", meals: "Local meals in Sahibganj or Rajmahal", tips: "A genuinely off-the-beaten-path stop — worth combining with the Maluti Temples if travelling this corner of Jharkhand." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A recognized heritage site in an established riverside town", "Local community familiar with occasional heritage visitors"],
+      precautions: ["A relatively remote destination with more limited tourist infrastructure — plan transport in advance", "Weathered structure — take normal care around old stonework"],
+      soloTips: ["Best visited with a pre-arranged driver or local guide given the site's remoteness"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Sahibganj Police", number: "06436-222233" }],
+      safeZones: ["The main mosque complex and town centre"],
+      avoidAreas: ["Isolated riverside areas after dark"],
+    },
+    rating: 4.0,
+    reviews: 180,
+    mustEat: ["Local meals in Sahibganj or Rajmahal town", "Riverside snacks near the Ganges"],
+    packingTips: ["Modest clothing for the mosque visit", "A pre-arranged vehicle given the site's remoteness", "Cash, as facilities are limited"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
