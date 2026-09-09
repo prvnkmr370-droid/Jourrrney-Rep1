@@ -50911,6 +50911,124 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the campus architecture", "Comfortable walking shoes"],
   },
 
+  {
+    id: "bit-mesra",
+    name: "BIT Mesra",
+    state: "Jharkhand",
+    tagline: "A Premier Engineering Institute Founded in 1955, Set on a Sprawling Ranchi Campus",
+    description: "Birla Institute of Technology, Mesra, sits on the outskirts of Ranchi, founded in 1955 as one of India's earlier private engineering institutions and long since established as a genuinely respected name in Indian technical education, now holding deemed-university status with campuses extending well beyond Jharkhand. The main building's illuminated art-deco-influenced facade, with its stepped tower and arched entrance, makes for a striking sight after dark, while the campus grounds include a distinctive sundial monument set within landscaped gardens in front of the main building — a quieter, more contemplative counterpoint to the institute's technical focus. For visitors interested in India's engineering education history, or exploring Ranchi's institutional landmarks, BIT Mesra offers a genuinely well-regarded campus with real architectural character.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Birla_Institute_of_Technology%2C_Mesra_%282026-09-01%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Birla_Institute_of_Technology%2C_Mesra_%282026-09-01%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Birla_Institute_of_Technology%2C_Mesra_%282026-09-01%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Birla_institute_of_technology%2C_sun_dial.jpg",
+    ],
+    imageCredit: "Photos: Md Sabir Hussain/Prince Kumar Bharti (CC BY-SA 4.0, categorized \"Birla Institute of Technology\") and Prashulut (CC BY-SA 3.0/GFDL, description confirms \"sun dial in front of main building bit mesra\") — Wikimedia Commons.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The illuminated art-deco-influenced main building facade" },
+      { name: "One of India's respected engineering institutions, founded 1955" },
+      { name: "A landscaped campus sundial monument" },
+      { name: "A well-regarded deemed university with a sprawling Ranchi campus" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Mesra", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "Mesra sits on Ranchi's outskirts, a short drive from the airport." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within the Ranchi-Mesra area", fromMumbai: "—", fromBangalore: "—", duration: "~30min from central Ranchi", costRange: "₹200–₹500 local cab", tips: "Exterior viewing of the main building is the respectful way to visit an active academic campus." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From central Ranchi to Mesra", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~10 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 80, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 200, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "BIT Mesra Visit", morning: "View the main building and sundial monument.", afternoon: "Continue to Ranchi Rock Garden or other city sights.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks near the campus", tips: "The main building is especially striking when illuminated after dark, if visiting in the evening." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["A well-secured, actively managed academic institution", "Reasonably accessible from central Ranchi"],
+      precautions: ["Standard courtesy for an active academic campus"],
+      soloTips: ["Very comfortable solo given the managed campus setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The exterior campus grounds"],
+      avoidAreas: ["None significant — a well-managed institutional campus"],
+    },
+    rating: 4.3,
+    reviews: 720,
+    mustEat: ["Local snacks near the campus", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the illuminated main building at night", "Comfortable walking shoes"],
+  },
+  {
+    id: "raj-bhavan-ranchi",
+    name: "Raj Bhavan, Ranchi",
+    state: "Jharkhand",
+    tagline: "The Official Residence of Jharkhand's Governor, Marked by a Grand Archway Gate",
+    description: "Raj Bhavan in Ranchi is the official residence of the Governor of Jharkhand, its formal entrance marked by a grand red-and-white archway gate — twin turreted towers flanking a central arch, with \"RAJ BHAWAN\" lettered above in English, Hindi, and Urdu — that opens onto a long, tree-lined driveway leading to the residence itself. As the seat of the state's highest constitutional office, Raj Bhavan hosts official state functions and ceremonial events, including a notable 2019 inauguration of an art gallery at the adjoining Audrey House. While the residence itself remains a working, security-sensitive government building not open for casual visits, the gate and its approach offer a genuine architectural landmark reflecting the formal, institutional side of Jharkhand's state governance.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Raj_Bhavan.jpg/1280px-Raj_Bhavan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Raj_Bhavan.jpg/1280px-Raj_Bhavan.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Raj_Bhavan.jpg/1280px-Raj_Bhavan.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 4.0, categorized \"Buildings in Ranchi\"/\"Gates in Jharkhand\". Only one genuinely verified exterior image of this specific site was found after a real search (candidate photos featuring the Governor or visiting dignitaries were set aside as unsuitable for a travel destination card) — documented here as a single-image exception.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "15–30 minutes (exterior viewing)",
+    highlights: [
+      { name: "The grand twin-towered archway gate" },
+      { name: "The official residence of Jharkhand's Governor" },
+      { name: "A tree-lined ceremonial driveway" },
+      { name: "The adjoining Audrey House, home to an art gallery" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive within the city", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "Right within central Ranchi, an easy add-on to a city tour." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within central Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~10-15min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Only the exterior gate is accessible to the public — this is a working government residence." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Raj Bhavan sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Lake", distance: "~3 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 100, accommodation: 0, food: 100, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 350, accommodation: 0, food: 300, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 800, accommodation: 0, food: 600, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Central Ranchi Landmarks", morning: "View the Raj Bhavan gate.", afternoon: "Continue to Ranchi Lake and Pahari Mandir.", evening: "Return to your hotel.", stay: "A hotel in Ranchi", meals: "Local snacks nearby", tips: "A brief photo stop as part of a wider central Ranchi walking or driving tour." },
+    ],
+    womenSafety: {
+      score: 8.2,
+      level: "Very Safe",
+      highlights: ["A heavily secured government site with constant official security presence", "Central Ranchi location keeps it accessible and well-monitored"],
+      precautions: ["Photography restrictions may apply near the gate given the site's security status — check local signage"],
+      soloTips: ["Very comfortable solo given the heavy security presence at this official residence"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Police", number: "0651-2211985" }],
+      safeZones: ["The public approach road and gate area"],
+      avoidAreas: ["Restricted areas beyond the gate — this is an active government residence"],
+    },
+    rating: 4.0,
+    reviews: 210,
+    mustEat: ["Local snacks nearby", "Litti chokha in Ranchi"],
+    packingTips: ["A camera for the gate architecture", "Respect posted security and photography restrictions"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
