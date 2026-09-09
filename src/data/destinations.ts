@@ -46487,6 +46487,129 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for lakeside paths", "Binoculars for birdwatching in the sanctuary", "Sun protection"],
   },
 
+  {
+    id: "jubilee-park",
+    name: "Jubilee Park",
+    state: "Jharkhand",
+    tagline: "Jamshedpur's Sprawling Mughal-Style Gardens, Built by Tata Steel",
+    description: "Jubilee Park spreads across roughly 225 acres in the heart of Jamshedpur, built by Tata Steel to mark the company's Golden Jubilee and modelled loosely on the formal, symmetrical layout of Mughal gardens — long reflecting water channels, manicured lawns, and a floral clock among its set-piece features. Within the park's grounds sit a rose garden, a musical/dancing fountain that draws evening crowds, a small zoological park, and Tata Steel's own biodiversity park, making it as much a cluster of attractions as a single garden. Genuinely well-maintained by the standards of Indian city parks — a reflection of Tata's long-running civic investment in the town it built — Jubilee Park remains Jamshedpur's central, everyday green space as much as a tourist stop, busiest in the evenings when the fountain runs and families come out for a walk.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg/1280px-A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg/1280px-A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg/1280px-A_green_oasis_in_city_of_steel_Jamshedpur_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Jubilee_Park%2C_Jamshedpur.jpg",
+    ],
+    imageCredit: "Photos: Shadab Ali (CC BY-SA 4.0, GPS-confirmed 22°48'29\"N 86°11'38\"E, categorized \"Jubilee Park, Jamshedpur\") and Shahbaz26 (CC BY-SA 4.0, linked from Wikidata Q41459629) — Wikimedia Commons.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "2–4 hours",
+    highlights: [
+      { name: "The Mughal-style water channels and floral clock" },
+      { name: "The evening musical/dancing fountain" },
+      { name: "A rose garden and small zoological park" },
+      { name: "Tata Steel's biodiversity park within the grounds" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur — ~4h total", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "The park is a short drive from Tatanagar station, right in the city centre." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur — the park is centrally located", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi", costRange: "₹100–₹300 local auto/cab", tips: "Easily reached from anywhere in Jamshedpur by local transport." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The park sits centrally, close to most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹50–₹200", notes: "From anywhere in central Jamshedpur", available: true },
+      { mode: "Walking", cost: "Free", notes: "Easily walkable from many central Jamshedpur neighborhoods", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dalma Wildlife Sanctuary", distance: "~13 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
+      { name: "Dimna Lake", distance: "~13 km", type: "Lake", isHidden: false, id: "dimna-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 200, transport: 50, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 900, accommodation: 0, food: 450, transport: 150, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2000, accommodation: 0, food: 900, transport: 300, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jubilee Park Evening Walk", morning: "Visit the rose garden and biodiversity park.", afternoon: "Explore the small zoological park.", evening: "Watch the musical fountain show at dusk.", stay: "A hotel in Jamshedpur", meals: "Street food and snacks at park-side vendors", tips: "Evenings are the liveliest and most scenic time to visit, with the fountain lit up." },
+    ],
+    womenSafety: {
+      score: 8.2,
+      level: "Very Safe",
+      highlights: ["A heavily-used, well-maintained central city park with constant family footfall, especially in the evenings", "Good lighting and regular security presence given it's a flagship Tata Steel civic space"],
+      precautions: ["Can get crowded during the evening fountain show — keep an eye on belongings", "Some sections quieter after closing hours"],
+      soloTips: ["Very comfortable solo, day or evening, given the steady footfall and central location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The entire park during opening hours"],
+      avoidAreas: ["None significant — a well-managed central city park"],
+    },
+    rating: 4.5,
+    reviews: 6800,
+    mustEat: ["Street food and chaat at park entrances", "Ice cream and snacks from park vendors"],
+    packingTips: ["Comfortable walking shoes for the large grounds", "A camera for the fountain and gardens", "Light snacks for a longer visit"],
+  },
+  {
+    id: "dimna-lake",
+    name: "Dimna Lake",
+    state: "Jharkhand",
+    tagline: "An Artificial Reservoir at the Foot of the Dalma Hills",
+    description: "Dimna Lake is an artificial reservoir built at the base of the Dalma Hills about 13 km from central Jamshedpur, originally created to supply water to the city and now a genuinely popular recreational spot in its own right. The lake's real draw is its setting — calm water framed by the forested slopes of the Dalma range, the same hills that host Dalma Wildlife Sanctuary just above — making for a straightforward, scenic half-day outing with boating available on the water and picnic spots along the shore. It's an easy, low-effort complement to a Jamshedpur city visit, close enough to combine with Jubilee Park or a Dalma sanctuary trip in the same day.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/1280px-Dimna_Lake%2C_Jamshedpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/1280px-Dimna_Lake%2C_Jamshedpur.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/1280px-Dimna_Lake%2C_Jamshedpur.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/DimnaLake1.jpg/1280px-DimnaLake1.jpg",
+    ],
+    imageCredit: "Photos: Aratrik Dasgupta (CC BY-SA 4.0, used directly on English Wikipedia's \"Dimna Lake\" and \"Tourism in Jharkhand\" articles, Wikidata Q41458481) and Sandyv28 (CC BY-SA 4.0, categorized \"Dimna Lake\"/\"Hills of Jharkhand\") — Wikimedia Commons.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Boating on the reservoir" },
+      { name: "Views of the forested Dalma Hills" },
+      { name: "Shoreline picnic spots" },
+      { name: "An easy pairing with Dalma Wildlife Sanctuary" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur — ~4h total", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is well-connected by road/rail even without direct flights." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) — ~20h", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "Take a local cab from Tatanagar station for the ~13 km onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then to Jamshedpur, then ~13 km to the lake", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Ranchi to Jamshedpur, plus 30min to the lake", costRange: "₹300–₹800 local cab", tips: "Easily combined with a Dalma Wildlife Sanctuary or Jubilee Park visit." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "Most visitors day-trip from Jamshedpur." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From central Jamshedpur to the lake", available: true },
+      { mode: "Boating", cost: "₹50–₹150", notes: "Seasonal boating on the lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jubilee Park", distance: "~13 km", type: "City Park", isHidden: false, id: "jubilee-park" },
+      { name: "Dalma Wildlife Sanctuary", distance: "~10 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 250, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1400, accommodation: 0, food: 450, transport: 650, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3200, accommodation: 0, food: 900, transport: 1500, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dimna Lake Half Day", morning: "Drive from Jamshedpur to the lake.", afternoon: "Boating and a lakeside picnic with Dalma Hills views.", evening: "Return to Jamshedpur, optionally via Jubilee Park.", stay: "A hotel in Jamshedpur", meals: "Picnic food or local snacks lakeside", tips: "A relaxed, low-effort outing best paired with another nearby Jamshedpur attraction in the same day." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A popular, regularly visited recreational spot with boating operators and vendor presence", "Close proximity to Jamshedpur city keeps it accessible and well-trafficked"],
+      precautions: ["Can be quieter on weekdays — visiting with others is sensible", "Basic safety practices around the water and boating operators", "Limited facilities beyond the main visitor area"],
+      soloTips: ["Comfortable as a day visit; going with a group or as part of a Dalma/Jubilee Park combined trip is the norm"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Jamshedpur Police Control Room", number: "0657-2426888" }],
+      safeZones: ["The main lakeside and boating area"],
+      avoidAreas: ["Isolated shoreline stretches away from the main visitor area"],
+    },
+    rating: 4.2,
+    reviews: 2600,
+    mustEat: ["Local snacks from lakeside vendors", "Picnic food brought from Jamshedpur"],
+    packingTips: ["A change of clothes if boating", "Sun protection for the open lakeside", "Picnic supplies for a relaxed visit"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
