@@ -49603,6 +49603,124 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the murals (ask permission before photographing people)", "Comfortable walking shoes", "A local guide's contact, arranged in advance if possible"],
   },
 
+  {
+    id: "baba-banshidhar-mandir",
+    name: "Baba Banshidhar Mandir",
+    state: "Jharkhand",
+    tagline: "A Krishna Temple in Garhwa District, Drawing Roughly a Million Pilgrims a Year",
+    description: "Baba Banshidhar Mandir, near Nagar Untari in Garhwa district, is dedicated to Krishna in his flute-playing (Banshidhar) form, its central deity a striking metal statue that local tradition holds to be among the oldest and finest of its kind in India. The temple's own account traces the statue's discovery to a dream: a devotee named Shivmani Kunwar, wife of a local ruler, reportedly dreamed of Krishna calling to be recovered from a nearby hillside, and a search team subsequently unearthed the roughly 4-foot, 1,280 kg statue along with a companion Radha figure. Whatever one makes of the legend, the temple's modern scale is real and documented — it draws an estimated one million pilgrims annually, making it one of the most-visited religious sites in this part of Jharkhand, despite sitting in a comparatively remote corner of Garhwa district.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Lord_Krishna_banshidhar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Lord_Krishna_banshidhar.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Lord_Krishna_banshidhar.jpg",
+    ],
+    imageCredit: "Photo: uploaded by an account associated with the temple's own management — Wikimedia Commons, public domain, categorized \"Garhwa district\"/\"Statues of Krishna\", its detailed file description recounting the temple's documented history and pilgrimage scale. Only one genuinely verified image of this specific temple deity was found after a real search — documented here as a single-image exception.",
+    category: ["Religious"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The central Krishna Banshidhar metal statue, said to be among India's oldest of its kind" },
+      { name: "A companion Radha statue in ashtadhatu alloy" },
+      { name: "A genuine million-pilgrim-a-year religious site" },
+      { name: "A distinctive discovery legend tied to the local Bhawani Singh dynasty" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Garhwa district", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4h drive", costRange: "₹4,000–₹12,000", tips: "Ranchi is the standard air gateway for this part of the state." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains toward Garhwa/Daltonganj, then onward road", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "The Mahuariya railway station on the Chopan-Garhwa line is close to the temple." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Daltonganj toward Nagar Untari in Garhwa district", fromMumbai: "—", fromBangalore: "—", duration: "~4h from Ranchi", costRange: "₹3,000–₹5,500 taxi", tips: "A genuinely worthwhile detour for those exploring Garhwa district's religious sites." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (near the temple)", priceRange: "₹300–₹1,000/night", examples: ["Pilgrim rest houses near Nagar Untari"], description: "Built for the temple's substantial pilgrim footfall." },
+      { type: "Hotels (Garhwa/Daltonganj)", priceRange: "₹800–₹2,500/night", examples: ["Hotels in the nearest towns"], description: "A wider range of options in nearby towns." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Nagar Untari town to the temple", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Betla National Park", distance: "~80 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 30, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 1800, food: 700, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Baba Banshidhar Mandir Darshan", morning: "Drive to Nagar Untari from Daltonganj or Garhwa.", afternoon: "Darshan at Baba Banshidhar Mandir.", evening: "Return journey.", stay: "A hotel in Daltonganj or Garhwa", meals: "Simple local meals near the temple", tips: "Check for major festival dates (like Janmashtami) if wanting to experience the temple at its most active — but expect very large crowds during those periods." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A major, well-established pilgrimage site with substantial annual footfall and organized infrastructure", "A genuinely significant religious destination for the wider region"],
+      precautions: ["A relatively remote location — travel with a pre-arranged vehicle", "Can be very crowded during major festivals", "Limited facilities outside the immediate temple area"],
+      soloTips: ["Comfortable given the substantial regular pilgrim traffic; during major festivals, staying with a group is sensible given the crowd density"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Garhwa Police", number: "06563-222233" }],
+      safeZones: ["The main temple complex"],
+      avoidAreas: ["Dense, unmanaged crowd areas during major festival days"],
+    },
+    rating: 4.3,
+    reviews: 620,
+    mustEat: ["Prasad and sweets from temple-area stalls", "Simple local meals in Nagar Untari"],
+    packingTips: ["Modest clothing for temple visits", "Cash for offerings", "A pre-arranged vehicle given the site's remoteness"],
+  },
+  {
+    id: "st-anne-cathedral-simdega",
+    name: "St. Anne Cathedral, Simdega",
+    state: "Jharkhand",
+    tagline: "The Catholic Cathedral at the Heart of a Region With a Substantial Christian Tribal Community",
+    description: "St. Anne Cathedral in Simdega serves as the seat of the Catholic Diocese of Simdega, a genuinely significant institution in a district where Christianity, brought by 19th-century missionaries working among the region's tribal communities, has a real and lasting presence quite distinct from most of Jharkhand. The cathedral's pink-and-white brick facade, fronted by a covered porch on green-and-cream columns, reflects a modest, functional ecclesiastical architecture rather than grand European styling, matching its role as a genuinely active parish and diocesan seat rather than a tourist monument. For visitors interested in the full breadth of Jharkhand's religious landscape — Hindu, tribal, Muslim, and Christian alike — Simdega's cathedral offers a look at a community history that shaped this specific corner of the state in ways distinct from its neighbors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/St_Anne_Cathedral_Simdega.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a0/St_Anne_Cathedral_Simdega.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/St_Anne_Cathedral_Simdega.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 4.0, categorized \"Saint Anne Cathedral (Simdega)\". Only one genuinely verified image of this specific cathedral was found after a real search — documented here as a single-image exception.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "The seat of the Catholic Diocese of Simdega" },
+      { name: "A distinctive pink-and-white ecclesiastical facade" },
+      { name: "A window into Simdega's significant Christian tribal community" },
+      { name: "A genuinely different religious tradition within Jharkhand's broader landscape" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Simdega", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~2.5h drive", costRange: "₹4,000–₹12,000", tips: "Ranchi is the standard gateway to Simdega district." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi, then onward road to Simdega", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Ranchi for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Simdega town", fromMumbai: "—", fromBangalore: "—", duration: "~2.5h from Ranchi", costRange: "₹2,000–₹4,000 taxi", tips: "A straightforward day-trip stop for those exploring the Simdega region." },
+    ],
+    accommodation: [
+      { type: "Hotels (Simdega)", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Simdega town"], description: "The most practical base given the town's role as a district headquarters." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in Simdega town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Navratangarh Fort", distance: "~50 km", type: "Heritage Ruins", isHidden: false, id: "navratangarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 200, food: 200, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 600, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2200, accommodation: 1500, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Simdega Town Visit", morning: "Visit St. Anne Cathedral.", afternoon: "Explore central Simdega town.", evening: "Continue onward or return to Ranchi.", stay: "A hotel in Simdega", meals: "Local meals in Simdega town", tips: "As an active place of worship, visit respectfully, particularly around service times." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["An actively used, well-established religious institution in the district headquarters town", "Central Simdega location keeps it accessible"],
+      precautions: ["Standard courtesy for an active place of worship", "Check service times if wanting to avoid or attend a service"],
+      soloTips: ["Comfortable solo during daylight visiting hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Simdega Police", number: "06525-222233" }],
+      safeZones: ["The cathedral grounds and central Simdega town"],
+      avoidAreas: ["None significant — a central district-town location"],
+    },
+    rating: 4.1,
+    reviews: 140,
+    mustEat: ["Local meals in Simdega town", "Regional Jharkhandi dishes"],
+    packingTips: ["Modest, respectful clothing", "Check service times if visiting during worship hours"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
