@@ -475,7 +475,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Capitol Complex", distance: "in city", type: "UNESCO Heritage", isHidden: false, id: "capitol-complex" },
       { name: "Chandigarh Bird Park", distance: "in city", type: "Aviary", isHidden: false, id: "chandigarh-bird-park" },
       { name: "Pinjore Gardens", distance: "20 km", type: "Mughal Garden", isHidden: true },
-      { name: "Kasauli", distance: "65 km", type: "Hill Station", isHidden: true },
+      { name: "Kasauli", distance: "65 km", type: "Hill Station", isHidden: true, id: "kasauli" },
       { name: "Morni Hills", distance: "45 km", type: "Hill Station & Lake", isHidden: true },
     ],
     budgetBreakdown: [
@@ -625,7 +625,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Nahargarh Fort", distance: "15 km", type: "Heritage", isHidden: true, id: "nahargarh-fort" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
-      { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false },
+      { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
       { name: "Bhangarh Fort", distance: "83 km", type: "Mysterious Ruins", isHidden: true, id: "bhangarh-fort" },
     ],
     budgetBreakdown: [
@@ -1825,7 +1825,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "65 km", type: "Heritage", isHidden: false, id: "jaipur" },
-      { name: "Ajmer", distance: "60 km", type: "Spiritual", isHidden: true },
+      { name: "Ajmer", distance: "60 km", type: "Spiritual", isHidden: true, id: "ajmer" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker (day trip)", perDayPerPerson: 900, accommodation: 0, food: 250, transport: 500, activities: 50 },
@@ -2360,9 +2360,9 @@ export const DESTINATIONS: Destination[] = [
       { name: "Dudhsagar Falls", distance: "60 km", type: "Waterfall", isHidden: false },
       { name: "Arambol Beach", distance: "52 km", type: "Off-beat Hippie Beach", isHidden: true },
       { name: "Divar Island", distance: "10 km", type: "Secluded Island Village", isHidden: true },
-      { name: "Chapora Fort", distance: "22 km", type: "Heritage Fort", isHidden: false },
+      { name: "Chapora Fort", distance: "22 km", type: "Heritage Fort", isHidden: false, id: "chapora-fort" },
       { name: "Bhagwan Mahavir Wildlife Sanctuary", distance: "53 km", type: "Wildlife", isHidden: false },
-      { name: "Cabo de Rama Fort", distance: "70 km", type: "Hidden Heritage", isHidden: true },
+      { name: "Cabo de Rama Fort", distance: "70 km", type: "Hidden Heritage", isHidden: true, id: "cabo-de-rama-fort" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 600, food: 500, transport: 300, activities: 100 },
@@ -2492,7 +2492,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For Canacona town and nearby transfers", available: true },
     ],
     nearbyPlaces: [
-      { name: "Cotigao Wildlife Sanctuary", distance: "18 km", type: "Wildlife", isHidden: true },
+      { name: "Cotigao Wildlife Sanctuary", distance: "18 km", type: "Wildlife", isHidden: true, id: "cotigao-wildlife-sanctuary" },
       { name: "Agonda Beach (quieter, further north)", distance: "10 km", type: "Coastal", isHidden: true },
       { name: "Old Goa", distance: "75 km", type: "UNESCO Heritage", isHidden: false, id: "old-goa" },
     ],
@@ -2561,7 +2561,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Anjuna (flea market, Wednesdays)", distance: "8 km", type: "Culture", isHidden: true },
-      { name: "Fort Aguada", distance: "10 km", type: "Heritage", isHidden: true },
+      { name: "Fort Aguada", distance: "10 km", type: "Heritage", isHidden: true, id: "aguada" },
       { name: "Old Goa", distance: "20 km", type: "UNESCO Heritage", isHidden: false, id: "old-goa" },
     ],
     budgetBreakdown: [
@@ -2883,9 +2883,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "Old city lanes around Jagdish Chowk best on foot", available: true },
     ],
     nearbyPlaces: [
-      { name: "Chittorgarh Fort", distance: "115 km", type: "UNESCO Heritage Fort", isHidden: false },
+      { name: "Chittorgarh Fort", distance: "115 km", type: "UNESCO Heritage Fort", isHidden: false, id: "chittorgarh" },
       { name: "Kumbhalgarh Fort & Wildlife Sanctuary", distance: "84 km", type: "Great Wall of India", isHidden: false },
-      { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true },
+      { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true, id: "ranakpur" },
       { name: "Eklingji & Nagda Temples", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true },
       { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
@@ -2957,7 +2957,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Raft (river transport)", cost: "₹400–₹600/person", notes: "River rafting doubles as transport downriver", available: true },
     ],
     nearbyPlaces: [
-      { name: "Haridwar", distance: "25 km", type: "Spiritual City – Har Ki Pauri", isHidden: false },
+      { name: "Haridwar", distance: "25 km", type: "Spiritual City – Har Ki Pauri", isHidden: false, id: "haridwar" },
       { name: "Neelkanth Mahadev Temple", distance: "32 km", type: "Sacred Trek", isHidden: false },
       { name: "Rajaji National Park", distance: "19 km", type: "Wildlife Safari", isHidden: false },
       { name: "Shivpuri Beach", distance: "16 km", type: "River Beach Camping", isHidden: true },
@@ -3365,7 +3365,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Dirang (apple/kiwi orchard town)", distance: "40 km", type: "Nature", isHidden: true },
       { name: "Eaglenest Wildlife Sanctuary", distance: "24 km", type: "Nature", isHidden: true },
-      { name: "Tawang", distance: "180 km", type: "Spiritual", isHidden: false },
+      { name: "Tawang", distance: "180 km", type: "Spiritual", isHidden: false, id: "tawang" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 350, transport: 250, activities: 200 },
@@ -6263,7 +6263,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Panna Tiger Reserve", distance: "45 km", type: "Wildlife Safari", isHidden: false },
       { name: "Raneh Falls (Ken River)", distance: "20 km", type: "Canyon Waterfall", isHidden: false },
       { name: "Ajaigarh Fort", distance: "80 km", type: "Ruined Chandela Fort – Hidden", isHidden: true },
-      { name: "Orchha", distance: "170 km", type: "Medieval Town & Cenotaphs", isHidden: false },
+      { name: "Orchha", distance: "170 km", type: "Medieval Town & Cenotaphs", isHidden: false, id: "orchha" },
       { name: "Kalinjar Fort", distance: "105 km", type: "Mysterious Hilltop Fort", isHidden: true },
     ],
     budgetBreakdown: [
@@ -6457,7 +6457,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Good for the old-city lanes near the fort", available: true },
     ],
     nearbyPlaces: [
-      { name: "Orchha", distance: "120 km", type: "Heritage", isHidden: true },
+      { name: "Orchha", distance: "120 km", type: "Heritage", isHidden: true, id: "orchha" },
       { name: "Shivpuri National Park", distance: "115 km", type: "Wildlife", isHidden: true },
       { name: "Agra (Taj Mahal)", distance: "120 km", type: "Heritage", isHidden: false, id: "agra" },
     ],
@@ -7466,7 +7466,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Nagarhole National Park Core Zone", distance: "Inside Kabini buffer", type: "Tiger Reserve", isHidden: false },
       { name: "Wayanad (Kerala)", distance: "75 km", type: "Cross-border Wildlife Area", isHidden: false },
-      { name: "Mysuru", distance: "90 km", type: "City / Heritage", isHidden: false },
+      { name: "Mysuru", distance: "90 km", type: "City / Heritage", isHidden: false, id: "mysuru" },
       { name: "Bandipur Tiger Reserve", distance: "80 km via Nanjangud", type: "Connected Tiger Reserve", isHidden: true, id: "bandipur-tiger-reserve" },
       { name: "Iruppu Falls (Brahmagiri Wildlife Sanctuary)", distance: "60 km", type: "Hidden Waterfall + Wildlife", isHidden: true, id: "iruppu-falls" },
     ],
@@ -7742,7 +7742,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Sela Pass", distance: "78 km from Tawang", type: "High-Altitude Mountain Pass", isHidden: false },
       { name: "Shonga-tser Lake (Madhuri Lake)", distance: "35 km from Tawang", type: "Glacial Lake", isHidden: true },
-      { name: "Bomdila", distance: "180 km from Tawang", type: "Monastery Town & Craft Centre", isHidden: false },
+      { name: "Bomdila", distance: "180 km from Tawang", type: "Monastery Town & Craft Centre", isHidden: false, id: "bomdila" },
       { name: "Sessa Orchid Sanctuary", distance: "Near Bomdila", type: "Protected Orchid Reserve", isHidden: true },
       { name: "Dirang", distance: "140 km from Tawang", type: "Hot Springs & Orchards", isHidden: true },
     ],
@@ -12160,7 +12160,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Anjuna Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "anjuna" },
       { name: "Morjim Beach", distance: "Across the Chapora River", type: "Beach", isHidden: false, id: "morjim" },
-      { name: "Chapora Fort", distance: "~1 km, above the beach", type: "Fort", isHidden: true },
+      { name: "Chapora Fort", distance: "~1 km, above the beach", type: "Fort", isHidden: true, id: "chapora-fort" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 800, food: 400, transport: 300, activities: 200 },
@@ -14736,7 +14736,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Panaji", notes: "The practical way to reach Verem", available: true },
     ],
     nearbyPlaces: [
-      { name: "Reis Magos Fort", distance: "Adjoining", type: "Fort", isHidden: true },
+      { name: "Reis Magos Fort", distance: "Adjoining", type: "Fort", isHidden: true, id: "reis-magos-fort" },
       { name: "Panaji city centre", distance: "~5 km", type: "Town", isHidden: false },
     ],
     budgetBreakdown: [
@@ -16411,7 +16411,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: true, id: "sabarmati-ashram" },
       { name: "Adalaj Stepwell", distance: "~19 km", type: "Stepwell", isHidden: true, id: "adalaj-stepwell" },
       { name: "Lothal (Indus Valley site)", distance: "~85 km", type: "Archaeological", isHidden: true },
-      { name: "Nalsarovar Bird Sanctuary", distance: "~65 km", type: "Wildlife", isHidden: true },
+      { name: "Nalsarovar Bird Sanctuary", distance: "~65 km", type: "Wildlife", isHidden: true, id: "nalsarovar-bird-sanctuary" },
       { name: "Rani ki Vav, Patan", distance: "~130 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
     ],
     budgetBreakdown: [
@@ -16544,8 +16544,8 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Dholavira (Indus Valley UNESCO site)", distance: "~250 km from Bhuj", type: "UNESCO Heritage", isHidden: true },
-      { name: "Mandvi Beach", distance: "~60 km from Bhuj", type: "Beach", isHidden: true },
-      { name: "Lakhpat Fort", distance: "~130 km from Bhuj", type: "Fort", isHidden: true },
+      { name: "Mandvi Beach", distance: "~60 km from Bhuj", type: "Beach", isHidden: true, id: "mandvi-beach" },
+      { name: "Lakhpat Fort", distance: "~130 km from Bhuj", type: "Fort", isHidden: true, id: "lakhpat-fort" },
       { name: "Kalo Dungar", distance: "~90 km from Bhuj", type: "Viewpoint", isHidden: true, id: "kalo-dungar" },
     ],
     budgetBreakdown: [
@@ -16612,7 +16612,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Gondal (Royal Vintage Car Collection)", distance: "~35 km", type: "Museum", isHidden: true, id: "naulakha-palace-gondal" },
-      { name: "Hingolgadh Nature Education Sanctuary", distance: "~55 km", type: "Wildlife", isHidden: true },
+      { name: "Hingolgadh Nature Education Sanctuary", distance: "~55 km", type: "Wildlife", isHidden: true, id: "hingolgadh-nature-education-sanctuary" },
       { name: "Junagadh", distance: "~100 km", type: "City", isHidden: false, id: "junagadh" },
     ],
     budgetBreakdown: [
@@ -16743,9 +16743,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For Marine National Park boat-launch points and Khijadiya", available: true },
     ],
     nearbyPlaces: [
-      { name: "Khijadiya Bird Sanctuary", distance: "~10 km", type: "Wildlife", isHidden: true },
+      { name: "Khijadiya Bird Sanctuary", distance: "~10 km", type: "Wildlife", isHidden: true, id: "khijadiya-bird-sanctuary" },
       { name: "Dwarka", distance: "~130 km", type: "Temple Town", isHidden: true, id: "dwarkadhish-temple" },
-      { name: "Shivrajpur Beach", distance: "~150 km", type: "Beach", isHidden: true },
+      { name: "Shivrajpur Beach", distance: "~150 km", type: "Beach", isHidden: true, id: "shivrajpur-beach" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 300, activities: 200 },
@@ -16810,8 +16810,8 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Surat BRTS/City Bus", cost: "₹10–₹40", notes: "Extensive local bus network", available: true },
     ],
     nearbyPlaces: [
-      { name: "Dumas Beach", distance: "~21 km", type: "Beach", isHidden: true },
-      { name: "Suvali Beach", distance: "~25 km", type: "Beach", isHidden: true },
+      { name: "Dumas Beach", distance: "~21 km", type: "Beach", isHidden: true, id: "dumas-beach" },
+      { name: "Suvali Beach", distance: "~25 km", type: "Beach", isHidden: true, id: "suvali-beach" },
       { name: "Tithal Beach, Valsad", distance: "~85 km", type: "Beach", isHidden: true },
       { name: "Purna Wildlife Sanctuary, Dang", distance: "~130 km", type: "Wildlife", isHidden: true },
     ],
@@ -16879,9 +16879,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi (Full Day)", cost: "₹2,000–₹4,000/day", notes: "For Velavadar National Park and Palitana day trips", available: true },
     ],
     nearbyPlaces: [
-      { name: "Velavadar Blackbuck National Park", distance: "~42 km", type: "Wildlife", isHidden: true },
+      { name: "Velavadar Blackbuck National Park", distance: "~42 km", type: "Wildlife", isHidden: true, id: "velavadar-blackbuck-national-park" },
       { name: "Palitana (Shatrunjaya Hill)", distance: "~50 km", type: "Pilgrimage", isHidden: true, id: "palitana-shatrunjaya-hill" },
-      { name: "Nishkalank Mahadev Temple", distance: "~25 km", type: "Temple", isHidden: true },
+      { name: "Nishkalank Mahadev Temple", distance: "~25 km", type: "Temple", isHidden: true, id: "nishkalank-mahadev-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 350, transport: 300, activities: 200 },
@@ -18135,7 +18135,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
     ],
     nearbyPlaces: [
-      { name: "Ambaji Temple", distance: "~40 km", type: "Temple", isHidden: true },
+      { name: "Ambaji Temple", distance: "~40 km", type: "Temple", isHidden: true, id: "ambaji-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 650, food: 350, transport: 350, activities: 200 },
@@ -18286,7 +18286,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
     ],
     nearbyPlaces: [
-      { name: "Ambaji Temple", distance: "Within the sanctuary", type: "Temple", isHidden: true },
+      { name: "Ambaji Temple", distance: "Within the sanctuary", type: "Temple", isHidden: true, id: "ambaji-temple" },
       { name: "Jessore Sloth Bear Sanctuary", distance: "~40 km", type: "Wildlife", isHidden: false, id: "jessore-sloth-bear-sanctuary" },
     ],
     budgetBreakdown: [
@@ -39178,7 +39178,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed local taxi-union rates, common across this circuit", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote valley villages", available: true },
     ],
-    nearbyPlaces: [{ name: "Dalhousie", distance: "54 km", type: "Hill Station", isHidden: false, id: "dalhousie" }, { name: "Khajjiar", distance: "26 km", type: "Meadow", isHidden: false, id: "khajjiar" }, { name: "Bharmaur", distance: "65 km", type: "Temple Town", isHidden: false }],
+    nearbyPlaces: [{ name: "Dalhousie", distance: "54 km", type: "Hill Station", isHidden: false, id: "dalhousie" }, { name: "Khajjiar", distance: "26 km", type: "Meadow", isHidden: false, id: "khajjiar" }, { name: "Bharmaur", distance: "65 km", type: "Temple Town", isHidden: false, id: "bharmaur" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 650, food: 350, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2400, food: 750, transport: 400, activities: 250 },
@@ -39337,7 +39337,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
     ],
-    nearbyPlaces: [{ name: "Kalpa", distance: "13 km (from Reckong Peo)", type: "Village", isHidden: false, id: "kalpa" }, { name: "Sangla Valley", distance: "38 km (from Reckong Peo)", type: "Valley", isHidden: false, id: "sangla-valley" }, { name: "Chitkul", distance: "65 km (from Reckong Peo)", type: "Border Village", isHidden: false, id: "chitkul" }, { name: "Nako", distance: "102 km (from Reckong Peo)", type: "Lake Village", isHidden: false }],
+    nearbyPlaces: [{ name: "Kalpa", distance: "13 km (from Reckong Peo)", type: "Village", isHidden: false, id: "kalpa" }, { name: "Sangla Valley", distance: "38 km (from Reckong Peo)", type: "Valley", isHidden: false, id: "sangla-valley" }, { name: "Chitkul", distance: "65 km (from Reckong Peo)", type: "Border Village", isHidden: false, id: "chitkul" }, { name: "Nako", distance: "102 km (from Reckong Peo)", type: "Lake Village", isHidden: false, id: "nako" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 600, food: 300, transport: 150, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2100, food: 700, transport: 450, activities: 150 },
@@ -39443,7 +39443,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
     ],
-    nearbyPlaces: [{ name: "Manali", distance: "120 km (from Keylong)", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Rohtang Pass", distance: "69 km (from Keylong)", type: "Mountain Pass", isHidden: false, id: "rohtang-pass" }, { name: "Kaza", distance: "188 km (from Keylong)", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Kunzum Pass", distance: "110 km (from Keylong)", type: "Mountain Pass", isHidden: false }],
+    nearbyPlaces: [{ name: "Manali", distance: "120 km (from Keylong)", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Rohtang Pass", distance: "69 km (from Keylong)", type: "Mountain Pass", isHidden: false, id: "rohtang-pass" }, { name: "Kaza", distance: "188 km (from Keylong)", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Kunzum Pass", distance: "110 km (from Keylong)", type: "Mountain Pass", isHidden: false, id: "kunzum-pass" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 600, food: 300, transport: 150, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2100, food: 700, transport: 450, activities: 150 },
@@ -39549,7 +39549,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
     ],
-    nearbyPlaces: [{ name: "Bhakra Dam", distance: "75 km", type: "Dam", isHidden: false }, { name: "Naina Devi Temple", distance: "60 km", type: "Temple", isHidden: false }, { name: "Bahadurpur Fort", distance: "40 km", type: "Fort", isHidden: false }],
+    nearbyPlaces: [{ name: "Bhakra Dam", distance: "75 km", type: "Dam", isHidden: false, id: "bhakra-dam" }, { name: "Naina Devi Temple", distance: "60 km", type: "Temple", isHidden: false, id: "naina-devi-temple" }, { name: "Bahadurpur Fort", distance: "40 km", type: "Fort", isHidden: false }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 250, transport: 150, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1800, food: 600, transport: 400, activities: 100 },
@@ -39814,7 +39814,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
     ],
-    nearbyPlaces: [{ name: "Bir Billing", distance: "29–43 km", type: "Paragliding Site", isHidden: false, id: "bir-billing" }, { name: "Kangra", distance: "38 km", type: "Heritage Town", isHidden: false, id: "kangra" }, { name: "Dharamshala", distance: "40 km", type: "Hill Station", isHidden: false, id: "dharamshala" }, { name: "Chamunda Devi Temple", distance: "25 km", type: "Temple", isHidden: false }],
+    nearbyPlaces: [{ name: "Bir Billing", distance: "29–43 km", type: "Paragliding Site", isHidden: false, id: "bir-billing" }, { name: "Kangra", distance: "38 km", type: "Heritage Town", isHidden: false, id: "kangra" }, { name: "Dharamshala", distance: "40 km", type: "Hill Station", isHidden: false, id: "dharamshala" }, { name: "Chamunda Devi Temple", distance: "25 km", type: "Temple", isHidden: false, id: "chamunda-devi-temple" }],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 550, food: 300, transport: 150, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2100, food: 650, transport: 400, activities: 150 },
