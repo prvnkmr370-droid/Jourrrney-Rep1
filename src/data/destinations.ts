@@ -52145,6 +52145,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Handia (traditional rice beer, offered in some celebrations)", "Simple local Santhal fare"],
     packingTips: ["A local guide or contact for respectful access", "A camera used considerately, with permission for photographing people", "Modest, respectful clothing"],
   },
+  {
+    id: "panchghagh-falls",
+    name: "Panchghagh Falls",
+    state: "Jharkhand",
+    tagline: "A Waterfall of Five Streams Near Khunti, South of Ranchi",
+    description: "Panchghagh Falls, named for the five separate streams (\"panch ghagh\") into which the Banai River splits as it tumbles over a broad shelf of rock, lies near Khunti, roughly 55 kilometres south of Ranchi. Rather than a single dramatic drop, the falls spread out in a series of parallel cascades pouring over weathered grey boulders into a shallow pool below, framed by rocky outcrops and forest — a genuinely pretty, family-friendly picnic spot that draws local visitors especially during and just after the monsoon when all five streams run full. Developed modestly for day-trippers with basic amenities, Panchghagh offers an accessible, low-key waterfall outing on the Ranchi–Khunti route, its gentle multi-stream character making it a pleasant, safer alternative to the region's taller, steeper falls.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/1280px-Panchghagh_falls.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/1280px-Panchghagh_falls.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/1280px-Panchghagh_falls.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 4.0, categorized \"Waterfalls in Jharkhand\"/\"Ranchi district\", captioned \"A closeup of the waterfall\". Only one genuinely verified image of this specific waterfall was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "July – February (fullest during and just after monsoon)",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A waterfall split into five parallel streams" },
+      { name: "A broad rock shelf and shallow pool below" },
+      { name: "A family-friendly picnic spot near Khunti" },
+      { name: "An accessible stop on the Ranchi–Khunti route" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Khunti", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~1.5h drive", costRange: "₹4,000–₹12,000", tips: "Khunti is roughly 55km south of Ranchi." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a taxi from Ranchi for the onward drive toward Khunti." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Khunti", fromMumbai: "—", fromBangalore: "—", duration: "~1.5h from Ranchi", costRange: "₹1,000–₹2,000 taxi", tips: "An easy day trip from Ranchi, combinable with other Khunti-area sights." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹1,000–₹2,000", notes: "From Ranchi, as a day trip", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~55 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 400, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 700, transport: 1000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Panchghagh Falls Day Trip", morning: "Drive from Ranchi toward Khunti to Panchghagh Falls.", afternoon: "Enjoy the cascades and a riverside picnic.", evening: "Return to Ranchi.", stay: "A hotel in Ranchi", meals: "Picnic fare and roadside snacks", tips: "Visit during or just after monsoon to see all five streams running full; the shallow pool is popular but exercise standard water caution." },
+    ],
+    womenSafety: {
+      score: 7.2,
+      level: "Safe",
+      highlights: ["A popular, modestly developed local picnic spot with regular weekend footfall", "A gentler, more accessible waterfall than the region's steeper falls"],
+      precautions: ["Rocks near the water can be slippery — wear sturdy footwear", "Can get crowded on weekends; quieter and more isolated on weekdays"],
+      soloTips: ["Comfortable during daytime, especially on busier weekends; go with company on quiet weekdays"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Khunti Police", number: "06528-221333" }],
+      safeZones: ["The developed picnic and viewing areas"],
+      avoidAreas: ["Climbing on wet rocks near the cascades or venturing into deeper water"],
+    },
+    rating: 4.1,
+    reviews: 360,
+    mustEat: ["Picnic fare and roadside snacks", "Litti chokha in Ranchi"],
+    packingTips: ["Sturdy, non-slip footwear for the wet rocks", "A picnic and water", "A camera for the five-stream cascade"],
+  },
 
 ];
 
