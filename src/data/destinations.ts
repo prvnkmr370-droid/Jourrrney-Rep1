@@ -49009,6 +49009,124 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy footwear for uneven ruin terrain", "Water, as on-site facilities are minimal", "A local guide arranged in advance"],
   },
 
+  {
+    id: "tapovan-hill-deoghar",
+    name: "Tapovan Hill",
+    state: "Jharkhand",
+    tagline: "A Rocky Outcrop on Deoghar's Outskirts, a Local Hangout With Genuine Views",
+    description: "Tapovan Hill sits on the outskirts of Deoghar, a rocky rise that's become a genuine local hangout spot rather than a formally developed tourist attraction — the kind of place Deoghar residents head to for open air, a view, and a break from the town below. The exposed granite outcrops at the top offer sweeping views over the surrounding countryside, and the climb itself is unstructured and informal, popular with everyone from casual evening walkers to, as one visitor's own photo caption notes, groups of UPSC exam aspirants taking a study break. For visitors who've done the temple circuit at Baidyanath Dham and Trikut Hill, Tapovan offers a genuinely different, low-key kind of Deoghar experience — quiet, unpolished, and shaped by how locals actually use the space.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Small_Mountain_at_Tapovan.jpg/1280px-Small_Mountain_at_Tapovan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Small_Mountain_at_Tapovan.jpg/1280px-Small_Mountain_at_Tapovan.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Small_Mountain_at_Tapovan.jpg/1280px-Small_Mountain_at_Tapovan.jpg",
+    ],
+    imageCredit: "Photo: 7tyam — Wikimedia Commons, CC BY-SA 4.0, depicts \"Tapovan\"/\"Deoghar district\" per its structured data, categorized \"Deoghar\"/\"Hills of Jharkhand\". Only one genuinely verified image of this specific hill was found after a real search (a candidate watermarked painting was set aside as unsuitable) — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Exposed granite outcrops with sweeping countryside views" },
+      { name: "A genuine, unpolished local hangout spot" },
+      { name: "An informal climb popular with evening walkers and students" },
+      { name: "A quieter counterpart to Deoghar's temple circuit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Deoghar Airport — direct flights, ~2h, then a short drive", fromMumbai: "Via Kolkata/Delhi — ~3.5h total", fromBangalore: "Via Kolkata/Delhi — ~4h total", duration: "~2h direct to Deoghar plus a ~20min drive", costRange: "₹4,000–₹13,000", tips: "An easy, informal add-on to a Deoghar visit." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Jasidih Junction — ~15-17h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "15h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Jasidih or central Deoghar." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH19/NH2 through Bihar to Deoghar", fromMumbai: "—", fromBangalore: "—", duration: "~20min from central Deoghar", costRange: "₹150–₹400 local cab", tips: "Evening visits are popular with locals, especially near sunset." },
+    ],
+    accommodation: [
+      { type: "Hotels (Deoghar)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels across Deoghar town"], description: "Most visitors day-trip from central Deoghar." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Trikut Hill", distance: "~15 km", type: "Hill/Ropeway", isHidden: false, id: "trikut-hill" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 150, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 450, accommodation: 0, food: 350, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1000, accommodation: 0, food: 700, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tapovan Hill Evening Walk", morning: "Visit Baidyanath Dham or other Deoghar sights.", afternoon: "Rest before the evening climb.", evening: "Walk up Tapovan Hill for open-air views.", stay: "A hotel in Deoghar", meals: "Local snacks near the hill base", tips: "A casual, informal spot — go with an easygoing plan rather than expecting a developed tourist site." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A popular local hangout with regular evening footfall from residents", "Close to central Deoghar, keeping it accessible"],
+      precautions: ["An informal, undeveloped site — uneven rock terrain and no formal safety infrastructure", "Fewer visitors after dark — plan to descend before nightfall"],
+      soloTips: ["Comfortable during daylight and early evening hours given the steady local presence; less advisable alone after dark given the informal setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Deoghar Police", number: "06432-232233" }],
+      safeZones: ["The main climbing area during daylight hours"],
+      avoidAreas: ["Isolated rock sections after dark"],
+    },
+    rating: 4.0,
+    reviews: 290,
+    mustEat: ["Local snacks near the hill base", "Peda and sweets in Deoghar"],
+    packingTips: ["Sturdy footwear for the rocky climb", "Water for the walk", "A camera for the views"],
+  },
+  {
+    id: "panchet-dam",
+    name: "Panchet Dam",
+    state: "Jharkhand",
+    tagline: "A DVC Dam on the Damodar River, Straddling the Jharkhand-West Bengal Border",
+    description: "Panchet Dam sits on the Damodar River right at the border between Jharkhand and West Bengal, another of the multi-purpose dams built under the Damodar Valley Corporation's post-independence river-basin project, alongside Tilaiya, Maithon, and Konar. Its long, multi-gated spillway is a genuinely dramatic sight in full flow, water thundering down in parallel white columns off the dam's face, while the calmer reservoir side supports fishing boats and a quiet waterfront scene. As a working dam that straddles two states, Panchet has a slightly different character from Jharkhand's more purely recreational dams — genuinely functional infrastructure that happens to offer a scenic, worthwhile stop for anyone travelling the Dhanbad-Asansol corridor.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Panchet_Dam_%28DVC%29_Dhanbad.jpg/1280px-Panchet_Dam_%28DVC%29_Dhanbad.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Panchet_Dam_%28DVC%29_Dhanbad.jpg/1280px-Panchet_Dam_%28DVC%29_Dhanbad.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Panchet_Dam_%28DVC%29_Dhanbad.jpg/1280px-Panchet_Dam_%28DVC%29_Dhanbad.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Panchet_reservoir.jpg/1280px-Panchet_reservoir.jpg",
+    ],
+    imageCredit: "Photos: Baranwalalok71 (CC BY-SA 4.0, used on 20+ Wikipedia projects including English Wikipedia's \"Panchet Dam\" article, Wikidata Q7130315) and ArnabSaha (CC BY-SA 4.0, GPS-confirmed 23°40'58.59\"N 86°44'54.55\"E, also used on \"Panchet Dam\") — Wikimedia Commons, both categorized \"Panchet Dam\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The dramatic multi-gated spillway when in full flow" },
+      { name: "A working DVC dam straddling the Jharkhand-West Bengal border" },
+      { name: "Fishing boats on the calm reservoir side" },
+      { name: "Part of the same 1950s-era Damodar Valley river-system project" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Dhanbad, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Dhanbad and Asansol (West Bengal) both serve as gateways given the border location." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dhanbad or Asansol — ~14-16h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "Both stations are viable rail gateways to the dam." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Dhanbad, then to Panchet", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Dhanbad", costRange: "₹1,000–₹2,200 taxi", tips: "Often visited alongside Maithon Dam given the shared region." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dhanbad)", priceRange: "₹1,200–₹4,500/night", examples: ["Hotels across Dhanbad city"], description: "Most visitors day-trip from Dhanbad." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Dhanbad to Panchet", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Maithon Dam", distance: "~30 km", type: "Dam", isHidden: false, id: "maithon-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 0, food: 400, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3000, accommodation: 0, food: 800, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Panchet and Maithon Dams", morning: "Visit Panchet Dam's spillway.", afternoon: "Continue to Maithon Dam nearby.", evening: "Return to Dhanbad.", stay: "A hotel in Dhanbad", meals: "Local snacks near the dam", tips: "Combine Panchet with Maithon Dam for a fuller day of DVC-region sightseeing." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A working DVC infrastructure site with regular staff and visitor traffic", "Reasonably established given its location on a major inter-state route"],
+      precautions: ["Standard water-safety caution near the spillway", "Limited facilities beyond the main viewing area"],
+      soloTips: ["Comfortable as a brief stop during a day trip"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dhanbad Police", number: "0326-2300100" }],
+      safeZones: ["The main dam viewing area"],
+      avoidAreas: ["The spillway edge and reservoir shoreline, especially when gates are open"],
+    },
+    rating: 4.0,
+    reviews: 950,
+    mustEat: ["Local snacks near the dam", "Dhanbad-style street food"],
+    packingTips: ["A camera for the spillway", "Comfortable footwear", "Combine with a Maithon Dam visit"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
