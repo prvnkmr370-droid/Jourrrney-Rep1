@@ -50319,6 +50319,124 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Respectful, modest clothing", "A camera, used considerately during active worship", "Check pilgrimage calendar dates if wanting to witness the gathering"],
   },
 
+  {
+    id: "seraikella-chhau-dance",
+    name: "Seraikella Chhau Dance",
+    state: "Jharkhand",
+    tagline: "A UNESCO-Recognized Masked Dance Tradition, Native to Jharkhand",
+    description: "Seraikella Chhau is one of three regional styles of Chhau, a semi-classical Indian dance blending martial arts, acrobatics, and structured storytelling — and it is genuinely the Jharkhand-native style, distinct from the Purulia Chhau of West Bengal and the Mayurbhanj Chhau of Odisha, though all three share common roots. Performers wear elaborate, expressive masks to identify their characters — gods, demons, animals, and figures from the Ramayana, Mahabharata, and Puranas — combined with vivid costumes and vigorous, athletic choreography that sets Chhau apart from more restrained classical Indian dance forms. Traditionally an all-male performance art, celebrated especially during spring festivals in and around Seraikella, the dance form has genuine UNESCO recognition as an element of India's Intangible Cultural Heritage, reflecting its real artistic and cultural significance well beyond the region where it originated.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/78/Radha_Khrisna_in_Seraikella_Chhau_Dance.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/78/Radha_Khrisna_in_Seraikella_Chhau_Dance.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/Radha_Khrisna_in_Seraikella_Chhau_Dance.jpg",
+    ],
+    imageCredit: "Photo: Ramesh Lalwani — Wikimedia Commons, CC BY 2.0, Flickr-reviewed, explicitly captioning the dancers \"Govind Mahto and Tripti Thapliyal as Radha Krishna in Seraikella Chhau Dance,\" used on Meta-Wikimedia's \"Wiki Loves Living Heritage/Chhau dance\" page, categorized \"Chhau dance\". Only one genuinely verified image specific to the Seraikella (Jharkhand) style was found after a real search — documented here as a single-image exception; several candidate images were rejected as they were confirmed to depict the distinct Purulia (West Bengal) style or events in Kolkata rather than Seraikella specifically.",
+    category: ["Heritage", "Rural"],
+    bestSeason: "March – April (Chaitra Parva festival season, when performances are most active)",
+    duration: "1–2 hours (a performance)",
+    highlights: [
+      { name: "Jharkhand's native masked classical-folk dance tradition" },
+      { name: "UNESCO-recognized Intangible Cultural Heritage status" },
+      { name: "Vigorous, martial-arts-influenced choreography" },
+      { name: "Stories from the Ramayana, Mahabharata, and Puranas performed through mask and movement" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward to Seraikela", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Jamshedpur is the practical gateway to Seraikela town." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur), then onward road", fromMumbai: "~26h", fromBangalore: "~30h+", duration: "20h+ from Delhi", costRange: "₹500–₹2,500", tips: "Seraikela has its own railway station, a short distance from Jamshedpur." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then Jamshedpur, then Seraikela town", fromMumbai: "—", fromBangalore: "—", duration: "~30-45min from Jamshedpur", costRange: "₹500–₹1,200 taxi", tips: "Check the local festival calendar (especially around Chaitra Parva) to catch a live performance." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur)", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Jamshedpur city"], description: "The most practical base, a short drive from Seraikela." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Jamshedpur to Seraikela town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chandil Dam", distance: "~30 km", type: "Dam", isHidden: false, id: "chandil-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1200, accommodation: 0, food: 450, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 0, food: 900, transport: 900, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Seraikella Chhau Experience", morning: "Travel from Jamshedpur to Seraikela town.", afternoon: "Visit local dance schools or cultural centres, if available, to learn about the tradition.", evening: "Attend a live performance if festival timing aligns.", stay: "A hotel in Jamshedpur", meals: "Local Jharkhandi meals in Seraikela or Jamshedpur", tips: "Live performances cluster around the Chaitra Parva spring festival — plan a visit around that period for the best chance of seeing Chhau performed." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A recognized cultural heritage centre with an established local dance community", "Festival periods draw organized, well-attended public gatherings"],
+      precautions: ["Outside festival season, performances may be harder to find without local contacts", "Large festival crowds during Chaitra Parva — standard crowd-safety awareness"],
+      soloTips: ["Comfortable visiting the town; attending a performance is best arranged with local guidance or as part of an organized cultural visit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Seraikela Kharsawan Police", number: "06579-266234" }],
+      safeZones: ["Seraikela town and performance venues"],
+      avoidAreas: ["None specifically flagged"],
+    },
+    rating: 4.5,
+    reviews: 380,
+    mustEat: ["Local Jharkhandi meals in Seraikela", "Regional snacks near performance venues"],
+    packingTips: ["A camera for performances, used respectfully", "Check the local festival calendar in advance", "Comfortable seating attire for an outdoor performance"],
+  },
+  {
+    id: "galudih-barrage",
+    name: "Galudih Barrage",
+    state: "Jharkhand",
+    tagline: "A Subarnarekha River Barrage Near Ghatshila, Striking at Twilight",
+    description: "Galudih Barrage spans the Subarnarekha River in East Singhbhum district, an irrigation and water-management structure near Ghatshila whose long, low-slung silhouette becomes genuinely striking at dusk, when its lights come on against a fading sky and the calm river below reflects the colour. By day, the barrage offers a more straightforward but still scenic river view — clear water over scattered rocks, lush greenery along both banks, and distant hazy hills completing the backdrop. As part of the same Subarnarekha river system that shapes much of Ghatshila's landscape and identity, Galudih Barrage makes a natural, easy addition to a visit already taking in the town's temples and waterfalls.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Galudih_Barrage_Night_View.jpg/1280px-Galudih_Barrage_Night_View.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Galudih_Barrage_Night_View.jpg/1280px-Galudih_Barrage_Night_View.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Galudih_Barrage_Night_View.jpg/1280px-Galudih_Barrage_Night_View.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Subarnarekha_River%2C_Ghatshila.jpg/1280px-Subarnarekha_River%2C_Ghatshila.jpg",
+    ],
+    imageCredit: "Photos: 4T15.D3 — Wikimedia Commons, CC0, both GPS-confirmed at Galudih Barrage near Ghatshila (22°38'46\"N 86°23'49\"E), categorized \"Ghatshila\"/\"East Singhbhum district\"/\"Dams in Jharkhand\"/\"Subarnarekha River in Jharkhand\".",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "1 hour",
+    highlights: [
+      { name: "A striking twilight silhouette against the Subarnarekha River" },
+      { name: "Clear river water over scattered rocks by day" },
+      { name: "A scenic riverside stop near Ghatshila" },
+      { name: "Part of the same river system shaping the wider Ghatshila area" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Ghatshila area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Ghatshila is closer to Kolkata than most other Jharkhand gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ghatshila station on the Howrah-Mumbai line", fromMumbai: "~20h+", fromBangalore: "~28h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Ghatshila has its own railway station, a short drive from the barrage." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamshedpur, then to Ghatshila and Galudih", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Jamshedpur", costRange: "₹1,200–₹2,500 taxi", tips: "Time your visit for dusk to see the barrage's signature twilight view." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ghatshila)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels and guesthouses in Ghatshila town"], description: "Most visitors day-trip from Ghatshila." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to Galudih", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rankini Mandir, Ghatshila", distance: "~10 km", type: "Temple", isHidden: false, id: "rankini-mandir-ghatshila" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 200, transport: 150, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1100, accommodation: 0, food: 400, transport: 500, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2400, accommodation: 0, food: 800, transport: 1100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ghatshila Riverside Circuit", morning: "Visit Rankini Mandir and Ratmohana.", afternoon: "Continue to Galudih Barrage.", evening: "Twilight views of the barrage.", stay: "A hotel in Ghatshila", meals: "Local snacks near the barrage", tips: "Time the day so you arrive at Galudih around sunset for the barrage's best light." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A recognized regional landmark with regular local traffic", "Benefits from proximity to Ghatshila's established tourist infrastructure"],
+      precautions: ["Standard water-safety caution near the riverbank", "Limited facilities directly at the barrage", "Visiting at dusk means watching your footing on the approach path"],
+      soloTips: ["Comfortable as part of a day trip; a dusk visit is more enjoyable with others given the fading light"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ghatshila Police", number: "0657-2432233" }],
+      safeZones: ["The main viewing area near the barrage"],
+      avoidAreas: ["The riverbank edge after full dark"],
+    },
+    rating: 4.1,
+    reviews: 220,
+    mustEat: ["Local snacks in Ghatshila town", "Regional Jharkhandi meals"],
+    packingTips: ["A camera for the twilight view", "A flashlight if staying until after dark", "Comfortable footwear for the riverside approach"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
