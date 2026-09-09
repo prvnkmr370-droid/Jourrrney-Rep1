@@ -2627,12 +2627,11 @@ export const DESTINATIONS: Destination[] = [
       { mode: "E-Bicycle", cost: "₹500–₹800/day", notes: "For Leh town exploration only", available: true },
     ],
     nearbyPlaces: [
-      { name: "Pangong Tso Lake", distance: "160 km", type: "Scenic Lake", isHidden: false },
-      { name: "Nubra Valley", distance: "120 km", type: "Desert Valley", isHidden: false },
-      { name: "Tso Moriri Lake", distance: "240 km", type: "Remote Lake – Hidden Gem", isHidden: true },
-      { name: "Zanskar Valley", distance: "250 km", type: "Off-beat Adventure", isHidden: true },
-      { name: "Hemis National Park", distance: "40 km", type: "Snow Leopard Habitat", isHidden: false },
-      { name: "Wari La Pass", distance: "180 km", type: "Unexplored Route", isHidden: true },
+      { name: "Pangong Tso Lake", distance: "160 km", type: "Scenic Lake", isHidden: false, id: "pangong-tso" },
+      { name: "Nubra Valley", distance: "120 km", type: "Desert Valley", isHidden: false, id: "nubra-valley" },
+      { name: "Tso Moriri Lake", distance: "240 km", type: "Remote Lake – Hidden Gem", isHidden: true, id: "tso-moriri" },
+      { name: "Zanskar Valley", distance: "250 km", type: "Off-beat Adventure", isHidden: true, id: "zanskar-valley" },
+      { name: "Hemis National Park", distance: "40 km", type: "Snow Leopard Habitat", isHidden: false, id: "hemis-national-park" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 800, food: 500, transport: 500, activities: 200 },
