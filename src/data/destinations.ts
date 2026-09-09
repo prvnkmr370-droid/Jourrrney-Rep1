@@ -51792,6 +51792,123 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local snacks and street food in Ghatshila", "Litti chokha"],
     packingTips: ["A camera for the hill and lake reflections", "A change of clothes if boating", "Comfortable walking shoes"],
   },
+  {
+    id: "garga-dam",
+    name: "Garga Dam",
+    state: "Jharkhand",
+    tagline: "A Working Reservoir and Spillway Supplying Water to Bokaro Steel City",
+    description: "Garga Dam sits on the Garga River on the outskirts of Bokaro Steel City, built to supply water to the steel plant and surrounding township and, in doing so, creating a genuinely pleasant reservoir that has become a modest local recreation spot. A long paved embankment walkway runs along the top of the dam, offering open views across the water and drawing evening walkers and picnickers from the nearby city, while the dam's spillway gates present a striking sight when released during the monsoon, with churning white water cascading over the pink-painted piers into the river below. Functional rather than scenic by design, Garga Dam nonetheless offers a genuinely accessible slice of open water and engineering interest right at the edge of Bokaro's industrial township.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Garga_Dam_Bokaro%2C_2008.jpg/1280px-Garga_Dam_Bokaro%2C_2008.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Garga_Dam_Bokaro%2C_2008.jpg/1280px-Garga_Dam_Bokaro%2C_2008.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Garga_Dam_Bokaro%2C_2008.jpg/1280px-Garga_Dam_Bokaro%2C_2008.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Garga_Dam.jpg/1280px-Garga_Dam.jpg",
+    ],
+    imageCredit: "Photos: uploaded to Wikimedia Commons — CC BY-SA 3.0, one captioned \"Garga Dam, Bokaro Steel City\" showing the spillway in monsoon release, the other simply captioned \"Garga Dam\" showing the embankment walkway.",
+    category: ["Nature"],
+    bestSeason: "July – February (spillway most active during and just after monsoon)",
+    duration: "1 hour",
+    highlights: [
+      { name: "A working reservoir supplying Bokaro Steel City" },
+      { name: "A dramatic spillway release during monsoon" },
+      { name: "A paved embankment walkway with open water views" },
+      { name: "A modest, accessible local recreation spot" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi/Kolkata to Bokaro, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Bokaro is well-connected by rail with its own station." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Bokaro Steel City — ~16-18h", fromMumbai: "~22h+", fromBangalore: "~26h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local ride from Bokaro station to Garga Dam." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Within Bokaro Steel City", fromMumbai: "—", fromBangalore: "—", duration: "~15-20min from central Bokaro", costRange: "₹100–₹300 local cab", tips: "Visit during or just after monsoon for the most dramatic spillway views." },
+    ],
+    accommodation: [
+      { type: "Hotels (Bokaro)", priceRange: "₹1,000–₹4,500/night", examples: ["Hotels across Bokaro Steel City"], description: "The dam sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Bokaro", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bokaro Steel Plant", distance: "~8 km", type: "Industrial Landmark", isHidden: false, id: "bokaro-steel-plant" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 100, accommodation: 0, food: 100, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 350, accommodation: 0, food: 300, transport: 150, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 800, accommodation: 0, food: 600, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bokaro Steel City Sights", morning: "Visit the Bokaro Steel Plant main gate.", afternoon: "Continue to Garga Dam for an embankment walk.", evening: "Watch the spillway if the season allows, then return to your hotel.", stay: "A hotel in Bokaro", meals: "Local snacks and street food in Bokaro", tips: "The spillway is most dramatic during and just after monsoon; outside that period the dam is a quieter walking spot." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A well-known local walking spot with regular evening footfall", "Close to Bokaro Steel City with easy access"],
+      precautions: ["Standard water-body caution near the embankment, especially during spillway release", "Limited facilities outside peak evening hours"],
+      soloTips: ["Comfortable during daylight and early evening hours given the steady stream of local walkers"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Bokaro Police", number: "06542-230033" }],
+      safeZones: ["The main embankment walkway"],
+      avoidAreas: ["Standing too close to the spillway gates during active release"],
+    },
+    rating: 3.9,
+    reviews: 210,
+    mustEat: ["Local snacks and street food in Bokaro", "Litti chokha"],
+    packingTips: ["A camera for the spillway during monsoon", "Comfortable walking shoes for the embankment"],
+  },
+  {
+    id: "palkot-wildlife-sanctuary",
+    name: "Palkot Wildlife Sanctuary",
+    state: "Jharkhand",
+    tagline: "A Rugged, Boulder-Strewn Forest Sanctuary Spanning Three Districts",
+    description: "Palkot Wildlife Sanctuary stretches across parts of Gumla, Simdega, and Ranchi districts, its terrain genuinely defined by rocky, boulder-strewn hills rising through dense deciduous sal forest — a rugged, wilder landscape than many of Jharkhand's more manicured parks. Established in 1990 and spanning roughly 180 square kilometres, the sanctuary is home to leopards, sloth bears, wolves, wild dogs, and a herd of elephants that move through the area seasonally, alongside a rich variety of birdlife including hornbills and peacocks. With minimal built infrastructure and a genuinely untamed character, Palkot appeals to visitors seeking a quieter, more off-the-beaten-path wildlife destination than the state's better-known parks, its rock-strewn hilltops offering a distinctive, dramatic backdrop found nowhere else in the region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Palkot_Wildlife_Sanctuary_hill.jpg/1280px-Palkot_Wildlife_Sanctuary_hill.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Palkot_Wildlife_Sanctuary_hill.jpg/1280px-Palkot_Wildlife_Sanctuary_hill.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Palkot_Wildlife_Sanctuary_hill.jpg/1280px-Palkot_Wildlife_Sanctuary_hill.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC0, description confirms \"Landscape of Palkot Wildlife Sanctuary in Simdega district, Jharkhand\". Only one genuine landscape photograph of this sanctuary was found after a real search — a second candidate file was an informational signboard/poster rather than a photograph of the sanctuary itself, and was not used — documented here as a single-image exception.",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – March",
+    duration: "3–4 hours (guided visit)",
+    highlights: [
+      { name: "Rugged, boulder-strewn hills rising through sal forest" },
+      { name: "Home to leopards, sloth bears, wolves, and seasonal elephant herds" },
+      { name: "Spans three districts — Gumla, Simdega, and Ranchi" },
+      { name: "A quieter, off-the-beaten-path wildlife destination" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to the sanctuary", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~2-3h drive", costRange: "₹4,000–₹12,000", tips: "The sanctuary straddles Gumla, Simdega, and Ranchi districts, roughly 60-70km from Ranchi." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a taxi from Ranchi for the onward drive." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then toward Gumla/Simdega", fromMumbai: "—", fromBangalore: "—", duration: "~2-3h from Ranchi", costRange: "₹1,500–₹3,000 taxi", tips: "Arrange forest department permissions and a local guide in advance." },
+    ],
+    accommodation: [
+      { type: "Hotels (Gumla/Simdega/Ranchi)", priceRange: "₹800–₹3,500/night", examples: ["Hotels in Gumla or Simdega town", "Hotels in Ranchi for a day trip"], description: "Limited accommodation directly at the sanctuary — most visitors base themselves in nearby towns." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi/Forest Department Vehicle", cost: "₹1,500–₹3,000", notes: "Arrange in advance with forest department permission", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "~65 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1000, accommodation: 0, food: 350, transport: 500, activities: 150 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2200, accommodation: 0, food: 700, transport: 1200, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Palkot Wildlife Sanctuary Visit", morning: "Drive from Ranchi to Palkot Wildlife Sanctuary.", afternoon: "Explore the sanctuary's rocky hills and forest trails with a forest department guide.", evening: "Return to Ranchi or a nearby town.", stay: "A hotel in Ranchi, Gumla, or Simdega", meals: "Simple meals arranged with the guide or in a nearby town", tips: "Arrange forest department permission and a guide well in advance — this sanctuary has minimal tourist infrastructure." },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Exercise Caution",
+      highlights: ["A managed forest sanctuary with forest department oversight when visited through proper channels"],
+      precautions: ["Genuinely remote and minimally developed — never enter without forest department permission and a guide", "Wildlife including leopards and elephants makes unguided movement unsafe", "Very limited facilities or mobile connectivity within the sanctuary"],
+      soloTips: ["Not recommended solo — visit only with a forest department guide and proper permits"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Gumla Forest Division", number: "06524-222333" }],
+      safeZones: ["Designated trails accompanied by a forest department guide"],
+      avoidAreas: ["Any unguided or unpermitted entry into the sanctuary interior"],
+    },
+    rating: 3.9,
+    reviews: 85,
+    mustEat: ["Simple meals arranged locally", "Regional Gumla/Simdega cuisine"],
+    packingTips: ["Forest department permits arranged in advance", "A knowledgeable local guide — essential, not optional", "Sturdy trekking shoes for the rocky terrain", "Sufficient water and supplies, given limited facilities"],
+  },
 
 ];
 
