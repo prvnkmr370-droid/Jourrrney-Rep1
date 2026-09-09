@@ -49960,6 +49960,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "A camera for the leopard enclosures", "Sun protection for the open walkways"],
   },
 
+  {
+    id: "madhuban-jain-temples",
+    name: "Madhuban Jain Temples",
+    state: "Jharkhand",
+    tagline: "The Base Town for Shikharji, With Over a Dozen Marble Temples of Its Own",
+    description: "Madhuban, the base town for the Shikharji pilgrimage up Parasnath Hill, is a genuine temple town in its own right — beyond serving as the launch point for the demanding hilltop circuit, its streets hold more than a dozen dedicated Jain temples, each honouring a specific Tirthankar (Abhinandannath, Chandraprabha, Shantinath, Shitalnath, and others among them), their white marble facades and carved gateways lining the town in a density unmatched elsewhere in Jharkhand. The Shantisagar Memorial Temple, illuminated at night with tiered marble columns and an open pavilion, stands out as a particularly striking piece of modern Jain temple architecture, while the older Digambar Jain Temple anchors the town's main street with a more traditional, weathered facade. For pilgrims resting before or after the Shikharji trek, and for visitors simply interested in Jain temple architecture, Madhuban offers a genuinely dense, walkable cluster of sacred sites in its own right.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Shantisagar_Memorial_Temple_Madhuban.jpg/1280px-Shantisagar_Memorial_Temple_Madhuban.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Shantisagar_Memorial_Temple_Madhuban.jpg/1280px-Shantisagar_Memorial_Temple_Madhuban.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Shantisagar_Memorial_Temple_Madhuban.jpg/1280px-Shantisagar_Memorial_Temple_Madhuban.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Digambar_Jain_Temple_in_Madhuban.jpg/1280px-Digambar_Jain_Temple_in_Madhuban.jpg",
+    ],
+    imageCredit: "Photos: Nizil Shah — Wikimedia Commons, CC BY-SA 4.0, both GPS-confirmed at Madhuban (24°00'08.82\"N 86°08'50.94\"E and 24°00'21.65\"N 86°08'52.98\"E), part of the \"Wiki Treks Parasnath Hill\" project, categorized \"Temples in Madhuban, Giridih\".",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Over a dozen dedicated Tirthankar temples in a single walkable town" },
+      { name: "The illuminated Shantisagar Memorial Temple" },
+      { name: "The traditional Digambar Jain Temple on the main street" },
+      { name: "The base town and traditional resting point for the Shikharji pilgrimage" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Giridih or Parasnath railway station area", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Parasnath railway station is the most direct gateway." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Parasnath railway station, on the Howrah-Delhi line — ~14-16h", fromMumbai: "~24h+", fromBangalore: "~28h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Parasnath station to Madhuban." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road, then to Madhuban town", fromMumbai: "—", fromBangalore: "—", duration: "~20min from Parasnath station", costRange: "₹300–₹800 local cab", tips: "Easily explored on foot given the town's compact, walkable temple cluster." },
+    ],
+    accommodation: [
+      { type: "Dharamshalas (Madhuban)", priceRange: "₹300–₹1,000/night", examples: ["Numerous Jain pilgrim rest houses in Madhuban"], description: "Built specifically for pilgrimage footfall, often simple but well-run." },
+      { type: "Hotels (Madhuban/Giridih)", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Madhuban and nearby Giridih"], description: "A more comfortable option for a rest day before or after a Shikharji trek." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple cluster is compact and easily explored on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Parasnath Hill (Shikharji)", distance: "Adjoining (trailhead)", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 30, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1400, accommodation: 800, food: 400, transport: 100, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 3200, accommodation: 2200, food: 700, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Madhuban Temple Walk", morning: "Rest and prepare before or after the Shikharji trek.", afternoon: "Walk through Madhuban's cluster of Tirthankar temples.", evening: "Visit the illuminated Shantisagar Memorial Temple.", stay: "A dharamshala in Madhuban", meals: "Simple satvik meals at Madhuban dharamshalas", tips: "The evening illumination of several temples adds a genuinely different character to a return visit after dark." },
+    ],
+    womenSafety: {
+      score: 7.6,
+      level: "Safe",
+      highlights: ["A major, continuously active pilgrimage town with heavy footfall of Jain pilgrims from across India", "Well-established local infrastructure used to pilgrim traffic"],
+      precautions: ["Very crowded during Shikharji pilgrimage peak periods", "Standard temple-town courtesy — remove footwear, dress modestly"],
+      soloTips: ["Very comfortable solo given the steady stream of pilgrims through the compact, walkable town"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Giridih Police", number: "06532-222233" }],
+      safeZones: ["The entire temple cluster and main town area"],
+      avoidAreas: ["None specifically flagged — a compact, well-trafficked pilgrim town"],
+    },
+    rating: 4.5,
+    reviews: 1400,
+    mustEat: ["Simple Jain satvik meals at Madhuban dharamshalas", "Local sweets from pilgrim-town shops"],
+    packingTips: ["Modest clothing for temple visits", "Comfortable footwear for walking between temples", "Cash for offerings"],
+  },
+  {
+    id: "iit-ism-dhanbad",
+    name: "IIT (ISM) Dhanbad",
+    state: "Jharkhand",
+    tagline: "India's Oldest Mining School, Now a Premier IIT With a Genuine Heritage Campus",
+    description: "IIT (ISM) Dhanbad traces its roots to 1926 as the Indian School of Mines, making it one of India's oldest technical institutions and, since 2016, a full Indian Institute of Technology — a genuinely significant upgrade in status that reflected the school's long-standing academic reputation. The campus itself carries real visible history: a colonial-era Heritage Building, its pink-and-cream facade fronted by palm trees and manicured gardens, sits alongside a modern high-rise Central Library and contemporary academic blocks, a physical timeline of the institution's century-long evolution. For visitors interested in India's engineering and mining education history, or simply passing through Dhanbad, the campus offers a genuinely attractive mix of heritage and modern architecture within a working, prestigious academic institution.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Heritage_Building_at_IIT_Dhanbad_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Heritage_Building_at_IIT_Dhanbad_1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Heritage_Building_at_IIT_Dhanbad_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Central_Library_IIT%28ISM%29_dhanbad.jpg/1280px-Central_Library_IIT%28ISM%29_dhanbad.jpg",
+    ],
+    imageCredit: "Photos: Ujjwalagrawal17 (CC BY-SA 4.0, used directly on English Wikipedia's \"Jharkhand\" and \"IIT (ISM) Dhanbad\" articles) and YashwantSandey (CC BY-SA 4.0, description confirms \"Central library of IIT Dhanbad as seen from Jasper hostel\") — Wikimedia Commons, both categorized \"IIT (ISM) Dhanbad\".",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The colonial-era Heritage Building, dating to the school's 1926 founding" },
+      { name: "One of India's oldest technical institutions, now a full IIT" },
+      { name: "A modern Central Library alongside historic architecture" },
+      { name: "Landscaped campus gardens" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Dhanbad, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹13,000", tips: "Dhanbad is well-connected by rail even without a direct flight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Dhanbad Junction — ~14-16h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "14h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Dhanbad station to the campus." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Grand Trunk Road to Dhanbad, then to the campus", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from central Dhanbad", costRange: "₹150–₹400 local cab", tips: "Exterior viewing of the Heritage Building is the respectful way to visit an active academic campus." },
+    ],
+    accommodation: [
+      { type: "Hotels (Dhanbad)", priceRange: "₹1,200–₹4,500/night", examples: ["Hotels across Dhanbad city"], description: "Most visitors day-trip from central Dhanbad." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Dhanbad", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Topchanchi Lake", distance: "~20 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 200, accommodation: 0, food: 150, transport: 50, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 550, accommodation: 0, food: 350, transport: 150, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1200, accommodation: 0, food: 700, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "IIT (ISM) Dhanbad Campus Visit", morning: "View the Heritage Building and campus gardens.", afternoon: "Continue to other Dhanbad city sights.", evening: "Return to your hotel.", stay: "A hotel in Dhanbad", meals: "Local snacks near the campus", tips: "Respect that this is an active academic campus — exterior viewing is appropriate rather than an unannounced visit inside buildings." },
+    ],
+    womenSafety: {
+      score: 8.1,
+      level: "Very Safe",
+      highlights: ["A well-secured, actively managed premier academic institution", "Central Dhanbad location keeps it accessible"],
+      precautions: ["Standard courtesy for an active academic campus"],
+      soloTips: ["Very comfortable solo given the managed campus setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Dhanbad Police", number: "0326-2300100" }],
+      safeZones: ["The exterior campus grounds"],
+      avoidAreas: ["None significant — a well-managed institutional campus"],
+    },
+    rating: 4.4,
+    reviews: 620,
+    mustEat: ["Local snacks near the campus", "Dhanbad-style street food"],
+    packingTips: ["A camera for the heritage architecture", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
