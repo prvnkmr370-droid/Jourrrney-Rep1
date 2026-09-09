@@ -51263,6 +51263,123 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local snacks and street food in Giridih town", "Litti chokha"],
     packingTips: ["Comfortable walking shoes", "A camera for the hill backdrop, especially at golden hour"],
   },
+  {
+    id: "nakti-dam",
+    name: "Nakti Dam",
+    state: "Jharkhand",
+    tagline: "A Hilltop-Framed Reservoir Near Chakradharpur, Popular for Boating",
+    description: "Nakti Dam sits in Bandhgaon village near Chakradharpur, an irrigation dam on the Sanjay River that has grown into one of West Singhbhum's most popular local getaways thanks to the genuinely striking setting of its reservoir — deep blue water framed by forested hills on every side, with small boats and the occasional fishing raft crossing the water below a rocky viewpoint. A stone-laid path leads down from a hilltop viewpoint to the water's edge, giving visitors both a sweeping overview of the valley and closer access to the reservoir itself, where paddleboats and small motorboats are available for hire. Genuinely developed as a tourism spot by the state government, Nakti Dam offers a relaxed half-day outing combining scenic hill-and-water views with simple recreational boating, especially lively during and after the monsoon when the reservoir is at its fullest.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Nakti_Dam.jpg/1280px-Nakti_Dam.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Nakti_Dam.jpg/1280px-Nakti_Dam.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Nakti_Dam.jpg/1280px-Nakti_Dam.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Nakti_DAM_in_Monsoon_123.jpg/1280px-Nakti_DAM_in_Monsoon_123.jpg",
+    ],
+    imageCredit: "Photos: Pradip Paswan — Wikimedia Commons, both categorized \"Nakti Dam\": a hilltop viewpoint photo (CC BY-SA 4.0, description confirms \"Nakti dam is situated in the village of Bandhgaon near Chakradharpur, Jharkhand, India\") and a monsoon-season reservoir/boating view (CC0).",
+    category: ["Nature", "Adventure"],
+    bestSeason: "July – February (fullest reservoir just after monsoon)",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "A hill-framed reservoir on the Sanjay River" },
+      { name: "Paddleboats and small motorboats for hire" },
+      { name: "A stone-paved hilltop viewpoint overlooking the valley" },
+      { name: "A genuinely popular local getaway near Chakradharpur" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi/Kolkata to Chakradharpur, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Chakradharpur is well-connected by rail." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Chakradharpur — ~22h+", fromMumbai: "~18h+", fromBangalore: "~24h+", duration: "18h+ depending on origin", costRange: "₹500–₹2,500", tips: "A short drive from Chakradharpur station to Bandhgaon." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chakradharpur town", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from Chakradharpur", costRange: "₹300–₹700 taxi", tips: "Also reachable en route between Chakradharpur and Ranchi via the state highway." },
+    ],
+    accommodation: [
+      { type: "Hotels (Chakradharpur/Chaibasa)", priceRange: "₹800–₹3,500/night", examples: ["Hotels in Chakradharpur and Chaibasa"], description: "Most visitors day-trip from Chakradharpur." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹300–₹700", notes: "From Chakradharpur town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chaibasa", distance: "~30 km", type: "Town", isHidden: false, id: "chaibasa" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 700, accommodation: 0, food: 350, transport: 250, activities: 150 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1600, accommodation: 0, food: 700, transport: 600, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nakti Dam Visit", morning: "Drive to Nakti Dam from Chakradharpur.", afternoon: "Enjoy the hilltop viewpoint and take a boat ride on the reservoir.", evening: "Return to Chakradharpur or continue toward Chaibasa.", stay: "A hotel in Chakradharpur or Chaibasa", meals: "Local snacks and tea stalls near the dam", tips: "Boating is most enjoyable just after monsoon when the reservoir is fullest." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A genuinely popular, actively developed local tourism spot with regular visitor footfall", "Boating operations bring a steady presence of staff and other visitors"],
+      precautions: ["Use only designated boating operators and wear provided life jackets", "Can get crowded on weekends and holidays — standard crowd awareness"],
+      soloTips: ["Comfortable during daylight hours given the steady stream of visitors and boat operators"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Chakradharpur Police", number: "06587-238333" }],
+      safeZones: ["The hilltop viewpoint and designated boating area"],
+      avoidAreas: ["Unauthorized or unsupervised areas of the reservoir"],
+    },
+    rating: 4.2,
+    reviews: 480,
+    mustEat: ["Local snacks and tea near the dam", "Regional Singhbhum cuisine in Chakradharpur"],
+    packingTips: ["A change of clothes if boating", "A camera for the hilltop viewpoint", "Sun protection for the open viewpoint"],
+  },
+  {
+    id: "rajmahal-hills",
+    name: "Rajmahal Hills",
+    state: "Jharkhand",
+    tagline: "Rolling, Forested Hills Near Sahebganj, Steeped in Mughal-Era History",
+    description: "The Rajmahal Hills rise along Jharkhand's border with West Bengal near Sahebganj, a range of rounded, densely forested hills overlooking the Ganges that once formed a strategically vital pass between Bengal and Bihar, guarded historically at the Sakrigali gorge and immortalized in numerous 18th-century British paintings of the era. Today the hills offer a genuinely scenic, largely undeveloped landscape of green ridgelines rising above cultivated fields and Santhal villages, particularly lush and atmospheric during and just after the monsoon. Home to the indigenous Malto and Sauria Paharia tribal communities, the Rajmahal Hills combine real natural beauty with substantial historical weight, having once marked the easternmost extent of the Mughal Empire's overland routes into Bengal.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hills_of_rajmahal.jpg/1280px-Hills_of_rajmahal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hills_of_rajmahal.jpg/1280px-Hills_of_rajmahal.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hills_of_rajmahal.jpg/1280px-Hills_of_rajmahal.jpg",
+    ],
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 3.0, description confirms \"hills of rajmahal near barhait, sahebganj, jharkhand, india\", categorized \"Rajmahal hills\". Only one genuine modern photograph of these hills was found after a real search — the remaining Commons material is 18th-century British colonial-era paintings, unsuitable for a travel destination card — documented here as a single-image exception.",
+    category: ["Nature", "Heritage"],
+    bestSeason: "July – February (lush green during and after monsoon)",
+    duration: "Half a day",
+    highlights: [
+      { name: "Rolling, forested hills overlooking the Ganges" },
+      { name: "The historic Sakrigali pass between Bengal and Bihar" },
+      { name: "Home to the indigenous Malto and Sauria Paharia communities" },
+      { name: "A genuinely undeveloped, scenic rural landscape" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi/Kolkata to Sahebganj, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Sahebganj is well-connected by rail from Kolkata." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Sahebganj — ~18h+", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short drive from Sahebganj town to the hill areas near Barhait." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Sahebganj town", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Sahebganj to Barhait area", costRange: "₹1,000–₹2,000 taxi", tips: "A scenic drive through rural Santhal Pargana countryside." },
+    ],
+    accommodation: [
+      { type: "Hotels (Sahebganj)", priceRange: "₹800–₹3,000/night", examples: ["Hotels and guesthouses in Sahebganj town"], description: "Most visitors day-trip from Sahebganj." },
+    ],
+    localTransport: [
+      { mode: "Private Taxi", cost: "₹1,000–₹2,000", notes: "From Sahebganj town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sahebganj Town", distance: "~30 km", type: "District Headquarters", isHidden: false, id: "sahebganj-town" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 0, food: 350, transport: 400, activities: 50 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 0, food: 700, transport: 1000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajmahal Hills Drive", morning: "Drive from Sahebganj toward Barhait through the Rajmahal Hills.", afternoon: "Explore rural villages and scenic viewpoints along the route.", evening: "Return to Sahebganj.", stay: "A hotel in Sahebganj", meals: "Local Santhal Pargana cuisine", tips: "Best appreciated as a scenic drive through the countryside rather than a single fixed viewpoint." },
+    ],
+    womenSafety: {
+      score: 7.0,
+      level: "Safe",
+      highlights: ["A rural but well-travelled road corridor near Sahebganj", "Genuine local community presence along the route"],
+      precautions: ["Limited tourist infrastructure — plan with a local guide or driver", "Remote stretches have fewer facilities"],
+      soloTips: ["Best visited with a local guide or driver given the limited tourist infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Sahebganj Police", number: "06436-222333" }],
+      safeZones: ["Main roads and villages along the route"],
+      avoidAreas: ["Remote forested areas after dark"],
+    },
+    rating: 3.9,
+    reviews: 110,
+    mustEat: ["Local Santhal Pargana cuisine", "Roadside tea and snacks"],
+    packingTips: ["A local guide or driver for the best route", "A camera for the hill and valley views", "Comfortable clothing for a rural drive"],
+  },
 
 ];
 
