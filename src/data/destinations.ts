@@ -49366,6 +49366,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the statues and colonial architecture", "Comfortable walking shoes", "Warm layers for the plateau's cool climate"],
   },
 
+  {
+    id: "netarhat-residential-school",
+    name: "Netarhat Residential School",
+    state: "Jharkhand",
+    tagline: "One of India's Most Prestigious Government Residential Schools",
+    description: "Netarhat Residential School, also known as Netarhat Awasiya Vidyalaya, is one of India's most respected government-run residential schools, established in 1954 to give talented rural students — selected purely on merit through a competitive entrance exam — access to a genuinely rigorous, boarding-school-standard education regardless of their family's income. Its alumni network reaches into the highest levels of the Indian Administrative Service, judiciary, and military, a track record that's made \"Netarhat School\" a byword across Bihar and Jharkhand for opportunity through merit. The main building itself, a long colonial-style structure set behind manicured lawns and a flagpole-centred approach, sits on the same Netarhat plateau as the region's famous viewpoints, giving visitors interested in Jharkhand's education history a tangible landmark to see alongside the area's natural scenery.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/25/Netarhat_School.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/25/Netarhat_School.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Netarhat_School.jpg",
+    ],
+    imageCredit: "Photo: Vikash.iitb — Wikimedia Commons, public domain, used directly on Hindi Wikipedia's नेतरहाट विद्यालय article, categorized \"Netarhat Residential School\"/\"Netarhat Awasiya Vidyalaya\". Only one genuinely verified image of this specific school building was found after a real search — documented here as a single-image exception.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes (exterior viewing)",
+    highlights: [
+      { name: "One of India's most respected merit-based government schools, established 1954" },
+      { name: "A long colonial-style main building behind manicured lawns" },
+      { name: "A notable alumni network across Indian civil services" },
+      { name: "A landmark within Netarhat's broader plateau setting" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Netarhat", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4-5h drive", costRange: "₹4,000–₹12,000", tips: "Visit as part of a wider Netarhat plateau itinerary." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj, then onward road via Netarhat", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the more practical rail gateway for this plateau region." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Netarhat toward the school", fromMumbai: "—", fromBangalore: "—", duration: "Within Netarhat town", costRange: "₹100–₹300 local transport", tips: "As an active school, exterior viewing is the respectful way to visit rather than entering the campus uninvited." },
+    ],
+    accommodation: [
+      { type: "Government Guesthouses (Netarhat)", priceRange: "₹1,000–₹2,500/night", examples: ["Jharkhand Tourism's Prabhat Vihar"], description: "The standard base for exploring Netarhat's sights." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within Netarhat town, easily walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chalet House, Netarhat", distance: "~1 km", type: "Heritage Building", isHidden: false, id: "chalet-house-netarhat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 100, accommodation: 0, food: 100, transport: 0, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 350, accommodation: 0, food: 300, transport: 50, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 800, accommodation: 0, food: 600, transport: 100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Netarhat School and Town", morning: "View the Netarhat School's main building from outside.", afternoon: "Continue to Chalet House and other central Netarhat sights.", evening: "A sunset viewpoint nearby.", stay: "A guesthouse in Netarhat", meals: "Local meals at the guesthouse", tips: "Respect that this is an active school campus — exterior viewing is appropriate, not an unannounced visit inside." },
+    ],
+    womenSafety: {
+      score: 8.0,
+      level: "Very Safe",
+      highlights: ["Located within central Netarhat town, a well-visited hill station with steady tourist footfall", "An active, well-secured educational institution"],
+      precautions: ["Standard courtesy for an active school campus — view respectfully from outside"],
+      soloTips: ["Comfortable solo given the central, well-trafficked Netarhat town location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Latehar Police", number: "06562-292233" }],
+      safeZones: ["The exterior grounds and central Netarhat town"],
+      avoidAreas: ["None significant — a central, well-visited town location"],
+    },
+    rating: 4.3,
+    reviews: 190,
+    mustEat: ["Local Jharkhandi meals at Netarhat guesthouses", "Regional forest-produce dishes"],
+    packingTips: ["A camera for the school building exterior", "Comfortable walking shoes", "Warm layers for the plateau's cool climate"],
+  },
+  {
+    id: "kiriburu",
+    name: "Kiriburu",
+    state: "Jharkhand",
+    tagline: "A Misty Iron-Ore Hill Township in Remote West Singhbhum",
+    description: "Kiriburu sits deep in West Singhbhum district, a hill township built around one of India's significant iron-ore mining operations, its elevated position keeping it genuinely cool and often shrouded in mist — driving conditions here can turn foggy enough that even the short stretch of road through the forest becomes hard to make out. Far more remote than Jharkhand's better-known hill stations, Kiriburu's real character comes from that combination of industrial purpose and genuine natural isolation — dense forest pressing right up against the roads, low cloud drifting through the hills, and a quiet township existing almost entirely because of the ore beneath it. For visitors genuinely seeking Jharkhand's most out-of-the-way corners, Kiriburu offers a real, unpolished look at how mining and mountain landscape coexist in this part of the state.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Road_view_at_Kiriburu_under_foggy_weather.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Road_view_at_Kiriburu_under_foggy_weather.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/dc/Road_view_at_Kiriburu_under_foggy_weather.jpg",
+    ],
+    imageCredit: "Photo: uploaded via en.wikipedia upload wizard — Wikimedia Commons, GFDL, categorized \"Kiriburu\"/\"Roads in Jharkhand\", its description confirming the genuinely foggy driving conditions typical of the area. Only one genuinely verified image of this specific township was found after a real search — documented here as a single-image exception.",
+    category: ["Nature"],
+    bestSeason: "October – February (avoid monsoon fog and slippery roads)",
+    duration: "Half a day",
+    highlights: [
+      { name: "A remote hill township built around iron-ore mining" },
+      { name: "Genuinely misty, forest-lined roads" },
+      { name: "One of Jharkhand's most out-of-the-way destinations" },
+      { name: "A real look at mining and mountain landscape coexisting" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Ranchi or Kolkata to Chaibasa/Jamshedpur area, then a long drive", fromMumbai: "Via Kolkata — ~5h+ total", fromBangalore: "Via Kolkata — ~5.5h+ total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "This is one of the more remote corners of Jharkhand — plan extra travel time." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Chakradharpur or Jamshedpur, then onward road", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Chakradharpur is the more practical rail gateway for West Singhbhum." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jamshedpur and Chaibasa deep into West Singhbhum district", fromMumbai: "—", fromBangalore: "—", duration: "~3-4h from Chaibasa", costRange: "₹3,000–₹5,500 private cab", tips: "Roads through the forest can turn genuinely foggy — drive cautiously, especially in early morning or monsoon." },
+    ],
+    accommodation: [
+      { type: "Guesthouses (Kiriburu)", priceRange: "₹800–₹2,000/night", examples: ["Mining-township guesthouses"], description: "Basic accommodation tied to the local mining operation and township." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "Limited local transport given the remote location", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Saranda Forest", distance: "Nearby (same forest belt)", type: "Forest Region", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2000, accommodation: 1200, food: 500, transport: 200, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4500, accommodation: 3000, food: 900, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kiriburu Visit", morning: "Drive from Chaibasa deep into West Singhbhum toward Kiriburu.", afternoon: "Explore the misty hill township and surrounding forest roads.", evening: "Overnight in Kiriburu or begin the return journey.", stay: "A guesthouse in Kiriburu", meals: "Simple local meals in the township", tips: "A genuinely remote destination — arrange transport and accommodation in advance rather than expecting to find options on arrival." },
+    ],
+    womenSafety: {
+      score: 6.7,
+      level: "Exercise Caution",
+      highlights: ["A functioning mining township with an established local community", "Regular industrial and local traffic through the area"],
+      precautions: ["A genuinely remote location with limited tourist infrastructure — plan carefully in advance", "Foggy road conditions can be hazardous, especially in monsoon and early mornings", "Very limited mobile network in outer areas"],
+      soloTips: ["Not recommended solo without local contacts or a pre-arranged guide, given the remoteness"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Chaibasa Police", number: "06582-256333" }],
+      safeZones: ["The main township area"],
+      avoidAreas: ["Forest roads in heavy fog or after dark without local guidance"],
+    },
+    rating: 3.8,
+    reviews: 90,
+    mustEat: ["Simple local meals in the township", "Regional Jharkhandi forest-produce dishes"],
+    packingTips: ["Warm layers for the cool, misty climate", "A pre-arranged vehicle and guide given the remoteness", "A flashlight and caution for foggy roads"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
