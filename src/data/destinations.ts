@@ -50200,6 +50200,125 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temple visits", "A camera for the distinctive twin towers", "Combine with a Chandil Dam visit"],
   },
 
+  {
+    id: "pakur-martello-tower",
+    name: "Pakur Martello Tower",
+    state: "Jharkhand",
+    tagline: "A Round Colonial-Era Watchtower Built to Suppress the 1855 Santhal Rebellion",
+    description: "The Martello Tower at Pakur is a genuinely distinctive piece of colonial military architecture — a round, red-painted watchtower with a domed roof and small rectangular windows, built by the British specifically to help suppress the Santhal Hul, the 1855 rebellion led by Sidhu and Kanhu Murmu. Modelled on the Martello tower design used across the British Empire for coastal and frontier defence, its presence in landlocked Pakur reflects just how seriously colonial authorities treated the Santhal uprising as a military threat requiring purpose-built fortification. Now a quiet heritage landmark within the town rather than an active defensive structure, the tower offers a genuinely tangible physical trace of one of eastern India's most significant tribal rebellions, standing in real historical tension with the Sidhu Kanhu memorials found elsewhere in Jharkhand honouring the same uprising the tower was built to crush.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg/1280px-Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg/1280px-Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg/1280px-Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_01.jpg/1280px-Martello_tower_at_Pakur%2C_which_was_built_to_fend_off_the_Santhal_rebellion_in_by_the_British_colonialists_01.jpg",
+    ],
+    imageCredit: "Photos: Pinakpani — Wikimedia Commons, CC BY 4.0, used directly on English Wikivoyage's \"Pakur\" page, categorized \"Pakur Martello tower\".",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    highlights: [
+      { name: "A round, domed colonial-era Martello-style watchtower" },
+      { name: "Built specifically in response to the 1855 Santhal Hul" },
+      { name: "A rare example of Martello tower architecture in landlocked India" },
+      { name: "A tangible physical link to a major tribal rebellion" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata to Pakur area, then onward by road", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Pakur is closer to Kolkata than most other Jharkhand gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Pakur station — ~16-18h", fromMumbai: "~26h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Pakur has its own railway station, a short ride from the tower." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via NH80 through Bihar/Jharkhand to Pakur town", fromMumbai: "—", fromBangalore: "—", duration: "Within Pakur town", costRange: "₹100–₹300 local cab", tips: "A quick, easy stop within a wider Pakur or Dumka-district itinerary." },
+    ],
+    accommodation: [
+      { type: "Hotels (Pakur)", priceRange: "₹700–₹2,000/night", examples: ["Hotels in Pakur town"], description: "Basic to comfortable options in this district headquarters town." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in Pakur town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Massanjore Dam", distance: "~55 km", type: "Dam", isHidden: false, id: "massanjore-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 150, food: 150, transport: 30, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 800, accommodation: 500, food: 300, transport: 100, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1800, accommodation: 1300, food: 500, transport: 200, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Pakur Martello Tower Visit", morning: "Visit the Martello Tower and learn about its Santhal rebellion history.", afternoon: "Explore central Pakur town.", evening: "Continue onward or return.", stay: "A hotel in Pakur", meals: "Local meals in Pakur town", tips: "A quick, historically rich stop for anyone travelling through this corner of Jharkhand." },
+    ],
+    womenSafety: {
+      score: 7.3,
+      level: "Safe",
+      highlights: ["A recognized heritage landmark in a district headquarters town", "Central Pakur location keeps it accessible"],
+      precautions: ["Standard heritage-site courtesy — nothing specific flagged"],
+      soloTips: ["Comfortable solo during daylight hours given the central town location"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Pakur Police", number: "06435-222233" }],
+      safeZones: ["The tower grounds and central Pakur town"],
+      avoidAreas: ["None significant — a central town landmark"],
+    },
+    rating: 4.0,
+    reviews: 90,
+    mustEat: ["Local meals in Pakur town", "Regional Jharkhandi snacks"],
+    packingTips: ["A camera for the distinctive tower architecture", "Comfortable walking shoes"],
+  },
+  {
+    id: "lugu-buru",
+    name: "Lugu Buru",
+    state: "Jharkhand",
+    tagline: "The Most Sacred Santhal Worship Site, Drawing Pilgrims from Nepal, Bangladesh, and Beyond",
+    description: "Lugu Buru is genuinely the most important worship site for the Santhal people, a forested hill straddling the Bokaro-Giridih border where Santhals from across India and neighbouring Nepal and Bangladesh gather annually to perform sacred rituals central to their indigenous faith. The hill itself rises quietly above the surrounding villages, its slopes covered in dense forest, but its real significance lies in what happens here during the pilgrimage season — a genuine, living religious gathering rather than a monument to a faded tradition, with pilgrims arriving in the thousands to worship at what the Santhal community regards as one of their most sacred natural sites. For visitors interested in India's indigenous and tribal spiritual traditions specifically, rather than the state's Hindu, Jain, or colonial-era religious landscape, Lugu Buru offers a genuinely significant and still-thriving alternative.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg/1280px-Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg/1280px-Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg/1280px-Lugu_Buru_%E1%B1%9E%E1%B1%A9%E1%B1%9C%E1%B1%A9_%E1%B1%B5%E1%B1%A9%E1%B1%A8%E1%B1%A9.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Lugu_buru_%28100%29.jpg/1280px-Lugu_buru_%28100%29.jpg",
+    ],
+    imageCredit: "Photos: Bijendra Hansda Purudhul (CC0, explicitly titled \"Lugu Buru Hill\" with Santali translation) and ᱤᱧ ᱢᱟᱛᱟᱞ (CC BY-SA 4.0, uploaded via Wiki Loves Folklore 2025, description confirms Lugu Buru as a major Santhal pilgrimage site drawing devotees from Nepal, Bangladesh, and India) — Wikimedia Commons.",
+    category: ["Religious", "Rural"],
+    bestSeason: "October – February (major pilgrimage gatherings typically in winter months)",
+    duration: "Half a day",
+    highlights: [
+      { name: "The most sacred worship site in the Santhal indigenous faith" },
+      { name: "Annual pilgrimage drawing Santhals from Nepal, Bangladesh, and across India" },
+      { name: "A genuinely living, still-thriving tribal religious tradition" },
+      { name: "A forested hill straddling the Bokaro-Giridih border" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to the Bokaro-Giridih border area", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~3h drive", costRange: "₹4,000–₹12,000", tips: "Bokaro or Giridih town are the practical gateways." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Bokaro Steel City or Parasnath station, then onward road", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "16h+ from Delhi", costRange: "₹500–₹2,500", tips: "Hire a cab from Bokaro or the nearest station for the onward trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi/Bokaro toward the Lugu Buru hill area", fromMumbai: "—", fromBangalore: "—", duration: "~1-2h from Bokaro", costRange: "₹1,500–₹3,000 taxi", tips: "During major pilgrimage gatherings, expect significant crowds and plan accordingly." },
+    ],
+    accommodation: [
+      { type: "Hotels (Bokaro/Giridih)", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels in the nearest towns"], description: "The most practical base given the hill's more rural setting." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Bokaro or Giridih to the hill area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Parasnath Hill (Shikharji)", distance: "~40 km", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 500, accommodation: 250, food: 200, transport: 30, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1300, accommodation: 800, food: 400, transport: 100, activities: 0 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2800, accommodation: 2000, food: 700, transport: 100, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lugu Buru Visit", morning: "Drive from Bokaro or Giridih to Lugu Buru.", afternoon: "Explore the hill and, if timing aligns, observe the pilgrimage activity respectfully.", evening: "Return journey.", stay: "A hotel in Bokaro or Giridih", meals: "Local meals in the nearest town", tips: "If visiting during a major pilgrimage gathering, approach respectfully as a guest observing a genuine, active religious ceremony rather than a tourist spectacle." },
+    ],
+    womenSafety: {
+      score: 7.2,
+      level: "Safe",
+      highlights: ["A significant, actively used pilgrimage site with substantial gathering crowds during festival periods", "A well-known regional landmark for the Santhal community"],
+      precautions: ["Very large crowds during major annual gatherings — plan accordingly and stay with your group", "A relatively rural setting with more limited facilities outside pilgrimage season", "Respect the sanctity of active worship — ask before photographing rituals"],
+      soloTips: ["Comfortable during quieter periods; during major pilgrimage gatherings, going with a group or local contact is sensible given the crowd scale"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Bokaro Police", number: "06542-233333" }],
+      safeZones: ["The main pilgrimage and gathering areas"],
+      avoidAreas: ["Dense, unmanaged crowd areas during peak festival days"],
+    },
+    rating: 4.3,
+    reviews: 310,
+    mustEat: ["Simple local meals in nearby towns", "Regional Santhal and Jharkhandi dishes"],
+    packingTips: ["Respectful, modest clothing", "A camera, used considerately during active worship", "Check pilgrimage calendar dates if wanting to witness the gathering"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
