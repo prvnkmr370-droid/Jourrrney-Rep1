@@ -46856,6 +46856,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the village lanes", "A camera with a good zoom for the carved details", "A local guide's contact, arranged in advance if possible"],
   },
 
+  {
+    id: "ranchi-rock-garden",
+    name: "Ranchi Rock Garden",
+    state: "Jharkhand",
+    tagline: "Carved Straight From Gonda Hill, Overlooking Kanke Dam",
+    description: "The Ranchi Rock Garden sits on Gonda Hill along Kanke Road, a landmark carved entirely from the hill's own natural rock rather than built up separately, blending sculpture and landscape in a way inspired by the well-known Jaipur Rock Garden. The site's standout feature is an iron footbridge supported by only two poles, spanning a gap in the rock, alongside artificial waterfalls, manicured lawns, and a scattering of stone sculptures across the hillside. What makes the setting genuinely special is the view it commands: the garden overlooks Kanke Dam's reservoir directly below, giving visitors a sweeping panorama over the water and Ranchi's skyline beyond — a popular spot for families, sunset photography, and a quiet walk away from the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/View_of_Ranchi_City_from_Rock_Garden_08.jpg/1280px-View_of_Ranchi_City_from_Rock_Garden_08.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/View_of_Ranchi_City_from_Rock_Garden_08.jpg/1280px-View_of_Ranchi_City_from_Rock_Garden_08.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/View_of_Ranchi_City_from_Rock_Garden_08.jpg/1280px-View_of_Ranchi_City_from_Rock_Garden_08.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/View_of_Ranchi_City_from_Rock_Garden_02.jpg/1280px-View_of_Ranchi_City_from_Rock_Garden_02.jpg",
+    ],
+    imageCredit: "Photos: Kingshuk Mondal — Wikimedia Commons, CC BY 4.0, GPS-confirmed 23°24'18.01\"N 85°18'44.59\"E, categorized \"Gonda Hill\"/\"Kanke Dam\", with a detailed file description explicitly confirming the site, its footbridge, and its Kanke Dam-overlooking setting.",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Sculptures and formations carved directly from Gonda Hill's natural rock" },
+      { name: "The two-pole-supported iron footbridge" },
+      { name: "Panoramic views over Kanke Dam and the Ranchi skyline" },
+      { name: "Artificial waterfalls and manicured lawns" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then a short drive to the garden", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~30min drive", costRange: "₹4,000–₹12,000", tips: "Easily combined with a Kanke Dam visit in the same outing." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kanke Road within Ranchi city", fromMumbai: "—", fromBangalore: "—", duration: "~20-30min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Easily reached by local transport from anywhere in Ranchi." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "The garden sits within easy reach of most city hotels." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kanke Dam", distance: "Adjoining", type: "Reservoir", isHidden: false, id: "kanke-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 50, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 700, accommodation: 0, food: 350, transport: 150, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1500, accommodation: 0, food: 700, transport: 300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rock Garden and Kanke Dam", morning: "Explore the rock sculptures and footbridge at Rock Garden.", afternoon: "Walk down to Kanke Dam's reservoir edge.", evening: "Sunset views from the hilltop.", stay: "A hotel in Ranchi", meals: "Local snacks at garden-area stalls", tips: "Evening light makes for the best photos of both the reservoir and the rock formations." },
+    ],
+    womenSafety: {
+      score: 7.9,
+      level: "Safe",
+      highlights: ["A well-known, regularly visited city landmark with steady family footfall", "Close to central Ranchi, keeping it easily accessible"],
+      precautions: ["Uneven, natural rock terrain in places — wear proper footwear", "The footbridge and hillside edges warrant normal caution", "Can get crowded on weekends"],
+      soloTips: ["Comfortable solo during daylight hours given the steady visitor traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main garden paths and viewing areas"],
+      avoidAreas: ["Unrailed rock edges, especially after dark"],
+    },
+    rating: 4.3,
+    reviews: 3400,
+    mustEat: ["Local snacks and chaat from garden-area vendors", "Litti chokha in Ranchi"],
+    packingTips: ["Sturdy footwear for the rocky terrain", "A camera for the panoramic views", "Sun protection for the open hilltop"],
+  },
+  {
+    id: "kanke-dam",
+    name: "Kanke Dam",
+    state: "Jharkhand",
+    tagline: "A Reservoir at the Foot of Gonda Hill, Ranchi's Classic Picnic Spot",
+    description: "Kanke Dam is a lake reservoir at the base of the Gonda Hills, about 5 km from central Ranchi, genuinely one of the city's most consistently crowded and well-loved recreational spots. Its appeal is straightforward — calm water, cool hillside air, and a scenic setting that draws nature lovers and group picnickers throughout the cooler months — made distinctive by a striking iron footbridge that spans part of the shoreline, supported by just two poles. The adjoining Rock Garden, carved into the hill directly above, adds a second, connected attraction that most visitors combine into the same outing, making a Kanke Dam visit as much about the hillside views down onto the water as the water itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kanke_Dam_-_Ranchi_9291.JPG/1280px-Kanke_Dam_-_Ranchi_9291.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kanke_Dam_-_Ranchi_9291.JPG/1280px-Kanke_Dam_-_Ranchi_9291.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kanke_Dam_-_Ranchi_9291.JPG/1280px-Kanke_Dam_-_Ranchi_9291.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Footbridge_on_Kanke_Dam_-_Ranchi_9310.JPG/1280px-Footbridge_on_Kanke_Dam_-_Ranchi_9310.JPG",
+    ],
+    imageCredit: "Photos: Biswarup Ganguly — Wikimedia Commons, CC BY 3.0/GFDL, categorized \"Kanke Dam\", used on Santali Wikipedia's \"Ranchi\" article, with a detailed file description explicitly confirming the location, its 5 km distance from Ranchi, and the adjoining Rock Garden.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "The reservoir at the foot of Gonda Hill" },
+      { name: "The distinctive two-pole iron footbridge along the shoreline" },
+      { name: "A classic Ranchi picnic and boating spot" },
+      { name: "Direct access to the adjoining Rock Garden above" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then ~5 km to Kanke Dam", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~20min drive", costRange: "₹4,000–₹12,000", tips: "One of the easiest short outings from central Ranchi." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Ranchi — ~18-20h", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "A short local cab ride from Ranchi station." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kanke Road within Ranchi city — ~5 km from the centre", fromMumbai: "—", fromBangalore: "—", duration: "~20min from central Ranchi", costRange: "₹100–₹300 local cab", tips: "Combine with the Rock Garden, right above the dam, in the same visit." },
+    ],
+    accommodation: [
+      { type: "Hotels (Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels across Ranchi city"], description: "Most visitors day-trip from central Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Boating", cost: "₹50–₹150", notes: "Seasonal boating on the reservoir", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ranchi Rock Garden", distance: "Adjoining", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 50, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 650, accommodation: 0, food: 350, transport: 150, activities: 150 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 1400, accommodation: 0, food: 700, transport: 300, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kanke Dam and Rock Garden", morning: "Walk along the Kanke Dam shoreline and footbridge.", afternoon: "Climb up to the adjoining Rock Garden.", evening: "Sunset views over the reservoir.", stay: "A hotel in Ranchi", meals: "Picnic food or local snacks lakeside", tips: "Weekends bring the biggest crowds — a weekday visit is noticeably quieter." },
+    ],
+    womenSafety: {
+      score: 7.8,
+      level: "Safe",
+      highlights: ["A well-known, consistently busy city recreational spot with regular family footfall", "Close proximity to central Ranchi keeps it easily accessible and well-monitored"],
+      precautions: ["Can get very crowded on weekends — keep an eye on belongings", "Standard water-safety caution near the shoreline", "The footbridge area warrants normal caution"],
+      soloTips: ["Comfortable solo during the day given the steady footfall; evenings are busier and generally fine given the crowd presence"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Ranchi Tourist Police", number: "0651-2446120" }],
+      safeZones: ["The main shoreline and picnic areas"],
+      avoidAreas: ["Isolated shoreline stretches away from the main visitor area, especially after dark"],
+    },
+    rating: 4.2,
+    reviews: 2800,
+    mustEat: ["Local snacks and street food near the dam", "Litti chokha in Ranchi"],
+    packingTips: ["Comfortable footwear for the shoreline walk", "Picnic supplies for a relaxed visit", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
