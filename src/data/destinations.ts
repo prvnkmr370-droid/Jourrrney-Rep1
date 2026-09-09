@@ -50080,6 +50080,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A camera for the heritage architecture", "Comfortable walking shoes"],
   },
 
+  {
+    id: "mirchaiya-falls",
+    name: "Mirchaiya Falls",
+    state: "Jharkhand",
+    tagline: "A Wide Rock-Shelf Cascade Inside Palamau Tiger Reserve",
+    description: "Mirchaiya Falls sits within the Palamau Tiger Reserve in Latehar district, its water spreading across a broad expanse of flat granite bedrock in a pattern genuinely similar to nearby Sugga Bandh Falls on the same reserve's river system — a wide, gently terraced cascade rather than a single tall drop. A small viewing gazebo and a wooden footbridge give visitors a proper vantage point over the falls without disturbing the surrounding forest, and the site's location within the tiger reserve keeps it feeling genuinely wild despite the light visitor infrastructure. As one of several waterfalls scattered through Palamau Tiger Reserve's forest, Mirchaiya rewards visitors already exploring Betla National Park with a worthwhile detour into the reserve's less-publicized water features.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mirchaiya_fall_2343.jpg/1280px-Mirchaiya_fall_2343.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mirchaiya_fall_2343.jpg/1280px-Mirchaiya_fall_2343.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mirchaiya_fall_2343.jpg/1280px-Mirchaiya_fall_2343.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mirchaiya_fall_1232.jpg/1280px-Mirchaiya_fall_1232.jpg",
+    ],
+    imageCredit: "Photos: Dev0745 — Wikimedia Commons, CC BY 4.0, file description explicitly confirms \"Mirchaiya Fall in Latehar district, Palamau Tiger Reserve, Jharkhand\", categorized \"Mirchaiya Fall\".",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – February",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "A wide, terraced cascade across flat granite bedrock" },
+      { name: "A viewing gazebo and wooden footbridge" },
+      { name: "A setting inside Palamau Tiger Reserve" },
+      { name: "A worthwhile detour alongside a Betla National Park visit" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Birsa Munda Airport, Ranchi — ~2h direct, then onward to Latehar/Betla area", fromMumbai: "~2.5h direct to Ranchi", fromBangalore: "~2.5h direct to Ranchi", duration: "2–2.5h flight plus a ~4h drive", costRange: "₹4,000–₹12,000", tips: "Combine with a Betla National Park visit given the shared reserve." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Daltonganj — ~18-20h", fromMumbai: "~24h+ via Ranchi", fromBangalore: "~30h+ via Ranchi", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Daltonganj is the nearest rail gateway to the reserve." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi and Daltonganj toward Palamau Tiger Reserve", fromMumbai: "—", fromBangalore: "—", duration: "~30-40min from Betla National Park", costRange: "₹2,000–₹4,000 private cab/reserve vehicle", tips: "Access is via the reserve, so plan the visit alongside Betla's entry procedures." },
+    ],
+    accommodation: [
+      { type: "Forest Rest Houses (Betla)", priceRange: "₹800–₹2,000/night", examples: ["Jharkhand Tourism forest lodges near Betla"], description: "The nearest and most practical stay given the falls' reserve location." },
+      { type: "Budget Hotels (Daltonganj)", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in Daltonganj town"], description: "A wider range of options in the nearest town." },
+    ],
+    localTransport: [
+      { mode: "Reserve Vehicle/Jeep", cost: "Included with reserve entry or ₹1,500-3,000", notes: "Access within the tiger reserve typically requires an authorized vehicle", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sugga Bandh Falls", distance: "~10 km", type: "Waterfall", isHidden: false, id: "sugga-bandh-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 350, food: 200, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1900, accommodation: 1100, food: 400, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 4200, accommodation: 2800, food: 800, transport: 500, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Betla and Mirchaiya Falls", morning: "Jeep safari at Betla National Park.", afternoon: "Continue to Mirchaiya Falls within the reserve.", evening: "Return to the forest lodge.", stay: "A forest rest house near Betla", meals: "Simple local meals at the lodge", tips: "Combine with Sugga Bandh Falls, on the same river system, for a fuller reserve waterfall circuit." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["Located within the managed Palamau Tiger Reserve with regular forest department presence", "Usually visited alongside the well-frequented Betla National Park"],
+      precautions: ["This is active tiger reserve habitat — never leave designated paths or vehicles unescorted", "Standard water-safety caution on the wide rock shelves, especially when wet", "Limited facilities beyond the viewing gazebo"],
+      soloTips: ["Visit as part of an organized reserve trip rather than independently, given the wildlife reserve setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Forest Department, Betla", number: "06562-222650" }],
+      safeZones: ["The viewing gazebo and designated approach path"],
+      avoidAreas: ["Off-path forest areas within the tiger reserve"],
+    },
+    rating: 4.1,
+    reviews: 210,
+    mustEat: ["Simple Jharkhandi thali at forest lodges near Betla", "Litti chokha, a regional staple"],
+    packingTips: ["Neutral-colored clothing given the reserve setting", "Non-slip footwear for the wet rock shelves", "A camera for the wide cascade view"],
+  },
+  {
+    id: "jayda-temple",
+    name: "Jayda Temple",
+    state: "Jharkhand",
+    tagline: "A 13th-14th Century Shiva Shrine on the Subarnarekha, Near Chandil Dam",
+    description: "Jayda Temple sits on the bank of the Subarnarekha River, a few kilometres from Chandil Dam along NH-33 toward Jamshedpur, its twin ribbed shikharas — banded in white and terracotta, each fronted by a striking black cobra-hood motif — making it one of the more visually distinctive temples in this part of Jharkhand. According to the temple's own historical marker, its origins trace to the medieval period between the 18th and 19th centuries under Maharaja Keshavswaroopi, with the site's own account describing a lineage of spiritual custodianship reaching back further, into the 13th-14th century according to some tellings, and continuing through a chain of saints down to the present Mahant. Whatever the precise dating, Jayda Temple's riverside setting and its distinctive twin-tower architecture make it a worthwhile stop for anyone already visiting Chandil Dam on the Jamshedpur highway route.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jayda_Temple.jpg/1280px-Jayda_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jayda_Temple.jpg/1280px-Jayda_Temple.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jayda_Temple.jpg/1280px-Jayda_Temple.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Jayda_Mandir.jpg",
+    ],
+    imageCredit: "Photos: uploader of the temple exterior (GFDL, description confirms \"located on the bank of Subarnarekha River, few kilometers from chandil dam, beside NH-33 towards Jamshedpur\", categorized \"Chandil\"/\"Shiva temples in Jharkhand\") and I2p0s21 (CC BY-SA 4.0, the temple's own historical information board, used directly on English Wikipedia's \"Chandil\" article) — Wikimedia Commons.",
+    category: ["Religious", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1 hour",
+    highlights: [
+      { name: "Distinctive twin ribbed shikharas with cobra-hood motifs" },
+      { name: "A riverside setting on the Subarnarekha" },
+      { name: "A documented history reaching back to the medieval period" },
+      { name: "An easy stop near Chandil Dam on the Jamshedpur highway" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Kolkata/Ranchi to Jamshedpur, then onward to Chandil", fromMumbai: "Via Kolkata — ~4h total", fromBangalore: "Via Kolkata — ~4.5h total", duration: "Varies via connection", costRange: "₹4,000–₹14,000", tips: "Chandil is roughly midway between Ranchi and Jamshedpur." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains to Tatanagar (Jamshedpur) or Ranchi, then onward road", fromMumbai: "~24h+", fromBangalore: "~30h+", duration: "18h+ from Delhi", costRange: "₹500–₹2,500", tips: "Chandil has its own railway station on the Ranchi-Jamshedpur line." },
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ranchi, then NH-33 toward Jamshedpur — the temple sits beside the highway", fromMumbai: "—", fromBangalore: "—", duration: "~5min from Chandil Dam", costRange: "₹200–₹500 local cab", tips: "An easy add-on to a Chandil Dam visit given the short distance." },
+    ],
+    accommodation: [
+      { type: "Hotels (Jamshedpur/Ranchi)", priceRange: "₹1,200–₹5,000/night", examples: ["Hotels in either nearby city"], description: "Most visitors day-trip from Jamshedpur or Ranchi." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "₹200–₹500", notes: "From Chandil town to the temple", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chandil Dam", distance: "~5 km", type: "Dam", isHidden: false, id: "chandil-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 350, accommodation: 0, food: 200, transport: 130, activities: 20 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 900, accommodation: 0, food: 400, transport: 400, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 2000, accommodation: 0, food: 800, transport: 900, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chandil Dam and Jayda Temple", morning: "Visit Chandil Dam and go jet boating.", afternoon: "A short drive to Jayda Temple for darshan.", evening: "Return to Ranchi or Jamshedpur.", stay: "A hotel in Ranchi or Jamshedpur", meals: "Local snacks near the temple", tips: "A quick, easy stop that pairs naturally with a Chandil Dam visit." },
+    ],
+    womenSafety: {
+      score: 7.4,
+      level: "Safe",
+      highlights: ["A recognized regional landmark with steady visitor and passing highway traffic", "Often visited alongside the well-frequented Chandil Dam"],
+      precautions: ["A relatively quiet standalone site — visiting as part of a day trip with others is sensible", "Limited facilities directly at the temple"],
+      soloTips: ["Comfortable as a brief stop during a day trip; not typically a standalone destination to linger at alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }, { label: "Seraikela Kharsawan Police", number: "06579-266234" }],
+      safeZones: ["The main temple complex"],
+      avoidAreas: ["None specifically flagged — a roadside temple stop"],
+    },
+    rating: 4.0,
+    reviews: 260,
+    mustEat: ["Local snacks near the temple", "Regional Jharkhandi meals in Chandil town"],
+    packingTips: ["Modest clothing for temple visits", "A camera for the distinctive twin towers", "Combine with a Chandil Dam visit"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
