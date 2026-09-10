@@ -486,6 +486,25 @@
       "bestSeason": "Oct-Mar (cool, dry); Nov-Feb pleasantest; monsoon green but rough dangerous sea",
       "safetyNotes": "Despite the 'calm beach' reputation Kashid is unpatrolled and has had drownings - currents strengthen near the rocky ends and after rain; swim only in the shallow central stretch with others, never in the monsoon/after dark/after alcohol. Use licensed water-sports operators, fastened life jacket, avoid choppy water, don't be pressured into packages. Rowdy large weekend groups with alcohol after dark - keep to the lit resort frontage, not the far ends alone; solo women may prefer a resort with guarded beach access. Korlai Fort is a steep overgrown climb with unfenced ramparts/sea drops - daylight, in a pair, proper shoes. Phansad is leopard/snake habitat - forest guide/permit only, not alone.",
       "fixesDanglingRef": "Resolves the nearbyPlaces id:\"kashid-beach\" reference(s) created in earlier Raigad-coast cards (e.g. Alibaug, Murud-Janjira)."
+    },
+    {
+      "name": "Saptashrungi",
+      "url": "https://maharashtratourism.gov.in/temple/vani/",
+      "summary": "Hill goddess shrine near Vani, Nashik district, ~1,420 m, among the 'seven peaks' (sapta shrunga). One of Maharashtra's three-and-a-half Shakti Peethas, traditionally the half (ardha) peeth; among the 51 Shakti Peethas of the subcontinent as the spot where Sati's right arm fell. Self-manifest ~8 ft image of Saptashrungi Nivasini cut into a recess in the cliff, vermilion-painted, eighteen arms with weapons (Mahishasura-Mardini form). Historic access ~500 stone steps; a funicular railway now climbs the cliff and a ghat road brings vehicles most of the way. Chaitra Navratri (Mar-Apr) and Sharad Navratri (Sep-Oct) draw huge crowds; during the Chaitra festival a hereditary family scales a bare cliff opposite the temple to plant the goddess's flag. Markandeya Hill opposite (Sage Markandeya).",
+      "access": "~60-65 km (~2h) from Nashik via Vani; ~230 km (~5h) from Mumbai. Nearest railway Nashik Road ~70 km; nearest airport Nashik ~80 km. Last stretch is a winding ghat to an upper car park, then funicular or steps.",
+      "bestSeason": "Oct-Mar for cool weather and clear views; monsoon green but slippery steps/rock; the two Navratris are the spiritual peak but very crowded",
+      "safetyNotes": "Navratri (and weekends/full-moon days) bring very dense crowds on the steps and at the sanctum - crush risk; prefer a weekday, keep children close, note exits, don't push in a packed queue. Steep worn steps without continuous railings in places; the temple terrace is on an exposed cliff with drops - use the funicular if unsure, keep back from unfenced edges in wind/rain. Monsoon steps/rock slippery, ghat road foggy. The Chaitra flag-hoisting on the opposite peak is done only by the designated family and is genuinely dangerous - watch from the temple side, no independent climbing of the peaks/cliff. Summer midday heat on the open stairway - water, hat, climb early/late.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"saptashrungi\" reference(s) created in earlier Nashik-area cards."
+    },
+    {
+      "name": "Sevagram",
+      "url": "https://maharashtratourism.gov.in/districts/wardha/",
+      "summary": "'Village of service' ~8 km from Wardha, Vidarbha, where Mahatma Gandhi lived 1936-1948 (arrived 30 Apr 1936, at Jamnalal Bajaj's invitation; first hut Adi Niwas). Made the village a working model of self-reliant rural life - hand spinning, village industries, nature cure, sanitation, 'Nai Talim' basic education. Ashram preserved: mud-walled tiled huts around a swept prayer ground - Bapu Kuti (Gandhi's, with his possessions), Ba Kuti (Kasturba's), Aakhri Niwas, Parchure Kuti (built for a leprosy-afflicted scholar Gandhi nursed). Surrounding Gandhian institutions: Kasturba Health Society + a pioneering rural medical college (MGIMS), Nai Talim campus. Nearby: open-air Geetai Mandir (Bhagavad Gita in Marathi verse on stone walls, Vinoba Bhave), Vishwa Shanti Stupa (Nipponzan-Myohoji), Magan Sangrahalaya village-industries museum, Laxminarayan Temple (1905). Paunar (~10 km) has Vinoba Bhave's Paramdham Ashram, cradle of the Bhoodan movement. Bor Tiger Reserve ~40 km.",
+      "access": "Nearest airport Nagpur ~75 km (~1.5-2h). Sevagram railway station ~2 km (on the Delhi-Chennai & Mumbai-Howrah main lines); Wardha Junction ~8 km. Autos from Wardha/station.",
+      "bestSeason": "Nov-Feb (cool, dry); Mar-Jun very hot 43-46C with no shade on the open grounds; monsoon Jul-Sep humid, travel can be disrupted",
+      "safetyNotes": "Main hazard is extreme Vidarbha summer heat (Mar-Jun, 43-46C) on shadeless open grounds - visit early/late, carry water, avoid midday. Place of observance - modest dress, remove footwear where asked, quiet in the prayer area, no photography inside the huts. Transport and sites wind down early - be back in Wardha/Nagpur by evening; pre-arrange autos for early/late trains at Sevagram station. Bor Tiger Reserve add-on = booked safari + guide, stay in the vehicle. Otherwise a very safe, low-crime, orderly Gandhian-trust campus in a quiet conservative region.",
+      "govPageError": "The Wardha district page dates the Vakataka dynasty to 'the 2nd to 5th centuries BCE'. The Vakatakas ruled in the 3rd-5th centuries CE (contemporaries of the Imperial Guptas, as the same page notes). Corrected in the card.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"sevagram\" reference(s) created in earlier Vidarbha-area cards (e.g. Nagpur)."
     }
   ],
   "cardedThisTask": [
@@ -530,6 +549,8 @@
     "Amboli",
     "Harihareshwar",
     "Ratnagiri",
-    "Kashid Beach"
+    "Kashid Beach",
+    "Saptashrungi",
+    "Sevagram"
   ]
 }
