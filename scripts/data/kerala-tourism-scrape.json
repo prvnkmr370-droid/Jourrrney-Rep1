@@ -143,9 +143,11 @@
     "Palaruvi Falls (ke_batch22)",
     "Ranipuram (ke_batch22)",
     "Gavi (ke_batch23)",
-    "Anchuthengu / Anjengo Fort (ke_batch23)"
+    "Anchuthengu / Anjengo Fort (ke_batch23)",
+    "Chinnar Wildlife Sanctuary (ke_batch24)",
+    "Meesapulimala (ke_batch24)"
   ],
-  "keralaCoverageNote": "Kerala total now 74 destinations (was 28 at task start; +46 added this task across 23 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 76 destinations (was 28 at task start; +48 added this task across 24 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -306,6 +308,14 @@
     {
       "name": "Anchuthengu (Anjengo) Fort",
       "url": "https://www.keralatourism.org/varkala/anchuthengu-anjengo-fort.php"
+    },
+    {
+      "name": "Chinnar Wildlife Sanctuary",
+      "url": "https://www.keralatourism.org/destination/chinnar-wildlife-sanctuary-idukki/218/"
+    },
+    {
+      "name": "Meesapulimala",
+      "url": "https://www.keralatourism.org/photo-gallery/meesapulimala-highest-peak-mist-shrouded/3122/"
     }
   ]
 }
