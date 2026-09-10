@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "source": "https://maharashtratourism.gov.in/ (official Maharashtra Tourism / MTDC / Directorate of Tourism site)",
+    "scrapedOn": "2026-09-11",
+    "scope": "Maharashtra — the app currently has ZERO Maharashtra destination cards; this is a fresh state build-out of genuine places of interest, in batches of ~2 via the standard pipeline",
+    "navCategories": [
+      "About / Discover Maharashtra (Districts, Cultural flavors, Traditions, Festivals)",
+      "Tourist Interest: Beaches (~18), Hill Stations & Natural Sites (~26), Caves (~8), Forts (~28), Temples & Pilgrimage (40+), Wildlife Sanctuaries (~15), Heritage Sites (~7), Districts (36)",
+      "Book My Trip (Mahaatithi / MTDC resorts)"
+    ],
+    "emergencyBlockUsedInCards": [
+      { "label": "All-in-one Emergency", "number": "112" },
+      { "label": "Police", "number": "100" },
+      { "label": "Women Helpline", "number": "1091" },
+      { "label": "Medical / Ambulance", "number": "108" },
+      { "label": "<City/District> Police OR Tourist Helpline (India)", "number": "<verified number, else 1363>" }
+    ],
+    "notes": "MTDC = Maharashtra Tourism Development Corporation (runs resorts + water sports). Konkan coast = the western coastal strip (Raigad, Ratnagiri, Sindhudurg dists). Many hill forts are steep unmaintained climbs -- safety content must reflect that. Ajanta/Ellora/Elephanta + the Western Ghats sites are UNESCO listed."
+  },
+  "destinationUniverse": {
+    "caves": ["Ajanta", "Ellora", "Elephanta", "Karla & Bhaja", "Kanheri", "Pandavleni (Nashik)", "Pitalkhora", "Aurangabad Caves"],
+    "hillStations": ["Mahabaleshwar", "Panchgani", "Lonavala & Khandala", "Matheran", "Bhandardara", "Chikhaldara", "Amboli", "Toranmal", "Malshej Ghat", "Kaas Plateau (Satara)"],
+    "beachesKonkan": ["Alibaug", "Kashid", "Murud-Janjira", "Diveagar", "Harihareshwar", "Ganpatipule", "Ratnagiri", "Tarkarli & Malvan", "Vengurla", "Velas (turtle festival)"],
+    "forts": ["Raigad", "Pratapgad", "Sinhagad", "Shivneri", "Rajgad", "Torna", "Lohagad", "Visapur", "Harishchandragad", "Daulatabad (Devgiri)", "Murud-Janjira (sea fort)", "Sindhudurg (sea fort)", "Panhala"],
+    "wildlife": ["Tadoba-Andhari Tiger Reserve", "Pench (Maharashtra)", "Melghat Tiger Reserve", "Nagzira-Navegaon", "Sahyadri Tiger Reserve", "Bhimashankar WLS", "Radhanagari (bison)", "Karnala Bird Sanctuary", "Tansa"],
+    "pilgrimage": ["Shirdi (Sai Baba)", "Nashik & Trimbakeshwar (Jyotirlinga / Kumbh)", "Bhimashankar (Jyotirlinga)", "Grishneshwar (Jyotirlinga, near Ellora)", "Aundha Nagnath (Jyotirlinga)", "Pandharpur (Vitthal)", "Shani Shingnapur", "Ashtavinayak circuit", "Mahalaxmi Kolhapur", "Jyotiba", "Mahur / Tuljapur / Kolhapur (Shakti Peethas)", "Deekshabhoomi Nagpur", "Sevagram / Wardha"],
+    "cities": ["Mumbai", "Pune", "Nagpur", "Chhatrapati Sambhajinagar (Aurangabad)", "Nashik", "Kolhapur", "Solapur"],
+    "heritage": ["Bibi ka Maqbara (Aurangabad)", "Gateway of India / CST / Elephanta (Mumbai)", "Shaniwar Wada + Aga Khan Palace (Pune)", "Lonar Crater (meteor lake)", "Sevagram Ashram", "Deekshabhoomi"]
+  },
+  "destinationsScraped": [
+    {
+      "name": "Ajanta Caves",
+      "url": "https://maharashtratourism.gov.in/cave/ajanta/ (read via in-app browser; WebFetch on the gov site returns navigation-only)",
+      "summary": "~30 Buddhist rock-cut caves in a horseshoe gorge above the Waghora river, Sahyadri hills, Chhatrapati Sambhajinagar (Aurangabad) district. Two phases: early group ~2nd-1st c. BCE (Satavahana; caves 9, 10), larger 5th c. CE phase (Vakataka; most of the finest caves + paintings). Types: chaitya-grihas / prayer halls (9, 10, 19, 26) and viharas / monasteries (1, 2, 16, 17). Famed for wall+ceiling murals in natural pigments -- life of the Buddha + Jataka tales; the most important surviving early Indian painting. Forest-covered for centuries; brought to notice 1819 by British officer John Smith on a hunt (his name scratched inside a cave). UNESCO WHS 1983. Site page names nearby: Ellora ~100 km SW, Daulatabad Fort, Bibi ka Maqbara, Aurangabad Caves, Grishneshwar, Lonar Crater Lake. Best Nov-Mar (12-30 C); monsoon lush but harder; summer >40 C; weekdays quieter.",
+      "access": "Air: Chhatrapati Sambhajinagar (Aurangabad) ~100 km. Rail: Jalgaon Jn ~60 km (closest), Aurangabad ~100 km. Road: ~100 km/~2.5h from Aurangabad, ~60 km from Jalgaon, ~100 km from Ellora. Private vehicles park at the T-junction ~4 km away; green ASI shuttle buses run the last stretch to the ticket gate.",
+      "openingNote": "Closed Mondays (standard ASI; the gov page doesn't state it but it is well established). Photography without flash allowed inside; no flash/tripod.",
+      "safetyNotes": "Ticketed ASI WHS, guards + licensed guides, controlled shuttle approach, heavy mixed visitor flow. Long walk, many stairs, cliff-side path with drops -- railings, care in wet monsoon. Hot, little shade on the approach -- water/hat/sun cover. Persistent hawkers + unofficial 'guides' at the T-junction -- book a licensed guide at the gate. Do the day trip from Aurangabad in daylight."
+    },
+    {
+      "name": "Ellora Caves",
+      "url": "https://maharashtratourism.gov.in/cave/ellora/ (read via in-app browser)",
+      "summary": "34 rock-cut caves along a ~2 km basalt escarpment ~30 km from Chhatrapati Sambhajinagar (Aurangabad); excavated ~6th-10th c. CE; Buddhist (12, south), Hindu (17, middle), Jain (5, north) side by side. NEVER lost (unlike Ajanta). Centrepiece: Kailasa Temple (Cave 16) -- a full Dravidian-style Shiva temple cut DOWNWARD from the cliff top, ~200,000 tonnes of rock removed, free-standing temple+courtyard+gateway+elephants+shrines in one piece; the world's largest monolithic rock excavation; attributed to Rashtrakuta king Krishna I, 8th c. Buddhist group incl. the multi-storey Vishvakarma chaitya (Cave 10); Jain Indra Sabha group (30-34) small but finely carved. UNESCO WHS 1983. Grishneshwar Jyotirlinga a short walk away.",
+      "access": "Air/Rail: Chhatrapati Sambhajinagar (Aurangabad) ~30-35 km. Road: ~30 km/~45 min from Aurangabad (passes Daulatabad Fort + Bibi ka Maqbara); ~100 km from Ajanta. Main groups walkable together; ~2 km to the Jain caves at the north end (walk or auto).",
+      "openingNote": "Closed Tuesdays (Ajanta closed Mondays) -- plan the two around that. Photography allowed; interiors dim.",
+      "safetyNotes": "ASI WHS, guards, ticketing, licensed guides, large mixed flow. Kailasa = stairs, uneven rock, a climb to the rim with UNPROTECTED edges -- care near drops. Hot/unshaded midday outside winter. Walk/auto to the Jain caves is a quieter stretch -- day only, auto if alone. Hawkers + unofficial guides in the car park -- licensed guide from the ticket office only.",
+      "govPageError": "The maharashtratourism.gov.in Ellora page states Ellora 'dates back to the 6th century' only, and that 'John Smith' rediscovered Ellora -- the latter conflates it with Ajanta (Ellora was never lost). Card uses the well-established ~6th-10th c. range and omits the John-Smith-at-Ellora claim."
+    }
+  ],
+  "cardedThisTask": [
+    "Ajanta Caves (mh_batch1)",
+    "Ellora Caves (mh_batch1)"
+  ]
+}
