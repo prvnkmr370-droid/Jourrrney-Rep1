@@ -121,9 +121,11 @@
     "Soochipara Falls / Sentinel Rock Waterfalls (ke_batch11)",
     "Pookode Lake (ke_batch11)",
     "Ambalappuzha Sree Krishna Temple (ke_batch12)",
-    "Chottanikkara Bhagavathy Temple (ke_batch12)"
+    "Chottanikkara Bhagavathy Temple (ke_batch12)",
+    "Malayattoor St Thomas Church / Kurisumudy (ke_batch13)",
+    "Cheraman Juma Masjid, Kodungallur (ke_batch13)"
   ],
-  "keralaCoverageNote": "Kerala total now 52 destinations (was 28 at task start; +24 added this task across 12 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 54 destinations (was 28 at task start; +26 added this task across 13 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -196,6 +198,14 @@
     {
       "name": "Chottanikkara Bhagavathy Temple",
       "url": "https://www.keralatourism.org/kochi/chottanikkara-temple-ernakulam.php"
+    },
+    {
+      "name": "Malayattoor St Thomas Church",
+      "url": "https://www.keralatourism.org/destination/malayattoor-church-ernakulam/354/"
+    },
+    {
+      "name": "Cheraman Juma Masjid",
+      "url": "https://www.keralatourism.org/muziris/religious-sites/cheraman-juma-masjid"
     }
   ]
 }
