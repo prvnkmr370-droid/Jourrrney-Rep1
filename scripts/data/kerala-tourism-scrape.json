@@ -129,9 +129,11 @@
     "Vaikom Mahadeva Temple (ke_batch15)",
     "Ettumanoor Mahadeva Temple (ke_batch15)",
     "Mannarasala Sree Nagaraja Temple (ke_batch16)",
-    "Vazhachal Falls (ke_batch16)"
+    "Vazhachal Falls (ke_batch16)",
+    "Ramakkalmedu (ke_batch17)",
+    "Idukki Arch Dam (ke_batch17)"
   ],
-  "keralaCoverageNote": "Kerala total now 60 destinations (was 28 at task start; +32 added this task across 16 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 62 destinations (was 28 at task start; +34 added this task across 17 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -236,6 +238,14 @@
     {
       "name": "Vazhachal Falls (Athirappally-Vazhachal ecotourism)",
       "url": "https://www.keralatourism.org/ecotourism/destinations/athirappally-vazhachal"
+    },
+    {
+      "name": "Ramakkalmedu",
+      "url": "https://www.keralatourism.org/destination/ramakkalmedu-hill-stations-kerala/53/"
+    },
+    {
+      "name": "Idukki Arch Dam",
+      "url": "https://www.keralatourism.org/destination/idukki-arch-dam/187/"
     }
   ]
 }
