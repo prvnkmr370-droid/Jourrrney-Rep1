@@ -169,6 +169,22 @@
       "access": "Rail: Burhanpur station on the Delhi-Mumbai main line via Bhusaval -- frequent expresses, easiest way in; ~7-8h from Mumbai. Air: Indore ~180 km (nearest). Road: ~20 km Asirgarh, ~90 km Jalgaon, ~180 km Indore; buses from Indore, Khandwa, Jalgaon.",
       "bestSeason": "Oct-Mar; summers very hot in the Tapti valley.",
       "safetyNotes": "Settled ordinary town, low-key tourism, monuments within everyday neighbourhoods -- sightsee by day. Parts of Shahi Qila unrestored: loose steps, low doorways, unlit passages (carry a torch). Asirgarh Fort is a big, hot, largely unshaded hilltop with steep uneven stretches and unfenced drops -- go early, carry water, don't wander far ramparts alone; hire a known taxi via the hotel for Asirgarh + Kundi Bhandara. Modest dress for mosques/dargah/gurudwara (head covering at the last two). Time train arrivals/departures for daylight."
+    },
+    {
+      "name": "Maihar",
+      "url": "https://www.mptourism.com/destination-maihar.php",
+      "summary": "Temple town in the Satna region of eastern MP (now the seat of its own Maihar district), on the Mumbai-Howrah main line ~40 km from Satna. Focus: Maa Sharda Devi temple on Trikuta hill -- ~1,063 steps or a ropeway; counted among the Shakti Peethas (Sati's necklace fell here); Alha-Udal akhara at the base (folk-epic warriors' practice ground). Also the home of the Maihar gharana of Hindustani music -- Ustad Allauddin Khan settled here, taught from 1918 (Ravi Shankar, Ali Akbar Khan); Allauddin Khan Sangeet Academy. Other sites: Golamath Shiva temple (10th-11th c.), Maihar fort (Bundela), Bansagar dam ~25 km. Busiest by far during Navratri (twice a year).",
+      "access": "Rail: Maihar station, regular expresses Delhi/Bhopal/Kolkata/Varanasi/Mumbai -- simplest way in. Air: Jabalpur ~160 km, Khajuraho ~140 km. Road: NH-34 from Satna (~40 km), Rewa, Jabalpur, Chitrakoot.",
+      "bestSeason": "Oct-Mar; avoid peak Navratri days for a calmer visit.",
+      "safetyNotes": "Long-established pilgrimage town, women/families/temple groups the majority. Step path + ropeway busy and staffed with police/volunteer queue management in season. MAIN RISK: crowd crush on the narrow stepped hill path during Navratri -- avoid peak days if possible, follow police queue system, don't push, keep children close, use the ropeway to skip the stair crush. The ~1,063-step climb is strenuous and largely unshaded (water, pace, ropeway for heart/mobility concerns). Rooms vanish around Navratri -- book ahead or base in Satna. Sealed water + freshly cooked food. No specific stampede incident found in searches -- advice is standard hilltop-shrine prudence, not a reported event."
+    },
+    {
+      "name": "Datia",
+      "url": "https://www.mptourism.com/destination-datia.php",
+      "summary": "Small town in northern MP near Jhansi, on the Delhi-Chennai railway. Bir Singh Deo Palace (Satkhanda / Purana Mahal): ~7-storey brick-and-stone palace raised by Bundela ruler Raja Bir Singh Deo ~1620, by tradition never inhabited; built without wood or iron; stacked arches, chhatris, oriel windows, central tower, surviving Bundela murals inside. Peetambara Peeth at the town edge -- among India's most-visited Shakti temples; complex also holds rare Dhumavati Devi and Bagulamukhi temples and the ancient Vankhandeshwar Shiva shrine. Unao-Balaji Sun temple nearby. Called 'Laghu Vrindavan'; Mahabharata reference as 'Daityavakra'. Fills during Navratri.",
+      "access": "Rail: Datia station on the Delhi-Jhansi-Chennai line (some Vande Bharat/expresses stop); Jhansi ~28 km (major junction, far more trains, ~30 min). Air: Gwalior ~75-90 km (practical); small Datia airstrip with occasional Bhopal/Khajuraho flights; Jhansi ~25 km. Road: ~28 km Jhansi, ~75 km Gwalior, just off NH44; easy loop with Jhansi + Orchha.",
+      "bestSeason": "Oct-Mar; summers hot.",
+      "safetyNotes": "Small ordinary town, heavy but orderly pilgrim flow to Peetambara Peeth (well-staffed). Bir Singh Deo Palace = ASI site, seven levels of open terraces/parapets and dim internal staircases with unfenced drops and uneven treads -- daylight only, torch, keep away from edges, children in hand. Peetambara Peeth very busy on Navratri and Saturdays -- follow queue management, mind valuables, long waits. Sightsee in daylight; use autos for short hops; most travellers base in Orchha/Jhansi and day-trip. Unshaded palace -- carry water."
     }
   ],
   "cardedThisTask": [
@@ -185,6 +201,8 @@
     "Amarkantak (mp_batch6)",
     "Chanderi (mp_batch6)",
     "Jabalpur (mp_batch7)",
-    "Burhanpur (mp_batch7)"
+    "Burhanpur (mp_batch7)",
+    "Maihar (mp_batch8)",
+    "Datia (mp_batch8)"
   ]
 }
