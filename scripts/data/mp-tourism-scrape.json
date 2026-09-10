@@ -185,6 +185,24 @@
       "access": "Rail: Datia station on the Delhi-Jhansi-Chennai line (some Vande Bharat/expresses stop); Jhansi ~28 km (major junction, far more trains, ~30 min). Air: Gwalior ~75-90 km (practical); small Datia airstrip with occasional Bhopal/Khajuraho flights; Jhansi ~25 km. Road: ~28 km Jhansi, ~75 km Gwalior, just off NH44; easy loop with Jhansi + Orchha.",
       "bestSeason": "Oct-Mar; summers hot.",
       "safetyNotes": "Small ordinary town, heavy but orderly pilgrim flow to Peetambara Peeth (well-staffed). Bir Singh Deo Palace = ASI site, seven levels of open terraces/parapets and dim internal staircases with unfenced drops and uneven treads -- daylight only, torch, keep away from edges, children in hand. Peetambara Peeth very busy on Navratri and Saturdays -- follow queue management, mind valuables, long waits. Sightsee in daylight; use autos for short hops; most travellers base in Orchha/Jhansi and day-trip. Unshaded palace -- carry water."
+    },
+    {
+      "name": "Bhojpur",
+      "url": "https://www.mptourism.com/destination-bhojpur.php (404 at time of scrape -- primary sources used: Wikipedia 'Bhojeshwar Temple' + raisen.nic.in tourist-place page)",
+      "summary": "Small village on the Betwa in Raisen district, ~28 km SE of Bhopal, named for Paramara king Bhoja (r. c.1010-1055) who began but never finished the Bhojeshwar Temple on a rock terrace here. Temple raised to sanctum height and roofed with a flat slab; spire never built. Works frozen mid-construction: unfinished blocks, masons' setting-out marks, full-size architectural drawings incised on surrounding rock, and a ~90 m (300 ft) earthen-and-stone haulage ramp. Inside: four huge octagonal pillars (~12 m) framing one of India's largest Shiva lingas -- single stone ~2.3 m (7.5 ft) tall, ~5.4 m (17.8 ft) circumference, on a composite platform lifting the whole to >12 m (platform ~6.5 m/21.5 ft per side). Nearby: Jain shrine with a tall Shantinatha image; traces of Paramara-era dams that held a large lake across the Betwa (18.5 x 7.5 miles per Wikipedia), breached in the 15th c. (traditionally attributed to Hoshang Shah of Malwa). ASI Monument of National Importance; on India's UNESCO tentative list.",
+      "access": "Air: Raja Bhoj Airport, Bhopal ~35 km. Rail: Obaidullaganj ~7 km (Bhopal-Itarsi line); most drive from Bhopal. Road: ~28 km (~1h) from Bhopal via the Hoshangabad road; ~30 km from Bhimbetka. Best as a half-day taxi from Bhopal combined with Bhimbetka + the Bhojpur Jain temple.",
+      "bestSeason": "Oct-Mar; monsoon greenery but the rock terrace gets slippery.",
+      "safetyNotes": "Compact ticketed ASI monument (sunrise-sunset, small fee), caretaker present, also a working local temple. No accommodation or real infrastructure -- half-day trip from Bhopal, don't get stranded after dark (no transport). Open rock terrace with unfinished blocks, the old ramp, uneven unfenced edges -- watch footing, worse after rain. Carry own water + sun cover, minimal shade, only a couple of stalls. Arrange the taxi via a Bhopal hotel/known operator and agree the Bhimbetka-circuit fare up front.",
+      "linga_measurement_note": "MP Tourism-adjacent sources and Wikipedia give the linga as ~2.3 m / 7.5 ft tall (some popular sources say ~5.5 m -- that figure appears to conflate linga + platform, which together exceed 12 m). Card uses the sourced ~2.3 m linga on a platform bringing the whole to >12 m."
+    },
+    {
+      "name": "Shivpuri",
+      "url": "https://www.mptourism.com/destination-shivpuri.php",
+      "summary": "District town in northern MP among wooded Vindhyan hills on the old Agra-Bombay road; came under the Scindias of Gwalior in 1804, became a favoured retreat. The Chhatris: walled ensemble of white-marble cenotaphs to Madho Rao Scindia and his mother Maharani Sakhya Raje -- Hindu shikharas + Mughal domes + pietra-dura inlay, in a formal charbagh garden with tanks and a small Shiva temple. Madhav National Park: 355 sq km dry forest + grassland around Sakhya Sagar and Madhav (Chandpatha) lakes; chital, sambar, nilgai, chinkara, blackbuck, leopard, sloth bear, tigers reintroduced in recent years; George Castle (crenellated hilltop shooting lodge built by Maharaja Jivaji Rao Scindia for a 1911/George V-era royal visit that never happened, now a small museum). Madhav Vilas Palace (Scindia summer palace, run as a heritage hotel). Bhadaiya Kund, Bhura Khon springs (not on the MP Tourism page; from other sources).",
+      "access": "Air: Gwalior ~110-130 km. Rail: Shivpuri station (limited services); Gwalior ~110-120 km / Jhansi ~97-100 km are the big junctions. Road: on NH44 (Delhi-Bengaluru corridor); ~110-120 km (~2.5h) from Gwalior, ~100 km from Jhansi, ~230 km from Bhopal; frequent buses from Gwalior, Jhansi, Guna.",
+      "bestSeason": "Nov-Mar (winter); Madhav National Park closed in the monsoon (~Jul-Sep).",
+      "safetyNotes": "Settled district town, ordinary public life, small tourist circuit (Chhatris, palace, park), on NH44 with frequent buses. Chhatris + Madhav Vilas Palace are ticketed staffed sites; MP Tourism runs lakeside accommodation. Madhav NP is leopard/sloth-bear/(recently) tiger habitat -- take park permission, keep to the designated route, stay in the vehicle, permitted times + guide where required. George Castle and lakeside points are quiet, lightly visited -- daylight, not entirely alone. Town market fine in the evening; outer/park-approach roads unlit -- taxi. Cold winter park mornings.",
+      "fixesDanglingRef": "Kuno card (mp_batch4) links nearbyPlaces id 'shivpuri' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -203,6 +221,8 @@
     "Jabalpur (mp_batch7)",
     "Burhanpur (mp_batch7)",
     "Maihar (mp_batch8)",
-    "Datia (mp_batch8)"
+    "Datia (mp_batch8)",
+    "Bhojpur (mp_batch9)",
+    "Shivpuri (mp_batch9)"
   ]
 }
