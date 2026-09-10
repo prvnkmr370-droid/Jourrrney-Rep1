@@ -123,9 +123,11 @@
     "Ambalappuzha Sree Krishna Temple (ke_batch12)",
     "Chottanikkara Bhagavathy Temple (ke_batch12)",
     "Malayattoor St Thomas Church / Kurisumudy (ke_batch13)",
-    "Cheraman Juma Masjid, Kodungallur (ke_batch13)"
+    "Cheraman Juma Masjid, Kodungallur (ke_batch13)",
+    "Thangassery / Tangasseri (ke_batch14)",
+    "Nilambur - Conolly's Plot & Teak Museum (ke_batch14)"
   ],
-  "keralaCoverageNote": "Kerala total now 54 destinations (was 28 at task start; +26 added this task across 13 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 56 destinations (was 28 at task start; +28 added this task across 14 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -206,6 +208,14 @@
     {
       "name": "Cheraman Juma Masjid",
       "url": "https://www.keralatourism.org/muziris/religious-sites/cheraman-juma-masjid"
+    },
+    {
+      "name": "Thangassery (Tangasseri), Kollam",
+      "url": "https://www.keralatourism.org/kerala-article/2018/thangassery/788"
+    },
+    {
+      "name": "Conolly's Plot / Nilambur Teak Plantations",
+      "url": "https://www.keralatourism.org/destination/conollys-plot-nilambur-oldest-teak-plantation-2024/696/"
     }
   ]
 }
