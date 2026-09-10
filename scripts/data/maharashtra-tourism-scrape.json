@@ -376,6 +376,25 @@
       "bestSeason": "Oct-May cool retreat + clear views; monsoon misty/green + many activities pause; Strawberry Festival in spring (Feb-Mar).",
       "safetyNotes": "Long-established family-oriented hill + school town, orderly low-key feel, plenty of hotels, steady tourist presence at Table Land + the viewpoints; quieter/less hectic than Mahabaleshwar, same easy taxi point-tour system; market + Table Land busy + walkable by day. TABLE LAND is a huge open plateau with CLIFF EDGES on several sides, UNFENCED in places -- stay well back from the rim esp. near Devil's Kitchen + the caves, care in wind/mist. PARAGLIDING = a real adventure activity -- licensed operator + certified tandem pilot only, check the harness, accept wind cancellations. Viewpoints (Sydney, Parsi) have drops + thin railings. Ghat roads (Wai, Mahabaleshwar) winding with sheer drops -- no night driving, fog + slow traffic in the monsoon + peak weekends. Horse/stall operators on Table Land pushy on price -- agree first. womenSafety.level Very Safe (8).",
       "fixesDanglingRef": "Mahabaleshwar (mh_batch6) + Pratapgad (mh_batch9) cards link nearbyPlaces id 'panchgani' -- now resolved."
+    },
+    {
+      "name": "Kaas Plateau",
+      "url": "https://maharashtratourism.gov.in/nature/kaas-plateau/ (read via in-app browser)",
+      "summary": "'Kaas Pathar' -- a high laterite plateau ~1,200 m, ~25 km W of Satara. For ~6 weeks after the monsoon (LATE AUGUST TO EARLY OCTOBER, peak mid-Sept) the thin soil over the basalt erupts in successive WAVES of bloom -- 850+ flowering plant species recorded, many endemic to the northern Western Ghats: balsams, smithias, ground orchids, the insect-eating sundew Drosera indica, the KARVY shrub that flowers en masse only once every 7-8 years. Part of the Sahyadri sub-cluster of the Western Ghats, UNESCO World Heritage Site 2012. FRAGILE thin-soil ecosystem: the Forest Dept fences the core, CAPS daily visitor numbers, requires ONLINE BOOKING during the bloom, keeps visitors to marked paths. Kaas Lake (S edge, century-old reservoir). Nearby: Bamnoli + Koyna backwater ('Mini Kashmir' at Tapola) + Koyna WLS, Sajjangad Fort (Samarth Ramdas samadhi), Thoseghar + Vajrai waterfalls.",
+      "access": "Air: Pune ~140 km. Rail: Satara ~25 km. Road: ~25 km/~45 min from Satara (winding hill road), ~35 km from Mahabaleshwar; season shuttle buses from Satara; private parking at a designated lot + shuttle vans the last stretch to the fenced plateau in peak season.",
+      "bestSeason": "LATE AUG - EARLY OCT ONLY (peak mid-Sept). Nothing to see outside this window; site + transport wind down.",
+      "safetyNotes": "Forest-Dept-managed -- fencing, staff, marked paths, capped daily numbers, online timed-entry ticketing; one of the more orderly nature attractions in the state during the season; in bloom weeks busy with families/students/botanists/photographers, shuttle transport from the car park; Satara base is an ordinary well-connected city. Plateau EXPOSED + the bloom coincides with the tail of the monsoon -- rain, mist, cold wind, slippery laterite (rain gear + grippy shoes). KEEP STRICTLY TO THE FENCED PATHS -- fragile protected ecosystem, stepping on the beds / picking flowers is damaging + penalised. Approach + Thoseghar/Sajjangad roads winding -- no night driving; Sept weekends heavy traffic + long shuttle queues. Minimal facilities (basic toilets + stalls at the car park only) -- carry own water + food. womenSafety.level Very Safe (8).",
+      "fixesDanglingRef": "Mahabaleshwar (mh_batch6) + Panchgani (mh_batch15) cards link nearbyPlaces id 'kaas-plateau' -- now resolved."
+    },
+    {
+      "name": "Aurangabad Caves",
+      "url": "NO dedicated maharashtratourism.gov.in page (the /cave/aurangabad-caves/ + /cave/aurangabad/ slugs 404). Built from standard scholarship + ASI records; the Ajanta gov page mentions them as a nearby attraction ('Chhatrapati Sambhajinagar Caves ... 6th and 7th centuries').",
+      "summary": "Group of TWELVE Buddhist rock-cut caves in a basalt ridge on the northern edge of Chhatrapati Sambhajinagar (Aurangabad), on the hillside DIRECTLY ABOVE Bibi ka Maqbara. Two clusters a short distance apart; excavated mainly 6th-8th c. CE (later than Ajanta, overlapping the earliest Ellora work); Mahayana + Vajrayana monasteries. Almost all viharas -- pillared halls with a seated-Buddha shrine + monk cells. Finest = CAVE 7: antechamber walls with large deeply-cut Bodhisattva figures incl. a LITANY OF AVALOKITESHVARA panel (the saviour rescuing devotees from perils) + a celebrated dancers-and-musicians relief group. Caves 3, 6, 9 also worth a look. Overshadowed by Ajanta + Ellora -> usually near-empty; ridge gives a fine view over the city + the Maqbara. ASI-ticketed; short drive + a flight of steps.",
+      "access": "Within Chhatrapati Sambhajinagar -- ~3-4 km from the city centre, just past/above Bibi ka Maqbara. Air: Aurangabad ~12 km. Rail: Aurangabad ~8 km. Auto/taxi to the base of the eastern or western group, then steps. Combine with Bibi ka Maqbara (right below) + Panchakki.",
+      "openingNote": "ASI ticketed site, generally sunrise-sunset; small fee.",
+      "bestSeason": "Oct-Mar; Apr-Jun very hot; monsoon greens the ridge but steps slippery.",
+      "safetyNotes": "Ticketed ASI monument, caretaker present, within the city, short well-travelled auto ride, easily combined with the busy Bibi ka Maqbara right below. BUT the caves are GENUINELY QUIET -- often almost alone on the ridge -- so go mid-morning when there's some visitor flow, take a guide from the ticket area, don't linger late. Steps + ridge paths uneven, some unfenced drops, slippery rock in the monsoon. Hot/exposed ridge outside winter. Monkeys present. Agree the auto fare + FIX A PICKUP TIME (not a spot with waiting autos). womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Bibi ka Maqbara card (mh_batch2) links nearbyPlaces id 'aurangabad-caves' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -408,6 +427,8 @@
     "Matheran (mh_batch14)",
     "Tarkarli & Malvan (mh_batch14)",
     "Bhimashankar (mh_batch15)",
-    "Panchgani (mh_batch15)"
+    "Panchgani (mh_batch15)",
+    "Kaas Plateau (mh_batch16)",
+    "Aurangabad Caves (mh_batch16)"
   ]
 }
