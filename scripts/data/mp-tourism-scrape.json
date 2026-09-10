@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "source": "https://www.mptourism.com/ (official Madhya Pradesh Tourism Board site)",
+    "scrapedOn": "2026-09-11",
+    "scope": "Madhya Pradesh — expanding the app's existing 10 MP cards with the rest of the state's genuine places of interest",
+    "urlPattern": "https://www.mptourism.com/destination-<slug>.php",
+    "navCategories": ["Explore (Nature, Heritage, Wildlife, Spirituality)", "Experiences (Adventure, Culture, Festivals, Rural Tourism)", "Plan Your Trip (Accommodations, Itineraries, Guides, Agents)"],
+    "wildlifeHeadline": "MP promotes itself as India's 'Tiger State' — 11 National Parks, 24 Wildlife Sanctuaries, 9 Tiger Reserves; also India's first cheetah reintroduction site (Kuno)."
+  },
+  "alreadyCardedInApp": ["khajuraho", "bhopal", "sanchi", "gwalior", "ujjain", "orchha", "pachmarhi", "kanha-national-park", "bandhavgarh-national-park", "mandu"],
+  "destinationUniverse": {
+    "nature": ["Bhopal", "Bhedaghat", "Jabalpur", "Tamia", "Sailani Island", "Hanuwantiya", "Pachmarhi", "Alirajpur"],
+    "heritage": ["Bhimbetka", "Chanderi", "Khajuraho", "Gwalior", "Mandu", "Orchha", "Burhanpur", "Sanchi", "Indore", "Shivpuri", "Bhojpur", "Datia", "Bateshwar/Morena"],
+    "wildlife": ["Panna", "Kanha", "Bandhavgarh", "Pench", "Kuno", "Satpura (Madai)", "Nauradehi", "Rewa (white tiger safari)", "Ratapani"],
+    "spiritual": ["Ujjain", "Chitrakoot", "Amarkantak", "Maihar", "Maheshwar", "Mandsaur", "Omkareshwar", "Datia"]
+  },
+  "destinationsScraped": [
+    {
+      "name": "Bhimbetka",
+      "url": "https://www.mptourism.com/destination-bhimbetka.php",
+      "summary": "Prehistoric rock shelters in the forested Vindhyan hills ~45 km SE of Bhopal (Raisen district). 760 shelters, ~500 with rock paintings, the oldest dating back tens of thousands of years (Mesolithic onward; some cupules in the Auditorium Cave far older). UNESCO World Heritage Site (inscribed 2003). Named shelters: Auditorium Rock, Zoo Rock (most densely painted, Mesolithic), Boar Rock, Turtle Rock. Often combined with the nearby Bhojpur Shiva temple (~7.5 ft linga), ~45-50 min away.",
+      "access": "Rail: Bhopal Junction / Obedullaganj (~7 km). Air: Raja Bhoj Airport, Bhopal. Road: ~1-1.5 hr by car from Bhopal via NH46 (Hoshangabad road).",
+      "notesFromSite": "Site page did not give exact timings/fees; ASI site, generally sunrise-sunset, small entry fee."
+    },
+    {
+      "name": "Bhedaghat",
+      "url": "https://www.mptourism.com/destination-bhedaghat.php",
+      "summary": "The Marble Rocks gorge on the Narmada near Jabalpur (~20 km): white/cream marble (dolomitic limestone) cliffs rising ~30 m, best seen by boat, and famously on a full-moon night when the marble glows. Dhuandhar ('smoke cascade') Falls where the Narmada plunges in a roaring mist; a ropeway crosses the gorge at the falls. The 10th-century Chausath Yogini temple on a hilltop above the river. 'Bandar Kudni' is the narrowest point. Marble here has been quarried and carved for generations.",
+      "access": "Rail/Air: Jabalpur (~20-25 km). Road: ~30-40 min from Jabalpur.",
+      "safetyFromSite": "In the monsoon the falls thunder at their most powerful; boating in the gorge is suspended when the river is high (monsoon and just after) for safety."
+    }
+  ],
+  "cardedThisTask": []
+}
