@@ -139,9 +139,11 @@
     "Peermade / Peermedu (ke_batch20)",
     "Sabarimala Sree Dharmasastha Temple (ke_batch20)",
     "Thirunelli Maha Vishnu Temple (ke_batch21)",
-    "Jatayu Earth's Center (ke_batch21)"
+    "Jatayu Earth's Center (ke_batch21)",
+    "Palaruvi Falls (ke_batch22)",
+    "Ranipuram (ke_batch22)"
   ],
-  "keralaCoverageNote": "Kerala total now 70 destinations (was 28 at task start; +42 added this task across 21 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 72 destinations (was 28 at task start; +44 added this task across 22 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -286,6 +288,14 @@
     {
       "name": "Jatayu Earth's Center",
       "url": "https://www.keralatourism.org/kerala-article/2018/jatayu-earth-centre/848"
+    },
+    {
+      "name": "Palaruvi Falls",
+      "url": "https://www.keralatourism.org/destination/palaruvi-waterfalls/"
+    },
+    {
+      "name": "Ranipuram",
+      "url": "https://www.keralatourism.org/destination/ranipuram-kasaragod/166/"
     }
   ]
 }
