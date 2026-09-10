@@ -395,6 +395,24 @@
       "bestSeason": "Oct-Mar; Apr-Jun very hot; monsoon greens the ridge but steps slippery.",
       "safetyNotes": "Ticketed ASI monument, caretaker present, within the city, short well-travelled auto ride, easily combined with the busy Bibi ka Maqbara right below. BUT the caves are GENUINELY QUIET -- often almost alone on the ridge -- so go mid-morning when there's some visitor flow, take a guide from the ticket area, don't linger late. Steps + ridge paths uneven, some unfenced drops, slippery rock in the monsoon. Hot/exposed ridge outside winter. Monkeys present. Agree the auto fare + FIX A PICKUP TIME (not a spot with waiting autos). womenSafety.level Safe (7).",
       "fixesDanglingRef": "Bibi ka Maqbara card (mh_batch2) links nearbyPlaces id 'aurangabad-caves' -- now resolved."
+    },
+    {
+      "name": "Grishneshwar Temple",
+      "url": "https://maharashtratourism.gov.in/temple/ghrishneshwar/ (read via in-app browser)",
+      "summary": "In Verul village, <1 km from the Ellora caves, ~30 km from Chhatrapati Sambhajinagar (Aurangabad). The 12TH AND FINAL JYOTIRLINGA of Shiva; named in the Shiva Purana + Skanda Purana. Present temple = a compact richly-carved building of RED VOLCANIC (basalt) ROCK, Hemadpanti style; 5-tiered shikhara covered in sculpted figures; pillared court hall on 24 carved pillars around an EAST-FACING linga + a Nandi. Earlier structures damaged 13th-14th c. (Delhi Sultanate); present temple rebuilt 16th c. by Maloji Bhosale (Shivaji's grandfather -- his samadhi nearby); restored 18th c. by Ahilyabai Holkar of Indore. MALE devotees enter the inner sanctum bare-chested (dhoti, no shirt). Peak: Mahashivaratri. Normally visited with Ellora.",
+      "access": "Air/Rail: Chhatrapati Sambhajinagar (Aurangabad) ~30-35 km. Road: ~30 km/~45 min from Aurangabad, ~1 km from the Ellora caves (Daulatabad Fort on the way); MSRTC buses stop at Verul. Same trip as Ellora.",
+      "bestSeason": "Oct-Mar; Apr-Jun very hot; Mahashivaratri peak.",
+      "safetyNotes": "Important well-run Jyotirlinga, steady family-heavy pilgrim flow, security + queue management, right beside the busy Ellora WHS; temple + Verul + Ellora car park a compact well-trafficked area; Aurangabad base is an established hub. Standard temple-town care: valuables minimal in the darshan queue (free lockers for phones/cameras), long on Mondays / Shravan Mondays / Mahashivaratri. WOMEN HAVE FULL ACCESS; the bare-chested inner-sanctum rule is for male devotees only. Hawkers + freelance 'guides' on the approach -- licensed guide at Ellora only. Daylight visit as part of the Ellora day; drive back to Aurangabad before dark. Hot/shadeless approach outside winter. Photography not allowed inside. womenSafety.level Very Safe (8).",
+      "fixesDanglingRef": "Daulatabad card (mh_batch2) links nearbyPlaces id 'grishneshwar-temple' -- now resolved."
+    },
+    {
+      "name": "Shani Shingnapur",
+      "url": "https://maharashtratourism.gov.in/temple/shani-shinganapur/ (read via in-app browser)",
+      "summary": "Village in Ahmednagar (Ahilyanagar) district built around a shrine to SHANI (deity of the planet Saturn). Unusual on two counts: (1) the shrine has NO ROOF -- a black stone ~1.7 m (gov: 5.5 ft) tall on a bare raised platform under the open sky, flanked by a trident, Nandi + a small Hanuman; bathed each morning + anointed with SESAME (til) OIL by devotees seeking relief from Saturn's malefic influence. (2) The VILLAGE keeps its homes, shops + even the local bank branch WITHOUT DOORS OR LOCKS -- belief that Shani himself guards against theft. Legend: a black stone found in the Panasnala stream that bled when prodded + revealed Shani in a villager's dream, on condition it be kept uncovered. Peak: Saturdays, Shani Amavasya (new moon), Shani Jayanti; many pilgrims walk the last stretch barefoot. ~35 km from Ahmednagar, ~65 km from Shirdi (an easy add-on).",
+      "access": "Air: Shirdi ~70 km (closest); Pune ~150 km, Aurangabad ~90 km. Rail: Ahmednagar ~35 km (nearest railhead); Sainagar Shirdi. Road: ~35 km Ahmednagar, ~65 km Shirdi, ~90 km Aurangabad; a standard stop on Shirdi tour circuits, frequent buses + shared taxis.",
+      "bestSeason": "Nov-Feb; Saturdays / Shani Amavasya / Shani Jayanti busiest + most intense.",
+      "safetyNotes": "Managed pilgrimage site -- temple trust, barricaded queues, security, heavy family-heavy pilgrim flow esp. Saturdays; a standard stop on organised Shirdi circuits (safety in numbers + organised transport). WOMEN HAVE FULL ACCESS to the shrine + platform -- the 2016 platform-access dispute was resolved in favour of open access for all devotees. Main issue = crowd density + long slow queues on Saturdays / Shani Amavasya / Shani Jayanti -- weekday far quicker; on a busy day follow the queue system, children close, no peak queue in the heat. Buy the offering OIL only from licensed/authorised stalls; firm with touts pushing 'special darshan' / overpriced pooja packages. Platform + surrounds SLIPPERY WITH SPILT OIL -- watch footing. Shrine fully SUN-EXPOSED, no roof -- water + sun cover. Odd-hour bus arrival -> wait at the stand till daylight. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Shirdi card (mh_batch6) links nearbyPlaces id 'shani-shingnapur' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -429,6 +447,8 @@
     "Bhimashankar (mh_batch15)",
     "Panchgani (mh_batch15)",
     "Kaas Plateau (mh_batch16)",
-    "Aurangabad Caves (mh_batch16)"
+    "Aurangabad Caves (mh_batch16)",
+    "Grishneshwar Temple (mh_batch17)",
+    "Shani Shingnapur (mh_batch17)"
   ]
 }
