@@ -133,9 +133,11 @@
     "Ramakkalmedu (ke_batch17)",
     "Idukki Arch Dam (ke_batch17)",
     "Kadalundi Bird Sanctuary (ke_batch18)",
-    "Thusharagiri Falls (ke_batch18)"
+    "Thusharagiri Falls (ke_batch18)",
+    "Parassinikkadavu Muthappan Temple + Snake Park (ke_batch19)",
+    "Payyambalam Beach (ke_batch19)"
   ],
-  "keralaCoverageNote": "Kerala total now 64 destinations (was 28 at task start; +36 added this task across 18 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 66 destinations (was 28 at task start; +38 added this task across 19 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -256,6 +258,14 @@
     {
       "name": "Thusharagiri Waterfalls",
       "url": "https://www.keralatourism.org/destination/thuusharagiri-waterfalls-kozhikode/269/"
+    },
+    {
+      "name": "Parassinikkadavu Muthappan Temple",
+      "url": "https://www.keralatourism.org/destination/parassinikadavu-muthappan-temple/196/"
+    },
+    {
+      "name": "Payyambalam Beach",
+      "url": "https://www.keralatourism.org/malabar/payyambalam-beach/114"
     }
   ]
 }
