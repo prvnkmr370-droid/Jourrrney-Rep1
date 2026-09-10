@@ -467,6 +467,25 @@
       "safetyNotes": "Primary hazard is the seaside pradakshina: the lower path is over wave-washed rock, slippery and partly submerged at high tide - people have been swept off; do it only at low tide, in calm weather, in daylight, with others, and not at all in the monsoon. Konkan-beach currents and uneven sandbars - swim only where locals do, shallow and close to shore, never in the monsoon or after dark or after alcohol. Use registered boat/water-sport operators with life jackets only; dolphin trips are fair-season early morning. Quiet town after ~9-10 pm with few lit areas - keep beach walks to early evening on the populated stretch. Wear grippy footwear (not flip-flops) on the headland rocks.",
       "govPageError": "The Maharashtra Tourism page for this destination is substantially wrong: it titles the place 'Harishchandreshwar Beach', repeatedly places it in Ratnagiri district, and gives the distance as ~450 km from Mumbai. Harihareshwar is in Raigad district (Shrivardhan taluka), ~200 km from Mumbai, and the shrine is the Harihareshwar / Kalbhairav temple (rebuilt 1723 under Bajirao Peshwa I). The page also splices in Diveagar parasailing. Corrected facts (district, distance, temple identity, Peshwa kuldaivat, four hills, pradakshina) taken from MTDC (mtdc.co) and standard references and used in the card.",
       "fixesDanglingRef": "Resolves the nearbyPlaces id:\"harihareshwar\" reference(s) created in earlier Raigad-coast cards."
+    },
+    {
+      "name": "Ratnagiri",
+      "url": "https://maharashtratourism.gov.in/districts/ratnagiri/",
+      "summary": "Main town / district HQ of the southern Konkan coast, fishing port and Konkan Railway junction, ~330 km south of Mumbai. Birthplace of Lokmanya Bal Gangadhar Tilak (house = Tilak Ali Museum). V.D. Savarkar interned here by the British 1924-1937; founded the Patit Pavan Mandir (open to all castes). Thibaw Palace built 1910-11 to hold the exiled last king of Burma, Thibaw Min, who lived there until his death 16 Dec 1916; Thibaw Point sunset viewpoint nearby. Ratnadurg (Bhagwati) Fort - horseshoe headland, sea on three sides, Bhagwati temple inside, lighthouse at the tip. Beaches: Bhatye (long, casuarina-backed), Mandvi (town beach), Aare-Ware (twin coves on the Ganpatipule road). Trading hub of the Alphonso/Hapus mango belt (peak Apr-May). Near Ganpatipule (~25 km), Pawas ashram (~20 km), Jaigad Fort & lighthouse (~35 km).",
+      "access": "Konkan Railway - Ratnagiri is a major station, ~5-7h from Mumbai. Ratnagiri Airport ~12 km but very limited flights. Road ~330 km (~7h) from Mumbai on NH66; ~320 km from Pune.",
+      "bestSeason": "Oct-Mar for sightseeing; Apr-May for Alphonso mangoes (hot); monsoon Jun-Sep heavy with rough seas and occasional cyclonic storms on this coast",
+      "safetyNotes": "Calm, conservative district capital, low crime, good rail/bus links - a very safe base. Beaches (Bhatye, Mandvi, especially Aare-Ware) are unpatrolled with Konkan currents and, at Aare-Ware, a sudden underwater drop-off; drownings have occurred - swim shallow, close to shore, sober, not in the monsoon/after dark. Ratnadurg's sea ramparts and the lighthouse headland have unfenced drops - keep back in wind/rain. Jun-Oct is cyclone-prone on this coast (town has taken direct hits) - check IMD advisories, don't go to forts/beaches in a storm. Standard after-dark town sense; pre-book taxis for night trains; guard bags in mango-season/Ganpati crowds.",
+      "govPageError": "The Maharashtra Tourism district page lists the Aare-Ware beaches as 'located near the town of Malvan in Maharashtra's Sindhudurg district'. Aare-Ware is actually on the Ratnagiri-Ganpatipule coastal road in Ratnagiri district. Corrected in the card.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"ratnagiri\" reference(s) created in earlier Konkan-coast cards (e.g. Ganpatipule)."
+    },
+    {
+      "name": "Kashid Beach",
+      "url": "https://maharashtratourism.gov.in/beach/kashid/",
+      "summary": "~3 km curve of pale, casuarina/coconut-backed sand on the Raigad coast, ~125 km from Mumbai and ~30 km south of Alibaug on the Alibaug-Murud road, between Kashid and Nandgaon villages. Gently shelving, calmer than many Konkan beaches; one of the most popular weekend beaches for Mumbai/Pune - water sports (jet ski, parasailing, banana/speed boats), beach camping, destination weddings; quiet midweek/off-season. Nearby: Korlai Fort + lighthouse (Portuguese, c.1521, at the Revdanda creek mouth; village speaks an Indo-Portuguese creole), Revdanda Fort ruins, Phansad Wildlife Sanctuary (~52 sq km, ~12-15 km, ex-shikargah, hornbills/leopard/giant squirrel), Murud-Janjira (~20 km), Nagaon beach (~20 km).",
+      "access": "No nearby airport; ferry Mumbai-Mandwa then road, or NH66 to Wadkhal then Alibaug and the coast road (~125 km / ~3.5h). Nearest railheads Roha (~50 km) and Pen. From Alibaug ~30 km (~45 min) with frequent buses/shared taxis.",
+      "bestSeason": "Oct-Mar (cool, dry); Nov-Feb pleasantest; monsoon green but rough dangerous sea",
+      "safetyNotes": "Despite the 'calm beach' reputation Kashid is unpatrolled and has had drownings - currents strengthen near the rocky ends and after rain; swim only in the shallow central stretch with others, never in the monsoon/after dark/after alcohol. Use licensed water-sports operators, fastened life jacket, avoid choppy water, don't be pressured into packages. Rowdy large weekend groups with alcohol after dark - keep to the lit resort frontage, not the far ends alone; solo women may prefer a resort with guarded beach access. Korlai Fort is a steep overgrown climb with unfenced ramparts/sea drops - daylight, in a pair, proper shoes. Phansad is leopard/snake habitat - forest guide/permit only, not alone.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"kashid-beach\" reference(s) created in earlier Raigad-coast cards (e.g. Alibaug, Murud-Janjira)."
     }
   ],
   "cardedThisTask": [
@@ -509,6 +528,8 @@
     "Rajgad Fort",
     "Malshej Ghat",
     "Amboli",
-    "Harihareshwar"
+    "Harihareshwar",
+    "Ratnagiri",
+    "Kashid Beach"
   ]
 }
