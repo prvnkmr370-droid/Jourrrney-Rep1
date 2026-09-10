@@ -4,15 +4,72 @@
     "scrapedOn": "2026-09-11",
     "scope": "Madhya Pradesh — expanding the app's existing 10 MP cards with the rest of the state's genuine places of interest",
     "urlPattern": "https://www.mptourism.com/destination-<slug>.php",
-    "navCategories": ["Explore (Nature, Heritage, Wildlife, Spirituality)", "Experiences (Adventure, Culture, Festivals, Rural Tourism)", "Plan Your Trip (Accommodations, Itineraries, Guides, Agents)"],
+    "navCategories": [
+      "Explore (Nature, Heritage, Wildlife, Spirituality)",
+      "Experiences (Adventure, Culture, Festivals, Rural Tourism)",
+      "Plan Your Trip (Accommodations, Itineraries, Guides, Agents)"
+    ],
     "wildlifeHeadline": "MP promotes itself as India's 'Tiger State' — 11 National Parks, 24 Wildlife Sanctuaries, 9 Tiger Reserves; also India's first cheetah reintroduction site (Kuno)."
   },
-  "alreadyCardedInApp": ["khajuraho", "bhopal", "sanchi", "gwalior", "ujjain", "orchha", "pachmarhi", "kanha-national-park", "bandhavgarh-national-park", "mandu"],
+  "alreadyCardedInApp": [
+    "khajuraho",
+    "bhopal",
+    "sanchi",
+    "gwalior",
+    "ujjain",
+    "orchha",
+    "pachmarhi",
+    "kanha-national-park",
+    "bandhavgarh-national-park",
+    "mandu"
+  ],
   "destinationUniverse": {
-    "nature": ["Bhopal", "Bhedaghat", "Jabalpur", "Tamia", "Sailani Island", "Hanuwantiya", "Pachmarhi", "Alirajpur"],
-    "heritage": ["Bhimbetka", "Chanderi", "Khajuraho", "Gwalior", "Mandu", "Orchha", "Burhanpur", "Sanchi", "Indore", "Shivpuri", "Bhojpur", "Datia", "Bateshwar/Morena"],
-    "wildlife": ["Panna", "Kanha", "Bandhavgarh", "Pench", "Kuno", "Satpura (Madai)", "Nauradehi", "Rewa (white tiger safari)", "Ratapani"],
-    "spiritual": ["Ujjain", "Chitrakoot", "Amarkantak", "Maihar", "Maheshwar", "Mandsaur", "Omkareshwar", "Datia"]
+    "nature": [
+      "Bhopal",
+      "Bhedaghat",
+      "Jabalpur",
+      "Tamia",
+      "Sailani Island",
+      "Hanuwantiya",
+      "Pachmarhi",
+      "Alirajpur"
+    ],
+    "heritage": [
+      "Bhimbetka",
+      "Chanderi",
+      "Khajuraho",
+      "Gwalior",
+      "Mandu",
+      "Orchha",
+      "Burhanpur",
+      "Sanchi",
+      "Indore",
+      "Shivpuri",
+      "Bhojpur",
+      "Datia",
+      "Bateshwar/Morena"
+    ],
+    "wildlife": [
+      "Panna",
+      "Kanha",
+      "Bandhavgarh",
+      "Pench",
+      "Kuno",
+      "Satpura (Madai)",
+      "Nauradehi",
+      "Rewa (white tiger safari)",
+      "Ratapani"
+    ],
+    "spiritual": [
+      "Ujjain",
+      "Chitrakoot",
+      "Amarkantak",
+      "Maihar",
+      "Maheshwar",
+      "Mandsaur",
+      "Omkareshwar",
+      "Datia"
+    ]
   },
   "destinationsScraped": [
     {
@@ -30,5 +87,8 @@
       "safetyFromSite": "In the monsoon the falls thunder at their most powerful; boating in the gorge is suspended when the river is high (monsoon and just after) for safety."
     }
   ],
-  "cardedThisTask": []
+  "cardedThisTask": [
+    "Bhimbetka (mp_batch1)",
+    "Bhedaghat (mp_batch1)"
+  ]
 }
