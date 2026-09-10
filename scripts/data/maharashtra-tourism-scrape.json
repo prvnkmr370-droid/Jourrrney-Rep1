@@ -208,6 +208,22 @@
       "access": "Base is Pune (no closer airport/rail). From Pune Junction: taxi or PMPML bus to Sinhagad village for the trek, or the toll road to near the top (weekend queues). ~35 km / 1-1.5h from central Pune.",
       "bestSeason": "Oct-Feb clear/cool; Jun-Sep greenest but slippery + misty trails; visit early in summer.",
       "safetyNotes": "Extremely popular well-trodden outing -- dry-season mornings the trail + top are busy with Pune families/students/trek groups; road option too; stalls + basic first aid on top. Daylight only, down before dusk (dark descent dangerous, quieter parts empty in late afternoon). Ramparts + gateways on real cliffs with long largely UNFENCED drops -- keep back from edges (esp. for photos), watch children. Monsoon basalt + steps treacherously slippery, mist cuts visibility -- take the road or a dry-day trek, grippy shoes. Hot/exposed by late morning in summer. Weekend/holiday crowds cause trail + road bottlenecks; midweek far calmer + safer underfoot. Summit monkeys grab food/bags. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Shirdi",
+      "url": "https://maharashtratourism.gov.in/temple/shirdi/ (read via in-app browser)",
+      "summary": "Small town in Ahmednagar (Ahilyanagar) district; one of India's most-visited pilgrimage centres, ~tens of thousands/day to the shrine of Sai Baba (lived here ~mid-19th c. to his death 15 Oct 1918; revered across Hindu + Muslim lines; message of shraddha/faith + saburi/patience). Sai Baba Sansthan Trust runs the complex. Samadhi Mandir = Baba's tomb + a white-marble image under a golden canopy. Short walk: Dwarkamai (old mosque where he lived; the dhuni/sacred fire still burns), Chavadi (slept alternate nights), Gurusthan (neem tree where he first appeared). Four aartis: Kakad ~4:30 am, Madhyan noon, Dhup dusk, Shej night. Thursday palkhi procession between the shrines. Fills for Ram Navami, Guru Purnima, Vijayadashami (punyatithi).",
+      "access": "Air: Shirdi (Kakadi) Airport ~15 km (own airport, several cities); Aurangabad ~120 km. Rail: Sainagar Shirdi terminus ~3 km; Kopargaon/Manmad bigger junctions. Road: very well served by buses -- ~90 km Nashik, ~185 km Mumbai, ~120 km Aurangabad, ~65 km Shani Shingnapur.",
+      "bestSeason": "Oct-Mar; avoid peak-summer heat + the biggest festival days for shorter queues.",
+      "safetyNotes": "Tightly-managed pilgrimage complex (Sai Baba Sansthan Trust) -- barricaded queues, separate women's lines, CCTV, security, volunteers; women/families/elderly a large share day + night; compact well-lit heavily-policed pedestrian core. MAIN RISK: crowd density + long slow queues (weekends, Thursdays, festivals) -- water, no peak queue with small kids in the heat, use a timed/paid darshan slot. ONLY the official Sansthan website/app for passes + rooms -- touts sell fake 'quick/VIP darshan'. Free cloakrooms for phones/cameras/footwear; body pouch for cash/cards. Temple zone vegetarian + modest dress; market streets ordinary by day, quieter late. Arrive by overnight train/bus -> wait at the station till first light. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Mahabaleshwar",
+      "url": "https://maharashtratourism.gov.in/nature/mahabaleshwar/ (read via in-app browser)",
+      "summary": "High plateau hill station in the Western Ghats, Satara district, ~1,350 m; among the wettest hill country in India -- green/misty much of the year, cloud-buried in the monsoon. Shivaji fortified the plateau (17th c.); the British made it the hot-weather capital of the Bombay Presidency (Anglican church, old bazaar, viewpoint names). Old Mahabaleshwar (a few km away): ancient Mahabaleshwar (Shiva) temple + Panchganga temple at the traditional Krishna river source. Draws: clifftop viewpoints over the Savitri + Krishna valleys -- Arthur's Seat ('Queen of the Points'), Wilson Point (highest ~1,439 m, sunrise), Elephant's Head / Needle Hole Point, Kate's Point, Bombay/Mumbai Point (sunset); Venna Lake (boating, horse-riding, strawberries-with-cream); Lingmala waterfall (~600 ft, best in monsoon); Mapro Garden + strawberry farms on the Panchgani road. Pratapgad Fort ~24 km. Year-round; leopards/deer/hornbills in the surrounding Ghats forest.",
+      "access": "Air: Pune ~120 km (nearest). Rail: Wathar/Satara ~55 km closest; Pune the usual approach. Road: ~120 km from Pune (via Wai), ~260 km from Mumbai (Expressway+Wai, or Mahad+Ambenali Ghat), ~20 km from Panchgani; last stretch winding Ghat road; Volvo/state buses from Pune + Mumbai.",
+      "bestSeason": "Oct-Jun cool retreat + clear views; Jun-Sep full-flow waterfalls + dramatic mist but heavy rain + closed viewpoints.",
+      "safetyNotes": "Long-established family hill station -- busy market, hotels used to solo/family travellers, steady tourist presence at main viewpoints + Venna Lake; taxi 'point tours' the standard regulated way to see the spread-out (10-20 km) viewpoints. CLIFF VIEWPOINTS (Arthur's Seat, Elephant's Head, Kate's Point etc.) have long largely UNFENCED drops + there have been FATAL FALLS, several while taking photos -- stay behind railings, well back, don't climb rocks past barriers, hold children. Monsoon: fogged in, rock/steps very slippery, several viewpoints close -- check + don't pass closure barriers. Ghat roads winding with sheer drops -- experienced driver, no night driving, slow in fog/peak weekends. Horse/stall operators pushy on price -- agree first. Waterfall pools in spate have drowned people -- no entering water in strong flow. womenSafety.level Very Safe (8)."
     }
   ],
   "cardedThisTask": [
@@ -220,6 +236,8 @@
     "Mumbai (mh_batch4)",
     "Kanheri Caves (mh_batch4)",
     "Pune (mh_batch5)",
-    "Sinhagad Fort (mh_batch5)"
+    "Sinhagad Fort (mh_batch5)",
+    "Shirdi (mh_batch6)",
+    "Mahabaleshwar (mh_batch6)"
   ]
 }
