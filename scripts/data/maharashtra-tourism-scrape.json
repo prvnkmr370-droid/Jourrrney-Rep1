@@ -342,6 +342,22 @@
       "access": "Air: Ratnagiri Airport ~35 km (limited service); Mumbai/Pune the practical air gateways + a long road/rail leg. Rail: Konkan Railway to Ratnagiri ~35 km (~7h from Mumbai, scenic), then bus/taxi ~45 min. Road: ~375 km from Mumbai (NH66 + coast roads, 7-8h), ~330 km Pune, ~35 km Ratnagiri.",
       "bestSeason": "Oct-Mar for beach + temple; Apr-Jun Alphonso mangoes; Jul-Sep green but rough sea, swimming unsafe.",
       "safetyNotes": "Calm family-oriented pilgrimage-and-beach village, MTDC resort + homestays + temple set an orderly low-key tone; devotional + leisure crowd with women + families throughout; compact walkable core (temple/beach/museum); Konkani homestay hosts used to solo travellers. Sea has currents + no full lifeguard cover -- swim only in the shallow zone near others/flags, never alone/after dark, out entirely in the monsoon. Beach quiet + unlit at night. Mangaleshwar pradakshina/hill path fine by day, with others late afternoon. Coastal roads long/narrow/winding -- no night driving; dolphin/boat trips only in calm conditions with a licensed operator + life jackets. Temple dress code; Feb-Mar fair = big dense crowds. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Matheran",
+      "url": "https://maharashtratourism.gov.in/nature/matheran/ (read via in-app browser)",
+      "summary": "Small hill station on a flat-topped Sahyadri spur, Raigad district, ~800 m (gov: 2,625 ft), weekend escape from both Mumbai + Pune. DEFINING RULE: NO MOTOR VEHICLES past Dasturi Naka -- the last stretch + everything in town is on foot / horseback / hand-pulled rickshaw, on soft red laterite paths under dense forest. 'Discovered' 1850 by British officer Hugh Poyntz Malet; British summer retreat; colonial bungalows, church, old hotels. Narrow-gauge MATHERAN HILL RAILWAY toy train climbs ~20 km from Neral in ~2h (weather permitting; part of the Mountain Railways of India nomination -- gov page loosely says 'UNESCO-listed'). Plateau ringed by named viewpoints over deep valleys + distant forts -- Louisa, Panorama (sunrise), Echo, One Tree Hill, Alexander, Porcupine/Sunset etc.; Charlotte Lake (reservoir) + Pisarnath temple at the centre. Forest has leopards, barking deer, giant squirrels; resident monkeys are notorious food thieves. Prabal Fort trek nearby.",
+      "access": "Everything via Neral at the hill base. Rail: Mumbai Central Line local/express to Neral Jn (~1.5-2h); then the toy train up (~2h) OR a shared taxi to Dasturi Naka (~30 min) + walk/horse/rickshaw the last ~2-3 km. Road: ~2-2.5h Mumbai to Dasturi Naka; PRIVATE CARS LEFT AT DASTURI. ~90 km Mumbai to Neral, ~120 km Pune.",
+      "bestSeason": "Oct-May clear viewpoints + easy walking; monsoon green + misty but paths slippery + toy train often suspended.",
+      "safetyNotes": "Small contained heavily-visited hill town, market + toy-train station + near viewpoints busy with families esp. weekends; NO motor traffic = no road risk, core walkable; established hotels + a licensed horse-and-rickshaw system. MANY VIEWPOINTS (Louisa, One Tree Hill, Alexander, Panorama) on UNFENCED CLIFF EDGES with long drops -- stay well back, care for photos + in mist, don't scramble past barriers. Far points 3-6 km each way on rough root-and-rock forest paths, muddy/slippery in the monsoon, lonely on a quiet weekday -- company or a horse, water, back before dusk. FOREST HAS LEOPARDS -- main paths only, not the outer trails alone at dawn/dusk, in after dark. Monkeys aggressive about food. Agree horse + hand-rickshaw fares in advance vs the posted rates; firm with over-quoting at Dasturi + the station. Toy train cancelled at short notice in the monsoon -- keep the Dasturi taxi-and-walk fallback. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Tarkarli & Malvan",
+      "url": "https://maharashtratourism.gov.in/beach/tarkarli/ (+ the beaches listing) -- read via in-app browser",
+      "summary": "Tarkarli, near Malvan town, Sindhudurg district, far southern end of the Konkan coast, ~530 km from Mumbai. SOME OF THE CLEAREST/CLEANEST WATER on India's west coast -> Malvan is the main SCUBA-DIVING + snorkelling base on the Maharashtra coast. A long spit of fine white sand between the Arabian Sea + the KARLI RIVER BACKWATER, ending at the DEVBAG SANGAM (river meets sea); MTDC beach cottages + a backwater houseboat. Offshore from Malvan: SINDHUDURG FORT -- Shivaji's great sea fort, built 1664-67 on a rock island, ~3 km of curved rampart, hand-and-footprint impressions of the king in the stone, a rare temple to Shivaji himself inside; sailboats from the Malvan jetty. Around Tarkarli: Rock Garden, the sandbar locally called 'Tsunami Island', dolphin-spotting boat trips, backwater kayaking. Malvani cuisine -- fried fish, kombdi vade, sol kadhi, ukdiche modak. Gov how-to-reach: Chipi airport 25 km, Mopa 80 km, Dabolim 135 km; Kudal rail 45 km; Malvan 6 km by road.",
+      "access": "Air: Chipi (Sindhudurg) ~25 km (limited routes); Goa (Mopa ~80 km / Dabolim ~135 km) fallback. Rail: Konkan Railway to Kudal ~45 km, then ~1h drive. Road: NH66 down the Konkan, ~530 km / 10-12h from Mumbai; ~6 km Malvan-Tarkarli; Goa border ~1.5h S.",
+      "bestSeason": "Nov-May calm/clear water + diving; monsoon (Jun-Sep) rough seas, no water activities, dive ops closed.",
+      "safetyNotes": "Settled tourism-experienced Konkan area -- MTDC + homestays + licensed dive/boat operators set an orderly tone; women/families/dive groups common; Tarkarli spit + Malvan town compact; water activities via registered operators with gear + briefings. SEA HAS REAL CURRENTS esp. around the DEVBAG SANGAM RIVER MOUTH, most of the beach has no lifeguard cover -- swim only in the shallow patrolled zone near others, never alone/after dark, out entirely in the monsoon. SCUBA/SNORKEL: certified insured operator only, complete the briefing, don't exceed your training, not if unwell / after drinking, accept trip cancellations for sea conditions. Sailboat trips to Sindhudurg + dolphin tours on open sea -- life jacket, no overloaded boat, no rough-weather crossings. Beach + backwater paths unlit at night. Long way from a major hospital (Kudal/Sindhudurg town) -- carry medicines + travel/dive insurance. womenSafety.level Very Safe (8)."
     }
   ],
   "cardedThisTask": [
@@ -370,6 +386,8 @@
     "Kolhapur (mh_batch12)",
     "Panhala Fort (mh_batch12)",
     "Alibaug (mh_batch13)",
-    "Ganpatipule (mh_batch13)"
+    "Ganpatipule (mh_batch13)",
+    "Matheran (mh_batch14)",
+    "Tarkarli & Malvan (mh_batch14)"
   ]
 }
