@@ -147,9 +147,11 @@
     "Chinnar Wildlife Sanctuary (ke_batch24)",
     "Meesapulimala (ke_batch24)",
     "Neyyar Dam & Wildlife Sanctuary (ke_batch25)",
-    "Thirunavaya Navamukunda Temple (ke_batch25)"
+    "Thirunavaya Navamukunda Temple (ke_batch25)",
+    "Kottakkunnu (ke_batch26)",
+    "Anayirankal Dam (ke_batch26)"
   ],
-  "keralaCoverageNote": "Kerala total now 78 destinations (was 28 at task start; +50 added this task across 25 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 80 destinations (was 28 at task start; +52 added this task across 26 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -326,6 +328,14 @@
     {
       "name": "Thirunavaya Navamukunda Temple",
       "url": "https://www.keralatourism.org/temples/malappuram/thirunavaya-navamukunda"
+    },
+    {
+      "name": "Kottakkunnu, Malappuram",
+      "url": "https://www.keralatourism.org/destination/kottakkunnu-malappuram/396/"
+    },
+    {
+      "name": "Anayirankal (Anayirangal Dam)",
+      "url": "https://www.keralatourism.org/destination/anayirankal-munnar/96/"
     }
   ]
 }
