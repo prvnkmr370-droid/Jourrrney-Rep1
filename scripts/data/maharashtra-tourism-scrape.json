@@ -241,6 +241,24 @@
       "access": "Air: Nashik (Ozar) ~40 km; Mumbai ~180 km. Rail: Nashik Road ~35 km. Road: ~28 km/~45 min from Nashik (constant MSRTC + shared taxis from Nashik CBS/Old stand); ~180 km Mumbai.",
       "bestSeason": "Oct-Mar; monsoon greens the Brahmagiri hills but steps/trails slippery; Maha Shivaratri (Feb/Mar) peak.",
       "safetyNotes": "Long-established temple town, women/families/ritual groups the main visitors, compact busy core, constant Nashik links (easy day trip), temple + kund staffed + crowded by day. Kushavarta Kund + wet temple floors slippery -- grippy easily-removed footwear, care on kund steps. BRAHMAGIRI CLIMB to the source = long, steep, exposed, hundreds of stone steps, stretches without railing -- daylight, water, not alone late, skip in heavy monsoon (steps stream with water). RITUAL ECONOMY is large + competitive -- engage only a recognised/registered priest for Nagbali/Kaal Sarp/Tripindi, agree the full cost in writing beforehand, be firm with touts at the bus stand + temple gate. Mondays + Maha Shivaratri extremely crowded. Base in Nashik for a comfortable stay. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Lonavala & Khandala",
+      "url": "https://maharashtratourism.gov.in/nature/lonavala/ (read via in-app browser)",
+      "summary": "Twin Ghat hill stations at the top of the Bhor Ghat, Sahyadris, ~625 m, right on the old Mumbai-Pune highway + Expressway, ~equidistant from both cities (Mumbai 83 km, Pune 65 km). Shivaji used the surrounding forts (Lohagad, Visapur, Rajmachi, Tikona) as watchposts; British monsoon retreat. Default metro weekend trip: compact bazaar famous for CHIKKI (nut-and-jaggery brittle), ring of easy viewpoints + lakes, serious trekking a short drive away. Spots: Tiger's Leap (tiger-head clifftop, huge drop, plains view), Bhushi Dam (stepped spillway = heaving monsoon picnic/paddle scene when it overflows), Lion's Point + Rajmachi Point (sunsets), Pawna Lake (lakeside camping), Lohagad + Visapur forts (half-day climbs). Karla + Bhaja caves ~10-12 km. Own railway station.",
+      "access": "Air: Pune ~65 km (closer), Mumbai ~90 km. Rail: Lonavala station on the Mumbai-Pune line, frequent expresses + locals (~2-2.5h Mumbai, ~1.25h Pune); Malavli (next stop) = station for Karla/Bhaja. Road: Mumbai-Pune Expressway ~83 km/~2h; jams badly Fri eve + Sun return.",
+      "bestSeason": "Jun-Sep lush/dramatic monsoon + full waterfalls (slippery + very crowded); Oct-Feb pleasant + clear.",
+      "safetyNotes": "Extremely popular developed weekend destination -- bazaar/cafes/viewpoints/dams busy with families + groups esp. weekends + monsoon; frequent trains + buses to both metros; resorts/homestays used to solo + family travellers. BHUSHI DAM + MONSOON WATERFALL SPOTS ARE GENUINELY DANGEROUS with water flowing -- smooth slippery spillway + rocks, strong currents, DROWNINGS ALMOST EVERY MONSOON; stay out of fast/deep water, off the spillway steps when overflowing, watch children. Clifftop viewpoints (Tiger's Leap, Lion's Point) = long unfenced drops -- well back, esp. in fog + for photos. Monsoon Ghat roads foggy/slippery/traffic-choked -- experienced driver, no two-wheelers in heavy rain, lots of time. Fort trails (Lohagad, Visapur, Rajmachi) a separate setting -- day, not solo on quieter routes, wet-rock care. Isolated viewpoints/lay-bys quiet on weekdays -- prefer busy spots if alone, avoid after dark. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Mumbai (mh_batch4) + Pune (mh_batch5) cards link nearbyPlaces id 'lonavala' -- now resolved."
+    },
+    {
+      "name": "Karla & Bhaja Caves",
+      "url": "https://maharashtratourism.gov.in/cave/bhaja/ + the Lonavala page's Karla/Bhaja section (read via in-app browser; a dedicated Karla page 404s)",
+      "summary": "Two of the earliest + finest Buddhist rock-cut cave groups in India, in facing hillsides in the Indrayani valley near Malavli, ~10-12 km from Lonavala; ~5 km apart. Both Hinayana-period monasteries, begun ~2nd c. BCE, expanded over following centuries, sited on the Bhor Ghat trade route. BHAJA: ~22 caves; open horseshoe-arched chaitya (Cave 12) still showing sockets + some surviving timber of a wooden facade; plain viharas with rock beds; a cluster of 14 memorial stupas; a veranda with vivid reliefs (a royal figure on a chariot often read as Surya; dancers + musicians); water cisterns. KARLA: the Great Chaitya -- ~45 m deep, the LARGEST rock-cut chaitya hall in India, ~1st c. BCE - 2nd c. CE; carved screen of elephants + amorous couples across the facade; free-standing lion pillar; 37 columns with pot-and-figure capitals; stupa crowned by an ORIGINAL WOODEN UMBRELLA. A busy Ekvira Devi temple now stands at the mouth of the Karla cave (its own pilgrim draw, esp. Navratri). Both reached by a steep flight of a few hundred stone steps.",
+      "access": "Rail: Malavli station on the Mumbai-Pune line -- Bhaja a ~2 km walk, Karla a short auto + the steps. Road: ~11 km Karla / ~12 km Bhaja from Lonavala; off the old Mumbai-Pune highway; Pune ~50 km, Mumbai ~100 km. Easiest as a Lonavala half-day taxi covering both.",
+      "bestSeason": "Oct-Mar for the step climb; monsoon green + valley waterfalls but slippery mossy steps.",
+      "safetyNotes": "Both ticketed ASI sites, steady visitor flow; Karla additionally busy with Ekvira Devi temple pilgrims. Approach to each = a steep flight of a few hundred stone steps -- slow, handrails where present, extra care in the monsoon (wet + mossy). Karla steps crowded + lined with insistent stalls + 'guide'/'pooja' offers; Ekvira temple crowd can be a crush on weekends + Navratri -- valuables secure, firm with touts. Bhaja much quieter -- explore outer caves + stupa area with a companion, mind unfenced hillside-path edges. Hot/exposed climb outside winter. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Pune card (mh_batch5) links nearbyPlaces id 'karla-bhaja-caves' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -257,6 +275,8 @@
     "Shirdi (mh_batch6)",
     "Mahabaleshwar (mh_batch6)",
     "Nashik (mh_batch7)",
-    "Trimbakeshwar (mh_batch7)"
+    "Trimbakeshwar (mh_batch7)",
+    "Lonavala & Khandala (mh_batch8)",
+    "Karla & Bhaja Caves (mh_batch8)"
   ]
 }
