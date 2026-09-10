@@ -34,7 +34,26 @@
     "Dharmasthala (ka_batch3)",
     "Bidar Fort & City (ka_batch3)",
     "Melukote (ka_batch4)",
-    "Agumbe (ka_batch4)"
+    "Agumbe (ka_batch4)",
+    "Kasarkod Beach (ka_batch5)",
+    "Sakleshpur / Manjarabad Fort (ka_batch5)",
+    "Nanjangud Srikanteshwara Temple (ka_batch6)",
+    "Kittur Fort (ka_batch6)",
+    "Devarayanadurga (ka_batch7)",
+    "Himavad Gopalaswamy Betta (ka_batch7)",
+    "Kemmanagundi (ka_batch8)",
+    "Nagara Fort / Bidanur (ka_batch8)",
+    "Male Mahadeshwara Hills / MM Hills (ka_batch9)",
+    "St. Mary's Island (ka_batch10)",
+    "Maravanthe Beach (ka_batch10)",
+    "Devbagh Beach (ka_batch11)",
+    "Keladi (ka_batch11)"
+  ],
+  "deferredPendingBetterImages": [
+    "Kateel (island Durga Parameshwari temple) - only low-res phone snaps on Commons",
+    "Kurumgad Island - zero Commons images",
+    "Barkur - fort/temple photos all sub-1000px",
+    "Shivagange - weak imagery, no scraped page yet"
   ],
   "destinationsFound": [
     {
