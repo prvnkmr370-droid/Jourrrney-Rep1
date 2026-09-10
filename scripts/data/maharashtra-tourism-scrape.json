@@ -293,6 +293,22 @@
       "access": "Air: Mumbai ~165 km / Pune ~170 km. Rail: Konkan Railway -- Roha or Mangaon (~40-50 km), then bus/taxi to Murud. Road: ~165 km from Mumbai (5-6h, or shorter via the Mumbai-Mandwa fast ferry + drive); ~50 km from Alibaug; MSRTC buses to Murud; ~5 km Murud town to the Rajapuri jetty for the fort boat.",
       "bestSeason": "Oct-Mar calm seas + reliable boats; monsoon (Jun-Sep) rough seas, boat crossing often suspended; summer hot on the coast.",
       "safetyNotes": "Well-visited ASI monument reached by shared boats through the season, steady family/tour-group flow; Murud a small easygoing coastal town; fort route (boat + ramparts walk) straightforward + busy in season. SAILBOAT crossing on open tidal sea -- life jacket if provided, no overloaded boat, sit while moving, DON'T go when the sea is rough (boats suspended in the monsoon + bad weather for good reason). Fort ramparts/bastions high with broken parapets + open gaps in places + a straight drop to sea/rocks -- away from edges, esp. in wind, watch children. NO shade, no toilet, nothing to buy on the fort -- carry water/sun cover before sailing. Confirm the return-boat arrangement before landing (small island). Konkan beaches: some strong currents + no lifeguards -- swim where locals do, not after dark/after drinking. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Tadoba-Andhari Tiger Reserve",
+      "url": "https://maharashtratourism.gov.in/wildlife/tadoba-andhari-tiger-reserve/ (read via in-app browser)",
+      "summary": "Chandrapur district, Vidarbha, eastern Maharashtra; the state's OLDEST + LARGEST national park, ~625.4 sq km of southern dry deciduous teak-and-bamboo forest, rocky ridges, meadows, lakes. Tadoba NP 1955; Andhari WLS 1986; merged into the tiger reserve 1995; one of India's 50 Project Tiger reserves. Name: Taru, a village chief killed by a tiger -- his shrine still stands by Tadoba Lake, a Pausha (Dec-Jan) fair; the Andhari river supplies the rest of the name. Rising Bengal tiger population + open forest + waterholes = AMONG THE HIGHEST TIGER-SIGHTING RATES of any Indian reserve, esp. the hot months. Also leopard, sloth bear, gaur, dhole, nilgai, sambar, chital, chousingha (4-horned antelope), marsh crocodile in the lakes, 195+ birds. Jeep safaris from a ring of core + buffer gates -- Moharli (busiest), Kolara, Navegaon, Khutwanda, Zari, Kolsa etc.; morning + afternoon slots, booked ONLINE via the Maharashtra Forest Dept portal (safaribooking.mahaforest.gov.in). Core closes 1 Jul-30 Sep (monsoon); some buffer safaris continue.",
+      "access": "Air: Nagpur ~140 km to Moharli gate. Rail: Chandrapur / Ballarshah ~45 km to Moharli; Nagpur widest connectivity. Road: ~140 km/~3h Nagpur-Moharli, ~45 km from Chandrapur; lodges arrange transfers.",
+      "bestSeason": "Nov-Feb comfortable; Mar-Jun hot (40 C+) but best sightings; core closed Jul-Sep.",
+      "safetyNotes": "Regulated Project Tiger reserve -- registered jeeps, compulsory forest guide + driver, fixed routes/timings, online-booked permits (limited, sell out for peak Mar-Jun); Moharli/Kolara gate belts small tourism communities, lodges experienced with solo + family guests + transfers. Never leave the jeep, don't stand during sightings, follow the guide. Mar-Jun safaris extremely hot in an open jeep -- water/hat/sun cover/dust; winter mornings cold -- warm layers. Avoid touts/unofficial 'agents' selling permits -- book direct or via the lodge. CHANDRAPUR DISTRICT HAS REAL HUMAN-WILDLIFE CONFLICT outside the reserve incl. leopard + tiger movement near villages -- don't walk lodge-area roads / field edges at dusk or after dark, use the lodge vehicle. Basic local medical (hospitals Chandrapur/Nagpur). womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Nagpur",
+      "url": "https://maharashtratourism.gov.in/districts/nagpur/ (read via in-app browser)",
+      "summary": "Largest city of Vidarbha, winter capital of Maharashtra (annual winter legislature session). Founded early 18th c. by Gond ruler Bhakt Buland; grew under the Bhonsle Marathas; to the British after the Battle of Sitabuldi 1817 -> capital of the Central Provinces + Berar; Tata's Empress Mills 1877. ZERO MILE STONE = colonial marker of the notional geographic centre of undivided India (Great Trigonometrical Survey). DEEKSHABHOOMI = great white stupa where Dr B.R. Ambedkar + ~500,000 followers converted to Buddhism 14 Oct 1956; now the country's largest hollow stupa + a major pilgrimage site, busiest at Dhammachakra Pravartan Din each Dussehra. 'Orange City' (santra) + fierce Saoji cuisine + tarri poha. Real role for most visitors: air-and-rail HUB for the Vidarbha tiger reserves -- Pench (MH), Tadoba, Nagzira, Bor, Umred-Karhandla ('Tiger Capital of India'). Other stops: Dragon Palace Buddhist temple (Kamptee), Ramtek hilltop fort-temple, Ambazari + Futala lakes, Sitabuldi Fort (army-run, open only a few notified days/yr).",
+      "access": "Air: Dr Babasaheb Ambedkar International Airport, ~8 km from centre; frequent direct flights nationwide. Rail: Nagpur Junction, one of India's busiest hubs (Delhi-Chennai x Mumbai-Howrah). Road: NH44 + NH53; Samruddhi Expressway to Mumbai in ~8h. In-city: Nagpur Metro (2 corridors), app cabs, autos.",
+      "bestSeason": "Oct-Feb; Dussehra (Sep/Oct) for Dhammachakra Pravartan Din; Apr-Jun brutally hot (44-47 C in May, among India's worst pre-monsoon heat).",
+      "safetyNotes": "Large orderly commercial/administrative city, ordinary busy public life, metro + app cabs + business hotels used to solo travellers; Deekshabhoomi + main sights ticketed/managed with steady respectful flows; central location + excellent transport = an easy low-stress base. Standard big-city care: app cabs w/ live-tracking after dark, valuables in Sitabuldi market + at Deekshabhoomi during the enormous Dussehra gathering, lit main roads late. Severe summer heat -- sightsee early/late, carry water. If heading to a reserve, note the wildlife-conflict caution there. Sitabuldi Fort army-administered, open only a few notified days/yr -- check first. womenSafety.level Very Safe (8)."
     }
   ],
   "cardedThisTask": [
@@ -315,6 +331,8 @@
     "Raigad Fort (mh_batch9)",
     "Pratapgad Fort (mh_batch9)",
     "Shivneri Fort (mh_batch10)",
-    "Murud-Janjira Fort (mh_batch10)"
+    "Murud-Janjira Fort (mh_batch10)",
+    "Tadoba-Andhari Tiger Reserve (mh_batch11)",
+    "Nagpur (mh_batch11)"
   ]
 }
