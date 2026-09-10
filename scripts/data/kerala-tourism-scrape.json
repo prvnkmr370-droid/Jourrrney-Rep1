@@ -58,7 +58,13 @@
     "Palakkad Fort / Tipu's Fort (ke_batch3)",
     "Malampuzha Dam & Garden (ke_batch3)",
     "Chandragiri Fort, Kasaragod (ke_batch4)",
-    "Nelliyampathy Hills (ke_batch4)"
+    "Nelliyampathy Hills (ke_batch4)",
+    "Poovar (ke_batch5)",
+    "Thenmala Ecotourism (ke_batch5)",
+    "Muzhappilangad Drive-in Beach (ke_batch6)",
+    "St. Angelo Fort / Kannur Fort (ke_batch6)",
+    "Munroe Island (ke_batch7)",
+    "Thalassery / Tellicherry (ke_batch7)"
   ],
   "destinationsScraped": [
     { "name": "Kollam", "url": "https://www.keralatourism.org/destination/kollam/587/" },
