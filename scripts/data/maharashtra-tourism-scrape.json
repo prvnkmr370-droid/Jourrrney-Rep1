@@ -505,6 +505,25 @@
       "safetyNotes": "Main hazard is extreme Vidarbha summer heat (Mar-Jun, 43-46C) on shadeless open grounds - visit early/late, carry water, avoid midday. Place of observance - modest dress, remove footwear where asked, quiet in the prayer area, no photography inside the huts. Transport and sites wind down early - be back in Wardha/Nagpur by evening; pre-arrange autos for early/late trains at Sevagram station. Bor Tiger Reserve add-on = booked safari + guide, stay in the vehicle. Otherwise a very safe, low-crime, orderly Gandhian-trust campus in a quiet conservative region.",
       "govPageError": "The Wardha district page dates the Vakataka dynasty to 'the 2nd to 5th centuries BCE'. The Vakatakas ruled in the 3rd-5th centuries CE (contemporaries of the Imperial Guptas, as the same page notes). Corrected in the card.",
       "fixesDanglingRef": "Resolves the nearbyPlaces id:\"sevagram\" reference(s) created in earlier Vidarbha-area cards (e.g. Nagpur)."
+    },
+    {
+      "name": "Radhanagari Wildlife Sanctuary",
+      "url": "https://maharashtratourism.gov.in/wildlife/radhanagari-wildlife-sanctuary/",
+      "summary": "Kolhapur district, southern Sahyadri; notified 1958 as Maharashtra's first wildlife sanctuary, ~351.16 sq km of tropical evergreen/semi-evergreen forest. Bison country: 1,000+ gaur (Indian bison); the Dajipur tourism zone is called the 'bison sanctuary'. Also leopard, sloth bear, dhole, sambar, barking deer, giant squirrel; camera traps have confirmed tigers moving through (Sahyadri corridor). Rivers Bhogavati/Dudhganga/Tulshi/Kallamma/Dirba; Radhanagari & Kalammawadi reservoirs. Important Bird Area, 264+ species (Malabar grey & great pied hornbills, Malabar whistling thrush, Nilgiri wood-pigeon); 59 reptiles, 20 amphibians. Part of the Western Ghats World Heritage landscape. Activities: jeep safari, guided nature walk, birding from watchtowers, Shivrai Sada open meadow for dawn/dusk. Near Kolhapur (~55 km), Dajipur, Gaganbawada/Gagangiri Math.",
+      "access": "Kolhapur airport ~65 km (limited); Kolhapur railway ~55 km; Dabolim Goa ~200 km. Road from Kolhapur ~55-65 km (~2h) via a forest ghat; ST buses to Radhanagari/Dajipur; own vehicle recommended for early safaris.",
+      "bestSeason": "Mid-Jul to Sep for green monsoon scenery; Mar-Jun best for wildlife at waterholes; Nov-Feb cool, good for trekking",
+      "safetyNotes": "Real forest with free-ranging gaur, leopard, sloth bear, dhole. Gaur are the main danger - they charge; never leave the vehicle near a herd, never approach for photos, keep noise down. No walking forest roads/trails at dawn/dusk/night; no driving sanctuary roads after dark (accidents, sloth-bear encounters). Enter the forest only on a booked safari or guided walk, never alone. Approach ghat and internal roads narrow, slippery/leech-ridden/foggy in monsoon. Patchy signal; nearest full hospital in Kolhapur - carry meds, torch, water, power bank; tell the lodge your plans. Malaria/dengue precautions at dusk.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"radhanagari-sanctuary\" reference(s) created in earlier Kolhapur-area cards (e.g. Kolhapur, Panhala)."
+    },
+    {
+      "name": "Chikhaldara",
+      "url": "https://maharashtratourism.gov.in/nature/chikhaldara/",
+      "summary": "The only hill station in Vidarbha, ~1,100 m in the Satpura Range, Amravati district; forests continuous with Melghat Tiger Reserve. Name tied to the Mahabharata (Bhima killed Keechaka and threw him into the valley - 'Keechakadara' -> 'Chikhaldara'). Viewpoints: Panchbol/Prospect Point (five echoes across the gorge), Hurricane Point, Vairat (highest point), Mozari and Devi points (sunrise/sunset), Bhimkund (blue rock pool). Gawilgad Fort above the town (12th-c. origin, later rebuilt; Persian inscriptions, cannons, bastions, Satpura views). Only place in Maharashtra where coffee is grown (British-era plantations, bean-to-brew tours). Gateway to Melghat via Semadoh; Shakkar and Semadoh lakes. Muktagiri Jain site ~55 km.",
+      "access": "Nagpur airport ~230-235 km; Akola ~150 km. Badnera Junction ~100 km / Amravati ~82 km railheads. Road ~82 km (~2.5h) from Amravati via Paratwada and the forest ghat; buses from Nagpur/Amravati/Akola.",
+      "bestSeason": "Oct-Jun (cool, clear) per the tourism dept; monsoon Jul-Sep lush and misty but slippery roads/trails and views lost in cloud",
+      "safetyNotes": "Viewpoints (Panchbol/Prospect, Hurricane, Vairat, Devi) have unfenced/poorly-fenced cliff edges and long drops - stay back, skip edges in mist/rain, don't climb railings. Town is inside Melghat Tiger Reserve forest - leopard, sloth bear, wild boar at the edges of town and on the ghat; no walking roads/trails at dawn/dusk/night, no driving the Paratwada ghat after dark. Melghat only on a booked safari/guided walk from Semadoh/Harisal. Malaria historically significant in the Melghat tract - repellent, cover up at dusk, consider prophylaxis for longer forest stays; carry basic meds and bottled water (per gov advisory). Facilities/transport thin after dark; nearest full hospital Amravati; patchy signal. Monkeys at viewpoints snatch food/bags.",
+      "govPageError": "The Chikhaldara page gives conflicting altitudes (1,118 m and 1,188 m) and states Bhimkund is 'around 78 km from Chikhaldara' - Bhimkund is actually just outside the town, a short drive away. Card uses ~1,100 m and describes Bhimkund as near the town.",
+      "fixesDanglingRef": "No prior dangling ref; new Vidarbha hill-station card added on the user's 'search for more places and add cards' instruction."
     }
   ],
   "cardedThisTask": [
@@ -551,6 +570,8 @@
     "Ratnagiri",
     "Kashid Beach",
     "Saptashrungi",
-    "Sevagram"
+    "Sevagram",
+    "Radhanagari Wildlife Sanctuary",
+    "Chikhaldara"
   ]
 }
