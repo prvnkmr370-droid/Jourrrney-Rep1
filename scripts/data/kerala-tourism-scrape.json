@@ -1,0 +1,54 @@
+{
+  "source": "https://www.keralatourism.org/",
+  "scrapedOn": "2026-09-10",
+  "publisher": "Department of Tourism, Government of Kerala",
+  "headOffice": {
+    "address": "Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033",
+    "phone": "+91 471 232 1132",
+    "fax": "+91 471 232 2279",
+    "email": "info@keralatourism.org"
+  },
+  "helpline": {
+    "label": "Kerala Tourism 24x7 toll-free tourist information / help line",
+    "number": "1-800-425-4747",
+    "note": "Within India only. Verified from the official Kerala Tourism Contact Us page (keralatourism.org/contactus), captured 2026-09-10. To be embedded into every new Kerala destination card's womenSafety.emergencyContacts alongside the national numbers (112 emergency, 1091 women helpline, 1098 child helpline). Kerala also operates Tourism/Tourist Police units at major destinations."
+  },
+  "nationalEmergencyNumbers": [
+    { "label": "All-in-one Emergency", "number": "112" },
+    { "label": "Police", "number": "100" },
+    { "label": "Women Helpline", "number": "1091" },
+    { "label": "Child Helpline", "number": "1098" }
+  ],
+  "siteStructure": {
+    "destinationCategories": [
+      "https://www.keralatourism.org/destination/attractions/",
+      "https://www.keralatourism.org/destination/places-of-interest/",
+      "https://www.keralatourism.org/destination/art-and-culture/",
+      "https://www.keralatourism.org/destination/picnic-spots/",
+      "https://www.keralatourism.org/destination/regions/",
+      "https://www.keralatourism.org/destination/spirituality/",
+      "https://www.keralatourism.org/destination/unique/",
+      "https://www.keralatourism.org/destination/unexplored-central-kerala/",
+      "https://www.keralatourism.org/destination/unexplored-malabar-experiences/"
+    ],
+    "note": "Individual destination pages use the pattern /destination/<slug>/<id>/"
+  },
+  "preExistingKeralaCards": [
+    "kerala (Backwaters)", "munnar", "kochi", "wayanad", "alleppey",
+    "periyar-tiger-reserve-thekkady", "kuttanad", "marari-beach",
+    "kumarakom-bird-sanctuary", "cherai-beach", "top-station-munnar",
+    "pathiramanal-island", "kottayam", "kozhikode", "thiruvananthapuram",
+    "varkala-beach", "kovalam-beach", "athirappilly-falls", "bekal-fort",
+    "thrissur", "padmanabhapuram-palace", "silent-valley-national-park",
+    "eravikulam-national-park", "vagamon", "ponmudi", "edakkal-caves",
+    "banasura-sagar-dam", "chembra-peak"
+  ],
+  "candidateDestinationsNotYetCarded": [
+    "Kollam", "Fort Kochi", "Chandragiri Fort (Kasaragod)", "Kolukkumalai (world's highest tea estate, Munnar)",
+    "Thangassery Lighthouse (Kollam)", "Punalur Suspension Bridge", "Nileshwaram", "Thalassery",
+    "Conolly's Plot (Nilambur teak)", "Guruvayur", "Sabarimala", "Malampuzha (Palakkad)",
+    "Nelliyampathy", "Poovar", "Munroe Island", "Thenmala eco-tourism", "Neelakurinji (Munnar)",
+    "Palakkad Fort", "Bekal (already have fort - Kappil beach nearby)", "Kannur (Muzhappilangad drive-in beach, St Angelo Fort, Theyyam)"
+  ],
+  "destinationsScraped": []
+}
