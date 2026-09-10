@@ -85,10 +85,22 @@
       "summary": "The Marble Rocks gorge on the Narmada near Jabalpur (~20 km): white/cream marble (dolomitic limestone) cliffs rising ~30 m, best seen by boat, and famously on a full-moon night when the marble glows. Dhuandhar ('smoke cascade') Falls where the Narmada plunges in a roaring mist; a ropeway crosses the gorge at the falls. The 10th-century Chausath Yogini temple on a hilltop above the river. 'Bandar Kudni' is the narrowest point. Marble here has been quarried and carved for generations.",
       "access": "Rail/Air: Jabalpur (~20-25 km). Road: ~30-40 min from Jabalpur.",
       "safetyFromSite": "In the monsoon the falls thunder at their most powerful; boating in the gorge is suspended when the river is high (monsoon and just after) for safety."
+    },
+    {
+      "name": "Omkareshwar",
+      "url": "https://www.mptourism.com/destination-omkareshwar.php",
+      "summary": "Om-shaped island (Mandhata) in the Narmada ~80 km from Indore, Khandwa dist. Omkareshwar Jyotirlinga (1 of 12); linked Mamleshwar temple on the south bank; Gauri Somnath (11th c.), Siddhnath (13th c.), 24 Avatars; island parikrama ~7 km; 270-ft hanging footbridge; Kotitirtha ghat evening aarti; 108-ft Adi Shankaracharya 'Statue of Oneness' installed Sep 2023 (Ekatma Dham). Rail: Omkareshwar Road (Mortakka ~12 km) / Khandwa ~72 km / Indore ~78 km. Air: Indore ~87 km. Best Oct-Mar."
+    },
+    {
+      "name": "Maheshwar",
+      "url": "https://www.mptourism.com/destination-maheshwar.php",
+      "summary": "Narmada-bank town, Khargone dist., ~90 km from Indore, ~40 km from Mandu. 18th-c. capital of Ahilyabai Holkar: Ahilya Fort + Rajwada palace; carved sandstone ghats with chhatris + evening aarti; Baneshwar temple on a river rock; centuries-old handloom centre for the Maheshwari saree (Rehwa Society in the fort). Ahilya Fort heritage hotel + MP Tourism Narmada Retreat. Nearest rail Barwaha ~40 km / Indore. Best Oct-Mar; summer to ~46 C."
     }
   ],
   "cardedThisTask": [
     "Bhimbetka (mp_batch1)",
-    "Bhedaghat (mp_batch1)"
+    "Bhedaghat (mp_batch1)",
+    "Omkareshwar (mp_batch2)",
+    "Maheshwar (mp_batch2)"
   ]
 }
