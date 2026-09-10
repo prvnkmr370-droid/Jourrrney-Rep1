@@ -136,6 +136,22 @@
       "bestSeason": "Oct-Mar. Avoid peak summer and the monsoon -- the Mandakini has flooded the ghats and washed out the Ramghat bridge in heavy-rain years (e.g. 2016).",
       "accommodationFromSite": "MPT Tourist Bungalow (INR 250-2,890), MPT Mandakini Resort (INR 200-2,290), plus many dharamshalas/ashram guesthouses near Ramghat.",
       "safetyNotes": "Long-established family-oriented pilgrimage town; many women travel, in groups and with elders. Core around Ramghat busy pre-dawn to night aarti. Ordinary pilgrim-town care: valuables in crowds, fix auto/taxi fares, prefer hotel-arranged driver for the full-day circuit. Hanuman Dhara is a steep cliff climb; Kamadgiri parikrama is a long barefoot walk -- daylight only, carry water. Gupt Godavari = wading in a dark cave, go with the crowd. Monsoon flood risk. Don't drink river water."
+    },
+    {
+      "name": "Amarkantak",
+      "url": "https://www.mptourism.com/destination-amarkantak.php",
+      "summary": "Small hilltop pilgrimage town in Anuppur district, far-eastern MP, ~1,000 m, where the Vindhya, Satpura and Maikal ranges meet; forests rich in medicinal plants. Source of the Narmada (at the Narmada Kund + temple complex in town), the Son/Sone (at Sonemuda) and the Johila. Around Narmada Kund: sandstone Kalachuri (Tripuri-Kalachuri era, pre-14th c.) temples -- Machhendranath, Pataleshwar, Kailash Narayan -- and the modern Shri Yantra Mandir (4 goddess heads at the entrance, 64 yoginis). Mai ki Bagiya grove sacred to Narmada (Charanodak Kund). Waterfalls in the forest: Kapildhara (sage Kapila's penance, the most famous) and milky Dugdhdhara ~1 km below, reached by a short trek. Kabir Chabutra (Sant Kabir's meditation site) nearby. Festivals: Narmada Jayanti, Makar Sankranti, Shiv Chaturdashi (winter). Site says 71 km from Anuppur HQ.",
+      "access": "Air: Jabalpur ~228 km, Raipur ~230 km. Rail: Pendra Road (Chhattisgarh) ~42 km; Anuppur ~71 km; Bilaspur bigger junction ~145 km. Road: direct buses from Bilaspur, Katni, Jabalpur, Rewa, Mandla, Seoni, Allahabad, Raipur.",
+      "bestSeason": "Sep-Feb (post-monsoon greenery through cool winter). Hill town -- cold winter mornings/nights.",
+      "safetyNotes": "Small calm pilgrimage town, families/women pilgrims the main visitors; Narmada Kund core busy and lit through evening aarti. Festival-day crowds (Narmada Jayanti, Makar Sankranti) swell the town well beyond normal. Outlying sites (Kapildhara, Dugdhdhara, Sonemuda, Kabir Chabutra) spread through forest -- daylight only, hired auto/jeep via the stay, not alone. Waterfall paths rocky/slick near the water, keep back from edges post-monsoon. Bottled/filtered water only."
+    },
+    {
+      "name": "Chanderi",
+      "url": "https://www.mptourism.com/destination-chanderi.php",
+      "summary": "Historic small town in Ashoknagar district, between the Malwa plateau and Bundelkhand; ~103 km from Jhansi, ~214 km from Bhopal. Famous for the Chanderi saree -- sheer lightweight handloom of silk-cotton / Chanderi cotton / pure silk with gold-silver zari (coin, flower, peacock motifs); ~5,000 looms, 9,000+ weavers (2017). Monuments: Chanderi Fort (Kirti Durg, 11th c. by Kirti Pal; three gates incl. Khooni Darwaza); Koshak Mahal (1445, Sultan Mahmud Shah Khilji of Malwa); Badal Mahal gate (~1450, >15 m); Jama Masjid (believed 13th c., the only Jama Masjid in India without minars); Shehzadi ka Rauza (15th c., princess Mehrunnisa); Battisi Baoli (stepwell, 1485, 32 steps); Khandargiri (Jain site, 45-ft Adinatha). History: Malwa Sultanate, Bundela Rajputs, Mughals; Medini Rai's last stand vs Babur, 1528. Film locations: Sui Dhaaga, Stree.",
+      "access": "Air: Gwalior ~214-230 km, Bhopal ~215 km. Rail: Lalitpur ~37-40 km (Delhi-Bhopal main line, ~1h by road), Ashoknagar ~46-50 km, Mungaoli. Road: from Lalitpur, Jhansi, Ashoknagar, Bhopal, Indore, Ujjain.",
+      "bestSeason": "Oct-Feb (pleasant); summers hot.",
+      "safetyNotes": "Quiet low-key heritage town, small-scale tourism; monuments among residential lanes that empty after dark -- sightsee by day. Fort, old ramps and historic stepwells (Battisi Baoli etc.) have steep steps and unfenced drops. Hired auto/taxi via the hotel for the fort top and Khandargiri. Public transport thins in the evening; arrive/leave via Lalitpur by daylight. Hot, largely unshaded fort -- water + hat."
     }
   ],
   "cardedThisTask": [
@@ -148,6 +164,8 @@
     "Kuno National Park (mp_batch4)",
     "Satpura National Park & Tiger Reserve (mp_batch4)",
     "Indore (mp_batch5)",
-    "Chitrakoot (mp_batch5)"
+    "Chitrakoot (mp_batch5)",
+    "Amarkantak (mp_batch6)",
+    "Chanderi (mp_batch6)"
   ]
 }
