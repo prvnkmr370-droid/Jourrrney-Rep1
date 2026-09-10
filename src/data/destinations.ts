@@ -53249,6 +53249,71 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Malnad-style rice and coconut curries (at homestays)", "Kadubu and pathrode", "Local jackfruit dishes in season", "Filter coffee in Sagara"],
     packingTips: ["Sturdy shoes for grassy, uneven climbs", "Water, snacks, and sun protection — no facilities on site", "Long trousers and care underfoot for snakes in the grass", "A companion or local guide for the remote setting"],
   },
+  {
+    id: "male-mahadeshwara-hills",
+    name: "Male Mahadeshwara Hills (MM Hills)",
+    state: "Karnataka",
+    tagline: "A Forest Hill Shrine to Lord Shiva Deep in the Eastern Ghats",
+    description: "Male Mahadeshwara Hills, universally shortened to MM Hills, is a major pilgrimage centre set among dense forested ranges of the Eastern Ghats in Chamarajanagar district. Its focus is the Sri Male Mahadeshwara Temple, an ancient Dravidian-style shrine to Lord Shiva as Mahadeshwara, tied to the 15th-century saint Sri Male Mahadeshwara Swamy, whose life and miracles are still sung in the region's Janapada (folk) ballads — for many local communities he is the family deity. The temple's gopuram rises above a hillside town, and short sacred trails lead to the Antharagange stream, believed to be the saint's birthplace, and the small Bale Maramma shrine on the approach. The surrounding hills form the Male Mahadeshwara Wildlife Sanctuary (part of a tiger landscape), home to elephants, deer, and leopards, so movement off the temple routes is restricted. The Maha Shivaratri festival and the annual Rathotsava (car festival) draw lakhs of devotees.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg/1280px-Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg/1280px-Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg/1280px-Male_Mahadeshwara_Hills%2C_Karnataka%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mahadeshwara_Temple_entrance_and_Nandhi.jpg/1280px-Mahadeshwara_Temple_entrance_and_Nandhi.jpg",
+    ],
+    imageCredit: "Photos: Wikimedia Commons — the forested Eastern Ghats around Male Mahadeshwara Betta (CC BY-SA 4.0) and the temple's gopuram and approach (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    category: ["Religious", "Nature", "Wildlife"],
+    bestSeason: "September – February",
+    duration: "1 day",
+    highlights: [
+      { name: "The ancient Sri Male Mahadeshwara Temple to Lord Shiva" },
+      { name: "A hill shrine wrapped in the MM Hills Wildlife Sanctuary" },
+      { name: "The Antharagange stream and Bale Maramma shrine" },
+      { name: "Huge Maha Shivaratri and Rathotsava gatherings" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Via Bengaluru (~210 km) or Mysuru (~130 km), then road", fromMumbai: "Via Bengaluru, then road", fromBangalore: "Kempegowda International Airport, then ~210 km by road", duration: "Flight plus a 4.5–6h drive", costRange: "₹3,500–₹11,000", tips: "Mysuru is the nearest airport; the last stretch is a forest ghat road." },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Mysuru or Bengaluru", fromMumbai: "Via Bengaluru", fromBangalore: "Trains to Mysuru or Kollegal-area railheads, then road", duration: "Varies", costRange: "₹150–₹1,200", tips: "Mysuru Railway Station is the main railhead; then road via Kollegal and Hanur." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "Via Bengaluru", fromBangalore: "~210 km via Kanakapura and Kollegal (~5-6h)", duration: "~4h from Mysuru", costRange: "₹3,500–₹6,500 taxi", tips: "KSRTC runs regular buses to MM Hills from Bengaluru, Mysuru, and Kollegal; the final ghat climb has hairpin bends." },
+    ],
+    accommodation: [
+      { type: "Temple Trust Lodges & Guesthouses", priceRange: "₹500–₹2,500/night", examples: ["Sri Male Mahadeshwara Swamy temple trust cottages and lodges", "Basic private lodges in the hill town"], description: "Accommodation is dominated by temple-trust lodging; book through the trust, especially near festivals." },
+    ],
+    localTransport: [
+      { mode: "Walking / Auto", cost: "₹0–₹150", notes: "The temple, town, and short sacred trails are walkable; autos for the stream and outlying shrines", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hogenakkal Falls (Tamil Nadu border)", distance: "~90 km", type: "Waterfall", isHidden: true, id: "hogenakkal-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 450, food: 200, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 500, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6000, accommodation: 3800, food: 1000, transport: 800, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Temple, Stream and Views", morning: "Darshan at the Sri Male Mahadeshwara Temple; take in the gopuram and daily pujas.", afternoon: "Walk to the Antharagange stream and the Bale Maramma shrine; enjoy the temple-hill viewpoint over the forest.", evening: "Depart down the ghat before dark, or stay in a trust lodge.", stay: "A temple-trust lodge in MM Hills", meals: "Temple prasadam and simple vegetarian meals in the hill town", tips: "Dress modestly. The surrounding forest is a wildlife sanctuary — stay on the sacred trails and don't wander into the woods." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A large, organised pilgrimage centre with a strong temple-trust presence and constant devotee footfall", "Regular KSRTC bus connectivity from Mysuru, Kollegal, and Bengaluru", "The temple town core is busy and walkable"],
+      precautions: ["The approach is a forest ghat road through a wildlife sanctuary — avoid travelling it after dark; elephants and other wildlife are present", "Do not trek or walk off the designated sacred paths", "Festival days bring enormous crowds — plan for that or avoid those dates", "Facilities outside the temple core are basic"],
+      soloTips: ["Comfortable solo within the temple town during the day, using trust lodging", "Travel up and down the ghat in daylight, ideally by bus or shared transport", "Keep to the temple and marked shrine routes rather than exploring the forest"],
+      emergencyContacts: [
+        { label: "Single Emergency Helpline", number: "112" },
+        { label: "Women Safety Helpline (Karnataka Tourism SOS)", number: "181" },
+        { label: "National Tourist Helpline", number: "1800-11-1363" },
+        { label: "Child Helpline", number: "1098" },
+        { label: "Tourist Mitra (Karnataka Tourist Police)", number: "112" },
+      ],
+      safeZones: ["The temple complex, hill-town core, and marked sacred trails during daytime"],
+      avoidAreas: ["The forest ghat road after dark", "Any off-trail forest movement in the sanctuary"],
+    },
+    rating: 4.4,
+    reviews: 7800,
+    mustEat: ["Temple prasadam", "Simple South Indian vegetarian meals in the hill town", "Filter coffee", "Local sajje/ragi preparations in the Chamarajanagar plains below"],
+    packingTips: ["Modest temple-appropriate clothing", "A light layer for cool forest evenings", "Water and snacks for the sacred-trail walks", "Cash for offerings and trust lodging"],
+  },
 
 ];
 
