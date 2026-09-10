@@ -155,9 +155,11 @@
     "Thattekkad Salim Ali Bird Sanctuary (ke_batch28)",
     "Kumbalangi (ke_batch28)",
     "Kodungallur Sree Kurumba Bhagavathy Temple (ke_batch29)",
-    "Vellayani Lake (ke_batch29)"
+    "Vellayani Lake (ke_batch29)",
+    "Nileshwaram / Nileshwar (ke_batch30)",
+    "Valiyaparamba Backwaters (ke_batch30)"
   ],
-  "keralaCoverageNote": "Kerala total now 86 destinations (was 28 at task start; +58 added this task across 29 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 88 destinations (was 28 at task start; +60 added this task across 30 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -366,6 +368,15 @@
     {
       "name": "Vellayani Lake",
       "url": "https://www.keralatourism.org/kerala-article/2022/vellayani-thiruvananthapuram/1222"
+    },
+    {
+      "name": "Nileshwaram (Nileshwar)",
+      "url": "https://www.keralatourism.org/destination/nileswaram-kasaragod/172/"
+    },
+    {
+      "name": "Valiyaparamba Backwaters",
+      "url": "https://www.keralatourism.org/destination/valiyaparamba-kasaragod/161/"
     }
-  ]
+  ],
+  "imageDisambiguationNote": "Kappil Beach (Bekal, Kasaragod) was NOT carded: almost all Wikimedia Commons 'Kappil Beach' images are categorised 'Kappil, Thiruvananthapuram' (the Varkala Kappil), and no image could be authenticated as the Kasaragod one, so per the task's image-authenticity rule it was skipped."
 }
