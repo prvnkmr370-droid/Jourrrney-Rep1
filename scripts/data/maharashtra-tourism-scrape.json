@@ -60,12 +60,31 @@
       "access": "Air: Chhatrapati Sambhajinagar ~10 km. Rail: Chhatrapati Sambhajinagar ~5.5 km. Road: ~4 km from the city centre, on the north edge below the Aurangabad Caves. Combine with the Aurangabad Caves (~2 km up the hill) + Panchakki.",
       "bestSeason": "Oct-Mar; Apr-Jun very hot; monsoon garden green.",
       "safetyNotes": "Ticketed walled ASI monument in a garden, guards, constant family/tour-group flow, short central auto ride, nothing strenuous (level paths, low plinth). Ordinary city care with auto fares + valuables. Marble steps + tomb chamber slippery in monsoon / when washed. Entrance hawkers + freelance photographers -- firm 'no'. Daylight hours; surrounding roads quieten at night. Gov page names the occupant as 'Rabia-ud-Durrani' (her title); given name Dilras Banu Begum. Commission by Azam Shah + part-marble build are from standard accounts, not the thin gov page."
+    },
+    {
+      "name": "Lonar Crater Lake",
+      "url": "https://maharashtratourism.gov.in/lake/lonar/ (read via in-app browser)",
+      "summary": "Near-circular meteorite-impact crater ~1.8 km across, ~130-150 m deep, in the basalt lava beds of the Deccan plateau, Buldhana district. Gov page: created ~52,000 years ago (a 2020 argon-dating study argues ~570,000 years -- both noted in the card). The only large impact crater in basaltic rock on Earth; studied by GSI + NASA as a Moon/Mars analogue. Floor holds a shallow lake that is BOTH saline and alkaline, with water layers + microbes found nowhere else. Forested wildlife-rich rim (peafowl, parakeets, migratory birds, langurs, deer, wild boar). Stepped path from rim to water past Hemadpanti/Chalukya-era (6th-12th c.) temples: Daityasudan (Vishnu, in Lonar town, tied to the demon Lonasura the crater is named for), Gomukh (perennial cow-mouth stream, trailhead), Motha Maruti (rock Hanuman idol, high-iron soil), Kamalja Devi (on the rim). Mentioned in the Skanda Purana + Ain-i-Akbari.",
+      "access": "Air: Chhatrapati Sambhajinagar (Aurangabad) ~140 km, Nagpur ~300 km. Rail: no station at Lonar; Jalna / Malkapur / Akola each ~90 km. Road: ~150 km/~3.5h from Aurangabad (the usual base), ~450 km Mumbai, ~300 km Nagpur; MSRTC buses from Aurangabad, Buldhana, Jalna. MTDC Tourist Resort on the crater rim.",
+      "bestSeason": "Oct-Mar; monsoon green but the crater path slippery.",
+      "safetyNotes": "Recognised natural monument, forest-dept presence on the rim, modest steady flow of visitors/students/researchers; MTDC rim resort the reliable base. Descent is a steep uneven scrub path, little shade, few people on a quiet day -- morning, guide/group, not alone late. Own water + sun cover (nothing to buy inside, hot bottom). DO NOT enter the lake (highly alkaline). Keep to marked paths -- rim forest has snakes + langur troops. Remote: nearest hospitals/transport Buldhana or Jalna ~90 km, weak signal on parts of the rim. Time the Aurangabad road transfer for daylight. womenSafety.level Moderate (score 6) for remoteness + the lonely descent.",
+      "fixesDanglingRef": "Ajanta card (mh_batch1) links nearbyPlaces id 'lonar-crater' -- now resolved."
+    },
+    {
+      "name": "Elephanta Caves",
+      "url": "https://maharashtratourism.gov.in/cave/elephanta/ (read via in-app browser)",
+      "summary": "Rock-cut cave group on a hill on Gharapuri island in Mumbai harbour, ~10 km by sea from the Gateway of India, ~1h ferry. Cut into the island basalt mid-first-millennium CE (most often 6th c.; gov page says 'Gupta, 5th-8th c.'). Predominantly Shaiva Hindu shrines + a couple of minor Buddhist excavations on the eastern hill (gov page overstates the 'Buddhist caves'). Great cave (Cave 1): cruciform pillared hall, cushion-capital columns, nine massive Shiva relief panels (Nataraja, Ardhanarishvara, Shiva-Parvati wedding, Gangadhara, Ravananugraha) around a central linga shrine. South wall: Sadashiva / Maheshamurti -- a 3-faced Shiva bust ~6 m (20 ft) tall, a masterpiece of Indian sculpture. Portuguese (from 16th c.) named the island after a large stone elephant near the landing (now in a Mumbai museum) and left the carvings badly damaged. UNESCO WHS 1987.",
+      "access": "Everything from the Gateway of India ferry jetty, Colaba, Mumbai. Launches ~every 30 min ~9 am-2 pm; last return ~5-5.30 pm; ~1h each way; ferry ~Rs 200-260 return + a small island/ASI entry fee. From the jetty a narrow-gauge toy train covers ~600 m; then ~120 steps up lined with stalls (palanquin for a fee). NO ferries in the monsoon (Jun-Sep, rough harbour).",
+      "bestSeason": "Nov-Feb (cool, calm seas). Ferries suspended in the monsoon.",
+      "safetyNotes": "Busy well-trodden day trip -- shared ferries, staffed ASI site, guides, all-day mixed flow, fixed route. Ferry = open boat on tidal water -- life jacket if provided, don't overcrowd the upper deck, sit when moving, skip it if the sea looks rough. The ~120 steps are lined with pushy stalls + monkeys -- food/phones out of reach, firm with hawkers. CONFIRM the last return ferry and be on it (island empties, no accommodation). Hot/exposed on the boat + steps. Dry bag for tickets/phone/cash."
     }
   ],
   "cardedThisTask": [
     "Ajanta Caves (mh_batch1)",
     "Ellora Caves (mh_batch1)",
     "Daulatabad Fort / Devgiri (mh_batch2)",
-    "Bibi ka Maqbara (mh_batch2)"
+    "Bibi ka Maqbara (mh_batch2)",
+    "Lonar Crater Lake (mh_batch3)",
+    "Elephanta Caves (mh_batch3)"
   ]
 }
