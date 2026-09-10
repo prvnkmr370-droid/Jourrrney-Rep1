@@ -358,6 +358,24 @@
       "access": "Air: Chipi (Sindhudurg) ~25 km (limited routes); Goa (Mopa ~80 km / Dabolim ~135 km) fallback. Rail: Konkan Railway to Kudal ~45 km, then ~1h drive. Road: NH66 down the Konkan, ~530 km / 10-12h from Mumbai; ~6 km Malvan-Tarkarli; Goa border ~1.5h S.",
       "bestSeason": "Nov-May calm/clear water + diving; monsoon (Jun-Sep) rough seas, no water activities, dive ops closed.",
       "safetyNotes": "Settled tourism-experienced Konkan area -- MTDC + homestays + licensed dive/boat operators set an orderly tone; women/families/dive groups common; Tarkarli spit + Malvan town compact; water activities via registered operators with gear + briefings. SEA HAS REAL CURRENTS esp. around the DEVBAG SANGAM RIVER MOUTH, most of the beach has no lifeguard cover -- swim only in the shallow patrolled zone near others, never alone/after dark, out entirely in the monsoon. SCUBA/SNORKEL: certified insured operator only, complete the briefing, don't exceed your training, not if unwell / after drinking, accept trip cancellations for sea conditions. Sailboat trips to Sindhudurg + dolphin tours on open sea -- life jacket, no overloaded boat, no rough-weather crossings. Beach + backwater paths unlit at night. Long way from a major hospital (Kudal/Sindhudurg town) -- carry medicines + travel/dive insurance. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Bhimashankar",
+      "url": "https://maharashtratourism.gov.in/temple/bhimashankar/ (read via in-app browser)",
+      "summary": "High on the Western Ghats rim ~110 km from Pune; the Bhima river rises here. Shiva temple = ONE OF THE 12 JYOTIRLINGAS -- low black-stone Nagara + Hemadpanti style, spire added by Peshwa-era statesman Nana Phadnavis, swayambhu linga; legend of Shiva slaying the demon Bhimasur (son of Kumbhakarna). UNUSUAL among Jyotirlingas: wrapped in the BHIMASHANKAR WILDLIFE SANCTUARY -- dense semi-evergreen Sahyadri forest, the best-known stronghold of the Indian/Malabar GIANT SQUIRREL (shekaru, Maharashtra's state animal), + leopard, sambar, birds. Trekkers climb from the base village KHANDAS by the steep SHIDI GHAT (iron-ladder sections, exposed) or the gentler Ganesh Ghat; forest trails to Nagphani (Cobra Hood) cliff viewpoint, Hanuman Lake, Gupt Bhimashankar. Busiest at Maha Shivaratri + through Shravan (Jul-Aug).",
+      "access": "Air: Pune ~110 km (road base), Mumbai ~125 km. Rail: Pune (road route) or Karjat (trek route -> taxi/jeep to Khandas ~50 km). Road: ~110 km/~3.5h from Pune via Manchar + Ghodegaon right to the temple; MSRTC buses Pune (Shivajinagar)-Bhimashankar. Mumbai side = the Khandas climb.",
+      "bestSeason": "Oct-Feb pleasant + clear forest walks; monsoon spectacularly green but trek routes slippery + leech-ridden, sanctuary trails can close.",
+      "safetyNotes": "Well-known Jyotirlinga, steady family-heavy pilgrim flow, serviced temple village, forest-dept presence in the sanctuary; Pune road goes right to the temple, MSRTC buses; temple + market lane + near viewpoints busy + easy in daylight. SHIDI GHAT trek from Khandas = fixed VERTICAL IRON LADDERS on a cliff with long drops -- dry weather + group + guide only, take Ganesh Ghat if not confident, genuinely dangerous when wet/crowded. Wider sanctuary trails (Nagphani, Gupt Bhimashankar) lightly used, cross LEOPARD habitat, disorienting -- local guide, daylight, not alone, don't stray off-path. Monsoon steps/rocks/trails slippery + leeches. Long darshan queues Mondays / Shravan Mondays / Maha Shivaratri. Limited medical + patchy signal (nearest hospitals toward Manchar/Rajgurunagar). womenSafety.level Safe (7).",
+      "fixesDanglingRef": "n/a (no prior id ref -- Bhimashankar WLS is separate from the MP Pench card)"
+    },
+    {
+      "name": "Panchgani",
+      "url": "https://maharashtratourism.gov.in/nature/panchgani/ (read via in-app browser)",
+      "summary": "Small hill station on the Sahyadri plateau ~1,334 m, ~19 km before Mahabaleshwar on the road up from Wai, Satara district. Name = 'land of five hills'. British-founded from the 1860s (John Chesson) as a hot-weather + healthy-air station; famous BOARDING SCHOOLS / education hub; colonial bungalows + church survive. Signature: TABLE LAND -- a vast flat laterite plateau above town, said one of the largest of its kind in Asia -- horse rides, walks, kite-flying, film shoots, PARAGLIDING from its edge, natural caves (Devil's Kitchen / Pandavgad legend). Viewpoints over the Krishna valley + Dhom Dam backwater -- Sydney Point, Parsi Point. Rajpuri Caves (Kartikeya shrine, sacred tanks). Mapro + other STRAWBERRY gardens on the Mahabaleshwar road; spring Strawberry Festival. Usually done with Mahabaleshwar; Kaas Plateau a further drive. A short drive from the Krishna River; part of the Western Ghats.",
+      "access": "Air: Pune ~100 km (nearest). Rail: Wathar ~45 km / Satara closest; Pune usual approach. Road: ~100 km from Pune (via Wai + Pasarni Ghat), ~245 km from Mumbai, ~19 km from Mahabaleshwar; Volvo/state buses from Pune + Mumbai; last stretch a winding Ghat road (jams on peak weekends).",
+      "bestSeason": "Oct-May cool retreat + clear views; monsoon misty/green + many activities pause; Strawberry Festival in spring (Feb-Mar).",
+      "safetyNotes": "Long-established family-oriented hill + school town, orderly low-key feel, plenty of hotels, steady tourist presence at Table Land + the viewpoints; quieter/less hectic than Mahabaleshwar, same easy taxi point-tour system; market + Table Land busy + walkable by day. TABLE LAND is a huge open plateau with CLIFF EDGES on several sides, UNFENCED in places -- stay well back from the rim esp. near Devil's Kitchen + the caves, care in wind/mist. PARAGLIDING = a real adventure activity -- licensed operator + certified tandem pilot only, check the harness, accept wind cancellations. Viewpoints (Sydney, Parsi) have drops + thin railings. Ghat roads (Wai, Mahabaleshwar) winding with sheer drops -- no night driving, fog + slow traffic in the monsoon + peak weekends. Horse/stall operators on Table Land pushy on price -- agree first. womenSafety.level Very Safe (8).",
+      "fixesDanglingRef": "Mahabaleshwar (mh_batch6) + Pratapgad (mh_batch9) cards link nearbyPlaces id 'panchgani' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -388,6 +406,8 @@
     "Alibaug (mh_batch13)",
     "Ganpatipule (mh_batch13)",
     "Matheran (mh_batch14)",
-    "Tarkarli & Malvan (mh_batch14)"
+    "Tarkarli & Malvan (mh_batch14)",
+    "Bhimashankar (mh_batch15)",
+    "Panchgani (mh_batch15)"
   ]
 }
