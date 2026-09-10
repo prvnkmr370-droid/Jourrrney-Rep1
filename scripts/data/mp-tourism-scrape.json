@@ -152,6 +152,23 @@
       "access": "Air: Gwalior ~214-230 km, Bhopal ~215 km. Rail: Lalitpur ~37-40 km (Delhi-Bhopal main line, ~1h by road), Ashoknagar ~46-50 km, Mungaoli. Road: from Lalitpur, Jhansi, Ashoknagar, Bhopal, Indore, Ujjain.",
       "bestSeason": "Oct-Feb (pleasant); summers hot.",
       "safetyNotes": "Quiet low-key heritage town, small-scale tourism; monuments among residential lanes that empty after dark -- sightsee by day. Fort, old ramps and historic stepwells (Battisi Baoli etc.) have steep steps and unfenced drops. Hired auto/taxi via the hotel for the fort top and Khandargiri. Public transport thins in the evening; arrive/leave via Lalitpur by daylight. Hot, largely unshaded fort -- water + hat."
+    },
+    {
+      "name": "Jabalpur",
+      "url": "https://www.mptourism.com/destination-jabalpur.php",
+      "summary": "Largest city of the Mahakoshal region, in a rocky basin ~10 km N of the Narmada. Chief role: base for Bhedaghat (~25-27 km) -- the Marble Rocks gorge + Dhuandhar Falls (~98 ft). City sights: Madan Mahal Fort (Gond dynasty, 12th c./1116 CE, on a granite outcrop ~500 m); Balancing Rock (boulder poised on a narrow base, rode out a 6.5-magnitude quake); Chausath Yogini temple (10th c., at Bhedaghat, one of India's largest yogini temples, ~41 m circumference); Rani Durgavati Museum (Kalachuri sculpture); Tilwara Ghat (Gandhi's ashes immersed); Pisanhari ki Madiya (~500-yr Jain centre); Dumna Nature Reserve (1,058 ha); Bargi Dam ~40 km (45-min cruises). Rail/road/air hub for Kanha, Bandhavgarh, Pench.",
+      "access": "Air: Dumna Airport ~20 km -- Mumbai, Delhi, Pune, Nagpur, Bhopal, Indore; closest airport to Kanha/Bandhavgarh. Rail: Jabalpur Junction, West Central Railway hub, wide connectivity. Road: on NH44/NH34; ~25 km Bhedaghat, ~160 km Bandhavgarh, ~170 km Kanha, ~300 km Bhopal.",
+      "bestSeason": "Oct-Mar for the city; Jul-Sep for fullest waterfalls at Bhedaghat (site pushes the monsoon).",
+      "safetyNotes": "Large university/cantonment city; Civil Lines & Wright Town lit and active in the evening; app cabs/autos plentiful. Bhedaghat: keep back from the unfenced wet-marble ledges above Dhuandhar Falls; gorge boating suspended when the Narmada runs high (monsoon + just after). BOAT SAFETY: a cruise boat capsized on the Bargi Dam reservoir on 30 April 2026 (Jabalpur cruise tragedy / 'Narmada Queen'), 13 of 31 aboard died, sudden strong winds/rough water, life jackets were in sealed storage and inaccessible; CM ordered a high-level inquiry, staff terminated, MPT Marble Rocks Resort manager suspended (verified via news + Wikipedia 'Jabalpur cruise tragedy'). Advice in card: only board a boat that isn't overloaded, put on an accessible life jacket before departure, don't go out in rough/windy weather.",
+      "fixesDanglingRef": "Bhedaghat card (mp_batch1) already links nearbyPlaces id 'jabalpur' -- now resolved."
+    },
+    {
+      "name": "Burhanpur",
+      "url": "https://www.mptourism.com/destination-burhanpur.php",
+      "summary": "Historic town on the Tapti (Tapi) river in the Nimar region of southern MP, near the Maharashtra border. Founded ~1400 as the Faruqi dynasty capital; later a key Mughal city and Deccan military base ('gateway to southern India'). Monuments: Shahi Qila (royal fort-palace on the Tapti, Persian-painted hammam/ceiling; Mumtaz Mahal's body first lay here after she died at Burhanpur in 1631, before its move to Agra); Ahukhana (hunting enclosure garden = her first burial place); Jama Masjid (1589, completed under Akbar, intricate arches, said to be minaret-less per some sources though photos show a minaret); Asirgarh Fort (~20 km, vast hill fort, ancient Shiva temple); Kundi Bhandara (~400-yr-old underground water-filtration/tunnel system, still functioning); Raja Jai Singh observatory; Black Taj / Shah Nawaz Khan tomb; Dargah-e-Hakimi (Dawoodi Bohra pilgrimage, garden bungalows); Gurudwara Badi Sangat (Sikh, historic Guru visit). Food: Burhanpuri jalebi, Mughlai kebabs/korma, khopra pak, mawa jalebi.",
+      "access": "Rail: Burhanpur station on the Delhi-Mumbai main line via Bhusaval -- frequent expresses, easiest way in; ~7-8h from Mumbai. Air: Indore ~180 km (nearest). Road: ~20 km Asirgarh, ~90 km Jalgaon, ~180 km Indore; buses from Indore, Khandwa, Jalgaon.",
+      "bestSeason": "Oct-Mar; summers very hot in the Tapti valley.",
+      "safetyNotes": "Settled ordinary town, low-key tourism, monuments within everyday neighbourhoods -- sightsee by day. Parts of Shahi Qila unrestored: loose steps, low doorways, unlit passages (carry a torch). Asirgarh Fort is a big, hot, largely unshaded hilltop with steep uneven stretches and unfenced drops -- go early, carry water, don't wander far ramparts alone; hire a known taxi via the hotel for Asirgarh + Kundi Bhandara. Modest dress for mosques/dargah/gurudwara (head covering at the last two). Time train arrivals/departures for daylight."
     }
   ],
   "cardedThisTask": [
@@ -166,6 +183,8 @@
     "Indore (mp_batch5)",
     "Chitrakoot (mp_batch5)",
     "Amarkantak (mp_batch6)",
-    "Chanderi (mp_batch6)"
+    "Chanderi (mp_batch6)",
+    "Jabalpur (mp_batch7)",
+    "Burhanpur (mp_batch7)"
   ]
 }
