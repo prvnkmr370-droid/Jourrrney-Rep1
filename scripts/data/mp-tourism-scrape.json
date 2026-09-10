@@ -105,6 +105,20 @@
       "name": "Panna",
       "url": "https://www.mptourism.com/destination-panna.php",
       "summary": "Tiger reserve in Vindhya hills (Panna/Chhatarpur dist.), ~25 km from Khajuraho, on the Ken river. Tigers reintroduced from ~2009 after local extinction -- a noted recovery story. Leopard, sloth bear, wild dog, wolf, gharial + mugger croc in the Ken, 7 vulture species, 200+ birds. Gates Madla + Hinauta; Ken boat rides. Pandav Falls (inside park) + Raneh Falls Ken canyon ('Grand Canyon of India') nearby. Open ~Oct-Jun. Entry fee cited: weekday Rs 2450 / weekend Rs 3050. Khajuraho airport + rail ~25 km."
+    },
+    {
+      "name": "Kuno National Park",
+      "url": "https://www.mptourism.com/destination-kuno-national-park.php",
+      "summary": "National park on the Kuno river in Sheopur dist. (near the MP-Rajasthan border), Sheopur/Shivpuri area. India's cheetah reintroduction site under Project Cheetah: 8 cheetahs from Namibia released 17 Sep 2022, ~12 more from South Africa Feb 2023 -- the cat had been extinct in India since 1952. Dry deciduous forest of kardhai/salai/khair with grasslands; originally prepared as a second home for the Asiatic lion. Also leopard, striped hyena, jackal, sloth bear, chital, sambar, nilgai, chinkara, mugger crocodile, 120+ birds. Limited cheetah safari in the Ahera tourism zone; jeep safaris booked online via forest.mponline.gov.in. Open ~Oct-Jun, closed monsoon. Sightings not guaranteed; the tourism programme is still evolving.",
+      "access": "Air: Gwalior (~170-176 km). Rail: Shivpuri (~65-70 km) or Gwalior. Road: Sesaipura village ~15 km from the park; ~65 km from Shivpuri; ~175 km from Gwalior.",
+      "safetyNotes": "Regulated park -- registered jeep + compulsory forest guide only, no getting out in the forest. Tourism infrastructure new and thin; long transfers from Gwalior/Shivpuri, do road legs by day. Basic local medical facilities (hospitals in Shivpuri/Sheopur). Cheetah-safari zones and rules still evolving and can change/suspend at short notice. Monsoon closure (~Jul-Sep)."
+    },
+    {
+      "name": "Satpura National Park & Tiger Reserve (Madai/Tawa)",
+      "url": "https://www.mptourism.com/destination-tawa.php",
+      "summary": "Satpura Tiger Reserve in the Satpura hills, Narmadapuram (Hoshangabad) dist., below Pachmarhi; the Denwa river and the Tawa reservoir/dam along its edge, Bori Sanctuary attached. One of the very few Indian reserves allowing walking safaris on foot (guided, single file, forest guard + guide), plus canoe safaris on the Denwa, cycling, boat safaris, jeep drives, buffer night safari. Reached from the Madai (Madhai) gate by crossing the Denwa backwater by boat. Tiger, leopard, sloth bear, wild dog, gaur, sambar, chital, nilgai, Indian giant squirrel, 300+ birds, mugger crocodile on the Denwa. Quieter and wilder-feeling than the big-name parks. Open ~1 Oct-30 Jun, closed monsoon; Oct-Mar best.",
+      "access": "Air: Bhopal (~120-130 km). Rail: Pipariya (~50 km), Itarsi (~70 km, major junction), Narmadapuram (~25 km). Road: Madai is on the Pipariya-Bhopal road; last leg is a boat across the Denwa. Pachmarhi ~100-114 km.",
+      "safetyNotes": "Regulated reserve; every activity runs with a compulsory forest guide (walks also with an armed forest guard) on fixed routes/timings. Walking safaris put you on foot in tiger/leopard/sloth-bear habitat -- single file behind the guard, silence, no straying; sloth bears the main hazard. Canoe/boat safaris on water with muggers -- life jacket, stay seated. Dawn/dusk cold in winter. Permits limited, booked online in advance. Monsoon closure (~Jul-Sep)."
     }
   ],
   "cardedThisTask": [
@@ -113,6 +127,8 @@
     "Omkareshwar (mp_batch2)",
     "Maheshwar (mp_batch2)",
     "Pench National Park (mp_batch3)",
-    "Panna National Park (mp_batch3)"
+    "Panna National Park (mp_batch3)",
+    "Kuno National Park (mp_batch4)",
+    "Satpura National Park & Tiger Reserve (mp_batch4)"
   ]
 }
