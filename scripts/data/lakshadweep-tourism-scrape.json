@@ -1,0 +1,143 @@
+{
+  "_meta": {
+    "source": "https://www.lakshadweeptourism.com/ (official site of SPORTS — Society for Promotion of Nature Tourism and Sports, the Lakshadweep Administration's nodal tourism agency, formed 1982)",
+    "scrapedOn": "2026-09-10",
+    "scope": "Lakshadweep Union Territory — the tourist 'focal' islands and how to visit them",
+    "pagesScraped": [
+      "index.html", "howtoreach.html", "tourist_season.html", "watersports.html",
+      "tourist_focalislands.html", "tourpackages.html", "Htobook.html",
+      "dos_and_donts.html", "basicfacts.html", "location.html", "climate.html", "contact.html", "nutshell.html"
+    ],
+    "supplementarySources": [
+      "https://lakshadweep.gov.in/tourism/entry-permit/ (official Lakshadweep Administration — entry permit)",
+      "https://epermit.utl.gov.in/ (official ePermit portal)",
+      "https://services.india.gov.in/service/detail/obtaining-entry-permit-to-lakshadweep (National Government Services Portal)"
+    ],
+    "note": "SPORTS site is a small static site (last visible copyright 2007) and is thin on entry-permit detail; permit facts below are taken from the official Lakshadweep Administration / ePermit portal and India.gov.in, not invented. Rules for foreign nationals changed in 2026 — travellers must check epermit.utl.gov.in for the current position."
+  },
+  "basicFacts": {
+    "status": "Smallest Union Territory of India; India's only coral-island chain; a single district",
+    "capital": "Kavaratti (administrative headquarters)",
+    "composition": "36 islands; 12 atolls, 3 reefs, 5 submerged banks. Total land area ~32 sq km. Lagoons enclosed by the atolls ~4,200 sq km. Territorial waters ~20,000 sq km; EEZ ~400,000 sq km.",
+    "inhabitedIslands": ["Agatti", "Amini", "Andrott", "Bitra", "Chetlat", "Kadmat", "Kalpeni", "Kavaratti", "Kiltan", "Minicoy", "(sources vary 10-11)"],
+    "location": "Arabian Sea, ~220 to 440 km off the Kerala coast, between 8 deg and 12 deg N and 71 deg and 74 deg E. Connected to the mainland only from Kochi (Cochin).",
+    "climate": "Tropical. Summer 22-33 C, winter 20-32 C. Southwest monsoon June-September brings heavy rain; Oct-May is the pleasant, calmer period.",
+    "people": "Predominantly Muslim population; Malayalam is the main language, with Mahl (Dhivehi, written in Thaana) spoken on Minicoy.",
+    "ecoAward": "SPORTS received the Union Ministry of Tourism's 'most eco-friendly organisation' award for 1996-97."
+  },
+  "entryPermit": {
+    "required": "YES — mandatory for every visitor who is not a native islander (Indian citizens included). Governed by the Laccadive, Minicoy and Amindivi Islands (Restriction on Entry and Residence) Rules, 1967.",
+    "howToApply": "Online via the official ePermit portal epermit.utl.gov.in — register, choose the 'Tourist' category, enter travel dates and the islands to be visited, and upload ID proof and a photograph. Apply well ahead (guidance widely cited as at least ~14 days before travel). Sponsorship is no longer required for Tourist-category applications.",
+    "historicalRequirement": "A police clearance certificate from the applicant's local station was historically required; from 2026 this and local sponsorship were relaxed for many applicants — CHECK the current rule on epermit.utl.gov.in before travelling.",
+    "foreignNationals": "Need a valid passport and Indian visa. Historically foreigners could visit only a limited set of islands (commonly cited: Agatti, Bangaram, Thinnakara, Kadmat); the SPORTS site notes Kadmat specifically that 'Non Indians are also permitted to visit this island', and the Samudram cruise is open to foreign nationals holding a tourist visa. Access rules for foreigners changed in 2026 — verify the current position on the ePermit portal.",
+    "source": "https://lakshadweep.gov.in/tourism/entry-permit/ ; https://epermit.utl.gov.in/ ; https://services.india.gov.in/service/detail/obtaining-entry-permit-to-lakshadweep"
+  },
+  "howToReach": {
+    "air": "Only airstrip is on AGATTI. Flights operated from Kochi (Cochin) to Agatti; flight time ~1 hr 30 min. From Agatti, onward to Bangaram/Thinnakara by boat (or helicopter, season permitting) and to Kavaratti/Kadmat by boat during the fair season (~October to May).",
+    "sea": "Passenger ships from Kochi only. Vessels cited by SPORTS: MV Kavaratti, MV Arabian Sea, MV Lakshadweep Sea, MV Lagoons, MV Corals (other government vessels e.g. MV Amindivi, MV Minicoy also serve the sector). Passage ~14-20 hours depending on the island. Classes: A/C First Class (2-berth cabins), A/C Second Class (4-berth cabins), plus bunk/seat classes. A doctor is available on call on board. Ships are not offered for tourist transport during the monsoon (mid-May to September) — local passengers only.",
+    "interIsland": "From Agatti, boats to Kavaratti and Kadmat run in the fair season (Oct-May). You may not leave your island's lagoon without SPORTS permission and a proper escort."
+  },
+  "touristSeason": {
+    "best": "October to mid-May",
+    "monsoon": "Mid-May to September — sea rough, ship tourist services suspended; Kadmat, Minicoy and Kavaratti resorts hard to reach as they have no flight/helicopter link. Agatti/Bangaram flights continue year-round.",
+    "quote": "The best time to visit Lakshadweep is from October to mid May. From mid May to September it is rainy."
+  },
+  "waterSports": {
+    "islandWide": "All islands in the tourist packages offer kayaks, canoes, pedal boats, sail boats, wind surfers, snorkel sets and glass-bottomed boats.",
+    "scubaDiving": [
+      { "island": "Kavaratti", "centre": "Dolphin Dive Centre", "note": "Calm lagoon ideal for beginners; giant sea fans, turtles, soft corals, reef sharks, rays, tropical fish." },
+      { "island": "Kadmat", "centre": "Laccadives (Lacadives) Kadmat Dive School", "note": "Beginner to instructor CMAS courses, season ~1 October to 1 May; visibility 20-50 m; regarded as one of India's finest dive sites." },
+      { "island": "Minicoy", "centre": "Dive centre with a 20-bed resort", "note": "" },
+      { "island": "Bangaram", "centre": "Dive facility", "note": "" }
+    ],
+    "deepSeaFishing": "Big-game fishing for barracuda, sailfish, yellowfin tuna, trevally and sharks.",
+    "seasonNote": "Dive courses ~1 October to 1 May."
+  },
+  "tourPackages": [
+    { "name": "Lakshadweep Samudram", "mode": "Ship (MV Kavaratti)", "islands": ["Kavaratti", "Kalpeni", "Minicoy"], "duration": "~5 days", "open": "Domestic and foreign tourists (foreigners with tourist visa); booked online only." },
+    { "name": "Swaying Palm", "mode": "Ship", "islands": ["Minicoy"], "duration": "~6-7 days", "open": "Not restricted by nationality." },
+    { "name": "Taratashi", "mode": "Flight to Agatti, then boat", "islands": ["Kavaratti"], "duration": "~4-5 days", "open": "Not restricted." },
+    { "name": "Tents in Thinnakara", "mode": "Flight to Agatti, then boat", "islands": ["Thinnakara"], "duration": "package", "open": "Not restricted." },
+    { "name": "Cottages in Bangaram", "mode": "Flight to Agatti, then boat", "islands": ["Bangaram"], "duration": "package", "open": "Not restricted." },
+    { "name": "Scuba Dive Package", "mode": "Varies", "islands": ["Kavaratti", "Kalpeni", "Kadmat", "Bangaram", "Thinnakara"], "duration": "activity-based", "open": "Not restricted." },
+    { "name": "Coral Reef / Swaying Palm / Marine Wealth Awareness", "mode": "Ship", "islands": ["Kavaratti", "Kalpeni", "Kadmat", "Minicoy (varies)"], "duration": "varies", "open": "Referenced on the site; itineraries vary year to year." }
+  ],
+  "dosAndDonts": {
+    "dos": [
+      "Confirm your tour reservation before leaving home.",
+      "Bring your own medicines and toiletries — only ordinary varieties are available on the islands.",
+      "Use the SPORTS representative on board / on the island if you have difficulties."
+    ],
+    "donts": [
+      "Do not litter the land or the water.",
+      "Do not pick up corals as souvenirs — it is a punishable offence.",
+      "Do not use alcohol or intoxicants — there is prohibition on ALL islands except Bangaram.",
+      "Do not carry narcotics or drugs — a punishable offence.",
+      "Do not swim or sunbathe nude — it is prohibited.",
+      "Do not go outside your island's lagoon without SPORTS permission and a proper escort.",
+      "Do not pluck coconuts — the trees are privately owned and unauthorised plucking is theft.",
+      "Do not book a return journey for your arrival day — ship timings are unpredictable."
+    ]
+  },
+  "contacts": {
+    "kochiBooking": "Manager (Information & Booking), SPORTS Lakshadweep Tourism, 2nd Floor, Lakshadweep Administrative Office, Indira Gandhi Road, Willingdon Island, Cochin-682003. Mobile: 09495984001. Email: laksports.reservation@gmail.com (also +91 484 2666789 / +91 484 2668387).",
+    "kavarattiHQ": "SPORTS (Lakshadweep Tourism), Kavaratti-682555. Fax: +91 4896 262356. Email: sportsgm.lk@gmail.com ; sportsagmhq@gmail.com"
+  },
+  "islands": {
+    "Agatti": {
+      "role": "The gateway island — the only one with an airstrip; 'virtual gateway to the islands'.",
+      "features": "One of the most beautiful lagoons in Lakshadweep; the runway runs almost the length of the thin island.",
+      "accommodation": "A 20-bed tourist complex is described on the SPORTS site; the site also carries a standing notice that there is currently NO government-permitted resort at Agatti and that claims to the contrary are false.",
+      "access": "Flights from Kochi (~1h30). Onward boat/helicopter to Bangaram and Thinnakara; boats to Kavaratti/Kadmat in the fair season.",
+      "activities": "Lagoon water sports, snorkelling, glass-bottom boat, diving."
+    },
+    "Bangaram": {
+      "role": "The only uninhabited resort island in Lakshadweep; 'tiny teardrop-shaped island'.",
+      "features": "Shares a lagoon with Thinnakara and Parali; at night phosphorescent plankton on the coral sand can glow bluish.",
+      "access": "Flight to Agatti, then boat or (season permitting) helicopter transfer.",
+      "notes": "The one island where alcohol is permitted. Pitched at 'discerning exclusive' tourists.",
+      "activities": "Snorkelling, diving, kayaking, deep-sea fishing, lagoon."
+    },
+    "Thinnakara": {
+      "role": "A small island in Bangaram's lagoon, run as a tented beach camp by SPORTS.",
+      "access": "Flight to Agatti, then boat.",
+      "activities": "Snorkelling, kayaking, lagoon swimming, glass-bottom boat, day trips to Bangaram/Parali."
+    },
+    "Kavaratti": {
+      "role": "The capital / administrative headquarters and most developed island.",
+      "features": "52 mosques across the island — the finest is the Ujra (Jama-Ath) mosque, said to have a well with curative water. Calm lagoon good for water sports, swimming and snorkelling.",
+      "attractions": "Marine aquarium; Dolphin Dive Centre (scuba); glass-bottom boats.",
+      "access": "Flight to Agatti then boat (Taratashi package), or by ship (Samudram). Boats from Agatti in the fair season.",
+      "packages": "Taratashi (Kavaratti resort); part of the Samudram cruise."
+    },
+    "Kadmat": {
+      "role": "A long, very thin island (~8 km long, ~550 m at its widest) known for diving.",
+      "features": "Broad shallow lagoon on the west (water sports); narrow eastern lagoon; long sandy beaches and sand banks at the southern tip. Tourist huts among palm groves facing the lagoon. Water Sports Institute on the island.",
+      "diving": "Laccadives (Lacadives, Mumbai) Kadmat Dive School — one of India's finest dive centres, 20-50 m visibility, courses ~1 Oct to 1 May.",
+      "access": "Boat from Agatti in the fair season; ship packages. 'Non-Indians are also permitted to visit this island.'",
+      "packages": "Marine Wealth Awareness Programme (2-4 days on the island)."
+    },
+    "Kalpeni": {
+      "role": "An atoll with the main island Kalpeni plus islets Tilakkam and Pitti, and the uninhabited Cheriyam nearby.",
+      "features": "A huge storm bank of coral debris along the eastern/south-eastern shore, thrown up by a violent storm in 1847. Koomel Beach with two bathing huts and change rooms. Historically notable as the place where girls first went to school in the islands.",
+      "activities": "Swimming, snorkelling, reef-walking, kayaks and sailboats.",
+      "access": "Ship (Samudram / Coral Reef packages).",
+      "nearby": "Pitti islet is a protected seabird breeding site (Pitti Bird Sanctuary) — not a landing spot for tourists."
+    },
+    "Minicoy": {
+      "role": "The isolated southernmost island, ~200 km south of the main group, culturally distinct and close to the Maldives.",
+      "features": "Crescent-shaped, ~10.6 km long (second largest island after Andrott). One of the largest lagoons, with the small uninhabited islet Viringili on its south. A cluster of 11 villages, each with an elected head (Bodukaka). Mahl language. Famous for the 'Lava' dance and the colourful communal race boats (jahadhoni).",
+      "attractions": "A ~300-ft (light said built 1885, British-era) lighthouse; an important tuna fishing centre with a tuna canning/processing factory.",
+      "accommodation": "3 tourist cottages and a 20-bed tourist home; bathing huts with change rooms; water sports.",
+      "access": "Ship only (Samudram cruise and Swaying Palm package) — no airstrip or helipad.",
+      "packages": "Samudram; Swaying Palm."
+    }
+  },
+  "cardsPlanned": [
+    "Agatti (lak_batch1)", "Bangaram (lak_batch1)",
+    "Thinnakara (lak_batch2)", "Kavaratti (lak_batch2)",
+    "Kadmat (lak_batch3)", "Kalpeni (lak_batch3)",
+    "Minicoy (lak_batch4)"
+  ],
+  "cardedThisTask": []
+}
