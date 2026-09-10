@@ -64,8 +64,13 @@
     "Muzhappilangad Drive-in Beach (ke_batch6)",
     "St. Angelo Fort / Kannur Fort (ke_batch6)",
     "Munroe Island (ke_batch7)",
-    "Thalassery / Tellicherry (ke_batch7)"
+    "Thalassery / Tellicherry (ke_batch7)",
+    "Aranmula (ke_batch8)",
+    "Marayoor (ke_batch8)",
+    "Beypore (ke_batch9)",
+    "Parambikulam Tiger Reserve (ke_batch9)"
   ],
+  "keralaCoverageNote": "Kerala total now 46 destinations (was 28 at task start; +18 added this task across 9 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     { "name": "Kollam", "url": "https://www.keralatourism.org/destination/kollam/587/" },
     { "name": "Fort Kochi", "url": "https://www.keralatourism.org/destination/fort-kochi/422/" },
@@ -74,6 +79,10 @@
     { "name": "Tipu's Fort Palakkad", "url": "https://www.keralatourism.org/destination/tipus-fort-palakkad/130/" },
     { "name": "Malampuzha Dam & Garden", "url": "https://www.keralatourism.org/destination/malampuzha-dam-garden-palakkad/124/" },
     { "name": "Chandragiri Fort", "url": "https://www.keralatourism.org/destination/chandragiri-fort-a-scenic-stronghold-of-history-and-nature/739/" },
-    { "name": "Nelliyampathy Hills", "url": "https://www.keralatourism.org/destination/nelliyampathy-hills-palakkad/152/" }
+    { "name": "Nelliyampathy Hills", "url": "https://www.keralatourism.org/destination/nelliyampathy-hills-palakkad/152/" },
+    { "name": "Aranmula", "url": "https://www.keralatourism.org/destination/aranmula/324/" },
+    { "name": "Marayoor", "url": "https://www.keralatourism.org/destination/marayoor/119/" },
+    { "name": "Beypore", "url": "https://www.keralatourism.org/destination/beypore/318/" },
+    { "name": "Parambikulam Wildlife Sanctuary / Tiger Reserve", "url": "https://www.keralatourism.org/destination/parambikulam-wildlife-sanctuary/150/" }
   ]
 }
