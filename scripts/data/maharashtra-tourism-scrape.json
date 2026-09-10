@@ -276,6 +276,23 @@
       "bestSeason": "Oct-Feb cool/clear/best views; monsoon green + misty but steps/trails slippery; early in summer.",
       "safetyNotes": "Very popular, easily accessible -- road nearly to the top, Upper Fort circuit busy with families + tour groups (esp. weekends + Shiv Jayanti); only a short stepped climb from the car park (no real trek); stalls + guides + basic first aid. Upper Fort bastions/watchtowers on cliff edges with long drops + only low/broken parapets in places -- stay back, esp. for photos + in wind, children in hand. Stone steps + fort paths slippery in the monsoon + moss-slick year-round in shade. Ghat road from Mahabaleshwar narrow/winding/sheer drops -- experienced driver, not after dark, fog + slow in the monsoon. AFZAL KHAN'S TOMB area on the slope below has at times been a focus of political/communal sensitivity -- treat as a historic monument, keep opinions private, don't linger around a crowd/demonstration. Hot/exposed Upper Fort by midday outside winter. womenSafety.level Safe (7).",
       "fixesDanglingRef": "Mahabaleshwar card (mh_batch6) links nearbyPlaces id 'pratapgad-fort' -- now resolved."
+    },
+    {
+      "name": "Shivneri Fort",
+      "url": "https://maharashtratourism.gov.in/tourist-intrests/forts/ (#Shivneri section) -- read via in-app browser",
+      "summary": "Triangular hill fort above Junnar, N Pune district, ringed by cliffs, entered via a chain of SEVEN gateways up the slope. Chhatrapati Shivaji Maharaj was BORN here 19 Feb 1630 (to Jijabai + Shahaji Bhosale), in a two-storey stone building on the plateau, now a memorial (images of infant Shivaji + Jijabai). Older layers: 1st-c.-BCE rock-cut Buddhist caves in the scarp; ruled by Mauryas/Chalukyas/Rashtrakutas/Yadavas -> Delhi Sultanate -> Adil Shahi (1430) -> Mughal (1630) -> Marathas. Plateau: Badami Talav tank, small Shivai Devi temple (the goddess the fort + Shivaji are named for), water cisterns, Kadelot Point (execution cliff). Junnar is also the base for Lenyadri Ashtavinayak cave-temple, the Naneghat pass + Malshej Ghat.",
+      "access": "Air: Pune ~95 km (closer), Mumbai ~160 km. Rail: none useful near Junnar -- road transfer from Pune. Road: ~95 km/~2.5h from Pune via Narayangaon; ~160 km from Mumbai via Kalyan + the Malshej Ghat; MSRTC buses Pune-Junnar; ~5 km Junnar to the fort base; classic route = up through the 7 gates on foot (~45-60 min), a road also climbs near the top.",
+      "bestSeason": "Oct-Mar clear/cool; monsoon greens the hills but steps/rock slippery.",
+      "safetyNotes": "Protected ASI monument of deep significance, steady flow (school groups, families), heavy around Shiv Jayanti (19 Feb); stepped 7-gate route well-defined + busy on weekends/holidays; Junnar an ordinary small town, base has stalls + auto stand. Plateau edges, ramparts + esp. KADELOT POINT are cliff drops with little/no railing -- stay back, care for photos, children in hand. 7-gate climb on old worn uneven steps, slippery in the monsoon + shaded damp spots. Quiet weekday -> upper fort sparsely visited: climb with others in sight, not entirely alone, not past mid-afternoon. Hot/unshaded plateau outside winter. No useful public transport at the fort -- arrange the Junnar-base auto/taxi + return ahead. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Pune card (mh_batch5) links nearbyPlaces id 'shivneri-fort' -- now resolved."
+    },
+    {
+      "name": "Murud-Janjira Fort",
+      "url": "https://maharashtratourism.gov.in/fort/murud-janjira/ (read via in-app browser)",
+      "summary": "Sea fort on an oval rock in the Arabian Sea off the fishing town of Murud, ~165 km down the Konkan coast from Mumbai, Raigad district. Local fishermen first built a wooden stockade vs pirates; 1567 Malik Ambar (Abyssinian regent of the Ahmadnagar Sultanate) replaced it with the surviving stone fortress -> stronghold of the SIDDIS of Janjira (African-origin admirals holding it as a virtually independent state). NEVER TAKEN despite repeated sieges by the Marathas (Shivaji + Sambhaji), Mughals, Portuguese, British -> 'the unconquerable'. Curtain walls ~12 m (gov page says ~40 ft) straight from the water; 19 rounded bastions (gov page says 26 intact artillery towers); giant cannon Kalal Bangdi, Chavri, Landa Kasam still on the ramparts. Main gate faces Rajapuri, invisible until ~40 ft away; a carved panel beside it shows a lion-like beast gripping elephants. Inside: ruined palace, a mosque, and -- ringed by seawater -- two FRESHWATER tanks. Access: shared sailboat from the Rajapuri jetty.",
+      "access": "Air: Mumbai ~165 km / Pune ~170 km. Rail: Konkan Railway -- Roha or Mangaon (~40-50 km), then bus/taxi to Murud. Road: ~165 km from Mumbai (5-6h, or shorter via the Mumbai-Mandwa fast ferry + drive); ~50 km from Alibaug; MSRTC buses to Murud; ~5 km Murud town to the Rajapuri jetty for the fort boat.",
+      "bestSeason": "Oct-Mar calm seas + reliable boats; monsoon (Jun-Sep) rough seas, boat crossing often suspended; summer hot on the coast.",
+      "safetyNotes": "Well-visited ASI monument reached by shared boats through the season, steady family/tour-group flow; Murud a small easygoing coastal town; fort route (boat + ramparts walk) straightforward + busy in season. SAILBOAT crossing on open tidal sea -- life jacket if provided, no overloaded boat, sit while moving, DON'T go when the sea is rough (boats suspended in the monsoon + bad weather for good reason). Fort ramparts/bastions high with broken parapets + open gaps in places + a straight drop to sea/rocks -- away from edges, esp. in wind, watch children. NO shade, no toilet, nothing to buy on the fort -- carry water/sun cover before sailing. Confirm the return-boat arrangement before landing (small island). Konkan beaches: some strong currents + no lifeguards -- swim where locals do, not after dark/after drinking. womenSafety.level Safe (7)."
     }
   ],
   "cardedThisTask": [
@@ -296,6 +313,8 @@
     "Lonavala & Khandala (mh_batch8)",
     "Karla & Bhaja Caves (mh_batch8)",
     "Raigad Fort (mh_batch9)",
-    "Pratapgad Fort (mh_batch9)"
+    "Pratapgad Fort (mh_batch9)",
+    "Shivneri Fort (mh_batch10)",
+    "Murud-Janjira Fort (mh_batch10)"
   ]
 }
