@@ -127,9 +127,11 @@
     "Thangassery / Tangasseri (ke_batch14)",
     "Nilambur - Conolly's Plot & Teak Museum (ke_batch14)",
     "Vaikom Mahadeva Temple (ke_batch15)",
-    "Ettumanoor Mahadeva Temple (ke_batch15)"
+    "Ettumanoor Mahadeva Temple (ke_batch15)",
+    "Mannarasala Sree Nagaraja Temple (ke_batch16)",
+    "Vazhachal Falls (ke_batch16)"
   ],
-  "keralaCoverageNote": "Kerala total now 58 destinations (was 28 at task start; +30 added this task across 15 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 60 destinations (was 28 at task start; +32 added this task across 16 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -226,6 +228,14 @@
     {
       "name": "Ettumanoor Mahadeva Temple",
       "url": "https://www.keralatourism.org/destination/ettumanoor-mahadeva-temple/469/"
+    },
+    {
+      "name": "Mannarasala Sree Nagaraja Temple",
+      "url": "https://www.keralatourism.org/destination/mannarasala-sree-nagaraja-temple/63/"
+    },
+    {
+      "name": "Vazhachal Falls (Athirappally-Vazhachal ecotourism)",
+      "url": "https://www.keralatourism.org/ecotourism/destinations/athirappally-vazhachal"
     }
   ]
 }
