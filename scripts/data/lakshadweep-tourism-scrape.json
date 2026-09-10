@@ -249,9 +249,12 @@
     "Agatti (lak_batch1)",
     "Bangaram (lak_batch1)",
     "Kavaratti (lak_batch2)",
-    "Kadmat (lak_batch2)"
+    "Kadmat (lak_batch2)",
+    "Kalpeni (lak_batch3)",
+    "Minicoy (lak_batch3)"
   ],
   "deferredPendingBetterImages": [
     "Thinnakara - no dedicated, authenticatable Wikimedia Commons image (searches only return Bangaram/shared-lagoon photos); described in the Agatti and Bangaram cards' nearbyPlaces but not carded standalone, per the image-authenticity rule."
-  ]
+  ],
+  "coverageNote": "Lakshadweep total: 6 island Destination Cards (Agatti, Bangaram, Kavaratti, Kadmat, Kalpeni, Minicoy) covering every island SPORTS lists as a tourist 'focal island' and sells packages for, EXCEPT Thinnakara, which is deferred for want of an authenticatable Commons image (it is a tented camp island in Bangaram's lagoon and is described in the Agatti and Bangaram cards). Every card carries the mandatory entry-permit fact (epermit.utl.gov.in), the alcohol prohibition (except Bangaram), the lagoon-only / SPORTS-escort rule, the coral-collection ban, and the weather-dependent access + limited-medical-evacuation caveats. All 12 images visually verified on Wikimedia Commons; wrong-location and sub-1000px images excluded; the Ujra mosque (Kavaratti) and Minicoy lighthouse have no verified free image and are covered in text only, noted in the imageCredit."
 }
