@@ -247,6 +247,11 @@
   ],
   "cardedThisTask": [
     "Agatti (lak_batch1)",
-    "Bangaram (lak_batch1)"
+    "Bangaram (lak_batch1)",
+    "Kavaratti (lak_batch2)",
+    "Kadmat (lak_batch2)"
+  ],
+  "deferredPendingBetterImages": [
+    "Thinnakara - no dedicated, authenticatable Wikimedia Commons image (searches only return Bangaram/shared-lagoon photos); described in the Agatti and Bangaram cards' nearbyPlaces but not carded standalone, per the image-authenticity rule."
   ]
 }
