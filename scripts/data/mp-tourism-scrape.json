@@ -219,6 +219,22 @@
       "access": "Air: Indore ~210 km (nearest major), Udaipur ~245 km. Rail: Mandsaur station on the Ratlam-Kota broad-gauge line; Ratlam ~90 km is the nearest big junction. Road: ~90 km Ratlam, ~50 km Neemuch, ~120 km Ujjain, ~60-75 km Gandhi Sagar; buses from Ratlam, Neemuch, Ujjain, Kota. In-town sites close together; car needed for Sondani + Gandhi Sagar.",
       "bestSeason": "Oct-Mar; very hot Apr-Jun.",
       "safetyNotes": "Settled district town, ordinary public life; Pashupatinath area busy and family-oriented morning to evening aarti. In-town sights close, auto-able by day. Sondani + fort quieter, lightly staffed -- daylight, not entirely alone. Gandhi Sagar is remote ravine country ~60-75 km out -- hired car, daylight, arrange wildlife-sanctuary entry via the forest office ahead. On any Gandhi Sagar reservoir boat: life jacket on before departure, no overloaded boats, not in wind/rough water (same prudence as the 2026 Bargi Dam incident). Severe Apr-Jun heat."
+    },
+    {
+      "name": "Hanuwantiya",
+      "url": "https://www.mptourism.com/destination-hanuwantia.php (note: slug is 'hanuwantia', not 'hanuwantiya')",
+      "summary": "Purpose-built water-tourism spot on the Indira Sagar reservoir (Narmada), Khandwa district -- the lake is ~95 sq km here, one of Asia's largest man-made reservoirs. MP Tourism developed the shore into an adventure/water-sports base; each winter (~Nov-Jan) it hosts the Jal Mahotsav 'Water Festival' -- ~2-month event, luxury tent city (non-AC deluxe to royal suites, ~100 tents / 10 acres per some sources). Activities: jet-ski, speed/motor boating, sailing, banana ride, kayaking; parasailing, tethered hot-air balloon, paramotor, zip-line, zorbing, ATV; reservoir cruises incl. a boat to forested Boriyamal (Boria Mal) island; boat club cruises daily after 4 PM. Off-season: MPT Hanuwantiya Resort open (INR 3,590-5,990), limited activities, no tent city. Most visitors from Indore ~150 km.",
+      "access": "Air: Indore ~150 km (nearest); MP Tourism runs festival coach transfers. Rail: Khandwa ~50 km. Road: ~150 km (~3h) from Indore via Khandwa; ~170 km from Omkareshwar.",
+      "bestSeason": "Nov-Jan (Jal Mahotsav); resort open year-round; cold Dec-Jan nights.",
+      "safetyNotes": "Managed MP Tourism site: activities via licensed operators with briefings + safety gear; festival is busy/family-oriented with security + medical posts; tent city staffed and lit. BUT genuine adventure on a large open reservoir -- always wear the life jacket, full briefing, don't attempt water sports you're not comfortable with even jacketed (declare if you can't swim). Afternoon wind on the reservoir -- operators may suspend boats/balloons; don't push to go out in rough/gusty conditions; no overloaded boats. Aerial activities (parasail, paramotor, balloon, zip-line) carry real risk -- official operators only, check harness/jacket yourself. Off-season the site is quiet/remote with limited staff + transport -- not suited to a solo overnight then. Apply the 2026 Bargi Dam reservoir-boat lesson here too."
+    },
+    {
+      "name": "Rewa",
+      "url": "https://www.mptourism.com/destination-rewa.php",
+      "summary": "Principal town of Baghelkhand (Vindhya region), NE Madhya Pradesh; seat of the Baghel dynasty; 'land of the white tiger' -- Maharaja Martand Singh caught the white tiger cub Mohan near here in 1951 (ancestor of most captive white tigers). Maharaja Martand Singh Judeo White Tiger Safari & Zoo at Mukundpur -- MP Tourism page itself notes Mukundpur is in NEIGHBOURING SATNA DISTRICT, ~25 km from Rewa city; white + normal-coloured tigers in large enclosures + a safari drive; billed as India's first white tiger safari. City: Baghel-era Rewa Fort + Museum on the Bichhiya river; Venkat Bhavan palace; Rani Talab tank. Govindgarh ~13 km S -- hilltop fort + large lake (maharajas' retreat). Plateau waterfalls on the Tons/tributaries: Purwa, Chachai, Keoti, and Bahuti (~142 m, among the highest in the region) -- strongest in/just after the monsoon. Deur Kothar Mauryan-age Buddhist stupas to the west. Bhairav Baba temple: 35-ft reclining statue from a single rock.",
+      "access": "Air: new Rewa (Chorhata) Airport ~11 km, limited flights to Bhopal/Khajuraho/Jabalpur; Prayagraj ~130 km is the larger nearby airport; Jabalpur ~230 km. Rail: Rewa station, terminus of the Satna-Rewa branch; Satna ~50 km (main Mumbai-Howrah line) has far more trains. Road: on NH-30/NH-39; ~50 km Satna, ~25 km Mukundpur, ~130 km Prayagraj; falls 30-75 km out in different directions -- a hired car is needed and one day realistically covers only one fall.",
+      "bestSeason": "Oct-Mar for town + safari; Jul-Oct for fullest waterfalls (rocks then most slippery).",
+      "safetyNotes": "Settled regional city, ordinary public life, full hotel range, rail + road connected. White Tiger Safari = managed zoo/safari with staff, tickets, set timings -- stay in the vehicle on the route, behind enclosure barriers. MAIN HAZARD: the waterfalls -- Purwa, Chachai, Keoti, Bahuti drop from high, largely UNFENCED plateau edges into deep gorges; stay well back from the rim, don't climb toward the base or wade the stream above a fall, keep children in hand; rock treacherously slippery in/after the monsoon (exactly when people go). Falls are 30-75 km out, different directions, little infrastructure -- hired car, daylight, own water/food, don't linger past late afternoon. Standard city care after dark; time Satna transfers for daylight. Severe Apr-Jun plateau heat."
     }
   ],
   "cardedThisTask": [
@@ -241,6 +257,8 @@
     "Bhojpur (mp_batch9)",
     "Shivpuri (mp_batch9)",
     "Bateshwar Temple Group / Morena (mp_batch10)",
-    "Mandsaur (mp_batch10)"
+    "Mandsaur (mp_batch10)",
+    "Hanuwantiya (mp_batch11)",
+    "Rewa (mp_batch11)"
   ]
 }
