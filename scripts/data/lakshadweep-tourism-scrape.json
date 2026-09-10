@@ -4,9 +4,19 @@
     "scrapedOn": "2026-09-10",
     "scope": "Lakshadweep Union Territory — the tourist 'focal' islands and how to visit them",
     "pagesScraped": [
-      "index.html", "howtoreach.html", "tourist_season.html", "watersports.html",
-      "tourist_focalislands.html", "tourpackages.html", "Htobook.html",
-      "dos_and_donts.html", "basicfacts.html", "location.html", "climate.html", "contact.html", "nutshell.html"
+      "index.html",
+      "howtoreach.html",
+      "tourist_season.html",
+      "watersports.html",
+      "tourist_focalislands.html",
+      "tourpackages.html",
+      "Htobook.html",
+      "dos_and_donts.html",
+      "basicfacts.html",
+      "location.html",
+      "climate.html",
+      "contact.html",
+      "nutshell.html"
     ],
     "supplementarySources": [
       "https://lakshadweep.gov.in/tourism/entry-permit/ (official Lakshadweep Administration — entry permit)",
@@ -19,7 +29,19 @@
     "status": "Smallest Union Territory of India; India's only coral-island chain; a single district",
     "capital": "Kavaratti (administrative headquarters)",
     "composition": "36 islands; 12 atolls, 3 reefs, 5 submerged banks. Total land area ~32 sq km. Lagoons enclosed by the atolls ~4,200 sq km. Territorial waters ~20,000 sq km; EEZ ~400,000 sq km.",
-    "inhabitedIslands": ["Agatti", "Amini", "Andrott", "Bitra", "Chetlat", "Kadmat", "Kalpeni", "Kavaratti", "Kiltan", "Minicoy", "(sources vary 10-11)"],
+    "inhabitedIslands": [
+      "Agatti",
+      "Amini",
+      "Andrott",
+      "Bitra",
+      "Chetlat",
+      "Kadmat",
+      "Kalpeni",
+      "Kavaratti",
+      "Kiltan",
+      "Minicoy",
+      "(sources vary 10-11)"
+    ],
     "location": "Arabian Sea, ~220 to 440 km off the Kerala coast, between 8 deg and 12 deg N and 71 deg and 74 deg E. Connected to the mainland only from Kochi (Cochin).",
     "climate": "Tropical. Summer 22-33 C, winter 20-32 C. Southwest monsoon June-September brings heavy rain; Oct-May is the pleasant, calmer period.",
     "people": "Predominantly Muslim population; Malayalam is the main language, with Mahl (Dhivehi, written in Thaana) spoken on Minicoy.",
@@ -45,22 +67,103 @@
   "waterSports": {
     "islandWide": "All islands in the tourist packages offer kayaks, canoes, pedal boats, sail boats, wind surfers, snorkel sets and glass-bottomed boats.",
     "scubaDiving": [
-      { "island": "Kavaratti", "centre": "Dolphin Dive Centre", "note": "Calm lagoon ideal for beginners; giant sea fans, turtles, soft corals, reef sharks, rays, tropical fish." },
-      { "island": "Kadmat", "centre": "Laccadives (Lacadives) Kadmat Dive School", "note": "Beginner to instructor CMAS courses, season ~1 October to 1 May; visibility 20-50 m; regarded as one of India's finest dive sites." },
-      { "island": "Minicoy", "centre": "Dive centre with a 20-bed resort", "note": "" },
-      { "island": "Bangaram", "centre": "Dive facility", "note": "" }
+      {
+        "island": "Kavaratti",
+        "centre": "Dolphin Dive Centre",
+        "note": "Calm lagoon ideal for beginners; giant sea fans, turtles, soft corals, reef sharks, rays, tropical fish."
+      },
+      {
+        "island": "Kadmat",
+        "centre": "Laccadives (Lacadives) Kadmat Dive School",
+        "note": "Beginner to instructor CMAS courses, season ~1 October to 1 May; visibility 20-50 m; regarded as one of India's finest dive sites."
+      },
+      {
+        "island": "Minicoy",
+        "centre": "Dive centre with a 20-bed resort",
+        "note": ""
+      },
+      {
+        "island": "Bangaram",
+        "centre": "Dive facility",
+        "note": ""
+      }
     ],
     "deepSeaFishing": "Big-game fishing for barracuda, sailfish, yellowfin tuna, trevally and sharks.",
     "seasonNote": "Dive courses ~1 October to 1 May."
   },
   "tourPackages": [
-    { "name": "Lakshadweep Samudram", "mode": "Ship (MV Kavaratti)", "islands": ["Kavaratti", "Kalpeni", "Minicoy"], "duration": "~5 days", "open": "Domestic and foreign tourists (foreigners with tourist visa); booked online only." },
-    { "name": "Swaying Palm", "mode": "Ship", "islands": ["Minicoy"], "duration": "~6-7 days", "open": "Not restricted by nationality." },
-    { "name": "Taratashi", "mode": "Flight to Agatti, then boat", "islands": ["Kavaratti"], "duration": "~4-5 days", "open": "Not restricted." },
-    { "name": "Tents in Thinnakara", "mode": "Flight to Agatti, then boat", "islands": ["Thinnakara"], "duration": "package", "open": "Not restricted." },
-    { "name": "Cottages in Bangaram", "mode": "Flight to Agatti, then boat", "islands": ["Bangaram"], "duration": "package", "open": "Not restricted." },
-    { "name": "Scuba Dive Package", "mode": "Varies", "islands": ["Kavaratti", "Kalpeni", "Kadmat", "Bangaram", "Thinnakara"], "duration": "activity-based", "open": "Not restricted." },
-    { "name": "Coral Reef / Swaying Palm / Marine Wealth Awareness", "mode": "Ship", "islands": ["Kavaratti", "Kalpeni", "Kadmat", "Minicoy (varies)"], "duration": "varies", "open": "Referenced on the site; itineraries vary year to year." }
+    {
+      "name": "Lakshadweep Samudram",
+      "mode": "Ship (MV Kavaratti)",
+      "islands": [
+        "Kavaratti",
+        "Kalpeni",
+        "Minicoy"
+      ],
+      "duration": "~5 days",
+      "open": "Domestic and foreign tourists (foreigners with tourist visa); booked online only."
+    },
+    {
+      "name": "Swaying Palm",
+      "mode": "Ship",
+      "islands": [
+        "Minicoy"
+      ],
+      "duration": "~6-7 days",
+      "open": "Not restricted by nationality."
+    },
+    {
+      "name": "Taratashi",
+      "mode": "Flight to Agatti, then boat",
+      "islands": [
+        "Kavaratti"
+      ],
+      "duration": "~4-5 days",
+      "open": "Not restricted."
+    },
+    {
+      "name": "Tents in Thinnakara",
+      "mode": "Flight to Agatti, then boat",
+      "islands": [
+        "Thinnakara"
+      ],
+      "duration": "package",
+      "open": "Not restricted."
+    },
+    {
+      "name": "Cottages in Bangaram",
+      "mode": "Flight to Agatti, then boat",
+      "islands": [
+        "Bangaram"
+      ],
+      "duration": "package",
+      "open": "Not restricted."
+    },
+    {
+      "name": "Scuba Dive Package",
+      "mode": "Varies",
+      "islands": [
+        "Kavaratti",
+        "Kalpeni",
+        "Kadmat",
+        "Bangaram",
+        "Thinnakara"
+      ],
+      "duration": "activity-based",
+      "open": "Not restricted."
+    },
+    {
+      "name": "Coral Reef / Swaying Palm / Marine Wealth Awareness",
+      "mode": "Ship",
+      "islands": [
+        "Kavaratti",
+        "Kalpeni",
+        "Kadmat",
+        "Minicoy (varies)"
+      ],
+      "duration": "varies",
+      "open": "Referenced on the site; itineraries vary year to year."
+    }
   ],
   "dosAndDonts": {
     "dos": [
@@ -134,10 +237,16 @@
     }
   },
   "cardsPlanned": [
-    "Agatti (lak_batch1)", "Bangaram (lak_batch1)",
-    "Thinnakara (lak_batch2)", "Kavaratti (lak_batch2)",
-    "Kadmat (lak_batch3)", "Kalpeni (lak_batch3)",
+    "Agatti (lak_batch1)",
+    "Bangaram (lak_batch1)",
+    "Thinnakara (lak_batch2)",
+    "Kavaratti (lak_batch2)",
+    "Kadmat (lak_batch3)",
+    "Kalpeni (lak_batch3)",
     "Minicoy (lak_batch4)"
   ],
-  "cardedThisTask": []
+  "cardedThisTask": [
+    "Agatti (lak_batch1)",
+    "Bangaram (lak_batch1)"
+  ]
 }
