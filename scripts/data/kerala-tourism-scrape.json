@@ -137,9 +137,11 @@
     "Parassinikkadavu Muthappan Temple + Snake Park (ke_batch19)",
     "Payyambalam Beach (ke_batch19)",
     "Peermade / Peermedu (ke_batch20)",
-    "Sabarimala Sree Dharmasastha Temple (ke_batch20)"
+    "Sabarimala Sree Dharmasastha Temple (ke_batch20)",
+    "Thirunelli Maha Vishnu Temple (ke_batch21)",
+    "Jatayu Earth's Center (ke_batch21)"
   ],
-  "keralaCoverageNote": "Kerala total now 68 destinations (was 28 at task start; +40 added this task across 20 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 70 destinations (was 28 at task start; +42 added this task across 21 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -276,6 +278,14 @@
     {
       "name": "Sabarimala Sree Dharmasastha Temple",
       "url": "https://www.keralatourism.org/destination/sabarimala-temple/47/"
+    },
+    {
+      "name": "Thirunelli Maha Vishnu Temple",
+      "url": "https://www.keralatourism.org/wayanad/thirunelli-temple-mananthavady.php"
+    },
+    {
+      "name": "Jatayu Earth's Center",
+      "url": "https://www.keralatourism.org/kerala-article/2018/jatayu-earth-centre/848"
     }
   ]
 }
