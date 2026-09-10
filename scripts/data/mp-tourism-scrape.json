@@ -235,6 +235,24 @@
       "access": "Air: new Rewa (Chorhata) Airport ~11 km, limited flights to Bhopal/Khajuraho/Jabalpur; Prayagraj ~130 km is the larger nearby airport; Jabalpur ~230 km. Rail: Rewa station, terminus of the Satna-Rewa branch; Satna ~50 km (main Mumbai-Howrah line) has far more trains. Road: on NH-30/NH-39; ~50 km Satna, ~25 km Mukundpur, ~130 km Prayagraj; falls 30-75 km out in different directions -- a hired car is needed and one day realistically covers only one fall.",
       "bestSeason": "Oct-Mar for town + safari; Jul-Oct for fullest waterfalls (rocks then most slippery).",
       "safetyNotes": "Settled regional city, ordinary public life, full hotel range, rail + road connected. White Tiger Safari = managed zoo/safari with staff, tickets, set timings -- stay in the vehicle on the route, behind enclosure barriers. MAIN HAZARD: the waterfalls -- Purwa, Chachai, Keoti, Bahuti drop from high, largely UNFENCED plateau edges into deep gorges; stay well back from the rim, don't climb toward the base or wade the stream above a fall, keep children in hand; rock treacherously slippery in/after the monsoon (exactly when people go). Falls are 30-75 km out, different directions, little infrastructure -- hired car, daylight, own water/food, don't linger past late afternoon. Standard city care after dark; time Satna transfers for daylight. Severe Apr-Jun plateau heat."
+    },
+    {
+      "name": "Tamia & the Patalkot Valley",
+      "url": "https://www.mptourism.com/destination-tamia.php",
+      "summary": "Small hill settlement on the Satpura ridge, Chhindwara district, ~1,150 m (site says 3,765 ft). Reason to visit: rim viewpoints -- Chimtipur View Point, Tamia Valley View Point, Sunset Point -- over Patalkot, a horseshoe-shaped valley sunk ~500-550 m into the plateau (site: '1200-1700 ft' in other sources), old-growth virgin forest, medicinal plants, very ancient rock ('2500 million years'). Patalkot floor: hamlets of Bharia and Gond communities, long isolated, reached on foot down steep paths. Also: seasonal Tamia waterfall (monsoon), a tribal museum, short guided forest treks; Deogarh/Chhindi further out. MP Tourism site pushes Jun-Sep (monsoon).",
+      "access": "Air: Nagpur ~185 km, Jabalpur ~180 km. Rail: Chhindwara ~55 km (broad-gauge link to Nagpur and Nainpur/Jabalpur). Road: ~55 km Chhindwara, ~150 km Pachmarhi via Pipariya, ~180 km Jabalpur; buses/taxis from Chhindwara, Pipariya, Nagpur, Bhopal, Jabalpur; last stretch is a forested ghat climb.",
+      "bestSeason": "Jul-Oct (monsoon + just after, greenest, falls run); Oct-Feb pleasant and clear; cold non-monsoon nights.",
+      "safetyNotes": "Calm low-crime hill area, small domestic tourism scene, MPT Satpura Retreat the reliable base. Viewpoints (Chimtipur, Tamia Valley View, Sunset Point) on STEEP LARGELY UNFENCED cliff edges -- stay back from the rim, worse in mist/drizzle/low light, children in hand. Descending into Patalkot is a real trek down a long steep path -- local guide + group + daylight only, NOT in heavy monsoon (slick trail, leeches); carry water, tell the accommodation. Remote ridge: limited medical, patchy signal, few vehicles after dark -- keep travel to daylight. Respect the valley's tribal villages -- ask before photographing, don't hand out sweets/money. womenSafety.level Moderate (score 6) for the cliffs + remoteness.",
+      "fixesDanglingRef": "n/a (nearbyPlace only; not previously referenced by id)"
+    },
+    {
+      "name": "Raneh Falls & Ken Canyon",
+      "url": "https://www.mptourism.com/destination-raneh-falls.php (404 at time of scrape -- primary source: Wikipedia 'Raneh Falls')",
+      "summary": "Waterfalls + a canyon on the Ken river, ~20 km from Khajuraho, Chhatarpur district. Over ~5 km the Ken has cut a gorge up to ~30 m deep into pure crystalline rock (granite + dolomite) banded pink/red/ochre/grey -- 'the mini Grand Canyon of India'. A larger and a smaller fall run year-round; more seasonal cascades in the monsoon. Within the forest-dept-managed Raneh Falls / Ken Gharial area; the Ken Gharial Sanctuary (gharial + mugger crocodile) is at the Ken-Khudar confluence a little downstream. Deer, nilgai, birds in the scrub forest. Entry via a forest gate, usually a guide + vehicle along the rim to fenced viewpoints. Pandav Falls (Panna) + Panna Tiger Reserve close by -- normally combined with a Khajuraho or Panna trip.",
+      "access": "Air/Rail: Khajuraho ~25 km. Road: ~20 km (~40 min) from Khajuraho; ~30 km from the Madla gate of Panna; no useful public transport -- hire a taxi from Khajuraho or add to a Panna safari day.",
+      "bestSeason": "Oct-Mar (colours best in low water); monsoon fullest but access may be restricted. Roughly sunrise-sunset forest timings.",
+      "safetyNotes": "Ticketed forest-dept site, staffed gate, set rim route, fenced viewpoints; you move by vehicle with a guide, not wandering the gorge. Canyon rim has deep, in places UNFENCED drops onto rock -- stay behind the barriers, don't climb into the gorge or onto wet rock ledges by the falls, children close. Ken holds gharial + mugger crocodile -- don't go to the water's edge. Inside a wildlife area -- keep to the route + marked overlooks, follow the guide. Access can be cut/limited in heavy monsoon -- confirm the gate is open. Hired taxi from Khajuraho, daylight only -- nothing at the gate after hours.",
+      "fixesDanglingRef": "Panna card (mp_batch3) links nearbyPlaces id 'raneh-falls' -- now resolved. (Khajuraho card also lists Raneh Falls as a nearbyPlace without an id -- left as-is.)"
     }
   ],
   "cardedThisTask": [
@@ -259,6 +277,8 @@
     "Bateshwar Temple Group / Morena (mp_batch10)",
     "Mandsaur (mp_batch10)",
     "Hanuwantiya (mp_batch11)",
-    "Rewa (mp_batch11)"
+    "Rewa (mp_batch11)",
+    "Tamia & Patalkot (mp_batch12)",
+    "Raneh Falls & Ken Canyon (mp_batch12)"
   ]
 }
