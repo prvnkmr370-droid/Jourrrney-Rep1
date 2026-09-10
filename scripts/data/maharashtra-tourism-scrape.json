@@ -325,6 +325,23 @@
       "access": "Base is Kolhapur (no closer access). From Kolhapur station: bus or taxi up the ghat to Panhala town; ~18 km / ~35-45 min up a winding ghat road; the road goes right onto the plateau (NO CLIMB required); MSRTC buses run to Panhala town.",
       "bestSeason": "Oct-Feb clear/cool/best views; monsoon lush + misty but plateau roads/steps slippery + views vanish.",
       "safetyNotes": "A fort WITH A RESIDENT TOWN, motorable road onto the plateau, hotels/shops/local population -- far more populated + serviced than a typical hill fort; popular Kolhapur day trip + small hill retreat; no climb, central sites walkable among houses + eateries. Plateau-edge ramparts + bastions high with long drops + BROKEN OR MISSING PARAPETS in stretches -- stay back from the rim, care for photos + in wind, mind children. Andhar Bavadi = a deep 3-storey stepped well, dim + slippery lower levels, low light -- down carefully with someone, not if wet. Far monuments + quieter rampart stretches lightly visited on weekdays -- companion, daylight. Kolhapur ghat road winding -- not after dark / in heavy monsoon fog. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Alibaug",
+      "url": "https://maharashtratourism.gov.in/tourist-intrests/beaches/ (#Alibaug-Beach) -- read via in-app browser",
+      "summary": "Coastal town, Raigad district, ~95 km by road from Mumbai OR a fast-ferry hop Gateway of India/Bhaucha Dhakka -> Mandwa + 20 km road. Mumbai's default weekend beach escape + a belt of second homes/farm-stays. Town beach looks out at KOLABA FORT -- a low sea fort built under Shivaji, walk out across the sand ONLY at low tide; inside: gateways, freshwater wells, cannon, small temples. Quieter cleaner beaches around: Kihim, Awas, Varsoli, Akshi, Nagaon (+ Kashid ~30 km S), casuarina + coconut backed, seafood shacks, water-sports operators (jet-ski, banana-boat, parasailing). Inland: Kanakeshwar hill temple (long stepped climb), Phansad Wildlife Sanctuary. Fair-weather: Oct-May calm seas + swimming; monsoon rough/unsafe surf.",
+      "access": "Ferry: Mumbai-Mandwa RoPax/catamaran through the day (NOT in rough weather/monsoon), ~20-60 min + a ~20 km drive/shuttle to Alibaug. Road: ~95 km via Panvel + Pen, ~2.5h. Rail: Pen ~30 km.",
+      "bestSeason": "Oct-May calm seas/swimming/water sports; Jun-Sep rough dangerous surf, no water activities.",
+      "safetyNotes": "Well-developed heavily-visited weekend destination, resorts/villas/shacks used to families + couples + solo, busy sociable beach scene in season, easy frequent ferry + road to Mumbai; main beaches lively + staffed with water-sports operators by day. THE ARABIAN SEA HERE HAS STRONG CURRENTS + SUDDEN DROP-OFFS, MOST BEACHES HAVE NO LIFEGUARDS, DROWNINGS EVERY YEAR on the Alibaug-area beaches -- swim only in the shallow/patrolled zone with others, never alone, never after dark, never after drinking, stay out entirely in the monsoon. KOLABA FORT IS CUT OFF BY THE TIDE -- check the day's low-tide window, walk out + back within it, don't cross on a rising tide. Established water-sports operators + life jacket only; skip if the sea is choppy. Beaches empty + unlit after dark. Ferry stops in bad weather. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Murud-Janjira card (mh_batch10) links nearbyPlaces id 'alibaug' -- now resolved."
+    },
+    {
+      "name": "Ganpatipule",
+      "url": "https://maharashtratourism.gov.in/beach/ganpatipule/ (+ the beaches listing) -- read via in-app browser",
+      "summary": "Small beach village on the Konkan coast, Ratnagiri district, ~375 km from Mumbai / ~330 km Pune. Known for: an unusually clean/bright/wide white-sand beach backed by wooded Sahyadri foothills, AND the SWAYAMBHU GANPATI TEMPLE at the foot of Mangaleshwar hill -- a naturally formed rock worshipped as a 'self-manifested' Ganesh, said >400 years old, one of the most important Ganesh shrines in the Konkan; unusually the deity FACES WEST out to the Arabian Sea. A pradakshina path circles the hill; the Mangaleshwar hilltop gives a wide coast view. Traditional Konkani village character -- coconut + betel-nut groves; MTDC resort of Konkan-style cottages ON the beach; the open-air Prachin Konkan heritage museum; neighbouring poet's village Malgund. Jaigad Fort + Ratnagiri within a short drive. Big fair at the temple Feb-Mar. Nearby list: Jaigad Fort, Prachin Konkan Museum, Ganpatipule Wax Museum.",
+      "access": "Air: Ratnagiri Airport ~35 km (limited service); Mumbai/Pune the practical air gateways + a long road/rail leg. Rail: Konkan Railway to Ratnagiri ~35 km (~7h from Mumbai, scenic), then bus/taxi ~45 min. Road: ~375 km from Mumbai (NH66 + coast roads, 7-8h), ~330 km Pune, ~35 km Ratnagiri.",
+      "bestSeason": "Oct-Mar for beach + temple; Apr-Jun Alphonso mangoes; Jul-Sep green but rough sea, swimming unsafe.",
+      "safetyNotes": "Calm family-oriented pilgrimage-and-beach village, MTDC resort + homestays + temple set an orderly low-key tone; devotional + leisure crowd with women + families throughout; compact walkable core (temple/beach/museum); Konkani homestay hosts used to solo travellers. Sea has currents + no full lifeguard cover -- swim only in the shallow zone near others/flags, never alone/after dark, out entirely in the monsoon. Beach quiet + unlit at night. Mangaleshwar pradakshina/hill path fine by day, with others late afternoon. Coastal roads long/narrow/winding -- no night driving; dolphin/boat trips only in calm conditions with a licensed operator + life jackets. Temple dress code; Feb-Mar fair = big dense crowds. womenSafety.level Very Safe (8)."
     }
   ],
   "cardedThisTask": [
@@ -351,6 +368,8 @@
     "Tadoba-Andhari Tiger Reserve (mh_batch11)",
     "Nagpur (mh_batch11)",
     "Kolhapur (mh_batch12)",
-    "Panhala Fort (mh_batch12)"
+    "Panhala Fort (mh_batch12)",
+    "Alibaug (mh_batch13)",
+    "Ganpatipule (mh_batch13)"
   ]
 }
