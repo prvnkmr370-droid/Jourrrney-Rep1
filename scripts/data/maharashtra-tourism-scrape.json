@@ -44,10 +44,28 @@
       "openingNote": "Closed Tuesdays (Ajanta closed Mondays) -- plan the two around that. Photography allowed; interiors dim.",
       "safetyNotes": "ASI WHS, guards, ticketing, licensed guides, large mixed flow. Kailasa = stairs, uneven rock, a climb to the rim with UNPROTECTED edges -- care near drops. Hot/unshaded midday outside winter. Walk/auto to the Jain caves is a quieter stretch -- day only, auto if alone. Hawkers + unofficial guides in the car park -- licensed guide from the ticket office only.",
       "govPageError": "The maharashtratourism.gov.in Ellora page states Ellora 'dates back to the 6th century' only, and that 'John Smith' rediscovered Ellora -- the latter conflates it with Ajanta (Ellora was never lost). Card uses the well-established ~6th-10th c. range and omits the John-Smith-at-Ellora claim."
+    },
+    {
+      "name": "Daulatabad Fort (Devgiri)",
+      "url": "https://maharashtratourism.gov.in/fort/devgiri-daulatabad/ (read via in-app browser)",
+      "summary": "Hill fort ~16 km from Chhatrapati Sambhajinagar (Aurangabad) on the Ellora road, on a 200 m conical hill scarped smooth on its lower slopes. Built 12th c. as Deogiri by Bhillama V (Yadava dynasty), their capital. Defences: concentric walls, a deep moat (said to have held crocodiles), huge iron-spiked anti-elephant gates, a single narrow rock-cut switchback approach incl. the Andheri -- a pitch-dark spiral tunnel built to disorient/trap attackers. 1327: Sultan Muhammad bin Tughluq renamed it Daulatabad ('City of Fortune') and force-marched Delhi's population here as his capital; failed within a few years, court returned to Delhi. Later: Bahmanis -> Nizam Shahis of Ahmadnagar -> Mughals (17th c.) -> Marathas. Inside: Chand Minar (~64 m victory tower, 15th c., Alauddin Bahman Shah), Chini Mahal (palace turned state prison, held Abul Hasan Tana Shah of Golconda), Baradari pavilion, cannon towers, summit Deccan view.",
+      "access": "Air/Rail: Chhatrapati Sambhajinagar (Aurangabad) ~20-25 km. Road: ~16 km/~30 min from Aurangabad, on the way to Ellora (~15 km further); Khuldabad + Grishneshwar close. Usually done with Bibi ka Maqbara + Ellora on one Aurangabad day.",
+      "bestSeason": "Oct-Mar (cool); Apr-Jun brutal climb; monsoon slippery path.",
+      "safetyNotes": "Ticketed ASI monument, gate staff, steady mid-morning flow on the main route. Upper fort = long stairways, steep ramps, some exposed edges near the top. The Andheri is a pitch-dark uneven spiral tunnel -- carry your own light, go with others, be firm with men who 'light the way' then demand money at the exit. Hot/unshaded upper climb outside winter. Monkeys snatch food/bags. Morning visit; don't be on the upper fort near closing."
+    },
+    {
+      "name": "Bibi ka Maqbara",
+      "url": "https://maharashtratourism.gov.in/heritage/bibi-ka-maqbara/ (read via in-app browser; the gov page is thin -- ~3 sentences + how-to-reach)",
+      "summary": "Mausoleum in a formal Mughal garden ~3-5 km N of Chhatrapati Sambhajinagar (Aurangabad) city. Built in the 1660s for Dilras Banu Begum (titled Rabia-ud-Daurani), first wife of emperor Aurangzeb; commissioned by their son Prince Azam Shah. A deliberate smaller echo of the Taj Mahal -- raised plinth, central bulbous dome, four minarets, arched iwan, charbagh with a long water channel -- but on a tight budget: only the lower part is true marble (from near Jaipur), much of the upper structure is plastered brick/stucco. Hence 'Mini Taj' / 'Taj of the Deccan'. Grave in a sunken chamber open to the sky through a screen. ASI-protected; the city's most-visited single sight. Gov page how-to-reach: airport ~10 km, railway ~5.5 km, ~4 km from the city by ST bus or taxi.",
+      "access": "Air: Chhatrapati Sambhajinagar ~10 km. Rail: Chhatrapati Sambhajinagar ~5.5 km. Road: ~4 km from the city centre, on the north edge below the Aurangabad Caves. Combine with the Aurangabad Caves (~2 km up the hill) + Panchakki.",
+      "bestSeason": "Oct-Mar; Apr-Jun very hot; monsoon garden green.",
+      "safetyNotes": "Ticketed walled ASI monument in a garden, guards, constant family/tour-group flow, short central auto ride, nothing strenuous (level paths, low plinth). Ordinary city care with auto fares + valuables. Marble steps + tomb chamber slippery in monsoon / when washed. Entrance hawkers + freelance photographers -- firm 'no'. Daylight hours; surrounding roads quieten at night. Gov page names the occupant as 'Rabia-ud-Durrani' (her title); given name Dilras Banu Begum. Commission by Azam Shah + part-marble build are from standard accounts, not the thin gov page."
     }
   ],
   "cardedThisTask": [
     "Ajanta Caves (mh_batch1)",
-    "Ellora Caves (mh_batch1)"
+    "Ellora Caves (mh_batch1)",
+    "Daulatabad Fort / Devgiri (mh_batch2)",
+    "Bibi ka Maqbara (mh_batch2)"
   ]
 }
