@@ -26,6 +26,16 @@
   "travelThemes": ["Heritage, History and Culture", "Adventure Activities", "Wildlife & Safari", "Food & Culinary", "Tranquility", "Luxury and Grandeur"],
   "favouriteDestinationsOnHomepage": ["Mysuru", "Coorg", "Hampi", "Udupi", "Bengaluru"],
   "galleryHighlights": ["Black Panther / Kabini (Nagarhole)", "Maravanthe Beach", "Kambala (buffalo race)", "Mysore Palace illuminated", "Yakshagana folk art", "Vidhana Soudha", "Stone Chariot Hampi"],
+  "cardedThisTask": [
+    "Murudeshwara (ka_batch1)",
+    "Gol Gumbaz & Vijayapura / Bijapur (ka_batch1)",
+    "Chitradurga Fort (ka_batch2)",
+    "Udupi Sri Krishna Temple (ka_batch2)",
+    "Dharmasthala (ka_batch3)",
+    "Bidar Fort & City (ka_batch3)",
+    "Melukote (ka_batch4)",
+    "Agumbe (ka_batch4)"
+  ],
   "destinationsFound": [
     {
       "name": "Murudeshwara",
