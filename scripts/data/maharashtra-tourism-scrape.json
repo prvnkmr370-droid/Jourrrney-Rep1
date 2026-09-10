@@ -77,6 +77,22 @@
       "access": "Everything from the Gateway of India ferry jetty, Colaba, Mumbai. Launches ~every 30 min ~9 am-2 pm; last return ~5-5.30 pm; ~1h each way; ferry ~Rs 200-260 return + a small island/ASI entry fee. From the jetty a narrow-gauge toy train covers ~600 m; then ~120 steps up lined with stalls (palanquin for a fee). NO ferries in the monsoon (Jun-Sep, rough harbour).",
       "bestSeason": "Nov-Feb (cool, calm seas). Ferries suspended in the monsoon.",
       "safetyNotes": "Busy well-trodden day trip -- shared ferries, staffed ASI site, guides, all-day mixed flow, fixed route. Ferry = open boat on tidal water -- life jacket if provided, don't overcrowd the upper deck, sit when moving, skip it if the sea looks rough. The ~120 steps are lined with pushy stalls + monkeys -- food/phones out of reach, firm with hawkers. CONFIRM the last return ferry and be on it (island empties, no accommodation). Hot/exposed on the boat + steps. Dry bag for tickets/phone/cash."
+    },
+    {
+      "name": "Mumbai",
+      "url": "https://maharashtratourism.gov.in/district/mumbai-city/ (read via in-app browser)",
+      "summary": "Capital of Maharashtra, India's financial + entertainment hub, ~20 million on a peninsula in the Arabian Sea; grew from 7 fishing islands. Ptolemy noted a settlement ~150 CE; Portuguese from 1534; to the English Crown in 1661 (Catherine of Braganza's dowry to Charles II); British Bombay -> cotton/shipping/banking hub + freedom-movement centre; state capital from 1960. Tourist core at the southern tip: Gateway of India (1924, marks George V's 1911 visit), Chhatrapati Shivaji Maharaj Terminus (UNESCO, 1887, Victorian Gothic Revival + Indian), Kala Ghoda + CSMVS museum, Marine Drive ('Queen's Necklace'), Girgaon Chowpatty. Also Haji Ali Dargah (islet + causeway), Siddhivinayak temple (1801), dhobi ghats, Bandra sea-front, Juhu beach, Elephanta Island, Kanheri Caves in SGNP. Home of Hindi cinema. Street food: vada pav, pav bhaji, bhel/pani/sev puri, bombil fry. Best Oct-Feb (10-35 C); Jun-Sep heavy monsoon (floods); Mar-May hot/humid.",
+      "access": "Air: CSMIA (India's 2nd-busiest). Rail: long-distance at CSMT / Mumbai Central / Dadar / LTT; the suburban local network is the city's lifeline (ladies' compartments + Ladies Special). Road: Mumbai-Pune Expressway. In-city: metro (growing), suburban locals, app cabs, black-and-yellow taxis (south), autos (Bandra northwards only).",
+      "safetyNotes": "Widely regarded as one of the safest big Indian cities for women -- busy street life late in South Mumbai / Bandra / central areas; ladies' train compartments + Ladies Special; metro + app cabs freely used by women alone; Marine Drive / Colaba Causeway / Gateway crowded well after dark. BUT: rush-hour locals are dangerously overcrowded -- ladies' compartment, no footboard, don't fight the crush; late night prefer app cabs / ladies' compartment over an empty general one. Monsoon (esp. Jul-Aug) = serious flooding + local-train shutdowns -- check forecast, avoid low roads/subways in heavy rain, buffer time. Tide/ferry timings for Elephanta + Haji Ali. Standard bag-watch in station/market crowds; app cabs with live-tracking after dark. Emergency block uses RPF helpline 182 as the 5th entry."
+    },
+    {
+      "name": "Kanheri Caves",
+      "url": "https://maharashtratourism.gov.in/cave/kanheri/ (read via in-app browser)",
+      "summary": "100+ Buddhist rock-cut caves (gov page: 109) in a basalt hill inside Sanjay Gandhi National Park, ~6 km in from the Borivali gate, northern Mumbai. A working monastery + pilgrimage centre ~1st c. BCE - 10th c. CE (one of the longest continuously occupied Buddhist sites in western India), sustained by trade routes to Sopara + Kalyan ports. Mostly viharas -- cells with rock-cut beds around pillared halls, linked by stairways, served by cut channels + cisterns harvesting monsoon runoff. Showpiece: Cave 3, the Great Chaitya -- large apsidal prayer hall, ribbed vault, 2 rows of columns, stupa at the apse, colossal standing Buddhas flanking the porch. Other caves: seated/standing Buddhas, Bodhisattva reliefs, Brahmi inscriptions. (Gov page's 'Maurya and Gupta empires' / '1,100-1,000 years ago' is imprecise -- card uses the standard 1st c. BCE - 10th c. CE.)",
+      "access": "Borivali station (Western Line local) is the access point; autos to the SGNP Borivali gate; from the gate ~6 km to the caves by the park bus or a permitted vehicle (private cars not always allowed to the caves). ~15-20 km from CSMIA. Park entry fee + bus/vehicle charge.",
+      "bestSeason": "Nov-Feb; monsoon green but slippery rock + leeches.",
+      "safetyNotes": "Ticketed ASI monument inside a gated staffed national park, steady visitor/student/jogger flow esp. weekend mornings, Cave 3 area open + busy. SGNP HAS ONE OF THE HIGHEST LEOPARD DENSITIES anywhere near a city -- leopards active dawn/dusk/night on the forest roads + edges; visit in daylight, stay with others, keep to the marked route, DON'T walk the 6 km park road alone early or late. Upper caves = steep worn rock stairs, drops, no railings in places, slippery when wet. Quiet away from Cave 3 -- outlying cells with a companion. Own water + sun cover. Morning trip; back at the gate well before dusk. womenSafety.level Safe (score 7).",
+      "fixesDanglingRef": "Elephanta card (mh_batch3) links nearbyPlaces id 'kanheri-caves' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -85,6 +101,8 @@
     "Daulatabad Fort / Devgiri (mh_batch2)",
     "Bibi ka Maqbara (mh_batch2)",
     "Lonar Crater Lake (mh_batch3)",
-    "Elephanta Caves (mh_batch3)"
+    "Elephanta Caves (mh_batch3)",
+    "Mumbai (mh_batch4)",
+    "Kanheri Caves (mh_batch4)"
   ]
 }
