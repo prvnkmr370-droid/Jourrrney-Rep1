@@ -431,6 +431,24 @@
       "bestSeason": "Jul-Oct full waterfalls + green (slippery trails); Nov-Feb clear trekking; late May-Jun pre-monsoon fireflies.",
       "safetyNotes": "Established weekend-nature area, resorts/MTDC/organised camps/trek-base homestays used to solo + group travellers, big trekking-club presence on Kalsubai esp. weekends; lake/dam/falls ordinary sightseeing with others around by day; Bari is a well-organised trek hub (stalls, guides, homestays). KALSUBAI = a real climb with MULTIPLE FIXED IRON LADDERS on exposed rock -- dry season + group + guide, start early, 2+ L water, turn back if wet/misty/not confident; ladders dangerous when slippery, trail very crowded + slow on peak weekends. SANDHAN VALLEY = rappelling + wading a deep narrow canyon that can FLASH-FLOOD -- professional adventure operator only, never in/right after rain, never independently. Randha + Umbrella Falls have unfenced edges + slick rock -- well back, no entering the water below in strong flow (drownings at Sahyadri waterfalls in the monsoon). Remote, limited medical + patchy signal (hospitals Akole/Sangamner/Igatpuri). Narrow hill roads -- no night driving; buses infrequent. womenSafety.level Safe (7).",
       "fixesDanglingRef": "Nashik card (mh_batch7) links nearbyPlaces id 'bhandardara' -- now resolved."
+    },
+    {
+      "name": "Rajgad Fort",
+      "url": "https://maharashtratourism.gov.in/fort/rajgad/",
+      "summary": "The 'King of Forts', originally Murumbdev; captured by Shivaji in 1647 and capital of his state for 26+ years before the shift to Raigad in 1674. Rajaram born here, Saibai died here, the 1664 Surat loot stored here. ~1,376 m ASL, huge multi-armed hill ~40 km base diameter. Sections: Padmavati Machi (residence, Padmavati temple + lake + palace ruins), Sanjivani Machi (triple-layered fortification, west), Suvela Machi (east ridge, the Nedhe/elephant-hole rock window), Balekilla (citadel, highest point, royal quarters). Trek routes: Gunjavane (popular, moderate, to Padmavati Machi), Pali (steep, to Sanjivani Machi), Bhor/Bhutonde (gradual). Camping at Padmavati temple. ~60 km from Pune; best Oct-Feb, monsoon spectacular but slippery. Near Torna and Sinhagad.",
+      "access": "~60 km (~2h) from Pune to base villages (Gunjavane / Pali / Bhutonde); climb ~2-3 hours on foot. No vehicle access on the fort.",
+      "bestSeason": "October-February for safe, clear trekking; monsoon spectacular but ridges/steps slippery and mist whites out the machis",
+      "safetyNotes": "Strenuous multi-route trek; the machis run along narrow unfenced ridges with long drops (Suvela especially exposed); short chain-assisted scramble to Balekilla has real fall risk. Monsoon: extremely slippery, low visibility - go in a group, not solo, and don't push to Suvela/Balekilla in a whiteout. Remote, no reliable dry-season water on the fort, only basic help - carry 2-3 L water, food, torch, power bank; tell someone your route. Don't descend after dark. Camp in a group near the Padmavati temple.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"rajgad-fort\" reference created in the Sinhagad Fort card (mh_batch5)."
+    },
+    {
+      "name": "Malshej Ghat",
+      "url": "https://maharashtratourism.gov.in/nature/malshej-ghat/",
+      "summary": "Mountain pass in the Western Ghats on the Kalyan-Ahmednagar road (NH61), on the Thane/Pune/Ahmednagar boundary, ~130 km from both Mumbai and Pune. Monsoon showcase: dozens of seasonal waterfalls down sheer basalt cliffs, several landing on/beside the highway, in permanent spray and cloud. Pimpalgaon Joga Dam on the Pushpavati river draws migratory birds incl. flamingos in the monsoon (Flamingo Point, MTDC Flamingo Hill Resort). Forests hold leopard, Indian giant squirrel, barking deer. Trekking gateway: Harishchandragad (Konkan Kada overhanging cliff, water-filled Kedareshwar cave temple) and Ajoba fort climbed from near here; 800-year-old Kukdeshwar Shiva temple by the Kukadi river. Essentially a wet-season destination (Jul-Sep).",
+      "access": "~130 km (~3.5h) from Mumbai via Kalyan-Murbad-Saralgaon; ~130 km from Pune via Junnar. Nearest railhead Kalyan (~85 km). Own vehicle needed - limited public transport through the ghat.",
+      "bestSeason": "July-September for waterfalls, mist and flamingos; Oct-Feb pleasant but quiet; dry and unremarkable in summer",
+      "safetyNotes": "Primary risk is the road: in the monsoon the ghat is fog-bound, the surface runs with water/spray, visibility drops to metres, and cars stop suddenly at the falls causing jams and rear-end crashes - drive very slowly, keep back, use lights, don't stop on blind bends, avoid the ghat after dark / in heavy rain. Roadside waterfalls have slick rock and strong flow - people are swept off ledges every monsoon; don't climb the falls or wade fast water, keep children in hand. Thinly populated away from the main road with patchy signal - don't wander side tracks alone, be off isolated spots by dusk. Harishchandragad/Ajoba treks are long exposed cliff-edge climbs - group + guide only. Night accommodation scarce beyond the MTDC resort.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"malshej-ghat\" references created in the Shivneri Fort card (mh_batch10) and the Bhimashankar card (mh_batch15)."
     }
   ],
   "cardedThisTask": [
@@ -469,6 +487,8 @@
     "Grishneshwar Temple (mh_batch17)",
     "Shani Shingnapur (mh_batch17)",
     "Pandharpur (mh_batch18)",
-    "Bhandardara (mh_batch18)"
+    "Bhandardara (mh_batch18)",
+    "Rajgad Fort",
+    "Malshej Ghat"
   ]
 }
