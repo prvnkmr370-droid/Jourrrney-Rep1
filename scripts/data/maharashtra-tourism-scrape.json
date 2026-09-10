@@ -524,6 +524,24 @@
       "safetyNotes": "Viewpoints (Panchbol/Prospect, Hurricane, Vairat, Devi) have unfenced/poorly-fenced cliff edges and long drops - stay back, skip edges in mist/rain, don't climb railings. Town is inside Melghat Tiger Reserve forest - leopard, sloth bear, wild boar at the edges of town and on the ghat; no walking roads/trails at dawn/dusk/night, no driving the Paratwada ghat after dark. Melghat only on a booked safari/guided walk from Semadoh/Harisal. Malaria historically significant in the Melghat tract - repellent, cover up at dusk, consider prophylaxis for longer forest stays; carry basic meds and bottled water (per gov advisory). Facilities/transport thin after dark; nearest full hospital Amravati; patchy signal. Monkeys at viewpoints snatch food/bags.",
       "govPageError": "The Chikhaldara page gives conflicting altitudes (1,118 m and 1,188 m) and states Bhimkund is 'around 78 km from Chikhaldara' - Bhimkund is actually just outside the town, a short drive away. Card uses ~1,100 m and describes Bhimkund as near the town.",
       "fixesDanglingRef": "No prior dangling ref; new Vidarbha hill-station card added on the user's 'search for more places and add cards' instruction."
+    },
+    {
+      "name": "Tuljapur",
+      "url": "https://maharashtratourism.gov.in/temple/tuljapur/",
+      "summary": "Tulja Bhavani temple, Tuljapur, Dharashiv (Osmanabad) district, Marathwada. Among the 51 Shakti Peethas and the three-and-a-half Shakti Peethas of Maharashtra. Goddess Bhavani (fierce form of Parvati, 8 weapon-arms + abhayamudra), kuladevi of many Maratha clans and of Chhatrapati Shivaji - tradition: she gave him the 'Bhavani Talwar'. Black-stone Hemadpanti temple, 12th-c. origin (attributed to Kadamba/Maratha Mahamandaleshwar Maradadeva) on Yamunachala hill, Balaghat range; entrances Sardar Nimbalkar Gate and Raja Shahaji Mahadwar; inner shrines to Narasimha, Khandoba, Chintamani. Self-manifest ~3 ft idol, movable - ceremonially laid to rest (goddess's 'sleep') 3 times a year. Rituals: Kakad aarti, Abhishek, Oti Bharan, Gondhal folk performance. Navratri (Sep-Oct) the great festival; also Kojagiri Purnima, Makar Sankranti, Gudi Padwa. Near Akkalkot (~50 km), Naldurg Fort (~35 km), Pandharpur (~90 km), Solapur Fort.",
+      "access": "Solapur ~45 km (main railhead + new airport, limited), Dharashiv/Osmanabad ~25 km. Pune airport ~300 km; Hyderabad ~270 km. Frequent buses/shared taxis from Solapur. Town compact - temple, gateways, market all walkable from the bus stand.",
+      "bestSeason": "Nov-Feb for pleasant weather and calmer darshan; Navratri for fervour but immense crowds; summers hot (visit early/late)",
+      "safetyNotes": "Navratri, full-moon days and weekends bring very dense crowds and long approach queues - crush risk; prefer a weekday, keep children close, note exits, don't push. Pickpocketing/bag-slashing in festival crowds - minimal valuables, front-worn bag, phone zipped near the sanctum. Old-town lanes narrow and poorly lit at night - walk/shop by day, keep to busy stretches after dark. Summer heat on the open queue - water, go early/evening. Gondhal and night processions run late - attend with a group. Otherwise a very safe managed pilgrimage town with heavy festival police bandobast and quick-darshan lines.",
+      "fixesDanglingRef": "No prior dangling ref; major Shakti Peeth pilgrimage town added on the user's 'search for more places and add cards' instruction. Together with Mahur and the existing Kolhapur and Saptashrungi cards this completes the 3.5 Shakti Peethas of Maharashtra in the app."
+    },
+    {
+      "name": "Mahur",
+      "url": "https://maharashtratourism.gov.in/temple/mahur/",
+      "summary": "Mahur / Mahurgad, hill town in the forested north of Nanded district near the Telangana border. Renuka Devi temple (mother of Parashurama) - one of the three-and-a-half Shakti Peethas of Maharashtra; where the goddess's head is said to have fallen (old name Matapur / Matripura, 'city of the Mother'). Separate hill: Dattatreya temple - Mahur revered as the birthplace of Dattatreya (Brahma-Vishnu-Shiva), a major Datta-tradition centre; third hill: Anasuya Mata temple (Dattatreya's mother). Temples 12th-c. origin, Yadava/Bahmani additions; Mahurgad Fort ~2 km above the Renuka shrine. Festivals: Dussehra (biggest, grand fair), Chaitra Navratri, Datta Jayanti. District attractions: Unkeshwar sulphur hot springs (~50 km), Pandav Leni caves, Sahastrakund Waterfall on the Painganga (~80 km).",
+      "access": "Nanded Airport ~130 km (flights Mumbai/Hyderabad). Nearest railhead Kinwat ~50 km, then bus/taxi; Nanded the bigger station. Buses from Nanded, Yavatmal, Nagpur; NH161 + SH224. Last stretch winds through forested hills.",
+      "bestSeason": "Oct-Mar (cool) for the climbs and drive; Dussehra & Chaitra Navratri for festivals; avoid Apr-Jun heat",
+      "safetyNotes": "Hilltop temples reached by long steep step-flights and hill roads with inconsistent railings - climb steadily, hold rails, keep back from unfenced edges at the fort and terraces. Remote forested belt near the Telangana border with limited facilities - do all inter-town travel and the fort in daylight, keep to main roads and pilgrimage routes, don't wander into the forest. Monsoon steps/roads slippery and leech-ridden. Limited medical (Nanded is the referral city); patchy hill signal - carry meds, water, torch. Festival crowding on narrow stepped approaches is a crush risk - go early, keep children close.",
+      "fixesDanglingRef": "No prior dangling ref; Renuka Devi Shakti Peeth + Datta-kshetra pilgrimage town added on the user's 'search for more places and add cards' instruction."
     }
   ],
   "cardedThisTask": [
@@ -572,6 +590,8 @@
     "Saptashrungi",
     "Sevagram",
     "Radhanagari Wildlife Sanctuary",
-    "Chikhaldara"
+    "Chikhaldara",
+    "Tuljapur",
+    "Mahur"
   ]
 }
