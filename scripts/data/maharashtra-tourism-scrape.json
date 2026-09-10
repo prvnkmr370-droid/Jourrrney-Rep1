@@ -449,6 +449,24 @@
       "bestSeason": "July-September for waterfalls, mist and flamingos; Oct-Feb pleasant but quiet; dry and unremarkable in summer",
       "safetyNotes": "Primary risk is the road: in the monsoon the ghat is fog-bound, the surface runs with water/spray, visibility drops to metres, and cars stop suddenly at the falls causing jams and rear-end crashes - drive very slowly, keep back, use lights, don't stop on blind bends, avoid the ghat after dark / in heavy rain. Roadside waterfalls have slick rock and strong flow - people are swept off ledges every monsoon; don't climb the falls or wade fast water, keep children in hand. Thinly populated away from the main road with patchy signal - don't wander side tracks alone, be off isolated spots by dusk. Harishchandragad/Ajoba treks are long exposed cliff-edge climbs - group + guide only. Night accommodation scarce beyond the MTDC resort.",
       "fixesDanglingRef": "Resolves the nearbyPlaces id:\"malshej-ghat\" references created in the Shivneri Fort card (mh_batch10) and the Bhimashankar card (mh_batch15)."
+    },
+    {
+      "name": "Amboli",
+      "url": "https://maharashtratourism.gov.in/nature/amboli/",
+      "summary": "Sahyadri hill station in Sindhudurg district, ~690 m ASL, the last hill station before the Konkan coast. Very high rainfall - 'Cherrapunji of Maharashtra'. Developed by the British as a hill station / Vengurla-Belgaum trade halt in the 1880s (Col. Westrop); Sawant-Bhonsle summer retreat nearby. Major biodiversity: endemic Amboli bush frog, Malabar gliding frog, Malabar pit viper; per the tourism dept 35+ mammals, 200 birds, 150 butterflies, 45+ reptiles/amphibians. Sights: Amboli Waterfall (~3 km from bus stand), Nangarta/Nagartas Falls (~10 km, in a gorge), Hiranyakeshi cave temple (~5 km, source of the Hiranyakeshi river), viewpoints Mahadevgad / Kavlesad / Shirgaonkar / Sunset Point, Madhavgad fort ruins, the monsoon 'reverse waterfall' (Dhabdhaba), night nature/herping walks.",
+      "access": "Nearest airport Dabolim (Goa) ~101 km; nearest railway Sawantwadi Road (Konkan Railway) ~37 km. Road: Belagavi ~68 km, Kolhapur ~113 km, Panjim ~90 km, Mumbai ~490 km; final climb is the Amboli ghat.",
+      "bestSeason": "Winter (Nov-Feb) 10-25C for calm clear conditions; monsoon (Jun-Sep) for waterfalls/mist/frogs but slippery ghat roads and landslide risk; summer dry and hazy",
+      "safetyNotes": "Per the tourism dept 'things to keep in mind': monsoon heavy rain makes roads slippery with landslide risk - check weather, avoid risky areas in extreme conditions; dense-forest wildlife incl. reptiles - respect habitat, don't feed, keep distance; viewpoints and waterfalls have steep cliffs and slippery rock - no selfies at edges or near the falls; wear grippy footwear; carry rain gear, first-aid, insect repellent. Added: limited signal/medical (nearest hospitals Sawantwadi/Belagavi); do night walks only with a guide and torch, closed shoes; some viewpoints quiet midweek - visit in daylight, not wholly alone."
+    },
+    {
+      "name": "Harihareshwar",
+      "url": "https://maharashtratourism.gov.in/beach/harihareshwar/",
+      "summary": "Small coastal temple town on the Raigad coast (Shrivardhan taluka), ~200 km south of Mumbai, between two beaches under a headland of four sacred hills (Harihareshwar, Harshinachal, Brahmadri, Pushpadri). Harihareshwar temple (Shiva) with an adjoining Kalbhairav shrine visited first; present structure built 1723 under Bajirao Peshwa I; deity is the kuldaivat of the Peshwas - town called 'Dev Ghar' / 'Kashi of the South'. Famous seaside pradakshina path: climbs over the headland behind the temple and descends onto the rocky wave-washed shore, looping the base of the hills at sea level - must be timed to low tide. Savitri river estuary; Bagmandala-Bankot vehicle ferry to the Ratnagiri side (Bankot fort, Velas turtle beach, Kelshi). Paired with Shrivardhan (~17 km, first Peshwa's birthplace) and Diveagar (~40 km). Konkan cuisine; MTDC Harihareshwar Beach Resort on the sand.",
+      "access": "No nearby airport - road trip from Mumbai (~200 km, ~5h, via NH66/Mahad/Mhasla) or Pune (~180 km). Nearest railhead Mangaon (Konkan Railway) ~65 km, then bus/taxi via Mhasla.",
+      "bestSeason": "October-March (cool, dry); monsoon lush but rough seas and dangerous pradakshina rocks",
+      "safetyNotes": "Primary hazard is the seaside pradakshina: the lower path is over wave-washed rock, slippery and partly submerged at high tide - people have been swept off; do it only at low tide, in calm weather, in daylight, with others, and not at all in the monsoon. Konkan-beach currents and uneven sandbars - swim only where locals do, shallow and close to shore, never in the monsoon or after dark or after alcohol. Use registered boat/water-sport operators with life jackets only; dolphin trips are fair-season early morning. Quiet town after ~9-10 pm with few lit areas - keep beach walks to early evening on the populated stretch. Wear grippy footwear (not flip-flops) on the headland rocks.",
+      "govPageError": "The Maharashtra Tourism page for this destination is substantially wrong: it titles the place 'Harishchandreshwar Beach', repeatedly places it in Ratnagiri district, and gives the distance as ~450 km from Mumbai. Harihareshwar is in Raigad district (Shrivardhan taluka), ~200 km from Mumbai, and the shrine is the Harihareshwar / Kalbhairav temple (rebuilt 1723 under Bajirao Peshwa I). The page also splices in Diveagar parasailing. Corrected facts (district, distance, temple identity, Peshwa kuldaivat, four hills, pradakshina) taken from MTDC (mtdc.co) and standard references and used in the card.",
+      "fixesDanglingRef": "Resolves the nearbyPlaces id:\"harihareshwar\" reference(s) created in earlier Raigad-coast cards."
     }
   ],
   "cardedThisTask": [
@@ -489,6 +507,8 @@
     "Pandharpur (mh_batch18)",
     "Bhandardara (mh_batch18)",
     "Rajgad Fort",
-    "Malshej Ghat"
+    "Malshej Ghat",
+    "Amboli",
+    "Harihareshwar"
   ]
 }
