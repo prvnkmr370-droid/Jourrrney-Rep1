@@ -259,6 +259,23 @@
       "bestSeason": "Oct-Mar for the step climb; monsoon green + valley waterfalls but slippery mossy steps.",
       "safetyNotes": "Both ticketed ASI sites, steady visitor flow; Karla additionally busy with Ekvira Devi temple pilgrims. Approach to each = a steep flight of a few hundred stone steps -- slow, handrails where present, extra care in the monsoon (wet + mossy). Karla steps crowded + lined with insistent stalls + 'guide'/'pooja' offers; Ekvira temple crowd can be a crush on weekends + Navratri -- valuables secure, firm with touts. Bhaja much quieter -- explore outer caves + stupa area with a companion, mind unfenced hillside-path edges. Hot/exposed climb outside winter. womenSafety.level Safe (7).",
       "fixesDanglingRef": "Pune card (mh_batch5) links nearbyPlaces id 'karla-bhaja-caves' -- now resolved."
+    },
+    {
+      "name": "Raigad Fort",
+      "url": "https://maharashtratourism.gov.in/tourist-intrests/forts/ (#Raigad-Fort section; the dedicated /fort/raigad/ URL 404s) -- read via in-app browser",
+      "summary": "Hill fort (once Rairi) on an isolated Sahyadri spur above Mahad, Raigad district; ~820 m above base / 1,356 m ASL. Shivaji's CAPITAL: he was crowned king here June 1674; rebuilt + expanded by his chief engineer Hiroji Indulkar; seat of the Maratha state until the British took it 1818. Summit plateau = the outline of a planned capital: tall Nagarkhana gateway into the durbar area, long double-row market street (bazaar peth), ruined royal quarters + queens' apartments, Gangasagar tank, small Jagadishwar temple + Shivaji's samadhi beside it (bronze statue now). Takmak Tok = the execution cliff, a sheer largely-unguarded drop of 350+ m. Access: ~1,737 steps from Pachad, OR a ropeway (~750 m, a few minutes). Open ~9 am-5 pm. Best Oct-Mar.",
+      "access": "Air: Mumbai ~170 km / Pune ~130 km. Rail: Konkan Railway -- Veer or Mangaon (~25-40 km), then bus/taxi to Pachad. Road: Mumbai-Goa NH66 to Mahad then Pachad (~170 km from Mumbai, ~130 km Pune, ~80 km from Mahabaleshwar via the Ambenali Ghat). Drive to the ropeway base or Pachad.",
+      "bestSeason": "Oct-Mar clear/cool; monsoon greens + clouds the plateau but steps/trails slippery.",
+      "safetyNotes": "Ticketed ASI monument, deep significance in Maharashtra, steady respectful flow (school groups, families, esp. weekends + Shiv Jayanti + coronation anniversary); ropeway removes the long solo climb; main plateau circuit open + well-trafficked. TAKMAK TOK = a genuine hazard, a sheer several-hundred-metre drop with only a partial barrier + FATAL FALLS (some posing for photos) -- stay behind the fence, don't step onto the rock beyond it, hold children. Other plateau/bastion edges (Hirakani etc.) unguarded in places. The 1,737-step climb is long/steep/unshaded -- dawn start, 2+ L water, not alone in the heat; ropeway the safer default (shuts in high wind/heavy rain). Monsoon: steps + plateau rock + ropeway approach slippery, cloud cuts visibility to metres. Remote -- nearest hospital Mahad, patchy plateau signal. Daylight for the long road transfer. womenSafety.level Safe (7)."
+    },
+    {
+      "name": "Pratapgad Fort",
+      "url": "https://maharashtratourism.gov.in/fort/pratapgad/ (read via in-app browser)",
+      "summary": "Fort on a forested Western Ghats spur ~24 km from Mahabaleshwar; built by Shivaji 1656 to command the Par Pass + the upper Koyna/Nira valleys. Inseparable from the BATTLE OF PRATAPGAD, 10 Nov 1659: Shivaji met Afzal Khan (Bijapur Sultanate general) in a parley below the fort + killed him, then routed the leaderless Bijapuri army -- a decisive early Maratha victory in the Ghats. Two parts: Upper Fort ~1,080 m (bastions, watchtowers, huge Konkan + Sahyadri views) + Lower Fort down the slope (bastions, gateways, concealed sally ports). Inside: Bhavani temple (goddess-sword tradition), Kedareshwar Shiva shrine, a large equestrian Shivaji statue (added 1957). Afzal Khan's tomb on the hillside below. Access: a motorable road climbs almost to the gate, then a stepped stretch; or trek trails from the base. Best Oct-Feb.",
+      "access": "Air: Pune ~120 km (nearest). Rail: Wathar ~60 km closest; Satara/Pune more services. Road: ~24 km/~1h from Mahabaleshwar on a winding Ghat road (narrow, curvy, fogs in the monsoon); shared jeeps + taxis from Mahabaleshwar.",
+      "bestSeason": "Oct-Feb cool/clear/best views; monsoon green + misty but steps/trails slippery; early in summer.",
+      "safetyNotes": "Very popular, easily accessible -- road nearly to the top, Upper Fort circuit busy with families + tour groups (esp. weekends + Shiv Jayanti); only a short stepped climb from the car park (no real trek); stalls + guides + basic first aid. Upper Fort bastions/watchtowers on cliff edges with long drops + only low/broken parapets in places -- stay back, esp. for photos + in wind, children in hand. Stone steps + fort paths slippery in the monsoon + moss-slick year-round in shade. Ghat road from Mahabaleshwar narrow/winding/sheer drops -- experienced driver, not after dark, fog + slow in the monsoon. AFZAL KHAN'S TOMB area on the slope below has at times been a focus of political/communal sensitivity -- treat as a historic monument, keep opinions private, don't linger around a crowd/demonstration. Hot/exposed Upper Fort by midday outside winter. womenSafety.level Safe (7).",
+      "fixesDanglingRef": "Mahabaleshwar card (mh_batch6) links nearbyPlaces id 'pratapgad-fort' -- now resolved."
     }
   ],
   "cardedThisTask": [
@@ -277,6 +294,8 @@
     "Nashik (mh_batch7)",
     "Trimbakeshwar (mh_batch7)",
     "Lonavala & Khandala (mh_batch8)",
-    "Karla & Bhaja Caves (mh_batch8)"
+    "Karla & Bhaja Caves (mh_batch8)",
+    "Raigad Fort (mh_batch9)",
+    "Pratapgad Fort (mh_batch9)"
   ]
 }
