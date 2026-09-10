@@ -224,6 +224,23 @@
       "access": "Air: Pune ~120 km (nearest). Rail: Wathar/Satara ~55 km closest; Pune the usual approach. Road: ~120 km from Pune (via Wai), ~260 km from Mumbai (Expressway+Wai, or Mahad+Ambenali Ghat), ~20 km from Panchgani; last stretch winding Ghat road; Volvo/state buses from Pune + Mumbai.",
       "bestSeason": "Oct-Jun cool retreat + clear views; Jun-Sep full-flow waterfalls + dramatic mist but heavy rain + closed viewpoints.",
       "safetyNotes": "Long-established family hill station -- busy market, hotels used to solo/family travellers, steady tourist presence at main viewpoints + Venna Lake; taxi 'point tours' the standard regulated way to see the spread-out (10-20 km) viewpoints. CLIFF VIEWPOINTS (Arthur's Seat, Elephant's Head, Kate's Point etc.) have long largely UNFENCED drops + there have been FATAL FALLS, several while taking photos -- stay behind railings, well back, don't climb rocks past barriers, hold children. Monsoon: fogged in, rock/steps very slippery, several viewpoints close -- check + don't pass closure barriers. Ghat roads winding with sheer drops -- experienced driver, no night driving, slow in fog/peak weekends. Horse/stall operators pushy on price -- agree first. Waterfall pools in spate have drowned people -- no entering water in strong flow. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Nashik",
+      "url": "https://maharashtratourism.gov.in/districts/nashik/ (read via in-app browser)",
+      "summary": "On the Godavari, NW Maharashtra (river rises just up the road at Trimbakeshwar). One of the FOUR Kumbh Mela cities (Nashik-Trimbak Simhastha, every 12 years). Panchavati (north bank) tied to the Ramayana -- Rama/Sita/Lakshmana's exile; name 'Nashik' linked to Lakshmana cutting off Shurpanakha's nose. Ramkund (ashes immersion) on the Godavari; Kalaram temple = focus of Ambedkar's 1930 temple-entry satyagraha; Sita Gumpha (cramped cave shrine among the Panchavati banyans). Pandavleni / Trirashmi Caves on a hill at the city edge -- 24 Buddhist rock-cut caves ~1st c. BCE - 3rd c. CE, Dadasaheb Phalke memorial at the foot. 'Wine Capital of India' -- Sula, York + other estates around the city run tours + tastings (~half of India's vineyards/wineries). History: Satavahana (Krishna's cave inscription near Nashik), Abhira, Traikutaka, Kalachuri, Chalukya, Rashtrakuta, Yadava. Also birthplace/inspiration of Savarkar, V.V. Shirwadkar. Was spelled 'Nasik' until 1982.",
+      "access": "Air: Nashik (Ozar) Airport ~20 km, limited routes; Mumbai ~165 km the reliable gateway. Rail: Nashik Road station ~8 km from centre; frequent trains up the Kasara Ghat from Mumbai (~4h). Road: NH160 from Mumbai via Kasara/Igatpuri Ghat ~165 km/~4-4.5h; ~210 km Pune; ~28 km Trimbakeshwar; ~90 km Shirdi.",
+      "bestSeason": "Oct-Mar; monsoon swells the Godavari + can flood the ghats; grape/wine-tasting season peaks Jan-Mar. Rooms scarce + dear in Kumbh years.",
+      "safetyNotes": "Settled mid-sized city, ordinary busy public life, university crowd, well-run infrastructure at temples + wineries; autos/app cabs easy; Panchavati temple zone crowded + family-oriented by day; wine estates professionally run, used to solo visitors. Godavari ghats: slippery steps, keep back from deep/fast water -- the river runs high + strong in/just after the monsoon + the ghats have flooded. Ordinary city care with auto fares + valuables + lit streets late. KUMBH MELA YEAR = crowds on a completely different scale, dense + slow -- firm plan, marshalled routes, road closures, packed trains. Wineries: don't drive after tasting -- hired cab / designated driver / winery shuttle. Pandavleni climb = stone steps with some exposure. womenSafety.level Very Safe (8).",
+      "fixesDanglingRef": "Shirdi card (mh_batch6) links nearbyPlaces id 'nashik' -- now resolved."
+    },
+    {
+      "name": "Trimbakeshwar",
+      "url": "https://maharashtratourism.gov.in/temple/trimbakeshwar/ (read via in-app browser)",
+      "summary": "Temple town ~28 km from Nashik, at the foot of the ~1,295 m Brahmagiri hill from which the Godavari is traditionally said to rise. Shiva temple = one of the 12 Jyotirlingas; unusually the sanctum linga has THREE FACES (Brahma, Vishnu, Shiva), worn low by centuries of ritual bathing. Present black-basalt Hemadpanti temple raised by Peshwa Balaji Bajirao ~1740-60 on an older site; separately standing Nandi mandapa across the courtyard. Kushavarta Kund within the complex = the traditional origin of the Godavari, pilgrims bathe before darshan. Legend: sage Gautama Rishi + the cow-slaughter sin, Shiva releasing the Ganga as the Godavari. Jewelled crown claimed Pandava-era. Major centre for Narayan Nagbali / Kaal Sarp / Tripindi rituals -- many visitors come specifically for these multi-day ceremonies with local priests. Aartis: Kakad 5:30 am, Madhyan, Sayam, Shejarati 9 pm. Peak: Maha Shivaratri + the Nashik-Trimbak Kumbh.",
+      "access": "Air: Nashik (Ozar) ~40 km; Mumbai ~180 km. Rail: Nashik Road ~35 km. Road: ~28 km/~45 min from Nashik (constant MSRTC + shared taxis from Nashik CBS/Old stand); ~180 km Mumbai.",
+      "bestSeason": "Oct-Mar; monsoon greens the Brahmagiri hills but steps/trails slippery; Maha Shivaratri (Feb/Mar) peak.",
+      "safetyNotes": "Long-established temple town, women/families/ritual groups the main visitors, compact busy core, constant Nashik links (easy day trip), temple + kund staffed + crowded by day. Kushavarta Kund + wet temple floors slippery -- grippy easily-removed footwear, care on kund steps. BRAHMAGIRI CLIMB to the source = long, steep, exposed, hundreds of stone steps, stretches without railing -- daylight, water, not alone late, skip in heavy monsoon (steps stream with water). RITUAL ECONOMY is large + competitive -- engage only a recognised/registered priest for Nagbali/Kaal Sarp/Tripindi, agree the full cost in writing beforehand, be firm with touts at the bus stand + temple gate. Mondays + Maha Shivaratri extremely crowded. Base in Nashik for a comfortable stay. womenSafety.level Safe (7)."
     }
   ],
   "cardedThisTask": [
@@ -238,6 +255,8 @@
     "Pune (mh_batch5)",
     "Sinhagad Fort (mh_batch5)",
     "Shirdi (mh_batch6)",
-    "Mahabaleshwar (mh_batch6)"
+    "Mahabaleshwar (mh_batch6)",
+    "Nashik (mh_batch7)",
+    "Trimbakeshwar (mh_batch7)"
   ]
 }
