@@ -95,12 +95,24 @@
       "name": "Maheshwar",
       "url": "https://www.mptourism.com/destination-maheshwar.php",
       "summary": "Narmada-bank town, Khargone dist., ~90 km from Indore, ~40 km from Mandu. 18th-c. capital of Ahilyabai Holkar: Ahilya Fort + Rajwada palace; carved sandstone ghats with chhatris + evening aarti; Baneshwar temple on a river rock; centuries-old handloom centre for the Maheshwari saree (Rehwa Society in the fort). Ahilya Fort heritage hotel + MP Tourism Narmada Retreat. Nearest rail Barwaha ~40 km / Indore. Best Oct-Mar; summer to ~46 C."
+    },
+    {
+      "name": "Pench",
+      "url": "https://www.mptourism.com/destination-pench.php",
+      "summary": "Tiger reserve straddling MP-Maharashtra border (Seoni/Chhindwara dist.), on the Pench river; the 'Jungle Book' country (Seoni hills, Alikatta). Tigers, leopard, dhole, gaur, cheetal, sambar, 280+ birds incl. 4 vulture species. MP-side gates Turia (main), Karmajhiri, Jamtara; buffer night safari. Book via forest.mponline.gov.in. Open ~1 Oct-30 Jun, closed monsoon. Nagpur ~90-130 km (nearest airport/rail); Jabalpur ~200 km."
+    },
+    {
+      "name": "Panna",
+      "url": "https://www.mptourism.com/destination-panna.php",
+      "summary": "Tiger reserve in Vindhya hills (Panna/Chhatarpur dist.), ~25 km from Khajuraho, on the Ken river. Tigers reintroduced from ~2009 after local extinction -- a noted recovery story. Leopard, sloth bear, wild dog, wolf, gharial + mugger croc in the Ken, 7 vulture species, 200+ birds. Gates Madla + Hinauta; Ken boat rides. Pandav Falls (inside park) + Raneh Falls Ken canyon ('Grand Canyon of India') nearby. Open ~Oct-Jun. Entry fee cited: weekday Rs 2450 / weekend Rs 3050. Khajuraho airport + rail ~25 km."
     }
   ],
   "cardedThisTask": [
     "Bhimbetka (mp_batch1)",
     "Bhedaghat (mp_batch1)",
     "Omkareshwar (mp_batch2)",
-    "Maheshwar (mp_batch2)"
+    "Maheshwar (mp_batch2)",
+    "Pench National Park (mp_batch3)",
+    "Panna National Park (mp_batch3)"
   ]
 }
