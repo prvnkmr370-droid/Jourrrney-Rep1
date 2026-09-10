@@ -119,6 +119,23 @@
       "summary": "Satpura Tiger Reserve in the Satpura hills, Narmadapuram (Hoshangabad) dist., below Pachmarhi; the Denwa river and the Tawa reservoir/dam along its edge, Bori Sanctuary attached. One of the very few Indian reserves allowing walking safaris on foot (guided, single file, forest guard + guide), plus canoe safaris on the Denwa, cycling, boat safaris, jeep drives, buffer night safari. Reached from the Madai (Madhai) gate by crossing the Denwa backwater by boat. Tiger, leopard, sloth bear, wild dog, gaur, sambar, chital, nilgai, Indian giant squirrel, 300+ birds, mugger crocodile on the Denwa. Quieter and wilder-feeling than the big-name parks. Open ~1 Oct-30 Jun, closed monsoon; Oct-Mar best.",
       "access": "Air: Bhopal (~120-130 km). Rail: Pipariya (~50 km), Itarsi (~70 km, major junction), Narmadapuram (~25 km). Road: Madai is on the Pipariya-Bhopal road; last leg is a boat across the Denwa. Pachmarhi ~100-114 km.",
       "safetyNotes": "Regulated reserve; every activity runs with a compulsory forest guide (walks also with an armed forest guard) on fixed routes/timings. Walking safaris put you on foot in tiger/leopard/sloth-bear habitat -- single file behind the guard, silence, no straying; sloth bears the main hazard. Canoe/boat safaris on water with muggers -- life jacket, stay seated. Dawn/dusk cold in winter. Permits limited, booked online in advance. Monsoon closure (~Jul-Sep)."
+    },
+    {
+      "name": "Indore",
+      "url": "https://www.mptourism.com/destination-indore.php",
+      "summary": "Madhya Pradesh's largest city and commercial capital, on the Malwa plateau. 18th-c. Holkar (Maratha) capital: the seven-storey Rajwada palace facade near Khajuri Bazaar; Lal Bagh Palace (built 1886-1921, ~71 acres, European style); Kanch Mandir (glass-and-mirror Jain temple by Seth Hukumchand); Krishnapura Chhatris (carved sandstone royal cenotaphs on the Khan riverbank); Central Museum (Gupta-to-Parmara sculpture, est. 1929). Temples: Khajrana Ganesh (built by Ahilyabai Holkar, 1735), Bada Ganpati (8 m idol, 1875), Annapurna. Food city: Sarafa Bazaar jewellery market turns into an all-veg night street-food market ~9 pm-1 am; Chhappan Dukan (56 Shops) eating street; signatures poha-jalebi, bhutte ka kees, mawa bati, Indori namkeen. India's cleanest city (Swachh Survekshan) for years running. Base for Mandu/Maheshwar/Omkareshwar/Ujjain.",
+      "access": "Air: Devi Ahilyabai Holkar Airport ~8-10 km W of centre; MP's busiest, links to Delhi, Mumbai, Bengaluru, Hyderabad, Pune, Ahmedabad etc. Rail: Indore Junction, central; direct trains from Delhi/Mumbai. Road: NH-3 (Agra-Mumbai) x NH-59 (Ahmedabad-Indore); Delhi-Mumbai Expressway; ~3.5h from Bhopal, ~1h Ujjain, ~2h Mandu/Maheshwar. Sarwate + Gangwal bus stands.",
+      "bestSeason": "Oct-Mar (~12-30 C); summers hot to low 40s C.",
+      "safetyNotes": "Regarded as one of central India's more relaxed big cities for women; busy family-oriented public life. Sarafa/Chhappan Dukan stay crowded with families late into the night. Plentiful app cabs/autos, iBus BRT. Normal big-city care: secure valuables in the tight Sarafa/Rajwada crowds, app cabs after dark, empty residential streets late at night. Severe summer heat Apr-Jun."
+    },
+    {
+      "name": "Chitrakoot",
+      "url": "https://www.mptourism.com/destination-chitrakoot.php",
+      "summary": "Pilgrimage town on the Mandakini river in the northern Vindhyas, straddling the MP-UP line: the town is in Satna district, MADHYA PRADESH, adjoining Chitrakoot district, Uttar Pradesh, across the river (per district administration / Wikipedia). Tradition places much of the middle of Rama/Sita/Lakshmana's 14-year exile here (~11 of 14 years). Key sites: Ramghat (main ghats on the Mandakini, evening aarti, boats, Diwali Deepdan with 1000+ floated lamps); Kamadgiri (forested hill = Rama, ~5 km barefoot parikrama past temples); Bharat Milap temple; Janki Kund (2 km from Ramghat, Sita's bathing spot); Sphatik Shila (rock with 'footprints' on the left bank); Hanuman Dhara (hilltop/cliff Hanuman temple); Gupt Godavari (cave system ~18 km out, on the UP side, wade through water inside). Busiest on Amavasya (new-moon) days and at Diwali.",
+      "access": "Rail: Chitrakoot Dham Karwi (CKTD) ~8-10 km, on the UP side, links to Delhi/Lucknow/Allahabad/Varanasi/Jhansi; Satna Junction ~75 km (~2h, far more trains, on Mumbai-Howrah line). Air: Prayagraj (Allahabad, Bamrauli) ~106-120 km; Khajuraho ~175-180 km. Road: autos/e-rickshaws/taxis link the scattered sites on both banks; half-day hired auto/taxi covers the circuit.",
+      "bestSeason": "Oct-Mar. Avoid peak summer and the monsoon -- the Mandakini has flooded the ghats and washed out the Ramghat bridge in heavy-rain years (e.g. 2016).",
+      "accommodationFromSite": "MPT Tourist Bungalow (INR 250-2,890), MPT Mandakini Resort (INR 200-2,290), plus many dharamshalas/ashram guesthouses near Ramghat.",
+      "safetyNotes": "Long-established family-oriented pilgrimage town; many women travel, in groups and with elders. Core around Ramghat busy pre-dawn to night aarti. Ordinary pilgrim-town care: valuables in crowds, fix auto/taxi fares, prefer hotel-arranged driver for the full-day circuit. Hanuman Dhara is a steep cliff climb; Kamadgiri parikrama is a long barefoot walk -- daylight only, carry water. Gupt Godavari = wading in a dark cave, go with the crowd. Monsoon flood risk. Don't drink river water."
     }
   ],
   "cardedThisTask": [
@@ -129,6 +146,8 @@
     "Pench National Park (mp_batch3)",
     "Panna National Park (mp_batch3)",
     "Kuno National Park (mp_batch4)",
-    "Satpura National Park & Tiger Reserve (mp_batch4)"
+    "Satpura National Park & Tiger Reserve (mp_batch4)",
+    "Indore (mp_batch5)",
+    "Chitrakoot (mp_batch5)"
   ]
 }
