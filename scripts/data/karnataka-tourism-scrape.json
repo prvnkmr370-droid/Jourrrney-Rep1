@@ -49,11 +49,31 @@
     "Devbagh Beach (ka_batch11)",
     "Keladi (ka_batch11)"
   ],
+  "cardedThisTask_round2": [
+    "Shravanabelagola (ka_batch15)",
+    "Somanathapura / Keshava Temple (ka_batch15)",
+    "Ranganathittu Bird Sanctuary (ka_batch16)",
+    "Mullayanagiri (ka_batch16)",
+    "Dandeli (ka_batch17)",
+    "Kudremukh (ka_batch17)",
+    "Sirsi (ka_batch18)",
+    "Banavasi (ka_batch18)",
+    "Kukke Subramanya (ka_batch19)",
+    "Mangaluru (ka_batch19)",
+    "BR Hills / Biligiriranga (ka_batch20)",
+    "Mekedatu & Sangama (ka_batch20)",
+    "Bannerghatta Biological Park (ka_batch21)",
+    "Ikkeri / Aghoreshwara Temple (ka_batch21)",
+    "Mahadeva Temple Itagi (ka_batch22)",
+    "Karwar (ka_batch22)"
+  ],
+  "karnatakaCoverageNote": "Karnataka total now 77 destinations (was 34 at task start; +43 added this task across 22 batches). All marquee sites plus a deep second tier are covered. Remaining site pages are minor local shrines/viewpoints with little verifiable imagery (Horanadu, Kalasa, Sagara-specific, Bhadra WLS, Om Beach as distinct from Gokarna, Balligavi, Sanganakallu, etc.) — treated as diminishing returns, same pattern as earlier Jharkhand work.",
   "deferredPendingBetterImages": [
     "Kateel (island Durga Parameshwari temple) - only low-res phone snaps on Commons",
     "Kurumgad Island - zero Commons images",
     "Barkur - fort/temple photos all sub-1000px",
-    "Shivagange - weak imagery, no scraped page yet"
+    "Shivagange - weak imagery",
+    "Sagara - Commons imagery thin / duplicates Sirsi Marikamba"
   ],
   "destinationsFound": [
     {
