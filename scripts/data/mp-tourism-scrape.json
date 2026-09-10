@@ -203,6 +203,22 @@
       "bestSeason": "Nov-Mar (winter); Madhav National Park closed in the monsoon (~Jul-Sep).",
       "safetyNotes": "Settled district town, ordinary public life, small tourist circuit (Chhatris, palace, park), on NH44 with frequent buses. Chhatris + Madhav Vilas Palace are ticketed staffed sites; MP Tourism runs lakeside accommodation. Madhav NP is leopard/sloth-bear/(recently) tiger habitat -- take park permission, keep to the designated route, stay in the vehicle, permitted times + guide where required. George Castle and lakeside points are quiet, lightly visited -- daylight, not entirely alone. Town market fine in the evening; outer/park-approach roads unlit -- taxi. Cold winter park mornings.",
       "fixesDanglingRef": "Kuno card (mp_batch4) links nearbyPlaces id 'shivpuri' -- now resolved."
+    },
+    {
+      "name": "Bateshwar (Batesara) Temple Group, Morena",
+      "url": "https://www.mptourism.com/destination-bateshwar.php (404 at time of scrape -- primary source: Wikipedia 'Bateshwar Hindu temples, Madhya Pradesh')",
+      "summary": "Field of ~200 small sandstone temples (of an originally larger number) on a rocky terrace in the Chambal ravines of Morena district, ~35 km N of Gwalior / ~30 km E of Morena town, near Padavali village. Gurjara-Pratihara empire, mostly 8th-10th c.; dedicated to Shiva, Vishnu, Shakti; a site inscription dates to Samvat 1107 (1050 CE). Collapsed after the 13th c. (earthquake or force, unclear); ASI reassembly stone-by-stone from ~2005 under K.K. Muhammed -- ~60 restored, work ongoing; among the largest groups of restored temples at one site in Asia. Reported cooperation of local dacoit gang (Nirbhay Singh Gujjar) during restoration. Usual same-trip pair: circular hilltop Chausath Yogini temple at Mitawali/Mitaoli (said to have influenced the Indian Parliament building's design) and the fortified Padavali (Garhi) Vishnu temple; Kakanmath Shiva temple near Sihoniya a further stop.",
+      "access": "Air: Gwalior ~40 km. Rail: Gwalior Junction ~40 km or Morena ~30 km (both on the Delhi-Mumbai main line), then a car. Road: no useful public transport -- hire a car in Gwalior/Morena; Mitawali-Padavali-Bateshwar form a ~10-15 km loop.",
+      "bestSeason": "Oct-Mar; ravine country very hot Apr-Jun.",
+      "safetyNotes": "ASI-managed sites with ground staff; the Chambal ravine belt once known for banditry is now ordinary daytime countryside, and domestic heritage/school groups visit regularly. BUT: remote, thinly populated, almost no signage, no public transport, few other visitors on a quiet day, patchy phone signal. Come with a hired car + driver arranged via a Gwalior hotel/known operator; keep strictly to daylight; be back toward Gwalior by mid-afternoon. Mitawali is a hilltop climb; the Bateshwar field is uneven partly-restored ground with loose stone. Carry own water/food/sun cover -- no shops or cafes. womenSafety.level set to Moderate (score 6) for the remoteness, not for any current threat."
+    },
+    {
+      "name": "Mandsaur",
+      "url": "https://www.mptourism.com/destination-mandsaur.php",
+      "summary": "Town in far-western MP near the Rajasthan border; the ancient Dashapura (named in Gupta-era inscriptions, celebrated in Sanskrit poetry, 5th-6th c.). Pashupatinath temple on the Shivna river -- rare eight-faced / ashtamukhi Shiva linga, each face a different aspect (Bhava, Pashupati, Mahadeva, Ishaan, Rudra, Sharva, Ugra, Ashani); big crowds at Mahashivaratri. Sondani (just outside town): broken victory pillars raised by King Yashodharman ~528 CE marking his defeat of the Hun ruler Mihirakula, with colossal guardian figures. Mandsaur (Dashapura) Fort over the town. Gandhi Sagar dam ~60-75 km -- Chambal reservoir + adjoining wildlife sanctuary (ravine forest) + gorge cliff paintings/temples (Chaturbhujnath Nala).",
+      "access": "Air: Indore ~210 km (nearest major), Udaipur ~245 km. Rail: Mandsaur station on the Ratlam-Kota broad-gauge line; Ratlam ~90 km is the nearest big junction. Road: ~90 km Ratlam, ~50 km Neemuch, ~120 km Ujjain, ~60-75 km Gandhi Sagar; buses from Ratlam, Neemuch, Ujjain, Kota. In-town sites close together; car needed for Sondani + Gandhi Sagar.",
+      "bestSeason": "Oct-Mar; very hot Apr-Jun.",
+      "safetyNotes": "Settled district town, ordinary public life; Pashupatinath area busy and family-oriented morning to evening aarti. In-town sights close, auto-able by day. Sondani + fort quieter, lightly staffed -- daylight, not entirely alone. Gandhi Sagar is remote ravine country ~60-75 km out -- hired car, daylight, arrange wildlife-sanctuary entry via the forest office ahead. On any Gandhi Sagar reservoir boat: life jacket on before departure, no overloaded boats, not in wind/rough water (same prudence as the 2026 Bargi Dam incident). Severe Apr-Jun heat."
     }
   ],
   "cardedThisTask": [
@@ -223,6 +239,8 @@
     "Maihar (mp_batch8)",
     "Datia (mp_batch8)",
     "Bhojpur (mp_batch9)",
-    "Shivpuri (mp_batch9)"
+    "Shivpuri (mp_batch9)",
+    "Bateshwar Temple Group / Morena (mp_batch10)",
+    "Mandsaur (mp_batch10)"
   ]
 }
