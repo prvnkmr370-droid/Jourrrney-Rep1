@@ -309,6 +309,22 @@
       "access": "Air: Dr Babasaheb Ambedkar International Airport, ~8 km from centre; frequent direct flights nationwide. Rail: Nagpur Junction, one of India's busiest hubs (Delhi-Chennai x Mumbai-Howrah). Road: NH44 + NH53; Samruddhi Expressway to Mumbai in ~8h. In-city: Nagpur Metro (2 corridors), app cabs, autos.",
       "bestSeason": "Oct-Feb; Dussehra (Sep/Oct) for Dhammachakra Pravartan Din; Apr-Jun brutally hot (44-47 C in May, among India's worst pre-monsoon heat).",
       "safetyNotes": "Large orderly commercial/administrative city, ordinary busy public life, metro + app cabs + business hotels used to solo travellers; Deekshabhoomi + main sights ticketed/managed with steady respectful flows; central location + excellent transport = an easy low-stress base. Standard big-city care: app cabs w/ live-tracking after dark, valuables in Sitabuldi market + at Deekshabhoomi during the enormous Dussehra gathering, lit main roads late. Severe summer heat -- sightsee early/late, carry water. If heading to a reserve, note the wildlife-conflict caution there. Sitabuldi Fort army-administered, open only a few notified days/yr -- check first. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Kolhapur",
+      "url": "https://maharashtratourism.gov.in/districts/kolhapur/ (read via in-app browser)",
+      "summary": "SW Maharashtra near the Karnataka border; seat of a senior branch of the Bhosale Chhatrapatis, a princely state until 1947. Heart: the Mahalakshmi (Ambabai) temple -- black-stone, Chalukya-era origin, dedicated to the city's patron goddess; counted among the Shakti Peethas; Kirnotsav (sunlight aligns into the sanctum on certain days). Also: the Indo-Saracenic New Palace / Shahu Palace (built for Shahu Maharaj in the 1880s, now a museum -- NOTE the gov page loosely calls it 'Bhavani Mandap' which is actually a separate building), Rankala lakefront, Town Hall Museum (Indo-Saracenic), the wrestling akharas + Khasbag maidan (Kolhapur kushti). Shahu Maharaj -- pioneering social reformer. Take-home: hand-stitched leather KOLHAPURI CHAPPAL (GI) + ferociously spiced mutton (tambda/red + pandhara/white rassa) + Kolhapuri misal + Kolhapuri gur (jaggery). Short trips out: Panhala Fort (~18 km), Jyotiba temple (~18 km, Wadi Ratnagiri), Radhanagari/Dajipur WLS (~55 km, Indian bison/gaur).",
+      "access": "Air: Kolhapur Airport (limited routes); Pune ~230 km / Belagavi (Karnataka) ~110 km fallbacks. Rail: Kolhapur (CSMT Kolhapur) -- line terminus in the city; overnight Mahalaxmi Express from Mumbai (~10-12h); Miraj Jn ~45 km wider. Road: right on NH48 (Mumbai-Bengaluru) -- heavy frequent buses; ~4h from Pune, ~6h from Mumbai.",
+      "bestSeason": "Oct-Feb; monsoon lush + cooler; Apr-May hot. Rooms tighten around Navratri.",
+      "safetyNotes": "Settled prosperous city, ordinary busy public life, strong civic tradition, well-established pilgrim + tourist infrastructure; Mahalakshmi precinct heavily frequented by women + families day + night with queue management + security; autos/app cabs easy; core sights close. Standard city + temple-town care: valuables in the darshan queue + bazaar (busiest at Navratri), agree auto fares / app cabs, lit areas late. Temple very crowded Fri/Tue/full-moon + through Navratri -- go early. Panhala + Jyotiba are hill trips (see the Panhala card). Panchganga river can flood low areas Jul-Aug. womenSafety.level Very Safe (8)."
+    },
+    {
+      "name": "Panhala Fort",
+      "url": "https://maharashtratourism.gov.in/fort/panhala/ (read via in-app browser)",
+      "summary": "~18 km from Kolhapur on a long Sahyadri ridge; the LARGEST FORT IN THE DECCAN -- walls run ~14 km around a plateau that has held a town for centuries. Raised 12th c. by Shilahara ruler Bhoja II to watch the Deccan-Konkan trade roads; then Yadavas -> Bahmani -> Adil Shahi of Bijapur (the great bastions + underground water systems) -> Marathas. Famous 1660: Shivaji besieged here by Bijapur's Siddi Johar, slipped out by night for Vishalgad; his commander Baji Prabhu Deshpande held Pavan Khind to the last man so the king could escape. Landmarks: Teen Darwaza (triple gateway), three huge Ambarkhana granaries, Andhar Bavadi (3-storey underground well, secret siege water supply), Sajja Kothi (watch-pavilion, Shivaji's contemplation spot, valley view). Motorable road + a resident town + hotels on top -> doubles as a low-key hill retreat.",
+      "access": "Base is Kolhapur (no closer access). From Kolhapur station: bus or taxi up the ghat to Panhala town; ~18 km / ~35-45 min up a winding ghat road; the road goes right onto the plateau (NO CLIMB required); MSRTC buses run to Panhala town.",
+      "bestSeason": "Oct-Feb clear/cool/best views; monsoon lush + misty but plateau roads/steps slippery + views vanish.",
+      "safetyNotes": "A fort WITH A RESIDENT TOWN, motorable road onto the plateau, hotels/shops/local population -- far more populated + serviced than a typical hill fort; popular Kolhapur day trip + small hill retreat; no climb, central sites walkable among houses + eateries. Plateau-edge ramparts + bastions high with long drops + BROKEN OR MISSING PARAPETS in stretches -- stay back from the rim, care for photos + in wind, mind children. Andhar Bavadi = a deep 3-storey stepped well, dim + slippery lower levels, low light -- down carefully with someone, not if wet. Far monuments + quieter rampart stretches lightly visited on weekdays -- companion, daylight. Kolhapur ghat road winding -- not after dark / in heavy monsoon fog. womenSafety.level Safe (7)."
     }
   ],
   "cardedThisTask": [
@@ -333,6 +349,8 @@
     "Shivneri Fort (mh_batch10)",
     "Murud-Janjira Fort (mh_batch10)",
     "Tadoba-Andhari Tiger Reserve (mh_batch11)",
-    "Nagpur (mh_batch11)"
+    "Nagpur (mh_batch11)",
+    "Kolhapur (mh_batch12)",
+    "Panhala Fort (mh_batch12)"
   ]
 }
