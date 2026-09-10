@@ -67,13 +67,15 @@
     "Mahadeva Temple Itagi (ka_batch22)",
     "Karwar (ka_batch22)"
   ],
-  "karnatakaCoverageNote": "Karnataka total now 77 destinations (was 34 at task start; +43 added this task across 22 batches). All marquee sites plus a deep second tier are covered. Remaining site pages are minor local shrines/viewpoints with little verifiable imagery (Horanadu, Kalasa, Sagara-specific, Bhadra WLS, Om Beach as distinct from Gokarna, Balligavi, Sanganakallu, etc.) — treated as diminishing returns, same pattern as earlier Jharkhand work.",
+  "cardedThisTask_round3_rescued_deferrals": [
+    "Kateel Durga Parameshwari Temple (ka_batch23)",
+    "Barkur (ka_batch23)",
+    "Shivagange (ka_batch24)",
+    "Sagara / Sagar (ka_batch24)"
+  ],
+  "karnatakaCoverageNote": "Karnataka total now 81 destinations (was 34 at task start; +47 added this task across 24 batches). All marquee sites plus a deep second tier are covered. In a later pass, 4 of the 5 previously deferred destinations were rescued once better Wikimedia Commons imagery was found and visually verified (Kateel, Barkur, Shivagange, Sagara) — each carded with the Karnataka Tourism SOS helpline set. Kurumgad Island remains the only deferral (still zero usable Commons images). Other unlisted site pages are minor local shrines/viewpoints (Horanadu, Kalasa, Bhadra WLS, Om Beach as distinct from Gokarna, Balligavi, Sanganakallu, etc.) — treated as diminishing returns, same pattern as earlier Jharkhand work.",
   "deferredPendingBetterImages": [
-    "Kateel (island Durga Parameshwari temple) - only low-res phone snaps on Commons",
-    "Kurumgad Island - zero Commons images",
-    "Barkur - fort/temple photos all sub-1000px",
-    "Shivagange - weak imagery",
-    "Sagara - Commons imagery thin / duplicates Sirsi Marikamba"
+    "Kurumgad Island - zero Commons images (still not cardable)"
   ],
   "destinationsFound": [
     {
