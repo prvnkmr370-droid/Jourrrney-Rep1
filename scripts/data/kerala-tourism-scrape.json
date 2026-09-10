@@ -119,9 +119,11 @@
     "Kappad Beach (ke_batch10)",
     "Kuruva Island / Kuruvadweep (ke_batch10)",
     "Soochipara Falls / Sentinel Rock Waterfalls (ke_batch11)",
-    "Pookode Lake (ke_batch11)"
+    "Pookode Lake (ke_batch11)",
+    "Ambalappuzha Sree Krishna Temple (ke_batch12)",
+    "Chottanikkara Bhagavathy Temple (ke_batch12)"
   ],
-  "keralaCoverageNote": "Kerala total now 50 destinations (was 28 at task start; +22 added this task across 11 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
+  "keralaCoverageNote": "Kerala total now 52 destinations (was 28 at task start; +24 added this task across 12 batches). Pipeline per batch: WebFetch/Google-snippet scrape of keralatourism.org -> Wikimedia Commons image search + imageinfo -> visual verification of every image -> reject mismatches -> curl-verify CDN thumb URLs (HTTP 200) -> write scratch -> splice before final '\\n];' -> tsc --noEmit + grep ',,' -> commit+push. Kerala Tourism 24x7 helpline set (112 / 1-800-425-4747 / 1091 / 1098 / +91 471 232 1132) embedded in every new card's womenSafety.emergencyContacts; wildlife/forest cards swap the last line for a Forest Department contact.",
   "destinationsScraped": [
     {
       "name": "Kollam",
@@ -186,6 +188,14 @@
     {
       "name": "Pookode (Pookkot) Lake",
       "url": "https://www.keralatourism.org/destination/pookkot-lake-wayanad/220/"
+    },
+    {
+      "name": "Ambalappuzha Sree Krishna Temple",
+      "url": "https://www.keralatourism.org/destination/ambalappuzha-sree-krishna-temple/66/"
+    },
+    {
+      "name": "Chottanikkara Bhagavathy Temple",
+      "url": "https://www.keralatourism.org/kochi/chottanikkara-temple-ernakulam.php"
     }
   ]
 }
