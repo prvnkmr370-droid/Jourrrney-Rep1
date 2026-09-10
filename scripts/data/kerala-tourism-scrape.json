@@ -50,5 +50,24 @@
     "Nelliyampathy", "Poovar", "Munroe Island", "Thenmala eco-tourism", "Neelakurinji (Munnar)",
     "Palakkad Fort", "Bekal (already have fort - Kappil beach nearby)", "Kannur (Muzhappilangad drive-in beach, St Angelo Fort, Theyyam)"
   ],
-  "destinationsScraped": []
+  "cardedThisTask": [
+    "Kollam & Ashtamudi Lake (ke_batch1)",
+    "Fort Kochi (ke_batch1)",
+    "Kolukkumalai Tea Estate (ke_batch2)",
+    "Guruvayur (ke_batch2)",
+    "Palakkad Fort / Tipu's Fort (ke_batch3)",
+    "Malampuzha Dam & Garden (ke_batch3)",
+    "Chandragiri Fort, Kasaragod (ke_batch4)",
+    "Nelliyampathy Hills (ke_batch4)"
+  ],
+  "destinationsScraped": [
+    { "name": "Kollam", "url": "https://www.keralatourism.org/destination/kollam/587/" },
+    { "name": "Fort Kochi", "url": "https://www.keralatourism.org/destination/fort-kochi/422/" },
+    { "name": "Kolukkumalai tea garden", "url": "https://www.keralatourism.org/destination/kollukkumallay-tea-garden-munnar/106/" },
+    { "name": "Guruvayoor", "url": "https://www.keralatourism.org/destination/guruvayoor/74/" },
+    { "name": "Tipu's Fort Palakkad", "url": "https://www.keralatourism.org/destination/tipus-fort-palakkad/130/" },
+    { "name": "Malampuzha Dam & Garden", "url": "https://www.keralatourism.org/destination/malampuzha-dam-garden-palakkad/124/" },
+    { "name": "Chandragiri Fort", "url": "https://www.keralatourism.org/destination/chandragiri-fort-a-scenic-stronghold-of-history-and-nature/739/" },
+    { "name": "Nelliyampathy Hills", "url": "https://www.keralatourism.org/destination/nelliyampathy-hills-palakkad/152/" }
+  ]
 }
