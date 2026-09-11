@@ -542,6 +542,25 @@
       "bestSeason": "Oct-Mar (cool) for the climbs and drive; Dussehra & Chaitra Navratri for festivals; avoid Apr-Jun heat",
       "safetyNotes": "Hilltop temples reached by long steep step-flights and hill roads with inconsistent railings - climb steadily, hold rails, keep back from unfenced edges at the fort and terraces. Remote forested belt near the Telangana border with limited facilities - do all inter-town travel and the fort in daylight, keep to main roads and pilgrimage routes, don't wander into the forest. Monsoon steps/roads slippery and leech-ridden. Limited medical (Nanded is the referral city); patchy hill signal - carry meds, water, torch. Festival crowding on narrow stepped approaches is a crush risk - go early, keep children close.",
       "fixesDanglingRef": "No prior dangling ref; Renuka Devi Shakti Peeth + Datta-kshetra pilgrimage town added on the user's 'search for more places and add cards' instruction."
+    },
+    {
+      "name": "Nanded",
+      "url": "https://maharashtratourism.gov.in/districts/nanded/",
+      "summary": "Large commercial + pilgrimage city on the Godavari, Marathwada. Guru Gobind Singh (10th Sikh Guru) made Nanded his home in 1708, declared the Guru Granth Sahib the eternal Guru here, and was cremated here. Takht Sachkhand Sri Hazur Abchalnagar Sahib, at the cremation site, is one of the five Takhts (highest seats of temporal authority in Sikhism) and the second-holiest Sikh city after Amritsar; present white-marble gilded-dome complex built 1830s under Maharaja Ranjit Singh. Cluster of riverside gurudwaras (Banda Ghat, Nagina Ghat, Hira Ghat, Shikar Ghat, etc.). Also Nanded (Nandgiri) Fort (Godavari on 3 sides), Kandhar Fort (Rashtrakuta, Krishna III, ~45 km), Hottal Chalukyan stone temple (Degloor taluka), Malegaon Khandoba cattle fair (Loha taluka, December - one of India's largest). District also holds Mahur (Renuka Devi Shakti Peeth).",
+      "access": "Shri Guru Gobind Singh Ji Airport, Nanded (connectivity fluctuates - Delhi/Amritsar direct at times). Hazur Sahib Nanded railway station (major, South Central Railway; Sachkhand Express to Amritsar/Delhi). Road ~600 km from Mumbai, ~250 km from Aurangabad, ~270 km from Hyderabad; NH161.",
+      "bestSeason": "Nov-Feb (cool); summers Mar-Jun very hot (>42C); Guru Gobind Singh Gurpurab and the December Malegaon fair are the big events",
+      "safetyNotes": "Takht complex is tightly managed (sewadars, CCTV, heavy festival security) - a calm, welcoming, very safe environment; langar and sarai lodging open to all; head covering required, footwear left at counters. Gurpurab and the December Malegaon (Khandoba) fair bring very large crowds - crush risk on narrow approaches/ghats, pickpockets - go early, keep children close. Wider city is an ordinary busy Marathwada city - traffic, lit main roads after dark, pre-book autos for night trains. Godavari ghats slippery and the river high/fast in the monsoon - don't wade in. Severe summer heat. Malegaon fair (~50 km) is a huge rural livestock event - go with a group, mind crowds and animals, not after dark.",
+      "govPageError": "The Nanded district page calls the city 'Maharashtra's runner-up biggest city' / 'second largest'. By population Nanded is well outside the state's top five (behind Mumbai, Pune, Nagpur, Nashik, Aurangabad and others). Card describes it simply as a major Marathwada city.",
+      "fixesDanglingRef": "No prior dangling ref; the 5th Sikh Takht / second-holiest Sikh city was missing from the app entirely - added on the user's 'search for more places and add cards' instruction. Also cross-links to the new Mahur card."
+    },
+    {
+      "name": "Lohagad Fort",
+      "url": "https://maharashtratourism.gov.in/fort/lohagad/",
+      "summary": "'Iron Fort', ~1,033 m in the Sahyadris near Malavli, between Lonavala and Pune - one of the most-climbed forts in Maharashtra. Held by Chalukyas/Yadavas/Bahmanis/Nizams/Mughals; taken by Shivaji 1648, ceded via the 1665 Treaty of Purandar, retaken 1670, used to store the Surat-raid treasure; Peshwa-era statesman Nana Phadnavis sheltered here and built its large tank and 16-sided step-well. 2019 discovery of a Jain Brahmi inscription (1st-2nd c. BCE) in a south-face cave. Four intact gateways - Ganesh, Narayan, Hanuman, Maha Darwaja - up to a broad plateau; the 'Vinchukada' (Scorpion's Tail) is a long narrow fortified spur with sweeping valley views. Pairs with the Bhaja Caves at its foot and the higher/harder Visapur Fort alongside. Part of the 2025 UNESCO 'Maratha Military Landscapes of India' inscription.",
+      "access": "Malavli railway station ~5-6 km (few trains stop - many alight at Lonavala and take a local/auto). Pune airport ~55-70 km. Road ~100 km (~2.5h) from Mumbai via the Expressway to Lonavala then Malavli; ~60 km from Pune. Motorable road to Lohagadwadi at the base cuts the climb to a short set of steps.",
+      "bestSeason": "Oct-Mar (cool, clear, still green); monsoon Jun-Sep popular and spectacular but trail and Vinchukada slippery/dangerous; summer treks only very early/late",
+      "safetyNotes": "The Vinchukada spur is narrow with sheer unfenced drops both sides - dangerously crowded and slippery in the monsoon, and an exposed-ridge lightning risk in a storm; walk slowly, keep off the edge, skip it in rain/wind/lightning, don't jostle. Stepped path and gateways slick in the monsoon and jam with weekend crowds - go early. Carry own water/food (only seasonal stalls on top; no shade in summer). Leeches in the monsoon; sudden cloud/wind on top. Descend well before dark - trail unlit, last road stretch rough. Otherwise a busy, well-trodden, easy-help fort close to Lonavala.",
+      "fixesDanglingRef": "No prior dangling ref; a top-tier accessible Sahyadri fort (and 2025 UNESCO Maratha Military Landscapes component) added on the user's 'search for more places and add cards' instruction. Cross-links to existing Lonavala and Karla-Bhaja cards."
     }
   ],
   "cardedThisTask": [
@@ -592,6 +611,8 @@
     "Radhanagari Wildlife Sanctuary",
     "Chikhaldara",
     "Tuljapur",
-    "Mahur"
+    "Mahur",
+    "Nanded",
+    "Lohagad Fort"
   ]
 }
