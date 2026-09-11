@@ -579,6 +579,24 @@
       "bestSeason": "Sep-Feb for pleasant trekking; Dec-Feb clearest skies/stargazing; monsoon Jun-Sep green but ladders and rock slippery/dangerous in wind and rain",
       "safetyNotes": "The iron ladders/railings on the final rock pitches are the main hazard - they bottleneck badly on weekends and at Navratri with two-way traffic on a single ladder, turn slippery and violently windy in the monsoon, and a fall there is serious. Wait your turn, three points of contact, don't climb them in rain/storm, avoid peak weekend hours. Summit is small, exposed, cold, with big drops off the temple platform - don't crowd edges or linger in bad weather. Pre-dawn sunrise climbs = doing the ladders in the dark (headtorch essential, group/guide advised). Limited water/food (seasonal stalls), remote, patchy signal, nearest hospital well away. Monsoon leeches and low visibility; Navratri heavy pilgrim crowds incl. elderly on a route not built for the volume.",
       "fixesDanglingRef": "No prior dangling ref; the highest point in Maharashtra was missing - added on the user's 'search for more places and add cards' instruction. Cross-links to the existing Bhandardara card and the new Harishchandragad card."
+    },
+    {
+      "name": "Vasai Fort",
+      "url": "https://maharashtratourism.gov.in/fort/vasai/",
+      "summary": "Fort Bassein, on the Vasai Creek ~50 km north of Mumbai (Palghar district). 110-acre walled colonial city, mostly ruined and overgrown. 15th-c. maritime/shipbuilding hub under Bahadur Shah of Gujarat; Portuguese took it in the 1530s and rebuilt it as the fortified capital of their 'Province of the North' ('Baçaim the Great') - cathedrals, convents, colleges, mansions; walls >4.5 km, sea on 3 sides, 11 bastions. Marathas under Chimaji Appa stormed it 1739 after a long siege; British held it in the 19th c. Today: roofless Baroque church facades, arched gateways, rounded bastions, banyan roots through the masonry. Easy half-day trip from Mumbai; popular film location; large stretches overgrown and unattended. Near Arnala Fort (~13 km, island), Tungareshwar Wildlife Sanctuary, St Thomas Church.",
+      "access": "Vasai Road station (Western Railway junction, ~1-1.5h from Mumbai on the local), then ~15-20 min auto/bus to Vasai Killa. ~50 km road from Mumbai. CSMIA airport.",
+      "bestSeason": "Oct-Feb (cool, dry) for walking the ruins and photography; monsoon green but slippery; summers hot/humid",
+      "safetyNotes": "Poor reputation for lone visitors: very large, much of it overgrown and screened from view, little lighting/security away from the entrance, and reports of harassment and robbery of solo visitors in the isolated sections. Do NOT go alone (especially women) - stay in a group, keep to the frequented church cluster and the road-side ramparts, leave well before dusk (far bastions and creek side get deserted and are used by drinking groups in the evening). Ruins genuinely dilapidated: crumbling walls/vaults, unfenced bastion edges/drops, old wells and cisterns hidden in undergrowth. Snakes in the scrub - closed shoes, long trousers. Monsoon slippery; little shade or stalls - carry water. womenSafety scored 4 / 'Exercise Caution' - lowest of the Maharashtra cards, deliberately.",
+      "fixesDanglingRef": "No prior dangling ref; major Portuguese-era heritage fort near Mumbai added on the user's 'search for more places and add cards' instruction. Emergency block 5th slot = 182 RPF Helpline (Mumbai-metro rail context, matching the Mumbai card)."
+    },
+    {
+      "name": "Jawhar",
+      "url": "https://maharashtratourism.gov.in/nature/jawhar/",
+      "summary": "Small hill station in Palghar district, ~518 m, Western Ghats north of Mumbai; seat of one of the very few tribal-ruled princely states in India - founded 1343 by Raja Jayaba Mukne, ruled by his line (Mukne dynasty) until Independence. Landmark: Jai Vilas Palace (Raj Bari), faded early-20th-c. neoclassical pink-stone palace on a hilltop. Shirpamal - stone platform where Shivaji is said to have camped en route to raid Surat. Heartland of WARLI painting (white-on-earth geometric tribal art); Warli-art villages, artists sell from home. Surrounding hills: Dabhosa Waterfall (~300 ft, Lendi river, ~20 km, adventure resort - rappelling/kayaking/valley crossing), Kalmandavi Falls (multi-tier, ~8 km), Khad-Khad Dam (~11 km, Domihira river), Hanuman/Sunset Point, Kokan Kada viewpoint.",
+      "access": "Mumbai ~180 km (~4h), Nashik ~80 km (~2.5h). Nearest railhead Igatpuri ~60 km, then bus/taxi. Nashik airport ~80 km. A car/hired driver is practical - the palace, waterfalls and viewpoints are spread over 8-25 km of hill roads with little public transport.",
+      "bestSeason": "Oct-Feb (pleasant, clear); monsoon Jul-Sep fills the falls and greens the hills but heavy rain/fog disrupts travel; summers warm",
+      "safetyNotes": "Waterfalls are the real hazard: Dabhosa ~300 ft, Kalmandavi drops into a deep gorge - adventure activities only with the licensed resort operators/harnesses, don't climb near the lip or wade fast water, extra care on slick monsoon rock (drownings occur at such pools). Viewpoints (Hanuman Point, Kokan Kada) and Shirpamal have unfenced edges/long drops. Outlying sights are on quiet hill roads with leopard in the forest, little traffic/signal - go with company or a local driver, in daylight, no lone forest tracks or after dark. Monsoon Ghat roads winding/foggy/landslip-prone - no night driving. Limited medical (Nashik referral). Respect the Warli villages - permission before photographing people/homes; buy art directly. Otherwise a quiet, low-crime, welcoming tribal hill town.",
+      "fixesDanglingRef": "No prior dangling ref; Warli-art tribal hill town / Mukne princely-state seat added on the user's 'search for more places and add cards' instruction - adds Palghar-district and tribal-culture coverage."
     }
   ],
   "cardedThisTask": [
@@ -633,6 +651,8 @@
     "Nanded",
     "Lohagad Fort",
     "Harishchandragad",
-    "Kalsubai"
+    "Kalsubai",
+    "Vasai Fort",
+    "Jawhar"
   ]
 }
