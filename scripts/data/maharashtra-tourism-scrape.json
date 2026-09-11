@@ -561,6 +561,24 @@
       "bestSeason": "Oct-Mar (cool, clear, still green); monsoon Jun-Sep popular and spectacular but trail and Vinchukada slippery/dangerous; summer treks only very early/late",
       "safetyNotes": "The Vinchukada spur is narrow with sheer unfenced drops both sides - dangerously crowded and slippery in the monsoon, and an exposed-ridge lightning risk in a storm; walk slowly, keep off the edge, skip it in rain/wind/lightning, don't jostle. Stepped path and gateways slick in the monsoon and jam with weekend crowds - go early. Carry own water/food (only seasonal stalls on top; no shade in summer). Leeches in the monsoon; sudden cloud/wind on top. Descend well before dark - trail unlit, last road stretch rough. Otherwise a busy, well-trodden, easy-help fort close to Lonavala.",
       "fixesDanglingRef": "No prior dangling ref; a top-tier accessible Sahyadri fort (and 2025 UNESCO Maratha Military Landscapes component) added on the user's 'search for more places and add cards' instruction. Cross-links to existing Lonavala and Karla-Bhaja cards."
+    },
+    {
+      "name": "Harishchandragad",
+      "url": "https://maharashtratourism.gov.in/fort/harishchandragad/",
+      "summary": "Large high fort-plateau ~1,422 m in the Western Ghats, Ahmednagar district, near Malshej Ghat. History back to the 6th-c. Kalachuris; Mughals, Marathas; yogi Changdev (14th c.) meditated here. Three draws: Hemadpanti Harishchandreshwar Temple (Shiva, large Nandi) in meadows; Kedareshwar cave (big Shiva-linga in freezing waist/chest-deep water, four Yuga pillars - only one still standing); Konkan Kada - a vast semicircular OVERHANGING cliff towards the Konkan, famous for sunsets and the Brocken-spectre 'glory'. Taramati peak (highest point) - views to Alang-Madan-Kulang, Kalsubai, Mumbai lights. Routes: Khireshwar (popular, moderate-difficult, ~7 km, 6-7 h, via Tolar Khind exposed patch), Pachnai (easiest, ~3 km, 2-3 h, families), Nalichi Vaat (extreme, ~8 km, 8-10 h, rock climbing + ropes, rockfall). Near Malshej Ghat, Bhandardara, Ajoba fort.",
+      "access": "Mumbai ~170 km via NH160/Malshej to Khireshwar; Pune ~120 km via Narayangaon-Otur. Railheads Kalyan (Mumbai side) and Igatpuri (Nashik side); shared jeeps to base villages Khireshwar / Pachnai. No close airport.",
+      "bestSeason": "Oct-Feb (cool, green, clear, best for camping/stargazing); monsoon Jun-Sep magical but slippery and Nalichi Vaat genuinely dangerous (rockfall, wind); summer hot/dry",
+      "safetyNotes": "Konkan Kada is an OVERHANGING unfenced cliff with a several-hundred-metre drop - deaths have occurred; don't sit on the lip, lean out, or approach it in wind/mist/dark. Kedareshwar cave linga = wade through waist/chest-deep VERY COLD water over slippery rock - skip if unsure, avoid in the monsoon. Large featureless plateau - trekkers get lost in fog between temple/cave/Konkan Kada/Taramati; carry offline map/GPS, move in a group, don't wander at dusk. Nalichi Vaat = technical, rockfall, rope sections - experienced climbers + guide only, never solo/monsoon; even Khireshwar has an exposed patch at Tolar Khind. Remote wilderness: no medical, patchy signal, cold exposed nights, seasonal water only, leopard/wildlife in forest sections - camp in a group near the temple.",
+      "fixesDanglingRef": "Resolves the hidden nearbyPlaces 'Harishchandragad'/'Harishchandragad Fort' references in the Malshej Ghat and Bhimashankar cards. Cross-links to Malshej Ghat, Bhandardara and the new Kalsubai card."
+    },
+    {
+      "name": "Kalsubai",
+      "url": "https://maharashtratourism.gov.in/nature/kalsubai/",
+      "summary": "Highest peak in Maharashtra, 1,646 m (5,400 ft), above the Bhandardara region of Ahilyanagar (Ahmednagar) district - 'Everest of Maharashtra'. Named for a village girl, Kalsubai, said to have vanished on the summit; small summit temple, pilgrims esp. at Navratri. Trek from Bari village, ~3 km one way (~6 km round trip), 3-4 h up; the final steep pitches are on iron ladders/railings bolted to near-vertical rock. Summit views: Bhandardara backwaters, Ratangad, Alang-Madan-Kulang, the Sahyadri crest. Often called beginner-friendly and in fair weather with an early start it is. Nearby: Bhandardara / Arthur Lake / Wilson Dam / Randha Falls, Ratangad Fort, Sandhan Valley, Amruteshwar temple (Ratanwadi, ~1,200 yr Hemadpanti), Ghatghar viewpoint, Harishchandragad (~50 km).",
+      "access": "Bari village trailhead. Igatpuri railway ~45 km; Nashik airport ~65 km; Mumbai ~152 km, Pune ~180 km. MSRTC buses/jeeps to Bhandardara/Bari via Igatpuri.",
+      "bestSeason": "Sep-Feb for pleasant trekking; Dec-Feb clearest skies/stargazing; monsoon Jun-Sep green but ladders and rock slippery/dangerous in wind and rain",
+      "safetyNotes": "The iron ladders/railings on the final rock pitches are the main hazard - they bottleneck badly on weekends and at Navratri with two-way traffic on a single ladder, turn slippery and violently windy in the monsoon, and a fall there is serious. Wait your turn, three points of contact, don't climb them in rain/storm, avoid peak weekend hours. Summit is small, exposed, cold, with big drops off the temple platform - don't crowd edges or linger in bad weather. Pre-dawn sunrise climbs = doing the ladders in the dark (headtorch essential, group/guide advised). Limited water/food (seasonal stalls), remote, patchy signal, nearest hospital well away. Monsoon leeches and low visibility; Navratri heavy pilgrim crowds incl. elderly on a route not built for the volume.",
+      "fixesDanglingRef": "No prior dangling ref; the highest point in Maharashtra was missing - added on the user's 'search for more places and add cards' instruction. Cross-links to the existing Bhandardara card and the new Harishchandragad card."
     }
   ],
   "cardedThisTask": [
@@ -613,6 +631,8 @@
     "Tuljapur",
     "Mahur",
     "Nanded",
-    "Lohagad Fort"
+    "Lohagad Fort",
+    "Harishchandragad",
+    "Kalsubai"
   ]
 }
