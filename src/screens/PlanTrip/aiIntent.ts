@@ -1,24 +1,31 @@
 /**
  * Fuzzy trip-intent understanding — calls journey-backend's
- * POST /plan-trip/parse-intent (Gemini-backed) as a fallback when the
- * fast local matcher in parseTripMessage.ts finds nothing. Inspired by
- * Layla.ai's handling of vague requests ("a warm place in February that's
- * not too expensive") rather than requiring an exact destination name —
- * see the research summary from that session for the rest of the
- * comparison.
+ * POST /plan-trip/parse-intent (Gemini-backed, with a same-request Groq
+ * retry as a failsafe when Gemini's free tier has a bad moment — see
+ * planTrip.js) as a fallback when the fast local matcher in
+ * parseTripMessage.ts finds nothing. Inspired by Layla.ai's handling of
+ * vague requests ("a warm place in February that's not too expensive")
+ * rather than requiring an exact destination name — see the research
+ * summary from that session for the rest of the comparison.
  *
- * Deliberately never throws — any failure (no network, backend has no
- * GEMINI_API_KEY, timeout, malformed response) resolves to `null`, same
- * contract as aiPlan.ts, so a fuzzy-parsing outage just means the chat
- * falls back to its plain "tell me a place" nudge rather than breaking.
+ * Deliberately never throws — any failure (no network, neither provider
+ * configured/available, timeout, malformed response) resolves to `null`,
+ * same contract as aiPlan.ts, so a fuzzy-parsing outage just means the
+ * chat falls back to its plain "tell me a place" nudge rather than
+ * breaking.
  */
 import { API_BASE_URL } from "@/config/api";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { TravelStyle } from "./data";
 
-// A photo needs more round-trip time than a text message (larger upload +
-// Gemini's own vision processing) — text fuzzy-parsing keeps 15s.
-const REQUEST_TIMEOUT_MS = 15000;
+// The backend now has a Gemini→Groq failsafe for text requests (see
+// planTrip.js), so a text call can legitimately take as long as a Gemini
+// attempt PLUS a full Groq attempt back-to-back (~22s worst case) —
+// 15s used to cut that off before the fallback ever got a chance to run.
+// A photo needs more round-trip time on top of that (larger upload +
+// Gemini's own vision processing), and stays Gemini-only (no Groq
+// fallback for images), so its budget is unchanged.
+const REQUEST_TIMEOUT_MS = 28000;
 const IMAGE_REQUEST_TIMEOUT_MS = 30000;
 
 export interface AiIntentResult {
