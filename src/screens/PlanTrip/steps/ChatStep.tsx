@@ -506,9 +506,20 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       return;
     }
 
-    // Travelers/style/confirm are chip-driven; a stray typed message that
-    // wasn't recognized as a correction above just gets a gentle nudge
-    // back to the chips rather than being silently ignored.
+    if (phase === "travelers") {
+      const n = wordToNumber(text);
+      if (n && n >= 1 && n <= 20) {
+        selectTravelers(n);
+      } else {
+        pushAi("Just the number of travelers works — e.g. \"2\", or tap a chip above.");
+      }
+      scrollToEnd();
+      return;
+    }
+
+    // Style/confirm are chip-driven; a stray typed message that wasn't
+    // recognized as a correction above just gets a gentle nudge back to
+    // the chips rather than being silently ignored.
     pushAi("Tap one of the options above to continue — or the button once you're ready.");
     scrollToEnd();
   };
