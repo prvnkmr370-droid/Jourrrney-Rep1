@@ -110,7 +110,7 @@ function matchAllWords(queryWords: string[], candidateWords: string[]): number |
 interface Scored {
   dest: Destination;
   score: number;
-  isNameMatch: boolean; // name/alias match outranks a state-only match
+  isNameMatch: boolean; // name/alias match outranks a state-only match, among equally-good matches
 }
 
 function scoreDestinations(query: string): Scored[] {
@@ -129,7 +129,14 @@ function scoreDestinations(query: string): Scored[] {
       results.push({ dest: d, score: stateScore, isNameMatch: false });
     }
   }
-  results.sort((a, b) => (a.isNameMatch === b.isNameMatch ? a.score - b.score : a.isNameMatch ? -1 : 1));
+  // Match quality comes first — a query that's a perfect prefix of a
+  // *state* name (score 0) must outrank some other destination's loose,
+  // typo-tolerant fuzzy match on its *name* (score 2-3), or a state
+  // search like "Himachal" surfaces unrelated places (e.g. "Himavad
+  // Gopalaswamy Betta", whose name is merely edit-distance-close) ahead
+  // of any actual Himachal Pradesh destination. isNameMatch only breaks
+  // ties between two matches of equal quality.
+  results.sort((a, b) => (a.score !== b.score ? a.score - b.score : a.isNameMatch === b.isNameMatch ? 0 : a.isNameMatch ? -1 : 1));
   return results;
 }
 
@@ -159,8 +166,11 @@ export function findLiveMatches(query: string, limit = 4, recentIds: string[] = 
     const aRecent = recentSet.has(a.dest.id) ? 0 : 1;
     const bRecent = recentSet.has(b.dest.id) ? 0 : 1;
     if (aRecent !== bRecent) return aRecent - bRecent;
-    if (a.isNameMatch !== b.isNameMatch) return a.isNameMatch ? -1 : 1;
+    // Score (match quality) before isNameMatch — same reasoning as
+    // scoreDestinations' own sort: a perfect state-prefix match must
+    // outrank a loose fuzzy name match, not the other way around.
     if (a.score !== b.score) return a.score - b.score;
+    if (a.isNameMatch !== b.isNameMatch) return a.isNameMatch ? -1 : 1;
     return b.dest.reviews - a.dest.reviews;
   });
   return pool.slice(0, limit).map((r) => r.dest);
