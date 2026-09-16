@@ -47,7 +47,7 @@ import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
-import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
+import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, MAX_TRIP_DAYS, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
 
 interface Chip {
@@ -503,8 +503,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
 
     if (phase === "days") {
       const n = extractDays(text) ?? wordToNumber(text);
-      if (n && n >= 1 && n <= 30) {
+      if (n && n >= 1 && n <= MAX_TRIP_DAYS) {
         selectDays(n);
+      } else if (n && n > MAX_TRIP_DAYS) {
+        pushAi(`Let's keep it to ${MAX_TRIP_DAYS} days or fewer for now.`);
       } else {
         pushAi("Just the number of days works — e.g. \"5\".");
       }

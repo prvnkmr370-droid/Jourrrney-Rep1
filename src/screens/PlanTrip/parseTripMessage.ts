@@ -98,12 +98,22 @@ const DAY_PATTERNS = [
   new RegExp(`\\b${NUMBER_TOKEN}\\s*-?\\s*d\\b`, "i"), // "5d"
 ];
 
+// Not a "realistic trip" ceiling — the local template planner (see
+// generateItinerary in data.ts) loops cleanly for any day count, so an
+// extended-stay request (a month-plus somewhere) is genuinely answerable.
+// This is only a sanity bound against junk input ("9999999 days"); it's
+// set well above what the AI itinerary generator can reliably produce
+// inside its free-tier time budget on purpose — a request past what it
+// can finish in time just times out and falls back to the local planner,
+// same as any other AI failure, rather than rendering a broken response.
+export const MAX_TRIP_DAYS = 90;
+
 export function extractDays(text: string): number | null {
   for (const re of DAY_PATTERNS) {
     const m = text.match(re);
     if (m) {
       const n = wordToNumber(m[1]);
-      if (n && n >= 1 && n <= 30) return n;
+      if (n && n >= 1 && n <= MAX_TRIP_DAYS) return n;
     }
   }
   return null;
