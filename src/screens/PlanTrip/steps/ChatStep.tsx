@@ -66,7 +66,7 @@ interface ChatMessage {
   imageUri?: string;
 }
 
-type Phase = "destination" | "days" | "travelers" | "style" | "confirm";
+type Phase = "destination" | "days" | "travelers" | "style";
 
 /** One stop on the trip — days is null until asked/answered. A single-
  * destination trip (still the vast majority) is just a one-element
@@ -250,19 +250,22 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
   };
 
-  const askConfirm = () => {
+  // Every field Tia asks for has been given by this point — no separate
+  // "Ready?" tap-to-confirm step, since there's nothing left to confirm
+  // that the user didn't just tell her directly. Shows the summary for
+  // context as generation starts, rather than blocking on it.
+  const showSummaryAndGenerate = () => {
     const { legs, people, style } = collected.current;
     if (!people || !style) return; // proceedFromCollected only calls this once both are set
-    setPhase("confirm");
     const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
     const totalDays = legs.reduce((sum, l) => sum + (l.days ?? 0), 0);
     const routeLabel = legs.map((l) => `${l.days} day${l.days === 1 ? "" : "s"} in ${l.destination.name}`).join(", then ");
     const fromClause = originCity ? ` from ${originCity}` : "";
     pushAi(
-      `Here's the plan: ${routeLabel} (${totalDays} day${totalDays === 1 ? "" : "s"} total)${fromClause}, ${sc.label.toLowerCase()} for ${people} traveller${people === 1 ? "" : "s"}. Ready?`,
-      [{ label: "✨ Plan My Trip", onPress: confirmAndGenerate }],
+      `Here's the plan: ${routeLabel} (${totalDays} day${totalDays === 1 ? "" : "s"} total)${fromClause}, ${sc.label.toLowerCase()} for ${people} traveller${people === 1 ? "" : "s"}. Building it now! ✨`,
     );
     scrollToEnd();
+    confirmAndGenerate();
   };
 
   // Single source of truth for "what do we still need to ask" — every
@@ -296,7 +299,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       askStyle();
       return;
     }
-    askConfirm();
+    showSummaryAndGenerate();
   };
 
   // Replaces the old destination as the one place `legs` gets set —
@@ -525,10 +528,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       return;
     }
 
-    // Style/confirm are chip-driven; a stray typed message that wasn't
-    // recognized as a correction above just gets a gentle nudge back to
-    // the chips rather than being silently ignored.
-    pushAi("Tap one of the options above to continue — or the button once you're ready.");
+    // Style is chip-driven; a stray typed message that wasn't recognized
+    // as a correction above just gets a gentle nudge back to the chips
+    // rather than being silently ignored. (Once style is picked,
+    // showSummaryAndGenerate() fires immediately — there's no later
+    // phase left for a typed message to land in.)
+    pushAi("Tap one of the options above to continue.");
     scrollToEnd();
   };
 
