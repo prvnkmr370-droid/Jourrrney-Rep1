@@ -47,7 +47,7 @@ import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
-import { parseTripMessage, parseMultiDestinationMessage, extractDays, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
+import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
 
 interface Chip {
@@ -384,10 +384,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       }
     }
 
-    const travelerMatch = text.match(/\b(\d{1,2})\s*(people|travell?ers?|of us|pax)\b/i);
+    const travelerMatch = text.match(
+      /\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s*(people|travell?ers?|of us|pax)\b/i,
+    );
     if (travelerMatch) {
-      const n = Number(travelerMatch[1]);
-      if (n >= 1 && n <= 20 && n !== collected.current.people) {
+      const n = wordToNumber(travelerMatch[1]);
+      if (n && n >= 1 && n <= 20 && n !== collected.current.people) {
         collected.current.people = n;
         changes.push(`${n} traveller${n === 1 ? "" : "s"}`);
       }
@@ -491,7 +493,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     }
 
     if (phase === "days") {
-      const n = extractDays(text) ?? (/^\d{1,2}$/.test(text) ? Number(text) : null);
+      const n = extractDays(text) ?? wordToNumber(text);
       if (n && n >= 1 && n <= 30) {
         selectDays(n);
       } else {

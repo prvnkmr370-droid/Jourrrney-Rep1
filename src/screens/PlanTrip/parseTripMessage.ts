@@ -49,8 +49,8 @@ function stripLeadIn(text: string): string {
 // "in mysore" still resolves to "mysore".
 function stripDayClause(text: string): string {
   return text
-    .replace(/\bfor\s+\d+\s*-?\s*days?\b/i, "")
-    .replace(/\b\d+\s*-?\s*days?\b/i, "")
+    .replace(/\bfor\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s*-?\s*days?\b/i, "")
+    .replace(/\b(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\s*-?\s*days?\b/i, "")
     .trim()
     .replace(/^(?:in|at|to)\s+/i, "")
     .trim();
@@ -73,18 +73,37 @@ export interface ParsedTripMessage {
   interests: string[];
 }
 
+// Spelled-out counts ("two days", "four people") are just as common in
+// natural chat replies as digits, especially for small numbers — without
+// this, a bare "two" reply to "How many days?" fails every digit-only
+// pattern below and the user gets told to type a number they just typed.
+export const NUMBER_WORDS: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17,
+  eighteen: 18, nineteen: 19, twenty: 20,
+};
+
+/** A bare number word ("two") or digit string ("2") to its numeric value. */
+export function wordToNumber(text: string): number | null {
+  const t = text.trim().toLowerCase();
+  if (/^\d{1,2}$/.test(t)) return Number(t);
+  return NUMBER_WORDS[t] ?? null;
+}
+
+const NUMBER_TOKEN = `(\\d{1,2}|${Object.keys(NUMBER_WORDS).join("|")})`;
+
 const DAY_PATTERNS = [
-  /\bfor\s+(\d{1,2})\s*-?\s*days?\b/i,
-  /\b(\d{1,2})\s*-?\s*days?\b/i,
-  /\b(\d{1,2})\s*-?\s*d\b/i, // "5d"
+  new RegExp(`\\bfor\\s+${NUMBER_TOKEN}\\s*-?\\s*days?\\b`, "i"),
+  new RegExp(`\\b${NUMBER_TOKEN}\\s*-?\\s*days?\\b`, "i"),
+  new RegExp(`\\b${NUMBER_TOKEN}\\s*-?\\s*d\\b`, "i"), // "5d"
 ];
 
 export function extractDays(text: string): number | null {
   for (const re of DAY_PATTERNS) {
     const m = text.match(re);
     if (m) {
-      const n = Number(m[1]);
-      if (n >= 1 && n <= 30) return n;
+      const n = wordToNumber(m[1]);
+      if (n && n >= 1 && n <= 30) return n;
     }
   }
   return null;
