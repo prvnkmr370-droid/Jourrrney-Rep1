@@ -477,15 +477,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           return;
         }
 
-        // Gemini either explicitly declined to match anything (a real
-        // international place, or nothing fits) or the call itself
-        // failed — either way, same graceful redirect as a plain
-        // unmatched local attempt, so a fuzzy-parsing outage never
-        // blocks the conversation.
-        pushAi(
-          "We're currently focused on India 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me another place:",
-          SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
-        );
+        // Gemini either explicitly declined to match anything or the call
+        // itself failed. Only frame this as "we're India-only" when the
+        // message actually looked like it was naming a place (the
+        // unmatchedPlaceAttempt signal, not just "4+ words") — otherwise
+        // it presumes the user asked about somewhere outside India when
+        // they may not have named a place at all ("Plan a trip", "help me
+        // decide"), which reads as a non-sequitur.
+        if (parsed.unmatchedPlaceAttempt) {
+          pushAi(
+            "We're currently focused on India 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me another place:",
+            SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          );
+        } else {
+          pushAi("Tell me a city or place in India you'd like to visit — e.g. \"Mysore\" or \"Kerala backwaters.\"");
+        }
         scrollToEnd();
         return;
       }

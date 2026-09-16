@@ -125,6 +125,25 @@ function extractInterests(text: string): string[] {
   return PREFERENCES.filter((p) => (INTEREST_KEYWORDS[p.id] ?? []).some((kw) => lower.includes(kw))).map((p) => p.id);
 }
 
+// Generic trip-chat words that carry no place information on their own —
+// used to tell "Plan a trip" (nothing but filler, not a failed place
+// attempt) apart from "Take me to Narnia" (a real, if unsupported, place
+// name) after everything else has failed to match. Not exhaustive; the
+// bar is "does at least one word look like it's trying to name
+// something," not perfect grammar parsing.
+const FILLER_WORDS = new Set([
+  "plan", "planning", "trip", "trips", "help", "me", "my", "the", "a", "an", "to", "for", "of", "in", "on",
+  "go", "going", "want", "wanna", "would", "like", "please", "hi", "hello", "hey", "ok", "okay", "yes", "no",
+  "sure", "thanks", "thank", "you", "i", "i'd", "id", "can", "could", "should", "need", "looking", "look",
+  "somewhere", "some", "place", "places", "idea", "ideas", "suggest", "suggestion", "suggestions",
+  "recommend", "recommendation", "anywhere", "dreaming", "travel", "traveling", "travelling",
+  "vacation", "holiday", "visit", "journey", "dream", "new", "and", "with", "that", "this",
+]);
+
+function hasRealPlaceContent(cleaned: string): boolean {
+  return cleaned.split(/\s+/).some((w) => w.length >= 3 && !FILLER_WORDS.has(w));
+}
+
 export function parseTripMessage(raw: string): ParsedTripMessage {
   const days = extractDays(raw);
   const interests = extractInterests(raw);
@@ -151,9 +170,12 @@ export function parseTripMessage(raw: string): ParsedTripMessage {
   }
 
   // Nothing matched at all. Only call this a "place attempt" (triggering
-  // the India-focused message) when there's real letter content left —
-  // guards against misfires on short filler like "yes" or "ok".
-  const looksLikePlaceAttempt = /[a-z]{3,}/i.test(cleaned);
+  // the India-focused message) when a real, non-filler word is left —
+  // "any word 3+ letters" used to be the bar here, but "plan", "trip",
+  // "help", "me" are all 3+ letters too, so a plain "Plan a trip" (no
+  // place named at all) was wrongly read the same as someone naming an
+  // unsupported destination.
+  const looksLikePlaceAttempt = hasRealPlaceContent(cleaned);
   return { destination: null, candidates: [], unmatchedPlaceAttempt: looksLikePlaceAttempt, days, interests };
 }
 
