@@ -66017,6 +66017,181 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Zeliangrong-style smoked meats and local greens in Tamenglong town"],
     packingTips: ["Your Inner Line Permit and photo ID", "A reliable headlamp or torch, plus spare batteries", "Sturdy, grippy shoes for uneven cave floors", "A local guide arranged in advance through Tamenglong town — non-negotiable for this one"],
   },
+  // Churachandpur district, sourced from churachandpur.nic.in (the
+  // official district government site's own /tourist-places/ section) —
+  // the state-level manipurtourism.gov.in site the earlier Manipur
+  // batches came from doesn't cover this district at all, so this is a
+  // genuinely separate, equally official source. Images are hosted on
+  // cdn.s3waas.gov.in, India's official government static-site hosting
+  // platform (S3WaaS, under MeitY/NIC) — a .gov.in-tier source, not a
+  // third-party mirror. Raw scrape saved alongside the rest of the
+  // Manipur data in scripts/data/manipur-tourism-scrape.json.
+  {
+    id: "tonglon-cave",
+    name: "Tonglon Cave",
+    state: "Manipur",
+    tagline: "Churachandpur's Most Storied Historic Cave",
+    description: "Tonglon Cave, in the Singngat sub-division of Churachandpur district, is regarded as one of the district's best cultural and historical highlights. Carvings, sculptures, scripts and engravings found inside give historians real insight into early settlements in the region, making it as much an archaeological site as a scenic one.",
+    image: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061544-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
+    heroImage: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061544-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
+    gallery: ["https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061544-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg"],
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [{ name: "Carvings, scripts and engravings from early settlements" }, { name: "One of Churachandpur district's best cultural and historical sites" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5–2h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5–2h on", duration: "Fly into Imphal, then ~1.5–2h by road to Churachandpur, plus ~10 km on to the cave", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Imphal is the nearest airport; Dimapur (Nagaland) is the next option." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~1.5–2h from Imphal to Churachandpur town, then ~10 km further to the cave", costRange: "₹2,500–₹4,500 cab from Imphal to Churachandpur (one-way)", tips: "Arrange the final stretch to the cave through a local guide in Churachandpur town." },
+    ],
+    accommodation: [
+      { type: "Churachandpur Town Guesthouses & Circuit House", priceRange: "₹800–₹2,800/night", examples: ["Churachandpur Circuit House (government)", "A number of local guesthouses in Lamka (Churachandpur town)"], description: "The practical base for visiting Tonglon Cave, Ngaloi Waterfall, and Khuga Dam together." },
+    ],
+    localTransport: [
+      { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Churachandpur town", notes: "Recommended for the cave's interior and the final approach road", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ngaloi Waterfall", distance: "~15 km", type: "Waterfall", isHidden: false, id: "ngaloi-waterfall" },
+      { name: "Khuga Dam", distance: "~10 km", type: "Dam & Reservoir", isHidden: false, id: "khuga-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1800, food: 600, transport: 700, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6800, accommodation: 3800, food: 1000, transport: 1600, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Imphal to Churachandpur", morning: "Drive from Imphal (~1.5–2h) to Churachandpur town.", afternoon: "Visit Tonglon Cave with a local guide.", evening: "Rest in Churachandpur.", stay: "Churachandpur Circuit House or a local guesthouse", meals: "Local cuisine in Churachandpur town", tips: "Carry a torch — the cave's interior needs supplemental light beyond what filters in naturally." },
+      { day: 2, title: "Ngaloi Waterfall & Khuga Dam", morning: "Visit Ngaloi Waterfall, a short drive from town.", afternoon: "Continue to Khuga Dam for the reservoir views.", evening: "Return to Imphal or stay a second night.", stay: "Churachandpur or en route to Imphal", meals: "Local cuisine in Churachandpur town", tips: "All three Churachandpur sites are close enough together to cover in a relaxed two-day trip." },
+    ],
+    womenSafety: {
+      score: 5,
+      level: "Moderate",
+      highlights: ["A recognised, district-government-documented cultural and historical site rather than an unverified location"],
+      precautions: ["Manipur's statewide context applies — current advisories (US State Dept advises against travel to Manipur; UK FCDO against all but essential travel) cover the whole state; Churachandpur has itself seen significant unrest in the recent ethnic conflict, so checking the current, specific situation for this district before travelling matters more here than almost anywhere else on this list", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Cave interior exploration needs a local guide and a reliable light source — don't go in without one"],
+      soloTips: ["Not recommended solo given both the cave terrain and the district's recent history — go with a local guide/driver and check current conditions with them directly before finalising plans"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The cave with a local guide and proper lighting", "Churachandpur town centre in daylight"],
+      avoidAreas: ["Unguided cave entry", "Any area with an active advisory or reported unrest at the time of travel — verify locally and specifically for Churachandpur district before finalising plans"],
+    },
+    rating: 4.0,
+    reviews: 70,
+    mustEat: ["Local Zomi/Kuki-Chin cuisine in Churachandpur town"],
+    packingTips: ["Your Inner Line Permit and photo ID", "A torch/headlamp for the cave interior", "Sturdy shoes"],
+  },
+  {
+    id: "ngaloi-waterfall",
+    name: "Ngaloi Waterfall",
+    state: "Manipur",
+    tagline: "A Cascading Falls at a Small Hill Village",
+    description: "Ngaloi Waterfall sits at the small village of Ngaloi (originally Ngaloimoul), about 9 km from Churachandpur town. Low-lying mountains and greenery frame the cascading falls, and the white foamy water over dark rocks, cooled by mountain air, makes it a genuinely refreshing stop — one of the district's most straightforward, accessible nature spots.",
+    image: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
+    heroImage: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
+    gallery: ["https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg"],
+    category: ["Nature"],
+    bestSeason: "October – March (post-monsoon, safer footing); monsoon for fullest flow with extra caution",
+    duration: "1–2 hours",
+    highlights: [{ name: "A cascading waterfall framed by low hills" }, { name: "A footbridge viewpoint over the falls" }, { name: "The small village of Ngaloi (Ngaloimoul)" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5–2h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5–2h on", duration: "Fly into Imphal, then ~1.5–2h by road to Churachandpur, plus ~9 km on to Ngaloi", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Same gateway as Tonglon Cave and Khuga Dam — combine all three." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~1.5–2h from Imphal to Churachandpur, then ~9 km further to Ngaloi", costRange: "₹2,500–₹4,500 cab from Imphal to Churachandpur (one-way)", tips: "One of the closer, easier stops in the Churachandpur cluster." },
+    ],
+    accommodation: [
+      { type: "Churachandpur Town Guesthouses & Circuit House", priceRange: "₹800–₹2,800/night", examples: ["Churachandpur Circuit House (government)", "A number of local guesthouses in Lamka (Churachandpur town)"], description: "The practical base for this and the district's other sites." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Local Vehicle from Churachandpur", cost: "Arranged in town", notes: "Short local trip from Churachandpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tonglon Cave", distance: "~15 km", type: "Historic Cave", isHidden: true, id: "tonglon-cave" },
+      { name: "Khuga Dam", distance: "~12 km", type: "Dam & Reservoir", isHidden: true, id: "khuga-dam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 1800, food: 600, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6500, accommodation: 3800, food: 1000, transport: 1300, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ngaloi Waterfall Half-Day", morning: "Drive from Churachandpur town (~9 km) to Ngaloi Waterfall.", afternoon: "Take in the falls from the footbridge viewpoint; return to town.", evening: "Free in Churachandpur.", stay: "Churachandpur", meals: "Local cuisine in Churachandpur town", tips: "Combine with Khuga Dam, which is close by, for a fuller half-day." },
+    ],
+    womenSafety: {
+      score: 5.5,
+      level: "Moderate",
+      highlights: ["A well-known local picnic and tourist spot with a built footbridge viewpoint, not an obscure, unmanaged site"],
+      precautions: ["Manipur's statewide context applies, and Churachandpur district specifically has seen significant unrest in the recent ethnic conflict — check the current, specific situation for this district before travelling, not just a general Manipur-wide advisory", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Wet rocks near the falls need careful footing"],
+      soloTips: ["Best visited with a hired car/driver from Churachandpur town, and check current district conditions with them directly before finalising plans"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The footbridge viewpoint and main falls area in daylight"],
+      avoidAreas: ["Climbing on wet rocks near the falls", "Any area with an active advisory or reported unrest at the time of travel — verify locally and specifically for Churachandpur district"],
+    },
+    rating: 4.2,
+    reviews: 95,
+    mustEat: ["Local Zomi/Kuki-Chin cuisine in Churachandpur town"],
+    packingTips: ["Your Inner Line Permit and photo ID", "Grippy shoes for wet rocks near the falls", "A change of clothes if planning to get close to the water"],
+  },
+  {
+    id: "khuga-dam",
+    name: "Khuga Dam",
+    state: "Manipur",
+    tagline: "A Reservoir Dam and Popular Local Picnic Spot",
+    description: "Khuga Dam, just south of Churachandpur town, is a 38-metre-high, 230-metre-long dam whose construction began in 1983, stalled for years, and finally resumed in 2002 before being inaugurated in 2010. It's not yet working to full capacity, but the reservoir it created has become a popular local picnic spot and tourist stop, with the surrounding hills reflected in the still water making for genuinely scenic views.",
+    image: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018031361-rr7mo4ezxezpuhf4irc03dad700plx5m3p0sc4xwga.jpg",
+    heroImage: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018031361-rr7mo4ezxezpuhf4irc03dad700plx5m3p0sc4xwga.jpg",
+    gallery: ["https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018031361-rr7mo4ezxezpuhf4irc03dad700plx5m3p0sc4xwga.jpg"],
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [{ name: "A 38m-high, 230m-long dam and reservoir" }, { name: "Hill-reflected reservoir views" }, { name: "A popular local picnic spot" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5–2h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5–2h on", duration: "Fly into Imphal, then ~1.5–2h by road to Churachandpur, plus ~3 km on to the dam", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "The closest of the three Churachandpur sites to town itself." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~1.5–2h from Imphal to Churachandpur, then ~3 km further to the dam", costRange: "₹2,500–₹4,500 cab from Imphal to Churachandpur (one-way)", tips: "An easy, short add-on to a Churachandpur town visit." },
+    ],
+    accommodation: [
+      { type: "Churachandpur Town Guesthouses & Circuit House", priceRange: "₹800–₹2,800/night", examples: ["Churachandpur Circuit House (government)", "A number of local guesthouses in Lamka (Churachandpur town)"], description: "The practical base for this and the district's other sites." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Local Vehicle from Churachandpur", cost: "Arranged in town", notes: "A short local trip from Churachandpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ngaloi Waterfall", distance: "~12 km", type: "Waterfall", isHidden: true, id: "ngaloi-waterfall" },
+      { name: "Tonglon Cave", distance: "~10 km", type: "Historic Cave", isHidden: true, id: "tonglon-cave" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 1800, food: 600, transport: 500, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6500, accommodation: 3800, food: 1000, transport: 1300, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Khuga Dam Half-Day", morning: "Drive from Churachandpur town (~3 km) to Khuga Dam.", afternoon: "Take in the reservoir views; a popular local picnic spot.", evening: "Free in Churachandpur.", stay: "Churachandpur", meals: "Pack a picnic, or local cuisine in Churachandpur town", tips: "Combine with Ngaloi Waterfall, which is close by, for a fuller half-day." },
+    ],
+    womenSafety: {
+      score: 5.5,
+      level: "Moderate",
+      highlights: ["A well-known, well-visited local picnic spot rather than an obscure location", "The closest of the Churachandpur sites to town, with regular local footfall"],
+      precautions: ["Manipur's statewide context applies, and Churachandpur district specifically has seen significant unrest in the recent ethnic conflict — check the current, specific situation for this district before travelling, not just a general Manipur-wide advisory", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Standard water-body caution near the dam edge and reservoir"],
+      soloTips: ["Best visited with a hired car/driver from Churachandpur town, and check current district conditions with them directly before finalising plans"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The main viewing areas around the dam in daylight"],
+      avoidAreas: ["Getting too close to the dam edge or reservoir waterline", "Any area with an active advisory or reported unrest at the time of travel — verify locally and specifically for Churachandpur district"],
+    },
+    rating: 4.1,
+    reviews: 110,
+    mustEat: ["Pack a picnic — a popular local picnic spot", "Local Zomi/Kuki-Chin cuisine in Churachandpur town"],
+    packingTips: ["Your Inner Line Permit and photo ID", "Picnic supplies if planning to stay a while", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
