@@ -64835,6 +64835,139 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Khandeshi-style spicy shev bhaji and vangyache bharit", "Simple dal-rice and bhakri at the MTDC resort", "Local seasonal produce and tribal preparations where offered", "Chai and bhaji at the lakeside stalls"],
     packingTips: ["Light clothes for the day and a warm layer for chilly evenings", "Medicines, toiletries, snacks and cash — local shops are few (per the tourism advisory)", "A full fuel tank, offline maps and a power bank for the remote drive", "Grippy shoes for the viewpoint and Sita Khani paths"],
   },
+  // Manipur, sourced from manipurtourism.gov.in (the official Directorate of
+  // Tourism site — reached via manipur.nic.in's own "State tourism website"
+  // link, since manipur.nic.in itself is an NIC e-governance portal with no
+  // tourism content). Raw scrape saved at
+  // scripts/data/manipur-tourism-scrape.json. Manipur carries a genuine,
+  // current safety situation the tourism site itself doesn't mention —
+  // ongoing ethnic conflict since 2023 (US State Dept advises against
+  // travel; UK FCDO advises against all but essential travel, including
+  // Imphal) — plus a Protected Area/Inner Line Permit that's legally
+  // mandatory for every Indian citizen entering the state, not just
+  // foreign visitors. Both are carried in every entry's womenSafety
+  // section rather than assumed away, per the tourism site's own silence
+  // on them. Safety framing is tiered by area, matching how current
+  // advisories actually describe the state: Loktak Lake and Imphal are
+  // relatively more visited/visitable with precautions; the more remote
+  // hill-district entries (Ukhrul, Senapati, Tamenglong, and especially
+  // the Myanmar border town of Moreh) carry visibly stronger caution.
+  {
+    id: "loktak-lake",
+    name: "Loktak Lake",
+    state: "Manipur",
+    tagline: "The Only Floating Lake in the World",
+    description: "Loktak Lake in Bishnupur district, 48 km from Imphal, is the largest freshwater lake in Northeast India and the principal attraction of Manipur — a vast, beautiful stretch of water dotted with phumdis, floating masses of vegetation and soil that fishing families live on in huts called phumsangs, a sight found nowhere else in the world. The Sendra vantage point gives a bird's-eye view over the whole lake, and the on-site Sendra Tourist Home and Takmu Water Sports Complex organise boating and other water sports for visitors.",
+    image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/loktak-1.jpg",
+    heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/loktak-1.jpg",
+    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/loktak-1.jpg"],
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – March (cool, clear skies; birdwatching season at neighbouring Keibul Lamjao runs Nov–Mar)",
+    duration: "1 day (half-day boating plus Sendra viewpoint)",
+    highlights: [{ name: "Phumdis — floating islands with fishing huts (phumsangs)" }, { name: "Sendra viewpoint for a bird's-eye view of the lake" }, { name: "Boating and water sports at Takmu Water Sports Complex" }, { name: "Keibul Lamjao National Park, the floating home of the Sangai deer", id: "keibul-lamjao-national-park" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5h on", duration: "Fly into Imphal, then ~1.5h by road to Loktak", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Imphal airport has direct flights from Delhi, Kolkata and Guwahati; other cities usually connect through one of those." },
+      { mode: "Train", icon: "🚂", fromDelhi: "To Jiribam (~225 km from Imphal), then road", fromMumbai: "Long-distance rail to Jiribam via Guwahati, then road", fromBangalore: "Via Guwahati to Jiribam, then road", duration: "Rail plus a ~5–6h drive from Jiribam", costRange: "₹500–₹3,000 rail", tips: "Jiribam is Manipur's nearest railhead; flying into Imphal is far more practical for most travellers." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~1.5h from Imphal (48 km) via NH-2", costRange: "₹1,500–₹3,000 cab from Imphal (round trip)", tips: "Most visitors base themselves in Imphal and day-trip to Loktak; hired cabs and tour taxis are the norm." },
+    ],
+    accommodation: [
+      { type: "Sendra Tourist Home (Lakeside)", priceRange: "₹1,500–₹3,500/night", examples: ["Sendra Tourist Home, run by Manipur Tourism"], description: "The only stay directly at the lake, with an attached cafeteria and the Sendra viewpoint on-site. Book ahead through Manipur Tourism." },
+      { type: "Imphal Hotels (most visitors base here)", priceRange: "₹1,200–₹8,000/night", examples: ["Hotel Imphal", "Classic Hotel, Imphal", "A range of mid-range city hotels near the Polo Ground/BT Road area"], description: "Imphal has the state's main hotel choice; Loktak is a comfortable day trip at 48 km / ~1.5h away." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,500–₹3,000 round trip", notes: "The standard way most visitors reach Loktak; arrange through a hotel or local operator", available: true },
+      { mode: "Boat (at the lake itself)", cost: "Organised via Takmu Water Sports Complex / Sendra Tourist Home", notes: "For touring the phumdis and open water", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Keibul Lamjao National Park", distance: "On the lake itself", type: "Floating National Park", isHidden: false, id: "keibul-lamjao-national-park" },
+      { name: "INA Memorial, Moirang", distance: "~10 km", type: "Freedom Struggle Memorial", isHidden: false, id: "ina-memorial-moirang" },
+      { name: "Red Hills (Maibam Lokpaching)", distance: "~30 km", type: "WWII Battle Site & Peace Memorial", isHidden: true, id: "red-hills-maibam-lokpaching" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 600, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 1300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Loktak Lake & Sendra", morning: "Drive from Imphal (~1.5h) to Loktak; boat out among the phumdis and floating fishing villages.", afternoon: "Climb to the Sendra viewpoint for the full lake panorama; lunch at the Sendra Tourist Home cafeteria.", evening: "Boating/water sports at Takmu Water Sports Complex before the drive back to Imphal.", stay: "Sendra Tourist Home or back in Imphal", meals: "Sendra Tourist Home cafeteria — try local Loktak fish preparations", tips: "Carry your Inner Line Permit — it's checked at entry points into Manipur, and it's mandatory for Indian citizens too." },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Loktak Lake and Imphal are the parts of Manipur current travel advisories describe as relatively more visited and visitable, with regular tourist activity and an established tourism-department presence (Sendra Tourist Home, organised boating)", "A popular day-trip with steady daytime footfall and no reports specific to this site beyond the state's general situation"],
+      precautions: ["Manipur as a whole has had serious ethnic conflict since 2023 with intermittent violence continuing into 2026 (47 incidents, 23 civilian casualties reported since Jan 2026, per state figures) — the US State Department advises against travel to Manipur, and the UK FCDO advises against all but essential travel, including Imphal; check current advisories before travelling and avoid any area with reported unrest", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur, not just foreign visitors — apply online at manipurilponline.mn.gov.in or on arrival at Imphal Airport; travelling without one risks fines, imprisonment, or deportation", "Stick to daylight hours for the lake and the Imphal–Loktak road", "Boating is organised through the tourist home/water sports complex — avoid unofficial boat operators"],
+      soloTips: ["Manageable as part of an organised day trip from Imphal with a hotel-arranged cab, given the current statewide situation — avoid independent travel into unfamiliar areas", "Confirm the current local situation with your hotel or the Manipur Tourism office before setting out"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["Sendra Tourist Home and viewpoint", "The main Imphal–Loktak road in daylight"],
+      avoidAreas: ["Any area with an active advisory or reported unrest at the time of travel — check before going", "Unofficial/unlicensed boat operators away from Sendra"],
+    },
+    rating: 4.5,
+    reviews: 3200,
+    mustEat: ["Nga thongba (Manipuri fish curry) using Loktak fish", "Eromba (fermented fish and vegetable mash)", "Chak-hao kheer (black rice pudding)", "Singju (Manipuri salad)"],
+    packingTips: ["Your Inner Line Permit and photo ID — checked at entry points", "A light jacket — mornings on open water are cool", "Binoculars if visiting in the Nov–Mar migratory bird season", "Cash — card acceptance is limited outside Imphal"],
+  },
+  {
+    id: "keibul-lamjao-national-park",
+    name: "Keibul Lamjao National Park",
+    state: "Manipur",
+    tagline: "The World's Only Floating National Park",
+    description: "Keibul Lamjao, set on the phumdis of Loktak Lake, is the only floating national park in the world and the last natural habitat of the Sangai — the brow-antlered \"dancing deer\" of Manipur (Rucervus eldii eldii), found nowhere else on Earth. Beyond the Sangai, the park's floating wetland ecosystem shelters hog deer, otters, and a rich range of water fowl, with migratory birds arriving each year between November and March. The Forest Department maintains watch towers and two rest houses inside the park for visitors.",
+    image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/keibullamjao.jpg",
+    heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/keibullamjao.jpg",
+    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/keibullamjao.jpg"],
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – March (migratory birds; cooler, clearer viewing)",
+    duration: "2–4 hours",
+    highlights: [{ name: "Sangai — the brow-antlered dancing deer, found only here" }, { name: "Watch towers over the floating phumdi ecosystem" }, { name: "Hog deer, otters and migratory water fowl (Nov–Mar)" }, { name: "Loktak Lake itself, which the park sits on", id: "loktak-lake" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5h on", duration: "Fly into Imphal, then ~1.5–2h by road", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Same gateway as Loktak Lake — most visitors combine both in one day trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~1.5–2h from Imphal (~53 km) via NH-2 and the lake road", costRange: "₹1,500–₹3,500 cab from Imphal (round trip, combined with Loktak)", tips: "Best combined with a Loktak Lake visit on the same trip — a separate boat/permit is arranged for the park itself." },
+    ],
+    accommodation: [
+      { type: "Forest Department Rest Houses (inside the park)", priceRange: "Booked through the Manipur Forest Department in advance", examples: ["Two Forest Dept rest houses within Keibul Lamjao"], description: "Basic, purpose-built for wildlife visits — advance permission and booking through the Forest Department is required." },
+      { type: "Imphal Hotels (most visitors base here)", priceRange: "₹1,200–₹8,000/night", examples: ["Hotel Imphal", "Classic Hotel, Imphal"], description: "The practical base for a day visit, same as for Loktak Lake." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,500–₹3,500 round trip (often combined with Loktak Lake)", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Forest Dept Boat (inside the park)", cost: "Entry/boat fees payable at the park", notes: "Required to reach the watch towers over the phumdi habitat", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Loktak Lake", distance: "Same lake system", type: "Floating Lake", isHidden: false, id: "loktak-lake" },
+      { name: "INA Memorial, Moirang", distance: "~15 km", type: "Freedom Struggle Memorial", isHidden: true, id: "ina-memorial-moirang" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 600, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1400, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Keibul Lamjao & Loktak", morning: "Early start from Imphal for the best chance of spotting Sangai deer from the park's watch towers.", afternoon: "Continue on to Loktak Lake's Sendra viewpoint, a short distance away on the same lake system.", evening: "Drive back to Imphal.", stay: "Imphal", meals: "Pack a picnic — no restaurants inside the park itself", tips: "Go early morning for the best wildlife sighting odds; carry binoculars and a zoom lens." },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Part of the same relatively more visited Loktak Lake area, with a Forest Department presence (watch towers, rest houses) rather than being unmanaged wilderness", "A daytime wildlife-viewing destination with an established, organised visitor routine"],
+      precautions: ["Same statewide context as the rest of Manipur applies — the US State Department advises against travel to Manipur and the UK FCDO advises against all but essential travel, including Imphal, due to ongoing ethnic conflict; check current advisories before travelling", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it, it's checked at entry points", "Stay with the Forest Department's marked routes/watch towers rather than wandering the phumdi wetland independently — it's genuinely unstable terrain, not just a safety formality", "Visit in early morning/daytime only; the park has no lighting or facilities after dark"],
+      soloTips: ["Best visited as part of an organised day trip with a hotel-arranged cab and the Forest Department's own guides/boatmen, given both the terrain and the current statewide situation", "Don't attempt the floating wetland areas without the Forest Department escort"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Forest Department", number: "Contact via Manipur Tourism, 0385-2421794" },
+      ],
+      safeZones: ["Forest Department watch towers and marked boat routes"],
+      avoidAreas: ["Unescorted travel onto the phumdi wetland itself — the floating terrain is genuinely hazardous without a guide", "Any area with an active advisory or reported unrest at the time of travel"],
+    },
+    rating: 4.4,
+    reviews: 1400,
+    mustEat: ["Pack a picnic — no dining inside the park", "Nga thongba and other Loktak-fish dishes back in Imphal or at Sendra"],
+    packingTips: ["Your Inner Line Permit and photo ID", "Binoculars and a zoom lens for the Sangai deer", "Insect repellent — it's a wetland", "An early-morning start for the best sightings"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
