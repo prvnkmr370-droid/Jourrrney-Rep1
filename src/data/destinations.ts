@@ -65960,6 +65960,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Pack a snack for the visit; proper meals back in Imphal"],
     packingTips: ["Your Inner Line Permit and photo ID", "Check opening hours before the trip out", "A camera for the replica houses and carvings"],
   },
+  {
+    id: "tharon-cave",
+    name: "Tharon Cave",
+    state: "Manipur",
+    tagline: "A Prehistoric Cave Shelter in Tamenglong District",
+    description: "Tharon Cave, about 27 km from Tamenglong town, is one of Manipur's must-visit archaeological sites — a cave believed to have sheltered communities for thousands of years. Excavations here have produced items linked to the Hobinhian culture of North Vietnam, connecting this corner of Manipur to a much wider prehistoric Southeast Asian story. Exploring the cave's dark limestone passages with a guide and headlamp is a genuinely different kind of Manipur experience from the state's hill treks and heritage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tharon_Caves_Tamenglong_Manipur_by_Dr_Raju_Kasambe_DSC_5649_%2814%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tharon_Caves_Tamenglong_Manipur_by_Dr_Raju_Kasambe_DSC_5649_%2814%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/8d/Tharon_Caves_Tamenglong_Manipur_by_Dr_Raju_Kasambe_DSC_5649_%2814%29.jpg"],
+    imageCredit: "Photo: Dr. Raju Kasambe, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Heritage"],
+    bestSeason: "October – March (drier cave conditions)",
+    duration: "2–3 hours",
+    highlights: [{ name: "Prehistoric cave shelter with evidence of Stone-Age habitation" }, { name: "Excavated artefacts linked to Vietnam's Hoabinhian culture" }, { name: "Zeilad Lake and Barak Waterfalls, in the same district", id: "zeilad-lake" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then a long road journey", fromBangalore: "Via Kolkata/Delhi, then a long road journey", duration: "Fly into Imphal, then ~4–5h by road to Tamenglong, plus ~27 km further to the cave", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "The furthest-out stop in the Tamenglong cluster — plan for a full day from Tamenglong town." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~4–5h from Imphal to Tamenglong, then ~27 km further on local roads", costRange: "₹4,000–₹7,000 cab from Imphal to Tamenglong (one-way), plus local transport to the cave", tips: "Arrange the final stretch to the cave through a guide in Tamenglong town — roads narrow considerably." },
+    ],
+    accommodation: [
+      { type: "Tamenglong Town Guesthouses & Circuit House", priceRange: "₹800–₹2,500/night", examples: ["Tamenglong Circuit House (government)", "A small number of local guesthouses"], description: "The practical base for reaching Tharon Cave, Zeilad Lake, and Barak Waterfalls together." },
+    ],
+    localTransport: [
+      { mode: "Local Guide + Headlamp/Torch", cost: "Arranged in Tamenglong town", notes: "Essential — the cave's interior passages are genuinely dark and uneven", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Zeilad Lake", distance: "~30 km", type: "Wildlife Sanctuary Lake", isHidden: true, id: "zeilad-lake" },
+      { name: "Barak Waterfalls", distance: "~35 km", type: "Waterfall", isHidden: true, id: "barak-waterfalls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 600, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1600, food: 600, transport: 1100, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7200, accommodation: 3500, food: 1000, transport: 2300, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Imphal to Tamenglong", morning: "Depart Imphal early for the ~4–5h drive to Tamenglong town.", afternoon: "Settle in; arrange a guide for the next day's cave visit.", evening: "Rest in Tamenglong.", stay: "Tamenglong Circuit House or a local guesthouse", meals: "Local Zeliangrong cuisine in Tamenglong town", tips: "This is mostly a travel day." },
+      { day: 2, title: "Tharon Cave", morning: "Drive the ~27 km from Tamenglong to Tharon Cave with a local guide; explore the cave passages with headlamps.", afternoon: "Return to Tamenglong, or continue on to Zeilad Lake/Barak Waterfalls if time allows.", evening: "Begin the return journey to Imphal or stay a second night.", stay: "Tamenglong or en route to Imphal", meals: "Pack a trail lunch; dinner in Tamenglong", tips: "Wear sturdy shoes with grip — cave floors are uneven and can be slippery." },
+    ],
+    womenSafety: {
+      score: 4.5,
+      level: "Exercise Caution",
+      highlights: ["A recognised archaeological site with a documented excavation history, not an unverified or informal location"],
+      precautions: ["Manipur's statewide context applies with real weight here — Tamenglong is a remote hill district, and this cave is a further ~27 km beyond Tamenglong town itself, making it one of the more remote single stops on this whole list; current advisories (US State Dept advises against travel to Manipur; UK FCDO against all but essential travel) cover the whole state, and remote districts can see conditions shift with less notice than Imphal — verify the current situation specifically before travelling", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Cave exploration itself carries real physical risk independent of the wider security picture — dark, uneven, sometimes slippery passages absolutely require a local guide, a reliable light source, and sturdy footwear; never enter without a guide", "Mobile signal and emergency response are minimal to non-existent this far out — travel with a guide/group and ensure someone knows your plan and expected return time"],
+      soloTips: ["Do not attempt solo, for both the remoteness and the cave terrain itself — go only with an experienced local guide and ideally a small group", "This is one of the more demanding, remote stops on the full Manipur list — treat it as an experienced-traveller destination"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The cave interior only with a local guide and proper lighting"],
+      avoidAreas: ["Unguided cave entry, under any circumstances", "Any area with an active advisory or reported unrest at the time of travel — verify locally, this is a remote district well beyond Tamenglong town itself"],
+    },
+    rating: 4.0,
+    reviews: 60,
+    mustEat: ["Zeliangrong-style smoked meats and local greens in Tamenglong town"],
+    packingTips: ["Your Inner Line Permit and photo ID", "A reliable headlamp or torch, plus spare batteries", "Sturdy, grippy shoes for uneven cave floors", "A local guide arranged in advance through Tamenglong town — non-negotiable for this one"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
