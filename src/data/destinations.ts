@@ -65509,6 +65509,127 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Cross-border market snacks and Myanmar-influenced goods in Moreh", "Standard Manipuri fare back in Imphal"],
     packingTips: ["Your Inner Line Permit and photo ID, plus any additional border-area documentation your operator advises", "Minimal cash and valuables", "A fully charged phone and a clear check-in plan with someone back in Imphal", "Confirm current road conditions the morning of travel, not in advance"],
   },
+  // The Imphal City cluster's own page on manipurtourism.gov.in hotlinks
+  // its images from a non-official dev-staging domain
+  // (live.24x7phpsupport.com), not the gov.in domain itself — treated as
+  // unverified per the same bar applied to the rest of this batch, so
+  // these entries source images from Wikimedia Commons instead: each
+  // checked for a real, dated upload with EXIF/author info (not a
+  // reverse-image-search guess) and visually confirmed on-screen against
+  // the tourism department's own text description before use.
+  {
+    id: "kangla",
+    name: "Kangla",
+    state: "Manipur",
+    tagline: "The Ancient Citadel of the Meitei Kings",
+    description: "Kangla, at the heart of Imphal, was the seat of the erstwhile Meitei kingdom dating back to 33 A.D., until the British took it over in 1891. Guarded at its entrance by the iconic Kangla Sha — colossal dragon-lion statues of Meitei mythology — the citadel holds the old Govindajee temple, the palace's inner and outer moats, and a scatter of other relics that together form the quintessential symbol of Manipur's culture and heritage. It's now developed into an archaeological and heritage park open to visitors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kangla_Fort%2C_Manipur%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kangla_Fort%2C_Manipur%2C_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6e/Kangla_Fort%2C_Manipur%2C_India.jpg"],
+    imageCredit: "Photo: Yash Raina, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "History"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    highlights: [{ name: "The Kangla Sha — colossal mythical dragon-lion guardian statues" }, { name: "The old Govindajee Temple within the citadel" }, { name: "Inner and outer moats of the historic palace complex" }, { name: "Ima Market, a short walk from the Western Gate", id: "ima-market" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Kangla is right in Imphal city, an easy add-on to any Imphal-based day." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~15–20 min from most Imphal hotels", costRange: "₹100–₹300 auto/cab within the city", tips: "Centrally located and walkable from much of central Imphal." },
+    ],
+    accommodation: [
+      { type: "Imphal Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["Hotel Imphal", "Classic Hotel, Imphal", "A range of mid-range city hotels near BT Road/Polo Ground"], description: "Kangla is a central Imphal city attraction — any Imphal hotel puts you within easy reach." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available for getting around central Imphal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ima Market", distance: "~1 km", type: "Women's Market", isHidden: false, id: "ima-market" },
+      { name: "Shree Govindajee Temple", distance: "~1.5 km", type: "Vaishnavite Temple", isHidden: true, id: "shree-govindajee-temple" },
+      { name: "Manipur State Museum", distance: "~2 km", type: "Museum", isHidden: true, id: "manipur-state-museum" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1200, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Imphal City Heritage", morning: "Explore Kangla's citadel, the Kangla Sha statues, and the old Govindajee temple within its walls.", afternoon: "Walk to Ima Market, a short distance from Kangla's Western Gate.", evening: "Continue on to Shree Govindajee Temple for evening Aarti.", stay: "Imphal", meals: "Local Manipuri thali at an Imphal restaurant", tips: "Kangla, Ima Market, and Govindajee Temple are all within easy reach of each other — a natural half-to-full day loop through central Imphal." },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Central Imphal is the part of Manipur current advisories describe as relatively more visited and visitable, with steady daytime footfall at Kangla as a major heritage site", "A well-maintained, actively managed archaeological park rather than an unmanaged site"],
+      precautions: ["Manipur's statewide context still applies — the US State Department advises against travel to Manipur, and the UK FCDO advises against all but essential travel, including Imphal itself, due to ongoing ethnic conflict; check current advisories before travelling", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Stick to daylight visiting hours, as with any Imphal city attraction under current conditions"],
+      soloTips: ["Manageable during the day as a central Imphal city attraction, given the relatively more visited status of the city itself — stay alert to the current situation via your hotel", "Combine with Ima Market and Govindajee Temple for an efficient central Imphal day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The Kangla Fort complex during opening hours", "Central Imphal's main tourist route (Kangla–Ima Market–Govindajee Temple)"],
+      avoidAreas: ["Any area with an active advisory or reported unrest at the time of travel — check before going, including within Imphal"],
+    },
+    rating: 4.5,
+    reviews: 2800,
+    mustEat: ["Manipuri thali with eromba and singju", "Chak-hao kheer (black rice pudding)", "Street snacks near the Kangla entrance"],
+    packingTips: ["Your Inner Line Permit and photo ID", "Comfortable walking shoes for the fort grounds", "A hat/sunscreen — much of the site is open ground"],
+  },
+  {
+    id: "ima-market",
+    name: "Ima Market",
+    state: "Manipur",
+    tagline: "One of Asia's Largest All-Women's Markets",
+    description: "Ima Market (Ima Keithel, \"Mother's Market\" in Meitei) is one of the largest all-women-run markets in Asia, a short walk from Kangla's Western Gate in the heart of Imphal. Over 3,000 \"Imas\" (mothers) run the stalls, and men are not allowed to sell goods here — a genuinely unique institution. Vegetables, fruits, fish, and household groceries fill one section, while handlooms and household tools fill the other, making it as much a working women's economic institution as a market.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ima_Market%2C_imphal.jpeg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ima_Market%2C_imphal.jpeg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/b5/Ima_Market%2C_imphal.jpeg"],
+    imageCredit: "Photo: PP Yoonus, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Culture", "Shopping"],
+    bestSeason: "Year-round (a working daytime market)",
+    duration: "1–2 hours",
+    highlights: [{ name: "Run entirely by an estimated 3,000+ women vendors" }, { name: "Fresh produce, fish and groceries in one section" }, { name: "Handlooms and household tools in the other" }, { name: "Kangla, a short walk away", id: "kangla" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Central Imphal, an easy add-on to any city day." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~15–20 min from most Imphal hotels", costRange: "₹100–₹300 auto/cab within the city", tips: "A short walk from Kangla's Western Gate — easily combined into the same visit." },
+    ],
+    accommodation: [
+      { type: "Imphal Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["Hotel Imphal", "Classic Hotel, Imphal"], description: "A central Imphal city attraction — any Imphal hotel puts you within easy reach." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kangla", distance: "~1 km", type: "Historic Citadel", isHidden: false, id: "kangla" },
+      { name: "Shree Govindajee Temple", distance: "~1 km", type: "Vaishnavite Temple", isHidden: true, id: "shree-govindajee-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1200, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ima Market & Central Imphal", morning: "Browse Ima Market's produce and grocery section — a genuine working market, best experienced in the morning.", afternoon: "Cross to the handloom and household-goods section for textiles and souvenirs; walk to Kangla nearby.", evening: "Shree Govindajee Temple for evening Aarti.", stay: "Imphal", meals: "Street snacks at the market, a proper Manipuri thali for dinner", tips: "This is a real, working women's market, not a tourist bazaar — browse respectfully and expect genuine haggling norms rather than fixed tourist pricing." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A genuinely unique, women-run institution with an estimated 3,000+ vendors and heavy daytime footfall — one of the more reassuring environments in the state precisely because it's run entirely by women", "Central Imphal is the part of Manipur current advisories describe as relatively more visited and visitable"],
+      precautions: ["Manipur's statewide context still applies even here — the US State Department advises against travel to Manipur, and the UK FCDO advises against all but essential travel, including Imphal; check current advisories before travelling", "A Protected Area/Inner Line Permit (ILP) is legally mandatory for every Indian citizen entering Manipur — carry it", "Standard market-crowd caution applies — mind belongings in the busy aisles", "The market runs during daytime trading hours — plan your visit accordingly rather than in the evening"],
+      soloTips: ["One of the more comfortable solo visits in Manipur given it's an all-women-run space with constant daytime activity", "Still worth checking the current city situation with your hotel before heading out, per the statewide context"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Manipur Tourism (Directorate)", number: "0385-2421794" },
+      ],
+      safeZones: ["The market complex during trading hours"],
+      avoidAreas: ["Any area with an active advisory or reported unrest at the time of travel — check before going, including within Imphal"],
+    },
+    rating: 4.6,
+    reviews: 3100,
+    mustEat: ["Fresh Loktak fish and local produce, if self-catering", "Street snacks within the market", "Nga thongba and eromba nearby"],
+    packingTips: ["Your Inner Line Permit and photo ID", "Small cash for haggling and purchases", "A bag for handloom/textile purchases"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
