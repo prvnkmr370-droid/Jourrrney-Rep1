@@ -222,6 +222,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     setMessages((prev) => [...prev, { id: nextId(), sender: "ai", text, chips }]);
   const pushUser = (text: string, imageUri?: string) => setMessages((prev) => [...prev, { id: nextId(), sender: "user", text, imageUri }]);
   const removeMessage = (id: string) => setMessages((prev) => prev.filter((m) => m.id !== id));
+  const setMessageText = (id: string, text: string) => setMessages((prev) => prev.map((m) => (m.id === id ? { ...m, text } : m)));
 
   const scrollToEnd = () => requestAnimationFrame(() => scrollRef.current?.scrollToEnd({ animated: true }));
 
@@ -457,7 +458,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         setSending(true);
         setMessages((prev) => [...prev, { id: THINKING_ID, sender: "ai", text: "Let me think about that… 🧭" }]);
         scrollToEnd();
-        const intent = await tryParseTripIntent(text);
+        const intent = await tryParseTripIntent(text, undefined, () =>
+          setMessageText(THINKING_ID, "Waking up Tia — the first request of the day can take up to 30s… 🌅"),
+        );
         removeMessage(THINKING_ID);
         setSending(false);
 
@@ -542,7 +545,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     scrollToEnd();
 
     const mimeType = asset.mimeType && asset.mimeType.startsWith("image/") ? asset.mimeType : "image/jpeg";
-    const intent = await tryParseTripIntent("", { base64: asset.base64, mimeType });
+    const intent = await tryParseTripIntent("", { base64: asset.base64, mimeType }, () =>
+      setMessageText(THINKING_ID, "Waking up Tia — the first request of the day can take up to 30s… 🌅"),
+    );
     removeMessage(THINKING_ID);
     setSending(false);
 

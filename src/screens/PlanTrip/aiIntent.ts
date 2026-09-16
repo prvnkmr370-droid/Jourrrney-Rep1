@@ -16,6 +16,7 @@
  */
 import { API_BASE_URL } from "@/config/api";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { fetchAiJson } from "./aiRequest";
 import type { TravelStyle } from "./data";
 
 // The backend now has a Gemini→Groq failsafe for text requests (see
@@ -52,20 +53,16 @@ function destinationSummaries() {
   return DESTINATIONS.map((d) => ({ id: d.id, name: d.name, state: d.state, tagline: d.tagline, category: d.category }));
 }
 
-export async function tryParseTripIntent(message: string, image?: AiIntentImage): Promise<AiIntentResult | null> {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), image ? IMAGE_REQUEST_TIMEOUT_MS : REQUEST_TIMEOUT_MS);
+export async function tryParseTripIntent(message: string, image?: AiIntentImage, onWaking?: () => void): Promise<AiIntentResult | null> {
+  const res = await fetchAiJson(
+    `${API_BASE_URL}/plan-trip/parse-intent`,
+    { message, image, destinations: destinationSummaries() },
+    image ? IMAGE_REQUEST_TIMEOUT_MS : REQUEST_TIMEOUT_MS,
+    onWaking,
+  );
+  if (!res || !res.ok) return null;
 
   try {
-    const res = await fetch(`${API_BASE_URL}/plan-trip/parse-intent`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      signal: controller.signal,
-      body: JSON.stringify({ message, image, destinations: destinationSummaries() }),
-    });
-    clearTimeout(timeout);
-    if (!res.ok) return null;
-
     const data = await res.json();
     const destination = typeof data?.destinationId === "string" ? (DESTINATIONS.find((d) => d.id === data.destinationId) ?? null) : null;
 
@@ -78,7 +75,6 @@ export async function tryParseTripIntent(message: string, image?: AiIntentImage)
       reasoning: typeof data?.reasoning === "string" ? data.reasoning : "",
     };
   } catch {
-    clearTimeout(timeout);
     return null;
   }
 }
