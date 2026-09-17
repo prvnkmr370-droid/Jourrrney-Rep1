@@ -65102,7 +65102,12 @@ export const DESTINATIONS: Destination[] = [
     description: "The Shirui Hills, in the Siroy Hill Range of Ukhrul district, are the only place on Earth where the Shirui Lily (Lilium mackliniae) — Manipur's state flower, a rare pinkish-white bloom — grows wild. Named after Jean Macklin, wife of the botanist who spotted it in 1946, the flower went on to win a merit award at London's Royal Horticultural Society Flower Show in 1948. The hills themselves are a high-altitude trekking destination with sweeping views across Ukhrul district, at their best during the short blooming season.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/shirui-1.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/shirui-1.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/shirui-1.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/shirui-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/31/Siroy_Lily_at_Siroy_National_Park%2C_Manipur.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/A_scene_from_Siroy_National_Park%2C_Manipur_%281%29.jpg",
+    ],
+    imageCredit: "Additional photos: G Devadarshan Sharma and contributors, CC BY-SA 4.0, via Wikimedia Commons",
     category: ["Nature", "Trekking"],
     bestSeason: "Late May – early June (Shirui Lily bloom, also when the Shirui Lily Festival is held)",
     duration: "1–2 days (day trek possible; an overnight in Ukhrul town gives more flexibility)",
