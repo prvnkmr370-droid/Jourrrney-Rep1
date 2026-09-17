@@ -67477,6 +67477,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Khasi cuisine (jadoh, tungrymbai) in Shillong"],
     packingTips: ["Comfortable walking shoes", "A light jacket — cool and often misty", "Cash for guide fees and the heritage museum", "A camera for the forest and monoliths"],
   },
+  {
+    id: "balpakram-national-park",
+    name: "Balpakram National Park",
+    state: "Meghalaya",
+    tagline: "The Garo Tribe's Mystical 'Land of Perpetual Winds'",
+    description: "In the remote South Garo Hills, Balpakram National Park is a windswept wilderness of table-top plateaus, limestone caves, and dramatic gorges overlooking the Simsang River valley — revered by the Garo tribe as the resting place of departed souls and steeped in local legend. Its rare biodiversity includes the Hoolock gibbon, clouded leopards, the Great Indian Hornbill, and the rare insectivorous pitcher plant Nepenthes khasiana, alongside official-site claims of elephants and tigers among the park's flagship species. Reaching it is a genuine expedition — a 9-10 hour drive from Shillong through winding terrain to remote Baghmara, the closest town.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/balpakram.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/balpakram.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/balpakram.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Balpakram_Canyon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Balpakram_NP.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
+    category: ["Nature", "Wildlife", "Adventure"],
+    bestSeason: "October – March (trekking and wildlife); November – February (best for birdwatching and orchids)",
+    duration: "1–2 days (remote location, long approach)",
+    highlights: [{ name: "Windswept table-top plateaus and dramatic gorges over the Simsang River valley" }, { name: "Rare wildlife including Hoolock gibbons, clouded leopards, and the Great Indian Hornbill" }, { name: "Limestone caves steeped in Garo legend" }, { name: "The rare insectivorous pitcher plant Nepenthes khasiana" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Guwahati Airport (~284 km) or Shillong Airport (~230 km), then a long road journey", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then road via Tura/Baghmara", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "This is a remote, multi-day expedition — plan accordingly rather than as a quick add-on." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "From Shillong: NH106 and SH4 via Nongstoin and Baghmara, ~9–10 hours", costRange: "No direct public transport — hiring a vehicle from Tura or Baghmara is essential", tips: "An SUV is recommended given the rough roads; hire in Baghmara or Tura." },
+    ],
+    accommodation: [
+      { type: "Baghmara Homestays & Forest Rest Houses", priceRange: "₹500–₹3,000/night", examples: ["Basic homestays in Baghmara", "Forest rest houses"], description: "Accommodation near the park is basic — Baghmara is the closest town with lodging options." },
+    ],
+    localTransport: [
+      { mode: "Hired Jeep/SUV from Baghmara", cost: "Arranged locally in Baghmara or Tura", notes: "No public transport serves the park — a hired vehicle is essential given the rough terrain", available: true },
+      { mode: "Local Guide (Highly Recommended)", cost: "Arranged in Baghmara", notes: "Recommended for navigation, cave exploration, and cultural/language insight", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5000, food: 1200, transport: 1300, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Journey to Balpakram", morning: "Depart Shillong early for the long drive via Nongstoin and Baghmara.", afternoon: "Arrive in Baghmara, arrange a local guide and hired vehicle.", evening: "Settle into a homestay or forest rest house in Baghmara.", stay: "Baghmara", meals: "Local Garo meals in Baghmara", tips: "Start very early — the drive alone takes most of the day." },
+      { day: 2, title: "Exploring the Park", morning: "Trek across the plateaus and gorge edges with your guide.", afternoon: "Explore limestone caves and go wildlife/birdwatching.", evening: "Return to Baghmara or begin the journey back.", stay: "Baghmara", meals: "Carry supplies — the park itself has no facilities", tips: "Sturdy trekking shoes and light warm clothing are essential for the remote terrain." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A recognised national park with an established guide network in Baghmara", "Remote and sparsely visited, which means limited but generally respectful local infrastructure"],
+      precautions: ["Extremely remote with no public transport or facilities inside the park — always travel with a hired vehicle and local guide", "Basic medical facilities only in Baghmara — carry a first-aid kit and any necessary medication", "Rough terrain and long approach roads — avoid night travel on the access road"],
+      soloTips: ["Not recommended solo given the remoteness — join a guided group or arrange a trusted local guide in advance through Baghmara"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["Marked trails with a local guide", "Baghmara town"],
+      avoidAreas: ["Unmarked cave systems without a guide", "The access road after dark"],
+    },
+    rating: 4.4,
+    reviews: 480,
+    mustEat: ["Garo cuisine (nakham bitchi, wak pura) in Baghmara"],
+    packingTips: ["Sturdy trekking shoes", "Light warm clothing — windy at higher points", "Sufficient supplies and a first-aid kit for the remote terrain", "A torch for cave exploration", "A camera for the gorge and wildlife"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
