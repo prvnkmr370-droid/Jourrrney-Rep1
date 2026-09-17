@@ -67762,6 +67762,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Khasi cuisine back in Shillong"],
     packingTips: ["A camera for the artifacts and orchid garden", "Comfortable walking shoes", "Cash for entry"],
   },
+  {
+    id: "twahlongwar-open-air-museum",
+    name: "Twahlongwar Open Air Museum",
+    state: "Meghalaya",
+    tagline: "Meghalaya's First Open-Air Museum, an 18th-Century Settlement Preserved in Place",
+    description: "At Wahmawpat near Mawsynram, the Twahlongwar Open-Air Museum is Meghalaya's first open-air heritage conservation project — an abandoned settlement whose remnants, a former market area, burial sites, and megalithic monuments, are preserved with minimal intervention in their original natural and historical setting. Laboratory testing in Florida, USA confirmed the settlement dates to the mid-18th century, and today a guided 30-45 minute uphill trek from the Information Centre leads visitors through the site.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/twahlongwar-1.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/twahlongwar-1.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/twahlongwar-1.webp",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/gallery/iewtwahlongwar-1.webp",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/gallery/iewtwahlongwar-3.webp",
+    ],
+    category: ["Culture", "Heritage"],
+    bestSeason: "November – March",
+    duration: "2–3 hours (including the uphill trek)",
+    highlights: [{ name: "An 18th-century settlement preserved in its original context" }, { name: "Megalithic monuments, burial sites, and a former market area" }, { name: "A guided 30-45 minute uphill trek to the site" }, { name: "Scientifically dated remains — Meghalaya's first open-air museum" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Umroi Airport (~76 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~164 km) or Umroi Airport (~76 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Combine with a Mawsynram trip given the shared route." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "From Shillong: ~51 km, about 1.5 hours via Mawsynram", costRange: "Private vehicle or local taxi recommended", tips: "Get tickets and information at the Information Centre before the uphill trek." },
+    ],
+    accommodation: [
+      { type: "Shillong or Mawsynram Stays", priceRange: "₹1,000–₹6,000/night", examples: ["City hotels in Shillong", "Homestays near Mawsynram"], description: "A day-trip destination — most visitors base in Shillong or combine it with a Mawsynram visit." },
+    ],
+    localTransport: [
+      { mode: "Guided Walk from Information Centre", cost: "Included with entry ticket", notes: "A 30–45 minute uphill trek with a tour guide leads to the museum site", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 500, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7600, accommodation: 5000, food: 1000, transport: 800, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Twahlongwar Open Air Museum", morning: "Drive from Shillong to Wahmawpat, get tickets and info at the Information Centre.", afternoon: "Take the guided uphill trek and explore the settlement remains, megaliths, and burial sites.", evening: "Return to Shillong or continue on to Mawsynram.", stay: "Shillong", meals: "Carry water and snacks — limited facilities on-site", tips: "The museum closes at 3 PM — plan your visit for the morning." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A guided-only site with tour guides accompanying every visit", "A structured, ticketed heritage project with an Information Centre"],
+      precautions: ["The uphill trek to the site requires reasonable fitness and proper footwear", "Museum hours are limited (9 AM–3 PM) — arrive with enough time", "Respect the site's minimal-intervention conservation approach — do not touch or move artifacts"],
+      soloTips: ["Straightforward solo, since a guide accompanies every visit to the site"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The guided trail and museum site"],
+      avoidAreas: ["Off-trail areas away from the guided path"],
+    },
+    rating: 4.4,
+    reviews: 210,
+    mustEat: ["Khasi cuisine in Shillong or Mawsynram"],
+    packingTips: ["Sturdy walking shoes for the uphill trek", "Water and snacks", "A camera for the megaliths and landscape", "A light rain jacket — Mawsynram is one of the wettest places on Earth"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
