@@ -67818,6 +67818,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Khasi cuisine in Shillong or Mawsynram"],
     packingTips: ["Sturdy walking shoes for the uphill trek", "Water and snacks", "A camera for the megaliths and landscape", "A light rain jacket — Mawsynram is one of the wettest places on Earth"],
   },
+  {
+    id: "williamson-sangma-state-museum",
+    name: "Williamson Sangma Meghalaya State Museum",
+    state: "Meghalaya",
+    tagline: "Where Meghalaya's Heritage Comes Alive Through Sight, Sound, and Touch",
+    description: "Run by the Department of Arts and Culture, Government of Meghalaya, the newly opened Williamson Sangma Meghalaya State Museum in Shillong was curated by the Northeast India AV Archive to place the relationship between visitors and objects at the heart of the experience. Its Meghalaya-centric collections — spanning socio-historical, economic, religious, and anthropological narratives from communities across the state — are designed for sensory and participatory engagement rather than passive viewing, offering a genuinely contemporary way of encountering the state's cultural heritage.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/williamson-sangma-state-museum-1.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/williamson-sangma-state-museum-1.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/williamson-sangma-state-museum-1.webp",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/williamson-sangma-state-museum-2.webp",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/williamson-sangma-state-museum-3.webp",
+    ],
+    category: ["Culture", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "1–2 hours",
+    highlights: [{ name: "Meghalaya-centric collections from communities across the state" }, { name: "Participatory exhibits engaging sight, sound, and touch" }, { name: "Curated by the Northeast India AV Archive in a newly opened building" }, { name: "Textile, craft, and photographic collections across multiple galleries" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), then a short local ride", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~100 km) or Shillong Airport, then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Located within Shillong city itself — no separate long trip needed." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Within Shillong — reachable by local taxi or private vehicle", costRange: "Local taxi fare", tips: "Check current opening hours with the museum before visiting." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays in central Shillong"], description: "A city-centre museum — pairs naturally with any Shillong stay." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Private Vehicle", cost: "Local city fare", notes: "Located within Shillong, easily reached from any central hotel", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "State Museum Visit", morning: "Visit the museum and explore its participatory, sensory exhibits at a relaxed pace.", afternoon: "Continue to other central Shillong attractions.", evening: "Free evening in Shillong.", stay: "Shillong", meals: "Cafes and restaurants near central Shillong", tips: "Check current opening hours in advance, as they can vary." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A government-run institution within central Shillong with regular visitor traffic", "Located in a well-connected part of the city"],
+      precautions: ["Confirm opening hours before visiting, as they are not fixed year-round", "Some exhibits invite direct touch — follow posted gallery guidelines"],
+      soloTips: ["Very manageable solo — a central, well-established city museum"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The full museum complex"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 290,
+    mustEat: ["Cafes and Khasi cuisine in central Shillong"],
+    packingTips: ["A camera for the exhibits", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
