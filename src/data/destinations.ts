@@ -65221,7 +65221,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Zeilad Lake sits atop a hill in Tamenglong district and has been declared a wildlife sanctuary, known for its variety of fish, birds, and pythons. The picturesque, still water framed by forested hills makes it a genuinely quiet nature stop, well off the more-visited Imphal/Loktak circuit and reached through Tamenglong's characteristic hill terrain.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/zeilad-1.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/zeilad-1.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/zeilad-1.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/zeilad-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/A_banyan_Tree_near_Zeilad_Lake.jpg",
+    ],
+    imageCredit: "Additional photo: Dangmei, CC BY-SA 3.0, via Wikimedia Commons",
     category: ["Nature", "Wildlife"],
     bestSeason: "October – March (cooler, clearer weather)",
     duration: "1 day (half-day at the lake, factoring in the drive)",
