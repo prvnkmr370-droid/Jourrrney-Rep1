@@ -66212,7 +66212,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Nohkalikai Falls, about 7.5 km from Sohra (Cherrapunji) in the East Khasi Hills, plunges 340 metres into a deep, emerald-green pool — one of India's tallest plunge waterfalls and among Meghalaya's most photographed sights. Fed by rainwater collected on a small plateau, it flows year-round despite Sohra's famously extreme monsoon swings. The falls carry a well-known local legend that gives the site an added layer of mystery beyond its sheer scale.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg",
+      "https://images.pexels.com/photos/18442775/pexels-photo-18442775/free-photo-of-nohkalikai-falls-in-india.jpeg",
+      "https://images.pexels.com/photos/19618902/pexels-photo-19618902/free-photo-of-aerial-view-of-the-nohkalikai-falls-in-nohkalikai-village-in-india.jpeg",
+    ],
     category: ["Nature"],
     bestSeason: "October – December (post-monsoon, at its most spectacular)",
     duration: "2–3 hours",
