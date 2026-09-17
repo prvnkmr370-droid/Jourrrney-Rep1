@@ -66688,7 +66688,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Nongriat is reached by an epic descent — roughly 3,000–3,500 stone steps down from Tyrna village into a deep forested valley — to Meghalaya's most famous piece of living architecture: the Double-Decker Root Bridge, a two-level structure woven from Ficus elastica roots over generations. Along the way and beyond, the valley holds Rainbow Falls (a short further trek past the main bridge), smaller single-root bridges tucked into quiet corners, and swaying suspension bridges through lush jungle.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg"],
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Double_Decker_Root_Bridge%2C_Nongriat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature", "Trekking"],
     bestSeason: "October – March (dry season, ideal trekking conditions)",
     duration: "1–2 days (the descent and return alone is a full day for most visitors)",
