@@ -67652,6 +67652,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Garo cuisine (nakham bitchi, wak pura) in Baghmara"],
     packingTips: ["Binoculars for birdwatching", "Sturdy trekking shoes", "Water and snacks — limited facilities inside", "A camera with zoom for bird photography"],
   },
+  {
+    id: "don-bosco-museum",
+    name: "Don Bosco Museum",
+    state: "Meghalaya",
+    tagline: "A Seven-Level Cultural Time Machine of Northeast India's Tribes",
+    description: "Inside the Sacred Heart Church complex at Mawlai Phudmuri, the Don Bosco Museum spans 17 themed galleries across seven levels, weaving together the lives, dreams, and traditions of Northeast India's many tribes — from traditional dress and rare archival photography to well-researched sections on neighbouring Bhutan, Myanmar, and Nepal. A rooftop skywalk terrace offers sweeping views over Shillong, making the museum a genuine one-stop cultural experience for families, students, researchers, and travellers alike.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/don-bosco-museum.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/don-bosco-museum.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/don-bosco-museum.webp",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/dont-miss/sky-walk.jpg",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/dont-miss/gallery.jpg",
+    ],
+    category: ["Culture", "Heritage"],
+    bestSeason: "March – June (pleasant weather and clear skies, ideal for the rooftop skywalk)",
+    duration: "2–3 hours",
+    highlights: [{ name: "17 themed tribal culture galleries across seven levels" }, { name: "The Skywalk Terrace with sweeping views over Shillong" }, { name: "A rare archival photography section spanning generations" }, { name: "Set within the Sacred Heart Church complex" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, then a short local cab ride", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~128 km) or Shillong Airport, then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "An easy add-on to a Shillong city itinerary." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~3.5 km from Police Bazar, Shillong's centre — about a 15-minute cab ride via the 4th Furlong Point route", costRange: "Shared cabs and public transport are affordable and easily available", tips: "Closed on Sundays — check timings before visiting (9 AM–5:30 PM summer, 9 AM–4:30 PM winter)." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays near Police Bazar"], description: "A city-centre museum visit — pairs naturally with any Shillong stay." },
+    ],
+    localTransport: [
+      { mode: "Local Cab/Shared Taxi", cost: "Affordable, widely available in Shillong", notes: "About 5 km from key city points like the Meghalaya State Museum and Bara Bazaar", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Don Bosco Museum Visit", morning: "Arrive early to explore the 17 themed galleries at a relaxed pace.", afternoon: "Head up to the Skywalk Terrace for panoramic Shillong views, then visit the Sacred Heart Church.", evening: "Continue on to nearby Shillong attractions.", stay: "Shillong", meals: "Cafes and restaurants near Police Bazar", tips: "A local guide adds useful context to the tribal culture exhibits — worth arranging if available." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-established, family-friendly city museum with regular visitor traffic", "Located within a church complex with reliable security"],
+      precautions: ["Check opening days — closed on Sundays", "Photography rules vary by gallery — check signage before shooting"],
+      soloTips: ["Very manageable solo — a popular, well-trafficked city attraction"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The full museum complex"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 3200,
+    mustEat: ["Cafes near Police Bazar", "Khasi cuisine in central Shillong"],
+    packingTips: ["A camera for the skywalk views", "Comfortable shoes — seven levels of galleries involve real walking", "Entry fee cash, if not paying by card"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
