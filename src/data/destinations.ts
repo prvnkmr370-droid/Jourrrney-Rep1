@@ -65688,8 +65688,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Shree Govindajee Temple, next to the old royal palace in Imphal, is one of the more popular tourist destinations in the city and a historic centre of Vaishnavite worship in Manipur. Its twin golden domes, paved courtyard, and large raised congregation hall form a striking backdrop as priests descend the steps to accept offerings from devotees. The early-hour Aarti is a must for devoted followers, and visitors are welcomed to join the daily festivities alongside the regular congregation.",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Shree_Govindaji_temple%2C_Manipur.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Shree_Govindaji_temple%2C_Manipur.jpg",
-    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2c/Shree_Govindaji_temple%2C_Manipur.jpg"],
-    imageCredit: "Photo: kknila, CC BY-SA 2.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Shree_Govindaji_temple%2C_Manipur.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c0/FB7A9290.jpg",
+    ],
+    imageCredit: "Photos: kknila (CC BY-SA 2.0) and Bimal thongam (CC BY-SA 4.0), via Wikimedia Commons",
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – March",
     duration: "1–2 hours",
