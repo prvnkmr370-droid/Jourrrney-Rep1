@@ -66459,8 +66459,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Mawlynnong, near the India-Bangladesh border in the East Khasi Hills, is celebrated as Asia's cleanest village and fondly called \"God's Own Garden.\" Surrounded by fruit orchards and evergreen landscapes, its centrepiece is the Nohwet Living Root Bridge, hand-woven from the roots of the Ficus elastica tree over generations — visitors can cool off in the water beneath it. A century-old Church of the Epiphany and a bamboo Sky Viewpoint tower overlooking the Bangladesh plains round out a village that's as much a lesson in sustainable living as a scenic stop.",
     image: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Street_in_Mawlynnong.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Street_in_Mawlynnong.jpg",
-    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/aa/Street_in_Mawlynnong.jpg"],
-    imageCredit: "Photo: Sai Avinash, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Street_in_Mawlynnong.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/95/Mawlynnong_cleanest_village_in_Asia.jpg",
+    ],
+    imageCredit: "Photos via Wikimedia Commons; primary photo: Sai Avinash, CC BY-SA 4.0",
     category: ["Culture", "Nature"],
     bestSeason: "October – March (post-monsoon and winter, best for outdoor activities)",
     duration: "3–4 hours",
