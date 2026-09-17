@@ -66192,6 +66192,128 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Pack a picnic — a popular local picnic spot", "Local Zomi/Kuki-Chin cuisine in Churachandpur town"],
     packingTips: ["Your Inner Line Permit and photo ID", "Picnic supplies if planning to stay a while", "Comfortable walking shoes"],
   },
+  // Meghalaya, sourced from meghalayatourism.in — a far more structured
+  // official site than Manipur's, with rich per-place pages (real
+  // distances, opening hours, nearest-airport figures) and first-party
+  // images hosted on the site's own asset CDN (meghtour.web-assets.org),
+  // not a third-party mirror. Raw scrape saved at
+  // scripts/data/meghalaya-tourism-scrape.json. Safety framing reflects a
+  // genuinely different picture from Manipur — no general travel
+  // advisory — but carries a real, current (May 2026) government safety
+  // advisory for East Khasi Hills waterfall/adventure sites issued after
+  // a tourist's death at Wei Sawdong Falls, plus the tourism site's own
+  // "swimming isn't permitted at most riverine sites" note, both cited
+  // directly rather than a generic "very safe" gloss.
+  {
+    id: "nohkalikai-falls",
+    name: "Nohkalikai Falls",
+    state: "Meghalaya",
+    tagline: "India's Tallest Plunge Waterfall",
+    description: "Nohkalikai Falls, about 7.5 km from Sohra (Cherrapunji) in the East Khasi Hills, plunges 340 metres into a deep, emerald-green pool — one of India's tallest plunge waterfalls and among Meghalaya's most photographed sights. Fed by rainwater collected on a small plateau, it flows year-round despite Sohra's famously extreme monsoon swings. The falls carry a well-known local legend that gives the site an added layer of mystery beyond its sheer scale.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg",
+    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohkalikai.jpg"],
+    category: ["Nature"],
+    bestSeason: "October – December (post-monsoon, at its most spectacular)",
+    duration: "2–3 hours",
+    highlights: [{ name: "India's tallest plunge waterfall, a 340m drop" }, { name: "A striking emerald-green pool at the base" }, { name: "Multiple vantage points for photography" }, { name: "Arwah Cave and Mawsmai Cave nearby", id: "arwah-cave" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~79 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~167 km) or Shillong Airport (~79 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati is the more common gateway with far more flight options; Shillong's own airport (Umroi) has limited connectivity." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Cab from Shillong or Guwahati to Sohra, then ~20 min to the falls", costRange: "₹2,000–₹4,000 cab from Shillong to Sohra (one-way)", tips: "Sohra is the practical base town; arrange a local guide, per the tourism department's own advice." },
+    ],
+    accommodation: [
+      { type: "Sohra (Cherrapunji) Homestays & Guesthouses", priceRange: "₹1,000–₹3,500/night", examples: ["Cherrapunjee Holiday Resort", "A range of local homestays around Sohra"], description: "Sohra is the practical base for Nohkalikai and the district's other waterfalls/caves." },
+      { type: "Shillong Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["A wide range of city hotels near Police Bazar and Laitumkhrah"], description: "An alternative base if combining with Shillong city sights, at the cost of a longer day trip to the falls." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Tour Cab from Sohra or Shillong", cost: "₹2,000–₹4,000 from Shillong (round trip)", notes: "The standard way most visitors reach the falls; local guides available in Sohra", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Arwah Cave", distance: "~5 km", type: "Limestone Cave", isHidden: false, id: "arwah-cave" },
+      { name: "Mawsmai Cave", distance: "~5 km", type: "Limestone Cave", isHidden: false, id: "mawsmai-cave" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 1000, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sohra Waterfalls & Caves", morning: "Drive from Shillong to Sohra, then on to Nohkalikai Falls for its viewpoints.", afternoon: "Visit Arwah Cave and Mawsmai Cave nearby.", evening: "Return to Shillong or overnight in Sohra.", stay: "Sohra or Shillong", meals: "Local Khasi cuisine in Sohra", tips: "The falls are open 8:00 AM–5:00 PM daily — plan your Sohra loop around that window." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Meghalaya carries no general travel advisory and is consistently rated one of India's safer states for tourists, including solo travelers, with low reported crime against visitors in popular areas like Sohra", "A well-established, actively managed tourist site with marked vantage points and a live tourism-department weather/helpline presence"],
+      precautions: ["The Meghalaya government issued a formal safety advisory for East Khasi Hills adventure and waterfall sites in May 2026, after a tourist died slipping while taking photos at a nearby waterfall — stay well back from unfenced ledges near the falls and pool edge, and follow posted signage", "The pool and surrounding rock are genuinely slippery, especially in or after rain — the tourism department's own guidance recommends a local guide unfamiliar visitors", "Swimming/water activities are discouraged at many Meghalaya riverine sites for safety reasons per the tourism department's own seasonal guidance — check current signage at the falls", "Monsoon season brings landslide risk on approach roads — check conditions before travelling June–September"],
+      soloTips: ["Manageable solo given Meghalaya's generally strong safety reputation — still worth arranging a local guide in Sohra, per the tourism department's own advice, especially for the walk to the vantage points"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["Marked viewpoints and railed areas around the falls"],
+      avoidAreas: ["Unfenced ledges near the falls' edge or pool", "The approach road during heavy monsoon rain"],
+    },
+    rating: 4.6,
+    reviews: 4200,
+    mustEat: ["Jadoh (Khasi rice and meat dish) in Sohra", "Local pineapple and orange, grown in the East Khasi Hills", "Tungrymbai (fermented soybean dish)"],
+    packingTips: ["A light jacket — the plateau is cool and often misty", "Grippy shoes for wet rock near the falls", "A rain layer, especially June–September"],
+  },
+  {
+    id: "elephant-falls",
+    name: "Elephant Falls",
+    state: "Meghalaya",
+    tagline: "A Three-Tiered Waterfall Just Outside Shillong",
+    description: "Elephant Falls (Kshaid Lai Pateng in Khasi, roughly \"three-level falls\") is a multi-tiered waterfall in Upper Shillong, about 12 km from the city centre — one of the most accessible major falls in Meghalaya. Railed walkways run from the head of the falls to the bottom, so visitors can see all three levels up close and wade into the knee-deep pool at the base. The English name comes from a large rock once shaped like an elephant, destroyed in an earthquake over a century ago — the name outlived the rock.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp",
+    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp"],
+    category: ["Nature"],
+    bestSeason: "June – September (monsoon, fullest flow); year-round accessible given its closeness to Shillong",
+    duration: "1–2 hours",
+    highlights: [{ name: "Three distinct waterfall levels connected by railed walkways" }, { name: "A wadeable pool at the base" }, { name: "Just 12 km from central Shillong" }, { name: "Shillong Peak, on the same day-trip loop", id: "shillong-peak" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~38 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~127 km) or Shillong Airport (~38 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati has far more flight options than Shillong's own smaller airport." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~30–40 min from Shillong city (~12 km)", costRange: "₹300–₹800 cab/shared taxi from Shillong (round trip)", tips: "One of the easiest, closest waterfall visits to Shillong — reachable by cab, shared taxi, or local bus." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["A wide range of city hotels near Police Bazar and Laitumkhrah"], description: "Elephant Falls is close enough to Shillong that any city hotel works as a base." },
+    ],
+    localTransport: [
+      { mode: "Cab / Shared Taxi / Local Bus from Shillong", cost: "₹300–₹800 round trip", notes: "Widely available; many tour operators bundle this with Shillong Peak and Ward's Lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shillong Peak", distance: "~5 km", type: "Viewpoint", isHidden: false, id: "shillong-peak" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1200, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Elephant Falls & Shillong Peak", morning: "Walk the railed paths down Elephant Falls' three levels; wade in the base pool.", afternoon: "Continue to Shillong Peak for panoramic city views.", evening: "Return to Shillong for dinner.", stay: "Shillong", meals: "Local Khasi and North-East cuisine in Shillong", tips: "Open 6:00 AM–6:00 PM daily — a good early-morning stop before the day's crowds." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["One of the most accessible, well-visited waterfalls in Meghalaya, just outside Shillong with steady daytime footfall and railed, maintained walkways", "Meghalaya carries no general travel advisory and rates consistently well for visitor safety, including solo travelers"],
+      precautions: ["The Meghalaya government's May 2026 safety advisory for East Khasi Hills waterfall/adventure sites applies here too — stick to the railed walkways and posted signage rather than climbing off-path for photos", "Wet rock near the base pool needs careful footing, especially in monsoon", "Standard tourist-spot caution around crowds at peak times"],
+      soloTips: ["One of the easier solo visits on this list — close to Shillong, well-trafficked, and easily reached by shared taxi or local bus"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The railed walkways and viewing platforms"],
+      avoidAreas: ["Climbing off the railed path for photos", "Wet rock edges near the base pool in monsoon"],
+    },
+    rating: 4.3,
+    reviews: 5100,
+    mustEat: ["Local snacks and tea stalls near the entrance", "Jadoh and other Khasi dishes back in Shillong"],
+    packingTips: ["Grippy shoes — walkway steps get wet with spray", "A light jacket for the misty upper section", "A change of clothes if planning to wade in the pool"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

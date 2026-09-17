@@ -1,0 +1,26 @@
+{
+  "source": "https://www.meghalayatourism.in",
+  "scrapedAt": "2026-09-18",
+  "note": "Official Meghalaya Tourism site — far more structured than the Manipur sources: clean /explore/destinations/ hierarchy by region, by interest, and main towns, with rich individual pages per place (real distances, opening hours, nearest airports, nearby-attraction cross-links) and first-party images hosted on the site's own asset CDN (meghtour.web-assets.org), not a third-party mirror. Full inventory of named places found across hub pages below; individual pages scraped in full as each destination card is built.",
+  "safetyContext": {
+    "checkedAt": "2026-09-18",
+    "summary": "Meghalaya carries no general travel advisory (unlike Manipur) and is consistently rated one of India's safer states for tourists, including solo travelers — low crime against visitors in popular areas (Sohra, Dawki, Shillong). Real, current, site-independent safety fact: in May 2026 the Meghalaya government issued a formal safety advisory for East Khasi Hills adventure/waterfall sites after a 15-year-old tourist died slipping while taking photos at Wei Sawdong Falls — mandatory site maps, trained guides, and safety-equipment inspections followed. Genuine hazards: rugged terrain, monsoon landslides, slippery rocks near waterfalls/pools, and swimming being prohibited at many riverine sites for safety reasons (per the tourism site's own seasonal guide).",
+    "sources": [
+      "https://hubnetwork.in/meghalaya-issues-comprehensive-safety-advisory-for-tourists-operators-in-east-khasi-hills/",
+      "https://www.sentinelassam.com/breakingnews/meghalaya-tourism-helpline-number-for-tourists-amid-border-tensions",
+      "https://www.thepocketgypsy.com/2026/05/meghalaya-govt-issues-advisory-for.html"
+    ],
+    "officialHelpline": { "tollFree": "1800 599 2026", "whatsappSms": "+91 76400 03050", "email": "helpline@megh-tourism.com" }
+  },
+  "inventory": {
+    "majesticWaterfalls": ["Nohkalikai", "Nohsngithiang (Seven Sisters Falls)", "Elephant Falls", "Phe Phe Falls", "Krang Suri Falls", "Rongbangdare Falls"],
+    "livingRootBridges": ["Rangthylliang - Mawkyrnot", "Nongriat", "Mawlynnong", "Kudengrim", "Nongbareh", "Padu", "Sohra (Cherrapunji)", "Dawki (Mawlynnong and Shnongpdeng)"],
+    "caveExploration": ["Siju Cave", "Krem Puri Cave", "Mawsmai Cave", "Arwah Cave", "Liat Prah Cave (Krem Lait Prah)"],
+    "viewpointsAndPeaks": ["Laitlum", "Shillong Peak", "Mawkdok Dympep Valley", "Tura Peak"],
+    "sacredGrovesAndSanctuaries": ["Mawphlang", "Nongriat (dup)", "Balpakram National Reserve", "Nokrek National Park", "Siju Bird Sanctuary"],
+    "museums": ["Don Bosco Museum", "Ever Living Museum", "Twahlongwar Open Air Museum", "Williamson Sangma Meghalaya State Museum", "Mawphlang Heritage Museum"],
+    "mainTowns": ["Shillong (Khasi Hills)", "Tura (Garo Hills)", "Jowai (Jaintia Hills)"],
+    "note": "Several names overlap across categories (Nongriat appears under both root bridges and sacred groves/waterfalls; Sohra and Dawki appear under root bridges but are really town/area hubs) — each will get one card at its most specific/accurate identity, cross-linked as nearbyPlaces elsewhere rather than duplicated."
+  },
+  "places": {}
+}
