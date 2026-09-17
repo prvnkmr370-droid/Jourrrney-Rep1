@@ -67035,6 +67035,60 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Garo cuisine in Baghmara/Tura"],
     packingTips: ["A reliable headlamp or torch, plus spare batteries", "Sturdy trekking/caving shoes", "A local guide arranged in advance — non-negotiable for this one", "Warm layers — the approach and cave interior are both cool"],
   },
+  {
+    id: "liat-prah-cave",
+    name: "Liat Prah Cave (Krem Lait Prah)",
+    state: "Meghalaya",
+    tagline: "South Asia's Longest Cave, Home to the 'Aircraft Hangar'",
+    description: "Krem Lait Prah, in the East Jaintia Hills' Shnongrim Ridge, is South Asia's longest natural cave at over 34 km — a genuine geological superlative. Its standout feature is the \"Aircraft Hangar,\" an enormous natural trunk passage so vast it earned an aviation-inspired nickname, carved entirely by underground rivers over millions of years. The cave forms part of a wider, still largely unexplored network in the Shnongrim Ridge area, and the scenic trek to the entrance through fog-wrapped East Jaintia Hills is an experience in itself.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/liat-prah.jpg",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/liat-prah.jpg",
+    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/destinations/liat-prah.jpg"],
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – April (cool, dry weather, safe exploration)",
+    duration: "Half-day to a full day, depending on how deep you go",
+    highlights: [{ name: "The \"Aircraft Hangar\" — a colossal natural trunk passage" }, { name: "Over 34 km of mapped cave, the longest in South Asia" }, { name: "Stalactites, stalagmites, and flowstone formations" }, { name: "A scenic fog-wrapped trek to the cave entrance" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~122 km from the cave — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~232 km) or Shillong Airport (~122 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Jowai is the practical staging town for the East Jaintia Hills." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Road from Shillong or Jowai; from Nongkhlieh village, the cave is a further 7–8 km on foot or by local guide", costRange: "₹3,000–₹5,500 cab from Shillong (one-way)", tips: "Roads are generally in good condition, but the final approach is on foot through rugged terrain." },
+    ],
+    accommodation: [
+      { type: "Jowai Guesthouses & Hotels", priceRange: "₹1,000–₹3,000/night", examples: ["A range of local guesthouses in Jowai town"], description: "Jowai is the practical base for this and the Jaintia Hills' other sites." },
+    ],
+    localTransport: [
+      { mode: "Local Guide (essential)", cost: "Arranged in Jowai or Nongkhlieh village", notes: "The cave's scale and remote sections make a guide genuinely necessary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Krang Suri Falls", distance: "Variable, same district", type: "Waterfall", isHidden: true, id: "krang-suri-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1800, food: 600, transport: 900, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4000, food: 1000, transport: 1900, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Krem Lait Prah Exploration", morning: "Drive from Shillong/Jowai to Nongkhlieh village, then trek to the cave entrance.", afternoon: "Explore the main passages and the \"Aircraft Hangar\" chamber with a local guide.", evening: "Return to Jowai.", stay: "Jowai", meals: "Local Jaintia cuisine in Jowai", tips: "This is a genuinely large cave system — decide with your guide in advance how deep you want to go." },
+    ],
+    womenSafety: {
+      score: 5,
+      level: "Moderate",
+      highlights: ["A well-documented geological landmark (South Asia's longest cave) with an established local guiding tradition", "Meghalaya carries no general travel advisory overall"],
+      precautions: ["This is a genuinely large, complex cave system in a remote part of the East Jaintia Hills — a local guide is essential, not optional, and going beyond the mapped main passages should only be done with experienced guides", "The approach trek involves rugged terrain — proper footwear and fitness matter", "Facilities are limited this far from Jowai — travel with a guide and a clear plan"],
+      soloTips: ["Not recommended solo given the cave's scale and the remoteness of the approach — go with an experienced local guide and ideally a group"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main mapped passages with a local guide"],
+      avoidAreas: ["Unmapped or unexplored sections without an experienced guide"],
+    },
+    rating: 4.4,
+    reviews: 85,
+    mustEat: ["Local Jaintia cuisine in Jowai"],
+    packingTips: ["A reliable headlamp or torch, plus spare batteries", "Sturdy trekking/caving shoes", "A local guide arranged in advance — this is a large, complex cave system", "Warm layers for the cool cave interior"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
