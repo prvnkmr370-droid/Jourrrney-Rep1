@@ -65747,8 +65747,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Shaheed Minar (the Martyrs' Memorial Pillar) stands tall in Bir Tikendrajit Park at the heart of Imphal, erected in memory of the patriotic Meitei and tribal martyrs who sacrificed their lives fighting the British in the Anglo-Manipuri War of 1891. The pillar is adorned with statues of Kanglasha, the mythical dragon-lion of ancient Meitei religion that also appears on the official Emblem of the Government of Manipur — tying the memorial directly to the state's own cultural identity.",
     image: "https://upload.wikimedia.org/wikipedia/commons/6/66/The_Martyrs%27_Memorial_Pillar_%28Shaheed_Minar%29_of_the_Bir_Tikendrajit_Park_in_Imphal%2C_Manipur%2C_India_%28Front_View%29.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/66/The_Martyrs%27_Memorial_Pillar_%28Shaheed_Minar%29_of_the_Bir_Tikendrajit_Park_in_Imphal%2C_Manipur%2C_India_%28Front_View%29.jpg",
-    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/66/The_Martyrs%27_Memorial_Pillar_%28Shaheed_Minar%29_of_the_Bir_Tikendrajit_Park_in_Imphal%2C_Manipur%2C_India_%28Front_View%29.jpg"],
-    imageCredit: "Photo: Haoreima, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/6/66/The_Martyrs%27_Memorial_Pillar_%28Shaheed_Minar%29_of_the_Bir_Tikendrajit_Park_in_Imphal%2C_Manipur%2C_India_%28Front_View%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/54/A_triad_of_Classical_Meitei_sculptures_of_traditional_Meetei_mythological_creatures_%26_a_tripod_like_foundation_stands_of_the_Martyrs%27_Memorial_Pillar_in_the_Bir_Tikendrajit_Park_in_Imphal%2C_Kangleipak_-_in_a_Classical_Meitei_garden_01.jpg",
+    ],
+    imageCredit: "Photos: Haoreima, CC BY-SA 4.0, via Wikimedia Commons",
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
