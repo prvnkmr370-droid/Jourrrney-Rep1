@@ -67366,6 +67366,60 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Light refreshments at the roadside stalls", "Local Khasi cuisine in Sohra or Shillong"],
     packingTips: ["A camera for the gorge views", "Cash for ziplining or Khasi attire rental", "A light jacket — can be windy and cool"],
   },
+  {
+    id: "tura-peak",
+    name: "Tura Peak",
+    state: "Meghalaya",
+    tagline: "A 900-Metre Summit Trek Above the Garo Hills' Main Town",
+    description: "Rising nearly 900 metres above sea level and just 5 km from Tura town, Tura Peak is the Garo Hills' signature trek — a moderately challenging 60-90 minute climb from the Akonngre trailhead through dense forest inhabited by hornbills and gibbons. The summit holds a historic Cinchona plantation and an old observation tower, with sweeping views over Tura town and the surrounding hills that make the climb worth the effort.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/tura-peak.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/tura-peak.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/tura-peak.webp",
+    ],
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – April (clear views, pleasant trekking weather)",
+    duration: "60–90 minutes to the summit (half-day round trip with rest stops)",
+    highlights: [{ name: "A moderately challenging forest trek to a 900m summit" }, { name: "Sweeping views over Tura town and the Garo Hills" }, { name: "A historic Cinchona plantation and old observation tower" }, { name: "Forest inhabited by hornbills and gibbons along the trail" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Guwahati Airport (~203 km) or Shillong Airport (~308 km), then road", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then ~203 km by road to Tura", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati is the far closer air link for the Garo Hills than Shillong." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Trailhead near Akonngre is ~5 km from Tura town", costRange: "Local taxi/auto fare to the trailhead", tips: "Start early morning for cooler trekking conditions and clearer summit views." },
+    ],
+    accommodation: [
+      { type: "Tura Town Hotels", priceRange: "₹800–₹5,000/night", examples: ["Hotel Rikman Continental", "Hotel Chandana", "Circuit House, Tura"], description: "Tura town is the base — no lodging at the peak itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto to Akonngre Trailhead", cost: "Local fare from Tura town", notes: "The trek itself is on foot from the trailhead to the summit", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 2000, food: 500, transport: 200, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 5000, food: 1000, transport: 400, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tura Peak Trek", morning: "Head to the Akonngre trailhead early and begin the climb through forest.", afternoon: "Reach the summit, visit the Cinchona plantation and observation tower, take in the views, then descend.", evening: "Return to Tura town to rest.", stay: "Tura", meals: "Carry water and snacks — no facilities on the trail", tips: "Wear proper trekking shoes; the forest trail can be slippery, especially after rain." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, established local trek with a clear, single trailhead", "Tura is the Garo Hills' main town with regular local traffic to the trailhead"],
+      precautions: ["The forest trail has no facilities — carry water, snacks, and a charged phone", "Trek in daylight hours and ideally with a local guide or fellow trekkers rather than alone late in the day", "Slippery sections in and after monsoon — sturdy footwear is essential"],
+      soloTips: ["Best attempted with a local guide or other trekkers given the forest terrain and limited trail signage"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main trail from Akonngre to the summit"],
+      avoidAreas: ["Off-trail forest areas without a guide", "The trail after dark"],
+    },
+    rating: 4.3,
+    reviews: 620,
+    mustEat: ["Garo cuisine (nakham bitchi, wak pura) back in Tura town"],
+    packingTips: ["Sturdy trekking shoes", "Water and snacks — no facilities on the trail", "A light rain jacket in monsoon season", "A camera for the summit views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
