@@ -67310,6 +67310,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Jadoh and Pumaloi at nearby stalls", "Local Khasi cuisine back in Shillong"],
     packingTips: ["Valid photo ID — mandatory for entry", "A light jacket — windy at altitude", "Binoculars for birdwatching on the wooded slopes"],
   },
+  {
+    id: "mawkdok-dympep-valley",
+    name: "Mawkdok Dympep Valley",
+    state: "Meghalaya",
+    tagline: "A Dramatic V-Shaped Gorge on the Shillong-Cherrapunji Road",
+    description: "Mawkdok Dympep Valley, about 30 km from Shillong on the Shillong-Cherrapunji road, is also known as the Duwan Sing Syiem Bridge viewpoint — a dramatic V-shaped gorge carpeted in green, where the hills converge into a striking formation especially photogenic at sunrise and sunset. Beyond the view itself, it's a genuine adventure stop: visitors can zipline across the valley with local operators, rent traditional Khasi attire for photos, or walk down forested steps to the actual Duwan Sing Syiem bridge for a different vantage point.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/experiences/adventure/mawkdok.jpg",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/experiences/adventure/mawkdok.jpg",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/experiences/adventure/mawkdok.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/44/Mawkdok_Dympep_Valley.jpg",
+    ],
+    imageCredit: "Additional photo via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – April (clear views, pleasant weather)",
+    duration: "1–2 hours (longer with ziplining or the bridge walk)",
+    highlights: [{ name: "A dramatic V-shaped gorge view" }, { name: "Ziplining across the valley (via local operators)" }, { name: "Traditional Khasi attire rentals for photos" }, { name: "A forested-steps walk down to the Duwan Sing Syiem bridge" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~54 km from the valley — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~147 km) or Shillong Airport (~54 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "On the way to Sohra — most visitors stop here en route rather than as a dedicated trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~30 km from Shillong on the Shillong-Cherrapunji road", costRange: "Shared vehicles to Sohra from Bara Bazaar or Anjali Taxi Stand pass this stop", tips: "Public transport thins out later in the day — head back before 4 PM if relying on it." },
+    ],
+    accommodation: [
+      { type: "Shillong or Sohra Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels in Shillong", "Homestays and Cherrapunjee Holiday Resort in Sohra"], description: "A roadside stop between Shillong and Sohra — not an overnight destination itself." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Vehicle on the Shillong-Cherrapunji Road", cost: "Fare varies by shared vs. private vehicle", notes: "Valley views and ziplining are visible right from the roadside", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5500, food: 1200, transport: 500, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "En Route to Sohra", morning: "Stop at Mawkdok Dympep Valley on the drive from Shillong to Sohra.", afternoon: "Take in the gorge view, try ziplining if interested, and continue on to Sohra.", evening: "Arrive in Sohra for the night.", stay: "Sohra", meals: "Light refreshments and handicraft stalls at the viewpoint", tips: "A natural stop on the way to Sohra's waterfalls and caves — no need for a dedicated trip." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established roadside stop on the main Shillong-Cherrapunji tourist route, with regular vehicle and visitor traffic", "Organised adventure activities (ziplining) run through named local operators rather than informal setups"],
+      precautions: ["Unfenced gorge edges at the viewpoint — stay well back, especially for photos", "Public transport is limited later in the day — plan your return before 4 PM if not self-driving", "The Meghalaya government's May 2026 safety advisory for adventure/waterfall sites is a relevant reminder for any activity here, including ziplining — use only established, reputable operators"],
+      soloTips: ["Manageable solo given how well-trafficked this roadside stop is — ziplining and other activities are run by named operators worth booking in advance"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main viewpoint and roadside stall area"],
+      avoidAreas: ["Unfenced gorge edges", "Unlicensed/informal ziplining operators"],
+    },
+    rating: 4.4,
+    reviews: 1600,
+    mustEat: ["Light refreshments at the roadside stalls", "Local Khasi cuisine in Sohra or Shillong"],
+    packingTips: ["A camera for the gorge views", "Cash for ziplining or Khasi attire rental", "A light jacket — can be windy and cool"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
