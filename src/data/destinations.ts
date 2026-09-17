@@ -67594,6 +67594,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Garo cuisine in Daribokgre or Tura", "Wild citrus fruits (seasonal, where locally offered)"],
     packingTips: ["Sturdy trekking shoes", "Water, light snacks, and binoculars", "A camera for wildlife and the misty trails", "Offline maps — network is limited inside the park"],
   },
+  {
+    id: "siju-bird-sanctuary",
+    name: "Siju Bird Sanctuary",
+    state: "Meghalaya",
+    tagline: "Meghalaya's Oldest Wildlife Sanctuary, Beside the Simsang River",
+    description: "Set across the Simsang River near Siju Cave in the South Garo Hills, Siju Bird Sanctuary is Meghalaya's oldest wildlife sanctuary — a haven for the grey hornbill, migratory Siberian ducks, and the state bird, the grey peacock pheasant, alongside elephants, leopards, and hoolock gibbons in the surrounding forest. Trails flanked by limestone cliffs and tropical foliage wind through the sanctuary, with winter bringing flocks of migratory ducks gliding across the river.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-bird-sanctuary.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-bird-sanctuary.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-bird-sanctuary.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/1/19/Pond_Siju_Bird_Sanctuary_Meghalaya_Oct24_A7CR_04020.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Steps_Siju_WLS_South_Garo_Oct24_A7CR_03961.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – March (peak for migratory bird sightings)",
+    duration: "Half day to 1 day (often paired with a Siju Cave visit)",
+    highlights: [{ name: "Meghalaya's oldest wildlife sanctuary" }, { name: "The state bird, the grey peacock pheasant, in its natural habitat" }, { name: "Migratory Siberian ducks on the Simsang River in winter" }, { name: "Trails flanked by limestone cliffs and tropical foliage" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Guwahati Airport (~202 km) or Shillong Airport (~279 km), then road", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then road via Baghmara", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Baghmara is the nearest town, about 33 km from the sanctuary." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "From Shillong via NH62, ~450 km / 10–11 hours; from Guwahati via Goalpara and Dudhnoi, ~216 km / 6–7 hours", costRange: "Private vehicle or overnight sumo recommended", tips: "Near Siju Cave — most visitors combine both stops in one trip." },
+    ],
+    accommodation: [
+      { type: "Baghmara Homestays & Rest Houses", priceRange: "₹500–₹3,000/night", examples: ["Basic homestays and forest rest houses in Baghmara"], description: "Baghmara is the base — accommodation directly at the sanctuary is minimal." },
+    ],
+    localTransport: [
+      { mode: "Local Cab/Shared Sumo from Baghmara", cost: "Local fare, ~1.5 hours through forested terrain", notes: "A short trek through forested trails leads to the sanctuary entrance across the Simsang River", available: true },
+      { mode: "Local Guide (Recommended)", cost: "Arranged in Baghmara", notes: "Advisable for navigation and language, per the tourism board's own guidance", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Siju Bird Sanctuary & Siju Cave", morning: "Travel from Baghmara to the sanctuary entrance and trek in with a local guide.", afternoon: "Birdwatch along the Simsang River trails, then visit nearby Siju Cave.", evening: "Return to Baghmara.", stay: "Baghmara", meals: "Carry snacks and water — limited facilities inside the sanctuary", tips: "Binoculars make a real difference here — bring your own if you have them." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A long-established sanctuary with a known local guide network via Baghmara", "Often visited alongside Siju Cave, so daytime footfall is reasonably steady"],
+      precautions: ["Remote with limited facilities and no public transport directly to the entrance — arrange a local cab or guide from Baghmara", "River crossing and forested trails require care, especially in wet conditions", "Basic medical facilities only in Baghmara"],
+      soloTips: ["Arrange a local guide in advance through Baghmara rather than attempting the trail alone"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["Marked trails with a guide", "Baghmara town"],
+      avoidAreas: ["Unmarked river crossings", "The forest trail after dark"],
+    },
+    rating: 4.2,
+    reviews: 310,
+    mustEat: ["Garo cuisine (nakham bitchi, wak pura) in Baghmara"],
+    packingTips: ["Binoculars for birdwatching", "Sturdy trekking shoes", "Water and snacks — limited facilities inside", "A camera with zoom for bird photography"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
