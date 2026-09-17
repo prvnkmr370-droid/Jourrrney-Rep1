@@ -67030,7 +67030,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Arwah Cave, Meghalaya's most-visited cave, is renowned for genuine fossils embedded in its limestone walls — crustacean shells and fish bones from ancient marine life, visible in the lit interior toward the cave's end. The picturesque approach path is carved through thick vegetation and passes along Lawshynna Hill, giving views of a waterfall and valley along the way, with seating areas to pause and take it in before or after the cave itself.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/arwah-cave.webp",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/arwah-cave.webp",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/arwah-cave.webp"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/arwah-cave.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Fossils_in_Arwah_Cave.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/67/Arwah_Cave.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature", "Heritage"],
     bestSeason: "October – May (cool, dry weather, safe exploration)",
     duration: "1–2 hours",
