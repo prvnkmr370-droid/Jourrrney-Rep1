@@ -66970,7 +66970,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Mawsmai Cave, about 6 km from Cherrapunji (Sohra) town, is one of Meghalaya's most accessible cave experiences — a roughly 150-metre illuminated limestone passage with stalactites and stalagmites, manageable even for first-time cave visitors. A pleasant forest walk leads to the entrance, and the lit interior means no headlamp is strictly required, unlike most of Meghalaya's other cave systems.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/mawsmai-cave.webp",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/mawsmai-cave.webp",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/mawsmai-cave.webp"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/mawsmai-cave.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Mawsmai_Cave.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/View_from_inside_Mawsmai_Cave%2C_Meghalaya.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature", "Heritage"],
     bestSeason: "October – April (cool, dry weather)",
     duration: "1 hour",
