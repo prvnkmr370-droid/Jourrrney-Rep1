@@ -33,7 +33,7 @@ const TABS = [
   { id: "How to Reach", emoji: "🚀" },
   { id: "Stay", emoji: "🏨" },
   { id: "Local Travel", emoji: "🛺" },
-  { id: "Nearby", emoji: "📍" },
+  { id: "Nearby", emoji: "" },
   { id: "Budget", emoji: "💰" },
   { id: "Safety", emoji: "🛡️" },
   { id: "Itinerary", emoji: "📅" },
@@ -258,7 +258,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
                   backgroundColor: active ? "#333C81" : "transparent",
                 }}
               >
-                <Text style={{ fontSize: 13 }}>{emoji}</Text>
+                {emoji ? <Text style={{ fontSize: 13 }}>{emoji}</Text> : null}
                 <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
                   {id}
                 </Text>

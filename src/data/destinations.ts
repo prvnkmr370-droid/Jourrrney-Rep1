@@ -67391,7 +67391,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi/Auto to Akonngre Trailhead", cost: "Local fare from Tura town", notes: "The trek itself is on foot from the trailhead to the summit", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Rongbangdare Falls", distance: "~37 km", type: "Waterfall", isHidden: true, id: "rongbangdare-falls" },
+      { name: "Nokrek National Park", distance: "Variable, West Garo Hills area", type: "National Park", isHidden: false, id: "nokrek-national-park" },
+      { name: "Siju Bird Sanctuary", distance: "~125 km", type: "Wildlife Sanctuary", isHidden: true, id: "siju-bird-sanctuary" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 2000, food: 500, transport: 200, activities: 300 },
@@ -67448,7 +67452,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Guide (Recommended)", cost: "Arranged on-site or via tour operators", notes: "A local guide familiar with the grove's customs and language is advisable, and required for entry into the sacred forest itself", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Mawsynram", distance: "A scenic drive from Mawphlang", type: "World's Wettest Village", isHidden: false },
+      { name: "Nongkhnum River Islands", distance: "A scenic drive from Mawphlang", type: "River Island", isHidden: true },
+      { name: "Kyllang Rock", distance: "A scenic drive from Mawphlang", type: "Monolith Rock Formation", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
@@ -67623,7 +67631,11 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Cab/Shared Sumo from Baghmara", cost: "Local fare, ~1.5 hours through forested terrain", notes: "A short trek through forested trails leads to the sanctuary entrance across the Simsang River", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in Baghmara", notes: "Advisable for navigation and language, per the tourism board's own guidance", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Tura Peak", distance: "~125 km", type: "Viewpoint & Trek", isHidden: true, id: "tura-peak" },
+      { name: "Nokrek National Park", distance: "Variable, South Garo Hills area", type: "National Park", isHidden: false, id: "nokrek-national-park" },
+      { name: "Chandigre Rural Tourist Spot", distance: "South Garo Hills area", type: "Rural Tourism Spot", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 300, activities: 400 },
@@ -67679,7 +67691,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Cab/Shared Taxi", cost: "Affordable, widely available in Shillong", notes: "About 5 km from key city points like the Meghalaya State Museum and Bara Bazaar", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Shillong Peak", distance: "A short drive from central Shillong", type: "Viewpoint", isHidden: false, id: "shillong-peak" },
+      { name: "Lady Hydari Park", distance: "Central Shillong", type: "Park", isHidden: true },
+      { name: "Elephant Falls", distance: "A short drive from central Shillong", type: "Waterfall", isHidden: false, id: "elephant-falls" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
@@ -67733,7 +67749,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Bus/Shared Taxi", cost: "Affordable, from Laitumkhrah or Bara Bazaar", notes: "The museum is well signposted and easy to locate once nearby", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Laitlum Canyon", distance: "A drive from Mawshbuit", type: "Canyon Viewpoint", isHidden: false, id: "laitlum" },
+      { name: "Don Bosco Museum", distance: "A drive from Mawshbuit", type: "Museum", isHidden: false, id: "don-bosco-museum" },
+      { name: "Umiam Lake", distance: "A drive from Mawshbuit", type: "Lake", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 2000, food: 500, transport: 200, activities: 400 },
@@ -67903,7 +67923,13 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Taxi/Shared Sumo", cost: "Fare varies by distance", notes: "Used to reach Nohkalikai, Mawsmai, Arwah, and other nearby sights from Sohra town", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in Sohra town", notes: "Advisable for navigating the region's many waterfalls and trails, per the tourism board's own guidance", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Nohkalikai Falls", distance: "~7.5 km", type: "Waterfall", isHidden: false, id: "nohkalikai-falls" },
+      { name: "Mawsmai Cave", distance: "~5 km", type: "Limestone Cave", isHidden: false, id: "mawsmai-cave" },
+      { name: "Arwah Cave", distance: "~5 km", type: "Limestone Cave", isHidden: false, id: "arwah-cave" },
+      { name: "Nohsngithiang (Seven Sisters Falls)", distance: "~5 km", type: "Waterfall", isHidden: false, id: "seven-sisters-falls" },
+      { name: "Nongriat", distance: "~15 km", type: "Living Root Bridge Village", isHidden: true, id: "nongriat" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 400, activities: 400 },
@@ -67961,7 +67987,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Boat Rides", cost: "Per-boat rates set by the local boatmen's association", notes: "The signature Dawki experience — clear-water boat rides on the Umngot River", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Mawlynnong", distance: "A short drive from Dawki, often visited together", type: "Village (Asia's Cleanest Village)", isHidden: false, id: "mawlynnong" },
+      { name: "Shnongpdeng", distance: "Along the Umngot River from Dawki", type: "Riverside Camping Spot", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 400, transport: 200, activities: 300 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 700, transport: 400, activities: 600 },

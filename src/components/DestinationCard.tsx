@@ -20,8 +20,8 @@ export default function DestinationCard({ destination, onPress, tall }: Props) {
     <Pressable onPress={onPress} style={{ width, height, borderRadius: 20, overflow: "hidden" }}>
       <DestImage source={{ uri: destination.image }} style={{ width, height }} contentFit="cover" />
       <LinearGradient
-        colors={["rgba(0,0,0,0.82)", "rgba(0,0,0,0.05)", "transparent"]}
-        locations={[0, 0.55, 1]}
+        colors={["rgba(0,0,0,0.85)", "rgba(0,0,0,0.55)", "rgba(0,0,0,0.28)", "rgba(0,0,0,0.08)", "transparent"]}
+        locations={[0, 0.25, 0.5, 0.75, 1]}
         start={{ x: 0, y: 1 }}
         end={{ x: 0, y: 0 }}
         style={{ position: "absolute", inset: 0 }}
