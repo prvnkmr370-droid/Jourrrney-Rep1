@@ -67874,6 +67874,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Cafes and Khasi cuisine in central Shillong"],
     packingTips: ["A camera for the exhibits", "Comfortable walking shoes"],
   },
+  {
+    id: "sohra",
+    name: "Sohra (Cherrapunji)",
+    state: "Meghalaya",
+    tagline: "The Cultural Capital of the Khasis, Once the Wettest Place on Earth",
+    description: "About 55 km from Shillong, Sohra — better known by its colonial-era name Cherrapunji — is the cultural capital of the Khasi people and the historic gateway of the colonial age in these hills. Rain has sculpted this plateau into a landscape of plunging waterfalls and mist-shrouded cliffs: the dramatic Nohkalikai Falls, the thunderous Dainthlen Falls tied to Khasi folklore, and the three-tiered Wei Sawdong Falls tucked into verdant forest, alongside Arwah and Mawsmai caves nearby. It serves as the natural base for exploring this entire waterfall- and cave-studded region.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/sohra.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/sohra.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/sohra.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/8/80/Cherrapunji%2C_Meghalaya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d8/Lyngksiar%2C_Sohra%2C_India.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
+    category: ["Nature", "Culture", "Adventure"],
+    bestSeason: "June – September (waterfalls and monsoon magic); October – March (pleasant weather and sightseeing)",
+    duration: "2–3 days (as a base for the wider region)",
+    highlights: [{ name: "The dramatic Nohkalikai Falls and folklore-linked Dainthlen Falls" }, { name: "The three-tiered Wei Sawdong Falls in verdant forest" }, { name: "Arwah and Mawsmai limestone caves" }, { name: "The cultural capital of the Khasi people, rich in colonial-era history" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (~79 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~167 km) or Shillong Airport (~79 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "The scenic Sohra Road drive from Shillong is itself a highlight, with viewpoints along the way." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~55 km from Shillong", costRange: "Frequent shared taxis and tourist vehicles from Shillong", tips: "Well-connected by road — no need for a private vehicle unless preferred." },
+    ],
+    accommodation: [
+      { type: "Sohra Hotels & Homestays", priceRange: "₹800–₹6,000/night", examples: ["Cherrapunjee Holiday Resort", "Local homestays in Sohra town"], description: "Sohra town has a range of stays from budget homestays to established resorts, serving as the base for the region." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Shared Sumo", cost: "Fare varies by distance", notes: "Used to reach Nohkalikai, Mawsmai, Arwah, and other nearby sights from Sohra town", available: true },
+      { mode: "Local Guide (Recommended)", cost: "Arranged in Sohra town", notes: "Advisable for navigating the region's many waterfalls and trails, per the tourism board's own guidance", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival & Waterfalls", morning: "Drive from Shillong to Sohra via the scenic Sohra Road.", afternoon: "Visit Nohkalikai Falls and Dainthlen Falls.", evening: "Settle into your Sohra stay.", stay: "Sohra", meals: "Local Khasi cuisine in Sohra town", tips: "Monsoon months bring the falls to peak flow but also heavy rain — pack accordingly." },
+      { day: 2, title: "Caves & Wei Sawdong", morning: "Explore Mawsmai and Arwah caves.", afternoon: "Trek to the three-tiered Wei Sawdong Falls.", evening: "Free evening in Sohra town.", stay: "Sohra", meals: "Local eateries in Sohra", tips: "A local guide is genuinely useful for finding the less signposted falls and trails." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established tourist hub with frequent shared transport and a developed stay infrastructure", "One of Meghalaya's most-visited regions, with regular visitor footfall"],
+      precautions: ["Trails to waterfalls can be steep and slippery, especially in monsoon — the state's May 2026 adventure-site safety advisory is directly relevant here", "Arrange a local guide for less-trafficked falls and cave routes", "Weather changes quickly — check conditions before heading to viewpoints"],
+      soloTips: ["Well set up for solo travel given the regular shared-taxi network and established homestay scene"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["Main viewpoints and established trails", "Sohra town centre"],
+      avoidAreas: ["Unfenced waterfall edges", "Unmarked trails without a guide, especially in monsoon"],
+    },
+    rating: 4.6,
+    reviews: 4200,
+    mustEat: ["Khasi cuisine — jadoh, tungrymbai, pork with bamboo shoot", "Local honey and citrus fruits"],
+    packingTips: ["A good rain jacket — genuinely one of the wettest regions on Earth", "Sturdy trekking shoes", "A camera for the waterfalls and viewpoints", "Warm layers for cooler evenings"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
