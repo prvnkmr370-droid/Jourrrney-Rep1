@@ -67933,6 +67933,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Khasi cuisine — jadoh, tungrymbai, pork with bamboo shoot", "Local honey and citrus fruits"],
     packingTips: ["A good rain jacket — genuinely one of the wettest regions on Earth", "Sturdy trekking shoes", "A camera for the waterfalls and viewpoints", "Warm layers for cooler evenings"],
   },
+  {
+    id: "dawki",
+    name: "Dawki",
+    state: "Meghalaya",
+    tagline: "Boating on India's Clearest River, Near the Bangladesh Border",
+    description: "In West Jaintia Hills near the India-Bangladesh border, Dawki is built around the Umngot River — water so clear that boats appear to float in mid-air over the riverbed. Beyond the famous boat rides, the area holds a secluded living root bridge spanning the river, tranquil boating and camping at nearby Shnongpdeng, and the dramatic sandstone gorge that makes this one of Meghalaya's most photographed stretches of water. Often paired with nearby Mawlynnong on a day trip, Dawki rewards a quieter, less-rushed visit best taken off-peak.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/dawki.jpg",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/dawki.jpg",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/dawki.jpg",
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/gallery/dawki-shnongpdeng.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/2/22/Umngot_River_View.jpg",
+    ],
+    imageCredit: "Additional photo via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "November – March (clearest water and pleasant weather; avoid peak monsoon)",
+    duration: "1–2 days",
+    highlights: [{ name: "Boat rides on the crystal-clear Umngot River" }, { name: "A secluded living root bridge arching over the river" }, { name: "Boating and camping at nearby Shnongpdeng" }, { name: "Dramatic sandstone gorge scenery near the India-Bangladesh border" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (~120 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati or Shillong Airport, then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Often combined with Shillong and Mawlynnong on a wider Meghalaya itinerary." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~181 km from Shillong via Mawlynnong", costRange: "Private vehicle or shared taxi", tips: "Prefer off-peak travel — Dawki gets crowded on weekends and holidays, which affects both the experience and the water's visible clarity." },
+    ],
+    accommodation: [
+      { type: "Dawki & Shnongpdeng Stays", priceRange: "₹800–₹6,000/night", examples: ["Riverside camps at Shnongpdeng", "Homestays and guesthouses in Dawki town"], description: "Shnongpdeng's riverside camps are a popular overnight option alongside Dawki town's own guesthouses." },
+    ],
+    localTransport: [
+      { mode: "Local Boat Rides", cost: "Per-boat rates set by the local boatmen's association", notes: "The signature Dawki experience — clear-water boat rides on the Umngot River", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 400, transport: 200, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 700, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dawki & the Umngot River", morning: "Arrive in Dawki and take a boat ride on the Umngot River.", afternoon: "Visit the secluded living root bridge nearby.", evening: "Head to Shnongpdeng for riverside camping.", stay: "Shnongpdeng", meals: "Local meals at riverside camps", tips: "Early morning boat rides tend to have calmer water and fewer crowds." },
+      { day: 2, title: "Shnongpdeng & Onward", morning: "Enjoy boating or a swim at Shnongpdeng's gorge.", afternoon: "Head to Mawlynnong or back toward Shillong.", evening: "Continue your onward journey.", stay: "—", meals: "Local meals en route", tips: "Carry your ID — this is a border area with occasional checks." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established tourist spot with an organised local boatmen's association", "Regular daytime visitor traffic given its popularity"],
+      precautions: ["This is a border area near Bangladesh — carry valid ID and be aware of any local restrictions", "River currents can be stronger than they look — follow boatmen's safety guidance and wear a life jacket", "Weekends and holidays get crowded — prefer weekday or off-peak visits for a calmer experience"],
+      soloTips: ["Manageable solo — boat rides are run through an organised local association rather than informal individual operators"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main boating area with the boatmen's association", "Shnongpdeng's designated camping areas"],
+      avoidAreas: ["Unsupervised swimming away from designated spots", "Areas near the international border without proper awareness"],
+    },
+    rating: 4.6,
+    reviews: 3100,
+    mustEat: ["Local Khasi and Jaintia cuisine at riverside camps", "Fresh fish where available"],
+    packingTips: ["Swimwear or a change of clothes for the river", "A waterproof bag for electronics on the boat", "Sunscreen and a hat", "Valid ID — this is a border-adjacent area"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
