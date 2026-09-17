@@ -67536,6 +67536,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Garo cuisine (nakham bitchi, wak pura) in Baghmara"],
     packingTips: ["Sturdy trekking shoes", "Light warm clothing — windy at higher points", "Sufficient supplies and a first-aid kit for the remote terrain", "A torch for cave exploration", "A camera for the gorge and wildlife"],
   },
+  {
+    id: "nokrek-national-park",
+    name: "Nokrek National Park & Biosphere Reserve",
+    state: "Meghalaya",
+    tagline: "Meghalaya's Only UNESCO Biosphere Reserve, Birthplace of the World's Oldest Citrus",
+    description: "In the West Garo Hills, Nokrek National Park is Meghalaya's only UNESCO-listed Biosphere Reserve and one of India's richest biodiversity hotspots — pristine forest home to red pandas, clouded leopards, hoolock gibbons, and over 200 bird species. It's also a Citrus Gene Sanctuary, the cradle of the world's oldest citrus species including the endemic Citrus indica. Treks from the entry village of Daribokgre lead to Nokrek Peak, the park's highest point and the origin of the Simsang River, through forest still shaped by the traditional foraging and conservation practices of the Garo people.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/nokrek.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/nokrek.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/nokrek.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Path_Mist_Daribokgre_Nokrek_West_Garo_Oct24_A7CR_03594.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nokrek_National_Park%2C_Tura%2C_Meghalaya.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
+    category: ["Nature", "Wildlife", "Adventure"],
+    bestSeason: "October – May (trekking, birdwatching, wildlife spotting)",
+    duration: "1–2 days",
+    highlights: [{ name: "Meghalaya's only UNESCO Biosphere Reserve" }, { name: "The Citrus Gene Sanctuary, home of the endemic Citrus indica" }, { name: "A trek to Nokrek Peak and the origin of the Simsang River" }, { name: "Rare wildlife including red pandas, clouded leopards, and hoolock gibbons" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Guwahati Airport (~262 km) or Shillong Airport (~367 km), then road", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then road via Williamnagar", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Williamnagar is the nearest town, about 15 km from the park." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "From Shillong (Mylliem) via NH106 and NH127B, ~122 km / ~3 hours", costRange: "Hired vehicle recommended", tips: "Daribokgre village is the entry point and base for treks to Nokrek Peak." },
+    ],
+    accommodation: [
+      { type: "Eco-Camping & Village Stays", priceRange: "₹500–₹3,000/night", examples: ["Eco-camps in Daribokgre", "Homestays in Tura"], description: "Stay in nearby villages like Daribokgre for a starlit forest experience, or base in Tura for more amenities." },
+    ],
+    localTransport: [
+      { mode: "Local Guide (Required)", cost: "Arranged in Daribokgre", notes: "Always hire a local guide for safe exploration — trails can be moderately challenging with limited network coverage", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival & Daribokgre", morning: "Travel from Shillong or Tura to Daribokgre village, the park's entry point.", afternoon: "Settle in, arrange a local guide, and take a short orientation walk.", evening: "Eco-camp overnight in Daribokgre.", stay: "Daribokgre", meals: "Local Garo meals at the eco-camp", tips: "Network coverage is limited here — download offline maps in advance." },
+      { day: 2, title: "Trek to Nokrek Peak", morning: "Trek to Nokrek Peak and the Citrus Gene Sanctuary with your guide.", afternoon: "Visit the origin of the Simsang River and go birdwatching.", evening: "Return to Daribokgre or head back to Tura.", stay: "Daribokgre / Tura", meals: "Carry water, light snacks, and binoculars", tips: "Trails can be moderately challenging and slippery in monsoon — sturdy footwear is essential." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An established biosphere reserve with a structured guide network based in Daribokgre", "The Garo community's conservation practices mean the area sees respectful, low-impact tourism"],
+      precautions: ["Always hire a local guide — the park mandates and recommends this for safe exploration", "Limited or no mobile network inside the park — inform someone of your plans before heading in", "Trails can be slippery, especially in the monsoon (June–September)"],
+      soloTips: ["Manageable with a hired local guide, arranged in advance through Daribokgre or Tura tour operators"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["Marked trails with a guide", "Daribokgre village"],
+      avoidAreas: ["Off-trail forest without a guide", "The park after dark"],
+    },
+    rating: 4.4,
+    reviews: 540,
+    mustEat: ["Garo cuisine in Daribokgre or Tura", "Wild citrus fruits (seasonal, where locally offered)"],
+    packingTips: ["Sturdy trekking shoes", "Water, light snacks, and binoculars", "A camera for wildlife and the misty trails", "Offline maps — network is limited inside the park"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
