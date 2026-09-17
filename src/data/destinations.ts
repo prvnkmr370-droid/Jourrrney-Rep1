@@ -67708,6 +67708,60 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Cafes near Police Bazar", "Khasi cuisine in central Shillong"],
     packingTips: ["A camera for the skywalk views", "Comfortable shoes — seven levels of galleries involve real walking", "Entry fee cash, if not paying by card"],
   },
+  {
+    id: "ever-living-museum",
+    name: "Ever Living Museum",
+    state: "Meghalaya",
+    tagline: "A Curator's Personal Tribute to Khasi, Jaintia, and Garo Heritage in an Orchid Garden",
+    description: "About 9-10 km from Shillong in Mawshbuit, the Ever Living Museum is a personal labour of love curated by Mr Kyntiewbor War — an eclectic collection of traditional weapons, musical instruments, bamboo crafts, and rare coins from the Khasi, Jaintia, and Garo communities. It sits within a serene garden of nearly 100 orchid species, alongside an adjacent Stone Museum showcasing fossils and mineral varieties, making for a genuinely multisensory cultural and natural stop.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/ever-living-museum.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/ever-living-museum.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/ever-living-museum.webp",
+    ],
+    category: ["Culture", "Nature"],
+    bestSeason: "October – March (pleasant weather and garden blooms)",
+    duration: "1–2 hours",
+    highlights: [{ name: "A curated personal collection of Khasi, Jaintia, and Garo artifacts" }, { name: "The adjacent Stone Museum with fossils and mineral varieties" }, { name: "A garden of nearly 100 orchid species" }, { name: "Traditional weapons, musical instruments, and bamboo crafts" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (~38 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~126 km) or Shillong Airport (~38 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "A well-signposted, easy day trip from central Shillong." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~9-10 km from Shillong city centre, about 30 minutes by road", costRange: "Local buses and shared taxis from Laitumkhrah or Bara Bazaar", tips: "Shared sumos toward Happy Valley or Laitkor may drop nearby but not all the way — confirm the last stretch with your driver." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays in Shillong"], description: "A day-trip destination from Shillong." },
+    ],
+    localTransport: [
+      { mode: "Local Bus/Shared Taxi", cost: "Affordable, from Laitumkhrah or Bara Bazaar", notes: "The museum is well signposted and easy to locate once nearby", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 2000, food: 500, transport: 200, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7200, accommodation: 5000, food: 1000, transport: 400, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ever Living Museum", morning: "Travel from Shillong to Mawshbuit.", afternoon: "Explore the museum's artifact collection, the Stone Museum, and the orchid garden.", evening: "Return to Shillong, or continue to nearby Laitlum or Don Bosco Museum.", stay: "Shillong", meals: "Carry snacks — limited facilities on-site", tips: "Visiting hours are 11 AM–6 PM in summer and 11 AM–5 PM in winter." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A small, well-signposted, family-run cultural stop with a calm, low-traffic setting", "Easily reached from central Shillong via regular shared transport"],
+      precautions: ["Confirm visiting hours before heading out — the museum keeps seasonal timings", "The final stretch from the main road may need a short walk or local guidance"],
+      soloTips: ["Straightforward for solo visits — a quiet, welcoming stop reachable by shared taxi"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The museum grounds and garden"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 380,
+    mustEat: ["Khasi cuisine back in Shillong"],
+    packingTips: ["A camera for the artifacts and orchid garden", "Comfortable walking shoes", "Cash for entry"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
