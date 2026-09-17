@@ -66398,7 +66398,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Nohsngithiang, better known as Seven Sisters Falls, drops more than 300 metres down limestone cliffs near Sohra (Cherrapunji) in seven distinct segments — a formation locals say echoes the unity and diversity of Northeast India's Seven Sister States. During monsoon the seven streams thunder down together; at sunset, the cliff face glows gold and orange. The Sohra Eco Park nearby gives the best vantage point over both the falls and Sohra's canyons.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohsngithiang.jpg",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohsngithiang.jpg",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohsngithiang.jpg"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/nohsngithiang.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nohsngithiang_Falls.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/Seven_Sisters_Waterfalls_Paneromic_View.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature"],
     bestSeason: "June – September (monsoon, full seven-stream flow); clear sunset views more likely outside peak monsoon fog",
     duration: "1–2 hours",
