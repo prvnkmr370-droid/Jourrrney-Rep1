@@ -67198,6 +67198,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Jaintia cuisine in Jowai"],
     packingTips: ["A reliable headlamp or torch, plus spare batteries", "Sturdy trekking/caving shoes", "A local guide arranged in advance — this is a large, complex cave system", "Warm layers for the cool cave interior"],
   },
+  {
+    id: "laitlum",
+    name: "Laitlum Canyon",
+    state: "Meghalaya",
+    tagline: "Sweeping Cliff-Edge Views Above Deep Valleys",
+    description: "Laitlum Canyon, about 25 km from Shillong, is one of Meghalaya's most spectacular viewpoints — dramatic cliffs and meadows overlooking deep, mist-covered valleys and rolling green hills stretching to the horizon. For those willing to descend, a scenic trek leads to Rai Um Village, and a stone stairway of thousands of steps drops into the valley to the traditional village of Rasong, giving a genuine glimpse into Khasi village life beyond the viewpoint itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Laitlum_Canyon%2C_Meghalaya.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/81/Laitlum_Canyon%2C_Meghalaya.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/8/81/Laitlum_Canyon%2C_Meghalaya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a2/Laitlum_Canyon.jpg",
+    ],
+    imageCredit: "Photos via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October – May (clear, pleasant weather for panoramic views)",
+    duration: "2–3 hours (longer if trekking down to Rasong)",
+    highlights: [{ name: "Sweeping panoramic views over deep valleys" }, { name: "A stone stairway trek down to Rasong village" }, { name: "A shorter trek to Rai Um Village" }, { name: "Local snack stalls near the viewpoint" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~33 km from the canyon — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~121 km) or Shillong Airport (~33 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "One of the closer viewpoints to Shillong on this list." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~25 km from Shillong via Smit village (a further 15 min from Smit)", costRange: "₹1,500–₹3,000 cab from Shillong (round trip)", tips: "No direct local buses — a hired taxi or day tour is the practical option." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["A wide range of city hotels near Police Bazar and Laitumkhrah"], description: "Laitlum is a day-trip destination from Shillong — no lodging at the viewpoint itself." },
+    ],
+    localTransport: [
+      { mode: "Hired Taxi / Day Tour from Shillong", cost: "₹1,500–₹3,000 round trip", notes: "No local buses run directly here", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2200, food: 600, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 5500, food: 1200, transport: 500, activities: 600 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Laitlum Canyon", morning: "Drive from Shillong via Smit to Laitlum Canyon.", afternoon: "Take in the panoramic viewpoint; trek down toward Rai Um or Rasong village if time and energy allow.", evening: "Return to Shillong for sunset.", stay: "Shillong", meals: "Local snacks (jadoh, tea) at stalls near the viewpoint", tips: "The stairway descent to Rasong is thousands of steps — only attempt it if you're prepared for the climb back up." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, frequently visited viewpoint close to Shillong", "Meghalaya carries no general travel advisory and rates consistently well for visitor safety"],
+      precautions: ["Unfenced cliff edges at the viewpoint — the Meghalaya government's May 2026 safety advisory for adventure sites is a relevant reminder here too; stay well back from the edge", "The stairway descent to Rasong is a serious undertaking — a local guide is advisable if attempting it", "Fog and rain reduce visibility sharply — check conditions before visiting"],
+      soloTips: ["Manageable solo as a viewpoint visit given how close and well-visited it is to Shillong — the deeper treks down to the villages are better done with a guide or group"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main viewpoint area, set back from the cliff edge"],
+      avoidAreas: ["Unfenced cliff edges", "The Rasong stairway descent without a guide"],
+    },
+    rating: 4.6,
+    reviews: 1900,
+    mustEat: ["Jadoh and tea at stalls near the viewpoint", "Local Khasi cuisine back in Shillong"],
+    packingTips: ["A light jacket — windy and cool at the viewpoint", "Sturdy shoes if attempting the stairway trek", "A camera for the panoramic views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
