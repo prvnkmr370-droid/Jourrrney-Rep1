@@ -65446,7 +65446,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Sadu Chiru Waterfall, about 20 km from Imphal beside the Tiddim Road (NH-150) in the Sadar Hills area, is a picturesque perennial waterfall at the foot of a scenic hill — in fact three waterfalls in close succession. It's one of the newer tourist spots the Manipur Tourism department has opened up, and its closeness to Imphal makes it one of the more accessible nature stops on this list.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/sadu-1.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/sadu-1.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/sadu-1.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/sadu-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sadu_Chiru_Waterfall.jpg",
+    ],
+    imageCredit: "Additional photo: Villain777, CC BY-SA 4.0, via Wikimedia Commons",
     category: ["Nature"],
     bestSeason: "October – March (post-monsoon, full flow with safer footing)",
     duration: "2–3 hours",
