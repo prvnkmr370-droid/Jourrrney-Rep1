@@ -65502,7 +65502,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Moreh is a busy commercial town on the Indo-Myanmar border, about 110 km from Imphal, known as a shopper's town for electronics and daily consumables from across the frontier. The Indo-Myanmar Friendship Gate marks the crossing point, with the Myanmar border town of Tamu just 5 km away, giving visitors a genuinely unusual chance to brush up against a different country's culture and commerce without leaving Manipur. This is the most security-sensitive place on this list, and it needs to be treated that way.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/moreh.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/moreh.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/moreh.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/moreh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/76/Monestry_Temple_at_Moreh%2C_Manipur.jpg",
+    ],
+    imageCredit: "Additional photo via Wikimedia Commons",
     category: ["Culture", "Shopping"],
     bestSeason: "October – March",
     duration: "A day trip; overnight only if genuinely necessary",
