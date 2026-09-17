@@ -66339,7 +66339,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Elephant Falls (Kshaid Lai Pateng in Khasi, roughly \"three-level falls\") is a multi-tiered waterfall in Upper Shillong, about 12 km from the city centre — one of the most accessible major falls in Meghalaya. Railed walkways run from the head of the falls to the bottom, so visitors can see all three levels up close and wade into the knee-deep pool at the base. The English name comes from a large rock once shaped like an elephant, destroyed in an earthquake over a century ago — the name outlived the rock.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/plan/itineraries/elephant-falls.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/8/82/Elephant_Falls_at_Shillong.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Elephant_Falls_Meghalaya.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature"],
     bestSeason: "June – September (monsoon, fullest flow); year-round accessible given its closeness to Shillong",
     duration: "1–2 hours",
