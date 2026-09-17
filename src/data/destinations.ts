@@ -65280,7 +65280,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Barak Waterfalls sits within virgin forest in Tamenglong district, offering the natural beauty of cascading water over rock pools with the added draw of adventure sports for visitors willing to make the journey. The mist and untouched forest setting around the falls make it one of the district's most rewarding nature stops.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/barak-1.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/barak-1.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/barak-1.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/barak-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/58/The_Barak_Waterfall.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/The_mighty_Barak_Waterfall.jpg",
+    ],
+    imageCredit: "Additional photos: Dangmei, CC BY-SA 3.0, via Wikimedia Commons",
     category: ["Nature", "Adventure"],
     bestSeason: "October – March (post-monsoon, full flow with safer footing than monsoon)",
     duration: "Half-day",
