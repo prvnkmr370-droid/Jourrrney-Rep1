@@ -67254,6 +67254,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Jadoh and tea at stalls near the viewpoint", "Local Khasi cuisine back in Shillong"],
     packingTips: ["A light jacket — windy and cool at the viewpoint", "Sturdy shoes if attempting the stairway trek", "A camera for the panoramic views"],
   },
+  {
+    id: "shillong-peak",
+    name: "Shillong Peak",
+    state: "Meghalaya",
+    tagline: "The Highest Point in Meghalaya",
+    description: "Shillong Peak, about 10 km south of Shillong city, is the highest point in Meghalaya at roughly 1,965 m, offering panoramic views of Shillong, the surrounding hills, distant waterfalls, and on a clear day the plains of Bangladesh. The peak holds real spiritual significance for the Khasi people — local tradition holds that Shillong itself takes its name from the deity Lei Shyllong, and a small sacred shrine at the summit sees spring rituals conducted by a Mylliem priest. The viewpoint sits within an active Indian Air Force radar station, so visitors must carry valid photo ID and surrender cameras at the entry gate.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/shillong-peak.jpg",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/shillong-peak.jpg",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/shillong-peak.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/View_from_Shillong_Peak.jpg",
+    ],
+    imageCredit: "Additional photo via Wikimedia Commons",
+    category: ["Nature", "Heritage"],
+    bestSeason: "October – March (clear skies, best visibility); avoid monsoon (June–September) when fog obscures views",
+    duration: "1–2 hours",
+    highlights: [{ name: "The highest point in Meghalaya, ~1,965m" }, { name: "A sacred Khasi shrine at the summit" }, { name: "360° views including distant waterfalls and Bangladesh's plains" }, { name: "The David Scott Trail nearby, for longer trekkers" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~40 km from the peak — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~130 km) or Shillong Airport (~40 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "One of the closest viewpoints to central Shillong." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~10 km / ~40 min from central Shillong via Upper Shillong", costRange: "₹500–₹1,200 cab from Shillong (round trip)", tips: "A cobbled trekking route is also possible from Upper Shillong for a more immersive approach." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["A wide range of city hotels near Police Bazar and Laitumkhrah"], description: "A short trip from central Shillong — no lodging at the peak itself, and none needed." },
+    ],
+    localTransport: [
+      { mode: "Cab / Taxi from Shillong (Police Bazaar or Bara Bazaar)", cost: "₹500–₹1,200 round trip", notes: "Roads are generally in good condition", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 800, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2200, food: 600, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5500, food: 1200, transport: 500, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Shillong Peak Half-Day", morning: "Drive up to Shillong Peak via Upper Shillong; carry photo ID for the radar station checkpoint.", afternoon: "Take in the 360° views, spot birds/wildlife on the wooded slopes, and visit the summit shrine.", evening: "Return to Shillong.", stay: "Shillong", meals: "Jadoh and Pumaloi at nearby local stalls", tips: "Cameras are surrendered at the entry gate — plan photos accordingly, or check current phone-camera policy at the checkpoint." },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["A secured site within an active Indian Air Force installation — genuinely more controlled-access than most viewpoints on this list, with an ID checkpoint at entry", "Close to Shillong, well-visited, with picnic spots and a steady daytime crowd"],
+      precautions: ["Carry valid photo ID — it's required for entry, and cameras/phones may need to be surrendered at the gate depending on current policy", "Standard viewpoint caution around any unfenced edges", "Avoid visiting during monsoon when fog cuts visibility sharply"],
+      soloTips: ["One of the more reassuring solo visits given the controlled military-installation access and closeness to Shillong"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The designated visitor viewpoint within the installation"],
+      avoidAreas: ["Restricted areas of the radar station beyond the visitor viewpoint"],
+    },
+    rating: 4.5,
+    reviews: 2200,
+    mustEat: ["Jadoh and Pumaloi at nearby stalls", "Local Khasi cuisine back in Shillong"],
+    packingTips: ["Valid photo ID — mandatory for entry", "A light jacket — windy at altitude", "Binoculars for birdwatching on the wooded slopes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
