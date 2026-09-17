@@ -66153,7 +66153,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Ngaloi Waterfall sits at the small village of Ngaloi (originally Ngaloimoul), about 9 km from Churachandpur town. Low-lying mountains and greenery frame the cascading falls, and the white foamy water over dark rocks, cooled by mountain air, makes it a genuinely refreshing stop — one of the district's most straightforward, accessible nature spots.",
     image: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
     heroImage: "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
-    gallery: ["https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg"],
+    gallery: [
+      "https://cdn.s3waas.gov.in/s34c56ff4ce4aaf9573aa5dff913df997a/uploads/bfi_thumb/2018061517-rr7mogmwe9gg1exdjem5hs7cx0chdzi4hdi3kqfs7e.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ngaloi_Waterfall.jpg",
+    ],
+    imageCredit: "Additional photo: San Gangte, via Wikimedia Commons",
     category: ["Nature"],
     bestSeason: "October – March (post-monsoon, safer footing); monsoon for fullest flow with extra caution",
     duration: "1–2 hours",
