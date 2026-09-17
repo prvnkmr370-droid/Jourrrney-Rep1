@@ -65162,7 +65162,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Dzuko Valley sits on Manipur's border with Nagaland in Senapati district, a lush valley that unrolls like a green carpet across the horizon and blooms with a changing range of wildflowers through the seasons. It's regarded as one of the best treks in the state, drawing a growing number of domestic and foreign trekkers each year for its scenery and the genuine physical challenge of reaching it.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/dzuko-1.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/dzuko-1.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/dzuko-1.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/dzuko-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Dzukou_Lily_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/be/Dzuko_Valley.jpg",
+    ],
+    imageCredit: "Additional photos: Ganesh Mohan T and GuruBidya, CC BY-SA 4.0, via Wikimedia Commons",
     category: ["Nature", "Trekking"],
     bestSeason: "June – September (wildflower bloom, including the Dzuko lily); December – February for cooler trekking weather",
     duration: "2 days (an overnight trek is standard — the valley is a genuine multi-hour climb in)",
