@@ -64986,7 +64986,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Moirang, a town in Bishnupur district near Loktak Lake, holds a special place in India's Freedom Struggle — it was here that the flag of the Indian National Army (INA) was first unfurled on Indian soil on 14 April 1944. The INA Museum on the site holds a collection of letters, photographs, rank badges and other war memorabilia from the INA's campaign under Netaji Subhas Chandra Bose, commemorating the soldiers who fought under his leadership.",
     image: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/ina.jpg",
     heroImage: "https://manipurtourism.gov.in/wp-content/uploads/2017/06/ina.jpg",
-    gallery: ["https://manipurtourism.gov.in/wp-content/uploads/2017/06/ina.jpg"],
+    gallery: [
+      "https://manipurtourism.gov.in/wp-content/uploads/2017/06/ina.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/INA_Memorial%2C_Moirang%2C_Manipur_%2815%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/80/INA_Memorial%2C_Moirang%2C_Manipur_%2820%29.jpeg",
+    ],
+    imageCredit: "Additional photos: PP Yoonus, CC BY-SA 3.0, via Wikimedia Commons",
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
