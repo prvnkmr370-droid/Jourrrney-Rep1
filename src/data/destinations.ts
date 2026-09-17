@@ -67420,6 +67420,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Garo cuisine (nakham bitchi, wak pura) back in Tura town"],
     packingTips: ["Sturdy trekking shoes", "Water and snacks — no facilities on the trail", "A light rain jacket in monsoon season", "A camera for the summit views"],
   },
+  {
+    id: "mawphlang",
+    name: "Mawphlang Sacred Grove",
+    state: "Meghalaya",
+    tagline: "The Most Celebrated of Meghalaya's Ancient Khasi Sacred Forests",
+    description: "About 25 km southwest of Shillong, Mawphlang Sacred Grove is the most celebrated of Meghalaya's ancient 'law-kyntang' forests — an untouched, dark-canopied woodland preserved by Khasi custom for centuries, where taking away so much as a pebble or twig is believed to bring a curse. Scattered through the village are rows of stone monoliths, some commemorative and some ritualistic, alongside an open ground still used for age-old rituals and festivals, the Mawphlang Heritage Museum of traditional Khasi huts and tools, and the trailhead for the colonial-era David Scott Trail.",
+    image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/featured/mawphlang.webp",
+    heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/featured/mawphlang.webp",
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/featured/mawphlang.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/0/01/Mawphlang_Sacred_Forest%2C_Mawphlang%2C_Meghalaya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Monolith_in_Mawphlang_Sacred_Forest.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October – April (ideal for exploring the sacred grove and nearby trails)",
+    duration: "Half day (2–4 hours, longer with the David Scott Trail)",
+    highlights: [{ name: "The ancient Sacred Grove — an untouched forest protected for generations" }, { name: "Rows of ritual and commemorative stone monoliths" }, { name: "The Mawphlang Heritage Museum of traditional Khasi huts and tools" }, { name: "The starting point of the colonial-era David Scott Trail" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~51 km — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~128 km) or Shillong Airport (~51 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "An easy day trip from Shillong rather than an overnight stay." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~25 km from Shillong via the Shillong-Mawphlang Road", costRange: "Shared sumos from Bara Bazaar Sumo Stand; taxis via hotels/tour operators", tips: "Shared sumos are budget-friendly but may not run late in the day — plan your return accordingly." },
+    ],
+    accommodation: [
+      { type: "Shillong Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays in Shillong"], description: "Mawphlang is a day-trip destination — most visitors base themselves in Shillong." },
+    ],
+    localTransport: [
+      { mode: "Local Guide (Recommended)", cost: "Arranged on-site or via tour operators", notes: "A local guide familiar with the grove's customs and language is advisable, and required for entry into the sacred forest itself", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mawphlang Sacred Grove", morning: "Drive from Shillong and enter the sacred grove with a local guide.", afternoon: "Visit the stone monoliths, the ritual ground, and the Mawphlang Heritage Museum.", evening: "Return to Shillong, or continue on to Mawsynram/Kyllang Rock nearby.", stay: "Shillong", meals: "Carry snacks and water — limited facilities inside the grove", tips: "Respect the grove's customs strictly — visitors are not permitted to remove anything, not even a fallen twig." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established day-trip destination on a regular Shillong tourist route", "Guided visits are standard practice, which adds a layer of oversight"],
+      precautions: ["A local guide or travel companion familiar with the place and language is advisable, per the tourism board's own guidance", "Shared transport thins out later in the day — confirm your return option before heading out", "Respect grove customs — removing anything from the forest is considered taboo by the local community"],
+      soloTips: ["Arrange a local guide in advance — this is standard practice here and makes solo visits straightforward"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Meghalaya Tourism Helpline", number: "1800 599 2026" },
+      ],
+      safeZones: ["The main grove trail with a guide", "The heritage museum and ritual ground"],
+      avoidAreas: ["Off-trail forest areas without a guide", "Removing or disturbing any grove material"],
+    },
+    rating: 4.5,
+    reviews: 2100,
+    mustEat: ["Khasi cuisine (jadoh, tungrymbai) in Shillong"],
+    packingTips: ["Comfortable walking shoes", "A light jacket — cool and often misty", "Cash for guide fees and the heritage museum", "A camera for the forest and monoliths"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
