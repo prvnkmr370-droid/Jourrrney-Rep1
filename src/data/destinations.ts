@@ -65971,8 +65971,11 @@ export const DESTINATIONS: Destination[] = [
     description: "Mutua Museum, a cultural heritage complex in Andro village about 26 km from Imphal, houses artifacts from Manipur and across the Northeast — pottery, rare coins, historic manuscripts, paintings, basketry, bell metal work, jewellery, and wood carving among them. Exact replicas of traditional houses from different tribes and ethnic groups — Poumai, Kabui, Meitei, Kuki, and Tangkhul — give visitors a tangible sense of the region's cultural diversity in one place.",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Relief_carvings_and_sculptures_in_the_Cultural_Heritage_Complex_in_Andro%2C_Imphal_East_district%2C_Manipur%2C_India.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Relief_carvings_and_sculptures_in_the_Cultural_Heritage_Complex_in_Andro%2C_Imphal_East_district%2C_Manipur%2C_India.jpg",
-    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/5e/Relief_carvings_and_sculptures_in_the_Cultural_Heritage_Complex_in_Andro%2C_Imphal_East_district%2C_Manipur%2C_India.jpg"],
-    imageCredit: "Photo: Haoreima, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Relief_carvings_and_sculptures_in_the_Cultural_Heritage_Complex_in_Andro%2C_Imphal_East_district%2C_Manipur%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ab/AN_IDOL_OF_AN_ANCIENT_GUARD.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons; primary photo: Haoreima, CC BY-SA 4.0",
     category: ["Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 hours",
