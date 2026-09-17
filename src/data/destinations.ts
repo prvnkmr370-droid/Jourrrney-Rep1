@@ -67091,7 +67091,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Siju Cave — also called Dobakkol, or the Bat Cave — is one of India's longest limestone caves at over 4.7 km, near the Simsang River in the South Garo Hills. Home to thousands of bats and cave-dwelling species, it's a genuine site for biospeleology research as well as adventurous exploration, with dramatic stalactites, stalagmites, and maze-like corridors. The Meghalaya Adventurers Association offers guided expeditions into its unmapped sections for serious cavers.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-caves.webp",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-caves.webp",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-caves.webp"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/overview/siju-caves.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Entrance_Siju_Cave_South_Garo_Oct24_A7CR_04109.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Inside_Siju_Cave_South_Garo_Oct24_A7CR_04117.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature", "Adventure"],
     bestSeason: "November – March (safe exploration conditions)",
     duration: "3–5 hours for a standard visit; longer for guided expeditions",
