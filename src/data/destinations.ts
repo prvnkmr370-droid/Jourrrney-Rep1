@@ -66573,7 +66573,12 @@ export const DESTINATIONS: Destination[] = [
     description: "Krang Suri Falls, near Amlarem in the West Jaintia Hills, has a more understated charm than Southern Meghalaya's dramatic cliff falls — a calm forest river that drops suddenly into a wide curtain over a rocky ledge. In summer the pool below turns a striking, clear shade of blue. Life jackets are available for rent for a dip in the plunge pool, and short paddle-boat rides in the dry season take visitors behind the waterfall's veil.",
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/krangshuri.jpg",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/krangshuri.jpg",
-    gallery: ["https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/krangshuri.jpg"],
+    gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/krangshuri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Krang_Suri_Waterfall.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Krang_Suri_Falls.jpg",
+    ],
+    imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature"],
     bestSeason: "October – May (clear, vivid blue water)",
     duration: "2–3 hours",
