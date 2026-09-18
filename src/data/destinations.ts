@@ -70482,6 +70482,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Central Delhi's restaurants and cafes nearby"],
     packingTips: ["Comfortable walking or yoga attire", "Sun protection and water", "A mat if you plan to join a morning yoga session"],
   },
+  {
+    id: "national-rail-museum-delhi",
+    name: "National Rail Museum",
+    state: "Delhi",
+    tagline: "A 10-Acre Outdoor Collection of India's Railway History",
+    description: "Opened in 1977 in Chanakyapuri, this outdoor-and-indoor museum spreads across roughly 10 acres and holds around 26 full-size locomotives and carriages, including a Baldwin-built WP-class steam engine with its distinctive 'smiling face' nose and vintage narrow-gauge locomotives dating back to the late 19th century, alongside vice-regal carriages once used by colonial-era royalty. A joy train gives visitors a short ride around the grounds, and an indoor gallery covers the broader history and engineering of Indian Railways, one of the largest rail networks in the world.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Rail-Museum-Entr%C3%A9e.JPG/960px-National-Rail-Museum-Entr%C3%A9e.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Rail-Museum-Entr%C3%A9e.JPG/960px-National-Rail-Museum-Entr%C3%A9e.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Rail-Museum-Entr%C3%A9e.JPG/960px-National-Rail-Museum-Entr%C3%A9e.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Indian_steam_locomotive_M2-162.jpg/960px-Indian_steam_locomotive_M2-162.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/NRM_WP_7200.JPG/960px-NRM_WP_7200.JPG",
+    ],
+    imageCredit: "Photos: Bruno Corpet, Miya.m, Bahnfrend, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (an outdoor museum best visited in cooler weather)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "Around 26 full-size locomotives and carriages on display" }, { name: "A WP-class steam engine with its iconic 'smiling face' nose" }, { name: "Vintage narrow-gauge locomotives dating to the late 19th century" }, { name: "A short joy train ride around the museum grounds" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to the National Rail Museum by road/metro", fromBangalore: "IGI Airport, ~30 min to the National Rail Museum by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In Chanakyapuri — combine with a visit to nearby Nehru Park." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Race Course metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "A modest entry fee applies, with a small extra charge for the joy train ride." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Chanakyapuri/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nehru Park", distance: "~1.5 km", type: "Urban Park", isHidden: false, id: "nehru-park-delhi" },
+      { name: "Gandhi Smriti", distance: "~4 km", type: "Museum", isHidden: false, id: "gandhi-smriti" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "National Rail Museum & Nehru Park", morning: "Explore the outdoor locomotive collection and take a joy train ride.", afternoon: "Visit the indoor gallery, then walk to nearby Nehru Park.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Food kiosks within the museum; more options in Chanakyapuri", tips: "A great stop for families — kids especially enjoy the joy train ride and climbing aboard some of the retired locomotives." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A ticketed, well-maintained museum with regular staff presence", "Popular with families throughout the day"],
+      precautions: ["Some outdoor exhibits have little shade — carry water in warmer months"],
+      soloTips: ["Very manageable solo — a calm, well-monitored museum setting"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full museum grounds during operating hours"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 16000,
+    mustEat: ["Food kiosks within the museum; more options in Chanakyapuri"],
+    packingTips: ["Comfortable walking shoes for the outdoor grounds", "Sun protection and water", "A camera for the vintage locomotives"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
