@@ -68082,6 +68082,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Mizo cuisine (bai, sawhchiar) in Aizawl", "Light meals at the Reiek cafeteria"],
     packingTips: ["Sturdy walking shoes for the ridge trail", "A light jacket — cooler and windier at altitude", "A camera for the valley and Bangladesh-plains views"],
   },
+  {
+    id: "vantawng-falls",
+    name: "Vantawng Falls",
+    state: "Mizoram",
+    aliases: ["Vantawng Khawhthla"],
+    tagline: "Mizoram's Highest Uninterrupted Waterfall",
+    description: "About 5 km south of Thenzawl in Serchhip district, Vantawng Falls drops 230 metres on the Vanva River — the highest uninterrupted waterfall in Mizoram, and roughly 92 km from Aizawl. Thick forested hillsides make it hard to approach directly, so the state has built a viewing tower for visitors to take in the full tiered drop. The falls carry a local legend about Vantawnga, a swimmer said to move through the cascading water like a fish, for whom the falls are named.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Vantawng_Falls%2C_Mizoram.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Vantawng_Falls%2C_Mizoram.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Vantawng_Falls%2C_Mizoram.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Vantawng_waterfall%2C_Mizoram%2CIndia.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Vantawng_falls_base_Pond_Mizoram_India.jpg",
+    ],
+    imageCredit: "Photos: Didini Tochhawng (CC BY-SA), Bodhisattwa (CC BY-SA), Photos Worldwide (CC0), via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March (clear views); monsoon (June–September) for peak water flow",
+    duration: "2–3 hours",
+    highlights: [{ name: "Mizoram's highest uninterrupted waterfall, a 230m drop" }, { name: "A dedicated viewing tower over forested hillsides" }, { name: "The Vanva River's tiered cascades and base pool" }, { name: "Local legend of the swimmer Vantawnga" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl (~92 km from the falls), via Kolkata/Guwahati/Imphal connections", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road via Thenzawl", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Often combined with Thenzawl's golf course and handloom villages on the same trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~92 km from Aizawl via Thenzawl, then ~5 km further south", costRange: "Local taxi or self-drive from Aizawl/Thenzawl", tips: "Thenzawl is the practical base for reaching the falls." },
+    ],
+    accommodation: [
+      { type: "Thenzawl Hotels & Tourist Lodges", priceRange: "₹800–₹4,500/night", examples: ["Tourist lodges in Thenzawl", "Homestays near the golf course"], description: "Thenzawl is the nearest town with lodging, about 5 km from the falls." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Thenzawl", cost: "Fare varies by round-trip arrangement", notes: "The short final stretch from Thenzawl to the falls' viewing tower", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vantawng Falls & Thenzawl", morning: "Drive from Aizawl to Thenzawl.", afternoon: "Continue to Vantawng Falls and view the drop from the tower.", evening: "Explore Thenzawl's golf course and handloom weaving villages.", stay: "Thenzawl", meals: "Local Mizo meals in Thenzawl", tips: "The dense forest around the falls means the viewing tower is the best (and safest) vantage point." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, state-maintained tourist site with a dedicated viewing tower", "Thenzawl is a well-established regional tourism base"],
+      precautions: ["The forested hillsides around the falls are steep and not meant for direct approach — stick to the viewing tower", "Weather can affect visibility and trail conditions, especially in monsoon"],
+      soloTips: ["A manageable day trip from Thenzawl, with the viewing tower providing a safe, defined vantage point"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The viewing tower and surrounding platform"],
+      avoidAreas: ["Unmarked descents into the forested gorge"],
+    },
+    rating: 4.6,
+    reviews: 540,
+    mustEat: ["Mizo cuisine in Thenzawl", "Local produce from Thenzawl's vety/dairy farms"],
+    packingTips: ["A camera with zoom for the tower viewpoint", "A light rain jacket in monsoon season", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
