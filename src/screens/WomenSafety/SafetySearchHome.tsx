@@ -96,7 +96,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
 
           <View
             style={{
-              flexDirection: "row", alignItems: "center", gap: 10, height: 44, borderRadius: 14, paddingHorizontal: 14, marginBottom: 14,
+              flexDirection: "row", alignItems: "center", gap: 12, height: 52, borderRadius: 18, paddingHorizontal: 16, marginBottom: 14,
               backgroundColor: c.surface, borderWidth: 1.5, borderColor: query ? c.primary : c.border,
             }}
           >
