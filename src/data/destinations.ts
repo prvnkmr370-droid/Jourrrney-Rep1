@@ -70300,6 +70300,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Food kiosks within the garden; more options in nearby Saket"],
     packingTips: ["Comfortable walking shoes for the terraced paths", "Sun protection and water", "A camera for the sculptures and garden views"],
   },
+  {
+    id: "sunder-nursery",
+    name: "Sunder Nursery",
+    state: "Delhi",
+    tagline: "A Mughal-Era Heritage Park Restored Beside Humayun's Tomb",
+    description: "Once a 16th-century nursery for the Mughal court, this 90-acre park just west of Humayun's Tomb underwent a major restoration led by the Aga Khan Trust for Culture, reopening in 2018 with landscaped gardens, a reflecting water channel, an amphitheatre, and six restored heritage monuments including the Mirza Muzaffar Hussain's Tomb and the Sunderwala Burj and Mahal. Its blend of genuine Mughal-era garden tombs with carefully replanted native flora and a micro-habitat zone has made it one of Delhi's most celebrated recent heritage projects and a favourite spot for walking, birdwatching, and photography.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunder_Nursery_%28Garden%29.jpg/960px-Sunder_Nursery_%28Garden%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunder_Nursery_%28Garden%29.jpg/960px-Sunder_Nursery_%28Garden%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunder_Nursery_%28Garden%29.jpg/960px-Sunder_Nursery_%28Garden%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mirza_Muzaffar_Hussain%E2%80%99s_Tomb_-Sunder_Nursery_-Delhi_-DSC008.jpg/960px-Mirza_Muzaffar_Hussain%E2%80%99s_Tomb_-Sunder_Nursery_-Delhi_-DSC008.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sunderwala_Mahal%2C_Sunder_Nursery%2C_New_Delhi.jpg/960px-Sunderwala_Mahal%2C_Sunder_Nursery%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Danish971, Aman.arch, Pulakit Singh, via Wikimedia Commons",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March (cooler weather for walking the gardens and spotting birds)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "Six restored Mughal-era heritage monuments" }, { name: "A long reflecting water channel beside Sunderwala Burj" }, { name: "An award-winning restoration by the Aga Khan Trust for Culture" }, { name: "A micro-habitat zone popular with birdwatchers" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Sunder Nursery by road/metro", fromBangalore: "IGI Airport, ~35 min to Sunder Nursery by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right beside Humayun's Tomb — easy to combine both in one outing." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "JLN Stadium metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "A modest entry fee applies — carry cash or a card for tickets at the gate." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Nizamuddin/South Delhi", "Hotels across every category citywide"], description: "Nizamuddin puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "JLN Stadium (Violet Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Humayun's Tomb", distance: "~0.5 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
+      { name: "Hazrat Nizamuddin Dargah", distance: "~1.5 km", type: "Sufi Shrine", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sunder Nursery & Humayun's Tomb", morning: "Walk the gardens and restored monuments.", afternoon: "Visit nearby Humayun's Tomb.", evening: "Return for a peaceful evening walk before closing.", stay: "Delhi", meals: "Food kiosks within the park; more options in nearby Nizamuddin", tips: "Come at sunset for the best light on the water channel and Sunderwala Burj." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A ticketed, well-maintained park with regular staff presence", "Popular with families, walkers, and photographers throughout the day"],
+      precautions: ["Some pathways run through denser garden sections — stick to main paths near closing time"],
+      soloTips: ["Very manageable solo — a well-kept, popular park with steady daytime footfall"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full park grounds during operating hours"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 19000,
+    mustEat: ["Food kiosks within the park; more options in nearby Nizamuddin"],
+    packingTips: ["Comfortable walking shoes for the garden paths", "Binoculars if you're interested in birdwatching", "A camera for the water channel and monuments"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
