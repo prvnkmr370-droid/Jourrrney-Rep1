@@ -69143,6 +69143,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Old Delhi street food (parathas, chaat, kebabs) in Chandni Chowk"],
     packingTips: ["Comfortable walking shoes — the complex is large", "A hat and water in summer", "A camera for the architecture"],
   },
+  {
+    id: "qutub-minar",
+    name: "Qutub Minar",
+    state: "Delhi",
+    aliases: ["Qutb Minar"],
+    tagline: "The World's Tallest Brick Minaret, Begun in 1193",
+    description: "Construction of the Qutub Minar began in 1193 under Qutb-ud-din Aibak, India's first Muslim ruler, with the upper storeys completed by Firoz Shah Tughlaq in 1386. It's the tallest brick minaret in the world and one of the most significant surviving examples of Indo-Islamic architecture. The tower stands at the centre of the Qutb complex — a UNESCO World Heritage Site in Mehrauli that also holds the Quwwat-ul-Islam Mosque, built alongside the minar, and the much older Iron Pillar of Delhi, famous for having resisted rusting for over 1,600 years. Nearby, the pillared cupola known as 'Smith's Folly' survives from a flawed 19th-century British restoration attempt.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Qutub_Minar_in_Delhi_03-2016.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/57/Qutub_Minar_in_Delhi_03-2016.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Qutub_Minar_in_Delhi_03-2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/View_of_Qutub_Minar_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/Qutb_Minar_with_Neem_Tree.jpg",
+    ],
+    imageCredit: "Photos: A.Savin, Syed Sajidul Islam, Shikher Singh, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather)",
+    duration: "2 hours",
+    highlights: [{ name: "The world's tallest brick minaret, begun in 1193" }, { name: "The adjoining Quwwat-ul-Islam Mosque" }, { name: "The rust-resistant Iron Pillar of Delhi" }, { name: "A UNESCO World Heritage Site in Mehrauli" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Qutub Minar by road/metro", fromBangalore: "IGI Airport, ~45 min to Qutub Minar by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "One of the closer major monuments to the airport." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Qutub Minar metro station, Yellow Line, then a short walk/auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The metro station is a short auto ride from the complex entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["South Delhi hotels near Mehrauli", "Hotels across every category citywide"], description: "South Delhi puts you closest to the complex, but any central Delhi stay works with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Qutub Minar station on the Yellow Line is the fastest way in", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mehrauli Archaeological Park", distance: "Adjacent", type: "Archaeological Park", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Qutub Minar & Mehrauli", morning: "Explore the Qutub complex — the minar, Quwwat-ul-Islam Mosque, and Iron Pillar.", afternoon: "Walk through the adjacent Mehrauli Archaeological Park's scattered ruins.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "South Delhi restaurants and cafes", tips: "Early morning visits avoid both the heat and the biggest crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-secured UNESCO World Heritage Site with airport-style entry screening", "Consistently heavy daytime tourist footfall"],
+      precautions: ["Uneven ancient stonework in places — wear sturdy footwear", "The complex is large and mostly outdoors — carry water and sun protection"],
+      soloTips: ["Very manageable solo — one of Delhi's most visited and well-monitored monuments"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full complex grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 38000,
+    mustEat: ["South Delhi restaurants near Mehrauli/Saket"],
+    packingTips: ["Comfortable walking shoes for uneven stonework", "Sun protection and water", "A camera for the architecture"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
