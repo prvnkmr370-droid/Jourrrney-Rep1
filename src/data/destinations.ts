@@ -68369,6 +68369,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["The temple complex's own restaurant", "Mizo cuisine in central Aizawl"],
     packingTips: ["A camera for the temple's architecture", "Modest clothing appropriate for a place of worship", "Comfortable walking shoes"],
   },
+  {
+    id: "champhai",
+    name: "Champhai",
+    state: "Mizoram",
+    tagline: "The 'Rice Bowl of Mizoram,' a Border Town Ringed by Terraced Valleys",
+    description: "Near the Myanmar border, Champhai sits above a broad valley that's one of the few places in Mizoram suited to wet rice cultivation, earning it a reputation as the state's rice bowl. The town itself climbs a ridge overlooking the terraced valley floor and the neighbouring village of Zotlang, with hills and border country stretching beyond. Champhai district is also rich in Mizo heritage — inscribed standing stones and monoliths in villages around the valley record local history, genealogy, and memorials, part of a wider cluster of heritage sites including nearby Vangchhia.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Champhai%2C_Mizoram%2C_from_south%2C_with_Zotlang_in_the_foreground.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Champhai%2C_Mizoram%2C_from_south%2C_with_Zotlang_in_the_foreground.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Champhai%2C_Mizoram%2C_from_south%2C_with_Zotlang_in_the_foreground.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Champhai%2C_Aizawl.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Standing-stones%2C_Champhai_Valley%2C_Mizoram.jpg",
+    ],
+    imageCredit: "Photos: Bogman, Osgood77, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Heritage", "Culture"],
+    bestSeason: "October – March (clear valley views, pleasant weather)",
+    duration: "1–2 days",
+    highlights: [{ name: "Sweeping views over the terraced Champhai Valley" }, { name: "Inscribed standing stones recording local Mizo history" }, { name: "Mizoram's main wet-rice-growing region" }, { name: "A base for the Vangchhia heritage cluster and Murlen National Park" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl (~245 km from Champhai), via Kolkata/Guwahati/Imphal connections", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then a long road journey east", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Champhai is a genuine multi-hour drive from Aizawl — plan accordingly." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~245 km from Aizawl", costRange: "Shared taxi or private vehicle from Aizawl", tips: "The town is a practical base for exploring the wider Champhai district's heritage sites." },
+    ],
+    accommodation: [
+      { type: "Champhai Hotels & Guesthouses", priceRange: "₹800–₹4,000/night", examples: ["Local hotels and guesthouses in Champhai town"], description: "A district headquarters town with a reasonable range of stays for the region." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "Fare varies by destination", notes: "Used to reach the valley viewpoints and nearby heritage villages", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Murlen National Park", distance: "In Champhai district", type: "National Park", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 5000, food: 1000, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Champhai Valley", morning: "Arrive in Champhai and take in the valley views from town.", afternoon: "Visit nearby villages with inscribed standing stones and monoliths.", evening: "Free evening in Champhai town.", stay: "Champhai", meals: "Local Mizo cuisine in Champhai", tips: "The valley is at its greenest just after the monsoon." },
+      { day: 2, title: "Heritage Sites & Onward", morning: "Explore further heritage sites in the district, or continue to Murlen National Park.", afternoon: "Begin the journey back toward Aizawl.", evening: "—", stay: "—", meals: "Local meals en route", tips: "Combine with Murlen National Park if wildlife and forest trekking interest you." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A district headquarters town with established local infrastructure", "Regular daytime activity given its role as a regional hub"],
+      precautions: ["A border-adjacent district — carry valid ID and be aware of any local restrictions", "The long approach road from Aizawl means limited options if travel runs late — plan daylight travel"],
+      soloTips: ["Manageable with some advance planning given the distance from Aizawl and the town's role as a regional base"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Champhai town centre and main valley viewpoints"],
+      avoidAreas: ["Unmarked border-adjacent areas without local guidance"],
+    },
+    rating: 4.4,
+    reviews: 310,
+    mustEat: ["Local Mizo cuisine, including regional rice dishes given the valley's rice-growing heritage"],
+    packingTips: ["A camera for the valley views", "Comfortable walking shoes for village visits", "Valid ID — a border-adjacent district", "Warm layers for cooler evenings"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
