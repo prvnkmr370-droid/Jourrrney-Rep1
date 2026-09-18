@@ -68601,6 +68601,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Resort dining at Hmuifang", "Mizo cuisine in the nearby villages"],
     packingTips: ["A camera for the ridge and valley views", "A light jacket — cooler at altitude", "Comfortable walking shoes"],
   },
+  {
+    id: "lengteng-wildlife-sanctuary",
+    name: "Lengteng Wildlife Sanctuary",
+    state: "Mizoram",
+    tagline: "A Birdwatcher's Reserve Home to Mizoram's Second-Highest Peak",
+    description: "In Saitual district, Lengteng Wildlife Sanctuary takes its name from Lengteng peak, Mizoram's second-highest point after Phawngpui. The reserve's forest is a genuine draw for birdwatchers — documented sightings include the Himalayan cutia, grey sibia, blue-winged laughingthrush, and orange-bellied leafbird, among many other species recorded here by researchers. It's a quieter, less-visited alternative to Mizoram's larger protected areas, better suited to visitors specifically interested in birdlife than general sightseeing.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/46/Himalayan_Cutia_Cutia_nipalensis_photo_by_Dr._Raju_Kasambe_%281%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/46/Himalayan_Cutia_Cutia_nipalensis_photo_by_Dr._Raju_Kasambe_%281%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Himalayan_Cutia_Cutia_nipalensis_photo_by_Dr._Raju_Kasambe_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f6/Grey_Sibia_Heterophasia_gracilis_by_Dr._Raju_Kasambe_DSC_2243_%282%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/Orange-bellied_Leafbird_Chloropsis_hardwickii_by_Dr_Raju_Kasambe.jpg",
+    ],
+    imageCredit: "Photos: Dr. Raju Kasambe, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – March (best birdwatching conditions)",
+    duration: "1–2 days",
+    highlights: [{ name: "Mizoram's second-highest peak, Lengteng" }, { name: "Documented sightings of Himalayan cutia, grey sibia, and more" }, { name: "A quieter alternative to Mizoram's larger reserves" }, { name: "Genuinely rewarding for dedicated birdwatchers" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then road via Saitual", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Combine with Saitual or Tam Dil given the shared district." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "In Saitual district, via Lamzawl", costRange: "Hired vehicle recommended", tips: "Arrange forest department permits and a local guide in advance." },
+    ],
+    accommodation: [
+      { type: "Saitual Guesthouses", priceRange: "₹600–₹2,500/night", examples: ["Basic guesthouses in Saitual town"], description: "Saitual is the practical base — lodging near the sanctuary itself is minimal." },
+    ],
+    localTransport: [
+      { mode: "Guided Forest Walks (Required)", cost: "Arranged through the forest department", notes: "Birdwatching here is on foot with a local guide", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tam Dil", distance: "In Saitual district", type: "Lake", isHidden: true, id: "tam-dil" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1800, food: 600, transport: 600, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4500, food: 1000, transport: 1200, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birdwatching at Lengteng", morning: "Travel from Saitual into the sanctuary with a local guide.", afternoon: "Guided birdwatching walk through the forest.", evening: "Return to Saitual.", stay: "Saitual", meals: "Carry supplies — limited facilities inside the reserve", tips: "Early morning is the most productive time for birdwatching here, as everywhere." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Forest department-managed with guided access", "A quieter reserve, generally visited by dedicated birdwatching groups with local guides"],
+      precautions: ["Remote forest terrain — never explore without a local guide", "Limited facilities and connectivity — carry supplies and inform others of your plans"],
+      soloTips: ["Not recommended solo — arrange a local guide through Saitual in advance"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Marked trails with a guide"],
+      avoidAreas: ["Off-trail forest areas without a guide"],
+    },
+    rating: 4.2,
+    reviews: 140,
+    mustEat: ["Carry your own supplies — very limited food facilities inside the reserve"],
+    packingTips: ["Binoculars and a camera with zoom for birdwatching", "Sturdy trekking shoes", "Insect repellent", "A torch and basic first-aid kit"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
