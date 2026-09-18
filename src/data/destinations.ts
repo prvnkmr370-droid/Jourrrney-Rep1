@@ -70239,6 +70239,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Central Delhi's restaurants and cafes nearby"],
     packingTips: ["Comfortable walking shoes for the lawn and galleries", "Modest, respectful attire given the site's significance", "A camera for the garden and preserved rooms"],
   },
+  {
+    id: "garden-of-five-senses",
+    name: "Garden of Five Senses",
+    state: "Delhi",
+    tagline: "A Sculpture Park Designed to Engage All Five Senses",
+    description: "Opened in 2003 near Saket in South Delhi, this 20-acre landscaped park was designed by architect Pradeep Sachdeva to engage sight, sound, touch, smell, and taste through a mix of terraced gardens, stone and terracotta sculptures, a solar-powered sun clock, and a spiral 'fountain tree' hung with bells. Rows of monumental stone elephants, a Mughal-style garden, and winding pathways past themed flowerbeds make it a popular spot for a relaxed walk, and it regularly hosts an open-air amphitheatre for cultural events and the annual Garden Tourism Festival.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants.JPG/960px-Elephants.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants.JPG/960px-Elephants.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants.JPG/960px-Elephants.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Sun_clock_inside_the_Garden_of_Five_Senses.jpg/500px-Sun_clock_inside_the_Garden_of_Five_Senses.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fountain_Tree.jpg/500px-Fountain_Tree.jpg",
+    ],
+    imageCredit: "Photos: Miramar93 (public domain), Sanskari, Prabhat nhpc, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March (pleasant weather for walking the terraced grounds)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "Monumental stone elephant sculptures" }, { name: "A solar-powered sun clock" }, { name: "A spiral steel 'fountain tree' hung with bells" }, { name: "An open-air amphitheatre hosting cultural events" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to the Garden of Five Senses by road/metro", fromBangalore: "IGI Airport, ~40 min to the Garden of Five Senses by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Near Saket, South Delhi — combine with a visit to nearby malls or Mehrauli Archaeological Park." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Saket metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "A modest entry fee applies — carry cash or a card for tickets at the gate." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Saket/South Delhi", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Saket (Yellow Line) is the closest station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mehrauli Archaeological Park", distance: "~3 km", type: "Historic Ruins", isHidden: true },
+      { name: "Qutub Minar", distance: "~4 km", type: "UNESCO Heritage Site", isHidden: false, id: "qutub-minar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Garden of Five Senses & Mehrauli", morning: "Walk the terraced gardens and sculpture installations.", afternoon: "Visit nearby Mehrauli Archaeological Park or Qutub Minar.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Food kiosks within the garden; more options in nearby Saket", tips: "The garden's amphitheatre sometimes hosts evening events — check what's on if you want to combine the visit with a show." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A ticketed, gated park with regular staff presence", "Popular with families and groups throughout the day"],
+      precautions: ["Some pathways wind through denser landscaping — stick to main paths in the evening", "The park can feel quieter on weekday mornings — fine, just be aware of surroundings"],
+      soloTips: ["Very manageable solo — a pleasant, ticketed park with steady daytime footfall"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full garden grounds during operating hours"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 12000,
+    mustEat: ["Food kiosks within the garden; more options in nearby Saket"],
+    packingTips: ["Comfortable walking shoes for the terraced paths", "Sun protection and water", "A camera for the sculptures and garden views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
