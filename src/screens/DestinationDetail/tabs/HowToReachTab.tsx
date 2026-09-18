@@ -19,9 +19,11 @@ import HurdlesSection from "./how-to-reach/HurdlesSection";
 import EssentialsSection from "./how-to-reach/EssentialsSection";
 import ExploreSection from "./how-to-reach/ExploreSection";
 import AdvisorySection from "./how-to-reach/AdvisorySection";
+import LocalTransportSection from "./how-to-reach/LocalTransportSection";
 
 const SECTIONS = [
   { id: "arrive", label: "Getting There", icon: "✈️" },
+  { id: "localTransport", label: "Getting Around", icon: "🛺" },
   { id: "weather", label: "What to Pack", icon: "🧳" },
   { id: "hurdles", label: "Traveler Hurdles", icon: "⚡" },
   { id: "essentials", label: "City Essentials", icon: "🏙️" },
@@ -65,6 +67,7 @@ export default function HowToReachTab({ destination: d }: { destination: Destina
 
       <View style={{ padding: 20 }}>
         {section === "arrive" && <ArriveSection destination={d} guide={guide} />}
+        {section === "localTransport" && <LocalTransportSection destination={d} />}
         {section === "weather" && <WeatherSection destination={d} guide={guide} />}
         {section === "hurdles" && <HurdlesSection destination={d} guide={guide} />}
         {section === "essentials" && <EssentialsSection destination={d} guide={guide} />}

@@ -334,25 +334,7 @@ export default function ArriveSection({ destination: d, guide }: Props) {
             <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textPrimary }}>{guide.fromCityToSight}</Text>
           </View>
         </>
-      ) : (
-        <View style={{ backgroundColor: c.surfaceAlt, borderRadius: 16, padding: 16 }}>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary, marginBottom: 10 }}>
-            Local Transport at {d.name}
-          </Text>
-          <View style={{ gap: 8 }}>
-            {d.localTransport.map((lt) => (
-              // justifyContent: "space-between" with neither side
-              // constrained let a long mode name push cost past the
-              // card's edge instead of wrapping — same root cause as the
-              // hero's rating/duration/season row.
-              <View key={lt.mode} style={{ flexDirection: "row", justifyContent: "space-between", gap: 8 }}>
-                <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 12, color: c.textPrimary, flexShrink: 1 }}>{lt.mode}</Text>
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary, flexShrink: 0 }}>{lt.cost}</Text>
-              </View>
-            ))}
-          </View>
-        </View>
-      )}
+      ) : null}
 
       <LocationPickerModal visible={showMapPicker} onClose={() => setShowMapPicker(false)} onConfirm={pickFromMap} />
     </View>

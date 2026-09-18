@@ -1,11 +1,15 @@
 /**
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
- * hero + Overview tab. The other 7 tabs (How to Reach, Stay, Local
- * Travel, Nearby, Budget, Safety, Itinerary) have no Figma frame — the
- * Make prototype's src/screens/DestinationDetail.tsx is the reference for
- * their content and behavior (simplified here: the Make version's live
- * GPS/distance and journey-guide sub-flow on "How to Reach" isn't ported;
- * that tab instead renders the destination's own `transport` data).
+ * hero + Overview tab. The other 5 tabs (How to Reach, Stay, Budget,
+ * Safety, Itinerary) have no Figma frame — the Make prototype's
+ * src/screens/DestinationDetail.tsx is the reference for their content
+ * and behavior (simplified here: the Make version's live GPS/distance
+ * and journey-guide sub-flow on "How to Reach" isn't ported; that tab
+ * instead renders the destination's own `transport` data). The former
+ * standalone "Local Travel" and "Nearby" tabs were folded into How to
+ * Reach (as a "Getting Around" sub-section) and Overview respectively —
+ * both were closely related to content already shown elsewhere and read
+ * as redundant as their own top-level tabs.
  */
 import { useEffect, useMemo, useState } from "react";
 import { View, Text, Pressable, ScrollView, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
@@ -22,8 +26,6 @@ import { withOpacity } from "@/components/withOpacity";
 import OverviewTab from "./tabs/OverviewTab";
 import HowToReachTab from "./tabs/HowToReachTab";
 import StayTab from "./tabs/StayTab";
-import LocalTravelTab from "./tabs/LocalTravelTab";
-import NearbyTab from "./tabs/NearbyTab";
 import BudgetTab from "./tabs/BudgetTab";
 import SafetyTab from "./tabs/SafetyTab";
 import ItineraryTab from "./tabs/ItineraryTab";
@@ -32,8 +34,6 @@ const TABS = [
   { id: "Overview", emoji: "🗺️" },
   { id: "How to Reach", emoji: "🚀" },
   { id: "Stay", emoji: "🏨" },
-  { id: "Local Travel", emoji: "🛺" },
-  { id: "Nearby", emoji: "" },
   { id: "Budget", emoji: "💰" },
   { id: "Safety", emoji: "🛡️" },
   { id: "Itinerary", emoji: "📅" },
@@ -273,8 +273,6 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         {activeTab === "Overview" && <OverviewTab destination={d} />}
         {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
         {activeTab === "Stay" && <StayTab destination={d} />}
-        {activeTab === "Local Travel" && <LocalTravelTab destination={d} />}
-        {activeTab === "Nearby" && <NearbyTab destination={d} />}
         {activeTab === "Budget" && <BudgetTab destination={d} />}
         {activeTab === "Safety" && <SafetyTab destination={d} />}
         {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
