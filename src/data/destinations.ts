@@ -70178,6 +70178,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Central Delhi's restaurants and cafes nearby"],
     packingTips: ["Comfortable walking shoes — the galleries cover a lot of ground", "A light layer, since the interior is air-conditioned", "A notebook or phone for jotting down favourite pieces"],
   },
+  {
+    id: "gandhi-smriti",
+    name: "Gandhi Smriti",
+    state: "Delhi",
+    tagline: "The House and Garden Where Mahatma Gandhi Spent His Final Days",
+    description: "Formerly Birla House, this was the residence of industrialist Ghanshyam Das Birla, where Mahatma Gandhi stayed for the last 144 days of his life before he was assassinated in the garden on 30 January 1948 while walking to a evening prayer meeting. Marked footsteps trace his final walk across the lawn to the Martyr's Column, a simple marker inscribed with his last words, 'He Ram,' at the exact spot he fell. The house itself is now a museum with rooms preserved as he used them, alongside exhibits on his life, philosophy, and the freedom movement.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg/500px-Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg/500px-Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg/500px-Birla_HouseGandhi_Smriti%2C_New_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Martyr%27s_Column_at_the_Gandhi_Smriti_in_New_Delhi_India-0382-2.jpg/500px-Martyr%27s_Column_at_the_Gandhi_Smriti_in_New_Delhi_India-0382-2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Gandhi_Smriti%2C_footsteps%2C_New_Delhi.jpg/500px-Gandhi_Smriti%2C_footsteps%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Gaurav Vaidya, R.Stone, Whispyhistory, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (mornings on the lawn are especially peaceful)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "The site of Mahatma Gandhi's final 144 days and assassination" }, { name: "Marked footsteps tracing his last walk across the lawn" }, { name: "The Martyr's Column, inscribed with his last words 'He Ram'" }, { name: "Preserved rooms and exhibits on his life and philosophy" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Gandhi Smriti by road/metro", fromBangalore: "IGI Airport, ~35 min to Gandhi Smriti by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "On Tees January Marg, central Delhi — easy to combine with nearby sights." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Race Course or Central Secretariat metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Entry is free; the museum is closed on Mondays — check ahead before visiting." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rashtrapati Bhavan", distance: "~3 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+      { name: "National Museum", distance: "~3.5 km", type: "Museum", isHidden: false, id: "national-museum-delhi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandhi Smriti & Central Delhi", morning: "Walk the marked footsteps to the Martyr's Column and explore the preserved rooms.", afternoon: "Visit the museum's exhibits on Gandhi's life and philosophy.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "A quiet, reflective site — allow time to walk the lawn slowly rather than rushing through." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A well-secured central Delhi museum with entry screening", "Consistently steady daytime visitor footfall"],
+      precautions: ["Closed on Mondays — check opening hours before visiting", "Photography rules vary inside the preserved rooms — check signage"],
+      soloTips: ["Very manageable solo — a calm, respectful, well-monitored museum and garden"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full house and garden grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 9000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["Comfortable walking shoes for the lawn and galleries", "Modest, respectful attire given the site's significance", "A camera for the garden and preserved rooms"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
