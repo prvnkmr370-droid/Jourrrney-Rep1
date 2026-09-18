@@ -68737,6 +68737,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Carry your own supplies for the trek", "Naga cuisine (smoked pork, axone, bamboo shoot) back in Kohima"],
     packingTips: ["Sturdy trekking shoes — the climb is steep and can be slippery", "A rain layer and warm clothing regardless of season", "Enough food and water for the full trek", "A sleeping bag if staying at the rest house"],
   },
+  {
+    id: "khonoma-village",
+    name: "Khonoma Village",
+    state: "Nagaland",
+    tagline: "Asia's First Green Village, and the 'Warrior Village' that Held Off the British",
+    description: "About 20 km from Kohima, Khonoma overlooks terraced paddy fields and forested hills, and carries a genuinely remarkable history: in the late 19th century, this Angami Naga village put up fierce resistance against British incursions. A stone memorial at the village's peak, an official ASI monument, marks where political officer G.H. Damant was killed in October 1879 — a death that led to a pitched battle that November in which the Nagas, armed only with traditional weapons, killed three British officers, before a peace treaty was signed in 1880. Today Khonoma is recognised as Asia's first Green Village, and it's home to the Khonoma Nature Conservation and Tragopan Sanctuary, set up in 1998 to protect the endangered Blyth's tragopan and other rare species.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paddy_fields_at_Khonoma_village%2C_Nagaland%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paddy_fields_at_Khonoma_village%2C_Nagaland%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paddy_fields_at_Khonoma_village%2C_Nagaland%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/View_of_Khonoma_%282024%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Memorial_of_G.H._Damant.jpg",
+    ],
+    imageCredit: "Photos: Joli Rumi, Ly.n0m, Ketouvizonakhro, via Wikimedia Commons (CC BY-SA)",
+    category: ["Heritage", "Nature", "Culture"],
+    bestSeason: "October – April (clear weather); year-round for the village and sanctuary",
+    duration: "1 day (well suited to an overnight homestay)",
+    highlights: [{ name: "Terraced paddy fields overlooking forested hills" }, { name: "The Damant Memorial, an ASI monument marking an 1879 battle site" }, { name: "Asia's first officially recognised Green Village" }, { name: "The Khonoma Nature Conservation and Tragopan Sanctuary" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "An easy day trip or overnight stay from Kohima." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~20 km from Kohima", costRange: "Local taxi from Kohima", tips: "A short, scenic drive — combine with a village homestay for the fullest experience." },
+    ],
+    accommodation: [
+      { type: "Village Homestays", priceRange: "₹800–₹3,000/night", examples: ["Community-run homestays within Khonoma village"], description: "Homestays let visitors experience Angami village life directly, and are the preferred way to stay here." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "N/A", notes: "The village and its immediate surroundings are best explored on foot", available: true },
+      { mode: "Local Guide (Recommended)", cost: "Arranged in the village", notes: "Useful for the sanctuary trails and understanding the village's history", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 1800, food: 500, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7200, accommodation: 4500, food: 1000, transport: 700, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Khonoma Village", morning: "Drive from Kohima to Khonoma, walk through the terraced paddy fields.", afternoon: "Visit the Damant Memorial and learn the village's history; explore the Tragopan Sanctuary trails.", evening: "Overnight at a village homestay.", stay: "Khonoma Homestay", meals: "Home-cooked Angami meals at the homestay", tips: "A homestay night gives real insight into village life beyond a quick day visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-established, frequently visited heritage village with organised homestays", "A close-knit community with a strong sense of local pride and hospitality"],
+      precautions: ["Respect the sanctuary's conservation rules — stick to marked trails", "Weather can turn quickly on hillside paths — sturdy footwear is worthwhile"],
+      soloTips: ["Very manageable solo, especially with a homestay arranged in advance — a welcoming, well-visited village"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The village and marked sanctuary trails"],
+      avoidAreas: ["Off-trail sanctuary areas without a guide"],
+    },
+    rating: 4.6,
+    reviews: 890,
+    mustEat: ["Angami Naga cuisine at village homestays", "Smoked meats and bamboo shoot dishes"],
+    packingTips: ["Comfortable walking shoes for the terraced fields and village paths", "A camera for the paddy-field views", "Warm layers for cooler evenings"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
