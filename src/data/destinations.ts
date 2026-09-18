@@ -11597,7 +11597,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹30–₹150", notes: "From Lakhisarai town to the temple", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Munger", distance: "~35 km", type: "Town", isHidden: true },
+      { name: "Ruins of Vikramshila", distance: "~55 km", type: "Archaeological Site", isHidden: true, id: "ruins-of-vikramshila" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 1800, accommodation: 700, food: 400, transport: 500, activities: 200 },
@@ -11644,7 +11647,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹50–₹250", notes: "From Aurangabad town to the shrine", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Mahabodhi Temple", distance: "~45 km", type: "UNESCO Heritage Site", isHidden: false, id: "mahabodhi-temple" },
+      { name: "Vishnupad Temple", distance: "~50 km", type: "Temple", isHidden: false, id: "vishnupad-temple" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 1900, accommodation: 800, food: 400, transport: 500, activities: 200 },
@@ -11692,7 +11698,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi/Rickshaw", cost: "₹30–₹200", notes: "From anywhere in Darbhanga city", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kusheshwar Asthan Bird Sanctuary", distance: "~40 km", type: "Wildlife Sanctuary", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1500, food: 600, transport: 400, activities: 300 },
@@ -11858,7 +11866,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹30–₹150", notes: "From anywhere in Arrah", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Golghar", distance: "~55 km, in Patna", type: "Heritage Site", isHidden: true, id: "golghar" },
+      { name: "Buddha Smriti Park", distance: "~55 km, in Patna", type: "Park", isHidden: true, id: "buddha-smriti-park" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Day-trip Basic", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 1900, accommodation: 800, food: 400, transport: 500, activities: 200 },
@@ -28168,7 +28179,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Covers Yamuna Nagar/Jagadhri town only, not the park itself", available: true },
       { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Limited coverage — pre-book for the return trip from remote stretches", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kalesar Forest Reserve", distance: "Adjoining the park", type: "Forest Reserve", isHidden: false, id: "kalesar-forest-reserve" },
+      { name: "Morni Hills & Tikkar Tal", distance: "~90 km", type: "Hill Station", isHidden: true, id: "morni-hills" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 600, food: 300, transport: 100, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 700, transport: 500, activities: 0 },
@@ -42131,7 +42145,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Helicopter", cost: "₹1,500–₹2,500 one-way per person", notes: "From Sanjhichhat helipad, cutting the trek to a final ~2.5 km walk — book ahead, especially in season", available: true },
       { mode: "Cable Car (Bhawan–Bhairon)", cost: "₹150–₹200 return", notes: "Covers the steep final stretch to Bhairon Temple", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Bahu Fort", distance: "~50 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
+      { name: "Raghunath Temple", distance: "~50 km, in Jammu", type: "Temple", isHidden: true, id: "raghunath-temple" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 600, activities: 300 },
@@ -42194,7 +42211,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shikara", cost: "₹400–₹1,200 per hour (negotiate)", notes: "The main way to move on the lake itself", available: true },
       { mode: "Auto Rickshaw / App Cab", cost: "₹100–₹400", notes: "For getting around Srinagar's boulevard and old city", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Nishat Bagh", distance: "~5 km", type: "Mughal Garden", isHidden: false, id: "nishat-bagh" },
+      { name: "Shankaracharya Temple", distance: "~6 km", type: "Temple", isHidden: false, id: "shankaracharya-temple" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 1200, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 4000, food: 700, transport: 400, activities: 400 },
@@ -42257,7 +42277,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Pony", cost: "₹300–₹800", notes: "For short local rides around the meadow", available: true },
       { mode: "Local Taxi", cost: "₹500–₹1,500", notes: "Union-rate taxis operate within Gulmarg", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Dal Lake", distance: "~50 km, in Srinagar", type: "Lake", isHidden: true, id: "dal-lake" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 1500, food: 400, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 6500, accommodation: 4500, food: 800, transport: 500, activities: 700 },
@@ -42319,7 +42341,11 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Taxi / Union Cab", cost: "₹1,500–₹3,500 for Betaab/Aru/Chandanwari circuit", notes: "Union-rate shared or private taxis cover the valley's main sights", available: true },
       { mode: "Pony", cost: "₹500–₹1,500", notes: "For Baisaran meadow and other short treks", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Baisaran Valley", distance: "~5 km", type: "Meadow", isHidden: false, id: "baisaran-valley" },
+      { name: "Aru Valley", distance: "~12 km", type: "Valley", isHidden: false, id: "aru-valley" },
+      { name: "Chandanwari", distance: "~16 km", type: "Valley", isHidden: true, id: "chandanwari" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 1000, food: 350, transport: 300, activities: 150 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 3200, food: 700, transport: 700, activities: 400 },
@@ -42447,7 +42473,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Skyview Patnitop Ropeway", cost: "₹500–₹800", notes: "Connects the highway to the upper meadow in about 15 minutes", available: true },
       { mode: "Local Taxi", cost: "₹800–₹2,000", notes: "For Sanasar and other nearby stops", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sanasar", distance: "~19 km", type: "Meadow", isHidden: false, id: "sanasar" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 900, food: 300, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 500, activities: 500 },
@@ -42699,7 +42727,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Akhnoor town", available: true },
       { mode: "Shared Taxi", cost: "₹50–₹100 per seat", notes: "Runs the Jammu–Akhnoor route regularly", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Bahu Fort", distance: "~28 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1800, food: 500, transport: 300, activities: 200 },
@@ -42759,7 +42789,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Paddle Boat", cost: "₹100–₹200 per ride", notes: "Available on the lake", available: true },
       { mode: "Shared Taxi", cost: "₹80–₹150 per seat", notes: "Runs the Jammu–Mansar route", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Bahu Fort", distance: "~62 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 400, activities: 300 },
@@ -42819,7 +42851,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi", cost: "₹100–₹250 per seat", notes: "Runs Kathua–Basholi route", available: true },
       { mode: "Private Cab", cost: "₹2,000–₹4,000/day", notes: "Best for reaching the dam viewpoint and Basholi town together", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kathua", distance: "~30 km", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 500, transport: 300, activities: 200 },
@@ -42879,7 +42913,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹100–₹250", notes: "From Udhampur town to Krimchi village", available: true },
       { mode: "Private Cab", cost: "₹800–₹1,500 round trip", notes: "Easiest way to combine with other Udhampur-area sights", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Udhampur", distance: "~12 km", type: "Town", isHidden: true },
+      { name: "Patnitop", distance: "~65 km", type: "Hill Station", isHidden: true, id: "patnitop" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 200, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1600, food: 450, transport: 250, activities: 200 },
@@ -42939,7 +42976,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Trekking (on foot)", cost: "N/A", notes: "The only way to reach the lake — no vehicle access", available: true },
       { mode: "Pony/Porter Support", cost: "₹500–₹1,500/day", notes: "Available through trek operators for gear", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sonamarg", distance: "Nearby", type: "Hill Station", isHidden: false, id: "sonamarg" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2500, accommodation: 1200, food: 500, transport: 500, activities: 300 },
       { tier: "mid", label: "Comfortable (Guided Trek)", perDayPerPerson: 5500, accommodation: 3000, food: 800, transport: 800, activities: 900 },
@@ -42999,7 +43038,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Reasi town", available: true },
       { mode: "Private Cab", cost: "₹1,500–₹3,000/day", notes: "Best for combining with Vaishno Devi/Katra visits", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Shri Mata Vaishno Devi", distance: "~25 km, in Reasi district", type: "Temple", isHidden: true, id: "vaishno-devi-temple" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1800, food: 500, transport: 300, activities: 200 },
@@ -43063,7 +43104,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Private Cab", cost: "₹2,500–₹4,500 round trip", notes: "From Bhaderwah town to Padri", available: true },
       { mode: "Shared Jeep", cost: "₹150–₹300 per seat", notes: "Seasonal, subject to snow/road conditions", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Bhaderwah", distance: "~41 km", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1600, food: 500, transport: 400, activities: 300 },
@@ -43500,7 +43543,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Boat", cost: "₹200–₹500", notes: "For a closer look at the lake and Zainul Lank island", available: true },
       { mode: "Shared Taxi", cost: "₹100–₹250 per seat", notes: "Runs the Srinagar–Bandipora route", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Dal Lake", distance: "~60 km, in Srinagar", type: "Lake", isHidden: true, id: "dal-lake" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 300, activities: 300 },
@@ -43747,7 +43792,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Pony Ride", cost: "₹800–₹1,500 round trip", notes: "The standard way up from Pahalgam, roughly an hour each way", available: true },
       { mode: "On Foot", cost: "Free", notes: "A manageable uphill walk for fitter visitors, roughly 1.5–2 hours", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Pahalgam", distance: "~5 km", type: "Hill Station", isHidden: false, id: "pahalgam" },
+      { name: "Betaab Valley", distance: "~7 km", type: "Valley", isHidden: true, id: "betaab-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 300, transport: 400, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2800, food: 600, transport: 600, activities: 200 },
@@ -44065,7 +44113,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Poonch town", available: true },
       { mode: "Local Taxi", cost: "₹500–₹1,500/day", notes: "For exploring Poonch town and nearby sights", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Poonch town centre", distance: "Within town", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2200, accommodation: 1400, food: 450, transport: 250, activities: 100 },
@@ -44436,7 +44486,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi", cost: "₹200–₹500", notes: "Runs from Leh toward Kargil, passing Alchi", available: true },
       { mode: "Private Taxi/SUV", cost: "₹3,000–₹5,000/day", notes: "Best for combining Alchi with Likir Monastery", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sham Valley", distance: "Within the Sham Valley circuit", type: "Valley", isHidden: false, id: "sham-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 400, transport: 400, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 800, activities: 200 },
@@ -44681,7 +44733,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Private Taxi/SUV", cost: "₹2,500–₹4,500 round trip from Leh", notes: "The main way to reach the pass", available: true },
       { mode: "Shared Taxi (Highway Transit)", cost: "₹2,000–₹5,000", notes: "Part of the Srinagar–Leh shared-taxi route", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kargil War Memorial", distance: "~60 km", type: "Memorial", isHidden: true, id: "kargil-war-memorial" },
+      { name: "Sham Valley", distance: "~40 km", type: "Valley", isHidden: true, id: "sham-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 350, activities: 50 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2500, food: 600, transport: 600, activities: 100 },
@@ -45236,7 +45291,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Taxi", cost: "₹500–₹1,000 round trip from Kargil", notes: "The standard way to visit", available: true },
       { mode: "On Foot", cost: "Free", notes: "The old village and museum are walkable once there", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kargil War Memorial", distance: "~10 km", type: "Memorial", isHidden: false, id: "kargil-war-memorial" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 500, transport: 400, activities: 150 },
@@ -45542,7 +45599,9 @@ export const DESTINATIONS: Destination[] = [
       { mode: "On Foot", cost: "Free", notes: "The villages are easily walkable", available: true },
       { mode: "Private Taxi/SUV", cost: "₹6,000–₹10,000/day", notes: "For the journey from Leh and exploring the valley", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sham Valley", distance: "Along the same Indus valley route", type: "Valley", isHidden: true, id: "sham-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 400, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 700, activities: 200 },
@@ -65188,7 +65247,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Trek Guide (mandatory in practice)", cost: "Arranged through a local operator in Senapati/Imphal", notes: "The trail, weather, and border-area terrain make a guide genuinely necessary, not optional", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Dzükou Valley (Nagaland side)", distance: "Same valley, across the state border", type: "Valley", isHidden: false, id: "dzukou-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 500, food: 400, transport: 400, activities: 200 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1500, food: 700, transport: 800, activities: 500 },
@@ -65414,7 +65475,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹2,500–₹4,500 round trip", notes: "Arrange through a hotel or local operator", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kangla", distance: "~81 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 500, activities: 200 },
@@ -65470,7 +65533,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,000–₹2,000 round trip", notes: "Arrange through a hotel or local operator", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kangla", distance: "~20 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
+      { name: "Ima Market", distance: "~20 km, in Imphal", type: "Market", isHidden: true, id: "ima-market" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 800, food: 300, transport: 100, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2200, food: 600, transport: 300, activities: 100 },
@@ -65526,7 +65592,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi from Imphal", cost: "₹5,000–₹9,000 round trip", notes: "Arrange through a reputable operator in Imphal; confirm current conditions before booking", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Tamu, Myanmar", distance: "~5 km (across the border)", type: "Border Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 300, transport: 400, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 1800, food: 700, transport: 1000, activities: 300 },
@@ -65939,7 +66007,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹200–₹500 round trip", notes: "Easily arranged from Imphal", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kangla", distance: "~10 km, in Imphal", type: "Heritage Site", isHidden: false, id: "kangla" },
+      { name: "Shree Govindajee Temple", distance: "~10 km, in Imphal", type: "Temple", isHidden: true, id: "shree-govindajee-temple" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 800, food: 300, transport: 100, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2200, food: 600, transport: 300, activities: 200 },
@@ -65995,7 +66066,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹800–₹1,800 round trip", notes: "Arrange through a hotel or local operator", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kangla", distance: "~26 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 400, activities: 300 },
@@ -67230,7 +67303,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Day Tour from Shillong", cost: "₹1,500–₹3,000 round trip", notes: "No local buses run directly here", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Shillong Peak", distance: "~25 km", type: "Viewpoint", isHidden: true, id: "shillong-peak" },
+      { name: "Elephant Falls", distance: "~30 km", type: "Waterfall", isHidden: true, id: "elephant-falls" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2200, food: 600, transport: 300, activities: 200 },
@@ -67286,7 +67362,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Cab / Taxi from Shillong (Police Bazaar or Bara Bazaar)", cost: "₹500–₹1,200 round trip", notes: "Roads are generally in good condition", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Elephant Falls", distance: "~12 km", type: "Waterfall", isHidden: false, id: "elephant-falls" },
+      { name: "Laitlum Canyon", distance: "~15 km", type: "Viewpoint", isHidden: true, id: "laitlum" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 800, food: 300, transport: 100, activities: 0 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2200, food: 600, transport: 300, activities: 100 },
@@ -67342,7 +67421,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared/Private Vehicle on the Shillong-Cherrapunji Road", cost: "Fare varies by shared vs. private vehicle", notes: "Valley views and ziplining are visible right from the roadside", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sohra (Cherrapunji)", distance: "~20 km", type: "Hill Town", isHidden: false, id: "sohra" },
+      { name: "Mawsmai Cave", distance: "~22 km", type: "Cave", isHidden: true, id: "mawsmai-cave" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2200, food: 600, transport: 300, activities: 300 },
@@ -67519,7 +67601,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Hired Jeep/SUV from Baghmara", cost: "Arranged locally in Baghmara or Tura", notes: "No public transport serves the park — a hired vehicle is essential given the rough terrain", available: true },
       { mode: "Local Guide (Highly Recommended)", cost: "Arranged in Baghmara", notes: "Recommended for navigation, cave exploration, and cultural/language insight", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Tura Peak", distance: "~85 km", type: "Peak", isHidden: true, id: "tura-peak" },
+      { name: "Nokrek National Park", distance: "~100 km", type: "National Park", isHidden: true, id: "nokrek-national-park" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 700, transport: 700, activities: 400 },
@@ -67577,7 +67662,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Guide (Required)", cost: "Arranged in Daribokgre", notes: "Always hire a local guide for safe exploration — trails can be moderately challenging with limited network coverage", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Tura Peak", distance: "~30 km", type: "Peak", isHidden: false, id: "tura-peak" },
+      { name: "Balpakram National Park", distance: "~100 km", type: "National Park", isHidden: true, id: "balpakram-national-park" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 400, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 700, transport: 500, activities: 400 },
@@ -67814,7 +67902,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Guided Walk from Information Centre", cost: "Included with entry ticket", notes: "A 30–45 minute uphill trek with a tour guide leads to the museum site", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sohra (Cherrapunji)", distance: "~60 km", type: "Hill Town", isHidden: true, id: "sohra" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 500, transport: 400, activities: 400 },
@@ -67870,7 +67960,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Private Vehicle", cost: "Local city fare", notes: "Located within Shillong, easily reached from any central hotel", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Don Bosco Museum", distance: "Within Shillong", type: "Museum", isHidden: false, id: "don-bosco-museum" },
+      { name: "Shillong Peak", distance: "~10 km", type: "Viewpoint", isHidden: true, id: "shillong-peak" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
@@ -68233,7 +68326,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Guide (Recommended)", cost: "Arranged in Sangau", notes: "Advisable given the remote terrain and the park's restricted visiting season", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Sangau", distance: "At the mountain's base", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 400, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 600, activities: 300 },
@@ -68708,7 +68803,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "On Foot (Trek)", cost: "N/A", notes: "The valley itself has no vehicle access — every stretch is walked", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Dzükou Valley (Manipur side)", distance: "Same valley, across the state border", type: "Valley", isHidden: false, id: "dzuko-valley" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 400, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1500, food: 700, transport: 700, activities: 300 },
@@ -68766,7 +68863,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "N/A", notes: "The village and its immediate surroundings are best explored on foot", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in the village", notes: "Useful for the sanctuary trails and understanding the village's history", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Kohima War Cemetery", distance: "~20 km", type: "War Memorial", isHidden: true, id: "kohima-war-cemetery" },
+      { name: "Naga Heritage Village (Kisama)", distance: "~25 km", type: "Heritage Village", isHidden: true, id: "naga-heritage-village-kisama" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3100, accommodation: 1800, food: 500, transport: 400, activities: 400 },
@@ -68882,7 +68982,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi from Wokha", cost: "Fare varies by arrangement", notes: "The standard way to reach the reservoir viewing points", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Wokha town", distance: "~38 km", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
@@ -68937,7 +69039,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "N/A", notes: "The small village and its trails are explored entirely on foot", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Khonoma Village", distance: "~40 km", type: "Heritage Village", isHidden: true, id: "khonoma-village" },
+      { name: "Kohima War Cemetery", distance: "~35 km", type: "War Memorial", isHidden: true, id: "kohima-war-cemetery" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 500, transport: 500, activities: 400 },
@@ -68994,7 +69099,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "N/A", notes: "The village and the Kapamodzü trek are explored entirely on foot", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Phek town", distance: "Within Phek district", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 500, transport: 500, activities: 400 },
@@ -69723,7 +69830,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Tughlakabad (Violet Line) station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Qutub Minar", distance: "~15 km", type: "UNESCO Heritage Site", isHidden: false, id: "qutub-minar" },
+      { name: "Mehrauli Archaeological Park", distance: "~13 km", type: "Historic Ruins", isHidden: true, id: "mehrauli-archaeological-park" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
@@ -70628,7 +70738,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi/Private Vehicle", cost: "Fare varies by distance", notes: "The only practical way to reach and explore the area", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Khawzawl town", distance: "Within Khawzawl district", type: "Town", isHidden: true },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 400, activities: 300 },
