@@ -68254,6 +68254,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Mara/Mizo cuisine in Sangau"],
     packingTips: ["Sturdy trekking shoes and warm layers — genuinely cold at altitude", "Water and food — no facilities on the mountain", "A camera for sunrise-above-the-clouds views", "Valid ID for the border-adjacent area"],
   },
+  {
+    id: "dampa-tiger-reserve",
+    name: "Dampa Tiger Reserve",
+    state: "Mizoram",
+    aliases: ["Dampa Wildlife Sanctuary"],
+    tagline: "Mizoram's Largest Wildlife Sanctuary, Part of Project Tiger",
+    description: "Covering about 500 km² of the Lushai Hills in western Mizoram, Dampa is the state's largest wildlife sanctuary and has been part of India's Project Tiger since 1994. Its tropical forest terrain of steep hills, deep valleys, and jungle streams supports rich birdlife — hornbills, pheasants, flycatchers, and more — along with clouded leopards, Indian leopards, hoolock gibbons, and sloth bears. Unlike drive-through parks elsewhere in India, Dampa is genuinely wild: sighting wildlife here means walking through the forest rather than riding a vehicle. In the interest of accuracy, recent tiger-monitoring surveys have not confirmed tigers in the reserve despite its name and Project Tiger status.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Dampa_Tiger_Reserve_Forest.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/85/Dampa_Tiger_Reserve_Forest.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/Dampa_Tiger_Reserve_Forest.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Plain_flowerpecker_Dampa_DSCN3938.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Dillenia_indica_fruits%2C_Dampa_TR%2C_Feb_2013._AJT_Johnsingh._DSCN4546.jpg",
+    ],
+    imageCredit: "Photos: Coolcolney, T. R. Shankar Raman, AJT Johnsingh, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Wildlife", "Adventure"],
+    bestSeason: "November – April (dry season, better wildlife visibility)",
+    duration: "1–2 days",
+    highlights: [{ name: "Mizoram's largest wildlife sanctuary, part of Project Tiger since 1994" }, { name: "One of South and Southeast Asia's higher clouded leopard populations" }, { name: "Rich birdlife including hornbills and pheasants" }, { name: "Genuinely wild terrain — wildlife viewing on foot, not by vehicle" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then road west toward the reserve", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Aizawl is the practical gateway to Dampa." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Road from Aizawl via Mamit district", costRange: "Hired vehicle recommended", tips: "Arrange forest department permits and a guide in advance." },
+    ],
+    accommodation: [
+      { type: "Forest Rest Houses", priceRange: "₹500–₹2,500/night", examples: ["Forest department rest houses near the reserve"], description: "Basic accommodation is available through the forest department — book ahead given limited capacity." },
+    ],
+    localTransport: [
+      { mode: "Guided Forest Walks (Required)", cost: "Arranged through the forest department", notes: "Wildlife viewing here is on foot with a forest guide, not by vehicle safari", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1800, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4500, food: 1200, transport: 1300, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival & Forest Walk", morning: "Travel from Aizawl to the reserve, complete permit formalities.", afternoon: "Guided forest walk with a focus on birdlife.", evening: "Rest at the forest rest house.", stay: "Forest Rest House", meals: "Carry supplies — limited facilities inside the reserve", tips: "Book permits and a guide well in advance given limited capacity." },
+      { day: 2, title: "Wildlife Trail", morning: "Extended guided walk deeper into the reserve.", afternoon: "Return journey toward Aizawl.", evening: "—", stay: "—", meals: "Carry supplies", tips: "Manage expectations on tiger sightings — the reserve's wildlife value is broader than just tigers." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Forest department-managed with mandatory guided access", "A structured permit system provides some oversight of visitor movement"],
+      precautions: ["Genuinely remote wild terrain — never explore without a forest guide", "Limited facilities and connectivity inside the reserve — carry supplies and inform others of your plans", "This is a border-adjacent forest area — carry valid ID"],
+      soloTips: ["Not recommended solo — guided access is mandatory and this is the safest way to visit regardless"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Marked trails with a forest guide", "The forest rest house area"],
+      avoidAreas: ["Any off-trail exploration without a guide"],
+    },
+    rating: 4.3,
+    reviews: 220,
+    mustEat: ["Carry your own supplies — very limited food facilities inside the reserve"],
+    packingTips: ["Sturdy trekking shoes for forest walks", "Binoculars for birdwatching", "Insect repellent", "A torch and basic first-aid kit for the remote setting"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
