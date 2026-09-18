@@ -69693,6 +69693,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["South Delhi's cafes and restaurants nearby"],
     packingTips: ["Comfortable walking shoes — the gardens are expansive", "Sun protection and water", "A camera for late-afternoon interior light"],
   },
+  {
+    id: "tughlaqabad-fort",
+    name: "Tughlaqabad Fort",
+    state: "Delhi",
+    tagline: "A Massive Abandoned Citadel from the Delhi Sultanate",
+    description: "Built in just four years starting 1321 by Ghiyas-ud-din Tughlaq, founder of the Tughlaq dynasty, this sprawling citadel once enclosed a thriving city within 6.5 km of towering sloped ramparts and 52 bastions. According to legend, a curse from the Sufi saint Nizamuddin Auliya — angered that the king had diverted his labourers — doomed the city to be abandoned soon after its completion, and it has stood empty and crumbling ever since. The king's own domed sandstone-and-marble tomb sits on a raised platform connected to the fort by a causeway, and the site's dramatic, little-visited ruins make it one of Delhi's most atmospheric monuments.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/A_King%27s_View.JPG/960px-A_King%27s_View.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/A_King%27s_View.JPG/960px-A_King%27s_View.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/A_King%27s_View.JPG/960px-A_King%27s_View.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mausoleum_of_Ghiyath_al-Din_Tughluq.jpg/960px-Mausoleum_of_Ghiyath_al-Din_Tughluq.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Citadels_of_Tughlaqabad_fort_049.jpg/960px-Citadels_of_Tughlaqabad_fort_049.jpg",
+    ],
+    imageCredit: "Photos: Shannon.Mathew, Varun Shiv Kapur, Anupamg, via Wikimedia Commons",
+    category: ["Heritage", "Adventure"],
+    bestSeason: "October – March (cooler weather for walking the extensive ruins)",
+    duration: "2-3 hours",
+    highlights: [{ name: "6.5 km of sloped stone ramparts and 52 bastions" }, { name: "Built in just four years by Ghiyas-ud-din Tughlaq" }, { name: "Legend of a Sufi saint's curse that emptied the city" }, { name: "One of Delhi's most atmospheric, least-crowded major ruins" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Tughlaqabad Fort by road/metro", fromBangalore: "IGI Airport, ~45 min to Tughlaqabad Fort by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In South Delhi, further out than most other monuments — allow extra travel time." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Tughlakabad metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The Violet Line's Tughlakabad station is close, with a short auto ride to the entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near South Delhi", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Tughlakabad (Violet Line) station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tughlaqabad Fort", morning: "Explore the ramparts, bastions, and citadel ruins.", afternoon: "Cross the causeway to Ghiyas-ud-din Tughlaq's tomb.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Carry water and snacks — limited food options right at the site", tips: "Wear sturdy shoes and carry water — the ruins are extensive, uneven, and largely unshaded." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A protected ASI monument, though far less visited and staffed than central Delhi sites"],
+      precautions: ["Much quieter than other Delhi monuments — best visited in daylight hours with a companion or group", "Uneven, crumbling stonework throughout — sturdy footwear is essential", "Limited facilities and mobile network coverage in some corners of the ruins"],
+      soloTips: ["Better suited to a group or guided visit than a solo trip, given how sparsely visited it is compared to central Delhi sites"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The main fort grounds during daylight hours"],
+      avoidAreas: ["Isolated or overgrown corners of the ruins, especially near closing time"],
+    },
+    rating: 4.3,
+    reviews: 8000,
+    mustEat: ["Carry your own water and snacks — limited food options on-site"],
+    packingTips: ["Sturdy, closed shoes for uneven ancient stonework", "Sun protection and plenty of water — little shade across the ruins", "A camera for the dramatic scale of the walls"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
