@@ -69295,8 +69295,8 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
     ],
     nearbyPlaces: [
-      { name: "Rashtrapati Bhavan", distance: "~2.5 km", type: "Presidential Residence", isHidden: false },
-      { name: "National War Memorial", distance: "~1 km", type: "War Memorial", isHidden: true },
+      { name: "Rashtrapati Bhavan", distance: "~2.5 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+      { name: "National War Memorial", distance: "~1 km", type: "War Memorial", isHidden: true, id: "national-war-memorial-delhi" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
@@ -69844,7 +69844,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "India Gate", distance: "~2.5 km", type: "War Memorial", isHidden: false, id: "india-gate" },
-      { name: "National War Memorial", distance: "~2 km", type: "War Memorial", isHidden: true },
+      { name: "National War Memorial", distance: "~2 km", type: "War Memorial", isHidden: true, id: "national-war-memorial-delhi" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
@@ -69995,6 +69995,67 @@ export const DESTINATIONS: Destination[] = [
     reviews: 21000,
     mustEat: ["Connaught Place's restaurants and cafes nearby"],
     packingTips: ["Socks, since shoes are removed before the main hall", "Modest clothing appropriate for a place of worship", "A camera for the shikharas and gardens"],
+  },
+  {
+    id: "national-war-memorial-delhi",
+    name: "National War Memorial",
+    state: "Delhi",
+    tagline: "India's Tribute to Its Post-Independence Fallen Soldiers",
+    description: "Inaugurated in 2019 near India Gate, this memorial finally gave independent India's own armed forces a dedicated national monument — the nearby India Gate honours only pre-1947 casualties. Laid out as four concentric circles (the Amar Chakra, Veerta Chakra, Tyag Chakra, and Rakshak Chakra), its innermost obelisk holds an eternal flame, while granite walls inscribed with the names of over 25,000 soldiers who died in conflicts since independence ring the outer circle. The Param Yodha Sthal nearby honours India's 21 Param Vir Chakra recipients, the country's highest military honour.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/National_War_Memorial_India.jpg/960px-National_War_Memorial_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/National_War_Memorial_India.jpg/960px-National_War_Memorial_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/National_War_Memorial_India.jpg/960px-National_War_Memorial_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/A_section_of_the_National_War_Memorial.jpg/960px-A_section_of_the_National_War_Memorial.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Amar_Chakra%2C_National_War_Memorial%2C_New_Delhi.jpg/960px-Amar_Chakra%2C_National_War_Memorial%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: DiplomatTesterMan, FacetsOfNonStickPans (CC0), Ministry of Defence (GODL-India), via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March; illuminated in the evenings year-round",
+    duration: "1 hour",
+    highlights: [{ name: "Four concentric circles honouring India's post-independence fallen" }, { name: "Granite walls inscribed with over 25,000 soldiers' names" }, { name: "An eternal flame beneath the central obelisk" }, { name: "Param Yodha Sthal, honouring India's 21 Param Vir Chakra recipients" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to the National War Memorial by road/metro", fromBangalore: "IGI Airport, ~40 min to the National War Memorial by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right beside India Gate — easy to visit both together." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Central Secretariat metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Entry is free; it's a short walk from India Gate along Kartavya Path." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the memorial", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "India Gate", distance: "~0.5 km", type: "War Memorial", isHidden: false, id: "india-gate" },
+      { name: "Rashtrapati Bhavan", distance: "~2 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "National War Memorial & India Gate", morning: "Walk the concentric circles and read the inscribed names.", afternoon: "Visit India Gate, right next door.", evening: "Return for the illuminated evening view.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "A solemn, contemplative site — quieter and more reflective than the adjacent India Gate lawns." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A well-secured central Delhi monument with constant footfall", "Free entry with no ticketing hassle"],
+      precautions: ["Large open plaza with little shade — carry water and sun protection by day"],
+      soloTips: ["Very manageable solo — a calm, respectful, well-monitored monument"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full memorial grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 15000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["Comfortable walking shoes for the open plaza", "Sun protection and water", "A camera for the illuminated evening view"],
   },
 ];
 
