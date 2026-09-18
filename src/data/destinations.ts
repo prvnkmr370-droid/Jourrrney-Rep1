@@ -70656,6 +70656,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Simple local Mizo eateries in Biate and Khawzawl"],
     packingTips: ["Warm layers — hilltop mornings are cool, especially before sunrise", "A camera for the cloud-sea views", "Cash, since card facilities are limited in remote areas"],
   },
+  {
+    id: "aizawl-zoological-park",
+    name: "Aizawl Zoological Park (Lungverh)",
+    state: "Mizoram",
+    tagline: "A Forest Zoo Focused on the Wildlife of the Northeast Hills",
+    description: "Set in the forested Lungverh area just outside Aizawl, this zoological park focuses on species native to Mizoram and the wider Northeast, including the clouded leopard — the animal after which Mizoram's forests are famous — and the hoolock gibbon, India's only ape species, alongside other regional wildlife housed in naturalistic, forested enclosures. It offers a rare chance to see the region's elusive hill and forest fauna up close, species that are otherwise very difficult to spot in the wild given their shy, forest-dwelling habits.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG/960px-Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG/960px-Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG/960px-Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Hooolock-gibbon-aizawl.JPG/960px-Hooolock-gibbon-aizawl.JPG",
+    ],
+    imageCredit: "Photos: Dr. Raju Kasambe, Damitr, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October – March (cooler, drier weather for walking the forested grounds)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "Clouded leopards in naturalistic forest enclosures" }, { name: "Hoolock gibbons, India's only ape species" }, { name: "A focus on native Northeast Indian wildlife" }, { name: "Set within genuine forest just outside Aizawl" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "Fly to Lengpui Airport, Aizawl, then a short road transfer", fromBangalore: "Fly to Lengpui Airport, Aizawl, then a short road transfer", duration: "Fly into Aizawl, then road", costRange: "₹5,000–₹15,000 airfare to Aizawl", tips: "Close to Aizawl city — an easy half-day addition to a city visit." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "A short drive from central Aizawl", costRange: "Local taxi fares", tips: "Combine with other Aizawl sights like Solomon's Temple or the State Museum." },
+    ],
+    accommodation: [
+      { type: "Aizawl Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Hotels across Aizawl city"], description: "Aizawl has the widest range of accommodation in Mizoram." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Local Cab", cost: "Local fares", notes: "Widely available across Aizawl", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Solomon's Temple", distance: "~5 km", type: "Landmark", isHidden: false, id: "solomons-temple-aizawl" },
+      { name: "Mizoram State Museum", distance: "~5 km", type: "Museum", isHidden: false, id: "mizoram-state-museum" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4000, food: 1200, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Aizawl Zoological Park & City Sights", morning: "Walk the forested zoo grounds and spot the clouded leopards and gibbons.", afternoon: "Visit Solomon's Temple and the State Museum in Aizawl.", evening: "Return to your base for the evening.", stay: "Aizawl", meals: "Aizawl's many local Mizo restaurants", tips: "Early morning visits give the best chance of seeing the more active, shyer species." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A managed public park with regular staff presence", "Popular with local families, especially on weekends"],
+      precautions: ["Forested grounds — watch your footing on uneven paths"],
+      soloTips: ["Very manageable solo — a well-visited public attraction close to Aizawl city"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The full zoo grounds during operating hours"],
+      avoidAreas: [],
+    },
+    rating: 4.3,
+    reviews: 2000,
+    mustEat: ["Aizawl's many local Mizo restaurants"],
+    packingTips: ["Comfortable walking shoes for the forested paths", "A camera with zoom for wildlife shots", "Insect repellent for the forested enclosures"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
