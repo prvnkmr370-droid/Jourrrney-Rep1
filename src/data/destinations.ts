@@ -69571,6 +69571,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Connaught Place's restaurants and cafes nearby"],
     packingTips: ["Comfortable, grippy shoes for the stone steps", "A camera for the arched perspective shots", "Water for the walk down and back up"],
   },
+  {
+    id: "purana-qila",
+    name: "Purana Qila",
+    state: "Delhi",
+    tagline: "Delhi's Oldest Fort, Rebuilt Amid an Ancient City's Ruins",
+    description: "Standing on a site associated with the legendary city of Indraprastha, Purana Qila (Old Fort) in its current form was largely built by the Afghan ruler Sher Shah Suri after he defeated Emperor Humayun in 1540, though Humayun had begun a fort of his own here first and later returned to complete parts of it before his death. Massive rubble-and-sandstone walls, the towering Bara Darwaza gate, and the elegant Qila-i-Kuhna Mosque inside make it one of the 'Seven Cities of Delhi.' A boating lake runs along part of the moat, and archaeological excavations inside continue to turn up Painted Grey Ware pottery linked to some of Delhi's earliest habitation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg/500px-Purana_Qila_in_Delhi_03-2016_img1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg/500px-Purana_Qila_in_Delhi_03-2016_img1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg/500px-Purana_Qila_in_Delhi_03-2016_img1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Bada_Darwaza_of_Purana_Qila.jpg/960px-Bada_Darwaza_of_Purana_Qila.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Qila_Kuhna_Masjid_inside_Puran_Qila%2C_Delhi.jpg/960px-Qila_Kuhna_Masjid_inside_Puran_Qila%2C_Delhi.jpg",
+    ],
+    imageCredit: "Photos: A.Savin, Atul Kumar Vaibhav, Russ Bowling, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather for the boating lake and walk around the walls)",
+    duration: "2 hours",
+    highlights: [{ name: "Built by Sher Shah Suri on the site of legendary Indraprastha" }, { name: "The massive Bara Darwaza gate" }, { name: "The Qila-i-Kuhna Mosque's marble-inlaid facade" }, { name: "A boating lake along part of the moat" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Purana Qila by road/metro", fromBangalore: "IGI Airport, ~35 min to Purana Qila by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Pragati Maidan — easy to combine with National Zoological Park nearby." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Pragati Maidan metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The Blue Line's Pragati Maidan station is a short walk from the entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Pragati Maidan/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Pragati Maidan (Blue Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "National Zoological Park", distance: "~1 km", type: "Zoo", isHidden: false },
+      { name: "Humayun's Tomb", distance: "~4 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Purana Qila & Pragati Maidan", morning: "Explore the fort walls, Bara Darwaza, and Qila-i-Kuhna Mosque.", afternoon: "Take a boat ride on the moat lake, then visit the National Zoological Park nearby.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Pragati Maidan area's cafes and restaurants nearby", tips: "The evening light-and-sound show (seasonal) tells the fort's history well if it's running during your visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-secured central Delhi monument with entry screening", "Consistently heavy daytime tourist footfall"],
+      precautions: ["Some sections have uneven ancient stonework — watch your step", "Limited shade across the open fort grounds"],
+      soloTips: ["Very manageable solo — a well-monitored monument with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full fort grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 17000,
+    mustEat: ["Pragati Maidan area's cafes and restaurants nearby"],
+    packingTips: ["Comfortable walking shoes — the fort grounds are large", "Sun protection and water", "A camera for the fort walls and lake views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
