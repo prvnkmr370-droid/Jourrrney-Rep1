@@ -69081,6 +69081,68 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Cafes and restaurants in central Kohima"],
     packingTips: ["A camera (respectfully used)", "Comfortable walking shoes for the terraced grounds"],
   },
+  {
+    id: "red-fort",
+    name: "Red Fort (Lal Qila)",
+    state: "Delhi",
+    aliases: ["Lal Qila"],
+    tagline: "The Mughal Emperors' Red Sandstone Seat of Power for 200 Years",
+    description: "Built by Emperor Shah Jahan as the fortified residence of the Mughal court, Red Fort was the main seat of Mughal power for nearly two centuries, until 1856. Its massive red sandstone ramparts enclose the Diwan-i-Am (Hall of Public Audience), with its rows of red sandstone arches, and the pristine white marble Moti Masjid (Pearl Mosque) built later by Aurangzeb. A UNESCO World Heritage Site and Monument of National Importance, the fort is also where India's Prime Minister addresses the nation each Independence Day, and it hosts a well-known evening sound-and-light show recounting its history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d0/20191203_Diwan-i-Am_-_Red_Fort_-_Delhi_-_0458_6351_DxO.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f5/20191203_Moti_Masjid%2C_Red_Fort%2C_Delhi_0502_6354_DxO.jpg",
+    ],
+    imageCredit: "Photos: A.Savin, Jakub Hałun, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather)",
+    duration: "2–3 hours",
+    highlights: [{ name: "Massive red sandstone Mughal-era ramparts and Lahore Gate" }, { name: "The Diwan-i-Am's rows of arched red sandstone columns" }, { name: "The white marble Moti Masjid (Pearl Mosque)" }, { name: "A UNESCO World Heritage Site and Independence Day venue" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~1.5h to Red Fort by road/metro", fromBangalore: "IGI Airport, ~1.5h to Red Fort by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Old Delhi's Chandni Chowk metro station is a short walk from the fort." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Chandni Chowk or Lal Qila metro stations, both on the Violet/Yellow lines nearby", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Old Delhi traffic is heavy — the metro is usually faster than road transport." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Old Delhi heritage hotels", "Central Delhi hotels of every category"], description: "Delhi has accommodation across every budget tier — Old Delhi puts you closest to the fort itself." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "The fastest way to reach the fort, avoiding Old Delhi traffic", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jama Masjid", distance: "~1 km", type: "Mosque", isHidden: false },
+      { name: "Chandni Chowk", distance: "Adjacent", type: "Historic Market", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Red Fort & Old Delhi", morning: "Explore the Red Fort — Diwan-i-Am, Moti Masjid, and the museum galleries.", afternoon: "Walk to nearby Jama Masjid and explore Chandni Chowk's markets and food.", evening: "Return for the evening sound-and-light show, if timing allows.", stay: "Delhi", meals: "Old Delhi street food in Chandni Chowk", tips: "Arrive early to beat both the heat and the crowds, especially on weekends." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, heavily-visited national monument with visible security presence (airport-style screening at entry)", "Regular tourist and local footfall throughout the day"],
+      precautions: ["Old Delhi's surrounding streets and Chandni Chowk get extremely crowded — keep valuables secure", "Security screening is mandatory — arrive with time to spare, especially on weekends and holidays", "Use registered taxis/autos or the metro rather than unmarked vehicles"],
+      soloTips: ["Very manageable solo given the heavy daytime footfall and security presence — a top solo-travel stop in Delhi"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The fort complex and main approach areas"],
+      avoidAreas: ["Poorly lit backstreets of Old Delhi late at night"],
+    },
+    rating: 4.6,
+    reviews: 42000,
+    mustEat: ["Old Delhi street food (parathas, chaat, kebabs) in Chandni Chowk"],
+    packingTips: ["Comfortable walking shoes — the complex is large", "A hat and water in summer", "A camera for the architecture"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

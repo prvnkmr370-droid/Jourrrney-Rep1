@@ -1,0 +1,55 @@
+{
+  "source": "https://www.delhitourism.gov.in",
+  "scrapedAt": "2026-09-18",
+  "note": "Official Delhi Tourism site (Govt. of NCT of Delhi, DTTDC, since 1975). The 'Explore the City' page (dt/explore-the-city.html) has genuine categorized inventories via JS tabs: Heritage and Monuments, Parks and Gardens, Religious Tourism, Water Bodies, Museums, Art Galleries. Far more destinations (~65+ named places) than can get full verified cards in one session — building the most prominent, iconic, and well-documented ones first (matching the homepage 'Most Popular Destinations' list), then continuing through the rest as verifiable images allow.",
+  "homepageMostPopular": [
+    "Delhi Airport", "Gyarah Murti", "Humayun's Tomb", "Qutub Minar", "Birla Mandir",
+    "Lodhi Garden", "Lotus Temple", "Red Fort", "Akshardham Temple", "Agrasen Ki Baoli",
+    "Bangla Sahib", "GTB Memorial", "Jantar Mantar", "Rashtrapati Bhavan", "Shanti Stupa"
+  ],
+  "exploreTheCity": {
+    "heritageAndMonuments": [
+      "Hauz Khas Fort", "Kalam Memorial", "National Police Memorial", "National War Memorial",
+      "Purana Qila (Old Fort)", "Qutub Minar", "Kartavya Path", "Safdarjung Tomb", "Tughlaqabad Fort",
+      "Agrasen Ki Baoli", "Humayun Tomb", "Red Fort", "Jantar Mantar", "Guru Tegh Bahadur Smarak",
+      "India Gate", "Lotus Temple", "Azad Hind Gram", "Coronation Durbar Park"
+    ],
+    "parksAndGardens": [
+      "Garden of Five Senses", "Jahanpanah City Forest", "Japanese Park", "Mehrauli Archaeological Park",
+      "Millennium Indraprastha Park", "National Rose Garden", "Nehru Park", "Roshanara Garden",
+      "Talkatora Gardens", "Waste to Wonder Park", "Mughal Gardens", "Sunder Nursery", "Central Park",
+      "Deer Park", "Charbagh Garden", "Lodhi Garden", "India Gate Lawns", "Aastha Kunj Park",
+      "Buddha Jayanti Park", "Delhi Ridge"
+    ],
+    "religiousTourismCategories": ["Mosque", "Gurudwara", "Church", "Temple"],
+    "waterBodies": [
+      "Hauz Khas Reservoir", "Hazrat Nizamuddin Ki Baoli", "Naini Lake", "Sanjay Lake",
+      "Lodi Gardens Lake", "Signature Bridge", "Bhalswa Lake"
+    ],
+    "museums": [
+      "Metro Museum", "National Children's Museum", "National Gandhi Museum",
+      "National Handicrafts And Handlooms Museum", "National Science Centre",
+      "Nehru Memorial Museum and Planetarium", "Parliament House Museum", "Rashtrapati Bhawan Museum",
+      "Red Fort Archaeological Museum", "Shankar's International Dolls Museum", "Supreme Court Museum",
+      "Tribal Museum", "National Museum", "Sulabh International Museum of Toilets", "National Rail Museum",
+      "National War Memorial", "National Charkha Museum", "Air Force Museum",
+      "Dr. Ambedkar National Memorial", "Election Education Centre Museum", "Ghalib Museum",
+      "Indira Gandhi Memorial Museum", "Kalam Memorial"
+    ],
+    "artGalleries": "Not yet scraped — tab not opened this pass"
+  },
+  "buildPriority": {
+    "note": "Prioritizing iconic, heavily-documented, high-traffic Delhi landmarks first — matches homepage 'Most Popular' list closely.",
+    "tier1": [
+      "Red Fort", "Qutub Minar", "Humayun's Tomb", "India Gate", "Lotus Temple", "Akshardham Temple",
+      "Jantar Mantar", "Agrasen Ki Baoli", "Purana Qila", "Safdarjung Tomb", "Tughlaqabad Fort",
+      "Lodhi Garden", "Rashtrapati Bhavan", "Bangla Sahib Gurudwara", "Birla Mandir (Lakshmi Narayan Temple)"
+    ],
+    "tier2": [
+      "National War Memorial", "Hauz Khas Fort/Complex", "GTB Memorial", "National Museum",
+      "Gandhi Smriti / National Gandhi Museum", "Garden of Five Senses", "Sunder Nursery",
+      "Mehrauli Archaeological Park", "Nehru Park", "Signature Bridge", "National Rail Museum"
+    ]
+  },
+  "places": {}
+}
