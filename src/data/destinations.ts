@@ -69022,6 +69022,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Fresh organic cabbage and potato dishes", "Local Naga cuisine in Phek town"],
     packingTips: ["Sturdy trekking shoes for the peak trail", "Water and snacks — limited facilities in the village", "A camera for the summit views", "A light rain layer"],
   },
+  {
+    id: "kohima-war-cemetery",
+    name: "Kohima War Cemetery",
+    state: "Nagaland",
+    aliases: ["World War II Cemetery, Kohima"],
+    tagline: "A Commonwealth War Graves Site Marking the Battle That Turned Back a Japanese Invasion",
+    description: "Maintained by the Commonwealth War Graves Commission and designed by architect Colin St. Clair Oakes, Kohima War Cemetery was established in 1946 and holds around 1,420 graves of Allied soldiers — British, Indian, and other Commonwealth troops — who died in the 1944 Battle of Kohima, a pivotal engagement that halted the Japanese army's advance into India during the Second World War. Terraced across the hillside where much of the fighting itself took place, the cemetery is a solemn, carefully tended site with a memorial wall listing the dead and individual headstones bearing personal inscriptions chosen by families. It remains one of the most visited historical sites in Nagaland.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Entrance_to_Cemetery.jpeg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Entrance_to_Cemetery.jpeg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Entrance_to_Cemetery.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Kohima_war_cemetery_34.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/df/Kohima_war_cemetery_48.jpg",
+    ],
+    imageCredit: "Photos: PP Yoonus, Shyamal, via Wikimedia Commons (CC BY-SA)",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – April (pleasant weather); year-round for visits",
+    duration: "1–2 hours",
+    highlights: [{ name: "A Commonwealth War Graves Commission cemetery, established 1946" }, { name: "~1,420 graves from the pivotal 1944 Battle of Kohima" }, { name: "Terraced across the actual hillside battle site" }, { name: "A memorial wall and individually inscribed headstones" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road to Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road to Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Located within Kohima town — an easy stop on any city visit." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Within Kohima town", costRange: "Local taxi or auto within the city", tips: "Combine with other Kohima sightseeing on the same day." },
+    ],
+    accommodation: [
+      { type: "Kohima Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays in Kohima"], description: "A city-centre historical site — pairs with any Kohima stay." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Kohima", notes: "A short ride within central Kohima", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Naga Heritage Village (Kisama)", distance: "~10 km", type: "Heritage Complex", isHidden: true, id: "naga-heritage-village-kisama" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kohima War Cemetery Visit", morning: "Visit the cemetery — the memorial wall, terraced graves, and individual headstones.", afternoon: "Continue to other Kohima city sights.", evening: "Free evening in Kohima.", stay: "Kohima", meals: "Restaurants and cafes in central Kohima", tips: "This is a solemn memorial site — visit quietly and respectfully." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-maintained, respectfully managed heritage site within central Kohima", "Regular visitor footfall given its historical significance"],
+      precautions: ["Dress and behave respectfully — this is an active war memorial and burial ground", "Photography is generally welcomed but be mindful of other visitors paying respects"],
+      soloTips: ["Very manageable solo — a central, well-established, quiet heritage site"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The full cemetery grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.8,
+    reviews: 1900,
+    mustEat: ["Cafes and restaurants in central Kohima"],
+    packingTips: ["A camera (respectfully used)", "Comfortable walking shoes for the terraced grounds"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
