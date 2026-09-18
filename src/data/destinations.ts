@@ -68484,6 +68484,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Cafes and Mizo cuisine in central Aizawl"],
     packingTips: ["A camera for the exhibits", "Comfortable walking shoes"],
   },
+  {
+    id: "vangchhia",
+    name: "Vangchhia (Kawtchhuah Ropui)",
+    state: "Mizoram",
+    aliases: ["Kawtchhuah Ropui", "Vangchhia Archaeological Site"],
+    tagline: "An Archaeological Mystery — Carved Menhirs from an Unknown Civilisation",
+    description: "Near Champhai, the village of Vangchhia is home to Kawtchhuah Ropui — literally \"the great entrance of the village\" — an archaeological site of standing stones and menhirs carved with human figures, animals, and symbols, an official Monument of National Importance under the ASI. What sets these stones apart from typical memorial monoliths elsewhere in the region is that the figures are embossed in relief, precise work that points to tools and techniques not otherwise associated with the historical Mizo settlement of the area. Pottery fragments found nearby suggest at least two distinct phases of settlement here, and who exactly carved these stones remains a genuine open question for archaeologists.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/16/Thlangtlak_Gate_Kawtchhuah_Ropui_Vangchhia_Mapuia_Hnamte.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/16/Thlangtlak_Gate_Kawtchhuah_Ropui_Vangchhia_Mapuia_Hnamte.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Thlangtlak_Gate_Kawtchhuah_Ropui_Vangchhia_Mapuia_Hnamte.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ab/Embossed_Figures_Kawtchhuah_Ropui_Vangchhia_Mapuia_Hnamte_%281%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Vangchhia_Sculpture.jpg",
+    ],
+    imageCredit: "Photos: Mapuia Hnamte, Psushant577, via Wikimedia Commons (CC BY-SA)",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (clear, dry conditions for exploring the site)",
+    duration: "2–3 hours",
+    highlights: [{ name: "Carved menhirs with embossed human and animal figures" }, { name: "An official ASI Monument of National Importance" }, { name: "Evidence of an unidentified pre-Mizo civilisation" }, { name: "The distinctive Thlangtlak Gate entrance to the site" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then road via Champhai", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then a long road journey east", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Combine with a Champhai visit given the shared route." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Near Champhai, in the district's northeast", costRange: "Hired vehicle from Champhai or Aizawl", tips: "Champhai town is the practical base for a Vangchhia visit." },
+    ],
+    accommodation: [
+      { type: "Champhai Hotels & Guesthouses", priceRange: "₹800–₹4,000/night", examples: ["Local hotels and guesthouses in Champhai town"], description: "Champhai is the nearest town with a real range of lodging options." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Champhai", cost: "Fare varies by arrangement", notes: "Used to reach the Vangchhia site and its Thlangtlak Gate entrance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Champhai", distance: "A drive from Vangchhia", type: "Town/Valley", isHidden: false, id: "champhai" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 5000, food: 1000, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vangchhia Archaeological Site", morning: "Drive from Champhai to Vangchhia, enter through the Thlangtlak Gate.", afternoon: "Explore the carved menhirs and embossed stones with a local guide.", evening: "Return to Champhai.", stay: "Champhai", meals: "Local meals in Champhai", tips: "A local guide adds real context to the site's archaeological mystery — worth arranging if available." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A protected, officially recognised heritage site", "A defined entrance point (Thlangtlak Gate) with some visitor structure"],
+      precautions: ["A border-adjacent district — carry valid ID", "Respect the site's protected status — do not touch or move any stones or carvings"],
+      soloTips: ["Manageable with a local guide arranged through Champhai, given the site's rural setting"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The marked site area within the Thlangtlak Gate"],
+      avoidAreas: ["Off-site rural areas without local guidance"],
+    },
+    rating: 4.5,
+    reviews: 180,
+    mustEat: ["Local Mizo cuisine in Champhai"],
+    packingTips: ["A camera for the carved stones", "Comfortable walking shoes", "Valid ID — a border-adjacent district"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
