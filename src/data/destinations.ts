@@ -70422,6 +70422,66 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Carry your own water and snacks — limited food options on-site"],
     packingTips: ["Sturdy, closed shoes for uneven ancient stonework", "Sun protection and plenty of water — little shade across the ruins", "A downloaded map or guide, since signage is limited"],
   },
+  {
+    id: "nehru-park-delhi",
+    name: "Nehru Park",
+    state: "Delhi",
+    tagline: "A Leafy Diplomatic-Enclave Lawn for Morning Walks and Yoga",
+    description: "Laid out in the 1960s in the Chanakyapuri diplomatic enclave, this expansive green lawn is one of central Delhi's most popular spots for morning walks, jogging, and yoga, drawing residents and diplomats' families alike. It regularly hosts public events — from Yoga Day mass sessions to civic awareness drives — on its open grass, and its quiet, tree-lined paths make it a favourite escape from the city's traffic despite sitting minutes from major embassies and government buildings.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_participants_in_the_mass_performance_of_Common_Yoga_Protocol%2C_on_the_occasion_of_the_4th_International_Day_of_Yoga_-2018%2C_at_Nehru_Park%2C_in_New_Delhi_on_June_21%2C_2018.JPG/960px-thumbnail.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_participants_in_the_mass_performance_of_Common_Yoga_Protocol%2C_on_the_occasion_of_the_4th_International_Day_of_Yoga_-2018%2C_at_Nehru_Park%2C_in_New_Delhi_on_June_21%2C_2018.JPG/960px-thumbnail.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_participants_in_the_mass_performance_of_Common_Yoga_Protocol%2C_on_the_occasion_of_the_4th_International_Day_of_Yoga_-2018%2C_at_Nehru_Park%2C_in_New_Delhi_on_June_21%2C_2018.JPG/960px-thumbnail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Peoples_are_joining_Voters%E2%80%99_Awareness_Campaign%2C_organised_by_District_Election_Officer%2C_at_Nehru_Park%2C_in_New_Delhi_on_November_24%2C_2013.jpg/960px-Peoples_are_joining_Voters%E2%80%99_Awareness_Campaign%2C_organised_by_District_Election_Officer%2C_at_Nehru_Park%2C_in_New_Delhi_on_November_24%2C_2013.jpg",
+    ],
+    imageCredit: "Photos: Ministry of Ayush, Election Commission of India (Government Open Data License – India), via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October – March (cooler weather for morning walks and lawn activities)",
+    duration: "1 hour",
+    highlights: [{ name: "Central Delhi's most popular lawn for morning walks and yoga" }, { name: "Located in the Chanakyapuri diplomatic enclave" }, { name: "Regularly hosts civic and public events, including Yoga Day" }, { name: "Quiet, tree-lined paths minutes from major embassies" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Nehru Park by road/metro", fromBangalore: "IGI Airport, ~30 min to Nehru Park by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In the Chanakyapuri diplomatic enclave — best combined with an early-morning visit." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Race Course metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Best visited early morning or evening, when the lawns are busiest with walkers." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Chanakyapuri/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rashtrapati Bhavan", distance: "~4 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+      { name: "Gandhi Smriti", distance: "~3 km", type: "Museum", isHidden: false, id: "gandhi-smriti" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nehru Park & Chanakyapuri", morning: "A walk or morning yoga session on the lawns.", afternoon: "Explore the surrounding diplomatic enclave and nearby Gandhi Smriti.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "The park is at its liveliest early in the morning, when walkers, joggers, and yoga groups fill the lawns." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["Located in the heavily-secured diplomatic enclave with constant patrol presence", "Popular with morning walkers, joggers, and families"],
+      precautions: ["Quieter in the middle of the day — early morning or evening visits see the most footfall"],
+      soloTips: ["Very manageable solo — a calm, well-monitored park in one of Delhi's most secure neighbourhoods"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full park grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 14000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["Comfortable walking or yoga attire", "Sun protection and water", "A mat if you plan to join a morning yoga session"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
