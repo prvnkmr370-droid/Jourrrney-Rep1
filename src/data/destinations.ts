@@ -176,18 +176,23 @@ export const DESTINATIONS: Destination[] = [
     // matches — swapped in after the earlier Unsplash "nek chand rock
     // garden" search results turned out to be unverifiable as genuinely
     // this specific garden rather than lookalikes.
-    image: "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
-    heroImage: "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
+    // _1553592891/_1553592899 have a decorative black-matte photo frame
+    // baked into the JPEG pixels (with a thin white inner rule) — fine in
+    // a full-image view but the frame's white rule lands inside the crop
+    // window on the small card grid and reads as a stray line artifact,
+    // so the un-framed uploads are used for image/heroImage/gallery order.
+    image: "https://chandigarhtourism.gov.in/uploads/_1580105329.jpg",
+    heroImage: "https://chandigarhtourism.gov.in/uploads/_1580105329.jpg",
     gallery: [
+      "https://chandigarhtourism.gov.in/uploads/_1580105329.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1580105339.jpg",
+      "https://chandigarhtourism.gov.in/uploads/_1580105278.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553592891.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553592899.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553592997.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553593221.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553593229.jpg",
       "https://chandigarhtourism.gov.in/uploads/_1553593234.jpg",
-      "https://chandigarhtourism.gov.in/uploads/_1580105278.jpg",
-      "https://chandigarhtourism.gov.in/uploads/_1580105329.jpg",
-      "https://chandigarhtourism.gov.in/uploads/_1580105339.jpg",
     ],
     category: ["Heritage", "Culture", "Art"],
     bestSeason: "September – April",
