@@ -69478,6 +69478,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
     ],
     nearbyPlaces: [
+      { name: "Agrasen Ki Baoli", distance: "~1 km", type: "Stepwell", isHidden: true, id: "agrasen-ki-baoli" },
       { name: "Connaught Place", distance: "~1 km", type: "Shopping & Dining", isHidden: false },
       { name: "India Gate", distance: "~3 km", type: "War Memorial", isHidden: false, id: "india-gate" },
     ],
@@ -69508,6 +69509,67 @@ export const DESTINATIONS: Destination[] = [
     reviews: 19000,
     mustEat: ["Connaught Place's restaurants and cafes nearby"],
     packingTips: ["Comfortable walking shoes — some instruments have steep steps", "Sun protection and water — little shade on site", "A camera for the geometric architecture"],
+  },
+  {
+    id: "agrasen-ki-baoli",
+    name: "Agrasen Ki Baoli",
+    state: "Delhi",
+    tagline: "A 60-Metre Stepwell Hidden Off Connaught Place",
+    description: "Tucked down a narrow lane near Connaught Place, this 60-metre-long, 15-metre-wide stepwell descends 108 stone steps to what was once a functioning water source, flanked on both sides by rows of arched niches. Though popularly attributed to the legendary king Ugrasen, its surviving masonry points to a rebuild during the Tughlaq or Lodi period (14th-16th century). Now dry and protected as a Monument of National Importance, its dramatic perspective of receding arches has made it a favourite spot for photography and a location in several Bollywood films.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ugrasen_ki_Baoli_in_Delhi_01.jpg/960px-Ugrasen_ki_Baoli_in_Delhi_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ugrasen_ki_Baoli_in_Delhi_01.jpg/960px-Ugrasen_ki_Baoli_in_Delhi_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ugrasen_ki_Baoli_in_Delhi_01.jpg/960px-Ugrasen_ki_Baoli_in_Delhi_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Agrasen_ki_Baoli_at_Haily_Road%2C_New_Delhi_08.jpg/960px-Agrasen_ki_Baoli_at_Haily_Road%2C_New_Delhi_08.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/02%2C_Agrasen_ki_baoli%2C_New_Delhi.jpg/960px-02%2C_Agrasen_ki_baoli%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Indrajit Das, Pinakpani, Saltanat Hussain, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (the stepwell offers shade, but mornings avoid the worst crowds)",
+    duration: "30-45 minutes",
+    highlights: [{ name: "A 60-metre stepwell with 108 stone steps" }, { name: "Rows of arched niches on both flanking walls" }, { name: "A protected Monument of National Importance" }, { name: "A recurring Bollywood filming location" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Agrasen Ki Baoli by road/metro", fromBangalore: "IGI Airport, ~30 min to Agrasen Ki Baoli by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by Connaught Place and Jantar Mantar — easy to combine both in one outing." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Barakhamba Road metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "It's down a narrow lane off Hailey Road — a map app helps for the last stretch on foot." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place", "Hotels across every category citywide"], description: "Connaught Place puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Barakhamba Road (Blue Line) is a short walk from the lane entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jantar Mantar", distance: "~1 km", type: "Observatory", isHidden: false, id: "jantar-mantar-delhi" },
+      { name: "Connaught Place", distance: "~1.5 km", type: "Shopping & Dining", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Agrasen Ki Baoli & Jantar Mantar", morning: "Descend the 108 steps and explore the arched niches.", afternoon: "Walk over to Jantar Mantar, a short distance away.", evening: "Return to Connaught Place for dinner.", stay: "Delhi", meals: "Connaught Place's many restaurants and cafes nearby", tips: "Entry is free and it's a quick visit — easy to combine with Jantar Mantar and Connaught Place in one outing." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A small, well-visited central Delhi site with steady daytime footfall", "Free entry with no ticketing hassle"],
+      precautions: ["Stone steps can be uneven and slippery when wet", "Pigeons roost heavily in the wall niches — some may find this unpleasant"],
+      soloTips: ["Very manageable solo — a quick, popular stop that's rarely empty during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full stepwell grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 14000,
+    mustEat: ["Connaught Place's restaurants and cafes nearby"],
+    packingTips: ["Comfortable, grippy shoes for the stone steps", "A camera for the arched perspective shots", "Water for the walk down and back up"],
   },
 ];
 
