@@ -70602,6 +70602,60 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["On-site dining at the golf course; simple local Mizo eateries in Thenzawl town"],
     packingTips: ["Golf equipment if you plan to play (rentals may be limited)", "Warm layers — the hill climate is cool, especially in the evenings", "A camera for the forested course views"],
   },
+  {
+    id: "biate-mizoram",
+    name: "Biate",
+    state: "Mizoram",
+    tagline: "A Hilltop Town Often Rising Above the Clouds",
+    description: "Perched on a high ridge in Khawzawl district, this small hill town is known locally as one of Mizoram's cleanest and best-kept settlements, its neatly arranged houses spilling down the slope in a pattern that becomes especially striking when morning cloud cover fills the valley below, leaving the town sitting above a sea of white. Home to the Biate tribe, it offers a genuine, unhurried look at everyday hill-town life in Mizoram away from the more touristed circuits, with sweeping views in every direction on a clear day.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biate_town.jpg/960px-Biate_town.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biate_town.jpg/960px-Biate_town.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Biate_town.jpg/960px-Biate_town.jpg",
+    ],
+    imageCredit: "Photo: Coolcolney, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March (clearer skies; early mornings often bring the cloud-sea effect)",
+    duration: "2-3 hours",
+    highlights: [{ name: "Known locally as one of Mizoram's cleanest villages" }, { name: "A hilltop setting that often rises above the morning clouds" }, { name: "Home to the Biate tribe" }, { name: "An unhurried, authentic look at everyday Mizo hill-town life" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "Fly to Lengpui Airport, Aizawl, then road to Biate via Khawzawl", fromBangalore: "Fly to Lengpui Airport, Aizawl, then road to Biate via Khawzawl", duration: "Fly into Aizawl, then road", costRange: "₹5,000–₹15,000 airfare to Aizawl", tips: "A remote hill town — allow a full day for the road journey from Aizawl." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Several hours from Aizawl via Khawzawl district roads", costRange: "Taxi fares vary by distance", tips: "Roads are winding hill roads — hire a local driver familiar with the route." },
+    ],
+    accommodation: [
+      { type: "Local Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Simple guesthouses in Biate and nearby Khawzawl"], description: "Basic but welcoming options — this is an off-the-beaten-path destination with limited formal tourism infrastructure." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Private Vehicle", cost: "Fare varies by distance", notes: "The only practical way to reach and explore the area", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4000, food: 1200, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Biate Village Walk", morning: "Arrive early to catch the town rising above the morning cloud cover.", afternoon: "Walk through the town and surrounding viewpoints.", evening: "Return to Khawzawl or Aizawl, or stay overnight locally.", stay: "Biate or Khawzawl", meals: "Simple local Mizo eateries", tips: "Early morning is the best time for the cloud-sea view — plan to arrive the evening before if possible." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A small, close-knit community with a generally low crime rate"],
+      precautions: ["Remote location with limited facilities and mobile network coverage", "Very limited formal tourism infrastructure — plan logistics ahead"],
+      soloTips: ["Manageable solo, though this is a remote, lightly-visited hill town — inform your accommodation of your plans and travel by daylight"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The town centre and main viewpoints"],
+      avoidAreas: [],
+    },
+    rating: 4.3,
+    reviews: 300,
+    mustEat: ["Simple local Mizo eateries in Biate and Khawzawl"],
+    packingTips: ["Warm layers — hilltop mornings are cool, especially before sunrise", "A camera for the cloud-sea views", "Cash, since card facilities are limited in remote areas"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
