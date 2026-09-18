@@ -69662,7 +69662,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
     ],
     nearbyPlaces: [
-      { name: "Lodhi Garden", distance: "~2 km", type: "Garden & Tombs", isHidden: false },
+      { name: "Lodhi Garden", distance: "~2 km", type: "Garden & Tombs", isHidden: false, id: "lodhi-garden" },
       { name: "Humayun's Tomb", distance: "~5 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
     ],
     budgetBreakdown: [
@@ -69750,6 +69750,67 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8000,
     mustEat: ["Carry your own water and snacks — limited food options on-site"],
     packingTips: ["Sturdy, closed shoes for uneven ancient stonework", "Sun protection and plenty of water — little shade across the ruins", "A camera for the dramatic scale of the walls"],
+  },
+  {
+    id: "lodhi-garden",
+    name: "Lodhi Garden",
+    state: "Delhi",
+    tagline: "A Landscaped Park Built Around 15th-Century Royal Tombs",
+    description: "Laid out by the British in the 1930s around a cluster of genuine 15th and 16th-century Sayyid and Lodi dynasty tombs, this 90-acre park in central Delhi blends manicured lawns, a bonsai garden, and a small lake with the domed mausoleums of Sikandar Lodi and Muhammad Shah, the striking double-storey Bara Gumbad, and the Akbar-era Athpula (eight-piered) bridge. It's one of the few Delhi green spaces where centuries-old Islamic funerary architecture sits directly inside a public park, making it equally popular with joggers, picnicking families, and history-minded visitors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lodhi_Gardens_on_a_sunny_day.jpg/960px-Lodhi_Gardens_on_a_sunny_day.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lodhi_Gardens_on_a_sunny_day.jpg/960px-Lodhi_Gardens_on_a_sunny_day.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lodhi_Gardens_on_a_sunny_day.jpg/960px-Lodhi_Gardens_on_a_sunny_day.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sikandar_Lodi%27s_tomb_sunset.JPG/960px-Sikandar_Lodi%27s_tomb_sunset.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Athpula_aka_Khairpur_ka_Pul%2C_Lodi_Gardens%2C_New_Delhi.jpg/960px-Athpula_aka_Khairpur_ka_Pul%2C_Lodi_Gardens%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Amaninder, AKS.9955, Mukul Banerjee, via Wikimedia Commons",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March (cooler weather for walking and picnicking)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "15th and 16th-century Sayyid and Lodi dynasty tombs set in a public park" }, { name: "The double-storey Bara Gumbad and its adjoining mosque" }, { name: "The Akbar-era Athpula eight-piered bridge" }, { name: "A bonsai garden and small lake within the grounds" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Lodhi Garden by road/metro", fromBangalore: "IGI Airport, ~30 min to Lodhi Garden by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Safdarjung Tomb — easy to combine both in one outing." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Jorbagh metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Jorbagh (Yellow Line) is the closest station, a short walk from a park gate." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near South Delhi/Lodhi Road", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Jorbagh (Yellow Line) is a short walk from a park gate", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Safdarjung Tomb", distance: "~2 km", type: "Mughal Tomb", isHidden: false, id: "safdarjung-tomb" },
+      { name: "Humayun's Tomb", distance: "~5 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lodhi Garden & Safdarjung Tomb", morning: "Walk the park grounds, visiting Sikandar Lodi's tomb, the Bara Gumbad, and Athpula bridge.", afternoon: "Head to nearby Safdarjung Tomb.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "South Delhi's many cafes and restaurants nearby", tips: "Popular with morning joggers and walkers — arrive early for a quieter, cooler visit." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, well-patrolled public park with constant foot traffic", "Popular with families, joggers, and walkers throughout the day"],
+      precautions: ["Some park pathways are less lit after dusk — plan visits for daylight hours", "Grounds are large and open — carry water in warmer months"],
+      soloTips: ["Very manageable solo — one of Delhi's most consistently busy and safe public parks"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full park grounds during daylight hours"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 36000,
+    mustEat: ["South Delhi's cafes and restaurants nearby"],
+    packingTips: ["Comfortable walking or jogging shoes", "Sun protection and water", "A camera for the tombs and garden views"],
   },
 ];
 
