@@ -11162,8 +11162,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Vikramshila_Mahavihara_Ruins.jpg/1280px-Vikramshila_Mahavihara_Ruins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Vikramshila_Mahavihara_Ruins.jpg/1280px-Vikramshila_Mahavihara_Ruins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Main_Stupa_view_from_Vikramshila_Excavated_Site_Road.jpg/500px-Main_Stupa_view_from_Vikramshila_Excavated_Site_Road.jpg",
     ],
-    imageCredit: "Photos: Jai Anga — Wikimedia Commons, CC0.",
+    imageCredit: "Photos: Jai Anga — Wikimedia Commons, CC0; Spotplayerx — Wikimedia Commons, CC BY-SA 4.0, geotagged at the site, structured-data \"depicts\" confirms Vikramaśīla University.",
     category: ["Heritage", "History"],
     bestSeason: "September – April",
     duration: "Half day",
