@@ -69632,6 +69632,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Pragati Maidan area's cafes and restaurants nearby"],
     packingTips: ["Comfortable walking shoes — the fort grounds are large", "Sun protection and water", "A camera for the fort walls and lake views"],
   },
+  {
+    id: "safdarjung-tomb",
+    name: "Safdarjung Tomb",
+    state: "Delhi",
+    tagline: "The Last Great Mughal-Style Garden Tomb in Delhi",
+    description: "Built in 1754 for Nawab Safdarjung, a powerful governor of Awadh and de facto ruler during a declining phase of the Mughal Empire, this sandstone-and-marble mausoleum sits at the centre of a charbagh garden with wide walkways and channels. Often called the last flowering of Mughal architecture in Delhi before the empire's steep decline, it borrows heavily from Humayun's Tomb's design, though on a smaller scale and with a more bulbous central dome. Its quiet, well-kept gardens and dramatic late-afternoon light through the interior archways make it a favourite with photographers and a peaceful escape from the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg/960px-Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg/960px-Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg/960px-Tomb_of_Safdar_Jang_in_Delhi_%2810%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomb_of_Safdarjung_in_Delhi.jpg/960px-Tomb_of_Safdarjung_in_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Gardens_of_the_Safdarjung_Tomb.jpg/960px-Gardens_of_the_Safdarjung_Tomb.jpg",
+    ],
+    imageCredit: "Photos: Shagil Kannur, Dey.sandip, Abhishek Malhotra, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (cooler weather for walking the gardens)",
+    duration: "1-1.5 hours",
+    highlights: [{ name: "Often called the last great garden tomb of Mughal Delhi" }, { name: "A charbagh garden layout with wide walkways and channels" }, { name: "A dramatic marble cenotaph lit by afternoon light" }, { name: "Quiet, well-kept grounds rarely as crowded as other Delhi monuments" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Safdarjung Tomb by road/metro", fromBangalore: "IGI Airport, ~30 min to Safdarjung Tomb by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Lodhi Garden — easy to combine both in one outing." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Jorbagh metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Jorbagh (Yellow Line) is the closest station, a short walk from the entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near South Delhi/Lodhi Road", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Jorbagh (Yellow Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lodhi Garden", distance: "~2 km", type: "Garden & Tombs", isHidden: false },
+      { name: "Humayun's Tomb", distance: "~5 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Safdarjung Tomb & Lodhi Garden", morning: "Explore the tomb's interior and charbagh gardens.", afternoon: "Walk over to Lodhi Garden for its own scattered tombs and green space.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "South Delhi's many cafes and restaurants nearby", tips: "Visit in the late afternoon — the light through the interior archways is when this monument is at its most photogenic." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-secured central Delhi monument with entry screening", "Consistently steady daytime visitor footfall"],
+      precautions: ["Some interior areas are dimly lit — take care on uneven marble flooring", "Grounds are large and open — carry water and sun protection"],
+      soloTips: ["Very manageable solo — a calm, well-monitored monument with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full tomb complex and gardens"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 11000,
+    mustEat: ["South Delhi's cafes and restaurants nearby"],
+    packingTips: ["Comfortable walking shoes — the gardens are expansive", "Sun protection and water", "A camera for late-afternoon interior light"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
