@@ -48263,8 +48263,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Harihar_Dham.jpg/1280px-Harihar_Dham.jpg",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Harihar_Dham.jpg/1280px-Harihar_Dham.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Aashram.jpg/960px-Aashram.jpg",
     ],
-    imageCredit: "Photo: Vsvinaykumar2 — Wikimedia Commons, CC BY-SA 3.0, used directly on English, Egyptian Arabic, and Kannada Wikipedia's \"Harihar Dham\" articles, Wikidata Q15223032. Only one genuinely verified, location-confirmed image was found for this site after a real search — documented here as a single-image exception rather than risk an unverified second photo.",
+    imageCredit: "Photos: Vsvinaykumar2 — Wikimedia Commons, CC BY-SA 3.0, used directly on English, Egyptian Arabic, and Kannada Wikipedia's \"Harihar Dham\" articles, Wikidata Q15223032.",
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "1 hour",
@@ -49034,8 +49035,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg/1280px-Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg/1280px-Statue_at_Magnolia_Sunset_Point%2C_Netarhat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e3/Sunset_point.jpg",
     ],
-    imageCredit: "Photo: HER studio — Wikimedia Commons, CC BY-SA 4.0, its file description explicitly recounting the Magnolia and Batuk legend tied to this exact viewpoint, categorized \"Netarhat\"/\"Statues in Jharkhand\"/\"Sunsets of India\". Only one genuinely verified image of this specific statue and viewpoint was found after a real search — documented here as a single-image exception.",
+    imageCredit: "Photos: HER studio (statue, CC BY-SA 4.0, its file description explicitly recounting the Magnolia and Batuk legend tied to this exact viewpoint); Govind12th (sunset silhouette, captioned \"Sunset Point Netarhat\", used on English Wikipedia's Jharkhand article, CC BY-SA 4.0) — Wikimedia Commons.",
     category: ["Nature", "Heritage"],
     bestSeason: "November – February (clearest sunset views)",
     duration: "1–2 hours",
@@ -51406,8 +51408,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hills_of_rajmahal.jpg/1280px-Hills_of_rajmahal.jpg",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hills_of_rajmahal.jpg/1280px-Hills_of_rajmahal.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/William_Hodges_-_View_of_the_Rajmahal_Hills_-_B1978.43.1768_-_Yale_Center_for_British_Art.jpg/960px-William_Hodges_-_View_of_the_Rajmahal_Hills_-_B1978.43.1768_-_Yale_Center_for_British_Art.jpg",
     ],
-    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 3.0, description confirms \"hills of rajmahal near barhait, sahebganj, jharkhand, india\", categorized \"Rajmahal hills\". Only one genuine modern photograph of these hills was found after a real search — the remaining Commons material is 18th-century British colonial-era paintings, unsuitable for a travel destination card — documented here as a single-image exception.",
+    imageCredit: "Photo: uploaded to Wikimedia Commons — CC BY-SA 3.0, description confirms \"hills of rajmahal near barhait, sahebganj, jharkhand, india\", categorized \"Rajmahal hills\". Second image: William Hodges, circa 1782, \"View of the Rajmahal Hills\" — Yale Center for British Art via Wikimedia Commons, CC0, used on English Wikipedia's \"Rajmahal\" article — one of the genuine 18th-century British paintings referenced in this card's own description.",
     category: ["Nature", "Heritage"],
     bestSeason: "July – February (lush green during and after monsoon)",
     duration: "Half a day",
@@ -51876,8 +51879,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Palkot_Wildlife_Sanctuary_hill.jpg/1280px-Palkot_Wildlife_Sanctuary_hill.jpg",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Palkot_Wildlife_Sanctuary_hill.jpg/1280px-Palkot_Wildlife_Sanctuary_hill.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sankh_river_1425.jpg/960px-Sankh_river_1425.jpg",
     ],
-    imageCredit: "Photo: uploaded to Wikimedia Commons — CC0, description confirms \"Landscape of Palkot Wildlife Sanctuary in Simdega district, Jharkhand\". Only one genuine landscape photograph of this sanctuary was found after a real search — a second candidate file was an informational signboard/poster rather than a photograph of the sanctuary itself, and was not used — documented here as a single-image exception.",
+    imageCredit: "Photos: uploaded to Wikimedia Commons — CC0, description confirms \"Landscape of Palkot Wildlife Sanctuary in Simdega district, Jharkhand\". Second photo: Dev0745, geotagged 22°43'35\"N 84°24'30\"E near the sanctuary, captioned \"Sankh river near Palkot Wildlife Sanctuary, Simdega district, Jharkhand\", CC BY 4.0.",
     category: ["Nature", "Wildlife"],
     bestSeason: "October – March",
     duration: "3–4 hours (guided visit)",
