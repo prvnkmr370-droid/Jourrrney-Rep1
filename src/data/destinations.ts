@@ -70361,6 +70361,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Food kiosks within the park; more options in nearby Nizamuddin"],
     packingTips: ["Comfortable walking shoes for the garden paths", "Binoculars if you're interested in birdwatching", "A camera for the water channel and monuments"],
   },
+  {
+    id: "mehrauli-archaeological-park",
+    name: "Mehrauli Archaeological Park",
+    state: "Delhi",
+    tagline: "A 100-Acre Ruin Field Spanning Over 1,000 Years of Delhi's History",
+    description: "Scattered across roughly 100 acres near the Qutub Minar, this park holds over 100 monuments spanning the Delhi Sultanate through the British colonial period — the finely carved Rajon ki Baoli stepwell, the Jamali Kamali mosque and tomb with its painted ceiling, the tomb of Ghiyasuddin Balban, and the 19th-century Metcalfe House retreat all sit within walking distance of each other, often with almost no other visitors around. Unlike Delhi's more heavily ticketed monuments, much of the park is free to wander, making it one of the richest and least-crowded places in the city to see genuine ruins spanning a full millennium.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rajon_Ki_Baoli_-_Delhi_-_01.jpg/960px-Rajon_Ki_Baoli_-_Delhi_-_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rajon_Ki_Baoli_-_Delhi_-_01.jpg/960px-Rajon_Ki_Baoli_-_Delhi_-_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rajon_Ki_Baoli_-_Delhi_-_01.jpg/960px-Rajon_Ki_Baoli_-_Delhi_-_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jamali_Kamali_mosque1.jpg/960px-Jamali_Kamali_mosque1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Balban_tomb.jpg/500px-Balban_tomb.jpg",
+    ],
+    imageCredit: "Photos: Rupeshsarkar, Varun Shiv Kapur, Mahi zahidi, via Wikimedia Commons",
+    category: ["Heritage", "Adventure"],
+    bestSeason: "October – March (cooler weather for walking the extensive, largely unshaded ruins)",
+    duration: "2-3 hours",
+    highlights: [{ name: "Over 100 monuments spanning more than 1,000 years" }, { name: "The finely carved Rajon ki Baoli stepwell" }, { name: "The Jamali Kamali mosque and tomb, with a painted ceiling" }, { name: "The tomb of Ghiyasuddin Balban, a Delhi Sultanate ruler" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Mehrauli Archaeological Park by road/metro", fromBangalore: "IGI Airport, ~40 min to Mehrauli Archaeological Park by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by the Qutub Minar complex — easy to combine both in one outing." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Qutub Minar metro station, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "A guide or map app helps — the ruins are spread out and not always clearly signposted." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Mehrauli/South Delhi", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Qutub Minar (Yellow Line) station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qutub Minar", distance: "~1 km", type: "UNESCO Heritage Site", isHidden: false, id: "qutub-minar" },
+      { name: "Garden of Five Senses", distance: "~3 km", type: "Sculpture Park", isHidden: true, id: "garden-of-five-senses" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mehrauli Archaeological Park & Qutub Minar", morning: "Explore Rajon ki Baoli, Jamali Kamali, and Balban's tomb.", afternoon: "Visit the nearby Qutub Minar complex.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Carry water and snacks — limited food options within the park", tips: "The ruins are spread across a large, informally-marked area — a local guide or a downloaded map genuinely helps here." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A genuine ASI-protected park, though far less staffed and visited than the adjacent Qutub Minar"],
+      precautions: ["Much of the park is quiet and informally maintained — best visited in daylight with a companion or group", "Some ruin areas are overgrown or unrailed — watch your footing", "Limited signage and mobile coverage in parts of the park"],
+      soloTips: ["Better suited to a group or guided visit than exploring alone, given how sparsely visited large parts of the park are"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The main pathways near Rajon ki Baoli and Jamali Kamali during daylight hours"],
+      avoidAreas: ["Isolated or densely overgrown sections of the park, especially near closing time"],
+    },
+    rating: 4.4,
+    reviews: 7000,
+    mustEat: ["Carry your own water and snacks — limited food options on-site"],
+    packingTips: ["Sturdy, closed shoes for uneven ancient stonework", "Sun protection and plenty of water — little shade across the ruins", "A downloaded map or guide, since signage is limited"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
