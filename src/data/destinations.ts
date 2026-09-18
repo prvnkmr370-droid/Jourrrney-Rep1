@@ -70057,6 +70057,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Central Delhi's restaurants and cafes nearby"],
     packingTips: ["Comfortable walking shoes for the open plaza", "Sun protection and water", "A camera for the illuminated evening view"],
   },
+  {
+    id: "hauz-khas-complex",
+    name: "Hauz Khas Complex",
+    state: "Delhi",
+    tagline: "A Royal Reservoir, Madrasa, and Tomb Beside a Leafy Lake",
+    description: "Built around a reservoir originally dug in 1230 by Sultan Iltutmish and later desilted and expanded by Feroz Shah Tughlaq in the 14th century, this complex pairs the ruins of one of medieval India's largest madrasas with Feroz Shah's own domed tomb, connected by a series of pavilions overlooking the lake. Now bordered by the trendy Hauz Khas Village of cafes, boutiques, and galleries, the complex's mix of Tughlaq-era ruins, deer park, and green lakeside walkways makes it one of Delhi's most atmospheric spots to combine history with a relaxed afternoon.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG/960px-Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG/960px-Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG/960px-Ferozesha_tomb_at_the_left_end_with_Northern_limb_of_the_Madrasa.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Feroz_Shah_Tomb_1.jpg/960px-Feroz_Shah_Tomb_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Hauz_Khas_lake_2016.jpg/960px-Hauz_Khas_lake_2016.jpg",
+    ],
+    imageCredit: "Photos: Nvvchar, Rangan Datta, Vis M, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (cooler weather for walking the lakeside grounds)",
+    duration: "1.5-2 hours, plus time in Hauz Khas Village",
+    highlights: [{ name: "A 13th-century royal reservoir expanded by Feroz Shah Tughlaq" }, { name: "One of medieval India's largest madrasas" }, { name: "Feroz Shah Tughlaq's own domed tomb overlooking the lake" }, { name: "Bordered by trendy Hauz Khas Village's cafes and boutiques" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Hauz Khas by road/metro", fromBangalore: "IGI Airport, ~35 min to Hauz Khas by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Combine the historic complex with a browse through Hauz Khas Village's shops and cafes." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Hauz Khas metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Hauz Khas (Yellow/Magenta Line) is a short walk from the complex entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near South Delhi/Hauz Khas", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Hauz Khas (Yellow/Magenta Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hauz Khas Village", distance: "~0.3 km", type: "Shopping & Dining", isHidden: false },
+      { name: "Deer Park", distance: "~0.5 km", type: "Urban Park", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hauz Khas Complex & Village", morning: "Explore the madrasa ruins, tomb, and lakeside pavilions.", afternoon: "Walk through Deer Park, then browse Hauz Khas Village's shops.", evening: "Dinner at one of the Village's many rooftop cafes overlooking the lake.", stay: "Delhi", meals: "Hauz Khas Village's wide range of cafes and restaurants", tips: "Come in the late afternoon to catch the ruins in golden light, then stay on for the Village's evening dining scene." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A popular, well-visited South Delhi complex with a lively surrounding neighbourhood", "Consistently heavy footfall from both tourists and locals"],
+      precautions: ["Some ruin stairways and ledges are unrailed — take care, especially with children", "The Village's nightlife area can get crowded on weekend evenings"],
+      soloTips: ["Very manageable solo — a popular spot with steady visitor traffic and easy access to the surrounding Village"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full complex grounds and adjoining Village"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 26000,
+    mustEat: ["Hauz Khas Village's wide range of cafes and rooftop restaurants"],
+    packingTips: ["Comfortable walking shoes for the ruins and village lanes", "A camera for the lake and Tughlaq-era architecture", "Light layers — evenings by the lake can be breezy"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
