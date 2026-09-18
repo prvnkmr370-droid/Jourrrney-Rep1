@@ -68025,6 +68025,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Khasi and Jaintia cuisine at riverside camps", "Fresh fish where available"],
     packingTips: ["Swimwear or a change of clothes for the river", "A waterproof bag for electronics on the boat", "Sunscreen and a hat", "Valid ID — this is a border-adjacent area"],
   },
+  {
+    id: "reiek-hills",
+    name: "Reiek Hills",
+    state: "Mizoram",
+    aliases: ["Reiek Tlang", "Reiek Peak"],
+    tagline: "A 1,465m Cuesta Peak with a Living Mizo Heritage Village",
+    description: "About 29 km from Aizawl, Reiek Hills rises to 1,465 metres as a cuesta — a ridge with a gentle slope on one side and a sheer drop on the other, shaped by erosion of Tertiary sand-shale layers and recognised as a National Geological Monument. From the summit, the surrounding valleys and hills spread out below, and on a clear day the plains of Bangladesh are visible in the distance. At the base, the Tourism Department maintains a heritage village of traditional huts representing different Mizo sub-tribes alongside a chief's house and a bachelor's dormitory, plus a cafeteria and resort — and the hills host the annual Anthurium Festival celebrating Mizoram's state flower.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Reiek.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Reiek.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Reiek.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Reiek_Tlang_Mamit_Mizoram.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sunset_in_Reiek_Hills.jpg",
+    ],
+    imageCredit: "Photos: Coolcolney, Joe Fanai, Garima Singh, via Wikimedia Commons",
+    category: ["Nature", "Adventure", "Culture"],
+    bestSeason: "October – April (clearest views); the Anthurium Festival runs in September",
+    duration: "Half day to a full day",
+    highlights: [{ name: "A cuesta ridge summit at 1,465m, a National Geological Monument" }, { name: "Views over the valleys to the Bangladesh plains on a clear day" }, { name: "A recreated Mizo heritage village of traditional sub-tribe huts" }, { name: "Host to the annual Anthurium Festival" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl (~50 km from Reiek), via Kolkata/Guwahati/Imphal connections", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Aizawl is the practical base for a Reiek day trip." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~29 km from Aizawl by road", costRange: "Local taxi or self-drive from Aizawl", tips: "A popular day trip — most visitors go and return from Aizawl the same day." },
+    ],
+    accommodation: [
+      { type: "Tourism Department Resort & Aizawl Hotels", priceRange: "₹800–₹5,000/night", examples: ["Tourism Department's own resort/cafeteria at Reiek", "City hotels in Aizawl"], description: "The Reiek Tourist Resort offers on-site stays; Aizawl has fuller hotel options for those day-tripping instead." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The most common way to reach Reiek and return the same day", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Reiek Hills Day Trip", morning: "Drive from Aizawl to Reiek Hills.", afternoon: "Walk the heritage village of Mizo sub-tribe huts, then hike to the summit viewpoint.", evening: "Return to Aizawl.", stay: "Aizawl", meals: "Cafeteria at the Reiek resort, or Mizo cuisine back in Aizawl", tips: "Clear mornings give the best long-distance views toward the Bangladesh plains." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-established, Tourism Department-maintained site with regular visitor footfall", "A short, popular day trip from Aizawl on a well-used road"],
+      precautions: ["The ridge has steep drops on one side — stay on marked paths, especially near the summit", "Weather can turn misty quickly at altitude — check conditions before the hike up"],
+      soloTips: ["A straightforward, well-trodden day trip that's manageable solo given the steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The heritage village and marked summit trail"],
+      avoidAreas: ["Unmarked routes near the steep cuesta drop"],
+    },
+    rating: 4.5,
+    reviews: 620,
+    mustEat: ["Mizo cuisine (bai, sawhchiar) in Aizawl", "Light meals at the Reiek cafeteria"],
+    packingTips: ["Sturdy walking shoes for the ridge trail", "A light jacket — cooler and windier at altitude", "A camera for the valley and Bangladesh-plains views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
