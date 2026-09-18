@@ -68428,6 +68428,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Mizo cuisine, including regional rice dishes given the valley's rice-growing heritage"],
     packingTips: ["A camera for the valley views", "Comfortable walking shoes for village visits", "Valid ID — a border-adjacent district", "Warm layers for cooler evenings"],
   },
+  {
+    id: "mizoram-state-museum",
+    name: "Mizoram State Museum",
+    state: "Mizoram",
+    tagline: "Aizawl's Home for Mizo History, Culture, and Traditional Life",
+    description: "In Zarkawt, Aizawl, the Mizoram State Museum houses the state's collection of Mizo cultural and historical material — traditional jewelry and adornments, tools, and displays depicting village life, including a large mural-style diorama of a hillside Mizo settlement with its thatched houses and daily activities. It's a compact but genuine way to get an overview of Mizo heritage before or after visiting the state's living villages and heritage sites in person.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/Mizoram_State_Museum_-_0.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/24/Mizoram_State_Museum_-_0.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/24/Mizoram_State_Museum_-_0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mizoram_State_Museum_-_5.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mizoram_State_Museum_-_2.jpg",
+    ],
+    imageCredit: "Photos: Irina Gelbukh, via Wikimedia Commons (CC BY-SA)",
+    category: ["Culture", "Heritage"],
+    bestSeason: "Year-round",
+    duration: "1–2 hours",
+    highlights: [{ name: "Traditional Mizo jewelry and adornment displays" }, { name: "A large diorama of a traditional hillside Mizo village" }, { name: "Tools and artifacts of everyday Mizo life" }, { name: "A compact introduction to Mizo culture and history" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a short local ride", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "An easy stop within central Aizawl." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "In Zarkawt, central Aizawl", costRange: "Local taxi or auto within the city", tips: "Combine with other central Aizawl sights on the same day." },
+    ],
+    accommodation: [
+      { type: "Aizawl Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["City hotels and homestays in Aizawl"], description: "A city museum — pairs with any Aizawl stay." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride within central Aizawl", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "State Museum Visit", morning: "Explore the museum's exhibits on Mizo history, jewelry, and village life.", afternoon: "Continue to other central Aizawl sights.", evening: "Free evening in Aizawl.", stay: "Aizawl", meals: "Cafes and restaurants in central Aizawl", tips: "A good first stop in Aizawl to get oriented on Mizo culture before traveling further." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A government-run institution in central Aizawl with regular visitor traffic", "Located in a well-connected part of the city"],
+      precautions: ["Check opening hours in advance, as museum timings can vary"],
+      soloTips: ["Very manageable solo — a central, well-established city museum"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The full museum premises"],
+      avoidAreas: [],
+    },
+    rating: 4.3,
+    reviews: 380,
+    mustEat: ["Cafes and Mizo cuisine in central Aizawl"],
+    packingTips: ["A camera for the exhibits", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
