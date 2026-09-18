@@ -68543,6 +68543,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Mizo cuisine in Champhai"],
     packingTips: ["A camera for the carved stones", "Comfortable walking shoes", "Valid ID — a border-adjacent district"],
   },
+  {
+    id: "hmuifang",
+    name: "Hmuifang",
+    state: "Mizoram",
+    aliases: ["Hmuifang Tlang", "Mount Hmuifang"],
+    tagline: "A Ridge-Top Resort on a Former Mizo Chief's Forest Reserve",
+    description: "About 50 km south of Aizawl, Hmuifang rises to 1,619 metres, its slopes covered in old-growth forest that's been protected since the days of the Mizo chiefs. A government-run tourist resort sits right on the scenic ridge, built on land that once belonged to the local chieftain, with sweeping views along the mountain's spine. The surrounding forest is known for rare orchids and birdlife, and the hillside villages nearby — including Hmuifang village itself, Sumsuih, Lamchhip, and Chamring — offer a genuine look at rural Mizo life.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hmuifang_tlang.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hmuifang_tlang.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hmuifang_tlang.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Hmuifang_Mountain_Side.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Park_entrance_in_Hmuifang_in_Mizoram_India._-_panoramio.jpg",
+    ],
+    imageCredit: "Photos: Suaktawta, Coolcolney, R london, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Adventure", "Culture"],
+    bestSeason: "October – April (clear ridge views, pleasant weather)",
+    duration: "1–2 days",
+    highlights: [{ name: "Sweeping ridge-top views at 1,619 metres" }, { name: "Old-growth forest protected since the era of the Mizo chiefs" }, { name: "Rare orchids and rich birdlife" }, { name: "Nearby hillside villages showing genuine rural Mizo life" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl (~50 km from Hmuifang), via Kolkata/Guwahati/Imphal connections", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "A manageable day trip or overnight stay from Aizawl." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~50 km south of Aizawl", costRange: "Local taxi or self-drive from Aizawl", tips: "The resort sits right on the ridge — a scenic drive up." },
+    ],
+    accommodation: [
+      { type: "Hmuifang Tourist Resort", priceRange: "₹800–₹3,500/night", examples: ["The government-run tourist resort on the ridge"], description: "A dedicated resort on the mountain's scenic peak, built on the former chief's land." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The standard way to reach the ridge-top resort", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 5000, food: 1000, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hmuifang Ridge", morning: "Drive from Aizawl to Hmuifang and settle into the tourist resort.", afternoon: "Walk the ridge trails and take in the forest and valley views.", evening: "Overnight at the resort.", stay: "Hmuifang Tourist Resort", meals: "Resort dining or local meals", tips: "Clear mornings give the best long-distance ridge views." },
+      { day: 2, title: "Hillside Villages", morning: "Visit nearby hillside villages like Sumsuih or Lamchhip for a look at rural Mizo life.", afternoon: "Return to Aizawl.", evening: "—", stay: "—", meals: "Local meals in the villages", tips: "A respectful, low-key visit — these are genuine working villages, not staged attractions." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A government-maintained resort with organised facilities", "A well-known day-trip/overnight destination from Aizawl"],
+      precautions: ["Ridge-top terrain has steep drops off the main trails — stay on marked paths", "Weather can turn misty quickly at altitude"],
+      soloTips: ["A comfortable, manageable trip solo given the resort's organised setup"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The resort grounds and marked ridge trails"],
+      avoidAreas: ["Unmarked routes near the ridge edge"],
+    },
+    rating: 4.4,
+    reviews: 260,
+    mustEat: ["Resort dining at Hmuifang", "Mizo cuisine in the nearby villages"],
+    packingTips: ["A camera for the ridge and valley views", "A light jacket — cooler at altitude", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
