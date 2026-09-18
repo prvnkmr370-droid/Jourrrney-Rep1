@@ -68966,6 +68966,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Home-cooked Angami meals at your homestay", "Local snow trout, where available"],
     packingTips: ["Binoculars for birdwatching", "Comfortable walking shoes", "Cash — card payments are unlikely to be available", "A camera for the village and paddy-field views"],
   },
+  {
+    id: "zhavame-vegetable-village",
+    name: "Zhavame (Vegetable Village)",
+    state: "Nagaland",
+    aliases: ["Zavame", "Zhavame Village"],
+    tagline: "An Organic 'Vegetable Village' at the Foot of the Kapamodzü Range",
+    description: "In Phek district, Zhavame was officially declared a 'Vegetable Village' by Nagaland's Department of Horticulture in 2010, recognising its rich organic production of cabbage and potatoes — most of the population farms for a living here, with consistently rewarding harvests. The village sits at the foot of the Kapamodzü range, one of Nagaland's highest points at 2,620 metres, from where a roughly hour-long trek leads to sweeping views of Saramati Peak, Japfü peak, Kohima, and the surrounding villages. Older accounts describe the range as historically home to elephants, tigers, tragopan, and other wildlife, making it a genuine spot for eco-tourism alongside its agricultural identity.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Kapamodzu.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Kapamodzu.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Kapamodzu.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/37/Kupamodz%C3%BC.jpeg",
+    ],
+    imageCredit: "Photos: Suduvelu Rhakho, Kudezto Keyho07, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Culture", "Adventure"],
+    bestSeason: "October – April (clear trekking weather)",
+    duration: "1 day (a half day for the village, an hour more for the peak trek)",
+    highlights: [{ name: "Nagaland's officially recognised 'Vegetable Village'" }, { name: "A trek up the Kapamodzü range, 2,620m" }, { name: "Views of Saramati Peak, Japfü peak, and Kohima from the summit" }, { name: "Organic cabbage and potato farming as a way of life" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Kohima/Phek", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then a long road journey to Phek district", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Combine with other Phek district destinations given the shared route." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Within Phek district", costRange: "Hired vehicle recommended", tips: "The trek to Kapamodzü peak starts directly from the village." },
+    ],
+    accommodation: [
+      { type: "Village Homestays / Phek Guesthouses", priceRange: "₹600–₹2,500/night", examples: ["Basic homestays in Zhavame", "Guesthouses in Phek town"], description: "Zhavame itself has limited lodging — Phek town offers more options nearby." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "N/A", notes: "The village and the Kapamodzü trek are explored entirely on foot", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 500, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6800, accommodation: 4000, food: 1000, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Zhavame & Kapamodzü Trek", morning: "Arrive in Zhavame and explore the organic farms and village.", afternoon: "Trek up the Kapamodzü range (~1 hour) for panoramic views.", evening: "Return to the village or Phek town.", stay: "Zhavame Homestay or Phek town", meals: "Local Naga produce and home-cooked meals", tips: "Clear afternoons give the best long-distance views from the summit." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A small farming community with a straightforward, well-known village trek", "A short, well-trodden peak trail directly from the village"],
+      precautions: ["Limited facilities in the village — carry water and snacks for the trek", "Weather at the peak can change quickly — carry a rain layer"],
+      soloTips: ["Manageable solo for the village visit; a local guide is worthwhile for the peak trek given limited signage"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The village and the main trekking trail"],
+      avoidAreas: ["Off-trail forest areas without a guide"],
+    },
+    rating: 4.3,
+    reviews: 95,
+    mustEat: ["Fresh organic cabbage and potato dishes", "Local Naga cuisine in Phek town"],
+    packingTips: ["Sturdy trekking shoes for the peak trail", "Water and snacks — limited facilities in the village", "A camera for the summit views", "A light rain layer"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
