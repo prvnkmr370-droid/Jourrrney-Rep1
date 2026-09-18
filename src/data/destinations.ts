@@ -68196,6 +68196,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Resort dining at Tam Dil", "Mizo cuisine in Saitual"],
     packingTips: ["Swimwear or a change of clothes for boating/kayaking", "A camera for the lake reflections", "Comfortable footwear for the resort grounds"],
   },
+  {
+    id: "phawngpui-national-park",
+    name: "Phawngpui National Park",
+    state: "Mizoram",
+    aliases: ["Blue Mountain", "Phawngpui Blue Mountain National Park"],
+    tagline: "Mizoram's Highest Peak, a Protected 'Great Meadow' Near the Myanmar Border",
+    description: "In Lawngtlai district near the Myanmar border, Phawngpui — known as Blue Mountain — is Mizoram's highest peak at 2,157 metres, protected since 1992 as one of only two national parks in the state. Its name comes from the Lai words for \"great meadow,\" a fitting description for the sweeping grasslands that cover much of the mountain, including the Farpak grassland near its base. The park is rich with birdlife (peregrine falcons, Mrs. Hume's pheasant, hornbills) and has recorded sightings of the rare clouded leopard, and the government permits eco-friendly visits only from November to April.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/65/2007-blue-mountain-np.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/65/2007-blue-mountain-np.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/2007-blue-mountain-np.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Phawngpui_national_park.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5d/2007-blue-mtn-farpak.jpg",
+    ],
+    imageCredit: "Photos: Yathin S Krishnappa, Garima Singh, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Adventure", "Wildlife"],
+    bestSeason: "November – April (the only permitted visiting window)",
+    duration: "1–2 days",
+    highlights: [{ name: "Mizoram's highest peak at 2,157 metres" }, { name: "The sweeping Farpak grassland near the park's base" }, { name: "Rare clouded leopard sightings and rich birdlife" }, { name: "Sunrise views above the cloud line" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a long road journey via Lawngtlai", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road to Sangau/Lawngtlai", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "This is Mizoram's most remote major destination — plan for a genuinely long approach." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Via Lawngtlai to Sangau, the base town for the mountain", costRange: "Hired vehicle recommended given the distance and terrain", tips: "Only permitted November–April — check current access rules before planning." },
+    ],
+    accommodation: [
+      { type: "Sangau/Lawngtlai Guesthouses", priceRange: "₹800–₹3,500/night", examples: ["Basic guesthouses and forest rest houses in Sangau"], description: "Sangau, the town at the mountain's base, is the practical stay option — lodging is basic given the remoteness." },
+    ],
+    localTransport: [
+      { mode: "Local Guide (Recommended)", cost: "Arranged in Sangau", notes: "Advisable given the remote terrain and the park's restricted visiting season", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 600, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1200, transport: 1200, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival in Sangau", morning: "Travel from Aizawl to Lawngtlai and on to Sangau.", afternoon: "Settle in and arrange a local guide for the mountain.", evening: "Rest ahead of an early start.", stay: "Sangau", meals: "Local meals in Sangau", tips: "This is a remote, multi-day trip — build in enough travel time." },
+      { day: 2, title: "Phawngpui Summit & Farpak Grassland", morning: "Trek up to the peak with your guide, ideally for sunrise views above the clouds.", afternoon: "Explore the Farpak grassland and look for birdlife.", evening: "Return to Sangau or begin the journey back.", stay: "Sangau", meals: "Carry water and snacks — no facilities on the mountain", tips: "Visits are only permitted November–April, so confirm the season before you go." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A protected national park with a defined, guided visiting structure", "Sangau is a small but established base town for mountain visits"],
+      precautions: ["Extremely remote with a long approach — travel with a local guide, not alone", "Near the international border — carry valid ID", "No facilities on the mountain itself — carry water, food, and a first-aid kit", "Restricted to a specific visiting season (Nov–Apr) for ecological reasons — respect this"],
+      soloTips: ["Not recommended solo given the remoteness — arrange a local guide through Sangau in advance"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Marked trails with a guide", "Sangau town"],
+      avoidAreas: ["The Thlazuang Khàm cliffs on the western side — sharp, deep drops", "Off-trail areas without a guide"],
+    },
+    rating: 4.5,
+    reviews: 290,
+    mustEat: ["Local Mara/Mizo cuisine in Sangau"],
+    packingTips: ["Sturdy trekking shoes and warm layers — genuinely cold at altitude", "Water and food — no facilities on the mountain", "A camera for sunrise-above-the-clouds views", "Valid ID for the border-adjacent area"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
