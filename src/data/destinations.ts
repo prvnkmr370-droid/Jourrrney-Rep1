@@ -68312,6 +68312,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Carry your own supplies — very limited food facilities inside the reserve"],
     packingTips: ["Sturdy trekking shoes for forest walks", "Binoculars for birdwatching", "Insect repellent", "A torch and basic first-aid kit for the remote setting"],
   },
+  {
+    id: "solomons-temple-aizawl",
+    name: "Solomon's Temple",
+    state: "Mizoram",
+    aliases: ["Kohhran Thianghlim Temple"],
+    tagline: "One of Mizoram's Largest Churches, Inspired by a Founder's Dream",
+    description: "On the western outskirts of Aizawl, Solomon's Temple is the striking white, multi-towered church of the Kohhran Thianghlim (Holy Church), built after its founder Dr. L.B. Sailo said he saw the design in a dream in 1991. Construction began with a foundation stone laid in 1996 and finished two decades later, opening to the public with a Christmas service in 2017. The building's four corner towers, each topped with a crown, and its symbolic details — from David's stars to a roofline that forms a cross from above — have made it one of Aizawl's most-visited landmarks, alongside its complex's park, restaurant, and social service centre.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Solomon%27s_Temple%2C_Aizawl%2C_Mizoram%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Solomon%27s_Temple%2C_Aizawl%2C_Mizoram%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Solomon%27s_Temple%2C_Aizawl%2C_Mizoram%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Solomon%27s_Temple_on_a_cloudy_day.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Temple_tower_at_the_sunset.JPG",
+    ],
+    imageCredit: "Photos: Kohhran Thianghlim, Jhmar13, via Wikimedia Commons (CC BY-SA)",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather); late December for the temple's Jerusalem Khawmpui event",
+    duration: "1–2 hours",
+    highlights: [{ name: "Four crowned corner towers with symbolic Christian design" }, { name: "A cross formed by the roofline when viewed from above" }, { name: "A shaded temple complex with a park, restaurant, and social service centre" }, { name: "One of the largest churches in Mizoram, built from a founder's vision" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a short local ride", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "An easy add-on to any Aizawl city itinerary." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "On the western outskirts of Aizawl", costRange: "Local taxi within the city", tips: "A popular stop — combine with other Aizawl city sights on the same day." },
+    ],
+    accommodation: [
+      { type: "Aizawl Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["City hotels and homestays in Aizawl"], description: "A city landmark — no dedicated stays on-site, pairs with any Aizawl accommodation." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride from central Aizawl to the western outskirts", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 500, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Solomon's Temple Visit", morning: "Visit the temple, explore its towers and symbolic architectural details.", afternoon: "Walk the shaded temple complex and grab a meal at the on-site restaurant.", evening: "Continue to other Aizawl city sights.", stay: "Aizawl", meals: "The temple complex's own restaurant", tips: "Sunday services and December events draw larger crowds — plan around them if you want a quieter visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-established tourist landmark with regular visitor footfall", "Located within an organised temple complex with its own facilities"],
+      precautions: ["Dress respectfully as this is an active place of worship", "Sunday services and special events can get crowded"],
+      soloTips: ["Very manageable solo — a popular, well-trafficked city landmark"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The full temple complex"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 1400,
+    mustEat: ["The temple complex's own restaurant", "Mizo cuisine in central Aizawl"],
+    packingTips: ["A camera for the temple's architecture", "Modest clothing appropriate for a place of worship", "Comfortable walking shoes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
