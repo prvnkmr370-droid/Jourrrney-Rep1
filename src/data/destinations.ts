@@ -70543,6 +70543,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Food kiosks within the museum; more options in Chanakyapuri"],
     packingTips: ["Comfortable walking shoes for the outdoor grounds", "Sun protection and water", "A camera for the vintage locomotives"],
   },
+  {
+    id: "thenzawl-golf-course",
+    name: "Thenzawl Golf Course",
+    state: "Mizoram",
+    tagline: "An 18-Hole Course Cut Into Mizoram's Forested Hills",
+    description: "Laid out on a plateau above Thenzawl town in Serchhip district, this 18-hole golf course is ringed by dense forest and rolling hills, with wooden log-cabin cottages built along the fairways for overnight stays. Its remote, high-altitude setting and relative obscurity outside the Northeast make it one of India's more unusual golfing destinations — as much valued for the surrounding scenery and cool climate as for the course itself, and a rare example of the sport in the hills of Mizoram.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thenzawl_gold_course_birds_eye_view.jpg/960px-Thenzawl_gold_course_birds_eye_view.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thenzawl_gold_course_birds_eye_view.jpg/960px-Thenzawl_gold_course_birds_eye_view.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thenzawl_gold_course_birds_eye_view.jpg/960px-Thenzawl_gold_course_birds_eye_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Thenzawl_golf_course.jpg/960px-Thenzawl_golf_course.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Thenzawl_gold_course_log_house.jpg/960px-Thenzawl_gold_course_log_house.jpg",
+    ],
+    imageCredit: "Photos: Joseph Lalrintluanga, via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March (cool, dry weather ideal for golf)",
+    duration: "Half day to full day",
+    highlights: [{ name: "An 18-hole course set on a forested plateau" }, { name: "Wooden log-cabin cottages along the fairways" }, { name: "Cool, high-altitude climate year-round" }, { name: "A rare golfing destination in the hills of Mizoram" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "Fly to Lengpui Airport, Aizawl, then ~3 hr road to Thenzawl", fromBangalore: "Fly to Lengpui Airport, Aizawl, then ~3 hr road to Thenzawl", duration: "Fly into Aizawl, then road", costRange: "₹5,000–₹15,000 airfare to Aizawl", tips: "Thenzawl is roughly 3-4 hours by road from Aizawl — hire a taxi or take a shared vehicle." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~3-4 hours from Aizawl by road", costRange: "Taxi fares vary by distance", tips: "Roads through the hills can be winding — allow extra travel time." },
+    ],
+    accommodation: [
+      { type: "On-site Log Cabins", priceRange: "₹2,000–₹5,000/night", examples: ["Golf course log-cabin cottages"], description: "Cottages built right along the fairways, bookable through the golf course management." },
+      { type: "Thenzawl Guesthouses", priceRange: "₹800–₹2,500/night", examples: ["Local guesthouses in Thenzawl town"], description: "Simpler budget options in the town itself." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Private Vehicle", cost: "Fare varies by distance", notes: "The primary way to reach and get around Thenzawl", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vantawng Falls", distance: "~15 km", type: "Waterfall", isHidden: false, id: "vantawng-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Thenzawl Golf Course & Vantawng Falls", morning: "A round of golf or a walk around the course grounds.", afternoon: "Visit nearby Vantawng Falls.", evening: "Stay overnight in one of the fairway log cabins.", stay: "Thenzawl", meals: "On-site dining at the golf course; simple local eateries in Thenzawl town", tips: "Book the log cabins ahead — options are limited and the setting is popular with visitors seeking a quiet hill retreat." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed golf course facility with on-site staff", "Generally peaceful, low-crime rural Mizoram setting"],
+      precautions: ["Remote location — limited mobile network coverage in parts of the hills", "Facilities and transport options are more limited than in Aizawl"],
+      soloTips: ["Manageable solo, though a rural, lightly-visited destination — let your accommodation know your plans"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The golf course grounds and Thenzawl town"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 900,
+    mustEat: ["On-site dining at the golf course; simple local Mizo eateries in Thenzawl town"],
+    packingTips: ["Golf equipment if you plan to play (rentals may be limited)", "Warm layers — the hill climate is cool, especially in the evenings", "A camera for the forested course views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
