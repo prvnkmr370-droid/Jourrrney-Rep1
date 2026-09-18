@@ -69935,6 +69935,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["The gurudwara's free community langar meal, open to all visitors"],
     packingTips: ["A scarf or head covering (also provided free at the entrance)", "Socks, since shoes are removed at the entrance", "Modest clothing appropriate for a place of worship"],
   },
+  {
+    id: "birla-mandir-delhi",
+    name: "Birla Mandir (Laxminarayan Temple)",
+    state: "Delhi",
+    tagline: "Delhi's First Major Hindu Temple, Open to All Communities",
+    description: "Built between 1933 and 1939 by industrialist Jugal Kishore Birla and inaugurated by Mahatma Gandhi on the condition that people of all castes be allowed entry, this red-and-cream sandstone temple was one of the first large Hindu temples in the capital and remains dedicated to Lakshmi and Narayan (Vishnu). Its soaring shikharas rise above landscaped grounds with fountains and a small zoo-turned-garden, and its main hall holds shrines to several deities alongside inscriptions from the Bhagavad Gita and other scriptures. Gandhi's own insistence on the temple's open-entry policy makes it a notable landmark in India's social reform history as much as its architecture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Laxminarayan_Temple_in_New_Delhi_03-2016.jpg/960px-Laxminarayan_Temple_in_New_Delhi_03-2016.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Laxminarayan_Temple_in_New_Delhi_03-2016.jpg/960px-Laxminarayan_Temple_in_New_Delhi_03-2016.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Laxminarayan_Temple_in_New_Delhi_03-2016.jpg/960px-Laxminarayan_Temple_in_New_Delhi_03-2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/A_scene_of_Birla_Mandir_on_the_auspicious_occasion_of_Janamashtami%2C_in_New_Delhi_on_August_16%2C_2006.jpg/500px-A_scene_of_Birla_Mandir_on_the_auspicious_occasion_of_Janamashtami%2C_in_New_Delhi_on_August_16%2C_2006.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/1996_-230-13A_New_Delhi_Hindu_Temple_%28Birla%29_%282234207676%29.jpg/500px-1996_-230-13A_New_Delhi_Hindu_Temple_%28Birla%29_%282234207676%29.jpg",
+    ],
+    imageCredit: "Photos: A.Savin, Ministry of Culture/Press Information Bureau (GODL-India), Dan Lundberg, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March; especially lively during Janmashtami and Diwali",
+    duration: "1-1.5 hours",
+    highlights: [{ name: "Inaugurated by Mahatma Gandhi on the condition of open entry for all castes" }, { name: "Soaring red-and-cream sandstone shikharas" }, { name: "Landscaped grounds with fountains and gardens" }, { name: "Scriptural inscriptions from the Bhagavad Gita inside the main hall" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Birla Mandir by road/metro", fromBangalore: "IGI Airport, ~30 min to Birla Mandir by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Connaught Place — easy to combine with central Delhi shopping and dining." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "RK Ashram Marg metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "RK Ashram Marg (Blue Line) is the closest station, a short walk from the temple gate." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place", "Hotels across every category citywide"], description: "Connaught Place puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "RK Ashram Marg (Blue Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Connaught Place", distance: "~2 km", type: "Shopping & Dining", isHidden: false },
+      { name: "Jantar Mantar", distance: "~2.5 km", type: "Observatory", isHidden: false, id: "jantar-mantar-delhi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birla Mandir & Connaught Place", morning: "Visit the main hall and explore the temple grounds and gardens.", afternoon: "Walk over to Connaught Place for shopping and lunch.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Connaught Place's many restaurants and cafes nearby", tips: "Entry is free — arrive in the morning for a quieter visit before the midday crowds build." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, well-secured central Delhi temple with entry screening", "Consistently heavy daytime visitor footfall"],
+      precautions: ["Marble surfaces can be slippery, especially near fountains", "Shoes must be removed before entering the main hall"],
+      soloTips: ["Very manageable solo — a popular, well-monitored temple with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full temple complex and gardens"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 21000,
+    mustEat: ["Connaught Place's restaurants and cafes nearby"],
+    packingTips: ["Socks, since shoes are removed before the main hall", "Modest clothing appropriate for a place of worship", "A camera for the shikharas and gardens"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
