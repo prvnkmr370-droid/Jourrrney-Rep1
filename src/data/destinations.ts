@@ -68853,6 +68853,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Festival food courts during Hornbill", "Naga cuisine in Kohima"],
     packingTips: ["A camera for the tribal architecture and festival events", "Comfortable walking shoes — the complex is large", "Warm layers, especially for December evenings during the festival"],
   },
+  {
+    id: "doyang-hydro-project",
+    name: "Doyang Hydro Project",
+    state: "Nagaland",
+    aliases: ["Doyang Reservoir", "Doyang Dam"],
+    tagline: "The 'Amur Falcon Capital of the World'",
+    description: "About 38 km from Wokha town, the Doyang Hydro Project's reservoir is best known not for its hydroelectric role but for hosting one of the largest gatherings of migratory birds on the planet: nearly a million Amur Falcons roost here every winter en route from South Eastern Siberia and Northern China, a round-trip migration of up to 22,000 km — among the longest of any migratory bird. International scientists recognised Doyang as one of the biggest such congregations anywhere, earning Nagaland the title 'Amur Falcon Capital of the World.' Beyond the birds, the reservoir sits in genuinely scenic terraced-valley country, with the surrounding hills growing an abundance of vegetables and fruit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Doyang_Dam_wokha_Nagaland.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Doyang_Dam_wokha_Nagaland.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Doyang_Dam_wokha_Nagaland.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/39/Amur_Falcon_in_flight_from_Doyang_reservoir_region_in_Nagaland_Cropped_JEG5347_.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Amur_Falcon_from_Doyang_reservoir_region_in_Nagaland_JEG5106.JPG",
+    ],
+    imageCredit: "Photos: Murari Bhalekar, P Jeganathan, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – November (peak Amur Falcon roosting)",
+    duration: "1 day",
+    highlights: [{ name: "Nearly a million roosting Amur Falcons each winter" }, { name: "One of the world's longest migratory bird journeys, up to 22,000 km" }, { name: "A scenic reservoir set in terraced-valley farmland" }, { name: "Nagaland's title as the 'Amur Falcon Capital of the World'" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Wokha", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Wokha", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Time your visit for October-November to catch the falcon roosting." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~38 km from Wokha town", costRange: "Local taxi from Wokha", tips: "Wokha is the practical base for reaching the reservoir." },
+    ],
+    accommodation: [
+      { type: "Wokha Hotels & Guesthouses", priceRange: "₹800–₹3,500/night", examples: ["Local hotels and guesthouses in Wokha town"], description: "Wokha is the nearest town with a real range of lodging." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Wokha", cost: "Fare varies by arrangement", notes: "The standard way to reach the reservoir viewing points", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5000, food: 1000, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doyang Reservoir", morning: "Drive from Wokha to the Doyang reservoir viewing points.", afternoon: "Watch the Amur Falcons roosting (in season) and take in the reservoir and valley views.", evening: "Return to Wokha.", stay: "Wokha", meals: "Local meals in Wokha", tips: "Early morning and dusk are the best times to see the falcons in large numbers." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known conservation and tourism site with organised viewing during falcon season", "Wokha is an established district town with reasonable infrastructure"],
+      precautions: ["Reservoir edges can be uneven — take care near the water", "Falcon season (Oct-Nov) draws more visitors and vehicles — plan accordingly"],
+      soloTips: ["Manageable solo, especially during falcon season when the area sees regular visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Designated viewing points around the reservoir"],
+      avoidAreas: ["Unmarked reservoir edges, especially after dark"],
+    },
+    rating: 4.5,
+    reviews: 420,
+    mustEat: ["Local Naga cuisine in Wokha", "Fresh local produce from the surrounding valley farms"],
+    packingTips: ["Binoculars and a camera with zoom for the falcons", "Comfortable walking shoes", "A light jacket — mornings and evenings can be cool"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
