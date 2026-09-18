@@ -66694,9 +66694,9 @@ export const DESTINATIONS: Destination[] = [
     image: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
     heroImage: "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
     gallery: [
+      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/1/1c/Double_Decker_Root_Bridge%2C_Nongriat.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg",
-      "https://meghtour.web-assets.org/cdn-cgi/image/format=auto,width=1366,quality=90,fit=scale-down,slow-connection-quality=45/explore/destinations/interest/nongriat-banner.jpg",
     ],
     imageCredit: "Additional photos via Wikimedia Commons",
     category: ["Nature", "Trekking"],
