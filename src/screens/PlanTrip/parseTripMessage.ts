@@ -68,6 +68,13 @@ export interface ParsedTripMessage {
    * it at all — the signal for "we're India-focused for now" rather than
    * silently doing nothing. */
   unmatchedPlaceAttempt: boolean;
+  /** True when the message isn't attempting to name a place at all —
+   * small talk or a question about the assistant/app itself ("who are
+   * you", "can I ask u anything"). Lets the caller steer the
+   * conversation back to travel instead of showing the "we're
+   * India-focused" place-not-supported response, which would be a
+   * non-sequitur here. Mutually exclusive with `unmatchedPlaceAttempt`. */
+  offTopic: boolean;
   days: number | null;
   /** PREFERENCES ids opportunistically found by keyword in the message. */
   interests: string[];
@@ -154,29 +161,63 @@ function hasRealPlaceContent(cleaned: string): boolean {
   return cleaned.split(/\s+/).some((w) => w.length >= 3 && !FILLER_WORDS.has(w));
 }
 
+// Common phrasings for a message that isn't attempting to name a place at
+// all — small talk, or a question about the assistant/app itself ("Can I
+// ask u anything", "who are you", "tell me a joke"). Without this, a
+// message like that has no filler-word overlap with FILLER_WORDS (none of
+// "ask"/"anything"/"u" are in that list), so hasRealPlaceContent reads it
+// as a genuine unsupported-place attempt and the chat wrongly replies
+// "we're currently focused on India" — a non-sequitur for a question that
+// was never about a destination. Not exhaustive; covers the common
+// conversational patterns rather than attempting full intent detection.
+const OFF_TOPIC_PATTERNS: RegExp[] = [
+  /\b(can|could|may)\s+i\s+ask\s+(you|u)\b/i,
+  /\bask\s+(you|u)\s+(anything|something|a\s+question)\b/i,
+  /\bwho\s+are\s+(you|u)\b/i,
+  /\bwhat\s+are\s+(you|u)\b/i,
+  /\bare\s+(you|u)\s+(a|an)?\s*(ai|bot|robot|human|real|person|alive)\b/i,
+  /\bwhat('?s|\s+is)\s+your\s+name\b/i,
+  /\bwhat\s+can\s+(you|u)\s+do\b/i,
+  /\bhow\s+(do|does)\s+(you|u)\s+work\b/i,
+  /\btell\s+me\s+a\s+joke\b/i,
+  /\bhow\s+are\s+(you|u)\b/i,
+  /\bhow('?s|\s+is)\s+the\s+weather\b/i,
+  /\bwhat\s+time\s+is\s+it\b/i,
+  /\bhow\s+old\s+are\s+(you|u)\b/i,
+  /\bwho\s+(made|created|built)\s+(you|u)\b/i,
+];
+
+function isOffTopicMessage(raw: string): boolean {
+  return OFF_TOPIC_PATTERNS.some((re) => re.test(raw));
+}
+
 export function parseTripMessage(raw: string): ParsedTripMessage {
   const days = extractDays(raw);
   const interests = extractInterests(raw);
+
+  if (isOffTopicMessage(raw)) {
+    return { destination: null, candidates: [], unmatchedPlaceAttempt: false, offTopic: true, days, interests };
+  }
 
   const cleaned = stripDayClause(stripLeadIn(raw));
   // A bare day-count reply ("5 days", "5") to a follow-up question has
   // nothing left to match as a place once the day clause is stripped —
   // don't treat empty leftover text as a failed place-name attempt.
   if (!cleaned) {
-    return { destination: null, candidates: [], unmatchedPlaceAttempt: false, days, interests };
+    return { destination: null, candidates: [], unmatchedPlaceAttempt: false, offTopic: false, days, interests };
   }
 
   const exact = resolveUnambiguousMatch(cleaned);
   if (exact) {
-    return { destination: exact, candidates: [], unmatchedPlaceAttempt: false, days, interests };
+    return { destination: exact, candidates: [], unmatchedPlaceAttempt: false, offTopic: false, days, interests };
   }
 
   const live = findLiveMatches(cleaned, 4);
   if (live.length === 1) {
-    return { destination: live[0], candidates: [], unmatchedPlaceAttempt: false, days, interests };
+    return { destination: live[0], candidates: [], unmatchedPlaceAttempt: false, offTopic: false, days, interests };
   }
   if (live.length > 1) {
-    return { destination: null, candidates: live, unmatchedPlaceAttempt: false, days, interests };
+    return { destination: null, candidates: live, unmatchedPlaceAttempt: false, offTopic: false, days, interests };
   }
 
   // Nothing matched at all. Only call this a "place attempt" (triggering
@@ -186,7 +227,7 @@ export function parseTripMessage(raw: string): ParsedTripMessage {
   // place named at all) was wrongly read the same as someone naming an
   // unsupported destination.
   const looksLikePlaceAttempt = hasRealPlaceContent(cleaned);
-  return { destination: null, candidates: [], unmatchedPlaceAttempt: looksLikePlaceAttempt, days, interests };
+  return { destination: null, candidates: [], unmatchedPlaceAttempt: looksLikePlaceAttempt, offTopic: false, days, interests };
 }
 
 // Used only for the "did you mean one of these Indian destinations"

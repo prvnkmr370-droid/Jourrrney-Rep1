@@ -408,8 +408,8 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     return changes;
   };
 
-  const handleSend = async () => {
-    const text = input.trim();
+  const handleSend = async (presetText?: string) => {
+    const text = (presetText ?? input).trim();
     if (!text || sending) return;
     setInput("");
     pushUser(text);
@@ -438,6 +438,24 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       collected.current.interests = [...new Set([...collected.current.interests, ...parsed.interests])];
       if (parsed.destination) {
         selectDestination(parsed.destination, parsed.days);
+        return;
+      }
+      // Small talk or a question about Tia/the app itself, not an attempt
+      // to name a place — steer back to travel instead of running it
+      // through the Gemini fallback (which would only add latency to a
+      // message that was never asking about a destination) or showing the
+      // "we're India-focused" place-not-supported response, which would
+      // read as a non-sequitur here.
+      if (parsed.offTopic) {
+        pushAi(
+          "I'm Tia, your travel companion — I can only help with planning trips and exploring destinations in India for now! Try asking me something like:",
+          [
+            { label: "Plan a trip to Goa for 5 days", onPress: () => handleSend("Plan a trip to Goa for 5 days") },
+            { label: "Show me hidden gems in Kerala", onPress: () => handleSend("Show me hidden gems in Kerala") },
+            ...SUGGESTED_DESTINATIONS.slice(0, 2).map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          ],
+        );
+        scrollToEnd();
         return;
       }
       if (parsed.candidates.length > 0) {
@@ -748,7 +766,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           <TextInput
             value={input}
             onChangeText={setInput}
-            onSubmitEditing={handleSend}
+            onSubmitEditing={() => handleSend()}
             onFocus={scrollToEnd}
             multiline
             editable={!sending}
@@ -764,7 +782,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           />
         </View>
         <Pressable
-          onPress={handleSend}
+          onPress={() => handleSend()}
           disabled={!input.trim() || sending}
           style={{
             width: 48, height: 48, borderRadius: 24, alignItems: "center", justifyContent: "center",
