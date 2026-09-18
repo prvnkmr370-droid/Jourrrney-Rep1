@@ -70714,6 +70714,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Aizawl's many local Mizo restaurants"],
     packingTips: ["Comfortable walking shoes for the forested paths", "A camera with zoom for wildlife shots", "Insect repellent for the forested enclosures"],
   },
+  {
+    id: "gurdwara-rakab-ganj-sahib",
+    name: "Gurdwara Rakab Ganj Sahib (GTB Memorial)",
+    state: "Delhi",
+    tagline: "The Site Where Guru Tegh Bahadur's Body Was Secretly Cremated",
+    description: "This white-marble gurdwara marks the spot where, after the ninth Sikh Guru, Guru Tegh Bahadur, was executed on the orders of Emperor Aurangzeb in 1675, a devotee named Lakhi Shah Vanjara secretly cremated his body by burning down his own house around it, at great personal risk, to avoid detection. (The Guru's head, taken to Anandpur Sahib, is separately commemorated at Gurdwara Sis Ganj Sahib in Chandni Chowk.) Located near Parliament House in central Delhi, Rakab Ganj Sahib's soaring domes and quiet inner sanctum make it both an important Sikh pilgrimage site and a peaceful stop in an otherwise busy government district.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gurdwara_Rakabganj_Sahib%2C_Delhi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gurdwara_Rakabganj_Sahib%2C_Delhi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gurdwara_Rakabganj_Sahib%2C_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Devotees_throng_for_worship_at_Gurdwara_Rakab_Ganj%2C_to_celebrate_544th_birthday_of_Guru_Nanak_Devji%2C_in_New_Delhi_on_November_28%2C_2012.jpg/500px-Devotees_throng_for_worship_at_Gurdwara_Rakab_Ganj%2C_to_celebrate_544th_birthday_of_Guru_Nanak_Devji%2C_in_New_Delhi_on_November_28%2C_2012.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Devotees_throng_for_worship_at_Gurdwara_Rakab_Ganj%2C_to_celebrate_541st_birthday_of_Guru_Nanak_Devji%2C_in_New_Delhi_on_November_02%2C_2009.jpg/500px-Devotees_throng_for_worship_at_Gurdwara_Rakab_Ganj%2C_to_celebrate_541st_birthday_of_Guru_Nanak_Devji%2C_in_New_Delhi_on_November_02%2C_2009.jpg",
+    ],
+    imageCredit: "Photos: vm2827 (Flickr), Ministry of Culture (Government Open Data License – India), via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "Year-round; especially significant around Guru Nanak's birthday (Gurpurab) in November",
+    duration: "1 hour",
+    highlights: [{ name: "Marks the secret 1675 cremation site of Guru Tegh Bahadur" }, { name: "Commemorates the devotee Lakhi Shah Vanjara's act of sacrifice" }, { name: "Soaring white-marble domes near Parliament House" }, { name: "An important Sikh pilgrimage site in central Delhi" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Rakab Ganj Sahib by road/metro", fromBangalore: "IGI Airport, ~35 min to Rakab Ganj Sahib by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Parliament House and Rashtrapati Bhavan — easy to combine with central Delhi sights." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Central Secretariat metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Free head coverings and shoe storage are available at the entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rashtrapati Bhavan", distance: "~2 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+      { name: "Bangla Sahib Gurudwara", distance: "~2.5 km", type: "Sikh Shrine", isHidden: false, id: "bangla-sahib-gurudwara" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rakab Ganj Sahib & Central Delhi", morning: "Visit the gurdwara and its quiet inner sanctum.", afternoon: "Walk toward Rashtrapati Bhavan or visit Bangla Sahib.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "Cover your head (scarves provided free at the entrance) and remove shoes before entering." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A well-secured place of worship in a heavily-patrolled government district", "Consistently welcoming, community-oriented atmosphere"],
+      precautions: ["Head covering is required inside — scarves are provided free if you don't have one"],
+      soloTips: ["Very manageable solo — a calm, respectful, well-monitored religious site"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full gurdwara complex"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 6000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["A scarf or head covering (also provided free at the entrance)", "Socks, since shoes are removed at the entrance", "Modest clothing appropriate for a place of worship"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
