@@ -69265,6 +69265,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Kebabs and Mughlai food near Nizamuddin"],
     packingTips: ["Comfortable walking shoes — the complex is large", "Sun protection and water", "A camera for the architecture and gardens"],
   },
+  {
+    id: "india-gate",
+    name: "India Gate",
+    state: "Delhi",
+    tagline: "Delhi's War Memorial on the Ceremonial Avenue",
+    description: "Designed by British architect Sir Edwin Lutyens and completed in 1931, this 42-metre sandstone and granite arch stands at the eastern end of Kartavya Path (formerly Rajpath), Delhi's grand ceremonial avenue. Originally raised as the All India War Memorial, its walls carry the names of over 13,000 Indian Army soldiers who died in World War I and the Third Anglo-Afghan War. The Amar Jawan Jyoti flame, honouring India's unknown soldiers, burns beneath the archway, and the surrounding lawns are one of Delhi's most popular evening gathering spots.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ed/India_Gate%2C_detail%2C_New_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/86/India_Gate_1_%28New_Delhi%29.jpg",
+    ],
+    imageCredit: "Photos: A.Savin, Yann, Subeesh Balan, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather, best for the lawns in the evening)",
+    duration: "1-2 hours",
+    highlights: [{ name: "A 42-metre war memorial designed by Sir Edwin Lutyens" }, { name: "Names of over 13,000 fallen Indian Army soldiers carved into the arch" }, { name: "The Amar Jawan Jyoti eternal flame" }, { name: "Central Delhi's most popular lawns for an evening out" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to India Gate by road/metro", fromBangalore: "IGI Airport, ~40 min to India Gate by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Central Delhi location — easy to combine with Rashtrapati Bhavan and the ceremonial avenue." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Central Secretariat metro station, then a short walk or auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The lawns are a long walk from end to end — many visitors drive or auto up to the arch itself." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place/Central Delhi", "Hotels across every category citywide"], description: "Connaught Place puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is the closest station, with a short walk or auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rashtrapati Bhavan", distance: "~2.5 km", type: "Presidential Residence", isHidden: false },
+      { name: "National War Memorial", distance: "~1 km", type: "War Memorial", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "India Gate & Kartavya Path", morning: "Walk the ceremonial avenue toward Rashtrapati Bhavan.", afternoon: "Visit the nearby National War Memorial.", evening: "Return to India Gate lawns for the evening — the arch is lit up after dark and the lawns fill with visitors and food stalls.", stay: "Delhi", meals: "Street food carts and ice-cream stalls on the lawns", tips: "The lawns are best experienced in the evening once the heat has eased and the arch is illuminated." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, heavily-patrolled central Delhi landmark with constant footfall", "Well-lit at night with a visible police presence"],
+      precautions: ["The lawns are very large and open — stay aware in less-lit stretches after dark", "Weekend crowds can be dense, especially in the evenings"],
+      soloTips: ["Very manageable solo — one of Delhi's busiest, most-visited public spaces at almost any hour"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full lawns and arch area"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 32000,
+    mustEat: ["Street food and ice-cream stalls on the India Gate lawns"],
+    packingTips: ["Comfortable walking shoes — the lawns are expansive", "Sun protection and water for daytime visits", "A light jacket for cool evening breezes"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
