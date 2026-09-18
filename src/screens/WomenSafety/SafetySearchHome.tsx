@@ -1,11 +1,12 @@
 /** Source of truth: Figma "3.1 Safety Search Home". */
-import { useMemo } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
+import { useMemo, useState } from "react";
+import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Shield, ChevronRight } from "lucide-react-native";
+import { Shield, ChevronRight, Search, X } from "lucide-react-native";
 import { DESTINATIONS, getSafetyColor, type Destination } from "@/data/destinations";
+import { findLiveMatches } from "@/data/matchDestination";
 import { withOpacity } from "@/components/withOpacity";
 import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 
@@ -21,7 +22,32 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
   const c = useThemeColors();
   const isDark = useResolvedScheme() === "dark";
 
-  const rated = useMemo(() => [...DESTINATIONS].sort((a, b) => b.womenSafety.score - a.womenSafety.score), []);
+  const [query, setQuery] = useState("");
+
+  // Rendering all 1150+ destinations at once (in a plain ScrollView, with
+  // no virtualization) was the actual cause of the slow load — not the
+  // per-card content. Default view now shows just one representative per
+  // state/UT (the highest-reviewed non-hidden destination in that state),
+  // which keeps the list short while still surfacing every region. Typing
+  // a query searches the full dataset via the same fuzzy matcher used by
+  // the main Search screen, so any of the 1150+ destinations is still
+  // reachable — just not all mounted up front.
+  const defaultRated = useMemo(() => {
+    const bestPerState = new Map<string, Destination>();
+    for (const d of DESTINATIONS) {
+      if (d.hidden) continue;
+      const current = bestPerState.get(d.state);
+      if (!current || d.reviews > current.reviews) bestPerState.set(d.state, d);
+    }
+    return [...bestPerState.values()].sort((a, b) => b.womenSafety.score - a.womenSafety.score);
+  }, []);
+
+  const searchRated = useMemo(() => {
+    if (!query.trim()) return [];
+    return findLiveMatches(query, 20).sort((a, b) => b.womenSafety.score - a.womenSafety.score);
+  }, [query]);
+
+  const rated = query.trim() ? searchRated : defaultRated;
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
@@ -67,6 +93,37 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
 
         <View>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, marginBottom: 12 }}>Safety Ratings by Destination</Text>
+
+          <View
+            style={{
+              flexDirection: "row", alignItems: "center", gap: 10, height: 44, borderRadius: 14, paddingHorizontal: 14, marginBottom: 14,
+              backgroundColor: c.surface, borderWidth: 1.5, borderColor: query ? c.primary : c.border,
+            }}
+          >
+            <Search color={c.textSecondary} size={16} />
+            <TextInput
+              value={query}
+              onChangeText={setQuery}
+              placeholder="Search any destination..."
+              placeholderTextColor={c.textMuted}
+              style={{
+                flex: 1, fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textPrimary,
+                paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+              }}
+            />
+            {query.length > 0 && (
+              <Pressable onPress={() => setQuery("")} hitSlop={8}>
+                <X color={c.textSecondary} size={16} />
+              </Pressable>
+            )}
+          </View>
+
+          {query.trim().length > 0 && rated.length === 0 && (
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, marginBottom: 10 }}>
+              No destinations match "{query.trim()}".
+            </Text>
+          )}
+
           <View style={{ gap: 10 }}>
             {rated.map((d) => {
               const scoreColor = getSafetyColor(d.womenSafety.score, isDark);
