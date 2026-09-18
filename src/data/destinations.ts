@@ -68794,6 +68794,65 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Angami Naga cuisine at village homestays", "Smoked meats and bamboo shoot dishes"],
     packingTips: ["Comfortable walking shoes for the terraced fields and village paths", "A camera for the paddy-field views", "Warm layers for cooler evenings"],
   },
+  {
+    id: "naga-heritage-village-kisama",
+    name: "Naga Heritage Village (Kisama)",
+    state: "Nagaland",
+    aliases: ["Kisama Heritage Village", "Kisama"],
+    tagline: "Home to All 17 Naga Tribes and the Hornbill Festival",
+    description: "About 10 km from Kohima, the Naga Heritage Village takes its name from the two villages on whose land it stands — Kigwema (KI) and Phesama (SA) — plus 'Ma,' meaning village. Built and run by the Nagaland government, the complex brings together traditional Morung houses representing all of Nagaland's officially recognised tribes, each built in its own distinct architectural style, alongside a WWII Museum, Bamboo Heritage Hall, and stadium. Every December, it becomes the stage for the Hornbill Festival — the 'Festival of Festivals' — where tribes from across the state gather to showcase dance, music, food, and craft in one place.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Naga_Heritage_Village_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Naga_Heritage_Village_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e8/Naga_Heritage_Village_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/An_Angami_Naga_hut.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/55/The_Door%2C_Kisama_Heritage_Village.jpg",
+    ],
+    imageCredit: "Photos: Ganesh Mohan T, JyotiPN, via Wikimedia Commons (CC BY-SA)",
+    category: ["Culture", "Heritage"],
+    bestSeason: "December 1–10 for the Hornbill Festival; October – April otherwise for pleasant weather",
+    duration: "Half day (much longer during the Hornbill Festival)",
+    highlights: [{ name: "Traditional Morung houses of every officially recognised Naga tribe" }, { name: "The annual Hornbill Festival, the 'Festival of Festivals'" }, { name: "A WWII Museum and Bamboo Heritage Hall" }, { name: "Live music, craft, and food during festival season" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Book Hornbill Festival accommodation in Kohima well in advance — it's the state's busiest tourism week." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~10 km from Kohima", costRange: "Local taxi from Kohima", tips: "Easily combined with Kohima city sightseeing on the same day outside festival season." },
+    ],
+    accommodation: [
+      { type: "Kohima Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["City hotels and homestays in Kohima"], description: "Kohima is the base — expect premium pricing and limited availability during the Hornbill Festival." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Kohima", cost: "Fare varies by arrangement", notes: "The standard way to reach Kisama", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Khonoma Village", distance: "A drive via Kohima", type: "Heritage Village", isHidden: true, id: "khonoma-village" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Naga Heritage Village", morning: "Drive from Kohima to Kisama, explore the tribal Morung houses.", afternoon: "Visit the WWII Museum and Bamboo Heritage Hall.", evening: "Return to Kohima (or enjoy festival events if visiting during Hornbill).", stay: "Kohima", meals: "Food courts on-site during the festival, or Kohima restaurants otherwise", tips: "Outside festival season the complex is much quieter — still worth visiting for the architecture." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, state-managed tourism site with strong infrastructure and security, especially during the festival", "Heavy footfall during Hornbill Festival means constant visitor presence"],
+      precautions: ["Hornbill Festival crowds are large — keep valuables secure and agree on meeting points with your group", "Book accommodation and transport well ahead of the festival dates"],
+      soloTips: ["Very manageable solo, and the festival itself is a popular solo-travel draw given how well-organised and busy it is"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The full heritage complex"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 3400,
+    mustEat: ["Festival food courts during Hornbill", "Naga cuisine in Kohima"],
+    packingTips: ["A camera for the tribal architecture and festival events", "Comfortable walking shoes — the complex is large", "Warm layers, especially for December evenings during the festival"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
