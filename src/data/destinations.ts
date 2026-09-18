@@ -69326,6 +69326,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Street food and ice-cream stalls on the India Gate lawns"],
     packingTips: ["Comfortable walking shoes — the lawns are expansive", "Sun protection and water for daytime visits", "A light jacket for cool evening breezes"],
   },
+  {
+    id: "lotus-temple",
+    name: "Lotus Temple",
+    state: "Delhi",
+    tagline: "The Bahá'í House of Worship Shaped Like an Opening Lotus",
+    description: "Completed in 1986 and designed by Iranian-Canadian architect Fariborz Sahba, this Bahá'í House of Worship in Kalkaji is built from 27 free-standing marble-clad petals arranged in clusters of three, forming a shape like a half-opened lotus flower rising from nine surrounding pools. True to Bahá'í principle, the temple has no idols or images and welcomes people of every faith to sit in silent prayer or meditation inside its vast central hall. It has won numerous architectural awards and is among the most-visited buildings in the world.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lotus_temple_daytime.jpg/960px-Lotus_temple_daytime.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lotus_temple_daytime.jpg/960px-Lotus_temple_daytime.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lotus_temple_daytime.jpg/960px-Lotus_temple_daytime.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lotus_temple_in_Delhi%2C_India.jpg/960px-Lotus_temple_in_Delhi%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ceiling_of_the_Lotus_Temple%2C_New_Delhi.jpg/960px-Ceiling_of_the_Lotus_Temple%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Muhammad Mahdi Karim, Arian Zwegers, Haoreima, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March (pleasant weather for the queue and gardens)",
+    duration: "1.5-2 hours",
+    highlights: [{ name: "27 marble-clad petals shaped like a half-opened lotus" }, { name: "A Bahá'í House of Worship open to all faiths, with no idols or sermons" }, { name: "Nine surrounding reflecting pools" }, { name: "Among the most-visited buildings in the world" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to the Lotus Temple by road/metro", fromBangalore: "IGI Airport, ~45 min to the Lotus Temple by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Located in Kalkaji, South Delhi — combine with Kalkaji Mandir nearby." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Kalkaji Mandir metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The metro station sits right by the temple entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Nehru Place/South Delhi", "Hotels across every category citywide"], description: "South Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Kalkaji Mandir (Magenta/Violet Line) is right by the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kalkaji Mandir", distance: "~1 km", type: "Hindu Temple", isHidden: false },
+      { name: "ISKCON Temple Delhi", distance: "~3 km", type: "Temple", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lotus Temple & Kalkaji", morning: "Queue early to beat the crowds and sit inside the silent central hall.", afternoon: "Walk the surrounding gardens and pools, then visit nearby Kalkaji Mandir.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "South Delhi's Nehru Place food courts nearby", tips: "Entry is free but queues build up fast on weekends — arrive close to opening time." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, well-secured place of worship with entry screening", "Consistently heavy daytime visitor footfall and on-site security staff"],
+      precautions: ["Silence is enforced inside the main hall — phones and photography aren't allowed there", "Queues can be long and sun-exposed on weekends"],
+      soloTips: ["Very manageable solo — a calm, well-monitored spiritual site with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full temple grounds and gardens"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 28000,
+    mustEat: ["Nehru Place's food courts nearby"],
+    packingTips: ["Comfortable walking shoes — expect a queue and open grounds", "Sun protection and water", "Modest clothing is appreciated as a place of worship"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
