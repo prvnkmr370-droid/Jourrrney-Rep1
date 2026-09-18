@@ -1,0 +1,65 @@
+{
+  "source": "https://tourism.nagaland.gov.in",
+  "scrapedAt": "2026-09-18",
+  "note": "The URL the user first provided (tourismnagaland.com) turned out to be an unrelated content-farm/blog site (articles about gambling, weddings, waterproofing bags) with no genuine Nagaland tourism content — flagged to the user, who confirmed the correct official site is tourism.nagaland.gov.in (Directorate of Tourism, Government of Nagaland). This site has no single structured 'Places of Interest' table like Mizoram's — instead, its 'Destinations' blog category (tourism.nagaland.gov.in/category/destinations/) and a few adjacent 'Uncategorized' posts linked via prev/next post chains are the genuine destination inventory. Content on this site is thin/short for several entries; supplemented with independently verified facts (e.g. Wikipedia, CWGC for the war cemetery) where the official site itself has minimal detail, with sources noted per card.",
+  "destinations": [
+    {
+      "name": "Dzükou Valley",
+      "url": "https://tourism.nagaland.gov.in/where-the-clouds-rest-discovering-the-magic-of-dzukou-valley/",
+      "district": "Kohima / Manipur border",
+      "facts": "Sits at ~2,452m (8,045ft), on the Nagaland-Manipur border. Famous for rolling meadows and seasonal wildflowers, most notably the rare Dzükou lily found only here. Terrain mixes bamboo thickets, clear streams, and natural caves."
+    },
+    {
+      "name": "Khonoma Village",
+      "url": "https://tourism.nagaland.gov.in/khonoma-village/",
+      "district": "Kohima",
+      "facts": "~20 km from Kohima. Known as a 'warrior village' for fierce resistance during British colonial rule. Home to the Khonoma Nature Conservation and Tragopan Sanctuary (KNCTS), established 1998 to protect the endangered Blyth's Tragopan and other species. Recognised as the first Green Village in Asia."
+    },
+    {
+      "name": "Tuophema Tourist Village",
+      "url": "https://tourism.nagaland.gov.in/tuophema-tourist-village/",
+      "district": "Kohima",
+      "facts": "~40 km from Kohima. A model rural-homestay village with 12 uniquely crafted cottages representing the 12 khels (clans/wards) of the village, established 2001 through joint community effort."
+    },
+    {
+      "name": "Khezhakeno Village and Chida Resort",
+      "url": "https://tourism.nagaland.gov.in/khezhakeno-village-and-chida-resort/",
+      "district": "Phek",
+      "facts": "A historical Naga village, said to be the first settlement site of Koza, the ancestral forefather from whom various Naga tribes trace their migration. Home to the Tso-Tawo (Spirit Stone) legend. Chida Resort is a natural lake on the Kapamedzü Range springs, in a scenic valley, popular as a picnic spot."
+    },
+    {
+      "name": "Doyang Hydro Project",
+      "url": "https://tourism.nagaland.gov.in/doyang-hydro-project/",
+      "district": "Wokha",
+      "facts": "~38 km from Wokha town. The Doyang Reservoir hosts one of the world's largest congregations of Amur Falcons (up to ~1 million), migrating up to 22,000 km/year from South Eastern Siberia and Northern China — earning Nagaland the title 'Amur Falcon Capital of the World.' Best viewing October-November."
+    },
+    {
+      "name": "Naga Heritage Village (Kisama)",
+      "url": "https://tourism.nagaland.gov.in/naga-heritage-village/",
+      "district": "Kohima",
+      "facts": "~10 km from Kohima. Name derived from Kigwema (KI) + Phesama (SA) + Ma (village). A state-government heritage complex of 16 traditional Morung (tribal youth dormitory) houses representing Nagaland's 16 officially recognised tribes. Hosts the annual Hornbill Festival (Dec 1-10). Also houses a WWII Museum, Bamboo Heritage Hall, Bamboo Pavilion, and a stadium for live events."
+    },
+    {
+      "name": "Dzulekie",
+      "url": "https://tourism.nagaland.gov.in/dzulekie-relax-in-the-lap-of-nature/",
+      "district": "Kohima",
+      "facts": "~35 km from Kohima, no public transport (private vehicle hire only). A small Angami village with stone walkways, forests, and rice fields. Has a trout breeding centre (rare snow trout). Offers paddy-field walks, agro-tourism, angling, and designated picnic spots by the river."
+    },
+    {
+      "name": "Zhavame (Vegetable Village)",
+      "url": "https://tourism.nagaland.gov.in/zhavame-vegetable-village/",
+      "district": "Phek",
+      "facts": "Declared 'Vegetable Village' by the Dept. of Horticulture in 2010, known for organic cabbage and potato production. Lies at the foothill of Kapamodzü peak (2,620m), one of Nagaland's highest mountains, with views of Saramati Peak, Japfü peak, and Kohima. ~1-hour trek to the peak from the village."
+    },
+    {
+      "name": "World War II Cemetery (Kohima War Cemetery)",
+      "url": "https://tourism.nagaland.gov.in/world-war-ii-cemetery/",
+      "district": "Kohima",
+      "facts": "Official site content is a single line ('Historical World War II Cemetery at Kohima'). This is the well-documented Commonwealth War Graves Commission Kohima War Cemetery, site of the pivotal 1944 Battle of Kohima — needs independent verification (CWGC) for any additional factual detail before use, per the accuracy protocol."
+    }
+  ],
+  "notBuilt": {
+    "kiphireDistrict": "Blog post 'Kiphire District: Where Adventure Begins' has no body text at all on the official site — no usable content to build a genuine card from yet.",
+    "offRoadingPost": "'A new off-roading experience in India's wild, wild east' is an experiential/promotional blog post, not a single named destination — not a standalone card candidate."
+  }
+}

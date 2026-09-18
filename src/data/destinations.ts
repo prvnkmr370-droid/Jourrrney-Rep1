@@ -68679,6 +68679,64 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Carry your own supplies — very limited food facilities inside the reserve"],
     packingTips: ["Binoculars and a camera with zoom for birdwatching", "Sturdy trekking shoes", "Insect repellent", "A torch and basic first-aid kit"],
   },
+  {
+    id: "dzukou-valley",
+    name: "Dzükou Valley",
+    state: "Nagaland",
+    aliases: ["Dzüko Valley"],
+    tagline: "The 'Valley of Flowers of the Northeast,' Straddling the Nagaland-Manipur Border",
+    description: "Sitting at roughly 2,452 metres on the Nagaland-Manipur border near Viswema, Dzükou Valley is a trekker's paradise of rolling grass-covered hills, seasonal wildflowers, bamboo thickets, clear streams, and natural caves. Its most famous resident is the Dzükou lily, a rare flower found nowhere else in the world, which blooms across the valley in season. The near-total silence and untouched scale of the landscape make it one of Northeast India's most rewarding — and physically demanding — trekking destinations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/38/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland_48.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/38/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland_48.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/38/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland_48.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/de/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland_22.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland_10.jpg",
+    ],
+    imageCredit: "Photos: পাপৰি বৰা, via Wikimedia Commons (CC BY-SA)",
+    category: ["Nature", "Adventure"],
+    bestSeason: "June – September (peak bloom, including the Dzükou lily); October – April for clearer trekking weather",
+    duration: "2 days (an overnight trek is standard)",
+    highlights: [{ name: "Rolling grass-covered hills at ~2,452m" }, { name: "The rare Dzükou lily, found nowhere else on Earth" }, { name: "Bamboo thickets, clear streams, and natural caves" }, { name: "A genuinely remote, near-silent wilderness trek" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road to Kohima and on to the Viswema trailhead", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Kohima is the practical base for arranging the trek." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Trailhead near Viswema village, then a multi-hour trek to the valley", costRange: "Local taxi to the trailhead; the rest is on foot", tips: "The climb up is steep and strenuous — start early and pace yourself." },
+    ],
+    accommodation: [
+      { type: "Valley Rest House / Kohima Hotels", priceRange: "₹300–₹4,000/night", examples: ["A basic community-run rest house inside the valley", "City hotels in Kohima for before/after the trek"], description: "Most trekkers overnight in the valley's simple rest house, staying two nights in Kohima on either side." },
+    ],
+    localTransport: [
+      { mode: "On Foot (Trek)", cost: "N/A", notes: "The valley itself has no vehicle access — every stretch is walked", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 400, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1500, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4000, food: 1200, transport: 1300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Trek to the Valley", morning: "Travel from Kohima to the Viswema trailhead and begin the steep ascent.", afternoon: "Continue trekking into the valley, reaching the rest house by evening.", evening: "Overnight at the valley's rest house.", stay: "Dzükou Valley Rest House", meals: "Carry supplies — very limited food available in the valley", tips: "The initial climb is the hardest part — pace yourself and carry enough water." },
+      { day: 2, title: "Explore & Descend", morning: "Explore the valley's meadows, streams, and (in season) the Dzükou lily blooms.", afternoon: "Trek back down to Viswema.", evening: "Return to Kohima.", stay: "Kohima", meals: "Local Naga cuisine back in Kohima", tips: "Weather can change quickly at this altitude — carry a rain layer regardless of season." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known, frequently trekked route with a steady flow of visitors in season", "A community-run rest house provides a defined overnight base inside the valley"],
+      precautions: ["A genuinely strenuous trek — assess your fitness honestly before attempting it", "Weather at this altitude can turn quickly — carry rain gear and warm layers year-round", "No mobile network or facilities inside the valley — inform others of your plans and carry supplies"],
+      soloTips: ["Best attempted with a group or local guide, given the trek's difficulty and the valley's remoteness — arrange this through Kohima"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The main trekking trail and rest house area"],
+      avoidAreas: ["Off-trail exploration without a guide, especially in poor weather"],
+    },
+    rating: 4.7,
+    reviews: 2100,
+    mustEat: ["Carry your own supplies for the trek", "Naga cuisine (smoked pork, axone, bamboo shoot) back in Kohima"],
+    packingTips: ["Sturdy trekking shoes — the climb is steep and can be slippery", "A rain layer and warm clothing regardless of season", "Enough food and water for the full trek", "A sleeping bag if staying at the rest house"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
