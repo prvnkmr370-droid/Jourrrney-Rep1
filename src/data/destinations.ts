@@ -69479,6 +69479,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Agrasen Ki Baoli", distance: "~1 km", type: "Stepwell", isHidden: true, id: "agrasen-ki-baoli" },
+      { name: "Bangla Sahib Gurudwara", distance: "~1.5 km", type: "Sikh Shrine", isHidden: false, id: "bangla-sahib-gurudwara" },
       { name: "Connaught Place", distance: "~1 km", type: "Shopping & Dining", isHidden: false },
       { name: "India Gate", distance: "~3 km", type: "War Memorial", isHidden: false, id: "india-gate" },
     ],
@@ -69872,6 +69873,67 @@ export const DESTINATIONS: Destination[] = [
     reviews: 22000,
     mustEat: ["Central Delhi's restaurants and cafes nearby"],
     packingTips: ["A valid photo ID if booking Amrit Udyan or an interior tour", "Comfortable walking shoes for the ceremonial avenue", "A camera for the forecourt and dome"],
+  },
+  {
+    id: "bangla-sahib-gurudwara",
+    name: "Bangla Sahib Gurudwara",
+    state: "Delhi",
+    tagline: "Delhi's Largest Sikh Shrine and Its Golden-Domed Sarovar",
+    description: "Originally a bungalow belonging to Raja Jai Singh where the eighth Sikh Guru, Guru Har Krishan, stayed and tended to the sick during a smallpox and cholera epidemic in 1664, this site was converted into a gurudwara and remains Delhi's largest and most visited Sikh shrine. Its white marble facade, golden dome, and the large Sarovar (holy pool) fed by the well the Guru is said to have used are its most striking features. A round-the-clock community kitchen (langar) here feeds tens of thousands of visitors of every faith daily, entirely run by volunteer sewa (selfless service).",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg/960px-Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg/960px-Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg/960px-Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img4.jpg/500px-Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Night_view_of_Gurdwara_Bangla_Sahib_and_the_Sarovar.jpg/960px-Night_view_of_Gurdwara_Bangla_Sahib_and_the_Sarovar.jpg",
+    ],
+    imageCredit: "Photos: Ken Wieland, A.Savin, via Wikimedia Commons",
+    category: ["Spiritual", "Culture"],
+    bestSeason: "Year-round (evenings are especially atmospheric when the Sarovar and dome are lit)",
+    duration: "1-1.5 hours",
+    highlights: [{ name: "Delhi's largest and most-visited Sikh shrine" }, { name: "The Sarovar, a holy pool fed by Guru Har Krishan's well" }, { name: "A 24-hour community kitchen serving free meals to all visitors" }, { name: "A golden dome and gleaming white marble facade" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Bangla Sahib by road/metro", fromBangalore: "IGI Airport, ~35 min to Bangla Sahib by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Connaught Place — easy to combine with central Delhi shopping and dining." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Patel Chowk or Shivaji Stadium metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Free head coverings and shoe storage are available at the entrance — no need to bring your own." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place", "Hotels across every category citywide"], description: "Connaught Place puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Patel Chowk (Yellow Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jantar Mantar", distance: "~1.5 km", type: "Observatory", isHidden: false, id: "jantar-mantar-delhi" },
+      { name: "Connaught Place", distance: "~1.5 km", type: "Shopping & Dining", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bangla Sahib & Connaught Place", morning: "Visit the main hall and walk around the Sarovar.", afternoon: "Volunteer or partake in the community langar meal, then walk to Connaught Place.", evening: "Return for the illuminated evening view of the dome and Sarovar.", stay: "Delhi", meals: "The gurudwara's own free community kitchen (langar), open to all", tips: "Cover your head (scarves provided free at the entrance) and remove shoes before entering — both are strictly observed." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, heavily-visited place of worship with a welcoming, community-oriented atmosphere", "Open and well-lit day and night, with constant volunteer and visitor presence"],
+      precautions: ["Head covering is required inside — scarves are provided free if you don't have one", "Marble surfaces around the Sarovar can be slippery, especially near the water's edge"],
+      soloTips: ["Very manageable solo — one of Delhi's most welcoming and continuously visited religious sites"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full gurudwara complex, including the Sarovar walkway"],
+      avoidAreas: [],
+    },
+    rating: 4.8,
+    reviews: 48000,
+    mustEat: ["The gurudwara's free community langar meal, open to all visitors"],
+    packingTips: ["A scarf or head covering (also provided free at the entrance)", "Socks, since shoes are removed at the entrance", "Modest clothing appropriate for a place of worship"],
   },
 ];
 
