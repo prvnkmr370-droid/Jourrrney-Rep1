@@ -69204,6 +69204,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["South Delhi restaurants near Mehrauli/Saket"],
     packingTips: ["Comfortable walking shoes for uneven stonework", "Sun protection and water", "A camera for the architecture"],
   },
+  {
+    id: "humayuns-tomb",
+    name: "Humayun's Tomb",
+    state: "Delhi",
+    tagline: "The Garden-Tomb That Set the Template for the Taj Mahal",
+    description: "Commissioned around 1569-70 by Empress Bega Begum for her late husband, Emperor Humayun, and designed by Persian architects Mirak Mirza Ghiyas and his son Sayyid Muhammad, this red sandstone and white marble mausoleum in Nizamuddin East was the first garden-tomb on the Indian subcontinent — a design later echoed and elevated in the Taj Mahal. Declared a UNESCO World Heritage Site in 1993, the tomb's soaring central dome, geometric charbagh gardens, and intricately carved marble jaali screens make it one of Delhi's most architecturally significant Mughal monuments.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/Intricate_window_at_Humayun%27s_Tomb%2C_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Humayun%27s_Tomb_-_Delhi_-_0013.jpg",
+    ],
+    imageCredit: "Photos: Muhammad Mahdi Karim, Dey.sandip, Rupeshsarkar, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (pleasant weather)",
+    duration: "2 hours",
+    highlights: [{ name: "The first garden-tomb on the Indian subcontinent" }, { name: "Intricately carved marble jaali screens" }, { name: "A design that directly influenced the Taj Mahal" }, { name: "A UNESCO World Heritage Site since 1993" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Humayun's Tomb by road/metro", fromBangalore: "IGI Airport, ~40 min to Humayun's Tomb by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to central Delhi — easy to combine with other sights." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "JLN Stadium or Jangpura metro stations, then a short auto ride", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "A short auto ride connects the nearest metro stations to the tomb entrance." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Nizamuddin/South Delhi", "Hotels across every category citywide"], description: "Nizamuddin puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "JLN Stadium (Violet Line) is the closest station, with a short auto ride onward", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Purana Qila (Old Fort)", distance: "~3 km", type: "Fort", isHidden: true },
+      { name: "Hazrat Nizamuddin Dargah", distance: "~1 km", type: "Sufi Shrine", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Humayun's Tomb & Nizamuddin", morning: "Explore the tomb complex, its charbagh gardens, and surrounding smaller tombs.", afternoon: "Visit the nearby Hazrat Nizamuddin Dargah.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Nizamuddin's well-known kebab and Mughlai food stalls", tips: "The complex is large — budget real time to see the smaller tombs scattered around the main monument." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-secured UNESCO World Heritage Site with entry screening", "Consistently heavy daytime tourist footfall"],
+      precautions: ["The gardens and pathways are large and mostly outdoors — carry water and sun protection", "Marble and stone surfaces can be slippery when wet"],
+      soloTips: ["Very manageable solo — a popular, well-monitored monument with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full complex grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 25000,
+    mustEat: ["Kebabs and Mughlai food near Nizamuddin"],
+    packingTips: ["Comfortable walking shoes — the complex is large", "Sun protection and water", "A camera for the architecture and gardens"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
