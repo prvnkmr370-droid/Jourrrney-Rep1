@@ -70118,6 +70118,66 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Hauz Khas Village's wide range of cafes and rooftop restaurants"],
     packingTips: ["Comfortable walking shoes for the ruins and village lanes", "A camera for the lake and Tughlaq-era architecture", "Light layers — evenings by the lake can be breezy"],
   },
+  {
+    id: "national-museum-delhi",
+    name: "National Museum",
+    state: "Delhi",
+    tagline: "India's Flagship Museum of Art, Archaeology, and History",
+    description: "Opened in 1949 on Janpath, this is India's largest museum, holding over 200,000 objects spanning more than 5,000 years — Harappan artefacts, Mauryan and Gupta-era sculpture, Mughal miniature paintings, musical instruments, arms and armour, and a substantial collection of Central Asian antiquities brought back from the Sir Aurel Stein expeditions. Its long sculpture-lined corridors and themed galleries make it one of the most comprehensive single places in India to trace the subcontinent's artistic and historical development, from prehistory through to the 20th century.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/960px-India_national_museum_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/960px-India_national_museum_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/960px-India_national_museum_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Entrance_gallery_national_museum_india.JPG/960px-Entrance_gallery_national_museum_india.JPG",
+    ],
+    imageCredit: "Photos: Miya.m, Nomu420, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "Year-round (indoor galleries — a good option on hot afternoons)",
+    duration: "2-3 hours",
+    highlights: [{ name: "Over 200,000 objects spanning more than 5,000 years" }, { name: "Harappan, Mauryan, and Gupta-era sculpture and artefacts" }, { name: "Mughal miniature paintings and manuscripts" }, { name: "Central Asian antiquities from the Sir Aurel Stein expeditions" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to the National Museum by road/metro", fromBangalore: "IGI Airport, ~35 min to the National Museum by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "On Janpath, close to India Gate and Rashtrapati Bhavan." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Central Secretariat or Udyog Bhawan metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Photography is allowed in most galleries but check current rules at the entrance, as some special exhibits restrict it." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat or Udyog Bhawan (Yellow/Violet Line) is a short walk away", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "India Gate", distance: "~2 km", type: "War Memorial", isHidden: false, id: "india-gate" },
+      { name: "Rashtrapati Bhavan", distance: "~1.5 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "National Museum & Central Delhi", morning: "Explore the Harappan, sculpture, and miniature painting galleries.", afternoon: "Walk to nearby India Gate and Kartavya Path.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "The museum is large — pick a few galleries to focus on rather than trying to see everything in one visit." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, well-secured central Delhi institution with entry screening", "Indoor, climate-controlled galleries with steady staff presence"],
+      precautions: ["Bags and large items may need to be checked at the entrance", "Photography rules vary by gallery — check signage"],
+      soloTips: ["Very manageable solo — a calm, well-monitored museum setting"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full museum building and galleries"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 13000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["Comfortable walking shoes — the galleries cover a lot of ground", "A light layer, since the interior is air-conditioned", "A notebook or phone for jotting down favourite pieces"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
