@@ -69387,6 +69387,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Nehru Place's food courts nearby"],
     packingTips: ["Comfortable walking shoes — expect a queue and open grounds", "Sun protection and water", "Modest clothing is appreciated as a place of worship"],
   },
+  {
+    id: "akshardham-temple",
+    name: "Akshardham Temple",
+    state: "Delhi",
+    tagline: "A Monument of Intricately Carved Stone Devotion",
+    description: "Opened in 2005 on the banks of the Yamuna, Swaminarayan Akshardham is a sprawling temple complex built almost entirely from carved pink sandstone and white marble — no steel is used anywhere in its main structure. The central monument stands 43 metres tall, ringed by 234 ornately carved pillars and 20,000 statues and figures depicting Indian saints, devotees, and mythology. The complex also hosts gardens, an exhibition on Indian culture, and an evening musical fountain show, and was recognised by Guinness World Records as the world's largest comprehensive Hindu temple.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/76/Akshardham_p1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Akshardham_fountain.jpg",
+    ],
+    imageCredit: "Photos: Swaminarayan Sanstha (akshardham.com, used with permission), Akshatha Inamdar, Juthani1, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March (pleasant weather; evenings are best for the musical fountain show)",
+    duration: "3-4 hours",
+    highlights: [{ name: "234 intricately carved sandstone pillars and 20,000 statues" }, { name: "No steel used anywhere in the main monument" }, { name: "Guinness World Record for the world's largest comprehensive Hindu temple" }, { name: "An evening musical fountain show over the Yamuna" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Akshardham by road/metro", fromBangalore: "IGI Airport, ~45 min to Akshardham by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Located on the Yamuna's east bank — allow half a day for the full complex and evening show." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Akshardham metro station sits right at the entrance", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "The Blue Line metro station is a direct, easy way in — no need for a road transfer." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near East Delhi/Noida border", "Hotels across every category citywide"], description: "East Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Akshardham (Blue Line) station is right at the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across East Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "ISKCON Temple Delhi", distance: "~5 km", type: "Temple", isHidden: true },
+      { name: "Signature Bridge", distance: "~8 km", type: "Landmark", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Akshardham Complex", morning: "Explore the main monument and its carved pillars and statues.", afternoon: "Walk the gardens and visit the cultural exhibitions.", evening: "Catch the musical fountain show (Sahaj Anand Water Show) after dark.", stay: "Delhi", meals: "Premises have a food court; outside food isn't allowed inside", tips: "Phones, cameras, bags, and electronics must be left at a locker outside — security is strict, so plan extra time at entry." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, heavily-secured place of worship with airport-style entry screening", "Consistently heavy daytime and evening visitor footfall"],
+      precautions: ["No cameras, phones, or bags are allowed inside — factor in locker/security queue time", "Complex is very large — comfortable footwear is essential"],
+      soloTips: ["Very manageable solo — one of Delhi's most secure and well-monitored major attractions"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full temple complex grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.7,
+    reviews: 41000,
+    mustEat: ["The on-site food court (outside food isn't permitted inside)"],
+    packingTips: ["Comfortable walking shoes — the complex is vast", "Leave phones, cameras, and bags behind or expect a locker queue", "Modest clothing is appreciated as a place of worship"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
