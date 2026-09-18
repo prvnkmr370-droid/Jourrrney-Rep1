@@ -69812,6 +69812,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["South Delhi's cafes and restaurants nearby"],
     packingTips: ["Comfortable walking or jogging shoes", "Sun protection and water", "A camera for the tombs and garden views"],
   },
+  {
+    id: "rashtrapati-bhavan",
+    name: "Rashtrapati Bhavan",
+    state: "Delhi",
+    tagline: "The President of India's 340-Room Residence",
+    description: "Completed in 1929 and designed by Sir Edwin Lutyens as the residence of the British Viceroy, this 340-room sandstone palace at the western end of Kartavya Path became the official home of the President of India after independence. Its blend of European classical proportions with Indian architectural elements — the great copper dome inspired by the Buddhist stupa at Sanchi, deep chhajja overhangs, and jali screens — makes it a centrepiece of Lutyens' Delhi. Its Mughal-style Amrit Udyan gardens open to the public for a few weeks each spring, and the forecourt can be viewed year-round from outside the gates.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rashtrapati_Bhavan_1.jpg/960px-Rashtrapati_Bhavan_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rashtrapati_Bhavan_1.jpg/960px-Rashtrapati_Bhavan_1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rashtrapati_Bhavan_1.jpg/960px-Rashtrapati_Bhavan_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/A_night_shot_of_the_Rajpath_and_Rashtrapati_Bhavan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/A_scene_from_mughal_garden%2C_President%27s_estate%2C_New_Delhi.jpg/960px-A_scene_from_mughal_garden%2C_President%27s_estate%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: President's Secretariat (Government Open Data License – India), Photoky, Sidheeq, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (and Amrit Udyan's spring opening, usually February-March)",
+    duration: "1-2 hours (forecourt); check ahead for Amrit Udyan or interior tour access",
+    highlights: [{ name: "A 340-room palace designed by Sir Edwin Lutyens" }, { name: "A copper dome inspired by the Buddhist stupa at Sanchi" }, { name: "The Mughal-style Amrit Udyan gardens, open seasonally" }, { name: "The centrepiece of Lutyens' Delhi's ceremonial avenue" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Rashtrapati Bhavan by road/metro", fromBangalore: "IGI Airport, ~40 min to Rashtrapati Bhavan by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "At the western end of Kartavya Path — easy to combine with India Gate and the ceremonial avenue." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Central Secretariat metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Interior visits and Amrit Udyan entry require advance online booking — check the official Rashtrapati Bhavan website before visiting." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place/Central Delhi", "Hotels across every category citywide"], description: "Central Delhi puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the forecourt", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "India Gate", distance: "~2.5 km", type: "War Memorial", isHidden: false, id: "india-gate" },
+      { name: "National War Memorial", distance: "~2 km", type: "War Memorial", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rashtrapati Bhavan & Kartavya Path", morning: "View the forecourt and dome from outside the gates.", afternoon: "Walk down Kartavya Path toward India Gate.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Central Delhi's many restaurants and cafes nearby", tips: "Interior tours and Amrit Udyan garden access both need advance booking through the official Rashtrapati Bhavan website — plan ahead rather than showing up unannounced." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["Extremely high security presence given its status as the President's residence", "Consistently heavy footfall along the ceremonial avenue"],
+      precautions: ["Photography and access are restricted near the gates — follow posted signage and security instructions", "Amrit Udyan visits require pre-booked tickets and ID"],
+      soloTips: ["Very manageable solo — among the most heavily secured public areas in Delhi"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The public viewing areas along Kartavya Path"],
+      avoidAreas: [],
+    },
+    rating: 4.6,
+    reviews: 22000,
+    mustEat: ["Central Delhi's restaurants and cafes nearby"],
+    packingTips: ["A valid photo ID if booking Amrit Udyan or an interior tour", "Comfortable walking shoes for the ceremonial avenue", "A camera for the forecourt and dome"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
