@@ -68054,7 +68054,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The most common way to reach Reiek and return the same day", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Solomon's Temple", distance: "~29 km, via Aizawl", type: "Church", isHidden: false, id: "solomons-temple-aizawl" },
+      { name: "Mizoram State Museum", distance: "~29 km, via Aizawl", type: "Museum", isHidden: true, id: "mizoram-state-museum" },
+      { name: "Dampa Tiger Reserve", distance: "Same Mamit district", type: "Wildlife Sanctuary", isHidden: true, id: "dampa-tiger-reserve" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
@@ -68111,7 +68115,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi from Thenzawl", cost: "Fare varies by round-trip arrangement", notes: "The short final stretch from Thenzawl to the falls' viewing tower", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Tam Dil", distance: "Neighbouring Saitual district", type: "Lake", isHidden: true, id: "tam-dil" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 2000, food: 600, transport: 400, activities: 300 },
@@ -68168,7 +68174,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi from Saitual/Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The final stretch from Saitual town to the lake resort", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Lengteng Wildlife Sanctuary", distance: "Same Saitual district", type: "Wildlife Sanctuary", isHidden: true, id: "lengteng-wildlife-sanctuary" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 400, activities: 400 },
@@ -68283,7 +68291,9 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Guided Forest Walks (Required)", cost: "Arranged through the forest department", notes: "Wildlife viewing here is on foot with a forest guide, not by vehicle safari", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Reiek Hills", distance: "Same Mamit district", type: "Viewpoint & Heritage Village", isHidden: false, id: "reiek-hills" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 400, transport: 300, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1800, food: 700, transport: 700, activities: 400 },
@@ -68341,7 +68351,11 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride from central Aizawl to the western outskirts", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Mizoram State Museum", distance: "Within Aizawl city", type: "Museum", isHidden: false, id: "mizoram-state-museum" },
+      { name: "Reiek Hills", distance: "~29 km from Aizawl", type: "Viewpoint & Heritage Village", isHidden: true, id: "reiek-hills" },
+      { name: "Hmuifang", distance: "~50 km from Aizawl", type: "Ridge & Resort", isHidden: true, id: "hmuifang" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
@@ -68456,7 +68470,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride within central Aizawl", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Solomon's Temple", distance: "Within Aizawl city", type: "Church", isHidden: false, id: "solomons-temple-aizawl" },
+      { name: "Reiek Hills", distance: "~29 km from Aizawl", type: "Viewpoint & Heritage Village", isHidden: true, id: "reiek-hills" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 500, transport: 300, activities: 400 },
@@ -68572,7 +68589,10 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The standard way to reach the ridge-top resort", available: true },
     ],
-    nearbyPlaces: [],
+    nearbyPlaces: [
+      { name: "Solomon's Temple", distance: "~50 km, via Aizawl", type: "Church", isHidden: true, id: "solomons-temple-aizawl" },
+      { name: "Mizoram State Museum", distance: "~50 km, via Aizawl", type: "Museum", isHidden: true, id: "mizoram-state-museum" },
+    ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
       { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 2000, food: 600, transport: 400, activities: 400 },
