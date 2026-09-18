@@ -68910,6 +68910,62 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Naga cuisine in Wokha", "Fresh local produce from the surrounding valley farms"],
     packingTips: ["Binoculars and a camera with zoom for the falcons", "Comfortable walking shoes", "A light jacket — mornings and evenings can be cool"],
   },
+  {
+    id: "dzulekie",
+    name: "Dzülekie",
+    state: "Nagaland",
+    aliases: ["Dzuleke", "Dzüleke"],
+    tagline: "A 156-Person Eco-Tourism Village Where Wildlife Made a Comeback",
+    description: "About 35 km from Kohima, Dzülekie is a small Angami village of roughly 156 people that has become a genuine eco-tourism success story. In 1999, the village council banned hunting and trapping in the surrounding forest — a decision that's since let bird, bear, deer, monkey, and mithun populations recover, and left the streams rich with rare snow trout. The village runs its own Eco-Tourism Board and, with support from the Tata Trusts' NEIDA programme, trained residents to run homestays and set aside a share of tourism income for community development. It offers genuine rural Angami life: stone walkways, paddy fields, bamboo and cane craft, and real opportunities for birdwatching, trekking, and angling.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/34/Chestnut_Bunting_Dzuleke_Nagaland_India_05.11.2019.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/34/Chestnut_Bunting_Dzuleke_Nagaland_India_05.11.2019.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/34/Chestnut_Bunting_Dzuleke_Nagaland_India_05.11.2019.jpg",
+    ],
+    imageCredit: "Photo: Dibyendu Ash, via Wikimedia Commons (CC BY 4.0)",
+    category: ["Nature", "Culture", "Adventure"],
+    bestSeason: "October – April (pleasant weather); November for peak birdwatching",
+    duration: "1–2 days",
+    highlights: [{ name: "A community-led conservation success story since 1999" }, { name: "Genuine Angami rural life — stone walkways, paddy fields, bamboo craft" }, { name: "Rare snow trout in the village streams" }, { name: "Strong birdwatching, given the ban on hunting" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "No public transport reaches the village — arrange a private vehicle from Kohima." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~35 km from Kohima", costRange: "Hired private vehicle from Kohima (no public transport)", tips: "Book a homestay through the village's Eco-Tourism Board in advance." },
+    ],
+    accommodation: [
+      { type: "Village Homestays (Dzülekie Eco-Tourism Board)", priceRange: "₹700–₹2,500/night", examples: ["Community-run homestays organised by the village Eco-Tourism Board"], description: "Homestays are the only accommodation option, and directly support the village's community development fund." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "N/A", notes: "The small village and its trails are explored entirely on foot", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 500, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6800, accommodation: 4000, food: 1000, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival & Village Walk", morning: "Travel from Kohima to Dzülekie by private vehicle.", afternoon: "Walk the village, observe bamboo/cane craft-making, and explore the paddy fields.", evening: "Home-cooked dinner at your homestay.", stay: "Village Homestay", meals: "Home-cooked Angami meals", tips: "The village is small enough to walk end-to-end — no need for local transport." },
+      { day: 2, title: "Birdwatching & Angling", morning: "Birdwatching walk through the protected forest.", afternoon: "Try angling in the village streams, or a short nature trek.", evening: "Return to Kohima.", stay: "—", meals: "Local fish and produce", tips: "Bring binoculars — the hunting ban has made this a genuinely good birdwatching spot." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A tiny, close-knit community with an organised, community-run tourism board", "Homestays provide direct oversight and a welcoming host family setup"],
+      precautions: ["No public transport or mobile network may be limited — confirm your return transport before arriving", "Respect the hunting/trapping ban and any other community conservation rules"],
+      soloTips: ["Comfortable solo given the homestay structure — hosts are directly invested in visitor wellbeing"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The village and its surrounding trails"],
+      avoidAreas: [],
+    },
+    rating: 4.5,
+    reviews: 160,
+    mustEat: ["Home-cooked Angami meals at your homestay", "Local snow trout, where available"],
+    packingTips: ["Binoculars for birdwatching", "Comfortable walking shoes", "Cash — card payments are unlikely to be available", "A camera for the village and paddy-field views"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
