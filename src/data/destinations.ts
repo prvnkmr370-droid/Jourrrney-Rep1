@@ -68139,6 +68139,63 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Mizo cuisine in Thenzawl", "Local produce from Thenzawl's vety/dairy farms"],
     packingTips: ["A camera with zoom for the tower viewpoint", "A light rain jacket in monsoon season", "Comfortable walking shoes"],
   },
+  {
+    id: "tam-dil",
+    name: "Tam Dil",
+    state: "Mizoram",
+    aliases: ["Tamdil Lake"],
+    tagline: "The 'Lake of the Mustard Plant' — Saitual's Reservoir Retreat",
+    description: "About 6 km from Saitual town and 110 km from Aizawl, Tam Dil is a natural reservoir lake maintained by Mizoram's Fisheries Department for fish rearing, and developed for tourism with a lakeside resort offering boating and kayaking. Its Mizo name, roughly \"lake of the mustard plant,\" comes from local folklore about a widow's mustard crop that became the lake after being uprooted. The lake has drawn biodiversity researchers too — a previously unknown leaf-litter frog and, more recently, a new snake species have both been described from specimens found here.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Tam_Dil_Lake_in_Saitual.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/Tam_Dil_Lake_in_Saitual.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/28/Tam_Dil_Lake_in_Saitual.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tam_Dil_View_from_Tam_Dil_Resort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/eb/Tam_Dil.jpg",
+    ],
+    imageCredit: "Photos: Georgeluvpotato (CC0), Coolcolney (CC BY-SA), via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October – March (clear, pleasant weather)",
+    duration: "Half day to a full day",
+    highlights: [{ name: "Boating and kayaking on the reservoir lake" }, { name: "A folklore origin story behind the lake's name" }, { name: "Home to a leaf-litter frog and a snake species first described here" }, { name: "A lakeside resort with adventure activities for families" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl (~110 km from the lake), via Kolkata/Guwahati/Imphal connections", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road via Saitual", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "A popular day trip or overnight stop from Aizawl." },
+      { mode: "Road", icon: "🚗", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "~110 km from Aizawl via Saitual, then ~6 km further", costRange: "Local taxi or self-drive from Aizawl", tips: "Saitual town is the last stop for supplies before the lake." },
+    ],
+    accommodation: [
+      { type: "Lakeside Resort (Tourism Dept. / ZX Eden)", priceRange: "₹1,200–₹6,000/night", examples: ["The lakeside resort at Tam Dil"], description: "A dedicated resort sits directly on the lake, offering boating and kayaking on-site." },
+    ],
+    localTransport: [
+      { mode: "Local Taxi from Saitual/Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The final stretch from Saitual town to the lake resort", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1200, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tam Dil Lake Day", morning: "Drive from Aizawl to Tam Dil via Saitual.", afternoon: "Boating or kayaking on the lake, lakeside relaxation.", evening: "Dinner at the resort or return to Aizawl.", stay: "Tam Dil Resort or Aizawl", meals: "Resort dining or local meals in Saitual", tips: "Weekends can get busy with local visitors — a weekday trip is quieter." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A developed, resort-managed tourist site with organised boating/kayaking activities", "A popular family destination with regular visitor footfall"],
+      precautions: ["Use the resort's own boating/kayaking equipment and safety gear rather than informal arrangements", "The surrounding area is forested — stick to the resort grounds and marked paths after dark"],
+      soloTips: ["A comfortable, well-managed day trip given the resort's organised activities and steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The resort grounds and designated boating area"],
+      avoidAreas: ["Unsupervised swimming or boating away from the resort"],
+    },
+    rating: 4.5,
+    reviews: 480,
+    mustEat: ["Resort dining at Tam Dil", "Mizo cuisine in Saitual"],
+    packingTips: ["Swimwear or a change of clothes for boating/kayaking", "A camera for the lake reflections", "Comfortable footwear for the resort grounds"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
