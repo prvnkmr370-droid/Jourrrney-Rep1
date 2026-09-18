@@ -69448,6 +69448,67 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["The on-site food court (outside food isn't permitted inside)"],
     packingTips: ["Comfortable walking shoes — the complex is vast", "Leave phones, cameras, and bags behind or expect a locker queue", "Modest clothing is appreciated as a place of worship"],
   },
+  {
+    id: "jantar-mantar-delhi",
+    name: "Jantar Mantar",
+    state: "Delhi",
+    tagline: "An 18th-Century Astronomical Observatory in Geometric Stone",
+    description: "Built in 1724 by Maharaja Jai Singh II of Jaipur, this observatory near Connaught Place is one of five Jantar Mantars the astronomer-king built across northern India. Its large-scale masonry instruments — including the towering Samrat Yantra sundial and the circular Misra Yantra — were designed to track the position of stars, predict eclipses, and measure time with a precision that startled European visitors of the era. The instruments' bold geometric forms make the site as striking to photograph as it is significant to the history of astronomy, and it remains a protected Monument of National Importance.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/India_Delhi_Jantar_Mantar_observatory_1.jpg/960px-India_Delhi_Jantar_Mantar_observatory_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/India_Delhi_Jantar_Mantar_observatory_1.jpg/960px-India_Delhi_Jantar_Mantar_observatory_1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/India_Delhi_Jantar_Mantar_observatory_1.jpg/960px-India_Delhi_Jantar_Mantar_observatory_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Jantar_Mantar_%28Delhi%29_-_IMG_1989.JPG/500px-Jantar_Mantar_%28Delhi%29_-_IMG_1989.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Details_of_Ram_Yantra_at_Jantar_Mantar%2C_New_Delhi.jpg/960px-Details_of_Ram_Yantra_at_Jantar_Mantar%2C_New_Delhi.jpg",
+    ],
+    imageCredit: "Photos: Alessio (Alejo2083), Daderot, Yusuke Kawasaki, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (cooler weather for walking the open-air instruments)",
+    duration: "1-1.5 hours",
+    highlights: [{ name: "Built in 1724 by the astronomer-king Maharaja Jai Singh II" }, { name: "The towering Samrat Yantra, one of the world's largest sundials" }, { name: "The circular Misra Yantra and Ram Yantra instruments" }, { name: "A protected Monument of National Importance" }],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Jantar Mantar by road/metro", fromBangalore: "IGI Airport, ~30 min to Jantar Mantar by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by Connaught Place — easy to combine with central Delhi shopping and dining." },
+      { mode: "Metro/Road", icon: "🚇", fromDelhi: "—", fromMumbai: "—", fromBangalore: "—", duration: "Patel Chowk metro station, then a short walk", costRange: "₹20–₹60 metro fare; local taxi/auto also available", tips: "Patel Chowk (Yellow Line) is the closest station, a few minutes' walk from the gate." },
+    ],
+    accommodation: [
+      { type: "Delhi Hotels", priceRange: "₹1,000–₹15,000+/night", examples: ["Hotels near Connaught Place", "Hotels across every category citywide"], description: "Connaught Place puts you closest; any central Delhi stay works well with the metro." },
+    ],
+    localTransport: [
+      { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Patel Chowk (Yellow Line) is a short walk from the entrance", available: true },
+      { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Connaught Place", distance: "~1 km", type: "Shopping & Dining", isHidden: false },
+      { name: "India Gate", distance: "~3 km", type: "War Memorial", isHidden: false, id: "india-gate" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 800, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10000, accommodation: 7000, food: 1500, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jantar Mantar & Connaught Place", morning: "Explore the observatory's instruments and their explanatory plaques.", afternoon: "Walk over to Connaught Place for shopping and lunch.", evening: "Return to your base for the evening.", stay: "Delhi", meals: "Connaught Place's many restaurants and cafes nearby", tips: "The instruments are more interesting with context — read the on-site plaques or hire a guide at the gate to understand what each one measured." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A compact, well-secured central Delhi monument with entry screening", "Consistently heavy daytime tourist footfall"],
+      precautions: ["Some instrument stairways are steep and narrow — watch your step", "Little shade — carry water and sun protection in summer"],
+      soloTips: ["Very manageable solo — a small, easily-covered site with steady visitor traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Delhi Tourism Helpline", number: "1800-11-1363" },
+      ],
+      safeZones: ["The full observatory grounds"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 19000,
+    mustEat: ["Connaught Place's restaurants and cafes nearby"],
+    packingTips: ["Comfortable walking shoes — some instruments have steep steps", "Sun protection and water — little shade on site", "A camera for the geometric architecture"],
+  },
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
