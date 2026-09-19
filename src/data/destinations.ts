@@ -43971,15 +43971,16 @@ export const DESTINATIONS: Destination[] = [
     description: "Raghunath Temple, in Jammu's old city north of the Tawi River, is one of North India's largest temple complexes, its construction begun by Maharaja Gulab Singh in 1835 and completed by his son Maharaja Ranbir Singh in 1860. Seven interlinked shrines, their spires gold-plated, spiral out from a central sanctum dedicated to Rama (as Raghunath) — the main shrine, on an octagonal raised platform with a 40-foot facade, is ringed by a 10-foot circumambulatory passage and lined with 15 decorative panels each 9 feet tall, its niches holding some 300 crafted icons of gods and goddesses alongside paintings depicting the Ramayana, Mahabharata, and Bhagavad Gita. Beyond its role as a working temple, Raghunath genuinely functions as a scholarly institution: its library holds roughly 6,000 Sanskrit manuscripts, including rare Sarada-script texts, and an attached school has long welcomed students across castes and backgrounds — a serious, still-active piece of the temple's history alongside its devotional one.",
     image: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
-    // Only one genuine, confirmed modern photo of Raghunath Temple found on
-    // Wikimedia Commons — the temple's own category otherwise holds only
-    // manuscript-page scans and a 19th-century engraving, not photographs
-    // of the site itself. This single 1988 photo is confirmed genuine (it's
-    // the exact image used on English Wikipedia's own Raghunath Temple
-    // article), so used alone rather than paired with a mismatched or
-    // non-photographic image, per the same principle applied earlier to
-    // hari-niwas-palace and padri-bhaderwah.
-    imageCredit: "Photo: Bhadani (self-photographed, 1988) — Wikimedia Commons, CC BY-SA 3.0, used directly on English Wikipedia's Raghunath Temple article.",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/The_Temples_of_Raghunath%2C_Jammu%2C_India%2C_ca.1875-ca.1940_%28imp-cswc-GB-237-CSWC47-LS10-011%29.jpg/960px-The_Temples_of_Raghunath%2C_Jammu%2C_India%2C_ca.1875-ca.1940_%28imp-cswc-GB-237-CSWC47-LS10-011%29.jpg",
+    ],
+    // Confirmed genuine modern photo plus a genuine historical (ca.1875-1940)
+    // hand-tinted lantern-slide photograph, both used directly on English
+    // Wikipedia's own Raghunath Temple article — the temple's Commons
+    // category otherwise holds only manuscript-page scans, not further
+    // photographs of the site itself.
+    imageCredit: "Photos: Bhadani (self-photographed, 1988), CC BY-SA 3.0; unknown photographer, ca. 1875-1940, public domain (Church of Scotland Foreign Missions Committee lantern slide, International Mission Photography Archive) — both Wikimedia Commons, both used directly on English Wikipedia's Raghunath Temple article.",
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
