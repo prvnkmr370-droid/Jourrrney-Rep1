@@ -130,19 +130,39 @@
       { "name": "Tikarapara (Satkosia)", "destinationId": "tikarapara-satkosia" },
       { "name": "Khandadhar Nature Camp (Khandadhar Falls)", "destinationId": "khandadhar-falls" },
       { "name": "Ansupa Nature Camp (Ansupa Lake)", "destinationId": "ansupa-lake" },
-      { "name": "Pipili (Applique work)", "destinationId": "pipili" }
+      { "name": "Pipili (Applique work)", "destinationId": "pipili" },
+      { "name": "Khiching", "destinationId": "khiching" },
+      { "name": "Biraja Temple", "destinationId": "biraja-temple" },
+      { "name": "Samaleswari Temple", "destinationId": "samaleswari-temple" },
+      { "name": "Tara Tarini", "destinationId": "tara-tarini-temple" },
+      { "name": "Chausathi Yogini Temple", "destinationId": "chausathi-yogini-temple" },
+      { "name": "Ananta Basudeva Temple", "destinationId": "ananta-basudeva-temple" },
+      { "name": "Parasurameswar Temple", "destinationId": "parasurameswar-temple" },
+      { "name": "Jirang", "destinationId": "jirang-monastery" },
+      { "name": "Paradip Beach", "destinationId": "paradip-beach" },
+      { "name": "Odisha State Museum", "destinationId": "odisha-state-museum" },
+      { "name": "Odisha State Maritime Museum", "destinationId": "odisha-state-maritime-museum" },
+      { "name": "Odisha Crafts Museum \"Kala Bhoomi\"", "destinationId": "kala-bhoomi-crafts-museum" },
+      { "name": "Tribal Museum", "destinationId": "tribal-museum-bhubaneswar" },
+      { "name": "Pathani Samanta Planetarium", "destinationId": "pathani-samanta-planetarium" },
+      { "name": "Regional Museum of Natural History", "destinationId": "regional-museum-natural-history" },
+      { "name": "Museum of Justice", "destinationId": "museum-of-justice-cuttack" },
+      { "name": "Satkosia Sands Resort (Badmul)", "destinationId": "satkosia-sands-resort-badmul" },
+      { "name": "Debrigarh Nature Camp", "destinationId": "debrigarh-wildlife-sanctuary" },
+      { "name": "Daringibadi", "destinationId": "daringbadi" },
+      { "name": "Sanaghagra Nature Camp (Sanaghagra Falls)", "destinationId": "sanaghagra-falls" },
+      { "name": "Bhimkund", "destinationId": "bhimkund-waterfall" }
     ],
     "notYetBuilt_tier1": [
       "Harishankar Temple — deferred: only Commons candidate found was a 384×512px, 56KB CC0 image, too low-resolution for a primary/hero card image. Needs a better-quality verified source before building."
     ],
     "notYetBuilt_tier2": [
-      "Khiching", "Biraja Temple", "Samaleswari Temple", "Tara Tarini", "Chausathi Yogini Temple", "Ananta Basudeva Temple", "Parasurameswar Temple", "Huma (Leaning Temple)",
-      "Jirang",
-      "Paradip Beach",
-      "Odisha State Museum", "Odisha State Maritime Museum", "Odisha Crafts Museum \"Kala Bhoomi\"", "Tribal Museum", "Pathani Samanta Planetarium", "Regional Museum of Natural History", "Museum of Justice", "Netaji Museum", "Gopabandhu Das Memorial Museum",
-      "Satkosia Sands Resort (Badmul)", "Debrigarh Nature Camp", "Daringibadi",
-      "Sanaghagra Nature Camp (Sanaghagra Falls)", "Bhimkund", "Tampara Lake", "Minajhola",
-      "Sukuapada (stone carving)"
+      "Huma (Leaning Temple) — deferred: no adequately verified/high-quality Commons image of the actual leaning temple structure found (only a low-res market-scene photo and an idol close-up); needs a better source.",
+      "Netaji Museum — deferred: no verified Commons image of the actual Cuttack birthplace house/museum found (one candidate was a reproduction photographed at an unrelated Darjeeling museum); needs a better source.",
+      "Gopabandhu Das Memorial Museum — deferred: no Commons image of the actual Suando-village memorial site found, only portraits/statues of Gopabandhu Das elsewhere; needs a better source.",
+      "Tampara Lake — deferred: no genuine photos of this specific lake found on Wikimedia Commons.",
+      "Minajhola — deferred: no images at all found on Wikimedia Commons for this site.",
+      "Sukuapada (stone carving) — deferred: no images at all found on Wikimedia Commons for this site."
     ]
   },
   "places": {}
