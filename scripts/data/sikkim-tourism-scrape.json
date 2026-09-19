@@ -35,13 +35,19 @@
       { "name": "Khecheopalri Lake", "destinationId": "khecheopalri-lake" },
       { "name": "MG Marg", "destinationId": "mg-marg-gangtok" },
       { "name": "Temi Tea Garden", "destinationId": "temi-tea-garden" },
-      { "name": "Yuksom", "destinationId": "yuksom" }
+      { "name": "Yuksom", "destinationId": "yuksom" },
+      { "name": "Tashiding Monastery", "destinationId": "tashiding-monastery" },
+      { "name": "Namchi (Samdruptse Hill / Char Dham)", "destinationId": "namchi-samdruptse" },
+      { "name": "Ravangla", "destinationId": "ravangla-buddha-park" },
+      { "name": "Zero Point", "destinationId": "zero-point-yumesamdong" },
+      { "name": "Lachung", "destinationId": "lachung" },
+      { "name": "Khangchendzonga National Park", "destinationId": "khangchendzonga-national-park" },
+      { "name": "Goecha La", "destinationId": "goecha-la" },
+      { "name": "Dzongri", "destinationId": "dzongri" },
+      { "name": "Fambong Lho Wildlife Sanctuary", "destinationId": "fambong-lho-wildlife-sanctuary" },
+      { "name": "Barsey Rhododendron Sanctuary", "destinationId": "barsey-rhododendron-sanctuary" }
     ],
-    "notYetBuilt_tier1": [
-      "Tashiding Monastery",
-      "Namchi (Samdruptse Hill / Char Dham)", "Ravangla", "Zero Point", "Lachung",
-      "Khangchendzonga National Park", "Goecha La", "Dzongri", "Fambong Lho Wildlife Sanctuary", "Barsey Rhododendron Sanctuary"
-    ],
+    "notYetBuilt_tier1": [],
     "notYetBuilt_tier2": [
       "Ganesh Tok", "Hanuman Tok", "Tashi View Point", "Dubdi Monastery", "Sanga Choling Monastery",
       "Rinchenpong", "Tendong Hill", "Maenam Hill", "Teesta River (rafting)", "Lachen", "Gangtok Ropeway",
