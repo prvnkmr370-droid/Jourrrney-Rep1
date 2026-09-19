@@ -5735,7 +5735,11 @@ export const DESTINATIONS: Destination[] = [
     // Real, place-specific photo from the official DNH & DD Tourism
     // Department site — see gomtimata-beach's comment above for the
     // full licensing context.
-    imageCredit: "Photo: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction.",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/diu/fortress-of-panikotha-1.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Panikotha_at_Diu.jpg/960px-Panikotha_at_Diu.jpg",
+    ],
+    imageCredit: "Photos: Official DNH & DD Tourism Department site (dnhddtourism.in) — copyright reserved by the Department; used here beyond the site's stated personal/non-commercial terms at the user's explicit direction. Second photo: MumukshuDesai — Wikimedia Commons, CC BY-SA 4.0, captioned \"Prison island at Diu known as Panikotha\".",
     category: ["Heritage", "Fort", "Offbeat"],
     bestSeason: "October – March",
     duration: "View from shore — 30 minutes; boat access varies",
