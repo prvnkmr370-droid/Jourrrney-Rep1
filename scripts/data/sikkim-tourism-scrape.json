@@ -1,0 +1,52 @@
+{
+  "source": "https://www.sikkimtourism.gov.in",
+  "scrapedAt": "2026-09-19",
+  "note": "Official Sikkim Tourism site (Dept. of Tourism & Civil Aviation, Govt of Sikkim). Unlike Odisha's site, this one has NO individual per-place detail pages — only a homepage with 15 thematic category tiles (each listing 2-3 named highlight places) and an 'About Sikkim > Districts' page giving prose overviews of the state's 6 districts (Gangtok, Mangan, Gyalshing, Namchi, Pakyong, Soreng), each mentioning several named attractions inline. This file's inventory is compiled from those two sources. Because the official site itself lacks factual depth per place, individual card descriptions are written from independently verified facts (primarily Wikipedia, cross-checked against the official site's own framing/promotion of each place) rather than paraphrasing official site prose — the official site is used to confirm which places Sikkim Tourism itself promotes and how, not as the factual source.",
+  "districts": [
+    { "name": "Gangtok (East)", "note": "Capital, most populated. Mentions: Tsomgo Lake, Nathula Pass, monasteries and temples." },
+    { "name": "Mangan (North)", "note": "Largest, most scenic. Mentions: Yumthang Valley of Flowers, hot springs, tribal culture, a Dec music festival." },
+    { "name": "Gyalshing (West)", "note": "Historic/religious seat — first Chogyal consecrated at Yuksom in 1642. Mentions: Dubdi and Sanga Choling monasteries, lakes, waterfalls, trekking routes." },
+    { "name": "Namchi (South)", "note": "Views of Khangchendzonga range. Mentions: Samdruptse Hill (135-ft Guru Padmasambhava statue), Tendong and Maenam hills, Ravangla (Pang Lhabsol festival)." },
+    { "name": "Pakyong", "note": "New district (Dec 2021). Home to Sikkim's only airport (Pakyong/Greenfield Airport)." },
+    { "name": "Soreng", "note": "Smallest district, newest (Dec 2021). Mentions: Rinchenpung and Sri Badam monasteries (among the oldest), Rinchenpong, Kaluk, Sangadorjee." }
+  ],
+  "homepageCategoryTiles": {
+    "monasteriesAndSpiritualTrails": ["Rumtek", "Pemayangtse", "Tashiding"],
+    "lakesAndAlpineWonders": ["Tsomgo Lake", "Gurudongmar", "Khecheopalri"],
+    "adventureAndTrekking": ["Goecha La", "Dzongri", "Yuksom"],
+    "wildlifeAndNature": ["Red Panda (species)", "Khangchendzonga National Park", "Fambong Lho (wildlife sanctuary)"],
+    "cultureAndFestivals": ["Losar", "Pang Lhabsol", "Saga Dawa"],
+    "flowerValleys": ["Yumthang", "Barsey (rhododendron sanctuary)"],
+    "teaGardens": ["Temi Tea Garden"],
+    "snowExperiences": ["Nathula", "Zero Point", "Lachung"],
+    "riverAdventures": ["Teesta River", "Rangeet River"],
+    "shoppingAndHandicrafts": ["MG Marg"],
+    "sunriseViewpoints": ["Tashi View Point", "Ganesh Tok", "Hanuman Tok"]
+  },
+  "buildPriority": {
+    "note": "No 'top places' ranking exists on the official site itself (no per-place pages to rank). Prioritizing the most iconic, most-visited, and best-documented places across all category tiles and district mentions — the equivalent of what a Sikkim itinerary would actually cover.",
+    "built": [
+      { "name": "Tsomgo Lake", "destinationId": "tsomgo-lake" },
+      { "name": "Nathula Pass", "destinationId": "nathula-pass" },
+      { "name": "Rumtek Monastery", "destinationId": "rumtek-monastery" },
+      { "name": "Pemayangtse Monastery", "destinationId": "pemayangtse-monastery" },
+      { "name": "Yumthang Valley", "destinationId": "yumthang-valley" },
+      { "name": "Gurudongmar Lake", "destinationId": "gurudongmar-lake" },
+      { "name": "Khecheopalri Lake", "destinationId": "khecheopalri-lake" },
+      { "name": "MG Marg", "destinationId": "mg-marg-gangtok" },
+      { "name": "Temi Tea Garden", "destinationId": "temi-tea-garden" },
+      { "name": "Yuksom", "destinationId": "yuksom" }
+    ],
+    "notYetBuilt_tier1": [
+      "Tashiding Monastery",
+      "Namchi (Samdruptse Hill / Char Dham)", "Ravangla", "Zero Point", "Lachung",
+      "Khangchendzonga National Park", "Goecha La", "Dzongri", "Fambong Lho Wildlife Sanctuary", "Barsey Rhododendron Sanctuary"
+    ],
+    "notYetBuilt_tier2": [
+      "Ganesh Tok", "Hanuman Tok", "Tashi View Point", "Dubdi Monastery", "Sanga Choling Monastery",
+      "Rinchenpong", "Tendong Hill", "Maenam Hill", "Teesta River (rafting)", "Lachen", "Gangtok Ropeway",
+      "Singshore Bridge", "Kabi Lungchok", "Namchi Rock Garden"
+    ]
+  },
+  "places": {}
+}
