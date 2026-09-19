@@ -116,15 +116,24 @@
       { "name": "Chandrabhaga Beach", "destinationId": "chandrabhaga-beach" },
       { "name": "Nandankanan Zoological Park", "destinationId": "nandankanan-zoological-park" },
       { "name": "Chilika Lake", "destinationId": "chilika-lake" },
-      { "name": "Raghurajpur Heritage Village", "destinationId": "raghurajpur-heritage-village" }
+      { "name": "Raghurajpur Heritage Village", "destinationId": "raghurajpur-heritage-village" },
+      { "name": "Mukteswar Temple", "destinationId": "mukteswar-temple" },
+      { "name": "Rajarani Temple", "destinationId": "rajarani-temple" },
+      { "name": "Lalitgiri", "destinationId": "lalitgiri" },
+      { "name": "Ratnagiri", "destinationId": "ratnagiri-odisha" },
+      { "name": "Udayagiri (Buddhist site, Jajpur)", "destinationId": "udayagiri-buddhist-complex" },
+      { "name": "Gopalpur (Gopalpur-on-Sea)", "destinationId": "gopalpur-on-sea" },
+      { "name": "Chandipur Beach", "destinationId": "chandipur-beach" },
+      { "name": "Talasari Beach", "destinationId": "talasari-beach" },
+      { "name": "Bhitarkanika Nature Camps", "destinationId": "bhitarkanika-national-park" },
+      { "name": "Similipal Nature Camp", "destinationId": "similipal-tiger-reserve" },
+      { "name": "Tikarapara (Satkosia)", "destinationId": "tikarapara-satkosia" },
+      { "name": "Khandadhar Nature Camp (Khandadhar Falls)", "destinationId": "khandadhar-falls" },
+      { "name": "Ansupa Nature Camp (Ansupa Lake)", "destinationId": "ansupa-lake" },
+      { "name": "Pipili (Applique work)", "destinationId": "pipili" }
     ],
     "notYetBuilt_tier1": [
-      "Mukteswar Temple", "Rajarani Temple", "Harishankar Temple",
-      "Lalitgiri", "Ratnagiri", "Udayagiri (Buddhist site, Jajpur)",
-      "Gopalpur (Gopalpur-on-Sea)", "Chandipur Beach", "Talasari Beach",
-      "Bhitarkanika Nature Camps", "Similipal Nature Camp", "Tikarapara (Satkosia)",
-      "Khandadhar Nature Camp (Khandadhar Falls)", "Ansupa Nature Camp (Ansupa Lake)",
-      "Pipili (Applique work)"
+      "Harishankar Temple — deferred: only Commons candidate found was a 384×512px, 56KB CC0 image, too low-resolution for a primary/hero card image. Needs a better-quality verified source before building."
     ],
     "notYetBuilt_tier2": [
       "Khiching", "Biraja Temple", "Samaleswari Temple", "Tara Tarini", "Chausathi Yogini Temple", "Ananta Basudeva Temple", "Parasurameswar Temple", "Huma (Leaning Temple)",
