@@ -1,0 +1,140 @@
+{
+  "source": "https://odishatourism.gov.in/content/tourism/en.html",
+  "scrapedAt": "2026-09-19",
+  "note": "Official Odisha Tourism site (Dept. of Tourism, Govt of Odisha). Content is organized into 7 attraction categories, each with a 'Top Places to Visit' list plus, for some categories, a 'More Places to See' list. Individual place pages scraped separately and cards built from that content, cross-verified with Wikimedia Commons for images. This file is the master index of every place identified on the site — used to track what's been scraped/built vs still pending.",
+  "categories": {
+    "templesAndMonuments": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments.html",
+      "topPlaces": [
+        { "name": "Jagannath Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/jagannath-temple.html" },
+        { "name": "Konark (Sun Temple)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/konark.html" },
+        { "name": "Lingaraja Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/lingaraja-temple.html" },
+        { "name": "Udayagiri & Khandagiri Caves", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/udaygiri-and-amp-khandagiri-caves-temple.html" },
+        { "name": "Mukteswar Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/mukteswar-temple.html" },
+        { "name": "Rajarani Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/rajarani-temple.html" },
+        { "name": "Harishankar Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/harishankar-temple.html" }
+      ],
+      "morePlaces": [
+        { "name": "Khiching", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/khiching.html" },
+        { "name": "Biraja Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/biraja-temple.html" },
+        { "name": "Samaleswari Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/samaleswari-temple.html" },
+        { "name": "Tara Tarini", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/tara-tarini.html" },
+        { "name": "Chausathi Yogini Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/chausathi-yogini.html" },
+        { "name": "Ananta Basudeva Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/anantaBasudeva-temple.html" },
+        { "name": "Parasurameswar Temple", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/parasurameswar-temple.html" },
+        { "name": "Huma (Leaning Temple)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments/huma.html" }
+      ]
+    },
+    "buddhistSites": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites.html",
+      "topPlaces": [
+        { "name": "Dhauligiri", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/dhauligiri.html" },
+        { "name": "Lalitgiri", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/lalitgiri.html" },
+        { "name": "Udayagiri (Buddhist site, Jajpur)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/udayagiri.html" },
+        { "name": "Ratnagiri", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/ratnagiri.html" },
+        { "name": "Jirang", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/buddhist-sites/jeerango.html" }
+      ]
+    },
+    "beaches": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches.html",
+      "topPlaces": [
+        { "name": "Puri Beach", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/puri-beach.html" },
+        { "name": "Chandrabhaga Beach", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/chandrabagha-beach.html" },
+        { "name": "Gopalpur (Gopalpur-on-Sea)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/gopalpur.html" },
+        { "name": "Chandipur Beach", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/chandipur.html" },
+        { "name": "Paradip Beach", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/paradip.html" },
+        { "name": "Talasari Beach", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/beaches/talasari-beach.html" }
+      ]
+    },
+    "museums": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums.html",
+      "topPlaces": [
+        { "name": "Odisha State Museum", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/odisha-state-museum.html" },
+        { "name": "Odisha State Maritime Museum", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/odisha-state-maritime-museum.html" },
+        { "name": "Odisha Crafts Museum \"Kala Bhoomi\"", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/odisha-crafts-museum-kalabhoomi.html" },
+        { "name": "Tribal Museum", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/tribal-museum.html" },
+        { "name": "Pathani Samanta Planetarium", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/planetarium.html" },
+        { "name": "Regional Museum of Natural History", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/regional-museum-natural-history.html" },
+        { "name": "Museum of Justice", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/Museum%20of%20Justice.html" },
+        { "name": "Netaji Museum", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/netaji-museum.html" },
+        { "name": "Gopabandhu Das Memorial Museum", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/museums/gopabandhu-das-memorial-museum.html" }
+      ]
+    },
+    "forestAndWildlife": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife.html",
+      "topPlaces": [
+        { "name": "Tikarapara (Satkosia)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/tikarapara.html" },
+        { "name": "Bhitarkanika Nature Camps", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/bhitarkanika-nature-camps.html" },
+        { "name": "Similipal Nature Camp", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/similipal-nature-camp.html" },
+        { "name": "Nandankanan", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/nandankanan.html" },
+        { "name": "Satkosia Sands Resort (Badmul)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/satkosia-badamul.html" },
+        { "name": "Debrigarh Nature Camp", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/debrigarh.html" },
+        { "name": "Daringibadi", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/forest-wildlife/daringibadi.html" }
+      ]
+    },
+    "lakesAndWaterfalls": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls.html",
+      "topPlaces": [
+        { "name": "Chilika Nature Camps (Chilika Lake)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/chilika-nature-camps.html" },
+        { "name": "Khandadhar Nature Camp (Khandadhar Falls)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/khandadhar-nature-camp.html" },
+        { "name": "Ansupa Nature Camp (Ansupa Lake)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/ansupa-nature-camp.html" },
+        { "name": "Sanaghagra Nature Camp (Sanaghagra Falls)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/sanaghagra-nature-camp.html" },
+        { "name": "Bhimkund", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/bhimkund.html" },
+        { "name": "Tampara Lake", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/tampara-lake.html" },
+        { "name": "Minajhola", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/lakes-waterfalls/minajhola.html" }
+      ]
+    },
+    "artsAndCrafts": {
+      "categoryUrl": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/arts-crafts.html",
+      "topPlaces": [
+        { "name": "Sukuapada (stone carving)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/arts-crafts/sukuapada.html" },
+        { "name": "Raghurajpur (Pattachitra crafts village)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/arts-crafts/raghurajpur.html" },
+        { "name": "Pipili (Applique work)", "url": "https://odishatourism.gov.in/content/tourism/en/discover/attractions/arts-crafts/pipili.html" }
+      ]
+    }
+  },
+  "majorCities": [
+    { "name": "Bhubaneswar", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/bhubaneswar.html" },
+    { "name": "Cuttack", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/cuttack.html" },
+    { "name": "Brahmapur", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/brahmapur.html" },
+    { "name": "Angul", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/angul.html" },
+    { "name": "Puri", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/puri.html" },
+    { "name": "Rourkela", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/rourkela.html" },
+    { "name": "Sambalpur", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/sambalpur.html" },
+    { "name": "Balasore", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/balasore.html" },
+    { "name": "Baripada", "url": "https://odishatourism.gov.in/content/tourism/en/discover/major-cities/baripada.html" }
+  ],
+  "buildPriority": {
+    "note": "44 total individual places identified across 7 attraction categories. Building full verified destination cards for the most prominent, iconic, and well-documented ones first (the 'Top Places to Visit' picks the site itself highlights per category), matching this app's existing per-state pattern. 'More Places to See' entries and major-city overview pages are lower priority / not yet built.",
+    "built": [
+      { "name": "Jagannath Temple, Puri", "destinationId": "jagannath-temple-puri" },
+      { "name": "Konark Sun Temple", "destinationId": "konark-sun-temple" },
+      { "name": "Lingaraja Temple", "destinationId": "lingaraja-temple" },
+      { "name": "Udayagiri & Khandagiri Caves", "destinationId": "udayagiri-khandagiri-caves" },
+      { "name": "Dhauligiri Shanti Stupa", "destinationId": "dhauligiri-shanti-stupa" },
+      { "name": "Puri Beach", "destinationId": "puri-beach" },
+      { "name": "Chandrabhaga Beach", "destinationId": "chandrabhaga-beach" },
+      { "name": "Nandankanan Zoological Park", "destinationId": "nandankanan-zoological-park" },
+      { "name": "Chilika Lake", "destinationId": "chilika-lake" },
+      { "name": "Raghurajpur Heritage Village", "destinationId": "raghurajpur-heritage-village" }
+    ],
+    "notYetBuilt_tier1": [
+      "Mukteswar Temple", "Rajarani Temple", "Harishankar Temple",
+      "Lalitgiri", "Ratnagiri", "Udayagiri (Buddhist site, Jajpur)",
+      "Gopalpur (Gopalpur-on-Sea)", "Chandipur Beach", "Talasari Beach",
+      "Bhitarkanika Nature Camps", "Similipal Nature Camp", "Tikarapara (Satkosia)",
+      "Khandadhar Nature Camp (Khandadhar Falls)", "Ansupa Nature Camp (Ansupa Lake)",
+      "Pipili (Applique work)"
+    ],
+    "notYetBuilt_tier2": [
+      "Khiching", "Biraja Temple", "Samaleswari Temple", "Tara Tarini", "Chausathi Yogini Temple", "Ananta Basudeva Temple", "Parasurameswar Temple", "Huma (Leaning Temple)",
+      "Jirang",
+      "Paradip Beach",
+      "Odisha State Museum", "Odisha State Maritime Museum", "Odisha Crafts Museum \"Kala Bhoomi\"", "Tribal Museum", "Pathani Samanta Planetarium", "Regional Museum of Natural History", "Museum of Justice", "Netaji Museum", "Gopabandhu Das Memorial Museum",
+      "Satkosia Sands Resort (Badmul)", "Debrigarh Nature Camp", "Daringibadi",
+      "Sanaghagra Nature Camp (Sanaghagra Falls)", "Bhimkund", "Tampara Lake", "Minajhola",
+      "Sukuapada (stone carving)"
+    ]
+  },
+  "places": {}
+}
