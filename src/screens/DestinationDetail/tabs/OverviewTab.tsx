@@ -15,7 +15,7 @@
 import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
-import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass } from "lucide-react-native";
+import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Clock } from "lucide-react-native";
 import type { Destination, NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -34,9 +34,26 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
     <View style={{ padding: 20 }}>
       {/* marginBottom matches the teaser card's marginTop below (24) so the
           gap before and after "Top Highlights" is the same on both sides. */}
-      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary, marginBottom: 24 }}>
+      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary, marginBottom: d.visitingHours ? 12 : 24 }}>
         {d.description}
       </Text>
+
+      {d.visitingHours && (
+        <View
+          style={{
+            flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 24,
+            backgroundColor: c.surfaceAlt, borderRadius: 12, paddingVertical: 10, paddingHorizontal: 14,
+          }}
+        >
+          <Clock color={c.teal} size={16} />
+          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary, flex: 1 }}>
+            Opens: {d.visitingHours.opens}  ·  Closes: {d.visitingHours.closes}
+            {d.visitingHours.note ? (
+              <Text style={{ fontFamily: "Poppins_400Regular", color: c.textSecondary }}> — {d.visitingHours.note}</Text>
+            ) : null}
+          </Text>
+        </View>
+      )}
 
       <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 12 }}>
         <Sparkles color={c.primary} size={14} />

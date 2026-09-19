@@ -40,6 +40,17 @@ export interface LocalTransport {
   available: boolean;
 }
 
+// Public visiting/opening hours, validated against the official source site
+// scraped for that destination (or, where no single official page exists,
+// the most authoritative source found). Left undefined for destinations
+// without fixed hours — a beach, valley, or open town isn't "open"/"closed"
+// the way a temple or museum is, so this is opt-in rather than required.
+export interface VisitingHours {
+  opens: string; // e.g. "5:00 AM"
+  closes: string; // e.g. "11:00 PM"
+  note?: string; // e.g. a midday recess, a weekly closing day, or seasonal variation
+}
+
 export interface NearbyPlace {
   name: string;
   distance: string;
@@ -114,6 +125,9 @@ export interface Destination {
   aliases?: string[];
   tagline: string;
   description: string;
+  // Public visiting hours, validated against the official/scraped source
+  // for this destination. See VisitingHours above.
+  visitingHours?: VisitingHours;
   // True for destinations kept in the database for direct search/lookup
   // (findable by name, reachable via /destination/<id>, linkable from a
   // nearby-place card) but deliberately left out of the "curated few"
@@ -71028,6 +71042,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "The 12th-Century Seat of the Lord of the Universe",
     description: "Jagannath Temple, in the pilgrim town of Puri, has stood at the centre of the Jagannath cult since it was built in the 12th century AD, drawing devotees from across India and beyond. Its 65-metre spire rises over the old town as one of the four Char Dham pilgrimage sites, and the temple's annual Rath Yatra — when the deities Jagannath, Balabhadra, and Subhadra are pulled through the streets on giant wooden chariots — is one of the most widely recognised festivals in Hindu tradition. The temple remains an active place of worship, with camera and electronic devices left at outlets near the entrance before darshan.",
+    visitingHours: { opens: "5:00 AM", closes: "11:00 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in; hours can shift on major festival days such as Rath Yatra — confirm locally if visiting then." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shri_Jagannatha_Temple.jpg/1280px-Shri_Jagannatha_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shri_Jagannatha_Temple.jpg/1280px-Shri_Jagannatha_Temple.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shri_Jagannatha_Temple.jpg/1280px-Shri_Jagannatha_Temple.jpg"],
@@ -71046,6 +71061,8 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cycle Rickshaw", cost: "₹50–₹200 within Puri town", notes: "The easiest way to reach the temple from anywhere in town", available: true },
+      { mode: "Rapido (bike taxi)", cost: "₹15 base + ₹3/km, approx.", notes: "Operates within Puri town via the Rapido app", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not operational for local rides within Puri as of this writing — occasional intercity drop-offs from Bhubaneswar only, not bookable locally", available: false },
     ],
     nearbyPlaces: [
       { name: "Puri Beach", distance: "~1.5 km", type: "Beach", isHidden: false, id: "puri-beach" },
@@ -71086,6 +71103,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "A 13th-Century Stone Chariot to the Sun God, UNESCO-Listed",
     description: "The Sun Temple at Konark, built in the 13th century AD under King Narasimhadeva I, is shaped as a colossal stone chariot for the Sun God Surya — twelve pairs of ornately carved wheels and a team of seven horses carrying the whole structure in stone. Its intricate carving, spanning military, courtly, and everyday scenes alongside religious imagery, is considered among the finest achievements of Kalinga architecture, and UNESCO inscribed the temple as a World Heritage Site in 1984. Much of the temple's upper structure has collapsed over the centuries, but the surviving base and Jagamohana (assembly hall) still draw millions of visitors a year.",
+    visitingHours: { opens: "5:00 AM", closes: "11:00 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Konark_Sun_Temple_frontview.jpg/1280px-Konark_Sun_Temple_frontview.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Konark_Sun_Temple_frontview.jpg/1280px-Konark_Sun_Temple_frontview.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Konark_Sun_Temple_frontview.jpg/1280px-Konark_Sun_Temple_frontview.jpg"],
@@ -71144,6 +71162,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "An 11th-Century, 180-Foot Shiva Temple at the Heart of Bhubaneswar",
     description: "Lingaraja Temple, in Bhubaneswar's old town, rises 180 feet over the city and is widely regarded as one of the finest examples of Hindu temple architecture in India — a judgement first recorded by 19th-century historian James Fergusson and still echoed by visitors today. Built in the 11th century AD, the temple complex spans dozens of shrines around its central sanctum, dedicated to Harihara, a combined form of Shiva and Vishnu, beside the sacred Bindusagar tank. It remains a working temple at the centre of daily worship in the city long referred to as Ekamra Kshetra, the Temple City.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lingaraj_Temple_img_01.jpg/1280px-Lingaraj_Temple_img_01.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lingaraj_Temple_img_01.jpg/1280px-Lingaraj_Temple_img_01.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lingaraj_Temple_img_01.jpg/1280px-Lingaraj_Temple_img_01.jpg"],
@@ -71162,6 +71181,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across Bhubaneswar; app-based autos and bikes are also available on the same apps", available: true },
     ],
     nearbyPlaces: [
       { name: "Udayagiri & Khandagiri Caves", distance: "~7 km", type: "Heritage", isHidden: false, id: "udayagiri-khandagiri-caves" },
@@ -71202,6 +71222,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "2nd-Century BC Rock-Cut Jain Monasteries on Twin Hills",
     description: "Udayagiri and Khandagiri, two low hills on the outskirts of Bhubaneswar, hold a cluster of rock-cut caves carved under King Kharavela of the Chedi (Mahameghavahana) dynasty around the 2nd century BC — among the oldest surviving records of the era. The Hathi Gumpha (Elephant Cave) on Udayagiri carries a lengthy inscription detailing Kharavela's reign, while the Rani Gumpha (Queen's Cave) is the largest and most elaborately carved of the group. Predominantly Jain monastic dwellings, the caves are a designated Monument of National Importance maintained by the Archaeological Survey of India.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hati_Gumpha%28Caves%29.jpg/1280px-Hati_Gumpha%28Caves%29.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hati_Gumpha%28Caves%29.jpg/1280px-Hati_Gumpha%28Caves%29.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hati_Gumpha%28Caves%29.jpg/1280px-Hati_Gumpha%28Caves%29.jpg"],
@@ -71220,6 +71241,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹150–₹400 round trip", notes: "Easily arranged from central Bhubaneswar", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Lingaraja Temple", distance: "~7 km", type: "Pilgrimage", isHidden: false, id: "lingaraja-temple" },
@@ -71431,6 +71453,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "A 1960 Zoo and Botanical Garden Around a Natural Lake",
     description: "Nandankanan Zoological Park, 15 km from Bhubaneswar, opened on 29 December 1960 — the story goes that it grew out of a chance display of Odisha's native wildlife at a 1960 agricultural fair in New Delhi. Built around the natural Kanjia Lake, the park combines a zoo, botanical garden, and white tiger safari, and is recognised internationally for its long-running captive breeding programme for melanistic (black) tigers and white tigers. It remains one of eastern India's most visited wildlife destinations, with a small toy train connecting different zones of the park.",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Closed on Mondays. Verified against the park's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg/1280px-Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg/1280px-Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg/1280px-Nandankanan_Zoological_Park%2C_Entrance_fountain.jpg"],
@@ -71449,6 +71472,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹300–₹700 round trip", notes: "Easily arranged from Bhubaneswar", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹150–₹400 from central Bhubaneswar", notes: "All three apps operate reliably across Bhubaneswar and out to the park", available: true },
     ],
     nearbyPlaces: [
       { name: "Lingaraja Temple", distance: "~15 km", type: "Pilgrimage", isHidden: false, id: "lingaraja-temple" },
@@ -71600,6 +71624,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "A 10th-Century 'Gem' Bridging Two Eras of Kalinga Architecture",
     description: "Mukteswar Temple, in Bhubaneswar's old town, was built around the 10th century AD and is widely regarded as marking the transition between the simpler early phase of Kalinga temple architecture and the grander, more ornate style that followed at Lingaraja. Its best-known feature is a striking arched torana gateway carved with a mix of Buddhist and Hindu decorative motifs — a rare architectural signature not repeated at other Odisha temples — standing just in front of the main sanctum. The temple sits close to its earlier, simpler neighbour Parasurameswar Temple, letting visitors trace that architectural evolution across a short walk.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Archway_of_Mukteswar_Temple.jpg/1280px-Archway_of_Mukteswar_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Archway_of_Mukteswar_Temple.jpg/1280px-Archway_of_Mukteswar_Temple.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Archway_of_Mukteswar_Temple.jpg/1280px-Archway_of_Mukteswar_Temple.jpg"],
@@ -71618,6 +71643,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Lingaraja Temple", distance: "~1 km", type: "Pilgrimage", isHidden: false, id: "lingaraja-temple" },
@@ -71657,6 +71683,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "The 'Love Temple' — An 11th-Century Masterwork With No Presiding Deity",
     description: "Rajarani Temple, set in landscaped gardens in Bhubaneswar, is built almost entirely from a distinctive reddish-gold sandstone (locally called rajarani stone) unlike the grey and black stone used at the city's other major temples. Built around the 11th century AD, it's unusual among Odisha's temples for having no presiding deity inside its sanctum, and historians believe it was originally called Indreswara Temple. Its exterior is covered in sculpted figures, including the sensuous nayika (celestial maiden) carvings that have earned it the popular nickname 'Love Temple' — making it as much appreciated for its architecture and gardens as for any religious function.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Raja_Rani_Temple_-_I.jpg/1280px-Raja_Rani_Temple_-_I.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Raja_Rani_Temple_-_I.jpg/1280px-Raja_Rani_Temple_-_I.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Raja_Rani_Temple_-_I.jpg/1280px-Raja_Rani_Temple_-_I.jpg"],
@@ -71675,6 +71702,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Mukteswar Temple", distance: "~2 km", type: "Heritage", isHidden: false, id: "mukteswar-temple" },
@@ -71713,6 +71741,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Lalitgiri",
     state: "Odisha",
     tagline: "The Oldest of Odisha's Buddhist 'Diamond Triangle', Dating to the 1st Century AD",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Lalitgiri, set between the Birupa and Chitrotpala rivers in Cuttack district, is the oldest of the three Buddhist sites — alongside Ratnagiri and Udayagiri — that together make up Odisha's so-called Buddhist Diamond Triangle. Its monastery dates back to around the 1st century AD, making it among the oldest known Buddhist monastic sites in India, and excavations here have uncovered stupas, monastery courtyards, and a relic casket believed to contain remains associated with the Buddha himself. Locally known as Naltigiri, the site's excavated ruins and open-air museum are maintained by the Archaeological Survey of India as a Monument of National Importance.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lalitagiri_Courtyard.jpg/1280px-Lalitagiri_Courtyard.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lalitagiri_Courtyard.jpg/1280px-Lalitagiri_Courtyard.jpg",
@@ -71770,6 +71799,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Ratnagiri",
     state: "Odisha",
     tagline: "The Most Extensively Excavated Site of the Buddhist Diamond Triangle",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Ratnagiri, in Jajpur district, is the most thoroughly excavated of Odisha's three Buddhist Diamond Triangle sites, with major archaeological work carried out between 1975 and 1983. Its ruins include a large monastery complex, stupas, and an extensive collection of Buddhist sculpture — Buddha images, Tara figures, and other Vajrayana Buddhist iconography — much of which is now displayed in an on-site museum. The scale and detail of what's been uncovered here has made Ratnagiri a key reference point for historians studying the spread of later, esoteric forms of Buddhism through eastern India.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Monasteries_at_Ratnagiri%2C_Odisha.jpg/1280px-Monasteries_at_Ratnagiri%2C_Odisha.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Monasteries_at_Ratnagiri%2C_Odisha.jpg/1280px-Monasteries_at_Ratnagiri%2C_Odisha.jpg",
@@ -71827,6 +71857,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Udayagiri Buddhist Complex",
     state: "Odisha",
     tagline: "The Largest and Least-Excavated Site of the Diamond Triangle",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Udayagiri, nestled between the foothills of the Eastern Ghats in Jajpur district, is the largest and most scenic of Odisha's three Buddhist Diamond Triangle sites — though also the least excavated, leaving much of its full extent still buried. Visible remains include rows of small votive stupas, a stepped well, and monastery ruins spread across a genuinely picturesque hillside setting. It's often confused by name with the unrelated, far more famous Udayagiri and Khandagiri Caves in Bhubaneswar, but is a separate site entirely, distinguished by its Buddhist rather than Jain heritage.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Stupas_of_Udayagiri.jpg/1280px-Stupas_of_Udayagiri.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Stupas_of_Udayagiri.jpg/1280px-Stupas_of_Udayagiri.jpg",
@@ -72389,6 +72420,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Khiching",
     state: "Odisha",
     tagline: "Where a King's Unfinished Dream Was Completed by an ASI Supervisor",
+    visitingHours: { opens: "5:00 AM", closes: "10:00 PM", note: "12:00–3:00 PM afternoon recess. Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Khiching, once the citadel of the Bhanja Kings who ruled the Mayurbhanj region from 950 to 1250 AD, is home to the black-stone Kichakeswari Temple — a genuinely unusual restoration story. The original temple fell into ruin after the Bhanja dynasty's decline, and its revival began in the 1920s under Maharaja Purna Chandra Bhanja Deo, who died in 1928 before the work was finished. The task then passed to Sailendra Prasad Bose, a supervisor with the Archaeological Survey of India, who completed the temple between 1934 and 1941. The rebuilt structure honors Odisha temple architecture but, notably, lacks a jagamohana (porch), and an on-site museum displays sculpture recovered during the original excavation.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Maa_Kichakeswari_temple%2C_Khiching%2C_Mayurbhanj%2C_Odisha.jpg/1280px-Maa_Kichakeswari_temple%2C_Khiching%2C_Mayurbhanj%2C_Odisha.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Maa_Kichakeswari_temple%2C_Khiching%2C_Mayurbhanj%2C_Odisha.jpg/1280px-Maa_Kichakeswari_temple%2C_Khiching%2C_Mayurbhanj%2C_Odisha.jpg",
@@ -72445,6 +72477,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Biraja Temple",
     state: "Odisha",
     tagline: "Where the Navel of Sati Fell — One of the 51 Shakti Pithas",
+    visitingHours: { opens: "5:30 AM", closes: "9:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Biraja Temple, in Jajpur — the ancient capital of Odisha once known as Biraja Kshetra — is considered one of the 51 Shakti Pithas of the Indian subcontinent. According to legend, the navel of the goddess Sati fell here, which is how the site came to be called Navigaya, and it's said that seven generations of one's ancestors attain salvation through a visit. The presiding idol, Goddess Biraja as a two-armed Mahisamardini (slayer of the buffalo demon), is unique in India for having only two arms rather than the more common multi-armed depiction. Though associated with the Bhaumakara dynasty, the temple standing today was built in the 11th century AD under the Somavamsi rulers, desecrated when Odisha fell to the Afghans in 1568, and rebuilt in the early 19th century by a local zamindar, Sudarshan Mohapatra.",
     image: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Maa_Biraja_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Maa_Biraja_Temple.jpg",
@@ -72502,6 +72535,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Samaleswari Temple",
     state: "Odisha",
     tagline: "The Ista Devi Whose Cult Was Born From a King's Hunting Trip",
+    visitingHours: { opens: "5:00 AM", closes: "7:00 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Samaleswari Temple, in Sambalpur, is dedicated to the presiding goddess of the city and draws devotees from across western Odisha into neighbouring Chhattisgarh. Though the goddess's own origins remain uncertain, the temple's rise to prominence is tied to the Chouhan king Balaram Dev, who became ruler of the region in 1542 AD. According to popular legend, Balaram Dev was out hunting when his dogs were driven back by a hare — a moment he read as proof of a divine power watching over his kingdom, which he identified as Goddess Samaleswari. The temple's priests remain descendants of the Chouhan dynasty to this day, and its rituals carry a tantric influence alongside tribal elements, with the goddess offered both vegetarian and non-vegetarian offerings depending on the day.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Samaleswari_Temple.jpg/1280px-Samaleswari_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Samaleswari_Temple.jpg/1280px-Samaleswari_Temple.jpg",
@@ -72521,6 +72555,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Sambalpur", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹300 within Sambalpur", notes: "Both apps operate in Sambalpur; Rapido's local presence here is unconfirmed", available: true },
     ],
     nearbyPlaces: [
       { name: "Huma Leaning Temple", distance: "~23 km", type: "Heritage", isHidden: true },
@@ -72558,6 +72593,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Tara Tarini Temple",
     state: "Odisha",
     tagline: "A Shrine Built Not by a King, But by a Grieving Father's Devotion",
+    visitingHours: { opens: "5:30 AM", closes: "10:00 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Tara Tarini Temple, perched atop the Purnagiri hills above the Rushikulya river near Brahmapur, is one of the four Adi Shakti Pithas of the country, where legend holds that the breast of the goddess Sati fell — explaining the paired, breast-shaped form of its twin idols. Unusually for a major Odisha shrine, it wasn't built under royal patronage: popular legend credits a Brahmin named Basu Praharaj, who was blessed with twin daughters in a dream from the goddess, only for them to vanish as he aged — prompting a second vision instructing him to build the temple. The site has long been a seat of Tantrism, drawing even Mahayana Buddhist practitioners who shared its tantric ritual tradition, and the climb — whether by road, ropeway, or the temple's 999 steps — rewards visitors with a sweeping view over the Rushikulya's plains and the Eastern Ghats.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Taratarini_Temple.jpg/1280px-Taratarini_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Taratarini_Temple.jpg/1280px-Taratarini_Temple.jpg",
@@ -72577,6 +72613,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Ropeway / Steps / Road", cost: "₹100–₹300 for the ropeway", notes: "Choose between the motorable road, ropeway, or the 999-step climb", available: true },
+      { mode: "Uber (to the temple base from Berhampur)", cost: "₹300–₹700", notes: "Uber is confirmed operating in Berhampur; Ola's local coverage here is less certain", available: true },
     ],
     nearbyPlaces: [
       { name: "Gopalpur-on-Sea", distance: "~30 km", type: "Beach", isHidden: false, id: "gopalpur-on-sea" },
@@ -72615,6 +72652,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "A Roofless 9th-Century Temple to the Sixty-Four Feminine Powers",
     description: "Chausathi Yogini Temple, in the hamlet of Hirapur about 15 km from Bhubaneswar, is one of just four surviving yogini temples in India — a strikingly rare, circular, open-roofed structure built in the 9th century AD, attributed to Queen Hiradevi, mother of the Bhaumakara king Subhakar Dev II. Its unusual open-air design broke from standard Odisha temple architecture, likely because the yogini cult it served worshipped the five elements — air, water, fire, earth, and sky. Inside, 64 yogini figures carved from black slate ride their vahanas around the circular wall, representing offshoots of the Saptamatrika and embodiments of Shakti; unlike temples of the same era elsewhere in Odisha and central India, none of the carvings here are erotic, likely reflecting the cult's emphasis on celibacy. The temple lay forgotten until its rediscovery in 1953 by the historian Kedarnath Mohapatra.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Chausath_Yogini_temple_%28Hirapur%29.jpg/1280px-Chausath_Yogini_temple_%28Hirapur%29.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Chausath_Yogini_temple_%28Hirapur%29.jpg/1280px-Chausath_Yogini_temple_%28Hirapur%29.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Chausath_Yogini_temple_%28Hirapur%29.jpg/1280px-Chausath_Yogini_temple_%28Hirapur%29.jpg"],
@@ -72671,6 +72709,7 @@ export const DESTINATIONS: Destination[] = [
     state: "Odisha",
     tagline: "Bhubaneswar's Only Temple to Lord Vishnu, Built by a Grieving Queen",
     description: "Ananta Basudeva Temple, on the banks of Bindu Sagar Lake in Bhubaneswar, largely mirrors the layout of the nearby Lingaraja Temple but is dedicated to Lord Vishnu — making it the only Vishnu temple in a city otherwise dominated by Shiva worship. Built in the 13th century AD by Queen Chandrika Devi, daughter of King Ananga Bhima Deva III, the temple commemorates her husband, who died in battle in present-day West Bengal. Chandrika Devi was herself an accomplished dancer, musician, and devoted Vishnu worshipper, and a commemorative inscription she commissioned is now preserved at the Royal Asiatic Society in London — a cast of which was later brought back by archaeologist Paramananda Acharya. Inside, Vishnu is joined by Balabhadra and Subhadra to complete a holy trinity, but unlike the deities at the Jagannath Temple in Puri, the images here are carved in complete human form.",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ananata_Basudev_Temple.jpg/1280px-Ananata_Basudev_Temple.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ananata_Basudev_Temple.jpg/1280px-Ananata_Basudev_Temple.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ananata_Basudev_Temple.jpg/1280px-Ananata_Basudev_Temple.jpg"],
@@ -72689,6 +72728,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Lingaraja Temple", distance: "~0.5 km", type: "Pilgrimage", isHidden: false, id: "lingaraja-temple" },
@@ -72726,6 +72766,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Parasurameswar Temple",
     state: "Odisha",
     tagline: "Where Odisha Temple Architecture First Took Shape, mid-7th Century AD",
+    visitingHours: { opens: "6:30 AM", closes: "7:30 PM", note: "Verified against the temple's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Parasurameswar Temple, in Bhubaneswar, is widely regarded as the temple where Odisha's distinctive temple architecture began to take shape, built during the 7th century AD under the Shailodbhava dynasty. It's the earliest known example to attach a jagamohana (entrance hall) directly to the sanctum sanctorum — a pairing that would go on to define Odisha temple design for centuries — and its comparatively crude joints reveal a craft tradition still finding its footing. The lintel above its entrance door carries carvings of the asta graha (eight planets), an early testament to the temple's antiquity, and it's also the first Odisha temple to feature the Saptamatrika, the seven mother-goddesses believed to embody powers granted to Shakti by various gods. The presiding deity, Lord Shiva worshipped here as Parasurameswar, is honoured according to the penance of Sage Parashuram.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bhubaneshwar_ei033.jpg/1280px-Bhubaneshwar_ei033.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bhubaneshwar_ei033.jpg/1280px-Bhubaneshwar_ei033.jpg",
@@ -72745,6 +72786,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Mukteswar Temple", distance: "~0.3 km", type: "Heritage", isHidden: false, id: "mukteswar-temple" },
@@ -72782,6 +72824,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Jirang Monastery (Chandragiri)",
     state: "Odisha",
     tagline: "Odisha's 'Little Tibet' — Home to Eastern India's Largest Monastery",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Verified against the site's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Chandragiri, in the Eastern Ghats of Gajapati district, became a Tibetan settlement — Camp No. 4 — after China's 1959 invasion of Tibet forced thousands into exile; the first group of settlers arrived here on 1 May 1963. Together with the neighbouring camps of Labarasingh, Mahendragadh, and Tankilipadar, the community named their new home Phuntsokling, meaning 'land of plenty and happiness.' Its centrepiece is the Padmasambhava Monastery, popularly called Jirang Monastery — the largest monastery in eastern India, inaugurated by the Dalai Lama himself in 2010 and functioning today as both a residence and a college for young Buddhist monks from across the country. Nearby, a seated Avalokiteswara statue at Mahendragadh and a peace pagoda at the Camp No. 4 entrance round out a settlement that has, over six decades, become a genuinely distinctive corner of the Eastern Ghats.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Monastry_In_Jiranga.jpg/1280px-The_Monastry_In_Jiranga.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Monastry_In_Jiranga.jpg/1280px-The_Monastry_In_Jiranga.jpg",
@@ -72894,6 +72937,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Odisha State Museum",
     state: "Odisha",
     tagline: "A 1932 Treasure Trove Spanning Coins, Manuscripts, and a Warrior Uprising",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on Mondays and State Government holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Odisha State Museum, dating back to 1932, is the state's premier museum and a genuinely sprawling repository of its history across eras. Its Epigraphy and Numismatics Gallery draws coin collectors and historians alike, while the Natural History Segment traces the evolution of rare mammal and bird species — a particular favourite with children. The Armoury Gallery displays weapons recovered from archaeological sites alongside personal arms donated by various Odisha kings, and the Manuscript Gallery holds one of the finest collections of ancient manuscripts in the country, including palm-leaf texts preserved in partnership with INTACH, with an online catalogue available for researchers. The newest addition, the Paika Gallery, focuses on the Paika Rebellion — the uprising of Odisha's warrior clan against British imperial rule — alongside further sections on mining, geology, archaeology, anthropology, and traditional art and craft.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Bhubaneswar_State_Museum.jpg/1280px-Bhubaneswar_State_Museum.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Bhubaneswar_State_Museum.jpg/1280px-Bhubaneswar_State_Museum.jpg",
@@ -72913,6 +72957,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Tribal Museum", distance: "~2 km", type: "Museum", isHidden: false, id: "tribal-museum-bhubaneswar" },
@@ -72950,6 +72995,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Odisha State Maritime Museum",
     state: "Odisha",
     tagline: "A British-Era Boat Workshop Reborn as a Tribute to Odisha's Seafaring Past",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on Mondays and State Government holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Odisha State Maritime Museum, on the banks of the Mahanadi near Jobra in Cuttack, occupies the renovated shell of the former River Boat Construction and Repair Workshop, a British-era facility converted into the state's maritime museum in 2013. Its exhibits trace the seafaring tradition of the Sadhabas — Odisha's ancient sailors — through their navigation tools and techniques, alongside wooden boat replicas and a boat shed housing what was once the largest lathe in Asia. The original workshop itself has real history: it was built as a pre-emptive measure by British administrators after the catastrophic Odisha famine of 1866, and beyond boat-building it also managed the region's inland waterways, irrigation projects, and water distribution — the only facility of its kind under the entire Bengal Presidency. Today the museum adds a 3D show and aquarium section, regular children's painting competitions, and an open-air auditorium seating 250.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Odisha_State_Maritime_Muesuem.JPG/1280px-Odisha_State_Maritime_Muesuem.JPG",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Odisha_State_Maritime_Muesuem.JPG/1280px-Odisha_State_Maritime_Muesuem.JPG",
@@ -72969,6 +73015,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Cuttack", notes: "Easily arranged in the city", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹300 within Cuttack", notes: "Both apps operate in Cuttack; Rapido's local presence here is unconfirmed", available: true },
     ],
     nearbyPlaces: [
       { name: "Museum of Justice", distance: "~5 km", type: "Museum", isHidden: false, id: "museum-of-justice-cuttack" },
@@ -73007,6 +73054,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Odisha Crafts Museum \"Kala Bhoomi\"",
     state: "Odisha",
     tagline: "A Living Tribute to Odisha's Craftsmanship, With Working Artisans on Site",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on selected national holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Kala Bhoomi, the Odisha Crafts Museum in Bhubaneswar, is split across two purpose-built blocks: a display area showcasing handicrafts and handlooms from across the state, and a genuinely 'live' section with an outdoor amphitheatre and dedicated artisan workshop zones. The museum covers the full breadth of Odisha's craft traditions — stone carving, metalwork, pottery, handloom weaving, filigree, appliqué work, and woodcarving among them — alongside a Tribal Gallery and full-scale replicas of the Rath Yatra chariots from Puri's Jagannath Temple. Daily guided tours run in English, Hindi, and Odia at set times, and hands-on workshops let visitors actually make something themselves rather than just observe. Surrounded by greenery, with a canteen serving organic Odia food and a children's play area, the museum was established by the Odisha government to keep these craft traditions visible to a new generation.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Craft_Museum_01.jpg/1280px-Craft_Museum_01.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Craft_Museum_01.jpg/1280px-Craft_Museum_01.jpg",
@@ -73026,6 +73074,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹150–₹400 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹100–₹350 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Odisha State Museum", distance: "~10 km", type: "Museum", isHidden: false, id: "odisha-state-museum" },
@@ -73063,6 +73112,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Tribal Museum, Bhubaneswar",
     state: "Odisha",
     tagline: "The 'Museum of Man' — A 1953 Window into Odisha's 60-Plus Tribal Communities",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on Mondays and State Government holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Tribal Museum, at CRP Square in Bhubaneswar, was established in 1953 as the Museum of Tribal Arts and Artefacts and is popularly nicknamed the 'Museum of Man' — a nod to the sheer breadth of the more than 60 tribal communities native to Odisha that it documents. On display are immaculately built replicas of tribal huts from various communities, alongside artefacts covering attire, ornaments, food habits, and daily traditions, giving visitors a genuine sense of tribal life across the state rather than just an object-by-object survey. The museum's library adds a further layer of documentation for anyone wanting to go deeper, and its grounds include souvenir shops and a food court, making it a genuinely pleasant outing rather than a purely academic visit.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tribal_Museum_Bhubaneswar_Nov_2018_04.jpg/1280px-Tribal_Museum_Bhubaneswar_Nov_2018_04.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tribal_Museum_Bhubaneswar_Nov_2018_04.jpg/1280px-Tribal_Museum_Bhubaneswar_Nov_2018_04.jpg",
@@ -73082,6 +73132,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Odisha State Museum", distance: "~2 km", type: "Museum", isHidden: false, id: "odisha-state-museum" },
@@ -73119,6 +73170,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Pathani Samanta Planetarium",
     state: "Odisha",
     tagline: "Named for a Self-Taught Astronomer Whose Work Reached the 1899 European Press",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Show times: Odia 2:00 PM & 5:00 PM, Hindi 3:00 PM, English 4:00 PM. Verified against the planetarium's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Pathani Samanta Planetarium, built by Odisha's Department of Science and Technology in 1990, is one of only ten planetariums in India, designed to build public awareness of astronomy through audio-visual night-sky programs and poster shows. Its distinctive circular building, ringed with oval windows, sits in Bhubaneswar and displays a range of astronomical instruments alongside its main dome shows. The planetarium takes its name from Mahamahopadhyaya Chandrasekhar Singh Harichandan Mohapatra Samanta — better known as Pathani Samanta — a largely self-taught 'naked eye astronomer' whose seminal work Siddhanta Darpana earned a special mention in the prestigious American and European press as far back as 1899. Shows run in Odia, Hindi, and English on a schedule, letting visitors pick a language that suits them.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pathani_Samanta_planetarium_building.JPG/1280px-Pathani_Samanta_planetarium_building.JPG",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pathani_Samanta_planetarium_building.JPG/1280px-Pathani_Samanta_planetarium_building.JPG",
@@ -73138,6 +73190,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Regional Museum of Natural History", distance: "~3 km", type: "Museum", isHidden: false, id: "regional-museum-natural-history" },
@@ -73175,6 +73228,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Regional Museum of Natural History",
     state: "Odisha",
     tagline: "Home to India's Largest Baleen Whale Skeleton",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on Mondays and State Government holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Regional Museum of Natural History, set up in Bhubaneswar in 2004 under India's Ministry of Environment and Forests, is the only museum of its kind in the eastern region of the country. Its galleries range far beyond Odisha's own biodiversity, covering ecosystems from the North-East, the Andaman and Nicobar Islands, African forests, and even Madagascar. The undisputed highlight is the museum's Baleen Whale skeleton — the largest of its kind in the country — displayed alongside the skeleton of a Toothed Whale, an elephant, a rhinoceros, and skulls from a range of other whale, rhino, elephant, and tiger species. A genuinely rare exhibit, the fossilised egg of the now-extinct elephant bird, is one of only a handful found anywhere in the country, and a dedicated children's gallery with interactive displays rounds out a museum that manages to be substantive without being dry.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Regional_Museum_of_Natural_History%2CBhubaneswar.jpg/1280px-Regional_Museum_of_Natural_History%2CBhubaneswar.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Regional_Museum_of_Natural_History%2CBhubaneswar.jpg/1280px-Regional_Museum_of_Natural_History%2CBhubaneswar.jpg",
@@ -73194,6 +73248,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Bhubaneswar", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹80–₹300 within Bhubaneswar", notes: "All three apps operate reliably across the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Pathani Samanta Planetarium", distance: "~3 km", type: "Museum", isHidden: false, id: "pathani-samanta-planetarium" },
@@ -73231,6 +73286,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Museum of Justice",
     state: "Odisha",
     tagline: "India's First Judicial Museum, Set in the Ruins of a 1904 Governor's Residence",
+    visitingHours: { opens: "11:00 AM", closes: "5:00 PM", note: "Closed on Mondays and other holidays. Verified against the museum's Essentials Cheat Sheet on odishatourism.gov.in." },
     description: "Museum of Justice, set within the heritage site of Cuttack's ruined Barabati Fort, is India's first museum dedicated entirely to the judicial system, built in an Indo-Saracenic building dating to 1904. That building has a layered past of its own: originally the official residence of the Commissioner of the Province of Odisha and then the Governor, it became the residence of the Chief Justice of the Orissa High Court after the court's establishment in 1948, serving in that role until 2012. The High Court decided to convert it into a judicial museum in 2015, initially opening as the High Court Museum before being expanded and rebranded as the Museum of Justice, inaugurated on 25 February 2023 by the Governor of Odisha. Its galleries trace the evolution of the justice system from ancient through medieval, colonial, and modern times, covering eminent legal figures tied to the Orissa High Court, the freedom movement's legal dimension, customary tribal justice systems, and landmark cases and judgments.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Complex_gate_of_Museum_of_Justice%2C_Cuttack_1.jpg/1280px-Complex_gate_of_Museum_of_Justice%2C_Cuttack_1.jpg",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Complex_gate_of_Museum_of_Justice%2C_Cuttack_1.jpg/1280px-Complex_gate_of_Museum_of_Justice%2C_Cuttack_1.jpg",
@@ -73250,6 +73306,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Cuttack", notes: "Easily arranged in the city", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹300 within Cuttack", notes: "Both apps operate in Cuttack; Rapido's local presence here is unconfirmed", available: true },
     ],
     nearbyPlaces: [
       { name: "Odisha State Maritime Museum", distance: "~5 km", type: "Museum", isHidden: false, id: "odisha-state-maritime-museum" },
