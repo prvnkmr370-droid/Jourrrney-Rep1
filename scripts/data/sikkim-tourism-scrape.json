@@ -45,13 +45,22 @@
       { "name": "Goecha La", "destinationId": "goecha-la" },
       { "name": "Dzongri", "destinationId": "dzongri" },
       { "name": "Fambong Lho Wildlife Sanctuary", "destinationId": "fambong-lho-wildlife-sanctuary" },
-      { "name": "Barsey Rhododendron Sanctuary", "destinationId": "barsey-rhododendron-sanctuary" }
+      { "name": "Barsey Rhododendron Sanctuary", "destinationId": "barsey-rhododendron-sanctuary" },
+      { "name": "Ganesh Tok, Hanuman Tok & Tashi View Point", "destinationId": "gangtok-viewpoints" },
+      { "name": "Dubdi Monastery", "destinationId": "dubdi-monastery" },
+      { "name": "Sanga Choling Monastery", "destinationId": "sanga-choeling-monastery" },
+      { "name": "Rinchenpong", "destinationId": "rinchenpong" },
+      { "name": "Lachen", "destinationId": "lachen" },
+      { "name": "Gangtok Ropeway", "destinationId": "gangtok-ropeway" },
+      { "name": "Singshore Bridge", "destinationId": "singshore-bridge" },
+      { "name": "Kabi Lungchok", "destinationId": "kabi-lungchok" },
+      { "name": "Teesta River (rafting)", "destinationId": "teesta-river-rafting" }
     ],
     "notYetBuilt_tier1": [],
     "notYetBuilt_tier2": [
-      "Ganesh Tok", "Hanuman Tok", "Tashi View Point", "Dubdi Monastery", "Sanga Choling Monastery",
-      "Rinchenpong", "Tendong Hill", "Maenam Hill", "Teesta River (rafting)", "Lachen", "Gangtok Ropeway",
-      "Singshore Bridge", "Kabi Lungchok", "Namchi Rock Garden"
+      "Tendong Hill — deferred: no Wikipedia article or Wikimedia Commons images found for this specific site.",
+      "Maenam Hill — deferred: no Wikimedia Commons images found (Maenam Wildlife Sanctuary itself is verified with facts, but no usable image located).",
+      "Namchi Rock Garden — deferred: no Wikipedia article or Wikimedia Commons images found for this specific site."
     ]
   },
   "places": {}
