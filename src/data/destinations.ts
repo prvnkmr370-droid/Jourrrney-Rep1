@@ -69157,8 +69157,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/34/Chestnut_Bunting_Dzuleke_Nagaland_India_05.11.2019.jpg",
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/3/34/Chestnut_Bunting_Dzuleke_Nagaland_India_05.11.2019.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Jewellery_making_in_Nagaland.jpg/500px-Jewellery_making_in_Nagaland.jpg",
     ],
-    imageCredit: "Photo: Dibyendu Ash, via Wikimedia Commons (CC BY 4.0)",
+    imageCredit: "Photos: Dibyendu Ash, CC BY 4.0; Avantikac98, CC BY-SA 4.0, captioned \"A man makes traditional Angami jewellery in Dzuleke, Nagaland\", structured-data confirms depicts Dzuleke — both Wikimedia Commons.",
     category: ["Nature", "Culture", "Adventure"],
     bestSeason: "October – April (pleasant weather); November for peak birdwatching",
     duration: "1–2 days",
