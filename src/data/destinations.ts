@@ -48351,6 +48351,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "The Konark-style stone chariot temple form" },
       { name: "Ornately carved horses appearing to draw the chariot" },
@@ -48367,6 +48368,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,500–₹2,800 round trip", notes: "Often combined with a Dassam Falls visit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dassam Falls", distance: "~20 km", type: "Waterfall", isHidden: false, id: "dassam-falls" },
@@ -48411,6 +48413,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museums"],
     bestSeason: "Year-round (indoor attraction)",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [
       { name: "The Fun Science and \"How Things Work\" interactive galleries" },
       { name: "The Resources of Jharkhand Gallery on the state's mineral wealth" },
@@ -48427,6 +48430,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tagore Hill", distance: "~2 km", type: "Heritage Hill", isHidden: false, id: "tagore-hill" },
@@ -48470,6 +48474,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museums", "Heritage"],
     bestSeason: "Year-round (indoor attraction)",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [
       { name: "12th-century Uma Maheshwar stone sculpture from Icha Garh" },
       { name: "18th-century Nritya Ganesha carving from Ichagarh" },
@@ -48486,6 +48491,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~10 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -48546,6 +48552,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this secluded site — a local taxi from Ghatshila is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dalma Wildlife Sanctuary", distance: "~45 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
@@ -48606,6 +48613,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Reserve Vehicle/Jeep", cost: "Included with reserve entry or ₹1,500-3,000", notes: "Access within the tiger reserve typically requires an authorized vehicle", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage inside the tiger reserve — only authorized reserve vehicles operate here", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~15 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
@@ -48668,6 +48676,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Hazaribagh town to the sanctuary", available: true },
       { mode: "Forest Department Jeep", cost: "₹1,000–₹2,500", notes: "For exploring deeper into the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the sanctuary — a local taxi from Hazaribagh town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~110 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
@@ -48711,6 +48720,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [
       { name: "The Shiva shrine founded under Baba Amarnath's guidance" },
       { name: "An actively used pilgrimage site with a lively prasad market" },
@@ -48727,6 +48737,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From nearby towns to Bagodar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bagodar is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Parasnath Hill (Shikharji)", distance: "~40 km", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
@@ -48770,6 +48781,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "An active ashram — visiting hours can be restricted; check ahead." },
     highlights: [
       { name: "The 1917 ashram founded by Paramahansa Yogananda" },
       { name: "Colonial-era architecture with a central fountain courtyard" },
@@ -48786,6 +48798,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pahari Mandir (Ranchi Hill)", distance: "~5 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
