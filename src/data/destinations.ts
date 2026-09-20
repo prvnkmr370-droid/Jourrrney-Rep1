@@ -23254,6 +23254,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "14 Major Rock Edicts of Emperor Ashoka, inscribed c. 250 BCE in Brahmi script" },
       { name: "Rediscovered by James Tod in 1822" },
@@ -23268,6 +23269,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Junagadh town", notes: "Standard way to reach the site, near the base of Girnar Hill", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Girnar Hill", distance: "Adjoining", type: "Pilgrimage Trek", isHidden: true, id: "girnar-hill" },
@@ -23314,6 +23316,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Guided tour slots run on a schedule — book ahead where possible; closed Sundays." },
     highlights: [
       { name: "Free, guided two-hour factory tour of the butter and milk-powder plant" },
       { name: "Founded 1946 as the Kaira District Co-operative, the model behind Operation Flood" },
@@ -23328,6 +23331,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Anand town", notes: "Standard way to reach the plant from Anand's town centre or railway station", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Anand is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "~65 km", type: "City", isHidden: false, id: "vadodara" },
