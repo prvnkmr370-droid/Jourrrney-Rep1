@@ -46878,6 +46878,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/Bike", cost: "₹1,500–₹3,000 round trip", notes: "The scenic drive itself is the main activity", available: true },
       { mode: "Self-drive", cost: "Fuel only", notes: "A popular self-drive/biking route from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Topchanchi Lake", distance: "~55 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
@@ -46939,6 +46940,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹100–₹300", notes: "Runs from Ranchi, especially in winter", available: true },
       { mode: "Private Taxi", cost: "₹1,500–₹2,500 round trip", notes: "The most convenient way from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a shared or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patratu Valley", distance: "~40 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
@@ -47000,6 +47002,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Dhanbad to the lake", available: true },
       { mode: "Boating", cost: "₹50–₹150", notes: "Seasonal boating on the lake, subject to availability", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dhanbad is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patratu Valley", distance: "~55 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
@@ -47044,6 +47047,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "2–4 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "The musical fountain runs as a separate timed evening show." },
     highlights: [
       { name: "The Mughal-style water channels and floral clock" },
       { name: "The evening musical/dancing fountain" },
@@ -47061,6 +47065,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹50–₹200", notes: "From anywhere in central Jamshedpur", available: true },
       { mode: "Walking", cost: "Free", notes: "Easily walkable from many central Jamshedpur neighborhoods", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamshedpur is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dalma Wildlife Sanctuary", distance: "~13 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
@@ -47122,6 +47127,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From central Jamshedpur to the lake", available: true },
       { mode: "Boating", cost: "₹50–₹150", notes: "Seasonal boating on the lake", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamshedpur is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jubilee Park", distance: "~13 km", type: "City Park", isHidden: false, id: "jubilee-park" },
@@ -47167,6 +47173,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March (avoid peak Shravani Mela crowds in Shravan, July–August, unless seeking the pilgrimage experience)",
     duration: "2–3 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Extended hours during the Shravani Mela." },
     highlights: [
       { name: "The Basukinath Shiva shrine, the traditional second stop after Baidyanath Dham" },
       { name: "The bustling prasad and souvenir market lining the temple approach" },
@@ -47185,6 +47192,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw", cost: "₹50–₹150", notes: "From the bus stand or nearby hotels to the temple", available: true },
       { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Common for short hops within town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small temple town is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baidyanath Dham", distance: "~45 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
@@ -47228,6 +47236,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [
       { name: "The Maa Chhinnamasta Temple, one of the ten Mahavidya Shakti Peethas" },
       { name: "The confluence of the Bhairavi and Damodar rivers" },
@@ -47246,6 +47255,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ramgarh to the temple complex", available: true },
       { mode: "Private Taxi", cost: "₹2,000–₹3,500 round trip", notes: "The most convenient way from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ramgarh is unconfirmed — a local or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patratu Valley", distance: "~45 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
@@ -47290,6 +47300,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "The Bhadrakali Temple, sacred to Hindus, Buddhists, and Jains alike" },
       { name: "The Sahastrakoot Jinalaya with its 1,008 carved Tirthankar figures" },
@@ -47308,6 +47319,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From nearby towns to the temple complex", available: true },
       { mode: "Private Taxi", cost: "₹1,500–₹3,000 round trip", notes: "The most practical way to reach this relatively remote site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote site — a local or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~90 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
