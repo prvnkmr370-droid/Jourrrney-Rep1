@@ -62920,6 +62920,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Registered safari gypsy with guide", cost: "Per-jeep safari fee + core/buffer permit + compulsory guide", notes: "All park movement is in a registered gypsy with a compulsory forest guide on booked permits; permits are limited and sell out fast for peak dates. Buffer safaris are easier to get and still good", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage at the gates — lodges arrange the Nagpur/Chandrapur transfer, and the reserve itself is only entered by registered safari jeep", available: false },
     ],
     nearbyPlaces: [
       { name: "Nagpur", distance: "~140 km", type: "City & Vidarbha Gateway", isHidden: false, id: "nagpur" },
@@ -64635,6 +64636,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired taxi / auto; own vehicle", cost: "Half-day taxi for the viewpoint circuit; separate arrangement for Melghat safari", notes: "The viewpoints are spread over a few km of hill roads; a hired taxi or auto for a half-day covers them. Melghat safaris are booked separately through the forest department at Semadoh/Harisal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage up this hill town — a hired taxi or auto covers the viewpoint circuit", available: false },
     ],
     nearbyPlaces: [
       { name: "Melghat Tiger Reserve (Semadoh)", distance: "~30–35 km", type: "Tiger Reserve & Eco-tourism", isHidden: true },
