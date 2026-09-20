@@ -6268,6 +6268,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "The evening Sound & Light Show at the Western Group runs separately, around 6:30 PM." },
     highlights: [{ name: "Western Temple Group (UNESCO)" }, { name: "Kandariya Mahadeva Temple" }, { name: "Khajuraho Dance Festival (Feb)" }, { name: "Raneh Falls" }, { name: "Panna Tiger Reserve" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "1.5h direct to Khajuraho Airport", fromMumbai: "Via Delhi – 3.5h total", fromBangalore: "Via Delhi – 4h", duration: "1.5h from Delhi direct", costRange: "₹3,500–₹12,000", tips: "Khajuraho has its own small airport — direct flights from Delhi. Easiest way to reach. Cab to town: ₹150." },
@@ -6284,6 +6285,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹80–₹400", notes: "Hire for day visit to Eastern and Southern groups", available: true },
       { mode: "Bicycle Rental", cost: "₹100–₹150/day", notes: "Ideal — temple groups are within 3 km of each other", available: true },
       { mode: "Taxi", cost: "₹800–₹1,500/day", notes: "For Raneh Falls and Panna day trips", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Khajuraho is unconfirmed — cycle rickshaws, autos and hired taxis cover the town easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Panna Tiger Reserve", distance: "45 km", type: "Wildlife Safari", isHidden: false },
@@ -6403,6 +6405,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Spiritual"],
     bestSeason: "October – March",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed World Heritage Site." },
     highlights: [{ name: "The Great Stupa (Stupa 1)" }, { name: "Four carved gateways (toranas)" }, { name: "Sanchi Archaeological Museum" }, { name: "Stupas 2 and 3, elsewhere on the hill" }, { name: "Ashoka Pillar remains" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bhopal, then ~45 min road — ~7.5–8.5h total", fromMumbai: "Via Bhopal — ~14–15h", fromBangalore: "Via Bhopal — 20h+", duration: "~45 min from Bhopal", costRange: "₹400–₹1,800 (train to Bhopal) + ₹300–₹600 (local transfer)", tips: "Sanchi has its own small railway station, but Bhopal is the practical hub for long-distance travel." },
@@ -6416,6 +6419,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The stupa hill and its structures are explored entirely on foot", available: true },
       { mode: "Taxi (from Bhopal)", cost: "₹800–₹1,500 round trip", notes: "The standard way to visit", available: true },
+      { mode: "Ola / Uber", cost: "₹800–₹1,500 one-way from Bhopal", notes: "Bookable from Bhopal, though a round-trip taxi is the more common option for the day trip", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhopal", distance: "46 km", type: "Heritage", isHidden: false, id: "bhopal" },
@@ -6466,6 +6470,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "For Gwalior Fort. Jai Vilas Palace (Scindia Museum) keeps separate, shorter hours, roughly 10 AM–5 PM, closed Wednesdays." },
     highlights: [{ name: "Gwalior Fort & Man Singh Palace" }, { name: "Jai Vilas Palace (Scindia Museum)" }, { name: "Tansen's Tomb & the annual Tansen Music Festival" }, { name: "Saas-Bahu Temples, inside the fort" }, { name: "Gujari Mahal Archaeological Museum" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Gatimaan/Shatabdi Express — ~3–3.5h", fromMumbai: "~16–17h", fromBangalore: "Via Delhi — 24h+", duration: "~3–3.5h from Delhi", costRange: "₹400–₹1,800", tips: "Gwalior Junction is a major stop on the Delhi–Mumbai/Chennai lines, genuinely fast from Delhi via the Gatimaan Express." },
@@ -6532,6 +6537,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March (Simhastha Kumbh Mela occurs roughly every 12 years — a genuinely massive, crowded event if it coincides with your visit)",
     duration: "1–2 days",
+    visitingHours: { opens: "4:00 AM", closes: "11:00 PM", note: "The pre-dawn Bhasma Aarti at Mahakaleshwar needs separate advance booking; queues are longest on Mondays and during festivals." },
     highlights: [{ name: "Mahakaleshwar Jyotirlinga Temple" }, { name: "Ram Ghat, Kshipra River" }, { name: "Kal Bhairav Temple" }, { name: "Vedh Shala (Jantar Mantar observatory)" }, { name: "Kaliadeh Palace" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bhopal or direct — ~11–13h", fromMumbai: "~11–12h direct", fromBangalore: "Via Bhopal — 20h+", duration: "~11–13h from Delhi; ~11–12h from Mumbai", costRange: "₹400–₹1,800", tips: "Ujjain Junction is well-connected; combining with Indore (55 km) is common since Indore has better air connectivity." },
