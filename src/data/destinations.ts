@@ -25486,6 +25486,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Srirangapatna_fort_panorama.jpg/1280px-Srirangapatna_fort_panorama.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Srirangapatna_fort_panorama.jpg/1280px-Srirangapatna_fort_panorama.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Delhi_Gate%2C_Srirangapatna.jpg/1280px-Delhi_Gate%2C_Srirangapatna.jpg"],
     imageCredit: "Photos: Ssriram mt, ChinyaSuhail — Wikimedia Commons, CC BY 4.0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "For the Daria Daulat Bagh palace museum. The fort itself is open sunrise to sunset, and the Gumbaz mausoleum keeps a longer 8 AM–6:30 PM window." },
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "3–4 hours",
@@ -25503,6 +25504,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹300–₹700 from Mysuru", notes: "Standard way to reach Srirangapatna", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹250–₹500 one-way from Mysuru", notes: "Bookable from central Mysuru; all three apps operate reliably this close to the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~15 km", type: "City", isHidden: false, id: "mysuru" },
@@ -25598,6 +25600,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg/1280px-Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg/1280px-Sunrise_%40_Nandi_Hills%2C_Bangalore%2C_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nandi_at_Nandi_Hills-1.jpg/1280px-Nandi_at_Nandi_Hills-1.jpg"],
     imageCredit: "Photos: Vipul ji, Aranyaparva — Wikimedia Commons, CC BY-SA 3.0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "The fortress gate for sightseeing closes at 6 PM; the hilltop itself stays open until 10 PM, but only for guests of the hotel up there." },
     category: ["Nature", "Heritage"],
     bestSeason: "October – February (year-round for sunrise trips)",
     duration: "Half day",
@@ -25615,6 +25618,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Bengaluru)", cost: "₹1,200–₹2,500", notes: "Standard way to visit, especially for a pre-dawn sunrise trip", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹1,000–₹2,000 one-way from Bengaluru", notes: "Bookable from central Bengaluru, though pre-dawn sunrise-hour pickups can be harder to find this far out — most visitors book a round trip in advance instead", available: true },
     ],
     nearbyPlaces: [
       { name: "Bengaluru", distance: "~60 km", type: "City", isHidden: false, id: "bengaluru" },
@@ -25899,6 +25903,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Mysuru", notes: "Standard way to reach Talakadu", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Mysuru (~45 km, rural roads) is unconfirmed — a hired taxi is the practical way to reach the riverside site", available: false },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~45 km", type: "City", isHidden: false, id: "mysuru" },
@@ -26396,6 +26401,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg/1280px-Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg/1280px-Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Musical_Fountain_Show_at_Brindavan_Gardens%2C_Mysore_-_1.jpg/1280px-Musical_Fountain_Show_at_Brindavan_Gardens%2C_Mysore_-_1.jpg"],
     imageCredit: "Photos: Gpkp, Iamvivekkj — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "8:00 AM", closes: "9:00 PM", note: "Ticket sales stop 30 minutes before closing. The musical fountain runs after sunset — around 6:30 and 7:30 PM on weekdays, 8:30 PM on weekends." },
     category: ["Nature", "Culture"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -26413,6 +26419,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹300–₹700 from Mysuru", notes: "Standard way to reach the gardens", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹200–₹400 one-way from Mysuru", notes: "All three apps operate reliably this close to the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~12 km", type: "City", isHidden: false, id: "mysuru" },
@@ -52625,6 +52632,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Melukote%2C_Karnataka_IMG_8348_%2844707829102%29.jpg/1280px-Melukote%2C_Karnataka_IMG_8348_%2844707829102%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the hilltop temple at Melukote (GFDL 1.2) and the carved pillars around the sacred Kalyani tank (CC0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "7:30 AM", closes: "8:00 PM", note: "Darshan runs in two windows with a midday closure in between, and the exact break shifts by day of the week — check locally if timing your visit around darshan." },
     category: ["Religious", "Heritage"],
     bestSeason: "November – March",
     duration: "Half day to 1 day",
@@ -52644,6 +52652,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹150", notes: "The town is compact; a short climb or auto ride reaches the hilltop temple", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Mysuru (~50 km, rural roads) is unconfirmed — a hired taxi or bus from Mysuru/Mandya is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~50 km", type: "Heritage City", isHidden: false, id: "mysuru" },
@@ -52886,6 +52895,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pillared_entrance_into_the_Srikanteshwara_temple_complex_at_Nanjangud.jpg/1280px-Pillared_entrance_into_the_Srikanteshwara_temple_complex_at_Nanjangud.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Srikanteshwara Temple gopuram with a festival chariot (CC0) and the carved pillars of the temple's entrance mandapa (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "8:30 PM", note: "Open straight through on Sundays and Mondays; other days close midday, roughly 1–4 PM." },
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "Half day",
@@ -52905,6 +52915,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹150", notes: "The temple is in the town centre and easily walked to from the bus/rail stops", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹500–₹900 one-way from Mysuru", notes: "Bookable from Mysuru; a genuine town with its own local infrastructure, so coverage is more reliable than at rural monument sites", available: true },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~23 km", type: "Heritage City", isHidden: false, id: "mysuru" },
@@ -53035,6 +53046,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Taxi", cost: "₹500–₹2,000", notes: "A vehicle is needed to reach the hill and Namada Chilume; the hilltop temple is a short climb on foot", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage reaches Tumakuru city (~17 km away) but is unconfirmed for the hill itself — a hired taxi is the practical way up", available: false },
     ],
     nearbyPlaces: [
       { name: "Shivagange", distance: "~30 km", type: "Hill / Temple", isHidden: true, id: "shivagange" },
@@ -53945,6 +53957,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Taxi", cost: "₹300–₹2,000", notes: "A vehicle is easiest; the temple and Nandi Hills base are close together", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹800–₹1,600 one-way from Bengaluru", notes: "Bookable from central Bengaluru, though a return pickup at the temple itself can take longer to arrive than in the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Nandi Hills", distance: "~6 km", type: "Hill Station", isHidden: false, id: "nandi-hills" },
@@ -55099,6 +55112,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Parapet_wall_relief_in_the_Chennakeshava_temple_at_Somanathapura.jpg/1280px-Parapet_wall_relief_in_the_Chennakeshava_temple_at_Somanathapura.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Keshava temple on its star-shaped platform (CC BY-SA 3.0) and a detail of the carved wall friezes (CC BY-SA 3.0). Core details (1268 CE, Somanatha Dandanayaka under Narasimha III, trikuta plan, star platform, soapstone friezes of the epics, no active worship, ASI-protected, ~35 km from Mysuru) verified against the official Karnataka Tourism site (karnatakatourism.org); the 2023 UNESCO 'Sacred Ensembles of the Hoysalas' inscription is from UNESCO's own listing.",
+    visitingHours: { opens: "8:30 AM", closes: "5:30 PM", note: "Closed midday, roughly 1:30–3:30 PM. ASI staff clear the grounds by 6 PM." },
     category: ["Heritage", "History", "UNESCO"],
     bestSeason: "October – February",
     duration: "1–2 hours",
@@ -55118,6 +55132,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Bus", cost: "₹40–₹2,500", notes: "Taxi from Mysuru (often a combined Somanathapura–Talakadu–Shivanasamudra circuit); buses via T. Narsipur", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Mysuru (~35 km, rural roads) is unconfirmed — a hired taxi is the practical way to reach the village", available: false },
     ],
     nearbyPlaces: [
       { name: "Talakadu", distance: "~30 km", type: "Buried Temple Town", isHidden: false, id: "talakadu" },
@@ -55164,6 +55179,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Assorted_Birds_Perched_Ranganathittu_Jan24_A7C_09023.jpg/1280px-Assorted_Birds_Perched_Ranganathittu_Jan24_A7C_09023.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — tour boats among the wooded Cauvery islands at Ranganathittu (CC BY-SA 4.0) and painted storks, pelicans, and other waterbirds perched over the river (CC BY-SA 4.0). Details verified against the official Karnataka Tourism site (karnatakatourism.org), which places it on the Cauvery, gives 9 AM–6 PM hours, cites a ~16 km drive from Mysore, and describes migratory birds in the thousands.",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Verified against the official Karnataka Tourism site (karnatakatourism.org)." },
     category: ["Wildlife", "Nature"],
     bestSeason: "June – November (breeding season); year-round for boat trips",
     duration: "2–3 hours",
@@ -55183,6 +55199,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Shared Boat / Taxi", cost: "₹50–₹1,500", notes: "Government shared boats from the jetty (private boats cost more); taxi from Mysuru/Srirangapatna", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹300–₹600 one-way from Mysuru", notes: "All three apps operate reliably this close to Mysuru and Srirangapatna", available: true },
     ],
     nearbyPlaces: [
       { name: "Srirangapatna", distance: "~4 km", type: "Island Fort Town", isHidden: false, id: "srirangapatna" },
@@ -55819,6 +55836,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bannerghatta_National_Park_%28Bannerghatta_Biological_Park%29.jpg/1280px-Bannerghatta_National_Park_%28Bannerghatta_Biological_Park%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — an elephant family (CC BY-SA 4.0) and deer (CC BY-SA 4.0) at Bannerghatta National Park / Bannerghatta Biological Park. Details verified against the official Karnataka Tourism site (karnatakatourism.org), which describes Bannerghatta Biological Park in Bengaluru with India's first lion and tiger safari, a butterfly park, and a nature camp.",
+    visitingHours: { opens: "9:30 AM", closes: "5:00 PM", note: "Closed on Tuesdays. Bus safari runs on its own slots, roughly 10 AM–4:30 PM." },
     category: ["Wildlife", "Picnic Spots"],
     bestSeason: "October – February (year-round; go early any day)",
     duration: "Half day",
@@ -55838,6 +55856,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Park Safari Bus", cost: "Included in the safari ticket", notes: "The safari is on a park-run caged bus; the zoo and butterfly park are walked", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹400–₹800 one-way from central Bengaluru", notes: "Runs reliably to the park gate from anywhere in Bengaluru", available: true },
     ],
     nearbyPlaces: [
       { name: "Bengaluru", distance: "~22 km", type: "City", isHidden: false, id: "bengaluru" },
@@ -59143,6 +59162,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto + climb on foot", cost: "₹50–₹500", notes: "Autos from Dobbaspet to the base; the hill is climbed on foot on the stepped, chain-assisted path", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹700–₹1,400 one-way from Bengaluru", notes: "Bookable from central Bengaluru; coverage right at the hill base near Dobbaspet is thinner, so most book a round trip", available: true },
     ],
     nearbyPlaces: [
       { name: "Bengaluru", distance: "~55 km", type: "City", isHidden: false, id: "bengaluru" },
