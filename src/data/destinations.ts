@@ -26798,6 +26798,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/09/Sree_Padmanabhaswamy_temple_Thiruvananthapuram%2C.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/09/Sree_Padmanabhaswamy_temple_Thiruvananthapuram%2C.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Napier_Museum_Thiruvananthapuram_by_KS.jpg/1280px-Napier_Museum_Thiruvananthapuram_by_KS.jpg"],
     imageCredit: "Photos: Alaison bennny, Krissubh — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "3:30 AM", closes: "7:20 PM", note: "For the Sree Padmanabhaswamy Temple, run across several separate darshan slots through the day with a midday break; entry is Hindus only, with a strict dress code (dhoti for men, no western wear for women)." },
     category: ["Heritage", "Culture", "Spiritual"],
     bestSeason: "November – February",
     duration: "2–3 days",
@@ -26873,6 +26874,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Walking", cost: "₹50–₹200", notes: "The cliff area itself is very walkable", available: true },
+      { mode: "Ola / Uber", cost: "₹150–₹400", notes: "Both operate in Varkala itself, unlike most small Kerala beach towns", available: true },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~50 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
@@ -26913,6 +26915,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lighthouse_at_Kovalam_Beach%2C_Thiruvananthapuram.jpg/1280px-Lighthouse_at_Kovalam_Beach%2C_Thiruvananthapuram.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Lighthouse_at_Kovalam_Beach%2C_Thiruvananthapuram.jpg/1280px-Lighthouse_at_Kovalam_Beach%2C_Thiruvananthapuram.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kovalam_beach_trivandrum_kerala.jpg/1280px-Kovalam_beach_trivandrum_kerala.jpg"],
     imageCredit: "Photos: Amitbalani, Georgeumartin — Wikimedia Commons, CC0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "For climbing the Vizhinjam Lighthouse itself, with a midday break and closed Mondays; the beach has no fixed hours." },
     category: ["Beach"],
     bestSeason: "November – February",
     duration: "2–3 days",
@@ -26930,6 +26933,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Walking", cost: "₹50–₹250", notes: "The main beach coves are close together and walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Bookable for a drop at Kovalam from the airport or railway station, but not for pickups from within the beach area itself — the taxi stand there won't release rides to app cabs", available: false },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~16 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
@@ -27136,6 +27140,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Forecourt_Padmanabhapuram_Palace_Mar24_A7C_10099.jpg/1280px-Forecourt_Padmanabhapuram_Palace_Mar24_A7C_10099.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Forecourt_Padmanabhapuram_Palace_Mar24_A7C_10099.jpg/1280px-Forecourt_Padmanabhapuram_Palace_Mar24_A7C_10099.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Interior_Courtyard_Padmanabhapuram_Palace_Mar24_A7C_10143.jpg/1280px-Interior_Courtyard_Padmanabhapuram_Palace_Mar24_A7C_10143.jpg"],
     imageCredit: "Photos: Timothy A. Gonsalves — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "Closed Mondays and national holidays, with a midday break roughly 12:30–2 PM. Verified against the palace's own site (padmanabhapurampalace.org)." },
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "2–3 hours",
@@ -27153,6 +27158,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Thiruvananthapuram", notes: "Standard way to reach the palace", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Thiruvananthapuram is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~65 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
@@ -27379,6 +27385,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹150–₹400", notes: "Standard way to get around locally", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Thiruvananthapuram is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~61 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
@@ -56901,6 +56908,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Thangassery_Fort_2024.jpg/1280px-Thangassery_Fort_2024.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the spiral-banded Thangassery Lighthouse, Kollam (CC BY-SA 4.0), and the laterite ruins of St Thomas (Thangassery) Fort (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "For climbing the lighthouse, closed Mondays, with a midday break roughly 1–2 PM. The fort ruins, churches and shore have no fixed hours." },
     category: ["Heritage", "History", "Beach"],
     bestSeason: "October – March",
     duration: "Half day",
@@ -56920,6 +56928,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / City Bus / Walking", cost: "₹15–₹250", notes: "Autos and city buses from Kollam; the lighthouse, fort ruins and churches are within walking distance of each other", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹250", notes: "Both operate in Kollam city, this close to the centre", available: true },
     ],
     nearbyPlaces: [
       { name: "Kollam & Ashtamudi Lake", distance: "~4 km", type: "Backwater City", isHidden: false, id: "kollam-ashtamudi" },
@@ -57903,6 +57912,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Jatayu_%281%29_01.jpg/1280px-Jatayu_%281%29_01.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the giant Jatayu sculpture at Jatayu Earth's Center, Chadayamangalam (CC BY-SA 4.0), and a close view of the sculpture's head and talon (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Last cable car / entry typically well before closing — arrive with time to spare for the adventure-zone activities." },
     category: ["Adventure", "Family", "Scenic"],
     bestSeason: "October – February (clear, cooler days; the hilltop is exposed)",
     duration: "Half day",
@@ -57922,6 +57932,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Cable car / hill buggy / walking", cost: "Cable car and buggy fares are part of the ticket packages", notes: "From the base, the cable car or a buggy road (or a stepped walk) reaches the hilltop; the sculpture and zones are then explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "₹800–₹1,500 one-way from Kollam/Trivandrum", notes: "Bookable to the site from either city, though buses on the MC Road are the more typical way in", available: true },
     ],
     nearbyPlaces: [
       { name: "Kollam & Ashtamudi Lake", distance: "~35 km", type: "Backwater City", isHidden: false, id: "kollam-ashtamudi" },
@@ -58168,6 +58179,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Anchuthengu_Fort_2024_01.jpg/1280px-Anchuthengu_Fort_2024_01.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — an aerial view of the sea-side Anchuthengu (Anjengo) Fort (CC BY-SA 4.0), and the ruined laterite barracks/storehouse wall inside the fort (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-protected and free to enter during daylight hours." },
     category: ["Heritage", "History", "Beach"],
     bestSeason: "October – March",
     duration: "1 – 2 hours",
@@ -58187,6 +58199,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Walking", cost: "₹30–₹400", notes: "Autos from Kadakkavur and Varkala; the fort, cemetery, lighthouse and shore are within walking distance of each other", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Anchuthengu is unconfirmed — autos from Varkala or Kadakkavur are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Varkala Beach", distance: "~12 km", type: "Cliff Beach", isHidden: false, id: "varkala-beach" },
@@ -58370,6 +58383,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lions_in_Safari_Park_Neyyar.jpg/1280px-Lions_in_Safari_Park_Neyyar.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the forest-ringed Neyyar reservoir (CC BY-SA 4.0), and lionesses in the Neyyar Lion Safari Park (CC0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "4:00 PM", note: "Some sources list a wider 8 AM–7 PM or 9 AM–5 PM window; confirm locally, as the sanctuary is closed some Mondays." },
     category: ["Wildlife", "Nature", "Family"],
     bestSeason: "November – March (Agasthyakoodam trek runs only ~Jan–Mar, by permit)",
     duration: "Half day (day trip from Trivandrum)",
@@ -58389,6 +58403,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari vehicle / boat / auto", cost: "Ticketed (safari, boat); ₹30–₹400 autos", notes: "The Lion Safari is toured by the park vehicle; the reservoir by ticketed boat; autos and buses reach the dam from Kattakada", available: true },
+      { mode: "Ola / Uber", cost: "₹500–₹900 one-way from Trivandrum", notes: "Bookable from central Thiruvananthapuram, though buses via Kattakada are the more typical local option", available: true },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~30 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
@@ -58722,6 +58737,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / City Bus / Walking", cost: "₹20–₹400", notes: "Autos and city buses from Thiruvananthapuram; the dam, temple and riverbank are walked", available: true },
+      { mode: "Ola / Uber", cost: "₹200–₹400 one-way from Trivandrum", notes: "Bookable from central Thiruvananthapuram, this close to the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Thiruvananthapuram", distance: "~16 km", type: "City", isHidden: false, id: "thiruvananthapuram" },
