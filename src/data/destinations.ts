@@ -23894,6 +23894,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi (round trip from Jaisalmer)", cost: "₹800–₹1,800", notes: "Standard way to reach the dunes for a day visit", available: true },
       { mode: "Camel Safari", cost: "₹300–₹800 per person (approx.)", notes: "The classic way to explore the dunes themselves", available: true },
       { mode: "Jeep/ATV Safari", cost: "₹500–₹1,500 per person (approx.)", notes: "A faster alternative to camel rides", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this far from Jaisalmer — a hired taxi round trip or camp transport is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jaisalmer", distance: "~40 km", type: "City", isHidden: false, id: "jaisalmer" },
@@ -23937,6 +23938,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Founded c. 1291 CE by Paliwal Brahmins, prosperous for over 500 years" },
       { name: "Genuine desert-engineering skill — stepwells, water channels, and rainwater harvesting" },
@@ -23951,6 +23953,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Jaisalmer)", cost: "₹500–₹1,200", notes: "Standard way to visit, often combined with Sam Sand Dunes", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi round trip from Jaisalmer is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jaisalmer", distance: "~17 km", type: "City", isHidden: false, id: "jaisalmer" },
@@ -23994,6 +23997,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily; the fountains themselves typically run only on select festival days." },
     highlights: [
       { name: "Built mid-18th century by Jat rulers Badan Singh, Jawahar Singh, and Suraj Mal" },
       { name: "~900 fountains fed by the Rup Sagar and Gopal Sagar tanks, traditionally run without pumps" },
@@ -24008,6 +24012,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹800–₹1,800 from Bharatpur", notes: "Standard way to reach Deeg", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Bharatpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bharatpur", distance: "~32 km", type: "City", isHidden: false, id: "bharatpur" },
@@ -24050,6 +24055,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Day-visitor hours for the grounds; overnight guests keep separate hours." },
     highlights: [
       { name: "Built 1845 by Maharaja Vinay Singh of Alwar as a royal retreat and hunting lodge" },
       { name: "Siliserh Lake, created the same year, once supplied water to Alwar city" },
@@ -24064,6 +24070,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹400–₹900 from Alwar", notes: "Standard way to reach the lake and palace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Alwar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Alwar", distance: "~16 km", type: "City", isHidden: false, id: "alwar" },
@@ -24121,6 +24128,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Jeep (round trip from Jodhpur)", cost: "₹800–₹1,800", notes: "Standard way to visit; often bundled as a multi-stop 'village safari'", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in the Bishnoi villages — a hired taxi/jeep from Jodhpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jodhpur", distance: "~25 km", type: "City", isHidden: false, id: "jodhpur" },
@@ -24177,6 +24185,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest Department Jeep Safari", cost: "₹1,500–₹3,000 per jeep (approx.)", notes: "The standard way to explore the sanctuary; book in advance", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage inside or near the sanctuary — a forest department jeep is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Kumbhalgarh Fort", distance: "Adjoining", type: "Heritage", isHidden: false, id: "kumbhalgarh" },
