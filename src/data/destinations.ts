@@ -23526,6 +23526,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "3–4 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Open daily; a separate light & sound show runs each evening." },
     highlights: [
       { name: "Commissioned 1592 by Maharaja Man Singh I, expanded by Jai Singh I (1621–1667)" },
       { name: "The Sheesh Mahal (Mirror Palace), completed 1727 with Belgian glass mosaics" },
@@ -23541,6 +23542,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹600 from central Jaipur", notes: "Standard way to reach the fort base", available: true },
       { mode: "Jeep up the ramp", cost: "~₹200 per person", notes: "Covers the steep approach road to the main gate", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage given proximity to Jaipur city", available: true },
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "~11 km", type: "City", isHidden: false, id: "jaipur" },
@@ -23584,6 +23586,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:30 PM", note: "The on-site restaurant/bar stays open later for the sunset crowd." },
     highlights: [
       { name: "Built 1734 by Sawai Jai Singh II, originally named Sudarshangarh" },
       { name: "Connected by fortified ridge walls to Jaigarh Fort above Amber" },
@@ -23598,6 +23601,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from central Jaipur", notes: "Standard way to reach the fort, including a steep final approach road", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage given proximity to Jaipur city", available: true },
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "~15 km", type: "City", isHidden: false, id: "jaipur" },
@@ -23642,6 +23646,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily; no entry fee." },
     highlights: [
       { name: "Built c. 8th–9th century CE by King Chanda of the Nikumbha dynasty" },
       { name: "~3,500 steps across 13 storeys, descending 20 metres — India's largest and deepest stepwell" },
@@ -23656,6 +23661,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Jaipur)", cost: "₹1,500–₹3,000", notes: "Standard way to visit, often combined with the Fatehpur Sikri route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this far from Jaipur — a hired taxi round trip is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "~95 km", type: "City", isHidden: false, id: "jaipur" },
@@ -23712,6 +23718,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest Department Jeep Safari", cost: "₹2,000–₹4,000 per jeep (approx.)", notes: "The only way to enter the core zone; book slots in advance", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage inside or near the reserve — a forest department jeep or hired taxi is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Alwar", distance: "~35 km", type: "City", isHidden: false, id: "alwar" },
@@ -23754,6 +23761,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "3–4 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [
       { name: "Founded 1459 by Rao Jodha, whose new fort gave Jodhpur its name" },
       { name: "Walls up to 120 feet high and 70 feet thick along a 500-yard span" },
@@ -23768,6 +23776,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Jodhpur city", notes: "Standard way to reach the fort from anywhere in Jodhpur", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable coverage within Jodhpur city", available: true },
     ],
     nearbyPlaces: [
       { name: "Jodhpur", distance: "~5 km", type: "City", isHidden: false, id: "jodhpur" },
@@ -23810,6 +23819,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1–2 hours (daytime only — ASI rules prohibit entry after sunset)",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-enforced sunset-to-sunrise entry ban — no exceptions." },
     highlights: [
       { name: "17th-century ruins built by Raja Madho Singh, once home to some 9,000 houses" },
       { name: "India's best-known local legend site, built around two enduring folk stories" },
@@ -23824,6 +23834,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Jaipur)", cost: "₹2,000–₹4,000", notes: "Standard way to visit, often combined with a stop at nearby Sariska", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this far from Jaipur — a hired taxi round trip is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "~83 km", type: "City", isHidden: false, id: "jaipur" },
