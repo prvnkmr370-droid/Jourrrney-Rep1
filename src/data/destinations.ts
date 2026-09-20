@@ -28180,6 +28180,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during Gita Jayanti." },
     highlights: [{ name: "The Deep Daan (lamp-offering) and evening Aarti" }, { name: "Birla Gita Mandir, right next to the tank" }, { name: "Migratory birds in winter" }, { name: "Jyotisar", id: "jyotisar" }, { name: "Sheikh Chilli's Tomb", id: "sheikh-chillis-tomb" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Nearest airport is Chandigarh (IXC) — ~110 km", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 2h road", costRange: "₹2,500–₹8,000", tips: "Chandigarh airport is the practical option — Kurukshetra has no airport of its own." },
@@ -28232,6 +28233,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "8:00 PM", note: "Open daily; site of the daily Bhagavad Gita light-and-sound show." },
     highlights: [{ name: "The banyan tree marking the traditional site of the Gita's discourse" }, { name: "The evening Light and Sound Show" }, { name: "The 1850 Shiva temple" }, { name: "Kalpana Chawla Memorial Planetarium, right nearby", id: "kalpana-chawla-planetarium" }, { name: "Brahma Sarovar", id: "brahma-sarovar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Nearest airport is Chandigarh (IXC) — ~110 km", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 2h road", costRange: "₹2,500–₹8,000", tips: "Chandigarh airport is the practical option — Kurukshetra has no airport of its own." },
@@ -28284,6 +28286,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "The octagonal tomb's white marble dome" }, { name: "The adjoining madarasa" }, { name: "The saint's lower-chamber grave" }, { name: "Brahma Sarovar", id: "brahma-sarovar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Nearest airport is Chandigarh (IXC) — ~110 km", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 2h road", costRange: "₹2,500–₹8,000", tips: "Chandigarh airport is the practical option — Kurukshetra has no airport of its own." },
@@ -28336,6 +28339,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Museum", "Family"],
     bestSeason: "October – March",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:30 PM", note: "Closed on Mondays." },
     highlights: [{ name: "The 34-foot Mahabharata panorama paintings" }, { name: "The 'India: A Heritage in Science, Technology and Culture' exhibition" }, { name: "The outdoor Science Park" }, { name: "Jyotisar, a short walk away", id: "jyotisar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Nearest airport is Chandigarh (IXC) — ~110 km", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 2h road", costRange: "₹2,500–₹8,000", tips: "Chandigarh airport is the practical option — Kurukshetra has no airport of its own." },
@@ -28388,6 +28392,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March (Navratri is the peak)",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "The main Shakti shrine" }, { name: "Navratri crowds and festivities" }, { name: "Views over the Shivalik foothills" }, { name: "Nada Sahib Gurudwara", id: "nada-sahib" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport (IXC) — Panchkula is part of the Chandigarh Tricity, ~15 km from the airport", fromMumbai: "~2.5h direct to Chandigarh", fromBangalore: "~3h direct to Chandigarh", duration: "~15–20 min from airport", costRange: "₹2,500–₹9,000", tips: "The same airport used for Chandigarh — Panchkula sits right across the Ghaggar from it." },
@@ -28440,6 +28445,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "The double-storeyed domed Gurudwara" }, { name: "Daily Guru ka Langar (community meal)" }, { name: "The Ghaggar riverside setting" }, { name: "Mata Mansa Devi Temple", id: "mata-mansa-devi-temple" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport (IXC) — Panchkula is part of the Chandigarh Tricity, ~15 km from the airport", fromMumbai: "~2.5h direct to Chandigarh", fromBangalore: "~3h direct to Chandigarh", duration: "~15–20 min from airport", costRange: "₹2,500–₹9,000", tips: "The same airport used for Chandigarh — Panchkula sits right across the Ghaggar from it." },
@@ -28544,6 +28550,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Festival"],
     bestSeason: "October – March (Feb for the Mela)",
     duration: "2–4 hours (a full day during the Mela)",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; hours extend during the February Crafts Mela." },
     highlights: [{ name: "The semicircular ancient reservoir" }, { name: "Ruins of the 10th-century Sun Temple" }, { name: "Siddha Kund" }, { name: "The Surajkund International Crafts Mela (1–15 Feb)" }, { name: "Kingdom of Dreams", id: "kingdom-of-dreams" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -28597,6 +28604,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Entertainment", "Family"],
     bestSeason: "October – March",
     duration: "Half day / evening",
+    visitingHours: { opens: "11:00 AM", closes: "10:00 PM", note: "Ticketed entertainment destination; hours vary by show/event." },
     highlights: [{ name: "Nautanki Mahal's theatrical musical productions" }, { name: "Culture Gully's food and craft boulevard" }, { name: "Live performances showcasing India's regional arts" }, { name: "Surajkund", id: "surajkund" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -28701,6 +28709,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Archaeology", "History"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected Indus Valley site; open daily." },
     highlights: [{ name: "The five interconnected Harappan-era mounds" }, { name: "Excavated mud-brick and burnt-brick housing with drainage" }, { name: "Artefacts — seals, bangles, terracotta figurines — held at the on-site museum" }, { name: "Fort of Hansi", id: "fort-of-hansi" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Maharaja Agrasen Airport, Hisar (IXH) now runs limited domestic flights; IGI Delhi remains the reliable fallback", fromMumbai: "Via Delhi, then road/rail", fromBangalore: "Via Delhi, then road/rail", duration: "~3h road from Delhi if flying isn't an option", costRange: "₹2,500–₹9,000 (Delhi) / check current routes for Hisar's own airport", tips: "Hisar's airport is newly operational — worth checking live routes before assuming a direct flight is available." },
@@ -28753,6 +28762,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "The 36 surviving masonry pillars and carved-roof arches" }, { name: "The 50-foot mound the remains now sit atop" }, { name: "Rakhigarhi, a short drive away", id: "rakhigarhi" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Maharaja Agrasen Airport, Hisar (IXH) now runs limited domestic flights; IGI Delhi remains the reliable fallback", fromMumbai: "Via Delhi, then road/rail", fromBangalore: "Via Delhi, then road/rail", duration: "~3h road from Delhi if flying isn't an option", costRange: "₹2,500–₹9,000 (Delhi) / check current routes for Hisar's own airport", tips: "Hisar's airport is newly operational — worth checking live routes before assuming a direct flight is available." },
@@ -28805,6 +28815,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The red obelisk marking Sadashiv Rao Bhau's fall" }, { name: "The battlefield grounds of the Third Battle of Panipat" }, { name: "Ibrahim Lodhi's Tomb, from the First Battle", id: "ibrahim-lodhis-tomb" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL), then road — ~90 km", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "~1.5–2h road from the airport", costRange: "₹2,500–₹9,000 (Delhi leg)", tips: "No separate airport for Panipat — Delhi's IGI is the entry point." },
@@ -28857,6 +28868,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "The open double-terraced grave platform" }, { name: "The nearby dargah of Bu Ali Shah" }, { name: "The Kala Amb Park", id: "kala-amb-park" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL), then road — ~90 km", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "~1.5–2h road from the airport", costRange: "₹2,500–₹9,000 (Delhi leg)", tips: "No separate airport for Panipat — Delhi's IGI is the entry point." },
@@ -28964,6 +28976,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Museum", "Family"],
     bestSeason: "October – March",
     duration: "1–1.5 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:00 PM", note: "Closed on Mondays; show timings vary." },
     highlights: [{ name: "Indoor and outdoor astronomy exhibits" }, { name: "Sky shows for students and families" }, { name: "Jyotisar, right next door", id: "jyotisar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Nearest airport is Chandigarh (IXC) — ~110 km", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 2h road", costRange: "₹2,500–₹8,000", tips: "Chandigarh airport is the practical option — Kurukshetra has no airport of its own." },
@@ -29035,6 +29048,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "A working Sikh shrine with daily langar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29087,6 +29101,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29191,6 +29206,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "A working Sikh shrine with daily langar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29243,6 +29259,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "A working Sikh shrine with daily langar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29295,6 +29312,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "A working Sikh shrine with daily langar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29347,6 +29365,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Sikh gurudwara; free community langar served daily." },
     highlights: [{ name: "A working Sikh shrine with daily langar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29399,6 +29418,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29555,6 +29575,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29711,6 +29732,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29867,6 +29889,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Bhiwani has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29919,6 +29942,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Bhiwani has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -29971,6 +29995,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "A locally significant heritage site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Bhiwani has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -30075,6 +30100,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "A Mughal/Sultanate-era monument" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Bhiwani has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -30439,6 +30465,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -30803,6 +30830,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "A locally significant heritage site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Fatehabad has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -30855,6 +30883,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "A Mughal/Sultanate-era monument" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Fatehabad has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -31063,6 +31092,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -31167,6 +31197,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -31739,6 +31770,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "A Mughal/Sultanate-era monument" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -31791,6 +31823,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "11:00 AM", closes: "6:00 PM", note: "Closed on Mondays." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -31947,6 +31980,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -31999,6 +32033,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected monument; open sunrise to sunset in most cases—confirm locally." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
