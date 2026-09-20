@@ -44605,6 +44605,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "8:00 PM", note: "The temple within the fort and the terrace gardens keep slightly different hours." },
     highlights: [
       { name: "The eight octagonal sandstone towers and fort walls" },
       { name: "The Mahakali (Bawe Wali Mata) temple and its resident monkeys" },
@@ -44673,6 +44674,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; security checks apply given a past terror attack on the complex." },
     highlights: [
       { name: "Seven interlinked shrines with gold-plated spires" },
       { name: "The central Raghunath (Rama) sanctum and its 300 carved icons" },
