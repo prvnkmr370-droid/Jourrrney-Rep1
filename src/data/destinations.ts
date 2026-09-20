@@ -62213,6 +62213,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Spiritual", "Heritage"],
     bestSeason: "October – March (cooler); avoid the peak-summer heat and the biggest festival days if you want shorter queues",
     duration: "1 – 2 days",
+    visitingHours: { opens: "4:00 AM", closes: "11:00 PM", note: "Four daily aartis structure the day — Kakad ~4:30 AM, Madhyan noon, Dhup at dusk, Shej at night — with a Thursday palkhi procession." },
     highlights: [
       { name: "Samadhi Mandir — Baba's tomb and the marble image" },
       { name: "Dwarkamai and the ever-burning dhuni; the Chavadi and Gurusthan" },
@@ -62229,6 +62230,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking, e-rickshaws & autos", cost: "₹20–₹80 per hop; the shrines are a short walk apart", notes: "The Samadhi Mandir, Dwarkamai, Chavadi and Gurusthan are all within a few hundred metres; e-rickshaws and autos cover the station/airport runs and outlying hotels", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Shirdi, mainly for the station/airport runs", available: true },
     ],
     nearbyPlaces: [
       { name: "Shani Shingnapur", distance: "~65 km", type: "Shani Temple", isHidden: true, id: "shani-shingnapur" },
@@ -62417,6 +62419,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Spiritual", "Heritage"],
     bestSeason: "October – March (pleasant); the monsoon greens the Brahmagiri hills but the steps and trails are slippery; Maha Shivaratri (Feb/Mar) is the peak",
     duration: "Half-day to 1 day (often from Nashik)",
+    visitingHours: { opens: "5:30 AM", closes: "9:00 PM", note: "Queues are longest on Mondays and Maha Shivaratri. The Brahmagiri climb to the river source has no gate hours of its own — do it in daylight." },
     highlights: [
       { name: "The three-faced Jyotirlinga in the Hemadpanti black-stone temple" },
       { name: "Kushavarta Kund — the traditional source of the Godavari" },
@@ -62433,6 +62436,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking + shared autos; the Brahmagiri climb on foot", cost: "₹10–₹40 auto hops; the temple and kund are walkable", notes: "The temple, Kushavarta Kund and bazaar are a compact walk; the Brahmagiri source is a long, steep stepped climb from the edge of town", available: true },
+      { mode: "Ola / Uber", cost: "₹600–₹900 from Nashik", notes: "Bookable from Nashik, though shared taxis and buses are the more typical way to cover the route", available: true },
     ],
     nearbyPlaces: [
       { name: "Nashik", distance: "~28 km", type: "Godavari Pilgrimage City", isHidden: false, id: "nashik" },
@@ -63779,6 +63783,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Spiritual", "Culture"],
     bestSeason: "November – February (cool); Saturdays, Shani Amavasya and Shani Jayanti are the busiest and most intense times",
     duration: "2 – 4 hours (usually with Shirdi or Ahmednagar)",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Saturdays, Shani Amavasya and Shani Jayanti bring the longest queues — a weekday visit is far quicker." },
     highlights: [
       { name: "The roofless open-sky shrine — a black stone under the bare heavens" },
       { name: "The village of homes and shops kept without doors or locks" },
@@ -63795,6 +63800,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking; autos from the bus stand", cost: "₹20–₹60 per hop; the shrine is a short walk from the stand", notes: "The village core is small and walkable; the shrine, oil stalls and the doorless houses are all within a few hundred metres", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in the village is unconfirmed — shared taxis and buses from Shirdi/Ahmednagar are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Shirdi", distance: "~65 km", type: "Sai Baba Pilgrimage Town", isHidden: false, id: "shirdi" },
@@ -64384,6 +64390,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Temple", "Hill"],
     bestSeason: "October – March for cool, comfortable weather and clear hill views; the monsoon (June–September) is green and dramatic but the steps and rock are slippery; the two Navratris are the spiritual peak but bring huge crowds",
     duration: "Half a day to 1 day (day trip from Nashik)",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "The funicular runs a shorter daytime window than the temple itself; go early, before the queue and midday heat build." },
     highlights: [
       { name: "The 18-armed Saptashrungi Nivasini image carved into the rock face" },
       { name: "The cliffside temple and its 500-step pilgrim stairway" },
@@ -64400,6 +64407,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Funicular railway, steps, shared jeep", cost: "Funicular ticket up/down the cliff; free to walk the steps", notes: "From the upper car park, the funicular or the stone stairway takes you to the temple. Shared jeeps and buses connect the gad with Vani and Nashik", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into the hills is unconfirmed — a hired taxi from Nashik is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nashik", distance: "~62 km", type: "City, Godavari Ghats & Vineyards", isHidden: false, id: "nashik" },
