@@ -18563,6 +18563,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed UNESCO World Heritage Site." },
     highlights: [{ name: "UNESCO World Heritage Site (2014)" }, { name: "Built c. 1060 CE as a memorial by Queen Udayamati" }, { name: "1,500+ carved sculptural panels" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~130 km / ~2.5h from Ahmedabad", costRange: "₹2,000–₹4,000 (cab from Ahmedabad)", tips: "Genuinely combinable with Modhera Sun Temple on the same North Gujarat heritage circuit." },
@@ -18572,6 +18573,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Patan", notes: "Standard way to get around", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Patan is unconfirmed — autos and hired taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Modhera Sun Temple", distance: "~35 km", type: "Temple", isHidden: false, id: "modhera-sun-temple" },
@@ -18615,6 +18617,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "An active dargah; outside prayer times." },
     highlights: [{ name: "15th-century Sufi retreat & dargah" }, { name: "Indo-Saracenic architecture" }, { name: "17-acre Ahmed Sar Lake" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~8 km / ~20 min from central Ahmedabad", costRange: "₹100–₹300 (auto/cab)", tips: "Genuinely an easy half-day add-on to an Ahmedabad heritage circuit." },
@@ -18624,6 +18627,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from central Ahmedabad", notes: "Standard way to reach Sarkhej", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~8 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -18666,6 +18670,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "November – February; around the equinoxes (Mar/Sep) for the solar alignment",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed; an evening light-and-sound show runs some days." },
     highlights: [{ name: "Built 1026-27 CE by Bhima I" }, { name: "Equinox sunrise alignment" }, { name: "Maru-Gurjara stone carving" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~100 km / ~2h from Ahmedabad", costRange: "₹1,800–₹3,500 (cab from Ahmedabad)", tips: "Genuinely worth pairing with Rani ki Vav on the same North Gujarat day trip." },
@@ -18675,6 +18680,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Ahmedabad", notes: "Standard way to reach Modhera", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mehsana/Modhera is unconfirmed — a hired taxi from Ahmedabad is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rani ki Vav, Patan", distance: "~35 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
@@ -18720,6 +18726,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Within Uparkot Fort; covered by the fort's own entry hours." },
     highlights: [{ name: "Rock-cut, single-stone stepwells" }, { name: "The Adi-Kadi local legend" }, { name: "Navghan Kuwo's spiral shaft stairs (c. 1026 CE)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Junagadh — long haul", fromMumbai: "Via Junagadh — long haul", fromBangalore: "Not practical", duration: "Within Uparkot Fort, central Junagadh", costRange: "Included with Uparkot Fort entry", tips: "Both stepwells sit inside Uparkot Fort — visit them as part of the same fort tour, not as a separate trip." },
@@ -18729,6 +18736,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Both stepwells are within walking distance inside Uparkot Fort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — reachable on foot within Uparkot Fort", available: false },
     ],
     nearbyPlaces: [
       { name: "Junagadh (Uparkot Fort)", distance: "Same complex", type: "City", isHidden: false, id: "junagadh" },
@@ -18771,6 +18779,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Built 1499-1500 for Bai Harir Sultana" }, { name: "Five-storey octagonal-shaft stepwell" }, { name: "Hindu-artisan carving under a Sultanate commission" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~5 km / ~15 min from central Ahmedabad", costRange: "₹80–₹200 (auto)", tips: "Genuinely combinable with a broader Ahmedabad old-city heritage walk given its short distance from the centre." },
@@ -18780,6 +18789,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹80–₹200 from central Ahmedabad", notes: "Standard way to reach Asarwa", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹200", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -18831,6 +18841,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹2,500–₹4,500 from Bhuj", notes: "Standard way to reach this remote fort town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote border area — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~135 km", type: "City", isHidden: false, id: "kutch" },
@@ -18877,6 +18888,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Partly in active government use; grounds and temple open daily." },
     highlights: [{ name: "Built 1411 CE, right after Ahmedabad's founding" }, { name: "Once royal palace, court, and British-era jail" }, { name: "Adjoins the Bhadrakali Temple" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Teen Darwaza", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely the natural starting point for an old-city Ahmedabad heritage walk." },
@@ -18886,6 +18898,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Central location, easily combined with Teen Darwaza and Manek Chowk", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹200", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -18929,6 +18942,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Built 1878–1892" }, { name: "Silver-plated doors & marble jali work" }, { name: "Adjoining Bahauddin (Vazir's) Maqbara" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Junagadh — long haul", fromMumbai: "Via Junagadh — long haul", fromBangalore: "Not practical", duration: "Central Junagadh", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with an Uparkot Fort visit on the same Junagadh heritage day." },
@@ -18938,6 +18952,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto Rickshaw", cost: "Free–₹100", notes: "Centrally located within Junagadh", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — reachable on foot or by auto within the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Junagadh (Uparkot Fort)", distance: "~2 km", type: "City", isHidden: false, id: "junagadh" },
@@ -18980,6 +18995,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Active temple; open daily." },
     highlights: [{ name: "Completed 1848, built partly as famine relief" }, { name: "52 secondary shrines (devakulikas)" }, { name: "Six-storey Manastambha tower" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Near Delhi Gate, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely worth combining with the old city's other Jain and Hindu temples on the same heritage walk." },
@@ -18989,6 +19005,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the old city", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
