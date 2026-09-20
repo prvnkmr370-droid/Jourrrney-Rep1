@@ -68999,6 +68999,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather); late December for the temple's Jerusalem Khawmpui event",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Sunday services and December events draw larger crowds; a weekday visit is quieter." },
     highlights: [{ name: "Four crowned corner towers with symbolic Christian design" }, { name: "A cross formed by the roofline when viewed from above" }, { name: "A shaded temple complex with a park, restaurant, and social service centre" }, { name: "One of the largest churches in Mizoram, built from a founder's vision" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a short local ride", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "An easy add-on to any Aizawl city itinerary." },
@@ -69009,6 +69010,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride from central Aizawl to the western outskirts", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Aizawl — local taxis cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Mizoram State Museum", distance: "Within Aizawl city", type: "Museum", isHidden: false, id: "mizoram-state-museum" },
@@ -69118,6 +69120,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Heritage"],
     bestSeason: "Year-round",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:00 PM", note: "Closed on Sundays and government holidays — confirm timings in advance." },
     highlights: [{ name: "Traditional Mizo jewelry and adornment displays" }, { name: "A large diorama of a traditional hillside Mizo village" }, { name: "Tools and artifacts of everyday Mizo life" }, { name: "A compact introduction to Mizo culture and history" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a short local ride", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "An easy stop within central Aizawl." },
@@ -69128,6 +69131,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Aizawl", notes: "A short ride within central Aizawl", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Aizawl — local taxis cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Solomon's Temple", distance: "Within Aizawl city", type: "Church", isHidden: false, id: "solomons-temple-aizawl" },
@@ -71349,6 +71353,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – March (cooler, drier weather for walking the forested grounds)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "Closed on Mondays; early mornings give the best chance of seeing the more active, shyer species." },
     highlights: [{ name: "Clouded leopards in naturalistic forest enclosures" }, { name: "Hoolock gibbons, India's only ape species" }, { name: "A focus on native Northeast Indian wildlife" }, { name: "Set within genuine forest just outside Aizawl" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "Fly to Lengpui Airport, Aizawl, then a short road transfer", fromBangalore: "Fly to Lengpui Airport, Aizawl, then a short road transfer", duration: "Fly into Aizawl, then road", costRange: "₹5,000–₹15,000 airfare to Aizawl", tips: "Close to Aizawl city — an easy half-day addition to a city visit." },
@@ -71359,6 +71364,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Local Cab", cost: "Local fares", notes: "Widely available across Aizawl", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Aizawl — local taxis cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Solomon's Temple", distance: "~5 km", type: "Landmark", isHidden: false, id: "solomons-temple-aizawl" },
