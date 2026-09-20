@@ -57549,6 +57549,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/King_Cobra_in_Parassinikadavu_Snake_Park.jpg/1280px-King_Cobra_in_Parassinikadavu_Snake_Park.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — a Muthappan Theyyam performer in costume, Kannur (CC BY-SA 4.0), and a king cobra at the Parassinikkadavu Snake Park next to the temple (CC BY 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "5:45 AM", closes: "8:00 PM", note: "The daily Theyyam runs in two windows — Thiruvappana around 5:45–8:30 AM, and Vellattam around 6–8 PM — verified against the temple's own site (parassinimadappurasreemuthappan.com)." },
     category: ["Religious", "Art & Culture", "Wildlife"],
     bestSeason: "October – March (Puthari Thiruvappana festival, first week of December)",
     duration: "Half day (temple ritual + snake park)",
@@ -57568,6 +57569,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto / Walking", cost: "₹15–₹500", notes: "Frequent buses and autos from Kannur/Taliparamba; the temple, river ghat and snake park are close together on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Parassinikkadavu is unconfirmed — buses and local autos from Kannur are the reliable option, especially for the pre-dawn morning Theyyam", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Angelo Fort", distance: "~20 km", type: "Seaside Fort", isHidden: false, id: "st-angelo-fort" },
@@ -57767,6 +57769,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Season shuttle buses + walking (+ dooli carriers)", cost: "Shuttle fares in season; dooli (palanquin) and pittu (back-carry) services for the infirm at fixed rates", notes: "From the staged parking, KSRTC/authorised shuttles run to Pamba; from Pamba everyone walks the 4–5 km climb. Licensed dooli carriers are available for those unable to walk.", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable beyond the staged parking areas — private vehicles are stopped well before Pamba in season, and only official shuttle buses and walking cover the rest", available: false },
     ],
     nearbyPlaces: [
       { name: "Thekkady / Periyar Tiger Reserve", distance: "Same forest reserve; ~about 4–5h by road via Kumily", type: "Wildlife", isHidden: false, id: "periyar-tiger-reserve-thekkady" },
@@ -57814,6 +57817,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Thirunelli_Temple_and_around_%2813%29.jpg/1280px-Thirunelli_Temple_and_around_%2813%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Thirunelli Maha Vishnu Temple below the Brahmagiri hills (CC0), and the temple's ancient granite pillars (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "General daylight darshan hours; confirm locally, and if arranging pitru bali rites, book directly with the temple priests." },
     category: ["Religious", "Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "2 – 3 hours",
@@ -57833,6 +57837,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Bus + walking", cost: "₹100–₹1,500", notes: "Limited buses and taxis from Mananthavady; from the temple it is a short walk down to the Papanasini stream", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable this deep in the Tholpetty forest — a hired taxi from Mananthavady is the only practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "Region", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -58410,6 +58415,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Thirunavaya_%285%29.jpg/1280px-Thirunavaya_%285%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Thirunavaya Navamukunda Temple with its stone tank (CC BY-SA 3.0), and a second view of the temple's roofs and flagstaff (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Typical Kerala temple hours with a midday break; bali tarpanam rites on the riverbank run through the morning, and Karkidaka Vavu has its own extended schedule." },
     category: ["Religious", "Heritage", "History"],
     bestSeason: "October – March (Karkidaka Vavu, the great ancestral-offering day, falls in July–August)",
     duration: "1 – 2 hours",
@@ -58429,6 +58435,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹15–₹350", notes: "Autos and buses from Tirur and Kuttippuram; the temple, river ghat and Pazhukka Mandapam are close together on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Thirunavaya is unconfirmed — buses and local autos from Tirur or Kuttippuram are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kozhikode (Calicut)", distance: "~35 km", type: "Historic City", isHidden: false, id: "kozhikode" },
@@ -58873,6 +58880,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kodungallur_Bhagavathy_Temple_04.jpg/1280px-Kodungallur_Bhagavathy_Temple_04.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Kodungallur Sree Kurumba Bhagavathy Temple and its courtyard (CC BY-SA 4.0), and a corner view with the gold flagstaff (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "5:00 AM", closes: "8:30 PM", note: "Typical Kerala temple hours with a midday break; the Bharani festival (Feb–Apr) runs its own extended, far more intense schedule." },
     category: ["Religious", "Heritage", "Art & Culture"],
     bestSeason: "October – March; the Kodungallur Bharani runs about February – April (Meenam)",
     duration: "1 – 2 hours",
@@ -58892,6 +58900,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹15–₹400", notes: "Autos and frequent buses within Kodungallur; the temple, tank and the Cheraman Juma Masjid are close by", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kodungallur is unconfirmed — buses and local autos cover the town easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Cheraman Juma Masjid", distance: "~3 km", type: "Historic Mosque", isHidden: false, id: "cheraman-juma-masjid" },
