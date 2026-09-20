@@ -68710,6 +68710,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The most common way to reach Reiek and return the same day", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates outside Aizawl — a local taxi round trip is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Solomon's Temple", distance: "~29 km, via Aizawl", type: "Church", isHidden: false, id: "solomons-temple-aizawl" },
@@ -68771,6 +68772,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Thenzawl", cost: "Fare varies by round-trip arrangement", notes: "The short final stretch from Thenzawl to the falls' viewing tower", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Thenzawl — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tam Dil", distance: "Neighbouring Saitual district", type: "Lake", isHidden: true, id: "tam-dil" },
@@ -68830,6 +68832,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Saitual/Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The final stretch from Saitual town to the lake resort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates outside Aizawl — a local taxi from Saitual or Aizawl is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lengteng Wildlife Sanctuary", distance: "Same Saitual district", type: "Wildlife Sanctuary", isHidden: true, id: "lengteng-wildlife-sanctuary" },
@@ -68889,6 +68892,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (Recommended)", cost: "Arranged in Sangau", notes: "Advisable given the remote terrain and the park's restricted visiting season", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in this remote a district — a hired vehicle from Aizawl or Lawngtlai is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sangau", distance: "At the mountain's base", type: "Town", isHidden: true },
@@ -68949,6 +68953,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided Forest Walks (Required)", cost: "Arranged through the forest department", notes: "Wildlife viewing here is on foot with a forest guide, not by vehicle safari", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Mamit district — a hired vehicle from Aizawl is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Reiek Hills", distance: "Same Mamit district", type: "Viewpoint & Heritage Village", isHidden: false, id: "reiek-hills" },
