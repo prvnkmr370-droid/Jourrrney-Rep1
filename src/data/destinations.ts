@@ -62161,6 +62161,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Trek on foot or the toll road + walking on top", cost: "Nominal trail/entry fee; toll for vehicles on the summit road", notes: "From Sinhagad village the trail climbs ~2.7 km; the Kalyan Darwaza route is steeper. On top it is a walk between the gateways, memorials and viewpoints", available: true },
+      { mode: "Ola / Uber", cost: "₹500–₹900 one-way from Pune", notes: "Bookable from Pune to Sinhagad village or the toll-road gate; a half-day taxi is the more common way to do the round trip", available: true },
     ],
     nearbyPlaces: [
       { name: "Pune", distance: "~35 km", type: "City", isHidden: false, id: "pune" },
@@ -62499,6 +62500,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, hired taxi 'point tours' & own vehicle", cost: "₹1,000–₹2,000 for a half-day taxi point-tour of the viewpoints", notes: "The viewpoints and dams are spread over 5–15 km with limited public transport — most people self-drive or hire a taxi for a 'point tour'; the bazaar is walkable", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300 within the bazaar area", notes: "Both operate in Lonavala town, though a hired taxi is more practical for the spread-out point tour", available: true },
     ],
     nearbyPlaces: [
       { name: "Karla & Bhaja Caves", distance: "~12 km", type: "Buddhist Rock-Cut Caves", isHidden: false, id: "karla-bhaja-caves" },
@@ -62552,6 +62554,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Pilgrimage"],
     bestSeason: "October – March (pleasant for the step climb); the monsoon is green and the valley waterfalls run, but the steps are slippery",
     duration: "Half-day (both, from Lonavala or on the Mumbai–Pune axis)",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "ASI-managed; the Ekvira Devi temple at Karla keeps longer hours of its own." },
     highlights: [
       { name: "Karla's Great Chaitya — the largest rock-cut chaitya hall in India" },
       { name: "The carved elephant-and-couple facade screen and lion pillar at Karla" },
@@ -62568,6 +62571,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Steps on foot; auto to the base", cost: "Entry ticket at each site; auto from Malavli", notes: "Both sites are a climb of a few hundred stone steps from the road; at Karla the steps are lined with stalls and pass the Ekvira Devi temple", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹700 from Lonavala", notes: "Bookable from Lonavala, though a half-day taxi covering both sites is the more common option", available: true },
     ],
     nearbyPlaces: [
       { name: "Lonavala & Khandala", distance: "~12 km", type: "Ghat Hill Stations", isHidden: false, id: "lonavala" },
@@ -63313,6 +63317,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot, horseback or hand-pulled rickshaw", cost: "Per-trip horse and rickshaw fares (fixed rate cards exist; agree first)", notes: "There is no motor transport in Matheran at all. Distances between the market and the far viewpoints are 2–6 km on rough red-earth paths; horses and hand rickshaws cover them, or you walk", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Matheran bans all motor vehicles past Dasturi Naka — no app cab can enter the town itself; both operate for the approach to Neral/Dasturi", available: false },
     ],
     nearbyPlaces: [
       { name: "Mumbai", distance: "~90 km (to Neral)", type: "City", isHidden: false, id: "mumbai" },
