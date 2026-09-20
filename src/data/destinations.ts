@@ -923,6 +923,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For Sunset Point, Guru Shikhar, and other outlying viewpoints", available: true },
       { mode: "Shared Jeep/Taxi", cost: "₹100–₹500", notes: "Common for group trips to Guru Shikhar and wildlife sanctuary areas", available: true },
       { mode: "Paddle Boat (Nakki Lake)", cost: "₹100–₹300", notes: "A genuine local activity on the lake itself, not just transport", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Coverage is patchy in this hill town — a shared jeep or auto is more reliable", available: false },
     ],
     nearbyPlaces: [
       { name: "Guru Shikhar Peak", distance: "15 km", type: "Viewpoint", isHidden: true, id: "guru-shikhar" },
@@ -993,6 +994,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Canter (20-seater open truck)", cost: "₹700–₹1,200/safari", notes: "Cheaper shared option, less flexible than a private Gypsy", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For getting around Sawai Madhopur town itself", available: true },
       { mode: "Resort Transfer", cost: "Often included", notes: "Most resorts run their own pickup from the railway station", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Sawai Madhopur — an auto or resort transfer is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranthambore Fort", distance: "Inside the park, ~7 km from the gate", type: "Heritage", isHidden: false },
@@ -1046,6 +1048,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "1–2 days",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Open daily; a separate light & sound show runs in the evening." },
     highlights: [{ name: "Vijay Stambh (Victory Tower)" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)" }, { name: "Meera Temple & Kumbha Shyam Temple" }, { name: "Gaumukh Reservoir" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Chittaurgarh Junction — ~9–10h", fromMumbai: "Via Chittaurgarh Junction — ~13–14h", fromBangalore: "Via Ahmedabad/Udaipur — 24h+", duration: "~9–10h from Delhi", costRange: "₹350–₹1,600", tips: "Chittaurgarh Junction is well-connected on the Delhi–Mumbai line; the fort is a short drive from the station." },
@@ -1061,6 +1064,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting up to and around the fort complex, which is large and spread out", available: true },
       { mode: "Shared/Private Taxi", cost: "₹1,500–₹3,000 (half-day fort tour)", notes: "The most common way to see the fort's scattered monuments in one visit", available: true },
       { mode: "Cycle/E-Rickshaw inside the fort", cost: "₹200–₹500", notes: "Some operators offer these for getting between the fort's spread-out sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi or auto is the standard option for the spread-out fort complex", available: false },
     ],
     nearbyPlaces: [
       { name: "Udaipur", distance: "115 km", type: "Heritage", isHidden: false, id: "udaipur" },
@@ -1180,6 +1184,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Heritage", "UNESCO"],
     bestSeason: "October – February (peak migratory bird season)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily; earlier entry for birdwatchers is genuinely worthwhile." },
     highlights: [{ name: "Keoladeo National Park (UNESCO)" }, { name: "Winter migratory birds — storks, cranes, and rare species" }, { name: "Lohagarh Fort" }, { name: "Cycle-rickshaw birdwatching tours inside the park" }, { name: "Bharatpur Palace Museum" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Golden Temple Mail and others — ~2.5–3h", fromMumbai: "~16–17h", fromBangalore: "Via Delhi — 24h+", duration: "~2.5–3h from Delhi", costRange: "₹150–₹900", tips: "Bharatpur Junction is on the main Delhi–Mumbai line, making it an easy add-on to an Agra/Delhi trip." },
@@ -1196,6 +1201,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rental Bicycle", cost: "₹50–₹150/day", notes: "A popular self-guided option inside the park", available: true },
       { mode: "Auto Rickshaw (town)", cost: "₹40–₹150", notes: "For getting around Bharatpur town and to the fort", available: true },
       { mode: "Boat (seasonal, water levels permitting)", cost: "₹200–₹500", notes: "When wetland levels allow, boat rides offer closer bird access", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — an auto rickshaw is the standard option in town", available: false },
     ],
     nearbyPlaces: [
       { name: "Deeg Palace & Water Gardens", distance: "32 km", type: "Heritage", isHidden: true, id: "deeg-palace" },
@@ -1247,6 +1253,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "1 day",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "A separate light & sound show runs each evening." },
     highlights: [{ name: "The Great Wall — ~36 km, second-longest in the world" }, { name: "Badal Mahal (Cloud Palace)" }, { name: "Bawan Devi Temple — 52 shrines in one complex" }, { name: "Birthplace of Maharana Pratap" }, { name: "Light & sound show (evenings)" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Udaipur or Falna — ~11–13h, then road", fromMumbai: "Via Udaipur — ~14–15h", fromBangalore: "Via Udaipur — 24h+", duration: "~2h road from Udaipur", costRange: "₹350–₹1,800 (train) + ₹1,500–₹3,000 (cab from Udaipur)", tips: "Udaipur is the practical railhead — Kumbhalgarh has no station of its own." },
@@ -1261,6 +1268,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking (inside the fort)", cost: "Free", notes: "The fort complex itself is explored on foot", available: true },
       { mode: "Taxi (from Udaipur)", cost: "₹2,000–₹4,000 round trip", notes: "The standard way to visit as a day trip", available: true },
       { mode: "Local Guide (at the fort)", cost: "₹300–₹600", notes: "Genuinely worthwhile given the fort's scale and the number of structures inside it", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Udaipur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranakpur Jain Temple", distance: "50 km", type: "Spiritual", isHidden: false, id: "ranakpur" },
@@ -1311,6 +1319,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "12:00 PM", closes: "5:00 PM", note: "Non-Jain visitor hours; mornings are reserved for worship." },
     highlights: [{ name: "1,444 uniquely carved marble pillars" }, { name: "Chaumukha (four-faced) main shrine" }, { name: "Detailed ceiling and dome carvings" }, { name: "Surya Narayan Temple, nearby" }, { name: "Quiet Aravalli valley setting" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Falna Junction — ~10–11h, then ~1h road", fromMumbai: "Via Falna — ~13–14h", fromBangalore: "Via Udaipur — 24h+", duration: "~1h road from Falna, or ~1.5–2h from Udaipur", costRange: "₹350–₹1,600 (train) + local transfer", tips: "Falna is the nearest railhead; most travellers instead come by road from Udaipur or Jodhpur." },
@@ -1324,6 +1333,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking (inside the temple complex)", cost: "Free (modest dress required, no leather items)", notes: "The temple itself is explored on foot", available: true },
       { mode: "Taxi (from Udaipur/Kumbhalgarh)", cost: "₹2,000–₹4,000 round trip from Udaipur", notes: "The standard way to visit, often combined with Kumbhalgarh in one day", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Udaipur or Kumbhalgarh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kumbhalgarh Fort", distance: "50 km", type: "Heritage", isHidden: false, id: "kumbhalgarh" },
@@ -1390,6 +1400,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The haveli circuit is best explored on foot — the town centre is compact", available: true },
       { mode: "Cycle Rickshaw", cost: "₹50–₹150", notes: "A relaxed way to cover the wider haveli circuit", available: true },
       { mode: "Local Guide", cost: "₹500–₹1,000 (half day)", notes: "Genuinely valuable here — guides can get you access into havelis still privately owned and closed to casual visitors", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Mandawa — walking or a local guide covers the haveli circuit", available: false },
     ],
     nearbyPlaces: [
       { name: "Nawalgarh (more Shekhawati havelis)", distance: "30 km", type: "Heritage", isHidden: true, id: "podar-haveli-nawalgarh" },
@@ -1443,6 +1454,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Culture", "Unique Experience"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "10:00 PM", note: "Open daily; aarti timings draw the largest crowds." },
     highlights: [{ name: "Karni Mata Temple — ~25,000 sacred rats" }, { name: "Carved silver temple doors" }, { name: "Spotting a rare white rat (considered especially auspicious)" }, { name: "Marble temple architecture" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Bikaner Junction, then ~30 min road — ~7–8h total", fromMumbai: "Via Bikaner — 18h+", fromBangalore: "Via Delhi/Bikaner — 26h+", duration: "~7–8h from Delhi to Bikaner, +30 min road", costRange: "₹300–₹1,600 (train) + ₹100–₹300 (local transfer)", tips: "Deshnoke has its own small railway station, but Bikaner Junction has far better long-distance connections." },
@@ -1455,6 +1467,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free (bare feet required inside the temple, per custom)", notes: "The temple complex itself is compact and explored on foot", available: true },
       { mode: "Taxi (from Bikaner)", cost: "₹500–₹1,000 round trip", notes: "The standard way to visit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Bikaner is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bikaner (Junagarh Fort)", distance: "30 km", type: "Heritage", isHidden: false, id: "bikaner" },
@@ -1520,6 +1533,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Park Gypsy (safari)", cost: "₹1,500–₹3,000/safari", notes: "Book via the official Rajasthan Forest Dept. process, same as Ranthambore", available: true },
       { mode: "Auto Rickshaw (Alwar town)", cost: "₹40–₹150", notes: "For getting around Alwar city and the fort area", available: true },
       { mode: "Taxi (Alwar–Sariska)", cost: "₹800–₹1,500 round trip", notes: "The standard way to reach the park from town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in Alwar city, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhangarh Fort (India's most famous 'haunted' fort)", distance: "55 km", type: "Mysterious Ruins", isHidden: true },
@@ -1586,6 +1600,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The old town, stepwells, and palace approach are best explored on foot", available: true },
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "For the fort/palace hilltop and wider town", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A popular, relaxed way to cover the stepwell circuit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Bundi — an auto rickshaw is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kota (Chambal riverfront, Kota Barrage)", distance: "35 km", type: "Heritage", isHidden: true },
@@ -1637,6 +1652,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Unique Experience"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-enforced sunset-to-sunrise entry ban — no exceptions." },
     highlights: [{ name: "Main fort gate & palace ruins" }, { name: "Gopinath Temple, inside the complex" }, { name: "Somewati Temple" }, { name: "ASI's official sunset-to-sunrise entry restriction" }, { name: "Views over the surrounding Aravalli countryside" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Alwar Junction, then ~1.5h road — ~4–5h total", fromMumbai: "Via Alwar — 17h+", fromBangalore: "Via Delhi/Alwar — 26h+", duration: "~2.5–3h from Delhi to Alwar, +1.5h road", costRange: "₹150–₹900 (train) + ₹500–₹1,000 (local transfer)", tips: "Alwar Junction is the practical railhead; Bhangarh itself has no station." },
@@ -1650,6 +1666,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The ASI-protected complex is explored entirely on foot, during official daytime hours only", available: true },
       { mode: "Taxi (from Alwar/Jaipur)", cost: "₹1,500–₹3,000 round trip", notes: "The standard way to reach the site", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Alwar or Jaipur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Alwar (Bala Quila, Sariska)", distance: "55 km", type: "Heritage", isHidden: false, id: "alwar" },
@@ -1700,6 +1717,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Adventure", "Culture"],
     bestSeason: "October – March (also a popular monsoon/weekend getaway year-round from Delhi-NCR)",
     duration: "1–2 days",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Day-visitor access to the fort hotel grounds; overnight guests keep separate hours." },
     highlights: [{ name: "Neemrana Fort Palace — 12-tiered 15th-century fort hotel" }, { name: "India's highest zip-line (Flying Fox, operated at the fort)" }, { name: "Hanging gardens and terraced courtyards" }, { name: "Neemrana Baori (stepwell)" }, { name: "Old Neemrana town below the fort" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Rewari or Alwar, then road — ~3h total", fromMumbai: "Via Jaipur — 16h+", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~3h from Delhi via road/rail combo", costRange: "₹150–₹800 (train) + local transfer", tips: "Road is far more common and direct than rail for this route." },
@@ -1714,6 +1732,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The fort's tiered courtyards are explored on foot", available: true },
       { mode: "Taxi/Self-drive from Delhi", cost: "₹2,000–₹4,000 round trip", notes: "The standard way to visit, given the short highway distance", available: true },
       { mode: "Zip-line (Flying Fox)", cost: "₹1,500–₹3,500 (activity package)", notes: "A genuine, separately-run adventure activity at the fort — book ahead on busy weekends", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi or self-drive from Delhi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Alwar (Bala Quila, Sariska)", distance: "70 km", type: "Heritage", isHidden: false, id: "alwar" },
@@ -1779,6 +1798,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The temple cluster is compact and explored on foot", available: true },
       { mode: "Camel Safari", cost: "₹500–₹1,500", notes: "The main draw of the surrounding dunes, similar in spirit to Jaisalmer's Sam Dunes but quieter", available: true },
       { mode: "Taxi (from Jodhpur)", cost: "₹1,000–₹2,000 round trip", notes: "The standard way to visit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Jodhpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jodhpur (Mehrangarh Fort)", distance: "65 km", type: "Heritage", isHidden: false, id: "jodhpur" },
@@ -1841,6 +1861,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The lakeside viewpoints and temple approach are explored on foot", available: true },
       { mode: "Taxi (from Jaipur)", cost: "₹1,500–₹3,000 round trip", notes: "The standard way to visit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi from Jaipur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jaipur", distance: "65 km", type: "Heritage", isHidden: false, id: "jaipur" },
@@ -1889,6 +1910,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "History"],
     bestSeason: "October – March (the Cattle Fair runs in late January/early February)",
     duration: "1–2 days",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Ahhichatragarh Fort (UNESCO Asia-Pacific Award-winning restoration)" }, { name: "Fort's water gardens and step-well system" }, { name: "Nagaur Cattle Fair (seasonal, late Jan/early Feb)" }, { name: "Hawa Mahal (Palace of Breezes), inside the fort" }, { name: "Restored painted rooms and ceilings" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Jodhpur or Bikaner, then road — ~10–11h total", fromMumbai: "Via Jodhpur — ~15–16h", fromBangalore: "Via Jodhpur — 24h+", duration: "~1.5h road from Jodhpur", costRange: "₹350–₹1,800 (train) + ₹500–₹1,000 (local transfer)", tips: "Nagaur has its own railway station, but Jodhpur or Bikaner are the better-connected hubs for long-distance travel." },
@@ -1903,6 +1925,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The fort complex and old town are explored on foot", available: true },
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "For getting around Nagaur town", available: true },
       { mode: "Taxi (Jodhpur/Bikaner transfer)", cost: "₹2,500–₹5,000", notes: "The standard way to combine Nagaur with either city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in Nagaur town, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [
       { name: "Khimsar (a separate, distinct fort town nearby)", distance: "45 km", type: "Heritage", isHidden: true },
