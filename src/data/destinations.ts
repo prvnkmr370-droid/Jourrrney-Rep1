@@ -46376,6 +46376,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Jeep Safari", cost: "₹1,500–₹3,000 per vehicle", notes: "The standard way to explore the park's tourist zone", available: true },
       { mode: "Local Taxi", cost: "₹1,500–₹3,000/day", notes: "For reaching the park from Daltonganj or Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the park — only the tourist-zone jeep safari and hired taxis operate here", available: false },
     ],
     nearbyPlaces: [
       { name: "Palamau Fort", distance: "~24 km", type: "Heritage Fort", isHidden: true, id: "palamau-fort" },
@@ -46437,6 +46438,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From central Jamshedpur to the sanctuary gate", available: true },
       { mode: "Private Vehicle (self-drive)", cost: "Entry fee ₹50-100 approx", notes: "The sanctuary road is drivable for a self-guided visit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamshedpur is unconfirmed — a local taxi or auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jubilee Park", distance: "~13 km", type: "City Park", isHidden: false, id: "jubilee-park" },
@@ -46498,6 +46500,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹100–₹300", notes: "Runs from Ranchi on weekends especially", available: true },
       { mode: "Private Taxi/Auto", cost: "₹1,200–₹2,000 round trip", notes: "The most convenient way from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a shared or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jonha Falls", distance: "~20 km", type: "Waterfall", isHidden: true, id: "jonha-falls" },
@@ -46559,6 +46562,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹100–₹300", notes: "Runs from Ranchi, especially on weekends", available: true },
       { mode: "Private Taxi/Auto", cost: "₹1,500–₹2,500 round trip", notes: "The most convenient way from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a shared or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jonha Falls", distance: "~25 km", type: "Waterfall", isHidden: true, id: "jonha-falls" },
@@ -46602,6 +46606,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March (avoid peak Shravani Mela crowds in Shravan, July–August, unless you specifically want the pilgrimage experience)",
     duration: "3–4 hours (half a day with the temple complex)",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Extended, near round-the-clock hours during the Shravani Mela." },
     highlights: [
       { name: "The central Baidyanath Jyotirlinga, one of Hinduism's 12 Jyotirlingas" },
       { name: "The 21-temple walled complex around the main shrine" },
@@ -46621,6 +46626,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw", cost: "₹50–₹150", notes: "From Jasidih station or hotels to the temple complex", available: true },
       { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Common for short hops within Deoghar town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Deoghar is unconfirmed — an auto or cycle rickshaw is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Basukinath Dham", distance: "~42 km", type: "Temple", isHidden: false, id: "basukinath-dham" },
@@ -46682,6 +46688,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹100–₹300", notes: "Runs from Ranchi, especially Tuesday/Saturday fair days", available: true },
       { mode: "Private Taxi/Auto", cost: "₹1,500–₹2,500 round trip", notes: "The most convenient way from Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a shared or private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hundru Falls", distance: "~20 km", type: "Waterfall", isHidden: true, id: "hundru-falls" },
@@ -46745,6 +46752,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹1,500–₹3,000/day", notes: "The standard way to hop between the scattered viewpoints", available: true },
       { mode: "Shared Jeep", cost: "₹150–₹400", notes: "Between the town and key viewpoints, subject to availability", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Netarhat — a private taxi or shared jeep is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~90 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
@@ -46807,6 +46815,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹200–₹500", notes: "From Betla National Park or Daltonganj", available: true },
       { mode: "Private Vehicle", cost: "Included with a Betla trip", notes: "Most visitors combine both stops in one hired vehicle", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote fort — a local taxi from Daltonganj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~3 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
