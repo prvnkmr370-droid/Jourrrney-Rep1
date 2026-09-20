@@ -59534,6 +59534,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / cycle / auto; boats for the water", cost: "Minimal on land; boats arranged by SPORTS", notes: "The island is small and flat; there are no tourist roads to speak of. All lagoon and reef activity is with island operators / SPORTS.", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — there's no road network for it; walking, cycles and SPORTS boats cover everything", available: false },
     ],
     nearbyPlaces: [
       { name: "Bangaram Island", distance: "~8 km (boat/helicopter transfer)", type: "Resort Island", isHidden: false, id: "bangaram" },
@@ -59599,6 +59600,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking; resort boats", cost: "Included in the package", notes: "You can walk around the whole island in under an hour; boats run to Thinnakara, Parali and snorkel/dive sites", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — there's no road network for it; the whole island is walked", available: false },
     ],
     nearbyPlaces: [
       { name: "Thinnakara Island", distance: "Same lagoon (~15–20 min by boat)", type: "Tented Island", isHidden: false, id: "thinnakara" },
@@ -59665,6 +59667,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / cycle / walking; boats for the lagoon", cost: "Minimal on land", notes: "The island has a small road network and autos; all reef and lagoon activity is with the dive centre / SPORTS", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — the island's own autos and cycles cover it", available: false },
     ],
     nearbyPlaces: [
       { name: "Agatti Island", distance: "~fair-season boat transfer", type: "Gateway Island", isHidden: false, id: "agatti" },
@@ -59731,6 +59734,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / cycle; dive-school and SPORTS boats", cost: "Minimal", notes: "The island is a narrow strip you can walk across in minutes; all water activity is with the dive school / Water Sports Institute", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — the island is walked or cycled end to end", available: false },
     ],
     nearbyPlaces: [
       { name: "Agatti Island", distance: "fair-season boat transfer", type: "Gateway Island", isHidden: false, id: "agatti" },
@@ -59797,6 +59801,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking; SPORTS shore boats", cost: "Included in the package", notes: "The visited area is small and walkable; all lagoon activity is with SPORTS staff", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — the visited shore area is walked", available: false },
     ],
     nearbyPlaces: [
       { name: "Kavaratti Island", distance: "Samudram cruise stop", type: "Capital Island", isHidden: false, id: "kavaratti" },
@@ -59862,6 +59867,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Cycle / auto / walking; SPORTS boats", cost: "Included in the package", notes: "The long thin island has a road running its length; bicycles are common. All lagoon and dive activity is with SPORTS / the dive centre", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — bicycles and the island's own vehicles cover it", available: false },
     ],
     nearbyPlaces: [
       { name: "Kalpeni Island", distance: "Samudram cruise stop", type: "Atoll Island", isHidden: false, id: "kalpeni" },
