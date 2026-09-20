@@ -41682,6 +41682,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Temple"],
     bestSeason: "March – June, September – November",
     duration: "3–4 hours (round trip hike)",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily; best attempted with daylight to spare for the hike back down." },
     highlights: [{ name: "The butter-plastered Shiva Linga" }, { name: "Panoramic Kullu Valley views from the trail" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kullu-Manali Airport (Bhuntar), ~50 km from Manali / ~10 km from Kullu", fromMumbai: "Via Delhi, then a connecting flight to Bhuntar", fromBangalore: "Via Delhi, then a connecting flight to Bhuntar", duration: "~1.5h Delhi–Bhuntar + road", costRange: "₹4,000–₹12,000", tips: "Flights to Bhuntar are frequently weather-cancelled — always have a road-travel backup plan." },
@@ -41697,6 +41698,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage at the trailhead — a taxi union from Kullu is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Kullu", distance: "~22 km", type: "Town", isHidden: false, id: "kullu" }],
     budgetBreakdown: [
@@ -41743,6 +41745,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Viewing requires ID and security clearance; timings can vary — confirm locally." },
     highlights: [{ name: "The dam's gravity-dam engineering" }, { name: "Govind Sagar reservoir views" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bhuntar (Kullu-Manali) Airport is the nearest, ~55–75 km depending on the town", fromMumbai: "Via Delhi, then a connecting flight to Bhuntar", fromBangalore: "Via Delhi, then a connecting flight to Bhuntar", duration: "~1.5h Delhi–Bhuntar + 2h road", costRange: "₹4,000–₹12,000", tips: "Chandigarh Airport is a common alternative depending on your onward route." },
@@ -41758,6 +41761,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Standard way around town and to nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the dam — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Bilaspur", distance: "75 km", type: "Town", isHidden: false, id: "bilaspur" }],
     budgetBreakdown: [
@@ -41796,6 +41800,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March (Navratri is the peak)",
     duration: "2–3 hours",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Open daily; especially crowded during Navratri." },
     highlights: [{ name: "The hilltop Shakti Peeth shrine" }, { name: "Views over Govind Sagar" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bhuntar (Kullu-Manali) Airport is the nearest, ~55–75 km depending on the town", fromMumbai: "Via Delhi, then a connecting flight to Bhuntar", fromBangalore: "Via Delhi, then a connecting flight to Bhuntar", duration: "~1.5h Delhi–Bhuntar + 2h road", costRange: "₹4,000–₹12,000", tips: "Chandigarh Airport is a common alternative depending on your onward route." },
@@ -41811,6 +41816,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Standard way around town and to nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage at this hilltop temple — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Bilaspur", distance: "60 km", type: "Town", isHidden: false, id: "bilaspur" }],
     budgetBreakdown: [
@@ -41864,6 +41870,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Connects Chamba, Dalhousie, and Khajjiar", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed local taxi-union rates, common across this circuit", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote valley villages", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Bharmaur — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Chamba", distance: "65 km", type: "Heritage Town", isHidden: false, id: "chamba" }],
     budgetBreakdown: [
@@ -41902,6 +41909,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "The stone shikhara architecture" }, { name: "An active, centuries-old pilgrimage site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kangra Airport (Gaggal), ~15 km from Dharamshala", fromMumbai: "Via Delhi, then a connecting flight to Gaggal", fromBangalore: "Via Delhi, then a connecting flight to Gaggal", duration: "~1.5h Delhi–Gaggal + short road transfer", costRange: "₹3,500–₹10,000", tips: "One of the more reliable regional airports in HP, with regular Delhi connections." },
@@ -41917,6 +41925,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in the Kangra/Dharamshala corridor, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "54 km", type: "Heritage Town", isHidden: false, id: "kangra" }, { name: "Palampur", distance: "16 km", type: "Tea-Garden Town", isHidden: false, id: "palampur" }],
     budgetBreakdown: [
@@ -41955,6 +41964,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March (Navratri is the peak)",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during Navratri." },
     highlights: [{ name: "The natural flame the temple is built around" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kangra Airport (Gaggal), ~15 km from Dharamshala", fromMumbai: "Via Delhi, then a connecting flight to Gaggal", fromBangalore: "Via Delhi, then a connecting flight to Gaggal", duration: "~1.5h Delhi–Gaggal + short road transfer", costRange: "₹3,500–₹10,000", tips: "One of the more reliable regional airports in HP, with regular Delhi connections." },
@@ -41970,6 +41980,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in the Kangra/Dharamshala corridor, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "35 km", type: "Heritage Town", isHidden: false, id: "kangra" }],
     budgetBreakdown: [
