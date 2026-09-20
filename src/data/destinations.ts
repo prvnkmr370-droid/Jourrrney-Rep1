@@ -22668,6 +22668,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Closed Mondays; book tickets online in advance." },
     highlights: [
       { name: "182 metres tall — the world's tallest statue, inaugurated 31 October 2018" },
       { name: "Dedicated to Sardar Vallabhbhai Patel, who unified 562 princely states into independent India" },
@@ -22683,6 +22684,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shuttle Bus", cost: "Included in some ticket packages", notes: "Runs between parking areas and the statue complex", available: true },
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Vadodara", notes: "Standard way to reach Kevadia from Vadodara", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kevadia is unconfirmed — a hired taxi from Vadodara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "~90 km", type: "City", isHidden: false, id: "vadodara" },
@@ -22739,6 +22741,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach Dhordo and the White Rann viewpoint", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Dhordo — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~85 km", type: "City", isHidden: false, id: "kutch" },
@@ -22781,6 +22784,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Traditionally dated to 319 BCE under Mauryan emperor Chandragupta" },
       { name: "Its current form largely laid out by Chudasama ruler Graharipu (c. 940–982 CE)" },
@@ -22795,6 +22799,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Junagadh town", notes: "Standard way to reach the fort from anywhere in Junagadh", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khapra Kodiya Caves", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "khapra-kodiya-caves" },
@@ -22839,6 +22844,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "10:00 PM", note: "Gated municipal lake park; individual attractions (zoo, boating, toy train) keep shorter daytime hours." },
     highlights: [
       { name: "Excavated in 1451 CE under Sultan Qutb-ud-Din Ahmad Shah II, originally named Hauz-e-Qutb" },
       { name: "One of the oldest man-made water bodies in western India" },
@@ -22853,6 +22859,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ahmedabad city", notes: "Standard way to reach the lake from anywhere in Ahmedabad", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -22910,6 +22917,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Junagadh town", notes: "Standard way to reach the base of the climb/ropeway station", available: true },
       { mode: "Girnar Ropeway", cost: "₹700–₹1,000 round trip (approx.)", notes: "Covers a large part of the ascent to Amba Mata temple; book in advance during peak season", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — an auto is the standard option to reach the base", available: false },
     ],
     nearbyPlaces: [
       { name: "Uparkot Fort", distance: "~4 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
