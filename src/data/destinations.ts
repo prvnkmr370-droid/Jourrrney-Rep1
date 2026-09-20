@@ -40543,6 +40543,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["t", "e", "m", "p", "l", "e"],
     bestSeason: "October – June",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "The pagoda-style wooden architecture" }, { name: "The surrounding cedar forest" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kullu-Manali Airport (Bhuntar), ~50 km from Manali / ~10 km from Kullu", fromMumbai: "Via Delhi, then a connecting flight to Bhuntar", fromBangalore: "Via Delhi, then a connecting flight to Bhuntar", duration: "~1.5h Delhi–Bhuntar + road", costRange: "₹4,000–₹12,000", tips: "Flights to Bhuntar are frequently weather-cancelled — always have a road-travel backup plan." },
@@ -40558,6 +40559,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Coverage in Manali town is patchy — a rented scooter or taxi union is more reliable", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "2.5 km", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Old Manali", distance: "~1.5 km", type: "Town Area", isHidden: false }],
     budgetBreakdown: [
@@ -40611,6 +40613,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in the valley itself — a rented scooter or taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "13 km", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Rohtang Pass", distance: "~38 km further", type: "Mountain Pass", isHidden: false, id: "rohtang-pass" }],
     budgetBreakdown: [
@@ -40664,6 +40667,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the pass — a taxi union or hired vehicle with a permit is required", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "51 km", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Solang Valley", distance: "~38 km", type: "Adventure Valley", isHidden: false, id: "solang-valley" }],
     budgetBreakdown: [
@@ -40702,6 +40706,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["t", "e", "m", "p", "l", "e"],
     bestSeason: "October – June",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Open daily; hot-spring bathing area has its own timings." },
     highlights: [{ name: "The stone temple's carved architecture" }, { name: "Natural sulphur hot-spring baths" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kullu-Manali Airport (Bhuntar), ~50 km from Manali / ~10 km from Kullu", fromMumbai: "Via Delhi, then a connecting flight to Bhuntar", fromBangalore: "Via Delhi, then a connecting flight to Bhuntar", duration: "~1.5h Delhi–Bhuntar + road", costRange: "₹4,000–₹12,000", tips: "Flights to Bhuntar are frequently weather-cancelled — always have a road-travel backup plan." },
@@ -40717,6 +40722,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Coverage in Manali/Vashisht is patchy — a rented scooter or taxi union is more reliable", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "2 km", type: "Hill Station", isHidden: false, id: "manali" }],
     budgetBreakdown: [
@@ -40755,6 +40761,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["t", "e", "m", "p", "l", "e"],
     bestSeason: "March – June, September – December",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "The giant Hanuman statue" }, { name: "Panoramic views over Shimla" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shimla Airport (Jubbarhatti), ~23 km from Shimla — limited seasonal flights; Chandigarh Airport (~115 km) is the reliable option", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 3h road", costRange: "₹3,000–₹10,000", tips: "Jubbarhatti's flight schedule is thin and weather-dependent — most travelers fly into Chandigarh and drive up." },
@@ -40770,6 +40777,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — the local taxi union is the standard option for most trips", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "2.5 km (via Ridge)", type: "Hill Station", isHidden: false, id: "shimla" }],
     budgetBreakdown: [
@@ -40823,6 +40831,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — the local taxi union is the standard option for most trips", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "23 km", type: "Hill Station", isHidden: false, id: "shimla" }, { name: "Mashobra", distance: "~11 km", type: "Forest Town", isHidden: false }],
     budgetBreakdown: [
@@ -40876,6 +40885,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — the local taxi union is the standard option for most trips", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "16 km", type: "Hill Station", isHidden: false, id: "shimla" }],
     budgetBreakdown: [
