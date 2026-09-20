@@ -67595,6 +67595,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage"],
     bestSeason: "October – April (cool, dry weather)",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "A lit, maintained tourist route with a small entry fee." },
     highlights: [{ name: "A lit, ~150m limestone passage — beginner-friendly" }, { name: "Stalactite and stalagmite formations" }, { name: "A forest approach walk before the cave entrance" }, { name: "Arwah Cave and Sohra Eco Park nearby", id: "arwah-cave" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~83 km from the cave — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~171 km) or Shillong Airport (~83 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "One of the most accessible cave visits in the state." },
@@ -67605,6 +67606,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto from Sohra Town", cost: "Short local fare", notes: "A quick, easy final approach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Sohra — a local taxi or auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Arwah Cave", distance: "~3 km", type: "Limestone Cave", isHidden: false, id: "arwah-cave" },
@@ -67655,6 +67657,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage"],
     bestSeason: "October – May (cool, dry weather, safe exploration)",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "A lit, maintained tourist route with a small entry fee." },
     highlights: [{ name: "Genuine fossilised crustacean shells and fish bones in the cave walls" }, { name: "A maze of illuminated twists and turns" }, { name: "Waterfall and valley views along the approach path" }, { name: "Seating areas overlooking Lawshynna Hill" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~77 km from the cave — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~166 km) or Shillong Airport (~77 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Meghalaya's most famous and accessible cave — a reliable first stop for cave exploration." },
@@ -67665,6 +67668,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto from Sohra Town", cost: "Short local fare", notes: "A quick, easy final approach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Sohra — a local taxi or auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mawsmai Cave", distance: "~3 km", type: "Limestone Cave", isHidden: false, id: "mawsmai-cave" },
@@ -67726,6 +67730,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (essential for the main cave; mandatory for deep expeditions)", cost: "Arranged locally or via the Meghalaya Adventurers Association", notes: "The maze-like corridors make a guide genuinely necessary, not optional", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the South Garo Hills — a sturdy hired vehicle from Tura or Baghmara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tura Peak", distance: "~125 km", type: "Viewpoint & Trek", isHidden: true, id: "tura-peak" },
@@ -67782,6 +67787,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (essential)", cost: "Arranged in Jowai or Nongkhlieh village", notes: "The cave's scale and remote sections make a guide genuinely necessary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Jowai — a hired taxi from Shillong or Jowai is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Krang Suri Falls", distance: "Variable, same district", type: "Waterfall", isHidden: true, id: "krang-suri-falls" },
