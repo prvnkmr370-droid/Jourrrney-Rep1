@@ -16687,6 +16687,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Self-Drive/Rental Car", cost: "₹1,500–₹3,000/day", notes: "Genuinely the most practical way to cover Bhuj, the Rann, Kalo Dungar and Nirona given the distances", available: true },
       { mode: "Taxi (Full Day)", cost: "₹2,500–₹4,500/day", notes: "Widely arranged through hotels for the White Rann and village circuit", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "For getting around Bhuj town itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhuj town is unconfirmed and there is none across the Rann/village circuit — a self-drive rental or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dholavira (Indus Valley UNESCO site)", distance: "~250 km from Bhuj", type: "UNESCO Heritage", isHidden: true },
@@ -16820,6 +16821,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
       { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For Girnar, Gir, and Somnath day trips", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — autos and hired taxis are the standard local option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gir National Park", distance: "~65 km", type: "Wildlife", isHidden: true, id: "gir-national-park" },
@@ -16887,6 +16889,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
       { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For Marine National Park boat-launch points and Khijadiya", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamnagar is unconfirmed — autos and hired taxis are the standard local option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khijadiya Bird Sanctuary", distance: "~10 km", type: "Wildlife", isHidden: true, id: "khijadiya-bird-sanctuary" },
@@ -17023,6 +17026,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Standard way to get around the city", available: true },
       { mode: "Taxi (Full Day)", cost: "₹2,000–₹4,000/day", notes: "For Velavadar National Park and Palitana day trips", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhavnagar is unconfirmed — autos and hired taxis are the standard local option", available: false },
     ],
     nearbyPlaces: [
       { name: "Velavadar Blackbuck National Park", distance: "~42 km", type: "Wildlife", isHidden: true, id: "velavadar-blackbuck-national-park" },
@@ -17152,6 +17156,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Dwarka", notes: "Standard way to reach the beach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Dwarka is unconfirmed — an auto or taxi from Dwarka is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dwarka temples", distance: "~12 km", type: "Temple Town", isHidden: true, id: "dwarkadhish-temple" },
@@ -17203,6 +17208,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹800–₹1,800 from Porbandar", notes: "Standard way to reach the village and beach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural village — a taxi hired in Porbandar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Porbandar (Kirti Mandir)", distance: "~65 km", type: "Heritage", isHidden: true, id: "kirti-mandir-porbandar" },
@@ -17257,6 +17263,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹100–₹300 from Valsad", notes: "Standard way to reach the beach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Valsad is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Valsad town", distance: "~4 km", type: "Town", isHidden: true },
@@ -17311,6 +17318,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,000 from Bhuj", notes: "Standard way to reach Mandvi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kutch is unconfirmed — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj (Aina Mahal, Prag Mahal)", distance: "~60 km", type: "City", isHidden: false, id: "kutch" },
@@ -17361,6 +17369,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹2,800 from Bhuj", notes: "The practical way to reach this remote beach", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this far outside Bhuj — a hired taxi from town is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandvi Beach", distance: "~40 km", type: "Beach", isHidden: false, id: "mandvi-beach" },
@@ -17412,6 +17421,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹250–₹600 from Surat", notes: "Standard way to reach the beach", available: true },
+      { mode: "Ola / Uber", cost: "₹250–₹600", notes: "Surat has reliable app-cab coverage that extends to Dumas", available: true },
     ],
     nearbyPlaces: [
       { name: "Surat city", distance: "~21 km", type: "City", isHidden: false, id: "surat" },
@@ -17462,6 +17472,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Surat", notes: "Standard way to reach the beach", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹700", notes: "Surat has reliable app-cab coverage that extends to Suvali/Hazira", available: true },
     ],
     nearbyPlaces: [
       { name: "Surat city", distance: "~25 km", type: "City", isHidden: false, id: "surat" },
@@ -17514,6 +17525,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Navsari", notes: "Standard way to reach Dandi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Navsari is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Navsari town", distance: "~13 km", type: "Town", isHidden: true },
@@ -17564,6 +17576,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhavnagar", notes: "Standard way to reach Mahuva", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mahuva is unconfirmed — a hired taxi from Bhavnagar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhavnagar", distance: "~96 km", type: "City", isHidden: false, id: "bhavnagar" },
