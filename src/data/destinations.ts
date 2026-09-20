@@ -6109,6 +6109,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Toy Train (joyride)", cost: "₹250–₹1,500", notes: "2h joyride from Darjeeling station — booking essential", available: true },
       { mode: "Taxi (local)", cost: "₹300–₹1,200", notes: "Hire full-day for Tiger Hill + sightseeing (₹1,200–₹1,800)", available: true },
       { mode: "Walking", cost: "Free", notes: "Mall Road, Chowrasta, market areas all walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — a local taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tiger Hill (sunrise point)", distance: "13 km", type: "Iconic Sunrise", isHidden: false },
@@ -6246,6 +6247,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Motorised Boat Safari", cost: "Included in tour packages (₹3,000–₹8,000/day if arranged separately)", notes: "The only way to explore the reserve — all movement is by boat through the tidal channels", available: true },
       { mode: "Watchtower Walks", cost: "Included in permits", notes: "Short walks at designated safe points like Sudhanyakhali and Sajnekhali", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in the delta — a hired boat or local taxi to the jetty is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kolkata", distance: "110 km", type: "Heritage", isHidden: false, id: "kolkata" },
@@ -6310,6 +6312,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared/Private Taxi", cost: "₹100–₹500", notes: "The standard way to get around the hilly town", available: true },
       { mode: "Walking", cost: "Free", notes: "The main market and central town area are walkable, though genuinely hilly", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Darjeeling", distance: "50 km", type: "Hill Station", isHidden: false, id: "darjeeling" },
