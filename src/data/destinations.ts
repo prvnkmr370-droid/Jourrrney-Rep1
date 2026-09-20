@@ -13826,6 +13826,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March; full moon nights for the temple's signature alignment",
     duration: "1–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "350m hilltop setting" }, { name: "Deliberate full-moon light alignment on the Shiva Linga" }, { name: "Historic seat of the Bhoja dynasty's deity" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Margao/Quepem — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~30min from Margao", costRange: "₹500–₹1,000 (cab from Margao)", tips: "A genuine hilltop climb — worth timing for a full moon night if your schedule allows." },
@@ -13835,6 +13836,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹900 (taxi)", notes: "The practical way to reach this hilltop temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹900", notes: "Reliable coverage this close to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Margao town", distance: "~20 km", type: "Town", isHidden: true },
@@ -13876,6 +13878,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Datta Jayanti (December) is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Dedicated to the Hindu Trinity" }, { name: "Local belief in healing for mental afflictions" }, { name: "Near Arvalem Falls & Caves" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~15min from Bicholim town", costRange: "₹300–₹700 (cab from Bicholim)", tips: "Combine with the real Arvalem Falls and cave complex nearby." },
@@ -13885,6 +13888,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Arvalem Falls & Caves", distance: "~1 km", type: "Waterfall", isHidden: true },
@@ -13928,6 +13932,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "Year-round; Anant Chaturthi is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Origin story: a cowherd's forest discovery" }, { name: "Consecrated 24 April 1966" }, { name: "Blend of ancient & modern temple architecture" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~5min from Ponda", costRange: "₹100–₹300 (auto/cab)", tips: "Right on the edge of Ponda town — an easy, quick add-on." },
@@ -13937,6 +13942,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Widely available given its proximity to Ponda town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable coverage this close to Ponda town", available: true },
     ],
     nearbyPlaces: [
       { name: "Ponda town", distance: "~2 km", type: "Town", isHidden: true },
@@ -13978,6 +13984,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; the November Jatra (Vidya Chaturthi to Dashami) is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "500+ year old shrine, renovated 1603" }, { name: "4-foot Mahishasuramardini idol" }, { name: "November Jatra festival" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda/Margao — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~34 km from Panaji, ~12 km from Margao", costRange: "₹500–₹1,000 (cab)", tips: "Conveniently placed between Panaji and Margao if combining a South Goa trip." },
@@ -13987,6 +13994,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹900 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹900", notes: "Reliable coverage given proximity to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Margao town", distance: "~12 km", type: "Town", isHidden: true },
@@ -14032,6 +14040,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; the annual Jatra features a palanquin procession",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Pillar-free assembly hall" }, { name: "5-storey carved lamp tower" }, { name: "Multiple deities in one shrine" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~15min from Ponda", costRange: "₹400–₹800 (cab)", tips: "Part of the wider Ponda-taluka temple circuit." },
@@ -14041,6 +14050,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "App-cab coverage in this Ponda-taluka village is unconfirmed — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahalaxmi Temple, Bandode", distance: "~3 km", type: "Temple", isHidden: false, id: "mahalaxmi-temple" },
@@ -14083,6 +14093,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Gokulashtami is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Kadamba dynasty's royal deity" }, { name: "Destroyed 1540, rebuilt by Shivaji in 1668" }, { name: "Gokulashtami festival" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Bicholim town", costRange: "₹300–₹700 (cab from Bicholim)", tips: "The Shivaji-era rebuild is a genuinely distinctive piece of history among Goa's temples — worth reading up on before visiting." },
@@ -14092,6 +14103,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Bicholim town", distance: "~5 km", type: "Town", isHidden: true },
@@ -14133,6 +14145,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; the 7-day Bhajanisaptah (Kartika month), Jatra, Dussehra, and Shimgo are the major festivals",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "A genuine 5-temple complex" }, { name: "Twin Deepstambha lamp towers" }, { name: "7-day Bhajanisaptah festival" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Pernem — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~15min from Morjim", costRange: "₹300–₹700 (cab)", tips: "Easy to combine with a Morjim or Ashwem beach day." },
@@ -14142,6 +14155,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Coverage can be patchy this far north — a rented scooter is often more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Morjim Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "morjim" },
