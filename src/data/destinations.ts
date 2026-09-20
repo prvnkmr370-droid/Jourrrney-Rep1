@@ -15230,6 +15230,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500 (taxi)", notes: "Standard way to reach the lake", available: true },
       { mode: "Boating", cost: "₹100–₹300", notes: "Boat rides are typically available on the lake", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Bicholim town", distance: "~10 km", type: "Town", isHidden: true },
@@ -15281,6 +15282,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500 (taxi)", notes: "Standard way to reach the lake", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage given proximity to Old Goa/Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Old Goa", distance: "~5 km", type: "Heritage Site", isHidden: false, id: "old-goa" },
@@ -15335,6 +15337,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹900 (taxi)", notes: "The practical way to reach this rural village site", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this rural village — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Netravali Wildlife Sanctuary", distance: "Same area", type: "Wildlife Sanctuary", isHidden: true },
@@ -15384,6 +15387,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Museum"],
     bestSeason: "Year-round; open daily 9am–6pm",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Miniature recreated Goan village" }, { name: "Traditional salt-pan & coastal-trade dioramas" }, { name: "Adjoining Bigfoot Museum" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Margao — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~8 km / ~15min from Margao", costRange: "₹200–₹500 (cab from Margao)", tips: "An easy, genuinely family-friendly half-day out from Margao." },
@@ -15393,6 +15397,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Margao", notes: "The practical way to reach Loutolim", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage this close to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Margao town", distance: "~8 km", type: "Town", isHidden: true },
@@ -15436,6 +15441,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Museum"],
     bestSeason: "Year-round; open Saturday–Thursday 10am–5pm, closed Fridays",
     duration: "1 hour",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed on Fridays." },
     highlights: [{ name: "8 galleries, established 1964" }, { name: "Portuguese-era viceroy portraits" }, { name: "Behind Church of St. Francis of Assisi" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Check the Friday closure before planning your Old Goa itinerary around it." },
@@ -15445,6 +15451,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Church of St. Francis of Assisi", distance: "Adjoining", type: "Church", isHidden: false, id: "church-of-st-francis-of-assisi" },
@@ -15487,6 +15494,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Museum"],
     bestSeason: "Year-round; open daily 9:30am–5pm",
     duration: "1 hour",
+    visitingHours: { opens: "9:30 AM", closes: "5:00 PM", note: "Open daily; no photography permitted inside." },
     highlights: [{ name: "Asia's first museum of its kind (1994)" }, { name: "Indo-Portuguese Christian art, largely Hindu-artisan-made" }, { name: "Inside the historic Santa Monica convent" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "No photography permitted inside — plan to simply take it in rather than shoot it." },
@@ -15496,6 +15504,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Nunnery of Santa Monica", distance: "Same building", type: "Church", isHidden: false, id: "nunnery-of-santa-monica" },
