@@ -7140,6 +7140,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared/Private Taxi", cost: "₹1,500–₹3,000 (day tour)", notes: "The standard way to cover Mullayanagiri, Baba Budangiri, and Hebbe Falls in one circuit", available: true },
       { mode: "Self-Drive/Rental Vehicle", cost: "₹1,000–₹2,500/day", notes: "A popular option given the scenic ghat roads between sights", available: true },
       { mode: "Trekking", cost: "Guide fee ₹500–₹1,500", notes: "Several peaks and waterfalls (including the final stretch to Hebbe Falls) require walking", available: true },
+      { mode: "Uber", cost: "Varies", notes: "Confirmed operating in Chikmagalur town itself; coverage thins out at the peaks and estates, where a hired day taxi works better", available: true },
     ],
     nearbyPlaces: [
       { name: "Coorg (Kodagu)", distance: "95 km", type: "Nature", isHidden: false, id: "coorg" },
@@ -25786,6 +25787,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg/1280px-Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg/1280px-Sri_Mookambika_Temple%2C_Kollur%2C_Karnataka_04.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Kollur_Mookambika_Temple_main_shrine.jpg/1280px-Kollur_Mookambika_Temple_main_shrine.jpg"],
     imageCredit: "Photos: A.Murali, Starstuffseyyon — Wikimedia Commons, CC0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Darshan runs in several windows through the day with a midday closure, roughly 1:30–3 PM; check the temple's own site (kollurmookambikatemple.org) if timing a visit around a specific seva." },
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -25803,6 +25805,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹2,500–₹5,000 from Mangaluru", notes: "Standard way to reach Kollur from the coast", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Mangaluru is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gokarna", distance: "~140 km", type: "Beach Town", isHidden: false, id: "gokarna" },
@@ -52269,6 +52272,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Murudeshwara_raja_gopura_HDR%2C_Jul_2012.jpg/1280px-Murudeshwara_raja_gopura_HDR%2C_Jul_2012.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the seaside Shiva statue on Kanduka Hill (CC BY 2.0) and the 20-storey Raja Gopuram (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "8:30 PM", note: "Closed for a midday break, roughly 1–3 PM. The Raja Gopuram lift keeps its own hours, about 7 AM–1 PM and 3–8 PM." },
     category: ["Religious", "Beaches", "Heritage"],
     bestSeason: "October – March",
     duration: "1 day",
@@ -52288,6 +52292,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹50–₹300", notes: "Everything of interest is within ~1 km, easily walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small temple town is unconfirmed — everything is within easy walking or auto distance anyway", available: false },
     ],
     nearbyPlaces: [
       { name: "Gokarna", distance: "~75 km", type: "Beach/Temple Town", isHidden: false, id: "gokarna" },
@@ -52467,6 +52472,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Udupi_Sri_Krishna_Matha_Temple.jpg/1280px-Udupi_Sri_Krishna_Matha_Temple.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — two views of the Udupi Sri Krishna Matha temple entrance (CC BY-SA 2.5 and CC BY-SA 2.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Darshan runs in two sessions with an afternoon break, roughly 12–4 PM; Mangala Aarti is at 5:30 AM and the closing Ekanta Seva at 8:30 PM. Open all 365 days." },
     category: ["Religious", "Heritage", "Food & Culinary"],
     bestSeason: "October – March",
     duration: "1–2 days",
@@ -52486,6 +52492,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹50–₹400", notes: "Autos link the temple, town, and Malpe Beach; boats run to St. Mary's Island from Malpe", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹300 within Udupi/Manipal", notes: "Both operate across Udupi, Manipal, and Mangaluru; Karnataka's bike-taxi ban affects only two-wheeler rides, not cars", available: true },
     ],
     nearbyPlaces: [
       { name: "St. Mary's Island (via Malpe)", distance: "~6 km to Malpe jetty", type: "Basalt Island", isHidden: true, id: "st-marys-island" },
@@ -52533,6 +52540,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/BahubaliStatue_Dharmasthala.jpg/1280px-BahubaliStatue_Dharmasthala.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Sri Manjunatha Swamy Temple (CC0) and the 39-ft Bahubali statue near the temple (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:30 AM", closes: "8:30 PM", note: "Closed for a midday break, roughly 2:30–5 PM, with longer hours on Sundays and Mondays; check the temple's own site (shridharmasthala.org) as timings have shifted before." },
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1 day",
@@ -52552,6 +52560,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹100", notes: "The temple, museums, and Bahubali statue are all within easy reach on foot or by short auto ride", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this compact temple town is unconfirmed — walking and local autos cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Kukke Subramanya", distance: "~55 km", type: "Temple Town", isHidden: true, id: "kukke-subramanya" },
@@ -52751,6 +52760,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep / Local Bus / Walking", cost: "₹20–₹800", notes: "Jeeps for waterfall and forest trips; local buses on the main road; the village itself is walkable", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable in this small rainforest village — local jeeps, buses, and walking cover it instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Kundadri Hill", distance: "~20 km", type: "Hill / Jain Temple", isHidden: true, id: "kundadri-hill" },
@@ -52797,6 +52807,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Kasrkod-beach-park-Honnavar.jpg/1280px-Kasrkod-beach-park-Honnavar.jpg",
     ],
     imageCredit: "Photo: Wikimedia Commons — Kasarkod beach park, Honnavar, Karnataka (CC0). Only one genuinely verified image of this specific beach was found after a real search — documented here as a single-image exception. Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Some sources list a later 7 PM close — the managed beach park has a staffed entry gate, unlike most open beaches." },
     category: ["Beaches", "Nature"],
     bestSeason: "October – March",
     duration: "Half day",
@@ -52816,6 +52827,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹100–₹400", notes: "Autos and taxis from Honnavar town and railway station", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Honnavar is unconfirmed — local autos and taxis are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Murudeshwara", distance: "~20 km", type: "Temple/Beach Town", isHidden: false, id: "murudeshwara" },
@@ -52881,6 +52893,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Jeep", cost: "₹500–₹2,500", notes: "A car or hired jeep is best; attractions are spread across estates and hills", available: true },
+      { mode: "Uber", cost: "N/A", notes: "App coverage across Sakleshpur's spread-out estates and hills is unconfirmed — a hired taxi or self-drive is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bisle Ghat Viewpoint", distance: "~45 km", type: "Viewpoint", isHidden: true, id: "bisle-ghat" },
@@ -53191,6 +53204,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hebbe_Falls_%288322309846%29.jpg/1280px-Hebbe_Falls_%288322309846%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — a Kemmanagundi mountain view (CC BY-SA 4.0) and Hebbe Falls near Kemmanagundi (CC BY-SA 2.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "For the gardens and hilltop viewpoints; Hebbe Falls jeep trips run on their own schedule through the day." },
     category: ["Nature", "Adventure"],
     bestSeason: "September – February",
     duration: "1–2 days",
@@ -53210,6 +53224,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / 4x4 Jeep", cost: "₹500–₹3,000", notes: "A car reaches the town and gardens; local 4x4 jeeps run to Hebbe Falls over rough track", available: true },
+      { mode: "Uber", cost: "N/A", notes: "App coverage doesn't reach this hill station — a hired taxi or self-drive from Chikmagalur town is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chikmagalur", distance: "~55 km", type: "Coffee Hill Town", isHidden: false, id: "chikmagalur" },
@@ -53387,6 +53402,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/St._Mary%27s_Islands%2C_Malpe_beach%2C_Karnataka_05.jpg/1280px-St._Mary%27s_Islands%2C_Malpe_beach%2C_Karnataka_05.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the columnar basalt pillars on the shore (CC BY-SA 2.0) and the island's palm-shaded beach area (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "For the Malpe ferry service, which departs every 20–30 minutes and stops running in the monsoon; the last return boat and exact cutoff shift with sea conditions, so check with the jetty on the day." },
     category: ["Nature", "Beaches"],
     bestSeason: "October – May (ferries do not run in the monsoon)",
     duration: "Half day",
@@ -53406,6 +53422,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Authorised Ferry", cost: "₹300–₹500 (approx. round trip)", notes: "The only way to the island; runs in batches when the sea is calm", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable on the island itself — cars/autos only get you as far as Malpe jetty, from where the ferry is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Udupi Sri Krishna Temple", distance: "~6 km", type: "Temple Town", isHidden: false, id: "udupi-sri-krishna-temple" },
@@ -53471,6 +53488,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Bus", cost: "₹20–₹1,000", notes: "NH66 buses stop here; a vehicle is best for exploring Koteshwara and the river side", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on this stretch of NH66 is unconfirmed — a bus or hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kollur Mookambika Temple", distance: "~35 km", type: "Temple", isHidden: false, id: "kollur-mookambika-temple" },
@@ -53535,6 +53553,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat / Auto", cost: "₹50–₹600", notes: "A short ferry/boat across the Kali River from Karwar; autos and taxis on the Karwar side", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable on the island itself — a boat crossing or road drive from Karwar is the only way over", available: false },
     ],
     nearbyPlaces: [
       { name: "Karwar", distance: "~6 km", type: "Coastal Town", isHidden: true, id: "karwar" },
@@ -55285,6 +55304,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Peaks_of_Mullayanagiri.jpg/1280px-Peaks_of_Mullayanagiri.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the rolling shola-grassland hills of Mullayanagiri, Chikmagalur district (CC BY-SA 4.0) and the ridge of the Mullayanagiri/Baba Budan range with the approach road (CC BY 4.0). Details verified against the official Karnataka Tourism site (karnatakatourism.org), which calls it Karnataka's highest peak at ~1,930 m / 6,317 ft in the Baba Budangiri range near Chikkamagaluru, noted for its grasslands, cliffs, and sunrises.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "The Forest Department checkpost requires a pre-booked pass for private vehicles, sold in two slots (6 AM–12 PM and 1 PM–6 PM); a sunrise visit needs the earliest slot." },
     category: ["Nature", "Adventure"],
     bestSeason: "September – February (October–February for clear sunrises)",
     duration: "Half day (add a day for the ridge trek)",
@@ -55304,6 +55324,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Hired Jeep", cost: "₹1,500–₹3,000", notes: "A vehicle or hired jeep to the road-head; the last stretch to the summit is on foot up steps", available: true },
+      { mode: "Uber", cost: "N/A", notes: "App coverage doesn't reach the peak road itself — a hired jeep or taxi from Chikmagalur town is the only practical way up", available: false },
     ],
     nearbyPlaces: [
       { name: "Chikmagalur", distance: "~25 km", type: "Coffee Hill Town", isHidden: false, id: "chikmagalur" },
@@ -55615,6 +55636,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Kukke_Shree_Subrahmanya_Temple_%2821%29.jpg/1280px-Kukke_Shree_Subrahmanya_Temple_%2821%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Kukke Subramanya temple gopuram with the Kumara Parvatha hills behind (CC BY-SA 4.0, by Vinayaraj) and a carved wooden panel from the temple (CC BY-SA 4.0, by Vinayaraj). Details verified against the official Karnataka Tourism site (karnatakatourism.org), which places the temple on the Kumaradhara in Sullia taluk, describes Subrahmanya worshipped as a snake merged with Vasuki, the Naga Dosha / Ashlesha Bali / Sarpa Dosha Parihara rituals (bookable online), and gives ~280 km from Bengaluru, Mangaluru airport ~105 km, and Subramanya Road station ~12 km.",
+    visitingHours: { opens: "5:30 AM", closes: "8:30 PM", note: "Darshan runs in two sessions with a midday break; Ashlesha Bali ritual days have their own extended schedule and heavy crowds, so check the temple's own booking site if timing a visit around a puja." },
     category: ["Religious", "Heritage"],
     bestSeason: "October – February",
     duration: "Half day",
@@ -55634,6 +55656,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹200", notes: "The temple, river ghat, and lodges are all within walking distance; autos from the bus stand", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this compact temple town is unconfirmed — walking and local autos cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Dharmasthala", distance: "~55 km", type: "Temple Town", isHidden: false, id: "dharmasthala" },
@@ -55699,6 +55722,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / City Bus / App Cab", cost: "₹20–₹500", notes: "Autos, frequent city buses, and app cabs; Panambur and Tannirbhavi are short rides from the centre", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹350 within the city", notes: "Both operate reliably across Mangaluru; Karnataka's statewide bike-taxi pause affects only two-wheeler rides, not cars", available: true },
     ],
     nearbyPlaces: [
       { name: "Udupi Sri Krishna Temple", distance: "~60 km", type: "Temple Town", isHidden: false, id: "udupi-sri-krishna-temple" },
@@ -56095,6 +56119,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Boat / Taxi", cost: "₹50–₹1,500", notes: "Autos and taxis in town; boats/ferries across the Kali to Devbagh and out to Kurumgad", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Local, in-town availability is unconfirmed — Uber's own listings for Karwar are intercity rides rather than local ones; autos and taxis are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Devbagh Beach", distance: "~6 km", type: "Island Beach", isHidden: false, id: "devbagh-beach" },
@@ -59054,6 +59079,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sree_Durga_parameshwari_Temple_2%2C_Kateel_01.jpg/1280px-Sree_Durga_parameshwari_Temple_2%2C_Kateel_01.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons (CC0) — the Nandini river beside the Kateel Durga Parameshwari Temple, showing the river-islet setting, and the copper-and-brass-clad sanctum wall of the temple. Verified-authentic Commons imagery of Kateel is limited to casual visitor photos, so these two clearly on-site images were used. Details verified against the official Karnataka Tourism site (karnatakatourism.org), which lists the Kateel Durgaparameshwari temple as a riverine island shrine near Mangaluru.",
+    visitingHours: { opens: "6:00 AM", closes: "8:30 PM", note: "General daylight-to-evening darshan hours; an all-night Yakshagana performance, when scheduled, runs well past this on the temple grounds." },
     category: ["Religious", "Art & Culture", "Nature"],
     bestSeason: "October – March (Yakshagana mela season runs roughly November – May)",
     duration: "1 – 2 hours (longer for an all-night Yakshagana)",
@@ -59073,6 +59099,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto / Walking", cost: "₹15–₹600", notes: "Buses and autos from Mangaluru and Kaikamba; the islet is crossed on foot by the footbridge", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹700 one-way from Mangaluru", notes: "Both operate out of Mangaluru and can reach Kateel, though a bus or auto is the more typical local option", available: true },
     ],
     nearbyPlaces: [
       { name: "Mangaluru", distance: "~29 km", type: "Coastal City", isHidden: false, id: "mangaluru" },
@@ -59139,6 +59166,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus + walking", cost: "₹20–₹600", notes: "Autos from Barkur bus stop to the temples, which are spread across the town and paddy fields; some walking between sites", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small town is unconfirmed — buses and local autos are the reliable way to reach the scattered temples", available: false },
     ],
     nearbyPlaces: [
       { name: "Udupi Sri Krishna Temple", distance: "~16 km", type: "Temple Town", isHidden: false, id: "udupi-sri-krishna-temple" },
