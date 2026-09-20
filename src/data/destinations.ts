@@ -6754,6 +6754,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Park Gypsy (open 6-seater jeep)", cost: "₹1,500–₹3,000/safari", notes: "The standard way to enter the park — book via the official MP Forest Department portal", available: true },
       { mode: "Canter (shared safari vehicle)", cost: "₹800–₹1,500/safari", notes: "Cheaper shared option at some gates", available: true },
       { mode: "Resort Transfer", cost: "Often included", notes: "Most resorts run their own pickup from Jabalpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — resorts arrange the Jabalpur transfer, and inside the park only registered safari gypsies operate", available: false },
     ],
     nearbyPlaces: [
       { name: "Bandhavgarh National Park", distance: "230 km", type: "Wildlife", isHidden: false, id: "bandhavgarh-national-park" },
@@ -6819,6 +6820,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Park Gypsy (open 6-seater jeep)", cost: "₹1,500–₹3,500/safari", notes: "The standard way to enter the park — book via the official MP Forest Department portal", available: true },
       { mode: "Resort Transfer", cost: "Often included", notes: "Most resorts run their own pickup from Jabalpur or Umaria", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — resorts arrange the Jabalpur/Umaria transfer, and inside the park only registered safari gypsies operate", available: false },
     ],
     nearbyPlaces: [
       { name: "Kanha National Park", distance: "230 km", type: "Wildlife", isHidden: false, id: "kanha-national-park" },
@@ -60211,6 +60213,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari jeep (with guide)", cost: "Per-jeep safari fee + permit + guide (₹3,000–₹8,000 per jeep per drive, shared or private)", notes: "All park movement is in a registered gypsy with a compulsory forest guide; permits are booked online in advance and are limited", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — lodges arrange the Nagpur transfer, and only registered safari jeeps operate inside the park", available: false },
     ],
     nearbyPlaces: [
       { name: "Kanha National Park", distance: "~200 km", type: "Tiger Reserve", isHidden: false, id: "kanha-national-park" },
@@ -60278,6 +60281,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari jeep (with guide) + Ken boat", cost: "Per-jeep safari fee + permit + guide; separate charge for the Ken boat ride", notes: "Core safaris are in a registered gypsy with a compulsory forest guide on booked permits; boat rides run from the Madla side", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — a taxi from Khajuraho is the standard option, and only registered safari jeeps operate inside the park", available: false },
     ],
     nearbyPlaces: [
       { name: "Khajuraho", distance: "~25 km", type: "UNESCO Temple Town", isHidden: false, id: "khajuraho" },
@@ -60345,6 +60349,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari jeep (with guide)", cost: "Per-jeep safari fee + permit + guide", notes: "The cheetah safari is in a registered gypsy with a compulsory forest guide on booked permits in the Ahera zone; independent driving inside the park is not allowed", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — a hired taxi from Gwalior or Shivpuri is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gwalior", distance: "~175 km", type: "Fort City", isHidden: false, id: "gwalior" },
@@ -60412,6 +60417,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat + jeep + walking + canoe + cycle", cost: "Per-activity safari fees + permit + guide", notes: "A boat crosses the Denwa to the core; from there guided jeep, walking, canoe and cycle safaris run with a compulsory forest guide (and, for walks, an armed forest guard)", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the reserve — a taxi from Pipariya or Bhopal is the standard option to reach Madhai", available: false },
     ],
     nearbyPlaces: [
       { name: "Pachmarhi", distance: "~100 km", type: "Hill Station", isHidden: false, id: "pachmarhi" },
