@@ -60081,6 +60081,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / boat / shared auto", cost: "₹10–₹200", notes: "The island and its temples are walked (the parikrama is ~7 km); boats and the footbridge cross the river; shared autos link the bus stand and the ghats", available: true },
+      { mode: "Ola / Uber", cost: "₹1,800–₹2,800 one-way from Indore", notes: "Bookable from Indore, though a taxi that waits or a bus is the more common way for the day trip", available: true },
     ],
     nearbyPlaces: [
       { name: "Maheshwar", distance: "~65 km", type: "Riverside Heritage Town", isHidden: false, id: "maheshwar" },
@@ -60147,6 +60148,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / cycle-rickshaw / boat / walking", cost: "₹20–₹300", notes: "The fort, ghats and weaving centre are close together and walkable; autos link the bus stand; rowing boats run on the Narmada", available: true },
+      { mode: "Ola / Uber", cost: "₹1,800–₹2,800 one-way from Indore", notes: "Bookable from Indore, though a taxi that waits or a bus is the more common option locally", available: true },
     ],
     nearbyPlaces: [
       { name: "Mandu", distance: "~40 km", type: "Heritage City", isHidden: false, id: "mandu" },
@@ -60554,6 +60556,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / e-rickshaw / hired taxi + boats", cost: "₹20–₹100 per hop; ₹600–₹1,200 for a half-day circuit; small charge for a Ramghat boat", notes: "Shared autos and e-rickshaws run between Ramghat, Kamadgiri, Janki Kund and Karwi; rowing boats operate at Ramghat", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Chitrakoot is unconfirmed — autos, e-rickshaws and hired taxis cover the scattered sites easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Khajuraho", distance: "~175 km", type: "UNESCO Temple Town", isHidden: false, id: "khajuraho" },
@@ -60621,6 +60624,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, hired jeeps & walking", cost: "₹20–₹80 per hop; ₹600–₹1,200 for a half-day round of the outlying sites", notes: "The town core (Narmada Kund, Kalachuri temples, Shri Yantra Mandir) is walkable; autos and hired jeeps reach Sonemuda, Kapildhara, Dugdhdhara and Kabir Chabutra", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote hill town — autos and hired jeeps cover the outlying sites", available: false },
     ],
     nearbyPlaces: [
       { name: "Bandhavgarh National Park", distance: "~230 km", type: "Tiger Reserve", isHidden: false, id: "bandhavgarh-national-park" },
