@@ -4303,6 +4303,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Scooter/Bike", cost: "₹400–₹700/day", notes: "A practical way to cover both towns and the beach stretches in a day", available: true },
       { mode: "Taxi/Cab", cost: "₹500–₹1,500/day", notes: "For a full-day fort-and-beach circuit", available: true },
       { mode: "Walking", cost: "Free", notes: "Both fort areas and the seafront promenades are walkable once you're there", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — autos and rented scooters are the standard way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Moti Daman Fort", distance: "Moti Daman", type: "Fort", isHidden: false, id: "moti-daman-fort", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Daman_MotiDaman_Fort.JPG/1280px-Daman_MotiDaman_Fort.JPG" },
@@ -4363,6 +4364,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open fort grounds, free entry." },
     highlights: [{ name: "Cathedral of Bom Jesus", id: "cathedral-of-bom-jesus" }, { name: "Fort bastions & ramparts" }, { name: "Freedom Memorial" }, { name: "Sea/river-mouth viewpoints" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Moti Daman town", costRange: "₹50–₹200 (auto within town)", tips: "Walkable once inside the fort walls — wear comfortable shoes for uneven old stone surfaces." },
@@ -4378,6 +4380,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Moti Daman", available: true },
       { mode: "Walking", cost: "Free", notes: "The fort interior is fully walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — autos are widely available in Moti Daman", available: false },
     ],
     nearbyPlaces: [
       { name: "Cathedral of Bom Jesus", distance: "Within the fort", type: "Church", isHidden: false, id: "cathedral-of-bom-jesus" },
@@ -4429,6 +4432,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Within Moti Daman Fort; outside scheduled Mass times." },
     highlights: [{ name: "Baroque altars & carved woodwork" }, { name: "Stained glass windows" }, { name: "1559-established, 1603-consecrated" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "Within Moti Daman Fort", costRange: "₹50–₹200 (auto within town)", tips: "Enter via Moti Daman Fort's main gate; the cathedral is inside the walls." },
@@ -4443,6 +4447,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Moti Daman Fort, reachable on foot from the fort entrance", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — reachable on foot within the fort", available: false },
     ],
     nearbyPlaces: [
       { name: "Moti Daman Fort", distance: "Same complex", type: "Fort", isHidden: false, id: "moti-daman-fort" },
@@ -4493,6 +4498,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort", "Beach"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open fort grounds, free entry." },
     highlights: [{ name: "Church of Our Lady of the Sea", id: "church-of-our-lady-of-sea" }, { name: "Fort ramparts & Government House" }, { name: "Nani Daman Beach alongside" }, { name: "Sea/river-mouth views" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Nani Daman town", costRange: "₹50–₹200 (auto within town)", tips: "A short auto ride or walk from most Nani Daman hotels." },
@@ -4508,6 +4514,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Fort and adjoining beach are walkable from Nani Daman town", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Nani Daman", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — autos are widely available in Nani Daman", available: false },
     ],
     nearbyPlaces: [
       { name: "Church of Our Lady of the Sea", distance: "Within the fort", type: "Church", isHidden: false, id: "church-of-our-lady-of-sea" },
@@ -4557,6 +4564,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Within St. Jerome Fort; outside scheduled Mass times." },
     highlights: [{ name: "17th-century colonial chapel (c. 1627)" }, { name: "Religious paintings & statues" }, { name: "Within St. Jerome Fort" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "Within St. Jerome Fort, Nani Daman", costRange: "₹50–₹200 (auto within town)", tips: "Visit together with the rest of St. Jerome Fort — it's a short stop inside the same walls." },
@@ -4571,6 +4579,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within St. Jerome Fort, reachable on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — reachable on foot within the fort", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Jerome Fort", distance: "Same complex", type: "Fort", isHidden: false, id: "st-jerome-fort" },
@@ -4612,6 +4621,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Outside scheduled Mass times." },
     highlights: [{ name: "16th-century façade & spire" }, { name: "Carved altars & stained glass" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Moti Daman town", costRange: "₹50–₹200 (auto within town)", tips: "Easy to combine with Moti Daman Fort and the Dominican Monastery, all nearby." },
@@ -4627,6 +4637,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within central Moti Daman", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Moti Daman", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — autos are widely available in Moti Daman", available: false },
     ],
     nearbyPlaces: [
       { name: "Moti Daman Fort", distance: "Nearby", type: "Fort", isHidden: false, id: "moti-daman-fort" },
@@ -4692,6 +4703,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within central Moti Daman", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Moti Daman", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — autos are widely available in Moti Daman", available: false },
     ],
     nearbyPlaces: [
       { name: "Moti Daman Fort", distance: "Nearby", type: "Fort", isHidden: false, id: "moti-daman-fort" },
@@ -4757,6 +4769,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Cab", cost: "₹100–₹300 from Daman", notes: "The practical way to reach the beach", available: true },
       { mode: "Camel Ride", cost: "Nominal fee (pay on the spot)", notes: "Available along the shoreline", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — an auto or cab from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Daman town centre", distance: "~5 km", type: "Town", isHidden: false, id: "daman" },
@@ -4822,6 +4835,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The promenade itself is fully walkable", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Daman town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — an auto from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Daman town centre", distance: "~2 km", type: "Town", isHidden: false, id: "daman" },
@@ -4864,6 +4878,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Garden"],
     bestSeason: "October – March; evenings for boat rides year-round",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "9:00 PM", note: "Boat rides typically run into the evening; confirm the jetty's last-ride time on arrival." },
     highlights: [{ name: "Riverside walking paths" }, { name: "Boat rides on the Daman Ganga" }, { name: "Children's play area" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Nani Daman town", costRange: "₹50–₹200 (auto within town)", tips: "Time your visit for sunset if you want the boat ride at its best." },
@@ -4879,6 +4894,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within central Nani Daman", available: true },
       { mode: "Boat Ride", cost: "Nominal fee (pay at the jetty)", notes: "River boat rides depart from the garden's own jetty", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — reachable on foot within Nani Daman", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Jerome Fort", distance: "Nearby", type: "Fort", isHidden: false, id: "st-jerome-fort" },
@@ -4921,6 +4937,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Family"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Gated bird park." },
     highlights: [{ name: "Bird park (parrots, peacocks & more)" }, { name: "INS Khukri Memorial tableau on-site" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "Near Devka, Daman", costRange: "₹50–₹200 (auto within town)", tips: "Easy to combine with a Devka Seafront visit — they're close by." },
@@ -4936,6 +4953,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Feasible if staying near Devka", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Daman town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — an auto from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "NAMOPATH – Devka Seafront", distance: "Nearby", type: "Beach Promenade", isHidden: false, id: "devka-seafront" },
@@ -5972,6 +5990,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Right by St. Jerome Fort, reachable on foot from central Nani Daman", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Nani Daman", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Daman is unconfirmed — an auto from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Jerome Fort (Nani Daman Fort)", distance: "Right alongside", type: "Fort", isHidden: false, id: "st-jerome-fort" },
