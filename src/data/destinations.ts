@@ -12593,6 +12593,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹350 from Panaji", notes: "The practical way to reach the beach", available: true },
       { mode: "Walking", cost: "Free", notes: "The beach itself is walkable once there", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹350", notes: "Reliable coverage this close to Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Miramar Beach", distance: "~7 km", type: "Beach", isHidden: false, id: "miramar" },
@@ -12653,6 +12654,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹500/hop (taxi)", notes: "Standard way to get around this part of South Goa", available: true },
       { mode: "Scuba Diving", cost: "₹3,000–₹6,000 per dive/course", notes: "Real diving operators are based at Bogmalo — one of Goa's few dive-training hubs", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage this close to the airport and Vasco", available: true },
     ],
     nearbyPlaces: [
       { name: "Vasco da Gama town", distance: "~4 km", type: "Town", isHidden: true },
@@ -12715,6 +12717,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400/hop (taxi)", notes: "Standard way to get around South Goa", available: true },
       { mode: "Walking", cost: "Free", notes: "The beach and town centre are walkable together", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Benaulim Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "benaulim" },
@@ -12776,6 +12779,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400/hop (taxi)", notes: "Standard way to get around South Goa", available: true },
       { mode: "Walking", cost: "Free", notes: "The beach and surrounding fields are walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Colva Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "colva" },
@@ -12834,6 +12838,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400/hop (taxi)", notes: "Standard way to get around South Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Majorda Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "majorda" },
