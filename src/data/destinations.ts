@@ -65658,6 +65658,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Ukhrul town", notes: "A local guide is strongly recommended for the trek to the flower habitat", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Ukhrul district — a hired vehicle from Imphal or in Ukhrul town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khangkhui Lime Caves", distance: "~15 km", type: "Prehistoric Cave", isHidden: true, id: "khangkhui-lime-caves" },
@@ -65719,6 +65720,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Trek Guide (mandatory in practice)", cost: "Arranged through a local operator in Senapati/Imphal", notes: "The trail, weather, and border-area terrain make a guide genuinely necessary, not optional", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Senapati district — a hired vehicle from Imphal to the trailhead is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dzükou Valley (Nagaland side)", distance: "Same valley, across the state border", type: "Valley", isHidden: false, id: "dzukou-valley" },
@@ -65778,6 +65780,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Tamenglong town", notes: "Recommended given the remoteness and limited signage", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Tamenglong district — a hired vehicle from Imphal or Tamenglong town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Barak Waterfalls", distance: "~20 km", type: "Waterfall", isHidden: false, id: "barak-waterfalls" },
@@ -65838,6 +65841,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Tamenglong town", notes: "Needed for the final approach through forest terrain", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Tamenglong district — a hired vehicle from Imphal or Tamenglong town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Zeilad Lake", distance: "~20 km", type: "Wildlife Sanctuary Lake", isHidden: false, id: "zeilad-lake" },
