@@ -2840,6 +2840,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "Available in Port Blair", available: true },
       { mode: "Bus (Port Blair)", cost: "₹10–₹40", notes: "ANIIDCO buses; limited island coverage", available: true },
       { mode: "Kayak", cost: "₹500–₹1,200/day", notes: "For mangrove and lagoon exploration", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the islands — auto rickshaws and hired taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Havelock Island (Swaraj Dweep)", distance: "~40 km ferry", type: "Radhanagar Beach & Diving", isHidden: false, id: "havelock" },
@@ -9720,6 +9721,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Scooter/Bike Rental", cost: "₹400–₹700/day", notes: "The main way to get around the island", available: true },
       { mode: "Auto-Rickshaw", cost: "₹100–₹400", notes: "Between the jetty, market, and main beaches", available: true },
       { mode: "Taxi", cost: "₹500–₹1,000", notes: "For Radhanagar/Elephant Beach transfers", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Port Blair (Andaman Islands)", distance: "~40 km by ferry", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -9785,6 +9787,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Bike Rental", cost: "₹300–₹500/day", notes: "The island is small enough to fully explore by bike", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "₹150–₹400", notes: "Jetty to Laxmanpur is ~10–15 min", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Port Blair (Andaman Islands)", distance: "37 km by ferry", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -9849,6 +9852,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹2,000–₹4,000/day", notes: "For Saddle Peak, Kalipur, and Ross & Smith", available: true },
       { mode: "Boat (Ross & Smith Islands)", cost: "₹1,500–₹3,000/boat", notes: "Forest permit required from the Diglipur Forest Office before boarding", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi or shared jeep is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Port Blair (Andaman Islands)", distance: "~290 km", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -9913,6 +9917,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Vehicle Ferry (Middle Strait)", cost: "Included in most tour packages", notes: "Crosses to Baratang/Nilambur Jetty", available: true },
       { mode: "Boat (Mud Volcano/Caves)", cost: "Included in most tour packages", notes: "From Nilambur Jetty to the limestone caves and mud volcano site", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi or the ferry-and-convoy system is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Port Blair (Andaman Islands)", distance: "90 km", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -9967,6 +9972,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Bike/Auto", cost: "₹300–₹1,000", notes: "From Hut Bay Jetty to Butler Bay", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Port Blair (Andaman Islands)", distance: "~120 km by ferry", type: "Main Gateway", isHidden: false, id: "andaman" },
@@ -10173,6 +10179,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat (to Lalaji Bay)", cost: "₹500–₹1,500/boat", notes: "Or trek from the settlement when conditions allow", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on this small island — walking or a local boat is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rangat", distance: "~1.5h by boat", type: "Gateway Town", isHidden: false, id: "rangat" },
@@ -10230,6 +10237,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-rickshaw / Taxi", cost: "₹300–₹800/trip", notes: "For Cuthbert Bay, ~12 km from Rangat town toward Mayabunder", available: true },
       { mode: "Boat (to Long Island)", cost: "₹300–₹800", notes: "From Rangat jetty, 7:00am & 2:00pm daily", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       // Cuthbert Bay and Amkunj Beach are single-site attractions within
@@ -10300,6 +10308,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹1,500–₹3,000/day (estimate)", notes: "For the national park and biosphere reserve viewpoints", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on this remote island — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       // Indira Point and Baludera Beach are single-site attractions within
