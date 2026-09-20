@@ -2671,6 +2671,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Royal Enfield", cost: "₹1,200–₹2,000/day", notes: "Iconic Leh–Manali biking experience; need riding experience", available: true },
       { mode: "Local Bus (HRTC)", cost: "₹50–₹200", notes: "Runs Leh to nearby villages; infrequent", available: true },
       { mode: "E-Bicycle", cost: "₹500–₹800/day", notes: "For Leh town exploration only", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage across Ladakh — shared or private taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pangong Tso Lake", distance: "160 km", type: "Scenic Lake", isHidden: false, id: "pangong-tso" },
@@ -45078,6 +45079,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹8,000–₹15,000 round trip from Leh", notes: "Essential — no public transport runs to the lake", available: true },
       { mode: "Shared Taxi", cost: "₹1,500–₹3,000/seat", notes: "Organized group tours from Leh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV round trip from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tso Moriri", distance: "~220 km via Chushul road", type: "High-Altitude Lake", isHidden: true, id: "tso-moriri" },
@@ -45140,6 +45142,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹7,000–₹14,000 round trip from Leh", notes: "Essential — no public transport runs to the lake", available: true },
       { mode: "Guided Wildlife Tours", cost: "₹2,000–₹4,000/day", notes: "For crane/kiang spotting with a local naturalist", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV round trip from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tso Moriri", distance: "~55 km", type: "High-Altitude Lake", isHidden: true, id: "tso-moriri" },
@@ -45202,6 +45205,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹9,000–₹16,000 round trip from Leh", notes: "Essential — no public transport runs to the lake", available: true },
       { mode: "Local Guide (Korzok)", cost: "₹500–₹1,500/day", notes: "For monastery visits and wildlife spotting", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV round trip from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tso Kar", distance: "~55 km", type: "Salt Lake", isHidden: true, id: "tso-kar" },
@@ -45246,6 +45250,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "May – October",
     duration: "2–3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily; photography inside the ancient shrine rooms is often restricted." },
     highlights: [
       { name: "Kashmiri-carved woodwork across the Dukhang, Sumtseg, and Manjushri Temple" },
       { name: "Wall murals dating to around 1200 CE" },
@@ -45265,6 +45270,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹200–₹500", notes: "Runs from Leh toward Kargil, passing Alchi", available: true },
       { mode: "Private Taxi/SUV", cost: "₹3,000–₹5,000/day", notes: "Best for combining Alchi with Likir Monastery", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared or private taxi from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sham Valley", distance: "Within the Sham Valley circuit", type: "Valley", isHidden: false, id: "sham-valley" },
@@ -45308,6 +45314,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "May – October",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Try to catch the early-morning prayer ceremony, genuinely worth the early start." },
     highlights: [
       { name: "The 12-storey \"Mini Potala\" hillside architecture" },
       { name: "The 15-metre Maitreya Buddha statue, Ladakh's largest" },
@@ -45370,6 +45377,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "May – October (Hemis Festival in June)",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "The annual Hemis Festival draws the largest crowds." },
     highlights: [
       { name: "17th-century murals of the Eighty-Four Mahasiddhas" },
       { name: "The annual Hemis Festival's tantric cham mask dances" },
@@ -45389,6 +45397,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹300–₹800", notes: "Runs from Leh, especially during the Hemis Festival", available: true },
       { mode: "Private Taxi/SUV", cost: "₹3,500–₹6,000/day", notes: "Best for combining with Thiksey and other Indus Valley sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared or private taxi from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Thiksey Monastery", distance: "~25 km", type: "Monastery", isHidden: true, id: "thiksey-monastery" },
@@ -45451,6 +45460,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹3,000–₹5,000 round trip from Leh", notes: "Most common way to visit", available: true },
       { mode: "Shared Taxi", cost: "₹800–₹1,500/seat", notes: "Organized group tours from Leh, often combined with Nubra Valley", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the pass — a private taxi/SUV from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nubra Valley", distance: "~80 km further north", type: "Desert Valley", isHidden: true, id: "nubra-valley" },
@@ -45512,6 +45522,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹2,500–₹4,500 round trip from Leh", notes: "The main way to reach the pass", available: true },
       { mode: "Shared Taxi (Highway Transit)", cost: "₹2,000–₹5,000", notes: "Part of the Srinagar–Leh shared-taxi route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the pass — part of the Srinagar–Leh shared-taxi route", available: false },
     ],
     nearbyPlaces: [
       { name: "Kargil War Memorial", distance: "~60 km", type: "Memorial", isHidden: true, id: "kargil-war-memorial" },
@@ -45574,6 +45585,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "Included in Pangong Tso trip cost", notes: "The standard route to Pangong Tso passes over this pass", available: true },
       { mode: "Shared Taxi", cost: "Included in Pangong Tso trip cost", notes: "Organized group tours from Leh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the pass — included as part of a Pangong Tso trip", available: false },
     ],
     nearbyPlaces: [
       { name: "Pangong Tso", distance: "~95 km further", type: "High-Altitude Lake", isHidden: true, id: "pangong-tso" },
@@ -45636,6 +45648,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV (Multi-day)", cost: "₹15,000–₹25,000 for the full trip", notes: "The realistic way to attempt this route", available: true },
       { mode: "Organized Expedition Tours", cost: "₹20,000–₹40,000", notes: "Multi-day guided trips covering Hanle, Umling La, and Demchok", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — only multi-day private taxi/SUV or organized expedition tours reach this remote pass", available: false },
     ],
     nearbyPlaces: [
       { name: "Hanle Village", distance: "~75 km", type: "Astro-Tourism Village", isHidden: true, id: "hanle-village" },
@@ -45698,6 +45711,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Bactrian Camel Ride", cost: "₹200–₹400", notes: "At the Hunder sand dunes", available: true },
       { mode: "Private Taxi/SUV", cost: "₹8,000–₹15,000 round trip from Leh", notes: "Essential for reaching and exploring the valley", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV round trip from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khardung La", distance: "~80 km via the pass road", type: "Mountain Pass", isHidden: true, id: "khardung-la" },
@@ -45760,6 +45774,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹150–₹400 per seat", notes: "Runs the Kargil–Sankoo route", available: true },
       { mode: "Private Taxi/SUV", cost: "₹3,000–₹6,000/day", notes: "Best for exploring the wider valley and mountain viewpoints", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared or private taxi from Kargil is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Zanskar Valley", distance: "~130 km via Pensi La", type: "Remote Valley", isHidden: true, id: "zanskar-valley" },
@@ -45822,6 +45837,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹300–₹800 per seat", notes: "Limited routes within the valley, mainly around Padum", available: true },
       { mode: "Private Taxi/SUV", cost: "₹4,000–₹8,000/day", notes: "For exploring outlying monasteries and villages", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — limited shared taxi routes around Padum, otherwise a private taxi/SUV", available: false },
     ],
     nearbyPlaces: [
       { name: "Suru Valley", distance: "~130 km via Pensi La", type: "Valley", isHidden: true, id: "suru-valley" },
@@ -45884,6 +45900,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "On Foot (Trekking)", cost: "Free", notes: "The standard way to experience Sham Valley village-to-village", available: true },
       { mode: "Private Taxi/SUV", cost: "₹2,500–₹4,500/day", notes: "For a road-based day trip covering Likir and Alchi", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — this is a trek-and-drive circuit with a private taxi/SUV for the road-based option", available: false },
     ],
     nearbyPlaces: [
       { name: "Alchi Monastery", distance: "~15 km", type: "Monastery", isHidden: true, id: "alchi-monastery" },
@@ -45946,6 +45963,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "On Foot", cost: "Free", notes: "The village itself is easily walkable", available: true },
       { mode: "Private Taxi/SUV", cost: "₹5,000–₹9,000/day", notes: "For the journey from Leh/Nubra", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV from Leh/Nubra is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nubra Valley", distance: "~85 km", type: "Desert Valley", isHidden: true, id: "nubra-valley" },
@@ -46008,6 +46026,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Organized Astro-Tour Operator", cost: "Included in package", notes: "The standard way to access telescope viewing", available: true },
       { mode: "Private Taxi/SUV", cost: "₹10,000–₹18,000 round trip from Leh", notes: "For independent travel", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — an organized astro-tour operator or private taxi/SUV from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Umling La", distance: "~75 km", type: "Mountain Pass", isHidden: true, id: "umling-la" },
@@ -46070,6 +46089,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,000 round trip from Kargil", notes: "The standard way to visit", available: true },
       { mode: "On Foot", cost: "Free", notes: "The old village and museum are walkable once there", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi from Kargil is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kargil War Memorial", distance: "~10 km", type: "Memorial", isHidden: false, id: "kargil-war-memorial" },
@@ -46131,6 +46151,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹6,000–₹12,000/day", notes: "Essential for covering the sanctuary's vast area", available: true },
       { mode: "Guided Wildlife Tour", cost: "₹3,000–₹6,000/day", notes: "With a local naturalist for wildlife spotting", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV is essential for this vast sanctuary", available: false },
     ],
     nearbyPlaces: [
       { name: "Tso Moriri", distance: "Within the sanctuary", type: "High-Altitude Lake", isHidden: true, id: "tso-moriri" },
@@ -46194,6 +46215,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Guided Trekking", cost: "Included in trek packages", notes: "The only way to properly explore the park's interior", available: true },
       { mode: "Private Taxi/SUV", cost: "₹2,500–₹4,500/day", notes: "For reaching the trailhead from Leh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — guided trekking or a private taxi/SUV to the trailhead is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Hemis Monastery", distance: "Adjoining", type: "Monastery", isHidden: true, id: "hemis-monastery" },
@@ -46255,6 +46277,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/SUV (Padum–Darcha road)", cost: "Part of a multi-day Zanskar itinerary", notes: "The road passes directly beneath the peak", available: true },
       { mode: "Guided Trekking", cost: "Included in trek packages", notes: "For those approaching via Shingo La", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — reached via the Padum–Darcha road or guided trekking", available: false },
     ],
     nearbyPlaces: [
       { name: "Zanskar Valley", distance: "Within the Zanskar region", type: "Remote Valley", isHidden: true, id: "zanskar-valley" },
@@ -46298,6 +46321,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "May – September",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily; a small museum inside keeps the same hours." },
     highlights: [
       { name: "The pink sandstone memorial wall listing the fallen" },
       { name: "The Captain Manoj Pandey gallery" },
@@ -46316,6 +46340,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi", cost: "₹300–₹800 round trip from Kargil", notes: "The standard way to visit", available: true },
       { mode: "Shared Taxi (Highway Transit)", cost: "₹500–₹1,500", notes: "Part of the Srinagar–Leh shared-taxi route through Drass", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi or the Srinagar–Leh shared-taxi route is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hunderman Village", distance: "~10 km", type: "Heritage Village", isHidden: true, id: "hunderman-village" },
@@ -46378,6 +46403,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "On Foot", cost: "Free", notes: "The villages are easily walkable", available: true },
       { mode: "Private Taxi/SUV", cost: "₹6,000–₹10,000/day", notes: "For the journey from Leh and exploring the valley", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sham Valley", distance: "Along the same Indus valley route", type: "Valley", isHidden: true, id: "sham-valley" },
@@ -46440,6 +46466,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony/Porter Support", cost: "₹800–₹1,500/day", notes: "Available through trek operators for gear", available: true },
       { mode: "On Foot (Trekking)", cost: "Free", notes: "The only way to properly experience the route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — this is a trek-only route with pony/porter support", available: false },
     ],
     nearbyPlaces: [
       { name: "Hemis National Park", distance: "Trek runs entirely within it", type: "National Park", isHidden: true, id: "hemis-national-park" },
@@ -46502,6 +46529,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Guided Trekking (mandatory)", cost: "Included in trek packages", notes: "The only way to undertake this trek — solo attempts are not permitted/advisable", available: true },
       { mode: "Porter/Sled Support", cost: "Included in trek packages", notes: "Zanskari porters carry gear via traditional wooden sleds", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — this is a mandatory guided trek with porter/sled support", available: false },
     ],
     nearbyPlaces: [
       { name: "Zanskar Valley", distance: "The trek's destination region", type: "Remote Valley", isHidden: true, id: "zanskar-valley" },
@@ -46564,6 +46592,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony/Porter Support", cost: "₹800–₹1,500/day", notes: "Available through trek operators for gear", available: true },
       { mode: "On Foot (Trekking)", cost: "Free", notes: "The only way to experience the route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — this is a trek-only route with pony/porter support", available: false },
     ],
     nearbyPlaces: [
       { name: "Tso Moriri", distance: "The trek's destination", type: "High-Altitude Lake", isHidden: true, id: "tso-moriri" },
@@ -46626,6 +46655,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Bactrian Camel Ride", cost: "₹200–₹400", notes: "The main activity at the dunes", available: true },
       { mode: "Private Taxi/SUV", cost: "₹8,000–₹15,000 round trip from Leh", notes: "Usually combined with Diskit Monastery in the same trip", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private taxi/SUV round trip from Leh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nubra Valley", distance: "Hunder is within Nubra Valley", type: "Desert Valley", isHidden: true, id: "nubra-valley" },
