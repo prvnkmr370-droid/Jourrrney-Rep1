@@ -21024,6 +21024,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round; genuinely best around Uttarayan (mid-January)",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:30 AM", closes: "5:30 PM", note: "Closed Mondays." },
     highlights: [{ name: "India's only kite museum" }, { name: "Le Corbusier-designed Sanskar Kendra building" }, { name: "125 hand-painted kites" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Near the Sabarmati riverfront, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely a must if visiting anywhere near Uttarayan season — it explains the full cultural weight of the festival." },
@@ -21033,6 +21034,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach the riverfront area", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -21075,6 +21077,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Wednesdays." },
     highlights: [{ name: "Gujarat's oldest museum (1877)" }, { name: "11 galleries incl. the extinct Kutchi script" }, { name: "1st-century CE Kshatrapa inscriptions" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "Central Bhuj, opposite Hamirsar Lake", costRange: "₹50–₹150 (auto within Bhuj)", tips: "Genuinely combinable with a Hamirsar Lake walk and Aina Mahal/Prag Mahal on the same Bhuj heritage day." },
@@ -21084,6 +21087,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Bhuj", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhuj is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "Same city", type: "City", isHidden: false, id: "kutch" },
@@ -21125,6 +21129,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Closed Mondays." },
     highlights: [{ name: "A real architectural replica of London's India House" }, { name: "Houses the actual ashes of Shyamji Krishna Varma" }, { name: "Built 2010 by the Gujarat government" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj/Mandvi — long haul", fromMumbai: "Via Bhuj/Mandvi — long haul", fromBangalore: "Not practical", duration: "~60 km / ~1.25h from Bhuj", costRange: "₹1,000–₹2,000 (cab from Bhuj)", tips: "Genuinely combinable with a Mandvi Beach and Vijay Vilas Palace day trip." },
@@ -21134,6 +21139,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Standard way to get around Mandvi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mandvi is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandvi Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "mandvi-beach" },
@@ -21176,6 +21182,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:30 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [{ name: "Founded 1887 by Sayajirao Gaekwad III" }, { name: "Modelled on London's V&A Museum" }, { name: "28 galleries incl. genuine European portraiture" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "Central Vadodara, within Sayaji Baug", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with the rest of Sayaji Baug garden and zoo on the same visit." },
@@ -21185,6 +21192,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Vadodara", available: true },
     ],
     nearbyPlaces: [
       { name: "Vadodara (Laxmi Vilas Palace)", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
@@ -21227,6 +21235,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:30 PM", note: "Closed Mondays." },
     highlights: [{ name: "The real Moti Shahi Mahal, built by Shah Jahan (1616–23)" }, { name: "Where a young Tagore wrote his only ghost story" }, { name: "Declared a memorial to Sardar Patel, 1980" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Shahibaug, near Civil Hospital Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely worth pairing with Sabarmati Ashram, given both are central to Gujarat's independence-era history." },
@@ -21236,6 +21245,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Shahibaug", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Sabarmati Ashram", distance: "~5 km", type: "Heritage", isHidden: true, id: "sabarmati-ashram" },
@@ -21282,6 +21292,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Family-run; open daily." },
     highlights: [{ name: "35 generations of the Salvi weaving family" }, { name: "Genuine double-ikat technique, unchanged since the 11th century" }, { name: "Only family using entirely natural dyes" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patan — long haul", fromMumbai: "Via Patan — long haul", fromBangalore: "Not practical", duration: "Central Patan", costRange: "₹50–₹150 (auto within town)", tips: "Genuinely combinable with Rani ki Vav and Panchasara Parshwanath Derasar on the same Patan heritage day." },
@@ -21291,6 +21302,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Patan", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Patan is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rani ki Vav, Patan", distance: "~2 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
@@ -21342,6 +21354,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "Confirm current opening days before visiting — the schedule has varied over the years." },
     highlights: [{ name: "Guinness World Record private collection (1987)" }, { name: "105 vintage cars on display" }, { name: "India's largest vintage-car collection" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~15 km / ~30 min from central Ahmedabad", costRange: "₹300–₹700 (auto/cab)", tips: "Genuinely worth checking current opening days/hours in advance, as the museum's schedule has varied over the years." },
@@ -21351,6 +21364,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹300–₹700 from central Ahmedabad", notes: "Standard way to reach Kathwada", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹700", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~15 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -21392,6 +21406,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum"],
     bestSeason: "Year-round; free entry",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:30 AM", closes: "5:30 PM", note: "Closed Mondays and government holidays." },
     highlights: [{ name: "Free entry" }, { name: "Traces India's real space programme from 1966" }, { name: "3D auditorium, AR/holographic displays" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Satellite Road, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely great for families and kids — the free entry makes it an easy add-on to any Ahmedabad day." },
@@ -21401,6 +21416,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Satellite Road", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -21442,6 +21458,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "November – February",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Closed Wednesdays." },
     highlights: [{ name: "Established 1951" }, { name: "1169 CE inscription recording the temple's own history" }, { name: "Reconstructed 12th-century shrine ceiling" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Somnath — long haul", fromMumbai: "Via Somnath — long haul", fromBangalore: "Not practical", duration: "Central Prabhas Patan, near Somnath Temple", costRange: "₹50–₹150 (auto within the area)", tips: "Genuinely a great complement to a Somnath Temple visit — it explains the temple's own layered destruction-and-rebuilding history through real physical remnants." },
@@ -21451,6 +21468,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Prabhas Patan", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Somnath/Veraval is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Somnath Temple", distance: "~1 km", type: "Temple", isHidden: false, id: "somnath-temple" },
