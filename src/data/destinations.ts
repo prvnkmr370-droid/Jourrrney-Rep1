@@ -21525,6 +21525,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed UNESCO World Heritage Site." },
     highlights: [{ name: "UNESCO World Heritage Site since 2021" }, { name: "One of the 5 largest Harappan cities" }, { name: "The Dholavira Signboard — the world's earliest?" }, { name: "Sophisticated ancient water-conservation system" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~250 km / ~5h from Bhuj", costRange: "₹4,000–₹7,000 (cab from Bhuj, full day)", tips: "Genuinely a full-day round trip from Bhuj given the distance — an overnight stay near Dholavira itself is worth considering." },
@@ -21535,6 +21536,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Self-Drive", cost: "₹4,000–₹7,000 for a full day from Bhuj", notes: "The practical way to reach this remote site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote corner of the Rann — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~250 km", type: "City", isHidden: false, id: "kutch" },
@@ -21578,6 +21580,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "ASI-managed." },
     highlights: [{ name: "World's earliest known dockyard" }, { name: "The Indus Valley's key maritime trade hub" }, { name: "Real bead-manufacturing workshops on-site" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Genuinely combinable with Hazur Palace (Utelia) on the same day trip, given the shared route." },
@@ -21587,6 +21590,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Ahmedabad", notes: "Standard way to reach Lothal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Lothal — a hired taxi from Ahmedabad is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazur Palace (Utelia Palace)", distance: "~15 km", type: "Heritage", isHidden: false, id: "hazur-palace-utelia" },
@@ -21630,6 +21634,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed UNESCO World Heritage Site." },
     highlights: [{ name: "UNESCO World Heritage Site since 2004" }, { name: "An intact 15th-century Sultanate capital" }, { name: "The real Jama Masjid, one of Gujarat's finest mosques" }, { name: "Abandoned since 1535, largely untouched since" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~45 km / ~1h from Vadodara", costRange: "₹1,200–₹2,500 (cab from Vadodara)", tips: "Genuinely combine this with Kalika Mata Temple atop Pavagadh Hill — both fall within the same UNESCO park." },
@@ -21639,6 +21644,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Vadodara", notes: "Standard way to reach and explore the park", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage across the spread-out park — a hired taxi from Vadodara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pavagadh Hill & Kalika Mata Temple", distance: "At the hill above", type: "Temple", isHidden: false, id: "pavagadh-kalika-mata-temple" },
@@ -21690,6 +21696,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "11:00 AM", closes: "11:00 PM", note: "Within the Vishalla restaurant complex; timed to lunch/dinner hours." },
     highlights: [{ name: "Established 1981" }, { name: "4,500+ genuine utensils spanning 1,000 years" }, { name: "The only museum of its kind in the world" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Vasna area, Ahmedabad", costRange: "₹100–₹300 (auto within the city)", tips: "Genuinely worth timing your visit around a meal at the adjoining Vishalla restaurant, itself a real rural-village-themed dining experience." },
@@ -21699,6 +21706,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹100–₹300", notes: "Standard way to reach Vasna", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -21741,6 +21749,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round; closed Mondays",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:30 AM", closes: "5:00 PM", note: "Closed Mondays and public holidays." },
     highlights: [{ name: "76,000 Jain manuscripts" }, { name: "Building designed by Balkrishna Doshi" }, { name: "Ancient Gandhara sculpture collection" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Navrangpura, central Ahmedabad", costRange: "₹100–₹300 (auto within the city)", tips: "Genuinely closed Mondays and public holidays — check before planning your visit." },
@@ -21750,6 +21759,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹100–₹300", notes: "Standard way to reach Navrangpura", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
