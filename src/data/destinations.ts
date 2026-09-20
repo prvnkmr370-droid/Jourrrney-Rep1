@@ -62766,6 +62766,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Heritage"],
     bestSeason: "October – March (clear and cool); the monsoon greens the hills and the Malshej area but the steps and rock turn slippery",
     duration: "Half-day (part of a Junnar day from Pune or Mumbai)",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "ASI-managed. Very busy around Shiv Jayanti (19 February) — go early that week." },
     highlights: [
       { name: "Shivaji's birthplace building and the Shivai Devi temple" },
       { name: "The chain of seven fortified gateways up the hill" },
@@ -62782,6 +62783,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Stepped climb (or road near the top); walking on the plateau", cost: "Fort entry; auto from Junnar to the base", notes: "The classic route is up through the seven gates on foot (~45–60 min); a road also climbs to near the last gate for those who prefer to drive most of the way", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junnar is unconfirmed — a taxi from Pune or a Junnar auto covers the fort base", available: false },
     ],
     nearbyPlaces: [
       { name: "Pune", distance: "~95 km", type: "City", isHidden: false, id: "pune" },
@@ -63124,6 +63126,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own vehicle / auto on the plateau; walking between sites", cost: "Autos on the plateau; fort structures are free to walk to", notes: "The monuments are spread across the walled plateau among the town — an auto or car helps between the far ones (Andhar Bavadi, Sajja Kothi, the ramparts); the central cluster is walkable", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹700 one-way from Kolhapur", notes: "Bookable from Kolhapur up the ghat road, though a hired taxi for the round trip is more common", available: true },
     ],
     nearbyPlaces: [
       { name: "Kolhapur", distance: "~18 km", type: "Temple & Palace City", isHidden: false, id: "kolhapur" },
@@ -63451,6 +63454,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Wildlife", "Trekking"],
     bestSeason: "October – February for pleasant weather and clear forest walks; the monsoon (June–September) is spectacularly green but the trek routes are slippery and leech-ridden and the sanctuary trails can be closed",
     duration: "1 day from Pune; 2 days if trekking up and staying over",
+    visitingHours: { opens: "4:30 AM", closes: "9:30 PM", note: "Queues are longest on Mondays, Maha Shivaratri and through Shravan." },
     highlights: [
       { name: "The Bhimashankar Jyotirlinga temple and its Nana Phadnavis spire" },
       { name: "Bhimashankar Wildlife Sanctuary — home of the Malabar giant squirrel" },
@@ -63467,6 +63471,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking; the temple steps; forest trails with a guide", cost: "Nominal; guide fees for sanctuary trails", notes: "From the road, a flight of steps and a market lane lead down to the temple. Sanctuary trails (Nagphani, Gupt Bhimashankar) are best walked with a local guide; the Khandas treks are a 2.5–4 hour climb", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into the Ghats is unconfirmed — a taxi or MSRTC bus from Pune is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pune", distance: "~110 km", type: "City", isHidden: false, id: "pune" },
@@ -64558,6 +64563,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep safari; guided walk; own vehicle to the gate", cost: "Safari jeep and guide fees at the entry point; own vehicle for transfers", notes: "Inside the sanctuary, movement is by registered safari jeep with a guide, or on foot on guided nature walks only. There is no through public transport in the core", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this deep into forest country — a taxi from Kolhapur is the way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Kolhapur", distance: "~55 km", type: "City & Mahalaxmi Temple", isHidden: false, id: "kolhapur" },
