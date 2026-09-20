@@ -22376,6 +22376,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Built 1715–1718 CE by Jadeja chief Rao Godaji, completed by his son Deshalji I" },
       { name: "Withstood six major battles between 1700–1800 CE" },
@@ -22390,6 +22391,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Bhuj town", notes: "Standard way to reach the base of Bhujia Hill; short uphill walk to the fort itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhuj is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "Same city", type: "City", isHidden: false, id: "kutch" },
@@ -22431,6 +22433,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Culture"],
     bestSeason: "November – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "A working institution; the exhibition and library keep shorter daytime hours." },
     highlights: [
       { name: "Founded in 1927 following Swami Madhavanandaji's 1925 survey of Saurashtra towns" },
       { name: "Housed initially in a rest house donated for use by the Maharaja of Morbi" },
@@ -22444,6 +22447,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Rajkot city", notes: "Standard way to reach the Ashrama from anywhere in Rajkot", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹400", notes: "Available and reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Rajkot", distance: "Same city", type: "City", isHidden: false, id: "rajkot" },
@@ -22489,6 +22493,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "The hill where Bharat Chakravartin, Rishabhdev's eldest son, is believed to have attained moksha" },
       { name: "Preserved footprints of Bhagwan Rishabhdev enshrined in a small hilltop temple" },
@@ -22503,6 +22508,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Palitana", notes: "Standard way to reach the hill, ~25 km away", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Palitana is unconfirmed — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Palitana & Shatrunjaya Hill", distance: "~25 km", type: "Pilgrimage", isHidden: false, id: "palitana-shatrunjaya-hill" },
@@ -22545,6 +22551,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "1–1.5 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Completed in 1498 under Sultan Mahmud Begada, as a memorial linked to Queen Rudabai" },
       { name: "Five-storey octagonal shaft with three entrances, built on a north-south axis" },
@@ -22559,6 +22566,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹400–₹900 from Ahmedabad", notes: "Standard way to reach Adalaj", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹900", notes: "Widely available given proximity to Ahmedabad/Gandhinagar", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~19 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -22602,6 +22610,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Spiritual"],
     bestSeason: "November – February",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "8:30 AM", closes: "6:30 PM", note: "Free entry, open daily." },
     highlights: [
       { name: "Gandhi's home from 1917 to 1930, one of the central hubs of India's freedom struggle" },
       { name: "Hriday Kunj — the actual cottage where Gandhi and Kasturba lived, with original artefacts on display" },
@@ -22616,6 +22625,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ahmedabad city", notes: "Standard way to reach the ashram from anywhere in Ahmedabad", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~5 km", type: "City", isHidden: false, id: "ahmedabad" },
