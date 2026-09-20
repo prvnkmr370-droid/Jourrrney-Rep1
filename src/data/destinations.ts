@@ -10702,6 +10702,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "Spiritual"],
     bestSeason: "September – April",
     duration: "1–2 days",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; UNESCO World Heritage Site." },
     highlights: [{ name: "Mahabodhi Temple spire" }, { name: "The sacred Bodhi Tree" }, { name: "Vajrasana, the Diamond Throne" }, { name: "International monasteries around Bodh Gaya" }, { name: "Vishnupad Temple", id: "vishnupad-temple" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Gaya Airport (~5 km from Bodh Gaya) — seasonal direct flights", fromMumbai: "Via Delhi/Kolkata to Gaya", fromBangalore: "Via Delhi/Kolkata to Gaya", duration: "5 km from Gaya Airport", costRange: "₹3,500–₹12,000", tips: "Gaya Airport (IATA: GAY) also runs direct international flights from Colombo, Bangkok, and Yangon for Buddhist pilgrims — a rarity for a city this size." },
@@ -10768,6 +10769,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "September – April",
     duration: "1 day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during Pitru Paksha." },
     highlights: [{ name: "Vishnupad Temple sanctum" }, { name: "Phalgu River ghats" }, { name: "Akshayavat, the deathless banyan" }, { name: "Mahabodhi Temple", id: "mahabodhi-temple" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Gaya Airport — seasonal direct flights", fromMumbai: "Via Delhi/Kolkata to Gaya", fromBangalore: "Via Delhi/Kolkata to Gaya", duration: "~8 km from Gaya Airport", costRange: "₹3,500–₹12,000", tips: "Same airport that serves Bodh Gaya, 13 km away — most visitors combine both in one trip." },
@@ -10830,6 +10832,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [{ name: "The six-tiered polygonal stupa terraces" }, { name: "Site of Buddha's last alms-bowl donation" }, { name: "ASI excavation finds, including Kanishka-era gold coins" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patna/Motihari — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~3h from Patna (110 km), ~1h from Motihari (25 km)", costRange: "₹2,500–₹5,000 (cab from Patna)", tips: "NH28/NH27 connects Patna and Motihari to Kesariya — most visitors day-trip from one of the two." },
@@ -10843,6 +10846,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Bus", cost: "₹50–₹200", notes: "Regular buses from Motihari or Muzaffarpur", available: true },
       { mode: "Private Vehicle", cost: "₹2,000–₹4,000/day", notes: "The most practical way to combine Kesariya with nearby Lauria Nandangarh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lauria Nandangarh", distance: "60 km", type: "Ashokan Pillar Site", isHidden: true },
@@ -10883,6 +10887,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Culture"],
     bestSeason: "All year round",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The four gates named for Guru Gobind Singh's sons" }, { name: "Museum on the lives of the ten Sikh Gurus" }, { name: "Buddha Smriti Park", id: "buddha-smriti-park" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Jay Prakash Narayan International Airport, Patna — ~2h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "~7 km from the airport", costRange: "₹3,000–₹9,000", tips: "Patna's airport is well connected to most major Indian metros." },
@@ -10958,6 +10963,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi/Jeep", cost: "₹2,000–₹4,000/day", notes: "Essential for reaching and moving within the reserve — from Bettiah or Narkatiaganj", available: true },
       { mode: "Safari Jeep (in-reserve)", cost: "₹2,500–₹4,500/jeep", notes: "Booked through the forest department gate", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the reserve — a hired jeep safari vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lauria Nandangarh", distance: "90 km", type: "Ashokan Pillar Site", isHidden: true },
@@ -11007,6 +11013,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Pataliputra Karuna Stupa" }, { name: "Buddha relic casket, from the original Vaishali excavation" }, { name: "60-cell meditation centre modelled on Nalanda" }, { name: "Two Bodhi trees planted by the Dalai Lama" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Jay Prakash Narayan International Airport, Patna — ~2h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "~8 km from the airport", costRange: "₹3,000–₹9,000", tips: "Patna Airport connects to most major Indian metros." },
@@ -11071,6 +11078,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily; among India's oldest functioning Hindu temples." },
     highlights: [{ name: "The octagonal sanctum" }, { name: "Chatur Mukhalingam, the four-faced lingam" }, { name: "Ramnavami and Shivratri festival crowds" }],
     transport: [
       { mode: "Flight + Road", icon: "✈️", fromDelhi: "Via Varanasi Airport, then ~2.5h road", fromMumbai: "Via Varanasi Airport, then road", fromBangalore: "Via Varanasi Airport, then road", duration: "Varanasi (~130 km) is closer than Patna (~200 km)", costRange: "Add road transfer to a Varanasi flight", tips: "Despite being in Bihar, Varanasi (Uttar Pradesh) is genuinely the nearer airport — worth checking both routes." },
@@ -11083,6 +11091,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Taxi", cost: "₹100–₹400", notes: "From Bhabua town to the base of the hill; a short trek covers the rest", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rohtasgarh Fort", distance: "45 km", type: "Hilltop Fort", isHidden: true },
@@ -11132,6 +11141,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Fridays; UNESCO World Heritage Site." },
     highlights: [{ name: "Monastery courtyards and stupas" }, { name: "Nalanda Archaeological Museum" }, { name: "Mahabodhi Temple", id: "mahabodhi-temple" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patna — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Patna (90 km), ~1.5h from Bodh Gaya via Rajgir (65 km)", costRange: "₹2,000–₹4,500 (cab from Patna)", tips: "Often combined in one trip with Rajgir (a short drive away) and Bodh Gaya." },
@@ -11145,6 +11155,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Taxi", cost: "₹50–₹300", notes: "From Nalanda town or Rajgir to the archaeological site", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Patna or Rajgir is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rajgir", distance: "12 km", type: "Buddhist & Jain Pilgrimage", isHidden: true },
@@ -11195,6 +11206,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The Lion Capital pillar" }, { name: "Ramkund tank" }, { name: "The Relic Stupa" }, { name: "Vaishali Museum" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patna — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~1.5h from Patna (65 km), crossing the Mahatma Gandhi Setu bridge over the Ganges", costRange: "₹1,500–₹3,500 (cab from Patna)", tips: "The drive itself, crossing one of the world's longest river bridges over the Ganges, is part of the experience." },
@@ -11207,6 +11219,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,500–₹3,000/day", notes: "From Hajipur — the most practical way to see Kolhua and the wider Vaishali site cluster", available: true },
       { mode: "Local Bus", cost: "₹50–₹150", notes: "From Hajipur, less convenient for combining multiple sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Patna is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kesariya Stupa", distance: "80 km", type: "World's Tallest Stupa", isHidden: false, id: "kesariya-stupa" },
@@ -11256,6 +11269,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Open daily." },
     highlights: [{ name: "Lomas Rishi Cave, with its chaitya-arch entrance" }, { name: "Sudama Cave" }, { name: "The caves' three-minute echo effect" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Gaya/Patna — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Gaya (35 km), ~1.5h from Patna (70 km)", costRange: "₹1,800–₹3,500 (cab from Gaya)", tips: "Gaya is the more convenient base — a shorter drive than from Patna." },
@@ -11267,6 +11281,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Taxi + Trek", cost: "₹500–₹1,500", notes: "From Jehanabad town; some walking/trekking is required to reach the caves themselves", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahabodhi Temple", distance: "38 km", type: "UNESCO Heritage", isHidden: false, id: "mahabodhi-temple" },
@@ -11324,6 +11339,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Excavated monastery and stupa remains" }, { name: "Riverside setting at the Kosi–Ganga confluence" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhagalpur — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Bhagalpur (38 km)", costRange: "₹1,200–₹2,500 (cab from Bhagalpur)", tips: "Buses and private vehicles run regularly from Bhagalpur to the site." },
@@ -11335,6 +11351,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus/Private Vehicle", cost: "₹100–₹1,500", notes: "From Bhagalpur — the main way to reach Antichak", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Bhagalpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vikramshila Gangetic Dolphin Sanctuary", distance: "15 km", type: "Wildlife Sanctuary", isHidden: true },
@@ -11387,6 +11404,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi + Trek", cost: "₹1,500–₹3,000", notes: "From Sasaram to Badalgarh, then on foot up the old stone stairway", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near this remote hill fort — a hired taxi/guide is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rohtasgarh Fort", distance: "32 km", type: "Hilltop Fort", isHidden: true, id: "rohtasgarh-fort" },
@@ -11445,6 +11463,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi + Local Guide", cost: "₹1,500–₹3,000", notes: "From Sasaram — a guide is genuinely useful given the fort's scale and history", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near this remote hill fort — a hired taxi/guide is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Shergarh Fort", distance: "32 km", type: "Ruined Hill Fort", isHidden: true, id: "shergarh-fort" },
@@ -11492,6 +11511,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The 32-ft Ashokan Pillar" }, { name: "Nandangarh stupa mound, 2 km away" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bettiah — long haul", fromMumbai: "—", fromBangalore: "—", duration: "A short drive from Bettiah", costRange: "₹1,200–₹2,500 (cab from Bettiah)", tips: "Private taxis and local buses run regularly from Bettiah." },
@@ -11503,6 +11523,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi/Local Bus", cost: "₹200–₹1,500", notes: "From Bettiah to the pillar and stupa site", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Valmiki Tiger Reserve", distance: "70 km", type: "Wildlife Reserve", isHidden: false, id: "valmiki-tiger-reserve" },
@@ -11552,6 +11573,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "September – April",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; genuinely worth the climb for the Ganges view." },
     highlights: [{ name: "The 145-step spiral staircase" }, { name: "Panoramic views of the Ganga and Patna" }, { name: "Buddha Smriti Park", id: "buddha-smriti-park" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Jay Prakash Narayan International Airport, Patna — ~2h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "~7 km from the airport", costRange: "₹3,000–₹9,000", tips: "Patna's airport connects to most major Indian metros." },
@@ -11617,6 +11639,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Open daily; free community langar meals served." },
     highlights: [{ name: "The golden dome" }, { name: "Guru Gobind Singh's birthplace shrine" }, { name: "Prakash Punj", id: "prakash-punj" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Jay Prakash Narayan International Airport, Patna — ~2h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "~10 km from the airport", costRange: "₹3,000–₹9,000", tips: "Patna's airport connects to most major Indian metros." },
@@ -11681,6 +11704,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "September – April",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "The 80-ft seated Buddha statue" }, { name: "Surrounding disciple statues" }, { name: "Mahabodhi Temple", id: "mahabodhi-temple" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Gaya Airport (~5 km from Bodh Gaya) — seasonal direct flights", fromMumbai: "Via Delhi/Kolkata to Gaya", fromBangalore: "Via Delhi/Kolkata to Gaya", duration: "5 km from Gaya Airport", costRange: "₹3,500–₹12,000", tips: "Same airport used for the Mahabodhi Temple — combine both in one trip." },
@@ -11696,6 +11720,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto-rickshaw", cost: "₹30–₹150", notes: "Main way to move around Bodh Gaya", available: true },
       { mode: "Cycle Rickshaw", cost: "₹20–₹80", notes: "Common for short hops", available: true },
       { mode: "Rented Bicycle", cost: "₹50–₹150/day", notes: "Bodh Gaya is compact and flat", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi from Bodh Gaya town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahabodhi Temple", distance: "3 km", type: "UNESCO Heritage", isHidden: false, id: "mahabodhi-temple" },
@@ -11743,6 +11768,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "The legendary Shivling" }, { name: "Shivratri and Sawan festival crowds" }],
     transport: [
       { mode: "Train + Road", icon: "🚂", fromDelhi: "Via Lakhisarai Junction", fromMumbai: "Via Lakhisarai Junction", fromBangalore: "Via Lakhisarai Junction", duration: "Lakhisarai Junction is the nearest railhead", costRange: "₹400–₹2,000 (train) + local transport", tips: "Lakhisarai sits on the main Patna–Bhagalpur rail line." },
@@ -11753,6 +11779,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹30–₹150", notes: "From Lakhisarai town to the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Munger", distance: "~35 km", type: "Town", isHidden: true },
@@ -11793,6 +11820,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during the annual urs." },
     highlights: [{ name: "The saint's mazaar" }, { name: "The annual Urs festival, first week of June" }],
     transport: [
       { mode: "Train + Road", icon: "🚂", fromDelhi: "Via Anugraha Narayan Road/Aurangabad station", fromMumbai: "Via Anugraha Narayan Road/Aurangabad station", fromBangalore: "Via Anugraha Narayan Road/Aurangabad station", duration: "Then onward road to Amjhar Sharif", costRange: "₹300–₹1,800 (train) + local transport", tips: "Both stations connect onward by taxi." },
@@ -11803,6 +11831,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹50–₹250", notes: "From Aurangabad town to the shrine", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahabodhi Temple", distance: "~45 km", type: "UNESCO Heritage Site", isHidden: false, id: "mahabodhi-temple" },
@@ -11844,6 +11873,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Check locally, as parts of the palace remain in family or institutional use." },
     highlights: [{ name: "Mithila-style wall art" }, { name: "The palace's royal halls and gardens" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Darbhanga Airport — direct flights on a growing number of routes", fromMumbai: "Via Delhi/Patna to Darbhanga", fromBangalore: "Via Delhi/Patna to Darbhanga", duration: "Within Darbhanga city", costRange: "₹3,000–₹9,000", tips: "Darbhanga's own airport has expanded connectivity in recent years — check current routes." },
@@ -11854,6 +11884,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Rickshaw", cost: "₹30–₹200", notes: "From anywhere in Darbhanga city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Darbhanga — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kusheshwar Asthan Bird Sanctuary", distance: "~40 km", type: "Wildlife Sanctuary", isHidden: true },
@@ -11902,6 +11933,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "The ropeway to the stupa keeps its own, shorter hours." },
     highlights: [{ name: "The ropeway ride up" }, { name: "Hilltop stupa and sunset views" }, { name: "Archaeological Site of Nalanda Mahavihara", id: "nalanda" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patna/Nalanda — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~2h from Patna (100 km), ~15 min from Nalanda (12 km)", costRange: "₹2,000–₹4,500 (cab from Patna)", tips: "Almost always combined with a Nalanda visit, given how close the two are." },
@@ -11916,6 +11948,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Ropeway", cost: "₹100–₹200 round trip", notes: "The main way up to the stupa itself", available: true },
       { mode: "Auto-rickshaw/Taxi", cost: "₹50–₹300", notes: "From Rajgir town to the ropeway base station", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi in Rajgir is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Archaeological Site of Nalanda Mahavihara", distance: "12 km", type: "UNESCO Heritage", isHidden: true, id: "nalanda" },
@@ -11957,6 +11990,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "History"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "Pratihar-era temple architecture" }, { name: "Excavated coins and artefacts on site" }, { name: "Mundeshwari Devi Temple", id: "mundeshwari-devi-temple" }],
     transport: [
       { mode: "Train + Road", icon: "🚂", fromDelhi: "Via Bhabua Road station", fromMumbai: "Via Bhabua Road station", fromBangalore: "Via Bhabua Road station", duration: "Bhabua Road station, then local transport", costRange: "₹300–₹1,500 (train) + local transport", tips: "Bhabua Road is on the main Delhi–Kolkata line." },
@@ -11968,6 +12002,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹50–₹250", notes: "From Kaimur town to the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mundeshwari Devi Temple", distance: "20 km", type: "World's Oldest Functioning Temple", isHidden: false, id: "mundeshwari-devi-temple" },
@@ -12011,6 +12046,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "September – April",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "The Aranya Devi shrine" }, { name: "Navratri celebrations" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Ara Junction", fromMumbai: "Via Ara Junction", fromBangalore: "Via Ara Junction", duration: "Within Arrah city", costRange: "₹300–₹1,500", tips: "Ara Junction is well connected on the main Delhi–Kolkata rail line." },
@@ -12022,6 +12058,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw/Bus", cost: "₹30–₹150", notes: "From anywhere in Arrah", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi in Gaya is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Golghar", distance: "~55 km, in Patna", type: "Heritage Site", isHidden: true, id: "golghar" },
