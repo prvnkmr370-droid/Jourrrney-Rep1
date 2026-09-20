@@ -26977,6 +26977,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "June – January (fullest during and after monsoon)",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Forest-department managed; the viewpoint area closes at dusk and access can be restricted after heavy rain." },
     highlights: [
       { name: "An 80-foot drop across a 330-foot span at peak monsoon flow — the 'Niagara of India'" },
       { name: "The only Western Ghats stretch home to all four regional hornbill species" },
@@ -26991,6 +26992,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Kochi", notes: "Standard way to reach Athirappilly", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into forest country is unconfirmed — a pre-booked taxi from Kochi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi", distance: "~70 km", type: "City", isHidden: false, id: "kochi" },
@@ -54389,6 +54391,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-maintained, with a small entry fee." },
     highlights: [
       { name: "Built by Hyder Ali in 1766 to hold the Palakkad Gap" },
       { name: "Broad water-filled moat around dark laterite ramparts" },
@@ -54405,6 +54408,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹150", notes: "The fort is central and walkable from the station and bus stand; autos for other town sights", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Palakkad town", available: true },
     ],
     nearbyPlaces: [
       { name: "Malampuzha Dam & Garden", distance: "~10 km", type: "Dam / Garden", isHidden: false, id: "malampuzha-dam-garden" },
@@ -54454,6 +54458,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Picnic Spots"],
     bestSeason: "September – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "8:00 PM", note: "The gardens, ropeway, and snake park are separately ticketed; the rock garden's status can vary, so confirm locally." },
     highlights: [
       { name: "Kerala's largest reservoir, below the Western Ghats" },
       { name: "Nek Chand's rock garden of recycled materials (1996)" },
@@ -54470,6 +54475,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Local Bus / Walking", cost: "₹10–₹400", notes: "Buses and autos from Palakkad; the gardens, ropeway, and dam are explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "₹150–₹350", notes: "Bookable from Palakkad town, about 10 km away", available: true },
     ],
     nearbyPlaces: [
       { name: "Palakkad Fort", distance: "~10 km", type: "Historic Fort", isHidden: false, id: "palakkad-fort" },
@@ -54602,6 +54608,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Hired Jeep", cost: "₹1,500–₹3,500 per jeep", notes: "A vehicle is essential on the plateau; local jeeps for rough estate and forest tracks", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage up the ghat — a taxi or hired jeep from Palakkad/Nemmara is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pothundy Dam", distance: "~20 km (on the approach)", type: "Dam / Garden", isHidden: true, id: "pothundy-dam" },
@@ -56338,6 +56345,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Reserve safari bus / guided vehicle", cost: "Included in eco-tourism package fees", notes: "Movement inside the reserve is only with Forest Department vehicles and guides; independent driving and walking off the permitted trails are not allowed", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage inside the reserve or its Anappady check post — a taxi from Pollachi is the way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Athirappilly Falls", distance: "~100 km by road", type: "Waterfall", isHidden: false, id: "athirappilly-falls" },
@@ -57002,6 +57010,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage", "Museum"],
     bestSeason: "October – March",
     duration: "Half day to 1 day",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "The KFRI Teak Museum is closed on Mondays; Conolly's Plot and the hanging bridge keep similar daylight hours." },
     highlights: [
       { name: "Conolly's Plot (1846) — the world's oldest teak plantation, reached by a hanging bridge" },
       { name: "The KFRI Teak Museum — the first museum in the world devoted to teak" },
@@ -57018,6 +57027,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Own Vehicle + walking", cost: "₹100–₹600", notes: "Autos from Nilambur town to the plantation/museum; the hanging bridge and plot are explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Nilambur is unconfirmed — autos from town cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Kozhikode (Calicut)", distance: "~40 km", type: "Historic City", isHidden: false, id: "kozhikode" },
@@ -57272,6 +57282,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Waterfall", "Wildlife"],
     bestSeason: "June – October (highest flow); the site can close briefly on very high water",
     duration: "1 – 2 hours (combine with Athirappilly)",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Forest-department managed; viewing is from a fenced area only — entering the river is not allowed." },
     highlights: [
       { name: "The Chalakudy river racing over a long bed of rock — not a vertical fall" },
       { name: "Vazhachal forest — the four larger South Indian hornbill species together" },
@@ -57288,6 +57299,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Taxi", cost: "₹1,000–₹2,000 for the Athirappilly–Vazhachal circuit", notes: "Best explored by car or hired taxi from Chalakudy; public buses on this stretch are infrequent", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into forest country is unconfirmed — a pre-booked taxi from Chalakudy is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Athirappilly Falls", distance: "~5 km", type: "Waterfall", isHidden: false, id: "athirappilly-falls" },
