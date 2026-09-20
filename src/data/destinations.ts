@@ -51349,6 +51349,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From central Ranchi to the outskirts", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi's outskirts is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sarhul Festival", distance: "Same region (seasonal event)", type: "Cultural Festival", isHidden: true, id: "sarhul-festival" },
@@ -51407,6 +51408,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "Included with a Ranchi-Ramgarh trip", notes: "Best experienced as part of a longer drive", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage along this stretch of road — a hired private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patratu Valley", distance: "~20 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
@@ -51467,6 +51469,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Lake", distance: "~5 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
@@ -51526,6 +51529,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Jamshedpur is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Keenan Stadium", distance: "~5 km", type: "Stadium", isHidden: false, id: "keenan-stadium" },
@@ -51586,6 +51590,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From central Ranchi to Mesra", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~10 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -51644,6 +51649,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Lake", distance: "~3 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
@@ -51703,6 +51709,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From central Ranchi to Dhurwa", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~10 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -51762,6 +51769,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in central Ranchi", available: true },
       { mode: "Walking", cost: "Free", notes: "Easily walkable from central Ranchi markets", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Lake", distance: "~2 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
@@ -51820,6 +51828,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in central Giridih", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Giridih — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Usri Falls", distance: "~30 km", type: "Waterfall", isHidden: false, id: "usri-falls" },
@@ -51879,6 +51888,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹300–₹700", notes: "From Chakradharpur town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Nakti Dam — a hired private taxi from Chakradharpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chaibasa", distance: "~30 km", type: "Town", isHidden: false, id: "chaibasa" },
@@ -51938,6 +51948,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,000–₹2,000", notes: "From Sahebganj town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in the Rajmahal Hills area — a hired private taxi from Sahebganj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sahebganj Town", distance: "~30 km", type: "District Headquarters", isHidden: false, id: "sahebganj-town" },
@@ -51997,6 +52008,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹300–₹700", notes: "From Hazaribagh town to Isko village", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Isko village — a local auto or taxi from Hazaribagh town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Wildlife Sanctuary", distance: "~20 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
