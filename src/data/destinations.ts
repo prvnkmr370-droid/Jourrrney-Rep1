@@ -62298,6 +62298,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired taxi 'point tours', autos & horses", cost: "₹1,200–₹2,500 for a half/full-day taxi point-tour; autos in the market", notes: "The viewpoints are spread over 10–20 km — a shared or hired taxi 'point tour' is the normal way to see them; the bazaar and Venna Lake are walkable", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300 within the market area", notes: "Both operate in Mahabaleshwar town, though a hired taxi point-tour is the practical way to cover the spread-out viewpoints", available: true },
     ],
     nearbyPlaces: [
       { name: "Panchgani", distance: "~20 km", type: "Table-Land Hill Station", isHidden: true, id: "panchgani" },
@@ -62627,6 +62628,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Heritage"],
     bestSeason: "October – March (clear and cool); the monsoon greens the hills and clouds the plateau but the steps and trails turn slippery",
     duration: "Full day from a Konkan or Mahabaleshwar base (half a day on the fort)",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "The ropeway has its own hours and can close in high wind or heavy rain — check before planning around it." },
     highlights: [
       { name: "The durbar area, the Nagarkhana gateway and the market street" },
       { name: "Shivaji's samadhi and the Jagadishwar temple" },
@@ -62643,6 +62645,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Ropeway or the stepped climb; walking on the plateau", cost: "Ropeway ticket (return); fort entry; the climb is free", notes: "The ropeway runs from the base to the top in a few minutes; the alternative is ~1,737 steps. On the plateau everything is on foot over uneven ground", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from the cities is unconfirmed — a taxi from Mahad is the standard way to the ropeway base or Pachad", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahabaleshwar", distance: "~80 km", type: "Hill Station", isHidden: false, id: "mahabaleshwar" },
@@ -62694,6 +62697,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Trekking"],
     bestSeason: "October – February (cool, clear, best views); the monsoon is green and misty but the steps and trails are slippery; go early in summer",
     duration: "Half-day from Mahabaleshwar",
+    visitingHours: { opens: "7:00 AM", closes: "6:30 PM", note: "Go in the morning for clear Konkan views — afternoons cloud over, and the monsoon can whiteout the whole fort." },
     highlights: [
       { name: "The Upper Fort bastions and watchtowers — Konkan and Sahyadri panoramas" },
       { name: "The Bhavani temple and the Kedareshwar shrine" },
@@ -62710,6 +62714,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Road to the base + steps; trek trails", cost: "Shared jeep/taxi from Mahabaleshwar; fort entry", notes: "The road climbs almost to the fort gate; from the car park it is a stepped final climb. Trekkers can walk up from the base villages", available: true },
+      { mode: "Ola / Uber", cost: "₹700–₹1,200 one-way from Mahabaleshwar", notes: "Bookable from Mahabaleshwar, though a shared jeep or taxi is the more typical way to reach the fort", available: true },
     ],
     nearbyPlaces: [
       { name: "Mahabaleshwar", distance: "~24 km", type: "Hill Station", isHidden: false, id: "mahabaleshwar" },
@@ -63526,6 +63531,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired taxi 'point tours', autos & horses", cost: "₹1,000–₹2,000 for a half-day point-tour taxi; horses on Table Land", notes: "The viewpoints and Table Land are a few km apart — a shared or hired taxi point-tour covers them; horses and a joy-train run on Table Land itself", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300 within town", notes: "Both operate in Panchgani town, though a hired taxi point-tour is the practical way to cover the spread-out viewpoints", available: true },
     ],
     nearbyPlaces: [
       { name: "Mahabaleshwar", distance: "~19 km", type: "Hill Station", isHidden: false, id: "mahabaleshwar" },
@@ -63578,6 +63584,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildflowers", "Eco-Tourism"],
     bestSeason: "Late August to early October only, for the bloom (peaking mid-September); the plateau has little to offer outside this window",
     duration: "Half-day to a full day (as a trip from Satara or Mahabaleshwar)",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Only open for the ~6-week bloom season; online timed-entry booking is required, with a capped daily visitor number." },
     highlights: [
       { name: "Successive waves of wildflower bloom — 850+ species, many endemic" },
       { name: "The insectivorous sundew Drosera and the once-in-seven-years karvy" },
@@ -63594,6 +63601,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Season shuttle vans + walking on marked paths", cost: "Timed-entry ticket (online) + shuttle fare in peak season", notes: "Vehicles stop at the car park; shuttle vans run to the plateau gate; inside, movement is on foot on fenced, marked paths only — you cannot walk on the flower beds", available: true },
+      { mode: "Ola / Uber", cost: "₹500–₹900 one-way from Satara", notes: "Bookable from Satara to the Kaas car park, though a taxi or the season shuttle bus is the more typical option", available: true },
     ],
     nearbyPlaces: [
       { name: "Mahabaleshwar", distance: "~35 km", type: "Hill Station", isHidden: false, id: "mahabaleshwar" },
