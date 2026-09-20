@@ -54728,6 +54728,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure", "Picnic Spots"],
     bestSeason: "September – March",
     duration: "Half day to 1 day",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Zones are separately ticketed; the musical fountain and light show run a separate evening slot — check timing on arrival." },
     highlights: [
       { name: "India's first planned ecotourism destination, in themed zones" },
       { name: "The canopy walkway and Adventure Zone activities" },
@@ -54744,6 +54745,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto / Local Bus", cost: "₹10–₹400", notes: "The zones are spread out; autos and short walks between them, or a vehicle", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Thenmala is unconfirmed — a taxi from Kollam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Palaruvi Falls", distance: "~20 km", type: "Waterfall", isHidden: true, id: "palaruvi-falls" },
