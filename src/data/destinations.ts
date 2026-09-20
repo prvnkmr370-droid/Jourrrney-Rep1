@@ -61868,6 +61868,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Art"],
     bestSeason: "November – February (cool, calm seas); ferries do not run in the monsoon (June–September) when the harbour is rough",
     duration: "Half-day from Mumbai (about 4–5 hours door to door)",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Access is set by the Gateway of India ferry schedule (launches roughly 9 AM–2 PM out, last return ~5–5:30 PM); the caves are closed on Mondays." },
     highlights: [
       { name: "The Sadashiva / Maheshamurti — a ~6 m three-faced Shiva, a peak of Indian sculpture" },
       { name: "Cave 1's nine great Shiva relief panels around the linga shrine" },
@@ -61884,6 +61885,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Toy train + steps", cost: "Small toy-train fare from the jetty; ~120 steps up (palanquin carriers for a fee)", notes: "From the jetty a narrow-gauge toy train covers the causeway; then it is a stepped path lined with stalls up to the caves", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service on the island — access is by ferry and the toy train only; both operate freely on the Mumbai side to reach the Gateway of India jetty", available: false },
     ],
     nearbyPlaces: [
       { name: "Gateway of India / Colaba", distance: "~10 km by sea", type: "Mumbai Landmark", isHidden: true, id: "mumbai" },
@@ -62005,6 +62007,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Nature"],
     bestSeason: "November – February (cool); the monsoon is atmospheric and green but the rock is slippery and leeches appear",
     duration: "Half-day (part of a Mumbai stay)",
+    visitingHours: { opens: "7:30 AM", closes: "6:00 PM", note: "Set by Sanjay Gandhi National Park's own gate hours; go on a weekday morning to avoid weekend crowds." },
     highlights: [
       { name: "Cave 3 — the Great Chaitya, a pillared prayer hall with a stupa and giant Buddhas" },
       { name: "Terraced rows of monastic cells, cisterns and rock-cut water channels" },
@@ -62021,6 +62024,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "SGNP park bus / permitted vehicle + walking", cost: "Park entry + bus/vehicle charge to the caves", notes: "From the Borivali gate, the park bus or a permitted vehicle covers the 6 km to the cave base; then it is stairs and paths between the cave groups", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300 to the Borivali gate", notes: "Bookable across Mumbai to the park gate; not permitted for the 6 km inside the park itself", available: true },
     ],
     nearbyPlaces: [
       { name: "Mumbai (South Mumbai sights)", distance: "~40 km", type: "City", isHidden: false, id: "mumbai" },
@@ -65047,6 +65051,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "Heritage", "History"],
     bestSeason: "October – February, cool and dry, best for walking the ruins and photography; the monsoon (June–September) drapes the fort in green but the stone and undergrowth are slippery; summers are hot and humid — go early or late",
     duration: "Half a day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed but lightly staffed away from the main gate — visit in daylight and leave well before dusk." },
     highlights: [
       { name: "The Baroque facades of the ruined Portuguese churches" },
       { name: "The rounded bastions and creek-side ramparts" },
@@ -65063,6 +65068,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw; walking", cost: "Auto from Vasai Road station to the fort; the fort is walked", notes: "The site is large — plan on 2–3 hours of walking over uneven ground. There is no transport inside; wear proper shoes", available: true },
+      { mode: "Ola / Uber", cost: "₹150–₹350 from Vasai Road station", notes: "Both operate in Vasai–Virar; a pre-booked cab is a safer, steadier option than a station auto for solo visitors", available: true },
     ],
     nearbyPlaces: [
       { name: "Arnala Fort & Beach", distance: "~13 km", type: "Island Fort", isHidden: true },
