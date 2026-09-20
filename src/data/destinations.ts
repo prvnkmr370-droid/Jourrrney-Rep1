@@ -65900,6 +65900,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Senapati town", notes: "Genuinely needed — these are working villages, not signposted tourist sites", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Senapati district — a hired vehicle from Imphal or Senapati town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dzuko Valley", distance: "~40 km", type: "Trek & Valley", isHidden: true, id: "dzuko-valley" },
@@ -65959,6 +65960,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹2,500–₹4,500 round trip", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates outside Imphal — a hired taxi from a hotel or local operator is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~81 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
@@ -66017,6 +66019,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,000–₹2,000 round trip", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal area — a hired taxi from a hotel or local operator is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~20 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
@@ -66076,6 +66079,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi from Imphal", cost: "₹5,000–₹9,000 round trip", notes: "Arrange through a reputable operator in Imphal; confirm current conditions before booking", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates on this route or in Moreh — a hired taxi through a reputable Imphal operator is the standard, and only recommended, option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tamu, Myanmar", distance: "~5 km (across the border)", type: "Border Town", isHidden: true },
@@ -66625,6 +66629,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Headlamp/Torch", cost: "Arranged in Tamenglong town", notes: "Essential — the cave's interior passages are genuinely dark and uneven", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Tamenglong district — a hired vehicle from Imphal or Tamenglong town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Zeilad Lake", distance: "~30 km", type: "Wildlife Sanctuary Lake", isHidden: true, id: "zeilad-lake" },
@@ -66690,6 +66695,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide + Hired Vehicle", cost: "Arranged in Churachandpur town", notes: "Recommended for the cave's interior and the final approach road", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Churachandpur district — a hired vehicle from Imphal or Churachandpur town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ngaloi Waterfall", distance: "~15 km", type: "Waterfall", isHidden: false, id: "ngaloi-waterfall" },
@@ -66750,6 +66756,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Local Vehicle from Churachandpur", cost: "Arranged in town", notes: "Short local trip from Churachandpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Churachandpur district — a hired taxi from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tonglon Cave", distance: "~15 km", type: "Historic Cave", isHidden: true, id: "tonglon-cave" },
@@ -66805,6 +66812,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Local Vehicle from Churachandpur", cost: "Arranged in town", notes: "A short local trip from Churachandpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Churachandpur district — a hired taxi from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ngaloi Waterfall", distance: "~12 km", type: "Waterfall", isHidden: true, id: "ngaloi-waterfall" },
