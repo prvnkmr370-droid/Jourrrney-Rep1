@@ -19563,6 +19563,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "9:30 PM", note: "The evening sound-and-light show runs as a separate timed event." },
     highlights: [{ name: "First of 12 Jyotirlingas" }, { name: "Rebuilt 1947–1951 under Sardar Patel" }, { name: "Evening sound-and-light show" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Diu/Rajkot — long haul", fromMumbai: "Via Diu (~1h flight) + road", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Junagadh", costRange: "₹1,800–₹3,500 (cab from Junagadh)", tips: "Genuinely combinable with Diu on the same South Saurashtra circuit." },
@@ -19572,6 +19573,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹300", notes: "Standard way to get around Somnath/Veraval", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Somnath/Veraval is unconfirmed — autos and taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Junagadh (Gir National Park)", distance: "~85 km", type: "City", isHidden: false, id: "junagadh" },
@@ -19615,6 +19617,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "9:30 PM", note: "Closed briefly midday between darshan sessions; several aartis run through the day." },
     highlights: [{ name: "One of Hinduism's Char Dham" }, { name: "72-pillar, five-storey Jagat Mandir" }, { name: "On the Gomti riverbank" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Via Jamnagar/Porbandar + road — long haul", fromMumbai: "Via Porbandar (~1h) + road", fromBangalore: "Not practical", duration: "1–1.5h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Jamnagar and Porbandar are the nearest airports, both requiring a further road transfer." },
@@ -19625,6 +19628,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹300", notes: "Standard way to get around Dwarka town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dwarka is unconfirmed — autos and taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nageshwar Jyotirlinga", distance: "~17 km", type: "Temple", isHidden: false, id: "nageshwar-jyotirlinga" },
@@ -19668,6 +19672,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily." },
     highlights: [{ name: "One of 12 Jyotirlingas" }, { name: "Underground sanctum, built 1750" }, { name: "80-foot seated Shiva statue" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Dwarka — long haul", fromMumbai: "Via Dwarka — long haul", fromBangalore: "Not practical", duration: "~17 km / ~25 min from Dwarka", costRange: "₹200–₹500 (auto/cab from Dwarka)", tips: "Genuinely an easy half-day add-on to a Dwarka visit." },
@@ -19677,6 +19682,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Dwarka", notes: "Standard way to reach Nageshwar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dwarka is unconfirmed — an auto or taxi from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dwarkadhish Temple", distance: "~17 km", type: "Temple", isHidden: false, id: "dwarkadhish-temple" },
@@ -19719,6 +19725,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "November – February; Bhadarvi Poornam fair (Aug/Sep) draws huge crowds",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Extended hours during the Bhadarvi Poornam fair." },
     highlights: [{ name: "One of 51 Shakti Peethas" }, { name: "No idol — worships the Shree Visa Yantra" }, { name: "White marble, gold-coned shikhara" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Palanpur — long haul", fromMumbai: "Via Palanpur — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Palanpur", costRange: "₹1,200–₹2,500 (cab from Palanpur)", tips: "Genuinely avoid the Bhadarvi Poornam fair period unless you specifically want the huge festival crowds — it draws lakhs of pilgrims." },
@@ -19728,6 +19735,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Standard way to get around Ambaji town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ambaji is unconfirmed — autos and taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Balaram Ambaji Wildlife Sanctuary", distance: "Within the sanctuary", type: "Wildlife", isHidden: false, id: "balaram-ambaji-wildlife-sanctuary" },
@@ -19771,6 +19779,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February; climb early morning before the heat",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Entry for new climbers cuts off by early afternoon — confirm the current cutoff before starting the ascent." },
     highlights: [{ name: "863 Jain temples, world's largest temple complex" }, { name: "Built over ~900 years (11th–17th centuries)" }, { name: "3,800+ step pilgrimage climb" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~50 km / ~1h from Bhavnagar", costRange: "₹1,200–₹2,500 (cab from Bhavnagar)", tips: "Start the climb genuinely early (by 6-7am) to avoid the midday heat on the open marble steps." },
@@ -19780,6 +19789,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Doli (Palanquin) / Walking", cost: "₹1,500–₹3,000 for a doli, free to walk", notes: "Dolis (carried palanquins) are available for those unable to make the full climb", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Palitana is unconfirmed — a hired taxi from Bhavnagar is the standard option to reach the base", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhavnagar", distance: "~50 km", type: "City", isHidden: false, id: "bhavnagar" },
@@ -19822,6 +19832,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Museum and exterior viewing hours; the inner sanctum is closed to non-Zoroastrians." },
     highlights: [{ name: "Sacred fire burning continuously since 721 CE" }, { name: "One of only 8 Atash Behrams in India" }, { name: "The most sacred Zoroastrian site worldwide" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Valsad — long haul", fromMumbai: "~190 km, ~4h", fromBangalore: "Not practical", duration: "~18 km / ~30 min from Valsad", costRange: "₹300–₹700 (auto/cab from Valsad)", tips: "Non-Zoroastrians genuinely cannot enter the inner sanctum housing the fire itself — the temple's own museum and the quiet, atmospheric Parsi town are still very much worth the visit." },
@@ -19831,6 +19842,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Valsad", notes: "Standard way to reach Udvada", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Valsad/Udvada is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tithal Beach", distance: "~20 km", type: "Beach", isHidden: false, id: "tithal-beach" },
@@ -19873,6 +19885,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "November – February; Purnima (full moon) days draw the largest crowds",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Multiple daily aartis; extended hours on Purnima." },
     highlights: [{ name: "Built 1772" }, { name: "The Bodana-Gangabai devotional legend" }, { name: "Major Krishna pilgrimage site" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~90 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Purnima (full moon) days are genuinely the busiest — visit on other days for a calmer experience." },
@@ -19882,6 +19895,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Standard way to get around Dakor town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dakor is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~90 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -19924,6 +19938,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "UNESCO"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Ropeway operates on its own shorter daily schedule." },
     highlights: [{ name: "One of 51 Shakti Peethas" }, { name: "Within the Champaner-Pavagadh UNESCO site" }, { name: "Ropeway to the summit since 1986" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~47 km / ~1.25h from Vadodara", costRange: "₹1,500–₹3,000 (cab from Vadodara)", tips: "Genuinely worth combining with the broader Champaner archaeological ruins at the hill's base." },
@@ -19934,6 +19949,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Ropeway", cost: "₹200–₹400 round trip", notes: "The easier way to the summit, running since 1986", available: true },
       { mode: "Walking (Forest Path)", cost: "Free", notes: "A real, physically demanding ~5km forest climb for those who prefer to walk", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Vadodara is unconfirmed — a hired taxi is the standard option to reach the hill's base", available: false },
     ],
     nearbyPlaces: [
       { name: "Champaner Archaeological Park", distance: "At the hill's base", type: "UNESCO Heritage", isHidden: true, id: "champaner-pavagadh-archaeological-park" },
@@ -19979,6 +19995,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "12th-century carved structure" }, { name: "The Durvasa curse legend" }, { name: "The jal daan (water donation) tradition" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Dwarka — long haul", fromMumbai: "Via Dwarka — long haul", fromBangalore: "Not practical", duration: "~3 km / ~10 min from Dwarkadhish Temple", costRange: "₹50–₹150 (auto within Dwarka)", tips: "Genuinely a quick add-on for anyone already visiting Dwarkadhish Temple." },
@@ -19988,6 +20005,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Dwarka town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dwarka is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dwarkadhish Temple", distance: "~3 km", type: "Temple", isHidden: false, id: "dwarkadhish-temple" },
