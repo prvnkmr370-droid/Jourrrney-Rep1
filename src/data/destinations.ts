@@ -12351,6 +12351,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around North Goa", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips", available: true },
       { mode: "Water Sports", cost: "₹500–₹1,500 per activity", notes: "Jet ski, parasailing, and banana boat operators along the beach", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Reliable coverage along this developed North Goa stretch", available: true },
     ],
     nearbyPlaces: [
       { name: "Sinquerim Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "sinquerim" },
@@ -12411,6 +12412,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around North Goa", available: true },
       { mode: "Water Sports", cost: "₹500–₹1,500 per activity", notes: "Jet ski, parasailing, and other operators", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Reliable coverage along this developed North Goa stretch", available: true },
     ],
     nearbyPlaces: [
       { name: "Fort Aguada", distance: "Right above the beach", type: "Fort", isHidden: false, id: "aguada" },
@@ -12459,6 +12461,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Working 17th-century lighthouse" }, { name: "Original freshwater cisterns" }, { name: "Panoramic Arabian Sea & Mandovi views" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Thivim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~30min from Panaji", costRange: "₹900–₹1,600 (cab from Panaji)", tips: "Combine with Sinquerim and Candolim beaches for a full half-day out." },
@@ -12469,6 +12472,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The fort grounds are fully walkable once there", available: true },
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹500/hop (taxi)", notes: "For getting to the fort from elsewhere in North Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Reliable coverage along this developed North Goa stretch", available: true },
     ],
     nearbyPlaces: [
       { name: "Sinquerim Beach", distance: "Right below the fort", type: "Beach", isHidden: false, id: "sinquerim" },
@@ -12529,6 +12533,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Walkable from central Panaji", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Widely available in Panaji", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable coverage in and around Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Panaji city centre", distance: "~3 km", type: "Town", isHidden: false },
