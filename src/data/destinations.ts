@@ -42886,6 +42886,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Battery-Operated Vehicle", cost: "₹250–₹450 per short stretch", notes: "Covers the initial flatter stretch from Katra", available: true },
       { mode: "Helicopter", cost: "₹1,500–₹2,500 one-way per person", notes: "From Sanjhichhat helipad, cutting the trek to a final ~2.5 km walk — book ahead, especially in season", available: true },
       { mode: "Cable Car (Bhawan–Bhairon)", cost: "₹150–₹200 return", notes: "Covers the steep final stretch to Bhairon Temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the trek itself — registered pony/palki, battery vehicle, or helicopter are the standard options", available: false },
     ],
     nearbyPlaces: [
       { name: "Bahu Fort", distance: "~50 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
@@ -43018,6 +43019,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Gulmarg Gondola", cost: "₹800–₹2,200 depending on stage/season", notes: "Book tickets early in peak winter — long queues are real", available: true },
       { mode: "Pony", cost: "₹300–₹800", notes: "For short local rides around the meadow", available: true },
       { mode: "Local Taxi", cost: "₹500–₹1,500", notes: "Union-rate taxis operate within Gulmarg", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Gulmarg — union-rate local taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dal Lake", distance: "~50 km, in Srinagar", type: "Lake", isHidden: true, id: "dal-lake" },
@@ -43082,6 +43084,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi / Union Cab", cost: "₹1,500–₹3,500 for Betaab/Aru/Chandanwari circuit", notes: "Union-rate shared or private taxis cover the valley's main sights", available: true },
       { mode: "Pony", cost: "₹500–₹1,500", notes: "For Baisaran meadow and other short treks", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Pahalgam — union-rate local taxis are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baisaran Valley", distance: "~5 km", type: "Meadow", isHidden: false, id: "baisaran-valley" },
@@ -43149,6 +43152,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "On Foot / Trek", cost: "Free", notes: "Both routes are trekked; no vehicle access beyond the base camps", available: true },
       { mode: "Pony / Palanquin", cost: "₹3,000–₹8,000 one-way depending on route", notes: "Registered operators only, booked through official yatra counters", available: true },
       { mode: "Helicopter", cost: "₹3,500–₹4,500 one-way per person", notes: "From Baltal or Panchtarni, cutting the trek significantly — book through the official Shrine Board portal only", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the yatra route — registered pony/palki or helicopter, booked via the Shrine Board, are the standard options", available: false },
     ],
     nearbyPlaces: [
       { name: "Pahalgam", distance: "43 km (via the Pahalgam route)", type: "Base Camp Town", isHidden: false, id: "pahalgam" },
