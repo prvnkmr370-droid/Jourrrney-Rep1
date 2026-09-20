@@ -8288,6 +8288,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Jeep Safari", cost: "₹3,000–₹5,000/jeep", notes: "All four ranges — no advance booking needed, per Assam Tourism", available: true },
       { mode: "Elephant Safari", cost: "₹2,000–₹3,500/person", notes: "Central & Western ranges only — limited seats, book ahead", available: true },
       { mode: "Boat Safari (Bhomoraguri)", cost: "₹500–₹1,500", notes: "For Ganges river dolphin sightings", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the park — a hired jeep safari vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "217 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -8356,6 +8357,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi Rental", cost: "₹1,500–₹2,500/day", notes: "Main way to see the island's spread-out Satras", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹300/day", notes: "Flat terrain makes cycling a genuinely good option", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on the island — a local auto or rented cycle/scooter is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jorhat", distance: "~20 km via ferry + road", type: "Gateway Town", isHidden: false },
@@ -8493,6 +8495,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "Main way to get around the compact town", available: true },
       { mode: "Taxi", cost: "₹1,000–₹2,500/day", notes: "For day trips to Bhalukpong or the wildlife sanctuaries", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Tezpur — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~180 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -8558,6 +8561,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Haflong is small enough to explore on foot, per Assam Tourism", available: true },
       { mode: "Taxi", cost: "₹1,000–₹2,500/day", notes: "For Jatinga and other out-of-town spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Haflong — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jatinga (bird phenomenon village)", distance: "~9 km", type: "Natural Phenomenon", isHidden: false },
@@ -8757,6 +8761,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Elephant Safari", cost: "₹1,500–₹2,500/person", notes: "The classic way to get close to the rhinos", available: true },
       { mode: "Jeep Safari", cost: "₹2,500–₹4,000/jeep", notes: "Covers more ground, good for birdlife", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the sanctuary — a hired jeep or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "30 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -8883,6 +8888,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "Main way around town", available: true },
       { mode: "Hired Car", cost: "₹1,500–₹3,000/day", notes: "For Kakoijana Sanctuary and the outlying temples/hills", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Bongaigaon — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "210 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -8943,6 +8949,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "Main way around town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Nagaon — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~115 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -9004,6 +9011,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹30–₹150", notes: "Main way around the compact Satra area", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Barpeta — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~100 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -9062,6 +9070,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹30–₹150", notes: "Main way around town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Hailakandi — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silchar", distance: "~50 km", type: "Barak Valley City", isHidden: false, id: "silchar" },
@@ -9136,6 +9145,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Jeep Safari", cost: "₹2,500–₹4,500/jeep", notes: "Main way to see the reserve", available: true },
       { mode: "Elephant Safari", cost: "₹2,000–₹3,000/person", notes: "For closer wildlife encounters", available: true },
       { mode: "Rafting Trip", cost: "₹1,500–₹3,000/person", notes: "On the Manas River, combining scenery with wildlife spotting", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the park — a hired jeep safari vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "140 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -9202,6 +9212,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "Main way around the compact monument circuit", available: true },
       { mode: "Hired Car", cost: "₹1,500–₹2,500/day", notes: "For Charaideo (28 km away)", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Sivasagar — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Charaideo (Ahom Moidams)", distance: "~28 km", type: "UNESCO Heritage Site", isHidden: false, id: "charaideo" },
@@ -9266,6 +9277,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rafting (Jia Bharali river)", cost: "₹1,500–₹3,000/person", notes: "Gentle rapids with a real chance of spotting tigers/elephants from the water", available: true },
       { mode: "Guided Trek", cost: "₹1,000–₹2,000/person", notes: "For birding and jungle wildlife", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the park — a hired vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tezpur", distance: "45 km", type: "Heritage Town", isHidden: false, id: "tezpur" },
@@ -9329,6 +9341,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹500–₹1,500", notes: "Round trip from Tinsukia or Dibrugarh", available: true },
       { mode: "Walking", cost: "Free", notes: "The old refinery/bungalow area is walkable once you're there", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Digboi — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tinsukia", distance: "~30 km", type: "Commercial Hub", isHidden: false, id: "tinsukia" },
@@ -9387,6 +9400,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "Main way around Mangaldoi town", available: true },
       { mode: "Hired Car", cost: "₹1,200–₹2,000/day", notes: "For Dhalpur Hill and Batha Beel", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~70 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -9447,6 +9461,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹1,000–₹2,000/day", notes: "For the dam, golf course, and falcon-roosting sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Umrangso — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Haflong", distance: "~120 km", type: "Hill Station", isHidden: false, id: "haflong" },
@@ -9501,6 +9516,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided Walk", cost: "₹500–₹1,000/person", notes: "For gibbon spotting and the hot spring", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the sanctuary — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nagaon", distance: "Regional connection", type: "Cultural Hub", isHidden: false, id: "nagaon" },
@@ -9565,6 +9581,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Boat Safari", cost: "₹2,000–₹4,000/boat", notes: "The main way to see feral horses and river dolphins", available: true },
       { mode: "Jungle Trek", cost: "₹800–₹1,500/person", notes: "For a quieter, off-water experience", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the park — a hired boat/jeep or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dibrugarh", distance: "~50 km", type: "Tea City", isHidden: false, id: "dibrugarh" },
@@ -9614,6 +9631,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – April",
     duration: "Half-day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [
       { name: "Ahom royal Moidams (burial mounds)" },
       { name: "UNESCO World Heritage Site" },
@@ -9629,6 +9647,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi (round-trip from Sivasagar)", cost: "₹500–₹1,000", notes: "The practical way in and out", available: true },
       { mode: "On-site walking", cost: "Free", notes: "The Moidam complex is walkable once you're there", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a taxi round trip from Sivasagar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sivasagar", distance: "28 km", type: "Historic Ahom Capital", isHidden: false, id: "sivasagar" },
@@ -10019,6 +10038,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Elephant Safari", cost: "₹450 (Indian) / ₹1,000 (foreigner) per seat", notes: "Max 3 seats per elephant, per the park's official fee list", available: true },
       { mode: "Jeep Safari", cost: "Vehicle + ₹300 daily road toll + ₹100 security guard fee", notes: "Max 5 seats per jeep", available: true },
       { mode: "River Cruise/Rafting", cost: "₹100 (Indian) / ₹500 (foreigner) + ₹1,000 toll", notes: "On the Brahmaputra, per the park's official fee list", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the park — a hired jeep safari vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Guwahati", distance: "~110 km", type: "Gateway City", isHidden: false, id: "guwahati" },
@@ -10087,6 +10107,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Guided Jeep/Walking Safari", cost: "Contact sanctuary office for current rates", notes: "For Bengal florican and wildlife spotting", available: true },
       { mode: "Hired Car", cost: "₹1,500–₹2,500/day", notes: "From Tezpur to the sanctuary and back", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near the sanctuary — a hired vehicle or local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tezpur", distance: "35–40 km", type: "Heritage Town", isHidden: false, id: "tezpur" },
