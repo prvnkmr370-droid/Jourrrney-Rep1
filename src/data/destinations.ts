@@ -47876,6 +47876,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Chandil town to the dam", available: true },
       { mode: "Jet Boating", cost: "₹300–₹800", notes: "The signature activity on the reservoir", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Chandil is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dalma Wildlife Sanctuary", distance: "~35 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
@@ -47936,6 +47937,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹400–₹1,000", notes: "From Dhanbad to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dhanbad is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Topchanchi Lake", distance: "~30 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
@@ -47995,6 +47997,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,500–₹2,800 round trip", notes: "Usually combined with a Jonha Falls visit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jonha Falls", distance: "~6 km", type: "Waterfall", isHidden: true, id: "jonha-falls" },
@@ -48057,6 +48060,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Trekking", cost: "Free (guide fee ₹300-600)", notes: "The final approach to the falls requires a proper trek", available: true },
       { mode: "Private Taxi/SUV", cost: "₹3,000–₹5,000/day", notes: "For reaching the trailhead from Netarhat or Daltonganj", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote plateau region — a private taxi to the trailhead is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Netarhat", distance: "~30 km", type: "Hill Station", isHidden: false, id: "netarhat" },
@@ -48116,6 +48120,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From Giridih town to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Giridih is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Parasnath Hill", distance: "~35 km", type: "Pilgrimage Hill", isHidden: false },
@@ -48178,6 +48183,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Trekking (main pilgrimage circuit)", cost: "Free (porters/dolis available for hire)", notes: "The traditional way to complete the Tonks circuit", available: true },
       { mode: "Doli/Palanquin", cost: "₹1,500–₹4,000", notes: "Available for those unable to trek the full distance", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Madhuban — a local cab from Parasnath station is the standard option to reach the trailhead", available: false },
     ],
     nearbyPlaces: [
       { name: "Usri Falls", distance: "~35 km", type: "Waterfall", isHidden: false, id: "usri-falls" },
@@ -48221,6 +48227,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "Distinctive Rajasthani-style domed chhatris and staircase" },
       { name: "The temple's namesake nine-lakh-rupee construction budget" },
@@ -48237,6 +48244,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Deoghar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baidyanath Dham", distance: "~4 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
@@ -48281,6 +48289,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Nature"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [
       { name: "The hilltop Shiva shrine, a defining Ranchi landmark" },
       { name: "The long covered stairway climb" },
@@ -48298,6 +48307,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
       { mode: "Walking (covered stairway)", cost: "Free", notes: "The traditional way up the hill", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tagore Hill", distance: "~6 km", type: "Heritage Hill", isHidden: false, id: "tagore-hill" },
