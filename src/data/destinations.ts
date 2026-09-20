@@ -15547,6 +15547,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round; open Tue–Sun 9:30am–5:30pm, closed national holidays",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:30 PM", note: "Closed on Mondays and national holidays." },
     highlights: [{ name: "Only naval aviation museum in Asia" }, { name: "13 real retired aircraft on outdoor display" }, { name: "Interior galleries modelled on INS Viraat" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vasco — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~6km / ~15min from Vasco da Gama", costRange: "₹200–₹500 (cab from Vasco)", tips: "Easy to combine with Bogmalo Beach on the same trip." },
@@ -15556,6 +15557,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Vasco", notes: "The practical way to reach the museum", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage this close to Vasco", available: true },
     ],
     nearbyPlaces: [
       { name: "Bogmalo Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "bogmalo" },
@@ -15607,6 +15609,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400 (taxi)", notes: "Standard way to get around this part of North Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Calangute", available: true },
     ],
     nearbyPlaces: [
       { name: "Baga & Calangute", distance: "~5 km", type: "Beach", isHidden: false, id: "baga-calangute" },
@@ -15657,6 +15660,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within walkable central Panaji, on the riverfront", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹50–₹200", notes: "Reliable coverage within Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Our Lady of Immaculate Conception Church", distance: "~1 km", type: "Church", isHidden: false, id: "our-lady-of-immaculate-conception" },
@@ -15702,6 +15706,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; especially around Id-ul-Fitr and Id-ul-Zuha",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily; closed to visitors during prayer times." },
     highlights: [{ name: "One of Goa's oldest mosques" }, { name: "Rebuilt in 1959, four minarets" }, { name: "Active place of worship near Sanguem" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Margao/Sanguem — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~26km / ~45min from Margao", costRange: "₹400–₹900 (cab from Margao)", tips: "Dress modestly and check prayer timings before visiting, as it remains an active mosque." },
@@ -15711,6 +15716,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹400–₹900 from Margao", notes: "The practical way to reach Sanguem", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹900", notes: "Coverage exists but can be patchy in this inland area — a hired taxi is more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Netravali Lake (Bubble Lake)", distance: "~15 km", type: "Nature", isHidden: true, id: "netravali-lake" },
@@ -15754,6 +15760,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; especially around Id-ul-Fitr and Id-ul-Zuha",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily; closed to visitors during prayer times." },
     highlights: [{ name: "Goa's biggest and most famous mosque" }, { name: "Built in 1560 by Ibrahim Adilshah of Bijapur" }, { name: "Masonry tank with mehrab-design chambers" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "In Ponda town", costRange: "₹200–₹500 (auto/cab from Panaji or Margao)", tips: "Dress modestly and check prayer timings before visiting, as it remains an active mosque." },
@@ -15763,6 +15770,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Panaji or Margao", notes: "The practical way to reach Ponda", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage in Ponda town", available: true },
     ],
     nearbyPlaces: [
       { name: "Shanta Durga Temple", distance: "~5 km", type: "Temple", isHidden: false, id: "shanta-durga-temple" },
@@ -15820,6 +15828,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Ferry + Canoe", cost: "₹300–₹800 for a guided tour", notes: "Ribandar ferry wharf to Chorao Island, then a local canoe guide", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable to reach the Ribandar ferry wharf from Panaji; no app-cab coverage on Chorao Island itself", available: true },
     ],
     nearbyPlaces: [
       { name: "Old Goa churches", distance: "~8 km", type: "Church", isHidden: false, id: "old-goa" },
