@@ -3003,6 +3003,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Jeep", cost: "₹20–₹100/seat", notes: "Frequent between Rishikesh, Laxman Jhula, Haridwar", available: true },
       { mode: "Walking/Cycling", cost: "₹150/day bike rental", notes: "Best way around Laxman Jhula and Ram Jhula area", available: true },
       { mode: "Raft (river transport)", cost: "₹400–₹600/person", notes: "River rafting doubles as transport downriver", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Reliable coverage given Rishikesh's size as a major pilgrimage and adventure-tourism town", available: true },
     ],
     nearbyPlaces: [
       { name: "Haridwar", distance: "25 km", type: "Spiritual City – Har Ki Pauri", isHidden: false, id: "haridwar" },
@@ -3075,6 +3076,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Boat (Naini Lake)", cost: "₹250–₹600", notes: "A classic Nainital activity — rowboats and paddle boats both available", available: true },
       { mode: "Ropeway (to Snow View Point)", cost: "₹250–₹400 round trip", notes: "A genuine cable car, not just a viewpoint hike", available: true },
       { mode: "Taxi/Auto", cost: "₹100–₹500", notes: "For Tiffin Top, Naina Peak, and other outlying viewpoints", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — a local taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhimtal", distance: "22 km", type: "Nature", isHidden: true },
@@ -3141,6 +3143,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "Mall Road and central Mussoorie are compact and walkable, though genuinely hilly", available: true },
       { mode: "Ropeway (to Gun Hill)", cost: "₹150–₹250 round trip", notes: "A genuine cable car up to the town's second-highest point", available: true },
       { mode: "Taxi/Auto", cost: "₹150–₹600", notes: "For Kempty Falls, Landour, and other outlying sights", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — a local taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dehradun", distance: "35 km", type: "Culture", isHidden: true },
@@ -3208,6 +3211,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Common for short hops around town", available: true },
       { mode: "Ropeway (to Mansa Devi/Chandi Devi)", cost: "₹150–₹300 round trip", notes: "Genuine cable cars up to both hilltop temples", available: true },
       { mode: "Auto Rickshaw", cost: "₹40–₹200", notes: "For wider-town and station transfers", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Reliable coverage given Haridwar's size as a major pilgrimage town", available: true },
     ],
     nearbyPlaces: [
       { name: "Rishikesh", distance: "25 km", type: "Spiritual", isHidden: false, id: "rishikesh" },
@@ -3275,6 +3279,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Skiing/Snowboarding Rental & Lessons", cost: "₹1,500–₹4,000/day", notes: "Equipment rental and instructor packages available in season", available: true },
       { mode: "Walking", cost: "Free", notes: "Auli's meadow and viewpoint areas are explored on foot", available: true },
       { mode: "Taxi (Joshimath transfers)", cost: "₹500–₹1,500", notes: "For road transfers when the cable car isn't running", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi or the Auli ropeway from Joshimath is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Joshimath (winter seat of Badrinath)", distance: "16 km", type: "Spiritual", isHidden: true },
