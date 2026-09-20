@@ -10394,6 +10394,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹1,500–₹3,000/day", notes: "For Borra Caves, Ananthagiri, and Tyda", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Within Araku town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi or the Araku toy train from Visakhapatnam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Visakhapatnam", distance: "~115 km", type: "Main Gateway", isHidden: false, id: "vizag" },
@@ -10527,6 +10528,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Jeep Safari (Tiger Reserve)", cost: "~₹800 for 6 people, 1.5h ride", notes: "7am–4pm; no vehicles allowed 9pm–6am in the reserve", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Within Srisailam town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Hyderabad or Kurnool is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nagarjunsagar Dam", distance: "~150 km", type: "Dam & Reservoir", isHidden: true },
@@ -10589,6 +10591,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Car / Taxi", cost: "₹1,500–₹2,500/day", notes: "Most practical way to see the frost points and forest trails", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this hill village — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Visakhapatnam", distance: "~101 km", type: "Main Gateway", isHidden: false, id: "vizag" },
@@ -10653,6 +10656,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Country Boat", cost: "Varies, often bundled with resort stays", notes: "For gliding through coconut orchards and mangrove channels to islands like Shivakodi Lanka and Ayodhya Lanka", available: true },
       { mode: "Hired Car / Taxi", cost: "₹1,500–₹2,500/day", notes: "For moving between delta towns", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this backwater region — a hired taxi or local boat is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rajahmundry", distance: "Regional gateway", type: "Godavari Gateway City", isHidden: true },
