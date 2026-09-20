@@ -22962,6 +22962,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:00 PM", note: "Guided tours only; part of the palace remains a private royal residence." },
     highlights: [
       { name: "Commissioned 1878, completed 1890 — 500+ acres, nearly four times Buckingham Palace" },
       { name: "170 rooms in an Indo-Saracenic style blending Hindu, Mughal, and Gothic elements" },
@@ -22976,6 +22977,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Vadodara city", notes: "Standard way to reach the palace from anywhere in Vadodara", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Widely available across Vadodara", available: true },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
@@ -23034,6 +23036,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Licensed Forest-Department Boat", cost: "Permit + boat fees vary; arrange via forest department", notes: "The only legal way to reach Pirotan Island or the reef-flat sites", available: true },
       { mode: "Taxi (Full Day)", cost: "₹1,800–₹3,500/day", notes: "For reaching Jamnagar's boat-launch points", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamnagar is unconfirmed — a hired taxi to the boat-launch point is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jamnagar", distance: "~10 km", type: "City", isHidden: false, id: "jamnagar" },
@@ -23077,6 +23080,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Spiritual"],
     bestSeason: "November – February",
     duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Free entry, open daily." },
     highlights: [
       { name: "Gandhi's actual birth room, in the family home his great-grandfather bought in 1777" },
       { name: "Modern memorial complex begun in 1947 during Gandhi's lifetime, completed 1950" },
@@ -23091,6 +23095,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Porbandar town", notes: "Standard way to reach Kirti Mandir from anywhere in Porbandar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Porbandar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sudama Mandir, Porbandar", distance: "~1 km", type: "Temple", isHidden: true, id: "sudama-mandir" },
@@ -23147,6 +23152,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Bhuj", notes: "Standard way to reach Kalo Dungar via Khavda", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote border area — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rann of Kutch (White Desert)", distance: "~15 km via Khavda", type: "Salt Desert", isHidden: true, id: "rann-of-kutch-white-desert" },
@@ -23190,6 +23196,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "November – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "May close briefly at midday; confirm current Royal Garage hours before visiting." },
     highlights: [
       { name: "Palace built c. 1748 CE, with facade stone-carving from successive royal generations" },
       { name: "32-vehicle Royal Garage vintage car collection, widely regarded as among Asia's finest" },
@@ -23204,6 +23211,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Rajkot", notes: "Standard way to reach Gondal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Gondal is unconfirmed — a hired taxi from Rajkot is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rajkot", distance: "~35 km", type: "City", isHidden: false, id: "rajkot" },
