@@ -7932,6 +7932,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "Half-day to 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Open daily." },
     // Buland Darwaza, Jama Masjid, Tomb of Salim Chishti, Diwan-i-Khas,
     // Panch Mahal, Pachisi Court, and Jodha Bai's Palace are all verified
     // against uptourism.gov.in's own Fatehpur Sikri listing.
@@ -7948,6 +7949,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "UPSRTC Bus", cost: "₹30–₹80", notes: "Regular bus services connect Fatehpur Sikri to Agra and neighbouring towns", available: true },
       { mode: "Cycle-Rickshaw / Tonga", cost: "₹50–₹150", notes: "For getting around within Fatehpur Sikri town itself", available: true },
       { mode: "On-site walking", cost: "Free", notes: "The complex itself is walkable once you're there; some stretches are uneven stone", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a round-trip taxi from Agra is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Agra (Taj Mahal, Agra Fort)", distance: "37 km", type: "Main Base", isHidden: false },
@@ -8008,6 +8010,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto-Rickshaw", cost: "₹100–₹400", notes: "Main way to move between Mathura and Vrindavan and their temples", available: true },
       { mode: "Cycle-Rickshaw", cost: "₹30–₹100", notes: "The core temple area (around Banke Bihari) has restricted vehicle access — park outside and walk or take a cycle-rickshaw in", available: true },
       { mode: "Walking", cost: "Free", notes: "Central Vrindavan's temple lanes are walkable once you're inside", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Agra (Taj Mahal, Agra Fort)", distance: "58 km", type: "Major Heritage City", isHidden: false },
@@ -8142,6 +8145,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "E-Rickshaw", cost: "₹30–₹100", notes: "Main way to move between temples — the temple area sees heavy pilgrim foot traffic", available: true },
       { mode: "Taxi", cost: "₹100–₹500", notes: "For longer hops or day trips", available: true },
       { mode: "Cycle-Rickshaw", cost: "₹30–₹80", notes: "Available throughout town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lucknow", distance: "134 km", type: "State Capital", isHidden: false, id: "lucknow" },
