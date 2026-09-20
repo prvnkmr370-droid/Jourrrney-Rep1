@@ -50789,6 +50789,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "Distinctive twin ribbed shikharas with cobra-hood motifs" },
       { name: "A riverside setting on the Subarnarekha" },
@@ -50805,6 +50806,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹200–₹500", notes: "From Chandil town to the temple", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Chandil — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chandil Dam", distance: "~5 km", type: "Dam", isHidden: false, id: "chandil-dam" },
@@ -50865,6 +50867,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in Pakur town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Pakur — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Massanjore Dam", distance: "~55 km", type: "Dam", isHidden: false, id: "massanjore-dam" },
@@ -50924,6 +50927,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Bokaro or Giridih to the hill area", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural hill area — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Parasnath Hill (Shikharji)", distance: "~40 km", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
@@ -50983,6 +50987,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Jamshedpur to Seraikela town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage between Jamshedpur and Seraikela is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chandil Dam", distance: "~30 km", type: "Dam", isHidden: false, id: "chandil-dam" },
@@ -51042,6 +51047,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to Galudih", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Galudih — a local taxi from Ghatshila is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rankini Mandir, Ghatshila", distance: "~10 km", type: "Temple", isHidden: false, id: "rankini-mandir-ghatshila" },
@@ -51102,6 +51108,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹1,000–₹2,500", notes: "For reaching village celebrations from the nearest city", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in most villages celebrating Karma — a hired local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Lake", distance: "Varies", type: "City Lake", isHidden: false, id: "ranchi-lake" },
@@ -51161,6 +51168,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹500", notes: "From anywhere in Ranchi to celebration venues", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Karma Festival", distance: "Same region (different season)", type: "Cultural Festival", isHidden: true, id: "karma-festival" },
@@ -51221,6 +51229,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Jamshedpur to Janumdih village area", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this obscure rural village — a hired local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dalma Wildlife Sanctuary", distance: "~30 km", type: "Wildlife Reserve", isHidden: false, id: "dalma-wildlife-sanctuary" },
@@ -51280,6 +51289,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹400", notes: "From anywhere in Jamshedpur to riverbank celebration sites", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Jamshedpur is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Subarnarekha River, Ghatshila", distance: "Varies", type: "River", isHidden: true, id: "galudih-barrage" },
