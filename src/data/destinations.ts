@@ -64091,6 +64091,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own vehicle; walking to the falls", cost: "None beyond fuel/parking; guide fees for the treks", notes: "You need your own vehicle for the pass — there is no local transport between the falls, the dam and the trek bases; the roadside falls are a short walk from lay-bys, the fort treks are a half- to full-day climb from base villages", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage on the ghat — self-drive or a hired car from Kalyan/Pune is the standard way through", available: false },
     ],
     nearbyPlaces: [
       { name: "Shivneri Fort", distance: "~35 km", type: "Shivaji's Birthplace Fort", isHidden: false, id: "shivneri-fort" },
@@ -64158,6 +64159,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired jeep / taxi; walking", cost: "Half-day jeep hire for the viewpoint circuit; short walks to the falls", notes: "The waterfalls and viewpoints are spread over several km along the ghat; there is no real local bus, so hire a jeep for a half-day round or use a homestay vehicle. The Amboli Waterfall is a short walk from the road", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage on the ghat — a hired jeep or taxi from Sawantwadi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sawantwadi", distance: "~30 km", type: "Palace Town & Ganjifa Craft", isHidden: true },
@@ -65187,6 +65189,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired taxi / auto; own vehicle", cost: "Half-day taxi for the palace-plus-waterfalls circuit", notes: "The town centre and palace are walkable, but Dabhosa, Kalmandavi, Khad-Khad and the viewpoints are 8–25 km out on hill roads with little public transport — hire a vehicle or use a homestay's", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jawhar is unconfirmed — a hired taxi is the standard way to cover the spread-out sights", available: false },
     ],
     nearbyPlaces: [
       { name: "Dabhosa Waterfall", distance: "~20 km", type: "300-ft Waterfall & Adventure Resort", isHidden: true },
@@ -65255,6 +65258,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired car / tour bus; steps on foot at Lenyadri", cost: "Whole-circuit car hire or a seat on a tour bus; palanquin (doli) at Lenyadri", notes: "The distance is all covered by road vehicle. Only Lenyadri involves a real climb — 307 steps, with doli-bearers available for those who cannot manage it", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not practical for a multi-day, multi-town circuit — a hired car with driver or a tour bus is the standard way to cover all eight temples", available: false },
     ],
     nearbyPlaces: [
       { name: "Pune", distance: "Circuit hub", type: "City", isHidden: false, id: "pune" },
@@ -65324,6 +65328,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own vehicle or hired jeep; walking", cost: "Jeep hire for the viewpoint circuit; short walks around the lake", notes: "There is very little public transport on the plateau. The lake and town are walkable; the viewpoints and Sita Khani need a vehicle or a long walk", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this remote — a hired jeep from Shahada is the standard way up the ghat", available: false },
     ],
     nearbyPlaces: [
       { name: "Shahada", distance: "~50 km", type: "Nearest Town (base of the ghat)", isHidden: true },
