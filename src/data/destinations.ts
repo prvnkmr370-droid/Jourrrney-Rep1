@@ -21805,6 +21805,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "7:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "One temple, three faiths (Jain, Shaivite, Vaishnavite)" }, { name: "Built 2002, 40,175 sq ft white-marble campus" }, { name: "Founded by Dada Bhagwan (Ambalal Muljibhai Patel)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Gandhinagar — long haul", fromMumbai: "Via Gandhinagar — long haul", fromBangalore: "Not practical", duration: "~10 km / ~20 min from Gandhinagar", costRange: "₹200–₹500 (auto/cab)", tips: "Genuinely combinable with Adalaj Stepwell, given the shared name and area — but these are two entirely distinct sites, so don't confuse one for the other when planning." },
@@ -21814,6 +21815,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500", notes: "Standard way to reach Adalaj", available: true },
+      { mode: "Ola / Uber", cost: "₹200–₹500", notes: "Widely available given proximity to Gandhinagar/Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Adalaj Stepwell", distance: "~3 km", type: "Stepwell", isHidden: true, id: "adalaj-stepwell" },
@@ -21866,6 +21868,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach the ghat from Somnath", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Somnath/Veraval is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Somnath Temple", distance: "~2 km", type: "Temple", isHidden: false, id: "somnath-temple" },
@@ -21919,6 +21922,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Built 1936, Sayajirao Gaekwad III's Diamond Jubilee" }, { name: "Murals by Nandalal Bose & Raja Ravi Varma" }, { name: "35m shikhara, Hindu-Jain-Buddhist-Islamic fusion" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "Central Vadodara", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with Laxmi Vilas Palace and Baroda Museum on the same Vadodara heritage day." },
@@ -21928,6 +21932,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the city", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Vadodara", available: true },
     ],
     nearbyPlaces: [
       { name: "Vadodara (Laxmi Vilas Palace)", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
@@ -21970,6 +21975,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Some earthquake-damaged sections remain closed to entry." },
     highlights: [{ name: "Built 18th century by Rao Lakhpatji" }, { name: "Rajputana-Mughal fusion, red sandstone carving" }, { name: "Survived 1819 & 2001 earthquakes, partially" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "Central Bhuj", costRange: "₹50–₹150 (auto within Bhuj)", tips: "Genuinely combinable with Aina Mahal and Prag Mahal on the same Bhuj heritage walk." },
@@ -21979,6 +21985,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Bhuj", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhuj is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "Same city", type: "City", isHidden: false, id: "kutch" },
@@ -22030,6 +22037,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Shamlaji", notes: "Standard way to reach the reservoir site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Shamlaji is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Shamlaji Temple", distance: "~2 km", type: "Temple", isHidden: false, id: "shamlaji-temple" },
