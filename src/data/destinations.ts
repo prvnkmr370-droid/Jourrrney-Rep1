@@ -43218,6 +43218,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Skyview Patnitop Ropeway", cost: "₹500–₹800", notes: "Connects the highway to the upper meadow in about 15 minutes", available: true },
       { mode: "Local Taxi", cost: "₹800–₹2,000", notes: "For Sanasar and other nearby stops", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sanasar", distance: "~19 km", type: "Meadow", isHidden: false, id: "sanasar" },
@@ -43262,6 +43263,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays; parts of the complex remain under restoration." },
     highlights: [
       { name: "The Darbar Hall, the Dogra court's former royal audience chamber" },
       { name: "The Dogra Art Museum's Kangra, Basholi, and Jammu-school paintings" },
@@ -43391,6 +43393,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Keeps more limited hours than Hari Niwas Palace next door — check ahead." },
     highlights: [
       { name: "The 120kg solid gold throne" },
       { name: "The palace's French-chateau architecture" },
@@ -43453,6 +43456,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Some sections remain closed for restoration." },
     highlights: [
       { name: "The fort's river-facing towers and ramparts above the Chenab" },
       { name: "Jia Pota ghat, site of Maharaja Gulab Singh's 1822 coronation" },
@@ -43472,6 +43476,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Akhnoor town", available: true },
       { mode: "Shared Taxi", cost: "₹50–₹100 per seat", notes: "Runs the Jammu–Akhnoor route regularly", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Akhnoor — a shared taxi from Jammu is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bahu Fort", distance: "~28 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
@@ -43534,6 +43539,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Paddle Boat", cost: "₹100–₹200 per ride", notes: "Available on the lake", available: true },
       { mode: "Shared Taxi", cost: "₹80–₹150 per seat", notes: "Runs the Jammu–Mansar route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi from Jammu is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bahu Fort", distance: "~62 km, in Jammu", type: "Fort", isHidden: true, id: "bahu-fort" },
@@ -43596,6 +43602,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Shared Taxi", cost: "₹100–₹250 per seat", notes: "Runs Kathua–Basholi route", available: true },
       { mode: "Private Cab", cost: "₹2,000–₹4,000/day", notes: "Best for reaching the dam viewpoint and Basholi town together", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi from Kathua is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kathua", distance: "~30 km", type: "Town", isHidden: true },
@@ -43639,6 +43646,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "The main Shiva shrine's ~50-foot rekha shikhara tower" },
       { name: "Subsidiary shrines to Ganesha, Vishnu, and Parvati" },
@@ -43658,6 +43666,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹100–₹250", notes: "From Udhampur town to Krimchi village", available: true },
       { mode: "Private Cab", cost: "₹800–₹1,500 round trip", notes: "Easiest way to combine with other Udhampur-area sights", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private cab from Udhampur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Udhampur", distance: "~12 km", type: "Town", isHidden: true },
@@ -43721,6 +43730,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Trekking (on foot)", cost: "N/A", notes: "The only way to reach the lake — no vehicle access", available: true },
       { mode: "Pony/Porter Support", cost: "₹500–₹1,500/day", notes: "Available through trek operators for gear", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — this is a trek-only site with no vehicle access", available: false },
     ],
     nearbyPlaces: [
       { name: "Sonamarg", distance: "Nearby", type: "Hill Station", isHidden: false, id: "sonamarg" },
@@ -43764,6 +43774,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [
       { name: "The fort's bastioned outer walls and hilltop setting" },
       { name: "The twelve-doorway pavilion with valley views" },
@@ -43783,6 +43794,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Reasi town", available: true },
       { mode: "Private Cab", cost: "₹1,500–₹3,000/day", notes: "Best for combining with Vaishno Devi/Katra visits", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Reasi — a private cab is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Shri Mata Vaishno Devi", distance: "~25 km, in Reasi district", type: "Temple", isHidden: true, id: "vaishno-devi-temple" },
@@ -43849,6 +43861,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Private Cab", cost: "₹2,500–₹4,500 round trip", notes: "From Bhaderwah town to Padri", available: true },
       { mode: "Shared Jeep", cost: "₹150–₹300 per seat", notes: "Seasonal, subject to snow/road conditions", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private cab from Bhaderwah town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhaderwah", distance: "~41 km", type: "Town", isHidden: true },
@@ -43892,6 +43905,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "March – November (best in spring and autumn)",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "The twelve zodiac-representing terraces and central water channel" },
       { name: "Chinar and cypress tree avenues, spectacular in autumn" },
@@ -43955,6 +43969,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "March – November (best in spring and autumn)",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "7:00 PM", note: "Open daily; illuminated in the evening during peak season." },
     highlights: [
       { name: "The black-marble baradari pavilion built for Shah Jahan" },
       { name: "The 587-metre Shah Nahar water channel across three terraces" },
@@ -44018,6 +44033,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "March – November (peak bloom May–June)",
     duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "The natural royal spring, reputed for its water quality" },
       { name: "The two-storey Kashmiri hut marking the spring's source" },
@@ -44081,6 +44097,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "March – November",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Security checks apply given the hilltop, sensitive location." },
     highlights: [
       { name: "The Shiva lingam in its circular inner chamber" },
       { name: "The 240-step ascent and octagonal stone base" },
@@ -44144,6 +44161,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "March – November",
     duration: "1 hour",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; the sacred relic is displayed only on specific religious occasions." },
     highlights: [
       { name: "The shrine's white marble dome and minaret" },
       { name: "The Moi-e-Muqqadas relic (displayed only on special occasions)" },
@@ -44226,6 +44244,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony Ride", cost: "₹500–₹1,000", notes: "To Thajiwas Glacier and back", available: true },
       { mode: "Shared Sumo/Taxi", cost: "₹150–₹400 per seat", notes: "From Srinagar or onward toward Baltal/Zoji La", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared Sumo/taxi from Srinagar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vishansar Lake", distance: "~2-day trek", type: "Alpine Lake", isHidden: true, id: "vishansar-lake" },
@@ -44288,6 +44307,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Boat", cost: "₹200–₹500", notes: "For a closer look at the lake and Zainul Lank island", available: true },
       { mode: "Shared Taxi", cost: "₹100–₹250 per seat", notes: "Runs the Srinagar–Bandipora route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi on the Srinagar–Bandipora route is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dal Lake", distance: "~60 km, in Srinagar", type: "Lake", isHidden: true, id: "dal-lake" },
@@ -44350,6 +44370,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi Union Cab", cost: "₹1,500–₹2,500 (Betaab-Aru-Chandanwari combined)", notes: "Fixed-rate sightseeing cabs from Pahalgam", available: true },
       { mode: "Pony Ride", cost: "₹300–₹800", notes: "Available within the valley for short rides", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi-union cab from Pahalgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Aru Valley", distance: "~10 km", type: "Valley", isHidden: true, id: "aru-valley" },
@@ -44413,6 +44434,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi Union Cab", cost: "₹1,200–₹2,000", notes: "Fixed-rate from Pahalgam", available: true },
       { mode: "Pony/Guide Services", cost: "Varies by trek length", notes: "Licensed guide mandatory for onward glacier trekking", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi-union cab from Pahalgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betaab Valley", distance: "~10 km", type: "Valley", isHidden: true, id: "betaab-valley" },
@@ -44475,6 +44497,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi Union Cab", cost: "₹1,500–₹2,500", notes: "Fixed-rate from Pahalgam", available: true },
       { mode: "Pony/Palki (Yatra season)", cost: "Regulated Yatra rates", notes: "For onward pilgrimage travel beyond Chandanwari", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a local taxi-union cab from Pahalgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betaab Valley", distance: "~5 km", type: "Valley", isHidden: true, id: "betaab-valley" },
@@ -44537,6 +44560,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony Ride", cost: "₹800–₹1,500 round trip", notes: "The standard way up from Pahalgam, roughly an hour each way", available: true },
       { mode: "On Foot", cost: "Free", notes: "A manageable uphill walk for fitter visitors, roughly 1.5–2 hours", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — pony or the uphill walk from Pahalgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pahalgam", distance: "~5 km", type: "Hill Station", isHidden: false, id: "pahalgam" },
@@ -44712,6 +44736,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Nature"],
     bestSeason: "March – November (Maha Shivratri in Feb/March draws the largest crowds)",
     duration: "2–3 hours (including the cave walk)",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily; the cave crawl-through has its own queue-managed timings in peak season." },
     highlights: [
       { name: "The self-formed, \"unending\" natural Shiva lingam" },
       { name: "Natural rock formations resembling Parvati, Ganesha, and Nandi" },
@@ -44731,6 +44756,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony/Palki", cost: "₹300–₹800", notes: "From Ransoo base camp to the cave entrance", available: true },
       { mode: "Private Cab", cost: "₹2,000–₹4,000/day", notes: "Best for combining with Katra/Vaishno Devi", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a private cab is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhimgarh Fort", distance: "~30 km", type: "Fort", isHidden: true, id: "bhimgarh-fort" },
@@ -44793,6 +44819,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Paragliding Operators", cost: "₹1,500–₹3,000 per tandem flight", notes: "Licensed operators at the meadow", available: true },
       { mode: "Shared Taxi", cost: "₹100–₹250 per seat", notes: "Runs the Patnitop–Sanasar route", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi on the Patnitop–Sanasar route is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patnitop", distance: "~20 km", type: "Hill Station", isHidden: true, id: "patnitop" },
@@ -44840,6 +44867,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "March – November",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [
       { name: "The fort's mixed Mughal, Sikh, Dogra, and European architecture" },
       { name: "Interconnected courtyards across the ~7,500 sq m complex" },
@@ -44859,6 +44887,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Available within Poonch town", available: true },
       { mode: "Local Taxi", cost: "₹500–₹1,500/day", notes: "For exploring Poonch town and nearby sights", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Poonch town — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Poonch town centre", distance: "Within town", type: "Town", isHidden: true },
@@ -44921,6 +44950,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony Ride", cost: "₹300–₹700", notes: "For exploring the wider meadow", available: true },
       { mode: "Shared Taxi", cost: "₹150–₹350 per seat", notes: "Runs from Srinagar/Budgam", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi from Srinagar/Budgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Yusmarg", distance: "~35 km", type: "Meadow", isHidden: true, id: "yusmarg" },
@@ -44983,6 +45013,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Pony Ride", cost: "₹400–₹900", notes: "Popular for the meadow and toward Nilnag Lake", available: true },
       { mode: "Shared Taxi", cost: "₹150–₹350 per seat", notes: "Runs from Srinagar/Budgam", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a shared taxi from Srinagar/Budgam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Doodhpathri", distance: "~35 km", type: "Meadow", isHidden: true, id: "doodhpathri" },
