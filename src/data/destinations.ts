@@ -14896,6 +14896,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; annual feast on the first Sunday of May, with a 9-day novena",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "Goa's finest Neo-Gothic church" }, { name: "Miraculous wooden Mother of God statue" }, { name: "First-Sunday-of-May feast & 9-day novena" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Calangute/Saligao — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Calangute", costRange: "₹150–₹400 (auto/cab)", tips: "Genuinely distinctive-looking among Goa's churches — its Gothic spires stand out from the Baroque norm." },
@@ -14905,6 +14906,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400 (taxi)", notes: "Standard way to get around this part of North Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Calangute", available: true },
     ],
     nearbyPlaces: [
       { name: "Baga & Calangute", distance: "~5 km", type: "Beach", isHidden: false, id: "baga-calangute" },
@@ -14947,6 +14949,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Festa dos Reis Magos (6 January) is a distinctive real festival",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "Bardez taluka's first church (1555)" }, { name: "Portuguese-viceroy tombs" }, { name: "Festa dos Reis Magos — one of only 3 in Goa" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~15min from Panaji, across the Mandovi", costRange: "₹200–₹500 (auto/cab)", tips: "Right by Reis Magos Fort — combine both in one visit." },
@@ -14956,6 +14959,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Panaji", notes: "The practical way to reach Verem", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage this close to Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Reis Magos Fort", distance: "Adjoining", type: "Fort", isHidden: true, id: "reis-magos-fort" },
@@ -15008,6 +15012,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹500 from Margao", notes: "The practical way to reach Rachol", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage this close to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Margao town", distance: "~5 km", type: "Town", isHidden: true },
@@ -15067,6 +15072,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "4x4 Jeep Safari", cost: "₹500–₹1,500 per jeep (shared)", notes: "Hired at Kulem, the standard way to get closer before the final trek", available: true },
       { mode: "Trekking", cost: "Free (guide optional)", notes: "A genuine trek option for the more adventurous, all the way from Kulem", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this wildlife-sanctuary interior — a hired jeep from Kulem is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahadev Temple, Tambdi Surla", distance: "Within the same wildlife sanctuary area", type: "Temple", isHidden: false, id: "mahadev-temple-tambdi-surla" },
@@ -15119,6 +15125,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the falls", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Shri Rudreshwar Temple", distance: "Right next door", type: "Temple", isHidden: false, id: "shri-rudreshwar-temple" },
@@ -15170,6 +15177,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the springs", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Vasco", available: true },
     ],
     nearbyPlaces: [
       { name: "Vasco da Gama town", distance: "~10 km", type: "Town", isHidden: true },
