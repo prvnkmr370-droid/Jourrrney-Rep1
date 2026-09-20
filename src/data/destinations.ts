@@ -3351,6 +3351,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Bike/Scooter", cost: "₹500–₹800/day", notes: "Available in Hapoli for exploring the valley at your own pace", available: true },
       { mode: "Walking", cost: "Free", notes: "The valley floor and village lanes are genuinely walkable between paddies", available: true },
       { mode: "Private Taxi", cost: "₹1,500–₹2,500/day", notes: "For a full-day village-and-viewpoint circuit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi or shared Sumo is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hong Village (one of Asia's largest villages)", distance: "5 km", type: "Culture", isHidden: true },
@@ -3418,6 +3419,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Sumo/Taxi", cost: "₹100–₹300 per hop", notes: "Connects the town centre to the monasteries and Craft Centre", available: true },
       { mode: "Walking", cost: "Free", notes: "The town centre and main monastery complex are walkable", available: true },
       { mode: "Private Taxi", cost: "₹1,500–₹2,500/day", notes: "For day trips to Eaglenest or nearby viewpoints", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dirang (apple/kiwi orchard town)", distance: "40 km", type: "Nature", isHidden: true },
@@ -7883,6 +7885,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Sumo/Jeep", cost: "₹300–₹800", notes: "Main way to get between Tawang, Bomdila, and Dirang", available: true },
       { mode: "Hired Cab (full day)", cost: "₹2,500–₹4,000/day", notes: "For Sela Pass, Madhuri Lake, and monastery-hopping around Tawang", available: true },
       { mode: "Walking", cost: "Free", notes: "Tawang Monastery complex and the town centre are walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi or shared Sumo is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sela Pass", distance: "78 km from Tawang", type: "High-Altitude Mountain Pass", isHidden: false },
