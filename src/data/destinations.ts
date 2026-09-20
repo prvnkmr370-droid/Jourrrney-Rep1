@@ -42401,6 +42401,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage"],
     bestSeason: "March – June, September – November",
     duration: "2–3 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily; some inner areas restrict photography." },
     highlights: [{ name: "Bhimakali Temple's twin-tower architecture" }, { name: "Views toward the Kinnaur Himalaya" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shimla Airport (Jubbarhatti), ~23 km from Shimla — limited seasonal flights; Chandigarh Airport (~115 km) is the reliable option", fromMumbai: "Via Delhi or Chandigarh, then road", fromBangalore: "Via Delhi or Chandigarh, then road", duration: "~2h to Chandigarh + 3h road", costRange: "₹3,000–₹10,000", tips: "Jubbarhatti's flight schedule is thin and weather-dependent — most travelers fly into Chandigarh and drive up." },
@@ -42416,6 +42417,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Sarahan — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "171 km", type: "Hill Station", isHidden: false, id: "shimla" }, { name: "Kinnaur (Reckong Peo)", distance: "~100 km", type: "Town", isHidden: false, id: "kinnaur" }],
     budgetBreakdown: [
@@ -42469,6 +42471,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Tattapani — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "53 km", type: "Hill Station", isHidden: false, id: "shimla" }],
     budgetBreakdown: [
@@ -42522,6 +42525,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Narkanda — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Shimla", distance: "65 km", type: "Hill Station", isHidden: false, id: "shimla" }],
     budgetBreakdown: [
@@ -42575,6 +42579,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage at the lake — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Paonta Sahib", distance: "50 km (via Sataun)", type: "Gurudwara Town", isHidden: false, id: "paonta-sahib" }, { name: "Sirmaur (Nahan)", distance: "~40 km", type: "Town", isHidden: false, id: "sirmaur" }],
     budgetBreakdown: [
@@ -42628,6 +42633,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote Spiti village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Spiti Valley (Kaza)", distance: "16 km", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Hikkim", distance: "~1 km", type: "Village", isHidden: false, id: "hikkim" }],
     budgetBreakdown: [
@@ -42666,6 +42672,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Unexplored"],
     bestSeason: "May – October",
     duration: "30–45 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "4:00 PM", note: "Closed Sundays; only accessible during the May–October road season." },
     highlights: [{ name: "The world's highest post office" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "No local airport — Bhuntar (Kullu) or Shimla are the nearest, both still a long road journey away", fromMumbai: "Via Delhi, then Bhuntar/Shimla, then a long mountain road", fromBangalore: "Via Delhi, then Bhuntar/Shimla, then a long mountain road", duration: "A full extra day of road travel beyond the flight", costRange: "₹4,000–₹12,000 (flight leg)", tips: "This is genuinely remote high-Himalaya terrain — budget real time for the road legs, not just the flight." },
@@ -42681,6 +42688,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-altitude village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Langza", distance: "~1 km", type: "Village", isHidden: false, id: "langza" }, { name: "Spiti Valley (Kaza)", distance: "17 km", type: "Town", isHidden: false, id: "spiti-valley" }],
     budgetBreakdown: [
@@ -42734,6 +42742,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on this high mountain pass — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Spiti Valley (Kaza)", distance: "75 km", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Lahaul Valley (Keylong)", distance: "110 km", type: "Valley", isHidden: false, id: "lahaul-valley" }, { name: "Chandratal Lake", distance: "~22 km", type: "Lake", isHidden: false, id: "chandratal-lake" }],
     budgetBreakdown: [
