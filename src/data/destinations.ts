@@ -68151,6 +68151,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Jeep/SUV from Baghmara", cost: "Arranged locally in Baghmara or Tura", notes: "No public transport serves the park — a hired vehicle is essential given the rough terrain", available: true },
       { mode: "Local Guide (Highly Recommended)", cost: "Arranged in Baghmara", notes: "Recommended for navigation, cave exploration, and cultural/language insight", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the South Garo Hills — a hired jeep/SUV from Baghmara or Tura is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tura Peak", distance: "~85 km", type: "Peak", isHidden: true, id: "tura-peak" },
@@ -68212,6 +68213,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (Required)", cost: "Arranged in Daribokgre", notes: "Always hire a local guide for safe exploration — trails can be moderately challenging with limited network coverage", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the West Garo Hills — a hired vehicle from Tura or Shillong is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tura Peak", distance: "~30 km", type: "Peak", isHidden: false, id: "tura-peak" },
@@ -68274,6 +68276,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Cab/Shared Sumo from Baghmara", cost: "Local fare, ~1.5 hours through forested terrain", notes: "A short trek through forested trails leads to the sanctuary entrance across the Simsang River", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in Baghmara", notes: "Advisable for navigation and language, per the tourism board's own guidance", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the South Garo Hills — a local cab or shared sumo from Baghmara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tura Peak", distance: "~125 km", type: "Viewpoint & Trek", isHidden: true, id: "tura-peak" },
