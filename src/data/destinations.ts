@@ -3449,6 +3449,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹300", notes: "Widely available around town and the boat jetty", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A genuinely good way to explore the canal town at a slower pace", available: true },
       { mode: "Walking", cost: "Free", notes: "Beach, pier, and town-centre areas are walkable", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400", notes: "Both list Alappuzha as serviceable (Ola autos/cars, Uber's on-demand hire), though coverage is thinner than in Kochi — autos are still the more reliable local option", available: true },
     ],
     nearbyPlaces: [
       { name: "Kumarakom Bird Sanctuary", distance: "16 km", type: "Nature", isHidden: true, id: "kumarakom-bird-sanctuary" },
@@ -24890,6 +24891,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Canoe/Country Boat", cost: "₹500–₹1,500 per person (approx.)", notes: "The classic way to explore Kuttanad's narrow paddy-field canals", available: true },
       { mode: "Houseboat", cost: "₹8,000–₹20,000/night (shared or private)", notes: "Combines transport and accommodation through the backwaters", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage across Kuttanad's scattered paddy-field villages is unconfirmed — a hired taxi from Alleppey, canoe or houseboat is the practical way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Alleppey", distance: "~30 km", type: "Backwater Town", isHidden: false, id: "alleppey" },
@@ -24947,6 +24949,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Alleppey", notes: "Standard way to reach Marari", available: true },
+      { mode: "Ola / Uber", cost: "₹250–₹500 one-way from Alleppey", notes: "Bookable from Alleppey, though autos are the more typical local option for this short hop", available: true },
     ],
     nearbyPlaces: [
       { name: "Alleppey", distance: "~11 km", type: "Backwater Town", isHidden: false, id: "alleppey" },
@@ -24986,6 +24989,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kumarakom_Bird_Sanctuary_01.jpg/1280px-Kumarakom_Bird_Sanctuary_01.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kumarakom_Bird_Sanctuary_01.jpg/1280px-Kumarakom_Bird_Sanctuary_01.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Watch_tower_in_Kumarakom_Bird_Sanctuary_2.jpg/1280px-Watch_tower_in_Kumarakom_Bird_Sanctuary_2.jpg"],
     imageCredit: "Photos: Ganesh Mohan T, Ganesh Mohan T — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "6:30 AM", closes: "5:00 PM", note: "Early morning, roughly 6–8 AM, is the best window for birdwatching activity." },
     category: ["Nature"],
     bestSeason: "November – February (peak migratory season)",
     duration: "2–3 hours",
@@ -25004,6 +25008,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Kochi", notes: "Standard way to reach Kumarakom", available: true },
       { mode: "Boat/Houseboat", cost: "Varies by package", notes: "A scenic alternative approach via Vembanad Lake", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kumarakom is unconfirmed — a hired taxi from Kochi or a houseboat/boat transfer is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi", distance: "~50 km", type: "City", isHidden: false, id: "kochi" },
@@ -25175,6 +25180,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat/Houseboat", cost: "₹500–₹1,500 per person (approx.)", notes: "The only way to reach the island", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the island has no road access at all; a boat or houseboat from Alleppey is the only way over", available: false },
     ],
     nearbyPlaces: [
       { name: "Alleppey", distance: "~12 km", type: "Backwater Town", isHidden: false, id: "alleppey" },
@@ -25229,6 +25235,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹300", notes: "Standard way to get around town", available: true },
       { mode: "Boat", cost: "Varies by package", notes: "For exploring the district's backwater areas", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹350", notes: "Both operate in Kottayam town, though Ola/Uber coverage in Kerala is largely limited to the bigger cities", available: true },
     ],
     nearbyPlaces: [
       { name: "Kumarakom Bird Sanctuary", distance: "~16 km", type: "Nature", isHidden: true, id: "kumarakom-bird-sanctuary" },
@@ -54114,6 +54121,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Ferry / Boat", cost: "₹20–₹1,500", notes: "Autos in the city; state and private ferries and cruise boats from the Kollam boat jetty", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹350", notes: "Both operate in Kollam city, though Ola/Uber coverage in Kerala is largely limited to the bigger towns", available: true },
     ],
     nearbyPlaces: [
       { name: "Alleppey", distance: "~85 km", type: "Backwater Hub", isHidden: false, id: "alleppey" },
@@ -54642,6 +54650,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat / Auto", cost: "₹200–₹1,500", notes: "Boats from the Poovar jetty to the sandbar and resorts; autos on the mainland", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹700 one-way from Trivandrum", notes: "Bookable to the Poovar jetty from the city; the sandbar and resorts themselves are boat-only", available: true },
     ],
     nearbyPlaces: [
       { name: "Kovalam Beach", distance: "~15 km", type: "Beach", isHidden: false, id: "kovalam-beach" },
@@ -54902,6 +54911,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Canoe / Country Boat / Cycle", cost: "₹300–₹1,500", notes: "Village canoe and country-boat tours (often run by the homestays); cycles for the lanes", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on Munroe Island is unconfirmed — a hired taxi from Kollam, or the scenic boat route, is the practical way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Kollam & Ashtamudi Lake", distance: "~25 km", type: "Backwater City", isHidden: false, id: "kollam-ashtamudi" },
@@ -55013,6 +55023,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Aranmula_boat_race_2.jpg/1280px-Aranmula_boat_race_2.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the entrance of the Aranmula Parthasarathy Temple (CC BY-SA 3.0) and a Palliyodam snake boat on the Pamba during the Aranmula Vallamkali (CC BY-SA 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "8:00 PM", note: "Closed for a midday break, roughly 11 AM–5 PM; the Vallamkali and Onam season draw much larger crowds with their own schedule." },
     category: ["Religious", "Heritage", "Art & Culture"],
     bestSeason: "September – March (Vallamkali during Onam, Aug–Sep)",
     duration: "Half day to 1 day",
@@ -55032,6 +55043,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Walking", cost: "₹30–₹300", notes: "The temple, river ghat, and mirror workshops are close together; autos from Chengannur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Aranmula is unconfirmed — autos from Chengannur are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kottayam", distance: "~35 km", type: "Backwater Town", isHidden: false, id: "kottayam" },
@@ -58977,6 +58989,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Canoe / Cycle", cost: "₹30–₹600", notes: "Autos from the city / Kovalam; canoe and small boat rides on the lake; the bund roads are good for cycling", available: true },
+      { mode: "Ola / Uber", cost: "₹150–₹350 one-way from Trivandrum", notes: "Bookable from central Thiruvananthapuram or Kovalam, this close to the city", available: true },
     ],
     nearbyPlaces: [
       { name: "Kovalam Beach", distance: "~6 km", type: "Beach", isHidden: false, id: "kovalam-beach" },
@@ -59090,6 +59103,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Valiyaparamba_Madakkal_suspension_bridge.JPG/1280px-Valiyaparamba_Madakkal_suspension_bridge.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — a palm-fringed island reflected in the Kavvayi–Valiyaparamba backwaters (CC BY-SA 4.0), and the Madakkal suspension footbridge over the Valiyaparamba backwater (CC BY 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "10:00 AM", closes: "4:00 PM", note: "For the main cruise window from the boat terminals; shorter two-hour trips run more flexibly." },
     category: ["Backwaters", "Nature", "Scenic"],
     bestSeason: "October – March",
     duration: "Half day (2-hour or full-day cruise); more with a houseboat overnight",
@@ -59109,6 +59123,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Houseboat / country boat / public ferry", cost: "₹40 (public ferry) – ₹12,000+ (private houseboat day)", notes: "Cruises and country boats from the terminals; public ferries also cross between the islands and the mainland", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage around the Valiyaparamba terminals is unconfirmed — a hired taxi from Bekal or Nileshwar is the practical way to reach the boat jetties", available: false },
     ],
     nearbyPlaces: [
       { name: "Bekal Fort", distance: "~20 km", type: "Seaside Fort", isHidden: false, id: "bekal-fort" },
