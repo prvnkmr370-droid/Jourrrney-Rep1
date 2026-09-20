@@ -40939,6 +40939,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Connects Chamba, Dalhousie, and Khajjiar", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed local taxi-union rates, common across this circuit", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote valley villages", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Khajjiar — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Dalhousie", distance: "22 km", type: "Hill Station", isHidden: false, id: "dalhousie" }, { name: "Chamba", distance: "26 km", type: "Heritage Town", isHidden: false, id: "chamba" }],
     budgetBreakdown: [
@@ -40992,6 +40993,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-Himalaya village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Kinnaur (Reckong Peo)", distance: "13 km", type: "Town", isHidden: false, id: "kinnaur" }, { name: "Sangla Valley", distance: "~50 km", type: "Valley", isHidden: false, id: "sangla-valley" }],
     budgetBreakdown: [
@@ -41045,6 +41047,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote valley — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Kinnaur (Reckong Peo)", distance: "38 km", type: "Town", isHidden: false, id: "kinnaur" }, { name: "Chitkul", distance: "~27 km", type: "Border Village", isHidden: false, id: "chitkul" }],
     budgetBreakdown: [
@@ -41098,6 +41101,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote border village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Sangla Valley", distance: "~27 km", type: "Valley", isHidden: false, id: "sangla-valley" }, { name: "Kinnaur (Reckong Peo)", distance: "65 km", type: "Town", isHidden: false, id: "kinnaur" }],
     budgetBreakdown: [
@@ -41136,6 +41140,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["m", "o", "n", "a", "s", "t", "e", "r", "y"],
     bestSeason: "May – October",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The stacked-cube cliffside architecture" }, { name: "Ancient murals and thangkas" }, { name: "The active monastic community" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "No local airport — Bhuntar (Kullu) or Shimla are the nearest, both still a long road journey away", fromMumbai: "Via Delhi, then Bhuntar/Shimla, then a long mountain road", fromBangalore: "Via Delhi, then Bhuntar/Shimla, then a long mountain road", duration: "A full extra day of road travel beyond the flight", costRange: "₹4,000–₹12,000 (flight leg)", tips: "This is genuinely remote high-Himalaya terrain — budget real time for the road legs, not just the flight." },
@@ -41151,6 +41156,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this high up — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Spiti Valley (Kaza)", distance: "12 km", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Kibber", distance: "~6 km further", type: "Village", isHidden: false, id: "kibber" }],
     budgetBreakdown: [
@@ -41204,6 +41210,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage near this remote high-altitude lake — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Spiti Valley (Kaza)", distance: "98 km", type: "Town", isHidden: false, id: "spiti-valley" }],
     budgetBreakdown: [
@@ -41257,6 +41264,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-altitude village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Spiti Valley (Kaza)", distance: "18 km", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Key Monastery", distance: "~6 km", type: "Monastery", isHidden: false, id: "key-monastery" }],
     budgetBreakdown: [
