@@ -5038,6 +5038,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹50–₹250", notes: "Widely available connecting the town, fort, and beaches", available: true },
       { mode: "Taxi/Cab", cost: "₹800–₹1,500/day", notes: "For a full-day island circuit", available: true },
       { mode: "Walking", cost: "Free", notes: "Diu's old town and fort area are compact and walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — rented scooters and autos are the standard way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu Fort", distance: "Diu town", type: "Fort", isHidden: false, id: "diu-fort", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fort%2C_Diu.JPG/1280px-Fort%2C_Diu.JPG" },
@@ -5101,6 +5102,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open fort grounds." },
     highlights: [{ name: "Sea-facing bastions & cannons" }, { name: "Lighthouse" }, { name: "Former sub-jail" }, { name: "Panoramic sea views" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h via Ahmedabad", fromBangalore: "Long haul", duration: "In Diu town", costRange: "₹50–₹200 (auto within town)", tips: "Walkable from most Diu town hotels." },
@@ -5116,6 +5118,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The fort interior is fully walkable", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Diu town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — autos are widely available in Diu town", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Thomas Church Museum", distance: "Nearby in Diu town", type: "Museum", isHidden: true, id: "st-thomas-church-museum" },
@@ -5182,6 +5185,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The easiest way to reach and explore around Nagoa", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹150–₹400 from Diu town", notes: "Alternative to a rented scooter", available: true },
       { mode: "Water Sports (Jet Ski, Banana Boat)", cost: "₹300–₹1,000 per activity", notes: "Operators are present on the beach seasonally", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a rented scooter or cab from Diu town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu town centre", distance: "~8 km", type: "Town", isHidden: false, id: "diu" },
@@ -5244,6 +5248,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The easiest way to reach Ghoghla", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹200–₹500 from Diu town", notes: "Alternative to a rented scooter", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a rented scooter or cab from Diu town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu town centre", distance: "~15 km", type: "Town", isHidden: false, id: "diu" },
@@ -5308,6 +5313,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The easiest way to reach Chakratirth", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹100–₹300 from Diu town", notes: "Alternative to a rented scooter", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a rented scooter or cab from Diu town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "INS Khukri Memorial Museum", distance: "On the beach's hillock", type: "Naval Museum", isHidden: false, id: "ins-khukri-memorial" },
@@ -5356,6 +5362,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Museum"],
     bestSeason: "Year-round; check current museum hours before visiting",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Converted to a full ship museum relatively recently — confirm current hours/ticketing before visiting." },
     highlights: [{ name: "INS Khukri (P49) — real decommissioned warship, now a museum" }, { name: "1999 hillock memorial & plaque" }, { name: "1971 war history exhibits" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu, then ~10min further", fromBangalore: "Long haul", duration: "At Chakratirth Beach", costRange: "₹100–₹300 (auto/cab from Diu town)", tips: "Confirm current opening hours/ticketing before visiting, since it converted to a full ship museum relatively recently." },
@@ -5371,6 +5378,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "On the hillock at Chakratirth Beach", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹100–₹300 from Diu town", notes: "The practical way to reach it", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a cab from Diu town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chakratirth Beach", distance: "Same location", type: "Beach", isHidden: false, id: "chakratirth-beach" },
@@ -5420,6 +5428,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Christmas services draw the largest crowds",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Outside scheduled Mass times." },
     highlights: [{ name: "Baroque facade & shell-motif carving" }, { name: "Active parish church" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town", costRange: "₹50–₹200 (auto within town)", tips: "Easy to combine with Diu Fort and the Zampa Gateway, all within the old town." },
@@ -5434,6 +5443,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu's old town", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu Fort", distance: "Nearby in old town", type: "Fort", isHidden: false, id: "diu-fort" },
@@ -5496,6 +5506,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu's old town", available: false },
     ],
     nearbyPlaces: [
       { name: "Naida Caves", distance: "Nearby, along Vijaypath Road", type: "Rock Formation", isHidden: true, id: "naida-caves" },
@@ -5560,6 +5571,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu's old town", available: false },
     ],
     nearbyPlaces: [
       { name: "Zampa Gateway", distance: "Right nearby", type: "Heritage Gateway", isHidden: true, id: "zampa-gateway" },
@@ -5621,6 +5633,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The easiest way to reach the temple", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹100–₹250 from Diu town", notes: "Alternative to a rented scooter", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a rented scooter or cab from Diu town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu town centre", distance: "~3 km", type: "Town", isHidden: false, id: "diu" },
@@ -5670,6 +5683,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed some weekdays — check locally." },
     highlights: [{ name: "Colonial church architecture" }, { name: "Archaeological/stone-sculpture collection" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town", costRange: "₹50–₹200 (auto within town)", tips: "Easy to combine with Diu Fort and St. Paul Church, all nearby in old town." },
@@ -5684,6 +5698,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu's old town", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu Fort", distance: "Nearby in old town", type: "Fort", isHidden: false, id: "diu-fort" },
@@ -5748,6 +5763,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The practical way to reach this more remote beach", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹300–₹600 from Diu town", notes: "Alternative to a rented scooter", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this far outside Diu town — a rented scooter or cab hired in town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu town centre", distance: "~13 km", type: "Town", isHidden: false, id: "diu" },
@@ -5812,6 +5828,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "For shore/rampart viewing from Diu Fort", available: true },
       { mode: "Boat (if arranged)", cost: "Varies — arrange locally", notes: "For closer access to the sea fort itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu Fort/old town for shore viewing", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu Fort", distance: "Adjoining, in the same harbour", type: "Fort", isHidden: false, id: "diu-fort" },
@@ -5857,6 +5874,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Outside scheduled Mass times." },
     highlights: [{ name: "1593 Franciscan friary" }, { name: "184 years as a working hospital (historic)" }, { name: "Raised platform & 20-step staircase" }, { name: "Stone vaulted dome" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town, near St. Paul Church", costRange: "₹50–₹200 (auto within town)", tips: "Combine with St. Paul Church — they're close together in old town." },
@@ -5871,6 +5889,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Diu's walkable old town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — reachable on foot within Diu's old town", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Paul Church", distance: "Very close by", type: "Church", isHidden: false, id: "st-paul-church-diu" },
@@ -5931,6 +5950,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Useful for an early dawn visit before other transport options are running", available: true },
       { mode: "Auto Rickshaw / Cab", cost: "₹150–₹400 from Diu town", notes: "Alternative to a rented scooter", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage on the island is unconfirmed — a rented scooter or cab from Diu town is the standard option, useful for reaching the sanctuary before dawn", available: false },
     ],
     nearbyPlaces: [
       { name: "Diu town centre", distance: "A short drive", type: "Town", isHidden: false, id: "diu" },
