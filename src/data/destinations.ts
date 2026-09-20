@@ -67072,6 +67072,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking within the village", cost: "Free", notes: "Mawlynnong is compact and walkable once you're there", available: true },
       { mode: "Shared Sumo/Taxi via Pynursla", cost: "Varies by season/demand", notes: "The standard route from Shillong", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates this far from Shillong — a shared sumo or hired taxi via Pynursla is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nohkalikai Falls", distance: "~50 km", type: "Waterfall", isHidden: true, id: "nohkalikai-falls" },
@@ -67309,6 +67310,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On Foot (the only way in)", cost: "Free — just stamina", notes: "Roughly 3,000–3,500 stone steps each way; a local guide is advisable for navigation and pacing", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage — a cab from Sohra to Tyrna village is standard, but the valley itself is reached only on foot", available: false },
     ],
     nearbyPlaces: [
       { name: "Nohkalikai Falls", distance: "~15 km (from Sohra)", type: "Waterfall", isHidden: true, id: "nohkalikai-falls" },
@@ -67359,6 +67361,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Culture"],
     bestSeason: "October – March (dry season)",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "A small, locally-guided village visit — arrange your guide in advance through the named local contacts." },
     highlights: [{ name: "A root bridge with an unusual reinforced aerial-root structure" }, { name: "Orange orchards around the village" }, { name: "Nearby waterfalls for a refreshing detour" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~103 km from Padu — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~208 km) or Shillong Airport (~103 km), then road via Amlarem", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "One of the more remote root-bridge villages — plan for a full day from Shillong." },
@@ -67369,6 +67372,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (arranged via named contacts)", cost: "Arrange through Costlymore P. Hayong or the Kudengrim Tourism Office", notes: "A genuinely small, locally-run guiding network rather than a large commercial operation", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates this far from Shillong — a hired taxi from Shillong via Amlarem is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nongbareh", distance: "~15 km", type: "Living Root Bridge Village", isHidden: false, id: "nongbareh" },
@@ -67424,6 +67428,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (essential)", cost: "Arranged locally", notes: "The War-Jaintia language barrier makes a guide genuinely necessary, not just convenient", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates this far from Shillong — a shared sumo or hired taxi via Amlarem is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Padu Living Root Bridge", distance: "~15 km", type: "Living Root Bridge", isHidden: false, id: "padu-root-bridge" },
@@ -67479,6 +67484,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On Foot (main trail)", cost: "Free", notes: "A roughly 20-minute hike from the village to the main waterfall/root bridge area", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates this far from Shillong — a hired taxi via Amlarem is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Krang Suri Falls", distance: "~15 km", type: "Waterfall", isHidden: true, id: "krang-suri-falls" },
@@ -67539,6 +67545,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided Trek (root-bridge architect-led)", cost: "Arranged via tour operators", notes: "This experience is specifically built around expert guiding, not independent exploration", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Sohra — tour operators arrange all transport for this guided trek", available: false },
     ],
     nearbyPlaces: [
       { name: "Nongriat", distance: "Variable (same southern plateau region)", type: "Living Root Bridge Village", isHidden: true, id: "nongriat" },
