@@ -69420,6 +69420,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On Foot (Trek)", cost: "N/A", notes: "The valley itself has no vehicle access — every stretch is walked", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a local taxi from Kohima to the Viswema trailhead is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dzükou Valley (Manipur side)", distance: "Same valley, across the state border", type: "Valley", isHidden: false, id: "dzuko-valley" },
@@ -69480,6 +69481,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "N/A", notes: "The village and its immediate surroundings are best explored on foot", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in the village", notes: "Useful for the sanctuary trails and understanding the village's history", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a local taxi from Kohima is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kohima War Cemetery", distance: "~20 km", type: "War Memorial", isHidden: true, id: "kohima-war-cemetery" },
@@ -69530,6 +69532,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Heritage"],
     bestSeason: "December 1–10 for the Hornbill Festival; October – April otherwise for pleasant weather",
     duration: "Half day (much longer during the Hornbill Festival)",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Extended hours and a full events schedule during the Hornbill Festival (Dec 1–10)." },
     highlights: [{ name: "Traditional Morung houses of every officially recognised Naga tribe" }, { name: "The annual Hornbill Festival, the 'Festival of Festivals'" }, { name: "A WWII Museum and Bamboo Heritage Hall" }, { name: "Live music, craft, and food during festival season" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road via Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road via Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Book Hornbill Festival accommodation in Kohima well in advance — it's the state's busiest tourism week." },
@@ -69540,6 +69543,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Kohima", cost: "Fare varies by arrangement", notes: "The standard way to reach Kisama", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a local taxi from Kohima is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khonoma Village", distance: "A drive via Kohima", type: "Heritage Village", isHidden: true, id: "khonoma-village" },
@@ -69599,6 +69603,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Wokha", cost: "Fare varies by arrangement", notes: "The standard way to reach the reservoir viewing points", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a local taxi from Wokha is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wokha town", distance: "~38 km", type: "Town", isHidden: true },
@@ -69657,6 +69662,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "N/A", notes: "The small village and its trails are explored entirely on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a hired private vehicle from Kohima is the only way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Khonoma Village", distance: "~40 km", type: "Heritage Village", isHidden: true, id: "khonoma-village" },
@@ -69717,6 +69723,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "N/A", notes: "The village and the Kapamodzü trek are explored entirely on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — a hired vehicle is the only way to reach the village", available: false },
     ],
     nearbyPlaces: [
       { name: "Phek town", distance: "Within Phek district", type: "Town", isHidden: true },
@@ -69766,6 +69773,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – April (pleasant weather); year-round for visits",
     duration: "1–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:30 PM", note: "Commonwealth War Graves Commission-managed; open daylight hours." },
     highlights: [{ name: "A Commonwealth War Graves Commission cemetery, established 1946" }, { name: "~1,420 graves from the pivotal 1944 Battle of Kohima" }, { name: "Terraced across the actual hillside battle site" }, { name: "A memorial wall and individually inscribed headstones" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Dimapur Airport, then road to Kohima", fromMumbai: "Via Kolkata/Guwahati, then road", fromBangalore: "Via Kolkata/Guwahati, then road", duration: "Fly into Dimapur, then road to Kohima", costRange: "₹4,000–₹14,000 airfare to Dimapur", tips: "Located within Kohima town — an easy stop on any city visit." },
@@ -69776,6 +69784,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "Affordable, widely available in Kohima", notes: "A short ride within central Kohima", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Nagaland — local taxis and autos are the standard option within Kohima", available: false },
     ],
     nearbyPlaces: [
       { name: "Naga Heritage Village (Kisama)", distance: "~10 km", type: "Heritage Complex", isHidden: true, id: "naga-heritage-village-kisama" },
