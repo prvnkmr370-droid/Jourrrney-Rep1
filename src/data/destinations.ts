@@ -13240,6 +13240,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Dussehra is the major annual festival",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "500+ year old shrine" }, { name: "Black-stone elephant statues at the entrance" }, { name: "Dussehra festival (25,000+ devotees, a full lunar month)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Thivim/Pernem — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Pernem town", costRange: "₹100–₹300 (auto/cab from Pernem)", tips: "Easy to combine with a visit to Arambol or other far-North Goa beaches." },
@@ -13249,6 +13250,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹100–₹300/hop (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable coverage near Pernem town", available: true },
     ],
     nearbyPlaces: [
       { name: "Arambol", distance: "~15 km", type: "Beach", isHidden: false, id: "arambol" },
@@ -13291,6 +13293,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "Year-round; evenings for the illuminated temple",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Open daily; the nighttime illumination is a genuine draw." },
     highlights: [{ name: "Modern architectural design" }, { name: "Designer nighttime lighting" }, { name: "On the BITS Pilani Goa campus" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Dabolim — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~5min from Dabolim Airport", costRange: "₹100–₹300 (auto/cab)", tips: "Genuinely close to the airport — an easy add-on if you have time before a flight." },
@@ -13300,6 +13303,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Widely available in the Vasco/Zuarinagar area", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable coverage near Vasco/Dabolim", available: true },
     ],
     nearbyPlaces: [
       { name: "Bogmalo Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "bogmalo" },
@@ -13341,6 +13345,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Offbeat"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "One of only 2 Brahma temples in India" }, { name: "12th-century Kadamba-period idol" }, { name: "Smuggled from Old Goa in 1541 (real history)" }, { name: "Streamside setting" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda/Valpoi — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~1h from Panaji, ~15min from Valpoi", costRange: "₹1,000–₹1,800 (cab from Panaji)", tips: "A genuinely offbeat, rewarding detour into inland Goa — remote enough that few tourists make the trip." },
@@ -13350,6 +13355,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "The practical way to reach this remote temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote inland village — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Valpoi town", distance: "~10 km", type: "Town", isHidden: true },
@@ -13392,6 +13398,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Navratri/Dussehra and the spring Jatra are the major festivals",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Octagonal two-storied tower" }, { name: "Golden Kalash atop the Shikhar" }, { name: "Navratri/Dussehra & spring Jatra processions" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~30min from Ponda", costRange: "₹500–₹1,000 (cab from Ponda)", tips: "Combine with other Ponda-taluka temples on the same trip." },
@@ -13401,6 +13408,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "App-cab coverage in this inland Ponda-taluka village is unconfirmed — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ponda town", distance: "~12 km", type: "Town", isHidden: true },
@@ -13447,6 +13455,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "~500-year-old shrine" }, { name: "Reclining Vishnu with Lakshmi" }, { name: "Set among plantation-covered hills" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~20min from Ponda", costRange: "₹400–₹800 (cab from Ponda)", tips: "A quiet, scenic detour within the Ponda temple circuit." },
@@ -13456,6 +13465,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "App-cab coverage in this inland Ponda-taluka village is unconfirmed — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ponda town", distance: "~10 km", type: "Town", isHidden: true },
