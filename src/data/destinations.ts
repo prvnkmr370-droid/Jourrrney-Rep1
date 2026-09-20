@@ -69834,6 +69834,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather)",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:30 AM", closes: "4:30 PM", note: "ASI-managed; closed Mondays." },
     highlights: [{ name: "Massive red sandstone Mughal-era ramparts and Lahore Gate" }, { name: "The Diwan-i-Am's rows of arched red sandstone columns" }, { name: "The white marble Moti Masjid (Pearl Mosque)" }, { name: "A UNESCO World Heritage Site and Independence Day venue" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~1.5h to Red Fort by road/metro", fromBangalore: "IGI Airport, ~1.5h to Red Fort by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Old Delhi's Chandni Chowk metro station is a short walk from the fort." },
@@ -69845,6 +69846,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "The fastest way to reach the fort, avoiding Old Delhi traffic", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi, though Old Delhi's narrow lanes can mean a short walk from the drop-off point", available: true },
     ],
     nearbyPlaces: [
       { name: "Jama Masjid", distance: "~1 km", type: "Mosque", isHidden: false },
@@ -69896,6 +69898,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather)",
     duration: "2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "The world's tallest brick minaret, begun in 1193" }, { name: "The adjoining Quwwat-ul-Islam Mosque" }, { name: "The rust-resistant Iron Pillar of Delhi" }, { name: "A UNESCO World Heritage Site in Mehrauli" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Qutub Minar by road/metro", fromBangalore: "IGI Airport, ~45 min to Qutub Minar by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "One of the closer major monuments to the airport." },
@@ -69907,6 +69910,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Qutub Minar station on the Yellow Line is the fastest way in", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Mehrauli Archaeological Park", distance: "Adjacent", type: "Archaeological Park", isHidden: true },
@@ -69956,6 +69960,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather)",
     duration: "2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "The first garden-tomb on the Indian subcontinent" }, { name: "Intricately carved marble jaali screens" }, { name: "A design that directly influenced the Taj Mahal" }, { name: "A UNESCO World Heritage Site since 1993" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Humayun's Tomb by road/metro", fromBangalore: "IGI Airport, ~40 min to Humayun's Tomb by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to central Delhi — easy to combine with other sights." },
@@ -69967,6 +69972,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "JLN Stadium (Violet Line) is the closest station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Purana Qila (Old Fort)", distance: "~3 km", type: "Fort", isHidden: true },
@@ -70028,6 +70034,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is the closest station, with a short walk or auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Rashtrapati Bhavan", distance: "~2.5 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
@@ -70078,6 +70085,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March (pleasant weather for the queue and gardens)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Closed Mondays." },
     highlights: [{ name: "27 marble-clad petals shaped like a half-opened lotus" }, { name: "A Bahá'í House of Worship open to all faiths, with no idols or sermons" }, { name: "Nine surrounding reflecting pools" }, { name: "Among the most-visited buildings in the world" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to the Lotus Temple by road/metro", fromBangalore: "IGI Airport, ~45 min to the Lotus Temple by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Located in Kalkaji, South Delhi — combine with Kalkaji Mandir nearby." },
@@ -70089,6 +70097,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Kalkaji Mandir (Magenta/Violet Line) is right by the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Kalkaji Mandir", distance: "~1 km", type: "Hindu Temple", isHidden: false },
@@ -70139,6 +70148,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March (pleasant weather; evenings are best for the musical fountain show)",
     duration: "3-4 hours",
+    visitingHours: { opens: "9:30 AM", closes: "8:00 PM", note: "Closed Mondays. The musical fountain show runs in the evening as a separate timed entry." },
     highlights: [{ name: "234 intricately carved sandstone pillars and 20,000 statues" }, { name: "No steel used anywhere in the main monument" }, { name: "Guinness World Record for the world's largest comprehensive Hindu temple" }, { name: "An evening musical fountain show over the Yamuna" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Akshardham by road/metro", fromBangalore: "IGI Airport, ~45 min to Akshardham by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Located on the Yamuna's east bank — allow half a day for the full complex and evening show." },
@@ -70150,6 +70160,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Akshardham (Blue Line) station is right at the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across East Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "ISKCON Temple Delhi", distance: "~5 km", type: "Temple", isHidden: true },
@@ -70200,6 +70211,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (cooler weather for walking the open-air instruments)",
     duration: "1-1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "Built in 1724 by the astronomer-king Maharaja Jai Singh II" }, { name: "The towering Samrat Yantra, one of the world's largest sundials" }, { name: "The circular Misra Yantra and Ram Yantra instruments" }, { name: "A protected Monument of National Importance" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Jantar Mantar by road/metro", fromBangalore: "IGI Airport, ~30 min to Jantar Mantar by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by Connaught Place — easy to combine with central Delhi shopping and dining." },
@@ -70211,6 +70223,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Patel Chowk (Yellow Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Agrasen Ki Baoli", distance: "~1 km", type: "Stepwell", isHidden: true, id: "agrasen-ki-baoli" },
@@ -70263,6 +70276,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (the stepwell offers shade, but mornings avoid the worst crowds)",
     duration: "30-45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed; open daily, free entry." },
     highlights: [{ name: "A 60-metre stepwell with 108 stone steps" }, { name: "Rows of arched niches on both flanking walls" }, { name: "A protected Monument of National Importance" }, { name: "A recurring Bollywood filming location" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Agrasen Ki Baoli by road/metro", fromBangalore: "IGI Airport, ~30 min to Agrasen Ki Baoli by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by Connaught Place and Jantar Mantar — easy to combine both in one outing." },
@@ -70274,6 +70288,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Barakhamba Road (Blue Line) is a short walk from the lane entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Jantar Mantar", distance: "~1 km", type: "Observatory", isHidden: false, id: "jantar-mantar-delhi" },
@@ -70324,6 +70339,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather for the boating lake and walk around the walls)",
     duration: "2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "Built by Sher Shah Suri on the site of legendary Indraprastha" }, { name: "The massive Bara Darwaza gate" }, { name: "The Qila-i-Kuhna Mosque's marble-inlaid facade" }, { name: "A boating lake along part of the moat" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Purana Qila by road/metro", fromBangalore: "IGI Airport, ~35 min to Purana Qila by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Pragati Maidan — easy to combine with National Zoological Park nearby." },
@@ -70335,6 +70351,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Pragati Maidan (Blue Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "National Zoological Park", distance: "~1 km", type: "Zoo", isHidden: false },
@@ -70385,6 +70402,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (cooler weather for walking the gardens)",
     duration: "1-1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "Often called the last great garden tomb of Mughal Delhi" }, { name: "A charbagh garden layout with wide walkways and channels" }, { name: "A dramatic marble cenotaph lit by afternoon light" }, { name: "Quiet, well-kept grounds rarely as crowded as other Delhi monuments" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Safdarjung Tomb by road/metro", fromBangalore: "IGI Airport, ~30 min to Safdarjung Tomb by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Lodhi Garden — easy to combine both in one outing." },
@@ -70396,6 +70414,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Jorbagh (Yellow Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Lodhi Garden", distance: "~2 km", type: "Garden & Tombs", isHidden: false, id: "lodhi-garden" },
@@ -70446,6 +70465,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Adventure"],
     bestSeason: "October – March (cooler weather for walking the extensive ruins)",
     duration: "2-3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "ASI-managed; open daily." },
     highlights: [{ name: "6.5 km of sloped stone ramparts and 52 bastions" }, { name: "Built in just four years by Ghiyas-ud-din Tughlaq" }, { name: "Legend of a Sufi saint's curse that emptied the city" }, { name: "One of Delhi's most atmospheric, least-crowded major ruins" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~45 min to Tughlaqabad Fort by road/metro", fromBangalore: "IGI Airport, ~45 min to Tughlaqabad Fort by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In South Delhi, further out than most other monuments — allow extra travel time." },
@@ -70457,6 +70477,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Tughlakabad (Violet Line) station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Qutub Minar", distance: "~15 km", type: "UNESCO Heritage Site", isHidden: false, id: "qutub-minar" },
@@ -70507,6 +70528,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March (cooler weather for walking and picnicking)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "City-managed public park; free entry, open daily." },
     highlights: [{ name: "15th and 16th-century Sayyid and Lodi dynasty tombs set in a public park" }, { name: "The double-storey Bara Gumbad and its adjoining mosque" }, { name: "The Akbar-era Athpula eight-piered bridge" }, { name: "A bonsai garden and small lake within the grounds" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Lodhi Garden by road/metro", fromBangalore: "IGI Airport, ~30 min to Lodhi Garden by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Safdarjung Tomb — easy to combine both in one outing." },
@@ -70518,6 +70540,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Jorbagh (Yellow Line) is a short walk from a park gate", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Safdarjung Tomb", distance: "~2 km", type: "Mughal Tomb", isHidden: false, id: "safdarjung-tomb" },
@@ -70579,6 +70602,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the forecourt", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "India Gate", distance: "~2.5 km", type: "War Memorial", isHidden: false, id: "india-gate" },
@@ -70640,6 +70664,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Patel Chowk (Yellow Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Jantar Mantar", distance: "~1.5 km", type: "Observatory", isHidden: false, id: "jantar-mantar-delhi" },
@@ -70690,6 +70715,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March; especially lively during Janmashtami and Diwali",
     duration: "1-1.5 hours",
+    visitingHours: { opens: "4:30 AM", closes: "9:00 PM", note: "The hall may close briefly in the early afternoon between darshan sessions." },
     highlights: [{ name: "Inaugurated by Mahatma Gandhi on the condition of open entry for all castes" }, { name: "Soaring red-and-cream sandstone shikharas" }, { name: "Landscaped grounds with fountains and gardens" }, { name: "Scriptural inscriptions from the Bhagavad Gita inside the main hall" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Birla Mandir by road/metro", fromBangalore: "IGI Airport, ~30 min to Birla Mandir by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Connaught Place — easy to combine with central Delhi shopping and dining." },
@@ -70701,6 +70727,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "RK Ashram Marg (Blue Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Connaught Place", distance: "~2 km", type: "Shopping & Dining", isHidden: false },
@@ -70751,6 +70778,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March; illuminated in the evenings year-round",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "7:00 PM", note: "Open daily, free entry." },
     highlights: [{ name: "Four concentric circles honouring India's post-independence fallen" }, { name: "Granite walls inscribed with over 25,000 soldiers' names" }, { name: "An eternal flame beneath the central obelisk" }, { name: "Param Yodha Sthal, honouring India's 21 Param Vir Chakra recipients" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to the National War Memorial by road/metro", fromBangalore: "IGI Airport, ~40 min to the National War Memorial by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right beside India Gate — easy to visit both together." },
@@ -70762,6 +70790,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the memorial", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "India Gate", distance: "~0.5 km", type: "War Memorial", isHidden: false, id: "india-gate" },
@@ -70812,6 +70841,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (cooler weather for walking the lakeside grounds)",
     duration: "1.5-2 hours, plus time in Hauz Khas Village",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "ASI-managed ruins; the adjoining Village stays open into the evening." },
     highlights: [{ name: "A 13th-century royal reservoir expanded by Feroz Shah Tughlaq" }, { name: "One of medieval India's largest madrasas" }, { name: "Feroz Shah Tughlaq's own domed tomb overlooking the lake" }, { name: "Bordered by trendy Hauz Khas Village's cafes and boutiques" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Hauz Khas by road/metro", fromBangalore: "IGI Airport, ~35 min to Hauz Khas by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Combine the historic complex with a browse through Hauz Khas Village's shops and cafes." },
@@ -70823,6 +70853,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Hauz Khas (Yellow/Magenta Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Hauz Khas Village", distance: "~0.3 km", type: "Shopping & Dining", isHidden: false },
@@ -70872,6 +70903,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "Year-round (indoor galleries — a good option on hot afternoons)",
     duration: "2-3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "Closed Mondays." },
     highlights: [{ name: "Over 200,000 objects spanning more than 5,000 years" }, { name: "Harappan, Mauryan, and Gupta-era sculpture and artefacts" }, { name: "Mughal miniature paintings and manuscripts" }, { name: "Central Asian antiquities from the Sir Aurel Stein expeditions" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to the National Museum by road/metro", fromBangalore: "IGI Airport, ~35 min to the National Museum by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "On Janpath, close to India Gate and Rashtrapati Bhavan." },
@@ -70883,6 +70915,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat or Udyog Bhawan (Yellow/Violet Line) is a short walk away", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "India Gate", distance: "~2 km", type: "War Memorial", isHidden: false, id: "india-gate" },
@@ -70933,6 +70966,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (mornings on the lawn are especially peaceful)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays and national holidays." },
     highlights: [{ name: "The site of Mahatma Gandhi's final 144 days and assassination" }, { name: "Marked footsteps tracing his last walk across the lawn" }, { name: "The Martyr's Column, inscribed with his last words 'He Ram'" }, { name: "Preserved rooms and exhibits on his life and philosophy" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Gandhi Smriti by road/metro", fromBangalore: "IGI Airport, ~35 min to Gandhi Smriti by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "On Tees January Marg, central Delhi — easy to combine with nearby sights." },
@@ -70944,6 +70978,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Rashtrapati Bhavan", distance: "~3 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
@@ -70994,6 +71029,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Culture"],
     bestSeason: "October – March (pleasant weather for walking the terraced grounds)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "8:00 PM", note: "Ticketed, gated city park." },
     highlights: [{ name: "Monumental stone elephant sculptures" }, { name: "A solar-powered sun clock" }, { name: "A spiral steel 'fountain tree' hung with bells" }, { name: "An open-air amphitheatre hosting cultural events" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to the Garden of Five Senses by road/metro", fromBangalore: "IGI Airport, ~40 min to the Garden of Five Senses by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Near Saket, South Delhi — combine with a visit to nearby malls or Mehrauli Archaeological Park." },
@@ -71005,6 +71041,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Saket (Yellow Line) is the closest station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Mehrauli Archaeological Park", distance: "~3 km", type: "Historic Ruins", isHidden: true },
@@ -71055,6 +71092,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March (cooler weather for walking the gardens and spotting birds)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "7:00 PM", note: "Ticketed, gated heritage park." },
     highlights: [{ name: "Six restored Mughal-era heritage monuments" }, { name: "A long reflecting water channel beside Sunderwala Burj" }, { name: "An award-winning restoration by the Aga Khan Trust for Culture" }, { name: "A micro-habitat zone popular with birdwatchers" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Sunder Nursery by road/metro", fromBangalore: "IGI Airport, ~35 min to Sunder Nursery by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right beside Humayun's Tomb — easy to combine both in one outing." },
@@ -71066,6 +71104,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "JLN Stadium (Violet Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Humayun's Tomb", distance: "~0.5 km", type: "UNESCO Heritage Site", isHidden: false, id: "humayuns-tomb" },
@@ -71127,6 +71166,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Qutub Minar (Yellow Line) station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across South Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Qutub Minar", distance: "~1 km", type: "UNESCO Heritage Site", isHidden: false, id: "qutub-minar" },
@@ -71187,6 +71227,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Rashtrapati Bhavan", distance: "~4 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
@@ -71237,6 +71278,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (an outdoor museum best visited in cooler weather)",
     duration: "1.5-2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [{ name: "Around 26 full-size locomotives and carriages on display" }, { name: "A WP-class steam engine with its iconic 'smiling face' nose" }, { name: "Vintage narrow-gauge locomotives dating to the late 19th century" }, { name: "A short joy train ride around the museum grounds" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to the National Rail Museum by road/metro", fromBangalore: "IGI Airport, ~30 min to the National Rail Museum by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In Chanakyapuri — combine with a visit to nearby Nehru Park." },
@@ -71248,6 +71290,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Race Course (Yellow Line) is the closest station, with a short auto ride onward", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Nehru Park", distance: "~1.5 km", type: "Urban Park", isHidden: false, id: "nehru-park-delhi" },
@@ -71487,6 +71530,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Delhi Metro", cost: "₹20–₹60 per trip", notes: "Central Secretariat (Yellow/Violet Line) is a short walk from the entrance", available: true },
       { mode: "Auto-Rickshaw/Taxi", cost: "Fare varies by distance", notes: "Widely available across central Delhi", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400 within the city", notes: "Widely available across Delhi", available: true },
     ],
     nearbyPlaces: [
       { name: "Rashtrapati Bhavan", distance: "~2 km", type: "Presidential Residence", isHidden: false, id: "rashtrapati-bhavan" },
