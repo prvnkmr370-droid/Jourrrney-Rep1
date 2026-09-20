@@ -62850,6 +62850,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Sailboat from Rajapuri jetty; autos in Murud", cost: "Shared sailboat fare (per head) to the fort and back; auto from Murud to Rajapuri", notes: "The only way onto the fort is a shared sailboat from Rajapuri jetty, ~5 km from Murud town; boats run on demand in season and stop when the sea is rough", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Murud is unconfirmed — autos and hired taxis cover the town and the Rajapuri jetty run", available: false },
     ],
     nearbyPlaces: [
       { name: "Kashid Beach", distance: "~20 km", type: "Konkan Beach", isHidden: true, id: "kashid-beach" },
@@ -63190,6 +63191,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, hired cars & rented two-wheelers", cost: "₹40–₹150 auto hops; ₹500–₹800/day scooter rental", notes: "The beaches are 5–20 km apart along the coast — autos, a hired car or a rented scooter get you between them; walk to Kolaba Fort at low tide", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300 within town", notes: "Both operate in Alibaug town, though a rented scooter is the more typical way to cover the spread-out beaches", available: true },
     ],
     nearbyPlaces: [
       { name: "Kashid Beach", distance: "~30 km", type: "Konkan Beach", isHidden: true, id: "kashid-beach" },
@@ -63258,6 +63260,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, rented two-wheelers & walking", cost: "₹30–₹100 auto hops; scooter rental by the day", notes: "The temple, beach and museum are close together and walkable; a scooter or auto helps for Malgund, Jaigad and the Ratnagiri sights", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ganpatipule is unconfirmed — autos and a rented scooter cover the village easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Ratnagiri", distance: "~35 km", type: "Konkan District Town", isHidden: true, id: "ratnagiri" },
@@ -63395,6 +63398,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, rented two-wheelers, sailboats & kayaks", cost: "Auto/scooter for land; per-head sailboat fares for the fort and dolphin trips", notes: "A scooter or auto covers Tarkarli–Malvan–Devbag; sailboats from the Malvan jetty go to Sindhudurg and on dolphin trips; kayaks and boats work the Karli backwater", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Tarkarli/Malvan is unconfirmed — a rented scooter or auto covers the area easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Ganpatipule", distance: "~150 km", type: "Beach & Ganesh Temple", isHidden: false, id: "ganpatipule" },
@@ -64211,6 +64215,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; auto-rickshaw; ferry", cost: "Short auto hops in town; the Bagmandala–Bankot ferry for vehicles and foot passengers", notes: "The temple, both beaches and the pradakshina path are all walkable from the town centre. Autos cover the spread-out hotels. The Savitri-mouth ferry runs by day, subject to tide and weather", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Harihareshwar is unconfirmed — the town's own autos cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Shrivardhan", distance: "~17 km", type: "Beach & Peshwa Birthplace", isHidden: true },
@@ -64262,6 +64267,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["City", "Heritage", "Beach"],
     bestSeason: "October – March for comfortable sightseeing; April–May if you are here for Alphonso mangoes and can take the heat; the monsoon (June–September) is heavy, with rough seas and an occasional cyclonic storm on this coast",
     duration: "1 – 2 days",
+    visitingHours: { opens: "10:00 AM", closes: "5:30 PM", note: "For Thibaw Palace and the Tilak Ali Museum, both closed on Mondays; Ratnadurg Fort itself keeps longer daylight hours." },
     highlights: [
       { name: "Thibaw Palace and Thibaw Point sunset viewpoint" },
       { name: "Tilak Ali Museum — Lokmanya Tilak's birth house" },
@@ -64278,6 +64284,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw, town bus, hired taxi", cost: "Metered/shared autos in town; taxi for the beaches and Jaigad", notes: "Autos cover the compact town and the fort. Bhatye, Mandvi and Aare–Ware, and day trips to Pawas, Jaigad or Ganpatipule, are easiest by hired car or a full-day taxi", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Ratnagiri town", available: true },
     ],
     nearbyPlaces: [
       { name: "Ganpatipule", distance: "~25 km", type: "Beach & Swayambhu Ganesh Temple", isHidden: false, id: "ganpatipule" },
@@ -64346,6 +64353,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own vehicle or hired auto/taxi; walking", cost: "Autos between the resort strip and the beach; taxi for Korlai/Phansad/Murud", notes: "The beach is walkable from most resorts. For Korlai Fort, Phansad Wildlife Sanctuary or Murud-Janjira you need a vehicle — most visitors self-drive or hire a car for the day", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage at Kashid is unconfirmed — a hired taxi or self-drive is the standard way to cover the area", available: false },
     ],
     nearbyPlaces: [
       { name: "Murud-Janjira", distance: "~20 km", type: "Island Fortress", isHidden: false, id: "murud-janjira" },
