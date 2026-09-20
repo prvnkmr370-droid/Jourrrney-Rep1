@@ -24929,6 +24929,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Spiritual"],
     bestSeason: "July – February (waterfall fullest during/after monsoon)",
     duration: "2–3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "An 11th-century Shiva temple complex built by Someshvara Chahamana and Queen Suhavadevi" },
       { name: "A 150+ foot waterfall on the Menali river, especially dramatic during monsoon" },
@@ -24943,6 +24944,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Chittorgarh)", cost: "₹1,500–₹3,000", notes: "Standard way to visit given the site's rural location", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this remote — a hired taxi round trip from Chittorgarh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chittorgarh Fort", distance: "~90 km", type: "Heritage", isHidden: false, id: "chittorgarh" },
@@ -24985,6 +24987,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature"],
     bestSeason: "October – February",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Ropeway keeps its own, shorter operating hours." },
     highlights: [
       { name: "Idols of Savitri and Gayatri genuinely believed to date to the 7th century CE" },
       { name: "~650-step climb up Ratnagiri Hill, or a short modern ropeway ride" },
@@ -25000,6 +25003,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Pushkar", notes: "Standard way to reach the base of the climb/ropeway station", available: true },
       { mode: "Ropeway", cost: "₹150–₹300 round trip (approx.)", notes: "A roughly 5-minute alternative to the ~650-step climb", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹50–₹150", notes: "Reliable coverage given proximity to central Pushkar", available: true },
     ],
     nearbyPlaces: [
       { name: "Pushkar", distance: "~2 km", type: "City", isHidden: false, id: "pushkar" },
@@ -25056,6 +25060,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from central Jodhpur", notes: "Standard way to reach the lake", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Jodhpur city", available: true },
     ],
     nearbyPlaces: [
       { name: "Jodhpur", distance: "~8 km", type: "City", isHidden: false, id: "jodhpur" },
@@ -25112,6 +25117,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Chittorgarh", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Chittorgarh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chittorgarh Fort", distance: "~25 km", type: "Heritage", isHidden: false, id: "chittorgarh" },
@@ -25168,6 +25174,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest Department Jeep Safari", cost: "₹1,500–₹3,000 per jeep (approx.)", notes: "The standard way to explore the core zone; book in advance", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage inside or near the reserve — a forest department jeep or hired taxi is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Kota", distance: "~50 km", type: "City", isHidden: false, id: "kota" },
@@ -25210,6 +25217,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Daylight-hours visiting only, given the unrestored, unlit ruins." },
     highlights: [
       { name: "Built 17th century by Raja Madho Singh of the Kachwaha dynasty" },
       { name: "An underground tunnel connecting the fort to the 1635 Shri Raghunathji Temple" },
@@ -25224,6 +25232,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Jaipur)", cost: "₹2,000–₹4,000", notes: "Standard way to visit, typically combined with Bhangarh Fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Jaipur, combined with Bhangarh, is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhangarh Fort", distance: "~3-4 km", type: "Heritage", isHidden: true, id: "bhangarh-fort" },
