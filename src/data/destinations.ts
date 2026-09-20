@@ -2308,6 +2308,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi/Jeep (sightseeing circuit)", cost: "₹1,500–₹3,000/day", notes: "The standard way to cover Wayanad's spread-out sights", available: true },
       { mode: "Trekking", cost: "Guide/permit fee ₹300–₹1,500", notes: "Chembra Peak and several other trails require a forest-department permit and, in some cases, a mandatory guide", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For short hops around Kalpetta and other towns", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage is thin across Wayanad's spread-out sights — Ola/Uber in Kerala is largely limited to the bigger cities; a hired taxi/jeep for the day is the practical way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Bandipur & Nagarhole National Parks", distance: "40 km", type: "Wildlife", isHidden: true, id: "bandipur-tiger-reserve" },
@@ -27428,6 +27429,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/View_from_the_Edakkal_caves.jpg/960px-View_from_the_Edakkal_caves.jpg",
     ],
     imageCredit: "Photos: Ingo Mehling — Wikimedia Commons, CC BY-SA 4.0; Amalshaji27 — Wikimedia Commons, CC BY 3.0, used directly on English Wikipedia's \"Edakkal caves\" article.",
+    visitingHours: { opens: "8:30 AM", closes: "4:00 PM", note: "Closed Mondays, public holidays, and in heavy monsoon weather. Daily entry is capped at around 1,920 visitors, so afternoon entry can sell out on weekends and in peak season — go early." },
     category: ["Heritage", "Adventure"],
     bestSeason: "October – May",
     duration: "2–3 hours",
@@ -27445,6 +27447,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹500–₹1,200", notes: "Standard way to reach the base of the climb", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kalpetta/Sultan Bathery is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "~25 km", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -27487,6 +27490,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Scenic_Banasura_Sagar_Dam.jpg/960px-Scenic_Banasura_Sagar_Dam.jpg",
     ],
     imageCredit: "Photos: Dinesh Valke from Thane, India, CC BY-SA 2.0; Karkiabhijeet, CC BY-SA 4.0 — both Wikimedia Commons.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "The ticket counter closes for a midday break, roughly 12:30–2 PM; speed-boat rides run until about 4 PM. Sources vary slightly, so confirm locally." },
     category: ["Nature"],
     bestSeason: "October – May",
     duration: "1.5–2 hours",
@@ -27505,6 +27509,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹500–₹1,200", notes: "Standard way to reach the dam", available: true },
       { mode: "Boat/Island Trek", cost: "₹100–₹400 per person (approx.)", notes: "Local operators run short trips onto the reservoir's islands", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kalpetta is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "~21 km", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -27547,6 +27552,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/View_from_chembra_peak.jpg/960px-View_from_chembra_peak.jpg",
     ],
     imageCredit: "Photos: Ravi Dwivedi, CC BY-SA 4.0; P maneesha, CC BY-SA 4.0 — both Wikimedia Commons.",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "The South Wayanad Forest Department's Meppadi office issues permits from 7 AM but stops admitting new trekkers after 2 PM so everyone is back by evening; only around 200 permits are issued per day." },
     category: ["Adventure", "Nature"],
     bestSeason: "October – May",
     duration: "5–6 hours (full trek)",
@@ -27564,6 +27570,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹400–₹1,000", notes: "Standard way to reach the trailhead", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kalpetta/Meppadi is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "~15 km", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -56436,6 +56443,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kuruva_island_bridges.jpg/1280px-Kuruva_island_bridges.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Kabini river at Kuruvadweep with bamboo rafts on the water (CC BY-SA 4.0), and one of the island's temporary bamboo footbridges between the islets (CC0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "Closed Mondays and through the monsoon (roughly June–September), when the Kabini runs too high for the raft crossing." },
     category: ["Nature", "Adventure", "Wildlife"],
     bestSeason: "October – May (closed through the monsoon, roughly June – September)",
     duration: "Half day (min. 3 hours on the island)",
@@ -56455,6 +56463,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest-Department raft + walking", cost: "Included in the entry ticket", notes: "The river crossing is by official raft only; on the island you move on foot along marked trails and bamboo bridges. No private boats.", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the narrow forest road to the raft point has no app coverage, and the island itself has no vehicle access at all", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "Region", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -56503,6 +56512,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Soochipara_Falls%2C_Wayanad_Kerala%2C_2013_%28Landscape%29.jpeg/1280px-Soochipara_Falls%2C_Wayanad_Kerala%2C_2013_%28Landscape%29.jpeg",
     ],
     imageCredit: "Photos: Wikimedia Commons — a long-exposure view of Soochipara Falls dropping into its base rock pool (CC BY-SA 4.0), and the falls in fuller monsoon flow (CC BY-SA 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Daily entry is capped at around 1,200 visitors, so go early; some sources report the falls closed to visitors roughly March–June for safety during low/erratic flow, so check locally outside the main October–February season." },
     category: ["Nature", "Adventure", "Waterfall"],
     bestSeason: "October – February (highest flow just after the monsoon; the site may close briefly during heavy rain)",
     duration: "Half day",
@@ -56522,6 +56532,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep / Auto + walking", cost: "₹150–₹1,200", notes: "Jeeps and autos from Meppady junction to the entrance; from there it is a walk down to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kalpetta is unconfirmed — a jeep or auto from Meppady junction is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chembra Peak", distance: "~12 km", type: "Trekking Peak", isHidden: false, id: "chembra-peak" },
@@ -56569,6 +56580,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Blue_water_lillys_from_pookote_lake_wayanad.JPG/1280px-Blue_water_lillys_from_pookote_lake_wayanad.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — Pookode Lake ringed by evergreen forest with pedal boats on the water (CC BY-SA 4.0), and blue water lilies in the lake's shallows (CC BY-SA 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Entry stops 15 minutes before closing; boating entry cuts off earlier still, around 4:30 PM. Open year-round." },
     category: ["Nature", "Family", "Scenic"],
     bestSeason: "October – March (cool, misty mornings in winter)",
     duration: "2 – 3 hours",
@@ -56588,6 +56600,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Taxi + walking", cost: "₹30–₹600", notes: "Autos and taxis from Vythiri and Kalpetta; a paved path circles part of the lake on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage around Vythiri/Lakkidi is unconfirmed — autos and taxis are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "Region", type: "Hill Station", isHidden: false, id: "wayanad" },
