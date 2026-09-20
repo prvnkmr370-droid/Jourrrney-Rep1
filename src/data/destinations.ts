@@ -24595,6 +24595,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Jodhpur)", cost: "₹3,000–₹5,500", notes: "Standard way to visit given the distance", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this far from Jodhpur — a hired taxi round trip is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jodhpur", distance: "~150 km", type: "City", isHidden: false, id: "jodhpur" },
@@ -24651,6 +24652,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹600–₹1,400 from Ajmer", notes: "Standard way to reach Kishangarh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Ajmer is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ajmer", distance: "~27 km", type: "City", isHidden: false, id: "ajmer" },
@@ -24695,6 +24697,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "The Nadine Le Prince Haveli runs guided tours at set times — check ahead." },
     highlights: [
       { name: "The Nadine Le Prince Haveli — an 1802 mansion restored from 1998 by a French artist" },
       { name: "Genuine guided tours on Shekhawati fresco technique, in French or English" },
@@ -24709,6 +24712,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Mandawa", notes: "Standard way to reach Fatehpur", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Mandawa is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandawa", distance: "~30 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
@@ -24752,6 +24756,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during the Bhadra Amavasya fair." },
     highlights: [
       { name: "India's largest temple dedicated to Rani Sati, a pilgrimage tradition over 400 years old" },
       { name: "White-marble complex with 13 smaller temples alongside the main shrine" },
@@ -24766,6 +24771,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Mandawa", notes: "Standard way to reach Jhunjhunu", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Mandawa is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandawa", distance: "~45 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
@@ -24823,6 +24829,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹50–₹150 within Ajmer city", notes: "Standard way to reach the lake from anywhere in Ajmer", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹50–₹150", notes: "Reliable coverage given its central Ajmer location", available: true },
     ],
     nearbyPlaces: [
       { name: "Ajmer", distance: "~2 km", type: "City", isHidden: false, id: "ajmer" },
@@ -24879,6 +24886,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Bikaner", notes: "Standard way to reach Kolayat", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Bikaner is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bikaner", distance: "~50 km", type: "City", isHidden: false, id: "bikaner" },
