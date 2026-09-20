@@ -14525,6 +14525,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Begun 1544, early Renaissance influence" }, { name: "Rope-twist maritime detailing" }, { name: "Tomb of Governor Garcia De Sa" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Sits on Monte Santo, giving genuine hilltop views over the rest of Old Goa." },
@@ -14534,6 +14535,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within walking distance of the other Old Goa churches", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Se Cathedral, Goa", distance: "Nearby", type: "Church", isHidden: false, id: "se-cathedral-goa" },
@@ -14576,6 +14578,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March; the Monte Music Festival runs each February",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "1519 hilltop chapel" }, { name: "Mandovi River views" }, { name: "Monte Music Festival (February)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "The hilltop views alone make this worth the climb even outside festival season." },
@@ -14585,6 +14588,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "A short climb from the main Old Goa complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Basilica of Bom Jesus", distance: "~1 km", type: "Church", isHidden: false, id: "basilica-of-bom-jesus" },
@@ -14627,6 +14631,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Museum"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:30 PM", note: "Closed on Fridays." },
     highlights: [{ name: "First nunnery in Asia" }, { name: "The \"Weeping Cross\" (1636)" }, { name: "Now houses the Museum of Christian Art" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "The museum inside genuinely rewards more time than a quick walk-through." },
@@ -14636,6 +14641,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Church of Our Lady of Rosary", distance: "Nearby", type: "Church", isHidden: false, id: "church-of-our-lady-of-rosary" },
@@ -14678,6 +14684,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Offbeat"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "UNESCO World Heritage ruin (1986)" }, { name: "Surviving 150-foot laterite tower" }, { name: "Queen Ketevan of Georgia's remains found here (1990s)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "A quieter, more atmospheric stop than the main churches — genuinely worth the visit for the ruin itself." },
@@ -14687,6 +14694,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Nunnery of Santa Monica", distance: "Nearby", type: "Museum", isHidden: false, id: "nunnery-of-santa-monica" },
@@ -14729,6 +14737,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Offbeat"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "1695 riverside church" }, { name: "Genuinely unusual hollow-wall confession design" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~20min from Old Goa/Ponda", costRange: "₹400–₹800 (cab)", tips: "A genuinely offbeat riverside church, less visited than the main Old Goa cluster." },
@@ -14738,6 +14747,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹800 (taxi)", notes: "Standard way to reach this riverside village", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹800", notes: "Coverage exists but can be patchy this far from the main Old Goa cluster", available: true },
     ],
     nearbyPlaces: [
       { name: "Old Goa", distance: "~8 km", type: "Heritage Site", isHidden: false, id: "old-goa" },
@@ -14780,6 +14790,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "Dome modelled on St. Peter's Basilica, Rome" }, { name: "Baroque & Rococo interior carving" }, { name: "6 lateral altars" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "The dome and interior carving genuinely reward a slower, closer look than a quick walk-through." },
@@ -14789,6 +14800,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within the Old Goa heritage complex", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Se Cathedral, Goa", distance: "Nearby", type: "Church", isHidden: false, id: "se-cathedral-goa" },
@@ -14831,6 +14843,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; the Immaculate Conception feast (8 December) is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "1871 double zigzag staircase" }, { name: "2,250 kg bell — Goa's second-largest" }, { name: "Panaji's most iconic landmark" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji — long haul", fromMumbai: "~10–12h to Panaji", fromBangalore: "Long haul", duration: "In central Panaji", costRange: "₹50–₹200 (auto within town)", tips: "Genuinely walkable from most central Panaji hotels." },
@@ -14840,6 +14853,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within walkable central Panaji", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹50–₹200", notes: "Reliable coverage within Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Miramar Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "miramar" },
