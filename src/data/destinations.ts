@@ -211,6 +211,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "Art"],
     bestSeason: "September – April",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Open daily." },
     highlights: [{ name: "Phase 1 — figures built from toilet fixtures, glass, and tiles" }, { name: "Phase 2 — a traditional Indian village of carved huts and temples" }, { name: "Phase 3 — Roman-inspired swings, a waterfall, and aquariums" }, { name: "The Open Air Theatre and Laughing Mirror Display" }, { name: "Sukhna Lake", id: "sukhna-lake" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shaheed Bhagat Singh International Airport (IXC), Mohali — ~1h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "1–3h depending on origin", costRange: "₹2,500–₹9,000", tips: "The airport also runs seasonal international flights to Dubai and Sharjah, and is close to the city centre." },
@@ -274,6 +275,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "September – April (winter for migratory birds)",
     duration: "2–3 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; boating operates during daylight hours only." },
     highlights: [{ name: "Boating — pedal boats, Shikara, and solar cruise" }, { name: "Garden of Silence, with its seated Buddha" }, { name: "Migratory birds in winter" }, { name: "Chandigarh Bird Park", id: "chandigarh-bird-park" }, { name: "Rock Garden", id: "rock-garden" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shaheed Bhagat Singh International Airport (IXC), Mohali — ~1h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "1–3h depending on origin", costRange: "₹2,500–₹9,000", tips: "Close to the city centre, with seasonal international flights to Dubai and Sharjah." },
@@ -339,6 +341,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO"],
     bestSeason: "September – April",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Closed Sundays and Mondays; entry requires ID and advance online booking." },
     highlights: [{ name: "The Assembly, Secretariat, and High Court" }, { name: "The Open Hand Monument — the city's official emblem" }, { name: "The Tower of Shadows" }, { name: "The Martyr's Memorial" }, { name: "Rock Garden", id: "rock-garden" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shaheed Bhagat Singh International Airport (IXC), Mohali — ~1h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "1–3h depending on origin", costRange: "₹2,500–₹9,000", tips: "Close to the city centre, with seasonal international flights to Dubai and Sharjah." },
@@ -401,6 +404,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "September – April",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Large aviary tunnels" }, { name: "Exotic birds — macaws, cockatoos, pheasants, swans" }, { name: "Sukhna Lake", id: "sukhna-lake" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shaheed Bhagat Singh International Airport (IXC), Mohali — ~1h direct", fromMumbai: "~2.5h direct", fromBangalore: "~3h direct", duration: "1–3h depending on origin", costRange: "₹2,500–₹9,000", tips: "Close to the city centre, with seasonal international flights to Dubai and Sharjah." },
