@@ -69076,6 +69076,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "Fare varies by destination", notes: "Used to reach the valley viewpoints and nearby heritage villages", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Champhai — local taxis cover the town and district", available: false },
     ],
     nearbyPlaces: [
       { name: "Murlen National Park", distance: "In Champhai district", type: "National Park", isHidden: true },
@@ -69187,6 +69188,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (clear, dry conditions for exploring the site)",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "An ASI-protected Monument of National Importance; do not touch or move any stones or carvings." },
     highlights: [{ name: "Carved menhirs with embossed human and animal figures" }, { name: "An official ASI Monument of National Importance" }, { name: "Evidence of an unidentified pre-Mizo civilisation" }, { name: "The distinctive Thlangtlak Gate entrance to the site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then road via Champhai", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then a long road journey east", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Combine with a Champhai visit given the shared route." },
@@ -69197,6 +69199,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Champhai", cost: "Fare varies by arrangement", notes: "Used to reach the Vangchhia site and its Thlangtlak Gate entrance", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Champhai district — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Champhai", distance: "A drive from Vangchhia", type: "Town/Valley", isHidden: false, id: "champhai" },
@@ -69256,6 +69259,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Aizawl", cost: "Fare varies by round-trip arrangement", notes: "The standard way to reach the ridge-top resort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates outside Aizawl — a local taxi round trip is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Solomon's Temple", distance: "~50 km, via Aizawl", type: "Church", isHidden: true, id: "solomons-temple-aizawl" },
@@ -69316,6 +69320,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided Forest Walks (Required)", cost: "Arranged through the forest department", notes: "Birdwatching here is on foot with a local guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Saitual district — a hired vehicle from Aizawl or Saitual is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tam Dil", distance: "In Saitual district", type: "Lake", isHidden: true, id: "tam-dil" },
@@ -71244,6 +71249,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March (cool, dry weather ideal for golf)",
     duration: "Half day to full day",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Tee times are best booked ahead through the golf course management." },
     highlights: [{ name: "An 18-hole course set on a forested plateau" }, { name: "Wooden log-cabin cottages along the fairways" }, { name: "Cool, high-altitude climate year-round" }, { name: "A rare golfing destination in the hills of Mizoram" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "Fly to Lengpui Airport, Aizawl, then ~3 hr road to Thenzawl", fromBangalore: "Fly to Lengpui Airport, Aizawl, then ~3 hr road to Thenzawl", duration: "Fly into Aizawl, then road", costRange: "₹5,000–₹15,000 airfare to Aizawl", tips: "Thenzawl is roughly 3-4 hours by road from Aizawl — hire a taxi or take a shared vehicle." },
@@ -71255,6 +71261,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Private Vehicle", cost: "Fare varies by distance", notes: "The primary way to reach and get around Thenzawl", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Thenzawl — a taxi or private vehicle from Aizawl is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vantawng Falls", distance: "~15 km", type: "Waterfall", isHidden: false, id: "vantawng-falls" },
@@ -71311,6 +71318,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Private Vehicle", cost: "Fare varies by distance", notes: "The only practical way to reach and explore the area", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Khawzawl district — a hired taxi or private vehicle is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Khawzawl town", distance: "Within Khawzawl district", type: "Town", isHidden: true },
