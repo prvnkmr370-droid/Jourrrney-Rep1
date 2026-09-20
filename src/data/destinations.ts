@@ -71122,6 +71122,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab from Puri", cost: "₹800–₹1,800 round trip", notes: "The standard way to visit as a half-day trip from Puri", available: true },
+      { mode: "Uber", cost: "Standard app fare", notes: "Uber lists Konark as a serviceable city on its own site, though pickup waits can run longer than in Bhubaneswar; Ola and Rapido coverage here is unconfirmed", available: true },
     ],
     nearbyPlaces: [
       { name: "Chandrabhaga Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "chandrabhaga-beach" },
@@ -71761,6 +71762,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / OTDC Conducted Tour", cost: "₹2,000–₹4,000 for the full Diamond Triangle circuit", notes: "Book through OTDC or a local operator in Bhubaneswar", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Bhubaneswar (~83 km) is unconfirmed — a hired cab or OTDC tour is the practical way to reach this rural site", available: false },
     ],
     nearbyPlaces: [
       { name: "Ratnagiri", distance: "~14 km", type: "Buddhist Site", isHidden: false, id: "ratnagiri-odisha" },
@@ -71819,6 +71821,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / OTDC Conducted Tour", cost: "₹2,000–₹4,000 for the full Diamond Triangle circuit", notes: "Book through OTDC or a local operator in Bhubaneswar", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Bhubaneswar (~97 km) is unconfirmed — a hired cab or OTDC tour is the practical way to reach this rural site", available: false },
     ],
     nearbyPlaces: [
       { name: "Lalitgiri", distance: "~14 km", type: "Buddhist Site", isHidden: false, id: "lalitgiri" },
@@ -71877,6 +71880,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / OTDC Conducted Tour", cost: "₹2,000–₹4,000 for the full Diamond Triangle circuit", notes: "Book through OTDC or a local operator in Bhubaneswar", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Bhubaneswar (~83 km) is unconfirmed — a hired cab or OTDC tour is the practical way to reach this rural site", available: false },
     ],
     nearbyPlaces: [
       { name: "Ratnagiri", distance: "~6 km", type: "Buddhist Site", isHidden: false, id: "ratnagiri-odisha" },
@@ -72440,6 +72444,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Local Auto", cost: "₹500–₹1,500", notes: "Arranged from Bhadrak or Balasore", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this rural Mayurbhanj area is unconfirmed — a hired cab or local auto from Bhadrak or Balasore is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhimkund", distance: "~65 km", type: "Waterfall", isHidden: false, id: "bhimkund-waterfall" },
@@ -72497,6 +72502,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Local Cab", cost: "₹100–₹400 within Jajpur", notes: "Easily arranged in town", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in Jajpur town is unconfirmed — local autos and cabs are the reliable way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Ratnagiri", distance: "~20 km", type: "Buddhist Site", isHidden: false, id: "ratnagiri-odisha" },
@@ -72671,6 +72677,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Auto", cost: "₹300–₹700 round trip from Bhubaneswar", notes: "Easily arranged from the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹150–₹350 from central Bhubaneswar", notes: "All three apps operate reliably across Bhubaneswar and out to Hirapur", available: true },
     ],
     nearbyPlaces: [
       { name: "Dhauligiri Shanti Stupa", distance: "~20 km", type: "Buddhist Site", isHidden: false, id: "dhauligiri-shanti-stupa" },
@@ -72844,6 +72851,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹2,500–₹5,000 round trip from Berhampur", notes: "Roads into the hills can be winding", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far into the Gajapati hills is unconfirmed — a hired cab from Berhampur is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tara Tarini Temple", distance: "~90 km", type: "Pilgrimage", isHidden: false, id: "tara-tarini-temple" },
