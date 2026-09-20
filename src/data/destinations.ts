@@ -7494,6 +7494,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Resort Jeep Safari", cost: "₹2,000–₄,000 pp (shared)", notes: "Morning and evening safaris are mandatory booking — limited slots inside national park", available: true },
       { mode: "Boat Safari", cost: "₹1,500–₂,500 pp", notes: "Evening boat on Kabini reservoir — elephants, otters, gharials, kingfishers", available: true },
       { mode: "Nature Walk", cost: "₹500 guide fee", notes: "Guided walks in the buffer zone; best for birds and smaller wildlife", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable — there is no public transport into the resort zone at all, and getting around once there means resort-arranged safaris, not app cabs", available: false },
     ],
     nearbyPlaces: [
       { name: "Nagarhole National Park Core Zone", distance: "Inside Kabini buffer", type: "Tiger Reserve", isHidden: false },
@@ -25869,6 +25870,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest Department Jeep Safari", cost: "₹1,000–₹2,500 per jeep (approx.)", notes: "The standard way to explore the core zone; book in advance", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable inside the reserve — access is entirely through forest-department safari jeeps, not app cabs", available: false },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~80 km", type: "City", isHidden: false, id: "mysuru" },
@@ -53154,6 +53156,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Himavad_Gopalaswamy_betta_Temple_.jpg/1280px-Himavad_Gopalaswamy_betta_Temple_.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the mist-shrouded hilltop woodland (CC BY-SA 4.0) and the summit Gopalaswamy Temple (CC0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:30 AM", closes: "4:00 PM", note: "The last bus back down the hill leaves around 4:30 PM; verified against the temple's own site (himavadgopalaswamy.org.in)." },
     category: ["Nature", "Religious", "Wildlife"],
     bestSeason: "September – February",
     duration: "Half day",
@@ -53173,6 +53176,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Authorised Forest Bus", cost: "₹50–₹150 (approx.)", notes: "Private vehicles stop at the check post; a forest-run bus carries visitors to the summit and back", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable past the forest check post — only the authorised KSRTC shuttle bus is allowed up to the summit", available: false },
     ],
     nearbyPlaces: [
       { name: "Bandipur Tiger Reserve", distance: "~20 km", type: "National Park", isHidden: false, id: "bandipur-tiger-reserve" },
@@ -53354,6 +53358,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mahadeshwara_Temple_entrance_and_Nandhi.jpg/1280px-Mahadeshwara_Temple_entrance_and_Nandhi.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the forested Eastern Ghats around Male Mahadeshwara Betta (CC BY-SA 4.0) and the temple's gopuram and approach (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "General daylight-to-evening darshan hours; confirm locally, as festival days (Maha Shivaratri, Rathotsava) shift the schedule and draw very large crowds." },
     category: ["Religious", "Nature", "Wildlife"],
     bestSeason: "September – February",
     duration: "1 day",
@@ -53373,6 +53378,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹150", notes: "The temple, town, and short sacred trails are walkable; autos for the stream and outlying shrines", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable this deep in the Eastern Ghats forest — buses and a hired taxi are the only way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Hogenakkal Falls (Tamil Nadu border)", distance: "~90 km", type: "Waterfall", isHidden: true, id: "hogenakkal-falls" },
@@ -53684,6 +53690,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Gokak_Falls_01.JPG/1280px-Gokak_Falls_01.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — the horseshoe fall over the rock ledge with the historic mill buildings behind (CC BY-SA 3.0) and the Ghataprabha gorge downstream of the falls (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Free entry; visitors are expected to leave by sunset. The suspension-bridge platform can close for safety during heavy monsoon flow." },
     category: ["Nature"],
     bestSeason: "July – October (peak flow); November – February (gorge scenery, lean flow)",
     duration: "2–3 hours",
@@ -53703,6 +53710,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Taxi", cost: "₹100–₹800", notes: "Autos from Gokak town to the falls; the viewpoints and bridge are explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Gokak town is unconfirmed — local autos and a hired taxi from Belagavi are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kittur Fort", distance: "~60 km", type: "Historic Fort", isHidden: false, id: "kittur-fort" },
@@ -55412,6 +55420,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Resort Jeep / Own Vehicle", cost: "Usually included in packages", notes: "Resorts run the transfers to the rafting put-in, safari gate, and Syntheri Rocks", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable in this forest resort area — transfers between the town, rafting put-in, and camps are arranged by the resorts", available: false },
     ],
     nearbyPlaces: [
       { name: "Syntheri Rocks", distance: "~25 km", type: "Rock Formation", isHidden: true, id: "syntheri-rocks" },
@@ -55478,6 +55487,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Homestay Jeep / Own 4x4", cost: "₹800–₹2,500", notes: "A jeep to the trek base over rough track; the trek itself is on foot with a compulsory forest guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable on the rough track to the trek base — homestay jeeps handle this leg", available: false },
     ],
     nearbyPlaces: [
       { name: "Kalasa", distance: "~20 km", type: "Temple Town", isHidden: true, id: "kalasa" },
@@ -55812,6 +55822,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Lodge Safari Jeep", cost: "Usually included in the camp package", notes: "Reserve safaris run from the K. Gudi camp/forest gate; private vehicles cannot drive the safari tracks", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable inside the tiger reserve — the K. Gudi lodge's own safari jeeps handle all movement past the forest gate", available: false },
     ],
     nearbyPlaces: [
       { name: "Bandipur Tiger Reserve", distance: "~85 km", type: "National Park", isHidden: false, id: "bandipur-tiger-reserve" },
@@ -55859,6 +55870,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kaveri_in_mekedatu.jpg/1280px-Kaveri_in_mekedatu.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Kaveri squeezing through the rocky Mekedatu gorge (CC BY-SA 4.0) and the wider dry-season canyon of the Kaveri at Mekedatu (CC BY-SA 4.0). Context (Mekedatu near the Bheemeshwari–Galibore stretch, Cauvery-side kayaking and coracle camps) verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:30 AM", closes: "5:30 PM", note: "Sangama itself opens earlier, around 6 AM. Boat and bus crossings stop by 5:30 PM and overnight stays aren't permitted, so plan your return before then." },
     category: ["Nature", "Picnic Spots"],
     bestSeason: "October – February (Sangama crossing closes in the monsoon)",
     duration: "Half day to 1 day",
@@ -55878,6 +55890,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Tractor Crossing / Shared Jeep / Walking", cost: "₹20–₹100", notes: "From Sangama, a tractor-trailer or wade across the Arkavathi in the dry season, then a shared vehicle or a walk to the gorge", available: true },
+      { mode: "Ola / Uber", cost: "₹1,000–₹2,000 one-way from Bengaluru", notes: "Can reach Sangama itself, though the final river crossing to the gorge is by tractor or on foot, not by app cab", available: true },
     ],
     nearbyPlaces: [
       { name: "Bheemeshwari", distance: "~35 km (river route longer)", type: "River Camp / Bird Area", isHidden: true, id: "bheemeshwari" },
