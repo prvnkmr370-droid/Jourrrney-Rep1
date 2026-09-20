@@ -25060,6 +25060,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Ferry + Taxi", cost: "₹500–₹1,200 total from Kochi", notes: "Ferry across to Vypin, then a short taxi/auto ride", available: true },
+      { mode: "Ola / Uber", cost: "₹400–₹900 one-way from Kochi", notes: "Bookable from Kochi; Ola/Uber coverage in Kerala is largely limited to the bigger cities, so pickup availability on Vypin itself can be thinner", available: true },
     ],
     nearbyPlaces: [
       { name: "Kochi", distance: "~25 km", type: "City", isHidden: false, id: "kochi" },
@@ -54156,6 +54157,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fort_Kochi_-_St._Francis_Church.jpg/1280px-Fort_Kochi_-_St._Francis_Church.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Chinese fishing nets at sunset, Fort Kochi (CC BY-SA 4.0) and the front of St. Francis Church, Fort Kochi (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "For Mattancherry (Dutch) Palace, closed Fridays. The adjoining Paradesi Synagogue keeps its own hours (10 AM–12 PM and 3–5 PM), closed Fridays, Saturdays and Jewish holidays — the fishing nets and churches themselves have no fixed hours." },
     category: ["Heritage", "History", "Beaches"],
     bestSeason: "October – March",
     duration: "1–2 days",
@@ -54175,6 +54177,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto / Ferry", cost: "₹5–₹300", notes: "The quarter is walkable; autos for Mattancherry; government ferries link Fort Kochi, Mattancherry, Vypin, and Ernakulam", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹400", notes: "Both operate in Kochi, including Fort Kochi; Ola/Uber coverage in Kerala is largely limited to the bigger cities, so this is more reliable here than in most of the state", available: true },
     ],
     nearbyPlaces: [
       { name: "Kochi (Ernakulam)", distance: "~12 km", type: "City", isHidden: false, id: "kochi" },
@@ -54287,6 +54290,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Guruvayur_Temple_top_view.JPG/1280px-Guruvayur_Temple_top_view.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Guruvayur temple exterior with its tiled Kerala roofs and mural wall (CC0) and a view of the tiered temple roofs with the gold flagstaff (CC BY 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "3:00 AM", closes: "9:15 PM", note: "Darshan runs in two long sessions with an afternoon break, roughly 12:30–4:30 PM." },
     category: ["Religious", "Heritage"],
     bestSeason: "October – March (Utsavam Feb–Mar; Ekadasi Nov–Dec)",
     duration: "Half day to 1 day",
@@ -54306,6 +54310,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹200", notes: "The temple, markets, and lodges are walkable; autos for Punnathur Kotta and Mammiyoor", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Guruvayur is unconfirmed — Ola/Uber in Kerala is largely limited to the bigger cities; walking and local autos cover the temple town easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Thrissur", distance: "~30 km", type: "Cultural City", isHidden: false, id: "thrissur" },
@@ -56606,6 +56611,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Ambalappuzha_Sree_Krishna_Temple_seen_from_pond.jpg/1280px-Ambalappuzha_Sree_Krishna_Temple_seen_from_pond.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Ambalappuzha Sree Krishna Temple courtyard and Kerala-style roofs (CC BY-SA 3.0), and the temple complex seen across its tank at dusk (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "8:00 PM", note: "Closed for a midday break, roughly 11:30 AM–5 PM — palpayasam is distributed within the morning session." },
     category: ["Religious", "Heritage", "Art & Culture"],
     bestSeason: "September – March (Ambalappuzha Arattu festival falls in March–April)",
     duration: "1 – 2 hours",
@@ -56625,6 +56631,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹20–₹400", notes: "Frequent buses on the Alappuzha–Kollam highway stop at Ambalappuzha; autos from the town; the temple is a short walk from the main road", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small temple town is unconfirmed — buses and local autos from Alappuzha cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Alleppey (Alappuzha)", distance: "~14 km", type: "Backwater Hub", isHidden: false, id: "alleppey" },
@@ -56672,6 +56679,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chottanikkara_Bhagavathy_Temple_and_surroundings_%2812%29.jpg/1280px-Chottanikkara_Bhagavathy_Temple_and_surroundings_%2812%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the named entrance archway of the Chottanikkara Devi Temple (CC BY-SA 4.0), and the temple's stone-stepped tank with the covered walkway behind (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "8:45 PM", note: "Closed for a midday break, roughly 12–4 PM; free meals are served to devotees 1–3 PM." },
     category: ["Religious", "Heritage"],
     bestSeason: "October – March (Makam Thozhal in Feb–Mar)",
     duration: "1 – 2 hours",
@@ -56691,6 +56699,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto / Walking", cost: "₹15–₹500", notes: "Direct buses from Ernakulam and Tripunithura; autos from Tripunithura; the main and lower shrines are a short walk apart", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹600 one-way from Ernakulam", notes: "Bookable from central Kochi/Ernakulam, though coverage thins out this far from the city centre", available: true },
     ],
     nearbyPlaces: [
       { name: "Kochi (Ernakulam)", distance: "~18 km", type: "City", isHidden: false, id: "kochi" },
@@ -56738,6 +56747,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Malayattoor_-_church_on_the_hill_top.jpg/1280px-Malayattoor_-_church_on_the_hill_top.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the old rock chapel on Kurisumudy at Malayattoor (CC BY-SA 4.0), and the shrine buildings on the hilltop (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "The hill path and shrine are best climbed in daylight; timings expand hugely around Malayattoor Perunnal, when the climb runs into the night." },
     category: ["Religious", "Pilgrimage", "Nature"],
     bestSeason: "October – February (Malayattoor Perunnal on the Sunday after Easter, Mar–Apr)",
     duration: "Half day (allow 3–4 hours for the round-trip climb)",
@@ -56757,6 +56767,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus + the climb on foot", cost: "₹20–₹600", notes: "Autos and buses from Angamaly to the base church; from there the hill shrine is reached on foot up the stepped path", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Malayattoor is unconfirmed — buses and local autos from Angamaly are the reliable way to the base church", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi (Ernakulam)", distance: "~50 km", type: "City", isHidden: false, id: "kochi" },
@@ -56804,6 +56815,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cheraman_Juma_Masjid_interior.jpg/1280px-Cheraman_Juma_Masjid_interior.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Cheraman Juma Masjid after its 2022 conservation, showing the tiered Kerala-style tiled roofs (CC BY-SA 4.0), and a view into the timber-and-white prayer hall (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Free entry; avoid the five daily prayer times and Friday midday if you only want to look around." },
     category: ["Religious", "Heritage", "History"],
     bestSeason: "October – March",
     duration: "1 hour (combine with Kodungallur / Muziris sites)",
@@ -56823,6 +56835,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹15–₹400", notes: "Autos and frequent buses from Kodungallur town; the mosque is just off the main road", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kodungallur is unconfirmed — buses and local autos cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi (Ernakulam)", distance: "~35 km", type: "City", isHidden: false, id: "kochi" },
@@ -57002,6 +57015,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Vaikom_Mahadeva_Temple_-_atwilight_view.jpg/1280px-Vaikom_Mahadeva_Temple_-_atwilight_view.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the pillared entrance and metal lamp-columns of the Vaikom Mahadeva Temple (public domain), and the lit temple front at twilight (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:30 AM", closes: "8:00 PM", note: "Closed for a midday break, roughly 11:30 AM–5 PM; opens earlier, around 3 AM, during the Mandalam season (Nov–Dec)." },
     category: ["Religious", "Heritage", "History"],
     bestSeason: "October – March (Vaikathashtami in Nov–Dec)",
     duration: "1 – 2 hours",
@@ -57021,6 +57035,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Ferry", cost: "₹15–₹400", notes: "Autos and KSRTC buses within Vaikom; ferries across Vembanad from the Ernakulam side; the temple is central", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Vaikom is unconfirmed — buses, ferries and local autos cover the town reliably", available: false },
     ],
     nearbyPlaces: [
       { name: "Kottayam", distance: "~35 km", type: "Backwater Town", isHidden: false, id: "kottayam" },
@@ -57068,6 +57083,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/009242022_Ettumanoor_Mahadeva_temple%2C_Kottayam_Kerala_051.jpg/1280px-009242022_Ettumanoor_Mahadeva_temple%2C_Kottayam_Kerala_051.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the pillared entrance and gopuram of the Ettumanoor Mahadeva Temple (CC BY-SA 4.0), and one of the temple's classical Kerala murals (CC0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "8:30 PM", note: "Closed for a midday break, roughly 12–5 PM." },
     category: ["Religious", "Heritage", "Art & Culture"],
     bestSeason: "October – March (Ezharaponnana / Arattu festival Feb–Mar)",
     duration: "1 – 2 hours",
@@ -57087,6 +57103,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹15–₹400", notes: "Frequent buses on the MC Road and autos from Kottayam; the temple is a short walk from the main road", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹600 one-way from Kottayam", notes: "Bookable from Kottayam, though buses and local autos on the MC Road are the more typical local option", available: true },
     ],
     nearbyPlaces: [
       { name: "Kottayam", distance: "~11 km", type: "Backwater Town", isHidden: false, id: "kottayam" },
@@ -57134,6 +57151,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Stone_Snakes_%2856470024%29.jpeg/1280px-Stone_Snakes_%2856470024%29.jpeg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the entrance of the Mannarasala Sree Nagaraja Temple in its grove near Haripad (CC BY-SA 3.0), and stone serpent idols in the temple grove (CC BY-SA 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "4:00 AM", closes: "8:00 PM", note: "Closed for a midday break, roughly 11 AM–5 PM; timings shift seasonally, so check the temple's own site (mannarasala.org)." },
     category: ["Religious", "Heritage", "Nature"],
     bestSeason: "October – March (Ayilyam festival in Thulam, ~Sep–Nov)",
     duration: "1 – 2 hours",
@@ -57153,6 +57171,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹15–₹300", notes: "Autos and buses from Haripad; the grove and its paths are explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Haripad is unconfirmed — buses and local autos cover the short hop to the temple", available: false },
     ],
     nearbyPlaces: [
       { name: "Alleppey (Alappuzha)", distance: "~40 km", type: "Backwater Hub", isHidden: false, id: "alleppey" },
@@ -58806,6 +58825,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Canoe / Auto / Cycle / Walking", cost: "₹30–₹800", notes: "Canoe rides through the channels (with the homestay/village guides); autos and cycles on the island roads", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from central Kochi is unconfirmed — Ola/Uber in Kerala is largely limited to the bigger cities; a taxi or auto from Kochi is the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi (Fort Kochi)", distance: "~15 km", type: "Heritage Port City", isHidden: false, id: "kochi" },
