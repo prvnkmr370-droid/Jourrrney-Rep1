@@ -7058,6 +7058,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/PXL_20260104_110429494.MP_Jog_Falls%2C_Karnataka_577435_17.jpg/1280px-PXL_20260104_110429494.MP_Jog_Falls%2C_Karnataka_577435_17.jpg",
     ],
     imageCredit: "Photos: Prasanaik, Nikhilb239, Krishnakulkarni36, Deshna Subramanian, Sourabh.biswas003 — Wikimedia Commons, CC0 / CC BY / CC BY-SA.",
+    visitingHours: { opens: "7:30 AM", closes: "9:30 PM", note: "Karnataka Tourism's viewing deck and evening lighting; the base staircase itself closes earlier, well before dark." },
     category: ["Nature", "Adventure", "Unique Experience"],
     bestSeason: "July – September (peak monsoon flow) or October – December (calmer, greener surroundings)",
     duration: "1 day",
@@ -7074,6 +7075,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The viewing gallery is a short walk; the staircase down to the base is a real trek (roughly 1,400 steps)", available: true },
       { mode: "Taxi/Auto (from Sagara)", cost: "₹300–₹800", notes: "The standard way to reach the falls from the nearest town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into the Malnad hills is unconfirmed — a hired taxi or auto from Sagara is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sagara town", distance: "29 km", type: "Culture", isHidden: true },
@@ -25323,6 +25325,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hoysaleshwara_Temple%2C_Halebid%2C_Karnataka%2C_India.jpg/500px-Hoysaleshwara_Temple%2C_Halebid%2C_Karnataka%2C_India.jpg",
     ],
     imageCredit: "Photos: Dineshkannambadi, CC BY-SA 3.0 (Chennakeshava Temple, Belur); Naveen R Gowda, CC BY-SA 4.0 (Hoysaleshwara Temple, Halebidu) — both Wikimedia Commons.",
+    visitingHours: { opens: "7:30 AM", closes: "8:00 PM", note: "For the active Chennakeshava Temple at Belur, with a midday break roughly 1:30–4 PM. The unworshipped, ASI-managed Hoysaleswara Temple at Halebidu keeps standard sunrise-to-sunset hours." },
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – February",
     duration: "1 day",
@@ -25340,6 +25343,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto (between the two towns)", cost: "₹300–₹600", notes: "Standard way to travel the ~16 km between Belur and Halebidu", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in these small temple towns is unconfirmed — local autos and taxis cover the short hop between them reliably", available: false },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~150 km", type: "City", isHidden: false, id: "mysuru" },
@@ -25555,6 +25559,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sringeri_Sharada_Peetham.jpg/1280px-Sringeri_Sharada_Peetham.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sringeri_Sharada_Peetham.jpg/1280px-Sringeri_Sharada_Peetham.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rajagopuram_of_the_Sringeri_Sarada_peetham.jpg/960px-Rajagopuram_of_the_Sringeri_Sarada_peetham.jpg"],
     imageCredit: "Photos: Nativeplants garden, Starstuffseyyon — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "6:00 AM", closes: "9:15 PM", note: "Darshan runs in two sessions with an afternoon break, roughly 2–4 PM; check the Peetham's own site (sringeri.net) as exact evening closing shifts slightly by source." },
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -25572,6 +25577,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Chikmagalur", notes: "Standard way to reach Sringeri", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Chikmagalur is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Chikmagalur", distance: "~90 km", type: "Hill Station", isHidden: false, id: "chikmagalur" },
@@ -26491,6 +26497,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Shivanasamudra_Falls%2C_Karnataka%2C_India.jpg/1280px-Shivanasamudra_Falls%2C_Karnataka%2C_India.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Shivanasamudra_Falls%2C_Karnataka%2C_India.jpg/1280px-Shivanasamudra_Falls%2C_Karnataka%2C_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Shivanasamudra_Falls_shot_during_sunrise.jpg/960px-Shivanasamudra_Falls_shot_during_sunrise.jpg"],
     imageCredit: "Photos: Naveen R Gowda, deepak.tl — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Some sources cite a wider 6 AM–6 PM window; exact hours vary by viewpoint and weather. Free entry." },
     category: ["Nature", "Heritage"],
     bestSeason: "August – February (fullest during and just after monsoon)",
     duration: "2–3 hours",
@@ -26508,6 +26515,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Mysuru", notes: "Standard way to reach both viewpoints", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Mysuru is unconfirmed — a hired taxi is the practical way to cover both viewpoints", available: false },
     ],
     nearbyPlaces: [
       { name: "Mysuru", distance: "~80 km", type: "City", isHidden: false, id: "mysuru" },
@@ -26738,6 +26746,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹300–₹700 from Jog Falls/Sagara", notes: "Standard way to reach the dam", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into the Malnad hills is unconfirmed — a hired taxi from Sagara or Jog Falls is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jog Falls", distance: "~9 km", type: "Waterfall", isHidden: false, id: "jog-falls" },
@@ -52407,6 +52416,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Chitradurga_fort_Image_%288%29%2C_Karnataka%2C_India.jpg/1280px-Chitradurga_fort_Image_%288%29%2C_Karnataka%2C_India.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — a wide view of the boulder-strewn fort with its temples (CC BY-SA 4.0) and an ancient temple within the fort (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "ASI-managed; the fort's sprawling boulder terrain takes real time to explore, so aim to enter well before closing." },
     category: ["Heritage", "History", "Adventure"],
     bestSeason: "October – February",
     duration: "Half day to 1 day",
@@ -52426,6 +52436,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹50–₹300", notes: "Autos from town to the fort entrance; the fort itself is explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Chitradurga town is unconfirmed — local autos are the reliable way to reach the fort gate", available: false },
     ],
     nearbyPlaces: [
       { name: "Jogimatti Hills", distance: "~10 km", type: "Hill Viewpoint/Forest", isHidden: true, id: "jogimatti" },
@@ -52607,6 +52618,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bidar_fort_complex_from_Solah_Khambha_Masjid.jpg/1280px-Bidar_fort_complex_from_Solah_Khambha_Masjid.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Sharza Darwaza and fortified retaining wall of Bidar Fort (CC BY-SA 4.0) and the fort complex seen from the Solah Khambha Masjid inside it (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Free entry. The Rangin Mahal and on-site museum inside the fort tend to close earlier, so visit those first." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 days",
@@ -52627,6 +52639,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹80–₹500", notes: "Autos and taxis link the fort, Ashtur tombs, and gurudwara, which are spread across the city", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bidar is unconfirmed — local autos and taxis are the reliable way to link the spread-out sights", available: false },
     ],
     nearbyPlaces: [
       { name: "Basavakalyana", distance: "~80 km", type: "Historic Town", isHidden: true, id: "basavakalyana" },
@@ -53008,6 +53021,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kittur_09.jpg/1280px-Kittur_09.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the palace ruins within Kittur Fort (CC0) and a basalt bastion wall with the ASI signboard (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Sources differ on the exact opening time (8 or 10 AM) — free entry either way, run by the state archaeology department." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -53027,6 +53041,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Taxi", cost: "₹200–₹1,500", notes: "Buses on the NH48 route drop near Kittur; a taxi is easiest for a round trip", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small village is unconfirmed — a bus or hired taxi from Belagavi/Hubballi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Belagavi", distance: "~50 km", type: "Fort City", isHidden: true, id: "belagavi" },
@@ -53272,6 +53287,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Watch_Tower_of_Nagara_Fort.JPG/1280px-Watch_Tower_of_Nagara_Fort.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — the grassy fort hill at Nagara (CC BY-SA 2.0) and its circular watchtower-bastion (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Standard ASI sunrise-to-sunset hours for the free-to-enter fort site." },
     category: ["Heritage", "History", "Nature"],
     bestSeason: "July – January",
     duration: "3–4 hours",
@@ -53291,6 +53307,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Own Vehicle", cost: "₹30–₹1,500", notes: "Shivamogga–Kollur buses pass through Nagara; the fort is a short walk/uphill from the village", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable this deep in the Malnad forests — buses or a hired vehicle are the only options", available: false },
     ],
     nearbyPlaces: [
       { name: "Sagara", distance: "~57 km", type: "Malnad Town", isHidden: false, id: "sagara" },
@@ -53600,6 +53617,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Yali_pillars_in_mantapa_of_Rameshwara_temple_at_Keladi.jpg/1280px-Yali_pillars_in_mantapa_of_Rameshwara_temple_at_Keladi.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Rameshwara Temple at Keladi (CC BY-SA 3.0) and its carved yali pillars in the mantapa (CC BY-SA 3.0), both by Dinesh Kannambadi. Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "For the Rameshwara Temple. The adjoining Keladi Museum keeps its own, shorter hours (roughly 10 AM–5 PM) and is closed Sundays." },
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "2–3 hours",
@@ -53619,6 +53637,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto", cost: "₹20–₹400", notes: "Frequent Sagara–Keladi buses; autos for the short hop to Ikkeri", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this rural Malnad town is unconfirmed — buses and local autos are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sagara", distance: "~10 km", type: "Malnad Town", isHidden: false, id: "sagara" },
@@ -53749,6 +53768,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Taxi / Bus", cost: "₹50–₹1,000", notes: "Autos within town; a taxi is useful to link the temples, KGF, Kotilingeshwara, and Antaragange", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kolar town is unconfirmed — local autos and a hired taxi cover the spread-out sights reliably", available: false },
     ],
     nearbyPlaces: [
       { name: "Antaragange", distance: "~5 km", type: "Cave Hill", isHidden: true, id: "antaragange" },
@@ -55105,6 +55125,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shravanabelagola_Bahubali_closeup.jpg/1280px-Shravanabelagola_Bahubali_closeup.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Gomateshwara (Bahubali) monolith with pilgrims for scale (CC BY-SA 3.0) and a close-up of the statue's face (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org), which gives the 58-ft height, the 981 CE date, Chavundaraya as builder, the 600+ steps, the 600+ inscriptions, and the 12-year Mahamastakabhisheka.",
+    visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Step-climbing to the summit statue is only allowed until 5 PM; the hill closes for a midday break in some listings, roughly 11:30 AM–3:30 PM." },
     category: ["Religious", "Heritage", "History"],
     bestSeason: "October – February",
     duration: "Half day",
@@ -55124,6 +55145,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Doli (palanquin)", cost: "₹0–₹2,000", notes: "The hill is climbed on foot; palanquin carriers are available for those unable to climb", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small pilgrim town is unconfirmed — buses and hired taxis from Hassan or Mysuru are the reliable way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Belur & Halebidu Temples", distance: "~90 km", type: "Hoysala Temples", isHidden: false, id: "belur-halebidu" },
@@ -55522,6 +55544,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Own Vehicle", cost: "₹30–₹2,000", notes: "Autos in town for the temple; a vehicle or hired jeep for the spread-out falls, Sahasralinga, and Yana", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this Malnad town is unconfirmed — local autos and a hired vehicle cover the spread-out sights", available: false },
     ],
     nearbyPlaces: [
       { name: "Yana Rocks", distance: "~40 km", type: "Rock Formation", isHidden: false, id: "yana-caves" },
@@ -55968,6 +55991,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Ikkeri_Aghoreshwara_Temple_2.jpg/1280px-Ikkeri_Aghoreshwara_Temple_2.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Aghoreshwara Temple at Ikkeri in its garden setting (CC BY-SA 4.0) and the elephant-guarded open mantapa (CC BY-SA 4.0). Details cross-checked against the official Karnataka Tourism site's coverage of the Keladi–Ikkeri Nayaka heritage circuit around Sagara (karnatakatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Matches the general daytime hours kept by the nearby Keladi Rameshwara Temple, since the two sites are almost always visited together." },
     category: ["Heritage", "History", "Religious"],
     bestSeason: "October – March",
     duration: "1–2 hours",
@@ -55987,6 +56011,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto", cost: "₹20–₹400", notes: "Frequent Sagara–Ikkeri buses; autos for the short hop to Keladi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this rural Malnad village is unconfirmed — buses and local autos are the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Keladi", distance: "~6 km", type: "Nayaka Heritage Village", isHidden: false, id: "keladi" },
@@ -59300,6 +59325,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Taxi / Auto", cost: "₹20–₹3,000", notes: "KSRTC buses from Sagara to Jog Falls, Keladi, Ikkeri and Holebagilu (for the Sigandur ferry); taxis and autos for flexible day trips", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this Malnad town is unconfirmed — buses and hired taxis cover the surrounding sights reliably", available: false },
     ],
     nearbyPlaces: [
       { name: "Jog Falls", distance: "~30 km", type: "Waterfall", isHidden: false, id: "jog-falls" },
