@@ -24834,6 +24834,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "KTDC Boat Safari", cost: "₹150–₹500 per person (approx.)", notes: "The standard way to see the reserve's interior", available: true },
       { mode: "Guided Forest Trek", cost: "₹500–₹1,500 per person (approx.)", notes: "Alternative or supplementary way to explore on foot with a forest guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Thekkady town is unconfirmed — hired taxis are the standard way to and around it", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~90 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -27220,6 +27221,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest Department Jeep/Permit Access", cost: "Permit + vehicle fees vary; arrange via forest department", notes: "The only legal way to enter the core zone", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this deep into forest country — a taxi from Mannarkkad/Palakkad is the way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Wayanad", distance: "~120 km", type: "Hill Station", isHidden: false, id: "wayanad" },
@@ -27334,6 +27336,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹200–₹600", notes: "Standard way to get between Vagamon's spread-out hills and viewpoints", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Vagamon is unconfirmed — hired taxis and autos are the standard way around", available: false },
     ],
     nearbyPlaces: [
       { name: "Kottayam", distance: "~65 km", type: "City", isHidden: false, id: "kottayam" },
@@ -57366,6 +57369,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep / Taxi + walking", cost: "₹300–₹1,500", notes: "Jeeps and taxis from Nedumkandam/Puttady; the statue, viewpoint and rock are a short walk apart on open ground", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage up here — a jeep or taxi from Nedumkandam/Thekkady is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Thekkady / Periyar Tiger Reserve", distance: "~40 km", type: "Wildlife", isHidden: false, id: "periyar-tiger-reserve-thekkady" },
@@ -57432,6 +57436,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Auto + dam buggy", cost: "₹200–₹1,500", notes: "Taxis and autos from Cheruthoni; during the open season, buggy cars run along the dam crest and boats on the reservoir (both ticketed)", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage around Cheruthoni is unconfirmed — taxis and autos cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~60 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -57768,6 +57773,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Auto + walking", cost: "₹300–₹2,000", notes: "A hired taxi or auto is best for the spread-out viewpoints; estate walks are on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Peermade is unconfirmed — hired taxis are the standard way around", available: false },
     ],
     nearbyPlaces: [
       { name: "Thekkady / Periyar Tiger Reserve", distance: "~40 km", type: "Wildlife", isHidden: false, id: "periyar-tiger-reserve-thekkady" },
@@ -58022,6 +58028,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Waterfall"],
     bestSeason: "June – January (strongest in and just after the monsoon; thin by summer)",
     duration: "2 – 3 hours (half day with Thenmala)",
+    visitingHours: { opens: "8:00 AM", closes: "4:00 PM", note: "Run as a plastic-free zone with a small entry fee; designated bathing areas only." },
     highlights: [
       { name: "A ~91 m single-drop \"milk stream\" waterfall in forest" },
       { name: "Designated bathing pools downstream, with a separate ladies' area and changing rooms" },
@@ -58038,6 +58045,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto + walking", cost: "₹20–₹500", notes: "Buses on the KK Road and autos from Aryankavu/Thenmala; from the entrance it is a short downhill walk to the fall", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into forest country is unconfirmed — a taxi from Kollam/Thenmala is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Thenmala Ecotourism", distance: "~7 km", type: "Eco-tourism", isHidden: false, id: "thenmala-ecotourism" },
@@ -58155,6 +58163,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "September – March (misty; heavy rain and leeches June–August)",
     duration: "1 day trip or 1 – 2 nights",
+    visitingHours: { opens: "8:00 AM", closes: "4:30 PM", note: "For the KFDC day-trip package; overnight guests follow a separate schedule. Advance booking with KFDC is required — there is no walk-in or independent access." },
     highlights: [
       { name: "The jeep journey from Kumily through cardamom estates and sholas" },
       { name: "Gavi and Kochu Pampa lakes — boating and birding" },
@@ -58171,6 +58180,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "KFDC jeep + guided walking + boat", cost: "Included in the package", notes: "All movement inside Gavi is by KFDC jeep and on foot with a guide; boating on Gavi/Kochu Pampa lakes is part of the packages", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage — private vehicles aren't even allowed past the forest check post, only the KFDC jeep", available: false },
     ],
     nearbyPlaces: [
       { name: "Thekkady / Periyar Tiger Reserve", distance: "~28 km by forest road (via Kumily)", type: "Wildlife", isHidden: false, id: "periyar-tiger-reserve-thekkady" },
@@ -58562,6 +58572,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Family", "Scenic", "Amusement"],
     bestSeason: "October – March (evenings; musical fountain and laser show on weekends)",
     duration: "2 – 3 hours (evening)",
+    visitingHours: { opens: "3:00 PM", closes: "9:00 PM", note: "Individual rides and the musical fountain/laser show may run shorter hours, especially on weekdays — confirm locally." },
     highlights: [
       { name: "A landscaped hill park with town views and old fort traces" },
       { name: "The Arangu open-air auditorium; weekend musical fountain and laser show" },
@@ -58578,6 +58589,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Walking", cost: "₹30–₹150", notes: "Autos from anywhere in town; the park is walked once you are there, with a small toy-train/ropeway inside at times", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Malappuram town", available: true },
     ],
     nearbyPlaces: [
       { name: "Kadalundi Bird Sanctuary", distance: "~30 km", type: "Wildlife", isHidden: false, id: "kadalundi-bird-sanctuary" },
@@ -58711,6 +58723,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep + walking", cost: "₹500–₹1,500 jeep from the base", notes: "Jeeps run the rough last track to the hilltop; the grassland and viewpoints are then walked", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage on the rough hilltop track — a jeep from Pala/Thodupuzha is the way up", available: false },
     ],
     nearbyPlaces: [
       { name: "Vagamon", distance: "~40 km", type: "Hill Station", isHidden: false, id: "vagamon" },
@@ -58844,6 +58857,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided walking + boat", cost: "Trail/guide and boat fees", notes: "Birding is on foot along the trails with a local guide; boats run on the adjacent Periyar/Bhoothathankettu water", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into forest country is unconfirmed — a taxi from Kochi/Kothamangalam is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kochi (Ernakulam)", distance: "~60 km", type: "City", isHidden: false, id: "kochi" },
