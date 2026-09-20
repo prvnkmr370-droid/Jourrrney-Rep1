@@ -48841,6 +48841,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Religious"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Outside prayer times." },
     highlights: [
       { name: "A Mughal-era mosque from Rajmahal's brief tenure as Bengal's capital" },
       { name: "A large open courtyard visible in its historic layout" },
@@ -48857,6 +48858,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Sahibganj to Rajmahal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote corner of the state — a local taxi from Sahibganj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Maluti Temples", distance: "~70 km", type: "Heritage Temples", isHidden: false, id: "maluti-temples" },
@@ -48901,6 +48903,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife"],
     bestSeason: "October – March",
     duration: "3–4 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [
       { name: "Royal Bengal tigers in dedicated enclosures" },
       { name: "Himalayan black bears" },
@@ -48918,6 +48921,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Ranchi", available: true },
       { mode: "Walking (within the park)", cost: "Included with entry", notes: "The park is explored on foot along marked paths", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~15 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -48961,6 +48965,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "An active ashram — visiting hours can be restricted; check ahead." },
     highlights: [
       { name: "Landscaped ashram grounds with arched garden walkways" },
       { name: "Ties to the Satsang movement founded by Thakur Anukul Chandra" },
@@ -48977,6 +48982,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Deoghar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baidyanath Dham", distance: "~5 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
@@ -49039,6 +49045,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Dhanbad to Maithon", available: true },
       { mode: "Boating", cost: "₹100–₹400", notes: "The main recreational activity on the reservoir", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dhanbad is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Topchanchi Lake", distance: "~40 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
@@ -49099,6 +49106,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹700", notes: "From Koderma to the dam", available: true },
       { mode: "Boating", cost: "₹100–₹400", notes: "Colourful tourist boats at the jetty", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Koderma is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Wildlife Sanctuary", distance: "~65 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
@@ -49158,6 +49166,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Bokaro or Bermo to the dam", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bokaro is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Maithon Dam", distance: "~60 km", type: "Dam", isHidden: false, id: "maithon-dam" },
@@ -49201,6 +49210,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "Vividly painted, multi-tiered temple shikharas" },
       { name: "A hilltop granite-outcrop setting" },
@@ -49218,6 +49228,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to the temple", available: true },
       { mode: "Walking (hillside climb)", cost: "Free", notes: "A short but genuine climb to the temple complex", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ghatshila is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Dharagiri Waterfalls", distance: "~10 km", type: "Waterfall", isHidden: false, id: "dharagiri-waterfalls" },
@@ -49277,6 +49288,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹400–₹1,000", notes: "From Hazaribagh town to the dam", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Hazaribagh is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Wildlife Sanctuary", distance: "~25 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
