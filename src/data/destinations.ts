@@ -2173,6 +2173,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Taxi/Jeep (sightseeing circuit)", cost: "₹1,500–₹3,000/day", notes: "The standard way to cover the spread-out sights — Eravikulam, Mattupetty, Top Station", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For short hops around Munnar town itself", available: true },
       { mode: "Trekking", cost: "Guide fee ₹500–₹1,500", notes: "Several tea-estate and viewpoint trails are best done on foot with a local guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable for local pickups — the local taxi union actively blocks Ola/Uber rides within Munnar (there have been reported incidents of drivers and passengers being confronted); a hired taxi/jeep for the day is the normal way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Thekkady/Periyar Tiger Reserve", distance: "90 km", type: "Wildlife", isHidden: true, id: "periyar-tiger-reserve-thekkady" },
@@ -25117,6 +25118,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Munnar", notes: "Standard way to reach Top Station", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the local taxi union blocks app-cab pickups around Munnar; a hired taxi is the standard way here", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~32 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -27239,8 +27241,9 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Nilgiri_Tahr_from_Eravikulam_National_Park%2C_Kerala.jpg/1280px-Nilgiri_Tahr_from_Eravikulam_National_Park%2C_Kerala.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Nilgiri_Tahr_from_Eravikulam_National_Park%2C_Kerala.jpg/1280px-Nilgiri_Tahr_from_Eravikulam_National_Park%2C_Kerala.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Eravikulam_National_Park-WUS07186.jpg/1280px-Eravikulam_National_Park-WUS07186.jpg"],
     imageCredit: "Photos: Gannu03, Rainer Halama — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "7:00 AM", closes: "4:00 PM", note: "The park closes entirely during the Nilgiri Tahr breeding season, roughly February–April — check current status before planning a visit in that window." },
     category: ["Nature"],
-    bestSeason: "September – April",
+    bestSeason: "September – January (the park closes for the Nilgiri Tahr breeding season, roughly February – April)",
     duration: "2–3 hours",
     highlights: [
       { name: "Kerala's first national park, declared 1978 after 1975 sanctuary status" },
@@ -27256,6 +27259,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Park Shuttle Bus", cost: "Included in entry ticket (approx.)", notes: "The only way to reach the walking trailhead from the entrance gate", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the local taxi union blocks app-cab pickups around Munnar; a hired taxi or auto covers the short hop to the gate", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~5 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -54244,6 +54248,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "4x4 Jeep", cost: "₹2,000–₹3,500 per jeep", notes: "The only transport up the track from Suryanelli; arranged through Munnar operators", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the rough track up from Suryanelli requires a 4x4 jeep, and app-cab pickups are also blocked by the local taxi union around Munnar", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~32 km (via Suryanelli)", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -55092,6 +55097,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Jeep / Auto", cost: "₹300–₹2,500", notes: "A vehicle or hired jeep is best; the dolmens, rock-art sites, and depot are spread out", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable this far from Munnar — the local taxi union also blocks app-cab pickups around Munnar itself; a hired taxi or jeep is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~40 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -58216,6 +58222,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Grizzled_sqirrel_Chinnar_WLS_Kerala_%2868%29.jpg/1280px-Grizzled_sqirrel_Chinnar_WLS_Kerala_%2868%29.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Chinnar river running through riparian forest in the sanctuary (CC BY 2.0), and a grizzled giant squirrel (Ratufa macroura), Chinnar's flagship species (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Guided treks run in two slots, roughly 6–11 AM and 3–6 PM; verified against Kerala Tourism's own fact-file (keralatourism.org)." },
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "September – March (drier and cooler; the sanctuary is hot and exposed)",
     duration: "Half day to 1 – 2 days",
@@ -58235,6 +58242,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided walking + Forest Department vehicle", cost: "Ticket + trek/guide fees", notes: "Treks and river walks are done on foot with a Forest Department guide from the check posts; there is no free-roaming safari drive", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — access is via Forest Department check posts and guided treks; a hired taxi from Munnar is the way to reach the sanctuary itself", available: false },
     ],
     nearbyPlaces: [
       { name: "Marayoor", distance: "~18 km", type: "Sandalwood & Dolmens", isHidden: false, id: "marayoor" },
@@ -58301,6 +58309,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Operator jeep + guided trekking", cost: "Included in the trek package", notes: "A jeep from Munnar to the Rhodo Valley base, then the peak on foot with a guide; there is no road up the mountain", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the rough base-camp road needs a jeep, and app-cab pickups are also blocked by the local taxi union around Munnar", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~20–25 km", type: "Hill Station", isHidden: false, id: "munnar" },
@@ -58568,6 +58577,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Own Vehicle + boat", cost: "₹1,200–₹2,000 taxi from Munnar; boating ticketed", notes: "Best reached by car or taxi from Munnar; the boating centre at the reservoir is ticketed", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Not usable — the local taxi union blocks app-cab pickups around Munnar; a hired taxi is the standard way here", available: false },
     ],
     nearbyPlaces: [
       { name: "Munnar", distance: "~22 km", type: "Hill Station", isHidden: false, id: "munnar" },
