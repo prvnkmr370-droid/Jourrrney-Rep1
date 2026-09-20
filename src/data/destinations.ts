@@ -66123,6 +66123,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "Managed as an archaeological park with a small entry fee." },
     highlights: [{ name: "The Kangla Sha — colossal mythical dragon-lion guardian statues" }, { name: "The old Govindajee Temple within the citadel" }, { name: "Inner and outer moats of the historic palace complex" }, { name: "Ima Market, a short walk from the Western Gate", id: "ima-market" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Kangla is right in Imphal city, an easy add-on to any Imphal-based day." },
@@ -66133,6 +66134,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available for getting around central Imphal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Ima Market", distance: "~1 km", type: "Women's Market", isHidden: false, id: "ima-market" },
@@ -66184,6 +66186,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Shopping"],
     bestSeason: "Year-round (a working daytime market)",
     duration: "1–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "A genuine working market — mornings are busiest and freshest for produce." },
     highlights: [{ name: "Run entirely by an estimated 3,000+ women vendors" }, { name: "Fresh produce, fish and groceries in one section" }, { name: "Handlooms and household tools in the other" }, { name: "Kangla, a short walk away", id: "kangla" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Central Imphal, an easy add-on to any city day." },
@@ -66194,6 +66197,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~1 km", type: "Historic Citadel", isHidden: false, id: "kangla" },
@@ -66243,6 +66247,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "The early-morning Aarti draws the main congregation; visitors are welcome to attend." },
     highlights: [{ name: "Twin golden domes and a raised congregation hall" }, { name: "Early-hour Aarti, open to visitors" }, { name: "Adjacent to the old royal palace grounds" }, { name: "Kangla, a short distance away", id: "kangla" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Central Imphal, an easy add-on to a Kangla/Ima Market day." },
@@ -66253,6 +66258,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~1.5 km", type: "Historic Citadel", isHidden: true, id: "kangla" },
@@ -66302,6 +66308,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open park grounds; a quick stop rather than a ticketed site." },
     highlights: [{ name: "The memorial pillar honouring the martyrs of the 1891 Anglo-Manipuri War" }, { name: "Kanglasha statues, echoing the state's official emblem" }, { name: "Bir Tikendrajit Park grounds" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Central Imphal, easily combined with a Kangla/Govindajee Temple day." },
@@ -66312,6 +66319,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~2 km", type: "Historic Citadel", isHidden: true, id: "kangla" },
@@ -66358,6 +66366,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "7:00 AM", closes: "5:30 PM", note: "Commonwealth War Graves Commission-managed; open daylight hours." },
     highlights: [{ name: "Commonwealth War Graves Commission-maintained grounds" }, { name: "Rows of stone markers honouring WWII's Battle of Imphal" }, { name: "A quiet, reflective counterpoint to Imphal's busier sights" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Central Imphal, easily combined with other city sights." },
@@ -66368,6 +66377,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Manipur State Museum", distance: "~2 km", type: "Museum", isHidden: true, id: "manipur-state-museum" },
@@ -66414,6 +66424,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Closed on Sundays and government holidays — confirm before visiting, as museum schedules can vary." },
     highlights: [{ name: "Traditional costumes and tribal heritage displays" }, { name: "Arms, ammunition and historical relics" }, { name: "Portraits of Manipur's former rulers" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min into the city", fromBangalore: "Via Kolkata/Delhi, then ~20 min into the city", duration: "Fly into Imphal, then a short drive into the city centre", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Near the Polo Ground in central Imphal." },
@@ -66424,6 +66435,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹50–₹200 within Imphal", notes: "Widely available", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Imphal — local auto rickshaws and hired cabs cover the city", available: false },
     ],
     nearbyPlaces: [
       { name: "Imphal War Cemetery", distance: "~2 km", type: "War Cemetery", isHidden: true, id: "imphal-war-cemetery" },
@@ -66470,6 +66482,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "March – April (peak orchid bloom)",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "4:30 PM", note: "Managed grounds with a small entry fee; the bloom is best March–April." },
     highlights: [{ name: "Over 110 rare orchid varieties across 200 acres" }, { name: "The Blue Vanda (Vanda coerulea) and other endemic species" }, { name: "Peak bloom in March–April" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~20 min on", fromBangalore: "Via Kolkata/Delhi, then ~20 min on", duration: "Fly into Imphal, then ~20 min by road", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Close to Imphal, on NH-2 — an easy add-on to a city day, especially in the March–April bloom." },
@@ -66480,6 +66493,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹200–₹500 round trip", notes: "Easily arranged from Imphal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal area — a hired cab or auto covers the trip", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~10 km, in Imphal", type: "Heritage Site", isHidden: false, id: "kangla" },
@@ -66529,6 +66543,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Closed on Sundays and government holidays — confirm before making the trip out." },
     highlights: [{ name: "Relief carvings and sculptures depicting Meitei mythology" }, { name: "Replica traditional houses of Poumai, Kabui, Meitei, Kuki and Tangkhul communities" }, { name: "Pottery, manuscripts, basketry and bell-metal work from across the Northeast" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~40 min on", fromBangalore: "Via Kolkata/Delhi, then ~40 min on", duration: "Fly into Imphal, then ~40 min by road to Andro", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "A bit further out than central Imphal sights — budget a half-day." },
@@ -66539,6 +66554,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹800–₹1,800 round trip", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal area — a hired taxi from a hotel or local operator is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kangla", distance: "~26 km, in Imphal", type: "Heritage Site", isHidden: true, id: "kangla" },
