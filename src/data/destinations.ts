@@ -74412,6 +74412,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "Usually included in a Lachung/Yumthang/Zero Point package", notes: "Book through a registered Gangtok travel agency", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Yumthang Valley", distance: "~23 km", type: "Nature", isHidden: false, id: "yumthang-valley" },
@@ -74470,6 +74471,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹5,000–₹9,000 for a 2-day Lachung package", notes: "Book through a registered Gangtok travel agency", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Yumthang Valley", distance: "~28 km", type: "Nature", isHidden: false, id: "yumthang-valley" },
@@ -74529,6 +74531,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Registered Trekking Guide / Porter Service", cost: "Varies by trek length and group size", notes: "Mandatory for park entry — arrange through a registered Sikkim trekking operator", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; the park itself is trekking-access only", available: false },
     ],
     nearbyPlaces: [
       { name: "Dzongri", distance: "~18 km trek from Yuksom", type: "Adventure", isHidden: false, id: "dzongri" },
@@ -74587,6 +74590,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Registered Trekking Operator", cost: "₹15,000–₹35,000 for the full 8–9 day package, including guide and porters", notes: "Mandatory — independent entry into the national park is not permitted", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; the trek itself is on foot beyond Yuksom", available: false },
     ],
     nearbyPlaces: [
       { name: "Dzongri", distance: "~14 km before Goecha La on the same trek", type: "Adventure", isHidden: false, id: "dzongri" },
@@ -74646,6 +74650,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Registered Trekking Operator", cost: "Included in a Goecha La or Dzongri-only trek package", notes: "Mandatory — independent entry into the national park is not permitted", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; the trek itself is on foot beyond Yuksom", available: false },
     ],
     nearbyPlaces: [
       { name: "Goecha La", distance: "~14 km further along the same trek", type: "Adventure", isHidden: false, id: "goecha-la" },
@@ -74704,6 +74709,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Forest Department Guide", cost: "₹1,000–₹2,500 round trip from Gangtok", notes: "A forest department permit and guide are recommended for sanctuary trails", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "MG Marg", distance: "~30 km", type: "Shopping", isHidden: false, id: "mg-marg-gangtok" },
@@ -74761,6 +74767,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab to Trailhead / On Foot", cost: "₹1,500–₹3,000 to Hilley from Pelling", notes: "The sanctuary itself is walked, not driven", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~30 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -74818,6 +74825,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / City Tour", cost: "₹500–₹1,200 for the full loop", notes: "Easily arranged from MG Marg", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations, and Gangtok relies instead on local hired cabs and a district taxi union system", available: false },
     ],
     nearbyPlaces: [
       { name: "MG Marg", distance: "~9 km", type: "Shopping", isHidden: false, id: "mg-marg-gangtok" },
@@ -74876,6 +74884,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On Foot from Yuksom", cost: "Free", notes: "A roughly hour-long uphill walk from the town centre", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Yuksom", distance: "~3 km", type: "Heritage", isHidden: false, id: "yuksom" },
@@ -74920,6 +74929,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sanga_Choeling_Monastery%2C_Pelling%2C_West_Sikkim_05.jpg/1280px-Sanga_Choeling_Monastery%2C_Pelling%2C_West_Sikkim_05.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sanga_Choeling_Monastery%2C_Pelling%2C_West_Sikkim_05.jpg/1280px-Sanga_Choeling_Monastery%2C_Pelling%2C_West_Sikkim_05.jpg"],
     imageCredit: "Photo: Amitabha Gupta — Wikimedia Commons, CC BY 4.0, part of Wiki Explores Sikkim Phase I.",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Sikkim's official tourism site has no per-monastery timings page, so confirm locally before visiting." },
     category: ["Buddhist Site", "Heritage"],
     bestSeason: "October – May",
     duration: "1–2 hours, including the climb from Pelling",
@@ -74934,6 +74944,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On Foot from Pelling", cost: "Free after reaching the trailhead", notes: "A ridge-top climb from central Pelling", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~3 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -74991,6 +75002,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / On Foot", cost: "₹500–₹1,500 for local sightseeing", notes: "Easily arranged in town", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~25 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -75048,6 +75060,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹5,000–₹9,000 for a 2-day Lachen/Gurudongmar package", notes: "Book through a registered Gangtok travel agency", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Gurudongmar Lake", distance: "~65 km", type: "Lake", isHidden: false, id: "gurudongmar-lake" },
@@ -75093,6 +75106,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/61/Cable_Car_-_Gangtok_Sikkim.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/61/Cable_Car_-_Gangtok_Sikkim.jpg"],
     imageCredit: "Photo: Indrajit Das — Wikimedia Commons, CC BY-SA 3.0.",
+    visitingHours: { opens: "9:30 AM", closes: "6:30 PM", note: "Ticket counter closes at 6:30 PM; operations pause in poor weather and are often suspended during the monsoon." },
     category: ["Adventure", "Culture"],
     bestSeason: "October – March for the clearest views",
     duration: "30–45 minutes",
@@ -75107,6 +75121,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / City Cab", cost: "₹100–₹300 within Gangtok", notes: "Easily arranged anywhere in the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations, and Gangtok relies instead on local hired cabs and a district taxi union system", available: false },
     ],
     nearbyPlaces: [
       { name: "MG Marg", distance: "~2 km", type: "Shopping", isHidden: false, id: "mg-marg-gangtok" },
@@ -75165,6 +75180,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹300–₹700 round trip from Pelling", notes: "Easily arranged in Pelling", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~10 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -75222,6 +75238,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹500–₹1,200 round trip from Gangtok", notes: "Easily arranged in Gangtok", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "MG Marg", distance: "~17 km", type: "Shopping", isHidden: false, id: "mg-marg-gangtok" },
@@ -75279,6 +75296,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Registered Rafting Operator", cost: "₹1,500–₹4,000 per person per session", notes: "Book through a licensed operator with proper safety gear", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Rumtek Monastery", distance: "~25 km", type: "Buddhist Site", isHidden: false, id: "rumtek-monastery" },
