@@ -22080,6 +22080,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily, within the Uparkot Fort complex area." },
     highlights: [
       { name: "One of the oldest rock-cut monastic sites in Gujarat, dated to Ashoka's era (3rd–4th century BCE)" },
       { name: "Hand-chiselled chambers rather than a natural cave — a western wing of water tanks and an L-shaped monsoon-shelter wing" },
@@ -22094,6 +22095,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves; walkable from Uparkot Fort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Uparkot Fort", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
@@ -22138,6 +22140,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "November – February",
     duration: "45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Rock-cut across three storeys, 45 metres up a cliff face, dating to the Satavahana era (1st–2nd century AD)" },
       { name: "A rare site shared by both Buddhist and Jain religious history — Buddhist in origin, later home to Jain ascetics" },
@@ -22152,6 +22155,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 from Junagadh town", notes: "Standard way to reach the caves via Mullawada locality; walkable from Uparkot Fort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Junagadh is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Uparkot Fort", distance: "~1 km", type: "Heritage", isHidden: true, id: "uparkot-fort" },
@@ -22196,6 +22200,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed; open daily." },
     highlights: [
       { name: "One of the rare surviving Solanki-period (12th-century) toran gateway pairs in Gujarat" },
       { name: "~40-foot sandstone columns carved with dancing girls, elephants, and battle scenes" },
@@ -22210,6 +22215,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Auto Rickshaw", cost: "₹300–₹700 from Mehsana railway station", notes: "Standard way to reach Vadnagar (~35 km); walkable within the town itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mehsana/Vadnagar is unconfirmed — a taxi or auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mehsana", distance: "~35 km", type: "City", isHidden: false },
@@ -22252,6 +22258,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Built in 1586 for Qutubuddin Muhammad Khan, tutor to Prince Salim (later Emperor Jahangir)" },
       { name: "Octagonal platform with five arches on each of its eight sides" },
@@ -22265,6 +22272,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Vadodara city", notes: "Standard way to reach the site from anywhere in Vadodara", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Widely available across Vadodara", available: true },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "Same city", type: "City", isHidden: false, id: "vadodara" },
@@ -22310,6 +22318,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "9:00 PM", note: "The first-floor gallery keeps daytime hours; the gate itself is lit up and viewable after dark." },
     highlights: [
       { name: "One of only two surviving gates of old walled Jamnagar's original five" },
       { name: "Built in the 17th century under Wazir Meraman Khawa" },
@@ -22324,6 +22333,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300 within Jamnagar city", notes: "Standard way to reach the gate from anywhere in Jamnagar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamnagar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jamnagar", distance: "Same city", type: "City", isHidden: false, id: "jamnagar" },
