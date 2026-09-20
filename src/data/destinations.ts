@@ -14198,6 +14198,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature"],
     bestSeason: "October – March; Mahashivaratri is the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Faces the Arvalem waterfall directly" }, { name: "Site for ancestral rituals" }, { name: "Mahashivaratri crowds" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~45km / ~1h from Panaji", costRange: "₹1,000–₹1,800 (cab from Panaji)", tips: "Combine with the Arvalem Falls and caves right next door, and Shri Datta Mandir nearby." },
@@ -14207,6 +14208,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Arvalem Falls & Caves", distance: "Right next door", type: "Waterfall", isHidden: true },
@@ -14249,6 +14251,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; the nine days leading to Chaitra Purnima (April) are the major festival",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Ancestral deity of the anti-colonial Rane family" }, { name: "1942 rebuild, North Indian architectural style" }, { name: "Carved wooden chariot (Arjuna's chariot)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~15min from Bicholim town", costRange: "₹300–₹700 (cab)", tips: "The Rane-family history here is a genuinely distinctive local-resistance story worth reading up on." },
@@ -14258,6 +14261,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable coverage this close to Bicholim town", available: true },
     ],
     nearbyPlaces: [
       { name: "Shri Datta Mandir", distance: "~3 km", type: "Temple", isHidden: false, id: "shri-datta-mandir" },
@@ -14299,6 +14303,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round for the temple itself; the Shirgao Jatra (early May) is a major, real fire-walking festival",
     duration: "1 hour (much longer during the Jatra)",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily; extended hours during the Shirgao Jatra." },
     highlights: [{ name: "Blend of northern & southern temple architecture" }, { name: "Shirgao Jatra fire-walking ceremony (early May)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bicholim — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Bicholim town", costRange: "₹300–₹700 (cab from Bicholim)", tips: "If visiting specifically for the Jatra, expect very large crowds and plan transport/parking well in advance." },
@@ -14308,6 +14313,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Reliable outside Jatra time; expect heavy demand and possible surge pricing during the festival itself", available: true },
     ],
     nearbyPlaces: [
       { name: "Bicholim town", distance: "~8 km", type: "Town", isHidden: true },
@@ -14356,6 +14362,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March; the Feast of St. Francis Xavier (early December) is the major annual occasion",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "UNESCO World Heritage Monument" }, { name: "Relics of St. Francis Xavier" }, { name: "Unplastered granite façade — 5 architectural orders" }, { name: "36-painting Biblical art gallery" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Old Goa's churches sit close together — genuinely walkable as a cluster once you're there." },
@@ -14366,6 +14373,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Old Goa's churches are clustered close together and walkable as a group", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Panaji", notes: "The practical way to reach Old Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Se Cathedral, Goa", distance: "Adjoining", type: "Church", isHidden: false, id: "se-cathedral-goa" },
@@ -14410,6 +14418,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "Largest church in Asia" }, { name: "St. Francis Xavier's baptismal font" }, { name: "8 chapels & an 18th-century organ" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Right next to the Basilica of Bom Jesus — visit together." },
@@ -14419,6 +14428,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Adjoining the other Old Goa churches", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Basilica of Bom Jesus", distance: "Adjoining", type: "Church", isHidden: false, id: "basilica-of-bom-jesus" },
@@ -14462,6 +14472,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Open daily; closed to visitors during Mass." },
     highlights: [{ name: "1521 original, rebuilt 1665" }, { name: "Portuguese-Manueline entrance portal" }, { name: "Adjoining Archaeological Museum" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Old Goa — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "Genuinely worth budgeting extra time for the Archaeological Museum in the adjoining convent." },
@@ -14471,6 +14482,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Adjoining the other Old Goa churches", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Se Cathedral, Goa", distance: "Nearby", type: "Church", isHidden: false, id: "se-cathedral-goa" },
