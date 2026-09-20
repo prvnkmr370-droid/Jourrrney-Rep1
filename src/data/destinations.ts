@@ -6604,6 +6604,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "For the Jahangir Mahal/fort complex; the riverside Chhatris are viewed from outside and have no gate hours of their own." },
     highlights: [{ name: "Jahangir Mahal" }, { name: "Royal Chhatris (cenotaphs) along the Betwa" }, { name: "Raja Mahal" }, { name: "Chaturbhuj Temple" }, { name: "Orchha Wildlife Sanctuary" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Jhansi Junction, then ~20 min road — ~7–8h total", fromMumbai: "Via Jhansi — ~12–13h", fromBangalore: "Via Jhansi — 22h+", duration: "~7–8h from Delhi to Jhansi, +20 min road", costRange: "₹350–₹1,600 (train) + ₹200–₹400 (local transfer)", tips: "Jhansi Junction, a major railway hub, is the practical gateway — Orchha itself has no significant station of its own." },
@@ -6619,6 +6620,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The whole heritage core is compact and walkable", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A relaxed, popular way to cover the wider town and riverbank", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹100", notes: "For the short hop from Jhansi or getting around the wider area", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Orchha is unconfirmed — autos and the short hop from Jhansi cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Jhansi Fort (a short trip across the state border)", distance: "16 km", type: "Heritage", isHidden: true },
@@ -6685,6 +6687,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared/Private Jeep", cost: "₹200–₹1,500", notes: "The standard way to reach spread-out viewpoints and falls — many attractions require a permit-holding local vehicle", available: true },
       { mode: "Walking/Trekking", cost: "Free (guide fee ₹300–₹800)", notes: "Several sites, including some caves, are only reachable on foot with a local guide", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "Workable for the flatter Cantonment-area roads", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Pachmarhi is unconfirmed — shared/private jeeps are the standard way to reach the spread-out sites", available: false },
     ],
     nearbyPlaces: [
       { name: "Satpura Tiger Reserve", distance: "Adjacent", type: "Wildlife", isHidden: true },
@@ -6882,6 +6885,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The core monument cluster is walkable, though the ruins are spread over a wide plateau", available: true },
       { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A popular, relaxed way to cover the wider spread-out site", available: true },
       { mode: "Auto Rickshaw/Shared Taxi", cost: "₹300–₹800 (half-day tour)", notes: "For covering the full spread of monuments in one visit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mandu is unconfirmed — autos and shared taxis cover the spread-out monuments", available: false },
     ],
     nearbyPlaces: [
       { name: "Indore", distance: "100 km", type: "Culture", isHidden: true },
@@ -59924,6 +59928,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "UNESCO", "History"],
     bestSeason: "October – March",
     duration: "2 – 3 hours (half-day trip from Bhopal)",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "ASI-managed; no food or water sold on the trail — bring your own." },
     highlights: [
       { name: "~500 painted shelters — one of the world's oldest continuous rock-art records" },
       { name: "The Auditorium Rock and its ancient cupules" },
@@ -59940,6 +59945,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi + walking", cost: "₹1,500–₹2,500 round trip from Bhopal", notes: "A vehicle to the site, then a marked walking trail of ~1.5–2 km linking the main shelters", available: true },
+      { mode: "Ola / Uber", cost: "₹1,500–₹2,500 one-way from Bhopal", notes: "Bookable from Bhopal, though a round-trip taxi that waits is the more common arrangement given there's no public transport back", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhopal", distance: "~45 km", type: "City", isHidden: false, id: "bhopal" },
@@ -60006,6 +60012,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rowing boat / ropeway / auto", cost: "Boat share ₹100–₹200 pp; ropeway ticketed; autos ₹200–₹500", notes: "Shared rowing boats run from the Panchvati ghat through the gorge; a ropeway (cable car) crosses at Dhuandhar; autos link the ghat, the falls and the temple", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹600 from Jabalpur", notes: "Bookable from Jabalpur, though autos and taxis are the more typical option locally", available: true },
     ],
     nearbyPlaces: [
       { name: "Jabalpur", distance: "~20 km", type: "City", isHidden: false, id: "jabalpur" },
