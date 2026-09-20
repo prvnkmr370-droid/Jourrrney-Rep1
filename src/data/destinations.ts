@@ -61018,6 +61018,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Pilgrimage"],
     bestSeason: "October – March (a short trip; monsoon adds greenery but the rock terrace gets slippery)",
     duration: "Half-day from Bhopal, often paired with Bhimbetka",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "An ASI site, generally open sunrise to sunset with a small entry fee." },
     highlights: [
       { name: "Bhojeshwar Temple — an 11th-century temple abandoned mid-build, with no spire" },
       { name: "One of India's largest Shiva lingas (~2.3 m), framed by four giant pillars" },
@@ -61034,6 +61035,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired taxi from Bhopal", cost: "₹1,200–₹2,000 for a half-day round trip", notes: "There is no useful public transport to the temple; a hired car from Bhopal is the practical way, ideally on a circuit with Bhimbetka", available: true },
+      { mode: "Ola / Uber", cost: "₹1,200–₹2,000 one-way from Bhopal", notes: "Bookable from Bhopal, though a round-trip taxi that waits is the more common arrangement", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhopal", distance: "~28 km", type: "State Capital", isHidden: false, id: "bhopal" },
@@ -61101,6 +61103,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, taxis & park safari vehicles", cost: "₹30–₹150 auto in town; separate park entry + vehicle for the wildlife drive", notes: "Autos and taxis cover the Chhatris, the palace and the park gate; inside Madhav National Park you drive the designated route with park permission (and a guide where required)", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Shivpuri is unconfirmed — autos and taxis cover the town and park gate easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Gwalior", distance: "~112 km", type: "Fort City", isHidden: false, id: "gwalior" },
@@ -61153,6 +61156,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Architecture"],
     bestSeason: "October – March (the ravine country is very hot from April to June)",
     duration: "Half-day to 1 day, on a loop with Mitawali and Padavali",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed sites, generally open sunrise to sunset; no shops or facilities at any of the three stops." },
     highlights: [
       { name: "~200 Pratihara-era (8th–10th c.) sandstone temples, dozens reassembled by the ASI" },
       { name: "The step-tank and the packed rows of Nagara shikharas" },
@@ -61169,6 +61173,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired car for the circuit", cost: "₹1,800–₹2,800 half-day from Gwalior", notes: "A hired car with driver is effectively the only way to link Mitawali, Padavali and Bateshwar; roads are narrow rural lanes", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural ravine country — a hired car with driver from Gwalior is the only practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gwalior", distance: "~35 km", type: "Fort City", isHidden: false, id: "gwalior" },
@@ -61235,6 +61240,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos & hired taxi", cost: "₹20–₹80 per auto hop in town; ₹1,500–₹2,500 for a day taxi including Sondani and Gandhi Sagar", notes: "Autos cover the Pashupatinath temple, fort and bazaar; a hired taxi is needed for Sondani and the Gandhi Sagar circuit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mandsaur is unconfirmed — autos and hired taxis cover the town and Gandhi Sagar circuit easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Ujjain", distance: "~120 km", type: "Temple City", isHidden: false, id: "ujjain" },
@@ -61302,6 +61308,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On-site shuttles, e-carts & activity boats", cost: "Included in packages, or per-activity tickets", notes: "The complex is walkable; e-carts and shuttles move between the tent city, activity zones and jetties; all water activity is by the operators' boats", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage at Hanuwantiya — festival transfers or a taxi from Indore/Khandwa are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Omkareshwar", distance: "~170 km", type: "Jyotirlinga Island", isHidden: false, id: "omkareshwar" },
@@ -61370,6 +61377,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos & hired taxi", cost: "₹20–₹100 per auto hop in town; ₹1,500–₹2,500 for a day taxi to the safari and one or two waterfalls", notes: "Autos serve the city; the White Tiger Safari and the waterfalls are all out of town and need a hired car — the falls are in different directions and can't easily be combined in one day", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Rewa is unconfirmed — autos and hired taxis cover the city and outlying sites easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Maihar", distance: "~95 km", type: "Shakti Peetha Temple Town", isHidden: false, id: "maihar" },
@@ -61438,6 +61446,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired jeep / taxi & walking", cost: "₹1,000–₹2,000 for a half-day of the viewpoints; guide fee for treks", notes: "The viewpoints are a few km apart along the ridge — a hired vehicle links them; descents into Patalkot are on foot with a local guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage on this remote ridge — a hired jeep or taxi from Chhindwara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pachmarhi", distance: "~150 km", type: "Hill Station", isHidden: false, id: "pachmarhi" },
@@ -61489,6 +61498,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife", "Adventure"],
     bestSeason: "October – March (pleasant; the colours show best in low water); the monsoon brings the fullest, but access may be restricted",
     duration: "Half-day, usually from Khajuraho or Panna",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Roughly sunrise-to-sunset forest timings; access can be restricted during heavy monsoon flow — confirm the gate is open before setting out." },
     highlights: [
       { name: "A ~5 km canyon of pink, red and grey crystalline rock — the 'mini Grand Canyon'" },
       { name: "A year-round main fall plus seasonal monsoon cascades on the Ken" },
@@ -61505,6 +61515,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Forest-gate vehicle & walking", cost: "Entry ticket + a small vehicle/guide charge at the gate", notes: "From the forest gate a vehicle (often shared) runs along the canyon rim to the viewpoints; short walks link the fenced overlooks", available: true },
+      { mode: "Ola / Uber", cost: "₹700–₹1,200 one-way from Khajuraho", notes: "Bookable from Khajuraho, though a hired taxi for the round trip is the more common option", available: true },
     ],
     nearbyPlaces: [
       { name: "Khajuraho", distance: "~20 km", type: "UNESCO Temple Town", isHidden: false, id: "khajuraho" },
