@@ -39579,6 +39579,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Limited, patchy coverage — the local taxi union is the standard option for most trips", available: false },
     ],
     nearbyPlaces: [{ name: "Jakhoo Temple", distance: "2.5 km (via Ridge) / 6 km (via Circular Road)", type: "Temple", isHidden: false, id: "jakhoo-temple" }, { name: "Naldehra", distance: "23 km", type: "Golf Course", isHidden: false, id: "naldehra" }, { name: "Kufri", distance: "16 km", type: "Hill Resort", isHidden: false, id: "kufri" }, { name: "Chadwick Falls", distance: "7 km", type: "Waterfall", isHidden: false }, { name: "Mashobra", distance: "12 km", type: "Forest Town", isHidden: false }],
     budgetBreakdown: [
@@ -39632,6 +39633,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Coverage in Manali town is patchy — a rented scooter or taxi union is more reliable", available: false },
     ],
     nearbyPlaces: [{ name: "Hidimba Devi Temple", distance: "2.5 km", type: "Temple", isHidden: false, id: "hidimba-devi-temple" }, { name: "Vashisht Temple", distance: "2 km", type: "Temple & Hot Spring", isHidden: false, id: "vashisht-temple" }, { name: "Solang Valley", distance: "13 km", type: "Adventure Valley", isHidden: false, id: "solang-valley" }, { name: "Rohtang Pass", distance: "51 km", type: "Mountain Pass", isHidden: false, id: "rohtang-pass" }, { name: "Rahala Waterfalls", distance: "16 km", type: "Waterfall", isHidden: false }, { name: "Kullu", distance: "40 km", type: "Town", isHidden: false, id: "kullu" }],
     budgetBreakdown: [
@@ -39685,6 +39687,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in McLeod Ganj/Dharamshala town, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "McLeod Ganj", distance: "~9 km (upper Dharamshala)", type: "Tibetan Cultural Hub", isHidden: false, id: "mcleodganj" }, { name: "Triund", distance: "16 km", type: "Trek/Meadow", isHidden: false, id: "triund" }, { name: "Dal Lake (Kangra)", distance: "12 km", type: "Lake", isHidden: false }, { name: "Kangra", distance: "18 km", type: "Town", isHidden: false, id: "kangra" }, { name: "War Memorial", distance: "3 km", type: "Memorial", isHidden: false }],
     budgetBreakdown: [
@@ -39738,6 +39741,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Connects Chamba, Dalhousie, and Khajjiar", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed local taxi-union rates, common across this circuit", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote valley villages", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "No app-cab coverage in Dalhousie — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Khajjiar", distance: "22 km", type: "Meadow", isHidden: false, id: "khajjiar" }, { name: "Chamba", distance: "54 km", type: "Town", isHidden: false, id: "chamba" }],
     budgetBreakdown: [
@@ -39791,6 +39795,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Connects Chamba, Dalhousie, and Khajjiar", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed local taxi-union rates, common across this circuit", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote valley villages", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "No app-cab coverage in Chamba — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Dalhousie", distance: "54 km", type: "Hill Station", isHidden: false, id: "dalhousie" }, { name: "Khajjiar", distance: "26 km", type: "Meadow", isHidden: false, id: "khajjiar" }, { name: "Bharmaur", distance: "65 km", type: "Temple Town", isHidden: false, id: "bharmaur" }],
     budgetBreakdown: [
@@ -39844,6 +39849,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹60", notes: "Connects Manali, Kullu, and valley villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹3,000", notes: "Fixed local taxi-union rates for valley trips (Solang, Rohtang, etc.)", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹500–₹1,200/day", notes: "A popular, practical way to explore the valley at your own pace", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Coverage in Kullu/Manali town centres is patchy — a rented scooter or taxi union is more reliable", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "40 km", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Bijli Mahadev Temple", distance: "~22 km", type: "Temple", isHidden: false, id: "bijli-mahadev-temple" }],
     budgetBreakdown: [
@@ -39897,6 +39903,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "No app-cab coverage in Kangra town — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Dharamshala", distance: "18 km", type: "Hill Station", isHidden: false, id: "dharamshala" }, { name: "Bir Billing", distance: "~65 km", type: "Paragliding Site", isHidden: false, id: "bir-billing" }, { name: "Palampur", distance: "35 km", type: "Tea-Garden Town", isHidden: false, id: "palampur" }],
     budgetBreakdown: [
@@ -39950,6 +39957,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-Himalaya district — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Kalpa", distance: "13 km (from Reckong Peo)", type: "Village", isHidden: false, id: "kalpa" }, { name: "Sangla Valley", distance: "38 km (from Reckong Peo)", type: "Valley", isHidden: false, id: "sangla-valley" }, { name: "Chitkul", distance: "65 km (from Reckong Peo)", type: "Border Village", isHidden: false, id: "chitkul" }, { name: "Nako", distance: "102 km (from Reckong Peo)", type: "Lake Village", isHidden: false, id: "nako" }],
     budgetBreakdown: [
@@ -40003,6 +40011,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-altitude region — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Key Monastery", distance: "12 km (from Kaza)", type: "Monastery", isHidden: false, id: "key-monastery" }, { name: "Kibber", distance: "18 km (from Kaza)", type: "Village", isHidden: false, id: "kibber" }, { name: "Tabo Monastery", distance: "48 km (from Kaza)", type: "Monastery", isHidden: false, id: "tabo-monastery" }, { name: "Chandratal Lake", distance: "98 km (from Kaza)", type: "Lake", isHidden: false, id: "chandratal-lake" }, { name: "Manali", distance: "480 km (from Kaza, via Rohtang/Kunzum)", type: "Hill Station", isHidden: false, id: "manali" }],
     budgetBreakdown: [
@@ -40056,6 +40065,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-altitude region — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Manali", distance: "120 km (from Keylong)", type: "Hill Station", isHidden: false, id: "manali" }, { name: "Rohtang Pass", distance: "69 km (from Keylong)", type: "Mountain Pass", isHidden: false, id: "rohtang-pass" }, { name: "Kaza", distance: "188 km (from Keylong)", type: "Town", isHidden: false, id: "spiti-valley" }, { name: "Kunzum Pass", distance: "110 km (from Keylong)", type: "Mountain Pass", isHidden: false, id: "kunzum-pass" }],
     budgetBreakdown: [
@@ -40109,6 +40119,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Standard way around town and to nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹1,500", notes: "No app-cab coverage in Mandi — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Rewalsar", distance: "25 km", type: "Sacred Lake", isHidden: false, id: "rewalsar-lake" }, { name: "Parashar Lake", distance: "45 km", type: "Lake", isHidden: false }, { name: "Sundar Nagar", distance: "26 km", type: "Town", isHidden: false }],
     budgetBreakdown: [
@@ -40162,6 +40173,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Standard way around town and to nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹1,500", notes: "No app-cab coverage in Bilaspur — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Bhakra Dam", distance: "75 km", type: "Dam", isHidden: false, id: "bhakra-dam" }, { name: "Naina Devi Temple", distance: "60 km", type: "Temple", isHidden: false, id: "naina-devi-temple" }, { name: "Bahadurpur Fort", distance: "40 km", type: "Fort", isHidden: false }],
     budgetBreakdown: [
@@ -40215,6 +40227,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹50", notes: "Covers the town and nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹300–₹2,000", notes: "Fixed-rate local taxi unions common across HP hill towns — agree the fare upfront", available: true },
       { mode: "Walking", cost: "—", notes: "The Mall and Ridge areas are pedestrian-only in the town centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage given proximity to Chandigarh", available: true },
     ],
     nearbyPlaces: [{ name: "Kasauli", distance: "27 km", type: "Hill Town", isHidden: false, id: "kasauli" }, { name: "Chail", distance: "45 km", type: "Hill Town", isHidden: false, id: "chail" }, { name: "Barog", distance: "7 km", type: "Toy-Train Station", isHidden: false }],
     budgetBreakdown: [
@@ -40268,6 +40281,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "No app-cab coverage in Una — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Hamirpur", distance: "~55 km", type: "Town", isHidden: false, id: "hamirpur" }],
     budgetBreakdown: [
@@ -40321,6 +40335,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "No app-cab coverage in Hamirpur — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Una", distance: "~55 km", type: "Town", isHidden: false, id: "una" }],
     budgetBreakdown: [
@@ -40374,6 +40389,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "No app-cab coverage in Nahan — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Paonta Sahib", distance: "45 km (from Nahan)", type: "Gurudwara Town", isHidden: false, id: "paonta-sahib" }, { name: "Rani Tal", distance: "~1 km (in Nahan)", type: "Lake", isHidden: false }],
     budgetBreakdown: [
@@ -40427,6 +40443,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "No app-cab coverage in Palampur — a taxi union is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Bir Billing", distance: "29–43 km", type: "Paragliding Site", isHidden: false, id: "bir-billing" }, { name: "Kangra", distance: "38 km", type: "Heritage Town", isHidden: false, id: "kangra" }, { name: "Dharamshala", distance: "40 km", type: "Hill Station", isHidden: false, id: "dharamshala" }, { name: "Chamunda Devi Temple", distance: "25 km", type: "Temple", isHidden: false, id: "chamunda-devi-temple" }],
     budgetBreakdown: [
@@ -40465,6 +40482,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1 day",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Open daily; free community langar meals served." },
     highlights: [{ name: "Gurudwara Paonta Sahib" }, { name: "Views over the Yamuna and Doon Valley" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport is the practical option, road onward from there", fromMumbai: "Via Delhi, then Chandigarh, then road", fromBangalore: "Via Delhi, then Chandigarh, then road", duration: "~1h Delhi–Chandigarh + 2–3h road", costRange: "₹3,000–₹9,000", tips: "No local airport — this district sits on the plains/foothill border, so Chandigarh or Dehradun connections work well depending on direction." },
@@ -40480,6 +40498,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹500", notes: "No app-cab coverage in Paonta Sahib — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Nahan (Sirmaur)", distance: "45 km", type: "Town", isHidden: false, id: "sirmaur" }, { name: "Dehradun", distance: "45 km", type: "City", isHidden: false }],
     budgetBreakdown: [
