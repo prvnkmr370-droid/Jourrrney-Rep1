@@ -47381,6 +47381,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The temple clusters are best explored on foot through the village lanes", available: true },
       { mode: "Local Taxi/Auto", cost: "₹500–₹1,500", notes: "From Dumka or Rampurhat to the village", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural village — a local taxi from Dumka or Rampurhat is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baidyanath Dham", distance: "~65 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
@@ -47425,6 +47426,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Gated municipal garden." },
     highlights: [
       { name: "Sculptures and formations carved directly from Gonda Hill's natural rock" },
       { name: "The two-pole-supported iron footbridge" },
@@ -47441,6 +47443,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kanke Dam", distance: "Adjoining", type: "Reservoir", isHidden: false, id: "kanke-dam" },
@@ -47501,6 +47504,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
       { mode: "Boating", cost: "₹50–₹150", notes: "Seasonal boating on the reservoir", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "Adjoining", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -47545,6 +47549,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "The summit pavilion and Brahma Sthal monument" },
       { name: "The historic connection to Jyotirindranath Tagore" },
@@ -47562,6 +47567,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
       { mode: "Walking", cost: "Free", notes: "A short but steep climb to the summit pavilion", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jubilee Park", distance: "~5 km", type: "City Park", isHidden: false, id: "jubilee-park" },
@@ -47605,6 +47611,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Extended hours during the Rath Yatra." },
     highlights: [
       { name: "The 1691 Odisha-style hilltop temple, built by Ani Nath Shahdeo" },
       { name: "The distinctive ribbed, Puri-style shikhara" },
@@ -47621,6 +47628,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~12 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -47683,6 +47691,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The town is small and easily explored on foot", available: true },
       { mode: "Local Taxi", cost: "₹500–₹1,500", notes: "From Ranchi or the railway station", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this small town — a local taxi from Ranchi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Patratu Valley", distance: "~70 km", type: "Scenic Valley", isHidden: false, id: "patratu-valley" },
@@ -47726,6 +47735,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Adventure", "Nature"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "The ropeway's own operating hours." },
     highlights: [
       { name: "The dramatic ropeway climbing the rock face" },
       { name: "Sweeping views over the plains from the hilltop" },
@@ -47743,6 +47753,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹400–₹1,000", notes: "From Deoghar to the base of Trikut Hill", available: true },
       { mode: "Ropeway", cost: "₹100–₹250", notes: "The main way up the hill", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Deoghar is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Baidyanath Dham", distance: "~15 km", type: "Temple", isHidden: false, id: "baidyanath-dham" },
@@ -47803,6 +47814,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,200–₹2,500 round trip", notes: "Usually combined with a Hundru Falls trip", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a private taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hundru Falls", distance: "~15 km", type: "Waterfall", isHidden: false, id: "hundru-falls" },
