@@ -16248,6 +16248,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort", "Offbeat"],
     bestSeason: "Year-round; open daily 6am–7pm",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Reached via a suspension bridge" }, { name: "Built 1550, rebuilt by the Portuguese in 1705" }, { name: "St. Anthony chapel within the fort walls" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Aldona/Mapusa — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~12km / ~25min from Panaji", costRange: "₹300–₹700 (auto/cab from Panaji)", tips: "A genuinely offbeat, uncrowded fort — the suspension-bridge approach is itself part of the appeal." },
@@ -16257,6 +16258,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹700 from Panaji", notes: "Standard way to reach Aldona/Corjuem", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Coverage exists but a rented scooter is often more reliable in this inland area", available: true },
     ],
     nearbyPlaces: [
       { name: "Mayem Lake", distance: "~10 km", type: "Lake", isHidden: false, id: "mayem-lake" },
@@ -16308,6 +16310,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Margao", notes: "Standard way to reach Rachol", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage this close to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Rachol Seminary", distance: "Adjoining", type: "Church", isHidden: false, id: "rachol-seminary" },
@@ -16360,6 +16363,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Vasco", notes: "Standard way to reach the fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage this close to Vasco", available: true },
     ],
     nearbyPlaces: [
       { name: "Naval Aviation Museum", distance: "~6 km", type: "Museum", isHidden: false, id: "naval-aviation-museum" },
@@ -16403,6 +16407,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "Year-round; open daily 9am–7pm",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "7:00 PM", note: "Open daily; access is via ferry crossing, so check ferry timings." },
     highlights: [{ name: "Goa's best-preserved fort" }, { name: "Reached by ferry crossing" }, { name: "Site of Goa's freedom-struggle Satyagraha marches" }],
     transport: [
       { mode: "Road + Ferry", icon: "🚗⛴️", fromDelhi: "Via Pernem — long haul", fromMumbai: "~9–11h to North Goa", fromBangalore: "Long haul", duration: "~40km / ~1h from Panaji, plus a ferry crossing", costRange: "₹500–₹1,200 (cab + ferry)", tips: "Ferry timings can vary — check ahead, especially for a same-day return." },
@@ -16412,6 +16417,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Ferry + Taxi", cost: "₹500–₹1,200", notes: "Ferry crossing plus a short taxi/auto ride at each end", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage across the ferry crossing — a hired taxi on each side is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Arambol Beach", distance: "~10 km", type: "Beach", isHidden: false, id: "arambol" },
@@ -16464,6 +16470,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹300–₹700 from Margao", notes: "Standard way to reach Betul village", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Coverage exists but a hired taxi is often more reliable in this quiet village", available: true },
     ],
     nearbyPlaces: [
       { name: "Betul Beach", distance: "Adjoining", type: "Beach", isHidden: false, id: "betul" },
@@ -16518,6 +16525,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Panaji", notes: "Standard way to reach Dona Paula", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage this close to Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Miramar Beach", distance: "~4 km", type: "Beach", isHidden: false, id: "miramar" },
