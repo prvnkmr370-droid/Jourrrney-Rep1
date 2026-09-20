@@ -12897,6 +12897,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400/hop (taxi)", notes: "Standard way to get around South Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Margao", available: true },
     ],
     nearbyPlaces: [
       { name: "Betalbatim Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "betalbatim" },
@@ -12958,6 +12959,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500/hop (taxi)", notes: "Standard way to get around this stretch", available: true },
       { mode: "Boat Rides / Dolphin Trips", cost: "₹500–₹1,500 per trip", notes: "Operators at Mobor run river/dolphin-spotting boat trips on the Sal River", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage across this upscale resort stretch", available: true },
     ],
     nearbyPlaces: [
       { name: "Cuncolim town", distance: "~10 km", type: "Town", isHidden: true },
@@ -13017,6 +13019,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500/hop (taxi)", notes: "Standard way to reach Betul", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Coverage can be patchy in this less-developed fishing village — a rented scooter or taxi is more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Varca, Cavelossim & Mobor", distance: "Across the Sal River", type: "Beach", isHidden: false, id: "varca-cavelossim-mobor" },
@@ -13076,6 +13079,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around this part of South Goa", available: true },
       { mode: "Walking", cost: "Free", notes: "The beach itself is fully walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Coverage exists but a rented scooter is often more reliable this far south", available: true },
     ],
     nearbyPlaces: [
       { name: "Palolem", distance: "~10 km", type: "Beach", isHidden: false, id: "palolem" },
@@ -13132,6 +13136,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around this part of South Goa", available: true },
       { mode: "Walking", cost: "Free", notes: "A short walk from Palolem along the coast", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Coverage exists but a rented scooter is often more reliable this far south", available: true },
     ],
     nearbyPlaces: [
       { name: "Palolem", distance: "~2 km", type: "Beach", isHidden: false, id: "palolem" },
