@@ -65412,6 +65412,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,500–₹3,000 round trip", notes: "The standard way most visitors reach Loktak; arrange through a hotel or local operator", available: true },
       { mode: "Boat (at the lake itself)", cost: "Organised via Takmu Water Sports Complex / Sendra Tourist Home", notes: "For touring the phumdis and open water", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal/Loktak area — a hired taxi from Imphal is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Keibul Lamjao National Park", distance: "On the lake itself", type: "Floating National Park", isHidden: false, id: "keibul-lamjao-national-park" },
@@ -65463,6 +65464,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – March (migratory birds; cooler, clearer viewing)",
     duration: "2–4 hours",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Go at first light for the best chance of spotting Sangai deer; no facilities after dark." },
     highlights: [{ name: "Sangai — the brow-antlered dancing deer, found only here" }, { name: "Watch towers over the floating phumdi ecosystem" }, { name: "Hog deer, otters and migratory water fowl (Nov–Mar)" }, { name: "Loktak Lake itself, which the park sits on", id: "loktak-lake" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5h on", duration: "Fly into Imphal, then ~1.5–2h by road", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Same gateway as Loktak Lake — most visitors combine both in one day trip." },
@@ -65475,6 +65477,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,500–₹3,500 round trip (often combined with Loktak Lake)", notes: "Arrange through a hotel or local operator", available: true },
       { mode: "Forest Dept Boat (inside the park)", cost: "Entry/boat fees payable at the park", notes: "Required to reach the watch towers over the phumdi habitat", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal/Loktak area — a hired taxi from Imphal is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Loktak Lake", distance: "Same lake system", type: "Floating Lake", isHidden: false, id: "loktak-lake" },
@@ -65525,6 +65528,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Closed on Sundays and government holidays — confirm before making the trip out." },
     highlights: [{ name: "INA Museum — letters, photographs, rank badges and war memorabilia" }, { name: "The site where the INA flag was first raised on Indian soil, 14 April 1944" }, { name: "Loktak Lake, a short distance away", id: "loktak-lake" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5h on", duration: "Fly into Imphal, then ~1.5–2h by road", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "Same gateway as Loktak Lake — easily combined into the same day trip." },
@@ -65535,6 +65539,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹1,500–₹3,500 round trip (often combined with Loktak Lake)", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal/Loktak area — a hired taxi from Imphal is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Loktak Lake", distance: "~10 km", type: "Floating Lake", isHidden: false, id: "loktak-lake" },
@@ -65581,6 +65586,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:30 PM", note: "Open daylight hours; a quiet site best visited with a driver/guide." },
     highlights: [{ name: "India Peace Memorial, built by war veterans" }, { name: "The WWII Battle of Imphal battlefield site" }, { name: "A place of pilgrimage for Japanese visitors" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bir Tikendrajit International Airport (IMF), Imphal — direct, ~3h", fromMumbai: "Via Delhi/Kolkata/Guwahati, then ~1.5h on", fromBangalore: "Via Kolkata/Delhi, then ~1.5h on", duration: "Fly into Imphal, then ~30–40 min by road", costRange: "₹4,000–₹14,000 airfare to Imphal", tips: "The closest of the Bishnupur-area sites to Imphal itself." },
@@ -65591,6 +65597,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Imphal", cost: "₹800–₹1,800 round trip", notes: "Arrange through a hotel or local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Imphal area — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Loktak Lake", distance: "~30 km", type: "Floating Lake", isHidden: true, id: "loktak-lake" },
