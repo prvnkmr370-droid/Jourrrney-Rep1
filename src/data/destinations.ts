@@ -7348,6 +7348,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Car / Self-drive", cost: "₹1,500–₂,500/day", notes: "Best way — Coorg's sites are spread across 4,000 sq km", available: true },
       { mode: "Cab (local Indica/SUV)", cost: "₹2,500–₃,500/day", notes: "Hire for full-day sightseeing with driver", available: true },
       { mode: "Auto Rickshaw", cost: "₹100–₂50", notes: "Available in Madikeri town for short trips", available: true },
+      { mode: "Ola / Uber", cost: "Varies", notes: "Both list Madikeri as a serviceable town, but pickups are reported as unreliable once you're out among the estates and scattered sights — a hired full-day cab or self-drive works better for actual sightseeing", available: true },
     ],
     nearbyPlaces: [
       { name: "Abbey Falls", distance: "9 km from Madikeri", type: "Waterfall", isHidden: true, id: "abbey-falls" },
@@ -7419,6 +7420,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹100–₂50", notes: "Town to beaches; negotiate return trip", available: true },
       { mode: "Boat (Om Beach to Half Moon)", cost: "₹100–₁50 pp", notes: "Avoid the cliff trek? Take the boat between beaches", available: true },
       { mode: "Scooter Rental", cost: "₹300–₄00/day", notes: "Good for exploring town and beaches; available near bus stand", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not reliably available in this small beach town — locals point visitors to autos, rented scooters, or walking instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Kudle Beach", distance: "1.5 km from town", type: "Calm, local beach", isHidden: true, id: "kudle-beach" },
@@ -25956,6 +25958,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Golden_Temple_%28Namdroling_Monastery%29%2C_Bylakuppe%2C_Kodagu_%28Coorg%29%2C_Karnataka.jpg/1280px-Golden_Temple_%28Namdroling_Monastery%29%2C_Bylakuppe%2C_Kodagu_%28Coorg%29%2C_Karnataka.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Golden_Temple_%28Namdroling_Monastery%29%2C_Bylakuppe%2C_Kodagu_%28Coorg%29%2C_Karnataka.jpg/1280px-Golden_Temple_%28Namdroling_Monastery%29%2C_Bylakuppe%2C_Kodagu_%28Coorg%29%2C_Karnataka.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bylakuppe_-_Namdroling_Monastery_37.JPG/1280px-Bylakuppe_-_Namdroling_Monastery_37.JPG"],
     imageCredit: "Photos: Craftofolio.media, Vinayaraj — Wikimedia Commons, CC BY-SA 4.0 / CC BY-SA 3.0.",
+    visitingHours: { opens: "7:00 AM", closes: "7:00 PM", note: "Some sources list a later 8 PM close — timings can shift around prayer sessions and festivals, so check with the monastery if visiting for a specific ritual." },
     category: ["Spiritual", "Culture", "Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -25973,6 +25976,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Madikeri", notes: "Standard way to reach the monastery", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kushalnagar/Bylakuppe is unconfirmed — a hired taxi from Madikeri or Mysuru is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Coorg (Madikeri)", distance: "~35 km", type: "Hill Station", isHidden: false, id: "coorg" },
@@ -26014,6 +26018,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Abbey_falls%2Ccoorg.jpg/1280px-Abbey_falls%2Ccoorg.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Abbey_falls%2Ccoorg.jpg/1280px-Abbey_falls%2Ccoorg.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/ABBEY_FALLS_%2CCOORG_%2CKARNATAKA.jpg/1280px-ABBEY_FALLS_%2CCOORG_%2CKARNATAKA.jpg"],
     imageCredit: "Photos: Yelaya jyothi, AmanDshutterbug — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Verified against the official Karnataka Tourism site (karnatakatourism.org)." },
     category: ["Nature"],
     bestSeason: "October – February (fullest just after monsoon, September–October)",
     duration: "1–1.5 hours",
@@ -26031,6 +26036,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹200–₹500 from Madikeri", notes: "Standard way to reach the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this close to Madikeri is inconsistent in Coorg's estate roads — a hired taxi or auto is the reliable option", available: false },
     ],
     nearbyPlaces: [
       { name: "Coorg (Madikeri)", distance: "~8 km", type: "Hill Station", isHidden: false, id: "coorg" },
@@ -26070,6 +26076,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Dubare_Elephant_Camp.jpg/1280px-Dubare_Elephant_Camp.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Dubare_Elephant_Camp.jpg/1280px-Dubare_Elephant_Camp.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Elephant_bathing_at_Dubare_Elephant_Camp_Kodagu.jpg/1280px-Elephant_bathing_at_Dubare_Elephant_Camp_Kodagu.jpg"],
     imageCredit: "Photos: Shital 90, BHARATHESHA ALASANDEMAJALU — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "8:30 AM", closes: "5:30 PM", note: "Elephant feeding/bathing interactions run in fixed slots, roughly 9–11 AM and 4:30–5:30 PM — book ahead where possible." },
     category: ["Nature", "Adventure"],
     bestSeason: "October – May",
     duration: "2–4 hours",
@@ -26087,6 +26094,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi + Coracle/Boat crossing", cost: "₹500–₹1,200 plus a short river crossing", notes: "The camp sits across the Kaveri, reached by a short boat/coracle ride", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kushalnagar is unconfirmed — a hired taxi to the riverbank, followed by the coracle crossing, is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Coorg (Madikeri)", distance: "~30 km", type: "Hill Station", isHidden: false, id: "coorg" },
@@ -26128,6 +26136,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Talakaveri_Temple%2C_Talacauvery_and_surroundings_%2818%29.jpg/1280px-Talakaveri_Temple%2C_Talacauvery_and_surroundings_%2818%29.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Talakaveri_Temple%2C_Talacauvery_and_surroundings_%2818%29.jpg/1280px-Talakaveri_Temple%2C_Talacauvery_and_surroundings_%2818%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/View_of_Talacauvery_temple_from_Talacauvery_mountain.jpg/1280px-View_of_Talacauvery_temple_from_Talacauvery_mountain.jpg"],
     imageCredit: "Photos: Vinayaraj — Wikimedia Commons, CC BY-SA 4.0 / CC BY-SA 3.0.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "General daylight-hours access to the temple and tank; confirm locally if timing your visit around a specific ritual." },
     category: ["Spiritual", "Nature"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -26145,6 +26154,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Madikeri", notes: "Standard way to reach Talacauvery", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far into the Brahmagiri hills is unconfirmed — a hired taxi from Madikeri is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Coorg (Madikeri)", distance: "~45 km", type: "Hill Station", isHidden: false, id: "coorg" },
@@ -26202,6 +26212,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi + Forest Walk", cost: "₹1,200–₹2,500 by cab, plus a ~1-2 km walk", notes: "Standard way to reach Yana; the final approach is on foot", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not reliably available this far from Gokarna — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gokarna", distance: "~45 km", type: "Beach Town", isHidden: false, id: "gokarna" },
@@ -26241,6 +26252,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mirjan_Fort%2C_Karnataka_%2860720%29.jpg/1280px-Mirjan_Fort%2C_Karnataka_%2860720%29.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mirjan_Fort%2C_Karnataka_%2860720%29.jpg/1280px-Mirjan_Fort%2C_Karnataka_%2860720%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mirjan_Fort%2C_Karnataka_%2896066%29.jpg/1280px-Mirjan_Fort%2C_Karnataka_%2896066%29.jpg"],
     imageCredit: "Photos: Prajna gopal — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-protected and free to enter; some sources cite a slightly earlier 5:30 PM close, so aim to arrive well before then." },
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1.5–2 hours",
@@ -26258,6 +26270,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Gokarna", notes: "Standard way to reach Mirjan Fort", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not reliably available this far from Gokarna — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gokarna", distance: "~22 km", type: "Beach Town", isHidden: false, id: "gokarna" },
@@ -26299,6 +26312,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Iruppu_Waterfalls_Coorg_Karanataka.jpg/1280px-Iruppu_Waterfalls_Coorg_Karanataka.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Iruppu_Waterfalls_Coorg_Karanataka.jpg/1280px-Iruppu_Waterfalls_Coorg_Karanataka.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Iruppu_Waterfalls.jpg/1280px-Iruppu_Waterfalls.jpg"],
     imageCredit: "Photos: Csheik — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "General daylight-hours access, since the falls sit within the Brahmagiri Wildlife Sanctuary; expect much larger crowds around Shivaratri." },
     category: ["Nature", "Spiritual"],
     bestSeason: "October – February (fullest just after monsoon)",
     duration: "2–3 hours",
@@ -26316,6 +26330,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Madikeri", notes: "Standard way to reach Iruppu Falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Madikeri is unconfirmed — a hired taxi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Coorg (Madikeri)", distance: "~50 km", type: "Hill Station", isHidden: false, id: "coorg" },
@@ -26547,6 +26562,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Walking", cost: "₹50–₹150", notes: "Standard way to reach Kudle from Gokarna town", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not reliably available in Gokarna — autos and walking are the standard way to reach the beach", available: false },
     ],
     nearbyPlaces: [
       { name: "Gokarna", distance: "~1.5 km", type: "Beach Town", isHidden: false, id: "gokarna" },
@@ -26604,6 +26620,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Coastal Trek", cost: "Free", notes: "The classic way to reach both beaches, starting from Om Beach", available: true },
       { mode: "Boat", cost: "₹300–₹800 per person (approx.)", notes: "A faster alternative to the trek, arranged from Gokarna or Om Beach", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable — there's no road access to either beach, only the coastal trek or a boat", available: false },
     ],
     nearbyPlaces: [
       { name: "Kudle Beach", distance: "~4-5 km trek", type: "Beach", isHidden: true, id: "kudle-beach" },
