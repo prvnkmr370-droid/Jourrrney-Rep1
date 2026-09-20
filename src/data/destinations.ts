@@ -49830,6 +49830,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Ghatshila town to Ratmohana", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ghatshila is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rankini Mandir, Ghatshila", distance: "~5 km", type: "Temple", isHidden: false, id: "rankini-mandir-ghatshila" },
@@ -49891,6 +49892,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹250", notes: "From anywhere in central Ranchi", available: true },
       { mode: "Walking", cost: "Free", notes: "Easily walkable from many central Ranchi neighborhoods", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pahari Mandir (Ranchi Hill)", distance: "~2 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
@@ -49934,6 +49936,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "The British colonial-era Chalet House building" },
       { name: "Life-sized statues depicting local tribal family life" },
@@ -49950,6 +49953,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Chalet House is within Netarhat town, easily walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Netarhat — reachable on foot within town", available: false },
     ],
     nearbyPlaces: [
       { name: "Magnolia Sunset Point, Netarhat", distance: "~10 km", type: "Viewpoint", isHidden: false, id: "magnolia-sunset-point-netarhat" },
@@ -50009,6 +50013,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Within Netarhat town, easily walkable", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Netarhat — reachable on foot within town", available: false },
     ],
     nearbyPlaces: [
       { name: "Chalet House, Netarhat", distance: "~1 km", type: "Heritage Building", isHidden: false, id: "chalet-house-netarhat" },
@@ -50067,6 +50072,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "Limited local transport given the remote location", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote mining township — a pre-arranged local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Saranda Forest", distance: "Nearby (same forest belt)", type: "Forest Region", isHidden: true },
@@ -50127,6 +50133,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Guide", cost: "₹500–₹1,200", notes: "From Sahibganj into the Rajmahal Hills", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote corner of the state — a local taxi/guide from Sahibganj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jami Masjid, Rajmahal", distance: "~15 km", type: "Historic Mosque", isHidden: false, id: "jami-masjid-rajmahal" },
@@ -50187,6 +50194,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Hazaribagh town to Isko village", available: true },
       { mode: "Walking (within the village)", cost: "Free", notes: "The village itself is explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural village — a local taxi from Hazaribagh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Wildlife Sanctuary", distance: "~20 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
@@ -50230,6 +50238,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Very crowded during major festivals like Janmashtami." },
     highlights: [
       { name: "The central Krishna Banshidhar metal statue, said to be among India's oldest of its kind" },
       { name: "A companion Radha statue in ashtadhatu alloy" },
@@ -50247,6 +50256,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Nagar Untari town to the temple", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote district — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~80 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
