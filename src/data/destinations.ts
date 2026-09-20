@@ -17645,6 +17645,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Official Jeep Safari", cost: "₹1,500–₹4,000 per jeep (permit + guide)", notes: "The only way into the core park — book through the official forest department system", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the park — only permitted safari jeeps operate inside, and taxis from Junagadh cover the approach", available: false },
     ],
     nearbyPlaces: [
       { name: "Junagadh", distance: "~65 km", type: "City", isHidden: false, id: "junagadh" },
@@ -17701,6 +17702,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Official Jeep Safari", cost: "₹1,000–₹2,500 per jeep (permit)", notes: "Book through the forest department or a Bhavnagar-based operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the park — only permitted safari jeeps operate inside", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhavnagar", distance: "~42 km", type: "City", isHidden: false, id: "bhavnagar" },
@@ -17755,6 +17757,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Official Jeep Safari", cost: "₹1,500–₹3,500 per jeep (permit)", notes: "Arranged through Dasada-based resorts/operators", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural sanctuary area — resort-arranged safari jeeps are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~110 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -17809,6 +17812,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Boat (Country Boat)", cost: "₹200–₹500 per boat", notes: "The way to actually get out onto the lake for close bird viewing", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Ahmedabad is unconfirmed — a hired cab from the city is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~65 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -17874,6 +17878,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Jamnagar", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Jamnagar is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jamnagar", distance: "~10 km", type: "City", isHidden: false, id: "jamnagar" },
@@ -17925,6 +17930,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹600–₹1,500 from Ahmedabad", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Ahmedabad is unconfirmed — a hired cab from the city is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~40 km", type: "City", isHidden: false, id: "ahmedabad" },
@@ -17977,6 +17983,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,000 from Rajkot", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Rajkot is unconfirmed — a hired taxi from the city is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rajkot", distance: "~65 km", type: "City", isHidden: false, id: "rajkot" },
@@ -18028,6 +18035,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Jeep Safari", cost: "₹1,800–₹3,500", notes: "For sanctuary access, arranged via the forest department", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the sanctuary — a hired taxi from Rajpipla or Vadodara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Statue of Unity, Kevadia", distance: "~50 km", type: "Monument", isHidden: true },
@@ -18080,6 +18088,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep Safari", cost: "₹1,500–₹3,000", notes: "Arranged via the forest department", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote sanctuary — a hired taxi from Dahod or Vadodara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "~110 km", type: "City", isHidden: false, id: "vadodara" },
@@ -18130,6 +18139,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Bhuj", notes: "Standard way to reach the reserve", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural wetland area — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~40 km", type: "City", isHidden: false, id: "kutch" },
@@ -18180,6 +18190,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach the sanctuary via Naliya", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote sanctuary — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~90 km", type: "City", isHidden: false, id: "kutch" },
@@ -18242,6 +18253,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Official Bus/Jeep Safari", cost: "₹300–₹800 per person (permit + ride)", notes: "Book through the official Devalia/Gir booking portal", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near the park — only the official safari bus/jeep operates inside", available: false },
     ],
     nearbyPlaces: [
       { name: "Gir National Park", distance: "~12 km", type: "Wildlife", isHidden: false, id: "gir-national-park" },
@@ -18292,6 +18304,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote sanctuary — a hired taxi from Palanpur is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ambaji Temple", distance: "~40 km", type: "Temple", isHidden: true, id: "ambaji-temple" },
@@ -18342,6 +18355,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Vadodara", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this rural sanctuary — a hired taxi from Vadodara is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Vadodara", distance: "~65 km", type: "City", isHidden: false, id: "vadodara" },
@@ -18393,6 +18407,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Surat", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote forest — a hired taxi from Surat is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Surat", distance: "~90 km", type: "City", isHidden: false, id: "surat" },
@@ -18443,6 +18458,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Palanpur", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ambaji/Palanpur is unconfirmed — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ambaji Temple", distance: "Within the sanctuary", type: "Temple", isHidden: true, id: "ambaji-temple" },
@@ -18496,6 +18512,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Official Jeep / Forest Department Permit", cost: "₹1,500–₹4,000", notes: "Required for most sanctuary access, especially Flamingo City", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage across this vast desert sanctuary — a hired taxi from Bhuj or a forest-department permit vehicle is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "Varies", type: "City", isHidden: false, id: "kutch" },
