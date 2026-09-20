@@ -49331,6 +49331,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "The distinctive castle-style crenellated entrance gate" },
       { name: "A memorial to Sidhu and Kanhu Murmu, leaders of the 1855 Santhal Hul" },
@@ -49347,6 +49348,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kanke Dam", distance: "~5 km", type: "Reservoir", isHidden: false, id: "kanke-dam" },
@@ -49390,6 +49392,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [
       { name: "The richly carved, multi-tiered temple dome" },
       { name: "The temple's local \"Dhoni Mandir\" nickname" },
@@ -49406,6 +49409,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹200–₹500", notes: "From anywhere in Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Pahari Mandir (Ranchi Hill)", distance: "~10 km", type: "Temple", isHidden: false, id: "pahari-mandir-ranchi" },
@@ -49464,6 +49468,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹500–₹1,200", notes: "From Netarhat town to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Netarhat — a private taxi from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Netarhat", distance: "~10 km", type: "Hill Station", isHidden: false, id: "netarhat" },
@@ -49524,6 +49529,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi/SUV", cost: "₹500–₹1,000", notes: "From Netarhat town to the viewpoint", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Netarhat — a private taxi from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Netarhat", distance: "~10 km", type: "Hill Station", isHidden: false, id: "netarhat" },
@@ -49583,6 +49589,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Gumla town to the fort ruins", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote fort — a local taxi from Gumla is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~90 km", type: "Wildlife Reserve", isHidden: false, id: "betla-national-park" },
@@ -49642,6 +49649,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Deoghar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Deoghar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Trikut Hill", distance: "~15 km", type: "Hill/Ropeway", isHidden: false, id: "trikut-hill" },
@@ -49701,6 +49709,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Auto", cost: "₹300–₹800", notes: "From Dhanbad to Panchet", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dhanbad is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Maithon Dam", distance: "~30 km", type: "Dam", isHidden: false, id: "maithon-dam" },
@@ -49761,6 +49770,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi", cost: "₹500–₹1,200", notes: "From Dumka town to the dam", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dumka is unconfirmed — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Maluti Temples", distance: "~50 km", type: "Heritage Temples", isHidden: false, id: "maluti-temples" },
