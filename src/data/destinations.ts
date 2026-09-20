@@ -67846,6 +67846,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Day Tour from Shillong", cost: "₹1,500–₹3,000 round trip", notes: "No local buses run directly here", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from central Shillong is unconfirmed — a hired taxi or day tour is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Shillong Peak", distance: "~25 km", type: "Viewpoint", isHidden: true, id: "shillong-peak" },
@@ -67895,6 +67896,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage"],
     bestSeason: "October – March (clear skies, best visibility); avoid monsoon (June–September) when fog obscures views",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "4:30 PM", note: "Set by the Air Force radar station's own visitor-gate hours; carry photo ID and expect cameras/phones to be checked or held at entry." },
     highlights: [{ name: "The highest point in Meghalaya, ~1,965m" }, { name: "A sacred Khasi shrine at the summit" }, { name: "360° views including distant waterfalls and Bangladesh's plains" }, { name: "The David Scott Trail nearby, for longer trekkers" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~40 km from the peak — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~130 km) or Shillong Airport (~40 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "One of the closest viewpoints to central Shillong." },
@@ -67905,6 +67907,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Cab / Taxi from Shillong (Police Bazaar or Bara Bazaar)", cost: "₹500–₹1,200 round trip", notes: "Roads are generally in good condition", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from central Shillong is unconfirmed — a hired cab from Police Bazaar or Bara Bazaar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Elephant Falls", distance: "~12 km", type: "Waterfall", isHidden: false, id: "elephant-falls" },
@@ -67964,6 +67967,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Shared/Private Vehicle on the Shillong-Cherrapunji Road", cost: "Fare varies by shared vs. private vehicle", notes: "Valley views and ziplining are visible right from the roadside", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates on this stretch of road — shared or private vehicles between Shillong and Sohra are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sohra (Cherrapunji)", distance: "~20 km", type: "Hill Town", isHidden: false, id: "sohra" },
@@ -68021,6 +68025,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto to Akonngre Trailhead", cost: "Local fare from Tura town", notes: "The trek itself is on foot from the trailhead to the summit", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Tura — a local taxi or auto covers the trailhead run", available: false },
     ],
     nearbyPlaces: [
       { name: "Rongbangdare Falls", distance: "~37 km", type: "Waterfall", isHidden: true, id: "rongbangdare-falls" },
@@ -68072,6 +68077,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Culture"],
     bestSeason: "October – April (ideal for exploring the sacred grove and nearby trails)",
     duration: "Half day (2–4 hours, longer with the David Scott Trail)",
+    visitingHours: { opens: "9:00 AM", closes: "4:00 PM", note: "A local guide is required for entry; strict no-removal custom applies to everything in the grove." },
     highlights: [{ name: "The ancient Sacred Grove — an untouched forest protected for generations" }, { name: "Rows of ritual and commemorative stone monoliths" }, { name: "The Mawphlang Heritage Museum of traditional Khasi huts and tools" }, { name: "The starting point of the colonial-era David Scott Trail" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, ~51 km — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~128 km) or Shillong Airport (~51 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "An easy day trip from Shillong rather than an overnight stay." },
@@ -68082,6 +68088,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Guide (Recommended)", cost: "Arranged on-site or via tour operators", notes: "A local guide familiar with the grove's customs and language is advisable, and required for entry into the sacred forest itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from central Shillong is unconfirmed — shared sumos or a hired taxi are the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mawsynram", distance: "A scenic drive from Mawphlang", type: "World's Wettest Village", isHidden: false },
