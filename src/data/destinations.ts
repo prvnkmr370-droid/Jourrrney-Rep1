@@ -13508,6 +13508,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – March; Mahashivratri is the main festival",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Open daily." },
     highlights: [{ name: "Goa's oldest surviving temple (12th century)" }, { name: "Only preserved Kadamba-Yadava architecture in the state" }, { name: "Headless Nandi bull" }, { name: "Nearby stream, reached by stone steps" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda/Mollem — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~1h from Ponda, ~1.5h from Panaji", costRange: "₹1,200–₹2,000 (cab from Ponda)", tips: "Genuinely one of Goa's most rewarding heritage detours — combine with Dudhsagar Falls if you're already headed to Mollem." },
@@ -13517,6 +13518,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹400–₹900 (taxi)", notes: "The practical way to reach this forest-set temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this forested Mollem-area location — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhagwan Mahavir Wildlife Sanctuary / Mollem National Park", distance: "~5 km", type: "Wildlife Sanctuary", isHidden: true },
@@ -13558,6 +13560,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Ganesh Chaturthi is naturally significant here",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Historic idols relocated twice to survive" }, { name: "Dedicated to Ganesha and Mahamaya" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~15min from Ponda, ~30min from Panaji", costRange: "₹300–₹700 (cab)", tips: "Easy to combine with Old Goa's churches, given the short distance." },
@@ -13567,6 +13570,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹700 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Coverage is more reliable this close to Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Old Goa", distance: "~10 km", type: "Heritage Site", isHidden: false, id: "old-goa" },
@@ -13609,6 +13613,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Ramnavmi features a real palanquin procession",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Dated to at least 1413" }, { name: "Two idols of Mahalaxmi" }, { name: "Ramnavmi palanquin procession" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~20min from Ponda", costRange: "₹400–₹800 (cab)", tips: "Part of the wider Ponda-taluka temple circuit." },
@@ -13618,6 +13623,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "App-cab coverage in this Ponda-taluka village is unconfirmed — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mahalsa Temple (Mardol)", distance: "~5 km", type: "Temple", isHidden: false, id: "mahalsa-temple-mardol" },
@@ -13660,6 +13666,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Mahalsa Narayani — Vishnu's Mohini avatar" }, { name: "Idol smuggled to safety in 1543 (real history)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~22 km / ~35min from Panaji", costRange: "₹500–₹1,000 (cab from Panaji)", tips: "Part of the Ponda-taluka temple circuit, close to Mahalaxmi and Manguesh." },
@@ -13669,6 +13676,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "App-cab coverage in this Ponda-taluka village is unconfirmed — a rented scooter or hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Manguesh Temple", distance: "~4 km", type: "Temple", isHidden: false, id: "manguesh-temple" },
@@ -13712,6 +13720,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Monday processions are a regular fixture",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:30 AM", closes: "9:00 PM", note: "Open daily, with morning Abhisheka and evening Laghurudra rituals." },
     highlights: [{ name: "Golden kalasha atop the tallest dome (since 1973)" }, { name: "Daily Abhisheka & Laghurudra rituals" }, { name: "Monday palanquin procession" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~25min from Panaji, ~10min from Ponda", costRange: "₹400–₹900 (cab)", tips: "One of Goa's most-visited temples — expect a livelier atmosphere and larger crowds than smaller village shrines." },
@@ -13721,6 +13730,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹900", notes: "One of Goa's most-visited temples, so coverage here is more reliable than smaller village shrines", available: true },
     ],
     nearbyPlaces: [
       { name: "Mahalsa Temple, Mardol", distance: "~4 km", type: "Temple", isHidden: false, id: "mahalsa-temple-mardol" },
@@ -13764,6 +13774,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "1738 Maratha-era rebuild" }, { name: "Large temple tank" }, { name: "Deepastambha lamp tower" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~15min from Ponda", costRange: "₹400–₹800 (cab)", tips: "One of the larger, more architecturally complete Ponda-taluka temples — worth a slightly longer visit." },
@@ -13773,6 +13784,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹300–₹600 (taxi)", notes: "Standard way to reach the temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹400–₹800", notes: "One of Goa's larger, well-visited temples, so coverage here is more reliable than smaller shrines", available: true },
     ],
     nearbyPlaces: [
       { name: "Manguesh Temple", distance: "~5 km", type: "Temple", isHidden: false, id: "manguesh-temple" },
