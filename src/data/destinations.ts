@@ -24229,6 +24229,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Capital of the Rathore clan from the 6th century until Rao Jodha's move to Jodhpur in 1459" },
       { name: "Red-sandstone royal cenotaphs shaped like multi-storey Hindu temples, unusual for Rajasthan" },
@@ -24243,6 +24244,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Jodhpur", notes: "Standard way to reach Mandore Gardens", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage given proximity to Jodhpur city", available: true },
     ],
     nearbyPlaces: [
       { name: "Jodhpur", distance: "~9 km", type: "City", isHidden: false, id: "jodhpur" },
@@ -24300,6 +24302,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,000 from Mount Abu", notes: "Standard way to reach the base of the climb", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Mount Abu is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mount Abu", distance: "~15 km", type: "Hill Station", isHidden: false, id: "mount-abu" },
@@ -24342,6 +24345,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:30 PM", note: "Open daily." },
     highlights: [
       { name: "Nawalgarh founded 1737 by Thakur Nawal Singh Ji Bahadur, Shekhawati's most 'modern' planned town" },
       { name: "Podar Haveli, built 1902, carries roughly 750 frescoes across its rooms and courtyards" },
@@ -24356,6 +24360,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Mandawa", notes: "Standard way to reach Nawalgarh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Mandawa is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandawa", distance: "~30 km", type: "Heritage Town", isHidden: false, id: "mandawa" },
@@ -24398,6 +24403,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Originally Paramara-built, renovated in 1452 CE by Rana Kumbha of Mewar" },
       { name: "Achaleshwar Mahadev Temple (c. 9th century) with a four-ton, five-metal brass Nandi" },
@@ -24412,6 +24418,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹300–₹700 from Mount Abu", notes: "Standard way to reach Achalgarh", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Mount Abu is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mount Abu", distance: "~8 km", type: "Hill Station", isHidden: false, id: "mount-abu" },
@@ -24455,6 +24462,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – February",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Open daily." },
     highlights: [
       { name: "Nine temples total, built 10th-11th century under the Gurjara-Pratihara Empire" },
       { name: "Among the earliest surviving temple complexes in Rajasthan" },
@@ -24469,6 +24477,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi (round trip from Kota)", cost: "₹1,200–₹2,500", notes: "Standard way to visit", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this remote — a hired taxi round trip from Kota is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kota", distance: "~45 km", type: "City", isHidden: false, id: "kota" },
@@ -24513,6 +24522,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Temple open daily; the museum keeps shorter daytime hours." },
     highlights: [
       { name: "Birthplace of poet-saint Meera Bai, of the Rathore line descended from Rao Jodha" },
       { name: "Charbhuja Nath (Meera Bai) Temple, built 1575 CE, with mirror-and-gem tilework interiors" },
@@ -24527,6 +24537,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,000–₹2,200 from Nagaur or Ajmer", notes: "Standard way to reach Merta City", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Nagaur or Ajmer is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nagaur", distance: "~65 km", type: "City", isHidden: false, id: "nagaur" },
