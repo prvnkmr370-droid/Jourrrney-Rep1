@@ -61526,6 +61526,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Art"],
     bestSeason: "November – March (12–30°C); the monsoon (June–September) is green but travel is harder and summers exceed 40°C",
     duration: "Half-day to a full day (often paired with Ellora over 2 days)",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Closed on Mondays. ASI-managed; the last shuttle from the T-junction runs before closing." },
     highlights: [
       { name: "The 5th-century paintings — Jataka tales and the life of the Buddha (caves 1, 2, 16, 17)" },
       { name: "The chaitya halls of caves 19 and 26, with carved facades and stupas" },
@@ -61542,6 +61543,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "ASI shuttle bus + walking", cost: "Small shuttle fare from the T-junction; entry ticket at the gate", notes: "Private vehicles stop at the T-junction; green ASI shuttle buses run the last ~4 km to the ticket gate. From there it is stairs and a cliff-side path along the caves; palanquin carriers are available for a fee", available: true },
+      { mode: "Ola / Uber", cost: "₹2,000–₹3,000 round trip from Aurangabad", notes: "Bookable from Aurangabad for the drive out to the T-junction, though a pre-arranged taxi for the round trip is more common", available: true },
     ],
     nearbyPlaces: [
       { name: "Ellora Caves", distance: "~100 km", type: "UNESCO Rock-Cut Caves", isHidden: false, id: "ellora-caves" },
@@ -61592,6 +61594,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Pilgrimage"],
     bestSeason: "November – March (pleasant); the monsoon is lush; April–June is very hot",
     duration: "Half-day to a full day (commonly with Aurangabad's other sights over 2 days)",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Closed on Tuesdays (Ajanta closes Mondays instead, so the two are easy to combine)." },
     highlights: [
       { name: "Kailasa Temple (Cave 16) — the world's largest monolithic rock-cut monument" },
       { name: "The Buddhist group, including the multi-storey Vishvakarma chaitya (Cave 10)" },
@@ -61608,6 +61611,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking + auto/taxi between cave groups", cost: "Entry ticket at the gate; autos for the longer hop to the Jain caves", notes: "The Hindu and Buddhist groups are walkable together; it is about 2 km to the Jain caves at the north end — walk, or take an auto", available: true },
+      { mode: "Ola / Uber", cost: "₹1,200–₹2,000 round trip from Aurangabad", notes: "Bookable from Aurangabad for the drive out, though a half-day taxi is the more common way to cover Ellora, Daulatabad and Bibi ka Maqbara together", available: true },
     ],
     nearbyPlaces: [
       { name: "Ajanta Caves", distance: "~100 km", type: "UNESCO Painted Caves", isHidden: false, id: "ajanta-caves" },
@@ -61659,6 +61663,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Heritage"],
     bestSeason: "October – March (cool); April–June makes the climb brutal; the monsoon greens the hill but the path turns slippery",
     duration: "Half-day (2–3 hours on site)",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-managed. Start the climb early — the upper fort and the Andheri tunnel are best avoided close to closing time." },
     highlights: [
       { name: "The single scarped-rock approach and the pitch-dark Andheri tunnel" },
       { name: "Chand Minar — a ~64 m 15th-century victory tower" },
@@ -61675,6 +61680,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot inside the fort", cost: "Entry ticket at the gate; optional guide", notes: "The whole visit is a walk and a climb — steps, ramps, the dark tunnel and a final steep stair to the citadel; there is no vehicle access inside", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹600 from Aurangabad", notes: "Bookable from Aurangabad, right on the busy Ellora road", available: true },
     ],
     nearbyPlaces: [
       { name: "Ellora Caves", distance: "~15 km", type: "UNESCO Rock-Cut Caves", isHidden: false, id: "ellora-caves" },
@@ -61726,6 +61732,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Architecture"],
     bestSeason: "October – March (pleasant); April–June is very hot; the monsoon garden is green",
     duration: "1 – 1.5 hours (part of an Aurangabad city day)",
+    visitingHours: { opens: "8:00 AM", closes: "8:00 PM", note: "ASI-managed; mornings have the softest light and smallest crowds." },
     highlights: [
       { name: "The Taj-like silhouette — dome, four minarets and a charbagh garden" },
       { name: "The marble lower storey and pierced screens over the sunken grave" },
@@ -61742,6 +61749,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw & city bus", cost: "₹100–₹250 per hop", notes: "Autos are the simplest way around Aurangabad's sights; the monument has its own car and coach park", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate across Aurangabad city", available: true },
     ],
     nearbyPlaces: [
       { name: "Aurangabad (Chhatrapati Sambhajinagar) Caves", distance: "~2 km", type: "Buddhist Rock-Cut Caves", isHidden: true, id: "aurangabad-caves" },
@@ -61809,6 +61817,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos in town + walking the rim and crater", cost: "₹30–₹100 auto hops; the descent and rim circuit are on foot", notes: "The Daityasudan temple is in the town; a guide (available at the MTDC/rim) helps with the temple ring and the crater descent", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Lonar town is unconfirmed — a pre-booked taxi from Aurangabad is the standard way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Ajanta Caves", distance: "~160 km", type: "UNESCO Painted Caves", isHidden: false, id: "ajanta-caves" },
@@ -63623,6 +63632,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History", "Art"],
     bestSeason: "October – March (pleasant); April–June is very hot; the monsoon greens the ridge but the steps get slippery",
     duration: "1.5 – 2 hours (an easy add-on to an Aurangabad day)",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-managed; go mid-morning rather than at opening or close, when the ridge can be nearly empty." },
     highlights: [
       { name: "Cave 7 — Bodhisattva sculptures and the Litany of Avalokiteshvara" },
       { name: "The dancers-and-musicians relief group in Cave 7" },
@@ -63639,6 +63649,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto to the base + steps", cost: "Auto fare; ASI entry ticket", notes: "An auto or taxi drops you at the base of the eastern or western group; each is then a short flight of steps up to the caves", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹250", notes: "Both operate across Aurangabad city; fix a pickup time since there are no waiting cabs at the site", available: true },
     ],
     nearbyPlaces: [
       { name: "Bibi ka Maqbara", distance: "~2 km", type: "Mughal Mausoleum", isHidden: false, id: "bibi-ka-maqbara" },
@@ -63690,6 +63701,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage", "Spiritual"],
     bestSeason: "October – March (cool and pleasant); April–June is very hot; Mahashivaratri (Feb/Mar) is the peak",
     duration: "1 – 2 hours (an add-on to an Ellora visit)",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Queues are longest on Mondays, Shravan Mondays and Mahashivaratri." },
     highlights: [
       { name: "One of the twelve Jyotirlingas of Shiva — the last on the traditional list" },
       { name: "A carved red-basalt Hemadpanti temple with a five-tiered shikhara" },
@@ -63706,6 +63718,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking; auto/taxi from Aurangabad", cost: "Auto/taxi fare; temple entry is free (small charges for special darshan/lockers)", notes: "From the Ellora car park the temple is a short walk or auto ride; deposit phones, cameras and footwear at the counters before the queue", available: true },
+      { mode: "Ola / Uber", cost: "₹1,200–₹2,000 round trip from Aurangabad", notes: "Bookable from Aurangabad, usually as part of the same trip that covers Ellora and Daulatabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ellora Caves", distance: "~1 km", type: "UNESCO Rock-Cut Caves", isHidden: false, id: "ellora-caves" },
