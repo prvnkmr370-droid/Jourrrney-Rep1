@@ -52127,6 +52127,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Bokaro", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Bokaro Steel City is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "City Park, Bokaro Steel City", distance: "~5 km", type: "City Park", isHidden: false, id: "city-park-bokaro" },
@@ -52186,6 +52187,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹300–₹700", notes: "From central Dhanbad, ideally with a local guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Dhanbad is unconfirmed — a hired private taxi with a local guide is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "IIT (ISM) Dhanbad", distance: "~15 km", type: "Institute", isHidden: false, id: "iit-ism-dhanbad" },
@@ -52244,6 +52246,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ranchi", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Ranchi is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Lake", distance: "~4 km", type: "City Lake", isHidden: false, id: "ranchi-lake" },
@@ -52303,6 +52306,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Ghatshila", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Ghatshila — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ratmohana Riverside", distance: "~5 km", type: "Riverside", isHidden: false, id: "ratmohana-ghatshila" },
@@ -52362,6 +52366,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Bokaro", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Bokaro Steel City is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bokaro Steel Plant", distance: "~8 km", type: "Industrial Landmark", isHidden: false, id: "bokaro-steel-plant" },
@@ -52421,6 +52426,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi/Forest Department Vehicle", cost: "₹1,500–₹3,000", notes: "Arrange in advance with forest department permission", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in or near this remote forest sanctuary — a forest department vehicle is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~65 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
@@ -52480,6 +52486,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹50–₹150", notes: "From anywhere in central Hazaribagh", available: true },
       { mode: "Walking", cost: "Free", notes: "Easily walkable from central Hazaribagh", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Hazaribagh town — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Wildlife Sanctuary", distance: "~20 km", type: "Wildlife Reserve", isHidden: false, id: "hazaribagh-wildlife-sanctuary" },
@@ -52523,6 +52530,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [
       { name: "A rare complex sacred to Hindus, Buddhists, and Jains" },
       { name: "The main Bhadrakali temple with its tall stepped spire" },
@@ -52539,6 +52547,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,200–₹2,500", notes: "From Hazaribagh or Chatra town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Itkhori — a hired private taxi from Hazaribagh or Chatra is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hazaribagh Lake", distance: "~55 km", type: "Town Lake", isHidden: false, id: "hazaribagh-lake" },
@@ -52598,6 +52607,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹500–₹1,500", notes: "From the nearest district town to a village celebration", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in villages celebrating Baha Parab — a hired local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Massanjore Dam", distance: "Same region (Dumka area)", type: "Reservoir", isHidden: false, id: "massanjore-dam" },
@@ -52656,6 +52666,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi", cost: "₹1,000–₹2,000", notes: "From Ranchi, as a day trip", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Panchghagh Falls — a hired private taxi from Ranchi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchi Rock Garden", distance: "~55 km", type: "Scenic Garden", isHidden: false, id: "ranchi-rock-garden" },
