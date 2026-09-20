@@ -2445,6 +2445,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The main church cluster is compact and walkable", available: true },
       { mode: "Taxi (from Panaji/Madgaon)", cost: "₹500–₹1,000 round trip", notes: "The standard way to visit", available: true },
       { mode: "Local Bus (from Panaji)", cost: "₹20–₹40", notes: "A cheap, genuine local option — regular buses run between Panaji and Old Goa", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable coverage between Panaji and Old Goa", available: true },
     ],
     nearbyPlaces: [
       { name: "Panaji (Fontainhas Latin Quarter)", distance: "10 km", type: "Heritage", isHidden: true },
@@ -2511,6 +2512,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rental Scooter", cost: "₹300–₹600/day", notes: "The standard way to explore South Goa's other beaches and Cotigao", available: true },
       { mode: "Boat (dolphin trips)", cost: "₹300–₹600/person", notes: "Genuine, regularly-run morning trips leaving from the beach", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "For Canacona town and nearby transfers", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Coverage exists but can be patchy this far south — an auto or scooter is often more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Cotigao Wildlife Sanctuary", distance: "18 km", type: "Wildlife", isHidden: true, id: "cotigao-wildlife-sanctuary" },
@@ -12048,6 +12050,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "The standard way to get around North Goa's beach belt", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips between beaches", available: true },
       { mode: "Walking", cost: "Free", notes: "The beach, lake, and headland are all walkable from the village", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Coverage can be patchy this far north — a rented scooter is often more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Ashwem Beach", distance: "~10 km", type: "Beach", isHidden: false, id: "ashwem" },
@@ -12102,6 +12105,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around this stretch of North Goa", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Coverage can be patchy this far north — a rented scooter is often more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Morjim Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "morjim" },
@@ -12162,6 +12166,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around this stretch", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Coverage can be patchy this far north — a rented scooter is often more reliable", available: true },
     ],
     nearbyPlaces: [
       { name: "Ashwem Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "ashwem" },
@@ -12222,6 +12227,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around North Goa", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Available, though a scooter remains the more flexible option for beach-hopping", available: true },
     ],
     nearbyPlaces: [
       { name: "Vagator Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "vagator" },
@@ -12282,6 +12288,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Standard way to get around North Goa", available: true },
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹500 per hop", notes: "Available for shorter trips", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹600", notes: "Available, though a scooter remains the more flexible option for beach-hopping", available: true },
     ],
     nearbyPlaces: [
       { name: "Anjuna Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "anjuna" },
