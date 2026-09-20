@@ -20056,6 +20056,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹700–₹1,500 from Bhavnagar", notes: "Standard way to reach Koliyak", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Koliyak is unconfirmed — a hired taxi from Bhavnagar is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhavnagar", distance: "~25 km", type: "City", isHidden: false, id: "bhavnagar" },
@@ -20098,6 +20099,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "The hall may close briefly in the early afternoon between darshan sessions." },
     highlights: [{ name: "The first-ever Swaminarayan temple, 1822" }, { name: "Inaugurated before 50,000 people" }, { name: "Burmese teak carving, brightly painted" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, Kalupur area", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely combinable with the rest of the old-city heritage walk." },
@@ -20107,6 +20109,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the old city", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -20149,6 +20152,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February; Kartik Purnima fair draws large crowds",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Extended hours during the Kartik Purnima fair." },
     highlights: [{ name: "11th-century Chalukya-style temple" }, { name: "Archaeological roots to 2nd century BCE" }, { name: "Ramayana/Mahabharata wall carvings" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.25h from Himmatnagar", costRange: "₹1,200–₹2,500 (cab from Himmatnagar)", tips: "Genuinely combinable with an Idar Fort/Dowlat Vilas Palace day trip given the shared district." },
@@ -20158,6 +20162,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Standard way to get around Shamlaji town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Shamlaji is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Idar Fort", distance: "~65 km", type: "Fort", isHidden: false, id: "idar-fort" },
@@ -20200,6 +20205,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Both compounds keep the same general hours." },
     highlights: [{ name: "Built 1161 CE by King Kumarapala" }, { name: "Both Śvetāmbara & Digambara compounds" }, { name: "Underlying 4th-century Buddhist site" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Mehsana — long haul", fromMumbai: "Via Mehsana — long haul", fromBangalore: "Not practical", duration: "~55 km / ~1.25h from Mehsana", costRange: "₹1,200–₹2,500 (cab from Mehsana)", tips: "Genuinely combinable with Ambaji or Modhera on the same North Gujarat heritage circuit." },
@@ -20209,6 +20215,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500 from Mehsana", notes: "Standard way to reach Taranga Hill", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Mehsana is unconfirmed — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Modhera Sun Temple", distance: "~55 km", type: "Temple", isHidden: false, id: "modhera-sun-temple" },
@@ -20255,6 +20262,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "One of Gujarat's 3 Shakti Peethas" }, { name: "Original construction from 1152 CE" }, { name: "Sacred to India's hijra community" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Mehsana — long haul", fromMumbai: "Via Mehsana — long haul", fromBangalore: "Not practical", duration: "~35 km / ~50 min from Mehsana", costRange: "₹800–₹1,800 (cab from Mehsana)", tips: "Genuinely combinable with Modhera Sun Temple on the same North Gujarat route." },
@@ -20264,6 +20272,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹100–₹300", notes: "Standard way to get around Becharaji town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Becharaji is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Modhera Sun Temple", distance: "~30 km", type: "Temple", isHidden: false, id: "modhera-sun-temple" },
@@ -20305,6 +20314,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "One of India's few temples to a mortal figure" }, { name: "Built 1902–1907, funded partly by public donations" }, { name: "Porbandar as legendary \"Sudamapuri\"" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Porbandar — long haul", fromMumbai: "Via Porbandar — long haul", fromBangalore: "Not practical", duration: "Central Porbandar, in the main market", costRange: "₹50–₹150 (auto within town)", tips: "Genuinely combinable with Kirti Mandir (Gandhi's birthplace) on the same Porbandar heritage walk." },
@@ -20314,6 +20324,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Porbandar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Porbandar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Madhavpur Beach", distance: "~65 km", type: "Beach", isHidden: false, id: "madhavpur-beach" },
@@ -20355,6 +20366,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual"],
     bestSeason: "November – February",
     duration: "30 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "Traditional site of Krishna's departure from Earth" }, { name: "Reclining Krishna idol with the hunter Jara" }, { name: "Marks the Dwapara-Kali Yuga transition" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Somnath — long haul", fromMumbai: "Via Somnath — long haul", fromBangalore: "Not practical", duration: "~5 km / ~10 min from Somnath Temple", costRange: "₹50–₹150 (auto from Somnath)", tips: "Genuinely a quick, easy add-on to a Somnath visit." },
@@ -20364,6 +20376,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Bhalka from Somnath", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Somnath/Veraval is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Somnath Temple", distance: "~5 km", type: "Temple", isHidden: false, id: "somnath-temple" },
@@ -20416,6 +20429,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "India's westernmost inhabited temple site" }, { name: "Built 1820, referenced since the 7th century CE" }, { name: "Adjoining Narayan Sarovar, a Puranic lake" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~130 km / ~2.5h from Bhuj", costRange: "₹2,500–₹4,500 (cab from Bhuj)", tips: "A genuinely remote, far-western corner of India — plan for a full-day round trip from Bhuj." },
@@ -20425,6 +20439,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹2,500–₹4,500 from Bhuj", notes: "Standard way to reach this remote coastal site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote corner of Kutch — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhuj / Kutch", distance: "~130 km", type: "City", isHidden: false, id: "kutch" },
@@ -20476,6 +20491,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Boat", cost: "₹100–₹300 per person", notes: "Required to reach the island itself", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bharuch is unconfirmed — a hired cab to the boat launch is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bharuch town", distance: "~50 km", type: "Town", isHidden: true },
