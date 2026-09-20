@@ -63868,6 +63868,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Spiritual", "Culture"],
     bestSeason: "November – February for a calmer visit; Ashadhi Ekadashi (June–July) and Kartiki Ekadashi (October–November) for the Wari, when the town is overwhelmed",
     duration: "1 day (a few hours for darshan) — longer if you follow part of the Wari",
+    visitingHours: { opens: "3:00 AM", closes: "11:00 PM", note: "Queues are enormous on Ekadashi and through the Wari; a weekday visit is far quicker." },
     highlights: [
       { name: "The Vitthal-Rukmini temple and the brick-standing Vithoba image" },
       { name: "The Namdev Gate and the samadhis of Sants Namdev and Chokhamela" },
@@ -63884,6 +63885,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking, autos & cycle-rickshaws", cost: "₹20–₹80 per hop", notes: "The temple, the river ghats and the samadhi shrines are a compact walk; autos and rickshaws cover the station and bus stand", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Pandharpur town", available: true },
     ],
     nearbyPlaces: [
       { name: "Solapur", distance: "~75 km", type: "City & Junction", isHidden: true },
@@ -64480,6 +64482,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage", "History"],
     bestSeason: "November – February, when Vidarbha is cool and dry; March–June is very hot (often 43–46°C) with no shade on the open grounds; the monsoon (July–September) is humid and can disrupt travel",
     duration: "Half a day to 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Photography is not allowed inside the huts; the ashram keeps quiet hours around morning and evening prayers." },
     highlights: [
       { name: "Bapu Kuti and the cluster of original ashram huts" },
       { name: "The open prayer ground and daily morning/evening prayers" },
@@ -64496,6 +64499,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw; walking; cycle", cost: "Autos from Wardha/Sevagram station; the ashram itself is walked", notes: "The ashram grounds are explored on foot. Autos link Sevagram with Wardha, the Geetai Mandir, the Vishwa Shanti Stupa and Paunar; distances are short", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage around Sevagram/Wardha is unconfirmed — autos from the station cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Wardha", distance: "~8 km", type: "Town, Laxminarayan Temple & Vishwa Shanti Stupa", isHidden: true },
@@ -64683,6 +64687,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Temple", "Heritage"],
     bestSeason: "November – February for pleasant weather and calmer darshan; Navratri (September–October) for the fullest spiritual experience but with immense crowds; summers are hot, so visit early or late in the day",
     duration: "Half a day to 1 day",
+    visitingHours: { opens: "5:00 AM", closes: "9:30 PM", note: "Darshan queues are shortest very early; Navratri and weekends bring very dense crowds." },
     highlights: [
       { name: "Darshan of the swayambhu Tulja Bhavani idol" },
       { name: "The Hemadpanti black-stone temple and its carved gateways" },
@@ -64699,6 +64704,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; auto-rickshaw", cost: "Autos for the outlying lodges; the temple area is walked", notes: "The old town around the temple is a warren of lanes best done on foot. Autos connect the bus stand, hotels and the Solapur road", available: true },
+      { mode: "Ola / Uber", cost: "₹700–₹1,100 from Solapur", notes: "Bookable from Solapur, though buses and shared taxis are the more typical way to cover the route", available: true },
     ],
     nearbyPlaces: [
       { name: "Akkalkot", distance: "~50 km", type: "Swami Samarth Temple Town", isHidden: true },
@@ -64766,6 +64772,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Shared jeep, auto, on foot", cost: "Shared jeeps/autos between the town and the hill temples; steps on foot", notes: "The Renuka, Datta and Anasuya temples are on separate hills linked by road; shared jeeps and autos shuttle between them, with stepped climbs at each. Mahurgad Fort is a short walk/climb from the Renuka temple", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this remote a temple town — shared jeeps and autos cover the hill circuit", available: false },
     ],
     nearbyPlaces: [
       { name: "Nanded", distance: "~130 km", type: "City & Hazur Sahib Gurudwara", isHidden: true },
@@ -64817,6 +64824,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "City", "Heritage"],
     bestSeason: "November – February, when Marathwada is cool and pleasant; summers (March–June) are very hot, often above 42°C; the Guru Gobind Singh Gurpurab and the December Malegaon fair are the big draws",
     duration: "1 – 2 days",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "The langar hall runs through the day; Gurpurab and the Malegaon fair bring the largest crowds." },
     highlights: [
       { name: "Takht Sachkhand Sri Hazur Sahib and the langar" },
       { name: "The riverside gurudwaras along the Godavari ghats" },
@@ -64833,6 +64841,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto-rickshaw; city bus; on foot", cost: "Cheap shared and metered autos across the city", notes: "Autos are the workhorse for the Takht, the riverside gurudwaras, the fort and the station. The gurudwara complex and its immediate bazaar are walked", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Nanded city", available: true },
     ],
     nearbyPlaces: [
       { name: "Mahur", distance: "~130 km", type: "Renuka Devi Shakti Peeth", isHidden: false, id: "mahur" },
