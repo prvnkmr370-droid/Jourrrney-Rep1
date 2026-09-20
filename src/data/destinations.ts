@@ -73629,6 +73629,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Changu_Lake%2C_Sikkim.jpg/1280px-Changu_Lake%2C_Sikkim.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Changu_Lake%2C_Sikkim.jpg/1280px-Changu_Lake%2C_Sikkim.jpg"],
     imageCredit: "Photo: Izhan555 — Wikimedia Commons, CC BY-SA 4.0, Wiki Loves Earth 2016.",
+    visitingHours: { opens: "8:00 AM", closes: "3:00 PM", note: "Permit-controlled visiting window; tour taxis leave Gangtok by 7:30–8 AM so travellers reach the lake before the afternoon weather turns. No official per-site source — based on consistently reported visitor guide timings." },
     category: ["Nature", "Adventure"],
     bestSeason: "Mid-May – October (flowering season); frozen and often inaccessible in deep winter",
     duration: "3–4 hours",
@@ -73643,6 +73644,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹2,000–₹4,000 for a shared or private day tour", notes: "PAP permits are arranged through registered agents in Gangtok", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Nathula Pass", distance: "~15 km", type: "Mountain Pass", isHidden: false, id: "nathula-pass" },
@@ -73686,6 +73688,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/India-china_border_and_nathula_peak.jpg/1280px-India-china_border_and_nathula_peak.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/India-china_border_and_nathula_peak.jpg/1280px-India-china_border_and_nathula_peak.jpg"],
     imageCredit: "Photo: Vinay.vaars — Wikimedia Commons, CC BY-SA 3.0.",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Closed to tourists Mondays and Tuesdays. Practical visitor window is narrower — around 10 AM–3 PM — since the army turns tour groups back once afternoon weather sets in. No official per-site source — based on consistently reported visitor guide timings." },
     category: ["Adventure", "Heritage"],
     bestSeason: "May – October; closed to tourists on Mondays and Tuesdays, and during heavy snowfall",
     duration: "Half-day (from Gangtok)",
@@ -73700,6 +73703,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹2,500–₹5,000 for a shared or private day tour, usually combined with Tsomgo Lake", notes: "Book through a registered Gangtok travel agency well in advance", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only and military-controlled in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Tsomgo Lake", distance: "~15 km", type: "Lake", isHidden: false, id: "tsomgo-lake" },
@@ -73743,6 +73747,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Dharma_Chakra_Centre.jpg/1280px-Dharma_Chakra_Centre.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Dharma_Chakra_Centre.jpg/1280px-Dharma_Chakra_Centre.jpg"],
     imageCredit: "Photo: PP Yoonus — Wikimedia Commons, CC BY-SA 3.0.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Hours vary across visitor sources (some list a shorter 8 AM–5/6 PM window) — Sikkim's official tourism site has no per-monastery timings page, so confirm locally before visiting." },
     category: ["Buddhist Site", "Heritage"],
     bestSeason: "October – May",
     duration: "2–3 hours",
@@ -73757,6 +73762,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Shared Jeep", cost: "₹800–₹1,500 round trip from Gangtok", notes: "Easily arranged in Gangtok", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "MG Marg", distance: "~24 km", type: "Shopping", isHidden: false, id: "mg-marg-gangtok" },
@@ -73800,6 +73806,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Entrance_to_Pemangytse_Gompa.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/d5/Entrance_to_Pemangytse_Gompa.jpg"],
     imageCredit: "Photo: Kothanda Srinivasan — Wikimedia Commons, CC BY 2.0, via Flickr (FlickreviewR-confirmed).",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Consistently reported across visitor guides; Sikkim's official tourism site has no per-monastery timings page, so confirm locally before visiting." },
     category: ["Buddhist Site", "Heritage"],
     bestSeason: "October – May",
     duration: "2–3 hours",
@@ -73814,6 +73821,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Local Taxi", cost: "₹300–₹800 round trip from Pelling", notes: "Easily arranged in Pelling", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Khecheopalri Lake", distance: "~34 km", type: "Lake", isHidden: false, id: "khecheopalri-lake" },
@@ -73872,6 +73880,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹5,000–₹9,000 for a 2-day Lachung/Yumthang package", notes: "Book through a registered Gangtok travel agency", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Gurudongmar Lake", distance: "~65 km", type: "Lake", isHidden: false, id: "gurudongmar-lake" },
@@ -73930,6 +73939,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Permitted Tour Taxi", cost: "₹6,000–₹10,000 for a 2-day Lachen/Gurudongmar package", notes: "Book through a registered Gangtok travel agency", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead; this route is permit-only in any case", available: false },
     ],
     nearbyPlaces: [
       { name: "Yumthang Valley", distance: "~65 km", type: "Nature", isHidden: false, id: "yumthang-valley" },
@@ -73988,6 +73998,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹1,500–₹3,000 round trip from Pelling", notes: "Easily arranged in Pelling or Yuksom", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~34 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -74046,6 +74057,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The street itself is pedestrian, and central Gangtok is very walkable", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations, and Gangtok relies instead on local hired cabs and a district taxi union system for anything beyond walking distance", available: false },
     ],
     nearbyPlaces: [
       { name: "Rumtek Monastery", distance: "~24 km", type: "Buddhist Site", isHidden: false, id: "rumtek-monastery" },
@@ -74103,6 +74115,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹2,000–₹4,000 round trip from Gangtok", notes: "Easily arranged from Gangtok or Namchi", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Ravangla", distance: "~20 km", type: "Culture", isHidden: true },
@@ -74160,6 +74173,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / On Foot", cost: "₹300–₹800 for local sightseeing", notes: "Yuksom's key sites are walkable; treks require a registered guide", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Pemayangtse Monastery", distance: "~35 km", type: "Buddhist Site", isHidden: false, id: "pemayangtse-monastery" },
@@ -74204,6 +74218,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/98/Entrance_gate_to_Tashiding.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/98/Entrance_gate_to_Tashiding.jpg"],
     imageCredit: "Photo: Kothanda Srinivasan — Wikimedia Commons, CC BY 2.0, via Flickr (FlickreviewR-confirmed).",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Consistently reported across visitor guides; Sikkim's official tourism site has no per-monastery timings page, so confirm locally before visiting, especially around the Bumchu Festival." },
     category: ["Buddhist Site", "Pilgrimage"],
     bestSeason: "October – May; Bumchu Festival typically falls February–March",
     duration: "2–3 hours",
@@ -74218,6 +74233,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹1,500–₹3,000 round trip from Pelling or Yuksom", notes: "Easily arranged in either town", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Yuksom", distance: "~19 km", type: "Heritage", isHidden: false, id: "yuksom" },
@@ -74262,6 +74278,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Guru_Padmasambhava_statue_in_Samdruptse_Hill%2C_Namchi%2C_district_of_South_Sikkim_14.jpg/1280px-Guru_Padmasambhava_statue_in_Samdruptse_Hill%2C_Namchi%2C_district_of_South_Sikkim_14.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Guru_Padmasambhava_statue_in_Samdruptse_Hill%2C_Namchi%2C_district_of_South_Sikkim_14.jpg/1280px-Guru_Padmasambhava_statue_in_Samdruptse_Hill%2C_Namchi%2C_district_of_South_Sikkim_14.jpg"],
     imageCredit: "Photo: Amitabha Gupta — Wikimedia Commons, CC BY 4.0.",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "For Samdruptse hill; Siddhesvara Dham keeps similar daytime hours. Sikkim's official tourism site has no per-site timings page, so confirm locally before visiting." },
     category: ["Pilgrimage", "Culture"],
     bestSeason: "October – May",
     duration: "1 day",
@@ -74276,6 +74293,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Local Taxi", cost: "₹500–₹1,500 round trip within Namchi", notes: "Easily arranged in town", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Temi Tea Garden", distance: "~20 km", type: "Nature", isHidden: false, id: "temi-tea-garden" },
@@ -74320,6 +74338,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_statue_of_Buddha.jpg/1280px-The_statue_of_Buddha.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_statue_of_Buddha.jpg/1280px-The_statue_of_Buddha.jpg"],
     imageCredit: "Photo: uploaded to Wikimedia Commons, CC BY-SA 4.0, captioned \"Magnificent Buddha Statue (40 MTR tall) at Tathagata Tsal, Ravangla, Sikkim\".",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Some visitor sources list a later closing time — Sikkim's official tourism site has no per-site timings page, so confirm locally before visiting." },
     category: ["Pilgrimage", "Nature"],
     bestSeason: "April – May (rhododendron/orchid bloom) and October – December (clear mountain views)",
     duration: "3–4 hours",
@@ -74334,6 +74353,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / On Foot", cost: "₹200–₹500 within Ravangla", notes: "Buddha Park is walkable from the town centre", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable anywhere in Sikkim — the state has no Ola or Uber operations and runs a district-based taxi union system instead", available: false },
     ],
     nearbyPlaces: [
       { name: "Temi Tea Garden", distance: "~20 km", type: "Nature", isHidden: false, id: "temi-tea-garden" },
