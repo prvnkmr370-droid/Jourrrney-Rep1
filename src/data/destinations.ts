@@ -20534,6 +20534,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "20–30 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Access for non-community visitors can be limited — call ahead." },
     highlights: [{ name: "Gujarat's only synagogue" }, { name: "Built 1934 by the Bene Israel community" }, { name: "Beside a historic Parsi fire temple" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, Khamasa area", costRange: "₹50–₹150 (auto within the city)", tips: "A quiet, real thread of Ahmedabad's religious diversity — genuinely worth a short stop on an old-city walk." },
@@ -20543,6 +20544,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around the old city", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -20588,6 +20590,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Deep in Gir forest; visit in daylight." },
     highlights: [{ name: "3,000-year-old black-stone idol (tradition)" }, { name: "3 natural hot sulphur springs" }, { name: "Deep within Gir forest" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Junagadh — long haul", fromMumbai: "Via Diu — long haul", fromBangalore: "Not practical", duration: "~30 km / ~1h from Una", costRange: "₹1,500–₹3,000 (cab from Una)", tips: "Genuinely a scenic drive through Gir forest itself — watch for wildlife crossing signs along the route." },
@@ -20597,6 +20600,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Una", notes: "Standard way to reach this forest-interior site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this forest-interior area — a hired taxi from Una is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Gir National Park", distance: "Within the same forest belt", type: "Wildlife", isHidden: false, id: "gir-national-park" },
@@ -20639,6 +20643,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "Built 1893 by Maharaja Takhtsinhji" }, { name: "All-marble, 18-pillar Gujarati style" }, { name: "Panoramic Gulf of Cambay views" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "Central Bhavnagar", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely worth timing for sunset given the hilltop's open views over the Gulf." },
@@ -20648,6 +20653,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Bhavnagar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bhavnagar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhavnagar (Nilambag Palace)", distance: "Same area", type: "City", isHidden: false, id: "bhavnagar" },
@@ -20690,6 +20696,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open daily." },
     highlights: [{ name: "12th-century Malwa (bhumija) style" }, { name: "A natural spring perpetually bathing the lingam" }, { name: "Riverbank setting at the Mahi-Galti confluence" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad/Dakor — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~15 km / ~25 min from Dakor", costRange: "₹300–₹700 (auto/cab from Dakor)", tips: "Genuinely combinable with a Dakor Ranchhodrai Temple visit on the same trip." },
@@ -20699,6 +20706,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹300–₹700 from Dakor", notes: "Standard way to reach Galteshwar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Dakor is unconfirmed — an auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ranchhodrai Temple, Dakor", distance: "~15 km", type: "Temple", isHidden: false, id: "ranchhodrai-temple-dakor" },
@@ -20744,6 +20752,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Busiest on Saturdays." },
     highlights: [{ name: "The only Swaminarayan temple centered on Hanuman" }, { name: "Founded by Gopalanand Swami, a direct Swaminarayan disciple" }, { name: "54-foot Hanuman statue, unveiled 2023" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Botad — long haul", fromMumbai: "Via Botad — long haul", fromBangalore: "Not practical", duration: "~20 km / ~30 min from Botad", costRange: "₹500–₹1,200 (cab from Botad)", tips: "Genuinely one of Gujarat's most-visited Swaminarayan-tradition sites — expect a lively, well-organized crowd, especially on Saturdays." },
@@ -20753,6 +20762,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Botad", notes: "Standard way to reach Sarangpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Botad is unconfirmed — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Botad town", distance: "~20 km", type: "Town", isHidden: true },
@@ -20798,6 +20808,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "November – February",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "Founded c. 746 CE by King Vanraj Chavda" }, { name: "51 surrounding smaller shrines" }, { name: "Rebuilt in the 1940s–50s as Jinalaya Vanraj Vihar" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Patan — long haul", fromMumbai: "Via Patan — long haul", fromBangalore: "Not practical", duration: "Central Patan", costRange: "₹50–₹150 (auto within town)", tips: "Genuinely combinable with a Rani ki Vav visit on the same Patan heritage day." },
@@ -20807,6 +20818,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Patan", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Patan is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rani ki Vav, Patan", distance: "~2 km", type: "UNESCO Heritage", isHidden: false, id: "rani-ki-vav" },
@@ -20849,6 +20861,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round",
     duration: "20–30 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Outside prayer times." },
     highlights: [{ name: "Ahmedabad's oldest mosque, completed 1414-15" }, { name: "Once the Sultan's private royal mosque" }, { name: "Hindu-artisan craftsmanship within an Islamic design" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Bhadra Fort", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely a quick, essential stop on the old-city heritage walk, right beside the other founding-era monuments." },
@@ -20858,6 +20871,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Central location, walkable from Bhadra Fort", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹200", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhadra Fort", distance: "~500 m", type: "Fort", isHidden: false, id: "bhadra-fort" },
@@ -20905,6 +20919,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round; advance booking required",
     duration: "2–3 hours",
+    visitingHours: { opens: "10:30 AM", closes: "12:30 PM", note: "Visits run as pre-booked timed slots only; closed Wednesdays and public holidays." },
     highlights: [{ name: "Founded 1949 by the Sarabhai family" }, { name: "Housed in the Sarabhai estate, The Retreat" }, { name: "One of the world's foremost textile collections" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Shahibag area, central Ahmedabad", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely book your visit slot in advance online — the museum limits daily visitor numbers to protect the textiles." },
@@ -20914,6 +20929,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to reach Shahibag", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹150", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -20955,6 +20971,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Nature"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Mondays." },
     highlights: [{ name: "India's first dedicated dinosaur museum (2019)" }, { name: "One of the world's largest dinosaur egg hatcheries" }, { name: "Discovery site of Rajasaurus narmadensis" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~90 km / ~2h from Ahmedabad", costRange: "₹1,800–₹3,500 (cab from Ahmedabad)", tips: "Genuinely a great family day trip — the fossil-hatchery site itself is a short walk from the museum." },
@@ -20964,6 +20981,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,800–₹3,500 from Ahmedabad", notes: "Standard way to reach Raiyoli", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Raiyoli — a hired taxi from Ahmedabad is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "~90 km", type: "City", isHidden: false, id: "ahmedabad" },
