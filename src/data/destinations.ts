@@ -19051,6 +19051,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "Year-round",
     duration: "20–30 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Outside prayer times." },
     highlights: [{ name: "Built 1572–73" }, { name: "The famous stone jali, carved by 45 craftsmen" }, { name: "A worldwide symbol of Ahmedabad" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Lal Darwaja", costRange: "₹50–₹150 (auto within the city)", tips: "A quick but genuinely essential stop — even a brief visit is worth it for the jali alone." },
@@ -19060,6 +19061,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto Rickshaw", cost: "Free–₹100", notes: "Centrally located near Lal Darwaja", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹200", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Ahmedabad", distance: "Same area", type: "City", isHidden: false, id: "ahmedabad" },
@@ -19106,6 +19108,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "Year-round",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:30 PM", note: "Outside prayer times." },
     highlights: [{ name: "Completed 4 January 1424" }, { name: "Tombs of Ahmad Shah I and his family" }, { name: "Built from repurposed temple stone" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "Central Ahmedabad, near Bhadra Fort", costRange: "₹50–₹150 (auto within the city)", tips: "Genuinely one of the core stops on the official Ahmedabad heritage walk." },
@@ -19115,6 +19118,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "Central location, walkable from Bhadra Fort", available: true },
+      { mode: "Ola / Uber", cost: "₹50–₹200", notes: "Widely available across Ahmedabad", available: true },
     ],
     nearbyPlaces: [
       { name: "Bhadra Fort", distance: "~500 m", type: "Fort", isHidden: false, id: "bhadra-fort" },
@@ -19167,6 +19171,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Himmatnagar", notes: "Standard way to reach Idar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Himmatnagar/Idar is unconfirmed — a hired taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Himmatnagar", distance: "~25 km", type: "Town", isHidden: true },
@@ -19226,6 +19231,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹800–₹1,800 from Rajkot", notes: "Standard way to reach Wankaner", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Wankaner is unconfirmed — a hired taxi from Rajkot is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Rajkot", distance: "~35 km", type: "City", isHidden: false, id: "rajkot" },
@@ -19282,6 +19288,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Ahmedabad", notes: "Standard way to reach Utelia", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in this rural area — a hired taxi from Ahmedabad is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lothal (Indus Valley site)", distance: "~15 km", type: "Archaeological", isHidden: true },
@@ -19333,6 +19340,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Standard way to get around Himmatnagar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Himmatnagar is unconfirmed — an auto is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Idar Fort", distance: "~25 km", type: "Fort", isHidden: false, id: "idar-fort" },
@@ -19381,6 +19389,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "State Archaeology Department-managed." },
     highlights: [{ name: "4th–5th century Buddhist rock-cut caves" }, { name: "Rediscovered 1958 by P.P. Pandya" }, { name: "Chaitya cave with Bodhisattva sculptures" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot/Junagadh — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~66 km / ~1.25h from Rajkot, ~41 km from Junagadh", costRange: "₹1,200–₹2,500 (cab from Rajkot)", tips: "Genuinely an offbeat stop — combine with a wider Junagadh-Rajkot heritage circuit." },
@@ -19390,6 +19399,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,200–₹2,500", notes: "Standard way to reach the remote caves near Jetpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near this remote site — a hired taxi from Rajkot or Junagadh is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Junagadh", distance: "~41 km", type: "City", isHidden: false, id: "junagadh" },
@@ -19436,6 +19446,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-managed." },
     highlights: [{ name: "Dutch Cemetery, c. 1616 — ASI-protected" }, { name: "British Cemetery, c. 1651" }, { name: "Monumental 17th-century Indo-European tombs" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "NH48 — ~280km, ~5h", fromBangalore: "Not practical", duration: "Central Surat, near the old city", costRange: "₹80–₹250 (auto within the city)", tips: "The two cemeteries are genuinely a short walk apart — visit both together." },
@@ -19445,6 +19456,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹80–₹250", notes: "Standard way to get around old Surat", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Widely available across Surat", available: true },
     ],
     nearbyPlaces: [
       { name: "Surat (Surat Castle)", distance: "Same area", type: "City", isHidden: false, id: "surat" },
@@ -19490,6 +19502,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Active Jain pilgrimage temple." },
     highlights: [{ name: "Site of ancient Bhadravati (Mahabharata-referenced)" }, { name: "52 shrines around the central sanctum" }, { name: "Rebuilt after real 1819/1844-45/1875 earthquakes" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~80 km / ~1.5h from Bhuj", costRange: "₹1,500–₹3,000 (cab from Bhuj)", tips: "Genuinely combinable with a Mandvi Beach visit given the shared coastal Kutch route." },
@@ -19499,6 +19512,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹1,500–₹3,000 from Bhuj", notes: "Standard way to reach Bhadreshwar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kutch is unconfirmed — a hired taxi from Bhuj is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Mandvi Beach", distance: "~30 km", type: "Beach", isHidden: false, id: "mandvi-beach" },
