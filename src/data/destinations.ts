@@ -63954,6 +63954,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired jeep/taxi; walking on the treks", cost: "Jeep charter for the lake–dam–falls circuit; guide fees for treks", notes: "There is little public transport between the scattered points — a hired jeep covers the lake, dam and falls; the treks (Kalsubai, Ratangad, Sandhan) are on foot from their base villages, ideally with a local guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage across the scattered lake and trek-base villages — a hired jeep is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nashik", distance: "~70 km", type: "Godavari Pilgrimage City", isHidden: false, id: "nashik" },
@@ -64022,6 +64023,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; hired vehicle to the trailhead", cost: "Vehicle to the base village; the fort is entirely on foot", notes: "There is no vehicle access on the fort. Between the machis it is a walk of 1–3 km each way along ridges and through gates", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage to the base villages — a hired taxi from Pune is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sinhagad Fort", distance: "~30 km", type: "Hill Fort", isHidden: false, id: "sinhagad-fort" },
@@ -64911,6 +64913,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; auto/taxi to the trailhead", cost: "Auto/taxi Lonavala–Malavli–Lohagadwadi; the fort is on foot", notes: "From Malavli it is a walk of ~5–6 km (partly on a motorable road) to the base, then stepped paths through the gates. From Lohagadwadi it is a short climb", available: true },
+      { mode: "Ola / Uber", cost: "₹300–₹600 from Lonavala to Lohagadwadi", notes: "Bookable from Lonavala, though a shared auto or taxi is the more typical option", available: true },
     ],
     nearbyPlaces: [
       { name: "Lonavala", distance: "~12 km", type: "Hill Station", isHidden: false, id: "lonavala" },
@@ -64978,6 +64981,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; shared jeep to the trailhead", cost: "Shared jeep to Khireshwar/Pachnai; the fort is entirely on foot", notes: "Everything on the plateau — temple, cave, Konkan Kada, Taramati — is connected by foot trails, 1–3 km apart across open ground and rock. No vehicle access on the fort", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage to the base villages — a shared jeep from Kalyan or Igatpuri is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Malshej Ghat", distance: "~20 km (Khireshwar side)", type: "Monsoon Mountain Pass", isHidden: false, id: "malshej-ghat" },
@@ -65046,6 +65050,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "On foot; jeep to Bari", cost: "Shared jeep/bus to Bari; the trek is on foot from the village", notes: "The climb is a single well-used trail from Bari to the summit and back, about 6 km round trip. No vehicle access beyond the village", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage to Bari village — a shared jeep or bus from Igatpuri is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhandardara", distance: "~15 km", type: "Lake, Wilson Dam & Randha Falls", isHidden: false, id: "bhandardara" },
