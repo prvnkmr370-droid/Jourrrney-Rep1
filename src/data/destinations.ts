@@ -42019,6 +42019,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "The riverside ghats" }, { name: "Dhauladhar range backdrop" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kangra Airport (Gaggal), ~15 km from Dharamshala", fromMumbai: "Via Delhi, then a connecting flight to Gaggal", fromBangalore: "Via Delhi, then a connecting flight to Gaggal", duration: "~1.5h Delhi–Gaggal + short road transfer", costRange: "₹3,500–₹10,000", tips: "One of the more reliable regional airports in HP, with regular Delhi connections." },
@@ -42034,6 +42035,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in the Kangra/Dharamshala corridor, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "24 km", type: "Heritage Town", isHidden: false, id: "kangra" }, { name: "Palampur", distance: "25 km", type: "Tea-Garden Town", isHidden: false, id: "palampur" }],
     budgetBreakdown: [
@@ -42072,6 +42074,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March (Navratri is the peak)",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Open daily; especially crowded during Navratri." },
     highlights: [{ name: "The Chinnamastika Devi shrine" }, { name: "The Navratri fair" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport is the practical option, road onward from there", fromMumbai: "Via Delhi, then Chandigarh, then road", fromBangalore: "Via Delhi, then Chandigarh, then road", duration: "~1h Delhi–Chandigarh + 2–3h road", costRange: "₹3,000–₹9,000", tips: "No local airport — this district sits on the plains/foothill border, so Chandigarh or Dehradun connections work well depending on direction." },
@@ -42087,6 +42090,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus", cost: "₹10–₹40", notes: "Standard way around town", available: true },
       { mode: "Auto Rickshaw", cost: "₹30–₹150", notes: "Widely available in the main town", available: true },
       { mode: "Taxi", cost: "₹200–₹1,000", notes: "For day trips to nearby sites", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Chintpurni — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Una", distance: "~55 km", type: "Town", isHidden: false, id: "una" }, { name: "Kangra", distance: "59 km", type: "Heritage Town", isHidden: false, id: "kangra" }],
     budgetBreakdown: [
@@ -42125,6 +42129,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Open daily." },
     highlights: [{ name: "The monolithic rock-carved temple cluster" }, { name: "The reflecting tank in front of the complex" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kangra Airport (Gaggal), ~15 km from Dharamshala", fromMumbai: "Via Delhi, then a connecting flight to Gaggal", fromBangalore: "Via Delhi, then a connecting flight to Gaggal", duration: "~1.5h Delhi–Gaggal + short road transfer", costRange: "₹3,500–₹10,000", tips: "One of the more reliable regional airports in HP, with regular Delhi connections." },
@@ -42140,6 +42145,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in the Kangra/Dharamshala corridor, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "38 km", type: "Heritage Town", isHidden: false, id: "kangra" }],
     budgetBreakdown: [
@@ -42178,6 +42184,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "The fort's surviving gateways and ramparts" }, { name: "The on-site ASI museum" }, { name: "Views over the Kangra Valley" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Kangra Airport (Gaggal), ~15 km from Dharamshala", fromMumbai: "Via Delhi, then a connecting flight to Gaggal", fromBangalore: "Via Delhi, then a connecting flight to Gaggal", duration: "~1.5h Delhi–Gaggal + short road transfer", costRange: "₹3,500–₹10,000", tips: "One of the more reliable regional airports in HP, with regular Delhi connections." },
@@ -42193,6 +42200,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in Kangra town, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "3 km", type: "Heritage Town", isHidden: false, id: "kangra" }],
     budgetBreakdown: [
@@ -42246,6 +42254,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Connects Lower Dharamshala, McLeod Ganj, and Kangra town", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for McLeod Ganj/Bhagsu/Dharamkot area trips", available: true },
       { mode: "Walking", cost: "—", notes: "McLeod Ganj's core is easily walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in the Kangra corridor, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [{ name: "Kangra", distance: "48 km", type: "Heritage Town", isHidden: false, id: "kangra" }],
     budgetBreakdown: [
@@ -42299,6 +42308,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Shared Taxi / Local Bus", cost: "₹100–₹500", notes: "Infrequent — schedules are seasonal and worth confirming locally", available: true },
       { mode: "Own/Rented Vehicle", cost: "—", notes: "By far the most practical way to see multiple villages in one trip", available: true },
       { mode: "Trekking", cost: "—", notes: "Many nearby villages are only realistically reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote high-altitude village — a shared taxi or own vehicle is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Kinnaur (Reckong Peo)", distance: "102 km", type: "Town", isHidden: false, id: "kinnaur" }],
     budgetBreakdown: [
@@ -42352,6 +42362,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Local Bus / HRTC", cost: "₹10–₹40", notes: "Standard way around town and to nearby villages", available: true },
       { mode: "Taxi Union", cost: "₹200–₹1,500", notes: "Fixed local rates for day trips", available: true },
       { mode: "Own Vehicle", cost: "—", notes: "Recommended for reaching more remote lake/valley spots", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage on this trek route — a shared taxi or own vehicle to the trailhead is the standard option", available: false },
     ],
     nearbyPlaces: [{ name: "Mandi", distance: "45 km", type: "Heritage Town", isHidden: false, id: "mandi" }],
     budgetBreakdown: [
