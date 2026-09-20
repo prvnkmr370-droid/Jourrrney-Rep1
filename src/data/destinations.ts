@@ -6990,6 +6990,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Agastya_Lake_-_Badami%2C_views_from_caves_-_hamvrvb102k22_%2814%29.jpg/1280px-Agastya_Lake_-_Badami%2C_views_from_caves_-_hamvrvb102k22_%2814%29.jpg",
     ],
     imageCredit: "Photos: Ms Sarah Welch, Dey.sandip, Murali K, Abhijit Kar Gupta, Mbigul, Vinayaraj — Wikimedia Commons, CC BY / CC BY-SA.",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "For the ASI-protected cave temples; last entry is 5 PM, and the caves aren't lit after dark." },
     category: ["Heritage", "History", "UNESCO"],
     bestSeason: "October – March",
     duration: "1–2 days",
@@ -7008,6 +7009,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Walking", cost: "Free", notes: "The cave temples and lake area are compact and walkable", available: true },
       { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "For getting around town", available: true },
       { mode: "Shared/Private Taxi", cost: "₹1,500–₹3,000 (half-day)", notes: "For the Aihole/Pattadakal circuit", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this small heritage town is unconfirmed — local autos and a hired taxi are the reliable way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Aihole (early Chalukyan temple cluster)", distance: "35 km", type: "UNESCO Heritage", isHidden: true, id: "aihole" },
@@ -7185,6 +7187,7 @@ export const DESTINATIONS: Destination[] = [
       "https://images.unsplash.com/photo-1642516863984-68fdeea5ba64?w=1200&h=900&fit=crop&auto=format",
     ],
     category: ["Heritage", "UNESCO", "Adventure", "Photography"],
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Most ASI monuments across the site keep this window (the Vittala Temple opens slightly later, at 8:30 AM); the still-active Virupaksha Temple runs its own darshan schedule around it." },
     bestSeason: "October – February",
     duration: "3–4 days",
     highlights: [{ name: "Vittala Temple Stone Chariot", id: "vittala-temple-stone-chariot" }, { name: "Virupaksha Temple (still active)" }, { name: "Matanga Hill sunrise" }, { name: "Hippie Island (Virupapur Gaddi)" }, { name: "Hampi Bazaar ruins" }],
@@ -7203,6 +7206,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹150–₃00 half day", notes: "Negotiate for a full-day tour — saves time covering spread-out ruins", available: true },
       { mode: "Coracle (Putti)", cost: "₹50–₁00", notes: "Round wicker boats cross Tungabhadra to Hippie Island — unique experience", available: true },
       { mode: "Moped/Scooter", cost: "₹300–₄00/day", notes: "Best for independent exploration; available at Hospet and some Hampi shops", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹150–₹400 within Hospet/Hampi", notes: "Cars and autos are bookable through Ola and Uber around Hospet and Hampi; bike-taxi rides from Ola/Uber are currently paused statewide under a Karnataka High Court order, though Rapido continues its bike service as 'Bike Direct'", available: true },
     ],
     nearbyPlaces: [
       { name: "Vittala Temple Stone Chariot", distance: "2 km from Hampi Bazaar", type: "Iconic Monument", isHidden: true, id: "vittala-temple-stone-chariot", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg" },
@@ -25372,6 +25376,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Pattadakal_Virupaksha_Temple.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/c5/Pattadakal_Virupaksha_Temple.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/7th_-_9th_century_Hindu_and_Jain_temples%2C_Pattadakal_monuments_Karnataka_7.jpg/1280px-7th_-_9th_century_Hindu_and_Jain_temples%2C_Pattadakal_monuments_Karnataka_7.jpg"],
     imageCredit: "Photos: Wikimedia Commons contributor (public domain), Ms Sarah Welch (CC BY-SA 4.0) — Wikimedia Commons.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI's own listing gives sunrise-to-sunset hours; some visitor guides cite a narrower 8 AM–5:30 PM window, so check locally." },
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – February",
     duration: "3–4 hours",
@@ -25389,6 +25394,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 from Badami", notes: "Standard way to reach Pattadakal", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Badami (~22 km, rural roads) is unconfirmed — a hired taxi is the practical way to reach the site", available: false },
     ],
     nearbyPlaces: [
       { name: "Badami", distance: "~22 km", type: "Heritage", isHidden: false, id: "badami" },
@@ -25428,6 +25434,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg/1280px-Iconic_Stone_Chariot_%40_Vittala_Temple%2C_Hampi%2C_Karnataka.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/The_Grand_Stone_chariot_in_the_midst_of_Mantapas_at_Vittala_Temple%2C_Hampi.jpg/1280px-The_Grand_Stone_chariot_in_the_midst_of_Mantapas_at_Vittala_Temple%2C_Hampi.jpg"],
     imageCredit: "Photos: Ram Nagesh Thota, RanjithaRKRao — Wikimedia Commons, CC BY-SA 4.0.",
+    visitingHours: { opens: "8:30 AM", closes: "6:00 PM", note: "Verified against ASI-linked visitor guides for the Vittala Temple." },
     category: ["Heritage"],
     bestSeason: "October – February",
     duration: "2–3 hours",
@@ -25445,6 +25452,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Bicycle", cost: "₹100–₹300 (auto) or ₹100-200/day (bicycle rental)", notes: "Standard ways to get around the Hampi ruins", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹150–₹350 within Hampi/Hospet", notes: "Cars and autos are bookable through Ola and Uber; bike-taxi from Ola/Uber is paused statewide, though Rapido's bike service continues as 'Bike Direct'", available: true },
     ],
     nearbyPlaces: [
       { name: "Hampi", distance: "~5 km", type: "Heritage", isHidden: false, id: "hampi" },
@@ -25667,6 +25675,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Widely called the 'cradle of Indian temple architecture'" },
       { name: "The apsidal Durga Temple and the older Lad Khan Temple, among the site's best known" },
     ],
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Standard ASI sunrise-to-sunset hours for the temple complex, matching neighbouring Pattadakal." },
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Not practical — fly to Hubli/Belgaum then road", fromMumbai: "~600 km, long haul", fromBangalore: "~500 km, long haul", duration: "~35 km / ~45 min from Badami", costRange: "₹600–₹1,400 by cab from Badami", tips: "Genuinely worth visiting alongside Badami and Pattadakal — the three sites together trace the Chalukyas' full architectural evolution." },
     ],
@@ -25675,6 +25684,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹600–₹1,400 from Badami", notes: "Standard way to reach Aihole", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Badami (~35 km, rural roads) is unconfirmed — a hired taxi is the practical way to reach the site", available: false },
     ],
     nearbyPlaces: [
       { name: "Badami", distance: "~35 km", type: "Heritage", isHidden: false, id: "badami" },
@@ -25716,6 +25726,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Daroji_Bear_Sanctuary_2022_entrance_board.jpg/1280px-Daroji_Bear_Sanctuary_2022_entrance_board.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Daroji_Bear_Sanctuary_2022_entrance_board.jpg/1280px-Daroji_Bear_Sanctuary_2022_entrance_board.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sloth_Bear-3302.jpg/1280px-Sloth_Bear-3302.jpg"],
     imageCredit: "Photos: Davidindia, Rudraksha Chodankar — Wikimedia Commons, CC BY 4.0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "2:00 PM", closes: "6:00 PM", note: "This is the bear-viewing window — forest staff scatter honey around 2 PM to draw the bears out, with sightings most reliable near sunset." },
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "2–3 hours",
@@ -25733,6 +25744,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹500–₹1,200 from Hampi", notes: "Standard way to reach the sanctuary viewpoint", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage this far from Hampi/Hospet (~15 km, rural roads) is unconfirmed — a hired taxi is the practical way to reach the sanctuary", available: false },
     ],
     nearbyPlaces: [
       { name: "Hampi", distance: "~15 km", type: "Heritage", isHidden: false, id: "hampi" },
@@ -26362,6 +26374,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Coracle Crossing", cost: "₹50–₹150 per person (approx.)", notes: "Traditional round-boat crossing of the Tungabhadra from Hampi", available: true },
       { mode: "Bicycle Rental", cost: "₹100–₹200/day", notes: "Good way to explore Anegundi's quieter lanes and surrounding countryside", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in Anegundi village itself is unconfirmed — the coracle crossing or a short drive via the bridge from Hampi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Hampi", distance: "~5 km", type: "Heritage", isHidden: false, id: "hampi" },
@@ -26648,6 +26661,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹300–₹700 from Hospet", notes: "Standard way to reach the dam", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "₹150–₹350 from Hospet", notes: "Bookable from Hospet, just 5 km away", available: true },
     ],
     nearbyPlaces: [
       { name: "Hampi", distance: "~20 km", type: "Heritage", isHidden: false, id: "hampi" },
@@ -52303,6 +52317,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gol_Gumbaz%2C_Bijapur_2.jpg/1280px-Gol_Gumbaz%2C_Bijapur_2.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — two views of Gol Gumbaz, Bijapur (Vijayapura), both CC BY-SA 4.0. Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "For the Gol Gumbaz and its on-site museum; closed on Fridays. Other Vijayapura monuments (Ibrahim Rauza, the fort) may keep their own hours." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 days",
@@ -52322,6 +52337,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto/Taxi", cost: "₹100–₹600", notes: "Autos and taxis link the scattered monuments across the city", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in Vijayapura is unconfirmed — local autos and taxis are the reliable way to link the scattered monuments", available: false },
     ],
     nearbyPlaces: [
       { name: "Badami", distance: "~130 km", type: "Cave Temple Town", isHidden: false, id: "badami" },
@@ -53743,6 +53759,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/11th_century_Kasivisvesvara_temple%2C_Lakkundi%2C_Karnataka_India_-_03.jpg/1280px-11th_century_Kasivisvesvara_temple%2C_Lakkundi%2C_Karnataka_India_-_03.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — two CC0 views of the 11th-century Kasivisvesvara (Kashi Vishveshwara) temple at Lakkundi, showing the ornate shikhara and paired shrines. Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Standard ASI sunrise-to-sunset hours for the village's protected monuments." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "Half day",
@@ -53762,6 +53779,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹300", notes: "The village monuments are walkable; autos link the outlying temples and stepwells", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this rural village is unconfirmed — an auto or a hired taxi from Gadag is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Trikuteshwara Temple, Gadag", distance: "~12 km", type: "Chalukyan Temple", isHidden: false, id: "trikuteshwara-temple-gadag" },
@@ -53808,6 +53826,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Trikuteshwara_Temple_Gadag.jpg/1280px-Trikuteshwara_Temple_Gadag.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — two views of the Trikuteshwara temple complex at Gadag (both CC BY-SA 4.0), showing the carved outer walls and the temple courtyard. Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "As an active place of worship, timing runs closer to temple darshan hours than the sunrise-to-sunset hours typical of unworshipped ASI sites nearby." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 hours",
@@ -53827,6 +53846,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / City Bus", cost: "₹30–₹250", notes: "Autos and city buses within Gadag; the old-city temples are close together", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in Gadag is unconfirmed — autos and city buses are the reliable way to get around", available: false },
     ],
     nearbyPlaces: [
       { name: "Lakkundi", distance: "~12 km", type: "Heritage Village", isHidden: false, id: "lakkundi" },
@@ -53873,6 +53893,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Karnataka_-_Koppal_-_Dambal_-_Dodda_Basappa_2.jpg/1280px-Karnataka_-_Koppal_-_Dambal_-_Dodda_Basappa_2.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the 24-pointed stellate shikhara of the 12th-century Dodda Basappa temple (CC0) and the temple's open mantapa and vimana from the side (CC BY-SA 4.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org).",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Standard ASI sunrise-to-sunset hours for the protected monument." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 hours",
@@ -53892,6 +53913,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Bus / Auto", cost: "₹20–₹400", notes: "Gadag–Dambal buses; the temple is a short walk from the village on the north side", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this rural village is unconfirmed — a bus or hired taxi from Gadag is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lakkundi", distance: "~20 km", type: "Heritage Village", isHidden: false, id: "lakkundi" },
@@ -55509,6 +55531,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Banavasi_Madhukeshwara_temple.JPG/1280px-Banavasi_Madhukeshwara_temple.JPG",
     ],
     imageCredit: "Photos: Wikimedia Commons — the tiled-roof Madhukeshwara Temple at Banavasi (CC BY-SA 4.0) and a wider view with the stone lamp-pillar and temple gardens (CC BY-SA 3.0). Details verified against the official Karnataka Tourism site (karnatakatourism.org), which describes Banavasi as one of Karnataka's oldest towns and the first Kadamba capital, home to the Madhukeshwara Temple with its honey-coloured linga and monolithic Nandi, and the annual Kadambotsava festival.",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "As an active place of worship, the Madhukeshwara Temple may pause briefly at midday — confirm locally if timing your visit around darshan." },
     category: ["Heritage", "History", "Religious"],
     bestSeason: "October – February (Kadambotsava in the cooler months)",
     duration: "2–3 hours",
@@ -55528,6 +55551,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking / Auto", cost: "₹0–₹400", notes: "The temple and village core are walkable; autos/buses from Sirsi", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this rural village is unconfirmed — a bus, auto, or hired taxi from Sirsi is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sirsi", distance: "~22 km", type: "Malnad Town", isHidden: false, id: "sirsi" },
@@ -55968,6 +55992,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ornate_pillared_mantapa_leading_to_the_shrine_in_the_Mahadeva_temple_at_Itagi.jpg/1280px-Ornate_pillared_mantapa_leading_to_the_shrine_in_the_Mahadeva_temple_at_Itagi.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the Mahadeva Temple at Itagi with its Vesara tower (Public Domain) and the ornate pillared mantapa leading to the shrine, with the Nandi visible (Public Domain). Details verified against the official Karnataka Tourism site (karnatakatourism.org), which calls the Itagi Mahadeva Temple a 'masterpiece of Western Chalukya architecture' known as the 'Devalaya Chakravarti' (emperor among temples), and lists it with Lakkundi on the Gadag/Koppal Chalukyan circuit.",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Standard ASI sunrise-to-sunset hours for the protected monument." },
     category: ["Heritage", "History", "Religious"],
     bestSeason: "October – February",
     duration: "1–2 hours",
@@ -55987,6 +56012,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Bus", cost: "₹40–₹1,500", notes: "Taxi is easiest for the Itagi–Lakkundi–Gadag circuit; buses run the main road", available: true },
+      { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "App coverage in this rural village is unconfirmed — a hired taxi or bus from Gadag/Koppal is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Lakkundi", distance: "~36 km", type: "Heritage Village", isHidden: false, id: "lakkundi" },
