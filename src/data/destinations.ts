@@ -60692,6 +60692,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking, autos & hired taxi", cost: "₹20–₹60 per auto hop; ₹500–₹900 for a half-day of the outlying sites and the fort road", notes: "Most monuments are within the old town on foot; an auto or taxi helps for the fort top, Khandargiri and the stepwells", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Chanderi is unconfirmed — autos and hired taxis cover the town easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Orchha", distance: "~120 km", type: "Bundela Palace Town", isHidden: false, id: "orchha" },
@@ -60828,6 +60829,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos & hired taxi", cost: "₹20–₹80 per auto hop; ₹800–₹1,400 for a half-day taxi including Asirgarh", notes: "Autos cover the in-town monuments (Shahi Qila, Jama Masjid, Ahukhana, Black Taj); a hired taxi is best for Asirgarh Fort and the Kundi Bhandara", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Burhanpur is unconfirmed — autos and hired taxis cover the town and Asirgarh easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Maheshwar", distance: "~180 km", type: "Narmada Holkar Town", isHidden: false, id: "maheshwar" },
@@ -60879,6 +60881,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Culture", "Heritage"],
     bestSeason: "October – March; avoid the peak Navratri days if you want a calmer visit",
     duration: "1 day (or a half-day stop between Satna and Jabalpur)",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "The ropeway keeps a shorter daytime window than the temple itself; queues are longest during Navratri." },
     highlights: [
       { name: "Maa Sharda Devi temple on Trikuta hill — ~1,063 steps or a ropeway" },
       { name: "A Shakti Peetha; the Alha–Udal akhara at the hill's base" },
@@ -60895,6 +60898,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, the temple ropeway & the step path", cost: "₹20–₹60 auto; separate ropeway ticket; steps are free", notes: "Autos link the station, town and hill base; from the base, the ropeway or the ~1,063-step stair reaches the shrine", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Maihar is unconfirmed — autos from the station cover the town and hill base easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Khajuraho", distance: "~140 km", type: "UNESCO Temple Town", isHidden: false, id: "khajuraho" },
@@ -60946,6 +60950,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Pilgrimage", "History"],
     bestSeason: "October – March (pleasant; summers are hot)",
     duration: "Half-day to 1 day (often a stop from Jhansi or Orchha)",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "For the ASI-managed Bir Singh Deo Palace; the Peetambara Peeth temple complex keeps its own, longer hours." },
     highlights: [
       { name: "Bir Singh Deo Palace (Satkhanda) — a ~7-storey c.1620 Bundela palace, never inhabited" },
       { name: "Surviving Bundela murals and the central-tower plan, built without wood or iron" },
@@ -60962,6 +60967,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos & cycle-rickshaws", cost: "₹20–₹60 per hop", notes: "Autos and rickshaws connect the station, the Peetambara Peeth and the palace; the palace is a short ride from the temple and the centre", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Datia is unconfirmed — autos and cycle-rickshaws cover the town easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Orchha", distance: "~55 km", type: "Bundela Palace Town", isHidden: false, id: "orchha" },
