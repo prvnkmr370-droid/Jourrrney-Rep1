@@ -66874,6 +66874,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – December (post-monsoon, at its most spectacular)",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Stay well back from unfenced ledges near the falls and pool edge, especially after rain." },
     highlights: [{ name: "India's tallest plunge waterfall, a 340m drop" }, { name: "A striking emerald-green pool at the base" }, { name: "Multiple vantage points for photography" }, { name: "Arwah Cave and Mawsmai Cave nearby", id: "arwah-cave" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~79 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~167 km) or Shillong Airport (~79 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati is the more common gateway with far more flight options; Shillong's own airport (Umroi) has limited connectivity." },
@@ -66885,6 +66886,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Sohra or Shillong", cost: "₹2,000–₹4,000 from Shillong (round trip)", notes: "The standard way most visitors reach the falls; local guides available in Sohra", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Sohra — a hired taxi from Shillong is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Arwah Cave", distance: "~5 km", type: "Limestone Cave", isHidden: false, id: "arwah-cave" },
@@ -66935,6 +66937,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "June – September (monsoon, fullest flow); year-round accessible given its closeness to Shillong",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Stick to the railed walkways rather than climbing off-path for photos." },
     highlights: [{ name: "Three distinct waterfall levels connected by railed walkways" }, { name: "A wadeable pool at the base" }, { name: "Just 12 km from central Shillong" }, { name: "Shillong Peak, on the same day-trip loop", id: "shillong-peak" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~38 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~127 km) or Shillong Airport (~38 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati has far more flight options than Shillong's own smaller airport." },
@@ -66945,6 +66948,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Cab / Shared Taxi / Local Bus from Shillong", cost: "₹300–₹800 round trip", notes: "Widely available; many tour operators bundle this with Shillong Peak and Ward's Lake", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far out from central Shillong is unconfirmed — shared taxis and local buses cover the run easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Shillong Peak", distance: "~5 km", type: "Viewpoint", isHidden: false, id: "shillong-peak" },
@@ -66994,6 +66998,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "June – September (monsoon, full seven-stream flow); clear sunset views more likely outside peak monsoon fog",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "The Sohra Eco Park viewpoint has marked, railed vantage points; stay behind barriers at the cliff edge." },
     highlights: [{ name: "Seven distinct segmented streams over a 300m+ cliff drop" }, { name: "Sohra Eco Park viewpoint over the falls and canyons" }, { name: "Sunset views across to the Bangladesh plains" }, { name: "Arwah Cave and Mawsmai Cave nearby", id: "arwah-cave" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~61 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~155 km) or Shillong Airport (~61 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati has far more flight options than Shillong's own smaller airport." },
@@ -67004,6 +67009,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi / Tour Cab from Sohra or Shillong", cost: "₹2,000–₹4,000 from Shillong (round trip)", notes: "The standard way most visitors reach the falls; local guides available in Sohra", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Sohra — a hired taxi from Shillong is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Nohkalikai Falls", distance: "~4 km", type: "Waterfall", isHidden: true, id: "nohkalikai-falls" },
@@ -67124,6 +67130,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Jowai + Short Hike", cost: "₹500–₹1,200 from Jowai (round trip)", notes: "A guide is advisable for the hike to the falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Jowai — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Krang Suri Falls", distance: "~25 km", type: "Waterfall", isHidden: true, id: "krang-suri-falls" },
@@ -67173,6 +67180,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – May (clear, vivid blue water)",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Visit 11 AM–2 PM for the most vivid blue water; rental life jackets are on site for swimming." },
     highlights: [{ name: "A vivid blue plunge pool, especially striking 11 AM–2 PM" }, { name: "Rentable life jackets for swimming" }, { name: "Dry-season paddle boat rides behind the falls" }, { name: "A meadow-to-forest descent trail" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), ~91 km from the falls — via Guwahati or Kolkata connections", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~200 km) or Shillong Airport (~91 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Jowai is the practical base; Amlarem (1 km from the falls) is the closest town." },
@@ -67183,6 +67191,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi from Jowai", cost: "₹500–₹1,200 round trip", notes: "A short, easy final approach compared to Phe Phe Falls", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Jowai — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Phe Phe Falls", distance: "~25 km", type: "Waterfall", isHidden: true, id: "phe-phe-falls" },
@@ -67238,6 +67247,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Taxi from Tura", cost: "₹1,500–₹3,000 round trip", notes: "Arrange through a hotel or local operator in Tura", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in the Garo Hills — a hired taxi from Tura is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tura Peak", distance: "~37 km", type: "Viewpoint & Trek", isHidden: true, id: "tura-peak" },
