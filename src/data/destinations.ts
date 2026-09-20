@@ -68327,6 +68327,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Heritage"],
     bestSeason: "March – June (pleasant weather and clear skies, ideal for the rooftop skywalk)",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Closed on Sundays; winter hours run 9 AM–4:30 PM." },
     highlights: [{ name: "17 themed tribal culture galleries across seven levels" }, { name: "The Skywalk Terrace with sweeping views over Shillong" }, { name: "A rare archival photography section spanning generations" }, { name: "Set within the Sacred Heart Church complex" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport, then a short local cab ride", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~128 km) or Shillong Airport, then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "An easy add-on to a Shillong city itinerary." },
@@ -68337,6 +68338,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Cab/Shared Taxi", cost: "Affordable, widely available in Shillong", notes: "About 5 km from key city points like the Meghalaya State Museum and Bara Bazaar", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Shillong is unconfirmed — local cabs and shared taxis cover the city easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Shillong Peak", distance: "A short drive from central Shillong", type: "Viewpoint", isHidden: false, id: "shillong-peak" },
@@ -68385,6 +68387,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Nature"],
     bestSeason: "October – March (pleasant weather and garden blooms)",
     duration: "1–2 hours",
+    visitingHours: { opens: "11:00 AM", closes: "6:00 PM", note: "Winter hours run 11 AM–5 PM; confirm before heading out, as this is a small, family-run museum." },
     highlights: [{ name: "A curated personal collection of Khasi, Jaintia, and Garo artifacts" }, { name: "The adjacent Stone Museum with fossils and mineral varieties" }, { name: "A garden of nearly 100 orchid species" }, { name: "Traditional weapons, musical instruments, and bamboo crafts" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (~38 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~126 km) or Shillong Airport (~38 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "A well-signposted, easy day trip from central Shillong." },
@@ -68395,6 +68398,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Bus/Shared Taxi", cost: "Affordable, from Laitumkhrah or Bara Bazaar", notes: "The museum is well signposted and easy to locate once nearby", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from central Shillong is unconfirmed — a local bus or shared taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Laitlum Canyon", distance: "A drive from Mawshbuit", type: "Canyon Viewpoint", isHidden: false, id: "laitlum" },
@@ -68445,6 +68449,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Heritage"],
     bestSeason: "November – March",
     duration: "2–3 hours (including the uphill trek)",
+    visitingHours: { opens: "9:00 AM", closes: "3:00 PM", note: "Guided-only entry via the Information Centre; arrive in the morning to allow time for the uphill trek." },
     highlights: [{ name: "An 18th-century settlement preserved in its original context" }, { name: "Megalithic monuments, burial sites, and a former market area" }, { name: "A guided 30-45 minute uphill trek to the site" }, { name: "Scientifically dated remains — Meghalaya's first open-air museum" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Umroi Airport (~76 km), then road", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~164 km) or Umroi Airport (~76 km), then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Combine with a Mawsynram trip given the shared route." },
@@ -68455,6 +68460,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Guided Walk from Information Centre", cost: "Included with entry ticket", notes: "A 30–45 minute uphill trek with a tour guide leads to the museum site", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates around Mawsynram — a private vehicle or local taxi from Shillong is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Sohra (Cherrapunji)", distance: "~60 km", type: "Hill Town", isHidden: true, id: "sohra" },
@@ -68503,6 +68509,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Heritage"],
     bestSeason: "Year-round",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "A newly opened government museum — confirm current hours before visiting, as they are not fixed year-round." },
     highlights: [{ name: "Meghalaya-centric collections from communities across the state" }, { name: "Participatory exhibits engaging sight, sound, and touch" }, { name: "Curated by the Northeast India AV Archive in a newly opened building" }, { name: "Textile, craft, and photographic collections across multiple galleries" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Shillong Airport (Umroi), then a short local ride", fromMumbai: "Via Guwahati/Kolkata, then road", fromBangalore: "Via Guwahati/Kolkata, then road", duration: "Fly into Guwahati (~100 km) or Shillong Airport, then road", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Located within Shillong city itself — no separate long trip needed." },
@@ -68513,6 +68520,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Taxi/Private Vehicle", cost: "Local city fare", notes: "Located within Shillong, easily reached from any central hotel", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Shillong is unconfirmed — local taxis cover the city easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Don Bosco Museum", distance: "Within Shillong", type: "Museum", isHidden: false, id: "don-bosco-museum" },
@@ -68574,6 +68582,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Taxi/Shared Sumo", cost: "Fare varies by distance", notes: "Used to reach Nohkalikai, Mawsmai, Arwah, and other nearby sights from Sohra town", available: true },
       { mode: "Local Guide (Recommended)", cost: "Arranged in Sohra town", notes: "Advisable for navigating the region's many waterfalls and trails, per the tourism board's own guidance", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Sohra — local taxis and shared sumos cover the town and its surrounding sights", available: false },
     ],
     nearbyPlaces: [
       { name: "Nohkalikai Falls", distance: "~7.5 km", type: "Waterfall", isHidden: false, id: "nohkalikai-falls" },
@@ -68638,6 +68647,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Boat Rides", cost: "Per-boat rates set by the local boatmen's association", notes: "The signature Dawki experience — clear-water boat rides on the Umngot River", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Dawki — a private vehicle or shared taxi from Shillong is the standard way in", available: false },
     ],
     nearbyPlaces: [
       { name: "Mawlynnong", distance: "A short drive from Dawki, often visited together", type: "Village (Asia's Cleanest Village)", isHidden: false, id: "mawlynnong" },
