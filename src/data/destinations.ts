@@ -3531,6 +3531,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Silvassa Smart City E-Bus", cost: "Nominal fare", notes: "A real municipal e-bus service — schedule available via the DNH Tourism site's E-Bus Schedule page; contact 0260-2633192", available: true },
       { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available around town and the bus stand", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹400–₹700/day", notes: "A practical way to cover the spread-out lakes/parks in one day", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Silvassa is unconfirmed — autos, rented scooters, and the e-bus are the standard local options", available: false },
     ],
     nearbyPlaces: [
       { name: "Vanganga Lake Garden", distance: "~9 km", type: "Garden", isHidden: false, id: "vanganga-lake-garden", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Vanganga_Lake%2C_Dadra_-_panoramio.jpg/1280px-Vanganga_Lake%2C_Dadra_-_panoramio.jpg" },
@@ -3590,6 +3591,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Garden"],
     bestSeason: "October – March",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Gated botanical garden and boating lake." },
     highlights: [{ name: "Boating on Vanganga Lake" }, { name: "Landscaped botanical garden walks" }, { name: "Bridges & lakeside pavilions" }, { name: "Children's play area" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa, then ~20min to Dadra", fromBangalore: "Long haul", duration: "~20min from central Silvassa", costRange: "₹150–₹350 (auto/cab from Silvassa)", tips: "Easiest as a half-day add-on to a Silvassa base rather than a standalone trip." },
@@ -3606,6 +3608,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Auto Rickshaw", cost: "₹150–₹350 from Silvassa", notes: "Simplest way to reach the garden from town", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹400–₹700/day", notes: "Rented in Silvassa, gives flexibility to combine with other nearby attractions", available: true },
       { mode: "Walking (within the garden)", cost: "Free", notes: "The garden itself is fully walkable once there", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Silvassa town centre is unconfirmed — an auto or rented scooter from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~9 km", type: "Town", isHidden: false, id: "silvassa" },
@@ -3677,6 +3680,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹150–₹350 from Silvassa", notes: "Simplest way to reach the lake from town", available: true },
       { mode: "Rented Scooter/Bike", cost: "₹400–₹700/day", notes: "Rented in Silvassa; useful for combining with other nearby attractions", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Silvassa town centre is unconfirmed — an auto or rented scooter from town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~7 km", type: "Town", isHidden: false, id: "silvassa" },
@@ -3744,6 +3748,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab", cost: "₹300–₹600 from Silvassa", notes: "The practical way to reach the safari park from town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this far outside Silvassa — an auto or cab hired in town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~24 km", type: "Town", isHidden: false, id: "silvassa" },
@@ -3796,6 +3801,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – March; the park has been known to close temporarily during heavy monsoon rain, per its own on-site signage — call ahead in July–August",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "May close temporarily during heavy monsoon rain, per the park's own gate signage." },
     highlights: [{ name: "Chital, sambar & barking deer" }, { name: "Nature walking trails" }, { name: "Birdwatching (resident & migratory)" }, { name: "Interpretive/educational signage" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa, then ~35min further", fromBangalore: "Long haul", duration: "~35min from central Silvassa", costRange: "₹300–₹600 (auto/cab from Silvassa)", tips: "Pairs naturally with Vasona Lion Safari on the same trip." },
@@ -3810,6 +3816,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab", cost: "₹300–₹600 from Silvassa", notes: "The practical way to reach the park from town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this far outside Silvassa — an auto or cab hired in town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~22 km", type: "Town", isHidden: false, id: "silvassa" },
@@ -3863,6 +3870,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Culture", "Museum"],
     bestSeason: "Year-round (indoor)",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:30 PM", note: "Closed Mondays." },
     highlights: [{ name: "Tribal artifacts & tools" }, { name: "Cultural exhibits (Warli, Kokna, Dhodia communities)" }, { name: "A short, easy indoor stop" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa town", fromBangalore: "Long haul", duration: "In Silvassa town", costRange: "₹50–₹150 (auto within town)", tips: "Easy to combine with the Daman Ganga River Front and Church of Our Lady of Piety — all within Silvassa town." },
@@ -3878,6 +3886,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Widely available within Silvassa town", available: true },
       { mode: "Walking", cost: "Free", notes: "Feasible if your stay is central to Silvassa town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage within Silvassa town is unconfirmed — autos are cheap and widely available for these short distances", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~2 km", type: "Town", isHidden: false, id: "silvassa" },
@@ -3932,6 +3941,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Christmas and Easter services draw the largest crowds",
     duration: "1 hour",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Outside scheduled Mass times; check service hours if attending." },
     highlights: [{ name: "Portuguese colonial architecture" }, { name: "Stained glass & carved wooden interior" }, { name: "Active parish — services, weddings, festivals" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa town", fromBangalore: "Long haul", duration: "In Silvassa town", costRange: "₹50–₹150 (auto within town)", tips: "Check service times if you'd like to attend rather than just visit — respectful, quiet visits outside service hours are welcome." },
@@ -3947,6 +3957,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Widely available within Silvassa town", available: true },
       { mode: "Walking", cost: "Free", notes: "Feasible if your stay is central to Silvassa town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage within Silvassa town is unconfirmed — autos are cheap and widely available for these short distances", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "In town", type: "Town", isHidden: false, id: "silvassa" },
@@ -3997,6 +4008,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; Janmashtami and Diwali are the most vibrant times to visit",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "The hall may close briefly in the early afternoon between darshan sessions." },
     highlights: [{ name: "Carved pillars, domes & facades" }, { name: "Active temple — daily worship & festivals" }, { name: "Janmashtami & Diwali celebrations" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa town", fromBangalore: "Long haul", duration: "In Silvassa town", costRange: "₹50–₹150 (auto within town)", tips: "Check for festival dates (Janmashtami, Diwali) if you'd like to see the temple at its most active." },
@@ -4012,6 +4024,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Widely available within Silvassa town", available: true },
       { mode: "Walking", cost: "Free", notes: "Feasible if your stay is central to Silvassa town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage within Silvassa town is unconfirmed — autos are cheap and widely available for these short distances", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "In town", type: "Town", isHidden: false, id: "silvassa" },
@@ -4059,6 +4072,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Garden"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Gated town garden." },
     highlights: [{ name: "27-nakshatra themed plantings" }, { name: "Educational signage on Vedic astrology" }, { name: "Quiet walking paths" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa town", fromBangalore: "Long haul", duration: "In Silvassa town", costRange: "₹50–₹150 (auto within town)", tips: "A quick, easy stop — pair it with Hirwavan Garden nearby for a fuller garden-focused morning." },
@@ -4074,6 +4088,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Widely available within Silvassa town", available: true },
       { mode: "Walking", cost: "Free", notes: "The garden itself is fully walkable once there", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage within Silvassa town is unconfirmed — autos are cheap and widely available for these short distances", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "In town", type: "Town", isHidden: false, id: "silvassa" },
@@ -4119,6 +4134,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Garden"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Gated town garden." },
     highlights: [{ name: "Ponds, bridges & gazebos" }, { name: "Picnic & barbecue areas" }, { name: "Playgrounds & jogging tracks" }, { name: "Seasonal flower shows" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa town", fromBangalore: "Long haul", duration: "In Silvassa town", costRange: "₹50–₹150 (auto within town)", tips: "A relaxed, easy stop — pair it with Nakshatra Garden nearby." },
@@ -4134,6 +4150,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Widely available within Silvassa town", available: true },
       { mode: "Walking", cost: "Free", notes: "The garden itself is fully walkable once there", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage within Silvassa town is unconfirmed — autos are cheap and widely available for these short distances", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "In town", type: "Town", isHidden: false, id: "silvassa" },
@@ -4181,6 +4198,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Weekend Getaway"],
     bestSeason: "October – March",
     duration: "Half day, or overnight if staying at the complex itself",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Day-visit hours for the gardens; on-site guests have their own access." },
     highlights: [{ name: "Landscaped gardens & nature trails" }, { name: "Guesthouse/cottage/suite stays on-site" }, { name: "Volleyball, badminton & cricket facilities" }, { name: "Conference/event venue" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa, then ~10min further", fromBangalore: "Long haul", duration: "~10min from central Silvassa", costRange: "₹100–₹250 (auto/cab from Silvassa)", tips: "Close enough to Silvassa town to visit as a half-day trip, or you can stay overnight at the complex itself." },
@@ -4201,6 +4219,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab", cost: "₹100–₹250 from Silvassa", notes: "The practical way to reach the complex from town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far outside Silvassa town centre is unconfirmed — an auto or cab hired in town is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Silvassa town centre", distance: "~5 km", type: "Town", isHidden: false, id: "silvassa" },
