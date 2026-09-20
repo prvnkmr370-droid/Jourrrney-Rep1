@@ -27030,6 +27030,7 @@ export const DESTINATIONS: Destination[] = [
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bekal_Fort%2C_Kerala.jpg/1280px-Bekal_Fort%2C_Kerala.jpg",
     gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bekal_Fort%2C_Kerala.jpg/1280px-Bekal_Fort%2C_Kerala.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Extension_of_Bekal_Fort_into_the_Arabian_Sea.jpg/960px-Extension_of_Bekal_Fort_into_the_Arabian_Sea.jpg"],
     imageCredit: "Photos: Shafeeq Rahman, Karippal.me — Wikimedia Commons, CC BY-SA 3.0 / CC BY-SA 4.0.",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "ASI-maintained; early morning or late afternoon avoids the midday heat on the exposed ramparts." },
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "2–3 hours",
@@ -27048,6 +27049,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi/Auto", cost: "₹200–₹600", notes: "Standard way to get around locally", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bekal is unconfirmed — autos and hired taxis cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Kozhikode", distance: "~130 km", type: "City", isHidden: false, id: "kozhikode" },
@@ -54514,6 +54516,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Wall_of_the_Chandragiri_fort.jpg/1280px-Wall_of_the_Chandragiri_fort.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the view over the Chandragiri river and sea from the fort's observation point (CC BY-SA 4.0) and the long laterite fort wall among coconut palms (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Managed by the Kerala Department of Archaeology; open through daylight hours." },
     category: ["Heritage", "History"],
     bestSeason: "October – February",
     duration: "1–2 hours",
@@ -54533,6 +54536,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Taxi", cost: "₹150–₹600", notes: "Autos and taxis from Kasaragod town and railway station", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kasaragod is unconfirmed — autos and taxis cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Bekal Fort", distance: "~15 km", type: "Seaside Fort", isHidden: false, id: "bekal-fort" },
@@ -54795,6 +54799,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Own Vehicle / Auto", cost: "₹50–₹500", notes: "Your own car or bike to drive on the beach; autos from Thalassery/Kannur otherwise", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage at the beach itself is unconfirmed — autos from Thalassery/Kannur are the reliable option if you don't have your own vehicle to drive on the sand", available: false },
     ],
     nearbyPlaces: [
       { name: "St. Angelo Fort", distance: "~13 km", type: "Seaside Fort", isHidden: false, id: "st-angelo-fort" },
@@ -54841,6 +54846,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/St._Angelo_Fort%2C_Kannur_-_5.jpg/1280px-St._Angelo_Fort%2C_Kannur_-_5.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the vaulted laterite arcade inside St. Angelo Fort (CC BY-SA 4.0) and the ramparts overlooking Mappila Bay harbour (CC BY-SA 3.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "ASI-protected; digital payment/QR only at the ticket counter, no cash." },
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
@@ -54860,6 +54866,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Taxi", cost: "₹50–₹300", notes: "Autos and taxis from Kannur station and town", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Both operate in Kannur town, this close to the centre", available: true },
     ],
     nearbyPlaces: [
       { name: "Payyambalam Beach", distance: "~2 km", type: "Beach", isHidden: true, id: "payyambalam-beach" },
@@ -54991,6 +54998,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Walking", cost: "₹30–₹250", notes: "The fort, pier, Logan's Road, and eateries are close together; autos for the outlying bungalow and Overbury's Folly", available: true },
+      { mode: "Ola / Uber", cost: "₹100–₹300", notes: "Both operate in Thalassery town", available: true },
     ],
     nearbyPlaces: [
       { name: "Muzhappilangad Drive-in Beach", distance: "~7 km", type: "Beach", isHidden: false, id: "muzhappilangad-beach" },
@@ -56262,6 +56270,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / City Bus / Walking", cost: "₹20–₹300", notes: "Autos and frequent city buses from Kozhikode; the beach, walkway, and boatyards are close together on foot", available: true },
+      { mode: "Ola / Uber", cost: "₹150–₹350", notes: "Bookable from Kozhikode city, this close to the centre", available: true },
     ],
     nearbyPlaces: [
       { name: "Kozhikode (Calicut)", distance: "~10 km", type: "Historic City", isHidden: false, id: "kozhikode" },
@@ -56396,6 +56405,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Walking", cost: "₹20–₹500", notes: "Autos and buses from Kozhikode via Thiruvangur; the monument, sand, and headland are all within a short walk", available: true },
+      { mode: "Ola / Uber", cost: "₹250–₹500 one-way from Kozhikode", notes: "Bookable from Kozhikode city, though autos are the more typical local option", available: true },
     ],
     nearbyPlaces: [
       { name: "Kozhikode (Calicut)", distance: "~16 km", type: "Historic City", isHidden: false, id: "kozhikode" },
@@ -57476,6 +57486,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus + walking (+ boat)", cost: "₹20–₹600", notes: "Autos and buses from Kozhikode via NH66; the flats and bunds are walked, with small boats available at times", available: true },
+      { mode: "Ola / Uber", cost: "₹350–₹700 one-way from Kozhikode", notes: "Bookable from Kozhikode city, though autos and buses are the more typical local option, especially for a pre-dawn start", available: true },
     ],
     nearbyPlaces: [
       { name: "Beypore", distance: "~15 km", type: "Historic Port", isHidden: false, id: "beypore" },
@@ -57523,6 +57534,7 @@ export const DESTINATIONS: Destination[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Thusharagiri_Waterfalls_-_%E0%B4%A4%E0%B5%81%E0%B4%B7%E0%B4%BE%E0%B4%B0%E0%B4%97%E0%B4%BF%E0%B4%B0%E0%B4%BF_%E0%B4%B5%E0%B5%86%E0%B4%B3%E0%B5%8D%E0%B4%B3%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%BE%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%82_01.jpg/1280px-Thusharagiri_Waterfalls_-_%E0%B4%A4%E0%B5%81%E0%B4%B7%E0%B4%BE%E0%B4%B0%E0%B4%97%E0%B4%BF%E0%B4%B0%E0%B4%BF_%E0%B4%B5%E0%B5%86%E0%B4%B3%E0%B5%8D%E0%B4%B3%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%BE%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%82_01.jpg",
     ],
     imageCredit: "Photos: Wikimedia Commons — the main Thusharagiri fall in its mist of spray (CC BY-SA 4.0), and the sloping rock face and pool at Thusharagiri in a leaner season (CC BY-SA 4.0). Destination details verified against the official Kerala Tourism site (keralatourism.org).",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Some sources list a wider 6 AM–6 PM window; forest-department managed, so confirm locally, especially before attempting the upper-falls trek." },
     category: ["Nature", "Adventure", "Waterfall"],
     bestSeason: "October – February (highest flow just after the monsoon)",
     duration: "Half day to 1 day",
@@ -57542,6 +57554,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Own Vehicle + walking", cost: "₹100–₹700", notes: "Autos from Kodencheri to the entry; the first fall is a short walk, the upper falls a forest trek", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage this far from Kozhikode is unconfirmed — a taxi or auto from Kodencheri is the practical option", available: false },
     ],
     nearbyPlaces: [
       { name: "Kozhikode (Calicut)", distance: "~50 km", type: "Historic City", isHidden: false, id: "kozhikode" },
@@ -57676,6 +57689,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Walking", cost: "₹40–₹250", notes: "Autos from Kannur station and town; the beach park and shoreline are walked", available: true },
+      { mode: "Ola / Uber", cost: "₹80–₹250", notes: "Both operate in Kannur town, this close to the centre", available: true },
     ],
     nearbyPlaces: [
       { name: "St. Angelo Fort", distance: "~2 km", type: "Seaside Fort", isHidden: false, id: "st-angelo-fort" },
@@ -58078,6 +58092,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep + guided walking", cost: "₹500–₹2,000", notes: "A jeep from Panathady to the trailhead; the hill itself is done on foot with a Forest Department guide", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage this far into forest country — a jeep or taxi from Kanhangad is the only option", available: false },
     ],
     nearbyPlaces: [
       { name: "Bekal Fort", distance: "~65 km", type: "Seaside Fort", isHidden: false, id: "bekal-fort" },
@@ -59085,6 +59100,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto / Bus / Boat", cost: "₹20–₹800", notes: "Autos and buses in and around town; country boats and houseboats from the nearby backwater terminals", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Nileshwaram is unconfirmed — autos and taxis from Kanhangad cover it easily", available: false },
     ],
     nearbyPlaces: [
       { name: "Bekal Fort", distance: "~20 km", type: "Seaside Fort", isHidden: false, id: "bekal-fort" },
