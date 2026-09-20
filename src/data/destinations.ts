@@ -15881,6 +15881,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Jeep Safari / Taxi", cost: "₹800–₹2,000", notes: "For internal sanctuary trails and Dudhsagar access", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage inside this large forest sanctuary — a hired jeep or taxi is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Dudhsagar Waterfalls", distance: "Within sanctuary", type: "Waterfall", isHidden: false, id: "dudhsagar-waterfalls" },
@@ -15924,6 +15925,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Family"],
     bestSeason: "October – March (open daily except Monday, 9am–5pm)",
     duration: "2–4 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Mini zoo, deer park & botanical gardens" }, { name: "Goa's state bird: Ruby Throated Yellow Bulbul" }, { name: "Most family-friendly of Goa's sanctuaries" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ponda — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "~38km / ~1h from Margao", costRange: "₹500–₹1,200 (cab for a half day)", tips: "Closed Mondays — plan around that. Admission is just ₹5 for adults." },
@@ -15933,6 +15935,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi", cost: "₹500–₹1,200 for a half-day trip", notes: "Standard way to reach Bondla from Margao or Panaji", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹500–₹1,200", notes: "Reliable coverage given proximity to Ponda", available: true },
     ],
     nearbyPlaces: [
       { name: "Shanta Durga Temple", distance: "~12 km", type: "Temple", isHidden: false, id: "shanta-durga-temple" },
@@ -15976,6 +15979,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "October – March (open daily 7am–5:30pm)",
     duration: "2–4 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:30 PM", note: "Open daily." },
     highlights: [{ name: "Deciduous forest with rare old trees" }, { name: "Set up in 1968 on the Goa-Karnataka border" }, { name: "Easy day trip from Palolem" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Canacona/Palolem — long haul", fromMumbai: "~11–13h to South Goa", fromBangalore: "~7–8h", duration: "~2 km from Poinguinim, ~10km from Palolem", costRange: "₹200–₹600 (auto/cab from Palolem)", tips: "Camera fee is separate (₹25) from entry (₹5). Arrange overnight stays in advance via the Deputy Conservator of Forests, Margao." },
@@ -15985,6 +15989,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹200–₹600 from Palolem", notes: "Standard way to reach the sanctuary", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹600", notes: "Coverage exists but a rented auto or scooter is often more reliable this far south", available: true },
     ],
     nearbyPlaces: [
       { name: "Palolem Beach", distance: "~10 km", type: "Beach", isHidden: false, id: "palolem" },
@@ -16037,6 +16042,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Taxi / Guided Trek", cost: "₹600–₹1,500", notes: "Arranged locally via rest houses or tour operators", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this remote Western Ghats sanctuary — a locally arranged taxi or guide is required", available: false },
     ],
     nearbyPlaces: [
       { name: "Valpoi town", distance: "Adjacent", type: "Town", isHidden: true },
@@ -16093,6 +16099,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹200–₹500 (taxi)", notes: "Standard way to reach the fort from nearby beaches", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable coverage given proximity to Vagator and Anjuna", available: true },
     ],
     nearbyPlaces: [
       { name: "Vagator Beach", distance: "~2 km", type: "Beach", isHidden: false, id: "vagator" },
@@ -16145,6 +16152,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹700 from Agonda", notes: "Standard way to reach the fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹300–₹700", notes: "Coverage exists but a rented scooter is often more reliable this far south", available: true },
     ],
     nearbyPlaces: [
       { name: "Agonda Beach", distance: "~16 km", type: "Beach", isHidden: false, id: "agonda" },
@@ -16187,6 +16195,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort", "Museum"],
     bestSeason: "Year-round",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Built 1551, rebuilt 1707" }, { name: "Restored as a working cultural centre" }, { name: "Adjoining the historic Reis Magos Church" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Panaji/Verem — long haul", fromMumbai: "~10–12h to Panaji", fromBangalore: "Long haul", duration: "~15min from Panaji, across the Mandovi", costRange: "₹150–₹400 (auto/cab from Panaji)", tips: "Genuinely worth combining with the adjoining Reis Magos Church — they share the same hilltop." },
@@ -16196,6 +16205,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Taxi", cost: "₹150–₹400 from Panaji", notes: "Standard way to reach Verem from Panaji", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable coverage this close to Panaji", available: true },
     ],
     nearbyPlaces: [
       { name: "Reis Magos Church, Verem", distance: "Adjoining", type: "Church", isHidden: false, id: "reis-magos-church-in-verem" },
