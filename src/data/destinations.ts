@@ -50299,6 +50299,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "1 hour",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily; check locally for mass timings." },
     highlights: [
       { name: "The seat of the Catholic Diocese of Simdega" },
       { name: "A distinctive pink-and-white ecclesiastical facade" },
@@ -50315,6 +50316,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in Simdega town", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Simdega town — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Navratangarh Fort", distance: "~50 km", type: "Heritage Ruins", isHidden: false, id: "navratangarh-fort" },
@@ -50359,6 +50361,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife"],
     bestSeason: "October – March",
     duration: "3–4 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Mondays." },
     highlights: [
       { name: "The distinctive elephant-headed entrance gate" },
       { name: "Leopard, gharial, and chital deer enclosures" },
@@ -50375,6 +50378,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Jamshedpur is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jubilee Park", distance: "~5 km", type: "City Park", isHidden: false, id: "jubilee-park" },
@@ -50434,6 +50438,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in central Jamshedpur", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Jamshedpur is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Tata Steel Zoological Park", distance: "~5 km", type: "Zoo", isHidden: false, id: "tata-steel-zoological-park" },
@@ -50495,6 +50500,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹100–₹300", notes: "From anywhere in Bokaro Steel City", available: true },
       { mode: "Walking", cost: "Free", notes: "Easily walkable within the sector layout", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Bokaro Steel City is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Jawaharlal Nehru Biological Park", distance: "~5 km", type: "Zoo", isHidden: false, id: "jawaharlal-nehru-biological-park" },
@@ -50538,6 +50544,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed on Mondays." },
     highlights: [
       { name: "A well-kept leopard population, a genuine wildlife-photography draw" },
       { name: "Landscaped entrance grounds and flower beds" },
@@ -50554,6 +50561,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Bokaro Steel City", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Bokaro Steel City is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "City Park, Bokaro Steel City", distance: "~5 km", type: "City Park", isHidden: false, id: "city-park-bokaro" },
@@ -50615,6 +50623,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Walking", cost: "Free", notes: "The temple cluster is compact and easily explored on foot", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in Madhuban — a local taxi from Parasnath station is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Parasnath Hill (Shikharji)", distance: "Adjoining (trailhead)", type: "Pilgrimage Hill", isHidden: false, id: "parasnath-hill-shikharji" },
@@ -50674,6 +50683,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Auto/Taxi", cost: "₹150–₹400", notes: "From anywhere in Dhanbad", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "App-cab coverage in Dhanbad is unconfirmed — a local auto or taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
       { name: "Topchanchi Lake", distance: "~20 km", type: "Lake", isHidden: false, id: "topchanchi-lake" },
@@ -50735,6 +50745,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Reserve Vehicle/Jeep", cost: "Included with reserve entry or ₹1,500-3,000", notes: "Access within the tiger reserve typically requires an authorized vehicle", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage inside the tiger reserve — access is via reserve vehicle only", available: false },
     ],
     nearbyPlaces: [
       { name: "Sugga Bandh Falls", distance: "~10 km", type: "Waterfall", isHidden: false, id: "sugga-bandh-falls" },
