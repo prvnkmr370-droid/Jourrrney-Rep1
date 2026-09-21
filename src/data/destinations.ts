@@ -649,7 +649,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
-      { name: "Bhangarh Fort", distance: "83 km", type: "Mysterious Ruins", isHidden: true, id: "bhangarh-fort" },
+      { name: "Bhangarh Fort", distance: "83 km", type: "Mysterious Ruins", isHidden: true, id: "bhangarh" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 200, activities: 200 },
@@ -23910,65 +23910,6 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
-    id: "bhangarh-fort",
-    name: "Bhangarh Fort",
-    state: "Rajasthan",
-    hidden: true,
-    tagline: "A 17th-Century Ghost Town, and India's Most Famous Local Legend",
-    description: "Bhangarh was built in the 17th century by Raja Madho Singh, younger brother of the Mughal general Man Singh I of Amber, and genuinely grew to some 9,000 houses before its population began declining after 1720. Today it's real, extensively documented ruins — abandoned temples, havelis, and a market street — sit at the base of the Aravalli hills, and the site is widely known across India through two enduring local legends: one holding that a sadhu's curse doomed the town after a later ruler's palace shadow fell on his hermitage, the other centred on a wizard's thwarted love spell for a princess. Whatever one makes of the folklore, it's real that the Archaeological Survey of India prohibits visitor entry between sunset and sunrise, a straightforward heritage-protection rule rather than evidence of anything supernatural — most visitors simply come during the day to see a genuinely atmospheric, well-preserved medieval ruin.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/05/Bhangarh_fort_Rajasthan_12.jpg",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Bhangarh_fort_Rajasthan_12.jpg",
-    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/05/Bhangarh_fort_Rajasthan_12.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Entrance_to_Bhangarh_Fort_Complex.JPG/1280px-Entrance_to_Bhangarh_Fort_Complex.JPG"],
-    imageCredit: "Photos: Deejayrocks2, Himanshu Yogi — Wikimedia Commons, CC BY-SA 4.0 / CC BY-SA 3.0.",
-    category: ["Heritage"],
-    bestSeason: "October – February",
-    duration: "1–2 hours (daytime only — ASI rules prohibit entry after sunset)",
-    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "ASI-enforced sunset-to-sunrise entry ban — no exceptions." },
-    highlights: [
-      { name: "17th-century ruins built by Raja Madho Singh, once home to some 9,000 houses" },
-      { name: "India's best-known local legend site, built around two enduring folk stories" },
-      { name: "Extensive, atmospheric ruins of temples, havelis, and a market street" },
-      { name: "ASI-enforced daytime-only visiting hours, a standard heritage-protection rule" },
-    ],
-    transport: [
-      { mode: "Road", icon: "🚗", fromDelhi: "~260 km via NH48/SH, ~5h", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~83 km / ~2h from Jaipur", costRange: "₹2,000–₹4,000 by cab from Jaipur (round trip)", tips: "Plan to arrive well before sunset — the ASI closes the site to visitors overnight, and the round trip from Jaipur takes real time." },
-    ],
-    accommodation: [
-      { type: "Base in Jaipur or Alwar", priceRange: "₹800–₹8,000/night (estimate)", examples: ["Jaipur city hotels", "Alwar town hotels"], description: "Most visitors do this as a day trip rather than staying near the ruins themselves." },
-    ],
-    localTransport: [
-      { mode: "Taxi (round trip from Jaipur)", cost: "₹2,000–₹4,000", notes: "Standard way to visit, often combined with a stop at nearby Sariska", available: true },
-      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage this far from Jaipur — a hired taxi round trip is the standard option", available: false },
-    ],
-    nearbyPlaces: [
-      { name: "Jaipur", distance: "~83 km", type: "City", isHidden: false, id: "jaipur" },
-      { name: "Sariska Tiger Reserve", distance: "~55 km", type: "Wildlife", isHidden: true, id: "sariska-tiger-reserve" },
-    ],
-    budgetBreakdown: [
-      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 700, food: 400, transport: 700, activities: 0 },
-      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 3000, food: 1000, transport: 1200, activities: 300 },
-      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 25000, accommodation: 20000, food: 2000, transport: 2000, activities: 500 },
-    ],
-    defaultItinerary: [
-      { day: 1, title: "Bhangarh & Sariska Day Trip", morning: "Drive from Jaipur to Bhangarh.", afternoon: "Explore the ruins — temples, havelis, and the old market street.", evening: "Return to Jaipur, or continue on to Sariska if staying overnight nearby.", stay: "Jaipur or Alwar", meals: "Roadside dhaba lunch (₹150–₹250), Rajasthani thali dinner (₹300–₹500)", tips: "Go for the genuine historical and architectural interest of the ruins — a worthwhile stop regardless of what one thinks of the legends." },
-    ],
-    womenSafety: {
-      score: 6,
-      level: "Moderate",
-      highlights: ["A well-known, ASI-managed heritage site with a ticket counter and daytime staff presence"],
-      precautions: ["Visit only during official opening hours — the site is legally closed from sunset to sunrise", "Watch footing among the uneven ruins", "The remote rural setting means limited facilities/mobile signal in parts"],
-      soloTips: ["Arrange a driver/guide for the day trip rather than relying on public transport, given the remote location"],
-      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar District Police", number: "100" }, { label: "Police", number: "100" }],
-      safeZones: ["The ticketed ruins area during official daytime hours"],
-      avoidAreas: ["The site outside official opening hours, which is prohibited by ASI rule regardless"],
-    },
-    rating: 4.2,
-    reviews: 6200,
-    mustEat: ["Roadside dhaba food en route", "Rajasthani thali in Jaipur/Alwar"],
-    packingTips: ["Comfortable walking shoes", "Sun protection", "Water bottle", "Camera"],
-  },
-
-  {
     id: "sam-sand-dunes",
     name: "Sam Sand Dunes",
     state: "Rajasthan",
@@ -25339,7 +25280,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Jaipur, combined with Bhangarh, is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Bhangarh Fort", distance: "~3-4 km", type: "Heritage", isHidden: true, id: "bhangarh-fort" },
+      { name: "Bhangarh Fort", distance: "~3-4 km", type: "Heritage", isHidden: true, id: "bhangarh" },
       { name: "Jaipur", distance: "~85 km", type: "City", isHidden: false, id: "jaipur" },
     ],
     budgetBreakdown: [
