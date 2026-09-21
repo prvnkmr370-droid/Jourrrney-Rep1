@@ -19074,6 +19074,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Remote border fort; open daily, though it sits in a sensitive border zone — confirm access locally." },
     highlights: [{ name: "18th-century trade town, now atmospheric ruins" }, { name: "16th-century Sikh gurdwara, UNESCO award 2004" }, { name: "Documented Guru Nanak visits" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~135 km / ~2.5-3h from Bhuj", costRange: "₹2,500–₹4,500 (cab from Bhuj)", tips: "This is a genuinely remote, sensitive border-area visit — carry ID and check for any current access restrictions before setting out." },
@@ -19404,6 +19405,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [{ name: "Referenced in the Mahabharata as \"Ilva Durga\"" }, { name: "Idariya Rathore rule from 1257" }, { name: "Real Aravalli-hill defensive position" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "~25 km / ~40 min from Himmatnagar", costRange: "₹500–₹1,200 (cab from Himmatnagar)", tips: "Genuinely an offbeat stop — combine with a wider North Gujarat heritage circuit rather than a dedicated trip." },
@@ -19464,6 +19466,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Visits are typically by prior appointment with the royal family's trust." },
     highlights: [{ name: "Self-designed by Wankaner's last ruler, 1907–1914" }, { name: "Victorian-Mughal-Gothic-Dutch fusion" }, { name: "225-acre estate, 360° clock-tower view" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~35 km / ~50 min from Rajkot", costRange: "₹800–₹1,800 (cab from Rajkot)", tips: "Genuinely worth checking ahead, since parts remain a private royal residence with limited public access windows." },
@@ -19520,6 +19523,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily; now partly run as a heritage stay." },
     highlights: [{ name: "Indo-Saracenic architecture, 5 domes" }, { name: "Restored as a 14-room heritage hotel" }, { name: "Near the Lothal Indus Valley site" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~85 km / ~1.5h from Ahmedabad", costRange: "₹1,500–₹3,000 (cab from Ahmedabad)", tips: "Genuinely combinable with a Lothal visit on the same day trip." },
@@ -22270,6 +22274,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "November – February",
     duration: "30 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected site; open daily." },
     highlights: [{ name: "3rd–4th century CE Buddhist monastery" }, { name: "Casket inscription naming actual Buddha relics" }, { name: "Site now submerged under the Meshwo reservoir" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Himmatnagar — long haul", fromMumbai: "Via Himmatnagar — long haul", fromBangalore: "Not practical", duration: "~2 km from Shamlaji", costRange: "₹100–₹300 (auto/cab from Shamlaji)", tips: "Genuinely worth understanding before you go that the original stupa itself is now underwater — this is a memorial/viewpoint visit, not an intact ancient structure to walk through." },
@@ -23144,6 +23149,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Adventure"],
     bestSeason: "November – February",
     duration: "Full day",
+    visitingHours: { opens: "5:00 AM", closes: "7:00 PM", note: "Gate opens before dawn for pilgrims climbing to the summit temples; the ropeway runs shorter hours." },
     highlights: [
       { name: "9,999 stone steps leading to 866 Hindu and Jain temples (8th–15th century)" },
       { name: "12th-century Neminath Temple, the largest and oldest of the Jain temple cluster" },
