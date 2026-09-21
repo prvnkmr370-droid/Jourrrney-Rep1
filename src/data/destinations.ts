@@ -13312,6 +13312,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Rented Scooter / Taxi", cost: "₹300–₹600/day (scooter) or ₹150–₹400/hop (taxi)", notes: "Standard way to reach Galgibaga", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote South Goa beach; Ola/Uber cover Goa's towns but rarely reach this stretch of coast reliably — a rented scooter or pre-arranged taxi is the standard option.", available: false },
     ],
     nearbyPlaces: [
       { name: "Patnem Beach", distance: "~5 km", type: "Beach", isHidden: false, id: "patnem" },
@@ -52625,6 +52626,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Private Taxi/Jeep", cost: "₹500–₹1,200", notes: "From Daltonganj or within Betla National Park", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote fort near Betla National Park; no app-cab coverage — hire a taxi/jeep from Daltonganj (~25 km) or via your resort.", available: false },
     ],
     nearbyPlaces: [
       { name: "Betla National Park", distance: "~2 km", type: "National Park", isHidden: false, id: "betla-national-park" },
