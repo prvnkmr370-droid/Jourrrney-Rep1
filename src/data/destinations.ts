@@ -76380,6 +76380,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Buddhist Site", "Heritage"],
     bestSeason: "October – May",
     duration: "1–2 hours, including the walk up from Yuksom",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Open daily; reached by a short uphill walk from Yuksom." },
     highlights: [{ name: "Professed to be Sikkim's oldest surviving monastery, founded 1701" }, { name: "Built to commemorate the coronation of Sikkim's first Chogyal" }, { name: "The only one of four founding-era monasteries still standing" }, { name: "A 3 km, roughly hour-long walk up from Yuksom" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bagdogra Airport, then ~6h road to Yuksom", fromMumbai: "Via Bagdogra or Kolkata, then road", fromBangalore: "Via Bagdogra or Kolkata, then road", duration: "Fly into Bagdogra, then road via Gyalshing to Yuksom", costRange: "₹4,000–₹12,000 airfare to Bagdogra", tips: "Dubdi is reached on foot from Yuksom — no vehicle access to the monastery itself." },
