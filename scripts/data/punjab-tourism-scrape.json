@@ -1,0 +1,56 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-21",
+  "note": "Facts (timings, entry fees, distances, locations) extracted below; prose summaries are written in our own words, not copied verbatim from the source. This site is organized by district (22 districts, each with its own page under /en/our-destination/<district-slug>/), unlike Puducherry's flat places-to-visit list. Only Amritsar has been scraped in full so far; other 21 districts remain for future sessions.",
+  "allDistricts": [
+    "Amritsar", "Barnala", "Bathinda", "Faridkot", "Fazilka", "Ferozepur", "Gurdaspur",
+    "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Malerkotla", "Mansa", "Moga",
+    "Pathankot", "Patiala", "Rupnagar", "SBS Nagar (Nawanshahr)", "Sangrur", "Taran Taran",
+    "Muktsar Sahib", "Faridkot"
+  ],
+  "districtPageUrlPattern": "https://punjabtourism.punjab.gov.in/en/our-destination/<slug>/",
+  "amritsar": {
+    "pageUrl": "https://punjabtourism.punjab.gov.in/en/our-destination/amritsar-the-city-of-divinity/",
+    "places": [
+      { "name": "Sri Harmandir Sahib (The Golden Temple)", "timings": "Open throughout the day and night", "entryFee": "Free", "location": "Golden Temple Road, Amritsar", "facts": "Blend of Hindu/Islamic architecture; construction started late 16th century by Guru Arjan Dev Ji; Maharaja Ranjit Singh renovated with marble/copper in 1809, gold-plated sanctum in 1830; four entrances symbolizing openness to all; Sarovar (holy tank) surrounds it." },
+      { "name": "Sri Akal Takht Sahib", "timings": "Open throughout the day", "entryFee": "Free", "location": "Golden Temple Complex, Amritsar", "facts": "First/primary seat of Sikh temporal & spiritual authority; established 1609 AD by Guru Hargobind Sahib Ji; built taller than Mughal-permitted height as an act of defiance; Miri and Piri flags stand in front; houses historic Sikh weapons." },
+      { "name": "Interpretation Centre (Golden Temple Complex)", "timings": "9 am to 4 pm", "entryFee": "Free", "location": "Golden Temple Complex, Amritsar", "facts": "Underground multimedia museum, 4 galleries with 15-min videos on Sikh history; free English headsets." },
+      { "name": "Central Sikh Museum", "timings": "Check locally for current hours", "entryFee": "Check locally", "location": "Golden Temple Complex, Amritsar", "facts": "Paintings, artefacts, manuscripts on Sikh history/Gurus/warriors." },
+      { "name": "Sikh Museum", "timings": "Check locally", "entryFee": "Check locally", "location": "Amritsar", "facts": "Listed as a key cultural/heritage destination; limited detail given by source." },
+      { "name": "Gurudwara Baba Atal Sahib", "timings": "Open throughout the day", "entryFee": "Free", "location": "Golden Temple precinct, Amritsar", "facts": "9-storey tower memorializing Atal Rai (son of Guru Hargobind Sahib Ji, died age 9); each storey = 1 year of his life; terrace has panoramic city/temple view." },
+      { "name": "Town Hall Partition Museum", "timings": "10 am–6 pm, closed Monday", "entryFee": "Rs. 10 Indians / Rs. 250 foreigners", "location": "Town Hall, Amritsar", "facts": "World's first museum devoted entirely to the 1947 Partition; 14 galleries; photographs, personal belongings, Gallery of Hope for visitor messages." },
+      { "name": "Jallianwala Bagh", "timings": "6:30am–7pm (Apr–Sep), 7am–6pm (Oct–Mar)", "entryFee": "Free", "location": "Near Golden Temple, Amritsar", "facts": "Site of the 13 April 1919 massacre under Gen. Dyer's orders during a peaceful Baisakhi Day protest against the Rowlatt Act; bullet-marked walls and the well where people jumped to escape gunfire are preserved." },
+      { "name": "Heritage Street", "timings": "Accessible at all hours; best in the evening", "entryFee": "Free", "location": "Town Hall to Sri Harmandir Sahib, Amritsar", "facts": "~1km pedestrian stretch, Mughal/Rajputana/Sikh-inspired architecture with pink-toned facades; live Gurbani Kirtan LED screen; statues of Maharaja Ranjit Singh, Dr B.R. Ambedkar, Parliament House replica, Jallianwala Bagh memorial statue." },
+      { "name": "Gobindgarh Fort", "timings": "10am–10pm daily", "entryFee": "Rs. 180–649 Indians / Rs. 250–1000 foreigners (varies by attraction)", "location": "Amritsar city centre", "facts": "Built 1760s by Gujjar Singh Bhangi, rebuilt by Maharaja Ranjit Singh early 1800s; was under Indian Army control until restored/opened to public; now a theme park with Tosha Khana coin museum, Haat Bazaar, Whispering Walls projection show (7:15pm Punjabi/7:45pm English), Sher-e-Punjab 7D film, Spirit of Punjab live show, Ambarsari Zaika restaurant." },
+      { "name": "Shahi Qila", "timings": "Check locally", "entryFee": "Check locally", "location": "Amritsar district", "facts": "Listed among key heritage destinations; minimal detail given by source (appears associated with Attari Border area per site's attraction gallery)." },
+      { "name": "Khalsa College", "timings": "Accessible from outside at all times", "entryFee": "Not applicable", "location": "~5 km from Golden Temple", "facts": "Built 1892 by architect Bhai Ram Singh Ji; 300-acre campus; frequent Bollywood/Pollywood filming location (Veer-Zaara, Rab Ne Bana Di Jodi)." },
+      { "name": "Sri Durgiana Temple", "timings": "5:15am–1pm and 3pm–9pm", "entryFee": "Free", "location": "Near Lohgarh Gate, ~1.5km from Golden Temple", "facts": "Also called Laxmi Narayan Temple; dedicated to Hindu goddess; originally 16th century, rebuilt 1921 by Guru Harsai Mal Kapoor in Golden-Temple-style architecture." },
+      { "name": "Bhagwan Valmiki Tirath Sthal (Ram Tirath)", "timings": "6am–10pm", "entryFee": "Free", "location": "11km from Golden Temple, Amritsar-Lopoke Road", "facts": "Believed birthplace of Luv and Kush; site where Valmiki wrote the Ramayana; gold-plated Valmiki statue; ~2km parikrama; annual 4-day Ram Tirath Fair in November." },
+      { "name": "Ram Bagh Palace", "timings": "Check locally for current museum hours", "entryFee": "Check locally", "location": "Ram Bagh, Amritsar", "facts": "Maharaja Ranjit Singh's summer palace; named for Guru Ram Das Ji; 4 gateways (deoris) in Punjabi/Rajasthani style; now a museum with his artefacts, replica golden throne, replica Kohinoor diamond." },
+      { "name": "Panorama (Maharaja Ranjit Singh Museum)", "timings": "Check locally", "entryFee": "Check locally", "location": "Near Ram Bagh Palace", "facts": "Visual documentation of Ranjit Singh's life; depicts 6 of his major battles." },
+      { "name": "Sadda Pind", "timings": "10:30am–10pm", "entryFee": "Adults Rs. 720 / Children Rs. 570", "location": "~8km from Golden Temple", "facts": "12-acre living village museum of Punjabi culture; folk performances, handicrafts, cuisine; 20 guest rooms for overnight stays." },
+      { "name": "Punjab State War Heroes' Memorial and Museum", "timings": "9:30am–6:30pm (Apr–Sep), 10am–5:30pm (Oct–Mar)", "entryFee": "Free", "location": "~11km from Golden Temple", "facts": "45m sword monument with 4 lion heads; memorabilia from Maharaja Ranjit Singh era through the 1999 Kargil War; 7D theatre on 1965/1971 wars." },
+      { "name": "Attari-Wagah Border (Retreat Ceremony)", "timings": "4:30–5:30pm (Oct–Mar), 6:30–7:30pm (Apr–Sep)", "entryFee": "Free", "location": "Attari, ~28km from Amritsar", "facts": "Daily flag-lowering ceremony with BSF Jawans and Pakistani Rangers; arrive 45 min early for seating." },
+      { "name": "Pul Kanjri (Pul Moran)", "timings": "Check locally", "entryFee": "Check locally", "location": "Near village Dhanoa Kalan, ~36km from Golden Temple", "facts": "Built by Maharaja Ranjit Singh as a trading post/resting place; complex includes a temple, Gurdwara, mosque and bathing tank; also has a 1971-war memorial." },
+      { "name": "Attari Samadhan Complex", "timings": "Check locally", "entryFee": "Check locally", "location": "Attari, Amritsar district", "facts": "Samadhi of Sardar Sham Singh Attariwala, a general of Maharaja Ranjit Singh." },
+      { "name": "Sarai Amanat Khan", "timings": "Check locally", "entryFee": "Check locally", "location": "Near Tarn Taran district", "facts": "Built 1640 by Amanat Khan, a Persian calligrapher who also inscribed the Taj Mahal; two gateways (Lahori Darwaza, Dilli Darwaza) lead to a courtyard with a mosque and well." },
+      { "name": "Amritsar Heritage Walk", "timings": "Best in morning/early evening", "entryFee": "Free", "location": "Starts at Town Hall, Amritsar", "facts": "~45-minute guided walk through old katras/havelis from Town Hall to the Galleria at Golden Temple." },
+      { "name": "Thatheras of Jandiala Guru", "timings": "Workshop hours vary", "entryFee": "Not applicable", "location": "Jandiala Guru, Amritsar district", "facts": "Community of brass/copper/bell-metal craftsmen; UNESCO Intangible Cultural Heritage inscription 2014 (India's first)." },
+      { "name": "Harike Wetland and Wildlife Sanctuary", "timings": "Daylight hours; early morning best for birdwatching", "entryFee": "Check locally", "location": "Harike, Amritsar-Ferozepur border", "facts": "Largest wetland in northern India, at the Beas-Sutlej confluence; Ramsar site; major bird sanctuary." },
+      { "name": "Hop-on Hop-off Tourist Bus", "timings": "Check locally", "entryFee": "Rs. 250/trip, 50% concession seniors/children", "location": "Departs near Golden Temple", "facts": "City sightseeing bus service with tour guide — a service, not a standalone destination." }
+    ],
+    "howToReach": {
+      "air": "Sri Guru Ram Dass Jee International Airport, Amritsar",
+      "rail": "Amritsar Central Railway Station — direct to Delhi, Chandigarh, Mumbai",
+      "road": "Amritsar Bus Stand — PRTC and private services",
+      "local": "Auto-rickshaws, cycle-rickshaws, Hop-on Hop-off Tourist Bus"
+    },
+    "visitorInfo": {
+      "bestTimeToVisit": "October to March",
+      "medicalFacilities": ["EMC Super Specialty Hospital", "Fortis Escorts Hospital", "Ivy Hospital"],
+      "emergencyNumber": "112",
+      "punjabGrievanceHelpline": "1100"
+    }
+  }
+}
