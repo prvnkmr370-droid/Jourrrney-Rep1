@@ -78220,6 +78220,67 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "dupleix-statue-pondicherry",
+    name: "Dupleix Statue",
+    state: "Puducherry (UT)",
+    tagline: "A 1870 Monument to Puducherry's Most Consequential French Governor",
+    description: "The Dupleix Statue, a 2.88-metre bronze depicting Joseph François Dupleix in full court dress with a plan of Pondicherry in hand, stands in a small park at the southern end of Goubert Avenue, near the Promenade. Dupleix governed French Pondicherry from 1742 to 1754 and was central to expanding French influence in India during that period, though he left the city in 1754 under a cloud after setbacks in the Carnatic Wars. French recognition of his legacy came only in 1870, when this statue and a matching one in France were commissioned; it was moved to its current beachside spot in 1979.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/70/DUPLEIX_STATUE_-_PONDICHERRY_BEACH.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/70/DUPLEIX_STATUE_-_PONDICHERRY_BEACH.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/70/DUPLEIX_STATUE_-_PONDICHERRY_BEACH.JPG"],
+    imageCredit: "Photo: Aravindaraja — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "November – February",
+    duration: "15–20 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "An open-air public statue on the Promenade — viewable anytime, though best combined with a general Promenade walk during daylight or early evening." },
+    highlights: [
+      { name: "A 2.88m bronze of Governor Joseph François Dupleix" },
+      { name: "Commissioned in 1870, moved to its beachside spot in 1979" },
+      { name: "Stands at the southern end of Goubert Avenue, by the Promenade" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Long haul via Chennai", fromMumbai: "Long haul via Chennai", fromBangalore: "~310-320 km via Tiruvannamalai", duration: "~160 km / 3-3.5h from Chennai via ECR", costRange: "₹2,500–₹5,000 by cab from Chennai", tips: "On the Promenade, an easy stop during a Beach Road walk." },
+    ],
+    accommodation: [
+      { type: "White Town Heritage Hotels", priceRange: "₹3,000–₹12,000/night", examples: ["Hotels along or near the Promenade"], description: "The statue sits right on the Promenade, an easy walk from any White Town stay." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Directly on the Promenade walk", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹200 within town", notes: "Widely available in Puducherry town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Promenade Beach (Rock Beach)", distance: "On-site", type: "Beach", isHidden: false, id: "promenade-beach-pondicherry" },
+      { name: "French War Memorial", distance: "~0.3 km", type: "Heritage", isHidden: false, id: "french-war-memorial-pondicherry" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 400, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2200, food: 700, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 6500, food: 1200, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Promenade Heritage Walk", morning: "Walk the Promenade, stopping at the Dupleix Statue and War Memorial.", afternoon: "Continue into White Town.", evening: "Return to the Promenade for sunset.", stay: "White Town heritage hotel", meals: "Seafront café", tips: "Best combined with a general Promenade walk rather than visited alone." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Sits within the busy, well-lit Promenade Beach stretch"],
+      precautions: ["Same general precautions as the Promenade — stick to the lit, populated stretch after dark"],
+      soloTips: ["Comfortable for solo visitors as part of a Promenade walk"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The Promenade Beach stretch around the statue"],
+      avoidAreas: ["None specific beyond general Promenade precautions"],
+    },
+    rating: 4.2,
+    reviews: 1500,
+    mustEat: ["Street-food carts along the nearby Promenade"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
