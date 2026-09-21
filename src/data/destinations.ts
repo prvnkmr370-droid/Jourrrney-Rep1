@@ -7257,6 +7257,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Self-Drive/Rental Vehicle", cost: "₹1,000–₹2,500/day", notes: "A popular option given the scenic ghat roads between sights", available: true },
       { mode: "Trekking", cost: "Guide fee ₹500–₹1,500", notes: "Several peaks and waterfalls (including the final stretch to Hebbe Falls) require walking", available: true },
       { mode: "Uber", cost: "Varies", notes: "Confirmed operating in Chikmagalur town itself; coverage thins out at the peaks and estates, where a hired day taxi works better", available: true },
+      { mode: "Ola / Uber", cost: "₹100–250 within town", notes: "Chikmagalur town has decent Ola/Uber coverage; less reliable for estate stays outside town.", available: true },
     ],
     nearbyPlaces: [
       { name: "Coorg (Kodagu)", distance: "95 km", type: "Nature", isHidden: false, id: "coorg" },
@@ -26481,6 +26482,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Spiritual"],
     bestSeason: "October – February",
     duration: "2–3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily; the partly-sand-buried temples are most visible outside monsoon." },
     highlights: [
       { name: "Former capital of the Western Ganga dynasty, once home to 30+ temples" },
       { name: "Genuinely buried under drifting Kaveri riverbank sand over roughly two centuries" },
@@ -26776,6 +26778,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Spiritual", "Adventure"],
     bestSeason: "October – February",
     duration: "3–4 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Forest department entry ticket required." },
     highlights: [
       { name: "Bhairaveshwara Shikhara (120m) and Mohini Shikhara (90m), two natural limestone monoliths" },
       { name: "A cave temple with a self-manifested Shiva lingam at the base of Bhairaveshwara Shikhara" },
@@ -27244,6 +27247,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Heritage"],
     bestSeason: "August – February (gate openings most dramatic during/after monsoon)",
     duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "The musical/Brindavan-style garden below the dam keeps these hours; the dam itself is viewable from the road." },
     highlights: [
       { name: "First investigated in the 1860s as a British famine-response measure" },
       { name: "Built 1949-53 as a joint Hyderabad State-Madras Presidency project" },
@@ -53881,6 +53885,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Own Vehicle / Jeep", cost: "₹500–₹2,500", notes: "A car or hired jeep is best; attractions are spread across estates and hills", available: true },
       { mode: "Uber", cost: "N/A", notes: "App coverage across Sakleshpur's spread-out estates and hills is unconfirmed — a hired taxi or self-drive is the practical option", available: false },
+      { mode: "Ola / Uber", cost: "₹100–250 within town", notes: "Some Ola/Uber coverage in Sakleshpur town; unreliable for estates and trailheads outside it.", available: true },
     ],
     nearbyPlaces: [
       { name: "Bisle Ghat Viewpoint", distance: "~45 km", type: "Viewpoint", isHidden: true, id: "bisle-ghat" },
@@ -54065,6 +54070,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Religious", "Adventure"],
     bestSeason: "August – February",
     duration: "Half day to 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily; the temple hill gate closes at night." },
     highlights: [
       { name: "The hilltop Yoga Narasimha Temple with plains views" },
       { name: "The Bhoga Narasimha Temple at the base of the hill" },
@@ -54216,6 +54222,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Own Vehicle / 4x4 Jeep", cost: "₹500–₹3,000", notes: "A car reaches the town and gardens; local 4x4 jeeps run to Hebbe Falls over rough track", available: true },
       { mode: "Uber", cost: "N/A", notes: "App coverage doesn't reach this hill station — a hired taxi or self-drive from Chikmagalur town is the practical option", available: false },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote hill retreat; hire a taxi from Chikmagalur (~55 km) or arrange transport via your resort.", available: false },
     ],
     nearbyPlaces: [
       { name: "Chikmagalur", distance: "~55 km", type: "Coffee Hill Town", isHidden: false, id: "chikmagalur" },
@@ -54999,6 +55006,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage", "History"],
     bestSeason: "September – February",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [
       { name: "Shrines dating to around the 9th century (Nolamba/Ganga)" },
       { name: "Twin Bhoga Nandeeshwara and Arunachaleshwara shrines" },
@@ -56351,6 +56359,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Own Vehicle / Hired Jeep", cost: "₹1,500–₹3,000", notes: "A vehicle or hired jeep to the road-head; the last stretch to the summit is on foot up steps", available: true },
       { mode: "Uber", cost: "N/A", notes: "App coverage doesn't reach the peak road itself — a hired jeep or taxi from Chikmagalur town is the only practical way up", available: false },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote peak trailhead; no app-cab coverage — arrange a taxi from Chikmagalur via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Chikmagalur", distance: "~25 km", type: "Coffee Hill Town", isHidden: false, id: "chikmagalur" },
@@ -60322,6 +60331,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Adventure", "Religious", "Nature"],
     bestSeason: "October – February (Maha Shivaratri, Feb–Mar, is very crowded)",
     duration: "Half day (2 – 3 hours for the round-trip climb)",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Forest department entry point; the chain-assisted climb is best done before midday heat." },
     highlights: [
       { name: "A granite hill said to resemble a linga, cobra, Nandi and Ganesha" },
       { name: "The Gavi Gangadhareshwara cave temple and its monolithic Nandi" },
