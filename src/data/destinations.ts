@@ -71601,6 +71601,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Culture"],
     bestSeason: "Year-round (evenings are especially atmospheric when the Sarovar and dome are lit)",
     duration: "1-1.5 hours",
+    visitingHours: { opens: "4:00 AM", closes: "10:00 PM", note: "Open daily; free community langar served around the clock." },
     highlights: [{ name: "Delhi's largest and most-visited Sikh shrine" }, { name: "The Sarovar, a holy pool fed by Guru Har Krishan's well" }, { name: "A 24-hour community kitchen serving free meals to all visitors" }, { name: "A golden dome and gleaming white marble facade" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Bangla Sahib by road/metro", fromBangalore: "IGI Airport, ~35 min to Bangla Sahib by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Connaught Place — easy to combine with central Delhi shopping and dining." },
@@ -72103,6 +72104,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Adventure"],
     bestSeason: "October – March (cooler weather for walking the extensive, largely unshaded ruins)",
     duration: "2-3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "ASI-protected park; open daily." },
     highlights: [{ name: "Over 100 monuments spanning more than 1,000 years" }, { name: "The finely carved Rajon ki Baoli stepwell" }, { name: "The Jamali Kamali mosque and tomb, with a painted ceiling" }, { name: "The tomb of Ghiyasuddin Balban, a Delhi Sultanate ruler" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Mehrauli Archaeological Park by road/metro", fromBangalore: "IGI Airport, ~40 min to Mehrauli Archaeological Park by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Right by the Qutub Minar complex — easy to combine both in one outing." },
@@ -72164,6 +72166,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – March (cooler weather for morning walks and lawn activities)",
     duration: "1 hour",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily." },
     highlights: [{ name: "Central Delhi's most popular lawn for morning walks and yoga" }, { name: "Located in the Chanakyapuri diplomatic enclave" }, { name: "Regularly hosts civic and public events, including Yoga Day" }, { name: "Quiet, tree-lined paths minutes from major embassies" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~30 min to Nehru Park by road/metro", fromBangalore: "IGI Airport, ~30 min to Nehru Park by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "In the Chanakyapuri diplomatic enclave — best combined with an early-morning visit." },
@@ -72467,6 +72470,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage"],
     bestSeason: "Year-round; especially significant around Guru Nanak's birthday (Gurpurab) in November",
     duration: "1 hour",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Open daily; free community langar served." },
     highlights: [{ name: "Marks the secret 1675 cremation site of Guru Tegh Bahadur" }, { name: "Commemorates the devotee Lakhi Shah Vanjara's act of sacrifice" }, { name: "Soaring white-marble domes near Parliament House" }, { name: "An important Sikh pilgrimage site in central Delhi" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~35 min to Rakab Ganj Sahib by road/metro", fromBangalore: "IGI Airport, ~35 min to Rakab Ganj Sahib by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Close to Parliament House and Rashtrapati Bhavan — easy to combine with central Delhi sights." },
