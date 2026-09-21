@@ -3772,6 +3772,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – March (cooler for safari-vehicle touring)",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Closed on Mondays." },
     highlights: [{ name: "Guided safari-vehicle tour" }, { name: "Asiatic lions in a Gir-style habitat" }, { name: "Deer, wild boar & birdlife" }, { name: "Conservation/breeding-programme exhibits" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa, then ~40min further", fromBangalore: "Long haul", duration: "~40min from central Silvassa", costRange: "₹300–₹600 (auto/cab from Silvassa)", tips: "Best combined with Satmaliya Deer Park if it's on the same side of town — check your resort's local map first." },
@@ -4726,6 +4727,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Offbeat"],
     bestSeason: "October – March",
     duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Open daily." },
     highlights: [{ name: "Ruined cloisters & chapel" }, { name: "Stone courtyard" }, { name: "Surrounding gardens" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "In Moti Daman town", costRange: "₹50–₹200 (auto within town)", tips: "A quieter, less-crowded heritage stop — combine with the Cathedral and fort nearby." },
@@ -5530,6 +5532,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "Year-round",
     duration: "15–30 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily; part of the old Portuguese fort walls." },
     highlights: [{ name: "Historic Portuguese town gate" }, { name: "Starting point for old-town walks" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town", costRange: "₹50–₹200 (auto within town)", tips: "Near the Naida Caves — easy to combine both in one stop." },
@@ -5595,6 +5598,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Offbeat"],
     bestSeason: "October – March; midday for the best light through the openings",
     duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily; no entry fee." },
     highlights: [{ name: "Below-ground rock caverns" }, { name: "Natural light openings" }, { name: "Popular photography spot" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "In Diu town, near Zampa Gate", costRange: "₹50–₹200 (auto within town)", tips: "Combine with the Zampa Gateway — they're right next to each other." },
@@ -5851,6 +5855,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort", "Offbeat"],
     bestSeason: "October – March",
     duration: "View from shore — 30 minutes; boat access varies",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Reached by boat from Diu; boat operators generally run within this window." },
     highlights: [{ name: "Sea-fort built by Malik Aiyaz, fortified 1588" }, { name: "Chain-and-bastion defence system (historic)" }, { name: "Period stone inscription" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu town", fromBangalore: "Long haul", duration: "Viewable from Diu Fort/shore; boat access separately arranged", costRange: "₹50–₹200 (auto within town) + boat fare if crossing", tips: "Best viewed from Diu Fort's ramparts unless you specifically arrange boat access — check locally for current visiting options." },
