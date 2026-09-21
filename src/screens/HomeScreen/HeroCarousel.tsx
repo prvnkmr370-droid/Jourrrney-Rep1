@@ -21,7 +21,7 @@ import { MapPin, Shield, Search } from "lucide-react-native";
 import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
-import { findLiveMatches, resolveUnambiguousMatch } from "@/data/matchDestination";
+import { findLiveMatches, resolveUnambiguousMatch, matchNonIndiaPlace } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { CompassMark } from "@/components/JourrrneyLogo";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -74,8 +74,12 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
   // (a popularity proxy) breaking ties between otherwise-similar matches.
   // Only shown while the field is actually focused, so it doesn't linger
   // after a selection collapses the keyboard.
+  // A query naming a well-known place outside India (e.g. "dubai") must
+  // never surface a coincidental fuzzy match here (e.g. "Dubdi Monastery")
+  // as if it were a real suggestion for it — see matchNonIndiaPlace's doc
+  // comment in matchDestination.ts.
   const suggestions = useMemo(
-    () => (inputFocused ? findLiveMatches(query, 5, recentIds) : []),
+    () => (inputFocused && !matchNonIndiaPlace(query) ? findLiveMatches(query, 5, recentIds) : []),
     [query, inputFocused, recentIds],
   );
   const showSuggestions = inputFocused && query.trim().length > 0;
@@ -100,7 +104,10 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
     // still land on the browse list rather than guess which one the user
     // meant just because it happened to rank first — the dropdown is for
     // tapping a specific suggestion, this is for the literal typed query.
-    const target = resolveUnambiguousMatch(q);
+    // A known non-India place must skip matching entirely — see
+    // matchNonIndiaPlace's doc comment — and fall through to the Search
+    // tab, which shows the "we're India-only" message for it.
+    const target = matchNonIndiaPlace(q) ? null : resolveUnambiguousMatch(q);
     if (target) {
       addSearch(q, target.id);
       setQuery("");

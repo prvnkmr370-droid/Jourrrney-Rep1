@@ -6,7 +6,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Shield, ChevronRight, Search, X } from "lucide-react-native";
 import { DESTINATIONS, getSafetyColor, type Destination } from "@/data/destinations";
-import { findLiveMatches } from "@/data/matchDestination";
+import { findLiveMatches, matchNonIndiaPlace } from "@/data/matchDestination";
 import { withOpacity } from "@/components/withOpacity";
 import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 
@@ -42,10 +42,18 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
     return [...bestPerState.values()].sort((a, b) => b.womenSafety.score - a.womenSafety.score);
   }, []);
 
+  // A query naming a well-known place outside India (e.g. "dubai") must
+  // never silently surface a coincidental fuzzy match (e.g. "Dubdi
+  // Monastery") as its safety card — see matchNonIndiaPlace's doc comment
+  // in matchDestination.ts. Without this, the fuzzy matcher rarely
+  // returns zero results for real-word input, so the "No destinations
+  // match" empty state below almost never fires for exactly the queries
+  // that most need it.
+  const nonIndiaPlace = useMemo(() => matchNonIndiaPlace(query), [query]);
   const searchRated = useMemo(() => {
-    if (!query.trim()) return [];
+    if (!query.trim() || nonIndiaPlace) return [];
     return findLiveMatches(query, 20).sort((a, b) => b.womenSafety.score - a.womenSafety.score);
-  }, [query]);
+  }, [query, nonIndiaPlace]);
 
   const rated = query.trim() ? searchRated : defaultRated;
 
@@ -118,7 +126,12 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
             )}
           </View>
 
-          {query.trim().length > 0 && rated.length === 0 && (
+          {query.trim().length > 0 && nonIndiaPlace && (
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, marginBottom: 10 }}>
+              We're currently focused on destinations within India — happy to help you check safety info anywhere in India though!
+            </Text>
+          )}
+          {query.trim().length > 0 && !nonIndiaPlace && rated.length === 0 && (
             <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, marginBottom: 10 }}>
               No destinations match "{query.trim()}".
             </Text>

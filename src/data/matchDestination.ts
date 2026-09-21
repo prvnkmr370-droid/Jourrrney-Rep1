@@ -176,6 +176,101 @@ export function findLiveMatches(query: string, limit = 4, recentIds: string[] = 
   return pool.slice(0, limit).map((r) => r.dest);
 }
 
+// Well-known places outside India that people might type into any of this
+// app's search boxes (Home, the Search tab, Tia's trip chat, Safety
+// search). Checked BEFORE the fuzzy matching above runs, because that
+// matching has no concept of "this doesn't belong in the dataset at all"
+// — it only ranks candidates against each other, so a short,
+// coincidentally-close query like "dubai" can win a weak-but-unique match
+// against an unrelated Indian name ("Dubdi Monastery" is 1 edit away) and
+// get silently treated as if that's what was searched for. Not an
+// exhaustive gazetteer — covers the world's most commonly asked-about
+// cities/countries; anything not on this list still falls through to
+// normal matching.
+const NON_INDIA_PLACES = new Set([
+  "dubai", "abu dhabi", "uae", "united arab emirates", "sharjah",
+  "usa", "us", "america", "united states", "new york", "los angeles", "san francisco",
+  "las vegas", "chicago", "miami", "hawaii", "orlando", "seattle", "boston",
+  "uk", "england", "britain", "united kingdom", "london", "scotland", "edinburgh", "manchester",
+  "france", "paris", "nice", "marseille",
+  "italy", "rome", "venice", "milan", "florence", "tuscany",
+  "spain", "madrid", "barcelona", "ibiza",
+  "germany", "berlin", "munich", "frankfurt",
+  "switzerland", "zurich", "geneva", "interlaken",
+  "netherlands", "amsterdam",
+  "greece", "athens", "santorini", "mykonos",
+  "turkey", "istanbul", "cappadocia", "antalya",
+  "russia", "moscow", "st petersburg",
+  "japan", "tokyo", "osaka", "kyoto", "hokkaido",
+  "china", "beijing", "shanghai", "guangzhou", "shenzhen",
+  "hong kong", "macau", "taiwan", "taipei",
+  "south korea", "seoul", "busan",
+  "thailand", "bangkok", "phuket", "pattaya", "chiang mai", "krabi",
+  "singapore",
+  "malaysia", "kuala lumpur", "penang", "langkawi",
+  "indonesia", "bali", "jakarta",
+  "vietnam", "hanoi", "ho chi minh city", "da nang", "halong bay",
+  "cambodia", "siem reap",
+  "philippines", "manila", "boracay", "cebu",
+  "maldives", "male",
+  "sri lanka", "colombo", "kandy",
+  "nepal", "kathmandu", "pokhara",
+  "bhutan", "thimphu", "paro",
+  "bangladesh", "dhaka",
+  "pakistan", "myanmar", "yangon",
+  "australia", "sydney", "melbourne", "brisbane", "perth", "gold coast",
+  "new zealand", "auckland", "queenstown", "wellington",
+  "canada", "toronto", "vancouver", "montreal",
+  "mexico", "cancun", "mexico city",
+  "brazil", "rio de janeiro", "sao paulo",
+  "egypt", "cairo", "sharm el sheikh",
+  "south africa", "cape town", "johannesburg",
+  "kenya", "nairobi",
+  "morocco", "marrakech", "casablanca",
+]);
+
+function normalizeForLookup(text: string): string {
+  return text.toLowerCase().trim().replace(/[.,!?]+$/g, "");
+}
+
+/** "Is this 1 edit away" — deliberately independent of the fuzzy matcher
+ * above (tuned for a much larger, differently-shaped dataset) and
+ * deliberately capped at 1 edit: this list is short enough that a looser
+ * budget risks a false positive against a real Indian place name. */
+function isOneEditAway(a: string, b: string): boolean {
+  if (Math.abs(a.length - b.length) > 1) return false;
+  if (a === b) return true;
+  const dp: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1]
+        : 1 + Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
+    }
+  }
+  return dp[a.length][b.length] <= 1;
+}
+
+/** Returns the matched place's display name when `query` (a single search
+ * term/segment — not a full sentence) names a well-known place outside
+ * India, else null. Callers should check this before running it through
+ * findLiveMatches/resolveUnambiguousMatch above. */
+export function matchNonIndiaPlace(query: string): string | null {
+  const norm = normalizeForLookup(query);
+  if (NON_INDIA_PLACES.has(norm)) return norm;
+  // Light typo tolerance (1 edit) so a near-miss spelling ("duabi") is
+  // still caught — only worth checking for reasonably long input, since a
+  // very short query is too ambiguous to risk a false positive over.
+  if (norm.length >= 4) {
+    for (const place of NON_INDIA_PLACES) {
+      if (isOneEditAway(norm, place)) return place;
+    }
+  }
+  return null;
+}
+
 export function resolveUnambiguousMatch(query: string): Destination | null {
   const q = query.trim().toLowerCase();
   if (!q) return null;

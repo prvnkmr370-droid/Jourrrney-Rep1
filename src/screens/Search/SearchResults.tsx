@@ -11,7 +11,7 @@ import DestImage from "@/components/DestImage";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Search, X, Settings2, Star } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
-import { findLiveMatches, resolveUnambiguousMatch } from "@/data/matchDestination";
+import { findLiveMatches, resolveUnambiguousMatch, matchNonIndiaPlace } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 
@@ -47,7 +47,17 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     onSelectDestination(d);
   };
 
-  const liveMatches = useMemo(() => findLiveMatches(query, 4, recentIds), [query, recentIds]);
+  // A query naming a well-known place outside India (e.g. "dubai") must
+  // never surface a coincidental fuzzy match (e.g. "Dubdi Monastery") as a
+  // real result for it — see matchNonIndiaPlace's doc comment in
+  // matchDestination.ts. Checked once and reused below to both suppress
+  // matching and show an explicit message instead of silently falling
+  // back to "Popular Searches".
+  const nonIndiaPlace = useMemo(() => matchNonIndiaPlace(query), [query]);
+  const liveMatches = useMemo(
+    () => (nonIndiaPlace ? [] : findLiveMatches(query, 4, recentIds)),
+    [query, recentIds, nonIndiaPlace],
+  );
 
   // Hitting search/enter on a query that clearly means one destination
   // (an exact name/state match, like "Arunachal Pradesh", or a query with
@@ -56,6 +66,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
   // they've already effectively narrowed to one result. An ambiguous
   // multi-match query is left as a list rather than guessing.
   const handleSubmit = () => {
+    if (nonIndiaPlace) return;
     const target = resolveUnambiguousMatch(query);
     if (target) handleSearchSelect(target);
   };
@@ -110,6 +121,13 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
 
       {suggestionMode ? (
         <ScrollView contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 40 }} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
+          {nonIndiaPlace && (
+            <View style={{ backgroundColor: c.surfaceAlt, borderRadius: 14, padding: 14, marginBottom: 20 }}>
+              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, lineHeight: 19 }}>
+                We're currently focused on destinations within India — happy to help you find a trip anywhere in India though!
+              </Text>
+            </View>
+          )}
           {liveMatches.length > 0 && (
             <View style={{ gap: 10, marginBottom: 20 }}>
               {liveMatches.map((d) => (
