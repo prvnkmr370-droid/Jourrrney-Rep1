@@ -78100,6 +78100,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "bharathidasan-museum",
+    name: "Bharathidasan Museum",
+    state: "Puducherry (UT)",
+    tagline: "The Former Home of Tamil Poet-Playwright Bharathidasan",
+    description: "The Bharathidasan Museum, on Perumal Koil Street, is the former home of Bharathidasan (1891–1964), a Tamil poet, playwright and rationalist writer whose works — often compared to those of Subramania Bharathi in literary achievement — engaged with social and political themes and later inspired Dravidian-movement cinema. Bharathidasan also wrote the Tamil Thai Vaazhthu, a devotional hymn to the Tamil language still sung by schoolchildren across Puducherry today. The house is preserved as a small memorial museum to his life and work.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/74/BHARATHIDHASAN_MUSEUM.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/74/BHARATHIDHASAN_MUSEUM.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/74/BHARATHIDHASAN_MUSEUM.JPG"],
+    imageCredit: "Photo: Aravindaraja — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Timings approximate for a small memorial museum — confirm locally before visiting, as hours for house-museums like this can vary." },
+    highlights: [
+      { name: "The preserved former home of poet Bharathidasan" },
+      { name: "Birthplace of the Tamil Thai Vaazhthu, still sung in Puducherry schools" },
+      { name: "A small, quiet literary memorial rather than a major museum" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Long haul via Chennai", fromMumbai: "Long haul via Chennai", fromBangalore: "~310-320 km via Tiruvannamalai", duration: "~160 km / 3-3.5h from Chennai via ECR", costRange: "₹2,500–₹5,000 by cab from Chennai", tips: "On Perumal Koil Street, a short ride from White Town." },
+    ],
+    accommodation: [
+      { type: "City Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["Hotels around White Town / MG Road"], description: "A short ride from most Puducherry stays." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within town", notes: "Standard way to reach Perumal Koil Street", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹200 within town", notes: "Widely available in Puducherry town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Varadaraja Perumal Temple", distance: "~1 km", type: "Temple", isHidden: false, id: "varadaraja-perumal-temple-pondicherry" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 400, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 700, transport: 300, activities: 200 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 5500, food: 1200, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Puducherry's Literary Heritage", morning: "Visit the Bharathidasan Museum.", afternoon: "Continue to the Bharathiyar House nearby.", evening: "Promenade sunset.", stay: "White Town heritage hotel", meals: "Local South Indian fare", tips: "A quick, low-key stop for those interested in Tamil literary history." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A small, quiet residential-street museum with modest visitor traffic"],
+      precautions: ["Best visited during daytime hours given its residential setting and modest footfall"],
+      soloTips: ["Comfortable for solo visitors during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The museum and surrounding street during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 640,
+    mustEat: ["Nearby local eateries"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "bharathiyar-house",
+    name: "Bharathiyar House (Bharathi Museum)",
+    state: "Puducherry (UT)",
+    tagline: "Where Tamil Poet-Patriot Subramania Bharathi Lived in Exile for a Decade",
+    description: "Bharathiyar House, on Eswaran Dharamaraja Koil Street, is the home where Subramania Bharathi (1882–1921) — commonly known as Bharathiyar, one of the most celebrated Tamil poets — lived for around a decade after fleeing British India as a political fugitive in 1908. Puducherry's relative freedom under French rule let Bharathi write some of his most influential patriotic and romantic poetry during this period. The house is preserved today as a modest memorial and is regarded as something close to a pilgrimage site for Tamil literature enthusiasts.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bharathiyar_House_in_Puducherry_Outside_View.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bharathiyar_House_in_Puducherry_Outside_View.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f2/Bharathiyar_House_in_Puducherry_Outside_View.jpg"],
+    imageCredit: "Photo: Balogic — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "November – February",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Timings approximate for a small memorial house — confirm locally before visiting." },
+    highlights: [
+      { name: "Home of poet-patriot Subramania Bharathi for about 10 years" },
+      { name: "Where some of his most influential patriotic poetry was written" },
+      { name: "A modest memorial, regarded as a near-pilgrimage site for Tamil literature fans" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Long haul via Chennai", fromMumbai: "Long haul via Chennai", fromBangalore: "~310-320 km via Tiruvannamalai", duration: "~160 km / 3-3.5h from Chennai via ECR", costRange: "₹2,500–₹5,000 by cab from Chennai", tips: "On Eswaran Dharamaraja Koil Street in White Town." },
+    ],
+    accommodation: [
+      { type: "White Town Heritage Hotels", priceRange: "₹3,000–₹12,000/night", examples: ["Heritage guesthouses in White Town"], description: "Walking distance of the house." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within White Town's walkable core", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹200 within town", notes: "Widely available in Puducherry town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sri Aurobindo Ashram", distance: "~1 km", type: "Spiritual", isHidden: false, id: "sri-aurobindo-ashram" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 800, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 6500, food: 1500, transport: 600, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Puducherry's Literary Heritage", morning: "Visit Bharathiyar House.", afternoon: "Continue to the Bharathidasan Museum.", evening: "Promenade sunset.", stay: "White Town heritage hotel", meals: "French bakery and South Indian fare", tips: "A quick, low-key stop for those interested in Tamil literary history." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Located within White Town's walkable, well-lit heritage core"],
+      precautions: ["Standard heritage-house precautions — modest visitor footfall"],
+      soloTips: ["Comfortable for solo visitors during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["White Town generally"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 820,
+    mustEat: ["Nearby White Town cafés"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
