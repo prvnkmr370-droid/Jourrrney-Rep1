@@ -72598,6 +72598,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Auto Rickshaw / Cab from Puri", cost: "₹800–₹1,800 round trip", notes: "The standard way to visit as a half-day trip from Puri", available: true },
       { mode: "Uber", cost: "Standard app fare", notes: "Uber lists Konark as a serviceable city on its own site, though pickup waits can run longer than in Bhubaneswar; Ola and Rapido coverage here is unconfirmed", available: true },
+      { mode: "Ola / Uber", cost: "₹400–700 from Puri", notes: "Ola/Uber cover Puri and Bhubaneswar well; coverage thins right at Konark but many drivers still take rides here.", available: true },
     ],
     nearbyPlaces: [
       { name: "Chandrabhaga Beach", distance: "~3 km", type: "Beach", isHidden: false, id: "chandrabhaga-beach" },
@@ -72764,6 +72765,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Buddhist Site", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [{ name: "Built in 1972 by Japanese and Indian Buddhist organisations" }, { name: "Marks the site of the 261 BC Kalinga War" }, { name: "Ashoka's rock edicts at the base of the hill" }, { name: "Panoramic views over the Daya River valley" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Biju Patnaik International Airport, Bhubaneswar — ~2h direct", fromMumbai: "~2h direct", fromBangalore: "~2h direct", duration: "Fly into Bhubaneswar, then a short drive", costRange: "₹3,000–₹10,000 airfare", tips: "Close to Bhubaneswar, easily combined with the old-town temples." },
@@ -72775,6 +72777,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Radio Taxi", cost: "₹200–₹500 round trip", notes: "OTDC also runs conducted tours from Bhubaneswar", available: true },
+      { mode: "Ola / Uber", cost: "₹150–300 from Bhubaneswar", notes: "Close to Bhubaneswar; well covered.", available: true },
     ],
     nearbyPlaces: [
       { name: "Lingaraja Temple", distance: "~8 km", type: "Pilgrimage", isHidden: false, id: "lingaraja-temple" },
@@ -72832,6 +72835,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cycle Rickshaw", cost: "₹50–₹200 within Puri town", notes: "Easiest way to reach the beach from anywhere in town", available: true },
+      { mode: "Ola / Uber", cost: "₹80–200 within town", notes: "Widely available within Puri town.", available: true },
     ],
     nearbyPlaces: [
       { name: "Jagannath Temple, Puri", distance: "~1.5 km", type: "Pilgrimage", isHidden: false, id: "jagannath-temple-puri" },
@@ -72890,6 +72894,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab from Puri or Konark", cost: "₹800–₹1,800 round trip from Puri", notes: "Easily paired with a Konark temple visit", available: true },
+      { mode: "Ola / Uber", cost: "₹400–700 from Puri", notes: "Ola/Uber cover nearby Konark and Puri; coverage thins for this specific stretch of beach.", available: true },
     ],
     nearbyPlaces: [
       { name: "Konark Sun Temple", distance: "~3 km", type: "Heritage", isHidden: false, id: "konark-sun-temple" },
@@ -73005,6 +73010,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Chartered Boat", cost: "₹1,000–₹3,000 per boat, shared among a group", notes: "Book through the official jetty counters at Satapada, Barkul, or Rambha", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote lakeside villages like Satapada; hire a taxi or arrange transport through your boat operator.", available: false },
     ],
     nearbyPlaces: [
       { name: "Puri Beach", distance: "~50 km from Satapada", type: "Beach", isHidden: false, id: "puri-beach" },
@@ -73061,6 +73067,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab from Puri", cost: "₹400–₹900 round trip", notes: "Easily arranged from anywhere in Puri", available: true },
+      { mode: "Ola / Uber", cost: "₹250–400 from Puri", notes: "Near Puri (~14 km); some coverage, though drivers can be reluctant for the short village hop.", available: true },
     ],
     nearbyPlaces: [
       { name: "Jagannath Temple, Puri", distance: "~14 km", type: "Pilgrimage", isHidden: false, id: "jagannath-temple-puri" },
@@ -73413,6 +73420,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Transport from Berhampur", cost: "₹200–₹600", notes: "Autos and cabs run the short distance from Berhampur to Gopalpur", available: true },
+      { mode: "Ola / Uber", cost: "₹250–450 from Berhampur", notes: "Coverage is centred on Berhampur (~16 km); reaching Gopalpur itself can be inconsistent.", available: true },
     ],
     nearbyPlaces: [
       { name: "Chilika Lake", distance: "~90 km", type: "Nature", isHidden: false, id: "chilika-lake" },
@@ -73469,6 +73477,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Transport from Balasore", cost: "₹200–₹600", notes: "Autos and cabs run the short distance from Balasore to Chandipur", available: true },
+      { mode: "Ola / Uber", cost: "₹150–300 from Balasore", notes: "Balasore, the nearest city, has decent coverage; Chandipur itself less so.", available: true },
     ],
     nearbyPlaces: [
       { name: "Talasari Beach", distance: "~65 km", type: "Beach", isHidden: false, id: "talasari-beach" },
@@ -73525,6 +73534,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Local Transport from Balasore", cost: "₹200–₹600", notes: "Autos and cabs run to Talasari from Balasore", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote coastal village near the West Bengal border; hire a taxi from Balasore or Digha, or via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Chandipur Beach", distance: "~65 km", type: "Beach", isHidden: false, id: "chandipur-beach" },
@@ -73581,6 +73591,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat Safari", cost: "₹1,500–₹4,000 per boat, shared among a group", notes: "Book through the forest department or an approved local operator", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote mangrove park reached by boat from Khola/Chandbali; no app-cab coverage — arrange transport through the forest department or your resort.", available: false },
     ],
     nearbyPlaces: [
       { name: "Chandipur Beach", distance: "~90 km", type: "Beach", isHidden: false, id: "chandipur-beach" },
@@ -73637,6 +73648,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari Jeep", cost: "₹2,500–₹5,000 per jeep, shared among a group", notes: "Book through the forest department; permits are mandatory", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote forest reserve; no app-cab coverage — arrange a jeep safari through the reserve office or your resort.", available: false },
     ],
     nearbyPlaces: [
       { name: "Bhitarkanika National Park", distance: "~150 km", type: "Wildlife", isHidden: false, id: "bhitarkanika-national-park" },
@@ -73693,6 +73705,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Boat Ride", cost: "₹1,000–₹3,000 per boat, shared among a group", notes: "Book at the official Tikarapara jetty", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote gorge village; no app-cab coverage — arrange transport through your resort or the forest department.", available: false },
     ],
     nearbyPlaces: [
       { name: "Ansupa Lake", distance: "~100 km", type: "Lake", isHidden: false, id: "ansupa-lake" },
@@ -73749,6 +73762,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab from Rourkela", cost: "₹2,000–₹4,000 round trip", notes: "Roads into the forest area can be rough — a sturdy vehicle helps", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote waterfall in Sundargarh district; hire a taxi from Rourkela (~55 km) or via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Similipal Tiger Reserve", distance: "~220 km", type: "Wildlife", isHidden: false, id: "similipal-tiger-reserve" },
@@ -73805,6 +73819,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹1,200–₹2,500 round trip", notes: "Easily arranged from Bhubaneswar or Cuttack", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Rural lake in Cuttack district; hire a taxi from Cuttack (~55 km) or via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Tikarapara (Satkosia Gorge)", distance: "~100 km", type: "Wildlife", isHidden: false, id: "tikarapara-satkosia" },
@@ -73861,6 +73876,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Cab", cost: "₹600–₹1,500 from Bhubaneswar or Puri", notes: "Easily arranged as a stop on the Bhubaneswar-Puri road", available: true },
+      { mode: "Ola / Uber", cost: "₹150–300 from Bhubaneswar or Puri", notes: "On the Bhubaneswar–Puri highway; decent coverage.", available: true },
     ],
     nearbyPlaces: [
       { name: "Raghurajpur Heritage Village", distance: "~20 km", type: "Arts & Crafts", isHidden: false, id: "raghurajpur-heritage-village" },
@@ -74095,6 +74111,7 @@ export const DESTINATIONS: Destination[] = [
     localTransport: [
       { mode: "Ropeway / Steps / Road", cost: "₹100–₹300 for the ropeway", notes: "Choose between the motorable road, ropeway, or the 999-step climb", available: true },
       { mode: "Uber (to the temple base from Berhampur)", cost: "₹300–₹700", notes: "Uber is confirmed operating in Berhampur; Ola's local coverage here is less certain", available: true },
+      { mode: "Ola / Uber", cost: "₹300–500 from Berhampur", notes: "Coverage is centred on Berhampur (~30 km); the final hilltop stretch is by ropeway or on foot.", available: true },
     ],
     nearbyPlaces: [
       { name: "Gopalpur-on-Sea", distance: "~30 km", type: "Beach", isHidden: false, id: "gopalpur-on-sea" },
@@ -74383,6 +74400,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Auto Rickshaw / Local Cab", cost: "₹100–₹400 within Paradip", notes: "Easily arranged in town", available: true },
+      { mode: "Ola / Uber", cost: "₹100–250 within town", notes: "Some coverage within Paradip town; less reliable outside it.", available: true },
     ],
     nearbyPlaces: [
       { name: "Chandipur Beach", distance: "~180 km", type: "Beach", isHidden: false, id: "chandipur-beach" },
@@ -74846,6 +74864,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Resort Transfers", cost: "Included with booking", notes: "Arranged through the resort/forest department", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote riverside camp; transport is arranged by the resort.", available: false },
     ],
     nearbyPlaces: [
       { name: "Tikarapara (Satkosia Gorge)", distance: "~35 km", type: "Wildlife", isHidden: false, id: "tikarapara-satkosia" },
@@ -74902,6 +74921,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Safari Jeep", cost: "₹1,500–₹3,500 per jeep, shared among a group", notes: "Book through the forest department; permits are mandatory", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote sanctuary near Hirakud; no app-cab coverage — arrange a jeep through the sanctuary office or via Sambalpur (~40 km).", available: false },
     ],
     nearbyPlaces: [
       { name: "Samaleswari Temple", distance: "~50 km", type: "Pilgrimage", isHidden: false, id: "samaleswari-temple" },
@@ -74958,6 +74978,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab / Local Guide", cost: "₹1,500–₹3,000 for local waterfall/trail circuits", notes: "Best arranged through the nature camp", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote hill town in Kandhamal district; hire a taxi from Berhampur (~140 km) or via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Tara Tarini Temple", distance: "~100 km", type: "Pilgrimage", isHidden: false, id: "tara-tarini-temple" },
@@ -75014,6 +75035,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹1,500–₹3,000 round trip from Keonjhar", notes: "Roads into the forest belt can be rough", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote waterfall in the Keonjhar forests; hire a taxi from Keonjhar town or via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Khandadhar Falls", distance: "~53 km", type: "Waterfall", isHidden: false, id: "khandadhar-falls" },
@@ -75070,6 +75092,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Hired Cab", cost: "₹2,000–₹4,000 round trip from Baripada", notes: "Roads into the forest belt can be rough", available: true },
+      { mode: "Ola / Uber", cost: "N/A", notes: "Remote forest waterfall; no app-cab coverage — arrange a taxi via your hotel.", available: false },
     ],
     nearbyPlaces: [
       { name: "Similipal Tiger Reserve", distance: "~40 km", type: "Wildlife", isHidden: false, id: "similipal-tiger-reserve" },
