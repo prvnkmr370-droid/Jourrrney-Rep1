@@ -440,6 +440,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         selectDestination(parsed.destination, parsed.days);
         return;
       }
+      // A recognized place outside India — checked, and returned, before
+      // the fuzzy Indian-destination matcher even runs (see
+      // matchNonIndiaPlace in parseTripMessage.ts), so this never lets a
+      // short/coincidental match like "Dubai" -> "Dubdi Monastery" through
+      // as if that's what was asked for. No destination suggestions here
+      // by design — just the plain "we're India-only" fact, since offering
+      // chips right after clearly naming a specific other country reads as
+      // not having listened.
+      if (parsed.nonIndiaPlace) {
+        pushAi(
+          "We're currently focused on destinations within India — happy to help you plan a trip anywhere in India though! Where in India would you like to go?",
+        );
+        scrollToEnd();
+        return;
+      }
       // Small talk or a question about Tia/the app itself, not an attempt
       // to name a place — steer back to travel instead of running it
       // through the Gemini fallback (which would only add latency to a
