@@ -62931,6 +62931,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Metro, suburban locals, app cabs, taxis & autos", cost: "₹10–₹80 metro/local; ₹150–₹600 typical app-cab hop", notes: "Suburban locals are fastest north–south but crushingly crowded at rush hour (use ladies' compartments); the metro is growing; black-and-yellow taxis run everywhere in the south, autos only from Bandra northwards", available: true },
+      { mode: "Ola / Uber", cost: "₹100–400 depending on distance", notes: "Extensive coverage across Mumbai; expect surge pricing during rain and rush hour.", available: true },
     ],
     nearbyPlaces: [
       { name: "Elephanta Caves", distance: "~10 km by sea", type: "UNESCO Rock-Cut Caves", isHidden: false, id: "elephanta-caves" },
@@ -63070,6 +63071,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "App cabs, autos, metro & PMPML buses", cost: "₹30–₹80 auto/metro; ₹120–₹400 typical app-cab hop", notes: "Autos are metered but often negotiate; the new metro covers a few corridors; app cabs are the easy default", available: true },
+      { mode: "Ola / Uber", cost: "₹80–300 depending on distance", notes: "Widely available across Pune.", available: true },
     ],
     nearbyPlaces: [
       { name: "Sinhagad Fort", distance: "~35 km", type: "Hill Fort", isHidden: false, id: "sinhagad-fort" },
@@ -63123,6 +63125,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "Trekking", "History"],
     bestSeason: "October – February (clear, cool); June–September is greenest but the trails are slippery and misty; visit early in summer",
     duration: "Half-day (3–5 hours including the climb or drive)",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily; the road up gets crowded with weekend visitors." },
     highlights: [
       { name: "The Pune Darwaza and Kalyan Darwaza gateways on the cliff" },
       { name: "The Tanaji Malusare memorial and the Rajaram Chhatrapati samadhi" },
@@ -63346,6 +63349,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, app cabs & city buses", cost: "₹40–₹120 auto hops; ₹200–₹500 to the wineries", notes: "Autos and app cabs cover the city; the wineries are 10–20 km out, so a half-day hired cab or a winery shuttle/tour is the usual way", available: true },
+      { mode: "Ola / Uber", cost: "₹80–250 within city", notes: "Good coverage within Nashik city; less reliable near the wine estates outside town.", available: true },
     ],
     nearbyPlaces: [
       { name: "Trimbakeshwar", distance: "~28 km", type: "Jyotirlinga Temple Town", isHidden: false, id: "trimbakeshwar" },
@@ -63813,6 +63817,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Beach"],
     bestSeason: "October – March (calm seas, reliable boats); the monsoon (June–September) has rough seas and the boat crossing is often suspended; summer is hot on the coast",
     duration: "Half-day for the fort, or 1–2 days with the Murud/Kashid beaches",
+    visitingHours: { opens: "7:00 AM", closes: "5:30 PM", note: "Reached only by ferry from Rajapuri jetty; boats run on this window, weather permitting." },
     highlights: [
       { name: "The bastioned sea walls rising straight from the water — never conquered" },
       { name: "The great cannon Kalal Bangdi, Chavri and Landa Kasam on the ramparts" },
@@ -63968,6 +63973,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "App cabs, autos & the Nagpur Metro", cost: "₹20–₹60 metro/auto; ₹150–₹400 typical app-cab hop", notes: "The Metro covers two main corridors; app cabs and autos fill the rest. Reserve transfers are usually arranged by your jungle lodge", available: true },
+      { mode: "Ola / Uber", cost: "₹80–250 within city", notes: "Widely available across Nagpur.", available: true },
     ],
     nearbyPlaces: [
       { name: "Tadoba-Andhari Tiger Reserve", distance: "~140 km", type: "Tiger Reserve", isHidden: false, id: "tadoba-andhari-tiger-reserve" },
@@ -64037,6 +64043,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     localTransport: [
       { mode: "Autos, app cabs & city buses", cost: "₹30–₹120 auto hops", notes: "Autos are the default; app cabs operate; the temple, palace and Rankala are a short ride apart. A hired car suits the Panhala–Jyotiba loop", available: true },
+      { mode: "Ola / Uber", cost: "₹80–250 within city", notes: "Available within Kolhapur city; less reliable for Panhala/Jyotiba day trips.", available: true },
     ],
     nearbyPlaces: [
       { name: "Panhala Fort", distance: "~18 km", type: "Deccan Hill Fort", isHidden: false, id: "panhala-fort" },
@@ -64089,6 +64096,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "History", "Hill Retreat"],
     bestSeason: "October – February (clear, cool, best views); the monsoon (June–September) is lush and misty but the plateau roads and steps are slippery and views vanish",
     duration: "Half-day from Kolhapur, or an overnight on the plateau",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily." },
     highlights: [
       { name: "Deccan's largest fort — a ~14 km walled plateau with a living town" },
       { name: "Teen Darwaza, the Ambarkhana granaries and Andhar Bavadi well" },
@@ -65740,6 +65748,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Pilgrimage", "Temple", "Hill"],
     bestSeason: "October – March, cool and pleasant for the hill climbs and the drive; Dussehra (September–October) and Chaitra Navratri (March–April) for the festivals; avoid April–June, when the heat makes the climbs hard",
     duration: "1 day (or overnight for the festivals)",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Open daily; especially crowded during Navratri." },
     highlights: [
       { name: "Renuka Devi temple — a Maharashtra Shakti Peeth" },
       { name: "Dattatreya temple on Datta Shikhar; Anasuya Mata temple" },
