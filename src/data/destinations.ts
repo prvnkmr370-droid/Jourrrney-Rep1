@@ -61003,6 +61003,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Nature"],
     bestSeason: "October – March",
     duration: "Half day to 1 day",
+    visitingHours: { opens: "5:00 AM", closes: "10:00 PM", note: "Open daily; the Jyotirlinga shrine closes briefly for the midday and night aarti changeovers." },
     highlights: [
       { name: "The Omkareshwar Jyotirlinga on the Om-shaped Mandhata island" },
       { name: "The linked Mamleshwar temple on the far bank" },
