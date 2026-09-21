@@ -52449,7 +52449,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage near Nakti Dam — a hired private taxi from Chakradharpur is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Chaibasa", distance: "~30 km", type: "Town", isHidden: false, id: "chaibasa" },
+      { name: "Chaibasa", distance: "~30 km", type: "Town", isHidden: false },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 250, accommodation: 0, food: 150, transport: 100, activities: 50 },
@@ -52509,7 +52509,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage in the Rajmahal Hills area — a hired private taxi from Sahebganj is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Sahebganj Town", distance: "~30 km", type: "District Headquarters", isHidden: false, id: "sahebganj-town" },
+      { name: "Sahebganj Town", distance: "~30 km", type: "District Headquarters", isHidden: false },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 150, activities: 0 },
@@ -53424,7 +53424,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Chitradurga town is unconfirmed — local autos are the reliable way to reach the fort gate", available: false },
     ],
     nearbyPlaces: [
-      { name: "Jogimatti Hills", distance: "~10 km", type: "Hill Viewpoint/Forest", isHidden: true, id: "jogimatti" },
+      { name: "Jogimatti Hills", distance: "~10 km", type: "Hill Viewpoint/Forest", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 450, food: 250, transport: 60, activities: 40 },
@@ -53627,7 +53627,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Bidar is unconfirmed — local autos and taxis are the reliable way to link the spread-out sights", available: false },
     ],
     nearbyPlaces: [
-      { name: "Basavakalyana", distance: "~80 km", type: "Historic Town", isHidden: true, id: "basavakalyana" },
+      { name: "Basavakalyana", distance: "~80 km", type: "Historic Town", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 500, food: 250, transport: 100, activities: 50 },
@@ -53761,7 +53761,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber / Rapido", cost: "N/A", notes: "Not usable in this small rainforest village — local jeeps, buses, and walking cover it instead", available: false },
     ],
     nearbyPlaces: [
-      { name: "Kundadri Hill", distance: "~20 km", type: "Hill / Jain Temple", isHidden: true, id: "kundadri-hill" },
+      { name: "Kundadri Hill", distance: "~20 km", type: "Hill / Jain Temple", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 600, food: 250, transport: 100, activities: 50 },
@@ -53895,7 +53895,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "₹100–250 within town", notes: "Some Ola/Uber coverage in Sakleshpur town; unreliable for estates and trailheads outside it.", available: true },
     ],
     nearbyPlaces: [
-      { name: "Bisle Ghat Viewpoint", distance: "~45 km", type: "Viewpoint", isHidden: true, id: "bisle-ghat" },
+      { name: "Bisle Ghat Viewpoint", distance: "~45 km", type: "Viewpoint", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 800, food: 250, transport: 100, activities: 50 },
@@ -54030,7 +54030,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in this small village is unconfirmed — a bus or hired taxi from Belagavi/Hubballi is the practical option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Belagavi", distance: "~50 km", type: "Fort City", isHidden: true, id: "belagavi" },
+      { name: "Belagavi", distance: "~50 km", type: "Fort City", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 550, food: 200, transport: 100, activities: 50 },
@@ -54367,7 +54367,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "Not usable this deep in the Eastern Ghats forest — buses and a hired taxi are the only way in", available: false },
     ],
     nearbyPlaces: [
-      { name: "Hogenakkal Falls (Tamil Nadu border)", distance: "~90 km", type: "Waterfall", isHidden: true, id: "hogenakkal-falls" },
+      { name: "Hogenakkal Falls (Tamil Nadu border)", distance: "~90 km", type: "Waterfall", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 450, food: 200, transport: 100, activities: 50 },
@@ -54765,7 +54765,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "App coverage in Kolar town is unconfirmed — local autos and a hired taxi cover the spread-out sights reliably", available: false },
     ],
     nearbyPlaces: [
-      { name: "Antaragange", distance: "~5 km", type: "Cave Hill", isHidden: true, id: "antaragange" },
+      { name: "Antaragange", distance: "~5 km", type: "Cave Hill", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 700, accommodation: 400, food: 200, transport: 100, activities: 0 },
@@ -55568,7 +55568,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab coverage up the ghat — a taxi or hired jeep from Palakkad/Nemmara is the only option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Pothundy Dam", distance: "~20 km (on the approach)", type: "Dam / Garden", isHidden: true, id: "pothundy-dam" },
+      { name: "Pothundy Dam", distance: "~20 km (on the approach)", type: "Dam / Garden", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 350, transport: 300, activities: 50 },
@@ -56435,7 +56435,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "Not usable in this forest resort area — transfers between the town, rafting put-in, and camps are arranged by the resorts", available: false },
     ],
     nearbyPlaces: [
-      { name: "Syntheri Rocks", distance: "~25 km", type: "Rock Formation", isHidden: true, id: "syntheri-rocks" },
+      { name: "Syntheri Rocks", distance: "~25 km", type: "Rock Formation", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 900, food: 400, transport: 200, activities: 500 },
@@ -56502,7 +56502,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "Not usable on the rough track to the trek base — homestay jeeps handle this leg", available: false },
     ],
     nearbyPlaces: [
-      { name: "Kalasa", distance: "~20 km", type: "Temple Town", isHidden: true, id: "kalasa" },
+      { name: "Kalasa", distance: "~20 km", type: "Temple Town", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 250, activities: 50 },
@@ -56905,7 +56905,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "₹1,000–₹2,000 one-way from Bengaluru", notes: "Can reach Sangama itself, though the final river crossing to the gorge is by tractor or on foot, not by app cab", available: true },
     ],
     nearbyPlaces: [
-      { name: "Bheemeshwari", distance: "~35 km (river route longer)", type: "River Camp / Bird Area", isHidden: true, id: "bheemeshwari" },
+      { name: "Bheemeshwari", distance: "~35 km (river route longer)", type: "River Camp / Bird Area", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 150, activities: 0 },
@@ -60495,7 +60495,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Bangaram Island", distance: "~8 km (boat/helicopter transfer)", type: "Resort Island", isHidden: false, id: "bangaram" },
-      { name: "Thinnakara Island", distance: "~8 km (boat transfer via Bangaram lagoon)", type: "Tented Island", isHidden: false, id: "thinnakara" },
+      { name: "Thinnakara Island", distance: "~8 km (boat transfer via Bangaram lagoon)", type: "Tented Island", isHidden: false },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 6000, accommodation: 3500, food: 1200, transport: 1000, activities: 300 },
@@ -60560,7 +60560,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "No app-cab service anywhere in Lakshadweep — there's no road network for it; the whole island is walked", available: false },
     ],
     nearbyPlaces: [
-      { name: "Thinnakara Island", distance: "Same lagoon (~15–20 min by boat)", type: "Tented Island", isHidden: false, id: "thinnakara" },
+      { name: "Thinnakara Island", distance: "Same lagoon (~15–20 min by boat)", type: "Tented Island", isHidden: false },
       { name: "Agatti Island", distance: "~8 km (transfer point)", type: "Gateway Island", isHidden: false, id: "agatti" },
     ],
     budgetBreakdown: [
@@ -66656,7 +66656,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Ola / Uber", cost: "N/A", notes: "Neither Ola nor Uber operates in Ukhrul district — a hired vehicle from Imphal or in Ukhrul town is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Khangkhui Lime Caves", distance: "~15 km", type: "Prehistoric Cave", isHidden: true, id: "khangkhui-lime-caves" },
+      { name: "Khangkhui Lime Caves", distance: "~15 km", type: "Prehistoric Cave", isHidden: true },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
