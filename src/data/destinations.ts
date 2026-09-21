@@ -58361,6 +58361,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Engineering", "Scenic"],
     bestSeason: "The dam itself opens only for a limited season, usually April – June; the reservoir viewpoints are best October – March",
     duration: "Half day",
+    visitingHours: { opens: "10:00 AM", closes: "4:45 PM", note: "KSEB-run viewing gallery; closed on Mondays and during heavy monsoon releases." },
     highlights: [
       { name: "A ~168 m double-curvature arch dam — among Asia's first and tallest" },
       { name: "The Idukki–Cheruthoni–Kulamavu system and the ~2-billion-tonne reservoir" },
