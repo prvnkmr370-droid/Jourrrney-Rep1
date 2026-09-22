@@ -81506,6 +81506,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "anandgarh-fort-anandpur-sahib",
+    name: "Anandgarh Fort (Qila Anandgarh Sahib)",
+    state: "Punjab",
+    tagline: "One of Five Forts Guru Gobind Singh Ji Built to Defend Anandpur Sahib",
+    description: "Anandgarh Fort, one of five defensive forts Guru Gobind Singh Ji began constructing around Anandpur Sahib in 1689, was built to protect the Sikh community from repeated attacks by the Mughal Empire and neighboring hill Rajas. Alongside Keshgarh (now the Takht at the center), Lohgarh ('fort of steel'), Holgarh ('fort of colour') and Fatehgarh ('fort of victory'), the forts were linked by earthworks and underground tunnels and took over a decade to complete. It was here that Guru Gobind Singh Ji himself mastered the use of arms. Reconstructed and restored in 1970 while retaining traces of the original structure, the fort today houses its own Gurdwara and remains an important stop for understanding the martial history behind the birth of the Khalsa.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Gurudwara_Qila_Anandgarh_Sahib%2C_Anandpur_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Gurudwara_Qila_Anandgarh_Sahib%2C_Anandpur_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/cc/Gurudwara_Qila_Anandgarh_Sahib%2C_Anandpur_Sahib.jpg"],
+    imageCredit: "Photo: banmeet singh — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Daylight hours. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "One of five forts built by Guru Gobind Singh Ji from 1689" },
+      { name: "Where the Guru himself mastered the use of arms" },
+      { name: "Linked to the other forts by earthworks and underground tunnels" },
+      { name: "Houses its own Gurdwara" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rupnagar or Chandigarh, then to Sri Anandpur Sahib", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~40 km / 1h from Rupnagar", costRange: "₹1,000–₹2,200 round trip by cab from Chandigarh", tips: "Within Sri Anandpur Sahib, part of the Five Forts circuit." },
+    ],
+    accommodation: [
+      { type: "Anandpur Sahib / Rupnagar Hotels", priceRange: "₹800–₹5,000/night", examples: ["A range of pilgrim guesthouses and hotels"], description: "A well-established pilgrimage town with plentiful accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Anandpur Sahib", notes: "Standard way to reach the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Takht Sri Keshgarh Sahib", distance: "Within Anandpur Sahib", type: "Spiritual", isHidden: false, id: "takht-keshgarh-sahib-anandpur-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4800, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birthplace of the Khalsa", morning: "Takht Sri Keshgarh Sahib and Virasat-e-Khalsa.", afternoon: "Anandgarh Fort and the rest of the Five Forts circuit.", evening: "Return to accommodation.", stay: "Anandpur Sahib", meals: "Langar at the Takht", tips: "Combine with visits to the other four forts for the full martial-history picture." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A significant heritage site within the well-managed Anandpur Sahib pilgrimage town"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The fort and Gurdwara grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2800,
+    mustEat: ["Free langar in Anandpur Sahib"],
+    packingTips: ["Comfortable walking shoes", "A scarf or head covering for the Gurdwara"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
