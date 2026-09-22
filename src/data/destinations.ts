@@ -79155,6 +79155,66 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the large grounds"],
   },
 
+  {
+    id: "thatheras-jandiala-guru",
+    name: "Thatheras of Jandiala Guru",
+    state: "Punjab",
+    tagline: "India's First UNESCO Intangible Cultural Heritage — A Living Brass-Craft Community",
+    description: "Jandiala Guru, in Amritsar district, is home to a community of Thatheras — traditional metalsmiths who hand-beat brass, copper and bell-metal into everyday utensils using techniques passed down through generations. In 2014, this craft became India's first inscription on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. The market, marked by its own decorative entrance gate, still hosts working thathera workshops where visitors can watch artisans hammering sheet metal into vessels by hand, offering a rare, still-living look at a centuries-old trade rather than a museum reconstruction of it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Entrance_gate_of_the_Thathera_market_of_Jandiala_Guru._01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Entrance_gate_of_the_Thathera_market_of_Jandiala_Guru._01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2a/Entrance_gate_of_the_Thathera_market_of_Jandiala_Guru._01.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY 4.0.",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Workshop hours vary by artisan; visiting on a weekday morning gives the best chance of seeing active work. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "India's first craft inscribed on UNESCO's Intangible Cultural Heritage list (2014)" },
+      { name: "Working thathera workshops hand-beating brass and copper utensils" },
+      { name: "A distinctive decorated entrance gate marking the historic market" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Amritsar, then ~25km to Jandiala Guru", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "~25 km / 40min-1h from Amritsar", costRange: "₹500–₹1,200 round trip by cab from Amritsar", tips: "On the Amritsar–Jalandhar road, in Amritsar district." },
+    ],
+    accommodation: [
+      { type: "Amritsar Hotels", priceRange: "₹800–₹18,000/night", examples: ["Stay in Amritsar city, day-trip to Jandiala Guru"], description: "No dedicated tourist accommodation in Jandiala Guru itself — visit as a day trip from Amritsar." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach and explore the market area", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "Availability can be limited outside central Amritsar", notes: "Book return pickup in advance if relying on app cabs", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~25 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 700, food: 300, transport: 600, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4900, accommodation: 2800, food: 700, transport: 1000, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11700, accommodation: 8500, food: 1200, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Punjab's Living Crafts", morning: "Depart Amritsar for Jandiala Guru.", afternoon: "Visit the Thathera market and watch working artisans; consider buying a hand-beaten piece directly from a craftsman.", evening: "Return to Amritsar.", stay: "Amritsar city", meals: "Local dhaba food en route", tips: "Weekday mornings offer the best chance to see artisans actively at work." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A working local market with an established daily routine"],
+      precautions: ["A small-town market area with less tourist infrastructure than central Amritsar — go during daylight hours", "Arrange return transport in advance given limited app-cab coverage"],
+      soloTips: ["Best visited as part of a day trip with pre-arranged transport rather than relying on finding a cab back"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The main market street during daytime hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 900,
+    mustEat: ["Local dhaba food in Jandiala Guru"],
+    packingTips: ["Cash for purchasing handcrafted brass/copper items directly from artisans", "Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
