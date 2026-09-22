@@ -658,6 +658,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Sambhar Lake", distance: "70 km", type: "Nature", isHidden: true, id: "sambhar-lake" },
       { name: "Jawahar Kala Kendra", distance: "5 km", type: "Culture", isHidden: true, id: "jawahar-kala-kendra" },
       { name: "Jawahar Circle (Patrika Gate)", distance: "6 km", type: "Culture", isHidden: true, id: "jawahar-circle" },
+      { name: "Jagat Shiromani Temple", distance: "11 km", type: "Spiritual", isHidden: true, id: "jagat-shiromani-temple" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24631,6 +24632,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9200,
     mustEat: ["Street snacks near the park entrance"],
     packingTips: ["Comfortable walking shoes", "Camera for evening illumination"],
+  },
+
+  {
+    id: "jagat-shiromani-temple",
+    name: "Jagat Shiromani Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sri Jagat Siromani Temple"],
+    tagline: "A Krishna Temple in Amer Said to Hold Meera Bai's Own Idols",
+    description: "Jagat Shiromani Temple stands in Amer, built between approximately 1599 and 1608 by Queen Kanakwati, wife of Raja Man Singh I, in memory of their son Jagat Singh, who died young. Dedicated principally to Krishna and Vishnu, the temple is popularly believed to house the very idols once worshipped by the poet-saint Meera Bai, adding a layer of devotional significance beyond its architecture. Its design blends Jain, Hindu, Mughal, and South Indian architectural influences, visible in the carved toran gateway flanked by stone elephants and the layered shikhara towers, making it a genuinely distinctive stop in the Amer area beyond the fort itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jagat_Shiromani_Mandir_Amer_%E0%A4%9C%E0%A4%97%E0%A4%A4_%E0%A4%B6%E0%A4%BF%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%A3%E0%A5%80_%E0%A4%AE%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%B0_%282022%29_-_img_02.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jagat_Shiromani_Mandir_Amer_%E0%A4%9C%E0%A4%97%E0%A4%A4_%E0%A4%B6%E0%A4%BF%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%A3%E0%A5%80_%E0%A4%AE%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%B0_%282022%29_-_img_02.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7f/Jagat_Shiromani_Mandir_Amer_%E0%A4%9C%E0%A4%97%E0%A4%A4_%E0%A4%B6%E0%A4%BF%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%A3%E0%A5%80_%E0%A4%AE%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%B0_%282022%29_-_img_02.jpg"],
+    imageCredit: "Photo: Chainwit. — Wikimedia Commons, CC BY 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – February",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built c. 1599–1608 by Queen Kanakwati in memory of Jagat Singh" },
+      { name: "Popularly believed to house idols once worshipped by Meera Bai" },
+      { name: "Jain-Hindu-Mughal-South Indian architectural blend" },
+      { name: "Carved toran gateway flanked by stone elephants" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "In Amer town, near Amber Fort", costRange: "₹200–₹500 by auto/cab from Jaipur", tips: "Easy to combine with an Amber Fort visit since it's in the same town." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited as part of an Amer/Amber Fort day trip." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 from Jaipur", notes: "Standard way to reach Amer town", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable from Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Amber Fort", distance: "~1 km", type: "Heritage", isHidden: true, id: "amber-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 400, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 3000, food: 1000, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24400, accommodation: 20000, food: 2500, transport: 700, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Amer Heritage Trail", morning: "Amber Fort.", afternoon: "Jagat Shiromani Temple in Amer town.", evening: "Nahargarh Fort at sunset.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "Dress modestly; footwear is removed before entering the sanctum." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An active temple within Amer town, with regular visitor and devotee footfall"],
+      precautions: ["Dress modestly", "Standard temple-visit precautions"],
+      soloTips: ["Comfortable for solo daytime visits, especially combined with the well-trafficked Amber Fort route"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 3800,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
   },
 
   {
