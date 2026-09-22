@@ -80922,6 +80922,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "ranjit-sagar-dam-pathankot",
+    name: "Ranjit Sagar Dam",
+    state: "Punjab",
+    tagline: "One of Northern India's Largest Hydroelectric Reservoirs, Ringed by the Shivalik Foothills",
+    description: "Ranjit Sagar Dam, near Shahpurkandi in Pathankot district, is one of the largest hydroelectric projects in northern India, built on the Ravi River at the point where Punjab meets the hills of Jammu & Kashmir. The reservoir stretches out beneath forested Shivalik hills, its scale and setting making it one of the district's most striking natural sights — a favorite for sightseeing, photography, and boating. As a working dam at a sensitive border-adjacent location, it also has a quieter, more functional character than Punjab's more crowded tourist sites, appealing to visitors looking for open water and hill views rather than a bustling attraction.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Ranjit_Sagar_Dam_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Ranjit_Sagar_Dam_1.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/5d/Ranjit_Sagar_Dam_1.jpg"],
+    imageCredit: "Photo: Vikramaadityasumbria — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "1.5–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Daylight hours. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "One of northern India's largest hydroelectric projects, on the Ravi River" },
+      { name: "A vast reservoir ringed by forested Shivalik hills" },
+      { name: "Boating and sightseeing near Shahpurkandi" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Pathankot Junction/Cantonment", fromMumbai: "Direct connections available", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,500", tips: "Near Shahpurkandi, in Pathankot district." },
+    ],
+    accommodation: [
+      { type: "Pathankot City Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["A range of hotels given Pathankot's role as a Himalayan gateway"], description: "Most visitors stay in Pathankot city and day-trip to the dam." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 round trip from Pathankot", notes: "Most practical way to reach the dam", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mukteshwar Mahadev Temple", distance: "On the same Shahpurkandi road", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 1200, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Pathankot Himalayan Gateway", morning: "Ranjit Sagar Dam sightseeing and boating.", afternoon: "Mukteshwar Mahadev Temple on the same road.", evening: "Return to Pathankot city.", stay: "Pathankot city", meals: "Stuffed parathas, dal tarka, muttar paneer", tips: "Good spot for photography, especially in the softer light of early morning or late afternoon." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A managed dam site, though remote given its location near the Jammu & Kashmir border"],
+      precautions: ["A sensitive border-adjacent infrastructure site — carry ID and follow posted signage/restrictions", "Some areas may have restricted access for security reasons"],
+      soloTips: ["Comfortable for solo visitors during daylight hours; best visited with pre-arranged transport"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["Publicly accessible viewpoints and boating areas"],
+      avoidAreas: ["Restricted dam infrastructure areas"],
+    },
+    rating: 4.5,
+    reviews: 2600,
+    mustEat: ["Local dhaba food en route"],
+    packingTips: ["Government-issued photo ID (border-adjacent area)", "Comfortable walking shoes", "Light jacket — can be breezy near the water"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

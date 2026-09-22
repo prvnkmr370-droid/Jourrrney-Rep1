@@ -1,0 +1,29 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/pathankot/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Pathankot",
+  "about": "Northernmost Punjab district, where Punjab, Himachal Pradesh and Jammu & Kashmir meet. Gateway to Dalhousie, Dharamshala, Kangra, Chamba. Ancient name Audumbar; historically part of Nurpur State.",
+  "places": [
+    { "name": "Ranjit Sagar Dam", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Near Shahpurkandi, Pathankot district", "facts": "One of the largest hydroelectric projects in northern India, on the Ravi River; boating, sightseeing." },
+    { "name": "Kathlour Wildlife Sanctuary", "timings": "Daylight hours", "entryFee": "Check with Punjab Forest Department", "location": "Pathankot district", "facts": "Shivalik foothills sanctuary with deer, porcupines, pangolins, reptiles, birds." },
+    { "name": "Mukteshwar Mahadev Temple", "timings": "Daylight hours", "entryFee": "Free", "location": "Shahpurkandi Road, ~22km from Pathankot", "facts": "Shiva temple with caves associated with the Pandavas' exile; large Shivratri and Mukesran Da Mela crowds." },
+    { "name": "Gurudwara Shri Barth Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Barth Village, ~12km from Pathankot", "facts": "Associated with Baba Sri Chand Ji, son of Guru Nanak Dev Ji." },
+    { "name": "Shahpurkandi Fort", "timings": "Daylight hours", "entryFee": "Check locally", "location": "~7km from Pathankot city", "facts": "16th-century fort built by Rajput ruler Jaspal Singh Pathania; associated with Ram Singh Pathania's 1848 resistance against the British." },
+    { "name": "Dhar Nature Retreat and Awareness Camp", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Dhar Kalan, Pathankot", "facts": "Eco-tourism site in the Shivalik foothills; camping, nature education." },
+    { "name": "Atal Setu", "timings": "Open throughout the day", "entryFee": "Free", "location": "Near Dunera, Pathankot", "facts": "Modern cable-stayed bridge, a major photography landmark." },
+    { "name": "Nurpur Fort", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Near Pathankot, near Punjab-Himachal border", "facts": "Heritage fort of the former Nurpur rulers." }
+  ],
+  "howToReach": {
+    "air": "Pathankot Airport (IXP), domestic, flights to Delhi; Amritsar international airport ~119km",
+    "rail": "Pathankot Cantonment and Pathankot Junction",
+    "road": "Amritsar (110km), Jammu (105km), Dharamshala (85km), Dalhousie (80km), Chandigarh (250km)"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Civil Hospital Pathankot"],
+    "emergencyNumbers": { "emergency": "112", "ambulance": "108", "womenHelpline": "1091", "childHelpline": "1098" },
+    "punjabGrievanceHelpline": "1100"
+  }
+}
