@@ -749,6 +749,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Longewala War Memorial", distance: "120 km", type: "History", isHidden: true },
       { name: "Jaisalmer War Museum", distance: "~10 km", type: "History", isHidden: true, id: "jaisalmer-war-museum" },
       { name: "Tanot Mata Temple", distance: "120 km", type: "Spiritual", isHidden: true, id: "tanot-mata-temple" },
+      { name: "Mandir Palace (Badal Mahal)", distance: "In city", type: "Heritage", isHidden: true, id: "mandir-palace-jaisalmer" },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
@@ -1245,6 +1246,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5400,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Valid photo ID", "Modest clothing", "Water and snacks for the long drive"],
+  },
+
+  {
+    id: "mandir-palace-jaisalmer",
+    name: "Mandir Palace (Badal Mahal)",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Badal Vilas"],
+    tagline: "A Pagoda-Style Cloud Palace Tower, Shaped Like a Muharram Float",
+    description: "Mandir Palace, whose five-storeyed centrepiece is known as the Badal Mahal (Cloud Palace), was the residence of Jaisalmer's ruling family before independence and remains partly occupied by descendants today. Its most distinctive feature is the pagoda-like Tazia Tower, carved by Muslim craftsmen in the form of a tazia — a decorated float traditionally carried in Muharram processions — an unusual and genuinely cross-cultural architectural choice for a Hindu royal residence. Each floor carries intricately carved balconies, and the tower remains one of the more visually striking silhouettes in Jaisalmer's old-city skyline alongside the fort itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/74/Mandir_Palace_aka_Badal_Vilas_Jaisalmer.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/74/Mandir_Palace_aka_Badal_Vilas_Jaisalmer.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/74/Mandir_Palace_aka_Badal_Vilas_Jaisalmer.jpg"],
+    imageCredit: "Photo: Sougata Bhar — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Part of the palace remains a private residence/heritage hotel. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Five-storeyed Badal Mahal (Cloud Palace)" },
+      { name: "Pagoda-like Tazia Tower, carved by Muslim craftsmen" },
+      { name: "Intricately carved balconies on each floor" },
+      { name: "Former residence of Jaisalmer's ruling family" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "Old city, Jaisalmer", costRange: "₹30–₹100 by auto within Jaisalmer", tips: "Easy to combine with the havelis and Gadisar Lake in a single old-city walk." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort", "Mandir Palace itself (heritage hotel wing)"], description: "Central old-city location." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Best way to explore the old-city lanes", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100 within Jaisalmer", notes: "Standard for short hops", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gadisar Lake", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "gadisar-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 150, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4100, accommodation: 2200, food: 800, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 17800, accommodation: 13000, food: 2000, transport: 1000, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City Palaces & Havelis", morning: "Jaisalmer Fort.", afternoon: "Mandir Palace and Badal Mahal, then the old-city havelis.", evening: "Gadisar Lake at sunset.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "Best photographed from the street below in late afternoon light." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known landmark within the busy old-city lanes"],
+      precautions: ["Dress conservatively", "Standard old-city bazaar precautions"],
+      soloTips: ["Comfortable for solo daytime visits given the steady tourist flow through the old-city circuit"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The old-city lanes during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 2900,
+    mustEat: ["Ker Sangri", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing", "Camera"],
   },
 
   {
