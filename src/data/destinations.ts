@@ -723,7 +723,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Adventure"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: [{ name: "Jaisalmer Fort (Sonar Qila) — a living fort" }, { name: "Patwon Ki Haveli" }, { name: "Sam Sand Dunes at sunset" }, { name: "Gadisar Lake" }, { name: "Kuldhara abandoned village" }],
+    highlights: [{ name: "Jaisalmer Fort (Sonar Qila) — a living fort" }, { name: "Patwon Ki Haveli", id: "patwon-ki-haveli" }, { name: "Sam Sand Dunes at sunset" }, { name: "Gadisar Lake" }, { name: "Kuldhara abandoned village" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Delhi Sarai Rohilla–Jaisalmer Express — ~17–18h", fromMumbai: "Via Jodhpur — 24h+", fromBangalore: "Via Jodhpur — 30h+", duration: "17h+ from Delhi; ~5–6h from Jodhpur", costRange: "₹400–₹2,000", tips: "Jodhpur is the better-connected hub — many travellers train to Jodhpur first, then take a shorter onward train or bus." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48/NH11 — 12–14h", fromMumbai: "Via Jodhpur — 20h+", fromBangalore: "—", duration: "~5–6h from Jodhpur (285 km)", costRange: "₹2,500–₹5,000 cab / ₹400–₹700 bus from Jodhpur", tips: "The Jodhpur–Jaisalmer highway is well-maintained; buses run frequently and are a comfortable, cheap option." },
@@ -748,6 +748,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Desert National Park", distance: "40 km", type: "Wildlife", isHidden: true },
       { name: "Longewala War Memorial", distance: "120 km", type: "History", isHidden: true },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: false },
+      { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 150 },
@@ -773,6 +774,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9800,
     mustEat: ["Ker Sangri", "Dal Baati Churma", "Gatte ki Sabzi", "Bajre ki Roti", "Makhaniya Lassi"],
     packingTips: ["Sunscreen and sunglasses (harsh desert sun)", "Scarf/cloth to cover face during dust", "Warm layer for cold desert nights", "Sturdy closed shoes for dune walks", "Reusable water bottle — dehydration risk is real"],
+  },
+
+  {
+    id: "patwon-ki-haveli",
+    name: "Patwon Ki Haveli",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Jaisalmer's Grandest Merchant Mansion, Five Storeys of Carved Sandstone",
+    description: "Patwon Ki Haveli, an ASI-protected monument tucked into a narrow street of Jaisalmer's old city, is among the largest and most elaborately carved havelis in the city — a five-storey complex actually built up from five separate havelis by the sons of a wealthy trader named Guman Chand Patwa in the early 19th century. Though it has lost some of its original grandeur, surviving interior paintings and mirror work give a sense of the wealth once concentrated here through the trans-desert trade routes that made Jaisalmer's merchant families rich. The facade's dense stonework, with balconies and jharokhas covering nearly every surface, remains one of the most photographed sights in the old city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Jaisalmer-Patwon_ki_Haveli-01-20131010.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Jaisalmer-Patwon_ki_Haveli-01-20131010.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/c0/Jaisalmer-Patwon_ki_Haveli-01-20131010.jpg"],
+    imageCredit: "Photo: Daniel VILLAFRUELA — Wikimedia Commons, CC BY-SA 3.0. ASI monument S-RJ-146; structured data confirms it depicts Patwon Ki Haveli.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by the sons of trader Guman Chand Patwa, early 19th century" },
+      { name: "Five-storey complex of five interconnected havelis" },
+      { name: "Surviving interior paintings and mirror work" },
+      { name: "One of Jaisalmer's most densely carved facades" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "Old city, Jaisalmer", costRange: "₹30–₹100 by auto within Jaisalmer", tips: "Combine with Nathmal Ki Haveli and Salim Singh Ki Haveli — all three are within walking distance." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort", "Haveli-style mid-range hotels"], description: "Central old-city location, walkable from the fort." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Best way to explore the old-city haveli lanes", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100 within Jaisalmer", notes: "Standard for short hops", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "In city", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 600, food: 300, transport: 200, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4300, accommodation: 2200, food: 800, transport: 500, activities: 800 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 18300, accommodation: 13000, food: 2000, transport: 1500, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City Havelis", morning: "Jaisalmer Fort.", afternoon: "Patwon Ki Haveli, Nathmal Ki Haveli, and Salim Singh Ki Haveli.", evening: "Gadisar Lake at sunset.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "Some sections charge a small entry fee for the interior — worth it for the mirror work." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known tourist site within the busy old-city haveli lanes"],
+      precautions: ["Dress conservatively — desert-town conservatism is stronger than in Jaipur/Udaipur", "Standard old-city bazaar precautions"],
+      soloTips: ["Comfortable for solo daytime visits given the steady tourist flow through the old-city haveli circuit"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The haveli lanes during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 7200,
+    mustEat: ["Ker Sangri", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Modest clothing", "Camera"],
   },
 
   {

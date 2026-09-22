@@ -1,0 +1,34 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/jaisalmer.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-23",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Jaisalmer",
+  "about": "Founded 1156 by Rawal Jaisal, eldest heir of the Rawal of Deoraj, passed over for the throne of Lodurva; guided by sage Eesul to the site per a Krishna prophecy of the Yaduvanshi clan. 'Golden City', close to the Pakistan border and the Thar Desert. Wood Fossil Park (Akal) 180-million-year-old fossils 15km away.",
+  "places": [
+    { "name": "Laser Water Show at Gadisar Lake", "location": "Gadisar Lake, Jaisalmer", "facts": "One of the first/largest laser water shows in India; water-screen projection mapping via 3-chip DLP 25,000-lumen projectors; depicts the founding of Jaisalmer, fort battles, Tanot Mata Temple, Lodruva Temple, Laxminarayan Temple, and Longewala war scenes." },
+    { "name": "Jaisalmer Fort (Sonar Quila)", "location": "Central Jaisalmer", "facts": "'Golden Fort'; UNESCO World Heritage Site; living fort with shops, hotels, and havelis still inhabited; built by local craftsmen in classic Rajput style; featured in Satyajit Ray's Feluda story/film Sonar Kella." },
+    { "name": "Jaisalmer Government Museum", "location": "Jaisalmer", "facts": "Run by the Department of Archaeology and Museums; notable Godawan (Great Indian Bustard, Rajasthan's state bird) trophy display; traditional household items, rock-cut crockery, jewellery, 7th-9th century AD statues." },
+    { "name": "Nathmal Ji Ki Haveli", "location": "Jaisalmer", "facts": "Built 19th century by two architect brothers working from opposite sides, resulting in near-symmetrical construction; miniature-style paintings; carved yellow sandstone elephants." },
+    { "name": "Salim Singh Ki Haveli", "location": "Jaisalmer", "facts": "Built first half of the 18th century; still partly occupied by descendants; high arched roof supported by peacock-shaped carved brackets; legend says two upper wooden storeys were demolished on the Maharaja's order to keep it shorter than the royal palace." },
+    { "name": "Patwon Ki Haveli", "location": "Narrow street, Jaisalmer", "facts": "Among the largest, most elaborately carved havelis in Jaisalmer; five-storey structure; some interior paintings and mirror work survive despite losing some of its original grandeur." },
+    { "name": "Mandir Palace (Badal Mahal / Cloud Palace)", "location": "Jaisalmer", "facts": "Five-storey palace with pagoda-like Tazia Tower, built by Muslim craftsmen in the shape of a Muharram procession float (Tazia); intricately carved balconies on each floor." },
+    { "name": "Jain Temples of Jaisalmer", "location": "Inside Jaisalmer Fort", "facts": "Date to 12th-15th centuries; dedicated to Tirthankaras Rikhabdevji and Shambhavdevji; carved from yellow sandstone in the Dilwara architectural style." },
+    { "name": "Bada Bagh (Barabagh)", "location": "~6 km north of Jaisalmer", "facts": "Garden complex with royal Jaisalmer chhatris (cenotaphs), including that of Jai Singh II; known sunset viewpoint." },
+    { "name": "Desert National Park", "location": "Jaisalmer region", "facts": "Sand dunes, jagged rocks, salt lake bottoms; blackbuck, chinkara, desert fox; Great Indian Bustard; winter raptor migrants (Himalayan/Eurasian Griffon Vulture, Eastern Imperial Eagle, Saker Falcon)." },
+    { "name": "Kuldhara", "location": "~18 km from Jaisalmer", "facts": "Abandoned village, legend says ~85 villages of Paliwal Brahmins vanished overnight in the 1800s fleeing an unscrupulous minister; remains uninhabited and a popular 'mystery' tourist site." },
+    { "name": "Tanot Mata Temple", "location": "~120 km from Jaisalmer", "facts": "Tanot Mata considered a reincarnation of Goddess Hinglaj; folklore holds that shells/bombs fired at the temple during the 1965 India-Pakistan war did not explode; rebuilt post-war and now managed by a BSF Trust." },
+    { "name": "Ramdevra Temple", "location": "12 km from Pokhran, on the Jodhpur-Jaisalmer route", "facts": "Dedicated to saint Baba Ramdevji (commonly mistaken for a Ram temple); marks his resting place; large Ramdevra Fair held Aug-Sept with all-night devotional singing." },
+    { "name": "Jaisalmer War Museum", "location": "Jaisalmer military base, Jaisalmer-Jodhpur Highway", "facts": "Commemorates 1965 war and 1971 Longewala battle; captured tanks, war memorabilia, audio-visual room, interview footage with Major Kuldip Singh Chandpuri (Longewala); IAF Hunter aircraft used in the Battle of Longewala; free entry." },
+    { "name": "Longewala War Memorial", "location": "Longewala, Desert Corps area", "facts": "Commemorates the 4 December 1971 Battle of Longewala where ~100 Indian defenders held off ~2,000 Pakistani soldiers and 60 tanks." },
+    { "name": "Akal Wood Fossil Park", "location": "~17 km from Jaisalmer, towards Barmer", "facts": "21-hectare protected area; 180-million-year-old fossilized tree trunks from a submerged Jurassic-era forest; ~25 fossilized tree specimens under corrugated-iron shelters; visitors can touch a fossilized red-wood trunk near the entrance." },
+    { "name": "Vyas Chhatri", "location": "Bada Bagh, Jaisalmer", "facts": "Old Brahmin cemetery/cenotaph cluster dedicated to sage Ved Vyas (author of the Mahabharata); popular sunset point with golden sandstone carved chhatris; local musicians often play the algoza (double flute) here." },
+    { "name": "Amar Sagar Lake", "location": "~7 km west of Jaisalmer", "facts": "Lake-cum-oasis beside the 17th-century Amar Singh Palace; includes ponds, wells, a Shiva temple, and carved stone animal figureheads believed to protect the royal family; a carved Jain temple sits at one end." }
+  ],
+  "howToReach": {
+    "air": "Jaisalmer civil airport, direct connectivity from Jaipur, Delhi, Mumbai, Bangalore, Surat",
+    "rail": "Direct train service to Delhi",
+    "road": "Connected to Jodhpur, Bikaner, and Jaipur by bus and taxi"
+  },
+  "nearbyDistances": { "Jodhpur": "286 km", "Bikaner": "330 km", "Pushkar": "460 km" }
+}
