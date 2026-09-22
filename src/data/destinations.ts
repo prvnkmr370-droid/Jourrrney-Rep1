@@ -660,6 +660,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jawahar Circle (Patrika Gate)", distance: "6 km", type: "Culture", isHidden: true, id: "jawahar-circle" },
       { name: "Jagat Shiromani Temple", distance: "11 km", type: "Spiritual", isHidden: true, id: "jagat-shiromani-temple" },
       { name: "Akshardham Temple", distance: "10 km", type: "Spiritual", isHidden: true, id: "akshardham-temple-jaipur" },
+      { name: "Raj Mandir Cinema", distance: "2 km", type: "Culture", isHidden: true, id: "raj-mandir-cinema" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24750,6 +24751,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 7400,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "raj-mandir-cinema",
+    name: "Raj Mandir Cinema",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "An Iconic Art Deco Single-Screen Theatre, Open Since 1976",
+    description: "Raj Mandir Cinema, just off MI Road in central Jaipur, is one of India's most recognisable single-screen theatres, opened in June 1976 and built in an unmistakable Art Deco style by architect W. M. Namjoshi. Its swirling meringue-like white-and-pink facade and ornate, chandelier-lit interior have made it a genuine landmark rather than just a functioning cinema — watching a Bollywood release here, complete with the audience's enthusiastic whistles and applause, is a widely recommended cultural experience for visitors as much as a film screening. The theatre continues to run first-day, first-show screenings of major Hindi releases.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Raj_Mandir_Cinema%2C_Jaipur_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Raj_Mandir_Cinema%2C_Jaipur_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6d/Raj_Mandir_Cinema%2C_Jaipur_01.jpg"],
+    imageCredit: "Photo: Antoine Taveneaux — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Culture"],
+    bestSeason: "October – February",
+    duration: "2–3 hours (for a film screening)",
+    visitingHours: { opens: "10:00 AM", closes: "10:00 PM", note: "Screening times follow the cinema's daily show schedule. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Opened June 1976, Art Deco design by W. M. Namjoshi" },
+      { name: "One of India's most recognisable single-screen theatres" },
+      { name: "First-day, first-show Bollywood release screenings" },
+      { name: "Ornate chandelier-lit interior" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Off MI Road, central Jaipur", costRange: "₹100–₹250 by auto/cab within Jaipur", tips: "Book tickets in advance for popular releases — shows can sell out quickly." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Central MI Road location, walkable from many hotels." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jaipur", notes: "Standard way to reach MI Road", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹250", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~2 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 400, transport: 100, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 3000, food: 1000, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24500, accommodation: 20000, food: 2500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Evening at Raj Mandir", morning: "City Palace and Jantar Mantar.", afternoon: "Johari Bazaar for shopping.", evening: "A film screening at Raj Mandir Cinema — as much an experience as a movie.", stay: "Jaipur", meals: "Street snacks near MI Road, Rajasthani thali (₹300–₹500)", tips: "Arrive early — the lobby and interior are worth seeing even before the film starts." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A busy, well-staffed central Jaipur venue with a constant flow of moviegoers"],
+      precautions: ["Standard venue precautions"],
+      soloTips: ["Comfortable for solo visits, including evening screenings, given the busy central location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The MI Road area around the cinema"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 12800,
+    mustEat: ["Popcorn and snacks at the cinema", "Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable clothing", "Advance-booked tickets for popular releases"],
   },
 
   {
