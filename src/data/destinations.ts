@@ -824,6 +824,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Umaid Bhawan Palace", distance: "In city", type: "Heritage", isHidden: true, id: "umaid-bhawan-palace" },
       { name: "Jaswant Thada", distance: "In city", type: "Heritage", isHidden: true, id: "jaswant-thada" },
       { name: "Ghanta Ghar (Clock Tower)", distance: "In city", type: "Heritage", isHidden: true, id: "ghanta-ghar-jodhpur" },
+      { name: "Mahamandir Temple", distance: "~5 km", type: "Spiritual", isHidden: true, id: "mahamandir-temple-jodhpur" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -1027,6 +1028,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9100,
     mustEat: ["Mirchi Bada", "Street snacks in Sardar Market"],
     packingTips: ["Comfortable walking shoes", "Cash for bazaar shopping"],
+  },
+
+  {
+    id: "mahamandir-temple-jodhpur",
+    name: "Mahamandir Temple",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "An 84-Pillared 'Great Temple' on Mandore Road",
+    description: "Mahamandir, meaning 'great temple', stands on Mandore Road on the northern edge of Jodhpur, its name reflecting the scale of the structure rather than any single deity. The temple is supported by 84 richly carved pillars, each ornamented with detailed figures, including depictions of various yoga postures — a distinctive architectural feature tied to the site's historical association with Nath yogi tradition. Quieter and less visited than Mehrangarh or Jaswant Thada, Mahamandir offers a genuine look at Marwar temple architecture away from the main tourist circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/MahamandirJodhpurPrd.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c6/MahamandirJodhpurPrd.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/c6/MahamandirJodhpurPrd.jpg"],
+    imageCredit: "Photo: Pradeep717 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Supported by 84 richly carved pillars" },
+      { name: "Carvings depicting various yoga postures" },
+      { name: "Associated with Nath yogi tradition" },
+      { name: "Located on Mandore Road, north Jodhpur" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "Mandore Road, north Jodhpur", costRange: "₹100–₹300 by auto/cab within Jodhpur", tips: "Easy to combine with a Mandore Gardens visit since both are on the same road." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹600–₹90,000/night (estimate)", examples: ["Old-city guesthouses near the clock tower"], description: "A short ride from the old city, en route to Mandore." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jodhpur", notes: "Standard way to reach Mahamandir", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable within Jodhpur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mandore Gardens", distance: "~3 km", type: "Heritage Gardens", isHidden: true, id: "mandore-gardens" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 350, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 2500, food: 900, transport: 500, activities: 500 },
+      { tier: "luxury", label: "Royal Premium", perDayPerPerson: 25000, accommodation: 20000, food: 2500, transport: 1000, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mandore Road Heritage Trail", morning: "Mahamandir Temple.", afternoon: "Mandore Gardens.", evening: "Return to old city for dinner.", stay: "Old-city guesthouse", meals: "Rajasthani thali lunch (₹250), dinner (₹450)", tips: "A quiet, uncrowded stop compared to the busier fort and palace sites." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A less-visited temple with lighter tourist traffic than the main city sights"],
+      precautions: ["Standard temple-visit precautions", "Visit during daylight hours"],
+      soloTips: ["Best visited during the day, ideally combined with the busier Mandore Gardens route"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur Police Commissionerate Control Room", number: "0291-2650777" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 2600,
+    mustEat: ["Mirchi Bada", "Makhaniya Lassi"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
   },
 
   {
