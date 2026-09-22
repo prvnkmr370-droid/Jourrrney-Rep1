@@ -79034,6 +79034,67 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the parikrama", "Sun protection — the tank area is fully open"],
   },
 
+  {
+    id: "ram-bagh-palace-amritsar",
+    name: "Ram Bagh Palace",
+    state: "Punjab",
+    tagline: "Maharaja Ranjit Singh's Summer Palace, Now a Museum of His Era",
+    description: "Ram Bagh Palace, set within the historic Ram Bagh gardens, was the summer residence of Maharaja Ranjit Singh, founder of the Sikh Empire, and takes its name from Guru Ram Das Ji. The palace blends Punjabi and Rajasthani architectural styles, with four distinctive gateways (deoris) marking the approach. Recognized as a Monument of National Importance, it now functions as a museum displaying artefacts from the Maharaja's era, including a replica of his golden throne and a replica of the Kohinoor diamond, offering a window into Sikh Empire-era royal life.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Summer_Palace_of_Maharaja_Ranjit_Singh%2C_Amritsar%2C_Punjab%2CIndia.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Summer_Palace_of_Maharaja_Ranjit_Singh%2C_Amritsar%2C_Punjab%2CIndia.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/ac/Summer_Palace_of_Maharaja_Ranjit_Singh%2C_Amritsar%2C_Punjab%2CIndia.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Summer residence of Maharaja Ranjit Singh, founder of the Sikh Empire" },
+      { name: "A Monument of National Importance (ASI-protected)" },
+      { name: "Four distinctive gateways (deoris) in Punjabi-Rajasthani style" },
+      { name: "Museum with a replica golden throne and replica Kohinoor diamond" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "Set within Ram Bagh gardens in central Amritsar." },
+    ],
+    accommodation: [
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["City hotels, a short ride away"], description: "Easily combined with other central Amritsar sites." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹200 from central Amritsar", notes: "Well established in Amritsar city", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 from central Amritsar", notes: "Easily available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~3 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11000, accommodation: 8500, food: 1200, transport: 800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh Empire Heritage", morning: "Visit the Golden Temple and Akal Takht.", afternoon: "Explore Ram Bagh Palace and its gardens.", evening: "Heritage Street.", stay: "Near the Golden Temple", meals: "Local Amritsari fare", tips: "Combine with a walk through the surrounding Ram Bagh gardens." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A managed, ASI-protected heritage site within a public garden"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The palace and surrounding Ram Bagh gardens during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 2900,
+    mustEat: ["Local Amritsari street food nearby"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
