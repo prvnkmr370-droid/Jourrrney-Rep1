@@ -1,0 +1,29 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/hoshiarpur/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Hoshiarpur",
+  "about": "Foothills-of-the-Shivalik district, between the Beas and Sutlej, bordering Himachal Pradesh. Known as 'Land of Saints' and 'City of Mangoes'. Famous worldwide for Sheesham Wood Inlay work and lacquerware, centered on Dabbi Bazaar.",
+  "places": [
+    { "name": "Dholbaha Archaeological Site", "timings": "Check locally", "entryFee": "Check locally", "location": "Dholbaha, Hoshiarpur district", "facts": "Evidence of Palaeolithic habitation, Indus Valley Civilisation, and a temple town (700-1200 AD); Hindu-Shahi style architecture introduced under Jaipal in 965 AD. Artefacts also held at the Hoshiarpur Archaeological Museum." },
+    { "name": "Archaeological Museum, Hoshiarpur", "timings": "Check locally", "entryFee": "Check locally", "location": "Hoshiarpur city", "facts": "Established 7 November 1971 by Vice President G.S. Pathak; houses prehistoric Dholbaha artefacts, fossils, sculptures." },
+    { "name": "Sheesh Mahal, Hoshiarpur", "timings": "Check locally", "entryFee": "Check locally", "location": "Hoshiarpur city", "facts": "Built 1911 by Lala Hans Raj Jain to mark a coronation ceremony; entirely glass-faced with sculptural decoration; functions as a Jain temple." },
+    { "name": "Bajwara Fort", "timings": "Check locally", "entryFee": "Check locally", "location": "Bajwara, Hoshiarpur district", "facts": "Heritage fort, listed among key cultural/heritage sites." },
+    { "name": "Gurdwara Sri Garna Sahib, Bodal", "timings": "Open throughout the day", "entryFee": "Free", "location": "Bodal village, ~39 km from Hoshiarpur", "facts": "Associated with Guru Hargobind Sahib Ji." },
+    { "name": "Kamahi Devi Temple", "timings": "Check locally", "entryFee": "Check locally", "location": "~40 km from Hoshiarpur city", "facts": "Dedicated to Goddess Kamakshi, in the foothills terrain." },
+    { "name": "Takhni Rehmapur Wildlife Sanctuary", "timings": "Daylight hours", "entryFee": "Check with Punjab Forest Department", "location": "Takhni Rehmapur, Hoshiarpur district", "facts": "Principal eco-tourism site in Shivalik foothills; nature walks, birdwatching, migratory birds." },
+    { "name": "Dabbi Bazaar (Inlay Work and Lacquerware Market)", "timings": "Market active through the day", "entryFee": "Not applicable", "location": "Dabbi Bazaar, Hoshiarpur city", "facts": "Principal market for Sheesham Wood Inlay work; Cottage Industries Corporation and shops like Gunesh Jain; Octagonal Well also here." }
+  ],
+  "howToReach": {
+    "air": "Adampur Airport, Jalandhar (~30km); Shaheed Bhagat Singh International Airport, Chandigarh (Mohali)",
+    "rail": "Hoshiarpur Railway Station",
+    "road": "Bhagwan Valmiki Interstate Bus Terminal, Hoshiarpur"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "February to April, September to November",
+    "medicalFacilities": ["Ivy Hospital, Hoshiarpur"],
+    "emergencyNumber": "112",
+    "punjabGrievanceHelpline": "1100"
+  }
+}

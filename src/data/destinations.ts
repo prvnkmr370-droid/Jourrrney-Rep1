@@ -79936,6 +79936,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection — the platform is fully open"],
   },
 
+  {
+    id: "bajwara-fort-hoshiarpur",
+    name: "Bajwara Fort",
+    state: "Punjab",
+    tagline: "A Weathered Red-Brick Fort in Hoshiarpur's Ancient Bajwara Town",
+    description: "Bajwara Fort stands in Bajwara, a town on the outskirts of Hoshiarpur with a history stretching back over a thousand years. The fort's massive round brick tower and surviving wall sections, now weathered and partly overgrown, are among the district's most visible reminders of its long pre-Sikh and pre-Mughal past. Bajwara itself is noted for its historical mosques and tombs alongside the fort, reflecting the layered Sultanate, Mughal, Sikh and British-era history that shaped this part of Hoshiarpur district.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/61/Bajwara_Fort_Hoshiarpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/61/Bajwara_Fort_Hoshiarpur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/61/Bajwara_Fort_Hoshiarpur.jpg"],
+    imageCredit: "Photo: Karantsingh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "A weathered round brick tower and surviving fort walls" },
+      { name: "Located in Bajwara, a town with over a thousand years of history" },
+      { name: "Part of Hoshiarpur district's layered Sultanate, Mughal, Sikh and British-era heritage" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Hoshiarpur Railway Station, then local transport to Bajwara", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train, plus local transport", costRange: "₹300–₹1,500 + local transport", tips: "Bajwara is on the outskirts of Hoshiarpur city." },
+    ],
+    accommodation: [
+      { type: "Hoshiarpur City Hotels", priceRange: "₹800–₹4,500/night", examples: ["Check with the District Tourism Office for current listings"], description: "Most visitors stay in Hoshiarpur city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 from Hoshiarpur city", notes: "Standard way to reach Bajwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dabbi Bazaar (Inlay Work and Lacquerware Market)", distance: "Within Hoshiarpur city", type: "Culture", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 2000, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7800, accommodation: 4800, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hoshiarpur Heritage and Crafts", morning: "Visit Bajwara Fort.", afternoon: "Explore Dabbi Bazaar's inlay-work workshops.", evening: "Sheesh Mahal, if timings allow.", stay: "Hoshiarpur city", meals: "Local Doaba-region Punjabi fare, seasonal fruit", tips: "The fort is a quiet, low-key stop — pair it with Hoshiarpur's craft markets for a fuller day." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A quiet, low-footfall heritage site on the edge of town"],
+      precautions: ["A less-visited ruin — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day; less crowded than central Hoshiarpur sites"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The fort grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 3.9,
+    reviews: 280,
+    mustEat: ["Local Hoshiarpur fruit — mangoes, litchis, guavas, peaches in season"],
+    packingTips: ["Comfortable walking shoes", "Caution around the crumbling fort structure"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
