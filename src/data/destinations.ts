@@ -668,6 +668,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Amrapali Museum", distance: "2 km", type: "Culture", isHidden: true, id: "amrapali-museum" },
       { name: "Statue Circle", distance: "2 km", type: "Culture", isHidden: true, id: "statue-circle-jaipur" },
       { name: "Central Park, Jaipur", distance: "3 km", type: "Nature", isHidden: true, id: "central-park-jaipur" },
+      { name: "Kanak Vrindavan", distance: "9 km", type: "Heritage", isHidden: true, id: "kanak-vrindavan" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -25169,6 +25170,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5800,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "kanak-vrindavan",
+    name: "Kanak Vrindavan",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 275-Year-Old Landscaped Valley Garden Below Nahargarh Fort",
+    description: "Kanak Vrindavan is a landscaped garden complex in a green valley of the Aravalli hills, on the road between Jaipur and Amber, built roughly 275 years ago under Maharaja Sawai Jai Singh II. The complex is centred on a Radha-Krishna temple with carved marble columns and lattice screens, set within lush gardens that stand out against the surrounding dry hillsides — a deliberate contrast that has made it a popular filming location for Bollywood productions. Its position along the Jaipur-Amber road, in view of Nahargarh, Amber, and Jaigarh forts, makes it easy to combine with a heritage circuit of that stretch of road.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Kanak_Vrindavan_%28Back_Side%29_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/91/Kanak_Vrindavan_%28Back_Side%29_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/91/Kanak_Vrindavan_%28Back_Side%29_01.jpg"],
+    imageCredit: "Photo: Rafatalam100 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – February",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built roughly 275 years ago under Sawai Jai Singh II" },
+      { name: "Radha-Krishna temple with carved marble columns and lattices" },
+      { name: "Popular Bollywood filming location" },
+      { name: "On the Jaipur-Amber road, near Nahargarh, Amber, and Jaigarh forts" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "On the Jaipur-Amber road, foothills of Nahargarh", costRange: "₹150–₹400 by auto/cab from Jaipur", tips: "Easy to combine with Amber Fort or Nahargarh Fort since it's on the same road." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited en route to Amber Fort or Nahargarh Fort." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹150–₹350 from Jaipur", notes: "Standard way to reach Kanak Vrindavan", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable from Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nahargarh Fort", distance: "~2 km", type: "Heritage", isHidden: true, id: "nahargarh-fort" },
+      { name: "Amber Fort", distance: "~5 km", type: "Heritage", isHidden: true, id: "amber-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 3000, food: 1000, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24300, accommodation: 20000, food: 2500, transport: 600, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Amber Road Garden Stop", morning: "Amber Fort.", afternoon: "Kanak Vrindavan gardens en route back.", evening: "Nahargarh Fort at sunset.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "A quieter, greener stop between the busier fort visits." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A maintained garden complex on a well-travelled tourist road"],
+      precautions: ["Standard sightseeing precautions", "Visit during daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits, especially combined with the busier Amber Fort route"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The garden grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 2900,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
