@@ -79640,6 +79640,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "victoria-clock-tower-faridkot",
+    name: "Victoria Clock Tower (Ghanta Ghar)",
+    state: "Punjab",
+    tagline: "A Gothic-Style Memorial to Queen Victoria at the Heart of Faridkot",
+    description: "The Victoria Clock Tower, known locally as Ghanta Ghar, stands in the heart of Faridkot city as one of its principal heritage landmarks. It was built in 1901 in the Gothic style by Raja Balbir Singh of Faridkot State as a memorial to Queen Victoria, who died on 22 January that year — a fact recorded in the state's own historical chronicle, the Aina-i Brar Bans. Along with the Qila Mubarak and Raj Mahal, the Clock Tower forms part of the distinctive built character the Faridkot state rulers gave their capital during the late 19th and early 20th centuries.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Photograph_of_the_gothic-styled_Victoria_Clock_Tower_of_Faridkot_State%2C_ca.1915.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/48/Photograph_of_the_gothic-styled_Victoria_Clock_Tower_of_Faridkot_State%2C_ca.1915.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/48/Photograph_of_the_gothic-styled_Victoria_Clock_Tower_of_Faridkot_State%2C_ca.1915.jpg"],
+    imageCredit: "Historical photograph (circa 1915) — Wikimedia Commons, public domain.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "15–30 minutes",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Visible at all hours (exterior landmark). Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1901 in Gothic style by Raja Balbir Singh" },
+      { name: "A memorial to Queen Victoria, who died in January 1901" },
+      { name: "Part of Faridkot's distinctive princely-state heritage streetscape" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Faridkot Railway Station, on the Firozpur-Bathinda-Delhi line", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,500", tips: "City centre, Faridkot." },
+    ],
+    accommodation: [
+      { type: "Faridkot City Hotels", priceRange: "₹800–₹5,000/night", examples: ["Hotel Sangam", "Hotel Sandhuz", "Hotel City"], description: "A range of budget-to-mid hotels in Faridkot city." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central location, easily combined with Qila Mubarak and Raj Mahal on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak (Faridkot Fort)", distance: "Within Faridkot city", type: "Heritage", isHidden: false, id: "qila-mubarak-faridkot" },
+      { name: "Raj Mahal", distance: "Within Faridkot city", type: "Heritage", isHidden: false, id: "raj-mahal-faridkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1800, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7200, accommodation: 4500, food: 1200, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Faridkot City Heritage Walk", morning: "Qila Mubarak.", afternoon: "Raj Mahal and the Old Court Complex.", evening: "Victoria Clock Tower, best seen lit up at dusk.", stay: "Faridkot city", meals: "Local Faridkot sweets", tips: "A quick stop that pairs naturally with a walking tour of the other city-centre heritage sites." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A central, well-trafficked city landmark"],
+      precautions: ["Standard city-centre precautions"],
+      soloTips: ["Comfortable for solo visitors at any hour given its central, visible location"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The city centre area around the tower"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 900,
+    mustEat: ["Nearby city-centre food stalls"],
+    packingTips: ["None specific — a brief city-centre stop"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
