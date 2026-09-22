@@ -79819,6 +79819,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Comfortable, easy-to-remove footwear"],
   },
 
+  {
+    id: "kartarpur-corridor-dera-baba-nanak",
+    name: "Sri Kartarpur Sahib Corridor",
+    state: "Punjab",
+    tagline: "A Visa-Free Border Corridor to Guru Nanak's Final Resting Place",
+    description: "The Sri Kartarpur Sahib Corridor, opened on 9 November 2019 at Dera Baba Nanak, is a border passage that lets Indian pilgrims cross visa-free into Pakistan to visit Gurdwara Darbar Sahib Kartarpur, just 4.7km from the border — the site where Guru Nanak Dev Ji spent the final years of his life farming and teaching. On the Indian side, the corridor begins near Dera Baba Nanak's own historic Gurdwaras, with an immigration terminal, viewing points toward the Pakistani Gurdwara's golden dome, and artistic installations marking the significance of the crossing. For Sikh pilgrims especially, it's one of the most emotionally significant border experiences anywhere in India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Kartarpur_Corridor_view_from_Indian_side.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Kartarpur_Corridor_view_from_Indian_side.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/89/The_Kartarpur_Corridor_view_from_Indian_side.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–3 hours (Indian side); full-day for pilgrims crossing to Kartarpur",
+    visitingHours: { opens: "9:00 AM", closes: "4:00 PM", note: "Timings and crossing procedures vary and are subject to bilateral arrangements — check locally and with official corridor authorities before planning a crossing. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Visa-free pilgrim access to Gurdwara Darbar Sahib Kartarpur in Pakistan" },
+      { name: "Opened 9 November 2019, connecting Dera Baba Nanak to Kartarpur, 4.7km inside Pakistan" },
+      { name: "Views toward the Kartarpur Gurdwara's golden dome from the Indian side" },
+      { name: "Adjacent to Dera Baba Nanak's own historic Gurdwaras, Sri Darbar Sahib and Sri Chola Sahib" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Gurdaspur Junction or Amritsar, then by road to Dera Baba Nanak", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train, plus ~1h by road", costRange: "₹300–₹1,800 + local transport", tips: "Dera Baba Nanak is ~45km from Gurdaspur city." },
+    ],
+    accommodation: [
+      { type: "Amritsar or Gurdaspur Hotels", priceRange: "₹800–₹8,000/night", examples: ["Most pilgrims stay in Amritsar or Gurdaspur and day-trip to the corridor"], description: "Limited accommodation directly at Dera Baba Nanak." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,500 round trip from Amritsar", notes: "Most practical way to reach the corridor entrance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Dera Baba Nanak", distance: "Adjacent", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1800, accommodation: 700, food: 300, transport: 700, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4800, accommodation: 2800, food: 700, transport: 900, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10500, accommodation: 7500, food: 1200, transport: 1300, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kartarpur Corridor Pilgrimage", morning: "Arrive at Dera Baba Nanak, visit Sri Darbar Sahib and Sri Chola Sahib.", afternoon: "Complete corridor registration formalities for a Kartarpur crossing, or view the corridor and Kartarpur dome from the Indian-side terminal.", evening: "Return to Amritsar or Gurdaspur.", stay: "Amritsar city", meals: "Langar at Dera Baba Nanak's Gurdwaras", tips: "A crossing into Pakistan requires advance registration through the official Kartarpur Corridor process — plan well ahead if that is the goal." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A high-security, closely managed international border facility"],
+      precautions: ["Carry valid photo ID; crossing to the Pakistan side requires advance registration and passport", "Follow all posted border-security instructions"],
+      soloTips: ["Comfortable for solo visitors given the tightly controlled, well-staffed border facility"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The corridor terminal and Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 3200,
+    mustEat: ["Langar at Gurdwara Sri Darbar Sahib, Dera Baba Nanak"],
+    packingTips: ["Government-issued photo ID", "Passport, if registering for a Kartarpur crossing", "A scarf or head covering"],
+  },
+
+  {
+    id: "takht-e-akbari-kalanaur",
+    name: "Takht-i-Akbari (Takht-e-Akbari)",
+    state: "Punjab",
+    tagline: "The Masonry Platform Where a 13-Year-Old Akbar Was Crowned Emperor",
+    description: "Takht-i-Akbari, about 1.5km east of Kalanaur town, is the masonry platform on which the young Akbar was crowned Mughal Emperor on 14 February 1556, following the death of his father Humayun, in a ceremony overseen by his regent Bairam Khan. It remains one of the few Mughal-era coronation sites in India that is still physically identifiable, and is protected today by the Archaeological Survey of India as a Monument of National Importance. The site is a quiet, understated counterpoint to Punjab's more elaborate Sikh and colonial-era monuments — a plain raised platform marking one of the pivotal moments in Mughal imperial history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Takht-e-Akbari%2C_Kalanaur%2C_Gurdaspur_%28Punjab%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Takht-e-Akbari%2C_Kalanaur%2C_Gurdaspur_%28Punjab%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/8c/Takht-e-Akbari%2C_Kalanaur%2C_Gurdaspur_%28Punjab%29.jpg"],
+    imageCredit: "Photo: Himanshu2212 — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Site of Akbar's coronation as Mughal Emperor on 14 February 1556" },
+      { name: "One of the few identifiable Mughal-era coronation sites in India" },
+      { name: "Protected by the Archaeological Survey of India" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Gurdaspur, then to Kalanaur town", fromMumbai: "Via Gurdaspur", fromBangalore: "Via Gurdaspur", duration: "~26 km / 40min from Gurdaspur city", costRange: "₹500–₹1,200 round trip by cab from Gurdaspur", tips: "~1.5km east of Kalanaur town centre." },
+    ],
+    accommodation: [
+      { type: "Gurdaspur/Batala Hotels", priceRange: "₹800–₹4,500/night", examples: ["Most visitors day-trip from Gurdaspur or Batala"], description: "Limited accommodation directly in Kalanaur." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach the site", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mahakaleshwar Temple, Kalanaur", distance: "Within Kalanaur town", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 600, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 900, activities: 900 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gurdaspur Mughal Heritage", morning: "Visit Takht-i-Akbari at Kalanaur.", afternoon: "Mahakaleshwar Temple, Kalanaur.", evening: "Return to Gurdaspur or Batala.", stay: "Gurdaspur city", meals: "Local Majha-region Punjabi fare", tips: "A quiet, low-key site — best paired with the Mahakaleshwar Temple in the same town." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["An ASI-protected historical site, generally low footfall"],
+      precautions: ["A quiet, less-visited site — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day, though the site sees fewer visitors than Punjab's major landmarks"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The platform and surrounding grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 350,
+    mustEat: ["Local dhaba food in Kalanaur"],
+    packingTips: ["Comfortable walking shoes", "Sun protection — the platform is fully open"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

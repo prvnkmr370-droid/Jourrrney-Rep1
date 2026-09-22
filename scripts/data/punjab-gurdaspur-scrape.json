@@ -1,0 +1,27 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/gurdaspur/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Gurdaspur",
+  "about": "Northernmost Punjab district in the Majha region, between the Ravi and Beas rivers, bordering Pakistan. Officially designated 'City of Braves'. Named after Guriya Ji, a Sanwal Brahmin who founded the city in the early 17th century.",
+  "places": [
+    { "name": "Gurdwara Sri Kandh Sahib, Batala", "timings": "Daylight hours", "entryFee": "Free", "location": "Batala town, 34 km from Amritsar (ATQ) airport; Batala Junction (BAT) railway station", "facts": "Marks the site where Guru Nanak Dev Ji was married to Mata Sulkhani in 1487." },
+    { "name": "Achleshwar Dham, Batala", "timings": "Daylight hours", "entryFee": "Free", "location": "Batala town, opposite Gurdwara Sri Kandh Sahib", "facts": "Ancient Hindu shrine dedicated to Kartik Ji, associated with the Satyug period; large annual Shivratri fair." },
+    { "name": "Chhota Ghallughara Memorial, Kahnuwan", "timings": "Daylight hours", "entryFee": "Free", "location": "Kahnuwan area, ~40 km from Gurdaspur town", "facts": "Marks the site of the Chhota Ghallughara (Minor Holocaust) of May 1746, where ~7,000 Sikhs were killed and 3,000 captured by Mughal forces." },
+    { "name": "Takht-i-Akbari, Kalanaur", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Kalanaur town, ~26 km from Gurdaspur city", "facts": "Masonry coronation platform where Akbar was crowned on 14 February 1556 by regent Bairam Khan; ASI-protected; one of the few identifiable Mughal-era coronation sites in India." },
+    { "name": "Gurdwara Dera Baba Nanak", "timings": "Daylight hours", "entryFee": "Free", "location": "Dera Baba Nanak town, ~45 km from Gurdaspur city, ~1km from the India-Pakistan border", "facts": "Guru Nanak Dev Ji visited in 1515. Two Gurdwaras: Sri Darbar Sahib (golden dome built by Maharaja Ranjit Singh) and Sri Chola Sahib (preserves Guru Nanak's holy robe brought from Baghdad)." },
+    { "name": "Mahakaleshwar Temple, Kalanaur", "timings": "Daylight hours", "entryFee": "Free", "location": "Kalanaur town, ~26 km from Gurdaspur city", "facts": "Shiva temple with a horizontal Shivalinga, said to be the only such temple in India; large annual Shivratri fair." },
+    { "name": "Sri Kartarpur Sahib Corridor, Dera Baba Nanak", "timings": "Check locally", "entryFee": "Check locally", "location": "Dera Baba Nanak", "facts": "Visa-free border corridor allowing Indian pilgrims to visit Gurdwara Darbar Sahib Kartarpur in Pakistan, where Guru Nanak Dev Ji spent his final years." }
+  ],
+  "howToReach": {
+    "air": "Pathankot Airport (~43km) and Sri Guru Ram Dass Jee International Airport, Amritsar (~84km)",
+    "rail": "Gurdaspur Junction (GSP), Batala Junction (BAT)",
+    "road": "PRTC/PUNBUS to Amritsar, Pathankot, Jalandhar, Chandigarh"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "emergencyNumbers": { "police": "100", "ambulance": "108", "fire": "101" },
+    "punjabGrievanceHelpline": "1100"
+  }
+}
