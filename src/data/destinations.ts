@@ -80404,6 +80404,179 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "clock-tower-ludhiana",
+    name: "Clock Tower (Ghanta Ghar)",
+    state: "Punjab",
+    tagline: "The Crimson Landmark at the Commercial Heart of Old Ludhiana",
+    description: "The Clock Tower, universally known as the Ghanta Ghar, is the most recognizable landmark in Ludhiana, standing at the commercial heart of the old city near Chaura Bazar. Originally built as the Victoria Memorial Clock Tower to mark the Silver Jubilee of Queen Victoria's reign, it was inaugurated on 19 October 1906 by Sir Charles Montgomery, then Lieutenant Governor of Punjab. It was later renamed Bhagwan Mahavir Clock Tower by Giani Zail Singh at the request of the city's Jain community, though locals still universally call it the Ghanta Ghar. The tower now also houses Ludhiana's District Tourism Information Centre, making it the natural first stop for visitors to the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Ghanta_Ghar_Ludhiana.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/91/Ghanta_Ghar_Ludhiana.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/91/Ghanta_Ghar_Ludhiana.jpg"],
+    imageCredit: "Photo: Ranjity — Wikimedia Commons, public domain (CC0).",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "20–30 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Tourist Information Centre: 9am-5pm, closed Mondays. The tower itself is visible at all hours. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Inaugurated 19 October 1906 as the Victoria Memorial Clock Tower" },
+      { name: "Renamed Bhagwan Mahavir Clock Tower, though still known as Ghanta Ghar" },
+      { name: "Houses the District Tourism Information Centre" },
+      { name: "The commercial heart of old Ludhiana, near Chaura Bazar" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Ludhiana Junction, a major stop on the Delhi-Amritsar line", fromMumbai: "Direct connections available", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Near Ludhiana Railway Station, in Chaura Bazar." },
+    ],
+    accommodation: [
+      { type: "Ludhiana City Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["A wide range of hotels near the railway station and city centre"], description: "Ludhiana has extensive hotel options given its role as Punjab's largest city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the tower", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lodhi Fort", distance: "~2 km", type: "Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2500, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9000, accommodation: 6000, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old Ludhiana Heritage Walk", morning: "Start at the Clock Tower for tourist information.", afternoon: "Lodhi Fort and the Ancestral House of Sukhdev Thapar.", evening: "Hosiery markets around Chaura Bazar.", stay: "Central Ludhiana", meals: "Tandoori cuisine, a Ludhiana specialty", tips: "Start here to pick up local tourist information before exploring the rest of the city." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A busy, central commercial landmark with constant foot traffic"],
+      precautions: ["Standard busy-market precautions — keep valuables secure"],
+      soloTips: ["Comfortable for solo visitors during the day given the heavy foot traffic"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["Chaura Bazar and the surrounding commercial district during the day"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 4100,
+    mustEat: ["Ludhiana's famous Tandoori cuisine"],
+    packingTips: ["Comfortable walking shoes for the busy bazaar"],
+  },
+
+  {
+    id: "phillaur-fort-ludhiana",
+    name: "Maharaja Ranjit Singh Fort, Phillaur",
+    state: "Punjab",
+    tagline: "A Sikh Empire Fortress on the Sutlej, Now a Police Training Academy",
+    description: "Phillaur Fort, on the banks of the Sutlej about 14km from Ludhiana on the Grand Trunk Road, was built in the early 19th century during the reign of Maharaja Ranjit Singh as a key military fortress of the Sikh Empire. Its architecture blends Sikh and Mughal traditions, and it saw skirmishes during the First Anglo-Sikh War before passing to British control after Punjab's annexation. Today the fort houses a Dargah, a small museum, and serves as a training facility for the Punjab Police — its imposing red-brick walls, bastions and lookout towers still conveying the scale of a major Sikh Empire military installation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Phillaur-fort.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Phillaur-fort.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f2/Phillaur-fort.jpg"],
+    imageCredit: "Photo: Smloverboy4 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary given its active use as a police facility — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built in the early 19th century under Maharaja Ranjit Singh" },
+      { name: "Blends Sikh and Mughal architectural traditions" },
+      { name: "Saw action during the First Anglo-Sikh War" },
+      { name: "Now a Dargah, small museum, and Punjab Police training facility" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Phillaur Railway Station, on the Delhi-Amritsar line", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "~14km from Ludhiana on the GT Road." },
+    ],
+    accommodation: [
+      { type: "Ludhiana City Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["Most visitors day-trip from Ludhiana"], description: "Limited accommodation directly in Phillaur." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip from Ludhiana", notes: "Most practical way to reach the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Clock Tower (Ghanta Ghar)", distance: "~14 km", type: "Heritage", isHidden: false, id: "clock-tower-ludhiana" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh Empire Military Heritage", morning: "Visit Ludhiana city sites.", afternoon: "Drive to Phillaur Fort.", evening: "Return to Ludhiana.", stay: "Ludhiana city", meals: "Local Malwa-region Punjabi fare", tips: "As an active police facility, some areas may be restricted — check access locally before visiting." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An active police training facility with a constant security presence"],
+      precautions: ["Some areas restricted given its active institutional use"],
+      soloTips: ["Comfortable for solo visitors given the heavy security presence"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The publicly accessible parts of the fort complex"],
+      avoidAreas: ["Restricted operational areas of the police training facility"],
+    },
+    rating: 4.2,
+    reviews: 900,
+    mustEat: ["Local dhaba food en route"],
+    packingTips: ["Comfortable walking shoes", "Government-issued ID, as it's an active police facility"],
+  },
+
+  {
+    id: "sarai-lashkari-khan-ludhiana",
+    name: "Sarai Lashkari Khan (RDB Fort)",
+    state: "Punjab",
+    tagline: "A 17th-Century Caravanserai Made Famous by 'Rang De Basanti'",
+    description: "Sarai Lashkari Khan, near Doraha about 30km from Ludhiana on the Grand Trunk Road, is a 17th-century Mughal caravanserai built during the reign of Emperor Aurangzeb as a resting place for trading caravans. Though partly dilapidated today, two of its gateways remain fully intact, standing atmospherically against a backdrop of green fields. The site gained renewed popular attention after filmmaker Aamir Khan shot a memorable sequence for his film Rang De Basanti here, earning it the enduring nickname 'RDB Fort' among visitors and locals alike.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Entrance_to_Sarai_Lashkari_Khan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Entrance_to_Sarai_Lashkari_Khan.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4f/Entrance_to_Sarai_Lashkari_Khan.jpg"],
+    imageCredit: "Photo: Baghesukoon — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "9am–5pm, closed Sundays. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "17th-century Mughal caravanserai built under Emperor Aurangzeb" },
+      { name: "Two fully intact gateways amid otherwise partly ruined walls" },
+      { name: "Popularly known as 'RDB Fort' after Aamir Khan's Rang De Basanti was filmed here" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ludhiana, then to near Doraha on GT Road", fromMumbai: "Via Ludhiana", fromBangalore: "Via Ludhiana", duration: "~30 km / 45min from Ludhiana", costRange: "₹700–₹1,600 round trip by cab from Ludhiana", tips: "On the GT Road near Doraha." },
+    ],
+    accommodation: [
+      { type: "Ludhiana City Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["Most visitors day-trip from Ludhiana"], description: "Limited accommodation directly near Doraha." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,600 round trip", notes: "Most practical way to reach the sarai", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mughal Sarai, Doraha", distance: "Nearby, within Doraha", type: "Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 2500, food: 700, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9800, accommodation: 6000, food: 1200, transport: 1200, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doraha Mughal Heritage Trail", morning: "Depart Ludhiana for Doraha.", afternoon: "Visit Sarai Lashkari Khan and the nearby Mughal Sarai.", evening: "Return to Ludhiana.", stay: "Ludhiana city", meals: "Roadside dhaba food on the GT Road", tips: "A partly ruined but photogenic site — worth visiting for fans of Rang De Basanti as much as Mughal history." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A known heritage/filming landmark, generally visited during daylight hours"],
+      precautions: ["A rural, partly ruined site with limited facilities — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day; best visited with a driver waiting given its roadside location"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The intact gateway areas during daylight hours"],
+      avoidAreas: ["Structurally unstable ruined sections — avoid climbing on unstable walls"],
+    },
+    rating: 4.3,
+    reviews: 1300,
+    mustEat: ["Roadside dhaba food on the GT Road"],
+    packingTips: ["Comfortable walking shoes", "Caution around the ruined sections"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

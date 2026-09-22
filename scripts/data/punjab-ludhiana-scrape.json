@@ -1,0 +1,40 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/ludhiana/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Page is very large (36000+ chars) — Fairs/Food/How-to-Reach sections after the place listings not fully captured, but all 'Places to Visit' and 'Excursions from Ludhiana' entries are captured.",
+  "district": "Ludhiana",
+  "about": "Punjab's largest, most populous city, 'Manchester of India' for hosiery/woollen manufacturing. Founded 1480 as Lodhi-ana. Birthplace/home of freedom fighters Kartar Singh Sarabha, Sukhdev Thapar, and Lala Lajpat Rai.",
+  "places": [
+    { "name": "Clock Tower (Ghanta Ghar)", "timings": "Tourist info centre 9am-5pm (closed Mon); tower visible always", "entryFee": "Free", "location": "Chaura Bazar, near Ludhiana Railway Station", "facts": "Built as Victoria Memorial Clock Tower, inaugurated 19 October 1906. Renamed Bhagwan Mahavir Clock Tower by Giani Zail Singh at the Jain community's request, still known as Ghanta Ghar." },
+    { "name": "Lodhi Fort", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Domoria Bridge area, near the Sutlej River", "facts": "Oldest surviving structure in Ludhiana (~500 years), built by Sikandar Lodhi's lieutenants; held by Maharaja Ranjit Singh; 5.6 acres; state-protected monument." },
+    { "name": "Maharaja Ranjit Singh War Museum", "timings": "9am-5pm, all 7 days", "entryFee": "Children up to 10: Rs 10; Adults: Rs 40", "location": "Ludhiana city", "facts": "Instituted 1999; galleries on History, War Heroes, Uniforms, Air Force/Navy, Kargil; outdoor tanks, a Sukhoi fighter, INS Vikrant model." },
+    { "name": "Ancestral House of Shaheed Sukhdev Thapar", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Naughara Mohalla, near Chaura Bazar", "facts": "Birthplace of Sukhdev Thapar, hanged with Bhagat Singh and Rajguru on 23 March 1931; state-protected monument." },
+    { "name": "Gurdwara Shri Dukhniwaran Sahib", "timings": "Open day and night", "entryFee": "Free", "location": "Field Ganj, Ludhiana city", "facts": "Guru Nanak Dev Ji is said to have cured a leper king here; ~50,000 devotees daily, most-visited religious site in the city." },
+    { "name": "Gurdwara Shri Gau Ghat Sahib, Patshahi Pehli", "timings": "Open throughout the day", "entryFee": "Free", "location": "Gaushala Road, old Ludhiana city", "facts": "Guru Nanak Dev Ji rested here in 1515 on the former Sutlej bank; associated with the Nawab of Lodhi." },
+    { "name": "Nehru Rose Garden", "timings": "Open all days", "entryFee": "Check locally", "location": "Civil Lines area", "facts": "30 acres, 17,000+ plants, 1,600 rose varieties, illuminated musical fountain, annual Rose Festival." },
+    { "name": "Rakh Bagh", "timings": "Open all days", "entryFee": "Free", "location": "Ludhiana city", "facts": "Landscaped garden with mini train joyride; Oval Ground popular with morning walkers." },
+    { "name": "Rural Museum (Punjab Agricultural University Museum)", "timings": "9am-5pm, closed Sat/Sun", "entryFee": "Rs 10", "location": "PAU campus, Ferozepur Road", "facts": "Built like traditional rural Punjabi houses; agricultural implements, crafts, household objects; only university museum of its kind in India." },
+    { "name": "Mughal Sarai, Doraha", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Doraha, on Ludhiana-Delhi Road", "facts": "~168 sq m enclosure caravanserai, battlement walls, octagonal bastions, painted rooms; 20-30 rooms per side." },
+    { "name": "Sarai Lashkari Khan", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Near Doraha, ~30km from Ludhiana on GT Road", "facts": "17th-century Aurangzeb-era caravanserai; popularly called 'RDB Fort' after Aamir Khan filmed Rang De Basanti here; two intact gateways." },
+    { "name": "Maharaja Ranjit Singh Fort, Phillaur", "timings": "Check locally", "entryFee": "Check locally", "location": "Phillaur, ~14km from Ludhiana on GT Road", "facts": "Built early 19th century under Maharaja Ranjit Singh; Sikh-Mughal blended architecture; now houses a Dargah, museum, and Punjab Police training facility." },
+    { "name": "Ancestral House of Shaheed Kartar Singh Sarabha", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Village Sarabha, Ludhiana district", "facts": "Birthplace (24 May 1896) of the Ghadar Party revolutionary hanged at 19 in 1915; personal hero of Bhagat Singh; state-protected monument." },
+    { "name": "Ancestral House of Lala Lajpat Rai", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Mohalla Misarpura, Jagraon", "facts": "Home of Punjab Kesari, martyred 1928; now a museum with a life-size statue; state-protected monument." },
+    { "name": "Gurdwara Charan Kanwal Sahib, Machhiwara", "timings": "Open throughout the day", "entryFee": "Free", "location": "Charan Kamal Road, Machhiwara, ~35km from Ludhiana", "facts": "Guru Gobind Singh Ji rested here during his guerrilla campaign after evacuating Anandpur Sahib." },
+    { "name": "Anglo-Sikh War Memorial, Aliwal", "timings": "9am-5pm, closed Sundays", "entryFee": "Free", "location": "Aliwal, Ludhiana district", "facts": "Commemorates the 1845 First Anglo-Sikh War battle at Aliwal." },
+    { "name": "Maharaja Duleep Singh Memorial, Raikot", "timings": "9am-5pm, closed Mondays", "entryFee": "Check locally", "location": "Raikot, Ludhiana district", "facts": "Housed in Bassian Kothi, temporary 1850 lodge of the last Maharaja of Punjab before exile; also held Kuka Movement prisoners." },
+    { "name": "Kos Minar (Mile Pillars)", "timings": "Visible at all hours", "entryFee": "Free", "location": "Along the Grand Trunk Road, Ludhiana district", "facts": "16th-century Sher Shah Suri-era distance markers, ~30ft round pillars." },
+    { "name": "Mani Laxmi Dham", "timings": "Check locally", "entryFee": "Free", "location": "Near village Bija/Bhourla, NH Delhi-Ludhiana, near Doraha", "facts": "Jain pilgrimage complex, ~Rs 300 crore construction cost, holds a Guinness World Record." },
+    { "name": "Ancient Site of Sunet", "timings": "Check locally, closed Sundays", "entryFee": "Free", "location": "Sunet, Ludhiana district", "facts": "ASI-protected archaeological site." },
+    { "name": "Christ Church, Fountain Chowk", "timings": "Check locally, closed Sundays for visits", "entryFee": "Free", "location": "Fountain Chowk, Ludhiana city", "facts": "Built by the British in the 1830s." },
+    { "name": "Jama Masjid", "timings": "Check locally", "entryFee": "Free", "location": "Ludhiana city", "facts": "Built 1891 by Maulana Shah Mohammad Ludhianavi." },
+    { "name": "Qila Payal and Ancient Baoli, Payal", "timings": "9am-5pm, closed Sundays", "entryFee": "Check locally", "location": "Payal, Ludhiana district", "facts": "Built 1771 by Maharaja Amar Singh of Patiala with Mughal cooperation; state-protected monument." },
+    { "name": "Tombs at Behlolpur", "timings": "Check locally", "entryFee": "Check locally", "location": "Behlolpur village, Machhiwara Tehsil", "facts": "4 Mughal-era red-sandstone tombs including Alawal Khan, Hussain Khan, Nawab Bahadur Khan." }
+  ],
+  "howToReach": {
+    "note": "Not fully captured in this scrape session; Ludhiana has its own domestic airport and is a major railway junction on the Delhi-Amritsar line."
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March"
+  }
+}
