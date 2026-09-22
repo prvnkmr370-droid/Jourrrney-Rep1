@@ -79994,6 +79994,180 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Caution around the crumbling fort structure"],
   },
 
+  {
+    id: "devi-talab-mandir-jalandhar",
+    name: "Devi Talab Mandir",
+    state: "Punjab",
+    tagline: "One of India's 51 Shakti Pithas, Centered on a Sacred Tank",
+    description: "Devi Talab Mandir, over 200 years old, is among the most significant temples in Punjab and is recognized as one of India's 51 Shakti Pithas — sites where, according to tradition, parts of the goddess Sati's body fell. In Jalandhar, the goddess is worshipped as Tripurmalini, and her right breast is believed to have fallen at this spot. The temple complex takes its name, meaning 'Goddess's Pool,' from the sacred tank at its heart, over which the golden-roofed shrine now stands on pillars. An adjoining Kali temple stands beside the tank, and each December the complex hosts the Harballabh Sangeet Sammelan — over 125 years old and the oldest Hindustani classical music festival in India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Devi_Talab_Mandir%2C_Jalandhar%2C_Punjab%2C_19_September_2017_%28cropped%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Devi_Talab_Mandir%2C_Jalandhar%2C_Punjab%2C_19_September_2017_%28cropped%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/a5/Devi_Talab_Mandir%2C_Jalandhar%2C_Punjab%2C_19_September_2017_%28cropped%29.jpg"],
+    imageCredit: "Photo: Shivamsetu — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "7:00 AM", closes: "8:00 PM", note: "7am–8pm daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "One of India's 51 Shakti Pithas" },
+      { name: "A golden-roofed shrine built over its own sacred tank" },
+      { name: "Venue of the Harballabh Sangeet Sammelan, India's oldest Hindustani classical music festival (125+ years)" },
+      { name: "An adjoining Kali temple beside the tank" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Jalandhar City Railway Station, a major junction", fromMumbai: "Direct connections available", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Tanda Road, Shiv Nagar, Jalandhar city." },
+    ],
+    accommodation: [
+      { type: "Jalandhar City Hotels", priceRange: "₹1,200–₹7,000/night", examples: ["Sarovar Portico Jalandhar", "Ramada Encore by Wyndham Jalandhar", "Golden Tulip Jalandhar", "Radisson Hotel Jalandhar"], description: "A wide range of hotels in central Jalandhar." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the temple", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tulsi Mandir", distance: "Within Jalandhar old city", type: "Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jalandhar Old City Temples", morning: "Visit Devi Talab Mandir.", afternoon: "Tulsi Mandir and the old city's ancient temple cluster.", evening: "Local Jalandhar street food.", stay: "Jalandhar city", meals: "Dal ke Pakode, Jalebis, Amritsari Kulcha", tips: "Visit in December if timing allows, for the Harballabh Sangeet Sammelan." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, actively managed temple with a constant flow of devotees"],
+      precautions: ["Standard temple precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The temple complex during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 5400,
+    mustEat: ["Dal ke Pakode from Jawali Di Hatti", "Jalebis from Sodhi Jalebi Corner"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "tombs-ustad-shagird-nakodar",
+    name: "Tombs of Ustad-Shagird, Nakodar",
+    state: "Punjab",
+    tagline: "Twin Mughal Mausoleums of a Court Musician and His Devoted Pupil",
+    description: "Just outside Nakodar, about 24km from Jalandhar, stand two finely decorated Mughal-era mausoleums known together as the Tombs of Ustad-Shagird — 'the teacher and the disciple.' The Tomb of Mohammed Momin, built in 1612 AD, honors a tambura player in the service of Khan-i-Khanan, one of the Navaratnas in Emperor Akbar's court; octagonal outside and square within, its hemispherical dome and glazed-tile geometric panels make it one of Punjab's finest surviving examples of Mughal funerary architecture. Nearby, the Tomb of Haji Jamal, built in 1657, honors Momin's own pupil, its facade divided into panels of flower pots and geometric designs in multicolored tile. Both are protected Monuments of National Importance under the Archaeological Survey of India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Ustad%27s_Tomb_Nakodar%2C_Punjab.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Ustad%27s_Tomb_Nakodar%2C_Punjab.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/1f/Ustad%27s_Tomb_Nakodar%2C_Punjab.jpg"],
+    imageCredit: "Photo: Gaurav Madhopuri — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Tomb of Mohammed Momin, built 1612, for a tambura player in Emperor Akbar's court" },
+      { name: "Tomb of Haji Jamal, built 1657, for his devoted pupil" },
+      { name: "Glazed-tile geometric decoration and hemispherical domes" },
+      { name: "Protected Monuments of National Importance (ASI)" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jalandhar, then to Nakodar", fromMumbai: "Via Jalandhar", fromBangalore: "Via Jalandhar", duration: "~24 km / 40min from Jalandhar", costRange: "₹500–₹1,200 round trip by cab from Jalandhar", tips: "On the outskirts of Nakodar town." },
+    ],
+    accommodation: [
+      { type: "Jalandhar City Hotels", priceRange: "₹1,200–₹7,000/night", examples: ["Most visitors day-trip from Jalandhar"], description: "Limited accommodation directly in Nakodar." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach the tombs", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nurmahal Sarai", distance: "~12 km", type: "Heritage", isHidden: false, id: "nurmahal-sarai-jalandhar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doaba Mughal Heritage Trail", morning: "Visit the Tombs of Ustad-Shagird at Nakodar.", afternoon: "Continue to Nurmahal Sarai and Dakhni Sarai.", evening: "Return to Jalandhar.", stay: "Jalandhar city", meals: "Local Doaba-region Punjabi fare", tips: "Combine all three ASI-protected Mughal sites (tombs, Nurmahal Sarai, Dakhni Sarai) in one day trip, as they lie along the same road corridor." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["An ASI-protected national monument, generally quiet with low footfall"],
+      precautions: ["A less-visited rural site — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day; less crowded than central Jalandhar sites"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The tomb grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 620,
+    mustEat: ["Local dhaba food in Nakodar"],
+    packingTips: ["Comfortable walking shoes", "Sun protection"],
+  },
+
+  {
+    id: "nurmahal-sarai-jalandhar",
+    name: "Nurmahal Sarai (Nur Mahal)",
+    state: "Punjab",
+    tagline: "One of Northern India's Finest Surviving Mughal Caravanserais",
+    description: "The Nurmahal Sarai, in the town of Nurmahal about 30km from Jalandhar, is one of the finest preserved examples of Mughal caravanserai architecture in northern India, built along the old imperial road linking Delhi and Lahore. It is named for Nur Jahan, consort of Emperor Jahangir, who is said to have been raised here, and was constructed between 1619 and 1621 by Nawab Zakariya Khan, Governor of the Doab. The closed quadrangle holds 140 cells around its four sides, with a simpler gate on the east and a richly ornamented western gateway — its red sandstone facade carved with bas-relief foliate scrollwork, birds in branches, and projecting domed balconies. Maintained by the Archaeological Survey of India, it offers a vivid sense of the scale and craft of Mughal roadside infrastructure.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Gateway_of_Sarai_Nurmahal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Gateway_of_Sarai_Nurmahal.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/dc/Gateway_of_Sarai_Nurmahal.jpg"],
+    imageCredit: "Photo: Gaurav Madhopuri — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Daylight hours. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1619-1621 by Nawab Zakariya Khan, named for Nur Jahan" },
+      { name: "A closed quadrangle of 140 cells on the old Delhi-Lahore imperial road" },
+      { name: "An ornately carved western gateway in red sandstone" },
+      { name: "Maintained by the Archaeological Survey of India" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jalandhar, then to Nurmahal", fromMumbai: "Via Jalandhar", fromBangalore: "Via Jalandhar", duration: "~30 km / 45min from Jalandhar", costRange: "₹600–₹1,400 round trip by cab from Jalandhar", tips: "On the Nakodar-Phillaur road." },
+    ],
+    accommodation: [
+      { type: "Jalandhar City Hotels", priceRange: "₹1,200–₹7,000/night", examples: ["Most visitors day-trip from Jalandhar"], description: "Limited accommodation directly in Nurmahal." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 round trip", notes: "Most practical way to reach the sarai", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tombs of Ustad-Shagird, Nakodar", distance: "~12 km", type: "Heritage", isHidden: false, id: "tombs-ustad-shagird-nakodar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doaba Mughal Heritage Trail", morning: "Visit Nurmahal Sarai.", afternoon: "Continue to the Tombs of Ustad-Shagird and Dakhni Sarai.", evening: "Return to Jalandhar.", stay: "Jalandhar city", meals: "Local Doaba-region Punjabi fare", tips: "Combine with the nearby Tombs of Ustad-Shagird and Dakhni Sarai for a full Mughal-heritage day trip." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["An ASI-protected national monument in a small town setting"],
+      precautions: ["A rural, lower-footfall site — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The sarai grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 480,
+    mustEat: ["Local dhaba food in Nurmahal"],
+    packingTips: ["Comfortable walking shoes", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

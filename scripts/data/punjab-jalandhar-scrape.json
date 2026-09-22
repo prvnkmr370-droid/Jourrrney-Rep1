@@ -1,0 +1,35 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/jalandhar/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Jalandhar",
+  "about": "Believed to be the oldest city in Punjab, spanning Harappan through Mughal periods. Largest city in the Doaba region, hub of sports goods manufacturing. Served as Punjab's capital briefly after 1947 before Shimla then Chandigarh.",
+  "places": [
+    { "name": "Jang-e-Azadi Memorial, Kartarpur", "timings": "10am-5pm", "entryFee": "Adults Rs 100, under-18 Rs 50, 0-3 free", "location": "GT Road, Kartarpur, ~15km from Jalandhar", "facts": "25-acre Punjab freedom-movement memorial with a 45m Shaheed-e-Minar tower, galleries, amphitheatre, laser show area." },
+    { "name": "Devi Talab Mandir", "timings": "7am-8pm", "entryFee": "Free", "location": "Tanda Road, Shiv Nagar, Jalandhar city", "facts": "200+ years old; one of India's 51 Shakti Pithas (goddess Tripurmalini); venue of the Harballabh Sangeet Sammelan since 125+ years, the oldest Hindustani classical music festival in India." },
+    { "name": "Tulsi Mandir", "timings": "Check locally", "entryFee": "Free", "location": "Kot Kishan Chand locality, old city, Jalandhar", "facts": "Ancient temple, originally to Vrinda, wife of the demon Jalandhara; adjacent tank said to be his bathing place." },
+    { "name": "Shiv Mandir, Gur Mandi", "timings": "Check locally", "entryFee": "Free", "location": "Gur Mandi, Jalandhar city", "facts": "Reputedly built by a Nawab of Sultanpur Lodhi; unusual mosque-style gate." },
+    { "name": "Tombs of Ustad-Shagird (Momin and Haji Jamal), Nakodar", "timings": "Check locally", "entryFee": "Check locally", "location": "Outside Nakodar, ~24km from Jalandhar", "facts": "Mughal-era mausoleums; Tomb of Mohammed Momin built 1612 AD (Jahangir era, tambura player under Khan-i-Khanan); Tomb of Haji Jamal built 1657 AD. Both ASI-protected." },
+    { "name": "Nurmahal Sarai (Nur Mahal)", "timings": "Daylight hours", "entryFee": "Check with ASI Chandigarh Circle", "location": "Nurmahal town, ~30km from Jalandhar, ~12km from Nakodar", "facts": "Mughal caravanserai built 1619-1621 by Nawab Zakariya Khan, named after Nur Jahan; 140 cells around a quadrangle, ASI-protected." },
+    { "name": "Dakhni Sarai", "timings": "Daylight hours", "entryFee": "Check with ASI Chandigarh Circle", "location": "Village Dakhni, Nakodar-Kapurthala road, ~12km from Nakodar", "facts": "Mughal caravanserai built c.1640 by Ali Mardan Khan; 124 cells, a mosque and well inside; ASI-protected." },
+    { "name": "Mughal Bridge, Mahlian Kalan", "timings": "Visible at all hours", "entryFee": "Not applicable", "location": "South of village Mahlian Kalan, Nakodar-Kapurthala road", "facts": "Shah Jahan-era bridge (1627-1658) over the Dhauli-veni river; 5 arched spans in Lakhauri brick; ASI-protected." },
+    { "name": "Gurdwara Talhan Sahib Ji", "timings": "Daylight hours", "entryFee": "Free", "location": "Talhan village, outskirts of Jalandhar", "facts": "Honors Guru Hargobind Sahib Ji's visit; white marble and sandstone architecture." },
+    { "name": "Gurdwara Thamm Sahib, Kartarpur", "timings": "Daylight hours", "entryFee": "Free", "location": "Kartarpur, Jalandhar district", "facts": "SGPC-listed historic Gurdwara in the town Guru Arjan Dev Ji founded." },
+    { "name": "Sodal Mandir (Baba Sodal)", "timings": "Check locally", "entryFee": "Free", "location": "Jalandhar city", "facts": "Temple to Baba Sodal; annual September mela." },
+    { "name": "St. Mary's Cathedral", "timings": "Check locally", "entryFee": "Free", "location": "Mall Road, Jalandhar Cantonment", "facts": "Blends Indian/European design; under the Roman Catholic Archdiocese of Delhi." },
+    { "name": "Rangla Punjab Haveli", "timings": "Check locally", "entryFee": "Check locally", "location": "Jalandhar district", "facts": "Cultural complex showcasing traditional Punjabi life, crafts and food." },
+    { "name": "Pushpa Gujral Science City", "timings": "Check locally", "entryFee": "Check locally", "location": "Jalandhar city", "facts": "72-acre joint Central/Punjab government science park; laser show, flight simulator, digital planetarium." },
+    { "name": "Nehru Park & Chohal Dam", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Jalandhar district", "facts": "City green space and an eco-tourism dam site." }
+  ],
+  "howToReach": {
+    "air": "Adampur Airport, Jalandhar (~25km); Amritsar (~75km); Chandigarh (~145km)",
+    "rail": "Jalandhar City Railway Station, major junction",
+    "road": "Jalandhar City Bus Stand, on NH1/Grand Trunk Road"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Orthonova Hospital", "NHS Hospital", "Star Hospital"],
+    "emergencyNumber": "112"
+  }
+}
