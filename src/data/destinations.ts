@@ -2977,6 +2977,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Pratap Memorial (Moti Magri)", distance: "In city", type: "Heritage", isHidden: true, id: "moti-magri" },
       { name: "Bagore Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "bagore-ki-haveli" },
       { name: "Jag Mandir", distance: "On Lake Pichola", type: "Heritage", isHidden: true, id: "jag-mandir" },
+      { name: "Ahar Cenotaphs and Museum", distance: "3 km", type: "Heritage", isHidden: true, id: "ahar-cenotaphs-museum" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3591,6 +3592,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8900,
     mustEat: ["Rajasthani thali", "Rooftop dinner overlooking the lake"],
     packingTips: ["Camera", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "ahar-cenotaphs-museum",
+    name: "Ahar Cenotaphs and Museum",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Ahar Museum"],
+    tagline: "Hundreds of Royal Chhatris Marking Mewar's Cremation Ground for Centuries",
+    description: "Ahar, on the eastern edge of Udaipur, holds the traditional cremation ground of the Maharanas of Mewar, where a dense cluster of carved marble and sandstone chhatris (cenotaphs) commemorates generations of the ruling family. The Ahar Museum sits alongside the cenotaphs and holds a small but genuinely old collection: earthen pottery, sculptures, and archaeological finds, some dating back to around 1700 BC, along with a notable 10th-century metal figure of the Buddha. Together the site offers a quieter, more historically dense counterpart to Udaipur's palace attractions, with far fewer crowds than the City Palace or lakefront.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/52/Ahar_Cenotaphs.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/52/Ahar_Cenotaphs.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/52/Ahar_Cenotaphs.JPG"],
+    imageCredit: "Photo: Jstplace — Wikimedia Commons, public domain. Same image used on multiple Wikipedia language editions' articles for Ahar Cenotaphs.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Museum closed Fridays (typical pattern; confirm locally). Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Traditional cremation ground of the Maharanas of Mewar" },
+      { name: "Dense cluster of carved marble and sandstone chhatris" },
+      { name: "Archaeological finds dating back to ~1700 BC" },
+      { name: "10th-century metal Buddha figure" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "Eastern Udaipur", costRange: "₹100–₹300 by auto/cab within Udaipur", tips: "A quieter alternative to the busier lakefront attractions — good for a slower-paced visit." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "A short ride from the old city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Udaipur", notes: "Standard way to reach Ahar", available: true },
+      { mode: "App Cab (Ola)", cost: "₹100–₹300", notes: "Reliable within Udaipur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "City Palace, Udaipur", distance: "~3 km", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 3500, food: 1000, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34300, accommodation: 30000, food: 3000, transport: 600, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Off the Beaten Path in Udaipur", morning: "Ahar Cenotaphs and Museum.", afternoon: "City Palace and Jagdish Temple.", evening: "Sunset boat cruise on Lake Pichola.", stay: "Old city haveli", meals: "Thali lunch, rooftop dinner overlooking the lake", tips: "Genuinely uncrowded — a good early-morning stop before the main sights get busy." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A quieter heritage site, with a small ticketed museum and regular but lighter visitor traffic"],
+      precautions: ["Standard sightseeing precautions", "Visit during daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits, though quieter than the main lakefront attractions"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The cenotaph and museum grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 3700,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
