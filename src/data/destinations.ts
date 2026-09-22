@@ -79276,6 +79276,66 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Binoculars", "Sun protection and a hat", "Comfortable, closed shoes for uneven terrain near the water"],
   },
 
+  {
+    id: "sarai-amanat-khan",
+    name: "Sarai Amanat Khan",
+    state: "Punjab",
+    tagline: "A 17th-Century Caravanserai Built by the Calligrapher Who Inscribed the Taj Mahal",
+    description: "Sarai Amanat Khan, near Tarn Taran in Amritsar district, is a Mughal-era caravanserai (roadside inn) built in 1640 by Amanat Khan — the Persian calligrapher responsible for the Quranic inscriptions on the Taj Mahal. A Monument of National Importance, its two imposing gateways, the Lahori Darwaza and Dilli Darwaza, lead into a courtyard that once held a mosque and well for travelers on the Grand Trunk Road. The glazed-tile mosaic work on its gates is a rare surviving example of the decorative style used at the Taj Mahal itself, making it a genuinely significant, if lesser-visited, stop for anyone interested in Mughal architecture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sarai_Amanat_Khan_Lahore_Gate.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sarai_Amanat_Khan_Lahore_Gate.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/e6/Sarai_Amanat_Khan_Lahore_Gate.jpg"],
+    imageCredit: "Photo: Spratapsingh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built in 1640 by Amanat Khan, the calligrapher of the Taj Mahal's inscriptions" },
+      { name: "Two monumental gateways: the Lahori Darwaza and Dilli Darwaza" },
+      { name: "Rare surviving glazed-tile mosaic work echoing the Taj Mahal's decorative style" },
+      { name: "A Monument of National Importance" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Amritsar, then to near Tarn Taran", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "~40 km / 1h from Amritsar", costRange: "₹800–₹1,800 round trip by cab from Amritsar", tips: "Near Tarn Taran, in Amritsar district." },
+    ],
+    accommodation: [
+      { type: "Amritsar Hotels", priceRange: "₹800–₹18,000/night", examples: ["Stay in Amritsar city, day-trip to Sarai Amanat Khan"], description: "No tourist accommodation on-site — visit as a day trip from Amritsar." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 round trip", notes: "Most practical way to reach the monument", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~40 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 700, food: 300, transport: 600, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4900, accommodation: 2800, food: 700, transport: 1000, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11700, accommodation: 8500, food: 1200, transport: 1500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mughal Heritage Day Trip", morning: "Depart Amritsar for Sarai Amanat Khan.", afternoon: "Explore the gateways and courtyard, then continue to Tarn Taran's own sites.", evening: "Return to Amritsar.", stay: "Amritsar city", meals: "Roadside dhaba food en route", tips: "A lesser-visited, quiet site — good for those specifically interested in Mughal-era architecture and calligraphy." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A protected national monument, though quieter and less staffed than central Amritsar sites"],
+      precautions: ["A rural, lower-footfall site — visit during daylight hours with pre-arranged transport"],
+      soloTips: ["Best visited as part of a day trip with a driver waiting, given its remoteness and limited local infrastructure"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The monument grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 400,
+    mustEat: ["Roadside dhaba food en route"],
+    packingTips: ["Comfortable walking shoes", "Water bottle — limited facilities on-site"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
