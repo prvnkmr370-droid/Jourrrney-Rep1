@@ -2979,6 +2979,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jag Mandir", distance: "On Lake Pichola", type: "Heritage", isHidden: true, id: "jag-mandir" },
       { name: "Ahar Cenotaphs and Museum", distance: "3 km", type: "Heritage", isHidden: true, id: "ahar-cenotaphs-museum" },
       { name: "Shilpgram", distance: "7 km", type: "Culture", isHidden: true, id: "shilpgram" },
+      { name: "Badi Lake (Jiyan Sagar)", distance: "12 km", type: "Nature", isHidden: true, id: "badi-lake" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3769,6 +3770,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4600,
     mustEat: ["Carry your own food and water — limited options at the lake"],
     packingTips: ["Sun protection", "Water", "Binoculars for birdwatching", "Comfortable shoes"],
+  },
+
+  {
+    id: "badi-lake",
+    name: "Badi Lake (Jiyan Sagar)",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Jiyan Sagar", "Tiger Lake"],
+    tagline: "A Drought-Relief Lake, Named After a Mother, Ringed by Three Chhatris",
+    description: "Badi Lake, formally Jiyan Sagar, was built by Maharana Raj Singh and named after his mother, Jana Devi, as a supplementary water source to help Udaipur withstand periods of drought. That purpose proved genuinely valuable during the severe drought of 1973, when the lake helped sustain the city's water supply. Today it's a quieter, less-visited alternative to Udaipur's central lakes, ringed by three chhatris and set against the backdrop of the Aravalli hills, drawing a mix of local walkers and birdwatchers rather than the heavier tourist traffic of Lake Pichola or Fateh Sagar.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Badi_Lake.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Badi_Lake.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/ce/Badi_Lake.jpg"],
+    imageCredit: "Photo: Mansanyas — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Earth 2016 submission.",
+    category: ["Nature", "Off-beat"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Open area, best visited morning or evening. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by Maharana Raj Singh, named after his mother Jana Devi" },
+      { name: "Helped sustain Udaipur through the 1973 drought" },
+      { name: "Ringed by three chhatris" },
+      { name: "Quieter, less-touristed than Udaipur's central lakes" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~12 km from central Udaipur", costRange: "₹300–₹600 round-trip by auto/cab", tips: "A good early-morning birdwatching stop before the day's main sightseeing." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Visited as a half-day trip from central Udaipur." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹300–₹500 round-trip", notes: "Standard way to reach the lake", available: true },
+      { mode: "App Cab (Ola)", cost: "₹300–₹600 round-trip", notes: "Reliable from Udaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Udaipur", distance: "~12 km", type: "City", isHidden: false, id: "udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1550, accommodation: 700, food: 400, transport: 350, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5100, accommodation: 3500, food: 1000, transport: 500, activities: 100 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34700, accommodation: 30000, food: 3000, transport: 600, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Quiet Morning at Badi Lake", morning: "Badi Lake for birdwatching and a walk around the chhatris.", afternoon: "Return to central Udaipur for main sightseeing.", evening: "Sunset boat cruise on Lake Pichola.", stay: "Udaipur", meals: "Rajasthani thali", tips: "Bring binoculars — this is a genuinely good, uncrowded birdwatching spot." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A quieter lake with lighter tourist traffic than central Udaipur"],
+      precautions: ["Visit during daylight hours", "Avoid isolated stretches of shoreline alone"],
+      soloTips: ["Best visited with a driver/guide or as part of a small group given the lighter footfall"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked viewpoints near the chhatris during daylight hours"],
+      avoidAreas: ["Isolated shoreline areas, especially after dusk"],
+    },
+    rating: 4.2,
+    reviews: 2400,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Binoculars for birdwatching", "Sun protection", "Comfortable shoes"],
   },
 
   {
