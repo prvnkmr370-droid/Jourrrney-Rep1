@@ -1,0 +1,18 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/tarn-taran/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Harike Wetland here is the same physical site already covered as harike-wetland-amritsar — not to be duplicated.",
+  "district": "Tarn Taran",
+  "about": "Founded 1596 by Guru Arjan Dev Ji. Name from Sanskrit 'Tarana' (raft/boat that carries one across the ocean of existence). Carved from Amritsar in 2006, 19th district of Punjab. Majha region, bordering Pakistan.",
+  "places": [
+    { "name": "Sri Darbar Sahib, Tarn Taran", "timings": "Open 24 hours", "entryFee": "Free", "location": "City centre, Tarn Taran Sahib", "facts": "Built by Guru Arjan Dev Ji; largest Sarovar of any Gurdwara (289m x 230m), considered a replica of Harmandir Sahib Amritsar. Manji Sahib marks where the Guru supervised the Sarovar excavation. Large Amavasya (no-moon night) monthly gathering." },
+    { "name": "Gurdwara Lakeer Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Tarn Taran Sahib town", "facts": "Marks where Baba Deep Singh Ji, age 75, drew a line with his Khanda in 1757 asking for volunteers to fight for Harmandir Sahib; ~5,000 Sikhs joined. Gurdwara built 1978." },
+    { "name": "Gurdwara Sri Khadur Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Khadur Sahib town, ~20km from Tarn Taran Sahib", "facts": "Visited by 8 of 10 Sikh Gurus. Guru Angad Dev Ji spent ~13 years here, standardized the Gurmukhi script, wrote the first Punjabi book, died here 29 March 1552 (marked by Gurdwara Malh Akhara). Guru Amar Das Ji served him here 12 years before receiving Guruship." },
+    { "name": "Gurdwara Sri Goindwal Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Goindwal Sahib town, ~23km from Tarn Taran Sahib", "facts": "Centre of Sikhism under Guru Amar Das Ji for 33 years; Baoli stepwell with 84 steps, said to bring liberation from rebirth if Japji Sahib is recited at each step after bathing." },
+    { "name": "Gurdwara Baba Budha Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "20km from Tarn Taran Railway Station, 21km from Bus Stand", "facts": "Honors Baba Budha Ji, disciple of Guru Nanak, who served all 6 successive Gurus and became the first head priest (Granthi) of the Golden Temple." },
+    { "name": "Harike Wetland", "timings": "Daylight hours; early morning best", "entryFee": "Check with Punjab Forest Department", "location": "Same site as harike-wetland-amritsar destination card", "facts": "Duplicate of the site already added under Amritsar — do not create a second card." }
+  ],
+  "howToReach": { "note": "Bordered by Amritsar, Kapurthala, Ferozepur, and Pakistan." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}

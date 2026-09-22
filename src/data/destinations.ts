@@ -81799,6 +81799,184 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "sri-darbar-sahib-tarn-taran",
+    name: "Sri Darbar Sahib, Tarn Taran",
+    state: "Punjab",
+    tagline: "Home to the Largest Sarovar of Any Sikh Gurdwara in the World",
+    description: "Sri Darbar Sahib, Tarn Taran, was built by Guru Arjan Dev Ji in 1596 and is considered a replica of Sri Harmandir Sahib in Amritsar. It holds the largest Sarovar of any Gurdwara anywhere — roughly 289 metres on its northern side and 230 metres on its eastern side — whose waters were historically believed to help treat leprosy, earning the pool the name Dukh Nivaran, 'the eradicator of affliction.' The Manji Sahib marks the exact spot where Guru Arjan Dev Ji supervised the Sarovar's excavation, and each evening the Guru Granth Sahib is carried here in procession around the tank. The Gurdwara's monthly Amavasya (no-moon night) gathering draws especially large crowds of pilgrims from across the region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/47/GurudwaraTarn_Taran_Sahib%2C_Punjab%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/47/GurudwaraTarn_Taran_Sahib%2C_Punjab%2C_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/47/GurudwaraTarn_Taran_Sahib%2C_Punjab%2C_India.jpg"],
+    imageCredit: "Photo: Giridhar Appaji Nag Y — Wikimedia Commons, CC BY 2.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open 24 hours. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "The largest Sarovar of any Sikh Gurdwara in the world" },
+      { name: "Built by Guru Arjan Dev Ji in 1596, a replica of Harmandir Sahib" },
+      { name: "Historically associated with the treatment of leprosy" },
+      { name: "A large monthly Amavasya (no-moon night) gathering" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Tarn Taran Railway Station, near Amritsar", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "City centre, Tarn Taran Sahib, ~25km from Amritsar." },
+    ],
+    accommodation: [
+      { type: "Tarn Taran / Amritsar Hotels", priceRange: "₹800–₹6,000/night", examples: ["A range of pilgrim guesthouses in Tarn Taran and wider hotel options in Amritsar"], description: "Easily combined with an Amritsar stay." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the town", notes: "Standard way to reach the Gurdwara", available: true },
+      { mode: "Taxi", cost: "₹500–₹1,000 from Amritsar", notes: "Common day-trip option from Amritsar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Baoli Sahib, Goindwal Sahib", distance: "~23 km", type: "Spiritual", isHidden: false, id: "gurdwara-baoli-sahib-goindwal-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tarn Taran Sikh Pilgrimage", morning: "Visit Sri Darbar Sahib and walk the Sarovar.", afternoon: "Gurdwara Lakeer Sahib.", evening: "Return to Amritsar or stay in Tarn Taran.", stay: "Tarn Taran or Amritsar", meals: "Free langar at the Gurdwara", tips: "Time a visit around the evening procession of the Guru Granth Sahib for the fullest experience." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, actively managed Sikh pilgrimage site with a constant flow of devotees"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Very comfortable for solo pilgrims given the steady presence of devotees and Gurdwara staff"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire Gurdwara complex, open 24 hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 8200,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "gurdwara-baoli-sahib-goindwal-sahib",
+    name: "Gurdwara Baoli Sahib, Goindwal Sahib",
+    state: "Punjab",
+    tagline: "An 84-Step Sacred Stepwell on the Banks of the Beas",
+    description: "Goindwal Sahib, on the banks of the Beas River about 23km from Tarn Taran Sahib, was the centre of Sikhism during the 33-year Guruship of Guru Amar Das Ji, the third Sikh Guru, who structured and expanded Sikh community practices from here. Its centerpiece, the Baoli Sahib, is a stepwell with 84 steps descending to the water — Sikhs believe that bathing and reciting Japji Sahib at each of the 84 steps brings liberation from the cycle of rebirth. The gold-domed Gurdwara above the Baoli, and the steady flow of pilgrims descending its steps, make this one of the more distinctive and spiritually significant sites in the Majha region's Sikh heritage circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Baoli_Sahib%2C_Goindwal_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Baoli_Sahib%2C_Goindwal_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6e/Baoli_Sahib%2C_Goindwal_Sahib.jpg"],
+    imageCredit: "Photo: Kuldeepburjbhalaike — Wikimedia Commons, CC BY-SA 4.0 (Wikimedia Commons Valued Image).",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Daylight hours. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Centre of Sikhism during Guru Amar Das Ji's 33-year Guruship" },
+      { name: "The Baoli Sahib stepwell, with 84 sacred steps" },
+      { name: "Believed to bring liberation from rebirth when Japji Sahib is recited at each step" },
+      { name: "Set on the banks of the Beas River" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Tarn Taran or Amritsar, then local transport to Goindwal Sahib", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "Varies by train, plus ~30min by road", costRange: "₹300–₹2,000 + local transport", tips: "~23km from Tarn Taran Sahib, on the Beas riverbank." },
+    ],
+    accommodation: [
+      { type: "Tarn Taran / Amritsar Hotels", priceRange: "₹800–₹6,000/night", examples: ["Most pilgrims day-trip from Tarn Taran or Amritsar"], description: "Limited accommodation directly in Goindwal Sahib." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach Goindwal Sahib", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Sri Khadur Sahib", distance: "Within the same Sikh Guru heritage circuit", type: "Spiritual", isHidden: false, id: "gurdwara-khadur-sahib-tarn-taran" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2200, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Third and Fourth Guru Heritage Trail", morning: "Sri Darbar Sahib, Tarn Taran.", afternoon: "Goindwal Sahib and its Baoli, then Khadur Sahib.", evening: "Return to Amritsar or Tarn Taran.", stay: "Tarn Taran or Amritsar", meals: "Free langar at the Gurdwara", tips: "Combine with Khadur Sahib for a full picture of the early Guru period in this region." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, actively managed pilgrimage site with a constant flow of devotees"],
+      precautions: ["Steps down to the Baoli can be slippery when wet — take care descending"],
+      soloTips: ["Comfortable for solo visitors and pilgrims given the steady presence of devotees"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara and Baoli complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 3600,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Non-slip footwear for the stepwell", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "gurdwara-khadur-sahib-tarn-taran",
+    name: "Gurdwara Sri Khadur Sahib",
+    state: "Punjab",
+    tagline: "Where Guru Angad Dev Ji Standardized the Gurmukhi Script",
+    description: "Khadur Sahib, about 20km from Tarn Taran Sahib, holds a rare distinction in Sikh history: eight of the ten Sikh Gurus visited it, and Guru Nanak Dev Ji himself came here five times during his preaching tours. It was here that Guru Angad Dev Ji, the second Guru, spent his entire roughly 13-year Guruship, standardizing the Gurmukhi script and writing the first book in Punjabi — work commemorated at the separate Gurdwara Malh Akhara — before passing away at Khadur Sahib on 29 March 1552. Guru Amar Das Ji, who would become the third Guru, served Guru Angad Dev Ji here for 12 years before receiving the Guruship himself, making Khadur Sahib a site of profound importance to the Sikh faith's early formation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Photograph_of_Gurdwara_Sri_Darbar_Sahib_in_Khadur_Sahib%2C_circa_late_19th_or_early_20th_century.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Photograph_of_Gurdwara_Sri_Darbar_Sahib_in_Khadur_Sahib%2C_circa_late_19th_or_early_20th_century.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/ce/Photograph_of_Gurdwara_Sri_Darbar_Sahib_in_Khadur_Sahib%2C_circa_late_19th_or_early_20th_century.jpg"],
+    imageCredit: "Historical photograph (circa late 19th / early 20th century) — Wikimedia Commons, public domain.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Daylight hours. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Visited by eight of the ten Sikh Gurus" },
+      { name: "Where Guru Angad Dev Ji standardized the Gurmukhi script" },
+      { name: "Where he wrote the first Punjabi book (marked by Gurdwara Malh Akhara)" },
+      { name: "Where Guru Amar Das Ji served for 12 years before receiving the Guruship" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Tarn Taran or Amritsar, then local transport to Khadur Sahib", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "Varies by train, plus ~30min by road", costRange: "₹300–₹2,000 + local transport", tips: "~20km from Tarn Taran Sahib." },
+    ],
+    accommodation: [
+      { type: "Tarn Taran / Amritsar Hotels", priceRange: "₹800–₹6,000/night", examples: ["Most pilgrims day-trip from Tarn Taran or Amritsar"], description: "Limited accommodation directly in Khadur Sahib." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach Khadur Sahib", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Baoli Sahib, Goindwal Sahib", distance: "Within the same Sikh Guru heritage circuit", type: "Spiritual", isHidden: false, id: "gurdwara-baoli-sahib-goindwal-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2200, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Third and Fourth Guru Heritage Trail", morning: "Sri Darbar Sahib, Tarn Taran.", afternoon: "Khadur Sahib and Gurdwara Malh Akhara.", evening: "Goindwal Sahib.", stay: "Tarn Taran or Amritsar", meals: "Free langar at the Gurdwara", tips: "Combine with Goindwal Sahib for a full picture of the early Guru period in this region." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, actively managed pilgrimage site"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 2900,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
