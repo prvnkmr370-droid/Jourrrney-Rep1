@@ -747,6 +747,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Khuri Village", distance: "40 km", type: "Desert Village", isHidden: true },
       { name: "Desert National Park", distance: "40 km", type: "Wildlife", isHidden: true, id: "desert-national-park" },
       { name: "Longewala War Memorial", distance: "120 km", type: "History", isHidden: true },
+      { name: "Jaisalmer War Museum", distance: "~10 km", type: "History", isHidden: true, id: "jaisalmer-war-museum" },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
@@ -1127,6 +1128,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3900,
     mustEat: ["Carry your own food and water — no facilities inside the park"],
     packingTips: ["Binoculars", "Camera with zoom lens", "Sun protection", "Water", "Neutral-colored clothing"],
+  },
+
+  {
+    id: "jaisalmer-war-museum",
+    name: "Jaisalmer War Museum",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Captured Tanks and Longewala Battle History on the Jaisalmer-Jodhpur Highway",
+    description: "Jaisalmer War Museum, inaugurated on 24 August 2015 at the Jaisalmer military base, was built primarily to honour soldiers who fought in the 1965 India-Pakistan war and the 1971 Battle of Longewala. Exhibits include captured enemy tanks, an Indian Army Hall of weapons and equipment, and an audio-visual room screening footage of the battle, including an interview with Major Kuldip Singh Chandpuri, who led the defence at Longewala. A Hunter aircraft used during the 1971 conflict, donated by the Indian Air Force, stands among the outdoor displays, and the museum's honour walls commemorate soldiers who lost their lives in the fighting. Entry is free, and the museum sits directly on the Jaisalmer-Jodhpur Highway.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0c/War_museum_Jaisalmer.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0c/War_museum_Jaisalmer.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/0c/War_museum_Jaisalmer.jpg"],
+    imageCredit: "Photo: Savanv10 — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Monuments 2018 submission; GPS-confirmed at the museum site.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Free entry. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Inaugurated 24 August 2015" },
+      { name: "Captured enemy tanks and war memorabilia" },
+      { name: "Audio-visual room with Battle of Longewala footage" },
+      { name: "IAF Hunter aircraft from the 1971 war on display" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "On the Jaisalmer-Jodhpur Highway", costRange: "₹150–₹400 by auto/cab from central Jaisalmer", tips: "Entry is free — a good, easy add-on if you're headed toward Jodhpur." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort"], description: "A short drive from the old city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹150–₹350 from central Jaisalmer", notes: "Standard way to reach the museum", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Limited availability in Jaisalmer", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "~10 km", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 2200, food: 800, transport: 600, activities: 600 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 18300, accommodation: 13000, food: 2000, transport: 1300, activities: 2000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "War History & Old City", morning: "Jaisalmer War Museum.", afternoon: "Jaisalmer Fort and old-city havelis.", evening: "Gadisar Lake at sunset.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "Check the audio-visual room screening times when you arrive." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A military-run museum with staff and security presence"],
+      precautions: ["Standard museum precautions", "Follow any photography restrictions on-site"],
+      soloTips: ["Comfortable for solo visitors given the managed, staffed setting"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 8200,
+    mustEat: ["Ker Sangri", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Camera (check photography rules on arrival)"],
   },
 
   {
