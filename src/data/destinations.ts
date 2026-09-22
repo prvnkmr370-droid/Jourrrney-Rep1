@@ -745,7 +745,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Sam Sand Dunes", distance: "42 km", type: "Desert", isHidden: true, id: "sam-sand-dunes" },
       { name: "Kuldhara Abandoned Village", distance: "18 km", type: "Hidden Gem", isHidden: true, id: "kuldhara-village" },
       { name: "Khuri Village", distance: "40 km", type: "Desert Village", isHidden: true },
-      { name: "Desert National Park", distance: "40 km", type: "Wildlife", isHidden: true },
+      { name: "Desert National Park", distance: "40 km", type: "Wildlife", isHidden: true, id: "desert-national-park" },
       { name: "Longewala War Memorial", distance: "120 km", type: "History", isHidden: true },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
@@ -1070,6 +1070,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 6800,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Camera", "Sun protection"],
+  },
+
+  {
+    id: "desert-national-park",
+    name: "Desert National Park",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "3,162 Square Kilometres of Genuine Thar Desert Ecosystem",
+    description: "Desert National Park, spanning Jaisalmer and Barmer districts, protects one of the largest and best-preserved stretches of the Thar Desert ecosystem in India, spread across roughly 3,162 square kilometres of undulating sand dunes, jagged rocky outcrops, and salt-lake beds. It is a genuine wildlife habitat rather than a curated tourist attraction, home to blackbuck, chinkara, and desert fox, and is internationally significant as a stronghold of the critically endangered Great Indian Bustard, one of the world's heaviest flying birds. In winter, the park also draws an impressive range of migratory raptors, including Himalayan and Eurasian Griffon Vultures, the Eastern Imperial Eagle, and the Saker Falcon, making it a serious destination for birdwatchers as well as desert-landscape photographers.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Desert_dunes_at_jaisalmer_national_park.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Desert_dunes_at_jaisalmer_national_park.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2b/Desert_dunes_at_jaisalmer_national_park.jpg"],
+    imageCredit: "Photo: Dublinsantosh — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Earth 2016 submission; correct Commons category.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "October – March (winter for migratory raptors)",
+    duration: "2.5–4 hours",
+    visitingHours: { opens: "6:30 AM", closes: "5:30 PM", note: "Best wildlife sightings are early morning or late afternoon. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "3,162 sq km of protected Thar Desert ecosystem" },
+      { name: "Stronghold of the critically endangered Great Indian Bustard" },
+      { name: "Blackbuck, chinkara, and desert fox" },
+      { name: "Winter migratory raptors: Griffon Vultures, Eastern Imperial Eagle, Saker Falcon" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "~40 km from Jaisalmer", costRange: "₹1,000–₹2,500 round-trip by jeep/cab", tips: "A local naturalist guide significantly improves the odds of spotting the Great Indian Bustard." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort", "Desert camps near Sam Dunes"], description: "Visited as a half-day or full-day trip from Jaisalmer." },
+    ],
+    localTransport: [
+      { mode: "Jeep Safari", cost: "₹1,000–₹2,500 (indicative)", notes: "Standard way to explore the park's interior", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "~40 km", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 600, food: 300, transport: 750, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5300, accommodation: 2200, food: 800, transport: 1300, activities: 1000 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 19800, accommodation: 13000, food: 2000, transport: 2300, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Desert Wildlife Day", morning: "Early jeep safari into Desert National Park for the best wildlife activity.", afternoon: "Return to Jaisalmer, rest during peak heat.", evening: "Old-city sightseeing or Gadisar Lake.", stay: "Guesthouse in the old city", meals: "Pack water and snacks — limited facilities in the park", tips: "Bring binoculars and a zoom lens — sightings are often at a distance." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A protected area typically visited with a guide or jeep operator"],
+      precautions: ["Only visit with a licensed guide/jeep operator, not independently", "Stay within the vehicle or marked trails"],
+      soloTips: ["Best visited as part of a booked jeep safari with a guide rather than independently"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked safari routes with a guide"],
+      avoidAreas: ["Unmarked desert areas outside the guided route"],
+    },
+    rating: 4.3,
+    reviews: 3900,
+    mustEat: ["Carry your own food and water — no facilities inside the park"],
+    packingTips: ["Binoculars", "Camera with zoom lens", "Sun protection", "Water", "Neutral-colored clothing"],
   },
 
   {
