@@ -1,0 +1,40 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/jodhpur.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-23",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Jodhpur",
+  "about": "Founded 1459 AD by Rao Jodha, chief of the Rathore clan, on the site succeeding Mandore as Marwar's capital. Second largest city in Rajasthan, known as the 'Blue City' for its blue-painted old-city architecture. Known for the Marwari/Malani horse breed.",
+  "places": [
+    { "name": "Mehrangarh Fort", "location": "125m above Jodhpur's skyline on a rocky hill", "facts": "One of India's most famous forts; second gate bears cannonball scars from Jaipur army attacks; houses Moti Mahal, Phool Mahal, Sheesh Mahal; fort wall over 500 yards long, up to 120 ft high; built from 1459 by Rao Jodha." },
+    { "name": "Umaid Bhawan Palace", "location": "Jodhpur", "facts": "Built by Maharaja Umaid Singh, 1929, as famine-relief employment project; also called Chittar Palace (stone from Chittar hill); designed by British architect H.V. Lanchester; took 16 years; Indo-Saracenic/Classical Revival/Western Art Deco blend; one of the largest private homes in the world; only Rajasthani palace built in the 20th century." },
+    { "name": "Moti Mahal", "location": "Within Mehrangarh Fort", "facts": "Pearl Hall, royal audience hall; glass windows and 5 latticed nooks allowing queens to observe proceedings at the Sringar Chowki (Royal Throne)." },
+    { "name": "Sheesh Mahal", "location": "Within Mehrangarh Fort", "facts": "Glass palace; walls of mirror work across ceilings and floors; mirror work superimposed with painted plaster religious figures." },
+    { "name": "Phool Mahal", "location": "Within Mehrangarh Fort", "facts": "Flower Hall, most opulent chamber, pleasure dome for the Maharajas; gold used in its construction sourced from Ahmedabad, Gujarat." },
+    { "name": "Chamunda Mataji Temple", "location": "Within Mehrangarh Fort", "facts": "Chamunda Mataji was Rao Jodha's favoured goddess; idol brought to the fort, turning it into a temple; remains the Isht Devi of the Maharajas and royal family." },
+    { "name": "Ranisar Padamsar", "location": "Near Fateh Pole, Mehrangarh", "facts": "Two adjacent lakes built 1459; Ranisar ordered by Queen Jasmade Hadi (Rao Jodha's wife), Padmasar ordered by Queen Padmini of Rao Ganga (daughter of Rana Sanga of Mewar)." },
+    { "name": "Sardar Government Museum", "location": "Umaid Garden, Jodhpur", "facts": "Armory, textiles, local art and crafts, miniature paintings, portraits of Marwar rulers, manuscripts, Jain Tirthankara statues." },
+    { "name": "Jaswant Thada", "location": "Jodhpur", "facts": "White marble memorial, late 19th century, tribute to Maharaja Jaswant Singh II (reduced crime/dacoits, built railways, boosted Marwar's economy); managed by Mehrangarh Museum Trust; on-site museum of Marwar ruler portraits; hosts morning concerts during Rajasthan International Folk Festival and World Sacred Spirit Festival." },
+    { "name": "Ghanta Ghar (Clock Tower)", "location": "Central Jodhpur, adjacent to Sardar Market", "facts": "Built by Maharaja Sardar Singh, who also gave his name to Sardar Market (spices, textiles, jewellery); start/end point of the old-city heritage walk." },
+    { "name": "Mahamandir Temple", "location": "Mandore Road, Jodhpur", "facts": "'Great temple'; supported by 84 pillars, detailed carvings depicting yoga postures." },
+    { "name": "Mandaleshwar Mahadev", "location": "Jodhpur", "facts": "Built by Mandal Nath in 923 AD; one of the city's oldest shrines; wall paintings of Shiva and Parvati." },
+    { "name": "Sardar Samand Lake and Palace", "location": "Banks of Sardar Samand Lake", "facts": "Built by Maharaja Umaid Singh, 1933, as a hunting lodge; houses African trophies and original watercolour paintings; birdwatching site (yellow-legged green pigeon, Himalayan griffon, Dalmatian pelican)." },
+    { "name": "Masuria Hills", "location": "Central Jodhpur, atop Masuria hill", "facts": "One of Jodhpur's three notable gardens; centuries-old temple to folk deity Baba Ramdev; panoramic city views." },
+    { "name": "Shastri Circle", "location": "Central Jodhpur", "facts": "Traffic roundabout; illuminated with lights and fountains at night." },
+    { "name": "Mandore", "location": "North of Jodhpur city", "facts": "Ancient capital of Marwar before Jodhpur; dewals (cenotaphs) of former Jodhpur rulers built in Hindu-temple style rather than typical umbrella-chhatri form; also a museum, temple, art gallery; evening light-and-sound show." },
+    { "name": "Kailana Lake", "location": "Jaisalmer road, Jodhpur", "facts": "Small artificial lake, popular picnic spot; boating and zip-lining available." },
+    { "name": "Machiya Biological Park", "location": "~1 km from Kailana Lake, on the way to Jaisalmer", "facts": "Birdwatching point; deer, desert foxes, monitor lizards, blue bulls, hare, wild cats, mongoose, monkeys." },
+    { "name": "Balsamand Lake", "location": "~5 km from Jodhpur, Jodhpur-Mandore Road", "facts": "Built 1159 AD as a water reservoir for Mandore; Balsamand Lake Palace built later as a summer palace on its shore; gardens with mango, papaya, pomegranate, guava, plum; jackal and peacock sightings." },
+    { "name": "Guda Village", "location": "Near Jodhpur", "facts": "Bishnoi village; habitat for thousands of migratory birds including Demoiselle cranes; antelope and blackbuck sightings near the pond." },
+    { "name": "Chokhelao Bagh and Interpretation Center", "location": "Foot of Mehrangarh Fort", "facts": "200+ year old garden, turned into a Botanical Museum by Mehrangarh Museum Trust with endemic Marwar flora; includes the Mehtab Bagh (moonlight garden) with night-blooming chandni and kamini flowers." },
+    { "name": "Salawas Village", "location": "22 km from Jodhpur towards Pali", "facts": "Centre for hand-woven cotton carpets (durries), pottery, block printing; visitors can try potter's wheel and carpet looms." },
+    { "name": "Osiyan Village", "location": "65 km from Jodhpur on the road to Phalodi", "facts": "Stepwell and ruins of 8th-11th century Hindu temples, most prominent the Harihar Temple; camel rides and desert sunsets; functional Sachiya Mata Temple and Mahaveer Jain Temple draw devotees worldwide." },
+    { "name": "Khejarli Village", "location": "Near Jodhpur", "facts": "Named after the Khejri tree; Bishnoi community village; memorial to the 1730 AD Khejarli massacre where 363 villagers, led by Amrita Devi, sacrificed their lives protecting Khejri trees from being cut by Maharaja Abhay Singh's men." }
+  ],
+  "howToReach": {
+    "air": "Jodhpur airport ~5 km from city centre; connected to Delhi and Mumbai",
+    "rail": "Direct trains from all metros and major Indian cities",
+    "road": "Well connected to all major cities and towns"
+  },
+  "nearbyDistances": { "Pushkar": "186 km", "Jaisalmer": "286 km", "Udaipur": "257 km" }
+}
