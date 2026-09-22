@@ -748,6 +748,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Desert National Park", distance: "40 km", type: "Wildlife", isHidden: true, id: "desert-national-park" },
       { name: "Longewala War Memorial", distance: "120 km", type: "History", isHidden: true },
       { name: "Jaisalmer War Museum", distance: "~10 km", type: "History", isHidden: true, id: "jaisalmer-war-museum" },
+      { name: "Tanot Mata Temple", distance: "120 km", type: "Spiritual", isHidden: true, id: "tanot-mata-temple" },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
@@ -1186,6 +1187,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8200,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Camera (check photography rules on arrival)"],
+  },
+
+  {
+    id: "tanot-mata-temple",
+    name: "Tanot Mata Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Mateshwari Tanot Rai Mandir"],
+    tagline: "A Border Temple Managed by the BSF, Where Wartime Shells Reportedly Never Exploded",
+    description: "Tanot Mata Temple sits roughly 120 km from Jaisalmer, close to the India-Pakistan border, dedicated to Tanot Mata, considered a reincarnation of the goddess Hinglaj. The temple's modern significance is tied to the 1965 India-Pakistan war, when Tanot came under heavy shelling; local and military lore holds that none of the shells or bombs fired at the temple exploded, an event widely credited to the goddess and one that deepened faith in the site among soldiers and pilgrims alike. Rebuilt after the war, the temple complex — which includes a victory pillar commemorating the battle — is today managed by a trust run by the Border Security Force, giving it a genuinely unusual character among Rajasthan's temples: part pilgrimage site, part military memorial.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Tanot-Mata-Entrance.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/77/Tanot-Mata-Entrance.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/77/Tanot-Mata-Entrance.jpg"],
+    imageCredit: "Photo: Lakshmikanta Manna — Wikimedia Commons, public domain (CC0). Used on the Bengali Wikipedia article for Tanot Mata Temple.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours (including the drive)",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Managed by a BSF Trust; near the international border, so standard ID/security norms apply. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Tanot Mata considered a reincarnation of Goddess Hinglaj" },
+      { name: "Wartime shells reportedly never exploded during the 1965 war" },
+      { name: "Victory pillar commemorating the battle" },
+      { name: "Managed by a Border Security Force Trust" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "~120 km from Jaisalmer, near the India-Pakistan border", costRange: "₹1,500–₹3,000 round-trip cab from Jaisalmer", tips: "Carry valid photo ID — this is a border-area site with a BSF presence." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort"], description: "Visited as a day trip from Jaisalmer; no lodging at the temple itself." },
+    ],
+    localTransport: [
+      { mode: "Private Cab", cost: "₹1,500–₹3,000 round-trip from Jaisalmer", notes: "Most practical way to visit given the distance and border-area logistics", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "~120 km", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2050, accommodation: 600, food: 300, transport: 1000, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5700, accommodation: 2200, food: 800, transport: 2000, activities: 700 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 20800, accommodation: 13000, food: 2000, transport: 3000, activities: 2800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Border Temple Day Trip", morning: "Depart early from Jaisalmer for Tanot Mata.", afternoon: "Temple visit and the victory pillar, return journey begins.", evening: "Back in Jaisalmer for sunset at Gadisar Lake.", stay: "Guesthouse in the old city", meals: "Pack water and snacks — limited food options en route", tips: "This is a full-day round trip given the distance — start early." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A BSF-managed site with a constant security presence given its border location"],
+      precautions: ["Carry valid photo ID", "Follow any photography restrictions near the border area", "Travel with a driver/guide for the long desert stretch"],
+      soloTips: ["Best visited as part of a booked day tour or with a trusted driver given the distance and border-security context"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex, under BSF management"],
+      avoidAreas: ["Unmarked areas near the border outside the temple complex"],
+    },
+    rating: 4.7,
+    reviews: 5400,
+    mustEat: ["Ker Sangri", "Dal Baati Churma"],
+    packingTips: ["Valid photo ID", "Modest clothing", "Water and snacks for the long drive"],
   },
 
   {
