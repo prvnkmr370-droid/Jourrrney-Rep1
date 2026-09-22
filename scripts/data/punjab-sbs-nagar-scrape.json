@@ -1,0 +1,16 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/sbs-nagar/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Page truncated after the first few Gurdwara listings in this scrape session.",
+  "district": "SBS Nagar (Nawanshahr)",
+  "about": "Named Shaheed Bhagat Singh Nagar since 2008; ancestral district of the revolutionary Bhagat Singh (village Khatkar Kalan). Carved from Hoshiarpur and Jalandhar in 1995. In the Doaba region.",
+  "places": [
+    { "name": "Khatkar Kalan", "timings": "Check locally", "entryFee": "Check locally", "location": "Khatkar Kalan village, near Banga town", "facts": "Ancestral village of Shaheed Bhagat Singh. Museum holds his half-burnt ashes, blood-soaked sand, blood-stained newspaper the ashes were wrapped in, and an annotated page from the Lahore Conspiracy Case judgment. The family's ancestral haveli stands here." },
+    { "name": "Gurdwara Nanaksar, Hakimpur", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Hakimpur, Tehsil Banga, 5km south of Bahiram Railway Station", "facts": "Guru Har Rai Sahib Ji rested here traveling from Kartarpur to Kiratpur Sahib; built by Maharaja Ranjit Singh; his elder son was born here." },
+    { "name": "Gurdwara Charan Kanwal, Jindowal (Banga)", "timings": "Daylight hours", "entryFee": "Free", "location": "Jindowal village, Tehsil Banga", "facts": "Built by Maharaja Ranjit Singh in memory of Guru Hargobind Sahib Ji, who blessed zamindar Jeeva here after his last battle." },
+    { "name": "Gurdwara Gurpalah, Village Sontra", "timings": "Not fully captured", "entryFee": "Not fully captured", "location": "Village Sontra", "facts": "Guru Hargobind Sahib Ji is said to have stayed here per Mahan Kosh (description truncated in this scrape session)." }
+  ],
+  "howToReach": { "note": "~92km from Chandigarh; in the Doaba region between the Beas and Sutlej." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}

@@ -81682,6 +81682,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Check match tickets in advance if attending a game", "Comfortable clothing for long stadium visits"],
   },
 
+  {
+    id: "khatkar-kalan-bhagat-singh",
+    name: "Khatkar Kalan (Shaheed Bhagat Singh's Ancestral Village)",
+    state: "Punjab",
+    tagline: "The Ancestral Home of India's Most Iconic Revolutionary Martyr",
+    description: "Khatkar Kalan, near Banga town, is the ancestral village of Shaheed Bhagat Singh, and the district itself was renamed Shaheed Bhagat Singh Nagar in his honor in 2008. The family's original brick haveli still stands, now part of the Shaheed-e-Azam Bhagat Singh Museum, which holds some of the most poignant relics connected to his execution — his half-burnt ashes, blood-soaked sand from the site, and the blood-stained newspaper in which those ashes were originally wrapped. A page from the Lahore Conspiracy Case judgment, annotated in Bhagat Singh's own hand, is also on display, offering visitors a direct, unmediated connection to one of the most consequential figures of India's independence movement.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Shaheed_Bhagat_Singh_Ancestral_Home.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/96/Shaheed_Bhagat_Singh_Ancestral_Home.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/96/Shaheed_Bhagat_Singh_Ancestral_Home.jpg"],
+    imageCredit: "Photo: Sripathroy — Wikimedia Commons, public domain (CC0).",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Ancestral village of Shaheed Bhagat Singh" },
+      { name: "The family's original haveli, now part of a museum" },
+      { name: "Holds his half-burnt ashes and the blood-stained newspaper they were wrapped in" },
+      { name: "A Lahore Conspiracy Case judgment page annotated by Bhagat Singh himself" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Banga or Nawanshahr, then local transport to Khatkar Kalan", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train, plus local transport", costRange: "₹300–₹1,800 + local transport", tips: "Near Banga town, in SBS Nagar district." },
+    ],
+    accommodation: [
+      { type: "Nawanshahr / Jalandhar Hotels", priceRange: "₹800–₹4,500/night", examples: ["Most visitors day-trip from Nawanshahr or Jalandhar"], description: "Limited accommodation directly in Khatkar Kalan village." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 from Banga town", notes: "Standard way to reach the village", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Nanaksar, Hakimpur", distance: "Within SBS Nagar district", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "SBS Nagar Freedom Movement Heritage", morning: "Visit Khatkar Kalan and the Bhagat Singh Museum.", afternoon: "Explore nearby Gurdwaras associated with the Sikh Gurus.", evening: "Return to Jalandhar or Nawanshahr.", stay: "Nawanshahr or Jalandhar", meals: "Local Doaba-region Punjabi fare", tips: "A quiet, deeply moving site — allow time to reflect on the museum's personal artefacts." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A respected national heritage site with regular visitors"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The museum and ancestral home grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 4200,
+    mustEat: ["Local Doaba-region Punjabi fare"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
