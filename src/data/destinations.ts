@@ -82036,6 +82036,241 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "gurdwara-fatehgarh-sahib",
+    name: "Gurdwara Sri Fatehgarh Sahib",
+    state: "Punjab",
+    tagline: "The Martyrdom Site of Guru Gobind Singh Ji's Two Youngest Sons",
+    description: "Gurdwara Sri Fatehgarh Sahib, in Sirhind, stands on one of the most sacred and sorrowful sites in Sikh history — the place where Sahibzada Zorawar Singh Ji, aged nine, and Sahibzada Fateh Singh Ji, aged seven, the youngest sons of Guru Gobind Singh Ji, were entombed alive on the orders of Wazir Khan, the Mughal Governor of Sirhind, on 26 December 1705, after they refused to renounce Sikhism. The sprawling complex includes Gurdwara Burj Mata Gujri, honoring their grandmother who was imprisoned alongside them, Gurdwara Shahid Ganj, Gurdwara Bhora Sahib, a sarovar, and the Todar Mal Jain Hall, commemorating the devotee who purchased the cremation land by covering it entirely in gold coins. The site draws hundreds of thousands of pilgrims annually, especially during the December Shaheedi Jor Mela.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Gurdwara_Fatehgarh_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/22/Gurdwara_Fatehgarh_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/22/Gurdwara_Fatehgarh_Sahib.jpg"],
+    imageCredit: "Photo: Kuldeepburjbhalaike — Wikimedia Commons, CC BY-SA 4.0 (Commons Featured Picture candidate).",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Martyrdom site of the two youngest Sahibzadas, 26 December 1705" },
+      { name: "Gurdwara Burj Mata Gujri, Gurdwara Shahid Ganj and Gurdwara Bhora Sahib within the complex" },
+      { name: "The Todar Mal Jain Hall, commemorating land bought with gold coins" },
+      { name: "The major annual Shaheedi Jor Mela in December" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Sirhind Railway Station, on the Delhi-Amritsar line", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Sirhind, on the Sirhind-Morinda Road." },
+    ],
+    accommodation: [
+      { type: "Fatehgarh Sahib / Sirhind Hotels", priceRange: "₹800–₹4,500/night", examples: ["A range of pilgrim guesthouses and hotels"], description: "Well-equipped as a major pilgrimage town." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Sirhind", notes: "Standard way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Thanda Burj", distance: "Within Sirhind", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5000, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sahibzadas' Martyrdom Pilgrimage", morning: "Gurdwara Sri Fatehgarh Sahib, including Burj Mata Gujri and Bhora Sahib.", afternoon: "Gurdwara Thanda Burj and Gurdwara Jyoti Saroop Sahib.", evening: "Haveli Diwan Todar Mal.", stay: "Fatehgarh Sahib / Sirhind", meals: "Free langar at the Gurdwara", tips: "One of the most profoundly moving pilgrimage circuits in Sikhism — allow ample time for reflection." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["One of Sikhism's most sacred sites, under constant devotee and staff presence"],
+      precautions: ["Dress modestly; cover your head before entering", "Very large crowds during Shaheedi Jor Mela"],
+      soloTips: ["Very comfortable for solo pilgrims given the steady presence of devotees and Gurdwara staff"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.9,
+    reviews: 11200,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "aam-khas-bagh-sirhind",
+    name: "Aam Khas Bagh, Sirhind",
+    state: "Punjab",
+    tagline: "The Earliest Surviving Mughal Garden in Punjab and Haryana",
+    description: "Aam Khas Bagh, in Sirhind, is the earliest extant Mughal garden anywhere in Punjab and Haryana, first built under Emperor Akbar and later enlarged by Shah Jahan as a royal rest stop on the imperial road between Delhi and Lahore. The complex was divided into the public Aam and the private Khas, and was celebrated across the Mughal Empire for its Sard Khana — an ingenious medieval cooling system that circulated water drawn by pulleys through channels inside the walls. Now weathered ruins under Archaeological Survey of India care, the site includes the remains of the Sheesh Mahal (Daulat Khana-e-Khas), a Hamam bathhouse with underground heating channels, and an 11-acre orchard, and hosts the atmospheric 'Sirhind Di Deewar' light-and-sound show during the annual Shaheedi Jor Mela.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Aam_khas_baag%2C_sirhind_%28_Punjab%29_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Aam_khas_baag%2C_sirhind_%28_Punjab%29_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/d5/Aam_khas_baag%2C_sirhind_%28_Punjab%29_01.jpg"],
+    imageCredit: "Photo: Kulwinder guruharsahai — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Earliest surviving Mughal garden in Punjab and Haryana" },
+      { name: "The Sard Khana, a medieval water-based cooling system" },
+      { name: "Remains of the Sheesh Mahal and a Hamam bathhouse" },
+      { name: "'Sirhind Di Deewar' light-and-sound show during Shaheedi Jor Mela" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Sirhind Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Sirhind, on the Sher Shah Suri Marg (GT Road)." },
+    ],
+    accommodation: [
+      { type: "Fatehgarh Sahib / Sirhind Hotels", priceRange: "₹800–₹4,500/night", examples: ["A range of hotels near the Gurdwara complex"], description: "Well-equipped as a pilgrimage and heritage-tourism town." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Sirhind", notes: "Standard way to reach the garden", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Sri Fatehgarh Sahib", distance: "Within Sirhind", type: "Spiritual", isHidden: false, id: "gurdwara-fatehgarh-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1200, transport: 700, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sirhind's Layered Heritage", morning: "Gurdwara Sri Fatehgarh Sahib.", afternoon: "Aam Khas Bagh's Mughal-era ruins.", evening: "Shri Rauza Sharif.", stay: "Fatehgarh Sahib / Sirhind", meals: "Local Malwa-region Punjabi fare", tips: "During Shaheedi Jor Mela, stay for the 'Sirhind Di Deewar' evening show." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An ASI-maintained heritage site, part of a well-managed pilgrimage circuit"],
+      precautions: ["Standard heritage-site precautions; uneven ruins in places"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The garden grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2400,
+    mustEat: ["Local Malwa-region Punjabi fare"],
+    packingTips: ["Comfortable walking shoes for the ruins", "Sun protection"],
+  },
+
+  {
+    id: "rauza-sharif-sirhind",
+    name: "Shri Rauza Sharif",
+    state: "Punjab",
+    tagline: "A 'Second Mecca' for Sunni Muslims Worldwide",
+    description: "Shri Rauza Sharif, about 1.5km from Gurdwara Fatehgarh Sahib on the Sirhind-Bassi Pathana Road, is the mausoleum of Shaikh Ahmad Faruqi Sirhindi (1563–1624), popularly known as Mujaddid Alf-i-Sani, who lived through the reigns of Akbar and Jahangir. Held in the highest esteem by Sunni Muslims, who consider him second in sanctity only to the Prophet Muhammad, the mausoleum is regarded by many as a 'second Mecca.' Thousands of pilgrims travel here each year from around the world for the annual Urs celebrations, whose dates shift roughly ten days earlier each year — a striking counterpoint to the Sikh martyrdom sites nearby, together reflecting Sirhind's genuinely layered religious history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Entrance%2CRauza_Sharif%2CSirhind%2CPunjab%2CInda.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Entrance%2CRauza_Sharif%2CSirhind%2CPunjab%2CInda.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f4/Entrance%2CRauza_Sharif%2CSirhind%2CPunjab%2CInda.JPG"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Mausoleum of Shaikh Ahmad Faruqi Sirhindi (Mujaddid Alf-i-Sani), 1563-1624" },
+      { name: "Regarded by many Sunni Muslims as a 'second Mecca'" },
+      { name: "Draws worldwide pilgrims for the annual Urs" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Sirhind Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "~1.5km from Gurdwara Fatehgarh Sahib on Sirhind-Bassi Pathana Road." },
+    ],
+    accommodation: [
+      { type: "Fatehgarh Sahib / Sirhind Hotels", priceRange: "₹800–₹4,500/night", examples: ["A range of hotels in the pilgrimage town"], description: "Well-equipped, especially during the Urs." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Sirhind", notes: "Standard way to reach the Rauza", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Sri Fatehgarh Sahib", distance: "~1.5 km", type: "Spiritual", isHidden: false, id: "gurdwara-fatehgarh-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5000, food: 1200, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sirhind's Layered Heritage", morning: "Gurdwara Sri Fatehgarh Sahib.", afternoon: "Aam Khas Bagh.", evening: "Shri Rauza Sharif.", stay: "Fatehgarh Sahib / Sirhind", meals: "Local Malwa-region Punjabi fare", tips: "Visit during the Urs for the fullest atmosphere, though expect very large crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, actively managed pilgrimage site with a constant flow of devotees"],
+      precautions: ["Dress modestly per site customs"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Rauza complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 3100,
+    mustEat: ["Local Malwa-region Punjabi fare"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "sanghol-archaeological-museum",
+    name: "Sanghol Archaeological Site and Museum",
+    state: "Punjab",
+    tagline: "Excavations Spanning the Harappan, Buddhist and Kushan Eras",
+    description: "Sanghol, about 15km from Fatehgarh Sahib on the Ludhiana-Chandigarh Road in Khamano block, is an extensively excavated archaeological site whose finds trace human settlement here back to the second millennium BC. A Buddhist Stupa unearthed in 1968 has been preserved for visitors, and excavations across the site have yielded Harappan-era artefacts alongside coins and seals spanning multiple later periods, pointing to a long and continuous history of settlement. The Archaeological Museum Sanghol, built near the excavation site and maintained by the Archaeological Survey of India, displays this collection, offering a striking contrast to the district's Sikh and Mughal-era heritage by reaching back thousands of years earlier in Punjab's history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sanghol_Museum.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sanghol_Museum.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/8a/Sanghol_Museum.jpg"],
+    imageCredit: "Photo: Sripathroy — Wikimedia Commons, public domain (CC0).",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Settlement evidence dating back to the 2nd millennium BC" },
+      { name: "A preserved Buddhist Stupa, excavated 1968" },
+      { name: "Harappan-era artefacts, coins and seals" },
+      { name: "ASI-maintained on-site museum" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Fatehgarh Sahib, then to Sanghol on the Ludhiana-Chandigarh Road", fromMumbai: "Via Ludhiana or Chandigarh", fromBangalore: "Via Ludhiana or Chandigarh", duration: "~15 km from Fatehgarh Sahib", costRange: "₹500–₹1,200 round trip by cab from Fatehgarh Sahib", tips: "In Khamano block, on the Ludhiana-Chandigarh Road." },
+    ],
+    accommodation: [
+      { type: "Fatehgarh Sahib Hotels", priceRange: "₹800–₹4,500/night", examples: ["Most visitors day-trip from Fatehgarh Sahib"], description: "Limited accommodation directly in Sanghol." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach Sanghol", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Sri Fatehgarh Sahib", distance: "~15 km", type: "Spiritual", isHidden: false, id: "gurdwara-fatehgarh-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 400, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2000, food: 700, transport: 700, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5000, food: 1200, transport: 1100, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sirhind Deep History Day Trip", morning: "Gurdwara Sri Fatehgarh Sahib.", afternoon: "Sanghol Archaeological Site and Museum.", evening: "Return to Fatehgarh Sahib.", stay: "Fatehgarh Sahib / Sirhind", meals: "Local Malwa-region Punjabi fare", tips: "A worthwhile detour for visitors interested in Punjab's pre-Sikh, pre-Mughal history." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An ASI-maintained museum and protected site"],
+      precautions: ["Standard museum/heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The museum and site grounds during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1100,
+    mustEat: ["Local dhaba food en route"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

@@ -1,0 +1,21 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/fatehgarh-sahib-fort-of-victory/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Page truncated after Kaya Kalp Vriksh entry in this scrape session.",
+  "district": "Sri Fatehgarh Sahib",
+  "about": "Named for Sahibzada Fateh Singh Ji, Guru Gobind Singh Ji's youngest son. Formerly Sirhind, a major Mughal administrative town. District formed 1992. One of Sikhism's holiest districts — site of the 1705 martyrdom of the two younger Sahibzadas and Mata Gujri Ji, avenged by Banda Singh Bahadur in 1710.",
+  "places": [
+    { "name": "Gurdwara Sri Fatehgarh Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Sirhind, on Sirhind-Morinda Road", "facts": "Site where Sahibzada Zorawar Singh Ji (9) and Sahibzada Fateh Singh Ji (7) were entombed alive on 26 Dec 1705 by Wazir Khan. Complex includes Gurdwara Burj Mata Gujri, Gurdwara Shahid Ganj, Gurdwara Bhora Sahib, a sarovar, and the Todar Mal Jain Hall." },
+    { "name": "Gurdwara Thanda Burj", "timings": "Open daily", "entryFee": "Free", "location": "Sirhind, Sri Fatehgarh Sahib", "facts": "Marks the 'cold tower' where Mata Gujri Ji and her two grandsons were imprisoned in harsh winter conditions before the martyrdom." },
+    { "name": "Gurdwara Sri Jyoti Saroop Sahib", "timings": "Open daily", "entryFee": "Free", "location": "~1km from Fatehgarh Sahib on Sirhind-Chandigarh Road", "facts": "Cremation site of Mata Gujri Ji and the two Sahibzadas; land purchased by Diwan Todar Mal with gold coins laid flat on the ground. Final-day procession site of the annual Shaheedi Jor Mela." },
+    { "name": "Haveli Diwan Todar Mal (Jahaazi Haveli)", "timings": "Check locally", "entryFee": "Check locally", "location": "Near Gurdwara Fatehgarh Sahib, Sirhind", "facts": "Ship-shaped haveli of Sirhindi brick; residence of Diwan Todar Mal." },
+    { "name": "Shri Rauza Sharif", "timings": "Open daily", "entryFee": "Free", "location": "Sirhind-Bassi Pathana Road, ~1.5km from Gurdwara Fatehgarh Sahib", "facts": "Dargah of Shaikh Ahmad Faruqi Sirhindi (Mujaddid Alf-i-Sani, 1563-1624); considered by Sunni Muslims a 'second Mecca'. Annual Urs draws worldwide pilgrims." },
+    { "name": "Aam Khas Bagh, Sirhind", "timings": "Check locally", "entryFee": "Check locally", "location": "Sirhind, on Sher Shah Suri Marg (GT Road)", "facts": "Earliest extant Mughal garden in Punjab/Haryana, built under Akbar, enlarged by Shah Jahan. Sard Khana cooling system, Sheesh Mahal (Daulat Khana-e-Khas), Hamam bathhouse. ASI-maintained. 'Sirhind Di Deewar' light-and-sound show during Shaheedi Jor Mela." },
+    { "name": "Sanghol Archaeological Site and Museum", "timings": "Check locally", "entryFee": "Check locally", "location": "Sanghol, 15km from Fatehgarh Sahib on Ludhiana-Chandigarh Road, Khamano block", "facts": "2nd-millennium-BC artefacts; Buddhist Stupa excavated 1968; Harappan-era finds; ASI-maintained museum." },
+    { "name": "Mata Chakreshwari Jain Temple, Attewali", "timings": "Open daily", "entryFee": "Free", "location": "Village Attewali, Sirhind-Chandigarh Road", "facts": "~1,000-year-old Jain temple; legendary founding tied to Prithvi Raj Chauhan-era Jain pilgrims." },
+    { "name": "Kaya Kalp Vriksh (Great Banyan Tree), Cholti Kalan", "timings": "Not fully captured", "entryFee": "Not fully captured", "location": "Village Cholti Kalan", "facts": "One of India's largest banyan trees, canopy 3-4 acres; Punjab's first declared Biodiversity Heritage Site (2021)." }
+  ],
+  "howToReach": { "note": "Between Ludhiana and Ambala on the Sher Shah Suri Marg (GT Road)." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}
