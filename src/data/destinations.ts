@@ -79524,6 +79524,122 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Modest clothing", "Comfortable footwear, easy to remove"],
   },
 
+  {
+    id: "qila-mubarak-faridkot",
+    name: "Qila Mubarak (Faridkot Fort)",
+    state: "Punjab",
+    tagline: "The 13th-Century Fort That Gave Faridkot Its Name",
+    description: "Qila Mubarak, at the heart of Faridkot city, was built by Raja Mokalsi in the 13th century. According to local tradition, the Sufi saint Baba Farid was made to carry a basket of construction mud as forced labor here — the basket is said to have floated above his head without support, a miracle that led Raja Mokalsi to release him and rename the town Faridkot in his honor. The fort was expanded over successive generations by Raja Hamir Singh, Raja Bikram Singh and Raja Balbir Singh, and today its walled complex includes the Royal Palace, the Tosha Khana treasury, the Modi Khana granary, and a gallery of vintage cars once owned by the Rajas of Faridkot.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Qila_mubarak_raja_mokalsi_faridkot.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/33/Qila_mubarak_raja_mokalsi_faridkot.png",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/3/33/Qila_mubarak_raja_mokalsi_faridkot.png"],
+    imageCredit: "Photo: Suneha Gill — Wikimedia Commons, CC BY 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built by Raja Mokalsi in the 13th century; the origin of the town's name" },
+      { name: "Traditional site of Baba Farid's miracle and his release from forced labor" },
+      { name: "Royal Palace, Tosha Khana treasury and Modi Khana granary within its walls" },
+      { name: "A gallery of vintage cars owned by the Faridkot Rajas" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Faridkot Railway Station, on the Firozpur-Bathinda-Delhi line", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,500", tips: "At the heart of Faridkot city, adjacent to Gurdwara Sri Tilla Baba Farid." },
+    ],
+    accommodation: [
+      { type: "Faridkot City Hotels", priceRange: "₹800–₹5,000/night", examples: ["Hotel Sangam", "Hotel Sandhuz", "Hotel Blue Ice", "Hotel Blessings", "Hotel City", "Gagan International", "Trump Plaza"], description: "A range of budget-to-mid hotels in Faridkot city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Raj Mahal", distance: "Within Faridkot city", type: "Heritage", isHidden: false, id: "raj-mahal-faridkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Faridkot Heritage Trail", morning: "Visit Qila Mubarak and the adjacent Gurdwara Sri Tilla Baba Farid.", afternoon: "Explore Raj Mahal and the Victoria Clock Tower.", evening: "Local Faridkot sweets and dinner.", stay: "Faridkot city", meals: "Malwa-region Punjabi fare, Dodha Burfi and Bhayea Burfi", tips: "The vintage car gallery is a highlight — allow extra time for it." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A central, well-known heritage site adjacent to an active Gurdwara"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The fort complex and adjacent Gurdwara area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2800,
+    mustEat: ["Dodha Burfi and Bhayea Burfi, traditional Faridkot sweets", "Atta Chicken, a regional specialty from nearby Kotkapura"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "raj-mahal-faridkot",
+    name: "Raj Mahal",
+    state: "Punjab",
+    tagline: "A French-Style Princely Palace Set Against Faridkot's Semi-Desert Landscape",
+    description: "Raj Mahal was built between 1885 and 1889 during the reign of Maharaja Bikrama Singh, under the supervision of the then Crown Prince (later Maharaja) Balbir Singh, who was also its first resident. Spread across nearly 15 acres and designed in French architectural style, the palace's grassy lawns stand in deliberate contrast to the semi-desert landscape surrounding it. The walled complex includes the main palace, a Tasveer Ghar (picture house), a Baradari pavilion, a Gurdwara, three ornamental 'doll houses,' two swimming pools, and its own distinctive entrance gateway, Raj Deori — together forming one of the most complete surviving examples of Punjab's princely-state architecture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Photograph_of_the_Raj_Mahal_palace_of_Faridkot_State.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/56/Photograph_of_the_Raj_Mahal_palace_of_Faridkot_State.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/56/Photograph_of_the_Raj_Mahal_palace_of_Faridkot_State.jpg"],
+    imageCredit: "Historical photograph (before 1922), published in 'Indian States: A Biographical, Historical, and Administrative Survey' (1922) — Wikimedia Commons, public domain.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1885-1889 by Maharaja Bikrama Singh in French architectural style" },
+      { name: "A ~15-acre walled complex with a Tasveer Ghar, Baradari and Gurdwara" },
+      { name: "Three ornamental 'doll houses' and two swimming pools" },
+      { name: "The distinctive Raj Deori entrance gateway" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Faridkot Railway Station, on the Firozpur-Bathinda-Delhi line", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,500", tips: "Within Faridkot city." },
+    ],
+    accommodation: [
+      { type: "Faridkot City Hotels", priceRange: "₹800–₹5,000/night", examples: ["Hotel Sangam", "Hotel Sandhuz", "Hotel Blue Ice", "Hotel Blessings", "Hotel City"], description: "A range of budget-to-mid hotels in Faridkot city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the palace", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak (Faridkot Fort)", distance: "Within Faridkot city", type: "Heritage", isHidden: false, id: "qila-mubarak-faridkot" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3400, accommodation: 1800, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7500, accommodation: 4500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Faridkot Princely Heritage", morning: "Explore Qila Mubarak.", afternoon: "Visit Raj Mahal and the Old Court Complex.", evening: "Victoria Clock Tower at dusk.", stay: "Faridkot city", meals: "Local Faridkot sweets and Punjabi fare", tips: "Combine with the Old Jail and Victoria Clock Tower for a full princely-and-freedom-movement heritage day." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located heritage site"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The palace grounds during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1600,
+    mustEat: ["Dodha Burfi and Bhayea Burfi, traditional Faridkot sweets"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

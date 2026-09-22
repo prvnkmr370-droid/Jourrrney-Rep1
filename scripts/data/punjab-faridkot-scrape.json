@@ -1,0 +1,36 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/faridkot-a-royal-odyssey/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Faridkot",
+  "about": "South-western Punjab district named for Baba Farid, the Sufi saint whose bani appears in Sri Guru Granth Sahib Ji. Originally Mokalhar, founded by Raja Mokalsi in the 13th century, renamed Faridkot after the saint. Later capital of the Faridkot princely state. Kotkapura, in the district, is called the City of White Gold for its major cotton market.",
+  "places": [
+    { "name": "Qila Mubarak (Faridkot Fort)", "timings": "Check locally", "entryFee": "Check locally", "location": "Faridkot city centre, adjacent to Gurdwara Sri Tilla Baba Farid", "facts": "Built by Raja Mokalsi in the 13th century; refurbished by Raja Hamir Singh, Raja Bikram Singh, Raja Balbir Singh. Contains the Royal Palace, Tosha Khana (treasury), Modi Khana (granary), and a vintage car collection of the Faridkot Rajas." },
+    { "name": "Gurdwara Sri Tilla Baba Farid", "timings": "Open daily; large gatherings every Thursday", "entryFee": "Free", "location": "Near Qila Mubarak, Faridkot city centre", "facts": "Site where Baba Farid meditated for 40 days in the 13th century; preserves the wood he used to wipe mud from his hands. Principal site of the annual Baba Farid Aagman Purab festival." },
+    { "name": "Gurdwara Godri Sahib", "timings": "Open daily; especially busy Thursdays", "entryFee": "Free", "location": "4 km from Faridkot on Kotkapura Road", "facts": "Built 1982 where Baba Farid left his blanket (godari); has a Sant Sarovar for holy bathing." },
+    { "name": "Gurdwara Guru Ki Dhab", "timings": "Open daily", "entryFee": "Free", "location": "~12 km from Kotkapura on Kotkapura-Jaitu Road", "facts": "Previously Doda Tal; Guru Gobind Singh Ji blessed its waters. Also known as Gurdwara Patshahi Dasvin / Doda Taal." },
+    { "name": "Gurdwara Godavarisar Patshahi Dasvin, Dhillwan Kalan", "timings": "Open daily", "entryFee": "Free", "location": "Village Dhillwan Kalan, 5 km from Kotkapura on Kotkapura-Bathinda Road", "facts": "Guru Gobind Singh Ji stopped here and gave his clothes to a Sodhi family, still preserved. Named for the sacred Godavari Sar pond." },
+    { "name": "Gurdwara Tibbi Sahib, Jaitu", "timings": "Open daily", "entryFee": "Free", "location": "Jaitu town, Jaitu-Kotkapura Road, ~30 km from Faridkot", "facts": "Marks where Guru Gobind Singh Ji camped on a sand dune (Tibba) on 15 April 1706 and practiced archery. Site of the annual Shaheedi Jor Mela on 10 Phagun." },
+    { "name": "Gurdwara Jand Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Faridkot district (check locally)", "facts": "Historic Gurdwara associated with Guru Gobind Singh Ji, on Punjab Tourism's 'What Not to Miss' list." },
+    { "name": "Raj Mahal", "timings": "Check locally", "entryFee": "Check locally", "location": "Faridkot city", "facts": "Built 1885-1889 by Maharaja Bikrama Singh, French architectural style, ~15 acres; includes Tasveer Ghar, a Baradari, a Gurdwara, doll houses, two swimming pools." },
+    { "name": "Victoria Clock Tower (Ghanta Ghar)", "timings": "Visible at all hours", "entryFee": "Not applicable", "location": "City centre, Faridkot", "facts": "Principal heritage landmark from the late 19th/early 20th century Faridkot state." },
+    { "name": "Old Court Complex", "timings": "Check locally", "entryFee": "Not applicable", "location": "Faridkot city", "facts": "Inaugurated by Maharaja Harinder Singh Brar on 18 October 1934." },
+    { "name": "Old Jail, Faridkot", "timings": "Check locally", "entryFee": "Check locally", "location": "Faridkot city (Sadik Road)", "facts": "Held Giani Zail Singh (later first Sikh President of India) captive 1938-1943 for Praja Mandal Movement activity; jail shifted out in 2014, barrack now in ruins." },
+    { "name": "Jaito City Jail Cell", "timings": "Check locally", "entryFee": "Check locally", "location": "Jaitu town", "facts": "Where Jawaharlal Nehru was temporarily imprisoned in 1923 during the Jaito march / Gurdwara Reforms Movement." },
+    { "name": "Fairy Cottage and Picnic Spot", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Chahal Road, ~7 km from Faridkot city", "facts": "Heritage structure and eco-tourism picnic spot." },
+    { "name": "Gurdwara Gangsar Sahib, Jaitu", "timings": "Open daily", "entryFee": "Free", "location": "Jaitu town", "facts": "Guru Gobind Singh Ji blessed a small pond here to be as sacred as the Ganges; site of the annual Shaheedi Jor Mela commemorating the Jaitu Morcha martyrs." },
+    { "name": "Gurdwara Angeetha Sahib, Jaitu", "timings": "Open daily", "entryFee": "Free", "location": "Jaitu town", "facts": "Site where martyrs of the 1923-24 Jaitu Morcha were cremated." }
+  ],
+  "howToReach": {
+    "air": "Nearest international airport: Sri Guru Ram Dass Ji International Airport, Amritsar (~130km)",
+    "rail": "Faridkot Railway Station, on the Firozpur-Bathinda-Delhi line; Kotkapura and Jaitu also have stations",
+    "road": "Chandigarh (218km), Ferozepur (32km), Muktsar (45km), Bathinda (65km)",
+    "local": "Auto-rickshaws and shared vehicles"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Shri Ram Hospital", "Bikram Hospital", "Gandhi Hospital"],
+    "emergencyNumber": "112"
+  }
+}
