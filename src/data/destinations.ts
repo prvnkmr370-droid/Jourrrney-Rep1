@@ -653,6 +653,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Birla Temple", distance: "3 km", type: "Spiritual", isHidden: true, id: "birla-temple-jaipur" },
       { name: "Sisodia Rani Palace and Garden", distance: "8 km", type: "Heritage", isHidden: true, id: "sisodia-rani-garden" },
       { name: "Gaitore (Cenotaphs of the Kings)", distance: "8 km", type: "Heritage", isHidden: true, id: "gaitore" },
+      { name: "Nahargarh Biological Park", distance: "12 km", type: "Wildlife", isHidden: true, id: "nahargarh-biological-park" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24332,6 +24333,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4100,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "nahargarh-biological-park",
+    name: "Nahargarh Biological Park",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "720 Hectares of Aravalli Wilderness, Home to Big Cats and Rare Birds",
+    description: "Nahargarh Biological Park spreads across roughly 720 hectares of the Aravalli range on the outskirts of Jaipur, combining a zoological park with an actively managed forest habitat. Its zoo section houses Asiatic lions, Bengal tigers, panthers, and sloth and Himalayan black bears, while the wider park is recognised for exceptional birdlife — over 285 recorded species, including the white-naped tit, found here and almost nowhere else in India. The park's scale and Aravalli setting make it a genuine wildlife destination rather than a conventional city zoo, appealing equally to birdwatchers and to visitors wanting to see India's big cats.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/44/SW_Tiger.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/44/SW_Tiger.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/44/SW_Tiger.jpg"],
+    imageCredit: "Photo: Gautamswati — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "15 Mar–14 Oct: 8:30 AM–5:30 PM; 15 Oct–14 Mar: 9:00 AM–5:00 PM. Closed Tuesdays. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "720-hectare park across the Aravalli range" },
+      { name: "285+ recorded bird species, including the white-naped tit" },
+      { name: "Asiatic lions, Bengal tigers, panthers, sloth and Himalayan black bears" },
+      { name: "Entry: ₹50 (Indian), ₹300 (foreign national), ₹20 (student) — vehicle/camera fees separate" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~12 km from Jaipur on the Jaipur-Delhi highway", costRange: "₹200–₹500 by auto/cab from Jaipur", tips: "Closed on Tuesdays — check before planning a visit." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited as a half-day trip from Jaipur; no lodging on site." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 one-way from Jaipur", notes: "Standard way to reach the park", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Available for the Jaipur route", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nahargarh Fort", distance: "~3 km", type: "Heritage", isHidden: true, id: "nahargarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 400, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 3000, food: 1000, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24400, accommodation: 20000, food: 2500, transport: 700, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nahargarh Wildlife & Fort", morning: "Nahargarh Biological Park.", afternoon: "Nahargarh Fort, a short drive up the same ridge.", evening: "Sunset at the fort's viewpoint.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "Bring binoculars if birdwatching interests you — the park's bird diversity is a genuine draw." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A managed wildlife park with staff and marked visitor routes"],
+      precautions: ["Stick to designated paths and vehicle routes", "Visit in daylight hours only", "Follow park staff guidance around animal enclosures"],
+      soloTips: ["Best visited with a guided safari group rather than exploring alone, given the park's size"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["Designated visitor and safari routes"],
+      avoidAreas: ["Unmarked forest areas outside the visitor route"],
+    },
+    rating: 4.3,
+    reviews: 7600,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Binoculars (for birdwatching)", "Comfortable walking shoes", "Water bottle"],
   },
 
   {
