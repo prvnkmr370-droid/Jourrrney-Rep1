@@ -1,0 +1,42 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/udaipur.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Udaipur",
+  "about": "Founded 1553 by Maharana Udai Singh II as new capital of Mewar Kingdom, in the fertile circular Girwa Valley southwest of Nagda (first Mewar capital). Called 'Venice of the East' / 'City of Lakes'. Known for zinc and marble.",
+  "places": [
+    { "name": "Pratap Memorial (Moti Magri)", "location": "Moti Magri hill, overlooking Fateh Sagar", "facts": "Bronze statue of Maharana Pratap on his horse Chetak; Chetak died carrying Pratap to safety after the Battle of Haldighati." },
+    { "name": "City Palace", "location": "Hilltop above Lake Pichola, Udaipur", "facts": "Conglomeration of courtyards, pavilions, terraces; main entrance via triple-arched Tripolia gate with 8 marble porticos (Maharanas historically weighed in gold here for charity); Surajgokhada (Balcony of the Sun); Mor Chowk (peacock glass mosaics); Chini Chitrashala (blue/white ceramics); nightly sound and light show at Manak Chowk." },
+    { "name": "Lake Palace", "location": "Island in Lake Pichola, near Jagmandir", "facts": "Originally Jagniwas, built 1743-1746 as a summer palace; now a hotel; black and white marble walls with semi-precious stone inlay; faces east." },
+    { "name": "Jag Mandir", "location": "Island in Lake Pichola", "facts": "Also 'Lake Garden Palace'; construction began 1620, completed ~1652; royal summer resort; sheltered Prince Khurram (later Shah Jahan) during his rebellion against Jahangir; said to have inspired the Taj Mahal." },
+    { "name": "Monsoon Palace (Sajjangarh)", "location": "Bansdara hills, just outside Udaipur", "facts": "19th-century palace/hunting lodge built by Maharana Sajjan Singh; originally intended as an astronomical center, plan cancelled at his premature death; panoramic city views." },
+    { "name": "Ahar Museum", "location": "Near the Ahar cenotaphs of the Maharanas of Mewar", "facts": "Small collection of earthen pottery, sculptures, archaeological finds some dating to 1700 BC; 10th-century metal Buddha figure." },
+    { "name": "Jagdish Temple", "location": "Udaipur old city", "facts": "Built 1651 by Maharana Jagat Singh I; Indo-Aryan architecture; dedicated to Vishnu; three-storied, carved pillars, painted walls." },
+    { "name": "Fateh Sagar Lake", "location": "North of Lake Pichola, Udaipur", "facts": "Artificial lake connected to Pichola by canal; houses Nehru Island and the Udaipur Solar Observatory (only observatory in India on a lake island, modeled on Big Bear Lake, California); inaugurated by Duke of Connaught, originally 'Connaught Bundh'." },
+    { "name": "Lake Pichola", "location": "Central Udaipur", "facts": "Named after the village Picholi; houses Jagniwas (Lake Palace) and Jagmandir islands; City Palace on eastern bank; sunset boat rides popular." },
+    { "name": "Saheliyon Ki Bari", "location": "Udaipur", "facts": "Built by Maharana Sangram Singh II as a garden for women (Garden of the Maidens); marble elephants, fountains, kiosks, lotus pool, small museum." },
+    { "name": "Bird Park, Gulab Bagh", "location": "Gulab Bagh, Udaipur", "facts": "5.11-hectare bird park, 12 enclosures; parrots, macaws, cockatoos, Great White Pelican, Green Munia; 28 total bird species." },
+    { "name": "Sukhadia Circle", "location": "North Udaipur", "facts": "Small pond with a 21-foot, three-tiered carved marble fountain; illuminated at night; surrounded by gardens." },
+    { "name": "Bharatiya Lok Kala Mandal", "location": "Udaipur", "facts": "Cultural institution for folk art/culture/songs/festivals of Rajasthan, Gujarat, Madhya Pradesh; includes a museum of Rajasthani artefacts." },
+    { "name": "Bagore Ki Haveli", "location": "Gangaur Ghat, Lake Pichola, Udaipur", "facts": "Built 18th century by Amar Chand Badwa, Prime Minister of Mewar; 100+ rooms; costumes and modern art displays; classical haveli glass/mirror work; evening cultural dance shows." },
+    { "name": "Shilpgram", "location": "7 km west of Udaipur, near Fateh Sagar", "facts": "Rural Arts and Crafts Complex, 70 acres, surrounded by Aravallis; living museum of folk/tribal lifestyles of the west zone; hosts the 10-day Shilpgram Festival, 21-30 December." },
+    { "name": "Udai Sagar Lake", "location": "~13 km east of Udaipur", "facts": "Construction started 1559 by Maharana Udai Singh; dam on the Berach river; ~4km long, 2.5km wide, ~9m deep at its deepest." },
+    { "name": "Doodh Talai Lake", "location": "On the road to Pichola Lake, Udaipur", "facts": "Nestled between hillocks; includes Deen Dayal Upadhyay Park and Manikya Lal Verma Garden." },
+    { "name": "Jaisamand Lake", "location": "Udaipur district", "facts": "Second largest man-made sweet-water lake in Asia; built to hold back the Ruparel River; large central island home to various bird species; popular weekend picnic spot." },
+    { "name": "Navalakha Mahal, Gulab Bagh", "location": "Gulab Bagh, Udaipur", "facts": "19th-century structure; Maharishi Dayanand stayed here for ~6.5 months from 10 Aug 1882 at the invitation of Maharana Sajjan Singh; completed writing Satyarth Prakash here." },
+    { "name": "Wax Museum (Hollywood Wax Museum)", "location": "Sajjangarh road, Udaipur", "facts": "Interactive wax-figure museum; also offers 9D cinema, gaming zone, mirror maze, horror show." },
+    { "name": "Udaipur Fish Aquarium (Under the Sun)", "location": "Fateh Sagar Pal, Udaipur", "facts": "India's first hi-tech virtual fish aquarium claim; 156+ varieties of sea/freshwater fish from 16 countries at launch (up to 1500 planned); 125m gallery; touch pool for children; largest fish (Arapaima) up to 9 feet." },
+    { "name": "Vintage Car Collection", "location": "Garden Hotel grounds, Udaipur", "facts": "Vintage/classic cars (Cadillac, Chevrolet, Morris etc.) owned and used by the Maharanas of Udaipur." },
+    { "name": "The Crystal Gallery", "location": "Fateh Prakash Palace, Udaipur", "facts": "One of the largest, most complete collections of F. & C. Osler cut glass in existence; most commissioned by Maharana Sajjan Singh from 1878, larger furniture pieces from 1881; includes a jewel-studded crystal carpet and a crystal royal punkah (fan) with Mewar sun emblem; Osler founded Birmingham 1807." },
+    { "name": "Nagda / Sahastra Bahu Temple (Sas-Bahu Temples)", "location": "Nagda, 22 km from Udaipur, NH-8", "facts": "Ancient site at Aravalli foothills, traces to 6th century AD; Sahastrabahu ('one with a thousand arms', a form of Vishnu) temple complex, 9th-10th century AD, ASI-listed heritage monument; elaborate Ramayana-themed carvings; adjoining Jain temple of Adbhutji." },
+    { "name": "Badi Lake (Jiyan Sagar)", "location": "~12 km from Udaipur", "facts": "Artificial lake built by Maharana Raj Singh, named Jiyan Sagar after his mother Jana Devi; built to counter drought effects, proved valuable during the 1973 drought; surrounded by three chhatris." },
+    { "name": "Sajjangarh Biological Park", "location": "Foothills of Bansdara hills, outside Sajjangarh Wildlife Sanctuary", "facts": "36-hectare park; carnivores and herbivores in near-natural habitat enclosures; visitable on foot or paid golf-cart." },
+    { "name": "Menar", "location": "~48 km from Udaipur on Udaipur-Chittorgarh road", "facts": "Village known for migratory bird sightings in winter at two ponds, Brahm Talab and Dand Talab; a favoured spot for birders." }
+  ],
+  "howToReach": {
+    "rail": "Udaipur City railway station; Mewar Express and other trains from Delhi/Mumbai",
+    "air": "Maharana Pratap Airport (Dabok), ~22 km from city",
+    "road": "NH-48 via Ajmer from Delhi; well connected to Jaipur, Ahmedabad"
+  }
+}
