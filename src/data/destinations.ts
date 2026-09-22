@@ -78786,6 +78786,69 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable shoes for standing/walking to the gallery", "A hat or cap — seating is largely uncovered", "Water bottle"],
   },
 
+  {
+    id: "gurudwara-baba-atal-sahib",
+    name: "Gurudwara Baba Atal Sahib",
+    state: "Punjab",
+    tagline: "A Nine-Storey Tower Memorial Beside the Golden Temple's Kaulsar Sarovar",
+    description: "Gurudwara Baba Atal Sahib stands within the Golden Temple precinct beside the Kaulsar Sarovar, its nine-storey octagonal tower rising above the surrounding rooftops as one of Amritsar's most recognizable silhouettes. It memorializes Baba Atal Rai, the son of the sixth Guru, Guru Hargobind Sahib Ji, who died at the age of nine — each of the tower's nine storeys is said to represent one year of his short life. The interior walls carry frescoes depicting Guru Nanak's life and other Sikh historical scenes, and the terrace at the top offers a panoramic view over the Golden Temple complex and the old city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Photograph_of_Gurdwara_Baba_Atal_Rai_and_the_Kaulsar_Sarovar%2C_Amritsar%2C_by_Jasleen_Kaur%2C_17_September_2009.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Photograph_of_Gurdwara_Baba_Atal_Rai_and_the_Kaulsar_Sarovar%2C_Amritsar%2C_by_Jasleen_Kaur%2C_17_September_2009.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7a/Photograph_of_Gurdwara_Baba_Atal_Rai_and_the_Kaulsar_Sarovar%2C_Amritsar%2C_by_Jasleen_Kaur%2C_17_September_2009.jpg"],
+    imageCredit: "Photo: Jasleen Kaur — Wikimedia Commons, CC BY-SA 2.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "A nine-storey tower, one storey for each year of Baba Atal Rai's short life" },
+      { name: "Sits directly beside the Kaulsar Sarovar within the Golden Temple precinct" },
+      { name: "Interior frescoes depicting Guru Nanak's life and Sikh history" },
+      { name: "Panoramic terrace view over the Golden Temple complex and old city" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "Within the Golden Temple complex, a short walk from the main shrine." },
+    ],
+    accommodation: [
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["Guesthouses to luxury hotels within walking distance"], description: "Most Amritsar hotels are within easy reach of the Golden Temple complex." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Located inside the Golden Temple complex; reached on foot", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹250 within Amritsar city", notes: "Well established in Amritsar city for reaching the complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "Within the same complex", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+      { name: "Sri Akal Takht Sahib", distance: "Within the same complex", type: "Spiritual", isHidden: false, id: "akal-takht-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11000, accommodation: 8500, food: 1200, transport: 800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Golden Temple Complex", morning: "Visit the Golden Temple and Akal Takht Sahib.", afternoon: "See Gurudwara Baba Atal Sahib and the Kaulsar Sarovar.", evening: "Heritage Street.", stay: "Near the Golden Temple", meals: "Langar at the Golden Temple, local Amritsari fare", tips: "Cover your head and remove footwear before entering; the climb to the terrace has narrow stairs." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Inside the well-secured, actively-monitored Golden Temple complex"],
+      precautions: ["Dress modestly; cover your head and remove footwear before entering", "Narrow stairwells to the upper storeys — go at your own pace"],
+      soloTips: ["Comfortable for solo visitors during open hours, given the constant flow of pilgrims and complex security"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire Golden Temple complex, under continuous management and security"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 6800,
+    mustEat: ["Free langar (community meal) at the Golden Temple, open to all visitors"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear", "Comfortable shoes for stairs"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
