@@ -80807,6 +80807,121 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "gurdwara-mehdiana-sahib-moga",
+    name: "Gurdwara Sri Mehdiana Sahib",
+    state: "Punjab",
+    tagline: "The 'School of Sikh History' — Where Guru Gobind Singh Ji Decided to Write the Zafarnama",
+    description: "Gurdwara Sri Mehdiana Sahib, in village Mehdiana about 30km from Moga city, marks the spot where Guru Gobind Singh Ji halted in December 1705 during his journey through the Malwa region following the Battle of Chamkaur. He and his followers rested at the Mehdiana Dhaab, a natural water reservoir, where — at the Sangat's request — he resolved to compose the Zafarnama, his historic letter of victory to Emperor Aurangzeb. The 25-acre complex has earned the nickname 'School of Sikh History' for its extensive, brightly painted sculptures and murals depicting major figures of Sikh history, including Akali Phoola Singh, Hari Singh Nalwa, Maharaja Ranjit Singh, and Baba Deep Singh, alongside its sarovar, museum, and round-the-clock langar.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Gurudwara_Mehdiana_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/af/Gurudwara_Mehdiana_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/af/Gurudwara_Mehdiana_Sahib.jpg"],
+    imageCredit: "Photo: Aadhunik — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Daylight hours; 24-hour langar. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Where Guru Gobind Singh Ji resolved to write the Zafarnama in 1705" },
+      { name: "Known as the 'School of Sikh History' for its sculptures and murals" },
+      { name: "A 25-acre complex with a sarovar, museum, and 24-hour langar" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Moga, then to village Mehdiana", fromMumbai: "Via Moga", fromBangalore: "Via Moga", duration: "~30 km / 45min from Moga city", costRange: "₹600–₹1,400 round trip by cab from Moga", tips: "~30km from Moga city." },
+    ],
+    accommodation: [
+      { type: "Moga City Hotels", priceRange: "₹1,000–₹5,000/night", examples: ["Most visitors day-trip from Moga city"], description: "Limited accommodation directly in Mehdiana village." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 round trip", notes: "Most practical way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Sri Lohgarh Sahib (Dina Sahib)", distance: "Within the same Zafarnama pilgrimage route", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2200, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Zafarnama Pilgrimage Trail", morning: "Depart Moga for Mehdiana Sahib.", afternoon: "Explore the sculptures, museum and sarovar at Gurdwara Mehdiana Sahib.", evening: "Return to Moga, or continue to Dina Sahib.", stay: "Moga city", meals: "24-hour langar at the Gurdwara", tips: "Combine with Gurdwara Sri Lohgarh Sahib at Dina, where the Zafarnama was actually written, for the full historical route." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An actively managed, major pilgrimage complex with a constant flow of devotees"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors and pilgrims given the steady presence of devotees"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 3100,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "lala-lajpat-rai-memorial-dhudhike",
+    name: "Lala Lajpat Rai Memorial, Dhudhike",
+    state: "Punjab",
+    tagline: "Honoring the Birthplace of the 'Lion of Punjab'",
+    description: "The Lala Lajpat Rai Memorial in village Dhudhike marks the birthplace of one of India's most celebrated freedom fighters — born here on 28 January 1865, Lajpat Rai co-founded Punjab National Bank in 1894, established the Servants of the People Society in 1921, and led the protest against the Simon Commission in Lahore in 1928 that resulted in the police lathi charge injuries from which he died weeks later. The memorial, whose foundation stone was laid by President Rajendra Prasad in 1959 and which was inaugurated by Prime Minister Lal Bahadur Shastri in 1965, now includes a striking modern library building alongside a government college and stadium dedicated to his memory. Every 28 January, the village hosts the Lala Lajpat Rai Janam Diwas Khed Mela, a rural sports festival honoring his legacy.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Lala_Lajpat_Rai_Memorial_Library_at_Dhudike.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/26/Lala_Lajpat_Rai_Memorial_Library_at_Dhudike.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/26/Lala_Lajpat_Rai_Memorial_Library_at_Dhudike.jpg"],
+    imageCredit: "Photo: Sarbjit Bahga — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Birthplace of Lala Lajpat Rai, the 'Lion of Punjab', on 28 January 1865" },
+      { name: "Memorial library inaugurated by PM Lal Bahadur Shastri in 1965" },
+      { name: "A government college and stadium also dedicated to his memory" },
+      { name: "Annual Khed Mela (rural sports festival) every 28 January" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Moga, then to village Dhudhike", fromMumbai: "Via Moga", fromBangalore: "Via Moga", duration: "~20 km from Moga city (exact distance varies by route)", costRange: "₹500–₹1,200 round trip by cab from Moga", tips: "Within Moga district." },
+    ],
+    accommodation: [
+      { type: "Moga City Hotels", priceRange: "₹1,000–₹5,000/night", examples: ["Most visitors day-trip from Moga city"], description: "Limited accommodation directly in Dhudhike village." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach the memorial", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Geeta Bhawan Temple, Moga", distance: "Within Moga city", type: "Spiritual", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 5500, food: 1200, transport: 800, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Moga Freedom Movement Heritage", morning: "Visit the Lala Lajpat Rai Memorial at Dhudhike.", afternoon: "Moga city parks and Geeta Bhawan Temple.", evening: "Shahidi Park.", stay: "Moga city", meals: "Local Malwa-region Punjabi fare", tips: "Visit on 28 January for the annual Khed Mela if timing allows, though expect large crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, respected heritage and educational site"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The memorial and college campus during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 1400,
+    mustEat: ["Local Moga-district Punjabi fare"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

@@ -1,0 +1,27 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/mansa/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Mansa",
+  "about": "Punjab's smallest district by area and population, in the cotton belt ('Land of White Gold'). Formed from Bathinda district in 1992. Three tehsils: Mansa, Budhlada, Sardulgarh.",
+  "places": [
+    { "name": "Smadh of Bhai Gurdas", "timings": "Open daily", "entryFee": "Free", "location": "South-east of Mansa city", "facts": "Memorial to Bhai Gurdas, who founded Mansa town after renouncing worldly life here; annual March-April fair draws both Hindus and Sikhs." },
+    { "name": "Sardulgarh Fort", "timings": "Check locally", "entryFee": "Check locally", "location": "Sardulgarh town, ~37km from Mansa", "facts": "Built by the Maharaja of Patiala; town renamed for Sardul Singh who hunted here; fort now houses the local police station." },
+    { "name": "Gurdwara Patshahi Nauvin", "timings": "Open daily", "entryFee": "Free", "location": "Mansa district", "facts": "Commemorates Guru Tegh Bahadur Ji's visit." },
+    { "name": "Gurdwara Bhai Bahilon Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Mansa district", "facts": "Named after Bhai Bahilon Ji." },
+    { "name": "Gurdwara Guru Tegh Bahadur Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Mansa district", "facts": "Associated with Guru Tegh Bahadur Ji." },
+    { "name": "Gaushala and Picnic Spot, Khokar Kalan", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Village Khokar Kalan, 7-8km from Mansa city", "facts": "Cow shelter with a park, lake, boating, children's area and temple." },
+    { "name": "Sardulgarh Thermal Plant", "timings": "Check locally, may require permission", "entryFee": "Check locally", "location": "Sardulgarh, Mansa district", "facts": "Listed as an eco-tourism/industrial interest site." }
+  ],
+  "howToReach": {
+    "air": "Bathinda Airport (~65km)",
+    "rail": "Mansa Railway Station, on the Bathinda-Jind-Delhi line",
+    "road": "On NH 703, Barnala-Sardulgarh-Sirsa Highway"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Singhal Stars Hospital, Mansa"],
+    "emergencyNumber": "112"
+  }
+}

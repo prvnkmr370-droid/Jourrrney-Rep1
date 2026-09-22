@@ -1,0 +1,25 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/moga/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Moga",
+  "about": "Formed 1995, carved from Faridkot district. Birthplace of Lala Lajpat Rai (village Dhudhike). Guru Gobind Singh Ji wrote the Zafarnama at village Dina here in 1705. Village Daroli Bhai is the birthplace of Baba Gurditta Ji (1613).",
+  "places": [
+    { "name": "Gurdwara Sri Lohgarh Sahib (Dina Sahib), Village Dina", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Dina, Tehsil Nihal Singh Wala, ~48km from Moga Railway Station on Moga-Bathinda Road", "facts": "Guru Gobind Singh Ji stayed here in December 1705 after leaving Anandpur Sahib; composed the Zafarnama here, sent via Bhai Daya Singh and Bhai Dharam Singh. Annual Maghi fair 13-14 January." },
+    { "name": "Gurdwara Sri Mehdiana Sahib, Village Mehdiana", "timings": "Daylight hours; 24-hour langar", "entryFee": "Free", "location": "Village Mehdiana, ~30km from Moga city", "facts": "Guru Gobind Singh Ji halted at Mehdiana Dhaab (a natural reservoir) in 1705, decided to compose the Zafarnama here. Known as the 'School of Sikh History' for its sculptures/paintings of Sikh figures; 25-acre complex." },
+    { "name": "Gurdwara Nanaksar Sahib (Takhtupura Sahib), Village Takhtupura", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Takhtupura, 32km southeast of Moga on Moga-Barnala Road", "facts": "Sanctified by visits of Guru Nanak Dev Ji, Guru Hargobind Sahib Ji (after Battle of Mehraj, Dec 1634), and Guru Gobind Singh Ji (Dec 1705); three shrines around the Nanaksar sarovar. Annual Jor Mela 13-17 January." },
+    { "name": "Daroli Bhai — Gurdwaras Complex, Village Daroli Bhai Ki", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Daroli Bhai Ki, 14km west of Moga on Moga-Ferozepur Road", "facts": "Birthplace (1613) of Baba Gurditta Ji, elder son of Guru Hargobind Sahib Ji; 4 historic Gurdwaras including the preserved house of Bhai Saain Das." },
+    { "name": "Gurdwara Gurusar, Moga", "timings": "Daylight hours", "entryFee": "Free", "location": "Moga district", "facts": "Listed among prominent Gurdwaras of the district." },
+    { "name": "Lala Lajpat Rai Memorial, Dhudhike", "timings": "Check locally", "entryFee": "Check locally", "location": "Village Dhudhike, Moga district", "facts": "Birthplace (28 Jan 1865) of Lala Lajpat Rai; memorial foundation laid by President Rajendra Prasad 1959, inaugurated by PM Lal Bahadur Shastri on 28 Jan 1965. Annual Khed Mela on 28 January." },
+    { "name": "Shahidi Park, Moga", "timings": "Daylight hours", "entryFee": "Free", "location": "Moga city", "facts": "Commemorative public park marking a historical event." },
+    { "name": "Geeta Bhawan Temple, Moga", "timings": "Check locally", "entryFee": "Free", "location": "Moga city, south corner of Kashmiri Park", "facts": "Hindu temple with mosaic and mirror work; runs Geeta Bhawan Public School." },
+    { "name": "City Parks — Kashmiri Park & Nehru Park", "timings": "Daylight hours", "entryFee": "Free", "location": "Moga city", "facts": "Public parks for leisure and family recreation." }
+  ],
+  "howToReach": {
+    "note": "Moga is on the Ferozepur-Ludhiana road; falls under Ferozepur Division."
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March"
+  }
+}
