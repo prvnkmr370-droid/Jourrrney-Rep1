@@ -1,0 +1,30 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/barnala/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Barnala",
+  "about": "Centrally located district in the Malwa region, carved out of Sangrur district on 19 November 2006. Known for textile industry, agricultural output, and Malwa culture. Name possibly from 'Barn' (a Sandhu resident) + 'Ala' (Baba Ala Singh) or from 'Vaaran' (place of repeated storms). Originally known as Anahatgarh. Recorded history begins with Baba Ala Singh Ji, who built a fort here in the early 18th century.",
+  "places": [
+    { "name": "Quilla Mahal", "timings": "Open through the day", "entryFee": "Not applicable", "location": "Quilla Mahal, Barnala city", "facts": "Oldest part of Barnala town; site of Baba Ala Singh Ji's 18th-century fort (no longer standing); distinctive drainage system; old bazaars sell Phulkari, woodwork jewellery, and traditional textiles." },
+    { "name": "Dera Baba Gandha Singh", "timings": "Daylight hours", "entryFee": "Free", "location": "Bajakhana Road, Barnala", "facts": "Historic Gurdwara founded by Pandit Nika Singh at the request of Baba Ala Singh's daughter Pradhan Kaur; preserves the original Chula (oven) used for langar, hence the alternate name Baba Chula Sahib." },
+    { "name": "Gurdwara Nanaksar Thath", "timings": "Daylight hours", "entryFee": "Free", "location": "Court Chowk to ITI Road, Barnala", "facts": "One of the most visited Gurdwaras in Barnala." },
+    { "name": "Gurdwara Patshahi Naumi, Sekha", "timings": "Daylight hours", "entryFee": "Free", "location": "Sekha village, 7 km from Barnala on Barnala Road", "facts": "Marks the site where Guru Teg Bahadur Ji meditated during his travels through Malwa; Sekha was historically a cluster of 22 villages known as Bahia." },
+    { "name": "Gurdwara Gurusar Pakka Sahib Patshahi Nauvin, Handiaya", "timings": "Daylight hours", "entryFee": "Free", "location": "Handiaya, 6 km from Barnala", "facts": "Associated with Guru Teg Bahadur Ji." },
+    { "name": "Gurdwara Sahib Arrisar Patshahi Nauvin, Handiaya", "timings": "Daylight hours", "entryFee": "Free", "location": "Handiaya, 11 km from Barnala on Mansa-Barnala Road", "facts": "Associated with Guru Teg Bahadur Ji." },
+    { "name": "Memorial Gurdwara of Bhai Moola Singh", "timings": "Daylight hours", "entryFee": "Free", "location": "Barnala district", "facts": "Located in the heart of the village; minimal detail given by source." },
+    { "name": "Tila of Baba Tehal Das", "timings": "Daylight hours", "entryFee": "Free", "location": "Barnala district", "facts": "A shared spiritual site housing both a Gurdwara and a temple." },
+    { "name": "Geeta Bhawan", "timings": "Check locally", "entryFee": "Free", "location": "Barnala city centre", "facts": "Radha Krishna temple managed by Om Sat Sanatan Geeta Bhawan Trust." },
+    { "name": "Trident Group", "timings": "Not open to general visitors", "entryFee": "Not applicable", "location": "Barnala district", "facts": "Large textile/agro-industrial enterprise; not a visitable tourist site." }
+  ],
+  "howToReach": {
+    "air": "No regular flights to Barnala; nearest airport is Ludhiana Airport, Chandigarh Airport as alternative",
+    "rail": "Barnala Railway Station (station code BNN)",
+    "road": "Regular bus services from Sangrur, Bathinda, Ludhiana",
+    "local": "Auto-rickshaws and local vehicles"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": "Check with District Administration, Barnala"
+  }
+}

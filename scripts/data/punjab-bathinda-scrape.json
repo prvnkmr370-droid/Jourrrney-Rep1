@@ -1,0 +1,28 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/bathinda-city-of-lakes/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Bathinda",
+  "about": "Popularly known as the City of Lakes (five artificial lakes). Ancient city of the Malwa region, founded by Bhati Rao. Became a PEPSU district in 1948, full Punjab district after 1956. Qila Mubarak is among the oldest surviving forts in India, older/larger than the forts at Lahore, Phillour and Hanumangarh; Razia Sultana was imprisoned there in 1240 AD.",
+  "places": [
+    { "name": "Takht Sri Damdama Sahib, Talwandi Sabo", "timings": "Daylight hours", "entryFee": "Free", "location": "Talwandi Sabo town, ~30 km from Bathinda city", "facts": "One of the five Takhts of Sikhism, called 'Guru Ki Kashi'. Guru Gobind Singh Ji rested here for 9 months 9 days after the battles of Anandpur Sahib, Chamkaur Sahib and Muktsar, and re-dictated the Adi Granth in its final form here. Headquarters of the Nihang Singhs. Ten Gurdwaras and three sarovars (Nanksar, Akalsar, Gurusar) in the complex." },
+    { "name": "Qila Mubarak", "timings": "Daylight hours", "entryFee": "Check locally", "location": "City centre, Bathinda", "facts": "Among the oldest surviving forts in India, origins traced to the 3rd century; larger than the forts at Lahore, Phillour and Hanumangarh. Besieged by Mahmud Ghazni (1000 AD), captured by Muhammad Ghori (1189), recovered by Prithviraj Chauhan (1191). Razia Sultana, first woman ruler of India, was imprisoned here in 1240. Guru Gobind Singh Ji stayed here in 1705. ASI conservation work ongoing." },
+    { "name": "Maisar Khana Mandir", "timings": "Daylight hours", "entryFee": "Free", "location": "Maisar Khana village, 29 km from Bathinda on Bathinda-Mansa Road", "facts": "Temple to Goddess Durga and Mata Jwala Ji; two annual Ashtami Melas draw large crowds." },
+    { "name": "Mini Zoo and Deer Safari, Bir Talab", "timings": "Tue-Sun 9am-5pm, closed Mondays", "entryFee": "Check with Punjab Forest Department", "location": "Village Bir Talab, ~6 km from Bathinda city", "facts": "161-acre zoological park with mammals, birds, reptiles, amphibians; deer safari, children's rides, picnic lawns." },
+    { "name": "Chetak Park", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Cantonment area, ~5 km from Bathinda on Bathinda-Barnala Road", "facts": "Green space with manicured gardens, small boating lake, named after Maharana Pratap's horse Chetak. ID required for cantonment entry." },
+    { "name": "Rose Garden", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Near Guru Nanak Dev Thermal Plant, Bathinda city", "facts": "10-acre garden with a large variety of roses, best in winter; picnic and morning-walk spot." }
+  ],
+  "howToReach": {
+    "air": "Bathinda Airport ~25-26km, flights to Delhi and Jammu; Chandigarh Airport ~225km",
+    "rail": "Bathinda Junction, major railway hub on the Ambala-Bathinda line",
+    "road": "PRTC/PUNBUS from Bathinda Bus Stand; well connected to Delhi, Ludhiana, Jaipur, Jammu, Chandigarh",
+    "local": "Auto-rickshaws and shared tempos"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "emergencyNumbers": { "police": "100", "ambulance": "108", "fire": "101", "childHelpline": "1098", "womenHelpline": "1091" },
+    "punjabGrievanceHelpline": "1100",
+    "medical": "AIIMS Bathinda — 0164-2868710"
+  }
+}

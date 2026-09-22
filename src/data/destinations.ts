@@ -79398,6 +79398,132 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Water bottle — limited facilities on-site"],
   },
 
+  {
+    id: "qila-mubarak-bathinda",
+    name: "Qila Mubarak",
+    state: "Punjab",
+    tagline: "One of India's Oldest Surviving Forts, Where Razia Sultana Was Once Imprisoned",
+    description: "Qila Mubarak stands at the heart of Bathinda city as one of the oldest surviving forts in India, with origins traced to the 3rd century and a scale larger than the forts at Lahore, Phillour and Hanumangarh. Its massive mud-brick ramparts have witnessed an extraordinary span of history: besieged by Mahmud Ghazni around 1000 AD, captured by Muhammad Ghori in 1189 and recovered by Prithviraj Chauhan in 1191, and the site where Razia Sultana, the first woman ruler of India, was imprisoned in 1240. Guru Gobind Singh Ji stayed here in 1705, and the fort today houses Gurdwara Sri Qila Mubarak Sahib alongside ongoing Archaeological Survey of India conservation work.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Qila_Mubarak_in_Bathinda.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Qila_Mubarak_in_Bathinda.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6d/Qila_Mubarak_in_Bathinda.jpg"],
+    imageCredit: "Photo: Guneeta — Wikimedia Commons, public domain.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Daylight hours. Entry: check locally. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Among the oldest surviving forts in India, origins traced to the 3rd century" },
+      { name: "Site of Razia Sultana's 1240 AD imprisonment" },
+      { name: "Besieged and fought over by Mahmud Ghazni, Muhammad Ghori and Prithviraj Chauhan" },
+      { name: "Guru Gobind Singh Ji stayed here in 1705" },
+      { name: "Houses Gurdwara Sri Qila Mubarak Sahib" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Bathinda Airport, flights to Delhi and Jammu", fromMumbai: "Via Delhi, then to Bathinda", fromBangalore: "Via Delhi, then to Bathinda", duration: "Domestic connections via Delhi/Jammu", costRange: "₹3,500–₹10,000", tips: "At the heart of Bathinda city." },
+      { mode: "Train", icon: "🚆", fromDelhi: "Direct trains to Bathinda Junction (Ambala-Bathinda line)", fromMumbai: "Direct connections available", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,500", tips: "Bathinda Junction is a major railway hub in northern Punjab." },
+    ],
+    accommodation: [
+      { type: "Bathinda City Hotels", priceRange: "₹800–₹6,000/night", examples: ["City-center hotels near the fort"], description: "Bathinda has a developing hotel scene given its role as an education and healthcare hub." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the fort", available: true },
+      { mode: "Shared Tempo", cost: "₹20–₹50", notes: "Common local transport within Bathinda city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Takht Sri Damdama Sahib", distance: "~30 km", type: "Spiritual", isHidden: false, id: "damdama-sahib-talwandi-sabo" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bathinda Heritage", morning: "Explore Qila Mubarak and Gurdwara Sri Qila Mubarak Sahib.", afternoon: "Visit the Rose Garden and Chetak Park.", evening: "Local Malwa-style dinner.", stay: "Bathinda city", meals: "Malwa-region Punjabi fare", tips: "Combine with a half-day trip to Takht Sri Damdama Sahib at Talwandi Sabo, ~30km away." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located heritage site under ASI conservation"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The fort complex and city centre during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 5200,
+    mustEat: ["Makki di Roti with Sarson da Saag", "Dal makhani and tandoori roti at roadside dhabas"],
+    packingTips: ["Comfortable walking shoes for the fort's ramps and stairs", "Sun protection in warmer months"],
+  },
+
+  {
+    id: "damdama-sahib-talwandi-sabo",
+    name: "Takht Sri Damdama Sahib",
+    state: "Punjab",
+    tagline: "One of Sikhism's Five Takhts, Where the Guru Granth Sahib Was Finalized",
+    description: "Takht Sri Damdama Sahib, in the town of Talwandi Sabo about 30km from Bathinda, is one of the five Takhts — the highest seats of temporal authority in Sikhism — and is known as 'Guru Ki Kashi,' the Varanasi of the Guru, for its centrality to Sikh learning. After his fiercest battles with the Mughals at Anandpur Sahib, Chamkaur Sahib and Muktsar, Guru Gobind Singh Ji retired here and rested (dam) for nine months and nine days, during which he re-dictated the Adi Granth into its final, definitive form. The complex today includes ten Gurdwaras and three sacred sarovars — Nanksar, Akalsar and Gurusar — and serves as the headquarters of the Nihang Singhs.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Takht_Sri_Damdama_Sahib%2C_Talwandi_Sabo.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/89/Takht_Sri_Damdama_Sahib%2C_Talwandi_Sabo.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/89/Takht_Sri_Damdama_Sahib%2C_Talwandi_Sabo.jpg"],
+    imageCredit: "Photo: Kuldeepburjbhalaike — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Daylight hours (open throughout the day for a Takht). Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "One of the five Takhts, the highest seats of Sikh temporal authority" },
+      { name: "Where Guru Gobind Singh Ji re-dictated the Adi Granth into its final form" },
+      { name: "Ten Gurdwaras and three sacred sarovars within the complex" },
+      { name: "Headquarters of the Nihang Singhs" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Bathinda Junction, then ~30km by road", fromMumbai: "Via major junctions to Bathinda", fromBangalore: "Via major junctions to Bathinda", duration: "Varies by train, plus ~45min by road", costRange: "₹300–₹1,500 + local transport", tips: "Talwandi Sabo is ~30km from Bathinda Junction." },
+    ],
+    accommodation: [
+      { type: "Bathinda City Hotels", priceRange: "₹800–₹6,000/night", examples: ["Most visitors stay in Bathinda and day-trip to Talwandi Sabo"], description: "Limited accommodation directly in Talwandi Sabo; Gurdwara-run stays may also be available for pilgrims." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,200 round trip from Bathinda", notes: "Most convenient way to reach Talwandi Sabo", available: true },
+      { mode: "Bus", cost: "₹30–₹60", notes: "Regular bus services connect Bathinda to Talwandi Sabo", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak", distance: "~30 km", type: "Heritage", isHidden: false, id: "qila-mubarak-bathinda" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 600, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh Heritage Day Trip from Bathinda", morning: "Depart Bathinda for Talwandi Sabo.", afternoon: "Visit Takht Sri Damdama Sahib and its Gurdwaras and sarovars.", evening: "Return to Bathinda.", stay: "Bathinda city", meals: "Free langar at the Takht complex", tips: "The Baisakhi Mela in April is the most significant and crowded time to visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An actively managed, major Sikh religious complex with a constant flow of pilgrims"],
+      precautions: ["Dress modestly; cover your head before entering Gurdwara areas"],
+      soloTips: ["Comfortable for solo visitors, including pilgrims, given the steady presence of devotees and Nihang Singh caretakers"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "1091" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire Takht complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 9800,
+    mustEat: ["Free langar (dal, sabzi, roti) at the Takht complex, open to all visitors"],
+    packingTips: ["A scarf or head covering", "Modest clothing", "Comfortable footwear, easy to remove"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
