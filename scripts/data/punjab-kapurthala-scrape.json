@@ -1,0 +1,28 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/kapurthala/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Kapurthala",
+  "about": "Doaba-region district known as the 'Paris of Punjab' for its Indo-French architecture, shaped by Maharaja Jagatjit Singh's admiration for European styles. Also home to Sultanpur Lodhi, where Guru Nanak Dev Ji attained enlightenment in 1499.",
+  "places": [
+    { "name": "Jagatjit Palace", "timings": "Exterior viewing during daylight hours", "entryFee": "Check locally", "location": "Kapurthala City", "facts": "Built 1908 by Maharaja Jagatjit Singh, modelled on the Palace of Versailles; Indo-Saracenic architecture; now houses Sainik School." },
+    { "name": "Moorish Mosque", "timings": "10am-11pm", "entryFee": "Free", "location": "Kapurthala City", "facts": "Completed 1930, designed by French architect M. Manteaux, inspired by the Grand Mosque of Marrakesh." },
+    { "name": "Panch Mandir", "timings": "Daylight hours", "entryFee": "Free", "location": "Kapurthala City", "facts": "'Five Temples'; built during the reign of Sardar Fateh Singh Ahluwalia; silver entrance door." },
+    { "name": "Kanjli Wetland", "timings": "Daylight hours", "entryFee": "Check locally", "location": "~4 km from Kapurthala City", "facts": "Ramsar wetland of international importance, created 1870 via headworks on the Kali Bein; ~490 hectares." },
+    { "name": "Sultanpur Lodhi", "timings": "Open throughout the day", "entryFee": "Free", "location": "~35 km from Kapurthala", "facts": "Where Guru Nanak Dev Ji attained enlightenment on the banks of the Kali Bein in 1499; home to Gurdwara Ber Sahib." },
+    { "name": "Pushpa Gujral Science City", "timings": "As notified by management", "entryFee": "Check locally", "location": "Kapurthala District", "facts": "One of the largest science centres in northern India; interactive exhibits, planetarium." },
+    { "name": "Shalimar Garden", "timings": "Daylight hours", "entryFee": "Free", "location": "Kapurthala City", "facts": "Landscaped public garden from the princely era." }
+  ],
+  "howToReach": {
+    "air": "Sri Guru Ram Dass Jee International Airport, Amritsar (~75km)",
+    "rail": "Kapurthala Railway Station",
+    "road": "~20km from Jalandhar, ~75km from Amritsar, ~165km from Chandigarh"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Civil Hospital Kapurthala"],
+    "emergencyNumbers": { "emergency": "112", "ambulance": "108", "womenHelpline": "1091", "childHelpline": "1098" },
+    "punjabGrievanceHelpline": "1100"
+  }
+}

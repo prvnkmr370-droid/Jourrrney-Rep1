@@ -80227,6 +80227,183 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection"],
   },
 
+  {
+    id: "jagatjit-palace-kapurthala",
+    name: "Jagatjit Palace",
+    state: "Punjab",
+    tagline: "Punjab's 'Versailles' — a Princely Palace Modeled on France's Most Famous Chateau",
+    description: "Jagatjit Palace, built in 1908 by Maharaja Jagatjit Singh, is the most iconic symbol of Kapurthala's 'Paris of Punjab' identity. Modeled directly on the Palace of Versailles, its grand domed facade and formal approach reflect the Maharaja's deep admiration for French architecture — a taste shared across the district's other landmarks. Once the residence of the Kapurthala royal family, the palace today houses the Sainik School, so most visitors take in its remarkable Indo-Saracenic exterior and grounds from outside rather than touring the interior.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Jagatjit_Palace_-_Kapurthala_Sainik_School.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Jagatjit_Palace_-_Kapurthala_Sainik_School.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2f/Jagatjit_Palace_-_Kapurthala_Sainik_School.jpg"],
+    imageCredit: "Photo: MSharma — Wikimedia Commons, public domain.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Exterior viewing during daylight hours; it is a working school. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1908 by Maharaja Jagatjit Singh, modeled on the Palace of Versailles" },
+      { name: "Indo-Saracenic architecture blending European and Indian styles" },
+      { name: "Now houses the Sainik School" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Kapurthala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,800", tips: "Kapurthala City, ~20km from Jalandhar." },
+    ],
+    accommodation: [
+      { type: "Kapurthala/Jalandhar Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Most visitors day-trip from Jalandhar"], description: "Limited hotel options directly in Kapurthala; Jalandhar offers a wider range." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the palace", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Moorish Mosque", distance: "Within Kapurthala city", type: "Heritage", isHidden: false, id: "moorish-mosque-kapurthala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2200, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5500, food: 1200, transport: 800, activities: 900 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kapurthala's French-Inspired Heritage", morning: "View Jagatjit Palace from the exterior.", afternoon: "Moorish Mosque and Panch Mandir.", evening: "Shalimar Garden.", stay: "Kapurthala or Jalandhar", meals: "Local Doaba-region Punjabi fare", tips: "The palace is a working school — view respectfully from the exterior and grounds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located heritage landmark"],
+      precautions: ["Standard heritage-site precautions; it is an active school campus"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The exterior grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 3600,
+    mustEat: ["Local Kapurthala street food"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "moorish-mosque-kapurthala",
+    name: "Moorish Mosque",
+    state: "Punjab",
+    tagline: "A Replica of Marrakesh's Grand Mosque, Built by a French Architect for a Sikh Maharaja",
+    description: "The Moorish Mosque in Kapurthala, completed in 1930 after 13 years of construction, is one of Punjab's most unusual monuments — a close replica of the Grand Mosque of Marrakesh in Morocco, designed by French architect M. Manteaux and commissioned by Maharaja Jagatjit Singh. Its terracotta-pink walls, horseshoe arches, and tall minaret reflect the Maharaja's eclectic architectural tastes and the secular, pluralist character of the Kapurthala princely state. Now a National Monument under the Archaeological Survey of India, it remains one of the finest examples of Moorish architecture found anywhere in India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/52/Moorish_Mosque_of_Kapurthala_in_the_state_of_Punjab_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/52/Moorish_Mosque_of_Kapurthala_in_the_state_of_Punjab_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/52/Moorish_Mosque_of_Kapurthala_in_the_state_of_Punjab_01.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "11:00 PM", note: "10am–11pm daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "A close replica of the Grand Mosque of Marrakesh, Morocco" },
+      { name: "Designed by French architect M. Manteaux; built 1917–1930" },
+      { name: "Commissioned by Maharaja Jagatjit Singh of Kapurthala" },
+      { name: "A National Monument under the Archaeological Survey of India" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Kapurthala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,800", tips: "Kapurthala City." },
+    ],
+    accommodation: [
+      { type: "Kapurthala/Jalandhar Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Most visitors day-trip from Jalandhar"], description: "Limited hotel options directly in Kapurthala." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the mosque", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jagatjit Palace", distance: "Within Kapurthala city", type: "Heritage", isHidden: false, id: "jagatjit-palace-kapurthala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2200, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8200, accommodation: 5500, food: 1200, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kapurthala's French-Inspired Heritage", morning: "Jagatjit Palace exterior.", afternoon: "Moorish Mosque.", evening: "Panch Mandir and Shalimar Garden.", stay: "Kapurthala or Jalandhar", meals: "Local Doaba-region Punjabi fare", tips: "Late afternoon light works well for photographing the terracotta-pink facade." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-maintained national monument with regular visitors"],
+      precautions: ["Dress modestly; standard mosque-visit etiquette"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The mosque grounds during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2900,
+    mustEat: ["Local Kapurthala street food"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "gurdwara-ber-sahib-sultanpur-lodhi",
+    name: "Gurdwara Ber Sahib, Sultanpur Lodhi",
+    state: "Punjab",
+    tagline: "Where Guru Nanak Dev Ji Attained Enlightenment on the Banks of the Kali Bein",
+    description: "Gurdwara Ber Sahib, in Sultanpur Lodhi about 35km from Kapurthala, marks one of the most sacred sites in Sikhism — where Guru Nanak Dev Ji, bathing in the Kali Bein rivulet in 1499, is believed to have attained enlightenment and began his spiritual mission that led to the founding of Sikhism. The town takes its name from an ancient jujube (ber) tree said to have been planted by the Guru himself, still standing beside the Gurdwara today. The site draws pilgrims year-round and especially during Guru Nanak's Prakash Purab, when large gatherings converge on the town's historic Gurdwaras.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gurdwara_Shri_Ber_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gurdwara_Shri_Ber_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6e/Gurdwara_Shri_Ber_Sahib.jpg"],
+    imageCredit: "Photo: Guglani — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Site of Guru Nanak Dev Ji's enlightenment in 1499, on the banks of the Kali Bein" },
+      { name: "An ancient ber (jujube) tree said to have been planted by the Guru himself" },
+      { name: "One of the most sacred sites in Sikh history, drawing pilgrims year-round" },
+      { name: "Major gatherings during Guru Nanak's Prakash Purab" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kapurthala or Jalandhar, then to Sultanpur Lodhi", fromMumbai: "Via Jalandhar", fromBangalore: "Via Jalandhar", duration: "~35 km / 1h from Kapurthala", costRange: "₹700–₹1,600 round trip by cab from Kapurthala", tips: "~40km from Kapurthala; well signposted given its religious significance." },
+    ],
+    accommodation: [
+      { type: "Kapurthala/Jalandhar Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Most pilgrims day-trip from Kapurthala or Jalandhar"], description: "Gurdwara-run stays may also be available for pilgrims." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,600 round trip", notes: "Most practical way to reach Sultanpur Lodhi", available: true },
+      { mode: "Bus", cost: "₹40–₹80", notes: "Regular bus services connect Kapurthala/Jalandhar to Sultanpur Lodhi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kanjli Wetland", distance: "Within Kapurthala district", type: "Nature", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh Origins Pilgrimage", morning: "Depart for Sultanpur Lodhi.", afternoon: "Visit Gurdwara Ber Sahib and the town's other historic Gurdwaras along the Kali Bein.", evening: "Return to Kapurthala or Jalandhar.", stay: "Kapurthala or Jalandhar", meals: "Free langar at the Gurdwara", tips: "Visit during Guru Nanak's Prakash Purab for the full atmosphere, if timing allows, though expect large crowds." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, actively managed pilgrimage site with a constant flow of devotees"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors and pilgrims, given the steady presence of devotees and Gurdwara staff"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara complex and surrounding pilgrimage area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 7200,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
