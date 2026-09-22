@@ -2978,6 +2978,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Bagore Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "bagore-ki-haveli" },
       { name: "Jag Mandir", distance: "On Lake Pichola", type: "Heritage", isHidden: true, id: "jag-mandir" },
       { name: "Ahar Cenotaphs and Museum", distance: "3 km", type: "Heritage", isHidden: true, id: "ahar-cenotaphs-museum" },
+      { name: "Shilpgram", distance: "7 km", type: "Culture", isHidden: true, id: "shilpgram" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3650,6 +3651,65 @@ export const DESTINATIONS: Destination[] = [
     rating: 4.3,
     reviews: 3700,
     mustEat: ["Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "shilpgram",
+    name: "Shilpgram",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Rural Arts and Crafts Complex"],
+    tagline: "A 70-Acre Living Museum of Folk Life From the Western Zone",
+    description: "Shilpgram, about 7 km west of Udaipur near Fateh Sagar Lake, is a rural arts and crafts complex spread over roughly 70 acres in the foothills of the Aravallis. Conceived as a living museum, it recreates traditional huts and dwellings representing the folk and tribal lifestyles of India's western states, and hosts resident and visiting craftspeople demonstrating pottery, weaving, and other traditional skills. The complex comes especially alive during the ten-day Shilpgram Festival, held from 21 to 30 December each year, which draws artists and performers from across the region for a concentrated showcase of folk music, dance, and craft.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Shilpgram_Udaipur_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Shilpgram_Udaipur_2.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/8b/Shilpgram_Udaipur_2.jpg"],
+    imageCredit: "Photo: Surenders25 — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English, Hindi, and Punjabi Wikipedia articles for Shilpgram, Udaipur.",
+    category: ["Culture"],
+    bestSeason: "October – February (December for the Shilpgram Festival)",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "11:00 AM", closes: "7:00 PM", note: "Shilpgram Festival runs 21–30 December annually. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "70-acre living museum of folk and tribal lifestyles" },
+      { name: "Reconstructed traditional huts from India's west zone" },
+      { name: "Resident craftspeople demonstrating pottery and weaving" },
+      { name: "Ten-day Shilpgram Festival, 21–30 December" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~7 km west of Udaipur, near Fateh Sagar Lake", costRange: "₹150–₹400 by auto/cab from central Udaipur", tips: "Visiting during the December festival gives a much livelier experience than an ordinary day visit." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Visited as a half-day trip from central Udaipur." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹150–₹350 from central Udaipur", notes: "Standard way to reach Shilpgram", available: true },
+      { mode: "App Cab (Ola)", cost: "₹150–₹400", notes: "Reliable from Udaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Fateh Sagar Lake", distance: "~3 km", type: "Nature", isHidden: true, id: "fateh-sagar-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1450, accommodation: 700, food: 400, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5000, accommodation: 3500, food: 1000, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34700, accommodation: 30000, food: 3000, transport: 600, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Crafts & Lake Circuit", morning: "Shilpgram.", afternoon: "Fateh Sagar Lake and Saheliyon Ki Bari.", evening: "Sunset from Moti Magri.", stay: "Udaipur", meals: "Rajasthani thali", tips: "Watch for live craft demonstrations — timing can vary by season and festival calendar." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed cultural complex with regular daytime visitor traffic, especially during the December festival"],
+      precautions: ["Standard sightseeing precautions"],
+      soloTips: ["Comfortable for solo daytime visits, and especially lively (and busy) during the December festival"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The complex grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 5300,
+    mustEat: ["Rajasthani thali", "Festival street food during the Shilpgram Festival"],
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
