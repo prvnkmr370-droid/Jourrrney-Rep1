@@ -79095,6 +79095,66 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "punjab-war-heroes-memorial-amritsar",
+    name: "Punjab State War Heroes' Memorial and Museum",
+    state: "Punjab",
+    tagline: "A Towering Tribute to Punjab's Soldiers, From Ranjit Singh's Era to Kargil",
+    description: "The Punjab State War Heroes' Memorial and Museum, about 11km from the Golden Temple, honors the soldiers of Punjab across two centuries of military history. Its centerpiece is a striking 45-metre sword-shaped monument flanked by four lion heads, symbolizing valor and strength. Inside, galleries trace military memorabilia from the era of Maharaja Ranjit Singh through to the 1999 Kargil War, complemented by a 7D theatre presenting the 1965 and 1971 India-Pakistan wars — making it one of the more immersive military-history stops in the Amritsar area.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/07/The_War_Memorial_in_Amritsar_%281%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/07/The_War_Memorial_in_Amritsar_%281%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/07/The_War_Memorial_in_Amritsar_%281%29.jpg"],
+    imageCredit: "Photo: Shagil Muzhappilangad — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "9:30 AM", closes: "6:30 PM", note: "9:30am–6:30pm (Apr–Sep); 10am–5:30pm (Oct–Mar). Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "A 45-metre sword-shaped monument flanked by four lion heads" },
+      { name: "Military memorabilia from Maharaja Ranjit Singh's era through the 1999 Kargil War" },
+      { name: "A 7D theatre presentation on the 1965 and 1971 wars" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "~11km from the Golden Temple." },
+    ],
+    accommodation: [
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["City hotels, a short drive away"], description: "Visited as a half-day trip from the city." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹450 from central Amritsar", notes: "Most convenient way to reach the site", available: true },
+      { mode: "Taxi", cost: "₹400–₹700 round trip", notes: "Easily arranged from hotels", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~11 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 2800, food: 700, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11200, accommodation: 8500, food: 1200, transport: 1100, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Amritsar Military Heritage", morning: "Visit the Golden Temple.", afternoon: "Explore the Punjab State War Heroes' Memorial and Museum, including the 7D theatre.", evening: "Return to the city.", stay: "Near the Golden Temple", meals: "Local Amritsari fare", tips: "Allow extra time for the 7D theatre presentation." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A government-run, security-staffed memorial and museum"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The memorial and museum grounds during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 4100,
+    mustEat: ["Nearby roadside dhabas"],
+    packingTips: ["Comfortable walking shoes for the large grounds"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
