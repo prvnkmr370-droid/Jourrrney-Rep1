@@ -79215,6 +79215,67 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Cash for purchasing handcrafted brass/copper items directly from artisans", "Comfortable walking shoes"],
   },
 
+  {
+    id: "harike-wetland-amritsar",
+    name: "Harike Wetland and Wildlife Sanctuary",
+    state: "Punjab",
+    tagline: "Northern India's Largest Wetland, at the Meeting of Two Rivers",
+    description: "Harike Wetland, formed at the confluence of the Beas and Sutlej rivers near the Amritsar-Ferozepur border, is the largest wetland in northern India and a designated Ramsar site of international importance. Its extensive reed beds and open water, framed by the Harike Barrage, support one of the region's major bird sanctuaries, drawing large numbers of resident and migratory waterbirds each winter. For travellers who've spent days immersed in Amritsar's religious and historical sites, it's a quiet, entirely different kind of stop — best experienced slowly, ideally with binoculars, in the early morning.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fa/HARIKE_wetlands.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fa/HARIKE_wetlands.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/fa/HARIKE_wetlands.jpg"],
+    imageCredit: "Photo: Himanithakur — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November – February (peak migratory bird season)",
+    duration: "2–4 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Daylight hours; early morning is best for birdwatching. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "The largest wetland in northern India, at the Beas-Sutlej confluence" },
+      { name: "A Ramsar site of international wetland importance" },
+      { name: "A major bird sanctuary with resident and migratory waterbirds" },
+      { name: "The Harike Barrage and the start of the Rajasthan (Indira Gandhi) Feeder Canal" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Amritsar, then to the Amritsar-Ferozepur border area", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "~60 km / 1.5h from Amritsar", costRange: "₹1,200–₹2,500 round trip by cab from Amritsar", tips: "Best combined with a full day trip given the distance." },
+    ],
+    accommodation: [
+      { type: "Amritsar Hotels", priceRange: "₹800–₹18,000/night", examples: ["Stay in Amritsar city, day-trip to Harike"], description: "Minimal accommodation directly at the sanctuary — visit as a day trip." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,500 round trip", notes: "Most practical way to reach and explore the sanctuary", available: true },
+      { mode: "Boat (within the sanctuary)", cost: "Check locally", notes: "Boating is available at points within the wetland for closer wildlife viewing", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~60 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2000, accommodation: 700, food: 300, transport: 900, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5300, accommodation: 2800, food: 700, transport: 1400, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 12200, accommodation: 8500, food: 1200, transport: 2000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Harike Wetland Day Trip", morning: "Depart Amritsar early for Harike Wetland.", afternoon: "Birdwatching and boating within the sanctuary.", evening: "Return to Amritsar.", stay: "Amritsar city", meals: "Packed breakfast, roadside dhaba lunch", tips: "Bring binoculars; early morning has the most bird activity, especially November–February." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A managed wildlife sanctuary, generally visited as part of an organized day trip"],
+      precautions: ["A remote, rural area with limited facilities — travel with a pre-arranged driver/guide", "Limited connectivity in parts of the sanctuary"],
+      soloTips: ["Best visited with a local guide or organized tour rather than independently, given the distance and remoteness"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The designated sanctuary viewing areas during daylight hours"],
+      avoidAreas: ["Unmarked areas of the wetland after dark"],
+    },
+    rating: 4.5,
+    reviews: 1600,
+    mustEat: ["Roadside dhaba food en route"],
+    packingTips: ["Binoculars", "Sun protection and a hat", "Comfortable, closed shoes for uneven terrain near the water"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
