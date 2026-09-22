@@ -2976,6 +2976,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Fateh Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "fateh-sagar-lake" },
       { name: "Pratap Memorial (Moti Magri)", distance: "In city", type: "Heritage", isHidden: true, id: "moti-magri" },
       { name: "Bagore Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "bagore-ki-haveli" },
+      { name: "Jag Mandir", distance: "On Lake Pichola", type: "Heritage", isHidden: true, id: "jag-mandir" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3531,6 +3532,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 10700,
     mustEat: ["Rajasthani thali", "Rooftop dinner overlooking the lake"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "jag-mandir",
+    name: "Jag Mandir",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Lake Garden Palace", "Jagmandir Island Palace"],
+    tagline: "The Island Palace That Sheltered a Future Mughal Emperor — and Inspired the Taj Mahal",
+    description: "Jag Mandir, also called the Lake Garden Palace, is a palace complex built on its own island in Lake Pichola, with construction beginning around 1620 and completed by roughly 1652 under successive Mewar rulers. The royal family used it as a summer retreat and for hosting festivities, and a row of large stone elephant statues lines the palace's edge facing the water. Its most notable historical episode came when Prince Khurram — later Emperor Shah Jahan — was sheltered here during his rebellion against his father, Emperor Jahangir; tradition holds that his time at Jag Mandir influenced the design of the Taj Mahal, which he built decades later. Today it functions as an event and restaurant venue, reachable only by boat from the City Palace jetty.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Jagmandir_%28Udaipur%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/20/Jagmandir_%28Udaipur%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/20/Jagmandir_%28Udaipur%29.jpg"],
+    imageCredit: "Photo: Kshitiz Sikka — Wikimedia Commons, CC BY-SA 4.0. Verified by category (Jag Mandir island, Udaipur) and direct visual confirmation of the elephant statues and domed pavilion.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours (including boat transfer)",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "Reachable only by boat from the City Palace jetty; boat and entry combined ticket. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Construction began ~1620, completed ~1652" },
+      { name: "Row of stone elephant statues along the water's edge" },
+      { name: "Sheltered Prince Khurram (later Shah Jahan) during his rebellion" },
+      { name: "Said to have influenced the design of the Taj Mahal" },
+    ],
+    transport: [
+      { mode: "Boat", icon: "⛵", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "Boat transfer from the City Palace jetty on Lake Pichola", costRange: "Included in boat + entry combined ticket (indicative)", tips: "Combine with the Lake Pichola boat cruise since the route passes both Jag Mandir and the Lake Palace." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Reached by boat from the City Palace jetty in the old city." },
+    ],
+    localTransport: [
+      { mode: "Boat (RTDC/private)", cost: "Combined with lake cruise ticket", notes: "Only way to reach the island", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lake Pichola", distance: "On the lake", type: "Nature", isHidden: true, id: "lake-pichola" },
+      { name: "City Palace, Udaipur", distance: "Boat transfer", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 700, food: 400, transport: 100, activities: 700 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 6300, accommodation: 3500, food: 1000, transport: 300, activities: 1500 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 36800, accommodation: 30000, food: 3000, transport: 500, activities: 3300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lake Pichola Islands", morning: "City Palace.", afternoon: "Boat trip taking in Jag Mandir island.", evening: "Sunset views of the Lake Palace from Ambrai Ghat.", stay: "Old city haveli", meals: "Thali lunch, rooftop dinner overlooking the lake", tips: "Some boat tours stop for a walk around Jag Mandir; confirm this is included before booking." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed tourist site reached via official boat services, with staff on-site"],
+      precautions: ["Standard boat travel precautions"],
+      soloTips: ["Comfortable for solo visitors — access is via shared or booked boat trips with other travelers aboard"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The island grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 8900,
+    mustEat: ["Rajasthani thali", "Rooftop dinner overlooking the lake"],
+    packingTips: ["Camera", "Comfortable walking shoes"],
   },
 
   {
