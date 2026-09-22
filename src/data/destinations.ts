@@ -2965,6 +2965,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Kumbhalgarh Fort & Wildlife Sanctuary", distance: "84 km", type: "Great Wall of India", isHidden: false },
       { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true, id: "ranakpur" },
       { name: "Nagda (Sas Bahu Temples)", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true, id: "nagda-sas-bahu-temples" },
+      { name: "Doodh Talai Lake", distance: "In city", type: "Nature", isHidden: true, id: "doodh-talai-lake" },
       { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true, id: "jaisamand-lake" },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
       { name: "City Palace, Udaipur", distance: "In city", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
@@ -3887,6 +3888,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1600,
     mustEat: ["Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Camera", "Water"],
+  },
+
+  {
+    id: "doodh-talai-lake",
+    name: "Doodh Talai Lake",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Small Hillock-Ringed Lake Between Two City Gardens",
+    description: "Doodh Talai Lake sits along the road connecting the old city to Lake Pichola, nestled between several small hillocks that are themselves modest viewpoints over the surrounding area. The lake garden combines the Deen Dayal Upadhyay Park and the Manikya Lal Verma Garden, giving it a layered, multi-part character rather than a single open lawn. Its small scale and central location make it an easy, low-effort stop for a short walk or a quiet break between the busier attractions of the old city and the lakefront.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Doodh_talai_lake_Udaipur%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Doodh_talai_lake_Udaipur%2C_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/a1/Doodh_talai_lake_Udaipur%2C_India.jpg"],
+    imageCredit: "Photo: Prof Ranga Sai — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Monuments 2023 submission; uploader cites the official Rajasthan Tourism page for Doodh Talai Lake.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "8:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Nestled between several small hillocks" },
+      { name: "Combines the Deen Dayal Upadhyay Park and Manikya Lal Verma Garden" },
+      { name: "Central location between the old city and Lake Pichola" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "On the road to Lake Pichola, central Udaipur", costRange: "₹50–₹150 by auto within Udaipur", tips: "An easy add-on to a walk between the old city and the lakefront." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Central location, walkable from the old city." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Easily reached from the old city on foot", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within Udaipur", notes: "Reliable within the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lake Pichola", distance: "~1 km", type: "Nature", isHidden: true, id: "lake-pichola" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 700, food: 400, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 3500, food: 1000, transport: 300, activities: 0 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34100, accommodation: 30000, food: 3000, transport: 500, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City to Lakefront Walk", morning: "City Palace and Jagdish Temple.", afternoon: "Walk past Doodh Talai Lake en route to Lake Pichola.", evening: "Sunset boat cruise.", stay: "Old city haveli", meals: "Thali lunch, rooftop dinner overlooking the lake", tips: "Best treated as a stop along a longer walking route rather than a dedicated destination." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A small, central garden area along a well-trafficked route between major sights"],
+      precautions: ["Standard park precautions"],
+      soloTips: ["Comfortable for solo daytime visits given its central, busy location"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The garden area during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.1,
+    reviews: 3100,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes"],
   },
 
   {
