@@ -665,6 +665,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Digamber Jain Mandir (Sanghiji)", distance: "14 km", type: "Spiritual", isHidden: true, id: "sanghiji-jain-temple" },
       { name: "Ishwar Lat (Sargasuli)", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "ishwar-lat" },
       { name: "Jaipur Wax Museum", distance: "15 km", type: "Culture", isHidden: true, id: "jaipur-wax-museum" },
+      { name: "Amrapali Museum", distance: "2 km", type: "Culture", isHidden: true, id: "amrapali-museum" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -25050,6 +25051,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5400,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "amrapali-museum",
+    name: "Amrapali Museum",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Over 4,000 Pieces of Indian Jewellery, Curated by the Founders of Amrapali Jewels",
+    description: "Amrapali Museum in C-Scheme, Jaipur, was established in 2018 by the founders of Amrapali Jewels to house their private collection of Indian jewellery and adornment, built up over decades of acquisition. The collection runs to more than 4,000 pieces, of which around 800 are on display at any time, spanning tribal silver, Mughal-era gold work, enamelled bridal jewellery, and ceremonial pieces from across India's regions — including Rajasthan, Himachal Pradesh, Ladakh, and the Northeast. Unlike most government-run museums in Jaipur, this is a privately curated collection with a strong design-and-craft focus, making it a genuinely distinctive stop for anyone interested in India's jewellery traditions beyond the more famous forts and palaces.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Display_at_Amrapali_Museum%2C_Jaipur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Display_at_Amrapali_Museum%2C_Jaipur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/ee/Display_at_Amrapali_Museum%2C_Jaipur.jpg"],
+    imageCredit: "Photo: Neek-Theri — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English Wikipedia article for Amrapali Museum.",
+    category: ["Culture", "Shopping"],
+    bestSeason: "October – February",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "11:00 AM", closes: "6:00 PM", note: "Closed Sundays. Ticket ₹600, audio guide included (indicative). Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "4,000+ piece private jewellery collection, ~800 on display" },
+      { name: "Established 2018 by the founders of Amrapali Jewels" },
+      { name: "Tribal silver, Mughal gold work, regional bridal jewellery" },
+      { name: "Pieces from Rajasthan, Himachal Pradesh, Ladakh, and the Northeast" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "C-Scheme, central Jaipur", costRange: "₹100–₹300 by auto/cab within Jaipur", tips: "Photography inside the galleries is often restricted — check current rules at entry." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Central C-Scheme location, close to many hotels." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jaipur", notes: "Standard way to reach C-Scheme", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~2 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 700, food: 400, transport: 150, activities: 650 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5300, accommodation: 3000, food: 1000, transport: 400, activities: 900 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 25400, accommodation: 20000, food: 2500, transport: 600, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Museums & Markets", morning: "Amrapali Museum.", afternoon: "Johari Bazaar for jewellery shopping.", evening: "Nahargarh Fort at sunset.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "Closed on Sundays — plan your visit accordingly." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-managed private museum in a central, upscale part of the city"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo visitors, including the guided audio-tour experience"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and C-Scheme area during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 4300,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable walking shoes"],
   },
 
   {
