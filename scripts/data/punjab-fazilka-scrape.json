@@ -1,0 +1,28 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/fazilka/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Fazilka",
+  "about": "South-western Punjab border district, formerly known as Bangla. Known for border tourism (Sadqi Border retreat ceremony) and 1971 Indo-Pak War memory (Asafwala War Memorial) rather than palaces or temples.",
+  "places": [
+    { "name": "Sadqi Border Retreat", "timings": "Retreat ceremony daily ~5:30 PM", "entryFee": "Free", "location": "~15 km from Fazilka city, via NH-10", "facts": "Punjab's third international border retreat venue after Attari-Wagah and Hussainiwala; ceremony jointly performed by BSF and Pakistan Rangers." },
+    { "name": "Asafwala War Memorial", "timings": "Daylight hours", "entryFee": "Free", "location": "~7 km from Fazilka city", "facts": "Known as 'Shaheedo Ki Samadhi'; established 1972; ashes of 82 soldiers who died in the 1971 Indo-Pak War preserved here; 5-acre site with a recently added 71-foot Victory Tower." },
+    { "name": "Gol Kothi", "timings": "Not specified", "entryFee": "Not specified", "location": "Within a Government Senior Secondary School, Fazilka", "facts": "Built 1913 as a British recreational facility; now a heritage structure within a school campus." },
+    { "name": "Mud Fort, Abohar", "timings": "Not specified", "entryFee": "Not specified", "location": "Abohar", "facts": "ASI-protected ancient settlement site, largely in ruins." },
+    { "name": "Sanjay Gandhi Memorial Park", "timings": "Not specified", "entryFee": "Not specified", "location": "Fazilka", "facts": "Hosts the annual Fazilka Heritage Festival." },
+    { "name": "Clock Tower (Ghantaghar)", "timings": "Visible at all hours", "entryFee": "Not applicable", "location": "Fazilka city", "facts": "Colonial-era landmark." },
+    { "name": "Fazilka TV Tower", "timings": "Exterior viewable", "entryFee": "Not applicable", "location": "Fazilka", "facts": "One of the tallest structures in India; regional broadcasting tower." },
+    { "name": "Abohar Wildlife Sanctuary (Black Buck)", "timings": "Not fully detailed in Places to Visit, mentioned in banner content", "entryFee": "Not specified", "location": "Abohar, Fazilka district", "facts": "Wildlife sanctuary known for blackbuck population." }
+  ],
+  "howToReach": {
+    "air": "Nearest major airport: Sri Guru Ram Dass Jee International Airport, Amritsar",
+    "rail": "Fazilka Railway Station",
+    "road": "Connected to Ferozepur, Abohar, Bathinda, Chandigarh"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "emergencyNumbers": { "emergency": "112", "ambulance": "108", "womenHelpline": "1091", "childHelpline": "1098" },
+    "punjabGrievanceHelpline": "1100"
+  }
+}

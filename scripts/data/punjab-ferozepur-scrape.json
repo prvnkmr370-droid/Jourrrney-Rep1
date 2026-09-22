@@ -1,0 +1,28 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/ferozepur-city-on-the-banks/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Ferozepur",
+  "about": "Border district on the Sutlej River, founded either by Firoz Shah Tughlaq or a Bhatti chief Feroze Khan. Site of the Anglo-Sikh Wars (1845-49), Bhagat Singh/Rajguru/Sukhdev's cremation at Hussainiwala (1931), and the 1897 Battle of Saragarhi memory.",
+  "places": [
+    { "name": "National Martyrs Memorial, Hussainiwala", "timings": "Check locally", "entryFee": "Check locally", "location": "Hussainiwala, 11 km from Ferozepur", "facts": "Built 1968; honors Bhagat Singh, Rajguru and Sukhdev, secretly cremated here 23 March 1931 after execution at Lahore Central Jail. Life-sized black granite statues of the three martyrs. B.K. Dutt also cremated here per his wish. Annual Shaheedi Mela on 23 March. Preserved section of the old Ferozepur-Lahore railway line." },
+    { "name": "Indo-Pakistan Retreat Ceremony, Hussainiwala Border", "timings": "Evening; check locally", "entryFee": "Check locally", "location": "Hussainiwala Border, 11 km from Ferozepur", "facts": "40-minute joint BSF/Pakistan Rangers flag de-hoisting ceremony, mirroring Attari-Wagah." },
+    { "name": "Shan-e-Hind Gate, Hussainiwala", "timings": "Visible at all hours; evening ceremony daily", "entryFee": "Check locally", "location": "Hussainiwala Border", "facts": "42ft long x 91ft wide x 56ft high gate, built as a counterpart to Pakistan's 30ft Fakhr-e-Pak structure." },
+    { "name": "Anglo-Sikh War Memorial, Ferozeshah", "timings": "Check locally", "entryFee": "Check locally", "location": "Ferozeshah, ~16 km from Ferozepur on Moga Road", "facts": "Honors soldiers of the Anglo-Sikh Wars (Mudki, Ferozeshah, Sabhraon, Chellianwala, 1845-49); 3-storey building designed by H.S. Chopra; displays period weapons from the Patiala Museum and 4 large battle paintings by Kirpal Singh." },
+    { "name": "Saragarhi Memorial Gurdwara, Ferozepur Cantonment", "timings": "Open daily", "entryFee": "Free", "location": "Ferozepur Cantonment, 2 km from Ferozepur Cantonment Railway Station", "facts": "Honors 21 Sikh soldiers of the 36th Sikh Regiment (raised at Ferozepur in 1887) who died defending Fort Saragarhi on 12 September 1897 against ~10,000 Pathans. Built 1904 at cost of Rs 27,118, opened by Sir Charles Rivaz." },
+    { "name": "Barki Memorial, Ferozepur Cantonment", "timings": "Check locally", "entryFee": "Check locally", "location": "Ferozepur Cantonment, part of Saragarhi Complex", "facts": "Built 1969 for soldiers of the 7 Infantry Division who died in the 1965 war fall of Barki. 27-foot red/white sandstone pillar, a Patton tank and Barki milestone nearby." },
+    { "name": "Harike Wildlife Sanctuary", "timings": "Daylight hours; early morning best for birdwatching", "entryFee": "Check with Punjab Forest Department", "location": "Beas-Sutlej confluence, Ferozepur-Amritsar border", "facts": "86 sq km, declared Wildlife Sanctuary 1999, Ramsar Site since 1990; ~375 bird species recorded, up to 45,000 ducks in peak season." },
+    { "name": "Chak Sarkar Forest, Mamdot", "timings": "Daylight hours", "entryFee": "Check with Punjab Forest Department", "location": "Mamdot, Ferozepur district", "facts": "Reserved Forest along the India-Pakistan boundary." },
+    { "name": "Gurdwara Shri Jaamani Sahib, Bazidpur", "timings": "Open throughout the day", "entryFee": "Free", "location": "Village Bazidpur, 8 km from Ferozepur on Ferozepur-Ludhiana Road", "facts": "Associated with Guru Gobind Singh Ji after the Battle of Muktsar; also known as Gurdwara Gurusar or Tittarsar." }
+  ],
+  "howToReach": {
+    "air": "Sri Guru Ram Dass Ji International Airport, Amritsar (~124km)",
+    "rail": "Ferozepur Cantonment and Ferozepur City railway stations, Northern Railway junction",
+    "road": "Bus Stand Ferozepur City and Cantonment Bus Stand"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["AIIMS", "Max Super Specialty Hospital", "Darshan Super Specialty Hospital", "Indrani Hospital"]
+  }
+}

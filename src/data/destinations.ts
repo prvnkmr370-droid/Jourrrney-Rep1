@@ -79698,6 +79698,127 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["None specific — a brief city-centre stop"],
   },
 
+  {
+    id: "hussainiwala-national-martyrs-memorial",
+    name: "National Martyrs Memorial, Hussainiwala",
+    state: "Punjab",
+    tagline: "Where Bhagat Singh, Rajguru and Sukhdev Were Secretly Cremated in 1931",
+    description: "The National Martyrs Memorial at Hussainiwala, on the banks of the Sutlej about 11km from Ferozepur, was built in 1968 to honor Shaheed Bhagat Singh, Shaheed Rajguru and Shaheed Sukhdev. After their execution at Lahore Central Jail at 7:15 PM on 23 March 1931 — a day earlier than the scheduled date, amid fears of public unrest — their bodies were secretly brought here for cremation on the banks of the Sutlej. Life-sized black granite statues of the three revolutionaries now stand at the site, garlanded by a steady stream of visitors, and B.K. Dutt, who died in 1965, was cremated here per his own last wish. A preserved section of the old Ferozepur-Lahore railway line runs through the grounds, and thousands gather here every 23 March for the annual Shaheedi Mela.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/72/Statues_of_Bhagat_Singh%2C_Rajguru_and_Sukhdev.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/72/Statues_of_Bhagat_Singh%2C_Rajguru_and_Sukhdev.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/72/Statues_of_Bhagat_Singh%2C_Rajguru_and_Sukhdev.jpg"],
+    imageCredit: "Photo: Alicia Nijdam — Wikimedia Commons, CC BY 2.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built in 1968 to honor Bhagat Singh, Rajguru and Sukhdev" },
+      { name: "Site of their secret cremation on 23 March 1931" },
+      { name: "Life-sized black granite statues of the three martyrs" },
+      { name: "A preserved section of the old Ferozepur-Lahore railway line" },
+      { name: "Annual Shaheedi Mela on 23 March" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Ferozepur Cantonment/City station, then ~11km by road", fromMumbai: "Via major junctions to Ferozepur", fromBangalore: "Via major junctions to Ferozepur", duration: "Varies by train, plus ~20min by road", costRange: "₹300–₹1,800 + local transport", tips: "Hussainiwala is 11km from Ferozepur." },
+    ],
+    accommodation: [
+      { type: "Ferozepur City Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotel Comfort Inn", "Country Inn and Suites by Radisson", "Hotel Sepal", "Hotel Stella"], description: "Most visitors stay in Ferozepur city and day-trip to Hussainiwala." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹300–₹600 round trip from Ferozepur", notes: "Most convenient way to reach Hussainiwala", available: true },
+      { mode: "Auto Rickshaw", cost: "₹150–₹350", notes: "Available for the trip from Ferozepur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Saragarhi Memorial Gurdwara", distance: "~11 km (in Ferozepur Cantonment)", type: "Heritage", isHidden: false, id: "saragarhi-memorial-gurdwara-ferozepur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 900, activities: 1400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ferozepur Freedom Movement Trail", morning: "Visit the National Martyrs Memorial and watch the retreat ceremony preparations begin.", afternoon: "Explore the Shan-e-Hind Gate and Hussainiwala Border.", evening: "Stay for the Indo-Pakistan Retreat Ceremony at sunset.", stay: "Ferozepur city", meals: "Local Punjabi fare, Paneer Tikka and Chhole Bhature", tips: "Combine with the evening retreat ceremony at the same site to make the most of the trip." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-managed national memorial near a heavily secured border zone with constant BSF presence"],
+      precautions: ["Standard heritage-site precautions; carry ID given the border-area location"],
+      soloTips: ["Comfortable for solo visitors given the strong security presence throughout the border area"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The memorial grounds and border complex, under continuous BSF supervision"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 6100,
+    mustEat: ["Paneer Tikka and Chhole Bhature", "Gajjar ka Halwa"],
+    packingTips: ["Government-issued photo ID (border-area visit)", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "saragarhi-memorial-gurdwara-ferozepur",
+    name: "Saragarhi Memorial Gurdwara",
+    state: "Punjab",
+    tagline: "Built From Stones of the Fort Where 21 Sikh Soldiers Chose Death Over Surrender",
+    description: "The Saragarhi Memorial Gurdwara, in Ferozepur Cantonment, honors 21 soldiers of the 36th Sikh Regiment who died defending Fort Saragarhi in the Northwest Frontier Province on 12 September 1897 against a force of roughly ten thousand Pathans. The regiment had been raised at Ferozepur a decade earlier. After seven hours of fighting and running low on ammunition, the defenders refused to surrender; Havildar Ishar Singh, the last man standing, kept firing from the doorway until he fell. Built at a cost of Rs 27,118 using stones brought from the actual Saragarhi post, the 'Snow White' Gurdwara was designed by Bhai Ram Singh and opened in 1904 by Sir Charles Rivaz, then Lieutenant Governor of Punjab. Every 12 September, Saragarhi Day draws a religious congregation and a reunion of ex-servicemen.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Postcard_photograph_of_the_Saragarhi_Memorial_Gurdwara_in_Firozpur%2C_ca.1920%27s.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/84/Postcard_photograph_of_the_Saragarhi_Memorial_Gurdwara_in_Firozpur%2C_ca.1920%27s.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/84/Postcard_photograph_of_the_Saragarhi_Memorial_Gurdwara_in_Firozpur%2C_ca.1920%27s.jpg"],
+    imageCredit: "Historical postcard photograph (circa 1920s) — Wikimedia Commons, public domain.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Honors the 21 Sikh soldiers who died defending Fort Saragarhi in 1897" },
+      { name: "Built using stones brought from the actual Saragarhi post" },
+      { name: "Designed by Bhai Ram Singh, vice principal of the Lahore School of Art" },
+      { name: "Opened in 1904 by Sir Charles Rivaz, Lieutenant Governor of Punjab" },
+      { name: "Part of the wider Saragarhi Complex with the nearby Barki Memorial" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Ferozepur Cantonment Railway Station (2km from the Gurdwara)", fromMumbai: "Via major junctions to Ferozepur", fromBangalore: "Via major junctions to Ferozepur", duration: "Varies by train", costRange: "₹300–₹1,800", tips: "2km from Ferozepur Cantonment Railway Station." },
+    ],
+    accommodation: [
+      { type: "Ferozepur City Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotel Comfort Inn", "Hotel Sepal", "Hotel Krishna Continental"], description: "A range of hotels in Ferozepur city and cantonment area." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the cantonment area", notes: "Standard way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "National Martyrs Memorial, Hussainiwala", distance: "~11 km", type: "Heritage", isHidden: false, id: "hussainiwala-national-martyrs-memorial" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2500, food: 700, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 6000, food: 1200, transport: 600, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ferozepur Military Heritage", morning: "Visit the Saragarhi Memorial Gurdwara and Barki Memorial.", afternoon: "Explore Ferozepur Cantonment's other heritage sites.", evening: "Head to Hussainiwala for the retreat ceremony.", stay: "Ferozepur city", meals: "Free langar at the Gurdwara; local Punjabi fare", tips: "Visit on 12 September (Saragarhi Day) for the annual commemorative gathering, if timing allows." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An actively maintained military memorial Gurdwara within the cantonment area"],
+      precautions: ["Standard precautions for a cantonment-area religious site"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara and Saragarhi Complex grounds"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 2200,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Comfortable, easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
