@@ -670,6 +670,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Central Park, Jaipur", distance: "3 km", type: "Nature", isHidden: true, id: "central-park-jaipur" },
       { name: "Kanak Vrindavan", distance: "9 km", type: "Heritage", isHidden: true, id: "kanak-vrindavan" },
       { name: "Nahargarh Sculpture Park", distance: "15 km", type: "Culture", isHidden: true, id: "nahargarh-sculpture-park" },
+      { name: "Museum of Legacies", distance: "~1 km", type: "Culture", isHidden: true, id: "museum-of-legacies" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -25290,6 +25291,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2100,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "museum-of-legacies",
+    name: "Museum of Legacies",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Eight Galleries of Rajasthani Craft, Set Inside a 200-Year-Old Haveli",
+    description: "Museum of Legacies, opened on 9 December 2017, occupies a roughly 200-year-old haveli in Kishanpole Bazaar within Jaipur's walled city. Spread across eight galleries, it traces Rajasthani textiles, jewellery, stoneware, painting, and pottery traditions, using the historic building itself — with its courtyards and period architecture — as part of the display rather than a neutral backdrop. Because it sits within the working bazaar rather than a formal palace complex, it offers a more intimate, street-level counterpoint to Jaipur's larger royal museums.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Ladystatue.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/77/Ladystatue.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/77/Ladystatue.jpg"],
+    imageCredit: "Photo: BijenderSingh00 — Wikimedia Commons, CC BY 3.0. Wiki Loves Museums India 2022 submission; description confirms the location as Museum of Legacies, Jaipur.",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October – February",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Opened 9 December 2017 in a ~200-year-old haveli" },
+      { name: "Eight galleries of textiles, jewellery, stoneware, painting, pottery" },
+      { name: "Located in Kishanpole Bazaar, the walled city" },
+      { name: "Historic building architecture itself part of the display" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Kishanpole Bazaar, walled city Jaipur", costRange: "₹50–₹200 by auto/cycle rickshaw within the walled city", tips: "Easy to combine with a walk through Kishanpole Bazaar's craft and textile shops." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Walled-city location, walkable from many heritage havelis." },
+    ],
+    localTransport: [
+      { mode: "Cycle Rickshaw", cost: "₹50–₹150", notes: "Best for the walled-city lanes", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200 within the walled city", notes: "Standard way to reach Kishanpole Bazaar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "City Palace", distance: "~1 km", type: "Heritage", isHidden: true, id: "city-palace-jaipur" },
+      { name: "Hawa Mahal", distance: "~1 km", type: "Heritage", isHidden: true, id: "hawa-mahal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 400, transport: 100, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 3000, food: 1000, transport: 300, activities: 400 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24500, accommodation: 20000, food: 2500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Walled City Craft Trail", morning: "Hawa Mahal, City Palace.", afternoon: "Museum of Legacies, then Kishanpole Bazaar shops.", evening: "Johari Bazaar.", stay: "Haveli in the walled city", meals: "Dal Baati Churma lunch (₹150), rooftop dinner (₹600)", tips: "A good indoor stop if it's hot outside — quieter than the major forts." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed museum within the busy, well-trafficked walled-city bazaar area"],
+      precautions: ["Standard museum and walled-city bazaar precautions"],
+      soloTips: ["Comfortable for solo daytime visits as part of a walled-city walking route"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and surrounding bazaar during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2400,
+    mustEat: ["Street snacks in Kishanpole Bazaar"],
+    packingTips: ["Comfortable walking shoes"],
   },
 
   {
