@@ -1,0 +1,23 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/rupnagar-place-of-bliss/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Large page; captured through Chamkaur Sahib and Gurdwara Parivar Vichhora Sahib listings.",
+  "district": "Rupnagar (Ropar)",
+  "about": "Ancient town, major Indus Valley Civilization site (first Harappan site excavated in independent India). District carved out 1966. Birthplace of the Khalsa (Anandpur Sahib, Baisakhi 1699). Home to Kiratpur Sahib, Chamkaur Sahib, Bhakra-Nangal Dam.",
+  "places": [
+    { "name": "Takht Sri Keshgarh Sahib, Anandpur Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Sri Anandpur Sahib, ~40km from Rupnagar", "facts": "Birthplace of the Khalsa; one of the five Takhts. Guru Gobind Singh Ji created the Khalsa here on Baisakhi 1699. Preserves his khanda, dagger, shield, chakkar, swords, spears. Ranjit Nagara ceremonial drum still beaten here." },
+    { "name": "Virasat-e-Khalsa Museum, Anandpur Sahib", "timings": "10am-4pm, closed Mondays and public holidays", "entryFee": "Free", "location": "Sri Anandpur Sahib, near Takht Sri Keshgarh Sahib", "facts": "Designed by Moshe Safdie; 120 acres (40 built-up); most-visited museum in Indian subcontinent history, 10M+ visitors in 8 years." },
+    { "name": "Anandgarh Fort, Anandpur Sahib", "timings": "Check locally", "entryFee": "Check locally", "location": "Sri Anandpur Sahib", "facts": "One of 5 forts built by Guru Gobind Singh Ji; construction began 1689; reconstructed 1970." },
+    { "name": "The Five Forts of Sri Anandpur Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Sri Anandpur Sahib", "facts": "Anandgarh, Taragarh, Lohgarh, Fatehgarh, Holgarh — each with its own Gurdwara, built to defend against Mughal/hill-chief attacks." },
+    { "name": "Archaeological Museum & Excavation Site, Rupnagar", "timings": "Check locally", "entryFee": "Check locally", "location": "Rupnagar town, bank of the Sutlej", "facts": "First independent-India Harappan excavation site; Vina Vadini figure, steatite seal, Chandragupta gold coins." },
+    { "name": "Bhakra Dam & Nangal Dam", "timings": "10am-6pm Mon-Fri", "entryFee": "Check with Bhakra Beas Management Board; international visitors need permission", "location": "Punjab-Himachal border; Nangal ~60km from Rupnagar", "facts": "Asia's 2nd tallest dam (225.55m); Gobind Sagar reservoir, 3rd largest in India by storage. Called 'New Temple of Resurgent India' by Nehru." },
+    { "name": "Rupnagar Wetland (Ropar Wetland) & Nangal Wetland", "timings": "Daylight hours; early morning best", "entryFee": "Check locally", "location": "Rupnagar town; Nangal ~60km away", "facts": "Ramsar site; Chitra indica turtle, Python molurus; Nangal Wetland (700 acres) has Sarus crane, Indian pangolin, otter, hog deer." },
+    { "name": "Sadabarat Nature Trail", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Just outside Rupnagar city", "facts": "~50 species of birds/animals — sambar, neelgai, porcupines, mongooses." },
+    { "name": "Kiratpur Sahib", "timings": "Gurdwaras open throughout the day", "entryFee": "Free", "location": "~10km from Anandpur Sahib", "facts": "Established by Guru Hargobind Sahib Ji; birthplace of Guru Har Rai Ji and Guru Harikrishan Ji. Gurdwara Patal Puri Sahib is where Sikhs immerse ashes of the departed." },
+    { "name": "Sri Chamkaur Sahib", "timings": "Gurdwaras open throughout the day", "entryFee": "Free", "location": "~15km from Morinda, ~16km from Sirhind", "facts": "Site of the Battle of Chamkaur, where the elder Sahibzadas (Baba Ajit Singh, Baba Jujhar Singh) were martyred; Gurdwara Katalgarh Sahib and Gurdwara Damdama Sahib." },
+    { "name": "Gurdwara Sri Parivar Vichhora Sahib", "timings": "Not fully captured", "entryFee": "Not fully captured", "location": "Near the Sirsa river", "facts": "Marks the site of the Guru's family separation (description truncated in this scrape session)." }
+  ],
+  "howToReach": { "note": "Not fully captured in this scrape session." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}

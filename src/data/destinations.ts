@@ -81270,6 +81270,242 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "takht-keshgarh-sahib-anandpur-sahib",
+    name: "Takht Sri Keshgarh Sahib",
+    state: "Punjab",
+    tagline: "The Birthplace of the Khalsa",
+    description: "Takht Sri Keshgarh Sahib, amid the Shivalik hills on the bank of the Sutlej at Sri Anandpur Sahib, is one of the five Takhts — the highest seats of temporal and spiritual authority in Sikhism — and marks the single most significant event in Sikh history. Here, on Baisakhi Day in 1699, Guru Gobind Singh Ji called a special congregation, asked for volunteers willing to offer their heads, and initiated the Panj Pyare with Amrit, creating the Khalsa. The sanctum preserves several of the Guru's own belongings — a khanda, dagger, shield, chakkar, three swords and several spears — and the Ranjit Nagara, a ceremonial drum, continues to be beaten here in an unbroken tradition.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Takht_Sri_Keshgarh_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Takht_Sri_Keshgarh_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/e0/Takht_Sri_Keshgarh_Sahib.jpg"],
+    imageCredit: "Photo: Jasleen Kaur — Wikimedia Commons, CC BY-SA 2.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Birthplace of the Khalsa, created here on Baisakhi 1699" },
+      { name: "One of the five Takhts of Sikhism" },
+      { name: "Preserves Guru Gobind Singh Ji's khanda, dagger, shield, chakkar, swords and spears" },
+      { name: "The Ranjit Nagara ceremonial drum, still beaten daily" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rupnagar or Chandigarh, then to Sri Anandpur Sahib", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~40 km / 1h from Rupnagar; ~90km from Chandigarh", costRange: "₹1,000–₹2,200 round trip by cab from Chandigarh", tips: "On the Sutlej bank, amid the Shivalik hills." },
+    ],
+    accommodation: [
+      { type: "Anandpur Sahib / Rupnagar Hotels", priceRange: "₹800–₹5,000/night", examples: ["A range of pilgrim guesthouses and hotels in Anandpur Sahib"], description: "A well-established pilgrimage town with plentiful accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Anandpur Sahib", notes: "Standard way to reach the Takht", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Virasat-e-Khalsa Museum", distance: "Adjacent", type: "Heritage", isHidden: false, id: "virasat-e-khalsa-anandpur-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4800, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birthplace of the Khalsa", morning: "Visit Takht Sri Keshgarh Sahib.", afternoon: "Virasat-e-Khalsa Museum.", evening: "Anandgarh Fort and the Five Forts complex.", stay: "Anandpur Sahib", meals: "Langar at the Takht", tips: "Note is is restricted to eat non-vegetarian food or drink alcohol within Anandpur Sahib." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["One of the five holiest Takhts of Sikhism, under constant devotee and staff presence"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Very comfortable for solo pilgrims given the constant flow of devotees"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire Takht complex and Anandpur Sahib town"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.9,
+    reviews: 12500,
+    mustEat: ["Free langar at the Takht"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "virasat-e-khalsa-anandpur-sahib",
+    name: "Virasat-e-Khalsa Museum",
+    state: "Punjab",
+    tagline: "A Moshe Safdie-Designed Museum, the Most Visited in the Subcontinent's History",
+    description: "Virasat-e-Khalsa, designed by acclaimed architect Moshe Safdie and located beside Takht Sri Keshgarh Sahib, is the world's largest cultural and historical museum dedicated to a single community — recognized as the most visited museum in the history of the Indian subcontinent, drawing more than 10 million visitors within just eight years. Spread across 120 acres, with 40 acres of built-up space and its distinctive curved, petal-like architecture rising above a reflecting pool, the museum takes visitors through the birth of the Khalsa, the lives and struggles of the Sikh Gurus, and the wider heritage of Sikhism through immersive galleries and paintings.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/76/Virasat-e-Khalsa%2C_Anandpur_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/76/Virasat-e-Khalsa%2C_Anandpur_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/76/Virasat-e-Khalsa%2C_Anandpur_Sahib.jpg"],
+    imageCredit: "Photo: Aashish3000 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:00 PM", note: "10am–4pm, closed Mondays and public holidays. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Designed by acclaimed architect Moshe Safdie" },
+      { name: "The most-visited museum in the subcontinent's history — 10M+ visitors in 8 years" },
+      { name: "120-acre complex (40 acres built-up) beside Takht Sri Keshgarh Sahib" },
+      { name: "Immersive galleries on the birth of the Khalsa and Sikh Guru history" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rupnagar or Chandigarh, then to Sri Anandpur Sahib", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~40 km / 1h from Rupnagar", costRange: "₹1,000–₹2,200 round trip by cab from Chandigarh", tips: "Adjacent to Gurdwara Takht Sri Keshgarh Sahib." },
+    ],
+    accommodation: [
+      { type: "Anandpur Sahib / Rupnagar Hotels", priceRange: "₹800–₹5,000/night", examples: ["A range of pilgrim guesthouses and hotels"], description: "A well-established pilgrimage town with plentiful accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within Anandpur Sahib", notes: "Standard way to reach the museum", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Takht Sri Keshgarh Sahib", distance: "Adjacent", type: "Spiritual", isHidden: false, id: "takht-keshgarh-sahib-anandpur-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 700, transport: 500, activities: 600 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 4800, food: 1200, transport: 800, activities: 1700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birthplace of the Khalsa", morning: "Takht Sri Keshgarh Sahib.", afternoon: "Virasat-e-Khalsa Museum, allowing 2-3 hours for the galleries.", evening: "Anandgarh Fort.", stay: "Anandpur Sahib", meals: "Langar at the Takht", tips: "Closed Mondays and public holidays — plan around that." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, professionally managed public museum with heavy footfall"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo visitors given the constant flow of visitors"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The museum complex during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 9200,
+    mustEat: ["Local Anandpur Sahib food stalls (vegetarian, per local restrictions)"],
+    packingTips: ["Comfortable walking shoes — the complex is large", "Allow at least 2 hours"],
+  },
+
+  {
+    id: "gurdwara-patalpuri-sahib-kiratpur",
+    name: "Gurdwara Patalpuri Sahib, Kiratpur Sahib",
+    state: "Punjab",
+    tagline: "Where Sikhs From Around the World Immerse the Ashes of Their Departed",
+    description: "Gurdwara Patalpuri Sahib, on the banks of the Sutlej at Kiratpur Sahib about 10km from Anandpur Sahib, is one of Sikhism's most significant sites of remembrance. Guru Hargobind Sahib Ji and Guru Har Rai Ji were both cremated here, and though Guru Harkrishan Ji's cremation took place in Delhi, his ashes too were immersed in the river at this spot. Today, Sikhs from across the world continue to bring the ashes of their departed loved ones to Patalpuri Sahib for immersion in the Sutlej, making it a place of deep, continuing significance woven into the personal grief and remembrance of Sikh families everywhere.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Gurdwara_Patalpuri_Sahib_Kiratpur_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Gurdwara_Patalpuri_Sahib_Kiratpur_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/ae/Gurdwara_Patalpuri_Sahib_Kiratpur_India.jpg"],
+    imageCredit: "Photo: banmeet singh — Wikimedia Commons, CC BY 2.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Gurdwaras open throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Cremation site of Guru Hargobind Sahib Ji and Guru Har Rai Ji" },
+      { name: "Where Guru Harkrishan Ji's ashes were immersed" },
+      { name: "Sikhs worldwide continue to bring ashes of the departed here" },
+      { name: "Set on the banks of the Sutlej" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rupnagar or Anandpur Sahib, then to Kiratpur Sahib", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~10 km / 20min from Anandpur Sahib", costRange: "₹300–₹700 round trip by cab from Anandpur Sahib", tips: "On the Sutlej bank, ~10km from Anandpur Sahib." },
+    ],
+    accommodation: [
+      { type: "Anandpur Sahib / Rupnagar Hotels", priceRange: "₹800–₹5,000/night", examples: ["Most visitors stay in Anandpur Sahib and day-trip here"], description: "A well-established pilgrimage circuit with plentiful accommodation." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹300–₹700 round trip", notes: "Most practical way to reach Kiratpur Sahib", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Takht Sri Keshgarh Sahib", distance: "~10 km", type: "Spiritual", isHidden: false, id: "takht-keshgarh-sahib-anandpur-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4800, food: 1200, transport: 800, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh Guru Pilgrimage Trail", morning: "Takht Sri Keshgarh Sahib and Virasat-e-Khalsa.", afternoon: "Kiratpur Sahib, including Gurdwara Patalpuri Sahib and the town's other Gurdwaras.", evening: "Return to Anandpur Sahib.", stay: "Anandpur Sahib", meals: "Langar at the Gurdwaras", tips: "A place of deep personal significance for many Sikh visitors — be respectful of families performing ash immersion ceremonies." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A significant, actively managed pilgrimage site"],
+      precautions: ["Dress modestly; be respectful during ash immersion ceremonies"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara complex and riverbank area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 3400,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "gurdwara-katalgarh-sahib-chamkaur-sahib",
+    name: "Gurdwara Sri Katalgarh Sahib, Sri Chamkaur Sahib",
+    state: "Punjab",
+    tagline: "Where 42 Warriors, Including Two Young Sahibzadas, Faced a Mughal Army",
+    description: "Sri Chamkaur Sahib, roughly midway between Morinda and Sirhind, was the site of one of Sikh history's most harrowing last stands. Here, just 42 Sikh warriors — including Guru Gobind Singh Ji's elder sons, Baba Ajit Singh Ji and Baba Jujhar Singh Ji — fought a coalition of Mughal forces in December 1704 following the evacuation of Anandpur Sahib. Both Sahibzadas attained martyrdom in the battle. Gurdwara Sri Katalgarh Sahib marks the site today, and the story of the battle, recounted through 'Dastaan-e-Shahadat,' continues to draw devotees from around the world who come to pay their respects at this and the nearby Gurdwara Damdama Sahib.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Gurdwara_Sri_Katalgarh_Sahib.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Gurdwara_Sri_Katalgarh_Sahib.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/a1/Gurdwara_Sri_Katalgarh_Sahib.JPG"],
+    imageCredit: "Photo: Zenit — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Gurdwaras open throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Site of the Battle of Chamkaur, December 1704" },
+      { name: "Martyrdom site of the elder Sahibzadas, Baba Ajit Singh and Baba Jujhar Singh" },
+      { name: "42 Sikh warriors against a coalition Mughal force" },
+      { name: "'Dastaan-e-Shahadat' recounts the battle's story" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Rupnagar or Sirhind, then to Chamkaur Sahib", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~15 km from Morinda, ~16km from Sirhind", costRange: "₹600–₹1,400 round trip by cab from Rupnagar", tips: "Roughly midway between Morinda and Sirhind." },
+    ],
+    accommodation: [
+      { type: "Rupnagar / Anandpur Sahib Hotels", priceRange: "₹800–₹5,000/night", examples: ["Most visitors day-trip from Rupnagar or the wider Anandpur Sahib pilgrimage circuit"], description: "Limited accommodation directly in Chamkaur Sahib." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 round trip", notes: "Most practical way to reach Chamkaur Sahib", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Takht Sri Keshgarh Sahib", distance: "Within the wider Anandpur Sahib pilgrimage route", type: "Spiritual", isHidden: false, id: "takht-keshgarh-sahib-anandpur-sahib" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2200, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 5500, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sikh History Pilgrimage", morning: "Depart for Chamkaur Sahib.", afternoon: "Visit Gurdwara Katalgarh Sahib and Gurdwara Damdama Sahib, and learn the Dastaan-e-Shahadat.", evening: "Return to Rupnagar or continue to Anandpur Sahib.", stay: "Rupnagar or Anandpur Sahib", meals: "Free langar at the Gurdwara", tips: "A profoundly moving site — allow time to reflect on the history before moving on." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An actively managed, significant pilgrimage Gurdwara"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 5100,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
