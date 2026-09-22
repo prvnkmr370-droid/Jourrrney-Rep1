@@ -825,6 +825,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaswant Thada", distance: "In city", type: "Heritage", isHidden: true, id: "jaswant-thada" },
       { name: "Ghanta Ghar (Clock Tower)", distance: "In city", type: "Heritage", isHidden: true, id: "ghanta-ghar-jodhpur" },
       { name: "Mahamandir Temple", distance: "~5 km", type: "Spiritual", isHidden: true, id: "mahamandir-temple-jodhpur" },
+      { name: "Shastri Circle", distance: "In city", type: "Heritage", isHidden: true, id: "shastri-circle-jodhpur" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -1086,6 +1087,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2600,
     mustEat: ["Mirchi Bada", "Makhaniya Lassi"],
     packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "shastri-circle-jodhpur",
+    name: "Shastri Circle",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Traffic Roundabout Landmark Topped by a Statue of Lal Bahadur Shastri",
+    description: "Shastri Circle is a prominent traffic roundabout in the middle of Jodhpur city, notable for a statue of former Indian Prime Minister Lal Bahadur Shastri set atop a fort-like circular base, alongside a large illuminated 'I Love Jodhpur' sign that has become a popular photo stop for locals and visitors. Functioning as a genuine traffic junction by day, the circle is decorated with lights at night, drawing a mix of evening walkers and photographers rather than dedicated sightseers — a quick, easy landmark to combine with other central Jodhpur sights.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Shastri_Circle_Jodhpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Shastri_Circle_Jodhpur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/8f/Shastri_Circle_Jodhpur.jpg"],
+    imageCredit: "Photo: Arpitchandora — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English Wikipedia article for Lal Bahadur Shastri.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "15–20 minutes",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Most photogenic when lit up in the evening. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Statue of former PM Lal Bahadur Shastri" },
+      { name: "Illuminated 'I Love Jodhpur' sign" },
+      { name: "A well-known central traffic landmark" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "Central Jodhpur", costRange: "₹100–₹250 by auto/cab within Jodhpur", tips: "A quick photo stop rather than a dedicated destination." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹600–₹90,000/night (estimate)", examples: ["Old-city guesthouses near the clock tower"], description: "A short ride from the old city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jodhpur", notes: "Standard way to pass by Shastri Circle", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹250", notes: "Reliable within Jodhpur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Umaid Bhawan Palace", distance: "~3 km", type: "Heritage", isHidden: true, id: "umaid-bhawan-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 700, food: 350, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 900, transport: 300, activities: 0 },
+      { tier: "luxury", label: "Royal Premium", perDayPerPerson: 24800, accommodation: 20000, food: 2500, transport: 500, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Central Jodhpur Evening", morning: "Umaid Bhawan Palace.", afternoon: "Rest, then head toward central Jodhpur.", evening: "Photo stop at Shastri Circle after dark for the illuminated sign.", stay: "Old-city guesthouse", meals: "Rajasthani thali lunch (₹250), dinner (₹450)", tips: "A quick stop — combine it with nearby sights rather than a dedicated trip." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy, well-lit traffic circle in an active part of the city, with steady evening traffic"],
+      precautions: ["Standard roadside/traffic precautions when stopping for photos"],
+      soloTips: ["Comfortable to view briefly, including in the evening, given the busy surroundings"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur Police Commissionerate Control Room", number: "0291-2650777" }, { label: "Police", number: "100" }],
+      safeZones: ["The circle and immediate surroundings"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 3400,
+    mustEat: ["Mirchi Bada"],
+    packingTips: ["Camera for the evening illumination"],
   },
 
   {
