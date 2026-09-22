@@ -1,0 +1,18 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/sas-nagar-modern-charm-cultural-heritage/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "SAS Nagar (Mohali)",
+  "about": "Named after Sahibzada Ajit Singh, Guru Gobind Singh Ji's eldest son. Punjab's 18th district (2006), carved from Rupnagar and Patiala. Part of the Chandigarh Tricity; a major IT hub.",
+  "places": [
+    { "name": "Fateh Burj, Chappar Chiri", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Chappar Chiri village, on Banda Singh Bahadur Road, just outside Mohali", "facts": "Tallest victory tower in India, 100m, completed 2011, French-Sikh architectural style; commemorates Banda Singh Bahadur's 1710 victory over Wazir Khan of Sirhind. Also called Baba Banda Singh Bahadur Memorial." },
+    { "name": "Gurdwara Sri Amb Sahib", "timings": "Open daily; Amrit Sanchar every Sangrand 10am", "entryFee": "Free", "location": "Sohana, near Mohali", "facts": "Site where Guru Har Rai Sahib Ji fulfilled Guru Arjan Dev Ji's promise to eat a mango from Bhai Kurma Ji's hand." },
+    { "name": "Gurdwara Singh Shaheedan, Sohana", "timings": "Daylight hours", "entryFee": "Free", "location": "Sohana village", "facts": "Preserves artefacts related to Sikh martyrs." },
+    { "name": "Punjab Cricket Association (PCA) IS Bindra Stadium", "timings": "Match days vary", "entryFee": "As per match ticketing", "location": "Sector 63, Mohali", "facts": "Home ground of Punjab Kings IPL team; hosts international matches." },
+    { "name": "M.C. Zoological Park, Chhatbir", "timings": "Check locally", "entryFee": "Check locally", "location": "Chhatbir, on the Mohali-Zirakpur-Patiala stretch", "facts": "Zoo with a wide range of flora and fauna." },
+    { "name": "Bestech Square Mall (VR Punjab area)", "timings": "Not specified", "entryFee": "Not applicable", "location": "SAS Nagar", "facts": "Modern shopping/dining/entertainment hub." }
+  ],
+  "howToReach": { "note": "Contiguous with Chandigarh; part of the Chandigarh Tricity." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}

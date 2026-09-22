@@ -81565,6 +81565,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "A scarf or head covering for the Gurdwara"],
   },
 
+  {
+    id: "fateh-burj-chappar-chiri",
+    name: "Fateh Burj (Victory Tower)",
+    state: "Punjab",
+    tagline: "India's Tallest Victory Tower, Marking Banda Singh Bahadur's Decisive 1710 Triumph",
+    description: "Fateh Burj, in the historical village of Chappar Chiri just outside Mohali, is the tallest victory tower in India at 100 metres (328 feet). Completed in 2011 in a French-Sikh architectural style, it commemorates the establishment of the Sikh Misls across a large part of Punjab in 1711, following Banda Singh Bahadur's decisive 1710 victory over Wazir Khan, the Mughal commander of Sirhind, at this very site — a turning point that led to the establishment of Sikh rule across large parts of Punjab. Also known as the Baba Banda Singh Bahadur Memorial, the tapering tower's silhouette against the sky, especially at sunset, has made it one of the region's most recognizable modern landmarks.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Fateh_Burj_%2C_village_Chappar_Chiri_%2CMohali%2C_Punjab.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Fateh_Burj_%2C_village_Chappar_Chiri_%2CMohali%2C_Punjab.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4c/Fateh_Burj_%2C_village_Chappar_Chiri_%2CMohali%2C_Punjab.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Daylight hours. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "India's tallest victory tower, 100 metres (328 feet)" },
+      { name: "Commemorates the 1710 victory of Banda Singh Bahadur over Wazir Khan" },
+      { name: "French-Sikh architectural style, completed 2011" },
+      { name: "Also known as the Baba Banda Singh Bahadur Memorial" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chandigarh, then to Chappar Chiri near Mohali", fromMumbai: "Via Chandigarh", fromBangalore: "Via Chandigarh", duration: "~20 km from Mohali", costRange: "₹500–₹1,200 round trip by cab from Mohali/Chandigarh", tips: "On Banda Singh Bahadur Road, just outside Mohali; 140km from Amritsar, 20km from Sirhind." },
+    ],
+    accommodation: [
+      { type: "Mohali / Chandigarh Hotels", priceRange: "₹1,500–₹10,000/night", examples: ["Extensive hotel options given proximity to Chandigarh"], description: "Part of the Chandigarh Tricity, with a wide range of accommodation." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,200 round trip", notes: "Most practical way to reach Chappar Chiri", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "PCA IS Bindra Stadium", distance: "Within SAS Nagar district", type: "Culture", isHidden: false, id: "pca-stadium-mohali" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 10500, accommodation: 7000, food: 1200, transport: 1000, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chandigarh Tricity Heritage", morning: "Explore Chandigarh's own sights.", afternoon: "Visit Fateh Burj at Chappar Chiri.", evening: "Return via Mohali, best timed for sunset at the tower.", stay: "Mohali or Chandigarh", meals: "Local Tricity dining options", tips: "Aim to arrive near sunset for the tower's most photogenic silhouette." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, publicly accessible modern monument near the Chandigarh Tricity"],
+      precautions: ["Standard monument-visit precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The memorial grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 3100,
+    mustEat: ["Local Tricity-area dining"],
+    packingTips: ["Comfortable walking shoes", "A camera for the sunset silhouette"],
+  },
+
+  {
+    id: "pca-stadium-mohali",
+    name: "Punjab Cricket Association (PCA) IS Bindra Stadium",
+    state: "Punjab",
+    tagline: "Punjab's Premier Cricket Ground and Home of the Punjab Kings",
+    description: "The Punjab Cricket Association IS Bindra Stadium, in Sector 63, Mohali, is one of India's premier cricket venues and the home ground of the Punjab Kings IPL franchise. Since opening, it has hosted numerous international matches — Test, ODI and T20 fixtures alike — including games at the 2016 ICC Women's World Twenty20 and multiple IPL seasons. Most Punjab-based cricketers who went on to represent India, including Yuvraj Singh and Harbhajan Singh, made their debuts here, cementing the stadium's place as a genuine nursery of Indian cricket talent as much as a modern sporting venue.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/24/PCA_Stadium%2C_Mohali_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/24/PCA_Stadium%2C_Mohali_1.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/24/PCA_Stadium%2C_Mohali_1.jpg"],
+    imageCredit: "Photo: DeepArjunSingh — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Culture"],
+    bestSeason: "October – March (outside match calendar, October is also IPL off-season — best for stadium visits when matches aren't scheduled)",
+    duration: "1–3 hours (longer on match days)",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Match days and event schedules vary; check the official PCA schedule. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Home ground of the Punjab Kings IPL franchise" },
+      { name: "Hosted the 2016 ICC Women's World Twenty20 and multiple IPL seasons" },
+      { name: "Debut ground for many Punjab-born India cricketers, including Yuvraj Singh and Harbhajan Singh" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chandigarh, then to Sector 63, Mohali", fromMumbai: "Via Chandigarh Airport", fromBangalore: "Via Chandigarh Airport", duration: "~15 min from central Mohali", costRange: "₹100–₹400 by local transport", tips: "Sector 63, Mohali, part of the Chandigarh Tricity." },
+    ],
+    accommodation: [
+      { type: "Mohali / Chandigarh Hotels", priceRange: "₹1,500–₹10,000/night", examples: ["Extensive hotel options given proximity to Chandigarh"], description: "Part of the Chandigarh Tricity, with a wide range of accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹80–₹200 within Mohali", notes: "Standard way to reach the stadium", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Fateh Burj (Victory Tower)", distance: "Within SAS Nagar district", type: "Heritage", isHidden: false, id: "fateh-burj-chappar-chiri" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 800, food: 300, transport: 300, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4800, accommodation: 2800, food: 700, transport: 500, activities: 800 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11000, accommodation: 7000, food: 1200, transport: 800, activities: 2000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mohali Modern Landmarks", morning: "Fateh Burj at Chappar Chiri.", afternoon: "PCA Stadium — a match if timing allows, or the surrounding sports precinct.", evening: "Dining in Mohali's Tricity area.", stay: "Mohali or Chandigarh", meals: "Local Tricity dining options", tips: "Check the official PCA schedule if you want to catch a live match; otherwise it's mainly an exterior/landmark visit outside event days." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-secured sporting venue in a modern urban district"],
+      precautions: ["Standard event/stadium precautions on match days — heavy crowds"],
+      soloTips: ["Comfortable for solo visitors; match days are lively but well-managed"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Women Helpline", number: "1091" },
+      ],
+      safeZones: ["The stadium precinct and surrounding Sector 63 area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 6700,
+    mustEat: ["Stadium food stalls on match days", "Local Tricity dining"],
+    packingTips: ["Check match tickets in advance if attending a game", "Comfortable clothing for long stadium visits"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
