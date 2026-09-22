@@ -78849,6 +78849,68 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear", "Comfortable shoes for stairs"],
   },
 
+  {
+    id: "sadda-pind-amritsar",
+    name: "Sadda Pind",
+    state: "Punjab",
+    tagline: "A Living Village Museum of Traditional Punjabi Rural Life",
+    description: "Sadda Pind ('Our Village') is a 12-acre living-village museum about 8km from the Golden Temple, built to recreate the look, crafts and rhythms of a traditional Punjabi village. Brightly painted courtyard buildings, working craft demonstrations, folk performances and traditional Punjabi cuisine give visitors — especially those without rural roots in the state — a hands-on introduction to village life, agrarian tools, and Punjabi hospitality. It also offers overnight guest rooms for those who want to stay longer than a day trip.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sadda_Pind_-_Best_Tourist_Destination_in_Amritsar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sadda_Pind_-_Best_Tourist_Destination_in_Amritsar.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/9a/Sadda_Pind_-_Best_Tourist_Destination_in_Amritsar.jpg"],
+    imageCredit: "Photo: Saddapind — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Culture", "Family"],
+    bestSeason: "October – March",
+    duration: "3–5 hours (or overnight)",
+    visitingHours: { opens: "10:30 AM", closes: "10:00 PM", note: "10:30am–10pm daily. Entry: Adults ₹720, Children ₹570. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "12-acre recreated traditional Punjabi village" },
+      { name: "Live folk performances, craft demonstrations and traditional cuisine" },
+      { name: "Hands-on displays of agrarian tools like the Kharaad and Persian wheel" },
+      { name: "20 guest rooms for those who want to stay overnight" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "~8km from the Golden Temple and ~7km from the airport." },
+    ],
+    accommodation: [
+      { type: "On-site guest rooms at Sadda Pind", priceRange: "Varies — enquire directly", examples: ["20 themed village-style guest rooms"], description: "Overnight stays are available for a fuller village-life experience." },
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["City hotels, a short drive away"], description: "Most visitors combine a Sadda Pind visit with a city-based stay." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹350 from central Amritsar", notes: "Most convenient way to reach the venue", available: true },
+      { mode: "Taxi", cost: "₹300–₹600 round trip", notes: "Easily arranged from hotels", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~8 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 2200, accommodation: 700, food: 300, transport: 500, activities: 700 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 2800, food: 700, transport: 700, activities: 1300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 12500, accommodation: 8500, food: 1200, transport: 1000, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Punjabi Village Experience", morning: "Amritsar city sightseeing.", afternoon: "Head to Sadda Pind for craft demonstrations and village exploration.", evening: "Folk performances and traditional Punjabi dinner.", stay: "Amritsar city or Sadda Pind's own guest rooms", meals: "Traditional Punjabi thali at Sadda Pind", tips: "Evenings have the liveliest folk performances — plan to stay past sunset." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A managed, ticketed tourist venue with staff throughout"],
+      precautions: ["Standard precautions for a family-oriented tourist venue"],
+      soloTips: ["Comfortable for solo visitors; evenings can feel more lively with performance crowds"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The entire managed venue"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 7200,
+    mustEat: ["Traditional Punjabi thali and street-style snacks served on-site"],
+    packingTips: ["Comfortable walking shoes for the large grounds", "Light layers for cooler evenings in winter"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
