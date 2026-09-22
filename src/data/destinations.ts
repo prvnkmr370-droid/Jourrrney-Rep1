@@ -655,6 +655,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Gaitore (Cenotaphs of the Kings)", distance: "8 km", type: "Heritage", isHidden: true, id: "gaitore" },
       { name: "Nahargarh Biological Park", distance: "12 km", type: "Wildlife", isHidden: true, id: "nahargarh-biological-park" },
       { name: "Jhalana Safari Park", distance: "7 km", type: "Wildlife", isHidden: true, id: "jhalana-safari-park" },
+      { name: "Sambhar Lake", distance: "70 km", type: "Nature", isHidden: true, id: "sambhar-lake" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24452,6 +24453,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8900,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Neutral-colored clothing", "Binoculars", "Camera with zoom lens", "Sun protection"],
+  },
+
+  {
+    id: "sambhar-lake",
+    name: "Sambhar Lake",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sambhar Salt Lake"],
+    tagline: "India's Largest Inland Salt Lake, a Ramsar Wetland on the Edge of Jaipur District",
+    description: "Sambhar Lake, roughly 70 km from Jaipur, is India's largest inland salt lake and a designated Ramsar wetland of international importance since 1990. The lake has been a working source of salt for centuries, and its shallow, mineral-rich waters and surrounding flats seasonally draw large numbers of flamingos and other migratory birds. The historic Salt Works railway once served the salt-extraction operations here, and the site includes the Devyani Kund and Sharmishtha Sarovar tanks and a small Salt Museum. On its edge, the hilltop Shakambhari Mata Temple offers sweeping views over the lake and is a genuine local pilgrimage and sunset-viewing spot in its own right.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Sambhar_lake_sunset_scene.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/Sambhar_lake_sunset_scene.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/28/Sambhar_lake_sunset_scene.JPG"],
+    imageCredit: "Photo: Nawanshu91 — Wikimedia Commons, CC BY-SA 3.0. Used on the Wikipedia/Wikidata entries for Sambhar Lake.",
+    category: ["Nature", "Off-beat"],
+    bestSeason: "November – February (for flamingo sightings)",
+    duration: "3–5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open area, best visited at sunrise or sunset; flamingo presence is seasonal. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "India's largest inland salt lake, Ramsar wetland since 1990" },
+      { name: "Seasonal flamingo and migratory bird sightings" },
+      { name: "Shakambhari Mata Temple, hilltop views over the lake" },
+      { name: "Historic Salt Works railway and Salt Museum" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~70 km from Jaipur", costRange: "₹1,000–₹2,500 round-trip cab from Jaipur", tips: "Best visited on a day trip with an early start for flamingo sightings and cooler temperatures." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited as a day trip from Jaipur; limited lodging options at Sambhar town itself." },
+    ],
+    localTransport: [
+      { mode: "Private Cab", cost: "₹1,000–₹2,500 round-trip from Jaipur", notes: "Most practical way to visit given the distance and spread-out sites", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~70 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 700, food: 400, transport: 700, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5300, accommodation: 3000, food: 1000, transport: 1100, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 25400, accommodation: 20000, food: 2500, transport: 1600, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sambhar Lake Day Trip", morning: "Drive out from Jaipur, arrive for morning light over the lake.", afternoon: "Shakambhari Mata Temple viewpoint and the Salt Museum.", evening: "Return to Jaipur, or stay for sunset over the lake before heading back.", stay: "Jaipur", meals: "Pack water and snacks — limited food options en route", tips: "Flamingo presence depends on water levels and season — check recent sightings before planning specifically around them." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known day-trip destination, though remote and less touristed than central Jaipur sites"],
+      precautions: ["Travel with a driver/guide rather than exploring alone", "Avoid walking far from the vehicle on the open salt flats", "Carry water and sun protection — the area is exposed and remote"],
+      soloTips: ["Best visited as part of a booked day tour or with a trusted driver rather than independently"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked viewpoints and the temple area"],
+      avoidAreas: ["Unmarked stretches of the salt flats, especially after rain"],
+    },
+    rating: 4.2,
+    reviews: 3400,
+    mustEat: ["Carry your own food and water — limited options at the site"],
+    packingTips: ["Sun protection", "Water", "Binoculars for birdwatching", "Comfortable closed shoes for the salt flats"],
   },
 
   {
