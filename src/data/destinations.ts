@@ -667,6 +667,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaipur Wax Museum", distance: "15 km", type: "Culture", isHidden: true, id: "jaipur-wax-museum" },
       { name: "Amrapali Museum", distance: "2 km", type: "Culture", isHidden: true, id: "amrapali-museum" },
       { name: "Statue Circle", distance: "2 km", type: "Culture", isHidden: true, id: "statue-circle-jaipur" },
+      { name: "Central Park, Jaipur", distance: "3 km", type: "Nature", isHidden: true, id: "central-park-jaipur" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -25110,6 +25111,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2600,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Camera for the evening illumination"],
+  },
+
+  {
+    id: "central-park-jaipur",
+    name: "Central Park, Jaipur",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Jaipur's Largest Park, Home to the Country's Tallest Flagpole",
+    description: "Central Park, developed by the Jaipur Development Authority, is Jaipur's largest public park, combining open lawns and walking paths with a polo ground and a golf club within its grounds. Its most distinctive feature is a monumental National Flag flown day and night from what is described as the country's tallest flagpole — reportedly the first such all-day, all-night installation in India when it was raised. The scale of open green space makes it a popular spot for morning walks, joggers, and families in the evening, offering a quieter contrast to Jaipur's more crowded heritage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Central_Park_of_Jaipur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Central_Park_of_Jaipur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/dc/Central_Park_of_Jaipur.jpg"],
+    imageCredit: "Photo: Akku09102004 — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English Wikipedia article for Central Park, Jaipur.",
+    category: ["Nature"],
+    bestSeason: "October – February",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Jaipur's largest public park" },
+      { name: "Reportedly India's tallest flagpole, flown day and night" },
+      { name: "Polo ground and golf club within the grounds" },
+      { name: "Popular for morning walks and evening family outings" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Central Jaipur", costRange: "₹100–₹300 by auto/cab within Jaipur", tips: "Early morning is the most pleasant time to visit, before the day heats up." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Central Jaipur location." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jaipur", notes: "Standard way to reach Central Park", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Statue Circle", distance: "~2 km", type: "Culture", isHidden: true, id: "statue-circle-jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 700, food: 400, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 3000, food: 1000, transport: 400, activities: 0 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24100, accommodation: 20000, food: 2500, transport: 600, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Morning in Central Jaipur", morning: "A walk through Central Park.", afternoon: "Statue Circle and C-Scheme sights.", evening: "City Palace or Hawa Mahal.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "A good pick for a relaxed morning walk between heritage-site visits." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A large, actively used public park with regular joggers and families, especially mornings and evenings"],
+      precautions: ["Stay in the well-populated central areas of the park", "Standard park precautions after dark"],
+      soloTips: ["Comfortable for solo morning walks given the steady presence of other walkers and joggers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The main lawns and walking paths during daylight hours"],
+      avoidAreas: ["Less-populated corners of the park after dark"],
+    },
+    rating: 4.3,
+    reviews: 5800,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable walking shoes"],
   },
 
   {
