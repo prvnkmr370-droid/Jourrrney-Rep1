@@ -823,6 +823,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaisalmer", distance: "285 km", type: "Desert", isHidden: false, id: "jaisalmer" },
       { name: "Umaid Bhawan Palace", distance: "In city", type: "Heritage", isHidden: true, id: "umaid-bhawan-palace" },
       { name: "Jaswant Thada", distance: "In city", type: "Heritage", isHidden: true, id: "jaswant-thada" },
+      { name: "Ghanta Ghar (Clock Tower)", distance: "In city", type: "Heritage", isHidden: true, id: "ghanta-ghar-jodhpur" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -967,6 +968,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 14700,
     mustEat: ["Mirchi Bada", "Makhaniya Lassi"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "ghanta-ghar-jodhpur",
+    name: "Ghanta Ghar (Clock Tower)",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Clock Tower Jodhpur"],
+    tagline: "The Old City's Landmark Tower, Ringed by the Bustling Sardar Market",
+    description: "Ghanta Ghar, the clock tower, stands at the heart of Jodhpur's old city, built by Maharaja Sardar Singh, whose name is also carried by the adjacent Sardar Market. The tower functions as the city's most recognisable landmark and the traditional start and end point of Jodhpur's old-city heritage walks. The surrounding Sardar Market is a genuinely working bazaar rather than a tourist-only setup, popular for spices, traditional textiles, and costume jewellery, and gives the area a lively, crowded atmosphere throughout the day.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jodhpur%2C_India%2C_Jodhpur_Clock_Tower_%28Ghanta_Ghar%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jodhpur%2C_India%2C_Jodhpur_Clock_Tower_%28Ghanta_Ghar%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f8/Jodhpur%2C_India%2C_Jodhpur_Clock_Tower_%28Ghanta_Ghar%29.jpg"],
+    imageCredit: "Photo: Vyacheslav Argenberg — Wikimedia Commons, CC BY 4.0. Same image used on Azerbaijani, Danish, Finnish, and Chinese Wikipedia.",
+    category: ["Heritage", "Shopping"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1.5 hours (with bazaar shopping)",
+    visitingHours: { opens: "24 hours (exterior view)", closes: "24 hours (exterior view)", note: "Sardar Market shops generally open through the day into the evening. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by Maharaja Sardar Singh" },
+      { name: "Start/end point of the old-city heritage walk" },
+      { name: "Surrounded by the working Sardar Market bazaar" },
+      { name: "Popular for spices, textiles, and jewellery shopping" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jodhpur — long haul", fromMumbai: "Via Jodhpur — long haul", fromBangalore: "Via Jodhpur — long haul", duration: "Old city, central Jodhpur", costRange: "₹50–₹150 by auto within Jodhpur", tips: "Best explored on foot as part of a longer old-city walking route." },
+    ],
+    accommodation: [
+      { type: "Base in Jodhpur", priceRange: "₹600–₹90,000/night (estimate)", examples: ["Old-city guesthouses near the clock tower"], description: "Many old-city guesthouses are within walking distance." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Best way to explore the surrounding bazaar", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Good for navigating the narrow old-city lanes", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mehrangarh Fort", distance: "~1.5 km", type: "Heritage", isHidden: true, id: "mehrangarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1450, accommodation: 700, food: 350, transport: 100, activities: 300 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 2500, food: 900, transport: 300, activities: 900 },
+      { tier: "luxury", label: "Royal Premium", perDayPerPerson: 25400, accommodation: 20000, food: 2500, transport: 500, activities: 2400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City Bazaar Walk", morning: "Mehrangarh Fort.", afternoon: "Walk down to Ghanta Ghar and shop at Sardar Market.", evening: "Rooftop dinner overlooking the old city.", stay: "Old-city guesthouse", meals: "Mirchi bada street snack (₹30), rooftop dinner (₹500)", tips: "Bargain is expected at Sardar Market — compare a few stalls before buying." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy, well-trafficked market area throughout the day"],
+      precautions: ["Watch for pickpockets in crowded bazaar lanes", "Agree on prices clearly before buying"],
+      soloTips: ["Comfortable for solo daytime shopping given the constant crowds and stall activity"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jodhpur Police Commissionerate Control Room", number: "0291-2650777" }, { label: "Police", number: "100" }],
+      safeZones: ["The market area during daylight and early evening hours"],
+      avoidAreas: ["Quieter side-lanes after the market closes for the night"],
+    },
+    rating: 4.4,
+    reviews: 9100,
+    mustEat: ["Mirchi Bada", "Street snacks in Sardar Market"],
+    packingTips: ["Comfortable walking shoes", "Cash for bazaar shopping"],
   },
 
   {
