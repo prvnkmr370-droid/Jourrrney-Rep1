@@ -81212,6 +81212,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "kali-devi-temple-patiala",
+    name: "Shri Kali Devi Temple",
+    state: "Punjab",
+    tagline: "A Royal Temple Housing Manuscript Leaves Said to Be Written by Sage Vyas",
+    description: "Shri Kali Devi Temple, on Patiala's Mall Road across from the Baradari Gardens, was built by the Maharaja of Patiala in 1936 and remains a spiritual destination for people of all faiths. Its most revered possession is a set of manuscript leaves (patras) believed to have been written by Rishi Vyas, the legendary author of the Mahabharata — brought to Patiala by Maharaja Narinder Singh following a pilgrimage to the Badri Narain Temple in Uttar Pradesh. The gold-adorned sanctum draws devotees especially on Tuesdays and Saturdays, and the temple hosts large fairs in April and October each year.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Kali_Devi_Patiala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Kali_Devi_Patiala.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Kali_Devi_Patiala.jpg"],
+    imageCredit: "Photo: Deepak143goyal — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "5am-9pm daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1936 by the Maharaja of Patiala" },
+      { name: "Holds manuscript leaves believed written by Rishi Vyas, author of the Mahabharata" },
+      { name: "Especially busy on Tuesdays and Saturdays" },
+      { name: "Large annual fairs in April and October" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Patiala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Mall Road, across from Baradari Gardens." },
+    ],
+    accommodation: [
+      { type: "Patiala City Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["A wide range of hotels in Patiala"], description: "Extensive hotel options in Patiala." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the temple", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak", distance: "~3 km", type: "Heritage", isHidden: false, id: "qila-mubarak-patiala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2500, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 6000, food: 1200, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patiala Spiritual Heritage", morning: "Gurudwara Sri Dukh Niwaran Sahib.", afternoon: "Shri Kali Devi Temple and the Baradari Gardens.", evening: "Qila Mubarak.", stay: "Central Patiala", meals: "Local Patiala Punjabi fare", tips: "Visit on a Tuesday or Saturday for the fullest atmosphere, or during the April/October fairs." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located temple on Mall Road"],
+      precautions: ["Standard temple precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The temple and Baradari Gardens area"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 3800,
+    mustEat: ["Local Patiala Punjabi fare"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
