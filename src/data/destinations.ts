@@ -723,7 +723,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Adventure"],
     bestSeason: "October – March",
     duration: "2–3 days",
-    highlights: [{ name: "Jaisalmer Fort (Sonar Qila) — a living fort" }, { name: "Patwon Ki Haveli", id: "patwon-ki-haveli" }, { name: "Sam Sand Dunes at sunset" }, { name: "Gadisar Lake" }, { name: "Kuldhara abandoned village" }],
+    highlights: [{ name: "Jaisalmer Fort (Sonar Qila) — a living fort" }, { name: "Patwon Ki Haveli", id: "patwon-ki-haveli" }, { name: "Sam Sand Dunes at sunset" }, { name: "Gadisar Lake", id: "gadisar-lake" }, { name: "Kuldhara abandoned village" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Delhi Sarai Rohilla–Jaisalmer Express — ~17–18h", fromMumbai: "Via Jodhpur — 24h+", fromBangalore: "Via Jodhpur — 30h+", duration: "17h+ from Delhi; ~5–6h from Jodhpur", costRange: "₹400–₹2,000", tips: "Jodhpur is the better-connected hub — many travellers train to Jodhpur first, then take a shorter onward train or bus." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48/NH11 — 12–14h", fromMumbai: "Via Jodhpur — 20h+", fromBangalore: "—", duration: "~5–6h from Jodhpur (285 km)", costRange: "₹2,500–₹5,000 cab / ₹400–₹700 bus from Jodhpur", tips: "The Jodhpur–Jaisalmer highway is well-maintained; buses run frequently and are a comfortable, cheap option." },
@@ -751,6 +751,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
       { name: "Salim Singh Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "salim-singh-ki-haveli" },
+      { name: "Gadisar Lake", distance: "In city", type: "Heritage", isHidden: true, id: "gadisar-lake" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 250, activities: 150 },
@@ -951,6 +952,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4900,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Modest clothing", "Camera"],
+  },
+
+  {
+    id: "gadisar-lake",
+    name: "Gadisar Lake",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Gadsisar Lake", "Gadi Sagar"],
+    tagline: "A 14th-Century Rainwater Reservoir Ringed by Temples and Chhatris",
+    description: "Gadisar Lake, dug in 1367 as Jaisalmer's main water source in a city with no natural rivers or lakes, is fed by rainwater and surrounded by small temples, shrines, and chhatris built up over centuries by the city's wealthy merchant families. Its most striking feature is the Tilon Ki Pol gateway on the lake's edge, built in the 19th century by a courtesan without royal approval; according to local legend, she outsmarted an angry Maharawal who wanted it torn down by adding a small temple to its top, since destroying a temple was unthinkable. Boat rides on the lake, migratory birds in the cooler months, and the golden reflection of Jaisalmer Fort in the water make it a genuine centre of city life rather than just a monument.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Jaisalmer-Gadhisar_Lake-02-Tilo_Ki_Pol-20131011.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Jaisalmer-Gadhisar_Lake-02-Tilo_Ki_Pol-20131011.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f3/Jaisalmer-Gadhisar_Lake-02-Tilo_Ki_Pol-20131011.jpg"],
+    imageCredit: "Photo: Daniel VILLAFRUELA — Wikimedia Commons, CC BY-SA 3.0. ASI monument S-RJ-147; GPS-confirmed in Jaisalmer district.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Laser water show runs in the evening. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Dug in 1367 as Jaisalmer's main water source" },
+      { name: "Tilon Ki Pol gateway, with its temple-on-top legend" },
+      { name: "Ringed by temples, shrines, and chhatris" },
+      { name: "Evening laser water show depicting Jaisalmer's history" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "Just south of the old city, Jaisalmer", costRange: "₹30–₹100 by auto within Jaisalmer", tips: "Time your visit for sunset, when the fort's reflection in the water is at its best." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort"], description: "A short walk from the old city." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Easily reached from the old city on foot", available: true },
+      { mode: "Boat (paddle/rowboat)", cost: "₹50–₹200 (indicative)", notes: "Available at the lakefront", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "In city", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 600, food: 300, transport: 150, activities: 250 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4300, accommodation: 2200, food: 800, transport: 400, activities: 800 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 18300, accommodation: 13000, food: 2000, transport: 1000, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City & Lake", morning: "Jaisalmer Fort and old-city havelis.", afternoon: "Rest during peak heat.", evening: "Gadisar Lake at sunset, followed by the laser water show.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "The laser show timing varies seasonally — check locally before planning around it." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known tourist site with regular evening crowds for the laser show"],
+      precautions: ["Standard lakeside precautions after dark", "Stick to the main lit pathways in the evening"],
+      soloTips: ["Comfortable for solo visits during the day and the busier evening show; less so for a quiet, isolated walk after dark"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main lakefront and Tilon Ki Pol area during opening hours"],
+      avoidAreas: ["Less-lit sections of the lakeside after the evening show ends"],
+    },
+    rating: 4.5,
+    reviews: 11400,
+    mustEat: ["Ker Sangri", "Street snacks near the lakefront"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Light jacket for cool desert evenings"],
   },
 
   {
