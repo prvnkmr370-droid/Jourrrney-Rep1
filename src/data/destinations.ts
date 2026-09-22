@@ -78972,6 +78972,68 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the large grounds"],
   },
 
+  {
+    id: "ram-tirath-amritsar",
+    name: "Bhagwan Valmiki Tirath Sthal (Ram Tirath)",
+    state: "Punjab",
+    tagline: "The Site Where Sage Valmiki Is Believed to Have Composed the Ramayana",
+    description: "Bhagwan Valmiki Tirath Sthal, about 11km from the Golden Temple on the Amritsar-Lopoke Road, is a temple complex built around the site traditionally believed to be the ashram of Sage Valmiki — where the Ramayana was composed and where Lav and Kush, the sons of Lord Rama and Sita, are said to have been born. The rebuilt complex features vividly orange, tiered shikhara-style temple pavilions standing over a large sacred tank, connected by walkways, along with a gold-plated statue of Valmiki. A roughly 2km parikrama path circles the site, and it draws large crowds each November for the four-day Ram Tirath Fair.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/68/Ramtirath.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/68/Ramtirath.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/68/Ramtirath.jpg"],
+    imageCredit: "Photo: Mohalimunda — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "10:00 PM", note: "6am–10pm daily. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Traditionally believed birthplace of Lav and Kush, and site of the Ramayana's composition" },
+      { name: "Tiered, gold-toned shikhara temple pavilions rising over a sacred tank" },
+      { name: "A gold-plated statue of Sage Valmiki" },
+      { name: "~2km parikrama path around the complex" },
+      { name: "Annual four-day Ram Tirath Fair each November" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "~11km from the Golden Temple on the Amritsar-Lopoke Road." },
+    ],
+    accommodation: [
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["City hotels, a short drive away"], description: "Visited as a half-day trip from the city." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹450 from central Amritsar", notes: "Most convenient way to reach the site", available: true },
+      { mode: "Taxi", cost: "₹400–₹700 round trip", notes: "Easily arranged from hotels", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~11 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 700, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 2800, food: 700, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11200, accommodation: 8500, food: 1200, transport: 1100, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Amritsar Spiritual Sites", morning: "Visit the Golden Temple.", afternoon: "Drive out to Bhagwan Valmiki Tirath Sthal for the temple complex and parikrama.", evening: "Return to the city for Heritage Street.", stay: "Near the Golden Temple", meals: "Local Amritsari fare", tips: "Visit around sunset for good light over the tank, but allow time to return before dark." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["An actively-run temple complex with a steady flow of devotees, especially around the fair"],
+      precautions: ["More remote than central Amritsar sites — arrange return transport in advance", "Very crowded during the November Ram Tirath Fair; keep valuables secure"],
+      soloTips: ["Best visited during daylight hours; arrange a cab both ways given the distance from the city"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The temple complex and parikrama path during open hours"],
+      avoidAreas: ["The unlit approach road after dark"],
+    },
+    rating: 4.5,
+    reviews: 3400,
+    mustEat: ["Prasad and snack stalls near the complex"],
+    packingTips: ["Comfortable walking shoes for the parikrama", "Sun protection — the tank area is fully open"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
