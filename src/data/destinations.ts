@@ -750,6 +750,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaisalmer War Museum", distance: "~10 km", type: "History", isHidden: true, id: "jaisalmer-war-museum" },
       { name: "Tanot Mata Temple", distance: "120 km", type: "Spiritual", isHidden: true, id: "tanot-mata-temple" },
       { name: "Mandir Palace (Badal Mahal)", distance: "In city", type: "Heritage", isHidden: true, id: "mandir-palace-jaisalmer" },
+      { name: "Jain Temples of Jaisalmer Fort", distance: "In city", type: "Spiritual", isHidden: true, id: "jain-temples-jaisalmer-fort" },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
@@ -1305,6 +1306,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2900,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Modest clothing", "Camera"],
+  },
+
+  {
+    id: "jain-temples-jaisalmer-fort",
+    name: "Jain Temples of Jaisalmer Fort",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Chandraprabhu Temple"],
+    tagline: "12th–15th-Century Yellow Sandstone Temples in the Dilwara Style",
+    description: "The Jain temples inside Jaisalmer Fort date from the 12th to 15th centuries and are dedicated to Tirthankaras — the enlightened teachers of Jainism — including Rikhabdevji and Shambhavdevji, with the Chandraprabhu Temple among the most visited of the complex. Carved from the same golden-yellow sandstone as the rest of the fort, the temples are built in the Dilwara architectural style associated with Rajasthan and Gujarat's finest Jain shrines, with densely detailed interior stonework standing in contrast to the more restrained exteriors typical of a living, still-inhabited fort. The temples remain active places of worship, forming a genuinely distinct architectural layer within Jaisalmer Fort's living city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jaisalmer_Jain_Temple_6.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jaisalmer_Jain_Temple_6.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7e/Jaisalmer_Jain_Temple_6.jpg"],
+    imageCredit: "Photo: Ingo Mehling — Wikimedia Commons, CC BY-SA 3.0. Quality Image; same photo used on Jaisalmer's English Wikivoyage page and multiple Wikipedia articles.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "7:00 AM", closes: "12:00 PM", note: "Jain temples inside the fort typically keep separate, shorter hours than the fort itself — reconfirm locally. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Date from the 12th to 15th centuries" },
+      { name: "Dedicated to Tirthankaras Rikhabdevji and Shambhavdevji" },
+      { name: "Built in the Dilwara architectural style" },
+      { name: "Densely carved yellow sandstone interiors" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "Inside Jaisalmer Fort", costRange: "₹30–₹100 by auto within Jaisalmer", tips: "Visit in the morning — the temples often keep shorter hours than the rest of the fort." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Guesthouses inside the fort itself", "Old-city guesthouses nearby"], description: "Several guesthouses are within the living fort, a short walk from the temples." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temples are within the fort walls", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer", distance: "In city", type: "City", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 150, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4100, accommodation: 2200, food: 800, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 17800, accommodation: 13000, food: 2000, transport: 1000, activities: 1500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Fort Interior Morning", morning: "Jain temples inside Jaisalmer Fort.", afternoon: "Rest of the fort complex and Raj Mahal.", evening: "Gadisar Lake at sunset.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "Footwear and leather items are typically not allowed inside — plan accordingly." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known site within the fort, though not as heavily visited as the main fort attractions"],
+      precautions: ["Dress conservatively", "Follow temple etiquette (footwear/leather restrictions)"],
+      soloTips: ["Comfortable for solo daytime visits given the fort's steady tourist footfall"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["Within the fort during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 6100,
+    mustEat: ["Ker Sangri", "Dal Baati Churma"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear", "No leather items"],
   },
 
   {
