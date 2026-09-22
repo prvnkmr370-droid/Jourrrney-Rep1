@@ -751,6 +751,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Tanot Mata Temple", distance: "120 km", type: "Spiritual", isHidden: true, id: "tanot-mata-temple" },
       { name: "Mandir Palace (Badal Mahal)", distance: "In city", type: "Heritage", isHidden: true, id: "mandir-palace-jaisalmer" },
       { name: "Jain Temples of Jaisalmer Fort", distance: "In city", type: "Spiritual", isHidden: true, id: "jain-temples-jaisalmer-fort" },
+      { name: "Vyas Chhatri", distance: "In city", type: "Heritage", isHidden: true, id: "vyas-chhatri" },
       { name: "Bada Bagh (royal cenotaphs)", distance: "6 km", type: "Heritage", isHidden: true, id: "bada-bagh" },
       { name: "Patwon Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "patwon-ki-haveli" },
       { name: "Nathmal Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "nathmal-ki-haveli" },
@@ -1364,6 +1365,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 6100,
     mustEat: ["Ker Sangri", "Dal Baati Churma"],
     packingTips: ["Modest clothing", "Easy-to-remove footwear", "No leather items"],
+  },
+
+  {
+    id: "vyas-chhatri",
+    name: "Vyas Chhatri",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Vyas Chhatri Sunset Point"],
+    tagline: "A Brahmin Cenotaph Cluster on a Hillside, Jaisalmer's Best-Known Sunset Point",
+    description: "Vyas Chhatri is a cluster of cenotaphs dedicated to Brahmins of the Vyas caste, set on a hillside just outside Jaisalmer's old city walls. Its golden sandstone chhatris, densely carved and arranged across the ridge, are best known today as one of the city's most popular sunset viewpoints, offering a sweeping view back across the old town and the fort. Local musicians often play traditional instruments such as the algoza, a double-flute, adding to the atmosphere as visitors gather here each evening to watch the desert light change over Jaisalmer's skyline.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/df/Jaisalmer-Vyas_Chhatri_Cenotaphs-20131010.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/df/Jaisalmer-Vyas_Chhatri_Cenotaphs-20131010.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/df/Jaisalmer-Vyas_Chhatri_Cenotaphs-20131010.jpg"],
+    imageCredit: "Photo: Daniel VILLAFRUELA — Wikimedia Commons, CC BY-SA 3.0. GPS-confirmed at Vyas Chhatri Sunset Point, Jaisalmer.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Best visited near sunset. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Cenotaphs dedicated to Brahmins of the Vyas caste" },
+      { name: "One of Jaisalmer's most popular sunset viewpoints" },
+      { name: "Sweeping views over the old city and fort" },
+      { name: "Local musicians often play the algoza (double flute)" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaisalmer — long haul", fromMumbai: "Via Jaisalmer — long haul", fromBangalore: "Via Jaisalmer — long haul", duration: "Just outside the old city walls, Jaisalmer", costRange: "₹30–₹100 by auto within Jaisalmer", tips: "Arrive 30–45 minutes before sunset to get a good vantage spot." },
+    ],
+    accommodation: [
+      { type: "Base in Jaisalmer", priceRange: "₹500–₹25,000/night (estimate)", examples: ["Old-city guesthouses near the fort"], description: "A short walk from the old city." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Easily reached from the old city on foot", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100 within Jaisalmer", notes: "Standard for short hops", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaisalmer Fort", distance: "~1 km", type: "Heritage", isHidden: false, id: "jaisalmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 600, food: 300, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 2200, food: 800, transport: 400, activities: 100 },
+      { tier: "luxury", label: "Desert Premium", perDayPerPerson: 17600, accommodation: 13000, food: 2000, transport: 1000, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Fort & Sunset Point", morning: "Jaisalmer Fort and old-city havelis.", afternoon: "Rest during peak heat.", evening: "Vyas Chhatri for sunset over the fort.", stay: "Guesthouse in the old city", meals: "Ker Sangri thali (₹200), rooftop dinner (₹500)", tips: "Bring a light jacket — the hillside can get breezy as the sun sets." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A popular evening gathering spot with regular tourist and local footfall around sunset"],
+      precautions: ["Stick to the main viewpoint area", "Leave before it gets fully dark if visiting alone"],
+      soloTips: ["Comfortable for solo visits during the busy sunset hour; less so for a quiet visit well after dark"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Jaisalmer SP Office / PCR", number: "02992-252100" }, { label: "Police", number: "100" }],
+      safeZones: ["The main viewpoint during daylight and early evening"],
+      avoidAreas: ["Isolated stretches of the hillside after dark"],
+    },
+    rating: 4.4,
+    reviews: 5700,
+    mustEat: ["Ker Sangri", "Street snacks nearby"],
+    packingTips: ["Camera", "Light jacket for evening wind", "Comfortable walking shoes"],
   },
 
   {
