@@ -1,0 +1,28 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/malerkotla/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Malerkotla",
+  "about": "Punjab's 23rd district (declared 2021), the state's only predominantly Muslim-majority town. Known as a symbol of communal harmony — untouched by 1947 Partition violence, attributed to Guru Gobind Singh Ji's blessing after Nawab Sher Mohammed Khan protested the execution of his younger sons in 1705 ('Haa da Naara').",
+  "places": [
+    { "name": "Shahi Maqbre (Royal Tombs) & Tomb of Haider Sheikh", "timings": "Daylight hours; large fair May-June", "entryFee": "Free", "location": "Shahi Maqbre near Sirhindi Gate Chowk; Tomb of Haider Sheikh in city centre", "facts": "Royal tombs of the Malerkotla Nawabs including Nawab Sher Mohammed Khan; separately, the tomb of Sufi founder Sheikh Sadr-ud-Din (Haider Sheikh)." },
+    { "name": "Gurdwara Haa da Nara", "timings": "Daylight hours", "entryFee": "Free", "location": "NH-23 Ludhiana-Sangrur Highway, Malerkotla", "facts": "Built by Sikhs to commemorate Nawab Sher Mohammed Khan's 1705 protest against the execution of Guru Gobind Singh Ji's younger sons." },
+    { "name": "Gurdwara Sri Wadda Ghallughara Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Kutba Bahmania, 6km west of Malerkotla", "facts": "Marks the site of the Wadda Ghallughara (Great Massacre) of 5 February 1762, when Ahmad Shah Durrani's forces and Sirhind/Malerkotla forces attacked a column of ~40,000 Sikhs near Kup and Rohira." },
+    { "name": "Jama Masjid", "timings": "Open for prayers", "entryFee": "Free", "location": "Centre of Malerkotla city, near Mohalla Baradri", "facts": "Built under Nawab Sher Muhammad Khan, expanded under Nawab Sikandar Ali Khan; 5 original domes survive." },
+    { "name": "Diwankhana Sheesh Mahal", "timings": "Check locally", "entryFee": "Check locally", "location": "City centre, Malerkotla", "facts": "Royal residence of the Nawabs; glasswork done in two stages, post-1857 and c.1909." },
+    { "name": "Mubarak Manzil Palace", "timings": "Check locally", "entryFee": "Check locally", "location": "City centre, Malerkotla", "facts": "19th-century European-style palace built under Nawab Ahmad Ali Khan; still owned by the Nawab family." },
+    { "name": "Fort Rehmatgarh", "timings": "Check locally", "entryFee": "Not applicable (exterior only)", "location": "Malerkotla city", "facts": "Built c.1850 by Nawab Rahmat Ali Khan; remnants now under Ministry of Defence land." },
+    { "name": "Kuka Smarak (Namdhari Memorial)", "timings": "Daylight hours", "entryFee": "Free", "location": "Malerkotla city", "facts": "Commemorates 66 Namdhari (Kuka) freedom fighters executed by cannon in January 1872." },
+    { "name": "Rose Garden", "timings": "Daylight hours", "entryFee": "Check locally", "location": "Malerkotla city", "facts": "Eco-tourism garden." }
+  ],
+  "howToReach": {
+    "air": "Mohali International Airport (~80km)",
+    "rail": "Malerkotla Railway Station",
+    "road": "On NH-23, the Ludhiana-Sangrur Highway"
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March",
+    "medicalFacilities": ["Eknoor Hospital", "Singla Multispecialty Hospital", "DAV Hospital"]
+  }
+}

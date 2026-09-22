@@ -80635,6 +80635,178 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "gurdwara-haa-da-nara-malerkotla",
+    name: "Gurdwara Haa da Nara",
+    state: "Punjab",
+    tagline: "Built by Sikhs to Honor a Muslim Nawab's Cry of Protest",
+    description: "Gurdwara Haa da Nara, in the centre of Malerkotla city, commemorates one of the most remarkable acts of moral courage in Sikh history. In 1705, Nawab Sher Mohammed Khan, a general in the Mughal army present in the court of the Subedar of Sirhind, stood up when the order came to execute Guru Gobind Singh Ji's two younger sons, Zorawar Singh (age nine) and Fateh Singh (age seven) — and declared the act un-Islamic before walking out in anguish, crying 'haa' (alas). This protest, known as the 'Haa da Naara,' earned him Guru Gobind Singh Ji's blessing of lasting peace for Malerkotla — a blessing many credit for the town's survival, untouched by violence, during the horrors of 1947 Partition. The Gurdwara stands today as a striking, living monument to inter-faith respect, built by Sikhs to honor a Muslim Nawab.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gurudwara_Sahib_Haaw_Da_Naara%2C_Malerkotla_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Gurudwara_Sahib_Haaw_Da_Naara%2C_Malerkotla_2.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4d/Gurudwara_Sahib_Haaw_Da_Naara%2C_Malerkotla_2.jpg"],
+    imageCredit: "Photo: Khalid G A — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Commemorates Nawab Sher Mohammed Khan's 1705 protest, the 'Haa da Naara'" },
+      { name: "A Sikh Gurdwara built to honor a Muslim Nawab's moral courage" },
+      { name: "Credited by many with Malerkotla's peace during 1947 Partition" },
+      { name: "One of Punjab's most enduring symbols of inter-faith respect" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Malerkotla Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "On NH-23, the Ludhiana-Sangrur Highway, in Malerkotla city." },
+    ],
+    accommodation: [
+      { type: "Malerkotla City Hotels", priceRange: "₹1,000–₹4,000/night", examples: ["Hotel Maharaja Residency", "Hotel Grace"], description: "A modest range of hotels in Malerkotla city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mubarak Manzil Palace", distance: "Within Malerkotla city", type: "Heritage", isHidden: false, id: "mubarak-manzil-palace-malerkotla" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1800, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4000, food: 1200, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Malerkotla's Living Harmony", morning: "Visit Gurdwara Haa da Nara.", afternoon: "Shahi Maqbre, Jama Masjid and the Tomb of Haider Sheikh.", evening: "Mubarak Manzil Palace exterior.", stay: "Malerkotla city", meals: "Sheer Khurma, Zarda, Phirni, Biryani", tips: "A meaningful stop for understanding a genuinely unique chapter of Sikh-Muslim history." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, actively managed Gurdwara in the city centre"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The Gurdwara and surrounding city centre"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 2100,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "kuka-smarak-malerkotla",
+    name: "Kuka Smarak (Namdhari Memorial)",
+    state: "Punjab",
+    tagline: "A Striking Modern Memorial to 66 Namdhari Martyrs",
+    description: "The Kuka Smarak in Malerkotla commemorates 66 followers of the Namdhari Sikh sect — popularly known as Kukas — who were executed by cannon on the orders of the British Deputy Commissioner of Ludhiana in January 1872, in a brutal response to Namdhari resistance to colonial rule. Marked today by a bold, contemporary sculptural tower rising above the city, the memorial stands as a stark reminder of one of the lesser-known episodes of India's long struggle against British authority, and remains a significant site of remembrance for the Namdhari community and the wider district.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kuka_Martyrs_Memorial%2C_Malerkotla_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kuka_Martyrs_Memorial%2C_Malerkotla_1.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/3/3c/Kuka_Martyrs_Memorial%2C_Malerkotla_1.jpg"],
+    imageCredit: "Photo: Khalid G A — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Daylight hours. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Commemorates 66 Namdhari (Kuka) freedom fighters executed in January 1872" },
+      { name: "A bold, modern sculptural memorial tower" },
+      { name: "A significant site of remembrance for anti-colonial resistance" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Malerkotla Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Within Malerkotla city." },
+    ],
+    accommodation: [
+      { type: "Malerkotla City Hotels", priceRange: "₹1,000–₹4,000/night", examples: ["Hotel Maharaja Residency", "Hotel Grace"], description: "A modest range of hotels in Malerkotla city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the memorial", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Haa da Nara", distance: "Within Malerkotla city", type: "Spiritual", isHidden: false, id: "gurdwara-haa-da-nara-malerkotla" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1800, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 6800, accommodation: 4000, food: 1200, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Malerkotla Heritage Trail", morning: "Kuka Smarak.", afternoon: "Gurdwara Haa da Nara and the Shahi Maqbre.", evening: "City centre exploration.", stay: "Malerkotla city", meals: "Local Malerkotla specialties", tips: "A quick, meaningful stop on a broader Malerkotla heritage day." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located memorial"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The memorial grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 800,
+    mustEat: ["Local Malerkotla street food"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "mubarak-manzil-palace-malerkotla",
+    name: "Mubarak Manzil Palace",
+    state: "Punjab",
+    tagline: "A Faded European-Style Palace of the Malerkotla Nawabs",
+    description: "Mubarak Manzil, in the centre of Malerkotla, is a roughly 150-year-old palace built in the European architectural style during the reign of Nawab Ahmad Ali Khan, a period of notable progress for the princely state. Its grand columned facade, ornate window surrounds and weathered ochre-and-cream walls reflect the Nawabs' taste for European design, echoed elsewhere in Malerkotla's Diwankhana Sheesh Mahal. The palace remains in the possession of the Nawab family, and while now showing its age, it stands as one of the district's most distinctive and photogenic architectural landmarks.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Mubarak_Manzil_Palace%2C_Malerkotla_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/28/Mubarak_Manzil_Palace%2C_Malerkotla_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/28/Mubarak_Manzil_Palace%2C_Malerkotla_01.jpg"],
+    imageCredit: "Photo: Khalid G A — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting; privately owned by the Nawab family. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "A ~150-year-old European-style palace built under Nawab Ahmad Ali Khan" },
+      { name: "Grand columned facade and ornate window surrounds" },
+      { name: "Still in the possession of the Nawab family" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Malerkotla Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "City centre, Malerkotla." },
+    ],
+    accommodation: [
+      { type: "Malerkotla City Hotels", priceRange: "₹1,000–₹4,000/night", examples: ["Hotel Maharaja Residency", "Hotel Grace"], description: "A modest range of hotels in Malerkotla city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the palace", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Gurdwara Haa da Nara", distance: "Within Malerkotla city", type: "Spiritual", isHidden: false, id: "gurdwara-haa-da-nara-malerkotla" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3300, accommodation: 1800, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 7000, accommodation: 4000, food: 1200, transport: 700, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Malerkotla Heritage Trail", morning: "Shahi Maqbre and Jama Masjid.", afternoon: "Mubarak Manzil Palace exterior and Diwankhana Sheesh Mahal.", evening: "Gurdwara Haa da Nara.", stay: "Malerkotla city", meals: "Sheer Khurma, Zarda, Phirni", tips: "The palace is privately owned — view respectfully from the exterior." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known heritage landmark in the city centre"],
+      precautions: ["A privately owned residence — respect boundaries and view from the exterior"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The exterior surroundings during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 550,
+    mustEat: ["Local Malerkotla street food"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
