@@ -2964,7 +2964,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Chittorgarh Fort", distance: "115 km", type: "UNESCO Heritage Fort", isHidden: false, id: "chittorgarh" },
       { name: "Kumbhalgarh Fort & Wildlife Sanctuary", distance: "84 km", type: "Great Wall of India", isHidden: false },
       { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true, id: "ranakpur" },
-      { name: "Eklingji & Nagda Temples", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true },
+      { name: "Nagda (Sas Bahu Temples)", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true, id: "nagda-sas-bahu-temples" },
       { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true, id: "jaisamand-lake" },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
       { name: "City Palace, Udaipur", distance: "In city", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
@@ -3829,6 +3829,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2400,
     mustEat: ["Rajasthani thali"],
     packingTips: ["Binoculars for birdwatching", "Sun protection", "Comfortable shoes"],
+  },
+
+  {
+    id: "nagda-sas-bahu-temples",
+    name: "Nagda (Sas Bahu Temples)",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sahastra Bahu Temple", "Sas-Bahu Temples"],
+    tagline: "9th–10th-Century Vishnu Temples at Mewar's First Capital",
+    description: "Nagda, about 22 km from Udaipur at the foothills of the Aravallis, was the first capital of the Mewar kingdom before Udai Singh II founded Udaipur, and traces of settlement here go back to the 6th century AD. Its main draw today is the Sahastra Bahu Temple complex, popularly called the Sas-Bahu temples, an ASI-listed 9th–10th century monument dedicated to Vishnu in his thousand-armed form, with elaborate carvings depicting scenes from the Ramayana across its toran gateway and temple walls. The site sits amid green marshland and date palms, giving it an oasis-like setting, and a nearby Jain temple, Adbhutji, rounds out a visit to what remains a genuinely uncrowded and historically significant stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nagda-09-Sas_Bahu-2018-gje.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nagda-09-Sas_Bahu-2018-gje.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/d2/Nagda-09-Sas_Bahu-2018-gje.jpg"],
+    imageCredit: "Photo: Gerd Eichmann — Wikimedia Commons, CC BY 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected site. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "First capital of Mewar, traces from the 6th century AD" },
+      { name: "Sas Bahu temple complex, 9th–10th century, ASI-listed" },
+      { name: "Elaborate Ramayana-themed carvings" },
+      { name: "Adjoining Jain temple of Adbhutji" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~22 km from Udaipur on NH-8", costRange: "₹600–₹1,200 round-trip by auto/cab", tips: "Often combined with Eklingji Temple, which is close by on the same route." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Visited as a half-day trip from Udaipur." },
+    ],
+    localTransport: [
+      { mode: "Private Cab", cost: "₹600–₹1,200 round-trip", notes: "Most practical way to visit given the distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Udaipur", distance: "~22 km", type: "City", isHidden: false, id: "udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1650, accommodation: 700, food: 400, transport: 450, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5300, accommodation: 3500, food: 1000, transport: 700, activities: 100 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34900, accommodation: 30000, food: 3000, transport: 800, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nagda & Eklingji Half-Day Trip", morning: "Eklingji Temple.", afternoon: "Nagda's Sas Bahu temples and the Jain temple of Adbhutji.", evening: "Return to Udaipur.", stay: "Udaipur", meals: "Rajasthani thali", tips: "Both sites are genuinely uncrowded compared to central Udaipur — good for unhurried exploration." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["An ASI-protected site with periodic visitor traffic, though quieter and more remote than central Udaipur"],
+      precautions: ["Travel with a driver/guide rather than independently", "Visit during daylight hours"],
+      soloTips: ["Best visited as part of a booked day tour or with a trusted driver given the site's remoteness"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during opening hours"],
+      avoidAreas: ["Surrounding marshland areas after dusk"],
+    },
+    rating: 4.4,
+    reviews: 1600,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Water"],
   },
 
   {
