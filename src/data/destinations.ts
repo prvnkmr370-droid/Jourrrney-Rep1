@@ -666,6 +666,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ishwar Lat (Sargasuli)", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "ishwar-lat" },
       { name: "Jaipur Wax Museum", distance: "15 km", type: "Culture", isHidden: true, id: "jaipur-wax-museum" },
       { name: "Amrapali Museum", distance: "2 km", type: "Culture", isHidden: true, id: "amrapali-museum" },
+      { name: "Statue Circle", distance: "2 km", type: "Culture", isHidden: true, id: "statue-circle-jaipur" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -25051,6 +25052,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4300,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "statue-circle-jaipur",
+    name: "Statue Circle",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Landmark Traffic Circle Honouring Jaipur's Founder",
+    description: "Statue Circle is a well-known traffic roundabout and landmark in Jaipur's C-Scheme area, centred on a life-size white marble statue of Maharaja Sawai Jai Singh II, the founder of Jaipur, set beneath an ornate carved marble canopy (chhatri). Rather than a standalone tourist monument, it functions as a genuine civic landmark and orientation point for the city, and is often decoratively illuminated in the evenings, particularly around festivals — making it a recognisable stop for a quick photo rather than an extended visit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Night_view_of_Statue_Circle.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Night_view_of_Statue_Circle.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/b9/Night_view_of_Statue_Circle.jpg"],
+    imageCredit: "Photo: Alice.surabhikumawat — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "10–15 minutes",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Viewed from the roadside; most attractive when illuminated after dark. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Marble statue of Maharaja Sawai Jai Singh II, founder of Jaipur" },
+      { name: "Ornate carved marble canopy (chhatri)" },
+      { name: "A well-known civic landmark in C-Scheme" },
+      { name: "Decoratively illuminated in the evenings" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "C-Scheme, central Jaipur", costRange: "₹100–₹250 by auto/cab within Jaipur", tips: "Best photographed from a nearby pavement in the evening when the monument is lit." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Central C-Scheme location." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jaipur", notes: "Standard way to pass by Statue Circle", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹250", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Amrapali Museum", distance: "~1 km", type: "Culture", isHidden: true, id: "amrapali-museum" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 700, food: 400, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 3000, food: 1000, transport: 300, activities: 0 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24100, accommodation: 20000, food: 2500, transport: 500, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "C-Scheme Evening", morning: "Amrapali Museum.", afternoon: "Central Jaipur shopping.", evening: "Drive past Statue Circle after dark for the illuminated view.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "A quick photo stop rather than a dedicated destination — best combined with nearby sights." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy, well-lit central traffic circle in an upscale part of the city"],
+      precautions: ["Standard roadside/traffic precautions when stopping for photos"],
+      soloTips: ["Comfortable to view briefly, including in the evening, given the busy central location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The C-Scheme area around the circle"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 2600,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Camera for the evening illumination"],
   },
 
   {
