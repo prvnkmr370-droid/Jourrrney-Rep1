@@ -2094,7 +2094,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Culture"],
     bestSeason: "October – March",
     duration: "2 days",
-    highlights: [{ name: "Junagarh Fort", id: "junagarh-fort" }, { name: "National Research Centre on Camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace", id: "lalgarh-palace" }, { name: "Bikaneri bhujia shopping" }],
+    highlights: [{ name: "Junagarh Fort", id: "junagarh-fort" }, { name: "National Research Centre on Camel", id: "national-research-centre-camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace", id: "lalgarh-palace" }, { name: "Bikaneri bhujia shopping" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Bikaner Express — ~7–8h", fromMumbai: "Via Jodhpur/Jaipur — 18h+", fromBangalore: "Via Delhi/Jaipur — 26h+", duration: "~7–8h from Delhi", costRange: "₹300–₹1,600", tips: "Bikaner Junction is well-connected to Delhi and Jaipur directly." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48/NH52 — 7–8h", fromMumbai: "Via Jaipur — 17–18h", fromBangalore: "—", duration: "~7–8h from Delhi; ~4h from Jaipur", costRange: "₹3,000–₹6,000 cab / ₹400–₹700 bus", tips: "Frequent buses connect Bikaner to both Jaipur and Jodhpur." },
@@ -2112,7 +2112,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "Camel Cart", cost: "₹200–₹800", notes: "A genuinely local desert-city experience, especially around the Camel Research Centre", available: true },
     ],
     nearbyPlaces: [
-      { name: "National Research Centre on Camel", distance: "8 km", type: "Unique Experience", isHidden: true },
+      { name: "National Research Centre on Camel", distance: "8 km", type: "Unique Experience", isHidden: true, id: "national-research-centre-camel" },
       { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: true, id: "deshnoke" },
       { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
       { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true, id: "kolayat-lake" },
@@ -2319,6 +2319,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3200,
     mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "national-research-centre-camel",
+    name: "National Research Centre on Camel",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Camel Research Farm", "Camel Breeding Farm"],
+    tagline: "Asia's Only Dedicated Camel Research and Breeding Institution",
+    description: "The National Research Centre on Camel, about 8 km from Bikaner, is the only research and breeding institution of its kind in Asia, spread across some 2,000 acres of semi-arid land and managed by the Government of India. Alongside its scientific work on camel breeding and health, the centre is genuinely open to visitors, offering camel rides and photo opportunities among working herds, and a small on-site cafe serving camel milk products — flavoured milk, coffee, kulfi, and cheese — that are difficult to find anywhere else in the country. It's a distinctive and practical way to engage with Bikaner's identity as 'Camel Country' beyond a single souvenir photo.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Camels_at_Camel_Research_Farm%2C_Bikaner.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Camels_at_Camel_Research_Farm%2C_Bikaner.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7e/Camels_at_Camel_Research_Farm%2C_Bikaner.jpg"],
+    imageCredit: "Photo: Sandra Cohen-Rose and Colin Rose — Wikimedia Commons, CC BY-SA 2.0. Description explicitly confirms the location; same image used on the Wikipedia article for Bikaner.",
+    category: ["Wildlife", "Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Camel rides and milk products available on-site. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Only camel research and breeding centre of its kind in Asia" },
+      { name: "Spread across roughly 2,000 acres" },
+      { name: "Camel rides and photo opportunities" },
+      { name: "Camel milk products: flavoured milk, coffee, kulfi, cheese" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "~8 km from Bikaner city", costRange: "₹200–₹500 round-trip by auto/cab", tips: "Try the camel milk kulfi or coffee — a genuinely distinctive local product not available elsewhere." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Old-city heritage hotels"], description: "Visited as a half-day trip from central Bikaner." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 round-trip", notes: "Standard way to reach the centre", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Available with less dense coverage than Jaipur/Jodhpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner", distance: "~8 km", type: "City", isHidden: false, id: "bikaner" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 250, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2000, food: 600, transport: 700, activities: 900 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 15900, accommodation: 11000, food: 1800, transport: 900, activities: 2200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Camel Country Day Trip", morning: "National Research Centre on Camel.", afternoon: "Karni Mata Temple, Deshnoke.", evening: "Return to Bikaner for old-city dinner.", stay: "Old-city heritage hotel", meals: "Camel milk kulfi/coffee at the centre, Bikaneri thali dinner (₹200)", tips: "Check current timings — the centre sometimes closes for internal research activities." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A government-run, staffed research facility with organised visitor access"],
+      precautions: ["Standard sightseeing precautions"],
+      soloTips: ["Comfortable for solo visitors given the organised, staffed setting"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The centre grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 6400,
+    mustEat: ["Camel milk kulfi", "Camel milk coffee", "Bikaneri Bhujia"],
+    packingTips: ["Sun protection", "Comfortable walking shoes", "Camera"],
   },
 
   {
