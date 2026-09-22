@@ -80168,6 +80168,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection"],
   },
 
+  {
+    id: "dakhni-sarai-jalandhar",
+    name: "Dakhni Sarai",
+    state: "Punjab",
+    tagline: "A Well-Preserved Mughal Caravanserai Along the Nakodar-Kapurthala Road",
+    description: "Dakhni Sarai, in the village of Dakhni on the Nakodar-Kapurthala road about 12km from Nakodar, is one of the finest and best-preserved Mughal caravanserais built along the old imperial highway. It is said to have been built around 1640 by the Mughal noble Ali Mardan Khan during the reign of Shah Jahan. The 124-cell closed quadrangle has two imposing gateways at its eastern and western sides, circular corner bastions, and a mosque and well within — the gateway's three-storeyed facade decorated with glazed tile-work in geometric and floral designs. Maintained by the Archaeological Survey of India, it's often visited together with the nearby Tombs of Ustad-Shagird and Nurmahal Sarai on a single Mughal-heritage day trip.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dakhni_Sarai_in_Evening.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dakhni_Sarai_in_Evening.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/c3/Dakhni_Sarai_in_Evening.jpg"],
+    imageCredit: "Photo: Gaurav Madhopuri — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Daylight hours. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built c.1640 by Mughal noble Ali Mardan Khan under Shah Jahan" },
+      { name: "124 cells around a closed quadrangle with two gateways" },
+      { name: "A mosque and well inside, glazed-tile geometric and floral decoration" },
+      { name: "Maintained by the Archaeological Survey of India" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jalandhar and Nakodar, then to village Dakhni", fromMumbai: "Via Jalandhar", fromBangalore: "Via Jalandhar", duration: "~36 km / 1h from Jalandhar", costRange: "₹700–₹1,600 round trip by cab from Jalandhar", tips: "12km from Nakodar on the Nakodar-Kapurthala road." },
+    ],
+    accommodation: [
+      { type: "Jalandhar City Hotels", priceRange: "₹1,200–₹7,000/night", examples: ["Most visitors day-trip from Jalandhar"], description: "Limited accommodation directly in Dakhni village." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,600 round trip", notes: "Most practical way to reach the sarai", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tombs of Ustad-Shagird, Nakodar", distance: "~12 km", type: "Heritage", isHidden: false, id: "tombs-ustad-shagird-nakodar" },
+      { name: "Nurmahal Sarai", distance: "~20 km", type: "Heritage", isHidden: false, id: "nurmahal-sarai-jalandhar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 800, food: 300, transport: 500, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2200, food: 700, transport: 800, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9200, accommodation: 5500, food: 1200, transport: 1200, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doaba Mughal Heritage Trail", morning: "Visit the Tombs of Ustad-Shagird at Nakodar.", afternoon: "Dakhni Sarai and Nurmahal Sarai.", evening: "Return to Jalandhar.", stay: "Jalandhar city", meals: "Local Doaba-region Punjabi fare", tips: "Visit near sunset for the best light on the sarai's gateway, as seen in period photographs of the site." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["An ASI-protected national monument in a rural setting"],
+      precautions: ["A quiet, lower-footfall site — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The sarai grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 390,
+    mustEat: ["Local dhaba food en route"],
+    packingTips: ["Comfortable walking shoes", "Sun protection"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
