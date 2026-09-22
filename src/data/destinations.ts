@@ -651,6 +651,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Galtaji", distance: "10 km", type: "Spiritual", isHidden: true, id: "galtaji" },
       { name: "Albert Hall Museum", distance: "3 km", type: "Heritage", isHidden: true, id: "albert-hall-museum" },
       { name: "Birla Temple", distance: "3 km", type: "Spiritual", isHidden: true, id: "birla-temple-jaipur" },
+      { name: "Sisodia Rani Palace and Garden", distance: "8 km", type: "Heritage", isHidden: true, id: "sisodia-rani-garden" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24212,6 +24213,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9800,
     mustEat: ["Rajasthani thali in Jaipur"],
     packingTips: ["Closed walking shoes", "Secure bag (zip closed)", "Avoid carrying loose food"],
+  },
+
+  {
+    id: "sisodia-rani-garden",
+    name: "Sisodia Rani Palace and Garden",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sisodia Rani Bagh", "Sisodia Rani Ka Bagh"],
+    tagline: "A Multi-Tiered Mughal-Style Garden Built for a Queen",
+    description: "Sisodia Rani Palace and Garden was built in 1728 by Maharaja Sawai Jai Singh II — the founder of Jaipur — for his queen from the Sisodia clan of Udaipur. Laid out on the Agra road a short distance from the city, the garden follows a Mughal-style multi-tiered terrace design with fountains, water channels, and pavilions cut into the terraced levels. The pavilion walls carry murals depicting scenes from the life of Krishna and Radha, and the layout's cascading terraces and reflecting pools make it a quieter, less-crowded counterpoint to Jaipur's larger palace complexes.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sisodia_Rani_Bagh%2C_Jaipur%2C_Rajasthan_%28DSCN4756%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sisodia_Rani_Bagh%2C_Jaipur%2C_Rajasthan_%28DSCN4756%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/1f/Sisodia_Rani_Bagh%2C_Jaipur%2C_Rajasthan_%28DSCN4756%29.jpg"],
+    imageCredit: "Photo: কুমুদ ঘোষ — Wikimedia Commons, CC BY 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – February",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1728 by Maharaja Sawai Jai Singh II for his Sisodia queen" },
+      { name: "Multi-tiered Mughal-style terraced garden" },
+      { name: "Radha-Krishna murals in the pavilion" },
+      { name: "Fountains and stepped water channels" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "~8 km from central Jaipur on Agra road", costRange: "₹150–₹400 by auto/cab from Jaipur", tips: "Often combined with a stop at nearby Vidyadhar Garden." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited as a short trip from Jaipur; no lodging on site." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹150–₹350 from Jaipur", notes: "Standard way to reach the garden", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Reliable from Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~8 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 3000, food: 1000, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24300, accommodation: 20000, food: 2500, transport: 600, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Agra Road Day Trip", morning: "Sisodia Rani Palace and Garden.", afternoon: "Nearby Vidyadhar Garden, then return to Jaipur.", evening: "City Palace or Hawa Mahal back in the city.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "A quiet, less-crowded stop — good for photography without crowds." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A maintained public garden with regular daytime visitors"],
+      precautions: ["Standard sightseeing precautions", "Visit during daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits given its status as a maintained public heritage site"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The garden grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 6200,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
