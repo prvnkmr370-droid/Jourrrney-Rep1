@@ -78911,6 +78911,67 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes for the large grounds", "Light layers for cooler evenings in winter"],
   },
 
+  {
+    id: "khalsa-college-amritsar",
+    name: "Khalsa College",
+    state: "Punjab",
+    tagline: "A Grand Indo-Saracenic Campus and a Recurring Bollywood Film Set",
+    description: "Khalsa College, about 5km from the Golden Temple, was built in 1892 and designed by architect Bhai Ram Singh Ji in the elaborate Indo-Saracenic style — domes, arched colonnades and pink sandstone facades spread across a 300-acre campus. Still a functioning college today, its dramatic architecture has made it a frequent filming location for Bollywood and Punjabi cinema, including Veer-Zaara and Rab Ne Bana Di Jodi. Visitors typically view the grand main building and grounds from outside, without needing to enter the working academic areas.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Khalsa_College_%2CAmritsar_%2C_Punjab%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Khalsa_College_%2CAmritsar_%2C_Punjab%2C_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7c/Khalsa_College_%2CAmritsar_%2C_Punjab%2C_India.jpg"],
+    imageCredit: "Photo: Harvinder Chandigarh — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "30–60 minutes",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Grounds and exterior viewable from outside at all times. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built in 1892, designed by architect Bhai Ram Singh Ji" },
+      { name: "Elaborate Indo-Saracenic domes, arches and pink sandstone facades" },
+      { name: "A 300-acre working college campus" },
+      { name: "A recurring filming location for Bollywood and Punjabi cinema" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Sri Guru Ram Dass Jee International Airport, ~1h flight", fromMumbai: "~2.5h flight to Amritsar", fromBangalore: "~3h flight to Amritsar", duration: "Direct domestic/international flights", costRange: "₹3,000–₹9,000", tips: "~5km from the Golden Temple." },
+    ],
+    accommodation: [
+      { type: "Hotels near the Golden Temple", priceRange: "₹800–₹18,000/night", examples: ["Guesthouses to luxury hotels, a short ride away"], description: "Most visitors view the campus as a brief stop on an Amritsar sightseeing day." },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹80–₹200 from central Amritsar", notes: "Well established in Amritsar city", available: true },
+      { mode: "Auto Rickshaw", cost: "₹60–₹150 from central Amritsar", notes: "Easily available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~5 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4500, accommodation: 2800, food: 700, transport: 600, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11000, accommodation: 8500, food: 1200, transport: 900, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Amritsar Heritage Architecture", morning: "Visit the Golden Temple.", afternoon: "Drive past Khalsa College's main building and grounds.", evening: "Heritage Street.", stay: "Near the Golden Temple", meals: "Local Amritsari fare", tips: "It's a working college — visit from the exterior and grounds rather than expecting a guided tour." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["An active, well-populated educational campus"],
+      precautions: ["Respect that this is a functioning college, not a museum — avoid entering academic buildings uninvited"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The public grounds and exterior areas"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 3100,
+    mustEat: ["Local Amritsari street food nearby"],
+    packingTips: ["Comfortable walking shoes for the large grounds"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
