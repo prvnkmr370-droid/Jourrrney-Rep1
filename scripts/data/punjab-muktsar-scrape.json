@@ -1,0 +1,21 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/muktsar/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Page truncated after 'Historic Gurdwaras' heading in this scrape session.",
+  "district": "Sri Muktsar Sahib",
+  "about": "'Pool of Liberation' — site of the 29 December 1705 Battle of Khidrana, where Guru Gobind Singh Ji blessed the Chali Mukte (Forty Liberated Ones) who had earlier deserted him but returned, led by Mai Bhago, to fight and die for him. Renamed Sri Muktsar Sahib officially in 2012.",
+  "places": [
+    { "name": "Sri Darbar Sahib (Gurdwara Tuti Gandi Sahib)", "timings": "Open daily; major divan at Maghi Mela in January", "entryFee": "Free", "location": "Western bank of the sarovar, Sri Muktsar Sahib city centre", "facts": "Oldest Gurdwara in the complex, built by the first Sikh settlers c.1743; added to by Hari Singh Nalwa; tower raised by Maharaja Hira Singh of Nabha in the 1880s. Name commemorates Guru Gobind Singh Ji tearing up the Bedahwa disclaimer." },
+    { "name": "Gurdwara Tibbi Sahib", "timings": "Open daily", "entryFee": "Free", "location": "Sri Muktsar Sahib sarovar complex", "facts": "Marks the sandy mound from which Guru Gobind Singh Ji directed the battle; rebuilt 1843, present building 1950s under Baba Baghel Singh." },
+    { "name": "Gurdwara Rakabsar Sahib", "timings": "Open daily", "entryFee": "Free", "location": "200m east of Gurdwara Tibbi Sahib", "facts": "Marks where the Guru's stirrup (rakab) snapped as he mounted his horse after the battle; built 1950s by Baba Baghel Singh." },
+    { "name": "Gurdwara Tambu Sahib", "timings": "Open daily", "entryFee": "Free", "location": "South-eastern corner of the sarovar", "facts": "Marks where the 40 warriors camouflaged themselves as tents (tambu) before the battle; rebuilt via karseva in the 1980s." },
+    { "name": "Gurdwara Shahidganj Sahib (Angitha Sahib)", "timings": "Open daily", "entryFee": "Free", "location": "~50m west of the sarovar", "facts": "Marks where the Khidrana martyrs were cremated; first built 1870 by Raja Wazir Singh of Faridkot, rebuilt via karseva in the 1980s." },
+    { "name": "Mukta Minar", "timings": "Daylight hours; open late evening", "entryFee": "Check locally", "location": "Near District Administrative Complex, Sri Muktsar Sahib", "facts": "Built for the 300th anniversary of the Chali Mukte's martyrdom; depicts the Khanda Sahib in steel; landscaped gardens, open-air theatre." },
+    { "name": "Angooran Wali Maseet", "timings": "Check locally", "entryFee": "Not applicable", "location": "Near Sri Muktsar Sahib Railway Station", "facts": "Old heritage mosque." },
+    { "name": "Birthplace of Sri Guru Angad Dev Ji, Sarai Naga", "timings": "Open daily", "entryFee": "Free", "location": "Sarai Naga, 15km from Sri Muktsar Sahib on Muktsar-Kotkapura highway", "facts": "Birthplace of the second Sikh Guru." },
+    { "name": "Gurdwara Guptsar Sahib, Chhatteana", "timings": "Open daily", "entryFee": "Free", "location": "Village Chhatteana, Gidderbaha tehsil, ~24km from city", "facts": "Important religious site in the Gidderbaha area." }
+  ],
+  "howToReach": { "note": "~50km from Ferozepur, on the Moga-Ganganagar road." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}

@@ -81977,6 +81977,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
   },
 
+  {
+    id: "sri-darbar-sahib-muktsar",
+    name: "Sri Darbar Sahib (Gurdwara Tuti Gandi Sahib), Sri Muktsar Sahib",
+    state: "Punjab",
+    tagline: "Where Guru Gobind Singh Ji Blessed the 'Forty Liberated Ones'",
+    description: "Sri Darbar Sahib, on the western bank of the sacred sarovar at Sri Muktsar Sahib, is the principal and oldest shrine marking the site of the Battle of Khidrana on 29 December 1705 — one of the most emotionally resonant episodes in Sikh history. Forty Sikhs who had earlier deserted Guru Gobind Singh Ji during the siege of Anandpur Sahib returned, led by the warrior Mai Bhago, to fight and die defending him against the pursuing Mughal army. As the Guru found the dying warrior Mahan Singh among the fallen, he tore up the disclaimer (Bedahwa) the forty had signed and blessed them as the Chali Mukte — the Forty Liberated Ones — transforming Khidrana into Muktsar, the 'Pool of Liberation.' The Gurdwara's name, Tuti Gandi Sahib, literally commemorates this moment of broken ties retied, and the shrine has been expanded over centuries by Sikh Empire generals and Punjab's princely rulers alike.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Gurudwara_Tooti_Gandi_Sahib%2C_Sri_Muktsar_Sahib.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Gurudwara_Tooti_Gandi_Sahib%2C_Sri_Muktsar_Sahib.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/b2/Gurudwara_Tooti_Gandi_Sahib%2C_Sri_Muktsar_Sahib.jpg"],
+    imageCredit: "Photo: Mks.ra — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open daily; major divan during the January Maghi Mela. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Site of the Battle of Khidrana, 29 December 1705" },
+      { name: "Where Guru Gobind Singh Ji blessed the Chali Mukte (Forty Liberated Ones)" },
+      { name: "Built by the first Sikh settlers c.1743, expanded by Hari Singh Nalwa" },
+      { name: "One of Punjab's largest annual gatherings, the January Maghi Mela" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ferozepur or Bathinda, then to Sri Muktsar Sahib", fromMumbai: "Via Bathinda", fromBangalore: "Via Bathinda", duration: "~50 km from Ferozepur", costRange: "₹1,000–₹2,200 round trip by cab from Ferozepur", tips: "City centre, on the western bank of the sarovar." },
+    ],
+    accommodation: [
+      { type: "Sri Muktsar Sahib Hotels", priceRange: "₹800–₹4,500/night", examples: ["A range of pilgrim guesthouses and hotels in the city"], description: "Well-equipped as a major pilgrimage town, especially around Maghi Mela." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mukta Minar", distance: "Within the city", type: "Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 600, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 700, transport: 700, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8500, accommodation: 5000, food: 1200, transport: 1100, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Pool of Liberation Pilgrimage", morning: "Sri Darbar Sahib and a circuit of the sarovar.", afternoon: "Gurdwara Tibbi Sahib, Rakabsar Sahib, Tambu Sahib and Shahidganj Sahib, each marking a moment of the battle.", evening: "Mukta Minar, illuminated at night.", stay: "Sri Muktsar Sahib", meals: "Free langar at the Gurdwara", tips: "Visiting during the January Maghi Mela offers the fullest experience, though expect very large crowds." },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["A major, actively managed Sikh pilgrimage site with a constant flow of devotees"],
+      precautions: ["Dress modestly; cover your head before entering", "Very large crowds during Maghi Mela — keep valuables secure"],
+      soloTips: ["Very comfortable for solo pilgrims given the steady presence of devotees and Gurdwara staff"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Punjab Grievance Helpline", number: "1100" },
+      ],
+      safeZones: ["The entire sarovar complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.8,
+    reviews: 6900,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
