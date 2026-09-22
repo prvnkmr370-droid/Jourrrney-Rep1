@@ -657,6 +657,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jhalana Safari Park", distance: "7 km", type: "Wildlife", isHidden: true, id: "jhalana-safari-park" },
       { name: "Sambhar Lake", distance: "70 km", type: "Nature", isHidden: true, id: "sambhar-lake" },
       { name: "Jawahar Kala Kendra", distance: "5 km", type: "Culture", isHidden: true, id: "jawahar-kala-kendra" },
+      { name: "Jawahar Circle (Patrika Gate)", distance: "6 km", type: "Culture", isHidden: true, id: "jawahar-circle" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24571,6 +24572,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5100,
     mustEat: ["Filter coffee and South Indian snacks at the on-site Indian Coffee House"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "jawahar-circle",
+    name: "Jawahar Circle",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Patrika Gate"],
+    tagline: "Asia's Largest Circular Park, Anchored by the Ornate Patrika Gate",
+    description: "Jawahar Circle is billed as the largest circular park in Asia, a landscaped traffic-circle park in Jaipur combined with a rose garden and jogging tracks used heavily by locals through the day. Its most photographed feature is the Patrika Gate, an elaborately painted multi-arched entrance decorated with motifs celebrating Rajasthan's forts, palaces, and cultural heritage, illuminated at night. The park's Musical Fountain show runs for roughly 30 minutes starting around 7 pm, combining over 270 water effects with more than 300 lights choreographed to reach heights of up to 25 feet, making it one of Jaipur's more distinctive evening attractions beyond its historical monuments.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Patrika_Gate%2C_Jawahar_Circle%2C_Jaipur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/15/Patrika_Gate%2C_Jawahar_Circle%2C_Jaipur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/15/Patrika_Gate%2C_Jawahar_Circle%2C_Jaipur.jpg"],
+    imageCredit: "Photo: Bibhas87 — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Monuments 2019 submission.",
+    category: ["Culture", "Nature"],
+    bestSeason: "October – February",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Musical Fountain show runs ~30 minutes, starting around 7:00 PM. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Billed as the largest circular park in Asia" },
+      { name: "Patrika Gate, ornately painted and illuminated at night" },
+      { name: "Musical Fountain: 270+ effects, 300+ lights, up to 25 ft high" },
+      { name: "Rose garden and jogging tracks" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Near Jawaharlal Nehru Marg, Jaipur", costRange: "₹100–₹300 by auto/cab within Jaipur", tips: "Time your visit for the evening Musical Fountain show and the Patrika Gate's night illumination." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Convenient central-south Jaipur location." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300 within Jaipur", notes: "Standard way to reach Jawahar Circle", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~6 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 700, food: 400, transport: 150, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4600, accommodation: 3000, food: 1000, transport: 400, activities: 200 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24300, accommodation: 20000, food: 2500, transport: 600, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Evening at Jawahar Circle", morning: "City sightseeing elsewhere in Jaipur.", afternoon: "Rest, then head to Jawahar Circle before sunset.", evening: "Patrika Gate illuminated at night, followed by the Musical Fountain show at 7 PM.", stay: "Jaipur", meals: "Street food nearby, Rajasthani thali dinner (₹300–₹500)", tips: "Arrive a little before 7 PM to get a good spot for the fountain show." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy public park with families and joggers throughout the day and evening"],
+      precautions: ["Stay within the well-lit, populated park areas", "Standard evening-outing precautions"],
+      soloTips: ["Comfortable for solo visits, especially for the well-attended evening fountain show"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The main park and gate area during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 9200,
+    mustEat: ["Street snacks near the park entrance"],
+    packingTips: ["Comfortable walking shoes", "Camera for evening illumination"],
   },
 
   {
