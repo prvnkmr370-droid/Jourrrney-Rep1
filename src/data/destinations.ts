@@ -2975,6 +2975,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Saheliyon Ki Bari", distance: "In city", type: "Heritage", isHidden: true, id: "saheliyon-ki-bari" },
       { name: "Fateh Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "fateh-sagar-lake" },
       { name: "Pratap Memorial (Moti Magri)", distance: "In city", type: "Heritage", isHidden: true, id: "moti-magri" },
+      { name: "Bagore Ki Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "bagore-ki-haveli" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 350, transport: 200, activities: 150 },
@@ -3470,6 +3471,65 @@ export const DESTINATIONS: Destination[] = [
     rating: 4.4,
     reviews: 11200,
     mustEat: ["Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "bagore-ki-haveli",
+    name: "Bagore Ki Haveli",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Lakeside 18th-Century Haveli Turned Museum and Cultural Stage",
+    description: "Bagore Ki Haveli sits directly on Lake Pichola at Gangaur Ghat, built in the 18th century by Amar Chand Badwa, then Prime Minister of Mewar. The sprawling haveli holds over a hundred rooms, now used to display period costumes, modern art, and classical haveli-style glass and mirror work. In the evenings the haveli's courtyard hosts a well-regarded folk dance and puppetry performance, drawing both visitors and locals, and makes Bagore Ki Haveli one of the more reliably authentic cultural experiences available in Udaipur's old city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/17/20191207_Gangaur_Ghat_and_Bagore_Ki_Haveli%2C_Udaipur_1524_7266.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/17/20191207_Gangaur_Ghat_and_Bagore_Ki_Haveli%2C_Udaipur_1524_7266.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/17/20191207_Gangaur_Ghat_and_Bagore_Ki_Haveli%2C_Udaipur_1524_7266.jpg"],
+    imageCredit: "Photo: Jakub Hałun — Wikimedia Commons, CC BY-SA 4.0. Quality Image; structured data explicitly depicts Bagore-ki-Haveli.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours (plus evening show)",
+    visitingHours: { opens: "10:00 AM", closes: "7:00 PM", note: "Evening cultural show around 7:00 PM (indicative timing, ~₹60 entry). Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 18th century by Amar Chand Badwa, Prime Minister of Mewar" },
+      { name: "100+ rooms, costume and modern art displays" },
+      { name: "Classical glass and mirror haveli interiors" },
+      { name: "Evening folk dance and puppetry show" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "Gangaur Ghat, Lake Pichola, old city", costRange: "₹50–₹150 by auto within Udaipur", tips: "Book the evening cultural show a little ahead — it's popular and seating is limited." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis near Jagdish Chowk"], description: "Central old-city location, walkable from City Palace." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Easily reached from the old city on foot", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within Udaipur", notes: "Reliable within the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lake Pichola", distance: "Adjacent", type: "Nature", isHidden: true, id: "lake-pichola" },
+      { name: "City Palace, Udaipur", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 700, food: 400, transport: 100, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4800, accommodation: 3500, food: 1000, transport: 300, activities: 500 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34600, accommodation: 30000, food: 3000, transport: 500, activities: 700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City & Evening Culture", morning: "City Palace and Jagdish Temple.", afternoon: "Bagore Ki Haveli museum galleries.", evening: "Folk dance and puppetry show at Bagore Ki Haveli.", stay: "Old city haveli", meals: "Thali lunch, rooftop dinner overlooking the lake", tips: "One of Rajasthan's more authentic cultural evenings — worth prioritising over a generic dinner show." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["A managed museum and performance venue with steady visitor traffic, including evenings"],
+      precautions: ["Standard museum/evening-show precautions"],
+      soloTips: ["Very comfortable for solo visitors, including the evening show, given the busy Gangaur Ghat surroundings"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The haveli and Gangaur Ghat area during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 10700,
+    mustEat: ["Rajasthani thali", "Rooftop dinner overlooking the lake"],
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
