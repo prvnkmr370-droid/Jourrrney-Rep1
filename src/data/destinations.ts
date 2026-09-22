@@ -2967,6 +2967,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Nagda (Sas Bahu Temples)", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true, id: "nagda-sas-bahu-temples" },
       { name: "Doodh Talai Lake", distance: "In city", type: "Nature", isHidden: true, id: "doodh-talai-lake" },
       { name: "Sukhadia Circle", distance: "In city", type: "Heritage", isHidden: true, id: "sukhadia-circle" },
+      { name: "Udai Sagar Lake", distance: "13 km", type: "Nature", isHidden: true, id: "udai-sagar-lake" },
       { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true, id: "jaisamand-lake" },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
       { name: "City Palace, Udaipur", distance: "In city", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
@@ -4003,6 +4004,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2200,
     mustEat: ["Rajasthani thali"],
     packingTips: ["Camera for the evening illumination"],
+  },
+
+  {
+    id: "udai-sagar-lake",
+    name: "Udai Sagar Lake",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Dam-Built Lake East of Udaipur, Started Under the City's Founder",
+    description: "Udai Sagar Lake, about 13 km east of Udaipur, is one of the city's five major lakes and was begun in 1559 by Maharana Udai Singh II, the founder of Udaipur, as a dam across the Berach River to supply water to his kingdom. At roughly 4 km long and 2.5 km wide, with a maximum depth of about 9 metres, it is one of the larger lakes in the Udaipur system, though considerably less developed for tourism than Pichola or Fateh Sagar. Its more rural, open setting makes it a genuine off-the-beaten-path option for a quiet sunset over water and the surrounding Aravalli hills.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Udaisager_in_udaipur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Udaisager_in_udaipur.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/bb/Udaisager_in_udaipur.jpg"],
+    imageCredit: "Photo: Chundawat-singh — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Earth 2017 submission.",
+    category: ["Nature", "Off-beat"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Best visited near sunset. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Begun in 1559 by Maharana Udai Singh II, founder of Udaipur" },
+      { name: "Dam built across the Berach River" },
+      { name: "~4 km long, 2.5 km wide, ~9 m at its deepest" },
+      { name: "Quieter, more rural alternative to Pichola and Fateh Sagar" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~13 km east of central Udaipur", costRange: "₹400–₹800 round-trip by auto/cab", tips: "A good option for a quieter sunset away from the busier lakefronts in the city centre." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Visited as a half-day trip from central Udaipur." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹400–₹700 round-trip", notes: "Standard way to reach the lake", available: true },
+      { mode: "App Cab (Ola)", cost: "₹400–₹800 round-trip", notes: "Reliable from Udaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Udaipur", distance: "~13 km", type: "City", isHidden: false, id: "udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 350, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4900, accommodation: 3500, food: 1000, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34500, accommodation: 30000, food: 3000, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Off-Beat Udaipur Evening", morning: "City sightseeing in central Udaipur.", afternoon: "Rest, then head out toward Udai Sagar.", evening: "Sunset at Udai Sagar Lake.", stay: "Udaipur", meals: "Rajasthani thali", tips: "Fewer facilities than the central lakes — carry water and plan the return trip in advance." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A quieter, less-developed lake with lighter tourist infrastructure than central Udaipur"],
+      precautions: ["Travel with a driver/guide rather than exploring alone", "Visit during daylight into early evening, not after dark"],
+      soloTips: ["Best visited with a driver or as part of a small group given the more rural, less-touristed setting"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked shoreline areas during daylight hours"],
+      avoidAreas: ["Isolated shoreline areas after dusk"],
+    },
+    rating: 4.1,
+    reviews: 1400,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Water", "Sun protection", "Comfortable shoes"],
   },
 
   {
