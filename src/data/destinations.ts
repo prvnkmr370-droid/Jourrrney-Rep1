@@ -2965,7 +2965,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Kumbhalgarh Fort & Wildlife Sanctuary", distance: "84 km", type: "Great Wall of India", isHidden: false },
       { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true, id: "ranakpur" },
       { name: "Eklingji & Nagda Temples", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true },
-      { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true },
+      { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true, id: "jaisamand-lake" },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
       { name: "City Palace, Udaipur", distance: "In city", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
       { name: "Jagdish Temple, Udaipur", distance: "In city", type: "Spiritual", isHidden: true, id: "jagdish-temple-udaipur" },
@@ -3711,6 +3711,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5300,
     mustEat: ["Rajasthani thali", "Festival street food during the Shilpgram Festival"],
     packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "jaisamand-lake",
+    name: "Jaisamand Lake",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Dhebar Lake"],
+    tagline: "Asia's Second-Largest Man-Made Sweet-Water Lake",
+    description: "Jaisamand Lake, also known as Dhebar Lake, is claimed as the second-largest man-made freshwater lake in Asia, formed by a dam built across the Gomati River (locally the Ruparel) to secure water for the Mewar kingdom. Rocky, tree-covered islands rise from the lake, including one large island that supports several bird species, making the lake a popular destination for both weekend picnickers from Udaipur and birdwatchers. Its scale and relatively undeveloped shoreline give it a wilder, more open feel than the smaller lakes within Udaipur city itself, with hilltop pavilions such as the Hawa Mahal (Jaisamand) overlooking the water.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Jaisamand_Lake.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Jaisamand_Lake.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7a/Jaisamand_Lake.jpg"],
+    imageCredit: "Photo: Alazhars — Wikimedia Commons, CC BY 3.0. Same image used on the English Wikipedia article for Dhebar Lake and five other language editions.",
+    category: ["Nature", "Off-beat"],
+    bestSeason: "October – March",
+    duration: "3–4 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Best visited as a half-day or day trip from Udaipur. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Asia's claimed second-largest man-made sweet-water lake" },
+      { name: "Formed by a dam on the Gomati (Ruparel) River" },
+      { name: "Large central island with resident bird species" },
+      { name: "Hawa Mahal (Jaisamand) hilltop pavilion overlooking the lake" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "~48 km from Udaipur", costRange: "₹1,200–₹2,500 round-trip cab from Udaipur", tips: "A full or half-day trip given the distance — combine with a packed lunch if visiting midday." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "Visited as a day trip from Udaipur; limited lodging directly at the lake." },
+    ],
+    localTransport: [
+      { mode: "Private Cab", cost: "₹1,200–₹2,500 round-trip from Udaipur", notes: "Most practical way to visit given the distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Udaipur", distance: "~48 km", type: "City", isHidden: false, id: "udaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1900, accommodation: 700, food: 400, transport: 700, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5700, accommodation: 3500, food: 1000, transport: 1000, activities: 200 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 35400, accommodation: 30000, food: 3000, transport: 1200, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jaisamand Day Trip", morning: "Drive out from Udaipur, arrive by late morning.", afternoon: "Boat or shoreline walk, Hawa Mahal viewpoint.", evening: "Return to Udaipur before dark.", stay: "Udaipur", meals: "Pack water and snacks — limited food options at the lake", tips: "Weekends can be busier with local picnickers; weekdays are quieter." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known day-trip destination, though remote and less touristed than central Udaipur"],
+      precautions: ["Travel with a driver/guide rather than exploring alone", "Avoid isolated stretches of shoreline, especially later in the day", "Carry water and sun protection — the area is relatively exposed"],
+      soloTips: ["Best visited as part of a booked day tour or with a trusted driver rather than independently"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["Marked viewpoints and picnic areas during daylight hours"],
+      avoidAreas: ["Isolated shoreline areas, especially after dusk"],
+    },
+    rating: 4.3,
+    reviews: 4600,
+    mustEat: ["Carry your own food and water — limited options at the lake"],
+    packingTips: ["Sun protection", "Water", "Binoculars for birdwatching", "Comfortable shoes"],
   },
 
   {
