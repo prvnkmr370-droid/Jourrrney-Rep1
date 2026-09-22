@@ -79336,6 +79336,68 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Water bottle — limited facilities on-site"],
   },
 
+  {
+    id: "pul-kanjri-amritsar",
+    name: "Pul Kanjri (Pul Moran)",
+    state: "Punjab",
+    tagline: "A Sikh Empire-Era Trading Post with a Temple, Gurdwara and Mosque Side by Side",
+    description: "Pul Kanjri, near village Dhanoa Kalan about 36km from the Golden Temple, was built by Maharaja Ranjit Singh as a resting place and trading post along the route toward Lahore. The complex brings together a temple, a Gurdwara, a mosque and a large stepped bathing tank in close proximity — a physical reflection of the religious pluralism of the Sikh Empire era — along with interior frescoes depicting Hindu and Sikh iconography. A memorial to the 1971 India-Pakistan war has since been added nearby, giving the site an additional, more recent layer of history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pul_Kanjari.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Pul_Kanjari.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/e4/Pul_Kanjari.JPG"],
+    imageCredit: "Photo: Vikas Singh Jariyal — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built by Maharaja Ranjit Singh as a resting place and trading post" },
+      { name: "A temple, Gurdwara and mosque standing side by side" },
+      { name: "A large stepped bathing tank at the complex's center" },
+      { name: "Interior frescoes of Hindu and Sikh iconography" },
+      { name: "A nearby memorial to the 1971 India-Pakistan war" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Amritsar, then to near village Dhanoa Kalan", fromMumbai: "Via Amritsar", fromBangalore: "Via Amritsar", duration: "~36 km / 1h from Amritsar", costRange: "₹800–₹1,800 round trip by cab from Amritsar", tips: "Often combined with a visit to the nearby Attari-Wagah Border given the shared direction." },
+    ],
+    accommodation: [
+      { type: "Amritsar Hotels", priceRange: "₹800–₹18,000/night", examples: ["Stay in Amritsar city, day-trip to Pul Kanjri"], description: "No tourist accommodation on-site — visit as a day trip from Amritsar." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,800 round trip", notes: "Most practical way to reach the site, often combined with Attari-Wagah", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Attari-Wagah Border", distance: "A short drive away, similar direction", type: "Culture", isHidden: false, id: "attari-wagah-border" },
+      { name: "Golden Temple (Sri Harmandir Sahib)", distance: "~36 km", type: "Spiritual", isHidden: false, id: "golden-temple-amritsar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 700, food: 300, transport: 600, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4900, accommodation: 2800, food: 700, transport: 1000, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 11700, accommodation: 8500, food: 1200, transport: 1500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Border Road Heritage Trail", morning: "Explore Amritsar city sites.", afternoon: "Visit Pul Kanjri en route toward Attari.", evening: "Watch the Retreat Ceremony at Attari-Wagah Border.", stay: "Amritsar city", meals: "Roadside dhaba food en route", tips: "Efficient to combine with the Attari-Wagah Border trip, since both lie in the same direction from Amritsar." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A protected heritage site near the international border, generally quiet and low-crime"],
+      precautions: ["A rural, lower-footfall site — visit during daylight hours with pre-arranged transport"],
+      soloTips: ["Best visited as part of a day trip with a driver waiting, ideally combined with the Attari-Wagah Border visit"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+        { label: "Police", number: "100" },
+        { label: "Women Helpline", number: "181" },
+      ],
+      safeZones: ["The complex grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 600,
+    mustEat: ["Roadside dhaba food en route"],
+    packingTips: ["Comfortable walking shoes", "Water bottle — limited facilities on-site"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
