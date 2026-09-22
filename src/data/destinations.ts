@@ -656,6 +656,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Nahargarh Biological Park", distance: "12 km", type: "Wildlife", isHidden: true, id: "nahargarh-biological-park" },
       { name: "Jhalana Safari Park", distance: "7 km", type: "Wildlife", isHidden: true, id: "jhalana-safari-park" },
       { name: "Sambhar Lake", distance: "70 km", type: "Nature", isHidden: true, id: "sambhar-lake" },
+      { name: "Jawahar Kala Kendra", distance: "5 km", type: "Culture", isHidden: true, id: "jawahar-kala-kendra" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24511,6 +24512,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3400,
     mustEat: ["Carry your own food and water — limited options at the site"],
     packingTips: ["Sun protection", "Water", "Binoculars for birdwatching", "Comfortable closed shoes for the salt flats"],
+  },
+
+  {
+    id: "jawahar-kala-kendra",
+    name: "Jawahar Kala Kendra",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["JKK"],
+    tagline: "A Modernist Cultural Centre Designed Around the Navagraha Cosmic Plan",
+    description: "Jawahar Kala Kendra is a multi-arts centre in Jaipur, designed by the noted Indian architect Charles Correa and established in 1993. Its ground plan is deliberately built around the navagraha — the nine celestial bodies of traditional Indian cosmology — translated into nine interconnected square blocks, each representing a planet, arranged in a grid that references the same Jantar Mantar-influenced planning traditions found elsewhere in the city. The centre houses six exhibition galleries, an amphitheatre and auditoriums, a crafts-focused Shilpgram complex, and an Indian Coffee House outlet, functioning as one of Jaipur's main venues for contemporary art, theatre, and cultural events rather than a purely historical monument.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/41/2022_July_-_JawaharKalaKendra_Jaipur_13.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/41/2022_July_-_JawaharKalaKendra_Jaipur_13.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/41/2022_July_-_JawaharKalaKendra_Jaipur_13.jpg"],
+    imageCredit: "Photo: Chainwit. — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English Wikipedia article for Jawahar Kala Kendra.",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October – February",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:30 PM", note: "Closed Mondays; gallery hours may vary during special exhibitions. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Designed by Charles Correa, established 1993" },
+      { name: "Plan based on the navagraha (nine planets) cosmology" },
+      { name: "Six exhibition galleries plus auditoriums and Shilpgram complex" },
+      { name: "Indian Coffee House outlet on the premises" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Within central Jaipur", costRange: "₹100–₹300 by auto/cab within Jaipur", tips: "Check current exhibition listings before visiting — programming changes regularly." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Central Jaipur location, easily combined with other city sights." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Jaipur", notes: "Standard way to reach JKK", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹300", notes: "Reliable within Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jaipur", distance: "~5 km", type: "City", isHidden: false, id: "jaipur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1350, accommodation: 700, food: 400, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4700, accommodation: 3000, food: 1000, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 24400, accommodation: 20000, food: 2500, transport: 600, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arts & Culture in Jaipur", morning: "Jawahar Kala Kendra galleries.", afternoon: "Coffee at the on-site Indian Coffee House, then Central Park or Statue Circle.", evening: "City Palace or Hawa Mahal.", stay: "Jaipur", meals: "South Indian coffee-house fare on-site, Rajasthani thali dinner (₹300–₹500)", tips: "Worth checking for scheduled theatre or music performances during your visit." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-maintained public cultural institution with regular staff presence and daytime visitor flow"],
+      precautions: ["Standard museum/gallery precautions"],
+      soloTips: ["Comfortable for solo visitors, including for attending scheduled cultural events"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The centre's grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 5100,
+    mustEat: ["Filter coffee and South Indian snacks at the on-site Indian Coffee House"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
