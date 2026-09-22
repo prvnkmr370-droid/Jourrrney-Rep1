@@ -2094,7 +2094,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Culture"],
     bestSeason: "October – March",
     duration: "2 days",
-    highlights: [{ name: "Junagarh Fort", id: "junagarh-fort" }, { name: "National Research Centre on Camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace" }, { name: "Bikaneri bhujia shopping" }],
+    highlights: [{ name: "Junagarh Fort", id: "junagarh-fort" }, { name: "National Research Centre on Camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace", id: "lalgarh-palace" }, { name: "Bikaneri bhujia shopping" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Bikaner Express — ~7–8h", fromMumbai: "Via Jodhpur/Jaipur — 18h+", fromBangalore: "Via Delhi/Jaipur — 26h+", duration: "~7–8h from Delhi", costRange: "₹300–₹1,600", tips: "Bikaner Junction is well-connected to Delhi and Jaipur directly." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48/NH52 — 7–8h", fromMumbai: "Via Jaipur — 17–18h", fromBangalore: "—", duration: "~7–8h from Delhi; ~4h from Jaipur", costRange: "₹3,000–₹6,000 cab / ₹400–₹700 bus", tips: "Frequent buses connect Bikaner to both Jaipur and Jodhpur." },
@@ -2117,6 +2117,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
       { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true, id: "kolayat-lake" },
       { name: "Junagarh Fort", distance: "In city", type: "Heritage", isHidden: true, id: "junagarh-fort" },
+      { name: "Lalgarh Palace", distance: "In city", type: "Heritage", isHidden: true, id: "lalgarh-palace" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
@@ -2200,6 +2201,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 12400,
     mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "lalgarh-palace",
+    name: "Lalgarh Palace",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "An Oriental Fantasy in Red Sandstone, Built for a Beloved Father",
+    description: "Lalgarh Palace was built between 1902 and 1926 for Maharaja Ganga Singh of Bikaner, commemorating his father Maharaja Lal Singh, and designed by the British architect Sir Samuel Swinton Jacob. Constructed entirely of red sandstone, the palace blends Rajput, Islamic, and European architectural traditions into what has often been called an 'oriental fantasy' — intricate latticework, filigree carving, and domed pavilions cover a building that also housed one of India's first private electricity and plumbing systems. Part of the palace remains a heritage hotel and private royal residence, while other sections, including a museum, are open to visitors.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/54/Lalgarh_palace_%28front_view%29%2C_Bikaner%2C_Rajasthan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/54/Lalgarh_palace_%28front_view%29%2C_Bikaner%2C_Rajasthan.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/54/Lalgarh_palace_%28front_view%29%2C_Bikaner%2C_Rajasthan.jpg"],
+    imageCredit: "Photo: Honika Pareek — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Monuments 2016 submission; correct Commons category.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Part of the palace is a private heritage hotel; the museum wing keeps separate hours. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1902–1926, designed by Sir Samuel Swinton Jacob" },
+      { name: "Entirely red sandstone construction" },
+      { name: "Blend of Rajput, Islamic, and European architecture" },
+      { name: "Commemorates Maharaja Lal Singh" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "Central Bikaner", costRange: "₹50–₹200 by auto within Bikaner", tips: "Combine with Junagarh Fort as a single day of Bikaner heritage sightseeing." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Lalgarh Palace itself (heritage wing)", "Old-city heritage hotels"], description: "Central Bikaner location." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹200 within Bikaner", notes: "Standard for getting around the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹400", notes: "Available with less dense coverage than Jaipur/Jodhpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Junagarh Fort", distance: "~3 km", type: "Heritage", isHidden: true, id: "junagarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1150, accommodation: 500, food: 250, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3800, accommodation: 2000, food: 600, transport: 500, activities: 700 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 15500, accommodation: 11000, food: 1800, transport: 800, activities: 1900 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bikaner Palaces", morning: "Junagarh Fort.", afternoon: "Lalgarh Palace and its museum wing.", evening: "Old city walk through Kot Gate.", stay: "Old-city heritage hotel", meals: "Bikaneri thali (₹200), rooftop dinner (₹400)", tips: "If you can, stay a night in the palace's heritage wing for the full experience — otherwise the museum visit alone is worthwhile." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed heritage hotel and museum site with staff presence"],
+      precautions: ["Standard palace/museum precautions"],
+      soloTips: ["Comfortable for solo visitors given the managed hotel/museum setting"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 5800,
+    mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
