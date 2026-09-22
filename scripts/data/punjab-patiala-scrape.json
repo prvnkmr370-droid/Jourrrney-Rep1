@@ -1,0 +1,24 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/patiala/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source. Page is large; captured through the main palace/fort/temple listings.",
+  "district": "Patiala",
+  "about": "Former Phulkian-dynasty princely capital, founded by Baba Ala Singh in 1714 ('Pati Ala'). Briefly capital of PEPSU. Known for 'peg', 'pagri', 'paranda', 'jutti', and Punjabi Jutti. Qila Mubarak founded 1763/64.",
+  "places": [
+    { "name": "Qila Mubarak", "timings": "Check locally", "entryFee": "Check locally", "location": "Central Patiala", "facts": "Founded 1763-64 by Baba Ala Singh; official royal residence until mid-19th century. Darbar Hall built 1859 by Maharaja Narendra Singh, with Bohemian crystal chandelier, jade dagger of Guru Gobind Singh Ji, and Nadir Shah's sword 'Shikar Gah'. Qila Androon has 13 murals-decorated royal chambers. Includes Jalau Khana, Sard Khana, Chandelier Gallery, Cannon Park." },
+    { "name": "Sheesh Mahal", "timings": "Check locally", "entryFee": "Check locally", "location": "Old Moti Bagh, Patiala", "facts": "Built 1847 by Maharaja Narendra Singh, modeled on Lahore's Shalimar Garden. World's largest collection of medals/decorations (3,200+), including a Most Noble Order of the Garter example. Kangra/Rajasthani-style paintings; now a museum, art gallery, medal gallery, and North Zone Cultural Centre." },
+    { "name": "Moti Bagh Palace and Netaji Subhas National Institute of Sports (NSNIS)", "timings": "Check locally", "entryFee": "Check locally", "location": "Old Moti Bagh, Patiala", "facts": "Built 1847, Rs 5 lakh cost; 4-storeyed with domes. Lakshman Jhula rope bridge to Bansar Ghar (Natural History Gallery). Now houses NSNIS, Asia's largest sports institute (268 acres), founded 1961, merged with SAI 1987. Museum holds Great Gama's 95kg 'hass', Dhyan Chand's 1928 Olympic gold medal, PT Usha's 1986 Asiad shoes." },
+    { "name": "Shahi Samadhan (Royal Mausoleum)", "timings": "Start of Heritage Walk", "entryFee": "Check locally", "location": "Patiala city", "facts": "Resting place of Patiala's royal family including founder Baba Ala Singh, under white marble cenotaphs." },
+    { "name": "Patiala Heritage Walk", "timings": "Mar-Nov 8-9am, Dec-Feb 9-10am, Fri/Sat/Sun only", "entryFee": "Check locally", "location": "Shahi Samadhan to Qila Mubarak", "facts": "Guided cultural/architectural walk through old Patiala." },
+    { "name": "Shri Kali Devi Temple", "timings": "5am-9pm", "entryFee": "Free", "location": "Mall Road, across from Baradari Gardens", "facts": "Built 1936 by the Maharaja of Patiala; holds manuscript leaves believed written by Rishi Vyas, brought from Badri Narain Temple by Maharaja Narinder Singh." },
+    { "name": "Gurudwara Sri Dukh Niwaran Sahib", "timings": "Open throughout the day", "entryFee": "Free", "location": "Lehal area, Patiala", "facts": "Where Guru Tegh Bahadur Ji cured villagers of illness under a banyan tree; healing tank; hukumnama displayed." },
+    { "name": "Qila Bahadurgarh (Bahadurgarh Fort)", "timings": "Not specified", "entryFee": "Not specified", "location": "~7km northeast of Patiala on Chandigarh-Patiala highway", "facts": "Originally built by Nawab Saif Khan as Sefabad; restructured 1837 by Maharaja Karam Singh; renamed for Guru Tegh Bahadur Ji. Mughal-style, contains a Gurdwara." }
+  ],
+  "howToReach": {
+    "note": "4th largest city in Punjab; near Fatehgarh Sahib, Rupnagar, SAS Nagar, and Chandigarh."
+  },
+  "visitorInfo": {
+    "bestTimeToVisit": "October to March"
+  }
+}

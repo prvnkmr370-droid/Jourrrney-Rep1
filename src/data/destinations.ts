@@ -80980,6 +80980,238 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Government-issued photo ID (border-adjacent area)", "Comfortable walking shoes", "Light jacket — can be breezy near the water"],
   },
 
+  {
+    id: "qila-mubarak-patiala",
+    name: "Qila Mubarak",
+    state: "Punjab",
+    tagline: "The Fortified Heart of the Phulkian Dynasty's Royal Capital",
+    description: "Qila Mubarak, founded in 1763-64 by Baba Ala Singh, was the official residence of the rulers of Patiala until the mid-19th century and remains the literal centre around which the old city of Patiala grew. Its Darbar Hall, built in 1859 by Maharaja Narendra Singh, houses a Bohemian crystal chandelier, a jade dagger belonging to Guru Gobind Singh Ji, and the sword of the Persian invader Nadir Shah. The inner Qila Androon holds 13 royal chambers decorated with murals in the Patiala style by artists from Kangra and Rajasthan, while the Jalau Khana, Sard Khana (with its ingenious cooling wind-tunnel design), and Cannon Park round out one of the most complete surviving Sikh-era royal complexes in Punjab.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/df/Qila_Mubarak%2C_Patiala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/df/Qila_Mubarak%2C_Patiala.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/df/Qila_Mubarak%2C_Patiala.jpg"],
+    imageCredit: "Photo: Journojp — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Founded 1763-64 by Baba Ala Singh, founder of Patiala" },
+      { name: "Darbar Hall with a jade dagger of Guru Gobind Singh Ji and Nadir Shah's sword" },
+      { name: "13 mural-decorated royal chambers in the Qila Androon" },
+      { name: "A Chandelier Gallery and Cannon Park" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Patiala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Central Patiala, the heart of the old city." },
+    ],
+    accommodation: [
+      { type: "Patiala City Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["A wide range of hotels given Patiala's status as a major city"], description: "Extensive hotel options in Patiala." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sheesh Mahal", distance: "~3 km", type: "Heritage", isHidden: false, id: "sheesh-mahal-patiala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patiala's Phulkian Heritage", morning: "Explore Qila Mubarak, including Darbar Hall and Qila Androon.", afternoon: "Sheesh Mahal and Moti Bagh Palace.", evening: "Patiala's old city bazaars.", stay: "Central Patiala", meals: "Local Patiala specialties", tips: "Combine with the Patiala Heritage Walk, which starts at Shahi Samadhan and ends here." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, well-managed heritage site at the centre of a large city"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The fort complex and surrounding old city during the day"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 8900,
+    mustEat: ["Patiala peg (a measure of whisky, not literally to drink for all visitors)", "Local Patiala Punjabi fare"],
+    packingTips: ["Comfortable walking shoes for the large fort complex"],
+  },
+
+  {
+    id: "sheesh-mahal-patiala",
+    name: "Sheesh Mahal",
+    state: "Punjab",
+    tagline: "A Mirrored Palace Home to the World's Largest Medal Collection",
+    description: "Sheesh Mahal, in Patiala's old Moti Bagh, was built in 1847 by Maharaja Narendra Singh as a retreat modeled on Lahore's Shalimar Garden, with terraces, fountains and water channels connected by a marbled pavilion pathway. Its pink Indo-Saracenic towers and a suspension bridge over an ornamental tank make it one of Patiala's most photogenic landmarks. Inside, mirror-worked chambers hold Kangra and Rajasthani-style paintings, while the palace's museum displays the world's largest collection of medals and decorations — over 3,200 orders and honors, including an example from Britain's Most Noble Order of the Garter. The complex now also houses the North Zone Cultural Centre.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sheesh_Mahal%2C_Patiala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sheesh_Mahal%2C_Patiala.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/b8/Sheesh_Mahal%2C_Patiala.jpg"],
+    imageCredit: "Photo: Keshuseeker — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Built 1847 by Maharaja Narendra Singh, modeled on Lahore's Shalimar Garden" },
+      { name: "World's largest collection of medals and decorations, 3,200+ pieces" },
+      { name: "Mirror-worked chambers with Kangra and Rajasthani-style paintings" },
+      { name: "Now also home to the North Zone Cultural Centre" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Patiala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Old Moti Bagh, Patiala." },
+    ],
+    accommodation: [
+      { type: "Patiala City Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["A wide range of hotels in Patiala"], description: "Extensive hotel options in Patiala." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach Sheesh Mahal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak", distance: "~3 km", type: "Heritage", isHidden: false, id: "qila-mubarak-patiala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 500, activities: 400 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 800, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patiala's Phulkian Heritage", morning: "Qila Mubarak.", afternoon: "Sheesh Mahal and its medal gallery.", evening: "Old Moti Bagh grounds.", stay: "Central Patiala", meals: "Local Patiala specialties", tips: "The medal gallery is a genuine world-class collection — allow enough time to see it properly." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-managed museum complex within the old Moti Bagh grounds"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The palace grounds during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 5200,
+    mustEat: ["Local Patiala Punjabi fare"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "bahadurgarh-fort-patiala",
+    name: "Qila Bahadurgarh (Bahadurgarh Fort)",
+    state: "Punjab",
+    tagline: "A Mughal-Era Fort Renamed in Honor of the Ninth Sikh Guru",
+    description: "Bahadurgarh Fort, about 7km northeast of Patiala on the Chandigarh-Patiala highway, was originally built by Nawab Saif Khan as Sefabad before being restructured in 1837 by Maharaja Karam Singh at a cost of around Rs 100,000. Renamed in honor of Guru Tegh Bahadur Ji, the ninth Sikh Guru, the fort's four walls enclose the historic village of Saifabad and its Mughal-influenced architecture, complete with an interior Gurdwara where visitors pay their respects. Its weathered gateways and passages offer a quieter, less-visited counterpoint to Patiala's more famous royal palaces.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Bahadurgarh_Fort_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/11/Bahadurgarh_Fort_1.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/11/Bahadurgarh_Fort_1.jpg"],
+    imageCredit: "Photo: Lillottama — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Originally built as Sefabad by Nawab Saif Khan" },
+      { name: "Restructured 1837 by Maharaja Karam Singh, renamed for Guru Tegh Bahadur Ji" },
+      { name: "A Gurdwara within its walls" },
+      { name: "Mughal-influenced architecture enclosing the village of Saifabad" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Patiala, then to Bahadurgarh on the Chandigarh-Patiala highway", fromMumbai: "Via Patiala", fromBangalore: "Via Patiala", duration: "~7 km / 20min from Patiala city", costRange: "₹300–₹700 round trip by cab from Patiala", tips: "~7km northeast of Patiala on the Chandigarh-Patiala highway." },
+    ],
+    accommodation: [
+      { type: "Patiala City Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["Most visitors day-trip from Patiala city"], description: "Extensive hotel options in Patiala." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹300–₹700 round trip", notes: "Most practical way to reach the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak", distance: "~7 km", type: "Heritage", isHidden: false, id: "qila-mubarak-patiala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 300, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2500, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 6000, food: 1200, transport: 800, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patiala Extended Heritage", morning: "Qila Mubarak and Sheesh Mahal in the city.", afternoon: "Bahadurgarh Fort and its Gurdwara.", evening: "Return to Patiala city.", stay: "Central Patiala", meals: "Free langar at the fort's Gurdwara", tips: "A quieter, less-crowded alternative to the city's main royal sites." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A heritage site with an active Gurdwara, generally quieter than central Patiala"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The fort and Gurdwara grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1600,
+    mustEat: ["Free langar at the fort's Gurdwara"],
+    packingTips: ["Comfortable walking shoes", "A scarf or head covering for the Gurdwara"],
+  },
+
+  {
+    id: "gurdwara-dukh-niwaran-sahib-patiala",
+    name: "Gurudwara Sri Dukh Niwaran Sahib",
+    state: "Punjab",
+    tagline: "'The Eradication of Sufferings' — Where Guru Tegh Bahadur Ji Cured a Village",
+    description: "Gurudwara Sri Dukh Niwaran Sahib, in the Lehal area of Patiala, marks the spot where Guru Tegh Bahadur Ji, the ninth Sikh Guru, is believed to have sat beneath a banyan tree to cure the villagers of Lehal of a mysterious illness — an act from which the shrine takes its name, 'Dukh Niwaran,' literally 'the eradication of sufferings.' The villagers themselves donated the elevated land for the original modest Gurdwara, which has since grown into a gleaming white marble complex with a holy tank believed to have healing properties. A hukumnama (order) issued by the Guru is preserved and displayed here, and the shrine continues to draw devotees and tourists from around the world.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9b/This_picture_is_of_Gurdwara_Dukh_niwaran_sahib_patiala.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9b/This_picture_is_of_Gurdwara_Dukh_niwaran_sahib_patiala.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/9b/This_picture_is_of_Gurdwara_Dukh_niwaran_sahib_patiala.jpg"],
+    imageCredit: "Photo: Paramdeeps — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1.5 hours",
+    visitingHours: { opens: "12:00 AM", closes: "12:00 AM", note: "Open to visitors throughout the day. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Where Guru Tegh Bahadur Ji cured the village of Lehal of illness" },
+      { name: "A holy tank believed to have healing properties" },
+      { name: "A hukumnama by Guru Tegh Bahadur Ji preserved and displayed" },
+      { name: "A gleaming white marble complex, funded by land donated by villagers" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Patiala Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹2,000", tips: "Lehal area, Patiala." },
+    ],
+    accommodation: [
+      { type: "Patiala City Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["A wide range of hotels in Patiala"], description: "Extensive hotel options in Patiala." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150 within the city", notes: "Standard way to reach the Gurdwara", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Qila Mubarak", distance: "Within Patiala city", type: "Heritage", isHidden: false, id: "qila-mubarak-patiala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1400, accommodation: 800, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3900, accommodation: 2500, food: 700, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8800, accommodation: 6000, food: 1200, transport: 700, activities: 900 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Patiala Spiritual Heritage", morning: "Gurudwara Sri Dukh Niwaran Sahib.", afternoon: "Shri Kali Devi Temple.", evening: "Qila Mubarak.", stay: "Central Patiala", meals: "Free langar at the Gurdwara", tips: "A meaningful, less touristy stop compared to the royal palaces — plan for quiet reflection." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A major, actively managed Gurdwara with a constant flow of devotees"],
+      precautions: ["Dress modestly; cover your head before entering"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The Gurdwara complex"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.7,
+    reviews: 4300,
+    mustEat: ["Free langar at the Gurdwara"],
+    packingTips: ["A scarf or head covering", "Easy-to-remove footwear"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
