@@ -1,0 +1,40 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/bikaner.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-23",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Bikaner",
+  "about": "Founded 1488 by Rao Bikaji, a Rathore prince and one of Rao Jodhaji's (founder of Jodhpur) five sons, after leaving his father's court and settling the wilderness called Jangladesh. Nicknamed 'Camel Country'; holds one of only two surviving WWI British biplanes gifted to Maharaja Ganga Singh; sand dunes scattered through the district, mainly northeast to south.",
+  "places": [
+    { "name": "Junagarh Fort", "location": "Central Bikaner", "facts": "Built 1588 AD by Raja Rai Singh, a general of Emperor Akbar; never captured in its history; red sandstone and marble palaces with courtyards, balconies, kiosks, windows." },
+    { "name": "National Research Centre on Camel", "location": "8 km from Bikaner city", "facts": "Only camel research/breeding centre of its kind in Asia; spread over 2000 acres, managed by the Government of India; camel rides, selfie points, camel milk products (flavored milk, coffee, kulfi, cheese)." },
+    { "name": "Lalgarh Palace and Museum", "location": "Bikaner", "facts": "Commissioned by Maharaja Ganga Singh, built 1902 in memory of his father Maharaja Lal Singh; entirely red sandstone; designed by Sir Swinton Jacob blending Rajputana, Islamic, and European styles." },
+    { "name": "Rampuria Haveli (Rampuria Group of Havelis)", "location": "Bikaner", "facts": "Built of dulmera (red) stone; ornate jharokhas, latticed windows, divankhanas, gumaharias (basements); gold work, Victorian-influenced design, exquisite wood carving." },
+    { "name": "Ganga Government Museum", "location": "Bikaner", "facts": "Described as the state's best museum; Harappan and early Gupta period archaeological artefacts; separate sections for paintings, arts/crafts, woven carpets, clay pottery, ancient coins, Rajput weaponry." },
+    { "name": "Laxmi Niwas Palace", "location": "Bikaner", "facts": "Residence of Maharaja Ganga Singh, built 1898-1902 by British architect Sir Samuel Swinton Jacob; Indo-Saracenic style; now a luxury hotel." },
+    { "name": "Prachina Museum", "location": "Inside Junagarh Fort", "facts": "Royal costumes, textiles, accessories; 'Poshaks' (ladies' garments) showing traditional craft; royal family portraits." },
+    { "name": "Deshnok Karni Mata Temple", "location": "Deshnok, near Bikaner", "facts": "Stone and marble temple; Karni Mata idol decorated with mukut (tiara) and garlands, flanked by images of her sisters and Avad Mata's sisters; world-famous for kabas (rats) roaming freely in the temple precincts." },
+    { "name": "Jain Temple Bhandasar", "location": "Bikaner", "facts": "15th-century temple dedicated to the 5th Tirthankar, Sumatinathji; one of Bikaner's oldest monuments; intricate mirror work, murals, gold leaf paintings." },
+    { "name": "Kodamdesar Temple and Lake", "location": "24 km from Bikaner", "facts": "Kodamdesar Bhainru Ji installed by Rao Bikaji shortly after arriving from Jodhpur; originally chosen as Bikaner's foundation site before relocation; lake in the temple's backyard." },
+    { "name": "Shri Laxminath Temple", "location": "Bikaner", "facts": "Marble and red stone; Bikaner's rulers regarded Lord Laxminathji (Vishnu) as the true king, considering themselves his Diwans/Ministers; enshrines his throne." },
+    { "name": "Shiv Bari Temple (Laleshwar Mahadev Mandir)", "location": "6 km from Bikaner", "facts": "Built by Maharaja Doongar Singh in the 19th century in memory of his father Maharaja Lal Singh; four-faced black marble Shiva statue, bronze Nandi; wall paintings; two large bawari reservoirs." },
+    { "name": "Gajner Palace and Lake", "location": "Gajner, near Bikaner", "facts": "Founded 1784 by Maharaja Gaj Singh, completed by Maharaja Ganga Singh on the lake's banks; former royal hunting/relaxation lodge; now a heritage hotel." },
+    { "name": "Gajner Wildlife Sanctuary", "location": "~32 km from Bikaner, Jaisalmer road", "facts": "Nilgai, chinkara, blackbuck, wild boar; imperial sand grouse flocks and migratory winter birds." },
+    { "name": "Devi Kund", "location": "8 km from Bikaner", "facts": "Royal crematorium of the Bikaji dynasty; chhatris marking cremation sites of rulers; Maharaja Surat Singh's white marble chhatri with Rajput ceiling paintings notable; also cenotaphs of 22 royal women who committed sati, plus one male sati (sata) cenotaph." },
+    { "name": "Rajasthan State Archives", "location": "Bikaner", "facts": "Mughal-period Persian Farmans, Nishans, Manshurs; princely-state administrative records; newly developed museum gallery." },
+    { "name": "Kolayat", "location": "~50 km from Bikaner", "facts": "Hindu pilgrimage town; associated with sage Kapil Muni (Sankhya yoga), said to have paused his journey here for tapasya; temples, ghats, a sacred lake, and town market." },
+    { "name": "Katariasar Village", "location": "45 km from Bikaner, Jaipur road", "facts": "Rural desert village with sand dunes and sunset views; home to the Jasnathjis, known fire dancers; chinkara, desert fox, rabbit, peacock, parrot, partridge sightings." },
+    { "name": "Jorbeed", "location": "~12 km from Bikaner city", "facts": "One of Asia's largest congregations of eagles and vultures; Steppe Eagles, Griffon Vultures, Egyptian Vultures common; rare yellow-eyed pigeon possible." },
+    { "name": "Horse Ecotourism (National Research Centre on Equines, Bikaner Campus)", "location": "Bikaner", "facts": "Horse/pony/tonga/buggy riding; Marwari, Kathiawari, Zanskari, Manipuri horses plus French Poitou and White Gujarati donkeys; Equine Information Centre; hydrotherapy pool for equines; handicraft/leather souvenir shops." },
+    { "name": "Darbari Lake", "location": "33 km from Bikaner, Bikaner-Jaisalmer Highway", "facts": "Popular monsoon-season picnic spot; favoured by trekkers; lush green catchment area." },
+    { "name": "Raisar Dunes", "location": "18 km from Bikaner, Bikaner-Jaipur highway, Raisar village", "facts": "Desert safari, camel safari, camel-cart ride, jeep safari, night camping; compared in scale to Jaisalmer's Sam Sand Dunes." },
+    { "name": "Public Park", "location": "Bikaner", "facts": "Built 1937 to mark Maharaja Ganga Singh's reign; modeled as a replica of Buckingham Palace Garden in Westminster." },
+    { "name": "Karni Mata Panorama", "location": "Near Nehdi Ji (old Karni Mata temple), Bikaner", "facts": "Panorama depicting Karni Mata's life and deeds; features an ashtadhatu (eight-metal alloy) statue of the goddess." }
+  ],
+  "howToReach": {
+    "air": "Nal Airport, ~10 km from Bikaner, direct connectivity from Delhi and Jaipur",
+    "rail": "Connections to Jaipur, Jaisalmer, Churu, Jodhpur, Delhi, Mumbai, Kolkata, Guwahati",
+    "road": "Frequent express buses to Agra, Ahmedabad, Ajmer, Barmer, Delhi, Jaipur, Jaisalmer, Jhunjhunu, Jodhpur, Kota, Udaipur"
+  },
+  "nearbyDistances": { "Jaisalmer": "331 km", "Hanumangarh": "244 km", "Jodhpur": "251 km", "Sriganganagar": "241 km" }
+}

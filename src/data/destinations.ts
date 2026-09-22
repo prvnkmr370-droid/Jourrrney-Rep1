@@ -2094,7 +2094,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Desert", "Culture"],
     bestSeason: "October – March",
     duration: "2 days",
-    highlights: [{ name: "Junagarh Fort" }, { name: "National Research Centre on Camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace" }, { name: "Bikaneri bhujia shopping" }],
+    highlights: [{ name: "Junagarh Fort", id: "junagarh-fort" }, { name: "National Research Centre on Camel" }, { name: "Old City & Kot Gate" }, { name: "Lalgarh Palace" }, { name: "Bikaneri bhujia shopping" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Bikaner Express — ~7–8h", fromMumbai: "Via Jodhpur/Jaipur — 18h+", fromBangalore: "Via Delhi/Jaipur — 26h+", duration: "~7–8h from Delhi", costRange: "₹300–₹1,600", tips: "Bikaner Junction is well-connected to Delhi and Jaipur directly." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48/NH52 — 7–8h", fromMumbai: "Via Jaipur — 17–18h", fromBangalore: "—", duration: "~7–8h from Delhi; ~4h from Jaipur", costRange: "₹3,000–₹6,000 cab / ₹400–₹700 bus", tips: "Frequent buses connect Bikaner to both Jaipur and Jodhpur." },
@@ -2116,6 +2116,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: true, id: "deshnoke" },
       { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
       { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true, id: "kolayat-lake" },
+      { name: "Junagarh Fort", distance: "In city", type: "Heritage", isHidden: true, id: "junagarh-fort" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
@@ -2140,6 +2141,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 7600,
     mustEat: ["Bikaneri Bhujia", "Rasgulla (Bikaner has its own well-regarded tradition)", "Dal Baati Churma", "Ghevar", "Kachori"],
     packingTips: ["Sunscreen and a hat (strong desert sun)", "Layers for cool desert evenings", "Comfortable shoes for fort/palace visits", "Modest clothing for temples", "Extra bag space — bhujia shopping adds up"],
+  },
+
+  {
+    id: "junagarh-fort",
+    name: "Junagarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Bikaner Fort"],
+    tagline: "The Rare Rajasthani Fort Built on Flat Ground, Never Once Captured",
+    description: "Junagarh Fort, originally called Chintamani, was built between 1589 and 1594 under the supervision of Karan Chand, Prime Minister to Raja Rai Singh, the sixth ruler of Bikaner. Unlike most major Rajasthani forts, it stands on level ground rather than a hilltop, relying instead on massive walls and a moat for defence — and in its entire history, it was never captured. The fort took its present name, meaning 'Old Fort', in the early 20th century after the ruling family relocated to Lalgarh Palace outside its walls. Inside, the complex holds ornately decorated palaces in red sandstone and marble, including the Karan Mahal's public audience courtyard, with elaborately carved courtyards, balconies, and jharokhas throughout.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Massive_entrance_of_the_Junagarh_Fort.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Massive_entrance_of_the_Junagarh_Fort.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4a/Massive_entrance_of_the_Junagarh_Fort.jpg"],
+    imageCredit: "Photo: Sharvarism — Wikimedia Commons, CC BY-SA 4.0. Wiki Loves Monuments 2019 submission, VRTS-verified permission.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "2–3 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Closed on certain public holidays — confirm locally. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1589–1594 under Karan Chand, Prime Minister to Raja Rai Singh" },
+      { name: "Rare major Rajasthani fort built on flat ground" },
+      { name: "Never captured in its history" },
+      { name: "Karan Mahal public audience courtyard" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "Central Bikaner", costRange: "₹40–₹150 by auto within Bikaner", tips: "Allow extra time for the Prachina Museum inside the fort — it's a genuine highlight, not just an add-on." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Old-city heritage hotels near the fort"], description: "Central Bikaner location, close to the old city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Bikaner", notes: "Standard for getting around the city", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Good for the narrow old-city lanes near the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner", distance: "In city", type: "City", isHidden: false, id: "bikaner" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 500, food: 250, transport: 150, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3700, accommodation: 2000, food: 600, transport: 400, activities: 700 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 15300, accommodation: 11000, food: 1800, transport: 700, activities: 1800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Junagarh Fort & Old City", morning: "Junagarh Fort, including the Prachina Museum.", afternoon: "Lalgarh Palace.", evening: "Old city walk through Kot Gate and the bazaar.", stay: "Old-city heritage hotel", meals: "Bikaneri thali (₹200), rooftop dinner (₹400)", tips: "An audio guide is worth taking — the fort's history and palace details are extensive." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established, staffed heritage site with steady tourist traffic"],
+      precautions: ["Standard fort/museum precautions"],
+      soloTips: ["Comfortable for solo visitors — a major, well-organised tourist attraction"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.6,
+    reviews: 12400,
+    mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
   },
 
   {
