@@ -2966,6 +2966,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ranakpur Jain Temple", distance: "96 km", type: "Hidden Marble Marvel", isHidden: true, id: "ranakpur" },
       { name: "Nagda (Sas Bahu Temples)", distance: "22 km", type: "Spiritual – Less Visited", isHidden: true, id: "nagda-sas-bahu-temples" },
       { name: "Doodh Talai Lake", distance: "In city", type: "Nature", isHidden: true, id: "doodh-talai-lake" },
+      { name: "Sukhadia Circle", distance: "In city", type: "Heritage", isHidden: true, id: "sukhadia-circle" },
       { name: "Jaisamand Lake (Asia's 2nd largest)", distance: "48 km", type: "Off-beat Picnic Spot", isHidden: true, id: "jaisamand-lake" },
       { name: "Nathdwara (Shreenathji Temple)", distance: "48 km", type: "Spiritual", isHidden: false },
       { name: "City Palace, Udaipur", distance: "In city", type: "Heritage", isHidden: true, id: "city-palace-udaipur" },
@@ -3945,6 +3946,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3100,
     mustEat: ["Rajasthani thali"],
     packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "sukhadia-circle",
+    name: "Sukhadia Circle",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 21-Foot Illuminated Marble Fountain at a Northern Udaipur Traffic Circle",
+    description: "Sukhadia Circle, in northern Udaipur, is a traffic roundabout centred on a small ornamental pond and a 21-foot, three-tiered carved marble fountain. Surrounded by gardens, it functions as both a civic landmark and a popular evening gathering spot, particularly striking once the fountain is illuminated after dark. As with several of Udaipur's circle-monuments, its value lies less in historical depth and more as a recognisable, easily reached stop for an evening walk or a photograph on the way between other sights.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sukhadia_circle%2C_Udaipur%2C_Rajasthan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sukhadia_circle%2C_Udaipur%2C_Rajasthan.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/ba/Sukhadia_circle%2C_Udaipur%2C_Rajasthan.jpg"],
+    imageCredit: "Photo: Ssteaj — Wikimedia Commons, CC BY-SA 4.0. Same image used on the English Wikipedia article for Sukhadia Circle.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "15–30 minutes",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Fountain illumination is most striking after dark. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "21-foot, three-tiered carved marble fountain" },
+      { name: "Illuminated after dark" },
+      { name: "Surrounded by gardens" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — long haul", fromMumbai: "Via Udaipur — long haul", fromBangalore: "Via Udaipur — long haul", duration: "Northern Udaipur", costRange: "₹100–₹300 by auto/cab within Udaipur", tips: "Best seen as a quick evening photo stop rather than a dedicated visit." },
+    ],
+    accommodation: [
+      { type: "Base in Udaipur", priceRange: "₹1,000–₹1,50,000/night (estimate)", examples: ["Old-city havelis", "Lakeside palace hotels"], description: "A short ride from the old city." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹250 within Udaipur", notes: "Standard way to pass by Sukhadia Circle", available: true },
+      { mode: "App Cab (Ola)", cost: "₹100–₹300", notes: "Reliable within Udaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Fateh Sagar Lake", distance: "~2 km", type: "Nature", isHidden: true, id: "fateh-sagar-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1250, accommodation: 700, food: 400, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4400, accommodation: 3500, food: 1000, transport: 400, activities: 0 },
+      { tier: "luxury", label: "Royal Palace", perDayPerPerson: 34100, accommodation: 30000, food: 3000, transport: 600, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Northern Udaipur Evening", morning: "Saheliyon Ki Bari.", afternoon: "Fateh Sagar Lake boat ride.", evening: "Drive past Sukhadia Circle after dark for the illuminated fountain.", stay: "Udaipur", meals: "Rajasthani thali", tips: "A quick stop — combine it with the Fateh Sagar area rather than a dedicated trip." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy, well-lit traffic circle in an active part of the city, with steady evening foot and vehicle traffic"],
+      precautions: ["Standard roadside/traffic precautions when stopping for photos"],
+      soloTips: ["Comfortable to view briefly, including in the evening, given the busy surroundings"],
+      emergencyContacts: [{ label: "Udaipur Tourist Police", number: "0294-2411535" }, { label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The circle and surrounding gardens"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.0,
+    reviews: 2200,
+    mustEat: ["Rajasthani thali"],
+    packingTips: ["Camera for the evening illumination"],
   },
 
   {
