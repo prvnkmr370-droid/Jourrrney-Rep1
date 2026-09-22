@@ -81741,6 +81741,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes"],
   },
 
+  {
+    id: "banasar-bagh-sangrur",
+    name: "Banasar Bagh & Deewan Khana Complex",
+    state: "Punjab",
+    tagline: "The Summer Palace and Courthouse of the Jind State Rulers",
+    description: "Banasar Bagh, in the heart of Sangrur city, was the summer seat of the rulers of the former Jind State, one of the three Phulkian princely states whose territories now make up much of the district. At its centre stands the Marble Baradari, a twelve-doored marble pavilion surrounded by fountains and gardens. Within the same complex, the Deewan Khana — a Mughal-style building that once served as the Raja of Jind's courthouse, with a central Durbar Hall beneath a decorative painted-wood ceiling — now functions as a museum, its collection of weapons, manuscripts and paintings offering a window into the daily governance and material culture of the princely era.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Banasar_Bagh_Sangrur_Image.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Banasar_Bagh_Sangrur_Image.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f0/Banasar_Bagh_Sangrur_Image.jpg"],
+    imageCredit: "Photo: Osheen477 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Timings vary — check locally before visiting. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "Summer seat of the former Jind State rulers" },
+      { name: "The Marble Baradari, a 12-door marble pavilion with fountains" },
+      { name: "Deewan Khana, a Mughal-style courthouse now a museum" },
+      { name: "Weapons, manuscripts and paintings from the Jind princely period" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚆", fromDelhi: "To Sangrur Railway Station", fromMumbai: "Via major junctions", fromBangalore: "Via major junctions", duration: "Varies by train", costRange: "₹300–₹1,800", tips: "Banasar Garden, central Sangrur city." },
+    ],
+    accommodation: [
+      { type: "Sangrur City Hotels", priceRange: "₹800–₹4,500/night", examples: ["A modest range of hotels in Sangrur city"], description: "Limited but sufficient options for a short stay." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹100 within the city", notes: "Standard way to reach the complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shahi Samadhan", distance: "Within Sangrur city", type: "Heritage", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 600, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 700, transport: 400, activities: 500 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 8000, accommodation: 4800, food: 1200, transport: 700, activities: 1300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sangrur's Jind State Heritage", morning: "Explore Banasar Bagh and the Deewan Khana Museum.", afternoon: "Shahi Samadhan and Clock Tower.", evening: "Kali Mata Temple.", stay: "Sangrur city", meals: "Local Malwa-region Punjabi fare", tips: "The Deewan Khana museum is a highlight — allow enough time to see its collection." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["A well-known, centrally located public garden and heritage complex"],
+      precautions: ["Standard heritage-site precautions"],
+      soloTips: ["Comfortable for solo visitors during open hours"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The garden and complex during open hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 2100,
+    mustEat: ["Local Malwa-region Punjabi fare"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];

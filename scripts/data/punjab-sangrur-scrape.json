@@ -1,0 +1,24 @@
+{
+  "source": "https://punjabtourism.punjab.gov.in/en/our-destination/sangrur/",
+  "sourceType": "Official Government of Punjab tourism website",
+  "scrapedDate": "2026-09-22",
+  "note": "Facts extracted below; prose summaries are written in our own words, not copied verbatim from the source.",
+  "district": "Sangrur",
+  "about": "Former seat of the Jind princely state; also carries the heritage of Nabha, Patiala and Malerkotla states. Birthplace of Shaheed Udham Singh (Sunam). Malwa region.",
+  "places": [
+    { "name": "Banasar Bagh & Deewan Khana Complex", "timings": "Check locally", "entryFee": "Check locally", "location": "Banasar Garden, Sangrur city", "facts": "Summer seat of Jind State rulers; Marble Baradari (12-door pavilion) at its centre; Deewan Khana is Mughal-style, now a museum of Jind-era weapons, manuscripts, paintings." },
+    { "name": "Shahi Samadhan", "timings": "Daylight hours", "entryFee": "Free", "location": "Sangrur city", "facts": "Royal cenotaph complex of Jind State rulers." },
+    { "name": "Gurdwara Sri Nankiana Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Village Mangwal, ~5km from Nabha Gate, Sangrur", "facts": "Visited by Guru Nanak Dev Ji, Guru Hargobind Sahib Ji, Guru Teg Bahadur Sahib Ji; Manji Sahib Patshahi marks where Guru Nanak delivered a sermon." },
+    { "name": "Kali Mata Temple", "timings": "Check locally", "entryFee": "Free", "location": "Sangrur city", "facts": "Temple to Goddess Kali; large Navratri crowds." },
+    { "name": "Clock Tower", "timings": "Visible at all hours", "entryFee": "Not applicable", "location": "Sangrur city", "facts": "Jind princely-era landmark." },
+    { "name": "Bir Aishwan Wildlife Sanctuary", "timings": "Daylight hours", "entryFee": "Check with Punjab Forest Department", "location": "~3km from Sangrur city", "facts": "First protected area in Punjab, established 28 Feb 1952; 264.40 hectares; Nilgai, Jackal, Jungle Cat, Rhesus Macaque." },
+    { "name": "Ancestral House of Shaheed Udham Singh, Sunam", "timings": "Check locally", "entryFee": "Check locally", "location": "Sunam town, ~13km from Sangrur city", "facts": "Birthplace of Udham Singh, who assassinated Michael O'Dyer in 1940 for the Jallianwala Bagh massacre; hanged 31 July 1940. Annual Shaheedi Mela 31 July." },
+    { "name": "Gurdwara Gursagar Sahib, Mastuana Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Mastuana Sahib, 6km west of Sangrur on Sangrur-Barnala Road", "facts": "Established by Sant Attar Singh (born village Cheema); Gur Sagar holy tank; degree college since 1920. Annual Jodh Mela 29-31 January." },
+    { "name": "Gurdwara Shri Akoi Sahib", "timings": "Daylight hours", "entryFee": "Free", "location": "Sangrur district", "facts": "Listed key spiritual site." },
+    { "name": "Ancestral House of Akali Phoola Singh, Dehla Seehan", "timings": "Check locally", "entryFee": "Check locally", "location": "Dehla Seehan, Sangrur district", "facts": "Ancestral village of the celebrated Sikh military commander." },
+    { "name": "Quila Rahamtgarh, Malerkotla", "timings": "Check locally", "entryFee": "Check locally", "location": "Malerkotla", "facts": "Fort in the historic Malerkotla princely territory." },
+    { "name": "Gurdwara Patshahi Chevin, Barnala", "timings": "Daylight hours", "entryFee": "Free", "location": "Barnala", "facts": "Associated with Guru Hargobind Sahib Ji." }
+  ],
+  "howToReach": { "note": "West of Patiala, in the Malwa region." },
+  "visitorInfo": { "bestTimeToVisit": "October to March" }
+}
