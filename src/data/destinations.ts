@@ -664,6 +664,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Govind Devji Temple", distance: "3 km", type: "Spiritual", isHidden: true, id: "govind-devji-temple" },
       { name: "Digamber Jain Mandir (Sanghiji)", distance: "14 km", type: "Spiritual", isHidden: true, id: "sanghiji-jain-temple" },
       { name: "Ishwar Lat (Sargasuli)", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "ishwar-lat" },
+      { name: "Jaipur Wax Museum", distance: "15 km", type: "Culture", isHidden: true, id: "jaipur-wax-museum" },
       { name: "Abhaneri Step Well (Chand Baori)", distance: "95 km", type: "Hidden Gem", isHidden: true, id: "chand-baori-abhaneri" },
       { name: "Samode Village", distance: "42 km", type: "Off-beat Village", isHidden: true },
       { name: "Pushkar", distance: "145 km", type: "Spiritual", isHidden: false, id: "pushkar" },
@@ -24991,6 +24992,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1900,
     mustEat: ["Street snacks in the walled-city bazaars"],
     packingTips: ["Comfortable walking shoes"],
+  },
+
+  {
+    id: "jaipur-wax-museum",
+    name: "Jaipur Wax Museum",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "35+ Wax Figures and a Robotic Tiger Inside Nahargarh Fort",
+    description: "Jaipur Wax Museum, opened in 2016 within Nahargarh Fort, was founded by Anoop Srivastava with the support of the Government of Rajasthan and inaugurated by Bollywood actor Govinda. It houses more than 35 wax and silicon statues spanning Bollywood, sport, freedom fighters, and social activists, alongside historical Jaipur royal figures including Sawai Ram Singh, Maharaja Jai Singh, Madho Singh, and Rajmata Gayatri Devi. A first-of-its-kind animatronic tiger is among its more talked-about exhibits, and the museum is typically visited together with the adjoining Sheesh Mahal (Palace of Mirrors), whose interior is decorated with millions of pieces of inlaid mirror work.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/34/Animatronic_tiger_at_the_Jaipur_Wax_Museum.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/34/Animatronic_tiger_at_the_Jaipur_Wax_Museum.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/3/34/Animatronic_tiger_at_the_Jaipur_Wax_Museum.jpg"],
+    imageCredit: "Photo: Noon Plastic — Wikimedia Commons, CC BY 4.0. Also used on the Wikipedia article for Nahargarh Fort.",
+    category: ["Culture"],
+    bestSeason: "October – February",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:30 PM", note: "Open daily. Combo ticket available with Sheesh Mahal. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "35+ wax and silicon statues, opened 2016" },
+      { name: "Animatronic tiger exhibit" },
+      { name: "Adjoining Sheesh Mahal (Palace of Mirrors)" },
+      { name: "Located within Nahargarh Fort" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Jaipur — long haul", fromMumbai: "Via Jaipur — long haul", fromBangalore: "Via Jaipur — long haul", duration: "Within Nahargarh Fort, ~15 km from Jaipur", costRange: "₹200–₹500 by auto/cab from Jaipur", tips: "Combo tickets with Sheesh Mahal are worthwhile if visiting both." },
+    ],
+    accommodation: [
+      { type: "Base in Jaipur", priceRange: "₹800–₹25,000/night (estimate)", examples: ["Jaipur old-city havelis", "Jaipur heritage and palace hotels"], description: "Visited as part of a Nahargarh Fort trip." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 from Jaipur", notes: "Standard way to reach Nahargarh Fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Reliable from Jaipur city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nahargarh Fort", distance: "Inside the fort complex", type: "Heritage", isHidden: true, id: "nahargarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1700, accommodation: 700, food: 400, transport: 200, activities: 400 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5100, accommodation: 3000, food: 1000, transport: 400, activities: 700 },
+      { tier: "luxury", label: "Royal Experience", perDayPerPerson: 25000, accommodation: 20000, food: 2500, transport: 700, activities: 800 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nahargarh Fort & Wax Museum", morning: "Nahargarh Fort.", afternoon: "Jaipur Wax Museum and Sheesh Mahal.", evening: "Sunset from the fort's viewpoints.", stay: "Jaipur", meals: "Rajasthani thali (₹300–₹500)", tips: "Combo tickets: ₹500 for Indian nationals, ₹700 combo for international travellers (indicative)." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed indoor attraction within the well-visited Nahargarh Fort complex"],
+      precautions: ["Standard museum precautions"],
+      soloTips: ["Comfortable for solo daytime visits given the fort's steady tourist footfall"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Tourist Police Jaipur", number: "0141-2744988" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and fort grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 5400,
+    mustEat: ["Rajasthani thali in Jaipur"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
