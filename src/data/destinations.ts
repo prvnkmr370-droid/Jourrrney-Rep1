@@ -80577,6 +80577,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Caution around the ruined sections"],
   },
 
+  {
+    id: "mughal-sarai-doraha",
+    name: "Mughal Sarai, Doraha",
+    state: "Punjab",
+    tagline: "A Domed Caravanserai on the Grand Trunk Road, Adjoining a Historic Gurdwara",
+    description: "The Mughal Sarai at Doraha, on the Ludhiana-Delhi Road, is one of the best-preserved Mughal-era caravanserais in Punjab, its battlemented walls, octagonal corner bastions and domed towers still substantially intact. Built as a resting place for travelers on the Grand Trunk Road, the enclosure once held around 100 rooms on its four sides, some richly painted, with a section believed to have served as a Hamman (bathhouse). Guru Hargobind Sahib Ji is said to have stayed within the sarai while traveling from Delhi, an event now marked by the adjoining Gurdwara Manji Sahib, Patshahi Chhevin, and a historic Baoli step-well behind it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/74/Doraha_fort_Main_entrance.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/74/Doraha_fort_Main_entrance.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/74/Doraha_fort_Main_entrance.jpg"],
+    imageCredit: "Photo: Sidprabhakar87 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45 minutes – 1 hour",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "9am–5pm, closed Sundays. Free entry. Source: Punjab Tourism (punjabtourism.punjab.gov.in)." },
+    highlights: [
+      { name: "One of the best-preserved Mughal caravanserais in Punjab" },
+      { name: "Octagonal bastions, domed towers and battlemented walls" },
+      { name: "Adjoining Gurdwara Manji Sahib, marking Guru Hargobind Sahib Ji's stay" },
+      { name: "A historic Baoli (step-well) behind the Gurdwara" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ludhiana, then to Doraha on the Ludhiana-Delhi Road", fromMumbai: "Via Ludhiana", fromBangalore: "Via Ludhiana", duration: "~30 km / 45min from Ludhiana", costRange: "₹700–₹1,600 round trip by cab from Ludhiana", tips: "Adjoins Gurdwara Manji Sahib in Doraha town." },
+    ],
+    accommodation: [
+      { type: "Ludhiana City Hotels", priceRange: "₹1,000–₹8,000/night", examples: ["Most visitors day-trip from Ludhiana"], description: "Limited accommodation directly in Doraha." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹700–₹1,600 round trip", notes: "Most practical way to reach the sarai", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sarai Lashkari Khan (RDB Fort)", distance: "Nearby, within Doraha area", type: "Heritage", isHidden: false, id: "sarai-lashkari-khan-ludhiana" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 400, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2500, food: 700, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1200, transport: 1100, activities: 1000 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Doraha Mughal Heritage Trail", morning: "Depart Ludhiana for Doraha.", afternoon: "Visit Mughal Sarai and the adjoining Gurdwara Manji Sahib, then Sarai Lashkari Khan nearby.", evening: "Return to Ludhiana.", stay: "Ludhiana city", meals: "Roadside dhaba food on the GT Road", tips: "Combine with the nearby Sarai Lashkari Khan ('RDB Fort') for a fuller Mughal-heritage stop." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["A protected heritage site adjoining an active Gurdwara"],
+      precautions: ["A rural site with limited facilities — visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors during the day"],
+      emergencyContacts: [
+        { label: "All-in-one Emergency", number: "112" },
+      ],
+      safeZones: ["The sarai and adjoining Gurdwara grounds during daylight hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.2,
+    reviews: 700,
+    mustEat: ["Free langar at the adjoining Gurdwara"],
+    packingTips: ["Comfortable walking shoes"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
