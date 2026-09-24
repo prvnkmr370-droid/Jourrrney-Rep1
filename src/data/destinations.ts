@@ -3393,6 +3393,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Abheda Mahal", distance: "8 km", type: "Heritage", isHidden: true, id: "abheda-mahal" },
       { name: "Chambal River Front", distance: "In city", type: "Heritage", isHidden: true, id: "chambal-river-front-kota" },
       { name: "Kansua Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "kansua-temple" },
+      { name: "Godawari Dham", distance: "In city", type: "Spiritual", isHidden: true, id: "godawari-dham" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3572,6 +3573,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+      { name: "Godawari Dham", distance: "Walking distance", type: "Spiritual", isHidden: true, id: "godawari-dham" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 150 },
@@ -3831,6 +3833,64 @@ export const DESTINATIONS: Destination[] = [
     },
     rating: 4.3,
     reviews: 1100,
+    mustEat: ["Rajasthani thali (in central Kota)"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "godawari-dham",
+    name: "Godawari Dham",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A White-Marble Hanuman Shrine Beside the Chambal",
+    description: "Godawari Dham is a Hanuman temple built entirely of white marble, standing beside the Chambal River within walking distance of Chambal Garden. Its towers rise high above the surrounding riverside area, and a large marble swan sits atop the entrance gate — a distinctive detail that makes the temple easy to spot even from a distance.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Godavari_SUNDERKAND.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Godavari_SUNDERKAND.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/eb/Godavari_SUNDERKAND.jpg"],
+    imageCredit: "Photo: Bornleeo/Sunilmehra — Wikimedia Commons, public domain. Same image used on Afrikaans, Esperanto, Hungarian, Limburgish, Min Nan, Hebrew Wikivoyage, and Polish Wikivoyage's Kota articles.",
+    category: ["Spiritual"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "White-marble Hanuman temple" },
+      { name: "Beside the Chambal River, near Chambal Garden" },
+      { name: "Tall towers and a large marble swan atop the entrance gate" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Chambal Garden Road, Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Easily combined with a Chambal Garden visit given the walking distance between them." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a short stop combined with Chambal Garden." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Walking distance from Chambal Garden", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+      { name: "Chambal Garden", distance: "Walking distance", type: "Nature", isHidden: true, id: "chambal-garden-kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Riverside Temples and Gardens", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Chambal Garden and the nearby Godawari Dham temple.", evening: "Chambal River Front at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Combine with Chambal Garden — the two are within walking distance of each other." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Near the well-visited Chambal Garden area with regular daytime foot traffic"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Comfortable for solo daytime visits, especially combined with a Chambal Garden trip"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime temple visit"],
+    },
+    rating: 4.2,
+    reviews: 900,
     mustEat: ["Rajasthani thali (in central Kota)"],
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
