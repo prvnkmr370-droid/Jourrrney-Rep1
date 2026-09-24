@@ -2112,6 +2112,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Rana Kumbha Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
       { name: "Kalika Mata Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "kalika-mata-temple-chittorgarh" },
       { name: "Fateh Prakash Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "fateh-prakash-palace-chittorgarh" },
+      { name: "Satbees Deori Jain Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "satbees-deori-jain-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2613,6 +2614,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3900,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Camera for the lake reflection shot", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "satbees-deori-jain-temple",
+    name: "Satbees Deori Jain Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sattaees Devari"],
+    tagline: "27 Deities and 163 Stone Pillars Inside a Single Jain Temple Complex",
+    description: "Satbees Deori, positioned just inside the Tripolia gate opposite Rana Kumbha Palace, is one of Chittorgarh Fort's most elaborately carved Jain temple complexes — named for the 27 deities enshrined within it. The main shrine, oriented west and centred on an idol of Mulnayak Adinath Bhagwan, is surrounded by a corridor of devakulikas holding a total of 47 stone sculptures across 163 stone pillars. Two further east-facing temples stand behind the main shrine, including a Parshvanath temple believed to date to 1448 AD, their outer walls carrying genuinely remarkable sculptural detail comparable to the more famous complexes at Ranakpur and Mount Abu's Dilwara temples.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sattaees_Devari%2C_chittorgarh_fort%2C_district_-_chittorgarh_Rajasthan_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sattaees_Devari%2C_chittorgarh_fort%2C_district_-_chittorgarh_Rajasthan_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7a/Sattaees_Devari%2C_chittorgarh_fort%2C_district_-_chittorgarh_Rajasthan_India.jpg"],
+    imageCredit: "Photo: Avikhakhal — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates confirm Chittorgarh Fort; categorized under Jain temples at Chittorgarh Fort.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex, just inside the Tripolia gate. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Named for 27 enshrined deities" },
+      { name: "163 stone pillars, 47 stone sculptures" },
+      { name: "Mulnayak Adinath Bhagwan idol in the main shrine" },
+      { name: "Comparable craftsmanship to Ranakpur and Mount Abu" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort, opposite Rana Kumbha Palace", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "Its unassuming main gate hides real scale inside — don't rush past it." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Rana Kumbha Palace", distance: "Opposite, in fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Jain Heritage", morning: "Rana Kumbha Palace, then Satbees Deori Jain Temple opposite it.", afternoon: "Kirti Stambh and the fort's other Jain temples.", evening: "Vijay Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "Look closely at the pillar carvings — the sheer density of sculptural work (163 pillars) rewards a slow walk-through." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A steadily-visited temple complex with regular daytime tourist traffic"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Comfortable for solo visits given the fort's steady daytime tourist flow"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during visiting hours"],
+      avoidAreas: ["None specific — a well-visited, patrolled monument"],
+    },
+    rating: 4.6,
+    reviews: 1400,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Modest clothing", "Water bottle", "Sun protection"],
   },
 
   {
