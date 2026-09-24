@@ -1,0 +1,24 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/bharatpur.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-24",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Bharatpur",
+  "about": "History dates to the 5th century BC Matsya kingdom, allies of the Pandavas in the Mahabharata. Legend ties the name Bharatpur to Bharat, younger brother of Lord Ram; Laxman was made family deity of the ruling house. In the early 18th century, Maharaja Suraj Mal captured the fort by defeating rival chieftain Khemkaran and founded Bharatpur, later building numerous forts and palaces including the Deeg Pleasure Palace Complex.",
+  "places": [
+    { "name": "Bharatpur Palace and Museum", "location": "Bharatpur", "facts": "Includes Kamra Khas museum with 581+ stone sculptures, 861+ local art/craft pieces, and ancient scriptures; palace built in stages, blending Mughal and Rajput architecture; richly patterned floor tiles in the various apartments." },
+    { "name": "Ganga Mandir", "location": "Central Bharatpur", "facts": "One of Rajasthan's most beautiful temples; white marble Ganga Maharaj deity; construction started mid-19th century by Maharaja Balwant Singh, who required affluent city residents to donate one month's pay toward it." },
+    { "name": "Laxman Mandir", "location": "Bharatpur", "facts": "Dedicated to Laxman, brother of Lord Rama; typical Rajasthani architecture with pink stonework; intricate carvings of flowers and birds on doorways, ceilings, pillars, walls, arches." },
+    { "name": "Keoladeo Ghana National Park", "location": "5 km SE of Bharatpur", "facts": "Created mid-18th century as a small reservoir; Ajan Bund dam flooded a natural depression to form the wetland; UNESCO World Heritage Site; one of the world's richest bird areas, historically host to the Siberian crane; migratory waterfowl like green sandpiper and cranes visit in winter." },
+    { "name": "Lohagarh Fort", "location": "Bharatpur", "facts": "Withstood many British attacks, eventually captured by Arthur Wellesley; not flamboyant but radiates rugged strength; surrounded by a water-filled moat; interior monuments include Kothi Khas, Mahal Khas, Moti Mahal, Kishori Mahal; Raja Suraj Mal built Jawahar Burj and Fateh Burj to commemorate victories over the Mughals and British." },
+    { "name": "Deeg", "location": "North of Bharatpur", "facts": "Garden town with embellished palaces, forts, gardens, fountains; fort built by Raja Suraj Mal on a slightly elevated point, surrounded by moats and gateways; interiors largely in ruins but the watchtower with a gun still overlooks the city." },
+    { "name": "Band Baretha", "location": "Near Bharatpur", "facts": "Old royal wildlife reserve, now under the Forest Department; Kakund River dam construction started 1866 by Maharaj Jaswant Singh, completed 1897 by Maharaj Ram Singh; palace inside built by Maharaj Kishan Singh, still private royal-family property; over 200 bird species including the elusive Black Bittern." },
+    { "name": "Kaman (Kamaban)", "location": "North of Bharatpur", "facts": "Part of the Brij region where Krishna spent his early years; major pilgrimage site, especially during the Bhadhva-month Banyatara visited by Vaishnavs; ruins of the 84-pillared Chaurasi Khamba temple/mosque are the main attraction." }
+  ],
+  "howToReach": {
+    "air": "Nearest airport is Agra, ~56 km away",
+    "rail": "On the Delhi-Mumbai broad-gauge line; well connected to Sawai Madhopur, Kota, and Agra",
+    "road": "Bus network links Bharatpur to cities within and outside Rajasthan"
+  },
+  "nearbyDistances": { "Alwar": "103 km", "Jaipur": "185 km", "Ajmer": "318 km" }
+}

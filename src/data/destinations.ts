@@ -3420,7 +3420,7 @@ export const DESTINATIONS: Destination[] = [
     bestSeason: "October – February (peak migratory bird season)",
     duration: "1–2 days",
     visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open daily; earlier entry for birdwatchers is genuinely worthwhile." },
-    highlights: [{ name: "Keoladeo National Park (UNESCO)" }, { name: "Winter migratory birds — storks, cranes, and rare species" }, { name: "Lohagarh Fort" }, { name: "Cycle-rickshaw birdwatching tours inside the park" }, { name: "Bharatpur Palace Museum" }],
+    highlights: [{ name: "Keoladeo National Park (UNESCO)" }, { name: "Winter migratory birds — storks, cranes, and rare species" }, { name: "Lohagarh Fort", id: "lohagarh-fort" }, { name: "Cycle-rickshaw birdwatching tours inside the park" }, { name: "Bharatpur Palace Museum" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Golden Temple Mail and others — ~2.5–3h", fromMumbai: "~16–17h", fromBangalore: "Via Delhi — 24h+", duration: "~2.5–3h from Delhi", costRange: "₹150–₹900", tips: "Bharatpur Junction is on the main Delhi–Mumbai line, making it an easy add-on to an Agra/Delhi trip." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH19/NH21 — 4–5h", fromMumbai: "Via Kota — 16–18h", fromBangalore: "—", duration: "~4–5h from Delhi; ~1h from Agra", costRange: "₹2,000–₹4,000 cab / ₹300–₹500 bus", tips: "Bharatpur is often combined with an Agra–Jaipur route as an easy stopover." },
@@ -3466,6 +3466,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 9200,
     mustEat: ["Dal Baati Churma", "Bharatpuri Peda (local sweet)", "Rajasthani thali", "Kachori", "Lassi"],
     packingTips: ["Binoculars — essential for the park", "Neutral clothing colours for birdwatching", "Insect repellent", "Comfortable shoes for the cycle-rickshaw/walking circuit", "Sun hat — little shade in open wetland areas"],
+  },
+
+  {
+    id: "lohagarh-fort",
+    name: "Lohagarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Bharatpur Fort", "Iron Fort"],
+    tagline: "The 'Iron Fort' That Repelled Every Siege Against It",
+    description: "Lohagarh Fort — the 'Iron Fort' — earned its name through genuine resilience: it withstood repeated British sieges before finally being captured under Arthur Wellesley, later the Duke of Wellington. Rather than flamboyant, the fort radiates a rugged, unpolished strength, encircled by a water-filled moat that once kept enemies out. Inside, monuments including Kothi Khas, Mahal Khas, Moti Mahal, and Kishori Mahal reflect its role as both fortress and royal residence, while Raja Suraj Mal's Jawahar Burj and Fateh Burj commemorate his victories over the Mughals and the British respectively.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/BHARATPUR_FORT.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6d/BHARATPUR_FORT.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/6d/BHARATPUR_FORT.jpg"],
+    imageCredit: "Photo: Sudhir Upadhyay Ji — Wikimedia Commons, CC BY-SA 4.0. Structured data confirms \"depicts: Lohagarh Fort\"; used on English Wikipedia's List of Monuments of National Importance in Rajasthan.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Withstood repeated British sieges" },
+      { name: "Encircled by a water-filled moat" },
+      { name: "Kothi Khas, Mahal Khas, Moti Mahal, Kishori Mahal" },
+      { name: "Jawahar Burj and Fateh Burj, built by Raja Suraj Mal" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bharatpur — long haul", fromMumbai: "Via Bharatpur — long haul", fromBangalore: "Via Bharatpur — long haul", duration: "Central Bharatpur", costRange: "₹40–₹150 by auto within Bharatpur", tips: "Easily combined with the Bharatpur Palace Museum, housed within the same fort complex." },
+    ],
+    accommodation: [
+      { type: "Base in Bharatpur", priceRange: "₹700–₹25,000/night (estimate)", examples: ["Hotels near Keoladeo National Park entrance"], description: "Most visitors base themselves near the park and visit the fort as a half-day add-on." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Bharatpur", notes: "Standard for getting around town", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹50–₹150", notes: "A relaxed way to reach the fort from central Bharatpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bharatpur", distance: "In city", type: "City", isHidden: false, id: "bharatpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1600, food: 550, transport: 300, activities: 350 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7500, accommodation: 5500, food: 1200, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bharatpur's Fort and Birds", morning: "Lohagarh Fort — the moat, gateways, and Jawahar Burj.", afternoon: "Bharatpur Palace Museum within the same complex.", evening: "Keoladeo National Park for evening birdwatching.", stay: "Bharatpur, near the park entrance", meals: "Rajasthani thali (₹180)", tips: "Combine the fort and museum in one visit since they share the same complex." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised, ASI-protected heritage site with regular daytime visitor traffic", "Central location within Bharatpur town"],
+      precautions: ["Standard heritage-site caution", "Agree auto/rickshaw fares upfront"],
+      soloTips: ["Comfortable for solo daytime visits given the fort's central location and steady footfall"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bharatpur Police Control Room", number: "05644-223364" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.4,
+    reviews: 3200,
+    mustEat: ["Rajasthani thali", "Bharatpuri Peda (local sweet)"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera for the moat and gateway views"],
   },
 
   {
