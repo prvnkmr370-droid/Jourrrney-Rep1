@@ -3956,6 +3956,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaipur", distance: "150 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Moosi Maharani Ki Chhatri", distance: "In city", type: "Heritage", isHidden: true, id: "moosi-maharani-chhatri" },
       { name: "Fateh Jung Gumbad", distance: "In city", type: "Heritage", isHidden: true, id: "fateh-jung-gumbad" },
+      { name: "Tijara Jain Temple", distance: "~60 km", type: "Spiritual", isHidden: true, id: "tijara-jain-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4218,6 +4219,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1200,
     mustEat: ["Station-area food stalls", "Alwar ka Mawa"],
     packingTips: ["Nothing specific — a quick stop rather than a dedicated visit"],
+  },
+
+  {
+    id: "tijara-jain-temple",
+    name: "Tijara Jain Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Chandraprabhu Jain Temple, Tijara"],
+    tagline: "An Ornate Pilgrimage Temple Dedicated to the Eighth Tirthankar",
+    description: "Tijara Jain Temple, roughly 60 km from Alwar on the Alwar-Delhi route, is an important centre of Jain pilgrimage, its exquisitely decorated structure built to commemorate Shri Chandra Prabha Bhagwan, the eighth Tirthankar. Son of King Mahasen and Queen Sulakshana, he ruled his kingdom for years before taking Diksha, and after serving mankind further, meditated for a month before attaining Nirvana. The temple's arched, pillared courtyards and richly painted interior make it a genuine destination in its own right rather than a passing stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/71/Tijara_Jain_Temple_-_Main.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/71/Tijara_Jain_Temple_-_Main.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/71/Tijara_Jain_Temple_-_Main.jpg"],
+    imageCredit: "Photo: Pratyk321 — Wikimedia Commons, CC BY-SA 4.0. Same image used on Gujarati Wikipedia's ચંદ્રપ્રભ, Malay Wikipedia's Tijara, and Tamil Wikipedia's சந்திரபிரபா articles.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Dedicated to Shri Chandra Prabha Bhagwan, 8th Tirthankar" },
+      { name: "Major Jain pilgrimage centre" },
+      { name: "Arched, pillared courtyards" },
+      { name: "Richly painted interior" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Tijara town, ~60 km from Alwar on the Alwar-Delhi route", costRange: "₹1,000–₹2,000 by taxi round trip from Alwar", tips: "Combine with the Lal Masjid in Tijara, a short distance away, for a fuller day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "Most visitors see Tijara as a day trip from Alwar." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹1,000–₹2,000 from Alwar", notes: "Standard way to reach Tijara", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "~60 km", type: "City", isHidden: false, id: "alwar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 400, food: 250, transport: 300, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1500, food: 600, transport: 800, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 8200, accommodation: 5000, food: 1200, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tijara Day Trip", morning: "Depart Alwar for Tijara.", afternoon: "Tijara Jain Temple, then the nearby Lal Masjid.", evening: "Return to Alwar.", stay: "Alwar town", meals: "Local dhaba lunch in Tijara (₹150–₹300)", tips: "The temple is a genuine pilgrimage site — dress modestly and be mindful of ongoing worship." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-established Jain pilgrimage site with steady visitor traffic"],
+      precautions: ["Dress modestly, as at any active place of worship", "Agree taxi fares upfront for the trip out from Alwar"],
+      soloTips: ["Very manageable solo given the steady flow of pilgrims and visitors"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple complex during opening hours"],
+      avoidAreas: ["None specific — a standard daytime pilgrimage-site visit"],
+    },
+    rating: 4.6,
+    reviews: 3400,
+    mustEat: ["Local dhaba food in Tijara", "Alwar ka Mawa back in Alwar"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Cash for offerings"],
   },
 
   {
