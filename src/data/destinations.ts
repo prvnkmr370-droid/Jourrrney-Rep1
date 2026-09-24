@@ -3436,7 +3436,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "1 day",
-    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti" }, { name: "Ana Sagar Lake & its Baradari pavilions" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)" }, { name: "Taragarh Fort, Ajmer" }, { name: "Ajmer's old-city bazaars" }],
+    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti", id: "ajmer-sharif-dargah" }, { name: "Ana Sagar Lake & its Baradari pavilions", id: "ana-sagar-lake" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)" }, { name: "Taragarh Fort, Ajmer" }, { name: "Ajmer's old-city bazaars" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Ajmer Shatabdi — ~6.5–7h", fromMumbai: "Via Jaipur/Ahmedabad — ~15–16h", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~6.5–7h from Delhi", costRange: "₹300–₹1,600", tips: "Ajmer Junction is a major railway hub, genuinely well-connected across the country." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 7–8h", fromMumbai: "NH48 — 15–16h", fromBangalore: "—", duration: "~7–8h from Delhi; ~2.5h from Jaipur", costRange: "₹2,500–₹5,000 cab / ₹300–₹500 bus", tips: "Well-connected by highway, especially from Jaipur." },
@@ -3457,6 +3457,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Pushkar", distance: "15 km", type: "Spiritual", isHidden: false, id: "pushkar" },
       { name: "Kishangarh (Phad painting & marble trade town)", distance: "27 km", type: "Culture", isHidden: true, id: "kishangarh" },
       { name: "Jaipur", distance: "130 km", type: "Heritage", isHidden: false, id: "jaipur" },
+      { name: "Ajmer Sharif Dargah", distance: "In city", type: "Spiritual", isHidden: true, id: "ajmer-sharif-dargah" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3480,6 +3481,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 14800,
     mustEat: ["Sohan Halwa (Ajmer's famous sweet)", "Nihari at Dargah Bazar food stalls", "Kebabs (a real local specialty near the Dargah)", "Rajasthani thali", "Kulfi"],
     packingTips: ["Modest clothing (shoulders/legs covered) — essential near the Dargah", "A head covering (scarf/cap) for visiting the shrine", "Comfortable shoes for the old-city lanes", "Cash for offerings and food stalls", "Patience and respect for an active, crowded religious site"],
+  },
+
+  {
+    id: "ajmer-sharif-dargah",
+    name: "Ajmer Sharif Dargah",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Dargah of Khwaja Moinuddin Chishti"],
+    tagline: "The Resting Place of Garib Nawaz, One of Sufism's Most Revered Saints",
+    description: "Ajmer Sharif Dargah, built in the 13th century, holds the maqbara (tomb) of the Sufi saint Khwaja Moinuddin Hasan Chishti, popularly known as Garib Nawaz ('benefactor of the poor'). Revered equally by Hindus and Muslims, the shrine draws pilgrims from across the world, with the annual Urs festival — commemorating the saint's death anniversary — transforming the complex into one of the subcontinent's largest religious gatherings. The dargah is entered through three gates: the main Nizam Gate, the Shah Jahan Gate built by the Mughal emperor, and the Buland Darwaza, and devotees are blessed with prasad cooked in giant cauldrons known as degs, a distinctive tradition unique to this shrine.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Gumbad_E_Ajmer_Sharif.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/56/Gumbad_E_Ajmer_Sharif.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/56/Gumbad_E_Ajmer_Sharif.jpg"],
+    imageCredit: "Photo: Zuck28 — Wikimedia Commons, CC BY 4.0. Same image used on Simple Wikipedia's National symbols of India article.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Especially crowded during the annual Urs festival. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 13th century, tomb of Khwaja Moinuddin Hasan Chishti" },
+      { name: "Three gates: Nizam Gate, Shah Jahan Gate, Buland Darwaza" },
+      { name: "Prasad cooked in giant degs (cauldrons)" },
+      { name: "Annual Urs festival, one of the subcontinent's largest religious gatherings" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Central Ajmer, Dargah Bazar area", costRange: "₹30–₹150 by auto within Ajmer", tips: "Offering a chadar (ceremonial cloth) is a genuine local custom — vendors near the entrance sell them." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Budget hotels geared toward pilgrims near the Dargah"], description: "Many hotels in Ajmer cater specifically to Dargah pilgrims." },
+    ],
+    localTransport: [
+      { mode: "Cycle Rickshaw", cost: "₹20–₹80", notes: "Common in the Dargah Bazar area", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹150 within Ajmer", notes: "Standard for getting around the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 950, accommodation: 400, food: 250, transport: 100, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1500, food: 550, transport: 300, activities: 550 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7100, accommodation: 5000, food: 1200, transport: 400, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dargah & Old City", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Adhai Din Ka Jhonpra, a short walk from the Dargah.", evening: "Ana Sagar Lake and its Baradari pavilions at sunset.", stay: "City hotel", meals: "Dargah-area food stalls (₹100–₹250)", tips: "Cover your head and dress modestly — this is an active, deeply revered religious site." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, well-established pilgrimage site with visible security given its national religious significance"],
+      precautions: ["Dress conservatively", "The Dargah Bazar area can get very crowded, especially during the Urs festival — keep valuables secure"],
+      soloTips: ["Very manageable solo given the steady flow of pilgrims and visitors year-round"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Dargah Police Station", number: "0145-2632705" }, { label: "Police", number: "100" }],
+      safeZones: ["The Dargah Sharif complex"],
+      avoidAreas: ["Very dense festival-crowd areas if crowds make you uncomfortable"],
+    },
+    rating: 4.7,
+    reviews: 21300,
+    mustEat: ["Sohan Halwa", "Nihari at Dargah Bazar food stalls", "Kebabs near the Dargah"],
+    packingTips: ["Modest clothing (shoulders/legs covered)", "A head covering (scarf/cap)", "Cash for offerings and food stalls"],
   },
 
   {

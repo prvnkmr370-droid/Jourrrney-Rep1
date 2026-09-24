@@ -1,0 +1,32 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/ajmer.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-24",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Ajmer",
+  "about": "Founded 7th century AD by Raja Ajaypal Chauhan; name from 'Ajay Meru' ('invincible hill'). Epicentre of the Chauhan dynasty until Prithviraj Chauhan's defeat by Mohammed Ghori. Only region in Rajputana directly controlled by British East India Company. Site of first meeting (1616) between Mughal Emperor Jahangir and Sir Thomas Roe, ambassador of King James I of England.",
+  "places": [
+    { "name": "Ajmer Sharif Dargah", "location": "Central Ajmer", "facts": "13th-century Sufi shrine, tomb (maqbara) of Khwaja Moinuddin Hasan Chishty (Garib Nawaz); revered by Hindus and Muslims alike; three gates — Nizam Gate, Shah Jahan Gate, Buland Darwaza; prasad cooked in giant cauldrons (degs) distributed to devotees." },
+    { "name": "Adhai Din Ka Jhonpda", "location": "Ajmer", "facts": "Originally a Sanskrit college, converted to a mosque by Sultan Qutb-ud-din Aibak/Ghori in 1198 AD, expanded by Sultan Iltutmish in 1213 AD; Indo-Islamic architecture; name ('Hut of Two and a Half Days') tied to legend of a 2.5-day Urs of Panjab Shah Baba held here in the 18th-century Maratha period." },
+    { "name": "Mayo College", "location": "Ajmer", "facts": "Founded 1875, named after Richard Bourke, 6th Earl of Mayo; modeled on Britain's Eton College for India's princely families; Coat of Arms (Rajput and Bhil warrior) designed by John Lockwood Kipling (father of Rudyard Kipling), college principal; Indo-Saracenic architecture." },
+    { "name": "Ana Sagar Lake", "location": "Ajmer", "facts": "Artificial lake built 1135-1150 AD by Arnoraj Chauhan (also called Anaji), son of Ajaypal Chauhan; Mughal Emperor Jahangir added the Daulat Bagh Gardens; Shah Jahan added five pavilions (Baradari) between garden and lake." },
+    { "name": "Soniji Ki Nasiyan (Ajmer Jain Temple)", "location": "Ajmer", "facts": "Dedicated to Rishabhdev/Adinath; late 19th century construction; red-stone entrance, marble staircase carved with Tirthankar images; main chamber 'Swarna Nagari' (City of Gold) with gold-plated wooden figures; featured in Kurt Titze's book 'Jainism: A Pictorial Guide to the Religion of Non-Violence'; among India's richest temples." },
+    { "name": "Lake Foy Sagar", "location": "Ajmer", "facts": "Artificial lake built 1892 by English engineer Mr. Foy, as a famine-relief employment project; scenic Aravalli range views." },
+    { "name": "Nareli Jain Temple (Shri Gyandoaya Tirth Kshetra)", "location": "Outskirts of Ajmer, NH to Jaipur", "facts": "Modern temple blending traditional and contemporary architecture; 24 miniature 'Jainalay' temples representing the Jain Tirthankars; important Digambara Jain pilgrimage site." },
+    { "name": "Sai Baba Temple", "location": "Ajay Nagar, Ajmer", "facts": "Built 1999 by Suresh K Lal, resident of Garib Nawaz City; over 5 bighas (~2 acres); built with translucent pure marble." },
+    { "name": "Ajmer Government Museum", "location": "Ajmer", "facts": "Archaeological artefacts, stone sculptures, inscriptions, armour." },
+    { "name": "Taragarh Fort", "location": "Hilltop, Ajmer", "facts": "Built by Raja Ajaipal Chauhan; India's first hill fort; main gate has two large bastions with elephant sculptures; water reservoirs; Bhim Burj bastion held the cannon 'Garbh Gunjam' ('Thunder from the Womb'); also houses the Dargah of Hazrat Miran Sayyed Husain Khangswar (Miran Sahib)." },
+    { "name": "Kishangarh Fort", "location": "Kishangarh, Ajmer district", "facts": "Jails, granaries, armouries; Durbar Hall (main official meeting hall); Phool Mahal with Rathore-clan murals and frescos; adjacent Gundu Lav Talab and Hamir Sagar lakes; nearby Nimbark Peeth, Chor Baori at Salemabad (20km), Roopangarh (25km)." },
+    { "name": "Pragya Shikhar, Todgarh", "location": "Todgarh village, Aravallis", "facts": "Built 2005 by the Jain community in memory of Acharya Tulsi; entirely black granite; inaugurated by Dr. APJ Abdul Kalam; built by an NGO." },
+    { "name": "Victoria (Jubilee) Clock Tower", "location": "Opposite Ajmer railway station", "facts": "Built 1887; British colonial architecture, likened to a smaller Big Ben." },
+    { "name": "Prithvi Raj Smarak", "location": "Hilltop, Ajmer", "facts": "Memorial to Prithviraj Chauhan III, last Chauhan ruler of Ajmer and Delhi (12th century); black-stone equestrian statue with one hoof raised; hilltop location with panoramic Aravalli views; adjacent garden." },
+    { "name": "Anasagar Baradari", "location": "South-eastern embankment of Ana Sagar Lake", "facts": "White marble pavilions, part of Shah Jahan and Jahangir's Daulat Bagh pleasure garden; used as British-era offices; now restored, includes a royal hamam (bath)." },
+    { "name": "Shahid Smarak, Ajmer", "location": "In front of Ajmer railway station", "facts": "War/martyrs memorial; site of local commemorative gatherings; decorated with lights and fountains." }
+  ],
+  "howToReach": {
+    "air": "Kishangarh Airport, ~30 km from Ajmer (~39 min drive)",
+    "rail": "On the Delhi-Jaipur-Marwar-Ahmedabad-Mumbai line; most trains on this route halt at Ajmer",
+    "road": "Regular government and private buses from Jaipur; less-frequent coach service from Delhi"
+  },
+  "nearbyDistances": { "Jodhpur": "207 km", "Pushkar": "17 km", "Jaipur": "132 km" }
+}
