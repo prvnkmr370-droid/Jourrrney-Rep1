@@ -3957,6 +3957,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Moosi Maharani Ki Chhatri", distance: "In city", type: "Heritage", isHidden: true, id: "moosi-maharani-chhatri" },
       { name: "Fateh Jung Gumbad", distance: "In city", type: "Heritage", isHidden: true, id: "fateh-jung-gumbad" },
       { name: "Tijara Jain Temple", distance: "~60 km", type: "Spiritual", isHidden: true, id: "tijara-jain-temple" },
+      { name: "Government Museum, Alwar", distance: "In city", type: "Heritage", isHidden: true, id: "alwar-government-museum" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4278,6 +4279,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3400,
     mustEat: ["Local dhaba food in Tijara", "Alwar ka Mawa back in Alwar"],
     packingTips: ["Modest clothing", "Comfortable walking shoes", "Cash for offerings"],
+  },
+
+  {
+    id: "alwar-government-museum",
+    name: "Government Museum, Alwar",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "Rajput-Court Manuscripts, Ragamala Paintings, and Royal Armoury",
+    description: "The Government Museum, within the City Palace complex, is a genuine draw for anyone curious about the opulent life of Alwar's Maharajas. Spread across three large halls, its holdings include rare manuscripts — among them one depicting Emperor Babur's life — alongside Ragamala paintings and miniatures from the distinctive Alwar Kalam school of Rajasthani art, and an extensive display of armoury from the princely state's court.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/55/Maharaja_Raoraja_Pratap_Singh%2C_founder_of_Alwar_State%2C_circa_19th_century_CE_Description_Equestrian_portrait_of_Alwar_Kalam%2C_Rajasthani_School_of_Art_housed_in_Government_Museum%2C_Alwar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/55/Maharaja_Raoraja_Pratap_Singh%2C_founder_of_Alwar_State%2C_circa_19th_century_CE_Description_Equestrian_portrait_of_Alwar_Kalam%2C_Rajasthani_School_of_Art_housed_in_Government_Museum%2C_Alwar.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/55/Maharaja_Raoraja_Pratap_Singh%2C_founder_of_Alwar_State%2C_circa_19th_century_CE_Description_Equestrian_portrait_of_Alwar_Kalam%2C_Rajasthani_School_of_Art_housed_in_Government_Museum%2C_Alwar.jpg"],
+    imageCredit: "Photo: SpeakingArch — Wikimedia Commons, CC BY-SA 4.0. A 19th-century equestrian portrait of Maharaja Raoraja Pratap Singh, founder of Alwar State, from the museum's own Alwar Kalam collection.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "9:45 AM", closes: "4:45 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Rare manuscripts, including one on Emperor Babur's life" },
+      { name: "Ragamala paintings and Alwar Kalam miniatures" },
+      { name: "Extensive royal armoury display" },
+      { name: "Housed within the City Palace, across three halls" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Within the City Palace complex, central Alwar", costRange: "₹40–₹150 by auto within Alwar", tips: "Easily combined with a City Palace visit since they share the same complex." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "Best visited as a short stop from central Alwar." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Alwar", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Within the City Palace complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+      { name: "Alwar City Palace", distance: "Same complex", type: "Heritage", isHidden: true, id: "alwar-city-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar's Royal Quarter", morning: "Bala Qila.", afternoon: "Alwar City Palace and the Government Museum within its grounds.", evening: "Moosi Maharani Ki Chhatri at sunset.", stay: "Alwar town", meals: "Rajasthani thali (₹180)", tips: "The Alwar Kalam miniature collection is a genuine regional-art highlight — worth real time rather than a rushed walk-through." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-visited City Palace complex", "A staffed museum with regular daytime visitor traffic"],
+      precautions: ["Standard museum-visit caution"],
+      soloTips: ["Comfortable for solo daytime visits given the museum's central, well-trafficked location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum halls during opening hours"],
+      avoidAreas: ["None specific — a standard daytime museum visit"],
+    },
+    rating: 4.3,
+    reviews: 1600,
+    mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Cash for entry tickets"],
   },
 
   {
