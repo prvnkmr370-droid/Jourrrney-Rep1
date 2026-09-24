@@ -4558,9 +4558,10 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Bundi — an auto rickshaw is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Kota (Chambal riverfront, Kota Barrage)", distance: "35 km", type: "Heritage", isHidden: true },
+      { name: "Kota (Chambal riverfront, Kota Barrage)", distance: "35 km", type: "Heritage", isHidden: false, id: "kota" },
       { name: "Jaipur", distance: "210 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Chittorgarh Fort", distance: "165 km", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Sukh Mahal", distance: "In city", type: "Heritage", isHidden: true, id: "sukh-mahal-bundi" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -4825,6 +4826,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1300,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Camera for the pillar carvings"],
+  },
+
+  {
+    id: "sukh-mahal-bundi",
+    name: "Sukh Mahal",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sukh Niwas Palace"],
+    tagline: "The Lakeside Summer Retreat Where Kipling Reportedly Wrote 'Kim'",
+    description: "Sukh Mahal is a small, two-storied summer-retreat palace on the bank of Jait Sagar lake, once used by the Maharajas of Bundi State as the scene of festival processions and quiet lakeside escape from the summer heat. It's popularly credited as the place where Rudyard Kipling stayed and found inspiration for his novel 'Kim,' and part of a film adaptation of the book was even shot here — a genuine literary landmark as much as a royal retreat.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sukh_Niwas_Palace%2C_Bundi%2C_circa_1900.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sukh_Niwas_Palace%2C_Bundi%2C_circa_1900.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/c3/Sukh_Niwas_Palace%2C_Bundi%2C_circa_1900.jpg"],
+    imageCredit: "Photo: Gunpatrao Abajee Kale, circa 1900 — Wikimedia Commons, public domain in India. A historic archival photograph, used on English Wikipedia's Rudyard Kipling, Sukh Mahal, and Bundi State articles and Urdu Wikipedia's سکھ محل article.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Small two-storied summer-retreat palace" },
+      { name: "On the bank of Jait Sagar lake" },
+      { name: "Reputed site where Kipling wrote 'Kim'" },
+      { name: "Used for royal festival processions" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "On Jait Sagar lake, Bundi", costRange: "₹40–₹150 by auto within Bundi", tips: "Combine with a walk or boat ride along Jait Sagar for the fullest lakeside experience." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "A short trip from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Standard for getting around Bundi", available: true },
+      { mode: "Walking", cost: "Free", notes: "A pleasant lakeside walk from the old town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Lakeside Heritage", morning: "Garh Palace and Taragarh Fort.", afternoon: "Sukh Mahal on Jait Sagar, then a lakeside walk.", evening: "Nawal Sagar lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "Fans of Kipling's 'Kim' will find real added meaning in visiting the lake he reportedly drew inspiration from." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site with regular daytime visitor traffic", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Standard caution around the lakeside edge"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds and lakeside promenade during daylight"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.3,
+    reviews: 1100,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera for the lakeside views"],
   },
 
   {
