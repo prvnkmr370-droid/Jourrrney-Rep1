@@ -3436,7 +3436,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "1 day",
-    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti", id: "ajmer-sharif-dargah" }, { name: "Ana Sagar Lake & its Baradari pavilions", id: "ana-sagar-lake" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)", id: "adhai-din-ka-jhonpra" }, { name: "Taragarh Fort, Ajmer" }, { name: "Ajmer's old-city bazaars" }],
+    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti", id: "ajmer-sharif-dargah" }, { name: "Ana Sagar Lake & its Baradari pavilions", id: "ana-sagar-lake" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)", id: "adhai-din-ka-jhonpra" }, { name: "Taragarh Fort, Ajmer", id: "taragarh-fort-ajmer" }, { name: "Ajmer's old-city bazaars" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Ajmer Shatabdi — ~6.5–7h", fromMumbai: "Via Jaipur/Ahmedabad — ~15–16h", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~6.5–7h from Delhi", costRange: "₹300–₹1,600", tips: "Ajmer Junction is a major railway hub, genuinely well-connected across the country." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 7–8h", fromMumbai: "NH48 — 15–16h", fromBangalore: "—", duration: "~7–8h from Delhi; ~2.5h from Jaipur", costRange: "₹2,500–₹5,000 cab / ₹300–₹500 bus", tips: "Well-connected by highway, especially from Jaipur." },
@@ -3779,6 +3779,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2800,
     mustEat: ["Sohan Halwa (in central Ajmer)"],
     packingTips: ["Light jacket for evening lake breeze", "Camera for the sunset views"],
+  },
+
+  {
+    id: "taragarh-fort-ajmer",
+    name: "Taragarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Taragarh Fort, Ajmer"],
+    tagline: "India's First Hill Fort, with Elephant-Guarded Gates and Panoramic Views",
+    description: "Taragarh Fort, built by Raja Ajaipal Chauhan, is regarded as India's first hill fort. Its main gate is flanked by two large bastions carved with elephant sculptures, and the fort complex includes ancient water reservoirs built to sustain a hilltop garrison. The Bhim Burj bastion once held the cannon 'Garbh Gunjam' ('Thunder from the Womb'), and the fort also houses the Dargah of Hazrat Miran Sayyed Husain Khangswar (Miran Sahib). Perched high above Ajmer, it offers sweeping panoramic views over the city and surrounding Aravalli hills.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Fort_Wall_of_Taragarh%2C_Ajmer.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Fort_Wall_of_Taragarh%2C_Ajmer.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Fort_Wall_of_Taragarh%2C_Ajmer.JPG"],
+    imageCredit: "Photo: Hemant Shesh — Wikimedia Commons, CC BY-SA 3.0. Same image used as the header on English Wikipedia's Taragarh Fort, Ajmer article and five other-language Wikipedia articles.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by Raja Ajaipal Chauhan, India's first hill fort" },
+      { name: "Elephant-sculpted bastions at the main gate" },
+      { name: "Bhim Burj bastion, held the cannon Garbh Gunjam" },
+      { name: "Dargah of Hazrat Miran Sayyed Husain Khangswar" },
+      { name: "Panoramic views over Ajmer city and the Aravallis" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Hilltop above Ajmer city", costRange: "₹200–₹500 by auto/taxi round trip", tips: "The climb is steep — a taxi or auto is the practical way up for most visitors." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer"], description: "Best visited as a half-day trip from central Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto (round trip)", cost: "₹200–₹500", notes: "Most practical way to reach the hilltop fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹600", notes: "Available for the uphill route", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2750, accommodation: 1500, food: 550, transport: 400, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 500, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hilltop Ajmer", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Taragarh Fort — the climb rewards with panoramic city and Aravalli views.", evening: "Ana Sagar Lake at sunset.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "Carry water — the hilltop fort has limited facilities and the climb can be warm." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A recognised heritage site with regular daytime visitor traffic"],
+      precautions: ["The hilltop location is more remote than central Ajmer — visit during daylight hours", "Go with a group or a trusted driver for the uphill route"],
+      soloTips: ["Daytime visits with a hired taxi/auto that waits are the most comfortable way to visit solo"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["The main fort complex during opening hours"],
+      avoidAreas: ["The hilltop and access road after dark"],
+    },
+    rating: 4.3,
+    reviews: 3600,
+    mustEat: ["Sohan Halwa (in central Ajmer)"],
+    packingTips: ["Comfortable walking shoes for the climb", "Water bottle", "Sun protection — limited shade on the hilltop"],
   },
 
   {
