@@ -3463,6 +3463,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Soniji Ki Nasiyan", distance: "In city", type: "Spiritual", isHidden: true, id: "soniji-ki-nasiyan" },
       { name: "Lake Foy Sagar", distance: "5 km", type: "Nature", isHidden: true, id: "foy-sagar-lake" },
       { name: "Victoria (Jubilee) Clock Tower", distance: "In city", type: "Heritage", isHidden: true, id: "ghanta-ghar-ajmer" },
+      { name: "Prithvi Raj Smarak", distance: "In city (hilltop)", type: "Heritage", isHidden: true, id: "prithvi-raj-smarak" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3817,6 +3818,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+      { name: "Prithvi Raj Smarak", distance: "Nearby, same hilltop", type: "Heritage", isHidden: true, id: "prithvi-raj-smarak" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 200, activities: 50 },
@@ -3898,6 +3900,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1400,
     mustEat: ["Station-area food stalls", "Sohan Halwa (in central Ajmer)"],
     packingTips: ["Nothing specific — a quick stop rather than a dedicated visit"],
+  },
+
+  {
+    id: "prithvi-raj-smarak",
+    name: "Prithvi Raj Smarak",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Prithviraj Chauhan Smarak"],
+    tagline: "A Hilltop Bronze Tribute to Ajmer's Last Chauhan Ruler",
+    description: "Prithvi Raj Smarak is a hilltop memorial to Prithviraj Chauhan III, the last Chauhan ruler of Ajmer and Delhi, whose defeat by Mohammed Ghori in the 12th century marked a turning point in the region's history. The memorial's centerpiece is a striking black-stone equestrian statue depicting the warrior-king with bow drawn and his horse's hoof raised mid-stride, set atop a stone plinth with panoramic Aravalli views and an adjacent garden.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prithvi_Raj_Chauhan.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prithvi_Raj_Chauhan.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/0a/Prithvi_Raj_Chauhan.JPG"],
+    imageCredit: "Photo: LRBurdak — Wikimedia Commons, CC BY-SA 3.0. Same image used on Dutch and Polish Wikipedia's Prithviraj Chauhan-related pages.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "20–30 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Memorial to Prithviraj Chauhan III, last Chauhan ruler of Ajmer and Delhi" },
+      { name: "Black-stone equestrian statue, one hoof raised" },
+      { name: "Hilltop location with panoramic Aravalli views" },
+      { name: "Adjacent garden" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Hilltop above Ajmer city", costRange: "₹100–₹300 by auto/taxi round trip", tips: "Can be combined with a Taragarh Fort visit given the shared hilltop location." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer"], description: "Best visited as a short stop combined with Taragarh Fort." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto (round trip)", cost: "₹100–₹300", notes: "Most practical way to reach the hilltop memorial", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available for the uphill route", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+      { name: "Taragarh Fort", distance: "Nearby, same hilltop", type: "Heritage", isHidden: true, id: "taragarh-fort-ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 350, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hilltop Ajmer", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Taragarh Fort, then Prithvi Raj Smarak nearby for the equestrian statue and hilltop views.", evening: "Ana Sagar Lake at sunset.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "Best combined with a Taragarh Fort visit, since both are on the same hilltop." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Shares the same hilltop area as the well-visited Taragarh Fort"],
+      precautions: ["The hilltop location is more remote than central Ajmer — visit during daylight hours", "Go with a group or a trusted driver for the uphill route"],
+      soloTips: ["Best combined with a Taragarh Fort visit for a more comfortable daytime solo trip"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["The memorial and garden area during daylight"],
+      avoidAreas: ["The hilltop and access road after dark"],
+    },
+    rating: 4.0,
+    reviews: 900,
+    mustEat: ["Sohan Halwa (in central Ajmer)"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera for the hilltop views"],
   },
 
   {
