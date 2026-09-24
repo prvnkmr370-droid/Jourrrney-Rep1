@@ -3960,6 +3960,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Government Museum, Alwar", distance: "In city", type: "Heritage", isHidden: true, id: "alwar-government-museum" },
       { name: "Neemrana Baori", distance: "~85 km", type: "Heritage", isHidden: true, id: "neemrana-baori" },
       { name: "Neelkanth Mahadev Temple", distance: "~30 km", type: "Spiritual", isHidden: true, id: "neelkanth-mahadev-sariska" },
+      { name: "Hope Circus", distance: "In city", type: "Heritage", isHidden: true, id: "hope-circus-alwar" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4458,6 +4459,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 700,
     mustEat: ["Resort dining near Sariska", "Rajasthani thali in Alwar"],
     packingTips: ["Sturdy walking shoes for the steep, rough track", "Water bottle", "Camera", "Book the visit through an authorised Sariska operator in advance"],
+  },
+
+  {
+    id: "hope-circus-alwar",
+    name: "Hope Circus",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 1940 Circular Landmark at the Heart of Alwar's Markets",
+    description: "Hope Circus is a circular heritage landmark in central Alwar, inaugurated in 1940, with stairs climbing to its top from all four directions. Sitting right beside the city's best-known markets, it functions as a genuine everyday gathering point as much as a monument — the kind of place locals pass through constantly rather than a site set apart purely for visitors, and the easiest way to explore Alwar's bustling market district on foot.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Hope_Circus%2C_Alwar_-_panoramio.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/66/Hope_Circus%2C_Alwar_-_panoramio.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/6/66/Hope_Circus%2C_Alwar_-_panoramio.jpg"],
+    imageCredit: "Photo: vivekmangala — Wikimedia Commons, CC BY-SA 3.0, via Panoramio (reviewed). GPS coordinates confirm central Alwar.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "24 hours (exterior view)", closes: "24 hours (exterior view)", note: "A public landmark, viewable anytime; surrounding markets keep their own hours. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Circular heritage landmark, inaugurated 1940" },
+      { name: "Stairs to the top from all four directions" },
+      { name: "Beside Alwar's main markets" },
+      { name: "Best explored on foot" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "City centre, Alwar", costRange: "₹40–₹150 by auto within Alwar", tips: "Best explored on foot along with the surrounding market lanes." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "A city-centre landmark easily reached from any Alwar hotel." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Alwar", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "The best way to see this and the surrounding markets", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+      { name: "Alwar City Palace", distance: "Nearby", type: "Heritage", isHidden: true, id: "alwar-city-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar's Market Quarter", morning: "Bala Qila and Alwar City Palace.", afternoon: "Hope Circus and the surrounding market lanes for shopping and local food.", evening: "Moosi Maharani Ki Chhatri at sunset.", stay: "Alwar town", meals: "Market food stalls, Rajasthani thali (₹180)", tips: "A good spot to pick up local sweets like Alwar ka Mawa fresh from the market." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A busy city-centre landmark with constant foot traffic", "Well-lit, well-trafficked market surroundings"],
+      precautions: ["Standard market-area caution — keep valuables secure in the busy lanes"],
+      soloTips: ["Very comfortable for solo visits given the constant local foot traffic"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The circus and surrounding market area at any time of day"],
+      avoidAreas: ["None specific — a busy, well-trafficked city-centre spot"],
+    },
+    rating: 4.2,
+    reviews: 1900,
+    mustEat: ["Alwar ka Mawa from market shops", "Street food from the surrounding market"],
+    packingTips: ["Comfortable walking shoes", "Cash for market shopping"],
   },
 
   {
