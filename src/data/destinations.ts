@@ -2111,6 +2111,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Kirti Stambh", distance: "In fort complex", type: "Heritage", isHidden: true, id: "kirti-stambh" },
       { name: "Rana Kumbha Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
       { name: "Kalika Mata Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "kalika-mata-temple-chittorgarh" },
+      { name: "Fateh Prakash Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "fateh-prakash-palace-chittorgarh" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2492,6 +2493,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1500,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Sturdy walking shoes for the stepped ghats", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "fateh-prakash-palace-chittorgarh",
+    name: "Fateh Prakash Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Fateh Prakash Palace Museum, Chittorgarh"],
+    tagline: "Maharana Fateh Singh's Residence, Now a Rajput Art Museum",
+    description: "Fateh Prakash Palace was constructed by Maharana Fateh Singh as his personal residence, built in Rajput-style architecture as a genuine statement of his taste for art and culture. Now converted into a museum, it holds a real range of regional heritage: wood crafts from Bassi village, post-medieval statues of Jain Ambica and Indra from Rashmi village, weapons including axes, knives, and ancient shields, clay replicas of regional tribal people in traditional costume, paintings, and crystal ware.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Fateh_Prakash_Palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Fateh_Prakash_Palace.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/3/3b/Fateh_Prakash_Palace.jpg"],
+    imageCredit: "Photo: Shakti — Wikimedia Commons, CC BY-SA 3.0.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:45 AM", closes: "4:45 PM", note: "Entry: ₹20 (Indian adult), ₹10 (Indian child), ₹100 (foreigner), ₹50 (foreigner child). Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by Maharana Fateh Singh, Rajput-style architecture" },
+      { name: "Wood crafts from Bassi village" },
+      { name: "Post-medieval Jain Ambica and Indra statues from Rashmi" },
+      { name: "Weapons, tribal costume replicas, paintings, crystal ware" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "Check the museum's closing time (4:45 PM) so it fits into your fort circuit before the light fades." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Rana Kumbha Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Museum Stop", morning: "Rana Kumbha Palace.", afternoon: "Fateh Prakash Palace museum — the wood crafts and weapons collection are genuine highlights.", evening: "Vijay Stambh and Kirti Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "The museum closes at 4:45 PM — plan your fort circuit so this stop isn't left for last." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A staffed museum with regular daytime visitor traffic"],
+      precautions: ["Standard museum/heritage-site caution"],
+      soloTips: ["Comfortable for solo visits given the fort's steady daytime tourist flow"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The museum and immediate fort circuit during visiting hours"],
+      avoidAreas: ["None specific — a well-visited, patrolled monument"],
+    },
+    rating: 4.3,
+    reviews: 2000,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Comfortable walking shoes", "Cash for entry tickets", "Water bottle"],
   },
 
   {
