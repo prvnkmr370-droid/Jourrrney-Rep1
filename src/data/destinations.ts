@@ -3369,7 +3369,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake", id: "jag-mandir-kota" }],
+    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)", id: "chambal-garden-kota" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake", id: "jag-mandir-kota" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, a major line — ~4.5–5h", fromMumbai: "~13–14h", fromBangalore: "Via Delhi — 24h+", duration: "~4.5–5h from Delhi", costRange: "₹300–₹1,600", tips: "Kota Junction is a major railway hub on the Delhi–Mumbai line, genuinely well-connected." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 6–7h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹3,000–₹5,500 cab / ₹400–₹700 bus", tips: "Well-connected by both highway and rail, given Kota's size as a major city." },
@@ -3534,6 +3534,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2900,
     mustEat: ["Rajasthani thali", "Lakeside snack stalls"],
     packingTips: ["Camera for the palace and lake views", "Light layers for evening lake breeze"],
+  },
+
+  {
+    id: "chambal-garden-kota",
+    name: "Chambal Garden",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Riverside Picnic Spot Doubling as Gharial Conservation Habitat",
+    description: "Chambal Garden is one of Kota's most beloved picnic spots, a stretch of exquisite greenery on the bank of the Chambal River where visitors can take a boat ride near the forest office jetty — considered a genuine once-in-a-lifetime experience given the setting. The river here is part of the National Chambal Gharial Sanctuary, established in 1983 to conserve the region's fast-depleting population of gharials (thin-snouted, fish-eating crocodiles) and marsh crocodiles, and the garden is also known for its diverse bird population.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Chambal-Garden-Kota.jpeg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/81/Chambal-Garden-Kota.jpeg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/81/Chambal-Garden-Kota.jpeg", "https://upload.wikimedia.org/wikipedia/commons/8/86/Gharial_%28Gavialis_gangeticus%29_close-up_%2819812075149%29.jpg"],
+    imageCredit: "Photos: Vibhss (used on Punjabi Wikipedia's ਚੰਬਲ ਗਾਰਡਨ article), Bernard DUPONT — Wikimedia Commons, CC BY 4.0 / CC BY-SA 2.0. Gharial photo's GPS coordinates confirmed at Chambal Gardens, Kota.",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Part of the National Chambal Gharial Sanctuary, established 1983" },
+      { name: "Gharial and marsh crocodile conservation habitat" },
+      { name: "Boat rides near the forest office jetty" },
+      { name: "Diverse bird population" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Along the Chambal River, Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Combine with the nearby Chambal riverfront gardens for a fuller riverside visit." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a half-day trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "Boat Ride (Chambal)", cost: "₹100–₹300", notes: "The genuine highlight — a chance to spot gharials from the water", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1600, food: 550, transport: 250, activities: 350 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chambal Riverside", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Chambal Garden — a boat ride along the river to spot gharials in their natural habitat.", evening: "Chambal riverfront gardens at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Early morning or late afternoon boat rides give the best chance of spotting gharials basking on the banks." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-known local picnic spot with regular daytime visitor traffic"],
+      precautions: ["Standard caution around the river and during boat rides — wear a life jacket if provided", "Stick to the designated garden and jetty areas rather than wandering into less-visited riverbank stretches"],
+      soloTips: ["Comfortable for solo daytime visits, especially if joining a scheduled boat ride with other visitors"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The garden and jetty area during daylight hours"],
+      avoidAreas: ["Unmonitored riverbank stretches away from the main garden and jetty"],
+    },
+    rating: 4.3,
+    reviews: 3200,
+    mustEat: ["Rajasthani thali", "Local snack stalls near the garden entrance"],
+    packingTips: ["Camera/binoculars for gharial and bird spotting", "Sun protection", "Comfortable shoes for garden walking paths"],
   },
 
   {
