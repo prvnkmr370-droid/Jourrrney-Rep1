@@ -3442,6 +3442,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Deeg Palace & Water Gardens", distance: "32 km", type: "Heritage", isHidden: true, id: "deeg-palace" },
       { name: "Agra (Taj Mahal)", distance: "55 km", type: "Heritage", isHidden: false, id: "agra" },
       { name: "Fatehpur Sikri", distance: "23 km", type: "UNESCO Heritage", isHidden: false, id: "fatehpur-sikri" },
+      { name: "Ganga Mandir", distance: "In city", type: "Spiritual", isHidden: true, id: "ganga-mandir-bharatpur" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 200 },
@@ -3525,6 +3526,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3200,
     mustEat: ["Rajasthani thali", "Bharatpuri Peda (local sweet)"],
     packingTips: ["Comfortable walking shoes", "Water bottle", "Camera for the moat and gateway views"],
+  },
+
+  {
+    id: "ganga-mandir-bharatpur",
+    name: "Ganga Mandir",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Shri Ganga Mahal Temple"],
+    tagline: "A White-Marble Temple Funded by the City's Own Residents",
+    description: "Ganga Mandir, in the heart of Bharatpur, houses a magnificent white-marble deity of Ganga Maharani and is genuinely regarded as one of Rajasthan's most beautiful temples. Construction began in the mid-19th century under Maharaja Balwant Singh, who made an unusual request of the city's affluent residents — that they each donate one month's income toward building it, a detail still recorded on the temple's own foundation inscription.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/GANGA_MANDIR_BHARATPUR_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/04/GANGA_MANDIR_BHARATPUR_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/04/GANGA_MANDIR_BHARATPUR_01.jpg", "https://upload.wikimedia.org/wikipedia/commons/1/12/GANGA_MANDIR_BHARATPUR_03.jpg"],
+    imageCredit: "Photos: कृष्ण कान्त शर्मा — Wikimedia Commons, CC BY-SA 4.0. Entrance signboard and foundation inscription stone both read \"श्री गंगा मन्दिर भरतपुर\" (Shri Ganga Mandir Bharatpur), confirming location and identity.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "White-marble deity of Ganga Maharani" },
+      { name: "Construction begun mid-19th century by Maharaja Balwant Singh" },
+      { name: "Funded partly by a one-month-income donation from city residents" },
+      { name: "Original foundation inscription stone still on site" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bharatpur — long haul", fromMumbai: "Via Bharatpur — long haul", fromBangalore: "Via Bharatpur — long haul", duration: "Central Bharatpur", costRange: "₹40–₹150 by auto within Bharatpur", tips: "Easily combined with Lohagarh Fort and Laxman Mandir given their central Bharatpur locations." },
+    ],
+    accommodation: [
+      { type: "Base in Bharatpur", priceRange: "₹700–₹25,000/night (estimate)", examples: ["Hotels near Keoladeo National Park entrance"], description: "Best visited as a short stop from central Bharatpur." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Bharatpur", notes: "Standard for getting around town", available: true },
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from nearby sights", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bharatpur", distance: "In city", type: "City", isHidden: false, id: "bharatpur" },
+      { name: "Lohagarh Fort", distance: "In city", type: "Heritage", isHidden: true, id: "lohagarh-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7200, accommodation: 5500, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bharatpur's City Centre", morning: "Lohagarh Fort and Bharatpur Palace Museum.", afternoon: "Ganga Mandir and Laxman Mandir, both central and walkable.", evening: "Keoladeo National Park for evening birdwatching.", stay: "Bharatpur, near the park entrance", meals: "Rajasthani thali (₹180)", tips: "The temple's evening hours are quieter and give a more contemplative visit than midday." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Central Bharatpur location with steady daytime and evening foot traffic", "An active, well-regarded local temple"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Comfortable for solo visits given the temple's central, well-trafficked location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bharatpur Police Control Room", number: "05644-223364" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime/evening temple visit"],
+    },
+    rating: 4.4,
+    reviews: 1800,
+    mustEat: ["Rajasthani thali", "Bharatpuri Peda (local sweet)"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
   {
