@@ -3391,6 +3391,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Baroli Temple Complex", distance: "50 km", type: "Heritage", isHidden: true, id: "baroli-temples" },
       { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true, id: "darrah-mukundara-hills" },
       { name: "Abheda Mahal", distance: "8 km", type: "Heritage", isHidden: true, id: "abheda-mahal" },
+      { name: "Chambal River Front", distance: "In city", type: "Heritage", isHidden: true, id: "chambal-river-front-kota" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3713,6 +3714,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1600,
     mustEat: ["Rajasthani thali (in central Kota)"],
     packingTips: ["Comfortable walking shoes", "Camera for the palace and pond", "Water bottle"],
+  },
+
+  {
+    id: "chambal-river-front-kota",
+    name: "Chambal River Front",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "India's First Heritage Riverfront, with a World Heritage Ghat",
+    description: "The Chambal River Front, running 2.75 km along both banks of the Chambal from Kota Barrage to Nayapura Pulia, is recognised as the first heritage riverfront developed in India. It features 26 individually themed ghats, including a World Heritage Ghat displaying replica architecture from around the world — the Red Fort, a Chinese pagoda, Westminster, the Louvre, and more, built across roughly 240 metres — alongside a Barcelona-style fountain with a colourful light-and-music show, India's first LED garden, and dedicated zodiac-sign ghats in the riverfront's eastern zone.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chambal_river_front_view.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chambal_river_front_view.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/c/ca/Chambal_river_front_view.jpg"],
+    imageCredit: "Photo: Imakanksha — Wikimedia Commons, CC BY-SA 4.0. Same image used on English Wikipedia's Kota, Rajasthan and Tourism in India by state articles.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "10:00 PM", note: "Fountain and light shows typically run in the evening. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "First heritage riverfront developed in India" },
+      { name: "26 individually themed ghats along 2.75 km" },
+      { name: "World Heritage Ghat — replica global architecture" },
+      { name: "Barcelona-style fountain with light-and-music show" },
+      { name: "India's first LED garden" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Kota Barrage to Nayapura Pulia, central Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Evening visits are best for the fountain and light shows." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as an evening walk from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "The riverfront itself is walkable along its ghats", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kota's Riverfront Evening", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Kishore Sagar Lake and Jag Mandir.", evening: "Chambal River Front — walk the themed ghats and catch the World Heritage Ghat fountain-and-light show.", stay: "City hotel", meals: "Rajasthani thali (₹180), riverside food stalls (₹150–₹300)", tips: "Time your visit for the evening fountain show — it's the riverfront's genuine highlight." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, well-lit public riverfront with heavy evening foot traffic and visible security"],
+      precautions: ["Standard caution in crowds during peak evening hours", "Keep valuables secure amid the busy fountain-show crowds"],
+      soloTips: ["Very manageable solo given the steady flow of evening visitors and good lighting", "One of Kota's most comfortable spots for an evening walk"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The full riverfront ghat stretch during opening hours"],
+      avoidAreas: ["None specific — a well-lit, heavily trafficked public riverfront"],
+    },
+    rating: 4.5,
+    reviews: 5600,
+    mustEat: ["Riverfront food stalls", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes for the ghats", "Camera for the fountain and light show"],
   },
 
   {
