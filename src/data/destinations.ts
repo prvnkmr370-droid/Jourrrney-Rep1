@@ -2115,6 +2115,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Satbees Deori Jain Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "satbees-deori-jain-temple" },
       { name: "Samidheshwar Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "samidheshwar-temple" },
       { name: "Sanwaliya Ji Temple", distance: "On the Chittorgarh-Udaipur Highway", type: "Spiritual", isHidden: true, id: "sanwaliya-ji-temple" },
+      { name: "Bhainsrorgarh Fort", distance: "~235 km via Udaipur road", type: "Heritage", isHidden: true, id: "bhainsrorgarh-fort" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2795,6 +2796,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 8200,
     mustEat: ["Prasad from the temple", "Local thali near the complex"],
     packingTips: ["Modest clothing", "Cash for offerings", "Patience for festival-season crowds"],
+  },
+
+  {
+    id: "bhainsrorgarh-fort",
+    name: "Bhainsrorgarh Fort",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Slate-Ridge Fort Encircled by the Chambal and Brahmani Rivers",
+    description: "Bhainsrorgarh Fort is perched on a steep 200-foot slate ridge, surrounded on three sides by the Chambal and Brahmani rivers, roughly 235 km northeast of Udaipur and 50 km south of Kota. Its origins are genuinely uncertain — believed to date as far back as the 2nd century AD with several competing folk accounts of its founders — but its documented history begins with Rawat Lal Singh II, son of Rawat Kesari Singh of Salumber, who received it as a jagir from Maharana Jagat Singh II of Mewar in 1741. British historian Colonel James Tod reportedly named it as the estate he would choose above all others in Rajasthan, and the fort, nestled among the Aravalli ranges and dense forest, now operates as a heritage hotel run by the erstwhile royal family.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bhainsrorgarh%2C_from_the_opposite_bank_of_the_Chambal_-_DPLA_-_2c7b0ed4eccb8a782441678e0f500000.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bhainsrorgarh%2C_from_the_opposite_bank_of_the_Chambal_-_DPLA_-_2c7b0ed4eccb8a782441678e0f500000.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/d1/Bhainsrorgarh%2C_from_the_opposite_bank_of_the_Chambal_-_DPLA_-_2c7b0ed4eccb8a782441678e0f500000.jpg"],
+    imageCredit: "Photo: Bourne & Shepherd (1872-73), via Boston Public Library/Digital Public Library of America — Wikimedia Commons, public domain in the US. Used on English Wikipedia's Bhainsrorgarh article (Wikidata Q4900783). A historic archival photograph; the fort's appearance today, now a heritage hotel, differs in restoration detail.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "Half-day visit, or overnight as a heritage stay",
+    visitingHours: { opens: "Varies (heritage hotel — check with property)", closes: "Varies (heritage hotel — check with property)", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Perched on a 200-foot slate ridge" },
+      { name: "Surrounded on three sides by the Chambal and Brahmani rivers" },
+      { name: "Granted as a jagir to Rawat Lal Singh II in 1741" },
+      { name: "Now a heritage hotel run by the erstwhile royal family" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota or Chittorgarh — long haul", fromMumbai: "Via Kota or Chittorgarh — long haul", fromBangalore: "Via Kota or Chittorgarh — long haul", duration: "~235 km NE of Udaipur, ~50 km south of Kota", costRange: "₹2,500–₹5,000 cab from Udaipur or Kota", tips: "Best combined with a Kota or Chittorgarh trip given the drive distance from either city." },
+    ],
+    accommodation: [
+      { type: "Heritage Hotel (the fort itself)", priceRange: "₹4,000–₹10,000/night (estimate)", examples: ["Bhainsrorgarh Fort heritage stay"], description: "The fort itself operates as a heritage hotel — a genuinely atmospheric way to experience it overnight." },
+    ],
+    localTransport: [
+      { mode: "Private Car/Taxi", cost: "₹2,500–₹5,000 from Udaipur or Kota", notes: "The practical way to reach this more remote fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "~50 km", type: "City", isHidden: false, id: "kota" },
+      { name: "Chittorgarh Fort", distance: "~235 km via Udaipur road", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 300, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 5500, accommodation: 4000, food: 700, transport: 500, activities: 300 },
+      { tier: "luxury", label: "Heritage Stay", perDayPerPerson: 12000, accommodation: 9000, food: 1500, transport: 1000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Riverside Heritage Escape", morning: "Drive from Kota or Chittorgarh to Bhainsrorgarh.", afternoon: "Explore the fort's ramparts and river views on the slate ridge.", evening: "Sunset over the Chambal and Brahmani confluence from the fort walls.", stay: "Bhainsrorgarh Fort heritage hotel", meals: "Heritage-hotel dining", tips: "The river views from the ramparts are the genuine highlight — arrive with enough daylight to enjoy them properly." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed heritage hotel property with staff on site", "A recognised, if less-visited, heritage destination"],
+      precautions: ["A remote location — arrange transport and accommodation in advance rather than arriving unplanned", "Standard caution near the ramparts and river edges"],
+      soloTips: ["Booking the heritage stay directly is the most comfortable way to visit given the remote location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort/hotel grounds"],
+      avoidAreas: ["Unlit ramparts and riverbank edges after dark"],
+    },
+    rating: 4.4,
+    reviews: 600,
+    mustEat: ["Heritage-hotel Rajasthani dining"],
+    packingTips: ["Comfortable walking shoes for the ramparts", "Camera for the river views", "Advance booking for the heritage stay"],
   },
 
   {
