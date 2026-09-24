@@ -2109,6 +2109,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
       { name: "Kirti Stambh", distance: "In fort complex", type: "Heritage", isHidden: true, id: "kirti-stambh" },
+      { name: "Rana Kumbha Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2192,6 +2193,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2600,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Comfortable walking shoes", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "rana-kumbha-palace",
+    name: "Rana Kumbha Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Kumbha Mahal"],
+    tagline: "The Fort's Grandest Ruin, Linked to the Jauhar Legends",
+    description: "Rana Kumbha Palace is one of the most massive and historically significant ruined monuments within Chittorgarh Fort. Though the original palace predates him, it takes its familiar name 'Kumbha Mahal' from Maharana Kumbha's restoration of the structure. Its main entrance, the Tripolia Darwaza, opens onto an area called Darikhana, flanked by the Suraj Gokhada and main palace on one side and the Janana Mahal and Kanwarpada's palaces on the other. Beneath the palaces lie a network of dungeons that many historians connect to the fort's harrowing jauhar accounts — cellars whose grim history adds real weight to a visit here.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rana_Kumbha_Palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rana_Kumbha_Palace.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f1/Rana_Kumbha_Palace.jpg"],
+    imageCredit: "Photo: Shakti — Wikimedia Commons, CC BY-SA 3.0. Same image used on Greek Wikipedia's Chittorgarh article and Hindi, Tamil, and Telugu Wikipedia's Maharana Kumbha articles.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "One of the fort's most massive ruined monuments" },
+      { name: "Restored by Maharana Kumbha, hence 'Kumbha Mahal'" },
+      { name: "Tripolia Darwaza main entrance and Darikhana courtyard" },
+      { name: "Underground dungeons linked to jauhar accounts" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "One of the fort's larger stops — allow real time to explore its scattered ruins." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Vijay Stambh", distance: "In fort complex", type: "Heritage", isHidden: true, id: "vijay-stambh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Royal Ruins", morning: "Vijay Stambh and Kirti Stambh.", afternoon: "Rana Kumbha Palace — the Tripolia Darwaza, Darikhana, and the palace's scattered wings.", evening: "Gaumukh Reservoir and Fateh Prakash Palace museum before closing.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "A guide is genuinely useful here — the palace's layout and jauhar history are easy to miss without context." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A major, steadily-visited ruin with regular daytime tourist traffic"],
+      precautions: ["Uneven ruined stonework underfoot — wear sturdy shoes", "The dungeon areas can be dim — stick to marked, accessible sections"],
+      soloTips: ["Comfortable for solo visits given the fort's steady daytime tourist flow", "Hiring a guide at the fort entrance adds real historical context here"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The main palace circuit during visiting hours"],
+      avoidAreas: ["Unmarked, unlit corners of the ruins"],
+    },
+    rating: 4.5,
+    reviews: 3100,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Sturdy walking shoes for uneven ruined stonework", "Water bottle", "A guide for context on the palace's history"],
   },
 
   {
