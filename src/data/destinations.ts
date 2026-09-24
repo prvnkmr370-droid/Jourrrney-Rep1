@@ -3369,7 +3369,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake" }],
+    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake", id: "jag-mandir-kota" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, a major line — ~4.5–5h", fromMumbai: "~13–14h", fromBangalore: "Via Delhi — 24h+", duration: "~4.5–5h from Delhi", costRange: "₹300–₹1,600", tips: "Kota Junction is a major railway hub on the Delhi–Mumbai line, genuinely well-connected." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 6–7h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹3,000–₹5,500 cab / ₹400–₹700 bus", tips: "Well-connected by both highway and rail, given Kota's size as a major city." },
@@ -3450,6 +3450,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+      { name: "Jag Mandir", distance: "In city", type: "Heritage", isHidden: true, id: "jag-mandir-kota" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 150 },
@@ -3473,6 +3474,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3800,
     mustEat: ["Rajasthani thali", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Camera for the museum and palace architecture"],
+  },
+
+  {
+    id: "jag-mandir-kota",
+    name: "Jag Mandir, Kota",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Kishore Sagar Jagmandir", "Jal Mahal, Kota"],
+    tagline: "A Red-Sandstone Island Palace in the Heart of the City",
+    description: "Jag Mandir is a red-sandstone island palace built by one of Kota's queens between 1743 and 1745, rising from the middle of Kishore Sagar Lake in the very heart of the city. Boat rides across the lake give visitors a genuine panoramic view of the palace and Kota's skyline, and the nearby Keshar Bagh garden is known for its collection of royal cenotaphs — making the whole area a real, walkable pocket of Kota's history rather than a single isolated monument.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Jag_Mandir_Kota.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Jag_Mandir_Kota.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/a8/Jag_Mandir_Kota.jpg"],
+    imageCredit: "Photo: Ipawanc — Wikimedia Commons, CC BY-SA 4.0. Same image used on English Wikipedia's Kota, Rajasthan and Jag Mandir Palace, Kota articles and multiple other-language Wikipedias.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Boat rides typically available during daylight hours. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built by a Kota queen between 1743-1745" },
+      { name: "Red-sandstone island palace on Kishore Sagar Lake" },
+      { name: "Boat rides with panoramic city views" },
+      { name: "Keshar Bagh nearby, known for royal cenotaphs" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Central Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Easily combined with a Garh Palace and Seven Wonder Park visit, both nearby." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a short stop from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "Boat Ride (Kishore Sagar)", cost: "₹100–₹300", notes: "A genuine local activity to see the palace up close", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+      { name: "Garh Palace", distance: "In city", type: "Heritage", isHidden: true, id: "garh-palace-kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 250 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kota's Lakeside Heart", morning: "Garh Palace and the Rao Madho Singh Museum.", afternoon: "Jag Mandir — a boat ride on Kishore Sagar Lake for the palace's panoramic view.", evening: "Seven Wonder Park nearby, then Chambal riverfront at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Boat rides get busy on weekends and evenings — a weekday or morning visit is quieter." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Central, well-visited lakeside area with steady daytime and evening foot traffic"],
+      precautions: ["Standard caution around water — wear a life jacket on boat rides if provided"],
+      soloTips: ["Comfortable for solo daytime visits, especially combined with nearby Garh Palace and Seven Wonder Park"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The lakeside promenade and boating area during daylight and early evening"],
+      avoidAreas: ["None specific — a standard daytime/evening lakeside visit"],
+    },
+    rating: 4.3,
+    reviews: 2900,
+    mustEat: ["Rajasthani thali", "Lakeside snack stalls"],
+    packingTips: ["Camera for the palace and lake views", "Light layers for evening lake breeze"],
   },
 
   {
