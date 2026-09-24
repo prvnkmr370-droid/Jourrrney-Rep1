@@ -4564,6 +4564,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Sukh Mahal", distance: "In city", type: "Heritage", isHidden: true, id: "sukh-mahal-bundi" },
       { name: "Nawal Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "nawal-sagar-lake" },
       { name: "Nagar Sagar Kund", distance: "In city", type: "Heritage", isHidden: true, id: "nagar-sagar-kund" },
+      { name: "Bhimlat Waterfall", distance: "~35 km", type: "Nature", isHidden: true, id: "bhimlat-waterfall" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -5068,6 +5069,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 900,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Sturdy walking shoes for the steps", "Camera for the geometric stairway views"],
+  },
+
+  {
+    id: "bhimlat-waterfall",
+    name: "Bhimlat Waterfall",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 140-Foot Picnic-Spot Waterfall Beside an Old Shiva Temple",
+    description: "Bhimlat Waterfall, roughly 35 km from Bundi, is a genuinely popular picnic spot where water drops around 140 feet through a scenic landscape alongside an old Shiva temple. Its natural pool at the base draws locals for a swim and a dive, especially after monsoon rains fill it out, making it one of the more lively, low-key nature escapes near Bundi rather than a purely scenic stop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bhimlat_Water_Fall.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bhimlat_Water_Fall.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/a/a2/Bhimlat_Water_Fall.jpg"],
+    imageCredit: "Photo: Prithvi Singh Rajawat — Wikimedia Commons, CC BY-SA 4.0. Description explicitly confirms \"Bhimlat waterfall in Rajasthan India.\"",
+    category: ["Nature"],
+    bestSeason: "July – February (best flow post-monsoon)",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Roughly 140-foot waterfall" },
+      { name: "Old Shiva temple beside the falls" },
+      { name: "Natural pool for swimming" },
+      { name: "A popular local picnic spot" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "~35 km from Bundi", costRange: "₹800–₹1,800 by taxi round trip", tips: "Visit post-monsoon (roughly July-February) for the best water flow." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "Most visitors see the waterfall as a half-day trip from Bundi." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹800–₹1,800 from Bundi", notes: "Standard way to reach the waterfall", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "~35 km", type: "City", isHidden: false, id: "bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 950, accommodation: 400, food: 250, transport: 250, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 600, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7600, accommodation: 5000, food: 1200, transport: 900, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Countryside Escape", morning: "Depart Bundi for Bhimlat Waterfall.", afternoon: "Swim at the base pool, visit the adjacent Shiva temple, and picnic.", evening: "Return to Bundi.", stay: "Bundi old town", meals: "Picnic lunch, or Rajasthani thali on return (₹180)", tips: "Carry a change of clothes and water shoes if you plan to swim — the rocks near the pool can be slippery." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A well-known local picnic spot with regular visitor traffic, especially on weekends"],
+      precautions: ["A more remote location than central Bundi — visit during daylight hours", "Go with a group rather than swimming alone", "Wet rocks near the falls can be slippery"],
+      soloTips: ["Best visited with a group or as part of an organised day trip given the remote setting and swimming activity"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The main picnic and swimming area during daylight"],
+      avoidAreas: ["Isolated stretches away from the main falls, especially alone"],
+    },
+    rating: 4.3,
+    reviews: 1600,
+    mustEat: ["Picnic food brought from Bundi", "Rajasthani thali on return"],
+    packingTips: ["Swimwear and a change of clothes", "Water shoes for slippery rocks", "Sun protection", "Waterproof bag for valuables"],
   },
 
   {
