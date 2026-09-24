@@ -4565,6 +4565,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Nawal Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "nawal-sagar-lake" },
       { name: "Nagar Sagar Kund", distance: "In city", type: "Heritage", isHidden: true, id: "nagar-sagar-kund" },
       { name: "Bhimlat Waterfall", distance: "~35 km", type: "Nature", isHidden: true, id: "bhimlat-waterfall" },
+      { name: "Kshar Bag", distance: "In city", type: "Heritage", isHidden: true, id: "kshar-bag" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -5127,6 +5128,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1600,
     mustEat: ["Picnic food brought from Bundi", "Rajasthani thali on return"],
     packingTips: ["Swimwear and a change of clothes", "Water shoes for slippery rocks", "Sun protection", "Waterproof bag for valuables"],
+  },
+
+  {
+    id: "kshar-bag",
+    name: "Kshar Bag",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Saar Bagh"],
+    tagline: "Domed Royal Cenotaphs Set Among Shaded Gardens",
+    description: "Kshar Bag, also known as Saar Bagh, houses the memorial chhatris (cenotaphs) of the royal family of Bundi State, near the Chhatra Vilas Garden on the Shikar Burj-Jait Sagar road. A row of domed, pillared pavilions rises above solid stone plinths beneath a canopy of trees, making it a genuinely peaceful, shaded spot to appreciate Bundi's funerary architecture away from the busier fort and palace circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Kshaar_Bagh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Kshaar_Bagh.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/b3/Kshaar_Bagh.jpg"],
+    imageCredit: "Photo: Sharvarism — Wikimedia Commons, CC BY-SA 4.0. Description matches precisely: memorial chhatris of the Bundi royal family, near Chhatra Vilas Garden.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Memorial cenotaphs of the Bundi royal family" },
+      { name: "Row of domed, pillared pavilions" },
+      { name: "Near Chhatra Vilas Garden" },
+      { name: "Shaded, quiet setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Shikar Burj-Jait Sagar Road, Bundi", costRange: "₹40–₹150 by auto within Bundi", tips: "A quieter alternative to the busier fort and palace circuit." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "A short trip from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Standard for getting around Bundi", available: true },
+      { mode: "Walking", cost: "Free", notes: "Reachable on foot from the Jait Sagar area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+      { name: "Sukh Mahal", distance: "Nearby, Jait Sagar area", type: "Heritage", isHidden: true, id: "sukh-mahal-bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Quiet Corners", morning: "Garh Palace and Taragarh Fort.", afternoon: "Sukh Mahal and Kshar Bag, both in the Jait Sagar area.", evening: "Nawal Sagar Lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "A peaceful, shaded stop — a good spot to slow down between busier sightseeing." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site with regular daytime visitor traffic", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Standard heritage-site caution"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The cenotaph grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera for the cenotaph architecture"],
   },
 
   {
