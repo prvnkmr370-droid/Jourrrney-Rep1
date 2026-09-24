@@ -3933,7 +3933,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Heritage", "History"],
     bestSeason: "October – March (park closed roughly July–September for monsoon)",
     duration: "2 days",
-    highlights: [{ name: "Sariska Tiger Reserve safari" }, { name: "Bala Quila (hilltop fort)" }, { name: "Vinay Vilas Mahal (City Palace)" }, { name: "Sariska's tiger-reintroduction conservation story" }, { name: "Kankwadi Fort, inside the reserve" }],
+    highlights: [{ name: "Sariska Tiger Reserve safari", id: "sariska-tiger-reserve" }, { name: "Bala Quila (hilltop fort)", id: "bala-qila" }, { name: "Vinay Vilas Mahal (City Palace)" }, { name: "Sariska's tiger-reintroduction conservation story" }, { name: "Kankwadi Fort, inside the reserve" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Alwar Junction — ~2.5–3h", fromMumbai: "~16–18h", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~2.5–3h from Delhi", costRange: "₹150–₹900", tips: "Alwar Junction is well-connected — an easy add-on to a Delhi/Jaipur route." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 3–4h", fromMumbai: "Via Jaipur — 16–17h", fromBangalore: "—", duration: "~3–4h from Delhi; ~2h from Jaipur", costRange: "₹2,000–₹4,000 cab / ₹300–₹500 bus", tips: "Alwar sits roughly between Delhi and Jaipur, making it an easy stopover on that route." },
@@ -3951,7 +3951,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available in Alwar city, though coverage can be patchy", available: true },
     ],
     nearbyPlaces: [
-      { name: "Bhangarh Fort (India's most famous 'haunted' fort)", distance: "55 km", type: "Mysterious Ruins", isHidden: true },
+      { name: "Bhangarh Fort (India's most famous 'haunted' fort)", distance: "55 km", type: "Mysterious Ruins", isHidden: true, id: "bhangarh" },
       { name: "Siliserh Lake Palace", distance: "13 km", type: "Nature", isHidden: true, id: "siliserh-lake-palace" },
       { name: "Jaipur", distance: "150 km", type: "Heritage", isHidden: false, id: "jaipur" },
     ],
@@ -3978,6 +3978,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5700,
     mustEat: ["Alwar ka Mawa (the town's famous milk sweet, said to be the origin of milk cake)", "Dal Baati Churma", "Laal Maas", "Kachori", "Rajasthani thali"],
     packingTips: ["Neutral/earth-tone clothing for safaris", "Binoculars", "Comfortable shoes for the Bala Quila climb", "Warm layers for early-morning winter safaris", "Sunscreen and a hat"],
+  },
+
+  {
+    id: "bala-qila",
+    name: "Bala Qila",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Alwar Fort", "Bala Quila"],
+    tagline: "A Hilltop Fort Built on 10th-Century Foundations",
+    description: "Bala Qila, the 'young fort,' rises on a hilltop above Alwar, built on the foundations of a 10th-century mud fort. Its strong fortifications, graceful marble columns, and delicate latticed balconies are entered through six historic gates — Jai Pol, Suraj Pol, Laxman Pol, Chand Pol, Krishan Pol, and Andheri Gate — and today the fort's buffer forest also offers safari access, adding a wildlife dimension to what is otherwise a straightforward heritage climb.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Alwar_fort_or_Bala_Quila_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/da/Alwar_fort_or_Bala_Quila_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/da/Alwar_fort_or_Bala_Quila_01.jpg"],
+    imageCredit: "Photo: Pinakpani — Wikimedia Commons, CC BY-SA 4.0. Same image used on English Wikipedia's Alwar fort, Hindi Wikipedia's बाला किला, अलवर, and Punjabi Wikipedia's ਅਲਵਰ ਕਿਲ੍ਹਾ articles.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "3:30 PM", note: "Buffer-forest safari timing 6:00 AM-4:30 PM. Closed Wednesdays. Source: Rajasthan Tourism (tourism.rajasthan.gov.in) — check current status before visiting, as entry has at times been temporarily restricted." },
+    highlights: [
+      { name: "Built on 10th-century mud-fort foundations" },
+      { name: "Marble columns and latticed balconies" },
+      { name: "Six historic gates, including Jai Pol and Suraj Pol" },
+      { name: "Buffer-forest safari access" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Hilltop above Alwar city, via Pratap Bandh forest entry to Jaipol", costRange: "₹200–₹500 by auto/taxi round trip", tips: "Check current entry status before visiting — access has at times been temporarily restricted to tourists." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "Best visited as a half-day trip from central Alwar." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto (round trip)", cost: "₹200–₹500", notes: "Most practical way to reach the hilltop fort", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available for the uphill route, though coverage can be patchy", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2700, accommodation: 1500, food: 550, transport: 350, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7000, accommodation: 5000, food: 1200, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar's Hilltop Heritage", morning: "Bala Qila — the fort's gates and marble courtyards.", afternoon: "Alwar City Palace and Government Museum.", evening: "Moosi Maharani Ki Chhatri at sunset.", stay: "Alwar town", meals: "Rajasthani thali (₹180)", tips: "The climb rewards with sweeping views over Alwar city and the surrounding Aravallis." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site with regular daytime visitor traffic when open"],
+      precautions: ["The hilltop location is more remote than central Alwar — visit during daylight hours", "Go with a group or a trusted driver for the uphill route"],
+      soloTips: ["A hired taxi/auto that waits is the most comfortable way to visit solo"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The fort complex during opening hours"],
+      avoidAreas: ["The hilltop and access road after dark"],
+    },
+    rating: 4.3,
+    reviews: 2400,
+    mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes for the climb", "Water bottle", "Sun protection"],
   },
 
   {
