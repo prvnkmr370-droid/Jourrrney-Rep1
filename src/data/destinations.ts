@@ -2114,6 +2114,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Fateh Prakash Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "fateh-prakash-palace-chittorgarh" },
       { name: "Satbees Deori Jain Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "satbees-deori-jain-temple" },
       { name: "Samidheshwar Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "samidheshwar-temple" },
+      { name: "Sanwaliya Ji Temple", distance: "On the Chittorgarh-Udaipur Highway", type: "Spiritual", isHidden: true, id: "sanwaliya-ji-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2735,6 +2736,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1200,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Modest clothing", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "sanwaliya-ji-temple",
+    name: "Sanwaliya Ji Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Sanwariya Seth Temple", "Sanwaliya Ji Dham"],
+    tagline: "A Grand Krishna Shrine That Draws Millions of Devotees Each Year",
+    description: "Sanwaliya Ji Temple, on the Chittorgarh-Udaipur Highway in Mandafiya village, is a genuinely major pilgrimage site drawing millions of devotees annually. According to local tradition, in 1840 a shepherd named Bholanath Gurjar had a dream that led to the excavation of three idols near Bhadsauda-Bagund village. One idol was installed at the excavation site itself (now called Prakatya Sthal), a second at Bhadsauda village in what's considered the oldest of the three temples, and the third and grandest was installed here at Mandafiya, now known as Sanwaliya Ji Dham — a sprawling, brightly lit complex that comes especially alive during evening aarti.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/20/SANWARIYA_SETH_JI_TEMPLE_CHITTORGARH_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/20/SANWARIYA_SETH_JI_TEMPLE_CHITTORGARH_2.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/20/SANWARIYA_SETH_JI_TEMPLE_CHITTORGARH_2.jpg"],
+    imageCredit: "Photo: Sohansohan1987 — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Spiritual"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "5:30 AM", closes: "9:15 PM", note: "Mangla Arati 5:30 AM, Rajbhog 10:00-11:15 AM, Arati 2:30 PM, Arati 8:00-9:15 PM, Bhajan 9:15-11:00 PM. Contact: 01470-242622 / 242922. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Origin tied to a shepherd's 1840 dream and idol excavation" },
+      { name: "Grandest of three related temples, at Mandafiya" },
+      { name: "Draws millions of devotees annually" },
+      { name: "Sprawling, brightly lit complex" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Mandafiya village, Chittorgarh-Udaipur Highway", costRange: "₹300–₹800 by taxi round trip", tips: "Expect heavy crowds during festivals and evening aarti — plan timing accordingly." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the temple as a stop en route between Chittorgarh and Udaipur." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹300–₹800 from Chittorgarh", notes: "Standard way to reach Mandafiya village", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "On the Chittorgarh-Udaipur Highway", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 200, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2950, accommodation: 1600, food: 600, transport: 450, activities: 300 },
+      { tier: "luxury", label: "Premium Day Trip", perDayPerPerson: 7500, accommodation: 4500, food: 1200, transport: 800, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "En Route to Udaipur", morning: "Chittorgarh Fort circuit.", afternoon: "Sanwaliya Ji Temple, Mandafiya, on the way to Udaipur.", evening: "Continue to Udaipur or return to Chittorgarh.", stay: "Chittorgarh or Udaipur", meals: "Local thali near the temple complex (₹150–₹300)", tips: "If your schedule allows, the evening 8:00-9:15 PM aarti is the temple's most atmospheric moment." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major, well-established pilgrimage site with heavy year-round visitor flow", "Visible security given the temple's scale and national pilgrim draw"],
+      precautions: ["Crowds can be very dense during festivals and evening aarti — keep valuables secure", "Agree taxi fares upfront for the highway trip"],
+      soloTips: ["Very manageable solo given the steady flow of pilgrims and visitors", "Sticking to the main temple complex during open hours keeps things simple"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The main temple complex during opening hours"],
+      avoidAreas: ["Very dense festival-crowd areas if crowds make you uncomfortable"],
+    },
+    rating: 4.6,
+    reviews: 8200,
+    mustEat: ["Prasad from the temple", "Local thali near the complex"],
+    packingTips: ["Modest clothing", "Cash for offerings", "Patience for festival-season crowds"],
   },
 
   {
