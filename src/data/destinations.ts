@@ -3390,6 +3390,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Bundi", distance: "35 km", type: "Heritage", isHidden: false, id: "bundi" },
       { name: "Baroli Temple Complex", distance: "50 km", type: "Heritage", isHidden: true, id: "baroli-temples" },
       { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true, id: "darrah-mukundara-hills" },
+      { name: "Abheda Mahal", distance: "8 km", type: "Heritage", isHidden: true, id: "abheda-mahal" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3652,6 +3653,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4100,
     mustEat: ["Street food stalls near the park entrance", "Rajasthani thali"],
     packingTips: ["Camera for the replica monuments, especially at sunset/night", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "abheda-mahal",
+    name: "Abheda Mahal",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Abheda Mahal and Abheda Biological Park"],
+    tagline: "An 18th-Century Pleasure Palace on a Lotus Pond",
+    description: "Abheda Mahal is a historic pleasure palace built in the 18th century by Maharao Durjan Sal Singh, with the large lotus pond beside it added later during the reign of Maharao Umed Singh II. Rather than a defensive fort, it served as a quiet leisure retreat and hunting lodge for Kota's rulers, and its three-storey structure genuinely blends traditional Rajput architecture with Mughal-style formal garden layouts. Nearby stands the temple of Karni Mata, Kota's reigning deity, and the newly built Abheda Biological Park run by the forest department, an eco-friendly home for the region's wildlife.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Abheda_Mahal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Abheda_Mahal.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f6/Abheda_Mahal.jpg"],
+    imageCredit: "Photo: Sharvarism — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage", "Wildlife"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "18th-century pleasure palace built by Maharao Durjan Sal Singh" },
+      { name: "Large lotus pond added by Maharao Umed Singh II" },
+      { name: "Rajput architecture blended with Mughal-style gardens" },
+      { name: "Nearby Karni Mata temple, Kota's reigning deity" },
+      { name: "Adjacent Abheda Biological Park" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "8 km from Kota city", costRange: "₹150–₹400 by auto/taxi round trip", tips: "Easily combined with the adjacent Abheda Biological Park for a fuller half-day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a half-day trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto (round trip)", cost: "₹150–₹400", notes: "Most practical way to reach the palace, 8 km out of the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹600", notes: "Available for the outward trip", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "8 km", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2750, accommodation: 1600, food: 550, transport: 350, activities: 250 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Beyond the City Centre", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Abheda Mahal and the adjacent biological park, plus the nearby Karni Mata temple.", evening: "Return to central Kota, Chambal riverfront at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "The lotus pond setting is especially photogenic in the morning light." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A recognised heritage and wildlife site with regular daytime visitor traffic"],
+      precautions: ["Slightly outside the city centre — visit during daylight hours", "Go with a group or a trusted driver for the outward trip"],
+      soloTips: ["A hired taxi/auto that waits is the most comfortable way to visit solo"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace and biological park grounds during opening hours"],
+      avoidAreas: ["The surrounding area after dark"],
+    },
+    rating: 4.1,
+    reviews: 1600,
+    mustEat: ["Rajasthani thali (in central Kota)"],
+    packingTips: ["Comfortable walking shoes", "Camera for the palace and pond", "Water bottle"],
   },
 
   {
