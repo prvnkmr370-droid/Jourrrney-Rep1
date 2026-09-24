@@ -3369,7 +3369,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)", id: "chambal-garden-kota" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake", id: "jag-mandir-kota" }],
+    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)", id: "chambal-garden-kota" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)", id: "seven-wonders-park-kota" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake", id: "jag-mandir-kota" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, a major line — ~4.5–5h", fromMumbai: "~13–14h", fromBangalore: "Via Delhi — 24h+", duration: "~4.5–5h from Delhi", costRange: "₹300–₹1,600", tips: "Kota Junction is a major railway hub on the Delhi–Mumbai line, genuinely well-connected." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 6–7h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹3,000–₹5,500 cab / ₹400–₹700 bus", tips: "Well-connected by both highway and rail, given Kota's size as a major city." },
@@ -3592,6 +3592,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3200,
     mustEat: ["Rajasthani thali", "Local snack stalls near the garden entrance"],
     packingTips: ["Camera/binoculars for gharial and bird spotting", "Sun protection", "Comfortable shoes for garden walking paths"],
+  },
+
+  {
+    id: "seven-wonders-park-kota",
+    name: "Seven Wonder Park",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Seven Wonders Park, Kota"],
+    tagline: "The World's Seven Wonders, Replicated on Kishore Sagar Lake",
+    description: "Seven Wonder Park is a Rs. 20-crore project built along Kishore Sagar Lake at Vallabh Bari in Kota, offering visitors a single-visit glimpse of replicas of all Seven Wonders of the World — including a full-scale-feel Eiffel Tower that has become one of Kota's most recognisable modern landmarks. It's a lighthearted, family-friendly contrast to the city's older Rajput heritage sites, especially striking at sunset with the lake as a backdrop.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kota_Eiffel_Tower.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kota_Eiffel_Tower.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/eb/Kota_Eiffel_Tower.jpg"],
+    imageCredit: "Photo: Abhishek Anand — Wikimedia Commons, CC BY-SA 4.0. Same image used on English, German, Catalan, Korean, and Ukrainian Wikipedia's Eiffel Tower replica list articles.",
+    category: ["Culture"],
+    bestSeason: "October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "10:00 AM", closes: "9:00 PM", note: "Especially popular at sunset and after dark when lit up. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Replicas of all Seven Wonders of the World" },
+      { name: "Rs. 20-crore development project" },
+      { name: "Built along Kishore Sagar Lake, Vallabh Bari" },
+      { name: "Popular family-friendly sunset spot" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Vallabh Bari, along Kishore Sagar Lake, Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Easily combined with a Jag Mandir or Garh Palace visit given the shared lake area." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a short evening trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable given Kota's size as a major city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+      { name: "Jag Mandir", distance: "Nearby, same lake area", type: "Heritage", isHidden: true, id: "jag-mandir-kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 250 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Lakeside Kota", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Jag Mandir boat ride on Kishore Sagar Lake.", evening: "Seven Wonder Park for the replica monuments, lit up after dark.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Visit after sunset for the lit-up replicas — the park has a different, more atmospheric character at night." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A popular, well-lit family attraction with steady evening foot traffic"],
+      precautions: ["Standard caution in crowds, especially on weekend evenings when the park is busiest"],
+      soloTips: ["Comfortable for solo visits given the park's popularity and good lighting after dark"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The main park area during opening hours"],
+      avoidAreas: ["None specific — a well-trafficked, well-lit evening attraction"],
+    },
+    rating: 4.2,
+    reviews: 4100,
+    mustEat: ["Street food stalls near the park entrance", "Rajasthani thali"],
+    packingTips: ["Camera for the replica monuments, especially at sunset/night", "Comfortable walking shoes"],
   },
 
   {
