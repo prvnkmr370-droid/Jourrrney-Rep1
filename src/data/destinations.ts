@@ -2028,7 +2028,7 @@ export const DESTINATIONS: Destination[] = [
     bestSeason: "October – March",
     duration: "1–2 days",
     visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Open daily; a separate light & sound show runs in the evening." },
-    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple", id: "meerabai-temple-chittorgarh" }, { name: "Kumbha Shyam Temple", id: "kumbha-shyam-temple" }, { name: "Gaumukh Reservoir" }],
+    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple", id: "meerabai-temple-chittorgarh" }, { name: "Kumbha Shyam Temple", id: "kumbha-shyam-temple" }, { name: "Gaumukh Reservoir", id: "gaumukh-reservoir" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Chittaurgarh Junction — ~9–10h", fromMumbai: "Via Chittaurgarh Junction — ~13–14h", fromBangalore: "Via Ahmedabad/Udaipur — 24h+", duration: "~9–10h from Delhi", costRange: "₹350–₹1,600", tips: "Chittaurgarh Junction is well-connected on the Delhi–Mumbai line; the fort is a short drive from the station." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 9–10h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~9–10h from Delhi; ~2.5h from Udaipur", costRange: "₹3,000–₹6,000 cab / ₹300–₹600 bus from Udaipur", tips: "Most visitors do Chittorgarh as a day trip from Udaipur — it's an easy 2.5h each way." },
@@ -2433,6 +2433,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1700,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Modest clothing", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "gaumukh-reservoir",
+    name: "Gaumukh Reservoir",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Sacred Spring-Fed Tank Named for a 'Cow's Mouth' Rock Formation",
+    description: "Gaumukh Reservoir is a deep tank within Chittorgarh Fort, fed by a natural spring that emerges from a rock formation resembling a Gaumukh, or 'cow's mouth.' Considered sacred by locals, the reservoir sits dramatically against the fort's outer walls and cliffs, and its green-tinged water and stepped ghats make it one of the fort's most atmospheric, quietly spiritual spots.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/14/Top_view_of_Chittorgarh_fort.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/14/Top_view_of_Chittorgarh_fort.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/14/Top_view_of_Chittorgarh_fort.jpg"],
+    imageCredit: "Photo: Imanushkasingh — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates confirm Chittorgarh Fort; categorized under Gaumukh Reservoir.",
+    category: ["Nature", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Deep spring-fed tank" },
+      { name: "Named for a Gaumukh ('cow's mouth') rock formation" },
+      { name: "Considered sacred by locals" },
+      { name: "Set against the fort's outer walls and cliffs" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "A good spot to catch the fort's outer-wall views alongside the reservoir itself." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Kalika Mata Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "kalika-mata-temple-chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Sacred Waters", morning: "Meerabai Temple, Kumbha Shyam Temple, and Kalika Mata Temple.", afternoon: "Gaumukh Reservoir and the surrounding fort-wall views.", evening: "Vijay Stambh and Kirti Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "The stepped ghats and green water make for one of the fort's more peaceful, less crowded stops." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A steadily-visited spot with regular daytime tourist traffic"],
+      precautions: ["Uneven stepped ghats around the water — take care, especially with children", "Standard caution around open water"],
+      soloTips: ["Comfortable for solo visits given the fort's steady daytime tourist flow"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The main reservoir and viewing area during visiting hours"],
+      avoidAreas: ["None specific — a well-visited, patrolled monument"],
+    },
+    rating: 4.4,
+    reviews: 1500,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Sturdy walking shoes for the stepped ghats", "Water bottle", "Sun protection"],
   },
 
   {
