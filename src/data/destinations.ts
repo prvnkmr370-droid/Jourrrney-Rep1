@@ -2028,7 +2028,7 @@ export const DESTINATIONS: Destination[] = [
     bestSeason: "October – March",
     duration: "1–2 days",
     visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Open daily; a separate light & sound show runs in the evening." },
-    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple & Kumbha Shyam Temple" }, { name: "Gaumukh Reservoir" }],
+    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple & Kumbha Shyam Temple", id: "kumbha-shyam-temple" }, { name: "Gaumukh Reservoir" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Chittaurgarh Junction — ~9–10h", fromMumbai: "Via Chittaurgarh Junction — ~13–14h", fromBangalore: "Via Ahmedabad/Udaipur — 24h+", duration: "~9–10h from Delhi", costRange: "₹350–₹1,600", tips: "Chittaurgarh Junction is well-connected on the Delhi–Mumbai line; the fort is a short drive from the station." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 9–10h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~9–10h from Delhi; ~2.5h from Udaipur", costRange: "₹3,000–₹6,000 cab / ₹300–₹600 bus from Udaipur", tips: "Most visitors do Chittorgarh as a day trip from Udaipur — it's an easy 2.5h each way." },
@@ -2253,6 +2253,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3100,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Sturdy walking shoes for uneven ruined stonework", "Water bottle", "A guide for context on the palace's history"],
+  },
+
+  {
+    id: "kumbha-shyam-temple",
+    name: "Kumbha Shyam Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Kumbhashyam Temple"],
+    tagline: "An 8th-Century Temple Renovated by Maharana Kumbha Himself",
+    description: "Kumbha Shyam Temple was originally built in the 8th century, dedicated to Varaha, Vishnu's boar avatar. Maharana Kumbha renovated the temple in the 15th century and installed the Kumbhashyam idol that gives it its current name, making it a wonderful example of Indo-Aryan architectural craft. The temple's soaring tower is visible from Rana Kumbha Palace nearby, standing alongside the Meerabai Temple as one of the fort's most photographed skyline pairings.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/21/A_view_of_kumbhashyam_temple_and_meera_temple_from_kumbha_palace_at_chittaurgarh_fort.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/21/A_view_of_kumbhashyam_temple_and_meera_temple_from_kumbha_palace_at_chittaurgarh_fort.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/21/A_view_of_kumbhashyam_temple_and_meera_temple_from_kumbha_palace_at_chittaurgarh_fort.jpg"],
+    imageCredit: "Photo: Yayawar monk — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates and Wikidata entry confirm Chittorgarh Fort (UNESCO World Heritage Site).",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Originally built 8th century, dedicated to Varaha" },
+      { name: "Renovated by Maharana Kumbha in the 15th century" },
+      { name: "Indo-Aryan architectural style" },
+      { name: "Visible skyline pairing with the nearby Meerabai Temple" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "Right next to the Meerabai Temple — visit both together." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Rana Kumbha Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rana-kumbha-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Temple Cluster", morning: "Rana Kumbha Palace.", afternoon: "Kumbha Shyam Temple and Meerabai Temple, side by side.", evening: "Vijay Stambh and Kirti Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "The view of both temple towers from Rana Kumbha Palace's arched windows is one of the fort's best photo spots." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A steadily-visited temple with regular daytime tourist traffic"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Comfortable for solo visits given the fort's steady daytime tourist flow"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and immediate fort circuit during visiting hours"],
+      avoidAreas: ["None specific — a well-visited, patrolled monument"],
+    },
+    rating: 4.5,
+    reviews: 1900,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Modest clothing", "Water bottle", "Sun protection"],
   },
 
   {
