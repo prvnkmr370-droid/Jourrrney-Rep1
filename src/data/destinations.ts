@@ -2028,7 +2028,7 @@ export const DESTINATIONS: Destination[] = [
     bestSeason: "October – March",
     duration: "1–2 days",
     visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Open daily; a separate light & sound show runs in the evening." },
-    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple", id: "meerabai-temple-chittorgarh" }, { name: "Kumbha Shyam Temple", id: "kumbha-shyam-temple" }, { name: "Gaumukh Reservoir", id: "gaumukh-reservoir" }],
+    highlights: [{ name: "Vijay Stambh (Victory Tower)", id: "vijay-stambh" }, { name: "Rani Padmini's Palace", id: "rani-padmini-palace" }, { name: "Kirti Stambh (Tower of Fame)", id: "kirti-stambh" }, { name: "Meera Temple", id: "meerabai-temple-chittorgarh" }, { name: "Kumbha Shyam Temple", id: "kumbha-shyam-temple" }, { name: "Gaumukh Reservoir", id: "gaumukh-reservoir" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Chittaurgarh Junction — ~9–10h", fromMumbai: "Via Chittaurgarh Junction — ~13–14h", fromBangalore: "Via Ahmedabad/Udaipur — 24h+", duration: "~9–10h from Delhi", costRange: "₹350–₹1,600", tips: "Chittaurgarh Junction is well-connected on the Delhi–Mumbai line; the fort is a short drive from the station." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 9–10h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~9–10h from Delhi; ~2.5h from Udaipur", costRange: "₹3,000–₹6,000 cab / ₹300–₹600 bus from Udaipur", tips: "Most visitors do Chittorgarh as a day trip from Udaipur — it's an easy 2.5h each way." },
@@ -2553,6 +2553,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2000,
     mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
     packingTips: ["Comfortable walking shoes", "Cash for entry tickets", "Water bottle"],
+  },
+
+  {
+    id: "rani-padmini-palace",
+    name: "Rani Padmini's Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Padmini Palace", "Rani Padmini's Water Palace"],
+    tagline: "The 'Water Palace' at the Heart of the Padmini Legend",
+    description: "Rani Padmini's Palace, rising directly from a small lake inside Chittorgarh Fort, is the site tied to the legend of Rani Padmini and her defiance of Sultan Ala-ud-din Khilji during the fort's first great siege in 1303. Its white three-storey tower and adjoining domed pavilion, reflected in the water around it, make it one of the most photographed and most historically resonant spots in the entire fort — a genuine centerpiece of Chittorgarh's storytelling tradition.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Padmini_Palace%2C_Chittorgarh%2C_Rajasthan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Padmini_Palace%2C_Chittorgarh%2C_Rajasthan.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2f/Padmini_Palace%2C_Chittorgarh%2C_Rajasthan.jpg"],
+    imageCredit: "Photo: Jonathan Freundlich — Wikimedia Commons, CC BY-SA 3.0. Same image used on English Wikipedia's Rani Padmini article, Wikivoyage's Chittorgarh and Rajasthan pages, and four other-language Wikipedias.",
+    category: ["Heritage", "UNESCO"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Tied to the legend of Rani Padmini and the 1303 siege" },
+      { name: "Rises directly from a small lake" },
+      { name: "White three-storey tower and domed pavilion" },
+      { name: "One of the fort's most photographed spots" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "One of the fort's most-visited stops — expect company, especially midday." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Fateh Prakash Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "fateh-prakash-palace-chittorgarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Central Legend", morning: "Fateh Prakash Palace museum.", afternoon: "Rani Padmini's Palace — the lake reflection is best in soft afternoon light.", evening: "Vijay Stambh and Kirti Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "Ask your guide about the different versions of the Padmini legend — accounts vary, and the layered storytelling is part of what makes the visit worthwhile." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "One of the fort's busiest, most-visited stops"],
+      precautions: ["Standard caution around the lakeside edge"],
+      soloTips: ["Very comfortable for solo visits given how busy and well-trafficked this particular stop is"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace and lakeside viewing area during visiting hours"],
+      avoidAreas: ["None specific — a well-visited, patrolled monument"],
+    },
+    rating: 4.6,
+    reviews: 3900,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Camera for the lake reflection shot", "Water bottle", "Sun protection"],
   },
 
   {
