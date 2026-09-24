@@ -3462,6 +3462,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Mayo College", distance: "In city", type: "Heritage", isHidden: true, id: "mayo-college-ajmer" },
       { name: "Soniji Ki Nasiyan", distance: "In city", type: "Spiritual", isHidden: true, id: "soniji-ki-nasiyan" },
       { name: "Lake Foy Sagar", distance: "5 km", type: "Nature", isHidden: true, id: "foy-sagar-lake" },
+      { name: "Victoria (Jubilee) Clock Tower", distance: "In city", type: "Heritage", isHidden: true, id: "ghanta-ghar-ajmer" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3839,6 +3840,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3600,
     mustEat: ["Sohan Halwa (in central Ajmer)"],
     packingTips: ["Comfortable walking shoes for the climb", "Water bottle", "Sun protection — limited shade on the hilltop"],
+  },
+
+  {
+    id: "ghanta-ghar-ajmer",
+    name: "Victoria (Jubilee) Clock Tower",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Ghanta Ghar Ajmer"],
+    tagline: "Ajmer's Own Miniature Big Ben, Opposite the Railway Station",
+    description: "The Victoria (Jubilee) Clock Tower, built in 1887, stands opposite Ajmer railway station and is often likened to a smaller version of London's Big Ben, reflecting its British colonial-era architecture. Its domed cupola and four-faced clock make it a recognisable central-Ajmer landmark, still functioning as a practical timepiece for the busy station area around it.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ghantaghar_Ajmer_%28Clock_Tower%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ghantaghar_Ajmer_%28Clock_Tower%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/3/3e/Ghantaghar_Ajmer_%28Clock_Tower%29.jpg"],
+    imageCredit: "Photo: ThePerfectYellow — Wikimedia Commons, CC BY 4.0. Same image used on English Wikipedia's List of State Protected Monuments in Rajasthan and in the Wiki Loves Monuments India Ajmer collection.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "10–15 minutes",
+    visitingHours: { opens: "24 hours (exterior view)", closes: "24 hours (exterior view)", note: "A functioning landmark, viewable anytime from outside. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1887, British colonial architecture" },
+      { name: "Likened to a smaller version of London's Big Ben" },
+      { name: "Located directly opposite Ajmer railway station" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Opposite Ajmer railway station", costRange: "₹30–₹100 by auto within Ajmer", tips: "Easy to see in passing if you're arriving or departing via Ajmer Junction." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels near Ajmer Junction or central Ajmer"], description: "A quick stop near the railway station rather than a dedicated destination." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹100 within Ajmer", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Right by Ajmer Junction railway station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6500, accommodation: 5000, food: 1200, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival in Ajmer", morning: "Arrive at Ajmer Junction — the Victoria Clock Tower stands right opposite the station.", afternoon: "Dargah Sharif of Khwaja Moinuddin Chishti.", evening: "Ana Sagar Lake at sunset.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "A convenient landmark to spot on arrival or departure — no dedicated visit needed." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Directly opposite a busy railway station with constant foot traffic and visible security"],
+      precautions: ["Standard station-area caution — keep valuables secure in the busy surroundings"],
+      soloTips: ["A quick, well-lit, busy spot — comfortable to view any time of day"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Railway Police (GRP) Ajmer", number: "1512" }, { label: "Police", number: "100" }],
+      safeZones: ["The railway station forecourt and surrounding area"],
+      avoidAreas: ["None specific — a busy, well-trafficked area"],
+    },
+    rating: 4.1,
+    reviews: 1400,
+    mustEat: ["Station-area food stalls", "Sohan Halwa (in central Ajmer)"],
+    packingTips: ["Nothing specific — a quick stop rather than a dedicated visit"],
   },
 
   {
