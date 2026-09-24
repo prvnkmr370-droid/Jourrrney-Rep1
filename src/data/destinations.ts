@@ -3396,6 +3396,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Godawari Dham", distance: "In city", type: "Spiritual", isHidden: true, id: "godawari-dham" },
       { name: "Kaithoon", distance: "Near Kota", type: "Culture", isHidden: true, id: "kaithoon" },
       { name: "Garadia Mahadev", distance: "On NH76", type: "Nature", isHidden: true, id: "garadia-mahadev" },
+      { name: "Gaiparnath Temple", distance: "Chambal valley area", type: "Spiritual", isHidden: true, id: "gaiparnath-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -4011,6 +4012,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 700,
     mustEat: ["Rajasthani thali (in Kota)"],
     packingTips: ["Comfortable walking shoes", "Camera for the river-valley view", "Rain gear if visiting during monsoon"],
+  },
+
+  {
+    id: "gaiparnath-temple",
+    name: "Gaiparnath Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Gaipar Nath"],
+    tagline: "An Old Shiva Shrine Tucked Inside a Waterfall Gorge",
+    description: "Gaiparnath is an old Shiva temple set within a deep, dramatic chasm in the Chambal valley, with a waterfall running close by that gives the site its name. The gushing sound of the water against the ruggedly beautiful cliffs and forest around it makes for a genuinely idyllic, slightly hidden spot — one that rewards the effort of getting there with real scenic character rather than a manicured tourist setup.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gaiparnath.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gaiparnath.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/5c/Gaiparnath.jpg"],
+    imageCredit: "Photo: Ipawanc — Wikimedia Commons, CC BY-SA 4.0. Structured data confirms \"depicts: Gaipar Nath\" with a matching Wikidata entry and Kota district location.",
+    category: ["Spiritual", "Nature"],
+    bestSeason: "July – September (monsoon) or October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Old Shiva temple set in a deep gorge/chasm" },
+      { name: "Waterfall running close to the temple" },
+      { name: "Ruggedly scenic Chambal valley forests and cliffs" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Chambal valley, Kota district", costRange: "₹400–₹900 by taxi round trip from Kota", tips: "The waterfall and gorge setting is most dramatic just after monsoon rains." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a half-day trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹400–₹900 from Kota", notes: "Standard way to reach this out-of-town gorge temple", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage this far out — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "Kota district", type: "City", isHidden: false, id: "kota" },
+      { name: "Garadia Mahadev", distance: "Chambal valley area", type: "Nature", isHidden: true, id: "garadia-mahadev" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 250, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2950, accommodation: 1600, food: 550, transport: 550, activities: 250 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7300, accommodation: 5000, food: 1200, transport: 800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chambal Valley Gorge Temples", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Gaiparnath Temple and Garadia Mahadev, both offering scenic Chambal valley views.", evening: "Return to central Kota, Chambal riverfront at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Wear sturdy footwear — the gorge approach can be uneven and slippery, especially near the waterfall." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known local temple and waterfall spot, visited by day-trippers"],
+      precautions: ["Remote gorge location — visit during daylight hours with pre-arranged transport", "Go with a group or a trusted driver", "Be cautious near the waterfall's wet, uneven rocks"],
+      soloTips: ["A hired taxi that waits is the most comfortable way to visit solo given the distance and terrain"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and immediate waterfall viewing area during daylight"],
+      avoidAreas: ["The gorge area after dark", "Wet rocks close to the waterfall edge"],
+    },
+    rating: 4.2,
+    reviews: 550,
+    mustEat: ["Rajasthani thali (in Kota)"],
+    packingTips: ["Sturdy, grippy footwear for the gorge terrain", "Camera for the waterfall and temple", "Rain gear if visiting during monsoon"],
   },
 
   {
