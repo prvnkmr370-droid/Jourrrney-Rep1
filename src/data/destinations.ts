@@ -3459,6 +3459,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaipur", distance: "130 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Ajmer Sharif Dargah", distance: "In city", type: "Spiritual", isHidden: true, id: "ajmer-sharif-dargah" },
       { name: "Adhai Din Ka Jhonpra", distance: "In city", type: "Heritage", isHidden: true, id: "adhai-din-ka-jhonpra" },
+      { name: "Mayo College", distance: "In city", type: "Heritage", isHidden: true, id: "mayo-college-ajmer" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3601,6 +3602,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 6200,
     mustEat: ["Sohan Halwa (in central Ajmer)", "Nihari at Dargah Bazar food stalls"],
     packingTips: ["Sturdy walking shoes for uneven stone surfaces", "Modest clothing", "Water bottle, especially in warmer months"],
+  },
+
+  {
+    id: "mayo-college-ajmer",
+    name: "Mayo College",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "The 'Eton of the East', Founded 1875 for India's Princely Families",
+    description: "Mayo College is a historic boys' boarding school founded in 1875, named after Richard Bourke, 6th Earl of Mayo, and modeled on Britain's Eton College with the specific aim of educating sons from India's princely families. Its striking Indo-Saracenic main building is topped with a central clock tower, and the college's Coat of Arms — pairing a Rajput and a Bhil warrior — was designed by John Lockwood Kipling, the college's principal and father of author Rudyard Kipling. The main building remains one of Ajmer's most photographed pieces of colonial-era architecture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Mayo_college_in_a_sunny_day.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/51/Mayo_college_in_a_sunny_day.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/51/Mayo_college_in_a_sunny_day.jpg"],
+    imageCredit: "Photo: Singh92karan — Wikimedia Commons, CC BY-SA 3.0. Same image used on English Wikipedia's Mayo College and Ajmer articles.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes (exterior/grounds)",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "A functioning school — general visitors typically view the exterior and grounds; interior access is limited. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Founded 1875, named after the 6th Earl of Mayo" },
+      { name: "Modeled on Britain's Eton College" },
+      { name: "Coat of Arms designed by John Lockwood Kipling" },
+      { name: "Indo-Saracenic main building with central clock tower" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Central Ajmer", costRange: "₹30–₹150 by auto within Ajmer", tips: "A functioning school — check ahead if you want anything beyond viewing the exterior." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer"], description: "Best visited as a short stop from central Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150 within Ajmer", notes: "Standard for getting around the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available and reliable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2650, accommodation: 1500, food: 550, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6800, accommodation: 5000, food: 1200, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Colonial Ajmer", morning: "Mayo College — view the Indo-Saracenic main building and clock tower from the grounds.", afternoon: "Victoria Clock Tower and central Ajmer's colonial-era buildings.", evening: "Ana Sagar Lake at sunset.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "Since it's a working school, keep visits low-key and respectful of students and staff." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within central Ajmer, a well-established residential and institutional area", "A functioning, well-secured educational campus"],
+      precautions: ["Respect that this is an active school — avoid disrupting classes or students"],
+      soloTips: ["Straightforward daytime visit viewing the exterior and grounds"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["Central Ajmer institutional area around the college"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.4,
+    reviews: 3100,
+    mustEat: ["Sohan Halwa (in central Ajmer)", "Rajasthani thali at central Ajmer restaurants"],
+    packingTips: ["Modest, respectful clothing given it's a school campus", "Camera for the main building's architecture"],
   },
 
   {
