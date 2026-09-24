@@ -4566,6 +4566,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Nagar Sagar Kund", distance: "In city", type: "Heritage", isHidden: true, id: "nagar-sagar-kund" },
       { name: "Bhimlat Waterfall", distance: "~35 km", type: "Nature", isHidden: true, id: "bhimlat-waterfall" },
       { name: "Kshar Bag", distance: "In city", type: "Heritage", isHidden: true, id: "kshar-bag" },
+      { name: "Phool Sagar Palace", distance: "Bundi outskirts", type: "Heritage", isHidden: true, id: "phool-sagar-palace" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -5188,6 +5189,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 700,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Camera for the cenotaph architecture"],
+  },
+
+  {
+    id: "phool-sagar-palace",
+    name: "Phool Sagar Palace",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Private Royal Lake Palace with Paintings by Italian Prisoners of War",
+    description: "Phool Sagar Palace, still a private property of the Bundi royal family's descendants, sits on the banks of its own artificial lake, from which it takes its name. The palace houses an exclusive collection of paintings created by Italian prisoners of war, and its lakeside grounds are genuinely beautiful, though special permission is required to explore the palace and its interior — a detail that gives a visit here real exclusivity compared to Bundi's more freely accessible sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Phool_Sagar_Palace.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Phool_Sagar_Palace.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/2f/Phool_Sagar_Palace.jpg"],
+    imageCredit: "Photo: Evanowich — Wikimedia Commons, CC BY 4.0. Used on English Wikipedia's dedicated Phool Sagar Palace article.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes (exterior); longer with special permission",
+    visitingHours: { opens: "Exterior viewable in daylight hours", closes: "Exterior viewable in daylight hours", note: "Special permission required to enter the palace and grounds — arrange in advance via local contacts or your hotel. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Private property of the Bundi royal family's descendants" },
+      { name: "Artificial lake the palace is named for" },
+      { name: "Paintings by Italian prisoners of war" },
+      { name: "Special permission required for interior access" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Bundi outskirts", costRange: "₹100–₹300 by auto within Bundi", tips: "Arrange permission in advance through your hotel or a local guide if you want interior access." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "A short trip from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300", notes: "Standard for reaching the palace grounds", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 150, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2650, accommodation: 1500, food: 550, transport: 300, activities: 100 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Private Heritage", morning: "Garh Palace and Taragarh Fort.", afternoon: "Phool Sagar Palace's lakeside grounds (interior with prior permission).", evening: "Nawal Sagar Lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "Ask locally in advance about arranging permission if you want to see the Italian POW paintings — it isn't a walk-in site." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A private, well-maintained property with limited but controlled access"],
+      precautions: ["Only enter with proper permission arranged in advance", "Standard caution around the lakeside grounds"],
+      soloTips: ["Arranging a guide or permission through your hotel is the easiest way to visit solo"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds during permitted daylight visits"],
+      avoidAreas: ["None specific — access itself is the main constraint"],
+    },
+    rating: 4.2,
+    reviews: 400,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Advance arrangement for interior permission", "Camera for the lakeside setting", "Comfortable walking shoes"],
   },
 
   {
