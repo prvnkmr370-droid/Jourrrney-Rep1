@@ -4540,7 +4540,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "History"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Garh Palace (Bundi Palace)", id: "garh-palace-bundi" }, { name: "Taragarh Fort", id: "taragarh-fort-bundi" }, { name: "Raniji ki Baori (stepwell)", id: "raniji-ki-baori" }, { name: "Bundi's 50+ other stepwells" }, { name: "Blue-washed old town lanes" }],
+    highlights: [{ name: "Garh Palace (Bundi Palace)", id: "garh-palace-bundi" }, { name: "Taragarh Fort", id: "taragarh-fort-bundi" }, { name: "Raniji ki Baori (stepwell)", id: "raniji-ki-baori" }, { name: "Bundi's 50+ other stepwells" }, { name: "Blue-washed old town lanes" }, { name: "84 Pillared Cenotaph", id: "chaurasi-khambon-ki-chhatri" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, then ~35 min road — ~6–7h total", fromMumbai: "Via Kota — ~12–13h", fromBangalore: "Via Kota — 20h+", duration: "~6–7h from Delhi to Kota, +35 min road", costRange: "₹300–₹1,500 (train) + ₹200–₹400 (local transfer)", tips: "Kota Junction is the well-connected railhead; Bundi has its own smaller station too, with fewer direct long-distance trains." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 via Kota — 6–7h", fromMumbai: "Via Kota — 12–13h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹2,500–₹5,000 cab / ₹300–₹500 bus", tips: "Often visited as a quieter alternative or add-on to Jaipur/Udaipur, roughly 2.5–3h from either." },
@@ -4766,6 +4766,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2400,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["A flashlight/phone light for the stepwell interior", "Comfortable walking shoes", "Modest clothing"],
+  },
+
+  {
+    id: "chaurasi-khambon-ki-chhatri",
+    name: "84 Pillared Cenotaph",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Chaurasi Khambon Ki Chhatri"],
+    tagline: "A Foster Brother's Memorial, Held Up by 84 Carved Pillars",
+    description: "The 84 Pillared Cenotaph, or Chaurasi Khambon Ki Chhatri, was built in the 17th century by Rao Raja Anirudh of the Hada Chauhan dynasty as a memorial to his beloved foster brother and wet nurse's family, Deva. Its elaborate canopy, supported by 84 intricately carved pillars, shelters a large shivling beneath it, and the structure's carvings of deer, elephants, and apsaras make it a genuinely impressive piece of Rajput funerary architecture — a tribute built from real personal devotion rather than dynastic obligation.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Chaurasi_Khambon_Ki_Chhatri.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Chaurasi_Khambon_Ki_Chhatri.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/d/d5/Chaurasi_Khambon_Ki_Chhatri.jpg"],
+    imageCredit: "Photo: Sharvarism — Wikimedia Commons, CC BY-SA 4.0. A Wiki Loves Monuments 2025 India winning entry, categorized under Chaurasi Khambon ki Chhatri, Bundi.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 17th century by Rao Raja Anirudh" },
+      { name: "Memorial to his foster brother Deva" },
+      { name: "Canopy supported by 84 carved pillars" },
+      { name: "Large shivling sheltered beneath" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Bundi town", costRange: "₹40–₹150 by auto within Bundi", tips: "A quieter, less-crowded stop worth combining with the town's other heritage sites." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "Walkable or a short auto ride from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Standard for getting around Bundi", available: true },
+      { mode: "Walking", cost: "Free", notes: "Within reach of the old town on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Lesser-Known Heritage", morning: "Garh Palace and Taragarh Fort.", afternoon: "84 Pillared Cenotaph and Raniji ki Baori.", evening: "Nawal Sagar lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "The pillar carvings of deer, elephants, and apsaras reward a slow, close look rather than a quick pass-through." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site with regular daytime visitor traffic", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Standard heritage-site caution"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The cenotaph grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.5,
+    reviews: 1300,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera for the pillar carvings"],
   },
 
   {
