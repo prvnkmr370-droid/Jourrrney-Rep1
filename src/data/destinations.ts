@@ -3955,6 +3955,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Siliserh Lake Palace", distance: "13 km", type: "Nature", isHidden: true, id: "siliserh-lake-palace" },
       { name: "Jaipur", distance: "150 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Moosi Maharani Ki Chhatri", distance: "In city", type: "Heritage", isHidden: true, id: "moosi-maharani-chhatri" },
+      { name: "Fateh Jung Gumbad", distance: "In city", type: "Heritage", isHidden: true, id: "fateh-jung-gumbad" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4158,6 +4159,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2100,
     mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
     packingTips: ["Camera for the lakeside sunset views", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "fateh-jung-gumbad",
+    name: "Fateh Jung Gumbad",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Tomb of Fateh Jung"],
+    tagline: "A Massive Dome Marking a Mughal Minister's Tomb",
+    description: "Fateh Jung Gumbad is a spectacular tomb combining domes and minarets, built on a perfect square platform beside Alwar railway station. Its massive dome can genuinely be seen from far across the city, making it an example of medieval architecture at real scale. The tomb is dedicated to Fateh Jung, a kind-hearted minister who served Mughal Emperor Shah Jahan.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tomb_of_Fateh_Jung_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tomb_of_Fateh_Jung_01.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/f/f3/Tomb_of_Fateh_Jung_01.jpg"],
+    imageCredit: "Photo: Pinakpani — Wikimedia Commons, CC BY-SA 4.0. Description explicitly reads \"Tomb of Fateh Jung, Minister of Shah Jahan. It is situated beside Alwar railway station, Rajasthan.\"",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "20–30 minutes",
+    visitingHours: { opens: "24 hours (exterior view)", closes: "24 hours (exterior view)", note: "Viewable from outside anytime; beside Alwar railway station. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Dedicated to Fateh Jung, minister of Shah Jahan" },
+      { name: "Massive dome visible across the city" },
+      { name: "Built on a perfect square platform" },
+      { name: "Located beside Alwar railway station" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Beside Alwar railway station", costRange: "₹40–₹150 by auto within Alwar", tips: "Easy to see in passing if you're arriving or departing via Alwar Junction." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "A quick stop near the railway station rather than a dedicated destination." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Alwar", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Right by Alwar railway station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 100 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Arrival in Alwar", morning: "Arrive at Alwar Junction — the Fateh Jung Gumbad's dome is visible right nearby.", afternoon: "Bala Qila and Alwar City Palace.", evening: "Moosi Maharani Ki Chhatri at sunset.", stay: "Alwar town", meals: "Rajasthani thali (₹180)", tips: "A convenient landmark to spot on arrival or departure — no dedicated visit needed." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Directly beside a busy railway station with constant foot traffic"],
+      precautions: ["Standard station-area caution — keep valuables secure in the busy surroundings"],
+      soloTips: ["A quick, busy spot — comfortable to view any time of day"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Railway Police (GRP) Alwar", number: "1512" }, { label: "Police", number: "100" }],
+      safeZones: ["The railway station forecourt and surrounding area"],
+      avoidAreas: ["None specific — a busy, well-trafficked area"],
+    },
+    rating: 4.2,
+    reviews: 1200,
+    mustEat: ["Station-area food stalls", "Alwar ka Mawa"],
+    packingTips: ["Nothing specific — a quick stop rather than a dedicated visit"],
   },
 
   {
