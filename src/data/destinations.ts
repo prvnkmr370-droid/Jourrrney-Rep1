@@ -3395,6 +3395,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Kansua Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "kansua-temple" },
       { name: "Godawari Dham", distance: "In city", type: "Spiritual", isHidden: true, id: "godawari-dham" },
       { name: "Kaithoon", distance: "Near Kota", type: "Culture", isHidden: true, id: "kaithoon" },
+      { name: "Garadia Mahadev", distance: "On NH76", type: "Nature", isHidden: true, id: "garadia-mahadev" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3952,6 +3953,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 800,
     mustEat: ["Rajasthani thali (in Kota)"],
     packingTips: ["Cash for handloom purchases", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "garadia-mahadev",
+    name: "Garadia Mahadev",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Shiva Temple with a Sweeping View of the Meandering Chambal",
+    description: "Garadia Mahadev, on the Kota-Dabi-Udaipur Road, is a temple that gives a genuinely grand view of the Chambal River as it meanders through forested cliffs below — a real reward for the drive out, especially during the monsoon when the surrounding wilderness turns lush green. Set within the Aravalli range, one of the world's oldest mountain ranges, the spot is as much valued for the river-valley panorama as for the temple itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/18/Tmt_134.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/18/Tmt_134.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/18/Tmt_134.jpg", "https://upload.wikimedia.org/wikipedia/commons/e/e5/Chambal_River_meander.jpg"],
+    imageCredit: "Photos: Vickyy143, Hemantkrpali — Wikimedia Commons, CC BY-SA 4.0. Second photo captioned \"Meandering chambal near Garadia Mahadev kota.\"",
+    category: ["Spiritual", "Nature"],
+    bestSeason: "July – September (monsoon) or October – March",
+    duration: "1–1.5 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Grand view of the meandering Chambal River" },
+      { name: "Set on the Kota-Dabi-Udaipur Road (NH76)" },
+      { name: "Especially scenic during monsoon" },
+      { name: "Forested cliffs and Aravalli wilderness views" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "On NH76, outside Kota city", costRange: "₹400–₹900 by taxi round trip from Kota", tips: "A scenic half-day drive from Kota — check road conditions before heading out during heavy monsoon rain." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a half-day trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹400–₹900 from Kota", notes: "Standard way to reach this out-of-town viewpoint", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage this far out — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "Outside city, on NH76", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 250, activities: 0 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2950, accommodation: 1600, food: 550, transport: 550, activities: 250 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7300, accommodation: 5000, food: 1200, transport: 800, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chambal Valley Views", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Drive out to Garadia Mahadev for the panoramic river-valley view.", evening: "Return to central Kota, Chambal riverfront at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "The view is most dramatic during or just after the monsoon, when the valley is at its greenest." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known local viewpoint and temple, visited by day-trippers"],
+      precautions: ["Remote highway location — visit during daylight hours with pre-arranged transport", "Go with a group or a trusted driver"],
+      soloTips: ["A hired taxi that waits is the most comfortable way to visit solo given the distance from the city"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple and viewpoint area during daylight"],
+      avoidAreas: ["The surrounding highway stretch after dark"],
+    },
+    rating: 4.2,
+    reviews: 700,
+    mustEat: ["Rajasthani thali (in Kota)"],
+    packingTips: ["Comfortable walking shoes", "Camera for the river-valley view", "Rain gear if visiting during monsoon"],
   },
 
   {
