@@ -3460,6 +3460,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ajmer Sharif Dargah", distance: "In city", type: "Spiritual", isHidden: true, id: "ajmer-sharif-dargah" },
       { name: "Adhai Din Ka Jhonpra", distance: "In city", type: "Heritage", isHidden: true, id: "adhai-din-ka-jhonpra" },
       { name: "Mayo College", distance: "In city", type: "Heritage", isHidden: true, id: "mayo-college-ajmer" },
+      { name: "Soniji Ki Nasiyan", distance: "In city", type: "Spiritual", isHidden: true, id: "soniji-ki-nasiyan" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3660,6 +3661,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3100,
     mustEat: ["Sohan Halwa (in central Ajmer)", "Rajasthani thali at central Ajmer restaurants"],
     packingTips: ["Modest, respectful clothing given it's a school campus", "Camera for the main building's architecture"],
+  },
+
+  {
+    id: "soniji-ki-nasiyan",
+    name: "Soniji Ki Nasiyan",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Ajmer Jain Temple", "Red Temple"],
+    tagline: "A Golden-Chambered Jain Temple Among India's Richest",
+    description: "Soniji Ki Nasiyan is a late-19th-century Jain temple dedicated to Rishabhdev (Adinath), the first Tirthankar, entered through a red-stone facade and a marble staircase carved with images of the Tirthankaras. Its main chamber, called 'Swarna Nagari' (City of Gold), holds an elaborate double-storeyed hall of gold-plated wooden figures depicting Jain cosmology — a display featured in Kurt Titze's book 'Jainism: A Pictorial Guide to the Religion of Non-Violence' — and the temple is counted among the richest in India. A tall white marble manastambha (pillar of honor) rises in its courtyard.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nasiyan_Jain_Temple_-_Full_View.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nasiyan_Jain_Temple_-_Full_View.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4c/Nasiyan_Jain_Temple_-_Full_View.jpg"],
+    imageCredit: "Photo: Vaibhavsoni1 — Wikimedia Commons, CC0. Same image used on English, Spanish, and Italian Wikipedia's Manastambha articles and Hindi Wikipedia's Ajmer Jain Temple article.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Late 19th-century construction, dedicated to Rishabhdev" },
+      { name: "'Swarna Nagari' (City of Gold) gold-plated figure hall" },
+      { name: "Red-stone entrance, marble Tirthankar-carved staircase" },
+      { name: "Featured in Kurt Titze's Jainism: A Pictorial Guide" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Prithviraj Marg, central Ajmer", costRange: "₹30–₹150 by auto within Ajmer", tips: "Easily combined with a Dargah Sharif visit as both are in central Ajmer." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer"], description: "Best visited as a short stop from central Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150 within Ajmer", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from nearby sights", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2650, accommodation: 1500, food: 550, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6800, accommodation: 5000, food: 1200, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ajmer's Sacred Sites", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Soniji Ki Nasiyan — take time in the gold-figure Swarna Nagari hall.", evening: "Ana Sagar Lake at sunset.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "Photography inside the Swarna Nagari hall may be restricted — check on arrival." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within central Ajmer, a well-visited religious site with steady daytime footfall"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Straightforward daytime visit, easily combined with the nearby Dargah"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.5,
+    reviews: 5400,
+    mustEat: ["Sohan Halwa (in central Ajmer)", "Rajasthani thali at central Ajmer restaurants"],
+    packingTips: ["Modest clothing", "Camera (check photography rules for the gold-figure hall)"],
   },
 
   {
