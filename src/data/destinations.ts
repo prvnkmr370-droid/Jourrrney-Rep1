@@ -2119,6 +2119,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Junagarh Fort", distance: "In city", type: "Heritage", isHidden: true, id: "junagarh-fort" },
       { name: "Lalgarh Palace", distance: "In city", type: "Heritage", isHidden: true, id: "lalgarh-palace" },
       { name: "Rampuria Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "rampuria-haveli" },
+      { name: "Bhandasar Jain Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "bhandasar-jain-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
@@ -2435,6 +2436,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3600,
     mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
     packingTips: ["Comfortable walking shoes", "Camera", "Binoculars for birdwatching"],
+  },
+
+  {
+    id: "bhandasar-jain-temple",
+    name: "Bhandasar Jain Temple",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A 1514-Founded Temple Built With Ghee Instead of Water, So Legend Holds",
+    description: "Bhandasar Jain Temple, founded in 1514 by Seth Bhanda Sah, is dedicated to the fifth Tirthankara, Sumatinathji, and is one of Bikaner's oldest surviving monuments, protected as a Monument of National Importance. Local tradition holds that ghee, rather than water, was used in mixing the temple's mortar — a story tied to a famously hot summer years after construction, when the heat reportedly caused ghee to seep from the walls. Inside, the temple is richly decorated with murals, gold leaf paintings, and mirror work created by the Usta artisan community, and it remains an active pilgrimage site drawing devotees from across the country.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bhandasar_Jain_temple_exterior_-_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bhandasar_Jain_temple_exterior_-_1.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/ed/Bhandasar_Jain_temple_exterior_-_1.jpg"],
+    imageCredit: "Photo: Vivek B Govindaraju — Wikimedia Commons, CC BY-SA 4.0. ASI monument N-RJ-22; same image used on the English Wikipedia article for Bhandasar Jain Temple.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Founded 1514 by Seth Bhanda Sah" },
+      { name: "Dedicated to the 5th Tirthankara, Sumatinathji" },
+      { name: "Murals, gold leaf paintings, and mirror work by Usta artisans" },
+      { name: "Monument of National Importance" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "Central Bikaner, near the Rampuria Havelis", costRange: "₹40–₹150 by auto within Bikaner", tips: "Easy to combine with the Rampuria Havelis and Lakshminath Temple, all within walking distance." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Old-city heritage hotels"], description: "Central old-city location." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Within the old-city temple/haveli cluster", available: true },
+      { mode: "Cycle Rickshaw", cost: "₹30–₹100", notes: "Good for the narrow old-city lanes", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rampuria Haveli", distance: "~0.5 km", type: "Heritage", isHidden: true, id: "rampuria-haveli" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1050, accommodation: 500, food: 250, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 2000, food: 600, transport: 400, activities: 600 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 15200, accommodation: 11000, food: 1800, transport: 700, activities: 1700 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old City Temples & Havelis", morning: "Junagarh Fort.", afternoon: "Bhandasar Jain Temple and the Rampuria Havelis.", evening: "Kot Gate bazaar.", stay: "Old-city heritage hotel", meals: "Bikaneri thali (₹200), rooftop dinner (₹400)", tips: "Look closely at the murals and mirror work — the interior detail is the temple's real draw." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An active pilgrimage temple within the busy old-city area"],
+      precautions: ["Dress modestly", "Standard temple-visit precautions"],
+      soloTips: ["Comfortable for solo daytime visits given the steady flow of devotees and tourists"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.5,
+    reviews: 2700,
+    mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
+    packingTips: ["Modest clothing", "Easy-to-remove footwear"],
   },
 
   {
