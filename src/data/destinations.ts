@@ -3392,6 +3392,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Darrah Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: true, id: "darrah-mukundara-hills" },
       { name: "Abheda Mahal", distance: "8 km", type: "Heritage", isHidden: true, id: "abheda-mahal" },
       { name: "Chambal River Front", distance: "In city", type: "Heritage", isHidden: true, id: "chambal-river-front-kota" },
+      { name: "Kansua Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "kansua-temple" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3773,6 +3774,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5600,
     mustEat: ["Riverfront food stalls", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes for the ghats", "Camera for the fountain and light show"],
+  },
+
+  {
+    id: "kansua-temple",
+    name: "Kansua Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Kanswa Temple"],
+    tagline: "One of Kota's Oldest Shiva Temples, Inscribed 738 AD",
+    description: "Kansua Temple is one of Kota's oldest and most striking temples, dedicated to Lord Shiva, with a small pond within its own premises. A stone inscription dating to 738 AD credits its construction to Raja Shivgana Maurya, though local legend instead attributes it to the Pandavas during their period of exile — a genuine layering of recorded history and oral tradition that gives the temple much of its character. It remains an active site of worship, regularly visited by devotees.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Shiv_Temple_Kansua_Kota.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Shiv_Temple_Kansua_Kota.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4e/Shiv_Temple_Kansua_Kota.jpg"],
+    imageCredit: "Photo: Sushmaahuja17 — Wikimedia Commons, CC BY-SA 4.0. Same image used on English Wikipedia's Kota district, Cebuano Wikipedia's Kansua, and Hindi Wikipedia's कोटा जिला articles.",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "One of Kota's oldest temples, dedicated to Shiva" },
+      { name: "Stone inscription dated 738 AD" },
+      { name: "Small pond within the temple premises" },
+      { name: "Local legend credits construction to the Pandavas" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Kota city", costRange: "₹40–₹200 by auto within Kota", tips: "A quieter, more local temple experience compared to Kota's bigger tourist sites." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a short stop from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable given Kota's size as a major city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1600, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6700, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kota's Living Heritage", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Kansua Temple — a quieter, genuinely old site of active worship.", evening: "Chambal River Front at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "Dress modestly and be respectful — this is a genuinely active place of worship, not just a heritage site." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["An active neighbourhood temple with regular local devotee traffic"],
+      precautions: ["Dress modestly, as at any active place of worship"],
+      soloTips: ["Comfortable for solo daytime visits given the steady local footfall"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The temple grounds during opening hours"],
+      avoidAreas: ["None specific — a standard neighbourhood temple visit"],
+    },
+    rating: 4.3,
+    reviews: 1100,
+    mustEat: ["Rajasthani thali (in central Kota)"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
   {
