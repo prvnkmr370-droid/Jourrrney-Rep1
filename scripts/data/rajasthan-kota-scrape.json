@@ -1,0 +1,38 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/kota.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-24",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Kota",
+  "about": "History dates to the 12th century when Rao Deva conquered the territory and founded Hadoti. The independent Rajput state of Kota was carved out of Bundi in 1631; a turbulent history of raids by Mughal rulers, the Maharajas of Jaipur, and Maratha warlords. Known for gold jewellery, Doria sarees, silk sarees, and Kota stone.",
+  "places": [
+    { "name": "Garh Palace (City Palace)", "location": "Central Kota", "facts": "The city's foremost attraction; sprawling complex of suites and apartments built by different Rajput rulers at different times, predominantly Rajput architectural style." },
+    { "name": "Rao Madho Singh Museum", "location": "Within Garh Palace", "facts": "Houses Rajput miniature paintings of the Kota school, sculptures, arms, and antiques." },
+    { "name": "Abheda Mahal and Abheda Biological Park", "location": "8 km from Kota", "facts": "Medieval palace on the banks of a tank, former royal recreation spot; nearby Karni Mata temple; newly built eco-friendly biological park run by the forest department." },
+    { "name": "Dad Devi Temple", "location": "18 km from Kota", "facts": "Royal-household deity temple, dedicated to Shri Dad Devi Mata Ji (an incarnation of Durga), surrounded by forest." },
+    { "name": "Charan Chauki", "location": "15 km from Kota, en route to Dad Devi", "facts": "Legendary spot where Lord Krishna is said to have rested while travelling from Mathura to Dwarka; his footprints said to be preserved here." },
+    { "name": "Kishore Sagar Jagmandir", "location": "Middle of Kishore Sagar Lake, Kota", "facts": "Built by a Kota queen between 1743-1745; red sandstone island palace; boat rides available; Keshar Bagh nearby known for royal cenotaphs." },
+    { "name": "Garden of Joy (City Park)", "location": "Jhalawar Road, Kota", "facts": "30-hectare park, 85% intensively planted, with a 1.25 km canal; City Bazaar Amphitheater, Kids Zone, Open Gym, Botanical Garden, Shrubbery Garden, children's boating." },
+    { "name": "Chambal River Front", "location": "Kota Barrage to Nayapura Pulia, Kota", "facts": "First heritage riverfront developed in India, 2.75 km along both banks; 26 themed ghats; World Heritage Ghat with replica architecture (Red Fort, Gopuram Temple, Chinese Pagoda, Westminster, Louvre, etc.); fountain and light show; Zodiac ghats." },
+    { "name": "Chambal Garden", "location": "Banks of the Chambal River, Kota", "facts": "Popular picnic spot; boat rides near the forest office jetty; part of the National Chambal Gharial Sanctuary, established 1983 to conserve marsh crocodiles and gharials; notable bird population." },
+    { "name": "Seven Wonder Park", "location": "Vallabh Bari, along Kishore Sagar Lake, Kota", "facts": "Rs. 20-crore project featuring replicas of the Seven Wonders of the World." },
+    { "name": "Khade Ganesh Ji Temple", "location": "Southern Kota", "facts": "India's only temple with a standing (rather than seated) idol of Ganesh; Rangbadi Balaji temple en route." },
+    { "name": "Karneshwar Temple", "location": "Jhalawar Road (NH12), Kota", "facts": "Shiva temple, especially scenic during monsoon; popular with devotees and picnickers." },
+    { "name": "Godawari Dham", "location": "Near Chambal Garden, Kota", "facts": "Hanuman temple beside the Chambal River, built entirely of white marble; large marble swan atop the entrance gate." },
+    { "name": "Alnia Dam", "location": "Kota district", "facts": "Known for Upper Paleolithic-era rock paintings, still in good condition along the riverbank." },
+    { "name": "Mukundara Hills Tiger Reserve", "location": "50 km from Kota", "facts": "Tigers relocated here from Ranthambore; 417 sq km core area plus 342.82 sq km buffer zone; also panther, deer, wild boar, bear." },
+    { "name": "Garadia Mahadev", "location": "Kota-Dabi-Udaipur Road (NH76)", "facts": "Temple with a grand view of the Chambal River and surrounding wilderness, especially scenic during monsoon." },
+    { "name": "Kansua Temple", "location": "Kota", "facts": "One of Kota's oldest temples, dedicated to Shiva; small pond within its premises; stone inscription dated 738 AD attributing construction to Raja Shivgana Maurya, though local legend credits the Pandavas." },
+    { "name": "Mathuradheesh Mandir", "location": "Kota", "facts": "Belongs to the Pushti Marg Vaishnava sect founded by Shri Vallabhacharyaji; Krishna idol brought from Karnaval village near Mathura; major Janmashtami, Nand Mahotsav, Annakoota, and Holi celebrations." },
+    { "name": "Gaiparnath Temple", "location": "Chambal valley, Kota district", "facts": "Old Shiva temple set in a deep gorge/chasm with a waterfall, scenic views of forests and cliffs." },
+    { "name": "Kaithoon", "location": "Near Kota", "facts": "Weaver village settled by 'Masuria' families brought from Mysore by Rao Kishore Singh (serving in Shah Jahan's Mughal army); origin of the Kota Doria fabric, originally worn as royal-court turbans, later sarees and dhotis." },
+    { "name": "Brajvilas Museum (Government Museum, Kota)", "location": "Brij Vilas Palace, near Kishore Sagar Lake", "facts": "Artefacts from ancient to medieval times: statues (including reclining Vishnu), weapons, manuscripts, coins, sculptures, sacrificial pillars (Yups) of Badva." },
+    { "name": "Kishore Sagar Lake", "location": "Kota", "facts": "One of several lakes commissioned by Kota's rulers; Jagmandir built mid-to-late 18th century as a royal retreat; boat service available to the island palace." }
+  ],
+  "howToReach": {
+    "air": "Nearest airport is Sanganer Airport, Jaipur, ~244 km away",
+    "rail": "Kota is a major junction on the Delhi-Mumbai Western Railway line; most trains pass through Kota",
+    "road": "Regular buses from all cities and towns in Rajasthan"
+  },
+  "nearbyDistances": { "Bundi": "35 km", "Chittorgarh": "178 km", "Udaipur": "290 km" }
+}

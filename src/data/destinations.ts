@@ -3369,7 +3369,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature", "Culture"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)" }, { name: "City Palace & Garh complex" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake" }],
+    highlights: [{ name: "Kota Barrage & Chambal riverfront" }, { name: "Chambal Garden (gharial conservation enclosure)" }, { name: "City Palace & Garh complex", id: "garh-palace-kota" }, { name: "Seven Wonders Park (replica monuments)" }, { name: "Jag Mandir, a small island palace on Kishore Sagar lake" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, a major line — ~4.5–5h", fromMumbai: "~13–14h", fromBangalore: "Via Delhi — 24h+", duration: "~4.5–5h from Delhi", costRange: "₹300–₹1,600", tips: "Kota Junction is a major railway hub on the Delhi–Mumbai line, genuinely well-connected." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 6–7h", fromMumbai: "NH48 — 13–14h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹3,000–₹5,500 cab / ₹400–₹700 bus", tips: "Well-connected by both highway and rail, given Kota's size as a major city." },
@@ -3414,6 +3414,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 6800,
     mustEat: ["Rajasthani thali", "Kota's own well-regarded street food scene (driven partly by its student population)", "Dal Baati Churma", "Kachori", "Local sweets"],
     packingTips: ["Comfortable walking shoes", "Sun hat and sunscreen", "Modest clothing for temples/palace areas", "Light layers for riverfront evenings", "Camera for the riverfront and City Palace"],
+  },
+
+  {
+    id: "garh-palace-kota",
+    name: "Garh Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Kota City Palace", "Kotah Garh"],
+    tagline: "A Sprawling Rajput Palace Complex Built Across Generations",
+    description: "Garh Palace, also known as Kota City Palace, is the city's foremost heritage attraction — a sprawling complex of suites and apartments added by successive Rajput rulers of Kota over generations, giving it a layered, evolving architecture rather than a single unified design. Within its walls, the Rao Madho Singh Museum houses a genuinely notable collection of Kota-school Rajput miniature paintings alongside sculptures, arms, and antiques, making the palace as much a living gallery of Kota's artistic legacy as a royal residence.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Kotah_Garh%2C_City_Palace%2C_Kota%2C_Rajasthan_%281%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/01/Kotah_Garh%2C_City_Palace%2C_Kota%2C_Rajasthan_%281%29.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/0/01/Kotah_Garh%2C_City_Palace%2C_Kota%2C_Rajasthan_%281%29.jpg"],
+    imageCredit: "Photo: Shrikant Bansod — Wikimedia Commons, CC BY-SA 4.0. Same image used on French Wikipedia's Kota (Rajasthan) article.",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "4:30 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Sprawling complex built by successive Rajput rulers" },
+      { name: "Rao Madho Singh Museum — Kota-school miniature paintings" },
+      { name: "Sculptures, arms, and antiques on display" },
+      { name: "Predominantly Rajput architectural style" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Central Kota", costRange: "₹40–₹200 by auto within Kota", tips: "Easily combined with the nearby Brajvilas Museum and Kishore Sagar Lake." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Best visited as a half-day trip from central Kota." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹200 within Kota", notes: "Standard for getting around the city", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Reliable given Kota's size as a major city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "In city", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1600, food: 550, transport: 300, activities: 350 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7000, accommodation: 5000, food: 1200, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kota Heritage", morning: "Garh Palace and the Rao Madho Singh Museum's Kota-school miniature paintings.", afternoon: "Kishore Sagar Lake and Jagmandir.", evening: "Chambal riverfront gardens at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "The museum's Kota-school miniatures are a genuine highlight — worth setting aside real time rather than rushing through." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A major heritage site in central Kota with steady daytime visitor traffic"],
+      precautions: ["Standard heritage-site caution", "Agree auto fares upfront in the old-city lanes"],
+      soloTips: ["Comfortable for solo daytime visits given Kota's overall ease as a well-serviced city"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace complex during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.4,
+    reviews: 3800,
+    mustEat: ["Rajasthani thali", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Camera for the museum and palace architecture"],
   },
 
   {
