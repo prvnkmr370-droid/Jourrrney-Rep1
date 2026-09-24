@@ -2120,6 +2120,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Lalgarh Palace", distance: "In city", type: "Heritage", isHidden: true, id: "lalgarh-palace" },
       { name: "Rampuria Haveli", distance: "In city", type: "Heritage", isHidden: true, id: "rampuria-haveli" },
       { name: "Bhandasar Jain Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "bhandasar-jain-temple" },
+      { name: "Devi Kund", distance: "8 km", type: "Heritage", isHidden: true, id: "devi-kund" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
@@ -2494,6 +2495,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2700,
     mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
     packingTips: ["Modest clothing", "Easy-to-remove footwear"],
+  },
+
+  {
+    id: "devi-kund",
+    name: "Devi Kund",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Devi Kund Sagar"],
+    tagline: "The Royal Crematorium of the Bikaji Dynasty, Marked by Marble Chhatris",
+    description: "Devi Kund, about 8 km from Bikaner, is the royal crematorium of the Bikaji dynasty, holding a cluster of chhatris (cenotaphs) each built on the exact spot where a ruler was cremated. The finest of these is the chhatri of Maharaja Surat Singh, built entirely in white marble and decorated with Rajput-era ceiling paintings, standing out among the site's largely red sandstone monuments. The complex also holds a more sobering layer of history: cenotaphs of 22 women of the royal family who committed sati prior to the reign of Maharaja Gaj Singh, and one cenotaph marking a rare male sati (sata). Devi Kund offers a quieter, genuinely reflective counterpart to Bikaner's more visited fort and palace sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Devi_Kund_Sagar_and_Cenotaphs-1_%2CBikaner.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/77/Devi_Kund_Sagar_and_Cenotaphs-1_%2CBikaner.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/7/77/Devi_Kund_Sagar_and_Cenotaphs-1_%2CBikaner.JPG"],
+    imageCredit: "Photo: Himanshu Yogi — Wikimedia Commons, CC BY-SA 3.0. Structured data confirms it depicts Devikund Sagar, Bikaner district.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Open daily. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Royal crematorium of the Bikaji dynasty" },
+      { name: "White marble chhatri of Maharaja Surat Singh, with Rajput ceiling paintings" },
+      { name: "Cenotaphs marking cremation sites of successive rulers" },
+      { name: "Historic cenotaphs of royal women who committed sati" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "~8 km from Bikaner city", costRange: "₹200–₹500 round-trip by auto/cab", tips: "A quieter, less-crowded stop compared to the main fort and palace sites." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Old-city heritage hotels"], description: "Visited as a half-day trip from central Bikaner." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 round-trip", notes: "Standard way to reach Devi Kund", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹500", notes: "Available with less dense coverage than Jaipur/Jodhpur", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner", distance: "~8 km", type: "City", isHidden: false, id: "bikaner" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1300, accommodation: 500, food: 250, transport: 350, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4200, accommodation: 2000, food: 600, transport: 700, activities: 900 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 15900, accommodation: 11000, food: 1800, transport: 900, activities: 2200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bikaner Heritage Trail", morning: "Junagarh Fort.", afternoon: "Devi Kund cenotaphs.", evening: "Old city bhujia shopping.", stay: "Old-city heritage hotel", meals: "Bikaneri thali (₹200), rooftop dinner (₹400)", tips: "Morning or late-afternoon light works best for photographing the white marble chhatri." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A maintained heritage site with regular daytime visitor traffic"],
+      precautions: ["Standard sightseeing precautions", "Visit during daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits, though quieter than central Bikaner sites"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The cenotaph grounds during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 1900,
+    mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
   {
