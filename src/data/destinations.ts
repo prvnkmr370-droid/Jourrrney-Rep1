@@ -3933,7 +3933,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Heritage", "History"],
     bestSeason: "October – March (park closed roughly July–September for monsoon)",
     duration: "2 days",
-    highlights: [{ name: "Sariska Tiger Reserve safari", id: "sariska-tiger-reserve" }, { name: "Bala Quila (hilltop fort)", id: "bala-qila" }, { name: "Vinay Vilas Mahal (City Palace)" }, { name: "Sariska's tiger-reintroduction conservation story" }, { name: "Kankwadi Fort, inside the reserve" }],
+    highlights: [{ name: "Sariska Tiger Reserve safari", id: "sariska-tiger-reserve" }, { name: "Bala Quila (hilltop fort)", id: "bala-qila" }, { name: "Vinay Vilas Mahal (City Palace)", id: "alwar-city-palace" }, { name: "Sariska's tiger-reintroduction conservation story" }, { name: "Kankwadi Fort, inside the reserve" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Alwar Junction — ~2.5–3h", fromMumbai: "~16–18h", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~2.5–3h from Delhi", costRange: "₹150–₹900", tips: "Alwar Junction is well-connected — an easy add-on to a Delhi/Jaipur route." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 3–4h", fromMumbai: "Via Jaipur — 16–17h", fromBangalore: "—", duration: "~3–4h from Delhi; ~2h from Jaipur", costRange: "₹2,000–₹4,000 cab / ₹300–₹500 bus", tips: "Alwar sits roughly between Delhi and Jaipur, making it an easy stopover on that route." },
@@ -4037,6 +4037,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2400,
     mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes for the climb", "Water bottle", "Sun protection"],
+  },
+
+  {
+    id: "alwar-city-palace",
+    name: "Alwar City Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Vinay Vilas Mahal"],
+    tagline: "An 18th-Century Palace Now Serving as Alwar's District Collectorate",
+    description: "Alwar City Palace, or Vinay Vilas Mahal, was built in 1793 AD by Raja Bakhtawar Singh, blending Rajputana and Islamic architectural styles into one striking complex. Its central courtyard is anchored by graceful marble pavilions set on lotus-flower bases, and while the palace once belonged to the Maharaja, its grand halls and chambers today house Alwar's District Collectorate and government offices — a genuinely unusual case of a royal palace still in active administrative use rather than preserved purely as a museum piece.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vinay_Vilas_Mahal_%28City_Palace%29_Alwar-001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vinay_Vilas_Mahal_%28City_Palace%29_Alwar-001.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/4/4f/Vinay_Vilas_Mahal_%28City_Palace%29_Alwar-001.jpg"],
+    imageCredit: "Photo: Ramesh Lalwani — Wikimedia Commons, CC BY 2.0, Flickr-reviewed. Same image used on English Wikipedia's Alwar article.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "The palace ground floor houses active government offices — visitor access is largely to the courtyard and exterior. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1793 AD by Raja Bakhtawar Singh" },
+      { name: "Blend of Rajputana and Islamic architecture" },
+      { name: "Marble pavilions on lotus-flower bases" },
+      { name: "Now houses Alwar's District Collectorate" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Central Alwar", costRange: "₹40–₹150 by auto within Alwar", tips: "Easily combined with the Government Museum and Moosi Maharani Ki Chhatri, both nearby." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "Best visited as a short stop from central Alwar." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Alwar", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from nearby sights", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+      { name: "Bala Qila", distance: "In city", type: "Heritage", isHidden: true, id: "bala-qila" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar's Royal Quarter", morning: "Bala Qila.", afternoon: "Alwar City Palace and the Government Museum within its grounds.", evening: "Moosi Maharani Ki Chhatri at sunset.", stay: "Alwar town", meals: "Rajasthani thali (₹180)", tips: "Since the palace houses active government offices, visit during weekday working hours when the courtyard is most accessible." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Central Alwar location with steady daytime foot traffic", "An active government building with regular staff and visitor presence"],
+      precautions: ["Standard heritage-site caution"],
+      soloTips: ["Comfortable for solo daytime visits given the palace's central, well-trafficked location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The courtyard and museum area during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.3,
+    reviews: 2900,
+    mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
+    packingTips: ["Comfortable walking shoes", "Camera for the courtyard architecture"],
   },
 
   {
