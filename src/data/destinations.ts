@@ -3443,6 +3443,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Agra (Taj Mahal)", distance: "55 km", type: "Heritage", isHidden: false, id: "agra" },
       { name: "Fatehpur Sikri", distance: "23 km", type: "UNESCO Heritage", isHidden: false, id: "fatehpur-sikri" },
       { name: "Ganga Mandir", distance: "In city", type: "Spiritual", isHidden: true, id: "ganga-mandir-bharatpur" },
+      { name: "Chaurasi Khamba, Kaman", distance: "~60 km", type: "Heritage", isHidden: true, id: "chaurasi-khamba-kaman" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 200 },
@@ -3586,6 +3587,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1800,
     mustEat: ["Rajasthani thali", "Bharatpuri Peda (local sweet)"],
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "chaurasi-khamba-kaman",
+    name: "Chaurasi Khamba",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Chaurasi Khamba Masjid", "84-Pillar Ruins"],
+    tagline: "84 Pillars of Contested Temple-or-Mosque Heritage in the Heart of Braj",
+    description: "Chaurasi Khamba, in the pilgrim town of Kaman (also called Kamaban) at the northern edge of Bharatpur district, is a red-sandstone ruin built on 84 pillars in an area genuinely central to the Braj region where Krishna is said to have spent his early years. Its structure carries layered temple and mosque architectural elements, and its arched red-sandstone entrance, colonnades, and mihrab niches make it a real if lesser-known stop compared to Kaman's more famous role as a pilgrimage site during the annual Banyatara in the month of Bhadhva.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Chaurasi_Khamba_Temple%2C_kaman.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Chaurasi_Khamba_Temple%2C_kaman.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/ed/Chaurasi_Khamba_Temple%2C_kaman.jpg"],
+    imageCredit: "Photo: 87rohit.sharma — Wikimedia Commons, CC BY-SA 4.0. Description explicitly reads \"Entrance of Chaurasi Khamba Temple, Kaman, Rajasthan.\"",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Red-sandstone ruin built on 84 pillars" },
+      { name: "In Kaman, part of the Braj pilgrimage region" },
+      { name: "Layered temple and mosque architectural elements" },
+      { name: "Arched entrance, colonnades, and mihrab niches" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bharatpur — long haul", fromMumbai: "Via Bharatpur — long haul", fromBangalore: "Via Bharatpur — long haul", duration: "Kaman town, north Bharatpur district", costRange: "₹600–₹1,400 by taxi from Bharatpur", tips: "Kaman is a genuine pilgrimage stop rather than a polished tourist site — go with an open, respectful mindset." },
+    ],
+    accommodation: [
+      { type: "Base in Bharatpur", priceRange: "₹700–₹25,000/night (estimate)", examples: ["Hotels near Keoladeo National Park entrance"], description: "Most visitors see Kaman as a day trip from Bharatpur." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹600–₹1,400 from Bharatpur", notes: "Standard way to reach Kaman", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage — a hired taxi from Bharatpur is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Bharatpur", distance: "Kaman is in Bharatpur district", type: "City", isHidden: false, id: "bharatpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 400, food: 250, transport: 300, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 1600, food: 600, transport: 700, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 8300, accommodation: 5500, food: 1200, transport: 1200, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kaman Day Trip", morning: "Depart Bharatpur for Kaman.", afternoon: "Chaurasi Khamba and Kaman's other Braj-pilgrimage sites.", evening: "Return to Bharatpur.", stay: "Bharatpur, near the park entrance", meals: "Local dhaba lunch in Kaman (₹150–₹300)", tips: "Visiting during the Bhadhva-month Banyatara gives a genuine sense of the town's pilgrimage significance, though it will be far busier." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A recognised regional pilgrimage site with local visitor traffic"],
+      precautions: ["A smaller town with less tourist infrastructure than Bharatpur itself — visit during daylight hours", "Go with a group or a trusted driver for the trip out"],
+      soloTips: ["A hired taxi that waits is the most comfortable way to visit solo given the distance from Bharatpur"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bharatpur Police Control Room", number: "05644-223364" }, { label: "Police", number: "100" }],
+      safeZones: ["The main ruins and temple area during daylight"],
+      avoidAreas: ["The town after dark for those unfamiliar with it"],
+    },
+    rating: 4.1,
+    reviews: 500,
+    mustEat: ["Local dhaba food in Kaman", "Rajasthani thali back in Bharatpur"],
+    packingTips: ["Comfortable walking shoes for uneven ruins", "Modest clothing", "Water bottle"],
   },
 
   {
