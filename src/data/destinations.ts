@@ -4540,7 +4540,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Culture", "History"],
     bestSeason: "October – March",
     duration: "1–2 days",
-    highlights: [{ name: "Garh Palace (Bundi Palace)", id: "garh-palace-bundi" }, { name: "Taragarh Fort", id: "taragarh-fort-bundi" }, { name: "Raniji ki Baori (stepwell)", id: "raniji-ki-baori" }, { name: "Bundi's 50+ other stepwells" }, { name: "Blue-washed old town lanes" }, { name: "84 Pillared Cenotaph", id: "chaurasi-khambon-ki-chhatri" }],
+    highlights: [{ name: "Garh Palace (Bundi Palace)", id: "garh-palace-bundi" }, { name: "Taragarh Fort", id: "taragarh-fort-bundi" }, { name: "Raniji ki Baori (stepwell)", id: "raniji-ki-baori" }, { name: "Bundi's 50+ other stepwells", id: "dabhai-kund" }, { name: "Blue-washed old town lanes" }, { name: "84 Pillared Cenotaph", id: "chaurasi-khambon-ki-chhatri" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Kota Junction, then ~35 min road — ~6–7h total", fromMumbai: "Via Kota — ~12–13h", fromBangalore: "Via Kota — 20h+", duration: "~6–7h from Delhi to Kota, +35 min road", costRange: "₹300–₹1,500 (train) + ₹200–₹400 (local transfer)", tips: "Kota Junction is the well-connected railhead; Bundi has its own smaller station too, with fewer direct long-distance trains." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 via Kota — 6–7h", fromMumbai: "Via Kota — 12–13h", fromBangalore: "—", duration: "~6–7h from Delhi; ~2.5h from Jaipur", costRange: "₹2,500–₹5,000 cab / ₹300–₹500 bus", tips: "Often visited as a quieter alternative or add-on to Jaipur/Udaipur, roughly 2.5–3h from either." },
@@ -4745,6 +4745,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
       { name: "Garh Palace", distance: "Short walk", type: "Heritage", isHidden: true, id: "garh-palace-bundi" },
+      { name: "Dabhai Kund", distance: "Short walk", type: "Heritage", isHidden: true, id: "dabhai-kund" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
@@ -4946,6 +4947,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2700,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Camera for the reflection views", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "dabhai-kund",
+    name: "Dabhai Kund",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Jail Kund", "Dhabhaiji Ka Kund"],
+    tagline: "Bundi's Largest Stepwell, Shaped Like an Inverted Pyramid",
+    description: "Dabhai Kund, locally known as Jail Kund, is the largest stepwell in Bundi, built around the 16th or 17th century to alleviate severe water scarcity in the region's drought-affected areas. Local lore ties its construction to Maharaja Rao Raja Dabhai Singh, and its scale is genuinely striking: tiered steps descend from all four sides in an inverted-pyramid form toward the water far below, with fine carving work adorning the stairways that make the descent itself worth lingering over.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Dabhai_Kund.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Dabhai_Kund.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/e/ec/Dabhai_Kund.jpg"],
+    imageCredit: "Photo: Sharvarism — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates confirm Bundi; Wikidata entry Dhabhaiji ka Kund (Q140930584).",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Bundi's largest stepwell" },
+      { name: "Built 16th-17th century for drought relief" },
+      { name: "Inverted-pyramid step formation" },
+      { name: "Fine carvings along the stairways" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Bundi old town", costRange: "₹40–₹150 by auto within Bundi", tips: "Part of Bundi's wider stepwell circuit — combine with Raniji ki Baori and Nagar Sagar Kund." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "Walkable or a short auto ride from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central old-town location", available: true },
+      { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A popular way to cover the wider stepwell circuit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+      { name: "Raniji ki Baori", distance: "Short walk", type: "Heritage", isHidden: true, id: "raniji-ki-baori" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Stepwell Circuit", morning: "Garh Palace and Taragarh Fort.", afternoon: "Raniji ki Baori and Dabhai Kund, both genuine highlights of the stepwell circuit.", evening: "Nawal Sagar Lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "The view straight down from the top is dramatic — a good spot for photos before descending the steps." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site within Bundi's well-visited stepwell circuit", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Steep, uneven steps — take care, especially if descending", "Standard caution around open water at the base"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.5,
+    reviews: 1500,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Sturdy walking shoes for the steps", "Comfortable footwear", "Camera for the inverted-pyramid view"],
   },
 
   {
