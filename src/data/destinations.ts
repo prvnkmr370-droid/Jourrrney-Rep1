@@ -3461,6 +3461,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Adhai Din Ka Jhonpra", distance: "In city", type: "Heritage", isHidden: true, id: "adhai-din-ka-jhonpra" },
       { name: "Mayo College", distance: "In city", type: "Heritage", isHidden: true, id: "mayo-college-ajmer" },
       { name: "Soniji Ki Nasiyan", distance: "In city", type: "Spiritual", isHidden: true, id: "soniji-ki-nasiyan" },
+      { name: "Lake Foy Sagar", distance: "5 km", type: "Nature", isHidden: true, id: "foy-sagar-lake" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3720,6 +3721,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 5400,
     mustEat: ["Sohan Halwa (in central Ajmer)", "Rajasthani thali at central Ajmer restaurants"],
     packingTips: ["Modest clothing", "Camera (check photography rules for the gold-figure hall)"],
+  },
+
+  {
+    id: "foy-sagar-lake",
+    name: "Lake Foy Sagar",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Foy Sagar Lake", "Varun Sagar Lake"],
+    tagline: "An 1892 Famine-Relief Lake with Aravalli Sunset Views",
+    description: "Lake Foy Sagar is an artificial lake built in 1892 under the direction of English engineer Mr. Foy, originally created as an employment project during a period of famine relief. Set against the backdrop of the Aravalli range, it's known today as a quiet, scenic spot for sunset views over the water and surrounding hills, offering a more laid-back contrast to Ajmer's busier pilgrimage sites.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/10/Lake_Foysagar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/10/Lake_Foysagar.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/10/Lake_Foysagar.jpg"],
+    imageCredit: "Photo: Sargamjain — Wikimedia Commons, CC BY-SA 3.0. Same image used on English Wikipedia's Varun Sagar Lake article and Hindi Wikipedia's फॉयसागर झील article.",
+    category: ["Nature"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Sunset is the most popular time to visit. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built 1892 as a famine-relief employment project" },
+      { name: "Engineered by English engineer Mr. Foy" },
+      { name: "Scenic Aravalli range backdrop, popular sunset spot" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "A short drive from central Ajmer", costRange: "₹100–₹300 by auto round trip", tips: "Best timed for sunset — arrive 30–45 minutes before dusk." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer"], description: "Best visited as a short evening trip from central Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹100–₹300 round trip", notes: "Most practical way to reach the lake", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹150–₹500", notes: "Available and reliable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6500, accommodation: 5000, food: 1200, transport: 300, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ajmer's Quiet Corner", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Soniji Ki Nasiyan and central Ajmer bazaars.", evening: "Lake Foy Sagar for sunset over the Aravallis.", stay: "City hotel", meals: "Central Ajmer restaurants (₹150–₹400)", tips: "A quieter, less crowded alternative to Ana Sagar for a sunset visit." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A recognised local sightseeing spot with regular visitor traffic around sunset"],
+      precautions: ["Quieter and less lit than central Ajmer — avoid lingering alone after dark", "Go with a group or arrange transport back in advance for evening visits"],
+      soloTips: ["Visit during daylight or the golden hour rather than after full dark", "Keep your return transport arranged before sunset"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["The main lakeside viewing area during daylight and early evening"],
+      avoidAreas: ["Secluded lakeside stretches after dark"],
+    },
+    rating: 4.2,
+    reviews: 2800,
+    mustEat: ["Sohan Halwa (in central Ajmer)"],
+    packingTips: ["Light jacket for evening lake breeze", "Camera for the sunset views"],
   },
 
   {
