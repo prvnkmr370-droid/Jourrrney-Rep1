@@ -2116,6 +2116,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Samidheshwar Temple", distance: "In fort complex", type: "Spiritual", isHidden: true, id: "samidheshwar-temple" },
       { name: "Sanwaliya Ji Temple", distance: "On the Chittorgarh-Udaipur Highway", type: "Spiritual", isHidden: true, id: "sanwaliya-ji-temple" },
       { name: "Bhainsrorgarh Fort", distance: "~235 km via Udaipur road", type: "Heritage", isHidden: true, id: "bhainsrorgarh-fort" },
+      { name: "Ratan Singh Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "ratan-singh-palace" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -2854,6 +2855,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 600,
     mustEat: ["Heritage-hotel Rajasthani dining"],
     packingTips: ["Comfortable walking shoes for the ramparts", "Camera for the river views", "Advance booking for the heritage stay"],
+  },
+
+  {
+    id: "ratan-singh-palace",
+    name: "Ratan Singh Palace",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Ratan Singh Ka Mahal"],
+    tagline: "The Royal Family's Rundown but Genuinely Atmospheric Winter Retreat",
+    description: "Ratan Singh Palace was the winter palace of Chittorgarh's royal family, overlooking a small lake within the fort. Genuinely less polished and less visited than the fort's grander monuments, it's fairly rundown today, but that very quality gives it an atmosphere the more restored sites lack — an interesting, quieter stop that still attracts a steady stream of visitors curious about its lakeside setting and weathered domes.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Ratan_Singh_Ka_Mahal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Ratan_Singh_Ka_Mahal.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/b/ba/Ratan_Singh_Ka_Mahal.jpg"],
+    imageCredit: "Photo: Abhishek Khanna — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates confirm Chittorgarh Fort; used on Nepali Wikipedia's राणा रतन सिंह article.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "9:30 AM", closes: "6:00 PM", note: "Within the Chittorgarh Fort complex. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Winter palace of the royal family" },
+      { name: "Overlooks a small lake within the fort" },
+      { name: "Rundown but atmospheric, less-visited than the fort's main sites" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Chittorgarh — long haul", fromMumbai: "Via Chittorgarh — long haul", fromBangalore: "Via Chittorgarh — long haul", duration: "Within Chittorgarh Fort", costRange: "₹1,500–₹3,000 (half-day fort taxi tour)", tips: "A quieter, less-crowded stop compared to the fort's headline monuments." },
+    ],
+    accommodation: [
+      { type: "Base in Chittorgarh", priceRange: "₹700–₹4,500/night (estimate)", examples: ["Hotels in Chittorgarh town"], description: "Most visitors see the fort as a day trip from Udaipur or a short Chittorgarh town stay." },
+    ],
+    localTransport: [
+      { mode: "Shared/Private Taxi (fort circuit)", cost: "₹1,500–₹3,000 half-day", notes: "The practical way to see the fort's spread-out monuments together", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹400", notes: "For getting around the fort complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chittorgarh Fort", distance: "In fort complex", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
+      { name: "Rani Padmini's Palace", distance: "In fort complex", type: "Heritage", isHidden: true, id: "rani-padmini-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1600, food: 600, transport: 400, activities: 400 },
+      { tier: "luxury", label: "Premium Day Trip (from Udaipur)", perDayPerPerson: 8000, accommodation: 0, food: 1500, transport: 4000, activities: 2500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chittorgarh's Quieter Corners", morning: "Rani Padmini's Palace and Fateh Prakash Palace museum.", afternoon: "Ratan Singh Palace — a quieter, more atmospheric ruin by the lake.", evening: "Vijay Stambh before sunset.", stay: "Day trip from Udaipur, or a Chittorgarh town hotel", meals: "Local thali near the fort entrance (₹150–₹250)", tips: "A good stop if you want a break from the fort's busier headline sites." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Within the well-patrolled, ASI-protected Chittorgarh Fort complex", "A recognised heritage stop, though quieter and less trafficked"],
+      precautions: ["Being less-visited, it's better explored in daylight with others nearby rather than fully alone", "Uneven ruined stonework underfoot — wear sturdy shoes"],
+      soloTips: ["Combine with the busier nearby sites rather than visiting in isolation for extra comfort"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Chittorgarh Police Control Room", number: "01472-240088" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace and lakeside area during daylight fort-visiting hours"],
+      avoidAreas: ["Isolated corners of the ruin late in the day"],
+    },
+    rating: 4.2,
+    reviews: 900,
+    mustEat: ["Dal Baati Churma", "Local thali near the fort entrance"],
+    packingTips: ["Sturdy walking shoes for uneven ruined stonework", "Water bottle", "Camera for the lakeside setting"],
   },
 
   {
