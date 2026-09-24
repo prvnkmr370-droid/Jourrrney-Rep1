@@ -3394,6 +3394,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Chambal River Front", distance: "In city", type: "Heritage", isHidden: true, id: "chambal-river-front-kota" },
       { name: "Kansua Temple", distance: "In city", type: "Spiritual", isHidden: true, id: "kansua-temple" },
       { name: "Godawari Dham", distance: "In city", type: "Spiritual", isHidden: true, id: "godawari-dham" },
+      { name: "Kaithoon", distance: "Near Kota", type: "Culture", isHidden: true, id: "kaithoon" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3893,6 +3894,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 900,
     mustEat: ["Rajasthani thali (in central Kota)"],
     packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "kaithoon",
+    name: "Kaithoon",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "The Weaving Village Behind the Kota Doria Saree",
+    description: "Kaithoon is the real birthplace of Kota Doria, the distinctive lightweight, checkered fabric behind some of Rajasthan's most sought-after sarees and dhotis. The story traces back to Rao Kishore Singh, Prince of Kota and a serving officer in Shah Jahan's Mughal army, who brought weaver families known as 'Masurias' from Mysore and settled them here. What began as fabric for royal-court turbans ('Pagadi') gradually widened into the sarees and dhotis genuinely woven by hand in Kaithoon today, and the village remains a living centre of this heritage craft rather than a museum piece.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Genuine_handloom_kota_doria_masterpiece.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/84/Genuine_handloom_kota_doria_masterpiece.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/84/Genuine_handloom_kota_doria_masterpiece.jpg"],
+    imageCredit: "Photo: Victoria Singh — Wikimedia Commons, CC BY-SA 4.0. Same image used on English Wikipedia's Kota Doria article and five other-language Wikipedias.",
+    category: ["Culture"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Best visited on a weekday to see weavers actively at work. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Birthplace of the Kota Doria weaving tradition" },
+      { name: "'Masuria' weaver families originally brought from Mysore" },
+      { name: "Genuine handloom sarees and dhotis" },
+      { name: "A living craft village, not a staged tourist stop" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Kota — long haul", fromMumbai: "Via Kota — long haul", fromBangalore: "Via Kota — long haul", duration: "Village near Kota", costRange: "₹300–₹800 by taxi round trip from Kota", tips: "Ask to see the handloom process itself, not just the finished sarees — it's the more memorable part of the visit." },
+    ],
+    accommodation: [
+      { type: "Base in Kota", priceRange: "₹700–₹12,000/night (estimate)", examples: ["Hotels in central Kota"], description: "Most visitors see Kaithoon as a half-day trip from Kota." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹300–₹800 from Kota", notes: "Standard way to reach the village", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage — a hired taxi from Kota is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Kota", distance: "Near Kota", type: "City", isHidden: false, id: "kota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2900, accommodation: 1600, food: 550, transport: 450, activities: 350 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 7200, accommodation: 5000, food: 1200, transport: 600, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kota's Craft Heritage", morning: "Garh Palace and Rao Madho Singh Museum.", afternoon: "Kaithoon village — watching Kota Doria being handwoven.", evening: "Return to central Kota, Chambal riverfront at sunset.", stay: "City hotel", meals: "Rajasthani thali (₹180)", tips: "If buying a saree, ask about the weaver and the weave count — genuine handloom Kota Doria takes real time and skill, unlike machine-made imitations sold elsewhere." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A small, close-knit weaving village with a genuine craft-tourism economy"],
+      precautions: ["Standard village/day-trip caution", "Visit weaving workshops during daylight hours"],
+      soloTips: ["Comfortable for solo daytime visits, especially with a pre-arranged taxi for the return trip"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kota Police Control Room", number: "0744-2450066" }, { label: "Police", number: "100" }],
+      safeZones: ["The main weaving workshops and market area during daylight"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.3,
+    reviews: 800,
+    mustEat: ["Rajasthani thali (in Kota)"],
+    packingTips: ["Cash for handloom purchases", "Comfortable walking shoes"],
   },
 
   {
