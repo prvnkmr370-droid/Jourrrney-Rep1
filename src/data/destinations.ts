@@ -3954,6 +3954,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Bhangarh Fort (India's most famous 'haunted' fort)", distance: "55 km", type: "Mysterious Ruins", isHidden: true, id: "bhangarh" },
       { name: "Siliserh Lake Palace", distance: "13 km", type: "Nature", isHidden: true, id: "siliserh-lake-palace" },
       { name: "Jaipur", distance: "150 km", type: "Heritage", isHidden: false, id: "jaipur" },
+      { name: "Moosi Maharani Ki Chhatri", distance: "In city", type: "Heritage", isHidden: true, id: "moosi-maharani-chhatri" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4097,6 +4098,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2900,
     mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Camera for the courtyard architecture"],
+  },
+
+  {
+    id: "moosi-maharani-chhatri",
+    name: "Moosi Maharani Ki Chhatri",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Cenotaph of Musi Maharani"],
+    tagline: "A Marble-and-Sandstone Cenotaph Overlooking Alwar's Sagar Lake",
+    description: "Moosi Maharani Ki Chhatri is a cenotaph built in memory of Maharaja Bakhtawar Singh and his queen, Rani Moosi, in genuine Indo-Islamic style. Its upper portion of columned pavilions and domed arches is carved from marble, resting on a lower section of red sandstone pillars, with mythological and court-scene paintings and sculptures adorning the ceiling. It sits beside the artificial Sagar lake, whose symmetrical stairs and towers create a striking reflection — a setting that regularly draws flocks of birds skimming across the water at dusk.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Cenotaph_of_Musi_Maharani.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Cenotaph_of_Musi_Maharani.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/5d/Cenotaph_of_Musi_Maharani.jpg"],
+    imageCredit: "Photo: Tapish2409 — Wikimedia Commons, CC BY-SA 3.0. Structured data confirms \"depicts: cenotaph of Musi Maharani\" (ASI monument S-RJ-19); same image used on 14 Wikipedia language editions' Chhatri architecture articles.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Especially scenic at sunset with birds over the lake. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Cenotaph of Maharaja Bakhtawar Singh and Rani Moosi" },
+      { name: "Marble upper section, red sandstone lower section" },
+      { name: "Mythological and court-scene ceiling paintings" },
+      { name: "Beside the artificial Sagar lake" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar — long haul", fromMumbai: "Via Alwar — long haul", fromBangalore: "Via Alwar — long haul", duration: "Central Alwar, near the City Palace", costRange: "₹40–₹150 by auto within Alwar", tips: "Time your visit for sunset — the lakeside light and bird activity are the genuine highlight." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar", priceRange: "₹700–₹8,000/night (estimate)", examples: ["Hotels in Alwar town"], description: "Best visited as a short evening stop from central Alwar." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹40–₹150 within Alwar", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Central location, walkable from the City Palace", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "In city", type: "City", isHidden: false, id: "alwar" },
+      { name: "Alwar City Palace", distance: "In city", type: "Heritage", isHidden: true, id: "alwar-city-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Alwar's Royal Quarter", morning: "Bala Qila.", afternoon: "Alwar City Palace and Government Museum.", evening: "Moosi Maharani Ki Chhatri at sunset, watching birds gather over Sagar lake.", stay: "Alwar town", meals: "Rajasthani thali (₹180)", tips: "Arrive shortly before sunset for the best light and the chance to see birds flocking over the lake." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Central Alwar location with steady daytime and evening foot traffic", "A well-known local landmark near the City Palace"],
+      precautions: ["Standard caution around the lakeside edge"],
+      soloTips: ["Comfortable for solo visits given the central, well-trafficked location"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The cenotaph grounds and lakeside promenade during opening hours"],
+      avoidAreas: ["None specific — a standard daytime/evening heritage-site visit"],
+    },
+    rating: 4.5,
+    reviews: 2100,
+    mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
+    packingTips: ["Camera for the lakeside sunset views", "Comfortable walking shoes"],
   },
 
   {
