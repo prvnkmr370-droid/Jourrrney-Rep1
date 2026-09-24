@@ -3958,6 +3958,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Fateh Jung Gumbad", distance: "In city", type: "Heritage", isHidden: true, id: "fateh-jung-gumbad" },
       { name: "Tijara Jain Temple", distance: "~60 km", type: "Spiritual", isHidden: true, id: "tijara-jain-temple" },
       { name: "Government Museum, Alwar", distance: "In city", type: "Heritage", isHidden: true, id: "alwar-government-museum" },
+      { name: "Neemrana Baori", distance: "~85 km", type: "Heritage", isHidden: true, id: "neemrana-baori" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4338,6 +4339,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1600,
     mustEat: ["Alwar ka Mawa", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Cash for entry tickets"],
+  },
+
+  {
+    id: "neemrana-baori",
+    name: "Neemrana Baori",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Neemrana Stepwell"],
+    tagline: "A Nine-Storey Stepwell That Looks Like a Fortress",
+    description: "Neemrana Baori, a short distance from the Neemrana Fort Palace, is a genuinely fortress-like stepwell rather than a typical ornately carved one — its nine floors, each roughly 20 feet in height, plunge dramatically down toward the water source below. Built later than the more heavily decorated stepwells of earlier centuries, it carries no carvings, but its sheer scale and colonnaded openings at ground level still convey real architectural ambition, with the lower floors historically submerged for much of the year.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Stepwell_neemrana_india.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/51/Stepwell_neemrana_india.JPG",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/51/Stepwell_neemrana_india.JPG"],
+    imageCredit: "Photo: Mark Greene — Wikimedia Commons, public domain. Description explicitly reads \"the interior of the step well in Neemrana, India... about one kilometer from the Neemrana Fort Hotel.\"",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Nine floors, ~20 ft height each" },
+      { name: "Fortress-like rather than ornately carved" },
+      { name: "Colonnaded ground-level openings" },
+      { name: "~1 km from Neemrana Fort Palace" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Neemrana — moderate haul", fromMumbai: "Via Neemrana — long haul", fromBangalore: "Via Neemrana — long haul", duration: "Neemrana town, northern Alwar district", costRange: "₹1,200–₹2,500 by taxi round trip from Alwar", tips: "Easily combined with a Neemrana Fort Palace visit given the short distance between them." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar or Neemrana", priceRange: "₹700–₹15,000/night (estimate)", examples: ["Hotels in Alwar town", "Neemrana Fort Palace heritage stay"], description: "Some visitors base themselves in Neemrana itself for a heritage-hotel stay." },
+    ],
+    localTransport: [
+      { mode: "Taxi (round trip)", cost: "₹1,200–₹2,500 from Alwar", notes: "Standard way to reach Neemrana", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "Limited coverage this far out — a hired taxi is the standard option", available: false },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "~85 km", type: "City", isHidden: false, id: "alwar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1100, accommodation: 400, food: 250, transport: 400, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3600, accommodation: 1800, food: 600, transport: 900, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 9500, accommodation: 6000, food: 1500, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Neemrana Day Trip", morning: "Depart Alwar for Neemrana.", afternoon: "Neemrana Baori and the nearby Neemrana Fort Palace.", evening: "Return to Alwar, or overnight in Neemrana.", stay: "Alwar town, or a Neemrana heritage stay", meals: "Local dhaba lunch or heritage-hotel dining", tips: "The stepwell's depth is best appreciated from the top looking down — take a moment before descending." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["A known local heritage stop, often visited alongside Neemrana Fort Palace"],
+      precautions: ["The stepwell's steep, uneven steps can be slippery — wear sturdy shoes and go carefully", "A more remote location than central Alwar — visit during daylight hours"],
+      soloTips: ["A hired taxi that waits is the most comfortable way to visit solo given the distance from Alwar"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell's upper viewing levels during daylight"],
+      avoidAreas: ["Descending too far into the lower, unlit floors alone"],
+    },
+    rating: 4.3,
+    reviews: 1100,
+    mustEat: ["Local dhaba food in Neemrana", "Rajasthani thali"],
+    packingTips: ["Sturdy grippy shoes for the steep steps", "A flashlight/phone light for the lower floors", "Water bottle"],
   },
 
   {
