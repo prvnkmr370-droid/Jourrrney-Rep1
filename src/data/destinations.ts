@@ -3959,6 +3959,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Tijara Jain Temple", distance: "~60 km", type: "Spiritual", isHidden: true, id: "tijara-jain-temple" },
       { name: "Government Museum, Alwar", distance: "In city", type: "Heritage", isHidden: true, id: "alwar-government-museum" },
       { name: "Neemrana Baori", distance: "~85 km", type: "Heritage", isHidden: true, id: "neemrana-baori" },
+      { name: "Neelkanth Mahadev Temple", distance: "~30 km", type: "Spiritual", isHidden: true, id: "neelkanth-mahadev-sariska" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 300, transport: 300, activities: 500 },
@@ -4398,6 +4399,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1100,
     mustEat: ["Local dhaba food in Neemrana", "Rajasthani thali"],
     packingTips: ["Sturdy grippy shoes for the steep steps", "A flashlight/phone light for the lower floors", "Water bottle"],
+  },
+
+  {
+    id: "neelkanth-mahadev-sariska",
+    name: "Neelkanth Mahadev Temple",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Neelkanth", "Neelkant Temple"],
+    tagline: "A 6th–9th Century Temple Hidden Deep Inside the Tiger Reserve",
+    description: "Neelkanth Mahadev Temple sits on an isolated hill near Sariska National Park, reachable only by a steep track in rough condition — the kind of destination that genuinely needs to be sought out rather than stumbled upon. Built between the 6th and 9th centuries CE and dedicated to Shiva (Neelkanth being one of his names), the temple and its idols are now partially ruined, and a large Digambara Jain temple stands nearby, together forming an atmospheric, little-visited cluster deep in the reserve's buffer zone.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Neelkant_temple%2C_Sariska%2C_Rajasthan_dated_6th_to_9th_Century.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/12/Neelkant_temple%2C_Sariska%2C_Rajasthan_dated_6th_to_9th_Century.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/1/12/Neelkant_temple%2C_Sariska%2C_Rajasthan_dated_6th_to_9th_Century.jpg"],
+    imageCredit: "Photo: Muktha Warrier — Wikimedia Commons, CC BY-SA 4.0. Description matches precisely: isolated hill near Sariska National Park, steep access track, partially ruined 6th-9th century temple, nearby Digambar Jain temple.",
+    category: ["Spiritual", "Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours (including the approach)",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Within Sariska Tiger Reserve's buffer zone — access rules follow the reserve's own visiting hours and permit requirements. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Built between the 6th and 9th centuries CE" },
+      { name: "Dedicated to Shiva, reached via a steep hill track" },
+      { name: "Partially ruined temple and idols" },
+      { name: "Nearby large Digambara Jain temple" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Alwar/Sariska — long haul", fromMumbai: "Via Alwar/Sariska — long haul", fromBangalore: "Via Alwar/Sariska — long haul", duration: "Deep inside Sariska Tiger Reserve's buffer zone", costRange: "₹1,500–₹3,000 by permitted safari/forest-department vehicle", tips: "Access is via the reserve, so arrange it through an authorised Sariska safari operator rather than attempting to self-drive in." },
+    ],
+    accommodation: [
+      { type: "Base in Alwar or Sariska", priceRange: "₹700–₹25,000/night (estimate)", examples: ["Hotels in Alwar town", "Resorts along the Sariska approach road"], description: "Most visitors combine this with a Sariska safari base rather than staying at the temple itself." },
+    ],
+    localTransport: [
+      { mode: "Forest Dept./Safari Vehicle", cost: "₹1,500–₹3,000", notes: "The standard, permitted way to reach the temple inside the reserve", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Alwar", distance: "~30 km", type: "City", isHidden: false, id: "alwar" },
+      { name: "Sariska Tiger Reserve", distance: "Inside the reserve", type: "Wildlife", isHidden: true, id: "sariska-tiger-reserve" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 400, food: 250, transport: 500, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4000, accommodation: 1800, food: 600, transport: 1300, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 10000, accommodation: 6500, food: 1500, transport: 1700, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sariska's Hidden Temple", morning: "Sariska Tiger Reserve morning safari.", afternoon: "Neelkanth Mahadev Temple, arranged through the reserve's permitted access.", evening: "Return to Alwar or your Sariska-area base.", stay: "Alwar town or a Sariska-area resort", meals: "Resort/hotel dining", tips: "This is a genuinely remote, rough-access site — go with a permitted guide rather than attempting it independently." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Access is controlled through the tiger reserve's permit system, which limits casual foot traffic but also means fewer people around"],
+      precautions: ["Only visit via an authorised guide/vehicle given the remote, rough terrain and wildlife-reserve setting", "Do not attempt the approach alone or on foot"],
+      soloTips: ["Join a group safari or arrange a guided visit rather than going independently"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Alwar Police Control Room", number: "0144-2332202" }, { label: "Sariska Forest Office", number: "0144-2841333" }],
+      safeZones: ["Accompanied visits with the permitted safari/forest vehicle"],
+      avoidAreas: ["Any unaccompanied or off-track approach within the tiger reserve"],
+    },
+    rating: 4.4,
+    reviews: 700,
+    mustEat: ["Resort dining near Sariska", "Rajasthani thali in Alwar"],
+    packingTips: ["Sturdy walking shoes for the steep, rough track", "Water bottle", "Camera", "Book the visit through an authorised Sariska operator in advance"],
   },
 
   {
@@ -30516,6 +30576,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Alwar", distance: "~35 km", type: "City", isHidden: false, id: "alwar" },
+      { name: "Neelkanth Mahadev Temple", distance: "Inside the reserve", type: "Spiritual", isHidden: true, id: "neelkanth-mahadev-sariska" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 2500, accommodation: 1500, food: 400, transport: 400, activities: 200 },
