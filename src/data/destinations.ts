@@ -3436,7 +3436,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "Culture"],
     bestSeason: "October – March",
     duration: "1 day",
-    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti", id: "ajmer-sharif-dargah" }, { name: "Ana Sagar Lake & its Baradari pavilions", id: "ana-sagar-lake" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)" }, { name: "Taragarh Fort, Ajmer" }, { name: "Ajmer's old-city bazaars" }],
+    highlights: [{ name: "Dargah Sharif of Khwaja Moinuddin Chishti", id: "ajmer-sharif-dargah" }, { name: "Ana Sagar Lake & its Baradari pavilions", id: "ana-sagar-lake" }, { name: "Adhai Din Ka Jhonpra (a converted mosque with striking arched architecture)", id: "adhai-din-ka-jhonpra" }, { name: "Taragarh Fort, Ajmer" }, { name: "Ajmer's old-city bazaars" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Ajmer Shatabdi — ~6.5–7h", fromMumbai: "Via Jaipur/Ahmedabad — ~15–16h", fromBangalore: "Via Delhi/Jaipur — 24h+", duration: "~6.5–7h from Delhi", costRange: "₹300–₹1,600", tips: "Ajmer Junction is a major railway hub, genuinely well-connected across the country." },
       { mode: "Road", icon: "🚗", fromDelhi: "NH48 — 7–8h", fromMumbai: "NH48 — 15–16h", fromBangalore: "—", duration: "~7–8h from Delhi; ~2.5h from Jaipur", costRange: "₹2,500–₹5,000 cab / ₹300–₹500 bus", tips: "Well-connected by highway, especially from Jaipur." },
@@ -3458,6 +3458,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Kishangarh (Phad painting & marble trade town)", distance: "27 km", type: "Culture", isHidden: true, id: "kishangarh" },
       { name: "Jaipur", distance: "130 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Ajmer Sharif Dargah", distance: "In city", type: "Spiritual", isHidden: true, id: "ajmer-sharif-dargah" },
+      { name: "Adhai Din Ka Jhonpra", distance: "In city", type: "Heritage", isHidden: true, id: "adhai-din-ka-jhonpra" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -3540,6 +3541,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 21300,
     mustEat: ["Sohan Halwa", "Nihari at Dargah Bazar food stalls", "Kebabs near the Dargah"],
     packingTips: ["Modest clothing (shoulders/legs covered)", "A head covering (scarf/cap)", "Cash for offerings and food stalls"],
+  },
+
+  {
+    id: "adhai-din-ka-jhonpra",
+    name: "Adhai Din Ka Jhonpra",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Adhai Din Ka Jhonpda"],
+    tagline: "A Sanskrit College Turned 12th-Century Mosque, 'Built in Two and a Half Days'",
+    description: "Adhai Din Ka Jhonpra began life as a Sanskrit college before being converted into a mosque by Sultan Qutb-ud-din Aibak in 1198 AD, with further expansion by Sultan Iltutmish in 1213 AD. Its name — 'hut of two and a half days' — comes from a legend tied to a 2.5-day Urs of Panjab Shah Baba held here during the 18th-century Maratha period. The structure is one of India's finest surviving examples of early Indo-Islamic architecture, built by repurposing pillars and material from earlier Sanskrit and Jain structures, and its towering carved-arch screen remains one of Ajmer's most striking monuments.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Adhai-Din-ka-Jhonpra%2C_Ajmer.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/26/Adhai-Din-ka-Jhonpra%2C_Ajmer.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/2/26/Adhai-Din-ka-Jhonpra%2C_Ajmer.jpg"],
+    imageCredit: "Photo: Adityavijayavargia — Wikimedia Commons, CC BY-SA 4.0.",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "45–60 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Originally a Sanskrit college, converted to a mosque in 1198 AD" },
+      { name: "Expanded by Sultan Iltutmish in 1213 AD" },
+      { name: "Striking Indo-Islamic carved-arch screen" },
+      { name: "Name tied to legend of a 2.5-day Urs held here" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Ajmer — long haul", fromMumbai: "Via Ajmer — long haul", fromBangalore: "Via Ajmer — long haul", duration: "Central Ajmer, short walk from the Dargah", costRange: "₹30–₹150 by auto within Ajmer", tips: "Easily combined with a Dargah Sharif visit — it's a short walk away." },
+    ],
+    accommodation: [
+      { type: "Base in Ajmer", priceRange: "₹600–₹9,000/night (estimate)", examples: ["Hotels in central Ajmer near the Dargah area"], description: "Best visited as a short stop from central Ajmer." },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹30–₹150 within Ajmer", notes: "Standard for getting around the city", available: true },
+      { mode: "Walking", cost: "Free", notes: "Short walk from the Dargah Sharif area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ajmer", distance: "In city", type: "City", isHidden: false, id: "ajmer" },
+      { name: "Ajmer Sharif Dargah", distance: "Short walk", type: "Spiritual", isHidden: true, id: "ajmer-sharif-dargah" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 850, accommodation: 400, food: 250, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2650, accommodation: 1500, food: 550, transport: 300, activities: 300 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6800, accommodation: 5000, food: 1200, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dargah & Adhai Din Ka Jhonpra", morning: "Dargah Sharif of Khwaja Moinuddin Chishti.", afternoon: "Adhai Din Ka Jhonpra, a short walk from the Dargah — take time to appreciate the carved-arch screen and repurposed pillars.", evening: "Ana Sagar Lake and its Baradari pavilions at sunset.", stay: "City hotel", meals: "Dargah-area food stalls (₹100–₹250)", tips: "Go slow around the arch screen — the carving detail rewards a closer look." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Within central Ajmer, close to the well-visited Dargah area", "A recognised ASI-protected monument with steady daytime visitor flow"],
+      precautions: ["Modest dress is respectful given the historic religious character of the site", "Uneven ancient stonework underfoot — wear sturdy shoes"],
+      soloTips: ["Easily combined with a Dargah visit, so rarely visited in isolation", "Daytime visits are straightforward and well-trodden"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Ajmer Police Control Room", number: "0145-2629166" }, { label: "Police", number: "100" }],
+      safeZones: ["The monument grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.5,
+    reviews: 6200,
+    mustEat: ["Sohan Halwa (in central Ajmer)", "Nihari at Dargah Bazar food stalls"],
+    packingTips: ["Sturdy walking shoes for uneven stone surfaces", "Modest clothing", "Water bottle, especially in warmer months"],
   },
 
   {
