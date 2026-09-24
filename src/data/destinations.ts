@@ -4563,6 +4563,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Chittorgarh Fort", distance: "165 km", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
       { name: "Sukh Mahal", distance: "In city", type: "Heritage", isHidden: true, id: "sukh-mahal-bundi" },
       { name: "Nawal Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "nawal-sagar-lake" },
+      { name: "Nagar Sagar Kund", distance: "In city", type: "Heritage", isHidden: true, id: "nagar-sagar-kund" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -5007,6 +5008,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1500,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Sturdy walking shoes for the steps", "Comfortable footwear", "Camera for the inverted-pyramid view"],
+  },
+
+  {
+    id: "nagar-sagar-kund",
+    name: "Nagar Sagar Kund",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Nagar Sagar Twin Stepwells"],
+    tagline: "Twin Stepwells Built to Withstand Famine",
+    description: "Nagar Sagar Kund, just outside Bundi's Chauhan Gate, is a set of identical twin stepwells built to provide a reliable water source during times of famine. The east and west stepwells mirror each other in their geometric stairways, descending in sharp triangular patterns toward the water — a genuine feat of practical medieval engineering as much as architecture, and one of the more striking examples of Bundi's wider stepwell tradition.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/54/Nagar_Sagar_Kund%2C_west_stepwell%2C_Bundi%2C_Rajasthan%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/54/Nagar_Sagar_Kund%2C_west_stepwell%2C_Bundi%2C_Rajasthan%2C_India.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/5/54/Nagar_Sagar_Kund%2C_west_stepwell%2C_Bundi%2C_Rajasthan%2C_India.jpg"],
+    imageCredit: "Photo: Tinss — Wikimedia Commons, CC BY-SA 4.0. GPS coordinates confirm Bundi; used on English Wikipedia's dedicated Nagar Sagar Kund article (Wikidata Q55641195).",
+    category: ["Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Identical twin stepwells" },
+      { name: "Built for water security during famine" },
+      { name: "Just outside Chauhan Gate" },
+      { name: "Sharp geometric triangular stairways" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Outside Chauhan Gate, Bundi", costRange: "₹40–₹150 by auto within Bundi", tips: "Part of Bundi's wider stepwell circuit — combine with Raniji ki Baori and Dabhai Kund." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "A short trip from most old-town accommodation." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Near the old-town gates, walkable", available: true },
+      { mode: "Cycle Rental", cost: "₹100–₹200/day", notes: "A popular way to cover the wider stepwell circuit", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+      { name: "Dabhai Kund", distance: "Nearby", type: "Heritage", isHidden: true, id: "dabhai-kund" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Stepwell Circuit", morning: "Garh Palace and Taragarh Fort.", afternoon: "Raniji ki Baori, Dabhai Kund, and Nagar Sagar Kund.", evening: "Nawal Sagar Lake at sunset.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "Comparing the east and west stepwells side by side is a genuine highlight — their near-identical geometry is easiest to appreciate seeing both together." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A recognised heritage site within Bundi's well-visited stepwell circuit", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Steep, uneven steps — take care", "Standard caution around open water at the base"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The stepwell grounds during opening hours"],
+      avoidAreas: ["None specific — a standard daytime heritage-site visit"],
+    },
+    rating: 4.3,
+    reviews: 900,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Sturdy walking shoes for the steps", "Camera for the geometric stairway views"],
   },
 
   {
