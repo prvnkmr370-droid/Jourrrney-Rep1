@@ -4562,6 +4562,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Jaipur", distance: "210 km", type: "Heritage", isHidden: false, id: "jaipur" },
       { name: "Chittorgarh Fort", distance: "165 km", type: "UNESCO Heritage", isHidden: false, id: "chittorgarh" },
       { name: "Sukh Mahal", distance: "In city", type: "Heritage", isHidden: true, id: "sukh-mahal-bundi" },
+      { name: "Nawal Sagar Lake", distance: "In city", type: "Nature", isHidden: true, id: "nawal-sagar-lake" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
@@ -4885,6 +4886,66 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1100,
     mustEat: ["Dal Baati Churma", "Rajasthani thali"],
     packingTips: ["Comfortable walking shoes", "Camera for the lakeside views"],
+  },
+
+  {
+    id: "nawal-sagar-lake",
+    name: "Nawal Sagar Lake",
+    state: "Rajasthan",
+    hidden: true,
+    aliases: ["Naval Sagar Lake"],
+    tagline: "An Artificial Lake with a Half-Submerged Temple and Palace Reflections",
+    description: "Nawal Sagar Lake is an artificial lake right in the heart of Bundi, genuinely striking for its half-submerged temple dedicated to Lord Varun Dev sitting at its centre — a small domed pavilion that appears to float on the water. What makes the lake especially memorable is the reflection: Garh Palace and Taragarh Fort, rising on the hillside behind, mirror cleanly in the water, giving Nawal Sagar one of Bundi's most photographed views and making it clearly visible from the fort itself.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Bundi-Cenotaph_on_Naval_Sagar_Lake-20131016.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/90/Bundi-Cenotaph_on_Naval_Sagar_Lake-20131016.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/9/90/Bundi-Cenotaph_on_Naval_Sagar_Lake-20131016.jpg"],
+    imageCredit: "Photo: Daniel VILLAFRUELA — Wikimedia Commons, CC BY-SA 3.0. GPS coordinates confirm Bundi; used on German and Norwegian Wikipedia's Bundi articles.",
+    category: ["Nature", "Heritage"],
+    bestSeason: "October – March",
+    duration: "30–45 minutes",
+    visitingHours: { opens: "24 hours (exterior view)", closes: "24 hours (exterior view)", note: "A public lake, viewable anytime; best light for photography is morning or late afternoon. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Artificial lake in central Bundi" },
+      { name: "Half-submerged temple to Lord Varun Dev" },
+      { name: "Reflections of Garh Palace and Taragarh Fort" },
+      { name: "Visible from Taragarh Fort itself" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bundi — long haul", fromMumbai: "Via Bundi — long haul", fromBangalore: "Via Bundi — long haul", duration: "Central Bundi", costRange: "₹40–₹150 by auto within Bundi", tips: "Best photographed from the lakeside promenade in the early morning or late afternoon light." },
+    ],
+    accommodation: [
+      { type: "Base in Bundi", priceRange: "₹500–₹12,000/night (estimate)", examples: ["Heritage havelis and guesthouses in Bundi old town"], description: "Many old-town havelis offer direct lake views." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Central location, easily walkable from the old town", available: true },
+      { mode: "Auto Rickshaw", cost: "₹40–₹150", notes: "Standard for getting around Bundi", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bundi", distance: "In city", type: "City", isHidden: false, id: "bundi" },
+      { name: "Garh Palace", distance: "Overlooking the lake", type: "Heritage", isHidden: true, id: "garh-palace-bundi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 800, accommodation: 400, food: 250, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2600, accommodation: 1500, food: 550, transport: 250, activities: 200 },
+      { tier: "luxury", label: "Comfort Premium", perDayPerPerson: 6900, accommodation: 5000, food: 1200, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bundi's Reflections", morning: "Garh Palace and Taragarh Fort.", afternoon: "Raniji ki Baori and the old-town stepwell circuit.", evening: "Nawal Sagar Lake at sunset, for the palace and fort reflections.", stay: "Bundi old town", meals: "Rajasthani thali (₹180)", tips: "This is genuinely one of Bundi's best photo spots — allow time to simply sit by the water rather than rushing through." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A central, well-visited lake with steady daytime and evening foot traffic", "Bundi's overall low tourist crowding makes for a relaxed visit"],
+      precautions: ["Standard caution around the lakeside edge"],
+      soloTips: ["Bundi's compact size and relaxed pace make this genuinely easy for solo travellers"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Bundi Police Control Room", number: "07472-443901" }, { label: "Police", number: "100" }],
+      safeZones: ["The lakeside promenade during daylight and early evening"],
+      avoidAreas: ["Unlit lakeside stretches late at night"],
+    },
+    rating: 4.6,
+    reviews: 2700,
+    mustEat: ["Dal Baati Churma", "Rajasthani thali"],
+    packingTips: ["Camera for the reflection views", "Comfortable walking shoes"],
   },
 
   {
