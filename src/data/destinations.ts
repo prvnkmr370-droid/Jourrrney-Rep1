@@ -2114,7 +2114,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "National Research Centre on Camel", distance: "8 km", type: "Unique Experience", isHidden: true, id: "national-research-centre-camel" },
       { name: "Karni Mata Temple, Deshnoke", distance: "30 km", type: "Spiritual", isHidden: true, id: "deshnoke" },
-      { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true },
+      { name: "Gajner Palace & Wildlife Sanctuary", distance: "32 km", type: "Nature", isHidden: true, id: "gajner-palace-lake" },
       { name: "Kolayat Lake", distance: "50 km", type: "Spiritual", isHidden: true, id: "kolayat-lake" },
       { name: "Junagarh Fort", distance: "In city", type: "Heritage", isHidden: true, id: "junagarh-fort" },
       { name: "Lalgarh Palace", distance: "In city", type: "Heritage", isHidden: true, id: "lalgarh-palace" },
@@ -2378,6 +2378,63 @@ export const DESTINATIONS: Destination[] = [
     reviews: 6400,
     mustEat: ["Camel milk kulfi", "Camel milk coffee", "Bikaneri Bhujia"],
     packingTips: ["Sun protection", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "gajner-palace-lake",
+    name: "Gajner Palace and Lake",
+    state: "Rajasthan",
+    hidden: true,
+    tagline: "A Royal Hunting Lodge on the Banks of a Desert Lake",
+    description: "Gajner Palace was founded in 1784 by Maharaja Gaj Singh of Bikaner and completed by the great Maharaja Ganga Singh, built on the banks of Gajner Lake to serve as a hunting and relaxation retreat for the royal family and their guests. Constructed largely of red sandstone in the same architectural tradition as Bikaner's other royal buildings, the palace's pavilions and terraces sit directly at the water's edge, with sweeping trees along the shoreline. It has since been converted into a heritage hotel, and the surrounding Gajner Wildlife Sanctuary makes the lake a genuine wildlife and birdwatching destination as well as a scenic royal retreat.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Gajner_Wildlife_Sanctuary-MBP-20131009.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/85/Gajner_Wildlife_Sanctuary-MBP-20131009.jpg",
+    gallery: ["https://upload.wikimedia.org/wikipedia/commons/8/85/Gajner_Wildlife_Sanctuary-MBP-20131009.jpg"],
+    imageCredit: "Photo: Daniel VILLAFRUELA — Wikimedia Commons, CC BY-SA 3.0. Same image used on the English Wikipedia articles for Bikaner, Gajner Wildlife Sanctuary, and Gajner Palace.",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March",
+    duration: "1.5–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Part of the palace is now a heritage hotel. Source: Rajasthan Tourism (tourism.rajasthan.gov.in)." },
+    highlights: [
+      { name: "Founded 1784 by Maharaja Gaj Singh, completed by Ganga Singh" },
+      { name: "Red sandstone pavilions directly at the water's edge" },
+      { name: "Former royal hunting and relaxation lodge" },
+      { name: "Now a heritage hotel" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Bikaner — long haul", fromMumbai: "Via Bikaner — long haul", fromBangalore: "Via Bikaner — long haul", duration: "~32 km from Bikaner, Jaisalmer road", costRange: "₹700–₹1,500 round-trip by auto/cab", tips: "Combine with the Gajner Wildlife Sanctuary for a fuller half-day trip." },
+    ],
+    accommodation: [
+      { type: "Base in Bikaner", priceRange: "₹700–₹35,000/night (estimate)", examples: ["Gajner Palace itself (heritage hotel)", "Old-city heritage hotels in Bikaner"], description: "Can be visited as a day trip or stayed at directly." },
+    ],
+    localTransport: [
+      { mode: "Private Cab", cost: "₹700–₹1,500 round-trip from Bikaner", notes: "Most practical way to visit given the distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bikaner", distance: "~32 km", type: "City", isHidden: false, id: "bikaner" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1600, accommodation: 500, food: 250, transport: 1000, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 4900, accommodation: 2000, food: 600, transport: 1300, activities: 300 },
+      { tier: "luxury", label: "Royal Heritage", perDayPerPerson: 16700, accommodation: 11000, food: 1800, transport: 1500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gajner Half-Day Trip", morning: "National Research Centre on Camel.", afternoon: "Gajner Palace and Lake.", evening: "Return to Bikaner for old-city dinner.", stay: "Old-city heritage hotel", meals: "Bikaneri thali (₹200), rooftop dinner (₹400)", tips: "Evening light over the lake is especially good for photography." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A managed heritage hotel and wildlife-sanctuary area with staff presence"],
+      precautions: ["Standard sightseeing precautions", "Visit during daylight hours"],
+      soloTips: ["Comfortable for solo visitors given the managed hotel and sanctuary setting"],
+      emergencyContacts: [{ label: "Women Helpline Rajasthan", number: "181" }, { label: "Kotwali Bikaner Police Station", number: "0151-2261972" }, { label: "Police", number: "100" }],
+      safeZones: ["The palace grounds and lakeside during opening hours"],
+      avoidAreas: ["None specific"],
+    },
+    rating: 4.4,
+    reviews: 3600,
+    mustEat: ["Bikaneri Bhujia", "Dal Baati Churma"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Binoculars for birdwatching"],
   },
 
   {
