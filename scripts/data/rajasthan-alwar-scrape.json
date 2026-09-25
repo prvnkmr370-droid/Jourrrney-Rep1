@@ -1,40 +1,21 @@
 {
   "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/alwar.html",
   "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
-  "scrapedDate": "2026-09-24",
+  "scrapedDate": "2026-09-25",
   "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
   "district": "Alwar",
-  "about": "One of Rajasthan's oldest cities yet its most recently formed Rajput kingdom; traditions trace to ancient Viratnagar (~1500 BC), also called Matasya Desh, where the Pandavas are said to have spent the final year of their 13-year exile. Nestled in the Aravalli hills; forests are home to grey partridge, white-throated kingfisher, Bengal tiger, and golden jackal.",
+  "about": "One of Rajasthan's oldest cities, with traditions traced to Viratnagar flourishing around 1500 BC. Also known as Matasya Desh, where the Pandavas spent their 13-year exile. Nestled in the Aravalli range's green hills, home to beautiful palaces and forts. Dense forest cover hosts Bengal tigers, golden jackals, grey partridges, and white-throated kingfishers. Gateway City of Rajasthan.",
   "places": [
-    { "name": "Bala Qila", "location": "Hilltop, Alwar", "facts": "Built on the foundations of a 10th-century mud fort; marble columns and latticed balconies; six gates — Jai Pol, Suraj Pol, Laxman Pol, Chand Pol, Krishan Pol, Andheri Gate; accessible via Pratap Bandh forest entry to Jaipol; buffer-forest safari available. Fort entry 8am-3:30pm, safari 6am-4:30pm, closed Wednesdays." },
-    { "name": "Alwar City Palace (Vinay Vilas Mahal)", "location": "Alwar", "facts": "Built 1793 AD by Raja Bakhtawar Singh; blend of Rajputana and Islamic architecture; marble pavilions on lotus-flower bases in the central courtyard; now houses the District Collectorate/government offices." },
-    { "name": "Government Museum", "location": "Within/near City Palace, Alwar", "facts": "Rare manuscripts including one depicting Emperor Babur's life, Ragamala paintings, miniatures, extensive armoury, across three large halls. Ticket window 9:45am-4:45pm." },
-    { "name": "Moosi Maharani Ki Chhatri", "location": "Alwar", "facts": "Cenotaph for Maharaja Bakhtawar Singh and Rani Moosi; Indo-Islamic style; upper portion (columned pavilions, domed arches) in marble, lower section in red sandstone pillars; mythological/court-scene paintings and sculptures on the ceiling; nearby artificial Sagar lake with symmetrical stairs and towers." },
-    { "name": "Fateh Jung Gumbad", "location": "Alwar", "facts": "Tomb combining domes and minarets on a square platform; dedicated to Fateh Jung, minister of Mughal Emperor Shah Jahan; medieval architecture example." },
-    { "name": "Purjan Vihar", "location": "Alwar", "facts": "Garden conceptualised/built 1868 by Maharaja Sheodan Singh; includes 'Simla' (the Summer House) pavilion for shade." },
-    { "name": "Bhangarh", "location": "50 km from Sariska Sanctuary", "facts": "17th-century town built by Raja Madho Singh; legend of an evil magician's curse leading to its abandonment; widely called one of India's most haunted places. Entry sunrise to sunset." },
-    { "name": "Garbhaji Waterfalls", "location": "Alwar area", "facts": "Popular scenic waterfall spot for photographers and nature lovers." },
-    { "name": "Pandu Pol", "location": "Inside Sariska Sanctuary", "facts": "Hanuman temple at a spring/waterfall cascading from rock; legend ties it to the Pandavas' exile refuge. Entry only Tuesday, Saturday, and full moon days." },
-    { "name": "Jaisamand (Alwar)", "location": "Alwar area", "facts": "Artificial dam built 1910 by Maharaja Jai Singh; shaded pavilions and towers along the banks; scenic especially in monsoon." },
-    { "name": "Siliserh Lake", "location": "15 km SW of Alwar", "facts": "Hunting palace built 1845 by Maharaja Vinay Singh for Queen Shila; now an RTDC hotel; boating available; winter birds and basking crocodiles." },
-    { "name": "Sariska Tiger Reserve", "location": "200 km from Delhi, 107 km from Jaipur", "facts": "First tiger reserve in the world to successfully relocate tigers; declared sanctuary 1955, National Park 1979; closed Wednesdays." },
-    { "name": "Tijara Jain Temple", "location": "~60 km from Alwar, on the Alwar-Delhi route", "facts": "Jain pilgrimage site built to commemorate the 8th Tirthankar, Shri Chandra Prabha Bhagwan, son of King Mahasen and Queen Sulakshana." },
-    { "name": "Moti Doongri", "location": "Alwar", "facts": "Originally built 1882, main royal residence until 1928; Maharaja Jai Singh then demolished the old palace and built a grander one; now has gardens and city viewpoints." },
-    { "name": "Talvrakash", "location": "Sariska-Alwar road", "facts": "Hot sulphur springs where pilgrims bathe; temple bells and langurs; associated with Mandav Rishi's penance." },
-    { "name": "Bhartrihari Temple", "location": "Alwar area", "facts": "Pilgrimage site tied to the legend of King Bhartrihari, said to have spent his last years here amid the hills." },
-    { "name": "Naraini Mata", "location": "80 km SW of Alwar", "facts": "Hot springs and a temple to Naraini Mata; annual fair on Baisakh Sudi." },
-    { "name": "Neelkanth", "location": "Deep inside Sariska Tiger Reserve, ~30 km into the buffer zone", "facts": "Century-old northern-style temple cluster with Khajuraho-like carvings; remote, rough-road access; peacocks common; ~100m away stands a monolithic stone statue of Jain Tirthankar Shantinath." },
-    { "name": "Naldeshwar", "location": "24 km south of Alwar", "facts": "Old Shiva temple amid rocky hills with two natural ponds fed by surrounding hills; especially scenic in monsoon." },
-    { "name": "Neemrana Baori", "location": "Neemrana, near the fort palace", "facts": "Stepwell resembling a fortress; 9 floors, ~20 ft each; no carvings (built later than the more ornamented step wells); colonnaded openings at ground level leading down to the water source." },
-    { "name": "Lal Masjid, Tijara", "location": "~55 km from Alwar city, east of Tijara Town", "facts": "Red sandstone rectangular mosque with corner minars and arched doorways; three arched doorways opening into a hall that originally had three domes (southern dome collapsed); faint Arabic inscriptions on plastered surfaces. Entry sunrise to sunset." },
-    { "name": "Raja Bhartrihari Panorama Alwar", "location": "Alwar", "facts": "Depicts the story of Raja Bhartrihari, ruler of Malwa who left his kingdom for spirituality, wandered the Alwar-Viratnagar forests, and became a disciple of Guru Gorakh Nath. Entry 10am-5pm, ₹10 adult / ₹5 child." },
-    { "name": "Veer Hasan Khan Mewati Panorama", "location": "Alwar", "facts": "Dedicated to Hasan Khan Mewati ('Shah-e-Mewat'), who fought alongside Maharana Sanga against Babur at the Battle of Khanwa; includes a life-size statue. Entry 10am-5pm." },
-    { "name": "Hope Circus", "location": "City centre, Alwar", "facts": "Circular heritage landmark inaugurated 1940, with stairs to the top from all four directions; close to the city's main markets." }
+    { "name": "Bala Qila (Young Fort)", "location": "Hilltop, Alwar", "facts": "Built on 10th-century mud fort foundations; strong fortifications, graceful marble columns, delicate latticed balconies; six gates; accessible by road through Pratap Bandh forest; buffer forest safari available." },
+    { "name": "Alwar City Palace", "location": "Central Alwar", "facts": "Built 1793 by Raja Bakhtawar Singh; mélange of Rajputana and Islamic styles; graceful marble pavilions on lotus-flower bases; now District Collectorate." },
+    { "name": "Government Museum", "location": "Alwar", "facts": "Rare manuscripts, Ragamala paintings, miniatures, extensive armory displays; window timing 9:45am-4:45pm." },
+    { "name": "Sariska Tiger Reserve", "location": "107 km from Jaipur", "facts": "First tiger reserve to successfully relocate tigers; declared sanctuary 1955, National Park 1979; forest closed Wednesdays." },
+    { "name": "Siliserh Lake", "location": "15 km SW of Alwar", "facts": "Tranquil lake with hunting palace built 1845; now RTDC hotel; boating available; winter water birds and crocodiles." }
   ],
   "howToReach": {
-    "air": "Nearest airport is Indira Gandhi International, Delhi, ~141 km; Jaipur International Airport ~166 km",
-    "rail": "Shatabdi Express from Delhi to Jaipur halts at Alwar",
-    "road": "Regular buses from Delhi, Jaipur, and Bharatpur"
+    "air": "Nearest is Jaipur (150 km)",
+    "rail": "Connected to Jaipur, Delhi, and other major cities",
+    "road": "160 km from Delhi, 150 km from Jaipur"
   },
-  "nearbyDistances": { "Jaipur": "160 km", "Ajmer": "293 km", "Bharatpur": "106 km" }
+  "nearbyDistances": { "Jaipur": "150 km", "Delhi": "160 km", "Sariska": "40 km" }
 }

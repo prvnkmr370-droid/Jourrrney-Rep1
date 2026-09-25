@@ -1,0 +1,34 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/jhunjhunu.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-25",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Part of the Shekhawati region",
+  "about": "Part of the Shekhawati region; known for colorful havelis and traditional paintings.",
+  "places": [
+    {
+      "name": "Mandawa Havelis",
+      "location": "Mandawa, Jhunjhunu",
+      "facts": "Ornately painted traditional mansions."
+    },
+    {
+      "name": "Shekhawati Havelis",
+      "location": "Jhunjhunu region",
+      "facts": "Historic merchant houses."
+    },
+    {
+      "name": "Dundlod Fort",
+      "location": "Dundlod, Jhunjhunu",
+      "facts": "Historic fort structure."
+    }
+  ],
+  "howToReach": {
+    "air": "To be determined from district specifics",
+    "rail": "Connected to major Rajasthan railway lines",
+    "road": "Connected by road to major cities"
+  },
+  "nearbyDistances": {
+    "Jaipur": "180 km",
+    "Delhi": "250 km"
+  }
+}

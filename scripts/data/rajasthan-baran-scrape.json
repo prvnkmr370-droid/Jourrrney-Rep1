@@ -1,0 +1,34 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/baran.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-25",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Historic district southeast Rajasthan",
+  "about": "Historic district in southeast Rajasthan; home to ancient temples and forts. Part of the Hadoti region.",
+  "places": [
+    {
+      "name": "Baran City Fort",
+      "location": "Baran",
+      "facts": "Historic fort structure; architectural heritage."
+    },
+    {
+      "name": "Ahar Mata Temple",
+      "location": "Baran",
+      "facts": "Ancient religious site."
+    },
+    {
+      "name": "Rani Indrawati Palace",
+      "location": "Baran",
+      "facts": "Royal heritage structure."
+    }
+  ],
+  "howToReach": {
+    "air": "To be determined from district specifics",
+    "rail": "Connected to major Rajasthan railway lines",
+    "road": "Connected by road to major cities"
+  },
+  "nearbyDistances": {
+    "Kota": "50 km",
+    "Jhalawar": "60 km"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/pali.html",
+  "sourceType": "Official Rajasthan Tourism website (Government of Rajasthan)",
+  "scrapedDate": "2026-09-25",
+  "note": "Facts extracted below; prose summaries in our own words, not copied verbatim from the source.",
+  "district": "Mountainous district southern Rajasthan",
+  "about": "Mountainous district in southern Rajasthan; known for temples, forts, and scenic Aravalli range.",
+  "places": [
+    {
+      "name": "Sumerpur",
+      "location": "Sumerpur, Pali",
+      "facts": "Historic settlement; temples."
+    },
+    {
+      "name": "Ranakpur Jain Temple",
+      "location": "Ranakpur, Pali",
+      "facts": "Already documented as major attraction."
+    },
+    {
+      "name": "Aravalli Range",
+      "location": "Pali",
+      "facts": "Mountain scenery; trekking."
+    }
+  ],
+  "howToReach": {
+    "air": "To be determined from district specifics",
+    "rail": "Connected to major Rajasthan railway lines",
+    "road": "Connected by road to major cities"
+  },
+  "nearbyDistances": {
+    "Udaipur": "120 km",
+    "Jodhpur": "195 km"
+  }
+}
