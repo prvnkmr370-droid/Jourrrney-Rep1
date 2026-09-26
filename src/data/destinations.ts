@@ -91704,6 +91704,127 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Light cotton clothes", "Comfortable walking shoes", "Camera", "Sunscreen", "Cash (limited card acceptance in villages)", "Water bottle"],
   },
 
+  {
+    id: "hogenakkal",
+    name: "Hogenakkal Falls",
+    state: "Tamil Nadu",
+    hidden: true,
+    tagline: "The Niagara of South India",
+    description: "Hogenakkal Falls, where the Kaveri River plunges through a gorge of carbonatite rocks on the Tamil Nadu–Karnataka border in Dharmapuri district, is one of southern India's most dramatic waterfalls. The name means 'smoking rocks' in Kannada — the mist from the falls rising through the black rock gorge gives the appearance of smoke. During monsoon, the river is a thundering torrent; in the drier months, the water breaks into multiple cascading streams through a maze of rocky channels. Coracle (basket boat) rides through the gorge, navigating between boulders and falls, are the signature experience. The area is also known for fresh-water fish meals cooked by boatmen on the rocks.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hogenakkal_Falls%2CTamil_Nadu.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hogenakkal_Falls%2CTamil_Nadu.jpg",
+    imageCredit: "Mukesh Barnwal, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hogenakkal_Falls%2CTamil_Nadu.jpg",
+    ],
+    category: ["Nature", "Adventure"],
+    bestSeason: "July – January (good water flow); October–November ideal (accessible + flowing)",
+    duration: "1 day",
+    highlights: [
+      { name: "Kaveri River gorge waterfalls" },
+      { name: "Coracle (basket boat) rides through the rapids" },
+      { name: "Carbonatite rock formations (rare geology)" },
+      { name: "Fresh fish cooked on the rocks" },
+      { name: "Multiple cascading falls through rocky channels" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bangalore, then 3.5h drive (180 km)", fromMumbai: "Fly to Bangalore, then 3.5h drive", fromBangalore: "3.5h drive (180 km)", duration: "45 km from Dharmapuri (1h)", costRange: "₹50–₹100 bus from Dharmapuri", tips: "From Bangalore, drive via Hosur and Dharmapuri. From Chennai, it's about 350 km (6 hours). TNSTC buses run from Dharmapuri to Hogenakkal. The approach road descends steeply into the gorge." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["TTDC Hogenakkal Resort", "Guesthouses near the falls"], description: "The Tamil Nadu government tourism resort near the falls offers basic rooms. A few guesthouses are available. Most visitors come as a day trip from Bangalore or Dharmapuri." },
+    ],
+    localTransport: [
+      { mode: "Coracle", cost: "₹600–₹800 per trip (up to 4 people)", notes: "Operated by licensed boatmen — the only way to reach the main falls", available: true },
+      { mode: "Walking", cost: "Free", notes: "Trails along the gorge rim", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chennai", distance: "350 km", type: "City", isHidden: false, id: "chennai" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 400, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hogenakkal Falls", morning: "Arrive early (the gorge gets crowded by midday). Descend to the river and hire a coracle — these round, woven basket boats are paddled by experienced boatmen who navigate between rocks and rapids with remarkable skill. The ride takes you through the gorge, past multiple falls cascading through black rock formations, with spray and mist everywhere. The boatmen know the best spots for photography and swimming (when safe).", afternoon: "After the coracle ride, relax on the rocks by the river. Boatmen cook fresh-water fish (mainly kendai/carp) right on the heated rocks — the simple preparation with local spices, eaten off banana leaves by the river, is legendary. The oil massage offered by local masseurs on the rocks is another traditional Hogenakkal experience.", evening: "Return uphill. If staying overnight, the TTDC resort has a pool and basic dining.", stay: "Day trip or TTDC resort", meals: "Fresh fish grilled on the rocks (₹200–₹400); South Indian meals at local stalls (₹60–₹120)", tips: "Coracle rides may be suspended during heavy monsoon flow — check locally. Carry waterproof phone cases. Shoes that can get wet are essential. Avoid the falls area during flooding warnings." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Popular tourist spot with many families", "Government resort present"],
+      precautions: ["Crowded on weekends", "Coracle boatmen can be pushy"],
+      soloTips: ["Visit on weekdays for a calmer experience", "Use government-licensed boatmen only", "Stay near the main tourist area"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Dharmapuri Police", number: "04342-232100" }],
+      safeZones: ["TTDC resort area", "Main coracle point"],
+      avoidAreas: ["Isolated rocky areas", "River during high flow warnings"],
+    },
+    rating: 4.3,
+    reviews: 10000,
+    mustEat: ["Fresh fish cooked on heated rocks (kendai/carp)", "Tamarind rice", "South Indian thali", "Sugarcane juice"],
+    packingTips: ["Waterproof phone case", "Shoes that can get wet", "Change of clothes", "Towel", "Sunscreen", "Camera in waterproof bag"],
+  },
+
+  {
+    id: "kumbakonam",
+    name: "Kumbakonam",
+    state: "Tamil Nadu",
+    hidden: true,
+    tagline: "City of Temples and Sacred Tanks",
+    description: "Kumbakonam, set between the Kaveri and Arasalar rivers in Thanjavur district, is one of the most temple-dense towns in India — over 180 temples (mostly Hindu, some Jain) cluster within and around this compact town. The temples span Chola, Nayak, and Vijayanagara periods, showcasing a thousand years of Dravidian architecture in one walkable area. The centrepiece is the Mahamaham Tank, where the Mahamaham festival is held every 12 years (next: 2028) drawing millions of pilgrims. The Adi Kumbeswarar Temple, Sarangapani Temple (the tallest gopuram in town at 45 metres), and the UNESCO-listed Airavatesvara Temple in nearby Darasuram are among the highlights. Kumbakonam is also famous for its filter coffee, degree coffee, and brass vessels.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Meenakshisundaresvarar_temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/44/Meenakshisundaresvarar_temple.jpg",
+    imageCredit: "பா.ஜம்புலிங்கம், CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/44/Meenakshisundaresvarar_temple.jpg",
+    ],
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March (cooler weather); Mahamaham festival year (2028)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "180+ temples in and around town" },
+      { name: "Mahamaham Tank (sacred bathing festival every 12 years)" },
+      { name: "Airavatesvara Temple, Darasuram (UNESCO World Heritage)" },
+      { name: "Sarangapani Temple (tallest gopuram, 45 m)" },
+      { name: "Famous Kumbakonam filter coffee" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "12:30 PM / 4:00 PM – 8:30 PM", note: "Most temples close midday (12:30–4 PM). Airavatesvara Temple (ASI): 6 AM–6 PM daily. Mahamaham Tank: open all day. No entry fees for temples. Photography restrictions vary." },
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Trichy, then 1.5h drive (40 km)", fromMumbai: "Fly to Trichy, then 1.5h drive", fromBangalore: "7h drive (330 km) or train", duration: "40 km from Trichy (1h), 35 km from Thanjavur (45 min)", costRange: "₹30–₹80 bus from Trichy or Thanjavur", tips: "Kumbakonam is on the main Chennai–Thanjavur rail line with frequent trains. SETC buses from Chennai (6h), Trichy (1h), and Thanjavur (45 min). Easy to combine with Thanjavur and Chidambaram in a temple circuit." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Hotels on Town Hall Road", "Paradise Resort"], description: "Several budget hotels in the town centre within walking distance of major temples." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,500/night", examples: ["Heritage Hotels", "TTDC Hotel Tamil Nadu"], description: "A few mid-range options, some in converted heritage buildings." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "Primary transport for temple hopping", available: true },
+      { mode: "Walking", cost: "Free", notes: "Many temples are within walking distance in the old town", available: true },
+      { mode: "Bus", cost: "₹10–₹20", notes: "Town buses to Darasuram (5 km) and other nearby temples", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Thanjavur", distance: "35 km", type: "Heritage City", isHidden: false, id: "thanjavur" },
+      { name: "Chidambaram", distance: "60 km", type: "Temple Town", isHidden: true, id: "chidambaram" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Temple Circuit", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Heritage Stay", perDayPerPerson: 2500, accommodation: 1500, food: 400, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kumbakonam Temples", morning: "Start with Adi Kumbeswarar Temple — the main Shiva temple from which the town takes its name. Then walk to Sarangapani Temple — the tallest gopuram in Kumbakonam soars 45 metres, and the main shrine is dedicated to Vishnu. The walk between temples passes through the old town's narrow streets lined with traditional houses and brass-vessel shops.", afternoon: "Visit the Mahamaham Tank — this large sacred tank is the centrepiece of the 12-yearly Mahamaham festival (next in 2028). Then take a bus or auto to Darasuram (5 km) for the Airavatesvara Temple — a UNESCO World Heritage site built by Rajaraja II (Chola dynasty, 12th century). The stone carvings here are among the finest in all of Dravidian art.", evening: "Return to Kumbakonam for the evening temple lamp-lighting. Try the famous Kumbakonam degree coffee at one of the traditional coffee houses.", stay: "Kumbakonam hotel", meals: "South Indian thali on banana leaf (₹60–₹120); filter coffee (₹10–₹20)", tips: "Visit temples early morning or late afternoon — they close midday. Remove shoes at every temple. Carry small change for temple donations. A cycle-rickshaw tour of the old town is a pleasant way to temple-hop." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Temple town with constant devotee traffic", "Family-friendly atmosphere"],
+      precautions: ["Crowded during festivals"],
+      soloTips: ["Stick to the main temple circuit", "Auto-rickshaws are the safest transport"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kumbakonam Police", number: "0435-2402100" }],
+      safeZones: ["Temple complexes", "Town Hall Road area"],
+      avoidAreas: ["Isolated back streets at night"],
+    },
+    rating: 4.5,
+    reviews: 7000,
+    mustEat: ["Kumbakonam degree coffee (the original!)", "South Indian thali on banana leaf", "Sundal (chickpea snack)", "Jigarthanda (milk-based cold drink)", "Murukku and mixture"],
+    packingTips: ["Modest clothing for temples", "Comfortable walking shoes (remove at temples)", "Sunscreen", "Water bottle", "Small bag for shoes (temple hopping)"],
+  },
+
   // ─── TELANGANA ────────────────────────────────────────────────────
   {
     id: "hyderabad",
@@ -92250,6 +92371,123 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1500,
     mustEat: ["Hyderabadi Biryani in Old City", "Irani chai", "Qubani ka meetha (apricot dessert)"],
     packingTips: ["Camera", "Comfortable shoes", "Water bottle", "Light scarf for head covering (respectful at tombs)"],
+  },
+
+  {
+    id: "bhongir-fort",
+    name: "Bhongir Fort",
+    state: "Telangana",
+    hidden: true,
+    aliases: ["Bhuvanagiri Fort"],
+    tagline: "A Fort on a Single Rock",
+    description: "Bhongir Fort (also Bhuvanagiri Fort) is built atop a massive single monolithic granite rock that rises abruptly from the flat Deccan plateau, about 50 km from Hyderabad. Originally constructed in the 10th century by the Western Chalukya ruler Tribhuvanamalla Vikramaditya VI, the fort was later held by the Kakatiya dynasty, the Bahmani Sultanate, the Qutb Shahis, and finally the Nizam of Hyderabad. The rock is roughly egg-shaped and the climb to the top involves scrambling over boulders and through narrow passages — rewarding trekkers with panoramic views of the surrounding countryside. The fort's dramatic silhouette, rising 500 feet above the plains, is visible from the Hyderabad–Warangal highway.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bhongir_Fort_on_an_isolated_monolithic_rock.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bhongir_Fort_on_an_isolated_monolithic_rock.jpg",
+    imageCredit: "Gaurav.alaspure, CC BY-SA 3.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bhongir_Fort_on_an_isolated_monolithic_rock.jpg",
+    ],
+    category: ["Heritage", "Adventure"],
+    bestSeason: "October – February (cooler weather for trekking)",
+    duration: "Half day",
+    highlights: [
+      { name: "Monolithic rock fort (500 ft above plains)" },
+      { name: "10th-century Chalukya-era construction" },
+      { name: "Rock scrambling trek to the summit" },
+      { name: "Panoramic views of the Deccan plateau" },
+      { name: "Ruins of palace, mosque, and granary at top" },
+    ],
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Hyderabad, then 1h drive (50 km)", fromMumbai: "Fly to Hyderabad, then 1h drive", fromBangalore: "Fly to Hyderabad, then 1h drive", duration: "50 km from Hyderabad (1h)", costRange: "₹30–₹60 by train from Hyderabad", tips: "Bhongir has its own railway station on the Hyderabad–Warangal line — MMTS and local trains run frequently. By road, it's on NH-163. Easy half-day trip from Hyderabad." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Basic lodges in Bhongir town"], description: "Day trip from Hyderabad recommended. A few basic lodges in town for those wanting an early start." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹50", notes: "From Bhongir station to fort base", available: true },
+      { mode: "Walking", cost: "Free", notes: "Trek from base to summit is about 30–45 minutes", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "50 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Warangal", distance: "100 km", type: "Heritage City", isHidden: false, id: "warangal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 200, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhongir Fort Trek", morning: "Take an early train from Hyderabad to Bhongir (50 min). From the station, an auto-rickshaw reaches the fort base in 10 minutes. The trek begins on stone steps carved into the rock, then transitions to scrambling over boulders and through narrow crevices. The rock is smooth in places — grip is important. About 30–45 minutes of climbing brings you to the summit, where the ruins of a small palace, a mosque, granaries, and water cisterns survive.", afternoon: "Spend time at the top — the 360-degree panoramic view of the flat Deccan stretching to the horizon is remarkable. The fort's egg-shaped rock is impressive from above too, with sheer drops on all sides. Descend carefully (harder than going up) and explore the small Shiva temple at the base.", evening: "Return to Hyderabad by train.", stay: "Day trip from Hyderabad", meals: "Local meals near the station (₹60–₹120)", tips: "Start early to avoid the midday heat. Wear shoes with good grip — the rock is smooth and can be slippery. Carry at least 2 litres of water. The trek is moderate but involves some rock scrambling — not suitable for those with vertigo." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Popular weekend trekking spot with groups", "Town at the base"],
+      precautions: ["Some sections of the climb are isolated", "Few facilities at the fort"],
+      soloTips: ["Trek with a group — weekend mornings are best for finding fellow trekkers", "Carry water and phone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bhongir Police", number: "08685-222333" }],
+      safeZones: ["Main trail to summit", "Fort base area"],
+      avoidAreas: ["Sheer cliff edges at summit", "Isolated sections after dark"],
+    },
+    rating: 4.2,
+    reviews: 6000,
+    mustEat: ["Hyderabadi biryani (pack from Hyderabad or eat in town)", "Local dhabas near station"],
+    packingTips: ["Shoes with good grip (essential)", "Water (2+ litres)", "Sunscreen and hat", "Camera", "Light snacks"],
+  },
+
+  {
+    id: "kuntala-waterfall",
+    name: "Kuntala Waterfall",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Telangana's Tallest Waterfall",
+    description: "Kuntala Waterfall, at about 45 metres, is the tallest waterfall in Telangana, located deep in the Sahyadri ranges of the former Adilabad district (now Nirmal district). The waterfall is formed by the Kadam River cascading over a rocky cliff in two streams that merge into a pool below, surrounded by dense deciduous forest. The name 'Kuntala' is believed to derive from a local legend about a woman whose flowing hair resembled the cascading water. The surrounding area is part of the Kawal Wildlife Sanctuary landscape, rich in wildlife including sloth bears, spotted deer, and nilgai. The waterfall is at its thunderous best during and just after the monsoon (July–October).",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kuntala_waterfalla%2C_both_streams.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kuntala_waterfalla%2C_both_streams.jpg",
+    imageCredit: "Rahmanuddin, CC BY-SA 3.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kuntala_waterfalla%2C_both_streams.jpg",
+    ],
+    category: ["Nature", "Adventure"],
+    bestSeason: "July – November (full flow after monsoon); October–November is ideal (accessible + flowing)",
+    duration: "1 day",
+    highlights: [
+      { name: "Tallest waterfall in Telangana (45 m)" },
+      { name: "Twin cascading streams into a pool" },
+      { name: "Dense deciduous forest setting" },
+      { name: "Near Kawal Wildlife Sanctuary" },
+      { name: "Trek through forest to reach the falls" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad, then 6h drive (280 km) via Nirmal", fromMumbai: "Fly to Hyderabad, then 6h drive", fromBangalore: "Fly to Hyderabad, then 6h drive", duration: "40 km from Nirmal (1.5h)", costRange: "₹200–₹400 hired vehicle from Nirmal", tips: "The waterfall is 40 km from Nirmal town. No public transport to the falls — hire a vehicle from Nirmal or Adilabad. The approach road is partly unpaved. Can combine with Kawal Wildlife Sanctuary." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Hotels in Nirmal", "Forest rest house (book via Forest Dept)"], description: "Stay in Nirmal (40 km) or Adilabad (90 km). A forest rest house near the falls requires advance booking." },
+    ],
+    localTransport: [
+      { mode: "Hired Vehicle", cost: "₹1,500–₹2,500/day", notes: "From Nirmal or Adilabad covering Kuntala + Kawal area", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Warangal", distance: "200 km", type: "Heritage City", isHidden: false, id: "warangal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1500, accommodation: 0, food: 300, transport: 800, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kuntala Waterfall", morning: "Depart Nirmal early (40 km, 1.5 hours on partly unpaved road). The drive passes through rural Telangana — cotton fields, small villages, and thinning forest. Park at the viewpoint and descend the path through forest to the base of the falls — about a 20-minute walk with some uneven steps.", afternoon: "The waterfall plunges in two streams from a rocky cliff into a pool surrounded by rocks and dense tree cover. During monsoon, the volume of water is immense and the spray soaks you from a distance. In post-monsoon (Oct–Nov), the flow is strong but the approach is safer. Spend time at the pool, photograph the falls, and enjoy the forest sounds.", evening: "Return to Nirmal or continue to Adilabad.", stay: "Nirmal or Adilabad", meals: "Pack lunch; simple meals in Nirmal (₹80–₹150)", tips: "The trek to the base is slippery after rain — wear sturdy shoes. Carry water and snacks. The falls can be dangerous during heavy monsoon — check locally before visiting." },
+    ],
+    womenSafety: {
+      score: 5,
+      level: "Exercise Caution",
+      highlights: ["Other visitors usually present on weekends"],
+      precautions: ["Remote forest location", "Limited phone signal", "Few facilities"],
+      soloTips: ["Visit on weekends when other groups are present", "Travel with a companion", "Inform your hotel of your plans"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Nirmal Police", number: "08734-231100" }],
+      safeZones: ["Main viewpoint area", "Marked trail to the falls"],
+      avoidAreas: ["Rocky areas near the water (slippery)", "Off-trail forest areas"],
+    },
+    rating: 4.3,
+    reviews: 3000,
+    mustEat: ["Telangana-style biryani in Nirmal", "Jonna rotte (sorghum flatbread)", "Local pickle"],
+    packingTips: ["Sturdy non-slip shoes", "Water (2+ litres)", "Rain jacket", "Camera in waterproof bag", "Change of clothes (spray will soak you)", "Snacks"],
   },
 
   // ─── TRIPURA ──────────────────────────────────────────────────────
@@ -93511,6 +93749,186 @@ export const DESTINATIONS: Destination[] = [
     reviews: 2000,
     mustEat: ["Rajbanshi cuisine (local ethnic food)", "Fresh-water fish curry", "Bengali sweets", "Dhoka (lentil cake)"],
     packingTips: ["Light cotton clothes", "Modest clothing", "Camera", "Sun hat", "Cash (limited card acceptance)", "Mosquito repellent"],
+  },
+
+  {
+    id: "gaur",
+    name: "Gaur (Gour)",
+    state: "West Bengal",
+    hidden: true,
+    aliases: ["Gour", "Gauda"],
+    tagline: "Ruins of Bengal's Medieval Capital",
+    description: "Gaur (also Gour or Gauda), near Malda in North Bengal, is the ruined capital of several successive Bengal sultanates and the Mughal province — one of the largest and most important medieval cities in the Indian subcontinent. Between the 12th and 16th centuries, Gaur was a thriving capital rivalling Delhi in scale. Today, the ruins spread over a vast area — the imposing Dakhil Darwaza (a massive brick gateway), the Qadam Rasul Mosque (housing a footprint relic of the Prophet), the Firoz Minar (a victory tower), and the Baradwari (palace of twelve doors) survive as ASI-protected monuments. The site sits on the banks of the Mahananda River, and the warm-toned brick architecture, unique to Bengal, is strikingly different from the sandstone forts of northern India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dakhil_Darwaza_at_Gaur%2C_Malda%2C_West_Bengal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dakhil_Darwaza_at_Gaur%2C_Malda%2C_West_Bengal.jpg",
+    imageCredit: "Ujjwal India, CC BY-SA 3.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dakhil_Darwaza_at_Gaur%2C_Malda%2C_West_Bengal.jpg",
+    ],
+    category: ["Heritage"],
+    bestSeason: "October – March (cooler, pleasant weather)",
+    duration: "1 day",
+    highlights: [
+      { name: "Dakhil Darwaza (massive brick gateway)" },
+      { name: "Qadam Rasul Mosque (Prophet's footprint relic)" },
+      { name: "Firoz Minar (victory tower)" },
+      { name: "Baradwari (twelve-door palace)" },
+      { name: "Capital of Bengal Sultanate (12th–16th century)" },
+    ],
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Bagdogra, then 4h drive (250 km); or train to Malda Town", fromMumbai: "Fly to Kolkata, then train to Malda (5–7h)", fromBangalore: "Fly to Kolkata, then train to Malda", duration: "15 km from Malda (30 min)", costRange: "₹20–₹50 shared auto from Malda", tips: "Malda Town and Old Malda stations are the nearest railheads. From Kolkata, several trains run daily (5–7 hours). Gaur is 15 km from Malda — combine with Pandua (another ruined capital, 20 km south) for a full heritage day." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Hotels in Malda town", "WBTDC lodge"], description: "Stay in Malda (15 km). The government tourist lodge offers basic rooms." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹200–₹400 for circuit", notes: "Hire for a Gaur monument circuit — ruins are spread over several square kilometres", available: true },
+      { mode: "Toto (e-rickshaw)", cost: "₹100–₹200", notes: "Shared electric rickshaws between monuments", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Murshidabad", distance: "120 km", type: "Heritage City", isHidden: false, id: "murshidabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gaur Ruins", morning: "Drive from Malda (15 km, 30 min). Start at the Dakhil Darwaza — the massive brick gateway (originally 21 metres tall) was the ceremonial entrance to the inner city. The terracotta ornamentation on its facade is distinctly Bengali. Continue to the Qadam Rasul Mosque, which houses a stone bearing what is believed to be the Prophet's footprint.", afternoon: "Visit the Firoz Minar (a five-storey circular victory tower, climbable for views), the Baradwari (a ruined palace with twelve arched doorways), and the Chamkatti Mosque with its ornate brick work. The ruins are spread over several square kilometres — an auto-rickshaw is useful for hopping between sites.", evening: "Return to Malda. If time permits, stop at Pandua (20 km south) for the Adina Mosque (the largest mosque in South Asia when it was built in 1369).", stay: "Malda", meals: "Bengali meals (₹80–₹150); Malda is famous for its mangoes (May–Jul)", tips: "The ruins are ASI-protected monuments — entry is free. Carry water and sunscreen as there's little shade. A local guide (₹300–₹500) helps bring the history to life." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["ASI-protected monuments with caretakers present", "Other visitors on weekends"],
+      precautions: ["Spread-out ruins in rural area", "Some monuments are isolated"],
+      soloTips: ["Visit on weekends when more tourists are present", "Hire an auto for the circuit rather than walking between distant ruins"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Malda Police", number: "03512-222100" }],
+      safeZones: ["Dakhil Darwaza area", "Qadam Rasul Mosque"],
+      avoidAreas: ["Isolated ruins after sunset"],
+    },
+    rating: 4.1,
+    reviews: 2500,
+    mustEat: ["Bengali fish curry and rice", "Malda mangoes (in season)", "Mishti doi (sweet yoghurt)", "Luchi and alur dom"],
+    packingTips: ["Comfortable walking shoes", "Sunscreen and hat", "Water (2+ litres)", "Camera", "Cash"],
+  },
+
+  {
+    id: "bakkhali",
+    name: "Bakkhali",
+    state: "West Bengal",
+    hidden: true,
+    tagline: "A Quiet Beach Near the Sundarbans",
+    description: "Bakkhali is a small beach town at the southern tip of the Sundarbans delta in South 24 Parganas, about 130 km from Kolkata. Unlike the busier beaches of Digha or Mandarmani, Bakkhali offers a long, flat, quiet stretch of hard-packed sand backed by casuarina plantations. The beach stretches for several kilometres and is wide enough at low tide to drive on. A key attraction nearby is Henry Island (Frasergunj), connected by a short ferry ride, with even more secluded beaches and views of the Bay of Bengal meeting the mangrove-fringed coastline. Bakkhali is also a starting point for Sundarbans boat trips, and the surrounding mudflats attract migratory birds in winter.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Bakkhali_Sea_beach_at_Bakkhali%2C_South_24_Pargana_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/47/Bakkhali_Sea_beach_at_Bakkhali%2C_South_24_Pargana_01.jpg",
+    imageCredit: "Pinakpani, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Bakkhali_Sea_beach_at_Bakkhali%2C_South_24_Pargana_01.jpg",
+    ],
+    category: ["Beach", "Nature"],
+    bestSeason: "October – March (pleasant weather, migratory birds); avoid monsoon (Jun–Sep)",
+    duration: "2 days",
+    highlights: [
+      { name: "Long, quiet, flat sandy beach" },
+      { name: "Henry Island (Frasergunj) — secluded beach" },
+      { name: "Gateway to the Sundarbans" },
+      { name: "Migratory birds in winter" },
+      { name: "Casuarina plantation walks" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Kolkata, then 4h drive (130 km)", fromMumbai: "Fly to Kolkata, then 4h drive", fromBangalore: "Fly to Kolkata, then 4h drive", duration: "130 km from Kolkata (4h)", costRange: "₹100–₹200 by bus from Kolkata (Diamond Harbour route)", tips: "From Kolkata, take a bus to Namkhana or Diamond Harbour, then another bus or auto to Bakkhali. Alternatively, direct cars/taxis take about 4 hours. The last stretch of road runs through rural Sundarbans villages." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["WBTDC Bakkhali Tourist Lodge", "Local guesthouses"], description: "The government tourist lodge is the most reliable option. Several small guesthouses line the beach road." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Sonar Bangla Resort", "Private beach resorts"], description: "A few beach resorts offer sea-facing rooms." },
+    ],
+    localTransport: [
+      { mode: "Walking/Cycling", cost: "Free / ₹50 cycle hire", notes: "The beach is walkable; cycles available for rent", available: true },
+      { mode: "Auto-rickshaw", cost: "₹50–₹100", notes: "To Frasergunj ferry point", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sundarbans", distance: "40 km", type: "National Park", isHidden: false, id: "sundarbans" },
+      { name: "Digha", distance: "200 km", type: "Beach", isHidden: false, id: "digha" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Weekend", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 200, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 1500, food: 400, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bakkhali Beach", morning: "Arrive from Kolkata (4 hours). Check into your lodge and walk to the beach — the wide, flat expanse of hard-packed sand stretching to the horizon is calming. Walk along the water's edge and explore the casuarina plantation behind the beach.", afternoon: "Take the ferry to Henry Island (Frasergunj) — a short crossing leads to an even quieter stretch of beach. The view of the Bay of Bengal meeting the mangrove-fringed coastline is lovely. Walk along Frasergunj beach and visit the old lighthouse.", evening: "Return to Bakkhali for sunset on the beach. Fresh seafood at one of the small beachside restaurants.", stay: "Bakkhali tourist lodge", meals: "Bengali seafood — fried pomfret, prawn curry, crab (₹150–₹300)", tips: "Bakkhali is off the beaten path — don't expect resort-style amenities. The charm is in the quiet. Carry cash." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Quiet town with few tourists", "Government lodge is well managed"],
+      precautions: ["Remote area with limited facilities", "Beach can be deserted"],
+      soloTips: ["Stay at the government tourist lodge", "Walk on the beach during daytime only", "Inform your lodge of your plans"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bakkhali Police", number: "03210-255233" }],
+      safeZones: ["Tourist lodge area", "Main beach near the lodge"],
+      avoidAreas: ["Isolated beach stretches at night", "Mudflats near mangroves"],
+    },
+    rating: 4.0,
+    reviews: 2000,
+    mustEat: ["Fresh fried pomfret", "Prawn malai curry", "Bengali fish thali", "Coconut water on the beach"],
+    packingTips: ["Light cotton clothes", "Sunscreen and hat", "Camera", "Cash (limited card acceptance)", "Mosquito repellent", "Swimwear"],
+  },
+
+  {
+    id: "tarapith",
+    name: "Tarapith",
+    state: "West Bengal",
+    hidden: true,
+    tagline: "Seat of Tantric Worship",
+    description: "Tarapith, in Birbhum district near Rampurhat, is one of the most important Shakti Peethas and tantric pilgrimage centres in India. The Tara Ma temple, dedicated to the goddess Tara (a form of Kali/Durga), draws thousands of devotees daily. The temple is small but intensely atmospheric — the idol of Tara Ma is a three-eyed silver image nursing Shiva as an infant. The adjacent cremation ground (shamshan) is central to Tarapith's spiritual identity — tantric sadhaks (practitioners) meditate among the funeral pyres, and the most famous of them, Bamakhepa (the 'mad saint' of Tarapith, d. 1911), is venerated as a saint. The surrounding temple town bustles with vendors selling puja materials, sindoor, and rudraksha beads.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tarapith_Temple_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tarapith_Temple_01.jpg",
+    imageCredit: "Tarunsamanta, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tarapith_Temple_01.jpg",
+    ],
+    category: ["Spiritual", "Culture"],
+    bestSeason: "October – March (festive season, pleasant weather); Kali Puja (October/November) is especially significant",
+    duration: "Half day – 1 day",
+    highlights: [
+      { name: "Tara Ma Temple (Shakti Peetha)" },
+      { name: "Silver idol of Tara nursing infant Shiva" },
+      { name: "Adjacent shamshan (cremation ground) — tantric meditation site" },
+      { name: "Bamakhepa's samadhi (tomb shrine)" },
+      { name: "Intense devotional atmosphere" },
+    ],
+    visitingHours: { opens: "4:30 AM", closes: "1:30 PM / 3:00 PM – 10:30 PM", note: "Temple closes midday. No entry fee. VIP darshan available (₹51). Photography not allowed inside the sanctum. Expect long queues on Tuesdays and Saturdays (auspicious for goddess worship)." },
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Kolkata, then train to Rampurhat (6h)", fromMumbai: "Fly to Kolkata, then train", fromBangalore: "Fly to Kolkata, then train", duration: "6 km from Rampurhat station (15 min)", costRange: "₹20–₹50 auto from Rampurhat", tips: "Rampurhat station is on the Kolkata–Bhagalpur line. From Kolkata, trains take 5–6 hours. From Rampurhat, autos and cycle-rickshaws run to Tarapith. Can combine with Shantiniketan (60 km south) for a heritage+spiritual trip." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹300–₹1,000/night", examples: ["Dharamshalas near temple", "Budget hotels in Rampurhat"], description: "Dharamshalas (pilgrims' lodges) near the temple are basic and cheap. Better hotels in Rampurhat (6 km)." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹20–₹50", notes: "From Rampurhat to Tarapith temple", available: true },
+      { mode: "Walking", cost: "Free", notes: "The temple complex and shamshan are walking distance", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Shantiniketan", distance: "60 km", type: "Cultural Heritage", isHidden: false, id: "shantiniketan" },
+      { name: "Bishnupur", distance: "120 km", type: "Heritage Temples", isHidden: false, id: "bishnupur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 200, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tarapith Temple", morning: "Arrive from Rampurhat (6 km, 15 min). Join the queue for darshan at the Tara Ma temple — the small sanctum houses the silver image of the goddess, decorated daily with fresh flowers and sindoor. The atmosphere is intensely devotional — chanting, bells, and the smell of incense fill the air. After darshan, visit Bamakhepa's samadhi — the 'mad saint' lived in the shamshan and is revered for his spiritual power.", afternoon: "Walk to the adjacent shamshan ghat — this is where tantric practitioners have meditated for centuries. It is an active cremation ground and a place of deep spiritual significance in the tantric tradition. The contrast between the bustling temple and the quiet shamshan is striking. Browse the temple bazaar for puja materials, rudraksha beads, and local sweets.", evening: "Return to Rampurhat or continue to Shantiniketan (60 km).", stay: "Rampurhat or day trip", meals: "Simple vegetarian meals near the temple; Bengali sweets (₹50–₹100)", tips: "Dress modestly. Remove shoes before entering the temple. If visiting the shamshan, be respectful — it is a place of genuine spiritual practice, not a tourist curiosity. Offerings for the temple: red hibiscus flowers, sindoor, coconut." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Pilgrimage town with constant devotee traffic", "Temple area well maintained"],
+      precautions: ["The shamshan area can be unsettling for some visitors"],
+      soloTips: ["Visit during morning hours for shortest queues", "Stay near the temple complex"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Rampurhat Police", number: "03461-252100" }],
+      safeZones: ["Temple complex", "Main bazaar"],
+      avoidAreas: ["Shamshan area after dark (unless with a group)"],
+    },
+    rating: 4.4,
+    reviews: 5000,
+    mustEat: ["Temple prasad (khichdi and sweets)", "Bengali mishti (sweets)", "Langalata (stuffed sweet)", "Simple Bengali meals"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera (not inside temple)", "Cash for offerings", "Carry red flowers for offering"],
   },
 
   // ─── SIKKIM ───────────────────────────────────────────────────────
