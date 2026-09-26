@@ -13171,6 +13171,62 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["ILP printout (mandatory)", "Light jacket for cool evenings", "Comfortable walking shoes", "Rain gear (monsoon season)", "Camera"],
   },
 
+  {
+    id: "namsai",
+    name: "Namsai",
+    state: "Arunachal Pradesh",
+    tagline: "Home to Northeast India's largest Buddhist pagoda",
+    description: "Namsai is a plains town near the Assam border known for its Tai Khamti Buddhist community and the striking Golden Pagoda (Kongmu Kham), one of the largest Buddhist monuments in Northeast India. Built in Southeast Asian pagoda style with a gleaming golden dome and adorned with intricate murals depicting the life of Buddha, the pagoda serves as both an active monastery and a serene meditation retreat surrounded by manicured gardens. The town's Tai Khamti and Singpho communities give Namsai a distinct Theravada Buddhist cultural identity within Arunachal Pradesh, more commonly associated with Tibetan Buddhism further north.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Golden_Pagoda_in_Namsai%2C_Arunachal_Pradesh%2C_North_East_India._Photo_by_Jim_Ankan_Deka_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/77/Golden_Pagoda_in_Namsai%2C_Arunachal_Pradesh%2C_North_East_India._Photo_by_Jim_Ankan_Deka_01.jpg",
+    imageCredit: "Withjim, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage", "Culture"],
+    bestSeason: "October to April",
+    duration: "1 Day",
+    highlights: [
+      { name: "Golden Pagoda (Kongmu Kham)" },
+      { name: "Buddha life-story murals" },
+      { name: "Tai Khamti monastery complex" },
+      { name: "Meditation gardens" },
+    ],
+    transport: [
+      { mode: "Road", icon: "car", fromDelhi: "Fly to Dibrugarh (Assam) then 45 km by road", fromMumbai: "Fly to Dibrugarh then road", fromBangalore: "Fly to Dibrugarh via Kolkata then road", duration: "1 hr from Dibrugarh", costRange: "₹500–₹1,200 by taxi", tips: "Dibrugarh in Assam is the nearest airport and railhead" },
+    ],
+    accommodation: [
+      { type: "Government Guest House", priceRange: "₹800–₹1,800/night", examples: ["Circuit House Namsai"], description: "Government-run accommodation in the town" },
+      { type: "Budget Hotels", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in Namsai town centre"], description: "Simple private hotels" },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "Around town and to the pagoda", available: true },
+      { mode: "Taxi", cost: "₹500–₹1,200/day", notes: "From Dibrugarh or Tinsukia", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dibrugarh (Assam)", distance: "45 km", type: "City", isHidden: true },
+      { name: "Roing", distance: "90 km", type: "Nature", isHidden: false, id: "roing" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2000, accommodation: 1000, food: 500, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Golden Pagoda Visit", morning: "Arrive from Dibrugarh; visit the Golden Pagoda complex and admire the murals depicting Buddha's life", afternoon: "Explore the meditation gardens and interact with the resident monks if permitted; visit the Tai Khamti cultural centre", evening: "Return to Dibrugarh or overnight in Namsai", stay: "Circuit house or town hotel", meals: "Tai Khamti cuisine, simple vegetarian meals", tips: "Dress modestly and remove footwear before entering the pagoda; ILP required for Arunachal Pradesh entry" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Peaceful monastery town", "Low crime rate", "Welcoming Buddhist community"],
+      precautions: ["ILP required and checked at entry points", "Limited public transport after dark"],
+      soloTips: ["Very manageable for solo travellers", "Monastery environment is calm and respectful"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Namsai Police", number: "03712-222233" }],
+      safeZones: ["Pagoda complex", "Town centre"],
+      avoidAreas: ["None significant — a quiet, peaceful town"],
+    },
+    rating: 4.4,
+    reviews: 1400,
+    mustEat: ["Tai Khamti cuisine", "Sticky rice dishes", "Simple vegetarian monastery meals"],
+    packingTips: ["ILP printout (mandatory)", "Modest clothing for pagoda visit", "Comfortable footwear (removed at pagoda)", "Camera"],
+  },
+
   // The two destinations below give a "Places Near Agra" nearby-place card
   // a real full page to open into (see NearbyPlace.id in Agra's
   // nearbyPlaces). Built from general public travel sources — day-trip
@@ -79772,6 +79828,62 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "wokha",
+    name: "Wokha",
+    state: "Nagaland",
+    tagline: "Lotha Naga hill town beside the Amur falcon capital of the world",
+    description: "Wokha is the cultural home of the Lotha Naga tribe, a hill town of terraced fields and pine-covered slopes in central Nagaland. It serves as the gateway to nearby Pangti village, globally recognised as the 'Amur Falcon Capital of the World' after conservation efforts turned what was once large-scale hunting of the migratory raptors into one of Asia's most celebrated bird-conservation success stories — hundreds of thousands of Amur Falcons roost around the Doyang reservoir each October-November on their migration from Siberia to Africa. The town itself offers a quieter, more traditional counterpart to Kohima, with Lotha handicrafts, terrace farming, and panoramic views over the Doyang valley.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Wokha_Town.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Wokha_Town.jpg",
+    imageCredit: "Abs odyuo, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October to November (Amur Falcon season), December to March",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Pangti Village (Amur Falcon roosting site)" },
+      { name: "Doyang Reservoir" },
+      { name: "Lotha Naga handicrafts" },
+      { name: "Terraced hillside farms" },
+    ],
+    transport: [
+      { mode: "Road", icon: "car", fromDelhi: "Fly to Dimapur then 70 km by road", fromMumbai: "Fly to Dimapur via Kolkata then road", fromBangalore: "Fly to Dimapur via Kolkata then road", duration: "2 hrs from Dimapur", costRange: "₹800–₹2,000 by taxi", tips: "Dimapur is Nagaland's only airport; Kohima is a further 60 km from Wokha" },
+    ],
+    accommodation: [
+      { type: "Government Guest House", priceRange: "₹700–₹1,800/night", examples: ["Nagaland Tourism guest house Wokha"], description: "Government-run accommodation in town" },
+      { type: "Homestays (Pangti season)", priceRange: "₹800–₹1,500/night", examples: ["Village homestays during Amur Falcon season"], description: "Community-run homestays in Pangti during the falcon roosting period" },
+    ],
+    localTransport: [
+      { mode: "Hired Vehicle", cost: "₹1,500–₹2,500/day", notes: "For Pangti village and Doyang reservoir visits", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Doyang Hydro Project", distance: "40 km", type: "Reservoir", isHidden: false, id: "doyang-hydro-project" },
+      { name: "Kohima", distance: "60 km", type: "City", isHidden: false, id: "kohima" },
+      { name: "Mokokchung", distance: "70 km", type: "Heritage Town", isHidden: false, id: "mokokchung" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget Explorer", perDayPerPerson: 1300, accommodation: 500, food: 350, transport: 300, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Wokha Town", morning: "Arrive from Dimapur/Kohima; explore Wokha town and Lotha Naga handicraft shops", afternoon: "Visit viewpoints over the terraced hillsides and Doyang valley", evening: "Local Lotha Naga dinner in town", stay: "Wokha guest house", meals: "Naga thali, smoked pork, bamboo shoot dishes", tips: "Visit in October-November specifically to witness the Amur Falcon migration at Pangti" },
+      { day: 2, title: "Pangti Village & Doyang Reservoir", morning: "Drive to Pangti village (40 km); if visiting in season, witness the spectacular Amur Falcon roosting at dawn or dusk", afternoon: "Boat or walk along the Doyang reservoir; learn about the community-led conservation story from local guides", evening: "Return to Wokha or Dimapur", stay: "Pangti homestay (in season) or Wokha guest house", meals: "Village-hosted meals", tips: "Amur Falcons roost specifically late October to November — outside this window, focus on the reservoir and hiking instead" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Peaceful hill town", "Strong community-led tourism in Pangti", "Low crime"],
+      precautions: ["Remote area with limited medical facilities", "Roads to Pangti can be rough"],
+      soloTips: ["Travel with a local guide for Pangti visits", "Book homestays through Nagaland Tourism during falcon season"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Wokha Police", number: "03860-224233" }],
+      safeZones: ["Wokha town centre", "Pangti village during falcon season"],
+      avoidAreas: ["Unmarked forest trails after dark"],
+    },
+    rating: 4.3,
+    reviews: 1100,
+    mustEat: ["Lotha Naga thali", "Smoked pork with bamboo shoot", "Axone (fermented soybean)", "Local rice beer"],
+    packingTips: ["Warm jacket", "Binoculars (essential for falcon watching)", "Camera with zoom lens", "ILP printout", "Cash (limited ATMs)", "Comfortable walking shoes"],
+  },
+
+  {
     id: "mon-nagaland",
     name: "Mon",
     state: "Nagaland",
@@ -93734,6 +93846,59 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1200,
     mustEat: ["Temple prasad", "Bengali-Tripuri thali in Agartala", "Local fish curry"],
     packingTips: ["Modest clothing for temple", "Comfortable walking shoes for the hillock climb", "Water bottle", "ID for border area"],
+  },
+
+  {
+    id: "boxanagar",
+    name: "Boxanagar",
+    state: "Tripura",
+    tagline: "8th-century Buddhist stupa ruins in a quiet Tripura village",
+    description: "Boxanagar (also spelled Baxanagar) near Sonamura holds the excavated ruins of an 8th-century Buddhist monastic complex, an ASI-protected monument (N-TR-2) that ranks among Tripura's most significant archaeological finds. Excavations have uncovered a large stupa base, monastery cells, and terracotta artefacts suggesting the site was an active centre of Buddhist learning and worship over a thousand years ago. Set amid quiet paddy fields about 40 km from Agartala, the ruins offer a glimpse into Tripura's pre-Hindu Buddhist past, a lesser-visited counterpart to the region's better-known Hindu temple circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/1%29The_ruins_of_Buddhist_Temple_at_Boxanagar%2Cnear_Sonamura%2C_40_kms_west_to_the_capital_city_Agartala%2CTripura.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/39/1%29The_ruins_of_Buddhist_Temple_at_Boxanagar%2Cnear_Sonamura%2C_40_kms_west_to_the_capital_city_Agartala%2CTripura.jpg",
+    imageCredit: "Sanjibroy56, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "8th-century stupa base ruins" },
+      { name: "Excavated monastery cells" },
+      { name: "ASI archaeological site (N-TR-2)" },
+    ],
+    transport: [
+      { mode: "Road", icon: "car", fromDelhi: "Fly to Agartala then 40 km by road", fromMumbai: "Fly to Agartala then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "1 hr from Agartala", costRange: "₹500–₹1,000 by taxi", tips: "Best combined with Neermahal or Sonamura sightseeing" },
+    ],
+    accommodation: [
+      { type: "Day Trip", priceRange: "N/A", examples: ["Stay in Agartala"], description: "No accommodation at the site; visited as a day trip from Agartala" },
+    ],
+    localTransport: [
+      { mode: "Private taxi", cost: "₹800–₹1,500", notes: "Round trip from Agartala", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Neermahal", distance: "30 km", type: "Palace", isHidden: false, id: "neermahal" },
+      { name: "Agartala", distance: "40 km", type: "City", isHidden: false, id: "agartala" },
+      { name: "Sepahijala", distance: "35 km", type: "Wildlife", isHidden: false, id: "sepahijala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Boxanagar Ruins", morning: "Drive from Agartala to Boxanagar; explore the excavated stupa base and monastery cell ruins with a local guide", afternoon: "Combine with a visit to Neermahal or Sepahijala Wildlife Sanctuary nearby", evening: "Return to Agartala", stay: "Agartala hotel", meals: "Bengali-Tripuri thali in Agartala", tips: "There's little signage at the site — a local guide or ASI caretaker can add helpful context to the ruins" },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["ASI-protected site, generally quiet and safe", "Rural setting with low crime"],
+      precautions: ["Limited facilities at the site itself", "Best visited during daylight hours as part of a day trip"],
+      soloTips: ["Visit as part of a day trip from Agartala rather than alone in the evening", "Combine with Neermahal for a fuller day"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Sonamura Police", number: "0381-2670233" }],
+      safeZones: ["Excavation site during daylight"],
+      avoidAreas: ["Isolated approach roads after dark"],
+    },
+    rating: 4.0,
+    reviews: 600,
+    mustEat: ["Bengali-Tripuri thali in Agartala", "Local fish curry"],
+    packingTips: ["Sun protection — little shade on site", "Comfortable walking shoes for uneven excavated ground", "Water bottle", "Camera"],
   },
 
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
