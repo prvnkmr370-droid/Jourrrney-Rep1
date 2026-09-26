@@ -68962,6 +68962,66 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Minicoy tuna dishes — the island runs on tuna (mas)", "Coconut-rich curries; rice", "Local sweets and areca/betel offerings (a Minicoy courtesy)", "Tender coconut"],
     packingTips: ["Lakshadweep entry permit (printed) and ID, with copies", "Reef shoes, reef-safe sunscreen, rash guard, hat; your own mask/snorkel", "All personal medicines; sea-sickness tablets for the long passage", "Modest clothing for the villages; a dry bag; cash (no ATMs)"],
   },
+
+  {
+    id: "kiltan",
+    name: "Kiltan Island",
+    state: "Lakshadweep",
+    hidden: true,
+    tagline: "A Pristine Coral Atoll",
+    description: "Kiltan, one of the smaller inhabited islands of Lakshadweep (2.2 sq km), lies 292 km off the Kerala coast in a crystalline lagoon surrounded by coral reefs. The island is home to about 4,000 people — almost entirely Muslim — who live from coconut farming, tuna fishing, and coir production. Kiltan's lagoon is shallower and calmer than the better-known islands, making it ideal for kayaking and glass-bottom boat rides. The island has one of Lakshadweep's oldest mosques and retains a traditional character untouched by mass tourism — visitors require a special Lakshadweep entry permit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/20150107_Kiltan_seen_from_south.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7d/20150107_Kiltan_seen_from_south.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7d/20150107_Kiltan_seen_from_south.jpg",
+    ],
+    category: ["Beach", "Nature"],
+    bestSeason: "October – May (calm seas for boat travel)",
+    duration: "1–2 days (as part of Lakshadweep package)",
+    highlights: [
+      { name: "Pristine coral reef lagoon" },
+      { name: "Traditional island life — coconut farming and tuna fishing" },
+      { name: "Shallow lagoon for kayaking and snorkelling" },
+      { name: "One of Lakshadweep's oldest mosques" },
+      { name: "Virtually no commercial tourism" },
+    ],
+    visitingHours: { opens: "Open island", closes: "Open island", note: "Lakshadweep entry permit mandatory (apply through Lakshadweep Administration or SPORTS — Society for Promotion of Recreational Tourism). Indian nationals only for most islands. Kiltan is not on the standard tourist circuit — special permission may be needed." },
+    transport: [
+      { mode: "Ship", icon: "🚢", fromDelhi: "Fly to Kochi, then ship to Kiltan (20–24h)", fromMumbai: "Fly to Kochi, then ship", fromBangalore: "Fly to Kochi, then ship", duration: "20–24h from Kochi by ship (MV Kavaratti or similar)", costRange: "₹2,000–₹6,000 ship fare depending on class", tips: "Ships from Kochi are the only way to reach Kiltan — no helicopter or flight service. The Lakshadweep Administration operates passenger ships. Book well in advance, especially for Oct–May season." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹1,000–₹3,000/night", examples: ["Government guest house"], description: "Extremely limited — a basic government guest house. Homestays may be available through the administration. Carry essentials." },
+    ],
+    localTransport: [
+      { mode: "Walking/Bicycle", cost: "Free", notes: "The island is tiny — everything is walkable", available: true },
+      { mode: "Boat", cost: "₹200–₹500", notes: "Glass-bottom boat for reef viewing", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kavaratti", distance: "60 km by sea", type: "UT Capital", isHidden: false, id: "kavaratti" },
+      { name: "Kadmat Island", distance: "90 km by sea", type: "Beach Island", isHidden: false, id: "kadmat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Island Visitor", perDayPerPerson: 2500, accommodation: 1000, food: 500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kiltan Island", morning: "Arrive by ship from Kochi (the approach to the island is stunning — turquoise water over white sand and coral). Walk around the island — it takes about an hour to circle the entire coast. The eastern shore has the calmest lagoon with crystal-clear water.", afternoon: "Snorkel or kayak in the lagoon — the coral reef is rich with parrotfish, clownfish, and sea turtles. Take a glass-bottom boat ride over the reef if available. Visit the old mosque and walk through the village — traditional coral-stone houses, coconut groves, and fishing boats.", evening: "Watch the sunset from the western shore. Fresh tuna dinner prepared by your host.", stay: "Government guest house", meals: "Fresh tuna and coconut-based meals (₹200–₹400)", tips: "Kiltan is very traditional — dress modestly (cover shoulders and knees), especially near the mosque. Alcohol is not available anywhere in Lakshadweep. There are no ATMs — carry all cash you'll need." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Tiny island community — everyone knows everyone", "Extremely low crime", "Conservative but welcoming culture"],
+      precautions: ["Very conservative Muslim community — modest dress essential", "No medical facilities beyond basic first aid"],
+      soloTips: ["Safe but very remote — travel as part of a package", "Dress conservatively", "Carry all medicines and essentials"],
+      emergencyContacts: [{ label: "Lakshadweep Administration", number: "04896-262258" }, { label: "Police", number: "100" }],
+      safeZones: ["Entire island"],
+      avoidAreas: [],
+    },
+    rating: 4.2,
+    reviews: 200,
+    mustEat: ["Fresh tuna (the island's staple)", "Coconut-based curries", "Tender coconut water"],
+    packingTips: ["Entry permit and ID copies", "Reef-safe sunscreen", "Reef shoes", "Snorkel gear (own)", "Modest clothing", "Cash (no ATMs)", "All medicines", "Dry bag", "Sea-sickness tablets"],
+  },
+
   {
     id: "bhimbetka",
     name: "Bhimbetka Rock Shelters",
@@ -91593,6 +91653,122 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes (lots of walking)", "Sun hat and sunscreen", "Water bottle", "Camera", "Light jacket (AC shows can be cool)"],
   },
 
+  {
+    id: "salar-jung-museum",
+    name: "Salar Jung Museum",
+    state: "Telangana",
+    hidden: true,
+    tagline: "One Man's World-Spanning Art Collection",
+    description: "The Salar Jung Museum on the banks of the Musi River in Hyderabad houses one of the world's largest one-man collections of art and antiquities — amassed over three generations by Mir Yousuf Ali Khan (Salar Jung III), the prime minister of the seventh Nizam. The museum holds over 43,000 objects spanning Indian, Middle Eastern, Far Eastern, and European art — from 2nd-century Indian bronzes to Aurangzeb's sword to a clock that plays 'God Save the King.' Its most famous exhibit is Antonio Corradini's 'Veiled Rebecca' — an 18th-century Italian marble sculpture so detailed that the stone veil appears translucent.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Salar_Jung_Museum%2C_Hyderabad%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Salar_Jung_Museum%2C_Hyderabad%2C_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Salar_Jung_Museum%2C_Hyderabad%2C_India.jpg",
+    ],
+    category: ["Culture", "Heritage"],
+    bestSeason: "Year-round (indoor museum)",
+    duration: "3–4 hours",
+    highlights: [
+      { name: "'Veiled Rebecca' marble sculpture (Antonio Corradini)" },
+      { name: "43,000+ art objects and antiquities" },
+      { name: "Aurangzeb's sword and daggers collection" },
+      { name: "Musical clock (plays on the hour)" },
+      { name: "Japanese, Chinese, and European galleries" },
+    ],
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Closed Fridays and national holidays. Entry: ₹20 (Indians), ₹500 (foreigners). Photography restricted in some galleries. Allow 3–4 hours for a thorough visit." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad, then 20-min taxi to museum", fromMumbai: "Fly to Hyderabad, then 20-min taxi", fromBangalore: "Fly to Hyderabad, then 20-min taxi", duration: "20 min from Hyderabad airport", costRange: "₹30–₹50 bus; ₹200–₹400 taxi", tips: "Located on the south bank of the Musi River, near Charminar. Combine with a visit to Charminar and Laad Bazaar (walking distance)." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels near Charminar", "Nampally area hotels"], description: "Budget options in Old City area." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "From Charminar or Nampally station", available: true },
+      { mode: "Metro", cost: "₹15–₹30", notes: "Nearest metro: MGBS station (1 km walk)", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "In the city", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Warangal", distance: "150 km", type: "Heritage City", isHidden: false, id: "warangal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Visitor", perDayPerPerson: 300, accommodation: 0, food: 100, transport: 100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Salar Jung Museum", morning: "Arrive when the museum opens at 10 AM. Start with the Indian Art galleries — Mughal miniatures, Tanjore paintings, jade carvings, and an extraordinary collection of medieval Indian arms (including Aurangzeb's personal sword). The textile gallery has Nizam-era brocades and embroidered garments.", afternoon: "Visit the European galleries — the 'Veiled Rebecca' is in Gallery 11 (ground floor) and draws crowds. The marble veil over Rebecca's face is so finely carved it appears almost transparent. See the musical clock on the second floor — it chimes on the hour with a mechanical figure. The Far Eastern galleries have Chinese porcelain, Japanese lacquerware, and Southeast Asian bronzes.", evening: "Walk to Charminar (1 km) and explore Laad Bazaar for bangles and pearls.", stay: "Hyderabad", meals: "Hyderabadi Biryani at a nearby Irani cafe (₹150–₹300)", tips: "The museum is vast — prioritise the Indian arms, Veiled Rebecca, and the clock if short on time. Friday is closed. Weekends are crowded." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Government museum with security and CCTV", "Families and tourists throughout", "Old City is busy and well-patrolled"],
+      precautions: ["Old City lanes can be crowded — keep belongings secure"],
+      soloTips: ["Very safe for solo women during museum hours", "Use museum's official auto/taxi stand when leaving"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Museum interior", "Charminar area (daytime)"],
+      avoidAreas: ["Quiet lanes of Old City after dark"],
+    },
+    rating: 4.4,
+    reviews: 22000,
+    mustEat: ["Hyderabadi Biryani", "Irani chai and Osmania biscuit at a nearby Irani cafe", "Haleem (seasonal)"],
+    packingTips: ["Comfortable shoes (large museum)", "Camera (check gallery restrictions)", "Water bottle"],
+  },
+
+  {
+    id: "paigah-tombs",
+    name: "Paigah Tombs",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Hyderabad's Hidden Marble Masterpieces",
+    description: "The Paigah Tombs at Chandrayanagutta, Hyderabad, are a cluster of ornate marble mausoleums built for the Paigah nobles — the most trusted administrators and military commanders of the Nizams of Hyderabad. Dating from the late 18th to early 20th century, the tombs display extraordinary marble inlay work (pietra dura) combining Rajasthani, Mughal, and Asaf Jahi design elements with stucco work borrowed from European architecture. Despite being compared to the craftsmanship of the Taj Mahal, these tombs remain almost completely unknown to tourists — making them one of Hyderabad's most rewarding hidden gems.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Paigah_Tombs_03.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/85/Paigah_Tombs_03.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/Paigah_Tombs_03.jpg",
+    ],
+    category: ["Heritage", "History"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [
+      { name: "Exquisite marble inlay (pietra dura) work" },
+      { name: "Fusion of Mughal, Rajasthani, and European design" },
+      { name: "Virtually tourist-free hidden gem" },
+      { name: "Geometric jali screens and stucco arches" },
+    ],
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Free entry. No official guides — hire through your hotel. Some tombs may be locked — ask the caretaker to open. Respectful dress required." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad, then 30-min taxi", fromMumbai: "Fly to Hyderabad, then 30-min taxi", fromBangalore: "Fly to Hyderabad, then 30-min taxi", duration: "30 min from Hyderabad city centre", costRange: "₹100–₹200 taxi from Charminar", tips: "Located at Pisal Banda, Chandrayanagutta. Hard to find — use Google Maps. Combine with a visit to Chowmahalla Palace and Charminar in the Old City." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels in Old City or Nampally"], description: "Stay in Hyderabad and visit as part of a heritage walk." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹100–₹200", notes: "From Charminar to Paigah Tombs", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "In the city", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Salar Jung Museum", distance: "6 km", type: "Museum", isHidden: true, id: "salar-jung-museum" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Visitor", perDayPerPerson: 200, accommodation: 0, food: 50, transport: 150, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Paigah Tombs & Old City Heritage", morning: "Visit the Paigah Tombs — arrive early for the best light on the marble. The main enclosure has several tombs, each with distinct design. Look closely at the marble jali (lattice) screens — the geometric patterns are breathtaking, and the pietra dura inlay work rivals the Taj. The caretaker may unlock the inner chambers for a closer look.", afternoon: "Continue to Chowmahalla Palace (10 km) — the official residence of the Nizams, with a stunning durbar hall and vintage car collection. Then walk to Charminar and Laad Bazaar.", evening: "End with Hyderabadi Biryani at a legendary Old City restaurant.", stay: "Hyderabad", meals: "Biryani at Paradise or Bawarchi (₹200–₹400)", tips: "The tombs are little known — you may have them entirely to yourself. The marble work is most visible in soft morning light. Photography is allowed." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Open heritage site", "Caretaker usually present"],
+      precautions: ["The surrounding area is a residential neighbourhood — may feel unfamiliar", "Limited signage"],
+      soloTips: ["Visit during daylight", "Take a taxi directly to the site", "Combine with other Old City visits"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main tomb enclosure"],
+      avoidAreas: ["Surrounding lanes after dark"],
+    },
+    rating: 4.3,
+    reviews: 1500,
+    mustEat: ["Hyderabadi Biryani in Old City", "Irani chai", "Qubani ka meetha (apricot dessert)"],
+    packingTips: ["Camera", "Comfortable shoes", "Water bottle", "Light scarf for head covering (respectful at tombs)"],
+  },
+
   // ─── TRIPURA ──────────────────────────────────────────────────────
   {
     id: "agartala",
@@ -92016,6 +92192,65 @@ export const DESTINATIONS: Destination[] = [
     reviews: 350,
     mustEat: ["Bengali fish curry at Udaipur", "Mui Borok (Tripuri fermented fish)", "Chhana sweets"],
     packingTips: ["Sun hat and sunscreen", "Comfortable walking shoes", "Water and snacks", "Insect repellent", "Camera"],
+  },
+
+  {
+    id: "tripura-sundari-temple",
+    name: "Tripura Sundari Temple (Matabari)",
+    state: "Tripura",
+    hidden: true,
+    tagline: "One of India's 51 Shakti Peethas",
+    description: "Tripura Sundari Temple, also known as Matabari, is one of the 51 Shakti Peethas — the holiest shrines in Shaktism — located in Udaipur, South Tripura district. Dedicated to the goddess Tripura Sundari (an aspect of Parvati), the temple was built in 1501 by Maharaja Dhanya Manikya in the distinctive Bengali-style 'aat-chala' (eight-roofed) architecture with a square sanctum. The temple sits beside the sacred Kalyan Sagar lake, where hundreds of large turtles are fed by devotees — considered sacred and protected. Udaipur was the ancient capital of the Manikya dynasty before the capital moved to Agartala.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Tripura_Sundari_Temple.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Tripura_Sundari_Temple.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e0/Tripura_Sundari_Temple.JPG",
+    ],
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October – March (Diwali celebrations are special here)",
+    duration: "Half day",
+    highlights: [
+      { name: "One of 51 Shakti Peethas (Shaktism's holiest shrines)" },
+      { name: "16th-century Bengali-style temple architecture" },
+      { name: "Sacred turtles in Kalyan Sagar lake" },
+      { name: "Ancient capital of the Manikya dynasty" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Temple: 5 AM–9 PM, free entry. Special aarti at dawn and dusk. Diwali (Oct–Nov) draws the largest crowds. Combine with Pilak archaeological site (30 km)." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala, then 2.5h drive (55 km)", fromMumbai: "Fly to Agartala, then 2.5h drive", fromBangalore: "Fly to Agartala, then 2.5h drive", duration: "2.5h from Agartala (55 km)", costRange: "₹80–₹150 bus from Agartala", tips: "TRTC buses from Agartala to Udaipur (Tripura) are frequent. Shared autos also available. Combine with Pilak (30 km further) for a full day trip." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹300–₹1,000/night", examples: ["Guesthouses in Udaipur (Tripura)"], description: "Basic guesthouses in Udaipur. Most visitors do a day trip from Agartala." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹20–₹50", notes: "Within Udaipur to the temple", available: true },
+      { mode: "Walking", cost: "Free", notes: "Temple and lake are adjacent", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pilak Archaeological Site", distance: "30 km", type: "Archaeological", isHidden: true, id: "pilak" },
+      { name: "Agartala", distance: "55 km", type: "State Capital", isHidden: false, id: "agartala" },
+      { name: "Neermahal", distance: "40 km", type: "Water Palace", isHidden: true, id: "neermahal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 200, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tripura Sundari & Udaipur", morning: "Drive from Agartala to Udaipur (55 km, 2.5 hours). Visit the Tripura Sundari Temple — the square sanctum houses the deity in a pit below ground level (unusual among Hindu temples). The Bengali-style curved roof with terracotta ornamentation is distinctive. Attend the morning aarti if you arrive early.", afternoon: "Walk to Kalyan Sagar lake — the sacred lake beside the temple is home to hundreds of large softshell turtles. Devotees feed them with puffed rice and biscuits (available from vendors). The turtles are remarkably tame. Visit the old Udaipur town — the former capital has crumbling palace ruins and a local market.", evening: "Return to Agartala or continue to Pilak (30 km).", stay: "Day trip or Udaipur guesthouse", meals: "Bengali meals in Udaipur (₹80–₹150), prasad at the temple", tips: "The temple is a living, active pilgrimage site — dress modestly and remove shoes. The turtles in Kalyan Sagar are surprisingly large and friendly. Diwali celebrations here are grand — the temple and lake are lit with thousands of diyas." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Major pilgrimage site with constant devotees", "Temple staff present", "Udaipur is a small, safe town"],
+      precautions: ["Crowded during festivals — keep belongings secure"],
+      soloTips: ["Very safe for solo women — it's a pilgrimage town", "Temple area is well-lit and busy"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Temple area", "Kalyan Sagar lakeside", "Udaipur town centre"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 3500,
+    mustEat: ["Temple prasad", "Bengali fish curry and rice in Udaipur", "Chhana sweets"],
+    packingTips: ["Modest clothing", "Comfortable shoes (remove at temple)", "Camera", "Puffed rice or biscuits to feed the turtles"],
   },
 
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
@@ -92981,6 +93216,183 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1500,
     mustEat: ["Chhattisgarhi thali", "Fara (steamed rice dumplings)", "Bore Baasi (fermented rice)"],
     packingTips: ["Comfortable walking shoes", "Sun hat", "Water and snacks (no shops at the temple)", "Camera", "Insect repellent"],
+  },
+
+  {
+    id: "jagdalpur",
+    name: "Jagdalpur",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "Gateway to Tribal Bastar",
+    description: "Jagdalpur, the headquarters of Bastar district, is the cultural and administrative heart of Chhattisgarh's tribal heartland. The town serves as the base for visiting Chitrakote Falls, Tirathgarh Falls, and Kanger Valley National Park. But Jagdalpur itself has much to offer — the Bastar Palace (a mix of colonial and tribal architecture), the Danteshwari Temple (one of the 52 Shakti Peethas), the weekly tribal haat (market), and the lively Bastar Dussehra — a 75-day festival unique to this region, far older and longer than the pan-Indian 10-day version.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Danteshwari_Temple_%2C_Jagdalpur.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Danteshwari_Temple_%2C_Jagdalpur.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f9/Danteshwari_Temple_%2C_Jagdalpur.jpg",
+    ],
+    category: ["Culture", "Heritage"],
+    bestSeason: "October – March (Bastar Dussehra: Sep–Oct)",
+    duration: "1–2 days (plus day trips to waterfalls)",
+    highlights: [
+      { name: "Bastar Palace (colonial-tribal architecture)" },
+      { name: "Danteshwari Temple (Shakti Peetha)" },
+      { name: "Weekly tribal haat (market)" },
+      { name: "Bastar Dussehra (75-day tribal festival)" },
+      { name: "Anthropological Museum" },
+      { name: "Dokra metalwork and tribal crafts" },
+    ],
+    visitingHours: { opens: "Varies", closes: "Varies", note: "Danteshwari Temple: 5 AM–9 PM. Anthropological Museum: 10 AM–5 PM (closed Mon). Weekly haat: Sundays and specific weekdays at different locations. Bastar Dussehra: late September to mid-October (75 days)." },
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Raipur, then 6h drive (300 km) or overnight train", fromMumbai: "Fly to Raipur, then 6h drive", fromBangalore: "Fly to Raipur, then 6h drive", duration: "6h from Raipur by road, 8h by train", costRange: "₹400–₹700 bus from Raipur", tips: "CGSRTC buses run Raipur–Jagdalpur daily (6–7h). Trains on the Raipur–Jagdalpur route are scenic but slow. A new airport at Jagdalpur has limited flights." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Hotel Naman Bastar", "Hotel Rainbow"], description: "Clean budget hotels in the town centre." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹4,000/night", examples: ["Naman Bastar Resort", "Dandami Luxury Resort"], description: "Comfortable rooms with Bastar tribal decor." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹20–₹50", notes: "Within town", available: true },
+      { mode: "Taxi", cost: "₹1,500–₹2,500/day", notes: "Full-day sightseeing to Chitrakote + Tirathgarh", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chitrakote Falls", distance: "40 km", type: "Waterfall", isHidden: false, id: "chitrakote-falls" },
+      { name: "Tirathgarh Falls", distance: "35 km", type: "Waterfall", isHidden: true, id: "tirathgarh-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Traveller", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 250, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1500, food: 600, transport: 500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jagdalpur Town", morning: "Visit the Danteshwari Temple — one of the 52 Shakti Peethas, set on the banks of the Dankini and Shankini rivers. The temple complex is modest but the religious significance is immense. Then visit the Bastar Palace — a crumbling but atmospheric structure blending colonial and tribal architectural styles.", afternoon: "Explore the Anthropological Museum — the best introduction to Bastar's tribal communities, their crafts, rituals, and way of life. Visit the Dokra metalwork artisans in nearby villages — the lost-wax casting technique produces distinctive brass figurines of animals, deities, and tribal motifs (₹200–₹2,000 per piece).", evening: "If visiting on a haat day, walk through the tribal market — where Gond, Muria, and Maria tribal communities trade produce, handwoven textiles, and crafts.", stay: "Jagdalpur hotel", meals: "Chhattisgarhi thali (₹80–₹150)", tips: "The weekly haats rotate between villages — ask your hotel which one is active during your visit. Bastar Dussehra (Sep–Oct) is a 75-day festival unlike any other in India — if your dates overlap, it's unmissable." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["District headquarters with police presence", "Growing tourism infrastructure"],
+      precautions: ["Remote region — limited medical facilities outside town", "Mobile connectivity patchy outside Jagdalpur"],
+      soloTips: ["Safe within Jagdalpur town", "Use hotel-arranged transport for waterfalls and villages", "Carry cash — limited card acceptance"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Jagdalpur Police", number: "07782-222249" }],
+      safeZones: ["Town centre", "Danteshwari Temple area", "Hotels"],
+      avoidAreas: ["Remote tribal areas without a guide after dark"],
+    },
+    rating: 4.1,
+    reviews: 2500,
+    mustEat: ["Chhattisgarhi thali", "Fara (steamed rice dumplings)", "Muthia", "Red rice", "Mahua liquor (local tribal drink, if available)"],
+    packingTips: ["Cash (limited ATMs, almost no card machines)", "Insect repellent", "Comfortable shoes", "Light cotton clothes", "Torch", "Medicines"],
+  },
+
+  {
+    id: "barnawapara",
+    name: "Barnawapara Wildlife Sanctuary",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "Chhattisgarh's Closest Wilderness",
+    description: "Barnawapara Wildlife Sanctuary, spread over 245 sq km of dry deciduous forest in Mahasamund district, is the most accessible wildlife area in Chhattisgarh — just 100 km from Raipur. Named after the villages of Bar and Nawapara on its boundary, the sanctuary shelters cheetal, sambar, nilgai, wild boar, Indian bison (gaur), leopards, and over 150 bird species. The Devdharas waterfall inside the sanctuary and the ancient Sivrinarayan temple nearby add variety to a visit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Barnawapara_Wildlife_Sanctuary_Chhattisgarh_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/15/Barnawapara_Wildlife_Sanctuary_Chhattisgarh_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Barnawapara_Wildlife_Sanctuary_Chhattisgarh_India.jpg",
+    ],
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November – June (closed during monsoon Jul–Oct)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Cheetal, sambar, gaur, and leopard sightings" },
+      { name: "150+ bird species (Indian roller, crested serpent eagle)" },
+      { name: "Devdharas waterfall inside the sanctuary" },
+      { name: "Dry deciduous forest safaris" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "5:30 PM", note: "Entry: ₹50 (Indians). Jeep safari: ₹1,500–₹2,500. Closed during monsoon (Jul–Oct). Morning and evening safaris available." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Raipur, then 2h drive (100 km)", fromMumbai: "Fly to Raipur, then 2h drive", fromBangalore: "Fly to Raipur, then 2h drive", duration: "2h from Raipur", costRange: "₹1,500–₹2,500 taxi from Raipur", tips: "No direct public transport — hire a taxi from Raipur. The road passes through scenic sal forests. Can be combined with Sirpur archaeological site (60 km away)." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Forest rest house (book via Forest Dept)"], description: "Basic forest rest house inside the sanctuary. Book in advance through the Chhattisgarh Forest Department." },
+    ],
+    localTransport: [
+      { mode: "Jeep safari", cost: "₹1,500–₹2,500", notes: "Guided jeep safari through the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sirpur", distance: "60 km", type: "Archaeological Site", isHidden: true, id: "sirpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Safari Visitor", perDayPerPerson: 2500, accommodation: 500, food: 300, transport: 500, activities: 1200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Barnawapara Safari", morning: "Early morning jeep safari (6 AM start). Drive through sal, teak, and bamboo forest looking for cheetal (spotted deer), sambar, nilgai, wild boar, and if lucky, gaur (Indian bison). Birding is excellent — look for the crested serpent eagle, Indian roller, and various woodpeckers.", afternoon: "Visit the Devdharas waterfall inside the sanctuary — a small but scenic cascade in the forest. After lunch at the rest house, take an evening safari (3:30 PM).", evening: "Watch for animals at the waterholes — wildlife comes to drink at dusk.", stay: "Forest rest house", meals: "Basic meals at rest house (₹100–₹200)", tips: "Leopard sightings are rare but not impossible — the forest is dense and leopards are shy. The best time for wildlife is March–May when the forest dries and animals concentrate at waterholes." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Forest department staff present", "Guided safaris only"],
+      precautions: ["Very remote — no medical facilities", "No mobile signal inside the sanctuary"],
+      soloTips: ["Visit with a group or arranged tour from Raipur", "Book rest house in advance"],
+      emergencyContacts: [{ label: "Forest Range Office", number: "07723-234245" }, { label: "Police", number: "100" }],
+      safeZones: ["Rest house area", "Safari vehicle"],
+      avoidAreas: ["Walking in the forest without a guide"],
+    },
+    rating: 3.9,
+    reviews: 800,
+    mustEat: ["Basic meals at rest house — carry your own snacks"],
+    packingTips: ["Binoculars", "Camera with zoom lens", "Insect repellent", "Comfortable clothes in earth tones", "Water and snacks", "Torch"],
+  },
+
+  {
+    id: "sirpur",
+    name: "Sirpur Archaeological Site",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "Where Three Faiths Flourished in Stone",
+    description: "Sirpur, on the banks of the Mahanadi River in Mahasamund district, is one of the most important archaeological sites in central India — a 5th–12th century city where Buddhism, Hinduism, and Jainism coexisted and flourished simultaneously. The site's crown jewel is the 7th-century Laxman Temple, one of the finest brick temples in India with intricate carvings. Ongoing excavations since 2000 have uncovered 22 Buddhist viharas, a massive Buddhist monastery complex, Jain temples, and hundreds of sculptures. The annual Sirpur National Dance and Music Festival (January) brings classical performances to this ancient stage.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Laxman_temple_at_sirpur%2Cchhattisgarh%2Cindia.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Laxman_temple_at_sirpur%2Cchhattisgarh%2Cindia.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Laxman_temple_at_sirpur%2Cchhattisgarh%2Cindia.JPG",
+    ],
+    category: ["Heritage", "History"],
+    bestSeason: "October – March (Sirpur Festival: January)",
+    duration: "Half day – 1 day",
+    highlights: [
+      { name: "Laxman Temple (7th-century brick masterpiece)" },
+      { name: "Buddhist viharas and monastery complex" },
+      { name: "Jain temples and sculptures" },
+      { name: "Three religions coexisting in one archaeological site" },
+      { name: "Sirpur National Dance & Music Festival (January)" },
+    ],
+    visitingHours: { opens: "Sunrise", closes: "Sunset", note: "No entry fee. ASI-protected site. Museum: 10 AM–5 PM (closed Mon). The excavation site is still active — some areas may be restricted." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Raipur, then 2h drive (84 km)", fromMumbai: "Fly to Raipur, then 2h drive", fromBangalore: "Fly to Raipur, then 2h drive", duration: "2h from Raipur (84 km)", costRange: "₹80–₹150 bus from Raipur", tips: "Regular buses from Raipur to Sirpur via Mahasamund. Can combine with Barnawapara Wildlife Sanctuary (60 km) for a full day trip." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹300–₹800/night", examples: ["CG Tourism guest house at Sirpur"], description: "A basic government guest house at the site. Most visitors do a day trip from Raipur." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The archaeological site is spread over a walkable area", available: true },
+      { mode: "Auto-rickshaw", cost: "₹30–₹50", notes: "Within Sirpur village", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Barnawapara Wildlife Sanctuary", distance: "60 km", type: "Wildlife", isHidden: true, id: "barnawapara" },
+      { name: "Chitrakote Falls", distance: "250 km", type: "Waterfall", isHidden: false, id: "chitrakote-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 250, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sirpur Archaeological Tour", morning: "Start with the Laxman Temple — a 7th-century brick temple with astonishing carvings of Vishnu, Sheshnag, and river goddesses on its doorframe. The brickwork is so fine it rivals stone carving. This is one of the earliest and best-preserved brick temples in India.", afternoon: "Walk through the excavation site — the Buddhist monastery complex is enormous, with remains of viharas (monastic cells), a stupa, meditation halls, and a library. The on-site museum displays sculptures, bronze Buddhas, terracotta finds, and coins from the excavations. Also visit the Gandheshwar Temple (Shiva temple) and Jain temple ruins.", evening: "Return to Raipur or continue to Barnawapara.", stay: "Day trip from Raipur", meals: "Simple meals in Sirpur village (₹50–₹100)", tips: "The site is still being excavated — new discoveries are frequent. A local guide (₹200–₹300) is invaluable for understanding what you're seeing. The Sirpur Festival in January is a wonderful time to visit — classical dance performances amid ancient ruins." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["ASI-protected site with some staff", "Day trip from Raipur"],
+      precautions: ["Small village — very limited facilities", "No ATM"],
+      soloTips: ["Safe as a day trip from Raipur", "Inform your Raipur hotel of your plans"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Mahasamund Police", number: "07723-222233" }],
+      safeZones: ["Main archaeological site", "Museum area"],
+      avoidAreas: ["Surrounding areas after dark"],
+    },
+    rating: 4.2,
+    reviews: 1200,
+    mustEat: ["Simple Chhattisgarhi meals in the village", "Carry snacks and water from Raipur"],
+    packingTips: ["Sun hat and sunscreen", "Comfortable walking shoes", "Water (at least 2 litres)", "Camera", "Snacks"],
   },
 
 ];
