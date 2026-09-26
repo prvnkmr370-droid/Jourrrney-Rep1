@@ -13752,6 +13752,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable footwear (removed at temples)", "Small change for donations", "Water bottle"],
   },
 
+  {
+    id: "naimisharanya",
+    name: "Naimisharanya",
+    state: "Uttar Pradesh",
+    tagline: "The sacred forest where the Puranas were narrated",
+    description: "Naimisharanya (also called Neemsar) is among Hinduism's most revered pilgrimage sites, believed to be the forest where sage Suta Goswami first narrated the Puranas to assembled sages, and where Lord Vishnu's discus (Sudarshan Chakra) is said to have created the sacred Chakra Tirtha pond. This circular tirtha, ringed by temples and ghats, is the spiritual heart of the town. Nearby sites include the Lalita Devi Temple (one of the Shakti Peethas), Vyas Gaddi, and Hanuman Garhi. The site is deeply linked to Lord Brahma, Lord Vishnu, and Goddess Sati in Hindu mythology.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Naimisharanya_%28Neemsar%29_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Naimisharanya_%28Neemsar%29_01.jpg",
+    imageCredit: "Kshitij Vats 001, CC0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Chakra Tirtha (sacred pond)" },
+      { name: "Lalita Devi Temple (Shakti Peetha)" },
+      { name: "Vyas Gaddi" },
+      { name: "Hanuman Garhi" },
+      { name: "Surrounding ghats and temples" },
+    ],
+    transport: [
+      { mode: "Train", icon: "train", fromDelhi: "Train to Lucknow/Sitapur then road (~90 km from Lucknow)", fromMumbai: "Train to Lucknow then road", fromBangalore: "Train to Lucknow via connecting route then road", duration: "2 hrs from Lucknow", costRange: "₹300–₹1,000", tips: "Sitapur (35 km) has the nearest railway station" },
+      { mode: "Road", icon: "car", fromDelhi: "Via Lucknow (~590 km)", fromMumbai: "Via Lucknow (~1,300 km)", fromBangalore: "Via Lucknow (~2,000 km)", duration: "2 hrs from Lucknow by road", costRange: "₹500–₹1,200 by taxi", tips: "Easy day trip from Lucknow via NH730" },
+    ],
+    accommodation: [
+      { type: "Dharamshala", priceRange: "₹100–₹500/night", examples: ["Temple trust dharamshalas near Chakra Tirtha"], description: "Basic pilgrim accommodations around the tirtha" },
+      { type: "Budget Hotels", priceRange: "₹500–₹1,200/night", examples: ["Hotels in Sitapur town"], description: "Simple lodging 35 km away in Sitapur" },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹20–₹100", notes: "Around the temple complex and Chakra Tirtha", available: true },
+      { mode: "Taxi", cost: "₹800–₹1,500/day", notes: "Day trip from Lucknow", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lucknow", distance: "90 km", type: "City", isHidden: false, id: "lucknow" },
+      { name: "Sitapur", distance: "35 km", type: "City", isHidden: true },
+      { name: "Dudhwa National Park", distance: "130 km", type: "Wildlife", isHidden: false, id: "dudhwa" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget Pilgrim", perDayPerPerson: 700, accommodation: 150, food: 250, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1600, accommodation: 600, food: 450, transport: 350, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Naimisharanya Parikrama", morning: "Arrive from Lucknow; take a holy dip and darshan at Chakra Tirtha", afternoon: "Visit Lalita Devi Temple, Vyas Gaddi, and Hanuman Garhi as part of the traditional 84-kosi parikrama circuit", evening: "Evening aarti at Chakra Tirtha; return to Lucknow", stay: "Dharamshala or day trip from Lucknow", meals: "Temple prasad, simple vegetarian thali", tips: "Hire a local pandit-guide to understand the mythological significance of each site; the full parikrama takes a full day" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Well-established pilgrimage site with steady footfall", "Police presence during festivals", "Easy day trip from Lucknow"],
+      precautions: ["Crowded during religious festivals — keep belongings secure", "Ghat steps around the tirtha can be slippery"],
+      soloTips: ["Day trip from Lucknow recommended over overnight stay", "Join pilgrim groups for the parikrama circuit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Sitapur Police", number: "05862-244100" }],
+      safeZones: ["Chakra Tirtha area", "Temple complex"],
+      avoidAreas: ["Isolated forest patches after dark"],
+    },
+    rating: 4.4,
+    reviews: 2600,
+    mustEat: ["Temple prasad", "Kachori-sabzi", "Awadhi-style thali", "Local jalebi"],
+    packingTips: ["Modest clothing", "Comfortable footwear (removed at temples)", "Small change for donations", "Water bottle"],
+  },
+
   // The 24 destinations below are sourced from assamtourism.gov.in
   // (the state's official tourism portal) — real how-to-reach, wildlife/
   // heritage facts, and safari/temple details. Kept `hidden: true`, same
