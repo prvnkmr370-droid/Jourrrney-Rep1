@@ -16104,6 +16104,59 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sturdy hiking shoes", "Water (2+ litres)", "Packed lunch", "Camera", "Binoculars (birding)", "Sunscreen", "Insect repellent", "Leech socks (monsoon season)"],
   },
 
+  {
+    id: "barren-island",
+    name: "Barren Island",
+    state: "Andaman & Nicobar",
+    tagline: "South Asia's only active volcano",
+    description: "Barren Island is home to South Asia's only confirmed active volcano, rising from the Andaman Sea roughly 135 km northeast of Port Blair. The volcano has erupted intermittently since the 1990s, most notably in 2017 and 2022, sending ash and lava down its slopes into the sea. The island itself is uninhabited and largely barren of vegetation near the crater, a stark contrast to the lush rainforest elsewhere in the Andamans. Access is strictly by permitted boat or helicopter tour operated from Port Blair — landing on the island is prohibited, but boat trips that circle it for views of the smoking cone are a unique draw for adventurous travellers.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Barren_Island_Active_Volcano.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Barren_Island_Active_Volcano.jpg",
+    imageCredit: "Rohitjahnavi, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "November to April (calmer seas)",
+    duration: "1 Day (boat tour, no overnight stay)",
+    highlights: [
+      { name: "Active volcanic cone" },
+      { name: "Andaman Sea boat crossing" },
+      { name: "Volcanic ash-covered slopes" },
+      { name: "Marine life en route (dolphins, occasionally)" },
+    ],
+    transport: [
+      { mode: "Boat/Helicopter Tour", icon: "ship", fromDelhi: "Fly to Port Blair then book a permitted boat/helicopter tour", fromMumbai: "Fly to Port Blair then tour", fromBangalore: "Fly to Port Blair then tour", duration: "6–8 hrs round trip by boat from Port Blair", costRange: "₹8,000–₹25,000 per person (boat tour)", tips: "Only licensed operators with Forest Department/Coast Guard permits can take visitors near the island; book through registered Port Blair tour agencies" },
+    ],
+    accommodation: [
+      { type: "Day Trip Only", priceRange: "N/A", examples: ["Stay in Port Blair"], description: "No accommodation on the island — it is uninhabited and landing is prohibited; visited as a day tour from Port Blair" },
+    ],
+    localTransport: [
+      { mode: "Tour boat", cost: "Included in tour package", notes: "Only way to reach the island's vicinity; landing is not permitted", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Port Blair", distance: "135 km", type: "City", isHidden: false, id: "andaman" },
+      { name: "Ross Island", distance: "140 km", type: "Heritage", isHidden: false, id: "ross-island" },
+    ],
+    budgetBreakdown: [
+      { tier: "mid", label: "Day Tour", perDayPerPerson: 12000, accommodation: 0, food: 500, transport: 11000, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Barren Island Volcano Tour", morning: "Depart Port Blair early by chartered boat (or helicopter for a shorter trip); the sea crossing takes 3–4 hours by boat", afternoon: "Circle Barren Island at a safe distance to view the volcanic cone and, activity permitting, visible steam or ash; the captain will not permit landing", evening: "Return journey to Port Blair, arriving by evening", stay: "Port Blair hotel", meals: "Carry packed meals and water — nothing available en route", tips: "Book only with government-licensed operators; trips are frequently cancelled due to rough seas or low volcanic activity — build flexibility into your itinerary" },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Licensed tour operators required by law", "Coast Guard oversight of the exclusion zone"],
+      precautions: ["Long open-sea crossing — motion sickness is common", "No mobile signal once at sea", "Active volcano — tours can be cancelled without notice for safety"],
+      soloTips: ["Join an organized group tour rather than a private charter", "Inform your Port Blair hotel of your itinerary and expected return time"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }, { label: "Coast Guard", number: "1554" }],
+      safeZones: ["Licensed tour boats"],
+      avoidAreas: ["Any unauthorized attempt to land on the island"],
+    },
+    rating: 4.4,
+    reviews: 900,
+    mustEat: ["Carry packed meals — nothing available on the tour", "Seafood in Port Blair before/after"],
+    packingTips: ["Seasickness medication", "Waterproof bag for electronics", "Sun protection", "Packed food and water", "Camera with zoom lens"],
+  },
+
   // Andhra Pradesh batch, researched via tourism.ap.gov.in (the official
   // APTDC site — mostly an accommodation/booking portal rather than a
   // destination encyclopedia like UP/Assam/Andaman's sites, so its own
@@ -92966,6 +93019,64 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3000,
     mustEat: ["Telangana-style biryani in Nirmal", "Jonna rotte (sorghum flatbread)", "Local pickle"],
     packingTips: ["Sturdy non-slip shoes", "Water (2+ litres)", "Rain jacket", "Camera in waterproof bag", "Change of clothes (spray will soak you)", "Snacks"],
+  },
+
+  {
+    id: "yadagirigutta",
+    name: "Yadagirigutta",
+    state: "Telangana",
+    tagline: "Hilltop shrine of Lord Narasimha, newly rebuilt in grand style",
+    description: "Yadagirigutta is home to the Sri Lakshmi Narasimha Swamy Temple, an ancient hilltop shrine dedicated to Lord Vishnu's man-lion avatar, believed to date back to the sage Yadava Maharishi's penance. The temple underwent a massive renovation completed in 2022, transforming it into one of South India's grandest temple complexes with intricately carved gopurams in Kakatiya-Chalukya style, built using black granite. Now often called 'Bhagyanagaram' or referred to as Telangana's answer to Tirupati, it draws pilgrims from across South India, with five distinct cave shrines on the hill representing different forms of Narasimha.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/Sri_Lakshminarasimha_Swamy_Temple_Yadagirigutta_Yadadri_Telangana_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/67/Sri_Lakshminarasimha_Swamy_Temple_Yadagirigutta_Yadadri_Telangana_01.jpg",
+    imageCredit: "Ravindraoudeptling, CC BY 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    visitingHours: { opens: "4:00 AM", closes: "9:00 PM", note: "Special darshan queues open earlier; check official Yadadri temple website for festival-day timing changes" },
+    highlights: [
+      { name: "Sri Lakshmi Narasimha Swamy Temple" },
+      { name: "Newly rebuilt granite gopurams" },
+      { name: "Five Narasimha cave shrines" },
+      { name: "Pushkarini (temple tank)" },
+    ],
+    transport: [
+      { mode: "Road", icon: "car", fromDelhi: "Fly to Hyderabad then 60 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "1.5 hrs from Hyderabad", costRange: "₹500–₹1,500 by bus/taxi", tips: "Regular TSRTC buses run from Hyderabad's various bus stations" },
+      { mode: "Train", icon: "train", fromDelhi: "Train to Hyderabad then road", fromMumbai: "Train to Hyderabad then road", fromBangalore: "Train to Hyderabad then road", duration: "Varies to Hyderabad", costRange: "₹300–₹1,200", tips: "Raigir railway station (7 km) is the nearest, on the Hyderabad-Kazipet line" },
+    ],
+    accommodation: [
+      { type: "Temple Devasthanam Cottages", priceRange: "₹500–₹2,000/night", examples: ["Yadadri Devasthanam guest houses"], description: "Temple trust-run accommodation for pilgrims; book via official temple website" },
+      { type: "Mid-range Hotels", priceRange: "₹1,500–₹3,500/night", examples: ["Hotels in Yadagirigutta town"], description: "Private hotels near the temple" },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "From bus stand to temple base", available: true },
+      { mode: "Battery vehicle/Ghat road", cost: "₹20–₹50", notes: "Up to the temple complex", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "60 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Warangal", distance: "90 km", type: "Heritage City", isHidden: false, id: "warangal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget Pilgrim", perDayPerPerson: 800, accommodation: 300, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2000, accommodation: 1000, food: 500, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Yadagirigutta Darshan", morning: "Arrive early for darshan at the main Narasimha Swamy Temple; explore the grand new gopurams and granite carvings", afternoon: "Visit the five cave shrines on the hill representing different Narasimha forms; take in views from the hilltop", evening: "Evening aarti at the temple; return to Hyderabad", stay: "Devasthanam guest house or Hyderabad hotel", meals: "Temple prasad, Telangana thali", tips: "Special entry darshan tickets are available online to skip the general queue, which can be very long on weekends and festivals" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Major, well-managed pilgrimage site with modern infrastructure", "Strong security and CCTV coverage", "Organized queue management"],
+      precautions: ["Extremely crowded during festivals — keep belongings secure", "Long queues in peak season — carry water"],
+      soloTips: ["Very manageable for solo pilgrims given the organized facilities", "Book special darshan online in advance"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Yadadri Temple Police", number: "08685-256002" }],
+      safeZones: ["Temple complex", "Devasthanam accommodation area"],
+      avoidAreas: ["None significant — a well-regulated pilgrimage site"],
+    },
+    rating: 4.6,
+    reviews: 5400,
+    mustEat: ["Temple prasad (laddu)", "Telangana-style biryani", "Local filter coffee"],
+    packingTips: ["Modest clothing", "Comfortable footwear (removed at temple)", "Small change for donations", "Water bottle", "Patience for queues on weekends"],
   },
 
   // ─── TRIPURA ──────────────────────────────────────────────────────
