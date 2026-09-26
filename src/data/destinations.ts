@@ -2080,6 +2080,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Heritage", "Adventure"],
     bestSeason: "October – April (park closed roughly July–September for monsoon)",
     duration: "2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Two safaris daily — morning ~6–7 AM entry, afternoon ~2–3:30 PM (shifts with sunrise/sunset). Closed Wednesdays. Zones 1–5 shut Jul–Sep (monsoon); zones 6–10 stay open." },
     highlights: [{ name: "Tiger safari (jeep/canter)" }, { name: "Ranthambore Fort — inside the reserve itself" }, { name: "Padam Talao & Rajbagh lakes" }, { name: "Bird-watching (rich winter migratory population)" }, { name: "Trinetra Ganesh Temple, inside the fort" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Golden Temple Mail / Mumbai-bound trains — ~4.5–5h to Sawai Madhopur Junction", fromMumbai: "~14–15h to Sawai Madhopur Junction", fromBangalore: "Via Kota/Jaipur — 24h+", duration: "~4.5–5h from Delhi", costRange: "₹300–₹1,500", tips: "Sawai Madhopur Junction is the gateway station — the park entrance is a short drive away." },
@@ -10994,6 +10995,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "UNESCO"],
     bestSeason: "October – March (avoid monsoon — waterways can be genuinely hazardous)",
     duration: "2–3 days",
+    visitingHours: { opens: "8:30 AM", closes: "4:00 PM", note: "Boat safari only — no jeep access; entry after 6:30 PM prohibited. Best time Oct–Mar." },
     highlights: [{ name: "Boat safari through mangrove waterways" }, { name: "Royal Bengal Tiger habitat (sightings are rare, not guaranteed)" }, { name: "Sajnekhali Wildlife Sanctuary & Interpretation Centre" }, { name: "Saltwater crocodiles and diverse birdlife" }, { name: "Sudhanyakhali watchtower" }],
     transport: [
       { mode: "Train + Road + Boat", icon: "🚂", fromDelhi: "Via Kolkata, then road/boat to Godkhali/Sonakhali — ~17h + ~3h", fromMumbai: "Via Kolkata — ~32h + ~3h", fromBangalore: "Via Kolkata — ~36h + ~3h", duration: "~2h road + ~1h boat from Kolkata", costRange: "₹800–₹3,500 (train to Kolkata) + tour package for the rest", tips: "Almost everyone visits via an organised tour package that bundles road transfer and boat safari together." },
@@ -11597,6 +11599,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – June (park closed roughly July–September for monsoon)",
     duration: "2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Two safaris daily with a midday break (11 AM–3 PM); exact start/end shifts with sunrise/sunset. Evening safaris closed Wednesdays and on Holi/Diwali. Park open Oct 1–Jun 30, closed Jul–Sep (monsoon)." },
     highlights: [{ name: "Tiger safari (jeep)" }, { name: "Hardground barasingha — found only here" }, { name: "Bamni Dadar ('Sunset Point')" }, { name: "Kanha Museum & Interpretation Centre" }, { name: "Rich birdlife across sal/bamboo forest and meadows" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Jabalpur, then ~3.5h road — ~15–16h total", fromMumbai: "Via Jabalpur — ~14–15h", fromBangalore: "Via Jabalpur — 24h+", duration: "~3.5h road from Jabalpur", costRange: "₹400–₹1,800 (train to Jabalpur) + ₹1,500–₹3,000 (local transfer)", tips: "Jabalpur is the practical railhead and nearest airport." },
@@ -11664,6 +11667,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Heritage", "Adventure"],
     bestSeason: "October – June (park closed roughly July–September for monsoon)",
     duration: "2 days",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Winter (Oct–Jan): morning 6:30–11:30 AM, evening 4–7 PM. Summer (Feb–Jun): morning 6–11 AM, evening 2:30–5:30 PM. Core zone closed Wednesday evenings; park shut Jul 1–Oct 15 (monsoon)." },
     highlights: [{ name: "Tiger safari (India's highest tiger density)" }, { name: "Bandhavgarh Fort ruins" }, { name: "Reclining Vishnu statue at Sheshshaya" }, { name: "Ancient rock-cut caves" }, { name: "Rich birdlife and other wildlife (leopard, deer species)" }],
     transport: [
       { mode: "Train", icon: "🚂", fromDelhi: "Via Umaria or Katni, then road — ~14–16h total", fromMumbai: "Via Jabalpur/Katni — ~16–18h", fromBangalore: "Via Katni — 24h+", duration: "~1.5–2h road from Umaria/Katni", costRange: "₹400–₹1,800 (train) + ₹1,000–₹2,500 (local transfer)", tips: "Umaria is the closer railhead; Jabalpur is a larger hub if flying." },
@@ -14958,6 +14962,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – April (best sightings late February – early April)",
     duration: "2–3 days",
+    visitingHours: { opens: "7:00 AM", closes: "3:30 PM", note: "Jeep safari ~7–9:30 AM & 1:30–3:30 PM (seasonal shift). Elephant safari mornings only, from ~5:15 AM. Park open Nov–Apr only; closed the rest of the year for monsoon flooding." },
     highlights: [
       { name: "Jeep safari across all four ranges" },
       { name: "Elephant safari (Central & Western ranges)" },
@@ -25024,6 +25029,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "December – March; the park is closed mid-June to mid-October (monsoon)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:45 AM", closes: "7:00 PM", note: "Winter (16 Oct–Feb): morning safari 6:45–9:45 AM, afternoon 3–6 PM. Summer (1 Mar–15 Jun): afternoon shifts to 4–7 PM. Closed 16 Jun–15 Oct (monsoon). Book only via the official girlion.gujarat.gov.in portal." },
     highlights: [{ name: "The world's only wild Asiatic lions" }, { name: "1913 reserve, 1965 sanctuary, 1975 national park" }, { name: "Real conservation success story" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Via Rajkot/Diu — long haul", fromMumbai: "Via Diu (~1h) + road", fromBangalore: "Not practical", duration: "1–2h flight + road transfer", costRange: "₹3,500–₹11,000", tips: "Diu Airport (~90 km) or Rajkot (~160 km) are the nearest options — plan the road transfer time in." },
@@ -35303,6 +35309,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "December – April (March–April best for wildlife sightings at the lake)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Boat safaris run 5 times daily (7:30, 9:30, 11:15 AM, 1:45, 3:30 PM), ~1.5 hrs each; report 1 hr early at Anavachal parking. Best sightings Mar–Apr when animals rely on the lake." },
     highlights: [
       { name: "777 sq km reserve, tiger reserve status since 1978, first protected in 1899" },
       { name: "Explored primarily by KTDC boat safari on the lake encircling the forest" },
@@ -36352,6 +36359,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – May (avoid peak monsoon, June–September)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Two safari slots — roughly 6–9 AM and 3:30–5:30 PM (varies seasonally). The Mysore–Ooty highway through the reserve is closed nightly 9 PM–6 AM. Best Oct–May; avoid peak monsoon (Jun–Sep)." },
     highlights: [
       { name: "Founded 1931 as the Maharaja of Mysore's Venugopala Wildlife Park" },
       { name: "Expanded under Project Tiger in 1973 and renamed Bandipur Tiger Reserve" },
@@ -71074,6 +71082,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – February (park open ~1 October – 30 June; closed in the monsoon)",
     duration: "2 – 3 days (multiple safaris)",
+    visitingHours: { opens: "6:15 AM", closes: "5:45 PM", note: "Morning safari ~6:15–11 AM, evening ~3–5:45 PM (winter mornings often start later, ~7:30 AM). Afternoon safaris closed Wednesdays; park shut Jul–Sep (monsoon). Individual gates (Turia, Khursapar, Sillari, Chorbhauli) have their own weekly closures. Source: Pench safari operators citing MP Forest Dept timings." },
     highlights: [
       { name: "Tigers, leopards and dhole (Indian wild dog) in \"Jungle Book\" teak forest" },
       { name: "Jeep safaris from the Turia, Karmajhiri and Jamtara gates" },
@@ -73824,6 +73833,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "November – February for comfortable weather; March – June is hot but has the best tiger sightings; the core zone closes in the monsoon (July – September), when only some buffer safaris run",
     duration: "2 – 3 days (2 – 4 safaris)",
+    visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Two safaris daily: winter (Oct–Feb) 6:30–11 AM & 2–6 PM; summer (Mar–Jun) 5:30–10 AM & 3:30–7 PM. Core zones closed Tuesdays, buffer zones Wednesdays. Park shut Jul–mid-Oct (monsoon). Source: official Tadoba portal (mytadoba.mahaforest.gov.in)." },
     highlights: [
       { name: "Among India's highest tiger-sighting rates, especially April–June" },
       { name: "Leopard, sloth bear, gaur, dhole, marsh crocodile; 195+ birds" },
