@@ -13112,6 +13112,65 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Warm layers", "Rain jacket", "Sturdy shoes", "Binoculars", "ILP printout", "Cash", "Insect repellent", "Camera"],
   },
 
+  {
+    id: "itanagar",
+    name: "Itanagar",
+    state: "Arunachal Pradesh",
+    tagline: "Forested capital named after its ancient fort of bricks",
+    description: "Itanagar, Arunachal Pradesh's capital since 1974, takes its name from the Ita Fort ('fort of bricks'), a 14th–15th century structure built by the Ahom kings. The city sits amid forested hills and is home to the sacred Jawaharlal Nehru Buddhist Vihara (Gompa) built in Tibetan style, the Ganga Lake (Gyaker Sinyi) surrounded by dense forest, and the Arunachal State Museum showcasing the state's tribal heritage. As the administrative and cultural gateway to Arunachal Pradesh, Itanagar blends government-town infrastructure with genuine tribal culture and greenery.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Itanagar_town_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Itanagar_town_01.jpg",
+    imageCredit: "Ganesh Mohan T, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Culture", "Nature"],
+    bestSeason: "October to April",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Ita Fort ruins" },
+      { name: "Jawaharlal Nehru Buddhist Vihara (Gompa)" },
+      { name: "Ganga Lake (Gyaker Sinyi)" },
+      { name: "Arunachal State Museum" },
+      { name: "Itanagar Wildlife Sanctuary" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Flight to Hollongi/Donyi Polo Airport (opened 2022)", fromMumbai: "Connecting flights via Kolkata/Guwahati", fromBangalore: "Connecting flights via Kolkata/Guwahati", duration: "3–4 hrs from Delhi with connection", costRange: "₹5,000–₹10,000", tips: "Donyi Polo Airport at Hollongi (15 km) is Arunachal's first airport, opened in 2022" },
+      { mode: "Road", icon: "car", fromDelhi: "Via Guwahati (~450 km from Guwahati)", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "9–10 hrs from Guwahati by road", costRange: "₹1,000–₹2,500 by bus/taxi", tips: "Nearest railhead is Naharlagun (10 km), connected to Guwahati and beyond" },
+    ],
+    accommodation: [
+      { type: "Government Guest House", priceRange: "₹800–₹2,000/night", examples: ["APST Guest House", "Circuit House Itanagar"], description: "Government-run accommodation for official and tourist visitors" },
+      { type: "Mid-range Hotels", priceRange: "₹1,500–₹4,000/night", examples: ["Hotels in Itanagar's Zero Point and Bank Tinali areas"], description: "Comfortable private hotels in the city centre" },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹150", notes: "Around the city and to Ganga Lake", available: true },
+      { mode: "Taxi", cost: "₹500–₹1,500/day", notes: "For sightseeing and Naharlagun trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Naharlagun", distance: "10 km", type: "Twin City", isHidden: true },
+      { name: "Ziro Valley", distance: "150 km", type: "Valley", isHidden: false, id: "ziro-valley" },
+      { name: "Bhalukpong", distance: "180 km", type: "Nature", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 500, food: 350, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1400, food: 600, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Itanagar Heritage & Nature", morning: "Visit Ita Fort ruins and the Arunachal State Museum to learn about tribal heritage", afternoon: "Explore the Jawaharlal Nehru Buddhist Vihara (Gompa) and its peaceful surroundings", evening: "Relax at Ganga Lake amid the forest, or walk through Itanagar Wildlife Sanctuary", stay: "Hotel in city centre", meals: "Local Nyishi tribal cuisine, momos, thukpa", tips: "Carry your Inner Line Permit (ILP) — required for all non-residents entering Arunachal Pradesh" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["State capital with government infrastructure and security", "Generally low crime", "Tourist-friendly administrative hub"],
+      precautions: ["ILP required and checked at entry points", "Limited late-night public transport"],
+      soloTips: ["Well-connected and manageable for solo travellers", "Register at ILP checkpoints as required"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Itanagar Police", number: "0360-2212300" }],
+      safeZones: ["City centre", "Ganga Lake area", "Ita Fort vicinity"],
+      avoidAreas: ["Isolated forest patches after dark"],
+    },
+    rating: 4.2,
+    reviews: 1900,
+    mustEat: ["Nyishi tribal cuisine", "Momos", "Thukpa", "Bamboo shoot preparations", "Apong (rice beer)"],
+    packingTips: ["ILP printout (mandatory)", "Light jacket for cool evenings", "Comfortable walking shoes", "Rain gear (monsoon season)", "Camera"],
+  },
+
   // The two destinations below give a "Places Near Agra" nearby-place card
   // a real full page to open into (see NearbyPlace.id in Agra's
   // nearbyPlaces). Built from general public travel sources — day-trip
@@ -79719,6 +79778,65 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "kohima",
+    name: "Kohima",
+    state: "Nagaland",
+    tagline: "Hill capital and site of the decisive WWII battle",
+    description: "Kohima, Nagaland's capital, is built across a series of ridges 1,444 metres above sea level and holds deep significance as the site of the 1944 Battle of Kohima, a turning point of World War II's Burma Campaign. Beyond the war history preserved at the nearby Commonwealth War Cemetery, the city itself is a vibrant hub of Naga tribal culture, home to the Kohima State Museum, the INA memorial, and the gateway to the Naga Heritage Village at Kisama. Terraced hillside neighbourhoods, a bustling local market, and views across the Angami hills give Kohima its distinct character as both a historic and living cultural capital.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Top_view_of_Kohima.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Top_view_of_Kohima.jpg",
+    imageCredit: "Chinmayisk, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October to April (Hornbill Festival in early December)",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Kohima War Cemetery" },
+      { name: "Kohima State Museum" },
+      { name: "Naga Heritage Village, Kisama (nearby)" },
+      { name: "Local market (Naga tribal crafts)" },
+      { name: "Catholic Cathedral of Reconciliation" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Flight to Dimapur (74 km) then road", fromMumbai: "Connecting flights via Kolkata to Dimapur", fromBangalore: "Connecting flights via Kolkata to Dimapur", duration: "3–4 hrs from Delhi with connection", costRange: "₹4,500–₹9,000", tips: "Dimapur is Nagaland's only airport; a 2.5-hr drive connects to Kohima" },
+      { mode: "Train", icon: "train", fromDelhi: "Train to Dimapur then road", fromMumbai: "Train to Dimapur via Guwahati", fromBangalore: "Train to Dimapur via Guwahati", duration: "30+ hrs to Dimapur", costRange: "₹800–₹2,500", tips: "Dimapur is the nearest railhead" },
+    ],
+    accommodation: [
+      { type: "Government Guest House", priceRange: "₹800–₹2,000/night", examples: ["Nagaland Tourism guest houses"], description: "Government-run accommodation in the city" },
+      { type: "Mid-range Hotels", priceRange: "₹1,500–₹4,000/night", examples: ["Hotels near the main town and market area"], description: "Comfortable hotels; book well ahead during Hornbill Festival" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Sumo", cost: "₹30–₹150 shared", notes: "Around the hilly town", available: true },
+      { mode: "Private taxi", cost: "₹1,000–₹2,000/day", notes: "For Kisama and outlying sites", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Naga Heritage Village, Kisama", distance: "12 km", type: "Cultural Village", isHidden: false, id: "naga-heritage-village-kisama" },
+      { name: "Dzukou Valley", distance: "30 km", type: "Valley", isHidden: false, id: "dzukou-valley" },
+      { name: "Khonoma Village", distance: "20 km", type: "Heritage Village", isHidden: false, id: "khonoma-village" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 500, food: 350, transport: 200, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1400, food: 600, transport: 400, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kohima Heritage", morning: "Visit the Kohima War Cemetery to pay respects and learn about the 1944 battle", afternoon: "Explore the Kohima State Museum and the local market for Naga tribal handicrafts", evening: "Visit the Catholic Cathedral of Reconciliation on Aradura Hill for sunset views over the city", stay: "Hotel in city centre", meals: "Naga tribal cuisine, smoked pork, bamboo shoot dishes", tips: "Book accommodation months ahead if visiting during the Hornbill Festival (Dec 1–10)" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["State capital with government infrastructure", "Tourist-friendly, especially during Hornbill Festival", "Low general crime"],
+      precautions: ["Hilly terrain — wear proper footwear", "Limited late-night transport"],
+      soloTips: ["Well-established tourist circuit, easy for solo travellers", "Hornbill Festival period has heavy tourist footfall and extra security"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kohima Police", number: "0370-2222222" }],
+      safeZones: ["City centre", "War Cemetery area", "Market area"],
+      avoidAreas: ["Isolated hillside paths after dark"],
+    },
+    rating: 4.5,
+    reviews: 3600,
+    mustEat: ["Naga tribal thali", "Smoked pork with bamboo shoot", "Axone (fermented soybean) dishes", "Rice beer", "King chilli chutney"],
+    packingTips: ["Warm layers (cool climate year-round)", "Comfortable walking shoes (hilly terrain)", "Rain jacket", "Camera", "ILP printout"],
+  },
+
+  {
     id: "red-fort",
     name: "Red Fort (Lal Qila)",
     state: "Delhi",
@@ -93450,6 +93568,61 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1800,
     mustEat: ["Bengali fish curry and rice", "Temple prasad from Tripura Sundari", "Chhana sweets"],
     packingTips: ["Camera (essential)", "Sunscreen and hat", "Water bottle", "Comfortable clothes", "Cash"],
+  },
+
+  {
+    id: "kamalasagar",
+    name: "Kamalasagar",
+    state: "Tripura",
+    tagline: "Kali temple on a hilltop overlooking a border lake",
+    description: "Kamalasagar is home to a revered 15th-century Kali temple built by King Dhanya Manikya, perched atop a hillock overlooking the large Kamalasagar Lake, right along the India-Bangladesh border near Sepahijala district. The temple's elevated position offers sweeping views across the lake and into the plains beyond the border, and it remains an active pilgrimage site for devotees from both sides of the frontier. The lake itself, believed to have been excavated in the same era as the temple, adds to the site's serene, historic character.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Kamalasagar_kali_temple_%28view_from_front%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/44/Kamalasagar_kali_temple_%28view_from_front%29.jpg",
+    imageCredit: "শক্তিশেল, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Kamalasagar Kali Temple" },
+      { name: "Kamalasagar Lake" },
+      { name: "India-Bangladesh border views" },
+      { name: "15th-century Manikya-era architecture" },
+    ],
+    transport: [
+      { mode: "Road", icon: "car", fromDelhi: "Fly to Agartala then 27 km by road", fromMumbai: "Fly to Agartala then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "45 min from Agartala", costRange: "₹300–₹800 by taxi", tips: "Easy half-day trip from Agartala; combine with Sepahijala Wildlife Sanctuary" },
+    ],
+    accommodation: [
+      { type: "Day Trip", priceRange: "N/A", examples: ["Stay in Agartala"], description: "No overnight accommodation at the site itself; visited as a day trip from Agartala" },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹200–₹500", notes: "From Agartala or Sepahijala", available: true },
+      { mode: "Private taxi", cost: "₹800–₹1,500", notes: "Round trip from Agartala", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sepahijala Wildlife Sanctuary", distance: "15 km", type: "Wildlife", isHidden: false, id: "sepahijala" },
+      { name: "Agartala", distance: "27 km", type: "City", isHidden: false, id: "agartala" },
+      { name: "Neermahal", distance: "40 km", type: "Palace", isHidden: false, id: "neermahal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kamalasagar Day Trip", morning: "Drive from Agartala to Kamalasagar; climb the hillock to the Kali temple for darshan", afternoon: "Enjoy the lake views and the vista towards the India-Bangladesh border; combine with a visit to Sepahijala Wildlife Sanctuary nearby", evening: "Return to Agartala", stay: "Agartala hotel", meals: "Temple prasad, Bengali-Tripuri thali in Agartala", tips: "Best combined with Sepahijala Wildlife Sanctuary as a single day trip from Agartala" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Active temple with steady local visitors", "Close to Agartala", "Border area with security presence"],
+      precautions: ["Border-adjacent area — carry ID", "Limited facilities beyond the temple"],
+      soloTips: ["Easy half-day trip from Agartala", "Combine with Sepahijala for a fuller day out"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Sepahijala Police", number: "0381-2865555" }],
+      safeZones: ["Temple complex", "Lake viewpoint"],
+      avoidAreas: ["Border fence areas beyond designated zones"],
+    },
+    rating: 4.2,
+    reviews: 1200,
+    mustEat: ["Temple prasad", "Bengali-Tripuri thali in Agartala", "Local fish curry"],
+    packingTips: ["Modest clothing for temple", "Comfortable walking shoes for the hillock climb", "Water bottle", "ID for border area"],
   },
 
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
