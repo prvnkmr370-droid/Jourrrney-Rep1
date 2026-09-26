@@ -12992,6 +12992,126 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Light clothes (warm climate)", "Rain jacket", "ILP printout", "Insect repellent", "Comfortable shoes", "Cash (very limited card acceptance)", "Binoculars"],
   },
 
+  {
+    id: "anini",
+    name: "Anini",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "India's Most Remote District HQ",
+    description: "Anini, the headquarters of Dibang Valley — India's least populated district — sits at about 1,970 metres in a deep river valley surrounded by snow-capped peaks of the eastern Himalayas. The town is home to the Idu Mishmi tribe, whose unique culture, animist traditions, and distinctive woven attire have remained largely intact due to the area's extreme remoteness. The Dibang Valley is one of India's richest biodiversity hotspots, with Mishmi Hills harbouring rare species like the Mishmi takin and Sclater's monal pheasant. Getting to Anini itself is an adventure — the road from Roing crosses multiple rivers and passes through dense subtropical forest.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Anini_%28district_headquarters%29_%287453904556%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Anini_%28district_headquarters%29_%287453904556%29.jpg",
+    imageCredit: "goldentakin, CC BY 2.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0e/Anini_%28district_headquarters%29_%287453904556%29.jpg",
+    ],
+    category: ["Nature", "Adventure", "Culture"],
+    bestSeason: "October – April (roads passable, clear weather); avoid monsoon (Jun–Sep) when roads wash out",
+    duration: "3–5 days (including travel)",
+    highlights: [
+      { name: "India's least populated district" },
+      { name: "Idu Mishmi tribal culture" },
+      { name: "Snow-capped eastern Himalayan peaks" },
+      { name: "Dibang Valley biodiversity (Mishmi takin, Sclater's monal)" },
+      { name: "Adventure road from Roing through dense forest" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dibrugarh (Assam), then drive via Roing — total 10–12h (300+ km)", fromMumbai: "Same via Dibrugarh", fromBangalore: "Same via Dibrugarh", duration: "180 km from Roing (6–8h on mountain road)", costRange: "₹3,000–₹5,000 hired vehicle from Roing", tips: "The road from Roing to Anini (180 km) is unpaved for long stretches and subject to landslides — only attempt in a sturdy SUV with an experienced driver. No public transport. ILP (Inner Line Permit) mandatory — apply online before travel." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Circuit house (book via DC office)", "Basic guesthouses"], description: "Very limited options. The circuit house requires advance booking through the Deputy Commissioner's office. A few basic guesthouses exist." },
+    ],
+    localTransport: [
+      { mode: "Hired SUV", cost: "₹3,000–₹5,000/day", notes: "Essential — no public transport within the valley", available: true },
+      { mode: "Walking", cost: "Free", notes: "Anini town itself is small and walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pasighat", distance: "250 km", type: "Town", isHidden: true, id: "pasighat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Explorer", perDayPerPerson: 3000, accommodation: 800, food: 500, transport: 1500, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Roing to Anini", morning: "Depart Roing early in a hired SUV. The 180 km road to Anini is one of India's most dramatic drives — climbing from subtropical lowlands through dense bamboo forest, crossing multiple rivers on temporary bridges, and winding along precipitous mountain roads.", afternoon: "The landscape shifts as you gain altitude — terraced Mishmi villages cling to hillsides, prayer flags flutter from rooftops, and the valleys grow deeper. Stop at viewpoints to take in the scale of the mountains.", evening: "Arrive in Anini — a small, quiet town perched in a valley surrounded by snow-capped peaks. Check into the circuit house or guesthouse. Walk around the small bazaar and observe daily life in India's remotest district headquarters.", stay: "Anini circuit house", meals: "Simple meals — rice, dal, local greens, smoked meat (₹100–₹200)", tips: "Start the drive very early — the road is slow and unpredictable. Carry food and water for the journey. The last petrol pump is in Roing." },
+      { day: 2, title: "Anini Exploration", morning: "Explore Anini town and visit the local Idu Mishmi settlement — if welcomed, observe their traditional weaving (they create distinctive black-and-red striped textiles). The community practices animism and their rituals are unique to this region.", afternoon: "Hike to a nearby viewpoint above the valley for panoramic views of the Dibang gorge and the Mishmi Hills. The birdlife is exceptional — keep an eye out for laughingthrushes, wren-babblers, and if fortunate, the rare Sclater's monal.", evening: "Return to Anini. Spend the evening under some of the clearest night skies in India — the absence of light pollution makes stargazing extraordinary.", stay: "Anini circuit house", meals: "Local meals (₹100–₹200)", tips: "Ask permission before photographing people or homes. Be respectful of tribal customs. There is no ATM — carry all cash from Roing." },
+    ],
+    womenSafety: {
+      score: 5,
+      level: "Exercise Caution",
+      highlights: ["Peaceful tribal community", "Very low crime"],
+      precautions: ["Extremely remote — no hospital, very limited phone signal", "Road conditions can be dangerous", "No ATM, no pharmacy"],
+      soloTips: ["Do not attempt solo — travel with a local guide or group", "Carry a satellite phone if possible", "Register with the DC office on arrival", "Carry a first-aid kit and essential medicines"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Anini Police Station", number: "03804-222333" }],
+      safeZones: ["Anini town centre", "Circuit house"],
+      avoidAreas: ["Unmarked trails", "Road travel after dark"],
+    },
+    rating: 4.0,
+    reviews: 400,
+    mustEat: ["Smoked meat with bamboo shoot", "Idu Mishmi rice beer", "Local greens (fiddlehead fern)", "Simple dal-rice meals"],
+    packingTips: ["Warm jacket (cold evenings)", "Sturdy hiking boots", "Rain jacket", "Torch/headlamp", "First-aid kit", "ILP printout", "Cash (no ATMs)", "Water purification tablets", "Snacks for the road"],
+  },
+
+  {
+    id: "roing",
+    name: "Roing",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "Gateway to the Dibang Valley",
+    description: "Roing, the headquarters of Lower Dibang Valley district, is a compact town set against a stunning backdrop of the Mishmi Hills. It serves as the gateway to the remote Dibang Valley and the Mehao Wildlife Sanctuary, which protects a rare mid-altitude rainforest ecosystem home to Mishmi takin, red panda, and hoolock gibbons. The town itself sits on the banks of the Dibang River and is known for the Sally Lake (a scenic picnic spot), the Bhismaknagar Fort ruins (believed to be King Bhismaka's ancient capital from the Mahabharata), and the colourful Reh festival of the Idu Mishmi tribe celebrated every February.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Roying%2C_Arunachal_Pradesh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/22/Roying%2C_Arunachal_Pradesh.jpg",
+    imageCredit: "Ishan Jyoti Bora, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/22/Roying%2C_Arunachal_Pradesh.jpg",
+    ],
+    category: ["Nature", "Wildlife", "Culture"],
+    bestSeason: "October – April (clear weather); February for Reh festival",
+    duration: "2–3 days",
+    highlights: [
+      { name: "Mehao Wildlife Sanctuary (red panda, Mishmi takin)" },
+      { name: "Bhismaknagar Fort ruins" },
+      { name: "Sally Lake" },
+      { name: "Reh festival (February)" },
+      { name: "Dibang River valley views" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dibrugarh (Assam), then 5h drive (200 km)", fromMumbai: "Same via Dibrugarh", fromBangalore: "Same via Dibrugarh", duration: "200 km from Dibrugarh (5h)", costRange: "₹200–₹400 shared sumo from Tinsukia", tips: "From Dibrugarh or Tinsukia, shared Sumo taxis run to Roing via the Dibang bridge. ILP (Inner Line Permit) mandatory — apply online before travel. The road is paved and in reasonable condition." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Circuit house", "Local guesthouses"], description: "A few guesthouses and a circuit house (book via DC office). Options are basic but clean." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Hotel Dorik", "Eco camps near Mehao"], description: "A couple of mid-range options and eco-tourism camps near the wildlife sanctuary." },
+    ],
+    localTransport: [
+      { mode: "Hired Vehicle", cost: "₹2,000–₹3,000/day", notes: "For Mehao and Bhismaknagar excursions", available: true },
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "Within Roing town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pasighat", distance: "130 km", type: "Town", isHidden: true, id: "pasighat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Explorer", perDayPerPerson: 2000, accommodation: 700, food: 400, transport: 700, activities: 200 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3500, accommodation: 1500, food: 600, transport: 1000, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Roing Town & Sally Lake", morning: "Arrive in Roing from Dibrugarh/Tinsukia. Check in and explore the small town — the Dibang River valley stretching towards the snow-capped Mishmi Hills is a constant backdrop. Visit the local market for tribal handicrafts.", afternoon: "Head to Sally Lake (5 km from town) — a serene lake surrounded by forest, popular for picnics and boating. The reflections of the hills in the still water make for excellent photography.", evening: "Walk along the Dibang River bank for sunset views. Try local Idu Mishmi cuisine at a small eatery in town.", stay: "Roing guesthouse", meals: "Idu Mishmi tribal food, rice and smoked meat (₹100–₹200)", tips: "Get your ILP checked at the administrative office on arrival. Carry cash — ATMs are unreliable." },
+      { day: 2, title: "Mehao & Bhismaknagar", morning: "Drive to Mehao Wildlife Sanctuary (15 km). The sanctuary protects dense subtropical and temperate forest between 400 m and 3,568 m elevation. Trek the nature trail with a forest guide — look for hoolock gibbons in the canopy, red pandas in the bamboo thickets, and a spectacular variety of birds (over 300 species recorded).", afternoon: "Drive to Bhismaknagar Fort (30 km from Roing) — the ruins of what is believed to be King Bhismaka's capital from the Mahabharata era. The laterite fort walls, gateways, and moat remnants sit dramatically on a hilltop surrounded by forest.", evening: "Return to Roing.", stay: "Roing guesthouse", meals: "Pack lunch for the day; dinner in Roing (₹100–₹200)", tips: "Mehao requires a Forest Department permit (₹50). Carry binoculars for wildlife spotting. Bhismaknagar road is rough — allow extra time." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Peaceful small town", "Friendly Idu Mishmi community"],
+      precautions: ["Remote area with limited medical facilities", "Limited phone signal outside town"],
+      soloTips: ["Stay in town at a registered guesthouse", "Travel with a guide for wildlife sanctuary visits", "Carry essential medicines"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Roing Police Station", number: "03803-222233" }],
+      safeZones: ["Roing town centre", "Sally Lake area"],
+      avoidAreas: ["Forest areas without a guide", "Road travel after dark"],
+    },
+    rating: 4.2,
+    reviews: 1000,
+    mustEat: ["Smoked pork with bamboo shoot", "Idu Mishmi rice beer", "Local fern and greens", "River fish"],
+    packingTips: ["Warm layers", "Rain jacket", "Sturdy shoes", "Binoculars", "ILP printout", "Cash", "Insect repellent", "Camera"],
+  },
+
   // The two destinations below give a "Places Near Agra" nearby-place card
   // a real full page to open into (see NearbyPlace.id in Agra's
   // nearbyPlaces). Built from general public travel sources — day-trip
@@ -15565,6 +15685,127 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Local Nicobarese/Andamanese meals in Campbell Bay town"],
     packingTips: ["All required permits, printed and digital copies", "Cash — no reliable card infrastructure", "Basic first-aid and any personal medication — facilities are minimal", "Entertainment/supplies for the 31–36h ferry crossing"],
   },
+
+  {
+    id: "ross-island",
+    name: "Ross Island (Netaji Subhas Chandra Bose Island)",
+    state: "Andaman & Nicobar",
+    hidden: true,
+    aliases: ["Ross Island", "Netaji Subhas Chandra Bose Island"],
+    tagline: "Where Nature Reclaims the Raj",
+    description: "Ross Island — officially renamed Netaji Subhas Chandra Bose Island — was the administrative headquarters of the British colonial government in the Andamans from the 1850s until a devastating earthquake in 1941. The island's grand colonial buildings — the Chief Commissioner's residence, a church, a bakery, a printing press, a hospital — now stand in dramatic ruin, their walls split apart by the roots of massive banyan and peepal trees. It's one of India's most photogenic and atmospheric heritage sites. During World War II, the Japanese occupied the island. Today, deer and peacocks roam freely among the crumbling masonry, and a small museum displays photographs of the island's colonial heyday.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Ruins_of_British_colonial_building_overgrown_with_roots%2C_Netaji_Subhash_Chandra_Bose_Island_aka_Ross_Island%2C_Andaman_vrvbaan042k24_%28103%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Ruins_of_British_colonial_building_overgrown_with_roots%2C_Netaji_Subhash_Chandra_Bose_Island_aka_Ross_Island%2C_Andaman_vrvbaan042k24_%28103%29.jpg",
+    imageCredit: "Vinayaraj, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Ruins_of_British_colonial_building_overgrown_with_roots%2C_Netaji_Subhash_Chandra_Bose_Island_aka_Ross_Island%2C_Andaman_vrvbaan042k24_%28103%29.jpg",
+    ],
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – May (dry season, calm seas for ferry)",
+    duration: "Half day",
+    highlights: [
+      { name: "Ruined colonial buildings reclaimed by banyan trees" },
+      { name: "Chief Commissioner's residence ruins" },
+      { name: "Colonial-era church remains" },
+      { name: "Free-roaming deer and peacocks" },
+      { name: "Small museum with colonial photographs" },
+    ],
+    visitingHours: { opens: "8:30 AM", closes: "4:00 PM", note: "Closed on Wednesdays. Entry: ₹50 (Indians). Light and Sound show in the evening (separate ticket, ₹100). Last ferry back to Port Blair departs around 4 PM. Photography allowed throughout." },
+    transport: [
+      { mode: "Ferry", icon: "⛴️", fromDelhi: "Fly to Port Blair, then 10-min ferry from Aberdeen Jetty", fromMumbai: "Fly to Port Blair, then 10-min ferry", fromBangalore: "Fly to Port Blair, then 10-min ferry", duration: "10 min ferry from Aberdeen Jetty, Port Blair", costRange: "₹50–₹100 return ferry", tips: "Government ferries run every 30 minutes from Aberdeen Jetty (near Rajiv Gandhi Water Sports Complex). Last boat back at 4 PM. Can combine with North Bay Island in the same half day." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in Port Blair (Aberdeen Bazaar area)"], description: "No accommodation on the island — it's a half-day trip from Port Blair." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The island is small — a complete walking circuit takes about 1 hour", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Andaman Islands", distance: "1 km (ferry)", type: "Island", isHidden: false, id: "andaman" },
+      { name: "Havelock Island", distance: "55 km", type: "Island", isHidden: false, id: "havelock" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Half Day", perDayPerPerson: 500, accommodation: 0, food: 100, transport: 200, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ross Island Exploration", morning: "Take the 8:30 AM ferry from Aberdeen Jetty (10 minutes). Disembark at the island's small jetty and pick up a map from the ticket counter. Start with the ruins of the Chief Commissioner's house — the most photographed building, with enormous banyan roots splitting the walls apart like slow-motion explosions. Continue to the colonial church, where the roof has caved in and trees grow through the nave.", afternoon: "Walk the perimeter trail — pass the bakery ruins, the old swimming pool (now filled with rainwater), the printing press, and the hospital. Deer graze unconcernedly among the ruins and peacocks fan their tails in clearings. Visit the small museum for photographs showing what the buildings looked like in their colonial prime. Catch the 2 PM or 3 PM ferry back.", evening: "Return to Port Blair. If interested, come back for the evening Light and Sound show that narrates the island's history.", stay: "Port Blair", meals: "Carry water and snacks — no food stalls on the island", tips: "Morning light is best for photography among the ruins. Wear comfortable shoes — the path is partly unpaved. Carry water — there's no drinking water on the island. The island is small (0.3 sq km) — don't rush, the atmosphere is the attraction." },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Very Safe",
+      highlights: ["Government-managed heritage site with navy presence", "Other tourists always present", "Small, contained island"],
+      precautions: ["No facilities on the island — carry water"],
+      soloTips: ["Take the ferry during regular hours", "Walk with other groups if alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }],
+      safeZones: ["Entire island during visiting hours"],
+      avoidAreas: ["None — the island is small and fully accessible"],
+    },
+    rating: 4.5,
+    reviews: 12000,
+    mustEat: ["Carry snacks — no food on island; seafood meals in Port Blair"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Water (at least 1 litre)", "Sunscreen and hat", "Insect repellent"],
+  },
+
+  {
+    id: "mount-harriet",
+    name: "Mount Harriet (Mount Manipur National Park)",
+    state: "Andaman & Nicobar",
+    hidden: true,
+    aliases: ["Mount Manipur", "Mount Harriet National Park"],
+    tagline: "The Andamans' Highest Peak",
+    description: "Mount Harriet — officially renamed Mount Manipur — at 365 metres is the highest peak in the South Andaman group and the third-highest in the entire archipelago. The hill is part of the Mount Harriet National Park (46.62 sq km), which protects one of the best-preserved tropical evergreen forests in the Andamans. The summit offers a stunning panoramic view of the sea, Port Blair below, and the surrounding islands — a vista that was reportedly the inspiration for the design on India's ₹20 note. The approach passes through forest trails where Andaman wild pigs, giant robber crabs, and endemic birds (Andaman treepie, white-headed starling) can be spotted. The colonial-era Mount Harriet bungalow at the top was once the summer retreat of the Chief Commissioner.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/20_rupees_view.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7d/20_rupees_view.jpg",
+    imageCredit: "Darshit2109, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7d/20_rupees_view.jpg",
+    ],
+    category: ["Nature", "Wildlife"],
+    bestSeason: "October – May (dry season, clear views from summit)",
+    duration: "Half day",
+    highlights: [
+      { name: "Highest peak in South Andaman (365 m)" },
+      { name: "Panoramic view — inspiration for ₹20 note" },
+      { name: "Tropical evergreen forest trails" },
+      { name: "Endemic birds (Andaman treepie, white-headed starling)" },
+      { name: "Colonial Chief Commissioner's bungalow" },
+    ],
+    transport: [
+      { mode: "Road/Ferry", icon: "🚗", fromDelhi: "Fly to Port Blair, then ferry to Bamboo Flat + 15 km drive", fromMumbai: "Same via Port Blair", fromBangalore: "Same via Port Blair", duration: "15 km from Bamboo Flat jetty (30 min drive)", costRange: "₹20 ferry to Bamboo Flat + ₹200–₹400 auto/taxi", tips: "Take the government ferry from Phoenix Bay Jetty to Bamboo Flat (20 min), then an auto or taxi uphill to the park gate. Alternatively, drive via the Andaman Trunk Road through Shoal Bay Creek. Can combine with Ross Island in a single day." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels in Port Blair"], description: "No accommodation at the summit — visit as a half-day trip from Port Blair." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹200–₹400 return", notes: "From Bamboo Flat jetty to summit and back", available: true },
+      { mode: "Walking", cost: "Free", notes: "The trek from the park gate to the summit is about 6 km (2 hours)", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ross Island", distance: "5 km (ferry)", type: "Heritage", isHidden: true, id: "ross-island" },
+      { name: "Andaman Islands", distance: "In Port Blair", type: "Island", isHidden: false, id: "andaman" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Half Day", perDayPerPerson: 600, accommodation: 0, food: 100, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mount Harriet Trek", morning: "Take the early ferry from Phoenix Bay to Bamboo Flat (20 min). From the jetty, drive or trek uphill through the national park — the forest canopy is dense, with towering padauk trees, climbing figs, and wild orchids. Keep an eye out for the giant robber crab (the world's largest land crab) and Andaman wild pigs along the trail.", afternoon: "Reach the summit for the panoramic view — the sea stretching in every direction, Port Blair laid out below, and islands dotting the horizon. This was reportedly the view used as reference for the Indian ₹20 note design. Explore the colonial-era bungalow and the old cannon placements. The descent is easy and scenic.", evening: "Return to Bamboo Flat and catch the ferry back to Port Blair.", stay: "Port Blair", meals: "Carry packed lunch and water; meals in Port Blair", tips: "Start early to avoid the midday heat. Carry at least 2 litres of water. The trek is moderate difficulty — suitable for reasonably fit walkers. Leeches are common during and after monsoon — carry salt or tobacco." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["National park with Forest Department staff", "Well-trodden trail"],
+      precautions: ["Forested area — don't wander off-trail", "Limited phone signal in the forest"],
+      soloTips: ["Trek with a group or hire a guide", "Inform your hotel of your plans"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }],
+      safeZones: ["Main trail to summit", "Summit viewpoint"],
+      avoidAreas: ["Off-trail areas in the forest"],
+    },
+    rating: 4.3,
+    reviews: 5000,
+    mustEat: ["Carry packed food; seafood in Port Blair after the trek"],
+    packingTips: ["Sturdy hiking shoes", "Water (2+ litres)", "Packed lunch", "Camera", "Binoculars (birding)", "Sunscreen", "Insect repellent", "Leech socks (monsoon season)"],
+  },
+
   // Andhra Pradesh batch, researched via tourism.ap.gov.in (the official
   // APTDC site — mostly an accommodation/booking portal rather than a
   // destination encyclopedia like UP/Assam/Andaman's sites, so its own
@@ -78999,6 +79240,125 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "pfutsero",
+    name: "Pfutsero",
+    state: "Nagaland",
+    hidden: true,
+    tagline: "Nagaland's Highest Town",
+    description: "Pfutsero (Pfütsero), the headquarters of Phek district, sits at about 2,133 metres — making it the highest town in Nagaland. Home to the Chakhesang Naga tribe, the town is surrounded by dramatic terraced rice paddies, pine-clad hills, and sweeping mountain views. Glory Peak, the highest point near the town, offers panoramic vistas of the surrounding ranges including a clear-day view towards Mount Saramati. The Chakhesang people are known for their distinctive weaving traditions and the Sükrünyie festival (celebrated in January). The cool climate, clean air, and unhurried mountain-town atmosphere make Pfutsero a rewarding offbeat destination for those exploring eastern Nagaland.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/10/Aerial_view_of_Pfutsero_Town.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/10/Aerial_view_of_Pfutsero_Town.png",
+    imageCredit: "Galacticlights, CC0 1.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Aerial_view_of_Pfutsero_Town.png",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Glory_Peak_Pfutsero.jpg",
+    ],
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March (clear skies, cool weather); January for Sükrünyie festival",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Highest town in Nagaland (2,133 m)" },
+      { name: "Glory Peak viewpoint" },
+      { name: "Chakhesang Naga tribal culture" },
+      { name: "Terraced rice paddies" },
+      { name: "Sükrünyie festival (January)" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dimapur, then 6h drive (180 km) via Kohima", fromMumbai: "Same via Dimapur", fromBangalore: "Same via Dimapur", duration: "80 km from Kohima (3h on mountain road)", costRange: "₹300–₹500 shared sumo from Kohima", tips: "Shared Sumo taxis run from Kohima to Pfutsero. The road is winding but scenic. ILP (Inner Line Permit) mandatory for Indian tourists — apply online before travel." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Circuit house", "Local guesthouses"], description: "Limited options — the circuit house requires advance booking through the DC office. A few basic guesthouses serve visitors." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Pfutsero town is small and walkable", available: true },
+      { mode: "Hired Vehicle", cost: "₹1,500–₹2,000/day", notes: "For visiting Glory Peak and surrounding villages", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kohima War Cemetery", distance: "80 km", type: "War Memorial", isHidden: true, id: "kohima-war-cemetery" },
+      { name: "Dzukou Valley", distance: "90 km", type: "Valley", isHidden: false, id: "dzukou-valley" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Explorer", perDayPerPerson: 1500, accommodation: 600, food: 400, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Pfutsero Exploration", morning: "Arrive from Kohima (80 km, 3 hours). The drive itself is rewarding — switchbacks through dense forest with views opening up as you gain altitude. Settle into your accommodation and walk around the town centre — small shops, a church or two, and locals going about their day in a Naga hill town that sees few outsiders.", afternoon: "Hike to Glory Peak (about 5 km from town, 1.5 hours) — Nagaland's highest accessible viewpoint. On clear days, the panorama extends across wave after wave of blue-green hills towards Myanmar. The pine forest en route is quiet and atmospheric.", evening: "Return to town for dinner. The Chakhesang cuisine is similar to other Naga fare — smoked pork, bamboo shoot dishes, fermented soybean, and rice — but with its own local variations. The evening air at this altitude is crisp and cold.", stay: "Pfutsero guesthouse", meals: "Naga thali — smoked pork, bamboo shoot, rice, chutney (₹100–₹200)", tips: "Carry warm clothes — temperatures can drop to near freezing in winter. Ask locally about the trail to Glory Peak; the path is not always well marked." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Peaceful Naga hill town", "Strong community values", "Very low crime"],
+      precautions: ["Remote location with limited medical facilities", "Limited phone signal in some areas"],
+      soloTips: ["Stay at the circuit house or recommended guesthouse", "Inform someone of your hiking plans", "Travel during daylight"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Pfutsero Police", number: "03865-233233" }],
+      safeZones: ["Town centre", "Main road areas"],
+      avoidAreas: ["Unmarked forest trails after dark"],
+    },
+    rating: 4.1,
+    reviews: 800,
+    mustEat: ["Smoked pork with bamboo shoot", "Axone (fermented soybean chutney)", "Naga king chilli chutney", "Local rice beer", "Boiled greens with Naga spices"],
+    packingTips: ["Warm jacket (essential — cold at 2,100 m)", "Comfortable hiking shoes", "Camera", "Cash (no ATMs)", "ILP printout", "Torch", "Medicines"],
+  },
+
+  {
+    id: "mon-nagaland",
+    name: "Mon",
+    state: "Nagaland",
+    hidden: true,
+    tagline: "Land of the Konyak Nagas",
+    description: "Mon, the headquarters of Mon district in far-eastern Nagaland, is the gateway to the homeland of the Konyak Naga tribe — the last headhunters of India. The Konyaks were known for their fierce warrior culture, elaborate face tattoos (marking successful headhunts), and distinctive brass jewellery. While headhunting ended in the 1960s–70s, a handful of elderly tattooed warriors survive, their lined faces bearing witness to a vanishing tradition. The district borders Myanmar, and the village of Longwa — where the international boundary runs through the Angh's (chief's) house — is a popular excursion. The annual Aoling festival (April) celebrates the Konyak new year with dances, feasts, and traditional warrior displays.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Mon-Nagaland-Jim-Ankan-Deka-photography.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/da/Mon-Nagaland-Jim-Ankan-Deka-photography.jpg",
+    imageCredit: "Jim Ankan Deka, CC BY-SA 3.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/Mon-Nagaland-Jim-Ankan-Deka-photography.jpg",
+    ],
+    category: ["Culture", "Adventure"],
+    bestSeason: "October – April (dry season); April for Aoling festival",
+    duration: "2–3 days",
+    highlights: [
+      { name: "Konyak Naga tribal heritage" },
+      { name: "Last tattooed headhunters of India" },
+      { name: "Longwa village (straddles India–Myanmar border)" },
+      { name: "Aoling festival (April)" },
+      { name: "Konyak brass jewellery and morung (dormitory) architecture" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dimapur, then 8h drive (280 km)", fromMumbai: "Same via Dimapur", fromBangalore: "Same via Dimapur", duration: "280 km from Dimapur (8h), 230 km from Kohima (7h)", costRange: "₹500–₹800 shared sumo from Kohima", tips: "The road from Kohima to Mon is long and winding through mountains. Shared Sumo taxis run daily. Some travellers enter via Assam (Sonari/Tinsukia side). ILP mandatory — apply online." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Circuit house", "Local guesthouses", "Homestays in Konyak villages"], description: "Mon town has a circuit house and a few basic guesthouses. Village homestays in Longwa and other Konyak villages offer a more immersive experience." },
+    ],
+    localTransport: [
+      { mode: "Shared Sumo", cost: "₹100–₹200", notes: "To nearby villages like Longwa and Shangnyu", available: true },
+      { mode: "Hired Vehicle", cost: "₹2,000–₹3,000/day", notes: "For village-hopping around Mon district", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mokokchung", distance: "150 km", type: "Town", isHidden: true, id: "mokokchung" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Explorer", perDayPerPerson: 2000, accommodation: 700, food: 400, transport: 600, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mon Town", morning: "Arrive in Mon after the long drive from Kohima or Dimapur. The town sits on a ridge with views over the hills towards Myanmar. Check into your accommodation and walk around the small market — Konyak men and women in traditional attire are a common sight, especially on market days.", afternoon: "Visit the Mon Tribal Council building and local artisans making traditional Konyak brass jewellery and dao (machetes). If arranged through your guesthouse, meet one of the remaining tattooed Konyak elders — their face and chest tattoos, each line marking a feat or rite of passage, are a living link to a vanishing tradition.", evening: "Try local Konyak food — rice, boiled pork, and fiery chutney made with Raja Mirchi (Bhut Jolokia). The quiet mountain evening in this remote corner of India is memorable.", stay: "Mon guesthouse", meals: "Konyak Naga meals — rice, pork, bamboo shoot, chutney (₹100–₹200)", tips: "Always ask permission before photographing Konyak elders — many expect a small fee (₹200–₹500). Respect cultural protocols in villages." },
+      { day: 2, title: "Longwa Village", morning: "Drive to Longwa village (45 km, 1.5 hours). This famous village literally straddles the India–Myanmar border — the chief's house (Angh's morung) has its front in India and its back in Myanmar. The village chief, or Angh, still commands traditional authority. Walk through the village to see traditional Konyak morung (bachelors' dormitories) and the distinctive log-drum houses.", afternoon: "Explore the surrounding area and visit Shangnyu village (another well-known Konyak settlement) if time permits. The panoramic views of the Myanmar hills from Longwa are spectacular.", evening: "Return to Mon.", stay: "Mon guesthouse", meals: "Village meals (₹100–₹200); carry snacks", tips: "Longwa is a sensitive border area — carry your ILP and ID at all times. A local guide from Mon is highly recommended for cultural context and navigating the villages." },
+    ],
+    womenSafety: {
+      score: 5,
+      level: "Exercise Caution",
+      highlights: ["Konyak villages are generally welcoming to visitors", "Low general crime"],
+      precautions: ["Very remote area with no hospital", "Limited phone signal", "Border region — carry ID at all times"],
+      soloTips: ["Travel with a local guide — essential for cultural navigation", "Do not attempt Longwa without a guide", "Stay in Mon town rather than isolated villages", "Carry all essential medicines"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Mon Police", number: "03869-222233" }],
+      safeZones: ["Mon town centre", "Longwa Angh's house area"],
+      avoidAreas: ["Myanmar border areas beyond Longwa", "Isolated trails after dark"],
+    },
+    rating: 4.3,
+    reviews: 1500,
+    mustEat: ["Smoked pork with Naga king chilli", "Bamboo shoot curry", "Rice beer (local brew)", "Boiled snails (Konyak delicacy)", "Wild greens"],
+    packingTips: ["Warm jacket", "Sturdy shoes", "Cash (no ATMs in Mon)", "ILP printout + ID", "Camera", "Torch/headlamp", "First-aid kit", "Insect repellent"],
+  },
+
+  {
     id: "red-fort",
     name: "Red Fort (Lal Qila)",
     state: "Delhi",
@@ -91221,6 +91581,129 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sun hat and sunscreen", "Comfortable walking shoes", "Light cotton clothes", "Camera", "A shawl or sarong for temple visits"],
   },
 
+  {
+    id: "chidambaram",
+    name: "Chidambaram",
+    state: "Tamil Nadu",
+    hidden: true,
+    tagline: "The Cosmic Dance of Nataraja",
+    description: "Chidambaram is home to the Thillai Nataraja Temple, one of the most revered Shiva temples in India, where Shiva is worshipped as Nataraja — the Lord of Dance — performing his cosmic Ananda Tandava. The temple is unique among the Pancha Bhoota Sthalas (five elemental temples) as it represents akasha (space/ether). The complex sprawls over 40 acres with four towering gopurams, the famous Chit Sabha with its gold-plated roof, and the secret of the Chidambara Rahasyam — a curtain behind which 'nothing' is enshrined, symbolising the formless nature of the divine. The temple is managed not by priests but by a hereditary community of Dikshitars who follow Vedic traditions dating back centuries.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Golden_Roof%2C_Nataraja_Temple_in_Chidambaram.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Golden_Roof%2C_Nataraja_Temple_in_Chidambaram.jpg",
+    imageCredit: "Nittavinoda, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/Golden_Roof%2C_Nataraja_Temple_in_Chidambaram.jpg",
+    ],
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March (pleasant weather); February for Maha Shivaratri, December–January for Margazhi festival",
+    duration: "Half day – 1 day",
+    highlights: [
+      { name: "Nataraja Temple (Pancha Bhoota Sthala — akasha)" },
+      { name: "Gold-plated Chit Sabha roof" },
+      { name: "Chidambara Rahasyam (the cosmic secret)" },
+      { name: "Four ornate gopurams with 108 Bharatanatyam poses" },
+      { name: "Dikshitar priests' Vedic traditions" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "12:00 PM / 4:00 PM – 10:00 PM", note: "Temple closes midday (12 PM – 4 PM). No entry fee. Photography not allowed inside the inner sanctum. The Chit Sabha (gold roof) and Kanaka Sabha are accessible during worship hours. Maha Shivaratri (Feb/Mar) sees all-night worship." },
+    transport: [
+      { mode: "Road/Rail", icon: "🚂", fromDelhi: "Fly to Chennai, then 5h drive (230 km) or train to Chidambaram station", fromMumbai: "Fly to Chennai, then 5h drive", fromBangalore: "6h drive (340 km) or train", duration: "230 km from Chennai (5h), 70 km from Pondicherry (1.5h)", costRange: "₹100–₹200 bus from Pondicherry; ₹300–₹500 bus from Chennai", tips: "Chidambaram has its own railway station with trains from Chennai. SETC buses connect to Chennai, Pondicherry, Thanjavur, and Kumbakonam. Easy to combine with Pondicherry (70 km) or Thanjavur (100 km)." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,200/night", examples: ["Hotels near the temple", "Sabanayagar Lodge"], description: "Several budget hotels cluster around the temple. Basic but clean — Chidambaram is a pilgrimage town, so facilities are functional." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Hotel Saradharam", "GRT Regency"], description: "A few mid-range options available. For more choice, Pondicherry is 70 km away." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹30–₹100", notes: "From station to temple and within town", available: true },
+      { mode: "Walking", cost: "Free", notes: "The temple and town centre are walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Thanjavur", distance: "100 km", type: "Heritage City", isHidden: false, id: "thanjavur" },
+      { name: "Mahabalipuram", distance: "200 km", type: "Heritage", isHidden: false, id: "mahabalipuram" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 800, accommodation: 0, food: 250, transport: 300, activities: 250 },
+      { tier: "mid", label: "Overnight", perDayPerPerson: 2000, accommodation: 1000, food: 400, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chidambaram Nataraja Temple", morning: "Arrive early to experience the morning puja. Enter through the East Gopuram — each of the four gopurams is carved with 108 Bharatanatyam dance poses (totalling 432), forming a sculptural encyclopaedia of classical dance. Walk through the temple's five prakarams (concentric enclosures) towards the sanctum. The Chit Sabha, with its gold-plated roof, houses the Nataraja bronze — the iconic figure of Shiva mid-dance.", afternoon: "Attend the midday closing ceremony, then explore the temple's outer courts. Visit the Sivaganga tank (temple pond) and the Nritta Sabha (dance hall) with its exquisite pillared mandapam. The sculptural detail throughout the complex repays slow, careful observation.", evening: "If staying overnight, return for the evening puja — the lamp-lit sanctum at night, with the sound of bells and chanting echoing through the stone corridors, is profoundly atmospheric.", stay: "Chidambaram hotel or day trip", meals: "South Indian meals — idli, dosa, rice thali (₹60–₹150); temple prasad", tips: "Remove shoes before entering the temple. Dress modestly. The Dikshitar priests may offer to guide you through the temple — a small donation (₹50–₹100) is customary." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Temple town with constant pilgrim traffic", "Well-lit temple complex"],
+      precautions: ["Busy and crowded during festivals"],
+      soloTips: ["Stay near the temple area", "Use pre-paid auto-rickshaws from the station"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Chidambaram Police", number: "04144-222100" }],
+      safeZones: ["Temple complex", "Main bazaar area"],
+      avoidAreas: ["Isolated streets at night"],
+    },
+    rating: 4.6,
+    reviews: 8000,
+    mustEat: ["South Indian thali (banana leaf)", "Temple prasad (pongal and vadai)", "Filter coffee", "Chettinad-style meals at local hotels"],
+    packingTips: ["Modest clothing (temple visit)", "Comfortable shoes (remove at temple)", "Camera (not allowed inside sanctum)", "Sunscreen", "Water bottle"],
+  },
+
+  {
+    id: "chettinad",
+    name: "Chettinad",
+    state: "Tamil Nadu",
+    hidden: true,
+    tagline: "Palatial Mansions and Fiery Cuisine",
+    description: "Chettinad, a region of 75 villages in Sivaganga district, is the ancestral homeland of the Nattukotai Chettiars — a merchant community that traded across Southeast Asia in the 19th and early 20th centuries. Their extraordinary wealth was channelled into building palatial mansions using teak from Burma, marble from Italy, tiles from Japan, and chandeliers from Belgium — creating some of the most opulent domestic architecture in India. Many of these mansions, with their soaring atriums, carved wooden pillars, and Athangudi tile floors, survive in various states of grandeur. Chettinad is equally famous for its cuisine — fiery, spice-heavy dishes built around stone-ground masalas, featuring pepper chicken, Chettinad-style crab, and kavuni arisi (black rice pudding).",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/63/Chettinad_palatial_house.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/Chettinad_palatial_house.jpg",
+    imageCredit: "Yashima, CC BY-SA 2.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/Chettinad_palatial_house.jpg",
+    ],
+    category: ["Heritage", "Culture"],
+    bestSeason: "October – March (cooler weather, festive season)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Palatial Chettiar mansions (19th century)" },
+      { name: "Athangudi handmade tiles" },
+      { name: "Chettinad cuisine (one of India's spiciest)" },
+      { name: "Chettinad Palace Museum, Kanadukathan" },
+      { name: "Pillayarpatti Karpaga Vinayagar Temple" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Madurai (90 km) or Trichy (130 km), then drive", fromMumbai: "Same via Madurai or Trichy", fromBangalore: "7h drive (430 km) or fly to Madurai", duration: "90 km from Madurai (2h), 130 km from Trichy (3h)", costRange: "₹150–₹300 bus from Madurai", tips: "Kanadukathan is considered the 'capital' of Chettinad and is the best base for exploring. SETC buses from Madurai run to Karaikudi (the nearest town), from where auto-rickshaws reach Kanadukathan (15 km)." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Basic hotels in Karaikudi"], description: "Karaikudi has budget hotels. The mansion-stay experience is worth the splurge." },
+      { type: "Mid-Range", priceRange: "₹3,000–₹8,000/night", examples: ["The Bangala, Karaikudi", "Chettinadu Mansion"], description: "Heritage mansion stays are the highlight — sleep in a restored Chettiar palace with original tiles, carved pillars, and courtyard dining. The Bangala is the most well-known." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹50–₹200", notes: "Between Karaikudi and surrounding villages", available: true },
+      { mode: "Hired Car", cost: "₹1,500–₹2,000/day", notes: "Best way to explore multiple villages and mansions", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Madurai", distance: "90 km", type: "Heritage City", isHidden: false, id: "madurai" },
+      { name: "Rameswaram", distance: "150 km", type: "Pilgrimage", isHidden: false, id: "rameswaram" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1200, accommodation: 0, food: 400, transport: 400, activities: 400 },
+      { tier: "mid", label: "Mansion Stay", perDayPerPerson: 5000, accommodation: 3500, food: 600, transport: 500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chettinad Mansions & Cuisine", morning: "Arrive in Kanadukathan. Start with the Chettinad Palace (Raja's Palace) — a sprawling 19th-century mansion built around a central courtyard, with ornate wooden ceilings, stained-glass windows, and rooms lined with Athangudi tiles. Several mansions in Kanadukathan are open to visitors (some charge ₹50–₹100). Walk the quiet streets — almost every house is architecturally striking.", afternoon: "Drive to Athangudi (10 km) to watch the traditional handmade tile-making process — craftsmen create the distinctive coloured cement tiles that floor every Chettinad mansion. Visit Pillayarpatti Temple, a rock-cut Vinayagar (Ganesh) temple carved into a hillside. Return for a proper Chettinad lunch — pepper chicken, Chettinad-style fish curry, appam, and kavuni arisi.", evening: "Explore the antique shops in Karaikudi — Chettinad is a treasure trove of colonial-era furniture, old doors, brass lamps, and architectural salvage from mansions that were dismantled.", stay: "Heritage mansion stay or Karaikudi hotel", meals: "Chettinad meals (₹150–₹300 for a full spread)", tips: "Many mansions are private — always ask before entering. A local guide (₹500–₹1,000 for half day) can open doors that would otherwise be closed. Sundays and festival days may restrict some access." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Conservative, family-oriented community", "Heritage mansion stays are well managed"],
+      precautions: ["Rural area — limited nightlife and late-night transport"],
+      soloTips: ["Stay at The Bangala or a reputed mansion stay", "Hire a car with driver for village exploration"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Karaikudi Police", number: "04565-222100" }],
+      safeZones: ["Kanadukathan main street", "Karaikudi town centre"],
+      avoidAreas: ["Isolated village roads after dark"],
+    },
+    rating: 4.4,
+    reviews: 4500,
+    mustEat: ["Chettinad pepper chicken", "Chettinad crab masala", "Kavuni arisi (black rice pudding)", "Appam with stew", "Paniyaram", "Filter coffee"],
+    packingTips: ["Light cotton clothes", "Comfortable walking shoes", "Camera", "Sunscreen", "Cash (limited card acceptance in villages)", "Water bottle"],
+  },
+
   // ─── TELANGANA ────────────────────────────────────────────────────
   {
     id: "hyderabad",
@@ -92251,6 +92734,124 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3500,
     mustEat: ["Temple prasad", "Bengali fish curry and rice in Udaipur", "Chhana sweets"],
     packingTips: ["Modest clothing", "Comfortable shoes (remove at temple)", "Camera", "Puffed rice or biscuits to feed the turtles"],
+  },
+
+  {
+    id: "dumboor-lake",
+    name: "Dumboor Lake",
+    state: "Tripura",
+    hidden: true,
+    tagline: "The Star-Shaped Lake of Dhalai",
+    description: "Dumboor Lake, a large reservoir on the Raima and Sarma rivers in Dhalai district, is shaped like a star with 48 small islands dotting its surface — some inhabited, some forested. Created by the Gumti Hydroelectric Project dam, the lake stretches over 41 sq km and is surrounded by dense hills. Boating across the calm waters, passing between the islands, is the main draw. The lake is also significant for the Garia Puja festival (April), when tribal communities celebrate with traditional dances and boat races on the water.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/In_the_middle_of_the_Deep_Dumboor_Lake.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1d/In_the_middle_of_the_Deep_Dumboor_Lake.jpg",
+    imageCredit: "Yapri Debbarma, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1d/In_the_middle_of_the_Deep_Dumboor_Lake.jpg",
+    ],
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March (cool, clear skies); April for Garia Puja festival",
+    duration: "1 day",
+    highlights: [
+      { name: "Star-shaped lake with 48 islands" },
+      { name: "Boating through the islands" },
+      { name: "Garia Puja festival (April)" },
+      { name: "Surrounding hills and forest" },
+      { name: "Gumti dam viewpoint" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala, then 3.5h drive (120 km) via Ambassa", fromMumbai: "Fly to Agartala, then 3.5h drive", fromBangalore: "Fly to Agartala, then 3.5h drive", duration: "120 km from Agartala (3.5h)", costRange: "₹100–₹200 by shared sumo", tips: "Ambassa (30 km) is the nearest town on NH-8. From Agartala, TRTC buses run to Ambassa/Kamalpur; hire a vehicle from there to the lake." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹400–₹1,000/night", examples: ["Tripura Tourism lodge near lake", "Basic guesthouses in Ambassa"], description: "A small tourism lodge near the lake offers basic rooms. More options in Ambassa." },
+    ],
+    localTransport: [
+      { mode: "Hired Vehicle", cost: "₹1,500–₹2,000/day", notes: "From Ambassa covering Dumboor Lake and surroundings", available: true },
+      { mode: "Boat", cost: "₹200–₹500 per trip", notes: "Motor boats available for lake tours at the jetty", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Unakoti", distance: "60 km", type: "Archaeological Site", isHidden: false, id: "unakoti" },
+      { name: "Jampui Hills", distance: "80 km", type: "Hill Station", isHidden: true, id: "jampui-hills" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1200, accommodation: 400, food: 300, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dumboor Lake", morning: "Leave Agartala early (120 km, 3.5 hours) or depart from Ambassa (30 km). Arrive at the lake jetty and take a boat ride — the star-shaped lake unfolds as you glide between its 48 islands, some just tufts of green trees on the water. The quiet of the lake, broken only by birdsong and the boat engine, is deeply calming.", afternoon: "Visit the Gumti dam viewpoint for a panoramic view over the reservoir. Walk around the lakeshore and explore one of the inhabited islands where tribal families live traditionally. Have lunch at the tourism lodge — simple Bengali and tribal Tripuri fare.", evening: "Drive back to Ambassa or continue towards Unakoti (60 km) for the next day.", stay: "Ambassa or Tripura Tourism lodge", meals: "Bengali rice-fish meal, tribal Tripuri food (₹80–₹150)", tips: "Carry sunscreen and a hat — the lake has no shade. Boats may not run in heavy rain or strong wind." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Peaceful lake setting", "Tourism lodge present"],
+      precautions: ["Remote area with limited phone signal", "Few tourists outside weekends"],
+      soloTips: ["Travel with a companion if possible", "Inform your hotel of your itinerary", "Visit during daylight only"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kamalpur Police", number: "03824-235333" }],
+      safeZones: ["Tourism lodge area", "Main jetty"],
+      avoidAreas: ["Uninhabited islands", "Lake after dark"],
+    },
+    rating: 4.1,
+    reviews: 1500,
+    mustEat: ["Muya bai (bamboo shoot)", "Bengali fish curry and rice", "Chhana sweets from Ambassa", "Tribal Tripuri food"],
+    packingTips: ["Sunscreen and hat", "Water bottle", "Camera", "Light rain jacket", "Cash (limited card acceptance)"],
+  },
+
+  {
+    id: "chabimura",
+    name: "Chabimura",
+    state: "Tripura",
+    hidden: true,
+    tagline: "Ancient Rock Carvings on the Gomati",
+    description: "Chabimura (also known as Devtamura) is an archaeological site along the Gomati River in Gomati district where massive rock-carved panels from the 15th–16th century depict Hindu deities — Shiva as Nataraja, Vishnu, Kartik, Mahishasuramardini, and Ganesh — sculpted directly into the cliff faces rising from the river. The carvings, some over 3 metres tall, were commissioned by the Manikya kings of Tripura and remain remarkably well preserved. A boat ride along the river is the only way to view the carvings properly, as they face the water. The surrounding landscape of forested hills and the green river makes this a hauntingly beautiful site.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Chabimura_carving_on_a_steep_cliff.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/47/Chabimura_carving_on_a_steep_cliff.jpg",
+    imageCredit: "Mvkraju4b1, CC BY 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Chabimura_carving_on_a_steep_cliff.jpg",
+    ],
+    category: ["Heritage", "Nature"],
+    bestSeason: "October – March (pleasant weather, clear river)",
+    duration: "Half day",
+    highlights: [
+      { name: "15th–16th century rock-carved Hindu deities" },
+      { name: "Shiva Nataraja panel (largest carving)" },
+      { name: "Boat ride along the Gomati River" },
+      { name: "Cliff-face carvings rising from water" },
+      { name: "Forested river gorge setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala, then 2.5h drive (85 km) via Udaipur", fromMumbai: "Fly to Agartala, then 2.5h drive", fromBangalore: "Fly to Agartala, then 2.5h drive", duration: "15 km from Udaipur, Tripura (30 min)", costRange: "₹100–₹200 auto from Udaipur", tips: "The boat jetty at Chabimura is 15 km from Udaipur (Tripura). Combine with Tripura Sundari Temple in Udaipur for a full day trip." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹400–₹1,000/night", examples: ["Guesthouses in Udaipur, Tripura", "Circuit house"], description: "Stay in Udaipur (15 km) and visit Chabimura as a half-day trip. Basic guesthouses available." },
+    ],
+    localTransport: [
+      { mode: "Auto-rickshaw", cost: "₹100–₹200", notes: "From Udaipur to Chabimura jetty", available: true },
+      { mode: "Boat", cost: "₹300–₹500 per trip", notes: "Mandatory boat ride along the river to view the carvings — hire at the jetty", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tripura Sundari Temple", distance: "15 km", type: "Temple", isHidden: true, id: "tripura-sundari-temple" },
+      { name: "Pilak", distance: "45 km", type: "Archaeological Site", isHidden: true, id: "pilak" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chabimura Rock Carvings", morning: "Leave Udaipur early (15 km, 30 min). If visiting Tripura Sundari Temple first, stop there on the way. Arrive at the Chabimura jetty and hire a country boat. As the boat glides along the green Gomati, the massive rock-carved panels emerge on the cliff face — Shiva dancing as Nataraja, Vishnu reclining, Kartik riding his peacock, all carved directly into the living rock.", afternoon: "The boatman stops at each major panel so you can photograph and appreciate the scale — some carvings are over 3 metres tall. The entire stretch covers about 1.5 km of riverbank. The forest canopy above and the reflections in the still water create a magical atmosphere.", evening: "Return to Udaipur. Visit the old town and local markets.", stay: "Udaipur, Tripura", meals: "Bengali rice and fish in Udaipur (₹80–₹150)", tips: "Morning light is best for the carvings (they face east/south). Carry water and snacks — there are no shops at the jetty. Negotiate boat fare before boarding." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Small tourist site with boatmen present", "Near Udaipur town"],
+      precautions: ["Remote riverine area", "Limited facilities at the site"],
+      soloTips: ["Visit during morning hours", "Inform your hotel in Udaipur", "Go with a companion if possible"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Udaipur (Tripura) Police", number: "03821-222244" }],
+      safeZones: ["Jetty area", "Main carvings stretch"],
+      avoidAreas: ["Isolated river stretches beyond the carvings"],
+    },
+    rating: 4.3,
+    reviews: 1800,
+    mustEat: ["Bengali fish curry and rice", "Temple prasad from Tripura Sundari", "Chhana sweets"],
+    packingTips: ["Camera (essential)", "Sunscreen and hat", "Water bottle", "Comfortable clothes", "Cash"],
   },
 
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
@@ -93393,6 +93994,189 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1200,
     mustEat: ["Simple Chhattisgarhi meals in the village", "Carry snacks and water from Raipur"],
     packingTips: ["Sun hat and sunscreen", "Comfortable walking shoes", "Water (at least 2 litres)", "Camera", "Snacks"],
+  },
+
+  {
+    id: "mainpat",
+    name: "Mainpat",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "The Mini Tibet of Chhattisgarh",
+    description: "Mainpat, perched at about 1,090 metres in the Surguja district, is a plateau hill station often called 'Mini Tibet' owing to its sizable Tibetan refugee community settled here since the 1960s. The landscape is a rolling grassland dotted with Buddhist monasteries, prayer flags, and small Tibetan eateries serving momos and thukpa. Tiger Point waterfall, Jaljali (a patch of trembling, waterlogged grassland), and Mehta Point viewpoint are the main natural attractions. The cool climate and unhurried pace make it an offbeat retreat far from the usual tourist circuits.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tiger_Point%2C_Mainpat_-_panoramio.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tiger_Point%2C_Mainpat_-_panoramio.jpg",
+    imageCredit: "Kailash Mohankar, CC BY 3.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tiger_Point%2C_Mainpat_-_panoramio.jpg",
+    ],
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March (cool, pleasant weather)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Tiger Point Waterfall" },
+      { name: "Tibetan Buddhist monasteries and prayer flags" },
+      { name: "Jaljali (trembling ground)" },
+      { name: "Mehta Point viewpoint" },
+      { name: "Tibetan food — momos and thukpa" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Raipur, then 7h drive (350 km) via Ambikapur", fromMumbai: "Fly to Raipur, then 7h drive", fromBangalore: "Fly to Raipur, then 7h drive", duration: "80 km from Ambikapur (2h)", costRange: "₹100–₹200 shared jeep from Ambikapur", tips: "Ambikapur (80 km) is the nearest town with a railway station and regular bus service. From Raipur, CGSRTC buses run to Ambikapur, then local jeeps head to Mainpat." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,200/night", examples: ["Chhattisgarh Tourism rest house", "Local homestays"], description: "Limited options — a government rest house and a handful of basic homestays. Book in advance during peak season." },
+      { type: "Mid-Range", priceRange: "₹1,200–₹2,500/night", examples: ["Hotels in Ambikapur"], description: "For more comfortable stays, Ambikapur (80 km) has mid-range hotels." },
+    ],
+    localTransport: [
+      { mode: "Shared Jeep", cost: "₹50–₹100", notes: "Local jeeps connect Mainpat to surrounding villages and viewpoints", available: true },
+      { mode: "Hired Jeep", cost: "₹1,500–₹2,000/day", notes: "Full-day sightseeing around Mainpat", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chitrakote Falls", distance: "400 km", type: "Waterfall", isHidden: false, id: "chitrakote-falls" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1000, accommodation: 400, food: 300, transport: 200, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2000, accommodation: 1000, food: 500, transport: 300, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mainpat Exploration", morning: "Arrive from Ambikapur. Visit the Tibetan monastery and settlement — colourful prayer flags, a small Buddha statue, and monks going about daily life. Try momos and thukpa at one of the small Tibetan eateries near the monastery.", afternoon: "Head to Tiger Point (8 km) — a scenic waterfall cascading over a cliff into a rocky pool. The surrounding forest walk is pleasant. Continue to Jaljali, a curious patch of waterlogged grassland where the ground trembles underfoot.", evening: "Catch sunset from Mehta Point, a hilltop viewpoint with panoramic views of the plateau and surrounding hills. Return to your guesthouse for a quiet evening.", stay: "Mainpat rest house or homestay", meals: "Tibetan momos and thukpa, Chhattisgarhi thali (₹80–₹150)", tips: "Roads are narrow and winding — start early. Carry cash as there are no ATMs in Mainpat itself." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Peaceful Tibetan community", "Low crime area"],
+      precautions: ["Remote location with limited connectivity", "Very few facilities"],
+      soloTips: ["Stay in the Tibetan settlement area", "Travel during daylight", "Inform someone of your plans"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Ambikapur Police", number: "07774-233077" }],
+      safeZones: ["Tibetan settlement", "Government rest house"],
+      avoidAreas: ["Isolated forest trails after dark"],
+    },
+    rating: 4.0,
+    reviews: 1200,
+    mustEat: ["Tibetan momos", "Thukpa (noodle soup)", "Chhattisgarhi thali", "Local red rice", "Butter tea"],
+    packingTips: ["Warm jacket (cool evenings)", "Comfortable walking shoes", "Cash (no ATMs)", "Camera", "Torch", "Insect repellent"],
+  },
+
+  {
+    id: "kanger-valley",
+    name: "Kanger Valley National Park",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "Caves, Waterfalls, and Primeval Forest",
+    description: "Kanger Valley National Park, spread over 200 sq km of dense sal and teak forest near Jagdalpur, is one of the most biodiverse protected areas in central India. The park shelters the famous Kutumsar Cave — one of India's longest natural limestone caves with stalactites, stalagmites, and a species of blind fish found nowhere else. Dandak Cave, another cavern within the park, features a massive chamber. The Tirathgarh Falls plunges 91 metres through the forest in a series of tiers. Kanger Valley received the Biosphere Reserve status and remains a birding hotspot with over 150 species recorded.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanger_valley_National_park.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanger_valley_National_park.jpg",
+    imageCredit: "Harminder singh saini, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanger_valley_National_park.jpg",
+    ],
+    category: ["Nature", "Wildlife", "Adventure"],
+    bestSeason: "November – June (park open; closed during monsoon Jul–Oct)",
+    duration: "1–2 days",
+    highlights: [
+      { name: "Kutumsar Cave (stalactites, blind fish)" },
+      { name: "Dandak Cave (large chamber)" },
+      { name: "Tirathgarh Falls", id: "tirathgarh-falls" },
+      { name: "Over 150 bird species" },
+      { name: "Dense sal and teak forest trails" },
+    ],
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Park closed July–October (monsoon). Entry: ₹50 (Indians). Kutumsar Cave entry: ₹25, guide mandatory. Dandak Cave entry: ₹25. Carry a torch for the caves." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Raipur, then 5.5h drive (300 km) via Jagdalpur", fromMumbai: "Fly to Raipur, then 5.5h drive", fromBangalore: "Fly to Raipur, then 5.5h drive", duration: "27 km from Jagdalpur (40 min)", costRange: "₹150–₹300 auto from Jagdalpur", tips: "The park entrance is 27 km from Jagdalpur. Combine with Chitrakote Falls (40 km further) for a full Bastar sightseeing trip." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,500/night", examples: ["Forest rest house (book via Forest Dept)", "Hotels in Jagdalpur"], description: "A forest rest house inside the park requires advance booking. More options in Jagdalpur." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,500/night", examples: ["Naman Bastar", "Hotel Rainbow, Jagdalpur"], description: "Stay in Jagdalpur for wider choices." },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹2,500/day", notes: "Full-day Bastar circuit: Kanger Valley + Tirathgarh + Chitrakote from Jagdalpur", available: true },
+      { mode: "Auto-rickshaw", cost: "₹150–₹300 one way", notes: "From Jagdalpur to park gate", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tirathgarh Falls", distance: "Inside park", type: "Waterfall", isHidden: true, id: "tirathgarh-falls" },
+      { name: "Chitrakote Falls", distance: "40 km", type: "Waterfall", isHidden: false, id: "chitrakote-falls" },
+      { name: "Jagdalpur", distance: "27 km", type: "Town", isHidden: true, id: "jagdalpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1000, accommodation: 0, food: 250, transport: 400, activities: 350 },
+      { tier: "mid", label: "Overnight", perDayPerPerson: 2500, accommodation: 1200, food: 400, transport: 500, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kanger Valley Exploration", morning: "Leave Jagdalpur early (27 km, 40 min). Enter the park and head to Kutumsar Cave — descend 60 metres underground through narrow passages into chambers studded with stalactites and stalagmites. A guide leads you through; look for the unique blind fish in the cave pools. Continue to Dandak Cave for its cavernous main hall.", afternoon: "Trek through the forest trail to Tirathgarh Falls (91 metres, tiered cascade). If water levels allow, wade into the natural pools between the tiers. The birdlife along the trail is excellent — look for Malabar pied hornbills, Indian pittas, and crested serpent eagles.", evening: "Exit the park and drive to Chitrakote Falls (40 km) for a dramatic sunset view of India's widest waterfall. Return to Jagdalpur.", stay: "Jagdalpur", meals: "Pack lunch for the park; Chhattisgarhi thali in Jagdalpur (₹100–₹200)", tips: "Wear sturdy shoes — cave floors are slippery. Carry a torch as backup. The forest is dense — stay on marked trails." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Guided cave tours with Forest Dept staff", "Other tourists present at main sites"],
+      precautions: ["Remote forest area with limited phone signal", "Slippery cave interiors"],
+      soloTips: ["Join a guided group for cave visits", "Stay in Jagdalpur for better facilities", "Inform your hotel of your itinerary"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Forest Dept Jagdalpur", number: "07782-222249" }],
+      safeZones: ["Cave entrance areas with guides", "Main park trails"],
+      avoidAreas: ["Off-trail areas in the forest", "Caves without an official guide"],
+    },
+    rating: 4.4,
+    reviews: 3500,
+    mustEat: ["Chhattisgarhi thali", "Chila (rice flour pancake)", "Muthia", "Pack lunch from Jagdalpur"],
+    packingTips: ["Torch/headlamp (essential for caves)", "Sturdy non-slip shoes", "Water (2+ litres)", "Insect repellent", "Camera", "Light rain jacket"],
+  },
+
+  {
+    id: "rajim",
+    name: "Rajim",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "Prayag of Chhattisgarh",
+    description: "Rajim, situated at the confluence of the Mahanadi, Pairi, and Sondur rivers, is one of Chhattisgarh's most sacred towns — often called the 'Prayag of Chhattisgarh.' The centrepiece is the 6th–7th century Rajiv Lochan Temple, a superb example of early Nagara-style architecture dedicated to Vishnu. The temple's intricately carved sandstone shikhara and sculptural panels rank among the finest in central India. Every year in February–March, the Rajim Kumbh Mela draws hundreds of thousands of pilgrims who bathe at the river confluence. The nearby Kuleshwar Mahadev temple sits dramatically on a small island in the Mahanadi.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/71/6th_to_7th_century_Rajivalochan_Vishnu_Temple%2C_Rajim%2C_Chhattisgarh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/71/6th_to_7th_century_Rajivalochan_Vishnu_Temple%2C_Rajim%2C_Chhattisgarh.jpg",
+    imageCredit: "Ms Sarah Welch, CC BY-SA 4.0, via Wikimedia Commons",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/7/71/6th_to_7th_century_Rajivalochan_Vishnu_Temple%2C_Rajim%2C_Chhattisgarh.jpg",
+    ],
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October – March (pleasant weather); February–March for Rajim Kumbh",
+    duration: "Half day – 1 day",
+    highlights: [
+      { name: "Rajiv Lochan Temple (6th–7th century Vishnu temple)" },
+      { name: "Confluence of Mahanadi, Pairi, and Sondur rivers" },
+      { name: "Kuleshwar Mahadev Temple (on river island)" },
+      { name: "Rajim Kumbh Mela (Feb–Mar)" },
+      { name: "Ancient Nagara-style stone carvings" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Temple open throughout the day. No entry fee. Photography allowed in the courtyard. During Rajim Kumbh (Feb–Mar), the town is extremely crowded — plan accordingly." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Raipur, then 1.5h drive (48 km)", fromMumbai: "Fly to Raipur, then 1.5h drive", fromBangalore: "Fly to Raipur, then 1.5h drive", duration: "48 km from Raipur (1.5h)", costRange: "₹50–₹100 by bus from Raipur", tips: "Regular CGSRTC buses and shared autos connect Raipur to Rajim. Easy to combine with a Sirpur day trip (80 km further). During Rajim Kumbh, special bus services run from Raipur." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹300–₹800/night", examples: ["Dharamshalas near temple", "Basic lodges"], description: "Simple dharamshalas serve pilgrims. During Kumbh, temporary tent cities are set up." },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Hotels in Raipur"], description: "For comfortable stays, return to Raipur (48 km). The town itself has only basic accommodation." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple complex and river confluence are walkable from the bus stand", available: true },
+      { mode: "Auto-rickshaw", cost: "₹20–₹50", notes: "Within town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Sirpur", distance: "80 km", type: "Archaeological Site", isHidden: true, id: "sirpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 200, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajim Temples & River", morning: "Arrive from Raipur (48 km, 1.5 hours). Head straight to the Rajiv Lochan Temple — the 6th-century sandstone shikhara is stunning in morning light. Study the carved panels depicting Vishnu's avatars and scenes from the Ramayana. Walk around the temple compound to see subsidiary shrines.", afternoon: "Walk to the river confluence (triveni sangam) where the Mahanadi, Pairi, and Sondur meet. Cross to Kuleshwar Mahadev Temple on its small island in the river — the stone Shiva linga here is believed to be ancient. Explore the ghats where pilgrims bathe.", evening: "Return to Raipur, stopping for a Chhattisgarhi thali en route.", stay: "Day trip from Raipur", meals: "Temple prasad; local meals near bus stand (₹60–₹120)", tips: "Remove shoes before entering the temple. Dress modestly. During Kumbh, arrive very early to avoid massive crowds at the confluence." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Temple town with family-friendly atmosphere", "Regular police presence during festivals"],
+      precautions: ["Very crowded during Kumbh — stay alert", "Limited facilities outside temple area"],
+      soloTips: ["Visit as a day trip from Raipur", "Stay with the temple crowd", "Carry water and snacks"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Raipur Police", number: "0771-2533000" }],
+      safeZones: ["Temple complex", "Main ghats"],
+      avoidAreas: ["Isolated river banks after dark"],
+    },
+    rating: 4.3,
+    reviews: 2800,
+    mustEat: ["Temple prasad", "Chhattisgarhi thali", "Chila", "Local jalebi", "Bafauri (steamed lentil snack)"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes (remove at temple)", "Sunscreen", "Water bottle", "Camera"],
   },
 
 ];
