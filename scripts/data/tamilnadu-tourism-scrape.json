@@ -1,0 +1,18 @@
+{
+  "source": "tamilnadutourism.tn.gov.in",
+  "scrapedAt": "2026-09-26",
+  "destinations": [
+    { "name": "Chennai", "description": "Capital city, Marina Beach, temples, museums", "category": "Cities" },
+    { "name": "Kancheepuram", "description": "City of Thousand Temples, silk sarees", "category": "Pilgrim Centres" },
+    { "name": "Kanyakumari", "description": "Southernmost tip of India, Vivekananda Rock Memorial", "category": "Popular Destinations" },
+    { "name": "Ooty", "description": "Queen of Hill Stations, Nilgiri Hills", "category": "Hills" },
+    { "name": "Kodaikanal", "description": "Princess of Hill Stations, Kodai Lake", "category": "Hills" },
+    { "name": "Mahabalipuram", "description": "UNESCO World Heritage Shore Temple, Pallava sculptures", "category": "World Heritage Sites" },
+    { "name": "Madurai", "description": "Temple city, Meenakshi Amman Temple", "category": "Cities" },
+    { "name": "Thanjavur", "description": "Brihadeeswarar Temple (UNESCO), Chola capital", "category": "World Heritage Sites" },
+    { "name": "Velankanni", "description": "Basilica of Our Lady of Good Health", "category": "Pilgrim Centres" },
+    { "name": "Rameswaram", "description": "Ramanathaswamy Temple, one of Char Dham", "category": "Pilgrim Centres" },
+    { "name": "Coimbatore", "description": "Manchester of South India, gateway to Western Ghats", "category": "Cities" }
+  ],
+  "categories": ["Popular Destinations", "Where to Go", "World Heritage Sites", "Pilgrim Centres", "Cities", "Places of Interests", "Districts", "Hills", "Beaches", "Wildlife", "Waterfalls", "Museums"]
+}

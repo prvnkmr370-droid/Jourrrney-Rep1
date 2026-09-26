@@ -1,0 +1,971 @@
+{
+  "source": "uptourism.gov.in",
+  "scrapedAt": "2026-09-26",
+  "destinations": [
+    {
+      "name": "Taj Mahal",
+      "description": "UNESCO World Heritage Site, iconic ivory-white marble mausoleum on the bank of the Yamuna in Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Agra Fort",
+      "description": "UNESCO World Heritage Site, major Mughal-era fortification in Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "description": "UNESCO World Heritage Site, Mughal architectural complex built by Emperor Akbar near Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Mehtab Bagh",
+      "description": "Mughal-era garden complex with views of the Taj Mahal across the Yamuna",
+      "category": "Heritage"
+    },
+    {
+      "name": "Kachhpura Tourist Village",
+      "description": "Heritage village in Agra offering Mughal-era living traditions and architectural heritage views",
+      "category": "Heritage"
+    },
+    {
+      "name": "Jama Masjid, Agra",
+      "description": "Central Friday Mosque in downtown Agra, historic Mughal-era mosque",
+      "category": "Religious"
+    },
+    {
+      "name": "Mankameshwar Mahadev Temple, Agra",
+      "description": "Ancient Shiva temple in Agra featuring a Silver Lingam",
+      "category": "Religious"
+    },
+    {
+      "name": "Kinari Bazar, Agra",
+      "description": "16th-century stone-paved street and traditional market in Agra",
+      "category": "Culture"
+    },
+    {
+      "name": "St. George's Cathedral, Agra",
+      "description": "Colonial-era cathedral in Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Havelock Memorial Church, Agra",
+      "description": "Colonial-era church in Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Gyarah Sidi",
+      "description": "Lesser-known monument in Kachhpura area of Agra",
+      "category": "Heritage"
+    },
+    {
+      "name": "Vishram Ghat, Agra",
+      "description": "Riverside ghat location in Agra on the Yamuna",
+      "category": "Religious"
+    },
+    {
+      "name": "Shri Krishna Janma Bhoomi",
+      "description": "Sacred birthplace of Lord Krishna in Mathura, the central religious site of the city",
+      "category": "Religious"
+    },
+    {
+      "name": "Dwarikadheesh Temple",
+      "description": "One of the most famous temples in Mathura dedicated to Lord Krishna",
+      "category": "Religious"
+    },
+    {
+      "name": "Kansa Qila",
+      "description": "Historical fort in Mathura connected to Krishna's legend",
+      "category": "Heritage"
+    },
+    {
+      "name": "Government Museum, Mathura",
+      "description": "Museum in Mathura featuring historical treasures and artifacts from the region's past",
+      "category": "Museum"
+    },
+    {
+      "name": "Jain Museum, Mathura",
+      "description": "Museum dedicated to Jain religious artifacts and history in Mathura",
+      "category": "Museum"
+    },
+    {
+      "name": "Gita Temple, Mathura",
+      "description": "Religious site in Mathura focused on Hindu philosophy",
+      "category": "Religious"
+    },
+    {
+      "name": "Jain Siddha Kshetra Chaurasi",
+      "description": "Important Jain pilgrimage destination near Mathura",
+      "category": "Religious"
+    },
+    {
+      "name": "Gurudwara Holigate, Mathura",
+      "description": "Sikh place of worship in Mathura",
+      "category": "Religious"
+    },
+    {
+      "name": "Prem Mandir, Vrindavan",
+      "description": "Modern grand temple in Vrindavan dedicated to Radha-Krishna",
+      "category": "Religious"
+    },
+    {
+      "name": "Bankey Bihari Temple, Vrindavan",
+      "description": "One of the most prominent Krishna temples in Vrindavan",
+      "category": "Religious"
+    },
+    {
+      "name": "Krishna-Balram Temple (ISKCON), Vrindavan",
+      "description": "Modern international Krishna consciousness temple in Vrindavan",
+      "category": "Religious"
+    },
+    {
+      "name": "Madan Mohan Temple, Vrindavan",
+      "description": "Historic Krishna temple in Vrindavan",
+      "category": "Religious"
+    },
+    {
+      "name": "Govind Dev Temple, Vrindavan",
+      "description": "Major historic temple in Vrindavan",
+      "category": "Religious"
+    },
+    {
+      "name": "Rangaji Temple, Vrindavan",
+      "description": "Temple in Vrindavan with significant architectural design",
+      "category": "Religious"
+    },
+    {
+      "name": "Radha Vallabh Temple, Vrindavan",
+      "description": "Temple in Vrindavan dedicated to Radha and Krishna",
+      "category": "Religious"
+    },
+    {
+      "name": "Shahji Temple, Vrindavan",
+      "description": "Historic religious structure in Vrindavan",
+      "category": "Religious"
+    },
+    {
+      "name": "Jaipur Temple, Vrindavan",
+      "description": "Temple in Vrindavan constructed by Jaipur royalty",
+      "category": "Religious"
+    },
+    {
+      "name": "Seva Kunj, Vrindavan",
+      "description": "Sacred garden site in Vrindavan associated with Krishna and Radha",
+      "category": "Religious"
+    },
+    {
+      "name": "Nidhi Van, Vrindavan",
+      "description": "Sacred forest area in Vrindavan associated with Krishna legends",
+      "category": "Religious"
+    },
+    {
+      "name": "Govardhan",
+      "description": "Sacred hill in Braj region associated with Lord Krishna lifting the mountain",
+      "category": "Religious"
+    },
+    {
+      "name": "Gokul",
+      "description": "Town in Braj region where Krishna spent his childhood",
+      "category": "Religious"
+    },
+    {
+      "name": "Barsana",
+      "description": "Town in Braj region, home of Radha, known for Lathmar Holi festival",
+      "category": "Religious"
+    },
+    {
+      "name": "Nandgaon",
+      "description": "Town in Braj region associated with Krishna's foster father Nanda",
+      "category": "Religious"
+    },
+    {
+      "name": "Radhakund",
+      "description": "Sacred water body in Braj region associated with Radha",
+      "category": "Religious"
+    },
+    {
+      "name": "Baldeo",
+      "description": "Town in Braj region with religious significance",
+      "category": "Religious"
+    },
+    {
+      "name": "Mahavan",
+      "description": "Town in Braj region associated with Krishna's early years",
+      "category": "Religious"
+    },
+    {
+      "name": "Asafi Imambara (Bara Imambara), Lucknow",
+      "description": "Major Nawabi-era monument in Lucknow, famous for its labyrinthine passages (Bhool Bhulaiya)",
+      "category": "Heritage"
+    },
+    {
+      "name": "Chhota Imambara, Lucknow",
+      "description": "Ornate smaller Imambara in Lucknow, also known as Palace of Lights",
+      "category": "Heritage"
+    },
+    {
+      "name": "Rumi Darwaza, Lucknow",
+      "description": "Iconic 60-foot gateway in Lucknow, an example of Awadhi architecture",
+      "category": "Heritage"
+    },
+    {
+      "name": "Hussainabad Clock Tower, Lucknow",
+      "description": "Iconic Victorian Gothic-style clock tower in Lucknow",
+      "category": "Heritage"
+    },
+    {
+      "name": "British Residency, Lucknow",
+      "description": "Colonial-era compound in Lucknow, site of the 1857 siege",
+      "category": "Heritage"
+    },
+    {
+      "name": "Kaiserbagh Palace Complex, Lucknow",
+      "description": "Historic palace zone built by Nawab Wajid Ali Shah in Lucknow",
+      "category": "Heritage"
+    },
+    {
+      "name": "Dilkusha, Lucknow",
+      "description": "Palatial garden retreat built in English Baroque style in Lucknow",
+      "category": "Heritage"
+    },
+    {
+      "name": "La Martiniere, Lucknow",
+      "description": "Heritage educational building and architectural marvel in Lucknow",
+      "category": "Heritage"
+    },
+    {
+      "name": "Charbagh Railway Station, Lucknow",
+      "description": "Architectural marvel railway station in Lucknow with Mughal-Rajput mixed design",
+      "category": "Heritage"
+    },
+    {
+      "name": "Vidhan Bhawan, Lucknow",
+      "description": "Legislative assembly building in Lucknow with impressive architecture",
+      "category": "Heritage"
+    },
+    {
+      "name": "Shahnajaf Imambara, Lucknow",
+      "description": "Historic Nawabi-era shrine in Lucknow",
+      "category": "Heritage"
+    },
+    {
+      "name": "State Museum, Lucknow",
+      "description": "Museum with historical collections in Lucknow",
+      "category": "Museum"
+    },
+    {
+      "name": "Lok Kala Sangrahalaya, Lucknow",
+      "description": "Folk art museum in Lucknow",
+      "category": "Museum"
+    },
+    {
+      "name": "Gandhi Museum, Lucknow",
+      "description": "Museum with Independence-related exhibits in Lucknow",
+      "category": "Museum"
+    },
+    {
+      "name": "Indira Gandhi Planetarium, Lucknow",
+      "description": "Astronomy and science education center in Lucknow",
+      "category": "Museum"
+    },
+    {
+      "name": "Regional Science City, Lucknow",
+      "description": "Interactive science exhibits center in Lucknow",
+      "category": "Museum"
+    },
+    {
+      "name": "Kukrail Reserve Forest, Lucknow",
+      "description": "Wildlife habitat and nature reserve in Lucknow, known for gharial breeding",
+      "category": "Nature"
+    },
+    {
+      "name": "Nawab Wajid Ali Shah Prani Udyan (Zoo), Lucknow",
+      "description": "Zoological garden in Lucknow",
+      "category": "Nature"
+    },
+    {
+      "name": "National Botanical Research Institute, Lucknow",
+      "description": "Plant research facility with extensive botanical gardens in Lucknow",
+      "category": "Nature"
+    },
+    {
+      "name": "Gomti River Front, Lucknow",
+      "description": "Riverside recreation area along the Gomti in Lucknow",
+      "category": "Nature"
+    },
+    {
+      "name": "Dr. Ram Manohar Lohia Park, Lucknow",
+      "description": "Large green space and public park in Lucknow",
+      "category": "Nature"
+    },
+    {
+      "name": "Kalagaon (Arts Village), Anora",
+      "description": "Traditional crafts center near Lucknow for artisan heritage",
+      "category": "Culture"
+    },
+    {
+      "name": "Ghats of the Ganga, Varanasi",
+      "description": "84 ghats along the Ganges in Varanasi, the spiritual heart of the city",
+      "category": "Religious"
+    },
+    {
+      "name": "Subah-e-Banaras Heritage Walk",
+      "description": "Early morning heritage walk experience along the Ganga with traditional music, yoga, and Banarasi breakfast",
+      "category": "Culture"
+    },
+    {
+      "name": "Dhamek Stupa, Sarnath",
+      "description": "Massive Buddhist stupa at Sarnath near Varanasi where Buddha gave his first sermon",
+      "category": "Heritage"
+    },
+    {
+      "name": "Sarnath",
+      "description": "UNESCO World Heritage Buddhist site near Varanasi where Buddha first taught the Dharma",
+      "category": "Heritage"
+    },
+    {
+      "name": "Lord Ram Temple, Ayodhya",
+      "description": "Grand temple at the believed birthplace of Lord Ram in Ayodhya",
+      "category": "Religious"
+    },
+    {
+      "name": "Kanak Bhawan, Ayodhya",
+      "description": "Sacred temple complex in Ayodhya on the Antargrahi Parikrama pilgrimage route",
+      "category": "Religious"
+    },
+    {
+      "name": "Hanuman Garhi, Ayodhya",
+      "description": "Prominent Hanuman temple on a hilltop in Ayodhya",
+      "category": "Religious"
+    },
+    {
+      "name": "Mani Parvat, Ayodhya",
+      "description": "Spiritual hilltop location in Ayodhya with panoramic views and festival processions",
+      "category": "Religious"
+    },
+    {
+      "name": "Shri Nageshwarnath Temple, Ayodhya",
+      "description": "Ancient Hindu Shiva shrine in Ayodhya",
+      "category": "Religious"
+    },
+    {
+      "name": "Treta-Ke-Thakur, Ayodhya",
+      "description": "Historical religious site in Ayodhya with ancient temple",
+      "category": "Religious"
+    },
+    {
+      "name": "Ramkot, Ayodhya",
+      "description": "Ancient fort area in Ayodhya associated with Lord Ram's reign",
+      "category": "Heritage"
+    },
+    {
+      "name": "Tulsi Smarak Bhawan, Ayodhya",
+      "description": "Memorial dedicated to poet-saint Tulsidas who wrote the Ramcharitmanas",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ram Katha Museum, Ayodhya",
+      "description": "Museum showcasing the narrative and history of Lord Ram in Ayodhya",
+      "category": "Museum"
+    },
+    {
+      "name": "Ram Ki Paidi, Ayodhya",
+      "description": "Riverside ghats on the Saryu River in Ayodhya for ritual bathing",
+      "category": "Religious"
+    },
+    {
+      "name": "Guptar Ghat, Ayodhya",
+      "description": "Significant riverside ghat on the Saryu in Ayodhya",
+      "category": "Religious"
+    },
+    {
+      "name": "Gulab Bari, Ayodhya",
+      "description": "Historical garden-based monument in Ayodhya region",
+      "category": "Heritage"
+    },
+    {
+      "name": "Bahu Begum Maqbara, Ayodhya",
+      "description": "Mughal-era mausoleum in the Ayodhya region",
+      "category": "Heritage"
+    },
+    {
+      "name": "Bharat Kund, Nandigram",
+      "description": "Sacred water body near Ayodhya associated with Lord Ram's brother Bharat",
+      "category": "Religious"
+    },
+    {
+      "name": "Sangam, Prayagraj",
+      "description": "Sacred confluence of the Ganga, Yamuna, and Saraswati rivers; holiest pilgrimage site hosting Kumbh Mela",
+      "category": "Religious"
+    },
+    {
+      "name": "Allahabad Fort (Akbar's Fort), Prayagraj",
+      "description": "Historic Mughal-era fortification on the Ganga riverbank in Prayagraj",
+      "category": "Heritage"
+    },
+    {
+      "name": "All Saints Cathedral (Patthar Girjaghar), Prayagraj",
+      "description": "Notable colonial-era Anglican cathedral in Prayagraj",
+      "category": "Heritage"
+    },
+    {
+      "name": "Khusro Bagh, Prayagraj",
+      "description": "Historic Mughal garden with sandstone tombs of Mughal prince Khusrau Mirza and family",
+      "category": "Heritage"
+    },
+    {
+      "name": "Anand Bhawan, Prayagraj",
+      "description": "Ancestral residence of the Nehru family, now a museum of India's freedom struggle",
+      "category": "Heritage"
+    },
+    {
+      "name": "Swaraj Bhawan, Prayagraj",
+      "description": "Historic residence associated with India's independence movement in Prayagraj",
+      "category": "Heritage"
+    },
+    {
+      "name": "Prayagraj Museum",
+      "description": "Museum with archaeological and historical collections in Prayagraj",
+      "category": "Museum"
+    },
+    {
+      "name": "Jawahar Planetarium, Prayagraj",
+      "description": "Astronomy education center in Prayagraj",
+      "category": "Museum"
+    },
+    {
+      "name": "Chandra Shekhar Azad Park, Prayagraj",
+      "description": "Historic park in Prayagraj named after freedom fighter Chandra Shekhar Azad",
+      "category": "Nature"
+    },
+    {
+      "name": "Shringverpur, Prayagraj",
+      "description": "Ancient site near Prayagraj associated with the Ramayana",
+      "category": "Heritage"
+    },
+    {
+      "name": "Chitrakoot",
+      "description": "Sacred town on the Ramayana circuit where Lord Ram spent years in exile, on the banks of the Mandakini",
+      "category": "Religious"
+    },
+    {
+      "name": "Mahaparinirvana Temple, Kushinagar",
+      "description": "Temple housing a huge reclining Buddha statue excavated in 1876, where Buddha attained Mahaparinirvana",
+      "category": "Religious"
+    },
+    {
+      "name": "Nirvana Stupa, Kushinagar",
+      "description": "Significant Buddhist stupa at the Mahaparinirvana site in Kushinagar",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ramabhar Stupa, Kushinagar",
+      "description": "Buddhist stupa marking the cremation site of Lord Buddha in Kushinagar",
+      "category": "Heritage"
+    },
+    {
+      "name": "Mathakuar Shrine, Kushinagar",
+      "description": "Key religious structure at the Kushinagar Buddhist pilgrimage complex",
+      "category": "Religious"
+    },
+    {
+      "name": "Watt Thai Temple, Kushinagar",
+      "description": "Thai Buddhist temple in Kushinagar",
+      "category": "Religious"
+    },
+    {
+      "name": "Chinese Temple, Kushinagar",
+      "description": "Chinese Buddhist temple in Kushinagar",
+      "category": "Religious"
+    },
+    {
+      "name": "Japanese Temple, Kushinagar",
+      "description": "Japanese Buddhist temple in Kushinagar",
+      "category": "Religious"
+    },
+    {
+      "name": "Buddha Museum, Kushinagar",
+      "description": "Museum housing Buddhist artifacts and information in Kushinagar",
+      "category": "Museum"
+    },
+    {
+      "name": "Saheth-Maheth, Shravasti",
+      "description": "Archaeological remains of the ancient capital of the Kosala kingdom on the banks of the Rapti River",
+      "category": "Heritage"
+    },
+    {
+      "name": "World Peace Bell, Shravasti",
+      "description": "Peace monument in Shravasti established with Japanese help, conveying messages of humanity",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ancient Bodhi Tree, Shravasti",
+      "description": "Sacred ancient tree amid the Buddhist ruins at Shravasti",
+      "category": "Religious"
+    },
+    {
+      "name": "Piprahwa (Kapilvastu)",
+      "description": "Archaeological site with the Main Stupa, ancient capital of the Shakya Clan and home of Prince Siddhartha",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ganvaria Archaeological Site, Kapilvastu",
+      "description": "Ancient excavation area showcasing historical artifacts from the Shakya period",
+      "category": "Heritage"
+    },
+    {
+      "name": "Salargarh Archaeological Site, Kapilvastu",
+      "description": "Important archaeological location within the Kapilvastu region",
+      "category": "Heritage"
+    },
+    {
+      "name": "Jhansi Fort",
+      "description": "Majestic hilltop fort in Jhansi with a light and sound show about Rani Laxmibai",
+      "category": "Heritage"
+    },
+    {
+      "name": "Rani Mahal, Jhansi",
+      "description": "Palace in Jhansi associated with the legendary Queen Rani Laxmibai",
+      "category": "Heritage"
+    },
+    {
+      "name": "Gangadhar Rao Ki Chhatri, Jhansi",
+      "description": "Memorial cenotaph dedicated to Rani Laxmibai's husband in Jhansi",
+      "category": "Heritage"
+    },
+    {
+      "name": "Government Museum, Jhansi",
+      "description": "Museum housing artifacts and exhibits related to local history of Jhansi",
+      "category": "Museum"
+    },
+    {
+      "name": "Dashavatar Temple, Deogarh",
+      "description": "Magnificent 5th-century Gupta-period temple with intricate carvings in Deogarh",
+      "category": "Heritage"
+    },
+    {
+      "name": "Jain Temple Complex, Deogarh",
+      "description": "Multiple Jain temples displaying high-level craftsmanship in Deogarh",
+      "category": "Religious"
+    },
+    {
+      "name": "Varah Temple, Deogarh",
+      "description": "Ancient religious structure in Deogarh",
+      "category": "Heritage"
+    },
+    {
+      "name": "Deogarh Archaeological Museum",
+      "description": "Museum housing approximately 2,000 sculptures in Deogarh",
+      "category": "Museum"
+    },
+    {
+      "name": "Siddha-ki-Gufa, Deogarh",
+      "description": "6th-century rock-cut caves in Deogarh",
+      "category": "Heritage"
+    },
+    {
+      "name": "Naharghati, Deogarh",
+      "description": "Steep steps leading to the Betwa River offering a memorable natural experience",
+      "category": "Nature"
+    },
+    {
+      "name": "Dargah Ala Hazrat, Bareilly",
+      "description": "Important Islamic shrine of Imam Ahmed Raza Khan in Bareilly",
+      "category": "Religious"
+    },
+    {
+      "name": "ISKCON Temple, Bareilly",
+      "description": "Krishna devotional temple in Bareilly",
+      "category": "Religious"
+    },
+    {
+      "name": "Panchala Museum, Bareilly",
+      "description": "Museum with an excellent collection of artifacts and manuscripts on Bareilly University campus",
+      "category": "Museum"
+    },
+    {
+      "name": "Army Service Corps Museum, Bareilly",
+      "description": "Military museum in Bareilly Cantonment",
+      "category": "Museum"
+    },
+    {
+      "name": "Baba Augharh Nath Temple, Meerut",
+      "description": "Historic Shiva temple in Meerut Cantt where the spark of the 1857 Indian Rebellion began",
+      "category": "Religious"
+    },
+    {
+      "name": "Shahid Smarak and Freedom Struggle Museum, Meerut",
+      "description": "Memorial complex honoring 1857 independence martyrs with museum, paintings, and dioramas",
+      "category": "Museum"
+    },
+    {
+      "name": "Victoria Park, Meerut",
+      "description": "Historic site in Meerut where 875 soldiers were imprisoned, sparking the 1857 revolt",
+      "category": "Heritage"
+    },
+    {
+      "name": "Gandhi Bagh, Meerut",
+      "description": "Central garden in Meerut with musical fountain shows and historical infrastructure from Delhi's Red Fort",
+      "category": "Nature"
+    },
+    {
+      "name": "Shrine-Basilica of Our Lady of Graces, Sardhana",
+      "description": "Imposing Roman Catholic Church built 1809-1822 by Begum Farzana, raised to Basilica status in 1961",
+      "category": "Religious"
+    },
+    {
+      "name": "Naimisharanya",
+      "description": "Ancient sacred forest site, one of the most revered Hindu pilgrimage places in UP",
+      "category": "Religious"
+    },
+    {
+      "name": "Gorakhnath Temple, Gorakhpur",
+      "description": "Major Hindu temple in Gorakhpur dedicated to the Nath tradition",
+      "category": "Religious"
+    },
+    {
+      "name": "Dudhwa National Park",
+      "description": "Major national park in UP known for swamp deer, tigers, and rhinoceros conservation",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Katarniaghat Wildlife Sanctuary",
+      "description": "Wildlife sanctuary in UP known for gharials, tigers, and diverse birdlife",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Chambal Wildlife Sanctuary",
+      "description": "Wildlife sanctuary along the Chambal River known for gharials and river dolphins",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Sur Sarovar (Keetham) Bird Sanctuary",
+      "description": "Bird sanctuary near Agra around Keetham Lake",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Nawabganj Bird Sanctuary",
+      "description": "Bird sanctuary in Unnao district attracting migratory birds",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Chandra Prabha Wildlife Sanctuary",
+      "description": "Wildlife sanctuary in Chandauli district with diverse flora and fauna",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Suhelwa Wildlife Sanctuary",
+      "description": "Wildlife sanctuary along the Indo-Nepal border in Shravasti-Balrampur",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Pilibhit Tiger Reserve",
+      "description": "Tiger reserve in Pilibhit district, part of the Terai Arc Landscape",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Saharanpur",
+      "description": "City known for wood carving industry and botanical gardens",
+      "category": "City"
+    },
+    {
+      "name": "Bijnor",
+      "description": "District in western UP with historical and natural attractions",
+      "category": "City"
+    },
+    {
+      "name": "Gautam Buddha Nagar (Noida)",
+      "description": "Modern district in western UP near Delhi with urban attractions",
+      "category": "City"
+    },
+    {
+      "name": "Aligarh",
+      "description": "City known for Aligarh Muslim University and lock industry",
+      "category": "City"
+    },
+    {
+      "name": "Kanpur",
+      "description": "Major industrial city on the Ganges with colonial-era heritage sites",
+      "category": "City"
+    },
+    {
+      "name": "Gorakhpur",
+      "description": "City in eastern UP, gateway to Kushinagar and home of Gorakhnath Temple",
+      "category": "City"
+    },
+    {
+      "name": "Sultanpur",
+      "description": "District with historical and religious significance in central UP",
+      "category": "City"
+    },
+    {
+      "name": "Mirzapur",
+      "description": "District known for Vindhyachal temple and carpet weaving industry",
+      "category": "City"
+    },
+    {
+      "name": "Sonbhadra",
+      "description": "District with tribal heritage, waterfalls, and natural beauty in southern UP",
+      "category": "City"
+    },
+    {
+      "name": "Mahoba",
+      "description": "Historic Chandela dynasty town in Bundelkhand with ancient forts and temples",
+      "category": "Heritage"
+    },
+    {
+      "name": "Banda",
+      "description": "District in Bundelkhand region with natural and historical attractions",
+      "category": "City"
+    },
+    {
+      "name": "Hamirpur",
+      "description": "District in Bundelkhand with riverside ghats and temples",
+      "category": "City"
+    },
+    {
+      "name": "Pratapgarh",
+      "description": "District with religious significance and connection to historical events",
+      "category": "City"
+    },
+    {
+      "name": "Jaunpur",
+      "description": "Historic city known as the Shiraz of India with Sharqi-era architecture",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ghazipur",
+      "description": "District on the Ganges with Lord Cornwallis tomb and rose water industry",
+      "category": "City"
+    },
+    {
+      "name": "Ballia",
+      "description": "District known for its role in the 1942 Quit India movement",
+      "category": "City"
+    },
+    {
+      "name": "Firozabad",
+      "description": "City known as the glass bangle capital of India",
+      "category": "Culture"
+    },
+    {
+      "name": "Moradabad",
+      "description": "City known as Brass City of India for its brassware industry",
+      "category": "Culture"
+    },
+    {
+      "name": "Ghaziabad",
+      "description": "Major city in western UP near Delhi, gateway to the Doab region",
+      "category": "City"
+    },
+    {
+      "name": "Lakhimpur Kheri",
+      "description": "District near Dudhwa National Park with natural attractions and terai ecosystem",
+      "category": "City"
+    },
+    {
+      "name": "Bahraich",
+      "description": "District near Katarniaghat Wildlife Sanctuary with natural and religious sites",
+      "category": "City"
+    },
+    {
+      "name": "Shahjahanpur",
+      "description": "District with freedom struggle heritage, birthplace of Ram Prasad Bismil",
+      "category": "City"
+    },
+    {
+      "name": "Balrampur",
+      "description": "District with Buddhist heritage sites and proximity to Shravasti",
+      "category": "City"
+    },
+    {
+      "name": "Kaushambi",
+      "description": "Ancient city with Buddhist archaeological remains near Prayagraj",
+      "category": "Heritage"
+    },
+    {
+      "name": "Fatehpur",
+      "description": "District between Kanpur and Prayagraj with historical significance",
+      "category": "City"
+    },
+    {
+      "name": "Etawah",
+      "description": "District known for Lion Safari and Chambal riverine ecosystem",
+      "category": "City"
+    },
+    {
+      "name": "Farrukhabad",
+      "description": "District on the Ganges known for perfume (attar) and potato production",
+      "category": "City"
+    },
+    {
+      "name": "Kannauj",
+      "description": "Ancient capital city known as the perfume capital of India for its attar industry",
+      "category": "Culture"
+    },
+    {
+      "name": "Mainpuri",
+      "description": "District with cultural heritage in the Doab region",
+      "category": "City"
+    },
+    {
+      "name": "Budaun",
+      "description": "District with historical mosques and Mughal-era architecture",
+      "category": "City"
+    },
+    {
+      "name": "Rampur",
+      "description": "City known for Rampur Raza Library with rare manuscripts and Mughal miniature paintings",
+      "category": "Culture"
+    },
+    {
+      "name": "Unnao",
+      "description": "District between Lucknow and Kanpur with Nawabganj Bird Sanctuary",
+      "category": "City"
+    },
+    {
+      "name": "Sitapur",
+      "description": "District named after goddess Sita with religious and historical sites",
+      "category": "City"
+    },
+    {
+      "name": "Hardoi",
+      "description": "District with ancient temples and historical significance",
+      "category": "City"
+    },
+    {
+      "name": "Barabanki",
+      "description": "District near Lucknow with historical and religious sites",
+      "category": "City"
+    },
+    {
+      "name": "Gonda",
+      "description": "District in eastern UP with temples and natural attractions",
+      "category": "City"
+    },
+    {
+      "name": "Basti",
+      "description": "District in eastern UP with historical significance",
+      "category": "City"
+    },
+    {
+      "name": "Deoria",
+      "description": "District in eastern UP near Kushinagar",
+      "category": "City"
+    },
+    {
+      "name": "Azamgarh",
+      "description": "District known for its literary and cultural heritage",
+      "category": "City"
+    },
+    {
+      "name": "Mau",
+      "description": "District known for handloom sarees and textile industry",
+      "category": "Culture"
+    },
+    {
+      "name": "Ambedkar Nagar",
+      "description": "District in eastern UP with cultural and religious sites",
+      "category": "City"
+    },
+    {
+      "name": "Maharajganj",
+      "description": "District on the Indo-Nepal border in eastern UP",
+      "category": "City"
+    },
+    {
+      "name": "Siddharth Nagar",
+      "description": "District with Buddhist heritage including Kapilvastu remains",
+      "category": "City"
+    },
+    {
+      "name": "Sant Kabir Nagar",
+      "description": "District named after saint-poet Kabir with religious significance",
+      "category": "City"
+    },
+    {
+      "name": "Chandauli",
+      "description": "District near Varanasi with Chandra Prabha Wildlife Sanctuary",
+      "category": "City"
+    },
+    {
+      "name": "Amethi",
+      "description": "District with historical and political significance",
+      "category": "City"
+    },
+    {
+      "name": "Rae Bareli",
+      "description": "District with historical monuments and freedom struggle connections",
+      "category": "City"
+    },
+    {
+      "name": "Muzaffarnagar",
+      "description": "District in western UP known for sugarcane and jaggery industry",
+      "category": "City"
+    },
+    {
+      "name": "Sambhal",
+      "description": "District with historical mosques and archaeological sites",
+      "category": "City"
+    },
+    {
+      "name": "Hapur",
+      "description": "District in western UP with paper industry heritage",
+      "category": "City"
+    },
+    {
+      "name": "Shamli",
+      "description": "District in western UP",
+      "category": "City"
+    },
+    {
+      "name": "Kasganj",
+      "description": "District with cultural heritage in the Doab region",
+      "category": "City"
+    },
+    {
+      "name": "Hathras",
+      "description": "District with temples and cultural attractions",
+      "category": "City"
+    },
+    {
+      "name": "Etah",
+      "description": "District in the Doab region with historical sites",
+      "category": "City"
+    },
+    {
+      "name": "Auraiya",
+      "description": "District on the banks of the Yamuna",
+      "category": "City"
+    },
+    {
+      "name": "Jalaun",
+      "description": "District in Bundelkhand with Kalpi fort and historical sites",
+      "category": "City"
+    },
+    {
+      "name": "Pilibhit",
+      "description": "District in the Terai region, home to the Pilibhit Tiger Reserve",
+      "category": "City"
+    },
+    {
+      "name": "Baghpat",
+      "description": "District near Delhi with Mahabharata-era heritage",
+      "category": "City"
+    },
+    {
+      "name": "Bulandshahr",
+      "description": "District with ancient heritage dating to the Mahabharata era",
+      "category": "City"
+    },
+    {
+      "name": "Meerut",
+      "description": "Historic city where the 1857 Indian Revolt began, with colonial and ancient heritage",
+      "category": "City"
+    },
+    {
+      "name": "Sardhana",
+      "description": "18th-century town near Meerut known for the Basilica of Our Lady of Graces",
+      "category": "Heritage"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "source": "sikkim.gov.in",
+  "scrapedAt": "2026-09-26",
+  "note": "Sikkim already has 29 cards in the app. Adding 2 more from underrepresented areas.",
+  "existingCards": 29,
+  "suggestedNewDestinations": [
+    { "name": "Pelling", "description": "Gateway to Kanchenjunga, Pemayangtse Monastery, Rabdentse ruins, Skywalk", "category": "Hill Town" },
+    { "name": "Zuluk", "description": "Old Silk Route viewpoint, 32 hairpin turns, Thambi View Point", "category": "Off-beat" }
+  ]
+}

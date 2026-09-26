@@ -1,0 +1,773 @@
+{
+  "source": "wbtourism.gov.in",
+  "scrapedAt": "2026-09-26",
+  "destinations": [
+    {
+      "name": "Kalimpong",
+      "description": "A hilltop town located at the east of river Teesta, situated at an altitude of 1,200 mtrs, some 50 kms to the east of Darjeeling. Because of its location at a relatively lower altitude, the weather is milder and pleasant throughout the year. An ideal location for tourists looking for a comfortable stay with a picturesque view of the Kanchenjunga and other Himalayan snow peaks.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Sundarbans",
+      "description": "One of the largest mangrove ecosystems globally. The delta is spread over India and Bangladesh with an area of approximately 10,000 sq kms and is the largest halophytic mangrove forest in the world. It is a delta of the two great Indian rivers - The Ganga and The Brahmaputra.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Digha",
+      "description": "A popular seaside resort town in Purba Medinipur district of West Bengal, known for its wide sandy beaches and gentle waves.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Darjeeling",
+      "description": "Nestled in the Himalayan range in Northern Bengal, popularly known as the 'Queen of Hills', esteemed for its scenic beauty, snow peaks, vibrant green hills, views of green tea bushes and quaint township. The district hosts people from across the world and has various kinds of stays.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Dooars",
+      "description": "The foothills of the eastern Himalayas in North-East India around Bhutan. Located in northeastern part of West Bengal along the foothills of Eastern Himalayas, considered the gateway to Bhutan from India. One of the very few places left in the country with rich biodiversity.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Santiniketan",
+      "description": "A small town near Bolpur in the Birbhum district, about 212 kms north of Kolkata. In 1862, Maharshi Debendranath Tagore came across the landscape with red soil and lush greenery. Home to Visva-Bharati University founded by Rabindranath Tagore.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Purulia",
+      "description": "A district in West Bengal known for its tribal culture, Chhau dance, and natural landscapes including Ajodhya Hills.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Kolkata",
+      "description": "Known as the 'City of Joy', located on the banks of the Hooghly and one of the biggest cities in India. The city has a rich history and was the capital of India till 1912. A vibrant and diverse city with rich history, culture, and cuisine offering a range of attractions.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Bishnupur",
+      "description": "A famous municipality in the Bankura District, located about 132 km from Kolkata. Famous for its terracotta temples and Baluchari sarees. The town has a glorious past reflected in its rich architecture, music, and handicrafts, prospering in the 17th century under the Malla kings.",
+      "category": "Top Destination"
+    },
+    {
+      "name": "Adina Deer Park",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Ajodhya Hills",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Armenian Church",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Armenian Ghat",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Babughat",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Bakkhali",
+      "description": "",
+      "category": "Coastal"
+    },
+    {
+      "name": "Balaram Mandir",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Bandel Church",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Bankura",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Bardhaman",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Belur Math",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Bethuadahari",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Birbhum",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Birla Mandir",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Bolla Kali Temple",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Buxa Tiger Reserve",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Chamurchi Eco Park",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Chandannagar",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Chapramari Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Chatakpur",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Chilapata Forest",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Chinsurah",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Chuikhim",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Cooch Behar",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Cooch Behar Palace",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Dakshineswar",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Damdim Tea Residency",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Duarsini",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Eco Park New Town, Kolkata",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Furfura Sharif",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Garh Panchakot",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Ghoom Monastery",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Ging Tea House",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Glenburn Tea Estate",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Goomtee Tea Estate",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Gorumara National Park",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Hooghly",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "House of Gokul Mitra",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "House of Swami Vivekananda",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Howrah",
+      "description": "",
+      "category": "Weekend Gateways"
+    },
+    {
+      "name": "ISKCON Kolkata",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "ISKCON Mayapur",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Imambara",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Indian Museum",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Itachuna Rajbari",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Jagannath Ghat",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Jaldapara National Park",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Jhargram",
+      "description": "",
+      "category": "Weekend Gateways"
+    },
+    {
+      "name": "Jor Bangla Temple, Bishnupur",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Jorasanko Thakurbari",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Jorpokhri Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Kalighat Temple",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Kalimpong - Teesta Bazar",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Kapil Muni Ashram, Gangasagar",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Krishnanagar",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Kumartuli",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Kurseong",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Lava",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Lepchajagat",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Lolegaon",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Lothian Island Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Mahananda Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Makaibari Tea Estate",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Malda",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Mandarmani",
+      "description": "",
+      "category": "Coastal"
+    },
+    {
+      "name": "Marble Palace",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Millennium Park",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Mirik",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Motijheel Park",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Mukutmanipur Dam",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Murshidabad",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Murshidabad Jain Temple",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Murshidabad Rajbari/Choto Rajbari",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Murti Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Nadia",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Nakhoda Masjid",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Neora Valley National Park",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Outram Ghat",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Pareswanath Temple Digambar",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Paschim Medinipur",
+      "description": "",
+      "category": "Historical Places"
+    },
+    {
+      "name": "Paschim and Purba Medinipur",
+      "description": "",
+      "category": "Cultural Tourism"
+    },
+    {
+      "name": "Phalut",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Princep Ghat",
+      "description": "",
+      "category": "River and Cruise Tourism"
+    },
+    {
+      "name": "Purulia Jain Temple",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Raiganj Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Rajpur Tea Gardens",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Rasamancha, Bishnupur",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Rishop",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "St. Paul's Cathedral",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Sandakphu",
+      "description": "",
+      "category": "The Mountains"
+    },
+    {
+      "name": "Sea Beaches",
+      "description": "",
+      "category": "Adventure"
+    },
+    {
+      "name": "Senchal Wildlife Sanctuary",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Serampore",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Seth Banshidhar Jalan Smriti Mandir",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Shankarpur",
+      "description": "",
+      "category": "Coastal"
+    },
+    {
+      "name": "Sillery Gaon",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Singalila National Park",
+      "description": "",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Singtom Tea Estate",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Sourenee Tea Estate",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Sovabazar Rajbari",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "St. James' Church",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Tajpur",
+      "description": "",
+      "category": "Coastal"
+    },
+    {
+      "name": "Tarakeshwar",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "Tarapith",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "The Arya Tea Resort",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "The Bari Kothi Heritage Property",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "The Darjeeling Himalayan Railway",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "The Hazarduari Palace, Murshidabad",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "The Mayfair Tea Resort",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "The Mother House",
+      "description": "",
+      "category": "Religious Tourism"
+    },
+    {
+      "name": "The Rajbari Bawali",
+      "description": "",
+      "category": "Heritage Tourism"
+    },
+    {
+      "name": "Tinchuley Village",
+      "description": "",
+      "category": "Eco Tourism"
+    },
+    {
+      "name": "Tumsong Chiabari",
+      "description": "",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Udaipur",
+      "description": "",
+      "category": "Coastal"
+    },
+    {
+      "name": "Victoria Memorial",
+      "description": "",
+      "category": "Heritage Tourism"
+    }
+  ],
+  "tourismProperties": [
+    {
+      "name": "Aranya",
+      "location": "Jaldapara"
+    },
+    {
+      "name": "Balutot",
+      "location": "Bakkhali"
+    },
+    {
+      "name": "Bhorer Alo",
+      "location": "Gajoldoba"
+    },
+    {
+      "name": "Bishnupur",
+      "location": "Bankura"
+    },
+    {
+      "name": "Darjeeling",
+      "location": "Darjeeling"
+    },
+    {
+      "name": "Dighali-I",
+      "location": "Digha"
+    },
+    {
+      "name": "Dighali-II",
+      "location": "Digha"
+    },
+    {
+      "name": "Gangasagar",
+      "location": "Gangasagar"
+    },
+    {
+      "name": "Jhargram",
+      "location": "Jhargram"
+    },
+    {
+      "name": "Mangaldhara",
+      "location": "Barrackpore"
+    },
+    {
+      "name": "Matla",
+      "location": "Sundarbans"
+    },
+    {
+      "name": "Meghbalika",
+      "location": "Darjeeling"
+    },
+    {
+      "name": "Morgan",
+      "location": "Kalimpong"
+    },
+    {
+      "name": "Motijheel Park",
+      "location": "Murshidabad"
+    },
+    {
+      "name": "Muktadhara",
+      "location": "Maithon"
+    },
+    {
+      "name": "Moorti",
+      "location": "Dhupjhora"
+    },
+    {
+      "name": "Rangabitan",
+      "location": "Bolpur"
+    },
+    {
+      "name": "Shantobitan",
+      "location": "Bolpur"
+    },
+    {
+      "name": "Tilottama",
+      "location": "Gorumara"
+    },
+    {
+      "name": "Alo",
+      "location": "Chandannagar"
+    },
+    {
+      "name": "Baroghutu",
+      "location": "Bankura"
+    },
+    {
+      "name": "Batabari",
+      "location": "Gorumara"
+    },
+    {
+      "name": "Sagorika",
+      "location": "South 24 Parganas"
+    },
+    {
+      "name": "Mainak",
+      "location": "Darjeeling"
+    },
+    {
+      "name": "Shoilpik",
+      "location": "Durgapur"
+    },
+    {
+      "name": "Tarabitan",
+      "location": "Rampurhat"
+    },
+    {
+      "name": "Murguma",
+      "location": "Purulia"
+    },
+    {
+      "name": "Sabujdweep",
+      "location": "Balagarh"
+    },
+    {
+      "name": "Nataraj",
+      "location": "Tarakeswar"
+    },
+    {
+      "name": "Amrapali",
+      "location": "Malda"
+    }
+  ],
+  "districts": [
+    "Alipurduar",
+    "Bankura",
+    "Birbhum",
+    "Purba Bardhaman",
+    "Paschim Bardhaman",
+    "Cooch Behar",
+    "Dakshin Dinajpur",
+    "Darjeeling",
+    "Hooghly",
+    "Howrah",
+    "Jalpaiguri",
+    "Jhargram",
+    "Kalimpong",
+    "Kolkata",
+    "Malda",
+    "Murshidabad",
+    "Nadia",
+    "North 24 Parganas",
+    "Paschim Medinipur",
+    "Purba Medinipur",
+    "Purulia",
+    "South 24 Parganas",
+    "Uttar Dinajpur"
+  ]
+}

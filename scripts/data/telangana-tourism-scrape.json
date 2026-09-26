@@ -1,0 +1,462 @@
+{
+  "source": "telanganatourism.gov.in (via Wikipedia, trawell.in, holidify.com, fabhotels.com)",
+  "scrapedAt": "2026-09-26",
+  "notes": "Official Telangana tourism site (telanganatourism.gov.in) blocked direct access; tgtdc.in redirected to Tripura. Data compiled from Wikipedia Tourism in Telangana article, trawell.in (82 destinations), holidify.com (30 destinations), and fabhotels.com (46 destinations).",
+  "destinations": [
+    {
+      "name": "Hyderabad",
+      "description": "State capital, placed 2nd in Traveler Magazine's best places to see in the world in 2015. Home to Charminar, Golconda Fort, Ramoji Film City, Hussain Sagar Lake, and Irani Cafes.",
+      "category": "City"
+    },
+    {
+      "name": "Charminar",
+      "description": "Built in 1591 CE, iconic monument and mosque with four ornate minarets. Global icon of Hyderabad, tallest structure in the city for nearly 400 years.",
+      "category": "Monument"
+    },
+    {
+      "name": "Golconda Fort",
+      "description": "One of the most magnificent fortress complexes in India. Famous for housing the Koh-i-Noor and Hope diamonds.",
+      "category": "Fort"
+    },
+    {
+      "name": "Qutb Shahi Tombs",
+      "description": "Tombs dedicated to rulers of the Qutub Shahi dynasty near Golconda Fort. Example of Deccan architecture with large minarets and huge domes.",
+      "category": "Monument"
+    },
+    {
+      "name": "Chowmahalla Palace",
+      "description": "18th-century palace complex with UNESCO recognition, seat of the Asaf Jahi dynasty.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Taj Falaknuma Palace",
+      "description": "Built by an Englishman, features a ceiling replica of Windsor Castle. Now a luxury heritage hotel.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Ramoji Film City",
+      "description": "Largest integrated film city in the world with theme parks, gardens, and hotels.",
+      "category": "Entertainment"
+    },
+    {
+      "name": "Salarjung Museum",
+      "description": "One of India's largest museums with rare art collections from around the world.",
+      "category": "Museum"
+    },
+    {
+      "name": "Birla Mandir, Hyderabad",
+      "description": "Built on a 280-feet high hillock called Naubath Pahad on 13 acres in Hyderabad.",
+      "category": "Temple"
+    },
+    {
+      "name": "Mecca Masjid",
+      "description": "One of the oldest and largest mosques in India, near Charminar. Bricks made from soil brought from Mecca.",
+      "category": "Mosque"
+    },
+    {
+      "name": "Nehru Zoological Park",
+      "description": "Houses over 1500 species and offers wildlife safaris.",
+      "category": "Wildlife"
+    },
+    {
+      "name": "KBR National Park",
+      "description": "World-famous park in Jubilee Hills with diverse flora and fauna.",
+      "category": "Nature"
+    },
+    {
+      "name": "Mrugavani National Park",
+      "description": "Popular weekend destination near Chilkur in Hyderabad.",
+      "category": "Nature"
+    },
+    {
+      "name": "Paigah Tombs",
+      "description": "Recently discovered series of mausoleums with unique geometrical sculptures at Chandrayanagutta.",
+      "category": "Monument"
+    },
+    {
+      "name": "Spanish Mosque (Paigah Mosque)",
+      "description": "Early 20th-century mosque in Begumpet with Andalusi/Spanish architecture, built by Paigah Nawab in 1906.",
+      "category": "Mosque"
+    },
+    {
+      "name": "Wonderla Amusement Park",
+      "description": "One of the biggest amusement parks in Hyderabad with many dry and water rides.",
+      "category": "Entertainment"
+    },
+    {
+      "name": "Shamirpet Lake",
+      "description": "Artificial lake with deer sanctuary and boating facilities near Secunderabad.",
+      "category": "Lake"
+    },
+    {
+      "name": "Hussain Sagar Lake",
+      "description": "Iconic heart-shaped lake in Hyderabad with a large Buddha statue in the center.",
+      "category": "Lake"
+    },
+    {
+      "name": "Warangal",
+      "description": "Historical city known for 13th-century Warangal Fort built by the Kakatiya dynasty, Pakhal Lake, and Thousand Pillar Temple.",
+      "category": "City"
+    },
+    {
+      "name": "Kakatiya Kala Thoranam",
+      "description": "Historical arch and symbol of the Kakatiya Dynasty in Warangal, built around 1200 CE. Forms the main symbol in the Emblem of Telangana.",
+      "category": "Monument"
+    },
+    {
+      "name": "Thousand Pillar Temple",
+      "description": "One of the oldest temples of South India built by King Rudra Deva in 1163 AD. Specimen of Kakatiyan architecture with 1000 pillars.",
+      "category": "Temple"
+    },
+    {
+      "name": "Ramappa Temple",
+      "description": "UNESCO World Heritage Site built in 1213 CE by General Recherla Rudra during the Kakatiya period. Praised as 'Brightest Star in Galaxy of Temples'.",
+      "category": "Temple"
+    },
+    {
+      "name": "Laknavaram Lake",
+      "description": "Man-made lake near Govindaraopet, 80 km from Warangal, spread over 1000 acres.",
+      "category": "Lake"
+    },
+    {
+      "name": "Secunderabad",
+      "description": "Twin city of Hyderabad with Clock Tower and Shamirpet Lake.",
+      "category": "City"
+    },
+    {
+      "name": "Nagarjuna Sagar",
+      "description": "Home to one of the world's largest masonry dams (407 feet tall) on Krishna River with wildlife sanctuary and Ethipothala Waterfalls.",
+      "category": "Dam"
+    },
+    {
+      "name": "Yadagirigutta",
+      "description": "Temple town with Lakshmi Narasimha Swamy Temple (Pancha Narasimha Kshetram) in Nalgonda District.",
+      "category": "Temple"
+    },
+    {
+      "name": "Basara",
+      "description": "Scenic town on Godavari River with rare Gnana Saraswati Temple (Goddess of Knowledge) in Adilabad District.",
+      "category": "Temple"
+    },
+    {
+      "name": "Bhadrachalam",
+      "description": "Temple town with Sri Sitaramachandra Swamy Temple on the banks of River Godavari. Famous for Sri Rama Navami celebrations.",
+      "category": "Temple"
+    },
+    {
+      "name": "Vemulawada",
+      "description": "Known as 'Dakshina Kasi' (Southern Banaras). Features Sri Raja Rajeshwara Temple built by Chalukya Kings (AD 750-975).",
+      "category": "Temple"
+    },
+    {
+      "name": "Alampur",
+      "description": "Surrounded by Nallamala Hills with 7th-century Navabrahma Temples.",
+      "category": "Temple"
+    },
+    {
+      "name": "Kulpakji (Kolanupaka)",
+      "description": "2,000-year-old Jain Temple in Nalgonda district. One of the oldest temples in South India with a 130 cm jade statue of Lord Mahaveer.",
+      "category": "Temple"
+    },
+    {
+      "name": "Chilkur Balaji Temple",
+      "description": "Known as 'VISA Temple' located on Osman Sagar Lake banks near Hyderabad.",
+      "category": "Temple"
+    },
+    {
+      "name": "Kondagattu Anjaneya Swamy Temple",
+      "description": "Famous Hanuman temple in Karimnagar district.",
+      "category": "Temple"
+    },
+    {
+      "name": "Keesara Gutta",
+      "description": "Temple complex near Hyderabad.",
+      "category": "Temple"
+    },
+    {
+      "name": "Sri Rama Chandra Swamy Temple, Ammapalli",
+      "description": "700-year-old temple near Hyderabad, also used for film shoots.",
+      "category": "Temple"
+    },
+    {
+      "name": "Edupayala Vana Durga Bhavani Temple",
+      "description": "Temple dedicated to Goddess Durga in Medak district.",
+      "category": "Temple"
+    },
+    {
+      "name": "Wargal Saraswati Temple",
+      "description": "Hilltop temple dedicated to Goddess Saraswati with unique shadow effect.",
+      "category": "Temple"
+    },
+    {
+      "name": "Kaleshwaram",
+      "description": "Temple town at the confluence of rivers Godavari and Pranhita.",
+      "category": "Temple"
+    },
+    {
+      "name": "Dharmapuri",
+      "description": "Temple town known for Sri Lakshmi Narasimha Swamy Temple on the banks of the Godavari.",
+      "category": "Temple"
+    },
+    {
+      "name": "Koti Lingala",
+      "description": "Hindu pilgrimage site on Godavari river banks in Jagtial district.",
+      "category": "Temple"
+    },
+    {
+      "name": "Chaya Someshwara Temple, Panagal",
+      "description": "11th-century temple with unique shadow phenomenon.",
+      "category": "Temple"
+    },
+    {
+      "name": "Sri Lalitha Someswara Swamy Temple, Somasila",
+      "description": "7th-century temple complex with 15 temples.",
+      "category": "Temple"
+    },
+    {
+      "name": "Kuchadri Venkateshwara Swamy Temple",
+      "description": "Ancient Hindu temple in Kuchanpally, Medak District.",
+      "category": "Temple"
+    },
+    {
+      "name": "Nelakondapalli",
+      "description": "Famous for Bhakta Ramadasu's birthplace and South India's biggest Buddha Stupa from 3rd century BC.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Medak Cathedral (Church of South India)",
+      "description": "Largest church in Telangana, consecrated 1924. Gothic Revival with six-colored mosaic tiles imported from Britain. Largest diocese in Asia.",
+      "category": "Church"
+    },
+    {
+      "name": "Medaram",
+      "description": "Small village known for vibrant Sammakka Saralamma Jatara festival, one of the largest tribal gatherings in the world.",
+      "category": "Cultural"
+    },
+    {
+      "name": "Badapahad Dargah (Peddagutta)",
+      "description": "One of the oldest Muslim Pilgrim Centers, built in memory of saint Syed Sadullah Hussain in Nizamabad District.",
+      "category": "Dargah"
+    },
+    {
+      "name": "Bhongir Fort",
+      "description": "10th-century fort on isolated monolithic rock, 800 meters altitude. Unique egg-shaped construction built by Western Chalukya ruler. Associated with Queen Rudramadevi.",
+      "category": "Fort"
+    },
+    {
+      "name": "Devarakonda Fort",
+      "description": "13th-14th century fort with temples to Rama and Shiva.",
+      "category": "Fort"
+    },
+    {
+      "name": "Rachakonda Fort",
+      "description": "1360 AD Kakatiya dynasty fort offering 360-degree views with Dasavatara sculptures.",
+      "category": "Fort"
+    },
+    {
+      "name": "Medak Fort",
+      "description": "12th-century fort 96 km from Hyderabad, mostly in ruins but architecturally significant.",
+      "category": "Fort"
+    },
+    {
+      "name": "Gadwal Fort",
+      "description": "17th-century fort with 32-feet cannon and three temples.",
+      "category": "Fort"
+    },
+    {
+      "name": "Koilkonda Fort",
+      "description": "16th-century fort with seven gates surrounded by forest streams.",
+      "category": "Fort"
+    },
+    {
+      "name": "Domakonda Fort",
+      "description": "18th-century fort with high arches and glass-work palace in Nizamabad district.",
+      "category": "Fort"
+    },
+    {
+      "name": "Nagunur Fort and Temples",
+      "description": "7th-century site ruled by Chalukyas and Kakatiyas in Karimnagar district.",
+      "category": "Fort"
+    },
+    {
+      "name": "Elgandal Fort",
+      "description": "16th-century stronghold in Karimnagar with Charminar replica and oscillating minaret.",
+      "category": "Fort"
+    },
+    {
+      "name": "Ramagiri Fort",
+      "description": "Stone fort atop hills with cannons and medicinal plants in Karimnagar district.",
+      "category": "Fort"
+    },
+    {
+      "name": "Molangur Fort",
+      "description": "Historical fort in Nalgonda district.",
+      "category": "Fort"
+    },
+    {
+      "name": "Jagtial Fort",
+      "description": "European-style castle with four inbuilt ponds and cannons.",
+      "category": "Fort"
+    },
+    {
+      "name": "Chandraghad Fort",
+      "description": "Historical fort in Karimnagar district.",
+      "category": "Fort"
+    },
+    {
+      "name": "Khilla Ghanpur (Ghanpur Fort)",
+      "description": "Historical fort near Warangal.",
+      "category": "Fort"
+    },
+    {
+      "name": "Kuntala Waterfall",
+      "description": "Highest waterfall in Telangana at 45 metres (148 ft) in Adilabad district, in the Sahyadri Mountains.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Bogatha Waterfall",
+      "description": "Called 'Niagara of Telangana', second-largest waterfall in the state, located in Mulugu district, 120 km from Bhadrachalam.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Mallela Theertham",
+      "description": "150-feet charming waterfall in the dense Nallamala Forest, 173 km from Hyderabad.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Pochera Falls",
+      "description": "Waterfall on the Kadam River, 22 km from Kuntala Falls in Adilabad district.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Gayatri Waterfalls",
+      "description": "Cascading waterfall over River Kadem in Adilabad district.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Ethipothala Waterfalls",
+      "description": "Waterfalls near Nagarjuna Sagar on the Krishna River.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Bheemuni Paadam Waterfalls",
+      "description": "Picturesque waterfall at Gudur in Warangal District, 200 km from Hyderabad.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Kanakai Waterfalls",
+      "description": "30-foot cascade in Girnur village with pool at base in Adilabad district.",
+      "category": "Waterfall"
+    },
+    {
+      "name": "Ananthagiri Hills",
+      "description": "Wildlife sanctuary and hill station 90 km from Hyderabad with Nagasamudram Lake.",
+      "category": "Nature"
+    },
+    {
+      "name": "Papikondalu",
+      "description": "Mountain range along River Godavari with scenic hills and Gandi Pochamma Temple.",
+      "category": "Nature"
+    },
+    {
+      "name": "Amrabad Tiger Reserve",
+      "description": "One of India's largest tiger reserves spanning 2,611 sq km in Nallamala Hills.",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Eturnagaram Wildlife Sanctuary",
+      "description": "Wildlife sanctuary in Mulugu district with diverse flora and fauna.",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Kinnerasani Wildlife Sanctuary",
+      "description": "635 sq km sanctuary in Khammam district near Godavari River.",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Singur Dam",
+      "description": "Built on Manjira River, home to crocodiles and migratory birds.",
+      "category": "Dam"
+    },
+    {
+      "name": "Jurala Dam",
+      "description": "1045-feet tall hydroelectric project with deer park.",
+      "category": "Dam"
+    },
+    {
+      "name": "Koilsagar Dam",
+      "description": "Irrigation center with camping, rappelling, and fishing facilities.",
+      "category": "Dam"
+    },
+    {
+      "name": "Sriram Sagar Dam",
+      "description": "One of the largest water projects on Godavari River in Nizamabad district.",
+      "category": "Dam"
+    },
+    {
+      "name": "Nizam Sagar Dam",
+      "description": "Historic 1923 dam visited by Nehru and Gandhi, popular picnic spot.",
+      "category": "Dam"
+    },
+    {
+      "name": "Adilabad",
+      "description": "Land of waterfalls and one of the most scenic regions in Telangana with dense forest, beautiful valleys and several rivers. Includes Kawal Wildlife Sanctuary.",
+      "category": "City"
+    },
+    {
+      "name": "Karimnagar",
+      "description": "City 164 km from Hyderabad showcasing Telugu and Persian architecture.",
+      "category": "City"
+    },
+    {
+      "name": "Khammam",
+      "description": "Fourth-largest city with Narsimha Swami Temple, Khammam Fort, Lakaram Lake Park, and Kinnerasani Dam.",
+      "category": "City"
+    },
+    {
+      "name": "Nizamabad",
+      "description": "Third-largest city, 'City of Nizams', featuring 10th-century fort, Pocharam Wildlife Sanctuary, and Nizamsagar.",
+      "category": "City"
+    },
+    {
+      "name": "Nalgonda",
+      "description": "Historically rich city with Paleolithic Age evidence and cultural heritage.",
+      "category": "City"
+    },
+    {
+      "name": "Mahabubnagar",
+      "description": "Features Koilsagar Dam, Rajolibanda Dam, and 7th-century Jain Temple on western border.",
+      "category": "City"
+    },
+    {
+      "name": "Nirmal",
+      "description": "Famous for its traditional handicrafts and Nirmal paintings.",
+      "category": "Cultural"
+    },
+    {
+      "name": "Kollapur",
+      "description": "Late 19th-century riverside palace with Gothic architecture.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Dhulikatta",
+      "description": "Ancient Buddhist centre with archaeological significance.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Phanigiri",
+      "description": "Buddhist archaeological site with ancient stupas and monasteries.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Mudumal Megalithic Menhirs",
+      "description": "Megalithic menhir site in Narayanapet, Telangana.",
+      "category": "Heritage"
+    },
+    {
+      "name": "Somasila",
+      "description": "Temple town with 7th-century Lalitha Someswara Swamy Temple and eco-tourism project.",
+      "category": "Temple"
+    }
+  ]
+}

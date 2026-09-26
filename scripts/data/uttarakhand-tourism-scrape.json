@@ -1,0 +1,742 @@
+{
+  "source": "uttarakhandtourism.gov.in",
+  "scrapedAt": "2026-09-26",
+  "totalDestinations": 69,
+  "categories": [
+    "Hill Station",
+    "Spiritual/Religious",
+    "Wildlife & Nature",
+    "Adventure",
+    "District/Town",
+    "Museum"
+  ],
+  "districts": [
+    "Almora",
+    "Bageshwar",
+    "Chamoli",
+    "Champawat",
+    "Dehradun",
+    "Haridwar",
+    "Nainital",
+    "Pauri Garhwal",
+    "Pithoragarh",
+    "Rudraprayag",
+    "Tehri Garhwal",
+    "Udham Singh Nagar",
+    "Uttarkashi"
+  ],
+  "tourismCircuits": [
+    "Panch Kedar Circuit",
+    "Mahabharata Circuit",
+    "Panch Badri Circuit",
+    "Navgraha Circuit",
+    "Shaiv Circuit",
+    "Forts of Kumaon",
+    "Folk Gods of Uttarakhand",
+    "Shakti Trail",
+    "Winter Char Dham Circuit",
+    "Swami Vivekananda Trail",
+    "Jim Corbett Circuit",
+    "Lakes of Kumaon",
+    "The Shiva Trail"
+  ],
+  "experienceCategories": [
+    "Wildlife",
+    "Adventure",
+    "Wellness",
+    "Spirituality",
+    "Leisure"
+  ],
+  "destinations": [
+    {
+      "name": "Almora",
+      "slug": "almora",
+      "description": "A picturesque hill station surrounded by pine and oak forests The cultural capital of Kumaon region Panoramic views of the Himalayas Spectacular sunrises Has attracted many celebrities; M.S. Dhoni's ancestral village is nearby",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The best time to visit Almora is from March to May and mid-September to December.",
+      "latitude": 29.5892407,
+      "longitude": 79.646666,
+      "url": "https://uttarakhandtourism.gov.in/destination/almora"
+    },
+    {
+      "name": "Abbott Mount",
+      "slug": "abbott-mount",
+      "description": "A hidden gem in the Kali Kumaon region Has world's second-highest cricket pitch Breathtaking views of sunrises and sunsets Charming colonial heritage",
+      "category": "Hill Station",
+      "bestTimeToVisit": "This place can be visited throughout the year. For best views of snow-clad mountains October to June is the time to make a trip.",
+      "latitude": 29.4333333,
+      "longitude": 80.08333329999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/abbott-mount"
+    },
+    {
+      "name": "Auli",
+      "slug": "auli",
+      "description": "India's premier skiing destination Enjoy India’s longest cable ride over snowy slopes Offers spectacular views of Nanda Devi, the country's second-highest peak Year round holiday site with superb views of the Himalayas",
+      "category": "Adventure",
+      "bestTimeToVisit": "For skiing enthusiasts, January to March is the best time to visit. For nature lovers, October to March is the most appropriate time.",
+      "latitude": 30.5305181,
+      "longitude": 79.5684588,
+      "url": "https://uttarakhandtourism.gov.in/destination/auli"
+    },
+    {
+      "name": "Badrinath",
+      "slug": "badrinath",
+      "description": "A holy town; part of the Char Dham Yatra Scenic Himalayan vistas Natural wonders like hot springs Where history and mythology come alive",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "The ideal time to visit Badrinath Temple is from May to October. The temple is closed from October/ November, and is reopened around April.",
+      "latitude": 30.7433085,
+      "longitude": 79.49376339999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/badrinath"
+    },
+    {
+      "name": "Bageshwar",
+      "slug": "bageshwar",
+      "description": "An undiscovered temple town Exceptionally rich scenic delights Surrounded by lush grasslands Several high-altitude treks start here",
+      "category": "District/Town",
+      "bestTimeToVisit": "September to June is the best time to visit Bageshwar. In winter, the town is covered in snow.",
+      "latitude": 29.8403606,
+      "longitude": 79.769426,
+      "url": "https://uttarakhandtourism.gov.in/destination/bageshwar"
+    },
+    {
+      "name": "Baijnath",
+      "slug": "baijnath",
+      "description": "A pilgrimage site and sacred town Has several ancient temples Was capital of erstwhile Katyuri dynasty Wilderness of nature",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "The summer season (April-June) is the best time to visit Baijnath. But if you travel in winter (October-March) you can enjoy snowfall.",
+      "latitude": 32.0521085,
+      "longitude": 76.64928689999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/baijnath"
+    },
+    {
+      "name": "Barkot",
+      "slug": "barkot",
+      "description": "Majestic views of Banderpunch peak Major stopover for Gangotri and Yamunotri pilgrimages Hotspot of trekking",
+      "category": "Adventure",
+      "bestTimeToVisit": "The summer season (April-June) is the best time to visit Baijnath. But if you travel in winter (October-March) you can enjoy snowfall.",
+      "latitude": 30.8096653,
+      "longitude": 78.20916129999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/barkot"
+    },
+    {
+      "name": "Bhimtal",
+      "slug": "bhimtal",
+      "description": "Surrounded by dense forests of oak and pine, Bhimtal is an idyllic getaway Has several historical sites A large number of butterflies can be spotted here Offers unparalleled adventure activities",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "April to June and October to December are the best months to enjoy this beautiful town",
+      "latitude": 29.346082,
+      "longitude": 79.5519144,
+      "url": "https://uttarakhandtourism.gov.in/destination/bhimtal"
+    },
+    {
+      "name": "Bhowali",
+      "slug": "bhowali",
+      "description": "Serene hill-station Heart of the state's fruit basket Gateway to Kumaon region Pristine nature and scenic grandeur Home to Neem Karoli Baba's ashram, that has seen visitors like Apple founder Steve Jobs and Facebook CEO Mark Zuckerberg",
+      "category": "Hill Station",
+      "bestTimeToVisit": "April to June and September to December are considered to be the best months to visit Bhowali.",
+      "latitude": 29.3822764,
+      "longitude": 79.51959389999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/bhowali"
+    },
+    {
+      "name": "Binsar",
+      "slug": "binsar",
+      "description": "Scenic mountain hamlet and wildlife sanctuary Offers majestic views of Himalayan peaks Surrounded by ruby red rhododendrons and oak forests Home to a variety of animals, including leopards",
+      "category": "Hill Station",
+      "bestTimeToVisit": "March to June and October to December are the best months to enjoy the beauty of nature in Binsar.",
+      "latitude": 29.70537329999999,
+      "longitude": 79.7551806,
+      "url": "https://uttarakhandtourism.gov.in/destination/binsar"
+    },
+    {
+      "name": "Chakrata",
+      "slug": "chakrata",
+      "description": "A prime destination for skiing, mountain climbing and trekking Picturesque hill station located above the Yamuna valley Former summer retreat for British officials",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The best time to visit Chakrata is between April and June, and from September to November.",
+      "latitude": 30.7016208,
+      "longitude": 77.86959960000002,
+      "url": "https://uttarakhandtourism.gov.in/destination/chakrata"
+    },
+    {
+      "name": "Chamba",
+      "slug": "chamba",
+      "description": "Covered with lots of pine and deodar trees, Chamba offers you a never explored break. It is an excellent place to relax and enjoy and is just a drive away from the city blues. The snow-capped peaks of the Himalayas, the awe-inspiring views of the green gorges, and the enchanting valleys all around the river Bhagirathi will undoubtedly leave you spellbound, amidst rich apple orchards.",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The best time to visit Chamba is between March to June, and September to December.",
+      "latitude": 30.3454803,
+      "longitude": 78.394656,
+      "url": "https://uttarakhandtourism.gov.in/destination/chamba"
+    },
+    {
+      "name": "Chamoli",
+      "slug": "chamoli",
+      "description": "One of the most popular destinations in Uttarakhand. Chamoli is known as the abode of gods, courtesy the numerous site of religious shrines and temples here. Chamoli is a shopper’s delight.",
+      "category": "District/Town",
+      "bestTimeToVisit": "Chamoli can be visited at any time of the year; the best months to visit are between November and mid-March when the weather is pleasant.",
+      "latitude": 30.1235301,
+      "longitude": 78.6544122,
+      "url": "https://uttarakhandtourism.gov.in/destination/chamoli"
+    },
+    {
+      "name": "Champawat",
+      "slug": "champawat",
+      "description": "Heritage city, with history dating back to around 11th century Capital of erstwhile Chand dynasty Home to several temples dating back to the Chand dynasty Attracts devotees who throng to the popular Baleshwar Temple Jim Corbett's first first book, 'Man Eaters of Kumaon' is set in Champawat",
+      "category": "District/Town",
+      "bestTimeToVisit": "Champawat is pleasant year-round, except in monsoons. It&#039;s covered in snow in winter.",
+      "latitude": 29.3360974,
+      "longitude": 80.0910275,
+      "url": "https://uttarakhandtourism.gov.in/destination/champawat"
+    },
+    {
+      "name": "Chaukori",
+      "slug": "chaukori",
+      "description": "Majestic views of Panchachuli and Nanda Devi peaks Dotted with fruit orchards and tea gardens Surrounded by lush forests of deodar and rhododendron",
+      "category": "Hill Station",
+      "bestTimeToVisit": "March to June and November to September is the best time to visit Chaukori.",
+      "latitude": 29.8384526,
+      "longitude": 80.03323250000001,
+      "url": "https://uttarakhandtourism.gov.in/destination/chaukori"
+    },
+    {
+      "name": "Chopta",
+      "slug": "chopta",
+      "description": "Popular as mini-Switzerland Serene hill-station with lush valleys Haven for bird watching and camping Popular for trekking Surrounded by revered Shiva temples",
+      "category": "Hill Station",
+      "bestTimeToVisit": "Chopta is ideal for vacations all over the year but November to May are the best months to visit.",
+      "latitude": 30.3461908,
+      "longitude": 79.0485059,
+      "url": "https://uttarakhandtourism.gov.in/destination/chopta"
+    },
+    {
+      "name": "Corbett National Park",
+      "slug": "corbett-national-park",
+      "description": "Famous for having the highest number of tigers among Indian national parks. Covers thousands of kilometers of stunning landscape. Allows overnight stays in certain areas. Look-out for Royal Bengal tiger, Asiatic elephant, bear, a variety of deer, otters, other animals and over 650 species of domestic and migratory birds.",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "Corbett National Park is divided into zones where you can enjoy wildlife safari.",
+      "latitude": 29.5521551,
+      "longitude": 78.88321069999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/corbett-national-park"
+    },
+    {
+      "name": "Darma Valley",
+      "slug": "darma-valley",
+      "description": "Famous for the Darma Valley trek Attracts trekkers from across the world Enjoy local life in village home-stays Offers stunning views of the Panchachuli peaks",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "Darma Valley",
+      "latitude": 30.2509548,
+      "longitude": 80.5502073,
+      "url": "https://uttarakhandtourism.gov.in/destination/darma-valley"
+    },
+    {
+      "name": "Dehradun",
+      "slug": "dehradun",
+      "description": "One of the most popular holiday destinations of India Capital of Uttarakhand; gateway to several popular hill-stations Fascinating history from the times of King Ashoka ( 2,200 years back ) Breathtaking views of sunrise and sunset Home to world-renowned institutions such as Indian Military Academy, Wildlife Institute of India, Survey of India, and more",
+      "category": "District/Town",
+      "bestTimeToVisit": "Dehradun is pleasant throughout the year but is ideal from March to June and October to December. Summer temperature peaks at 36°C and the mercury dips to 5°C in winters.",
+      "latitude": 30.3164945,
+      "longitude": 78.03219179999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/dehradun"
+    },
+    {
+      "name": "Devalgarh",
+      "slug": "devalgarh",
+      "description": "Heritage destination with ancient monuments Capital of the erstwhile Garhwal kingdom Noted for a stunning temple complex Offers mesmeric views of sunsets and sunrises",
+      "category": "District/Town",
+      "bestTimeToVisit": "October to February is the best time to visit Devalgarh.",
+      "latitude": 30.220336,
+      "longitude": 78.8601094,
+      "url": "https://uttarakhandtourism.gov.in/destination/devalgarh"
+    },
+    {
+      "name": "Devprayag",
+      "slug": "devprayag",
+      "description": "Holy site, where the rivers Bhagirathi and Alaknanda merge to flow as Ganga Historical site with ancient temples Home to one of India's first astronomical observatories Popular pilgrimage destination Serene hill-station with beautiful landscape",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Devprayag is an all-time favourite destination among explorers. Summers are pleasant with ample amount of sunshine. The winters are quite cold and freezing. Monsoons are pleasant too.",
+      "latitude": 30.1453396,
+      "longitude": 78.5976362,
+      "url": "https://uttarakhandtourism.gov.in/destination/devprayag"
+    },
+    {
+      "name": "Dhanaulti",
+      "slug": "dhanaulti",
+      "description": "Panoramic views of the Himalayas Surrounded by dense forests Relaxing and laid-back atmosphere Good options for adventure activities All year-round destination Perfect weekend getaway",
+      "category": "Hill Station",
+      "bestTimeToVisit": "April to October are the best months to visit Dhanaulti.",
+      "latitude": 30.4049903,
+      "longitude": 78.2333743,
+      "url": "https://uttarakhandtourism.gov.in/destination/dhanaulti"
+    },
+    {
+      "name": "Dharchula",
+      "slug": "dharchula",
+      "description": "Quaint hill-station On route to Kailash Mansarovar Panoramic views of towering peaks Surrounded by lush green forests",
+      "category": "District/Town",
+      "bestTimeToVisit": "Summers are pleasant and the ideal time to visit is between March and June, and September and December.",
+      "latitude": 29.8473422,
+      "longitude": 80.5369058,
+      "url": "https://uttarakhandtourism.gov.in/destination/dharchula"
+    },
+    {
+      "name": "Gangotri",
+      "slug": "gangotri",
+      "description": "Sacred town dedicated to Goddess Ganga's temple One of most popular spiritual destinations in North India One of the four stops of Char Dham pilgrimage A natural paradise Start point of several high-altitude treks",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Gangotri becomes a bustling hub of devotees during the Char Dham Yatra season (May to October).",
+      "latitude": 30.9946945,
+      "longitude": 78.93984019999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/gangotri"
+    },
+    {
+      "name": "Gangotri National Park",
+      "slug": "gangotri-national-park",
+      "description": "Scenic landscape with wild natural beauty Gangotri, the glacial source of River Ganga, located here Popular among trekkers",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "To best enjoy the immaculate natural beauty of the Gangotri National Park is from April to October.",
+      "latitude": 30.9425671,
+      "longitude": 79.1548533,
+      "url": "https://uttarakhandtourism.gov.in/destination/gangotri-national-park"
+    },
+    {
+      "name": "Ghangaria",
+      "slug": "ghangaria",
+      "description": "Popular base for trekkers Breathtaking landscape Last human settlement on way to Valley of Flowers",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "October to February is the best time to visit Devalgarh.",
+      "latitude": 30.70136,
+      "longitude": 79.5933522,
+      "url": "https://uttarakhandtourism.gov.in/destination/ghangaria"
+    },
+    {
+      "name": "Gopeshwar",
+      "slug": "gopeshwar",
+      "description": "Serene town surrounded by majestic mountains Known for an ancient temple dedicated to Lord Shiva Headquarters of Chamoli district Upcoming and offbeat hill-station",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Summer months (April to June) are ideal as the weather is pleasant. However, if you enjoy the crisp cold and snowfall, you can visit during winter (October to March).",
+      "latitude": 30.4095258,
+      "longitude": 79.31979729999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/gopeshwar"
+    },
+    {
+      "name": "Govind National Park",
+      "slug": "govind-national-park",
+      "description": "An area of importance for snow leopard conservation A part of the high Western Himalayan highland Diverse varieties of flora and fauna",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "Between the months of April and June, and September through November.",
+      "latitude": 31.1424514,
+      "longitude": 78.3387066,
+      "url": "https://uttarakhandtourism.gov.in/destination/govind-national-park"
+    },
+    {
+      "name": "GuptKashi",
+      "slug": "guptkashi",
+      "description": "Gorgeous landscape Dotted with ancient temples Abundance of magnolia flower trees Nature walks",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Summer is the best time to visit Guptkashi.",
+      "latitude": 30.5229102,
+      "longitude": 79.0777138,
+      "url": "https://uttarakhandtourism.gov.in/destination/guptkashi"
+    },
+    {
+      "name": "Gwaldam",
+      "slug": "gwaldam",
+      "description": "Offbeat hill-station Base camp of Roop Kund trek Gorgeous views of Nanda Devi peak Pristine natural beauty",
+      "category": "Hill Station",
+      "bestTimeToVisit": "Gwaldam is pleasant throughout the year.",
+      "latitude": 30.0061364,
+      "longitude": 79.56877279999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/gwaldam"
+    },
+    {
+      "name": "Haridwar",
+      "slug": "haridwar",
+      "description": "Ancient temple city on the banks of River Ganga One of the most important Hindu pilgrimages Site for Kumbh Mela Gateway to the holy Char Dham circuit of Uttarakhand",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "All season",
+      "latitude": 29.9456906,
+      "longitude": 78.16424780000001,
+      "url": "https://uttarakhandtourism.gov.in/destination/haridwar"
+    },
+    {
+      "name": "Harsil",
+      "slug": "harsil",
+      "description": "Hidden hill-station with pristine natural beauty Known for extensive apple orchards Offers adventure activities like trekking Dotted with ancient temples Popular as Raj Kapoor shot parts of film Ram Teri Ganga Maili",
+      "category": "Adventure",
+      "bestTimeToVisit": "April to June and September to October is the best time to visit Harsil. In winter, it receives heavy snowfall.",
+      "latitude": 31.03830689999999,
+      "longitude": 78.7377016,
+      "url": "https://uttarakhandtourism.gov.in/destination/harsil"
+    },
+    {
+      "name": "Hemkund Sahib",
+      "slug": "hemkunt-sahib",
+      "description": "One of the holiest Sikh shrines Beautiful gurudwara surrounded by snow-capped peaks Among the highest gurudwaras in the world Located next to a glacial lake",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "All season",
+      "latitude": 30.68333299999999,
+      "longitude": 79.6,
+      "url": "https://uttarakhandtourism.gov.in/destination/hemkunt-sahib"
+    },
+    {
+      "name": "Jageshwar",
+      "slug": "jageshwar",
+      "description": "Home to ancient temples Rich archeological history Tranquil natural surroundings Calm ambiance for meditation",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "April to June and September to November are the best months to visit Jageshwar.",
+      "latitude": 29.6384344,
+      "longitude": 79.8527819,
+      "url": "https://uttarakhandtourism.gov.in/destination/jageshwar"
+    },
+    {
+      "name": "Kanatal",
+      "slug": "kanatal",
+      "description": "Offbeat hill-station near Mussoorie Surrounded by apple orchards Picturesque Himalayan views and rolling green stretches Adventure activity hub",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The ideal time to visit Kanatal is from April to October. It receives snow from December to February.",
+      "latitude": 30.4137449,
+      "longitude": 78.3458198,
+      "url": "https://uttarakhandtourism.gov.in/destination/kanatal"
+    },
+    {
+      "name": "Kartik Swami Temple",
+      "slug": "kartik-swami-temple",
+      "description": "It is a popular temple dedicated to Lord Kartik in Uttarakhand Keeps the legend of Lord Kartik alive Close to Rudraprayag and Kedarnath Dham Offers stunning panoramic view of surrounding peaks",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "The best time to visit the temple is from October to June. A large number of devotees visit the temple during Kartik Purnima, which is usually celebrated between October and November. You can also plan a visit during the Kalash Yatra in June.",
+      "latitude": 30.3858031,
+      "longitude": 79.0987143,
+      "url": "https://uttarakhandtourism.gov.in/destination/kartik-swami-temple"
+    },
+    {
+      "name": "Kausani",
+      "slug": "kausani",
+      "description": "Quaint and serene hill-station Most famous for panoramic views of Himalayan peaks Nature's paradise set amidst dense forests and silent valleys Often called ' Switzerland of India '",
+      "category": "Hill Station",
+      "bestTimeToVisit": "From September to May is the ideal time to visit Kausani. March to May are summer months with pleasant temperature, whereas Kausani sees snowfall from October to February.",
+      "latitude": 29.8445269,
+      "longitude": 79.6038842,
+      "url": "https://uttarakhandtourism.gov.in/destination/kausani"
+    },
+    {
+      "name": "Kedarnath",
+      "slug": "kedarnath",
+      "description": "One of the most revered temple towns of India Home to the sacred Kedarnath temple A scenic destination located high up in the Himalayas A trekker's paradise Famous for Rudra cave, where PM Narendra Modi had meditated",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "From May to October is the best time to visit Kedarnath. During winter months, the town remains closed due to heavy snowfall. The temple has been shut for the winter of 2021-22.",
+      "latitude": 30.73508469999999,
+      "longitude": 79.0668788,
+      "url": "https://uttarakhandtourism.gov.in/destination/kedarnath"
+    },
+    {
+      "name": "Kedarnath Wildlife Sanctuary",
+      "slug": "kedarnath-wildlife-sanctuary",
+      "description": "Lush forests rich in fauna Gorgeous views of Himalayas Home of the elusive and endangered musk deer",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "May to June and September to November is the best time to visit Kedarnath Wildlife Sanctuary.",
+      "latitude": 30.7534462,
+      "longitude": 79.06450559999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/kedarnath-wildlife-sanctuary"
+    },
+    {
+      "name": "Kedartal",
+      "slug": "kedartal",
+      "description": "One of the most stunning glacial lakes in the world Very popular among adventure enthusiasts A perfect trip for professional trekkers Offers mesmeric sights of peaks like Mt Thalay Sagar, Mt Bhrigupanth & Mt Gangotri",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "Kedartal",
+      "latitude": 30.90989679999999,
+      "longitude": 78.9581673,
+      "url": "https://uttarakhandtourism.gov.in/destination/kedartal"
+    },
+    {
+      "name": "Khirsu",
+      "slug": "khirsu",
+      "description": "Offbeat and tranquil hill-station Offers gorgeous views of snow-clad Himalayan peaks Surrounded by dense forests Has ancient temples",
+      "category": "Hill Station",
+      "bestTimeToVisit": "Khirsu is pleasant year-round and in winter, it&#039;s enveloped in snow.",
+      "latitude": 30.1722334,
+      "longitude": 78.86798859999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/khirsu"
+    },
+    {
+      "name": "Lansdowne",
+      "slug": "lansdowne",
+      "description": "Gorgeous views of the Himalayas Colonial-era charm War memorials for soldiers Dotted with ancient churches and temples",
+      "category": "Hill Station",
+      "bestTimeToVisit": "April, May, June, and September are the the most apt months to visit Lansdowne.",
+      "latitude": 49.1755556,
+      "longitude": -123.1322222,
+      "url": "https://uttarakhandtourism.gov.in/destination/lansdowne"
+    },
+    {
+      "name": "Madhyamaheshwar",
+      "slug": "madhyamaheshwar",
+      "description": "One of the Panch Kedar sites Haven for trekkers Known for scenic vistas",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Between the months of May and September",
+      "latitude": 30.628385,
+      "longitude": 79.212606,
+      "url": "https://uttarakhandtourism.gov.in/destination/madhyamaheshwar"
+    },
+    {
+      "name": "Mana",
+      "slug": "mana",
+      "description": "Mana is the last village in the Borders of Uttarakhand. Designated as a “Tourism Village” by the Uttarakhand government. Try out Mana’s kidney beans and potatoes. Witness the origin of the Saraswati River. Won the ‘best clean, iconic tourist destination’ under the 2019 Swachh Bharat Mission.",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Mana village is best to visit from May to early November. From November to April, the region remains inaccessible due to heavy snowfall.",
+      "latitude": 30.772616,
+      "longitude": 79.495346,
+      "url": "https://uttarakhandtourism.gov.in/destination/mana"
+    },
+    {
+      "name": "Mori",
+      "slug": "mori",
+      "description": "The Main attractions in Mori Village are Rafting Fishing Trekking",
+      "category": "Adventure",
+      "bestTimeToVisit": "Summers are good for camping and trekking & post monsoons are good to visit i.e.  from October to April.",
+      "latitude": 31.0187848,
+      "longitude": 78.0473617,
+      "url": "https://uttarakhandtourism.gov.in/destination/mori"
+    },
+    {
+      "name": "Mukta Top",
+      "slug": "mukta-top",
+      "description": "Offbeat yet easy-moderate trek route in Uttarakhand In summer, enjoy colourful meadows and green forests Offers clear views of Mt Bandarpoonch",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "All season",
+      "latitude": 30.8164879,
+      "longitude": 78.5017793,
+      "url": "https://uttarakhandtourism.gov.in/destination/mukta-top"
+    },
+    {
+      "name": "Mussoorie",
+      "slug": "mussoorie",
+      "description": "One of the most popular hill stations Famous as weekend getaway and honeymoon destination Gateway to Gangotri and Yamunotri shrines Lush green hills, varied flora and fauna Winterline, a rare natural phenomenon, visible from here Home to authors, actors and other celebrities",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The best time to visit Mussoorie is during summers, as it offers respite from the scorching summer heat. However, if you are looking for a secluded holiday, come here during winters to witness the snowfall.",
+      "latitude": 30.4547465,
+      "longitude": 78.081985,
+      "url": "https://uttarakhandtourism.gov.in/destination/mussoorie"
+    },
+    {
+      "name": "Nainital",
+      "slug": "nainital",
+      "description": "One of the most popular hill-stations in India Picturesque colonial town Centered around beautiful mountain lake Surrounded by seven hills and snow-capped peaks Home to Naina Devi temple",
+      "category": "Hill Station",
+      "bestTimeToVisit": "Nainital is an all-year destination but the weather is the best between March and June. It receives heavy snowfall in winter and turns into a white wonderland, making it a popular Christmas and New Year destination.",
+      "latitude": 29.3924139,
+      "longitude": 79.4533773,
+      "url": "https://uttarakhandtourism.gov.in/destination/nainital"
+    },
+    {
+      "name": "NANAKMATTA",
+      "slug": "nanakmatta",
+      "description": "Famous for a revered and eponymous Sikh shrine Home to Nanak Sagar dam on River Saryu A haven for birdwatchers during winter A scenic picnic spot",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "All year round",
+      "latitude": 28.9409799,
+      "longitude": 79.8156667,
+      "url": "https://uttarakhandtourism.gov.in/destination/nanakmatta"
+    },
+    {
+      "name": "Nanda Devi National Park",
+      "slug": "nanda-devi-national-park",
+      "description": "A spectacular natural expanse Home to rare animals like snow leopard and musk deer A designated UNESCO World Heritage Site Among the only 2 biosphere reserves in India",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "The reserve remains open from may to October and the best time to visit is till September.",
+      "latitude": 30.6587637,
+      "longitude": 79.8386542,
+      "url": "https://uttarakhandtourism.gov.in/destination/nanda-devi-national-park"
+    },
+    {
+      "name": "New Tehri",
+      "slug": "new-tehri",
+      "description": "Overlooks the gigantic Tehri lake and dam Adventure hub with several water-sports options Headquarter of Tehri-Garhwal district Base for many high-altitude treks Dobra-Chanti, India's longest motorable single-lane suspension bridge, is here",
+      "category": "Hill Station",
+      "bestTimeToVisit": "New Tehri enjoys pleasant weather throughout the year although the best time for a visit is between April to June and October to December, when it receives snow.",
+      "latitude": 30.3826973,
+      "longitude": 78.4409754,
+      "url": "https://uttarakhandtourism.gov.in/destination/new-tehri"
+    },
+    {
+      "name": "Panch Prayag",
+      "slug": "panch-prayag",
+      "description": "According to Hindu mythology, when Goddess Ganga began her descent to Earth, her force was formidable. To temper her force, she was said to have been split into 12 channels that flow to reunite completely after Devprayag (where rivers Alaknanda and Bhagirathi meet) to become River Ganga again.",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "The entire town was destroyed in 1803 by an earthquake but the heritage structures of Devprayag were restored soon and the ancient charm of the holy town has been retained.",
+      "latitude": 30.3319757,
+      "longitude": 79.3205016,
+      "url": "https://uttarakhandtourism.gov.in/destination/panch-prayag"
+    },
+    {
+      "name": "Pantnagar",
+      "slug": "pithoragarh",
+      "description": "Quaint university town Gateway to Kumaon Known for India's first agriculture university",
+      "category": "District/Town",
+      "bestTimeToVisit": "The ideal time to visit this place is between the months of February and June. Or between September and December.",
+      "latitude": 29.0221538,
+      "longitude": 79.4908489,
+      "url": "https://uttarakhandtourism.gov.in/destination/pithoragarh"
+    },
+    {
+      "name": "Pauri",
+      "slug": "pauri",
+      "description": "Pauri is a town in Pauri Garhwal. It is at an altitude of 1,814 meters above sea level. Reaching here, you can have a wide look at Himalayan peaks of Nanda Devi & Trisul. Pauri has been an attraction to various people like Tourist researchers & students. Pauri is surrounded by many districts i.e. Dehradun, Chamoli, Nainital & Bijnor. Pauri is popular for trekkers, paragliding & people who seek nature.",
+      "category": "Hill Station",
+      "bestTimeToVisit": "The weather of Pauri is pleasant for the whole year. In January & February, there is extreme cold due to snowfall. In summer flowers bloom in the forest and tourists come to see the greenery and cool weather.",
+      "latitude": 30.1471155,
+      "longitude": 78.7745393,
+      "url": "https://uttarakhandtourism.gov.in/destination/pauri"
+    },
+    {
+      "name": "Piran Kaliyar Sharif Dargah",
+      "slug": "piran-kaliyar-sharif-dargah",
+      "description": "A popular religious site Home to dargah of Allauddin Ali Ahamed ‘Sabir’ Draws thousands of devotees during the annual Urs festival",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "A popular religious site",
+      "latitude": 29.9227888,
+      "longitude": 77.93972819999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/piran-kaliyar-sharif-dargah"
+    },
+    {
+      "name": "Ranikhet",
+      "slug": "ranikhet",
+      "description": "This serene hill-station literally means ‘Land of the queen' The cantonment town offers clear view of snow clad Himalayan peaks Snowfall in the winters transforms the town into a dream retreat",
+      "category": "Hill Station",
+      "bestTimeToVisit": "This serene hill-station literally means ‘Land of the queen&#039;",
+      "latitude": 29.6433615,
+      "longitude": 79.4321825,
+      "url": "https://uttarakhandtourism.gov.in/destination/ranikhet"
+    },
+    {
+      "name": "Rishikesh",
+      "slug": "rishikesh",
+      "description": "Known as world capital of yoga and meditation Holy town with pleasant weather throughout the year Most loved place for all Beatles' fan across the world Unmatched white water rafting and other adventure sports Gateway to the Garhwal Himalayas",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Known as world capital of yoga and meditation",
+      "latitude": 30.1157619,
+      "longitude": 78.28530169999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/rishikesh"
+    },
+    {
+      "name": "Rudraprayag",
+      "slug": "rudraprayag",
+      "description": "Holy city named after the Rudra avatar of Lord Shiva One of the Panch Prayag (five confluences) of the Alaknanda River Pristine town with immense natural beauty Surrounded by lakes, glaciers",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Near Rudraprayag, around 30 km away, stands the Kartikswami Temple.",
+      "latitude": 30.2850407,
+      "longitude": 78.98219399999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/rudraprayag"
+    },
+    {
+      "name": "Sattal",
+      "slug": "sattal",
+      "description": "Pristine lakes set amidst a dense forest Offers gorgeous views of Himalayas Enjoy serenity and unforgettable nature views Popular birding destination",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "October to June is the best time to visit Sattal",
+      "latitude": 29.344309,
+      "longitude": 79.5294318,
+      "url": "https://uttarakhandtourism.gov.in/destination/sattal"
+    },
+    {
+      "name": "Tanakpur",
+      "slug": "tanakpur",
+      "description": "Doorway to revered Purnagiri temple Scenic town at foothills of Kumaon region Surrounded by forests Just 3 km from Indo-Nepal border",
+      "category": "District/Town",
+      "bestTimeToVisit": "February to April and from September to December are the ideal months to visit Tanakpur.",
+      "latitude": 29.0722375,
+      "longitude": 80.1065646,
+      "url": "https://uttarakhandtourism.gov.in/destination/tanakpur"
+    },
+    {
+      "name": "Udham Singh Nagar",
+      "slug": "udham-singh-nagar",
+      "description": "A destination flanked by the Kumaon Himalayas on one side and Nepal on the other. Dotted with tranquil lakes. Home to several revered shrines and a gurdwara.",
+      "category": "District/Town",
+      "bestTimeToVisit": "Udham Singh Nagar is one of those few blessed destinations in Uttarakhand that can be visited all year round.",
+      "latitude": 28.9609653,
+      "longitude": 79.5153773,
+      "url": "https://uttarakhandtourism.gov.in/destination/udham-singh-nagar"
+    },
+    {
+      "name": "Uttarkashi",
+      "slug": "uttarkashi",
+      "description": "Ancient spiritual destination Offers gorgeous views of Himalayas Hotspot for angling and camping",
+      "category": "District/Town",
+      "bestTimeToVisit": "March to November is the best time to visit Uttarkashi.",
+      "latitude": 30.7305713,
+      "longitude": 78.4436728,
+      "url": "https://uttarakhandtourism.gov.in/destination/uttarkashi"
+    },
+    {
+      "name": "Valley of Flowers",
+      "slug": "valley-of-flowers",
+      "description": "A UNESCO World Heritage Site Flowery meadows Heaven for photographers Home to rare and endangered animals Panoramic views of the Himalayas",
+      "category": "Wildlife & Nature",
+      "bestTimeToVisit": "The flowers here can be best viewed between the months of May and October, a time when the area turns into a botanical wonderland although maximum abundance of flowers is during July to September.",
+      "latitude": 30.7274861,
+      "longitude": 79.60733909999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/valley-of-flowers"
+    },
+    {
+      "name": "Yamunotri",
+      "slug": "yamunotri",
+      "description": "One of the Char Dhams ( four pilgrimages ) in the great Himalayas Said to be the source of River Yamunotri Stunning landscape with icy peaks, glaciers and hot springs Popular among trekkers",
+      "category": "Spiritual/Religious",
+      "bestTimeToVisit": "Best Time To Visit: April to June and September to November",
+      "latitude": 30.9968657,
+      "longitude": 78.4616526,
+      "url": "https://uttarakhandtourism.gov.in/destination/yamunotri"
+    },
+    {
+      "name": "Gobind Vallabh Pant Museum",
+      "slug": "gobind-vallabh-pant-museum",
+      "description": "Pandit Govind Ballabh Pant Museum is located on Mall Road in Almora city. This museum was built in 1980 to honour the noteworthy efforts of the great freedom fighter Pandit Govind Ballabh Pant in Uttarakhand's development.",
+      "category": "Museum",
+      "bestTimeToVisit": "Almora",
+      "latitude": 29.5976052,
+      "longitude": 79.6580843,
+      "url": "https://uttarakhandtourism.gov.in/destination/gobind-vallabh-pant-museum"
+    },
+    {
+      "name": "Kumaon Regimental Centre Museum",
+      "slug": "kumaon-regimental-centre-museum",
+      "description": "Historical Artifacts The Scepter of Rani Jhansi Medals & Uniforms",
+      "category": "Museum",
+      "bestTimeToVisit": "March to November—for pleasant weather and full access to exhibits and surrounding areas",
+      "latitude": 29.6434136,
+      "longitude": 79.4260779,
+      "url": "https://uttarakhandtourism.gov.in/destination/kumaon-regimental-centre-museum"
+    },
+    {
+      "name": "Jageshwar Archeological Museum",
+      "slug": "jageshwar-archeological-museum",
+      "description": "Home to ancient temples Rich archeological history Tranquil natural surroundings Calm ambiance for meditation",
+      "category": "Museum",
+      "bestTimeToVisit": "April to June and September to November are the best months to visit Jageshwar.",
+      "latitude": 29.638074,
+      "longitude": 79.8528412,
+      "url": "https://uttarakhandtourism.gov.in/destination/jageshwar-archeological-museum"
+    },
+    {
+      "name": "The Crafts Museum",
+      "slug": "the-crafts-museum",
+      "description": "- Location : Bhairon Marg, Bageshwar, Uttarakhand Focus : The museum showcases the region's rich cultural heritage, with a focus on traditional crafts, art, and textiles. - Exhibits : The museum features a wide range of exhibits, including: ‣ Traditional clothing and textiles ‣ Handicrafts and folk art ‣ Woodcarvings and sculptures ‣ Metalwork and jewelry ‣ Pottery and ceramics",
+      "category": "Museum",
+      "bestTimeToVisit": "March to November—for pleasant weather and full access to exhibits and surrounding areas",
+      "latitude": 29.790683797709253,
+      "longitude": 79.7828498046875,
+      "url": "https://uttarakhandtourism.gov.in/destination/the-crafts-museum"
+    },
+    {
+      "name": "The FRI Museum",
+      "slug": "the-fri-museum",
+      "description": "The FRI Museum showcases the history of forestry, forest products, and wildlife conservation. Exhibitions on forest ecology, conservation, and sustainable management.",
+      "category": "Museum",
+      "bestTimeToVisit": "All Time",
+      "latitude": 30.3444625,
+      "longitude": 77.99629689999999,
+      "url": "https://uttarakhandtourism.gov.in/destination/the-fri-museum"
+    }
+  ]
+}

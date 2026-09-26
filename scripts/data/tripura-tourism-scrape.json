@@ -1,0 +1,216 @@
+{
+  "source": "tripuratourism.gov.in",
+  "scrapedAt": "2026-09-26",
+  "destinations": [
+    {
+      "name": "Ujjayanta Palace",
+      "description": "Historic palace named by Nobel Laureate Rabindranath Tagore, a major architectural heritage landmark in Agartala",
+      "category": "Heritage"
+    },
+    {
+      "name": "Old Rajbari Palace",
+      "description": "Historical royal residence and palace ruins",
+      "category": "Heritage"
+    },
+    {
+      "name": "Neermahal Water Palace",
+      "description": "Historic water palace on Rudrasagar Lake offering scenic beauty and boating experiences",
+      "category": "Heritage"
+    },
+    {
+      "name": "Tripura Sundari Temple",
+      "description": "One of the 51 Shakti Peethas, a major religious tourism destination in Udaipur, Tripura",
+      "category": "Religious"
+    },
+    {
+      "name": "Chaturdash Devta Temple",
+      "description": "Significant spiritual site dedicated to fourteen deities",
+      "category": "Religious"
+    },
+    {
+      "name": "Bhubaneswari Temple",
+      "description": "Important Hindu shrine and worship site",
+      "category": "Religious"
+    },
+    {
+      "name": "Kasba Kali Temple",
+      "description": "Hindu temple and pilgrimage destination",
+      "category": "Religious"
+    },
+    {
+      "name": "Gedu Mia Masjid",
+      "description": "Historical Islamic religious structure and cultural site",
+      "category": "Religious"
+    },
+    {
+      "name": "Jagannath Bari",
+      "description": "Hindu temple attraction",
+      "category": "Religious"
+    },
+    {
+      "name": "Laxmi Narayan Temple",
+      "description": "Hindu religious landmark and spiritual site",
+      "category": "Religious"
+    },
+    {
+      "name": "Durga Bari",
+      "description": "Temple location with religious significance",
+      "category": "Religious"
+    },
+    {
+      "name": "Gunabati Group of Temples",
+      "description": "Cluster of sacred temple structures",
+      "category": "Religious"
+    },
+    {
+      "name": "Mahamuni Pagoda",
+      "description": "Significant Buddhist religious structure and pagoda",
+      "category": "Religious"
+    },
+    {
+      "name": "Venuban Vihar",
+      "description": "Buddhist monastery and spiritual destination",
+      "category": "Religious"
+    },
+    {
+      "name": "Brahmakunda",
+      "description": "Sacred natural water spring site with religious significance",
+      "category": "Religious"
+    },
+    {
+      "name": "Unakoti",
+      "description": "Ancient archaeological site featuring massive rock carvings and sculptures dating back centuries",
+      "category": "Archaeological"
+    },
+    {
+      "name": "Pilak Archaeological Sites",
+      "description": "Historical ruins and ancient settlement with archaeological artifacts from Hindu and Buddhist periods",
+      "category": "Archaeological"
+    },
+    {
+      "name": "Buddhist Stupa, Boxanagar",
+      "description": "Ancient Buddhist monument and archaeological heritage site",
+      "category": "Archaeological"
+    },
+    {
+      "name": "Sepahijala Wildlife Sanctuary and Clouded Leopard National Park",
+      "description": "Diverse flora and fauna, boat rides on Rudrasagar Lake, and a treetop walkway with commendable conservation initiatives",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Trishna Wildlife Sanctuary",
+      "description": "Protected habitat for diverse fauna and flora exploration",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Gomati Wildlife Sanctuary",
+      "description": "Protected natural area for wildlife viewing experiences",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Rowa Wildlife Sanctuary",
+      "description": "Designated wildlife preservation area within Tripura's conservation framework",
+      "category": "Wildlife"
+    },
+    {
+      "name": "Baramura Eco Park",
+      "description": "Ecological destination offering natural environment experiences",
+      "category": "Eco-Tourism"
+    },
+    {
+      "name": "Tepania Eco Park",
+      "description": "Tourist facility featuring natural landscape amenities and recreational activities",
+      "category": "Eco-Tourism"
+    },
+    {
+      "name": "Khumulwng Eco Park",
+      "description": "Nature-focused destination for visitor recreation and adventure activities",
+      "category": "Eco-Tourism"
+    },
+    {
+      "name": "Kalapania Nature Park",
+      "description": "Natural reserve area for ecotourism activities",
+      "category": "Eco-Tourism"
+    },
+    {
+      "name": "Butterfly Park",
+      "description": "Specialized ecological attraction focused on butterfly species",
+      "category": "Eco-Tourism"
+    },
+    {
+      "name": "Jampui Hill",
+      "description": "Beautiful hill station offering nature and adventure experiences in elevated terrain with panoramic views",
+      "category": "Nature and Adventure"
+    },
+    {
+      "name": "Dumboor Lake",
+      "description": "Water body destination in Dhalai District featuring boating, parasail boats, yachts, and luxury boat operations",
+      "category": "Nature and Adventure"
+    },
+    {
+      "name": "Chabimura",
+      "description": "Scenic natural destination with rock carvings along the Gomati river",
+      "category": "Nature and Adventure"
+    },
+    {
+      "name": "Sanaiya Waterfalls",
+      "description": "Natural waterfall destination",
+      "category": "Nature and Adventure"
+    },
+    {
+      "name": "Vanghmun",
+      "description": "Scenic traditional village area",
+      "category": "Nature and Adventure"
+    },
+    {
+      "name": "Durga Bari Tea Garden",
+      "description": "Agricultural tourism destination showcasing tea cultivation",
+      "category": "Tea Tourism"
+    },
+    {
+      "name": "Purbasa Tripura",
+      "description": "Cultural showcase destination highlighting tribal heritage and traditions",
+      "category": "Rural Tourism"
+    },
+    {
+      "name": "Bashgram",
+      "description": "Village destination for rural tourism experiences",
+      "category": "Rural Tourism"
+    },
+    {
+      "name": "Diwali Festival",
+      "description": "Annual Hindu celebration of lights",
+      "category": "Festival"
+    },
+    {
+      "name": "Kharchi Festival",
+      "description": "Traditional Tripura festival celebrating the fourteen deities",
+      "category": "Festival"
+    },
+    {
+      "name": "Durga Puja",
+      "description": "Major Hindu festival celebrated widely across Tripura",
+      "category": "Festival"
+    },
+    {
+      "name": "Garia Puja",
+      "description": "Tribal celebration and important festival of the Tripuri people",
+      "category": "Festival"
+    },
+    {
+      "name": "Pilak Festival",
+      "description": "Regional heritage celebration at the Pilak archaeological site",
+      "category": "Festival"
+    },
+    {
+      "name": "Neermahal Festival",
+      "description": "Heritage event held at the Neermahal Water Palace on Rudrasagar Lake",
+      "category": "Festival"
+    },
+    {
+      "name": "Pous Sankranti Fair",
+      "description": "Seasonal winter harvest festival and fair",
+      "category": "Festival"
+    }
+  ]
+}
