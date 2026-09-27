@@ -18318,6 +18318,60 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sunscreen and hat (very hot, dry climate)", "Light cottons"],
   },
 
+  {
+    id: "ethipothala-waterfalls",
+    name: "Ethipothala Waterfalls",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "Multi-Tiered Falls Near Nagarjuna Sagar",
+    description: "Ethipothala Waterfalls, in Palnadu district, is formed where the Chandravanka stream drops around 70 feet into a rocky gorge before joining the Krishna River near Nagarjuna Sagar. The falls split into multiple tiered streams across a wide rock face, framed by dense scrub forest, and are a popular short detour for travellers visiting the nearby Nagarjuna Sagar Dam and Nagarjunakonda Buddhist site, particularly in the months following monsoon when water flow is at its strongest.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ethipothala_Waterfalls_Landscape.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ethipothala_Waterfalls_Landscape.JPG",
+    imageCredit: "Prasanna929, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to January (strongest flow post-monsoon)",
+    duration: "Half Day",
+    highlights: [
+      { name: "Multi-tiered 70-foot waterfall" },
+      { name: "Rocky gorge and scrub forest setting" },
+      { name: "Short detour from Nagarjuna Sagar" },
+      { name: "Crocodile breeding centre nearby" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~165 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Vijayawada then road", duration: "3.5–4 hrs from Hyderabad, 6 km from Nagarjuna Sagar", costRange: "₹2,500–₹4,500 by taxi", tips: "Easily combined with a Nagarjuna Sagar Dam visit as it's only a few km away" },
+    ],
+    accommodation: [
+      { type: "Nagarjuna Sagar Hotels", priceRange: "₹1,000–₹2,500/night", examples: ["Hotels/guesthouses in Vijayapuri South"], description: "Usually visited as part of a Nagarjuna Sagar trip rather than a standalone stay" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Viewing points near the falls are walkable", available: true },
+      { mode: "Taxi", cost: "₹300–₹600 round trip", notes: "From Nagarjuna Sagar/Vijayapuri South", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nagarjuna Sagar", distance: "6 km", type: "History / Dam", isHidden: false, id: "nagarjuna-sagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ethipothala Detour", morning: "Visit Nagarjuna Sagar Dam and Nagarjunakonda Island museum", afternoon: "Short drive to Ethipothala Waterfalls for the viewing points", evening: "Return to Hyderabad or onward travel", stay: "Nagarjuna Sagar hotel", meals: "Andhra-Telangana style thali", tips: "Water flow is strongest October–January, right after monsoon — it can be a much thinner trickle in peak summer" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Popular day-trip stop alongside Nagarjuna Sagar tourism", "Marked viewing points"],
+      precautions: ["Do not attempt to climb down to the rocks near the falls edge", "Limited facilities beyond the main viewpoint"],
+      soloTips: ["Comfortable for solo travellers combining with Nagarjuna Sagar", "Visit during daylight hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Guntur District Police", number: "0863-2234100" }],
+      safeZones: ["Designated viewing points"],
+      avoidAreas: ["Rocks near the falls edge, especially in monsoon"],
+    },
+    rating: 4.3,
+    reviews: 3600,
+    mustEat: ["Andhra-Telangana style thali nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Sun protection"],
+  },
+
   // The 10 destinations below are sourced from tourism.bihar.gov.in (the
   // state's official tourism portal) — real descriptions, historical
   // facts, best-season/etiquette notes, and local-transport details for
@@ -95116,6 +95170,172 @@ export const DESTINATIONS: Destination[] = [
     reviews: 3900,
     mustEat: ["Simple local meals near the temple", "Fresh coffee (seasonal, from local plantations)"],
     packingTips: ["Comfortable walking shoes", "Water bottle", "Camera", "Light jacket (cooler in forested areas)"],
+  },
+
+  {
+    id: "alampur",
+    name: "Alampur",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Navabrahma Temples — Cradle of Nagara Architecture",
+    description: "Alampur, on the banks of the Tungabhadra River in Jogulamba Gadwal district, is home to the Navabrahma Temples — a group of nine 7th-to-9th-century Chalukyan-era Shiva temples, despite their name, that are among the earliest surviving examples of North Indian Nagara-style temple architecture in South India. Maintained by the Archaeological Survey of India, the ASI complex also includes the Jogulamba Temple, one of the 18 Shakti Peethas, and a small site museum displaying sculptures recovered from the ruins after centuries of Sultanate-era destruction.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/37/7th_century_Alampur_Navabrahma_Temples%2C_Telangana_India_-_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/37/7th_century_Alampur_Navabrahma_Temples%2C_Telangana_India_-_1.jpg",
+    imageCredit: "Ms Sarah Welch, CC0, via Wikimedia Commons",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October to February",
+    duration: "Half Day",
+    highlights: [
+      { name: "Navabrahma Temples (9 Chalukyan-era shrines)" },
+      { name: "Jogulamba Temple (Shakti Peetha)" },
+      { name: "Alampur site museum" },
+      { name: "Early Nagara-style stone carving" },
+    ],
+    visitingHours: { opens: "9:00 AM", closes: "5:30 PM", note: "ASI site; free entry to the temple complex, small museum entry fee." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~215 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad or Kurnool then road", duration: "4–4.5 hrs from Hyderabad", costRange: "₹2,500–₹4,000 by taxi", tips: "Kurnool (Andhra Pradesh) is closer (25 km) than Hyderabad and a common approach route" },
+    ],
+    accommodation: [
+      { type: "Local Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Simple lodges in Alampur town"], description: "Basic accommodation; often visited as a day trip from Kurnool or Gadwal" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple complex is compact and fully walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Around Alampur town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kurnool", distance: "25 km", type: "City", isHidden: false, id: "kurnool" },
+      { name: "Gandikota", distance: "170 km", type: "Fort/Canyon", isHidden: false, id: "gandikota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 250, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Navabrahma Temples", morning: "Explore the nine Navabrahma temples and their carved stonework", afternoon: "Visit the Jogulamba Temple and site museum", evening: "Continue on to Kurnool or Gadwal", stay: "Kurnool hotel", meals: "Simple local meals in Alampur", tips: "Often combined with Kurnool, Belum Caves, and Gandikota as part of a Rayalaseema-region heritage circuit spanning both Telangana and Andhra Pradesh" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["ASI-protected, well-maintained heritage site", "Quiet, low-traffic small town"],
+      precautions: ["Modest dress expected inside temple areas"],
+      soloTips: ["Comfortable for solo visitors", "Easily combined with Kurnool in the same trip"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Jogulamba Gadwal Police", number: "08541-222333" }],
+      safeZones: ["Temple complex grounds"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 2100,
+    mustEat: ["Simple local meals in Alampur", "Rayalaseema-style cuisine in nearby Kurnool"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "kolanupaka",
+    name: "Kolanupaka (Kulpakji)",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Ancient Jain Pilgrimage Town",
+    description: "Kolanupaka, also known as Kulpakji, in Yadadri Bhuvanagiri district, is one of Telangana's most significant Jain pilgrimage sites, home to an ancient Mahavira temple whose central 5-foot idol, carved from a single ratnamaya (jewelled/precious stone) block, is believed to date back over a thousand years. The town's temple complex, rebuilt and expanded over centuries under Jain and Digambara patronage, also houses idols of Parshvanatha and Neminatha, and continues to draw Jain pilgrims from across South India alongside visitors interested in Telangana's lesser-known religious heritage.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kolanupaka_Jain_Temple_in_February_2026.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kolanupaka_Jain_Temple_in_February_2026.jpg",
+    imageCredit: "SerChevalerie, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Ancient Mahavira idol (ratnamaya stone)" },
+      { name: "Parshvanatha and Neminatha shrines" },
+      { name: "Jain and Digambara temple architecture" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Free entry; modest dress expected." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~80 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "1.5–2 hrs from Hyderabad", costRange: "₹1,500–₹2,500 by taxi", tips: "Often combined with a visit to Yadagirigutta, a short drive away" },
+    ],
+    accommodation: [
+      { type: "Local Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Simple lodges in Kolanupaka/Aler"], description: "Basic accommodation; usually visited as a day trip from Hyderabad" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple complex is fully walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Around the town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Yadagirigutta", distance: "20 km", type: "Spiritual", isHidden: false, id: "yadagirigutta" },
+      { name: "Hyderabad", distance: "80 km", type: "City", isHidden: false, id: "hyderabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kolanupaka Jain Temple", morning: "Darshan at the Mahavira temple and its ancient idols", afternoon: "Continue to Yadagirigutta for a combined pilgrimage day", evening: "Return to Hyderabad", stay: "Hyderabad hotel", meals: "Simple vegetarian meals", tips: "Easily combined with Yadagirigutta for a single-day pilgrimage circuit from Hyderabad" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-maintained pilgrimage site with regular devotee traffic", "Quiet small-town setting"],
+      precautions: ["Modest dress expected inside the temple"],
+      soloTips: ["Comfortable for solo visitors", "Easily combined with Yadagirigutta"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Yadadri Bhuvanagiri Police", number: "08685-222333" }],
+      safeZones: ["Temple complex"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 1900,
+    mustEat: ["Simple vegetarian meals near the temple"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "chilkur-balaji-temple",
+    name: "Chilkur Balaji Temple",
+    state: "Telangana",
+    hidden: true,
+    tagline: "The 'Visa Temple' — No Hundi, No Donations",
+    description: "Chilkur Balaji Temple, on the outskirts of Hyderabad, is a centuries-old Vishnu temple famous nationwide as the 'Visa Temple' — devotees circle the sanctum a set number of times (traditionally 11, and 108 more once a wish is granted) to pray for successful visa applications, particularly to the United States. Unusually for a major Hindu temple, it accepts no donations or hundi collections, funding itself entirely through devotee volunteer work, and continues to draw large crowds of visa applicants alongside traditional worshippers of Venkateswara (Balaji).",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Balaji_temple%2C_chilkoor.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Balaji_temple%2C_chilkoor.jpg",
+    imageCredit: "Prabhavathi anaka, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Culture"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "The 'Visa Temple' circumambulation ritual" },
+      { name: "No donations/hundi policy" },
+      { name: "Venkateswara (Balaji) shrine" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "7:00 PM", note: "Free entry; no donations accepted anywhere on the premises." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~25 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "40–50 min from central Hyderabad", costRange: "₹300–₹600 by taxi", tips: "Located near Osman Sagar, on the city's southwestern outskirts" },
+    ],
+    accommodation: [
+      { type: "Hyderabad Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Hotels across Hyderabad"], description: "Usually visited as a day trip from central Hyderabad" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple grounds are walkable", available: true },
+      { mode: "App Cab (Ola/Uber)", cost: "₹200–₹400", notes: "Widely available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "25 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Osman Sagar (Gandipet)", distance: "5 km", type: "Lake", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 200, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chilkur Balaji Visit", morning: "Darshan and the circumambulation ritual at the temple", afternoon: "Continue on to other southwestern Hyderabad sights", evening: "Return to central Hyderabad", stay: "Hyderabad hotel", meals: "Simple vegetarian meals nearby", tips: "Weekends and Saturdays see the heaviest crowds of visa applicants — weekday mornings are quieter" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-organised temple with orderly crowd management", "Family-friendly pilgrimage atmosphere"],
+      precautions: ["Standard crowd precautions on weekends"],
+      soloTips: ["Comfortable for solo visitors", "Easy day trip from Hyderabad"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Temple complex"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.6,
+    reviews: 9800,
+    mustEat: ["Simple vegetarian meals nearby"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes (for the circumambulation ritual)"],
   },
 
   {
