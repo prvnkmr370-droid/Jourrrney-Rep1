@@ -18587,6 +18587,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Nature"],
     bestSeason: "September – April",
     duration: "Half to full day (trekking involved)",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Free entry. Vehicles stop at Badalgarh; a 1–1.5 km walk leads to the stairs up. Best Oct–Mar; carry water — limited facilities on-site." },
     highlights: [{ name: "Ruined hilltop bastions and citadel" }, { name: "Underground halls with a perennial water source" }, { name: "Gupteshwar stalactite caves, 11 km away" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Varanasi/Sasaram — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~1h from Sasaram (32 km), then a steep on-foot ascent", costRange: "₹1,500–₹3,000 (cab from Sasaram)", tips: "Vehicles stop at Badalgarh — the final 1–1.5 km to the fort's stairs is on foot." },
@@ -18646,6 +18647,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "September – April",
     duration: "Full day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Free entry. ~2 hrs from Sasaram district headquarters to the base of the hill. Source: Bihar Tourism (tourism.bihar.gov.in). Best Sep–Apr." },
     highlights: [{ name: "Fort gates, palaces, and temples" }, { name: "Indo-Afghan architectural details" }, { name: "Shergarh Fort", id: "shergarh-fort" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Varanasi/Sasaram — long haul", fromMumbai: "—", fromBangalore: "—", duration: "~2h climb from Sasaram, the district headquarters", costRange: "₹1,500–₹3,000 (cab + guide from Sasaram)", tips: "The steps up are cut into limestone — a genuine climb, not a drive to the top." },
@@ -60112,6 +60114,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Free entry. Best Oct–Mar; avoid monsoon (slippery paths) and peak summer." },
     highlights: [
       { name: "The ruined seat of the Nagvanshi dynasty's kings" },
       { name: "Carved stone temple pillars amid the ruins" },
@@ -96788,6 +96791,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November to June (park closed July–October for monsoon)",
     duration: "2–3 Days",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Jeep safari 6–10 AM & 3–7 PM (shifts seasonally). Safaris run Nov–Jun; park closed Jun–Oct (monsoon). Jeep ₹2,000–3,000." },
     highlights: [
       { name: "Tiger and leopard sightings" },
       { name: "Tree house wildlife watching" },
