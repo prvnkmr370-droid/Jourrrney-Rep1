@@ -99053,6 +99053,118 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Light cottons (hot for much of the year)", "Sunscreen"],
   },
 
+  {
+    id: "bilaspur-chhattisgarh",
+    name: "Bilaspur",
+    state: "Chhattisgarh",
+    tagline: "Chhattisgarh's Judicial Capital and Railway Hub",
+    description: "Bilaspur, Chhattisgarh's second-largest city, sits on the banks of the Arpa River and serves as the seat of the Chhattisgarh High Court as well as the headquarters of the South East Central Railway zone, making it a major administrative and rail hub for the state. The city is the natural gateway for visiting Ratanpur, the historic Kalachuri-era temple town 25 km away, and Achanakmar Tiger Reserve, giving it a practical role as a base for exploring the region's heritage and wildlife sites beyond its own more workaday character.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bilaspur_Junction_Railway_Station_Building_001.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bilaspur_Junction_Railway_Station_Building_001.jpg",
+    imageCredit: "Suyash Dwivedi, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["City", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1 Day (base for excursions)",
+    highlights: [
+      { name: "Bilaspur Junction (major railway hub)" },
+      { name: "Chhattisgarh High Court" },
+      { name: "Gateway to Ratanpur" },
+      { name: "Gateway to Achanakmar Tiger Reserve" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Bilaspur (Bilasa Devi Kevat) Airport — 2h", fromMumbai: "Fly to Bilaspur Airport — 1.5h", fromBangalore: "Connecting flights via Raipur/Hyderabad", duration: "1.5–3h depending on origin", costRange: "₹3,500–₹8,000", tips: "Bilasa Devi Kevat Airport has limited but growing domestic connectivity" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — 18h+", fromMumbai: "Direct trains — 20h+", fromBangalore: "Direct trains — 24h+", duration: "Varies by origin", costRange: "₹300–₹1,500", tips: "Bilaspur Junction is a major hub on the Howrah–Mumbai line and headquarters of the South East Central Railway" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹700–₹1,800/night", examples: ["Hotels around the railway station"], description: "Wide range of budget business hotels" },
+      { type: "Mid-Range", priceRange: "₹2,000–₹4,500/night", examples: ["Hotels along Link Road and Vyapar Vihar"], description: "Comfortable business-class hotels" },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Common for shorter trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ratanpur", distance: "25 km", type: "Heritage", isHidden: false, id: "ratanpur" },
+      { name: "Achanakmar Wildlife Sanctuary", distance: "50 km", type: "Wildlife", isHidden: false, id: "achanakmar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2800, accommodation: 1700, food: 500, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bilaspur Base Day", morning: "Arrive and settle in; explore the city centre", afternoon: "Day trip to Ratanpur's Mahamaya Temple and Kalachuri-era ruins", evening: "Return to Bilaspur for the evening", stay: "Bilaspur hotel", meals: "Chhattisgarhi thali", tips: "Bilaspur works best as a 1-day base for Ratanpur and Achanakmar rather than a standalone multi-day destination" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Major railway and administrative hub with established police presence", "Good app-cab availability"],
+      precautions: ["Standard city precautions around the railway station at night"],
+      soloTips: ["Comfortable for solo travellers", "App cabs are a reliable, safe option after dark"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Vyapar Vihar", "Link Road", "Civil Lines"],
+      avoidAreas: ["Isolated areas near the railway station late at night"],
+    },
+    rating: 4.0,
+    reviews: 3800,
+    mustEat: ["Chhattisgarhi thali", "Faraa and chila (local snacks)", "Muthiya"],
+    packingTips: ["Comfortable walking shoes", "Light cottons (hot for much of the year)", "Sunscreen"],
+  },
+
+  {
+    id: "ratanpur",
+    name: "Ratanpur",
+    state: "Chhattisgarh",
+    tagline: "Historic Kalachuri Capital and Shakti Peeth",
+    description: "Ratanpur, 25 km from Bilaspur, was the capital of the Kalachuri dynasty for over 700 years and remains one of Chhattisgarh's most significant pilgrimage towns, centred on the Mahamaya Temple — one of the 52 Shakti Peethas of Hinduism. Founded when Ratna Dev I reportedly moved his capital here after a dream of the goddess Durga, the temple complex preserves an ornate 7-horse chariot gateway (torana) and stone carvings spanning the 11th to 20th centuries, alongside fort ruins and other temples scattered across the historic town.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_002.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ef/0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_002.jpg",
+    imageCredit: "Ms Sarah Welch, CC0, via Wikimedia Commons",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Mahamaya Temple (Shakti Peeth)" },
+      { name: "7-horse chariot gateway (torana)" },
+      { name: "Kalachuri-era fort ruins" },
+      { name: "Ancient stone carvings (11th–20th century)" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Free entry; especially busy during Navratri." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bilaspur then ~25 km by road", fromMumbai: "Fly to Bilaspur then road", fromBangalore: "Fly to Raipur then road", duration: "40–45 min from Bilaspur", costRange: "₹400–₹800 by taxi", tips: "Easily visited as a half-day trip from Bilaspur" },
+    ],
+    accommodation: [
+      { type: "Bilaspur Hotels", priceRange: "₹700–₹4,500/night", examples: ["Hotels in Bilaspur city"], description: "Usually visited as a day trip from Bilaspur rather than an overnight stay" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple complex and nearby ruins are walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Around the town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bilaspur", distance: "25 km", type: "City", isHidden: false, id: "bilaspur-chhattisgarh" },
+      { name: "Achanakmar Wildlife Sanctuary", distance: "75 km", type: "Wildlife", isHidden: false, id: "achanakmar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 250, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ratanpur Heritage Visit", morning: "Darshan at Mahamaya Temple and the 7-horse chariot gateway", afternoon: "Explore the surrounding Kalachuri-era fort ruins and other temples", evening: "Return to Bilaspur", stay: "Bilaspur hotel", meals: "Simple local meals in Ratanpur", tips: "Navratri sees the town at its busiest and most vivid, though also most crowded — visit on a regular day for a quieter, more contemplative experience" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-attended pilgrimage site with regular devotee traffic", "Small, quiet town outside festival periods"],
+      precautions: ["Modest dress expected inside temple areas", "Very crowded during Navratri"],
+      soloTips: ["Comfortable for solo visitors", "Easy half-day trip from Bilaspur"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bilaspur Police", number: "07752-234100" }],
+      safeZones: ["Temple complex", "Main town area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 2400,
+    mustEat: ["Simple local meals in Ratanpur", "Chhattisgarhi snacks"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
