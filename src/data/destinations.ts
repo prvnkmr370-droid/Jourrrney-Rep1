@@ -16795,6 +16795,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – March (dry season; Bengal florican courtship: late winter–early spring)",
     duration: "1 day",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Managed by Assam Forest Department. Best Nov–Mar." },
     highlights: [
       { name: "Bengal florican (critically endangered, signature species)" },
       { name: "Laokhowa-Burachapori transboundary ecosystem" },
@@ -17124,6 +17125,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "October – May (dry season, clear views from summit)",
     duration: "Half day",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Camera fee ₹50 (still) / ₹100 (video). Best early morning or evening for views and cooler weather." },
     highlights: [
       { name: "Highest peak in South Andaman (365 m)" },
       { name: "Panoramic view — inspiration for ₹20 note" },
@@ -23308,6 +23310,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – March (rafting season June – October)",
     duration: "Half day – overnight",
+    visitingHours: { opens: "8:00 AM", closes: "5:30 PM", note: "Best wildlife sightings 10 AM–2 PM. Entry free. Best Oct–Mar." },
     highlights: [{ name: "208 sq km, declared 1999" }, { name: "Recent Bengal tiger sightings" }, { name: "Mhadei white-water rafting nearby" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Valpoi — long haul", fromMumbai: "~10–12h to Goa", fromBangalore: "Long haul", duration: "Near Valpoi village", costRange: "₹600–₹1,500 (cab for a half day)", tips: "Wildlife sightings, especially tigers, are rare and not guaranteed — visit for the Western Ghats scenery and biodiversity, not a tiger safari." },
