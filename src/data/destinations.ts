@@ -9043,6 +9043,69 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "daman-ganga-river-front",
+    name: "Daman Ganga River Front",
+    state: "Dadra and Nagar Haveli (UT)",
+    hidden: true,
+    tagline: "A Maintained Riverside Promenade Through Silvassa Town",
+    description: "The Daman Ganga River Front is a landscaped riverside promenade along the Daman Ganga River as it passes through Silvassa town — paved walking paths, benches, jogging tracks, and cycling lanes, doubling as a venue for community and cultural events and festivals. It's the everyday public space locals use for an evening walk or run, distinct from the more remote, forested stretches of the same river further upstream at Dudhani Lake.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/61/Daman_Ganga_River_Silvassa_Dadar_Nagar_Haveli_Gujarat_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/61/Daman_Ganga_River_Silvassa_Dadar_Nagar_Haveli_Gujarat_India.jpg",
+    // Verified on Wikimedia Commons: GPS-tagged to the Daman Ganga River at
+    // Silvassa (matches this destination's location). The photo shows the
+    // river itself along an undeveloped stretch rather than the paved,
+    // bench-lined promenade the DNH Tourism Department's own page
+    // describes — no other genuine, place-specific Commons photo of the
+    // developed River Front section was found, so the description above
+    // is honest about what the image shows.
+    imageCredit: "Sharada Prasad CS, CC BY 2.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October – March",
+    duration: "1–2 hours",
+    highlights: [{ name: "Paved riverside walking & jogging paths" }, { name: "Cycling lanes" }, { name: "Venue for community/cultural events and festivals" }],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa", fromBangalore: "Long haul", duration: "In Silvassa town centre", costRange: "₹50–₹150 (auto/cab within town)", tips: "Right in Silvassa town — easily combined with the town's other sights on foot or by auto." },
+    ],
+    accommodation: [
+      {
+        type: "Silvassa Town Hotels/Resorts", priceRange: "₹2,000–₹6,000/night (estimate)",
+        examples: ["Pluz Resort", "Treat Resort", "Daman Ganga Valley Resort"],
+        description: "The river front sits within Silvassa town, so any of the town's hotels work as a base.",
+        sourceNote: "Hotel names confirmed on the official DNH Tourism Department's own Hotels listing (dnhddtourism.in/dnh/facilities/hotels); rates are our own estimate, not published by the site.",
+      },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Cab", cost: "₹50–₹150", notes: "Short hop from anywhere in Silvassa town", available: true },
+      { mode: "Walking", cost: "Free", notes: "The promenade itself is best explored on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Silvassa town centre", distance: "In town", type: "Town", isHidden: false, id: "silvassa" },
+      { name: "Dudhani Lake", distance: "~15 km", type: "Lake", isHidden: false, id: "dudhani-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Backpacker", perDayPerPerson: 1200, accommodation: 700, food: 300, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3200, accommodation: 2000, food: 600, transport: 200, activities: 400 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Evening River Walk", morning: "Explore Silvassa town's other sights.", afternoon: "Rest during the midday heat.", evening: "Walk or jog the river front promenade at sunset, when it's busiest with locals.", stay: "Silvassa town hotel/resort", meals: "Silvassa town dining (₹200–₹400)", tips: "Early evening is when the promenade is liveliest with local families and joggers — also the coolest part of the day to walk it." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A well-used public promenade with steady evening foot traffic from local families and joggers", "Part of Silvassa town, a low-crime UT capital"],
+      precautions: ["Standard caution after dark once the evening crowds thin out"],
+      soloTips: ["A comfortable solo walk during the busy early-evening hours"],
+      emergencyContacts: [{ label: "Women Helpline", number: "1091" }, { label: "Silvassa Police Station", number: "0260-2652033" }, { label: "Police", number: "100" }],
+      safeZones: ["The promenade itself during daylight and early evening hours"],
+      avoidAreas: ["Quieter stretches after the evening crowds disperse"],
+    },
+    rating: 4.0,
+    reviews: 320,
+    mustEat: ["Silvassa town dining options nearby"],
+    packingTips: ["Comfortable walking/jogging shoes", "Water bottle", "Light layers for the evening"],
+  },
+
+  {
     id: "daman",
     name: "Daman",
     state: "Daman (UT)",
