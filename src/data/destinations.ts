@@ -25929,6 +25929,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February; flamingo breeding season varies by year — check locally",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Some sources list 7 AM–6:30 PM instead. Guided safaris via authorized operators recommended. Best Oct–Mar." },
     highlights: [{ name: "India's largest wildlife sanctuary (7,506 sq km)" }, { name: "\"Flamingo City\" breeding colony" }, { name: "Encompasses Dholavira (Indus Valley UNESCO site)" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "Varies widely — the sanctuary spans most of the Great Rann", costRange: "₹1,500–₹4,000 (cab from Bhuj, depending on destination within the sanctuary)", tips: "Flamingo City access is genuinely restricted and seasonal — arrange any visit through the forest department, not independently." },
