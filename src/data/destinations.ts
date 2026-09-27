@@ -93611,6 +93611,123 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing for temples", "Comfortable walking shoes (remove at temples)", "Sunscreen", "Water bottle", "Small bag for shoes (temple hopping)"],
   },
 
+  {
+    id: "velankanni",
+    name: "Velankanni",
+    state: "Tamil Nadu",
+    tagline: "Lourdes of the East",
+    description: "Velankanni, a small coastal town in Nagapattinam district, is home to the Basilica of Our Lady of Good Health, one of the most visited Christian pilgrimage sites in India and a designated minor basilica. Known as the 'Lourdes of the East', it draws millions of pilgrims of all faiths annually, especially during the annual festival (August–September) commemorating an apparition of the Virgin Mary. The white Gothic-Revival basilica sits close to the Bay of Bengal coastline, combining pilgrimage with a quiet beach town atmosphere.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Basilica_of_Our_Lady_of_Good_Health_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Basilica_of_Our_Lady_of_Good_Health_2.jpg",
+    imageCredit: "Nobi9633, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Coastal"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Basilica of Our Lady of Good Health" },
+      { name: "Annual Velankanni festival (August–September)" },
+      { name: "Velankanni Beach" },
+      { name: "Museum of offerings (Anaithukku Nandri)" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Basilica open through the day with scheduled Masses; free entry." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Chennai/Trichy then road", fromMumbai: "Fly to Chennai then road", fromBangalore: "Fly to Chennai then road", duration: "~12 km from Nagapattinam, ~330 km from Chennai", costRange: "₹300–₹600 from Nagapattinam by taxi", tips: "Nagapattinam is the nearest railhead; regular buses connect to Velankanni" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Chennai then local transfer", fromMumbai: "Via Chennai then local transfer", fromBangalore: "Via Chennai then local transfer", duration: "~6 hrs Chennai to Nagapattinam", costRange: "₹150–₹600", tips: "Velankanni has its own small railway station with limited direct trains, especially during festival season" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,200/night", examples: ["Basilica-run pilgrim lodges", "Local guesthouses"], description: "Simple pilgrim accommodation, heavily booked during festival season" },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Hotels near the basilica"], description: "Standard hotel rooms, more comfort for non-pilgrim travellers" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The basilica, beach, and town centre are all walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100", notes: "For trips to/from Nagapattinam bus stand", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nagapattinam", distance: "12 km", type: "Town", isHidden: true },
+      { name: "Thanjavur", distance: "90 km", type: "Heritage City", isHidden: false, id: "thanjavur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 300, food: 200, transport: 100, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1800, accommodation: 1000, food: 400, transport: 200, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Basilica & Beach", morning: "Attend Mass and visit the Basilica of Our Lady of Good Health", afternoon: "Explore the museum of offerings and the surrounding pilgrim market", evening: "Relax at Velankanni Beach", stay: "Local guesthouse or hotel", meals: "Simple South Indian meals near the basilica", tips: "Accommodation is extremely tight during the annual festival (Aug–Sep) — book well in advance or avoid that period unless attending the festival" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["High pilgrim footfall with visible policing, especially during festival season", "Family-oriented pilgrimage town"],
+      precautions: ["Crowds can be intense during the annual festival", "Standard coastal-town precautions at the beach after dark"],
+      soloTips: ["Comfortable for solo pilgrims and travellers", "Basilica lodges are a safe, convenient base"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Basilica complex", "Main pilgrim market"],
+      avoidAreas: ["Isolated beach stretches after dark"],
+    },
+    rating: 4.6,
+    reviews: 15200,
+    mustEat: ["South Indian pilgrim-town thalis", "Local coastal seafood"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Cash for offerings and the pilgrim market"],
+  },
+
+  {
+    id: "coimbatore",
+    name: "Coimbatore",
+    state: "Tamil Nadu",
+    tagline: "The Manchester of South India",
+    description: "Coimbatore, at the foothills of the Western Ghats near the Palakkad Gap, is Tamil Nadu's major industrial and textile hub, historically nicknamed the 'Manchester of South India' for its textile mills. Beyond its commercial character, the city serves as the gateway to the Nilgiris (Ooty, Coonoor) and is anchored by the hilltop Marudhamalai Murugan Temple, which offers sweeping views over the city and surrounding countryside. Its cooler climate, relative to the plains, and proximity to the Western Ghats make it a practical base for exploring the region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Panoramic_View_of_Coimbatore_from_Atop_Marudhamalai_Temple.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Panoramic_View_of_Coimbatore_from_Atop_Marudhamalai_Temple.jpg",
+    imageCredit: "Vibrantv, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["City", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Marudhamalai Murugan Temple (hilltop views)" },
+      { name: "Gateway to the Nilgiris (Ooty, Coonoor)" },
+      { name: "VOC Park and Zoo" },
+      { name: "Perur Pateeswarar Temple" },
+    ],
+    visitingHours: { opens: "5:30 AM", closes: "9:00 PM", note: "Marudhamalai Temple: 5:30 AM–9 PM with a midday break; free entry." },
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct flights — 3h", fromMumbai: "Direct flights — 2h", fromBangalore: "Direct flights — 1h", duration: "1–3h depending on origin", costRange: "₹3,000–₹8,000", tips: "Coimbatore International Airport has good domestic connectivity" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — 30h+", fromMumbai: "Direct trains — 20h+", fromBangalore: "Direct trains — 6–7h", duration: "Varies by origin", costRange: "₹300–₹1,500", tips: "Coimbatore Junction is a major rail hub on the Chennai-Kerala line" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels around Gandhipuram and the railway station"], description: "Wide range of budget business hotels" },
+      { type: "Mid-Range", priceRange: "₹2,500–₹5,000/night", examples: ["Hotels along Avinashi Road"], description: "Comfortable business-class hotels" },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available", available: true },
+      { mode: "City Bus", cost: "₹10–₹30", notes: "Extensive network covering the city and Marudhamalai", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Common for shorter trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Ooty (Udhagamandalam)", distance: "85 km", type: "Hill Station", isHidden: false, id: "ooty" },
+      { name: "Coonoor", distance: "70 km", type: "Hill Station", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Temples & City Views", morning: "Visit Marudhamalai Murugan Temple for the hilltop views over the city", afternoon: "Perur Pateeswarar Temple, a fine example of Dravidian architecture", evening: "VOC Park and a walk through the city's textile market areas", stay: "Coimbatore hotel", meals: "South Indian meals at a local mess/restaurant", tips: "Coimbatore is most useful as a base or stopover en route to Ooty/Coonoor rather than a standalone multi-day destination" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-established city infrastructure and public transport", "Generally low-crime industrial/commercial city"],
+      precautions: ["Standard city precautions around the railway station area at night"],
+      soloTips: ["Comfortable for solo travellers", "App cabs are widely available and reliable"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Gandhipuram", "Avinashi Road", "RS Puram"],
+      avoidAreas: ["Isolated industrial areas late at night"],
+    },
+    rating: 4.4,
+    reviews: 9800,
+    mustEat: ["Kongunadu-style South Indian meals", "Coimbatore-style filter coffee", "Idiyappam and kothu parotta"],
+    packingTips: ["Comfortable walking shoes", "Light layers (cooler evenings)", "Sunscreen"],
+  },
+
   // ─── TELANGANA ────────────────────────────────────────────────────
   {
     id: "hyderabad",
