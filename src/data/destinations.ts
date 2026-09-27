@@ -95499,6 +95499,114 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Water bottle", "Camera", "Sun protection"],
   },
 
+  {
+    id: "chaturdash-devta-temple",
+    name: "Chaturdash Devta Temple",
+    state: "Tripura",
+    tagline: "Shrine of the Fourteen Royal Deities",
+    description: "The Chaturdash Devta Temple at Old Agartala (Puran Haveli) enshrines the fourteen royal deities (Chaturdasa Devata) traditionally worshipped by the Manikya kings of Tripura, an ASI-protected monument distinguished by its distinctive circular, pillared, maroon-and-white structure. The temple is the focal point of the annual Kharchi Puja festival, one of Tripura's most important religious celebrations, when the deities are ceremonially bathed in the nearby Saidra stream.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/CHATURDASH_DEVTA_TEMPLE%2CTRIPURA.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7c/CHATURDASH_DEVTA_TEMPLE%2CTRIPURA.jpg",
+    imageCredit: "Arka Sengupta, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Shrine of the fourteen royal deities" },
+      { name: "Distinctive circular pillared architecture" },
+      { name: "ASI-protected monument" },
+      { name: "Kharchi Puja festival (July)" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Free entry; especially busy during the annual Kharchi Puja festival." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then ~3 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "10–15 min from central Agartala", costRange: "₹100–₹250 by taxi/auto", tips: "Located in Old Agartala (Puran Haveli), a short trip from the city centre" },
+    ],
+    accommodation: [
+      { type: "Agartala Hotels", priceRange: "₹800–₹4,000/night", examples: ["Hotels in central Agartala"], description: "Usually visited as part of a day of Agartala sightseeing" },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Common way to reach the temple from central Agartala", available: true },
+      { mode: "App Cab", cost: "₹100–₹250", notes: "Available in Agartala", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Agartala", distance: "3 km", type: "City", isHidden: false, id: "agartala" },
+      { name: "Ujjayanta Palace", distance: "5 km", type: "Heritage", isHidden: false, id: "ujjayanta-palace" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 100, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 900, accommodation: 0, food: 300, transport: 300, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Old Agartala Heritage", morning: "Visit Chaturdash Devta Temple", afternoon: "Continue to Ujjayanta Palace and other central Agartala sights", evening: "Return to hotel", stay: "Agartala hotel", meals: "Bengali-Tripuri thali", tips: "Visiting during the July Kharchi Puja festival offers a vivid look at the temple's living religious tradition, though expect large crowds" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-maintained ASI monument with regular visitor traffic", "Located in a settled residential area of Agartala"],
+      precautions: ["Modest dress expected inside the shrine area"],
+      soloTips: ["Comfortable for solo visitors", "Easy to combine with other Agartala heritage sights"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Agartala Police", number: "0381-2325300" }],
+      safeZones: ["Temple complex"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.4,
+    reviews: 1800,
+    mustEat: ["Bengali-Tripuri thali", "Local sweets in Old Agartala"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "rowa-wildlife-sanctuary",
+    name: "Rowa Wildlife Sanctuary",
+    state: "Tripura",
+    tagline: "Birdwatcher's Haven in North Tripura",
+    description: "Rowa Wildlife Sanctuary, in North Tripura's Panisagar area, is a compact protected forest known chiefly among birdwatchers for its rich variety of species — sunbirds, barbets, orioles, monarchs, and owls among them — alongside barking deer and spectacled monkeys. Less developed for general tourism than Tripura's larger sanctuaries, it draws a niche but dedicated following of wildlife photographers and birders willing to make the trip to North Tripura's forests.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Blue_throated_Barbet_Rowa_Wildlife_Sanctuary.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/96/Blue_throated_Barbet_Rowa_Wildlife_Sanctuary.jpg",
+    imageCredit: "BENFRANK13, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November to March",
+    duration: "Half Day to 1 Day",
+    highlights: [
+      { name: "Rich birdlife (barbets, sunbirds, orioles, owls)" },
+      { name: "Barking deer and spectacled monkeys" },
+      { name: "Quiet, less-visited forest sanctuary" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then ~140 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "3.5–4 hrs from Agartala", costRange: "₹2,500–₹4,000 by taxi", tips: "Panisagar in North Tripura is the nearest town; a local guide helps for birdwatching" },
+    ],
+    accommodation: [
+      { type: "Panisagar Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Local guesthouses in Panisagar"], description: "Very basic accommodation; most visitors day-trip from Kailashahar or Dharmanagar" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free (guide recommended)", notes: "Forest trails best explored with a local birding guide", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Unakoti", distance: "60 km", type: "Heritage", isHidden: false, id: "unakoti" },
+      { name: "Agartala", distance: "140 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 1000, accommodation: 400, food: 250, transport: 250, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Birdwatching at Rowa", morning: "Early-morning birdwatching walk with a local guide (best light and activity)", afternoon: "Rest, then a shorter walk in cooler hours", evening: "Return to Panisagar/Kailashahar", stay: "Local guesthouse", meals: "Simple Bengali-Tripuri meals", tips: "Bring your own binoculars/camera gear — rental is not available locally. Early morning is by far the best time for birding." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Quiet, low-traffic rural area with limited tourist infrastructure", "Local communities generally welcoming"],
+      precautions: ["Very limited amenities and connectivity", "Hire a local guide — trails are not well signposted"],
+      soloTips: ["A local guide is recommended given the remote location", "Best visited with at least one companion given limited infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "North Tripura Police", number: "03824-222233" }],
+      safeZones: ["Main sanctuary trails with a guide"],
+      avoidAreas: ["Off-trail forest areas without a guide"],
+    },
+    rating: 4.3,
+    reviews: 400,
+    mustEat: ["Simple Bengali-Tripuri meals in Panisagar/Kailashahar"],
+    packingTips: ["Binoculars and camera gear (bring your own)", "Neutral-colored clothing", "Insect repellent", "Comfortable walking shoes"],
+  },
+
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
   {
     id: "kedarnath",
