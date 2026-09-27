@@ -78706,6 +78706,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November – March (safe exploration conditions)",
     duration: "3–5 hours for a standard visit; longer for guided expeditions",
+    visitingHours: { opens: "8:00 AM", closes: "4:30 PM", note: "Entry ₹30. Best visited in the morning; allow 2–3 hrs to explore this 7-km-long cave. Best Oct–Dec and Mar–May." },
     highlights: [{ name: "Over 4.7 km of mapped limestone passages" }, { name: "Thousands of resident bats" }, { name: "Guided expeditions into unmapped sections via the Meghalaya Adventurers Association" }, { name: "Near the Simsang River and Napak Lake" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Via Guwahati (~203 km) or Shillong Airport (~308 km), then road", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then a long road journey via Tura or Baghmara", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "Guwahati is by far the more practical gateway than Shillong for the South Garo Hills." },
@@ -79126,6 +79127,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife", "Adventure"],
     bestSeason: "October – March (trekking and wildlife); November – February (best for birdwatching and orchids)",
     duration: "1–2 days (remote location, long approach)",
+    visitingHours: { opens: "5:00 AM", closes: "4:00 PM", note: "Nov–Feb hours 5 AM–4 PM; extends to 5 AM–6 PM Mar–May. Free permit from the DFO office in Baghmara. Best Oct–Mar; monsoon (Jun–Sep) makes trails difficult." },
     highlights: [{ name: "Windswept table-top plateaus and dramatic gorges over the Simsang River valley" }, { name: "Rare wildlife including Hoolock gibbons, clouded leopards, and the Great Indian Hornbill" }, { name: "Limestone caves steeped in Garo legend" }, { name: "The rare insectivorous pitcher plant Nepenthes khasiana" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Guwahati Airport (~284 km) or Shillong Airport (~230 km), then a long road journey", fromMumbai: "Via Guwahati, then road", fromBangalore: "Via Guwahati, then road", duration: "Fly into Guwahati, then road via Tura/Baghmara", costRange: "₹3,500–₹12,000 airfare to Guwahati", tips: "This is a remote, multi-day expedition — plan accordingly rather than as a quick add-on." },
