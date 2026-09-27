@@ -34014,6 +34014,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "1 day",
+    visitingHours: { opens: "6:30 AM", closes: "6:00 PM", note: "Two safari slots, roughly 6:30–9:30 AM and 3–6 PM (varies seasonally). Signed forest-ranger permission required. Closed Jul–Sep (monsoon); best Oct–Jun." },
     highlights: [
       { name: "An 18th-19th century royal shikargah (hunting ground) of Kota's Hada Rajput rulers" },
       { name: "Sanctuary since 1955, merged into Mukundara Hills National Park in 2004" },
@@ -35088,6 +35089,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Heritage", "History"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "4:30 AM", closes: "7:30 PM", note: "Three darshan windows: 4:30–7 AM, 10:30 AM–1:30 PM, 5–7:30 PM. Open daily; Mondays may open ~15 min earlier." },
     highlights: [{ name: "108 temples within a walled compound" }, { name: "Four-faced black marble Shiva linga in the main temple" }, { name: "8th-century foundation by Bappa Rawal" }, { name: "Monday evening aarti led by the Mewar royal family" }, { name: "Patron deity of the Mewar dynasty for 1,200+ years" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Udaipur — 10h", fromMumbai: "Via Udaipur — 13h", fromBangalore: "—", duration: "~30 min from Udaipur (22 km)", costRange: "₹300–₹800 cab from Udaipur", tips: "Combine with Haldighati and Nathdwara as a day trip from Udaipur." },
@@ -56362,6 +56364,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Adventure"],
     bestSeason: "Late winter (snow leopard tracking); June – October (trekking)",
     duration: "4–7 days (guided snow leopard trek)",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "As an open high-altitude reserve, timings mainly apply to entry points/permits rather than a gated area. Permits required from the Wildlife Office in Leh or via local operators. Best May–Sep; late winter is best for snow leopard tracking." },
     highlights: [
       { name: "The world's highest recorded snow leopard density" },
       { name: "Bharal (blue sheep) herds, the snow leopard's main prey" },
