@@ -18134,6 +18134,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – March (park typically closed mid-June to mid-October for monsoon)",
     duration: "2 days",
+    visitingHours: { opens: "6:00 AM", closes: "5:30 PM", note: "Two safaris daily, roughly 6–10 AM and 2:30–5:30 PM (seasonal shift). Reserve open 1 Oct–31 May, closed Jun–Sep (monsoon)." },
     highlights: [{ name: "Jeep safari zones" }, { name: "Gandak River frontage" }, { name: "Someshwar and Dun hill ranges" }, { name: "Terai grassland birdlife" }],
     transport: [
       { mode: "Flight + Road", icon: "✈️", fromDelhi: "Via Patna Airport, then ~5h road", fromMumbai: "Via Patna Airport, then road", fromBangalore: "Via Patna Airport, then road", duration: "Patna (~250 km) or Gorakhpur, UP (~110 km) — Gorakhpur is closer", costRange: "Add road transfer to either flight", tips: "Gorakhpur (Uttar Pradesh) is often the quicker gateway despite crossing a state line — worth comparing both routes." },
@@ -37703,6 +37704,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November – April",
     duration: "1 day",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Entry only 8 AM–1 PM; all visitors must exit by 5 PM. Advance permit and mandatory guide required via the Kerala Forest Department (silentvalley.gov.in), reporting at the Mukkali forest office. Closed Tuesdays." },
     highlights: [
       { name: "One of the last undisturbed tropical evergreen rainforests in peninsular India" },
       { name: "Saved by the 1973-1985 Save Silent Valley movement — India's first major grassroots environmental protest" },
@@ -56853,6 +56855,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – April (best wildlife viewing in winter)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Jeep safari 6–10 AM and 2–6 PM. Park open Oct 1–Jun 30, closed Jul–Sep (monsoon). Source: Jharkhand Forest Department (forest.jharkhand.gov.in)." },
     highlights: [
       { name: "Jeep safaris across the tourist buffer zone" },
       { name: "Tigers, leopards, and wild elephant herds" },
@@ -79882,6 +79885,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife", "Adventure"],
     bestSeason: "November – April (dry season, better wildlife visibility)",
     duration: "1–2 days",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Best visited 11 AM–3 PM. Entry fee ₹20 + ₹100/vehicle; permits from the Forest Dept office in Aizawl or at Teirei/Damparengpui/Phuldungsei gates. Reserve shut Jun–Sep (monsoon); best Nov–Mar." },
     highlights: [{ name: "Mizoram's largest wildlife sanctuary, part of Project Tiger since 1994" }, { name: "One of South and Southeast Asia's higher clouded leopard populations" }, { name: "Rich birdlife including hornbills and pheasants" }, { name: "Genuinely wild terrain — wildlife viewing on foot, not by vehicle" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then road west toward the reserve", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "Aizawl is the practical gateway to Dampa." },
@@ -83891,6 +83895,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – June (the reserve typically closes during the monsoon, roughly July–October)",
     duration: "Full day, or an overnight safari stay",
+    visitingHours: { opens: "5:30 AM", closes: "6:00 PM", note: "Morning safari from ~5:30 AM (5 hrs), afternoon from ~2 PM (4 hrs); all visitors must exit by 6 PM. Entry via Jashipur Gate (5–9 AM) or Pithabata Gate (8–9 AM). Open 1 Nov–15 Jun; closed the rest of the year (monsoon). Source: similipal.org." },
     highlights: [{ name: "Roughly 2,750 sq km of tiger reserve" }, { name: "A documented population of rare melanistic (black) tigers" }, { name: "Barehipani and Joranda waterfalls within the reserve" }, { name: "Named for its blooming red silk cotton trees" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Biju Patnaik International Airport, Bhubaneswar — ~2h direct, then ~3h road", fromMumbai: "~2h direct to Bhubaneswar, then road", fromBangalore: "~2h direct to Bhubaneswar, then road", duration: "Fly into Bhubaneswar, then ~192 km by road", costRange: "₹3,000–₹10,000 airfare to Bhubaneswar", tips: "Baripada is the nearest town and practical base." },
