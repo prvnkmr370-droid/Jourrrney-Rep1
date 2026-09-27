@@ -25270,6 +25270,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Sundays open until 6:30 PM. Best birding at dawn (6:30–9:30 AM) and dusk (4–6 PM); ID required at the interpretation centre. Best season Sep–Feb." },
     highlights: [{ name: "Ramsar Wetland of Importance (2022)" }, { name: "314 recorded bird species" }, { name: "Salt & freshwater lake mosaic" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Jamnagar — long haul", fromMumbai: "Via Jamnagar — long haul", fromBangalore: "Not practical", duration: "~10 km / ~20 min from Jamnagar", costRange: "₹150–₹400 (auto/cab from Jamnagar)", tips: "Easily combined with a Jamnagar city visit or the Marine National Park on the same trip." },
@@ -25322,6 +25323,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "5:30 PM", note: "Best Nov–Feb for migratory birds." },
     highlights: [{ name: "Ramsar site (2021)" }, { name: "320+ recorded bird species" }, { name: "1912 Gaekwad-era reservoir origin" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~40 km / ~1h from Ahmedabad", costRange: "₹600–₹1,500 (cab from Ahmedabad)", tips: "Genuinely an easy half-day trip from Ahmedabad, especially combined with a Nalsarovar visit on the same route." },
@@ -33954,6 +33956,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "3–4 hours",
+    visitingHours: { opens: "6:30 AM", closes: "5:00 PM", note: "Timings vary by source (some list 10 AM–5 PM) — confirm locally or with the Chittorgarh District Forest Office before visiting." },
     highlights: [
       { name: "15,290 hectares of former Mewar royal hunting grounds, sanctuary since 1988" },
       { name: "Wetland habitat around the Bassi and Orai dams" },
@@ -38611,6 +38614,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – February (migratory season)",
     duration: "2–3 hours",
+    visitingHours: { opens: "7:00 AM", closes: "4:30 PM", note: "Closed Tuesdays. Sanctuary shut May–Sep; open Oct–Apr only. Best Oct–Feb for migratory birds." },
     highlights: [{ name: "Four bird-watching machans (watchtowers)" }, { name: "Winter migratory bird season" }, { name: "The Educational Interpretation Centre" }, { name: "Kingdom of Dreams", id: "kingdom-of-dreams" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -38875,6 +38879,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife", "Adventure"],
     bestSeason: "October – March (avoid monsoon)",
     duration: "Full day",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Summer: 6–10 AM & 4–7 PM. Winter: 7–11 AM & 3:30–6 PM. Closed Jul–Sep (monsoon). Jeep safari permits via the Haryana Forest Department." },
     highlights: [{ name: "11,570 acres of Shivalik sal-forest" }, { name: "A genuine range of wild animals" }, { name: "Proximity to the Himachal Pradesh border" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport (IXC) is the nearest — ~90 km from Yamuna Nagar", fromMumbai: "~2.5h direct to Chandigarh", fromBangalore: "~3h direct to Chandigarh", duration: "~1.5–2h road from Chandigarh airport", costRange: "₹2,500–₹9,000", tips: "No airport in Yamuna Nagar itself — Chandigarh is the practical option." },
