@@ -7,9 +7,9 @@
  */
 import { useMemo, useState } from "react";
 import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
-import DestImage from "@/components/DestImage";
+import DestinationCard from "@/components/DestinationCard";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Search, X, Settings2, Star } from "lucide-react-native";
+import { Search, X, Settings2 } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { findLiveMatches, resolveUnambiguousMatch, matchNonIndiaPlace } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
@@ -131,17 +131,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
           {liveMatches.length > 0 && (
             <View style={{ gap: 10, marginBottom: 20 }}>
               {liveMatches.map((d) => (
-                <Pressable
-                  key={d.id}
-                  onPress={() => handleSearchSelect(d)}
-                  style={{ flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10 }}
-                >
-                  <DestImage source={{ uri: d.image }} style={{ width: 48, height: 48, borderRadius: 12 }} contentFit="cover" />
-                  <View>
-                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{d.name}</Text>
-                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{d.state} · {d.category[0]}</Text>
-                  </View>
-                </Pressable>
+                <DestinationCard key={d.id} destination={d} onPress={() => handleSearchSelect(d)} layout="row" compact />
               ))}
             </View>
           )}
@@ -185,24 +175,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
 
           <ScrollView contentContainerStyle={{ paddingHorizontal: 20, gap: 12, paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
             {filtered.map((d) => (
-              <Pressable
-                key={d.id}
-                onPress={() => onSelectDestination(d)}
-                style={{ flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 12 }}
-              >
-                <DestImage source={{ uri: d.image }} style={{ width: 64, height: 64, borderRadius: 14 }} contentFit="cover" />
-                <View>
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>{d.name}</Text>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginBottom: 4 }}>{d.state}</Text>
-                  <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
-                    <Star color="#FBBF24" fill="#FBBF24" size={12} />
-                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.textPrimary }}>{d.rating}</Text>
-                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.primary, marginLeft: 6 }}>
-                      ₹{d.budgetBreakdown[0]?.perDayPerPerson.toLocaleString("en-IN")}+/day
-                    </Text>
-                  </View>
-                </View>
-              </Pressable>
+              <DestinationCard key={d.id} destination={d} onPress={() => onSelectDestination(d)} layout="row" showPrice />
             ))}
           </ScrollView>
         </View>

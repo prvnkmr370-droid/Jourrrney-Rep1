@@ -8,7 +8,6 @@ import DestImage from "@/components/DestImage";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import HeroCarousel from "./HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
-import SafeCard from "@/components/SafeCard";
 import { withOpacity } from "@/components/withOpacity";
 import { useRecentSearchesStore, timeAgo } from "@/store/useRecentSearchesStore";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
@@ -183,7 +182,7 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
 
       <Section title="Safest for Women & Solo Travel" onSeeAll={() => router.push("/(tabs)/safety")} accentColor={c.success}>
         {safest.map((d) => (
-          <SafeCard key={d.id} destination={d} onPress={() => goToDestination(d)} />
+          <DestinationCard key={d.id} destination={d} onPress={() => goToDestination(d)} stat="safety" />
         ))}
       </Section>
 
