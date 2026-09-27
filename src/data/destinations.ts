@@ -15441,6 +15441,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "Mid-October – March",
     duration: "Half-day to 1 day",
+    visitingHours: { opens: "6:30 AM", closes: "5:00 PM", note: "Jeep safari ~7 AM–3 PM, elephant safari ~6:30 AM–2:30 PM. Closed Apr–Oct (monsoon); jeep safari reopens ~23 Oct, elephant safari ~15 Nov each year." },
     highlights: [
       { name: "Elephant safari (rhino sightings)" },
       { name: "Jeep safari" },
@@ -15822,6 +15823,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – April",
     duration: "2–3 days",
+    visitingHours: { opens: "5:30 AM", closes: "5:30 PM", note: "Jeep safari 7–10 AM & 2–5 PM. Closed Jun–Sep (monsoon); best Nov–Feb. Entry/safari booking via the Bansbari range near Barpeta Road." },
     highlights: [
       { name: "Beki River" },
       { name: "Pygmy hog habitat (found nowhere else on Earth)" },
@@ -15957,6 +15959,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife", "Adventure"],
     bestSeason: "November – April",
     duration: "2 days",
+    visitingHours: { opens: "5:30 AM", closes: "6:30 PM", note: "No jeep safaris — walking nature trails (with an armed guard), river-rafting safaris, and jeep transfers to the trailhead. Best Oct–Apr." },
     highlights: [
       { name: "White-winged wood duck habitat (Assam's state bird)" },
       { name: "Jia Bharali river rafting" },
@@ -16260,6 +16263,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – April",
     duration: "2 days",
+    visitingHours: { opens: "Sunrise", closes: "Sunset", note: "Entry before sunrise or after sunset not permitted. Motorboat safari only (no jeep safari). Best Nov–Apr for migratory birds." },
     highlights: [
       { name: "Feral horses (a genuine biodiversity oddity)" },
       { name: "Gangetic river dolphins" },
@@ -16720,6 +16724,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Wildlife"],
     bestSeason: "November – April",
     duration: "1–2 days",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Safaris run in two slots, roughly 6–10 AM and 2–5 PM (best for sightings). Closed May–Oct (monsoon); best Nov–Apr. Permits via Assam Forest Department or at entry gates." },
     highlights: [
       { name: "Royal Bengal Tiger sightings (49th Tiger Reserve)" },
       { name: "One-horned rhinoceros (101 counted in 2022)" },
