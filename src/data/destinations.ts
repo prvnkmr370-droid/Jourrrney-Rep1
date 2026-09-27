@@ -95045,6 +95045,60 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Sun protection — little shade on site", "Comfortable walking shoes for uneven excavated ground", "Water bottle", "Camera"],
   },
 
+  {
+    id: "baramura-eco-park",
+    name: "Baramura Eco Park",
+    state: "Tripura",
+    tagline: "Forested hill-range eco-park on the Agartala-Kailashahar highway",
+    description: "Baramura Eco Park sits on National Highway 44 in the Baramura hill range, about 40 km from Agartala, offering forested walking trails, a hanging bridge, and viewpoints over the surrounding hills. Developed under Tripura's eco-tourism push, the park is a popular stop for travellers heading north from the capital, with picnic spots and a small boating area drawing weekend visitors from Agartala.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/31/Baramura_Eco_park_bridge_from_road_Tripura.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/31/Baramura_Eco_park_bridge_from_road_Tripura.jpg",
+    imageCredit: "Piyushozarde, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Hanging bridge over the gorge" },
+      { name: "Forested hill-range walking trails" },
+      { name: "Hilltop viewpoints" },
+      { name: "Boating area" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then 40 km by road", fromMumbai: "Fly to Agartala then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "1 hr from Agartala", costRange: "₹500–₹1,200 by taxi", tips: "Located directly on NH44 — easily combined with onward travel towards Kailashahar or Unakoti" },
+    ],
+    accommodation: [
+      { type: "Day Trip", priceRange: "N/A", examples: ["Stay in Agartala"], description: "No overnight accommodation at the park itself; visited as a day trip from Agartala" },
+    ],
+    localTransport: [
+      { mode: "Private taxi", cost: "₹1,000–₹1,800 round trip", notes: "From Agartala", available: true },
+      { mode: "Walking", cost: "Free", notes: "Trails and the hanging bridge are explored on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Agartala", distance: "40 km", type: "City", isHidden: false, id: "agartala" },
+      { name: "Unakoti", distance: "80 km", type: "Heritage", isHidden: false, id: "unakoti" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Tripper", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Baramura Day Trip", morning: "Drive from Agartala to Baramura Eco Park; walk the forest trails and cross the hanging bridge", afternoon: "Enjoy the hilltop viewpoints and boating area; combine with onward travel towards Unakoti", evening: "Return to Agartala", stay: "Agartala hotel", meals: "Bengali-Tripuri thali in Agartala", tips: "Combine with a trip further north to Unakoti for a fuller day out along NH44" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Popular weekend picnic spot with steady visitor traffic", "Located directly on the main highway"],
+      precautions: ["Standard forest-trail precautions — stick to marked paths", "Limited facilities beyond the main park area"],
+      soloTips: ["Visit during daylight hours with other picnicking groups around", "Easy day trip from Agartala"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Agartala Police", number: "0381-2325300" }],
+      safeZones: ["Main park trails and viewpoints"],
+      avoidAreas: ["Off-trail forest areas"],
+    },
+    rating: 4.1,
+    reviews: 900,
+    mustEat: ["Bengali-Tripuri thali in Agartala", "Local snacks at the park entrance"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Camera", "Sun protection"],
+  },
+
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
   {
     id: "kedarnath",
