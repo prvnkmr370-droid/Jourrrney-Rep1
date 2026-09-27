@@ -23141,6 +23141,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "Half day – full day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Some sources list 9:30 AM–5:45 PM instead; confirm with the Goa Forest Department. Best Nov–Mar for wildlife viewing (early morning/late evening)." },
     highlights: [{ name: "Goa's largest sanctuary at 240 sq km" }, { name: "Contains Dudhsagar Waterfalls & Tambdi Surla temple" }, { name: "Real gaur, leopard & python habitat" }],
     transport: [
       { mode: "Road + Rail", icon: "🚗🚆", fromDelhi: "Via Margao/Kulem — long haul", fromMumbai: "~10–12h to South Goa", fromBangalore: "Long haul", duration: "~54km / ~1.5h from Panaji", costRange: "₹800–₹2,000 (cab for the day)", tips: "Access by both road and rail (Castle Rock/Kulem stations); hiking trails run through the sanctuary." },
@@ -25429,6 +25430,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "7:00 AM", closes: "9:00 PM", note: "Near Statue of Unity. Confirm current timings with the Gujarat Forest Department (forests.gujarat.gov.in)." },
     highlights: [{ name: "607.70 sq km sloth-bear habitat" }, { name: "Named for a temple submerged by the Sardar Sarovar" }, { name: "Real Sardar Sarovar Dam mitigation project" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Rajpipla — long haul", fromMumbai: "~380 km, ~7h", fromBangalore: "Not practical", duration: "~90 km / ~2h from Vadodara", costRange: "₹1,800–₹3,500 (cab from Vadodara)", tips: "Genuinely combinable with a Statue of Unity trip, given the shared Narmada-district route." },
@@ -25749,6 +25751,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Some sources list a later 7 PM close; confirm locally. Best Oct–May." },
     highlights: [{ name: "Former Jambughoda princely-state hunting ground" }, { name: "130.38 sq km protected since 1990" }, { name: "Jhand Hanuman forest temple" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Vadodara — long haul", fromMumbai: "Via Vadodara — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.5h from Vadodara", costRange: "₹1,500–₹3,000 (cab from Vadodara)", tips: "Genuinely an easy day trip from Vadodara, especially for repeat visitors looking for something beyond the palace circuit." },
@@ -25852,6 +25855,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Spiritual"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Some sources list 7 AM–6 PM instead; confirm locally. Best Oct–Mar." },
     highlights: [{ name: "542 sq km Aravalli forest" }, { name: "Named for the Balaram & Ambaji temples" }, { name: "Rich medicinal-plant diversity" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Palanpur — long haul", fromMumbai: "Via Palanpur — long haul", fromBangalore: "Not practical", duration: "~45 km / ~1h from Palanpur", costRange: "₹1,000–₹2,200 (cab from Palanpur)", tips: "Genuinely combinable with an Ambaji temple pilgrimage visit, since the sanctuary shares its name and location with the temple." },
@@ -30430,6 +30434,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November – February (low tide is best for reef visits)",
     duration: "Full day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Accessible only at low tide — boats to Pirotan Island depart from Bedi Port; Narara Reef reachable by road. Forest Dept permission required (plus Police clearance for foreign nationals)." },
     highlights: [
       { name: "India's first Marine National Park, core area declared 1982" },
       { name: "42 islands off the Jamnagar coast, the largest being Pirotan Island" },
