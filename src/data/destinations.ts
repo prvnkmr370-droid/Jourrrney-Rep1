@@ -25391,6 +25391,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Heritage"],
     bestSeason: "November – February; monsoon-season nature-education camps also run here",
     duration: "Half day",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Some sources list an 8 AM opening — confirm locally. Managed by the GEER Foundation. Best season is unusually the monsoon (Jul–Oct) here." },
     highlights: [{ name: "654 hectares of dry deciduous forest & grassland" }, { name: "15th-century Hingolgarh Fort" }, { name: "GEER Foundation nature-education camps" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Rajkot — long haul", fromMumbai: "Via Rajkot — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1.25h from Rajkot", costRange: "₹1,000–₹2,000 (cab from Rajkot)", tips: "Book ahead if visiting during monsoon-season education camps, as the sanctuary hosts scheduled groups then." },
@@ -25548,6 +25549,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February (winter migratory season)",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "May stay open till 6:30 PM in some months. Base yourself in Dhordo or Hodka for an early visit. Best Oct–Feb." },
     highlights: [{ name: "Gujarat's first Conservation Reserve (2008)" }, { name: "Ramsar Wetland — Kutch's first" }, { name: "25,000–40,000 winter migratory birds" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~40 km / ~1h from Bhuj", costRange: "₹1,200–₹2,500 (cab from Bhuj)", tips: "Genuinely combinable with a wider Banni grassland/handicraft-village circuit." },
@@ -86322,6 +86324,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "March – May and October – December",
     duration: "Multi-day trekking recommended",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Permit required from the Sikkim Forest Department or a registered tour operator in Gangtok; a registered guide is mandatory. Best trekking Apr–mid-Jun and Sep–Nov; avoid monsoon (Jun–Sep)." },
     highlights: [{ name: "India's first UNESCO 'Mixed Heritage' World Heritage Site" }, { name: "1,784 sq km spanning up to the summit of Kangchenjunga" }, { name: "Six wild cat species, including snow leopard and clouded leopard" }, { name: "~550 bird species recorded" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bagdogra Airport, then ~6h road via Yuksom or Chungthang", fromMumbai: "Via Bagdogra or Kolkata, then road", fromBangalore: "Via Bagdogra or Kolkata, then road", duration: "Fly into Bagdogra, then road to the park's trekking gateways", costRange: "₹4,000–₹12,000 airfare to Bagdogra", tips: "Yuksom is the main gateway for Goecha La/Dzongri trekking; Chungthang for the north." },
@@ -86500,6 +86503,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – May",
     duration: "Half-day to full-day hike",
+    visitingHours: { opens: "8:00 AM", closes: "3:00 PM", note: "Last entry 2 PM; permit office open 9 AM–2 PM. Entry ₹55; forest department permission required." },
     highlights: [{ name: "Contiguous with Khangchendzonga National Park, its eastern buffer" }, { name: "Elevation range from subtropical forest to alpine shrub" }, { name: "The Tinjure viewpoint at the sanctuary's highest point" }, { name: "An accessible day-hike option just 30 km from Gangtok" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bagdogra Airport, then ~4-5h road to Gangtok", fromMumbai: "Via Bagdogra or Kolkata, then road", fromBangalore: "Via Bagdogra or Kolkata, then road", duration: "Fly into Bagdogra, then road to Gangtok", costRange: "₹4,000–₹12,000 airfare to Bagdogra", tips: "The sanctuary is a straightforward day trip from Gangtok." },
@@ -86558,6 +86562,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "April (peak rhododendron bloom); October – December for clear misty forest walks",
     duration: "1–2 day trek",
+    visitingHours: { opens: "8:00 AM", closes: "4:00 PM", note: "Best Apr–May for rhododendron bloom; Sep–Oct also good for clearer trekking weather. Access via Hilley, Dentam, or Soreng." },
     highlights: [{ name: "One of Sikkim's most concentrated rhododendron displays" }, { name: "Peak bloom in late April, turning hillsides crimson and white" }, { name: "Rich Himalayan birdlife across its high-altitude meadows and forest" }, { name: "Misty, moss-draped forest trails even outside bloom season" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bagdogra Airport, then ~6h road via Pelling/Hilley", fromMumbai: "Via Bagdogra or Kolkata, then road", fromBangalore: "Via Bagdogra or Kolkata, then road", duration: "Fly into Bagdogra, then road via Pelling to the Hilley trailhead", costRange: "₹4,000–₹12,000 airfare to Bagdogra", tips: "Hilley village is the usual starting point for the Barsey trek." },
