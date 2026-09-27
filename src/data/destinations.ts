@@ -10415,6 +10415,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature"],
     bestSeason: "October – March; visit at low tide to see the shrine fully, high tide for the sea-washes-the-shrine effect",
     duration: "30–45 minutes",
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Free entry. Peak darshan hours 6–10 AM & 5–7 PM. Best visited at low tide, when the sea-facing Shiva lingas are less submerged." },
     highlights: [{ name: "Five seaside Shivlingas" }, { name: "Sea washes the shrine at high tide" }, { name: "Fudam village setting" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Una/Diu — long haul", fromMumbai: "~9–10h to Diu, then ~10min further", fromBangalore: "Long haul", duration: "~10min from Diu town", costRange: "₹100–₹250 (auto/cab from Diu town)", tips: "Check tide timings if you specifically want to see the sea reach the shrine." },
@@ -25598,6 +25599,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Entry ₹50 (adults), ₹25 (children). Best Nov–Mar. Also known as Lala-Parjan Sanctuary." },
     highlights: [{ name: "India's smallest wildlife sanctuary (2 sq km)" }, { name: "Critically endangered Great Indian Bustard" }, { name: "One of only 2 bustard sites in Gujarat" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhuj — long haul", fromMumbai: "Via Bhuj — long haul", fromBangalore: "Not practical", duration: "~90 km / ~2h from Bhuj, via Naliya", costRange: "₹1,500–₹3,000 (cab from Bhuj)", tips: "The nearest bus station is Naliya, ~20 km away — most visitors arrange a private vehicle from Bhuj instead." },
