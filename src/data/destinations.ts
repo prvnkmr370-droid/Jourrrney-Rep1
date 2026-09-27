@@ -39459,6 +39459,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Active parish church, built 1848 (rebuilt 1902). Source: Haryana Tourism (haryanatourism.gov.in)." },
     highlights: [{ name: "A colonial-era heritage site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Ambala has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
