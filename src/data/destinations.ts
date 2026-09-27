@@ -32608,6 +32608,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November – March (park closed roughly July–September for monsoon)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Winter (Oct–Mar): safaris 6:30–10 AM & 2:30–5:30 PM. Summer (Apr–Jun): morning from 6 AM, evening 3:30–6:30 PM. Each safari capped at 3.5 hrs. Reserve shut Jul 1–Sep 30 (monsoon)." },
     highlights: [
       { name: "Former royal hunting ground of Alwar, sanctuary since 1955, tiger reserve since 1978" },
       { name: "Lost all ~28 tigers to poaching by 2004 — a widely-documented conservation failure" },
@@ -67165,6 +67166,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "November – April (reserve may close during peak monsoon)",
     duration: "1 – 2 days",
+    visitingHours: { opens: "7:00 AM", closes: "4:00 PM", note: "General park hours 7 AM–4 PM; safaris run in morning (~6:30–9:30 AM) and afternoon (~3–5:30 PM) slots. Reachable only via Tamil Nadu despite being in Kerala. Book through the Kerala Forest Department or at the Parambikulam check post." },
     highlights: [
       { name: "Bus safaris and the Kariyanshola guided nature trail" },
       { name: "The Kannimara Teak — a giant among the world's oldest living teak trees" },
@@ -71151,6 +71153,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – March (park open ~1 October – 30 June; closed in the monsoon)",
     duration: "2 – 3 days, or a safari add-on to Khajuraho",
+    visitingHours: { opens: "6:15 AM", closes: "6:00 PM", note: "Two safaris daily, roughly 6:15–11 AM and 3–6 PM (summer: 5:30–9 AM & 4–7 PM). Entry via Madla or Hinauta gate; a separate night safari (6:30–9:30 PM) runs in the buffer zone from Harsa gate. Park open Oct 1–Jun 30, shut Jul–Sep (monsoon)." },
     highlights: [
       { name: "Tigers re-established after local extinction — a landmark recovery story" },
       { name: "Jeep safaris from the Madla and Hinauta gates; boat rides on the Ken" },
@@ -71219,6 +71222,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Conservation"],
     bestSeason: "October – March (park open ~1 October – 30 June; closed in the monsoon)",
     duration: "2 days (1 – 2 safaris)",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Morning safari ~6–10:30 AM, evening ~3–7 PM (shifts seasonally); entry via Ahira/Peepalwadi gates, 30 min before slot start. Dedicated cheetah safari launched Oct 2025 — book via kunocheetahjunglesafari.com. Park shut Jul 1–Sep 30 (monsoon)." },
     highlights: [
       { name: "The only place in India where cheetahs live in the wild" },
       { name: "Cheetah safari in the Ahera tourism zone (jeep, permit-only)" },
@@ -71287,6 +71291,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Adventure"],
     bestSeason: "October – March (park open ~1 October – 30 June; closed in the monsoon)",
     duration: "2 – 3 days",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Two safaris daily: normal morning 6:30–11 AM (longer option to 12:30 PM), evening 3:30–5 PM (up to sunset in some slots). Core zone closed Wednesday evenings. Park open Oct 1–Jun 30, shut Jul–Sep (monsoon). Access via Madhai gate." },
     highlights: [
       { name: "Guided walking safaris on foot through the core forest" },
       { name: "Canoe and boat safaris on the Denwa; cycling on forest tracks" },
