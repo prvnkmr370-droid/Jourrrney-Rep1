@@ -98602,6 +98602,66 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Neutral-coloured clothing (khaki/olive)", "Binoculars", "Zoom camera lens", "Insect repellent", "Torch", "Warm layers (winter mornings are cold)"],
   },
 
+  {
+    id: "raipur",
+    name: "Raipur",
+    state: "Chhattisgarh",
+    tagline: "Chhattisgarh's Rice-Bowl Capital City",
+    description: "Raipur, the capital of Chhattisgarh since the state's formation in 2000, is a fast-growing commercial and administrative hub at the heart of the Chhattisgarh plains, historically known as the region's 'rice bowl'. The city blends a modernising skyline of flyovers and IT/business districts with older neighbourhoods, temples, and the planned satellite city of Naya Raipur (Atal Nagar) nearby, which now houses the state secretariat. Most visitors use Raipur primarily as a transit and stay-over point for reaching Chhattisgarh's waterfalls, wildlife sanctuaries, and tribal Bastar region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Raipur_Skyline_2019.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/66/Raipur_Skyline_2019.png",
+    imageCredit: "VishuN, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["City", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Mahant Ghasidas Memorial Museum" },
+      { name: "Vivekananda Sarovar (Budhapara Lake)" },
+      { name: "Naya Raipur (Atal Nagar) planned city" },
+      { name: "Gudiyari and old-city markets" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "9:00 PM", note: "Mahant Ghasidas Memorial Museum: 10:30 AM–5 PM, closed Mondays." },
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Direct flights — 2h", fromMumbai: "Direct flights — 1.5h", fromBangalore: "Direct flights — 1.5h", duration: "1.5–2h depending on origin", costRange: "₹3,000–₹7,000", tips: "Swami Vivekananda Airport has good domestic connectivity" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — 18h+", fromMumbai: "Direct trains — 16h+", fromBangalore: "Direct trains — 20h+", duration: "Varies by origin", costRange: "₹300–₹1,500", tips: "Raipur Junction is a major rail hub on the Howrah–Mumbai line" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels around the railway station and Pandri"], description: "Wide range of budget business hotels" },
+      { type: "Mid-Range", priceRange: "₹2,500–₹5,500/night", examples: ["Hotels along VIP Road and near Telibandha"], description: "Comfortable business-class hotels" },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available", available: true },
+      { mode: "City Bus", cost: "₹10–₹30", notes: "Covers the city and extends to Naya Raipur", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Common for shorter trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Barnawapara Wildlife Sanctuary", distance: "70 km", type: "Wildlife", isHidden: false, id: "barnawapara" },
+      { name: "Rajim", distance: "45 km", type: "Pilgrimage", isHidden: false, id: "rajim" },
+      { name: "Sirpur Archaeological Site", distance: "80 km", type: "Heritage", isHidden: false, id: "sirpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "City Highlights", morning: "Mahant Ghasidas Memorial Museum for Chhattisgarhi art and archaeology", afternoon: "Vivekananda Sarovar and surrounding park", evening: "Old-city markets around Gudiyari and Sadar Bazaar", stay: "Raipur hotel", meals: "Chhattisgarhi thali", tips: "Raipur works best as a 1–2 day base before heading out to Chhattisgarh's waterfalls, wildlife sanctuaries, or the Bastar tribal belt" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["State capital with well-established police presence", "Good app-cab availability"],
+      precautions: ["Standard city precautions around the railway station and bus stands at night"],
+      soloTips: ["Comfortable for solo travellers", "App cabs are a reliable, safe option after dark"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["VIP Road", "Telibandha", "Civil Lines"],
+      avoidAreas: ["Isolated areas near the railway station late at night"],
+    },
+    rating: 4.1,
+    reviews: 5400,
+    mustEat: ["Chhattisgarhi thali", "Faraa and chila (local snacks)", "Bafauri"],
+    packingTips: ["Comfortable walking shoes", "Light cottons (hot for much of the year)", "Sunscreen"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
