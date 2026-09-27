@@ -74991,6 +74991,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "Trekking", "History"],
     bestSeason: "October – February (clear, cool, safe underfoot); the monsoon (June–September) is spectacular but the ridges and gate-steps are slippery and mist can whiteout the machis; summer treks only very early",
     duration: "1 full day, or an overnight camp on Padmavati Machi",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Open access hill fort — no gate/ticket, but local authorities recommend trekking only within these hours for safety. Best Oct–Mar." },
     highlights: [
       { name: "Padmavati Machi — the residential heart, temple, lake and palace ruins" },
       { name: "Sanjivani Machi's triple line of fortification" },
@@ -75885,6 +75886,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Fort", "Trekking", "History"],
     bestSeason: "October – March, cool and clear with the hills still green after the rains; the monsoon (June–September) is popular and spectacular but the trail and the Vinchukada turn slippery and dangerous; summer treks only very early or late",
     duration: "Half a day to a full day from Malavli / Lonavala",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "As an open hill fort, trekkers often start earlier (~4:30 AM) for sunrise; gates close and overnight stays aren't allowed. No ASI entry fee; a small local village charge (~₹20–30) may apply. Best Oct–Mar." },
     highlights: [
       { name: "The four gateways — Ganesh, Narayan, Hanuman and Maha Darwaja" },
       { name: "The Vinchukada (Scorpion's Tail) fortified spur" },
@@ -94102,6 +94104,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Adventure"],
     bestSeason: "October – February (cooler weather for trekking)",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "10:00 PM", note: "Source: Telangana Tourism (tourism.telangana.gov.in). Some other sources cite a shorter 10 AM–5 PM window — confirm locally." },
     highlights: [
       { name: "Monolithic rock fort (500 ft above plains)" },
       { name: "10th-century Chalukya-era construction" },
