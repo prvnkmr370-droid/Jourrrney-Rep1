@@ -40557,6 +40557,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "5:00 AM", closes: "9:00 PM", note: "Technically open 24 hours with no gate, but this is the practical/safe visiting window. Free entry. Best Nov–Feb for peak rose bloom." },
     highlights: [{ name: "A green, open-air space" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Indira Gandhi International Airport (DEL) — the nearest airport for the whole NCR belt", fromMumbai: "~2h direct to Delhi", fromBangalore: "~2.5h direct to Delhi", duration: "~30–60 min from the airport by road/metro", costRange: "₹2,500–₹10,000", tips: "Delhi's own airport serves this entire stretch — no separate regional airport needed." },
@@ -43020,6 +43021,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "History"],
     bestSeason: "October – March",
     duration: "30–60 minutes",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Entry generally free; donations encouraged." },
     highlights: [{ name: "Surviving fort/palace architecture" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL) or Chandigarh (IXC), whichever is closer, then road", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "Varies by connecting airport", costRange: "₹2,500–₹9,000 (flight leg)", tips: "Jhajjar has no airport of its own — plan the connecting road leg from Delhi or Chandigarh." },
@@ -47086,6 +47088,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:00 AM", closes: "6:00 PM", note: "Split hours: 9 AM–1 PM & 2–6 PM in winter (Oct–Mar), extending to 3–7 PM afternoons in summer (Apr–Sep). Entry ₹10. Asia's largest outdoor cacti/succulent garden." },
     highlights: [{ name: "A green, open-air space" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport (IXC) — Panchkula is part of the Chandigarh Tricity, ~15 km from the airport", fromMumbai: "~2.5h direct to Chandigarh", fromBangalore: "~3h direct to Chandigarh", duration: "~15–20 min from airport", costRange: "₹2,500–₹9,000", tips: "The same airport used for Chandigarh — Panchkula sits right across the Ghaggar from it." },
@@ -49604,6 +49607,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "7:00 PM", note: "Summer: 6–10 AM & 4–7 PM. Winter: 7–11 AM & 3:30–6 PM. Closed Jul–Sep (monsoon). Advance safari booking via the Haryana Forest Department; private vehicles not permitted on safari routes." },
     highlights: [{ name: "A green, open-air space" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Chandigarh Airport (IXC) is the nearest — ~90 km from Yamuna Nagar", fromMumbai: "~2.5h direct to Chandigarh", fromBangalore: "~3h direct to Chandigarh", duration: "~1.5–2h road from Chandigarh airport", costRange: "₹2,500–₹9,000", tips: "No airport in Yamuna Nagar itself — Chandigarh is the practical option." },
