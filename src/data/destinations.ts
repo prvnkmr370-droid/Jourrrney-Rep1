@@ -22876,6 +22876,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Museum", "Heritage"],
     bestSeason: "Year-round; check current hours and any workshop/concert schedule",
     duration: "1–2 hours",
+    visitingHours: { opens: "10:00 AM", closes: "6:00 PM", note: "Closed Mondays. Source: museumofgoa.com." },
     highlights: [{ name: "Goa's largest contemporary art space" }, { name: "Sculpture garden & auditorium" }, { name: "Real workshops, concerts & art classes" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Calangute — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10min from Calangute", costRange: "₹150–₹400 (auto/cab)", tips: "Check the current event/workshop calendar before visiting — it's a genuinely active cultural venue, not just a static gallery." },
@@ -23095,6 +23096,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – March (open year-round)",
     duration: "2–3 hours",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Reached by free pedestrian ferry from Ribandar wharf to Chorao Island; boat trips inside the sanctuary depend on tide timings. Best Oct–Mar for migratory birds." },
     highlights: [{ name: "Dugout-canoe mangrove canal tour" }, { name: "Named for ornithologist Dr Salim Ali" }, { name: "Watch tower birdwatching" }],
     transport: [
       { mode: "Road + Ferry", icon: "🚗⛴️", fromDelhi: "Via Panaji — long haul", fromMumbai: "~10–12h to Panaji", fromBangalore: "Long haul", duration: "~15min drive to Ribandar, then ferry", costRange: "₹300–₹800 (guided canoe tour)", tips: "Movement is boat-only at high tide — check tide timing before planning your visit." },
@@ -23368,6 +23370,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "October – March; visit in the evening for sunset",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:30 PM", note: "Free entry. A largely ruined fort, popularised by the film Dil Chahta Hai; allow 1–2 hrs for the climb and viewpoint." },
     highlights: [{ name: "Filming location for Dil Chahta Hai" }, { name: "Panoramic sunset views over 3 beaches" }, { name: "Ancient laterite ramparts" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Mapusa — long haul", fromMumbai: "~10–12h to North Goa", fromBangalore: "Long haul", duration: "~10km / ~20min from Mapusa", costRange: "₹200–₹500 (auto/cab)", tips: "Time your visit for sunset — it's genuinely the fort's biggest draw, and gets busy in high season." },
@@ -23421,6 +23424,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage", "Fort"],
     bestSeason: "October – March; avoid monsoon (little shelter from rain)",
     duration: "1–2 hours",
+    visitingHours: { opens: "9:30 AM", closes: "5:30 PM", note: "Free entry, no formal ticket counter. Best visited late afternoon for sunset over the Arabian Sea." },
     highlights: [{ name: "One of Goa's oldest forts, pre-dating Portuguese rule" }, { name: "Named for the Ramayana" }, { name: "Panoramic Sal River & ocean views" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Canacona — long haul", fromMumbai: "~11–13h to South Goa", fromBangalore: "~7–8h", duration: "~16km / ~30min from Agonda", costRange: "₹300–₹700 (auto/cab from Agonda)", tips: "No real shelter on-site — skip a monsoon visit and check weather before heading out." },
