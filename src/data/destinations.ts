@@ -56932,6 +56932,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "December – February (best elephant sightings)",
     duration: "1 day",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "No formal jeep safari — explored on foot or by vehicle with a guide. Some sources list 7 AM–5 PM instead; confirm locally." },
     highlights: [
       { name: "Seasonal wild elephant herds (~85 individuals)" },
       { name: "The hilltop Shiva temple within the sanctuary" },
@@ -59170,6 +59171,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "October – April",
     duration: "3–4 hours",
+    visitingHours: { opens: "6:00 AM", closes: "4:30 PM", note: "Guided night tours depart around 5 PM. Confirm current timings with the Jharkhand Forest Department before visiting." },
     highlights: [
       { name: "The central forest-ringed lake" },
       { name: "Sambar, wild boar, and leopard habitat" },
@@ -68340,6 +68342,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Birdwatching"],
     bestSeason: "November – April (migratory birds); visit around low tide and early morning",
     duration: "2 – 3 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Best Dec–Apr, early morning for peak bird sightings." },
     highlights: [
       { name: "Kerala's first community reserve (Kadalundi–Vallikkunnu, 2007)" },
       { name: "60+ migratory shorebird species from Nov–April; resident kingfishers and raptors" },
@@ -69694,6 +69697,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Birdwatching"],
     bestSeason: "October – March (migrants); February – April is best for breeding activity",
     duration: "Half day to 1 – 2 days",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Guided Dr Salim Ali Trail bird walks run at set slots (7, 7:30, 9, 9:30 AM & 2, 2:30, 4, 4:30 PM). Best Oct–Mar." },
     highlights: [
       { name: "Kerala's first bird sanctuary (1983), named for Dr Salim Ali" },
       { name: "270–300+ bird species — Ceylon frogmouth, Sri Lanka bay owl, Malabar trogon, grey-headed bulbul" },
@@ -75510,6 +75514,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Trekking"],
     bestSeason: "Mid-July to September for the green, waterfall-laced monsoon landscape; March–June for the best wildlife sightings as animals gather at water; November–February is cool and good for trekking and the forts",
     duration: "1 – 2 days",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Some sources list shorter 6 AM–2:30 PM hours with Tuesday closure — confirm locally. Open 15 Oct–30 Jun; closed Jul–mid-Oct (monsoon). Day-visit permits available at the entry gate." },
     highlights: [
       { name: "Gaur (Indian bison) herds — the sanctuary's signature animal" },
       { name: "Jeep safaris and nature walks from the Dajipur zone" },
