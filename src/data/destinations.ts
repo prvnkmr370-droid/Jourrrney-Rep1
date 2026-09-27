@@ -57334,6 +57334,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Same access as Betla National Park: vehicle entry 6–10 AM & 2–5 PM. Park closed Jul–Sep (monsoon)." },
     highlights: [
       { name: "The twin fort structure — old fort in the plains, new fort on the hill" },
       { name: "Weathered Chero-dynasty stone gateways and walls" },
@@ -61144,6 +61145,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Religious", "Heritage"],
     bestSeason: "October – March",
     duration: "2–3 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Base town for the Shikharji Jain pilgrimage trek up Parasnath Hill. Best Oct–Mar." },
     highlights: [
       { name: "Over a dozen dedicated Tirthankar temples in a single walkable town" },
       { name: "The illuminated Shantisagar Memorial Temple" },
@@ -83880,6 +83882,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "December – February (best wildlife viewing); Olive Ridley nesting typically Feb–March at nearby Gahirmatha",
     duration: "Half-day to full-day boat safari",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Boating 8 AM–4/5 PM (1.5–2 hr trips) from Dangmal, Khola, or Gupti gates. Entry ₹20 (Indians)/₹100 (foreigners) plus boat charges; forest guide mandatory. Visit only Aug–Apr — fully closed during crocodile nesting season." },
     highlights: [{ name: "India's second-largest mangrove ecosystem" }, { name: "The country's largest saltwater crocodile population" }, { name: "King cobras and water monitors" }, { name: "Near Gahirmatha, a major Olive Ridley turtle nesting site" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Biju Patnaik International Airport, Bhubaneswar — ~2h direct, then ~3h road", fromMumbai: "~2h direct to Bhubaneswar, then road", fromBangalore: "~2h direct to Bhubaneswar, then road", duration: "Fly into Bhubaneswar, then ~172 km by road", costRange: "₹3,000–₹10,000 airfare to Bhubaneswar", tips: "Bhadrak is the nearest railhead and practical base." },
@@ -85211,6 +85214,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February",
     duration: "Full day, or an overnight nature-camp stay",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Safari vehicles 10 AM–4 PM; boating 7:30–10:30 AM & 3–6 PM. Entry ₹40 (adults); under-8s free." },
     highlights: [{ name: "Historic hideout of freedom fighter Veer Surendra Sai" }, { name: "The endangered four-horned antelope (chousingha)" }, { name: "234 recorded bird species, with winter migratory activity" }, { name: "Scenic cottages overlooking the Hirakud Dam" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Veer Surendra Sai Airport, Jharsuguda — then ~1h road", fromMumbai: "Via Bhubaneswar or Kolkata, then road", fromBangalore: "Via Bhubaneswar or Kolkata, then road", duration: "Fly into Jharsuguda, then a short drive", costRange: "₹4,000–₹12,000 airfare to Jharsuguda", tips: "Jharsuguda is the closest airport to the sanctuary." },
