@@ -25091,6 +25091,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – March; closed during peak monsoon breeding season (check current dates)",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:30 AM", closes: "6:30 PM", note: "Gate hours split 6:30 AM–1 PM & 3–6:30 PM; safaris run within that window. Closed mid-Jun–mid-Oct (monsoon). Source: girlion.gujarat.gov.in." },
     highlights: [{ name: "India's only tropical-grassland national park" }, { name: "Blackbuck antelope herds" }, { name: "Striped hyena & wolf sightings" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~42 km / ~1h from Bhavnagar", costRange: "₹1,200–₹2,500 (cab from Bhavnagar)", tips: "Go for sunrise — the open grassland light and animal activity are both genuinely best early." },
@@ -25146,6 +25147,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February; open 15 Oct – 15 Jun, 6am–6pm",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Closed 15 Jun–15 Oct (monsoon). Entry via Bajana or Dhrangadhra gate; morning safari generally best for sightings." },
     highlights: [{ name: "The last wild Indian wild ass (khur) population" }, { name: "Real salt-desert-wetland habitat" }, { name: "Greater & Lesser Flamingos" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~110 km / ~2h from Ahmedabad (via Dasada)", costRange: "₹2,000–₹4,000 (cab from Ahmedabad)", tips: "Dasada village is the main gateway — most resorts and safari operators are based there." },
@@ -25201,6 +25203,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature"],
     bestSeason: "November – February (winter migratory season)",
     duration: "Half day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Ticket window closes 5:30 PM. Boating available (rates negotiated with local boatmen at the gate). Best Nov–Feb for peak migratory bird numbers." },
     highlights: [{ name: "210+ recorded bird species in winter" }, { name: "15th-century check-dam origin" }, { name: "Flamingo sightings at dawn/dusk" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Ahmedabad — long haul", fromMumbai: "Via Ahmedabad — long haul", fromBangalore: "Not practical", duration: "~65 km / ~1h from Ahmedabad", costRange: "₹800–₹1,800 (cab from Ahmedabad)", tips: "Genuinely an easy half-day trip from Ahmedabad, ideal for an early-morning start to catch peak bird activity." },
@@ -33018,6 +33021,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "October – March",
     duration: "1 day",
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Safari slots roughly 6–9 AM and 4–5 PM (2–3 hrs each). Best Oct–Mar." },
     highlights: [
       { name: "610+ sq km sanctuary encircling Kumbhalgarh Fort in the Aravalli Range" },
       { name: "One of India's largest wolf populations, with successful documented wolf breeding" },
@@ -35256,6 +35260,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Off-beat"],
     bestSeason: "September – March (winter raptors arrive November onwards)",
     duration: "Half day to 1 day",
+    visitingHours: { opens: "5:30 AM", closes: "6:00 PM", note: "Jeep safaris in two slots, ~7–10 AM and 3–6 PM (~1 hr each). Best Nov–Feb for blackbuck and raptor sightings." },
     highlights: [{ name: "Herds of Indian blackbuck — almost guaranteed sightings" }, { name: "One of India's best raptor sites in winter" }, { name: "Open grassland terrain — unusual for an Indian sanctuary" }, { name: "Very few visitors compared to tiger reserves" }, { name: "Harriers, short-eared owls, and eagles in winter" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Jhunjhunu — ~6h (330 km)", fromMumbai: "Via Jaipur — 18h", fromBangalore: "—", duration: "~2h from Churu (85 km); ~4h from Jaipur (270 km)", costRange: "₹2,500–₹5,000 cab", tips: "Tal Chhapar is remote — arrange transport in advance. The sanctuary entrance is near Chhapar village." },
