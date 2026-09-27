@@ -17686,7 +17686,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Nagarjunsagar Dam", distance: "~150 km", type: "Dam & Reservoir", isHidden: true },
-      { name: "Kurnool", distance: "~175 km", type: "District Gateway", isHidden: true },
+      { name: "Kurnool", distance: "~175 km", type: "District Gateway", isHidden: true, id: "kurnool" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Pilgrim", perDayPerPerson: 900, accommodation: 350, food: 250, transport: 200, activities: 100 },
@@ -17813,7 +17813,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in this backwater region — a hired taxi or local boat is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Rajahmundry", distance: "Regional gateway", type: "Godavari Gateway City", isHidden: true },
+      { name: "Rajahmundry", distance: "Regional gateway", type: "Godavari Gateway City", isHidden: true, id: "rajahmundry" },
       { name: "Kakinada", distance: "Regional gateway", type: "Port Town", isHidden: true },
       { name: "Papikondalu (Papi Hills)", distance: "River cruise from Rajahmundry", type: "Godavari Gorge Cruise", isHidden: true },
     ],
@@ -18121,7 +18121,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Gandikota", distance: "60 km", type: "Fort/Canyon", isHidden: false, id: "gandikota" },
       { name: "Srisailam", distance: "180 km", type: "Pilgrimage", isHidden: false, id: "srisailam" },
-      { name: "Kurnool", distance: "100 km", type: "City", isHidden: true },
+      { name: "Kurnool", distance: "100 km", type: "City", isHidden: true, id: "kurnool" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 400, food: 350, transport: 300, activities: 150 },
@@ -18202,6 +18202,120 @@ export const DESTINATIONS: Destination[] = [
     reviews: 7600,
     mustEat: ["Simple vegetarian ashram canteen meals", "South Indian thali in the town"],
     packingTips: ["Modest clothing (all-white is traditional for ashram visits)", "Comfortable walking shoes", "Light layers"],
+  },
+
+  {
+    id: "rajahmundry",
+    name: "Rajahmundry",
+    state: "Andhra Pradesh",
+    tagline: "Godavari Gateway City",
+    description: "Rajahmundry (officially Rajamahendravaram), on the banks of the Godavari River in East Godavari district, is one of Andhra Pradesh's oldest cities and a cultural heartland often called the 'Cultural Capital of Andhra Pradesh' for its role in Telugu literary history. The city's most recognisable landmark is the Godavari Arch Bridge, a striking steel-arch rail bridge spanning the river, and Rajahmundry serves as the main gateway for river cruises into the Konaseema delta region and boat trips through the Papikondalu hills further upstream.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rajahmundry_arch_railway_bridge.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rajahmundry_arch_railway_bridge.jpg",
+    imageCredit: "IM3847, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October to March",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Godavari Arch Bridge" },
+      { name: "Godavari river ghats" },
+      { name: "Gateway to Papikondalu river-gorge boat cruises" },
+      { name: "Gateway to Konaseema delta" },
+    ],
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Rajahmundry Airport — 2.5–3h", fromMumbai: "Fly to Rajahmundry Airport — 1.5–2h", fromBangalore: "Fly to Rajahmundry Airport — 1–1.5h", duration: "1–3h depending on origin", costRange: "₹3,000–₹7,000", tips: "Rajahmundry Airport has good domestic connectivity" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — 30h+", fromMumbai: "Direct trains — 20h+", fromBangalore: "Direct trains — 12h+", duration: "Varies by origin", costRange: "₹300–₹1,500", tips: "Rajahmundry railway station is a major stop on the Chennai-Kolkata line" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹800–₹2,000/night", examples: ["Hotels around the railway station"], description: "Wide range of budget business hotels" },
+      { type: "Mid-Range", priceRange: "₹2,500–₹5,000/night", examples: ["Hotels along the riverfront"], description: "Comfortable hotels, several with river views" },
+    ],
+    localTransport: [
+      { mode: "App Cab (Ola/Uber)", cost: "₹100–₹400", notes: "Widely available", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Common for shorter trips", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Konaseema", distance: "50 km", type: "River Delta", isHidden: false, id: "konaseema" },
+      { name: "Vijayawada", distance: "70 km", type: "City", isHidden: false, id: "vijayawada" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 600, food: 300, transport: 150, activities: 150 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 3000, accommodation: 1800, food: 500, transport: 400, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Rajahmundry River City", morning: "Walk the Godavari ghats and view the Arch Bridge", afternoon: "Boat cruise towards the Konaseema delta or Papikondalu hills", evening: "Sunset over the Godavari from the riverfront", stay: "Riverfront hotel", meals: "Andhra-style meals with Godavari river fish", tips: "Rajahmundry works well as the launch point for a Papikondalu river-gorge cruise or a Konaseema backwater trip" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-established city with good transport links", "Generally low-crime regional hub"],
+      precautions: ["Standard city precautions around the railway station at night"],
+      soloTips: ["Comfortable for solo travellers", "App cabs are widely available"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Riverfront area", "Main city center"],
+      avoidAreas: ["Isolated areas near the railway station late at night"],
+    },
+    rating: 4.3,
+    reviews: 6100,
+    mustEat: ["Godavari river fish curry", "Andhra-style meals", "Pesarattu (moong dal dosa)"],
+    packingTips: ["Comfortable walking shoes", "Sunscreen", "Light cottons (hot and humid for much of the year)"],
+  },
+
+  {
+    id: "kurnool",
+    name: "Kurnool",
+    state: "Andhra Pradesh",
+    tagline: "Gateway to Belum Caves and Gandikota",
+    description: "Kurnool, on the banks of the Tungabhadra River, was briefly the capital of Andhra State before Hyderabad, and today serves primarily as the district hub and gateway for visiting Belum Caves and Gandikota further into the Rayalaseema plateau. Its own centrepiece is Konda Reddy Fort (Kondareddy Buruju), a circular medieval fort with a distinctive minaret-like watchtower overlooking the old city, alongside a handful of other Qutb Shahi and Nawabi-era monuments from the city's time as a regional seat of power.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Kondareddy_fort%2C_Kurnool.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/88/Kondareddy_fort%2C_Kurnool.jpg",
+    imageCredit: "Arjunaraoc, CC0, via Wikimedia Commons",
+    category: ["Heritage"],
+    bestSeason: "October to February",
+    duration: "1 Day",
+    highlights: [
+      { name: "Konda Reddy Fort (Kondareddy Buruju)" },
+      { name: "Gateway to Belum Caves" },
+      { name: "Gateway to Gandikota" },
+      { name: "Tungabhadra riverfront" },
+    ],
+    transport: [
+      { mode: "Train", icon: "🚂", fromDelhi: "Direct trains — 24h+", fromMumbai: "Direct trains — 14h+", fromBangalore: "Direct trains — 6–7h", duration: "Varies by origin", costRange: "₹300–₹1,200", tips: "Kurnool City/Kurnool Town railway stations connect to the Chennai-Mumbai line" },
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~215 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "300 km via NH44", duration: "4–5 hrs from Hyderabad, 5 hrs from Bangalore", costRange: "₹800–₹2,000 by bus/taxi", tips: "Well-connected by NH44 to both Hyderabad and Bangalore" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹600–₹1,500/night", examples: ["Hotels around the bus stand and railway station"], description: "Basic business hotels" },
+      { type: "Mid-Range", priceRange: "₹1,500–₹3,000/night", examples: ["Hotels along Bellary Road"], description: "Comfortable hotels for a stopover" },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Common for getting around the city", available: true },
+      { mode: "Private Taxi", cost: "₹1,500–₹2,500/day", notes: "For day trips to Belum Caves and Gandikota", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Belum Caves", distance: "100 km", type: "Caves", isHidden: false, id: "belum-caves" },
+      { name: "Gandikota", distance: "95 km", type: "Fort/Canyon", isHidden: false, id: "gandikota" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2200, accommodation: 1200, food: 400, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kurnool City & Fort", morning: "Visit Konda Reddy Fort and its watchtower", afternoon: "Explore the old city's Qutb Shahi and Nawabi-era monuments", evening: "Walk along the Tungabhadra riverfront", stay: "Kurnool hotel", meals: "Rayalaseema-style spicy cuisine", tips: "Most travellers use Kurnool as an overnight base before or after visiting Belum Caves and Gandikota" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["District hub with established police presence", "Regular traveller traffic as a gateway town"],
+      precautions: ["Standard city precautions around bus stand areas at night"],
+      soloTips: ["Comfortable for solo travellers passing through", "Arrange a private taxi in advance for Belum Caves/Gandikota day trips"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["City centre", "Bellary Road area"],
+      avoidAreas: ["Isolated areas near the bus stand late at night"],
+    },
+    rating: 4.1,
+    reviews: 3200,
+    mustEat: ["Rayalaseema-style spicy cuisine", "Nellore-style biryani variants", "Local street food near the fort"],
+    packingTips: ["Comfortable walking shoes", "Sunscreen and hat (very hot, dry climate)", "Light cottons"],
   },
 
   // The 10 destinations below are sourced from tourism.bihar.gov.in (the
