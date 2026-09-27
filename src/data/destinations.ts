@@ -17927,6 +17927,64 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Non-slip shoes (mandatory)", "Torch/headlamp", "Light jacket (caves are cool)", "Camera (no flash inside)", "Water bottle", "Comfortable clothing"],
   },
 
+  {
+    id: "puttaparthi",
+    name: "Puttaparthi",
+    state: "Andhra Pradesh",
+    tagline: "Prasanthi Nilayam — Global Spiritual Centre",
+    description: "Puttaparthi, in Sri Sathya Sai district, is built around Prasanthi Nilayam, the ashram founded by Sri Sathya Sai Baba that draws devotees and spiritual seekers from across India and abroad. Once a small village, the town grew substantially around the ashram, and now hosts an international airport, a large hospital, and a planetarium alongside the ashram complex itself, set against the dry hills of the Anantapur plateau.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Puttaparthi_AP_Dec_2015_3.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Puttaparthi_AP_Dec_2015_3.jpg",
+    imageCredit: "J929, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Prasanthi Nilayam ashram" },
+      { name: "Sathya Sai Museum" },
+      { name: "Chaitanya Jyoti Museum" },
+      { name: "Planetarium" },
+    ],
+    visitingHours: { opens: "4:30 AM", closes: "9:00 PM", note: "Ashram follows a daily schedule of bhajans/darshan sessions; free entry." },
+    transport: [
+      { mode: "Flight", icon: "✈️", fromDelhi: "Fly to Sri Sathya Sai Airport, Puttaparthi (via Bangalore/Hyderabad)", fromMumbai: "Fly via Bangalore", fromBangalore: "Direct flights — 45 min", duration: "45 min–1h from Bangalore", costRange: "₹3,000–₹7,000", tips: "Puttaparthi has its own small airport with limited connections, mainly via Bangalore" },
+      { mode: "Train", icon: "🚂", fromDelhi: "Via Bangalore/Guntakal then road", fromMumbai: "Via Guntakal then road", fromBangalore: "Direct train — 3–4h", duration: "3–4h from Bangalore", costRange: "₹150–₹600", tips: "Sri Sathya Sai Prasanthi Nilayam railway station has direct connections from Bangalore and Chennai" },
+    ],
+    accommodation: [
+      { type: "Ashram Accommodation", priceRange: "₹100–₹500/night", examples: ["Ashram guest rooms (booking required)"], description: "Very basic dormitory-style ashram accommodation for devotees" },
+      { type: "Budget Hotels", priceRange: "₹800–₹2,000/night", examples: ["Hotels around the ashram area"], description: "Simple hotel rooms as an alternative to ashram stays" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The ashram and town centre are fully walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹100", notes: "For the airport and railway station", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lepakshi", distance: "90 km", type: "Heritage", isHidden: false, id: "lepakshi" },
+      { name: "Horsley Hills", distance: "110 km", type: "Hill Station", isHidden: false, id: "horsley-hills" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Pilgrim Budget", perDayPerPerson: 500, accommodation: 150, food: 200, transport: 100, activities: 50 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 1500, accommodation: 800, food: 400, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ashram Visit", morning: "Morning darshan/bhajans at Prasanthi Nilayam", afternoon: "Visit the Sathya Sai Museum and Chaitanya Jyoti Museum", evening: "Evening bhajans at the ashram", stay: "Ashram accommodation or nearby hotel", meals: "Simple vegetarian meals at the ashram canteen", tips: "Modest dress and quiet, respectful conduct are expected throughout the ashram complex" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-organised ashram with dedicated visitor facilities", "Calm, devotional atmosphere"],
+      precautions: ["Modest dress expected throughout the ashram"],
+      soloTips: ["Very comfortable for solo pilgrims", "Ashram accommodation is a safe, convenient base"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Ashram complex", "Main town area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 7600,
+    mustEat: ["Simple vegetarian ashram canteen meals", "South Indian thali in the town"],
+    packingTips: ["Modest clothing (all-white is traditional for ashram visits)", "Comfortable walking shoes", "Light layers"],
+  },
+
   // The 10 destinations below are sourced from tourism.bihar.gov.in (the
   // state's official tourism portal) — real descriptions, historical
   // facts, best-season/etiquette notes, and local-transport details for
