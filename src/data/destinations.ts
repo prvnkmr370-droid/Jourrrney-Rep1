@@ -18372,6 +18372,61 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera", "Sun protection"],
   },
 
+  {
+    id: "papikondalu",
+    name: "Papikondalu",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "Forested Gorge Cruise on the Godavari",
+    description: "Papikondalu (Papi Hills), a stretch of forested hills flanking a dramatic narrowing of the Godavari River near Rajahmundry, is one of Andhra Pradesh's most popular river-cruise destinations. Multi-hour boat trips wind through the gorge past densely wooded slopes rising directly from the water, with tribal Konda Reddy villages, waterfalls, and the riverside Perantalapalli temple as stops along the route — a rare combination of genuine river-gorge scenery reachable without a trek.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Papikondalu_view_61.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Papikondalu_view_61.JPG",
+    imageCredit: "Pranayraj1985, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October to February",
+    duration: "1 Day (full boat cruise)",
+    highlights: [
+      { name: "Godavari river gorge boat cruise" },
+      { name: "Konda Reddy tribal villages" },
+      { name: "Perantalapalli riverside temple" },
+      { name: "Forested hillside scenery" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Rajahmundry then boat departure point", fromMumbai: "Fly to Rajahmundry then road", fromBangalore: "Fly to Rajahmundry then road", duration: "20–30 min from Rajahmundry to the boat jetty", costRange: "₹300–₹600 by taxi to the jetty", tips: "Boats also depart from Bhadrachalam (Telangana) further upstream, offering a shorter one-way option" },
+    ],
+    accommodation: [
+      { type: "Rajahmundry Hotels", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Rajahmundry"], description: "Usually visited as a full-day boat trip from Rajahmundry" },
+    ],
+    localTransport: [
+      { mode: "Boat Cruise", cost: "₹600–₹1,500", notes: "Full-day guided cruises are the standard way to see Papikondalu", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajahmundry", distance: "50 km", type: "City", isHidden: false, id: "rajahmundry" },
+      { name: "Bhadrachalam", distance: "70 km (via boat/road)", type: "Spiritual", isHidden: false, id: "bhadrachalam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 0, food: 300, transport: 800, activities: 100 },
+      { tier: "mid", label: "Comfortable", perDayPerPerson: 2500, accommodation: 0, food: 500, transport: 1800, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Papikondalu Boat Cruise", morning: "Board the boat at Rajahmundry for the full-day gorge cruise", afternoon: "Stop at Perantalapalli temple and a Konda Reddy village", evening: "Return cruise to Rajahmundry", stay: "Rajahmundry hotel", meals: "Meals typically included or available onboard/at stops", tips: "Book the cruise a day ahead in peak season (Oct–Feb); the full round trip can take 6–8 hours" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-established tourist boat operations with safety equipment", "Popular family destination"],
+      precautions: ["Standard water-safety precautions on the boat", "Wear life jackets as provided"],
+      soloTips: ["Comfortable for solo travellers joining group cruises", "Book through registered tourism boat operators"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "East Godavari Police", number: "0883-2461201" }],
+      safeZones: ["Designated boat cruise routes and stops"],
+      avoidAreas: ["Swimming outside designated, supervised areas"],
+    },
+    rating: 4.6,
+    reviews: 8900,
+    mustEat: ["Meals served onboard/at cruise stops", "Andhra-style fish curry"],
+    packingTips: ["Sunscreen and hat", "Light rain gear (seasonal)", "Camera", "Comfortable footwear for village stops"],
+  },
+
   // The 10 destinations below are sourced from tourism.bihar.gov.in (the
   // state's official tourism portal) — real descriptions, historical
   // facts, best-season/etiquette notes, and local-transport details for
@@ -94982,7 +95037,7 @@ export const DESTINATIONS: Destination[] = [
     ],
     nearbyPlaces: [
       { name: "Khammam", distance: "115 km", type: "Town", isHidden: true },
-      { name: "Papikondalu", distance: "70 km (via boat/road)", type: "River Gorge", isHidden: true },
+      { name: "Papikondalu", distance: "70 km (via boat/road)", type: "River Gorge", isHidden: true, id: "papikondalu" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Pilgrim Budget", perDayPerPerson: 800, accommodation: 300, food: 250, transport: 150, activities: 100 },
@@ -95552,6 +95607,225 @@ export const DESTINATIONS: Destination[] = [
     reviews: 1600,
     mustEat: ["Local Telangana meals in Karimnagar"],
     packingTips: ["Sturdy trekking shoes", "Water bottle", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "kaleshwaram",
+    name: "Kaleshwaram (Kaleshwara Mukteshwara Swamy Temple)",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Twin-Shiva Temple at a Sacred Godavari Confluence",
+    description: "Kaleshwaram, at the confluence of the Godavari and Pranahita rivers in Bhadradri Kothagudem district, centres on the unusual Kaleshwara Mukteshwara Swamy Temple, which enshrines two Shiva lingams — Kaleshwara and Mukteshwara — side by side in a single sanctum, a rare configuration in Hindu temple architecture. The town has also become nationally known in recent years as the namesake of the Kaleshwaram Lift Irrigation Project, one of the world's largest multi-stage lift irrigation schemes, drawing infrastructure visitors alongside traditional pilgrims to the ancient riverside temple.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/62/Kaleswaram.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/62/Kaleswaram.jpg",
+    imageCredit: "Tallamma, Public Domain, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Twin Shiva lingams (Kaleshwara and Mukteshwara)" },
+      { name: "Godavari-Pranahita river confluence" },
+      { name: "Kaleshwaram Lift Irrigation Project (nearby)" },
+    ],
+    visitingHours: { opens: "5:00 AM", closes: "8:00 PM", note: "Free entry; especially busy during Maha Shivaratri." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~230 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "4.5–5 hrs from Hyderabad", costRange: "₹3,000–₹5,000 by taxi", tips: "Mancherial or Karimnagar are the nearest major towns for onward connections" },
+    ],
+    accommodation: [
+      { type: "Local Guesthouses", priceRange: "₹600–₹1,500/night", examples: ["Simple lodges near the temple"], description: "Basic accommodation; usually visited as a day trip" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple and riverside are walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹150", notes: "Around the town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Karimnagar", distance: "90 km", type: "City", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 250, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kaleshwaram Temple Visit", morning: "Darshan at the twin Shiva lingam sanctum", afternoon: "Walk the riverside confluence ghats", evening: "Return to Karimnagar or onward travel", stay: "Karimnagar hotel", meals: "Simple local meals near the temple", tips: "Maha Shivaratri draws very large crowds — visit on a regular day for a calmer experience" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-attended pilgrimage site with regular devotee traffic", "Quiet small-town setting outside festivals"],
+      precautions: ["Modest dress expected inside the temple", "Very crowded during Maha Shivaratri"],
+      soloTips: ["Comfortable for solo visitors", "Easy day trip from Karimnagar"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bhadradri Kothagudem Police", number: "08744-244888" }],
+      safeZones: ["Temple complex", "Riverside ghats"],
+      avoidAreas: ["Riverbank areas after dark"],
+    },
+    rating: 4.5,
+    reviews: 3100,
+    mustEat: ["Simple local meals near the temple"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
+  },
+
+  {
+    id: "kinnerasani-wildlife-sanctuary",
+    name: "Kinnerasani Wildlife Sanctuary",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Forested Reservoir Sanctuary in Bhadradri Kothagudem",
+    description: "Kinnerasani Wildlife Sanctuary, built around the Kinnerasani reservoir in Bhadradri Kothagudem district, protects dense deciduous forest home to leopards, sloth bears, gaur, and a wide variety of resident and migratory birdlife. The reservoir itself, created by a dam across the Kinnerasani River (a Godavari tributary), draws visitors for boating and sunset views over the water in addition to the sanctuary's wildlife-watching opportunities, making it a two-in-one nature stop in the state's southeastern forests.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Kinnerasani_wild_life_sanctuary.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/56/Kinnerasani_wild_life_sanctuary.jpg",
+    imageCredit: "Adbh266, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Wildlife", "Nature"],
+    bestSeason: "November to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Kinnerasani reservoir and dam" },
+      { name: "Leopards, sloth bears, gaur" },
+      { name: "Boating on the reservoir" },
+      { name: "Migratory birdlife" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~260 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "5–5.5 hrs from Hyderabad", costRange: "₹3,500–₹5,500 by taxi", tips: "Khammam city (30 km) is the nearest major town" },
+    ],
+    accommodation: [
+      { type: "Forest Rest House", priceRange: "₹800–₹2,000/night", examples: ["Telangana Forest Department guesthouse"], description: "Basic accommodation, booking required in advance" },
+    ],
+    localTransport: [
+      { mode: "Boating", cost: "₹100–₹300", notes: "On the Kinnerasani reservoir", available: true },
+      { mode: "Forest Department Jeep Safari", cost: "₹1,500–₹2,500", notes: "For core zone wildlife viewing", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bhadrachalam", distance: "70 km", type: "Spiritual", isHidden: false, id: "bhadrachalam" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1200, accommodation: 500, food: 300, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kinnerasani Nature Day", morning: "Jeep safari through the sanctuary's core forest", afternoon: "Boating on the Kinnerasani reservoir", evening: "Sunset over the reservoir", stay: "Forest Department guesthouse", meals: "Simple meals arranged through the guesthouse", tips: "Book safari and boating in advance through the Telangana Forest Department" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Forest Department oversight with permit-controlled entry", "Organised boating with staff supervision"],
+      precautions: ["Always travel with a guide inside the sanctuary", "Standard water-safety precautions while boating"],
+      soloTips: ["Book through official Forest Department channels", "Never explore the forest without a guide"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Khammam Police", number: "08742-222333" }],
+      safeZones: ["Reservoir boating area", "Official safari routes"],
+      avoidAreas: ["Unguided forest areas"],
+    },
+    rating: 4.3,
+    reviews: 1900,
+    mustEat: ["Simple forest-lodge meals"],
+    packingTips: ["Neutral-coloured clothing (khaki/olive)", "Binoculars", "Insect repellent"],
+  },
+
+  {
+    id: "phanigiri",
+    name: "Phanigiri",
+    state: "Telangana",
+    hidden: true,
+    tagline: "3rd-Century BCE Buddhist Monastery Complex",
+    description: "Phanigiri, a hilltop archaeological site in Suryapet district, preserves the ruins of a Buddhist monastery and stupa complex dating from the 3rd century BCE to the 4th century CE, discovered largely intact and excavated in phases from the 2000s onward. The site has yielded exceptional carved panels, a Brahmi-inscribed pillar, and stupa remains now displayed partly on-site and partly in state museums, making it one of Telangana's most significant Buddhist heritage sites alongside the more visited Nagarjunakonda.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Phanigiri_Buddhist_Site.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Phanigiri_Buddhist_Site.jpg",
+    imageCredit: "Shyam tstdc, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage"],
+    bestSeason: "October to February",
+    duration: "Half Day",
+    highlights: [
+      { name: "3rd-century BCE to 4th-century CE monastery ruins" },
+      { name: "Excavated stupa remains" },
+      { name: "Brahmi-inscribed pillar" },
+      { name: "Carved Buddhist artwork panels" },
+    ],
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "ASI-protected site; free entry." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~150 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "3–3.5 hrs from Hyderabad", costRange: "₹2,500–₹4,000 by taxi", tips: "Suryapet town (30 km) is the nearest major town" },
+    ],
+    accommodation: [
+      { type: "Suryapet Hotels", priceRange: "₹700–₹2,000/night", examples: ["Hotels in Suryapet town"], description: "Usually visited as a day trip from Suryapet or Hyderabad" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,000 round trip", notes: "From Suryapet to the site", available: true },
+      { mode: "Walking", cost: "Free", notes: "The archaeological complex is fully walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Nagarjuna Sagar", distance: "60 km", type: "History / Dam", isHidden: false, id: "nagarjuna-sagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 250, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Phanigiri Ruins", morning: "Explore the monastery and stupa ruins", afternoon: "Continue on to Nagarjuna Sagar or return to Hyderabad", evening: "Arrive at onward destination", stay: "Suryapet or Nagarjuna Sagar hotel", meals: "Simple local meals in Suryapet", tips: "Often combined with a visit to Nagarjuna Sagar for a fuller Buddhist-heritage day" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["ASI-protected, well-maintained archaeological site", "Quiet, low-traffic setting"],
+      precautions: ["Uneven excavation terrain in places"],
+      soloTips: ["Comfortable for solo visitors during daylight hours", "Easily combined with Nagarjuna Sagar"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Suryapet Police", number: "08682-222333" }],
+      safeZones: ["Site grounds"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.4,
+    reviews: 1300,
+    mustEat: ["Simple local meals in Suryapet"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "keesaragutta-temple",
+    name: "Keesaragutta Temple",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Hilltop Shiva-Rama Temple Near Hyderabad",
+    description: "Keesaragutta Temple, on a hillside around 30 km from Hyderabad, is an ancient shrine associated with both Shiva and Rama in local tradition, with a legend linking it to Rama's visit during his exile. The temple complex includes a stepped tank (Rama Kund) and lotus pond, and its hilltop position gives visitors views over the surrounding Ranga Reddy district countryside, making it a popular half-day pilgrimage and nature outing from the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Keesaragutta_Temple_main_temple_gate_in_2011.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Keesaragutta_Temple_main_temple_gate_in_2011.jpg",
+    imageCredit: "Batthini Vinay Kumar Goud, CC0, via Wikimedia Commons",
+    category: ["Spiritual", "Nature"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Hilltop Shiva-Rama shrine" },
+      { name: "Rama Kund stepped tank" },
+      { name: "Lotus pond" },
+      { name: "Hilltop countryside views" },
+    ],
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Free entry; busy during Maha Shivaratri and Karthika Masam." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~30 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "45 min–1 hr from central Hyderabad", costRange: "₹500–₹900 by taxi", tips: "A popular half-day outing combined with the drive itself through the countryside" },
+    ],
+    accommodation: [
+      { type: "Hyderabad Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Hotels across Hyderabad"], description: "Usually visited as a day trip from Hyderabad" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The temple complex and tank are walkable", available: true },
+      { mode: "Auto Rickshaw", cost: "₹100–₹250", notes: "From nearby towns", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "30 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Yadagirigutta", distance: "40 km", type: "Spiritual", isHidden: false, id: "yadagirigutta" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Keesaragutta Visit", morning: "Darshan at the hilltop shrine", afternoon: "Explore the Rama Kund tank and lotus pond", evening: "Return to Hyderabad", stay: "Hyderabad hotel", meals: "Simple vegetarian meals nearby", tips: "Combine with Yadagirigutta for a fuller day of temple visits east of Hyderabad" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-attended pilgrimage site with regular devotee traffic", "Family-friendly outing"],
+      precautions: ["Standard hillside precautions around the tank steps"],
+      soloTips: ["Comfortable for solo visitors", "Easy day trip from Hyderabad"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Temple complex"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 4100,
+    mustEat: ["Simple vegetarian meals nearby"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes"],
   },
 
   {
