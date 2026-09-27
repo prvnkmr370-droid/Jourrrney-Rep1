@@ -25498,6 +25498,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Winter hours often shorter, ~7 AM–5 PM. Entry ₹50 (Indians), ₹200 (foreigners). Best Nov–Mar." },
     highlights: [{ name: "Gujarat's largest sloth bear population" }, { name: "Real leopard presence" }, { name: "Panam river catchment forest" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Dahod — long haul", fromMumbai: "~430 km, ~8h", fromBangalore: "Not practical", duration: "~110 km / ~2.5h from Vadodara", costRange: "₹2,200–₹4,000 (cab from Vadodara)", tips: "Genuinely an offbeat, less-visited sanctuary — arrange safari permits in advance via the forest department." },
@@ -25819,6 +25820,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Wildlife", "Nature", "Offbeat"],
     bestSeason: "November – February",
     duration: "Half day – 1 day",
+    visitingHours: { opens: "8:00 AM", closes: "6:00 PM", note: "Timings shift with season. Mahal village (forest rest house) sits at the sanctuary's centre, on the Purna River. Best Oct–Feb." },
     highlights: [{ name: "Gujarat's thickest forest cover" }, { name: "100+ foot teak and bamboo canopy" }, { name: "Real rivers & rivulets throughout" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Surat — long haul", fromMumbai: "~280 km, ~5.5h", fromBangalore: "Not practical", duration: "~90 km / ~2h from Surat, via Waghai", costRange: "₹1,800–₹3,500 (cab from Surat)", tips: "Waghai is the main gateway town — the Mahal Eco-Campsite within the sanctuary offers a genuine forest-stay option." },
@@ -27474,6 +27476,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Spiritual", "Nature"],
     bestSeason: "November – February; visit only during the daily low-tide window",
     duration: "Half day",
+    visitingHours: { opens: "6:45 AM", closes: "7:10 PM", note: "Sea temple accessible on foot only at low tide (~4–5 hrs/day) — check tide timings before visiting. Daily aarti at 6:45 AM and 7:10 PM." },
     highlights: [{ name: "5 lingams, only accessible at low tide" }, { name: "Real Pandava/Mahabharata-era legend" }, { name: "Annual Bhadrapada fair" }],
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Via Bhavnagar — long haul", fromMumbai: "Via Bhavnagar — long haul", fromBangalore: "Not practical", duration: "~25 km / ~45 min from Bhavnagar", costRange: "₹700–₹1,500 (cab from Bhavnagar)", tips: "Genuinely check the tide timetable before setting out — the temple is only accessible for a real, tide-dependent window each day, not on a fixed schedule." },
@@ -85908,6 +85911,7 @@ export const DESTINATIONS: Destination[] = [
     category: ["Nature", "Culture"],
     bestSeason: "March – May and October – December",
     duration: "1–2 hours",
+    visitingHours: { opens: "8:00 AM", closes: "5:00 PM", note: "Entry may be restricted during active tea processing — check ahead. Best Mar–May and Nov." },
     highlights: [{ name: "Sikkim's only tea estate, founded by its last Chogyal in 1969" }, { name: "Organic-certified since a 2005 initiative under Swiss guidelines" }, { name: "177 hectares of gently sloping hillside gardens" }, { name: "Produces the internationally traded 'Temi Tea'" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Bagdogra Airport, then ~4h road via Namchi", fromMumbai: "Via Bagdogra or Kolkata, then road", fromBangalore: "Via Bagdogra or Kolkata, then road", duration: "Fly into Bagdogra, then road via Namchi", costRange: "₹4,000–₹12,000 airfare to Bagdogra", tips: "Namchi is the practical base town, 78 km from Gangtok." },
