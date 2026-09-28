@@ -10842,6 +10842,60 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "vanakbara",
+    name: "Vanakbara",
+    state: "Diu (UT)",
+    hidden: true,
+    tagline: "Diu's Colourful Working Fishing Harbour",
+    description: "Vanakbara, at the western tip of Diu island, is a traditional fishing village whose harbour fills with a dense cluster of brightly painted wooden trawlers each evening as the day's catch comes in. Distinct from Diu town's Portuguese-colonial character, Vanakbara retains a more traditional Gujarati fishing-community identity, and its bustling harbourfront — best seen in the late afternoon when boats return — offers one of the island's most genuine, unstaged slices of local life.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Vanakbara_Fishing_Port%2C_Diu%2C_Diu-50-_29.06.2021.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Vanakbara_Fishing_Port%2C_Diu%2C_Diu-50-_29.06.2021.jpg",
+    imageCredit: "SMarndi, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture", "Nature"],
+    bestSeason: "November to February",
+    duration: "Half Day",
+    highlights: [
+      { name: "Colourful wooden fishing trawlers filling the harbour" },
+      { name: "Traditional Gujarati fishing-community village" },
+      { name: "Best seen in late afternoon as boats return" },
+      { name: "Genuine, unstaged local life" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Diu then ~10 km by road", fromMumbai: "Fly to Diu then road", fromBangalore: "Fly to Diu via connections then road", duration: "20–30 min from Diu town", costRange: "₹150–₹400 by auto/taxi", tips: "Time your visit for late afternoon when the fishing boats return" },
+    ],
+    accommodation: [
+      { type: "Diu Town Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["Hotels in Diu town"], description: "Usually visited as a half-day trip from Diu town" },
+    ],
+    localTransport: [
+      { mode: "Rented Scooter", cost: "₹300–₹600/day", notes: "Easy independent way to reach Vanakbara", available: true },
+      { mode: "Auto Rickshaw / Cab", cost: "₹150–₹400 from Diu town", notes: "Alternative to a rented scooter", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Diu town centre", distance: "10 km", type: "Town", isHidden: false, id: "diu" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vanakbara Harbour Visit", morning: "Explore the village and its fishing-community character", afternoon: "Return in late afternoon as the fishing boats come in", evening: "Return to Diu town", stay: "Diu town hotel", meals: "Fresh local seafood in Diu town", tips: "Late afternoon is genuinely the best time — the harbour is much quieter earlier in the day" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["A known stop on Diu's established tourist map", "Regular local activity around the harbour"],
+      precautions: ["Working harbour — watch footing around boats and nets"],
+      soloTips: ["Comfortable for solo visitors during daylight hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Diu Police Station", number: "02875-252133" }],
+      safeZones: ["Harbourfront viewing areas"],
+      avoidAreas: ["Working boat-loading areas — stay clear of active loading"],
+    },
+    rating: 4.2,
+    reviews: 850,
+    mustEat: ["Fresh local seafood in Diu town"],
+    packingTips: ["Camera", "Comfortable footwear", "Sun protection"],
+  },
+
+  {
     id: "nani-daman-beach",
     name: "Nani Daman Beach",
     state: "Daman (UT)",
