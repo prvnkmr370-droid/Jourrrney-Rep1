@@ -646,7 +646,62 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Camera (check photography rules)", "Comfortable shoes", "Notebook for art enthusiasts"],
   },
 
-    {
+  {
+    id: "sector-17-plaza",
+    name: "Sector 17 Plaza",
+    state: "Chandigarh (UT)",
+    hidden: true,
+    tagline: "Le Corbusier's Pedestrian Heart of the City",
+    description: "Sector 17 Plaza, designed by Le Corbusier as Chandigarh's central business and shopping district, is a pedestrianized city square built around a distinctive Rooster Fountain at its centre. Ringed by uniform modernist arcaded buildings housing shops, restaurants, and a lively food court, the plaza remains the city's principal public gathering space and shopping hub, embodying the planned city's original vision of a walkable civic centre.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Rooster_Fountain%2C_Sector_17_Chandigarh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/15/Rooster_Fountain%2C_Sector_17_Chandigarh.jpg",
+    imageCredit: "Medhavigandhi, CC BY 3.0, via Wikimedia Commons",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October to March",
+    duration: "2–3 hours",
+    highlights: [
+      { name: "Rooster Fountain centrepiece" },
+      { name: "Le Corbusier-designed pedestrian plaza" },
+      { name: "Arcaded shopping and dining" },
+      { name: "Chandigarh's principal public square" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "4–5h drive or Shatabdi Express, then auto to Sector 17", fromMumbai: "Fly to Chandigarh, then short auto ride", fromBangalore: "Fly to Chandigarh, then short auto ride", duration: "5–10 min from the railway/bus station", costRange: "₹30–₹70 auto-rickshaw", tips: "Central and walkable — easily combined with other Chandigarh sights" },
+    ],
+    accommodation: [
+      { type: "Budget/Mid-range", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels in and around Sector 17 and Sector 22"], description: "Wide range of centrally located hotels" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The plaza is fully pedestrianized", available: true },
+      { mode: "Auto-rickshaw", cost: "₹30–₹70", notes: "To/from other sectors", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Chandigarh", distance: "In the city", type: "City", isHidden: false, id: "chandigarh" },
+      { name: "Rose Garden", distance: "2 km", type: "Garden", isHidden: false, id: "rose-garden-chandigarh" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Visitor", perDayPerPerson: 400, accommodation: 0, food: 250, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sector 17 Plaza", morning: "Explore the arcaded shopping streets and Rooster Fountain", afternoon: "Shopping and lunch at the plaza's restaurants", evening: "Food court snacks and the plaza's evening atmosphere", stay: "Chandigarh hotel", meals: "Sector 17 food court — chaat, momos, Punjabi snacks", tips: "Evenings are the liveliest time, with locals gathering around the fountain" },
+    ],
+    womenSafety: {
+      score: 9,
+      level: "Very Safe",
+      highlights: ["Central, well-lit, heavily used public plaza", "Regular police presence"],
+      precautions: ["None significant"],
+      soloTips: ["Very comfortable for solo visitors, day or evening"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Entire plaza"],
+      avoidAreas: [],
+    },
+    rating: 4.4,
+    reviews: 6200,
+    mustEat: ["Sector 17 food court — chaat, momos, Punjabi snacks"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
     id: "agra",
     name: "Agra",
     state: "Uttar Pradesh",
