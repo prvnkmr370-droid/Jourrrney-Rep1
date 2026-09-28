@@ -13514,6 +13514,276 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["ILP printout (mandatory)", "Comfortable walking shoes", "Camera"],
   },
 
+  {
+    id: "nuranang-falls",
+    name: "Nuranang Falls (Jang Falls)",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "A Thundering Cascade on the Road to Tawang",
+    description: "Nuranang Falls, also known as Jang Falls after the nearby village, drops in a dramatic multi-tiered cascade through a forested gorge on the road between Bomdila and Tawang. Fed by glacial meltwater, the falls run at their most powerful just after the monsoon, often wreathed in low cloud drifting through the valley, and are said to be linked to a local legend involving an Indian Army officer and a Monpa girl named Nuranang.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuranang_Falls.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuranang_Falls.jpg",
+    imageCredit: "Mycoqube, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to April",
+    duration: "Half Day",
+    highlights: [
+      { name: "Multi-tiered cascade through a forested gorge" },
+      { name: "Glacial meltwater fed, strongest post-monsoon" },
+      { name: "Local Monpa legend tied to the falls' name" },
+      { name: "Roadside stop on the Bomdila–Tawang route" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati/Tezpur then road via Bomdila to Jang", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "~1 hr from Tawang, ~4–5 hrs from Bomdila", costRange: "₹200–₹500 as part of a Bomdila–Tawang taxi journey", tips: "A natural stop along the main Bomdila–Tawang highway" },
+    ],
+    accommodation: [
+      { type: "Tawang Hotels", priceRange: "₹1,200–₹3,500/night", examples: ["Hotels in Tawang town"], description: "Usually visited en route to or from Tawang" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Short walk from the roadside viewpoint", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tawang", distance: "35 km", type: "Monastery Town", isHidden: false, id: "tawang" },
+      { name: "Sela Pass", distance: "45 km", type: "Mountain Pass", isHidden: false, id: "sela-pass" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 150, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Nuranang Falls Stop", morning: "Stop at Nuranang Falls en route between Bomdila and Tawang", afternoon: "Photography and short viewpoint walk", evening: "Continue journey to Tawang", stay: "Tawang hotel", meals: "Pack snacks; simple meals in Jang village", tips: "A quick but scenic stop — combine with the rest of the Bomdila–Tawang drive" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Well-known roadside stop on a major tourist route"],
+      precautions: ["Slippery viewing areas near the falls", "High-altitude mountain road conditions"],
+      soloTips: ["Comfortable as part of an organised Tawang road trip"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Tawang Police", number: "03794-222241" }],
+      safeZones: ["Designated viewpoint area"],
+      avoidAreas: ["Climbing near the falls' edge"],
+    },
+    rating: 4.5,
+    reviews: 1900,
+    mustEat: ["Pack snacks", "Simple meals in Jang village"],
+    packingTips: ["Warm layers", "Rain protection", "Camera", "ILP printout (mandatory)"],
+  },
+
+  {
+    id: "sangetsar-tso",
+    name: "Sangetsar Tso (Madhuri Lake)",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "An Earthquake-Born Lake of Ghostly Tree Stumps",
+    description: "Sangetsar Tso, popularly known as Madhuri Lake after a Bollywood film shot here, is a high-altitude lake near Tawang formed by a landslide following the 1950 Assam-Tibet earthquake, which dammed a stream and submerged a stretch of forest. Decades later, the bleached, bare trunks of the drowned trees still rise from the still water in rows, framed by steep, bare mountain walls — one of the most striking and photographed landscapes on the Tawang circuit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/03/Sangestar_Tso%2C_Tawang%2C_Arunachal_Pradesh%2C_India.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/03/Sangestar_Tso%2C_Tawang%2C_Arunachal_Pradesh%2C_India.jpg",
+    imageCredit: "Rohit Sharma, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "March to June, September to October",
+    duration: "Half Day",
+    highlights: [
+      { name: "Bare, bleached tree stumps rising from the lake" },
+      { name: "Formed by a 1950 earthquake-triggered landslide" },
+      { name: "Popularized as 'Madhuri Lake' after a Bollywood film" },
+      { name: "Steep, high-altitude mountain valley setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati/Tezpur then road via Tawang", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "~2.5–3 hrs from Tawang", costRange: "₹2,500–₹4,000 by taxi", tips: "Often combined with a Bum La Pass day trip (permit required)" },
+    ],
+    accommodation: [
+      { type: "Tawang Hotels", priceRange: "₹1,200–₹3,500/night", examples: ["Hotels in Tawang town"], description: "Usually visited as a day trip from Tawang" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹2,000–₹3,500 round trip", notes: "From Tawang, often combined with Bum La Pass", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tawang", distance: "35 km", type: "Monastery Town", isHidden: false, id: "tawang" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 900, accommodation: 0, food: 250, transport: 600, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sangetsar Tso Day Trip", morning: "Drive from Tawang towards the lake", afternoon: "Explore the lake and its distinctive tree-stump landscape", evening: "Return to Tawang", stay: "Tawang hotel", meals: "Pack food; limited facilities en route", tips: "High altitude — acclimatize in Tawang for a day or two before this trip" },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Popular day-trip destination from Tawang with regular tourist traffic"],
+      precautions: ["High altitude — watch for altitude sickness", "Remote with limited facilities", "Special permits required near the border zone"],
+      soloTips: ["Visit as part of an organised group or taxi tour rather than alone"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Tawang Police", number: "03794-222241" }],
+      safeZones: ["Main lake viewpoint area"],
+      avoidAreas: ["Restricted border-adjacent zones without permits"],
+    },
+    rating: 4.6,
+    reviews: 2300,
+    mustEat: ["Pack food from Tawang"],
+    packingTips: ["Heavy warm layers (high altitude, cold even in summer)", "Camera", "ILP and special permits (mandatory)"],
+  },
+
+  {
+    id: "eaglenest-wildlife-sanctuary",
+    name: "Eaglenest Wildlife Sanctuary",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "A World-Renowned Birding Sanctuary in the Eastern Himalaya",
+    description: "Eaglenest Wildlife Sanctuary, near Bomdila and Dirang, is internationally recognized among birdwatchers as one of the richest birding sites in the eastern Himalaya, home to over 450 recorded bird species including several rare and range-restricted ones — most famously the Bugun liocichla, discovered here in 2006. Dense, largely undisturbed subtropical and temperate forest cloaks its steep ridges, and its network of forest trails also supports red panda, clouded leopard, and other rarely-seen Himalayan mammals.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/31/Eaglenest_Wildlife_Sanctuary_%2843622577745%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/31/Eaglenest_Wildlife_Sanctuary_%2843622577745%29.jpg",
+    imageCredit: "Mike Prince, CC BY 2.0, via Wikimedia Commons",
+    category: ["Nature", "Wildlife"],
+    bestSeason: "November to April (best birding conditions)",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "Over 450 recorded bird species" },
+      { name: "Discovery site of the Bugun liocichla (2006)" },
+      { name: "Dense subtropical-to-temperate forest across steep ridges" },
+      { name: "Habitat for red panda and clouded leopard" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati/Tezpur then road via Bomdila", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "~1–2 hrs from Bomdila or Dirang", costRange: "₹1,500–₹3,000 by taxi", tips: "A registered birding guide is strongly recommended for the forest trails" },
+    ],
+    accommodation: [
+      { type: "Forest Camps", priceRange: "₹1,500–₹4,000/night", examples: ["Birding camps and lodges near the sanctuary edge"], description: "Basic camps popular with birdwatching groups" },
+      { type: "Bomdila/Dirang Hotels", priceRange: "₹1,200–₹3,500/night", examples: ["Hotels in Bomdila or Dirang"], description: "Alternative base for a day visit" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000/day", notes: "From Bomdila or Dirang to the sanctuary trailheads", available: true },
+      { mode: "Trekking", cost: "Guide fees vary", notes: "Forest trails within the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bomdila", distance: "24 km", type: "Hill Town", isHidden: false, id: "bomdila" },
+      { name: "Dirang", distance: "30 km", type: "Valley Town", isHidden: false, id: "dirang" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1500, accommodation: 800, food: 300, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Eaglenest Birding", morning: "Early morning birding walk with a registered guide", afternoon: "Continue forest trails or rest at camp", evening: "Evening birdlist review with the guide", stay: "Forest camp near the sanctuary", meals: "Simple camp meals", tips: "Book a registered birding guide well in advance — the sanctuary's rarer species are easy to miss without local expertise" },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["Popular with organised international birding tours"],
+      precautions: ["Remote forest terrain with limited facilities", "Wildlife present — stay with a guide"],
+      soloTips: ["Never trek alone — a registered guide is essential given the remoteness and terrain"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bomdila Police", number: "03782-222226" }],
+      safeZones: ["Guided trails and camps"],
+      avoidAreas: ["Unguided forest trekking"],
+    },
+    rating: 4.7,
+    reviews: 680,
+    mustEat: ["Simple camp meals"],
+    packingTips: ["Binoculars", "Warm layers", "Rain gear", "Sturdy trekking shoes", "ILP printout (mandatory)"],
+  },
+
+  {
+    id: "tezu",
+    name: "Tezu",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "Lohit District's Riverside Gateway Town",
+    description: "Tezu, headquarters of Lohit district, sits near the banks of the Lohit River and serves as the main gateway to Arunachal Pradesh's remote eastern reaches, including Bhismaknagar and the Mishmi Hills. A modest but orderly town centred on its landmark clock tower, Tezu also hosts the annual Parshuram Kund pilgrimage fair nearby, drawing thousands of pilgrims each January to the sacred bathing site on the Lohit River.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/35/The_city_centre_of_Tezu.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/35/The_city_centre_of_Tezu.jpg",
+    imageCredit: "2006nishan178713, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture"],
+    bestSeason: "October to April",
+    duration: "1 Day",
+    highlights: [
+      { name: "Landmark clock tower town centre" },
+      { name: "Gateway to Bhismaknagar and the Mishmi Hills" },
+      { name: "Near Parshuram Kund pilgrimage site" },
+      { name: "Lohit River setting" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Tezu Airport via Kolkata/Guwahati connections", fromMumbai: "Fly via Kolkata/Guwahati connections", fromBangalore: "Fly via Kolkata/Guwahati connections", duration: "Domestic connections to Tezu Airport", costRange: "₹5,000–₹10,000 airfare", tips: "Tezu has a small domestic airport with limited connections; road via Tinsukia (Assam) is the more common route" },
+    ],
+    accommodation: [
+      { type: "Tezu Guest Houses", priceRange: "₹800–₹2,000/night", examples: ["Government and private guest houses in town"], description: "Basic but adequate accommodation" },
+    ],
+    localTransport: [
+      { mode: "Auto/Taxi", cost: "₹50–₹200", notes: "Within Tezu town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Parashuram Kund", distance: "25 km", type: "Pilgrimage", isHidden: false, id: "parashuram-kund" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 800, accommodation: 350, food: 250, transport: 100, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Tezu Town", morning: "Explore the town centre and clock tower", afternoon: "Riverside walk along the Lohit River", evening: "Visit the local market", stay: "Tezu guest house", meals: "Simple local meals", tips: "Often used as a base before heading onward to Bhismaknagar or the Mishmi Hills" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["District headquarters with basic infrastructure", "Quiet, orderly small town"],
+      precautions: ["Limited nightlife/facilities outside the main town centre"],
+      soloTips: ["Comfortable for solo travellers as a transit base"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Tezu Police", number: "03804-222234" }],
+      safeZones: ["Town centre", "Market area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.0,
+    reviews: 260,
+    mustEat: ["Simple local meals in Tezu"],
+    packingTips: ["ILP printout (mandatory)", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "bhismaknagar-fort",
+    name: "Bhismaknagar Fort",
+    state: "Arunachal Pradesh",
+    hidden: true,
+    tagline: "Brick Ruins of a Lost Chutia Kingdom Palace",
+    description: "Bhismaknagar, in Lower Dibang Valley district, holds the excavated brick ruins of a fortified palace complex linked to the medieval Chutia Kingdom, which once ruled parts of the eastern Brahmaputra valley. Excavations have revealed foundations, ramparts, and decorative terracotta plaques amid dense forest, with local legend connecting the site to King Bhishmaka of the Puranas and Mahabharata, father of Rukmini.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Bhismaknagar_fort_ruins.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/a/af/Bhismaknagar_fort_ruins.jpg",
+    imageCredit: "XaxaBaba, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "History"],
+    bestSeason: "October to April",
+    duration: "Half Day",
+    highlights: [
+      { name: "Excavated brick ruins of a Chutia Kingdom palace" },
+      { name: "Decorative terracotta plaques" },
+      { name: "Legendary links to King Bhishmaka of the Mahabharata" },
+      { name: "Forested Lower Dibang Valley setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dibrugarh (Assam) then road via Roing", fromMumbai: "Fly to Dibrugarh then road", fromBangalore: "Fly to Dibrugarh via Kolkata then road", duration: "~1 hr from Roing", costRange: "₹500–₹1,000 by taxi", tips: "Roing is the nearest base town" },
+    ],
+    accommodation: [
+      { type: "Roing Hotels", priceRange: "₹800–₹2,000/night", examples: ["Hotels in Roing town"], description: "Usually visited as a day trip from Roing" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹500–₹1,000 round trip", notes: "From Roing to the site", available: true },
+      { mode: "Walking", cost: "Free", notes: "The excavated site is fully walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Roing", distance: "12 km", type: "Town", isHidden: false, id: "roing" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bhismaknagar Fort Visit", morning: "Drive from Roing to the excavated fort site", afternoon: "Explore the brick ruins and terracotta plaques", evening: "Return to Roing", stay: "Roing hotel", meals: "Simple local meals in Roing", tips: "Combine with other Roing-area sites for a fuller day trip" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Day-trip site close to Roing's infrastructure"],
+      precautions: ["Site is largely unmanned — visit in daylight", "Limited facilities on site"],
+      soloTips: ["Comfortable for solo visitors during daylight hours as a trip from Roing"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Roing Police", number: "03803-222226" }],
+      safeZones: ["Excavated site grounds"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.1,
+    reviews: 340,
+    mustEat: ["Simple local meals in Roing"],
+    packingTips: ["ILP printout (mandatory)", "Comfortable walking shoes", "Camera"],
+  },
+
   // The two destinations below give a "Places Near Agra" nearby-place card
   // a real full page to open into (see NearbyPlace.id in Agra's
   // nearbyPlaces). Built from general public travel sources — day-trip
