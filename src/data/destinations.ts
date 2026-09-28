@@ -17937,6 +17937,169 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Seasickness medication", "Waterproof bag for electronics", "Sun protection", "Packed food and water", "Camera with zoom lens"],
   },
 
+  {
+    id: "cellular-jail",
+    name: "Cellular Jail",
+    state: "Andaman & Nicobar",
+    hidden: true,
+    tagline: "The 'Kaala Pani' Prison Where India's Freedom Fighters Were Held",
+    description: "Cellular Jail, in Port Blair, was built by the British between 1896 and 1906 as a colonial prison for political prisoners, its distinctive seven-wing spoke design (three wings survive today) allowing constant surveillance with solitary cells that gave the jail its name and its grim nickname, 'Kaala Pani' (black water). Freedom fighters including Vinayak Damodar Savarkar were held and tortured here under brutal conditions. Now a National Memorial and a UNESCO Tentative World Heritage Site, it houses a museum and hosts a nightly sound-and-light show recounting its history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG",
+    imageCredit: "Jomesh, CC BY 3.0, via Wikimedia Commons",
+    category: ["History", "Heritage"],
+    bestSeason: "October to April",
+    duration: "Half Day",
+    visitingHours: { opens: "9:00 AM", closes: "5:00 PM", note: "Closed Mondays; sound-and-light show held in the evening (separate ticket)." },
+    highlights: [
+      { name: "Colonial-era solitary-confinement prison wings" },
+      { name: "National Memorial to India's freedom fighters" },
+      { name: "On-site museum" },
+      { name: "Evening sound-and-light show" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Port Blair", fromMumbai: "Fly to Port Blair via connections", fromBangalore: "Fly to Port Blair via connections", duration: "3–5 hrs flight from major cities", costRange: "₹6,000–₹15,000 airfare", tips: "Located in central Port Blair, an easy stop for any visitor" },
+    ],
+    accommodation: [
+      { type: "Port Blair Hotels", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Port Blair"], description: "Wide range of accommodation in the city" },
+    ],
+    localTransport: [
+      { mode: "Auto/Taxi", cost: "₹100–₹300", notes: "Within Port Blair city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Port Blair (Andaman Islands)", distance: "In city", type: "Main Gateway", isHidden: false, id: "andaman" },
+      { name: "Ross Island", distance: "3 km by ferry", type: "Heritage", isHidden: false, id: "ross-island" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 150, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Cellular Jail Visit", morning: "Explore the surviving prison wings and museum", afternoon: "Continue exploring Port Blair", evening: "Attend the sound-and-light show", stay: "Port Blair hotel", meals: "Seafood in Port Blair", tips: "The evening sound-and-light show adds real historical context — worth the separate ticket" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Major national memorial with regular visitor footfall and security", "Central Port Blair location"],
+      precautions: ["None significant"],
+      soloTips: ["Comfortable for solo visitors; a well-established tourist site"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }],
+      safeZones: ["Jail complex and museum"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.7,
+    reviews: 12400,
+    mustEat: ["Seafood in Port Blair"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Light layers for the evening show"],
+  },
+
+  {
+    id: "chidiya-tapu",
+    name: "Chidiya Tapu",
+    state: "Andaman & Nicobar",
+    hidden: true,
+    tagline: "Port Blair's 'Bird Island' Sunset Point",
+    description: "Chidiya Tapu, at the southern tip of South Andaman around 25 km from Port Blair, is known locally as the island's best sunset spot — its name meaning 'bird island' after the many species found in the surrounding forest and mangroves. The beach here mixes sand and rock, backed by dense forest that's part of the Chidiya Tapu Biological Park, making it a popular combined birdwatching and sunset-viewing stop for visitors based in Port Blair.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Chidiya_Tapu_Sunset.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/83/Chidiya_Tapu_Sunset.jpg",
+    imageCredit: "Adwait, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to April",
+    duration: "Half Day",
+    highlights: [
+      { name: "One of Port Blair's best sunset viewpoints" },
+      { name: "Mixed sand-and-rock beach" },
+      { name: "Chidiya Tapu Biological Park nearby" },
+      { name: "Birdwatching in the surrounding forest" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Port Blair then ~25 km by road", fromMumbai: "Fly to Port Blair then road", fromBangalore: "Fly to Port Blair then road", duration: "45 min–1 hr from Port Blair", costRange: "₹500–₹1,200 by taxi", tips: "Arrive well before sunset to also visit the Biological Park" },
+    ],
+    accommodation: [
+      { type: "Port Blair Hotels", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Port Blair"], description: "Usually visited as a half-day trip from Port Blair" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,000–₹2,000 round trip", notes: "From Port Blair to Chidiya Tapu", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Port Blair (Andaman Islands)", distance: "25 km", type: "Main Gateway", isHidden: false, id: "andaman" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chidiya Tapu Sunset Trip", morning: "Visit the Biological Park for birdwatching", afternoon: "Relax on the beach", evening: "Watch the sunset from the viewpoint", stay: "Port Blair hotel", meals: "Seafood in Port Blair", tips: "One of the most reliable sunset spots on South Andaman — arrive with time to find a good vantage point" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Popular sunset spot with regular visitor footfall", "Part of Port Blair's established day-trip circuit"],
+      precautions: ["Limited facilities at the beach itself", "Road can be quiet after dark on the return"],
+      soloTips: ["Comfortable for solo visitors during daylight/sunset hours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }],
+      safeZones: ["Beach and viewpoint area"],
+      avoidAreas: ["Isolated forest areas after dark"],
+    },
+    rating: 4.5,
+    reviews: 3200,
+    mustEat: ["Seafood in Port Blair"],
+    packingTips: ["Camera", "Sun protection", "Insect repellent", "Comfortable footwear"],
+  },
+
+  {
+    id: "north-bay-island",
+    name: "North Bay Island",
+    state: "Andaman & Nicobar",
+    hidden: true,
+    tagline: "Port Blair's Coral Reef and Lighthouse Day Trip",
+    description: "North Bay Island, a short boat ride from Port Blair, is known for its fringing coral reef and clear shallow water, making it one of the most accessible snorkeling and glass-bottom-boat destinations in the Andamans. A red-and-white striped lighthouse stands at its centre, and the rocky, coral-strewn shoreline backed by palm trees gives the island a distinct character from Port Blair's other nearby beaches.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/North_bay_island_Andaman_vrvbaan042k24_%288%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ef/North_bay_island_Andaman_vrvbaan042k24_%288%29.jpg",
+    imageCredit: "Vinayaraj, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October to April",
+    duration: "Half Day",
+    highlights: [
+      { name: "Fringing coral reef and clear shallow water" },
+      { name: "Red-and-white striped lighthouse" },
+      { name: "Snorkeling and glass-bottom boat rides" },
+      { name: "Rocky, coral-strewn shoreline" },
+    ],
+    transport: [
+      { mode: "Boat", icon: "ship", fromDelhi: "Fly to Port Blair then a short ferry crossing", fromMumbai: "Fly to Port Blair then ferry", fromBangalore: "Fly to Port Blair then ferry", duration: "20–30 min ferry from Port Blair", costRange: "₹500–₹1,000 for the boat trip", tips: "Boats depart from Port Blair's Aberdeen Jetty; combine with Ross Island on the same trip" },
+    ],
+    accommodation: [
+      { type: "Port Blair Hotels", priceRange: "₹1,500–₹6,000/night", examples: ["Hotels across Port Blair"], description: "Usually visited as a half-day trip from Port Blair" },
+    ],
+    localTransport: [
+      { mode: "Boat", cost: "₹500–₹1,000 round trip", notes: "The only way to reach the island", available: true },
+      { mode: "Glass-bottom boat", cost: "₹300–₹600", notes: "For viewing the coral without snorkeling", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Port Blair (Andaman Islands)", distance: "Ferry from Port Blair", type: "Main Gateway", isHidden: false, id: "andaman" },
+      { name: "Ross Island", distance: "Nearby by boat", type: "Heritage", isHidden: false, id: "ross-island" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1000, accommodation: 0, food: 250, transport: 600, activities: 300 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "North Bay Island Trip", morning: "Ferry from Port Blair to North Bay Island", afternoon: "Snorkeling or glass-bottom boat over the coral reef", evening: "Return ferry to Port Blair", stay: "Port Blair hotel", meals: "Seafood in Port Blair", tips: "Combine with Ross Island — boats commonly stop at both on one ticket" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Well-established tourist boat operations", "Popular family destination with regular footfall"],
+      precautions: ["Standard water-safety precautions for snorkeling", "Reef shoes recommended on the rocky, coral shoreline"],
+      soloTips: ["Comfortable for solo travellers joining group boat tours"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Port Blair Police", number: "03192-233077" }],
+      safeZones: ["Designated swimming and snorkeling areas"],
+      avoidAreas: ["Swimming outside supervised zones"],
+    },
+    rating: 4.4,
+    reviews: 5100,
+    mustEat: ["Seafood in Port Blair"],
+    packingTips: ["Swimwear", "Reef shoes", "Waterproof bag for electronics", "Sun protection"],
+  },
+
   // Andhra Pradesh batch, researched via tourism.ap.gov.in (the official
   // APTDC site — mostly an accommodation/booking portal rather than a
   // destination encyclopedia like UP/Assam/Andaman's sites, so its own
