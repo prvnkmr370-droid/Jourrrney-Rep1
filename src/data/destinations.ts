@@ -9106,6 +9106,60 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "madhuban-dam",
+    name: "Madhuban Dam",
+    state: "Dadra and Nagar Haveli (UT)",
+    hidden: true,
+    tagline: "Silvassa's Reservoir on the Daman Ganga",
+    description: "Madhuban Dam, on the Daman Ganga River just outside Silvassa, forms a wide reservoir backed by forested hills that supplies water to the Union Territory. Quieter and less developed than the town's landscaped gardens, its viewpoint offers a genuine, undeveloped nature outlook over the water — a contrast to Silvassa's more manicured tourist attractions.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/A_Beautiful_Nature_of_Silvassa.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/ca/A_Beautiful_Nature_of_Silvassa.jpg",
+    imageCredit: "Vishnukumar Jangid, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Wide reservoir on the Daman Ganga River" },
+      { name: "Forested hill backdrop" },
+      { name: "Quiet, undeveloped viewpoint" },
+      { name: "Supplies water to Silvassa" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Silvassa — long haul", fromMumbai: "~3h to Silvassa", fromBangalore: "Long haul", duration: "20–30 min from Silvassa town", costRange: "₹150–₹400 by auto/taxi", tips: "Easy half-day addition to a Silvassa visit" },
+    ],
+    accommodation: [
+      { type: "Silvassa Town Hotels/Resorts", priceRange: "₹2,000–₹6,000/night", examples: ["Hotels and resorts in Silvassa town"], description: "The dam sits just outside Silvassa; any town-based stay works" },
+    ],
+    localTransport: [
+      { mode: "Auto Rickshaw / Cab", cost: "₹150–₹400", notes: "From Silvassa town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Silvassa town centre", distance: "12 km", type: "Town", isHidden: false, id: "silvassa" },
+      { name: "Dudhani Lake", distance: "10 km", type: "Lake", isHidden: false, id: "dudhani-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Madhuban Dam Visit", morning: "Explore Silvassa town's other sights", afternoon: "Drive to Madhuban Dam for the reservoir viewpoint", evening: "Return to Silvassa", stay: "Silvassa town hotel/resort", meals: "Silvassa town dining", tips: "A quieter, less-developed alternative to Silvassa's landscaped gardens" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Part of the established Silvassa day-trip circuit"],
+      precautions: ["Limited facilities at the dam itself"],
+      soloTips: ["Comfortable as a day trip from Silvassa"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Silvassa Police Station", number: "0260-2652033" }],
+      safeZones: ["Main viewpoint area"],
+      avoidAreas: ["Unsupervised reservoir edges"],
+    },
+    rating: 4.0,
+    reviews: 280,
+    mustEat: ["Silvassa town dining options nearby"],
+    packingTips: ["Sun protection", "Camera", "Comfortable footwear"],
+  },
+
+  {
     id: "daman",
     name: "Daman",
     state: "Daman (UT)",
