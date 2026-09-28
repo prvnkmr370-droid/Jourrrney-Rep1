@@ -72393,6 +72393,61 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "chetlat",
+    name: "Chetlat Island",
+    state: "Lakshadweep",
+    hidden: true,
+    tagline: "A Tiny, Traditional Coral Island Fringed by Turquoise Water",
+    description: "Chetlat, one of the smallest inhabited islands in Lakshadweep at just over 1 sq km, sits ringed by a narrow reef and pristine white-sand beaches shaded by coconut palms and low coastal trees. Its small fishing community lives largely untouched by mass tourism, and the island remains one of the quietest and most traditional in the archipelago, reachable only by ship from Kochi with a mandatory Lakshadweep entry permit.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kadal.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kadal.jpg",
+    imageCredit: "Ajamalne, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Beach", "Nature"],
+    bestSeason: "October to May (calm seas for boat travel)",
+    duration: "1–2 Days (as part of a Lakshadweep package)",
+    highlights: [
+      { name: "White-sand beaches fringed by coconut palms" },
+      { name: "One of Lakshadweep's smallest inhabited islands" },
+      { name: "Traditional fishing community" },
+      { name: "Quiet, largely untouched by mass tourism" },
+    ],
+    visitingHours: { opens: "Open island", closes: "Open island", note: "Lakshadweep entry permit mandatory (apply through the Lakshadweep Administration or SPORTS). Indian nationals only for most islands." },
+    transport: [
+      { mode: "Ship", icon: "🚢", fromDelhi: "Fly to Kochi, then ship to Chetlat (20+ hrs)", fromMumbai: "Fly to Kochi, then ship", fromBangalore: "Fly to Kochi, then ship", duration: "20+ hrs from Kochi by ship", costRange: "₹2,000–₹6,000 ship fare depending on class", tips: "Ships from Kochi are the only way to reach Chetlat — book well in advance" },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹1,000–₹3,000/night", examples: ["Government guest house"], description: "Extremely limited accommodation; carry essentials" },
+    ],
+    localTransport: [
+      { mode: "Walking/Bicycle", cost: "Free", notes: "The island is tiny — everything is walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kiltan Island", distance: "40 km by sea", type: "Beach Island", isHidden: true, id: "kiltan" },
+      { name: "Kavaratti", distance: "100 km by sea", type: "UT Capital", isHidden: false, id: "kavaratti" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Island Visitor", perDayPerPerson: 2500, accommodation: 1000, food: 500, transport: 500, activities: 500 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chetlat Island", morning: "Arrive by ship and walk the island's small coastline", afternoon: "Relax on the white-sand beach and snorkel the fringing reef", evening: "Sunset over the lagoon", stay: "Government guest house", meals: "Fresh tuna and coconut-based meals", tips: "Very traditional community — dress modestly. No ATMs, carry all cash needed." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Tiny island community — everyone knows everyone", "Extremely low crime", "Conservative but welcoming culture"],
+      precautions: ["Very conservative Muslim community — modest dress essential", "No medical facilities beyond basic first aid"],
+      soloTips: ["Safe but very remote — travel as part of a package", "Dress conservatively", "Carry all medicines and essentials"],
+      emergencyContacts: [{ label: "Lakshadweep Administration", number: "04896-262258" }, { label: "Police", number: "100" }],
+      safeZones: ["Entire island"],
+      avoidAreas: [],
+    },
+    rating: 4.2,
+    reviews: 90,
+    mustEat: ["Fresh tuna", "Coconut-based curries", "Tender coconut water"],
+    packingTips: ["Entry permit and ID copies", "Reef-safe sunscreen", "Reef shoes", "Modest clothing", "Cash (no ATMs)", "All medicines"],
+  },
+
+  {
     id: "bhimbetka",
     name: "Bhimbetka Rock Shelters",
     state: "Madhya Pradesh",
