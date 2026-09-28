@@ -10956,6 +10956,60 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "pani-kotha",
+    name: "Pani Kotha (Fortim do Mar)",
+    state: "Daman (UT)",
+    hidden: true,
+    tagline: "A Portuguese Sea Fort Standing Alone in the Damanganga Estuary",
+    description: "Pani Kotha, formally Fortim do Mar ('little sea fort' in Portuguese), stands isolated on a rocky outcrop in the Damanganga River's mouth, its weathered ramparts and functioning lighthouse rising directly from the water offshore from Moti Daman Fort. Built by the Portuguese to guard the harbour entrance, it remains one of the most distinctive sights along Daman's coast — best viewed from the Moti Daman Fort ramparts or by boat, as the fort itself is generally not open for landing.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/35/Pani_Kotha.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/35/Pani_Kotha.JPG",
+    imageCredit: "Vijay Bhadani, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Heritage"],
+    bestSeason: "October to March",
+    duration: "1 hour (viewing)",
+    highlights: [
+      { name: "Isolated Portuguese sea fort in the river estuary" },
+      { name: "Functioning lighthouse atop the fort" },
+      { name: "Best viewed from Moti Daman Fort's ramparts" },
+      { name: "ASI-protected monument" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Via Vapi/Daman — long haul", fromMumbai: "~3h to Daman town", fromBangalore: "Long haul", duration: "Viewable from Moti Daman Fort", costRange: "₹50–₹200 (auto within town)", tips: "No regular public boat access — viewed from the fort ramparts or the seafront" },
+    ],
+    accommodation: [
+      { type: "Daman Hotels", priceRange: "₹1,500–₹9,000/night", examples: ["Hotels across Daman town"], description: "Usually viewed as part of a Moti Daman Fort visit" },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "Viewable from Moti Daman Fort's sea-facing ramparts", available: true },
+      { mode: "Auto Rickshaw", cost: "₹50–₹200", notes: "Widely available in Daman town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Moti Daman Fort", distance: "Adjacent, across the water", type: "Fort", isHidden: false, id: "moti-daman-fort" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Moti Daman Fort & Pani Kotha View", morning: "Explore Moti Daman Fort's ramparts", afternoon: "View Pani Kotha offshore from the fort walls", evening: "Sunset over the estuary", stay: "Daman hotel", meals: "Local Daman food stalls", tips: "Bring a zoom lens or binoculars for a closer look at the fort's details from shore" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Viewed from the well-visited Moti Daman Fort area", "Part of Daman's established tourist circuit"],
+      precautions: ["No landing access — view from shore only"],
+      soloTips: ["Comfortable for solo visitors as part of a Moti Daman Fort visit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Moti Daman Police Station", number: "0260-2230999" }],
+      safeZones: ["Moti Daman Fort ramparts and seafront"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.2,
+    reviews: 620,
+    mustEat: ["Local Daman food stalls"],
+    packingTips: ["Camera with zoom", "Sun protection", "Comfortable walking shoes"],
+  },
+
+  {
     id: "darjeeling",
     name: "Darjeeling",
     state: "West Bengal",
