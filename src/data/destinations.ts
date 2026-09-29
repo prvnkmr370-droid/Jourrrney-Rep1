@@ -101378,6 +101378,113 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Binoculars and camera gear (bring your own)", "Neutral-colored clothing", "Insect repellent", "Comfortable walking shoes"],
   },
 
+  {
+    id: "bhubaneswari-temple-tripura",
+    name: "Bhubaneswari Temple",
+    state: "Tripura",
+    hidden: true,
+    tagline: "A 17th-Century Riverside Temple Immortalized by Tagore",
+    description: "Bhubaneswari Temple, on the bank of the Gomati River at Rajnagar in Udaipur, was built between 1667 and 1676 by Maharaja Gobinda Manikya, ruler of the old Tripura kingdom whose capital Udaipur once was. The temple gained wider literary fame after Rabindranath Tagore referenced it in two of his plays, Rajarshi and Bisharjan. Its beehive-domed terracotta-brick architecture, in the Bengal temple style, is protected as an ASI Monument of National Importance.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bhubaneswari_Temple_.Rajnagar%2CUdaipur.South_Tripura.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bhubaneswari_Temple_.Rajnagar%2CUdaipur.South_Tripura.jpg",
+    imageCredit: "Sanjibroy56, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Built 1667–1676 by Maharaja Gobinda Manikya" },
+      { name: "Referenced in Tagore's plays Rajarshi and Bisharjan" },
+      { name: "Bengal-style terracotta-brick, beehive-domed architecture" },
+      { name: "ASI Monument of National Importance" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then ~55 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "~1.5 hrs from Agartala", costRange: "₹1,000–₹2,000 by taxi", tips: "Combine with a visit to nearby Tripura Sundari Temple at Matabari" },
+    ],
+    accommodation: [
+      { type: "Udaipur Guesthouses", priceRange: "₹600–₹1,800/night", examples: ["Local guesthouses in Udaipur town"], description: "Basic accommodation; most visitors day-trip from Agartala" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹100–₹300", notes: "Short ride within Udaipur town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Tripura Sundari Temple (Matabari)", distance: "6 km", type: "Temple", isHidden: false, id: "tripura-sundari-temple" },
+      { name: "Agartala", distance: "55 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Udaipur Temple Circuit", morning: "Visit Bhubaneswari Temple on the Gomati riverbank", afternoon: "Visit the nearby Tripura Sundari Temple at Matabari", evening: "Return to Agartala", stay: "Agartala hotel", meals: "Bengali-Tripuri thali in Agartala", tips: "Easily combined with Matabari as a single day trip from Agartala" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Recognised ASI heritage site with regular visitor footfall", "Often visited alongside the well-established Matabari pilgrimage circuit"],
+      precautions: ["Small town with limited facilities beyond the temple"],
+      soloTips: ["Comfortable as a day trip from Agartala, ideally combined with Matabari"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Udaipur Police", number: "03823-222222" }],
+      safeZones: ["Temple grounds and riverbank in daylight"],
+      avoidAreas: ["Riverbank areas after dark"],
+    },
+    rating: 4.4,
+    reviews: 320,
+    mustEat: ["Bengali-Tripuri thali in Agartala"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "khumulwng",
+    name: "Khumulwng",
+    state: "Tripura",
+    hidden: true,
+    tagline: "Seat of Tripura's Tribal Self-Governance and Indigenous Culture",
+    description: "Khumulwng, 26 km from Agartala, is the headquarters of the Tripura Tribal Areas Autonomous District Council (TTAADC) — a constitutional body under the Sixth Schedule that administers the Tiprasa-dominated areas covering 68% of Tripura's geographical area. Established under the TTAADC Act of 1979 following democratic movements by Tripura's indigenous communities, the council town also hosts a museum documenting indigenous Tiprasa culture, making it a window into the tribal self-governance and heritage that shapes much of the state beyond Agartala.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Khumulwng%2CTripura.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/39/Khumulwng%2CTripura.jpg",
+    imageCredit: "Samuel debbarma96, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Headquarters of the Tripura Tribal Areas Autonomous District Council" },
+      { name: "Sixth Schedule constitutional body administering 68% of Tripura" },
+      { name: "Museum of indigenous Tiprasa culture" },
+      { name: "Established under the TTAADC Act, 1979" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then ~26 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "~45 min from Agartala", costRange: "₹500–₹1,000 by taxi", tips: "A straightforward half-day trip from Agartala" },
+    ],
+    accommodation: [
+      { type: "Agartala Hotels", priceRange: "₹800–₹4,000/night", examples: ["Hotels across Agartala city"], description: "Usually visited as a day trip from Agartala" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹500–₹1,000 round trip", notes: "From Agartala to Khumulwng", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Agartala", distance: "26 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Khumulwng Visit", morning: "Drive from Agartala to Khumulwng", afternoon: "Visit the council headquarters and the indigenous Tiprasa culture museum", evening: "Return to Agartala", stay: "Agartala hotel", meals: "Bengali-Tripuri thali in Agartala", tips: "Check ahead for museum opening hours before visiting" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Administrative town with government infrastructure", "Close to Agartala's tourist circuit"],
+      precautions: ["Standard precautions for a small administrative town"],
+      soloTips: ["Easy, comfortable half-day visit for solo travellers"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Agartala Police", number: "0381-2325533" }],
+      safeZones: ["Council headquarters and museum area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.1,
+    reviews: 180,
+    mustEat: ["Bengali-Tripuri thali in Agartala"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
   {
     id: "kedarnath",
