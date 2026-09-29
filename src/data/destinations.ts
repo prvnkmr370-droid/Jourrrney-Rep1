@@ -103844,6 +103844,167 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Warm layers", "Sturdy trekking shoes", "Binoculars", "Camera"],
   },
 
+  {
+    id: "mana-village",
+    name: "Mana Village",
+    state: "Uttarakhand",
+    hidden: true,
+    tagline: "India's Last Village, at the Foot of the Himalayas",
+    description: "Mana, a few kilometres beyond Badrinath in Chamoli district, is popularly known as 'India's last village' before the Tibet border, its houses of the Bhotia/Marchha community clustered where the Saraswati and Alaknanda rivers meet. Local legend places the sage Ved Vyasa's cave here, where the Mahabharata is said to have been composed, and the village's tiny 'first/last tea shop of India' has become a well-known photo stop for pilgrims and travellers heading further toward the Vasudhara Falls and Satopanth trek routes.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Mana_-_village.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Mana_-_village.jpg",
+    imageCredit: "Karz09, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "May to October (closed in winter)",
+    duration: "Half Day to 1 Day",
+    highlights: [
+      { name: "Popularly called 'India's last village'" },
+      { name: "Vyas Gufa — traditional site of the Mahabharata's composition" },
+      { name: "Confluence of the Saraswati and Alaknanda rivers" },
+      { name: "The 'Last Tea Shop of India'" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dehradun then ~325 km by road via Badrinath", fromMumbai: "Fly to Dehradun then road", fromBangalore: "Fly to Dehradun then road", duration: "~3 km beyond Badrinath by road", costRange: "₹100–₹300 shared taxi from Badrinath", tips: "A short hop from Badrinath, but the wider journey there is long — combine as part of the Char Dham circuit" },
+    ],
+    accommodation: [
+      { type: "Badrinath Hotels/Guesthouses", priceRange: "₹800–₹3,000/night", examples: ["Hotels and dharamshalas in Badrinath"], description: "Mana has minimal stay options; Badrinath is the practical base" },
+    ],
+    localTransport: [
+      { mode: "Shared Taxi", cost: "₹50–₹150", notes: "Between Badrinath and Mana", available: true },
+      { mode: "Walking", cost: "Free", notes: "Village and riverbank paths", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Badrinath", distance: "3 km", type: "Pilgrimage Town", isHidden: false, id: "badrinath" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mana Village Visit", morning: "Visit Badrinath Temple", afternoon: "Continue to Mana — Vyas Gufa, the Saraswati-Alaknanda confluence, and the last tea shop", evening: "Return to Badrinath", stay: "Badrinath hotel/guesthouse", meals: "Simple pahadi meals, tea at the last tea shop", tips: "The village and road beyond close for winter — visit only in the May–October window" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Well-established stop on the Badrinath pilgrimage circuit", "Regular pilgrim and tourist footfall in season"],
+      precautions: ["High-altitude location — altitude sickness possible", "Limited facilities beyond the main village area"],
+      soloTips: ["Comfortable as a short trip from Badrinath given the well-trodden pilgrim circuit"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Village centre and main riverbank paths"],
+      avoidAreas: ["Unmarked trails beyond the village without a guide"],
+    },
+    rating: 4.5,
+    reviews: 3200,
+    mustEat: ["Tea at the 'Last Tea Shop of India'", "Simple pahadi meals"],
+    packingTips: ["Warm layers even in summer", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "chakrata",
+    name: "Chakrata",
+    state: "Uttarakhand",
+    hidden: true,
+    tagline: "A Restricted Cantonment Town Amid the Jaunsar-Bawar Hills",
+    description: "Chakrata, at 2,118 m between the Tons and Yamuna rivers, was established as a British Indian Army cantonment in 1869 by Colonel Hume of the 55th Regiment, and today remains home to the Special Frontier Force, keeping large parts of the town off-limits to visitors. The surrounding Jaunsar-Bawar region is home to the distinct Jaunsari community, and nearby attractions like the Deoban viewpoint, Tiger Falls, and the ancient wooden Mahasu Devta Temple at Hanol draw travellers to this less-commercialised alternative to Uttarakhand's better-known hill stations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Chakrata_nice_wather.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Chakrata_nice_wather.jpg",
+    imageCredit: "Mustkeem Ahamad, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "March to June, September to November",
+    duration: "1–2 Days",
+    highlights: [
+      { name: "British-era cantonment, garrison of the Special Frontier Force" },
+      { name: "Deoban viewpoint and Tiger Falls" },
+      { name: "Jaunsar-Bawar region's distinct Jaunsari culture" },
+      { name: "Ancient wooden Mahasu Devta Temple at nearby Hanol" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Dehradun then ~98 km by road", fromMumbai: "Fly to Dehradun then road", fromBangalore: "Fly to Dehradun then road", duration: "~3.5 hrs from Dehradun", costRange: "₹2,000–₹3,500 by taxi", tips: "Some areas are restricted military zones — stick to designated tourist areas" },
+    ],
+    accommodation: [
+      { type: "Chakrata/Deoban Guesthouses", priceRange: "₹1,000–₹3,000/night", examples: ["Forest rest houses and private guesthouses"], description: "Limited but atmospheric options given the town's restricted status" },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹500–₹1,500", notes: "For Tiger Falls, Deoban, and other viewpoints", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Dehradun", distance: "98 km", type: "City", isHidden: false, id: "dehradun" },
+      { name: "Mussoorie", distance: "73 km", type: "Hill Station", isHidden: false, id: "mussoorie" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 1000, accommodation: 500, food: 250, transport: 150, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chakrata & Tiger Falls", morning: "Arrive and visit Tiger Falls", afternoon: "Explore the town and Jaunsari village culture", evening: "Sunset from a local viewpoint", stay: "Chakrata guesthouse", meals: "Pahadi/Jaunsari-style meals", tips: "Respect restricted military zone boundaries — stick to marked tourist routes" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Military cantonment presence provides an unusually secure environment", "Low-crime, tightly regulated town"],
+      precautions: ["Restricted areas require caution and adherence to signage", "Limited facilities compared to bigger hill stations"],
+      soloTips: ["Comfortable given the military presence, but stick to open tourist areas"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Designated tourist areas and viewpoints"],
+      avoidAreas: ["Restricted military zones"],
+    },
+    rating: 4.4,
+    reviews: 1400,
+    mustEat: ["Pahadi/Jaunsari-style meals"],
+    packingTips: ["Warm layers", "Comfortable walking shoes", "ID for checkpoints"],
+  },
+
+  {
+    id: "dharchula",
+    name: "Dharchula",
+    state: "Uttarakhand",
+    hidden: true,
+    tagline: "A Himalayan Border Town Split by the Mahakali River",
+    description: "Dharchula, in Pithoragarh district's Kumaon division, is a hill town at 940 m split in two by the Mahakali River, with one settlement in India and its twin, Darchula, across the water in Nepal. Residents on both banks share close cultural, linguistic, and family ties that predate the modern border. The town is home to the Rung Museum, documenting the local Rung community's heritage, along with sites like Narayan Ashram and Buddha Cave, and serves as a gateway to the remote high-Himalayan valleys of Uttarakhand's northeastern corner.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/58/Kumaon_Himalaya_2.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/58/Kumaon_Himalaya_2.jpg",
+    imageCredit: "Bheinskitang, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "March to June, September to November",
+    duration: "1 Day",
+    highlights: [
+      { name: "Split India-Nepal border town on the Mahakali River" },
+      { name: "Rung Museum — local Rung community heritage" },
+      { name: "Narayan Ashram and Buddha Cave" },
+      { name: "Gateway to remote high-Himalayan valleys" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Pantnagar then ~350 km by road", fromMumbai: "Fly to Pantnagar then road", fromBangalore: "Fly to Pantnagar then road", duration: "~10–12 hrs from Pantnagar", costRange: "₹4,000–₹7,000 by taxi", tips: "Pithoragarh town is the more practical intermediate base" },
+    ],
+    accommodation: [
+      { type: "Dharchula Guesthouses", priceRange: "₹800–₹2,500/night", examples: ["Local hotels and guesthouses in Dharchula town"], description: "Basic accommodation serving the border-trade and pilgrim traffic" },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "₹300–₹800", notes: "Around town and to nearby sites", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Pithoragarh", distance: "90 km", type: "Town", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 300, food: 200, transport: 150, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dharchula Border Town", morning: "Visit the Rung Museum", afternoon: "Explore Narayan Ashram and Buddha Cave", evening: "Riverside walk along the Mahakali", stay: "Dharchula guesthouse", meals: "Kumaoni hill cuisine", tips: "Carry photo ID given the border-area location" },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Established border town with regular administrative presence"],
+      precautions: ["Remote high-Himalayan location with limited facilities", "Border-area — carry ID at all times"],
+      soloTips: ["Best visited with a local guide given the remote location and border sensitivities"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Town centre and main riverside path"],
+      avoidAreas: ["Unmarked border-adjacent areas without proper authorization"],
+    },
+    rating: 4.2,
+    reviews: 480,
+    mustEat: ["Kumaoni hill cuisine"],
+    packingTips: ["Warm layers", "Photo ID (border area)", "Comfortable walking shoes"],
+  },
+
   // ─── WEST BENGAL ──────────────────────────────────────────────────
   {
     id: "shantiniketan",
