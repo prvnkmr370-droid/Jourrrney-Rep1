@@ -221,24 +221,61 @@ export function generateItinerary(
     transport: localMode,
   }));
 
+  // Real nearby places are limited (some destinations only have one or
+  // two), so a long trip used to cycle through them with modulo — which,
+  // for a pool of size 1 (e.g. Dharmasthala only lists Kukke Subramanya),
+  // degenerates to the exact same day trip, same cost, every remaining
+  // day. No real traveler repeats an identical day trip 5+ days running.
+  // Fix: visit each real nearby place at most once, then fall back to
+  // varied "free day in town" filler for whatever's left, instead of
+  // mechanically repeating a place the trip has already covered.
+  const dayTripPool = dest.nearbyPlaces.filter((p) => (wantsOffbeat ? p.isHidden : true));
+  const LEISURE_MORNINGS = [
+    `Sleep in, then a relaxed morning exploring ${dest.name} at your own pace.`,
+    `A quieter morning — revisit a favourite spot from earlier in the trip, or explore a part of ${dest.name} you haven't yet.`,
+    `Start slow with a local breakfast spot, then wander ${dest.name}'s markets and lanes.`,
+  ];
   for (let d = base.length + 1; d <= days; d++) {
-    const pool = dest.nearbyPlaces.filter((p) => (wantsOffbeat ? p.isHidden : true));
-    const nearby = pool[(d - base.length - 1) % pool.length] || dest.nearbyPlaces[0];
-    generated.push({
-      day: d,
-      title: `Day Trip: ${nearby?.name || "Nearby Attraction"}`,
-      morning: `Depart early for ${nearby?.name || "nearby area"} (${nearby?.distance || "nearby"}).`,
-      afternoon: wantsAdventure
-        ? "Outdoor activities and local adventure experiences."
-        : wantsWellness
-          ? "Ayurvedic treatment or yoga session at a certified wellness center."
-          : "Explore local markets and cultural spots.",
-      evening: `Return to ${dest.name}. ${wantsFood ? "Dinner at a local favourite." : "Evening at leisure."}`,
-      estimatedCost: Math.round(dailyCost * people * 1.1),
-      stay: stayExample,
-      stayType,
-      transport: localMode,
-    });
+    const i = d - base.length - 1; // 0-based index into this loop
+    const nearby = dayTripPool[i];
+    const costMultiplier = 0.95 + (i % 4) * 0.05; // gentle day-to-day variation, same spirit as the base days above
+
+    if (nearby) {
+      generated.push({
+        day: d,
+        title: `Day Trip: ${nearby.name}`,
+        morning: `Depart early for ${nearby.name} (${nearby.distance}).`,
+        afternoon: wantsAdventure
+          ? "Outdoor activities and local adventure experiences."
+          : wantsWellness
+            ? "Ayurvedic treatment or yoga session at a certified wellness center."
+            : "Explore local markets and cultural spots.",
+        evening: `Return to ${dest.name}. ${wantsFood ? "Dinner at a local favourite." : "Evening at leisure."}`,
+        estimatedCost: Math.round(dailyCost * people * costMultiplier),
+        stay: stayExample,
+        stayType,
+        transport: localMode,
+      });
+    } else {
+      // Every real nearby place has already had its own day — fill the
+      // rest of the trip with varied leisure days in the main destination
+      // rather than repeating one.
+      generated.push({
+        day: d,
+        title: `Free Day in ${dest.name}`,
+        morning: LEISURE_MORNINGS[i % LEISURE_MORNINGS.length],
+        afternoon: wantsAdventure
+          ? "Optional local adventure activity, or simply rest before the next leg of the trip."
+          : wantsWellness
+            ? "Ayurvedic treatment or yoga session at a certified wellness center."
+            : `Shop for local specialties${wantsFood ? ` and try ${dest.mustEat[i % dest.mustEat.length]}` : ""}, or relax at your stay.`,
+        evening: wantsFood ? "Dinner at a different local favourite tonight." : "Evening at leisure.",
+        estimatedCost: Math.round(dailyCost * people * 0.75),
+        stay: stayExample,
+        stayType,
+        transport: localMode,
+      });
+    }
   }
 
   const trainMode = dest.transport.find((t) => t.mode.includes("Train"));
