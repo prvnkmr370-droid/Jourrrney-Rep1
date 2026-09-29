@@ -19674,6 +19674,167 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
   },
 
+  {
+    id: "yaganti-temple",
+    name: "Yaganti Temple",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "A 15th-Century Shiva Temple Set Into a Cliff of Rock",
+    description: "Sri Yaganti Uma Maheswara Temple, built in the 15th century by King Harihara Bukka Raya of the Vijayanagara Empire's Sangama Dynasty, sits dramatically at the base of a rocky gorge in the Nandyal district. Its Pushkarini, a temple tank, is fed by a natural spring that flows through the mouth of a stone Nandi. The site carries local legends tying it to the sage Agastya, and the Veerabrahmendra Swami, a saint who is said to have stayed here and composed the prophetic text Kalagnanam. A nearby cave, Chitteppa, adds another layer to the site's devotional lore, and the temple draws large crowds each Maha Shivaratri.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Yaganti_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Yaganti_1.jpg",
+    imageCredit: "Saisumanth532, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March (Maha Shivaratri in Feb/Mar)",
+    duration: "Half Day",
+    highlights: [
+      { name: "15th-century Vijayanagara-era Shiva temple" },
+      { name: "Set into a dramatic rocky gorge" },
+      { name: "Pushkarini fed by a spring through a stone Nandi's mouth" },
+      { name: "Chitteppa cave and Agastya legends" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Kurnool then ~90 km by road", fromMumbai: "Fly to Kurnool then road", fromBangalore: "Fly to Kurnool then road", duration: "~2 hrs from Kurnool", costRange: "₹1,500–₹3,000 by taxi", tips: "14 km from Banaganapalle in Nandyal district" },
+    ],
+    accommodation: [
+      { type: "Nandyal/Kurnool Hotels", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Nandyal and Kurnool towns"], description: "Usually visited as a day trip" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 round trip", notes: "From Kurnool or Nandyal", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kurnool", distance: "90 km", type: "City", isHidden: false, id: "kurnool" },
+      { name: "Belum Caves", distance: "75 km", type: "Cave System", isHidden: false, id: "belum-caves" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 400, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Yaganti Temple Visit", morning: "Drive from Kurnool to Yaganti", afternoon: "Explore the temple, Pushkarini, and Chitteppa cave", evening: "Return to Kurnool", stay: "Kurnool hotel", meals: "Andhra thali in Kurnool", tips: "Visiting during Maha Shivaratri sees the temple at its most vivid, though also most crowded" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Well-visited pilgrimage site with regular devotee traffic"],
+      precautions: ["Remote location with limited facilities beyond the temple itself", "Uneven, rocky terrain around the gorge"],
+      soloTips: ["Visit during daylight hours, ideally with a hired car from Kurnool"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kurnool Police", number: "08518-224100" }],
+      safeZones: ["Temple complex and Pushkarini area"],
+      avoidAreas: ["Gorge and cave areas after dark"],
+    },
+    rating: 4.6,
+    reviews: 5200,
+    mustEat: ["Andhra thali in Kurnool"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes for uneven terrain", "Sun protection"],
+  },
+
+  {
+    id: "mantralayam",
+    name: "Mantralayam",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "The Riverside Resting Place of Saint Raghavendra Swamy",
+    description: "Mantralayam, a pilgrim town on the banks of the Tungabhadra River in Kurnool district, is built around the brindavana (memorial shrine) of Raghavendra Swamy, a 17th-century Vaishnava scholar-saint of the Madhwa tradition who served as pontiff of the Kumbakonam matha from 1621 to 1671. His memorial here draws hundreds of thousands of devotees annually, making Mantralayam one of Andhra Pradesh's most significant pilgrimage destinations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/52/View_of_Sri_Guru_Raghavendra_Swamy_Mutt%2C_Mantrayalam.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/52/View_of_Sri_Guru_Raghavendra_Swamy_Mutt%2C_Mantrayalam.jpg",
+    imageCredit: "Mouryan, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Brindavana (memorial shrine) of Raghavendra Swamy" },
+      { name: "17th-century Madhwa Vaishnava pilgrimage site" },
+      { name: "On the banks of the Tungabhadra River" },
+      { name: "Draws hundreds of thousands of devotees annually" },
+    ],
+    transport: [
+      { mode: "Train", icon: "train", fromDelhi: "Train to Mantralayam Road station then short local transport", fromMumbai: "Train to Mantralayam Road", fromBangalore: "Train to Mantralayam Road", duration: "Mantralayam Road station is on the main line", costRange: "₹500–₹2,000", tips: "Mantralayam Road railway station is a few km from the town itself" },
+    ],
+    accommodation: [
+      { type: "Mutt & Pilgrim Guesthouses", priceRange: "₹500–₹2,000/night", examples: ["Sri Raghavendra Swamy Mutt guesthouses", "Private lodges near the temple"], description: "Extensive pilgrim accommodation given the town's religious importance" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹50–₹200", notes: "From Mantralayam Road station to the town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kurnool", distance: "100 km", type: "City", isHidden: false, id: "kurnool" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 300, food: 200, transport: 100, activities: 0 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Mantralayam Pilgrimage", morning: "Visit the Raghavendra Swamy brindavana for darshan", afternoon: "Explore the mutt complex and riverside ghats on the Tungabhadra", evening: "Attend the evening aarti", stay: "Mutt guesthouse or pilgrim lodge", meals: "Temple prasadam, simple vegetarian meals", tips: "Expect long queues during Aradhana festival (the saint's death anniversary, typically August)" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Major, well-managed pilgrimage town with dedicated infrastructure", "Heavy devotee footfall provides safety in numbers"],
+      precautions: ["Can get extremely crowded during festival periods"],
+      soloTips: ["Very comfortable for solo pilgrims given the well-established religious tourism infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Mantralayam Police", number: "08512-279522" }],
+      safeZones: ["Mutt complex and town centre"],
+      avoidAreas: ["Riverbank areas after dark"],
+    },
+    rating: 4.7,
+    reviews: 12000,
+    mustEat: ["Temple prasadam", "Simple vegetarian meals near the mutt"],
+    packingTips: ["Modest, traditional clothing", "Comfortable footwear for temple queues"],
+  },
+
+  {
+    id: "kolleru-lake",
+    name: "Kolleru Lake",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "Asia's Largest Shallow Freshwater Lake and Bird Sanctuary",
+    description: "Kolleru Lake, spread between the Krishna and Godavari river deltas, is one of the largest freshwater lakes in India and forms the largest shallow freshwater lake in Asia, covering 245 sq km of lake area within a 302 sq km Ramsar-designated wetland. Declared a wildlife sanctuary in 1999 and a Ramsar wetland of international importance in 2002, it has historically supported an estimated 20 million resident and migratory birds, including Siberian cranes, painted storks, black-headed ibis, and the spot-billed pelican.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Birds_in_Kolleru_Lake_captured_near_Devi_Chintapadu_%2804%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/49/Birds_in_Kolleru_Lake_captured_near_Devi_Chintapadu_%2804%29.jpg",
+    imageCredit: "iMahesh, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "November to February (peak migratory bird season)",
+    duration: "Half Day",
+    highlights: [
+      { name: "Asia's largest shallow freshwater lake" },
+      { name: "Ramsar wetland of international importance since 2002" },
+      { name: "Wildlife sanctuary since 1999" },
+      { name: "Historic habitat for up to 20 million birds" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Vijayawada or Rajahmundry then road", fromMumbai: "Fly to Vijayawada then road", fromBangalore: "Fly to Vijayawada then road", duration: "~1.5 hrs from Eluru", costRange: "₹1,000–₹2,000 by taxi", tips: "Eluru is the nearest major town, 15 km from the lake" },
+    ],
+    accommodation: [
+      { type: "Eluru Hotels", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Eluru town"], description: "Usually visited as a day trip from Eluru" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Boat", cost: "₹1,000–₹2,000", notes: "Local boats available for birdwatching within the sanctuary", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Rajahmundry", distance: "65 km", type: "City", isHidden: false, id: "rajahmundry" },
+      { name: "Vijayawada", distance: "70 km", type: "City", isHidden: false, id: "vijayawada" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 500, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kolleru Lake Birdwatching", morning: "Drive from Eluru to the lake", afternoon: "Birdwatching by boat or from the shoreline", evening: "Return to Eluru", stay: "Eluru hotel", meals: "Andhra fish curry and local cuisine in Eluru", tips: "Visit November–February for peak migratory bird numbers; carry binoculars" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Recognised wildlife sanctuary with forest department presence"],
+      precautions: ["Remote wetland areas with limited facilities", "Standard water-body caution around the lake edge"],
+      soloTips: ["Visit with a local guide or organised birdwatching trip for the best experience"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Eluru Police", number: "08812-230100" }],
+      safeZones: ["Designated viewing areas and boat routes"],
+      avoidAreas: ["Unmarked wetland areas away from designated paths"],
+    },
+    rating: 4.3,
+    reviews: 640,
+    mustEat: ["Andhra fish curry in Eluru"],
+    packingTips: ["Binoculars", "Sun protection", "Insect repellent", "Comfortable footwear for wet terrain"],
+  },
+
   // The 10 destinations below are sourced from tourism.bihar.gov.in (the
   // state's official tourism portal) — real descriptions, historical
   // facts, best-season/etiquette notes, and local-transport details for
