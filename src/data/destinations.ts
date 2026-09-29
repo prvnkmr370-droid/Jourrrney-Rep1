@@ -15873,8 +15873,8 @@ export const DESTINATIONS: Destination[] = [
     bestSeason: "October – April (Ambubachi Mela: June–July)",
     duration: "2–3 days",
     highlights: [
-      { name: "Kamakhya Temple, Nilachal Hill" },
-      { name: "Umananda Island (world's smallest inhabited river island)" },
+      { name: "Kamakhya Temple, Nilachal Hill", id: "kamakhya-temple" },
+      { name: "Umananda Island (world's smallest inhabited river island)", id: "umananda-island" },
       { name: "Deepor Beel (freshwater lake)" },
       { name: "Guwahati Planetarium" },
       { name: "Assam State Zoo & Botanical Garden" },
@@ -15896,7 +15896,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Kaziranga National Park", distance: "217 km", type: "Wildlife Reserve", isHidden: false, id: "kaziranga" },
       { name: "Pobitora Wildlife Sanctuary", distance: "30 km", type: "Rhino Sanctuary", isHidden: true },
-      { name: "Hajo (Hayagriva Madhava Mandir)", distance: "~35 km", type: "Temple Town", isHidden: true },
+      { name: "Hajo (Hayagriva Madhava Mandir)", distance: "~35 km", type: "Temple Town", isHidden: true, id: "hajo" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Backpacker", perDayPerPerson: 1500, accommodation: 700, food: 400, transport: 300, activities: 100 },
@@ -16029,7 +16029,7 @@ export const DESTINATIONS: Destination[] = [
       { mode: "App Cab (Ola/Uber)", cost: "N/A", notes: "No app-cab coverage in Haflong — a local taxi is the standard option", available: false },
     ],
     nearbyPlaces: [
-      { name: "Jatinga (bird phenomenon village)", distance: "~9 km", type: "Natural Phenomenon", isHidden: false },
+      { name: "Jatinga (bird phenomenon village)", distance: "~9 km", type: "Natural Phenomenon", isHidden: false, id: "jatinga" },
       { name: "Silchar", distance: "103 km", type: "Barak Valley City", isHidden: true },
       { name: "Guwahati", distance: "~330 km", type: "Gateway City", isHidden: false, id: "guwahati" },
     ],
@@ -17613,6 +17613,222 @@ export const DESTINATIONS: Destination[] = [
     mustEat: ["Assamese thali in Tezpur"],
     packingTips: ["Neutral/earth-tone clothing", "Binoculars — essential for the Bengal florican", "Mosquito repellent", "Light layers — 17–33°C range in dry season"],
   },
+
+  {
+    id: "kamakhya-temple",
+    name: "Kamakhya Temple",
+    state: "Assam",
+    hidden: true,
+    tagline: "One of Hinduism's Most Powerful Shakti Peethas",
+    description: "Kamakhya Temple, atop Nilachal Hill overlooking Guwahati, is dedicated to the goddess Kamakhya and ranks among the most important of the 51 Shakti Peethas — sites where parts of the goddess Sati's body are believed to have fallen. Its distinctive beehive-shaped domes and continuous stream of pilgrims give it a genuinely different atmosphere from most Indian temples, and it draws its largest crowds during the annual Ambubachi Mela, a fertility festival marking the goddess's menstrual cycle.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kamakhya_Temple%2C_Guwahati%2C_Assam.jpg",
+    imageCredit: "BhuyanBhaskar, CC BY 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March (Ambubachi Mela in June)",
+    duration: "Half Day",
+    visitingHours: { opens: "5:30 AM", closes: "10:00 PM", note: "Very crowded during Ambubachi Mela (mid-June); special darshan tickets available." },
+    highlights: [
+      { name: "One of the most important Shakti Peethas" },
+      { name: "Distinctive beehive-shaped temple domes" },
+      { name: "Atop Nilachal Hill with views over Guwahati" },
+      { name: "Annual Ambubachi Mela festival" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Guwahati", fromMumbai: "Fly to Guwahati via connections", fromBangalore: "Fly to Guwahati via connections", duration: "3–5 hrs flight from major cities", costRange: "₹4,000–₹10,000 airfare", tips: "Nilachal Hill is a short drive from central Guwahati" },
+    ],
+    accommodation: [
+      { type: "Guwahati Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotels across Guwahati city"], description: "Wide range of accommodation" },
+    ],
+    localTransport: [
+      { mode: "Auto/Taxi", cost: "₹150–₹400", notes: "From central Guwahati to Nilachal Hill", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Guwahati", distance: "8 km", type: "City", isHidden: false, id: "guwahati" },
+      { name: "Umananda Island", distance: "10 km", type: "River Island", isHidden: true, id: "umananda-island" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 200, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kamakhya Temple Visit", morning: "Darshan at the main shrine (expect queues)", afternoon: "Explore the temple complex and surrounding shrines", evening: "Sunset views over Guwahati from Nilachal Hill", stay: "Guwahati hotel", meals: "Temple prasadam, Assamese thali in Guwahati", tips: "Arrive early morning to avoid the longest queues; modest dress expected" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Major, well-managed pilgrimage site with regular security", "Close to Guwahati's tourist infrastructure"],
+      precautions: ["Can get extremely crowded, especially during Ambubachi Mela", "Steep approach roads/steps"],
+      soloTips: ["Comfortable for solo pilgrims outside peak festival crowds"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Guwahati Police", number: "0361-2540126" }],
+      safeZones: ["Temple complex"],
+      avoidAreas: ["None significant outside major festival crowding"],
+    },
+    rating: 4.6,
+    reviews: 9800,
+    mustEat: ["Temple prasadam", "Assamese thali in Guwahati"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Patience for queues"],
+  },
+
+  {
+    id: "umananda-island",
+    name: "Umananda Island",
+    state: "Assam",
+    hidden: true,
+    tagline: "The World's Smallest Inhabited River Island",
+    description: "Umananda Island, also called Peacock Island, sits in the middle of the Brahmaputra River in Guwahati and is recognized as the world's smallest inhabited river island. A short ferry ride from Umananda Ghat reaches the island's Shiva temple, built in 1694 by the Ahom king Gadadhar Singha, set amid dense forest that is also a recognized National Geological Monument of India.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Umananda_Island%2C_Guwahati_%284%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Umananda_Island%2C_Guwahati_%284%29.jpg",
+    imageCredit: "PP Yoonus, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Spiritual"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "World's smallest inhabited river island" },
+      { name: "1694 Ahom-era Umananda Shiva Temple" },
+      { name: "National Geological Monument of India" },
+      { name: "Short ferry ride from central Guwahati" },
+    ],
+    transport: [
+      { mode: "Boat", icon: "ship", fromDelhi: "Fly to Guwahati then a short ferry crossing", fromMumbai: "Fly to Guwahati then ferry", fromBangalore: "Fly to Guwahati then ferry", duration: "10–15 min ferry from Umananda Ghat", costRange: "₹30–₹100 for the ferry", tips: "Ferries depart from near the Guwahati High Court" },
+    ],
+    accommodation: [
+      { type: "Guwahati Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotels across Guwahati city"], description: "Usually visited as a half-day trip from Guwahati" },
+    ],
+    localTransport: [
+      { mode: "Ferry", cost: "₹30–₹100 round trip", notes: "The only way to reach the island", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Guwahati", distance: "3 km", type: "City", isHidden: false, id: "guwahati" },
+      { name: "Kamakhya Temple", distance: "10 km", type: "Spiritual", isHidden: true, id: "kamakhya-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Umananda Island Visit", morning: "Ferry across to the island and explore the Shiva temple", afternoon: "Enjoy the forested island's quiet paths", evening: "Return ferry with sunset views over the Brahmaputra", stay: "Guwahati hotel", meals: "Assamese thali in Guwahati", tips: "Evening ferry crossings offer particularly good river sunset views" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Popular, well-managed ferry route with regular tourist traffic", "Close to central Guwahati"],
+      precautions: ["Standard boat-safety precautions"],
+      soloTips: ["Comfortable for solo visitors given the regular ferry traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Guwahati Police", number: "0361-2540126" }],
+      safeZones: ["Island grounds and temple area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.4,
+    reviews: 3600,
+    mustEat: ["Assamese thali in Guwahati"],
+    packingTips: ["Camera", "Comfortable walking shoes", "Sun protection"],
+  },
+
+  {
+    id: "hajo",
+    name: "Hajo",
+    state: "Assam",
+    hidden: true,
+    tagline: "A Rare Town of Shared Hindu, Buddhist, and Muslim Pilgrimage",
+    description: "Hajo, near Guwahati, is an unusual multi-faith pilgrimage town centred on the Hayagriva Madhava Temple — revered by Hindus as a Vishnu shrine and by some Buddhist traditions as a site linked to the Buddha's parinirvana. The town also houses the Poa Mecca mosque, considered by some Muslims to hold a quarter of the merit of a pilgrimage to Mecca, making Hajo a genuinely rare example of three faiths sharing sacred geography within a few kilometres of each other.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hayagriva_Madhava_Temple%2C_Hajo.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hayagriva_Madhava_Temple%2C_Hajo.jpg",
+    imageCredit: "PrabalJeetBhagawati, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Spiritual", "Heritage"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Hayagriva Madhava Temple" },
+      { name: "Poa Mecca mosque" },
+      { name: "Shared Hindu, Buddhist, and Muslim pilgrimage site" },
+      { name: "Ashokastami festival" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati then ~30 km by road", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "45 min–1 hr from Guwahati", costRange: "₹700–₹1,500 by taxi", tips: "Easily combined with a Guwahati day trip" },
+    ],
+    accommodation: [
+      { type: "Guwahati Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotels across Guwahati city"], description: "Usually visited as a day trip from Guwahati" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,200–₹2,000 round trip", notes: "From Guwahati to Hajo", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Guwahati", distance: "30 km", type: "City", isHidden: false, id: "guwahati" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Hajo Multi-Faith Circuit", morning: "Visit the Hayagriva Madhava Temple", afternoon: "Visit the Poa Mecca mosque", evening: "Return to Guwahati", stay: "Guwahati hotel", meals: "Assamese thali in Guwahati", tips: "Ashokastami (spring) sees the town at its most vivid, though also most crowded" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Well-attended pilgrimage site with regular devotee traffic"],
+      precautions: ["Modest dress expected at both the temple and mosque"],
+      soloTips: ["Comfortable as a day trip from Guwahati"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kamrup Police", number: "0361-2540126" }],
+      safeZones: ["Temple and mosque complexes"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.4,
+    reviews: 1600,
+    mustEat: ["Assamese thali in Guwahati"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "jatinga",
+    name: "Jatinga",
+    state: "Assam",
+    hidden: true,
+    tagline: "The Village Where Birds Mysteriously 'Fall from the Sky'",
+    description: "Jatinga, a small village in the hills of Dima Hasao district, is known worldwide for a still not-fully-understood phenomenon in which migratory birds appear disoriented and plummet toward lights on foggy, moonless nights during a narrow window each September-November. Long attributed to local superstition before being studied scientifically, the 'bird fall' draws researchers and curious travellers to this otherwise quiet Naga-Khasi hill village overlooking a misty valley.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view_of_Jatinga_village%2C_Assam.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view_of_Jatinga_village%2C_Assam.jpg",
+    imageCredit: "GeoEvan (Evan Centanni), CC BY 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "September to November (bird phenomenon season)",
+    duration: "1 Day",
+    highlights: [
+      { name: "Mysterious 'bird fall' phenomenon (Sept–Nov)" },
+      { name: "Misty hill valley village" },
+      { name: "Naga-Khasi hill community" },
+      { name: "Studied by ornithologists worldwide" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati then road via Haflong", fromMumbai: "Fly to Guwahati then road", fromBangalore: "Fly to Guwahati then road", duration: "~1 hr from Haflong", costRange: "₹800–₹1,500 by taxi", tips: "Haflong is the nearest base town" },
+    ],
+    accommodation: [
+      { type: "Haflong Hotels", priceRange: "₹800–₹2,500/night", examples: ["Hotels in Haflong town"], description: "Usually visited as a day trip from Haflong" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹800–₹1,500 round trip", notes: "From Haflong to Jatinga", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Haflong", distance: "9 km", type: "Hill Town", isHidden: false, id: "haflong" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 0, food: 200, transport: 350, activities: 150 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Jatinga Village Visit", morning: "Drive from Haflong to Jatinga", afternoon: "Explore the village and valley viewpoints", evening: "Return to Haflong (or overnight if visiting during bird-fall season)", stay: "Haflong hotel", meals: "Simple local meals in Haflong", tips: "If visiting for the bird phenomenon, go with a registered local guide/forest official — never attempt to interfere with the birds" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Small, close-knit village community"],
+      precautions: ["Remote hill village with limited facilities", "Foggy conditions during bird-fall season affect visibility"],
+      soloTips: ["Visit as part of an organised trip from Haflong, especially during bird-fall season"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Haflong Police", number: "03673-234233" }],
+      safeZones: ["Village centre and viewpoints"],
+      avoidAreas: ["Unfamiliar hill roads after dark"],
+    },
+    rating: 4.3,
+    reviews: 720,
+    mustEat: ["Simple local meals in Haflong"],
+    packingTips: ["Warm layers", "Rain/fog protection", "Torch/flashlight", "Comfortable walking shoes"],
+  },
+
   // Long Island, Rangat, and Campbell Bay (Great Nicobar) below were the
   // three Andaman & Nicobar destinations still without a verified real
   // photo. Sourced via the official tourism.andamannicobar.gov.in site
