@@ -101593,6 +101593,114 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Camera"],
   },
 
+  {
+    id: "kailashahar",
+    name: "Kailashahar",
+    state: "Tripura",
+    hidden: true,
+    tagline: "The Riverside Gateway Town to Unakoti's Rock Carvings",
+    description: "Kailashahar, on the banks of the Manu River — Tripura's longest — is the administrative headquarters of Unakoti district and the state's fourth-largest urban area. Surrounded by the Unakoti hills and named for Hara (Shiva) and Kailasha, his mythical abode, the town serves as the practical base for visiting the nearby Unakoti rock-cut carvings, and is itself home to a Ramakrishna Mission ashrama near the Bangladesh border region of northeastern Tripura.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Ramakrishna_Mission_Ashrama_Kailsashahar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/22/Ramakrishna_Mission_Ashrama_Kailsashahar.jpg",
+    imageCredit: "Ramakrishna Math and Ramakrishna Mission Belur Math, Public Domain, via Wikimedia Commons",
+    category: ["Culture", "Heritage"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Gateway town to the Unakoti rock carvings" },
+      { name: "On the banks of the Manu River, Tripura's longest" },
+      { name: "Ramakrishna Mission Ashrama" },
+      { name: "Tripura's fourth-largest urban area" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Agartala then ~130 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "~3 hrs by road from Agartala", costRange: "₹2,500–₹4,500 by taxi", tips: "Kailashahar also has its own small airport with limited connectivity" },
+    ],
+    accommodation: [
+      { type: "Kailashahar Hotels", priceRange: "₹600–₹2,000/night", examples: ["Hotels and guesthouses in Kailashahar town"], description: "Basic accommodation, the practical base for visiting Unakoti" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw/Taxi", cost: "₹50–₹300", notes: "Around town and onward to Unakoti", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Unakoti", distance: "10 km", type: "Heritage", isHidden: false, id: "unakoti" },
+      { name: "Agartala", distance: "130 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 300, food: 200, transport: 150, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kailashahar Base", morning: "Explore the town and the Ramakrishna Mission Ashrama", afternoon: "Day trip to the Unakoti rock carvings", evening: "Return to Kailashahar for the night", stay: "Kailashahar hotel", meals: "Bengali-Tripuri thali", tips: "Most visitors use Kailashahar as an overnight base for Unakoti rather than a standalone destination" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["District headquarters town with basic infrastructure"],
+      precautions: ["Smaller town with limited amenities beyond the essentials"],
+      soloTips: ["Comfortable as a base for visiting Unakoti"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kailashahar Police", number: "03823-222222" }],
+      safeZones: ["Town centre"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.0,
+    reviews: 210,
+    mustEat: ["Bengali-Tripuri thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "dharmanagar",
+    name: "Dharmanagar",
+    state: "Tripura",
+    hidden: true,
+    tagline: "Tripura's Second-Largest Town, on the Juri River Near Bangladesh",
+    description: "Dharmanagar, the administrative headquarters of North Tripura district, is the state's second-largest urban area after Agartala and an important commercial centre in the hilly northeast. Set on the banks of the Juri River in the northernmost part of Tripura, close to the India-Bangladesh border, the town centres on its Kali Dighi Ghat, a landmark pond and temple area that anchors local life and commerce.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/36/Dharmanagar_town.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/36/Dharmanagar_town.jpg",
+    imageCredit: "Vulpes-bengalensis, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Culture"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Tripura's second-largest urban area after Agartala" },
+      { name: "Kali Dighi Ghat — landmark pond and temple area" },
+      { name: "On the Juri River, near the Bangladesh border" },
+      { name: "Administrative headquarters of North Tripura district" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Agartala then ~180 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "~4 hrs by road from Agartala", costRange: "₹3,000–₹5,000 by taxi", tips: "Also reachable by rail via the Agartala-Dharmanagar line" },
+    ],
+    accommodation: [
+      { type: "Dharmanagar Hotels", priceRange: "₹700–₹2,200/night", examples: ["Hotels across Dharmanagar town"], description: "Adequate accommodation as the state's second-largest town" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹30–₹150", notes: "Widely available around town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jampui Hills", distance: "65 km", type: "Hill Range", isHidden: false, id: "jampui-hills" },
+      { name: "Agartala", distance: "180 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 350, food: 200, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Dharmanagar Town", morning: "Explore the town centre and Kali Dighi Ghat", afternoon: "Local market visit", evening: "Onward to Jampui Hills or return south", stay: "Dharmanagar hotel", meals: "Bengali-Tripuri thali", tips: "A natural stopover en route to Jampui Hills from Agartala" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Second-largest town in the state with established infrastructure", "Regular commercial and rail traffic"],
+      precautions: ["Standard town precautions after dark"],
+      soloTips: ["Comfortable for solo travellers given its size and infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Dharmanagar Police", number: "03822-222222" }],
+      safeZones: ["Town centre", "Kali Dighi Ghat area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.1,
+    reviews: 260,
+    mustEat: ["Bengali-Tripuri thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
   {
     id: "kedarnath",
