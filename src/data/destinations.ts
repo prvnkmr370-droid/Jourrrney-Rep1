@@ -15697,6 +15697,163 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable shoes", "Sun hat", "Water bottle", "ID for border-area proximity"],
   },
 
+  {
+    id: "bithoor",
+    name: "Bithoor",
+    state: "Uttar Pradesh",
+    hidden: true,
+    tagline: "Where Mythology Meets the 1857 Rebellion, on the Ganges",
+    description: "Bithoor, on the right bank of the Ganges 25 km north of Kanpur, was known in antiquity as Utpalaranya and later as Brahmavarta after Lord Brahma is said to have performed an Ashwamedha yagna here. Hindu tradition holds it as the site of Valmiki's ashram, where Sita took refuge and gave birth to Luv and Kush, and where she is believed to have finally entered the earth at a temple that still stands. Centuries later, Bithoor became a nerve centre of the 1857 Indian Rebellion as the home of Nana Sahib, whose memorial and a Peshwa-era minaret at Brahmavart Ghat now anchor the town's blend of myth and revolutionary history.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/1167_main-ghat-at-bithoor.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6e/1167_main-ghat-at-bithoor.jpg",
+    imageCredit: "Mukerjee, Public Domain, via Wikimedia Commons",
+    category: ["Heritage", "Spiritual"],
+    bestSeason: "October to March",
+    duration: "Half Day to 1 Day",
+    highlights: [
+      { name: "Brahmavart Ghat on the Ganges" },
+      { name: "Valmiki Ashram — traditional birthplace of Luv and Kush" },
+      { name: "Nana Sahib Memorial and 1857 Rebellion sites" },
+      { name: "Peshwa-era minaret built by Baji Rao II" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Kanpur then ~25 km by road", fromMumbai: "Fly to Kanpur then road", fromBangalore: "Fly to Kanpur then road", duration: "~45 min from Kanpur", costRange: "₹500–₹1,000 by taxi", tips: "Easily combined with a Kanpur city day trip" },
+    ],
+    accommodation: [
+      { type: "Kanpur Hotels", priceRange: "₹1,200–₹4,000/night", examples: ["Hotels across Kanpur city"], description: "Usually visited as a half-day or day trip from Kanpur" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹300–₹800 round trip", notes: "From Kanpur to Bithoor", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kanpur", distance: "25 km", type: "City", isHidden: false },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Bithoor Heritage Circuit", morning: "Visit Brahmavart Ghat and the Valmiki Ashram", afternoon: "Explore the Nana Sahib Memorial and Nana Rao Sahab Park", evening: "Sunset at the ghats, then return to Kanpur", stay: "Kanpur hotel", meals: "Simple vegetarian meals near the ghats", tips: "Shivaratri sees pilgrims beginning a two-day austerity trek from here — a striking time to visit if timing allows" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Established pilgrimage and heritage site with regular visitor footfall"],
+      precautions: ["Riverside steps can be slippery, especially during festivals"],
+      soloTips: ["Comfortable as a half-day trip from Kanpur"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Ghat area and temple complex in daylight"],
+      avoidAreas: ["Riverbank areas after dark"],
+    },
+    rating: 4.3,
+    reviews: 1900,
+    mustEat: ["Simple vegetarian meals near the ghats", "Kanpur-style street food"],
+    packingTips: ["Modest clothing", "Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "kalinjar-fort",
+    name: "Kalinjar Fort",
+    state: "Uttar Pradesh",
+    hidden: true,
+    tagline: "The Fort That Lasts Beyond Time",
+    description: "Kalinjar Fort, perched atop a Vindhya hill in Banda district, takes its name from the Sanskrit for 'destroyer of time' — an epithet for Shiva, to whom the site was sacred as a Taposthan (place of austerities) even before the 5th century. Built by the Chandela dynasty in the 10th century and reinforced in the 11th, its walls stretch over 7.5 km and enclose temple ruins, palaces, and nine named gateways. Historians called it one of Hindustan's strongest forts; it withstood or fell to a roll call of history's great conquerors, including Mahmud of Ghazni, and Sher Shah Suri, who died capturing it in 1545, before the British finally occupied it in 1812.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/0121921_Kalinjar_Fort_with_the_view_of_Vidhyachal_valleys%2C_Uttar_Pradesh_011.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e6/0121921_Kalinjar_Fort_with_the_view_of_Vidhyachal_valleys%2C_Uttar_Pradesh_011.jpg",
+    imageCredit: "Ms Sarah Welch, CC0, via Wikimedia Commons",
+    category: ["Heritage", "History"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "10th-century Chandela-dynasty fort, walls over 7.5 km long" },
+      { name: "Sher Shah Suri died capturing it in 1545" },
+      { name: "Neelakanth (Shiva) temple ruins and Gupta-era relief carvings" },
+      { name: "Monument of National Importance" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Khajuraho or Jhansi then road", fromMumbai: "Fly to Khajuraho then road", fromBangalore: "Fly to Khajuraho then road", duration: "~1.5 hrs from Khajuraho, ~3 hrs from Banda", costRange: "₹2,000–₹3,500 by taxi", tips: "Often combined with Khajuraho given the short distance" },
+    ],
+    accommodation: [
+      { type: "Banda/Khajuraho Hotels", priceRange: "₹1,000–₹3,500/night", examples: ["Hotels in Banda town or Khajuraho"], description: "Usually visited as a day trip" },
+    ],
+    localTransport: [
+      { mode: "Taxi", cost: "₹1,500–₹3,000 round trip", notes: "From Banda or Khajuraho", available: true },
+    ],
+    nearbyPlaces: [],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 800, accommodation: 0, food: 250, transport: 450, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kalinjar Fort Exploration", morning: "Climb to the fort and explore the main gateways", afternoon: "Visit the Neelakanth temple ruins and palace complexes", evening: "Sunset views over the Vindhya valley", stay: "Banda or Khajuraho hotel", meals: "Bundelkhandi thali nearby", tips: "Combine with a Khajuraho temple visit for a fuller Bundelkhand heritage trip" },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Government-maintained Monument of National Importance"],
+      precautions: ["Remote rural area with limited facilities", "Steep, uneven ruins underfoot"],
+      soloTips: ["Visit during daylight hours, ideally with a hired car and driver"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main fort pathways in daylight"],
+      avoidAreas: ["Fort ruins after dark"],
+    },
+    rating: 4.4,
+    reviews: 850,
+    mustEat: ["Bundelkhandi thali nearby"],
+    packingTips: ["Sturdy walking shoes", "Sun protection", "Plenty of drinking water"],
+  },
+
+  {
+    id: "barua-sagar",
+    name: "Barua Sagar",
+    state: "Uttar Pradesh",
+    hidden: true,
+    tagline: "A Hilltop Fort Overlooking Its Own 18th-Century Lake",
+    description: "Barua Sagar, on the banks of the Betwa River near Jhansi, is anchored by a hilltop fort where the Marathas fought the Bundelas in 1744, and by the Barua Sagar Tal — a large artificial lake built roughly 260 years ago by Raja Udai Singh of Orchha. The fort's ramparts offer sweeping views down over the lake, the surrounding rural Bundelkhand countryside, and the small town below, making it a compact but genuinely scenic stop for anyone exploring the Jhansi-Orchha-Khajuraho heritage belt.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Barua_Sagar_viewed_from_the_fort.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Barua_Sagar_viewed_from_the_fort.jpg",
+    imageCredit: "Itsmalay~commonswiki, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Nature"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Hilltop fort, site of an 18th-century Maratha-Bundela battle" },
+      { name: "Barua Sagar Tal, an artificial lake built c. 1760s" },
+      { name: "Sweeping views over the Betwa river valley" },
+      { name: "ASI-protected Monument of National Importance" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Jhansi then ~25 km by road", fromMumbai: "Fly to Jhansi then road", fromBangalore: "Fly to Jhansi then road", duration: "~40 min from Jhansi", costRange: "₹500–₹1,000 by taxi", tips: "Easily combined with Jhansi and Orchha in the same trip" },
+    ],
+    accommodation: [
+      { type: "Jhansi Hotels", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Jhansi city"], description: "Usually visited as a half-day trip from Jhansi" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹400–₹800 round trip", notes: "From Jhansi to Barua Sagar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jhansi", distance: "25 km", type: "City", isHidden: false, id: "jhansi" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 300, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Barua Sagar Half-Day", morning: "Climb the hilltop fort", afternoon: "Views over Barua Sagar Tal and the surrounding countryside", evening: "Return to Jhansi", stay: "Jhansi hotel", meals: "Bundelkhandi thali in Jhansi", tips: "Combine with Orchha for a fuller Bundelkhand heritage day" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["ASI-protected site with regular visitor footfall"],
+      precautions: ["Uneven fort terrain", "Limited facilities at the site itself"],
+      soloTips: ["Comfortable as a half-day trip from Jhansi"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Fort pathways in daylight"],
+      avoidAreas: ["Fort ruins after dark"],
+    },
+    rating: 4.2,
+    reviews: 380,
+    mustEat: ["Bundelkhandi thali in Jhansi"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
   // The 24 destinations below are sourced from assamtourism.gov.in
   // (the state's official tourism portal) — real how-to-reach, wildlife/
   // heritage facts, and safari/temple details. Kept `hidden: true`, same
