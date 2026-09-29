@@ -514,15 +514,41 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         }
 
         // Gemini either explicitly declined to match anything or the call
-        // itself failed. Only frame this as "we're India-only" when the
-        // message actually looked like it was naming a place (the
-        // unmatchedPlaceAttempt signal, not just "4+ words") — otherwise
-        // it presumes the user asked about somewhere outside India when
-        // they may not have named a place at all ("Plan a trip", "help me
-        // decide"), which reads as a non-sequitur.
-        if (parsed.unmatchedPlaceAttempt) {
+        // itself failed (intent is null in that case). Whenever the AI
+        // call actually succeeded (intent is non-null), trust its own
+        // three-way signal fully rather than re-guessing locally — only
+        // fall back to the local unmatchedPlaceAttempt heuristic when we
+        // have no AI answer at all. The app's destination list is only a
+        // growing catalog, not every real place in India, so "not in our
+        // list", "recognized as a real Indian place but not in our list",
+        // and "not in India" must never be treated as the same thing (see
+        // buildIntentPrompt in journey-backend's planTrip.js).
+        if (intent?.outsideIndia) {
           pushAi(
             "We're currently focused on India 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me another place:",
+            SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          );
+        } else if (intent?.recognizedIndianPlace) {
+          // AI positively recognized a real Indian place — just say
+          // plainly that we don't have data on it rather than a vague
+          // "maybe we haven't added it" hedge.
+          pushAi(
+            `I don't have information on ${intent.recognizedPlaceName || "that place"} yet, sorry! Meanwhile, here are some popular picks I do have:`,
+            SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          );
+        } else if (intent) {
+          // AI ran but recognized no specific place at all (too vague/
+          // generic) — don't guess at India vs. not, just ask for more.
+          pushAi(
+            intent.reasoning || "I couldn't tell what specific place you meant — could you name a city, town, or region? Meanwhile, here are some popular picks:",
+            SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          );
+        } else if (parsed.unmatchedPlaceAttempt) {
+          // Gemini/Groq call itself failed (intent is null) — we genuinely
+          // don't know anything about this place, so don't claim it's
+          // unsupported or foreign either.
+          pushAi(
+            "I couldn't quite place that one — could you try a nearby bigger city, or the state name? Meanwhile, here are some popular picks:",
             SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
           );
         } else {
@@ -620,10 +646,29 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       return;
     }
 
-    pushAi(
-      "That doesn't look like it matches one of India's destinations we support yet 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular ones to start with, or tell me a place:",
-      SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
-    );
+    // Same three-way rule as the text path: a null destination does NOT
+    // mean the photo shows somewhere outside India — the catalog is just a
+    // growing subset of real Indian places. Only claim "outside India"
+    // when Gemini itself flagged the photo as such (intent.outsideIndia);
+    // if it positively recognized a real Indian place just missing from
+    // the guide (intent.recognizedIndianPlace), say that plainly instead
+    // of guessing at where the photo was taken.
+    if (intent?.outsideIndia) {
+      pushAi(
+        "That looks like somewhere outside India 🌍 — we're currently focused on India, but we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me a place:",
+        SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+      );
+    } else if (intent?.recognizedIndianPlace) {
+      pushAi(
+        `I don't have information on ${intent.recognizedPlaceName || "that place"} yet, sorry! Meanwhile, here are some popular picks I do have:`,
+        SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+      );
+    } else {
+      pushAi(
+        intent?.reasoning || "I couldn't match that photo to a destination in our guide yet — try telling me the place by name, or pick one of these:",
+        SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+      );
+    }
     scrollToEnd();
   };
 

@@ -31,6 +31,16 @@ const IMAGE_REQUEST_TIMEOUT_MS = 30000;
 
 export interface AiIntentResult {
   destination: Destination | null;
+  // The three fields below are only meaningful when destination is null,
+  // and are mutually exclusive (at most one is true) — see
+  // buildIntentPrompt in journey-backend's planTrip.js for the full rule.
+  // Never assume "no match" alone means "not in India": a real Indian
+  // place absent from this app's catalog is the common case, not the
+  // exception, so it gets its own true/false signal instead of being
+  // lumped in with outsideIndia.
+  outsideIndia: boolean; // true: Gemini/Groq recognized this as a real place genuinely outside India (e.g. Bali, Paris).
+  recognizedIndianPlace: boolean; // true: recognized as a real Indian place, just not in this app's catalog yet.
+  recognizedPlaceName: string | null; // the place name recognized, when recognizedIndianPlace is true (e.g. "Hampi").
   days: number | null;
   people: number | null;
   style: TravelStyle | null;
@@ -68,6 +78,9 @@ export async function tryParseTripIntent(message: string, image?: AiIntentImage,
 
     return {
       destination,
+      outsideIndia: destination === null && data?.outsideIndia === true,
+      recognizedIndianPlace: destination === null && data?.recognizedIndianPlace === true,
+      recognizedPlaceName: destination === null && typeof data?.recognizedPlaceName === "string" ? data.recognizedPlaceName : null,
       days: typeof data?.days === "number" ? data.days : null,
       people: typeof data?.people === "number" ? data.people : null,
       style: ["backpacker", "comfortable", "premium"].includes(data?.style) ? data.style : null,
