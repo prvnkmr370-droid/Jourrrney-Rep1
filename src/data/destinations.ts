@@ -106694,6 +106694,168 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
   },
 
+  {
+    id: "kumartuli",
+    name: "Kumartuli",
+    state: "West Bengal",
+    hidden: true,
+    tagline: "Kolkata's Centuries-Old Idol-Makers' Quarter",
+    description: "Kumartuli (also spelled Kumortuli), a riverside neighbourhood in north Kolkata, has been the city's traditional idol-making district for generations, its narrow lanes lined with open workshops where artisans shape clay, straw, and bamboo into towering images of Durga, Kali, Saraswati, and Ganesha. Work runs almost year-round, but the run-up to Durga Puja transforms the quarter into a frenzy of activity as thousands of idols are finished and shipped out to pandals across the city, the country, and abroad — a rare working craft district you can walk directly through.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bd/The_Craftsman%E2%80%99s_Silent_Devotion.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/bd/The_Craftsman%E2%80%99s_Silent_Devotion.jpg",
+    imageCredit: "Pritviswa, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture", "Heritage"],
+    bestSeason: "September to October (pre-Durga Puja season)",
+    duration: "Half Day",
+    highlights: [
+      { name: "Open-air clay idol workshops" },
+      { name: "Peak activity in the weeks before Durga Puja" },
+      { name: "Kumartuli Ghat on the Hooghly River" },
+      { name: "Living, working craft district" },
+    ],
+    transport: [
+      { mode: "Metro/Road", icon: "🚗", fromDelhi: "Fly to Kolkata then local transport", fromMumbai: "Fly to Kolkata then local transport", fromBangalore: "Fly to Kolkata then local transport", duration: "~20–30 min from central Kolkata", costRange: "₹100–₹300 by app cab", tips: "Sovabazar-Ahiritola Metro station is within walking distance" },
+    ],
+    accommodation: [
+      { type: "Kolkata Hotels", priceRange: "₹1,000–₹6,000/night", examples: ["Hotels across Kolkata city"], description: "Usually visited as a half-day trip within the city" },
+    ],
+    localTransport: [
+      { mode: "Metro", cost: "₹10–₹30", notes: "Sovabazar-Ahiritola station nearby", available: true },
+      { mode: "Walking", cost: "Free", notes: "The quarter is best explored on foot", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kolkata", distance: "3 km", type: "City", isHidden: false, id: "kolkata" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kumartuli Walk", morning: "Walk the workshop lanes and watch artisans at work", afternoon: "Visit Kumartuli Ghat on the Hooghly", evening: "Continue on to other north Kolkata sights", stay: "Kolkata hotel", meals: "Street food near the quarter", tips: "Ask permission before photographing artisans up close — most are welcoming but appreciate being asked" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Well-known, well-visited working district within the city", "Narrow lanes with constant foot traffic"],
+      precautions: ["Very crowded and hectic in the weeks before Durga Puja", "Narrow lanes with wet clay and materials underfoot"],
+      soloTips: ["Comfortable for solo visitors given the constant activity and foot traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main workshop lanes"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.5,
+    reviews: 3800,
+    mustEat: ["Street food near the quarter", "Bengali sweets nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Small cash for donations/tips to artisans"],
+  },
+
+  {
+    id: "chandannagar",
+    name: "Chandannagar",
+    state: "West Bengal",
+    hidden: true,
+    tagline: "A Former French Colony on the Hooghly",
+    description: "Chandannagar, founded in 1696 by the French East India Company and nicknamed 'Farasdanga' (French quarter), remained a French colonial enclave until its de facto transfer to India in 1951. Its riverside Strand promenade, the Institut de Chandernagor housed in the old Dupleix Palace, the Sacré-Cœur church, and the leaning Patal Bari mansion all recall its French past, while the town today is also nationally known for its elaborate Jagaddhatri Puja celebrations and light displays.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4b/The_Strand_of_Chandannagar.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/4b/The_Strand_of_Chandannagar.jpg",
+    imageCredit: "Dassurojitsd, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October to March (Jagaddhatri Puja in Oct/Nov)",
+    duration: "1 Day",
+    highlights: [
+      { name: "The Strand — riverside French colonial promenade" },
+      { name: "Institut de Chandernagor (Dupleix Palace)" },
+      { name: "Patal Bari, the leaning riverside mansion" },
+      { name: "Jagaddhatri Puja celebrations" },
+    ],
+    transport: [
+      { mode: "Train/Road", icon: "🚗", fromDelhi: "Fly to Kolkata then ~35 km by road/rail", fromMumbai: "Fly to Kolkata then road/rail", fromBangalore: "Fly to Kolkata then road/rail", duration: "~1 hr from Kolkata", costRange: "₹50–₹800 depending on mode", tips: "Suburban trains from Howrah run directly to Chandannagar station" },
+    ],
+    accommodation: [
+      { type: "Kolkata/Local Hotels", priceRange: "₹800–₹4,000/night", examples: ["Hotels in Chandannagar or day-trip from Kolkata"], description: "Usually visited as a day trip from Kolkata" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹30–₹100", notes: "Around town", available: true },
+      { mode: "Walking", cost: "Free", notes: "The Strand and old town are walkable", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kolkata", distance: "35 km", type: "City", isHidden: false, id: "kolkata" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Chandannagar Heritage Walk", morning: "Walk the Strand and visit the Institut de Chandernagor", afternoon: "Visit Patal Bari and the Sacré-Cœur church", evening: "Return to Kolkata", stay: "Kolkata hotel", meals: "Bengali sweets and local snacks", tips: "Visiting during Jagaddhatri Puja (Oct/Nov) shows the town at its most spectacular, with elaborate light displays" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Established heritage town with regular tourist and local footfall"],
+      precautions: ["Standard riverside caution"],
+      soloTips: ["Comfortable as a day trip from Kolkata"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["The Strand and main town areas"],
+      avoidAreas: ["Riverbank areas after dark"],
+    },
+    rating: 4.4,
+    reviews: 1900,
+    mustEat: ["Bengali sweets", "Local street food"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "serampore",
+    name: "Serampore",
+    state: "West Bengal",
+    hidden: true,
+    tagline: "The Former Danish Colony of Frederiknagore",
+    description: "Serampore, on the west bank of the Hooghly River, was a Danish colonial possession known as Frederiknagore from 1755 to 1845, before being sold to the British. The ASI-protected Danish Cemetery, established in 1789, preserves weathered colonial-era tombs and monuments from this period, while the town is also home to Serampore College, founded in 1818 by Baptist missionary William Carey and among the oldest degree-granting institutions in Asia — a legacy of the same Serampore Mission that pioneered printing and education in the region.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/52/Danish_Cemetery._Serampore._Hooghly.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/52/Danish_Cemetery._Serampore._Hooghly.jpg",
+    imageCredit: "Ajit Kumar Majhi, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Danish Cemetery (est. 1789), a Monument of National Importance" },
+      { name: "Former Danish colony of Frederiknagore (1755–1845)" },
+      { name: "Serampore College, founded 1818 by William Carey" },
+      { name: "Serampore Mission Press heritage" },
+    ],
+    transport: [
+      { mode: "Train/Road", icon: "🚗", fromDelhi: "Fly to Kolkata then ~25 km by road/rail", fromMumbai: "Fly to Kolkata then road/rail", fromBangalore: "Fly to Kolkata then road/rail", duration: "~45 min from Kolkata", costRange: "₹50–₹700 depending on mode", tips: "Suburban trains from Howrah run directly to Serampore station" },
+    ],
+    accommodation: [
+      { type: "Kolkata/Local Hotels", priceRange: "₹800–₹4,000/night", examples: ["Hotels in Serampore or day-trip from Kolkata"], description: "Usually visited as a day trip from Kolkata" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw", cost: "₹30–₹100", notes: "Around town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kolkata", distance: "25 km", type: "City", isHidden: false, id: "kolkata" },
+      { name: "Chandannagar", distance: "10 km", type: "Heritage Town", isHidden: true, id: "chandannagar" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 200, transport: 250, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Serampore Heritage Walk", morning: "Visit the Danish Cemetery", afternoon: "Explore Serampore College and the old mission buildings", evening: "Return to Kolkata", stay: "Kolkata hotel", meals: "Bengali sweets and local snacks", tips: "Combine with nearby Chandannagar for a fuller Hooghly riverside heritage day" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Established town with regular tourist and local footfall"],
+      precautions: ["Standard town precautions"],
+      soloTips: ["Comfortable as a day trip from Kolkata"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main town areas and college campus"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.3,
+    reviews: 1200,
+    mustEat: ["Bengali sweets", "Local street food"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
