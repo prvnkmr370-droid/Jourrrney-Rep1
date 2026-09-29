@@ -105570,6 +105570,113 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Heavy-duty walking shoes", "Neutral-colored clothing", "Binoculars", "Permits arranged in advance"],
   },
 
+  {
+    id: "ambikapur",
+    name: "Ambikapur",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "The Former Capital of the Princely State of Surguja",
+    description: "Ambikapur, one of the oldest cities in Chhattisgarh, was the capital of the princely state of Surguja before Indian independence and today serves as headquarters of both Surguja district and the six-district Surguja Division. Named for the goddess Ambika (Mahamaya) Devi, the city sits at 623 m elevation in a forest-rich, hilly region, and functions as the practical gateway town for travellers heading up to the Mainpat plateau.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ambikapur.png",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ambikapur.png",
+    imageCredit: "Yogeshnigam1902, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "Culture"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Former capital of the princely state of Surguja" },
+      { name: "Headquarters of Surguja Division (6 districts)" },
+      { name: "Named for the goddess Ambika (Mahamaya) Devi" },
+      { name: "Gateway town to the Mainpat plateau" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Raipur then ~350 km by road via Ambikapur", fromMumbai: "Fly to Raipur then road", fromBangalore: "Fly to Raipur then road", duration: "~7 hrs by road from Raipur", costRange: "₹4,000–₹7,000 airfare to Raipur plus road transport", tips: "Ambikapur has its own railway station and regular bus service from Raipur" },
+    ],
+    accommodation: [
+      { type: "Ambikapur Hotels", priceRange: "₹1,000–₹2,800/night", examples: ["Hotels across Ambikapur city"], description: "Mid-range hotels serving as the practical base for the wider Surguja region" },
+    ],
+    localTransport: [
+      { mode: "Auto-Rickshaw/Taxi", cost: "₹50–₹300", notes: "Widely available around the city", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Mainpat", distance: "80 km", type: "Hill Plateau", isHidden: false, id: "mainpat" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 900, accommodation: 400, food: 250, transport: 150, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Ambikapur City", morning: "Visit the Mahamaya Devi Temple and old palace area", afternoon: "Explore the city centre and local markets", evening: "Onward to Mainpat or rest in the city", stay: "Ambikapur hotel", meals: "Chhattisgarhi thali", tips: "A natural overnight stop before or after visiting Mainpat" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Divisional headquarters city with established infrastructure", "Regular rail and bus connectivity"],
+      precautions: ["Standard city precautions after dark"],
+      soloTips: ["Comfortable for solo travellers given its size and infrastructure"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Ambikapur Police", number: "07774-233077" }],
+      safeZones: ["City centre", "Market areas"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.1,
+    reviews: 520,
+    mustEat: ["Chhattisgarhi thali"],
+    packingTips: ["Comfortable walking shoes", "Camera"],
+  },
+
+  {
+    id: "malhar-chhattisgarh",
+    name: "Malhar",
+    state: "Chhattisgarh",
+    hidden: true,
+    tagline: "A Once-Capital City Frozen in Temple Ruins",
+    description: "Malhar, a small town 30 km southeast of Bilaspur, was a major city and capital in the 1st millennium CE, referred to in inscriptions and Indian literature as Mallar, Mallari, and Sarabhapur. Today it holds the ruins of an ancient fort, two restored Shiva temples — the 6th–7th century Deul (Bhima Kichak) Temple and the 12th-century Pataleshvara Temple — and a site museum housing Hindu, Jain, and Buddhist sculptures. A four-armed image found here, dated to around 200 BCE by a Brahmi inscription, is considered one of the earliest potential representations of Vishnu in Indian sculpture.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Deul_Temple%2C_Malhar%2C_Bilaspur%2C_Chattisgarh.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Deul_Temple%2C_Malhar%2C_Bilaspur%2C_Chattisgarh.jpg",
+    imageCredit: "SpeakingArch, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Heritage", "History"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "6th–7th century Deul (Bhima Kichak) Temple" },
+      { name: "12th-century Pataleshvara Temple" },
+      { name: "Site museum with Hindu, Jain, and Buddhist sculptures" },
+      { name: "One of the earliest potential Vishnu sculptures, c. 200 BCE" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bilaspur then ~30 km by road", fromMumbai: "Fly to Bilaspur then road", fromBangalore: "Fly to Bilaspur then road", duration: "~45 min from Bilaspur", costRange: "₹600–₹1,200 by taxi", tips: "Connected by a feeder road from National Highway 49" },
+    ],
+    accommodation: [
+      { type: "Bilaspur Hotels", priceRange: "₹800–₹2,500/night", examples: ["Hotels across Bilaspur city"], description: "Usually visited as a half-day trip from Bilaspur" },
+    ],
+    localTransport: [
+      { mode: "Taxi/Auto", cost: "₹600–₹1,200 round trip", notes: "From Bilaspur to Malhar", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Bilaspur", distance: "30 km", type: "City", isHidden: false, id: "bilaspur-chhattisgarh" },
+      { name: "Ratanpur", distance: "45 km", type: "Heritage Town", isHidden: false, id: "ratanpur" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 0, food: 200, transport: 300, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Malhar Archaeological Circuit", morning: "Visit the Deul (Bhima Kichak) Temple ruins", afternoon: "Explore the Pataleshvara Temple and the site museum", evening: "Return to Bilaspur", stay: "Bilaspur hotel", meals: "Chhattisgarhi thali in Bilaspur", tips: "Combine with Ratanpur for a fuller day of Bilaspur-area heritage sites" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Recognised archaeological site with a site museum"],
+      precautions: ["Rural setting with limited facilities beyond the site itself"],
+      soloTips: ["Comfortable as a half-day trip from Bilaspur"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Bilaspur Police", number: "07752-411331" }],
+      safeZones: ["Temple and museum grounds in daylight"],
+      avoidAreas: ["Ruins area after dark"],
+    },
+    rating: 4.3,
+    reviews: 240,
+    mustEat: ["Chhattisgarhi thali in Bilaspur"],
+    packingTips: ["Comfortable walking shoes", "Sun protection", "Camera"],
+  },
+
 ];
 
 export const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure", "Spiritual", "Culture", "Romantic"];
