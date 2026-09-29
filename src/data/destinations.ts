@@ -100936,6 +100936,222 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Modest clothing", "Comfortable footwear (removed at temple)", "Small change for donations", "Water bottle"],
   },
 
+  {
+    id: "laknavaram-lake",
+    name: "Laknavaram Lake",
+    state: "Telangana",
+    hidden: true,
+    tagline: "A Chain of Wooded Islands Linked by a Hanging Bridge",
+    description: "Laknavaram Lake, in Mulugu district, is a scenic reservoir dotted with small forested islands, connected to the mainland by a long suspended hanging bridge that has become the lake's signature feature. Boating trips wind between the islands, and the lake's quiet, undeveloped setting amid the surrounding forest makes it one of Telangana's most photographed off-the-beaten-path spots, officially promoted as one of the state's top tourist attractions.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Laknavaram_Lake_1.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Laknavaram_Lake_1.jpg",
+    imageCredit: "Rangan Datta Wiki, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to February",
+    duration: "1 Day",
+    highlights: [
+      { name: "Signature hanging bridge over the lake" },
+      { name: "Forested islands explored by boat" },
+      { name: "Official top attraction of Telangana Tourism" },
+      { name: "Quiet, undeveloped natural setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad or Warangal then road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "~2 hrs from Warangal", costRange: "₹1,500–₹3,000 by taxi", tips: "Warangal is the nearest major town and railhead" },
+    ],
+    accommodation: [
+      { type: "Warangal Hotels", priceRange: "₹1,000–₹3,000/night", examples: ["Hotels in Warangal city"], description: "Usually visited as a day trip from Warangal" },
+    ],
+    localTransport: [
+      { mode: "Boat", cost: "₹100–₹300 per person", notes: "For island-hopping on the lake", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Warangal", distance: "70 km", type: "City", isHidden: false, id: "warangal" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 800, accommodation: 0, food: 200, transport: 400, activities: 200 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Laknavaram Lake Visit", morning: "Drive from Warangal to Laknavaram Lake", afternoon: "Boating between the islands and walk across the hanging bridge", evening: "Return to Warangal", stay: "Warangal hotel", meals: "Telangana-style meals in Warangal", tips: "Weekdays are far less crowded than weekends" },
+    ],
+    womenSafety: {
+      score: 6.5,
+      level: "Moderate",
+      highlights: ["Popular tourist spot with regular visitor footfall"],
+      precautions: ["Standard water-body caution on boats and the hanging bridge", "Limited facilities beyond the main visitor area"],
+      soloTips: ["Visit during daylight hours as part of an organised day trip from Warangal"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main boating and bridge area"],
+      avoidAreas: ["Unmarked lake edges away from the main visitor area"],
+    },
+    rating: 4.4,
+    reviews: 2100,
+    mustEat: ["Telangana-style meals in Warangal"],
+    packingTips: ["Comfortable footwear for the hanging bridge", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "durgam-cheruvu",
+    name: "Durgam Cheruvu",
+    state: "Telangana",
+    hidden: true,
+    tagline: "Hyderabad's 'Secret Lake' in the Heart of Hitech City",
+    description: "Durgam Cheruvu, a rock-fringed reservoir in Hyderabad's Madhapur/Hitech City area, is popularly nicknamed the 'Secret Lake' for how it sits tucked away amid the surrounding tech corridor. A striking cable-stayed pedestrian bridge now spans the lake, connecting Jubilee Hills to the Hitech City side, and the lakefront path, boating facilities, and rocky viewpoints make it a popular escape for the city's software-hub crowd.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Boats_at_Durgam_Cheruvu_Hyderabad_Telangana.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Boats_at_Durgam_Cheruvu_Hyderabad_Telangana.jpg",
+    imageCredit: "Kavali Chandrakanth KCK, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Cable-stayed pedestrian bridge across the lake" },
+      { name: "Nicknamed the 'Secret Lake'" },
+      { name: "Boating and lakefront walking path" },
+      { name: "In the heart of Hitech City/Madhapur" },
+    ],
+    transport: [
+      { mode: "Metro/Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then local transport", fromMumbai: "Fly to Hyderabad then local transport", fromBangalore: "Fly to Hyderabad then local transport", duration: "~30–45 min from central Hyderabad", costRange: "₹100–₹400 by app cab", tips: "Well connected by Hyderabad Metro to Hitech City" },
+    ],
+    accommodation: [
+      { type: "Hyderabad Hotels", priceRange: "₹1,500–₹8,000/night", examples: ["Hotels across Hyderabad, especially Hitech City/Gachibowli"], description: "Extensive range given the location within the city" },
+    ],
+    localTransport: [
+      { mode: "Metro", cost: "₹10–₹60", notes: "Hitech City metro station is nearby", available: true },
+      { mode: "App Cab/Auto", cost: "₹100–₹400", notes: "Widely available", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "12 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Hussain Sagar Lake", distance: "13 km", type: "Lake", isHidden: false, id: "hussain-sagar-lake" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 400, accommodation: 0, food: 150, transport: 150, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Durgam Cheruvu Evening", morning: "Free for other Hyderabad sightseeing", afternoon: "Visit the lakefront and cable bridge", evening: "Sunset walk and boating at Durgam Cheruvu", stay: "Hyderabad hotel", meals: "Hyderabadi biryani nearby", tips: "Evening is the best time for the cable bridge views and cooler walking weather" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Located in Hyderabad's well-developed Hitech City area", "Regular footfall from local residents and visitors"],
+      precautions: ["Standard water-body caution near the lake edge"],
+      soloTips: ["Comfortable for solo visitors given the urban, well-lit setting"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Lakefront path and bridge area"],
+      avoidAreas: ["Unlit lake edges late at night"],
+    },
+    rating: 4.5,
+    reviews: 6800,
+    mustEat: ["Hyderabadi biryani nearby"],
+    packingTips: ["Comfortable walking shoes", "Camera", "Light jacket for evening breeze"],
+  },
+
+  {
+    id: "osman-sagar",
+    name: "Osman Sagar (Gandipet)",
+    state: "Telangana",
+    hidden: true,
+    tagline: "The 1920 Reservoir That Still Waters Hyderabad",
+    description: "Osman Sagar, popularly known as Gandipet, is an artificial lake created in 1920 by damming the Musi River, built after the devastating 1908 Musi floods to help protect and supply Hyderabad. Spanning roughly 46 sq km, it remains one of the twin reservoirs — alongside the neighbouring Himayat Sagar — that supply the city's drinking water, while its rocky shoreline, sunset views, and lakeside parks make it a popular weekend escape from the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Osman_Sagar_lake_near_Hyderabad.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/49/Osman_Sagar_lake_near_Hyderabad.jpg",
+    imageCredit: "Swaroop, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to February",
+    duration: "Half Day",
+    highlights: [
+      { name: "Built in 1920 after the 1908 Musi floods" },
+      { name: "One of Hyderabad's two main drinking-water reservoirs" },
+      { name: "Rocky shoreline and sunset viewpoints" },
+      { name: "Twin lake to nearby Himayat Sagar" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then ~20 km by road", fromMumbai: "Fly to Hyderabad then road", fromBangalore: "Fly to Hyderabad then road", duration: "~45 min from central Hyderabad", costRange: "₹300–₹700 by app cab", tips: "Combine with a visit to nearby Chilkur Balaji Temple" },
+    ],
+    accommodation: [
+      { type: "Hyderabad Hotels", priceRange: "₹1,200–₹6,000/night", examples: ["Hotels across Hyderabad city"], description: "Usually visited as a half-day trip from Hyderabad" },
+    ],
+    localTransport: [
+      { mode: "App Cab/Auto", cost: "₹300–₹700", notes: "From central Hyderabad", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "20 km", type: "City", isHidden: false, id: "hyderabad" },
+      { name: "Chilkur Balaji Temple", distance: "8 km", type: "Temple", isHidden: false, id: "chilkur-balaji-temple" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 300, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Gandipet Evening", morning: "Visit Chilkur Balaji Temple", afternoon: "Explore the Osman Sagar shoreline and parks", evening: "Sunset views over the reservoir", stay: "Hyderabad hotel", meals: "Hyderabadi biryani in the city", tips: "Some areas near the dam are restricted as it is a drinking-water source — stick to designated public areas" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Popular weekend destination with regular visitor footfall"],
+      precautions: ["Standard water-body caution on the rocky shoreline", "Some areas restricted due to reservoir/drinking-water status"],
+      soloTips: ["Visit during daylight hours as part of a day trip from Hyderabad"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Designated public viewing areas and parks"],
+      avoidAreas: ["Restricted reservoir/dam infrastructure areas"],
+    },
+    rating: 4.2,
+    reviews: 3400,
+    mustEat: ["Hyderabadi biryani in the city"],
+    packingTips: ["Comfortable footwear for rocky terrain", "Sun protection", "Camera"],
+  },
+
+  {
+    id: "kbr-national-park",
+    name: "KBR National Park",
+    state: "Telangana",
+    hidden: true,
+    tagline: "A Jungle Amid Hyderabad's Concrete Jungle",
+    description: "Kasu Brahmananda Reddy National Park, spread across 390 acres in Jubilee Hills and Banjara Hills, is often described as 'a jungle amidst the concrete jungle' of central Hyderabad. Once part of a Nizam-era palace complex given to Prince Mukarram Jah in 1967, the grounds — including the old Mor (Peacock) Bungalow and Gol Bungalow — were declared a national park in 1998, and an eco-sensitive zone was added around it in 2020, preserving a rare pocket of dry deciduous forest in the middle of the city.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Walkway_at_KBR_Park_01.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Walkway_at_KBR_Park_01.jpg",
+    imageCredit: "Adityamadhav83, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Nature"],
+    bestSeason: "October to February",
+    duration: "Half Day",
+    highlights: [
+      { name: "390-acre urban forest, declared a national park in 1998" },
+      { name: "Former Nizam-era palace grounds" },
+      { name: "Mor (Peacock) Bungalow and Gol Bungalow" },
+      { name: "Eco-sensitive zone declared 2020" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hyderabad then local transport", fromMumbai: "Fly to Hyderabad then local transport", fromBangalore: "Fly to Hyderabad then local transport", duration: "~20–30 min from central Hyderabad", costRange: "₹100–₹300 by app cab", tips: "Centrally located in Jubilee Hills, easy to combine with other city sightseeing" },
+    ],
+    accommodation: [
+      { type: "Hyderabad Hotels", priceRange: "₹1,200–₹8,000/night", examples: ["Hotels across Hyderabad, especially Banjara Hills/Jubilee Hills"], description: "Extensive range given the central location" },
+    ],
+    localTransport: [
+      { mode: "App Cab/Auto", cost: "₹100–₹300", notes: "Widely available", available: true },
+      { mode: "Walking", cost: "Free", notes: "Within the park's walking trails", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hyderabad", distance: "8 km", type: "City", isHidden: false, id: "hyderabad" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 300, accommodation: 0, food: 150, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "KBR Park Morning Walk", morning: "Walk the park's forest trails", afternoon: "Continue with other Jubilee Hills/Banjara Hills sightseeing", evening: "Free", stay: "Hyderabad hotel", meals: "Hyderabadi biryani in the city", tips: "Early morning is best for birdwatching and cooler walking weather" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["Centrally located urban park with regular walker/jogger footfall", "Well-maintained trails"],
+      precautions: ["Standard forest-walk caution (uneven terrain, occasional wildlife)"],
+      soloTips: ["Very comfortable for solo walkers given the urban setting and regular foot traffic"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main walking trails"],
+      avoidAreas: ["Off-trail forest areas after dark"],
+    },
+    rating: 4.3,
+    reviews: 5200,
+    mustEat: ["Hyderabadi biryani in the city"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Insect repellent"],
+  },
+
   // ─── TRIPURA ──────────────────────────────────────────────────────
   {
     id: "agartala",
