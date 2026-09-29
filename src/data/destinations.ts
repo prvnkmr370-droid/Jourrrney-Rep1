@@ -102346,6 +102346,60 @@ export const DESTINATIONS: Destination[] = [
     packingTips: ["Comfortable walking shoes", "Insect repellent", "Drinking water"],
   },
 
+  {
+    id: "vanghmun",
+    name: "Vanghmun",
+    state: "Tripura",
+    hidden: true,
+    tagline: "Tripura's Cleanest Village, at the Top of Jampui Hills",
+    description: "Vanghmun, a village of around 2,350 people at the highest peak of the Jampui Hills, is celebrated nationally as the 'cleanest village of Tripura' — a reputation locals have actively cultivated and defended. Remarkably remote, it sits 220 km from Agartala, the state capital, but only 55 km from Aizawl, the capital of neighbouring Mizoram, reflecting its position deep in Tripura's northeasternmost corner. The Jampui Hills around it are also being developed as a paragliding destination, adding a new adventure-tourism dimension to this famously tidy, orchid- and orange-growing hill community.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/Vanghmun%2C_Jampui_Hill.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/04/Vanghmun%2C_Jampui_Hill.jpg",
+    imageCredit: "PatraSaikat, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Nature", "Culture"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Nationally recognised as Tripura's cleanest village" },
+      { name: "At the highest peak of the Jampui Hills" },
+      { name: "Closer to Aizawl (Mizoram) than to Agartala" },
+      { name: "Emerging paragliding destination" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Agartala then ~220 km by road", fromMumbai: "Fly to Agartala via Kolkata then road", fromBangalore: "Fly to Agartala via Kolkata then road", duration: "~6–7 hrs from Agartala", costRange: "₹4,000–₹6,000 by taxi", tips: "A long but scenic drive through the Jampui Hills range" },
+    ],
+    accommodation: [
+      { type: "Jampui Hills Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Tourist lodges and homestays in the Jampui Hills area"], description: "Basic accommodation; book ahead given limited capacity" },
+    ],
+    localTransport: [
+      { mode: "Local Taxi", cost: "Arranged locally", notes: "Within the Jampui Hills range", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Jampui Hills", distance: "0 km", type: "Hill Range", isHidden: false, id: "jampui-hills" },
+      { name: "Agartala", distance: "220 km", type: "City", isHidden: false, id: "agartala" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 300, food: 200, transport: 150, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vanghmun Village Visit", morning: "Arrive and explore the village and its orange/orchid gardens", afternoon: "Walk the ridgeline for views into Mizoram and Bangladesh", evening: "Sunset from the hilltop", stay: "Jampui Hills guesthouse", meals: "Local Tripuri/Mizo-influenced hill cuisine", tips: "Combine with other Jampui Hills villages given the long journey required to reach this remote area" },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Moderate",
+      highlights: ["Small, close-knit, well-kept village community", "Occasional high-profile visits (a Chief Minister visited in 2021) reflect steady official attention"],
+      precautions: ["Extremely remote with limited facilities and mobile network", "Long travel distances from Agartala"],
+      soloTips: ["Best visited with a local guide or as part of an organised Jampui Hills trip"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Village centre and main ridgeline paths"],
+      avoidAreas: ["Unfamiliar hill paths after dark"],
+    },
+    rating: 4.4,
+    reviews: 85,
+    mustEat: ["Local hill-grown oranges", "Tripuri/Mizo-influenced hill cuisine"],
+    packingTips: ["Warm layers (cool at altitude)", "Comfortable walking shoes", "Camera"],
+  },
+
   // ─── UTTARAKHAND ──────────────────────────────────────────────────
   {
     id: "kedarnath",
