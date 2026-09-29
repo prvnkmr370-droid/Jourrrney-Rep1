@@ -85984,6 +85984,114 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "serchhip",
+    name: "Serchhip",
+    state: "Mizoram",
+    hidden: true,
+    tagline: "Mizoram's Paragliding District Capital Amid Green Paddy Valleys",
+    description: "Serchhip, the district capital roughly midway between Aizawl and Lunglei, sits at 888 m elevation and holds Mizoram's highest literacy rate at nearly 99%. The town has developed as a paragliding destination, having hosted an international paragliding accuracy competition, and its surrounding valley — with terraced paddy fields set against forested hills — makes for some of central Mizoram's most scenic countryside, easily combined with nearby Vantawng Falls and Thenzawl.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Serchhip_Zawlpui.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/49/Serchhip_Zawlpui.jpg",
+    imageCredit: "Lpachuau, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Nature", "Adventure"],
+    bestSeason: "October to March",
+    duration: "1 Day",
+    highlights: [
+      { name: "Paragliding — hosted an international accuracy competition" },
+      { name: "Terraced paddy field valleys" },
+      { name: "Mizoram's highest literacy rate (~99%)" },
+      { name: "Gateway to Vantawng Falls and Thenzawl" },
+    ],
+    transport: [
+      { mode: "Air", icon: "plane", fromDelhi: "Fly to Lengpui Airport, Aizawl, then road", fromMumbai: "Fly to Aizawl via connections", fromBangalore: "Fly to Aizawl via connections", duration: "3–4 hrs flight plus ~2 hrs by road", costRange: "₹5,000–₹15,000 airfare plus road transport", tips: "Also connected to Aizawl by Pawan Hans helicopter service" },
+    ],
+    accommodation: [
+      { type: "Serchhip Hotels", priceRange: "₹600–₹2,000/night", examples: ["Hotels and guesthouses in Serchhip town"], description: "Basic accommodation adequate for the town's size" },
+    ],
+    localTransport: [
+      { mode: "Shared Taxi", cost: "₹20–₹50", notes: "Around town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Vantawng Falls", distance: "6 km", type: "Waterfall", isHidden: false, id: "vantawng-falls" },
+      { name: "Thenzawl Golf Course", distance: "22 km", type: "Golf Course", isHidden: true, id: "thenzawl-golf-course" },
+      { name: "Aizawl", distance: "115 km", type: "City", isHidden: false, id: "aizawl" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 800, accommodation: 350, food: 200, transport: 150, activities: 100 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Serchhip Valley", morning: "Explore Serchhip town and its paddy field valleys", afternoon: "Day trip to nearby Vantawng Falls", evening: "Return to Serchhip for the evening", stay: "Serchhip hotel", meals: "Mizo cuisine at local restaurants", tips: "Ask locally about paragliding season and operators if interested" },
+    ],
+    womenSafety: {
+      score: 8,
+      level: "Safe",
+      highlights: ["District capital with basic infrastructure", "Quiet, low-crime town with Mizoram's highest literacy rate"],
+      precautions: ["Standard small-town precautions after dark"],
+      soloTips: ["Comfortable for solo travellers"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Serchhip Police", number: "03835-234234" }],
+      safeZones: ["Town centre", "Market area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.3,
+    reviews: 310,
+    mustEat: ["Mizo cuisine at local restaurants"],
+    packingTips: ["Comfortable walking shoes", "Warm layers for evenings", "ILP printout (mandatory)"],
+  },
+
+  {
+    id: "kolasib",
+    name: "Kolasib",
+    state: "Mizoram",
+    hidden: true,
+    tagline: "Mizoram's Northern Gateway Town on the Assam Border",
+    description: "Kolasib, headquarters of Kolasib district, sits in northern Mizoram along the border with Assam and serves as the state's main overland gateway — most road travel into Mizoram from the rest of India passes through here via NH-54. Set on a forested ridge with a skyline of church spires, the town's economy runs on betel nut, oil palm, rice, and fish farming, and it makes a natural first or last stop for travellers entering or leaving the state by road.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Kolasib%2C_Mizoram_-_panoramio.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/4/48/Kolasib%2C_Mizoram_-_panoramio.jpg",
+    imageCredit: "R london, CC BY-SA 3.0, via Wikimedia Commons",
+    category: ["Culture"],
+    bestSeason: "October to March",
+    duration: "Half Day to 1 Day",
+    highlights: [
+      { name: "Mizoram's main overland gateway from Assam" },
+      { name: "Ridge-top town with a skyline of church spires" },
+      { name: "Betel nut, oil palm, rice, and fish farming economy" },
+      { name: "83 km from Aizawl via NH-54" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati, Assam, then road via NH-54", fromMumbai: "Fly to Guwahati via connections then road", fromBangalore: "Fly to Guwahati via connections then road", duration: "~4–5 hrs by road from Guwahati/Silchar", costRange: "₹1,500–₹3,500 by shared taxi/bus", tips: "The main road crossing point between Assam and Mizoram" },
+    ],
+    accommodation: [
+      { type: "Kolasib Hotels", priceRange: "₹600–₹2,000/night", examples: ["Hotels and guesthouses in Kolasib town"], description: "Basic accommodation for a transit town" },
+    ],
+    localTransport: [
+      { mode: "Shared Taxi/Maxi-Cab", cost: "₹20–₹50", notes: "Around town and onward to Aizawl", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Aizawl", distance: "83 km", type: "City", isHidden: false, id: "aizawl" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 700, accommodation: 300, food: 200, transport: 150, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Kolasib Stopover", morning: "Explore the town centre and local market", afternoon: "Visit viewpoints over the ridge-top church skyline", evening: "Continue on to Aizawl or Assam", stay: "Kolasib hotel", meals: "Mizo cuisine at local restaurants", tips: "Most travellers use Kolasib as a transit stop rather than a multi-day destination" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["District headquarters town with basic infrastructure", "Regular through-traffic on the main Assam-Mizoram road"],
+      precautions: ["Standard small-town precautions after dark"],
+      soloTips: ["Comfortable for solo travellers passing through"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kolasib Police", number: "03837-220236" }],
+      safeZones: ["Town centre", "Market area"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 4.0,
+    reviews: 190,
+    mustEat: ["Mizo cuisine at local restaurants"],
+    packingTips: ["Comfortable walking shoes", "ILP printout (mandatory)"],
+  },
+
+  {
     id: "gurdwara-rakab-ganj-sahib",
     name: "Gurdwara Rakab Ganj Sahib (GTB Memorial)",
     state: "Delhi",
