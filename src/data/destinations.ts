@@ -86092,6 +86092,114 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "saitual",
+    name: "Saitual",
+    state: "Mizoram",
+    hidden: true,
+    tagline: "A Centennial Hill Town Founded as a Christian Village",
+    description: "Saitual, headquarters of Mizoram's newly created Saitual district, was founded in 1915 by Sailo clan chief Dorawta, who established it as a Christian village after his own conversion — the town celebrated its centennial in 2015. Set on National Highway 6 about 77 km from Aizawl, Saitual is a working hill town rather than a resort destination, its ridge-top setting offering the same kind of green, terraced valley views found across central Mizoram.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Saitual.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Saitual.jpg",
+    imageCredit: "Coolcolney, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture"],
+    bestSeason: "October to March",
+    duration: "Half Day to 1 Day",
+    highlights: [
+      { name: "Founded 1915 as a Christian village by Chief Dorawta Sailo" },
+      { name: "Headquarters of the newly created Saitual district" },
+      { name: "Ridge-top hill town on NH-6" },
+      { name: "Centennial celebrated in 2015" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Lengpui Airport, Aizawl, then road", fromMumbai: "Fly to Aizawl via connections", fromBangalore: "Fly to Aizawl via connections", duration: "~2 hrs from Aizawl", costRange: "₹5,000–₹15,000 airfare to Aizawl plus road transport", tips: "Regular bus and maxicab service connects Saitual with Aizawl via NH-6" },
+    ],
+    accommodation: [
+      { type: "Saitual Guesthouses", priceRange: "₹500–₹1,500/night", examples: ["Local guesthouses in Saitual town"], description: "Basic accommodation; most visitors day-trip from Aizawl or Champhai" },
+    ],
+    localTransport: [
+      { mode: "Shared Taxi/Maxi-Cab", cost: "₹20–₹50", notes: "Around town and onward on NH-6", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Aizawl", distance: "77 km", type: "City", isHidden: false, id: "aizawl" },
+      { name: "Champhai", distance: "90 km", type: "Town", isHidden: false, id: "champhai" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 250, food: 200, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Saitual Stopover", morning: "Explore the town centre", afternoon: "Continue on NH-6 toward Champhai or return to Aizawl", evening: "Overnight in Saitual or onward town", stay: "Saitual guesthouse", meals: "Mizo cuisine at local restaurants", tips: "Best treated as a stopover en route between Aizawl and Champhai" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["District headquarters town with basic infrastructure"],
+      precautions: ["Standard small-town precautions after dark"],
+      soloTips: ["Comfortable for solo travellers passing through"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Town centre"],
+      avoidAreas: ["None significant"],
+    },
+    rating: 3.9,
+    reviews: 90,
+    mustEat: ["Mizo cuisine at local restaurants"],
+    packingTips: ["Comfortable walking shoes", "ILP printout (mandatory)"],
+  },
+
+  {
+    id: "vairengte",
+    name: "Vairengte",
+    state: "Mizoram",
+    hidden: true,
+    tagline: "The Border Town Behind India's Famous Jungle Warfare School",
+    description: "Vairengte, a border town in Kolasib district established in 1900, sits at the frontier between Mizoram and Assam and holds a unique place in Mizoram thanks to the Counter Insurgency and Jungle Warfare School (CIJWS), operated by the Indian Army and renowned internationally for training soldiers — including foreign militaries — in jungle combat tactics. Beyond the school's strategic significance, the town itself is a quiet, forested hillside settlement typical of Mizoram's northern reaches.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/92/Vairengte.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/92/Vairengte.jpg",
+    imageCredit: "Lzchhakchhuak, CC BY-SA 4.0, via Wikimedia Commons",
+    category: ["Culture"],
+    bestSeason: "October to March",
+    duration: "Half Day",
+    highlights: [
+      { name: "Counter Insurgency and Jungle Warfare School (CIJWS)" },
+      { name: "Established in 1900" },
+      { name: "On the Mizoram-Assam border" },
+      { name: "Forested hillside town setting" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Guwahati, Assam, then road via NH-306", fromMumbai: "Fly to Guwahati via connections then road", fromBangalore: "Fly to Guwahati via connections then road", duration: "~4 hrs by road from Silchar", costRange: "₹1,500–₹3,000 by shared taxi/bus", tips: "The CIJWS itself is a working military institution — respect access restrictions" },
+    ],
+    accommodation: [
+      { type: "Vairengte/Kolasib Guesthouses", priceRange: "₹500–₹1,800/night", examples: ["Local guesthouses in Vairengte and nearby Kolasib"], description: "Basic accommodation for a small border town" },
+    ],
+    localTransport: [
+      { mode: "Shared Taxi", cost: "₹20–₹50", notes: "Around town", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Kolasib", distance: "18 km", type: "Town", isHidden: true, id: "kolasib" },
+      { name: "Aizawl", distance: "100 km", type: "City", isHidden: false, id: "aizawl" },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Budget", perDayPerPerson: 600, accommodation: 250, food: 200, transport: 100, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Vairengte Stopover", morning: "Pass through en route between Assam and Mizoram", afternoon: "Explore the town centre", evening: "Continue on to Kolasib or Aizawl", stay: "Kolasib hotel (nearby)", meals: "Mizo cuisine at local restaurants", tips: "Most travellers pass through as part of the Assam-Mizoram road journey rather than staying overnight" },
+    ],
+    womenSafety: {
+      score: 7.5,
+      level: "Safe",
+      highlights: ["Established border town with regular through-traffic", "Military presence nearby"],
+      precautions: ["Standard small-town precautions after dark", "Respect restricted areas around the CIJWS"],
+      soloTips: ["Comfortable for solo travellers passing through"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Kolasib Police", number: "03837-220236" }],
+      safeZones: ["Town centre"],
+      avoidAreas: ["Restricted CIJWS military areas"],
+    },
+    rating: 4.0,
+    reviews: 130,
+    mustEat: ["Mizo cuisine at local restaurants"],
+    packingTips: ["Comfortable walking shoes", "ILP printout (mandatory)"],
+  },
+
+  {
     id: "gurdwara-rakab-ganj-sahib",
     name: "Gurdwara Rakab Ganj Sahib (GTB Memorial)",
     state: "Delhi",
