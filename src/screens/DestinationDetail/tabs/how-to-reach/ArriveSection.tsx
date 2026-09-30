@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
-import DestImage from "@/components/DestImage";
 import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon, MapPin } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
@@ -49,12 +48,28 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
   // list a map feature would eventually read.
   const [stops, setStops] = useState<Destination[]>([]);
   const [showStopPicker, setShowStopPicker] = useState(false);
+  const [stopQuery, setStopQuery] = useState("");
   const addStop = (stop: Destination) => {
     setStops((prev) => [...prev, stop]);
     setShowStopPicker(false);
+    setStopQuery("");
   };
   const removeStop = (id: string) => setStops((prev) => prev.filter((s) => s.id !== id));
-  const availableStops = DESTINATIONS.filter((dest) => dest.id !== d.id && !stops.find((s) => s.id === dest.id));
+  // Filtered by what's typed, not a full render of every destination —
+  // that grid of ~1,700 image cards (one DestImage each, loaded over the
+  // network) was the actual source of the slowdown being reported, not
+  // just a UX nicety. Capped to 8 matches for the same reason a dropdown
+  // of every possible match would still be unusable.
+  const stopMatchQuery = stopQuery.trim().toLowerCase();
+  const stopMatches =
+    stopMatchQuery.length > 0
+      ? DESTINATIONS.filter(
+          (dest) =>
+            dest.id !== d.id &&
+            !stops.find((s) => s.id === dest.id) &&
+            (dest.name.toLowerCase().includes(stopMatchQuery) || dest.state.toLowerCase().includes(stopMatchQuery)),
+        ).slice(0, 8)
+      : [];
 
   const detectLocation = async () => {
     const city = await detect();
@@ -174,23 +189,43 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
 
           {showStopPicker ? (
             <View style={{ gap: 8 }}>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {availableStops.map((dest) => (
-                  <Pressable
-                    key={dest.id}
-                    onPress={() => addStop(dest)}
-                    style={{ width: 90, borderRadius: 12, overflow: "hidden", borderWidth: 1, borderColor: c.border }}
-                  >
-                    <DestImage source={{ uri: dest.image }} style={{ width: "100%", height: 60 }} contentFit="cover" />
-                    <View style={{ padding: 6, backgroundColor: c.surface }}>
-                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 10, color: c.textPrimary }} numberOfLines={1}>
-                        {dest.name}
-                      </Text>
-                    </View>
-                  </Pressable>
-                ))}
-              </View>
-              <Pressable onPress={() => setShowStopPicker(false)} style={{ alignSelf: "flex-start" }}>
+              <TextInput
+                value={stopQuery}
+                onChangeText={setStopQuery}
+                autoFocus
+                placeholder="Type a place name — e.g. Mysuru"
+                placeholderTextColor={c.textMuted}
+                style={{
+                  backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
+                  fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
+                }}
+              />
+              {stopMatches.length > 0 && (
+                <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
+                  {stopMatches.map((dest, i) => (
+                    <Pressable
+                      key={dest.id}
+                      onPress={() => addStop(dest)}
+                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+                    >
+                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
+                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
+                    </Pressable>
+                  ))}
+                </View>
+              )}
+              {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
+                <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
+                  No matches for "{stopQuery.trim()}"
+                </Text>
+              )}
+              <Pressable
+                onPress={() => {
+                  setShowStopPicker(false);
+                  setStopQuery("");
+                }}
+                style={{ alignSelf: "flex-start" }}
+              >
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
               </Pressable>
             </View>
