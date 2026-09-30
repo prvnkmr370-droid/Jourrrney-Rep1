@@ -1,13 +1,12 @@
 import { useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
-import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon, MapPin } from "lucide-react-native";
+import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
-import LocationPickerModal from "@/components/LocationPickerModal";
 import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
 
 interface Props {
@@ -25,7 +24,6 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
   const searchInputRef = useRef<TextInput>(null);
   const { locating, detect } = useDetectLocation();
   const [searchFocused, setSearchFocused] = useState(false);
-  const [showMapPicker, setShowMapPicker] = useState(false);
   const { suggestions } = useCitySearch(sourceCity);
   const showSuggestions = searchFocused && suggestions.length > 0;
 
@@ -33,12 +31,6 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
     setSourceCity(label);
     setOriginCity(label);
     setSearchFocused(false);
-  };
-
-  const pickFromMap = (label: string) => {
-    setSourceCity(label);
-    setOriginCity(label);
-    setShowMapPicker(false);
   };
 
   // Waypoints between the origin and this destination — kept local to the
@@ -114,12 +106,6 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
               style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
             >
               {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
-            </Pressable>
-            <Pressable
-              onPress={() => setShowMapPicker(true)}
-              style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
-            >
-              <MapIcon color={c.primary} size={16} />
             </Pressable>
           </View>
 
@@ -378,8 +364,6 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
           </View>
         </>
       ) : null}
-
-      <LocationPickerModal visible={showMapPicker} onClose={() => setShowMapPicker(false)} onConfirm={pickFromMap} />
     </View>
   );
 }
