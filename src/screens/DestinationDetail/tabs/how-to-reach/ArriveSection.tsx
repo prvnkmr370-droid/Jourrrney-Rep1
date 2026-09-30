@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
-import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin } from "lucide-react-native";
+import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
@@ -8,6 +8,7 @@ import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
 import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
+import { TravelModeIcon } from "./travelModeIcon";
 
 interface Props {
   destination: Destination;
@@ -249,7 +250,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                     borderWidth: 1.5, borderColor: active ? c.primary : c.border,
                   }}
                 >
-                  <Text style={{ fontSize: 15 }}>{t.icon}</Text>
+                  <TravelModeIcon value={t.icon} color={active ? c.primary : c.textSecondary} size={16} />
                   <View>
                     <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: active ? c.primary : c.textPrimary }}>{t.mode}</Text>
                     <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: active ? c.primary : c.textSecondary }}>{t.costRange}</Text>
@@ -290,7 +291,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                 </View>
               </View>
               <View style={{ padding: 14 }}>
-                <Callout icon="💡" text={selected.tips} bg={rgba(c.gold, 0.1)} />
+                <Callout icon={<Lightbulb color={c.gold} size={14} />} text={selected.tips} bg={rgba(c.gold, 0.1)} />
               </View>
             </Card>
           )}
@@ -326,7 +327,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                 <Card key={ap.name}>
                   <View style={{ padding: 14, backgroundColor: rgba(c.teal, 0.08), borderBottomWidth: 1, borderBottomColor: c.border }}>
                     <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                      <Text style={{ fontSize: 17 }}>{ap.icon}</Text>
+                      <TravelModeIcon value={ap.icon} color={c.teal} size={17} />
                       <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{ap.by}</Text>
                     </View>
                     <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.teal }}>{ap.name}</Text>
@@ -336,7 +337,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                     {ap.toAccommodation.map((step) => (
                       <View key={step.step} style={{ flexDirection: "row", gap: 10 }}>
                         <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
-                          <Text style={{ fontSize: 12 }}>{step.icon}</Text>
+                          <TravelModeIcon value={step.icon} color={c.textSecondary} size={13} />
                         </View>
                         <View style={{ flex: 1 }}>
                           <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11.5, color: c.textPrimary, marginBottom: 3 }}>{step.action}</Text>
@@ -344,7 +345,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.primary }}>{step.cost}</Text>
                             <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{step.duration}</Text>
                           </View>
-                          <Callout icon="💡" text={step.tip} bg={rgba(c.gold, 0.1)} />
+                          <Callout icon={<Lightbulb color={c.gold} size={14} />} text={step.tip} bg={rgba(c.gold, 0.1)} />
                         </View>
                       </View>
                     ))}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { View, Text, Pressable } from "react-native";
-import { CheckCircle, ChevronDown, ChevronUp } from "lucide-react-native";
+import { CheckCircle, ChevronDown, ChevronUp, TriangleAlert, Zap, Info } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import type { CityHurdle, JourneyGuide } from "@/data/journeyGuides";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -11,9 +11,9 @@ import { Card, rgba } from "./shared";
 // constant (which would freeze it to whichever theme first evaluated it).
 function severityStyles(c: ReturnType<typeof useThemeColors>) {
   return {
-    high: { border: rgba(c.danger, 0.25), bg: rgba(c.danger, 0.1), text: c.danger, label: "⚠️ High risk" },
-    medium: { border: rgba(c.warning, 0.25), bg: rgba(c.warning, 0.1), text: c.warning, label: "⚡ Watch out" },
-    low: { border: c.border, bg: c.surfaceAlt, text: c.textSecondary, label: "ℹ️ Good to know" },
+    high: { border: rgba(c.danger, 0.25), bg: rgba(c.danger, 0.1), text: c.danger, label: "High risk", Icon: TriangleAlert },
+    medium: { border: rgba(c.warning, 0.25), bg: rgba(c.warning, 0.1), text: c.warning, label: "Watch out", Icon: Zap },
+    low: { border: c.border, bg: c.surfaceAlt, text: c.textSecondary, label: "Good to know", Icon: Info },
   } as const;
 }
 
@@ -58,7 +58,8 @@ function HurdleCard({ hurdle: h, expanded, onToggle }: { hurdle: CityHurdle; exp
         </View>
         <View style={{ flex: 1 }}>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary, marginBottom: 4 }}>{h.issue}</Text>
-          <View style={{ alignSelf: "flex-start", backgroundColor: s.bg, borderRadius: 999, paddingHorizontal: 8, paddingVertical: 2 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 4, alignSelf: "flex-start", backgroundColor: s.bg, borderRadius: 999, paddingHorizontal: 8, paddingVertical: 2 }}>
+            <s.Icon color={s.text} size={10} />
             <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 10, color: s.text }}>{s.label}</Text>
           </View>
         </View>

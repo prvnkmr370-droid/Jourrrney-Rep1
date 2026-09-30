@@ -11,6 +11,7 @@
  */
 import { useState } from "react";
 import { View, Text, Pressable, ScrollView, type TextInput } from "react-native";
+import { Plane, BusFront, Luggage, TriangleAlert, Building2, ShieldAlert } from "lucide-react-native";
 import { getJourneyGuide } from "@/data/journeyGuides";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -23,11 +24,11 @@ import AdvisorySection from "./how-to-reach/AdvisorySection";
 import LocalTransportSection from "./how-to-reach/LocalTransportSection";
 
 const SECTIONS = [
-  { id: "arrive", label: "Getting There", icon: "✈️" },
-  { id: "localTransport", label: "Getting Around", icon: "🛺" },
-  { id: "weather", label: "What to Pack", icon: "🧳" },
-  { id: "hurdles", label: "Traveler Hurdles", icon: "⚡" },
-  { id: "essentials", label: "City Essentials", icon: "🏙️" },
+  { id: "arrive", label: "Getting There", Icon: Plane },
+  { id: "localTransport", label: "Getting Around", Icon: BusFront },
+  { id: "weather", label: "What to Pack", Icon: Luggage },
+  { id: "hurdles", label: "Traveler Hurdles", Icon: TriangleAlert },
+  { id: "essentials", label: "City Essentials", Icon: Building2 },
 ] as const;
 
 type Section = (typeof SECTIONS)[number]["id"] | "advisory";
@@ -43,7 +44,7 @@ export default function HowToReachTab({ destination: d, onSearchFocusChange }: P
   const [section, setSection] = useState<Section>("arrive");
 
   const visibleSections = guide?.travelAdvisory
-    ? [...SECTIONS, { id: "advisory" as const, label: "Travel Advisory", icon: "🛡️" }]
+    ? [...SECTIONS, { id: "advisory" as const, label: "Travel Advisory", Icon: ShieldAlert }]
     : SECTIONS;
 
   return (
@@ -61,7 +62,7 @@ export default function HowToReachTab({ destination: d, onSearchFocusChange }: P
                 backgroundColor: active ? "#333C81" : c.surfaceAlt,
               }}
             >
-              <Text style={{ fontSize: 12 }}>{sec.icon}</Text>
+              <sec.Icon color={active ? "#FFFFFF" : c.textSecondary} size={13} />
               <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: active ? "#FFFFFF" : c.textSecondary }}>
                 {sec.label}
               </Text>

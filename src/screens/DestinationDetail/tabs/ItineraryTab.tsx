@@ -1,7 +1,7 @@
 /** Make-only reference (no Figma frame). */
 import { useState } from "react";
 import { View, Text, Pressable } from "react-native";
-import { Sparkles, ChevronDown, ChevronUp } from "lucide-react-native";
+import { Sparkles, ChevronDown, ChevronUp, Sunrise, Sun, Moon, Utensils, Lightbulb, type LucideIcon } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -57,16 +57,22 @@ export default function ItineraryTab({ destination: d, onPlanTrip }: Props) {
 
               {expanded && (
                 <View style={{ paddingHorizontal: 16, paddingBottom: 16, borderTopWidth: 1, borderTopColor: c.border, paddingTop: 12, gap: 10 }}>
-                  <DayPart icon="🌅" time="Morning" text={day.morning} c={c} />
-                  <DayPart icon="☀️" time="Afternoon" text={day.afternoon} c={c} />
-                  <DayPart icon="🌙" time="Evening" text={day.evening} c={c} />
+                  <DayPart Icon={Sunrise} time="Morning" text={day.morning} c={c} />
+                  <DayPart Icon={Sun} time="Afternoon" text={day.afternoon} c={c} />
+                  <DayPart Icon={Moon} time="Evening" text={day.evening} c={c} />
                   <View style={{ flexDirection: "row", gap: 8 }}>
                     <View style={{ flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 10, padding: 10 }}>
-                      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary, marginBottom: 2 }}>🍽️ Meals</Text>
+                      <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 2 }}>
+                        <Utensils color={c.textPrimary} size={11} />
+                        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary }}>Meals</Text>
+                      </View>
                       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{day.meals}</Text>
                     </View>
                     <View style={{ flex: 1, backgroundColor: withOpacity(c.gold, 0.12), borderRadius: 10, padding: 10 }}>
-                      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary, marginBottom: 2 }}>💡 Pro Tip</Text>
+                      <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 2 }}>
+                        <Lightbulb color={c.textPrimary} size={11} />
+                        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary }}>Pro Tip</Text>
+                      </View>
                       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{day.tips}</Text>
                     </View>
                   </View>
@@ -80,12 +86,13 @@ export default function ItineraryTab({ destination: d, onPlanTrip }: Props) {
   );
 }
 
-function DayPart({ icon, time, text, c }: { icon: string; time: string; text: string; c: ReturnType<typeof useThemeColors> }) {
+function DayPart({ Icon, time, text, c }: { Icon: LucideIcon; time: string; text: string; c: ReturnType<typeof useThemeColors> }) {
   return (
     <View>
-      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.teal, marginBottom: 2 }}>
-        {icon} {time}
-      </Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 5, marginBottom: 2 }}>
+        <Icon color={c.teal} size={13} />
+        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.teal }}>{time}</Text>
+      </View>
       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 17, color: c.textSecondary }}>{text}</Text>
     </View>
   );

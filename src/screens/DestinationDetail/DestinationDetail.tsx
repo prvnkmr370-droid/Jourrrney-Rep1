@@ -17,7 +17,7 @@ import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images } from "lucide-react-native";
+import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -31,12 +31,12 @@ import SafetyTab from "./tabs/SafetyTab";
 import ItineraryTab from "./tabs/ItineraryTab";
 
 const TABS = [
-  { id: "Overview", emoji: "🗺️" },
-  { id: "How to Reach", emoji: "🚀" },
-  { id: "Stay", emoji: "🏨" },
-  { id: "Budget", emoji: "💰" },
-  { id: "Safety", emoji: "🛡️" },
-  { id: "Itinerary", emoji: "📅" },
+  { id: "Overview", Icon: Map },
+  { id: "How to Reach", Icon: Rocket },
+  { id: "Stay", Icon: BedDouble },
+  { id: "Budget", Icon: Wallet },
+  { id: "Safety", Icon: Shield },
+  { id: "Itinerary", Icon: Calendar },
 ] as const;
 
 type Tab = (typeof TABS)[number]["id"];
@@ -292,7 +292,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
       {/* Tab bar */}
       <View style={{ borderBottomWidth: 1, borderBottomColor: c.border, backgroundColor: c.surface }}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 12, gap: 4, paddingVertical: 8 }}>
-          {TABS.map(({ id, emoji }) => {
+          {TABS.map(({ id, Icon }) => {
             const active = activeTab === id;
             return (
               <Pressable
@@ -304,7 +304,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
                   backgroundColor: active ? "#333C81" : "transparent",
                 }}
               >
-                {emoji ? <Text style={{ fontSize: 13 }}>{emoji}</Text> : null}
+                <Icon color={active ? "#FFFFFF" : c.textSecondary} size={14} />
                 <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
                   {id}
                 </Text>

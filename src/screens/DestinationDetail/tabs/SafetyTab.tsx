@@ -1,7 +1,7 @@
 /** Make-only reference (no Figma frame). */
 import { View, Text, ActivityIndicator } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { CheckCircle, AlertTriangle, Phone, CloudAlert } from "lucide-react-native";
+import { CheckCircle, CheckCircle2, AlertTriangle, Phone, CloudAlert, UserRound, Ban, Shield, Lightbulb } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -34,7 +34,7 @@ export default function SafetyTab({ destination: d }: { destination: Destination
               <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>{ws.level}</Text>
             </View>
           </View>
-          <Text style={{ fontSize: 44, opacity: 0.3 }}>🛡️</Text>
+          <Shield color="#FFFFFF" size={44} strokeWidth={1.5} style={{ opacity: 0.3 }} />
         </View>
         <View style={{ flexDirection: "row", gap: 3 }}>
           {Array.from({ length: 10 }).map((_, i) => (
@@ -50,25 +50,25 @@ export default function SafetyTab({ destination: d }: { destination: Destination
 
       <SafetyDetailCards destination={d} />
 
-      <SafetySection title="✅ Safety Highlights" c={c}>
+      <SafetySection title="Safety Highlights" icon={<CheckCircle2 color={c.success} size={15} />} c={c}>
         {ws.highlights.map((h) => (
           <IconRow key={h} icon={<CheckCircle color={c.success} size={16} />} text={h} bg={withOpacity(c.success, 0.1)} c={c} />
         ))}
       </SafetySection>
 
-      <SafetySection title="👩 Solo Women Travel Tips" c={c}>
+      <SafetySection title="Solo Women Travel Tips" icon={<UserRound color={c.textPrimary} size={15} />} c={c}>
         {ws.soloTips.map((tip) => (
-          <IconRow key={tip} icon={<Text style={{ fontSize: 15 }}>💡</Text>} text={tip} bg={c.surfaceAlt} c={c} />
+          <IconRow key={tip} icon={<Lightbulb color={c.gold} size={15} />} text={tip} bg={c.surfaceAlt} c={c} />
         ))}
       </SafetySection>
 
-      <SafetySection title="⚠️ Precautions" c={c}>
+      <SafetySection title="Precautions" icon={<AlertTriangle color={c.warning} size={15} />} c={c}>
         {ws.precautions.map((p) => (
           <IconRow key={p} icon={<AlertTriangle color={c.warning} size={16} />} text={p} bg={withOpacity(c.warning, 0.1)} c={c} />
         ))}
       </SafetySection>
 
-      <SafetySection title="📞 Emergency Contacts" last c={c}>
+      <SafetySection title="Emergency Contacts" icon={<Phone color={c.danger} size={15} />} last c={c}>
         {ws.emergencyContacts.map((contact) => (
           <View
             key={contact.label}
@@ -94,8 +94,8 @@ export default function SafetyTab({ destination: d }: { destination: Destination
         ))}
       </SafetySection>
 
-      <Tags title="✅ Safe Zones" color={c.success} items={ws.safeZones} />
-      <Tags title="⛔ Avoid After Dark" color={c.danger} items={ws.avoidAreas} />
+      <Tags title="Safe Zones" icon={<CheckCircle2 color={c.success} size={13} />} color={c.success} items={ws.safeZones} />
+      <Tags title="Avoid After Dark" icon={<Ban color={c.danger} size={13} />} color={c.danger} items={ws.avoidAreas} />
     </View>
   );
 }
@@ -161,10 +161,13 @@ function WeatherAlertCard({ destinationId, c }: { destinationId: string; c: Retu
   );
 }
 
-function SafetySection({ title, children, c }: { title: string; children: React.ReactNode; last?: boolean; c: ReturnType<typeof useThemeColors> }) {
+function SafetySection({ title, icon, children, c }: { title: string; icon?: React.ReactNode; children: React.ReactNode; last?: boolean; c: ReturnType<typeof useThemeColors> }) {
   return (
     <View style={{ marginBottom: 20 }}>
-      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary, marginBottom: 10 }}>{title}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 10 }}>
+        {icon}
+        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{title}</Text>
+      </View>
       <View style={{ gap: 8 }}>{children}</View>
     </View>
   );
@@ -179,13 +182,16 @@ function IconRow({ icon, text, bg, c }: { icon: React.ReactNode; text: string; b
   );
 }
 
-function Tags({ title, color, items }: { title: string; color: string; items: string[] }) {
+function Tags({ title, icon, color, items }: { title: string; icon?: React.ReactNode; color: string; items: string[] }) {
   // marginBottom matches SafetySection's 20 above so "Safe Zones" and
   // "Avoid After Dark" keep the same block rhythm as the sections above
   // them instead of visibly tightening up at the bottom of the tab.
   return (
     <View style={{ marginBottom: 20 }}>
-      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color, marginBottom: 10 }}>{title}</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 10 }}>
+        {icon}
+        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color }}>{title}</Text>
+      </View>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
         {items.map((z) => (
           <View key={z} style={{ backgroundColor: withOpacity(color, 0.12), borderRadius: 999, paddingHorizontal: 10, paddingVertical: 4 }}>

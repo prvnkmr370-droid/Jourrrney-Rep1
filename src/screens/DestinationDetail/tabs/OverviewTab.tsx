@@ -15,7 +15,7 @@
 import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
-import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Clock } from "lucide-react-native";
+import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Clock, Gem } from "lucide-react-native";
 import type { Destination, NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -153,9 +153,12 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
 
           {hiddenNearby.length > 0 && (
             <>
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.gold, marginBottom: 12 }}>
-                💎 Unexplored Hidden Gems
-              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 12 }}>
+                <Gem color={c.gold} size={15} />
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.gold }}>
+                  Unexplored Hidden Gems
+                </Text>
+              </View>
               <View style={{ gap: 12 }}>
                 {hiddenNearby.map((place) => (
                   <NearbyPlaceCard key={place.name} place={place} c={c} isGem />

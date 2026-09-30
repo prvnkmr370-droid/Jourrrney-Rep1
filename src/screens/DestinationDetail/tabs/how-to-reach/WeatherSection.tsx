@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { AlertTriangle } from "lucide-react-native";
+import { AlertTriangle, Package } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -41,7 +41,10 @@ export default function WeatherSection({ destination: d, guide }: { destination:
                 </View>
 
                 <View>
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary, marginBottom: 6 }}>📦 What to Carry</Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 6 }}>
+                    <Package color={c.textPrimary} size={13} />
+                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary }}>What to Carry</Text>
+                  </View>
                   <View style={{ gap: 6 }}>
                     {season.carry.map((item) => (
                       <CheckItem key={item} text={item} />

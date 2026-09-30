@@ -2,14 +2,15 @@
 import { useState } from "react";
 import { View, Text, Pressable } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { BedDouble, Utensils, BusFront, Ticket } from "lucide-react-native";
 import type { BudgetTier, Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 
 const SPEND_ROWS = [
-  { key: "accommodation" as const, label: "Accommodation", icon: "🏨" },
-  { key: "food" as const, label: "Food & Drinks", icon: "🍛" },
-  { key: "transport" as const, label: "Local Transport", icon: "🛺" },
-  { key: "activities" as const, label: "Activities & Entry", icon: "🎟️" },
+  { key: "accommodation" as const, label: "Accommodation", Icon: BedDouble },
+  { key: "food" as const, label: "Food & Drinks", Icon: Utensils },
+  { key: "transport" as const, label: "Local Transport", Icon: BusFront },
+  { key: "activities" as const, label: "Activities & Entry", Icon: Ticket },
 ];
 
 export default function BudgetTab({ destination: d }: { destination: Destination }) {
@@ -64,7 +65,7 @@ export default function BudgetTab({ destination: d }: { destination: Destination
         Daily Spend Breakdown
       </Text>
       <View>
-        {SPEND_ROWS.map(({ key, label, icon }, i) => (
+        {SPEND_ROWS.map(({ key, label, Icon }, i) => (
           <View
             key={key}
             style={{
@@ -73,7 +74,7 @@ export default function BudgetTab({ destination: d }: { destination: Destination
             }}
           >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-              <Text style={{ fontSize: 18 }}>{icon}</Text>
+              <Icon color={c.textSecondary} size={16} />
               <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary }}>{label}</Text>
             </View>
             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.teal }}>

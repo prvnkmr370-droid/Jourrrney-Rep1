@@ -24,6 +24,27 @@
  * `sourceNote` so it's never presented as a verified fact about that one
  * specific place.
  */
+import {
+  Shield,
+  Toilet,
+  UserRound,
+  Hospital,
+  Siren,
+  Accessibility,
+  Lightbulb,
+  CarTaxiFront,
+  BedDouble,
+  MapPin,
+  Moon,
+  Wifi,
+  ShieldAlert,
+  Languages,
+  BookOpen,
+  Footprints,
+  BatteryCharging,
+  ShoppingCart,
+  type LucideIcon,
+} from "lucide-react-native";
 import type { Destination } from "./destinations";
 import { SAFETY_OVERRIDES } from "./safetyOverrides";
 
@@ -48,7 +69,7 @@ export type SafetyCategoryKey =
   | "essentials";
 
 export interface SafetyCategoryContent {
-  emoji: string;
+  Icon: LucideIcon;
   label: string;
   /** One line, shown on the always-visible/collapsed card. */
   summary: string;
@@ -384,7 +405,7 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
 
   const base: Record<SafetyCategoryKey, SafetyCategoryContent> = {
     safetyLevel: {
-      emoji: "🛡️",
+      Icon: Shield,
       label: "Safety level",
       summary: `${ws.score}/10 · ${ws.level}`,
       details: [
@@ -395,14 +416,14 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "This app's own destination safety assessment, based on location, footfall, and available reporting.",
     },
     toilets: {
-      emoji: "🚻",
+      Icon: Toilet,
       label: "Toilets",
       summary: g.toiletsSummary,
       details: g.toiletsDetails,
       sourceNote: "General guidance for this type of destination — official tourism sites don't publish facility-level detail, so this isn't a verified fact about this specific spot.",
     },
     womenFriendly: {
-      emoji: "👩",
+      Icon: UserRound,
       label: "Women-friendly places",
       summary: ws.safeZones.length ? `Safe zones: ${ws.safeZones.join(", ")}` : "See details for guidance",
       details: [
@@ -414,14 +435,14 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "Safe zones, avoid-areas, and solo tips are this app's own curated assessment for this destination; stay suggestions are general guidance.",
     },
     medical: {
-      emoji: "🏥",
+      Icon: Hospital,
       label: "Emergency medical help",
       summary: `Ambulance ${AMBULANCE} · National Emergency ${NATIONAL_EMERGENCY}`,
       details: [`National ambulance number: ${AMBULANCE}`, `National emergency number: ${NATIONAL_EMERGENCY}`, ...g.medicalDetails],
       sourceNote: "Helpline numbers are official, nationwide numbers; hospital/facility guidance is general for this destination type.",
     },
     police: {
-      emoji: "👮",
+      Icon: Siren,
       label: "Police & emergency contacts",
       summary: ws.emergencyContacts.length ? ws.emergencyContacts.map((c) => `${c.label}: ${c.number}`).join(" · ") : `Police: ${POLICE}`,
       details: [
@@ -435,21 +456,21 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "Destination-specific contacts curated for this app (several from official state tourist-helpline listings), plus verified national numbers.",
     },
     accessibility: {
-      emoji: "♿",
+      Icon: Accessibility,
       label: "Accessibility",
       summary: g.accessibilitySummary,
       details: g.accessibilityDetails,
       sourceNote: "General guidance for this type of destination — official sites rarely publish accessibility specifics, so confirm with the specific attraction/property directly.",
     },
     areaConditions: {
-      emoji: "💡",
+      Icon: Lightbulb,
       label: "Area conditions",
       summary: "See details for lighting/crowd guidance",
       details: g.areaConditionsDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     transport: {
-      emoji: "🚕",
+      Icon: CarTaxiFront,
       label: "Transport safety",
       summary: d.localTransport[0] ? `${d.localTransport[0].mode} available locally` : "See details",
       details: d.localTransport.length
@@ -458,7 +479,7 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "Based on this destination's own listed local transport options.",
     },
     accommodation: {
-      emoji: "🏨",
+      Icon: BedDouble,
       label: "Accommodation safety",
       summary: d.accommodation[0]?.type ?? "See details",
       details: [
@@ -470,7 +491,7 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "Accommodation types are based on this destination's own listed options; the Sakhi Niwas line is a genuine, government-run, women-only hostel scheme (missionshakti.wcd.gov.in) — verify it has a functional hostel in this specific destination before relying on it, since coverage isn't universal.",
     },
     locationSharing: {
-      emoji: "📍",
+      Icon: MapPin,
       label: "Location sharing",
       summary: "Share your live trip with a trusted contact",
       details: [
@@ -480,28 +501,28 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "General safety practice, not destination-specific.",
     },
     nightGuidance: {
-      emoji: "🌙",
+      Icon: Moon,
       label: "Night-time guidance",
       summary: ws.avoidAreas.length ? `Avoid: ${ws.avoidAreas.join(", ")}` : "Stick to main, lit areas after dark",
       details: [...(ws.avoidAreas.length ? [`Avoid after dark: ${ws.avoidAreas.join(", ")}`] : []), "Prefer well-lit, busy main roads over shortcuts or quiet side streets at night.", "Book transport in advance for late-night arrivals/departures rather than arranging it on the spot."],
       sourceNote: "Avoid-area guidance is this app's own curated assessment; the rest is general night-travel practice.",
     },
     connectivity: {
-      emoji: "📶",
+      Icon: Wifi,
       label: "Connectivity",
       summary: g.connectivitySummary,
       details: g.connectivityDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     scamAwareness: {
-      emoji: "💰",
+      Icon: ShieldAlert,
       label: "Scam awareness",
       summary: "See details for common local issues",
       details: g.scamDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     localLanguage: {
-      emoji: "🗣️",
+      Icon: Languages,
       label: "Local language",
       summary: `Hindi and English are widely understood in ${localState}'s tourist areas`,
       details: [
@@ -512,28 +533,28 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
       sourceNote: "General guidance — Hindi/English usage is broadly true across Indian tourist destinations.",
     },
     localCustoms: {
-      emoji: "🧳",
+      Icon: BookOpen,
       label: "Local customs",
       summary: "See details for dress and etiquette guidance",
       details: g.customsDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     walkingConditions: {
-      emoji: "🚶",
+      Icon: Footprints,
       label: "Walking conditions",
       summary: "See details for terrain and isolated-stretch guidance",
       details: g.walkingDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     charging: {
-      emoji: "🔋",
+      Icon: BatteryCharging,
       label: "Charging",
       summary: "Carry a power bank for full sightseeing days",
       details: g.chargingDetails,
       sourceNote: "General guidance for this type of destination.",
     },
     essentials: {
-      emoji: "🛒",
+      Icon: ShoppingCart,
       label: "Essentials nearby",
       summary: "See details for pharmacy/ATM/fuel guidance",
       details: g.essentialsDetails,

@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { Star, Wallet, CheckCircle2, XCircle, Pill, Drama, Banknote } from "lucide-react-native";
 import type { TravelAdvisory } from "@/data/journeyGuides";
 import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 import { Card, SectionLabel, Bullet, rgba } from "./shared";
@@ -38,14 +39,14 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
           </Text>
           <View style={{ gap: 8 }}>
             <View style={{ flexDirection: "row", gap: 8 }}>
-              <Text style={{ fontSize: 12 }}>🌟</Text>
+              <Star color={c.gold} size={14} />
               <View>
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary }}>Peak Season</Text>
                 <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{advisory.peakSeason}</Text>
               </View>
             </View>
             <View style={{ flexDirection: "row", gap: 8 }}>
-              <Text style={{ fontSize: 12 }}>💸</Text>
+              <Wallet color={c.teal} size={14} />
               <View>
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textPrimary }}>Off Season</Text>
                 <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{advisory.offSeason}</Text>
@@ -77,7 +78,7 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
       </View>
 
       <View style={{ backgroundColor: rgba(c.success, 0.08), borderWidth: 1.5, borderColor: rgba(c.success, 0.25), borderRadius: 16, padding: 14 }}>
-        <SectionLabel color={c.success}>✅ Dos in {destName}</SectionLabel>
+        <SectionLabel color={c.success} icon={<CheckCircle2 color={c.success} size={13} />}>Dos in {destName}</SectionLabel>
         <View style={{ gap: 6 }}>
           {advisory.dos.map((tip) => (
             <Bullet key={tip} text={tip} dotColor={c.success} />
@@ -86,7 +87,7 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
       </View>
 
       <View style={{ backgroundColor: rgba(c.danger, 0.06), borderWidth: 1.5, borderColor: rgba(c.danger, 0.22), borderRadius: 16, padding: 14 }}>
-        <SectionLabel color={c.danger}>❌ Don'ts in {destName}</SectionLabel>
+        <SectionLabel color={c.danger} icon={<XCircle color={c.danger} size={13} />}>Don'ts in {destName}</SectionLabel>
         <View style={{ gap: 6 }}>
           {advisory.donts.map((tip) => (
             <Bullet key={tip} text={tip} dotColor={c.danger} />
@@ -116,7 +117,7 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
       </View>
 
       <View style={{ backgroundColor: rgba(c.teal, 0.08), borderWidth: 1, borderColor: rgba(c.teal, 0.25), borderRadius: 16, padding: 14 }}>
-        <SectionLabel color={c.teal}>💊 Health Tips</SectionLabel>
+        <SectionLabel color={c.teal} icon={<Pill color={c.teal} size={13} />}>Health Tips</SectionLabel>
         <View style={{ gap: 6 }}>
           {advisory.healthTips.map((tip) => (
             <Bullet key={tip} text={tip} dotColor={c.teal} />
@@ -125,7 +126,7 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
       </View>
 
       <View style={{ backgroundColor: rgba(c.gold, 0.08), borderWidth: 1, borderColor: rgba(c.gold, 0.25), borderRadius: 16, padding: 14 }}>
-        <SectionLabel color={c.gold}>🎭 Culture & Customs</SectionLabel>
+        <SectionLabel color={c.gold} icon={<Drama color={c.gold} size={13} />}>Culture & Customs</SectionLabel>
         <View style={{ gap: 6 }}>
           {advisory.culturalNotes.map((tip) => (
             <Bullet key={tip} text={tip} dotColor={c.gold} />
@@ -134,7 +135,7 @@ export default function AdvisorySection({ advisory, destName }: { advisory: Trav
       </View>
 
       <View style={{ backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 14 }}>
-        <SectionLabel>💰 Money & Banking</SectionLabel>
+        <SectionLabel icon={<Banknote color={c.textPrimary} size={13} />}>Money & Banking</SectionLabel>
         <View style={{ gap: 6 }}>
           {advisory.moneyTips.map((tip) => (
             <Bullet key={tip} text={tip} />

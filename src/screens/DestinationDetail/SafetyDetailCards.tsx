@@ -57,7 +57,7 @@ export default function SafetyDetailCards({ destination: d }: { destination: Des
               <>
                 <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 20, paddingBottom: 12 }}>
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 8, flex: 1 }}>
-                    <Text style={{ fontSize: 22 }}>{active.emoji}</Text>
+                    <active.Icon color={c.textPrimary} size={20} />
                     <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 16, color: c.textPrimary, flex: 1 }}>{active.label}</Text>
                   </View>
                   <Pressable onPress={() => setActiveKey(null)} style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
@@ -134,7 +134,7 @@ function Card({ content, c, onPress }: { content: SafetyCategoryContent; c: Retu
         borderRadius: 16, padding: 12, gap: 6,
       }}
     >
-      <Text style={{ fontSize: 20 }}>{content.emoji}</Text>
+      <content.Icon color={c.textPrimary} size={18} />
       <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }}>{content.label}</Text>
       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10.5, lineHeight: 14, color: c.textSecondary }} numberOfLines={2}>
         {content.summary}

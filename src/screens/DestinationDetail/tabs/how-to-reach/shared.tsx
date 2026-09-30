@@ -19,12 +19,19 @@ export function Card({ children, borderColor }: { children: React.ReactNode; bor
   );
 }
 
-export function SectionLabel({ children, color }: { children: React.ReactNode; color?: string }) {
+export function SectionLabel({ children, color, icon }: { children: React.ReactNode; color?: string; icon?: React.ReactNode }) {
   const c = useThemeColors();
-  return (
-    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, letterSpacing: 1, color: color ?? c.textPrimary, marginBottom: 10, textTransform: "uppercase" }}>
+  const text = (
+    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, letterSpacing: 1, color: color ?? c.textPrimary, textTransform: "uppercase" }}>
       {children}
     </Text>
+  );
+  if (!icon) return <View style={{ marginBottom: 10 }}>{text}</View>;
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 10 }}>
+      {icon}
+      {text}
+    </View>
   );
 }
 
@@ -48,11 +55,11 @@ export function CheckItem({ text }: { text: string }) {
   );
 }
 
-export function Callout({ icon, text, bg }: { icon: string; text: string; bg: string }) {
+export function Callout({ icon, text, bg }: { icon: React.ReactNode; text: string; bg: string }) {
   const c = useThemeColors();
   return (
     <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 8, backgroundColor: bg, borderRadius: 12, padding: 12 }}>
-      <Text style={{ fontSize: 13 }}>{icon}</Text>
+      {icon}
       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textPrimary, flex: 1 }}>{text}</Text>
     </View>
   );
