@@ -181,7 +181,6 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
               marginBottom: 10,
             }}
           >
-            <Text style={{ fontSize: 14 }}>🏁</Text>
             <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, flex: 1 }}>
               {d.name}, {d.state}
             </Text>
