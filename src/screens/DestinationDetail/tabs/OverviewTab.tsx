@@ -41,17 +41,25 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
       {d.visitingHours && (
         <View
           style={{
-            flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 24,
+            alignItems: "center", gap: 4, marginBottom: 24,
             backgroundColor: c.surfaceAlt, borderRadius: 12, paddingVertical: 10, paddingHorizontal: 14,
           }}
         >
-          <Clock color={c.teal} size={16} />
-          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary, flex: 1 }}>
-            Opens: {d.visitingHours.opens}  ·  Closes: {d.visitingHours.closes}
-            {d.visitingHours.note ? (
-              <Text style={{ fontFamily: "Poppins_400Regular", color: c.textSecondary }}> — {d.visitingHours.note}</Text>
-            ) : null}
-          </Text>
+          {/* Clock + times kept on their own row, separate from the
+              (often much longer) note below — a wrapped note used to
+              drag the icon down to visually center against the whole
+              paragraph instead of staying pinned beside "Opens". */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <Clock color={c.teal} size={16} />
+            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }}>
+              Opens: {d.visitingHours.opens}  ·  Closes: {d.visitingHours.closes}
+            </Text>
+          </View>
+          {d.visitingHours.note ? (
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, textAlign: "center" }}>
+              {d.visitingHours.note}
+            </Text>
+          ) : null}
         </View>
       )}
 
