@@ -18980,7 +18980,7 @@ export const DESTINATIONS: Destination[] = [
     nearbyPlaces: [
       { name: "Bangalore", distance: "120 km", type: "City", isHidden: false },
       { name: "Tirupati", distance: "250 km", type: "Pilgrimage", isHidden: false, id: "tirupati" },
-      { name: "Penukonda Fort", distance: "40 km", type: "Heritage", isHidden: true },
+      { name: "Penukonda Fort", distance: "40 km", type: "Heritage", isHidden: true, id: "penukonda-fort" },
     ],
     budgetBreakdown: [
       { tier: "budget", label: "Day Trip", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 300, activities: 50 },
@@ -19002,6 +19002,70 @@ export const DESTINATIONS: Destination[] = [
     reviews: 4500,
     mustEat: ["Ragi Sangati (millet ball)", "Andhra-style pickle rice", "Pulihora"],
     packingTips: ["Comfortable walking shoes", "Torch/flashlight (for ceiling murals)", "Sun hat", "Water bottle", "Camera"],
+  },
+
+  {
+    id: "penukonda-fort",
+    name: "Penukonda Fort",
+    state: "Andhra Pradesh",
+    hidden: true,
+    tagline: "Vijayanagara's Last Refuge Capital",
+    description: "Penukonda Fort, a hilltop citadel in what's now Sri Sathya Sai district, became the Vijayanagara Empire's refuge capital after its catastrophic defeat at the 1565 Battle of Talikota — the court fled ruined Hampi for this fortified hill, which served as the empire's de facto capital for several decades under the regents Tirumala and his successors. Within the ramparts stands the Gagan Mahal, an Indo-Islamic palace raised around 1575 that blends Hindu and Muslim architectural styles, alongside a scatter of temples — tradition holds that the Vijayanagara royal preceptor Sri Vyasaraya consecrated hundreds of Hanuman shrines across the Penukonda area, including one at each of the fort's own gateways. The ramparts flank the Bhogasamudram lake, with the fortified hill rising behind it against the Eastern Ghats.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/99/Pennukonda_Fort_Vaakili_or_Gate.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/99/Pennukonda_Fort_Vaakili_or_Gate.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Pennukonda_Fort_Vaakili_or_Gate.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Pennukonda_Fort_Andhra_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Pennukonda_Fort_Andhra_%282%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Penukonda_Fort_Anantapur.jpg",
+    ],
+    imageCredit: "Lvenkat, CC BY-SA 4.0, via Wikimedia Commons. Additional photo: Aasfa Khatoon (CC BY-SA 4.0), via Wikimedia Commons.",
+    category: ["Heritage", "History"],
+    bestSeason: "October – March",
+    duration: "Half day (day trip from Bangalore, Anantapur, or Lepakshi)",
+    highlights: [
+      { name: "Gagan Mahal (c. 1575 Indo-Islamic palace)" },
+      { name: "Entrance gateways with Hanuman shrines" },
+      { name: "Ramparts along Bhogasamudram lake" },
+      { name: "Numerous temples within the fort walls, including Hanuman and Navagraha shrines" },
+    ],
+    visitingHours: { opens: "10:00 AM", closes: "5:00 PM", note: "Typical hours for this ASI-protected site — confirm locally before visiting, especially around public holidays." },
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bangalore, then 3h drive (150 km)", fromMumbai: "Fly to Bangalore, then 3h drive", fromBangalore: "3h drive (150 km) via NH-44 towards Hindupur", duration: "3h from Bangalore; ~1h from Lepakshi", costRange: "₹300–₹500 bus; ₹2,500–₹3,500 cab", tips: "Often combined with Lepakshi as a single day trip from Bangalore — the two sites are about an hour apart by road." },
+      { mode: "Train", icon: "🚂", fromDelhi: "—", fromMumbai: "—", fromBangalore: "Penukonda Junction, on the Bangalore–Guntakal line, ~3h from Bangalore", duration: "~3h from Bangalore", costRange: "₹100–₹300", tips: "The fort is a few km from Penukonda Junction station — take an auto onward, then a short climb to the hilltop ramparts." },
+    ],
+    accommodation: [
+      { type: "Budget", priceRange: "₹500–₹1,000/night", examples: ["Srinivasa Lodge, Penukonda"], description: "Basic budget lodging in Penukonda town. Most visitors do a day trip, staying in Bangalore, Anantapur, or Hindupur instead." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The fort's gateways, ramparts, and temples are all within walking distance of each other", available: true },
+      { mode: "Auto Rickshaw", cost: "₹30–₹80", notes: "From Penukonda town/railway station to the fort", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Lepakshi", distance: "40 km", type: "Heritage", isHidden: false, id: "lepakshi" },
+      { name: "Bangalore", distance: "150 km", type: "City", isHidden: false },
+      { name: "Anantapur", distance: "80 km", type: "City", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Trip", perDayPerPerson: 500, accommodation: 0, food: 150, transport: 300, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Penukonda Fort Day Trip", morning: "Arrive and enter through one of the fort's gateways — each has its own small Hanuman shrine. Walk the ramparts along the Bhogasamudram lake.", afternoon: "Visit the Gagan Mahal, the fort's Indo-Islamic palace, and explore the temples scattered within the walls.", evening: "Return to Bangalore, or continue on to Lepakshi (about an hour away) to combine both sites in one day.", stay: "Day trip", meals: "Simple meals in Penukonda town (₹50–₹150)", tips: "Combine with Lepakshi for a full day covering both Vijayanagara-era sites. Carry water — there's little shade once you're on the fort's open ramparts." },
+    ],
+    womenSafety: {
+      score: 6,
+      level: "Moderate",
+      highlights: ["ASI-protected site", "Small, quiet town", "Low footfall means few crowds"],
+      precautions: ["Limited tourist infrastructure — carry water and snacks", "Remote stretches of rampart have no one else around"],
+      soloTips: ["Visit during daylight hours only", "Go with a guide or as part of a group where possible — footfall is low"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Main gateway and temple areas"],
+      avoidAreas: ["Isolated rampart stretches after dark"],
+    },
+    rating: 4.3,
+    reviews: 650,
+    mustEat: ["Andhra-style meals at Penukonda town eateries", "Pulihora", "Roadside tender coconut"],
+    packingTips: ["Comfortable walking shoes", "Sun hat and sunscreen", "Water bottle", "Camera"],
   },
 
   {
