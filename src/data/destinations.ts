@@ -18939,7 +18939,6 @@ export const DESTINATIONS: Destination[] = [
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_05.jpg",
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_04.jpg",
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_03.jpg",
-      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_01.jpg",
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_02.jpg",
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_06.jpg",
       "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/andhra-pradesh/lepakshi_07.jpg",
