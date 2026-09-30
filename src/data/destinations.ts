@@ -18966,7 +18966,7 @@ export const DESTINATIONS: Destination[] = [
       { name: "Ceiling murals — finest Vijayanagara paintings" },
       { name: "Giant Nagalinga (serpent carving)" },
     ],
-    visitingHours: { opens: "6:00 AM", closes: "6:00 PM", note: "Veerabhadra Temple: 6 AM–6 PM (free, ASI monument). Nandi: sunrise–sunset. Best visited with a guide — the murals and architectural details are easy to miss." },
+    visitingHours: { opens: "7:00 AM", closes: "6:00 PM", note: "Veerabhadra Temple: 7 AM–6 PM (free, ASI monument). Nandi: sunrise–sunset. Best visited with a guide — the murals and architectural details are easy to miss." },
     transport: [
       { mode: "Road", icon: "🚗", fromDelhi: "Fly to Bangalore, then 2.5h drive (120 km)", fromMumbai: "Fly to Bangalore, then 2.5h drive", fromBangalore: "2.5h drive (120 km) on NH-44 towards Hyderabad", duration: "2.5h from Bangalore", costRange: "₹200–₹400 bus", tips: "On NH-44 between Bangalore and Hyderabad. APSRTC buses stop at Lepakshi cross (2 km walk to temple). Best done as a road-trip stop or day trip from Bangalore." },
     ],
