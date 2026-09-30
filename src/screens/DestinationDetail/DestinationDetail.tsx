@@ -12,7 +12,7 @@
  * as redundant as their own top-level tabs.
  */
 import { useEffect, useMemo, useState } from "react";
-import { View, Text, Pressable, ScrollView, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
+import { View, Text, Pressable, ScrollView, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
@@ -61,6 +61,30 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
 
   const safetyColor = getSafetyColor(d.womenSafety.score);
   const safetyBg = getSafetyBg(d.womenSafety.score);
+
+  // How to Reach's city search (ArriveSection) can end up hidden behind
+  // the keyboard: KeyboardAvoidingView's "padding" behavior (iOS) shrinks
+  // this ScrollView's own viewport so its built-in scroll-to-focused-input
+  // kicks in, but that can only scroll as far as there's actual content
+  // below the fold — if the tab content is short, there isn't enough
+  // scrollable room to clear the keyboard no matter what. Tracking the
+  // keyboard's real height ourselves and padding the scroll content by
+  // that much (same approach already proven out in PlanTrip/ChatStep.tsx,
+  // including the +16 buffer for Gboard's suggestion strip) guarantees
+  // there's always enough room to scroll the focused input clear, on
+  // both platforms.
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+  const KEYBOARD_GAP_BUFFER = 16;
+  useEffect(() => {
+    const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
+    const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
+    const showSub = Keyboard.addListener(showEvt, (e) => setKeyboardHeight(e.endCoordinates?.height ?? 0));
+    const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardHeight(0));
+    return () => {
+      showSub.remove();
+      hideSub.remove();
+    };
+  }, []);
 
   // Falls back to the single heroImage (as a one-slide "carousel") for
   // the many destinations that don't have `gallery` populated yet — see
@@ -268,15 +292,22 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         </ScrollView>
       </View>
 
-      {/* Tab content */}
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 100 }} showsVerticalScrollIndicator={false}>
-        {activeTab === "Overview" && <OverviewTab destination={d} />}
-        {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
-        {activeTab === "Stay" && <StayTab destination={d} />}
-        {activeTab === "Budget" && <BudgetTab destination={d} />}
-        {activeTab === "Safety" && <SafetyTab destination={d} />}
-        {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
-      </ScrollView>
+      {/* Tab content — see keyboardHeight comment above for why this is
+          wrapped in KeyboardAvoidingView and gets extra bottom padding. */}
+      <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
+        <ScrollView
+          style={{ flex: 1 }}
+          contentContainerStyle={{ paddingBottom: 100 + (keyboardHeight > 0 ? keyboardHeight + KEYBOARD_GAP_BUFFER : 0) }}
+          showsVerticalScrollIndicator={false}
+        >
+          {activeTab === "Overview" && <OverviewTab destination={d} />}
+          {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
+          {activeTab === "Stay" && <StayTab destination={d} />}
+          {activeTab === "Budget" && <BudgetTab destination={d} />}
+          {activeTab === "Safety" && <SafetyTab destination={d} />}
+          {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
+        </ScrollView>
+      </KeyboardAvoidingView>
 
       {/* Sticky CTA */}
       <View style={{ position: "absolute", left: 0, right: 0, bottom: 0, paddingHorizontal: 16, paddingTop: 12, paddingBottom: Math.max(insets.bottom, 16), backgroundColor: withOpacity(c.bg, 0.97), borderTopWidth: 1, borderTopColor: c.borderSoft }}>
