@@ -11,8 +11,8 @@
  * both were closely related to content already shown elsewhere and read
  * as redundant as their own top-level tabs.
  */
-import { useEffect, useMemo, useState } from "react";
-import { View, Text, Pressable, ScrollView, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { View, Text, Pressable, ScrollView, KeyboardAvoidingView, Keyboard, Platform, TextInput, Dimensions, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
@@ -63,22 +63,44 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const safetyBg = getSafetyBg(d.womenSafety.score);
 
   // How to Reach's city search (ArriveSection) can end up hidden behind
-  // the keyboard: KeyboardAvoidingView's "padding" behavior (iOS) shrinks
-  // this ScrollView's own viewport so its built-in scroll-to-focused-input
-  // kicks in, but that can only scroll as far as there's actual content
-  // below the fold — if the tab content is short, there isn't enough
-  // scrollable room to clear the keyboard no matter what. Tracking the
-  // keyboard's real height ourselves and padding the scroll content by
-  // that much (same approach already proven out in PlanTrip/ChatStep.tsx,
-  // including the +16 buffer for Gboard's suggestion strip) guarantees
-  // there's always enough room to scroll the focused input clear, on
-  // both platforms.
+  // the keyboard. Relying on the OS to resize the window (Android's
+  // default windowSoftInputMode) or on ScrollView's built-in
+  // scroll-to-focused-input turned out not to be dependable here — Expo
+  // Go's own Activity controls the real windowSoftInputMode, not this
+  // app's config, so we can't assume "resize" actually applies. Instead
+  // this measures the focused input's real on-screen position once the
+  // keyboard's real height is known, and explicitly scrolls just far
+  // enough to clear it — deterministic on both platforms, independent of
+  // any native resize/pan behavior. scrollOffsetRef/focusedInputRef are
+  // refs (not state) since they're only read inside the keyboard-show
+  // callback, never rendered.
+  const scrollViewRef = useRef<ScrollView>(null);
+  const scrollOffsetRef = useRef(0);
+  const focusedInputRef = useRef<TextInput | null>(null);
   const [keyboardHeight, setKeyboardHeight] = useState(0);
   const KEYBOARD_GAP_BUFFER = 16;
+
+  const onSearchFocusChange = useCallback((ref: TextInput | null) => {
+    focusedInputRef.current = ref;
+  }, []);
+
   useEffect(() => {
     const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
     const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
-    const showSub = Keyboard.addListener(showEvt, (e) => setKeyboardHeight(e.endCoordinates?.height ?? 0));
+    const showSub = Keyboard.addListener(showEvt, (e) => {
+      const kbHeight = e.endCoordinates?.height ?? 0;
+      setKeyboardHeight(kbHeight);
+
+      const input = focusedInputRef.current;
+      if (!input) return;
+      input.measureInWindow((_x, y, _width, height) => {
+        const keyboardTop = Dimensions.get("window").height - kbHeight;
+        const overlap = y + height + KEYBOARD_GAP_BUFFER - keyboardTop;
+        if (overlap > 0) {
+          scrollViewRef.current?.scrollTo({ y: scrollOffsetRef.current + overlap, animated: true });
+        }
+      });
+    });
     const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardHeight(0));
     return () => {
       showSub.remove();
@@ -293,15 +315,21 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
       </View>
 
       {/* Tab content — see keyboardHeight comment above for why this is
-          wrapped in KeyboardAvoidingView and gets extra bottom padding. */}
+          wrapped in KeyboardAvoidingView, ref'd, and gets extra bottom
+          padding. */}
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <ScrollView
+          ref={scrollViewRef}
           style={{ flex: 1 }}
           contentContainerStyle={{ paddingBottom: 100 + (keyboardHeight > 0 ? keyboardHeight + KEYBOARD_GAP_BUFFER : 0) }}
           showsVerticalScrollIndicator={false}
+          onScroll={(e) => {
+            scrollOffsetRef.current = e.nativeEvent.contentOffset.y;
+          }}
+          scrollEventThrottle={16}
         >
           {activeTab === "Overview" && <OverviewTab destination={d} />}
-          {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
+          {activeTab === "How to Reach" && <HowToReachTab destination={d} onSearchFocusChange={onSearchFocusChange} />}
           {activeTab === "Stay" && <StayTab destination={d} />}
           {activeTab === "Budget" && <BudgetTab destination={d} />}
           {activeTab === "Safety" && <SafetyTab destination={d} />}

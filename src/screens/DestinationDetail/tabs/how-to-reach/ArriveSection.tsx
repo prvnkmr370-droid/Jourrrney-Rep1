@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
 import DestImage from "@/components/DestImage";
 import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon, MapPin } from "lucide-react-native";
@@ -14,14 +14,16 @@ import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
 interface Props {
   destination: Destination;
   guide?: JourneyGuide;
+  onSearchFocusChange?: (ref: TextInput | null) => void;
 }
 
-export default function ArriveSection({ destination: d, guide }: Props) {
+export default function ArriveSection({ destination: d, guide, onSearchFocusChange }: Props) {
   const c = useThemeColors();
   const originCity = useOriginStore((s) => s.originCity);
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
   const [sourceCity, setSourceCity] = useState(originCity);
   const [selectedTransport, setSelectedTransport] = useState(0);
+  const searchInputRef = useRef<TextInput>(null);
   const { locating, detect } = useDetectLocation();
   const [searchFocused, setSearchFocused] = useState(false);
   const [showMapPicker, setShowMapPicker] = useState(false);
@@ -73,10 +75,17 @@ export default function ArriveSection({ destination: d, guide }: Props) {
 
           <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: showSuggestions ? 0 : 10 }}>
             <TextInput
+              ref={searchInputRef}
               value={sourceCity}
               onChangeText={setSourceCity}
-              onFocus={() => setSearchFocused(true)}
-              onBlur={() => setSearchFocused(false)}
+              onFocus={() => {
+                setSearchFocused(true);
+                onSearchFocusChange?.(searchInputRef.current);
+              }}
+              onBlur={() => {
+                setSearchFocused(false);
+                onSearchFocusChange?.(null);
+              }}
               placeholder="Search any city — e.g. Hyderabad"
               placeholderTextColor={c.textMuted}
               style={{
