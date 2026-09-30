@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
 import DestImage from "@/components/DestImage";
-import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon } from "lucide-react-native";
+import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, Map as MapIcon, MapPin } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
@@ -89,7 +89,7 @@ export default function ArriveSection({ destination: d, guide }: Props) {
               disabled={locating}
               style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
             >
-              {locating ? <ActivityIndicator color={c.primary} size="small" /> : <Navigation color={c.primary} size={16} />}
+              {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
             </Pressable>
             <Pressable
               onPress={() => setShowMapPicker(true)}
