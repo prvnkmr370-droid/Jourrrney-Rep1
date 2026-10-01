@@ -68584,8 +68584,12 @@ export const DESTINATIONS: Destination[] = [
     gallery: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Shravanabelagola_Bahubali_wideframe.jpg/1280px-Shravanabelagola_Bahubali_wideframe.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shravanabelagola_Bahubali_closeup.jpg/1280px-Shravanabelagola_Bahubali_closeup.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/19/View_of_Akkana_Basadi_from_northeastern_side_at_Shravanabelagola.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/shravanabelagola_01.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/shravanabelagola_02.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/shravanabelagola_03.jpg",
     ],
-    imageCredit: "Photos: Wikimedia Commons — the Gomateshwara (Bahubali) monolith with pilgrims for scale (CC BY-SA 3.0) and a close-up of the statue's face (CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org), which gives the 58-ft height, the 981 CE date, Chavundaraya as builder, the 600+ steps, the 600+ inscriptions, and the 12-year Mahamastakabhisheka.",
+    imageCredit: "Photos: Wikimedia Commons — the Gomateshwara (Bahubali) monolith with pilgrims for scale (CC BY-SA 3.0), a close-up of the statue's face (CC BY-SA 3.0), and the Akkana Basadi on Chandragiri hill (HoysalaPhotos, CC BY-SA 3.0). Destination details verified against the official Karnataka Tourism site (karnatakatourism.org), which gives the 58-ft height, the 981 CE date, Chavundaraya as builder, the 600+ steps, the 600+ inscriptions, and the 12-year Mahamastakabhisheka.",
     visitingHours: { opens: "6:00 AM", closes: "6:30 PM", note: "Step-climbing to the summit statue is only allowed until 5 PM; the hill closes for a midday break in some listings, roughly 11:30 AM–3:30 PM." },
     category: ["Religious", "Heritage", "History"],
     bestSeason: "October – February",
