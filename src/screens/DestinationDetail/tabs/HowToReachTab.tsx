@@ -10,7 +10,7 @@
  * "Places Near X" section already on the Overview tab.
  */
 import { useState } from "react";
-import { View, Text, Pressable, ScrollView, type TextInput } from "react-native";
+import { View, Text, Pressable, ScrollView } from "react-native";
 import { Plane, BusFront, Luggage, TriangleAlert, Building2, ShieldAlert } from "lucide-react-native";
 import { getJourneyGuide } from "@/data/journeyGuides";
 import type { Destination } from "@/data/destinations";
@@ -33,12 +33,7 @@ const SECTIONS = [
 
 type Section = (typeof SECTIONS)[number]["id"] | "advisory";
 
-interface Props {
-  destination: Destination;
-  onSearchFocusChange?: (ref: TextInput | null) => void;
-}
-
-export default function HowToReachTab({ destination: d, onSearchFocusChange }: Props) {
+export default function HowToReachTab({ destination: d }: { destination: Destination }) {
   const c = useThemeColors();
   const guide = getJourneyGuide(d.id);
   const [section, setSection] = useState<Section>("arrive");
@@ -72,7 +67,7 @@ export default function HowToReachTab({ destination: d, onSearchFocusChange }: P
       </ScrollView>
 
       <View style={{ padding: 20 }}>
-        {section === "arrive" && <ArriveSection destination={d} guide={guide} onSearchFocusChange={onSearchFocusChange} />}
+        {section === "arrive" && <ArriveSection destination={d} guide={guide} />}
         {section === "localTransport" && <LocalTransportSection destination={d} />}
         {section === "weather" && <WeatherSection destination={d} guide={guide} />}
         {section === "hurdles" && <HurdlesSection destination={d} guide={guide} />}

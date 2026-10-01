@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
-import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
+import { useState } from "react";
+import { View, Text, Pressable, TextInput, ActivityIndicator, Modal, ScrollView } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb, ChevronUp, ChevronDown } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
@@ -13,25 +14,26 @@ import { TravelModeIcon } from "./travelModeIcon";
 interface Props {
   destination: Destination;
   guide?: JourneyGuide;
-  onSearchFocusChange?: (ref: TextInput | null) => void;
 }
 
-export default function ArriveSection({ destination: d, guide, onSearchFocusChange }: Props) {
+export default function ArriveSection({ destination: d, guide }: Props) {
   const c = useThemeColors();
+  const insets = useSafeAreaInsets();
   const originCity = useOriginStore((s) => s.originCity);
   const setOriginCity = useOriginStore((s) => s.setOriginCity);
   const [sourceCity, setSourceCity] = useState(originCity);
   const [selectedTransport, setSelectedTransport] = useState(0);
-  const searchInputRef = useRef<TextInput>(null);
   const { locating, detect } = useDetectLocation();
-  const [searchFocused, setSearchFocused] = useState(false);
+  // Which search is open in the full-screen overlay below — typing (and
+  // the keyboard) happens there, over where the hero image sits, instead
+  // of in a small inline field that the keyboard fights for space with.
+  const [activeSearch, setActiveSearch] = useState<"origin" | "stop" | null>(null);
   const { suggestions } = useCitySearch(sourceCity);
-  const showSuggestions = searchFocused && suggestions.length > 0;
 
   const pickSuggestion = (label: string) => {
     setSourceCity(label);
     setOriginCity(label);
-    setSearchFocused(false);
+    setActiveSearch(null);
   };
 
   // Waypoints between the origin and this destination — kept local to the
@@ -40,11 +42,10 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
   // map; there's no map view yet, just the ability to build the stop
   // list a map feature would eventually read.
   const [stops, setStops] = useState<Destination[]>([]);
-  const [showStopPicker, setShowStopPicker] = useState(false);
   const [stopQuery, setStopQuery] = useState("");
   const addStop = (stop: Destination) => {
     setStops((prev) => [...prev, stop]);
-    setShowStopPicker(false);
+    setActiveSearch(null);
     setStopQuery("");
   };
   const removeStop = (id: string) => setStops((prev) => prev.filter((s) => s.id !== id));
@@ -97,77 +98,33 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
         <View style={{ padding: 16, backgroundColor: rgba(c.primary, 0.06), borderRadius: 16 }}>
           <SectionLabel color={c.primary}>Plan Your Route</SectionLabel>
 
-          {/* Origin — teal dot marks the start of the journey; the dotted
-              line below ties it to whatever comes next. zIndex/elevation
-              only matter while suggestions are open, so they float above
-              the stops/destination rows below instead of pushing them
-              down the card with every keystroke. */}
-          <View style={{ position: "relative", zIndex: searchFocused ? 30 : 1 }}>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-              <RouteMarker color={c.primary} />
-              <TextInput
-                ref={searchInputRef}
-                value={sourceCity}
-                onChangeText={setSourceCity}
-                onFocus={() => {
-                  setSearchFocused(true);
-                  onSearchFocusChange?.(searchInputRef.current);
-                }}
-                onBlur={() => {
-                  setSearchFocused(false);
-                  onSearchFocusChange?.(null);
-                }}
-                placeholder="Search any city — e.g. Hyderabad"
-                placeholderTextColor={c.textMuted}
-                style={{
-                  flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
-                  fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
-                }}
-              />
-              <Pressable
-                onPress={detectLocation}
-                disabled={locating}
-                style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
+          {/* Origin — tapping the field opens the full-screen search
+              overlay below (over where the hero image sits) instead of
+              typing inline, so the keyboard never has to compete with
+              this card for space. The pin button still detects location
+              with one tap, no need to open the overlay for that. */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <RouteMarker color={c.primary} />
+            <Pressable
+              onPress={() => setActiveSearch("origin")}
+              style={{
+                flex: 1, justifyContent: "center", backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
+              }}
+            >
+              <Text
+                style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: sourceCity ? c.textPrimary : c.textMuted }}
+                numberOfLines={1}
               >
-                {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
-              </Pressable>
-            </View>
-
-            {/* Live search results — tapping one sets both the visible
-                field and the shared origin city, same as detecting
-                location does. Floats over whatever's below rather than
-                displacing it. */}
-            {showSuggestions && (
-              <View
-                style={{
-                  position: "absolute", top: "100%", marginTop: 8, left: 30, right: 0,
-                  backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden",
-                  shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 6, shadowOffset: { width: 0, height: 2 }, elevation: 6,
-                }}
-              >
-                {suggestions.map((s, i) => {
-                  const label = formatCitySuggestion(s);
-                  return (
-                    <Pressable
-                      key={s.id}
-                      // onPressIn fires before the TextInput's onBlur closes
-                      // this list — onPress alone would never get a chance to
-                      // fire, since the field loses focus (and hides this
-                      // list) first.
-                      onPressIn={() => pickSuggestion(label)}
-                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
-                    >
-                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{s.name}</Text>
-                      {(s.admin1 || s.country) && (
-                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
-                          {[s.admin1, s.country].filter(Boolean).join(", ")}
-                        </Text>
-                      )}
-                    </Pressable>
-                  );
-                })}
-              </View>
-            )}
+                {sourceCity || "Search any city — e.g. Hyderabad"}
+              </Text>
+            </Pressable>
+            <Pressable
+              onPress={detectLocation}
+              disabled={locating}
+              style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
+            >
+              {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
+            </Pressable>
           </View>
 
           <RouteConnector color={c.border} />
@@ -203,77 +160,20 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
             </View>
           ))}
 
-          {/* Add a stop — the search input itself stays in normal flow
-              (it's taking the dashed button's place), but its results
-              float over the destination row below instead of pushing it
-              further down the card with every keystroke. */}
-          <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10, position: "relative", zIndex: showStopPicker ? 30 : 1 }}>
+          {/* Add a stop — opens the same full-screen search overlay,
+              in "stop" mode. */}
+          <View style={{ flexDirection: "row", gap: 10 }}>
             <View style={{ width: 20 }} />
-            <View style={{ flex: 1 }}>
-              {showStopPicker ? (
-                <TextInput
-                  value={stopQuery}
-                  onChangeText={setStopQuery}
-                  autoFocus
-                  placeholder="Type a place name — e.g. Mysuru"
-                  placeholderTextColor={c.textMuted}
-                  style={{
-                    backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
-                    fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
-                  }}
-                />
-              ) : (
-                <Pressable
-                  onPress={() => setShowStopPicker(true)}
-                  style={{
-                    flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, height: 40, borderRadius: 12,
-                    borderWidth: 1.5, borderColor: rgba(c.primary, 0.35), borderStyle: "dashed",
-                  }}
-                >
-                  <Plus color={c.primary} size={14} />
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>Add a stop along the way</Text>
-                </Pressable>
-              )}
-            </View>
-
-            {showStopPicker && (
-              <View
-                style={{
-                  position: "absolute", top: "100%", marginTop: 8, left: 30, right: 0, gap: 8,
-                  backgroundColor: c.surfaceAlt, borderRadius: 12, padding: 8,
-                  shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 6, shadowOffset: { width: 0, height: 2 }, elevation: 6,
-                }}
-              >
-                {stopMatches.length > 0 && (
-                  <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
-                    {stopMatches.map((dest, i) => (
-                      <Pressable
-                        key={dest.id}
-                        onPress={() => addStop(dest)}
-                        style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
-                      >
-                        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
-                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
-                      </Pressable>
-                    ))}
-                  </View>
-                )}
-                {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
-                    No matches for "{stopQuery.trim()}"
-                  </Text>
-                )}
-                <Pressable
-                  onPress={() => {
-                    setShowStopPicker(false);
-                    setStopQuery("");
-                  }}
-                  style={{ alignSelf: "flex-start", paddingHorizontal: 2 }}
-                >
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
-                </Pressable>
-              </View>
-            )}
+            <Pressable
+              onPress={() => setActiveSearch("stop")}
+              style={{
+                flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, height: 40, borderRadius: 12,
+                borderWidth: 1.5, borderColor: rgba(c.primary, 0.35), borderStyle: "dashed",
+              }}
+            >
+              <Plus color={c.primary} size={14} />
+              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>Add a stop along the way</Text>
+            </Pressable>
           </View>
 
           <RouteConnector color={c.border} />
@@ -434,6 +334,83 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
           </View>
         </>
       ) : null}
+
+      {/* Full-screen search overlay — covers the hero image area (and
+          everything else) while the user is actively searching for an
+          origin city or a stop, so the keyboard never has to share space
+          with the rest of the route card, and the full suggestions list
+          is always visible. */}
+      <Modal visible={activeSearch !== null} animationType="slide" onRequestClose={() => setActiveSearch(null)}>
+        <View style={{ flex: 1, backgroundColor: c.bg, paddingTop: insets.top }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10, paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: c.border }}>
+            <Pressable onPress={() => setActiveSearch(null)} hitSlop={8}>
+              <X color={c.textSecondary} size={20} />
+            </Pressable>
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>
+              {activeSearch === "origin" ? "Where are you starting from?" : "Add a stop along the way"}
+            </Text>
+          </View>
+
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10, padding: 16 }}>
+            <TextInput
+              autoFocus
+              value={activeSearch === "origin" ? sourceCity : stopQuery}
+              onChangeText={activeSearch === "origin" ? setSourceCity : setStopQuery}
+              placeholder={activeSearch === "origin" ? "Search any city — e.g. Hyderabad" : "Type a place name — e.g. Mysuru"}
+              placeholderTextColor={c.textMuted}
+              style={{
+                flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 12, height: 48, paddingHorizontal: 14,
+                fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textPrimary,
+              }}
+            />
+            {activeSearch === "origin" && (
+              <Pressable
+                onPress={detectLocation}
+                disabled={locating}
+                style={{ width: 48, height: 48, borderRadius: 12, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
+              >
+                {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={18} />}
+              </Pressable>
+            )}
+          </View>
+
+          <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }} keyboardShouldPersistTaps="handled">
+            {activeSearch === "origin"
+              ? suggestions.map((s) => {
+                  const label = formatCitySuggestion(s);
+                  return (
+                    <Pressable
+                      key={s.id}
+                      onPress={() => pickSuggestion(label)}
+                      style={{ paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}
+                    >
+                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 14, color: c.textPrimary }}>{s.name}</Text>
+                      {(s.admin1 || s.country) && (
+                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginTop: 2 }}>
+                          {[s.admin1, s.country].filter(Boolean).join(", ")}
+                        </Text>
+                      )}
+                    </Pressable>
+                  );
+                })
+              : stopMatches.map((dest) => (
+                  <Pressable
+                    key={dest.id}
+                    onPress={() => addStop(dest)}
+                    style={{ paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}
+                  >
+                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 14, color: c.textPrimary }}>{dest.name}</Text>
+                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginTop: 2 }}>{dest.state}</Text>
+                  </Pressable>
+                ))}
+            {activeSearch === "stop" && stopMatchQuery.length > 0 && stopMatches.length === 0 && (
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, paddingVertical: 14 }}>
+                No matches for "{stopQuery.trim()}"
+              </Text>
+            )}
+          </ScrollView>
+        </View>
+      </Modal>
     </View>
   );
 }
