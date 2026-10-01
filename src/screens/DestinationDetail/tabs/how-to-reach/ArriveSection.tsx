@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
-import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb } from "lucide-react-native";
+import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb, ChevronUp, ChevronDown } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
@@ -48,6 +48,18 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
     setStopQuery("");
   };
   const removeStop = (id: string) => setStops((prev) => prev.filter((s) => s.id !== id));
+  // Lets a user plan their preferred visiting order rather than only the
+  // order they happened to add stops in — swaps the stop with its
+  // immediate neighbor, a no-op at either end of the list.
+  const moveStop = (index: number, direction: -1 | 1) => {
+    setStops((prev) => {
+      const target = index + direction;
+      if (target < 0 || target >= prev.length) return prev;
+      const next = [...prev];
+      [next[index], next[target]] = [next[target], next[index]];
+      return next;
+    });
+  };
   // Filtered by what's typed, not a full render of every destination —
   // that grid of ~1,700 image cards (one DestImage each, loaded over the
   // network) was the actual source of the slowdown being reported, not
@@ -81,7 +93,12 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
         <View style={{ padding: 16, backgroundColor: rgba(c.primary, 0.06) }}>
           <SectionLabel color={c.primary}>Plan Your Route</SectionLabel>
 
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: showSuggestions ? 0 : 10 }}>
+          {/* Origin — teal dot marks the start of the journey; the dotted
+              line below ties it to whatever comes next (suggestions aside,
+              which is a transient overlay on this field, not a journey
+              step). */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <RouteMarker color={c.primary} />
             <TextInput
               ref={searchInputRef}
               value={sourceCity}
@@ -112,8 +129,8 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
 
           {/* Live search results — tapping one sets both the visible field
               and the shared origin city, same as detecting location does. */}
-          {showSuggestions && (
-            <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, marginBottom: 10, overflow: "hidden" }}>
+          {showSuggestions ? (
+            <View style={{ marginLeft: 30, marginTop: 8, backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
               {suggestions.map((s, i) => {
                 const label = formatCitySuggestion(s);
                 return (
@@ -136,97 +153,122 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                 );
               })}
             </View>
+          ) : (
+            <RouteConnector color={c.border} />
           )}
 
-          {/* Waypoints — additional places to visit along the way */}
-          {stops.length > 0 && (
-            <View style={{ gap: 8, marginBottom: 10 }}>
-              {stops.map((stop, i) => (
+          {/* Waypoints — additional places to visit along the way, in the
+              order the user wants to visit them (not just the order they
+              were added — the up/down arrows reorder in place). */}
+          {stops.map((stop, i) => (
+            <View key={stop.id}>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+                <RouteMarker color={c.textMuted} size={8} />
                 <View
-                  key={stop.id}
                   style={{
-                    flexDirection: "row", alignItems: "center", gap: 8, height: 44, borderRadius: 12,
-                    paddingHorizontal: 14, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border,
+                    flex: 1, flexDirection: "row", alignItems: "center", gap: 2, height: 44, borderRadius: 12,
+                    paddingLeft: 14, paddingRight: 6, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border,
                   }}
                 >
-                  <Text style={{ fontSize: 12, color: c.textSecondary, fontFamily: "Poppins_700Bold" }}>{i + 1}</Text>
-                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, flex: 1 }}>
+                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, flex: 1 }} numberOfLines={1}>
                     {stop.name}, {stop.state}
                   </Text>
-                  <Pressable onPress={() => removeStop(stop.id)} hitSlop={8}>
+                  <Pressable onPress={() => moveStop(i, -1)} disabled={i === 0} hitSlop={6} style={{ padding: 6, opacity: i === 0 ? 0.3 : 1 }}>
+                    <ChevronUp color={c.textSecondary} size={16} />
+                  </Pressable>
+                  <Pressable onPress={() => moveStop(i, 1)} disabled={i === stops.length - 1} hitSlop={6} style={{ padding: 6, opacity: i === stops.length - 1 ? 0.3 : 1 }}>
+                    <ChevronDown color={c.textSecondary} size={16} />
+                  </Pressable>
+                  <Pressable onPress={() => removeStop(stop.id)} hitSlop={6} style={{ padding: 6 }}>
                     <X color={c.textMuted} size={16} />
                   </Pressable>
                 </View>
-              ))}
+              </View>
+              <RouteConnector color={c.border} />
             </View>
-          )}
+          ))}
 
-          <View
-            style={{
-              flexDirection: "row", alignItems: "center", gap: 8, height: 44, borderRadius: 12,
-              paddingHorizontal: 14, backgroundColor: rgba(c.primary, 0.08), borderWidth: 1, borderColor: rgba(c.primary, 0.2),
-              marginBottom: 10,
-            }}
-          >
-            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, flex: 1 }}>
-              {d.name}, {d.state}
-            </Text>
+          {/* Add a stop */}
+          <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10 }}>
+            <View style={{ width: 20 }} />
+            <View style={{ flex: 1 }}>
+              {showStopPicker ? (
+                <View style={{ gap: 8 }}>
+                  <TextInput
+                    value={stopQuery}
+                    onChangeText={setStopQuery}
+                    autoFocus
+                    placeholder="Type a place name — e.g. Mysuru"
+                    placeholderTextColor={c.textMuted}
+                    style={{
+                      backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
+                      fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
+                    }}
+                  />
+                  {stopMatches.length > 0 && (
+                    <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
+                      {stopMatches.map((dest, i) => (
+                        <Pressable
+                          key={dest.id}
+                          onPress={() => addStop(dest)}
+                          style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+                        >
+                          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
+                          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
+                        </Pressable>
+                      ))}
+                    </View>
+                  )}
+                  {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
+                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
+                      No matches for "{stopQuery.trim()}"
+                    </Text>
+                  )}
+                  <Pressable
+                    onPress={() => {
+                      setShowStopPicker(false);
+                      setStopQuery("");
+                    }}
+                    style={{ alignSelf: "flex-start" }}
+                  >
+                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
+                  </Pressable>
+                </View>
+              ) : (
+                <Pressable
+                  onPress={() => setShowStopPicker(true)}
+                  style={{
+                    flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, height: 40, borderRadius: 12,
+                    borderWidth: 1.5, borderColor: rgba(c.primary, 0.35), borderStyle: "dashed",
+                  }}
+                >
+                  <Plus color={c.primary} size={14} />
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>Add a stop along the way</Text>
+                </Pressable>
+              )}
+            </View>
           </View>
 
-          {showStopPicker ? (
-            <View style={{ gap: 8 }}>
-              <TextInput
-                value={stopQuery}
-                onChangeText={setStopQuery}
-                autoFocus
-                placeholder="Type a place name — e.g. Mysuru"
-                placeholderTextColor={c.textMuted}
-                style={{
-                  backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
-                  fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
-                }}
-              />
-              {stopMatches.length > 0 && (
-                <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
-                  {stopMatches.map((dest, i) => (
-                    <Pressable
-                      key={dest.id}
-                      onPress={() => addStop(dest)}
-                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
-                    >
-                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
-                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
-                    </Pressable>
-                  ))}
-                </View>
-              )}
-              {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
-                <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
-                  No matches for "{stopQuery.trim()}"
-                </Text>
-              )}
-              <Pressable
-                onPress={() => {
-                  setShowStopPicker(false);
-                  setStopQuery("");
-                }}
-                style={{ alignSelf: "flex-start" }}
-              >
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
-              </Pressable>
-            </View>
-          ) : (
-            <Pressable
-              onPress={() => setShowStopPicker(true)}
+          <RouteConnector color={c.border} />
+
+          {/* Destination — fixed to this page's own destination, so it's
+              styled distinctly (teal square, "Fixed" tag) from the
+              editable rows above rather than looking like just another
+              input. */}
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <RouteMarker color={c.teal} shape="square" />
+            <View
               style={{
-                flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, height: 40, borderRadius: 12,
-                borderWidth: 1.5, borderColor: rgba(c.primary, 0.35), borderStyle: "dashed",
+                flex: 1, flexDirection: "row", alignItems: "center", gap: 8, height: 44, borderRadius: 12,
+                paddingHorizontal: 14, backgroundColor: rgba(c.teal, 0.08), borderWidth: 1, borderColor: rgba(c.teal, 0.25),
               }}
             >
-              <Plus color={c.primary} size={14} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>Add a stop along the way</Text>
-            </Pressable>
-          )}
+              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary, flex: 1 }} numberOfLines={1}>
+                {d.name}, {d.state}
+              </Text>
+              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 9, letterSpacing: 0.5, color: c.teal }}>FIXED</Text>
+            </View>
+          </View>
         </View>
       </Card>
 
@@ -367,4 +409,23 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
       ) : null}
     </View>
   );
+}
+
+/** A 20px-wide gutter with a centered dot/square — the "stop marker" on
+ * the route line. Always 20px wide regardless of `size` so every row's
+ * marker lines up in the same column, and RouteConnector's own
+ * marginLeft (half of 20, minus half its own width) lines up under it. */
+function RouteMarker({ color, size = 10, shape = "circle" }: { color: string; size?: number; shape?: "circle" | "square" }) {
+  return (
+    <View style={{ width: 20, alignItems: "center" }}>
+      <View style={{ width: size, height: size, borderRadius: shape === "circle" ? size / 2 : 3, backgroundColor: color }} />
+    </View>
+  );
+}
+
+/** The short connecting segment between two route rows, centered under
+ * RouteMarker's dot (column is 20px wide, so a 2px line sits at
+ * marginLeft: 9 to center itself at x=10). */
+function RouteConnector({ color }: { color: string }) {
+  return <View style={{ width: 2, height: 14, marginLeft: 9, backgroundColor: color }} />;
 }
