@@ -88,74 +88,89 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
 
   return (
     <View style={{ gap: 16 }}>
-      {/* Route planner */}
-      <Card borderColor={c.primary}>
-        <View style={{ padding: 16, backgroundColor: rgba(c.primary, 0.06) }}>
+      {/* Route planner. Not wrapped in the shared Card component here —
+          Card sets overflow:"hidden" (needed elsewhere to clip images to
+          its rounded corners), which would clip the floating dropdowns
+          below at this box's edge instead of letting them overlay the
+          content beneath them. */}
+      <View style={{ backgroundColor: c.surface, borderRadius: 16, borderWidth: 1, borderColor: c.primary }}>
+        <View style={{ padding: 16, backgroundColor: rgba(c.primary, 0.06), borderRadius: 16 }}>
           <SectionLabel color={c.primary}>Plan Your Route</SectionLabel>
 
           {/* Origin — teal dot marks the start of the journey; the dotted
-              line below ties it to whatever comes next (suggestions aside,
-              which is a transient overlay on this field, not a journey
-              step). */}
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-            <RouteMarker color={c.primary} />
-            <TextInput
-              ref={searchInputRef}
-              value={sourceCity}
-              onChangeText={setSourceCity}
-              onFocus={() => {
-                setSearchFocused(true);
-                onSearchFocusChange?.(searchInputRef.current);
-              }}
-              onBlur={() => {
-                setSearchFocused(false);
-                onSearchFocusChange?.(null);
-              }}
-              placeholder="Search any city — e.g. Hyderabad"
-              placeholderTextColor={c.textMuted}
-              style={{
-                flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
-                fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
-              }}
-            />
-            <Pressable
-              onPress={detectLocation}
-              disabled={locating}
-              style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
-            >
-              {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
-            </Pressable>
+              line below ties it to whatever comes next. zIndex/elevation
+              only matter while suggestions are open, so they float above
+              the stops/destination rows below instead of pushing them
+              down the card with every keystroke. */}
+          <View style={{ position: "relative", zIndex: searchFocused ? 30 : 1 }}>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+              <RouteMarker color={c.primary} />
+              <TextInput
+                ref={searchInputRef}
+                value={sourceCity}
+                onChangeText={setSourceCity}
+                onFocus={() => {
+                  setSearchFocused(true);
+                  onSearchFocusChange?.(searchInputRef.current);
+                }}
+                onBlur={() => {
+                  setSearchFocused(false);
+                  onSearchFocusChange?.(null);
+                }}
+                placeholder="Search any city — e.g. Hyderabad"
+                placeholderTextColor={c.textMuted}
+                style={{
+                  flex: 1, backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
+                  fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
+                }}
+              />
+              <Pressable
+                onPress={detectLocation}
+                disabled={locating}
+                style={{ width: 40, height: 40, borderRadius: 10, backgroundColor: rgba(c.primary, 0.12), alignItems: "center", justifyContent: "center" }}
+              >
+                {locating ? <ActivityIndicator color={c.primary} size="small" /> : <MapPin color={c.primary} size={16} />}
+              </Pressable>
+            </View>
+
+            {/* Live search results — tapping one sets both the visible
+                field and the shared origin city, same as detecting
+                location does. Floats over whatever's below rather than
+                displacing it. */}
+            {showSuggestions && (
+              <View
+                style={{
+                  position: "absolute", top: "100%", marginTop: 8, left: 30, right: 0,
+                  backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden",
+                  shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 6, shadowOffset: { width: 0, height: 2 }, elevation: 6,
+                }}
+              >
+                {suggestions.map((s, i) => {
+                  const label = formatCitySuggestion(s);
+                  return (
+                    <Pressable
+                      key={s.id}
+                      // onPressIn fires before the TextInput's onBlur closes
+                      // this list — onPress alone would never get a chance to
+                      // fire, since the field loses focus (and hides this
+                      // list) first.
+                      onPressIn={() => pickSuggestion(label)}
+                      style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+                    >
+                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{s.name}</Text>
+                      {(s.admin1 || s.country) && (
+                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
+                          {[s.admin1, s.country].filter(Boolean).join(", ")}
+                        </Text>
+                      )}
+                    </Pressable>
+                  );
+                })}
+              </View>
+            )}
           </View>
 
-          {/* Live search results — tapping one sets both the visible field
-              and the shared origin city, same as detecting location does. */}
-          {showSuggestions ? (
-            <View style={{ marginLeft: 30, marginTop: 8, backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
-              {suggestions.map((s, i) => {
-                const label = formatCitySuggestion(s);
-                return (
-                  <Pressable
-                    key={s.id}
-                    // onPressIn fires before the TextInput's onBlur closes
-                    // this list — onPress alone would never get a chance to
-                    // fire, since the field loses focus (and hides this
-                    // list) first.
-                    onPressIn={() => pickSuggestion(label)}
-                    style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
-                  >
-                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{s.name}</Text>
-                    {(s.admin1 || s.country) && (
-                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
-                        {[s.admin1, s.country].filter(Boolean).join(", ")}
-                      </Text>
-                    )}
-                  </Pressable>
-                );
-              })}
-            </View>
-          ) : (
-            <RouteConnector color={c.border} />
-          )}
+          <RouteConnector color={c.border} />
 
           {/* Waypoints — additional places to visit along the way, in the
               order the user wants to visit them (not just the order they
@@ -188,52 +203,25 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
             </View>
           ))}
 
-          {/* Add a stop */}
-          <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10 }}>
+          {/* Add a stop — the search input itself stays in normal flow
+              (it's taking the dashed button's place), but its results
+              float over the destination row below instead of pushing it
+              further down the card with every keystroke. */}
+          <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10, position: "relative", zIndex: showStopPicker ? 30 : 1 }}>
             <View style={{ width: 20 }} />
             <View style={{ flex: 1 }}>
               {showStopPicker ? (
-                <View style={{ gap: 8 }}>
-                  <TextInput
-                    value={stopQuery}
-                    onChangeText={setStopQuery}
-                    autoFocus
-                    placeholder="Type a place name — e.g. Mysuru"
-                    placeholderTextColor={c.textMuted}
-                    style={{
-                      backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
-                      fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
-                    }}
-                  />
-                  {stopMatches.length > 0 && (
-                    <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
-                      {stopMatches.map((dest, i) => (
-                        <Pressable
-                          key={dest.id}
-                          onPress={() => addStop(dest)}
-                          style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
-                        >
-                          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
-                          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
-                        </Pressable>
-                      ))}
-                    </View>
-                  )}
-                  {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
-                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
-                      No matches for "{stopQuery.trim()}"
-                    </Text>
-                  )}
-                  <Pressable
-                    onPress={() => {
-                      setShowStopPicker(false);
-                      setStopQuery("");
-                    }}
-                    style={{ alignSelf: "flex-start" }}
-                  >
-                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
-                  </Pressable>
-                </View>
+                <TextInput
+                  value={stopQuery}
+                  onChangeText={setStopQuery}
+                  autoFocus
+                  placeholder="Type a place name — e.g. Mysuru"
+                  placeholderTextColor={c.textMuted}
+                  style={{
+                    backgroundColor: c.surfaceAlt, borderRadius: 12, height: 44, paddingHorizontal: 14,
+                    fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textPrimary,
+                  }}
+                />
               ) : (
                 <Pressable
                   onPress={() => setShowStopPicker(true)}
@@ -247,6 +235,45 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
                 </Pressable>
               )}
             </View>
+
+            {showStopPicker && (
+              <View
+                style={{
+                  position: "absolute", top: "100%", marginTop: 8, left: 30, right: 0, gap: 8,
+                  backgroundColor: c.surfaceAlt, borderRadius: 12, padding: 8,
+                  shadowColor: "#000", shadowOpacity: 0.15, shadowRadius: 6, shadowOffset: { width: 0, height: 2 }, elevation: 6,
+                }}
+              >
+                {stopMatches.length > 0 && (
+                  <View style={{ backgroundColor: c.surface, borderRadius: 12, borderWidth: 1, borderColor: c.border, overflow: "hidden" }}>
+                    {stopMatches.map((dest, i) => (
+                      <Pressable
+                        key={dest.id}
+                        onPress={() => addStop(dest)}
+                        style={{ paddingHorizontal: 14, paddingVertical: 10, borderTopWidth: i > 0 ? 1 : 0, borderTopColor: c.borderSoft }}
+                      >
+                        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
+                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
+                      </Pressable>
+                    ))}
+                  </View>
+                )}
+                {stopMatchQuery.length > 0 && stopMatches.length === 0 && (
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 2 }}>
+                    No matches for "{stopQuery.trim()}"
+                  </Text>
+                )}
+                <Pressable
+                  onPress={() => {
+                    setShowStopPicker(false);
+                    setStopQuery("");
+                  }}
+                  style={{ alignSelf: "flex-start", paddingHorizontal: 2 }}
+                >
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.textSecondary }}>Cancel</Text>
+                </Pressable>
+              </View>
+            )}
           </View>
 
           <RouteConnector color={c.border} />
@@ -270,7 +297,7 @@ export default function ArriveSection({ destination: d, guide, onSearchFocusChan
             </View>
           </View>
         </View>
-      </Card>
+      </View>
 
       {sourceCity.trim().length > 0 && (
         <>
