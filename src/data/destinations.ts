@@ -12405,6 +12405,68 @@ export const DESTINATIONS: Destination[] = [
   },
 
   {
+    id: "sandur",
+    name: "Sandur",
+    state: "Karnataka",
+    hidden: true,
+    tagline: "The Ghorpades' Hidden Temple Valley",
+    description: "Sandur was a former princely state ruled by the Maratha Ghorpade dynasty from the early 18th century until Independence, tucked into a valley ringed by the iron-ore hills of the Bellary region — its royal seat, Shivavilas Palace, still stands as the family's former residence. Ten kilometres away, on the wooded Swamimale hill at Krauncha Giri, stands Sandur's real draw: a compound of two protected ancient temples. The Parvati Temple (7th–8th century, built under the Badami Chalukyas) has an unusual apsidal shrine that art historians consider the more architecturally significant of the two; beside it stands the Kumaraswamy Temple (8th–10th century, Rashtrakuta period), dedicated to Kartikeya and traditionally held to be his first shrine in South India. Both temples were closed to women until October 1996, when M.Y. Ghorpade — Sandur's titular ruler and a serving state minister — personally lifted the ban.",
+    image: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_01.jpg",
+    heroImage: "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_01.jpg",
+    gallery: [
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_01.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_04.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_02.jpg",
+      "https://raw.githubusercontent.com/prvnkmr370-droid/Jourrrney-Rep1/main/assets/destinations/karnataka/sandur_03.jpg",
+    ],
+    category: ["Heritage", "History"],
+    bestSeason: "October – March",
+    duration: "Half day (day trip from Hospet/Hampi or Ballari)",
+    highlights: [
+      { name: "Kumaraswamy Temple (8th–10th century, Rashtrakuta)" },
+      { name: "Parvati Temple (7th–8th century) — rare apsidal shrine" },
+      { name: "Shivavilas Palace, the Ghorpade royal residence" },
+      { name: "Narihalla Dam and reservoir" },
+      { name: "Hampi", id: "hampi" },
+    ],
+    transport: [
+      { mode: "Road", icon: "🚗", fromDelhi: "Fly to Hubballi or Bengaluru, then 4–5h drive", fromMumbai: "Fly to Hubballi, then 3h drive", fromBangalore: "6–7h drive (320 km) via Hospet", duration: "~35 km / 1h from Hospet (Hampi's gateway town)", costRange: "₹300–₹600 bus Hospet–Sandur; ₹800–₹1,200 cab", tips: "Easiest done as a day trip from Hospet or Hampi rather than on its own — there's little reason to base yourself in Sandur overnight." },
+      { mode: "Train", icon: "🚂", fromDelhi: "—", fromMumbai: "—", fromBangalore: "Toranagal station (30 km), on the Hubli–Guntakal line, with daily trains from both", duration: "~30 km from Toranagal station", costRange: "₹100–₹300", tips: "Hospet Junction is a better-connected alternative if Toranagal's limited daily trains don't line up with your schedule." },
+    ],
+    accommodation: [
+      { type: "Heritage", priceRange: "₹4,000–₹8,000/night", examples: ["Shivavilas Palace"], description: "The Ghorpade family's former royal residence, now run as a heritage hotel in Sandur town." },
+    ],
+    localTransport: [
+      { mode: "Walking", cost: "Free", notes: "The Parvati and Kumaraswamy temples share one compound at Krauncha Giri — fully walkable once there", available: true },
+      { mode: "Auto Rickshaw", cost: "₹200–₹400 return", notes: "From Sandur town to Krauncha Giri (10 km) and back, including wait time", available: true },
+    ],
+    nearbyPlaces: [
+      { name: "Hampi", distance: "~35 km", type: "UNESCO Heritage", isHidden: false, id: "hampi" },
+      { name: "Hospet", distance: "~35 km", type: "Town", isHidden: true },
+    ],
+    budgetBreakdown: [
+      { tier: "budget", label: "Day Trip", perDayPerPerson: 600, accommodation: 0, food: 150, transport: 400, activities: 50 },
+    ],
+    defaultItinerary: [
+      { day: 1, title: "Sandur Day Trip", morning: "Drive or auto from Hospet to Sandur town; see Shivavilas Palace from outside, then continue 10 km to Krauncha Giri.", afternoon: "Visit the twin temples — the Parvati Temple's unusual apsidal shrine, then the Kumaraswamy Temple next to it.", evening: "Stop at Narihalla Dam on the way back, then return to Hospet or Hampi for the night.", stay: "Day trip — stay in Hospet or Hampi", meals: "Simple meals in Sandur town (₹80–₹150)", tips: "Combine with Hampi rather than visiting on its own — Sandur alone is a half-day stop, not worth a dedicated overnight for most travelers." },
+    ],
+    womenSafety: {
+      score: 7,
+      level: "Safe",
+      highlights: ["Quiet small-town setting with low crime", "Temple compound has a caretaker present during visiting hours"],
+      precautions: ["Limited tourist infrastructure outside the temple complex", "Few English speakers in Sandur town — carry the temple's name written in Kannada if asking for directions"],
+      soloTips: ["Visit during daylight hours only", "Arrange a return auto/cab before heading to Krauncha Giri — service is sparse"],
+      emergencyContacts: [{ label: "Police", number: "100" }, { label: "Women Helpline", number: "1091" }],
+      safeZones: ["Temple compound", "Sandur town center"],
+      avoidAreas: ["Unlit stretches of the Krauncha Giri road after dark"],
+    },
+    rating: 4.4,
+    reviews: 420,
+    mustEat: ["Jolada Rotti (jowar flatbread)", "Local Karnataka thali", "Filter coffee"],
+    packingTips: ["Comfortable walking shoes", "Water bottle", "Modest clothing for temple visits", "Camera"],
+  },
+
+  {
     id: "mysuru",
     name: "Mysuru",
     state: "Karnataka",
