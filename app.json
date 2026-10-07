@@ -12,7 +12,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.journeyapp.mobile"
+      "bundleIdentifier": "com.journeyapp.mobile",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": ["uber", "olacabs", "rapido", "nammayatri"]
+      }
     },
     "android": {
       "package": "com.journeyapp.mobile",

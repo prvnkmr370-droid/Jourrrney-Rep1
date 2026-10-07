@@ -1,15 +1,37 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { View, Text, Pressable, TextInput, ActivityIndicator, Modal, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Navigation, Zap, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb, ChevronUp, ChevronDown } from "lucide-react-native";
+import { Navigation, Compass as CompassIcon, Clock, Plus, X, MapPin, Lightbulb, ChevronUp, ChevronDown, RefreshCw } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useDetectLocation } from "@/hooks/useDetectLocation";
 import { useCitySearch, formatCitySuggestion } from "@/hooks/useCitySearch";
-import { Card, SectionLabel, Callout, NumberBadge, rgba } from "./shared";
+import { Card, SectionLabel, Callout, rgba } from "./shared";
 import { TravelModeIcon } from "./travelModeIcon";
+import type { RouteInfoResult } from "./routeInfo";
+import { estimateRouteInfoLocally } from "./localRouteEstimate";
+
+// Fixed icon per mode rather than trusting the AI response for an exact
+// TravelModeIcon-recognized string — the prompt asks for "Flight"/"Train"/
+// "Road" but AI output isn't guaranteed to match the lookup table exactly.
+const ROUTE_MODE_ICON: Record<string, string> = { Flight: "✈️", Train: "🚂", Bus: "🚌", Road: "🚗" };
+const ROUTE_DEBOUNCE_MS = 600;
+
+// Last-mile mode strings come from the AI (or the local estimate) and vary
+// in wording ("Taxi/App cab", "Airport bus/shuttle", "Shared shuttle", …) —
+// an exact-match table like ROUTE_MODE_ICON above would miss most of them,
+// so this matches on keywords instead.
+function lastMileIcon(mode: string): string {
+  const m = mode.toLowerCase();
+  if (m.includes("bus") || m.includes("shuttle")) return "🚌";
+  if (m.includes("auto")) return "🛺";
+  if (m.includes("metro") || m.includes("train") || m.includes("rail")) return "🚆";
+  if (m.includes("walk")) return "🚶";
+  if (m.includes("taxi") || m.includes("cab")) return "🚗";
+  return "📍";
+}
 
 interface Props {
   destination: Destination;
@@ -24,6 +46,58 @@ export default function ArriveSection({ destination: d, guide }: Props) {
   const [sourceCity, setSourceCity] = useState(originCity);
   const [selectedTransport, setSelectedTransport] = useState(0);
   const { locating, detect } = useDetectLocation();
+
+  // AI-generated distance + nearest airport + transport breakdown for
+  // whatever origin is actually set — replaces the old Delhi/Mumbai/
+  // Bangalore-only hardcoded transport text so every origin gets a real
+  // answer, not just the three curated ones. Debounced and request-id
+  // guarded the same way useCitySearch is, since sourceCity can also be
+  // free-typed (not just picked from a suggestion).
+  //
+  // Deliberately NOT calling the AI backend (fetchRouteInfo /
+  // POST /plan-trip/route-info) here — this panel is driven purely by
+  // geocoding + haversine distance + the curated airport/station/state
+  // datasets (see localRouteEstimate.ts), so browsing destinations and
+  // trying different origins never spends AI quota/credits that other
+  // features (itinerary planning, photo/fuzzy destination matching) still
+  // need. The AI route-info endpoint itself is untouched on the backend —
+  // only this screen stopped calling it — so it's a one-line revert
+  // (swap estimateRouteInfoLocally back for fetchRouteInfo) if that
+  // tradeoff ever changes.
+  const [routeInfo, setRouteInfo] = useState<RouteInfoResult | null>(null);
+  const [routeInfoLoading, setRouteInfoLoading] = useState(false);
+  const [routeInfoError, setRouteInfoError] = useState(false);
+  const routeRequestIdRef = useRef(0);
+  const [routeRetryToken, setRouteRetryToken] = useState(0);
+
+  useEffect(() => {
+    const trimmed = sourceCity.trim();
+    if (!trimmed) {
+      setRouteInfo(null);
+      setRouteInfoLoading(false);
+      setRouteInfoError(false);
+      return;
+    }
+
+    setRouteInfoLoading(true);
+    setRouteInfoError(false);
+    const timer = setTimeout(async () => {
+      const requestId = ++routeRequestIdRef.current;
+      const estimate = await estimateRouteInfoLocally(trimmed, { id: d.id, name: d.name, state: d.state });
+      if (requestId !== routeRequestIdRef.current) return; // a newer request started — drop this stale response
+      setRouteInfoLoading(false);
+      if (estimate) {
+        setRouteInfo(estimate);
+        setSelectedTransport(0);
+      } else {
+        setRouteInfo(null);
+        setRouteInfoError(true);
+      }
+    }, ROUTE_DEBOUNCE_MS);
+
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sourceCity, d.id, routeRetryToken]);
   // Which search is open in the full-screen overlay below — typing (and
   // the keyboard) happens there, over where the hero image sits, instead
   // of in a small inline field that the keyboard fights for space with.
@@ -85,7 +159,7 @@ export default function ArriveSection({ destination: d, guide }: Props) {
     }
   };
 
-  const selected = d.transport[selectedTransport];
+  const selected = routeInfo?.transport[selectedTransport];
 
   return (
     <View style={{ gap: 16 }}>
@@ -205,124 +279,207 @@ export default function ArriveSection({ destination: d, guide }: Props) {
             {[sourceCity, ...stops.map((s) => s.name), d.name].join(" → ")}
           </Text>
 
-          {/* Transport mode chips */}
-          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-            {d.transport.map((t, i) => {
-              const active = selectedTransport === i;
-              return (
-                <Pressable
-                  key={t.mode}
-                  onPress={() => setSelectedTransport(i)}
-                  style={{
-                    flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 14,
-                    backgroundColor: active ? rgba(c.primary, 0.15) : c.surface,
-                    borderWidth: 1.5, borderColor: active ? c.primary : c.border,
-                  }}
-                >
-                  <TravelModeIcon value={t.icon} color={active ? c.primary : c.textSecondary} size={16} />
-                  <View>
-                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: active ? c.primary : c.textPrimary }}>{t.mode}</Text>
-                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: active ? c.primary : c.textSecondary }}>{t.costRange}</Text>
-                  </View>
-                </Pressable>
-              );
-            })}
-          </View>
+          {routeInfo && (
+            <>
+              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.primary, textAlign: "center" }}>
+                ~{Math.round(routeInfo.distanceKm).toLocaleString("en-IN")} km from {sourceCity}
+              </Text>
+              {/* No AI call is made for this panel — see the useEffect above
+                  for why — so every result here is this estimate, not just
+                  a fallback case. Labelled plainly so it doesn't read as
+                  survey-precise. */}
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textMuted, textAlign: "center" }}>
+                Estimated from map distance, not AI-generated
+              </Text>
+            </>
+          )}
 
-          {/* Selected transport detail */}
-          {selected && (
-            <Card>
-              <View style={{ padding: 16, backgroundColor: rgba(c.teal, 0.06), borderBottomWidth: 1, borderBottomColor: c.border }}>
-                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 10 }}>
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, flexShrink: 1 }}>{selected.mode}</Text>
-                  <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 0 }}>
-                    <Clock color={c.textSecondary} size={12} />
-                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.textSecondary }}>{selected.duration}</Text>
-                  </View>
-                </View>
+          {/* Route breakdown — loading / error / content */}
+          {routeInfoLoading && (
+            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingVertical: 10 }}>
+              <ActivityIndicator color={c.primary} size="small" />
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>Finding your route…</Text>
+            </View>
+          )}
 
-                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.textSecondary, marginBottom: 8 }}>
-                  Typical routes from major cities:
-                </Text>
-                <View style={{ flexDirection: "row", gap: 8 }}>
-                  {[
-                    { from: "Delhi", info: selected.fromDelhi },
-                    { from: "Mumbai", info: selected.fromMumbai },
-                    { from: "Bengaluru", info: selected.fromBangalore },
-                  ]
-                    .filter((r) => r.info && r.info !== "—")
-                    .map((r) => (
-                      <View key={r.from} style={{ flex: 1, backgroundColor: rgba(c.teal, 0.1), borderRadius: 10, padding: 8, alignItems: "center" }}>
-                        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 10, color: c.teal, marginBottom: 2 }}>{r.from}</Text>
-                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textPrimary, textAlign: "center" }}>{r.info}</Text>
+          {!routeInfoLoading && routeInfoError && (
+            <View style={{ alignItems: "center", gap: 8, paddingVertical: 10 }}>
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, textAlign: "center" }}>
+                Couldn't fetch route details right now.
+              </Text>
+              <Pressable
+                onPress={() => setRouteRetryToken((n) => n + 1)}
+                style={{ flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 12, paddingVertical: 8, borderRadius: 10, backgroundColor: rgba(c.primary, 0.1) }}
+              >
+                <RefreshCw color={c.primary} size={13} />
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.primary }}>Retry</Text>
+              </Pressable>
+            </View>
+          )}
+
+          {routeInfo && (
+            <>
+              {/* Transport mode chips */}
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {routeInfo.transport.map((t, i) => {
+                  const active = selectedTransport === i;
+                  return (
+                    <Pressable
+                      key={`${t.mode}-${i}`}
+                      onPress={() => setSelectedTransport(i)}
+                      style={{
+                        flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 14,
+                        backgroundColor: active ? rgba(c.primary, 0.15) : c.surface,
+                        borderWidth: 1.5, borderColor: active ? c.primary : c.border,
+                      }}
+                    >
+                      <TravelModeIcon value={ROUTE_MODE_ICON[t.mode] ?? "📍"} color={active ? c.primary : c.textSecondary} size={16} />
+                      <View>
+                        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: active ? c.primary : c.textPrimary }}>{t.mode}</Text>
+                        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: active ? c.primary : c.textSecondary }}>{t.costRange}</Text>
                       </View>
-                    ))}
-                </View>
+                    </Pressable>
+                  );
+                })}
               </View>
-              <View style={{ padding: 14 }}>
-                <Callout icon={<Lightbulb color={c.gold} size={14} />} text={selected.tips} bg={rgba(c.gold, 0.1)} />
-              </View>
-            </Card>
+
+              {/* Selected transport detail — the full door-to-door route for
+                  this mode: origin → (departure airport/station, for
+                  Flight/Train) → arrival airport/station → last-mile leg →
+                  actual destination. Road has no transfer points, so it's
+                  just origin → destination with the drive itself as the
+                  single leg. */}
+              {selected && (
+                <Card>
+                  <View style={{ padding: 16, backgroundColor: rgba(c.teal, 0.06), borderBottomWidth: 1, borderBottomColor: c.border }}>
+                    <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 2 }}>
+                      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, flexShrink: 1 }}>{selected.mode}</Text>
+                      <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 0 }}>
+                        <Clock color={c.textSecondary} size={12} />
+                        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.textSecondary }}>{selected.duration}</Text>
+                      </View>
+                    </View>
+                    <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.teal }}>{selected.costRange}</Text>
+                  </View>
+
+                  <View style={{ padding: 16 }}>
+                    <RouteStepRow color={c.primary} label={sourceCity} />
+
+                    {selected.departurePoint && selected.arrivalPoint ? (
+                      <>
+                        <RouteLegConnector color={c.border} label={`${selected.mode} · ${selected.duration}`} />
+                        <RouteStepRow
+                          color={c.textMuted}
+                          label={`${selected.departurePoint.name}${selected.departurePoint.code ? ` (${selected.departurePoint.code})` : ""}`}
+                          sub={selected.departurePoint.distance}
+                        />
+                        <RouteConnector color={c.border} />
+                        <RouteStepRow
+                          color={c.textMuted}
+                          label={`${selected.arrivalPoint.name}${selected.arrivalPoint.code ? ` (${selected.arrivalPoint.code})` : ""}`}
+                          sub={selected.arrivalPoint.distance}
+                        />
+
+                        {/* Local transport onward from the arrival airport/
+                            station — several alternatives (taxi, bus/
+                            shuttle, auto), not just one prescribed mode, so
+                            the traveller can actually choose. */}
+                        {selected.lastMileOptions.length > 0 && (
+                          <View style={{ marginLeft: 30, marginTop: 6, marginBottom: 2, gap: 6 }}>
+                            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 9, letterSpacing: 0.5, color: c.textMuted, textTransform: "uppercase" }}>
+                              Onward to {d.name}
+                            </Text>
+                            {selected.lastMileOptions.map((lm, i) => (
+                              <View key={`${lm.mode}-${i}`}>
+                                <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+                                  <TravelModeIcon value={lastMileIcon(lm.mode)} color={c.textSecondary} size={13} />
+                                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.textPrimary }}>{lm.mode}</Text>
+                                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textSecondary, flex: 1 }} numberOfLines={1}>
+                                    {[lm.duration, lm.costRange].filter(Boolean).join(" · ")}
+                                  </Text>
+                                </View>
+                              </View>
+                            ))}
+                          </View>
+                        )}
+
+                        <RouteConnector color={c.border} />
+                      </>
+                    ) : (
+                      <RouteLegConnector color={c.border} label={`${selected.mode} · ${selected.duration}`} />
+                    )}
+
+                    <RouteStepRow color={c.teal} shape="square" label={d.name} />
+                  </View>
+
+                  {!!selected.details && (
+                    <View style={{ paddingHorizontal: 16, paddingBottom: 12 }}>
+                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textPrimary }}>{selected.details}</Text>
+                    </View>
+                  )}
+                  {!!selected.tips && (
+                    <View style={{ padding: 14, paddingTop: 0 }}>
+                      <Callout icon={<Lightbulb color={c.gold} size={14} />} text={selected.tips} bg={rgba(c.gold, 0.1)} />
+                    </View>
+                  )}
+                </Card>
+              )}
+            </>
           )}
         </>
       )}
 
       {guide ? (
         <>
-          {/* First hour */}
-          <Card>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 8, padding: 14, borderBottomWidth: 1, borderBottomColor: c.border }}>
-              <Zap color={c.primary} size={16} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>Your First Hour in {d.name}</Text>
-            </View>
-            <View style={{ padding: 14, gap: 12 }}>
-              {guide.firstThingsToDo.map((step, i) => (
-                <View key={step} style={{ flexDirection: "row", alignItems: "flex-start", gap: 10 }}>
-                  <NumberBadge n={i + 1} color={i === 0 ? "#333C81" : "#0D5C63"} />
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textPrimary, flex: 1 }}>{step}</Text>
-                </View>
-              ))}
-            </View>
-          </Card>
-
-          {/* Last-mile arrival points */}
-          <View>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 10 }}>
-              <Navigation color={c.teal} size={16} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>Last-Mile to Your Stay</Text>
-            </View>
-            <View style={{ gap: 12 }}>
-              {guide.arrivalPoints.map((ap) => (
-                <Card key={ap.name}>
-                  <View style={{ padding: 14, backgroundColor: rgba(c.teal, 0.08), borderBottomWidth: 1, borderBottomColor: c.border }}>
-                    <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                      <TravelModeIcon value={ap.icon} color={c.teal} size={17} />
-                      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{ap.by}</Text>
-                    </View>
-                    <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.teal }}>{ap.name}</Text>
-                    <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{ap.distanceFromCity}</Text>
-                  </View>
-                  <View style={{ padding: 12, gap: 10 }}>
-                    {ap.toAccommodation.map((step) => (
-                      <View key={step.step} style={{ flexDirection: "row", gap: 10 }}>
-                        <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
-                          <TravelModeIcon value={step.icon} color={c.textSecondary} size={13} />
-                        </View>
-                        <View style={{ flex: 1 }}>
-                          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11.5, color: c.textPrimary, marginBottom: 3 }}>{step.action}</Text>
-                          <View style={{ flexDirection: "row", gap: 10, marginBottom: 4 }}>
-                            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.primary }}>{step.cost}</Text>
-                            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{step.duration}</Text>
-                          </View>
-                          <Callout icon={<Lightbulb color={c.gold} size={14} />} text={step.tip} bg={rgba(c.gold, 0.1)} />
-                        </View>
+          {/* Last-mile arrival points — fixed per destination (not tied to
+              any origin), e.g. Agra always lists "Agra Cantt" as the train
+              arrival point regardless of where the traveller is coming
+              from. That's fine as a general reference when no origin is
+              set yet, but once the dynamic route panel above has real,
+              origin-specific Flight/Train/Bus/Road legs (with their own
+              arrival points and last-mile options), showing this static
+              version alongside it is actively misleading — it looks like
+              "the train route" but never reflects the origin the user
+              actually picked. Hide it once routeInfo has an answer. */}
+          {!routeInfo && (
+            <View>
+              <View style={{ flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 10 }}>
+                <Navigation color={c.teal} size={16} />
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>Last-Mile to Your Stay</Text>
+              </View>
+              <View style={{ gap: 12 }}>
+                {guide.arrivalPoints.map((ap) => (
+                  <Card key={ap.name}>
+                    <View style={{ padding: 14, backgroundColor: rgba(c.teal, 0.08), borderBottomWidth: 1, borderBottomColor: c.border }}>
+                      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                        <TravelModeIcon value={ap.icon} color={c.teal} size={17} />
+                        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{ap.by}</Text>
                       </View>
-                    ))}
-                  </View>
-                </Card>
-              ))}
+                      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: c.teal }}>{ap.name}</Text>
+                      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{ap.distanceFromCity}</Text>
+                    </View>
+                    <View style={{ padding: 12, gap: 10 }}>
+                      {ap.toAccommodation.map((step) => (
+                        <View key={step.step} style={{ flexDirection: "row", gap: 10 }}>
+                          <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
+                            <TravelModeIcon value={step.icon} color={c.textSecondary} size={13} />
+                          </View>
+                          <View style={{ flex: 1 }}>
+                            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11.5, color: c.textPrimary, marginBottom: 3 }}>{step.action}</Text>
+                            <View style={{ flexDirection: "row", gap: 10, marginBottom: 4 }}>
+                              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.primary }}>{step.cost}</Text>
+                              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{step.duration}</Text>
+                            </View>
+                            <Callout icon={<Lightbulb color={c.gold} size={14} />} text={step.tip} bg={rgba(c.gold, 0.1)} />
+                          </View>
+                        </View>
+                      ))}
+                    </View>
+                  </Card>
+                ))}
+              </View>
             </View>
-          </View>
+          )}
 
           {/* City to sight */}
           <View style={{ backgroundColor: rgba(c.teal, 0.1), borderWidth: 1, borderColor: rgba(c.teal, 0.25), borderRadius: 16, padding: 14 }}>
@@ -432,4 +589,46 @@ function RouteMarker({ color, size = 10, shape = "circle" }: { color: string; si
  * marginLeft: 9 to center itself at x=10). */
 function RouteConnector({ color }: { color: string }) {
   return <View style={{ width: 2, height: 14, marginLeft: 9, backgroundColor: color }} />;
+}
+
+/** One stop on the "selected transport detail" door-to-door timeline —
+ * origin, a transfer point (airport/station), or the destination — reusing
+ * RouteMarker for visual consistency with the route-planner section above. */
+function RouteStepRow({ color, label, sub, shape = "circle" }: { color: string; label: string; sub?: string; shape?: "circle" | "square" }) {
+  const c = useThemeColors();
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+      <RouteMarker color={color} shape={shape} />
+      <View style={{ flex: 1 }}>
+        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }} numberOfLines={1}>
+          {label}
+        </Text>
+        {!!sub && (
+          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textSecondary }} numberOfLines={1}>
+            {sub}
+          </Text>
+        )}
+      </View>
+    </View>
+  );
+}
+
+/** Like RouteConnector, but for a leg of the "selected transport detail"
+ * timeline that itself represents travel (the flight/train hop, or the
+ * last-mile taxi/bus) — taller, and with an optional caption describing
+ * that leg (mode · duration · cost) next to the line. */
+function RouteLegConnector({ color, label }: { color: string; label?: string }) {
+  const c = useThemeColors();
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center", gap: 10, minHeight: 22 }}>
+      <View style={{ width: 20, alignItems: "center" }}>
+        <View style={{ width: 2, height: 22, backgroundColor: color }} />
+      </View>
+      {!!label && (
+        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 10, color: c.textSecondary, flex: 1 }} numberOfLines={1}>
+          {label}
+        </Text>
+      )}
+    </View>
+  );
 }
