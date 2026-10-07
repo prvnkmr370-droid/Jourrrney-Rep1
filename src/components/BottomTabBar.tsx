@@ -77,7 +77,13 @@ export default function BottomTabBar({ state, navigation }: BottomTabBarProps) {
         }}
       >
         {state.routes.map((route: (typeof state.routes)[number], index: number) => {
-          const isActive = state.index === index;
+          // Only the three real tabs get a bar button. Hidden sub-routes (e.g. "plan/[destId]",
+          // registered with href: null) are still in state.routes and must be skipped.
+          if (!(route.name in ICONS)) return null;
+          const focusedName = state.routes[state.index]?.name ?? "";
+          // "Plan My Trip" opened from a destination page is a hidden sub-route of
+          // the Plan Trip tab, so that tab stays highlighted while it's showing.
+          const isActive = focusedName === route.name || (route.name === "plan" && focusedName.startsWith("plan/"));
           const Icon = ICONS[route.name] ?? Compass;
           const label = LABELS[route.name] ?? route.name;
 
@@ -90,7 +96,7 @@ export default function BottomTabBar({ state, navigation }: BottomTabBarProps) {
               c={c}
               onPress={() => {
                 const event = navigation.emit({ type: "tabPress", target: route.key, canPreventDefault: true });
-                if (!isActive && !event.defaultPrevented) navigation.navigate(route.name);
+                if (focusedName !== route.name && !event.defaultPrevented) navigation.navigate(route.name);
               }}
             />
           );

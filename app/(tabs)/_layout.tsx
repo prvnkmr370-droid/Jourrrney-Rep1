@@ -23,6 +23,9 @@ export default function TabsLayout() {
       >
         <Tabs.Screen name="index" options={{ title: "Discover" }} />
         <Tabs.Screen name="plan" options={{ title: "Plan Trip" }} />
+        {/* "Plan My Trip" from a destination page — a hidden tab (no bar button of its
+            own) so it shares the Plan Trip tab's bottom bar and profile pill. */}
+        <Tabs.Screen name="plan/[destId]" options={{ href: null }} />
         <Tabs.Screen name="safety" options={{ title: "Safety" }} />
       </Tabs>
 

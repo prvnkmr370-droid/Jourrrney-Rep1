@@ -83,7 +83,7 @@ interface Props {
   onBack?: () => void;
   originCity: string;
   /** Set when arriving via a specific destination's own "Plan My Trip"
-   * button (see app/plan/[destId].tsx) — skips the "where are you
+   * button (see app/(tabs)/plan/[destId].tsx) — skips the "where are you
    * dreaming of going" question entirely and opens straight on the days
    * question, since the destination is already known. */
   preselectedDestination?: Destination | null;
@@ -166,7 +166,8 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // clearance equal to the tab bar's actual height, not just a flat 20.
   // The tabBarHeight *prop* (react-navigation's useBottomTabBarHeight())
   // is only used here as a cheap "is there a tab bar at all" signal
-  // (>0 on the tab route, 0 on the no-tab-bar plan/[destId].tsx modal) —
+  // (>0 on both the Plan Trip tab and the destination-launched plan/[destId]
+  // hidden tab, which share the same bottom bar) —
   // its magnitude is NOT used for the actual clearance math anymore.
   // Round-tripping a live-measured height through react-navigation's own
   // height-reporting context (BottomTabBarHeightCallbackContext) proved
@@ -768,7 +769,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             <ArrowLeft color={c.textPrimary} size={18} />
           </Pressable>
         )}
-        <View>
+        {/* Inside the tabs the floating profile pill sits over the header's right
+            edge, so reserve room for it: the subtitle wraps instead of running underneath. */}
+        <View style={{ flex: 1, paddingRight: tabBarHeight > 0 ? 84 : 0 }}>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 18, color: c.textPrimary }}>Plan My Trip</Text>
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 1 }}>
             Personalised itinerary with budget breakdown
@@ -802,10 +805,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           backgroundColor: c.surface, borderTopWidth: 1, borderTopColor: c.borderSoft,
         }}
       >
-        {/* Only offered while Tia is still asking "where are you dreaming
-            of going?" — a photo answers that same question, so it
-            wouldn't make sense once a destination is already locked in. */}
-        {phase === "destination" && (
+        {/* Offered while trip basics are still being collected, on both entry
+            points (the Plan Trip tab and a destination's own "Plan My Trip"),
+            so the two screens look the same. A photo answers "where to?", so
+            sending one while the days question is open just switches the trip
+            to the place it shows. */}
+        {(phase === "destination" || phase === "days") && (
           <Pressable
             onPress={pickImage}
             disabled={sending}

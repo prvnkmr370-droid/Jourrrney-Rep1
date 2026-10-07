@@ -82,7 +82,6 @@ export default function RootLayout() {
           <Stack.Screen name="destination/[id]" options={{ presentation: "card" }} />
           <Stack.Screen name="destination/[id]/gallery" options={{ presentation: "card" }} />
           <Stack.Screen name="recently-viewed" options={{ presentation: "card" }} />
-          <Stack.Screen name="plan/[destId]" options={{ presentation: "modal" }} />
           <Stack.Screen name="safety/[id]" options={{ presentation: "card" }} />
           <Stack.Screen name="safety/travel-safe-steps" options={{ presentation: "card" }} />
           <Stack.Screen name="safety/trip-prep" options={{ presentation: "card" }} />
