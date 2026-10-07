@@ -150,6 +150,23 @@ export interface TripLeg {
   endDay: number;
 }
 
+/** One place a day visits, after matching what the AI wrote against the
+ * destination's own data (see stops.ts). "card" = it is one of our own
+ * destination cards (photo, safety score, tappable); "listed" = it is in the
+ * destination's highlights/nearby places but has no card of its own;
+ * "unlisted" = the AI named it but we have no record of it, so the UI says so
+ * ("Check locally") instead of presenting it as verified. */
+export interface PlanStop {
+  name: string;
+  kind: "card" | "listed" | "unlisted";
+  type?: string;
+  distance?: string;
+  /** kind === "card" only — the destination card this stop opens. */
+  destId?: string;
+  image?: string;
+  safetyScore?: number;
+}
+
 export interface GeneratedDay {
   day: number;
   title: string;
@@ -157,6 +174,8 @@ export interface GeneratedDay {
   afternoon: string;
   evening: string;
   estimatedCost: number;
+  /** Only on AI-generated days, and only when the AI returned usable stops. */
+  stops?: PlanStop[];
   stay: string;
   stayType: string;
   transport: string;

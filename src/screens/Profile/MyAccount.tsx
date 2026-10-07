@@ -16,12 +16,13 @@ import { useState } from "react";
 import { View, Text, Pressable, Alert } from "react-native";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Camera, MapPin, Search, User, Settings, ChevronRight, UserRound } from "lucide-react-native";
+import { ArrowLeft, Camera, MapPin, Search, User, Settings, ChevronRight, UserRound, Briefcase } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { USER } from "./mockUser";
 
 import SearchesTab from "./tabs/SearchesTab";
+import MyTripsTab from "./tabs/MyTripsTab";
 import ProfileInfoTab from "./tabs/ProfileInfoTab";
 import SettingsTab from "./tabs/SettingsTab";
 
@@ -31,13 +32,14 @@ const STATS = [
   { value: 7, label: "Saved" },
 ];
 
-type Section = "searches" | "profile" | "settings";
+type Section = "searches" | "trips" | "profile" | "settings";
 // Search and User read more clearly as "search history" and "person" than
 // the previous Package/MapPin pair, which leaned toward "orders" and
 // "location" — closer to their own tab content but a step removed from
 // what a user scanning the tab bar is looking for.
 const TABS: { id: Section; label: string; icon: typeof Search }[] = [
   { id: "searches", label: "Searches", icon: Search },
+  { id: "trips", label: "Trips", icon: Briefcase },
   { id: "profile", label: "Profile", icon: User },
   { id: "settings", label: "Settings", icon: Settings },
 ];
@@ -159,6 +161,7 @@ export default function MyAccount() {
       </View>
 
       {section === "searches" && <SearchesTab />}
+      {section === "trips" && <MyTripsTab />}
       {section === "profile" && <ProfileInfoTab />}
       {section === "settings" && <SettingsTab />}
     </View>

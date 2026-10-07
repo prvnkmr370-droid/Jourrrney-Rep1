@@ -4,6 +4,7 @@ import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import { useFocusEffect } from "@react-navigation/native";
 import { useLocalSearchParams, router } from "expo-router";
 import PlanTrip from "@/screens/PlanTrip/PlanTrip";
+import { isPlanSessionHeld, releasePlanSession } from "@/screens/PlanTrip/planSession";
 
 /**
  * "Plan My Trip" opened from a destination's own page. Lives inside the tabs
@@ -31,6 +32,9 @@ export default function PlanForDestinationRoute() {
 
   useFocusEffect(
     useCallback(() => {
+      // Back on this screen (first open, or returning from one of the plan's
+      // stop cards) — nothing is being held any more.
+      releasePlanSession();
       // Android hardware back button should do the same as the on-screen arrow.
       const subscription = BackHandler.addEventListener("hardwareBackPress", () => {
         goBack();
@@ -38,7 +42,8 @@ export default function PlanForDestinationRoute() {
       });
       return () => {
         subscription.remove();
-        setSession((s) => s + 1);
+        // Leaving to look at one of the plan's own stop cards keeps the plan.
+        if (!isPlanSessionHeld()) setSession((s) => s + 1);
       };
     }, [goBack]),
   );

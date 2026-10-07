@@ -12,13 +12,16 @@ import { API_BASE_URL } from "@/config/api";
 import type { Destination } from "@/data/destinations";
 import { fetchAiJson } from "./aiRequest";
 import type { StyleConfig, GeneratedDay } from "./data";
+import { buildKnownPlaces } from "./stops";
 
 // Backend budget is Gemini (12s) + Groq fallback (10s) back-to-back on a
 // Gemini failure — give this comfortably more than that ~22s worst case.
 const REQUEST_TIMEOUT_MS = 28000;
 
 export interface AiPlanResult {
-  itinerary: Pick<GeneratedDay, "day" | "title" | "morning" | "afternoon" | "evening" | "estimatedCost">[];
+  /** `stops` here are the raw place names the AI wrote for that day (if any);
+   * PlanTrip.tsx matches them against the destination's own data (stops.ts). */
+  itinerary: (Pick<GeneratedDay, "day" | "title" | "morning" | "afternoon" | "evening" | "estimatedCost"> & { stops?: string[] })[];
   tips: string[];
 }
 
@@ -44,6 +47,9 @@ export async function tryGenerateAiItinerary(
         mustEat: dest.mustEat,
         packingTips: dest.packingTips,
         womenSafety: { score: dest.womenSafety.score, level: dest.womenSafety.level },
+        // Our own highlights + nearby places, so the AI prefers real places we
+        // already cover (see stops.ts).
+        knownPlaces: buildKnownPlaces(dest).map((p) => ({ name: p.name, type: p.type, distance: p.distance })),
       },
       style: { label: sc.label, transport: sc.transport, stay: sc.stay, local: sc.local },
       days,
@@ -77,7 +83,14 @@ export async function tryGenerateAiItinerary(
     );
     if (!valid) return null;
 
-    return { itinerary: data.itinerary, tips: Array.isArray(data.tips) ? data.tips.filter((t: unknown) => typeof t === "string") : [] };
+    // `stops` is optional (an older backend, or a model that skipped it,
+    // simply returns none) — keep only plain strings so a bad value can never
+    // fail an otherwise good plan.
+    const itinerary = data.itinerary.map((d: AiPlanResult["itinerary"][number]) => ({
+      ...d,
+      stops: Array.isArray(d.stops) ? d.stops.filter((n: unknown): n is string => typeof n === "string") : [],
+    }));
+    return { itinerary, tips: Array.isArray(data.tips) ? data.tips.filter((t: unknown) => typeof t === "string") : [] };
   } catch {
     return null;
   }

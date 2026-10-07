@@ -42,7 +42,8 @@ import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, Eas
 import type * as ImagePickerType from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Send, Camera, Sparkle } from "lucide-react-native";
-import type { Destination } from "@/data/destinations";
+import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { getTabBarFootprint } from "@/components/BottomTabBar";
@@ -103,7 +104,41 @@ let idCounter = Date.now();
 const nextId = () => `m${++idCounter}`;
 
 const TRAVELER_OPTIONS = [1, 2, 3, 4];
+// Same idea as the traveller chips: the common answers are one tap, and any
+// other number (up to MAX_TRIP_DAYS) can still be typed.
+const DAY_OPTIONS = [2, 3, 4, 5, 7];
 const THINKING_ID = "thinking";
+
+// "Not sure where to go?" starter moods. Each one is a local filter over the
+// curated (non-hidden) destinations by their own `category` tags, most-reviewed
+// first — no AI call, so it works instantly and offline.
+type MoodId = "hills" | "beaches" | "heritage" | "nature" | "surprise";
+const MOODS: { id: MoodId; label: string; match: RegExp | null }[] = [
+  { id: "hills", label: "🏔️ Hill stations", match: /hill/i },
+  { id: "beaches", label: "🏖️ Beaches", match: /beach|coastal/i },
+  { id: "heritage", label: "🛕 Heritage", match: /heritage/i },
+  { id: "nature", label: "🌿 Nature", match: /nature|wildlife/i },
+  { id: "surprise", label: "🎲 Surprise me", match: null },
+];
+const MOOD_PAGE_SIZE = 4;
+const MOOD_POOL_SIZE = 12;
+
+function moodPool(mood: (typeof MOODS)[number]): Destination[] {
+  const curated = DESTINATIONS.filter((d) => !d.hidden).sort((a, b) => b.reviews - a.reviews);
+  if (!mood.match) {
+    // Surprise me: a random handful from the most popular 60, different each time.
+    const top = curated.slice(0, 60);
+    for (let i = top.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [top[i], top[j]] = [top[j], top[i]];
+    }
+    return top.slice(0, MOOD_POOL_SIZE);
+  }
+  const re = mood.match;
+  return curated.filter((d) => d.category.some((cat) => re.test(cat))).slice(0, MOOD_POOL_SIZE);
+}
+
+const PROGRESS_STEPS = ["Where", "Days", "Travellers", "Style"] as const;
 
 // Full label match ("Budget Explorer") first, then the plainer single
 // words people actually say in a sentence ("make it premium instead") —
@@ -187,6 +222,13 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     ? 20
     : (tabBarHeight > 0 ? getTabBarFootprint(insets.bottom) : Math.max(insets.bottom, 16)) + 20;
 
+  // What the progress strip shows lives in `collected` (a ref, so answers apply
+  // instantly), which doesn't re-render by itself — bump() after any change.
+  const [, bump] = useState(0);
+  // The starter-mood chips are created inside the initial state below, before
+  // the handler that reacts to them exists, so they call it through this ref.
+  const moodHandler = useRef<(mood: MoodId) => void>(() => {});
+
   const [messages, setMessages] = useState<ChatMessage[]>(() =>
     preselectedDestination
       ? [
@@ -203,6 +245,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
             text: originCity
               ? `Hey! I'm Tia, your AI travel companion. 🧭\nI'll plan your perfect trip from ${originCity}. Where are you dreaming of going? (You can also say something like "Mysore then Coorg" for a multi-stop trip.)`
               : `Hey! I'm Tia, your AI travel companion. 🧭\nWhere are you dreaming of going? (Anywhere in India for now — tell me your starting city too if you like. You can also say "Mysore then Coorg" for a multi-stop trip.)`,
+          },
+          {
+            id: nextId(),
+            sender: "ai",
+            text: "Not sure yet? Start from a mood:",
+            chips: MOODS.map((m) => ({ label: m.label, onPress: () => moodHandler.current(m.id) })),
           },
         ],
   );
@@ -261,7 +309,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
     const totalDays = legs.reduce((sum, l) => sum + (l.days ?? 0), 0);
     const routeLabel = legs.map((l) => `${l.days} day${l.days === 1 ? "" : "s"} in ${l.destination.name}`).join(", then ");
-    const fromClause = originCity ? ` from ${originCity}` : "";
+    // Read from the store, not the prop — see PlanTrip.handleReady for why.
+    const currentOrigin = useOriginStore.getState().originCity;
+    const fromClause = currentOrigin ? ` from ${currentOrigin}` : "";
     pushAi(
       `Here's the plan: ${routeLabel} (${totalDays} day${totalDays === 1 ? "" : "s"} total)${fromClause}, ${sc.label.toLowerCase()} for ${people} traveller${people === 1 ? "" : "s"}. Building it now! ✨`,
     );
@@ -278,6 +328,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // (tracked via activeLegIndex) before moving on to travelers/style,
   // same as it would for a single destination.
   const proceedFromCollected = () => {
+    bump((n) => n + 1);
     const { legs, people, style } = collected.current;
     if (legs.length === 0) {
       setPhase("destination");
@@ -288,7 +339,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       collected.current.activeLegIndex = nextLegIdx;
       setPhase("days");
       const leg = legs[nextLegIdx];
-      pushAi(legs.length > 1 ? `How many days in ${leg.destination.name}?` : `How many days are you planning for ${leg.destination.name}?`);
+      pushAi(
+        legs.length > 1 ? `How many days in ${leg.destination.name}?` : `How many days are you planning for ${leg.destination.name}?`,
+        DAY_OPTIONS.map((n) => ({ label: `${n} days`, onPress: () => selectDays(n) })),
+      );
       scrollToEnd();
       return;
     }
@@ -308,17 +362,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // parseMultiDestinationMessage) through the same path, so every caller
   // (typed text, a disambiguation chip, a suggested-destination chip, the
   // photo flow) shares one implementation regardless of which one it is.
-  const setLegs = (matches: TripSegment[]) => {
+  const setLegs = (matches: TripSegment[], origin: string | null = null) => {
     collected.current.legs = matches.map((m) => ({ destination: m.destination, days: m.days }));
     collected.current.activeLegIndex = 0;
     const routeLabel = matches.map((m) => m.destination.name).join(" → ");
     pushUser(routeLabel);
+    // "Coorg from Bangalore" — the start city goes into the same shared
+    // origin store How to Reach and the plan itself already read.
+    const fromNote = origin ? ` Starting from ${origin}.` : "";
+    if (origin) useOriginStore.getState().setOriginCity(origin);
     if (matches.length > 1) {
       pushAi(`Nice, a multi-stop trip: ${routeLabel}! 🧳`);
     } else if (matches[0].days) {
-      pushAi(`Love it — ${matches[0].days} days in ${matches[0].destination.name}! 🎒`);
+      pushAi(`Love it — ${matches[0].days} days in ${matches[0].destination.name}!${fromNote} 🎒`);
     } else {
-      pushAi(`Great choice — ${matches[0].destination.name}, ${matches[0].destination.state}! ✨`);
+      pushAi(`Great choice — ${matches[0].destination.name}, ${matches[0].destination.state}!${fromNote} ✨`);
     }
     proceedFromCollected();
     scrollToEnd();
@@ -328,7 +386,30 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // onPress (disambiguation candidates, suggested destinations, the
   // photo flow) that only ever deals with one place doesn't need to
   // build a TripSegment array itself.
-  const selectDestination = (dest: Destination, daysAlreadyKnown: number | null) => setLegs([{ destination: dest, days: daysAlreadyKnown }]);
+  const selectDestination = (dest: Destination, daysAlreadyKnown: number | null, origin: string | null = null) =>
+    setLegs([{ destination: dest, days: daysAlreadyKnown }], origin);
+
+  // One page of starter-mood suggestions as tappable destination chips, with a
+  // "More ›" chip while the pool has further pages.
+  const showMoodPicks = (label: string, pool: Destination[], offset: number) => {
+    pushUser(offset === 0 ? label : "Show me more");
+    const page = pool.slice(offset, offset + MOOD_PAGE_SIZE);
+    if (page.length === 0) {
+      pushAi("I don't have more of those right now — tell me a place and I'll plan it!");
+      scrollToEnd();
+      return;
+    }
+    const more = offset + MOOD_PAGE_SIZE < pool.length;
+    pushAi(offset === 0 ? "Here are some popular picks — tap one to start planning:" : "A few more:", [
+      ...page.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+      ...(more ? [{ label: "More ›", onPress: () => showMoodPicks(label, pool, offset + MOOD_PAGE_SIZE) }] : []),
+    ]);
+    scrollToEnd();
+  };
+  moodHandler.current = (id) => {
+    const mood = MOODS.find((m) => m.id === id);
+    if (mood) showMoodPicks(mood.label, moodPool(mood), 0);
+  };
 
   const selectDays = (n: number) => {
     const leg = collected.current.legs[collected.current.activeLegIndex];
@@ -438,7 +519,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       const parsed = parseTripMessage(text);
       collected.current.interests = [...new Set([...collected.current.interests, ...parsed.interests])];
       if (parsed.destination) {
-        selectDestination(parsed.destination, parsed.days);
+        selectDestination(parsed.destination, parsed.days, parsed.origin);
         return;
       }
       // A recognized place outside India — checked, and returned, before
@@ -477,7 +558,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       if (parsed.candidates.length > 0) {
         pushAi(
           "A few places match that — which one did you mean?",
-          parsed.candidates.map((d) => ({ label: `${d.name}, ${d.state}`, onPress: () => selectDestination(d, parsed.days) })),
+          parsed.candidates.map((d) => ({ label: `${d.name}, ${d.state}`, onPress: () => selectDestination(d, parsed.days, parsed.origin) })),
         );
         scrollToEnd();
         return;
@@ -779,6 +860,16 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         </View>
       </View>
 
+      <ProgressStrip
+        captured={[
+          collected.current.legs.length > 0,
+          collected.current.legs.length > 0 && collected.current.legs.every((l) => l.days !== null),
+          collected.current.people !== null,
+          collected.current.style !== null,
+        ]}
+        c={c}
+      />
+
       <ScrollView
         ref={scrollRef}
         // The missing style={{flex:1}} here was the actual cause of "a
@@ -862,6 +953,43 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         </Pressable>
       </View>
     </KeyboardAvoidingView>
+  );
+}
+
+/** "2 of 4 captured" — shows what Tia already knows and what she still needs,
+ * so the number of questions left is never a mystery. */
+function ProgressStrip({ captured, c }: { captured: boolean[]; c: ReturnType<typeof useThemeColors> }) {
+  const done = captured.filter(Boolean).length;
+  const firstOpen = captured.findIndex((x) => !x);
+  return (
+    <View
+      accessible
+      accessibilityLabel={`${done} of ${PROGRESS_STEPS.length} trip details captured`}
+      style={{ paddingHorizontal: 20, paddingTop: 10, paddingBottom: 8, backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.borderSoft }}
+    >
+      <View style={{ flexDirection: "row", gap: 6 }}>
+        {PROGRESS_STEPS.map((label, i) => {
+          const isDone = captured[i];
+          return (
+            <View key={label} style={{ flex: 1, gap: 4 }}>
+              <View
+                style={{
+                  height: 4, borderRadius: 2,
+                  backgroundColor: isDone ? c.primary : i === firstOpen ? withOpacity(c.primary, 0.4) : c.border,
+                }}
+              />
+              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 9.5, color: isDone ? c.primary : c.textMuted }}>
+                {isDone ? "✓ " : ""}
+                {label}
+              </Text>
+            </View>
+          );
+        })}
+      </View>
+      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 10, color: c.textSecondary, alignSelf: "flex-end", marginTop: 2 }}>
+        {done} of {PROGRESS_STEPS.length} captured
+      </Text>
+    </View>
   );
 }
 

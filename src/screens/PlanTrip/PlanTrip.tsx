@@ -8,12 +8,14 @@
  * Timeline". Behavior (the itinerary-generation algorithm) is ported from
  * the Make prototype.
  */
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { Destination } from "@/data/destinations";
 import { DESTINATIONS } from "@/data/destinations";
 import { useOriginStore } from "@/store/useOriginStore";
 import { STYLE_CONFIGS, generateItinerary, generateMultiLegItinerary, type GeneratedDay, type TravelStyle, type TripPlan } from "./data";
+import { MAX_TRIP_DAYS } from "./parseTripMessage";
 import { tryGenerateAiItinerary } from "./aiPlan";
+import { resolveStops } from "./stops";
 import ChatStep from "./steps/ChatStep";
 import GeneratingStep from "./steps/GeneratingStep";
 import ResultStep from "./steps/ResultStep";
@@ -29,6 +31,31 @@ interface Props {
 
 type Step = "chat" | "generating" | "result";
 
+/** What the traveller asked for — kept so a one-tap tweak can re-run it. */
+interface TripRequest {
+  legs: { destination: Destination; days: number }[];
+  people: number;
+  style: TravelStyle;
+  interests: string[];
+}
+
+/** One-tap changes offered under the day list ("Tweak this plan"). */
+export type PlanTweak =
+  | { kind: "cheaper" }
+  | { kind: "addDay" }
+  | { kind: "interest"; id: string }
+  | { kind: "people"; count: number };
+
+/** Shown on the rebuilt plan so the change is visible, with the old plan kept
+ * for Undo. */
+export interface TweakNote {
+  label: string;
+  previous: TripPlan;
+  previousRequest: TripRequest;
+}
+
+const STYLE_ORDER: TravelStyle[] = ["backpacker", "comfortable", "premium"];
+
 // Floor for how long the "Building your plan…" animation stays up — a
 // real Gemini call sometimes resolves in under a second, which would make
 // the loading screen feel like a glitch rather than genuine generation.
@@ -41,13 +68,27 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
   const [step, setStep] = useState<Step>("chat");
   const [travelStyle, setTravelStyle] = useState<TravelStyle>("comfortable");
   const [plan, setPlan] = useState<TripPlan | null>(null);
+  const lastRequest = useRef<TripRequest | null>(null);
+  const [tweakNote, setTweakNote] = useState<TweakNote | null>(null);
   // Origin lives in the same shared store the "How to Reach" route planner
   // already uses — one origin city for the whole app rather than a
   // separate copy just for this screen.
   const originCity = useOriginStore((s) => s.originCity);
   const preselectedDestination = preselectedId ? (DESTINATIONS.find((d) => d.id === preselectedId) ?? null) : null;
 
-  const handleReady = async (legs: { destination: Destination; days: number }[], people: number, style: TravelStyle, interests: string[]) => {
+  const handleReady = async (
+    legs: { destination: Destination; days: number }[],
+    people: number,
+    style: TravelStyle,
+    interests: string[],
+    tweak?: { label: string; previous: TripPlan; previousRequest: TripRequest },
+  ) => {
+    lastRequest.current = { legs, people, style, interests };
+    // Read at the moment of generating, not from this render's `originCity`:
+    // ChatStep calls this through handlers created several renders earlier, and
+    // a start city typed in the same message as the destination ("Coorg from
+    // Bangalore") is saved after those handlers captured the old, empty value.
+    const originCity = useOriginStore.getState().originCity;
     setTravelStyle(style);
     setStep("generating");
 
@@ -79,6 +120,7 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
             planSource: "ai",
             itinerary: aiResult.itinerary.map((day, i) => ({
               ...day,
+              stops: resolveStops(destination, day.stops),
               // stay/stayType/transport aren't AI-generated (ResultStep
               // doesn't render them per-day anyway — see its Day-by-Day
               // section) — carried over from the matching template day so
@@ -92,6 +134,7 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
         : templatePlan;
 
       setPlan(finalPlan);
+      setTweakNote(tweak ?? null);
       setStep("result");
       return;
     }
@@ -129,6 +172,7 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
         result.itinerary.forEach((day, di) => {
           mergedItinerary.push({
             ...day,
+            stops: resolveStops(leg.destination, day.stops),
             day: dayOffset + di + 1,
             legDestinationName: leg.destination.name,
             stay: legTemplateDays[di]?.stay ?? legTemplateDays[0]?.stay ?? "",
@@ -150,7 +194,49 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
     }
 
     setPlan(finalPlan);
+    setTweakNote(tweak ?? null);
     setStep("result");
+  };
+
+  // Applies one tweak to the last request and rebuilds through the same
+  // generator as the chat does, so a tweaked plan is built exactly like any
+  // other (including the AI attempt and its template fallback).
+  const handleTweak = (tweak: PlanTweak) => {
+    const request = lastRequest.current;
+    if (!request || !plan) return;
+    // The chat may have left interests empty (generation then defaults them) —
+    // start from what the current plan actually used.
+    let { legs, people, style } = request;
+    let interests = plan.preferences;
+    let label = "";
+
+    if (tweak.kind === "cheaper") {
+      const lower = STYLE_ORDER[STYLE_ORDER.indexOf(style) - 1];
+      if (!lower) return;
+      style = lower;
+      label = STYLE_CONFIGS.find((sc) => sc.id === lower)!.label;
+    } else if (tweak.kind === "addDay") {
+      if (legs.length !== 1 || legs[0].days >= MAX_TRIP_DAYS) return;
+      legs = [{ ...legs[0], days: legs[0].days + 1 }];
+      label = `${legs[0].days} days`;
+    } else if (tweak.kind === "interest") {
+      if (interests.includes(tweak.id)) return;
+      interests = [...interests, tweak.id];
+      label = `More ${tweak.id}`;
+    } else {
+      if (tweak.count === people) return;
+      people = tweak.count;
+      label = `${people} traveller${people === 1 ? "" : "s"}`;
+    }
+
+    handleReady(legs, people, style, interests, { label, previous: plan, previousRequest: request });
+  };
+
+  const handleUndoTweak = () => {
+    if (!tweakNote) return;
+    lastRequest.current = tweakNote.previousRequest;
+    setPlan(tweakNote.previous);
+    setTweakNote(null);
   };
 
   if (step === "generating") {
@@ -159,7 +245,20 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
   }
 
   if (step === "result" && plan) {
-    return <ResultStep plan={plan} onBack={onBack} onRebuild={() => setStep("chat")} tabBarHeight={tabBarHeight} />;
+    return (
+      <ResultStep
+        plan={plan}
+        onBack={onBack}
+        onRebuild={() => {
+          setTweakNote(null);
+          setStep("chat");
+        }}
+        onTweak={handleTweak}
+        tweakNote={tweakNote}
+        onUndoTweak={handleUndoTweak}
+        tabBarHeight={tabBarHeight}
+      />
+    );
   }
 
   return (

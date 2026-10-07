@@ -85,6 +85,9 @@ export interface ParsedTripMessage {
   days: number | null;
   /** PREFERENCES ids opportunistically found by keyword in the message. */
   interests: string[];
+  /** Starting city when the message said where the trip begins ("Coorg from
+   * Bangalore", "from Pune to Goa"), tidied to Title Case. Null otherwise. */
+  origin: string | null;
 }
 
 // Spelled-out counts ("two days", "four people") are just as common in
@@ -198,9 +201,46 @@ function isOffTopicMessage(raw: string): boolean {
   return OFF_TOPIC_PATTERNS.some((re) => re.test(raw));
 }
 
+/** A plausible city name typed as a starting point — letters, spaces and a few
+ * name punctuation marks only, so stray text can't become an origin. */
+function tidyOrigin(text: string): string | null {
+  const cleaned = stripDayClause(text).replace(/[.!?,]+$/, "").trim();
+  if (cleaned.length < 2 || cleaned.length > 40) return null;
+  if (!/^[A-Za-z][A-Za-z .'-]*$/.test(cleaned)) return null;
+  return cleaned
+    .split(/\s+/)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join(" ");
+}
+
+/** Splits "<destination> from <origin>" or "from <origin> to <destination>"
+ * into its two halves. Returns the text with the origin part removed (so the
+ * existing destination matching sees only the place), or the original text
+ * untouched when there is no usable origin. */
+function splitOrigin(raw: string): { rest: string; origin: string | null } {
+  const text = raw.trim();
+  const fromTo = text.match(/^from\s+(.+?)\s+to\s+(.+)$/i);
+  if (fromTo) {
+    const origin = tidyOrigin(fromTo[1]);
+    if (origin) return { rest: fromTo[2], origin };
+  }
+  const destFrom = text.match(/^(.+?)\s+from\s+(.+)$/i);
+  if (destFrom) {
+    const origin = tidyOrigin(destFrom[2]);
+    if (origin) return { rest: destFrom[1], origin };
+  }
+  return { rest: text, origin: null };
+}
+
 export function parseTripMessage(raw: string): ParsedTripMessage {
-  const days = extractDays(raw);
-  const interests = extractInterests(raw);
+  const { rest, origin } = splitOrigin(raw);
+  // Days and interests are read from the whole message ("Coorg from Bangalore
+  // for 3 days" keeps its 3 days even though that clause trails the origin).
+  const parsed = parsePlacePart(rest, extractDays(raw), extractInterests(raw));
+  return { ...parsed, origin };
+}
+
+function parsePlacePart(raw: string, days: number | null, interests: string[]): Omit<ParsedTripMessage, "origin"> {
 
   if (isOffTopicMessage(raw)) {
     return { destination: null, candidates: [], unmatchedPlaceAttempt: false, nonIndiaPlace: null, offTopic: true, days, interests };
