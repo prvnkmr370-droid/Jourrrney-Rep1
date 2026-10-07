@@ -23,8 +23,9 @@
 import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
-import { Bell, Shield, Globe, Lock, FileText, ChevronRight, type LucideIcon } from "lucide-react-native";
+import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
+import { API_BASE_URL } from "@/config/api";
 import { useThemeStore, type ThemeMode } from "@/store/useThemeStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
@@ -40,6 +41,28 @@ export default function SettingsTab() {
   const { isSignedIn, signOut, setThemeMode } = useProfileStore();
   const mode = useThemeStore((s) => s.mode);
   const [notifications, setNotifications] = useState(true);
+
+  // The backend remembers a signed-in user's own earlier AI requests to
+  // personalise later answers (journey-backend/src/lib/aiMemory.js). This
+  // lets them wipe that history at any time.
+  const handleClearAiHistory = () => {
+    Alert.alert("Clear AI history?", "This deletes what the trip planner remembers from your earlier questions. It can't be undone.", [
+      { text: "Cancel", style: "cancel" },
+      {
+        text: "Clear",
+        style: "destructive",
+        onPress: async () => {
+          try {
+            const token = useProfileStore.getState().token;
+            const res = await fetch(`${API_BASE_URL}/ai-memory`, { method: "DELETE", headers: token ? { Authorization: `Bearer ${token}` } : {} });
+            Alert.alert(res.ok ? "AI history cleared" : "Couldn't clear AI history", res.ok ? "The planner no longer remembers your earlier requests." : "Please try again in a moment.");
+          } catch {
+            Alert.alert("Couldn't clear AI history", "Check your connection and try again.");
+          }
+        },
+      },
+    ]);
+  };
 
   const handleLogout = async () => {
     // signOut() now also clears the real session token from SecureStore,
@@ -89,6 +112,9 @@ export default function SettingsTab() {
         </Text>
         <NavRow icon={Lock} label="Login & security" sub="Sign in, password, sessions" onPress={() => router.push("/profile/settings")} c={c} />
         <NavRow icon={Shield} label="Privacy & sharing" sub="Control what you share" onPress={() => router.push("/profile/legal/privacy")} c={c} />
+        {isSignedIn && (
+          <NavRow icon={Sparkles} label="Clear AI history" sub="Forget what the trip planner remembers about you" onPress={handleClearAiHistory} c={c} />
+        )}
         <NavRow
           icon={FileText}
           label="Travel documents"

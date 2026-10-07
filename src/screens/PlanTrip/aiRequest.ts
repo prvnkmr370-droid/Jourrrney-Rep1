@@ -13,6 +13,8 @@
  * Never throws — same contract as the callers: a `null` return means "no
  * usable response," and it's up to them to fall back.
  */
+import { useProfileStore } from "@/store/useProfileStore";
+
 const WAKE_RETRY_DELAY_MS = 4000;
 
 function isWakingResponse(status: number): boolean {
@@ -26,7 +28,14 @@ export async function fetchAiJson(url: string, body: unknown, timeoutMs: number,
     try {
       const res = await fetch(url, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        // Signed-in users send their session token so the backend can
+        // personalise answers from their own earlier AI requests (see
+        // journey-backend/src/lib/aiMemory.js). Guests send none and get the
+        // same app-wide rules with no memory.
+        headers: {
+          "Content-Type": "application/json",
+          ...(useProfileStore.getState().token ? { Authorization: `Bearer ${useProfileStore.getState().token}` } : {}),
+        },
         signal: controller.signal,
         body: JSON.stringify(body),
       });
