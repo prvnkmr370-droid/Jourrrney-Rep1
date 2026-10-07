@@ -69,6 +69,12 @@
         "projectId": "e6ab3179-3a85-49c2-8f32-2c9a8d6e1525"
       }
     },
-    "owner": "prvnkmr370"
+    "owner": "prvnkmr370",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e6ab3179-3a85-49c2-8f32-2c9a8d6e1525"
+    }
   }
 }
