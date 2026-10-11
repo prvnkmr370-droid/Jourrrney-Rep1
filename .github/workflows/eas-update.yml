@@ -1,0 +1,64 @@
+# Publishes the app's JavaScript/asset changes to the phone (EAS Update,
+# channel "preview") every time something is pushed to main — no new build or
+# reinstall needed. Native changes (new permissions, native packages, the Maps
+# key, package.json/app.json native fields) still need an EAS build; their
+# updates are simply never delivered to older builds, so nothing breaks.
+#
+# One-time setup: add a repository secret named EXPO_TOKEN
+#   expo.dev -> Account settings -> Access tokens -> Create token
+#   GitHub repo -> Settings -> Secrets and variables -> Actions -> New secret
+# Until the secret exists every step below is skipped and the run stays green.
+name: Publish update to phone
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "**.md"
+      - "scripts/**"
+  workflow_dispatch:
+
+# Only the newest push matters; don't queue stale publishes behind it.
+concurrency:
+  group: eas-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      EXPO_PUBLIC_API_URL: https://jourrrney-backend.onrender.com
+    steps:
+      - name: Explain the missing token
+        if: ${{ env.EXPO_TOKEN == '' }}
+        run: echo "::notice::EXPO_TOKEN secret is not set, so no update was published. See the comment at the top of this workflow."
+
+      - uses: actions/checkout@v4
+        if: ${{ env.EXPO_TOKEN != '' }}
+
+      - uses: actions/setup-node@v4
+        if: ${{ env.EXPO_TOKEN != '' }}
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: expo/expo-github-action@v8
+        if: ${{ env.EXPO_TOKEN != '' }}
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Install dependencies
+        if: ${{ env.EXPO_TOKEN != '' }}
+        run: npm ci --no-audit --no-fund
+
+      - name: Publish update to the preview channel
+        if: ${{ env.EXPO_TOKEN != '' }}
+        env:
+          # Passed through the environment, never interpolated into the shell
+          # command, so a commit message can't inject anything.
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          MESSAGE="$(printf '%s' "${COMMIT_MESSAGE:-Manual run}" | head -n 1 | cut -c1-100)"
+          npx eas-cli update --channel preview --platform android --message "$MESSAGE" --non-interactive

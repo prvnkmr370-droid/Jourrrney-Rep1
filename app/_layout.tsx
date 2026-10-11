@@ -15,12 +15,16 @@ import {
 } from "@expo-google-fonts/poppins";
 import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 import { bootstrapProfileSession } from "@/store/useProfileStore";
+import { useAutoUpdate } from "@/hooks/useAutoUpdate";
 
 // Keep the native splash screen up until fonts are ready — our own
 // animated <SplashScreen /> route (app/index.tsx) takes over from there.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  // Test builds apply a freshly published update as soon as the app opens or
+  // returns to the foreground (see useAutoUpdate.ts).
+  useAutoUpdate();
   const scheme = useResolvedScheme();
   const c = useThemeColors();
   const [fontsLoaded, fontError] = useFonts({
