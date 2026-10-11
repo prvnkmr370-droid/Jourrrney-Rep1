@@ -42,11 +42,11 @@ const TABS = [
 type Tab = (typeof TABS)[number]["id"];
 
 // The photo at the top of a destination page is 40% of the screen's height
-// plus 40pt extra (it was a fixed 300, about 35% on a typical phone, which
+// plus 60pt extra (it was a fixed 300, about 35% on a typical phone, which
 // made it a thin strip). Using a proportion rather than one pixel count keeps
 // every destination's page the same on every screen size.
 const HERO_HEIGHT_RATIO = 0.4;
-const HERO_EXTRA_HEIGHT = 40;
+const HERO_EXTRA_HEIGHT = 60;
 
 interface Props {
   destination: Destination;
