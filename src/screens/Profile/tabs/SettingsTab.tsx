@@ -24,7 +24,7 @@ import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
-import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, type LucideIcon } from "lucide-react-native";
+import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
 import { API_BASE_URL } from "@/config/api";
 import { useThemeStore, type ThemeMode } from "@/store/useThemeStore";
@@ -113,6 +113,7 @@ export default function SettingsTab() {
         </Text>
         <NavRow icon={Lock} label="Login & security" sub="Sign in, password, sessions" onPress={() => router.push("/profile/settings")} c={c} />
         <NavRow icon={Shield} label="Privacy & sharing" sub="Control what you share" onPress={() => router.push("/profile/legal/privacy")} c={c} />
+        <NavRow icon={Images} label="Photo credits" sub="Who took the photos in this app" onPress={() => router.push("/profile/photo-credits")} c={c} />
         {isSignedIn && (
           <NavRow icon={Sparkles} label="Clear AI history" sub="Forget what the trip planner remembers about you" onPress={handleClearAiHistory} c={c} />
         )}
