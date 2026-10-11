@@ -2,7 +2,6 @@
 import { useMemo, useState } from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
-import { LinearGradient } from "expo-linear-gradient";
 import { ChevronRight } from "lucide-react-native";
 import DestImage from "@/components/DestImage";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
@@ -147,38 +146,6 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
           <DestinationCard key={d.id} destination={d} onPress={() => goToDestination(d)} />
         ))}
       </Section>
-
-      {/* Plan Trip CTA */}
-      <View style={{ paddingHorizontal: 16, marginBottom: 24 }}>
-        <Pressable onPress={() => router.push("/(tabs)/plan")}>
-          <LinearGradient
-            colors={["#333C81", "#C44A0A", "#0D5C63"]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={{ borderRadius: 24, padding: 20 }}
-          >
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "rgba(255,255,255,0.7)", letterSpacing: 1, marginBottom: 4 }}>
-              AI-POWERED
-            </Text>
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 20, color: "#FFFFFF", marginBottom: 4 }}>
-              Plan your perfect trip
-            </Text>
-            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: "rgba(255,255,255,0.7)", marginBottom: 14 }}>
-              Budget, comfort, or luxury — we build your itinerary.
-            </Text>
-            <View
-              style={{
-                alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 6,
-                backgroundColor: "rgba(255,255,255,0.2)", borderRadius: 999,
-                paddingHorizontal: 16, paddingVertical: 8,
-              }}
-            >
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>Start Planning</Text>
-              <ChevronRight color="#FFFFFF" size={16} />
-            </View>
-          </LinearGradient>
-        </Pressable>
-      </View>
 
       <Section title="Safest for Women & Solo Travel" onSeeAll={() => router.push("/(tabs)/safety")} accentColor={c.success}>
         {safest.map((d) => (

@@ -23,6 +23,7 @@
 import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
+import * as Updates from "expo-updates";
 import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
 import { API_BASE_URL } from "@/config/api";
@@ -130,9 +131,16 @@ export default function SettingsTab() {
         </Pressable>
       )}
 
-      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textMuted, textAlign: "center" }}>
-        Jourrrney · v1.0.0
-      </Text>
+      <View style={{ alignItems: "center", gap: 2 }}>
+        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textMuted, textAlign: "center" }}>
+          Jourrrney · v1.0.0
+        </Text>
+        {/* Which code this phone is actually running — a change can be
+            published yet not reach a phone, and this is how to tell. */}
+        <Text selectable style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textMuted, textAlign: "center" }}>
+          {describeBuild()}
+        </Text>
+      </View>
     </ScrollView>
   );
 }
@@ -165,4 +173,16 @@ function NavRow({ icon: Icon, label, sub, onPress, c }: { icon: LucideIcon; labe
       <ChevronRight color={c.textMuted} size={16} />
     </Pressable>
   );
+}
+
+/** One line saying where this app's code came from: built into the install, or
+ * an over-the-air update (with its id and publish time), plus the channel and
+ * runtime it listens to. */
+function describeBuild(): string {
+  if (!Updates.isEnabled) return "Development build";
+  const source = Updates.isEmbeddedLaunch ? "built-in code" : `update ${Updates.updateId?.slice(0, 8) ?? "?"}`;
+  const created = Updates.createdAt
+    ? `, ${Updates.createdAt.toLocaleDateString("en-IN", { day: "numeric", month: "short" })} ${Updates.createdAt.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}`
+    : "";
+  return `${Updates.channel ?? "no channel"} · ${source}${created} · runtime ${Updates.runtimeVersion?.slice(0, 8) ?? "?"}`;
 }
