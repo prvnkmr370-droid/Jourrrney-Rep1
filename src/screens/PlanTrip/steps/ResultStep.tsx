@@ -158,13 +158,6 @@ export default function ResultStep({ plan, onBack, onRebuild, onTweak, tweakNote
               </View>
             </View>
           </View>
-          {/* Required attribution for Creative Commons photos, same line the
-              destination page shows under its own hero. */}
-          {plan.destination.imageCredit ? (
-            <Text numberOfLines={2} style={{ fontFamily: "Poppins_400Regular", fontSize: 9.5, color: c.textMuted, marginTop: 4 }}>
-              {plan.destination.imageCredit}
-            </Text>
-          ) : null}
         </View>
 
         {plan.origin ? <RouteStrip origin={plan.origin} destinations={tripDestinations} live={!readOnly} c={c} /> : null}

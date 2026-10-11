@@ -11,7 +11,7 @@
  * both were closely related to content already shown elsewhere and read
  * as redundant as their own top-level tabs.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
@@ -103,216 +103,245 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     if (next !== heroIndex) setHeroIndex(next);
   };
 
+  // The whole page is one vertical scroll — photo, tab strip and content move
+  // together. (Before, only the content under a fixed photo + tab strip
+  // scrolled, which left a small window on short screens.) Once the photo has
+  // scrolled off, a compact copy of the tab strip (with a back button) pins to
+  // the top so switching tabs never needs a scroll back up.
+  const scrollRef = useRef<ScrollView>(null);
+  const scrollY = useRef(0);
+  const [tabsPinned, setTabsPinned] = useState(false);
+
+  const onPageScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const y = e.nativeEvent.contentOffset.y;
+    scrollY.current = y;
+    const pinned = y >= heroHeight;
+    setTabsPinned((prev) => (prev === pinned ? prev : pinned));
+  };
+
+  const selectTab = (id: Tab) => {
+    setActiveTab(id);
+    // Switching tabs from further down: start the new tab at its top.
+    if (scrollY.current > heroHeight) scrollRef.current?.scrollTo({ y: heroHeight, animated: false });
+  };
+
+  const renderTabStrip = () => (
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 12, gap: 4, paddingVertical: 8 }}>
+      {TABS.map(({ id, Icon }) => {
+        const active = activeTab === id;
+        return (
+          <Pressable
+            key={id}
+            onPress={() => selectTab(id)}
+            style={{
+              flexDirection: "row", alignItems: "center", gap: 6,
+              paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12,
+              backgroundColor: active ? "#333C81" : "transparent",
+            }}
+          >
+            <Icon color={active ? "#FFFFFF" : c.textSecondary} size={14} />
+            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
+              {id}
+            </Text>
+          </Pressable>
+        );
+      })}
+    </ScrollView>
+  );
+
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
-      {/* Hero — a horizontal, paged photo carousel (falls back to a
-          single-slide "carousel" of just heroImage when a destination
-          has no `gallery`) rather than one static image, so a page like
-          Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
-          and Mehtab Bagh, not just the one landmark photo. */}
-      <View style={{ height: heroHeight }}>
-        <ScrollView
-          horizontal
-          pagingEnabled
-          showsHorizontalScrollIndicator={false}
-          onScroll={onHeroScroll}
-          scrollEventThrottle={16}
-        >
-          {heroPhotos.map((uri, i) => (
-            <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: heroHeight }} contentFit="cover" />
-          ))}
-        </ScrollView>
-        <LinearGradient
-          colors={["rgba(0,0,0,0.4)", "transparent", "#1C1917"]}
-          locations={[0, 0.4, 1]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 0, y: 1 }}
-          style={{ position: "absolute", inset: 0 }}
-        />
-
-        <Pressable
-          onPress={onBack}
-          style={{
-            position: "absolute", top: insets.top + 8, left: 16,
-            width: 40, height: 40, borderRadius: 20,
-            backgroundColor: "rgba(0,0,0,0.5)", alignItems: "center", justifyContent: "center",
-          }}
-        >
-          <ArrowLeft color="#FFFFFF" size={20} />
-        </Pressable>
-
-        <View
-          style={{
-            position: "absolute", top: insets.top + 8, right: 16,
-            flexDirection: "row", alignItems: "center", gap: 6,
-            backgroundColor: safetyBg, borderWidth: 1, borderColor: safetyColor,
-            borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
-          }}
-        >
-          <Shield color={safetyColor} size={14} />
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: safetyColor }}>
-            Safety {d.womenSafety.score}/10
-          </Text>
-        </View>
-
-        {/* "View all" — stacked below the safety badge rather than
-            anywhere near the bottom info block, since that block's height
-            shifts with how many lines the rating/duration/season row
-            wraps to on a given screen. Opens the dedicated gallery grid
-            (app/destination/[id]/gallery.tsx), which itself has its own
-            back button returning here. */}
-        <Pressable
-          onPress={() => router.push(`/destination/${d.id}/gallery`)}
-          style={{
-            position: "absolute", top: insets.top + 48, right: 16,
-            flexDirection: "row", alignItems: "center", gap: 6,
-            backgroundColor: "rgba(0,0,0,0.55)",
-            borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
-          }}
-        >
-          <Images color="#FFFFFF" size={14} />
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>
-            {heroPhotos.length > 1 ? `View all ${heroPhotos.length}` : "View photo"}
-          </Text>
-        </Pressable>
-
-        {/* Hero-carousel dot indicators — deliberately their own
-            absolutely-positioned layer at a FIXED offset from the top of
-            the (fixed-height, 300px) hero, entirely independent of the
-            state/name/rating block below. That block is bottom-anchored
-            and its own height varies card-to-card (a 2-line name, a
-            wrapped rating row), which is exactly why an earlier version —
-            with the dots living inside that block, right above the name —
-            drifted to a different vertical position on every card: shorter
-            content pushed the whole block (and the dots inside it) down
-            toward mid-image, longer content pushed it up near the top.
-            Anchoring the dots to the top of the hero instead, below the
-            back/safety/"view all" icon row, makes their position identical
-            on every card regardless of how long that destination's name or
-            season text is. Only rendered once there's more than one photo
-            to page through. */}
-        {heroPhotos.length > 1 && (
-          <View
-            pointerEvents="none"
-            style={{ position: "absolute", top: insets.top + 86, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}
-          >
-            {heroPhotos.map((uri, i) => (
-              <View
-                key={`${uri}-${i}`}
-                style={{
-                  width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
-                  backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
-                }}
-              />
-            ))}
-          </View>
-        )}
-
-        <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
-            {d.state}
-          </Text>
-          <Text
-            numberOfLines={2}
-            ellipsizeMode="tail"
-            style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}
-          >
-            {d.name}
-          </Text>
-          {/* flexWrap on this row only wraps whole items onto a new line —
-              it does nothing for a single long item's own text, which by
-              default renders on one line and overflows past the hero's
-              horizontal padding rather than wrapping (bestSeason strings
-              like "November – February (winter migratory season); dawn is
-              the best time of day" ran straight past the right edge,
-              blowing through the margin entirely). flexShrink: 1 on each
-              icon+text pair lets that pair shrink to the row's actual
-              available width so its Text wraps inside it instead of
-              spilling out — same fix applied to all three pairs for
-              consistency, even though rating/duration are normally short. */}
-          <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-              <Star color="#FBBF24" fill="#FBBF24" size={14} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>{d.rating}</Text>
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>
-                ({d.reviews.toLocaleString("en-IN")})
-              </Text>
-            </View>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-              <Clock color="rgba(255,255,255,0.6)" size={14} />
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>{d.duration}</Text>
-            </View>
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-              <Calendar color="rgba(255,255,255,0.6)" size={14} />
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", flexShrink: 1 }}>{d.bestSeason}</Text>
-            </View>
-          </View>
-        </View>
-      </View>
-
-      {/* Wikimedia Commons images are CC BY-SA — attribution is a license
-          requirement, not a style choice. Unsplash images (the majority)
-          carry no imageCredit and this renders nothing. Deliberately laid
-          out in normal flow, in its own dedicated strip below the hero,
-          rather than absolutely positioned over it: an overlay sharing the
-          same bottom-right corner as the name/rating block wrapped onto
-          multiple lines for longer multi-photographer credits (e.g. six
-          names) and grew upward into that block. Fixed to a single line
-          with a trailing ellipsis so its height — and therefore this
-          strip's — never varies. */}
-      {d.imageCredit && (
-        <View style={{ paddingHorizontal: 20, paddingVertical: 4, backgroundColor: c.bg }}>
-          <Text
-            numberOfLines={1}
-            ellipsizeMode="tail"
-            style={{ fontFamily: "Poppins_400Regular", fontSize: 9, color: c.textMuted }}
-          >
-            {d.imageCredit}
-          </Text>
-        </View>
-      )}
-
-      {/* Tab bar */}
-      <View style={{ borderBottomWidth: 1, borderBottomColor: c.border, backgroundColor: c.surface }}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 12, gap: 4, paddingVertical: 8 }}>
-          {TABS.map(({ id, Icon }) => {
-            const active = activeTab === id;
-            return (
-              <Pressable
-                key={id}
-                onPress={() => setActiveTab(id)}
-                style={{
-                  flexDirection: "row", alignItems: "center", gap: 6,
-                  paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12,
-                  backgroundColor: active ? "#333C81" : "transparent",
-                }}
-              >
-                <Icon color={active ? "#FFFFFF" : c.textSecondary} size={14} />
-                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
-                  {id}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </ScrollView>
-      </View>
-
-      {/* Tab content — see keyboardHeight comment above for why this is
-          wrapped in KeyboardAvoidingView and gets extra bottom padding. */}
+      {/* One scroll for the whole page. The keyboard padding below is the
+          same safety net as before (see keyboardHeight above). */}
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <ScrollView
+          ref={scrollRef}
           style={{ flex: 1 }}
+          onScroll={onPageScroll}
+          scrollEventThrottle={16}
           contentContainerStyle={{ paddingBottom: 100 + (keyboardHeight > 0 ? keyboardHeight + KEYBOARD_GAP_BUFFER : 0) }}
           showsVerticalScrollIndicator={false}
         >
-          {activeTab === "Overview" && <OverviewTab destination={d} />}
-          {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
-          {activeTab === "Stay" && <StayTab destination={d} />}
-          {activeTab === "Budget" && <BudgetTab destination={d} />}
-          {activeTab === "Safety" && <SafetyTab destination={d} />}
-          {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
+          {/* Hero — a horizontal, paged photo carousel (falls back to a
+              single-slide "carousel" of just heroImage when a destination
+              has no `gallery`) rather than one static image, so a page like
+              Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
+              and Mehtab Bagh, not just the one landmark photo. */}
+          <View style={{ height: heroHeight }}>
+            <ScrollView
+              horizontal
+              pagingEnabled
+              showsHorizontalScrollIndicator={false}
+              onScroll={onHeroScroll}
+              scrollEventThrottle={16}
+            >
+              {heroPhotos.map((uri, i) => (
+                <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: heroHeight }} contentFit="cover" />
+              ))}
+            </ScrollView>
+            <LinearGradient
+              colors={["rgba(0,0,0,0.4)", "transparent", "#1C1917"]}
+              locations={[0, 0.4, 1]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0, y: 1 }}
+              style={{ position: "absolute", inset: 0 }}
+            />
+
+            <Pressable
+              onPress={onBack}
+              style={{
+                position: "absolute", top: insets.top + 8, left: 16,
+                width: 40, height: 40, borderRadius: 20,
+                backgroundColor: "rgba(0,0,0,0.5)", alignItems: "center", justifyContent: "center",
+              }}
+            >
+              <ArrowLeft color="#FFFFFF" size={20} />
+            </Pressable>
+
+            <View
+              style={{
+                position: "absolute", top: insets.top + 8, right: 16,
+                flexDirection: "row", alignItems: "center", gap: 6,
+                backgroundColor: safetyBg, borderWidth: 1, borderColor: safetyColor,
+                borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
+              }}
+            >
+              <Shield color={safetyColor} size={14} />
+              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: safetyColor }}>
+                Safety {d.womenSafety.score}/10
+              </Text>
+            </View>
+
+            {/* "View all" — stacked below the safety badge rather than
+                anywhere near the bottom info block, since that block's height
+                shifts with how many lines the rating/duration/season row
+                wraps to on a given screen. Opens the dedicated gallery grid
+                (app/destination/[id]/gallery.tsx), which itself has its own
+                back button returning here. */}
+            <Pressable
+              onPress={() => router.push(`/destination/${d.id}/gallery`)}
+              style={{
+                position: "absolute", top: insets.top + 48, right: 16,
+                flexDirection: "row", alignItems: "center", gap: 6,
+                backgroundColor: "rgba(0,0,0,0.55)",
+                borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
+              }}
+            >
+              <Images color="#FFFFFF" size={14} />
+              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>
+                {heroPhotos.length > 1 ? `View all ${heroPhotos.length}` : "View photo"}
+              </Text>
+            </Pressable>
+
+            {/* Hero-carousel dot indicators — deliberately their own
+                absolutely-positioned layer at a FIXED offset from the top of
+                the (fixed-height, 300px) hero, entirely independent of the
+                state/name/rating block below. That block is bottom-anchored
+                and its own height varies card-to-card (a 2-line name, a
+                wrapped rating row), which is exactly why an earlier version —
+                with the dots living inside that block, right above the name —
+                drifted to a different vertical position on every card: shorter
+                content pushed the whole block (and the dots inside it) down
+                toward mid-image, longer content pushed it up near the top.
+                Anchoring the dots to the top of the hero instead, below the
+                back/safety/"view all" icon row, makes their position identical
+                on every card regardless of how long that destination's name or
+                season text is. Only rendered once there's more than one photo
+                to page through. */}
+            {heroPhotos.length > 1 && (
+              <View
+                pointerEvents="none"
+                style={{ position: "absolute", top: insets.top + 86, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}
+              >
+                {heroPhotos.map((uri, i) => (
+                  <View
+                    key={`${uri}-${i}`}
+                    style={{
+                      width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
+                      backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
+                    }}
+                  />
+                ))}
+              </View>
+            )}
+
+            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
+                {d.state}
+              </Text>
+              <Text
+                numberOfLines={2}
+                ellipsizeMode="tail"
+                style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}
+              >
+                {d.name}
+              </Text>
+              {/* flexWrap on this row only wraps whole items onto a new line —
+                  it does nothing for a single long item's own text, which by
+                  default renders on one line and overflows past the hero's
+                  horizontal padding rather than wrapping (bestSeason strings
+                  like "November – February (winter migratory season); dawn is
+                  the best time of day" ran straight past the right edge,
+                  blowing through the margin entirely). flexShrink: 1 on each
+                  icon+text pair lets that pair shrink to the row's actual
+                  available width so its Text wraps inside it instead of
+                  spilling out — same fix applied to all three pairs for
+                  consistency, even though rating/duration are normally short. */}
+              <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
+                  <Star color="#FBBF24" fill="#FBBF24" size={14} />
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>{d.rating}</Text>
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>
+                    ({d.reviews.toLocaleString("en-IN")})
+                  </Text>
+                </View>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
+                  <Clock color="rgba(255,255,255,0.6)" size={14} />
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>{d.duration}</Text>
+                </View>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
+                  <Calendar color="rgba(255,255,255,0.6)" size={14} />
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", flexShrink: 1 }}>{d.bestSeason}</Text>
+                </View>
+              </View>
+            </View>
+          </View>
+
+          {/* Tab bar (in the flow; a compact pinned copy appears below once this scrolls off) */}
+          <View style={{ borderBottomWidth: 1, borderBottomColor: c.border, backgroundColor: c.surface }}>{renderTabStrip()}</View>
+
+          {/* Tab content */}
+          <View>
+            {activeTab === "Overview" && <OverviewTab destination={d} />}
+            {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
+            {activeTab === "Stay" && <StayTab destination={d} />}
+            {activeTab === "Budget" && <BudgetTab destination={d} />}
+            {activeTab === "Safety" && <SafetyTab destination={d} />}
+            {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
+          </View>
         </ScrollView>
       </KeyboardAvoidingView>
+
+      {/* Pinned tab strip — appears once the photo has scrolled out of view. */}
+      {tabsPinned && (
+        <View
+          style={{
+            position: "absolute", top: 0, left: 0, right: 0, paddingTop: insets.top,
+            flexDirection: "row", alignItems: "center",
+            backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.border,
+          }}
+        >
+          <Pressable
+            onPress={onBack}
+            accessibilityRole="button"
+            accessibilityLabel="Back"
+            style={{ width: 44, height: 44, alignItems: "center", justifyContent: "center", marginLeft: 4 }}
+          >
+            <ArrowLeft color={c.textPrimary} size={20} />
+          </Pressable>
+          <View style={{ flex: 1 }}>{renderTabStrip()}</View>
+        </View>
+      )}
 
       {/* Sticky CTA */}
       <View style={{ position: "absolute", left: 0, right: 0, bottom: 0, paddingHorizontal: 16, paddingTop: 12, paddingBottom: Math.max(insets.bottom, 16), backgroundColor: withOpacity(c.bg, 0.97), borderTopWidth: 1, borderTopColor: c.borderSoft }}>
