@@ -41,6 +41,12 @@ const TABS = [
 
 type Tab = (typeof TABS)[number]["id"];
 
+// The photo at the top of a destination page takes 40% of the screen's height
+// (it was a fixed 300, about 35% on a typical phone, which made it a thin
+// strip). A proportion rather than a pixel count keeps every destination's
+// page the same on every screen size.
+const HERO_HEIGHT_RATIO = 0.4;
+
 interface Props {
   destination: Destination;
   onBack: () => void;
@@ -50,7 +56,8 @@ interface Props {
 export default function DestinationDetail({ destination: d, onBack, onPlanTrip }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
-  const { width } = useWindowDimensions();
+  const { width, height: windowHeight } = useWindowDimensions();
+  const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO);
   const [activeTab, setActiveTab] = useState<Tab>("Overview");
   const [heroIndex, setHeroIndex] = useState(0);
 
@@ -102,7 +109,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           has no `gallery`) rather than one static image, so a page like
           Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
           and Mehtab Bagh, not just the one landmark photo. */}
-      <View style={{ height: 300 }}>
+      <View style={{ height: heroHeight }}>
         <ScrollView
           horizontal
           pagingEnabled
@@ -111,7 +118,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
           scrollEventThrottle={16}
         >
           {heroPhotos.map((uri, i) => (
-            <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: 300 }} contentFit="cover" />
+            <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: heroHeight }} contentFit="cover" />
           ))}
         </ScrollView>
         <LinearGradient
