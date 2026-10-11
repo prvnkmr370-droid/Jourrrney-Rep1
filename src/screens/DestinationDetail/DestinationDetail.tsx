@@ -41,11 +41,12 @@ const TABS = [
 
 type Tab = (typeof TABS)[number]["id"];
 
-// The photo at the top of a destination page takes 40% of the screen's height
-// (it was a fixed 300, about 35% on a typical phone, which made it a thin
-// strip). A proportion rather than a pixel count keeps every destination's
-// page the same on every screen size.
+// The photo at the top of a destination page is 40% of the screen's height
+// plus 40pt extra (it was a fixed 300, about 35% on a typical phone, which
+// made it a thin strip). Using a proportion rather than one pixel count keeps
+// every destination's page the same on every screen size.
 const HERO_HEIGHT_RATIO = 0.4;
+const HERO_EXTRA_HEIGHT = 40;
 
 interface Props {
   destination: Destination;
@@ -57,7 +58,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const { width, height: windowHeight } = useWindowDimensions();
-  const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO);
+  const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO) + HERO_EXTRA_HEIGHT;
   const [activeTab, setActiveTab] = useState<Tab>("Overview");
   const [heroIndex, setHeroIndex] = useState(0);
 
