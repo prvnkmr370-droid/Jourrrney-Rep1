@@ -40901,5 +40901,1829 @@ export const GALLERY_CREDITS: Record<string, PhotoCredit[]> = {
       "licence": "CC BY-SA 3.0",
       "pageUrl": "https://commons.wikimedia.org/wiki/File:Maniktala,_Serampore,_West_Bengal_712201,_India_-_panoramio_(2).jpg"
     }
+  ],
+  "pinjore-gardens": [
+    {
+      "title": "Mugal garnden pinjour.jpg",
+      "author": "Shobhit Dwivedi",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mugal_garnden_pinjour.jpg"
+    },
+    {
+      "title": "Pinjore gardens.jpg",
+      "author": "Lillottama",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Pinjore_gardens.jpg"
+    },
+    {
+      "title": "Pinjore Gardens, Panchkula, Haryana.jpg",
+      "author": "Kanad Sanyal",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Pinjore_Gardens,_Panchkula,_Haryana.jpg"
+    },
+    {
+      "title": "Pinjore Gardens at night.jpg",
+      "author": "Giridhar Appaji Nag Y from Bangalore, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Pinjore_Gardens_at_night.jpg"
+    },
+    {
+      "title": "Yadvindra garden or Pinjore garden,chandigarh.jpg",
+      "author": "Minaxi choudhary",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Yadvindra_garden_or_Pinjore_garden,chandigarh.jpg"
+    }
+  ],
+  "brahma-sarovar": [
+    {
+      "title": "BRAHMA SAROVAR TEMPLE.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:BRAHMA_SAROVAR_TEMPLE.jpg"
+    },
+    {
+      "title": "Brahma Sarovar Park Thanesar.JPG",
+      "author": "Cordavida",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brahma_Sarovar_Park_Thanesar.JPG"
+    },
+    {
+      "title": "Night View of the Sarovar.jpg",
+      "author": "Dr GSB",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Night_View_of_the_Sarovar.jpg"
+    },
+    {
+      "title": "Shri Krishna Chariot.jpg",
+      "author": "Dr GSB",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Shri_Krishna_Chariot.jpg"
+    },
+    {
+      "title": "Temple in Brahma Sarovar.jpg",
+      "author": "Dr GSB",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Temple_in_Brahma_Sarovar.jpg"
+    },
+    {
+      "title": "Brahma Sarovar, Kurukshetra.jpg",
+      "author": "आशीष_भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brahma_Sarovar,_Kurukshetra.jpg"
+    }
+  ],
+  "jyotisar": [
+    {
+      "title": "Geeta upadesh sthali, Jyotisar, Kurukshetra.jpg",
+      "author": "आशीष_भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Geeta_upadesh_sthali,_Jyotisar,_Kurukshetra.jpg"
+    },
+    {
+      "title": "Geeta upadesh sthali 3, Jyotisar, Kurukshetra 2.jpg",
+      "author": "आशीष_भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Geeta_upadesh_sthali_3,_Jyotisar,_Kurukshetra_2.jpg"
+    },
+    {
+      "title": "Geeta upadesh sthali 3, Jyotisar, Kurukshetra 3.jpg",
+      "author": "आशीष_भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Geeta_upadesh_sthali_3,_Jyotisar,_Kurukshetra_3.jpg"
+    },
+    {
+      "title": "Banyan tree at Jyotisar.jpg",
+      "author": "Ravinder M A from Bangalore, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Banyan_tree_at_Jyotisar.jpg"
+    },
+    {
+      "title": "Beauty of spirituality 02.jpg",
+      "author": "Peggy28",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Beauty_of_spirituality_02.jpg"
+    }
+  ],
+  "sheikh-chillis-tomb": [
+    {
+      "title": "Panoramic view of complex and tomb fully.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_complex_and_tomb_fully.jpg"
+    },
+    {
+      "title": "Panoramic view of tomb complex showing tomb, galleries and water pond.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_tomb_complex_showing_tomb,_galleries_and_water_pond.jpg"
+    },
+    {
+      "title": "Panoramic view of interiors of tomb complex.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_interiors_of_tomb_complex.jpg"
+    },
+    {
+      "title": "Panoramic view of inside tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_inside_tomb.jpg"
+    },
+    {
+      "title": "Entry to the monument.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entry_to_the_monument.jpg"
+    },
+    {
+      "title": "Entrance grand view of the tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_grand_view_of_the_tomb.jpg"
+    },
+    {
+      "title": "Entrance view of complex with galleries.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_view_of_complex_with_galleries.jpg"
+    }
+  ],
+  "kurukshetra-panorama-science-centre": [
+    {
+      "title": "Kurukshetra Panorama and Science centre.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kurukshetra_Panorama_and_Science_centre.jpg"
+    }
+  ],
+  "mata-mansa-devi-temple": [
+    {
+      "title": "MATA MANSA DEVI-PANCHKULA, HARYANA outer view of temple on top.jpg",
+      "author": "Aerorahulraj",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:MATA_MANSA_DEVI-PANCHKULA,_HARYANA_outer_view_of_temple_on_top.jpg"
+    },
+    {
+      "title": "Mansa Devi temple main shrine.jpg",
+      "author": "Barthateslisa",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mansa_Devi_temple_main_shrine.jpg"
+    }
+  ],
+  "nada-sahib": [
+    {
+      "title": "Nadda Sahib - panoramio.jpg",
+      "author": "ソキ",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nadda_Sahib_-_panoramio.jpg"
+    },
+    {
+      "title": "Nada sahib gurudwara.JPG",
+      "author": "Gaganspidey",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nada_sahib_gurudwara.JPG"
+    },
+    {
+      "title": "Dashvi patsahi nada sahib.jpg",
+      "author": "Jassimehra",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Dashvi_patsahi_nada_sahib.jpg"
+    },
+    {
+      "title": "Nadha Sahib - The Gurudwara at Night - panoramio.jpg",
+      "author": "ソキ",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nadha_Sahib_-_The_Gurudwara_at_Night_-_panoramio.jpg"
+    },
+    {
+      "title": "Nadha Sahib - Inside - panoramio.jpg",
+      "author": "ソキ",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nadha_Sahib_-_Inside_-_panoramio.jpg"
+    }
+  ],
+  "morni-hills": [
+    {
+      "title": "Tikar Taal Morni Hills near Panchkula.jpg",
+      "author": "Patiala.singh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Tikar_Taal_Morni_Hills_near_Panchkula.jpg"
+    },
+    {
+      "title": "Morni lake 1.jpg",
+      "author": "Erdeepakjangra",
+      "licence": "CC0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Morni_lake_1.jpg"
+    },
+    {
+      "title": "MorniFort.jpg",
+      "author": "Intellizap",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:MorniFort.jpg"
+    },
+    {
+      "title": "ਮੋਰਨੀ ( ਹਰਿਆਣਾ ).jpg",
+      "author": "ਕਮਲਦੀਪ ਸਿੰਘ",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:%E0%A8%AE%E0%A9%8B%E0%A8%B0%E0%A8%A8%E0%A9%80_(_%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%86%E0%A8%A3%E0%A8%BE_).jpg"
+    }
+  ],
+  "surajkund": [
+    {
+      "title": "Suraj Kund Masonary 003.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_003.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 025.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_025.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 027.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_027.jpg"
+    },
+    {
+      "title": "LTD7K 5573 resize.JPG",
+      "author": "Ranbirsingh",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:LTD7K_5573_resize.JPG"
+    },
+    {
+      "title": "LTD7K 5599 resize.JPG",
+      "author": "Ranbirsingh",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:LTD7K_5599_resize.JPG"
+    }
+  ],
+  "kingdom-of-dreams": [
+    {
+      "title": "Kingdom of Dreams, Gurgaon.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dreams,_Gurgaon.jpg"
+    },
+    {
+      "title": "Culture Gully, Kingdom of Dreams, Gurgaon 3.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Culture_Gully,_Kingdom_of_Dreams,_Gurgaon_3.jpg"
+    },
+    {
+      "title": "Figurines hanging from the ceiling at Culture Gully, Kingdom of Dreams, Gurgaon.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Figurines_hanging_from_the_ceiling_at_Culture_Gully,_Kingdom_of_Dreams,_Gurgaon.jpg"
+    },
+    {
+      "title": "A Merlion at Culture Gully, Kingdom of Dreams, Gurgaon.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:A_Merlion_at_Culture_Gully,_Kingdom_of_Dreams,_Gurgaon.jpg"
+    }
+  ],
+  "sultanpur-bird-sanctuary": [
+    {
+      "title": "A lake with wildlife in Sultanpur National park.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:A_lake_with_wildlife_in_Sultanpur_National_park.jpg"
+    },
+    {
+      "title": "Sultanpur National Park on a foggy morning.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sultanpur_National_Park_on_a_foggy_morning.jpg"
+    },
+    {
+      "title": "A Pathway at Sultanpur National Park.jpg",
+      "author": "Slyronit",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:A_Pathway_at_Sultanpur_National_Park.jpg"
+    },
+    {
+      "title": "View of Sultanpur National Park wetland from one of the watch towers.jpg",
+      "author": "DesiBoy101",
+      "licence": "CC BY 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_Sultanpur_National_Park_wetland_from_one_of_the_watch_towers.jpg"
+    },
+    {
+      "title": "Salim Ali Museum at Sultanpur National Park 2.jpg",
+      "author": "DesiBoy101",
+      "licence": "CC BY 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Salim_Ali_Museum_at_Sultanpur_National_Park_2.jpg"
+    }
+  ],
+  "rakhigarhi": [
+    {
+      "title": "Rakhigarhi Harappan civilization.jpg",
+      "author": "Durgeshkushvaha",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Rakhigarhi_Harappan_civilization.jpg"
+    }
+  ],
+  "fort-of-hansi": [
+    {
+      "title": "Main Gate front look.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Main_Gate_front_look.jpg"
+    },
+    {
+      "title": "Out left side.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Out_left_side.jpg"
+    },
+    {
+      "title": "Some Left atrifacats.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Some_Left_atrifacats.jpg"
+    },
+    {
+      "title": "Cell for crimnal.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Cell_for_crimnal.jpg"
+    },
+    {
+      "title": "Back look for rest house.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Back_look_for_rest_house.jpg"
+    },
+    {
+      "title": "Front look of rest house.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_look_of_rest_house.jpg"
+    }
+  ],
+  "kala-amb-park": [
+    {
+      "title": "Kala Amb.jpg",
+      "author": "Gagangaurav14",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kala_Amb.jpg"
+    },
+    {
+      "title": "Mural of 3rd Battle of Panipat at war-site, Kala Amb, Panipat.jpg",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mural_of_3rd_Battle_of_Panipat_at_war-site,_Kala_Amb,_Panipat.jpg"
+    },
+    {
+      "title": "Kala Amb Obelisk.JPG",
+      "author": "Ramesh lalwani",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kala_Amb_Obelisk.JPG"
+    }
+  ],
+  "ibrahim-lodhis-tomb": [
+    {
+      "title": "Ibrahim Lodhi's Tomb.jpg",
+      "author": "Gagangaurav14",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ibrahim_Lodhi%27s_Tomb.jpg"
+    },
+    {
+      "title": "Side stairs that goes to tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Side_stairs_that_goes_to_tomb.jpg"
+    },
+    {
+      "title": "Inside clear view of tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Inside_clear_view_of_tomb.jpg"
+    },
+    {
+      "title": "View of a tomb from front.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_a_tomb_from_front.jpg"
+    },
+    {
+      "title": "Full view of tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Full_view_of_tomb.jpg"
+    }
+  ],
+  "kalesar-national-park": [
+    {
+      "title": "KALESAR NP AREA GTAE.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:KALESAR_NP_AREA_GTAE.jpg"
+    },
+    {
+      "title": "SACRED GROOVES IN KALESAR NATIONAL PARK AREA.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:SACRED_GROOVES_IN_KALESAR_NATIONAL_PARK_AREA.jpg"
+    },
+    {
+      "title": "SUNSET VIEW FROM KALESAR NATIONAL PARK.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:SUNSET_VIEW_FROM_KALESAR_NATIONAL_PARK.jpg"
+    }
+  ],
+  "european-cemetery": [
+    {
+      "title": "Ambala Christian Cemetery 08.jpg",
+      "author": "Satdeep Gill",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ambala_Christian_Cemetery_08.jpg"
+    },
+    {
+      "title": "Ambala Christian Cemetery 09.jpg",
+      "author": "Satdeep Gill",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ambala_Christian_Cemetery_09.jpg"
+    },
+    {
+      "title": "Ambala Christian Cemetery 14.jpg",
+      "author": "Satdeep Gill",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ambala_Christian_Cemetery_14.jpg"
+    },
+    {
+      "title": "Ambala Christian Cemetery 01.jpg",
+      "author": "Satdeep Gill",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ambala_Christian_Cemetery_01.jpg"
+    },
+    {
+      "title": "Ambala Christian Cemetery 02.jpg",
+      "author": "Satdeep Gill",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ambala_Christian_Cemetery_02.jpg"
+    }
+  ],
+  "gurudawara-panjokhara-sahib": [
+    {
+      "title": "Gurudwara Panjokhra Sahib, Haryana 02.jpg",
+      "author": "Manojkhurana",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gurudwara_Panjokhra_Sahib,_Haryana_02.jpg"
+    },
+    {
+      "title": "Panjokhda sahib Gurudwara.jpg",
+      "author": "Erdeepakjangra",
+      "licence": "CC0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panjokhda_sahib_Gurudwara.jpg"
+    },
+    {
+      "title": "Panjokara - panoramio - ソキ.jpg",
+      "author": "ソキ",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panjokara_-_panoramio_-_%E3%82%BD%E3%82%AD.jpg"
+    }
+  ],
+  "st-pauls-church": [
+    {
+      "title": "The bombed church of Ambala.jpg",
+      "author": "Mysticbharat",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:The_bombed_church_of_Ambala.jpg"
+    },
+    {
+      "title": "St Paul's Church Ambala Haryana - c1868.jpg",
+      "author": "Bourne & Shepherd",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:St_Paul%27s_Church_Ambala_Haryana_-_c1868.jpg"
+    }
+  ],
+  "star-monument-bhiwani": [
+    {
+      "title": "Star 2.jpg",
+      "author": "Poojajhaharia",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Star_2.jpg"
+    },
+    {
+      "title": "Star 1.jpg",
+      "author": "Poojajhaharia",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Star_1.jpg"
+    },
+    {
+      "title": "Star Monument.jpg",
+      "author": "Raj Kamal Khare",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Star_Monument.jpg"
+    }
+  ],
+  "anandpur-bandh-dam": [
+    {
+      "title": "Surajkund dam (2895543580).jpg",
+      "author": "Varun Shiv Kapur from New Delhi, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Surajkund_dam_(2895543580).jpg"
+    },
+    {
+      "title": "Surajkund dam Stepped \"upstream\" side with sluice on center (2894711549).jpg",
+      "author": "Varun Shiv Kapur from New Delhi, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Surajkund_dam_Stepped_%22upstream%22_side_with_sluice_on_center_(2894711549).jpg"
+    },
+    {
+      "title": "Surajkund dam \"downstream\" side.jpg",
+      "author": "Varun Shiv Kapur",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Surajkund_dam_%22downstream%22_side.jpg"
+    },
+    {
+      "title": "Steps going into the dam1.jpg",
+      "author": "Varun Shiv Kapur",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Steps_going_into_the_dam1.jpg"
+    }
+  ],
+  "mughal-bridge": [
+    {
+      "title": "Budhiya-wala-nala-mughal-bridge.jpg",
+      "author": "Parveen K Sharma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Budhiya-wala-nala-mughal-bridge.jpg"
+    }
+  ],
+  "nahar-singh-palace": [
+    {
+      "title": "Nahar Singh Palace, Ballabhgarh.jpg",
+      "author": "Wiki.cowboy",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nahar_Singh_Palace,_Ballabhgarh.jpg"
+    }
+  ],
+  "surajkund-a-masonry-tank": [
+    {
+      "title": "Suraj Kund Masonary 001.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_001.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 010.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_010.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 034.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_034.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 021.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_021.jpg"
+    },
+    {
+      "title": "Suraj Kund Masonary 016.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Suraj_Kund_Masonary_016.jpg"
+    }
+  ],
+  "ancient-site-of-bhirrana": [
+    {
+      "title": "भिरड़ाना (Bhirdana) - 5.jpg",
+      "author": "Anamdas",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:%E0%A4%AD%E0%A4%BF%E0%A4%B0%E0%A4%A1%E0%A4%BC%E0%A4%BE%E0%A4%A8%E0%A4%BE_(Bhirdana)_-_5.jpg"
+    }
+  ],
+  "baoli-ghaus-ali-shah": [
+    {
+      "title": "Ali Gosh Khan Baoli 016.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ali_Gosh_Khan_Baoli_016.jpg"
+    },
+    {
+      "title": "Baoli Ghas Ali Shah 003.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Baoli_Ghas_Ali_Shah_003.jpg"
+    },
+    {
+      "title": "Ali Gosh Khan Baoli 012.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ali_Gosh_Khan_Baoli_012.jpg"
+    },
+    {
+      "title": "Ali Gosh Khan Baoli 009.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ali_Gosh_Khan_Baoli_009.jpg"
+    }
+  ],
+  "mosque-and-sarai-of-ala-vardi-khan": [
+    {
+      "title": "Mosque of Ala Vardi Khan , Gurugram 1.jpg",
+      "author": "Luma2rk",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Ala_Vardi_Khan_,_Gurugram_1.jpg"
+    },
+    {
+      "title": "Mosque of Ala Vardi Khan , Gurugram 3.jpg",
+      "author": "Luma2rk",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Ala_Vardi_Khan_,_Gurugram_3.jpg"
+    },
+    {
+      "title": "Mosque of Ala Vardi Khan , Gurugram 7.jpg",
+      "author": "Luma2rk",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Ala_Vardi_Khan_,_Gurugram_7.jpg"
+    },
+    {
+      "title": "Mosque of Ala Vardi Khan , Gurugram 10.jpg",
+      "author": "Luma2rk",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Ala_Vardi_Khan_,_Gurugram_10.jpg"
+    }
+  ],
+  "museocamera": [
+    {
+      "title": "Museo Camera in Gurugram, Haryana.jpg",
+      "author": "Kuldeepburjbhalaike",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Museo_Camera_in_Gurugram,_Haryana.jpg"
+    }
+  ],
+  "shish-mahal": [
+    {
+      "title": "Sheesh Mahal 002.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sheesh_Mahal_002.jpg"
+    },
+    {
+      "title": "Sheesh Mahal 007.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sheesh_Mahal_007.jpg"
+    },
+    {
+      "title": "Sheesh Mahal 010.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sheesh_Mahal_010.jpg"
+    },
+    {
+      "title": "Sheesh Mahal 011.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sheesh_Mahal_011.jpg"
+    }
+  ],
+  "ancient-gumbad": [
+    {
+      "title": "One of the four arched entrance, Pranpir Badshah's tomb 02.jpg",
+      "author": "Archipardeep",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:One_of_the_four_arched_entrance,_Pranpir_Badshah%27s_tomb_02.jpg"
+    },
+    {
+      "title": "One of the four arched entrance, Pranpir Badshah's tomb 01.jpg",
+      "author": "Archipardeep",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:One_of_the_four_arched_entrance,_Pranpir_Badshah%27s_tomb_01.jpg"
+    }
+  ],
+  "ancient-mound-agroha": [
+    {
+      "title": "Contemplating the future in the ruins of past (6562921193).jpg",
+      "author": "Archit Ratan from Gurugram, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Contemplating_the_future_in_the_ruins_of_past_(6562921193).jpg"
+    },
+    {
+      "title": "I found sometning intersteing in these ruins... (6562921161).jpg",
+      "author": "Archit Ratan from Gurugram, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:I_found_sometning_intersteing_in_these_ruins..._(6562921161).jpg"
+    }
+  ],
+  "feroz-shahs-palace-and-tahakhanas": [
+    {
+      "title": "Firoz Shah Palace And Tehkhana 01.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_01.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 05.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_05.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 06.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_06.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 07.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_07.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 10.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_10.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 11.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_11.jpg"
+    }
+  ],
+  "fort-of-prithvi-raj": [
+    {
+      "title": "Firoz Shah Palace And Tehkhana 01.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_01.jpg"
+    },
+    {
+      "title": "Gujri Mahal 1.jpg",
+      "author": "FlankerH1",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gujri_Mahal_1.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 04.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_04.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 10.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_10.jpg"
+    }
+  ],
+  "gujari-mahal": [
+    {
+      "title": "Gujri Mahal 1.jpg",
+      "author": "FlankerH1",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gujri_Mahal_1.jpg"
+    },
+    {
+      "title": "Gujri Mahal 2.jpg",
+      "author": "FlankerH1",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gujri_Mahal_2.jpg"
+    }
+  ],
+  "lat-ki-masjid": [
+    {
+      "title": "Hisar-Lat ki Masjid.jpg",
+      "author": "Rvenka0607",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Hisar-Lat_ki_Masjid.jpg"
+    },
+    {
+      "title": "Lat ki masjid.jpg",
+      "author": "Supriya bhutani",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Lat_ki_masjid.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 06.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_06.jpg"
+    },
+    {
+      "title": "Firoz Shah Palace And Tehkhana 07.jpg",
+      "author": "Madhaverma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Firoz_Shah_Palace_And_Tehkhana_07.jpg"
+    }
+  ],
+  "ruined-qila": [
+    {
+      "title": "Main Gate front look.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Main_Gate_front_look.jpg"
+    },
+    {
+      "title": "Out left side.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Out_left_side.jpg"
+    },
+    {
+      "title": "Some Left atrifacats.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Some_Left_atrifacats.jpg"
+    },
+    {
+      "title": "Cell for crimnal.jpg",
+      "author": "Pkindian23",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Cell_for_crimnal.jpg"
+    }
+  ],
+  "bodh-stupa": [
+    {
+      "title": "View of Assandh town from the Stupa.jpg",
+      "author": "Anamdas",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_Assandh_town_from_the_Stupa.jpg"
+    }
+  ],
+  "dhamtan-sahib": [
+    {
+      "title": "Gurdwara dhamtan sahib.jpg",
+      "author": "Kuldeepburjbhalaike",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gurdwara_dhamtan_sahib.jpg"
+    },
+    {
+      "title": "Gurdwara dhamtan sahib1.jpg",
+      "author": "Kuldeepburjbhalaike",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gurdwara_dhamtan_sahib1.jpg"
+    },
+    {
+      "title": "Gurdwara dhamtan sahib2.jpg",
+      "author": "Kuldeepburjbhalaike",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Gurdwara_dhamtan_sahib2.jpg"
+    }
+  ],
+  "fort-of-jind": [
+    {
+      "title": "View of the fortress and palace of Jind - British Library Add.Or.4790.jpg",
+      "author": "Sita Ram",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_fortress_and_palace_of_Jind_-_British_Library_Add.Or.4790.jpg"
+    }
+  ],
+  "narwana": [
+    {
+      "title": "Baba Gaibi Saheb.jpg",
+      "author": "Khushibanwala",
+      "licence": "CC0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Baba_Gaibi_Saheb.jpg"
+    }
+  ],
+  "ancient-bricks-temple": [
+    {
+      "title": "Brick Temple Complex, Kalayat, Kaithal, Haryana, India 03.jpg",
+      "author": "Manoj Khurana",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brick_Temple_Complex,_Kalayat,_Kaithal,_Haryana,_India_03.jpg"
+    },
+    {
+      "title": "Brick Temple Complex, Kalayat, Kaithal, Haryana, India 02.jpg",
+      "author": "Manoj Khurana",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brick_Temple_Complex,_Kalayat,_Kaithal,_Haryana,_India_02.jpg"
+    },
+    {
+      "title": "Brick Temple Complex, Kalayat, Kaithal, Haryana, India 06.jpg",
+      "author": "Manoj Khurana",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brick_Temple_Complex,_Kalayat,_Kaithal,_Haryana,_India_06.jpg"
+    },
+    {
+      "title": "Brick Temple Complex, Kalayat, Kaithal, Haryana, India 11.jpg",
+      "author": "Manoj Khurana",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brick_Temple_Complex,_Kalayat,_Kaithal,_Haryana,_India_11.jpg"
+    }
+  ],
+  "forts-and-palaces-of-bhais": [
+    {
+      "title": "Ruins of Kaithal fortress, Haryana.jpg",
+      "author": "BOMBMAN",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ruins_of_Kaithal_fortress,_Haryana.jpg"
+    },
+    {
+      "title": "Kaithal Fort in 2016 - 1.jpg",
+      "author": "Manojkhurana",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kaithal_Fort_in_2016_-_1.jpg"
+    }
+  ],
+  "palace-at-pihowa": [
+    {
+      "title": "Photograph of the house of Bhai Uday Singh of Kaithal State, by Francis Frith, Pehowa, ca.1850's–70's.jpg",
+      "author": "Francis Frith (via Victoria and Albert Museum)",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Photograph_of_the_house_of_Bhai_Uday_Singh_of_Kaithal_State,_by_Francis_Frith,_Pehowa,_ca.1850%27s%E2%80%9370%27s.jpg"
+    }
+  ],
+  "tomb-of-sheikh-tayyab": [
+    {
+      "title": "Front view of monument.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_view_of_monument.jpg"
+    },
+    {
+      "title": "Corner view of monument.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Corner_view_of_monument.jpg"
+    },
+    {
+      "title": "Side view of the monument.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Side_view_of_the_monument.jpg"
+    },
+    {
+      "title": "Close view of Monument entrance.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Close_view_of_Monument_entrance.jpg"
+    }
+  ],
+  "cantonment-church-tower": [
+    {
+      "title": "Karnal Cantonment Church Tower.jpg",
+      "author": "Ansh Walia",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Karnal_Cantonment_Church_Tower.jpg"
+    },
+    {
+      "title": "Front view of cantonment church tower.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_view_of_cantonment_church_tower.jpg"
+    },
+    {
+      "title": "Clear side view of cantonment church tower.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Clear_side_view_of_cantonment_church_tower.jpg"
+    },
+    {
+      "title": "Cantonment Church Tower, Karnal.jpg",
+      "author": "Parneet Singh",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Cantonment_Church_Tower,_Karnal.jpg"
+    }
+  ],
+  "european-soldiers-grave": [
+    {
+      "title": "European Soldier's Grave.jpg",
+      "author": "Ansh Walia",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:European_Soldier%27s_Grave.jpg"
+    },
+    {
+      "title": "European graves on the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:European_graves_on_the_site.jpg"
+    },
+    {
+      "title": "Remains left on the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Remains_left_on_the_site.jpg"
+    },
+    {
+      "title": "Neha cemetery1.jpg",
+      "author": "Nehakhetrapal",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Neha_cemetery1.jpg"
+    },
+    {
+      "title": "Neha cemetery3.jpg",
+      "author": "Nehakhetrapal",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Neha_cemetery3.jpg"
+    }
+  ],
+  "gateway-of-old-mughal-sarai": [
+    {
+      "title": "Full view of mughal sarai.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Full_view_of_mughal_sarai.jpg"
+    },
+    {
+      "title": "View of mughal sarai from inside.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_mughal_sarai_from_inside.jpg"
+    },
+    {
+      "title": "Entrance view of mughal sarai.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_view_of_mughal_sarai.jpg"
+    },
+    {
+      "title": "Brick tower of mughal sarai.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Brick_tower_of_mughal_sarai.jpg"
+    }
+  ],
+  "karna-tank": [
+    {
+      "title": "Karna lake 03.jpg",
+      "author": "Aniket",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Karna_lake_03.jpg"
+    },
+    {
+      "title": "Karna lake 04.jpg",
+      "author": "Aniket",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Karna_lake_04.jpg"
+    }
+  ],
+  "kushan-stupa": [
+    {
+      "title": "View of Assandh town from the Stupa.jpg",
+      "author": "Anamdas",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_Assandh_town_from_the_Stupa.jpg"
+    }
+  ],
+  "taraori-sarai": [
+    {
+      "title": "Kos Minar2.JPG",
+      "author": "CharulSingla",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar2.JPG"
+    },
+    {
+      "title": "Kos Minar1.JPG",
+      "author": "CharulSingla",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar1.JPG"
+    }
+  ],
+  "bhadrakali-temple": [
+    {
+      "title": "Shaktipeeth Shri Devikoop Bhadrakali Mandir, Kurukshetra.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Shaktipeeth_Shri_Devikoop_Bhadrakali_Mandir,_Kurukshetra.jpg"
+    }
+  ],
+  "bhishma-kund-narkatari": [
+    {
+      "title": "Bheeshma Kund, Narakatari.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Bheeshma_Kund,_Narakatari.jpg"
+    },
+    {
+      "title": "Bhishma Kund-Kurukshetra.JPG",
+      "author": "Vjdchauhan",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Bhishma_Kund-Kurukshetra.JPG"
+    }
+  ],
+  "dharohar-museum": [
+    {
+      "title": "Dharohar Entry.png",
+      "author": "Muskan1903",
+      "licence": "CC0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Dharohar_Entry.png"
+    },
+    {
+      "title": "Dharohar inside.png",
+      "author": "Muskan1903",
+      "licence": "CC0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Dharohar_inside.png"
+    }
+  ],
+  "kartikeya-temple": [
+    {
+      "title": "Pehowa, Arunai - 5.jpeg",
+      "author": "Manojkhurana",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Pehowa,_Arunai_-_5.jpeg"
+    },
+    {
+      "title": "Sarawati River and Temple - Pitrudhak Teerth - Pehowa.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sarawati_River_and_Temple_-_Pitrudhak_Teerth_-_Pehowa.jpg"
+    }
+  ],
+  "light-and-sound-show-at-jyotisar": [
+    {
+      "title": "Banyan tree at Jyotisar.jpg",
+      "author": "Ravinder M A from Bangalore, India",
+      "licence": "CC BY 2.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Banyan_tree_at_Jyotisar.jpg"
+    },
+    {
+      "title": "Jyotisar-Kurukshetra-India.jpg",
+      "author": "Nalbarian",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Jyotisar-Kurukshetra-India.jpg"
+    },
+    {
+      "title": "Replica of Krishnarjuna Chariot Jyotisar.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_Krishnarjuna_Chariot_Jyotisar.jpg"
+    },
+    {
+      "title": "Geeta upadesh sthali, Jyotisar, Kurukshetra.jpg",
+      "author": "आशीष_भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Geeta_upadesh_sthali,_Jyotisar,_Kurukshetra.jpg"
+    }
+  ],
+  "nabha-house": [
+    {
+      "title": "Landscape view of nabha house.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Landscape_view_of_nabha_house.jpg"
+    },
+    {
+      "title": "Nabha House Inside View.jpg",
+      "author": "Rahul86.dev",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nabha_House_Inside_View.jpg"
+    },
+    {
+      "title": "View of nabha house from outside road.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_nabha_house_from_outside_road.jpg"
+    },
+    {
+      "title": "Panoramic side view of entrance of nabha house.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_side_view_of_entrance_of_nabha_house.jpg"
+    },
+    {
+      "title": "Entrance view of the building.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_view_of_the_building.jpg"
+    }
+  ],
+  "pathar-masjid": [
+    {
+      "title": "Pathar Masjid.jpg",
+      "author": "Rohit Agarwal",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Pathar_Masjid.jpg"
+    }
+  ],
+  "prachin-shiva-temple": [
+    {
+      "title": "Sarawati River and Temple - Pitrudhak Teerth - Pehowa.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sarawati_River_and_Temple_-_Pitrudhak_Teerth_-_Pehowa.jpg"
+    },
+    {
+      "title": "Saraswati Temple main entrance - ancient archway.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Saraswati_Temple_main_entrance_-_ancient_archway.jpg"
+    },
+    {
+      "title": "Fresco on the Sarasawti temple wall - Archaeological treasure.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Fresco_on_the_Sarasawti_temple_wall_-_Archaeological_treasure.jpg"
+    }
+  ],
+  "raja-harsha-ka-tila": [
+    {
+      "title": "Well preserved remaining structures on the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Well_preserved_remaining_structures_on_the_site.jpg"
+    },
+    {
+      "title": "View from the terrace of remains.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_terrace_of_remains.jpg"
+    },
+    {
+      "title": "Remains on the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Remains_on_the_site.jpg"
+    },
+    {
+      "title": "Ruins of Harsha a Tila warehouse.JPG",
+      "author": "Viraat Kothare",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ruins_of_Harsha_a_Tila_warehouse.JPG"
+    },
+    {
+      "title": "Another view of the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Another_view_of_the_site.jpg"
+    }
+  ],
+  "sannihit-sarovar": [
+    {
+      "title": "Sannihit Sarovar Large View.jpg",
+      "author": "Cssambala",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sannihit_Sarovar_Large_View.jpg"
+    }
+  ],
+  "shri-krishna-museum": [
+    {
+      "title": "Sri Krishna Sangrahalay, Kurukshetra.jpg",
+      "author": "आशीष भटनागर",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sri_Krishna_Sangrahalay,_Kurukshetra.jpg"
+    }
+  ],
+  "sthaneshwara-mahadev-temple": [
+    {
+      "title": "Sthaneshwar mahadev mandir.jpg",
+      "author": "OjAg",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sthaneshwar_mahadev_mandir.jpg"
+    },
+    {
+      "title": "Sthaneshwar Mahadev temple Thanesar.jpg",
+      "author": "Sid Sharma5911",
+      "licence": "CC BY 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sthaneshwar_Mahadev_temple_Thanesar.jpg"
+    },
+    {
+      "title": "Sthaneshwar Mahadev ji.jpg",
+      "author": "Sid Sharma5911",
+      "licence": "CC BY 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sthaneshwar_Mahadev_ji.jpg"
+    },
+    {
+      "title": "Sthaneshwar mahadev temple.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sthaneshwar_mahadev_temple.jpg"
+    },
+    {
+      "title": "Sthaneshwar Sarovar.jpg",
+      "author": "Kavurisgs",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sthaneshwar_Sarovar.jpg"
+    }
+  ],
+  "thanesar-archaeological-site-museum": [
+    {
+      "title": "Entrance view of complex with galleries.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_view_of_complex_with_galleries.jpg"
+    },
+    {
+      "title": "Sheikh Chehli's Tomb, Kurukshetra, Haryana, India.jpeg",
+      "author": "Manojkhurana",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sheikh_Chehli%27s_Tomb,_Kurukshetra,_Haryana,_India.jpeg"
+    },
+    {
+      "title": "Situated at high altitude.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Situated_at_high_altitude.jpg"
+    },
+    {
+      "title": "Well preserved remaining structures on the site.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Well_preserved_remaining_structures_on_the_site.jpg"
+    },
+    {
+      "title": "Harsh Ka Tila.jpg",
+      "author": "Rohit Agarwal",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Harsh_Ka_Tila.jpg"
+    }
+  ],
+  "vishvamitra-ka-tila": [
+    {
+      "title": "Sarawati River and Temple - Pitrudhak Teerth - Pehowa.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Sarawati_River_and_Temple_-_Pitrudhak_Teerth_-_Pehowa.jpg"
+    },
+    {
+      "title": "Saraswati Temple main entrance - ancient archway.jpg",
+      "author": "Giridharmamidi",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Saraswati_Temple_main_entrance_-_ancient_archway.jpg"
+    }
+  ],
+  "birbal-ka-chhatta": [
+    {
+      "title": "Chatta Rai Bal Mukund Das.JPG",
+      "author": "Priyanka1tamta",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Chatta_Rai_Bal_Mukund_Das.JPG"
+    },
+    {
+      "title": "Chatta Rai Bal Mukund Das of Narnaul, Haryana, India.JPG",
+      "author": "Priyanka1tamta",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Chatta_Rai_Bal_Mukund_Das_of_Narnaul,_Haryana,_India.JPG"
+    },
+    {
+      "title": "Bibral Ka Chatta.jpg",
+      "author": "Jainvaibhav1008",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Bibral_Ka_Chatta.jpg"
+    }
+  ],
+  "chor-gumbad": [
+    {
+      "title": "Chor Gumbad, Narnaul 11.jpg",
+      "author": "Vkvikas3",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Chor_Gumbad,_Narnaul_11.jpg"
+    }
+  ],
+  "jal-mahal-narnaul": [
+    {
+      "title": "Jal Mahal of Narnaul,Haryana, India..JPG",
+      "author": "Priyanka1tamta",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Jal_Mahal_of_Narnaul,Haryana,_India..JPG"
+    },
+    {
+      "title": "Jal Mahal, Narnaul, Haryana 10.jpg",
+      "author": "Vkvikas3",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Jal_Mahal,_Narnaul,_Haryana_10.jpg"
+    },
+    {
+      "title": "Jal Mahal, Narnaul, Haryana 26.jpg",
+      "author": "Vkvikas3",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Jal_Mahal,_Narnaul,_Haryana_26.jpg"
+    }
+  ],
+  "tomb-of-ibrahim-khan-suri": [
+    {
+      "title": "Shah Ibrahim Tomb.jpg",
+      "author": "Ashish Rohilla HR",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Shah_Ibrahim_Tomb.jpg"
+    }
+  ],
+  "raja-nahar-singhfort-ballabgarh": [
+    {
+      "title": "Nahar Singh Palace, Ballabhgarh.jpg",
+      "author": "Wiki.cowboy",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nahar_Singh_Palace,_Ballabhgarh.jpg"
+    }
+  ],
+  "bhima-devi-temple": [
+    {
+      "title": "Subsidiary shrine of Bhima Devi Temple, Pinjore, Haryana.jpg",
+      "author": "SpeakingArch",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Subsidiary_shrine_of_Bhima_Devi_Temple,_Pinjore,_Haryana.jpg"
+    },
+    {
+      "title": "Fragmented Amalaka, Bhima Devi Temple, Pinjore, Haryana.jpg",
+      "author": "SpeakingArch",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Fragmented_Amalaka,_Bhima_Devi_Temple,_Pinjore,_Haryana.jpg"
+    },
+    {
+      "title": "Fragment of Panel with Gandharvas, Dancers and Musicians, circa 8th -11th century CE Bhima Devi Temple, Pinjore, Haryana.jpg",
+      "author": "SpeakingArch",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Fragment_of_Panel_with_Gandharvas,_Dancers_and_Musicians,_circa_8th_-11th_century_CE_Bhima_Devi_Temple,_Pinjore,_Haryana.jpg"
+    }
+  ],
+  "cactus-garden": [
+    {
+      "title": "Garden view of cactus garden.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Garden_view_of_cactus_garden.jpg"
+    },
+    {
+      "title": "Plants view on cactus garden.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Plants_view_on_cactus_garden.jpg"
+    },
+    {
+      "title": "Two old cactus plant on cactus garden.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Two_old_cactus_plant_on_cactus_garden.jpg"
+    }
+  ],
+  "nahan-kothi": [
+    {
+      "title": "Nahan Kothi Front View.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nahan_Kothi_Front_View.jpg"
+    },
+    {
+      "title": "Nahan Kothi Side View.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nahan_Kothi_Side_View.jpg"
+    },
+    {
+      "title": "Nahan Kothi.jpg",
+      "author": "Raja Vikrant Sharma",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Nahan_Kothi.jpg"
+    }
+  ],
+  "tirath-satkumbha-temple": [
+    {
+      "title": "Satkumba Mandir form Kheri Gujjar (Ravi Kumar) - panoramio.jpg",
+      "author": "RaviKumar",
+      "licence": "CC BY 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Satkumba_Mandir_form_Kheri_Gujjar_(Ravi_Kumar)_-_panoramio.jpg"
+    }
+  ],
+  "tomb-of-khwaja-khizr": [
+    {
+      "title": "Front view of main tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_view_of_main_tomb.jpg"
+    },
+    {
+      "title": "Another isometric view of tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Another_isometric_view_of_tomb.jpg"
+    },
+    {
+      "title": "Entrance arc as a frame of the tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Entrance_arc_as_a_frame_of_the_tomb.jpg"
+    },
+    {
+      "title": "Architectural view of tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Architectural_view_of_tomb.jpg"
+    },
+    {
+      "title": "Interior view of tomb.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Interior_view_of_tomb.jpg"
+    }
+  ],
+  "bab-i-faiz-gate": [
+    {
+      "title": "View of gate through market road.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_gate_through_market_road.jpg"
+    },
+    {
+      "title": "Angle view of gate.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Angle_view_of_gate.jpg"
+    },
+    {
+      "title": "Conditions of gate.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Conditions_of_gate.jpg"
+    },
+    {
+      "title": "View of gate when goes through it.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_gate_when_goes_through_it.jpg"
+    }
+  ],
+  "hemus-samadhi-sthal": [
+    {
+      "title": "Raja Hemu's 'Beheading Place'.JPG",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Raja_Hemu%27s_%27Beheading_Place%27.JPG"
+    },
+    {
+      "title": "Statue of Hem Chandra Vikramaditya at Panipat.JPG",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_Hem_Chandra_Vikramaditya_at_Panipat.JPG"
+    }
+  ],
+  "kabuli-bagh-mosque-panipat": [
+    {
+      "title": "Babari Maszid at Panipat.jpg",
+      "author": "DRBHAMRA",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Babari_Maszid_at_Panipat.jpg"
+    },
+    {
+      "title": "Front panoramic view of the mosque.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_panoramic_view_of_the_mosque.jpg"
+    },
+    {
+      "title": "Close view of entry point of mosque.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Close_view_of_entry_point_of_mosque.jpg"
+    },
+    {
+      "title": "Arch hallways present inside the mosque.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Arch_hallways_present_inside_the_mosque.jpg"
+    },
+    {
+      "title": "A part of mosque which is broken.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:A_part_of_mosque_which_is_broken.jpg"
+    }
+  ],
+  "obelisk-commemorated-to-the-third-battle-of-panipat": [
+    {
+      "title": "Kala Amb Obelisk.JPG",
+      "author": "Ramesh lalwani",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kala_Amb_Obelisk.JPG"
+    },
+    {
+      "title": "Kala Amb.jpg",
+      "author": "Gagangaurav14",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kala_Amb.jpg"
+    },
+    {
+      "title": "Mural of 3rd Battle of Panipat at war-site, Kala Amb, Panipat.jpg",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mural_of_3rd_Battle_of_Panipat_at_war-site,_Kala_Amb,_Panipat.jpg"
+    }
+  ],
+  "salar-gunj-gate": [
+    {
+      "title": "Portrait view of gate through market road.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Portrait_view_of_gate_through_market_road.jpg"
+    },
+    {
+      "title": "Angle view of gate.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Angle_view_of_gate.jpg"
+    },
+    {
+      "title": "View from terrace of the gate.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_from_terrace_of_the_gate.jpg"
+    },
+    {
+      "title": "Corner brick details of the gate.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Corner_brick_details_of_the_gate.jpg"
+    }
+  ],
+  "the-original-babri-masjid": [
+    {
+      "title": "Babari Maszid at Panipat.jpg",
+      "author": "DRBHAMRA",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Babari_Maszid_at_Panipat.jpg"
+    },
+    {
+      "title": "Close view of entry point of mosque.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Close_view_of_entry_point_of_mosque.jpg"
+    },
+    {
+      "title": "Arch hallways present inside the mosque.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Arch_hallways_present_inside_the_mosque.jpg"
+    },
+    {
+      "title": "A part of mosque which is broken.jpg",
+      "author": "Chiragb678",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:A_part_of_mosque_which_is_broken.jpg"
+    }
+  ],
+  "tomb-of-bu-ali-shah-qalandar": [
+    {
+      "title": "Tomb of Bu Ali Shah Qalandar.jpg",
+      "author": "Syedrais",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Tomb_of_Bu_Ali_Shah_Qalandar.jpg"
+    },
+    {
+      "title": "Mazar Bu Ali.JPG",
+      "author": "Syedrais",
+      "licence": "Public domain",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mazar_Bu_Ali.JPG"
+    }
+  ],
+  "baag-wala-talab": [
+    {
+      "title": "Baag wala Talab - Rewari.jpg",
+      "author": "Bhupinder 90",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Baag_wala_Talab_-_Rewari.jpg"
+    }
+  ],
+  "bada-talab": [
+    {
+      "title": "'Cows Ghat' at 'Bada Talao', Rewari.JPG",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:%27Cows_Ghat%27_at_%27Bada_Talao%27,_Rewari.JPG"
+    },
+    {
+      "title": "Royal Pavillions at 'Bada Talao' Rewari.JPG",
+      "author": "Sudhirkbhargava",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Royal_Pavillions_at_%27Bada_Talao%27_Rewari.JPG"
+    }
+  ],
+  "tilyar-convention-centre": [
+    {
+      "title": "Tilyar Lake water And greenary.jpg",
+      "author": "Awwal Siwach",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Tilyar_Lake_water_And_greenary.jpg"
+    }
+  ],
+  "ancient-site-of-sugh": [
+    {
+      "title": "Ancient Mound site =Sugh=.jpg",
+      "author": "Gagandeep2065",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ancient_Mound_site_%3DSugh%3D.jpg"
+    },
+    {
+      "title": "Ancient Mound site *Sugh*.jpg",
+      "author": "Gagandeep2065",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ancient_Mound_site_*Sugh*.jpg"
+    },
+    {
+      "title": "Ancient Mound site (Sugh).jpg",
+      "author": "Gagandeep2065",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ancient_Mound_site_(Sugh).jpg"
+    }
+  ],
+  "bilaspur-and-kapalmochan": [
+    {
+      "title": "Kapal Mochan Temple.jpg",
+      "author": "Karantsingh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kapal_Mochan_Temple.jpg"
+    },
+    {
+      "title": "Kapal Mochan Gurdwara.jpg",
+      "author": "Karantsingh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kapal_Mochan_Gurdwara.jpg"
+    },
+    {
+      "title": "Kapal Mochan Sarovar.jpg",
+      "author": "Karantsingh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kapal_Mochan_Sarovar.jpg"
+    },
+    {
+      "title": "Mahadev Temple Kapal Mochan.jpg",
+      "author": "Karantsingh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Mahadev_Temple_Kapal_Mochan.jpg"
+    }
+  ],
+  "buddhist-stupa-chaneti": [
+    {
+      "title": "Accredited to the Mauryan Emperor, Ashoka, Chaneti Stupa , Sugh in Haryana.jpg",
+      "author": "SpeakingArch",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Accredited_to_the_Mauryan_Emperor,_Ashoka,_Chaneti_Stupa_,_Sugh_in_Haryana.jpg"
+    },
+    {
+      "title": "Chaneti Buddha Stupa 01.jpg",
+      "author": "Capricorn30",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Chaneti_Buddha_Stupa_01.jpg"
+    },
+    {
+      "title": "Chaneti Buddha Stupa 04.jpg",
+      "author": "Capricorn30",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Chaneti_Buddha_Stupa_04.jpg"
+    }
+  ],
+  "harnol-and-topra": [
+    {
+      "title": "Front views from date of Ashok Satambh Park at topra kalan.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Front_views_from_date_of_Ashok_Satambh_Park_at_topra_kalan.jpg"
+    },
+    {
+      "title": "Ashoka chakra at Ashok Satambh Park at topra kalan.jpg",
+      "author": "Pankajkukreti03",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Ashoka_chakra_at_Ashok_Satambh_Park_at_topra_kalan.jpg"
+    }
+  ],
+  "kalesar-forest-reserve": [
+    {
+      "title": "KALESAR NP AREA GTAE.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:KALESAR_NP_AREA_GTAE.jpg"
+    },
+    {
+      "title": "SACRED GROOVES IN KALESAR NATIONAL PARK AREA.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:SACRED_GROOVES_IN_KALESAR_NATIONAL_PARK_AREA.jpg"
+    },
+    {
+      "title": "SUNSET VIEW FROM KALESAR NATIONAL PARK.jpg",
+      "author": "Missyadav25",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:SUNSET_VIEW_FROM_KALESAR_NATIONAL_PARK.jpg"
+    }
+  ],
+  "kos-minar": [
+    {
+      "title": "Kos Minar , the Milestone.JPG",
+      "author": "Harvinder Chandigarh",
+      "licence": "CC BY-SA 4.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar_,_the_Milestone.JPG"
+    },
+    {
+      "title": "Kos Minar2.JPG",
+      "author": "CharulSingla",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar2.JPG"
+    },
+    {
+      "title": "Kos Minar 001.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar_001.jpg"
+    },
+    {
+      "title": "Kos Minar 003.jpg",
+      "author": "Anupamg",
+      "licence": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Kos_Minar_003.jpg"
+    }
   ]
 };
