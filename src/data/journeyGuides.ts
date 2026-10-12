@@ -11455,67 +11455,6 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
     },
   },
   {
-    destId: "pani-kotha",
-    arrivalPoints: [
-      {
-        by: "Flight", icon: "✈️", name: "Surat Airport (STV)", distanceFromCity: "~80 km from Pani Kotha (Fortim do Mar)",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Take a taxi or auto-rickshaw from Surat Airport airport to Pani Kotha (Fortim do Mar)", cost: "₹1,500-₹3,000", duration: "90+ min", tip: "Agree on the fare upfront or insist on the meter — prepaid counters are common at bigger stations/airports." },
-          { step: 2, icon: "🏨", action: "Check in and confirm your return transport option with your hotel", cost: "—", duration: "—", tip: "Save your hotel's address in the local script/language if you don't speak the regional language — makes showing a driver much easier." },
-        ],
-      },
-      {
-        by: "Train", icon: "🚂", name: "Surat Railway Station (ST)", distanceFromCity: "~90 km from Pani Kotha (Fortim do Mar)",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Take a taxi or auto-rickshaw from Surat Railway Station station to Pani Kotha (Fortim do Mar)", cost: "₹1,500-₹3,000", duration: "90+ min", tip: "Agree on the fare upfront or insist on the meter — prepaid counters are common at bigger stations/airports." },
-          { step: 2, icon: "🏨", action: "Check in and store valuables securely", cost: "—", duration: "—", tip: "Keep a photo of your ID on your phone — useful for check-ins and ticket counters." },
-        ],
-      },
-      {
-        by: "Road", icon: "🚗", name: "By car, cab, or bus", distanceFromCity: "Varies by origin — see the \"Getting There\" tab for a route from your specific starting city",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Self-drive, a private cab, or an interstate bus are all realistic options to reach Pani Kotha (Fortim do Mar) directly", cost: "Varies by distance", duration: "Varies by distance", tip: "Check the \"Getting There\" tab above for a distance and cost estimate from your actual starting city." },
-          { step: 2, icon: "🏨", action: "Check in and confirm parking (if self-driving) or your onward transport with your hotel", cost: "—", duration: "—", tip: "If driving yourself, ask about secure parking when you book — not every stay has it." },
-        ],
-      },
-    ],
-    weatherSeasons: [
-      { season: "Winter", months: "November – February", icon: "❄️", tempRange: "15°C – 29°C", feels: "Pleasant, coastal", carry: ["Light layers for evenings"], warning: "The most comfortable season for sightseeing.", clothingAdvice: "Light layers." },
-      { season: "Summer", months: "March – May", icon: "🔥", tempRange: "27°C – 38°C", feels: "Hot and humid", carry: ["Light cotton clothing", "Sunscreen"], warning: "Coastal humidity builds through May ahead of monsoon.", clothingAdvice: "Light, breathable clothing." },
-      { season: "Monsoon", months: "June – September", icon: "🌧️", tempRange: "24°C – 30°C", feels: "Wet and humid", carry: ["Raincoat", "Quick-dry clothing"], warning: "Coastal monsoon can be heavy — check conditions before travelling.", clothingAdvice: "Light, quick-dry clothing." },
-    ],
-    cityHurdles: [],
-    cityEssentials: {
-      atm: "ATMs and bank branches are available in Surat, the nearest major town; carry some cash for Pani Kotha (Fortim do Mar) itself in case local options are limited.", sim: "Jio, Airtel, and Vi all have coverage in towns; signal can be patchy in remote/hilly stretches — download offline maps beforehand", wifi: "Most hotels and cafes in the main town offer WiFi; mobile data is the more reliable option while out and about", medical: "Basic pharmacies and clinics in the nearest town for minor issues; for anything serious, head to the nearest city hospital — ask your hotel for the closest one. Surat has larger hospitals for anything beyond minor issues.",
-      language: "Gujarati and Hindi are common; English works in tourist areas", localEmergency: "112 (all-in-one emergency), 102 (ambulance), 100 (police), 101 (fire) — toll-free from any phone, even without a SIM", upi: "UPI (GPay/PhonePe/Paytm) is widely accepted in shops, autos, and by vendors in towns and cities; carry some cash as backup for smaller/remote spots", powerOutlet: "Type C/D/M sockets, 230V — standard across India; bring a universal adapter if arriving from abroad",
-    },
-    localAttractions: [],
-    fromCityToSight: "From Surat, the nearest major transport hub, Pani Kotha (Fortim do Mar) is reached by road — taxis and autos cover the final stretch. See the \"Getting There\" tab above for a distance and transport breakdown from your specific starting city.",
-    firstThingsToDo: [],
-    travelAdvisory: {
-      updatedFrom: "General travel guidance (not sourced from an official state tourism advisory)",
-      bestTimeToVisit: "November – February (Winter)",
-      peakSeason: "November – February",
-      offSeason: "March – May and June – September",
-      alerts: [
-        { level: "info", icon: "🌦️", title: "Winter is generally the most comfortable time to visit", detail: "The most comfortable season for sightseeing." },
-        { level: "info", icon: "🌦️", title: "Planning around summer (March – May)", detail: "Coastal humidity builds through May ahead of monsoon." },
-        { level: "caution", icon: "⚠️", title: "Planning around monsoon (June – September)", detail: "Coastal monsoon can be heavy — check conditions before travelling." },
-      ],
-      dos: ["Dress modestly at religious sites — cover shoulders and knees", "Carry a government-issued photo ID at all times", "Stay hydrated and carry water, especially in hot weather", "Use registered taxis, prepaid counters, or well-known app cabs", "Keep small-denomination cash on hand for local vendors"],
-      donts: ["Don't drink tap water — stick to sealed bottled or filtered water", "Don't accept unsolicited help from strangers near tourist sites — politely decline and walk on", "Don't photograph people, especially at religious sites, without asking first", "Don't flash cash or valuables in crowded areas"],
-      emergencyContacts: [
-        { label: "All-in-one Emergency", number: "112", icon: "🚨" },
-        { label: "Ambulance", number: "102", icon: "🚑" },
-        { label: "Police", number: "100", icon: "👮" },
-        { label: "Fire", number: "101", icon: "🚒" },
-      ],
-      healthTips: ["Carry a basic first-aid kit and any personal medication you need", "Use sunscreen and stay hydrated, especially in hot or high-altitude areas", "Travel/health insurance is strongly recommended for any India trip"],
-      culturalNotes: ["Gujarati and Hindi are common; English works in tourist areas", "Remove footwear before entering temples and most homes", "A namaste (palms together, slight bow) is a warm, universally understood greeting"],
-      moneyTips: ["UPI (GPay/PhonePe/Paytm) is widely accepted in shops, autos, and by vendors in towns and cities; carry some cash as backup for smaller/remote spots", "ATMs are available in nearby towns — withdraw cash in advance for more remote stops", "Bargaining is normal and expected at local markets, less so in fixed-price or branded stores"],
-    },
-  },
-  {
     destId: "kolkata",
     arrivalPoints: [
       {

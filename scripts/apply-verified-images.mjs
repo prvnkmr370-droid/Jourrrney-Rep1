@@ -49,10 +49,10 @@ function fileKey(url) {
 }
 
 async function urlOk(url) {
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < 7; attempt++) {
     try {
       const res = await fetch(url, { method: "HEAD", headers: { "User-Agent": UA } });
-      if (res.status === 429) { await sleep(1500 * (attempt + 1)); continue; }
+      if (res.status === 429 || res.status >= 500) { await sleep(2500 * (attempt + 1)); continue; }
       return res.status === 200 && /^image\//.test(res.headers.get("content-type") ?? "");
     } catch {
       await sleep(800);

@@ -36,9 +36,11 @@ const API = "https://commons.wikimedia.org/w/api.php";
 const UA = "JourneyApp-ImageResearch/1.0 (https://github.com/prvnkmr370-droid/Jourrrney-Rep1)";
 const THUMB_WIDTH = 1280;
 const MIN_WIDTH = 1000;
-const MAX_PER_CARD = 16;
+const MAX_PER_CARD = Number(process.env.CAND_MAX ?? 16);
 // A geotagged file farther than this from the card's coordinates is not that place.
 const MAX_GEO_KM = 150;
+// Upper bound on files whose metadata is fetched per card.
+const MAX_FETCH = Number(process.env.MAX_FETCH ?? 100);
 
 const [, , cardsPath, outPath] = process.argv;
 if (!cardsPath || !outPath) {
@@ -106,7 +108,7 @@ async function imageInfo(titles) {
       const ii = page.imageinfo?.[0];
       if (ii) out.push({ title: page.title, ii });
     }
-    await sleep(250);
+    await sleep(100);
   }
   return out;
 }
@@ -127,12 +129,12 @@ async function categoryFiles(name, any = []) {
   for (const cat of cats) {
     const files = await api({ action: "query", list: "categorymembers", cmtitle: cat, cmtype: "file", cmlimit: "60" });
     for (const f of files?.query?.categorymembers ?? []) found.add(f.title);
-    const subs = await api({ action: "query", list: "categorymembers", cmtitle: cat, cmtype: "subcat", cmlimit: "8" });
-    for (const sc of (subs?.query?.categorymembers ?? []).slice(0, 4)) {
-      const sf = await api({ action: "query", list: "categorymembers", cmtitle: sc.title, cmtype: "file", cmlimit: "25" });
+    const subs = await api({ action: "query", list: "categorymembers", cmtitle: cat, cmtype: "subcat", cmlimit: "6" });
+    for (const sc of (subs?.query?.categorymembers ?? []).slice(0, 3)) {
+      const sf = await api({ action: "query", list: "categorymembers", cmtitle: sc.title, cmtype: "file", cmlimit: "20" });
       for (const f of sf?.query?.categorymembers ?? []) found.add(f.title);
     }
-    await sleep(200);
+    await sleep(80);
   }
   return [...found];
 }
@@ -163,13 +165,17 @@ for (const card of cards) {
   process.stderr.write(`• ${card.id} ...`);
   const titles = new Set();
   const fromCat = new Set();
-  const catQueries = card.categoryQueries ?? names;
+  const catQueries = card.categoryQueries ?? names.slice(0, 2);
   for (const n of catQueries) for (const t of await categoryFiles(n, card.categoryAny ?? [])) { titles.add(t); fromCat.add(t); }
   if (card.coords) for (const t of await geoFiles(card.coords, radiusM)) titles.add(t);
   const textQueries = card.queries ?? names.slice(0, 2).map((n) => `${n} ${card.state ?? ""}`.trim());
   for (const q of textQueries) for (const t of await textFiles(q)) titles.add(t);
 
-  const fresh = [...titles].filter((t) => !existing.has(t) && !TITLE_SKIP.test(t));
+  // Only the best ~100 files are worth fetching metadata for (the output keeps
+  // the top MAX_PER_CARD): place-category files first, then the rest in the
+  // order they were found (geotag-nearest, then text-search rank).
+  const ordered = [...fromCat, ...[...titles].filter((t) => !fromCat.has(t))];
+  const fresh = ordered.filter((t) => !existing.has(t) && !TITLE_SKIP.test(t)).slice(0, MAX_FETCH);
   const infos = await imageInfo(fresh);
 
   const nameTokens = [...names, ...(card.nameHints ?? [])].map(norm).filter(Boolean);
