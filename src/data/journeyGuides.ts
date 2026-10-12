@@ -47750,67 +47750,6 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
     },
   },
   {
-    destId: "bodh-stupa",
-    arrivalPoints: [
-      {
-        by: "Flight", icon: "✈️", name: "Shaheed Bhagat Singh International Airport (IXC)", distanceFromCity: "~83 km from Bodh Stupa",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Take a taxi or auto-rickshaw from Shaheed Bhagat Singh International Airport airport to Bodh Stupa", cost: "₹1,500-₹3,000", duration: "90+ min", tip: "Agree on the fare upfront or insist on the meter — prepaid counters are common at bigger stations/airports." },
-          { step: 2, icon: "🏨", action: "Check in and confirm your return transport option with your hotel", cost: "—", duration: "—", tip: "Save your hotel's address in the local script/language if you don't speak the regional language — makes showing a driver much easier." },
-        ],
-      },
-      {
-        by: "Train", icon: "🚂", name: "Chandigarh Junction (CDG)", distanceFromCity: "~84 km from Bodh Stupa",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Take a taxi or auto-rickshaw from Chandigarh Junction station to Bodh Stupa", cost: "₹1,500-₹3,000", duration: "90+ min", tip: "Agree on the fare upfront or insist on the meter — prepaid counters are common at bigger stations/airports." },
-          { step: 2, icon: "🏨", action: "Check in and store valuables securely", cost: "—", duration: "—", tip: "Keep a photo of your ID on your phone — useful for check-ins and ticket counters." },
-        ],
-      },
-      {
-        by: "Road", icon: "🚗", name: "By car, cab, or bus", distanceFromCity: "Varies by origin — see the \"Getting There\" tab for a route from your specific starting city",
-        toAccommodation: [
-          { step: 1, icon: "🚗", action: "Self-drive, a private cab, or an interstate bus are all realistic options to reach Bodh Stupa directly", cost: "Varies by distance", duration: "Varies by distance", tip: "Check the \"Getting There\" tab above for a distance and cost estimate from your actual starting city." },
-          { step: 2, icon: "🏨", action: "Check in and confirm parking (if self-driving) or your onward transport with your hotel", cost: "—", duration: "—", tip: "If driving yourself, ask about secure parking when you book — not every stay has it." },
-        ],
-      },
-    ],
-    weatherSeasons: [
-      { season: "Winter", months: "November – February", icon: "❄️", tempRange: "4°C – 20°C", feels: "Cold, foggy mornings", carry: ["Warm jacket", "Scarf"], warning: "Dense fog is common on winter mornings — factor in extra travel time.", clothingAdvice: "Layer up; mornings are notably colder than afternoons." },
-      { season: "Summer", months: "April – June", icon: "🔥", tempRange: "27°C – 45°C", feels: "Hot and dry", carry: ["Light cotton clothing", "Sunscreen", "Water bottle"], warning: "Summer heat is intense — avoid midday outdoor activity.", clothingAdvice: "Loose, breathable fabrics." },
-      { season: "Monsoon", months: "July – September", icon: "🌧️", tempRange: "26°C – 35°C", feels: "Hot and humid with heavy spells", carry: ["Raincoat", "Quick-dry clothing"], warning: "Roads can waterlog after heavy rain — build in extra travel time.", clothingAdvice: "Light, quick-dry clothing with rain protection." },
-    ],
-    cityHurdles: [],
-    cityEssentials: {
-      atm: "ATMs and bank branches are available in Chandigarh, the nearest major town; carry some cash for Bodh Stupa itself in case local options are limited.", sim: "Jio, Airtel, and Vi all have coverage in towns; signal can be patchy in remote/hilly stretches — download offline maps beforehand", wifi: "Most hotels and cafes in the main town offer WiFi; mobile data is the more reliable option while out and about", medical: "Basic pharmacies and clinics in the nearest town for minor issues; for anything serious, head to the nearest city hospital — ask your hotel for the closest one. Chandigarh has larger hospitals for anything beyond minor issues.",
-      language: "Haryanvi and Hindi are the main languages; Hindi/English work fine for travellers", localEmergency: "112 (all-in-one emergency), 102 (ambulance), 100 (police), 101 (fire) — toll-free from any phone, even without a SIM", upi: "UPI (GPay/PhonePe/Paytm) is widely accepted in shops, autos, and by vendors in towns and cities; carry some cash as backup for smaller/remote spots", powerOutlet: "Type C/D/M sockets, 230V — standard across India; bring a universal adapter if arriving from abroad",
-    },
-    localAttractions: [],
-    fromCityToSight: "From Chandigarh, the nearest major transport hub, Bodh Stupa is reached by road — taxis and autos cover the final stretch. See the \"Getting There\" tab above for a distance and transport breakdown from your specific starting city.",
-    firstThingsToDo: [],
-    travelAdvisory: {
-      updatedFrom: "General travel guidance (not sourced from an official state tourism advisory)",
-      bestTimeToVisit: "November – February (Winter)",
-      peakSeason: "November – February",
-      offSeason: "April – June and July – September",
-      alerts: [
-        { level: "info", icon: "🌦️", title: "Winter is generally the most comfortable time to visit", detail: "Dense fog is common on winter mornings — factor in extra travel time." },
-        { level: "info", icon: "🌦️", title: "Planning around summer (April – June)", detail: "Summer heat is intense — avoid midday outdoor activity." },
-        { level: "caution", icon: "⚠️", title: "Planning around monsoon (July – September)", detail: "Roads can waterlog after heavy rain — build in extra travel time." },
-      ],
-      dos: ["Dress modestly at religious sites — cover shoulders and knees", "Carry a government-issued photo ID at all times", "Stay hydrated and carry water, especially in hot weather", "Use registered taxis, prepaid counters, or well-known app cabs", "Keep small-denomination cash on hand for local vendors"],
-      donts: ["Don't drink tap water — stick to sealed bottled or filtered water", "Don't accept unsolicited help from strangers near tourist sites — politely decline and walk on", "Don't photograph people, especially at religious sites, without asking first", "Don't flash cash or valuables in crowded areas"],
-      emergencyContacts: [
-        { label: "All-in-one Emergency", number: "112", icon: "🚨" },
-        { label: "Ambulance", number: "102", icon: "🚑" },
-        { label: "Police", number: "100", icon: "👮" },
-        { label: "Fire", number: "101", icon: "🚒" },
-      ],
-      healthTips: ["Carry a basic first-aid kit and any personal medication you need", "Use sunscreen and stay hydrated, especially in hot or high-altitude areas", "Travel/health insurance is strongly recommended for any India trip"],
-      culturalNotes: ["Haryanvi and Hindi are the main languages; Hindi/English work fine for travellers", "Remove footwear before entering temples and most homes", "A namaste (palms together, slight bow) is a warm, universally understood greeting"],
-      moneyTips: ["UPI (GPay/PhonePe/Paytm) is widely accepted in shops, autos, and by vendors in towns and cities; carry some cash as backup for smaller/remote spots", "ATMs are available in nearby towns — withdraw cash in advance for more remote stops", "Bargaining is normal and expected at local markets, less so in fixed-price or branded stores"],
-    },
-  },
-  {
     destId: "dhamtan-sahib",
     arrivalPoints: [
       {

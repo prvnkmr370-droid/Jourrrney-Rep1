@@ -41748,14 +41748,6 @@ export const GALLERY_CREDITS: Record<string, PhotoCredit[]> = {
       "pageUrl": "https://commons.wikimedia.org/wiki/File:Cell_for_crimnal.jpg"
     }
   ],
-  "bodh-stupa": [
-    {
-      "title": "View of Assandh town from the Stupa.jpg",
-      "author": "Anamdas",
-      "licence": "CC BY-SA 4.0",
-      "pageUrl": "https://commons.wikimedia.org/wiki/File:View_of_Assandh_town_from_the_Stupa.jpg"
-    }
-  ],
   "dhamtan-sahib": [
     {
       "title": "Gurdwara dhamtan sahib.jpg",
