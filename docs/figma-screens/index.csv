@@ -1,0 +1,101 @@
+﻿Screen ID,Flow,Screen / frame name,Kind,SVG file (390x844 frame),SVG file (full length),SVG coverage,SVG note
+S001,Launch & onboarding,Splash,Screen,S001-splash.svg,,Captured,
+S002,Launch & onboarding,Onboarding – Sign-in (container),Screen,S003-onboarding-email.svg,,Shown inside another frame,Same frame as the email step; the container has no chrome of its own.
+S003,Launch & onboarding,Onboarding – Step 1: Sign in or create an account,Step,S003-onboarding-email.svg,,Captured,
+S004,Launch & onboarding,Onboarding – Step 1 states: sending code & error,Component state,S004-onboarding-email-error.svg,,Captured,"Error state, rendered with a locally mocked 'invalid email' reply (no request left the machine)."
+S005,Launch & onboarding,Onboarding – Step 2: Let's confirm your email,Step,S005-onboarding-confirm-code.svg,,Captured,Rendered with a locally mocked server reply; the gold 'Dev mode' hint line is what the app shows without email delivery.
+S006,Launch & onboarding,"Onboarding – Step 2 states: verifying, error & resend cooldown",Component state,S006-onboarding-confirm-code-error.svg,,Captured,"Error state, rendered with a locally mocked 'wrong code' reply."
+S007,Launch & onboarding,Onboarding – Password sign-in unavailable alert,Modal,,,Not captured,Native Alert dialog (not rendered by the web build)
+S008,Launch & onboarding,Location permission prompt,Screen,S008-location-permission.svg,,Captured,
+S009,Main tabs,Home – Discover,Screen,S009-home-discover.svg,S009-home-discover--full.svg,Captured,
+S010,Main tabs,Home – Hero carousel with greeting & search,Component state,S009-home-discover.svg,,Shown inside another frame,Hero with greeting and search is the top of the Home frame.
+S011,Main tabs,Home – Hero search suggestions dropdown,Overlay,S011-home-search-suggestions.svg,,Captured,
+S012,Main tabs,Home – Category chip selected,Component state,S012-home-category-heritage.svg,S012-home-category-heritage--full.svg,Captured,
+S013,Main tabs,Home – Recently Viewed rail,Component state,S013-home-with-recently-viewed-and-recent-searches.svg,S013-home-with-recently-viewed-and-recent-searches--full.svg,Captured,
+S014,Main tabs,Home – Recent Searches rail,Component state,S013-home-with-recently-viewed-and-recent-searches.svg,S013-home-with-recently-viewed-and-recent-searches--full.svg,Shown inside another frame,Recent Searches rail is visible in the full-length Home frame.
+S015,Search & discovery,Search results – Browse mode,Screen,S015-search-results-browse.svg,S015-search-results-browse--full.svg,Captured,
+S016,Search & discovery,Search results – Suggestion mode (typing),Component state,S016-search-results-typing.svg,,Captured,
+S017,Search & discovery,Search results – Non-India place message,Component state,S017-search-results-non-india.svg,,Captured,
+S018,Search & discovery,Recently viewed,Screen,S018-recently-viewed.svg,,Captured,
+S019,Destination,Destination – Detail (shell + hero),Screen,S019-destination-detail-overview.svg,S019-destination-detail-overview--full.svg,Captured,
+S020,Destination,Destination – Not found,Component state,S020-destination-not-found.svg,,Captured,
+S021,Destination,Destination – Pinned tab strip (scrolled state),Component state,S021-destination-pinned-tab-strip.svg,,Captured,
+S022,Destination,Destination – Overview,Tab view,S019-destination-detail-overview.svg,,Shown inside another frame,"Overview is the default tab, so it is the same frame as the detail shell."
+S023,Destination,Destination – Itinerary,Tab view,S023-destination-itinerary.svg,S023-destination-itinerary--full.svg,Captured,
+S024,Destination,Destination – Stay,Tab view,S024-destination-stay.svg,S024-destination-stay--full.svg,Captured,
+S025,Destination,Destination – Budget,Tab view,S025-destination-budget.svg,S025-destination-budget--full.svg,Captured,
+S026,Destination,Destination – How to Reach,Tab view,S026-destination-how-to-reach-getting-there.svg,S026-destination-how-to-reach-getting-there--full.svg,Captured,
+S027,Destination,Destination – How to Reach – Getting There (route planner),Tab view,S026-destination-how-to-reach-getting-there.svg,,Shown inside another frame,Getting There is the default sub-section of How to Reach.
+S028,Destination,Destination – How to Reach – Getting There (route result),Component state,S028-destination-route-result.svg,S028-destination-route-result--full.svg,Captured,"Origin = Delhi (geocoded via the public Open-Meteo API, as the app does)."
+S029,Destination,Destination – How to Reach – Origin search (full-screen),Modal,S029-destination-origin-search-modal.svg,,Captured,Empty search state of the origin picker.
+S030,Destination,Destination – How to Reach – Add a stop search (full-screen),Modal,S030-destination-add-stop-modal.svg,,Captured,
+S031,Destination,Destination – How to Reach – Getting Around,Tab view,S031-destination-how-to-reach-getting-around.svg,S031-destination-how-to-reach-getting-around--full.svg,Captured,
+S032,Destination,Destination – How to Reach – What to Pack,Tab view,S032-destination-how-to-reach-what-to-pack.svg,S032-destination-how-to-reach-what-to-pack--full.svg,Captured,
+S033,Destination,Destination – How to Reach – City Essentials,Tab view,S033-destination-how-to-reach-city-essentials.svg,S033-destination-how-to-reach-city-essentials--full.svg,Captured,
+S034,Destination,Destination – How to Reach – Travel Advisory,Tab view,S034-destination-how-to-reach-travel-advisory.svg,S034-destination-how-to-reach-travel-advisory--full.svg,Captured,
+S035,Destination,Destination – How to Reach – Traveler Hurdles (NOT rendered),Tab view,,,Not captured,"Section exists in code but is not mounted anywhere, so there is nothing to render"
+S036,Destination,Destination – Photo Gallery,Screen,S036-destination-photo-gallery.svg,,Captured,
+S037,Destination,Destination – Full-screen photo viewer,Overlay,S037-destination-photo-viewer.svg,,Captured,
+S038,Destination,Destination – Safety,Tab view,S038-destination-safety-tab.svg,S038-destination-safety-tab--full.svg,Captured,
+S039,Destination,Destination – Safety at a Glance cards,Component state,S038-destination-safety-tab.svg,,Shown inside another frame,Safety at a Glance cards are inside the Safety tab frame.
+S040,Destination,Destination – Safety detail sheet,Bottom sheet,S040-destination-safety-detail-sheet.svg,,Captured,
+S041,Plan trip,Plan Trip – Chat (opening),Screen,S041-plan-trip-chat-opening.svg,,Captured,
+S042,Plan trip,Plan Trip – Chat: mood picks,Component state,S042-plan-trip-chat-mood-picks.svg,,Captured,
+S043,Plan trip,Plan Trip – Chat: ask days,Component state,S043-plan-trip-chat-ask-days.svg,,Captured,
+S044,Plan trip,Plan Trip – Chat: ask travellers,Component state,S044-plan-trip-chat-ask-travellers.svg,,Captured,
+S045,Plan trip,Plan Trip – Chat: ask trip style + summary,Component state,S045-plan-trip-chat-ask-style.svg,,Captured,
+S046,Plan trip,Plan Trip – Chat: unclear / failed input replies,Component state,S046-plan-trip-chat-unclear-input.svg,,Captured,
+S047,Plan trip,Plan Trip – Chat: photo input ('Add a Photo'),Overlay,,,Not captured,"Opens the OS photo picker / camera, which cannot be captured"
+S048,Plan trip,Plan Trip – Chat: keyboard open,Component state,,,Not captured,"Needs the OS soft keyboard, which the web capture does not show"
+S049,Plan trip,Plan Trip – Chat: progress strip states,Component state,S043-plan-trip-chat-ask-days.svg; S044-plan-trip-chat-ask-travellers.svg; S045-plan-trip-chat-ask-style.svg,,Shown inside another frame,Progress strip (Where / Days / Travellers / Style) sits at the top of every chat frame.
+S050,Plan trip,Plan My Trip from a destination – Chat,Screen,S050-plan-trip-from-destination-chat.svg,,Captured,
+S051,Plan trip,Plan Trip – Generating (skeleton loading),Step,S051-plan-trip-generating.svg,,Captured,Skeleton / loading step captured while the AI request was held open locally.
+S052,Plan trip,Plan Trip – Result (Your Travel Plan),Step,S052-plan-trip-result.svg,S052-plan-trip-result--full.svg,Captured,Result rendered from the app's built-in template plan (the live AI call was not made).
+S053,Plan trip,Plan Trip – Result: multi-stop trip variant,Component state,S053-plan-trip-result-multi-stop.svg,S053-plan-trip-result-multi-stop--full.svg,Captured,"Multi-stop result (Agra then Jaipur), built-in template plan. Extra variants: S053a-plan-trip-chat-multi-stop-days.svg."
+S054,Plan trip,Plan Trip – Result: route strip and safety card,Component state,S055-plan-trip-result-ai-itinerary.svg,,Shown inside another frame,Route strip (origin to destination) appears in the result when a start city is set.
+S055,Plan trip,"Plan Trip – Result: Day-by-Day Plan (AI badge, accordion, stops)",Component state,S055-plan-trip-result-ai-itinerary.svg,S055-plan-trip-result-ai-itinerary--full.svg,Captured,AI-day state rendered with a locally mocked AI itinerary built from Matheran's own curated text; stop cards here show the 'Not in our guide yet' kind.
+S056,Plan trip,Plan Trip – Result: stop cards (3 kinds),Component state,S056-plan-trip-result-ai-stop-cards.svg,S056-plan-trip-result-ai-stop-cards--full.svg,Captured,AI-day state with a locally mocked itinerary; stop cards show the 'In our guide' kind.
+S057,Plan trip,Plan Trip – Result: Tweak this plan,Component state,S052-plan-trip-result.svg,S052-plan-trip-result--full.svg,Shown inside another frame,'Tweak this plan' chips are in the lower part of the full-length result frame.
+S058,Plan trip,Plan Trip – Result: tweak applied banner (Undo),Component state,S058-plan-trip-result-tweak-applied.svg,S058-plan-trip-result-tweak-applied--full.svg,Captured,After tapping 'Make it cheaper'.
+S059,Plan trip,Plan Trip – Result: sticky bottom bar and toast,Component state,S059-plan-trip-result-saved-toast.svg,,Captured,Toast 'Saved to My trips' just after tapping Save trip.
+S060,Plan trip,"Plan Trip – Result: Export PDF (share sheet, error alert, document)",Overlay,,,Not captured,"OS share sheet / generated PDF, not part of the app canvas"
+S061,Plan trip,Saved Trip (read-only result),Screen,S061-saved-trip-read-only.svg,S061-saved-trip-read-only--full.svg,Captured,Opened from My Account > Trips.
+S062,Plan trip,Saved Trip – no longer available,Component state,S062-saved-trip-not-available.svg,,Captured,
+S063,Safety,Safety – Home (Search & Ratings),Screen,S063-safety-home.svg,S063-safety-home--full.svg,Captured,
+S064,Safety,"Safety – Home, search active (results / no match / non-India)",Component state,S064-safety-home-search-results.svg,,Captured,Extra variants: S064b-safety-home-search-non-india.svg.
+S065,Safety,Destination Safety Page,Screen,S065-destination-safety-page.svg,S065-destination-safety-page--full.svg,Captured,
+S066,Safety,Destination Safety Page – 'More safety details' expanded,Component state,S066-destination-safety-page-more-details.svg,S066-destination-safety-page-more-details--full.svg,Captured,
+S067,Safety,Safety category detail sheet,Bottom sheet,S067-safety-category-detail-sheet.svg,,Captured,
+S068,Safety,Destination Safety Page – destination not found,Component state,S068-destination-safety-not-found.svg,,Captured,
+S069,Safety,Travel Safe – 5 Steps,Screen,S069-travel-safe-5-steps.svg,,Captured,
+S070,Safety,Trip Prep & Packing,Screen,S070-trip-prep-packing.svg,S070-trip-prep-packing--full.svg,Captured,
+S071,Safety,Trip Prep & Packing – 'See packing by place type' expanded (Temple / Beach),Component state,S071-trip-prep-packing-by-place-type.svg,S071-trip-prep-packing-by-place-type--full.svg,Captured,
+S072,Profile & settings,My Account,Screen,S072-my-account-signed-in-searches-tab.svg,,Captured,Signed-in header uses the app's built-in placeholder persona and hard-coded stats.
+S073,Profile & settings,My Account – signed out (Guest header),Component state,S073-my-account-guest-searches-tab.svg,,Captured,"Guest header, Searches tab."
+S074,Profile & settings,My Account – Searches tab,Tab view,S072-my-account-signed-in-searches-tab.svg,,Shown inside another frame,Searches is the default tab of My Account.
+S075,Profile & settings,My Account – Trips tab (My trips),Tab view,S075-my-account-trips-tab.svg,,Captured,
+S076,Profile & settings,My Account – Profile tab (signed in),Tab view,S076-my-account-profile-tab-signed-in.svg,S076-my-account-profile-tab-signed-in--full.svg,Captured,Placeholder profile data from the app (not a real account).
+S077,Profile & settings,"My Account – Profile tab, bio editing",Component state,S077-my-account-profile-tab-bio-editing.svg,,Captured,Bio edit mode.
+S078,Profile & settings,"My Account – Profile tab, signed out (No profile yet)",Component state,S078-my-account-profile-tab-signed-out.svg,,Captured,
+S079,Profile & settings,My Account – Settings tab,Tab view,S079-my-account-settings-tab.svg,S079-my-account-settings-tab--full.svg,Captured,Signed-in Settings (guest version: S079g). Extra variants: S079g-my-account-settings-tab-guest.svg.
+S080,Profile & settings,"My Account – Settings tab, signed in (extra rows)",Component state,S079-my-account-settings-tab.svg,,Shown inside another frame,The signed-in Settings frame already includes 'Clear AI history' and 'Log out'.
+S081,Profile & settings,Profile area – system alert dialogs,Overlay,,,Not captured,Native Alert dialogs (not rendered by the web build)
+S082,Profile & settings,Sign in – Email step,Modal,S082-sign-in-modal-email.svg,,Captured,
+S083,Profile & settings,Sign in – Confirm code step,Step,S083-sign-in-modal-confirm-code.svg,,Captured,
+S084,Profile & settings,Settings & Privacy,Screen,S084-settings-and-privacy.svg,,Captured,
+S085,Profile & settings,Travel Preferences,Screen,S085-travel-preferences.svg,,Captured,
+S086,Profile & settings,Safety Guard Setup,Screen,S086-safety-guard-setup.svg,,Captured,
+S087,Profile & settings,Safety Guard Setup – Add emergency contact,Modal,S087-safety-guard-add-contact-modal.svg,,Captured,
+S088,Profile & settings,Offline Maps & Guides,Screen,S088-offline-maps-and-guides.svg,,Captured,
+S089,Profile & settings,Photo credits,Screen,S089-photo-credits.svg,S089-photo-credits--full.svg,Captured,
+S090,Profile & settings,Legal documents (Privacy Policy / Terms of Service / Data we collect and why),Screen,S090-legal-privacy-policy.svg,,Captured,"Privacy Policy (Terms: S090b, Data we collect: S090c). Extra variants: S090b-legal-terms-of-service.svg, S090c-legal-data-we-collect.svg."
+S091,Profile & settings,Legal documents – Unknown document fallback,Component state,S091-legal-unknown-document.svg,,Captured,
+S092,Shared / overlays,Bottom tab bar (floating pill),Overlay,S009-home-discover.svg; S019-destination-detail-overview.svg; S041-plan-trip-chat-opening.svg; S063-safety-home.svg,,Shown inside another frame,Floating tab bar is part of every tab frame.
+S093,Shared / overlays,Floating profile pill (avatar + menu),Overlay,S009-home-discover.svg,,Shown inside another frame,Floating profile pill is part of every tab frame.
+S094,Shared / overlays,DestinationCard – Grid (rating),Component state,S009-home-discover.svg,,Shown inside another frame,Grid cards (rating variant) appear in the Popular Destinations rail.
+S095,Shared / overlays,DestinationCard – Grid (women-safety score),Component state,S009-home-discover.svg,S009-home-discover--full.svg,Shown inside another frame,Grid cards (women-safety score) appear in the 'Safest for Women' rail of the full-length Home frame.
+S096,Shared / overlays,DestinationCard – Row (with price),Component state,S018-recently-viewed.svg; S015-search-results-browse.svg,,Shown inside another frame,Row cards with price appear in Recently Viewed and Search results.
+S097,Shared / overlays,DestinationCard – Row (compact suggestion),Component state,S011-home-search-suggestions.svg; S016-search-results-typing.svg,,Shown inside another frame,Compact suggestion rows appear in the Home and Search suggestion lists.
+S098,Shared / overlays,Brand – Compass mark & wordmark lockup,Component state,S003-onboarding-email.svg,,Shown inside another frame,Compass mark and wordmark appear in the onboarding header and footer.
+S099,Shared / overlays,Location picker – pin on map (native),Modal,,,Not captured,"LocationPickerModal is not used by any screen, so it cannot be reached"
+S100,Shared / overlays,Location picker – web fallback,Modal,,,Not captured,"LocationPickerModal web fallback is not used by any screen, so it cannot be reached"
