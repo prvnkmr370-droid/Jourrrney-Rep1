@@ -19,7 +19,6 @@ const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure"];
 // tint of themselves, and light-mode's dark accent hexes read as
 // near-invisible-on-near-black once that tint sits on a dark background.
 const QUICK_ACTIONS = [
-  { label: "Plan Trip", emoji: "✨", colorKey: "primary" as const, route: "/(tabs)/plan" as const },
   { label: "Her Journey", emoji: "🛡️", colorKey: "teal" as const, route: "/(tabs)/safety" as const },
   { label: "Explore All", emoji: "🧭", colorKey: "gold" as const, route: "/search/results" as const },
 ];
