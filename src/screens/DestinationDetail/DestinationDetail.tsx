@@ -279,14 +279,14 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
               </View>
             )}
 
-            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.9)", marginBottom: 4 }}>
+            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 14 }}>
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 15, color: "rgba(255,255,255,0.9)", marginBottom: 1 }}>
                 {d.state}
               </Text>
               <Text
                 numberOfLines={2}
                 ellipsizeMode="tail"
-                style={{ fontFamily: "Poppins_700Bold", fontSize: 30, color: "#FFFFFF", marginBottom: 8 }}
+                style={{ fontFamily: "Poppins_700Bold", fontSize: 26, lineHeight: 32, color: "#FFFFFF", marginBottom: 4 }}
               >
                 {d.name}
               </Text>
@@ -301,21 +301,21 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
                   available width so its Text wraps inside it instead of
                   spilling out — same fix applied to all three pairs for
                   consistency, even though rating/duration are normally short. */}
-              <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-                  <Star color="#FBBF24" fill="#FBBF24" size={14} />
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#FFFFFF" }}>{d.rating}</Text>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>
+              <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", columnGap: 12, rowGap: 2 }}>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
+                  <Star color="#FBBF24" fill="#FBBF24" size={12} />
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: "#FFFFFF" }}>{d.rating}</Text>
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.7)" }}>
                     ({d.reviews.toLocaleString("en-IN")})
                   </Text>
                 </View>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-                  <Clock color="rgba(255,255,255,0.6)" size={14} />
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)" }}>{d.duration}</Text>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
+                  <Clock color="rgba(255,255,255,0.8)" size={12} />
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.88)" }}>{d.duration}</Text>
                 </View>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }}>
-                  <Calendar color="rgba(255,255,255,0.6)" size={14} />
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", flexShrink: 1 }}>{d.bestSeason}</Text>
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
+                  <Calendar color="rgba(255,255,255,0.8)" size={12} />
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.88)", flexShrink: 1 }}>{d.bestSeason}</Text>
                 </View>
               </View>
             </View>
