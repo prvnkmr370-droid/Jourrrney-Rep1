@@ -19,11 +19,16 @@ import ExpandableText from "@/components/ExpandableText";
 import OpeningHoursCard from "@/components/OpeningHoursCard";
 import { useLiveOpeningHours } from "@/hooks/useOpeningHours";
 import { fromCurated } from "@/utils/openingHours";
-import { Sparkles, ChevronRight, MapPin, Eye, Compass, Gem } from "lucide-react-native";
-import type { Destination, NearbyPlace } from "@/data/destinations";
+import { Sparkles, ChevronRight, MapPin, Compass, Gem } from "lucide-react-native";
+import { DESTINATIONS, type Destination, type NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { useNearbyPlaces } from "@/hooks/useNearbyPlaces";
+
+// A nearby place that links to a destination of its own (place.id) can show
+// that destination's photo — the same verified image — instead of a pin icon.
+// Places with neither their own image nor a linked destination keep the pin.
+const DESTINATION_IMAGE_BY_ID = new Map(DESTINATIONS.map((d) => [d.id, d.image]));
 
 export default function OverviewTab({ destination: d }: { destination: Destination }) {
   const c = useThemeColors();
@@ -116,19 +121,6 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>Places Near {d.name}</Text>
           </View>
 
-          <View
-            style={{
-              flexDirection: "row", gap: 8, backgroundColor: withOpacity(c.gold, 0.1),
-              borderWidth: 1, borderColor: withOpacity(c.gold, 0.25), borderRadius: 12, padding: 12, marginBottom: 16,
-            }}
-          >
-            <Eye color={c.gold} size={16} />
-            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 16, color: c.textPrimary, flex: 1 }}>
-              <Text style={{ fontFamily: "Poppins_700Bold" }}>Hidden gems</Text> marked below are off-the-beaten-path spots
-              fewer than 5% of visitors discover.
-            </Text>
-          </View>
-
           {popularNearby.length > 0 && (
             <View style={{ gap: 12, marginBottom: hiddenNearby.length > 0 ? 20 : 0 }}>
               {popularNearby.map((place) => (
@@ -203,6 +195,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
 
 function NearbyPlaceCard({ place, isGem, c }: { place: NearbyPlace; isGem?: boolean; c: ReturnType<typeof useThemeColors> }) {
   const CardWrapper = place.id ? Pressable : View;
+  const imageUri = place.image || (place.id ? DESTINATION_IMAGE_BY_ID.get(place.id) : undefined) || undefined;
   return (
     <CardWrapper
       {...(place.id ? { onPress: () => router.push(`/destination/${place.id}`) } : {})}
@@ -213,8 +206,8 @@ function NearbyPlaceCard({ place, isGem, c }: { place: NearbyPlace; isGem?: bool
         borderRadius: 16, padding: 10,
       }}
     >
-      {place.image ? (
-        <DestImage source={{ uri: place.image }} style={{ width: 72, height: 72, borderRadius: 12 }} contentFit="cover" />
+      {imageUri ? (
+        <DestImage source={{ uri: imageUri }} style={{ width: 72, height: 72, borderRadius: 12 }} contentFit="cover" />
       ) : (
         <View style={{ width: 72, height: 72, borderRadius: 12, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
           <MapPin color={isGem ? c.gold : c.textMuted} size={22} />
