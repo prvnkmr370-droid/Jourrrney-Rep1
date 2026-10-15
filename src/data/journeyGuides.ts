@@ -241,7 +241,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         "Friday is a day of prayer — many Muslim-owned businesses near Taj close for 2–3 hours at noon",
       ],
       moneyTips: [
-        "Carry ₹2,000–₃,000 cash — many vendors, e-rickshaws, and bazaar shops are cash-only",
+        "Carry ₹2,000–₹3,000 cash — many vendors, e-rickshaws, and bazaar shops are cash-only",
         "ATMs are widely available in Agra city center but sparse near the Taj gates",
         "UPI accepted at most restaurants and hotels; not at street stalls",
         "Taj entry ticket: ₹50 (Indians) + ₹200 Mughal Heritage ticket (covers Taj, Agra Fort, Fatehpur Sikri) — good value bundle",
@@ -912,7 +912,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
       medical: "Sir Sunderlal Hospital (Govt): 0542-2368001. Heritage Hospitals (private): 0542-2368888. Nearest pharmacy: Godowlia Market area.",
       language: "Bhojpuri and Hindi. Very little English in old city. Learn key phrases: 'Ghat kahan hai?' (Where is the ghat?), 'Boat ka kitna?' (How much for the boat?), 'Nahi chahiye' (I don't want it).",
       localEmergency: "UP Tourist Police: 1800-180-4010 | Varanasi Police Control: 0542-2502921 | Women Helpline: 1091 | Emergency: 112",
-      upi: "Google Pay works at many shops and cafes. Old city vendors and boatmen mostly cash-only. Carry ₹1,500–₂,000 small notes daily.",
+      upi: "Google Pay works at many shops and cafes. Old city vendors and boatmen mostly cash-only. Carry ₹1,500–₹2,000 small notes daily.",
       powerOutlet: "Power cuts (load-shedding) of 2–4 hours are common in Varanasi, especially in summer. Most guesthouses have backup generators. Carry a power bank.",
     },
     localAttractions: [
@@ -979,7 +979,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         "Carry ₹500–1,000 in small notes daily for boat rides (₹200–500), ghat activities, and street food",
         "UPI works but many ghat boatmen and old city vendors are cash-only",
         "Boat ride prices: official UTSD boats (government) from ₹150; private boats ₹300–500 — negotiate before boarding",
-        "Banarasi silk can cost ₹2,000–₂,00,000 depending on quality — authenticate with a scratch test on the back of the fabric",
+        "Banarasi silk can cost ₹2,000–₹2,00,000 depending on quality — authenticate with a scratch test on the back of the fabric",
       ],
     },
   },
@@ -1040,7 +1040,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
     },
     localAttractions: [
       { name: "Radhanagar Beach, Havelock", type: "Asia's Best Beach", distanceFromCenter: "12 km from Havelock Jetty", entryFee: "Free", timing: "All day", bestTime: "Sunset (5–6pm)", insiderTip: "The water is completely transparent to 3 metres depth — you can watch your own feet on the sand from standing. Arrive by 4pm, find a spot under a tree (no chairs on this natural beach), and watch the sun set into the Andaman Sea. Absolutely breathtaking.", mustDo: true },
-      { name: "Elephant Beach Snorkelling", type: "Coral Reef Snorkel", distanceFromCenter: "9 km from Havelock Jetty (boat + 15min walk)", entryFee: "₹1,200–₁,500 incl. equipment", timing: "6am – 3pm (boats stop after)", bestTime: "Morning (clearest visibility)", insiderTip: "Hawksbill sea turtles regularly visit Elephant Beach. Snorkel the outer reef area (marked with buoys) for the densest fish life. The 15-minute jungle walk to the beach after the boat is scenic — stay on the path.", mustDo: true },
+      { name: "Elephant Beach Snorkelling", type: "Coral Reef Snorkel", distanceFromCenter: "9 km from Havelock Jetty (boat + 15min walk)", entryFee: "₹1,200–₹1,500 incl. equipment", timing: "6am – 3pm (boats stop after)", bestTime: "Morning (clearest visibility)", insiderTip: "Hawksbill sea turtles regularly visit Elephant Beach. Snorkel the outer reef area (marked with buoys) for the densest fish life. The 15-minute jungle walk to the beach after the boat is scenic — stay on the path.", mustDo: true },
       { name: "Cellular Jail, Port Blair", type: "Colonial Prison — National Monument", distanceFromCenter: "Port Blair city", entryFee: "₹30 + ₹100 Sound & Light Show", timing: "9am – 12pm, 1:30pm – 4:45pm", bestTime: "Sound & Light Show: 5:30pm (Hindi) / 6:30pm (English)", insiderTip: "The solitary confinement cells where freedom fighters like Veer Savarkar were imprisoned for decades. The Sound & Light Show with actor-narrated history (45 min) is deeply moving and makes the visit meaningful beyond just the architecture.", mustDo: true },
       { name: "Baratang Limestone Caves", type: "Natural Wonder — Hidden Gem", distanceFromCenter: "100 km from Port Blair", entryFee: "₹600 per jeep + ₹50 permit", timing: "Full day trip only (6am–5pm)", bestTime: "Morning (convoy departs 6am)", insiderTip: "You travel by road convoy through Jarawa tribal forest, then speedboat through mangroves, then a 20-minute jungle walk. The limestone caves and mud volcanoes are extraordinary and almost no tourists go. MUST book a day ahead.", mustDo: false },
       { name: "Neil Island (Shaheed Dweep)", type: "Peaceful Island", distanceFromCenter: "40 km ferry from Port Blair", entryFee: "Free", timing: "All day, 2-day minimum", bestTime: "November – March", insiderTip: "If Havelock feels busy, Neil Island is its quieter sibling. Natural Bridge (Bharatpur Beach) — a limestone arch over turquoise lagoon with starfish visible at low tide — is one of Andaman's most beautiful natural formations. Only 2–3 scooter rentals needed to see the whole island.", mustDo: false },
@@ -1109,7 +1109,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
 
   {
     destId: "udaipur",
-    fromCityToSight: "From Udaipur station or airport, the old city (Jagdish Chowk / City Palace) is 3–6 km. Take Ola/Uber (₹100–₹200) or auto-rickshaw (₹100–₁50). The old city is compact — once you're in the Jagdish Chowk area, everything is walkable. Lake Pichola boat rides depart from Rameshwar Ghat (walkable from old city).",
+    fromCityToSight: "From Udaipur station or airport, the old city (Jagdish Chowk / City Palace) is 3–6 km. Take Ola/Uber (₹100–₹200) or auto-rickshaw (₹100–₹150). The old city is compact — once you're in the Jagdish Chowk area, everything is walkable. Lake Pichola boat rides depart from Rameshwar Ghat (walkable from old city).",
     firstThingsToDo: [
       "Check in to old city haveli — rooftop lake views are part of the Udaipur experience",
       "Buy boat cruise tickets at Rameshwar Ghat before 4pm (they sell out for sunset)",
@@ -1124,7 +1124,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Udaipur City Railway Station (UDZ)",
         distanceFromCity: "3 km from City Palace / old city",
         toAccommodation: [
-          { step: 1, icon: "📱", action: "Book Ola or Uber from station — most reliable, metered, no negotiation", cost: "₹100–₁50 to old city", duration: "10–15 min", tip: "Udaipur traffic is heavier than expected for a small city. Factor 20–25 min at peak hours (5–7pm)." },
+          { step: 1, icon: "📱", action: "Book Ola or Uber from station — most reliable, metered, no negotiation", cost: "₹100–₹150 to old city", duration: "10–15 min", tip: "Udaipur traffic is heavier than expected for a small city. Factor 20–25 min at peak hours (5–7pm)." },
           { step: 2, icon: "🏨", action: "Old city havelis often have very narrow entrances — auto/bike only. If your haveli is inside the lanes, walk the last 200m with luggage", cost: "—", duration: "—", tip: "Ask your hotel exactly which street to alight — many havelis look the same from outside. Save the hotel pin on Google Maps before arriving." },
         ],
       },
@@ -1134,7 +1134,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Maharana Pratap Airport, Udaipur (UDR)",
         distanceFromCity: "22 km from old city",
         toAccommodation: [
-          { step: 1, icon: "🚗", action: "Prepaid taxi from airport (government booth inside arrivals)", cost: "₹500–₇00 to old city", duration: "40–50 min", tip: "Ola and Uber are available from airport. Book in advance — surge pricing at arrival times. Hotel pickup can be arranged: ₹600–₹800." },
+          { step: 1, icon: "🚗", action: "Prepaid taxi from airport (government booth inside arrivals)", cost: "₹500–₹700 to old city", duration: "40–50 min", tip: "Ola and Uber are available from airport. Book in advance — surge pricing at arrival times. Hotel pickup can be arranged: ₹600–₹800." },
         ],
       },
     ],
@@ -1155,7 +1155,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
       },
     ],
     cityHurdles: [
-      { icon: "⛵", issue: "Unofficial 'private' boat operators near Lal Ghat", solution: "The official government RTDC boat cruise departs from Rameshwar Ghat (₹400, 1h, sunset). 'Private' boats near Lal Ghat often charge ₹800–₁,500 for the same route. Use the RTDC service or your hotel-arranged boat.", severity: "medium" },
+      { icon: "⛵", issue: "Unofficial 'private' boat operators near Lal Ghat", solution: "The official government RTDC boat cruise departs from Rameshwar Ghat (₹400, 1h, sunset). 'Private' boats near Lal Ghat often charge ₹800–₹1,500 for the same route. Use the RTDC service or your hotel-arranged boat.", severity: "medium" },
       { icon: "🎨", issue: "'Artist' approach offering free 'demonstration' then pressuring purchase", solution: "Walk-in miniature painting demonstrations are often lead-ins to high-pressure sales. If you want to buy miniature art, go directly to the government emporium (Rajasthali) on City Palace Road.", severity: "low" },
       { icon: "🏰", issue: "City Palace combined ticket confusion", solution: "City Palace has multiple museums inside. The combined ticket (₹700) covers most sections. Buy at the main entrance counter — not from touts who offer 'guide + ticket combos' outside.", severity: "low" },
     ],
@@ -1237,7 +1237,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
 
   {
     destId: "rishikesh",
-    fromCityToSight: "From Rishikesh Railway Station (or from Haridwar if coming by major train), the ghat area (Laxman Jhula / Swarg Ashram) is 5–7 km. Take a shared jeep (₹20/seat) to Ram Jhula area, or auto (₹80–₁50). Most ashrams and hostels are in the Laxman Jhula / Swarg Ashram zone — know your exact address before arriving.",
+    fromCityToSight: "From Rishikesh Railway Station (or from Haridwar if coming by major train), the ghat area (Laxman Jhula / Swarg Ashram) is 5–7 km. Take a shared jeep (₹20/seat) to Ram Jhula area, or auto (₹80–₹150). Most ashrams and hostels are in the Laxman Jhula / Swarg Ashram zone — know your exact address before arriving.",
     firstThingsToDo: [
       "Rishikesh is strictly vegetarian and alcohol-free — accept this before arriving",
       "Book rafting for Day 2 immediately — seats fill up a day ahead in season",
@@ -1252,7 +1252,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Haridwar Junction (HW) — Best connected, 25 km from Rishikesh OR Rishikesh Station (RKSH) — limited trains",
         distanceFromCity: "Haridwar to Rishikesh: 25 km | Rishikesh station to ghats: 6 km",
         toAccommodation: [
-          { step: 1, icon: "🚌", action: "From Haridwar station: Shared minivans to Rishikesh depart every 10 min from opposite main gate", cost: "₹30–₅0/seat shared van", duration: "45–60 min to Rishikesh", tip: "The shared vans (vikrams) are fast and frequent. They drop at Rishikesh bus stand — then take a shared jeep to Laxman Jhula (₹20) or auto (₹80)." },
+          { step: 1, icon: "🚌", action: "From Haridwar station: Shared minivans to Rishikesh depart every 10 min from opposite main gate", cost: "₹30–₹50/seat shared van", duration: "45–60 min to Rishikesh", tip: "The shared vans (vikrams) are fast and frequent. They drop at Rishikesh bus stand — then take a shared jeep to Laxman Jhula (₹20) or auto (₹80)." },
           { step: 2, icon: "🛺", action: "From Rishikesh Bus Stand to Laxman Jhula / Ram Jhula: shared jeep or auto", cost: "₹20 shared / ₹80 auto", duration: "15–20 min", tip: "Most accommodation is in the Swarg Ashram / Laxman Jhula area — confirm which bridge you need. Ram Jhula and Laxman Jhula are 2 km apart." },
         ],
       },
@@ -1262,7 +1262,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Rishikesh Bus Stand / Self-drive via NH-334 from Delhi",
         distanceFromCity: "Bus stand: 5 km from Laxman Jhula",
         toAccommodation: [
-          { step: 1, icon: "🚌", action: "ISBT Delhi to Rishikesh: Volvo AC bus every 2h (₹300–₄50). Drop at Haridwar bypass or Rishikesh main bus stand.", cost: "₹300–₄50", duration: "6–7h", tip: "If driving: ample parking at Ram Jhula. The last 2 km into Laxman Jhula is very narrow — park at Ram Jhula and walk/take shared jeep." },
+          { step: 1, icon: "🚌", action: "ISBT Delhi to Rishikesh: Volvo AC bus every 2h (₹300–₹450). Drop at Haridwar bypass or Rishikesh main bus stand.", cost: "₹300–₹450", duration: "6–7h", tip: "If driving: ample parking at Ram Jhula. The last 2 km into Laxman Jhula is very narrow — park at Ram Jhula and walk/take shared jeep." },
         ],
       },
     ],
@@ -1294,11 +1294,11 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
       medical: "AIIMS Rishikesh (excellent): 0135-2462900. General Hospital: 0135-2430179. Most common issues: rafting injuries, sunburn, stomach problems — all manageable locally.",
       language: "Hindi. Garhwali is local dialect. English very widely spoken in tourist and yoga areas — Rishikesh has decades of international visitor culture.",
       localEmergency: "Rishikesh Tourist Police: 0135-2431793 | Women Helpline: 1090 | Uttarakhand Emergency: 112",
-      upi: "Widely accepted in cafes, restaurants, and shops around tourist zones. Some traditional ghats and boat services are cash-only. Carry ₹500–₁,000 daily.",
+      upi: "Widely accepted in cafes, restaurants, and shops around tourist zones. Some traditional ghats and boat services are cash-only. Carry ₹500–₹1,000 daily.",
       powerOutlet: "Standard 230V, Type C/D. Power is generally stable in Rishikesh. Ashrams may have restricted hours. Carry power bank for long trekking days.",
     },
     localAttractions: [
-      { name: "White-Water Rafting (Shivpuri to Rishikesh)", type: "Adventure Sport", distanceFromCenter: "16 km upstream", entryFee: "₹600–₁,200/person", timing: "8am – 2pm (last boat)", bestTime: "Morning", insiderTip: "Grade 3–4 rapids. The 'Three Blind Mice', 'Club House', and 'Return to Sender' rapids are genuinely thrilling. The 16 km section takes 2.5 hours. Wear old clothes you don't mind getting soaked — you WILL capsize at some point.", mustDo: true },
+      { name: "White-Water Rafting (Shivpuri to Rishikesh)", type: "Adventure Sport", distanceFromCenter: "16 km upstream", entryFee: "₹600–₹1,200/person", timing: "8am – 2pm (last boat)", bestTime: "Morning", insiderTip: "Grade 3–4 rapids. The 'Three Blind Mice', 'Club House', and 'Return to Sender' rapids are genuinely thrilling. The 16 km section takes 2.5 hours. Wear old clothes you don't mind getting soaked — you WILL capsize at some point.", mustDo: true },
       { name: "Bungee Jumping at Jumping Heights", type: "Adventure (83m — India's highest)", distanceFromCenter: "20 km from Rishikesh", entryFee: "₹3,550/person", timing: "8:30am – 5pm, book in advance", bestTime: "Morning (cooler)", insiderTip: "India's highest fixed-platform bungee. Also flying fox and giant swing available. Book on jumpingheights.com — they fill up 2–3 days ahead on weekends. Weight limit: 45–110 kg.", mustDo: false },
       { name: "Beatles Ashram (Maharishi Mahesh Yogi Ashram)", type: "Heritage Attraction", distanceFromCenter: "Swarg Ashram area", entryFee: "₹150 Indians / ₹600 foreigners", timing: "9am – 5pm", bestTime: "Morning", insiderTip: "The abandoned ashram where The Beatles wrote White Album songs in 1968. Now covered in extraordinary street art and reclaimed by jungle. The meditation caves where John, Paul, George, and Ringo sat are preserved. Deeply atmospheric.", mustDo: true },
       { name: "Ganga Aarti, Triveni Ghat", type: "Evening Prayer Ceremony", distanceFromCenter: "Rishikesh main area", entryFee: "Free", timing: "6:30pm (winter) / 7pm (summer)", bestTime: "Arrive 6pm for best spot", insiderTip: "Smaller and more intimate than Varanasi's version, but equally moving. Priests swing large fire urns to conch shells and bells while devotees release flower lamps (diyas) onto the river. Sit close to the ghats rather than watching from a distance.", mustDo: true },
@@ -1382,7 +1382,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Bagdogra Airport (IXB) — Siliguri, 90 km from Darjeeling",
         distanceFromCity: "90 km and 2.5–3h mountain drive",
         toAccommodation: [
-          { step: 1, icon: "🚗", action: "Prepaid taxi counter inside arrivals — government fixed rate for Darjeeling", cost: "₹2,000–₂,500 for private cab", duration: "2.5–3.5h", tip: "Share the cab if you can find fellow Darjeeling-bound passengers — standard practice, saves ₹1,000 per person." },
+          { step: 1, icon: "🚗", action: "Prepaid taxi counter inside arrivals — government fixed rate for Darjeeling", cost: "₹2,000–₹2,500 for private cab", duration: "2.5–3.5h", tip: "Share the cab if you can find fellow Darjeeling-bound passengers — standard practice, saves ₹1,000 per person." },
           { step: 2, icon: "🚌", action: "Or: take a cab to Siliguri bus stand (₹400, 20 min), then shared jeep to Darjeeling (₹200/seat, 3.5h)", cost: "₹600 total via bus stand route", duration: "4h total", tip: "Shared jeep is the authentic way to arrive. The 78 km mountain road from Siliguri is beautiful — sit on the right side for valley views." },
         ],
       },
@@ -1392,8 +1392,8 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "New Jalpaiguri (NJP) Station — 80 km from Darjeeling",
         distanceFromCity: "80 km, 3–4h mountain journey",
         toAccommodation: [
-          { step: 1, icon: "🚌", action: "Shared jeep from outside NJP station — line up on the left side (Darjeeling-bound queue)", cost: "₹200–₂50/seat", duration: "3.5–4h to Darjeeling", tip: "The shared jeeps from NJP leave when full (usually within 20–30 min). Super scenic. You'll see tea estates, waterfalls, and mountain switchbacks." },
-          { step: 2, icon: "🎟️", action: "Toy Train alternative: NJP to Darjeeling Toy Train (UNESCO DHR) — beautiful but 7h", cost: "₹300–₁,500 depending on class", duration: "7h", tip: "The Toy Train was built in 1881. It stops at several small stations including Ghum (India's highest railway station, 2,258m). Best booked for the journey up rather than down — you see the view better going up." },
+          { step: 1, icon: "🚌", action: "Shared jeep from outside NJP station — line up on the left side (Darjeeling-bound queue)", cost: "₹200–₹250/seat", duration: "3.5–4h to Darjeeling", tip: "The shared jeeps from NJP leave when full (usually within 20–30 min). Super scenic. You'll see tea estates, waterfalls, and mountain switchbacks." },
+          { step: 2, icon: "🎟️", action: "Toy Train alternative: NJP to Darjeeling Toy Train (UNESCO DHR) — beautiful but 7h", cost: "₹300–₹1,500 depending on class", duration: "7h", tip: "The Toy Train was built in 1881. It stops at several small stations including Ghum (India's highest railway station, 2,258m). Best booked for the journey up rather than down — you see the view better going up." },
         ],
       },
     ],
@@ -1432,14 +1432,14 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
       medical: "Planters' Hospital (Darjeeling): 0354-2252404. Sadar Hospital (Govt): 0354-2252024. Cold-related issues are most common — hypothermia risk is real for underprepared Tiger Hill visitors.",
       language: "Nepali is widely spoken. Hindi and Bengali also understood. English is widely used — Darjeeling has a long missionary school tradition and very high English literacy.",
       localEmergency: "Darjeeling Police: 0354-2252263 | Women Helpline WB: 181 | Emergency: 112",
-      upi: "Widely accepted in town. Tea estates and remote areas prefer cash. Carry ₹1,000–₂,000 small notes.",
+      upi: "Widely accepted in town. Tea estates and remote areas prefer cash. Carry ₹1,000–₹2,000 small notes.",
       powerOutlet: "230V Type C/D. Scheduled power cuts happen. Most hotels have backup. Cold drains batteries faster than usual — carry power bank.",
     },
     localAttractions: [
       { name: "Tiger Hill Sunrise", type: "Sunrise Viewpoint", distanceFromCenter: "13 km from Darjeeling", entryFee: "₹100 viewpoint (car entry)", timing: "Depart 4am, sunrise 5:30–6am", bestTime: "October–November and March–April for best visibility", insiderTip: "The viewing platform has a 'sunrise hut' with hot tea (₹40). Get inside early — outside, the wind at Tiger Hill at 4:30am in October is biting cold. On the clearest days, you see Everest's peak to the west of Kangchenjunga — bring binoculars.", mustDo: true },
       { name: "Happy Valley Tea Estate", type: "Working Tea Estate", distanceFromCenter: "3 km from Chowrasta", entryFee: "₹100 factory tour", timing: "8am – 4pm, closed Sundays and Monday mornings", bestTime: "Morning (factory processing active)", insiderTip: "The 1854 estate still uses original tea-processing machines. You'll see withering, rolling, fermentation, and firing of leaves. Buy directly from the estate shop — prices are fair and tea is 100% authentic Darjeeling, not tourist-grade blends.", mustDo: true },
       { name: "Batasia Loop", type: "Toy Train Landmark", distanceFromCenter: "5 km from Darjeeling", entryFee: "₹30 + Toy Train ticket", timing: "All day", bestTime: "When Toy Train passes (check schedule)", insiderTip: "The loop was built in 1919 so the Toy Train could descend the steep hill without brakes. The garden around it has a war memorial. On a clear day, Kangchenjunga frames the train as it completes the spiral — one of India's most photogenic shots.", mustDo: false },
-      { name: "Glenburn Tea Estate", type: "Heritage Stay — Hidden Gem", distanceFromCenter: "20 km from Darjeeling", entryFee: "₹15,000–₂0,000/night (stay)", timing: "2-day minimum", bestTime: "March–May or October", insiderTip: "Not cheap, but extraordinary. Working 1860s tea estate with colonial bungalow, private waterfall, and 3,000m altitude views. You pluck your own tea in the morning, which the estate processes and gives you to take home. Buchanan River walk through estate is magical.", mustDo: false },
+      { name: "Glenburn Tea Estate", type: "Heritage Stay — Hidden Gem", distanceFromCenter: "20 km from Darjeeling", entryFee: "₹15,000–₹20,000/night (stay)", timing: "2-day minimum", bestTime: "March–May or October", insiderTip: "Not cheap, but extraordinary. Working 1860s tea estate with colonial bungalow, private waterfall, and 3,000m altitude views. You pluck your own tea in the morning, which the estate processes and gives you to take home. Buchanan River walk through estate is magical.", mustDo: false },
     ],
     travelAdvisory: {
       updatedFrom: "West Bengal Tourism & Darjeeling District Administration",
@@ -1520,7 +1520,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         name: "Khajuraho Airport (HJR) — Small airport, direct Delhi flights",
         distanceFromCity: "7 km from Western Temple Group",
         toAccommodation: [
-          { step: 1, icon: "🚗", action: "Very small airport — taxis wait outside. Agree on price: ₹150–₂00 to temple area hotels", cost: "₹150–₂00", duration: "10–15 min", tip: "Khajuraho airport is tiny. Your hotel can arrange pickup if notified — often free for mid-range and above. Call ahead if your flight lands at odd hours (some arrive 11pm)." },
+          { step: 1, icon: "🚗", action: "Very small airport — taxis wait outside. Agree on price: ₹150–₹200 to temple area hotels", cost: "₹150–₹200", duration: "10–15 min", tip: "Khajuraho airport is tiny. Your hotel can arrange pickup if notified — often free for mid-range and above. Call ahead if your flight lands at odd hours (some arrive 11pm)." },
         ],
       },
       {
@@ -1530,7 +1530,7 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
         distanceFromCity: "Khajuraho station: 3 km from temples. Jhansi: 175 km, 3h by cab.",
         toAccommodation: [
           { step: 1, icon: "🚗", action: "From Jhansi: Book a full cab to Khajuraho (₹2,500 one-way or ₹4,500 Jhansi–Khajuraho–Jhansi round trip). No direct public transport.", cost: "₹2,500 cab from Jhansi", duration: "3–3.5h via Chhatarpur", tip: "The Jhansi–Khajuraho route passes through Orchha (75 km from Jhansi) — a gorgeous medieval cenotaph town. Stop for 2 hours and add it to your itinerary at no significant extra cost." },
-          { step: 2, icon: "🚲", action: "From Khajuraho station: Cycle rickshaw or auto to temple zone", cost: "₹50–₁00 rickshaw", duration: "10 min", tip: "Khajuraho is very compact. Once at the Western Group hotels, a bicycle (₹100/day) is the perfect way to visit all three temple groups." },
+          { step: 2, icon: "🚲", action: "From Khajuraho station: Cycle rickshaw or auto to temple zone", cost: "₹50–₹100 rickshaw", duration: "10 min", tip: "Khajuraho is very compact. Once at the Western Group hotels, a bicycle (₹100/day) is the perfect way to visit all three temple groups." },
         ],
       },
     ],
@@ -1561,12 +1561,12 @@ export const JOURNEY_GUIDES: JourneyGuide[] = [
       medical: "District Hospital Chhatarpur (40 km): 07682-242080. Khajuraho has a small clinic — for anything serious, Chhatarpur or Bhopal is necessary. Travel insurance is essential.",
       language: "Hindi. Very little English in local shops and restaurants — but all temple staff and hotel reception speak functional English.",
       localEmergency: "Khajuraho Police: 07686-274058 | MP Tourist Helpline: 0755-2774318 | Emergency: 112",
-      upi: "Works at main hotels and some restaurants. Most small eateries, rickshaws, and market stalls are cash-only. Carry ₹1,000–₁,500 in cash daily.",
+      upi: "Works at main hotels and some restaurants. Most small eateries, rickshaws, and market stalls are cash-only. Carry ₹1,000–₹1,500 in cash daily.",
       powerOutlet: "230V Type C/D. Power cuts are somewhat common in this area. Carry a power bank.",
     },
     localAttractions: [
       { name: "Western Temple Group (UNESCO)", type: "10th Century Temple Complex", distanceFromCenter: "Is the center", entryFee: "₹50 Indians / ₹600 foreigners", timing: "Sunrise – sunset", bestTime: "6–9am sunrise and 4–6pm golden hour", insiderTip: "The erotic carvings cover only 10% of the total sculpture — the other 90% depicts daily life, celestial beings, warriors, and elephants with extraordinary detail. The Kandariya Mahadeva temple spire (30m) was built without cement — only interlocking stone. Extraordinary 11th-century engineering.", mustDo: true },
-      { name: "Panna Tiger Reserve Safari", type: "Wildlife Safari", distanceFromCenter: "45 km from Khajuraho", entryFee: "₹1,200–₁,500/person jeep share + ₹200 guide", timing: "Morning: 6–10am | Afternoon: 3–6pm", bestTime: "October–March (best wildlife sighting)", insiderTip: "Panna was delisted from tiger reserves in 2009 after all tigers were poached, then restocked through a pioneering relocation program. Today it has 70+ tigers. Ken River runs through the reserve — river safaris by boat are also available and extraordinary for gharials and vultures.", mustDo: true },
+      { name: "Panna Tiger Reserve Safari", type: "Wildlife Safari", distanceFromCenter: "45 km from Khajuraho", entryFee: "₹1,200–₹1,500/person jeep share + ₹200 guide", timing: "Morning: 6–10am | Afternoon: 3–6pm", bestTime: "October–March (best wildlife sighting)", insiderTip: "Panna was delisted from tiger reserves in 2009 after all tigers were poached, then restocked through a pioneering relocation program. Today it has 70+ tigers. Ken River runs through the reserve — river safaris by boat are also available and extraordinary for gharials and vultures.", mustDo: true },
       { name: "Raneh Falls", type: "Natural Canyon", distanceFromCenter: "20 km from Khajuraho", entryFee: "₹100 + vehicle fee", timing: "8am – 5pm", bestTime: "October–February (best water)", insiderTip: "The Ken River has cut a 5 km gorge through pink and grey granite, creating a series of waterfalls. Completely different from the temples — a dramatic natural landscape. Hire the forest dept boat for a gorge float (₹200) — it's surreal.", mustDo: false },
       { name: "Orchha — Cenotaphs and Fortress", type: "Medieval Town — Off Beat", distanceFromCenter: "170 km via Jhansi", entryFee: "₹250 combined ticket", timing: "All day", bestTime: "Morning and late afternoon", insiderTip: "Orchha is often passed through on the Jhansi–Khajuraho drive. Stop for 2–3 hours. The 16th-century Betwa River island palace and 14 royal chhatri (cenotaphs) are beautiful and rarely crowded. One of Madhya Pradesh's best-kept secrets.", mustDo: false },
     ],
