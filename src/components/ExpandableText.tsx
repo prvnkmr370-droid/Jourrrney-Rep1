@@ -11,7 +11,8 @@
  *   and reports `expanded` to screen readers; focus stays on the toggle.
  * - The tap target is at least 44pt tall even though it looks like a small
  *   link, with a chevron to signal that more content is there. It sits at the
- *   right-hand edge, under the text block.
+ *   right-hand edge, under the text block, with the chevron to the left of
+ *   the label.
  */
 import { useState } from "react";
 import { LayoutAnimation, Platform, Pressable, Text, UIManager, View, type StyleProp, type TextStyle, type ViewStyle } from "react-native";
@@ -75,20 +76,24 @@ export default function ExpandableText({ text, lines = 4, textStyle, style, subj
       </View>
 
       {overflows && (
-        <Pressable
-          onPress={toggle}
-          accessibilityRole="button"
-          accessibilityState={{ expanded }}
-          accessibilityLabel={subject ? `${label} about ${subject}` : label}
-          hitSlop={{ top: 6, bottom: 6, left: 24, right: 8 }}
-          style={({ pressed }) => ({
-            alignSelf: "flex-end", flexDirection: "row", alignItems: "center", gap: 4,
-            minHeight: 44, opacity: pressed ? 0.6 : 1,
-          })}
-        >
-          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.primary }}>{label}</Text>
-          <Chevron color={c.primary} size={16} />
-        </Pressable>
+        // An explicit full-width row that pushes its content to the right,
+        // rather than relying on the button's own alignSelf.
+        <View style={{ flexDirection: "row", justifyContent: "flex-end", alignSelf: "stretch", width: "100%" }}>
+          <Pressable
+            onPress={toggle}
+            accessibilityRole="button"
+            accessibilityState={{ expanded }}
+            accessibilityLabel={subject ? `${label} about ${subject}` : label}
+            hitSlop={{ top: 6, bottom: 6, left: 24, right: 8 }}
+            style={({ pressed }) => ({
+              flexDirection: "row", alignItems: "center", gap: 4,
+              minHeight: 44, opacity: pressed ? 0.6 : 1,
+            })}
+          >
+            <Chevron color={c.primary} size={16} />
+            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, lineHeight: 18, color: c.primary }}>{label}</Text>
+          </Pressable>
+        </View>
       )}
     </View>
   );

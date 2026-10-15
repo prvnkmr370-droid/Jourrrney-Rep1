@@ -16,7 +16,10 @@ import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
 import ExpandableText from "@/components/ExpandableText";
-import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Clock, Gem } from "lucide-react-native";
+import OpeningHoursCard from "@/components/OpeningHoursCard";
+import { useLiveOpeningHours } from "@/hooks/useOpeningHours";
+import { fromCurated } from "@/utils/openingHours";
+import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Gem } from "lucide-react-native";
 import type { Destination, NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -27,6 +30,8 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
   const popularNearby = d.nearbyPlaces.filter((p) => !p.isHidden);
   const hiddenNearby = d.nearbyPlaces.filter((p) => p.isHidden);
   const { loading: osmLoading, error: osmError, places: osmPlaces } = useNearbyPlaces(d.id);
+  const liveHours = useLiveOpeningHours(d);
+  const weeklyHours = liveHours ?? fromCurated(d.visitingHours);
   // Anything already shown in the hand-curated lists above shouldn't be
   // repeated in the "More" section below.
   const curatedNames = new Set(d.nearbyPlaces.map((p) => p.name.trim().toLowerCase()));
@@ -43,32 +48,16 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
         text={d.description}
         lines={4}
         subject={d.name}
-        style={{ marginBottom: d.visitingHours ? 12 : 24 }}
+        style={{ marginBottom: weeklyHours ? 12 : 24 }}
         textStyle={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary }}
       />
 
-      {d.visitingHours && (
-        <View
-          style={{
-            alignItems: "center", gap: 4, marginBottom: 24,
-            backgroundColor: c.surfaceAlt, borderRadius: 12, paddingVertical: 10, paddingHorizontal: 14,
-          }}
-        >
-          {/* Clock + times kept on their own row, separate from the
-              (often much longer) note below — a wrapped note used to
-              drag the icon down to visually center against the whole
-              paragraph instead of staying pinned beside "Opens". */}
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-            <Clock color={c.teal} size={16} />
-            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }}>
-              Opens: {d.visitingHours.opens}  ·  Closes: {d.visitingHours.closes}
-            </Text>
-          </View>
-          {d.visitingHours.note ? (
-            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, textAlign: "center" }}>
-              {d.visitingHours.note}
-            </Text>
-          ) : null}
+      {/* Opening hours as a day-by-day accordion — live Google Maps hours
+          when the backend has a key, otherwise this card's curated hours
+          (see utils/openingHours.ts). */}
+      {weeklyHours && (
+        <View style={{ marginBottom: 24 }}>
+          <OpeningHoursCard hours={weeklyHours} note={d.visitingHours?.note} subject={d.name} />
         </View>
       )}
 
