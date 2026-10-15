@@ -26044,6 +26044,7 @@ const DESTINATIONS_PART_1: Destination[] = [
     category: ["Nature", "Adventure"],
     bestSeason: "November to June (park closed July–October for monsoon)",
     duration: "1–2 Days",
+    visitingHours: { opens: "7:00 AM", closes: "Sunset", note: "Safari shifts: winter 7–10 AM and 3 PM to before sunset; summer 6–9 AM and 4:30 PM to before sunset. Source: UP Eco Tourism Society (upecotourism.in)." },
     highlights: [
       { name: "Gerua (Girwa) river boat safari" },
       { name: "Gharial and Gangetic dolphin habitat" },
@@ -26107,6 +26108,7 @@ const DESTINATIONS_PART_1: Destination[] = [
     category: ["Nature"],
     bestSeason: "October to March (waterfalls fullest just after monsoon, September–November)",
     duration: "1 Day",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Source: Incredible India, Ministry of Tourism (incredibleindia.gov.in). Confirm locally before visiting." },
     highlights: [
       { name: "Rajdari Waterfall" },
       { name: "Devdari Waterfall" },
@@ -26234,6 +26236,7 @@ const DESTINATIONS_PART_1: Destination[] = [
     category: ["Nature"],
     bestSeason: "November to February (peak migratory bird season)",
     duration: "Half Day",
+    visitingHours: { opens: "7:00 AM", closes: "5:00 PM", note: "Source: Incredible India, Ministry of Tourism (incredibleindia.gov.in). Confirm locally before visiting." },
     highlights: [
       { name: "Central lake and wetland" },
       { name: "Migratory waterfowl (winter season)" },
@@ -64880,6 +64883,7 @@ const DESTINATIONS_PART_2: Destination[] = [
     category: ["Pilgrimage", "Heritage"],
     bestSeason: "October – March",
     duration: "1–2 hours",
+    visitingHours: { opens: "6:00 AM", closes: "8:00 PM", note: "Source: Incredible India, Ministry of Tourism (incredibleindia.gov.in). Confirm locally before visiting." },
     highlights: [{ name: "An active shrine with daily darshan" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "IGI Airport (DEL), then road — ~90 km", fromMumbai: "Via Delhi, then road", fromBangalore: "Via Delhi, then road", duration: "~1.5–2h road from the airport", costRange: "₹2,500–₹9,000 (Delhi leg)", tips: "No separate airport for Panipat — Delhi's IGI is the entry point." },
@@ -70951,6 +70955,7 @@ const DESTINATIONS_PART_2: Destination[] = [
     category: ["Spiritual", "Heritage", "Adventure"],
     bestSeason: "March – October (avoid heavy-monsoon weeks in August given landslide risk on the trek)",
     duration: "1–2 days",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Darshan runs round the clock as a continuous queue, paused about 2 hours around the morning and evening aarti. Yatra registration at Katra is needed. Source: Shri Mata Vaishno Devi Shrine Board (maavaishnodevi.org)." },
     highlights: [
       { name: "The Bhawan cave shrine and its three natural pindies" },
       { name: "Banganga — the trek's traditional starting point" },
@@ -99854,6 +99859,7 @@ const DESTINATIONS_PART_3: Destination[] = [
     category: ["Nature", "Adventure", "Wildlife"],
     bestSeason: "November – April (the only permitted visiting window)",
     duration: "1–2 days",
+    visitingHours: { opens: "6:00 AM", closes: "5:00 PM", note: "Closed Sundays. Small entry fee; permit from the Forest Department office in Saiha. Source: Incredible India, Ministry of Tourism (incredibleindia.gov.in)." },
     highlights: [{ name: "Mizoram's highest peak at 2,157 metres" }, { name: "The sweeping Farpak grassland near the park's base" }, { name: "Rare clouded leopard sightings and rich birdlife" }, { name: "Sunrise views above the cloud line" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "Lengpui Airport, Aizawl, then a long road journey via Lawngtlai", fromMumbai: "Via Kolkata, then road", fromBangalore: "Via Kolkata, then road", duration: "Fly into Aizawl's Lengpui Airport, then road to Sangau/Lawngtlai", costRange: "₹4,000–₹14,000 airfare to Aizawl", tips: "This is Mizoram's most remote major destination — plan for a genuinely long approach." },
@@ -102112,6 +102118,7 @@ const DESTINATIONS_PART_3: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (pleasant weather, best for the lawns in the evening)",
     duration: "1-2 hours",
+    visitingHours: { opens: "24 hours", closes: "24 hours", note: "Open daily; some areas are not accessible to visitors after dark. Source: Delhi Tourism (delhitourism.gov.in)." },
     highlights: [{ name: "A 42-metre war memorial designed by Sir Edwin Lutyens" }, { name: "Names of over 13,000 fallen Indian Army soldiers carved into the arch" }, { name: "The Amar Jawan Jyoti eternal flame" }, { name: "Central Delhi's most popular lawns for an evening out" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to India Gate by road/metro", fromBangalore: "IGI Airport, ~40 min to India Gate by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "Central Delhi location — easy to combine with Rashtrapati Bhavan and the ceremonial avenue." },
@@ -102732,6 +102739,7 @@ const DESTINATIONS_PART_3: Destination[] = [
     category: ["Heritage", "Culture"],
     bestSeason: "October – March (and Amrit Udyan's spring opening, usually February-March)",
     duration: "1-2 hours (forecourt); check ahead for Amrit Udyan or interior tour access",
+    visitingHours: { opens: "9:30 AM", closes: "4:30 PM", note: "Closed Mondays and gazetted holidays. Main building visits are by pre-booked slots (book online up to 7 days ahead); entry closes at 4:00 PM. Source: Rashtrapati Bhavan (rashtrapatibhavan.gov.in)." },
     highlights: [{ name: "A 340-room palace designed by Sir Edwin Lutyens" }, { name: "A copper dome inspired by the Buddhist stupa at Sanchi" }, { name: "The Mughal-style Amrit Udyan gardens, open seasonally" }, { name: "The centrepiece of Lutyens' Delhi's ceremonial avenue" }],
     transport: [
       { mode: "Flight", icon: "✈️", fromDelhi: "—", fromMumbai: "IGI Airport, ~40 min to Rashtrapati Bhavan by road/metro", fromBangalore: "IGI Airport, ~40 min to Rashtrapati Bhavan by road/metro", duration: "Fly into Delhi (IGI), then road or metro", costRange: "₹2,500–₹9,000 airfare to Delhi", tips: "At the western end of Kartavya Path — easy to combine with India Gate and the ceremonial avenue." },
@@ -124378,6 +124386,7 @@ const DESTINATIONS_PART_3: Destination[] = [
     category: ["Wildlife", "Nature", "Trekking"],
     bestSeason: "October to April (avoid monsoon, June to September)",
     duration: "1–2 Days",
+    visitingHours: { opens: "9:00 AM", closes: "4:00 PM", note: "Entry permit from the forest office is needed; confirm monsoon closures locally. Source: Incredible India, Ministry of Tourism (incredibleindia.gov.in)." },
     highlights: [
       { name: "Red panda habitat" },
       { name: "190+ recorded bird species" },
