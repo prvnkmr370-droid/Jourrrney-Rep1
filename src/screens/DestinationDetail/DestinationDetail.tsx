@@ -46,7 +46,7 @@ type Tab = (typeof TABS)[number]["id"];
 // made it a thin strip). Using a proportion rather than one pixel count keeps
 // every destination's page the same on every screen size.
 const HERO_HEIGHT_RATIO = 0.4;
-const HERO_EXTRA_HEIGHT = 60;
+const HERO_EXTRA_HEIGHT = 70;
 
 interface Props {
   destination: Destination;
@@ -58,6 +58,8 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const scheme = useResolvedScheme();
+  // RGB of the colour the hero fades into: the page background in dark mode, a warm near-black in light mode.
+  const scrimRgb = scheme === "dark" ? "14,20,36" : "28,25,23";
   const { width, height: windowHeight } = useWindowDimensions();
   const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO) + HERO_EXTRA_HEIGHT;
   const [activeTab, setActiveTab] = useState<Tab>("Overview");
@@ -180,9 +182,20 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
                 <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: heroHeight }} contentFit="cover" />
               ))}
             </ScrollView>
+            {/* Top: a light scrim behind the back button / badges. Bottom: a
+                longer, denser fade into the page background so the state,
+                name and rating row stay readable on busy photos. The
+                intermediate stops use the same hue as the final colour so
+                the fade doesn't turn grey halfway down. */}
             <LinearGradient
-              colors={["rgba(0,0,0,0.4)", "transparent", scheme === "dark" ? "#0E1424" : "#1C1917"]}
-              locations={[0, 0.4, 1]}
+              colors={[
+                "rgba(0,0,0,0.4)",
+                `rgba(${scrimRgb},0)`,
+                `rgba(${scrimRgb},0.45)`,
+                `rgba(${scrimRgb},0.82)`,
+                `rgb(${scrimRgb})`,
+              ]}
+              locations={[0, 0.3, 0.55, 0.8, 1]}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}
               style={{ position: "absolute", inset: 0 }}
@@ -267,7 +280,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             )}
 
             <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 20 }}>
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.7)", marginBottom: 4 }}>
+              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.9)", marginBottom: 4 }}>
                 {d.state}
               </Text>
               <Text
