@@ -97,7 +97,7 @@ export default function SettingsTab() {
                   onPress={() => setThemeMode(opt.id)}
                   style={{ flex: 1, alignItems: "center", paddingVertical: 8, borderRadius: 9, backgroundColor: active ? c.primary : "transparent" }}
                 >
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
+                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: active ? c.onPrimary : c.textSecondary }}>
                     {opt.label}
                   </Text>
                 </Pressable>

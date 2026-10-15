@@ -20,7 +20,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
-import { useThemeColors } from "@/theme/useThemeColors";
+import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 
 import OverviewTab from "./tabs/OverviewTab";
@@ -57,6 +57,7 @@ interface Props {
 export default function DestinationDetail({ destination: d, onBack, onPlanTrip }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
+  const scheme = useResolvedScheme();
   const { width, height: windowHeight } = useWindowDimensions();
   const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO) + HERO_EXTRA_HEIGHT;
   const [activeTab, setActiveTab] = useState<Tab>("Overview");
@@ -180,7 +181,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
               ))}
             </ScrollView>
             <LinearGradient
-              colors={["rgba(0,0,0,0.4)", "transparent", "#1C1917"]}
+              colors={["rgba(0,0,0,0.4)", "transparent", scheme === "dark" ? "#0E1424" : "#1C1917"]}
               locations={[0, 0.4, 1]}
               start={{ x: 0, y: 0 }}
               end={{ x: 0, y: 1 }}

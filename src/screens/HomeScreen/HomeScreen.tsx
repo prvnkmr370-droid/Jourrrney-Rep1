@@ -105,7 +105,7 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
                 <Text
                   style={{
                     fontFamily: "Poppins_700Bold", fontSize: 12, lineHeight: 16,
-                    color: active ? "#FFFFFF" : c.textSecondary,
+                    color: active ? c.onPrimary : c.textSecondary,
                   }}
                 >
                   {cat}

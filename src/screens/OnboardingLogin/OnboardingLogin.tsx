@@ -89,7 +89,7 @@ export default function OnboardingLogin({ onDone }: Props) {
   return (
     <View style={{ flex: 1 }}>
       <LinearGradient
-        colors={["#0b1520", "#0D2B2E", "#1C1917"]}
+        colors={["#090E1B", "#0E1424", "#141B2E"]}
         locations={[0, 0.4, 1]}
         start={{ x: 0.5, y: 0 }}
         end={{ x: 0.5, y: 1 }}
