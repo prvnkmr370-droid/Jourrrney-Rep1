@@ -15,6 +15,7 @@
 import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
+import ExpandableText from "@/components/ExpandableText";
 import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Clock, Gem } from "lucide-react-native";
 import type { Destination, NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
@@ -34,9 +35,17 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
     <View style={{ padding: 20 }}>
       {/* marginBottom matches the teaser card's marginTop below (24) so the
           gap before and after "Top Highlights" is the same on both sides. */}
-      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary, marginBottom: d.visitingHours ? 12 : 24 }}>
-        {d.description}
-      </Text>
+      {/* Clamped to 4 lines with a "Read more" toggle — the full description
+          can run to a dozen lines and used to push everything below it
+          (hours, highlights, nearby places) off the first screen. */}
+      <ExpandableText
+        key={d.id}
+        text={d.description}
+        lines={4}
+        subject={d.name}
+        style={{ marginBottom: d.visitingHours ? 12 : 24 }}
+        textStyle={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary }}
+      />
 
       {d.visitingHours && (
         <View
