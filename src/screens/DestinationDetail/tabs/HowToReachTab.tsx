@@ -25,6 +25,7 @@ import WeatherSection from "./how-to-reach/WeatherSection";
 import EssentialsSection from "./how-to-reach/EssentialsSection";
 import AdvisorySection from "./how-to-reach/AdvisorySection";
 import LocalTransportSection from "./how-to-reach/LocalTransportSection";
+import TripPrepCard from "@/components/TripPrepCard";
 
 const SECTIONS = [
   { id: "arrive", label: "Getting There", Icon: Plane },
@@ -82,7 +83,14 @@ export default function HowToReachTab({ destination: d }: { destination: Destina
         {section === "weather" && <WeatherSection destination={d} guide={guide} />}
         {section === "essentials" && guide?.cityEssentials && <EssentialsSection destination={d} guide={guide} />}
         {section === "advisory" && guide?.travelAdvisory && (
-          <AdvisorySection advisory={guide.travelAdvisory} destName={d.name} />
+          <>
+            <AdvisorySection advisory={guide.travelAdvisory} destName={d.name} />
+            {/* Moved here from Overview: packing is the natural next step
+                after reading the advisory. */}
+            <View style={{ marginTop: 24 }}>
+              <TripPrepCard destination={d} />
+            </View>
+          </>
         )}
       </View>
     </View>

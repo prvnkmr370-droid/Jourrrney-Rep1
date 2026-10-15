@@ -19,7 +19,7 @@ import ExpandableText from "@/components/ExpandableText";
 import OpeningHoursCard from "@/components/OpeningHoursCard";
 import { useLiveOpeningHours } from "@/hooks/useOpeningHours";
 import { fromCurated } from "@/utils/openingHours";
-import { Sparkles, Backpack, ChevronRight, MapPin, Eye, Compass, Gem } from "lucide-react-native";
+import { Sparkles, ChevronRight, MapPin, Eye, Compass, Gem } from "lucide-react-native";
 import type { Destination, NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -99,26 +99,6 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
           );
         })}
       </View>
-
-      <Pressable
-        onPress={() => router.push(`/safety/trip-prep?destId=${d.id}`)}
-        style={{
-          flexDirection: "row", alignItems: "center", gap: 12, marginTop: 24,
-          backgroundColor: withOpacity(c.gold, 0.1), borderWidth: 1.5, borderColor: withOpacity(c.gold, 0.35),
-          borderRadius: 16, padding: 14,
-        }}
-      >
-        <View style={{ width: 40, height: 40, borderRadius: 12, backgroundColor: withOpacity(c.gold, 0.18), alignItems: "center", justifyContent: "center" }}>
-          <Backpack color={c.gold} size={18} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>Trip Prep & Packing</Text>
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary, marginTop: 2 }}>
-            What to pack for {d.bestSeason} — and more
-          </Text>
-        </View>
-        <ChevronRight color={c.gold} size={16} />
-      </Pressable>
 
       {/* Places near this destination — merged in from the former
           standalone "Nearby" tab (see file header comment). Visual style
