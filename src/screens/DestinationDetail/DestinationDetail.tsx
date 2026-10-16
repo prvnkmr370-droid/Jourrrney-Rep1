@@ -12,14 +12,15 @@
  * as redundant as their own top-level tabs.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { View, Text, Pressable, ScrollView, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
+import { View, Text, Pressable, ScrollView, Animated, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet } from "lucide-react-native";
+import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet, MoveHorizontal, ChevronRight } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
+import { readJson, writeJson } from "@/store/deviceStorage";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 
@@ -47,6 +48,14 @@ type Tab = (typeof TABS)[number]["id"];
 // every destination's page the same on every screen size.
 const HERO_HEIGHT_RATIO = 0.4;
 const HERO_EXTRA_HEIGHT = 70;
+
+// Photo carousel: each photo is a little narrower than the screen so the next
+// one peeks out at the right edge — the clearest "there's more, swipe" cue.
+const PEEK_WIDTH = 28;
+const PHOTO_GAP = 8;
+const PHOTO_RADIUS = 22;
+// Remembered on the phone so the "swipe for more photos" hint shows only once.
+const HINT_KEY = "journey_hint_photo_swipe_seen";
 
 interface Props {
   destination: Destination;
@@ -101,10 +110,55 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   // array identity feeds the ScrollView below.
   const heroPhotos = useMemo(() => (d.gallery && d.gallery.length > 0 ? d.gallery : [d.heroImage]), [d]);
 
-  const onHeroScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const next = Math.round(e.nativeEvent.contentOffset.x / width);
-    if (next !== heroIndex) setHeroIndex(next);
+  const multiPhoto = heroPhotos.length > 1;
+  const photoWidth = multiPhoto ? width - PEEK_WIDTH - PHOTO_GAP : width;
+  const snapInterval = photoWidth + (multiPhoto ? PHOTO_GAP : 0);
+
+  const heroRef = useRef<ScrollView>(null);
+  const [hintVisible, setHintVisible] = useState(false);
+  const hintOpacity = useRef(new Animated.Value(0)).current;
+  const hintDismissed = useRef(false);
+
+  const dismissHint = () => {
+    if (hintDismissed.current) return;
+    hintDismissed.current = true;
+    Animated.timing(hintOpacity, { toValue: 0, duration: 250, useNativeDriver: true }).start(() => setHintVisible(false));
   };
+
+  const onHeroScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const x = e.nativeEvent.contentOffset.x;
+    const next = Math.min(heroPhotos.length - 1, Math.max(0, Math.round(x / snapInterval)));
+    if (next !== heroIndex) setHeroIndex(next);
+    // A real swipe (not our own little nudge) retires the hint.
+    if (x > 60 && !hintDismissed.current) dismissHint();
+  };
+
+  // First time anyone opens a multi-photo destination: show "Swipe for more
+  // photos" and give the carousel a small nudge so the motion teaches the
+  // gesture. Remembered on the phone, so it never repeats.
+  useEffect(() => {
+    if (!multiPhoto) return;
+    let cancelled = false;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    (async () => {
+      const seen = await readJson<boolean>(HINT_KEY);
+      if (cancelled || seen) return;
+      void writeJson(HINT_KEY, true);
+      timers.push(setTimeout(() => {
+        if (cancelled) return;
+        setHintVisible(true);
+        Animated.timing(hintOpacity, { toValue: 1, duration: 300, useNativeDriver: true }).start();
+        heroRef.current?.scrollTo({ x: 48, animated: true });
+        timers.push(setTimeout(() => heroRef.current?.scrollTo({ x: 0, animated: true }), 500));
+        timers.push(setTimeout(dismissHint, 4500));
+      }, 900));
+    })();
+    return () => {
+      cancelled = true;
+      timers.forEach(clearTimeout);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [d.id, multiPhoto]);
 
   // The whole page is one vertical scroll — photo, tab strip and content move
   // together. (Before, only the content under a fixed photo + tab strip
@@ -172,14 +226,27 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
               and Mehtab Bagh, not just the one landmark photo. */}
           <View style={{ height: heroHeight }}>
             <ScrollView
+              ref={heroRef}
               horizontal
-              pagingEnabled
+              snapToInterval={snapInterval}
+              snapToAlignment="start"
+              decelerationRate="fast"
+              disableIntervalMomentum
               showsHorizontalScrollIndicator={false}
               onScroll={onHeroScroll}
+              onScrollBeginDrag={dismissHint}
               scrollEventThrottle={16}
             >
               {heroPhotos.map((uri, i) => (
-                <DestImage key={`${uri}-${i}`} source={{ uri }} style={{ width, height: heroHeight }} contentFit="cover" />
+                <View
+                  key={`${uri}-${i}`}
+                  style={{
+                    width: photoWidth, height: heroHeight, marginRight: multiPhoto ? PHOTO_GAP : 0, overflow: "hidden",
+                    borderTopRightRadius: multiPhoto ? PHOTO_RADIUS : 0, borderBottomRightRadius: multiPhoto ? PHOTO_RADIUS : 0,
+                  }}
+                >
+                  <DestImage source={{ uri }} style={{ width: photoWidth, height: heroHeight }} contentFit="cover" />
+                </View>
               ))}
             </ScrollView>
             {/* Top: a light scrim behind the back button / badges. Bottom: a
@@ -214,7 +281,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
 
             <View
               style={{
-                position: "absolute", top: insets.top + 8, right: 16,
+                position: "absolute", top: insets.top + 8, right: multiPhoto ? PEEK_WIDTH + 16 : 16,
                 flexDirection: "row", alignItems: "center", gap: 6,
                 backgroundColor: safetyBg, borderWidth: 1, borderColor: safetyColor,
                 borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
@@ -235,51 +302,59 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             <Pressable
               onPress={() => router.push(`/destination/${d.id}/gallery`)}
               style={{
-                position: "absolute", top: insets.top + 48, right: 16,
+                position: "absolute", top: insets.top + 48, right: multiPhoto ? PEEK_WIDTH + 16 : 16,
                 flexDirection: "row", alignItems: "center", gap: 6,
-                backgroundColor: "rgba(0,0,0,0.55)",
+                backgroundColor: "rgba(0,0,0,0.6)",
                 borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
               }}
             >
               <Images color="#FFFFFF" size={14} />
               <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>
-                {heroPhotos.length > 1 ? `View all ${heroPhotos.length}` : "View photo"}
+                {multiPhoto ? `${heroIndex + 1} / ${heroPhotos.length} · See all` : "View photo"}
               </Text>
             </Pressable>
 
-            {/* Hero-carousel dot indicators — deliberately their own
-                absolutely-positioned layer at a FIXED offset from the top of
-                the (fixed-height, 300px) hero, entirely independent of the
-                state/name/rating block below. That block is bottom-anchored
-                and its own height varies card-to-card (a 2-line name, a
-                wrapped rating row), which is exactly why an earlier version —
-                with the dots living inside that block, right above the name —
-                drifted to a different vertical position on every card: shorter
-                content pushed the whole block (and the dots inside it) down
-                toward mid-image, longer content pushed it up near the top.
-                Anchoring the dots to the top of the hero instead, below the
-                back/safety/"view all" icon row, makes their position identical
-                on every card regardless of how long that destination's name or
-                season text is. Only rendered once there's more than one photo
-                to page through. */}
-            {heroPhotos.length > 1 && (
+            {/* Progress bar: one segment per photo, the current one in gold.
+                Anchored to the bottom of the hero (not the top) because the
+                bottom-anchored title block below is a fixed distance from it.
+                Replaces the six-pixel dots, which were too small to notice. */}
+            {multiPhoto && (
               <View
                 pointerEvents="none"
-                style={{ position: "absolute", top: insets.top + 86, left: 0, right: 0, flexDirection: "row", justifyContent: "center", gap: 6 }}
+                style={{ position: "absolute", bottom: 8, left: 20, right: PEEK_WIDTH + PHOTO_GAP + 20, flexDirection: "row", gap: 4 }}
               >
                 {heroPhotos.map((uri, i) => (
                   <View
                     key={`${uri}-${i}`}
-                    style={{
-                      width: i === heroIndex ? 16 : 6, height: 6, borderRadius: 3,
-                      backgroundColor: "#FFFFFF", opacity: i === heroIndex ? 1 : 0.45,
-                    }}
+                    style={{ flex: 1, height: 4, borderRadius: 2, backgroundColor: i === heroIndex ? "#D8B878" : "rgba(255,255,255,0.45)" }}
                   />
                 ))}
               </View>
             )}
 
-            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: 14 }}>
+            {/* One-time hint, shown the first time a multi-photo page opens. */}
+            {hintVisible && (
+              <Animated.View
+                pointerEvents="none"
+                style={{
+                  position: "absolute", top: Math.round(heroHeight * 0.38), left: 0, right: PEEK_WIDTH + PHOTO_GAP, alignItems: "center",
+                  opacity: hintOpacity,
+                }}
+              >
+                <View
+                  style={{
+                    flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 9, borderRadius: 14,
+                    backgroundColor: "rgba(14,20,36,0.88)", borderWidth: 1, borderColor: "rgba(216,184,120,0.45)",
+                  }}
+                >
+                  <MoveHorizontal color="#D8B878" size={16} />
+                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12.5, color: "#FFFFFF" }}>Swipe for more photos</Text>
+                  <ChevronRight color="#D8B878" size={14} />
+                </View>
+              </Animated.View>
+            )}
+
+            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: multiPhoto ? 24 : 14 }}>
               <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 15, color: "rgba(255,255,255,0.9)", marginBottom: 1 }}>
                 {d.state}
               </Text>
