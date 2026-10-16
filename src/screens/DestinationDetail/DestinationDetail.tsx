@@ -17,7 +17,7 @@ import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet, MoveHorizontal, ChevronRight } from "lucide-react-native";
+import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet, MoveHorizontal, ChevronLeft, ChevronRight } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { readJson, writeJson } from "@/store/deviceStorage";
@@ -49,11 +49,12 @@ type Tab = (typeof TABS)[number]["id"];
 const HERO_HEIGHT_RATIO = 0.4;
 const HERO_EXTRA_HEIGHT = 70;
 
-// Photo carousel: each photo is a little narrower than the screen so the next
-// one peeks out at the right edge — the clearest "there's more, swipe" cue.
-const PEEK_WIDTH = 28;
-const PHOTO_GAP = 8;
-const PHOTO_RADIUS = 22;
+// Photo carousel: every photo is shown full width, one at a time. The "there's
+// more" cue is a one-time animation (the photos slide a little to reveal the
+// next one, then settle back) plus a "Swipe for more photos" note, shown only
+// the first time someone opens a multi-photo destination.
+const NUDGE_DISTANCE = 84; // how far the next photo is revealed during the animation
+const NUDGE_HOLD_MS = 1300; // how long it stays revealed before sliding back
 // Remembered on the phone so the "swipe for more photos" hint shows only once.
 const HINT_KEY = "journey_hint_photo_swipe_seen";
 
@@ -111,18 +112,33 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const heroPhotos = useMemo(() => (d.gallery && d.gallery.length > 0 ? d.gallery : [d.heroImage]), [d]);
 
   const multiPhoto = heroPhotos.length > 1;
-  const photoWidth = multiPhoto ? width - PEEK_WIDTH - PHOTO_GAP : width;
-  const snapInterval = photoWidth + (multiPhoto ? PHOTO_GAP : 0);
+  const photoWidth = width;
+  const snapInterval = width;
 
   const heroRef = useRef<ScrollView>(null);
   const [hintVisible, setHintVisible] = useState(false);
   const hintOpacity = useRef(new Animated.Value(0)).current;
   const hintDismissed = useRef(false);
+  // The slide-back after the preview. Cancelled the moment the person touches
+  // the photos or an arrow, so it can never yank them back to photo 1.
+  const nudgeBackTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const dismissHint = () => {
+    if (nudgeBackTimer.current) {
+      clearTimeout(nudgeBackTimer.current);
+      nudgeBackTimer.current = null;
+    }
     if (hintDismissed.current) return;
     hintDismissed.current = true;
     Animated.timing(hintOpacity, { toValue: 0, duration: 250, useNativeDriver: true }).start(() => setHintVisible(false));
+  };
+
+  // Arrow buttons: move one photo at a time (the swipe still works too).
+  const goToPhoto = (i: number) => {
+    const target = Math.min(heroPhotos.length - 1, Math.max(0, i));
+    dismissHint();
+    heroRef.current?.scrollTo({ x: target * snapInterval, animated: true });
+    setHeroIndex(target);
   };
 
   const onHeroScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -130,35 +146,68 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     const next = Math.min(heroPhotos.length - 1, Math.max(0, Math.round(x / snapInterval)));
     if (next !== heroIndex) setHeroIndex(next);
     // A real swipe (not our own little nudge) retires the hint.
-    if (x > 60 && !hintDismissed.current) dismissHint();
+    if (x > NUDGE_DISTANCE + 40 && !hintDismissed.current) dismissHint();
   };
 
   // First time anyone opens a multi-photo destination: show "Swipe for more
-  // photos" and give the carousel a small nudge so the motion teaches the
-  // gesture. Remembered on the phone, so it never repeats.
+  // photos" and slide the carousel to reveal part of the next photo, then
+  // settle back — the motion teaches the gesture. Remembered on the phone, so
+  // it never repeats. The slide waits until the first photo has actually
+  // loaded (otherwise it would reveal an empty box); if that takes more than
+  // five seconds only the note is shown.
+  const [heroReady, setHeroReady] = useState(false);
+  const [waitedLongEnough, setWaitedLongEnough] = useState(false);
+  const [hintPending, setHintPending] = useState(false);
+
   useEffect(() => {
+    setHeroReady(false);
+    setWaitedLongEnough(false);
+    setHintPending(false);
+    setHintVisible(false);
+    hintDismissed.current = false;
+    hintOpacity.setValue(0);
     if (!multiPhoto) return;
     let cancelled = false;
-    const timers: ReturnType<typeof setTimeout>[] = [];
+    const giveUp = setTimeout(() => !cancelled && setWaitedLongEnough(true), 5000);
     (async () => {
       const seen = await readJson<boolean>(HINT_KEY);
       if (cancelled || seen) return;
       void writeJson(HINT_KEY, true);
-      timers.push(setTimeout(() => {
-        if (cancelled) return;
-        setHintVisible(true);
-        Animated.timing(hintOpacity, { toValue: 1, duration: 300, useNativeDriver: true }).start();
-        heroRef.current?.scrollTo({ x: 48, animated: true });
-        timers.push(setTimeout(() => heroRef.current?.scrollTo({ x: 0, animated: true }), 500));
-        timers.push(setTimeout(dismissHint, 4500));
-      }, 900));
+      setHintPending(true);
     })();
     return () => {
       cancelled = true;
-      timers.forEach(clearTimeout);
+      clearTimeout(giveUp);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [d.id, multiPhoto]);
+
+  // One boolean so the effect below runs once, however the two inputs flip.
+  const canPlayHint = hintPending && (heroReady || waitedLongEnough);
+  useEffect(() => {
+    if (!canPlayHint) return;
+    let cancelled = false;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    timers.push(setTimeout(() => {
+      if (cancelled) return;
+      setHintVisible(true);
+      Animated.timing(hintOpacity, { toValue: 1, duration: 300, useNativeDriver: true }).start();
+      if (heroReady) {
+        heroRef.current?.scrollTo({ x: NUDGE_DISTANCE, animated: true });
+        nudgeBackTimer.current = setTimeout(() => {
+          nudgeBackTimer.current = null;
+          heroRef.current?.scrollTo({ x: 0, animated: true });
+        }, NUDGE_HOLD_MS);
+      }
+      timers.push(setTimeout(dismissHint, NUDGE_HOLD_MS + 2600));
+    }, heroReady ? 500 : 0));
+    return () => {
+      cancelled = true;
+      timers.forEach(clearTimeout);
+      if (nudgeBackTimer.current) clearTimeout(nudgeBackTimer.current);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [canPlayHint]);
 
   // The whole page is one vertical scroll — photo, tab strip and content move
   // together. (Before, only the content under a fixed photo + tab strip
@@ -228,25 +277,20 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             <ScrollView
               ref={heroRef}
               horizontal
-              snapToInterval={snapInterval}
-              snapToAlignment="start"
-              decelerationRate="fast"
-              disableIntervalMomentum
+              pagingEnabled
               showsHorizontalScrollIndicator={false}
               onScroll={onHeroScroll}
               onScrollBeginDrag={dismissHint}
               scrollEventThrottle={16}
             >
               {heroPhotos.map((uri, i) => (
-                <View
+                <DestImage
                   key={`${uri}-${i}`}
-                  style={{
-                    width: photoWidth, height: heroHeight, marginRight: multiPhoto ? PHOTO_GAP : 0, overflow: "hidden",
-                    borderTopRightRadius: multiPhoto ? PHOTO_RADIUS : 0, borderBottomRightRadius: multiPhoto ? PHOTO_RADIUS : 0,
-                  }}
-                >
-                  <DestImage source={{ uri }} style={{ width: photoWidth, height: heroHeight }} contentFit="cover" />
-                </View>
+                  source={{ uri }}
+                  style={{ width: photoWidth, height: heroHeight }}
+                  contentFit="cover"
+                  onLoad={i === 0 ? () => setHeroReady(true) : undefined}
+                />
               ))}
             </ScrollView>
             {/* Top: a light scrim behind the back button / badges. Bottom: a
@@ -281,7 +325,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
 
             <View
               style={{
-                position: "absolute", top: insets.top + 8, right: multiPhoto ? PEEK_WIDTH + 16 : 16,
+                position: "absolute", top: insets.top + 8, right: 16,
                 flexDirection: "row", alignItems: "center", gap: 6,
                 backgroundColor: safetyBg, borderWidth: 1, borderColor: safetyColor,
                 borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
@@ -302,7 +346,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             <Pressable
               onPress={() => router.push(`/destination/${d.id}/gallery`)}
               style={{
-                position: "absolute", top: insets.top + 48, right: multiPhoto ? PEEK_WIDTH + 16 : 16,
+                position: "absolute", top: insets.top + 48, right: 16,
                 flexDirection: "row", alignItems: "center", gap: 6,
                 backgroundColor: "rgba(0,0,0,0.6)",
                 borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
@@ -314,6 +358,39 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
               </Text>
             </Pressable>
 
+            {/* Previous / next arrows. Always visible (not only a hint) so the
+                photos clearly look browsable; the left one appears from the
+                second photo on. Sit at the vertical middle of the photo,
+                clear of the title block and the top buttons. */}
+            {multiPhoto && heroIndex > 0 && (
+              <Pressable
+                onPress={() => goToPhoto(heroIndex - 1)}
+                accessibilityRole="button"
+                accessibilityLabel="Previous photo"
+                style={{
+                  position: "absolute", left: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
+                  backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
+                  alignItems: "center", justifyContent: "center",
+                }}
+              >
+                <ChevronLeft color="#FFFFFF" size={24} />
+              </Pressable>
+            )}
+            {multiPhoto && heroIndex < heroPhotos.length - 1 && (
+              <Pressable
+                onPress={() => goToPhoto(heroIndex + 1)}
+                accessibilityRole="button"
+                accessibilityLabel="Next photo"
+                style={{
+                  position: "absolute", right: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
+                  backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
+                  alignItems: "center", justifyContent: "center",
+                }}
+              >
+                <ChevronRight color="#FFFFFF" size={24} />
+              </Pressable>
+            )}
+
             {/* Progress bar: one segment per photo, the current one in gold.
                 Anchored to the bottom of the hero (not the top) because the
                 bottom-anchored title block below is a fixed distance from it.
@@ -321,7 +398,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             {multiPhoto && (
               <View
                 pointerEvents="none"
-                style={{ position: "absolute", bottom: 8, left: 20, right: PEEK_WIDTH + PHOTO_GAP + 20, flexDirection: "row", gap: 4 }}
+                style={{ position: "absolute", bottom: 8, left: 20, right: 20, flexDirection: "row", gap: 4 }}
               >
                 {heroPhotos.map((uri, i) => (
                   <View
@@ -337,7 +414,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
               <Animated.View
                 pointerEvents="none"
                 style={{
-                  position: "absolute", top: Math.round(heroHeight * 0.38), left: 0, right: PEEK_WIDTH + PHOTO_GAP, alignItems: "center",
+                  position: "absolute", top: Math.round(heroHeight * 0.38), left: 0, right: 0, alignItems: "center",
                   opacity: hintOpacity,
                 }}
               >
