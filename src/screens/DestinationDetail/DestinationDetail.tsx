@@ -17,7 +17,7 @@ import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, Map, Rocket, BedDouble, Wallet, MoveHorizontal, ChevronLeft, ChevronRight } from "lucide-react-native";
+import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, MoveHorizontal, ChevronLeft, ChevronRight } from "lucide-react-native";
 import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { readJson, writeJson } from "@/store/deviceStorage";
@@ -31,13 +31,18 @@ import BudgetTab from "./tabs/BudgetTab";
 import SafetyTab from "./tabs/SafetyTab";
 import ItineraryTab from "./tabs/ItineraryTab";
 
+// Order follows how people plan: what is it, what do I do there, where do I
+// sleep, how do I get there, what will it cost, is it safe. `label` is what the
+// person reads: short, plain words so all six fit on one row at a readable size
+// (Poppins is wide: "Overview" and "Itinerary" broke mid-word in a 60pt tab, and
+// "itinerary" is a word many people don't use). `id` stays as the internal key.
 const TABS = [
-  { id: "Overview", Icon: Map },
-  { id: "How to Reach", Icon: Rocket },
-  { id: "Stay", Icon: BedDouble },
-  { id: "Budget", Icon: Wallet },
-  { id: "Safety", Icon: Shield },
-  { id: "Itinerary", Icon: Calendar },
+  { id: "Overview", label: "About" },
+  { id: "Itinerary", label: "Day plan" },
+  { id: "Stay", label: "Stay" },
+  { id: "How to Reach", label: "How to reach" },
+  { id: "Budget", label: "Budget" },
+  { id: "Safety", label: "Safety" },
 ] as const;
 
 type Tab = (typeof TABS)[number]["id"];
@@ -231,28 +236,43 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     if (scrollY.current > heroHeight) scrollRef.current?.scrollTo({ y: heroHeight, animated: false });
   };
 
+  // One row of equal-width text tabs that always fit on screen — nothing to
+  // swipe, nothing cut off. "How to Reach" wraps to two lines rather than
+  // shrinking. The chosen tab is shown three ways (underline, bold, brighter
+  // text) so it never relies on colour alone, and each tab is at least 48pt
+  // tall. Screen readers hear e.g. "Itinerary, tab 2 of 6, selected".
+  const tabFontSize = width < 380 ? 12 : 12.5;
   const renderTabStrip = () => (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 12, gap: 4, paddingVertical: 8 }}>
-      {TABS.map(({ id, Icon }) => {
+    <View accessibilityRole="tablist" style={{ flexDirection: "row", paddingHorizontal: 8 }}>
+      {TABS.map(({ id, label }, index) => {
         const active = activeTab === id;
         return (
           <Pressable
             key={id}
             onPress={() => selectTab(id)}
+            accessibilityRole="tab"
+            accessibilityState={{ selected: active }}
+            aria-selected={active}
+            accessibilityLabel={`${label}, tab ${index + 1} of ${TABS.length}${active ? ", selected" : ""}`}
             style={{
-              flexDirection: "row", alignItems: "center", gap: 6,
-              paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12,
-              backgroundColor: active ? "#333C81" : "transparent",
+              flex: 1, minHeight: 48, alignItems: "center", justifyContent: "center", paddingHorizontal: 2,
+              borderBottomWidth: 3, borderBottomColor: active ? c.primary : "transparent",
             }}
           >
-            <Icon color={active ? "#FFFFFF" : c.textSecondary} size={14} />
-            <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: active ? "#FFFFFF" : c.textSecondary }}>
-              {id}
+            <Text
+              numberOfLines={2}
+              maxFontSizeMultiplier={1.25}
+              style={{
+                fontFamily: active ? "Poppins_700Bold" : "Poppins_500Medium", fontSize: tabFontSize, lineHeight: 16,
+                textAlign: "center", color: active ? c.textPrimary : c.textSecondary,
+              }}
+            >
+              {label}
             </Text>
           </Pressable>
         );
       })}
-    </ScrollView>
+    </View>
   );
 
   return (
