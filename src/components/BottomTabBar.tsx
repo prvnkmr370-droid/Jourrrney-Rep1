@@ -5,7 +5,7 @@
  */
 import { View, Text, Pressable } from "react-native";
 import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { Compass, Sparkles, Shield, type LucideIcon } from "lucide-react-native";
+import { Compass, Sparkles, Heart, Shield, type LucideIcon } from "lucide-react-native";
 import Animated, { useAnimatedStyle, withSpring } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -14,11 +14,13 @@ import { withOpacity } from "@/components/withOpacity";
 const ICONS: Record<string, LucideIcon> = {
   index: Compass,
   plan: Sparkles,
+  favourites: Heart,
   safety: Shield,
 };
 const LABELS: Record<string, string> = {
   index: "Discover",
   plan: "Plan Trip",
+  favourites: "Favourites",
   safety: "Safety",
 };
 
@@ -77,7 +79,7 @@ export default function BottomTabBar({ state, navigation }: BottomTabBarProps) {
         }}
       >
         {state.routes.map((route: (typeof state.routes)[number], index: number) => {
-          // Only the three real tabs get a bar button. Hidden sub-routes (e.g. "plan/[destId]",
+          // Only the four real tabs get a bar button. Hidden sub-routes (e.g. "plan/[destId]",
           // registered with href: null) are still in state.routes and must be skipped.
           if (!(route.name in ICONS)) return null;
           const focusedName = state.routes[state.index]?.name ?? "";

@@ -16,29 +16,27 @@ import { useState } from "react";
 import { View, Text, Pressable, Alert } from "react-native";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Camera, MapPin, Search, User, Settings, ChevronRight, UserRound, Briefcase } from "lucide-react-native";
+import { ArrowLeft, Camera, MapPin, User, Settings, ChevronRight, UserRound, Briefcase, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
+import { useFavourites } from "@/hooks/useFavourites";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { USER } from "./mockUser";
 
-import SearchesTab from "./tabs/SearchesTab";
 import MyTripsTab from "./tabs/MyTripsTab";
 import ProfileInfoTab from "./tabs/ProfileInfoTab";
 import SettingsTab from "./tabs/SettingsTab";
 
-const STATS = [
+// Trips and Upcoming are still placeholder numbers; "Saved" is the real count of
+// the account's favourites (see MyAccount below).
+const PLACEHOLDER_STATS = [
   { value: 3, label: "Trips" },
   { value: 2, label: "Upcoming" },
-  { value: 7, label: "Saved" },
 ];
 
-type Section = "searches" | "trips" | "profile" | "settings";
-// Search and User read more clearly as "search history" and "person" than
-// the previous Package/MapPin pair, which leaned toward "orders" and
-// "location" — closer to their own tab content but a step removed from
-// what a user scanning the tab bar is looking for.
-const TABS: { id: Section; label: string; icon: typeof Search }[] = [
-  { id: "searches", label: "Searches", icon: Search },
+type Section = "trips" | "profile" | "settings";
+// (The Searches tab was removed: recent searches still show on Home, and
+// "Clear search history" now lives in Settings.)
+const TABS: { id: Section; label: string; icon: LucideIcon }[] = [
   { id: "trips", label: "Trips", icon: Briefcase },
   { id: "profile", label: "Profile", icon: User },
   { id: "settings", label: "Settings", icon: Settings },
@@ -48,7 +46,9 @@ export default function MyAccount() {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const { isSignedIn, authProvider, name, email } = useProfileStore();
-  const [section, setSection] = useState<Section>("searches");
+  const favourites = useFavourites();
+  const STATS = [...PLACEHOLDER_STATS, { value: favourites.ids.length, label: "Saved" }];
+  const [section, setSection] = useState<Section>("trips");
   // "email" means a real account from journey-backend — show the actual
   // name/email that was signed in with, not the static demo persona
   // (still used for Google/Apple/Facebook, which aren't real auth yet).
@@ -160,7 +160,6 @@ export default function MyAccount() {
         </View>
       </View>
 
-      {section === "searches" && <SearchesTab />}
       {section === "trips" && <MyTripsTab />}
       {section === "profile" && <ProfileInfoTab />}
       {section === "settings" && <SettingsTab />}

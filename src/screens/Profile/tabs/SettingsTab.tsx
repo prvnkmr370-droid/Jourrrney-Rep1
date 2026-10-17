@@ -24,8 +24,9 @@ import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
-import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, type LucideIcon } from "lucide-react-native";
+import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, History, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
+import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { API_BASE_URL } from "@/config/api";
 import { useThemeStore, type ThemeMode } from "@/store/useThemeStore";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -62,6 +63,20 @@ export default function SettingsTab() {
           }
         },
       },
+    ]);
+  };
+
+  // Recent searches show on Home and in search. They live on this phone only; this is
+  // the one place to wipe them (it used to be a button on the Searches tab).
+  const recentSearchCount = useRecentSearchesStore((s) => s.searches.length);
+  const handleClearSearches = () => {
+    if (recentSearchCount === 0) {
+      Alert.alert("Nothing to clear", "There are no recent searches on this phone.");
+      return;
+    }
+    Alert.alert("Clear search history?", "This removes your recent searches from this phone. It can't be undone.", [
+      { text: "Cancel", style: "cancel" },
+      { text: "Clear", style: "destructive", onPress: () => useRecentSearchesStore.getState().clearAll() },
     ]);
   };
 
@@ -114,6 +129,7 @@ export default function SettingsTab() {
         <NavRow icon={Lock} label="Login & security" sub="Sign in, password, sessions" onPress={() => router.push("/profile/settings")} c={c} />
         <NavRow icon={Shield} label="Privacy & sharing" sub="Control what you share" onPress={() => router.push("/profile/legal/privacy")} c={c} />
         <NavRow icon={Images} label="Photo credits" sub="Who took the photos in this app" onPress={() => router.push("/profile/photo-credits")} c={c} />
+        <NavRow icon={History} label="Clear search history" sub="Remove your recent searches from this phone" onPress={handleClearSearches} c={c} />
         {isSignedIn && (
           <NavRow icon={Sparkles} label="Clear AI history" sub="Forget what the trip planner remembers about you" onPress={handleClearAiHistory} c={c} />
         )}

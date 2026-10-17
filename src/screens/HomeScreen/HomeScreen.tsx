@@ -3,12 +3,10 @@ import { useMemo, useState } from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
 import { ChevronRight } from "lucide-react-native";
-import DestImage from "@/components/DestImage";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import HeroCarousel from "./HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
 import { withOpacity } from "@/components/withOpacity";
-import { useRecentSearchesStore, timeAgo } from "@/store/useRecentSearchesStore";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 
@@ -37,7 +35,6 @@ interface Props {
 export default function HomeScreen({ tabBarHeight = 0 }: Props) {
   const c = useThemeColors();
   const [activeCategory, setActiveCategory] = useState("All");
-  const recentSearches = useRecentSearchesStore((s) => s.searches);
   const recentlyViewedIds = useRecentlyViewedStore((s) => s.destinationIds);
   const recentlyViewed = useMemo(
     () => recentlyViewedIds.map((id) => DESTINATIONS.find((d) => d.id === id)).filter((d): d is Destination => !!d),
@@ -158,46 +155,6 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
             <DestinationCard key={d.id} destination={d} onPress={() => goToDestination(d)} />
           ))}
         </Section>
-      )}
-
-      {recentSearches.length > 0 && (
-        <View style={{ marginBottom: 24 }}>
-          <View style={{ paddingHorizontal: 16, marginBottom: 12 }}>
-            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 16, color: c.textPrimary }}>Recent Searches</Text>
-          </View>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 16, gap: 10 }}>
-            {recentSearches.map((s) => {
-              const dest = DESTINATIONS.find((d) => d.id === s.destinationId);
-              return (
-                <Pressable
-                  key={s.id}
-                  // A recent search that resolved to a specific destination
-                  // (the normal case — see addSearch's call sites) should
-                  // jump straight back to that page, same as tapping it
-                  // fresh from search would. Only a query that never
-                  // matched one destination (no destinationId recorded)
-                  // falls back to re-running the search.
-                  onPress={() =>
-                    dest ? goToDestination(dest) : router.push({ pathname: "/search/results", params: { q: s.query } })
-                  }
-                  style={{ width: 150, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 10 }}
-                >
-                  {dest ? (
-                    <DestImage source={{ uri: dest.image }} style={{ width: "100%", height: 80, borderRadius: 10, marginBottom: 8 }} contentFit="cover" />
-                  ) : (
-                    <View style={{ width: "100%", height: 80, borderRadius: 10, marginBottom: 8, backgroundColor: c.surfaceAlt }} />
-                  )}
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.textPrimary }} numberOfLines={1}>
-                    {s.query}
-                  </Text>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10, color: c.textSecondary, marginTop: 2 }}>
-                    {timeAgo(s.timestamp)}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ScrollView>
-        </View>
       )}
 
       <View style={{ height: tabBarHeight + 24 }} />

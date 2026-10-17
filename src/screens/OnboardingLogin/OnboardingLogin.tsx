@@ -43,7 +43,10 @@ export default function OnboardingLogin({ onDone }: Props) {
   const [verifyError, setVerifyError] = useState<string | null>(null);
 
   const handleSkip = () => {
-    skip();
+    // "Skip" means "not now, as a guest". Someone whose saved session was just
+    // restored is already signed in (their favourites and profile depend on
+    // it), so skipping the login screen must not sign them out.
+    if (!useProfileStore.getState().isSignedIn) skip();
     onDone();
   };
 

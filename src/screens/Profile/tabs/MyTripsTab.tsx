@@ -5,11 +5,10 @@
  */
 import { View, Text, Pressable, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
-import { ChevronRight, Heart, Trash2 } from "lucide-react-native";
+import { ChevronRight, Trash2 } from "lucide-react-native";
 import DestImage from "@/components/DestImage";
-import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { DESTINATIONS } from "@/data/destinations";
 import { useSavedTripsStore } from "@/store/useSavedTripsStore";
-import { useSavedPlacesStore } from "@/store/useSavedPlacesStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 
 const MONTH_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -23,9 +22,6 @@ export default function MyTripsTab() {
   const c = useThemeColors();
   const trips = useSavedTripsStore((s) => s.trips);
   const removeTrip = useSavedTripsStore((s) => s.remove);
-  const savedIds = useSavedPlacesStore((s) => s.ids);
-  const removePlace = useSavedPlacesStore((s) => s.remove);
-  const savedPlaces = savedIds.map((id) => DESTINATIONS.find((d) => d.id === id)).filter((d): d is Destination => !!d);
 
   // A trip whose destination was removed from the app's data can't be reopened,
   // so it isn't listed (it stays on the device in case the destination returns).
@@ -84,41 +80,6 @@ export default function MyTripsTab() {
               </View>
             );
           })}
-        </View>
-      )}
-
-      <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary, marginTop: 6 }}>Saved places</Text>
-      {savedPlaces.length === 0 ? (
-        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, textAlign: "center", paddingVertical: 20, lineHeight: 19 }}>
-          No saved places yet — tap the heart on a destination to keep it here.
-        </Text>
-      ) : (
-        <View style={{ gap: 10 }}>
-          {savedPlaces.map((dest) => (
-            <View key={dest.id} style={{ flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 16, padding: 12 }}>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={`Open ${dest.name}`}
-                onPress={() => router.push(`/destination/${dest.id}`)}
-                style={{ flex: 1, flexDirection: "row", alignItems: "center", gap: 12 }}
-              >
-                <DestImage source={{ uri: dest.image }} style={{ width: 52, height: 52, borderRadius: 12 }} contentFit="cover" />
-                <View style={{ flex: 1 }}>
-                  <Text numberOfLines={1} style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary }}>{dest.name}</Text>
-                  <Text numberOfLines={1} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, marginTop: 1 }}>{dest.state}</Text>
-                </View>
-                <ChevronRight color={c.textMuted} size={16} />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={`Remove ${dest.name} from saved places`}
-                onPress={() => removePlace(dest.id)}
-                style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}
-              >
-                <Heart color={c.primary} fill={c.primary} size={16} />
-              </Pressable>
-            </View>
-          ))}
         </View>
       )}
     </ScrollView>

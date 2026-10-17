@@ -4,7 +4,8 @@
  *  - QuickFacts   the live Open now / Closed now line with the closing or opening time and the
  *                 usual hours (rows when the phone's text is large), then a one-line note with the
  *                 best months to visit
- *  - ActionRow    Directions (Save and Share are on the photo)
+ *  - AddressRow   the place's address in words, with a small Map button beside it
+ *  - ActionRow    Directions, a compact button (Save and Share are on the photo)
  *  - ExploreRows  "What would you like to do?": four big rows (where to stay, how to get
  *                 there, what to know before I go, is it safe), each with a live one-line
  *                 preview taken from that place's own data. Planning is not a row: the
@@ -17,7 +18,7 @@
  * 130% font scale) instead of being cut off.
  */
 import { Pressable, Text, View, useWindowDimensions } from "react-native";
-import { Backpack, BedDouble, Calendar, CalendarClock, ChevronRight, Clock, Navigation, Rocket, ShieldCheck } from "lucide-react-native";
+import { Backpack, BedDouble, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, Rocket, ShieldCheck } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
@@ -142,20 +143,50 @@ export function QuickFacts({ destination: d }: { destination: Destination }) {
   );
 }
 
-/** The one action under the photo. Save and Share are on the photo itself. */
+/**
+ * Where the place is, in words, with a small "Map" button beside it that opens
+ * the place in the phone's maps app (Google Maps if it is installed, otherwise
+ * the browser). The text is a verified street address where we have one, and
+ * otherwise the place's name and state, which is all we know for sure.
+ */
+export function AddressRow({ address, placeName, onOpenMap }: { address: string; placeName: string; onOpenMap: () => void }) {
+  const c = useThemeColors();
+  return (
+    <View style={{ paddingHorizontal: 16, marginTop: 10, flexDirection: "row", alignItems: "center", gap: 10 }}>
+      <View accessible accessibilityLabel={`Address: ${address}`} style={{ flex: 1, flexDirection: "row", gap: 8, alignItems: "flex-start", paddingLeft: 4 }}>
+        <MapPin color={c.gold} size={17} style={{ marginTop: 3 }} />
+        <Text maxFontSizeMultiplier={MAX_FONT} style={{ flex: 1, fontFamily: "Poppins_400Regular", fontSize: 13.5, lineHeight: 20, color: c.textSecondary }}>
+          {address}
+        </Text>
+      </View>
+      <Pressable
+        onPress={onOpenMap}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${placeName} in your maps app`}
+        android_ripple={{ color: withOpacity(c.primary, 0.12) }}
+        style={{ minHeight: 44, minWidth: 84, paddingHorizontal: 12, borderRadius: 22, borderWidth: 1.5, borderColor: c.border, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6 }}
+      >
+        <MapIcon color={c.primary} size={17} />
+        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, color: c.textPrimary }}>Map</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+/** Directions, as a compact button (44pt tall, as wide as its words need). Save and Share are on the photo. */
 export function ActionRow({ onDirections, placeName }: { onDirections: () => void; placeName: string }) {
   const c = useThemeColors();
   return (
-    <View style={{ paddingHorizontal: 16, marginTop: 12 }}>
+    <View style={{ paddingHorizontal: 16, marginTop: 10, flexDirection: "row" }}>
       <Pressable
         onPress={onDirections}
         accessibilityRole="button"
         accessibilityLabel={`Directions to ${placeName}. Opens your maps app.`}
         android_ripple={{ color: withOpacity(c.onPrimary, 0.2) }}
-        style={{ minHeight: 52, borderRadius: 12, backgroundColor: c.primary, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8 }}
+        style={{ minHeight: 44, paddingHorizontal: 22, borderRadius: 22, backgroundColor: c.primary, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8 }}
       >
-        <Navigation color={c.onPrimary} size={18} />
-        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 14.5, color: c.onPrimary }}>Directions</Text>
+        <Navigation color={c.onPrimary} size={17} />
+        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.onPrimary }}>Directions</Text>
       </Pressable>
     </View>
   );

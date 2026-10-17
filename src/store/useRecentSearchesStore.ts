@@ -18,10 +18,10 @@ interface RecentSearchesState {
 /**
  * Real search history — populated by src/screens/Search/SearchResults.tsx
  * whenever a user picks a destination while a query is active (i.e. an
- * actual completed search, not just browsing the unfiltered list).
- * Shared by the Home Feed's "Recent Searches" rail and the "My Account"
- * Searches tab, so there's one real source instead of two disconnected
- * (and previously fake) lists.
+ * actual completed search, not just browsing the unfiltered list). Read by
+ * the search screens' suggestions; "Clear search history" in My Account >
+ * Settings wipes it. Not shown on Home (that row duplicated Recently Viewed)
+ * and not kept after the app is closed.
  */
 export const useRecentSearchesStore = create<RecentSearchesState>((set) => ({
   searches: [],

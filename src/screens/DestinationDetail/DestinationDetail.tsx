@@ -1,11 +1,11 @@
 /**
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
  * hero. The page below it is no longer a set of tabs: a destination's home
- * page is the photo, the open status with the best time to visit, Directions, About <place>
- * (the description, and under "Read more" the Top highlights), four rows that each open their own page (Where to stay,
+ * page is the photo, the open status with the best time to visit, the address with a Map button, Directions, About <place>
+ * (the description, and under "Read more" the Top highlights), Places Near (always visible), four rows that each open their own page (Where to stay,
  * How to get there, What to know before I go, Is it safe? — see
  * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
- * to be the Day plan tab), then places near.
+ * to be the Day plan tab).
  * "Plan my trip with AI" at the bottom goes straight to the AI planner.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -18,8 +18,10 @@ import { ArrowLeft, Star, Images, MoveHorizontal, ChevronLeft, ChevronRight, Hea
 import type { Destination } from "@/data/destinations";
 import { DESTINATION_COORDS } from "@/data/destinationCoords";
 import { DESTINATION_COORDS_GEOCODED } from "@/data/destinationCoordsGeocoded";
-import { useSavedPlacesStore } from "@/store/useSavedPlacesStore";
-import { QuickFacts, ActionRow, ExploreRows, type HubTarget } from "./HubSections";
+import { useFavourites } from "@/hooks/useFavourites";
+import SignInToSaveSheet from "@/components/SignInToSaveSheet";
+import { QuickFacts, AddressRow, ActionRow, ExploreRows, type HubTarget } from "./HubSections";
+import { placeAddress, mapSearchUrl } from "@/utils/placeAddress";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { readJson, writeJson } from "@/store/deviceStorage";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
@@ -66,10 +68,14 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     markViewed(d.id);
   }, [d.id, markViewed]);
 
-  // Save (heart), Share and Directions — shared by the buttons on the photo and
-  // the row under it. Saving is kept on this device (see useSavedPlacesStore).
-  const saved = useSavedPlacesStore((s) => s.ids.includes(d.id));
-  const toggleSaved = useSavedPlacesStore((s) => s.toggle);
+  // Heart (favourite), Share and Directions. Only a registered, signed-in
+  // account can favourite a place (see useFavourites); anyone else gets a short
+  // "sign in to save" sheet, and the place is saved for them as soon as they
+  // come back signed in.
+  const fav = useFavourites();
+  const saved = fav.isFavourite(d.id);
+  const [signInSheet, setSignInSheet] = useState(false);
+  const saveAfterSignIn = useRef(false);
   const placeName = d.name.replace(/\s*\([^)]*\)/g, "").trim();
   const stateName = d.state.replace(/\s*\([^)]*\)/g, "").trim();
   const [toast, setToast] = useState<string | null>(null);
@@ -82,14 +88,34 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   useEffect(() => () => { if (toastTimer.current) clearTimeout(toastTimer.current); }, []);
 
   const onToggleSave = () => {
-    toggleSaved(d.id);
-    showToast(saved ? `Removed ${placeName} from your saved places` : `Saved ${placeName}. Find it in My Account › Trips`);
+    const result = fav.toggle(d.id);
+    if (result === "needs-signin") {
+      saveAfterSignIn.current = true;
+      setSignInSheet(true);
+      return;
+    }
+    showToast(result === "added" ? `Saved ${placeName} to your favourites` : `Removed ${placeName} from your favourites`);
   };
+  useEffect(() => {
+    if (!fav.canSave || !saveAfterSignIn.current) return;
+    saveAfterSignIn.current = false;
+    if (!fav.isFavourite(d.id)) fav.toggle(d.id);
+    showToast(`Saved ${placeName} to your favourites`);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fav.canSave]);
   const onShare = async () => {
     try {
       await Share.share({ message: `${placeName}, ${stateName}${d.tagline ? ` — ${d.tagline}` : ""}\nFound on Jourrrney.` });
     } catch {
       // The person closed the share sheet, or this device can't share: nothing to report.
+    }
+  };
+  const address = placeAddress(d);
+  const onOpenMap = async () => {
+    try {
+      await Linking.openURL(mapSearchUrl(address.mapQuery));
+    } catch {
+      Alert.alert("Couldn't open maps", "Please check that a maps app or browser is available, then try again.");
     }
   };
   const onDirections = async () => {
@@ -297,7 +323,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             onPress={onToggleSave}
             accessibilityRole="button"
             accessibilityState={{ selected: saved }}
-            accessibilityLabel={saved ? `${placeName} is saved. Tap to remove.` : `Save ${placeName}`}
+            accessibilityLabel={saved ? `${placeName} is in your favourites. Tap to remove.` : `Save ${placeName} to your favourites`}
             style={{ position: "absolute", top: insets.top + 8, right: 16, width: 44, height: 44, borderRadius: 22, backgroundColor: "rgba(0,0,0,0.55)", alignItems: "center", justifyContent: "center" }}
           >
             <Heart color={saved ? "#FF6B81" : "#FFFFFF"} fill={saved ? "#FF6B81" : "none"} size={20} />
@@ -420,11 +446,15 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         </View>
 
         <QuickFacts destination={d} />
+        <AddressRow address={address.text} placeName={placeName} onOpenMap={onOpenMap} />
         <ActionRow placeName={placeName} onDirections={onDirections} />
         <AboutIntro destination={d} />
+        {/* Places Near sits directly under the About block (and its Top highlights).
+            It is plain content, always visible: "Show less" folds only the
+            description and the highlights, never this. */}
+        <OverviewTab destination={d} />
         <ExploreRows destination={d} onOpen={openPage} />
         <DayPlanCard destination={d} onPlanTrip={() => onPlanTrip(d.id)} />
-        <OverviewTab destination={d} />
       </ScrollView>
 
       {/* Pinned bar: appears once the photo has scrolled out of view. */}
@@ -461,6 +491,13 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
       )}
 
       <PlanBar placeName={placeName} onPress={() => onPlanTrip(d.id)} />
+
+      <SignInToSaveSheet
+        visible={signInSheet}
+        localOnlySignIn={fav.localOnlySignIn}
+        onClose={() => { setSignInSheet(false); saveAfterSignIn.current = false; }}
+        onContinue={() => setSignInSheet(false)}
+      />
     </View>
   );
 }

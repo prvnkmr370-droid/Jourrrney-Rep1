@@ -1,6 +1,6 @@
-/** The part of a destination's home page below the rows and the ready-made
- * day: Places Near. (The description and the Top highlights sit higher up, in
- * AboutIntro.tsx, right under Directions; the opening hours are the status card
+/** "Places Near <place>" on a destination's home page: directly under the About
+ * block, always visible (never folded by "Show less"). (The description and the
+ * Top highlights sit just above, in AboutIntro.tsx; the opening hours are the status card
  * under the photo, so there is no separate Opening hours card here any more.)
  * Originally the About tab; source of truth Figma "1.2.1 Destination Detail —
  * Overview". The
@@ -41,7 +41,8 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
   const curatedNames = new Set(d.nearbyPlaces.map((p) => p.name.trim().toLowerCase()));
   const moreNearby = osmPlaces.filter((p) => !curatedNames.has(p.name.trim().toLowerCase()));
   return (
-    <View style={{ padding: 20 }}>
+    // No bottom padding: the rows that follow bring their own top margin.
+    <View style={{ paddingHorizontal: 20, paddingTop: 20 }}>
       {/* Places near this destination — merged in from the former
           standalone "Nearby" tab (see file header comment). Visual style
           loosely inspired by TripAdvisor's "Things to Do" attraction

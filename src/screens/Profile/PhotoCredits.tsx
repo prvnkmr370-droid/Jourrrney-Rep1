@@ -98,6 +98,22 @@ export default function PhotoCredits({ onBack }: Props) {
             Photos in this app come from Wikimedia Commons and other freely licensed sources. Each photographer is credited below, with the licence the photo is shared under.
           </Text>
         }
+        ListFooterComponent={
+          <View style={{ paddingHorizontal: 20, paddingTop: 20 }}>
+            <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.textPrimary, marginBottom: 4 }}>Addresses</Text>
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textSecondary }}>
+              Where a place's address is shown, the street and area come from OpenStreetMap, © OpenStreetMap contributors, available under the Open Database Licence, and the postal (PIN) code is checked against India Post's PIN directory.
+            </Text>
+            <Pressable
+              onPress={() => Linking.openURL("https://www.openstreetmap.org/copyright").catch(() => {})}
+              accessibilityRole="link"
+              accessibilityLabel="OpenStreetMap copyright and licence"
+              style={{ minHeight: 44, justifyContent: "center" }}
+            >
+              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.primary }}>openstreetmap.org/copyright</Text>
+            </Pressable>
+          </View>
+        }
         ListEmptyComponent={
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: c.textSecondary, textAlign: "center", padding: 32 }}>Nothing matches that search.</Text>
         }
