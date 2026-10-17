@@ -1,7 +1,8 @@
 /**
- * The "Plan my trip with AI" bar pinned to the bottom of every destination
- * page (the home page and each page it opens). It goes straight to the AI
- * planner with this place already chosen: there is no page in between.
+ * The "Plan my trip with AI" bar pinned to the bottom of each page a destination's
+ * home page opens (Hotels, How to get there, ...). The home page itself has none.
+ * It goes straight to the AI planner with this place already chosen: there is no
+ * page in between.
  */
 import { Pressable, Text, View } from "react-native";
 import { Sparkles } from "lucide-react-native";

@@ -1,8 +1,8 @@
 /**
- * The shell shared by the pages a destination's home page opens (Where to
- * stay, How to get there, What to know before I go, Is it safe?): a round
- * Back button, a plain page title, the content, and the same "Plan my trip
- * with AI" bar as the home page. Each page is its own screen, so there is no
+ * The shell shared by the pages a destination's home page opens (Hotels,
+ * How to get there, What to know before I go, Is it safe?): a round
+ * Back button, a plain page title, the content, and the "Plan my trip with AI"
+ * bar (the home page has none). Each page is its own screen, so there is no
  * tab strip and nothing nested inside anything else.
  */
 import { useEffect, useRef, useState, type ReactNode } from "react";

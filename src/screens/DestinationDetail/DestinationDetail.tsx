@@ -2,11 +2,12 @@
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
  * hero. The page below it is no longer a set of tabs: a destination's home
  * page is the photo, the open status with the best time to visit, the address with a Map button, Directions, About <place>
- * (the description, and under "Read more" the Top highlights), Places Near (always visible), four rows that each open their own page (Where to stay,
+ * (the description, and under "Read more" the Top highlights), Places Near (always visible), four rows that each open their own page (Hotels,
  * How to get there, What to know before I go, Is it safe? — see
  * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
  * to be the Day plan tab).
- * "Plan my trip with AI" at the bottom goes straight to the AI planner.
+ * The home page has no pinned "Plan my trip with AI" bar (the pages it opens do);
+ * planning starts from the "Plan my own with AI" button inside "A day at <place>".
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { View, Text, Pressable, ScrollView, Animated, useWindowDimensions, Share, Linking, Alert, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
@@ -29,7 +30,6 @@ import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 import OverviewTab from "./tabs/OverviewTab";
 import DayPlanCard from "./DayPlanCard";
 import AboutIntro from "./AboutIntro";
-import PlanBar from "./PlanBar";
 
 // The photo at the top of a destination page is 40% of the screen's height
 // plus 60pt extra (it was a fixed 300, about 35% on a typical phone, which
@@ -243,7 +243,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   };
 
   // The four rows each open their own page (pages/DestinationPages.tsx).
-  // Planning has no row: the "Plan my trip with AI" bar opens the AI planner.
+  // Planning has no row here: it starts from the button inside the ready-made day.
   const openPage = (target: HubTarget) => router.push(`/destination/${d.id}/${target}`);
 
   return (
@@ -253,7 +253,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         style={{ flex: 1 }}
         onScroll={onPageScroll}
         scrollEventThrottle={16}
-        contentContainerStyle={{ paddingBottom: 100 }}
+        contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 16) + 24 }}
         showsVerticalScrollIndicator={false}
       >
         {/* Hero — a horizontal, paged photo carousel (falls back to a
@@ -484,13 +484,11 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         <View
           pointerEvents="none"
           accessibilityLiveRegion="polite"
-          style={{ position: "absolute", left: 16, right: 16, bottom: Math.max(insets.bottom, 16) + 76, backgroundColor: c.textPrimary, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 11 }}
+          style={{ position: "absolute", left: 16, right: 16, bottom: Math.max(insets.bottom, 16) + 16, backgroundColor: c.textPrimary, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 11 }}
         >
           <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, lineHeight: 18, color: c.bg }}>{toast}</Text>
         </View>
       )}
-
-      <PlanBar placeName={placeName} onPress={() => onPlanTrip(d.id)} />
 
       <SignInToSaveSheet
         visible={signInSheet}
