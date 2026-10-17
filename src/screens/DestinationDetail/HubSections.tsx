@@ -6,7 +6,7 @@
  *                 best months to visit
  *  - AddressRow   the place's address in words, with a small Map button beside it
  *  - ActionRow    Directions, a compact button (Save and Share are on the photo)
- *  - ExploreRows  "What would you like to do?": four big rows (where to stay, how to get
+ *  - ExploreRows  "What would you like to do?": four big rows (hotels, how to get
  *                 there, what to know before I go, is it safe), each with a live one-line
  *                 preview taken from that place's own data. Planning is not a row: the
  *                 "Plan my trip with AI" bar at the bottom goes straight to the AI planner.
@@ -23,6 +23,7 @@ import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { bestTimeMonths, fromPrice, modesPhrase, openStatus, type OpenStatus } from "@/utils/destinationFacts";
+import { hotelsFor } from "@/utils/stayHotels";
 import { useNow } from "@/hooks/useNow";
 
 export type HubTarget = "stay" | "reach" | "know" | "safety";
@@ -196,11 +197,16 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
   const c = useThemeColors();
   const price = fromPrice(d.accommodation);
   const score = d.womenSafety.score;
+  const hotelCount = hotelsFor(d).length;
 
-  // "Where to stay" rather than "Find a hotel" until partner hotels are listed:
-  // today this opens the stay price guide, not bookable hotels.
+  // "Hotels" opens the hotels our guide names for the place, then its price guide.
+  // They are not bookable yet: there is no partner price or booking link.
+  const fromText = price ? `from ₹${price.toLocaleString("en-IN")} a night` : "";
+  const stayPreview = hotelCount > 0
+    ? [`${hotelCount} ${hotelCount === 1 ? "hotel" : "hotels"}`, fromText].filter(Boolean).join(" · ")
+    : price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget";
   const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string }[] = [
-    { id: "stay", Icon: BedDouble, title: "Where to stay", preview: price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget" },
+    { id: "stay", Icon: BedDouble, title: "Hotels", preview: stayPreview },
     { id: "reach", Icon: Rocket, title: "How to get there", preview: modesPhrase(d.transport) },
     { id: "know", Icon: Backpack, title: "What to know before I go", preview: "Packing, local tips, safety notices" },
     { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: `Women's safety ${score} / 10 · ${d.womenSafety.level}` },

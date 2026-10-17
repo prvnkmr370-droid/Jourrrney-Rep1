@@ -177,3 +177,15 @@ I tested it on a real, evenly spread sample of **90 places that have coordinates
 | **Links** | 184 highlights (in 104 places) open another place's page | Still open that page; marked with a chevron |
 
 - **What this changes for visitors:** all **1,952** places have highlights, and they are no longer visible when the page opens. A visitor sees them only after tapping "Read more". If you would like them visible by default, say so: the block can start open, or show just the first two highlights with the rest behind "Read more".
+
+## J. "Where to stay" became "Hotels" (2026-10-17)
+
+| | Before | Now |
+|---|---|---|
+| **Row name** | Where to stay · "From ₹1,000 a night" | **Hotels** · "9 hotels · from ₹1,000 a night" (places with no named hotel keep the old preview) |
+| **Page top** | Price ladder | Map button, level buttons (only when the hotels span 2+ levels), one card per hotel the guide names, then the price ladder (unchanged) and "What a day costs" |
+| **Hotel names** | Inside each opened price level ("EXAMPLES") | On their own cards. A line already shown as a card is not repeated in the ladder; general advice lines ("Hotels near the bus stand") stay in the ladder |
+| **Map links** | One "See stays on the map" button at the bottom; recommended venues tappable inside the ladder | The same Google Maps search now sits at the top ("See hotels on the map") plus "See on map" on every card; venues became cards |
+
+- **Nothing was deleted.** Level descriptions, source notes, general advice lines and every price are still on the page.
+- **What a card holds:** name, area, stay level and that level's typical price, because the guide holds no price, photo or rating for any single hotel. 353 of 1,952 places (18%) have at least one named hotel (1,086 in all); the rest show a plain note and the map button.

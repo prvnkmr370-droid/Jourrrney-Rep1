@@ -1,5 +1,5 @@
 /**
- * "Typical prices" on the Where to stay page: a price ladder. Every stay
+ * "Typical prices" on the Hotels page: a price ladder. Every stay
  * level is one row with its name and its price, large, so all the prices can
  * be compared at a glance; tapping a row opens its details in place
  * (description, example places). A place with a single stay entry opens by
@@ -10,15 +10,16 @@
  * price, and 484 prices are estimates, which are labelled "Estimate" in words.
  * Only a nightly range gets the large headline; a package price or plain text
  * ("Price varies") is shown smaller, as written.
- * Example names are plain text, not button-shaped chips, because only a few
- * entries carry a map link: those (`venues`) stay tappable. One button below
- * opens Google Maps with hotels near the place.
+ * Example lines the page already shows as hotel cards (`listed`) are not
+ * repeated here; the general advice around them ("Hotels near the bus stand")
+ * stays. The map button now lives with the hotel cards above.
  */
 import { useState } from "react";
-import { View, Text, Pressable, Linking, Alert } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import { ChevronDown, ChevronUp, MapPin, Info } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { priceParts } from "@/utils/stayPrice";
+import { openMapSearch } from "@/utils/openMaps";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 
@@ -27,21 +28,8 @@ const MAX_FONT = 1.3;
 // A placeholder some entries carry instead of a real example; it isn't a place, so it isn't listed.
 const GENERIC_EXAMPLE = "Check accommodation at the nearest major town/city";
 
-function mapsSearchUrl(query: string): string {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
-}
-
-async function openMaps(query: string) {
-  try {
-    await Linking.openURL(mapsSearchUrl(query));
-  } catch {
-    Alert.alert("Couldn't open maps", "Please check that a maps app or browser is available, then try again.");
-  }
-}
-
-export default function StayGuide({ destination: d }: { destination: Destination }) {
+export default function StayGuide({ destination: d, listed }: { destination: Destination; listed?: Set<string> }) {
   const c = useThemeColors();
-  const placeName = d.name.replace(/\s*\([^)]*\)/g, "").trim();
   const single = d.accommodation.length === 1;
   const [open, setOpen] = useState<Record<number, boolean>>({});
 
@@ -58,8 +46,9 @@ export default function StayGuide({ destination: d }: { destination: Destination
         {d.accommodation.map((acc, i) => {
           const isOpen = single || !!open[i];
           const price = priceParts(acc.priceRange);
-          const examples = acc.examples.filter((x) => x.trim() && x.trim() !== GENERIC_EXAMPLE);
-          const hasVenues = !!acc.venues && acc.venues.length > 0;
+          const examples = acc.examples.filter((x) => x.trim() && x.trim() !== GENERIC_EXAMPLE && !listed?.has(x.trim()));
+          const venues = (acc.venues ?? []).filter((v) => !listed?.has(v.name));
+          const hasVenues = venues.length > 0;
 
           const head = (
             <>
@@ -126,10 +115,10 @@ export default function StayGuide({ destination: d }: { destination: Destination
                         RECOMMENDED · TAP FOR DIRECTIONS
                       </Text>
                       <View style={{ gap: 8 }}>
-                        {acc.venues!.map((venue) => (
+                        {venues.map((venue) => (
                           <Pressable
                             key={venue.name}
-                            onPress={() => openMaps(venue.mapsQuery)}
+                            onPress={() => openMapSearch(venue.mapsQuery)}
                             accessibilityRole="button"
                             accessibilityLabel={`${venue.name}${venue.location ? `, ${venue.location}` : ""}. Opens directions in your maps app.`}
                             android_ripple={{ color: withOpacity(c.primary, 0.12) }}
@@ -177,23 +166,6 @@ export default function StayGuide({ destination: d }: { destination: Destination
           );
         })}
       </View>
-
-      <Pressable
-        onPress={() => openMaps(`hotels near ${placeName}`)}
-        accessibilityRole="button"
-        accessibilityLabel={`See stays near ${placeName} on the map. Opens your maps app.`}
-        android_ripple={{ color: withOpacity(c.onPrimary, 0.2) }}
-        style={{
-          marginHorizontal: 16, marginTop: 14, minHeight: 52, borderRadius: 12, backgroundColor: c.primary,
-          flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8,
-        }}
-      >
-        <MapPin color={c.onPrimary} size={19} />
-        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 14.5, color: c.onPrimary }}>See stays on the map</Text>
-      </Pressable>
-      <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 12.5, lineHeight: 18, color: c.textSecondary, paddingHorizontal: 20, marginTop: 6 }}>
-        Opens Google Maps with hotels near {placeName}.
-      </Text>
     </View>
   );
 }

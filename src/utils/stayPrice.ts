@@ -1,7 +1,7 @@
 /**
  * Turns a stay price as written in destinations.ts ("₹1,000–₹2,500/night",
  * "₹500–₹25,000/night (estimate)", "Varies", "N/A" ...) into the pieces the
- * Where to stay page shows: a big amount, a small "a night", an "Estimate"
+ * Hotels page shows: a big amount, a small "a night", an "Estimate"
  * label, and one sentence a screen reader can read.
  *
  * Cautious by design: text it can't read as a nightly price is shown as
