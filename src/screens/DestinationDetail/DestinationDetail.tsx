@@ -1,51 +1,33 @@
 /**
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
- * hero + Overview tab. The other 5 tabs (How to Reach, Stay, Budget,
- * Safety, Itinerary) have no Figma frame — the Make prototype's
- * src/screens/DestinationDetail.tsx is the reference for their content
- * and behavior (simplified here: the Make version's live GPS/distance
- * and journey-guide sub-flow on "How to Reach" isn't ported; that tab
- * instead renders the destination's own `transport` data). The former
- * standalone "Local Travel" and "Nearby" tabs were folded into How to
- * Reach (as a "Getting Around" sub-section) and Overview respectively —
- * both were closely related to content already shown elsewhere and read
- * as redundant as their own top-level tabs.
+ * hero. The page below it is no longer a set of tabs: a destination's home
+ * page is the photo, the open status with the best time to visit, Directions, About <place>
+ * (the description, and under "Read more" the Top highlights), four rows that each open their own page (Where to stay,
+ * How to get there, What to know before I go, Is it safe? — see
+ * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
+ * to be the Day plan tab), then places near.
+ * "Plan my trip with AI" at the bottom goes straight to the AI planner.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { View, Text, Pressable, ScrollView, Animated, KeyboardAvoidingView, Keyboard, Platform, useWindowDimensions, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
+import { View, Text, Pressable, ScrollView, Animated, useWindowDimensions, Share, Linking, Alert, type NativeSyntheticEvent, type NativeScrollEvent } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Star, Clock, Calendar, Shield, Sparkles, Images, MoveHorizontal, ChevronLeft, ChevronRight } from "lucide-react-native";
-import { getSafetyColor, getSafetyBg, type Destination } from "@/data/destinations";
+import { ArrowLeft, Star, Images, MoveHorizontal, ChevronLeft, ChevronRight, Heart, Share2 } from "lucide-react-native";
+import type { Destination } from "@/data/destinations";
+import { DESTINATION_COORDS } from "@/data/destinationCoords";
+import { DESTINATION_COORDS_GEOCODED } from "@/data/destinationCoordsGeocoded";
+import { useSavedPlacesStore } from "@/store/useSavedPlacesStore";
+import { QuickFacts, ActionRow, ExploreRows, type HubTarget } from "./HubSections";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { readJson, writeJson } from "@/store/deviceStorage";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
-import { withOpacity } from "@/components/withOpacity";
 
 import OverviewTab from "./tabs/OverviewTab";
-import HowToReachTab from "./tabs/HowToReachTab";
-import StayTab from "./tabs/StayTab";
-import BudgetTab from "./tabs/BudgetTab";
-import SafetyTab from "./tabs/SafetyTab";
-import ItineraryTab from "./tabs/ItineraryTab";
-
-// Order follows how people plan: what is it, what do I do there, where do I
-// sleep, how do I get there, what will it cost, is it safe. `label` is what the
-// person reads: short, plain words so all six fit on one row at a readable size
-// (Poppins is wide: "Overview" and "Itinerary" broke mid-word in a 60pt tab, and
-// "itinerary" is a word many people don't use). `id` stays as the internal key.
-const TABS = [
-  { id: "Overview", label: "About" },
-  { id: "Itinerary", label: "Day plan" },
-  { id: "Stay", label: "Stay" },
-  { id: "How to Reach", label: "How to reach" },
-  { id: "Budget", label: "Budget" },
-  { id: "Safety", label: "Safety" },
-] as const;
-
-type Tab = (typeof TABS)[number]["id"];
+import DayPlanCard from "./DayPlanCard";
+import AboutIntro from "./AboutIntro";
+import PlanBar from "./PlanBar";
 
 // The photo at the top of a destination page is 40% of the screen's height
 // plus 60pt extra (it was a fixed 300, about 35% on a typical phone, which
@@ -77,7 +59,6 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
   const scrimRgb = scheme === "dark" ? "14,20,36" : "28,25,23";
   const { width, height: windowHeight } = useWindowDimensions();
   const heroHeight = Math.round(windowHeight * HERO_HEIGHT_RATIO) + HERO_EXTRA_HEIGHT;
-  const [activeTab, setActiveTab] = useState<Tab>("Overview");
   const [heroIndex, setHeroIndex] = useState(0);
 
   const markViewed = useRecentlyViewedStore((s) => s.markViewed);
@@ -85,29 +66,41 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     markViewed(d.id);
   }, [d.id, markViewed]);
 
-  const safetyColor = getSafetyColor(d.womenSafety.score);
-  const safetyBg = getSafetyBg(d.womenSafety.score);
+  // Save (heart), Share and Directions — shared by the buttons on the photo and
+  // the row under it. Saving is kept on this device (see useSavedPlacesStore).
+  const saved = useSavedPlacesStore((s) => s.ids.includes(d.id));
+  const toggleSaved = useSavedPlacesStore((s) => s.toggle);
+  const placeName = d.name.replace(/\s*\([^)]*\)/g, "").trim();
+  const stateName = d.state.replace(/\s*\([^)]*\)/g, "").trim();
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const showToast = (message: string) => {
+    setToast(message);
+    if (toastTimer.current) clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToast(null), 2600);
+  };
+  useEffect(() => () => { if (toastTimer.current) clearTimeout(toastTimer.current); }, []);
 
-  // General keyboard-clearance safety net for any TextInput that ends up
-  // directly in this ScrollView (How to Reach's own search fields now
-  // live in a full-screen Modal instead — see ArriveSection.tsx — so
-  // they no longer need this, but other tabs might add an inline input
-  // later). Padding the scroll content by the keyboard's real height
-  // guarantees there's room to scroll a focused input clear, same
-  // approach proven out in PlanTrip/ChatStep.tsx.
-  const [keyboardHeight, setKeyboardHeight] = useState(0);
-  const KEYBOARD_GAP_BUFFER = 16;
-
-  useEffect(() => {
-    const showEvt = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
-    const hideEvt = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
-    const showSub = Keyboard.addListener(showEvt, (e) => setKeyboardHeight(e.endCoordinates?.height ?? 0));
-    const hideSub = Keyboard.addListener(hideEvt, () => setKeyboardHeight(0));
-    return () => {
-      showSub.remove();
-      hideSub.remove();
-    };
-  }, []);
+  const onToggleSave = () => {
+    toggleSaved(d.id);
+    showToast(saved ? `Removed ${placeName} from your saved places` : `Saved ${placeName}. Find it in My Account › Trips`);
+  };
+  const onShare = async () => {
+    try {
+      await Share.share({ message: `${placeName}, ${stateName}${d.tagline ? ` — ${d.tagline}` : ""}\nFound on Jourrrney.` });
+    } catch {
+      // The person closed the share sheet, or this device can't share: nothing to report.
+    }
+  };
+  const onDirections = async () => {
+    const coords = DESTINATION_COORDS[d.id] ?? DESTINATION_COORDS_GEOCODED[d.id];
+    const destination = coords ? `${coords.lat},${coords.lon}` : encodeURIComponent(`${placeName}, ${stateName}`);
+    try {
+      await Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${destination}`);
+    } catch {
+      Alert.alert("Couldn't open maps", "Please check that a maps app or browser is available, then try again.");
+    }
+  };
 
   // Falls back to the single heroImage (as a one-slide "carousel") for
   // the many destinations that don't have `gallery` populated yet — see
@@ -214,306 +207,232 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [canPlayHint]);
 
-  // The whole page is one vertical scroll — photo, tab strip and content move
-  // together. (Before, only the content under a fixed photo + tab strip
-  // scrolled, which left a small window on short screens.) Once the photo has
-  // scrolled off, a compact copy of the tab strip (with a back button) pins to
-  // the top so switching tabs never needs a scroll back up.
-  const scrollRef = useRef<ScrollView>(null);
-  const scrollY = useRef(0);
-  const [tabsPinned, setTabsPinned] = useState(false);
-
+  // The whole page is one vertical scroll. Once the photo has scrolled off, a
+  // slim bar with a labelled Back button and the place's name pins to the top,
+  // so there is always a way back without scrolling up.
+  const [barVisible, setBarVisible] = useState(false);
   const onPageScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const y = e.nativeEvent.contentOffset.y;
-    scrollY.current = y;
-    const pinned = y >= heroHeight;
-    setTabsPinned((prev) => (prev === pinned ? prev : pinned));
+    const show = e.nativeEvent.contentOffset.y >= heroHeight - (insets.top + 60);
+    setBarVisible((prev) => (prev === show ? prev : show));
   };
 
-  const selectTab = (id: Tab) => {
-    setActiveTab(id);
-    // Switching tabs from further down: start the new tab at its top.
-    if (scrollY.current > heroHeight) scrollRef.current?.scrollTo({ y: heroHeight, animated: false });
-  };
-
-  // One row of equal-width text tabs that always fit on screen — nothing to
-  // swipe, nothing cut off. "How to Reach" wraps to two lines rather than
-  // shrinking. The chosen tab is shown three ways (underline, bold, brighter
-  // text) so it never relies on colour alone, and each tab is at least 48pt
-  // tall. Screen readers hear e.g. "Itinerary, tab 2 of 6, selected".
-  const tabFontSize = width < 380 ? 12 : 12.5;
-  const renderTabStrip = () => (
-    <View accessibilityRole="tablist" style={{ flexDirection: "row", paddingHorizontal: 8 }}>
-      {TABS.map(({ id, label }, index) => {
-        const active = activeTab === id;
-        return (
-          <Pressable
-            key={id}
-            onPress={() => selectTab(id)}
-            accessibilityRole="tab"
-            accessibilityState={{ selected: active }}
-            aria-selected={active}
-            accessibilityLabel={`${label}, tab ${index + 1} of ${TABS.length}${active ? ", selected" : ""}`}
-            style={{
-              flex: 1, minHeight: 48, alignItems: "center", justifyContent: "center", paddingHorizontal: 2,
-              borderBottomWidth: 3, borderBottomColor: active ? c.primary : "transparent",
-            }}
-          >
-            <Text
-              numberOfLines={2}
-              maxFontSizeMultiplier={1.25}
-              style={{
-                fontFamily: active ? "Poppins_700Bold" : "Poppins_500Medium", fontSize: tabFontSize, lineHeight: 16,
-                textAlign: "center", color: active ? c.textPrimary : c.textSecondary,
-              }}
-            >
-              {label}
-            </Text>
-          </Pressable>
-        );
-      })}
-    </View>
-  );
+  // The four rows each open their own page (pages/DestinationPages.tsx).
+  // Planning has no row: the "Plan my trip with AI" bar opens the AI planner.
+  const openPage = (target: HubTarget) => router.push(`/destination/${d.id}/${target}`);
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg }}>
-      {/* One scroll for the whole page. The keyboard padding below is the
-          same safety net as before (see keyboardHeight above). */}
-      <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === "ios" ? "padding" : undefined}>
-        <ScrollView
-          ref={scrollRef}
-          style={{ flex: 1 }}
-          onScroll={onPageScroll}
-          scrollEventThrottle={16}
-          contentContainerStyle={{ paddingBottom: 100 + (keyboardHeight > 0 ? keyboardHeight + KEYBOARD_GAP_BUFFER : 0) }}
-          showsVerticalScrollIndicator={false}
-        >
-          {/* Hero — a horizontal, paged photo carousel (falls back to a
-              single-slide "carousel" of just heroImage when a destination
-              has no `gallery`) rather than one static image, so a page like
-              Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
-              and Mehtab Bagh, not just the one landmark photo. */}
-          <View style={{ height: heroHeight }}>
-            <ScrollView
-              ref={heroRef}
-              horizontal
-              pagingEnabled
-              showsHorizontalScrollIndicator={false}
-              onScroll={onHeroScroll}
-              onScrollBeginDrag={dismissHint}
-              scrollEventThrottle={16}
+      {/* One scroll for the whole page. */}
+      <ScrollView
+        style={{ flex: 1 }}
+        onScroll={onPageScroll}
+        scrollEventThrottle={16}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Hero — a horizontal, paged photo carousel (falls back to a
+            single-slide "carousel" of just heroImage when a destination
+            has no `gallery`) rather than one static image, so a page like
+            Agra's shows the Taj Mahal alongside Agra Fort, Fatehpur Sikri,
+            and Mehtab Bagh, not just the one landmark photo. */}
+        <View style={{ height: heroHeight }}>
+          <ScrollView
+            ref={heroRef}
+            horizontal
+            pagingEnabled
+            showsHorizontalScrollIndicator={false}
+            onScroll={onHeroScroll}
+            onScrollBeginDrag={dismissHint}
+            scrollEventThrottle={16}
+          >
+            {heroPhotos.map((uri, i) => (
+              <DestImage
+                key={`${uri}-${i}`}
+                source={{ uri }}
+                style={{ width: photoWidth, height: heroHeight }}
+                contentFit="cover"
+                onLoad={i === 0 ? () => setHeroReady(true) : undefined}
+              />
+            ))}
+          </ScrollView>
+          {/* Top: a light scrim behind the back button / badges. Bottom: a
+              longer, denser fade into the page background so the state,
+              name and rating row stay readable on busy photos. The
+              intermediate stops use the same hue as the final colour so
+              the fade doesn't turn grey halfway down. */}
+          <LinearGradient
+            colors={[
+              "rgba(0,0,0,0.4)",
+              `rgba(${scrimRgb},0)`,
+              `rgba(${scrimRgb},0.45)`,
+              `rgba(${scrimRgb},0.82)`,
+              `rgb(${scrimRgb})`,
+            ]}
+            locations={[0, 0.3, 0.55, 0.8, 1]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 0, y: 1 }}
+            style={{ position: "absolute", inset: 0 }}
+          />
+
+          {/* A round back button, 44pt like Share and Save; screen readers still hear "Back". */}
+          <Pressable
+            onPress={onBack}
+            accessibilityRole="button"
+            accessibilityLabel="Back"
+            style={{ position: "absolute", top: insets.top + 8, left: 16, width: 44, height: 44, borderRadius: 22, backgroundColor: "rgba(0,0,0,0.55)", alignItems: "center", justifyContent: "center" }}
+          >
+            <ArrowLeft color="#FFFFFF" size={22} />
+          </Pressable>
+
+          {/* Share and Save on the photo, where people look for them. */}
+          <Pressable
+            onPress={onShare}
+            accessibilityRole="button"
+            accessibilityLabel={`Share ${placeName}`}
+            style={{ position: "absolute", top: insets.top + 8, right: 70, width: 44, height: 44, borderRadius: 22, backgroundColor: "rgba(0,0,0,0.55)", alignItems: "center", justifyContent: "center" }}
+          >
+            <Share2 color="#FFFFFF" size={20} />
+          </Pressable>
+          <Pressable
+            onPress={onToggleSave}
+            accessibilityRole="button"
+            accessibilityState={{ selected: saved }}
+            accessibilityLabel={saved ? `${placeName} is saved. Tap to remove.` : `Save ${placeName}`}
+            style={{ position: "absolute", top: insets.top + 8, right: 16, width: 44, height: 44, borderRadius: 22, backgroundColor: "rgba(0,0,0,0.55)", alignItems: "center", justifyContent: "center" }}
+          >
+            <Heart color={saved ? "#FF6B81" : "#FFFFFF"} fill={saved ? "#FF6B81" : "none"} size={20} />
+          </Pressable>
+
+          {/* Previous / next arrows. Always visible (not only a hint) so the
+              photos clearly look browsable; the left one appears from the
+              second photo on. Sit at the vertical middle of the photo,
+              clear of the title block and the top buttons. */}
+          {multiPhoto && heroIndex > 0 && (
+            <Pressable
+              onPress={() => goToPhoto(heroIndex - 1)}
+              accessibilityRole="button"
+              accessibilityLabel="Previous photo"
+              style={{
+                position: "absolute", left: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
+                backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
+                alignItems: "center", justifyContent: "center",
+              }}
+            >
+              <ChevronLeft color="#FFFFFF" size={24} />
+            </Pressable>
+          )}
+          {multiPhoto && heroIndex < heroPhotos.length - 1 && (
+            <Pressable
+              onPress={() => goToPhoto(heroIndex + 1)}
+              accessibilityRole="button"
+              accessibilityLabel="Next photo"
+              style={{
+                position: "absolute", right: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
+                backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
+                alignItems: "center", justifyContent: "center",
+              }}
+            >
+              <ChevronRight color="#FFFFFF" size={24} />
+            </Pressable>
+          )}
+
+          {/* Progress bar: one segment per photo, the current one in gold.
+              Anchored to the bottom of the hero (not the top) because the
+              bottom-anchored title block below is a fixed distance from it.
+              Replaces the six-pixel dots, which were too small to notice. */}
+          {multiPhoto && (
+            <View
+              pointerEvents="none"
+              style={{ position: "absolute", bottom: 8, left: 20, right: 20, flexDirection: "row", gap: 4 }}
             >
               {heroPhotos.map((uri, i) => (
-                <DestImage
+                <View
                   key={`${uri}-${i}`}
-                  source={{ uri }}
-                  style={{ width: photoWidth, height: heroHeight }}
-                  contentFit="cover"
-                  onLoad={i === 0 ? () => setHeroReady(true) : undefined}
+                  style={{ flex: 1, height: 4, borderRadius: 2, backgroundColor: i === heroIndex ? "#D8B878" : "rgba(255,255,255,0.45)" }}
                 />
               ))}
-            </ScrollView>
-            {/* Top: a light scrim behind the back button / badges. Bottom: a
-                longer, denser fade into the page background so the state,
-                name and rating row stay readable on busy photos. The
-                intermediate stops use the same hue as the final colour so
-                the fade doesn't turn grey halfway down. */}
-            <LinearGradient
-              colors={[
-                "rgba(0,0,0,0.4)",
-                `rgba(${scrimRgb},0)`,
-                `rgba(${scrimRgb},0.45)`,
-                `rgba(${scrimRgb},0.82)`,
-                `rgb(${scrimRgb})`,
-              ]}
-              locations={[0, 0.3, 0.55, 0.8, 1]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 0, y: 1 }}
-              style={{ position: "absolute", inset: 0 }}
-            />
-
-            <Pressable
-              onPress={onBack}
-              style={{
-                position: "absolute", top: insets.top + 8, left: 16,
-                width: 40, height: 40, borderRadius: 20,
-                backgroundColor: "rgba(0,0,0,0.5)", alignItems: "center", justifyContent: "center",
-              }}
-            >
-              <ArrowLeft color="#FFFFFF" size={20} />
-            </Pressable>
-
-            <View
-              style={{
-                position: "absolute", top: insets.top + 8, right: 16,
-                flexDirection: "row", alignItems: "center", gap: 6,
-                backgroundColor: safetyBg, borderWidth: 1, borderColor: safetyColor,
-                borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
-              }}
-            >
-              <Shield color={safetyColor} size={14} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: safetyColor }}>
-                Safety {d.womenSafety.score}/10
-              </Text>
             </View>
+          )}
 
-            {/* "View all" — stacked below the safety badge rather than
-                anywhere near the bottom info block, since that block's height
-                shifts with how many lines the rating/duration/season row
-                wraps to on a given screen. Opens the dedicated gallery grid
-                (app/destination/[id]/gallery.tsx), which itself has its own
-                back button returning here. */}
-            <Pressable
-              onPress={() => router.push(`/destination/${d.id}/gallery`)}
+          {/* One-time hint, shown the first time a multi-photo page opens. */}
+          {hintVisible && (
+            <Animated.View
+              pointerEvents="none"
               style={{
-                position: "absolute", top: insets.top + 48, right: 16,
-                flexDirection: "row", alignItems: "center", gap: 6,
-                backgroundColor: "rgba(0,0,0,0.6)",
-                borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6,
+                position: "absolute", top: Math.round(heroHeight * 0.38), left: 0, right: 0, alignItems: "center",
+                opacity: hintOpacity,
               }}
             >
-              <Images color="#FFFFFF" size={14} />
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>
-                {multiPhoto ? `${heroIndex + 1} / ${heroPhotos.length} · See all` : "View photo"}
-              </Text>
-            </Pressable>
-
-            {/* Previous / next arrows. Always visible (not only a hint) so the
-                photos clearly look browsable; the left one appears from the
-                second photo on. Sit at the vertical middle of the photo,
-                clear of the title block and the top buttons. */}
-            {multiPhoto && heroIndex > 0 && (
-              <Pressable
-                onPress={() => goToPhoto(heroIndex - 1)}
-                accessibilityRole="button"
-                accessibilityLabel="Previous photo"
-                style={{
-                  position: "absolute", left: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
-                  backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
-                  alignItems: "center", justifyContent: "center",
-                }}
-              >
-                <ChevronLeft color="#FFFFFF" size={24} />
-              </Pressable>
-            )}
-            {multiPhoto && heroIndex < heroPhotos.length - 1 && (
-              <Pressable
-                onPress={() => goToPhoto(heroIndex + 1)}
-                accessibilityRole="button"
-                accessibilityLabel="Next photo"
-                style={{
-                  position: "absolute", right: 14, top: Math.round(heroHeight * 0.38) - 4, width: 44, height: 44, borderRadius: 22,
-                  backgroundColor: "rgba(0,0,0,0.55)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.55)",
-                  alignItems: "center", justifyContent: "center",
-                }}
-              >
-                <ChevronRight color="#FFFFFF" size={24} />
-              </Pressable>
-            )}
-
-            {/* Progress bar: one segment per photo, the current one in gold.
-                Anchored to the bottom of the hero (not the top) because the
-                bottom-anchored title block below is a fixed distance from it.
-                Replaces the six-pixel dots, which were too small to notice. */}
-            {multiPhoto && (
               <View
-                pointerEvents="none"
-                style={{ position: "absolute", bottom: 8, left: 20, right: 20, flexDirection: "row", gap: 4 }}
-              >
-                {heroPhotos.map((uri, i) => (
-                  <View
-                    key={`${uri}-${i}`}
-                    style={{ flex: 1, height: 4, borderRadius: 2, backgroundColor: i === heroIndex ? "#D8B878" : "rgba(255,255,255,0.45)" }}
-                  />
-                ))}
-              </View>
-            )}
-
-            {/* One-time hint, shown the first time a multi-photo page opens. */}
-            {hintVisible && (
-              <Animated.View
-                pointerEvents="none"
                 style={{
-                  position: "absolute", top: Math.round(heroHeight * 0.38), left: 0, right: 0, alignItems: "center",
-                  opacity: hintOpacity,
+                  flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 9, borderRadius: 14,
+                  backgroundColor: "rgba(14,20,36,0.88)", borderWidth: 1, borderColor: "rgba(216,184,120,0.45)",
                 }}
               >
-                <View
-                  style={{
-                    flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 9, borderRadius: 14,
-                    backgroundColor: "rgba(14,20,36,0.88)", borderWidth: 1, borderColor: "rgba(216,184,120,0.45)",
-                  }}
-                >
-                  <MoveHorizontal color="#D8B878" size={16} />
-                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12.5, color: "#FFFFFF" }}>Swipe for more photos</Text>
-                  <ChevronRight color="#D8B878" size={14} />
-                </View>
-              </Animated.View>
-            )}
-
-            <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: multiPhoto ? 24 : 14 }}>
-              <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 15, color: "rgba(255,255,255,0.9)", marginBottom: 1 }}>
-                {d.state}
-              </Text>
-              <Text
-                numberOfLines={2}
-                ellipsizeMode="tail"
-                style={{ fontFamily: "Poppins_700Bold", fontSize: 26, lineHeight: 32, color: "#FFFFFF", marginBottom: 4 }}
-              >
-                {d.name}
-              </Text>
-              {/* flexWrap on this row only wraps whole items onto a new line —
-                  it does nothing for a single long item's own text, which by
-                  default renders on one line and overflows past the hero's
-                  horizontal padding rather than wrapping (bestSeason strings
-                  like "November – February (winter migratory season); dawn is
-                  the best time of day" ran straight past the right edge,
-                  blowing through the margin entirely). flexShrink: 1 on each
-                  icon+text pair lets that pair shrink to the row's actual
-                  available width so its Text wraps inside it instead of
-                  spilling out — same fix applied to all three pairs for
-                  consistency, even though rating/duration are normally short. */}
-              <View style={{ flexDirection: "row", alignItems: "center", flexWrap: "wrap", columnGap: 12, rowGap: 2 }}>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
-                  <Star color="#FBBF24" fill="#FBBF24" size={12} />
-                  <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: "#FFFFFF" }}>{d.rating}</Text>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.7)" }}>
-                    ({d.reviews.toLocaleString("en-IN")})
-                  </Text>
-                </View>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
-                  <Clock color="rgba(255,255,255,0.8)" size={12} />
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.88)" }}>{d.duration}</Text>
-                </View>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 3, flexShrink: 1 }}>
-                  <Calendar color="rgba(255,255,255,0.8)" size={12} />
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.88)", flexShrink: 1 }}>{d.bestSeason}</Text>
-                </View>
+                <MoveHorizontal color="#D8B878" size={16} />
+                <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12.5, color: "#FFFFFF" }}>Swipe for more photos</Text>
+                <ChevronRight color="#D8B878" size={14} />
               </View>
+            </Animated.View>
+          )}
+
+          <View style={{ position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 20, paddingBottom: multiPhoto ? 24 : 14 }}>
+            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 15, color: "rgba(255,255,255,0.9)", marginBottom: 1 }}>
+              {d.state}
+            </Text>
+            <Text
+              numberOfLines={2}
+              ellipsizeMode="tail"
+              style={{ fontFamily: "Poppins_700Bold", fontSize: 26, lineHeight: 32, color: "#FFFFFF", marginBottom: 4 }}
+            >
+              {d.name}
+            </Text>
+            {/* Rating on the left, "See all" on the right of the same row. It used
+                to sit under Share/Save, where on a short phone it ran into the
+                photo arrows; here it shares a row with the rating only, so a
+                long place name above it keeps the full width. Opens the
+                dedicated gallery grid (app/destination/[id]/gallery.tsx),
+                which has its own back button returning here. */}
+            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
+              <View style={{ flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 3 }}>
+                <Star color="#FBBF24" fill="#FBBF24" size={12} />
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: "#FFFFFF" }}>{d.rating}</Text>
+                <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: "rgba(255,255,255,0.7)" }}>
+                  ({d.reviews.toLocaleString("en-IN")})
+                </Text>
+              </View>
+              <Pressable
+                onPress={() => router.push(`/destination/${d.id}/gallery`)}
+                accessibilityRole="button"
+                accessibilityLabel={multiPhoto ? `Photo ${heroIndex + 1} of ${heroPhotos.length}. See all photos.` : "View photo"}
+                style={{
+                  minHeight: 44, flexDirection: "row", alignItems: "center", gap: 6,
+                  backgroundColor: "rgba(0,0,0,0.6)", borderRadius: 999, paddingHorizontal: 14,
+                }}
+              >
+                <Images color="#FFFFFF" size={15} />
+                <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: "#FFFFFF" }}>
+                  {multiPhoto ? `${heroIndex + 1} / ${heroPhotos.length} · See all` : "View photo"}
+                </Text>
+              </Pressable>
             </View>
           </View>
+        </View>
 
-          {/* Tab bar (in the flow; a compact pinned copy appears below once this scrolls off) */}
-          <View style={{ borderBottomWidth: 1, borderBottomColor: c.border, backgroundColor: c.surface }}>{renderTabStrip()}</View>
+        <QuickFacts destination={d} />
+        <ActionRow placeName={placeName} onDirections={onDirections} />
+        <AboutIntro destination={d} />
+        <ExploreRows destination={d} onOpen={openPage} />
+        <DayPlanCard destination={d} onPlanTrip={() => onPlanTrip(d.id)} />
+        <OverviewTab destination={d} />
+      </ScrollView>
 
-          {/* Tab content */}
-          <View>
-            {activeTab === "Overview" && <OverviewTab destination={d} />}
-            {activeTab === "How to Reach" && <HowToReachTab destination={d} />}
-            {activeTab === "Stay" && <StayTab destination={d} />}
-            {activeTab === "Budget" && <BudgetTab destination={d} />}
-            {activeTab === "Safety" && <SafetyTab destination={d} />}
-            {activeTab === "Itinerary" && <ItineraryTab destination={d} onPlanTrip={onPlanTrip} />}
-          </View>
-        </ScrollView>
-      </KeyboardAvoidingView>
-
-      {/* Pinned tab strip — appears once the photo has scrolled out of view. */}
-      {tabsPinned && (
+      {/* Pinned bar: appears once the photo has scrolled out of view. */}
+      {barVisible && (
         <View
           style={{
-            position: "absolute", top: 0, left: 0, right: 0, paddingTop: insets.top,
-            flexDirection: "row", alignItems: "center",
+            position: "absolute", top: 0, left: 0, right: 0, paddingTop: insets.top + 8, paddingBottom: 8, paddingHorizontal: 12,
+            flexDirection: "row", alignItems: "center", gap: 10,
             backgroundColor: c.surface, borderBottomWidth: 1, borderBottomColor: c.border,
           }}
         >
@@ -521,38 +440,27 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             onPress={onBack}
             accessibilityRole="button"
             accessibilityLabel="Back"
-            style={{ width: 44, height: 44, alignItems: "center", justifyContent: "center", marginLeft: 4 }}
+            style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: c.surfaceAlt, alignItems: "center", justifyContent: "center" }}
           >
-            <ArrowLeft color={c.textPrimary} size={20} />
+            <ArrowLeft color={c.textPrimary} size={22} />
           </Pressable>
-          <View style={{ flex: 1 }}>{renderTabStrip()}</View>
+          <Text numberOfLines={1} maxFontSizeMultiplier={1.3} style={{ flex: 1, fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>
+            {placeName}
+          </Text>
         </View>
       )}
 
-      {/* Sticky CTA */}
-      <View style={{ position: "absolute", left: 0, right: 0, bottom: 0, paddingHorizontal: 16, paddingTop: 12, paddingBottom: Math.max(insets.bottom, 16), backgroundColor: withOpacity(c.bg, 0.97), borderTopWidth: 1, borderTopColor: c.borderSoft }}>
-        <Pressable
-          onPress={() => onPlanTrip(d.id)}
-          style={{
-            flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8,
-            backgroundColor: "#333C81", borderRadius: 16, paddingVertical: 14,
-          }}
+      {toast && (
+        <View
+          pointerEvents="none"
+          accessibilityLiveRegion="polite"
+          style={{ position: "absolute", left: 16, right: 16, bottom: Math.max(insets.bottom, 16) + 76, backgroundColor: c.textPrimary, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 11 }}
         >
-          <Sparkles color="#FFFFFF" size={16} />
-          <Text
-            style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF", flexShrink: 1 }}
-            numberOfLines={1}
-            adjustsFontSizeToFit
-          >
-            {/* Some destination names carry a parenthetical alt-name
-                (e.g. "Havelock Island (Swaraj Dweep)") that made this
-                button overflow — stripped here for just the short name.
-                numberOfLines+adjustsFontSizeToFit stay as a safety net
-                for any name that's still long. */}
-            Plan My Trip to {d.name.replace(/\s*\([^)]*\)/, "")}
-          </Text>
-        </Pressable>
-      </View>
+          <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, lineHeight: 18, color: c.bg }}>{toast}</Text>
+        </View>
+      )}
+
+      <PlanBar placeName={placeName} onPress={() => onPlanTrip(d.id)} />
     </View>
   );
 }

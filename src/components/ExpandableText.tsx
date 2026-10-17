@@ -2,8 +2,9 @@
  * Long copy clamped to a few lines with an in-place "Read more" / "Show less"
  * toggle. Behaviour follows the common guidance for this pattern:
  *
- * - The toggle only exists when the text genuinely overflows the clamp, so a
- *   short description never shows a pointless link. That is decided by
+ * - The toggle only exists when the text genuinely overflows the clamp (or when
+ *   there is extra content to reveal, see `expandedExtra`), so a short
+ *   description never shows a pointless link. That is decided by
  *   measuring an invisible, unclamped copy of the text against the clamped
  *   one (onLayout, which works on native and react-native-web alike —
  *   onTextLayout does not exist on web).
@@ -14,10 +15,11 @@
  *   right-hand edge, under the text block, with the chevron to the left of
  *   the label.
  */
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { LayoutAnimation, Platform, Pressable, Text, UIManager, View, type StyleProp, type TextStyle, type ViewStyle } from "react-native";
 import { ChevronDown, ChevronUp } from "lucide-react-native";
 import { useThemeColors } from "@/theme/useThemeColors";
+import { withOpacity } from "@/components/withOpacity";
 
 if (Platform.OS === "android" && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -31,9 +33,16 @@ interface Props {
   style?: StyleProp<ViewStyle>;
   /** Makes the toggle's screen-reader label specific, e.g. "Read more about Rock Garden". */
   subject?: string;
+  /**
+   * Content that belongs to the same block and is shown only while expanded,
+   * directly under the full text (for example a destination's Top highlights).
+   * "Show less" folds it away together with the long text, and its presence
+   * means the toggle always exists, even for a short description.
+   */
+  expandedExtra?: ReactNode;
 }
 
-export default function ExpandableText({ text, lines = 4, textStyle, style, subject }: Props) {
+export default function ExpandableText({ text, lines = 4, textStyle, style, subject, expandedExtra }: Props) {
   const c = useThemeColors();
   const [expanded, setExpanded] = useState(false);
   const [collapsedHeight, setCollapsedHeight] = useState<number | null>(null);
@@ -42,6 +51,7 @@ export default function ExpandableText({ text, lines = 4, textStyle, style, subj
   // Only meaningful once both have been measured; the 2px slack absorbs
   // sub-pixel rounding between the two copies.
   const overflows = collapsedHeight != null && fullHeight != null && fullHeight > collapsedHeight + 2;
+  const canToggle = overflows || !!expandedExtra;
 
   const toggle = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
@@ -75,7 +85,9 @@ export default function ExpandableText({ text, lines = 4, textStyle, style, subj
         </Text>
       </View>
 
-      {overflows && (
+      {expanded && expandedExtra ? <View>{expandedExtra}</View> : null}
+
+      {canToggle && (
         // An explicit full-width row that pushes its content to the right,
         // rather than relying on the button's own alignSelf.
         <View style={{ flexDirection: "row", justifyContent: "flex-end", alignSelf: "stretch", width: "100%" }}>
@@ -85,10 +97,8 @@ export default function ExpandableText({ text, lines = 4, textStyle, style, subj
             accessibilityState={{ expanded }}
             accessibilityLabel={subject ? `${label} about ${subject}` : label}
             hitSlop={{ top: 6, bottom: 6, left: 24, right: 8 }}
-            style={({ pressed }) => ({
-              flexDirection: "row", alignItems: "center", gap: 4,
-              minHeight: 44, opacity: pressed ? 0.6 : 1,
-            })}
+            android_ripple={{ color: withOpacity(c.primary, 0.12) }}
+            style={{ flexDirection: "row", alignItems: "center", gap: 4, minHeight: 44 }}
           >
             <Chevron color={c.primary} size={16} />
             <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, lineHeight: 18, color: c.primary }}>{label}</Text>

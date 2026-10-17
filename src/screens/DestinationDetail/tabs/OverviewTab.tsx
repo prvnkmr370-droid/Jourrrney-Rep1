@@ -1,4 +1,9 @@
-/** Source of truth: Figma "1.2.1 Destination Detail — Overview". The
+/** The part of a destination's home page below the rows and the ready-made
+ * day: Places Near. (The description and the Top highlights sit higher up, in
+ * AboutIntro.tsx, right under Directions; the opening hours are the status card
+ * under the photo, so there is no separate Opening hours card here any more.)
+ * Originally the About tab; source of truth Figma "1.2.1 Destination Detail —
+ * Overview". The
  * Trip Prep & Packing teaser below Top Highlights has no Figma frame —
  * Overview previously embedded the full PackingSection inline, which made
  * a "quick skim" tab into a long scroll. Overview now just teases it and
@@ -15,11 +20,7 @@
 import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
-import ExpandableText from "@/components/ExpandableText";
-import OpeningHoursCard from "@/components/OpeningHoursCard";
-import { useLiveOpeningHours } from "@/hooks/useOpeningHours";
-import { fromCurated } from "@/utils/openingHours";
-import { Sparkles, ChevronRight, MapPin, Compass, Gem } from "lucide-react-native";
+import { ChevronRight, MapPin, Compass, Gem } from "lucide-react-native";
 import { DESTINATIONS, type Destination, type NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -35,76 +36,12 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
   const popularNearby = d.nearbyPlaces.filter((p) => !p.isHidden);
   const hiddenNearby = d.nearbyPlaces.filter((p) => p.isHidden);
   const { loading: osmLoading, error: osmError, places: osmPlaces } = useNearbyPlaces(d.id);
-  const liveHours = useLiveOpeningHours(d);
-  const weeklyHours = liveHours ?? fromCurated(d.visitingHours);
   // Anything already shown in the hand-curated lists above shouldn't be
   // repeated in the "More" section below.
   const curatedNames = new Set(d.nearbyPlaces.map((p) => p.name.trim().toLowerCase()));
   const moreNearby = osmPlaces.filter((p) => !curatedNames.has(p.name.trim().toLowerCase()));
   return (
     <View style={{ padding: 20 }}>
-      {/* marginBottom matches the teaser card's marginTop below (24) so the
-          gap before and after "Top Highlights" is the same on both sides. */}
-      {/* Clamped to 4 lines with a "Read more" toggle — the full description
-          can run to a dozen lines and used to push everything below it
-          (hours, highlights, nearby places) off the first screen. */}
-      <ExpandableText
-        key={d.id}
-        text={d.description}
-        lines={4}
-        subject={d.name}
-        style={{ marginBottom: weeklyHours ? 12 : 24 }}
-        textStyle={{ fontFamily: "Poppins_400Regular", fontSize: 15, lineHeight: 23, color: c.textSecondary }}
-      />
-
-      {/* Opening hours as a day-by-day accordion — live Google Maps hours
-          when the backend has a key, otherwise this card's curated hours
-          (see utils/openingHours.ts). */}
-      {weeklyHours && (
-        <View style={{ marginBottom: 24 }}>
-          <OpeningHoursCard hours={weeklyHours} note={d.visitingHours?.note} subject={d.name} />
-        </View>
-      )}
-
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 12 }}>
-        <Sparkles color={c.primary} size={14} />
-        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>Top Highlights</Text>
-      </View>
-
-      <View style={{ gap: 10 }}>
-        {/* Numbered items are tappable, opening their own full destination
-            page, only where highlight.id points at a real one (e.g. Agra's
-            "Fatehpur Sikri") — same pattern as the nearby-place cards
-            below. A highlight that's part of this destination itself
-            (most of them) has no id and stays a plain row. */}
-        {d.highlights.map((highlight, i) => {
-          const CardWrapper = highlight.id ? Pressable : View;
-          return (
-            <CardWrapper
-              key={highlight.name}
-              {...(highlight.id ? { onPress: () => router.push(`/destination/${highlight.id}`) } : {})}
-              style={{
-                flexDirection: "row", alignItems: "center", gap: 12,
-                backgroundColor: c.surfaceAlt, borderRadius: 14, paddingVertical: 10, paddingHorizontal: 14,
-              }}
-            >
-              <View
-                style={{
-                  width: 24, height: 24, borderRadius: 12,
-                  backgroundColor: "#333C81", alignItems: "center", justifyContent: "center",
-                }}
-              >
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>{i + 1}</Text>
-              </View>
-              <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 13, color: c.textPrimary, flex: 1 }}>
-                {highlight.name}
-              </Text>
-              {highlight.id && <ChevronRight color={c.textMuted} size={16} />}
-            </CardWrapper>
-          );
-        })}
-      </View>
-
       {/* Places near this destination — merged in from the former
           standalone "Nearby" tab (see file header comment). Visual style
           loosely inspired by TripAdvisor's "Things to Do" attraction
@@ -116,7 +53,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
           NearbyPlace.id in destinations.ts. */}
       {d.nearbyPlaces.length > 0 && (
         <>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 24, marginBottom: 12 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 4, marginBottom: 12 }}>
             <MapPin color={c.primary} size={14} />
             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary }}>Places Near {d.name}</Text>
           </View>

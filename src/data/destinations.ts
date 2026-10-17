@@ -26,7 +26,7 @@ export interface Accommodation {
   // Optional richer per-venue data (real names + a maps link) sourced from
   // an official tourism site. Left undefined for destinations that don't
   // have this yet — `examples` above still renders on its own in that
-  // case. See StayTab.tsx.
+  // case. See StayGuide.tsx.
   venues?: AccommodationVenue[];
   // Where `venues` came from, and any caveat about it (e.g. no official
   // rates published) — shown under the venue list in the UI.

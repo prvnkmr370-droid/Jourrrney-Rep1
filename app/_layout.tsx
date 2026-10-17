@@ -87,6 +87,7 @@ export default function RootLayout() {
           <Stack.Screen name="profile/photo-credits" options={{ presentation: "card" }} />
           <Stack.Screen name="destination/[id]" options={{ presentation: "card" }} />
           <Stack.Screen name="destination/[id]/gallery" options={{ presentation: "card" }} />
+          <Stack.Screen name="destination/[id]/[page]" options={{ presentation: "card" }} />
           <Stack.Screen name="recently-viewed" options={{ presentation: "card" }} />
           <Stack.Screen name="safety/[id]" options={{ presentation: "card" }} />
           <Stack.Screen name="safety/travel-safe-steps" options={{ presentation: "card" }} />

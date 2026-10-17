@@ -1,98 +1,138 @@
 /**
- * Make-only reference (no Figma frame). Ported from the prototype's
- * "How to Reach" tab, which is itself a multi-section sub-flow (Getting
- * There / Getting Around / What to Pack / City Essentials / Travel
- * Advisory) backed by src/data/journeyGuides.ts. Only 11 destinations
- * have a journey guide — the rest fall back to the plainer
- * transport/localTransport/nearbyPlaces data, same as the Make prototype
- * does. "City Essentials" is hidden entirely for those without a guide
- * (its fallback would just repeat "Getting Around"). The former "Local
- * Spots" sub-section was removed — its content (nearby points of
- * interest) duplicated the "Places Near X" section already on the
- * Overview tab. "Traveler Hurdles" (scam/safety warnings with fixes) was
- * removed from this tab bar too — HurdlesSection.tsx and journeyGuides.ts's
- * cityHurdles data are untouched, just no longer rendered here.
+ * The topic cards behind two pages: "How to get there" (From my city, Getting
+ * around) and "What to know before I go" (What to pack, City tips, Safety
+ * notices, then the Trip Prep link). Ported from the prototype's multi-section
+ * sub-flow, backed by src/data/journeyGuides.ts; destinations without a guide
+ * fall back to the plainer transport/localTransport data, and "City tips" /
+ * "Safety notices" only appear when the guide has that content.
+ *
+ * Each page's topics are open-and-close cards (one open at a time, the first
+ * open to start) instead of a second row of small chips that scrolled
+ * sideways and cut labels off. Each card has a plain name and a one-line
+ * description, is at least 56pt tall, and tells screen readers whether it is
+ * expanded. Opening a card below the fold scrolls its header back into view
+ * so the page never jumps away from what was tapped.
  */
-import { useState } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
-import { Plane, BusFront, Luggage, Building2, ShieldAlert } from "lucide-react-native";
+import { useRef, useState } from "react";
+import { View, Text, Pressable, LayoutAnimation } from "react-native";
+import { Plane, BusFront, Luggage, Building2, ShieldAlert, ChevronDown, ChevronUp } from "lucide-react-native";
 import { getJourneyGuide } from "@/data/journeyGuides";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
+import { withOpacity } from "@/components/withOpacity";
+import TripPrepCard from "@/components/TripPrepCard";
 
 import ArriveSection from "./how-to-reach/ArriveSection";
 import WeatherSection from "./how-to-reach/WeatherSection";
 import EssentialsSection from "./how-to-reach/EssentialsSection";
 import AdvisorySection from "./how-to-reach/AdvisorySection";
 import LocalTransportSection from "./how-to-reach/LocalTransportSection";
-import TripPrepCard from "@/components/TripPrepCard";
 
-const SECTIONS = [
-  { id: "arrive", label: "Getting There", Icon: Plane },
-  { id: "localTransport", label: "Getting Around", Icon: BusFront },
-  { id: "weather", label: "What to Pack", Icon: Luggage },
-  { id: "essentials", label: "City Essentials", Icon: Building2 },
-] as const;
+export type Topic = "arrive" | "localTransport" | "weather" | "essentials" | "advisory";
 
-type Section = (typeof SECTIONS)[number]["id"] | "advisory";
+const TOPICS: { id: Topic; title: string; Icon: typeof Plane; subtitle: (name: string) => string }[] = [
+  { id: "arrive", title: "From my city", Icon: Plane, subtitle: (name) => `Flights, trains and road to ${name}` },
+  { id: "localTransport", title: "Getting around", Icon: BusFront, subtitle: () => "Autos, taxis, buses and walking" },
+  { id: "weather", title: "What to pack", Icon: Luggage, subtitle: () => "Weather and what to bring" },
+  { id: "essentials", title: "City tips", Icon: Building2, subtitle: () => "Money, customs and good to know" },
+  { id: "advisory", title: "Safety notices", Icon: ShieldAlert, subtitle: () => "Warnings and rules" },
+];
 
-export default function HowToReachTab({ destination: d }: { destination: Destination }) {
+interface Props {
+  destination: Destination;
+  /** Called with the opened card's top, relative to this list, so the page can scroll it into view. */
+  onTopicOpen?: (headerY: number) => void;
+  /** Which topics this page shows, in order (default: all five). */
+  only?: Topic[];
+  /** Which card starts open (default: the page's first topic). */
+  initialTopic?: Topic;
+  /** The Trip Prep & Packing link after the last topic (default: shown). */
+  showTripPrep?: boolean;
+}
+
+export default function HowToReachTab({ destination: d, onTopicOpen, only, initialTopic, showTripPrep = true }: Props) {
   const c = useThemeColors();
   const guide = getJourneyGuide(d.id);
-  const [section, setSection] = useState<Section>("arrive");
+  const headerY = useRef<Partial<Record<Topic, number>>>({});
 
-  // Every destination now has a generated journeyGuides.ts entry (see
-  // scripts/generate-journey-guides.mjs + add-travel-advisory.mjs), so
-  // cityEssentials/travelAdvisory are populated everywhere and both tabs
-  // show consistently. The guard stays in place rather than assuming —
-  // without it, a destination that somehow lacked cityEssentials would
-  // fall through to EssentialsSection's fallback, which just repeats the
-  // "Getting Around" localTransport list.
-  const sections = guide?.cityEssentials ? SECTIONS : SECTIONS.filter((s) => s.id !== "essentials");
-  const visibleSections = guide?.travelAdvisory
-    ? [...sections, { id: "advisory" as const, label: "Travel Advisory", Icon: ShieldAlert }]
-    : sections;
+  // Every destination has a generated journeyGuides.ts entry, so City tips and
+  // Safety notices normally show everywhere. The guards stay in place rather
+  // than assuming: without cityEssentials, EssentialsSection would just
+  // repeat the "Getting around" list.
+  const topics = TOPICS.filter((t) => {
+    if (only && !only.includes(t.id)) return false;
+    if (t.id === "essentials") return !!guide?.cityEssentials;
+    if (t.id === "advisory") return !!guide?.travelAdvisory;
+    return true;
+  });
+  const [open, setOpen] = useState<Topic | null>(initialTopic && topics.some((t) => t.id === initialTopic) ? initialTopic : topics[0]?.id ?? null);
+  const cleanName = d.name.replace(/\s*\([^)]*\)/g, "").trim();
+
+  const toggle = (id: Topic) => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    const next = open === id ? null : id;
+    setOpen(next);
+    if (next && onTopicOpen) {
+      // Wait a beat for the cards above to finish collapsing, then ask the
+      // page to bring this card's header back to the top if it fell off.
+      setTimeout(() => {
+        const y = headerY.current[next];
+        if (y != null) onTopicOpen(y);
+      }, 80);
+    }
+  };
 
   return (
-    <View>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 20, gap: 8, paddingTop: 16, paddingBottom: 8 }}>
-        {visibleSections.map((sec) => {
-          const active = section === sec.id;
-          return (
+    <View style={{ padding: 20 }}>
+      {topics.map(({ id, title, Icon, subtitle }) => {
+        const isOpen = open === id;
+        return (
+          <View key={id} onLayout={(e) => { headerY.current[id] = e.nativeEvent.layout.y; }} style={{ marginBottom: 10 }}>
             <Pressable
-              key={sec.id}
-              onPress={() => setSection(sec.id)}
+              onPress={() => toggle(id)}
+              accessibilityRole="button"
+              accessibilityState={{ expanded: isOpen }}
+              aria-expanded={isOpen}
+              accessibilityLabel={`${title}. ${subtitle(cleanName)}. ${isOpen ? "Open, tap to close" : "Closed, tap to open"}`}
               style={{
-                flexDirection: "row", alignItems: "center", gap: 6,
-                paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12,
-                backgroundColor: active ? "#333C81" : c.surfaceAlt,
+                minHeight: 56, flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 14, paddingVertical: 10,
+                borderRadius: 14, borderWidth: isOpen ? 1.5 : 1,
+                borderColor: isOpen ? c.primary : c.borderSoft,
+                backgroundColor: isOpen ? withOpacity(c.primary, 0.12) : c.surfaceAlt,
               }}
             >
-              <sec.Icon color={active ? "#FFFFFF" : c.textSecondary} size={13} />
-              <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 11, color: active ? "#FFFFFF" : c.textSecondary }}>
-                {sec.label}
-              </Text>
+              <Icon color={isOpen ? c.primary : c.textSecondary} size={20} />
+              <View style={{ flex: 1 }}>
+                <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, lineHeight: 20, color: c.textPrimary }}>
+                  {title}
+                </Text>
+                <Text maxFontSizeMultiplier={1.3} numberOfLines={2} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 17, color: c.textSecondary }}>
+                  {subtitle(cleanName)}
+                </Text>
+              </View>
+              {isOpen ? <ChevronUp color={c.primary} size={22} /> : <ChevronDown color={c.textSecondary} size={22} />}
             </Pressable>
-          );
-        })}
-      </ScrollView>
 
-      <View style={{ padding: 20 }}>
-        {section === "arrive" && <ArriveSection destination={d} guide={guide} />}
-        {section === "localTransport" && <LocalTransportSection destination={d} />}
-        {section === "weather" && <WeatherSection destination={d} guide={guide} />}
-        {section === "essentials" && guide?.cityEssentials && <EssentialsSection destination={d} guide={guide} />}
-        {section === "advisory" && guide?.travelAdvisory && (
-          <>
-            <AdvisorySection advisory={guide.travelAdvisory} destName={d.name} />
-            {/* Moved here from Overview: packing is the natural next step
-                after reading the advisory. */}
-            <View style={{ marginTop: 24 }}>
-              <TripPrepCard destination={d} />
-            </View>
-          </>
-        )}
-      </View>
+            {isOpen && (
+              <View style={{ paddingTop: 14 }}>
+                {id === "arrive" && <ArriveSection destination={d} guide={guide} />}
+                {id === "localTransport" && <LocalTransportSection destination={d} />}
+                {id === "weather" && <WeatherSection destination={d} guide={guide} />}
+                {id === "essentials" && guide?.cityEssentials && <EssentialsSection destination={d} guide={guide} />}
+                {id === "advisory" && guide?.travelAdvisory && <AdvisorySection advisory={guide.travelAdvisory} destName={d.name} />}
+              </View>
+            )}
+          </View>
+        );
+      })}
+
+      {/* Sits after the last topic (Safety notices): packing is the natural next
+          step once you've read the warnings. */}
+      {showTripPrep && (
+        <View style={{ marginTop: 6 }}>
+          <TripPrepCard destination={d} />
+        </View>
+      )}
     </View>
   );
 }
