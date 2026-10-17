@@ -1,5 +1,7 @@
 /** "Places Near <place>" on a destination's home page: directly under the About
- * block, always visible (never folded by "Show less"). (The description and the
+ * block, always visible (never folded by "Show less"). It opens with at most five
+ * places (hidden gems capped at two); one "Show N more places" button adds the rest
+ * and the live "More Places Nearby" list, and "Show fewer places" folds them again. (The description and the
  * Top highlights sit just above, in AboutIntro.tsx; the opening hours are the status card
  * under the photo, so there is no separate Opening hours card here any more.)
  * Originally the About tab; source of truth Figma "1.2.1 Destination Detail —
@@ -17,10 +19,11 @@
  * preview, so the two were merged into one full section instead of
  * keeping a separate tab for what was effectively a longer version of
  * the same thing. */
+import { useState } from "react";
 import { View, Text, Pressable, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
-import { ChevronRight, MapPin, Compass, Gem } from "lucide-react-native";
+import { ChevronDown, ChevronRight, ChevronUp, MapPin, Compass, Gem } from "lucide-react-native";
 import { DESTINATIONS, type Destination, type NearbyPlace } from "@/data/destinations";
 import { withOpacity } from "@/components/withOpacity";
 import { useThemeColors } from "@/theme/useThemeColors";
@@ -31,8 +34,15 @@ import { useNearbyPlaces } from "@/hooks/useNearbyPlaces";
 // Places with neither their own image nor a linked destination keep the pin.
 const DESTINATION_IMAGE_BY_ID = new Map(DESTINATIONS.map((d) => [d.id, d.image]));
 
+// What shows before the "Show more places" button is pressed: at most two hidden
+// gems and five places in all (popular places first). The button adds the rest,
+// including the live "More Places Nearby" list.
+const MAX_GEMS_SHOWN = 2;
+const MAX_PLACES_SHOWN = 5;
+
 export default function OverviewTab({ destination: d }: { destination: Destination }) {
   const c = useThemeColors();
+  const [open, setOpen] = useState(false);
   const popularNearby = d.nearbyPlaces.filter((p) => !p.isHidden);
   const hiddenNearby = d.nearbyPlaces.filter((p) => p.isHidden);
   const { loading: osmLoading, error: osmError, places: osmPlaces } = useNearbyPlaces(d.id);
@@ -40,6 +50,14 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
   // repeated in the "More" section below.
   const curatedNames = new Set(d.nearbyPlaces.map((p) => p.name.trim().toLowerCase()));
   const moreNearby = osmPlaces.filter((p) => !curatedNames.has(p.name.trim().toLowerCase()));
+  const gemsShown = Math.min(hiddenNearby.length, MAX_GEMS_SHOWN);
+  const popularShown = Math.min(popularNearby.length, MAX_PLACES_SHOWN - gemsShown);
+  const moreReady = !osmLoading && !osmError && moreNearby.length > 0;
+  // Everything the button would add. The map list only counts once it has loaded.
+  const extra = (popularNearby.length - popularShown) + (hiddenNearby.length - gemsShown) + (moreReady ? moreNearby.length : 0);
+  const buttonLabel = open ? "Show fewer places" : `Show ${extra} more ${extra === 1 ? "place" : "places"}`;
+  const popularList = open ? popularNearby : popularNearby.slice(0, popularShown);
+  const hiddenList = open ? hiddenNearby : hiddenNearby.slice(0, gemsShown);
   return (
     // No bottom padding: the rows that follow bring their own top margin.
     <View style={{ paddingHorizontal: 20, paddingTop: 20 }}>
@@ -61,7 +79,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
 
           {popularNearby.length > 0 && (
             <View style={{ gap: 12, marginBottom: hiddenNearby.length > 0 ? 20 : 0 }}>
-              {popularNearby.map((place) => (
+              {popularList.map((place) => (
                 <NearbyPlaceCard key={place.name} place={place} c={c} />
               ))}
             </View>
@@ -76,7 +94,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
                 </Text>
               </View>
               <View style={{ gap: 12 }}>
-                {hiddenNearby.map((place) => (
+                {hiddenList.map((place) => (
                   <NearbyPlaceCard key={place.name} place={place} c={c} isGem />
                 ))}
               </View>
@@ -88,7 +106,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
               once there's something to show, so a loading spinner or an
               error never appears as a bare, unexplained empty state below
               the curated content that's already useful on its own. */}
-          {osmLoading && (
+          {open && osmLoading && (
             <View style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 8, marginTop: 12 }}>
               <ActivityIndicator size="small" color={c.textSecondary} />
               <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>
@@ -96,7 +114,7 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
               </Text>
             </View>
           )}
-          {!osmLoading && !osmError && moreNearby.length > 0 && (
+          {open && moreReady && (
             <View style={{ marginTop: 20 }}>
               <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary, marginBottom: 4 }}>
                 More Places Nearby
@@ -124,6 +142,24 @@ export default function OverviewTab({ destination: d }: { destination: Destinati
                 ))}
               </View>
             </View>
+          )}
+
+          {extra > 0 && (
+            <Pressable
+              onPress={() => setOpen((o) => !o)}
+              accessibilityRole="button"
+              accessibilityState={{ expanded: open }}
+              aria-expanded={open}
+              accessibilityLabel={buttonLabel}
+              android_ripple={{ color: withOpacity(c.gold, 0.14) }}
+              style={{
+                minHeight: 48, marginTop: open ? 20 : 14, borderRadius: 12, borderWidth: 1.5, borderColor: withOpacity(c.gold, 0.6), backgroundColor: c.surface,
+                flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingHorizontal: 14, paddingVertical: 8,
+              }}
+            >
+              <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, lineHeight: 20, color: c.gold }}>{buttonLabel}</Text>
+              {open ? <ChevronUp color={c.gold} size={20} /> : <ChevronDown color={c.gold} size={20} />}
+            </Pressable>
           )}
         </>
       )}
