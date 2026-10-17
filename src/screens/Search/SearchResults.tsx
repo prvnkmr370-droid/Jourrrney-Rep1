@@ -7,9 +7,10 @@
  */
 import { useMemo, useState } from "react";
 import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
+import { router } from "expo-router";
 import DestinationCard from "@/components/DestinationCard";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Search, X, Settings2 } from "lucide-react-native";
+import { ArrowLeft, Search, X } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { findLiveMatches, resolveUnambiguousMatch, matchNonIndiaPlace } from "@/data/matchDestination";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
@@ -19,6 +20,9 @@ const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Hills"];
 // destinations.ts has no "Hills" tag — approximated by known hill-station ids.
 const HILL_STATION_IDS = ["ladakh", "munnar", "darjeeling", "coorg", "rishikesh"];
 const POPULAR_SEARCHES = ["Udaipur", "Goa", "Munnar", "Ladakh"];
+// How many matching places a search shows. The browse list holds only one place per
+// state, so a search (by place or by state) has to be able to show more than a few.
+const LIVE_RESULTS = 12;
 
 interface Props {
   onSelectDestination: (d: Destination) => void;
@@ -40,6 +44,14 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
 
   const suggestionMode = focused || query.trim().length > 0;
 
+  // Back goes to the screen this was opened from (Home). If this page was opened
+  // directly (a reload, a shared link) there is nothing to go back to, so it
+  // opens Home instead.
+  const goBack = () => {
+    if (router.canGoBack()) router.back();
+    else router.replace("/(tabs)");
+  };
+
   // A "completed search" = picking a destination while a query is active
   // (suggestion mode) — browsing the unfiltered list below doesn't count.
   const handleSearchSelect = (d: Destination) => {
@@ -55,7 +67,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
   // back to "Popular Searches".
   const nonIndiaPlace = useMemo(() => matchNonIndiaPlace(query), [query]);
   const liveMatches = useMemo(
-    () => (nonIndiaPlace ? [] : findLiveMatches(query, 4, recentIds)),
+    () => (nonIndiaPlace ? [] : findLiveMatches(query, LIVE_RESULTS, recentIds)),
     [query, recentIds, nonIndiaPlace],
   );
 
@@ -71,20 +83,39 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
     if (target) handleSearchSelect(target);
   };
 
-  // `hidden` destinations are real, full pages — findable via the live
-  // suggestions above, and linkable from a nearby-place card — but left
-  // out of this default/unfiltered browse list, same reasoning as Home's
-  // Popular Destinations. Search for one by name to reach it directly.
+  // The browse list shows one place from each state or territory: the most
+  // reviewed one in the chosen category, listed by state name. Every other place
+  // is one search away (the live suggestions below show up to LIVE_RESULTS).
+  // `hidden` destinations are real, full pages, left out of this browse list (same
+  // reasoning as Home's Popular Destinations); search for one by name to reach it.
   const filtered = useMemo(() => {
     const visible = DESTINATIONS.filter((d) => !d.hidden);
-    if (category === "All") return visible;
-    if (category === "Hills") return visible.filter((d) => HILL_STATION_IDS.includes(d.id));
-    return visible.filter((d) => d.category.includes(category));
+    const inCategory =
+      category === "All" ? visible
+      : category === "Hills" ? visible.filter((d) => HILL_STATION_IDS.includes(d.id))
+      : visible.filter((d) => d.category.includes(category));
+    const topPerState = new Map<string, Destination>();
+    for (const d of inCategory) {
+      const best = topPerState.get(d.state);
+      if (!best || d.reviews > best.reviews) topPerState.set(d.state, d);
+    }
+    return [...topPerState.values()].sort((a, b) => a.state.localeCompare(b.state));
   }, [category]);
 
   return (
     <View style={{ flex: 1, backgroundColor: c.bg, paddingTop: insets.top + 12 }}>
       <View style={{ flexDirection: "row", gap: 10, paddingHorizontal: 20, marginBottom: suggestionMode ? 16 : 20 }}>
+        <Pressable
+          onPress={goBack}
+          accessibilityRole="button"
+          accessibilityLabel="Back to home"
+          style={{
+            width: 44, height: 44, borderRadius: 22, backgroundColor: c.surfaceAlt,
+            borderWidth: 1, borderColor: c.borderSoft, alignItems: "center", justifyContent: "center",
+          }}
+        >
+          <ArrowLeft color={c.textPrimary} size={22} />
+        </Pressable>
         <View
           style={{
             flex: 1, flexDirection: "row", alignItems: "center", gap: 10, height: 44, borderRadius: 14, paddingHorizontal: 14,
@@ -112,11 +143,6 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
             </Pressable>
           )}
         </View>
-        {!suggestionMode && (
-          <Pressable style={{ width: 44, height: 44, borderRadius: 14, backgroundColor: "#333C81", alignItems: "center", justifyContent: "center" }}>
-            <Settings2 color="#FFFFFF" size={18} />
-          </Pressable>
-        )}
       </View>
 
       {suggestionMode ? (
@@ -170,7 +196,7 @@ export default function SearchResults({ onSelectDestination, initialQuery }: Pro
           </ScrollView>
 
           <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary, paddingHorizontal: 20, marginBottom: 14 }}>
-            {filtered.length} destination{filtered.length === 1 ? "" : "s"} found
+            One top place from each of {filtered.length} {filtered.length === 1 ? "state or territory" : "states and territories"}. To find any other place, use the search box.
           </Text>
 
           <ScrollView contentContainerStyle={{ paddingHorizontal: 20, gap: 12, paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
