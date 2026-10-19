@@ -136,7 +136,7 @@ export default function HotelsList({ destination: d }: { destination: Destinatio
   );
 }
 
-function HotelCard({ hotel: h, stacked }: { hotel: Hotel; stacked: boolean }) {
+export function HotelCard({ hotel: h, stacked }: { hotel: Hotel; stacked: boolean }) {
   const c = useThemeColors();
   const where = h.area ? `${h.name}, ${h.area}` : h.name;
   const priceLine = h.price.hasAmount && h.price.unit

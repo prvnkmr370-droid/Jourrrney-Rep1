@@ -3,7 +3,7 @@
  * hero. The page below it is no longer a set of tabs: a destination's home
  * page is the photo, the open status with the best time to visit, the address with a Map button, Directions, About <place>
  * (the description, and under "Read more" the Top highlights), Places Near, How to get there (the ways to reach the place, written out; a button opens the route
- * planner page), three rows that each open their own page (Hotels, What to know before I go, Is it safe? — see
+ * planner page), Hotels (a couple of them, with a button for all), then rows that each open their own page (What to know before I go, Is it safe? — see
  * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
  * to be the Day plan tab).
  * The home page has no pinned "Plan my trip with AI" bar (the pages it opens do);
@@ -29,6 +29,7 @@ import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 
 import OverviewTab from "./tabs/OverviewTab";
 import HowToGetThere from "./HowToGetThere";
+import HotelsPreview from "./HotelsPreview";
 import DayPlanCard from "./DayPlanCard";
 import AboutIntro from "./AboutIntro";
 
@@ -457,6 +458,8 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         {/* How to get there follows Places Near: the ways to reach the place, written out,
             and a button to the route planner page (which asks where you are starting from). */}
         <HowToGetThere destination={d} onOpenPlanner={() => openPage("reach")} />
+        {/* A couple of hotels and a "See all hotels" button (places with no named hotel keep a Hotels row below). */}
+        <HotelsPreview destination={d} onSeeAll={() => openPage("stay")} />
         <ExploreRows destination={d} onOpen={openPage} />
         <DayPlanCard destination={d} onPlanTrip={() => onPlanTrip(d.id)} />
       </ScrollView>

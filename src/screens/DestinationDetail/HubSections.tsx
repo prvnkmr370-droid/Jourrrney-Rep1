@@ -199,14 +199,13 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
   const score = d.womenSafety.score;
   const hotelCount = hotelsFor(d).length;
 
-  // "Hotels" opens the hotels our guide names for the place, then its price guide.
-  // They are not bookable yet: there is no partner price or booking link.
-  const fromText = price ? `from ₹${price.toLocaleString("en-IN")} a night` : "";
-  const stayPreview = hotelCount > 0
-    ? [`${hotelCount} ${hotelCount === 1 ? "hotel" : "hotels"}`, fromText].filter(Boolean).join(" · ")
-    : price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget";
+  // "Hotels" opens the Hotels page (the hotels our guide names, then its price guide).
+  // Nothing is bookable yet: there is no partner price or booking link.
+  const stayPreview = price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget";
+  // A place whose guide names hotels shows a couple of them in their own section above
+  // (HotelsPreview.tsx); this Hotels row is only for the places that name none.
   const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string }[] = [
-    { id: "stay", Icon: BedDouble, title: "Hotels", preview: stayPreview },
+    ...(hotelCount === 0 ? [{ id: "stay" as HubTarget, Icon: BedDouble, title: "Hotels", preview: stayPreview }] : []),
     { id: "know", Icon: Backpack, title: "What to know before I go", preview: "Packing, local tips, safety notices" },
     { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: `Women's safety ${score} / 10 · ${d.womenSafety.level}` },
   ];

@@ -101,3 +101,19 @@ export function hotelsFor(d: Destination): Hotel[] {
   }
   return out;
 }
+
+const LEVEL_ORDER: HotelLevel[] = ["Budget", "Mid-range", "Luxury"];
+
+/**
+ * A couple of hotels to show on the home page. When the hotels span more than one of
+ * Budget / Mid-range / Luxury, the first of the lowest and the first of the highest, so
+ * the two show the range; otherwise the first two.
+ */
+export function previewHotels(hotels: Hotel[], count = 2): Hotel[] {
+  if (hotels.length <= count) return hotels;
+  const levels = LEVEL_ORDER.filter((l) => hotels.some((h) => h.level === l));
+  if (count === 2 && levels.length >= 2) {
+    return [hotels.find((h) => h.level === levels[0])!, hotels.find((h) => h.level === levels[levels.length - 1])!];
+  }
+  return hotels.slice(0, count);
+}
