@@ -22,7 +22,8 @@ export default function DestinationRoute() {
   return (
     <DestinationDetail
       destination={destination}
-      onBack={() => router.back()}
+      // Opened directly (a shared link, a reload) there is no earlier screen, so Back opens Home.
+      onBack={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)"))}
       onPlanTrip={(destId) => router.push(`/plan/${destId}`)}
     />
   );
