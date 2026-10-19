@@ -47,6 +47,7 @@ import {
 } from "lucide-react-native";
 import type { Destination } from "./destinations";
 import { SAFETY_OVERRIDES } from "./safetyOverrides";
+import { cleanAreas, safetyTeaser, safetyVerdict, softened } from "@/utils/safetyTone";
 
 export type SafetyCategoryKey =
   | "safetyLevel"
@@ -406,14 +407,14 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
   const base: Record<SafetyCategoryKey, SafetyCategoryContent> = {
     safetyLevel: {
       Icon: Shield,
-      label: "Safety level",
-      summary: `${ws.score}/10 · ${ws.level}`,
+      label: "How it feels",
+      summary: safetyTeaser(d),
       details: [
-        `Overall safety score: ${ws.score}/10 (${ws.level}).`,
+        safetyVerdict(d),
         ...ws.highlights,
-        ...(ws.precautions.length ? [`Precautions: ${ws.precautions.join("; ")}`] : []),
+        ...(ws.precautions.length ? [`A few easy habits: ${ws.precautions.map(softened).join("; ")}`] : []),
       ],
-      sourceNote: "This app's own destination safety assessment, based on location, footfall, and available reporting.",
+      sourceNote: "This app's own destination safety assessment, based on location, footfall, and available reporting. Not live crime data.",
     },
     toilets: {
       Icon: Toilet,
@@ -425,14 +426,14 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
     womenFriendly: {
       Icon: UserRound,
       label: "Women-friendly places",
-      summary: ws.safeZones.length ? `Safe zones: ${ws.safeZones.join(", ")}` : "See details for guidance",
+      summary: cleanAreas(ws.safeZones).length ? `Comfortable places: ${cleanAreas(ws.safeZones).join(", ")}` : "See details for guidance",
       details: [
-        ...(ws.safeZones.length ? [`Safe zones: ${ws.safeZones.join(", ")}`] : []),
-        ...(ws.avoidAreas.length ? [`Avoid after dark: ${ws.avoidAreas.join(", ")}`] : []),
-        ...ws.soloTips,
+        ...(cleanAreas(ws.safeZones).length ? [`Comfortable places: ${cleanAreas(ws.safeZones).join(", ")}`] : []),
+        ...(cleanAreas(ws.avoidAreas).length ? [`Nicer in daylight or with company: ${cleanAreas(ws.avoidAreas).join(", ")}`] : []),
+        ...ws.soloTips.map(softened),
         ...g.womenFriendlyDetails,
       ],
-      sourceNote: "Safe zones, avoid-areas, and solo tips are this app's own curated assessment for this destination; stay suggestions are general guidance.",
+      sourceNote: "Comfortable places, quieter areas, and solo tips are this app's own curated assessment for this destination; stay suggestions are general guidance.",
     },
     medical: {
       Icon: Hospital,
@@ -503,9 +504,9 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
     nightGuidance: {
       Icon: Moon,
       label: "Night-time guidance",
-      summary: ws.avoidAreas.length ? `Avoid: ${ws.avoidAreas.join(", ")}` : "Stick to main, lit areas after dark",
-      details: [...(ws.avoidAreas.length ? [`Avoid after dark: ${ws.avoidAreas.join(", ")}`] : []), "Prefer well-lit, busy main roads over shortcuts or quiet side streets at night.", "Book transport in advance for late-night arrivals/departures rather than arranging it on the spot."],
-      sourceNote: "Avoid-area guidance is this app's own curated assessment; the rest is general night-travel practice.",
+      summary: cleanAreas(ws.avoidAreas).length ? `Quieter after dark: ${cleanAreas(ws.avoidAreas).join(", ")}` : "Evenings are nicest in busy, well-lit areas",
+      details: [...(cleanAreas(ws.avoidAreas).length ? [`Nicer in daylight or with company: ${cleanAreas(ws.avoidAreas).join(", ")}`] : []), "Busy, well-lit main roads are easier than shortcuts or quiet side streets at night.", "Booking transport in advance for late-night arrivals or departures saves arranging it on the spot."],
+      sourceNote: "The quieter areas are this app's own curated assessment; the rest is general night-travel practice.",
     },
     connectivity: {
       Icon: Wifi,

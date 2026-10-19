@@ -4,7 +4,7 @@
  *   stay    Hotels                  the hotels our guide names + price ladder + "What a day costs"
  *   reach   How to get there        From my city, Getting around
  *   know    What to know before I go  What to pack, City tips, Safety notices, Trip Prep
- *   safety  Is it safe?             the women's-safety score, tips and numbers
+ *   safety  Is it safe?             a warm verdict for women, good-to-knows, easy habits, numbers
  *
  * They replace the old tab strip (About, Day plan, Stay, How to reach, Budget,
  * Safety): About and the ready-made day now live on the home page itself, and
@@ -64,7 +64,7 @@ export default function DestinationPage({ destination: d, page }: { destination:
       );
     case "safety":
       return (
-        <SubPage destination={d} title="Is it safe?" subtitle="Women's safety, tips and emergency numbers.">
+        <SubPage destination={d} title="Is it safe?" subtitle="What helps, what to know, and who to call.">
           <View>
             <SafetyTab destination={d} />
           </View>

@@ -73,7 +73,7 @@ export default function SafetyDetailCards({ destination: d }: { destination: Des
                       </View>
                     ))}
                   </View>
-                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 16, color: c.textMuted, fontStyle: "italic" }}>
+                  <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 17, color: c.textMuted, fontStyle: "italic" }}>
                     {active.sourceNote}
                   </Text>
                 </ScrollView>
@@ -129,14 +129,16 @@ function Card({ content, c, onPress }: { content: SafetyCategoryContent; c: Retu
   return (
     <Pressable
       onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={`${content.label}. ${content.summary}`}
       style={{
         flex: 1, backgroundColor: c.surface, borderWidth: 1, borderColor: c.border,
         borderRadius: 16, padding: 12, gap: 6,
       }}
     >
       <content.Icon color={c.textPrimary} size={18} />
-      <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textPrimary }}>{content.label}</Text>
-      <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 10.5, lineHeight: 14, color: c.textSecondary }} numberOfLines={2}>
+      <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12.5, color: c.textPrimary }}>{content.label}</Text>
+      <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 17, color: c.textSecondary }} numberOfLines={3}>
         {content.summary}
       </Text>
     </Pressable>

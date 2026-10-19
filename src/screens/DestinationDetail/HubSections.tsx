@@ -18,12 +18,13 @@
  * 130% font scale) instead of being cut off.
  */
 import { Pressable, Text, View, useWindowDimensions } from "react-native";
-import { Backpack, BedDouble, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
+import { Backpack, BedDouble, Bell, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 import { bestTimeMonths, fromPrice, openStatus, type OpenStatus } from "@/utils/destinationFacts";
 import { hotelsFor } from "@/utils/stayHotels";
+import { headsUpCount, safetyTeaser } from "@/utils/safetyTone";
 import { useNow } from "@/hooks/useNow";
 
 export type HubTarget = "stay" | "reach" | "know" | "safety";
@@ -196,7 +197,6 @@ export function ActionRow({ onDirections, placeName }: { onDirections: () => voi
 export function ExploreRows({ destination: d, onOpen }: { destination: Destination; onOpen: (target: HubTarget) => void }) {
   const c = useThemeColors();
   const price = fromPrice(d.accommodation);
-  const score = d.womenSafety.score;
   const hotelCount = hotelsFor(d).length;
 
   // "Hotels" opens the Hotels page (the hotels our guide names, then its price guide).
@@ -204,10 +204,11 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
   const stayPreview = price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget";
   // A place whose guide names hotels shows a couple of them in their own section above
   // (HotelsPreview.tsx); this Hotels row is only for the places that name none.
-  const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string }[] = [
+  const headsUp = headsUpCount(d);
+  const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string; badge?: string }[] = [
     ...(hotelCount === 0 ? [{ id: "stay" as HubTarget, Icon: BedDouble, title: "Hotels", preview: stayPreview }] : []),
     { id: "know", Icon: Backpack, title: "What to know before I go", preview: "Packing, local tips, safety notices" },
-    { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: `Women's safety ${score} / 10 · ${d.womenSafety.level}` },
+    { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: safetyTeaser(d), badge: headsUp > 0 ? `${headsUp} ${headsUp === 1 ? "heads-up" : "heads-ups"}` : undefined },
   ];
 
   return (
@@ -216,12 +217,12 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
         What would you like to do?
       </Text>
       <View style={{ marginHorizontal: 16, marginTop: 8, borderRadius: 16, borderWidth: 1, borderColor: c.borderSoft, backgroundColor: c.surfaceAlt, overflow: "hidden" }}>
-        {rows.map(({ id, Icon, title, preview }, i) => (
+        {rows.map(({ id, Icon, title, preview, badge }, i) => (
           <Pressable
             key={id}
             onPress={() => onOpen(id)}
             accessibilityRole="button"
-            accessibilityLabel={`${title}. ${preview}`}
+            accessibilityLabel={`${title}. ${preview}${badge ? `. ${badge}` : ""}`}
             android_ripple={{ color: withOpacity(c.primary, 0.12) }}
             style={{
               minHeight: 74, flexDirection: "row", alignItems: "center", gap: 14, paddingHorizontal: 14, paddingVertical: 12,
@@ -234,6 +235,12 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
             <View style={{ flex: 1 }}>
               <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 16, lineHeight: 21, color: c.textPrimary }}>{title}</Text>
               <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13, lineHeight: 18, color: c.textSecondary }}>{preview}</Text>
+              {badge ? (
+                <View style={{ alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 5, marginTop: 4, borderWidth: 1, borderColor: withOpacity(c.gold, 0.6), borderRadius: 999, paddingHorizontal: 10, paddingVertical: 1 }}>
+                  <Bell color={c.gold} size={12} />
+                  <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 12, lineHeight: 17, color: c.gold }}>{badge}</Text>
+                </View>
+              ) : null}
             </View>
             <ChevronRight color={c.textMuted} size={22} />
           </Pressable>
