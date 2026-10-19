@@ -6,7 +6,7 @@
  *                 best months to visit
  *  - AddressRow   the place's address in words, with a small Map button beside it
  *  - ActionRow    Directions, a compact button (Save and Share are on the photo)
- *  - ExploreRows  "What would you like to do?": four big rows (hotels, how to get
+ *  - ExploreRows  "What would you like to do?": three big rows (hotels,
  *                 there, what to know before I go, is it safe), each with a live one-line
  *                 preview taken from that place's own data. Planning is not a row: the
  *                 "Plan my trip with AI" bar at the bottom goes straight to the AI planner.
@@ -18,11 +18,11 @@
  * 130% font scale) instead of being cut off.
  */
 import { Pressable, Text, View, useWindowDimensions } from "react-native";
-import { Backpack, BedDouble, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, Rocket, ShieldCheck } from "lucide-react-native";
+import { Backpack, BedDouble, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
-import { bestTimeMonths, fromPrice, modesPhrase, openStatus, type OpenStatus } from "@/utils/destinationFacts";
+import { bestTimeMonths, fromPrice, openStatus, type OpenStatus } from "@/utils/destinationFacts";
 import { hotelsFor } from "@/utils/stayHotels";
 import { useNow } from "@/hooks/useNow";
 
@@ -207,7 +207,6 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
     : price ? `From ₹${price.toLocaleString("en-IN")} a night` : "Stays for every budget";
   const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string }[] = [
     { id: "stay", Icon: BedDouble, title: "Hotels", preview: stayPreview },
-    { id: "reach", Icon: Rocket, title: "How to get there", preview: modesPhrase(d.transport) },
     { id: "know", Icon: Backpack, title: "What to know before I go", preview: "Packing, local tips, safety notices" },
     { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: `Women's safety ${score} / 10 · ${d.womenSafety.level}` },
   ];

@@ -2,8 +2,8 @@
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
  * hero. The page below it is no longer a set of tabs: a destination's home
  * page is the photo, the open status with the best time to visit, the address with a Map button, Directions, About <place>
- * (the description, and under "Read more" the Top highlights), Places Near (always visible), four rows that each open their own page (Hotels,
- * How to get there, What to know before I go, Is it safe? — see
+ * (the description, and under "Read more" the Top highlights), Places Near, How to get there (the ways to reach the place, written out; a button opens the route
+ * planner page), three rows that each open their own page (Hotels, What to know before I go, Is it safe? — see
  * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
  * to be the Day plan tab).
  * The home page has no pinned "Plan my trip with AI" bar (the pages it opens do);
@@ -28,6 +28,7 @@ import { readJson, writeJson } from "@/store/deviceStorage";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
 
 import OverviewTab from "./tabs/OverviewTab";
+import HowToGetThere from "./HowToGetThere";
 import DayPlanCard from "./DayPlanCard";
 import AboutIntro from "./AboutIntro";
 
@@ -453,6 +454,9 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
             It is plain content, always visible: "Show less" folds only the
             description and the highlights, never this. */}
         <OverviewTab destination={d} />
+        {/* How to get there follows Places Near: the ways to reach the place, written out,
+            and a button to the route planner page (which asks where you are starting from). */}
+        <HowToGetThere destination={d} onOpenPlanner={() => openPage("reach")} />
         <ExploreRows destination={d} onOpen={openPage} />
         <DayPlanCard destination={d} onPlanTrip={() => onPlanTrip(d.id)} />
       </ScrollView>
