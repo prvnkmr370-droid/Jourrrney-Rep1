@@ -44,7 +44,7 @@ async function geocode(query: string): Promise<GeoPoint | null> {
   }
 }
 
-function haversineKm(a: GeoPoint, b: GeoPoint): number {
+export function haversineKm(a: GeoPoint, b: GeoPoint): number {
   const R = 6371;
   const dLat = ((b.lat - a.lat) * Math.PI) / 180;
   const dLon = ((b.lon - a.lon) * Math.PI) / 180;
@@ -203,17 +203,26 @@ export async function getDestinationPoint(destination: { id: string; name: strin
   return anchor ? { lat: anchor.lat, lon: anchor.lon } : null;
 }
 
+/**
+ * `exactOrigin` is the phone's own position. When it is given there is nothing to look up for the start: the
+ * nearest airport, station and bus stand are found from that exact point, and the distances read "from you".
+ * Otherwise the start is a city name that is looked up (and read as "from <city>").
+ */
 export async function estimateRouteInfoLocally(
   origin: string,
   destination: { id: string; name: string; state: string },
+  exactOrigin?: GeoPoint | null,
 ): Promise<RouteInfoResult | null> {
-  const [originPoint, destPoint] = await Promise.all([geocode(`${origin}, India`), getDestinationPoint(destination)]);
+  const [originPoint, destPoint] = await Promise.all([
+    exactOrigin ? Promise.resolve(exactOrigin) : geocode(`${origin}, India`),
+    getDestinationPoint(destination),
+  ]);
   if (!originPoint || !destPoint) return null;
 
   const distanceKm = haversineKm(originPoint, destPoint);
 
   return {
     distanceKm: Math.round(distanceKm),
-    transport: buildGenericTransport(distanceKm, originPoint, destPoint, origin, destination.name),
+    transport: buildGenericTransport(distanceKm, originPoint, destPoint, exactOrigin ? "you" : origin, destination.name),
   };
 }

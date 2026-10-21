@@ -30,10 +30,10 @@ export default function LocationPermission({ onDone }: Props) {
       </View>
 
       <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 26, color: c.textPrimary, marginBottom: 16 }}>
-        See what is nearby
+        Routes from where you are
       </Text>
       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 14, lineHeight: 21, color: c.textSecondary, marginBottom: 32 }}>
-        Jourrrney uses your location to show live distances and travel times from wherever you are.
+        Jourrrney uses your exact location to find the nearest airport, station and bus stand to you, and how to reach each place from where you are. It stays on this phone and is never sent to our servers.
       </Text>
 
       <Pressable onPress={handleAllow} style={{ backgroundColor: "#333C81", borderRadius: 16, paddingVertical: 16, alignItems: "center" }}>

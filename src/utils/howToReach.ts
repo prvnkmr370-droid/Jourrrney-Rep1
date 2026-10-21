@@ -11,6 +11,7 @@
  */
 import type { Destination } from "@/data/destinations";
 import type { JourneyGuide } from "@/data/journeyGuides";
+import type { RouteInfoResult } from "@/screens/DestinationDetail/tabs/how-to-reach/routeInfo";
 
 export type ReachKind = "flight" | "train" | "water" | "road" | "other";
 export type StepIcon = "bike" | "car" | "bus" | "footprints" | "pin";
@@ -207,4 +208,51 @@ export function localModes(d: Destination): LocalMode[] {
     .filter((l) => l.available && l.mode.trim())
     .slice(0, 4)
     .map((l, i) => ({ key: `${i}-${l.mode}`, icon: localIcon(l.mode), mode: l.mode.trim(), cost: plain(l.cost) }));
+}
+
+/** Where a person leaves from for one way of travelling, found for the city they start in. */
+export interface ReachDeparture {
+  /** "Chennai International Airport (MAA)". */
+  name: string;
+  /** "Chennai Airport", for the row. */
+  short: string;
+  /** "~16 km from central Chennai". */
+  distance: string;
+}
+
+export interface PersonalMode extends ReachMode {
+  departure: ReachDeparture | null;
+  /** The time to show for this start: the guide's own when it is written for this city, else the estimate. */
+  personalTime: string;
+}
+
+/**
+ * Makes the place's own ways of travelling personal to the city a person starts in. The ways, the
+ * arrival points and the fares stay from the place's guide (a train to an island is never invented);
+ * what changes is where you leave from (the nearest airport, station or bus stand to the city, from the
+ * route estimate), and the time, which is the estimate unless the guide already wrote one for this city.
+ * Ferries and anything the estimate has no matching leg for are left as the guide has them.
+ */
+export function personalise(modes: ReachMode[], estimate: RouteInfoResult | null, originShort: string, fromYou = false): PersonalMode[] {
+  return modes.map((m) => {
+    const leg =
+      m.kind === "flight" ? estimate?.transport.find((t) => t.mode === "Flight")
+      : m.kind === "train" ? estimate?.transport.find((t) => t.mode === "Train")
+      : m.kind === "road" ? (estimate?.transport.find((t) => t.mode === "Bus") ?? estimate?.transport.find((t) => t.mode === "Road"))
+      : undefined;
+    const point = leg?.departurePoint ?? null;
+    const base = point ? point.name.replace(/\s*\(.*\)\s*$/, "").trim() : "";
+    const departure: ReachDeparture | null = point
+      ? {
+          name: point.code ? `${base} (${point.code})` : base,
+          short: base.replace(" International", ""),
+          distance: `${(point.distance || "").replace(/\s+from .*$/, "").trim()} from ${fromYou ? "you" : `central ${originShort}`}`.trim(),
+        }
+      : null;
+    let personalTime = m.durationShort;
+    if (!/\d/.test(m.duration)) personalTime = m.duration; // a note such as "Train preferred"
+    else if (m.duration.toLowerCase().includes(`from ${originShort.toLowerCase()}`)) personalTime = m.durationShort;
+    else if (leg) personalTime = leg.duration.replace(/^~/, "").replace(/\s*flight/i, "");
+    return { ...m, departure, personalTime };
+  });
 }
