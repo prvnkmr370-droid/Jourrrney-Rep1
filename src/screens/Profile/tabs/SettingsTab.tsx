@@ -24,8 +24,9 @@ import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
-import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, History, type LucideIcon } from "lucide-react-native";
+import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, History, Trash2, type LucideIcon } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
+import DeleteAccountSheet from "@/components/DeleteAccountSheet";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
 import { API_BASE_URL } from "@/config/api";
 import { useThemeStore, type ThemeMode } from "@/store/useThemeStore";
@@ -41,8 +42,11 @@ const MODE_OPTIONS: { id: ThemeMode; label: string }[] = [
 export default function SettingsTab() {
   const c = useThemeColors();
   const { isSignedIn, signOut, setThemeMode } = useProfileStore();
+  // Only a real account (a saved sign-in token) has anything on the server to delete.
+  const hasRealAccount = useProfileStore((s) => !!s.token);
   const mode = useThemeStore((s) => s.mode);
   const [notifications, setNotifications] = useState(true);
+  const [showDelete, setShowDelete] = useState(false);
 
   // The backend remembers a signed-in user's own earlier AI requests to
   // personalise later answers (journey-backend/src/lib/aiMemory.js). This
@@ -133,6 +137,9 @@ export default function SettingsTab() {
         {isSignedIn && (
           <NavRow icon={Sparkles} label="Clear AI history" sub="Forget what the trip planner remembers about you" onPress={handleClearAiHistory} c={c} />
         )}
+        {hasRealAccount && (
+          <NavRow icon={Trash2} label="Delete my account" sub="Permanently remove your account and data" onPress={() => setShowDelete(true)} c={c} danger />
+        )}
         <NavRow
           icon={FileText}
           label="Travel documents"
@@ -158,6 +165,15 @@ export default function SettingsTab() {
           {describeBuild()}
         </Text>
       </View>
+
+      <DeleteAccountSheet
+        visible={showDelete}
+        onClose={() => setShowDelete(false)}
+        onDeleted={() => {
+          setShowDelete(false);
+          router.replace("/(tabs)");
+        }}
+      />
     </ScrollView>
   );
 }
@@ -177,14 +193,15 @@ function ToggleRow({ icon: Icon, label, sub, value, onValueChange, c }: { icon: 
   );
 }
 
-function NavRow({ icon: Icon, label, sub, onPress, c }: { icon: LucideIcon; label: string; sub: string; onPress: () => void; c: ReturnType<typeof useThemeColors> }) {
+function NavRow({ icon: Icon, label, sub, onPress, c, danger }: { icon: LucideIcon; label: string; sub: string; onPress: () => void; c: ReturnType<typeof useThemeColors>; danger?: boolean }) {
+  const accent = danger ? c.danger : c.teal;
   return (
-    <Pressable onPress={onPress} style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, paddingVertical: 12, borderTopWidth: 1, borderTopColor: c.borderSoft }}>
-      <View style={{ width: 32, height: 32, borderRadius: 10, backgroundColor: withOpacity(c.teal, 0.12), alignItems: "center", justifyContent: "center" }}>
-        <Icon color={c.teal} size={16} />
+    <Pressable onPress={onPress} style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, paddingVertical: 12, minHeight: 48, borderTopWidth: 1, borderTopColor: c.borderSoft }}>
+      <View style={{ width: 32, height: 32, borderRadius: 10, backgroundColor: withOpacity(accent, 0.12), alignItems: "center", justifyContent: "center" }}>
+        <Icon color={accent} size={16} />
       </View>
       <View style={{ flex: 1 }}>
-        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: c.textPrimary }}>{label}</Text>
+        <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: danger ? c.danger : c.textPrimary }}>{label}</Text>
         <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>{sub}</Text>
       </View>
       <ChevronRight color={c.textMuted} size={16} />

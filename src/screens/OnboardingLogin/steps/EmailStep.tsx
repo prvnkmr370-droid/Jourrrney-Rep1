@@ -1,13 +1,16 @@
-import { View, Text, Pressable, TextInput, ActivityIndicator } from "react-native";
+import { View, Text, Pressable, TextInput, ActivityIndicator, Linking } from "react-native";
 import { X } from "lucide-react-native";
 import { CompassMark } from "@/components/JourrrneyLogo";
-import { GoogleIcon, FacebookIcon, AppleIcon } from "@/components/icons/BrandIcons";
+import { FacebookIcon } from "@/components/icons/BrandIcons";
+import { API_BASE_URL } from "@/config/api";
 import type { AuthProvider } from "@/store/useProfileStore";
 
+// Only sign-in methods that really work are shown. "Sign in with Google" and "Sign in with Apple" are
+// left out on purpose: they used to just mark the phone as signed in without creating an account, and a
+// button that does nothing real is what app stores reject. When one is wired up for real (see
+// useProfileStore.signIn), add its entry back here: GoogleIcon and AppleIcon are still in BrandIcons.
 const SOCIAL_BUTTONS: { provider: Exclude<AuthProvider, null>; label: string; icon: React.ReactNode }[] = [
-  { provider: "google", label: "Sign in with Google", icon: <GoogleIcon size={18} /> },
   { provider: "facebook", label: "Sign in with Facebook", icon: <FacebookIcon size={20} /> },
-  { provider: "apple", label: "Sign in with Apple", icon: <AppleIcon size={18} color="#FFFFFF" /> },
 ];
 
 interface Props {
@@ -121,10 +124,26 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
           )}
         </View>
 
-        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 17, color: "rgba(255,255,255,0.45)" }}>
+        {/* The two links open the public web pages (the same words as Profile > Settings), so a
+            person can read them before they have an account. */}
+        <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 19, color: "rgba(255,255,255,0.6)" }}>
           By continuing, you agree to Jourrrney's{" "}
-          <Text style={{ color: "#8B93D6" }}>Terms of Service</Text> and{" "}
-          <Text style={{ color: "#8B93D6" }}>Privacy Policy</Text>.
+          <Text
+            accessibilityRole="link"
+            onPress={() => Linking.openURL(`${API_BASE_URL}/terms`)}
+            style={{ color: "#A9B1F5", textDecorationLine: "underline" }}
+          >
+            Terms of Service
+          </Text>{" "}
+          and{" "}
+          <Text
+            accessibilityRole="link"
+            onPress={() => Linking.openURL(`${API_BASE_URL}/privacy`)}
+            style={{ color: "#A9B1F5", textDecorationLine: "underline" }}
+          >
+            Privacy Policy
+          </Text>
+          .
         </Text>
       </View>
 

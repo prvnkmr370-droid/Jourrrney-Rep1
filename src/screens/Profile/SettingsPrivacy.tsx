@@ -6,12 +6,14 @@
  * app, since there's no in-app notification permission API to toggle
  * directly.
  */
+import { useState } from "react";
 import { View, Text, Pressable, ScrollView, Alert, Linking } from "react-native";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, ChevronRight } from "lucide-react-native";
 import { useProfileStore } from "@/store/useProfileStore";
 import { useThemeColors } from "@/theme/useThemeColors";
+import DeleteAccountSheet from "@/components/DeleteAccountSheet";
 
 interface Props {
   onBack: () => void;
@@ -21,6 +23,9 @@ export default function SettingsPrivacy({ onBack }: Props) {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const { isSignedIn, signOut } = useProfileStore();
+  // Only a real account (a saved sign-in token) has anything on the server to delete.
+  const hasRealAccount = useProfileStore((s) => !!s.token);
+  const [showDelete, setShowDelete] = useState(false);
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: c.bg }} contentContainerStyle={{ padding: 20, paddingTop: insets.top + 12, paddingBottom: 40 }} showsVerticalScrollIndicator={false}>
@@ -43,6 +48,7 @@ export default function SettingsPrivacy({ onBack }: Props) {
           onPress={() => Alert.alert("Export my data", "This is a placeholder — no real data export is wired up yet.")}
           c={c}
         />
+        {hasRealAccount && <Row title="Delete my account" onPress={() => setShowDelete(true)} c={c} danger />}
       </View>
 
       <SectionLabel c={c}>NOTIFICATIONS</SectionLabel>
@@ -61,6 +67,15 @@ export default function SettingsPrivacy({ onBack }: Props) {
       <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 16, color: c.textMuted }}>
         Journey never asks for payment or booking details — this app is a guide, not a marketplace.
       </Text>
+
+      <DeleteAccountSheet
+        visible={showDelete}
+        onClose={() => setShowDelete(false)}
+        onDeleted={() => {
+          setShowDelete(false);
+          router.replace("/(tabs)");
+        }}
+      />
     </ScrollView>
   );
 }
@@ -73,13 +88,13 @@ function SectionLabel({ children, c }: { children: React.ReactNode; c: ReturnTyp
   );
 }
 
-function Row({ title, onPress, c }: { title: string; onPress: () => void; c: ReturnType<typeof useThemeColors> }) {
+function Row({ title, onPress, c, danger }: { title: string; onPress: () => void; c: ReturnType<typeof useThemeColors>; danger?: boolean }) {
   return (
     <Pressable
       onPress={onPress}
       style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: c.surface, borderWidth: 1, borderColor: c.border, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 16 }}
     >
-      <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 14, color: c.textPrimary }}>{title}</Text>
+      <Text style={{ fontFamily: "Poppins_500Medium", fontSize: 14, color: danger ? c.danger : c.textPrimary }}>{title}</Text>
       <ChevronRight color={c.textMuted} size={16} />
     </Pressable>
   );

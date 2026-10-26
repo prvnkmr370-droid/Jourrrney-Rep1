@@ -15,9 +15,10 @@
  * and comes back through app/auth.tsx (see journey-backend's
  * src/routes/facebookAuth.js); until the Facebook app's keys are set on the
  * server it says plainly that it isn't available yet. Google and Apple sign-in
- * still just mark the user "signed in" locally — those need credentials from
- * each provider's own developer console (a Google OAuth client ID, an Apple
- * Developer Program enrollment) that we don't have yet.
+ * are not offered: they only ever marked the user "signed in" locally, and they
+ * need credentials from each provider's own developer console (a Google OAuth
+ * client ID, an Apple Developer Program enrollment) that we don't have yet. The
+ * buttons come back in EmailStep.tsx once they are real.
  */
 import { useState } from "react";
 import { View } from "react-native";

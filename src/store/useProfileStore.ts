@@ -59,6 +59,13 @@ interface ProfileState {
    * same one an email sign-in produces (a token saved to SecureStore). */
   completeFacebookLogin: (code: string) => Promise<{ ok: boolean; error?: string }>;
 
+  /** Permanently deletes the signed-in person's account and everything the server
+   * keeps about them. Google Play requires that anyone who can create an account in
+   * the app can also delete it. It does NOT sign this phone out: call signOut()
+   * afterwards (DeleteAccountSheet does, when the person taps Done). Things saved only
+   * on the phone (hearts, saved trips) are not touched. */
+  deleteAccount: () => Promise<{ ok: boolean; error?: string }>;
+
   /** Loads the signed-in user's real profile fields from the backend —
    * also applies a saved themeMode to useThemeStore, so a saved
    * preference follows the account across reinstalls/devices, not just
@@ -205,6 +212,27 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
         token: data.token,
       });
       get().fetchProfile();
+      return { ok: true };
+    } catch {
+      return { ok: false, error: "Can't reach the server — check your connection and try again." };
+    }
+  },
+
+  deleteAccount: async () => {
+    const { token } = get();
+    if (!token) return { ok: false, error: "You're not signed in." };
+    try {
+      const res = await fetch(`${API_BASE_URL}/auth/account`, { method: "DELETE", headers: { Authorization: `Bearer ${token}` } });
+      const data = res.ok ? {} : await res.json().catch(() => ({}));
+      // "Account not found" means it is already gone, which is what the person wanted. An expired
+      // sign-in is different: the account still exists, so say so rather than claim it was deleted.
+      const alreadyGone = res.status === 401 && data.code === "account_not_found";
+      if (!res.ok && !alreadyGone) {
+        if (data.code === "session_expired") return { ok: false, error: "Your sign-in has run out. Please sign in again, then delete your account." };
+        return { ok: false, error: data.error ?? "Couldn't delete your account. Please try again." };
+      }
+      // Not signing out here: the caller shows "your account has been deleted" first, and signing
+      // out swaps the screen underneath it. It calls signOut() when the person taps Done.
       return { ok: true };
     } catch {
       return { ok: false, error: "Can't reach the server — check your connection and try again." };
