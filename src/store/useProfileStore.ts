@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { Linking } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { API_BASE_URL } from "@/config/api";
 import { useThemeStore, type ThemeMode } from "./useThemeStore";
@@ -17,6 +18,8 @@ export interface RealProfile {
 }
 
 const TOKEN_KEY = "journey_auth_token";
+// Which button the saved session came from ("email" or "facebook"), so "Signed in with…" survives a restart.
+const PROVIDER_KEY = "journey_auth_provider";
 const EMPTY_PROFILE: RealProfile = { bio: null, languages: null, location: null, themeMode: null };
 
 interface ProfileState {
@@ -46,6 +49,16 @@ interface ProfileState {
    * to SecureStore. */
   verifyCode: (email: string, code: string, name?: string) => Promise<{ ok: boolean; error?: string }>;
 
+  /** Opens Facebook sign-in in the phone's browser. Only resolves once the browser
+   * has been opened (or says plainly why not, e.g. Facebook isn't set up on the
+   * server yet); the sign-in itself finishes in app/auth.tsx when Facebook sends
+   * the person back to the app. */
+  startFacebookLogin: () => Promise<{ ok: boolean; error?: string }>;
+
+  /** Swaps the one-time code Facebook sign-in hands back for a real session, the
+   * same one an email sign-in produces (a token saved to SecureStore). */
+  completeFacebookLogin: (code: string) => Promise<{ ok: boolean; error?: string }>;
+
   /** Loads the signed-in user's real profile fields from the backend —
    * also applies a saved themeMode to useThemeStore, so a saved
    * preference follows the account across reinstalls/devices, not just
@@ -63,11 +76,12 @@ interface ProfileState {
    * restored on other devices/reinstalls via fetchProfile. */
   setThemeMode: (mode: ThemeMode) => void;
 
-  /** UI-only for Google/Apple/Facebook — no real OAuth is wired up (that
+  /** UI-only for Google/Apple — no real OAuth is wired up for those (that
    * needs client credentials from each provider's developer console,
    * which only you can create). Marks the user as signed in locally so
    * screens can render "Signed in with Google" etc.; swap in real
-   * provider calls at the same call sites once credentials exist. */
+   * provider calls at the same call sites once credentials exist.
+   * Facebook is real: see startFacebookLogin / completeFacebookLogin. */
   signIn: (provider: Exclude<AuthProvider, null>, name?: string) => void;
 
   skip: () => void;
@@ -99,9 +113,10 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
         return;
       }
       const { user } = await res.json();
+      const savedProvider = await SecureStore.getItemAsync(PROVIDER_KEY).catch(() => null);
       set({
         isSignedIn: true,
-        authProvider: "email",
+        authProvider: savedProvider === "facebook" ? "facebook" : "email",
         name: user.name,
         email: user.email,
         token,
@@ -141,6 +156,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Try again." };
 
       await SecureStore.setItemAsync(TOKEN_KEY, data.token);
+      await SecureStore.setItemAsync(PROVIDER_KEY, "email").catch(() => {});
       set({
         isSignedIn: true,
         authProvider: "email",
@@ -152,6 +168,46 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       return { ok: true };
     } catch {
       return { ok: false, error: "Can't reach the server — check journey-backend is running and EXPO_PUBLIC_API_URL is correct." };
+    }
+  },
+
+  startFacebookLogin: async () => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/auth/facebook/status`);
+      const status = res.ok ? await res.json() : null;
+      if (!status?.configured) {
+        return { ok: false, error: "Facebook sign-in isn't available yet. Please sign in with your email for now." };
+      }
+      await Linking.openURL(`${API_BASE_URL}/auth/facebook/start`);
+      return { ok: true };
+    } catch {
+      return { ok: false, error: "Can't reach the server — check your connection and try again." };
+    }
+  },
+
+  completeFacebookLogin: async (code) => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/auth/facebook/exchange`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code }),
+      });
+      const data = await res.json();
+      if (!res.ok) return { ok: false, error: data.error ?? "That sign-in has expired. Please try again." };
+
+      await SecureStore.setItemAsync(TOKEN_KEY, data.token);
+      await SecureStore.setItemAsync(PROVIDER_KEY, "facebook").catch(() => {});
+      set({
+        isSignedIn: true,
+        authProvider: "facebook",
+        name: data.user.name,
+        email: data.user.email,
+        token: data.token,
+      });
+      get().fetchProfile();
+      return { ok: true };
+    } catch {
+      return { ok: false, error: "Can't reach the server — check your connection and try again." };
     }
   },
 
@@ -196,13 +252,13 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
 
   setThemeMode: (mode) => {
     useThemeStore.getState().setMode(mode);
-    const { token, authProvider } = get();
-    // Only real (email) accounts have a backend profile to save this to —
-    // Google/Apple/Facebook are still local-only fake auth (see signIn
-    // below), and a guest has no account at all. The theme still applies
-    // immediately either way via the setMode call above; this just adds
-    // cross-device persistence on top for real accounts.
-    if (token && authProvider === "email") {
+    const { token } = get();
+    // Only real accounts (a saved token: email or Facebook) have a backend
+    // profile to save this to — Google/Apple are still local-only fake auth
+    // (see signIn below), and a guest has no account at all. The theme still
+    // applies immediately either way via the setMode call above; this just
+    // adds cross-device persistence on top for real accounts.
+    if (token) {
       get().updateProfile({ themeMode: mode });
     }
   },
@@ -213,6 +269,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
 
   signOut: async () => {
     await SecureStore.deleteItemAsync(TOKEN_KEY).catch(() => {});
+    await SecureStore.deleteItemAsync(PROVIDER_KEY).catch(() => {});
     set({ isSignedIn: false, authProvider: null, name: null, email: null, token: null, profile: EMPTY_PROFILE });
   },
 }));

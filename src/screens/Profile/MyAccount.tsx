@@ -45,14 +45,14 @@ const TABS: { id: Section; label: string; icon: LucideIcon }[] = [
 export default function MyAccount() {
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
-  const { isSignedIn, authProvider, name, email } = useProfileStore();
+  const { isSignedIn, name, email, token } = useProfileStore();
   const favourites = useFavourites();
   const STATS = [...PLACEHOLDER_STATS, { value: favourites.ids.length, label: "Saved" }];
   const [section, setSection] = useState<Section>("trips");
-  // "email" means a real account from journey-backend — show the actual
-  // name/email that was signed in with, not the static demo persona
-  // (still used for Google/Apple/Facebook, which aren't real auth yet).
-  const isRealAccount = authProvider === "email";
+  // A saved token means a real account from journey-backend (email code or
+  // Facebook) — show the actual name/email that was signed in with, not the
+  // static demo persona (still used for Google/Apple, which aren't real auth yet).
+  const isRealAccount = !!token;
   const displayName = isRealAccount ? (name || email || USER.name) : USER.name;
   const initials = isRealAccount
     ? displayName.slice(0, 2).toUpperCase()

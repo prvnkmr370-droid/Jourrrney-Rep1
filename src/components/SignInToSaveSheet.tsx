@@ -1,8 +1,8 @@
 /**
  * The pause shown when someone who is not signed in taps a heart: favourites
  * belong to an account, so it explains that in plain words and offers the
- * email sign-in. It also covers a phone that is "signed in" with Google, Apple
- * or Facebook, which today does not create an account.
+ * email sign-in. It also covers a phone that is "signed in" with Google or Apple,
+ * which today does not create an account.
  */
 import { Modal, Pressable, Text, View } from "react-native";
 import { router } from "expo-router";

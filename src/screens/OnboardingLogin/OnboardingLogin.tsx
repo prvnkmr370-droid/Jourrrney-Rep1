@@ -11,10 +11,13 @@
  * The email path is now real: requestCode()/verifyCode() call
  * journey-backend (see its README for what's real vs. not — the code is
  * genuinely generated/verified server-side, but no email is actually sent
- * yet). Google, Apple, and Facebook sign-in still just mark the user
- * "signed in" locally — those need credentials from each provider's own
- * developer console (a Google OAuth client ID, an Apple Developer Program
- * enrollment, a Facebook App ID) that we don't have yet.
+ * yet). Facebook sign-in is real too: it opens Facebook in the phone's browser
+ * and comes back through app/auth.tsx (see journey-backend's
+ * src/routes/facebookAuth.js); until the Facebook app's keys are set on the
+ * server it says plainly that it isn't available yet. Google and Apple sign-in
+ * still just mark the user "signed in" locally — those need credentials from
+ * each provider's own developer console (a Google OAuth client ID, an Apple
+ * Developer Program enrollment) that we don't have yet.
  */
 import { useState } from "react";
 import { View } from "react-native";
@@ -32,11 +35,13 @@ type Step = "email" | "confirm";
 
 export default function OnboardingLogin({ onDone }: Props) {
   const insets = useSafeAreaInsets();
-  const { signIn, skip, requestCode, verifyCode } = useProfileStore();
+  const { signIn, skip, requestCode, verifyCode, startFacebookLogin } = useProfileStore();
 
   const [step, setStep] = useState<Step>("email");
   const [email, setEmail] = useState("");
   const [sending, setSending] = useState(false);
+  const [busyProvider, setBusyProvider] = useState<Exclude<AuthProvider, null> | null>(null);
+  const [socialError, setSocialError] = useState<string | null>(null);
   const [sendError, setSendError] = useState<string | null>(null);
   const [devCode, setDevCode] = useState<string | null>(null);
   const [verifying, setVerifying] = useState(false);
@@ -50,7 +55,18 @@ export default function OnboardingLogin({ onDone }: Props) {
     onDone();
   };
 
-  const handleSocial = (provider: Exclude<AuthProvider, null>) => {
+  const handleSocial = async (provider: Exclude<AuthProvider, null>) => {
+    if (provider === "facebook") {
+      // Real sign-in: the browser opens, and Facebook sends the person back to
+      // app/auth.tsx, which finishes the sign-in. This screen just waits.
+      if (busyProvider || sending) return;
+      setBusyProvider("facebook");
+      setSocialError(null);
+      const result = await startFacebookLogin();
+      setBusyProvider(null);
+      if (!result.ok) setSocialError(result.error ?? "Couldn't open Facebook — try again.");
+      return;
+    }
     signIn(provider);
     onDone();
   };
@@ -107,7 +123,9 @@ export default function OnboardingLogin({ onDone }: Props) {
           onSocial={handleSocial}
           onSkip={handleSkip}
           loading={sending}
+          busyProvider={busyProvider}
           error={sendError}
+          socialError={socialError}
           topInset={insets.top}
           bottomInset={insets.bottom}
         />

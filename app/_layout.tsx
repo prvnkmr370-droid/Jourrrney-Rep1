@@ -73,6 +73,7 @@ export default function RootLayout() {
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: c.bg } }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="onboarding" />
+          <Stack.Screen name="auth" />
           <Stack.Screen name="location-permission" />
           <Stack.Screen name="(tabs)" />
           <Stack.Screen name="search/results" options={{ presentation: "card" }} />

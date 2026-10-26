@@ -3,7 +3,7 @@
  *
  * Only a registered account can save: that means a real session (a token from
  * the backend, which only an email-code sign-in produces), not a guest, and
- * not the Google / Apple / Facebook buttons, which today only mark the phone
+ * not the Google / Apple buttons, which today only mark the phone
  * as signed in without creating an account.
  */
 import { useEffect } from "react";

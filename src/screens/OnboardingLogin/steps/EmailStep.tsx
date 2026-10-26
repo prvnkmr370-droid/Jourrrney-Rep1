@@ -18,13 +18,17 @@ interface Props {
   onSkip: () => void;
   /** True while requestCode() is in flight against journey-backend. */
   loading?: boolean;
+  /** The social button whose sign-in is being opened (it shows "Opening…" and the others pause). */
+  busyProvider?: Exclude<AuthProvider, null> | null;
   /** Set when requestCode() fails — e.g. the backend isn't reachable. */
   error?: string | null;
+  /** Set when a social sign-in could not start. Shown right under the social buttons, where the person just tapped. */
+  socialError?: string | null;
   topInset: number;
   bottomInset: number;
 }
 
-export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, loading, error, topInset, bottomInset }: Props) {
+export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, loading, busyProvider, error, socialError, topInset, bottomInset }: Props) {
   const canContinue = email.trim().length > 0 && !loading;
 
   return (
@@ -86,19 +90,35 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
         </View>
 
         <View style={{ gap: 12, marginBottom: 24 }}>
-          {SOCIAL_BUTTONS.map((btn) => (
-            <Pressable
-              key={btn.provider}
-              onPress={() => onSocial(btn.provider)}
-              style={{
-                flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 10,
-                borderWidth: 1, borderColor: "rgba(255,255,255,0.25)", borderRadius: 999, paddingVertical: 15,
-              }}
+          {SOCIAL_BUTTONS.map((btn) => {
+            const busy = busyProvider === btn.provider;
+            return (
+              <Pressable
+                key={btn.provider}
+                onPress={() => onSocial(btn.provider)}
+                disabled={!!busyProvider}
+                accessibilityRole="button"
+                accessibilityLabel={busy ? "Opening Facebook" : btn.label}
+                style={{
+                  flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 10,
+                  borderWidth: 1, borderColor: "rgba(255,255,255,0.25)", borderRadius: 999, paddingVertical: 15,
+                  opacity: busyProvider && !busy ? 0.5 : 1,
+                }}
+              >
+                {busy ? <ActivityIndicator color="#FFFFFF" size="small" /> : btn.icon}
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>{busy ? "Opening Facebook…" : btn.label}</Text>
+              </Pressable>
+            );
+          })}
+          {socialError && (
+            <View
+              accessibilityLiveRegion="polite"
+              accessibilityRole="alert"
+              style={{ borderWidth: 1, borderColor: "rgba(248,113,113,0.6)", backgroundColor: "rgba(248,113,113,0.12)", borderRadius: 16, paddingHorizontal: 16, paddingVertical: 12 }}
             >
-              {btn.icon}
-              <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>{btn.label}</Text>
-            </Pressable>
-          ))}
+              <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 14, lineHeight: 21, color: "#FFFFFF" }}>{socialError}</Text>
+            </View>
+          )}
         </View>
 
         <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, lineHeight: 17, color: "rgba(255,255,255,0.45)" }}>

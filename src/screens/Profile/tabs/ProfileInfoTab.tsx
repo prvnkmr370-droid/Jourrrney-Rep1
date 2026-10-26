@@ -2,7 +2,7 @@
  * Ported from the Make prototype's ProfileTab. Bio, Languages, and Lives
  * in are now real — persisted to journey-backend's /profile endpoint for
  * real (email) accounts, via useProfileStore's profile/updateProfile.
- * Google/Apple/Facebook sign-in is still local-only fake auth, so those
+ * Google/Apple sign-in is still local-only fake auth, so those
  * accounts keep showing the static demo persona (Priya Sharma) rather
  * than empty real fields that don't exist for them.
  *
@@ -38,12 +38,12 @@ const NOT_SET = "Not set yet";
 
 export default function ProfileInfoTab() {
   const c = useThemeColors();
-  const { isSignedIn, authProvider, email, profile, updateProfile, fetchProfile } = useProfileStore();
+  const { isSignedIn, token, email, profile, updateProfile, fetchProfile } = useProfileStore();
   const travelStyle = useTravelPreferencesStore((s) => s.travelStyle);
-  // "email" means a real journey-backend account — everything else
-  // (Google/Apple/Facebook) is still local-only fake auth with no real
+  // A saved token means a real journey-backend account (email code or
+  // Facebook) — Google/Apple are still local-only fake auth with no real
   // profile behind it, so those keep the demo persona.
-  const isRealAccount = authProvider === "email";
+  const isRealAccount = !!token;
 
   const [editBio, setEditBio] = useState(false);
   const [draft, setDraft] = useState("");

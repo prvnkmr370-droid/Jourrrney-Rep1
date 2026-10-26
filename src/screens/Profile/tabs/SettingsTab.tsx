@@ -17,7 +17,7 @@
  * Budget tab's tier selector. For a real (email) account, picking a mode
  * also persists to journey-backend via useProfileStore.setThemeMode, so
  * the choice follows the account across reinstalls/devices — for guests
- * and the fake Google/Apple/Facebook accounts it still applies instantly,
+ * and the fake Google/Apple accounts it still applies instantly,
  * just without that cross-device sync (no backend account to save it to).
  */
 import { useState } from "react";
