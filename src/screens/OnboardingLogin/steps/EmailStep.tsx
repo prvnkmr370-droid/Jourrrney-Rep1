@@ -1,17 +1,20 @@
 import { View, Text, Pressable, TextInput, ActivityIndicator, Linking } from "react-native";
 import { X } from "lucide-react-native";
 import { CompassMark } from "@/components/JourrrneyLogo";
-import { FacebookIcon } from "@/components/icons/BrandIcons";
+import { GoogleIcon, FacebookIcon } from "@/components/icons/BrandIcons";
 import { API_BASE_URL } from "@/config/api";
-import type { AuthProvider } from "@/store/useProfileStore";
+import { SOCIAL_NAME, isSocialProvider, type AuthProvider } from "@/store/useProfileStore";
 
-// Only sign-in methods that really work are shown. "Sign in with Google" and "Sign in with Apple" are
-// left out on purpose: they used to just mark the phone as signed in without creating an account, and a
-// button that does nothing real is what app stores reject. When one is wired up for real (see
-// useProfileStore.signIn), add its entry back here: GoogleIcon and AppleIcon are still in BrandIcons.
+// Only sign-in methods that really work are shown. "Sign in with Apple" is left out on purpose: it used
+// to just mark the phone as signed in without creating an account, and a button that does nothing real
+// is what app stores reject. When it is wired up for real, add its entry back here (AppleIcon is still
+// in BrandIcons).
 const SOCIAL_BUTTONS: { provider: Exclude<AuthProvider, null>; label: string; icon: React.ReactNode }[] = [
+  { provider: "google", label: "Sign in with Google", icon: <GoogleIcon size={18} /> },
   { provider: "facebook", label: "Sign in with Facebook", icon: <FacebookIcon size={20} /> },
 ];
+
+const providerName = (provider: Exclude<AuthProvider, null>) => (isSocialProvider(provider) ? SOCIAL_NAME[provider] : provider);
 
 interface Props {
   email: string;
@@ -101,7 +104,7 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
                 onPress={() => onSocial(btn.provider)}
                 disabled={!!busyProvider}
                 accessibilityRole="button"
-                accessibilityLabel={busy ? "Opening Facebook" : btn.label}
+                accessibilityLabel={busy ? `Opening ${providerName(btn.provider)}` : btn.label}
                 style={{
                   flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 10,
                   borderWidth: 1, borderColor: "rgba(255,255,255,0.25)", borderRadius: 999, paddingVertical: 15,
@@ -109,7 +112,7 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
                 }}
               >
                 {busy ? <ActivityIndicator color="#FFFFFF" size="small" /> : btn.icon}
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>{busy ? "Opening Facebook…" : btn.label}</Text>
+                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#FFFFFF" }}>{busy ? `Opening ${providerName(btn.provider)}…` : btn.label}</Text>
               </Pressable>
             );
           })}

@@ -6,6 +6,11 @@ import { useThemeStore, type ThemeMode } from "./useThemeStore";
 
 export type AuthProvider = "google" | "apple" | "facebook" | "email" | "phone" | null;
 
+/** The sign-ins that open the phone's browser and come back through app/auth.tsx. */
+export type SocialProvider = "facebook" | "google";
+export const SOCIAL_NAME: Record<SocialProvider, string> = { facebook: "Facebook", google: "Google" };
+export const isSocialProvider = (value: unknown): value is SocialProvider => value === "facebook" || value === "google";
+
 /** The persisted-on-backend profile fields — all null until the user
  * actually sets them (a brand-new real account starts empty, not with
  * placeholder demo content). themeMode mirrors useThemeStore's own value
@@ -49,15 +54,15 @@ interface ProfileState {
    * to SecureStore. */
   verifyCode: (email: string, code: string, name?: string) => Promise<{ ok: boolean; error?: string }>;
 
-  /** Opens Facebook sign-in in the phone's browser. Only resolves once the browser
-   * has been opened (or says plainly why not, e.g. Facebook isn't set up on the
-   * server yet); the sign-in itself finishes in app/auth.tsx when Facebook sends
-   * the person back to the app. */
-  startFacebookLogin: () => Promise<{ ok: boolean; error?: string }>;
+  /** Opens Facebook or Google sign-in in the phone's browser. Only resolves once the
+   * browser has been opened (or says plainly why not, e.g. the provider isn't set up
+   * on the server yet); the sign-in itself finishes in app/auth.tsx when the provider
+   * sends the person back to the app. */
+  startSocialLogin: (provider: SocialProvider) => Promise<{ ok: boolean; error?: string }>;
 
-  /** Swaps the one-time code Facebook sign-in hands back for a real session, the
-   * same one an email sign-in produces (a token saved to SecureStore). */
-  completeFacebookLogin: (code: string) => Promise<{ ok: boolean; error?: string }>;
+  /** Swaps the one-time code a Facebook or Google sign-in hands back for a real
+   * session, the same one an email sign-in produces (a token saved to SecureStore). */
+  completeSocialLogin: (provider: SocialProvider, code: string) => Promise<{ ok: boolean; error?: string }>;
 
   /** Permanently deletes the signed-in person's account and everything the server
    * keeps about them. Google Play requires that anyone who can create an account in
@@ -83,12 +88,11 @@ interface ProfileState {
    * restored on other devices/reinstalls via fetchProfile. */
   setThemeMode: (mode: ThemeMode) => void;
 
-  /** UI-only for Google/Apple — no real OAuth is wired up for those (that
-   * needs client credentials from each provider's developer console,
-   * which only you can create). Marks the user as signed in locally so
-   * screens can render "Signed in with Google" etc.; swap in real
-   * provider calls at the same call sites once credentials exist.
-   * Facebook is real: see startFacebookLogin / completeFacebookLogin. */
+  /** UI-only for Apple — no real sign-in is wired up for it (that needs an Apple
+   * Developer Program enrollment, which only you can create), and the app doesn't
+   * offer an Apple button. Marks the user as signed in locally; swap in a real
+   * provider call at the same call site once credentials exist.
+   * Facebook and Google are real: see startSocialLogin / completeSocialLogin. */
   signIn: (provider: Exclude<AuthProvider, null>, name?: string) => void;
 
   skip: () => void;
@@ -123,7 +127,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       const savedProvider = await SecureStore.getItemAsync(PROVIDER_KEY).catch(() => null);
       set({
         isSignedIn: true,
-        authProvider: savedProvider === "facebook" ? "facebook" : "email",
+        authProvider: isSocialProvider(savedProvider) ? savedProvider : "email",
         name: user.name,
         email: user.email,
         token,
@@ -178,23 +182,23 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
     }
   },
 
-  startFacebookLogin: async () => {
+  startSocialLogin: async (provider) => {
     try {
-      const res = await fetch(`${API_BASE_URL}/auth/facebook/status`);
+      const res = await fetch(`${API_BASE_URL}/auth/${provider}/status`);
       const status = res.ok ? await res.json() : null;
       if (!status?.configured) {
-        return { ok: false, error: "Facebook sign-in isn't available yet. Please sign in with your email for now." };
+        return { ok: false, error: `${SOCIAL_NAME[provider]} sign-in isn't available yet. Please sign in with your email for now.` };
       }
-      await Linking.openURL(`${API_BASE_URL}/auth/facebook/start`);
+      await Linking.openURL(`${API_BASE_URL}/auth/${provider}/start`);
       return { ok: true };
     } catch {
       return { ok: false, error: "Can't reach the server — check your connection and try again." };
     }
   },
 
-  completeFacebookLogin: async (code) => {
+  completeSocialLogin: async (provider, code) => {
     try {
-      const res = await fetch(`${API_BASE_URL}/auth/facebook/exchange`, {
+      const res = await fetch(`${API_BASE_URL}/auth/${provider}/exchange`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
@@ -203,10 +207,10 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       if (!res.ok) return { ok: false, error: data.error ?? "That sign-in has expired. Please try again." };
 
       await SecureStore.setItemAsync(TOKEN_KEY, data.token);
-      await SecureStore.setItemAsync(PROVIDER_KEY, "facebook").catch(() => {});
+      await SecureStore.setItemAsync(PROVIDER_KEY, provider).catch(() => {});
       set({
         isSignedIn: true,
-        authProvider: "facebook",
+        authProvider: provider,
         name: data.user.name,
         email: data.user.email,
         token: data.token,
@@ -282,7 +286,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
     useThemeStore.getState().setMode(mode);
     const { token } = get();
     // Only real accounts (a saved token: email or Facebook) have a backend
-    // profile to save this to — Google/Apple are still local-only fake auth
+    // profile to save this to — Apple is still local-only fake auth
     // (see signIn below), and a guest has no account at all. The theme still
     // applies immediately either way via the setMode call above; this just
     // adds cross-device persistence on top for real accounts.

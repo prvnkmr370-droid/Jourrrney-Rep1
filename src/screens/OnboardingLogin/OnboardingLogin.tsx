@@ -11,20 +11,19 @@
  * The email path is now real: requestCode()/verifyCode() call
  * journey-backend (see its README for what's real vs. not — the code is
  * genuinely generated/verified server-side, but no email is actually sent
- * yet). Facebook sign-in is real too: it opens Facebook in the phone's browser
- * and comes back through app/auth.tsx (see journey-backend's
- * src/routes/facebookAuth.js); until the Facebook app's keys are set on the
- * server it says plainly that it isn't available yet. Google and Apple sign-in
- * are not offered: they only ever marked the user "signed in" locally, and they
- * need credentials from each provider's own developer console (a Google OAuth
- * client ID, an Apple Developer Program enrollment) that we don't have yet. The
- * buttons come back in EmailStep.tsx once they are real.
+ * yet). Facebook and Google sign-in are real too: each opens the provider's login
+ * in the phone's browser and comes back through app/auth.tsx (see journey-backend's
+ * src/routes/facebookAuth.js and googleAuth.js); until that provider's keys are set
+ * on the server the button says plainly that it isn't available yet. Apple sign-in
+ * is not offered: it only ever marked the user "signed in" locally, and it needs an
+ * Apple Developer Program enrollment we don't have. The button comes back in
+ * EmailStep.tsx once it is real.
  */
 import { useState } from "react";
 import { View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useProfileStore, type AuthProvider } from "@/store/useProfileStore";
+import { useProfileStore, isSocialProvider, SOCIAL_NAME, type AuthProvider } from "@/store/useProfileStore";
 import EmailStep from "./steps/EmailStep";
 import ConfirmCodeStep from "./steps/ConfirmCodeStep";
 
@@ -36,7 +35,7 @@ type Step = "email" | "confirm";
 
 export default function OnboardingLogin({ onDone }: Props) {
   const insets = useSafeAreaInsets();
-  const { signIn, skip, requestCode, verifyCode, startFacebookLogin } = useProfileStore();
+  const { signIn, skip, requestCode, verifyCode, startSocialLogin } = useProfileStore();
 
   const [step, setStep] = useState<Step>("email");
   const [email, setEmail] = useState("");
@@ -57,15 +56,15 @@ export default function OnboardingLogin({ onDone }: Props) {
   };
 
   const handleSocial = async (provider: Exclude<AuthProvider, null>) => {
-    if (provider === "facebook") {
-      // Real sign-in: the browser opens, and Facebook sends the person back to
-      // app/auth.tsx, which finishes the sign-in. This screen just waits.
+    if (isSocialProvider(provider)) {
+      // Real sign-in: the browser opens, and Facebook or Google sends the person back
+      // to app/auth.tsx, which finishes the sign-in. This screen just waits.
       if (busyProvider || sending) return;
-      setBusyProvider("facebook");
+      setBusyProvider(provider);
       setSocialError(null);
-      const result = await startFacebookLogin();
+      const result = await startSocialLogin(provider);
       setBusyProvider(null);
-      if (!result.ok) setSocialError(result.error ?? "Couldn't open Facebook — try again.");
+      if (!result.ok) setSocialError(result.error ?? `Couldn't open ${SOCIAL_NAME[provider]} — try again.`);
       return;
     }
     signIn(provider);
