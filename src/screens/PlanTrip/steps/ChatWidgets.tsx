@@ -6,7 +6,10 @@
  * Source of truth: the "Cards inside the chat" first-screen redesign (preview in
  * docs/layout-preview/plan-trip-chat-options.html). Same questions as before, but
  * answers are photos and big buttons instead of small text chips, and what Tia
- * has understood collects in the editable chips at the top. Typing still works
+ * has understood collects in the editable chips at the top. The trip-style question
+ * (Budget / Comfortable / Premium) is asked as "what type of stay", with the stay
+ * types themselves as the cards; how many people is asked as a number, with a
+ * follow-up for the exact count when it is a family or a group. Typing still works
  * for every question (ChatStep parses it); these are shortcuts.
  *
  * Accessibility rules used across the redesign: every tap target is at least
@@ -21,7 +24,7 @@ import DestImage from "@/components/DestImage";
 import { withOpacity } from "@/components/withOpacity";
 import type { Destination } from "@/data/destinations";
 import type { useThemeColors } from "@/theme/useThemeColors";
-import { STYLE_CONFIGS, type TravelStyle } from "../data";
+import type { TravelStyle } from "../data";
 
 type Colors = ReturnType<typeof useThemeColors>;
 
@@ -31,18 +34,33 @@ export type TripFacet = "dest" | "days" | "people" | "style";
 export const DAY_OPTIONS = [2, 3, 4, 5, 7];
 const MAX_STEPPER_DAYS = 30;
 
-/** The common group sizes, in the words people use. Any other number can still be typed. */
-export const PEOPLE_OPTIONS = [
-  { n: 1, label: "Just me", long: "Just me", Icon: User },
-  { n: 2, label: "2 of us", long: "2 travellers", Icon: Users },
-  { n: 4, label: "Family of 4", long: "4 travellers", Icon: Users },
-  { n: 6, label: "A group of 6", long: "6 travellers", Icon: Users },
+/**
+ * Who is travelling. Just me and 2 of us are one tap. A family or a group asks "how many
+ * in total?" next, starting from a sensible number with the usual sizes one tap away.
+ * Any other number can still be typed.
+ */
+export interface PeopleOption {
+  key: "solo" | "two" | "family" | "group";
+  label: string;
+  /** The count if the option answers on its own. */
+  n: number;
+  /** For family / group: the follow-up question, a starting count and its quick sizes. */
+  ask?: { prompt: string; start: number; chips: number[] };
+  Icon: typeof User;
+}
+
+export const PEOPLE_OPTIONS: PeopleOption[] = [
+  { key: "solo", label: "Just me", n: 1, Icon: User },
+  { key: "two", label: "2 of us", n: 2, Icon: Users },
+  { key: "family", label: "Family", n: 4, Icon: Users, ask: { prompt: "How many of you are in the family, in all?", start: 4, chips: [3, 4, 5, 6] } },
+  { key: "group", label: "A group", n: 8, Icon: Users, ask: { prompt: "How many of you are in the group, in all?", start: 8, chips: [6, 8, 10, 12] } },
 ];
 
-export const peopleLabel = (n: number) => PEOPLE_OPTIONS.find((p) => p.n === n)?.label ?? `${n} people`;
-export const peopleLong = (n: number) => PEOPLE_OPTIONS.find((p) => p.n === n)?.long ?? `${n} travellers`;
+export const peopleLabel = (n: number) => (n === 1 ? "Just me" : n === 2 ? "2 of us" : `${n} people`);
+export const peopleLong = (n: number) => (n === 1 ? "Just me" : `${n} travellers`);
 
-export const STYLE_SHORT: Record<TravelStyle, string> = { backpacker: "Budget", comfortable: "Comfort", premium: "Premium" };
+/** What a stay type is called when the traveller typed it ("a hostel", "a resort") or the place has no stay types of its own. */
+export const STAY_GENERIC: Record<TravelStyle, string> = { backpacker: "Budget stay", comfortable: "Hotel", premium: "Luxury stay" };
 
 const rupees = (n: number) => `₹${n.toLocaleString("en-IN")}`;
 const plainName = (d: Destination) => d.name.replace(/\s*\([^)]*\)/g, "").trim();
@@ -54,7 +72,7 @@ export function TripChips({ values, onEdit, c }: { values: Record<TripFacet, str
     { k: "dest", empty: "Where?", word: "Place" },
     { k: "days", empty: "Days?", word: "Days" },
     { k: "people", empty: "Who?", word: "Travellers" },
-    { k: "style", empty: "Style?", word: "Trip style" },
+    { k: "style", empty: "Stay?", word: "Type of stay" },
   ];
   return (
     <View
@@ -143,12 +161,15 @@ export function PopularCards({ places, onPick, onSurprise, c }: { places: Destin
   );
 }
 
-/** Big − and + with the number between; the usual day counts are one tap below. */
-export function DaysStepper({ initial, onConfirm, c }: { initial: number; onConfirm: (n: number) => void; c: Colors }) {
+/** Big − and + with the number between; the usual counts are one tap below. Used for days and for how many people. */
+export function CountStepper({
+  initial, unit, chips, max = MAX_STEPPER_DAYS, onConfirm, c,
+}: { initial: number; unit: [string, string]; chips: number[]; max?: number; onConfirm: (n: number) => void; c: Colors }) {
   const [n, setN] = useState(initial);
+  const word = (v: number) => (v === 1 ? unit[0] : unit[1]);
   const round = (label: string, delta: number, Icon: typeof Plus) => (
     <Pressable
-      onPress={() => setN((v) => Math.max(1, Math.min(MAX_STEPPER_DAYS, v + delta)))}
+      onPress={() => setN((v) => Math.max(1, Math.min(max, v + delta)))}
       accessibilityRole="button"
       accessibilityLabel={label}
       style={{ width: 52, height: 52, borderRadius: 26, alignItems: "center", justifyContent: "center", borderWidth: 1.5, borderColor: c.border }}
@@ -160,86 +181,94 @@ export function DaysStepper({ initial, onConfirm, c }: { initial: number; onConf
     <View style={{ gap: 10 }}>
       <View
         accessible
-        accessibilityLabel={`${n} ${n === 1 ? "day" : "days"}`}
+        accessibilityLabel={`${n} ${word(n)}`}
         style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 18, padding: 12, borderRadius: 18, backgroundColor: c.surface, borderWidth: 1, borderColor: c.borderSoft }}
       >
-        {round("One day fewer", -1, Minus)}
+        {round(`One ${unit[0]} fewer`, -1, Minus)}
         <View style={{ minWidth: 96, alignItems: "center" }}>
           <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 34, lineHeight: 40, color: c.textPrimary }}>{n}</Text>
-          <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textSecondary }}>{n === 1 ? "day" : "days"}</Text>
+          <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 14, color: c.textSecondary }}>{word(n)}</Text>
         </View>
-        {round("One day more", 1, Plus)}
+        {round(`One ${unit[0]} more`, 1, Plus)}
       </View>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-        {DAY_OPTIONS.map((d) => (
+        {chips.map((d) => (
           <Pressable
             key={d}
             onPress={() => onConfirm(d)}
             accessibilityRole="button"
-            accessibilityLabel={`${d} days`}
+            accessibilityLabel={`${d} ${word(d)}`}
             style={{ minHeight: 44, paddingHorizontal: 16, borderRadius: 22, alignItems: "center", justifyContent: "center", borderWidth: 1.5, borderColor: n === d ? c.gold : c.borderSoft, backgroundColor: n === d ? withOpacity(c.gold, 0.16) : c.surface }}
           >
-            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{d} days</Text>
+            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.textPrimary }}>{d} {word(d)}</Text>
           </Pressable>
         ))}
       </View>
       <Pressable
         onPress={() => onConfirm(n)}
         accessibilityRole="button"
-        accessibilityLabel={`Continue with ${n} ${n === 1 ? "day" : "days"}`}
+        accessibilityLabel={`Continue with ${n} ${word(n)}`}
         style={{ minHeight: 52, borderRadius: 14, alignItems: "center", justifyContent: "center", backgroundColor: c.gold, paddingHorizontal: 16 }}
       >
-        <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: "#0E1424" }}>Continue with {n} {n === 1 ? "day" : "days"}</Text>
+        <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: "#0E1424" }}>Continue with {n} {word(n)}</Text>
       </Pressable>
     </View>
   );
 }
 
-/** Four group sizes as cards, two across. */
-export function PeopleCards({ onPick, c }: { onPick: (n: number) => void; c: Colors }) {
+/** Who is travelling, as four cards two across. A family or a group asks for the exact number next. */
+export function PeopleCards({ onPick, c }: { onPick: (o: PeopleOption) => void; c: Colors }) {
   return (
     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-      {PEOPLE_OPTIONS.map(({ n, label, Icon }) => (
+      {PEOPLE_OPTIONS.map((o) => (
         <Pressable
-          key={n}
-          onPress={() => onPick(n)}
+          key={o.key}
+          onPress={() => onPick(o)}
           accessibilityRole="button"
-          accessibilityLabel={label}
+          accessibilityLabel={o.ask ? `${o.label}. I will ask how many` : o.label}
           style={{ flexBasis: "47%", flexGrow: 1, minHeight: 76, borderRadius: 16, padding: 8, alignItems: "center", justifyContent: "center", gap: 4, backgroundColor: c.surface, borderWidth: 1.5, borderColor: c.borderSoft }}
         >
-          <Icon color={c.gold} size={22} />
-          <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, lineHeight: 20, textAlign: "center", color: c.textPrimary }}>{label}</Text>
+          <o.Icon color={c.gold} size={22} />
+          <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, lineHeight: 20, textAlign: "center", color: c.textPrimary }}>{o.label}</Text>
         </Pressable>
       ))}
     </View>
   );
 }
 
-/** The three ways to travel, each with what it costs a day for this place. */
-export function StyleCards({ perDay, onPick, placeName, c }: { perDay: (id: TravelStyle) => number; onPick: (id: TravelStyle) => void; placeName: string; c: Colors }) {
+/** One kind of stay to choose from: what it is, what a night costs, and a few real names. */
+export interface StayOption {
+  style: TravelStyle;
+  emoji: string;
+  title: string;
+  price: string;
+  detail: string;
+}
+
+/** The kinds of stay as cards. Each one also sets how the trip is priced and planned. */
+export function StayCards({ options, note, onPick, c }: { options: StayOption[]; note: string; onPick: (o: StayOption) => void; c: Colors }) {
   return (
     <View style={{ gap: 10 }}>
-      {STYLE_CONFIGS.map((sc) => (
+      {options.map((o) => (
         <Pressable
-          key={sc.id}
-          onPress={() => onPick(sc.id)}
+          key={o.style}
+          onPress={() => onPick(o)}
           accessibilityRole="button"
-          accessibilityLabel={`${sc.label}. ${sc.subtitle}. About ${rupees(perDay(sc.id))} a day for each person`}
+          accessibilityLabel={`${o.title}. ${o.price}. ${o.detail}`}
           style={{ minHeight: 84, borderRadius: 16, paddingHorizontal: 14, paddingVertical: 10, flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: c.surface, borderWidth: 1.5, borderColor: c.borderSoft }}
         >
-          <Text style={{ fontSize: 28, width: 40, textAlign: "center" }}>{sc.emoji}</Text>
+          <Text style={{ fontSize: 28, width: 40, textAlign: "center" }}>{o.emoji}</Text>
           <View style={{ flex: 1, minWidth: 0 }}>
-            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15.5, lineHeight: 21, color: c.textPrimary }}>{sc.label}</Text>
-            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12.5, lineHeight: 18, color: c.textSecondary }}>{sc.subtitle}</Text>
-          </View>
-          <View style={{ alignItems: "flex-end" }}>
-            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.gold }}>{rupees(perDay(sc.id))}</Text>
-            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: c.textSecondary }}>a day each</Text>
+            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 15.5, lineHeight: 21, color: c.textPrimary }}>{o.title}</Text>
+            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, lineHeight: 19, color: c.gold }}>{o.price}</Text>
+            {o.detail ? (
+              <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12.5, lineHeight: 18, color: c.textSecondary }}>{o.detail}</Text>
+            ) : null}
           </View>
         </Pressable>
       ))}
       <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12.5, lineHeight: 18, color: c.textSecondary, paddingHorizontal: 4 }}>
-        Costs are typical for {placeName}, per person. An estimate, not a quote.
+        {note}
       </Text>
     </View>
   );

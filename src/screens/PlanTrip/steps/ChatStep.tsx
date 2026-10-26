@@ -50,7 +50,7 @@ import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, MAX_TRIP_DAYS, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
-import { TripChips, PopularCards, DaysStepper, PeopleCards, StyleCards, SummaryCard, peopleLabel, peopleLong, STYLE_SHORT, type TripFacet } from "./ChatWidgets";
+import { TripChips, PopularCards, CountStepper, PeopleCards, StayCards, SummaryCard, peopleLabel, peopleLong, STAY_GENERIC, DAY_OPTIONS, type TripFacet, type PeopleOption, type StayOption } from "./ChatWidgets";
 
 interface Chip {
   label: string;
@@ -131,9 +131,9 @@ function surprisePick(): Destination {
 // checked as whole words so "comfortable" doesn't also fire on something
 // like "uncomfortable".
 const STYLE_KEYWORDS: Record<TravelStyle, RegExp> = {
-  backpacker: /\b(budget|backpacker|backpacking)\b/,
-  comfortable: /\bcomfortable\b/,
-  premium: /\b(premium|luxury|luxurious)\b/,
+  backpacker: /\b(budget|backpacker|backpacking|hostel|hostels|dorm|dorms|guesthouse|guesthouses)\b/,
+  comfortable: /\b(comfortable|mid-?range|hotel|hotels)\b/,
+  premium: /\b(premium|luxury|luxurious|resort|resorts)\b/,
 };
 
 const styleKeywordMatch = (lower: string) =>
@@ -229,13 +229,16 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // whether every answer is in and Tia is waiting for "Build my trip".
   const [editing, setEditing] = useState<TripFacet | null>(null);
   const [ready, setReady] = useState(false);
+  // Set while Tia is asking "how many of you in all?" after Family or A group.
+  const [countFor, setCountFor] = useState<PeopleOption | null>(null);
   const [inputHeight, setInputHeight] = useState(20);
   const [sending, setSending] = useState(false);
-  const collected = useRef<{ legs: Leg[]; activeLegIndex: number; people: number | null; style: TravelStyle | null; interests: string[] }>({
+  const collected = useRef<{ legs: Leg[]; activeLegIndex: number; people: number | null; style: TravelStyle | null; stayType: string | null; interests: string[] }>({
     legs: preselectedDestination ? [{ destination: preselectedDestination, days: null }] : [],
     activeLegIndex: 0,
     people: null,
     style: null,
+    stayType: null,
     interests: [],
   });
   const scrollRef = useRef<ScrollView>(null);
@@ -252,13 +255,13 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   // these just ask in words and move the typed-reply parsing to the right question.
   const askTravelers = () => {
     setPhase("travelers");
-    pushAi("Who's coming along?");
+    pushAi("How many people are travelling?");
     scrollToEnd();
   };
 
   const askStyle = () => {
     setPhase("style");
-    pushAi("What kind of trip would you like?");
+    pushAi("What type of stay are you looking for?");
     scrollToEnd();
   };
 
@@ -372,14 +375,28 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const selectTravelers = (n: number) => {
     collected.current.people = n;
     pushUser(peopleLong(n));
+    setCountFor(null);
     setEditing(null);
     proceedFromCollected();
   };
 
-  const selectStyle = (style: TravelStyle) => {
-    collected.current.style = style;
-    const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
-    pushUser(sc.label);
+  // A card answers on its own (Just me, 2 of us) or, for a family or a group, asks for the exact number next.
+  const pickPeople = (o: PeopleOption) => {
+    if (!o.ask) {
+      selectTravelers(o.n);
+      return;
+    }
+    pushUser(o.label);
+    pushAi(o.ask.prompt);
+    setCountFor(o);
+    scrollToEnd();
+  };
+
+  // The stay type decides how the trip is priced and planned (budget stay, hotel, luxury stay).
+  const selectStay = (o: StayOption) => {
+    collected.current.style = o.style;
+    collected.current.stayType = o.title;
+    pushUser(o.title);
     setEditing(null);
     proceedFromCollected();
   };
@@ -405,6 +422,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   const startEdit = (facet: TripFacet) => {
     if (sending) return;
     setReady(false);
+    setCountFor(null);
     const { legs } = collected.current;
     if (facet === "days" && legs.length > 1) {
       // Which stop "change the days" means is ambiguous, so ask each stop's days again.
@@ -425,10 +443,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       pushAi("No problem. How many days?");
     } else if (facet === "people") {
       setPhase("travelers");
-      pushAi("No problem. Who's coming along?");
+      pushAi("No problem. How many people are travelling?");
     } else {
       setPhase("style");
-      pushAi("No problem. What kind of trip would you like?");
+      pushAi("No problem. What type of stay are you looking for?");
     }
     scrollToEnd();
   };
@@ -439,9 +457,11 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       activeLegIndex: 0,
       people: null,
       style: null,
+      stayType: null,
       interests: [],
     };
     building.current = false;
+    setCountFor(null);
     setMessages([{ id: nextId(), sender: "ai", text: greeting() }]);
     setPhase(preselectedDestination ? "days" : "destination");
     setEditing(null);
@@ -495,7 +515,8 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     const styleHit = styleKeywordMatch(text.toLowerCase());
     if (styleHit && styleHit.id !== collected.current.style) {
       collected.current.style = styleHit.id;
-      changes.push(styleHit.label);
+      collected.current.stayType = null;
+      changes.push(STAY_GENERIC[styleHit.id].toLowerCase());
     }
 
     return changes;
@@ -596,7 +617,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
 
         if (intent?.destination) {
           if (intent.people) collected.current.people = intent.people;
-          if (intent.style) collected.current.style = intent.style;
+          if (intent.style) {
+            collected.current.style = intent.style;
+            collected.current.stayType = null;
+          }
           if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
           collected.current.legs = [{ destination: intent.destination, days: intent.days ?? previousSingleDays() }];
           collected.current.activeLegIndex = 0;
@@ -730,7 +754,10 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
 
     if (intent?.destination) {
       if (intent.people) collected.current.people = intent.people;
-      if (intent.style) collected.current.style = intent.style;
+      if (intent.style) {
+            collected.current.style = intent.style;
+            collected.current.stayType = null;
+          }
       if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
       collected.current.legs = [{ destination: intent.destination, days: intent.days ?? previousSingleDays() }];
       collected.current.activeLegIndex = 0;
@@ -836,16 +863,25 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     dest: legs.length > 0 ? legs.map((l) => plainName(l.destination)).join(" → ") : null,
     days: allDays ? `${totalDays} day${totalDays === 1 ? "" : "s"}` : null,
     people: people ? peopleLabel(people) : null,
-    style: style ? STYLE_SHORT[style] : null,
+    style: style ? collected.current.stayType ?? STAY_GENERIC[style] : null,
   };
-  const openQuestion: TripFacet | "ready" | null =
-    editing ?? (ready ? "ready" : legs.length === 0 ? "dest" : !allDays ? "days" : !people ? "people" : !style ? "style" : null);
-  // The typical cost a day for one person in the chosen style, averaged over the stops.
-  const perDayFor = (id: TravelStyle) => {
-    const tier = STYLE_CONFIGS.find((s) => s.id === id)!.budgetTier;
-    const prices = legs.map((l) => (l.destination.budgetBreakdown.find((b) => b.tier === tier) ?? l.destination.budgetBreakdown[1]).perDayPerPerson);
-    return prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
-  };
+  const openQuestion: TripFacet | "count" | "ready" | null =
+    countFor ? "count" : editing ?? (ready ? "ready" : legs.length === 0 ? "dest" : !allDays ? "days" : !people ? "people" : !style ? "style" : null);
+  // The three kinds of stay to choose from. A place with three stay types of its own shows them
+  // (real names and prices); every other place, and any multi-stop trip, shows the app's typical
+  // ranges for a hostel or guesthouse, a hotel, and a luxury stay, and says so.
+  const nightly = (price: string) => (/night/i.test(price) ? price : `${price} a night`);
+  const stayEmoji = ["🛏️", "🏨", "💎"];
+  const ownStays = legs.length === 1 && legs[0].destination.accommodation.length >= 3 ? legs[0].destination.accommodation : null;
+  const stayOptions: StayOption[] = STYLE_CONFIGS.map((sc, i) => {
+    const own = ownStays?.[i];
+    if (own) return { style: sc.id, emoji: stayEmoji[i], title: own.type, price: nightly(own.priceRange), detail: own.examples.slice(0, 3).join(" · ") };
+    const [price, detail] = sc.stayDetail.split(/\.\s+/);
+    return { style: sc.id, emoji: stayEmoji[i], title: sc.stay, price: nightly(price), detail: detail ?? "" };
+  });
+  const stayNote = ownStays
+    ? `Prices are per room per night in ${plainName(legs[0].destination)}. Each one also sets what the rest of the trip costs.`
+    : "Typical prices across India. I'll suggest real places in your plan.";
   // The same sum the plan itself uses (a day's cost × days × travellers, per stop), so the estimate here matches the plan.
   const estimate =
     people && style
@@ -933,22 +969,25 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           <View style={{ marginTop: 4 }}>
             {openQuestion === "dest" && <PopularCards places={POPULAR} onPick={(d) => selectDestination(d, null)} onSurprise={surprise} c={c} />}
             {openQuestion === "days" && (
-              <DaysStepper
+              <CountStepper
                 key={`days-${collected.current.activeLegIndex}-${editing ?? ""}`}
                 initial={legs[collected.current.activeLegIndex]?.days ?? 3}
+                unit={["day", "days"]}
+                chips={DAY_OPTIONS}
                 onConfirm={selectDays}
                 c={c}
               />
             )}
-            {openQuestion === "people" && <PeopleCards onPick={selectTravelers} c={c} />}
-            {openQuestion === "style" && (
-              <StyleCards perDay={perDayFor} onPick={selectStyle} placeName={legs.map((l) => plainName(l.destination)).join(" and ")} c={c} />
+            {openQuestion === "people" && <PeopleCards onPick={pickPeople} c={c} />}
+            {openQuestion === "count" && countFor?.ask && (
+              <CountStepper key={`count-${countFor.key}`} initial={countFor.ask.start} unit={["person", "people"]} chips={countFor.ask.chips} max={60} onConfirm={selectTravelers} c={c} />
             )}
+            {openQuestion === "style" && <StayCards options={stayOptions} note={stayNote} onPick={selectStay} c={c} />}
             {openQuestion === "ready" && people && style && (
               <SummaryCard
                 image={legs[0].destination.image}
                 title={legs.length > 1 ? chipValues.dest ?? "" : placeAndState(legs[0].destination)}
-                meta={`${totalDays} day${totalDays === 1 ? "" : "s"} · ${peopleLong(people)} · ${STYLE_CONFIGS.find((s) => s.id === style)!.label}`}
+                meta={`${totalDays} day${totalDays === 1 ? "" : "s"} · ${peopleLong(people)} · ${collected.current.stayType ?? STAY_GENERIC[style]}`}
                 total={estimate}
                 onBuild={buildTrip}
                 onRestart={restart}
