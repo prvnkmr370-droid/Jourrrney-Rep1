@@ -376,6 +376,7 @@ export default function GettingThere({ place, gateways: g, origin, onChangeOrigi
     const operator =
       first.operator === "government" ? { text: `Government${first.operatorName ? ` · ${first.operatorName}` : ""}`, tone: "teal" as Tone }
       : first.operator === "private" ? { text: "Private operators", tone: "grey" as Tone }
+      : first.operator === "unknown" ? undefined
       : { text: `Government${first.operatorName ? ` (${first.operatorName})` : ""} and private`, tone: "teal" as Tone };
     return (
       <>
@@ -411,7 +412,7 @@ export default function GettingThere({ place, gateways: g, origin, onChangeOrigi
                 key={b.name}
                 title={b.name}
                 meta={`${fmtKm(b.km)} · about ${fmtTime(b.minutes)} by road`}
-                tag={b.operator === "private" ? { text: "Private operators", tone: "grey" } : { text: `Government${b.operatorName ? ` · ${b.operatorName}` : ""}`, tone: "teal" }}
+                tag={b.operator === "private" ? { text: "Private operators", tone: "grey" } : b.operator === "unknown" ? undefined : { text: `Government${b.operatorName ? ` · ${b.operatorName}` : ""}`, tone: "teal" }}
                 button={words.button}
                 onPress={() => ask({ mode: "bus", label: busSearchName(b.name), bookingUrl: b.bookingUrl, operatorName: b.operatorName })}
               />
@@ -460,7 +461,9 @@ export default function GettingThere({ place, gateways: g, origin, onChangeOrigi
       {tab === "air" ? airTab() : tab === "rail" ? railTab() : busTab()}
 
       <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 18, color: c.textSecondary }}>
-        Distances are by road and approximate. Checked {g.checked}.
+        {g.basis === "mapdata"
+          ? `Distances are by road and approximate. Worked out from open map, railway and airport data (${g.checked}), not checked place by place. Please check before you travel.`
+          : `Distances are by road and approximate. Checked ${g.checked}.`}
       </Text>
 
       <LookUpSheet target={target} origin={origin} onClose={() => setTarget(null)} />

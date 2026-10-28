@@ -16,6 +16,13 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(here, "..", "..");
 // An optional file path lets the checker be tested on a deliberately broken file.
 const { GATEWAYS } = await import(path.resolve(process.argv[2] ?? path.join(root, "src", "data", "gateways.ts")));
+// The entries worked out from open data (src/data/gatewaysBulk.ts) get the same checks.
+let bulk = null;
+if (!process.argv[2]) {
+  try { bulk = await import(path.join(root, "src", "data", "gatewaysBulk.ts")); } catch (e) { console.log("(no gatewaysBulk.ts to check)"); }
+}
+const entries = [...Object.entries(GATEWAYS), ...(bulk ? bulk.BULK_IDS.map((id) => [id, bulk.getBulkGateways(id)]) : [])];
+for (const id of bulk?.BULK_IDS ?? []) if (id in GATEWAYS) console.log(`  note: ${id} has both a reviewed and a generated entry; the reviewed one is used`);
 
 const destSrc = fs.readFileSync(path.join(root, "src", "data", "destinations.ts"), "utf8");
 const knownIds = new Set([...destSrc.matchAll(/\n    id: "([a-z0-9_-]+)"/g)].map((m) => m[1]));
@@ -47,7 +54,7 @@ function nearestFirst(id, kind, list) {
 }
 
 let hubs = 0;
-for (const [id, g] of Object.entries(GATEWAYS)) {
+for (const [id, g] of entries) {
   if (!knownIds.has(id)) err(id, "no destination with this id in destinations.ts");
   if (!/^[A-Z][a-z]{2} 20\d\d$/.test(g.checked ?? "")) err(id, `checked must look like "Oct 2026" (got ${JSON.stringify(g.checked)})`);
   if (!Array.isArray(g.air) || !Array.isArray(g.rail) || !Array.isArray(g.bus)) { err(id, "air, rail and bus must all be arrays (use [] when empty)"); continue; }
@@ -64,7 +71,7 @@ for (const [id, g] of Object.entries(GATEWAYS)) {
 
   g.rail.forEach((s, i) => {
     hubs++; checkHub(id, "rail", s, i);
-    if (!/^[A-Z]{2,5}$/.test(s.code ?? "")) err(id, `rail[${i}] ${s.name}: code must be 2 to 5 capital letters (got ${JSON.stringify(s.code)})`);
+    if (!/^[A-Z]{1,5}$/.test(s.code ?? "")) err(id, `rail[${i}] ${s.name}: code must be 1 to 5 capital letters (got ${JSON.stringify(s.code)})`);
   });
   nearestFirst(id, "rail", g.rail);
   if (new Set(g.rail.map((s) => s.code)).size !== g.rail.length) err(id, "the same station is listed twice");
@@ -77,7 +84,7 @@ for (const [id, g] of Object.entries(GATEWAYS)) {
 
   g.bus.forEach((b, i) => {
     hubs++; checkHub(id, "bus", b, i);
-    if (!["government", "private", "both"].includes(b.operator)) err(id, `bus[${i}] ${b.name}: operator must be government, private or both`);
+    if (!["government", "private", "both", "unknown"].includes(b.operator)) err(id, `bus[${i}] ${b.name}: operator must be government, private, both or unknown`);
     if (b.bookingUrl !== undefined && !/^https:\/\/[^\s]+$/.test(b.bookingUrl)) err(id, `bus[${i}] ${b.name}: bookingUrl must be an https address`);
     if (b.goesTo) {
       if (b.goesTo.length > 5) err(id, `bus[${i}] ${b.name}: more than 5 places in goesTo`);
@@ -92,7 +99,7 @@ for (const [id, g] of Object.entries(GATEWAYS)) {
   for (const [k, v] of Object.entries(g.fromHub ?? {})) if (!nonEmpty(v)) err(id, `fromHub.${k} is empty`);
 }
 
-console.log(`${Object.keys(GATEWAYS).length} places, ${hubs} hubs checked.`);
+console.log(`${entries.length} places (${Object.keys(GATEWAYS).length} reviewed, ${bulk ? bulk.BULK_IDS.length : 0} generated), ${hubs} hubs checked.`);
 for (const w of warnings) console.log("  warning:", w);
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):`);

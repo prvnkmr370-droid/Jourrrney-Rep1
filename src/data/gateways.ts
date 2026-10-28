@@ -54,8 +54,8 @@ export interface GatewayBus {
   area?: string;
   km: number;
   minutes: number;
-  /** Who runs the buses from here. */
-  operator: "government" | "private" | "both";
+  /** Who runs the buses from here. "unknown" when a map lists the station but no source says who runs it. */
+  operator: "government" | "private" | "both" | "unknown";
   /** The state transport corporation, e.g. "KSRTC". */
   operatorName?: string;
   /** The official booking page of that corporation, if there is one. */
@@ -66,8 +66,13 @@ export interface GatewayBus {
 }
 
 export interface PlaceGateways {
-  /** When a person last checked this entry, e.g. "Oct 2026". */
+  /** When this entry was last checked, e.g. "Oct 2026". */
   checked: string;
+  /**
+   * "reviewed": a person checked every hub against current sources (the default).
+   * "mapdata": worked out from open data (see gatewaysBulk.ts) and shown with a plain warning.
+   */
+  basis?: "reviewed" | "mapdata";
   /** The nearest first. */
   air: GatewayAir[];
   rail: GatewayRail[];
@@ -391,6 +396,7 @@ export const GATEWAYS: Record<string, PlaceGateways> = {
   },
 };
 
-export function getGateways(destId: string): PlaceGateways | undefined {
+/** The entries a person reviewed by hand. Use getGateways() from placeGateways.ts to also get the generated ones. */
+export function getReviewedGateways(destId: string): PlaceGateways | undefined {
   return GATEWAYS[destId];
 }

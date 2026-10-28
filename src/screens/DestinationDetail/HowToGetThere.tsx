@@ -28,7 +28,7 @@ import { getJourneyGuide } from "@/data/journeyGuides";
 import { localModes, personalise, reachModes, sightText, type LocalIcon, type PersonalMode, type ReachKind, type StepIcon } from "@/utils/howToReach";
 import { getLocationPermission, useDetectLocation, type DetectResult } from "@/hooks/useDetectLocation";
 import { useOriginStore } from "@/store/useOriginStore";
-import { getGateways } from "@/data/gateways";
+import { getGateways } from "@/data/placeGateways";
 import GettingThere from "./tabs/how-to-reach/GettingThere";
 import { estimateRouteInfoLocally, haversineKm } from "./tabs/how-to-reach/localRouteEstimate";
 import type { RouteInfoResult } from "./tabs/how-to-reach/routeInfo";
