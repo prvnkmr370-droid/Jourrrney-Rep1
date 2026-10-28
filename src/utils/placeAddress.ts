@@ -5,7 +5,7 @@
  * (data/destinationSourceAddresses.ts). `DESTINATION_ADDRESSES` holds full addresses (with a postal code where one was
  * confirmed) that were looked up and checked against each place's name and
  * position (see data/destinationAddresses.ts for where they come from). Everything else shows only what we know for
- * sure: the place's name and its state. The Map button works either way, since
+ * sure: the place's name and its state. The Directions button works either way, since
  * Google Maps finds a place from its name and state.
  */
 import type { Destination } from "@/data/destinations";
@@ -34,6 +34,11 @@ export function placeAddress(d: Destination): PlaceAddress {
   if (found) return { text: found, verified: true, mapQuery: `${name}, ${found}` };
   if (official) return { text: official[0], verified: true, mapQuery: `${name}, ${official[0]}` };
   return { text: `${name}, ${state}`, verified: false, mapQuery: `${name}, ${state}` };
+}
+
+/** Opens Google Maps with directions to the place (the app if it is installed, else the browser). */
+export function directionsUrl(query: string): string {
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query)}`;
 }
 
 /** Opens the place itself in Google Maps (the app if it is installed, else the browser). */

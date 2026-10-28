@@ -1,7 +1,7 @@
 /**
  * Source of truth: Figma "1.2.1 Destination Detail — Overview" for the
  * hero. The page below it is no longer a set of tabs: a destination's home
- * page is the photo, the open status with the best time to visit, the address with a Map button, Directions, About <place>
+ * page is the photo, the open status with the best time to visit, the address with a Directions button, About <place>
  * (the description, and under "Read more" the Top highlights), Places Near, How to get there (the ways to reach the place, written out; a button opens the route
  * planner page), Hotels (a couple of them, with a button for all), then rows that each open their own page (What to know before I go, Is it safe? — see
  * pages/DestinationPages.tsx), "A day at <place>" (the ready-made day that used
@@ -17,12 +17,10 @@ import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ArrowLeft, Star, Images, MoveHorizontal, ChevronLeft, ChevronRight, Heart, Share2 } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
-import { DESTINATION_COORDS } from "@/data/destinationCoords";
-import { DESTINATION_COORDS_GEOCODED } from "@/data/destinationCoordsGeocoded";
 import { useFavourites } from "@/hooks/useFavourites";
 import SignInToSaveSheet from "@/components/SignInToSaveSheet";
-import { QuickFacts, AddressRow, ActionRow, ExploreRows, type HubTarget } from "./HubSections";
-import { placeAddress, mapSearchUrl } from "@/utils/placeAddress";
+import { QuickFacts, AddressRow, ExploreRows, type HubTarget } from "./HubSections";
+import { placeAddress, directionsUrl } from "@/utils/placeAddress";
 import { useRecentlyViewedStore } from "@/store/useRecentlyViewedStore";
 import { readJson, writeJson } from "@/store/deviceStorage";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
@@ -70,7 +68,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     markViewed(d.id);
   }, [d.id, markViewed]);
 
-  // Heart (favourite), Share and Directions. Only a registered, signed-in
+  // Heart (favourite) and Share. Only a registered, signed-in
   // account can favourite a place (see useFavourites); anyone else gets a short
   // "sign in to save" sheet, and the place is saved for them as soon as they
   // come back signed in.
@@ -113,18 +111,11 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
     }
   };
   const address = placeAddress(d);
-  const onOpenMap = async () => {
-    try {
-      await Linking.openURL(mapSearchUrl(address.mapQuery));
-    } catch {
-      Alert.alert("Couldn't open maps", "Please check that a maps app or browser is available, then try again.");
-    }
-  };
+  // One Directions button: it opens the place in the maps app in directions mode, found by name and address
+  // (the stored coordinates are only approximate for many places, the name and address find the place itself).
   const onDirections = async () => {
-    const coords = DESTINATION_COORDS[d.id] ?? DESTINATION_COORDS_GEOCODED[d.id];
-    const destination = coords ? `${coords.lat},${coords.lon}` : encodeURIComponent(`${placeName}, ${stateName}`);
     try {
-      await Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${destination}`);
+      await Linking.openURL(directionsUrl(address.mapQuery));
     } catch {
       Alert.alert("Couldn't open maps", "Please check that a maps app or browser is available, then try again.");
     }
@@ -448,8 +439,7 @@ export default function DestinationDetail({ destination: d, onBack, onPlanTrip }
         </View>
 
         <QuickFacts destination={d} />
-        <AddressRow address={address.text} placeName={placeName} onOpenMap={onOpenMap} />
-        <ActionRow placeName={placeName} onDirections={onDirections} />
+        <AddressRow address={address.text} placeName={placeName} onDirections={onDirections} />
         <AboutIntro destination={d} />
         {/* Places Near sits directly under the About block (and its Top highlights).
             It is plain content, always visible: "Show less" folds only the

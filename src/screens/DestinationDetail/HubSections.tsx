@@ -18,7 +18,7 @@
  * 130% font scale) instead of being cut off.
  */
 import { Pressable, Text, View, useWindowDimensions } from "react-native";
-import { Backpack, BedDouble, Bell, Calendar, CalendarClock, ChevronRight, Clock, Map as MapIcon, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
+import { Backpack, BedDouble, Bell, Calendar, CalendarClock, ChevronRight, Clock, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
@@ -151,7 +151,7 @@ export function QuickFacts({ destination: d }: { destination: Destination }) {
  * the browser). The text is a verified street address where we have one, and
  * otherwise the place's name and state, which is all we know for sure.
  */
-export function AddressRow({ address, placeName, onOpenMap }: { address: string; placeName: string; onOpenMap: () => void }) {
+export function AddressRow({ address, placeName, onDirections }: { address: string; placeName: string; onDirections: () => void }) {
   const c = useThemeColors();
   return (
     <View style={{ paddingHorizontal: 16, marginTop: 10, flexDirection: "row", alignItems: "center", gap: 10 }}>
@@ -162,33 +162,14 @@ export function AddressRow({ address, placeName, onOpenMap }: { address: string;
         </Text>
       </View>
       <Pressable
-        onPress={onOpenMap}
-        accessibilityRole="button"
-        accessibilityLabel={`Open ${placeName} in your maps app`}
-        android_ripple={{ color: withOpacity(c.primary, 0.12) }}
-        style={{ minHeight: 44, minWidth: 84, paddingHorizontal: 12, borderRadius: 22, borderWidth: 1.5, borderColor: c.border, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6 }}
-      >
-        <MapIcon color={c.primary} size={17} />
-        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, color: c.textPrimary }}>Map</Text>
-      </Pressable>
-    </View>
-  );
-}
-
-/** Directions, as a compact button (44pt tall, as wide as its words need). Save and Share are on the photo. */
-export function ActionRow({ onDirections, placeName }: { onDirections: () => void; placeName: string }) {
-  const c = useThemeColors();
-  return (
-    <View style={{ paddingHorizontal: 16, marginTop: 10, flexDirection: "row" }}>
-      <Pressable
         onPress={onDirections}
         accessibilityRole="button"
         accessibilityLabel={`Directions to ${placeName}. Opens your maps app.`}
-        android_ripple={{ color: withOpacity(c.onPrimary, 0.2) }}
-        style={{ minHeight: 44, paddingHorizontal: 22, borderRadius: 22, backgroundColor: c.primary, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8 }}
+        android_ripple={{ color: withOpacity(c.primary, 0.12) }}
+        style={{ minHeight: 44, minWidth: 84, paddingHorizontal: 12, borderRadius: 22, borderWidth: 1.5, borderColor: c.border, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6 }}
       >
-        <Navigation color={c.onPrimary} size={17} />
-        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: c.onPrimary }}>Directions</Text>
+        <Navigation color={c.primary} size={17} />
+        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, color: c.textPrimary }}>Directions</Text>
       </Pressable>
     </View>
   );
