@@ -28,6 +28,8 @@ import { getJourneyGuide } from "@/data/journeyGuides";
 import { localModes, personalise, reachModes, sightText, type LocalIcon, type PersonalMode, type ReachKind, type StepIcon } from "@/utils/howToReach";
 import { getLocationPermission, useDetectLocation, type DetectResult } from "@/hooks/useDetectLocation";
 import { useOriginStore } from "@/store/useOriginStore";
+import { getGateways } from "@/data/gateways";
+import GettingThere from "./tabs/how-to-reach/GettingThere";
 import { estimateRouteInfoLocally, haversineKm } from "./tabs/how-to-reach/localRouteEstimate";
 import type { RouteInfoResult } from "./tabs/how-to-reach/routeInfo";
 import OriginPicker, { shortCity } from "./OriginPicker";
@@ -141,6 +143,8 @@ export default function HowToGetThere({ destination: d, onOpenPlanner }: { desti
 
   const baseModes = reachModes(d, guide);
   const modes: PersonalMode[] = personalise(baseModes, originCity && estimateState === "done" ? estimate : null, originShort, !!exact);
+  // Places whose nearest airport, station and bus station have been checked get the Fly / Train / Bus tabs; the rest keep the rows.
+  const gateways = getGateways(d.id);
   const sight = sightText(guide);
   const local = localModes(d);
   const [openKey, setOpenKey] = useState<string | null>(() => modes[0]?.key ?? null);
@@ -159,9 +163,15 @@ export default function HowToGetThere({ destination: d, onOpenPlanner }: { desti
         How to get there
       </Text>
       <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13, lineHeight: 19, color: c.textSecondary, paddingHorizontal: 20, marginTop: 2, marginBottom: 12 }}>
-        {originCity ? (exact ? "Showing routes from where you are. Tap one for the journey." : "Showing routes from your city. Tap one for the journey.") : "All the ways at a glance. Tap one for the journey."}
+        {gateways ? "Pick how you'll travel. We show the nearest place to book to, then the short transfer." : originCity ? (exact ? "Showing routes from where you are. Tap one for the journey." : "Showing routes from your city. Tap one for the journey.") : "All the ways at a glance. Tap one for the journey."}
       </Text>
 
+      {gateways ? (
+        <View style={{ marginHorizontal: 16 }}>
+          <GettingThere place={placeName} gateways={gateways} origin={originShort} onChangeOrigin={() => setPickerOpen(true)} pickerOpen={pickerOpen} />
+        </View>
+      ) : (
+        <>
       {originCity ? (
         <>
           <Pressable
@@ -321,6 +331,8 @@ export default function HowToGetThere({ destination: d, onOpenPlanner }: { desti
           );
         })}
       </View>
+        </>
+      )}
 
       {sight ? (
         // Keyed by the start city and the lookup state so it is laid out afresh when the rows above it change
