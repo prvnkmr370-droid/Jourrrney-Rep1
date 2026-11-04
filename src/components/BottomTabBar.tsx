@@ -5,17 +5,18 @@
  */
 import { View, Text, Pressable } from "react-native";
 import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { Compass, Sparkles, Heart, Shield, type LucideIcon } from "lucide-react-native";
+import { Compass, Sparkles, Heart } from "lucide-react-native";
+import { ComfortIcon, type IconComponent } from "@/components/ComfortIcon";
 import Animated, { useAnimatedStyle, withSpring } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
 
-const ICONS: Record<string, LucideIcon> = {
+const ICONS: Record<string, IconComponent> = {
   index: Compass,
   plan: Sparkles,
   favourites: Heart,
-  safety: Shield,
+  safety: ComfortIcon,
 };
 const LABELS: Record<string, string> = {
   index: "Discover",
@@ -115,7 +116,7 @@ function TabButton({
   onPress,
   c,
 }: {
-  Icon: LucideIcon;
+  Icon: IconComponent;
   label: string;
   isActive: boolean;
   onPress: () => void;

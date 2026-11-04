@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { router } from "expo-router";
 import { ChevronRight } from "lucide-react-native";
+import { ComfortIcon } from "@/components/ComfortIcon";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import HeroCarousel from "./HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
@@ -17,7 +18,7 @@ const CATEGORIES = ["All", "Heritage", "Beach", "Nature", "Adventure"];
 // tint of themselves, and light-mode's dark accent hexes read as
 // near-invisible-on-near-black once that tint sits on a dark background.
 const QUICK_ACTIONS = [
-  { label: "Her Journey", emoji: "🛡️", colorKey: "teal" as const, route: "/(tabs)/safety" as const },
+  { label: "Her Journey", emoji: null, colorKey: "teal" as const, route: "/(tabs)/safety" as const },
   { label: "Explore All", emoji: "🧭", colorKey: "gold" as const, route: "/search/results" as const },
 ];
 
@@ -127,7 +128,7 @@ export default function HomeScreen({ tabBarHeight = 0 }: Props) {
                 borderWidth: 1.5, borderColor: withOpacity(color, 0.2),
               }}
             >
-              <Text style={{ fontSize: 24 }}>{emoji}</Text>
+              {emoji ? <Text style={{ fontSize: 24 }}>{emoji}</Text> : <ComfortIcon color={color} size={26} />}
               <Text style={{ fontFamily: "Poppins_800ExtraBold", fontSize: 11, color }}>{label}</Text>
             </Pressable>
           );

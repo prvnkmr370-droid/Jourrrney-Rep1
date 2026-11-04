@@ -1,7 +1,8 @@
 import { View, Text, Pressable } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
-import { Star, MapPin, Shield } from "lucide-react-native";
+import { Star, MapPin } from "lucide-react-native";
+import { ComfortIcon } from "@/components/ComfortIcon";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 
@@ -48,7 +49,7 @@ export default function DestinationCard({
   const StatPill = ({ tone }: { tone: "onImage" | "onSurface" }) =>
     isSafety ? (
       <>
-        <Shield color={tone === "onImage" ? "#FFFFFF" : "#15803D"} fill={tone === "onImage" ? "#FFFFFF" : "#15803D"} size={tone === "onImage" ? 10 : 12} />
+        <ComfortIcon color={tone === "onImage" ? "#FFFFFF" : "#15803D"} strokeWidth={2.6} size={tone === "onImage" ? 12 : 14} />
         <Text
           style={{
             fontFamily: "Poppins_700Bold",

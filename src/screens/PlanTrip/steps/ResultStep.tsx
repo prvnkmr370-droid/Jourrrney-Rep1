@@ -4,7 +4,8 @@ import { View, Text, Pressable, ScrollView, Alert, ActivityIndicator, StyleSheet
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
-import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp, ChevronRight, Download, MapPin, Search, ShieldCheck, Heart, Car } from "lucide-react-native";
+import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp, ChevronRight, Download, MapPin, Search, Heart, Car } from "lucide-react-native";
+import { ComfortIcon } from "@/components/ComfortIcon";
 import DestImage from "@/components/DestImage";
 import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { withOpacity } from "@/components/withOpacity";
@@ -568,7 +569,7 @@ function SafetyCard({ dest, showName, c }: { dest: Destination; showName: boolea
       style={{ backgroundColor: withOpacity(c.teal, 0.09), borderWidth: 1, borderColor: withOpacity(c.teal, 0.55), borderRadius: 16, padding: 14, gap: 6 }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-        <ShieldCheck color={c.teal} size={17} />
+        <ComfortIcon color={c.teal} size={18} />
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, color: c.textPrimary, flex: 1 }}>
           {showName ? `${dest.name}: ` : ""}Safety {ws.score}/10 · {ws.level}
         </Text>

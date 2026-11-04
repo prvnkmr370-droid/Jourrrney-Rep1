@@ -17,7 +17,8 @@ import { router } from "expo-router";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { BlurView } from "expo-blur";
-import { MapPin, Shield, Search } from "lucide-react-native";
+import { MapPin, Search } from "lucide-react-native";
+import { ComfortIcon } from "@/components/ComfortIcon";
 import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
@@ -186,7 +187,7 @@ export default function HeroCarousel({ onDestinationSelect }: Props) {
             marginRight: 70,
           }}
         >
-          <Shield color="#FFFFFF" size={16} />
+          <ComfortIcon color="#FFFFFF" size={18} />
         </Pressable>
       </View>
 

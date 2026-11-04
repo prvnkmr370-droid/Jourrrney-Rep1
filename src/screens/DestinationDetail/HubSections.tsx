@@ -18,7 +18,8 @@
  * 130% font scale) instead of being cut off.
  */
 import { Pressable, Text, View, useWindowDimensions } from "react-native";
-import { Backpack, BedDouble, Bell, Calendar, CalendarClock, ChevronRight, Clock, MapPin, Navigation, ShieldCheck } from "lucide-react-native";
+import { Backpack, BedDouble, Bell, Calendar, CalendarClock, ChevronRight, Clock, MapPin, Navigation } from "lucide-react-native";
+import { ComfortIcon, type IconComponent } from "@/components/ComfortIcon";
 import type { Destination } from "@/data/destinations";
 import { useThemeColors } from "@/theme/useThemeColors";
 import { withOpacity } from "@/components/withOpacity";
@@ -186,10 +187,10 @@ export function ExploreRows({ destination: d, onOpen }: { destination: Destinati
   // A place whose guide names hotels shows a couple of them in their own section above
   // (HotelsPreview.tsx); this Hotels row is only for the places that name none.
   const headsUp = headsUpCount(d);
-  const rows: { id: HubTarget; Icon: typeof Calendar; title: string; preview: string; badge?: string }[] = [
+  const rows: { id: HubTarget; Icon: IconComponent; title: string; preview: string; badge?: string }[] = [
     ...(hotelCount === 0 ? [{ id: "stay" as HubTarget, Icon: BedDouble, title: "Hotels", preview: stayPreview }] : []),
     { id: "know", Icon: Backpack, title: "What to know before I go", preview: "Packing, local tips, safety notices" },
-    { id: "safety", Icon: ShieldCheck, title: "Is it safe?", preview: safetyTeaser(d), badge: headsUp > 0 ? `${headsUp} ${headsUp === 1 ? "heads-up" : "heads-ups"}` : undefined },
+    { id: "safety", Icon: ComfortIcon, title: "Is it safe?", preview: safetyTeaser(d), badge: headsUp > 0 ? `${headsUp} ${headsUp === 1 ? "heads-up" : "heads-ups"}` : undefined },
   ];
 
   return (

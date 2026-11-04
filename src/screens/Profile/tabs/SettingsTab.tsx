@@ -24,7 +24,8 @@ import { useState } from "react";
 import { View, Text, Pressable, Switch, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 import * as Updates from "expo-updates";
-import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, History, Trash2, type LucideIcon } from "lucide-react-native";
+import { Bell, Shield, Globe, Lock, FileText, ChevronRight, Sparkles, Images, History, Trash2 } from "lucide-react-native";
+import { ComfortIcon, type IconComponent } from "@/components/ComfortIcon";
 import { useProfileStore } from "@/store/useProfileStore";
 import DeleteAccountSheet from "@/components/DeleteAccountSheet";
 import { useRecentSearchesStore } from "@/store/useRecentSearchesStore";
@@ -99,7 +100,7 @@ export default function SettingsTab() {
         </Text>
 
         <ToggleRow icon={Bell} label="Notifications" sub="Trip reminders & alerts" value={notifications} onValueChange={setNotifications} c={c} />
-        <NavRow icon={Shield} label="Safety alerts" sub="Women safety tips per destination" onPress={() => router.push("/profile/safety-guard")} c={c} />
+        <NavRow icon={ComfortIcon} label="Safety alerts" sub="Women safety tips per destination" onPress={() => router.push("/profile/safety-guard")} c={c} />
         <NavRow icon={Globe} label="Offline maps" sub="Save maps without data" onPress={() => router.push("/profile/offline-maps")} c={c} />
 
         <View style={{ paddingHorizontal: 16, paddingVertical: 12, borderTopWidth: 1, borderTopColor: c.borderSoft }}>
@@ -178,7 +179,7 @@ export default function SettingsTab() {
   );
 }
 
-function ToggleRow({ icon: Icon, label, sub, value, onValueChange, c }: { icon: LucideIcon; label: string; sub: string; value: boolean; onValueChange: (v: boolean) => void; c: ReturnType<typeof useThemeColors> }) {
+function ToggleRow({ icon: Icon, label, sub, value, onValueChange, c }: { icon: IconComponent; label: string; sub: string; value: boolean; onValueChange: (v: boolean) => void; c: ReturnType<typeof useThemeColors> }) {
   return (
     <View style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, paddingVertical: 12, borderTopWidth: 1, borderTopColor: c.borderSoft }}>
       <View style={{ width: 32, height: 32, borderRadius: 10, backgroundColor: withOpacity(c.teal, 0.12), alignItems: "center", justifyContent: "center" }}>
@@ -193,7 +194,7 @@ function ToggleRow({ icon: Icon, label, sub, value, onValueChange, c }: { icon: 
   );
 }
 
-function NavRow({ icon: Icon, label, sub, onPress, c, danger }: { icon: LucideIcon; label: string; sub: string; onPress: () => void; c: ReturnType<typeof useThemeColors>; danger?: boolean }) {
+function NavRow({ icon: Icon, label, sub, onPress, c, danger }: { icon: IconComponent; label: string; sub: string; onPress: () => void; c: ReturnType<typeof useThemeColors>; danger?: boolean }) {
   const accent = danger ? c.danger : c.teal;
   return (
     <Pressable onPress={onPress} style={{ flexDirection: "row", alignItems: "center", gap: 12, paddingHorizontal: 16, paddingVertical: 12, minHeight: 48, borderTopWidth: 1, borderTopColor: c.borderSoft }}>

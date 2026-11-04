@@ -25,7 +25,6 @@
  * specific place.
  */
 import {
-  Shield,
   Toilet,
   UserRound,
   Hospital,
@@ -43,8 +42,8 @@ import {
   Footprints,
   BatteryCharging,
   ShoppingCart,
-  type LucideIcon,
 } from "lucide-react-native";
+import { ComfortIcon, type IconComponent } from "@/components/ComfortIcon";
 import type { Destination } from "./destinations";
 import { SAFETY_OVERRIDES } from "./safetyOverrides";
 import { cleanAreas, safetyTeaser, safetyVerdict, softened } from "@/utils/safetyTone";
@@ -70,7 +69,7 @@ export type SafetyCategoryKey =
   | "essentials";
 
 export interface SafetyCategoryContent {
-  Icon: LucideIcon;
+  Icon: IconComponent;
   label: string;
   /** One line, shown on the always-visible/collapsed card. */
   summary: string;
@@ -406,7 +405,7 @@ export function getSafetyDetails(d: Destination): Record<SafetyCategoryKey, Safe
 
   const base: Record<SafetyCategoryKey, SafetyCategoryContent> = {
     safetyLevel: {
-      Icon: Shield,
+      Icon: ComfortIcon,
       label: "How it feels",
       summary: safetyTeaser(d),
       details: [

@@ -4,7 +4,8 @@ import { View, Text, Pressable, TextInput, ScrollView } from "react-native";
 import DestImage from "@/components/DestImage";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Shield, ChevronRight, Search, X } from "lucide-react-native";
+import { ChevronRight, Search, X } from "lucide-react-native";
+import { ComfortIcon } from "@/components/ComfortIcon";
 import { DESTINATIONS, getSafetyColor, type Destination } from "@/data/destinations";
 import { findLiveMatches, matchNonIndiaPlace } from "@/data/matchDestination";
 import { withOpacity } from "@/components/withOpacity";
@@ -61,7 +62,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
     <View style={{ flex: 1, backgroundColor: c.bg }}>
       <LinearGradient colors={["#0D5C63", "#1A8A94"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ paddingTop: insets.top + 20, paddingBottom: 24, paddingHorizontal: 20 }}>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 6 }}>
-          <Shield color="#FFFFFF" size={22} />
+          <ComfortIcon color="#FFFFFF" size={24} />
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 22, color: "#FFFFFF" }}>Travel Safety</Text>
         </View>
         <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.75)", marginBottom: 14 }}>
@@ -79,7 +80,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
           onPress={onTravelSafeSteps}
           style={{ flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: withOpacity(c.teal, 0.08), borderWidth: 1.5, borderColor: withOpacity(c.teal, 0.35), borderRadius: 16, padding: 14 }}
         >
-          <Text style={{ fontSize: 24 }}>🛡️</Text>
+          <ComfortIcon color={c.teal} size={26} />
           <View style={{ flex: 1 }}>
             <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: c.teal }}>Travel Safe — 5 Steps</Text>
             <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 11, color: c.textSecondary }}>Habits that go a long way, solo or not</Text>
