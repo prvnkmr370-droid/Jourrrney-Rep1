@@ -332,7 +332,7 @@ export function generateItinerary(
 
   const tips = [
     `Best season: ${dest.bestSeason}`,
-    `Women safety score: ${dest.womenSafety.score}/10 — ${dest.womenSafety.level}`,
+    `Comfort index: ${dest.womenSafety.score}/10 — ${dest.womenSafety.level}`,
     style === "backpacker"
       ? "Book IRCTC tickets 60 days ahead. Tatkal opens 1 day before — last resort at 30% premium."
       : style === "comfortable"

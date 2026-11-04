@@ -39,7 +39,7 @@ export default function DestinationSafetyPage({ destination: d, onBack }: Props)
       </Pressable>
 
       <LinearGradient colors={["#0D5C63", "#1A8A94"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ borderRadius: 20, padding: 20, marginBottom: 16 }}>
-        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.8)", marginBottom: 4 }}>Women Safety Score</Text>
+        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.8)", marginBottom: 4 }}>Comfort Index</Text>
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 40, color: "#FFFFFF", marginBottom: 8 }}>{d.womenSafety.score}</Text>
         <View style={{ alignSelf: "flex-start", backgroundColor: "rgba(255,255,255,0.2)", borderRadius: 999, paddingHorizontal: 12, paddingVertical: 5 }}>
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: "#FFFFFF" }}>

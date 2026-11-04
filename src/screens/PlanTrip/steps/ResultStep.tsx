@@ -561,7 +561,7 @@ function SafetyCard({ dest, showName, c }: { dest: Destination; showName: boolea
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${dest.name} safety details`}
+      accessibilityLabel={`${dest.name} comfort index details`}
       onPress={() => {
         holdPlanSession();
         router.push(`/safety/${dest.id}`);
@@ -571,7 +571,7 @@ function SafetyCard({ dest, showName, c }: { dest: Destination; showName: boolea
       <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
         <ComfortIcon color={c.teal} size={18} />
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13.5, color: c.textPrimary, flex: 1 }}>
-          {showName ? `${dest.name}: ` : ""}Safety {ws.score}/10 · {ws.level}
+          {showName ? `${dest.name}: ` : ""}Comfort index {ws.score}/10 · {ws.level}
         </Text>
         <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 11, color: c.teal }}>Details ›</Text>
       </View>

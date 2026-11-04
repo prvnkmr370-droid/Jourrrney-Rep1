@@ -27,7 +27,7 @@ export default function TabsLayout() {
             own) so it shares the Plan Trip tab's bottom bar and profile pill. */}
         <Tabs.Screen name="plan/[destId]" options={{ href: null }} />
         <Tabs.Screen name="favourites" options={{ title: "Favourites" }} />
-        <Tabs.Screen name="safety" options={{ title: "Safety" }} />
+        <Tabs.Screen name="safety" options={{ title: "Comfort Index" }} />
       </Tabs>
 
       {/* Persistent profile pill — same "PS" avatar + hamburger look as the

@@ -63,7 +63,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
       <LinearGradient colors={["#0D5C63", "#1A8A94"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ paddingTop: insets.top + 20, paddingBottom: 24, paddingHorizontal: 20 }}>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 6 }}>
           <ComfortIcon color="#FFFFFF" size={24} />
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 22, color: "#FFFFFF" }}>Travel Safety</Text>
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 22, color: "#FFFFFF" }}>Comfort Index</Text>
         </View>
         <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "rgba(255,255,255,0.75)", marginBottom: 14 }}>
           Travel India with confidence & assurance
@@ -101,7 +101,7 @@ export default function SafetySearchHome({ onSelectDestination, onTravelSafeStep
         </Pressable>
 
         <View>
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, marginBottom: 12 }}>Safety Ratings by Destination</Text>
+          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.textPrimary, marginBottom: 12 }}>Comfort Index by Destination</Text>
 
           <View
             style={{

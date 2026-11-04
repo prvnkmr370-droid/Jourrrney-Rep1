@@ -22,7 +22,7 @@ const LABELS: Record<string, string> = {
   index: "Discover",
   plan: "Plan Trip",
   favourites: "Favourites",
-  safety: "Safety",
+  safety: "Comfort Index",
 };
 
 // The pill's own height, fixed and independent of any measurement: each
