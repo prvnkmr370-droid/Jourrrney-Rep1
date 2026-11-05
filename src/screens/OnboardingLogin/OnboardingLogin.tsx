@@ -1,37 +1,33 @@
 /**
- * No Figma frame exists for this screen. Two-step flow, both ported from
- * reference screenshots the user supplied and adapted to our dark
- * gradient theme + compass brand mark rather than the references' literal
- * colors/logos: step 1 is "Sign in or create an account" (email field +
- * Google/Facebook/Apple); entering an email and tapping Continue moves to
- * step 2, "Let's confirm your email" (6-digit code entry). Sign-in stays
- * explicitly non-mandatory throughout — Skip (step 1) and every button on
- * both steps lead into the app the same way.
+ * The sign-in screens. Sign-in is never forced: "Continue as a guest" and the close button lead into the
+ * app the same way, and a guest can sign in later (for example when they tap a heart).
  *
- * The email path is now real: requestCode()/verifyCode() call
- * journey-backend (see its README for what's real vs. not — the code is
- * genuinely generated/verified server-side, but no email is actually sent
- * yet). Facebook and Google sign-in are real too: each opens the provider's login
- * in the phone's browser and comes back through app/auth.tsx (see journey-backend's
- * src/routes/facebookAuth.js and googleAuth.js); until that provider's keys are set
- * on the server the button says plainly that it isn't available yet. Apple sign-in
- * is not offered: it only ever marked the user "signed in" locally, and it needs an
- * Apple Developer Program enrollment we don't have. The button comes back in
- * EmailStep.tsx once it is real.
+ *   email   "Sign in or create an account": the email box first, then Google and Facebook below it.
+ *   confirm "Check your email": the six emailed digits, confirmed as soon as the sixth is in.
+ *   done    "You're signed in", then back to where the person was.
+ *
+ * The email path is real: requestCode()/verifyCode() call journey-backend (see its README). While no email
+ * service is connected on the server it says so in plain words and points to Google and Facebook. Facebook and
+ * Google sign-in are real too: each opens the provider's login in the phone's browser and comes back through
+ * app/auth.tsx (see journey-backend's src/routes/facebookAuth.js and googleAuth.js). Apple sign-in is not
+ * offered: it needs an Apple Developer Program enrollment we don't have. The button comes back in EmailStep.tsx
+ * once it is real.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useProfileStore, isSocialProvider, SOCIAL_NAME, type AuthProvider } from "@/store/useProfileStore";
 import EmailStep from "./steps/EmailStep";
 import ConfirmCodeStep from "./steps/ConfirmCodeStep";
+import SignedInStep from "./steps/SignedInStep";
+import { isEmailLike } from "@/utils/isEmailLike";
 
 interface Props {
   onDone: () => void;
 }
 
-type Step = "email" | "confirm";
+type Step = "email" | "confirm" | "done";
 
 export default function OnboardingLogin({ onDone }: Props) {
   const insets = useSafeAreaInsets();
@@ -46,6 +42,14 @@ export default function OnboardingLogin({ onDone }: Props) {
   const [devCode, setDevCode] = useState<string | null>(null);
   const [verifying, setVerifying] = useState(false);
   const [verifyError, setVerifyError] = useState<string | null>(null);
+  const [needsNewCode, setNeedsNewCode] = useState(false);
+
+  // After "You're signed in" the screen moves on by itself.
+  useEffect(() => {
+    if (step !== "done") return;
+    const t = setTimeout(onDone, 1600);
+    return () => clearTimeout(t);
+  }, [step, onDone]);
 
   const handleSkip = () => {
     // "Skip" means "not now, as a guest". Someone whose saved session was just
@@ -72,7 +76,7 @@ export default function OnboardingLogin({ onDone }: Props) {
   };
 
   const handleContinueWithEmail = async () => {
-    if (!email.trim() || sending) return;
+    if (!isEmailLike(email) || sending) return;
     setSending(true);
     setSendError(null);
     const result = await requestCode(email.trim());
@@ -83,6 +87,7 @@ export default function OnboardingLogin({ onDone }: Props) {
     }
     setDevCode(result.devCode ?? null);
     setVerifyError(null);
+    setNeedsNewCode(false);
     setStep("confirm");
   };
 
@@ -93,15 +98,17 @@ export default function OnboardingLogin({ onDone }: Props) {
     const result = await verifyCode(email.trim(), code);
     setVerifying(false);
     if (!result.ok) {
-      setVerifyError(result.error ?? "That code didn't work — try again.");
+      setVerifyError(result.error ?? "That code didn't work. Please try again.");
+      setNeedsNewCode(!!result.needsNewCode);
       return;
     }
-    onDone();
+    setStep("done");
   };
 
   const handleResend = async () => {
     const result = await requestCode(email.trim());
-    if (result.ok) setDevCode(result.devCode ?? null);
+    if (result.ok) { setDevCode(result.devCode ?? null); setVerifyError(null); setNeedsNewCode(false); }
+    else setVerifyError(result.error ?? "We couldn't send a new code. Please try again.");
     return result.ok;
   };
 
@@ -115,7 +122,9 @@ export default function OnboardingLogin({ onDone }: Props) {
         style={{ position: "absolute", inset: 0 }}
       />
 
-      {step === "email" ? (
+      {step === "done" ? (
+        <SignedInStep email={email.trim()} onContinue={onDone} />
+      ) : step === "email" ? (
         <EmailStep
           email={email}
           onEmailChange={setEmail}
@@ -132,11 +141,13 @@ export default function OnboardingLogin({ onDone }: Props) {
       ) : (
         <ConfirmCodeStep
           email={email}
-          onBack={() => setStep("email")}
+          onBack={() => { setStep("email"); setVerifyError(null); setNeedsNewCode(false); }}
           onConfirm={handleConfirmCode}
           onResend={handleResend}
           loading={verifying}
           error={verifyError}
+          needsNewCode={needsNewCode}
+          onEdit={() => { if (!needsNewCode) setVerifyError(null); }}
           devCode={devCode}
           topInset={insets.top}
         />

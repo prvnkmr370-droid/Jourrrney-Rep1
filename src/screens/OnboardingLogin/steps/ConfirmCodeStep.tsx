@@ -1,33 +1,38 @@
-/** Source of truth: a reference screenshot the user supplied (dark
- * "Let's confirm your email" pattern) — ported to our theme. Now backed
- * by a real server-side code check (journey-backend); see its README for
- * the honesty caveat that no email is actually sent yet. */
-import { useEffect, useState } from "react";
-import { View, Text, Pressable, TextInput, ActivityIndicator, Alert } from "react-native";
+/**
+ * Step 2 of the email sign-in: the six digits that were emailed. One hidden text box does the typing (so the
+ * phone can offer the code above the keyboard and fill it in), and six boxes just show what was typed. The
+ * code is checked as soon as the sixth digit is in; the Continue button is still there for anyone who needs it.
+ */
+import { useEffect, useRef, useState } from "react";
+import { View, Text, Pressable, TextInput, ActivityIndicator, ScrollView } from "react-native";
 import { ArrowLeft } from "lucide-react-native";
 
+const MAX_FONT = 1.3;
 const RESEND_COOLDOWN_S = 30;
+const CODE_LENGTH = 6;
 
 interface Props {
   email: string;
+  /** The back arrow and "Wrong email?": back to the email box. */
   onBack: () => void;
   onConfirm: (code: string) => void;
-  /** Re-requests a code from the backend; resolves to whether it worked. */
+  /** Asks for another code. Resolves true when one was sent. */
   onResend: () => Promise<boolean>;
-  /** True while verifyCode() is in flight. */
+  /** True while the code is being checked. */
   loading?: boolean;
-  /** Set when verifyCode() fails — wrong code, expired, too many attempts,
-   * or the backend being unreachable. */
+  /** Plain-words reason the last code failed. */
   error?: string | null;
-  /** Dev-only: the actual code, echoed back by the backend outside
-   * production since no email is really sent yet. Shown as a labelled
-   * hint so the flow is testable without an inbox — remove this prop's
-   * usage once real email delivery is wired up server-side. */
+  /** The code cannot be tried again (expired or too many wrong tries): offer a new one. */
+  needsNewCode?: boolean;
+  /** The person started typing again: the parent forgets the error. */
+  onEdit?: () => void;
+  /** Present only when the server is not sending real email (a development server). */
   devCode?: string | null;
   topInset: number;
 }
 
-export default function ConfirmCodeStep({ email, onBack, onConfirm, onResend, loading, error, devCode, topInset }: Props) {
+export default function ConfirmCodeStep({ email, onBack, onConfirm, onResend, loading, error, needsNewCode, onEdit, devCode, topInset }: Props) {
+  const inputRef = useRef<TextInput>(null);
   const [code, setCode] = useState("");
   const [cooldown, setCooldown] = useState(RESEND_COOLDOWN_S);
   const [resending, setResending] = useState(false);
@@ -38,100 +43,150 @@ export default function ConfirmCodeStep({ email, onBack, onConfirm, onResend, lo
     return () => clearInterval(t);
   }, [cooldown]);
 
-  const canContinue = code.length === 6 && !loading;
+  // A failed code stays on screen (red) for a moment so it can be read, then the boxes empty for the next try.
+  useEffect(() => {
+    if (!error) return;
+    const t = setTimeout(() => { setCode(""); inputRef.current?.focus(); }, 700);
+    return () => clearTimeout(t);
+  }, [error]);
+
+  const handleChange = (text: string) => {
+    const digits = text.replace(/\D/g, "").slice(0, CODE_LENGTH);
+    setCode(digits);
+    if (error) onEdit?.();
+    if (digits.length === CODE_LENGTH && !loading) onConfirm(digits);
+  };
 
   const handleResend = async () => {
+    if (resending) return;
     setResending(true);
     const ok = await onResend();
     setResending(false);
-    if (ok) setCooldown(RESEND_COOLDOWN_S);
+    if (ok) { setCooldown(RESEND_COOLDOWN_S); setCode(""); inputRef.current?.focus(); }
   };
 
+  const canContinue = code.length === CODE_LENGTH && !loading;
+  const failed = !!error;
+
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{ paddingHorizontal: 20, paddingTop: topInset + 12 }}>
-        <Pressable onPress={onBack} hitSlop={8} style={{ width: 32 }}>
-          <ArrowLeft color="#8B93D6" size={22} />
+    <ScrollView style={{ flex: 1 }} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 32 }}>
+      <View style={{ paddingHorizontal: 20, paddingTop: topInset + 8 }}>
+        <Pressable
+          onPress={onBack}
+          accessibilityRole="button"
+          accessibilityLabel="Back to the email box"
+          style={{ width: 48, height: 48, marginLeft: -10, alignItems: "center", justifyContent: "center" }}
+        >
+          <ArrowLeft color="#A9B1F5" size={24} />
         </Pressable>
       </View>
 
-      <View style={{ paddingHorizontal: 24, paddingTop: 20 }}>
-        <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 26, color: "#FFFFFF", marginBottom: 12 }}>
-          Let's confirm your email
+      <View style={{ paddingHorizontal: 24, paddingTop: 12 }}>
+        <Text accessibilityRole="header" maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 26, lineHeight: 33, color: "#FFFFFF", marginBottom: 10 }}>
+          Check your email
         </Text>
-        <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, lineHeight: 19, color: "rgba(255,255,255,0.6)", marginBottom: devCode ? 8 : 28 }}>
-          Enter the secure code we sent to{" "}
-          <Text style={{ fontFamily: "Poppins_600SemiBold", color: "rgba(255,255,255,0.85)" }}>{email}</Text>. Check junk
-          mail if it's not in your inbox.
+        <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13.5, lineHeight: 21, color: "rgba(255,255,255,0.68)", marginBottom: devCode ? 8 : 22 }}>
+          We sent a 6-digit code to{" "}
+          <Text style={{ fontFamily: "Poppins_600SemiBold", color: "#FFFFFF" }}>{email}</Text>.{" "}
+          <Text accessibilityRole="link" onPress={onBack} style={{ fontFamily: "Poppins_700Bold", color: "#A9B1F5", textDecorationLine: "underline" }}>
+            Wrong email?
+          </Text>
         </Text>
 
         {devCode && (
-          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: "#C9981F", marginBottom: 28 }}>
-            Dev mode — no email is sent yet, your code is {devCode}
+          <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: "#C9981F", marginBottom: 20 }}>
+            Dev mode: no email is sent, your code is {devCode}
           </Text>
         )}
 
-        <TextInput
-          value={code}
-          onChangeText={(v) => setCode(v.replace(/\D/g, "").slice(0, 6))}
-          placeholder="6-digit code"
-          placeholderTextColor="rgba(255,255,255,0.4)"
-          keyboardType="number-pad"
-          editable={!loading}
-          style={{
-            height: 52, borderWidth: 1, borderColor: "rgba(255,255,255,0.25)", borderRadius: 16, paddingHorizontal: 20,
-            fontFamily: "Poppins_600SemiBold", fontSize: 16, letterSpacing: 4, color: "#FFFFFF", marginBottom: error ? 8 : 16,
-          }}
-        />
-
-        {error && (
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 12, color: "#F87171", marginBottom: 16, lineHeight: 17 }}>
-            {error}
-          </Text>
-        )}
-
-        <Pressable
-          onPress={() => onConfirm(code)}
-          disabled={!canContinue}
-          style={{
-            flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8,
-            backgroundColor: canContinue ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, paddingVertical: 16, marginBottom: 20,
-          }}
-        >
-          {loading && <ActivityIndicator color="#333C81" size="small" />}
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: canContinue ? "#333C81" : "rgba(255,255,255,0.5)" }}>
-            {loading ? "Confirming…" : "Continue"}
-          </Text>
-        </Pressable>
-
-        <View style={{ alignItems: "center", marginBottom: 20 }}>
-          <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: "rgba(255,255,255,0.55)", textAlign: "center" }}>
-            Didn't receive a code?
-          </Text>
-          {cooldown > 0 ? (
-            <Text style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: "rgba(255,255,255,0.55)", textAlign: "center" }}>
-              You can request another code in {cooldown}s
-            </Text>
-          ) : (
-            <Pressable onPress={handleResend} disabled={resending}>
-              {resending ? (
-                <ActivityIndicator color="#8B93D6" size="small" />
-              ) : (
-                <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#8B93D6" }}>Resend code</Text>
-              )}
-            </Pressable>
-          )}
+        <View style={{ marginBottom: 12 }}>
+          <View style={{ flexDirection: "row", gap: 8 }} pointerEvents="none">
+            {Array.from({ length: CODE_LENGTH }).map((_, i) => {
+              const digit = code[i] ?? "";
+              const active = !failed && !loading && i === Math.min(code.length, CODE_LENGTH - 1);
+              return (
+                <View
+                  key={i}
+                  style={{
+                    flex: 1, height: 56, borderRadius: 14, alignItems: "center", justifyContent: "center",
+                    borderWidth: failed || active ? 1.5 : 1, borderColor: failed ? "#F87171" : active ? "#D9B66A" : "rgba(255,255,255,0.28)",
+                  }}
+                >
+                  <Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 22, color: failed ? "#F87171" : "#FFFFFF" }}>{digit}</Text>
+                </View>
+              );
+            })}
+          </View>
+          {/* The real input lies over the boxes, invisible: tapping a box types into it, and the phone can fill the code in here. */}
+          <TextInput
+            ref={inputRef}
+            value={code}
+            onChangeText={handleChange}
+            maxLength={CODE_LENGTH}
+            autoFocus
+            caretHidden
+            editable={!loading}
+            keyboardType="number-pad"
+            textContentType="oneTimeCode"
+            autoComplete="one-time-code"
+            accessibilityLabel="6-digit code"
+            style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, opacity: 0.02, color: "transparent" }}
+          />
         </View>
 
-        {/* Honest placeholder — there's no password auth on the backend,
-            so this no longer silently confirms with an empty code. */}
-        <Pressable
-          onPress={() => Alert.alert("Password sign-in", "Not available yet — this app only supports email-code sign-in right now.")}
-          style={{ alignItems: "center" }}
-        >
-          <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 13, color: "#8B93D6" }}>Enter password instead</Text>
-        </Pressable>
+        {error ? (
+          <Text accessibilityLiveRegion="polite" accessibilityRole="alert" maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 13, color: "#F87171", marginBottom: 14, lineHeight: 19 }}>
+            {error}
+          </Text>
+        ) : (
+          <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 12.5, color: "rgba(255,255,255,0.62)", marginBottom: 16, lineHeight: 18 }}>
+            If your phone offers the code above the keyboard, tap it and we fill it in. We confirm as soon as the sixth digit is in.
+          </Text>
+        )}
+
+        {needsNewCode ? (
+          <Pressable
+            onPress={handleResend}
+            disabled={resending}
+            accessibilityRole="button"
+            style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 52, backgroundColor: "#FBF7F2", borderRadius: 999, marginBottom: 18 }}
+          >
+            {resending && <ActivityIndicator color="#333C81" size="small" />}
+            <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: "#333C81" }}>{resending ? "Sending…" : "Send a new code"}</Text>
+          </Pressable>
+        ) : (
+          <Pressable
+            onPress={() => onConfirm(code)}
+            disabled={!canContinue}
+            accessibilityRole="button"
+            accessibilityState={{ disabled: !canContinue }}
+            style={{
+              flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 52,
+              backgroundColor: canContinue || loading ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, marginBottom: 18,
+            }}
+          >
+            {loading && <ActivityIndicator color="#333C81" size="small" />}
+            <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: canContinue || loading ? "#333C81" : "rgba(255,255,255,0.5)" }}>
+              {loading ? "Confirming…" : "Continue"}
+            </Text>
+          </Pressable>
+        )}
+
+        <View style={{ alignItems: "center", gap: 2 }}>
+          <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: "rgba(255,255,255,0.62)", textAlign: "center" }}>
+            Didn't get it? Check your junk mail.
+          </Text>
+          {!needsNewCode && (cooldown > 0 ? (
+            <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13, color: "rgba(255,255,255,0.62)", textAlign: "center" }}>
+              You can ask for another code in {cooldown}s
+            </Text>
+          ) : (
+            <Pressable onPress={handleResend} disabled={resending} accessibilityRole="button" style={{ minHeight: 44, justifyContent: "center" }}>
+              {resending ? <ActivityIndicator color="#A9B1F5" size="small" /> : <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 14, color: "#A9B1F5" }}>Send another code</Text>}
+            </Pressable>
+          ))}
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }

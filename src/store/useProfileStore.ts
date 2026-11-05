@@ -52,7 +52,7 @@ interface ProfileState {
   /** Real request to the backend: verifies the code, creates the account
    * on first sign-in, and returns a real session token that's persisted
    * to SecureStore. */
-  verifyCode: (email: string, code: string, name?: string) => Promise<{ ok: boolean; error?: string }>;
+  verifyCode: (email: string, code: string, name?: string) => Promise<{ ok: boolean; error?: string; needsNewCode?: boolean }>;
 
   /** Opens Facebook or Google sign-in in the phone's browser. Only resolves once the
    * browser has been opened (or says plainly why not, e.g. the provider isn't set up
@@ -148,11 +148,12 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-      const data = await res.json();
-      if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Try again." };
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 503) return { ok: false, error: "We can't send email codes right now. Please continue with Google or Facebook below, or try again later." };
+      if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Please try again." };
       return { ok: true, devCode: data.devCode };
     } catch {
-      return { ok: false, error: "Can't reach the server — check journey-backend is running and EXPO_PUBLIC_API_URL is correct." };
+      return { ok: false, error: "We couldn't reach Jourrrney. Check your internet connection and try again." };
     }
   },
 
@@ -163,10 +164,18 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, code, name }),
       });
-      const data = await res.json();
-      if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Try again." };
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        const said = String(data.error ?? "");
+        if (res.status === 429) return { ok: false, needsNewCode: true, error: "Too many wrong tries. Ask for a new code below." };
+        if (/expired|request a new code/i.test(said)) return { ok: false, needsNewCode: true, error: "That code has expired. Codes last 10 minutes. Ask for a new one below." };
+        if (/incorrect/i.test(said)) return { ok: false, error: "That code didn't work. Check the 6 digits and try again." };
+        return { ok: false, error: said || "Something went wrong. Please try again." };
+      }
 
-      await SecureStore.setItemAsync(TOKEN_KEY, data.token);
+      // The server has accepted the code (and used it up), so a phone that cannot keep the login
+      // (the web preview has no secure storage) still signs in for this visit instead of failing.
+      await SecureStore.setItemAsync(TOKEN_KEY, data.token).catch(() => {});
       await SecureStore.setItemAsync(PROVIDER_KEY, "email").catch(() => {});
       set({
         isSignedIn: true,
@@ -178,7 +187,7 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       get().fetchProfile();
       return { ok: true };
     } catch {
-      return { ok: false, error: "Can't reach the server — check journey-backend is running and EXPO_PUBLIC_API_URL is correct." };
+      return { ok: false, error: "We couldn't reach Jourrrney. Check your internet connection and try again." };
     }
   },
 
@@ -187,12 +196,12 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
       const res = await fetch(`${API_BASE_URL}/auth/${provider}/status`);
       const status = res.ok ? await res.json() : null;
       if (!status?.configured) {
-        return { ok: false, error: `${SOCIAL_NAME[provider]} sign-in isn't available yet. Please sign in with your email for now.` };
+        return { ok: false, error: `${SOCIAL_NAME[provider]} sign-in isn't available right now. Please try another way to sign in.` };
       }
       await Linking.openURL(`${API_BASE_URL}/auth/${provider}/start`);
       return { ok: true };
     } catch {
-      return { ok: false, error: "Can't reach the server — check your connection and try again." };
+      return { ok: false, error: "We couldn't reach Jourrrney. Check your internet connection and try again." };
     }
   },
 

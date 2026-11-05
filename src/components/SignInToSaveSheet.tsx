@@ -1,7 +1,7 @@
 /**
  * The pause shown when someone who is not signed in taps a heart: favourites
- * belong to an account, so it explains that in plain words and offers the
- * email sign-in. It also covers a phone that is "signed in" with Google or Apple,
+ * belong to an account, so it explains that in plain words and opens the
+ * sign-in screen (email, Google or Facebook). It also covers a phone that is "signed in" with Google or Apple,
  * which today does not create an account.
  */
 import { Modal, Pressable, Text, View } from "react-native";
@@ -16,7 +16,7 @@ const MAX_FONT = 1.3;
 export function signInToSaveText(localOnlySignIn: boolean): string {
   return localOnlySignIn
     ? "Your favourites are kept on your account. This phone is signed in with a social button, which does not create an account yet, so please sign in with your email to save places."
-    : "Your favourites are kept on your account, so you need to be signed in to save a place. It takes a minute with your email.";
+    : "Your favourites are kept on your account, so you need to be signed in to save a place. You can use your email, Google or Facebook, and it takes a minute.";
 }
 
 export default function SignInToSaveSheet({
@@ -26,7 +26,7 @@ export default function SignInToSaveSheet({
   localOnlySignIn: boolean;
   /** "Not now" / tapping outside: the person decided not to sign in. */
   onClose: () => void;
-  /** "Sign in with email": the sheet closes and the sign-in screen opens. */
+  /** "Sign in or create an account": the sheet closes and the sign-in screen opens. */
   onContinue: () => void;
 }) {
   const insets = useSafeAreaInsets();
@@ -57,7 +57,7 @@ export default function SignInToSaveSheet({
             android_ripple={{ color: withOpacity(c.onPrimary, 0.2) }}
             style={{ marginTop: 18, minHeight: 52, borderRadius: 14, backgroundColor: c.primary, alignItems: "center", justifyContent: "center" }}
           >
-            <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.onPrimary }}>Sign in with email</Text>
+            <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: c.onPrimary }}>Sign in or create an account</Text>
           </Pressable>
           <Pressable
             onPress={onClose}
