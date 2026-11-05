@@ -318,5 +318,5 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
 // Exported so app/_layout.tsx can trigger the one-time session check on
 // launch without every screen needing to know about restoreSession.
 export function bootstrapProfileSession() {
-  useProfileStore.getState().restoreSession();
+  return useProfileStore.getState().restoreSession();
 }

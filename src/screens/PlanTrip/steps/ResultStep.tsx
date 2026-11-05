@@ -12,6 +12,7 @@ import { withOpacity } from "@/components/withOpacity";
 import type { Destination } from "@/data/destinations";
 import { fetchRouteInfo } from "@/screens/DestinationDetail/tabs/how-to-reach/routeInfo";
 import { useSavedTripsStore } from "@/store/useSavedTripsStore";
+import { useProfileStore } from "@/store/useProfileStore";
 import { useThemeColors } from "@/theme/useThemeColors";
 import type { PlanStop, TripPlan } from "../data";
 import { exportItineraryPdf } from "../exportPdf";
@@ -504,11 +505,14 @@ function RouteStrip({ origin, destinations, live, c }: { origin: string; destina
   const single = destinations.length === 1 ? destinations[0] : null;
   const cacheKey = single ? `${origin.toLowerCase()}|${single.id}` : "";
   const [summary, setSummary] = useState<string | null | undefined>(() => (cacheKey ? routeSummaryCache.get(cacheKey) : null));
+  // This lookup uses AI. A guest only has a few free AI prompts, and they should go on the things the guest
+  // asked for, not on this extra line, so guests see the names without the numbers.
+  const signedIn = useProfileStore((s) => !!s.token);
 
   useEffect(() => {
     // Only a single-destination plan has one clear "distance"; a saved trip
     // doesn't phone the backend just to be viewed again.
-    if (!single || !live || routeSummaryCache.has(cacheKey)) return;
+    if (!single || !live || !signedIn || routeSummaryCache.has(cacheKey)) return;
     let cancelled = false;
     fetchRouteInfo(origin, { name: single.name, state: single.state }).then((info) => {
       // Distance plus the road time only: road works from any start city, while
@@ -523,7 +527,7 @@ function RouteStrip({ origin, destinations, live, c }: { origin: string; destina
     return () => {
       cancelled = true;
     };
-  }, [origin, single, live, cacheKey]);
+  }, [origin, single, live, signedIn, cacheKey]);
 
   const names = [origin, ...destinations.map((d) => d.name)];
   return (

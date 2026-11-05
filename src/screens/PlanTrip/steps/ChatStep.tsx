@@ -50,6 +50,8 @@ import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, MAX_TRIP_DAYS, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
+import AiPromptsNote from "./AiPromptsNote";
+import { useAiAccessStore } from "@/store/useAiAccessStore";
 import { TripChips, PopularCards, CountStepper, PeopleCards, StayCards, SummaryCard, peopleLabel, peopleLong, STAY_GENERIC, DAY_OPTIONS, type TripFacet, type PeopleOption, type StayOption } from "./ChatWidgets";
 
 interface Chip {
@@ -642,7 +644,13 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         // list", "recognized as a real Indian place but not in our list",
         // and "not in India" must never be treated as the same thing (see
         // buildIntentPrompt in journey-backend's planTrip.js).
-        if (intent?.outsideIndia) {
+        if (!intent && useAiAccessStore.getState().isBlocked()) {
+          // Not a bad question: this kind of request needs AI and a guest's free prompts are used up.
+          pushAi(
+            "That kind of idea needs AI, and your free AI prompts are used up. Sign in to keep going, or just type a city or state, like \"Goa\" or \"Kerala\", and I'll plan it without AI. Here are some popular picks:",
+            SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+          );
+        } else if (intent?.outsideIndia) {
           pushAi(
             "We're currently focused on India 🇮🇳 — we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me another place:",
             SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
@@ -775,7 +783,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // if it positively recognized a real Indian place just missing from
     // the guide (intent.recognizedIndianPlace), say that plainly instead
     // of guessing at where the photo was taken.
-    if (intent?.outsideIndia) {
+    if (!intent && useAiAccessStore.getState().isBlocked()) {
+      pushAi(
+        "Looking at photos needs AI, and your free AI prompts are used up. Sign in to keep going, or tell me a place by name, or pick one of these:",
+        SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+      );
+    } else if (intent?.outsideIndia) {
       pushAi(
         "That looks like somewhere outside India 🌍 — we're currently focused on India, but we'll be excited to help once we go worldwide! Here are a few popular Indian destinations to start with, or tell me a place:",
         SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
@@ -941,6 +954,8 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           </Text>
         </View>
       </View>
+
+      <AiPromptsNote />
 
       <TripChips values={chipValues} onEdit={startEdit} c={c} />
 

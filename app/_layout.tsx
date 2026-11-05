@@ -15,6 +15,8 @@ import {
 } from "@expo-google-fonts/poppins";
 import { useResolvedScheme, useThemeColors } from "@/theme/useThemeColors";
 import { bootstrapProfileSession } from "@/store/useProfileStore";
+import { useAiAccessStore } from "@/store/useAiAccessStore";
+import AiLimitSheet from "@/components/AiLimitSheet";
 import { useAutoUpdate } from "@/hooks/useAutoUpdate";
 
 // Keep the native splash screen up until fonts are ready — our own
@@ -48,8 +50,11 @@ export default function RootLayout() {
   // Check once, on launch, whether a session token is already saved from
   // a previous sign-in — separate from the fonts/splash-screen gate above
   // so a slow/unreachable backend never blocks the app from opening.
+  // Once that is known, ask how many free AI prompts this phone has left (a signed-in person is never limited).
   useEffect(() => {
-    bootstrapProfileSession();
+    Promise.resolve(bootstrapProfileSession())
+      .catch(() => {})
+      .finally(() => { useAiAccessStore.getState().hydrate(); });
   }, []);
 
   if (!fontsLoaded && !fontError) {
@@ -94,6 +99,7 @@ export default function RootLayout() {
           <Stack.Screen name="safety/travel-safe-steps" options={{ presentation: "card" }} />
           <Stack.Screen name="safety/trip-prep" options={{ presentation: "card" }} />
         </Stack>
+        <AiLimitSheet />
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

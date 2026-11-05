@@ -35,6 +35,8 @@ export async function tryGenerateAiItinerary(
   startDate: string | null,
   dailyBudget: number,
   onWaking?: () => void,
+  /** One id for everything one "Plan my trip" does (a trip with several stops makes one call per stop): they count as one free prompt. */
+  promptId?: string,
 ): Promise<AiPlanResult | null> {
   const res = await fetchAiJson(
     `${API_BASE_URL}/plan-trip/ai`,
@@ -61,6 +63,7 @@ export async function tryGenerateAiItinerary(
     },
     REQUEST_TIMEOUT_MS,
     onWaking,
+    promptId,
   );
   if (!res || !res.ok) return null;
 

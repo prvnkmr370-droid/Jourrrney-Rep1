@@ -15,6 +15,7 @@ import { useOriginStore } from "@/store/useOriginStore";
 import { STYLE_CONFIGS, generateItinerary, generateMultiLegItinerary, type GeneratedDay, type TravelStyle, type TripPlan } from "./data";
 import { MAX_TRIP_DAYS } from "./parseTripMessage";
 import { tryGenerateAiItinerary } from "./aiPlan";
+import { newId } from "@/utils/deviceId";
 import { resolveStops } from "./stops";
 import ChatStep from "./steps/ChatStep";
 import GeneratingStep from "./steps/GeneratingStep";
@@ -101,6 +102,8 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
     // "flexible dates", same as never picking one on the old form.
     const startDate: string | null = null;
     const sc = STYLE_CONFIGS.find((s) => s.id === style)!;
+    // Every AI call this trip makes (one per stop) is one free prompt for a guest.
+    const promptId = newId();
 
     if (legs.length === 1) {
       // Single destination — unchanged from before this trip supported
@@ -110,7 +113,7 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
       const templatePlan = generateItinerary(destination, days, people, style, prefs, originCity, startDate);
 
       const [aiResult] = await Promise.all([
-        tryGenerateAiItinerary(destination, sc, days, people, prefs, originCity, startDate, budget.perDayPerPerson),
+        tryGenerateAiItinerary(destination, sc, days, people, prefs, originCity, startDate, budget.perDayPerPerson, undefined, promptId),
         new Promise((resolve) => setTimeout(resolve, MIN_GENERATE_DELAY_MS)),
       ]);
 
@@ -154,7 +157,7 @@ export default function PlanTrip({ preselectedId, onBack, tabBarHeight = 0 }: Pr
       Promise.all(
         legs.map((leg) => {
           const budget = leg.destination.budgetBreakdown.find((b) => b.tier === sc.budgetTier) ?? leg.destination.budgetBreakdown[1];
-          return tryGenerateAiItinerary(leg.destination, sc, leg.days, people, prefs, originCity, startDate, budget.perDayPerPerson);
+          return tryGenerateAiItinerary(leg.destination, sc, leg.days, people, prefs, originCity, startDate, budget.perDayPerPerson, undefined, promptId);
         }),
       ),
       new Promise((resolve) => setTimeout(resolve, MIN_GENERATE_DELAY_MS)),
