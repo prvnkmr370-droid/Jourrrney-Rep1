@@ -50,7 +50,7 @@ export default function RootLayout() {
   // Check once, on launch, whether a session token is already saved from
   // a previous sign-in — separate from the fonts/splash-screen gate above
   // so a slow/unreachable backend never blocks the app from opening.
-  // Once that is known, ask how many free AI prompts this phone has left (a signed-in person is never limited).
+  // Once that is known, ask the server whether a guest may use AI at all (a signed-in person always may).
   useEffect(() => {
     Promise.resolve(bootstrapProfileSession())
       .catch(() => {})

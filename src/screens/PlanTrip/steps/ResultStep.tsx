@@ -505,8 +505,7 @@ function RouteStrip({ origin, destinations, live, c }: { origin: string; destina
   const single = destinations.length === 1 ? destinations[0] : null;
   const cacheKey = single ? `${origin.toLowerCase()}|${single.id}` : "";
   const [summary, setSummary] = useState<string | null | undefined>(() => (cacheKey ? routeSummaryCache.get(cacheKey) : null));
-  // This lookup uses AI. A guest only has a few free AI prompts, and they should go on the things the guest
-  // asked for, not on this extra line, so guests see the names without the numbers.
+  // This lookup uses AI, which is for signed-in people, so guests see the names without the numbers.
   const signedIn = useProfileStore((s) => !!s.token);
 
   useEffect(() => {

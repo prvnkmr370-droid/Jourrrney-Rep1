@@ -1,6 +1,7 @@
 /**
- * A small line above the chat for people who are not signed in: how many free AI prompts are left, and a way to
- * sign in for more. Nothing shows once signed in. When none are left it says planning still works without AI.
+ * A small line above the chat for people who are not signed in: AI needs sign-in, planning by place name still
+ * works, and one tap opens sign-in. Nothing shows once signed in. (If the server gives guests a few free prompts,
+ * it says how many are left instead.)
  */
 import { Pressable, Text } from "react-native";
 import { router } from "expo-router";
@@ -20,11 +21,14 @@ export default function AiPromptsNote() {
   if (signedIn) return null;
 
   const left = Math.max(0, limit - used);
-  const none = left === 0;
+  const signInRequired = limit === 0;
+  const none = left === 0 && !signInRequired;
   const tone = none ? c.warning : c.primary;
-  const text = none
-    ? "You've used your free AI prompts. Planning still works without AI. Sign in for more."
-    : `${left} of ${limit} free AI prompts left. Sign in for more.`;
+  const text = signInRequired
+    ? "Sign in to use Tia's AI answers. Typing a place name still works."
+    : none
+      ? "You've used your free AI prompts. Planning still works without AI. Sign in for more."
+      : `${left} of ${limit} free AI prompts left. Sign in for more.`;
 
   return (
     <Pressable

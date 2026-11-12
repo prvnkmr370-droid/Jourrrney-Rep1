@@ -1,7 +1,7 @@
 /**
  * A random id for this phone, made once and kept on it (SecureStore). It is not the person's name, email or
- * account. The app sends it with each AI request so the server can count a guest's free AI prompts (see
- * journey-backend/src/middleware/aiGuestLimit.js). Without secure storage (the web preview) it lasts for the visit.
+ * account. It is only made, kept and sent when the server is set to give guests a few free AI prompts to count (see
+ * journey-backend/src/middleware/aiGuestLimit.js); while AI needs sign-in, nothing calls this. Without secure storage (the web preview) it lasts for the visit.
  */
 import * as SecureStore from "expo-secure-store";
 

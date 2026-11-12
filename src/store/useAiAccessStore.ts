@@ -1,9 +1,10 @@
 /**
- * Who can use AI right now. Signing in is never required, but AI is what an account unlocks: a guest gets a few
- * free AI prompts (5 unless the server says otherwise) and then needs to sign in to keep using AI. Everything
- * that is not AI stays open to everyone. The server enforces the limit (journey-backend/src/middleware/
- * aiGuestLimit.js); this store keeps the count on the phone too, so the app can say how many are left, stop
- * asking the server once they are gone, and show the "sign in to keep using AI" sheet once.
+ * Who can use AI right now. Signing in is never required, but AI is what an account unlocks: by default a guest
+ * cannot use AI at all (limit 0) and has to sign in first. Everything that is not AI stays open to everyone. The
+ * server enforces it (journey-backend/src/middleware/aiGuestLimit.js); this store tells the rest of the app, so it
+ * can stop asking the server, show the "sign in to use AI" sheet once per launch, and fall back to the
+ * app's own guide. If the server is ever set to give guests a few free prompts, the same store counts them and
+ * says how many are left (limit above 0).
  */
 import { create } from "zustand";
 import * as SecureStore from "expo-secure-store";
@@ -12,7 +13,7 @@ import { useProfileStore } from "@/store/useProfileStore";
 import { getDeviceId } from "@/utils/deviceId";
 
 const USED_KEY = "journey.aiGuestUsed";
-export const DEFAULT_GUEST_LIMIT = 5;
+export const DEFAULT_GUEST_LIMIT = 0; // until the server says otherwise: AI needs sign-in
 
 interface GuestInfo {
   used?: number;
@@ -34,7 +35,7 @@ interface AiAccessState {
   remaining: () => number;
   /** A guest's AI call was answered. `guest` is what the server said; `promptId` keeps one prompt from counting twice. */
   noteAnswer: (guest: GuestInfo | undefined, promptId: string) => void;
-  /** The server (or this phone) said the free prompts are used up. Opens the sheet once per app launch. */
+  /** The server (or this phone) said a guest cannot use AI (sign-in required, or the free prompts are used up). Opens the sheet once per app launch. */
   noteRefused: (limit?: number) => void;
   closeSheet: () => void;
 }
@@ -62,7 +63,9 @@ export const useAiAccessStore = create<AiAccessState>((set, get) => ({
     }
     if (signedIn()) return;
     try {
-      const res = await fetch(`${API_BASE_URL}/plan-trip/ai-access`, { headers: { "X-Device-Id": await getDeviceId() } });
+      // The phone's random id is only needed when guests get free prompts to count; with sign-in required, none is made or sent.
+      const headers: Record<string, string> = get().limit > 0 ? { "X-Device-Id": await getDeviceId() } : {};
+      const res = await fetch(`${API_BASE_URL}/plan-trip/ai-access`, { headers });
       if (!res.ok) return;
       const data = await res.json();
       if (data?.signedIn === false && typeof data.used === "number") {

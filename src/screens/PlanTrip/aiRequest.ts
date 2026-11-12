@@ -10,12 +10,13 @@
  * caller swap a generic spinner for an honest "waking up" message during
  * that one retry.
  *
- * Free AI prompts: signing in is optional, but a guest gets only a few AI
- * prompts (see useAiAccessStore.ts). Every call carries this phone's random id
- * and a prompt id (one per thing the person did: a trip with three stops makes
- * three calls, one prompt). Once a guest has none left, no call is made: the
- * "sign in to keep using AI" sheet opens (once per launch) and the caller gets
- * `null`, which makes it fall back to what works without AI.
+ * AI needs sign-in: a guest cannot use AI (see useAiAccessStore.ts), so for a
+ * guest no call is made at all: the "sign in to use AI" sheet opens (once per
+ * launch) and the caller gets `null`, which makes it fall back to what works
+ * without AI. Signed-in calls carry the sign-in token and nothing else about the
+ * phone. (Only if the server is set to give guests a few free prompts does a
+ * guest call go out, carrying this phone's random id and a prompt id, one per
+ * thing the person did: a trip with three stops makes three calls, one prompt.)
  *
  * Never throws — same contract as the callers: a `null` return means "no
  * usable response," and it's up to them to fall back.
@@ -37,7 +38,7 @@ export async function fetchAiJson(url: string, body: unknown, timeoutMs: number,
     access.noteRefused();
     return null;
   }
-  const deviceId = await getDeviceId();
+  const deviceId = signedIn ? "" : await getDeviceId(); // only guests on free prompts reach this line, and only they need an id
 
   for (let attempt = 0; attempt < 2; attempt++) {
     const controller = new AbortController();
@@ -51,9 +52,9 @@ export async function fetchAiJson(url: string, body: unknown, timeoutMs: number,
         // same app-wide rules with no memory.
         headers: {
           "Content-Type": "application/json",
-          "X-Device-Id": deviceId,
-          "X-AI-Prompt-Id": promptId,
-          ...(useProfileStore.getState().token ? { Authorization: `Bearer ${useProfileStore.getState().token}` } : {}),
+          ...(signedIn
+            ? { Authorization: `Bearer ${useProfileStore.getState().token}` }
+            : { "X-Device-Id": deviceId, "X-AI-Prompt-Id": promptId }),
         },
         signal: controller.signal,
         body: JSON.stringify(body),
@@ -65,10 +66,10 @@ export async function fetchAiJson(url: string, body: unknown, timeoutMs: number,
         await new Promise((resolve) => setTimeout(resolve, WAKE_RETRY_DELAY_MS));
         continue;
       }
-      // The server says the free prompts are used up: show the sign-in sheet and let the caller fall back.
+      // The server says this caller cannot use AI (sign in first, or the free prompts are used up): show the sign-in sheet and let the caller fall back.
       if (res.status === 403 || res.status === 429) {
         const said = await res.clone().json().catch(() => null);
-        if (said?.code === "guest_limit" || said?.code === "guest_ip_limit") {
+        if (said?.code === "login_required" || said?.code === "guest_limit" || said?.code === "guest_ip_limit") {
           access.noteRefused(typeof said.limit === "number" ? said.limit : undefined);
           return null;
         }

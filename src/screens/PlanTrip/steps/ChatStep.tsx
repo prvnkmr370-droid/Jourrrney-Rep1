@@ -645,9 +645,11 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         // and "not in India" must never be treated as the same thing (see
         // buildIntentPrompt in journey-backend's planTrip.js).
         if (!intent && useAiAccessStore.getState().isBlocked()) {
-          // Not a bad question: this kind of request needs AI and a guest's free prompts are used up.
+          // Not a bad question: this kind of request needs AI, and a guest cannot use AI.
           pushAi(
-            "That kind of idea needs AI, and your free AI prompts are used up. Sign in to keep going, or just type a city or state, like \"Goa\" or \"Kerala\", and I'll plan it without AI. Here are some popular picks:",
+            useAiAccessStore.getState().limit === 0
+              ? "That kind of idea needs AI, and AI is for signed-in people. Sign in (it's free), or just type a city or state, like \"Goa\" or \"Kerala\", and I'll plan it without AI. Here are some popular picks:"
+              : "That kind of idea needs AI, and your free AI prompts are used up. Sign in to keep going, or just type a city or state, like \"Goa\" or \"Kerala\", and I'll plan it without AI. Here are some popular picks:",
             SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
           );
         } else if (intent?.outsideIndia) {
@@ -785,7 +787,9 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
     // of guessing at where the photo was taken.
     if (!intent && useAiAccessStore.getState().isBlocked()) {
       pushAi(
-        "Looking at photos needs AI, and your free AI prompts are used up. Sign in to keep going, or tell me a place by name, or pick one of these:",
+        useAiAccessStore.getState().limit === 0
+          ? "Looking at photos needs AI, and AI is for signed-in people. Sign in (it's free), or tell me a place by name, or pick one of these:"
+          : "Looking at photos needs AI, and your free AI prompts are used up. Sign in to keep going, or tell me a place by name, or pick one of these:",
         SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
       );
     } else if (intent?.outsideIndia) {

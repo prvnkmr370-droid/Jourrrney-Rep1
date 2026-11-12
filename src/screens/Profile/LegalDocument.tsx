@@ -21,7 +21,7 @@ const WEB_PAGE: Partial<Record<Props["doc"], string>> = { privacy: "/privacy", t
 
 // The app can't know the support address (it is set on the server), so it points to the store listing,
 // which always shows the developer's contact email.
-const CONTACT_IN_APP = "Questions about your information? Use the contact email shown on Jourrrney's Google Play page.";
+const CONTACT_IN_APP = "Questions, requests or complaints? Use the contact email shown on Jourrrney's Google Play page.";
 
 export default function LegalDocument({ doc, onBack }: Props) {
   const insets = useSafeAreaInsets();
