@@ -41,7 +41,7 @@ import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming, Eas
 // of taking the whole screen down with it — see pickImage() below.
 import type * as ImagePickerType from "expo-image-picker";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ArrowLeft, Send, Camera, Sparkle } from "lucide-react-native";
+import { ArrowLeft, Send, Camera, Sparkle, Flag } from "lucide-react-native";
 import { DESTINATIONS, type Destination } from "@/data/destinations";
 import { useOriginStore } from "@/store/useOriginStore";
 import { useThemeColors, useResolvedScheme } from "@/theme/useThemeColors";
@@ -51,6 +51,8 @@ import { STYLE_CONFIGS, type TravelStyle } from "../data";
 import { parseTripMessage, parseMultiDestinationMessage, extractDays, wordToNumber, MAX_TRIP_DAYS, SUGGESTED_DESTINATIONS, type TripSegment } from "../parseTripMessage";
 import { tryParseTripIntent } from "../aiIntent";
 import AiPromptsNote from "./AiPromptsNote";
+import ReportAiSheet from "@/components/ReportAiSheet";
+import type { ReportTarget } from "@/utils/aiReport";
 import { useAiAccessStore } from "@/store/useAiAccessStore";
 import { TripChips, PopularCards, CountStepper, PeopleCards, StayCards, SummaryCard, peopleLabel, peopleLong, STAY_GENERIC, DAY_OPTIONS, type TripFacet, type PeopleOption, type StayOption } from "./ChatWidgets";
 
@@ -64,6 +66,8 @@ interface ChatMessage {
   sender: "ai" | "user";
   text: string;
   chips?: Chip[];
+  /** The words are the AI's own (not one of Tia's scripted lines): they get a Report button. */
+  aiGenerated?: boolean;
   /** Local file URI of a picked photo, shown as a thumbnail in the
    * user's own message bubble — display-only, separate from the base64
    * payload actually sent to the backend (see pickImage()). */
@@ -245,8 +249,21 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
   });
   const scrollRef = useRef<ScrollView>(null);
 
-  const pushAi = (text: string, chips?: Chip[]) =>
-    setMessages((prev) => [...prev, { id: nextId(), sender: "ai", text, chips }]);
+  const pushAi = (text: string, chips?: Chip[], opts?: { ai?: boolean }) =>
+    setMessages((prev) => [...prev, { id: nextId(), sender: "ai", text, chips, aiGenerated: opts?.ai || undefined }]);
+
+  // Reporting one of the AI's own replies (Google Play requires this). The question that led to it goes along.
+  const [reporting, setReporting] = useState<ReportTarget | null>(null);
+  const openReport = (m: ChatMessage) => {
+    // The last two things the person typed or tapped before this reply, oldest first. Two, because the app echoes
+    // a matched place back as a message of its own ("Jaipur") right after the real question.
+    const at = messages.findIndex((x) => x.id === m.id);
+    const before: string[] = [];
+    for (let i = at - 1; i >= 0 && before.length < 2; i--) {
+      if (messages[i].sender === "user") before.unshift(messages[i].text);
+    }
+    setReporting({ kind: "chat_reply", title: "Report this reply", content: m.text, context: before.length ? before.join(" | ") : undefined });
+  };
   const pushUser = (text: string, imageUri?: string) => setMessages((prev) => [...prev, { id: nextId(), sender: "user", text, imageUri }]);
   const removeMessage = (id: string) => setMessages((prev) => prev.filter((m) => m.id !== id));
   const setMessageText = (id: string, text: string) => setMessages((prev) => prev.map((m) => (m.id === id ? { ...m, text } : m)));
@@ -627,7 +644,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           collected.current.legs = [{ destination: intent.destination, days: intent.days ?? previousSingleDays() }];
           collected.current.activeLegIndex = 0;
           pushUser(plainName(intent.destination));
-          pushAi(intent.reasoning || `Great choice — ${plainName(intent.destination)}, ${intent.destination.state}! ✨`);
+          pushAi(intent.reasoning || `Great choice — ${plainName(intent.destination)}, ${intent.destination.state}! ✨`, undefined, { ai: !!intent.reasoning });
           setEditing(null);
           proceedFromCollected();
           scrollToEnd();
@@ -671,6 +688,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           pushAi(
             intent.reasoning || "I couldn't tell what specific place you meant — could you name a city, town, or region? Meanwhile, here are some popular picks:",
             SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+            { ai: !!intent.reasoning },
           );
         } else if (parsed.unmatchedPlaceAttempt) {
           // Gemini/Groq call itself failed (intent is null) — we genuinely
@@ -771,7 +789,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       if (intent.interests.length > 0) collected.current.interests = [...new Set([...collected.current.interests, ...intent.interests])];
       collected.current.legs = [{ destination: intent.destination, days: intent.days ?? previousSingleDays() }];
       collected.current.activeLegIndex = 0;
-      pushAi(intent.reasoning || `Great choice — ${plainName(intent.destination)}, ${intent.destination.state}! ✨`);
+      pushAi(intent.reasoning || `Great choice — ${plainName(intent.destination)}, ${intent.destination.state}! ✨`, undefined, { ai: !!intent.reasoning });
       setEditing(null);
       proceedFromCollected();
       scrollToEnd();
@@ -806,6 +824,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
       pushAi(
         intent?.reasoning || "I couldn't match that photo to a destination in our guide yet — try telling me the place by name, or pick one of these:",
         SUGGESTED_DESTINATIONS.map((d) => ({ label: d.name, onPress: () => selectDestination(d, null) })),
+        { ai: !!intent?.reasoning },
       );
     }
     scrollToEnd();
@@ -978,7 +997,7 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
         onContentSizeChange={scrollToEnd}
       >
         {messages.map((m) => (
-          <MessageBubble key={m.id} message={m} c={c} isLastChips={showChips && m.id === messages[messages.length - 1].id} />
+          <MessageBubble key={m.id} message={m} c={c} isLastChips={showChips && m.id === messages[messages.length - 1].id} onReport={m.aiGenerated ? () => openReport(m) : undefined} />
         ))}
 
         {/* The open question's answers, as cards under Tia's message. Hidden while she is
@@ -1085,11 +1104,12 @@ export default function ChatStep({ onBack, originCity, preselectedDestination, o
           <Send color="#FFFFFF" size={18} />
         </Pressable>
       </View>
+      <ReportAiSheet target={reporting} onClose={() => setReporting(null)} />
     </KeyboardAvoidingView>
   );
 }
 
-function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: ReturnType<typeof useThemeColors>; isLastChips: boolean }) {
+function MessageBubble({ message, c, isLastChips, onReport }: { message: ChatMessage; c: ReturnType<typeof useThemeColors>; isLastChips: boolean; onReport?: () => void }) {
   const isAi = message.sender === "ai";
   return (
     <View style={{ flexDirection: "row", justifyContent: isAi ? "flex-start" : "flex-end", gap: 8 }}>
@@ -1112,6 +1132,17 @@ function MessageBubble({ message, c, isLastChips }: { message: ChatMessage; c: R
             {message.text}
           </Text>
         </View>
+        {isAi && onReport && (
+          <Pressable
+            onPress={onReport}
+            accessibilityRole="button"
+            accessibilityLabel="Report this reply"
+            style={{ flexDirection: "row", alignItems: "center", gap: 6, alignSelf: "flex-start", minHeight: 44, paddingHorizontal: 6, marginTop: -4 }}
+          >
+            <Flag color={c.textSecondary} size={14} />
+            <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textSecondary }}>Report</Text>
+          </Pressable>
+        )}
         {message.chips && message.chips.length > 0 && (
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
             {message.chips.map((chip, i) => (

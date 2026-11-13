@@ -4,8 +4,10 @@ import { View, Text, Pressable, ScrollView, Alert, ActivityIndicator, StyleSheet
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
-import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp, ChevronRight, Download, MapPin, Search, Heart, Car } from "lucide-react-native";
+import { ArrowLeft, Train, Home, Navigation, ChevronDown, ChevronUp, ChevronRight, Download, MapPin, Search, Heart, Car, Flag } from "lucide-react-native";
 import { ComfortIcon } from "@/components/ComfortIcon";
+import ReportAiSheet from "@/components/ReportAiSheet";
+import { describeAiPlan, type ReportTarget } from "@/utils/aiReport";
 import DestImage from "@/components/DestImage";
 import { getTabBarFootprint } from "@/components/BottomTabBar";
 import { withOpacity } from "@/components/withOpacity";
@@ -50,6 +52,8 @@ export default function ResultStep({ plan, onBack, onRebuild, onTweak, tweakNote
   const insets = useSafeAreaInsets();
   const c = useThemeColors();
   const [expandedDay, setExpandedDay] = useState<number | null>(0);
+  // Reporting the AI-written part of the plan (Google Play requires this): the sheet is shown for `reporting`.
+  const [reporting, setReporting] = useState<ReportTarget | null>(null);
   const [exporting, setExporting] = useState(false);
   const readOnly = !!savedTripId;
   const perPersonPerDay = Math.round(plan.totalCost / plan.days / plan.people);
@@ -245,6 +249,17 @@ export default function ResultStep({ plan, onBack, onRebuild, onTweak, tweakNote
                 <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 10, color: c.gold }}>AI-generated</Text>
               </View>
             )}
+            {plan.planSource === "ai" && (
+              <Pressable
+                onPress={() => setReporting({ kind: "trip_plan", title: "Report this plan", content: describeAiPlan(plan) })}
+                accessibilityRole="button"
+                accessibilityLabel="Report a problem with this AI-written plan"
+                style={{ flexDirection: "row", alignItems: "center", gap: 6, marginLeft: "auto", minHeight: 44, paddingHorizontal: 6 }}
+              >
+                <Flag color={c.textSecondary} size={14} />
+                <Text maxFontSizeMultiplier={1.3} style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12, color: c.textSecondary }}>Report</Text>
+              </Pressable>
+            )}
           </View>
           <View style={{ gap: 10 }}>
             {plan.itinerary.map((day, i) => {
@@ -373,6 +388,7 @@ export default function ResultStep({ plan, onBack, onRebuild, onTweak, tweakNote
           <Text style={{ fontFamily: "Poppins_700Bold", fontSize: 12, color: c.primary }}>PDF</Text>
         </Pressable>
       </View>
+      <ReportAiSheet target={reporting} onClose={() => setReporting(null)} />
     </View>
   );
 }
