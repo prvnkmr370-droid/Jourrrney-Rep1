@@ -27,6 +27,14 @@ const TOKEN_KEY = "journey_auth_token";
 const PROVIDER_KEY = "journey_auth_provider";
 const EMPTY_PROFILE: RealProfile = { bio: null, languages: null, location: null, themeMode: null };
 
+/** What "Create account" sends along with the email. */
+export interface SignupDetails {
+  mode?: "signin" | "signup";
+  firstName?: string;
+  lastName?: string;
+  ageConfirmed?: boolean;
+}
+
 interface ProfileState {
   isSignedIn: boolean;
   authProvider: AuthProvider;
@@ -44,10 +52,13 @@ interface ProfileState {
   restoreSession: () => Promise<void>;
 
   /** Real request to the backend: generates and stores a one-time code
-   * server-side. See journey-backend/README.md — no email is actually
-   * sent yet, so `devCode` (present outside production) is what the UI
-   * uses to let you test the flow today. */
-  requestCode: (email: string) => Promise<{ ok: boolean; devCode?: string; error?: string }>;
+   * server-side and emails it (see journey-backend/README.md; `devCode` is
+   * only returned by a local development server). mode "signin" (the default)
+   * needs an existing account: if there is none the answer is `noAccount: true`
+   * so the screen can offer to create one. mode "signup" sends the details from
+   * the create-account form (names and the 18+ tick); the account itself is only
+   * made when the code is confirmed. `field` says which form field an error is about. */
+  requestCode: (email: string, options?: SignupDetails) => Promise<{ ok: boolean; devCode?: string; error?: string; noAccount?: boolean; field?: string }>;
 
   /** Real request to the backend: verifies the code, creates the account
    * on first sign-in, and returns a real session token that's persisted
@@ -141,16 +152,17 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
     }
   },
 
-  requestCode: async (email) => {
+  requestCode: async (email, options) => {
     try {
       const res = await fetch(`${API_BASE_URL}/auth/request-code`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, ...options }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 503) return { ok: false, error: "We can't send email codes right now. Please continue with Google or Facebook below, or try again later." };
-      if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Please try again." };
+      if (res.status === 404 && data.code === "no_account") return { ok: false, noAccount: true, error: data.error };
+      if (!res.ok) return { ok: false, error: data.error ?? "Something went wrong. Please try again.", field: typeof data.field === "string" ? data.field : undefined };
       return { ok: true, devCode: data.devCode };
     } catch {
       return { ok: false, error: "We couldn't reach Jourrrney. Check your internet connection and try again." };

@@ -27,6 +27,8 @@ interface Props {
   onSocial: (provider: Exclude<AuthProvider, null>) => void;
   /** "Continue as a guest" and the close button: not now, nothing is lost. */
   onSkip: () => void;
+  /** "New to Jourrrney? Create an account": opens the create-account form. */
+  onCreateAccount: () => void;
   /** True while requestCode() is in flight against journey-backend. */
   loading?: boolean;
   /** The social button whose sign-in is being opened (it shows "Opening…" and the others pause). */
@@ -39,7 +41,7 @@ interface Props {
   bottomInset: number;
 }
 
-export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, loading, busyProvider, error, socialError, topInset, bottomInset }: Props) {
+export default function EmailStep({ email, onEmailChange, onContinueWithEmail, onSocial, onSkip, onCreateAccount, loading, busyProvider, error, socialError, topInset, bottomInset }: Props) {
   const [touched, setTouched] = useState(false);
   const valid = isEmailLike(email);
   const canContinue = valid && !loading;
@@ -119,12 +121,19 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
           accessibilityState={{ disabled: !canContinue }}
           style={{
             flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 52,
-            backgroundColor: canContinue ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, marginBottom: 20,
+            backgroundColor: canContinue ? "#FBF7F2" : "rgba(255,255,255,0.15)", borderRadius: 999, marginBottom: 4,
           }}
         >
           {loading && <ActivityIndicator color="#333C81" size="small" />}
           <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_700Bold", fontSize: 15, color: canContinue ? "#333C81" : "rgba(255,255,255,0.5)" }}>
             {loading ? "Sending code…" : "Continue"}
+          </Text>
+        </Pressable>
+
+        {/* New people can start with the form straight away; someone who types an address with no account is sent there too. */}
+        <Pressable onPress={onCreateAccount} accessibilityRole="button" style={{ minHeight: 48, alignItems: "center", justifyContent: "center", marginBottom: 8 }}>
+          <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 13.5, color: "rgba(255,255,255,0.7)" }}>
+            New to Jourrrney? <Text style={{ fontFamily: "Poppins_700Bold", color: "#A9B1F5" }}>Create an account</Text>
           </Text>
         </Pressable>
 
@@ -178,7 +187,7 @@ export default function EmailStep({ email, onEmailChange, onContinueWithEmail, o
         {/* The two links open the public web pages (the same words as Profile > Settings), so a
             person can read them before they have an account. */}
         <Text maxFontSizeMultiplier={MAX_FONT} style={{ fontFamily: "Poppins_400Regular", fontSize: 12, lineHeight: 19, color: "rgba(255,255,255,0.6)" }}>
-          By continuing, you agree to Jourrrney's{" "}
+          By continuing, you confirm you are 18 or older and agree to Jourrrney's{" "}
           <Text
             accessibilityRole="link"
             onPress={() => Linking.openURL(`${API_BASE_URL}/terms`)}

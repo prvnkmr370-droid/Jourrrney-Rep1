@@ -3,6 +3,9 @@
  * app the same way, and a guest can sign in later (for example when they tap a heart).
  *
  *   email   "Sign in or create an account": the email box first, then Google and Facebook below it.
+ *   create  "Create your account": first name, last name, email address and the "I am 18 or older" tick. Reached
+ *           from "New to Jourrrney?", or automatically when the email typed on the first screen has no account.
+ *           An account is never made by signing in: only by this form, and only once its emailed code is confirmed.
  *   confirm "Check your email": the six emailed digits, confirmed as soon as the sixth is in.
  *   done    "You're signed in", then back to where the person was.
  *
@@ -20,6 +23,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useProfileStore, isSocialProvider, SOCIAL_NAME, type AuthProvider } from "@/store/useProfileStore";
 import EmailStep from "./steps/EmailStep";
 import ConfirmCodeStep from "./steps/ConfirmCodeStep";
+import CreateAccountStep, { type CreateField } from "./steps/CreateAccountStep";
 import SignedInStep from "./steps/SignedInStep";
 import { isEmailLike } from "@/utils/isEmailLike";
 
@@ -27,7 +31,7 @@ interface Props {
   onDone: () => void;
 }
 
-type Step = "email" | "confirm" | "done";
+type Step = "email" | "create" | "confirm" | "done";
 
 export default function OnboardingLogin({ onDone }: Props) {
   const insets = useSafeAreaInsets();
@@ -43,6 +47,16 @@ export default function OnboardingLogin({ onDone }: Props) {
   const [verifying, setVerifying] = useState(false);
   const [verifyError, setVerifyError] = useState<string | null>(null);
   const [needsNewCode, setNeedsNewCode] = useState(false);
+
+  // The create-account form, and whether the emailed code belongs to a sign-in or to a new account.
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [createError, setCreateError] = useState<string | null>(null);
+  const [createField, setCreateField] = useState<CreateField>(null);
+  const [createNotice, setCreateNotice] = useState<string | null>(null);
+  const [codeMode, setCodeMode] = useState<"signin" | "signup">("signin");
 
   // After "You're signed in" the screen moves on by itself.
   useEffect(() => {
@@ -75,16 +89,57 @@ export default function OnboardingLogin({ onDone }: Props) {
     onDone();
   };
 
+  const goToCreate = (becauseNoAccount: boolean) => {
+    setSendError(null);
+    setCreateError(null);
+    setCreateField(null);
+    setCreateNotice(becauseNoAccount ? `There's no Jourrrney account for ${email.trim()} yet. Fill in your details below to create one.` : null);
+    setStep("create");
+  };
+
   const handleContinueWithEmail = async () => {
     if (!isEmailLike(email) || sending) return;
     setSending(true);
     setSendError(null);
-    const result = await requestCode(email.trim());
+    const result = await requestCode(email.trim(), { mode: "signin" });
     setSending(false);
+    if (result.noAccount) {
+      goToCreate(true);
+      return;
+    }
     if (!result.ok) {
       setSendError(result.error ?? "Couldn't send a code — try again.");
       return;
     }
+    setCodeMode("signin");
+    setDevCode(result.devCode ?? null);
+    setVerifyError(null);
+    setNeedsNewCode(false);
+    setStep("confirm");
+  };
+
+  /** Typing in the form, or ticking the box, makes the last error stale: forget it. */
+  const editCreateForm = <T,>(set: (v: T) => void) => (v: T) => {
+    set(v);
+    if (createError) { setCreateError(null); setCreateField(null); }
+  };
+
+  const handleCreateAccount = async () => {
+    const first = firstName.trim();
+    const last = lastName.trim();
+    if (creating || !first || !last || !isEmailLike(email) || !ageConfirmed) return;
+    setCreating(true);
+    setCreateError(null);
+    setCreateField(null);
+    const result = await requestCode(email.trim(), { mode: "signup", firstName: first, lastName: last, ageConfirmed: true });
+    setCreating(false);
+    if (!result.ok) {
+      setCreateError(result.error ?? "We couldn't create your account just now. Please try again.");
+      setCreateField((result.field as CreateField) ?? null);
+      return;
+    }
+    setCodeMode("signup");
+    setCreateNotice(null);
     setDevCode(result.devCode ?? null);
     setVerifyError(null);
     setNeedsNewCode(false);
@@ -106,7 +161,11 @@ export default function OnboardingLogin({ onDone }: Props) {
   };
 
   const handleResend = async () => {
-    const result = await requestCode(email.trim());
+    // A new code for a new account carries the typed details again, so the account is still made when it is confirmed.
+    const result = await requestCode(
+      email.trim(),
+      codeMode === "signup" ? { mode: "signup", firstName: firstName.trim(), lastName: lastName.trim(), ageConfirmed: true } : { mode: "signin" },
+    );
     if (result.ok) { setDevCode(result.devCode ?? null); setVerifyError(null); setNeedsNewCode(false); }
     else setVerifyError(result.error ?? "We couldn't send a new code. Please try again.");
     return result.ok;
@@ -131,6 +190,7 @@ export default function OnboardingLogin({ onDone }: Props) {
           onContinueWithEmail={handleContinueWithEmail}
           onSocial={handleSocial}
           onSkip={handleSkip}
+          onCreateAccount={() => goToCreate(false)}
           loading={sending}
           busyProvider={busyProvider}
           error={sendError}
@@ -138,10 +198,29 @@ export default function OnboardingLogin({ onDone }: Props) {
           topInset={insets.top}
           bottomInset={insets.bottom}
         />
+      ) : step === "create" ? (
+        <CreateAccountStep
+          email={email}
+          onEmailChange={editCreateForm(setEmail)}
+          firstName={firstName}
+          onFirstNameChange={editCreateForm(setFirstName)}
+          lastName={lastName}
+          onLastNameChange={editCreateForm(setLastName)}
+          ageConfirmed={ageConfirmed}
+          onAgeConfirmedChange={editCreateForm(setAgeConfirmed)}
+          onSubmit={handleCreateAccount}
+          onBack={() => { setStep("email"); setCreateError(null); setCreateField(null); }}
+          loading={creating}
+          error={createError}
+          errorField={createField}
+          notice={createNotice}
+          topInset={insets.top}
+          bottomInset={insets.bottom}
+        />
       ) : (
         <ConfirmCodeStep
           email={email}
-          onBack={() => { setStep("email"); setVerifyError(null); setNeedsNewCode(false); }}
+          onBack={() => { setStep(codeMode === "signup" ? "create" : "email"); setVerifyError(null); setNeedsNewCode(false); }}
           onConfirm={handleConfirmCode}
           onResend={handleResend}
           loading={verifying}
